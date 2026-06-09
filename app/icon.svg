@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="WSJ Reading Club">
+  <rect width="32" height="32" rx="7" fill="#1c1917" />
+  <!-- open book: two cream pages -->
+  <g stroke-linejoin="round">
+    <path d="M16 9.4 L6 7.8 L6 22 L16 23.6 Z" fill="#faf8f4" />
+    <path d="M16 9.4 L26 7.8 L26 22 L16 23.6 Z" fill="#faf8f4" />
+  </g>
+  <!-- lines of text, following each page's tilt -->
+  <g stroke="#d6d3d1" stroke-width="1" stroke-linecap="round">
+    <line x1="8.4" y1="12.2" x2="13.4" y2="12.9" />
+    <line x1="8.4" y1="15.2" x2="13.4" y2="15.9" />
+    <line x1="18.6" y1="12.9" x2="23.6" y2="12.2" />
+    <line x1="18.6" y1="15.9" x2="23.6" y2="15.2" />
+  </g>
+  <!-- spine -->
+  <line x1="16" y1="9.4" x2="16" y2="23.6" stroke="#1c1917" stroke-width="1.4" stroke-linecap="round" />
+</svg>
