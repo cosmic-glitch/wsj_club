@@ -43,14 +43,14 @@ export default function Home() {
               {r.pdfUrl && (
                 <>
                   {" "}
-                  (or{" "}
+                  (
                   <a
                     href={r.pdfUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={linkClass}
                   >
-                    PDF
+                    PDF version
                   </a>
                   )
                 </>
