@@ -18,7 +18,7 @@ Static Next.js app (App Router, Next 16, React 19, Tailwind v4). The daily conte
 ```
 content/YYYY-MM-DD.json           one file = one day's handout
 public/pdfs/YYYY-MM-DD.pdf        served PDF of that day's article (the "PDF" link)
-PDFs/                             local drop-zone for raw WSJ PDF exports (gitignored)
+PDFs/                             manual-fallback drop-zone for raw WSJ PDF exports (gitignored)
 app/page.tsx                      index: one panel per day (date · title · 4 steps)
 app/reading/[date]/page.tsx       one day's handout — words + concepts (statically generated)
 app/reading/[date]/quiz/page.tsx  that day's self-quiz, on its own page
@@ -43,7 +43,7 @@ Pages stay minimal. The **index** is just a stack of panels, one per day — no 
 
 ## Daily workflow
 
-Driven by the **`wsj-reading` skill** — invoked when the user pastes a WSJ link or says "today's reading". It reads the article in the browser (the user logs into WSJ themselves), writes `content/YYYY-MM-DD.json`, copies the day's PDF from the `PDFs/` drop-zone to `public/pdfs/YYYY-MM-DD.pdf` (setting `pdfUrl`), builds, commits, and pushes (which deploys). Audience calibration and the article-first rules live in `.claude/skills/wsj-reading/SKILL.md`. Hard rule: link to WSJ and quote only short phrases — never republish the article text.
+Driven by the **`wsj-reading` skill** — invoked when the user pastes a WSJ link or says "today's reading". It reads the article in the browser (the user logs into WSJ themselves), writes `content/YYYY-MM-DD.json`, **captures the day's PDF directly from the open page** (`page.pdf()` → `public/pdfs/YYYY-MM-DD.pdf`, setting `pdfUrl`; the `PDFs/` drop-zone is now only a manual fallback), builds, commits, and pushes (which deploys). Audience calibration and the article-first rules live in `.claude/skills/wsj-reading/SKILL.md`. Hard rule: link to WSJ and quote only short phrases — never republish the article text.
 
 ## Deploy
 

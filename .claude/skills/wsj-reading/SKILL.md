@@ -40,7 +40,27 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - WSJ requires login. Tell the user: *"I've opened the article — please log into WSJ in the browser window, then tell me when you're in."* Wait for them. Do **not** ask for or store their password; they log in themselves.
    - Once past the paywall, read the full article (`browser_snapshot`, or scroll and read). Capture: the real headline, the byline/section if useful, and the substance — main argument, key facts, and any jargon a teenager would trip on.
 
-3. **Place the day's PDF.** The user saves the WSJ article as a PDF into the `PDFs/` drop-zone at the repo root (raw WSJ filename, e.g. `Wall Street Is Rushing… - WSJ.pdf`). Copy it to the served, date-named path: `cp "PDFs/<that file>.pdf" public/pdfs/YYYY-MM-DD.pdf` (run `mkdir -p public/pdfs` first if needed). Only `public/` is served by Next, so the PDF **must** live under `public/pdfs/`. You'll reference it as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`. If the user hasn't dropped a PDF, ask for it (or omit `pdfUrl` — the page then shows only the Web link). The raw `PDFs/` drop-zone is gitignored; the `public/pdfs/` copy is what gets committed and deployed.
+3. **Capture the day's PDF automatically.** With the article open and the user logged in (from step 2), save the page **straight to the served path** — no manual print/save step. `page.pdf()` calls the same Chromium print engine as the browser's "Print → Save as PDF", so it captures the full article with print styling (ads/nav stripped by the print stylesheet). Only `public/` is served by Next, so the PDF must end up at `public/pdfs/YYYY-MM-DD.pdf` and is referenced as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`.
+   - Make the folder: `mkdir -p public/pdfs`.
+   - Use `browser_run_code_unsafe` to scroll the article (so lazy images/text load) and then write the PDF — **substitute the real date** in `OUT`:
+     ```js
+     async (page) => {
+       const OUT = '/Users/anuragved/code/wsj_club/public/pdfs/YYYY-MM-DD.pdf'; // ← real date
+       await page.evaluate(() => new Promise(res => {
+         let y = 0; (function step(){
+           window.scrollBy(0, innerHeight); y += innerHeight;
+           if (y < document.body.scrollHeight) setTimeout(step, 150);
+           else { scrollTo(0, 0); setTimeout(res, 400); }
+         })();
+       }));
+       await page.pdf({ path: OUT, format: 'Letter', printBackground: true,
+         margin: { top: '0.5in', bottom: '0.5in', left: '0.5in', right: '0.5in' } });
+       return 'wrote ' + OUT;
+     }
+     ```
+   - **Verify it:** `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect hundreds of KB to a few MB) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). If it's tiny (a few KB) or near-empty, the paywall probably wasn't cleared or print CSS hid the body — use the manual fallback below.
+   - Set `pdfUrl: "/pdfs/YYYY-MM-DD.pdf"` in the JSON. (To skip the PDF entirely, omit `pdfUrl` — the page then shows only the Web link.)
+   - **Manual fallback** (only if auto-capture looks wrong): the user saves the article as a PDF by hand into the `PDFs/` drop-zone at the repo root (gitignored, raw WSJ filename), and you copy it over: `cp "PDFs/<that file>.pdf" public/pdfs/YYYY-MM-DD.pdf`. The `public/pdfs/` copy is what gets committed and deployed.
 
 4. **Draft the handout content.** Decide the words, concepts, and quiz per the calibration above. Pick a clear, descriptive `title` (it can match WSJ's headline or be a plainer version). The pages are intentionally minimal: the handout shows **just the title** at the top (no date, no summary or "big idea" blurb), then the words and concepts; the quiz lives on its own page (`/reading/<date>/quiz`). The index is a stack of one panel per day (date · title · four steps); the article links appear only there, in the first step — **Read the article (or PDF)** (the word "article" → `articleUrl`, "PDF" → `pdfUrl`; the title itself is plain text, not a link). The only "← All readings" link is in the global header bar (`app/layout.tsx`); the handout and quiz pages have no inline back-link of their own. Don't estimate reading time either — it varies too much per student, and they're expected to re-read.
 
