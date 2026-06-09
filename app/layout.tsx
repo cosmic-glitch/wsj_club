@@ -31,7 +31,7 @@ export default function RootLayout({
               href="/"
               className="text-sm text-stone-500 transition hover:text-stone-900"
             >
-              All readings
+              ← All readings
             </Link>
           </div>
         </header>

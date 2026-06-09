@@ -35,7 +35,7 @@ A `Reading` = `{ date, title, articleUrl, source?, vocab[], concepts[], quiz[] }
   `articleQuote` → `inContext` → `meaning` (how it actually works).
 - **quiz** — exactly **5** `QuizQuestion`s, each `{ question, options (4), answerIndex (0-based), explanation }`.
 
-Pages stay minimal. The handout top is **just the article title** (no date), then the two sections. The self-quiz is its own page at `/reading/<date>/quiz`, topped with just the title. **Navigation is deliberately sparse:** the WSJ article link lives only on the index (the Article column is a single blue link — the title — straight to WSJ), and each content page (handout, quiz) carries exactly **one** link: "← All readings", back to the index. No summary/blurb, no reading-time estimate. In both vocab and concept cards the quote is labeled **"Quote from the article"**, followed by **"What it means here"** (in the article) and **"In general"** (the broader meaning).
+Pages stay minimal. The handout top is **just the article title** (no date), then the two sections. The self-quiz is its own page at `/reading/<date>/quiz`, topped with just the title. **Navigation is deliberately sparse:** the WSJ article link lives only on the index (the Article column is a single blue link — the title — straight to WSJ), and the only "← All readings" link is the one in the global header bar (`app/layout.tsx`) — content pages (handout, quiz) carry no inline back-link of their own. No summary/blurb, no reading-time estimate. In both vocab and concept cards the quote is labeled **"Quote from the article"**, followed by **"What it means here"** (in the article) and **"In general"** (the broader meaning).
 
 ## Daily workflow
 

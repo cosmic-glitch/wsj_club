@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   getAllReadings,
@@ -36,15 +35,8 @@ export default async function ReadingPage({
 
   return (
     <article>
-      <Link
-        href="/"
-        className="text-sm text-stone-500 transition hover:text-stone-900"
-      >
-        ← All readings
-      </Link>
-
       {/* Header — just the article name */}
-      <header className="mt-4">
+      <header>
         <h1 className="font-serif text-3xl font-bold leading-tight tracking-tight text-stone-900 sm:text-4xl">
           {reading.title}
         </h1>

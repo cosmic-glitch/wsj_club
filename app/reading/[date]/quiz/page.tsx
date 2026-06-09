@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllReadings, getReading } from "@/lib/content";
 import Quiz from "@/components/Quiz";
@@ -32,15 +31,8 @@ export default async function QuizPage({
 
   return (
     <article>
-      <Link
-        href="/"
-        className="text-sm text-stone-500 transition hover:text-stone-900"
-      >
-        ← All readings
-      </Link>
-
       {/* Header — just the article name */}
-      <header className="mt-4">
+      <header>
         <p className="text-xs font-semibold uppercase tracking-wide text-stone-400">
           Self-quiz
         </p>
