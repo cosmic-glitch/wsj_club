@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <div>
       <p className="mb-8 text-stone-600">
-        One Wall Street Journal article a day — words, concepts, and a quiz.
+        <span className="font-medium text-stone-900">Each day, in order:</span>{" "}
+        read today&rsquo;s article → read the handout → take the quiz → call
+        Anurag.
       </p>
 
       {readings.length === 0 ? (
