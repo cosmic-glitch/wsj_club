@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ArticleLink from "@/components/ArticleLink";
 import { getAllReadings, dateBig, dateSmall } from "@/lib/content";
 
 export default function Home() {
@@ -44,21 +45,19 @@ export default function Home() {
 
                 {/* Article: a single blue link (the title) straight to WSJ */}
                 <div>
-                  <a
+                  <ArticleLink
                     href={r.articleUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="font-medium text-sky-700 transition hover:text-sky-900 hover:underline"
                   >
                     {r.title}
-                  </a>
+                  </ArticleLink>
                 </div>
 
                 {/* Handout: the study page */}
                 <div className="sm:text-right">
                   <Link
                     href={`/reading/${r.date}`}
-                    className="inline-flex items-center gap-2 rounded-lg bg-stone-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-stone-700"
+                    className="inline-flex items-center gap-2 rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50"
                   >
                     Handout →
                   </Link>
