@@ -40,13 +40,15 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - WSJ requires login. Tell the user: *"I've opened the article — please log into WSJ in the browser window, then tell me when you're in."* Wait for them. Do **not** ask for or store their password; they log in themselves.
    - Once past the paywall, read the full article (`browser_snapshot`, or scroll and read). Capture: the real headline, the byline/section if useful, and the substance — main argument, key facts, and any jargon a teenager would trip on.
 
-3. **Draft the handout content.** Decide the words, concepts, and quiz per the calibration above. Pick a clear, descriptive `title` (it can match WSJ's headline or be a plainer version). The pages are intentionally minimal: the handout shows **just the title** at the top (no date, no summary or "big idea" blurb), then the words and concepts; the quiz lives on its own page (`/reading/<date>/quiz`). The index is a stack of one panel per day (date · title · four steps); the WSJ article link appears only there, as the word "article" in the first step (the title itself is plain text, not a link). The only "← All readings" link is in the global header bar (`app/layout.tsx`); the handout and quiz pages have no inline back-link of their own. Don't estimate reading time either — it varies too much per student, and they're expected to re-read.
+3. **Place the day's PDF.** The user saves the WSJ article as a PDF into the `PDFs/` drop-zone at the repo root (raw WSJ filename, e.g. `Wall Street Is Rushing… - WSJ.pdf`). Copy it to the served, date-named path: `cp "PDFs/<that file>.pdf" public/pdfs/YYYY-MM-DD.pdf` (run `mkdir -p public/pdfs` first if needed). Only `public/` is served by Next, so the PDF **must** live under `public/pdfs/`. You'll reference it as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`. If the user hasn't dropped a PDF, ask for it (or omit `pdfUrl` — the page then shows only the Web link). The raw `PDFs/` drop-zone is gitignored; the `public/pdfs/` copy is what gets committed and deployed.
 
-4. **Write `content/YYYY-MM-DD.json`** following the schema below exactly. Validate it's well-formed JSON.
+4. **Draft the handout content.** Decide the words, concepts, and quiz per the calibration above. Pick a clear, descriptive `title` (it can match WSJ's headline or be a plainer version). The pages are intentionally minimal: the handout shows **just the title** at the top (no date, no summary or "big idea" blurb), then the words and concepts; the quiz lives on its own page (`/reading/<date>/quiz`). The index is a stack of one panel per day (date · title · four steps); the article links appear only there, in the first step — **Read the article: Web · PDF** (Web → `articleUrl`, PDF → `pdfUrl`; the title itself is plain text, not a link). The only "← All readings" link is in the global header bar (`app/layout.tsx`); the handout and quiz pages have no inline back-link of their own. Don't estimate reading time either — it varies too much per student, and they're expected to re-read.
 
-5. **Build to verify:** run `npm run build`. It must succeed. If a new file breaks the build, it's almost always malformed JSON — fix it.
+5. **Write `content/YYYY-MM-DD.json`** following the schema below exactly (include `pdfUrl` if you placed a PDF). Validate it's well-formed JSON.
 
-6. **Deploy to Vercel** (see Deployment below) and give the user the live URL for today's reading: `<site>/reading/YYYY-MM-DD` (the quiz is at `<site>/reading/YYYY-MM-DD/quiz`).
+6. **Build to verify:** run `npm run build`. It must succeed. If a new file breaks the build, it's almost always malformed JSON — fix it.
+
+7. **Deploy to Vercel** (see Deployment below) and give the user the live URL for today's reading: `<site>/reading/YYYY-MM-DD` (the quiz is at `<site>/reading/YYYY-MM-DD/quiz`).
 
 ## Content file schema
 
@@ -57,6 +59,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
   "date": "2026-06-09",
   "title": "A clear, descriptive title",
   "articleUrl": "https://www.wsj.com/...the real article link...",
+  "pdfUrl": "/pdfs/2026-06-09.pdf",
   "source": "The Wall Street Journal",
   "vocab": [
     {
@@ -91,6 +94,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
 ```
 
 Field notes:
+- `pdfUrl` is the served path under `public/` (i.e. `/pdfs/YYYY-MM-DD.pdf`), **not** a filesystem path and **not** the raw `PDFs/` drop-zone. Omit the field entirely if there's no PDF for the day.
 - `answerIndex` is **0-based** (0 = first option). Double-check it points at the correct option.
 - `vocab` has **exactly 3 words**; each `examples` array has **exactly 2** sentences.
 - All `articleQuote` fields are short (one sentence/phrase) and taken from the actual article.

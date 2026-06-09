@@ -17,6 +17,8 @@ Static Next.js app (App Router, Next 16, React 19, Tailwind v4). The daily conte
 
 ```
 content/YYYY-MM-DD.json           one file = one day's handout
+public/pdfs/YYYY-MM-DD.pdf        served PDF of that day's article (the "PDF" link)
+PDFs/                             local drop-zone for raw WSJ PDF exports (gitignored)
 app/page.tsx                      index: one panel per day (date · title · 4 steps)
 app/reading/[date]/page.tsx       one day's handout — words + concepts (statically generated)
 app/reading/[date]/quiz/page.tsx  that day's self-quiz, on its own page
@@ -27,7 +29,9 @@ lib/content.ts                    content types + loader + date helpers (the sch
 
 ## Content schema (`lib/content.ts`)
 
-A `Reading` = `{ date, title, articleUrl, source?, vocab[], concepts[], quiz[] }`.
+A `Reading` = `{ date, title, articleUrl, pdfUrl?, source?, vocab[], concepts[], quiz[] }`.
+
+- **articleUrl** — the WSJ web article (the **Web** link). **pdfUrl** (optional) — a served PDF of the article, e.g. `/pdfs/2026-06-09.pdf` (the **PDF** link); omit it and only the Web link shows.
 
 - **vocab** — exactly **3** `VocabWord`s, each presented *article-first*:
   `articleQuote` (short real quote from the article) → `inContext` (what it means there) → `meaning` (broader definition) → `examples` (exactly **2** more example sentences).
@@ -35,11 +39,11 @@ A `Reading` = `{ date, title, articleUrl, source?, vocab[], concepts[], quiz[] }
   `articleQuote` → `inContext` → `meaning` (how it actually works).
 - **quiz** — exactly **5** `QuizQuestion`s, each `{ question, options (4), answerIndex (0-based), explanation }`.
 
-Pages stay minimal. The **index** is just a stack of panels, one per day — no other text. Each panel shows the date, the article title (plain text, **not** a link), then the same four numbered steps every day: **Read the _article_** (the word "article" links straight to WSJ), **Read the _handout_** (links to the handout page), **Take the _self-quiz_** (links to the quiz page), and **Call Anurag** (not a link). The handout top is **just the article title** (no date), then the two sections. The self-quiz is its own page at `/reading/<date>/quiz`, topped with just the title. **Navigation is deliberately sparse:** the WSJ article link lives only on the index (inside that first step), and the only "← All readings" link is the one in the global header bar (`app/layout.tsx`) — content pages (handout, quiz) carry no inline back-link of their own. No summary/blurb, no reading-time estimate. In both vocab and concept cards the quote is labeled **"Quote from the article"**, followed by **"What it means here"** (in the article) and **"In general"** (the broader meaning).
+Pages stay minimal. The **index** is just a stack of panels, one per day — no other text. Each panel shows the date, the article title (plain text, **not** a link), then the same four numbered steps every day: **Read the article: _Web_ · _PDF_** (two links — Web → the WSJ article, PDF → the served PDF; PDF only shows when `pdfUrl` is set), **Read the _handout_** (links to the handout page), **Take the _self-quiz_** (links to the quiz page), and **Call Anurag** (not a link). The handout top is **just the article title** (no date), then the two sections. The self-quiz is its own page at `/reading/<date>/quiz`, topped with just the title. **Navigation is deliberately sparse:** the WSJ article link lives only on the index (inside that first step), and the only "← All readings" link is the one in the global header bar (`app/layout.tsx`) — content pages (handout, quiz) carry no inline back-link of their own. No summary/blurb, no reading-time estimate. In both vocab and concept cards the quote is labeled **"Quote from the article"**, followed by **"What it means here"** (in the article) and **"In general"** (the broader meaning).
 
 ## Daily workflow
 
-Driven by the **`wsj-reading` skill** — invoked when the user pastes a WSJ link or says "today's reading". It reads the article in the browser (the user logs into WSJ themselves), writes `content/YYYY-MM-DD.json`, builds, commits, and pushes (which deploys). Audience calibration and the article-first rules live in `.claude/skills/wsj-reading/SKILL.md`. Hard rule: link to WSJ and quote only short phrases — never republish the article text.
+Driven by the **`wsj-reading` skill** — invoked when the user pastes a WSJ link or says "today's reading". It reads the article in the browser (the user logs into WSJ themselves), writes `content/YYYY-MM-DD.json`, copies the day's PDF from the `PDFs/` drop-zone to `public/pdfs/YYYY-MM-DD.pdf` (setting `pdfUrl`), builds, commits, and pushes (which deploys). Audience calibration and the article-first rules live in `.claude/skills/wsj-reading/SKILL.md`. Hard rule: link to WSJ and quote only short phrases — never republish the article text.
 
 ## Deploy
 

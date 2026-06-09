@@ -39,7 +39,8 @@ export type QuizQuestion = {
 export type Reading = {
   date: string; // "YYYY-MM-DD"
   title: string; // a clear, descriptive title (need not match WSJ's headline)
-  articleUrl: string; // link to the original WSJ article
+  articleUrl: string; // link to the original WSJ article (the "Web" link)
+  pdfUrl?: string; // served PDF of the article, e.g. "/pdfs/2026-06-09.pdf" (the "PDF" link)
   source?: string; // e.g. "The Wall Street Journal"
   vocab: VocabWord[];
   concepts: Concept[];

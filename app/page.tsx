@@ -36,10 +36,23 @@ export default function Home() {
           {/* The four steps — the same every day */}
           <ol className="mt-4 list-decimal space-y-1.5 pl-5 text-stone-700 marker:font-semibold marker:text-stone-400">
             <li>
-              Read the{" "}
+              Read the article:{" "}
               <ArticleLink href={r.articleUrl} className={linkClass}>
-                article
+                Web
               </ArticleLink>
+              {r.pdfUrl && (
+                <>
+                  {" · "}
+                  <a
+                    href={r.pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={linkClass}
+                  >
+                    PDF
+                  </a>
+                </>
+              )}
             </li>
             <li>
               Read the{" "}

@@ -40,6 +40,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# local PDF drop-zone — the raw WSJ exports live here; the skill copies
+# the day's file to public/pdfs/YYYY-MM-DD.pdf (which IS committed/served).
+/PDFs/
+
 # local test artifacts (browser screenshots from the wsj-reading skill)
 /index.png
 /reading.png
