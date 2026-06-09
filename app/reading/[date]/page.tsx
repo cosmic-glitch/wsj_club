@@ -23,7 +23,7 @@ export async function generateMetadata({
   if (!reading) return { title: "Reading not found" };
   return {
     title: `${reading.title} · WSJ Reading Club`,
-    description: reading.summary,
+    description: `Words, concepts, and a quiz for "${reading.title}".`,
   };
 }
 
@@ -53,15 +53,11 @@ export default async function ReadingPage({
         <h1 className="mt-3 font-serif text-3xl font-bold leading-tight tracking-tight text-stone-900 sm:text-4xl">
           {reading.title}
         </h1>
-        {reading.bigIdea ? (
-          <p className="mt-4 text-lg text-stone-700">{reading.bigIdea}</p>
-        ) : null}
-        <p className="mt-4 text-stone-600">{reading.summary}</p>
         <a
           href={reading.articleUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-flex items-center gap-2 rounded-lg bg-stone-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-700"
+          className="mt-5 inline-flex items-center gap-2 rounded-lg bg-stone-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-700"
         >
           Read the article in {reading.source ?? "The Wall Street Journal"} →
         </a>

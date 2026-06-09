@@ -31,8 +31,6 @@ export type Reading = {
   title: string; // a clear, descriptive title (need not match WSJ's headline)
   articleUrl: string; // link to the original WSJ article
   source?: string; // e.g. "The Wall Street Journal"
-  summary: string; // 2-4 sentence original overview (NOT a copy of the article)
-  bigIdea?: string; // one-line "why this matters"
   vocab: VocabWord[];
   concepts: Concept[];
   quiz: QuizQuestion[];
