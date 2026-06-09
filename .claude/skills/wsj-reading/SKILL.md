@@ -40,13 +40,13 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - WSJ requires login. Tell the user: *"I've opened the article — please log into WSJ in the browser window, then tell me when you're in."* Wait for them. Do **not** ask for or store their password; they log in themselves.
    - Once past the paywall, read the full article (`browser_snapshot`, or scroll and read). Capture: the real headline, the byline/section if useful, and the substance — main argument, key facts, and any jargon a teenager would trip on.
 
-3. **Draft the handout content.** Decide the words, concepts, and quiz per the calibration above. Pick a clear, descriptive `title` (it can match WSJ's headline or be a plainer version). Keep the handout page itself brief — no summary or "big idea" blurb; the title plus the WSJ link is enough orientation before the words/concepts/quiz. (Don't estimate reading time either — it varies too much per student, and they're expected to re-read.)
+3. **Draft the handout content.** Decide the words, concepts, and quiz per the calibration above. Pick a clear, descriptive `title` (it can match WSJ's headline or be a plainer version). The pages are intentionally minimal: the handout shows **just the title + the WSJ link** at the top (no date, no summary or "big idea" blurb), then the words and concepts; the quiz lives on its own page (`/reading/<date>/quiz`). Don't estimate reading time either — it varies too much per student, and they're expected to re-read.
 
 4. **Write `content/YYYY-MM-DD.json`** following the schema below exactly. Validate it's well-formed JSON.
 
 5. **Build to verify:** run `npm run build`. It must succeed. If a new file breaks the build, it's almost always malformed JSON — fix it.
 
-6. **Deploy to Vercel** (see Deployment below) and give the user the live URL for today's reading: `<site>/reading/YYYY-MM-DD`.
+6. **Deploy to Vercel** (see Deployment below) and give the user the live URL for today's reading: `<site>/reading/YYYY-MM-DD` (the quiz is at `<site>/reading/YYYY-MM-DD/quiz`).
 
 ## Content file schema
 
@@ -96,7 +96,7 @@ Field notes:
 - All `articleQuote` fields are short (one sentence/phrase) and taken from the actual article.
 - Keep 4 options per quiz question.
 
-The TypeScript types backing this live in `lib/content.ts` — if you change the schema, update that file and the page components too.
+The TypeScript types backing this live in `lib/content.ts` — if you change the schema, update that file and the page components too (`app/reading/[date]/page.tsx` for words/concepts, `app/reading/[date]/quiz/page.tsx` for the quiz).
 
 ## Deployment
 

@@ -2,7 +2,7 @@
 
 # WSJ Reading Club
 
-A daily reading-handout website for a small club of four kids in US grades 8–10. Each day = one Wall Street Journal article turned into a study page with three sections: **Words to know**, **Concepts behind the story**, and a **self-quiz**. Goal: build general knowledge, vocabulary, and conceptual understanding.
+A daily reading-handout website for a small club of four kids in US grades 8–10. Each day = one Wall Street Journal article turned into a study handout with two sections — **Words to know** and **Concepts behind the story** — plus a **self-quiz** on its own page. Goal: build general knowledge, vocabulary, and conceptual understanding.
 
 Live: https://wsjclub.vercel.app · Repo: https://github.com/cosmic-glitch/wsj_club
 
@@ -16,12 +16,13 @@ Live: https://wsjclub.vercel.app · Repo: https://github.com/cosmic-glitch/wsj_c
 Static Next.js app (App Router, Next 16, React 19, Tailwind v4). The daily content is **data, not code**: one JSON file per day in `content/`. Pages render whatever files exist; the index builds itself. Adding a day = adding one JSON file.
 
 ```
-content/YYYY-MM-DD.json       one file = one day's handout
-app/page.tsx                  index: 3-column table (Date · Article · Handout)
-app/reading/[date]/page.tsx   one day's handout (statically generated)
-components/Quiz.tsx            interactive client-side quiz
-lib/content.ts                content types + loader + date helpers (the schema)
-.claude/skills/wsj-reading/    the skill that produces a day's content
+content/YYYY-MM-DD.json           one file = one day's handout
+app/page.tsx                      index: 4-column table (Date · Article · Handout · Quiz)
+app/reading/[date]/page.tsx       one day's handout — words + concepts (statically generated)
+app/reading/[date]/quiz/page.tsx  that day's self-quiz, on its own page
+components/Quiz.tsx                interactive client-side quiz
+lib/content.ts                    content types + loader + date helpers (the schema)
+.claude/skills/wsj-reading/       the skill that produces a day's content
 ```
 
 ## Content schema (`lib/content.ts`)
@@ -34,7 +35,7 @@ A `Reading` = `{ date, title, articleUrl, source?, vocab[], concepts[], quiz[] }
   `articleQuote` → `inContext` → `meaning` (how it actually works).
 - **quiz** — exactly **5** `QuizQuestion`s, each `{ question, options (4), answerIndex (0-based), explanation }`.
 
-Handout pages stay brief: prominent date + title + WSJ link, then the three sections. No summary/blurb, no reading-time estimate.
+Pages stay minimal. The handout top is **just the article title + the WSJ link** (no date), then the two sections; a "Take the quiz →" link sits at the bottom. The self-quiz is its own page at `/reading/<date>/quiz`, topped with just the title. No summary/blurb, no reading-time estimate. In both vocab and concept cards the quote is labeled **"Quote from the article"**, followed by **"What it means here"** (in the article) and **"In general"** (the broader meaning).
 
 ## Daily workflow
 
