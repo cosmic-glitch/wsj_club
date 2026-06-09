@@ -1,124 +1,130 @@
 {
   "date": "2026-06-09",
-  "title": "Example: Who Pays for the AI Data-Center Boom?",
-  "articleUrl": "https://www.wsj.com",
+  "title": "Wall Street Is Rushing to Fund the AI Bonanza in Every Conceivable Way",
+  "articleUrl": "https://www.wsj.com/finance/investing/global-stocks-markets-dow-news-06-08-2026-aac7c547",
   "source": "The Wall Street Journal",
   "vocab": [
     {
-      "word": "voracious",
-      "partOfSpeech": "adjective",
-      "articleQuote": "These models have a voracious appetite for computing power, and feeding them has become staggeringly expensive.",
-      "inContext": "Here it describes how AI systems devour computing power — they always seem to need more, no matter how much they are given.",
-      "meaning": "Wanting or needing a huge amount of something; never satisfied.",
-      "examples": [
-        "After soccer practice he had a voracious appetite and went back for a third plate of dinner.",
-        "She's a voracious reader, finishing two or three novels every week."
-      ]
-    },
-    {
-      "word": "proliferate",
-      "partOfSpeech": "verb",
-      "articleQuote": "As data centers proliferate across rural counties, they are straining local power grids.",
-      "inContext": "In the article it means the data centers are popping up and multiplying quickly, spreading all over the place.",
-      "meaning": "To increase rapidly and spread widely.",
-      "examples": [
-        "Once one classmate got the new sneakers, they proliferated until half the school was wearing them.",
-        "Fake accounts can proliferate on a social network faster than moderators can delete them."
-      ]
-    },
-    {
-      "word": "scrutiny",
+      "word": "bonanza",
       "partOfSpeech": "noun",
-      "articleQuote": "The rapid growth of private credit has drawn scrutiny from regulators worried about hidden risks.",
-      "inContext": "Here it means regulators are watching private credit closely and carefully, looking for problems.",
-      "meaning": "Very close and careful examination, often to find problems or mistakes.",
+      "articleQuote": "Wall Street Is Rushing to Fund the AI Bonanza in Every Conceivable Way.",
+      "inContext": "Here the AI build-out is treated as a giant money-making opportunity — a flood of profit and investment that everyone wants a piece of.",
+      "meaning": "A sudden source of great wealth or good luck; a situation that produces a lot of something valuable all at once.",
       "examples": [
-        "His science-fair claims didn't hold up under the judges' scrutiny.",
-        "New apps face scrutiny over how they handle users' personal data."
+        "The bake sale turned into a bonanza when a local bakery donated a hundred cupcakes and everything sold out in an hour.",
+        "Opening that booster pack was a bonanza — three rare cards in a row."
+      ]
+    },
+    {
+      "word": "defy",
+      "partOfSpeech": "verb",
+      "articleQuote": "Still, demand from investors has generally defied the skeptics so far.",
+      "inContext": "Investors kept eagerly buying AI-related stocks and bonds even though doubters predicted the enthusiasm would fade — the demand went against those predictions.",
+      "meaning": "To openly resist or refuse to obey; or, when you say something \"defies\" expectations, to go against what people predicted.",
+      "examples": [
+        "Even though everyone expected the underdog team to lose, they defied the odds and won the championship.",
+        "She defied her coach's prediction by shaving ten seconds off her best time."
+      ]
+    },
+    {
+      "word": "daunting",
+      "partOfSpeech": "adjective",
+      "articleQuote": "But the daunting expenses pushed all of the hyperscalers but Microsoft to the bond market last year.",
+      "inContext": "The costs of building AI data centers were so huge and intimidating that companies couldn't cover them with their own cash and had to borrow.",
+      "meaning": "Seeming so large, difficult, or intimidating that it discourages you or makes you nervous to face it.",
+      "examples": [
+        "Starting high school in a brand-new town felt daunting until she made her first friend.",
+        "The summer reading list looked daunting at first, but it turned out to be only five short books."
       ]
     }
   ],
   "concepts": [
     {
-      "name": "Hyperscalers",
-      "articleQuote": "The build-out is dominated by a handful of hyperscalers — the cloud giants with the deepest pockets in technology.",
-      "inContext": "In the article, the 'hyperscalers' are the few enormous companies — think Amazon, Microsoft, Google, Meta — doing most of the AI data-center spending.",
-      "meaning": "A small group of giant technology companies that run huge networks of data centers and rent out computing power at an extreme scale. 'Hyper' means extreme and 'scale' means size."
+      "name": "Raising money: equity vs. debt",
+      "articleQuote": "The casual announcement of an $85 billion equity raise.",
+      "inContext": "Alphabet (Google's parent) chose to raise $85 billion by selling new shares — an \"equity raise\" — while other tech giants raised cash by issuing bonds. The article's point is that companies are using every method at once.",
+      "meaning": "A company that needs cash has two basic options. With equity it sells slices of ownership (shares): it never has to pay the money back, but the new owners now share in future profits. With debt (like bonds) it borrows money it must repay later with interest, but the lenders get no ownership. Tech firms funding AI are doing both — selling shares and borrowing — on a massive scale."
     },
     {
-      "name": "Capital expenditure (capex)",
-      "articleQuote": "Capital expenditures at the largest tech firms are expected to top $300 billion this year, much of it on chips and buildings.",
-      "inContext": "Here it is the money these companies pour into long-lasting physical things — the data centers and the chips inside them.",
-      "meaning": "Money a company spends to buy or build long-lasting physical assets (buildings, machines, servers), as opposed to day-to-day costs like salaries. Investors watch it because huge spending can signal confidence — or a risky bet."
+      "name": "AI hyperscalers",
+      "articleQuote": "the AI hyperscalers Alphabet, Amazon.com, Meta Platforms, Microsoft and Oracle have issued $159 billion of bonds globally this year.",
+      "inContext": "These are the handful of giant companies building the enormous data centers that power AI, and they're borrowing huge sums to do it.",
+      "meaning": "A hyperscaler is a company that runs computing at \"hyper\" scale — gigantic data centers full of servers and chips that it rents out as cloud computing. Because AI models need vast amounts of computing power, these few companies are spending and borrowing enormous amounts to build that infrastructure."
     },
     {
-      "name": "Private credit",
-      "articleQuote": "Increasingly, that spending is financed not by banks but by private-credit funds hungry for big, steady returns.",
-      "inContext": "In the article, 'private credit' is the non-bank money being lent to help pay for the data-center boom.",
-      "meaning": "Lending to companies from outside the traditional banking system — investment funds (often backed by pensions and wealthy investors) lend directly to businesses. It has grown fast because it can move quickly and fund deals banks find too large or too risky."
+      "name": "Shareholder dilution",
+      "articleQuote": "increased equity issuance could pressure stocks by diluting shareholders—one possible factor behind last week's tech selloff.",
+      "inContext": "When a company like Alphabet issues lots of new shares to raise cash, the people who already own shares suddenly own a smaller fraction of the company — which can push the stock price down.",
+      "meaning": "Imagine a pizza cut into 8 slices and you own 1. If the company suddenly cuts it into 16 slices, your slice is smaller even though you still hold one piece. Issuing new shares does the same to ownership: each existing share becomes a smaller piece of the company and of its future profits. That \"watering down\" is called dilution, and it's one reason a big share sale can make a stock fall."
     },
     {
-      "name": "Depreciation",
-      "articleQuote": "Critics question how quickly the companies are depreciating chips that may be obsolete within a few years.",
-      "inContext": "Here it is about how fast those expensive AI chips lose value as newer, better ones arrive.",
-      "meaning": "The way an expensive asset loses value as it ages and wears out. Accountants spread its cost across the years it's expected to be useful, which affects how profitable a company looks."
+      "name": "Bond spreads over Treasurys",
+      "articleQuote": "The extra return that investors get for holding U.S. companies' bonds instead of ultrasafe Treasurys is hovering near multidecade lows.",
+      "inContext": "Investors are demanding only a tiny bit of extra interest to lend to tech companies rather than to the U.S. government — a sign they feel very safe doing it, despite the AI risks.",
+      "meaning": "U.S. government bonds (Treasurys) are treated as the safest place to lend money. Any riskier borrower has to pay a little more interest to attract lenders; that extra amount is the \"spread.\" A wide spread means investors see lots of risk; a narrow spread — near record lows here — means they feel confident the borrower will pay them back."
+    },
+    {
+      "name": "Investment-grade vs. speculative-grade bonds",
+      "articleQuote": "Though rated investment-grade, its bonds trade more in line with the highest tier of speculative-grade debt.",
+      "inContext": "Rating agencies officially call Oracle's debt fairly safe (investment-grade), but investors are treating it as riskier — pricing it like the safest end of \"junk\" — because Oracle is expected to burn through tens of billions building its cloud business.",
+      "meaning": "Independent agencies grade a borrower's bonds by how likely the borrower is to pay them back. \"Investment-grade\" means a low risk of default; \"speculative-grade\" (also called high-yield or \"junk\") means higher risk — so those borrowers must pay higher interest. The grade is only an opinion, so the market can sometimes treat a bond as riskier or safer than its official rating."
     }
   ],
   "quiz": [
     {
-      "question": "What is a 'hyperscaler'?",
+      "question": "According to the article, why are tech companies raising such enormous amounts of money right now?",
       "options": [
-        "A tool for measuring very large numbers",
-        "A giant technology company that runs huge networks of data centers",
-        "A new type of AI chatbot",
-        "A government agency that regulates the internet"
+        "To pay larger dividends to their shareholders",
+        "To fund the build-out of AI data centers and infrastructure",
+        "To buy back their own stock from the market",
+        "To repay debts left over from the 1850s railroad boom"
       ],
       "answerIndex": 1,
-      "explanation": "Hyperscalers are the few enormous companies — like Amazon, Microsoft, and Google — that operate computing at an extreme scale and rent it out."
+      "explanation": "The article says tech companies are \"hungry for cash to invest in data centers\" to power the AI build-out."
     },
     {
-      "question": "Buying thousands of servers to build a new data center is an example of:",
+      "question": "Alphabet announced an $85 billion equity raise. Why can selling lots of new shares push a company's stock price down?",
       "options": [
-        "Capital expenditure (capex)",
-        "Depreciation",
-        "A salary",
-        "Private credit"
+        "The company must immediately repay all the new money with interest",
+        "An equity raise automatically triggers a recession",
+        "New shares dilute existing shareholders, so each share becomes a smaller piece of the company",
+        "It legally forces the company to stop selling products"
+      ],
+      "answerIndex": 2,
+      "explanation": "Issuing new shares spreads ownership across more shares — dilution — so each existing share is worth a smaller slice of the company and its profits."
+    },
+    {
+      "question": "What is an \"AI hyperscaler,\" as the article uses the term?",
+      "options": [
+        "A government agency that regulates artificial intelligence",
+        "A type of high-speed undersea internet cable",
+        "A giant tech company that runs massive data centers and cloud computing",
+        "A startup that has never earned any revenue"
+      ],
+      "answerIndex": 2,
+      "explanation": "Hyperscalers like Alphabet, Amazon, Meta, Microsoft and Oracle operate cloud computing at enormous scale and are building the data centers behind AI."
+    },
+    {
+      "question": "The article notes that Oracle's bonds are \"rated investment-grade\" but \"trade more in line with... speculative-grade debt.\" What does that suggest?",
+      "options": [
+        "Investors treat Oracle's debt as riskier than its official rating implies",
+        "Oracle has stopped paying interest on its bonds",
+        "Oracle's bonds are now the safest in the entire market",
+        "Oracle is no longer legally allowed to borrow money"
       ],
       "answerIndex": 0,
-      "explanation": "Capex is money spent on long-lasting physical things, like buildings and servers, rather than day-to-day costs."
+      "explanation": "Even though rating agencies call the debt investment-grade, the market prices it like riskier speculative-grade (\"junk\") debt, because Oracle is expected to burn through cash."
     },
     {
-      "question": "Why are AI companies turning to private credit instead of only using banks?",
+      "question": "\"Demand from investors has generally defied the skeptics so far.\" In this sentence, \"defied\" most nearly means—",
       "options": [
-        "Banks are not allowed to lend to tech companies",
-        "Private credit lenders can move quickly and fund very large deals",
-        "Private credit is always cheaper than a bank loan",
-        "The government requires it"
+        "obeyed without question",
+        "explained in careful detail",
+        "copied exactly",
+        "went against and proved wrong"
       ],
-      "answerIndex": 1,
-      "explanation": "Private credit funds can act faster and take on bigger or riskier deals than traditional banks, which is part of why it has grown so fast."
-    },
-    {
-      "question": "Why does 'depreciation' matter for AI data centers?",
-      "options": [
-        "It measures how much electricity a center uses",
-        "AI chips can become outdated fast, which changes how profitable the centers look",
-        "It is the name for the loan used to build them",
-        "It tracks how many people visit a website"
-      ],
-      "answerIndex": 1,
-      "explanation": "If chips wear out or go obsolete quickly, the cost spread across those years rises, which affects how good the investment really is."
-    },
-    {
-      "question": "The article says private credit has 'drawn scrutiny' from regulators. What does scrutiny mean?",
-      "options": [
-        "Close, careful examination — often looking for problems",
-        "Strong praise and approval",
-        "A kind of high-interest loan",
-        "Rapid growth and spreading"
-      ],
-      "answerIndex": 0,
-      "explanation": "Scrutiny means examining something closely and carefully, usually to find problems or risks."
+      "answerIndex": 3,
+      "explanation": "To defy expectations is to go against them — investor demand stayed strong even though skeptics predicted it would fade."
     }
   ]
 }
