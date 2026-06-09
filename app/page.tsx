@@ -1,6 +1,6 @@
 import Link from "next/link";
 import ArticleLink from "@/components/ArticleLink";
-import { getAllReadings } from "@/lib/content";
+import { getAllReadings, dateBig } from "@/lib/content";
 
 export default function Home() {
   const readings = getAllReadings();
@@ -14,7 +14,6 @@ export default function Home() {
           <li>Take the quiz</li>
           <li>Call Anurag</li>
         </ol>
-        <p className="mt-3 text-stone-500">The first day is tough.</p>
       </div>
 
       {readings.length === 0 ? (
@@ -27,8 +26,13 @@ export default function Home() {
             {readings.map((r) => (
               <li
                 key={r.date}
-                className="grid grid-cols-1 gap-2 px-6 py-5 sm:grid-cols-[1fr_auto] sm:items-center sm:gap-6"
+                className="grid grid-cols-1 gap-2 px-6 py-5 sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-6"
               >
+                {/* Date — just the date, no weekday */}
+                <div className="font-serif text-xl font-bold text-stone-900">
+                  {dateBig(r.date)}
+                </div>
+
                 {/* Article: a label, then a blue link straight to WSJ */}
                 <div>
                   <span className="font-semibold text-stone-500">Article: </span>
