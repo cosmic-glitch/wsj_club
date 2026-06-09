@@ -33,7 +33,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - WSJ requires login. Tell the user: *"I've opened the article — please log into WSJ in the browser window, then tell me when you're in."* Wait for them. Do **not** ask for or store their password; they log in themselves.
    - Once past the paywall, read the full article (`browser_snapshot`, or scroll and read). Capture: the real headline, the byline/section if useful, and the substance — main argument, key facts, and any jargon a teenager would trip on.
 
-3. **Draft the handout content.** Decide the words, concepts, and quiz per the calibration above. Pick a clear, descriptive `title` (it can match WSJ's headline or be a plainer version). Write a 2–4 sentence original `summary` and a one-line `bigIdea`. Estimate `readingTimeMinutes`.
+3. **Draft the handout content.** Decide the words, concepts, and quiz per the calibration above. Pick a clear, descriptive `title` (it can match WSJ's headline or be a plainer version). Write a 2–4 sentence original `summary` and a one-line `bigIdea`. (Don't estimate reading time — it varies too much per student, and they're expected to re-read.)
 
 4. **Write `content/YYYY-MM-DD.json`** following the schema below exactly. Validate it's well-formed JSON.
 
@@ -53,7 +53,6 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
   "source": "The Wall Street Journal",
   "summary": "2-4 original sentences on what the article is about (NOT copied from WSJ).",
   "bigIdea": "One sentence: why this story matters.",
-  "readingTimeMinutes": 6,
   "vocab": [
     {
       "word": "voracious",
@@ -83,7 +82,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
 
 Field notes:
 - `answerIndex` is **0-based** (0 = first option). Double-check it points at the correct option.
-- `inContext` and `bigIdea` and `readingTimeMinutes` are optional but nice to include.
+- `inContext` and `bigIdea` are optional but nice to include.
 - Keep 4 options per quiz question.
 
 The TypeScript types backing this live in `lib/content.ts` — if you change the schema, update that file and the page components too.

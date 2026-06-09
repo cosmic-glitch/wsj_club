@@ -47,13 +47,10 @@ export default async function ReadingPage({
 
       {/* Header */}
       <header className="mt-4 border-b border-stone-200 pb-8">
-        <p className="text-xs font-medium uppercase tracking-wide text-stone-400">
+        <p className="font-serif text-2xl font-bold text-amber-800 sm:text-3xl">
           {formatDate(reading.date)}
-          {reading.readingTimeMinutes
-            ? ` · ${reading.readingTimeMinutes} min read`
-            : ""}
         </p>
-        <h1 className="mt-2 font-serif text-3xl font-bold leading-tight tracking-tight text-stone-900 sm:text-4xl">
+        <h1 className="mt-3 font-serif text-3xl font-bold leading-tight tracking-tight text-stone-900 sm:text-4xl">
           {reading.title}
         </h1>
         {reading.bigIdea ? (

@@ -33,7 +33,6 @@ export type Reading = {
   source?: string; // e.g. "The Wall Street Journal"
   summary: string; // 2-4 sentence original overview (NOT a copy of the article)
   bigIdea?: string; // one-line "why this matters"
-  readingTimeMinutes?: number;
   vocab: VocabWord[];
   concepts: Concept[];
   quiz: QuizQuestion[];
@@ -69,4 +68,24 @@ export function formatDate(date: string): string {
     day: "numeric",
     timeZone: "UTC",
   });
+}
+
+/** The big, prominent part of a date, e.g. "June 9". */
+export function dateBig(date: string): string {
+  const [y, m, d] = date.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+}
+
+/** The supporting part of a date, e.g. "Tuesday · 2026". */
+export function dateSmall(date: string): string {
+  const [y, m, d] = date.split("-").map(Number);
+  const weekday = new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", {
+    weekday: "long",
+    timeZone: "UTC",
+  });
+  return `${weekday} · ${y}`;
 }
