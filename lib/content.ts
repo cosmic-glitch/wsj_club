@@ -88,12 +88,11 @@ export function dateBig(date: string): string {
   });
 }
 
-/** The supporting part of a date, e.g. "Tuesday · 2026". */
+/** The supporting part of a date — the weekday, e.g. "Tuesday". */
 export function dateSmall(date: string): string {
   const [y, m, d] = date.split("-").map(Number);
-  const weekday = new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", {
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", {
     weekday: "long",
     timeZone: "UTC",
   });
-  return `${weekday} · ${y}`;
 }

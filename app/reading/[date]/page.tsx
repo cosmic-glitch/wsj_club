@@ -43,19 +43,11 @@ export default async function ReadingPage({
         ← All readings
       </Link>
 
-      {/* Header — just the article name + link to WSJ */}
+      {/* Header — just the article name */}
       <header className="mt-4">
         <h1 className="font-serif text-3xl font-bold leading-tight tracking-tight text-stone-900 sm:text-4xl">
           {reading.title}
         </h1>
-        <a
-          href={reading.articleUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 inline-flex items-center gap-2 rounded-lg bg-stone-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-700"
-        >
-          Read the article in {reading.source ?? "The Wall Street Journal"} →
-        </a>
       </header>
 
       {/* Vocabulary */}
@@ -75,16 +67,6 @@ export default async function ReadingPage({
           ))}
         </div>
       </Section>
-
-      {/* To the quiz (now its own page) */}
-      <div className="mt-12 border-t border-stone-200 pt-8">
-        <Link
-          href={`/reading/${reading.date}/quiz`}
-          className="inline-flex items-center gap-2 rounded-lg bg-stone-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-700"
-        >
-          Take the quiz →
-        </Link>
-      </div>
     </article>
   );
 }

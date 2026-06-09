@@ -33,10 +33,10 @@ export default async function QuizPage({
   return (
     <article>
       <Link
-        href={`/reading/${reading.date}`}
+        href="/"
         className="text-sm text-stone-500 transition hover:text-stone-900"
       >
-        ← Back to handout
+        ← All readings
       </Link>
 
       {/* Header — just the article name */}

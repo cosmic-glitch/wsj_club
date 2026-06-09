@@ -40,17 +40,15 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Article: title + the WSJ link, right here on the index */}
+                {/* Article: a single blue link (the title) straight to WSJ */}
                 <div>
-                  <p className="font-medium text-stone-900">{r.title}</p>
                   <a
                     href={r.articleUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-1 inline-flex items-center gap-1 text-sm font-medium text-sky-700 transition hover:text-sky-900 hover:underline"
+                    className="font-medium text-sky-700 transition hover:text-sky-900 hover:underline"
                   >
-                    Read in {r.source ?? "The Wall Street Journal"}
-                    <span aria-hidden>↗</span>
+                    {r.title}
                   </a>
                 </div>
 
