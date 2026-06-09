@@ -2,68 +2,61 @@ import Link from "next/link";
 import ArticleLink from "@/components/ArticleLink";
 import { getAllReadings, dateBig } from "@/lib/content";
 
+// One shared blue-link style so every link on the page matches.
+const linkClass = "text-sky-700 transition hover:text-sky-900 hover:underline";
+
 export default function Home() {
   const readings = getAllReadings();
 
+  if (readings.length === 0) {
+    return (
+      <p className="rounded-xl border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
+        No readings yet. The first one will appear here.
+      </p>
+    );
+  }
+
   return (
-    <div>
-      <div className="mb-8">
-        <ol className="list-decimal space-y-1 pl-5 text-stone-700 marker:font-semibold marker:text-stone-400">
-          <li>Read today&rsquo;s article</li>
-          <li>Read the handout</li>
-          <li>Take the quiz</li>
-          <li>Call Anurag</li>
-        </ol>
-      </div>
+    <ul className="space-y-6">
+      {readings.map((r) => (
+        <li
+          key={r.date}
+          className="rounded-xl border border-stone-200 bg-white p-6 shadow-sm"
+        >
+          {/* The date */}
+          <div className="font-serif text-2xl font-bold text-stone-900">
+            {dateBig(r.date)}
+          </div>
 
-      {readings.length === 0 ? (
-        <p className="rounded-xl border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
-          No readings yet. The first one will appear here.
-        </p>
-      ) : (
-        <div className="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-sm">
-          <ul className="divide-y divide-stone-200">
-            {readings.map((r) => (
-              <li
-                key={r.date}
-                className="grid grid-cols-1 gap-2 px-6 py-5 sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-6"
-              >
-                {/* Date — just the date, no weekday */}
-                <div className="font-serif text-xl font-bold text-stone-900">
-                  {dateBig(r.date)}
-                </div>
+          {/* The article title — plain text, not a link */}
+          <p className="mt-1.5 text-lg font-medium leading-snug text-stone-900">
+            {r.title}
+          </p>
 
-                {/* Article: a label, then a blue link straight to WSJ */}
-                <div>
-                  <span className="font-semibold text-stone-500">Article: </span>
-                  <ArticleLink
-                    href={r.articleUrl}
-                    className="font-medium text-sky-700 transition hover:text-sky-900 hover:underline"
-                  >
-                    {r.title}
-                  </ArticleLink>
-                </div>
-
-                {/* Handout and Quiz: plain blue links, same as the rest */}
-                <div className="flex gap-4 sm:justify-end">
-                  <Link
-                    href={`/reading/${r.date}`}
-                    className="text-sky-700 transition hover:text-sky-900 hover:underline"
-                  >
-                    Handout
-                  </Link>
-                  <Link
-                    href={`/reading/${r.date}/quiz`}
-                    className="text-sky-700 transition hover:text-sky-900 hover:underline"
-                  >
-                    Quiz
-                  </Link>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
+          {/* The four steps — the same every day */}
+          <ol className="mt-4 list-decimal space-y-1.5 pl-5 text-stone-700 marker:font-semibold marker:text-stone-400">
+            <li>
+              Read the{" "}
+              <ArticleLink href={r.articleUrl} className={linkClass}>
+                article
+              </ArticleLink>
+            </li>
+            <li>
+              Read the{" "}
+              <Link href={`/reading/${r.date}`} className={linkClass}>
+                handout
+              </Link>
+            </li>
+            <li>
+              Take the{" "}
+              <Link href={`/reading/${r.date}/quiz`} className={linkClass}>
+                self-quiz
+              </Link>
+            </li>
+            <li>Call Anurag</li>
+          </ol>
+        </li>
+      ))}
+    </ul>
   );
 }
