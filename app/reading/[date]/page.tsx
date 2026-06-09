@@ -141,17 +141,31 @@ function VocabCard({ word }: { word: VocabWord }) {
           {word.partOfSpeech}
         </span>
       </div>
-      <p className="mt-2 text-stone-700">{word.definition}</p>
-      <p className="mt-3 text-sm text-stone-600">
-        <span className="font-semibold text-stone-500">Example: </span>
-        <span className="italic">{word.example}</span>
+
+      <blockquote className="mt-3 border-l-2 border-stone-300 pl-4 text-stone-600 italic">
+        “{word.articleQuote}”
+      </blockquote>
+
+      <p className="mt-3 text-stone-700">
+        <span className="font-semibold text-stone-500">In the article: </span>
+        {word.inContext}
       </p>
-      {word.inContext ? (
-        <p className="mt-3 rounded-lg bg-stone-50 px-4 py-2 text-sm text-stone-600">
-          <span className="font-semibold text-stone-500">In the article: </span>
-          {word.inContext}
-        </p>
-      ) : null}
+
+      <p className="mt-2 text-stone-700">
+        <span className="font-semibold text-stone-500">Broader meaning: </span>
+        {word.meaning}
+      </p>
+
+      <div className="mt-3">
+        <p className="text-sm font-semibold text-stone-500">More examples</p>
+        <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-600">
+          {word.examples.map((ex, i) => (
+            <li key={i} className="italic">
+              {ex}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
@@ -162,10 +176,19 @@ function ConceptCard({ concept }: { concept: Concept }) {
       <h3 className="font-serif text-xl font-bold text-stone-900">
         {concept.name}
       </h3>
-      <p className="mt-2 text-stone-700">{concept.explanation}</p>
-      <p className="mt-3 border-l-2 border-amber-300 pl-4 text-sm text-stone-600">
-        <span className="font-semibold text-stone-500">Why it matters: </span>
-        {concept.whyItMatters}
+
+      <blockquote className="mt-3 border-l-2 border-amber-300 pl-4 text-stone-600 italic">
+        “{concept.articleQuote}”
+      </blockquote>
+
+      <p className="mt-3 text-stone-700">
+        <span className="font-semibold text-stone-500">In the article: </span>
+        {concept.inContext}
+      </p>
+
+      <p className="mt-2 text-stone-700">
+        <span className="font-semibold text-stone-500">Broader meaning: </span>
+        {concept.meaning}
       </p>
     </div>
   );

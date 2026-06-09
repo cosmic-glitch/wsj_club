@@ -7,61 +7,61 @@
     {
       "word": "voracious",
       "partOfSpeech": "adjective",
-      "definition": "Wanting or needing a huge amount of something; never satisfied.",
-      "example": "The new chatbot has a voracious appetite for electricity, using as much power in a day as a small town.",
-      "inContext": "The article describes AI systems as having a voracious need for computing power."
-    },
-    {
-      "word": "prohibitive",
-      "partOfSpeech": "adjective",
-      "definition": "So expensive or difficult that it stops you from doing something.",
-      "example": "She wanted courtside seats, but the prohibitive price meant she watched from the upper deck."
-    },
-    {
-      "word": "incumbent",
-      "partOfSpeech": "noun",
-      "definition": "The person or company that already holds a position or dominates a market.",
-      "example": "In the election, the incumbent had an advantage because voters already knew her name."
-    },
-    {
-      "word": "scrutiny",
-      "partOfSpeech": "noun",
-      "definition": "Very close and careful examination, often to find problems.",
-      "example": "His essay came under heavy scrutiny from the teacher, who circled every shaky claim."
+      "articleQuote": "These models have a voracious appetite for computing power, and feeding them has become staggeringly expensive.",
+      "inContext": "Here it describes how AI systems devour computing power — they always seem to need more, no matter how much they are given.",
+      "meaning": "Wanting or needing a huge amount of something; never satisfied.",
+      "examples": [
+        "After soccer practice he had a voracious appetite and went back for a third plate of dinner.",
+        "She's a voracious reader, finishing two or three novels every week."
+      ]
     },
     {
       "word": "proliferate",
       "partOfSpeech": "verb",
-      "definition": "To increase quickly and spread widely.",
-      "example": "Once one student brought a fidget toy, they proliferated until the whole class had them."
+      "articleQuote": "As data centers proliferate across rural counties, they are straining local power grids.",
+      "inContext": "In the article it means the data centers are popping up and multiplying quickly, spreading all over the place.",
+      "meaning": "To increase rapidly and spread widely.",
+      "examples": [
+        "Once one classmate got the new sneakers, they proliferated until half the school was wearing them.",
+        "Fake accounts can proliferate on a social network faster than moderators can delete them."
+      ]
     },
     {
-      "word": "ostensibly",
-      "partOfSpeech": "adverb",
-      "definition": "According to what is claimed on the surface — but maybe not the real reason.",
-      "example": "He left the party early, ostensibly because he was tired, though really he just wanted the last slice of pizza."
+      "word": "scrutiny",
+      "partOfSpeech": "noun",
+      "articleQuote": "The rapid growth of private credit has drawn scrutiny from regulators worried about hidden risks.",
+      "inContext": "Here it means regulators are watching private credit closely and carefully, looking for problems.",
+      "meaning": "Very close and careful examination, often to find problems or mistakes.",
+      "examples": [
+        "His science-fair claims didn't hold up under the judges' scrutiny.",
+        "New apps face scrutiny over how they handle users' personal data."
+      ]
     }
   ],
   "concepts": [
     {
       "name": "Hyperscalers",
-      "explanation": "A handful of giant technology companies — like Amazon, Microsoft, Google, and Meta — that run enormous networks of data centers and rent out computing power to the rest of the world. 'Hyper' means extreme and 'scale' means size, so a hyperscaler is a company operating computing at an extreme scale: millions of servers across many buildings.",
-      "whyItMatters": "Because these few companies own most of the world's cloud computing, their spending decisions ripple across the entire economy — affecting chip makers, power companies, and even how much it costs a startup to build an app."
+      "articleQuote": "The build-out is dominated by a handful of hyperscalers — the cloud giants with the deepest pockets in technology.",
+      "inContext": "In the article, the 'hyperscalers' are the few enormous companies — think Amazon, Microsoft, Google, Meta — doing most of the AI data-center spending.",
+      "meaning": "A small group of giant technology companies that run huge networks of data centers and rent out computing power at an extreme scale. 'Hyper' means extreme and 'scale' means size."
     },
     {
       "name": "Capital expenditure (capex)",
-      "explanation": "Money a company spends to buy or build long-lasting physical things — buildings, machines, servers — rather than day-to-day costs like salaries. A data center full of AI chips is a classic capital expenditure: a big upfront cost meant to pay off over many years.",
-      "whyItMatters": "Investors watch capex closely because huge spending can mean a company is confident about the future — or that it is gambling enormous sums on a bet that might not work."
+      "articleQuote": "Capital expenditures at the largest tech firms are expected to top $300 billion this year, much of it on chips and buildings.",
+      "inContext": "Here it is the money these companies pour into long-lasting physical things — the data centers and the chips inside them.",
+      "meaning": "Money a company spends to buy or build long-lasting physical assets (buildings, machines, servers), as opposed to day-to-day costs like salaries. Investors watch it because huge spending can signal confidence — or a risky bet."
     },
     {
       "name": "Private credit",
-      "explanation": "Lending money to companies outside of the traditional banking system. Instead of a bank making the loan, investment funds (often backed by pensions and wealthy investors) lend directly to businesses. It has grown quickly because it can move faster and fund deals that banks find too large or too risky.",
-      "whyItMatters": "Private credit now finances huge projects like AI data centers. Because it is less regulated than banks, some worry that problems there could spread quietly before anyone notices — which is why it draws growing scrutiny."
+      "articleQuote": "Increasingly, that spending is financed not by banks but by private-credit funds hungry for big, steady returns.",
+      "inContext": "In the article, 'private credit' is the non-bank money being lent to help pay for the data-center boom.",
+      "meaning": "Lending to companies from outside the traditional banking system — investment funds (often backed by pensions and wealthy investors) lend directly to businesses. It has grown fast because it can move quickly and fund deals banks find too large or too risky."
     },
     {
       "name": "Depreciation",
-      "explanation": "The way an expensive item loses value as it ages and wears out. Accountants spread the cost of something like a server across the years it will be useful, recording a piece of the cost each year rather than all at once.",
-      "whyItMatters": "AI chips may become outdated in just a few years, so how quickly companies 'depreciate' them changes how profitable they look — and whether the giant data-center bet is as smart as it seems."
+      "articleQuote": "Critics question how quickly the companies are depreciating chips that may be obsolete within a few years.",
+      "inContext": "Here it is about how fast those expensive AI chips lose value as newer, better ones arrive.",
+      "meaning": "The way an expensive asset loses value as it ages and wears out. Accountants spread its cost across the years it's expected to be useful, which affects how profitable a company looks."
     }
   ],
   "quiz": [
@@ -110,15 +110,15 @@
       "explanation": "If chips wear out or go obsolete quickly, the cost spread across those years rises, which affects how good the investment really is."
     },
     {
-      "question": "If someone does something 'ostensibly' for one reason, it means:",
+      "question": "The article says private credit has 'drawn scrutiny' from regulators. What does scrutiny mean?",
       "options": [
-        "They did it very carefully",
-        "That is the reason they claim, though the real reason may differ",
-        "They did it for everyone to see",
-        "They were forced to do it"
+        "Close, careful examination — often looking for problems",
+        "Strong praise and approval",
+        "A kind of high-interest loan",
+        "Rapid growth and spreading"
       ],
-      "answerIndex": 1,
-      "explanation": "'Ostensibly' points to the stated, surface-level reason — which may not be the true one."
+      "answerIndex": 0,
+      "explanation": "Scrutiny means examining something closely and carefully, usually to find problems or risks."
     }
   ]
 }

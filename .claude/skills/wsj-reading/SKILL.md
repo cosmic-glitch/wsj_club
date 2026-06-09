@@ -13,14 +13,21 @@ The website is already built (Next.js in this repo). Your job each day is **only
 
 Everything you write is for a sharp 13–16 year old, not a finance professional and not a child. Concretely:
 
-- **Vocabulary**: choose words *this* reader plausibly does **not** know yet but *should*. Skip words they certainly know (e.g. "increase", "company"). Skip words so obscure they'll never see them again. The sweet spot is the kind of word that shows up on the SAT and in serious journalism: *voracious, ostensibly, incumbent, scrutiny, untenable, proliferate, mitigate, capitulate*. Aim for **5–8 words**.
-- **Concepts**: the richer layer the article assumes you already understand — the things a definition alone won't fix. Examples: *hyperscalers, private credit, capital expenditure, quantitative easing, yield curve, vertical integration, moral hazard*. Explain how the thing actually **works**, in plain language, then why it matters in the world. Aim for **3–5 concepts**.
+- **Vocabulary**: pick **exactly 3 words** — the strongest, most useful ones, not a long list. Choose words *this* reader plausibly does **not** know yet but *should*. Skip words they certainly know (e.g. "increase", "company"). Skip words so obscure they'll never see them again. The sweet spot is the kind of word that shows up on the SAT and in serious journalism: *voracious, ostensibly, incumbent, scrutiny, untenable, proliferate, mitigate, capitulate*. **Present each word article-first**, in this order:
+  1. `articleQuote` — how the word actually appears in the article (a short real quote/sentence containing the word).
+  2. `inContext` — what the word means right *there*, in the article's situation.
+  3. `meaning` — generalize to the broader, everyday definition.
+  4. `examples` — **two more** example sentences (beyond the article), in situations a teenager relates to.
+- **Concepts**: the richer layer the article assumes you already understand — the things a definition alone won't fix. Examples: *hyperscalers, private credit, capital expenditure, quantitative easing, yield curve, vertical integration, moral hazard*. Aim for **3–5 concepts**, and present each one article-first too:
+  1. `articleQuote` — the segment of the article where the idea appears.
+  2. `inContext` — what it means in that specific context.
+  3. `meaning` — generalize to the broader meaning, explaining how the thing actually **works** in plain language.
 - **Quiz**: exactly **5 multiple-choice questions**. Mix comprehension of the article with the vocabulary/concepts above. Make wrong options plausible, not silly. Every question gets a one-sentence explanation.
 - **Tone**: clear, respectful, a little warm. Examples should use situations a teenager relates to (school, sports, friends, games) — not abstract finance.
 
 ## Hard rules
 
-- **Never republish WSJ's article text.** WSJ is paywalled subscription content. Write **original** material: your own definitions, your own concept explanations, your own quiz questions. Link to the article; don't reproduce it. A short paraphrased "in the article" note per word is fine.
+- **Don't republish the article.** WSJ is paywalled subscription content. Short quotes for study are fine — the `articleQuote` fields should be **one sentence or phrase each**, the minimum needed to show the word/idea in context. Everything else is **original**: your own context explanations, broader meanings, extra examples, and quiz questions. Never reproduce large chunks or the whole article. Always link to it.
 - **One file per day.** Filename is the date: `content/YYYY-MM-DD.json`. If the user gives a different date, use that.
 - Don't invent facts about the article. If something is unclear, open the page and read it rather than guessing.
 
@@ -55,16 +62,21 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
     {
       "word": "voracious",
       "partOfSpeech": "adjective",
-      "definition": "Plain, kid-friendly definition.",
-      "example": "A sentence a teenager would relate to.",
-      "inContext": "Optional: how the idea showed up in the article, paraphrased."
+      "articleQuote": "Short real quote/sentence from the article containing the word.",
+      "inContext": "What the word means right there, in the article's situation.",
+      "meaning": "The broader, everyday definition.",
+      "examples": [
+        "First extra example sentence a teenager would relate to.",
+        "Second extra example sentence."
+      ]
     }
   ],
   "concepts": [
     {
       "name": "Hyperscalers",
-      "explanation": "How the thing actually works, in plain language.",
-      "whyItMatters": "How it connects to the article and the wider world."
+      "articleQuote": "Short segment of the article where the idea appears.",
+      "inContext": "What it means in that specific context.",
+      "meaning": "The broader meaning — how the thing actually works, in plain language."
     }
   ],
   "quiz": [
@@ -80,7 +92,8 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
 
 Field notes:
 - `answerIndex` is **0-based** (0 = first option). Double-check it points at the correct option.
-- `inContext` is optional but nice to include.
+- `vocab` has **exactly 3 words**; each `examples` array has **exactly 2** sentences.
+- All `articleQuote` fields are short (one sentence/phrase) and taken from the actual article.
 - Keep 4 options per quiz question.
 
 The TypeScript types backing this live in `lib/content.ts` — if you change the schema, update that file and the page components too.

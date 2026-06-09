@@ -1,20 +1,30 @@
 import fs from "fs";
 import path from "path";
 
-/** One vocabulary word the kids likely don't know yet. */
+/**
+ * One vocabulary word the kids likely don't know yet.
+ * Presented article-first: how it's used in the article, what it means there,
+ * then the broader meaning, then two more examples.
+ */
 export type VocabWord = {
   word: string;
   partOfSpeech: string; // e.g. "noun", "verb", "adjective"
-  definition: string; // plain, kid-friendly definition
-  example: string; // an example sentence they'd relate to
-  inContext?: string; // (optional) how the idea showed up in the article, paraphrased
+  articleQuote: string; // the phrase/sentence from the article where the word appears
+  inContext: string; // what the word means right there, in the article's context
+  meaning: string; // the broader, general definition
+  examples: string[]; // two more example sentences a teenager would relate to
 };
 
-/** A richer idea that needs background knowledge, not just a definition. */
+/**
+ * A richer idea that needs background knowledge, not just a definition.
+ * Presented article-first: the quoted article segment, what it means there,
+ * then the broader meaning.
+ */
 export type Concept = {
   name: string; // e.g. "Private credit", "Hyperscalers"
-  explanation: string; // the deeper conceptual layer
-  whyItMatters: string; // how it connects to the article / the wider world
+  articleQuote: string; // the segment of the article where the idea appears
+  inContext: string; // what it means in that context
+  meaning: string; // the broader, general meaning (how it works)
 };
 
 /** A single multiple-choice quiz question. */
