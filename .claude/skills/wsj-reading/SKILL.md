@@ -68,7 +68,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
 
 6. **Build to verify:** run `npm run build`. It must succeed. If a new file breaks the build, it's almost always malformed JSON — fix it.
 
-7. **Deploy to Vercel** (see Deployment below) and give the user the live URL for today's reading: `<site>/reading/YYYY-MM-DD` (the quiz is at `<site>/reading/YYYY-MM-DD/quiz`).
+7. **Commit, push, and share the links.** Stage the new content and PDF — `git add content/YYYY-MM-DD.json public/pdfs/YYYY-MM-DD.pdf` (add any other changed files too) — commit, and `git push origin main`. **Pushing is shipping:** the push auto-deploys to Vercel production at `wsjclub.vercel.app` (no `vercel --prod` step). Once the deploy lands, give the user today's links: `https://wsjclub.vercel.app/reading/YYYY-MM-DD` (handout) and `https://wsjclub.vercel.app/reading/YYYY-MM-DD/quiz` (quiz).
 
 ## Content file schema
 
@@ -124,12 +124,12 @@ The TypeScript types backing this live in `lib/content.ts` — if you change the
 
 ## Deployment
 
-The site deploys to Vercel as a static Next.js app.
+The site auto-deploys from GitHub (`cosmic-glitch/wsj_club`): **`git push origin main` ships to Vercel production** at `wsjclub.vercel.app`. There is no manual `vercel --prod` step in the daily flow.
 
-- **First time only:** link the project with `vercel link` (or `vercel` and follow prompts), then deploy with `vercel --prod`. Alternatively use the Vercel MCP `deploy_to_vercel` tool. Record the production URL.
-- **Every day after:** `vercel --prod` from the repo root pushes the new content live. (If the project is later connected to a Git repo, a `git push` will auto-deploy instead — use whichever is set up.)
+- **Daily:** commit the new `content/YYYY-MM-DD.json` and `public/pdfs/YYYY-MM-DD.pdf`, then `git push origin main`. Vercel builds and deploys from the push; the local `npm run build` (step 6) is the pre-flight that catches malformed JSON before you push.
+- **Fallback only:** if the Git auto-deploy is ever unavailable, `vercel --prod` from the repo root deploys the working tree directly (first-time setup needs `vercel link` once).
 
-After deploying, share the live link to today's reading with the user.
+After the deploy lands, share the live links to today's reading with the user.
 
 ## If the user asks for changes
 
