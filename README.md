@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WSJ Reading Club
 
-## Getting Started
+A daily reading handout for a small club of US grade 8–10 students. Each day we
+take one Wall Street Journal article and build a study page from it:
 
-First, run the development server:
+1. **Words to know** — vocabulary worth learning, with kid-friendly definitions and examples.
+2. **Concepts behind the story** — the richer ideas the article assumes (e.g. *hyperscalers*, *private credit*).
+3. **Quiz yourself** — a 5-question interactive self-quiz.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The home page is an index of every reading, newest first.
+
+## How it works
+
+The site is a static Next.js app. **All the daily content lives in one JSON file
+per day** under `content/`. The pages just render whatever files are there, and the
+index builds itself — so adding a day is just adding a file.
+
+```
+content/2026-06-09.json     ← one file = one day's handout
+app/page.tsx                ← the index of all readings
+app/reading/[date]/page.tsx ← a single day's handout page
+components/Quiz.tsx          ← the interactive quiz
+lib/content.ts               ← content types + loader (the schema)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Adding a new day
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This is driven by the **`wsj-reading` skill** (`.claude/skills/wsj-reading/`).
+Give Claude a WSJ article link and it will read the article (you log into WSJ in
+the browser), generate the words/concepts/quiz, write `content/YYYY-MM-DD.json`,
+build, and deploy.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To do it by hand: copy an existing file in `content/`, rename it to the new date,
+and edit the fields. The shape is defined in `lib/content.ts`.
 
-## Learn More
+## Local development
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev     # http://localhost:3000
+npm run build   # production build (also validates every content file)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Static deploy to Vercel:
 
-## Deploy on Vercel
+```bash
+vercel --prod
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+(First time: run `vercel link` once to connect the project.)

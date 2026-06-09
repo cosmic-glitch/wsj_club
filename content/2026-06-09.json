@@ -1,0 +1,127 @@
+{
+  "date": "2026-06-09",
+  "title": "Example: Who Pays for the AI Data-Center Boom?",
+  "articleUrl": "https://www.wsj.com",
+  "source": "The Wall Street Journal",
+  "summary": "This is a sample handout showing the format. The tech giants building artificial-intelligence systems need enormous computer warehouses, and the bills are so large that they are turning to a fast-growing, lightly regulated corner of finance to help pay for them. The story is about how that spending works and who is lending the money.",
+  "bigIdea": "The companies racing to build AI are spending money faster than they earn it — so where the financing comes from has become its own important story.",
+  "readingTimeMinutes": 6,
+  "vocab": [
+    {
+      "word": "voracious",
+      "partOfSpeech": "adjective",
+      "definition": "Wanting or needing a huge amount of something; never satisfied.",
+      "example": "The new chatbot has a voracious appetite for electricity, using as much power in a day as a small town.",
+      "inContext": "The article describes AI systems as having a voracious need for computing power."
+    },
+    {
+      "word": "prohibitive",
+      "partOfSpeech": "adjective",
+      "definition": "So expensive or difficult that it stops you from doing something.",
+      "example": "She wanted courtside seats, but the prohibitive price meant she watched from the upper deck."
+    },
+    {
+      "word": "incumbent",
+      "partOfSpeech": "noun",
+      "definition": "The person or company that already holds a position or dominates a market.",
+      "example": "In the election, the incumbent had an advantage because voters already knew her name."
+    },
+    {
+      "word": "scrutiny",
+      "partOfSpeech": "noun",
+      "definition": "Very close and careful examination, often to find problems.",
+      "example": "His essay came under heavy scrutiny from the teacher, who circled every shaky claim."
+    },
+    {
+      "word": "proliferate",
+      "partOfSpeech": "verb",
+      "definition": "To increase quickly and spread widely.",
+      "example": "Once one student brought a fidget toy, they proliferated until the whole class had them."
+    },
+    {
+      "word": "ostensibly",
+      "partOfSpeech": "adverb",
+      "definition": "According to what is claimed on the surface — but maybe not the real reason.",
+      "example": "He left the party early, ostensibly because he was tired, though really he just wanted the last slice of pizza."
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Hyperscalers",
+      "explanation": "A handful of giant technology companies — like Amazon, Microsoft, Google, and Meta — that run enormous networks of data centers and rent out computing power to the rest of the world. 'Hyper' means extreme and 'scale' means size, so a hyperscaler is a company operating computing at an extreme scale: millions of servers across many buildings.",
+      "whyItMatters": "Because these few companies own most of the world's cloud computing, their spending decisions ripple across the entire economy — affecting chip makers, power companies, and even how much it costs a startup to build an app."
+    },
+    {
+      "name": "Capital expenditure (capex)",
+      "explanation": "Money a company spends to buy or build long-lasting physical things — buildings, machines, servers — rather than day-to-day costs like salaries. A data center full of AI chips is a classic capital expenditure: a big upfront cost meant to pay off over many years.",
+      "whyItMatters": "Investors watch capex closely because huge spending can mean a company is confident about the future — or that it is gambling enormous sums on a bet that might not work."
+    },
+    {
+      "name": "Private credit",
+      "explanation": "Lending money to companies outside of the traditional banking system. Instead of a bank making the loan, investment funds (often backed by pensions and wealthy investors) lend directly to businesses. It has grown quickly because it can move faster and fund deals that banks find too large or too risky.",
+      "whyItMatters": "Private credit now finances huge projects like AI data centers. Because it is less regulated than banks, some worry that problems there could spread quietly before anyone notices — which is why it draws growing scrutiny."
+    },
+    {
+      "name": "Depreciation",
+      "explanation": "The way an expensive item loses value as it ages and wears out. Accountants spread the cost of something like a server across the years it will be useful, recording a piece of the cost each year rather than all at once.",
+      "whyItMatters": "AI chips may become outdated in just a few years, so how quickly companies 'depreciate' them changes how profitable they look — and whether the giant data-center bet is as smart as it seems."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is a 'hyperscaler'?",
+      "options": [
+        "A tool for measuring very large numbers",
+        "A giant technology company that runs huge networks of data centers",
+        "A new type of AI chatbot",
+        "A government agency that regulates the internet"
+      ],
+      "answerIndex": 1,
+      "explanation": "Hyperscalers are the few enormous companies — like Amazon, Microsoft, and Google — that operate computing at an extreme scale and rent it out."
+    },
+    {
+      "question": "Buying thousands of servers to build a new data center is an example of:",
+      "options": [
+        "Capital expenditure (capex)",
+        "Depreciation",
+        "A salary",
+        "Private credit"
+      ],
+      "answerIndex": 0,
+      "explanation": "Capex is money spent on long-lasting physical things, like buildings and servers, rather than day-to-day costs."
+    },
+    {
+      "question": "Why are AI companies turning to private credit instead of only using banks?",
+      "options": [
+        "Banks are not allowed to lend to tech companies",
+        "Private credit lenders can move quickly and fund very large deals",
+        "Private credit is always cheaper than a bank loan",
+        "The government requires it"
+      ],
+      "answerIndex": 1,
+      "explanation": "Private credit funds can act faster and take on bigger or riskier deals than traditional banks, which is part of why it has grown so fast."
+    },
+    {
+      "question": "Why does 'depreciation' matter for AI data centers?",
+      "options": [
+        "It measures how much electricity a center uses",
+        "AI chips can become outdated fast, which changes how profitable the centers look",
+        "It is the name for the loan used to build them",
+        "It tracks how many people visit a website"
+      ],
+      "answerIndex": 1,
+      "explanation": "If chips wear out or go obsolete quickly, the cost spread across those years rises, which affects how good the investment really is."
+    },
+    {
+      "question": "If someone does something 'ostensibly' for one reason, it means:",
+      "options": [
+        "They did it very carefully",
+        "That is the reason they claim, though the real reason may differ",
+        "They did it for everyone to see",
+        "They were forced to do it"
+      ],
+      "answerIndex": 1,
+      "explanation": "'Ostensibly' points to the stated, surface-level reason — which may not be the true one."
+    }
+  ]
+}

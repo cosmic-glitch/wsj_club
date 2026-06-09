@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local test artifacts (browser screenshots from the wsj-reading skill)
+/index.png
+/reading.png
+/quiz-result.png
+.playwright-mcp/
