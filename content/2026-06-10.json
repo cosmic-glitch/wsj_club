@@ -1,0 +1,131 @@
+{
+  "date": "2026-06-10",
+  "title": "Why the Supreme Court Is Debating Which Founding Fathers Were Drunks",
+  "articleUrl": "https://www.wsj.com/us-news/law/supreme-court-session-cases-originalism-birthright-citizenship-second-amendment-c858a23e",
+  "pdfUrl": "/pdfs/2026-06-10.pdf",
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "fervor",
+      "partOfSpeech": "noun",
+      "articleQuote": "the court's conservative supermajority has embraced it with new fervor",
+      "inContext": "The justices haven't just accepted originalism — they are pursuing it with fresh intensity and passion, which is why lawyers are now racing to find historical evidence for every case.",
+      "meaning": "Intense, passionate enthusiasm or excitement about something.",
+      "examples": [
+        "When the new gaming console was announced, fans lined up overnight with a fervor usually reserved for concert tickets.",
+        "She threw herself into debate practice with such fervor that she memorized rebuttals in the lunch line."
+      ]
+    },
+    {
+      "word": "abridge",
+      "partOfSpeech": "verb",
+      "articleQuote": "the only way to prevent modern judges or legislatures from abridging individual rights ratified in the Constitution",
+      "inContext": "Supporters of originalism argue it stops judges and lawmakers from cutting back or limiting the rights the Constitution guarantees.",
+      "meaning": "To reduce, restrict, or cut short something — often rights or freedoms. (It can also mean to shorten a book.) The word appears in the First Amendment itself: Congress shall make no law 'abridging the freedom of speech.'",
+      "examples": [
+        "Students argued that banning phones at lunch abridged their freedom to talk to family during the day.",
+        "The summer reading list included an abridged version of 'Les Misérables' — about half the length of the original."
+      ]
+    },
+    {
+      "word": "archaic",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Lawyers also dug up archaic legal tracts and 19th century dictionary entries defining the word 'election.'",
+      "inContext": "To win a modern voting case, lawyers searched through legal writings so old and out-of-date that almost nobody reads them anymore.",
+      "meaning": "Belonging to a much earlier time and no longer in everyday use; extremely old-fashioned or outdated.",
+      "examples": [
+        "The school's archaic rule requiring handwritten essays finally got dropped once everyone had laptops.",
+        "Reading Shakespeare, you trip over archaic words like 'thee' and 'wherefore' that nobody says anymore."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Originalism",
+      "articleQuote": "the legal philosophy, pioneered by conservatives, that says the meaning of the Constitution's words shouldn't evolve over time",
+      "inContext": "This idea is the article's 'time machine': because most of today's justices follow it, the answer to a modern question — like whether drug users can own guns — can depend on what people believed in 1791 or 1868.",
+      "meaning": "Originalism says judges should interpret the Constitution by what its words meant to the people who wrote and approved them, not by what we might want them to mean today. The rival view — often called a 'living Constitution' — says the meaning should adapt as society changes. Under originalism, history becomes courtroom evidence, so lawyers end up working like historians: digging through old laws, letters, and dictionaries to prove what words meant back then."
+    },
+    {
+      "name": "The Supreme Court and its docket",
+      "articleQuote": "As the Supreme Court works through its busiest month, its docket is chockablock with tough cases on modern-day problems.",
+      "inContext": "The docket is the Court's list of cases. June is crunch time: the nine justices announce their biggest decisions before their summer break.",
+      "meaning": "The Supreme Court is the highest court in the U.S. — nine justices who pick a small number of important cases each term. Before deciding, they hold oral arguments, where lawyers for each side answer rapid-fire questions from the justices (that's where Gorsuch's hard-cider line came from). A 'supermajority' means one side has a dominant bloc: six of the nine current justices are conservatives, which is why originalism now drives so many outcomes."
+    },
+    {
+      "name": "The Second Amendment's history test",
+      "articleQuote": "The court decreed that today's gun regulations are constitutional only if they are consistent with early American historical traditions.",
+      "inContext": "A 2022 ruling created this test, which is why a case about drug users owning guns turns on founding-era laws about 'habitual drunkards' — the closest old parallel anyone can find.",
+      "meaning": "Courts can strike down laws that violate the Constitution — that's what 'unconstitutional' means. For gun laws, the Supreme Court set a special yardstick in 2022: a modern regulation survives only if the government can point to a similar tradition of regulation from early American history. No historical twin (or close cousin), no law — which sends both sides racing to the archives."
+    },
+    {
+      "name": "Precedent",
+      "articleQuote": "The question is whether that practice is an apt precedent for state rules that govern mail voting in 2026.",
+      "inContext": "Lawyers are arguing about whether Civil War 'field voting' — collecting ballots from soldiers and carrying them home after Election Day — counts as an earlier example that justifies counting late-arriving mail ballots today.",
+      "meaning": "A precedent is a past decision or practice used as a model for deciding a current question. Courts lean heavily on precedents so the law stays consistent: if something was accepted before, that's an argument for accepting it now. That's why each side hunts for historical examples that look like their position — and argues the other side's examples aren't truly comparable."
+    },
+    {
+      "name": "Birthright citizenship and the 14th Amendment",
+      "articleQuote": "The magical year in that case is 1868, when birthright citizenship was enshrined in the 14th Amendment.",
+      "inContext": "In the challenge to President Trump's bid to end birthright citizenship for children of undocumented immigrants, everything hinges on what the amendment's authors meant in 1868.",
+      "meaning": "Birthright citizenship means almost anyone born on U.S. soil is automatically a citizen. It was written into the 14th Amendment after the Civil War, mainly to guarantee citizenship to formerly enslaved people. Amendments only take effect when ratified — formally approved by the states — so under originalism the key question becomes: what did the ratifiers in 1868 understand those words to promise? Each side digs up old documents to claim that understanding supports them."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, why are Supreme Court lawyers suddenly digging through old letters, books, and 19th-century dictionaries?",
+      "options": [
+        "The Court now requires a history section in every legal brief",
+        "Because of originalism's rise, a law's fate can depend on what the Constitution's words meant when they were written",
+        "The justices are collaborating on a history book about the founding era",
+        "Historical documents are the only kind of evidence federal courts accept"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article calls originalism the 'time machine': since most justices now judge laws by the original meaning of the Constitution's words, historical evidence can decide modern cases."
+    },
+    {
+      "question": "Why did Justice Gorsuch bring up John Adams's breakfast cider and James Madison's daily pint of whiskey?",
+      "options": [
+        "To argue that alcohol was a bigger problem in 1776 than drugs are today",
+        "To show the Founders were too unreliable for their words to be trusted",
+        "To suggest that if using intoxicants stripped away gun rights, the very authors of the Second Amendment would have been disarmed",
+        "To prove that 19th-century laws against 'habitual drunkards' were never enforced"
+      ],
+      "answerIndex": 2,
+      "explanation": "Gorsuch's point was a challenge to the government's logic: the Founders drank heavily, so equating intoxicant use with losing gun rights would have disqualified the Second Amendment's own writers."
+    },
+    {
+      "question": "Lawyers 'dug up archaic legal tracts' for the mail-in ballot case. 'Archaic' most nearly means:",
+      "options": [
+        "from a much earlier time and no longer in common use",
+        "extremely complicated and technical",
+        "secret or deliberately hidden",
+        "related to buildings and architecture"
+      ],
+      "answerIndex": 0,
+      "explanation": "Archaic describes something so old it belongs to an earlier era — like the 1915 book and 19th-century dictionaries the lawyers cited."
+    },
+    {
+      "question": "What was the Civil War practice of 'field voting' that both parties' lawyers are fighting about?",
+      "options": [
+        "Letting soldiers vote twice, once at camp and once at home",
+        "Holding elections outdoors so results could be counted publicly",
+        "Allowing generals to cast votes on behalf of their troops",
+        "Collecting ballots from Union soldiers and transporting them home after the election"
+      ],
+      "answerIndex": 3,
+      "explanation": "Soldiers' ballots were gathered in the field and carried back after Election Day — and the fight is over whether that's an apt precedent for counting late-arriving mail ballots in 2026."
+    },
+    {
+      "question": "How does the article describe Chief Justice John Roberts?",
+      "options": [
+        "As the Court's strictest originalist, who demands historical proof in every case",
+        "As a history lover who nonetheless doesn't readily identify as an originalist — and who called the administration's historical examples 'very quirky'",
+        "As the only justice who believes history has no place in legal reasoning",
+        "As a former history professor who left teaching to join the Court"
+      ],
+      "answerIndex": 1,
+      "explanation": "Roberts majored in history and dreamed of being a professor, yet he's the one conservative justice who doesn't readily call himself an originalist — and the administration's history fell flat with him."
+    }
+  ]
+}
