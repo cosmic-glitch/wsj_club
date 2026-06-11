@@ -1,0 +1,125 @@
+{
+  "date": "2026-06-11",
+  "title": "How America Became a Soccer Nation: 75 Years From Wasteland to World Cup Host",
+  "articleUrl": "https://www.wsj.com/sports/soccer/soccer-in-america-world-cup-a00320c5",
+  "pdfUrl": "/pdfs/2026-06-11.pdf",
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "caliber",
+      "partOfSpeech": "noun",
+      "articleQuote": "It set its sights on a different caliber of player.",
+      "inContext": "In 2006 the league went after players of a far higher level of skill and fame than it had signed before — a different caliber meant a different class entirely.",
+      "meaning": "The level of quality, ability, or importance of someone or something. (It can also literally mean the inside diameter of a gun barrel or tube.)",
+      "examples": [
+        "The new transfer student turned out to be a soccer player of a different caliber — she scored four goals in her first game.",
+        "Our debate team faced higher-caliber opponents at the state finals than at any match all year."
+      ]
+    },
+    {
+      "word": "embodiment",
+      "partOfSpeech": "noun",
+      "articleQuote": "The closest thing to the human embodiment of the World Cup came to America.",
+      "inContext": "Pelé is described as the World Cup in human form — one person who stood for everything the tournament represented.",
+      "meaning": "A person or thing that is a perfect, visible example of an idea or quality — the idea made real in physical form.",
+      "examples": [
+        "Our team captain is the embodiment of hard work: first to every practice, last to leave.",
+        "To many fans, that crumbling old stadium was the embodiment of the city's love for the game."
+      ]
+    },
+    {
+      "word": "leverage",
+      "partOfSpeech": "verb",
+      "articleQuote": "Leveraging the league's partnerships with Apple and Adidas, Beckham made Messi the highest-paid player in the history of American soccer.",
+      "inContext": "Beckham used business deals the league already had — with Apple and Adidas — as a tool to pull off something huge: signing Messi.",
+      "meaning": "To use something you already have — money, a connection, a skill, a relationship — to its maximum advantage to get a result. (As a noun, leverage is the power or advantage that gives you.)",
+      "examples": [
+        "She leveraged her experience editing the school paper to land a summer internship.",
+        "The club leveraged its huge online following to raise money for new uniforms."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "A World Cup with strings attached",
+      "articleQuote": "The deal came with one crucial condition: The U.S. needed to create a professional soccer league.",
+      "inContext": "FIFA agreed to give the U.S. the 1994 World Cup only if the country promised to build a lasting professional league — which became Major League Soccer.",
+      "meaning": "Big sporting events (and big projects in general) are often awarded with conditions attached. The organizer uses the prize everyone wants — hosting the World Cup or the Olympics — as leverage to force the host to build something permanent: stadiums, infrastructure, or, here, an entire professional league. A one-off event becomes the catalyst for a long-term institution."
+    },
+    {
+      "name": "A single-entity league",
+      "articleQuote": "The league's complex web of regulations would make it almost impossible to pay him what he was worth.",
+      "inContext": "MLS was built so that the league itself — not the individual teams — controlled spending and salaries, so signing a global star like Beckham required inventing a brand-new rule.",
+      "meaning": "Unlike European clubs, which are separate businesses that can spend whatever they can afford, MLS started as a 'single entity': one company that owned all the teams and capped what each could pay. This keeps costs down and stops richer teams from buying up every star — but it also means the league can't simply outbid the world for a player. To sign Beckham, MLS had to change its own rules, creating a special slot that lets a team pay one superstar far above the cap."
+    },
+    {
+      "name": "Broadcast (media) rights",
+      "articleQuote": "Today, MLS boasts 30 teams... and a 10-year broadcast deal with Apple worth $2.5 billion.",
+      "inContext": "Apple paid MLS billions for the exclusive right to stream its games — a huge, dependable source of money for the league.",
+      "meaning": "A league's games are valuable content, and TV networks and streaming services pay enormous sums for the exclusive right to show them. These broadcast-rights deals are usually a league's single biggest source of income, and they also decide how easily fans can watch — which is why getting every Premier League game onto NBC, or every MLS game onto Apple, helped grow each sport's U.S. audience."
+    },
+    {
+      "name": "Star power as a growth strategy",
+      "articleQuote": "If it's good enough for David, it ought to be good enough for you as a fan.",
+      "inContext": "MLS bet that signing one world-famous player — Beckham — would make casual fans, sponsors, and other stars take the whole league seriously.",
+      "meaning": "A struggling league or product can borrow credibility by attaching itself to a famous name. One superstar — Pelé in the 1970s, Beckham in 2006, Messi in 2023 — draws media coverage, sells tickets and jerseys, and signals 'this is legitimate now,' which pulls in more fans and more talent. The risk is that the boost can fade when the star leaves, as it did when Pelé's arrival alone couldn't save the old league."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, why was Major League Soccer created in the 1990s?",
+      "options": [
+        "American fans demanded a league after the 1950 World Cup upset",
+        "FIFA required the U.S. to start a professional league as a condition of hosting the 1994 World Cup",
+        "Pelé insisted on it when he joined the New York Cosmos",
+        "The English Premier League funded it to expand overseas"
+      ],
+      "answerIndex": 1,
+      "explanation": "FIFA's award of the 1994 World Cup came with the condition that the U.S. build a professional league, which became MLS."
+    },
+    {
+      "question": "When the U.S. beat England 1-0 in the 1950 World Cup, why did people in London assume the score was a misprint?",
+      "options": [
+        "England had never lost a match before",
+        "The U.S. team was not officially recognized",
+        "England, as the inventors of the game, were expected to crush a team of relative amateurs",
+        "The match had been played in secret"
+      ],
+      "answerIndex": 2,
+      "explanation": "Britain invented soccer and were heavy favorites, so losing to the amateur Americans seemed so unlikely it looked like a typo."
+    },
+    {
+      "question": "\"In 2006... it set its sights on a different caliber of player.\" As used here, \"caliber\" most nearly means —",
+      "options": [
+        "the width of a gun barrel",
+        "level of quality or ability",
+        "nationality",
+        "salary demand"
+      ],
+      "answerIndex": 1,
+      "explanation": "\"Caliber\" here means a level of quality or skill — MLS wanted players of a higher class than before."
+    },
+    {
+      "question": "The article says MLS's rules \"would make it almost impossible to pay [Beckham] what he was worth,\" so the commissioner decided to \"adjust our rules.\" What does this reveal about how MLS was set up?",
+      "options": [
+        "The league centrally controlled team budgets and salaries, unlike clubs that can spend freely",
+        "MLS had no money at all",
+        "Beckham was not actually a good player",
+        "European leagues operated under the exact same rules"
+      ],
+      "answerIndex": 0,
+      "explanation": "MLS is a single-entity league that caps and controls salaries centrally, so it had to invent a special rule to sign a superstar like Beckham."
+    },
+    {
+      "question": "The article highlights huge media deals — Apple's $2.5 billion deal with MLS and NBC's deal with the Premier League. Why do broadcast deals matter so much to a sports league?",
+      "options": [
+        "They are donations made with no expectation of return",
+        "They mostly hurt leagues by giving games away for free",
+        "They are a major source of money and a way to grow a league's audience",
+        "They only matter for women's soccer"
+      ],
+      "answerIndex": 2,
+      "explanation": "Networks and streamers pay leagues large sums for the rights to show games, which funds the league and exposes the sport to more fans."
+    }
+  ]
+}
