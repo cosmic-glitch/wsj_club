@@ -6,14 +6,14 @@
   "source": "The Wall Street Journal",
   "vocab": [
     {
-      "word": "consequential",
-      "partOfSpeech": "adjective",
-      "articleQuote": "Americans resolved a hugely consequential debate over a fundamental question that still defines our economy today: What is a share?",
-      "inContext": "The debate mattered enormously — its outcome shaped the entire American economy for the next century and beyond.",
-      "meaning": "Important because it leads to significant results or effects; having major consequences.",
+      "word": "flamboyance",
+      "partOfSpeech": "noun",
+      "articleQuote": "Fisk’s flamboyance and Gould’s bribes made the Erie’s watered stock seem obviously crooked.",
+      "inContext": "Jim Fisk's loud, showy, attention-grabbing style made the shady stock scheme look as crooked as it was.",
+      "meaning": "A confident, colorful, attention-grabbing quality in how someone dresses, behaves, or performs.",
       "examples": [
-        "Choosing which classes to take junior year felt like the most consequential decision of high school.",
-        "The referee's call in the final seconds was consequential — it decided the championship."
+        "The point guard played with such flamboyance that the crowd cheered even his warm-up dribbles.",
+        "Her flamboyance showed in the bright, mismatched outfits she wore to every school event."
       ]
     },
     {
@@ -120,7 +120,7 @@
       "question": "Which word means 'a noticeable, often unfair, gap between things'?",
       "options": [
         "Tangible",
-        "Consequential",
+        "Flamboyance",
         "Disparity",
         "Dividend"
       ],
