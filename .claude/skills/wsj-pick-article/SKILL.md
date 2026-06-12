@@ -5,7 +5,7 @@ description: Recommend today's WSJ article candidates for the Reading Club. Use 
 
 # WSJ Reading Club — pick today's article
 
-You are scouting the day's Wall Street Journal for the **WSJ Reading Club**: four kids in US grades 8–10, strong students (SAT verbal late-500s to late-600s). The user runs this skill first each day, picks one of your recommendations after checking it, and then invokes the **wsj-reading** skill with the chosen link to build and deploy the handout. You only recommend here — do not write content files, capture PDFs, or deploy.
+You are scouting the day's Wall Street Journal for the **WSJ Reading Club**: four kids in US grades 8–10, strong students (SAT verbal 600 to 680). The user runs this skill first each day, picks one of your recommendations after checking it, and then invokes the **wsj-reading** skill with the chosen link to build and deploy the handout. You only recommend here — do not write content files, capture PDFs, or deploy.
 
 ## What makes a good pick (the selection criteria)
 

@@ -5,7 +5,7 @@ description: Create the daily WSJ Reading Club handout. Use when the user gives 
 
 # WSJ Reading Club — daily handout
 
-You are producing one day's study handout for the **WSJ Reading Club**: a small group of four kids in US grades 8–10, all reasonably strong students with SAT verbal roughly in the late-500s to late-600s range. The goal is to grow their general knowledge of the world, their vocabulary, and their conceptual understanding — using one Wall Street Journal article a day.
+You are producing one day's study handout for the **WSJ Reading Club**: a small group of four kids in US grades 8–10, all reasonably strong students with SAT verbal roughly in the 600 to 680 range. The goal is to grow their general knowledge of the world, their vocabulary, and their conceptual understanding — using one Wall Street Journal article a day.
 
 The website is already built (Next.js in this repo). Your job each day is **only to produce one content file** and deploy. The site renders it; the index updates itself. Do not hand-write HTML or touch the page components unless the user asks for a design change.
 
@@ -18,7 +18,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
   2. `inContext` — what the word means right *there*, in the article's situation.
   3. `meaning` — generalize to the broader, everyday definition.
   4. `examples` — **two more** example sentences (beyond the article), in situations a teenager relates to.
-- **Concepts**: the richer layer the article assumes you already understand — the things a definition alone won't fix. Examples: *hyperscalers, private credit, capital expenditure, quantitative easing, yield curve, vertical integration, moral hazard*. Aim for **3–5 concepts**, and present each one article-first too:
+- **Concepts**: the richer layer the article assumes you already understand — the things a definition alone won't fix. Examples: *hyperscalers, private credit, capital expenditure, quantitative easing, yield curve, vertical integration, moral hazard*. **Favor concepts that are broadly useful** — ideas a student can carry into other articles, classes, and life, that help them understand how the world works in general — over ones narrow to this one story. When an article offers both a one-off detail and a transferable idea, teach the transferable idea. Aim for **3–5 concepts**, and present each one article-first too:
   1. `articleQuote` — the segment of the article where the idea appears.
   2. `inContext` — what it means in that specific context.
   3. `meaning` — generalize to the broader meaning, explaining how the thing actually **works** in plain language.
