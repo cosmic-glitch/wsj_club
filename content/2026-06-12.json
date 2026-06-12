@@ -41,6 +41,12 @@
   ],
   "concepts": [
     {
+      "name": "The Gilded Age",
+      "articleQuote": "Appeared in the June 13, 2026, print edition as 'The Invention of the Trillionaire: Gilded Age Blazed a New Path'.",
+      "inContext": "The essay's whole cast — Vanderbilt, Drew, Gould, Fisk, Morgan, Rockefeller — and its railroad-and-stock battles all unfold in this era, which the article treats as familiar background.",
+      "meaning": "A nickname for the United States from roughly the 1870s to 1900, a time of explosive industrial growth, huge railroad and oil fortunes, and very little regulation. Writer Mark Twain coined the term: 'gilded' means coated in a thin layer of gold, hinting that the dazzling wealth on the surface hid corruption and deep inequality underneath. It's the period that produced America's first giant corporations and its first billion-dollar fortune."
+    },
+    {
       "name": "What a share represents",
       "articleQuote": "They broke the link between the value of a share and physical things.",
       "inContext": "Gilded Age financiers shifted the meaning of a stock share away from 'a slice of the company's physical property' toward 'a claim on the company's future earnings.'",
@@ -63,12 +69,6 @@
       "articleQuote": "The Sherman Antitrust Act may have been designed to rein in corporate power, but it did nothing to slow Rockefeller’s massive accumulation of wealth.",
       "inContext": "The 1890 law was meant to break up monopolies, and in 1911 it forced Standard Oil to split into 33 companies — yet Rockefeller, keeping shares in all of them, only got richer.",
       "meaning": "Laws that try to keep any single company from dominating a market and crushing competition. They're one of the two main tools (the other being the progressive income tax) that Americans built to limit corporate power and concentrated wealth — but as the Standard Oil breakup shows, they don't automatically reduce a founder's fortune."
-    },
-    {
-      "name": "Dividends and stock prices",
-      "articleQuote": "The expectation of dividends was key. Their size and certainty drove market prices.",
-      "inContext": "In the 1800s investors valued a stock mainly by the steady cash payout (dividend) they expected, so 'watered' shares that threatened those payouts scared them.",
-      "meaning": "A dividend is a share of a company's profits paid out to shareholders. For a long time, the size and reliability of expected dividends was the main thing setting a stock's price. Modern markets value growth and future earnings too, but the underlying logic — a share is worth what you expect to get out of it — still drives prices today."
     }
   ],
   "quiz": [
