@@ -46,7 +46,7 @@ Pages stay minimal. The **index** is just a stack of panels, one per day — no 
 
 Two skills, two steps, with the user as the validation layer between them:
 
-1. **`wsj-pick-article`** — run first each day ("pick an article", "what should we read today"). Checks `content/` for recently covered domains (variety across days is the top rule), browses the wsj.com homepage, verifies candidates are substantive text articles (not video-led pages or live blogs), and recommends a ranked top pick plus 2–3 runners-up. It only recommends — the **user** checks the suggestions and picks one.
+1. **`wsj-pick-article`** — run first each day ("pick an article", "what should we read today"). Checks `content/` for recently covered domains (quality and learning value come first; variety across days is a preference, used as a tiebreaker), browses the wsj.com homepage, verifies candidates are substantive text articles (not video-led pages or live blogs), and recommends a ranked top pick plus 2–3 runners-up. It only recommends — the **user** checks the suggestions and picks one.
 2. **`wsj-reading`** — invoked with the chosen link (or when the user pastes any WSJ link / says "today's reading"). It reads the article in the browser (the user logs into WSJ themselves), writes `content/YYYY-MM-DD.json`, **captures the day's PDF directly from the open page** (`page.pdf()` → `public/pdfs/YYYY-MM-DD.pdf`, setting `pdfUrl`; the `PDFs/` drop-zone is now only a manual fallback), builds, commits, and pushes (which deploys).
 
 Audience calibration lives in both skills; the article-first content rules live in `.claude/skills/wsj-reading/SKILL.md`. Hard rule: link to WSJ and quote only short phrases — never republish the article text.
