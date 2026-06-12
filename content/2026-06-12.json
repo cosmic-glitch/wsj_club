@@ -1,0 +1,131 @@
+{
+  "date": "2026-06-12",
+  "title": "The Invention of the Trillionaire: How a Fight Over 'What Is a Share?' Built the Modern Stock Market",
+  "articleUrl": "https://www.wsj.com/finance/gilded-age-elon-musk-trillionaire-3f42677c",
+  "pdfUrl": "/pdfs/2026-06-12.pdf",
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "consequential",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Americans resolved a hugely consequential debate over a fundamental question that still defines our economy today: What is a share?",
+      "inContext": "The debate mattered enormously — its outcome shaped the entire American economy for the next century and beyond.",
+      "meaning": "Important because it leads to significant results or effects; having major consequences.",
+      "examples": [
+        "Choosing which classes to take junior year felt like the most consequential decision of high school.",
+        "The referee's call in the final seconds was consequential — it decided the championship."
+      ]
+    },
+    {
+      "word": "tangible",
+      "partOfSpeech": "adjective",
+      "articleQuote": "It broke faith with the literal, tangible conception of shares.",
+      "inContext": "People used to believe a share's value had to match real, touchable property the company owned, like rails and railcars.",
+      "meaning": "Able to be touched or physically measured; real and concrete rather than abstract.",
+      "examples": [
+        "After weeks of practice, the team finally saw tangible progress in their times.",
+        "She wanted tangible proof she'd finished the chores, so she photographed the clean kitchen."
+      ]
+    },
+    {
+      "word": "disparity",
+      "partOfSpeech": "noun",
+      "articleQuote": "...corporate power and wealth disparity, both powered by the stock market.",
+      "inContext": "The huge and growing gap between the very rich and everyone else.",
+      "meaning": "A noticeable, often unfair, difference or gap between two or more things.",
+      "examples": [
+        "There was a big disparity between how much the two teammates practiced and how much they played.",
+        "The disparity in homework loads between the two teachers was hard to ignore."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "What a share represents",
+      "articleQuote": "They broke the link between the value of a share and physical things.",
+      "inContext": "Gilded Age financiers shifted the meaning of a stock share away from 'a slice of the company's physical property' toward 'a claim on the company's future earnings.'",
+      "meaning": "A share of stock is a unit of ownership in a company. The deep question this essay tells is what that ownership is worth: just the company's tangible stuff (buildings, machines), or its expected future profits, brand, and ideas? Modern markets settled on the second view — which is why a software company that owns little more than laptops can be worth billions."
+    },
+    {
+      "name": "Watered stock and overcapitalization",
+      "articleQuote": "Stock issued beyond construction costs was called “watered stock.”",
+      "inContext": "Erie Railway insiders printed far more shares than the railroad's real assets justified, diluting what each share stood for.",
+      "meaning": "Issuing shares worth more than a company's actual assets or earnings can support. The name comes from making cattle drink water to weigh more before sale. Today we'd call it inflating a company's value — investors worry the 'extra' shares represent nothing real, so the price can collapse when reality catches up."
+    },
+    {
+      "name": "Holding company",
+      "articleQuote": "...a holding company—a corporation that exists simply to own other corporations.",
+      "inContext": "Jay Gould used a paper company that built nothing to control and combine several railways, sidestepping laws against merging.",
+      "meaning": "A company whose main purpose is to own controlling stakes in other companies rather than make products itself. It lets one group quietly control many businesses at once — a structure that powered the huge merger boom of 1897-1904 and is still how many modern corporate empires are organized."
+    },
+    {
+      "name": "Antitrust law",
+      "articleQuote": "The Sherman Antitrust Act may have been designed to rein in corporate power, but it did nothing to slow Rockefeller’s massive accumulation of wealth.",
+      "inContext": "The 1890 law was meant to break up monopolies, and in 1911 it forced Standard Oil to split into 33 companies — yet Rockefeller, keeping shares in all of them, only got richer.",
+      "meaning": "Laws that try to keep any single company from dominating a market and crushing competition. They're one of the two main tools (the other being the progressive income tax) that Americans built to limit corporate power and concentrated wealth — but as the Standard Oil breakup shows, they don't automatically reduce a founder's fortune."
+    },
+    {
+      "name": "Dividends and stock prices",
+      "articleQuote": "The expectation of dividends was key. Their size and certainty drove market prices.",
+      "inContext": "In the 1800s investors valued a stock mainly by the steady cash payout (dividend) they expected, so 'watered' shares that threatened those payouts scared them.",
+      "meaning": "A dividend is a share of a company's profits paid out to shareholders. For a long time, the size and reliability of expected dividends was the main thing setting a stock's price. Modern markets value growth and future earnings too, but the underlying logic — a share is worth what you expect to get out of it — still drives prices today."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the essay, what 'revolutionary' change made unprecedented Gilded Age fortunes possible?",
+      "options": [
+        "The invention of the railroad",
+        "Breaking the link between a share's value and physical things",
+        "The Sherman Antitrust Act",
+        "The progressive income tax"
+      ],
+      "answerIndex": 1,
+      "explanation": "The piece argues fortunes exploded once a share's value was no longer tied only to a company's tangible property."
+    },
+    {
+      "question": "Where did the term 'watered stock' come from?",
+      "options": [
+        "Railroads running alongside rivers",
+        "Diluting wine with water at celebrations",
+        "Making cattle drink heavily to weigh more before sale",
+        "Watering down ink to print more share certificates"
+      ],
+      "answerIndex": 2,
+      "explanation": "The term came from livestock markets, where cattle were made to drink water to weigh more — like issuing shares beyond a company's real worth."
+    },
+    {
+      "question": "What is a 'holding company,' as the article describes it?",
+      "options": [
+        "A bank that holds customers' deposits",
+        "A company that exists mainly to own other companies",
+        "A business that only stores goods in warehouses",
+        "A company waiting to go public on the stock market"
+      ],
+      "answerIndex": 1,
+      "explanation": "Gould used a paper holding company to control multiple railways without formally merging them."
+    },
+    {
+      "question": "What happened to Rockefeller's wealth after the 1911 antitrust ruling broke up Standard Oil?",
+      "options": [
+        "He lost most of his fortune",
+        "His wealth stayed exactly the same",
+        "He kept shares in all 33 spun-off companies and grew richer",
+        "He was forced to sell all his shares to the public"
+      ],
+      "answerIndex": 2,
+      "explanation": "Because he held stock in every spin-off, the combined value soared and he reached his first billion in 1916."
+    },
+    {
+      "question": "Which word means 'a noticeable, often unfair, gap between things'?",
+      "options": [
+        "Tangible",
+        "Consequential",
+        "Disparity",
+        "Dividend"
+      ],
+      "answerIndex": 2,
+      "explanation": "Disparity refers to a marked difference — the essay uses it for the widening gap in wealth."
+    }
+  ]
+}
