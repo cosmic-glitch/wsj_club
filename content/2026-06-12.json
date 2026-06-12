@@ -28,14 +28,14 @@
       ]
     },
     {
-      "word": "disparity",
-      "partOfSpeech": "noun",
-      "articleQuote": "...corporate power and wealth disparity, both powered by the stock market.",
-      "inContext": "The huge and growing gap between the very rich and everyone else.",
-      "meaning": "A noticeable, often unfair, difference or gap between two or more things.",
+      "word": "moot",
+      "partOfSpeech": "adjective",
+      "articleQuote": "The great movement toward corporate concentration might have collapsed and antitrust law would have become almost moot.",
+      "inContext": "If holding companies had been outlawed, the whole problem antitrust law was built to fight might have vanished — leaving the law with nothing left to do.",
+      "meaning": "No longer relevant or worth arguing about, usually because the situation has changed or the question has already been settled.",
       "examples": [
-        "There was a big disparity between how much the two teammates practiced and how much they played.",
-        "The disparity in homework loads between the two teachers was hard to ignore."
+        "Once the game was rained out, the argument over who should start at pitcher became moot.",
+        "She'd already accepted the other school's offer, so debating the essay topic was moot."
       ]
     }
   ],
@@ -117,15 +117,15 @@
       "explanation": "Because he held stock in every spin-off, the combined value soared and he reached his first billion in 1916."
     },
     {
-      "question": "Which word means 'a noticeable, often unfair, gap between things'?",
+      "question": "If a question has become 'moot,' what does that mean?",
       "options": [
-        "Tangible",
-        "Flamboyance",
-        "Disparity",
-        "Dividend"
+        "It is the most important question of all",
+        "It is no longer relevant or worth arguing about",
+        "It can only be decided by a court",
+        "It is too confusing for anyone to answer"
       ],
-      "answerIndex": 2,
-      "explanation": "Disparity refers to a marked difference — the essay uses it for the widening gap in wealth."
+      "answerIndex": 1,
+      "explanation": "Moot means a point is no longer worth debating — the essay says antitrust law could have become almost moot if holding companies had been banned."
     }
   ]
 }
