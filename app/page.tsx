@@ -68,7 +68,17 @@ export default function Home() {
                 self-quiz
               </Link>
             </li>
-            <li>Call Anurag</li>
+            <li>
+              Schedule your{" "}
+              <a
+                href="https://calendly.com/cosmic-glitch/daily-quiz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={linkClass}
+              >
+                1-1 quiz
+              </a>
+            </li>
           </ol>
         </li>
       ))}
