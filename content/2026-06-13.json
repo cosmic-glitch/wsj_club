@@ -1,0 +1,124 @@
+{
+  "date": "2026-06-13",
+  "title": "Cities and Ambition",
+  "articleUrl": "https://www.paulgraham.com/cities.html",
+  "source": "Paul Graham",
+  "vocab": [
+    {
+      "word": "transcend",
+      "partOfSpeech": "verb",
+      "articleQuote": "You might think that if you had enough strength of mind to do great things, you'd be able to transcend your environment.",
+      "inContext": "Here it means rising above the pull of your surroundings — being so strong-willed that where you live no longer shapes what you do.",
+      "meaning": "To go beyond the usual limits of something, or to rise above and not be controlled by it.",
+      "examples": [
+        "A truly great song can transcend language — people who don't speak English still feel it.",
+        "She tried to transcend her nerves and just focus on the free throw."
+      ]
+    },
+    {
+      "word": "empirically",
+      "partOfSpeech": "adverb",
+      "articleQuote": "Empirically, the answer seems to be: a lot.",
+      "inContext": "He means: judging from real-world evidence and observation (not just theory or guessing), the city you live in matters a great deal.",
+      "meaning": "Based on what can be observed, measured, or tested in the real world, rather than on theory or opinion.",
+      "examples": [
+        "We argued about which route was faster, so we settled it empirically by timing both.",
+        "The coach's hunch turned out to be right, and the season stats backed it up empirically."
+      ]
+    },
+    {
+      "word": "preposterous",
+      "partOfSpeech": "adjective",
+      "articleQuote": "I realize that seems a preposterous claim. What makes it true is that it's more preposterous to claim about anywhere else.",
+      "inContext": "He admits that calling Cambridge 'the intellectual capital of the world' sounds absurd — but argues every other candidate sounds even more absurd.",
+      "meaning": "So unreasonable or absurd that it's almost laughable; contrary to common sense.",
+      "examples": [
+        "The idea that I could finish a week's homework in one night was preposterous.",
+        "He made the preposterous excuse that his dog had eaten his phone."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Loss aversion",
+      "articleQuote": "Most people overvalue negative amounts of money: they'll work much harder to avoid losing a dollar than to gain one.",
+      "inContext": "Graham uses this to explain why discouragement hits harder than encouragement: people are wired to fear losses, so the chill of no one caring about your work weighs more than the warmth of praise.",
+      "meaning": "Loss aversion is the well-documented human tendency to feel the pain of losing something roughly twice as strongly as the pleasure of gaining the same thing. It's a core idea in behavioral economics, and it quietly steers decisions everywhere — why people hold a losing stock too long, why a 'don't break your streak' app motivates you, why giving something up feels worse than never having had it."
+    },
+    {
+      "name": "Zero-sum game",
+      "articleQuote": "Because ambitions are to some extent incompatible and admiration is a zero-sum game, each city tends to focus on one type of ambition.",
+      "inContext": "If a city only has so much admiration to hand out, praising one kind of success (say, making money) leaves less for another (say, ideas) — so cities end up specializing.",
+      "meaning": "A zero-sum game is any situation where the total is fixed, so one side can only gain exactly as much as the other side loses — the winnings and losses sum to zero. Splitting a pizza is zero-sum; a bigger slice for you means a smaller one for me. Many real situations are NOT zero-sum (two people can both gain from a trade), so spotting which kind you're in changes how you should act."
+    },
+    {
+      "name": "Self-selection",
+      "articleQuote": "The people you find in Cambridge are not there by accident... You have to make sacrifices to live there.",
+      "inContext": "Because Cambridge is expensive, grubby, and cold, only people who care most about being near smart people bother to move there — so the city fills up with exactly that type.",
+      "meaning": "Self-selection happens when people sort themselves into a group based on their own choices, so the group ends up unusual rather than typical. It's why online reviews skew toward the very happy and the very angry, or why volunteers for a study aren't a random slice of everyone. Whenever you read a statistic about a group, ask who chose to be in it — self-selection may be doing the real work behind the numbers."
+    },
+    {
+      "name": "Counterfactual reasoning",
+      "articleQuote": "you have to assume there was someone born in Milan with as much natural ability as Leonardo. What happened to him?",
+      "inContext": "To test how much environment matters, Graham imagines the 'Milanese Leonardo' — an equally gifted person born in the wrong city — and asks why we've never heard of him.",
+      "meaning": "Counterfactual reasoning means thinking carefully about what WOULD have happened under different circumstances — the 'what if' you can't actually observe. It's how you separate cause from coincidence: to know whether a city (or a coach, or a school) really made the difference, you compare against the imagined version where everything else was the same but that one thing changed. It's one of the most powerful tools for thinking clearly about cause and effect."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the main claim of 'Cities and Ambition'?",
+      "options": [
+        "The biggest cities are always the best places to live",
+        "The city you live in sends a subtle message that shapes what you become ambitious about",
+        "Ambitious people can ignore their surroundings if they try hard enough",
+        "Money is the only thing that matters in any great city"
+      ],
+      "answerIndex": 1,
+      "explanation": "Graham argues each great city pushes you toward a particular kind of ambition — money in New York, ideas in Cambridge, power in Silicon Valley."
+    },
+    {
+      "question": "When Graham says it would be 'preposterous' to call somewhere other than Cambridge the intellectual capital, he means that claim would be:",
+      "options": [
+        "carefully proven",
+        "even more absurd",
+        "slightly more modest",
+        "easier to believe"
+      ],
+      "answerIndex": 1,
+      "explanation": "'Preposterous' means absurd or contrary to common sense; he says claiming it about anywhere else would be even more absurd."
+    },
+    {
+      "question": "Graham says people 'work much harder to avoid losing a dollar than to gain one.' This illustrates which idea?",
+      "options": [
+        "Zero-sum game",
+        "Self-selection",
+        "Loss aversion",
+        "Counterfactual reasoning"
+      ],
+      "answerIndex": 2,
+      "explanation": "Feeling losses more strongly than equivalent gains is the definition of loss aversion, which he uses to explain why discouragement outweighs encouragement."
+    },
+    {
+      "question": "Why does Graham say the people you find in Cambridge are 'not there by accident'?",
+      "options": [
+        "The city is so pleasant that everyone wants to move there",
+        "Only people who care most about being near smart people accept its high costs and bad weather",
+        "The government assigns scholars to live there",
+        "It is the cheapest city in America to live in"
+      ],
+      "answerIndex": 1,
+      "explanation": "This is self-selection: the sacrifices required to live there filter the population down to people with a particular priority."
+    },
+    {
+      "question": "What is the point of Graham's imagined 'Milanese Leonardo'?",
+      "options": [
+        "To prove Leonardo was actually born in Milan, not Florence",
+        "To show that natural talent alone guarantees fame",
+        "To reason about what would have happened to an equally gifted person in a different environment",
+        "To argue that Milan was a bigger city than Florence"
+      ],
+      "answerIndex": 2,
+      "explanation": "By imagining an equally talented person born in the 'wrong' city, Graham uses counterfactual reasoning to weigh the power of environment against raw ability."
+    }
+  ]
+}
