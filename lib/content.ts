@@ -35,12 +35,25 @@ export type QuizQuestion = {
   explanation: string; // shown after answering
 };
 
+/**
+ * One source article. Most days have a single article (use the top-level
+ * `articleUrl`/`pdfUrl` on `Reading`). Some days bundle two or more short
+ * articles into one handout — those go in `Reading.articles`, each with its
+ * own headline and links.
+ */
+export type Source = {
+  title: string; // the article's own headline (shown as the link text on the index)
+  articleUrl: string; // link to the original WSJ article (the "Web" link)
+  pdfUrl?: string; // served PDF of the article, e.g. "/pdfs/2026-06-14-1.pdf"
+};
+
 /** A full day's reading handout. The skill writes one JSON file per day. */
 export type Reading = {
   date: string; // "YYYY-MM-DD"
   title: string; // a clear, descriptive title (need not match WSJ's headline)
-  articleUrl: string; // link to the original WSJ article (the "Web" link)
-  pdfUrl?: string; // served PDF of the article, e.g. "/pdfs/2026-06-09.pdf" (the "PDF" link)
+  articleUrl?: string; // single-article days: the WSJ article link (the "Web" link)
+  pdfUrl?: string; // single-article days: served PDF, e.g. "/pdfs/2026-06-09.pdf"
+  articles?: Source[]; // multi-article days: when set, the entry bundles these (top-level articleUrl/pdfUrl unused)
   source?: string; // e.g. "The Wall Street Journal"
   vocab: VocabWord[];
   concepts: Concept[];

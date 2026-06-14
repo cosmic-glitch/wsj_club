@@ -5,6 +5,28 @@ import { getAllReadings, dateBig } from "@/lib/content";
 // One shared blue-link style so every link on the page matches.
 const linkClass = "text-sky-700 transition hover:text-sky-900 hover:underline";
 
+// Words for "Read the {first} article" on multi-article days.
+const ORDINALS = ["first", "second", "third", "fourth", "fifth"];
+
+// The "(PDF version)" link shown after an article link, when a PDF exists.
+function PdfVersion({ href }: { href: string }) {
+  return (
+    <>
+      {" "}
+      (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={linkClass}
+      >
+        PDF version
+      </a>
+      )
+    </>
+  );
+}
+
 export default function Home() {
   const readings = getAllReadings();
 
@@ -33,29 +55,29 @@ export default function Home() {
             {r.title}
           </p>
 
-          {/* The four steps — the same every day */}
+          {/* The numbered steps. Single-article days read the one article in
+              step 1; multi-article days get one "Read the Nth article" step per
+              article, then the same handout / quiz / 1-1 steps. */}
           <ol className="mt-4 list-decimal space-y-1.5 pl-5 text-stone-700 marker:font-semibold marker:text-stone-400">
-            <li>
-              Read the{" "}
-              <ArticleLink href={r.articleUrl} className={linkClass}>
-                article
-              </ArticleLink>
-              {r.pdfUrl && (
-                <>
-                  {" "}
-                  (
-                  <a
-                    href={r.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={linkClass}
-                  >
-                    PDF version
-                  </a>
-                  )
-                </>
-              )}
-            </li>
+            {r.articles && r.articles.length > 0 ? (
+              r.articles.map((a, i) => (
+                <li key={a.articleUrl}>
+                  Read the {ORDINALS[i] ?? `${i + 1}th`} article —{" "}
+                  <ArticleLink href={a.articleUrl} className={linkClass}>
+                    {a.title}
+                  </ArticleLink>
+                  {a.pdfUrl && <PdfVersion href={a.pdfUrl} />}
+                </li>
+              ))
+            ) : (
+              <li>
+                Read the{" "}
+                <ArticleLink href={r.articleUrl ?? "#"} className={linkClass}>
+                  article
+                </ArticleLink>
+                {r.pdfUrl && <PdfVersion href={r.pdfUrl} />}
+              </li>
+            )}
             <li>
               Read the{" "}
               <Link href={`/reading/${r.date}`} className={linkClass}>

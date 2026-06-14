@@ -40,35 +40,50 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - WSJ requires login. Tell the user: *"I've opened the article — please log into WSJ in the browser window, then tell me when you're in."* Wait for them. Do **not** ask for or store their password; they log in themselves.
    - Once past the paywall, read the full article (`browser_snapshot`, or scroll and read). Capture: the real headline, the byline/section if useful, and the substance — main argument, key facts, and any jargon a teenager would trip on.
 
-3. **Capture the day's PDF automatically — but only for sign-in/paywalled articles.** The PDF exists so the club can still read paywalled WSJ pieces. **If the article is on a freely open link that needs no login** (e.g. a public essay or open-access page), **skip the PDF entirely** — don't capture one, omit `pdfUrl` from the JSON, and the index will show just the Web link. Only do the capture below when the source sits behind a sign-in/paywall. With the article open and the user logged in (from step 2), save the page **straight to the served path** — no manual print/save step. `page.pdf()` calls the same Chromium print engine as the browser's "Print → Save as PDF", so it captures the full article with print styling (ads/nav stripped by the print stylesheet). Only `public/` is served by Next, so the PDF must end up at `public/pdfs/YYYY-MM-DD.pdf` and is referenced as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`.
+3. **Capture the day's PDF automatically — but only for sign-in/paywalled articles.** The PDF exists so the club can still read paywalled WSJ pieces. **If the article is on a freely open link that needs no login** (e.g. a public essay or open-access page), **skip the PDF entirely** — don't capture one, omit `pdfUrl` from the JSON, and the index will show just the Web link. Only do the capture below when the source sits behind a sign-in/paywall. With the article open and the user logged in (from step 2), save the page **straight to the served path** — no manual print/save step. Capture it **text-focused**: isolate the `<article>`, drop the images, and print with `printBackground:false`. **Why:** `page.pdf()` emulates *print* media, where Chromium picks the **largest `srcset` candidate** for every `<img>` (WSJ photos go up to ~5000px) and also keeps the page's endless "recommended" feed — left in, a short article balloons to **40–50MB**. Stripping images first lands it at **~100KB** of clean, complete text, which is all the club needs. Only `public/` is served by Next, so the PDF must end up at `public/pdfs/YYYY-MM-DD.pdf` and is referenced as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`.
    - Make the folder: `mkdir -p public/pdfs`.
-   - Use `browser_run_code_unsafe` to scroll the article (so lazy images/text load) and then write the PDF — **substitute the real date** in `OUT`:
+   - Use `browser_run_code_unsafe` — **substitute the real date** in `OUT`:
      ```js
      async (page) => {
        const OUT = '/Users/anuragved/code/wsj_club/public/pdfs/YYYY-MM-DD.pdf'; // ← real date
+       // 1) Isolate the article: remove only the siblings along its ancestor chain,
+       //    so nav, the endless "recommended" feed, and the footer all go away.
+       await page.evaluate(() => {
+         const art = document.querySelector('article') || document.querySelector('main');
+         let node = art;
+         while (node && node.parentElement && node !== document.body) {
+           const parent = node.parentElement;
+           for (const sib of Array.from(parent.children)) if (sib !== node) sib.remove();
+           node = parent;
+         }
+       });
+       // 2) Nudge-scroll the (now short) article so its lazy text settles.
        await page.evaluate(() => new Promise(res => {
-         let y = 0; (function step(){
-           window.scrollBy(0, innerHeight); y += innerHeight;
-           if (y < document.body.scrollHeight) setTimeout(step, 150);
-           else { scrollTo(0, 0); setTimeout(res, 400); }
-         })();
+         let i = 0; (function step(){ window.scrollBy(0, innerHeight); i++;
+           if (i < 10 && (window.scrollY + innerHeight) < document.body.scrollHeight) setTimeout(step, 150);
+           else { scrollTo(0, 0); setTimeout(res, 500); } })();
        }));
-       await page.pdf({ path: OUT, format: 'Letter', printBackground: true,
+       // 3) Drop every image (see "Why" above), then print without backgrounds.
+       await page.evaluate(() => { for (const i of Array.from(document.images)) i.remove(); });
+       await page.pdf({ path: OUT, format: 'Letter', printBackground: false,
          margin: { top: '0.5in', bottom: '0.5in', left: '0.5in', right: '0.5in' } });
        return 'wrote ' + OUT;
      }
      ```
-   - **Verify it:** `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect hundreds of KB to a few MB) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). If it's tiny (a few KB) or near-empty, the paywall probably wasn't cleared or print CSS hid the body — use the manual fallback below.
+   - **Verify it:** `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect ~80KB to a few hundred KB and several pages) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). If it's a few KB / near-empty, the paywall wasn't cleared or the `<article>` selector missed — re-check login or use the manual fallback below. If it's tens of MB, the image-strip step didn't run.
    - Set `pdfUrl: "/pdfs/YYYY-MM-DD.pdf"` in the JSON. (To skip the PDF entirely, omit `pdfUrl` — the page then shows only the Web link.)
+   - **Multi-article days** (the `articles[]` shape — see step 5): capture **one PDF per article**. `browser_navigate` to each article in turn, write it to `public/pdfs/YYYY-MM-DD-1.pdf`, `-2.pdf`, … (note the `-N` suffix), and put each path in that article's own `pdfUrl` inside `articles[]` — there is no top-level `pdfUrl`.
    - **Manual fallback** (only if auto-capture looks wrong): the user saves the article as a PDF by hand into the `PDFs/` drop-zone at the repo root (gitignored, raw WSJ filename), and you copy it over: `cp "PDFs/<that file>.pdf" public/pdfs/YYYY-MM-DD.pdf`. The `public/pdfs/` copy is what gets committed and deployed.
 
 4. **Propose the words and concepts, and get the user's sign-off before generating anything.** This is a required manual checkpoint — **do not write the JSON or generate the quiz until the user approves.** Based on your read of the article:
    - Pick your candidate **3 vocab words** and **3–5 concepts** per the calibration above.
    - Present them to the user as a short proposal: for each word, the word plus the short article quote it comes from and a one-line gloss of why it's worth teaching; for each concept, the concept name plus a one-line description of the idea and why it's broadly useful. Keep it skimmable — this is for the user to react to, not the finished card text.
+   - **Multi-article days** (when the user asks to bundle two short articles into one handout): propose **one combined** set of words and concepts drawn from *all* the day's articles, balanced so each article is represented (e.g. ~2 vocab + ~2 concepts per article). It's fine to run slightly higher counts than usual (e.g. 4 vocab / 4 concepts) since there's more source material; note which article each pick comes from. The 5-question quiz still spans the whole bundle.
    - **Discuss and revise.** The user may swap words/concepts in or out, ask for harder or easier picks, or adjust the framing. Iterate until they explicitly give the go-ahead. Treat this as the quality gate: the point is to fix the selection *before* the expensive generation, not after.
    - Only once the user approves the final list do you move on to drafting the full handout (step 5).
 
 5. **Draft the handout content.** Using the approved words and concepts, write the full article-first cards (`articleQuote` → `inContext` → `meaning` → `examples` for vocab; `articleQuote` → `inContext` → `meaning` for concepts) and the 5-question quiz per the calibration above. Pick a clear, descriptive `title` (it can match WSJ's headline or be a plainer version). **Do not invent a subtitle.** Use the article's own headline (or a plainer paraphrase of it); only include a subtitle/colon-tagline if the original article actually has one. Don't append your own "How X did Y"-style subtitle. **Crediting the author:** for standard media articles (WSJ news stories, etc.), use the headline alone — no byline. But when the piece is an **essay or written work by a notable named author** (e.g. a Paul Graham essay), append `by <Author Name>` to the title — e.g. `"Cities and Ambition by Paul Graham"`. Use this only for such attributed works, not routine reportage. The pages are intentionally minimal: the handout shows **just the title** at the top (no date, no summary or "big idea" blurb), then the words and concepts; the quiz lives on its own page (`/reading/<date>/quiz`). The index is a stack of one panel per day (date · title · four steps); the article links appear only there, in the first step — **Read the article (PDF version)** (the word "article" → `articleUrl`, "PDF version" → `pdfUrl`; the title itself is plain text, not a link). The only "← All readings" link is in the global header bar (`app/layout.tsx`); the handout and quiz pages have no inline back-link of their own. Don't estimate reading time either — it varies too much per student, and they're expected to re-read.
+   - **Multi-article days:** set `articles: [{ title, articleUrl, pdfUrl }, …]` instead of the top-level `articleUrl`/`pdfUrl` (one entry per source, in reading order). The handout `title` is then an **umbrella title** for the bundle (e.g. `"World Cup News"`) — this is the one case where a combined title beats a single headline; each individual article keeps its real WSJ headline inside `articles[]`. The index automatically expands the first step into one **Read the _first/second_ article — _Headline_ (_PDF version_)** step per article (each article's headline is the link), so a two-article day shows five numbered steps. The handout and quiz are unchanged — one combined page. (First example: `content/2026-06-14.json`.)
 
 6. **Write `content/YYYY-MM-DD.json`** following the schema below exactly (include `pdfUrl` if you placed a PDF). Validate it's well-formed JSON.
 
@@ -122,9 +137,10 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
 Field notes:
 - `pdfUrl` is the served path under `public/` (i.e. `/pdfs/YYYY-MM-DD.pdf`), **not** a filesystem path and **not** the raw `PDFs/` drop-zone. Omit the field entirely if there's no PDF for the day.
 - `answerIndex` is **0-based** (0 = first option). Double-check it points at the correct option.
-- `vocab` has **exactly 3 words**; each `examples` array has **exactly 2** sentences.
+- `vocab` has **exactly 3 words** (a multi-article day may run ~4); each `examples` array has **exactly 2** sentences.
 - All `articleQuote` fields are short (one sentence/phrase) and taken from the actual article.
 - Keep 4 options per quiz question.
+- **Multi-article days:** replace the top-level `"articleUrl"`/`"pdfUrl"` with an `"articles"` array — `"articles": [{ "title": "First WSJ headline", "articleUrl": "https://www.wsj.com/…", "pdfUrl": "/pdfs/YYYY-MM-DD-1.pdf" }, { "title": "Second WSJ headline", "articleUrl": "…", "pdfUrl": "/pdfs/YYYY-MM-DD-2.pdf" }]`. Keep one combined `vocab`/`concepts`/`quiz`. See `content/2026-06-14.json`.
 
 The TypeScript types backing this live in `lib/content.ts` — if you change the schema, update that file and the page components too (`app/reading/[date]/page.tsx` for words/concepts, `app/reading/[date]/quiz/page.tsx` for the quiz).
 
