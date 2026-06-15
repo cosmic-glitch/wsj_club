@@ -1,0 +1,125 @@
+{
+  "date": "2026-06-15",
+  "title": "How Artificial Intelligence Got Better at Building Itself",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/06/07/how-artificial-intelligence-got-better-at-building-itself",
+  "pdfUrl": "/pdfs/2026-06-15.pdf",
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "prosaic",
+      "partOfSpeech": "adjective",
+      "articleQuote": "The improvements themselves were prosaic.",
+      "inContext": "After an AI agent sped up the training of a model on its own, the changes it made turned out to be plain and unremarkable — better starting numbers, a slightly wider 'attention' window — not dazzling breakthroughs.",
+      "meaning": "Dull, ordinary, or unimaginative; everyday and matter-of-fact rather than exciting or poetic.",
+      "examples": [
+        "Everyone expected the locked vault to hold treasure, but the contents were prosaic — old receipts and a few rusty keys.",
+        "Her science-fair idea sounded grand, but the actual steps were prosaic: measure, wait, record, repeat."
+      ]
+    },
+    {
+      "word": "tantamount",
+      "partOfSpeech": "adjective",
+      "articleQuote": "...the creation of the then-cutting edge GPT-4 was tantamount to that blindfolded journey.",
+      "inContext": "A scientist argued that building GPT-4 was, in effect, the same thing as flooring the gas pedal while driving blindfolded — just as reckless, even if it didn't look identical.",
+      "meaning": "Equivalent to, or as good as; amounting to the same thing as something else (usually something serious).",
+      "examples": [
+        "Skipping every practice and then showing up on game day is tantamount to quitting the team.",
+        "Copying a classmate's essay word for word is tantamount to cheating, even if you change the title."
+      ]
+    },
+    {
+      "word": "amenable",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Not all of those teams are equally amenable to AI assistance.",
+      "inContext": "Some kinds of AI work can easily be handed off to AI helpers, while other kinds resist it — those tasks are less open, or 'amenable,' to being automated.",
+      "meaning": "Open or willing to something; easily persuaded, or well-suited to a particular approach or treatment.",
+      "examples": [
+        "My little brother is surprisingly amenable to doing chores if you let him pick the playlist.",
+        "Some math problems are amenable to a quick shortcut; others you just have to grind through."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Positive feedback loop",
+      "articleQuote": "...a closed loop. Version one of a model produces version two, which is faster and more capable; version two produces version three, which is more so again.",
+      "inContext": "Each improved AI builds the next, even better AI, which then builds an even better one — a loop where every round makes the next round stronger.",
+      "meaning": "A cycle in which the output of a process feeds back in as input and amplifies it, so each pass makes the next pass bigger. Because it builds on itself, change can speed up dramatically over time — the same shape drives compound interest, a rumor spreading, or a crowd getting louder. ('Positive' means self-reinforcing, not 'good': feedback loops can run away in harmful directions too.)"
+    },
+    {
+      "name": "Exponential growth",
+      "articleQuote": "...the 'productivity boost over human-only R&D' could increase ten-fold, then a hundred-fold, then a thousand-fold.",
+      "inContext": "The report imagines AI's research speed not just adding a little each year but multiplying over and over — 10x, then 100x, then 1,000x — the signature of runaway growth.",
+      "meaning": "Growth in which a quantity multiplies by a fixed factor each step instead of adding a fixed amount. It looks deceptively slow at first and then suddenly explodes — which is why doubling a single penny every day beats taking a flat $1,000 a day within about a month. The same math governs pandemics, viral videos, and compound interest."
+    },
+    {
+      "name": "Conflict of interest",
+      "articleQuote": "...raise a cynical eyebrow when the company...calls for the world to have 'the option to slow or temporarily pause frontier AI development'...What market leader would not wish that its competition stop trying to catch up?",
+      "inContext": "The leading AI company urges everyone to slow down — but a slowdown would conveniently freeze its rivals in place, so its motives are worth questioning.",
+      "meaning": "A situation where someone's personal stake could bias the position they take or the advice they give, so what sounds like principle may really serve their own gain. Spotting it is a core critical-thinking move: ask who benefits ('cui bono?') before accepting a claim. A coach who also sells the supplements he recommends, or a friend grading your work who's up for the same prize, faces the same tension."
+    },
+    {
+      "name": "Bottleneck (limiting constraint)",
+      "articleQuote": "There are also several physical constraints that will, for now, impose limits on the speed at which models can improve themselves. The most important is access to compute.",
+      "inContext": "Even if AI could improve itself, it can only go as fast as its scarcest resource — chiefly computing power and good training data — allows.",
+      "meaning": "The single slowest or scarcest step that caps how fast an entire system can go; speeding up anything except the bottleneck doesn't help. The word comes from the narrow neck of a bottle, which limits how fast liquid pours out. In a group project, the one teammate who hasn't finished their part is the bottleneck; on a highway, one closed lane sets everyone's pace."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is 'recursive self-improvement' (RSI), the idea at the heart of the article?",
+      "options": [
+        "A single super-powerful AI that humans build all at once",
+        "A loop in which each AI builds a more capable next AI, which then builds the next, so improvements compound",
+        "A government program that funds AI research every year",
+        "A way of cooling data centers so AI can run faster"
+      ],
+      "answerIndex": 1,
+      "explanation": "RSI is a self-reinforcing loop: each model produces a better successor, and the gains stack up with every round."
+    },
+    {
+      "question": "After an AI agent sped up the training of the 'Nanochat' model on its own, the article calls the improvements it found 'prosaic.' That means they were:",
+      "options": [
+        "ordinary and unremarkable — plain tweaks an expert had simply missed",
+        "dangerous and hard to control",
+        "brilliant, poetic leaps no human could have imagined",
+        "extremely expensive to carry out"
+      ],
+      "answerIndex": 0,
+      "explanation": "'Prosaic' means dull or ordinary; the agent's gains were plain adjustments (like better starting values) that even a top researcher had overlooked."
+    },
+    {
+      "question": "Max Tegmark said building GPT-4 was 'tantamount to' flooring the gas pedal while driving blindfolded. 'Tantamount to' means:",
+      "options": [
+        "far safer than",
+        "completely unrelated to",
+        "essentially the same as",
+        "a careful improvement on"
+      ],
+      "answerIndex": 2,
+      "explanation": "'Tantamount to' means equivalent to or amounting to the same thing — he's calling GPT-4's creation just as reckless as the blindfolded drive."
+    },
+    {
+      "question": "Why does the article suggest readers stay skeptical when the leading AI company urges the world to 'slow or temporarily pause' AI development?",
+      "options": [
+        "Because pausing AI is against the law",
+        "Because a pause would conveniently stop its rivals from catching up — its advice serves its own interest",
+        "Because the company has already stopped building AI itself",
+        "Because no one else is capable of building advanced AI"
+      ],
+      "answerIndex": 1,
+      "explanation": "A slowdown benefits the market leader by freezing competitors, so its call to pause carries a conflict of interest worth questioning."
+    },
+    {
+      "question": "A think-tank imagined AI research speed rising 'ten-fold, then a hundred-fold, then a thousand-fold.' Growth that multiplies like this each step — slow at first, then suddenly explosive — is called:",
+      "options": [
+        "linear growth",
+        "exponential growth",
+        "diminishing returns",
+        "a feedback bottleneck"
+      ],
+      "answerIndex": 1,
+      "explanation": "Multiplying by a factor each step (10x, 100x, 1,000x) is exponential growth, which looks gradual at first and then takes off."
+    }
+  ]
+}
