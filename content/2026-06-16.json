@@ -1,0 +1,125 @@
+{
+  "date": "2026-06-16",
+  "title": "America's Carmakers Cannot Escape Chinese EVs for Ever",
+  "articleUrl": "https://www.economist.com/business/2026/06/15/americas-carmakers-cannot-escape-chinese-evs-for-ever",
+  "pdfUrl": "/pdfs/2026-06-16.pdf",
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "retrenchment",
+      "partOfSpeech": "noun",
+      "articleQuote": "The Big Three have a recent “history of retrenchment,” says Philippe Houchois of Jefferies, a bank.",
+      "inContext": "For the American carmakers, retrenchment means pulling back rather than growing — quitting Europe, dropping models, and surrendering market share to save money.",
+      "meaning": "Retrenchment is cutting back on spending, activity, or size — a deliberate retreat to a smaller, safer position, usually to limit losses.",
+      "examples": [
+        "After the robotics club overspent on its trip, the treasurer ordered a retrenchment: no new parts until the budget recovered.",
+        "When her work hours got cut, she went into retrenchment mode, canceling streaming subscriptions and packing lunch instead of buying it."
+      ]
+    },
+    {
+      "word": "amalgam",
+      "partOfSpeech": "noun",
+      "articleQuote": "Stellantis, an amalgam of American and European brands formed by the merger of Fiat-Chrysler and psa in 2021...",
+      "inContext": "Stellantis is an amalgam — one company stitched together out of many older car brands from different countries.",
+      "meaning": "An amalgam is a mixture or blend that combines several different things into a single whole.",
+      "examples": [
+        "Their band's sound is an amalgam of hip-hop, jazz, and old video-game music.",
+        "The new cafeteria menu is an amalgam of dishes suggested by students from a dozen different countries."
+      ]
+    },
+    {
+      "word": "buoyant",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Despite everything, cashflow is buoyant at both gm and Ford.",
+      "inContext": "Buoyant here means the companies' incoming cash is strong and healthy — keeping them comfortably “afloat” even as the business faces serious trouble.",
+      "meaning": "Buoyant literally describes something that floats easily; figuratively it means strong, lively, or cheerful — able to stay up despite pressure pushing it down.",
+      "examples": [
+        "Even after losing the first game, the team stayed buoyant and joked around at practice.",
+        "Ticket sales were so buoyant that the school added a second night for the play."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Tariffs and protectionism",
+      "articleQuote": "Joe Biden’s administration imposed 100% tariffs on Chinese evs in 2024, shutting out the cars that have rapidly taken nearly a tenth of the European market.",
+      "inContext": "A 100% tariff roughly doubles the price of an imported Chinese EV, effectively shutting those cars out of the U.S. and shielding American carmakers from cheaper rivals.",
+      "meaning": "A tariff is a tax a government puts on imported goods. Protectionism is the broader strategy of using tariffs and similar barriers to protect home industries from foreign competition. It helps domestic producers in the short run, but usually means higher prices for consumers — and can let the protected companies grow complacent and fall behind."
+    },
+    {
+      "name": "Write-down (impairment)",
+      "articleQuote": "Ford wrote down nearly $20bn last year and Stellantis $26bn, mostly for scaling back ev plans; gm took an $8bn hit.",
+      "inContext": "After betting big on electric vehicles and then retreating, the carmakers had to formally admit those investments were worth far less than they paid — a multibillion-dollar write-down.",
+      "meaning": "A write-down is when a company officially reduces the recorded value of an asset because it is no longer worth what was paid for it. It is how accounting forces a business to own up to a bad bet, turning the lost value into a reported loss on its books."
+    },
+    {
+      "name": "Cash cow vs. disruption (the “innovator's dilemma”)",
+      "articleQuote": "investors prize the short-term opportunity to sell profitable petrol vehicles in America for longer.",
+      "inContext": "Big gas-powered trucks and SUVs are hugely profitable today, so Detroit is tempted to keep selling them instead of pouring money into electric vehicles — even though EVs are likely the future.",
+      "meaning": "A “cash cow” is a product that still throws off lots of money even as its market slowly fades. The innovator's dilemma is the trap of milking that cash cow instead of investing in the new, disruptive technology — because the old product pays now and the new one is risky. Companies that choose comfort often get overtaken by rivals who embraced the change early."
+    },
+    {
+      "name": "Rules of origin (domestic-content requirements)",
+      "articleQuote": "A renegotiation of the latest agreement, due to begin in July, may require even greater American content of vehicles to qualify for tariff-free trade.",
+      "inContext": "To cross the U.S. border without tariffs, a car may have to be built with a high enough share of American-made parts — so the rule pushes companies to manufacture more inside the country.",
+      "meaning": "Rules of origin are conditions in trade deals that set how much of a product must be made locally for it to count as coming “from” a country and qualify for low or zero tariffs. Governments use them to steer where factories and jobs end up, not just what gets taxed."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the article's central warning about America's Big Three carmakers?",
+      "options": [
+        "They are certain to go bankrupt within the year.",
+        "Tariffs let them profit from gas vehicles now, but they risk falling behind China on EVs in the long run.",
+        "They have already stopped making electric vehicles entirely.",
+        "Chinese carmakers have no interest in selling in America."
+      ],
+      "answerIndex": 1,
+      "explanation": "The piece argues protectionist barriers buy Detroit short-term profits on petrol vehicles while China races ahead on the EVs that will eventually take over."
+    },
+    {
+      "question": "Why are Detroit's carmakers tempted to keep focusing on big gas-powered trucks and SUVs?",
+      "options": [
+        "Because electric vehicles are banned in the United States.",
+        "Because those vehicles are highly profitable right now, even though EVs are likely the future.",
+        "Because Americans have stopped buying trucks and SUVs.",
+        "Because the government forces them to build only gas vehicles."
+      ],
+      "answerIndex": 1,
+      "explanation": "Big trucks and SUVs are today's money-makers — the classic 'cash cow' temptation — so the firms lean on them rather than invest in the riskier EV future."
+    },
+    {
+      "question": "When the U.S. placed a 100% tariff on Chinese EVs, what was the main effect?",
+      "options": [
+        "It made Chinese EVs cheaper for American buyers.",
+        "It roughly doubled the price of those imports, effectively shutting them out and shielding U.S. carmakers.",
+        "It forced American carmakers to lower their own prices.",
+        "It had no real effect on car prices."
+      ],
+      "answerIndex": 1,
+      "explanation": "A 100% tariff doubles an import's price, keeping cheap Chinese EVs out and protecting domestic makers from that competition."
+    },
+    {
+      "question": "Ford 'wrote down nearly $20bn' on its EV plans. What does a write-down mean?",
+      "options": [
+        "The company earned $20bn in extra profit.",
+        "The company formally recorded that an investment was worth far less than it paid, booking it as a loss.",
+        "The company wrote a $20bn check to the government.",
+        "The company borrowed $20bn from a bank."
+      ],
+      "answerIndex": 1,
+      "explanation": "A write-down lowers the recorded value of an asset to reflect that it is worth less than its cost, turning the difference into a reported loss."
+    },
+    {
+      "question": "Stellantis is described as 'an amalgam of American and European brands.' An amalgam is:",
+      "options": [
+        "A blend that combines several different things into one whole.",
+        "A company that is about to fail.",
+        "A type of electric-car battery.",
+        "A government tax on imported goods."
+      ],
+      "answerIndex": 0,
+      "explanation": "An amalgam is a mixture or combination — here, several older car brands merged into a single company."
+    }
+  ]
+}
