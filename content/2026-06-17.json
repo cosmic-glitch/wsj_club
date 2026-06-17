@@ -1,0 +1,125 @@
+{
+  "date": "2026-06-17",
+  "title": "Five Things the Hormuz Crisis Taught Us About the Global Economy",
+  "articleUrl": "https://www.wsj.com/economy/global/five-things-the-hormuz-crisis-taught-us-about-the-global-economy-c9bd6b45",
+  "pdfUrl": "/pdfs/2026-06-17.pdf",
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "conduit",
+      "partOfSpeech": "noun",
+      "articleQuote": "The global economy avoided a severe shock despite the monthslong closure of the Strait of Hormuz, a critical energy conduit.",
+      "inContext": "Here the Strait of Hormuz is the narrow sea passage that a huge share of the world's oil flows through — the channel that carries the energy from where it's produced to where it's used.",
+      "meaning": "A conduit is a channel, pipe, or passage that something travels through to get from one place to another. It can be literal (a pipe carrying water) or figurative (a person or thing that passes something along).",
+      "examples": [
+        "The student council became the main conduit between the seniors and the principal, carrying complaints in both directions.",
+        "A single buried cable was the conduit for the whole school's internet, so when it was cut, every classroom went offline."
+      ]
+    },
+    {
+      "word": "mitigate",
+      "partOfSpeech": "verb",
+      "articleQuote": "Abundant reserves, alternative supplies and the AI boom helped mitigate the economic harm.",
+      "inContext": "These three things didn't erase the damage from the crisis, but they softened it — making the economic harm smaller and easier to bear than it could have been.",
+      "meaning": "To mitigate something is to make it less severe, painful, or harmful — to ease or cushion a bad situation without necessarily removing it entirely.",
+      "examples": [
+        "Studying a little every night mitigated the stress of finals, so the last week didn't feel like a disaster.",
+        "Wearing a helmet doesn't prevent every crash, but it mitigates how badly you get hurt."
+      ]
+    },
+    {
+      "word": "sapped",
+      "partOfSpeech": "verb",
+      "articleQuote": "Reopening the Strait of Hormuz... would ease an energy crisis that has sapped economic growth and fueled inflation worldwide.",
+      "inContext": "Here the crisis slowly drained the world economy's strength — growth weakened bit by bit as expensive, hard-to-get energy wore it down.",
+      "meaning": "To sap something is to gradually drain or weaken it, using it up little by little rather than all at once.",
+      "examples": [
+        "The long bus ride and the heat sapped the team's energy before the game even started.",
+        "Scrolling on her phone until 2 a.m. sapped her focus for the entire next day."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Chokepoint",
+      "articleQuote": "The global economy avoided a severe shock despite the monthslong closure of the Strait of Hormuz, a critical energy conduit.",
+      "inContext": "The Strait of Hormuz is a narrow stretch of water that an enormous share of the world's oil shipments must pass through, so closing it threatened to disrupt energy for the whole planet.",
+      "meaning": "A chokepoint is a narrow passage that a large share of traffic, trade, or data has to squeeze through. Because so much depends on one small spot, blocking it causes problems far out of proportion to its size — which is why a handful of straits and canals (Hormuz, Suez, Panama, Malacca), and bottlenecks in supply chains and computer networks, hold outsized power over the systems that flow through them."
+    },
+    {
+      "name": "Strategic reserve (buffer stock)",
+      "articleQuote": "Major importers in Europe and Asia were well-stocked with strategic reserves... That gave many big economies a cushion to ride out the shock with only limited disruption.",
+      "inContext": "Countries had stored up extra oil ahead of time, so when supply was cut off they could draw down those stockpiles instead of immediately running short.",
+      "meaning": "A strategic reserve, or buffer stock, is a stored-up supply of something important that you build during good times so you can release it when a shortage hits. Governments do this with oil and grain, businesses do it with inventory, and people do it with savings — the basic idea is that a cushion of extra supply lets you absorb a sudden disruption instead of being forced into a crisis."
+    },
+    {
+      "name": "Supply shock",
+      "articleQuote": "The burden of the supply crunch fell more squarely on poorer countries that can't afford reserves... took steps to curb demand for oil with fuel rationing.",
+      "inContext": "The sudden squeeze on oil supplies drove prices up and forced shortages — and it hurt poorer countries most, since they couldn't lean on stockpiles and had to ration fuel instead.",
+      "meaning": "A supply shock is a sudden disruption to the available supply of a good — a war, a disaster, a blockage — that pushes its price up and tends to slow economic growth. Because the same shock hits everyone but the cushioned can absorb it and the unprepared can't, supply shocks usually land hardest on those with the fewest reserves."
+    },
+    {
+      "name": "Energy intensity",
+      "articleQuote": "One way to gauge how effectively economies are using energy is to calculate the amount of energy burned to generate a dollar of gross domestic product.",
+      "inContext": "Economists measured efficiency by asking how much energy it takes to produce one dollar of output; that number has fallen by about a third in the U.S. and Europe since 2000, which helped them weather the oil squeeze.",
+      "meaning": "Energy intensity is the amount of energy used per unit of output — energy divided by GDP. Turning a raw total into a ratio lets you compare efficiency fairly across countries and years, and a falling ratio shows an economy can keep growing while using less energy per dollar (called 'decoupling'), often by shifting from heavy manufacturing toward services and cleaner power."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did the closure of the Strait of Hormuz threaten the entire global economy rather than just one region?",
+      "options": [
+        "It is the only place in the world where oil is produced",
+        "It is a narrow passage that a large share of the world's oil must pass through",
+        "It is where most of the world's banks are located",
+        "It is the largest oil reserve on Earth"
+      ],
+      "answerIndex": 1,
+      "explanation": "The strait is a chokepoint — a narrow passage carrying a huge share of global oil — so blocking it disrupts energy far beyond the region itself."
+    },
+    {
+      "question": "According to the article, why did the supply crunch fall hardest on poorer countries like Bangladesh and Sri Lanka?",
+      "options": [
+        "They use far more oil than wealthy countries",
+        "They are located closest to the Strait of Hormuz",
+        "They couldn't afford strategic reserves to cushion the shock, so they had to ration fuel",
+        "They refused to buy oil from alternative suppliers"
+      ],
+      "answerIndex": 2,
+      "explanation": "Wealthier importers drew on stockpiled reserves, but poorer countries without that cushion had to curb demand through fuel rationing."
+    },
+    {
+      "question": "In the sentence \"the AI boom helped mitigate the economic harm,\" what does mitigate mean?",
+      "options": [
+        "Completely eliminate",
+        "Make less severe",
+        "Carefully measure",
+        "Slowly create"
+      ],
+      "answerIndex": 1,
+      "explanation": "To mitigate is to soften or ease something harmful — it makes the damage smaller, not necessarily gone."
+    },
+    {
+      "question": "What does \"energy intensity\" measure, and why has it been falling in the U.S., Europe, and China?",
+      "options": [
+        "How hot a power plant runs; it falls because of better cooling systems",
+        "The total amount of oil a country imports; it falls when prices rise",
+        "How much energy is used to produce a dollar of GDP; it falls as economies shift toward services and cleaner power",
+        "How quickly oil moves through a pipeline; it falls when pipes get older"
+      ],
+      "answerIndex": 2,
+      "explanation": "Energy intensity is energy used per dollar of output; it has dropped as economies moved from heavy manufacturing toward services and added renewables, letting them grow while using less energy."
+    },
+    {
+      "question": "How did the AI boom help offset the drag from the energy crisis?",
+      "options": [
+        "AI companies discovered new oil fields outside the Strait of Hormuz",
+        "Booming demand for chips and electronics drove up exports in Asian economies, propelling growth even as the oil squeeze hurt others",
+        "AI replaced oil as the main fuel for cars and factories",
+        "AI lowered the price of oil by predicting the crisis in advance"
+      ],
+      "answerIndex": 1,
+      "explanation": "Surging demand for the memory chips, machinery, and electronics behind the AI boom more than doubled Taiwan's exports and lifted other Asian economies, adding momentum while the oil squeeze dragged elsewhere."
+    }
+  ]
+}
