@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Link from "next/link";
+import AuthControl from "@/components/AuthControl";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,12 +28,15 @@ export default function RootLayout({
             <Link href="/" className="font-serif text-lg font-bold tracking-tight">
               WSJ Reading Club
             </Link>
-            <Link
-              href="/"
-              className="text-sm text-stone-500 transition hover:text-stone-900"
-            >
-              ← All readings
-            </Link>
+            <div className="flex items-center gap-4">
+              <Link
+                href="/"
+                className="text-sm text-stone-500 transition hover:text-stone-900"
+              >
+                ← All readings
+              </Link>
+              <AuthControl />
+            </div>
           </div>
         </header>
         <main className="mx-auto w-full max-w-3xl flex-1 px-5 py-10">

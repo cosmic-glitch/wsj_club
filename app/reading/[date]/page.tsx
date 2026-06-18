@@ -5,6 +5,7 @@ import {
   type VocabWord,
   type Concept,
 } from "@/lib/content";
+import VoiceQuiz from "@/components/VoiceQuiz";
 
 export function generateStaticParams() {
   return getAllReadings().map((r) => ({ date: r.date }));
@@ -59,6 +60,9 @@ export default async function ReadingPage({
           ))}
         </div>
       </Section>
+
+      {/* Beta: voice quiz (login-gated). Quietly at the bottom during testing. */}
+      <VoiceQuiz date={reading.date} title={reading.title} />
     </article>
   );
 }
