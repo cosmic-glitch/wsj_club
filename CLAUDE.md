@@ -30,8 +30,9 @@ components/Quiz.tsx                interactive client-side self-quiz
 components/VoiceQuiz.tsx           the "Quiz me out loud" WebRTC voice client (bottom of handout)
 components/AuthControl.tsx         header login/logout control
 lib/content.ts                    content types + loader + date helpers (the schema)
-lib/auth.ts                       tiny username/password auth + signed-cookie helpers
+lib/auth.ts                       login auth: bcrypt-hash verify + signed-cookie helpers
 lib/quiz-prompt.ts                builds the tutor's instructions + report prompt from a day's content
+scripts/hash-password.mjs         CLI: bcrypt-hash logins -> base64 AUTH_USERS value
 .claude/skills/wsj-pick-article/  the skill that scouts wsj.com and recommends the day's candidates
 .claude/skills/wsj-reading/       the skill that produces a day's content
 ```
@@ -55,7 +56,7 @@ Pages stay minimal. The **index** is just a stack of panels, one per day — no 
 
 A "Quiz me out loud" feature that automates the teacher's 1-1 oral quiz: a student clicks it at the bottom of a handout and an AI tutor (OpenAI **Realtime API**, speech-to-speech over **WebRTC**) quizzes them aloud about that day's article, then a report card is generated and saved. It's deliberately tucked at the bottom of the handout during testing.
 
-- **Auth gates it.** The whole site is public to browse, but starting a quiz requires login (a header **Log in** control). This is what stops the public from running up OpenAI charges. Credentials live in the `AUTH_USERS` env var (JSON `{"name":"password"}`); if unset it defaults to a single user **`test`/`hello123`**. Login sets a signed httpOnly cookie (HMAC with `AUTH_SECRET`). To onboard the four real students later, just set `AUTH_USERS` — no code change. `lib/auth.ts` is the auth core; `app/api/login|logout|me`.
+- **Auth gates it.** The whole site is public to browse, but starting a quiz requires login (a header **Log in** control). This is what stops the public from running up OpenAI charges. Credentials live in the `AUTH_USERS` env var: **base64-encoded JSON `{ username: bcryptHash }`**. Passwords are stored only as **bcrypt hashes** (bcryptjs, 10 salt rounds — same scheme as the foliotracker project), never plaintext, never in source; if `AUTH_USERS` is unset there are no users and **nobody can log in (fail closed)**. (Base64 because bcrypt hashes contain `$`, which Next's `.env` loader would expand.) Generate/extend the value with `node scripts/hash-password.mjs <user> <password> …` and set it as the env var. Login sets a signed httpOnly cookie (HMAC with `AUTH_SECRET`). To onboard the four real students, just regenerate `AUTH_USERS` with their names/passwords — no code change. `lib/auth.ts` is the auth core; `app/api/login|logout|me`.
 - **The flow** (`lib/quiz-prompt.ts`, `buildInstructions`): greet by name → ask the student to explain the article's **key ideas** → **vocabulary** (meaning or use-in-a-sentence for each of the 3 words) → **concepts** from the handout → short encouraging wrap-up. The day's vocab/concept *meanings* are injected as the tutor's answer key. A high-level **style guide** (Socratic, one question at a time, hint-don't-reveal, stay on-article) lives in `STYLE_GUIDE` in that file — tune it there.
 - **How it connects.** `components/VoiceQuiz.tsx` (client) picks the student's name, POSTs to `app/api/realtime-session` (which checks login, builds the instructions, and mints a short-lived OpenAI **ephemeral key** — the real `OPENAI_API_KEY` never reaches the browser), then opens a WebRTC session straight to OpenAI. On "End quiz" it POSTs the transcript to `app/api/quiz-report`, which grades it into a report card (a text model) and saves the whole session (transcript + report) to **Vercel Blob** under `quiz-sessions/<date>/`.
 - **Reviewing results.** `/admin` (login-gated) lists every saved session newest-first with score, report card, and full transcript.
@@ -74,7 +75,7 @@ Audience calibration lives in both skills; the article-first content rules live 
 
 GitHub `cosmic-glitch/wsj_club` (public) → Vercel project `wsj_club` (team *Anurag's projects*). **Push to `main` auto-deploys to production** at `wsjclub.vercel.app` — no manual `vercel --prod` needed. `npm run build` validates every content JSON locally.
 
-**Env vars** (for the voice quiz — set in Vercel project settings, and locally in the gitignored `.env.local`): `OPENAI_API_KEY` (required), `BLOB_READ_WRITE_TOKEN` (auto-added when a Vercel Blob store is linked; `vercel env pull` to get it locally), `AUTH_SECRET` (set a long random string in prod), and optionally `AUTH_USERS`, `REALTIME_MODEL`, `REALTIME_VOICE`, `REPORT_MODEL`. The voice quiz is inert (returns a clean error) until `OPENAI_API_KEY` is set; saving to Blob is best-effort and won't break a session if `BLOB_READ_WRITE_TOKEN` is missing.
+**Env vars** (for the voice quiz — set in Vercel project settings, and locally in the gitignored `.env.local`): `OPENAI_API_KEY` (required), `AUTH_USERS` (base64 bcrypt logins — see Voice quiz above; no login works without it), `AUTH_SECRET` (a long random string), `BLOB_READ_WRITE_TOKEN` (auto-added when a Vercel Blob store is linked; `vercel env pull` to get it locally), and optionally `REALTIME_MODEL`, `REALTIME_VOICE`, `REPORT_MODEL`. The voice quiz is inert (returns a clean error) until `OPENAI_API_KEY` is set; saving to Blob is best-effort and won't break a session if `BLOB_READ_WRITE_TOKEN` is missing.
 
 ## Commands
 

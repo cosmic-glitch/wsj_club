@@ -11,7 +11,7 @@ export async function POST(request: Request) {
   const username = (body.username ?? "").trim();
   const password = body.password ?? "";
 
-  if (!verifyCredentials(username, password)) {
+  if (!(await verifyCredentials(username, password))) {
     return Response.json({ error: "Wrong username or password" }, { status: 401 });
   }
 

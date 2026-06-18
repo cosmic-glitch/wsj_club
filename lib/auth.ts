@@ -1,38 +1,54 @@
 import crypto from "crypto";
+import bcrypt from "bcryptjs";
 import { cookies } from "next/headers";
 
 /**
  * Tiny username/password auth for the voice-quiz feature.
  *
- * This exists mostly to gate the paid Realtime API behind a login so the
- * public site can't run up OpenAI charges. It is deliberately simple:
+ * Exists to gate the paid Realtime API behind a login so the public site can't
+ * run up OpenAI charges.
  *
- * - Credentials live in the `AUTH_USERS` env var (JSON: {"name":"password"}).
- *   If unset, it defaults to a single test user `test`/`hello123`.
- * - A successful login sets an httpOnly cookie whose value is the username
- *   plus an HMAC signature (so it can't be forged without `AUTH_SECRET`).
+ * - Credentials live in the `AUTH_USERS` env var: a JSON map of
+ *   `{ username: bcryptHash }`, base64-encoded. Passwords are stored ONLY as
+ *   bcrypt hashes (the same scheme as the foliotracker project: bcryptjs, 10
+ *   salt rounds) — never in plaintext, never in source. Generate the value with
+ *   `node scripts/hash-password.mjs <user> <password> ...`.
+ * - If `AUTH_USERS` is unset, there are no users and nobody can log in (fail closed).
+ * - A successful login sets an httpOnly cookie: the username plus an HMAC
+ *   signature (`AUTH_SECRET`) so it can't be forged.
  *
- * To add the four real students later, just set `AUTH_USERS` to a JSON map of
- * their names → passwords — no code change needed.
+ * Why base64: bcrypt hashes contain `$`, which Next.js's `.env` loader expands
+ * as a variable reference. Base64-encoding the whole map sidesteps that and
+ * keeps the value identical between local `.env.local` and Vercel.
  */
 
 const COOKIE_NAME = "wsj_session";
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 
+/** username -> bcrypt hash, parsed from AUTH_USERS (base64-encoded JSON). */
 function getUsers(): Record<string, string> {
   const raw = process.env.AUTH_USERS;
-  if (raw) {
+  if (!raw) return {};
+  let text = raw.trim();
+  // Normally base64-encoded JSON; fall back to plain JSON if it already looks so.
+  if (!text.startsWith("{")) {
     try {
-      return JSON.parse(raw) as Record<string, string>;
+      const decoded = Buffer.from(text, "base64").toString("utf8").trim();
+      if (decoded.startsWith("{")) text = decoded;
     } catch {
-      console.error("AUTH_USERS is not valid JSON; falling back to default user");
+      /* not base64 — fall through */
     }
   }
-  return { test: "hello123" };
+  try {
+    return JSON.parse(text) as Record<string, string>;
+  } catch {
+    console.error("AUTH_USERS is not valid (base64-encoded) JSON");
+    return {};
+  }
 }
 
 function secret(): string {
-  // A stable default keeps local dev working; production should set AUTH_SECRET.
+  // A stable default keeps local dev working; production sets AUTH_SECRET.
   return process.env.AUTH_SECRET || "wsj-club-dev-secret-change-me";
 }
 
@@ -48,12 +64,18 @@ function safeEqual(a: string, b: string): boolean {
   return crypto.timingSafeEqual(ab, bb);
 }
 
-/** Check a username/password pair against the configured users. */
-export function verifyCredentials(username: string, password: string): boolean {
-  const users = getUsers();
-  const expected = users[username];
-  if (typeof expected !== "string") return false;
-  return safeEqual(password, expected);
+/** Check a username/password pair against the configured bcrypt hashes. */
+export async function verifyCredentials(
+  username: string,
+  password: string
+): Promise<boolean> {
+  const hash = getUsers()[username];
+  if (typeof hash !== "string") return false;
+  try {
+    return await bcrypt.compare(password, hash);
+  } catch {
+    return false;
+  }
 }
 
 /** The signed cookie value to store for a logged-in user. */
