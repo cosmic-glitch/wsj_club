@@ -1,0 +1,125 @@
+{
+  "date": "2026-06-18",
+  "title": "How Hackers Found a Back Door Into the American Living Room",
+  "articleUrl": "https://www.wsj.com/tech/cybersecurity/how-hackers-found-a-back-door-into-the-american-living-room-c117cb9f",
+  "pdfUrl": "/pdfs/2026-06-18.pdf",
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "nefarious",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Midnight Blizzard… had managed to access emails belonging to Microsoft's senior leadership by using consumer internet connections to mask nefarious traffic.",
+      "inContext": "Here it describes the hackers' internet activity as criminal and harmful — traffic carrying out attacks that the hackers wanted to keep hidden.",
+      "meaning": "Wicked, villainous, or criminal — done with evil intent.",
+      "examples": [
+        "In the movie, the nefarious scheme to drain everyone's bank accounts is foiled at the last second.",
+        "There was nothing nefarious about her late-night texts — she was just helping a friend study for the exam."
+      ]
+    },
+    {
+      "word": "conduit",
+      "partOfSpeech": "noun",
+      "articleQuote": "Residential proxy networks are now a go-to resource for nation-state hackers, who use them as a conduit to U.S. targets.",
+      "inContext": "The proxy networks act as a channel that the hackers' attacks pass through to reach victims inside the United States.",
+      "meaning": "A channel or pipe that carries something — water, electricity, information, or even influence — from one place to another.",
+      "examples": [
+        "The student council became the main conduit for getting kids' complaints to the principal.",
+        "A single underground conduit carried all the wiring for the new gym's lights and speakers."
+      ]
+    },
+    {
+      "word": "counterpart",
+      "partOfSpeech": "noun",
+      "articleQuote": "It started with a phone call made to Davis, from her counterpart at Microsoft, Igor Tsyganskiy, who wanted to know more about the six Comcast IP addresses.",
+      "inContext": "Tsyganskiy is Microsoft's top security official — the person who holds the same kind of job at Microsoft that Davis holds at Comcast.",
+      "meaning": "A person or thing that has the same role or function as another, but in a different place or organization.",
+      "examples": [
+        "Our team captain shook hands with her counterpart from the rival school before the match.",
+        "The English word \"autumn\" has a close counterpart in the American word \"fall.\""
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "IP address",
+      "articleQuote": "…needed information on six IP addresses, the internet's equivalent of a phone number.",
+      "inContext": "Microsoft handed Comcast six IP addresses; tracing who those numbers belonged to is how investigators started unraveling the whole operation.",
+      "meaning": "Every device on the internet has an IP address — a numeric label that identifies it and roughly where it is, so data knows where to go and where it came from. Like the article's phone-number comparison, it lets two machines find each other. It also leaves a trail: if your traffic shows a U.S. home's IP address, it looks like it came from that home — which is exactly what the hackers exploit."
+    },
+    {
+      "name": "Proxy (routing through an intermediary)",
+      "articleQuote": "Called residential proxy networks, these services let anyone who pays steer their internet traffic through an outside address. It's like an Airbnb for internet access.",
+      "inContext": "A hacker in Moscow can route their connection through a hijacked device in a U.S. home, so the target sees the American home, not Moscow.",
+      "meaning": "A proxy is a middleman that relays your request on your behalf, so the destination sees the middleman instead of you. It's the same idea behind a VPN, a web proxy at school, or even asking a friend to make a call for you. Used honestly it protects privacy; used by attackers it hides their real location and identity."
+    },
+    {
+      "name": "Attribution",
+      "articleQuote": "…state-sponsored Chinese hackers were using networks of hacked consumer devices to conduct their operations, \"making it challenging to attribute malicious activity.\"",
+      "inContext": "Because the attacks come through ordinary U.S. home devices, investigators struggle to prove which country or group is really behind them.",
+      "meaning": "Attribution is the work of figuring out who is truly responsible for an action when the trail has been disguised. It comes up everywhere people hide behind something else — anonymous online posts, forged documents, even cheating on an assignment. Bouncing traffic through innocent people's devices is powerful precisely because it breaks attribution: the evidence points at the wrong person."
+    },
+    {
+      "name": "Supply-chain compromise",
+      "articleQuote": "More low-cost consumer devices have shipped into the U.S. with backdoor software pre-installed, and this software is also being sneaked into mobile apps and… illegal copies of videogames.",
+      "inContext": "The harmful software isn't installed by a careless user later — it's already hidden inside the streaming box or app before it ever reaches the buyer.",
+      "meaning": "A supply chain is every step that makes and delivers a product to you. A supply-chain compromise is a threat slipped in somewhere along that chain — at the factory, in the software, or in a download — so the product arrives already dangerous. It's why security depends on trusting every link, not just the final user, and why a cheap gadget from an unknown maker can be a real risk."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is a \"residential proxy network,\" as described in the article?",
+      "options": [
+        "A neighborhood's shared Wi-Fi password",
+        "A service that routes someone's internet traffic through other people's home devices to hide where it really comes from",
+        "A faster internet plan sold to apartment buildings",
+        "A government program that monitors home internet use"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article compares it to \"an Airbnb for internet access\" — paying customers steer their traffic through outside (often home) addresses to mask their origin."
+    },
+    {
+      "question": "Why do nation-state hackers like Midnight Blizzard want to log in from U.S. home networks instead of from overseas?",
+      "options": [
+        "Home internet connections are faster than business ones",
+        "U.S. homes have weaker passwords",
+        "Logging in from a U.S. address looks normal, so security systems are less likely to ring alarm bells",
+        "It is cheaper than using their own servers"
+      ],
+      "answerIndex": 2,
+      "explanation": "Microsoft's servers would flag an overseas login, so the hackers route through U.S. home networks to blend in and avoid detection."
+    },
+    {
+      "question": "In the sentence \"they use them as a conduit to U.S. targets,\" what does conduit mean?",
+      "options": [
+        "A barrier that blocks access",
+        "A channel through which something passes",
+        "A reward or payment",
+        "A type of computer virus"
+      ],
+      "answerIndex": 1,
+      "explanation": "A conduit is a channel or pipe that carries something from one place to another — here, the path the attacks travel to reach victims."
+    },
+    {
+      "question": "The article says low-cost devices \"shipped into the U.S. with backdoor software pre-installed.\" This is an example of which concept?",
+      "options": [
+        "Attribution",
+        "A supply-chain compromise",
+        "An IP address",
+        "Loss aversion"
+      ],
+      "answerIndex": 1,
+      "explanation": "The threat is baked into the product before it reaches the buyer — a compromise somewhere along the chain that makes and delivers it."
+    },
+    {
+      "question": "Why does bouncing traffic through innocent people's home devices make \"attribution\" so difficult for investigators?",
+      "options": [
+        "It deletes all the evidence instantly",
+        "It makes the internet run too slowly to track",
+        "The activity appears to come from ordinary homes, so it's hard to prove who is really behind it",
+        "It encrypts the hackers' names"
+      ],
+      "answerIndex": 2,
+      "explanation": "Attribution is figuring out who is truly responsible; routing attacks through everyday U.S. devices points the evidence at the wrong people."
+    }
+  ]
+}
