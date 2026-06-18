@@ -52,10 +52,9 @@ export default function AuthControl() {
         setError(data.error ?? "Login failed");
         return;
       }
-      setUser(data.username);
-      setOpen(false);
-      setUsername("");
-      setPassword("");
+      // Reload so other components (e.g. the handout's voice quiz, which only
+      // appears once logged in) pick up the new session.
+      window.location.reload();
     } catch {
       setError("Login failed");
     } finally {
@@ -65,7 +64,7 @@ export default function AuthControl() {
 
   async function logout() {
     await fetch("/api/logout", { method: "POST" });
-    setUser(null);
+    window.location.reload();
   }
 
   if (!ready) return <span className="text-sm text-stone-300">·</span>;

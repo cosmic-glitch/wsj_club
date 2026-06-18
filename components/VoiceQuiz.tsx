@@ -170,7 +170,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // Stop the mic/connection if the component unmounts mid-session.
   useEffect(() => () => cleanupConnection(), []);
 
-  if (!ready) return null;
+  // The whole feature is hidden until login (login lives only in the top bar).
+  if (!ready || !user) return null;
 
   return (
     <section className="mt-16 border-t border-dashed border-stone-300 pt-8">
@@ -184,13 +185,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
         An AI tutor will quiz you by voice about “{title}.”
       </p>
 
-      {!user && (
-        <p className="mt-4 rounded-lg bg-amber-50 px-4 py-3 text-sm text-amber-800">
-          Log in (top right) to start your voice quiz.
-        </p>
-      )}
-
-      {user && phase === "idle" && (
+      {phase === "idle" && (
         <div className="mt-4 flex flex-wrap items-end gap-3">
           <label className="text-sm">
             <span className="mb-1 block text-stone-500">Your name</span>
