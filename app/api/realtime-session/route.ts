@@ -1,11 +1,17 @@
 import { currentUser } from "@/lib/auth";
 import { getReading } from "@/lib/content";
+import { getArticleText } from "@/lib/article-text";
 import { buildInstructions } from "@/lib/quiz-prompt";
 
 // The Realtime model + voice. Env-overridable so we can adjust if OpenAI
 // renames them without touching code.
 const REALTIME_MODEL = process.env.REALTIME_MODEL || "gpt-realtime-2";
 const REALTIME_VOICE = process.env.REALTIME_VOICE || "marin";
+
+// How eager the tutor is to take its turn. "low" lets the student speak
+// uninterrupted through long pauses, "um"s, and false starts — which is what we
+// want for kids articulating ideas from memory. (OpenAI semantic_vad setting.)
+const VAD_EAGERNESS = process.env.REALTIME_VAD_EAGERNESS || "low";
 
 /**
  * Mints a short-lived OpenAI Realtime ephemeral key for the browser to open a
@@ -36,7 +42,11 @@ export async function POST(request: Request) {
     return Response.json({ error: "Unknown reading." }, { status: 404 });
   }
 
-  const instructions = buildInstructions(reading, studentName);
+  // The full article text (private Blob) lets the tutor judge the student's
+  // from-memory retelling against the real story. Null for days without it →
+  // the tutor falls back to a handout-only quiz.
+  const articleText = await getArticleText(date);
+  const instructions = buildInstructions(reading, studentName, articleText);
 
   const res = await fetch("https://api.openai.com/v1/realtime/client_secrets", {
     method: "POST",
@@ -52,7 +62,9 @@ export async function POST(request: Request) {
         audio: {
           input: {
             transcription: { model: "whisper-1" },
-            turn_detection: { type: "server_vad" },
+            // semantic_vad waits until the student's *words* signal they're done,
+            // not just on silence — so it doesn't cut in during thinking pauses.
+            turn_detection: { type: "semantic_vad", eagerness: VAD_EAGERNESS },
           },
           output: { voice: REALTIME_VOICE },
         },

@@ -1,6 +1,7 @@
 import { put } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 import { getReading } from "@/lib/content";
+import { getArticleText } from "@/lib/article-text";
 import { buildReportPrompt } from "@/lib/quiz-prompt";
 
 const REPORT_MODEL = process.env.REPORT_MODEL || "gpt-4o-mini";
@@ -42,6 +43,7 @@ export async function POST(request: Request) {
   // Generate the report card from the transcript (best-effort).
   let report: unknown = null;
   if (transcript.length > 0 && process.env.OPENAI_API_KEY) {
+    const articleText = await getArticleText(date);
     try {
       const res = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
@@ -55,7 +57,12 @@ export async function POST(request: Request) {
           messages: [
             {
               role: "user",
-              content: buildReportPrompt(reading, studentName, transcriptToText(transcript)),
+              content: buildReportPrompt(
+                reading,
+                studentName,
+                transcriptToText(transcript),
+                articleText
+              ),
             },
           ],
         }),

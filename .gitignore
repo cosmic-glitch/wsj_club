@@ -44,6 +44,11 @@ next-env.d.ts
 # the day's file to public/pdfs/YYYY-MM-DD.pdf (which IS committed/served).
 /PDFs/
 
+# local article-text drop-zone — the full plain text of each day's article.
+# NEVER committed (this repo is public; don't republish WSJ text). It's uploaded
+# to private Vercel Blob via scripts/upload-article-text.mjs for the voice quiz.
+/article-text/
+
 # local test artifacts (browser screenshots from the wsj-reading skill)
 /index.png
 /reading.png

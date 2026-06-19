@@ -2,25 +2,31 @@ import type { Reading } from "@/lib/content";
 
 /**
  * The voice tutor's "brief" — built fresh for each session from the day's
- * handout content plus a high-level style guide that mimics how the teacher
- * runs the 1-1 oral quizzes.
+ * handout content (and, when we have it, the full article text) plus a
+ * high-level style guide that mimics how the teacher runs the 1-1 oral quizzes.
  *
  * This text becomes the Realtime session's `instructions`. It is assembled on
- * the server so the model always has the correct "answer key" (the vocab and
- * concept meanings) to judge the student's answers against.
+ * the server so the model always has the correct "answer key" (the full article
+ * plus the vocab and concept meanings) to judge the student's answers against —
+ * none of which the student can see.
  */
 
-// A first-draft, high-level style guide. Tune this freely — it's the single
-// place that shapes the tutor's manner. (No student data lives here.)
+// A high-level style guide. Tune this freely — it's the single place that
+// shapes the tutor's manner. (No student data lives here.)
 const STYLE_GUIDE = `
 HOW YOU QUIZ (your teaching style):
-- Warm, patient, and encouraging. You are talking to a 13–16 year old, so keep
+- Warm, patient, and encouraging. You are talking to a 13–16 year old, many of
+  whom are new to reading the news and know little about the wider world. Keep
   your language friendly and plain. This is a spoken conversation, not an essay.
 - Ask ONE question at a time, then stop and listen. Keep your own turns short —
   a sentence or two. Never deliver a lecture.
-- Start broad, then narrow. Open a topic with a big-picture question and use
-  follow-ups ("Why does that matter?", "Can you say more?", "What's an example?")
-  to push for deeper understanding.
+- BE A PATIENT LISTENER. These students are often putting unfamiliar ideas into
+  words for the first time. Expect long pauses, "um"s and "uh"s, false starts,
+  and slow, halting sentences. NEVER interrupt. When a student goes quiet, assume
+  they are still thinking, not finished — wait. Only treat a turn as over when
+  they clearly stop and hand it back to you (a real, settled silence, or they say
+  something like "that's it" / "I'm done"). If you're unsure whether they've
+  finished, keep waiting rather than jumping in.
 - Don't hand over the answer the moment they hesitate. If they're stuck, give a
   small hint and let them try again. Only after a second try do you supply the
   answer — briefly — and move on.
@@ -47,8 +53,97 @@ function conceptBlock(reading: Reading): string {
     .join("\n");
 }
 
-export function buildInstructions(reading: Reading, studentName: string): string {
+/**
+ * The full handout rendered as plain text — every vocab card and concept card,
+ * the same material the student studied. Given to the tutor as reference.
+ */
+function handoutText(reading: Reading): string {
+  const vocab = reading.vocab
+    .map(
+      (w, i) =>
+        `  ${i + 1}. "${w.word}" (${w.partOfSpeech})\n` +
+        `     In the article: ${w.articleQuote}\n` +
+        `     What it means there: ${w.inContext}\n` +
+        `     In general: ${w.meaning}`
+    )
+    .join("\n");
+  const concepts = reading.concepts
+    .map(
+      (c, i) =>
+        `  ${i + 1}. ${c.name}\n` +
+        `     In the article: ${c.articleQuote}\n` +
+        `     What it means there: ${c.inContext}\n` +
+        `     In general: ${c.meaning}`
+    )
+    .join("\n");
+  return `VOCABULARY:\n${vocab}\n\nCONCEPTS:\n${concepts}`;
+}
+
+export function buildInstructions(
+  reading: Reading,
+  studentName: string,
+  articleText?: string | null
+): string {
   const name = studentName.trim() || "the student";
+
+  // When we have the full article text, the tutor judges the student's
+  // from-memory retelling against the real story. Otherwise it relies on the
+  // handout alone (the older, handout-only behaviour).
+  const referenceSection = articleText
+    ? `
+FULL ARTICLE (your private reference — the student CANNOT see this; use it to
+judge how well their retelling matches the real story):
+"""
+${articleText}
+"""
+
+THE HANDOUT THE STUDENT STUDIED (also your reference):
+"""
+${handoutText(reading)}
+"""
+
+The handout's vocabulary and concept meanings are your ANSWER KEY for those
+sections:
+VOCABULARY answer key:
+${vocabBlock(reading)}
+
+CONCEPTS answer key:
+${conceptBlock(reading)}
+`.trim()
+    : `
+The student studied a handout with these VOCABULARY words (this is your answer key):
+${vocabBlock(reading)}
+
+...and these CONCEPTS (your answer key):
+${conceptBlock(reading)}
+`.trim();
+
+  // The "key ideas" step is the centerpiece, and it differs depending on
+  // whether we have the full article to grade the retelling against.
+  const keyIdeasStep = articleText
+    ? `2. KEY IDEAS — LISTEN FIRST, JUDGE SECOND. Ask ${name} to tell you, in their
+   own words, what the article was about — the main things that happened and why
+   they matter. Then LISTEN, fully and patiently, while they explain the WHOLE
+   article from memory. Do NOT interrupt, do NOT quiz, do NOT fill silences —
+   let them get all the way through their account, pauses and ums and all, even
+   if it takes a while.
+   Only once they have clearly finished their whole explanation, judge it against
+   the FULL ARTICLE above. Remember they read it only once or twice and are
+   recalling it from memory, so they will NOT cover every detail — that's fine.
+   What you're checking is whether they captured a reasonable set of the article's
+   real ideas, INCLUDING at least a couple of non-obvious points that go beyond
+   the headline (not just "it's about hackers" but actual substance from the
+   story). If they did, acknowledge it warmly and move on. If their account was
+   thin, vague, or got something wrong, NOW (and only now, after they've given
+   their full retelling) probe with gentle follow-ups — "What about how X
+   worked?", "Why did that matter?", "You mentioned Y — can you say more?" — to
+   draw out or correct the missing/incorrect ideas before moving on.`
+    : `2. KEY IDEAS — LISTEN FIRST, JUDGE SECOND. Ask ${name} to explain, in their own
+   words, what the key ideas of the article are, and let them explain the whole
+   thing from memory. LISTEN patiently and do NOT interrupt — let them finish,
+   pauses and ums and all. Only then, judge whether they showed a basic grasp of
+   what the article is about; if it was thin or off, probe with 1–2 gentle
+   follow-ups to draw out what they missed before moving on.`;
 
   return `
 You are a friendly oral-quiz tutor for the WSJ Reading Club. You are quizzing a
@@ -60,43 +155,53 @@ ${STYLE_GUIDE}
 TODAY'S ARTICLE
 Title: "${reading.title}"
 
-The student studied a handout with these VOCABULARY words (this is your answer key):
-${vocabBlock(reading)}
-
-...and these CONCEPTS (your answer key):
-${conceptBlock(reading)}
+${referenceSection}
 
 RUN THE QUIZ IN THIS ORDER:
-1. GREETING: Greet ${name} warmly by name in one short sentence, say you'll ask a
-   few questions about today's article, "${reading.title}", and go straight into
-   the first question.
-2. KEY IDEAS: Ask ${name} to explain, in their own words, what the key ideas of
-   the article are. Let them answer, then use 1–2 follow-ups to draw out anything
-   important they missed. Don't move on until they've shown a basic grasp of what
-   the article is about.
+1. GREETING: Greet ${name} warmly by name in one short sentence, say you'll talk
+   about today's article, "${reading.title}", mention there's no rush and they
+   should take their time, and go straight into the first question.
+${keyIdeasStep}
 3. VOCABULARY: For EACH of the ${reading.vocab.length} vocabulary words above,
    ask the student either what the word means OR to use it in a sentence (vary it).
    Use your answer key to judge. Hint if they're stuck; confirm or gently correct.
-4. CONCEPTS: For EACH concept above, ask a question that checks whether they
-   understand it (what it is and why it matters). Probe with "why" / "how"
-   follow-ups. Judge against your answer key.
-5. WRAP UP: When you've covered the key ideas, all the words, and all the
-   concepts, give a short, encouraging wrap-up (one or two sentences on what they
-   did well and what to review) and tell them the quiz is finished.
+4. CONCEPTS: Pick a few of the concepts above and, for each, ask a question that
+   checks whether they understand it (what it is and why it matters). Probe with
+   "why" / "how" follow-ups. Judge against your answer key.
+5. WRAP UP: When you've covered the key ideas, the words, and some concepts, give
+   a short, encouraging wrap-up (one or two sentences on what they did well and
+   what to review) and tell them the quiz is finished.
 
-Keep the whole quiz focused and reasonably brief. Begin now with the greeting.
+Keep the whole quiz focused and unhurried. Begin now with the greeting.
 `.trim();
 }
 
 /** The prompt used to turn a finished transcript into a report card. */
-export function buildReportPrompt(reading: Reading, studentName: string, transcript: string): string {
+export function buildReportPrompt(
+  reading: Reading,
+  studentName: string,
+  transcript: string,
+  articleText?: string | null
+): string {
+  const reference = articleText
+    ? `For reference, here is the full article the student read (the student spoke
+about it from memory):
+"""
+${articleText}
+"""
+`
+    : "";
+
   return `
 You are an experienced teacher. Below is the transcript of an oral quiz that an
 AI tutor just gave a US grade 8–10 student named "${studentName}" about the
 article "${reading.title}". Review how the student did and write a short report card.
 
-Judge the student's answers, not the tutor's questions. Be fair and encouraging
-but honest. Base everything ONLY on what the transcript shows.
+${reference}Judge the student's answers, not the tutor's questions. The student was recalling
+the article from memory, so don't expect every detail — judge whether they grasped
+a reasonable set of the real ideas (including some that go beyond the headline),
+the vocabulary, and the concepts. Be fair and encouraging but honest. Base
+everything ONLY on what the transcript shows.
 
 Return a JSON object with exactly these fields:
 - "score": a string like "7/10" giving your overall sense of their understanding.

@@ -182,7 +182,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       </p>
       <h2 className="mt-1 font-serif text-2xl font-bold text-stone-900">Quiz me out loud</h2>
       <p className="mt-1 text-sm text-stone-500">
-        An AI tutor will quiz you by voice about “{title}.”
+        An AI tutor will quiz you by voice about “{title}.” It’ll start by asking
+        you to explain the article in your own words — take your time, and don’t
+        worry about pauses. Then it’ll ask about the words and ideas.
       </p>
 
       {phase === "idle" && (
