@@ -58,8 +58,9 @@ export default function Home() {
 
           {/* The numbered steps. Single-article days read the one article in
               step 1; multi-article days get one "Read the Nth article" step per
-              article, then the same handout / quiz / 1-1 steps. The voice-quiz
-              step appears last, and only for logged-in users on voiceQuiz days. */}
+              article, then the same handout / quiz steps. The last step pairs the
+              1-1 quiz with the AI voice quiz as alternatives in one bullet; the
+              voice half shows only for logged-in users on voiceQuiz days. */}
           <ol className="mt-4 list-decimal space-y-1.5 pl-5 text-stone-700 marker:font-semibold marker:text-stone-400">
             {r.articles && r.articles.length > 0 ? (
               r.articles.map((a, i) => (
@@ -102,8 +103,11 @@ export default function Home() {
               >
                 1-1 quiz
               </a>
+              {/* The 1-1 quiz and the AI voice quiz are alternatives — you do
+                  one or the other — so they share a single bullet. The voice
+                  half is login-gated + voiceQuiz-only, appended inline. */}
+              {r.voiceQuiz && <VoiceQuizStep date={r.date} title={r.title} />}
             </li>
-            {r.voiceQuiz && <VoiceQuizStep date={r.date} title={r.title} />}
           </ol>
         </li>
       ))}
