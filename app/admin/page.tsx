@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { list } from "@vercel/blob";
-import { currentUser } from "@/lib/auth";
+import { currentUser, isAdmin, adminConfigured } from "@/lib/auth";
 
 // Reads cookies + Blob at request time — never static.
 export const dynamic = "force-dynamic";
@@ -49,12 +49,19 @@ async function loadSessions(): Promise<Session[] | { error: string }> {
 
 export default async function AdminPage() {
   const user = await currentUser();
-  if (!user) {
+
+  // Teacher-only. Students can log in for the voice quiz but never reach here.
+  if (!isAdmin(user)) {
+    const message = !user
+      ? "Please log in (top right) as a teacher to view saved quiz sessions."
+      : !adminConfigured()
+        ? "This page is teacher-only, but no teachers are configured yet. Set the ADMIN_USERS env var to your username (comma-separated for more than one) and redeploy."
+        : "This page is for teachers only.";
     return (
       <div>
         <h1 className="font-serif text-3xl font-bold text-stone-900">Quiz sessions</h1>
         <p className="mt-4 rounded-lg bg-amber-50 px-4 py-3 text-sm text-amber-800">
-          Please log in (top right) to view saved quiz sessions.
+          {message}
         </p>
       </div>
     );

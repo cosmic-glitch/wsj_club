@@ -4,33 +4,33 @@ import { useEffect, useRef, useState } from "react";
 
 type Turn = { role: "student" | "tutor"; text: string };
 
-type Report = {
-  score?: string;
-  summary?: string;
-  strengths?: string[];
-  gaps?: string[];
-  keyIdeas?: string;
-  vocab?: string;
-  concepts?: string;
-};
-
-type Phase = "idle" | "connecting" | "live" | "ending" | "done";
+type Phase =
+  | "idle" // modal closed
+  | "needLogin" // clicked while logged out
+  | "connecting"
+  | "live"
+  | "ending"
+  | "done"
+  | "error";
 
 /**
- * The "Quiz me" voice feature: opens a WebRTC speech-to-speech session with the
- * OpenAI Realtime API so an AI tutor quizzes the student aloud about the day's
- * article. Login-gated (the token endpoint checks the session cookie). On hang-up
- * the transcript is sent to the server, graded into a report card, and saved.
+ * The "Voice quiz" launcher in the home-page table. Clicking it:
+ *   - logged out → a small "You need to log in" popup;
+ *   - logged in  → opens a modal and immediately starts a WebRTC
+ *     speech-to-speech session with the OpenAI Realtime API, so an AI tutor
+ *     quizzes the student aloud about that day's article.
  *
- * During the testing phase this lives quietly at the bottom of the handout page.
+ * The transcript is captured and, on "End quiz", POSTed to the server, which
+ * grades it into a report card and saves both to Vercel Blob for the teacher to
+ * review on /admin. The student deliberately sees NEITHER the live transcript
+ * NOR the report card — only a "saved for your teacher" confirmation.
  */
 export default function VoiceQuiz({ date, title }: { date: string; title: string }) {
+  // Login state is fetched on mount; login/logout both reload the page, so this
+  // stays fresh. Checking it here (not on click) keeps the click a clean user
+  // gesture for getUserMedia / audio autoplay.
   const [user, setUser] = useState<string | null>(null);
-  const [ready, setReady] = useState(false);
-  const [studentName, setStudentName] = useState("");
   const [phase, setPhase] = useState<Phase>("idle");
-  const [transcript, setTranscript] = useState<Turn[]>([]);
-  const [report, setReport] = useState<Report | null>(null);
   const [error, setError] = useState("");
 
   const pcRef = useRef<RTCPeerConnection | null>(null);
@@ -41,19 +41,16 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   useEffect(() => {
     fetch("/api/me")
       .then((r) => r.json())
-      .then((d) => {
-        setUser(d.username ?? null);
-        if (d.username) setStudentName(d.username);
-      })
-      .catch(() => setUser(null))
-      .finally(() => setReady(true));
+      .then((d) => setUser(d.username ?? null))
+      .catch(() => setUser(null));
   }, []);
 
   function pushTurn(turn: Turn) {
     transcriptRef.current = [...transcriptRef.current, turn];
-    setTranscript(transcriptRef.current);
   }
 
+  // The transcript is captured for the teacher's record, not shown to the
+  // student.
   function handleEvent(raw: string) {
     let evt: { type?: string; transcript?: string };
     try {
@@ -81,8 +78,6 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
   async function start() {
     setError("");
-    setReport(null);
-    setTranscript([]);
     transcriptRef.current = [];
     setPhase("connecting");
 
@@ -95,7 +90,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       const tokenRes = await fetch("/api/realtime-session", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ date, studentName }),
+        body: JSON.stringify({ date, studentName: user }),
       });
       const tokenData = await tokenRes.json();
       if (!tokenRes.ok) {
@@ -144,198 +139,173 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     } catch (err) {
       cleanupConnection();
       setError(err instanceof Error ? err.message : "Something went wrong.");
-      setPhase("idle");
+      setPhase("error");
     }
+  }
+
+  // The button click — preserves the user gesture (no awaits before start()).
+  function launch() {
+    if (!user) {
+      setPhase("needLogin");
+      return;
+    }
+    start();
   }
 
   async function end() {
     setPhase("ending");
     cleanupConnection();
     try {
-      const res = await fetch("/api/quiz-report", {
+      // Grade + save (transcript + report card) to Blob for the teacher. The
+      // returned report is intentionally not shown to the student.
+      await fetch("/api/quiz-report", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ date, studentName, transcript: transcriptRef.current }),
+        body: JSON.stringify({ date, studentName: user, transcript: transcriptRef.current }),
       });
-      const data = await res.json();
-      setReport(data.report ?? null);
     } catch {
-      // The session still happened; just no report.
-      setReport(null);
+      // The session still happened; saving is best-effort.
     } finally {
       setPhase("done");
     }
   }
 
+  function close() {
+    cleanupConnection();
+    setPhase("idle");
+    setError("");
+    transcriptRef.current = [];
+  }
+
   // Stop the mic/connection if the component unmounts mid-session.
   useEffect(() => () => cleanupConnection(), []);
 
-  // The whole feature is hidden until login (login lives only in the top bar).
-  if (!ready || !user) return null;
+  const modalOpen = phase !== "idle";
+  // While the session is live we don't let a stray backdrop click drop the call.
+  const dismissable = phase === "needLogin" || phase === "done" || phase === "error";
 
   return (
-    <section className="mt-16 border-t border-dashed border-stone-300 pt-8">
-      <audio ref={audioRef} autoPlay className="hidden" />
+    <>
+      <button
+        type="button"
+        onClick={launch}
+        className="rounded-lg bg-sky-700 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-sky-800"
+      >
+        Voice quiz
+      </button>
 
-      <p className="text-xs font-semibold uppercase tracking-wide text-stone-400">
-        Beta · voice quiz
-      </p>
-      <h2 className="mt-1 font-serif text-2xl font-bold text-stone-900">Quiz me out loud</h2>
-      <p className="mt-1 text-sm text-stone-500">
-        An AI tutor will quiz you by voice about “{title}.” It’ll start by asking
-        you to explain the article in your own words — take your time, and don’t
-        worry about pauses. Then it’ll ask about the words and ideas.
-      </p>
-
-      {phase === "idle" && (
-        <div className="mt-4 flex flex-wrap items-end gap-3">
-          <label className="text-sm">
-            <span className="mb-1 block text-stone-500">Your name</span>
-            <input
-              type="text"
-              value={studentName}
-              onChange={(e) => setStudentName(e.target.value)}
-              className="rounded-lg border border-stone-300 px-3 py-2 text-sm focus:border-stone-500 focus:outline-none"
-            />
-          </label>
-          <button
-            type="button"
-            onClick={start}
-            className="rounded-lg bg-sky-700 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-sky-800"
+      {modalOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900/40 p-4"
+          onClick={() => {
+            if (dismissable) close();
+          }}
+        >
+          <div
+            className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl"
+            onClick={(e) => e.stopPropagation()}
           >
-            Start voice quiz
-          </button>
-        </div>
-      )}
+            <audio ref={audioRef} autoPlay className="hidden" />
 
-      {error && <p className="mt-3 text-sm text-red-600">{error}</p>}
+            {phase === "needLogin" && (
+              <div>
+                <h2 className="font-serif text-xl font-bold text-stone-900">
+                  You need to log in
+                </h2>
+                <p className="mt-2 text-sm text-stone-600">
+                  Please log in first (the “Log in” button at the top right), then
+                  start the voice quiz.
+                </p>
+                <button
+                  type="button"
+                  onClick={close}
+                  className="mt-5 rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50"
+                >
+                  Close
+                </button>
+              </div>
+            )}
 
-      {phase === "connecting" && (
-        <p className="mt-4 text-sm text-stone-500">Connecting… allow microphone access.</p>
-      )}
+            {phase === "connecting" && (
+              <div>
+                <h2 className="font-serif text-xl font-bold text-stone-900">
+                  Starting your voice quiz…
+                </h2>
+                <p className="mt-2 text-sm text-stone-500">
+                  Connecting — please allow microphone access when your browser asks.
+                </p>
+              </div>
+            )}
 
-      {phase === "live" && (
-        <div className="mt-4">
-          <div className="flex items-center gap-3">
-            <span className="flex h-3 w-3 animate-pulse rounded-full bg-red-500" />
-            <span className="text-sm font-medium text-stone-700">
-              Live — just talk. The tutor is listening.
-            </span>
-            <button
-              type="button"
-              onClick={end}
-              className="ml-auto rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50"
-            >
-              End quiz
-            </button>
+            {phase === "live" && (
+              <div>
+                <div className="flex items-center gap-3">
+                  <span className="flex h-3 w-3 animate-pulse rounded-full bg-red-500" />
+                  <h2 className="font-serif text-xl font-bold text-stone-900">
+                    Live — just talk
+                  </h2>
+                </div>
+                <p className="mt-2 text-sm text-stone-600">
+                  Your tutor is quizzing you about “{title}.” Speak naturally and
+                  take your time — there’s no rush, and pauses are fine.
+                </p>
+                <button
+                  type="button"
+                  onClick={end}
+                  className="mt-5 rounded-lg bg-stone-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-700"
+                >
+                  End quiz
+                </button>
+              </div>
+            )}
+
+            {phase === "ending" && (
+              <div>
+                <h2 className="font-serif text-xl font-bold text-stone-900">
+                  Wrapping up…
+                </h2>
+                <p className="mt-2 text-sm text-stone-500">
+                  Saving your quiz for your teacher.
+                </p>
+              </div>
+            )}
+
+            {phase === "done" && (
+              <div>
+                <h2 className="font-serif text-xl font-bold text-stone-900">
+                  All done — nice work!
+                </h2>
+                <p className="mt-2 text-sm text-stone-600">
+                  Your quiz has been saved for your teacher to review.
+                </p>
+                <button
+                  type="button"
+                  onClick={close}
+                  className="mt-5 rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50"
+                >
+                  Close
+                </button>
+              </div>
+            )}
+
+            {phase === "error" && (
+              <div>
+                <h2 className="font-serif text-xl font-bold text-stone-900">
+                  Couldn’t start the quiz
+                </h2>
+                <p className="mt-2 text-sm text-red-600">{error}</p>
+                <button
+                  type="button"
+                  onClick={close}
+                  className="mt-5 rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50"
+                >
+                  Close
+                </button>
+              </div>
+            )}
           </div>
         </div>
       )}
-
-      {phase === "ending" && (
-        <p className="mt-4 text-sm text-stone-500">Wrapping up and grading…</p>
-      )}
-
-      {/* Live / final transcript */}
-      {transcript.length > 0 && (
-        <div className="mt-5 space-y-2">
-          {transcript.map((t, i) => (
-            <p key={i} className="text-sm">
-              <span
-                className={
-                  t.role === "tutor"
-                    ? "font-semibold text-sky-700"
-                    : "font-semibold text-stone-700"
-                }
-              >
-                {t.role === "tutor" ? "Tutor" : studentName || "You"}:{" "}
-              </span>
-              <span className="text-stone-600">{t.text}</span>
-            </p>
-          ))}
-        </div>
-      )}
-
-      {phase === "done" && (
-        <div className="mt-6">
-          {report ? <ReportCard report={report} /> : (
-            <p className="text-sm text-stone-500">Quiz finished. (No report was generated.)</p>
-          )}
-          <button
-            type="button"
-            onClick={() => {
-              setPhase("idle");
-              setReport(null);
-              setTranscript([]);
-              transcriptRef.current = [];
-            }}
-            className="mt-4 rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50"
-          >
-            Quiz again
-          </button>
-        </div>
-      )}
-    </section>
-  );
-}
-
-function ReportCard({ report }: { report: Report }) {
-  return (
-    <div className="rounded-xl border border-stone-200 bg-white p-5 shadow-sm">
-      <div className="flex items-baseline justify-between">
-        <h3 className="font-serif text-xl font-bold text-stone-900">Report card</h3>
-        {report.score && (
-          <span className="text-lg font-bold text-sky-700">{report.score}</span>
-        )}
-      </div>
-      {report.summary && <p className="mt-2 text-stone-700">{report.summary}</p>}
-
-      {report.strengths && report.strengths.length > 0 && (
-        <div className="mt-3">
-          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
-            Strengths
-          </p>
-          <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-700">
-            {report.strengths.map((s, i) => (
-              <li key={i}>{s}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      {report.gaps && report.gaps.length > 0 && (
-        <div className="mt-3">
-          <p className="text-xs font-semibold uppercase tracking-wide text-amber-600">
-            To review
-          </p>
-          <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-700">
-            {report.gaps.map((s, i) => (
-              <li key={i}>{s}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      <div className="mt-3 space-y-1 text-sm text-stone-600">
-        {report.keyIdeas && (
-          <p>
-            <span className="font-semibold text-stone-500">Key ideas: </span>
-            {report.keyIdeas}
-          </p>
-        )}
-        {report.vocab && (
-          <p>
-            <span className="font-semibold text-stone-500">Vocabulary: </span>
-            {report.vocab}
-          </p>
-        )}
-        {report.concepts && (
-          <p>
-            <span className="font-semibold text-stone-500">Concepts: </span>
-            {report.concepts}
-          </p>
-        )}
-      </div>
-    </div>
+    </>
   );
 }

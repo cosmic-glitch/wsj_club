@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 /**
  * The login/logout control in the header. Fetches the current login state from
@@ -9,6 +10,7 @@ import { useEffect, useRef, useState } from "react";
  */
 export default function AuthControl() {
   const [user, setUser] = useState<string | null>(null);
+  const [admin, setAdmin] = useState(false);
   const [ready, setReady] = useState(false);
   const [open, setOpen] = useState(false);
   const [username, setUsername] = useState("");
@@ -20,7 +22,10 @@ export default function AuthControl() {
   useEffect(() => {
     fetch("/api/me")
       .then((r) => r.json())
-      .then((d) => setUser(d.username ?? null))
+      .then((d) => {
+        setUser(d.username ?? null);
+        setAdmin(Boolean(d.isAdmin));
+      })
       .catch(() => setUser(null))
       .finally(() => setReady(true));
   }, []);
@@ -71,7 +76,15 @@ export default function AuthControl() {
 
   if (user) {
     return (
-      <div className="flex items-center gap-2 text-sm">
+      <div className="flex items-center gap-3 text-sm">
+        {admin && (
+          <Link
+            href="/admin"
+            className="text-stone-500 transition hover:text-stone-900"
+          >
+            Admin
+          </Link>
+        )}
         <span className="text-stone-500">
           Hi, <span className="font-medium text-stone-800">{user}</span>
         </span>

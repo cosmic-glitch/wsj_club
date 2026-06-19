@@ -102,6 +102,32 @@ export async function currentUser(): Promise<string | null> {
   return readSessionToken(store.get(COOKIE_NAME)?.value);
 }
 
+/**
+ * Teacher/admin access for the `/admin` portal (report cards + transcripts).
+ *
+ * The teacher's usernames live in the `ADMIN_USERS` env var: a comma-separated
+ * list (e.g. `ADMIN_USERS=teacher,anurag`). Every name must also be a real login
+ * in `AUTH_USERS`. If `ADMIN_USERS` is unset, NOBODY is an admin (fail closed) —
+ * so students who log in for the voice quiz still can't reach `/admin`.
+ */
+function getAdminUsers(): string[] {
+  return (process.env.ADMIN_USERS || "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+/** Whether ADMIN_USERS has been configured at all (used for setup hints). */
+export function adminConfigured(): boolean {
+  return getAdminUsers().length > 0;
+}
+
+/** Whether the given username is a teacher/admin. Fail closed (null → false). */
+export function isAdmin(username: string | null): boolean {
+  if (!username) return false;
+  return getAdminUsers().includes(username);
+}
+
 /** Set the session cookie for `username` on the cookie store. */
 export async function setSessionCookie(username: string): Promise<void> {
   const store = await cookies();

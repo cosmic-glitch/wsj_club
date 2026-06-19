@@ -54,6 +54,7 @@ export type Reading = {
   articleUrl?: string; // single-article days: the WSJ article link (the "Web" link)
   pdfUrl?: string; // single-article days: served PDF, e.g. "/pdfs/2026-06-09.pdf"
   articles?: Source[]; // multi-article days: when set, the entry bundles these (top-level articleUrl/pdfUrl unused)
+  voiceQuiz?: boolean; // when true, the home-page "Voice quiz" column shows a launcher for this day (today + future days; the skill sets it)
   source?: string; // e.g. "The Wall Street Journal"
   vocab: VocabWord[];
   concepts: Concept[];
