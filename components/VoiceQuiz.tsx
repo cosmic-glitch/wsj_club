@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { upload } from "@vercel/blob/client";
 
 type Turn = { role: "student" | "tutor"; text: string };
 
@@ -307,15 +308,28 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     cleanupConnection();
 
     // Upload the recording (best-effort) and link it from the saved session.
+    // We upload straight from the browser to Blob via the client `upload()` flow
+    // (/api/quiz-audio just mints an auth-gated token) so the bytes don't pass
+    // through our serverless function — a full-length recording would otherwise
+    // exceed the ~4.5MB request-body limit and 413.
     let audioUrl: string | undefined;
     if (audioBlob && audioBlob.size > 0) {
       try {
-        const fd = new FormData();
-        fd.append("audio", audioBlob, "quiz");
-        fd.append("date", date);
-        fd.append("studentName", user ?? "");
-        const r = await fetch("/api/quiz-audio", { method: "POST", body: fd });
-        if (r.ok) audioUrl = (await r.json()).url;
+        const ext = audioBlob.type.includes("mp4") ? "mp4" : "webm";
+        const safeName = (user ?? "student")
+          .replace(/[^a-zA-Z0-9_-]+/g, "-")
+          .toLowerCase();
+        const blob = await upload(
+          `quiz-sessions/${date}/${safeName}.${ext}`,
+          audioBlob,
+          {
+            access: "public",
+            handleUploadUrl: "/api/quiz-audio",
+            contentType: ext === "mp4" ? "audio/mp4" : "audio/webm",
+            clientPayload: JSON.stringify({ date }),
+          }
+        );
+        audioUrl = blob.url;
       } catch {
         // No recording link — the transcript + report still save below.
       }
