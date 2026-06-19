@@ -22,8 +22,9 @@ type Phase =
  *
  * The transcript is captured and, on "End quiz", POSTed to the server, which
  * grades it into a report card and saves both to Vercel Blob for the teacher to
- * review on /admin. The student deliberately sees NEITHER the live transcript
- * NOR the report card — only a "saved for your teacher" confirmation.
+ * review on /admin. The student does NOT see the live transcript or the full
+ * report card — but at the end they ARE shown their overall score (just the
+ * number) plus an invitation to retake the quiz if they're not happy with it.
  *
  * The whole conversation is ALSO recorded as audio: both the student's mic and
  * the tutor's voice are already live MediaStreams in the browser, so we mix them
@@ -39,6 +40,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   const [user, setUser] = useState<string | null>(null);
   const [phase, setPhase] = useState<Phase>("idle");
   const [error, setError] = useState("");
+  // The graded score (e.g. "8/10"), shown to the student on the done screen.
+  // null until the report comes back; "—" means there was nothing to grade.
+  const [score, setScore] = useState<string | null>(null);
 
   const pcRef = useRef<RTCPeerConnection | null>(null);
   const micRef = useRef<MediaStream | null>(null);
@@ -197,6 +201,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
   async function start() {
     setError("");
+    setScore(null);
     transcriptRef.current = [];
     endStartedRef.current = false;
     endRequestedRef.current = false;
@@ -318,8 +323,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
     try {
       // Grade + save (transcript + report card + audio link) to Blob for the
-      // teacher. The returned report is intentionally not shown to the student.
-      await fetch("/api/quiz-report", {
+      // teacher. We keep the full report card private, but DO surface the
+      // overall score to the student on the done screen.
+      const res = await fetch("/api/quiz-report", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -329,6 +335,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           audioUrl,
         }),
       });
+      const data = await res.json().catch(() => null);
+      const s = data?.report?.score;
+      if (typeof s === "string" && s.trim()) setScore(s.trim());
     } catch {
       // The session still happened; saving is best-effort.
     } finally {
@@ -340,6 +349,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     cleanupConnection();
     setPhase("idle");
     setError("");
+    setScore(null);
     transcriptRef.current = [];
     endStartedRef.current = false;
     endRequestedRef.current = false;
@@ -447,9 +457,25 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                 <h2 className="font-serif text-xl font-bold text-stone-900">
                   All done — nice work!
                 </h2>
-                <p className="mt-2 text-sm text-stone-600">
-                  Your quiz has been saved for your teacher to review.
-                </p>
+                {score && score !== "—" ? (
+                  <>
+                    <p className="mt-3 text-sm text-stone-600">
+                      Your score:{" "}
+                      <span className="text-lg font-bold text-sky-700">
+                        {score}
+                      </span>
+                    </p>
+                    <p className="mt-2 text-sm text-stone-600">
+                      Your quiz has been saved for your teacher. If you’re not
+                      happy with your score, you can always take the quiz again.
+                    </p>
+                  </>
+                ) : (
+                  <p className="mt-2 text-sm text-stone-600">
+                    Your quiz has been saved for your teacher. You can take the
+                    quiz again any time if you’d like.
+                  </p>
+                )}
                 <button
                   type="button"
                   onClick={close}
