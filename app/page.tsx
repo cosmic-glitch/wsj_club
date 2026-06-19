@@ -80,6 +80,7 @@ export default function Home() {
             <th className="px-4 py-3">Title</th>
             <th className="px-4 py-3">Article</th>
             <th className="px-4 py-3">Handout</th>
+            <th className="px-4 py-3">Self-quiz</th>
             <th className="px-4 py-3">Voice quiz</th>
           </tr>
         </thead>
@@ -101,6 +102,11 @@ export default function Home() {
               <td className="whitespace-nowrap px-4 py-4">
                 <Link href={`/reading/${r.date}`} className={linkClass}>
                   Handout
+                </Link>
+              </td>
+              <td className="whitespace-nowrap px-4 py-4">
+                <Link href={`/reading/${r.date}/quiz`} className={linkClass}>
+                  Self-quiz
                 </Link>
               </td>
               <td className="px-4 py-4">
