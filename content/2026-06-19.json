@@ -1,0 +1,132 @@
+{
+  "date": "2026-06-19",
+  "title": "The Coming El Niño Could Be the Strongest Ever Recorded",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/06/16/the-coming-el-nino-could-be-the-strongest-ever-recorded",
+  "pdfUrl": "/pdfs/2026-06-19.pdf",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "baleful",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Similarly baleful effects are possible this time, too.",
+      "inContext": "Here it describes the harm a strong El Niño could do — droughts, floods, and hunger. \"Baleful effects\" are damaging, threatening ones.",
+      "meaning": "Menacing or harmful; full of the threat of doing damage.",
+      "examples": [
+        "She shot a baleful glare at the player who had just elbowed her teammate.",
+        "The coach warned that skipping practice all week would have baleful effects on Friday's game."
+      ]
+    },
+    {
+      "word": "parched",
+      "partOfSpeech": "adjective",
+      "articleQuote": "...water cannot sink fast enough into parched soil.",
+      "inContext": "The ground is so dried out by drought that rain runs off the surface instead of soaking in.",
+      "meaning": "Extremely dry, drained of moisture — said of land, or of a person who is very thirsty.",
+      "examples": [
+        "After running the whole mile in the heat, I was parched and gulped down two bottles of water.",
+        "The lawn turned brown and parched during the long August without rain."
+      ]
+    },
+    {
+      "word": "fodder",
+      "partOfSpeech": "noun",
+      "articleQuote": "...storing fodder and water for livestock.",
+      "inContext": "Fodder is the food — hay, grain, dried grass — that farmers store to feed cattle and other animals through a drought.",
+      "meaning": "Food for farm animals; and, figuratively, raw material that gets used up for some purpose (\"fodder for gossip,\" \"fodder for jokes\").",
+      "examples": [
+        "The farmer stacked bales of hay as winter fodder for the cows.",
+        "His embarrassing trip in the hallway became fodder for a week of teasing."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "El Niño — an ocean–atmosphere climate pattern",
+      "articleQuote": "El Niño is driven by a shift in the winds above the eastern Pacific, which draws a band of warmer-than-average surface water into the \"Niño 3.4\" region.",
+      "inContext": "In the article, El Niño is the recurring event that begins when Pacific winds weaken and warm water builds up at the surface, which then shifts weather around the globe.",
+      "meaning": "El Niño is a natural pattern that returns every few years. Normally, winds push warm surface water toward the western Pacific; when those winds slacken, the warm water spreads east. Because the ocean and the atmosphere constantly trade heat and moisture, that warm patch nudges rainfall, storms, and temperatures worldwide. Its cool opposite — when the eastern Pacific runs colder than usual — is called La Niña. The pair are background knowledge that turns up in weather forecasts and climate news again and again."
+    },
+    {
+      "name": "Teleconnection — distant places linked through one system",
+      "articleQuote": "The sheer size of the Pacific, and the interconnectedness of the world's weather systems, means that each El Niño causes a vast redistribution of heat and moisture across the planet.",
+      "inContext": "A warm patch in the Pacific doesn't stay local — it reorganizes weather thousands of miles away, parching southern Africa while drenching somewhere else.",
+      "meaning": "In any connected system, a change in one part can produce effects far away, through the links that tie the parts together. Scientists call these long-distance weather links \"teleconnections,\" but the idea is general: because the world's air and oceans form one linked system, pushing on it in one spot ripples outward. The same logic shows up beyond weather — a bank failing in one country can shake markets across the world, or removing one species can change an entire food web."
+    },
+    {
+      "name": "Anomaly vs. a baseline",
+      "articleQuote": "Anything above a 2°C rise over the long-run average is considered strong.",
+      "inContext": "Scientists don't rate an El Niño by the raw water temperature; they measure how far above the normal long-term average it climbs.",
+      "meaning": "An anomaly is the gap between what you measure and a baseline — a normal or average value you compare against. Reporting \"2°C above the long-run average,\" or heat records \"above pre-industrial levels,\" is far more meaningful than a bare number, because it tells you how unusual something is. You use the same move whenever you say a test score was \"20 points above your average\" or a player is \"hitting better than his career norm\": the baseline is what makes the change make sense."
+    },
+    {
+      "name": "Amplifying / compounding effects",
+      "articleQuote": "El Niño is not caused by climate change. But the two phenomena amplify each other's effects.",
+      "inContext": "El Niño and long-term global warming are separate things, but when they line up, each makes the other's heat worse — helping push years like 2016 and 2024 to record highs.",
+      "meaning": "To amplify is to make something bigger or stronger. When two separate forces amplify each other, the combined result is larger than either one alone — a compounding effect. The same idea explains why troubles tend to pile up: a food shortage plus an ongoing war leaves people far worse off than either would on its own, which is why El Niño hits hardest where hunger and conflict already exist."
+    },
+    {
+      "name": "Same cause, opposite effect depending on conditions",
+      "articleQuote": "...instead of providing relief, heavy rainfall after a long drought can cause floods, because water cannot sink fast enough into parched soil.",
+      "inContext": "You'd expect rain to end a drought, but on baked, parched ground it sheets off the surface and floods instead of soaking in — relief and disaster from the very same rain.",
+      "meaning": "The effect of an action often depends on the state of the system it lands on, so the same cause can produce opposite results. Rain on normal soil soaks in; the very same rain on parched soil floods. The lesson is general: before predicting what something will do, check the current conditions — the same push can help in one situation and harm in another, the way a big meal helps when you're hungry but hurts right before a race."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "How do scientists measure the strength of a particular El Niño?",
+      "options": [
+        "By the number of anchovies that disappear from the Pacific",
+        "By the total number of countries that experience drought",
+        "By how much warmer the Pacific surface water gets compared with the long-run average",
+        "By how much rain falls on the Sahel during the year"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says strength is judged by how far sea-surface temperatures rise above the long-run average, with anything above 2°C counting as strong."
+    },
+    {
+      "question": "Why does an El Niño in the Pacific affect weather in faraway places like southern Africa?",
+      "options": [
+        "Because the warm water physically flows from the Pacific all the way to Africa",
+        "Because the world's weather systems are interconnected, so the Pacific's warmth redistributes heat and moisture across the planet",
+        "Because African winds blow the anchovies back toward the Pacific",
+        "Because climate change only happens in the Pacific Ocean"
+      ],
+      "answerIndex": 1,
+      "explanation": "The interconnectedness of global weather means a Pacific shift redistributes heat and moisture worldwide — a teleconnection."
+    },
+    {
+      "question": "In \"similarly baleful effects are possible this time,\" baleful most nearly means —",
+      "options": [
+        "surprising and rare",
+        "gentle and temporary",
+        "expensive and slow",
+        "harmful and threatening"
+      ],
+      "answerIndex": 3,
+      "explanation": "Baleful means menacing or harmful — here, the damaging droughts, floods, and hunger a strong El Niño can bring."
+    },
+    {
+      "question": "Why can heavy rain after a long drought cause floods instead of relief?",
+      "options": [
+        "Drought makes rain fall much harder than usual",
+        "The rain becomes too salty for dry soil to absorb",
+        "Parched soil can't absorb water fast enough, so the rain runs off the surface",
+        "Floods are always caused by El Niño, never by the soil"
+      ],
+      "answerIndex": 2,
+      "explanation": "On baked, parched ground water can't soak in quickly, so it sheets off and floods — the same rain, opposite effect depending on the soil's condition."
+    },
+    {
+      "question": "The article says El Niño and climate change \"amplify each other's effects.\" This means —",
+      "options": [
+        "They are separate forces, but together they produce more warming than either would alone",
+        "Climate change is what causes every El Niño",
+        "El Niño cancels out the effects of climate change",
+        "Neither one has any real effect on global temperatures"
+      ],
+      "answerIndex": 0,
+      "explanation": "To amplify is to strengthen; the two separate phenomena reinforce each other, helping push years like 2016 and 2024 to record highs."
+    }
+  ]
+}
