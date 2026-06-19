@@ -76,6 +76,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - **Manual fallback** (only if auto-capture looks wrong): the user saves the article as a PDF by hand into the `PDFs/` drop-zone at the repo root (gitignored, raw WSJ filename), and you copy it over: `cp "PDFs/<that file>.pdf" public/pdfs/YYYY-MM-DD.pdf`. The `public/pdfs/` copy is what gets committed and deployed.
    - **Upload the full article text (for the voice quiz).** The home-page **Voice quiz** (`voiceQuiz: true`, see step 6) reads much better when the tutor has the *whole* article, not just the handout — it then judges the student's from-memory retelling against the real story. Once the PDF is captured, extract its text and upload it to **Vercel Blob** (we keep the full text **out of git** — the hard rule is never republish article text — so Blob is its home):
      ```sh
+     mkdir -p article-text   # gitignored drop-zone; may not exist on a fresh checkout
      pdftotext public/pdfs/YYYY-MM-DD.pdf article-text/YYYY-MM-DD.txt
      node --env-file=.env.local scripts/upload-article-text.mjs YYYY-MM-DD
      ```
