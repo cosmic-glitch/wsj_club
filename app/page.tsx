@@ -1,63 +1,30 @@
 import Link from "next/link";
 import ArticleLink from "@/components/ArticleLink";
-import VoiceQuiz from "@/components/VoiceQuiz";
-import VoiceColumnGate from "@/components/VoiceColumnGate";
-import { getAllReadings, dateBig, type Reading } from "@/lib/content";
+import VoiceQuizStep from "@/components/VoiceQuizStep";
+import { getAllReadings, dateBig } from "@/lib/content";
 
 // One shared blue-link style so every link on the page matches.
 const linkClass = "text-sky-700 transition hover:text-sky-900 hover:underline";
 
-/**
- * The article link(s) for a row. Single-article days show one "Article" link
- * (plus "PDF" when a served PDF exists); multi-article days list each one.
- */
-function ArticleCell({ r }: { r: Reading }) {
-  if (r.articles && r.articles.length > 0) {
-    return (
-      <div className="space-y-1.5">
-        {r.articles.map((a, i) => (
-          <div key={a.articleUrl} className="whitespace-nowrap">
-            <ArticleLink href={a.articleUrl} className={linkClass}>
-              Article {i + 1}
-            </ArticleLink>
-            {a.pdfUrl && (
-              <>
-                {" · "}
-                <a
-                  href={a.pdfUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={linkClass}
-                >
-                  PDF
-                </a>
-              </>
-            )}
-          </div>
-        ))}
-      </div>
-    );
-  }
+// Words for "Read the {first} article" on multi-article days.
+const ORDINALS = ["first", "second", "third", "fourth", "fifth"];
 
+// The "(PDF version)" link shown after an article link, when a PDF exists.
+function PdfVersion({ href }: { href: string }) {
   return (
-    <span className="whitespace-nowrap">
-      <ArticleLink href={r.articleUrl ?? "#"} className={linkClass}>
-        Article
-      </ArticleLink>
-      {r.pdfUrl && (
-        <>
-          {" · "}
-          <a
-            href={r.pdfUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={linkClass}
-          >
-            PDF
-          </a>
-        </>
-      )}
-    </span>
+    <>
+      {" "}
+      (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={linkClass}
+      >
+        PDF version
+      </a>
+      )
+    </>
   );
 }
 
@@ -73,54 +40,73 @@ export default function Home() {
   }
 
   return (
-    <VoiceColumnGate>
-      <table className="min-w-full text-sm">
-        <thead>
-          <tr className="border-b border-stone-200 text-left text-xs font-semibold uppercase tracking-wide text-stone-400">
-            <th className="px-4 py-3">Date</th>
-            <th className="px-4 py-3">Title</th>
-            <th className="px-4 py-3">Article</th>
-            <th className="px-4 py-3">Handout</th>
-            <th className="px-4 py-3">Self-quiz</th>
-            <th className="hidden px-4 py-3 group-data-[authed]:table-cell">
-              Voice quiz
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {readings.map((r) => (
-            <tr
-              key={r.date}
-              className="border-b border-stone-100 align-top last:border-0"
-            >
-              <td className="whitespace-nowrap px-4 py-4 font-medium text-stone-900">
-                {dateBig(r.date)}
-              </td>
-              <td className="px-4 py-4 font-medium leading-snug text-stone-900">
-                {r.title}
-              </td>
-              <td className="px-4 py-4">
-                <ArticleCell r={r} />
-              </td>
-              <td className="whitespace-nowrap px-4 py-4">
-                <Link href={`/reading/${r.date}`} className={linkClass}>
-                  Handout
-                </Link>
-              </td>
-              <td className="whitespace-nowrap px-4 py-4">
-                <Link href={`/reading/${r.date}/quiz`} className={linkClass}>
-                  Self-quiz
-                </Link>
-              </td>
-              <td className="hidden px-4 py-4 group-data-[authed]:table-cell">
-                {r.voiceQuiz ? (
-                  <VoiceQuiz date={r.date} title={r.title} />
-                ) : null}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </VoiceColumnGate>
+    <ul className="space-y-6">
+      {readings.map((r) => (
+        <li
+          key={r.date}
+          className="rounded-xl border border-stone-200 bg-white p-6 shadow-sm"
+        >
+          {/* The date */}
+          <div className="font-serif text-2xl font-bold text-stone-900">
+            {dateBig(r.date)}
+          </div>
+
+          {/* The article title — plain text, not a link */}
+          <p className="mt-1.5 text-lg font-medium leading-snug text-stone-900">
+            {r.title}
+          </p>
+
+          {/* The numbered steps. Single-article days read the one article in
+              step 1; multi-article days get one "Read the Nth article" step per
+              article, then the same handout / quiz / 1-1 steps. The voice-quiz
+              step appears last, and only for logged-in users on voiceQuiz days. */}
+          <ol className="mt-4 list-decimal space-y-1.5 pl-5 text-stone-700 marker:font-semibold marker:text-stone-400">
+            {r.articles && r.articles.length > 0 ? (
+              r.articles.map((a, i) => (
+                <li key={a.articleUrl}>
+                  Read the {ORDINALS[i] ?? `${i + 1}th`} article —{" "}
+                  <ArticleLink href={a.articleUrl} className={linkClass}>
+                    {a.title}
+                  </ArticleLink>
+                  {a.pdfUrl && <PdfVersion href={a.pdfUrl} />}
+                </li>
+              ))
+            ) : (
+              <li>
+                Read the{" "}
+                <ArticleLink href={r.articleUrl ?? "#"} className={linkClass}>
+                  article
+                </ArticleLink>
+                {r.pdfUrl && <PdfVersion href={r.pdfUrl} />}
+              </li>
+            )}
+            <li>
+              Read the{" "}
+              <Link href={`/reading/${r.date}`} className={linkClass}>
+                handout
+              </Link>
+            </li>
+            <li>
+              Take the{" "}
+              <Link href={`/reading/${r.date}/quiz`} className={linkClass}>
+                self-quiz
+              </Link>
+            </li>
+            <li>
+              Schedule your{" "}
+              <a
+                href="https://calendly.com/cosmic-glitch/daily-quiz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={linkClass}
+              >
+                1-1 quiz
+              </a>
+            </li>
+            {r.voiceQuiz && <VoiceQuizStep date={r.date} title={r.title} />}
+          </ol>
+        </li>
+      ))}
+    </ul>
   );
 }
