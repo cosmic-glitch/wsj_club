@@ -70,6 +70,21 @@ export async function POST(request: Request) {
           },
           output: { voice: REALTIME_VOICE },
         },
+        // The tutor ends the session itself by calling this once it has finished
+        // its spoken wrap-up; the browser then runs the same teardown the
+        // "End quiz" button does (the button stays as an early-exit fallback).
+        tools: [
+          {
+            type: "function",
+            name: "end_quiz",
+            description:
+              "End the quiz session. Call this exactly once, only AFTER you have " +
+              "spoken your final wrap-up and have finished the key ideas, the " +
+              "vocabulary, and the concepts. Never call it before then.",
+            parameters: { type: "object", properties: {}, additionalProperties: false },
+          },
+        ],
+        tool_choice: "auto",
       },
     }),
   });
