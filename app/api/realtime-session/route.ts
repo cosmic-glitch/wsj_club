@@ -6,7 +6,7 @@ import { buildInstructions } from "@/lib/quiz-prompt";
 // The Realtime model + voice. Env-overridable so we can adjust if OpenAI
 // renames them without touching code.
 const REALTIME_MODEL = process.env.REALTIME_MODEL || "gpt-realtime-2";
-const REALTIME_VOICE = process.env.REALTIME_VOICE || "marin";
+const REALTIME_VOICE = process.env.REALTIME_VOICE || "cedar";
 
 // How eager the tutor is to take its turn. "low" lets the student speak
 // uninterrupted through long pauses, "um"s, and false starts — which is what we
