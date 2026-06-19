@@ -33,12 +33,25 @@ type Session = {
 async function loadSessions(): Promise<Session[] | { error: string }> {
   try {
     const { blobs } = await list({ prefix: "quiz-sessions/" });
-    const sessions = await Promise.all(
-      blobs.map(async (b) => {
-        const res = await fetch(b.url, { cache: "no-store" });
-        return (await res.json()) as Session;
-      })
-    );
+    // Audio recordings (.webm/.mp4) live in the SAME prefix as the session
+    // JSON, so only fetch/parse the .json files — never try to JSON.parse a
+    // recording. Each parse is independently guarded too, so one corrupt blob
+    // can't take down the whole page (returns null → filtered out).
+    const sessions = (
+      await Promise.all(
+        blobs
+          .filter((b) => b.pathname.endsWith(".json"))
+          .map(async (b) => {
+            try {
+              const res = await fetch(b.url, { cache: "no-store" });
+              return (await res.json()) as Session;
+            } catch (err) {
+              console.error("Skipping unreadable session blob:", b.pathname, err);
+              return null;
+            }
+          })
+      )
+    ).filter((s): s is Session => s !== null);
     // Newest first (by when the quiz ended).
     sessions.sort((a, b) => (b.endedAt ?? "").localeCompare(a.endedAt ?? ""));
     return sessions;
