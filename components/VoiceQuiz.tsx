@@ -10,9 +10,25 @@ type Phase =
   | "needLogin" // clicked while logged out
   | "connecting"
   | "live"
-  | "ending"
-  | "done"
+  | "wrapup" // after "End quiz": one screen that fills in (upload → grade → score)
   | "error";
+
+// The state of one step in the post-quiz wrap-up checklist.
+type StepState = "pending" | "active" | "done";
+
+function StepIcon({ state }: { state: StepState }) {
+  return (
+    <span className="flex h-4 w-4 shrink-0 items-center justify-center">
+      {state === "done" ? (
+        <span className="font-bold text-emerald-600">✓</span>
+      ) : state === "active" ? (
+        <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-sky-500" />
+      ) : (
+        <span className="h-2.5 w-2.5 rounded-full border border-stone-300" />
+      )}
+    </span>
+  );
+}
 
 /**
  * The "Voice quiz" launcher in the home-page table. Clicking it:
@@ -41,13 +57,15 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   const [user, setUser] = useState<string | null>(null);
   const [phase, setPhase] = useState<Phase>("idle");
   const [error, setError] = useState("");
-  // The graded score (e.g. "8/10"), shown to the student on the done screen.
+  // The graded score (e.g. "8/10"), shown to the student on the wrap-up screen.
   // null until the report comes back; "—" means there was nothing to grade.
   const [score, setScore] = useState<string | null>(null);
-  // Post-quiz teardown progress, shown on the "ending" screen so the student
-  // sees what's happening: each finished step (with a ✓) plus the one in flight.
-  const [endDone, setEndDone] = useState<string[]>([]);
-  const [endStatus, setEndStatus] = useState("");
+  // Post-quiz wrap-up: a persistent checklist on one screen (no screen-swap, so
+  // it can't flash by). Each step fills in as it completes; `finished` reveals
+  // the score line and enables Close.
+  const [uploadStep, setUploadStep] = useState<StepState>("pending");
+  const [gradeStep, setGradeStep] = useState<StepState>("pending");
+  const [finished, setFinished] = useState(false);
 
   const pcRef = useRef<RTCPeerConnection | null>(null);
   const micRef = useRef<MediaStream | null>(null);
@@ -176,8 +194,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   async function start() {
     setError("");
     setScore(null);
-    setEndDone([]);
-    setEndStatus("");
+    setUploadStep("pending");
+    setGradeStep("pending");
+    setFinished(false);
     transcriptRef.current = [];
     endStartedRef.current = false;
     setPhase("connecting");
@@ -258,21 +277,23 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   async function end() {
     if (endStartedRef.current) return; // ignore a double-click — run once
     endStartedRef.current = true;
-    setEndDone([]);
-    setEndStatus("");
-    setPhase("ending");
+    setScore(null);
+    setUploadStep("pending");
+    setGradeStep("pending");
+    setFinished(false);
+    setPhase("wrapup");
     // Stop the recorder first so we capture the full Blob, then tear down.
     const audioBlob = await stopRecording();
     cleanupConnection();
 
-    // Upload the recording (best-effort) and link it from the saved session.
+    // 1. Upload the recording (best-effort) and link it from the saved session.
     // We upload straight from the browser to Blob via the client `upload()` flow
     // (/api/quiz-audio just mints an auth-gated token) so the bytes don't pass
     // through our serverless function — a full-length recording would otherwise
     // exceed the ~4.5MB request-body limit and 413.
     let audioUrl: string | undefined;
+    setUploadStep("active");
     if (audioBlob && audioBlob.size > 0) {
-      setEndStatus("Saving your recording…");
       try {
         const ext = audioBlob.type.includes("mp4") ? "mp4" : "webm";
         const safeName = (user ?? "student")
@@ -289,17 +310,17 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           }
         );
         audioUrl = blob.url;
-        setEndDone((d) => [...d, "Recording saved"]);
       } catch {
         // No recording link — the transcript + report still save below.
       }
     }
+    setUploadStep("done");
 
-    setEndStatus("Grading your quiz…");
+    // 2. Grade + save (transcript + report card + audio link) to Blob for the
+    // teacher. We keep the full report card private, but DO surface the overall
+    // score to the student on the wrap-up screen.
+    setGradeStep("active");
     try {
-      // Grade + save (transcript + report card + audio link) to Blob for the
-      // teacher. We keep the full report card private, but DO surface the
-      // overall score to the student on the done screen.
       const res = await fetch("/api/quiz-report", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -316,8 +337,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     } catch {
       // The session still happened; saving is best-effort.
     } finally {
-      setEndStatus("");
-      setPhase("done");
+      setGradeStep("done");
+      setFinished(true);
     }
   }
 
@@ -326,8 +347,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setPhase("idle");
     setError("");
     setScore(null);
-    setEndDone([]);
-    setEndStatus("");
+    setUploadStep("pending");
+    setGradeStep("pending");
+    setFinished(false);
     transcriptRef.current = [];
     endStartedRef.current = false;
   }
@@ -336,8 +358,12 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   useEffect(() => () => cleanupConnection(), []);
 
   const modalOpen = phase !== "idle";
-  // While the session is live we don't let a stray backdrop click drop the call.
-  const dismissable = phase === "needLogin" || phase === "done" || phase === "error";
+  // A stray backdrop click shouldn't drop a live call or interrupt the wrap-up
+  // while it's still saving — only let it close once there's nothing in flight.
+  const dismissable =
+    phase === "needLogin" ||
+    phase === "error" ||
+    (phase === "wrapup" && finished);
 
   return (
     <>
@@ -417,62 +443,71 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
               </div>
             )}
 
-            {phase === "ending" && (
+            {/* One stable screen after End quiz — the checklist fills in place
+                (upload → grade → score) so nothing flashes by, and Close stays
+                disabled until everything has saved. */}
+            {phase === "wrapup" && (
               <div>
                 <h2 className="font-serif text-xl font-bold text-stone-900">
-                  Wrapping up…
+                  {finished ? "All done — nice work!" : "Wrapping up…"}
                 </h2>
-                <ul className="mt-3 space-y-2 text-sm">
-                  {endDone.map((label) => (
-                    <li
-                      key={label}
-                      className="flex items-center gap-2 text-stone-600"
+                <ul className="mt-4 space-y-2.5 text-sm">
+                  <li className="flex items-center gap-2.5">
+                    <StepIcon state={uploadStep} />
+                    <span
+                      className={
+                        uploadStep === "pending"
+                          ? "text-stone-400"
+                          : "text-stone-700"
+                      }
                     >
-                      <span className="font-bold text-emerald-600">✓</span>
-                      {label}
-                    </li>
-                  ))}
-                  {endStatus && (
-                    <li className="flex items-center gap-2 text-stone-700">
-                      <span className="h-2 w-2 animate-pulse rounded-full bg-sky-500" />
-                      {endStatus}
-                    </li>
-                  )}
+                      Uploading your recording
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <StepIcon state={gradeStep} />
+                    <span
+                      className={
+                        gradeStep === "pending"
+                          ? "text-stone-400"
+                          : "text-stone-700"
+                      }
+                    >
+                      Grading your quiz
+                    </span>
+                  </li>
                 </ul>
-                <p className="mt-3 text-xs text-stone-400">
-                  Saving everything for your teacher — this only takes a moment.
-                </p>
-              </div>
-            )}
 
-            {phase === "done" && (
-              <div>
-                <h2 className="font-serif text-xl font-bold text-stone-900">
-                  All done — nice work!
-                </h2>
-                {score && score !== "—" ? (
-                  <>
-                    <p className="mt-3 text-sm text-stone-600">
-                      Your score:{" "}
-                      <span className="text-lg font-bold text-sky-700">
-                        {score}
-                      </span>
-                    </p>
-                    <p className="mt-2 text-sm text-stone-600">
-                      Your quiz has been saved for your teacher. If you’re not
-                      happy with your score, you can always take the quiz again.
-                    </p>
-                  </>
-                ) : (
-                  <p className="mt-2 text-sm text-stone-600">
-                    Your quiz has been saved for your teacher. You can take the
-                    quiz again any time if you’d like.
-                  </p>
+                {finished && (
+                  <div className="mt-4 border-t border-stone-100 pt-4">
+                    {score && score !== "—" ? (
+                      <>
+                        <p className="text-sm text-stone-600">
+                          You scored{" "}
+                          <span className="text-lg font-bold text-sky-700">
+                            {score}
+                          </span>
+                          .
+                        </p>
+                        <p className="mt-1.5 text-sm text-stone-600">
+                          Saved for your teacher. If you’re not happy with your
+                          score, feel free to take the quiz again.
+                        </p>
+                      </>
+                    ) : (
+                      <p className="text-sm text-stone-600">
+                        Saved for your teacher. Feel free to take the quiz again
+                        any time.
+                      </p>
+                    )}
+                  </div>
                 )}
+
                 <button
                   type="button"
                   onClick={close}
-                  className="mt-5 rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50"
+                  disabled={!finished}
+                  className="mt-5 rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50 disabled:cursor-not-allowed disabled:opacity-40"
                 >
                   Close
                 </button>
