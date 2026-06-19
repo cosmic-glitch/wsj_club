@@ -186,10 +186,9 @@ ${keyIdeasStep}
    "why" / "how" follow-ups. Judge against your answer key.
 5. WRAP UP: When you've covered the key ideas, the words, and some concepts, give
    a short, encouraging wrap-up (one or two sentences on what they did well and
-   what to review) and tell them the quiz is finished. Then, AFTER you have spoken
-   that wrap-up, call the end_quiz function to close the session. Call end_quiz
-   exactly once, only after the wrap-up, and never before you have finished the
-   words and the concepts.
+   what to review). Then end with EXACTLY this instruction to the student, word
+   for word: "The quiz is done. You can press the End Quiz button." Do not say
+   anything after that — the student will press the button to finish.
 
 Keep the whole quiz focused and unhurried. Begin now with the greeting.
 `.trim();

@@ -56,14 +56,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   const chunksRef = useRef<Blob[]>([]);
   const audioCtxRef = useRef<AudioContext | null>(null);
 
-  // Auto-end: the tutor calls the end_quiz tool when the conversation is
-  // logically over. We don't tear down instantly (that would clip the spoken
-  // goodbye) — we wait for the wrap-up audio to finish, with a timer as a
-  // fallback. The manual "End quiz" button still works as an early-exit.
-  const endStartedRef = useRef(false); // end() has begun (manual OR auto) — runs once
-  const endRequestedRef = useRef(false); // tutor asked to end; waiting on its audio
-  const endFallbackRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const audioPlayingRef = useRef(false); // tutor audio currently playing
+  // The quiz ends only when the student clicks "End quiz" (the tutor tells them
+  // to, once it has wrapped up). This once-guard keeps end() idempotent against
+  // a double-click.
+  const endStartedRef = useRef(false);
 
   useEffect(() => {
     fetch("/api/me")
@@ -79,12 +75,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // The transcript is captured for the teacher's record, not shown to the
   // student.
   function handleEvent(raw: string) {
-    let evt: {
-      type?: string;
-      transcript?: string;
-      name?: string;
-      item?: { type?: string; name?: string };
-    };
+    let evt: { type?: string; transcript?: string };
     try {
       evt = JSON.parse(raw);
     } catch {
@@ -98,22 +89,6 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       type === "response.audio_transcript.done"
     ) {
       if (evt.transcript?.trim()) pushTurn({ role: "tutor", text: evt.transcript.trim() });
-    } else if (
-      // The tutor signals the quiz is logically over by calling the end_quiz
-      // tool. (Both event shapes carry the name; either one is enough.)
-      (type === "response.function_call_arguments.done" && evt.name === "end_quiz") ||
-      (type === "response.output_item.done" &&
-        evt.item?.type === "function_call" &&
-        evt.item?.name === "end_quiz")
-    ) {
-      requestAutoEnd();
-    } else if (type === "output_audio_buffer.started") {
-      audioPlayingRef.current = true;
-    } else if (type === "output_audio_buffer.stopped") {
-      audioPlayingRef.current = false;
-      // If the tutor asked to end, its goodbye has now finished playing — so this
-      // is the moment to tear down without clipping it.
-      if (endRequestedRef.current) void end();
     }
   }
 
@@ -192,12 +167,6 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     recorderRef.current = null;
     audioCtxRef.current?.close().catch(() => {});
     audioCtxRef.current = null;
-    // Drop any pending auto-end timer so it can't fire after teardown/unmount.
-    if (endFallbackRef.current) {
-      clearTimeout(endFallbackRef.current);
-      endFallbackRef.current = null;
-    }
-    endRequestedRef.current = false;
   }
 
   async function start() {
@@ -205,8 +174,6 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setScore(null);
     transcriptRef.current = [];
     endStartedRef.current = false;
-    endRequestedRef.current = false;
-    audioPlayingRef.current = false;
     setPhase("connecting");
 
     try {
@@ -282,26 +249,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     start();
   }
 
-  // The tutor's end_quiz tool fired. Don't tear down immediately — that would
-  // clip the spoken goodbye — wait for the wrap-up audio to finish
-  // (output_audio_buffer.stopped), with a timer fallback in case it never comes.
-  function requestAutoEnd() {
-    if (endRequestedRef.current || endStartedRef.current) return;
-    endRequestedRef.current = true;
-    // Audio still playing → wait for it to stop (long safety fallback). Nothing
-    // playing → the goodbye likely already finished, so end after a short grace.
-    const fallbackMs = audioPlayingRef.current ? 12000 : 1500;
-    endFallbackRef.current = setTimeout(() => void end(), fallbackMs);
-  }
-
   async function end() {
-    if (endStartedRef.current) return; // manual button + auto-end: only run once
+    if (endStartedRef.current) return; // ignore a double-click — run once
     endStartedRef.current = true;
-    endRequestedRef.current = false;
-    if (endFallbackRef.current) {
-      clearTimeout(endFallbackRef.current);
-      endFallbackRef.current = null;
-    }
     setPhase("ending");
     // Stop the recorder first so we capture the full Blob, then tear down.
     const audioBlob = await stopRecording();
@@ -366,8 +316,6 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setScore(null);
     transcriptRef.current = [];
     endStartedRef.current = false;
-    endRequestedRef.current = false;
-    audioPlayingRef.current = false;
   }
 
   // Stop the mic/connection if the component unmounts mid-session.
