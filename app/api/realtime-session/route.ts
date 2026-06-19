@@ -8,10 +8,12 @@ import { buildInstructions } from "@/lib/quiz-prompt";
 const REALTIME_MODEL = process.env.REALTIME_MODEL || "gpt-realtime-2";
 const REALTIME_VOICE = process.env.REALTIME_VOICE || "cedar";
 
-// How eager the tutor is to take its turn. "low" lets the student speak
-// uninterrupted through long pauses, "um"s, and false starts — which is what we
-// want for kids articulating ideas from memory. (OpenAI semantic_vad setting.)
-const VAD_EAGERNESS = process.env.REALTIME_VAD_EAGERNESS || "low";
+// How eager the tutor is to take its turn. "auto" lets OpenAI adapt the
+// turn-taking to the conversation — snappy on short answers (vocab/concepts) but
+// still willing to wait through thinking pauses — which beats the uniformly
+// patient "low" that felt sluggish on short Q&A. Override per-deploy with
+// REALTIME_VAD_EAGERNESS (low | medium | high | auto). (OpenAI semantic_vad.)
+const VAD_EAGERNESS = process.env.REALTIME_VAD_EAGERNESS || "auto";
 
 /**
  * Mints a short-lived OpenAI Realtime ephemeral key for the browser to open a
