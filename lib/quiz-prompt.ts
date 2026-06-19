@@ -222,6 +222,15 @@ a reasonable set of the real ideas (including some that go beyond the headline),
 the vocabulary, and the concepts. Be fair and encouraging but honest. Base
 everything ONLY on what the transcript shows.
 
+CRITICAL — grade ONLY what the STUDENT actually said. The reference article and
+handout above are there so you can check the student's answers, NOT to give the
+student credit for. If the student gave few or no real answers — they stayed
+silent, replied only a word or two, or the quiz ended early — say that plainly
+and give a correspondingly LOW score. NEVER credit the student for an idea, word,
+or concept that does not appear in the student's own turns of the transcript, and
+NEVER invent strengths or inflate the score to be nice. A near-empty transcript
+must get a near-zero score.
+
 Return a JSON object with exactly these fields:
 - "score": a string like "7/10" giving your overall sense of their understanding.
 - "summary": 1–2 sentences summarizing how they did overall.

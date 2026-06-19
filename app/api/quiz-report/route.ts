@@ -41,9 +41,27 @@ export async function POST(request: Request) {
     return Response.json({ error: "Unknown reading." }, { status: 404 });
   }
 
-  // Generate the report card from the transcript (best-effort).
+  // Only the student's OWN answers are gradable. A transcript can be non-empty
+  // while holding nothing but the tutor's greeting (e.g. the student ended the
+  // quiz before speaking). Grading that would let the model invent a score from
+  // the article/handout reference — so when there are no real student turns we
+  // skip the model and record an honest "nothing to grade" card instead.
+  const studentTurns = transcript.filter((t) => t.role === "student" && t.text.trim());
+
   let report: unknown = null;
-  if (transcript.length > 0 && process.env.OPENAI_API_KEY) {
+  if (studentTurns.length === 0) {
+    report = {
+      score: "—",
+      summary:
+        "No answers to grade — the student didn't respond during this session (it looks like the quiz ended before they spoke).",
+      strengths: [],
+      gaps: ["Re-take the quiz and answer the tutor's questions out loud."],
+      keyIdeas: "Not assessed — the student didn't speak.",
+      vocab: "Not assessed — the student didn't speak.",
+      concepts: "Not assessed — the student didn't speak.",
+    };
+  } else if (process.env.OPENAI_API_KEY) {
+    // Generate the report card from the transcript (best-effort).
     const articleText = await getArticleText(date);
     try {
       const res = await fetch("https://api.openai.com/v1/chat/completions", {
