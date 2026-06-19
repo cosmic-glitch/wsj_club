@@ -44,6 +44,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // The graded score (e.g. "8/10"), shown to the student on the done screen.
   // null until the report comes back; "—" means there was nothing to grade.
   const [score, setScore] = useState<string | null>(null);
+  // Post-quiz teardown progress, shown on the "ending" screen so the student
+  // sees what's happening: each finished step (with a ✓) plus the one in flight.
+  const [endDone, setEndDone] = useState<string[]>([]);
+  const [endStatus, setEndStatus] = useState("");
 
   const pcRef = useRef<RTCPeerConnection | null>(null);
   const micRef = useRef<MediaStream | null>(null);
@@ -172,6 +176,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   async function start() {
     setError("");
     setScore(null);
+    setEndDone([]);
+    setEndStatus("");
     transcriptRef.current = [];
     endStartedRef.current = false;
     setPhase("connecting");
@@ -252,6 +258,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   async function end() {
     if (endStartedRef.current) return; // ignore a double-click — run once
     endStartedRef.current = true;
+    setEndDone([]);
+    setEndStatus("");
     setPhase("ending");
     // Stop the recorder first so we capture the full Blob, then tear down.
     const audioBlob = await stopRecording();
@@ -264,6 +272,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     // exceed the ~4.5MB request-body limit and 413.
     let audioUrl: string | undefined;
     if (audioBlob && audioBlob.size > 0) {
+      setEndStatus("Saving your recording…");
       try {
         const ext = audioBlob.type.includes("mp4") ? "mp4" : "webm";
         const safeName = (user ?? "student")
@@ -280,11 +289,13 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           }
         );
         audioUrl = blob.url;
+        setEndDone((d) => [...d, "Recording saved"]);
       } catch {
         // No recording link — the transcript + report still save below.
       }
     }
 
+    setEndStatus("Grading your quiz…");
     try {
       // Grade + save (transcript + report card + audio link) to Blob for the
       // teacher. We keep the full report card private, but DO surface the
@@ -305,6 +316,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     } catch {
       // The session still happened; saving is best-effort.
     } finally {
+      setEndStatus("");
       setPhase("done");
     }
   }
@@ -314,6 +326,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setPhase("idle");
     setError("");
     setScore(null);
+    setEndDone([]);
+    setEndStatus("");
     transcriptRef.current = [];
     endStartedRef.current = false;
   }
@@ -408,8 +422,25 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                 <h2 className="font-serif text-xl font-bold text-stone-900">
                   Wrapping up…
                 </h2>
-                <p className="mt-2 text-sm text-stone-500">
-                  Saving your quiz for your teacher.
+                <ul className="mt-3 space-y-2 text-sm">
+                  {endDone.map((label) => (
+                    <li
+                      key={label}
+                      className="flex items-center gap-2 text-stone-600"
+                    >
+                      <span className="font-bold text-emerald-600">✓</span>
+                      {label}
+                    </li>
+                  ))}
+                  {endStatus && (
+                    <li className="flex items-center gap-2 text-stone-700">
+                      <span className="h-2 w-2 animate-pulse rounded-full bg-sky-500" />
+                      {endStatus}
+                    </li>
+                  )}
+                </ul>
+                <p className="mt-3 text-xs text-stone-400">
+                  Saving everything for your teacher — this only takes a moment.
                 </p>
               </div>
             )}
