@@ -27,6 +27,7 @@ type Session = {
   endedAt: string;
   transcript: Turn[];
   report: Report | null;
+  audioUrl?: string;
 };
 
 async function loadSessions(): Promise<Session[] | { error: string }> {
@@ -142,6 +143,17 @@ export default async function AdminPage() {
                       </ul>
                     </div>
                   )}
+                </div>
+              )}
+
+              {s.audioUrl && (
+                <div className="mt-4">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-stone-400">
+                    Recording
+                  </p>
+                  <audio controls preload="none" src={s.audioUrl} className="mt-2 w-full">
+                    <a href={s.audioUrl}>Download recording</a>
+                  </audio>
                 </div>
               )}
 

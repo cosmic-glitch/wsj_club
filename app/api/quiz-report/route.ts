@@ -25,7 +25,7 @@ export async function POST(request: Request) {
     return Response.json({ error: "Not logged in." }, { status: 401 });
   }
 
-  let body: { date?: string; studentName?: string; transcript?: Turn[] };
+  let body: { date?: string; studentName?: string; transcript?: Turn[]; audioUrl?: string };
   try {
     body = await request.json();
   } catch {
@@ -35,6 +35,7 @@ export async function POST(request: Request) {
   const date = (body.date ?? "").trim();
   const studentName = (body.studentName ?? "").trim() || user;
   const transcript = Array.isArray(body.transcript) ? body.transcript : [];
+  const audioUrl = (body.audioUrl ?? "").trim() || undefined;
   const reading = getReading(date);
   if (!reading) {
     return Response.json({ error: "Unknown reading." }, { status: 404 });
@@ -87,6 +88,7 @@ export async function POST(request: Request) {
     endedAt: new Date().toISOString(),
     transcript,
     report,
+    audioUrl,
   };
 
   // Save to Blob (best-effort — don't fail the student's session if storage hiccups).

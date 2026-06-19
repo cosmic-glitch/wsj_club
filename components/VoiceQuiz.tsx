@@ -24,6 +24,13 @@ type Phase =
  * grades it into a report card and saves both to Vercel Blob for the teacher to
  * review on /admin. The student deliberately sees NEITHER the live transcript
  * NOR the report card — only a "saved for your teacher" confirmation.
+ *
+ * The whole conversation is ALSO recorded as audio: both the student's mic and
+ * the tutor's voice are already live MediaStreams in the browser, so we mix them
+ * with the Web Audio API and run a MediaRecorder over the result (no change to
+ * the WebRTC/model path). On "End quiz" the recording is uploaded to Blob and
+ * linked from the session for the teacher to play back. Recording is
+ * best-effort: if it can't start or upload, the quiz proceeds normally.
  */
 export default function VoiceQuiz({ date, title }: { date: string; title: string }) {
   // Login state is fetched on mount; login/logout both reload the page, so this
@@ -37,6 +44,12 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   const micRef = useRef<MediaStream | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const transcriptRef = useRef<Turn[]>([]);
+
+  // Audio recording: a MediaRecorder over a Web Audio mix of the mic + the
+  // tutor's remote track. All best-effort — a failure here never breaks the quiz.
+  const recorderRef = useRef<MediaRecorder | null>(null);
+  const chunksRef = useRef<Blob[]>([]);
+  const audioCtxRef = useRef<AudioContext | null>(null);
 
   useEffect(() => {
     fetch("/api/me")
@@ -69,11 +82,81 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     }
   }
 
+  // Pick a container the browser can actually record (Chrome/Firefox: webm/opus;
+  // Safari: mp4). Undefined → let MediaRecorder choose its default.
+  function pickRecorderMime(): { mimeType: string } | undefined {
+    if (typeof MediaRecorder === "undefined") return undefined;
+    for (const mimeType of ["audio/webm;codecs=opus", "audio/webm", "audio/mp4"]) {
+      if (MediaRecorder.isTypeSupported(mimeType)) return { mimeType };
+    }
+    return undefined;
+  }
+
+  // Mix the student's mic and the tutor's remote track into one stream and record
+  // it. The remote track is still played to the student through the <audio>
+  // element (keeping it "live" so Web Audio actually receives samples) — this
+  // graph only feeds the recorder, not the speakers.
+  function startRecording(remote: MediaStream) {
+    const mic = micRef.current;
+    if (!mic || recorderRef.current) return; // ontrack can fire more than once
+    try {
+      const ctx = new AudioContext();
+      audioCtxRef.current = ctx;
+      const dest = ctx.createMediaStreamDestination();
+      ctx.createMediaStreamSource(mic).connect(dest);
+      ctx.createMediaStreamSource(remote).connect(dest);
+
+      const rec = new MediaRecorder(dest.stream, pickRecorderMime());
+      chunksRef.current = [];
+      rec.ondataavailable = (e) => {
+        if (e.data.size) chunksRef.current.push(e.data);
+      };
+      rec.start();
+      recorderRef.current = rec;
+    } catch (err) {
+      // Recording is a bonus, never a blocker — the quiz goes on without it.
+      console.error("Could not start recording:", err);
+    }
+  }
+
+  // Stop the recorder and resolve with the finished audio Blob (null if there's
+  // nothing recorded). Awaits the recorder's final "stop" so all chunks land.
+  function stopRecording(): Promise<Blob | null> {
+    const rec = recorderRef.current;
+    recorderRef.current = null;
+    if (!rec || rec.state === "inactive") return Promise.resolve(null);
+    return new Promise((resolve) => {
+      rec.onstop = () => {
+        const chunks = chunksRef.current;
+        chunksRef.current = [];
+        resolve(chunks.length ? new Blob(chunks, { type: rec.mimeType || "audio/webm" }) : null);
+      };
+      try {
+        rec.stop();
+      } catch {
+        resolve(null);
+      }
+    });
+  }
+
   function cleanupConnection() {
     pcRef.current?.close();
     pcRef.current = null;
     micRef.current?.getTracks().forEach((t) => t.stop());
     micRef.current = null;
+    // Defensive teardown for the error/unmount paths; end() stops the recorder
+    // first to capture the Blob, so by then this is a no-op.
+    const rec = recorderRef.current;
+    if (rec && rec.state !== "inactive") {
+      try {
+        rec.stop();
+      } catch {
+        // already stopped
+      }
+    }
+    recorderRef.current = null;
+    audioCtxRef.current?.close().catch(() => {});
+    audioCtxRef.current = null;
   }
 
   async function start() {
@@ -103,7 +186,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       pcRef.current = pc;
 
       pc.ontrack = (e) => {
-        if (audioRef.current) audioRef.current.srcObject = e.streams[0];
+        const remote = e.streams[0];
+        if (audioRef.current) audioRef.current.srcObject = remote;
+        startRecording(remote);
       };
       mic.getTracks().forEach((t) => pc.addTrack(t, mic));
 
@@ -154,14 +239,37 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
   async function end() {
     setPhase("ending");
+    // Stop the recorder first so we capture the full Blob, then tear down.
+    const audioBlob = await stopRecording();
     cleanupConnection();
+
+    // Upload the recording (best-effort) and link it from the saved session.
+    let audioUrl: string | undefined;
+    if (audioBlob && audioBlob.size > 0) {
+      try {
+        const fd = new FormData();
+        fd.append("audio", audioBlob, "quiz");
+        fd.append("date", date);
+        fd.append("studentName", user ?? "");
+        const r = await fetch("/api/quiz-audio", { method: "POST", body: fd });
+        if (r.ok) audioUrl = (await r.json()).url;
+      } catch {
+        // No recording link — the transcript + report still save below.
+      }
+    }
+
     try {
-      // Grade + save (transcript + report card) to Blob for the teacher. The
-      // returned report is intentionally not shown to the student.
+      // Grade + save (transcript + report card + audio link) to Blob for the
+      // teacher. The returned report is intentionally not shown to the student.
       await fetch("/api/quiz-report", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ date, studentName: user, transcript: transcriptRef.current }),
+        body: JSON.stringify({
+          date,
+          studentName: user,
+          transcript: transcriptRef.current,
+          audioUrl,
+        }),
       });
     } catch {
       // The session still happened; saving is best-effort.
@@ -248,6 +356,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                 <p className="mt-2 text-sm text-stone-600">
                   Your tutor is quizzing you about “{title}.” Speak naturally and
                   take your time — there’s no rush, and pauses are fine.
+                </p>
+                <p className="mt-2 text-xs text-stone-400">
+                  This quiz is recorded and saved for your teacher.
                 </p>
                 <button
                   type="button"
