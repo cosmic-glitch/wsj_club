@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Link from "next/link";
+import AllReadingsLink from "@/components/AllReadingsLink";
 import AuthControl from "@/components/AuthControl";
 import "./globals.css";
 
@@ -29,12 +30,7 @@ export default function RootLayout({
               WSJ Reading Club
             </Link>
             <div className="flex items-center gap-4">
-              <Link
-                href="/"
-                className="text-sm text-stone-500 transition hover:text-stone-900"
-              >
-                ← All readings
-              </Link>
+              <AllReadingsLink />
               <AuthControl />
             </div>
           </div>
