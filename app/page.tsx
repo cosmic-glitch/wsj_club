@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ArticleLink from "@/components/ArticleLink";
 import VoiceQuiz from "@/components/VoiceQuiz";
+import VoiceColumnGate from "@/components/VoiceColumnGate";
 import { getAllReadings, dateBig, type Reading } from "@/lib/content";
 
 // One shared blue-link style so every link on the page matches.
@@ -72,7 +73,7 @@ export default function Home() {
   }
 
   return (
-    <div className="overflow-x-auto rounded-xl border border-stone-200 bg-white shadow-sm">
+    <VoiceColumnGate>
       <table className="min-w-full text-sm">
         <thead>
           <tr className="border-b border-stone-200 text-left text-xs font-semibold uppercase tracking-wide text-stone-400">
@@ -81,7 +82,9 @@ export default function Home() {
             <th className="px-4 py-3">Article</th>
             <th className="px-4 py-3">Handout</th>
             <th className="px-4 py-3">Self-quiz</th>
-            <th className="px-4 py-3">Voice quiz</th>
+            <th className="hidden px-4 py-3 group-data-[authed]:table-cell">
+              Voice quiz
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -109,7 +112,7 @@ export default function Home() {
                   Self-quiz
                 </Link>
               </td>
-              <td className="px-4 py-4">
+              <td className="hidden px-4 py-4 group-data-[authed]:table-cell">
                 {r.voiceQuiz ? (
                   <VoiceQuiz date={r.date} title={r.title} />
                 ) : null}
@@ -118,6 +121,6 @@ export default function Home() {
           ))}
         </tbody>
       </table>
-    </div>
+    </VoiceColumnGate>
   );
 }
