@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { upload } from "@vercel/blob/client";
+import { useAuth } from "./AuthProvider";
 
 type Turn = { role: "student" | "tutor"; text: string };
 
@@ -51,10 +52,11 @@ function StepIcon({ state }: { state: StepState }) {
  * best-effort: if it can't start or upload, the quiz proceeds normally.
  */
 export default function VoiceQuiz({ date, title }: { date: string; title: string }) {
-  // Login state is fetched on mount; login/logout both reload the page, so this
-  // stays fresh. Checking it here (not on click) keeps the click a clean user
-  // gesture for getUserMedia / audio autoplay.
-  const [user, setUser] = useState<string | null>(null);
+  // Login state comes from the shared AuthProvider (one /api/me fetch for the
+  // whole page); login/logout both reload the page, so it stays fresh. Reading
+  // it from context (not on click) keeps the click a clean user gesture for
+  // getUserMedia / audio autoplay.
+  const { user } = useAuth();
   const [phase, setPhase] = useState<Phase>("idle");
   const [error, setError] = useState("");
   // The graded score (e.g. "8/10"), shown to the student on the wrap-up screen.
@@ -82,13 +84,6 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // to, once it has wrapped up). This once-guard keeps end() idempotent against
   // a double-click.
   const endStartedRef = useRef(false);
-
-  useEffect(() => {
-    fetch("/api/me")
-      .then((r) => r.json())
-      .then((d) => setUser(d.username ?? null))
-      .catch(() => setUser(null));
-  }, []);
 
   function pushTurn(turn: Turn) {
     transcriptRef.current = [...transcriptRef.current, turn];

@@ -2,33 +2,21 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useAuth } from "./AuthProvider";
 
 /**
- * The login/logout control in the header. Fetches the current login state from
- * /api/me on mount (so the static pages it lives on stay static), and shows a
- * small inline login form when logged out.
+ * The login/logout control in the header. Reads the shared login state (fetched
+ * once by AuthProvider, so the static pages it lives on stay static), and shows
+ * a small inline login form when logged out.
  */
 export default function AuthControl() {
-  const [user, setUser] = useState<string | null>(null);
-  const [admin, setAdmin] = useState(false);
-  const [ready, setReady] = useState(false);
+  const { user, isAdmin: admin, ready } = useAuth();
   const [open, setOpen] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
   const boxRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    fetch("/api/me")
-      .then((r) => r.json())
-      .then((d) => {
-        setUser(d.username ?? null);
-        setAdmin(Boolean(d.isAdmin));
-      })
-      .catch(() => setUser(null))
-      .finally(() => setReady(true));
-  }, []);
 
   // Close the popover when clicking outside it.
   useEffect(() => {

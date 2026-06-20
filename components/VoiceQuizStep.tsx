@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import VoiceQuiz from "./VoiceQuiz";
+import { useAuth } from "./AuthProvider";
 
 /**
  * The AI-voice-quiz action in a day's compact action bar on the home page. It
@@ -10,6 +10,9 @@ import VoiceQuiz from "./VoiceQuiz";
  * (kids just browsing) never see it, and because it brings its OWN leading
  * middot, the bar has no dangling separator when it's hidden. Login and logout
  * both reload the page, so the check stays fresh.
+ *
+ * Login state comes from the shared AuthProvider (one /api/me fetch for the
+ * whole page), so every day's link appears together rather than one-by-one.
  *
  * Render this only for days with `voiceQuiz: true`; the parent decides that.
  */
@@ -20,16 +23,9 @@ export default function VoiceQuizStep({
   date: string;
   title: string;
 }) {
-  const [authed, setAuthed] = useState(false);
+  const { user } = useAuth();
 
-  useEffect(() => {
-    fetch("/api/me")
-      .then((r) => r.json())
-      .then((d) => setAuthed(Boolean(d.username)))
-      .catch(() => setAuthed(false));
-  }, []);
-
-  if (!authed) return null;
+  if (!user) return null;
 
   return (
     <>
