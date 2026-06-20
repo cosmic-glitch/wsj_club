@@ -6,6 +6,15 @@ import { useAuth } from "./AuthProvider";
 
 type Turn = { role: "student" | "tutor"; text: string };
 
+// The graded report card the student sees at the end — the same shape the
+// teacher reviews on /admin (minus the private transcript + recording).
+type Report = {
+  score?: string;
+  summary?: string;
+  strengths?: string[];
+  gaps?: string[];
+};
+
 type Phase =
   | "idle" // modal closed
   | "needLogin" // clicked while logged out
@@ -41,9 +50,10 @@ function StepIcon({ state }: { state: StepState }) {
  *
  * The transcript is captured and, on "End quiz", POSTed to the server, which
  * grades it into a report card and saves both to Vercel Blob for the teacher to
- * review on /admin. The student does NOT see the live transcript or the full
- * report card — but at the end they ARE shown their overall score (just the
- * number) plus an invitation to retake the quiz if they're not happy with it.
+ * review on /admin. At the end the student is shown their full report card —
+ * the same score + summary + strengths/gaps the teacher sees on /admin — plus
+ * an invitation to retake the quiz if they're not happy with it. The live
+ * transcript and the audio recording stay private (teacher-only).
  *
  * The whole conversation is ALSO recorded as audio: both the student's mic and
  * the tutor's voice are already live MediaStreams in the browser, so we mix them
@@ -60,9 +70,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   const { user } = useAuth();
   const [phase, setPhase] = useState<Phase>("idle");
   const [error, setError] = useState("");
-  // The graded score (e.g. "8/10"), shown to the student on the wrap-up screen.
-  // null until the report comes back; "—" means there was nothing to grade.
-  const [score, setScore] = useState<string | null>(null);
+  // The graded report card (score + summary + strengths/gaps), shown to the
+  // student on the wrap-up screen — the same card the teacher sees on /admin.
+  // null until the report comes back; score "—" means there was nothing to grade.
+  const [report, setReport] = useState<Report | null>(null);
   // Post-quiz wrap-up: a persistent checklist on one screen (no screen-swap, so
   // it can't flash by). Each step fills in as it completes; `finished` reveals
   // the score line and enables Close.
@@ -189,7 +200,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
   async function start() {
     setError("");
-    setScore(null);
+    setReport(null);
     setUploadStep("pending");
     setGradeStep("pending");
     setFinished(false);
@@ -273,7 +284,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   async function end() {
     if (endStartedRef.current) return; // ignore a double-click — run once
     endStartedRef.current = true;
-    setScore(null);
+    setReport(null);
     setUploadStep("pending");
     setGradeStep("pending");
     setFinished(false);
@@ -313,8 +324,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setUploadStep("done");
 
     // 2. Grade + save (transcript + report card + audio link) to Blob for the
-    // teacher. We keep the full report card private, but DO surface the overall
-    // score to the student on the wrap-up screen.
+    // teacher, and show the student their full report card (score + summary +
+    // strengths/gaps) on the wrap-up screen. The transcript + recording stay
+    // teacher-only.
     setGradeStep("active");
     try {
       const res = await fetch("/api/quiz-report", {
@@ -328,8 +340,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
         }),
       });
       const data = await res.json().catch(() => null);
-      const s = data?.report?.score;
-      if (typeof s === "string" && s.trim()) setScore(s.trim());
+      if (data?.report) setReport(data.report as Report);
     } catch {
       // The session still happened; saving is best-effort.
     } finally {
@@ -342,7 +353,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     cleanupConnection();
     setPhase("idle");
     setError("");
-    setScore(null);
+    setReport(null);
     setUploadStep("pending");
     setGradeStep("pending");
     setFinished(false);
@@ -477,28 +488,63 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                   </li>
                 </ul>
 
+                {/* The full report card — the same score + summary +
+                    strengths/gaps the teacher sees on /admin (the transcript
+                    and recording stay teacher-only). Scrolls if it runs long so
+                    the Close button below stays reachable. */}
                 {finished && (
-                  <div className="mt-4 border-t border-stone-100 pt-4">
-                    {score && score !== "—" ? (
-                      <>
-                        <p className="text-sm text-stone-600">
-                          You scored{" "}
-                          <span className="text-lg font-bold text-sky-700">
-                            {score}
-                          </span>
-                          .
-                        </p>
-                        <p className="mt-1.5 text-sm text-stone-600">
-                          Saved for your teacher. If you’re not happy with your
-                          score, feel free to take the quiz again.
-                        </p>
-                      </>
-                    ) : (
+                  <div className="mt-4 max-h-[55vh] overflow-y-auto border-t border-stone-100 pt-4">
+                    {report?.score && report.score !== "—" && (
                       <p className="text-sm text-stone-600">
-                        Saved for your teacher. Feel free to take the quiz again
-                        any time.
+                        You scored{" "}
+                        <span className="text-lg font-bold text-sky-700">
+                          {report.score}
+                        </span>
+                        .
                       </p>
                     )}
+
+                    {report?.summary && (
+                      <p className="mt-2 text-sm text-stone-600">
+                        {report.summary}
+                      </p>
+                    )}
+
+                    {report &&
+                      ((report.strengths && report.strengths.length > 0) ||
+                        (report.gaps && report.gaps.length > 0)) && (
+                        <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                          {report.strengths && report.strengths.length > 0 && (
+                            <div>
+                              <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
+                                Strengths
+                              </p>
+                              <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-700">
+                                {report.strengths.map((x, j) => (
+                                  <li key={j}>{x}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
+                          {report.gaps && report.gaps.length > 0 && (
+                            <div>
+                              <p className="text-xs font-semibold uppercase tracking-wide text-amber-600">
+                                To review
+                              </p>
+                              <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-700">
+                                {report.gaps.map((x, j) => (
+                                  <li key={j}>{x}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                    <p className="mt-4 text-sm text-stone-600">
+                      Saved for your teacher. If you’re not happy with your
+                      score, feel free to take the quiz again.
+                    </p>
                   </div>
                 )}
 
