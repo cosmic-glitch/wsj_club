@@ -114,11 +114,11 @@ export default function AdminSessions({ groups }: { groups: ArticleGroup[] }) {
                       Delete button's "Deleting…") leak onto whatever attempt
                       shifts into its slot. */}
                   {/* Fixed-width columns ("tabbed out") so that, down the list,
-                      every name, every time, and every score line up vertically.
-                      The score sits right after the time rather than floating to
-                      the far edge. */}
+                      every name, every score, and every time line up vertically.
+                      The score column keeps its width even when a score is
+                      missing, so the times still align. */}
                   <ol className="space-y-0.5">
-                    {g.attempts.map((s, i) => {
+                    {g.attempts.map((s) => {
                       const score = s.report?.score;
                       return (
                         <li key={s.blobUrl}>
@@ -127,20 +127,15 @@ export default function AdminSessions({ groups }: { groups: ArticleGroup[] }) {
                             onClick={() => setOpen(s)}
                             className="group flex w-full items-baseline gap-3 rounded-md px-2 py-1 text-left hover:bg-sky-50"
                           >
-                            <span className="w-4 shrink-0 text-xs font-medium text-stone-400">
-                              {i + 1}.
-                            </span>
                             <span className="w-24 shrink-0 whitespace-nowrap font-medium text-stone-800 group-hover:text-sky-700">
                               {s.studentName}
+                            </span>
+                            <span className="w-12 shrink-0 whitespace-nowrap font-semibold text-sky-700">
+                              {score}
                             </span>
                             <span className="w-36 shrink-0 whitespace-nowrap text-stone-500">
                               {fmtLocal(s.endedAt, mounted)}
                             </span>
-                            {score && (
-                              <span className="shrink-0 whitespace-nowrap font-semibold text-sky-700">
-                                {score}
-                              </span>
-                            )}
                           </button>
                         </li>
                       );
