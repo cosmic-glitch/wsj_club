@@ -1,0 +1,126 @@
+{
+  "date": "2026-06-20",
+  "title": "The Classic Movie That Was Nearly Destroyed by a Single Line of Code",
+  "articleUrl": "https://www.wsj.com/business/media/toy-story-5-saved-pixar-78e29161",
+  "pdfUrl": "/pdfs/2026-06-20.pdf",
+  "voiceQuiz": true,
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "existential",
+      "partOfSpeech": "adjective",
+      "articleQuote": "A movie going kaput would be a crisis at any studio. At this one, it was existential.",
+      "inContext": "Losing the film wasn't just a setback for Pixar — it threatened the studio's very survival, since missing the deadline could have ended the company.",
+      "meaning": "Relating to existence itself. An \"existential\" threat is one so serious it endangers whether something — a company, a person, a way of life — continues to exist at all.",
+      "examples": [
+        "For a small bakery, losing its only oven isn't an inconvenience — it's an existential problem.",
+        "The team treated the championship game as existential, as if their whole season's meaning depended on it."
+      ]
+    },
+    {
+      "word": "cantankerous",
+      "partOfSpeech": "adjective",
+      "articleQuote": "long before a cowboy, a space ranger and a cantankerous spud went up against a tablet",
+      "inContext": "It's a playful description of Mr. Potato Head — the grumpy, easily irritated toy (a \"spud\" is a potato).",
+      "meaning": "Bad-tempered, argumentative, and quick to complain — generally difficult to get along with.",
+      "examples": [
+        "Our cantankerous neighbor grumbles every time a stray ball lands in his yard.",
+        "She woke up cantankerous before her first coffee, snapping at anyone who spoke to her."
+      ]
+    },
+    {
+      "word": "avert",
+      "partOfSpeech": "verb",
+      "articleQuote": "the company's leaders huddled in a conference room to discuss plans for averting disaster",
+      "inContext": "Pixar's leaders were scrambling to prevent the disaster — the permanent loss of the movie — before it became final.",
+      "meaning": "To prevent something bad from happening, or to turn it away before it can do harm.",
+      "examples": [
+        "A quick apology averted what could have become a huge fight between the two friends.",
+        "Slamming on the brakes, the driver averted a collision by inches."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Redundancy and single points of failure",
+      "articleQuote": "The mechanism we had in place specifically to help us recover from data failures had itself failed.",
+      "inContext": "Pixar assumed it was safe because it had a backup system — but that backup had quietly stopped working, so when the master files were deleted there was almost no surviving copy.",
+      "meaning": "A \"single point of failure\" is one part whose failure breaks the whole system. \"Redundancy\" is the cure: keep extra, independent copies or components so that if one fails, others still work. Serious backups follow rules like 3-2-1 — three copies, on two kinds of storage, with one kept somewhere else — which is exactly why the only surviving copy of the film turned out to be on a computer at an employee's house."
+    },
+    {
+      "name": "Blameless post-mortem",
+      "articleQuote": "Looking for someone to blame doesn't help us learn from mistakes.",
+      "inContext": "After the deletion, Pixar's co-founder deliberately didn't hunt for who typed the command; he focused on fixing the film and making sure it could never happen again.",
+      "meaning": "A \"post-mortem\" is a review done after something goes wrong. A blameless one asks \"what about our system let this happen?\" instead of \"whose fault is it?\" Because people hide mistakes when they fear punishment, removing blame gets the truth out and lets a team fix the real cause — the same reason it works for a group project or a sports team, not just a film studio."
+    },
+    {
+      "name": "Access control (least privilege)",
+      "articleQuote": "it was easy to move between their personal folders and that central server—too easy, as it turned out.",
+      "inContext": "Every technical employee could reach and change the master \"Toy Story 2\" files, so one person typing a single command in the wrong place could wipe out the entire movie.",
+      "meaning": "Access control means deciding who is allowed to see or change what. \"Least privilege\" is the rule of giving each person only the access they actually need — no more — so that one mistake, or one bad actor, can't cause maximum damage. It's why a school hands students and the principal different keys, and why your phone asks before letting an app reach your photos."
+    },
+    {
+      "name": "Intellectual property",
+      "articleQuote": "inside that computer was billions of dollars of intellectual property: Woody, Buzz Lightyear and Mr. Potato Head.",
+      "inContext": "The characters and the film itself — not the physical computer — were what made the data worth a fortune; they are creations Pixar legally owns.",
+      "meaning": "Intellectual property (IP) is a creation of the mind — a story, character, invention, song, logo, or design — that the law treats as something a person or company owns, through tools like copyright, trademarks, and patents. It's why you can't make and sell your own Buzz Lightyear movies, and why companies guard their characters and inventions so fiercely."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What nearly destroyed \"Toy Story 2\" before it was released?",
+      "options": [
+        "A fire at Pixar's offices destroyed the servers",
+        "Someone accidentally ran a command that deleted the movie's files",
+        "A computer virus from the internet infected the studio",
+        "Steve Jobs decided to cancel the project"
+      ],
+      "answerIndex": 1,
+      "explanation": "A technical employee's deletion command, run in the wrong place, erased about 90% of the film in seconds."
+    },
+    {
+      "question": "How was the movie ultimately recovered?",
+      "options": [
+        "From Pixar's main backup system, which worked perfectly",
+        "From a copy an employee happened to have on a computer at home",
+        "The animators redrew everything from scratch over one weekend",
+        "From a copy Steve Jobs kept in his office"
+      ],
+      "answerIndex": 1,
+      "explanation": "An employee had been working from home and had the only surviving copy, which was driven back to Pixar to restore the film."
+    },
+    {
+      "question": "Why was the deletion nearly catastrophic, even though Pixar had a backup system?",
+      "options": [
+        "The backup system had quietly stopped working, so there was almost no usable copy",
+        "The backups were stored in a language no one could read",
+        "Pixar had never actually made any backups at all",
+        "Restoring the backups would have cost too much money"
+      ],
+      "answerIndex": 0,
+      "explanation": "The very system meant to recover lost data had itself failed — a single point of failure — leaving the home computer as the only real redundancy."
+    },
+    {
+      "question": "According to co-founder Ed Catmull, why didn't Pixar focus on finding who typed the command?",
+      "options": [
+        "They already knew exactly who had done it",
+        "Punishing the person would have been too expensive",
+        "Hunting for blame doesn't help a team learn and fix the real problem",
+        "The employee responsible had already quit"
+      ],
+      "answerIndex": 2,
+      "explanation": "Catmull said looking for someone to blame doesn't help you learn from mistakes; the goal was fixing the system so it couldn't happen again."
+    },
+    {
+      "question": "The article calls the lost movie an \"existential\" crisis for Pixar. This means the crisis:",
+      "options": [
+        "Was mostly about hurt feelings",
+        "Threatened the company's very survival",
+        "Could be solved easily with more money",
+        "Affected only one small department"
+      ],
+      "answerIndex": 1,
+      "explanation": "\"Existential\" describes a threat serious enough to endanger whether something continues to exist — here, Pixar itself."
+    }
+  ]
+}
