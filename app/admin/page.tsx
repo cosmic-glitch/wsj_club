@@ -1,38 +1,16 @@
-import Link from "next/link";
 import { list } from "@vercel/blob";
 import { currentUser, isAdmin, adminConfigured } from "@/lib/auth";
-import DeleteSessionButton from "@/components/DeleteSessionButton";
-import SessionAudio from "@/components/SessionAudio";
+import { dateBig } from "@/lib/content";
+import AdminSessions, {
+  type Session,
+  type ArticleGroup,
+} from "@/components/AdminSessions";
 
 // Reads cookies + Blob at request time — never static.
 export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "Quiz sessions · WSJ Reading Club",
-};
-
-type Turn = { role: "student" | "tutor"; text: string };
-type Report = {
-  score?: string;
-  summary?: string;
-  strengths?: string[];
-  gaps?: string[];
-  keyIdeas?: string;
-  vocab?: string;
-  concepts?: string;
-};
-type Session = {
-  date: string;
-  title: string;
-  studentName: string;
-  loginUser?: string;
-  endedAt: string;
-  transcript: Turn[];
-  report: Report | null;
-  audioUrl?: string;
-  // The Blob URL of this session's JSON — attached at load time so the teacher
-  // can delete it. Not part of the saved JSON itself.
-  blobUrl: string;
 };
 
 async function loadSessions(): Promise<Session[] | { error: string }> {
@@ -58,13 +36,36 @@ async function loadSessions(): Promise<Session[] | { error: string }> {
           })
       )
     ).filter((s): s is Session => s !== null);
-    // Newest first (by when the quiz ended).
-    sessions.sort((a, b) => (b.endedAt ?? "").localeCompare(a.endedAt ?? ""));
     return sessions;
   } catch (err) {
     console.error("Loading quiz sessions failed:", err);
     return { error: "Could not load sessions (is Blob storage configured?)." };
   }
+}
+
+/**
+ * Group every saved session by its article (one table row per day), newest
+ * article first, with attempts ordered chronologically within each article so
+ * the "sequenced list" numbers them 1, 2, 3 in the order they were taken. The
+ * date label is computed here (with the shared dateBig) because lib/content
+ * can't be imported into the client component.
+ */
+function groupByArticle(sessions: Session[]): ArticleGroup[] {
+  const byDate = new Map<string, ArticleGroup>();
+  for (const s of sessions) {
+    let g = byDate.get(s.date);
+    if (!g) {
+      g = { date: s.date, dateLabel: dateBig(s.date), title: s.title, attempts: [] };
+      byDate.set(s.date, g);
+    }
+    g.attempts.push(s);
+  }
+  const groups = Array.from(byDate.values());
+  groups.sort((a, b) => b.date.localeCompare(a.date));
+  for (const g of groups) {
+    g.attempts.sort((a, b) => (a.endedAt ?? "").localeCompare(b.endedAt ?? ""));
+  }
+  return groups;
 }
 
 export default async function AdminPage() {
@@ -93,7 +94,8 @@ export default async function AdminPage() {
     <div>
       <h1 className="font-serif text-3xl font-bold text-stone-900">Quiz sessions</h1>
       <p className="mt-1 text-sm text-stone-500">
-        Saved voice-quiz transcripts and report cards.
+        Saved voice-quiz attempts by article — click any attempt for its full
+        report card, recording, and transcript.
       </p>
 
       {"error" in result ? (
@@ -105,106 +107,7 @@ export default async function AdminPage() {
           No quiz sessions yet.
         </p>
       ) : (
-        <div className="mt-6 space-y-5">
-          {result.map((s, i) => (
-            <details
-              key={i}
-              className="rounded-xl border border-stone-200 bg-white p-5 shadow-sm"
-            >
-              <summary className="cursor-pointer list-none">
-                <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <span className="font-semibold text-stone-900">
-                    {s.studentName}
-                    {s.report?.score && (
-                      <span className="ml-2 font-bold text-sky-700">{s.report.score}</span>
-                    )}
-                  </span>
-                  <span className="flex items-center gap-3">
-                    <span className="text-xs text-stone-400">
-                      {s.endedAt ? new Date(s.endedAt).toLocaleString() : ""}
-                    </span>
-                    <DeleteSessionButton
-                      url={s.blobUrl}
-                      audioUrl={s.audioUrl}
-                      label={`${s.studentName} · ${s.title}`}
-                    />
-                  </span>
-                </div>
-                <p className="mt-1 text-sm text-stone-600">
-                  <Link
-                    href={`/reading/${s.date}`}
-                    className="text-sky-700 hover:underline"
-                  >
-                    {s.title}
-                  </Link>
-                </p>
-                {s.report?.summary && (
-                  <p className="mt-1 text-sm text-stone-500">{s.report.summary}</p>
-                )}
-              </summary>
-
-              {s.report && (
-                <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                  {s.report.strengths && s.report.strengths.length > 0 && (
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
-                        Strengths
-                      </p>
-                      <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-700">
-                        {s.report.strengths.map((x, j) => (
-                          <li key={j}>{x}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                  {s.report.gaps && s.report.gaps.length > 0 && (
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wide text-amber-600">
-                        To review
-                      </p>
-                      <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-700">
-                        {s.report.gaps.map((x, j) => (
-                          <li key={j}>{x}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {s.audioUrl && (
-                <div className="mt-4">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-stone-400">
-                    Recording
-                  </p>
-                  <SessionAudio src={s.audioUrl} />
-                </div>
-              )}
-
-              <div className="mt-4">
-                <p className="text-xs font-semibold uppercase tracking-wide text-stone-400">
-                  Transcript
-                </p>
-                <div className="mt-2 space-y-1.5">
-                  {s.transcript?.map((t, j) => (
-                    <p key={j} className="text-sm">
-                      <span
-                        className={
-                          t.role === "tutor"
-                            ? "font-semibold text-sky-700"
-                            : "font-semibold text-stone-700"
-                        }
-                      >
-                        {t.role === "tutor" ? "Tutor" : s.studentName}:{" "}
-                      </span>
-                      <span className="text-stone-600">{t.text}</span>
-                    </p>
-                  ))}
-                </div>
-              </div>
-            </details>
-          ))}
-        </div>
+        <AdminSessions groups={groupByArticle(result)} />
       )}
     </div>
   );

@@ -12,10 +12,14 @@ export default function DeleteSessionButton({
   url,
   audioUrl,
   label,
+  onDeleted,
 }: {
   url: string;
   audioUrl?: string;
   label: string;
+  // Optional: called after a successful delete (e.g. to close the modal it sits
+  // in). The list still refreshes via router.refresh() regardless.
+  onDeleted?: () => void;
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
@@ -41,6 +45,7 @@ export default function DeleteSessionButton({
         throw new Error(data.error || "Delete failed.");
       }
       router.refresh();
+      onDeleted?.();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Delete failed.");
       setBusy(false);
