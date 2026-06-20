@@ -22,7 +22,7 @@ export default function VoiceQuizStep({
 }) {
   return (
     <>
-      <span className="mx-1.5 text-stone-300" aria-hidden>
+      <span className="mx-2.5 text-stone-300" aria-hidden>
         ·
       </span>
       <span className="inline-block align-baseline">

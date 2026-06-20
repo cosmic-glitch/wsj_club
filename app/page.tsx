@@ -6,10 +6,12 @@ import { getAllReadings, dateBig } from "@/lib/content";
 // One shared blue-link style so every link on the page matches.
 const linkClass = "text-sky-700 transition hover:text-sky-900 hover:underline";
 
-// The middot that separates actions in a row's compact action bar.
+// The middot that separates actions in a row's compact action bar. Its
+// horizontal margin is generous so each action reads as a distinct tap target
+// with clear breathing room — especially on a phone, where the bar wraps.
 function Sep() {
   return (
-    <span className="mx-1.5 text-stone-300" aria-hidden>
+    <span className="mx-2.5 text-stone-300" aria-hidden>
       ·
     </span>
   );
@@ -56,27 +58,27 @@ export default function Home() {
               </span>
             </div>
 
-            {/* Compact action bar — text links separated by middots. */}
+            {/* Compact action bar — text links separated by middots: Web link ·
+                PDF · Handout · Voice quiz. The PDF is its own item (not a "(PDF)"
+                aside) so each link is a clear, separately tappable target. */}
             <div className="mt-1 text-sm text-stone-600">
               {sources.map((a, i) => (
                 <span key={a.articleUrl}>
                   {i > 0 && <Sep />}
                   <ArticleLink href={a.articleUrl} className={linkClass}>
-                    {single ? "Article" : `Article ${i + 1}`}
+                    {single ? "Web link" : `Web link ${i + 1}`}
                   </ArticleLink>
                   {a.pdfUrl && (
                     <>
-                      {" "}
-                      (
+                      <Sep />
                       <a
                         href={a.pdfUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={linkClass}
                       >
-                        PDF
+                        {single ? "PDF" : `PDF ${i + 1}`}
                       </a>
-                      )
                     </>
                   )}
                 </span>
