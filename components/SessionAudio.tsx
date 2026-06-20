@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /**
  * Audio player for a saved quiz recording on /admin.
@@ -21,14 +21,18 @@ import { useEffect, useRef } from "react";
 export default function SessionAudio({ src }: { src: string }) {
   const ref = useRef<HTMLAudioElement>(null);
 
-  // The recording lives on Vercel Blob, a different origin, so the HTML
-  // `download` attribute is ignored (browsers refuse cross-origin downloads).
-  // Blob honors a `?download=1` query param that responds with
-  // `Content-Disposition: attachment`, which forces a save instead of in-tab
-  // playback — the reliable way to give the teacher a "share this file" link.
-  const downloadUrl = src.includes("?")
-    ? `${src}&download=1`
-    : `${src}?download=1`;
+  // "Copied!" feedback after copying the playback link to the clipboard.
+  const [copied, setCopied] = useState(false);
+
+  async function copyLink() {
+    try {
+      await navigator.clipboard.writeText(src);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1500);
+    } catch {
+      // Clipboard blocked (e.g. permissions) — no-op; the open-link is still there.
+    }
+  }
 
   useEffect(() => {
     const audio = ref.current;
@@ -62,22 +66,30 @@ export default function SessionAudio({ src }: { src: string }) {
     <>
       {/* preload="metadata" so the duration-fix can run before the teacher hits play. */}
       <audio ref={ref} controls preload="metadata" src={src} className="mt-2 w-full">
-        <a href={downloadUrl}>Download recording</a>
+        <a href={src}>Open recording</a>
       </audio>
-      {/* Save the file (e.g. to share a strong attempt with another student). */}
-      <a
-        href={downloadUrl}
-        className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-sky-700 hover:text-sky-800 hover:underline"
-      >
-        <svg
-          viewBox="0 0 16 16"
-          aria-hidden="true"
-          className="h-4 w-4 fill-current"
+      {/* A shareable playback link rather than a file download: the bare Blob URL
+          plays the recording inline in any browser, so pasting it into iMessage
+          shows a clickable link the recipient can play — instead of a raw
+          .webm/.mp4 attachment that shares poorly. Open it in a new tab, or copy
+          it to share. */}
+      <div className="mt-2 flex items-center gap-4 text-sm font-medium">
+        <a
+          href={src}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sky-700 hover:text-sky-800 hover:underline"
         >
-          <path d="M8 1a.75.75 0 0 1 .75.75v6.69l1.72-1.72a.75.75 0 1 1 1.06 1.06l-3 3a.75.75 0 0 1-1.06 0l-3-3a.75.75 0 0 1 1.06-1.06l1.72 1.72V1.75A.75.75 0 0 1 8 1ZM2.75 11a.75.75 0 0 1 .75.75v1.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-1.5a.75.75 0 0 1 .75-.75Z" />
-        </svg>
-        Download recording
-      </a>
+          Open in new tab
+        </a>
+        <button
+          type="button"
+          onClick={copyLink}
+          className="text-sky-700 hover:text-sky-800 hover:underline"
+        >
+          {copied ? "Copied!" : "Copy playback link"}
+        </button>
+      </div>
     </>
   );
 }
