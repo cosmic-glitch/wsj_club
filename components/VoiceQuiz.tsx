@@ -349,6 +349,15 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     }
   }
 
+  // "Cancel quiz" — bail out of a live session with nothing saved: no recording
+  // uploaded, no transcript graded, no session written. We just stop the
+  // recorder (discarding its chunks), tear down the connection, and close.
+  // Setting the once-guard also blocks a late end() from a double-click race.
+  function cancel() {
+    endStartedRef.current = true;
+    close();
+  }
+
   function close() {
     cleanupConnection();
     setPhase("idle");
@@ -443,13 +452,25 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                 <p className="mt-2 text-xs text-stone-400">
                   This quiz is recorded and saved for your teacher.
                 </p>
-                <button
-                  type="button"
-                  onClick={end}
-                  className="mt-5 rounded-lg bg-stone-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-700"
-                >
-                  End quiz
-                </button>
+                <div className="mt-5 flex items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={end}
+                    className="rounded-lg bg-stone-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-700"
+                  >
+                    End quiz
+                  </button>
+                  {/* Cancel always sits beside End: it abandons the session with
+                      nothing saved (no recording, no report) — for when the
+                      student wants to bail out rather than be graded. */}
+                  <button
+                    type="button"
+                    onClick={cancel}
+                    className="rounded-lg border border-stone-300 px-4 py-2.5 text-sm font-medium text-stone-600 transition hover:bg-stone-50"
+                  >
+                    Cancel quiz
+                  </button>
+                </div>
               </div>
             )}
 
