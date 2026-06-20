@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { list } from "@vercel/blob";
 import { currentUser, isAdmin, adminConfigured } from "@/lib/auth";
+import DeleteSessionButton from "@/components/DeleteSessionButton";
 
 // Reads cookies + Blob at request time — never static.
 export const dynamic = "force-dynamic";
@@ -28,6 +29,9 @@ type Session = {
   transcript: Turn[];
   report: Report | null;
   audioUrl?: string;
+  // The Blob URL of this session's JSON — attached at load time so the teacher
+  // can delete it. Not part of the saved JSON itself.
+  blobUrl: string;
 };
 
 async function loadSessions(): Promise<Session[] | { error: string }> {
@@ -44,7 +48,8 @@ async function loadSessions(): Promise<Session[] | { error: string }> {
           .map(async (b) => {
             try {
               const res = await fetch(b.url, { cache: "no-store" });
-              return (await res.json()) as Session;
+              const session = (await res.json()) as Session;
+              return { ...session, blobUrl: b.url };
             } catch (err) {
               console.error("Skipping unreadable session blob:", b.pathname, err);
               return null;
@@ -113,8 +118,15 @@ export default async function AdminPage() {
                       <span className="ml-2 font-bold text-sky-700">{s.report.score}</span>
                     )}
                   </span>
-                  <span className="text-xs text-stone-400">
-                    {s.endedAt ? new Date(s.endedAt).toLocaleString() : ""}
+                  <span className="flex items-center gap-3">
+                    <span className="text-xs text-stone-400">
+                      {s.endedAt ? new Date(s.endedAt).toLocaleString() : ""}
+                    </span>
+                    <DeleteSessionButton
+                      url={s.blobUrl}
+                      audioUrl={s.audioUrl}
+                      label={`${s.studentName} · ${s.title}`}
+                    />
                   </span>
                 </div>
                 <p className="mt-1 text-sm text-stone-600">
