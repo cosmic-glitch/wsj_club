@@ -113,6 +113,10 @@ export default function AdminSessions({ groups }: { groups: ArticleGroup[] }) {
                       an index key would let a removed row's React state (e.g. the
                       Delete button's "Deleting…") leak onto whatever attempt
                       shifts into its slot. */}
+                  {/* Fixed-width columns ("tabbed out") so that, down the list,
+                      every name, every time, and every score line up vertically.
+                      The score sits right after the time rather than floating to
+                      the far edge. */}
                   <ol className="space-y-0.5">
                     {g.attempts.map((s, i) => {
                       const score = s.report?.score;
@@ -121,22 +125,19 @@ export default function AdminSessions({ groups }: { groups: ArticleGroup[] }) {
                           <button
                             type="button"
                             onClick={() => setOpen(s)}
-                            className="group flex w-full items-baseline gap-2 rounded-md px-2 py-1 text-left hover:bg-sky-50"
+                            className="group flex w-full items-baseline gap-3 rounded-md px-2 py-1 text-left hover:bg-sky-50"
                           >
                             <span className="w-4 shrink-0 text-xs font-medium text-stone-400">
                               {i + 1}.
                             </span>
-                            <span className="font-medium text-stone-800 group-hover:text-sky-700">
+                            <span className="w-24 shrink-0 whitespace-nowrap font-medium text-stone-800 group-hover:text-sky-700">
                               {s.studentName}
                             </span>
-                            <span className="text-stone-300" aria-hidden>
-                              ·
-                            </span>
-                            <span className="text-stone-500">
+                            <span className="w-36 shrink-0 whitespace-nowrap text-stone-500">
                               {fmtLocal(s.endedAt, mounted)}
                             </span>
                             {score && (
-                              <span className="ml-auto shrink-0 pl-2 font-semibold text-sky-700">
+                              <span className="shrink-0 whitespace-nowrap font-semibold text-sky-700">
                                 {score}
                               </span>
                             )}
