@@ -32,7 +32,8 @@ function StepIcon({ state }: { state: StepState }) {
 }
 
 /**
- * The "Voice quiz" launcher in the home-page action bar. Clicking it:
+ * The "Voice quiz" launcher in the home-page action bar. It's shown to everyone
+ * (logged in or not); the login check happens on click. Clicking it:
  *   - logged out → a small "You need to log in" popup;
  *   - logged in  → opens a modal and immediately starts a WebRTC
  *     speech-to-speech session with the OpenAI Realtime API, so an AI tutor
