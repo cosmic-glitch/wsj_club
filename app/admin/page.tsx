@@ -2,6 +2,7 @@ import Link from "next/link";
 import { list } from "@vercel/blob";
 import { currentUser, isAdmin, adminConfigured } from "@/lib/auth";
 import DeleteSessionButton from "@/components/DeleteSessionButton";
+import SessionAudio from "@/components/SessionAudio";
 
 // Reads cookies + Blob at request time — never static.
 export const dynamic = "force-dynamic";
@@ -176,9 +177,7 @@ export default async function AdminPage() {
                   <p className="text-xs font-semibold uppercase tracking-wide text-stone-400">
                     Recording
                   </p>
-                  <audio controls preload="none" src={s.audioUrl} className="mt-2 w-full">
-                    <a href={s.audioUrl}>Download recording</a>
-                  </audio>
+                  <SessionAudio src={s.audioUrl} />
                 </div>
               )}
 
