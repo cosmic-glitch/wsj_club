@@ -31,7 +31,7 @@ function StepIcon({ state }: { state: StepState }) {
 }
 
 /**
- * The "Voice quiz" launcher in the home-page table. Clicking it:
+ * The "Voice quiz" launcher in the home-page action bar. Clicking it:
  *   - logged out → a small "You need to log in" popup;
  *   - logged in  → opens a modal and immediately starts a WebRTC
  *     speech-to-speech session with the OpenAI Realtime API, so an AI tutor
@@ -367,10 +367,13 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
   return (
     <>
+      {/* Styled as a text link so it sits inline in the home-page action bar
+          alongside the Article / Handout links (it's still a button — it opens
+          the quiz modal). */}
       <button
         type="button"
         onClick={launch}
-        className="rounded-lg bg-sky-700 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-sky-800"
+        className="font-medium text-sky-700 transition hover:text-sky-900 hover:underline"
       >
         Voice quiz
       </button>
