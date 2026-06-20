@@ -108,6 +108,11 @@ export default function AdminSessions({ groups }: { groups: ArticleGroup[] }) {
                   </Link>
                 </td>
                 <td className="px-4 py-3">
+                  {/* key MUST be the stable blobUrl, never the array index: the
+                      Delete flow removes one attempt and refreshes the list, and
+                      an index key would let a removed row's React state (e.g. the
+                      Delete button's "Deleting…") leak onto whatever attempt
+                      shifts into its slot. */}
                   <ol className="space-y-0.5">
                     {g.attempts.map((s, i) => {
                       const score = s.report?.score;
