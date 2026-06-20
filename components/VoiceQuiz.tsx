@@ -18,13 +18,19 @@ type Report = {
 type Phase =
   | "idle" // modal closed
   | "needLogin" // clicked while logged out
-  | "connecting"
-  | "live"
+  | "starting" // mic permission + first tutor question
+  | "tutorTurn" // tutor's question is shown/spoken; waiting for the student to start
+  | "recording" // student is recording their answer
+  | "transcribing" // turning the recorded answer into text
+  | "thinking" // generating the tutor's next line
   | "wrapup" // after "End quiz": one screen that fills in (upload → grade → score)
-  | "error";
+  | "error"; // a fatal startup problem (mic denied, first question failed)
 
 // The state of one step in the post-quiz wrap-up checklist.
 type StepState = "pending" | "active" | "done";
+
+// How many bars the live recording meter shows (a short history of mic levels).
+const METER_BARS = 24;
 
 function StepIcon({ state }: { state: StepState }) {
   return (
@@ -40,89 +46,96 @@ function StepIcon({ state }: { state: StepState }) {
   );
 }
 
+function fmtClock(totalSeconds: number): string {
+  const m = Math.floor(totalSeconds / 60);
+  const s = totalSeconds % 60;
+  return `${m}:${s.toString().padStart(2, "0")}`;
+}
+
 /**
- * The "Voice quiz" launcher in the home-page action bar. It's shown to everyone
+ * The "Voice quiz" launcher in the home-page action bar. Shown to everyone
  * (logged in or not); the login check happens on click. Clicking it:
  *   - logged out → a small "You need to log in" popup;
- *   - logged in  → opens a modal and immediately starts a WebRTC
- *     speech-to-speech session with the OpenAI Realtime API, so an AI tutor
- *     quizzes the student aloud about that day's article.
+ *   - logged in  → opens a modal and runs a TURN-BY-TURN oral quiz about that
+ *     day's article.
  *
- * The transcript is captured and, on "End quiz", POSTed to the server, which
- * grades it into a report card and saves both to Vercel Blob for the teacher to
- * review on /admin. At the end the student is shown their full report card —
- * the same score + summary + strengths/gaps the teacher sees on /admin — plus
- * an invitation to retake the quiz if they're not happy with it. The live
- * transcript and the audio recording stay private (teacher-only).
+ * The flow is a discrete loop (no realtime speech-to-speech model):
+ *   tutor line  → spoken with TTS (/api/quiz-tts) and shown on screen
+ *   "Start speaking" → records the student's mic (state toggle, not push-to-hold)
+ *   "Stop"       → transcribes the clip (/api/quiz-transcribe), shows it
+ *   next line    → /api/quiz-turn returns the tutor's next question; repeat
+ * Turn-taking is entirely the student's call (the buttons), never the model's.
  *
- * The whole conversation is ALSO recorded as audio: both the student's mic and
- * the tutor's voice are already live MediaStreams in the browser, so we mix them
- * with the Web Audio API and run a MediaRecorder over the result (no change to
- * the WebRTC/model path). On "End quiz" the recording is uploaded to Blob and
- * linked from the session for the teacher to play back. Recording is
- * best-effort: if it can't start or upload, the quiz proceeds normally.
+ * On "End quiz" the transcript is POSTed to /api/quiz-report, graded into a
+ * report card, and saved to Blob for the teacher on /admin; the student is then
+ * shown their full report card. A single continuous recorder captures only the
+ * student's spoken answers (pause/resume between turns) into ONE playable file,
+ * uploaded straight to Blob (via /api/quiz-audio's token) and linked from the
+ * session for the teacher to play back. Recording is best-effort — a failure
+ * never breaks the quiz.
  */
 export default function VoiceQuiz({ date, title }: { date: string; title: string }) {
   // Login state comes from the shared AuthProvider (one /api/me fetch for the
-  // whole page); login/logout both reload the page, so it stays fresh. Reading
-  // it from context (not on click) keeps the click a clean user gesture for
-  // getUserMedia / audio autoplay.
+  // whole page); login/logout both reload the page, so it stays fresh.
   const { user } = useAuth();
   const [phase, setPhase] = useState<Phase>("idle");
   const [error, setError] = useState("");
-  // The graded report card (score + summary + strengths/gaps), shown to the
-  // student on the wrap-up screen — the same card the teacher sees on /admin.
-  // null until the report comes back; score "—" means there was nothing to grade.
+  // A transient, non-fatal notice (e.g. "couldn't catch that — try again") shown
+  // as a small banner in the live screen; cleared on the next action.
+  const [notice, setNotice] = useState("");
+  // When a mid-quiz tutor-turn request fails, we keep the session alive and show
+  // a Retry instead of dropping to the fatal error screen.
+  const [canRetry, setCanRetry] = useState(false);
+
+  // The on-screen conversation (tutor questions + the student's transcribed
+  // answers). The student now sees their own answers, unlike the realtime build.
+  const [turns, setTurns] = useState<Turn[]>([]);
+  // Whether the tutor's TTS audio is currently playing (drives the speaker hint).
+  const [ttsPlaying, setTtsPlaying] = useState(false);
+
+  // Live recording UI: elapsed seconds + a short rolling history of mic levels.
+  const [recSeconds, setRecSeconds] = useState(0);
+  const [levels, setLevels] = useState<number[]>(() => new Array(METER_BARS).fill(0));
+
+  // The graded report card, shown to the student on the wrap-up screen.
   const [report, setReport] = useState<Report | null>(null);
-  // Post-quiz wrap-up: a persistent checklist on one screen (no screen-swap, so
-  // it can't flash by). Each step fills in as it completes; `finished` reveals
-  // the score line and enables Close.
   const [uploadStep, setUploadStep] = useState<StepState>("pending");
   const [gradeStep, setGradeStep] = useState<StepState>("pending");
   const [finished, setFinished] = useState(false);
 
-  const pcRef = useRef<RTCPeerConnection | null>(null);
-  const micRef = useRef<MediaStream | null>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  // The canonical transcript (refs avoid stale closures across async turns).
   const transcriptRef = useRef<Turn[]>([]);
 
-  // Audio recording: a MediaRecorder over a Web Audio mix of the mic + the
-  // tutor's remote track. All best-effort — a failure here never breaks the quiz.
-  const recorderRef = useRef<MediaRecorder | null>(null);
-  const chunksRef = useRef<Blob[]>([]);
-  const audioCtxRef = useRef<AudioContext | null>(null);
+  const micRef = useRef<MediaStream | null>(null);
+  const audioElRef = useRef<HTMLAudioElement | null>(null);
+  const ttsUrlRef = useRef<string | null>(null);
 
-  // The quiz ends only when the student clicks "End quiz" (the tutor tells them
-  // to, once it has wrapped up). This once-guard keeps end() idempotent against
-  // a double-click.
+  // Two recorders over the same mic stream:
+  //  - sessionRec: ONE recorder for the whole quiz, paused between turns, so the
+  //    saved teacher file is just the student's answers stitched into one clip.
+  //  - turnRec: a fresh recorder per turn, whose clip we send to transcription.
+  const sessionRecRef = useRef<MediaRecorder | null>(null);
+  const sessionChunksRef = useRef<Blob[]>([]);
+  const turnRecRef = useRef<MediaRecorder | null>(null);
+  const turnChunksRef = useRef<Blob[]>([]);
+
+  // Mic-level metering during recording (analyser + animation loop + timer).
+  const meterCtxRef = useRef<AudioContext | null>(null);
+  const rafRef = useRef<number | null>(null);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const levelsRef = useRef<number[]>(new Array(METER_BARS).fill(0));
+
+  // The quiz ends only when the student clicks "End quiz". This once-guard keeps
+  // end() idempotent and lets cancel() block a racing end().
   const endStartedRef = useRef(false);
 
-  function pushTurn(turn: Turn) {
+  function appendTurn(turn: Turn) {
     transcriptRef.current = [...transcriptRef.current, turn];
+    setTurns(transcriptRef.current);
   }
 
-  // The transcript is captured for the teacher's record, not shown to the
-  // student.
-  function handleEvent(raw: string) {
-    let evt: { type?: string; transcript?: string };
-    try {
-      evt = JSON.parse(raw);
-    } catch {
-      return;
-    }
-    const type = evt.type ?? "";
-    if (type === "conversation.item.input_audio_transcription.completed") {
-      if (evt.transcript?.trim()) pushTurn({ role: "student", text: evt.transcript.trim() });
-    } else if (
-      type === "response.output_audio_transcript.done" ||
-      type === "response.audio_transcript.done"
-    ) {
-      if (evt.transcript?.trim()) pushTurn({ role: "tutor", text: evt.transcript.trim() });
-    }
-  }
-
-  // Pick a container the browser can actually record (Chrome/Firefox: webm/opus;
-  // Safari: mp4). Undefined → let MediaRecorder choose its default.
+  // Pick a container the browser can record (Chrome/Firefox: webm/opus; Safari:
+  // mp4). Undefined → let MediaRecorder choose its default.
   function pickRecorderMime(): { mimeType: string } | undefined {
     if (typeof MediaRecorder === "undefined") return undefined;
     for (const mimeType of ["audio/webm;codecs=opus", "audio/webm", "audio/mp4"]) {
@@ -131,44 +144,196 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     return undefined;
   }
 
-  // Mix the student's mic and the tutor's remote track into one stream and record
-  // it. The remote track is still played to the student through the <audio>
-  // element (keeping it "live" so Web Audio actually receives samples) — this
-  // graph only feeds the recorder, not the speakers.
-  function startRecording(remote: MediaStream) {
-    const mic = micRef.current;
-    if (!mic || recorderRef.current) return; // ontrack can fire more than once
-    try {
-      const ctx = new AudioContext();
-      audioCtxRef.current = ctx;
-      const dest = ctx.createMediaStreamDestination();
-      ctx.createMediaStreamSource(mic).connect(dest);
-      ctx.createMediaStreamSource(remote).connect(dest);
+  // ---- Tutor speech (TTS) -------------------------------------------------
 
-      const rec = new MediaRecorder(dest.stream, pickRecorderMime());
-      chunksRef.current = [];
-      rec.ondataavailable = (e) => {
-        if (e.data.size) chunksRef.current.push(e.data);
-      };
-      rec.start();
-      recorderRef.current = rec;
-    } catch (err) {
-      // Recording is a bonus, never a blocker — the quiz goes on without it.
-      console.error("Could not start recording:", err);
+  function stopTts() {
+    const el = audioElRef.current;
+    if (el) {
+      el.onended = null;
+      try {
+        el.pause();
+      } catch {
+        // ignore
+      }
+      el.removeAttribute("src");
+    }
+    if (ttsUrlRef.current) {
+      URL.revokeObjectURL(ttsUrlRef.current);
+      ttsUrlRef.current = null;
+    }
+    setTtsPlaying(false);
+  }
+
+  // Speak the tutor's line. Best-effort: if TTS fails, the line is still on
+  // screen, so the quiz simply continues silently for that turn.
+  async function speak(text: string) {
+    stopTts();
+    setTtsPlaying(true);
+    try {
+      const res = await fetch("/api/quiz-tts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text }),
+      });
+      if (!res.ok) throw new Error("tts");
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      ttsUrlRef.current = url;
+      const el = audioElRef.current;
+      if (!el) {
+        setTtsPlaying(false);
+        return;
+      }
+      el.src = url;
+      el.onended = () => setTtsPlaying(false);
+      await el.play().catch(() => setTtsPlaying(false));
+    } catch {
+      setTtsPlaying(false);
     }
   }
 
-  // Stop the recorder and resolve with the finished audio Blob (null if there's
-  // nothing recorded). Awaits the recorder's final "stop" so all chunks land.
-  function stopRecording(): Promise<Blob | null> {
-    const rec = recorderRef.current;
-    recorderRef.current = null;
+  // ---- Tutor turns (the loop) --------------------------------------------
+
+  // Ask the server for the tutor's next line, given the transcript so far, then
+  // show + speak it. `first` is the opening greeting/question.
+  async function nextTutorTurn(first: boolean) {
+    setNotice("");
+    setCanRetry(false);
+    setPhase(first ? "starting" : "thinking");
+    try {
+      const res = await fetch("/api/quiz-turn", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ date, studentName: user, transcript: transcriptRef.current }),
+      });
+      const data = await res.json().catch(() => null);
+      if (!res.ok || !data?.text) {
+        throw new Error(data?.error ?? "Could not get the next question.");
+      }
+      appendTurn({ role: "tutor", text: data.text });
+      setPhase("tutorTurn");
+      void speak(data.text);
+    } catch (err) {
+      if (first) {
+        // Nothing has happened yet — a clean fatal error is fine.
+        teardown();
+        setError(err instanceof Error ? err.message : "Something went wrong.");
+        setPhase("error");
+      } else {
+        // Keep the session alive; let the student retry the next question.
+        setNotice("Trouble reaching the tutor. Tap Retry to continue.");
+        setCanRetry(true);
+        setPhase("tutorTurn");
+      }
+    }
+  }
+
+  // ---- Recording one answer ----------------------------------------------
+
+  function startMeter() {
+    try {
+      const ctx = new AudioContext();
+      meterCtxRef.current = ctx;
+      const source = ctx.createMediaStreamSource(micRef.current!);
+      const analyser = ctx.createAnalyser();
+      analyser.fftSize = 256;
+      source.connect(analyser); // analyser only — not to the speakers (no feedback)
+      const buf = new Uint8Array(analyser.fftSize);
+      const tick = () => {
+        analyser.getByteTimeDomainData(buf);
+        // RMS of the waveform around the 128 midpoint → a 0..1 loudness level.
+        let sum = 0;
+        for (let i = 0; i < buf.length; i++) {
+          const v = (buf[i] - 128) / 128;
+          sum += v * v;
+        }
+        const rms = Math.sqrt(sum / buf.length);
+        const level = Math.min(1, rms * 3); // scale up — speech rarely maxes RMS
+        const next = [...levelsRef.current.slice(1), level];
+        levelsRef.current = next;
+        setLevels(next);
+        rafRef.current = requestAnimationFrame(tick);
+      };
+      rafRef.current = requestAnimationFrame(tick);
+    } catch {
+      // The meter is decorative — recording still works without it.
+    }
+  }
+
+  function stopMeter() {
+    if (rafRef.current != null) {
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    }
+    meterCtxRef.current?.close().catch(() => {});
+    meterCtxRef.current = null;
+    levelsRef.current = new Array(METER_BARS).fill(0);
+    setLevels(levelsRef.current);
+  }
+
+  // "Start speaking" — a state toggle (no press-and-hold). Begins recording the
+  // student's mic; the live meter + timer make it obvious the mic is hot.
+  function startSpeaking() {
+    if (phase !== "tutorTurn") return;
+    setNotice("");
+    stopTts(); // if the tutor is still talking, the student is taking over
+
+    const mic = micRef.current;
+    if (!mic) return;
+
+    // The continuous teacher recorder: create-and-start on the first answer,
+    // resume on later ones (it was paused after the previous answer).
+    try {
+      if (!sessionRecRef.current) {
+        const rec = new MediaRecorder(mic, pickRecorderMime());
+        sessionChunksRef.current = [];
+        rec.ondataavailable = (e) => {
+          if (e.data.size) sessionChunksRef.current.push(e.data);
+        };
+        rec.start();
+        sessionRecRef.current = rec;
+      } else if (sessionRecRef.current.state === "paused") {
+        sessionRecRef.current.resume();
+      }
+    } catch {
+      // Teacher recording is best-effort — keep going.
+    }
+
+    // The per-turn recorder, whose clip we transcribe.
+    try {
+      const rec = new MediaRecorder(mic, pickRecorderMime());
+      turnChunksRef.current = [];
+      rec.ondataavailable = (e) => {
+        if (e.data.size) turnChunksRef.current.push(e.data);
+      };
+      rec.start();
+      turnRecRef.current = rec;
+    } catch {
+      setNotice("Couldn't start recording. Please check microphone access.");
+      return;
+    }
+
+    setRecSeconds(0);
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => setRecSeconds((s) => s + 1), 1000);
+    startMeter();
+    setPhase("recording");
+  }
+
+  // Stop the per-turn recorder and resolve its audio Blob (+ a filename the STT
+  // route can key the format off).
+  function stopTurnRecorder(): Promise<{ blob: Blob; filename: string } | null> {
+    const rec = turnRecRef.current;
+    turnRecRef.current = null;
     if (!rec || rec.state === "inactive") return Promise.resolve(null);
     return new Promise((resolve) => {
       rec.onstop = () => {
-        const chunks = chunksRef.current;
-        chunksRef.current = [];
-        resolve(chunks.length ? new Blob(chunks, { type: rec.mimeType || "audio/webm" }) : null);
+        const chunks = turnChunksRef.current;
+        turnChunksRef.current = [];
+        if (!chunks.length) return resolve(null);
+        const type = rec.mimeType || "audio/webm";
+        const ext = type.includes("mp4") ? "mp4" : type.includes("ogg") ? "ogg" : "webm";
+        resolve({ blob: new Blob(chunks, { type }), filename: `answer.${ext}` });
       };
       try {
         rec.stop();
@@ -178,98 +343,123 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     });
   }
 
-  function cleanupConnection() {
-    pcRef.current?.close();
-    pcRef.current = null;
-    micRef.current?.getTracks().forEach((t) => t.stop());
-    micRef.current = null;
-    // Defensive teardown for the error/unmount paths; end() stops the recorder
-    // first to capture the Blob, so by then this is a no-op.
-    const rec = recorderRef.current;
-    if (rec && rec.state !== "inactive") {
+  // "Stop" — finish the answer: pause the teacher recorder, transcribe the clip,
+  // show it, then ask for the tutor's next line.
+  async function stopSpeaking() {
+    if (phase !== "recording") return;
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+    stopMeter();
+
+    const turn = await stopTurnRecorder();
+    // Pause (don't stop) the teacher recorder so the next answer appends to the
+    // same file.
+    try {
+      if (sessionRecRef.current?.state === "recording") sessionRecRef.current.pause();
+    } catch {
+      // ignore
+    }
+
+    if (!turn) {
+      setNotice("I didn't catch any audio. Tap Start speaking to try again.");
+      setPhase("tutorTurn");
+      return;
+    }
+
+    setPhase("transcribing");
+    try {
+      const form = new FormData();
+      form.append("file", turn.blob, turn.filename);
+      const res = await fetch("/api/quiz-transcribe", { method: "POST", body: form });
+      const data = await res.json().catch(() => null);
+      const text = (data?.text ?? "").trim();
+      if (!res.ok || !text) {
+        setNotice("Sorry, I couldn't make out what you said. Tap Start speaking to try again.");
+        setPhase("tutorTurn");
+        return;
+      }
+      appendTurn({ role: "student", text });
+      await nextTutorTurn(false);
+    } catch {
+      setNotice("Sorry, I couldn't hear that. Tap Start speaking to try again.");
+      setPhase("tutorTurn");
+    }
+  }
+
+  // ---- Teardown ------------------------------------------------------------
+
+  // Stop the teacher recorder and resolve the single stitched recording.
+  function stopSessionRecorder(): Promise<{ blob: Blob; ext: string } | null> {
+    const rec = sessionRecRef.current;
+    sessionRecRef.current = null;
+    if (!rec || rec.state === "inactive") return Promise.resolve(null);
+    return new Promise((resolve) => {
+      rec.onstop = () => {
+        const chunks = sessionChunksRef.current;
+        sessionChunksRef.current = [];
+        if (!chunks.length) return resolve(null);
+        const type = rec.mimeType || "audio/webm";
+        const ext = type.includes("mp4") ? "mp4" : "webm";
+        resolve({ blob: new Blob(chunks, { type }), ext });
+      };
       try {
         rec.stop();
       } catch {
-        // already stopped
+        resolve(null);
+      }
+    });
+  }
+
+  function teardown() {
+    stopTts();
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+    stopMeter();
+    for (const rec of [turnRecRef.current, sessionRecRef.current]) {
+      if (rec && rec.state !== "inactive") {
+        try {
+          rec.stop();
+        } catch {
+          // ignore
+        }
       }
     }
-    recorderRef.current = null;
-    audioCtxRef.current?.close().catch(() => {});
-    audioCtxRef.current = null;
+    turnRecRef.current = null;
+    sessionRecRef.current = null;
+    turnChunksRef.current = [];
+    sessionChunksRef.current = [];
+    micRef.current?.getTracks().forEach((t) => t.stop());
+    micRef.current = null;
   }
+
+  // ---- Start / end / cancel / close --------------------------------------
 
   async function start() {
     setError("");
+    setNotice("");
+    setCanRetry(false);
     setReport(null);
     setUploadStep("pending");
     setGradeStep("pending");
     setFinished(false);
+    setTurns([]);
     transcriptRef.current = [];
     endStartedRef.current = false;
-    setPhase("connecting");
+    setPhase("starting");
 
     try {
-      // 1. Mic permission (this click is the user gesture that lets audio play).
-      const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
-      micRef.current = mic;
-
-      // 2. Mint an ephemeral key from our server (login-gated).
-      const tokenRes = await fetch("/api/realtime-session", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ date, studentName: user }),
-      });
-      const tokenData = await tokenRes.json();
-      if (!tokenRes.ok) {
-        throw new Error(tokenData.error ?? "Could not start the session.");
-      }
-      const { value: ephemeralKey, model } = tokenData;
-
-      // 3. WebRTC peer connection.
-      const pc = new RTCPeerConnection();
-      pcRef.current = pc;
-
-      pc.ontrack = (e) => {
-        const remote = e.streams[0];
-        if (audioRef.current) audioRef.current.srcObject = remote;
-        startRecording(remote);
-      };
-      mic.getTracks().forEach((t) => pc.addTrack(t, mic));
-
-      const dc = pc.createDataChannel("oai-events");
-      dc.onmessage = (e) => handleEvent(e.data);
-      dc.onopen = () => {
-        // Nudge the tutor to speak first (the greeting).
-        dc.send(JSON.stringify({ type: "response.create" }));
-      };
-
-      // 4. Offer / answer SDP exchange with OpenAI.
-      const offer = await pc.createOffer();
-      await pc.setLocalDescription(offer);
-
-      const sdpRes = await fetch(
-        `https://api.openai.com/v1/realtime/calls?model=${encodeURIComponent(model)}`,
-        {
-          method: "POST",
-          body: offer.sdp,
-          headers: {
-            Authorization: `Bearer ${ephemeralKey}`,
-            "Content-Type": "application/sdp",
-          },
-        }
-      );
-      if (!sdpRes.ok) {
-        throw new Error("Voice connection was refused.");
-      }
-      const answer = { type: "answer" as const, sdp: await sdpRes.text() };
-      await pc.setRemoteDescription(answer);
-
-      setPhase("live");
-    } catch (err) {
-      cleanupConnection();
-      setError(err instanceof Error ? err.message : "Something went wrong.");
+      // Mic permission — this click is the user gesture that also lets audio play.
+      micRef.current = await navigator.mediaDevices.getUserMedia({ audio: true });
+    } catch {
+      setError("Microphone access is needed for the voice quiz. Please allow it and try again.");
       setPhase("error");
+      return;
     }
+    await nextTutorTurn(true);
   }
 
   // The button click — preserves the user gesture (no awaits before start()).
@@ -284,35 +474,38 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   async function end() {
     if (endStartedRef.current) return; // ignore a double-click — run once
     endStartedRef.current = true;
+    setNotice("");
     setReport(null);
     setUploadStep("pending");
     setGradeStep("pending");
     setFinished(false);
     setPhase("wrapup");
-    // Stop the recorder first so we capture the full Blob, then tear down.
-    const audioBlob = await stopRecording();
-    cleanupConnection();
 
-    // 1. Upload the recording (best-effort) and link it from the saved session.
-    // We upload straight from the browser to Blob via the client `upload()` flow
-    // (/api/quiz-audio just mints an auth-gated token) so the bytes don't pass
-    // through our serverless function — a full-length recording would otherwise
-    // exceed the ~4.5MB request-body limit and 413.
+    // If they hit End quiz mid-answer, close out that recording first.
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+    stopMeter();
+    await stopTurnRecorder();
+    const session = await stopSessionRecorder();
+    teardown();
+
+    // 1. Upload the stitched recording (best-effort) — straight from the browser
+    // to Blob via the client upload() flow, so the bytes skip our function and
+    // its ~4.5MB request-body limit.
     let audioUrl: string | undefined;
     setUploadStep("active");
-    if (audioBlob && audioBlob.size > 0) {
+    if (session && session.blob.size > 0) {
       try {
-        const ext = audioBlob.type.includes("mp4") ? "mp4" : "webm";
-        const safeName = (user ?? "student")
-          .replace(/[^a-zA-Z0-9_-]+/g, "-")
-          .toLowerCase();
+        const safeName = (user ?? "student").replace(/[^a-zA-Z0-9_-]+/g, "-").toLowerCase();
         const blob = await upload(
-          `quiz-sessions/${date}/${safeName}.${ext}`,
-          audioBlob,
+          `quiz-sessions/${date}/${safeName}.${session.ext}`,
+          session.blob,
           {
             access: "public",
             handleUploadUrl: "/api/quiz-audio",
-            contentType: ext === "mp4" ? "audio/mp4" : "audio/webm",
+            contentType: session.ext === "mp4" ? "audio/mp4" : "audio/webm",
             clientPayload: JSON.stringify({ date }),
           }
         );
@@ -323,10 +516,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     }
     setUploadStep("done");
 
-    // 2. Grade + save (transcript + report card + audio link) to Blob for the
-    // teacher, and show the student their full report card (score + summary +
-    // strengths/gaps) on the wrap-up screen. The transcript + recording stay
-    // teacher-only.
+    // 2. Grade + save (transcript + report card + audio link) for the teacher,
+    // and show the student their full report card.
     setGradeStep("active");
     try {
       const res = await fetch("/api/quiz-report", {
@@ -349,43 +540,53 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     }
   }
 
-  // "Cancel quiz" — bail out of a live session with nothing saved: no recording
-  // uploaded, no transcript graded, no session written. We just stop the
-  // recorder (discarding its chunks), tear down the connection, and close.
-  // Setting the once-guard also blocks a late end() from a double-click race.
+  // "Cancel quiz" — bail out with nothing saved: no recording uploaded, no
+  // transcript graded, no session written. Setting the once-guard also blocks a
+  // late end() from a double-click race.
   function cancel() {
     endStartedRef.current = true;
     close();
   }
 
   function close() {
-    cleanupConnection();
+    teardown();
     setPhase("idle");
     setError("");
+    setNotice("");
+    setCanRetry(false);
     setReport(null);
     setUploadStep("pending");
     setGradeStep("pending");
     setFinished(false);
+    setTurns([]);
     transcriptRef.current = [];
     endStartedRef.current = false;
   }
 
-  // Stop the mic/connection if the component unmounts mid-session.
-  useEffect(() => () => cleanupConnection(), []);
+  // Stop the mic/recorders if the component unmounts mid-session.
+  useEffect(() => () => teardown(), []);
+
+  // Keep the conversation log scrolled to the newest turn.
+  const logRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const el = logRef.current;
+    if (el) el.scrollTop = el.scrollHeight;
+  }, [turns, phase]);
 
   const modalOpen = phase !== "idle";
-  // A stray backdrop click shouldn't drop a live call or interrupt the wrap-up
-  // while it's still saving — only let it close once there's nothing in flight.
+  // A stray backdrop click shouldn't drop a live quiz or interrupt the wrap-up
+  // while it's still saving — only allow close when nothing's in flight.
   const dismissable =
-    phase === "needLogin" ||
-    phase === "error" ||
-    (phase === "wrapup" && finished);
+    phase === "needLogin" || phase === "error" || (phase === "wrapup" && finished);
+  const live =
+    phase === "tutorTurn" ||
+    phase === "recording" ||
+    phase === "transcribing" ||
+    phase === "thinking";
 
   return (
     <>
-      {/* Styled as a text link so it sits inline in the home-page action bar
-          alongside the Article / Handout links (it's still a button — it opens
-          the quiz modal). */}
+      {/* Styled as a text link so it sits inline in the home-page action bar. */}
       <button
         type="button"
         onClick={launch}
@@ -402,10 +603,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           }}
         >
           <div
-            className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl"
+            className="flex max-h-[90vh] w-full max-w-md flex-col rounded-2xl bg-white p-6 shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <audio ref={audioRef} autoPlay className="hidden" />
+            <audio ref={audioElRef} className="hidden" />
 
             {phase === "needLogin" && (
               <div>
@@ -426,47 +627,151 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
               </div>
             )}
 
-            {phase === "connecting" && (
+            {phase === "starting" && (
               <div>
                 <h2 className="font-serif text-xl font-bold text-stone-900">
                   Starting your voice quiz…
                 </h2>
                 <p className="mt-2 text-sm text-stone-500">
-                  Connecting — please allow microphone access when your browser asks.
+                  Please allow microphone access when your browser asks.
                 </p>
               </div>
             )}
 
-            {phase === "live" && (
-              <div>
-                <div className="flex items-center gap-3">
-                  <span className="flex h-3 w-3 animate-pulse rounded-full bg-red-500" />
-                  <h2 className="font-serif text-xl font-bold text-stone-900">
-                    Live — just talk
+            {live && (
+              <div className="flex min-h-0 flex-1 flex-col">
+                <div className="flex items-start justify-between gap-3">
+                  <h2 className="font-serif text-lg font-bold text-stone-900">
+                    Voice quiz — {title}
                   </h2>
                 </div>
-                <p className="mt-2 text-sm text-stone-600">
-                  Your tutor is quizzing you about “{title}.” Speak naturally and
-                  take your time — there’s no rush, and pauses are fine.
+                <p className="mt-1 text-xs text-stone-400">
+                  Your answers are recorded and saved for your teacher.
                 </p>
-                <p className="mt-2 text-xs text-stone-400">
-                  This quiz is recorded and saved for your teacher.
-                </p>
-                <div className="mt-5 flex items-center gap-3">
+
+                {/* The running conversation: tutor questions + your answers. */}
+                <div
+                  ref={logRef}
+                  className="mt-4 min-h-[8rem] flex-1 space-y-3 overflow-y-auto rounded-xl bg-stone-50 p-4"
+                >
+                  {turns.map((t, i) => (
+                    <div key={i}>
+                      <p
+                        className={
+                          t.role === "tutor"
+                            ? "text-xs font-semibold uppercase tracking-wide text-sky-600"
+                            : "text-xs font-semibold uppercase tracking-wide text-stone-500"
+                        }
+                      >
+                        {t.role === "tutor" ? "Tutor" : "You"}
+                      </p>
+                      <p className="text-sm text-stone-700">{t.text}</p>
+                    </div>
+                  ))}
+                  {turns.length === 0 && (
+                    <p className="text-sm text-stone-400">Your tutor is getting ready…</p>
+                  )}
+                </div>
+
+                {notice && (
+                  <p className="mt-3 rounded-lg bg-amber-50 px-3 py-2 text-xs text-amber-700">
+                    {notice}
+                  </p>
+                )}
+
+                {/* Status + controls, by phase. */}
+                <div className="mt-4">
+                  {phase === "tutorTurn" && (
+                    <>
+                      {ttsPlaying && (
+                        <p className="mb-3 flex items-center gap-2 text-sm text-sky-700">
+                          <span className="flex gap-0.5" aria-hidden>
+                            <span className="h-3 w-1 animate-pulse rounded-full bg-sky-500" />
+                            <span className="h-4 w-1 animate-pulse rounded-full bg-sky-500 [animation-delay:120ms]" />
+                            <span className="h-3 w-1 animate-pulse rounded-full bg-sky-500 [animation-delay:240ms]" />
+                          </span>
+                          Tutor is speaking…
+                        </p>
+                      )}
+                      <div className="flex flex-wrap items-center gap-3">
+                        {canRetry ? (
+                          <button
+                            type="button"
+                            onClick={() => nextTutorTurn(false)}
+                            className="rounded-lg bg-sky-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-sky-700"
+                          >
+                            Retry
+                          </button>
+                        ) : (
+                          <button
+                            type="button"
+                            onClick={startSpeaking}
+                            className="rounded-lg bg-sky-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-700"
+                          >
+                            🎙 Start speaking
+                          </button>
+                        )}
+                      </div>
+                    </>
+                  )}
+
+                  {phase === "recording" && (
+                    <div>
+                      <div className="flex items-center gap-3">
+                        <span className="flex h-3 w-3 animate-pulse rounded-full bg-red-500" />
+                        <span className="text-sm font-semibold text-red-600">
+                          Recording — {fmtClock(recSeconds)}
+                        </span>
+                      </div>
+                      {/* Live mic-level meter — an unmistakable "you're being
+                          recorded right now" cue. */}
+                      <div className="mt-3 flex h-10 items-center gap-0.5">
+                        {levels.map((lvl, i) => (
+                          <span
+                            key={i}
+                            className="w-1 rounded-full bg-red-400"
+                            style={{ height: `${Math.max(8, lvl * 100)}%` }}
+                          />
+                        ))}
+                      </div>
+                      <button
+                        type="button"
+                        onClick={stopSpeaking}
+                        className="mt-4 rounded-lg bg-stone-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-stone-700"
+                      >
+                        ⏹ Stop
+                      </button>
+                    </div>
+                  )}
+
+                  {phase === "transcribing" && (
+                    <p className="flex items-center gap-2 text-sm text-stone-500">
+                      <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-sky-500" />
+                      Transcribing your answer…
+                    </p>
+                  )}
+
+                  {phase === "thinking" && (
+                    <p className="flex items-center gap-2 text-sm text-stone-500">
+                      <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-sky-500" />
+                      Thinking about your next question…
+                    </p>
+                  )}
+                </div>
+
+                {/* End / Cancel are always available during a live quiz. */}
+                <div className="mt-5 flex items-center gap-3 border-t border-stone-100 pt-4">
                   <button
                     type="button"
                     onClick={end}
-                    className="rounded-lg bg-stone-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-700"
+                    className="rounded-lg bg-emerald-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-emerald-700"
                   >
                     End quiz
                   </button>
-                  {/* Cancel always sits beside End: it abandons the session with
-                      nothing saved (no recording, no report) — for when the
-                      student wants to bail out rather than be graded. */}
                   <button
                     type="button"
                     onClick={cancel}
-                    className="rounded-lg border border-stone-300 px-4 py-2.5 text-sm font-medium text-stone-600 transition hover:bg-stone-50"
+                    className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-50"
                   >
                     Cancel quiz
                   </button>
@@ -478,57 +783,36 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                 (upload → grade → score) so nothing flashes by, and Close stays
                 disabled until everything has saved. */}
             {phase === "wrapup" && (
-              <div>
+              <div className="flex min-h-0 flex-col">
                 <h2 className="font-serif text-xl font-bold text-stone-900">
                   {finished ? "All done — nice work!" : "Wrapping up…"}
                 </h2>
                 <ul className="mt-4 space-y-2.5 text-sm">
                   <li className="flex items-center gap-2.5">
                     <StepIcon state={uploadStep} />
-                    <span
-                      className={
-                        uploadStep === "pending"
-                          ? "text-stone-400"
-                          : "text-stone-700"
-                      }
-                    >
+                    <span className={uploadStep === "pending" ? "text-stone-400" : "text-stone-700"}>
                       Uploading your recording
                     </span>
                   </li>
                   <li className="flex items-center gap-2.5">
                     <StepIcon state={gradeStep} />
-                    <span
-                      className={
-                        gradeStep === "pending"
-                          ? "text-stone-400"
-                          : "text-stone-700"
-                      }
-                    >
+                    <span className={gradeStep === "pending" ? "text-stone-400" : "text-stone-700"}>
                       Grading your quiz
                     </span>
                   </li>
                 </ul>
 
-                {/* The full report card — the same score + summary +
-                    strengths/gaps the teacher sees on /admin (the transcript
-                    and recording stay teacher-only). Scrolls if it runs long so
-                    the Close button below stays reachable. */}
                 {finished && (
                   <div className="mt-4 max-h-[55vh] overflow-y-auto border-t border-stone-100 pt-4">
                     {report?.score && report.score !== "—" && (
                       <p className="text-sm text-stone-600">
                         You scored{" "}
-                        <span className="text-lg font-bold text-sky-700">
-                          {report.score}
-                        </span>
-                        .
+                        <span className="text-lg font-bold text-sky-700">{report.score}</span>.
                       </p>
                     )}
 
                     {report?.summary && (
-                      <p className="mt-2 text-sm text-stone-600">
-                        {report.summary}
-                      </p>
+                      <p className="mt-2 text-sm text-stone-600">{report.summary}</p>
                     )}
 
                     {report &&
@@ -563,8 +847,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                       )}
 
                     <p className="mt-4 text-sm text-stone-600">
-                      Saved for your teacher. If you’re not happy with your
-                      score, feel free to take the quiz again.
+                      Saved for your teacher. If you’re not happy with your score, feel free to
+                      take the quiz again.
                     </p>
                   </div>
                 )}
