@@ -120,7 +120,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   const turnChunksRef = useRef<Blob[]>([]);
 
   // Mic-level metering during recording (analyser + animation loop + timer).
+  // The analyser taps a CLONE of the mic (meterStreamRef), never the recorder's
+  // own track, so the Web Audio graph can't starve the MediaRecorder.
   const meterCtxRef = useRef<AudioContext | null>(null);
+  const meterStreamRef = useRef<MediaStream | null>(null);
   const rafRef = useRef<number | null>(null);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const levelsRef = useRef<number[]>(new Array(METER_BARS).fill(0));
@@ -230,14 +233,33 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
   // ---- Recording one answer ----------------------------------------------
 
-  function startMeter() {
+  async function startMeter() {
+    const mic = micRef.current;
+    if (!mic) return;
     try {
       const ctx = new AudioContext();
       meterCtxRef.current = ctx;
-      const source = ctx.createMediaStreamSource(micRef.current!);
+      // A fresh AudioContext is often "suspended" until resumed — in that state
+      // the analyser reads pure silence and, worse, tapping the mic track from a
+      // suspended graph can starve the MediaRecorder of audio. Resume first.
+      if (ctx.state === "suspended") await ctx.resume();
+
+      // Tap a CLONE of the mic so this graph is fully isolated from the
+      // recorder's own track (the recorder keeps the original).
+      const meterStream = new MediaStream(mic.getAudioTracks().map((t) => t.clone()));
+      meterStreamRef.current = meterStream;
+      const source = ctx.createMediaStreamSource(meterStream);
       const analyser = ctx.createAnalyser();
       analyser.fftSize = 256;
-      source.connect(analyser); // analyser only — not to the speakers (no feedback)
+      // Route source → analyser → muted gain → destination. The muted sink keeps
+      // the graph "pulled" (some browsers won't run an analyser that dead-ends);
+      // gain 0 means nothing is actually played, and it's the mic — no echo.
+      const sink = ctx.createGain();
+      sink.gain.value = 0;
+      source.connect(analyser);
+      analyser.connect(sink);
+      sink.connect(ctx.destination);
+
       const buf = new Uint8Array(analyser.fftSize);
       const tick = () => {
         analyser.getByteTimeDomainData(buf);
@@ -248,15 +270,16 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           sum += v * v;
         }
         const rms = Math.sqrt(sum / buf.length);
-        const level = Math.min(1, rms * 3); // scale up — speech rarely maxes RMS
+        const level = Math.min(1, rms * 4); // scale up — speech rarely maxes RMS
         const next = [...levelsRef.current.slice(1), level];
         levelsRef.current = next;
         setLevels(next);
         rafRef.current = requestAnimationFrame(tick);
       };
       rafRef.current = requestAnimationFrame(tick);
-    } catch {
+    } catch (err) {
       // The meter is decorative — recording still works without it.
+      console.warn("[voicequiz] meter failed", err);
     }
   }
 
@@ -267,6 +290,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     }
     meterCtxRef.current?.close().catch(() => {});
     meterCtxRef.current = null;
+    meterStreamRef.current?.getTracks().forEach((t) => t.stop());
+    meterStreamRef.current = null;
     levelsRef.current = new Array(METER_BARS).fill(0);
     setLevels(levelsRef.current);
   }
@@ -299,14 +324,27 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       // Teacher recording is best-effort — keep going.
     }
 
-    // The per-turn recorder, whose clip we transcribe.
+    // Surface the mic track's state — a `muted`/`ended` track here explains a
+    // silent recording even with the mic LED on.
+    const track = mic.getAudioTracks()[0];
+    if (track) {
+      console.log("[voicequiz] mic track", {
+        enabled: track.enabled,
+        muted: track.muted,
+        readyState: track.readyState,
+        label: track.label,
+      });
+    }
+
+    // The per-turn recorder, whose clip we transcribe. A timeslice makes data
+    // flush as it's captured (and confirms audio is actually flowing).
     try {
       const rec = new MediaRecorder(mic, pickRecorderMime());
       turnChunksRef.current = [];
       rec.ondataavailable = (e) => {
         if (e.data.size) turnChunksRef.current.push(e.data);
       };
-      rec.start();
+      rec.start(250);
       turnRecRef.current = rec;
     } catch {
       setNotice("Couldn't start recording. Please check microphone access.");
@@ -316,7 +354,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setRecSeconds(0);
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => setRecSeconds((s) => s + 1), 1000);
-    startMeter();
+    void startMeter();
     setPhase("recording");
   }
 
@@ -370,20 +408,33 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
     setPhase("transcribing");
     try {
+      console.log("[voicequiz] answer blob", turn.blob.size, turn.blob.type);
       const form = new FormData();
       form.append("file", turn.blob, turn.filename);
       const res = await fetch("/api/quiz-transcribe", { method: "POST", body: form });
       const data = await res.json().catch(() => null);
+      console.log("[voicequiz] transcribe", res.status, data);
+      if (!res.ok) {
+        setNotice(`Couldn't transcribe (server error ${res.status}). Tap Start speaking to try again.`);
+        setPhase("tutorTurn");
+        return;
+      }
       const text = (data?.text ?? "").trim();
-      if (!res.ok || !text) {
-        setNotice("Sorry, I couldn't make out what you said. Tap Start speaking to try again.");
+      if (!text) {
+        // The clip recorded but held no recognizable speech — usually too quiet
+        // or the mic captured silence.
+        setNotice(
+          `I didn't catch any words (recorded ${(turn.blob.size / 1024).toFixed(0)} KB). ` +
+            "Speak a bit louder/closer and tap Start speaking to try again."
+        );
         setPhase("tutorTurn");
         return;
       }
       appendTurn({ role: "student", text });
       await nextTutorTurn(false);
-    } catch {
-      setNotice("Sorry, I couldn't hear that. Tap Start speaking to try again.");
+    } catch (err) {
+      console.warn("[voicequiz] transcribe failed", err);
+      setNotice("Network problem reaching the transcriber. Tap Start speaking to try again.");
       setPhase("tutorTurn");
     }
   }
