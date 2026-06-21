@@ -676,9 +676,36 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
     setPhase("transcribing");
     try {
-      const form = new FormData();
-      form.append("file", turn.blob, turn.filename);
-      const res = await fetch("/api/quiz-transcribe", { method: "POST", body: form });
+      // Upload the answer clip straight to Blob, then transcribe it from there.
+      // Routing the bytes through /api/quiz-transcribe hit Vercel's ~4.5MB
+      // request-body limit — a long answer 413'd before the function even ran —
+      // so we use the same direct-to-Blob upload() flow as the teacher recording
+      // (its token route, /api/quiz-audio, allows these per-turn paths too).
+      const ext = turn.filename.split(".").pop() || "webm";
+      const contentType =
+        ext === "wav"
+          ? "audio/wav"
+          : ext === "mp4"
+            ? "audio/mp4"
+            : ext === "ogg"
+              ? "audio/ogg"
+              : "audio/webm";
+      const safeName = (user ?? "student").replace(/[^a-zA-Z0-9_-]+/g, "-").toLowerCase();
+      const uploaded = await upload(
+        `quiz-sessions/${date}/turns/${safeName}-${studentOrder}.${ext}`,
+        turn.blob,
+        {
+          access: "public",
+          handleUploadUrl: "/api/quiz-audio",
+          contentType,
+          clientPayload: JSON.stringify({ date }),
+        }
+      );
+      const res = await fetch("/api/quiz-transcribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ date, blobUrl: uploaded.url }),
+      });
       const data = await res.json().catch(() => null);
       if (!res.ok) {
         // The clip recorded fine (it's already in the teacher's timeline) but

@@ -1,3 +1,4 @@
+import { del } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 
 // The speech-to-text model for the student's spoken answers. `whisper-1` is the
@@ -6,15 +7,18 @@ import { currentUser } from "@/lib/auth";
 const STT_MODEL = process.env.STT_MODEL || "whisper-1";
 
 /**
- * Transcribes one recorded student answer to text. The browser POSTs a small
- * `multipart/form-data` body with the turn's audio under `file`; we forward it to
- * OpenAI and return `{ text }`.
+ * Transcribes one recorded student answer to text.
  *
- * Per-turn clips are a few seconds — far under Vercel's ~4.5MB request-body
- * limit — so routing the audio through this function is fine here (unlike the
- * full-length teacher recording, which is uploaded straight to Blob via
- * /api/quiz-audio to dodge that limit). Login-gated; the OpenAI key stays server
- * side.
+ * The browser uploads the answer clip DIRECTLY to Vercel Blob (via the
+ * /api/quiz-audio client-upload token) and POSTs us just `{ blobUrl }`; we fetch
+ * the bytes back from Blob and forward them to OpenAI. Earlier this route took
+ * the audio as a `multipart/form-data` body, but a long answer exceeded Vercel's
+ * ~4.5MB request-body limit and was rejected with a 413 BEFORE the function even
+ * ran (the per-turn key-ideas retelling can be minutes long — an uncompressed
+ * iOS WAV blows past 4.5MB in ~2.3 min). Routing the bytes through Blob — the
+ * same dodge the full-length teacher recording uses — sidesteps that limit. The
+ * clip is transient: we delete it once we've read it. Login-gated; the OpenAI
+ * key stays server side.
  */
 export async function POST(request: Request) {
   const user = await currentUser();
@@ -25,24 +29,55 @@ export async function POST(request: Request) {
     return Response.json({ error: "Server is missing OPENAI_API_KEY." }, { status: 500 });
   }
 
-  let form: FormData;
+  let blobUrl: string;
   try {
-    form = await request.formData();
+    const body = (await request.json()) as { blobUrl?: string };
+    blobUrl = (body?.blobUrl ?? "").trim();
   } catch {
     return Response.json({ error: "Invalid request" }, { status: 400 });
   }
-  const file = form.get("file");
-  if (!(file instanceof Blob)) {
+
+  // Validate it's one of OUR transient per-turn clips, not an arbitrary
+  // server-side fetch target. This route is reachable by any logged-in student
+  // AND it DELETES the clip when done, so the guard is deliberately narrow:
+  // require the Vercel Blob host and the `quiz-sessions/<date>/turns/` prefix the
+  // client uploads to — never the bare `quiz-sessions/` prefix, so a forged URL
+  // can't make us fetch or delete a teacher recording or a saved session JSON.
+  let parsed: URL;
+  try {
+    parsed = new URL(blobUrl);
+  } catch {
     return Response.json({ error: "No audio." }, { status: 400 });
   }
+  if (
+    !parsed.hostname.endsWith(".blob.vercel-storage.com") ||
+    !/\/quiz-sessions\/[^/]+\/turns\//.test(parsed.pathname)
+  ) {
+    return Response.json({ error: "Unexpected audio location." }, { status: 400 });
+  }
 
-  const name = file instanceof File && file.name ? file.name : "answer.webm";
+  const name = parsed.pathname.split("/").pop() || "answer.webm";
 
   try {
+    // Pull the clip back from Blob, then forward it to OpenAI.
+    const audioRes = await fetch(blobUrl);
+    if (!audioRes.ok) {
+      console.error(
+        "Transcription couldn't read clip from Blob:",
+        audioRes.status,
+        "user:",
+        user,
+        "url:",
+        blobUrl
+      );
+      return Response.json({ error: "Could not read the recording." }, { status: 502 });
+    }
+    const audioBlob = await audioRes.blob();
+
     const upstream = new FormData();
     // OpenAI keys off the filename extension to detect the format, so pass a
-    // sensible name (the client sends one matching the recorder's container).
-    upstream.append("file", file, name);
+    // sensible name (the stored object keeps the recorder's container extension).
+    upstream.append("file", audioBlob, name);
     upstream.append("model", STT_MODEL);
     upstream.append("response_format", "json");
 
@@ -61,7 +96,7 @@ export async function POST(request: Request) {
         user,
         "file:",
         name,
-        file.size,
+        audioBlob.size,
         await res.text()
       );
       return Response.json({ error: "Could not transcribe the answer." }, { status: 502 });
@@ -69,7 +104,12 @@ export async function POST(request: Request) {
     const data = await res.json();
     return Response.json({ text: (data.text ?? "").trim() });
   } catch (err) {
-    console.error("Transcription error for user:", user, "file:", name, file.size, err);
+    console.error("Transcription error for user:", user, "url:", blobUrl, err);
     return Response.json({ error: "Could not transcribe the answer." }, { status: 502 });
+  } finally {
+    // The per-turn clip is transient — only needed long enough to transcribe.
+    // Delete it best-effort so these don't pile up in the store (the permanent
+    // teacher recording is the separately-stitched WAV built at End quiz).
+    void del(blobUrl).catch(() => {});
   }
 }
