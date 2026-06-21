@@ -40,39 +40,51 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - WSJ requires login. Tell the user: *"I've opened the article — please log into WSJ in the browser window, then tell me when you're in."* Wait for them. Do **not** ask for or store their password; they log in themselves.
    - Once past the paywall, read the full article (`browser_snapshot`, or scroll and read). Capture: the real headline, the byline/section if useful, and the substance — main argument, key facts, and any jargon a teenager would trip on.
 
-3. **Capture the day's PDF automatically — but only for sign-in/paywalled articles.** The PDF exists so the club can still read paywalled WSJ pieces. **If the article is on a freely open link that needs no login** (e.g. a public essay or open-access page), **skip the PDF entirely** — don't capture one, omit `pdfUrl` from the JSON, and the index will show just the Web link. Only do the capture below when the source sits behind a sign-in/paywall. With the article open and the user logged in (from step 2), save the page **straight to the served path** — no manual print/save step. Capture it **text-focused**: isolate the `<article>`, drop the images, and print with `printBackground:false`. **Why:** `page.pdf()` emulates *print* media, where Chromium picks the **largest `srcset` candidate** for every `<img>` (WSJ photos go up to ~5000px) and also keeps the page's endless "recommended" feed — left in, a short article balloons to **40–50MB**. Stripping images first lands it at **~100KB** of clean, complete text, which is all the club needs. Only `public/` is served by Next, so the PDF must end up at `public/pdfs/YYYY-MM-DD.pdf` and is referenced as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`.
+3. **Capture the day's PDF automatically — but only for sign-in/paywalled articles.** The PDF exists so the club can still read paywalled WSJ/Economist pieces. **If the article is on a freely open link that needs no login** (e.g. a public essay, an `archive.ph` capture, or an open-access page), **skip the PDF entirely** — don't capture one, omit `pdfUrl` from the JSON, and the index will show just the Web link. Only do the capture below when the source sits behind a sign-in/paywall. With the article open and the user logged in (from step 2), **don't print the live page** — instead **rebuild a clean, text-only document from the article's own paragraphs and print that**. **Why:** running `page.pdf()` on the live DOM goes wrong three ways: (a) Chromium's *print* emulation picks the **largest `srcset` candidate** for every `<img>` (WSJ photos go up to ~5000px); (b) it leaves behind **empty ad placeholders and `<video>`/poster images** that a plain `document.images` strip doesn't catch — together these bloat a short article to **tens of MB across a dozen-plus mostly-blank pages**; and (c) those tall, unbreakable blocks force awkward page breaks that **slice lines of text in half at page boundaries**. Extracting just the article's `<p>`/heading **text** into a fresh, plainly-styled doc fixes all three at once: it lands at **~50–150KB** of clean, complete text that **paginates line-by-line with no slicing** — which is all the club needs. Only `public/` is served by Next, so the PDF must end up at `public/pdfs/YYYY-MM-DD.pdf` and is referenced as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`.
    - Make the folder: `mkdir -p public/pdfs`.
-   - Use `browser_run_code_unsafe` — **substitute the real date** in `OUT`:
+   - With the article page **already open** (loaded past the paywall — the snippet does **not** navigate), use `browser_run_code_unsafe` — **substitute the real date** in `OUT` and the real publication in `SOURCE_NAME`:
      ```js
      async (page) => {
        const OUT = '/Users/anuragved/code/wsj_club/public/pdfs/YYYY-MM-DD.pdf'; // ← real date
-       // 1) Isolate the article: remove only the siblings along its ancestor chain,
-       //    so nav, the endless "recommended" feed, and the footer all go away.
-       await page.evaluate(() => {
+       // 1) Wait for the (often client-rendered) body, then pull the article's
+       //    title + paragraph/heading TEXT in document order — no images, no ads.
+       await page.waitForFunction(() => document.querySelectorAll('article p').length > 8, { timeout: 20000 });
+       const data = await page.evaluate(() => {
          const art = document.querySelector('article') || document.querySelector('main');
-         let node = art;
-         while (node && node.parentElement && node !== document.body) {
-           const parent = node.parentElement;
-           for (const sib of Array.from(parent.children)) if (sib !== node) sib.remove();
-           node = parent;
+         const title = (document.querySelector('h1')?.innerText || document.title || '').trim();
+         const STOP = /^This article appeared in/i;                 // print-edition footer
+         const SKIP = /^(Save|Share|Listen to this story|Video:|Discover stories|Delivered to your inbox|0:00|Advertisement)\b/i;
+         const blocks = [];
+         for (const n of art.querySelectorAll('p, h2, h3')) {
+           const t = n.innerText.replace(/\s+/g, ' ').trim();
+           if (!t || SKIP.test(t) || /your browser does not support/i.test(t)) continue;
+           if (STOP.test(t)) break;
+           if (/\bmin read\b/i.test(t) && t.length < 60) continue;  // dateline
+           blocks.push({ tag: n.tagName.toLowerCase() === 'p' ? 'p' : 'h2', text: t });
          }
+         return { title, blocks };
        });
-       // 2) Nudge-scroll the (now short) article so its lazy text settles.
-       await page.evaluate(() => new Promise(res => {
-         let i = 0; (function step(){ window.scrollBy(0, innerHeight); i++;
-           if (i < 10 && (window.scrollY + innerHeight) < document.body.scrollHeight) setTimeout(step, 150);
-           else { scrollTo(0, 0); setTimeout(res, 500); } })();
-       }));
-       // 3) Drop every image (see "Why" above), then print without backgrounds.
-       await page.evaluate(() => { for (const i of Array.from(document.images)) i.remove(); });
+       // 2) Render the extracted text into a clean, plainly-styled doc and print THAT.
+       const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+       const body = data.blocks.map(b => b.tag === 'p' ? `<p>${esc(b.text)}</p>` : `<h2>${esc(b.text)}</h2>`).join('\n');
+       const html = `<!doctype html><html><head><meta charset="utf-8"><style>
+         html,body{margin:0;padding:0}
+         body{font-family:Georgia,'Times New Roman',serif;font-size:12pt;line-height:1.5;color:#111}
+         h1{font-size:20pt;line-height:1.25;margin:0 0 .25em}
+         .src{color:#555;font-size:10pt;margin:0 0 1.2em}
+         h2{font-size:13pt;margin:1.3em 0 .35em;break-after:avoid}
+         p{margin:0 0 .8em;orphans:2;widows:2}
+       </style></head><body><h1>${esc(data.title)}</h1><div class="src">SOURCE_NAME</div>${body}</body></html>`;
+       await page.setContent(html, { waitUntil: 'load' });
        await page.pdf({ path: OUT, format: 'Letter', printBackground: false,
-         margin: { top: '0.5in', bottom: '0.5in', left: '0.5in', right: '0.5in' } });
-       return 'wrote ' + OUT;
+         margin: { top: '0.6in', bottom: '0.6in', left: '0.7in', right: '0.7in' } });
+       return 'wrote ' + OUT + ' | blocks=' + data.blocks.length;
      }
      ```
-   - **Verify it:** `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect ~80KB to a few hundred KB and several pages) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). If it's a few KB / near-empty, the paywall wasn't cleared or the `<article>` selector missed — re-check login or use the manual fallback below. If it's tens of MB, the image-strip step didn't run.
+     (`SOURCE_NAME` = `The Wall Street Journal` or `The Economist`.) `page.setContent` *replaces* the live page with the clean doc before printing — that's intended.
+   - **Verify it:** the snippet returns a `blocks=` count — expect **roughly one per paragraph** (≈20–40 for a feature; a count under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome instead — re-check login/selectors). Then `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect **~50–150KB and a few pages**) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). To eyeball that text isn't sliced at page breaks, render a page: `pdftoppm -png -r 80 -f 1 -l 2 public/pdfs/YYYY-MM-DD.pdf /tmp/pg` and view `/tmp/pg-*.png`. If `blocks=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
    - Set `pdfUrl: "/pdfs/YYYY-MM-DD.pdf"` in the JSON. (To skip the PDF entirely, omit `pdfUrl` — the page then shows only the Web link.)
-   - **Multi-article days** (the `articles[]` shape — see step 5): capture **one PDF per article**. `browser_navigate` to each article in turn, write it to `public/pdfs/YYYY-MM-DD-1.pdf`, `-2.pdf`, … (note the `-N` suffix), and put each path in that article's own `pdfUrl` inside `articles[]` — there is no top-level `pdfUrl`.
+   - **Multi-article days** (the `articles[]` shape — see step 5): capture **one PDF per article**. `browser_navigate` to each article in turn, then run the snippet writing to `public/pdfs/YYYY-MM-DD-1.pdf`, `-2.pdf`, … (note the `-N` suffix), and put each path in that article's own `pdfUrl` inside `articles[]` — there is no top-level `pdfUrl`.
    - **Manual fallback** (only if auto-capture looks wrong): the user saves the article as a PDF by hand into the `PDFs/` drop-zone at the repo root (gitignored, raw WSJ filename), and you copy it over: `cp "PDFs/<that file>.pdf" public/pdfs/YYYY-MM-DD.pdf`. The `public/pdfs/` copy is what gets committed and deployed.
    - **Upload the full article text (for the voice quiz).** The home-page **Voice quiz** (`voiceQuiz: true`, see step 6) reads much better when the tutor has the *whole* article, not just the handout — it then judges the student's from-memory retelling against the real story. Once the PDF is captured, extract its text and upload it to **Vercel Blob** (we keep the full text **out of git** — the hard rule is never republish article text — so Blob is its home):
      ```sh
