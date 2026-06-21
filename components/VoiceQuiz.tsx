@@ -75,9 +75,11 @@ function fmtClock(totalSeconds: number): string {
 // it on the client and skip the tutor model call for the FIRST turn. That model
 // call — a full chat completion with the whole article as context — is the single
 // biggest startup delay; for a greeting we already know verbatim, it's pure
-// waiting, so the opening goes straight to TTS instead. Kept SHORT (just the
-// task) so the opening TTS is quick — the recording mechanics (Start speaking /
-// Stop) are shown on screen under the button, not spoken (see RecordingHelp).
+// waiting, so we skip it. The opening is also NOT spoken: it's the same every
+// time and already on screen, so the student just reads it and presses Start
+// speaking (only the tutor's dynamic follow-ups are spoken). Kept SHORT (just
+// the task); the recording mechanics (Start speaking / Stop) are shown on screen
+// under the button, not spoken (see RecordingHelp).
 function openingLine(name: string | null): string {
   const who = (name ?? "").trim() || "there";
   return (
@@ -404,15 +406,15 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setNotice("");
     setPhase(first ? "starting" : "thinking");
 
-    // FIRST turn: skip the tutor model entirely and speak the fixed opening (see
-    // openingLine). This is the big startup win — no chat completion, no
-    // article-from-Blob fetch before the student hears anything; just TTS.
+    // FIRST turn: skip the tutor model entirely AND don't speak it. The opening
+    // is a fixed script (see openingLine), shown on screen and identical every
+    // time, so the student just reads it and presses Start speaking — there's
+    // nothing dynamic to hear. Skipping its TTS also removes the last bit of
+    // startup latency (mic permission is now the only wait). Only the tutor's
+    // later, dynamic follow-ups are spoken (below).
     if (first) {
-      const text = openingLine(user);
-      appendTurn({ role: "tutor", text });
-      const order = transcriptRef.current.length - 1;
+      appendTurn({ role: "tutor", text: openingLine(user) });
       setPhase("tutorTurn");
-      void speak(text, order);
       return;
     }
 
