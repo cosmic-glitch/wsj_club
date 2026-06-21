@@ -6,6 +6,18 @@ import { useAuth } from "./AuthProvider";
 
 type Turn = { role: "student" | "tutor"; text: string };
 
+// One clip in the teacher's stitched recording, tagged with its position in the
+// conversation (`order`) so the tutor's questions and the student's answers can
+// be re-interleaved in the order they actually happened. Exactly one of
+// blob/pcm is set: tutor lines and desktop answers carry a `blob` (mp3 /
+// webm-mp4) decoded at the end; iOS answers carry ready-made 16 kHz `pcm`.
+type AudioSegment = {
+  order: number;
+  kind: "tutor" | "student";
+  blob?: Blob;
+  pcm?: Float32Array;
+};
+
 // The graded report card the student sees at the end — the same shape the
 // teacher reviews on /admin (minus the private transcript + recording).
 type Report = {
@@ -122,6 +134,24 @@ function encodeWav(samples: Float32Array, sampleRate: number): Blob {
   return new Blob([buffer], { type: "audio/wav" });
 }
 
+// Decode any browser-playable audio Blob (the tutor's TTS mp3, or a desktop
+// answer's webm/mp4) to mono 16 kHz PCM, so clips of different formats can be
+// concatenated into one WAV. `ctx` is reused across clips.
+async function decodeBlobToPcm16k(blob: Blob, ctx: AudioContext): Promise<Float32Array> {
+  const buf = await ctx.decodeAudioData(await blob.arrayBuffer());
+  let mono: Float32Array;
+  if (buf.numberOfChannels === 1) {
+    mono = buf.getChannelData(0);
+  } else {
+    mono = new Float32Array(buf.length);
+    for (let c = 0; c < buf.numberOfChannels; c++) {
+      const ch = buf.getChannelData(c);
+      for (let i = 0; i < buf.length; i++) mono[i] += ch[i] / buf.numberOfChannels;
+    }
+  }
+  return downsample(mono, buf.sampleRate, WAV_RATE);
+}
+
 /**
  * The "Voice quiz" launcher in the home-page action bar. Shown to everyone
  * (logged in or not); the login check happens on click. Clicking it:
@@ -138,11 +168,11 @@ function encodeWav(samples: Float32Array, sampleRate: number): Blob {
  *
  * On "End quiz" the transcript is POSTed to /api/quiz-report, graded into a
  * report card, and saved to Blob for the teacher on /admin; the student is then
- * shown their full report card. A single continuous recorder captures only the
- * student's spoken answers (pause/resume between turns) into ONE playable file,
- * uploaded straight to Blob (via /api/quiz-audio's token) and linked from the
- * session for the teacher to play back. Recording is best-effort — a failure
- * never breaks the quiz.
+ * shown their full report card. The whole conversation — the tutor's spoken
+ * questions AND the student's spoken answers — is stitched into ONE interleaved
+ * WAV (in the order it happened), uploaded straight to Blob (via /api/quiz-audio's
+ * token) and linked from the session for the teacher to play back. Recording is
+ * best-effort — a failure never breaks the quiz.
  */
 export default function VoiceQuiz({ date, title }: { date: string; title: string }) {
   // Login state comes from the shared AuthProvider (one /api/me fetch for the
@@ -192,22 +222,26 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   const analyserRef = useRef<AnalyserNode | null>(null);
 
   // A fresh recorder per turn (over the graph's destination stream), whose clip
-  // we send to transcription. Each turn's clip is also kept in answerBlobsRef so
-  // we can stitch them into one file for the teacher at the end.
+  // we send to transcription AND drop into the audio timeline below.
   const turnRecRef = useRef<MediaRecorder | null>(null);
   const turnChunksRef = useRef<Blob[]>([]);
-  const answerBlobsRef = useRef<Blob[]>([]);
+
+  // The ordered audio timeline for the teacher's recording: every tutor line
+  // (its TTS mp3) and every student answer (desktop: the recorded webm/mp4 blob;
+  // iOS: the captured 16 kHz PCM), each tagged with its position in the
+  // conversation. At the end we sort by `order`, decode each clip to mono 16 kHz
+  // PCM, concatenate, and encode ONE interleaved WAV — so the teacher hears the
+  // tutor's questions and the student's answers in the order they happened.
+  const segmentsRef = useRef<AudioSegment[]>([]);
 
   // iOS-only PCM capture (no MediaRecorder): a ScriptProcessor pulls raw samples
-  // off a fresh mic each turn. iosSamplesRef accumulates the current turn; the
-  // 16 kHz result is kept per turn in iosTurnPcmRef for the teacher's WAV.
+  // off a fresh mic each turn. iosSamplesRef accumulates the current turn.
   const iosCtxRef = useRef<AudioContext | null>(null);
   const iosMicRef = useRef<MediaStream | null>(null);
   const iosSourceRef = useRef<MediaStreamAudioSourceNode | null>(null);
   const iosProcessorRef = useRef<ScriptProcessorNode | null>(null);
   const iosSamplesRef = useRef<Float32Array[]>([]);
   const iosRecordingRef = useRef(false);
-  const iosTurnPcmRef = useRef<Float32Array[]>([]);
 
   // Level meter animation + the elapsed-time timer.
   const rafRef = useRef<number | null>(null);
@@ -230,6 +264,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   function appendTurn(turn: Turn) {
     transcriptRef.current = [...transcriptRef.current, turn];
     setTurns(transcriptRef.current);
+  }
+
+  // Add one clip to the teacher's audio timeline (see segmentsRef).
+  function pushSegment(seg: AudioSegment) {
+    segmentsRef.current = [...segmentsRef.current, seg];
   }
 
   // Pick a container the browser can record (Chrome/Firefox: webm/opus; Safari:
@@ -263,8 +302,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   }
 
   // Speak the tutor's line. Best-effort: if TTS fails, the line is still on
-  // screen, so the quiz simply continues silently for that turn.
-  async function speak(text: string) {
+  // screen, so the quiz simply continues silently for that turn. `order` is the
+  // line's position in the conversation — we drop its mp3 into the audio timeline
+  // so the teacher's recording includes the tutor's questions, in sequence.
+  async function speak(text: string, order?: number) {
     stopTts();
     setTtsPlaying(true);
     try {
@@ -275,6 +316,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       });
       if (!res.ok) throw new Error("tts");
       const blob = await res.blob();
+      if (order != null) pushSegment({ order, kind: "tutor", blob });
       const url = URL.createObjectURL(blob);
       ttsUrlRef.current = url;
       const el = audioElRef.current;
@@ -309,8 +351,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
         throw new Error(data?.error ?? "Could not get the next question.");
       }
       appendTurn({ role: "tutor", text: data.text });
+      // The index of the tutor line we just added — its slot in the timeline.
+      const order = transcriptRef.current.length - 1;
       setPhase("tutorTurn");
-      void speak(data.text);
+      void speak(data.text, order);
     } catch (err) {
       if (first) {
         // Nothing has happened yet — a clean fatal error is fine.
@@ -538,20 +582,22 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     }
     stopMeterLoop();
 
-    // Collect this answer's clip (iOS: a WAV from PCM capture; desktop: the
-    // recorder's webm/mp4), and keep it for the teacher's stitched recording.
+    // Collect this answer's clip (iOS: a WAV + its PCM from PCM capture; desktop:
+    // the recorder's webm/mp4) and drop it into the teacher's audio timeline at
+    // the slot this answer will occupy (right after the tutor line above it).
+    const studentOrder = transcriptRef.current.length;
     let turn: { blob: Blob; filename: string } | null;
     if (isIOS) {
       const cap = iosStopCapture();
       if (cap) {
-        iosTurnPcmRef.current = [...iosTurnPcmRef.current, cap.pcm];
+        pushSegment({ order: studentOrder, kind: "student", pcm: cap.pcm });
         turn = { blob: cap.blob, filename: cap.filename };
       } else {
         turn = null;
       }
     } else {
       turn = await stopTurnRecorder();
-      if (turn) answerBlobsRef.current = [...answerBlobsRef.current, turn.blob];
+      if (turn) pushSegment({ order: studentOrder, kind: "student", blob: turn.blob });
     }
     if (!turn) {
       setNotice("I didn't catch any audio. Tap Start speaking to try again.");
@@ -587,20 +633,41 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
   // ---- Teardown ------------------------------------------------------------
 
-  // The teacher's recording: every answer stitched into one file. On iOS we
-  // concat the per-turn PCM and encode one clean WAV (seekable, plays in order);
-  // on desktop we concat the recorder clips (same config → plays in order).
-  function buildTeacherFile(): { blob: Blob; ext: string } | null {
-    if (isIOS) {
-      const pcms = iosTurnPcmRef.current.filter((p) => p.length);
-      if (!pcms.length) return null;
-      return { blob: encodeWav(mergeFloat32(pcms), WAV_RATE), ext: "wav" };
+  // The teacher's recording: the whole conversation — the tutor's questions AND
+  // the student's answers — stitched into ONE interleaved WAV, in the order it
+  // happened. We sort the timeline by position, decode every clip (tutor mp3 +
+  // desktop answer webm; iOS answers are already 16 kHz PCM) to mono 16 kHz,
+  // concatenate, and encode a single seekable WAV. Best-effort: a clip that
+  // won't decode is skipped rather than failing the whole recording.
+  async function buildTeacherFile(): Promise<{ blob: Blob; ext: string } | null> {
+    const segments = [...segmentsRef.current].sort((a, b) => a.order - b.order);
+    if (!segments.length) return null;
+    let ctx: AudioContext | null = null;
+    const pcms: Float32Array[] = [];
+    for (const seg of segments) {
+      if (seg.pcm && seg.pcm.length) {
+        pcms.push(seg.pcm);
+        continue;
+      }
+      if (!seg.blob || seg.blob.size === 0) continue;
+      if (!ctx) {
+        const Ctor =
+          window.AudioContext ||
+          (window as unknown as { webkitAudioContext?: typeof AudioContext })
+            .webkitAudioContext;
+        if (!Ctor) break;
+        ctx = new Ctor();
+      }
+      try {
+        pcms.push(await decodeBlobToPcm16k(seg.blob, ctx));
+      } catch (err) {
+        console.warn("[voicequiz] couldn't decode an audio segment", err);
+      }
     }
-    const blobs = answerBlobsRef.current.filter((b) => b.size > 0);
-    if (!blobs.length) return null;
-    const type = blobs[0].type || "audio/webm";
-    const ext = type.includes("mp4") ? "mp4" : type.includes("ogg") ? "ogg" : "webm";
-    return { blob: new Blob(blobs, { type }), ext };
+    ctx?.close().catch(() => {});
+    const merged = mergeFloat32(pcms.filter((p) => p.length));
+    if (!merged.length) return null;
+    return { blob: encodeWav(merged, WAV_RATE), ext: "wav" };
   }
 
   function teardown() {
@@ -661,8 +728,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setFinished(false);
     setTurns([]);
     transcriptRef.current = [];
-    answerBlobsRef.current = [];
-    iosTurnPcmRef.current = [];
+    segmentsRef.current = [];
     endStartedRef.current = false;
     setPhase("starting");
 
@@ -712,19 +778,20 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     }
     stopMeterLoop();
     // Close out an in-progress answer (if they pressed End mid-recording) so it's
-    // included in the teacher's stitched file.
+    // included in the teacher's stitched file, at the slot after the last tutor line.
     if (phase === "recording") {
+      const lastOrder = transcriptRef.current.length;
       if (isIOS) {
         const cap = iosStopCapture();
-        if (cap) iosTurnPcmRef.current = [...iosTurnPcmRef.current, cap.pcm];
+        if (cap) pushSegment({ order: lastOrder, kind: "student", pcm: cap.pcm });
       } else {
         const lastTurn = await stopTurnRecorder();
         if (lastTurn && lastTurn.blob.size > 0) {
-          answerBlobsRef.current = [...answerBlobsRef.current, lastTurn.blob];
+          pushSegment({ order: lastOrder, kind: "student", blob: lastTurn.blob });
         }
       }
     }
-    const session = buildTeacherFile();
+    const session = await buildTeacherFile();
     teardown();
 
     // 1. Upload the stitched recording (best-effort) — straight from the browser
@@ -804,6 +871,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setFinished(false);
     setTurns([]);
     transcriptRef.current = [];
+    segmentsRef.current = [];
     endStartedRef.current = false;
   }
 
