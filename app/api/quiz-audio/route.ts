@@ -41,7 +41,7 @@ export async function POST(request: Request): Promise<Response> {
           throw new Error("Unexpected upload path.");
         }
         return {
-          allowedContentTypes: ["audio/webm", "audio/mp4", "audio/ogg"],
+          allowedContentTypes: ["audio/webm", "audio/mp4", "audio/ogg", "audio/wav"],
           addRandomSuffix: true,
           maximumSizeInBytes: 50 * 1024 * 1024,
         };

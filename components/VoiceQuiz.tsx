@@ -52,6 +52,76 @@ function fmtClock(totalSeconds: number): string {
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
+// ---- PCM → WAV helpers (the iOS recording path) --------------------------
+// iOS Safari won't reliably record via MediaRecorder, so there we capture raw
+// PCM through Web Audio and build a WAV ourselves. These run client-side only.
+
+// The output sample rate for captured answers — 16 kHz mono is plenty for
+// speech, keeps WAVs small (per-turn clips stay well under the upload limit),
+// and is Whisper's native rate.
+const WAV_RATE = 16000;
+
+function mergeFloat32(chunks: Float32Array[]): Float32Array {
+  let len = 0;
+  for (const c of chunks) len += c.length;
+  const out = new Float32Array(len);
+  let off = 0;
+  for (const c of chunks) {
+    out.set(c, off);
+    off += c.length;
+  }
+  return out;
+}
+
+// Downsample mono PCM from inRate to outRate by simple block averaging.
+function downsample(samples: Float32Array, inRate: number, outRate: number): Float32Array {
+  if (outRate >= inRate) return samples;
+  const ratio = inRate / outRate;
+  const outLen = Math.floor(samples.length / ratio);
+  const out = new Float32Array(outLen);
+  for (let i = 0; i < outLen; i++) {
+    const start = Math.floor(i * ratio);
+    const end = Math.min(samples.length, Math.floor((i + 1) * ratio));
+    let sum = 0;
+    let n = 0;
+    for (let j = start; j < end; j++) {
+      sum += samples[j];
+      n++;
+    }
+    out[i] = n ? sum / n : 0;
+  }
+  return out;
+}
+
+// Encode mono Float32 PCM as a 16-bit WAV Blob.
+function encodeWav(samples: Float32Array, sampleRate: number): Blob {
+  const buffer = new ArrayBuffer(44 + samples.length * 2);
+  const view = new DataView(buffer);
+  const writeStr = (off: number, s: string) => {
+    for (let i = 0; i < s.length; i++) view.setUint8(off + i, s.charCodeAt(i));
+  };
+  writeStr(0, "RIFF");
+  view.setUint32(4, 36 + samples.length * 2, true);
+  writeStr(8, "WAVE");
+  writeStr(12, "fmt ");
+  view.setUint32(16, 16, true); // PCM chunk size
+  view.setUint16(20, 1, true); // format = PCM
+  view.setUint16(22, 1, true); // mono
+  view.setUint32(24, sampleRate, true);
+  view.setUint32(28, sampleRate * 2, true); // byte rate
+  view.setUint16(32, 2, true); // block align
+  view.setUint16(34, 16, true); // bits per sample
+  writeStr(36, "data");
+  view.setUint32(40, samples.length * 2, true);
+  let off = 44;
+  for (let i = 0; i < samples.length; i++) {
+    const s = Math.max(-1, Math.min(1, samples[i]));
+    view.setInt16(off, s < 0 ? s * 0x8000 : s * 0x7fff, true);
+    off += 2;
+  }
+  return new Blob([buffer], { type: "audio/wav" });
+}
+
 /**
  * The "Voice quiz" launcher in the home-page action bar. Shown to everyone
  * (logged in or not); the login check happens on click. Clicking it:
@@ -127,6 +197,17 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   const turnRecRef = useRef<MediaRecorder | null>(null);
   const turnChunksRef = useRef<Blob[]>([]);
   const answerBlobsRef = useRef<Blob[]>([]);
+
+  // iOS-only PCM capture (no MediaRecorder): a ScriptProcessor pulls raw samples
+  // off a fresh mic each turn. iosSamplesRef accumulates the current turn; the
+  // 16 kHz result is kept per turn in iosTurnPcmRef for the teacher's WAV.
+  const iosCtxRef = useRef<AudioContext | null>(null);
+  const iosMicRef = useRef<MediaStream | null>(null);
+  const iosSourceRef = useRef<MediaStreamAudioSourceNode | null>(null);
+  const iosProcessorRef = useRef<ScriptProcessorNode | null>(null);
+  const iosSamplesRef = useRef<Float32Array[]>([]);
+  const iosRecordingRef = useRef(false);
+  const iosTurnPcmRef = useRef<Float32Array[]>([]);
 
   // Level meter animation + the elapsed-time timer.
   const rafRef = useRef<number | null>(null);
@@ -304,6 +385,74 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setLevels(levelsRef.current);
   }
 
+  // iOS: begin capturing PCM for one answer. We acquire a FRESH mic each turn —
+  // iOS tends to mute a long-lived getUserMedia track after the tutor's audio
+  // plays through the <audio> element, so re-acquiring guarantees a live capture
+  // session. A ScriptProcessor copies samples; the analyser drives the meter.
+  async function iosStartCapture() {
+    const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
+    iosMicRef.current = mic;
+    let ctx = iosCtxRef.current;
+    if (!ctx) {
+      const Ctor =
+        window.AudioContext ||
+        (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+      ctx = new Ctor!();
+      iosCtxRef.current = ctx;
+    }
+    if (ctx.state === "suspended") await ctx.resume();
+
+    const source = ctx.createMediaStreamSource(mic);
+    iosSourceRef.current = source;
+    const analyser = ctx.createAnalyser();
+    analyser.fftSize = 256;
+    source.connect(analyser);
+    analyserRef.current = analyser;
+
+    const processor = ctx.createScriptProcessor(4096, 1, 1);
+    iosSamplesRef.current = [];
+    iosRecordingRef.current = true;
+    processor.onaudioprocess = (e) => {
+      if (!iosRecordingRef.current) return;
+      // Copy — the input buffer is reused across callbacks.
+      iosSamplesRef.current.push(new Float32Array(e.inputBuffer.getChannelData(0)));
+      // Silence the output so routing to destination (which the processor needs
+      // to actually run) doesn't echo the mic back to the speakers.
+      e.outputBuffer.getChannelData(0).fill(0);
+    };
+    source.connect(processor);
+    processor.connect(ctx.destination);
+    iosProcessorRef.current = processor;
+  }
+
+  // iOS: stop capturing, tear down the per-turn graph + mic, and return the
+  // answer as a 16 kHz WAV (plus the PCM, kept for the teacher's stitched file).
+  function iosStopCapture(): { blob: Blob; filename: string; pcm: Float32Array } | null {
+    iosRecordingRef.current = false;
+    const ctx = iosCtxRef.current;
+    const processor = iosProcessorRef.current;
+    iosProcessorRef.current = null;
+    if (processor) {
+      processor.onaudioprocess = null;
+      try {
+        processor.disconnect();
+      } catch {
+        // ignore
+      }
+    }
+    iosSourceRef.current?.disconnect();
+    iosSourceRef.current = null;
+    iosMicRef.current?.getTracks().forEach((t) => t.stop());
+    iosMicRef.current = null;
+
+    const chunks = iosSamplesRef.current;
+    iosSamplesRef.current = [];
+    if (!chunks.length) return null;
+    const pcm = downsample(mergeFloat32(chunks), ctx?.sampleRate ?? 48000, WAV_RATE);
+    if (!pcm.length) return null;
+    return { blob: encodeWav(pcm, WAV_RATE), filename: "answer.wav", pcm };
+  }
+
   // "Start speaking" — a state toggle (no press-and-hold). Begins recording the
   // student's answer off the Web Audio graph; the live meter + timer make it
   // obvious the mic is hot.
@@ -311,17 +460,19 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     if (phase !== "tutorTurn") return;
     setNotice("");
     stopTts(); // if the tutor is still talking, the student is taking over
-    const mic = micRef.current;
-    if (!mic) return;
-
-    // Pick the stream to record. iOS: the raw mic (WebKit records it cleanly, and
-    // an AudioContext on the mic can silence capture — so no analyser meter
-    // there). Desktop: the Web Audio graph's output (dodges the Chromium
-    // raw-track-goes-silent bug and feeds the live meter).
-    let recordStream: MediaStream;
+    // iOS records via raw-PCM capture (MediaRecorder is unreliable there);
+    // desktop records the Web Audio graph's output with MediaRecorder.
     if (isIOS) {
-      recordStream = mic;
+      try {
+        await iosStartCapture();
+      } catch (err) {
+        console.warn("[voicequiz] iOS capture failed", err);
+        setNotice("Couldn't start the microphone. Please allow mic access and try again.");
+        return;
+      }
     } else {
+      const mic = micRef.current;
+      if (!mic) return;
       let graph: MediaStream | null = null;
       try {
         graph = await ensureAudioGraph();
@@ -332,27 +483,25 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
         setNotice("Couldn't start audio. Please check microphone access and try again.");
         return;
       }
-      recordStream = graph;
-    }
-
-    // The per-turn recorder. A timeslice makes data flush as it's captured.
-    try {
-      const rec = new MediaRecorder(recordStream, pickRecorderMime());
-      turnChunksRef.current = [];
-      rec.ondataavailable = (e) => {
-        if (e.data.size) turnChunksRef.current.push(e.data);
-      };
-      rec.start(250);
-      turnRecRef.current = rec;
-    } catch {
-      setNotice("Couldn't start recording. Please check microphone access.");
-      return;
+      // The per-turn recorder. A timeslice makes data flush as it's captured.
+      try {
+        const rec = new MediaRecorder(graph, pickRecorderMime());
+        turnChunksRef.current = [];
+        rec.ondataavailable = (e) => {
+          if (e.data.size) turnChunksRef.current.push(e.data);
+        };
+        rec.start(250);
+        turnRecRef.current = rec;
+      } catch {
+        setNotice("Couldn't start recording. Please check microphone access.");
+        return;
+      }
     }
 
     setRecSeconds(0);
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => setRecSeconds((s) => s + 1), 1000);
-    if (!isIOS) startMeterLoop(); // amplitude meter only on the desktop graph path
+    startMeterLoop();
     setPhase("recording");
   }
 
@@ -389,14 +538,26 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     }
     stopMeterLoop();
 
-    const turn = await stopTurnRecorder();
+    // Collect this answer's clip (iOS: a WAV from PCM capture; desktop: the
+    // recorder's webm/mp4), and keep it for the teacher's stitched recording.
+    let turn: { blob: Blob; filename: string } | null;
+    if (isIOS) {
+      const cap = iosStopCapture();
+      if (cap) {
+        iosTurnPcmRef.current = [...iosTurnPcmRef.current, cap.pcm];
+        turn = { blob: cap.blob, filename: cap.filename };
+      } else {
+        turn = null;
+      }
+    } else {
+      turn = await stopTurnRecorder();
+      if (turn) answerBlobsRef.current = [...answerBlobsRef.current, turn.blob];
+    }
     if (!turn) {
       setNotice("I didn't catch any audio. Tap Start speaking to try again.");
       setPhase("tutorTurn");
       return;
     }
-    // Keep the clip for the teacher's stitched recording (see end()).
-    answerBlobsRef.current = [...answerBlobsRef.current, turn.blob];
 
     setPhase("transcribing");
     try {
@@ -436,9 +597,15 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
   // ---- Teardown ------------------------------------------------------------
 
-  // The teacher's recording: every kept answer clip stitched into one file. They
-  // come from the same recorder config, so a single Blob plays back in order.
+  // The teacher's recording: every answer stitched into one file. On iOS we
+  // concat the per-turn PCM and encode one clean WAV (seekable, plays in order);
+  // on desktop we concat the recorder clips (same config → plays in order).
   function buildTeacherFile(): { blob: Blob; ext: string } | null {
+    if (isIOS) {
+      const pcms = iosTurnPcmRef.current.filter((p) => p.length);
+      if (!pcms.length) return null;
+      return { blob: encodeWav(mergeFloat32(pcms), WAV_RATE), ext: "wav" };
+    }
     const blobs = answerBlobsRef.current.filter((b) => b.size > 0);
     if (!blobs.length) return null;
     const type = blobs[0].type || "audio/webm";
@@ -463,13 +630,31 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     }
     turnRecRef.current = null;
     turnChunksRef.current = [];
-    // Tear down the Web Audio graph.
+    // Tear down the desktop Web Audio graph.
     micSourceRef.current?.disconnect();
     micSourceRef.current = null;
     destRef.current = null;
     analyserRef.current = null;
     audioCtxRef.current?.close().catch(() => {});
     audioCtxRef.current = null;
+    // Tear down the iOS PCM-capture graph.
+    iosRecordingRef.current = false;
+    if (iosProcessorRef.current) {
+      iosProcessorRef.current.onaudioprocess = null;
+      try {
+        iosProcessorRef.current.disconnect();
+      } catch {
+        // ignore
+      }
+      iosProcessorRef.current = null;
+    }
+    iosSourceRef.current?.disconnect();
+    iosSourceRef.current = null;
+    iosMicRef.current?.getTracks().forEach((t) => t.stop());
+    iosMicRef.current = null;
+    iosCtxRef.current?.close().catch(() => {});
+    iosCtxRef.current = null;
+    iosSamplesRef.current = [];
     micRef.current?.getTracks().forEach((t) => t.stop());
     micRef.current = null;
   }
@@ -487,12 +672,22 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setTurns([]);
     transcriptRef.current = [];
     answerBlobsRef.current = [];
+    iosTurnPcmRef.current = [];
     endStartedRef.current = false;
     setPhase("starting");
 
     try {
       // Mic permission — this click is the user gesture that also lets audio play.
-      micRef.current = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
+      // iOS re-acquires a fresh mic for each answer (a long-lived track gets
+      // muted after the tutor's audio plays), so we only need this to prompt for
+      // permission up front — release it immediately. Desktop keeps it.
+      if (isIOS) {
+        mic.getTracks().forEach((t) => t.stop());
+        micRef.current = null;
+      } else {
+        micRef.current = mic;
+      }
     } catch {
       setError("Microphone access is needed for the voice quiz. Please allow it and try again.");
       setPhase("error");
@@ -526,9 +721,18 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       timerRef.current = null;
     }
     stopMeterLoop();
-    const lastTurn = await stopTurnRecorder();
-    if (lastTurn && lastTurn.blob.size > 0) {
-      answerBlobsRef.current = [...answerBlobsRef.current, lastTurn.blob];
+    // Close out an in-progress answer (if they pressed End mid-recording) so it's
+    // included in the teacher's stitched file.
+    if (phase === "recording") {
+      if (isIOS) {
+        const cap = iosStopCapture();
+        if (cap) iosTurnPcmRef.current = [...iosTurnPcmRef.current, cap.pcm];
+      } else {
+        const lastTurn = await stopTurnRecorder();
+        if (lastTurn && lastTurn.blob.size > 0) {
+          answerBlobsRef.current = [...answerBlobsRef.current, lastTurn.blob];
+        }
+      }
     }
     const session = buildTeacherFile();
     teardown();
@@ -541,13 +745,21 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     if (session && session.blob.size > 0) {
       try {
         const safeName = (user ?? "student").replace(/[^a-zA-Z0-9_-]+/g, "-").toLowerCase();
+        const contentType =
+          session.ext === "wav"
+            ? "audio/wav"
+            : session.ext === "mp4"
+              ? "audio/mp4"
+              : session.ext === "ogg"
+                ? "audio/ogg"
+                : "audio/webm";
         const blob = await upload(
           `quiz-sessions/${date}/${safeName}.${session.ext}`,
           session.blob,
           {
             access: "public",
             handleUploadUrl: "/api/quiz-audio",
-            contentType: session.ext === "mp4" ? "audio/mp4" : "audio/webm",
+            contentType,
             clientPayload: JSON.stringify({ date }),
           }
         );
@@ -765,22 +977,15 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                           Recording — {fmtClock(recSeconds)}
                         </span>
                       </div>
-                      {/* Recording cue. Desktop shows a live mic-level meter; on
-                          iOS (no analyser) the bars pulse on a stagger so it's
-                          still an unmistakable "recording right now" signal. */}
+                      {/* Live mic-level meter — an unmistakable "you're being
+                          recorded right now" cue (driven by the analyser on both
+                          the desktop and iOS capture paths). */}
                       <div className="mt-3 flex h-10 items-center gap-0.5">
                         {levels.map((lvl, i) => (
                           <span
                             key={i}
-                            className={`w-1 rounded-full bg-red-400 ${isIOS ? "animate-pulse" : ""}`}
-                            style={
-                              isIOS
-                                ? {
-                                    height: `${30 + (i % 5) * 13}%`,
-                                    animationDelay: `${(i % 6) * 110}ms`,
-                                  }
-                                : { height: `${Math.max(8, lvl * 100)}%` }
-                            }
+                            className="w-1 rounded-full bg-red-400"
+                            style={{ height: `${Math.max(8, lvl * 100)}%` }}
                           />
                         ))}
                       </div>
