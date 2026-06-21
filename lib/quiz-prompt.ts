@@ -192,8 +192,11 @@ ${keyIdeasStep}
    ask the student either what the word means OR to use it in a sentence (vary it).
    Use your answer key to judge. Hint if they're stuck; confirm or gently correct.
 4. CONCEPTS: Pick a few of the concepts above and, for each, ask a question that
-   checks whether they understand it (what it is and why it matters). Probe with
-   "why" / "how" follow-ups. Judge against your answer key.
+   checks whether they understand it (what it is and why it matters). Judge against
+   your answer key, but do NOT over-probe — a correct HIGH-LEVEL understanding of
+   the concept is enough. If they show they grasp the gist, acknowledge it and move
+   on; do NOT keep drilling with extra "why" / "how" follow-ups. Only ask a guiding
+   follow-up if their answer was wrong or clearly missed the point.
 5. WRAP UP: When you've covered the key ideas, the words, and some concepts, give
    a short, encouraging wrap-up (one or two sentences on what they did well and
    what to review). Then end with EXACTLY this instruction to the student, word
