@@ -110,20 +110,25 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   const audioElRef = useRef<HTMLAudioElement | null>(null);
   const ttsUrlRef = useRef<string | null>(null);
 
-  // Two recorders over the same mic stream:
-  //  - sessionRec: ONE recorder for the whole quiz, paused between turns, so the
-  //    saved teacher file is just the student's answers stitched into one clip.
-  //  - turnRec: a fresh recorder per turn, whose clip we send to transcription.
-  const sessionRecRef = useRef<MediaRecorder | null>(null);
-  const sessionChunksRef = useRef<Blob[]>([]);
+  // ONE Web Audio graph owns the mic for the whole quiz: mic → source → (a)
+  // analyser for the level meter and (b) a MediaStreamDestination we record. The
+  // recorder records the graph's OUTPUT, not the raw mic track — recording the
+  // raw track while an AudioContext is also reading the mic makes Chrome/macOS
+  // capture silence (the 0-byte-clip bug). The graph is created once (on the
+  // first answer, a user gesture) and reused across turns.
+  const audioCtxRef = useRef<AudioContext | null>(null);
+  const micSourceRef = useRef<MediaStreamAudioSourceNode | null>(null);
+  const destRef = useRef<MediaStreamAudioDestinationNode | null>(null);
+  const analyserRef = useRef<AnalyserNode | null>(null);
+
+  // A fresh recorder per turn (over the graph's destination stream), whose clip
+  // we send to transcription. Each turn's clip is also kept in answerBlobsRef so
+  // we can stitch them into one file for the teacher at the end.
   const turnRecRef = useRef<MediaRecorder | null>(null);
   const turnChunksRef = useRef<Blob[]>([]);
+  const answerBlobsRef = useRef<Blob[]>([]);
 
-  // Mic-level metering during recording (analyser + animation loop + timer).
-  // The analyser taps a CLONE of the mic (meterStreamRef), never the recorder's
-  // own track, so the Web Audio graph can't starve the MediaRecorder.
-  const meterCtxRef = useRef<AudioContext | null>(null);
-  const meterStreamRef = useRef<MediaStream | null>(null);
+  // Level meter animation + the elapsed-time timer.
   const rafRef = useRef<number | null>(null);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const levelsRef = useRef<number[]>(new Array(METER_BARS).fill(0));
@@ -233,113 +238,88 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
   // ---- Recording one answer ----------------------------------------------
 
-  async function startMeter() {
+  // Build the single mic-owning graph (once per quiz). Returns the destination
+  // stream the recorder records, or null if audio setup failed.
+  async function ensureAudioGraph(): Promise<MediaStream | null> {
     const mic = micRef.current;
-    if (!mic) return;
-    try {
-      const ctx = new AudioContext();
-      meterCtxRef.current = ctx;
-      // A fresh AudioContext is often "suspended" until resumed — in that state
-      // the analyser reads pure silence and, worse, tapping the mic track from a
-      // suspended graph can starve the MediaRecorder of audio. Resume first.
-      if (ctx.state === "suspended") await ctx.resume();
-
-      // Tap a CLONE of the mic so this graph is fully isolated from the
-      // recorder's own track (the recorder keeps the original).
-      const meterStream = new MediaStream(mic.getAudioTracks().map((t) => t.clone()));
-      meterStreamRef.current = meterStream;
-      const source = ctx.createMediaStreamSource(meterStream);
-      const analyser = ctx.createAnalyser();
-      analyser.fftSize = 256;
-      // Route source → analyser → muted gain → destination. The muted sink keeps
-      // the graph "pulled" (some browsers won't run an analyser that dead-ends);
-      // gain 0 means nothing is actually played, and it's the mic — no echo.
-      const sink = ctx.createGain();
-      sink.gain.value = 0;
-      source.connect(analyser);
-      analyser.connect(sink);
-      sink.connect(ctx.destination);
-
-      const buf = new Uint8Array(analyser.fftSize);
-      const tick = () => {
-        analyser.getByteTimeDomainData(buf);
-        // RMS of the waveform around the 128 midpoint → a 0..1 loudness level.
-        let sum = 0;
-        for (let i = 0; i < buf.length; i++) {
-          const v = (buf[i] - 128) / 128;
-          sum += v * v;
-        }
-        const rms = Math.sqrt(sum / buf.length);
-        const level = Math.min(1, rms * 4); // scale up — speech rarely maxes RMS
-        const next = [...levelsRef.current.slice(1), level];
-        levelsRef.current = next;
-        setLevels(next);
-        rafRef.current = requestAnimationFrame(tick);
-      };
-      rafRef.current = requestAnimationFrame(tick);
-    } catch (err) {
-      // The meter is decorative — recording still works without it.
-      console.warn("[voicequiz] meter failed", err);
-    }
+    if (!mic) return null;
+    if (destRef.current) return destRef.current.stream;
+    const Ctor =
+      window.AudioContext ||
+      (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+    if (!Ctor) return null;
+    const ctx = new Ctor();
+    audioCtxRef.current = ctx;
+    // A fresh context can be "suspended"; resume so audio actually flows.
+    if (ctx.state === "suspended") await ctx.resume();
+    const source = ctx.createMediaStreamSource(mic);
+    micSourceRef.current = source;
+    const analyser = ctx.createAnalyser();
+    analyser.fftSize = 256;
+    source.connect(analyser);
+    analyserRef.current = analyser;
+    const dest = ctx.createMediaStreamDestination();
+    source.connect(dest); // the recorder records THIS, fed by the mic via the graph
+    destRef.current = dest;
+    return dest.stream;
   }
 
-  function stopMeter() {
+  function startMeterLoop() {
+    const analyser = analyserRef.current;
+    if (!analyser) return;
+    const buf = new Uint8Array(analyser.fftSize);
+    const tick = () => {
+      analyser.getByteTimeDomainData(buf);
+      // RMS of the waveform around the 128 midpoint → a 0..1 loudness level.
+      let sum = 0;
+      for (let i = 0; i < buf.length; i++) {
+        const v = (buf[i] - 128) / 128;
+        sum += v * v;
+      }
+      const rms = Math.sqrt(sum / buf.length);
+      const level = Math.min(1, rms * 4); // scale up — speech rarely maxes RMS
+      const next = [...levelsRef.current.slice(1), level];
+      levelsRef.current = next;
+      setLevels(next);
+      rafRef.current = requestAnimationFrame(tick);
+    };
+    rafRef.current = requestAnimationFrame(tick);
+  }
+
+  function stopMeterLoop() {
     if (rafRef.current != null) {
       cancelAnimationFrame(rafRef.current);
       rafRef.current = null;
     }
-    meterCtxRef.current?.close().catch(() => {});
-    meterCtxRef.current = null;
-    meterStreamRef.current?.getTracks().forEach((t) => t.stop());
-    meterStreamRef.current = null;
     levelsRef.current = new Array(METER_BARS).fill(0);
     setLevels(levelsRef.current);
   }
 
   // "Start speaking" — a state toggle (no press-and-hold). Begins recording the
-  // student's mic; the live meter + timer make it obvious the mic is hot.
-  function startSpeaking() {
+  // student's answer off the Web Audio graph; the live meter + timer make it
+  // obvious the mic is hot.
+  async function startSpeaking() {
     if (phase !== "tutorTurn") return;
     setNotice("");
     stopTts(); // if the tutor is still talking, the student is taking over
+    if (!micRef.current) return;
 
-    const mic = micRef.current;
-    if (!mic) return;
-
-    // The continuous teacher recorder: create-and-start on the first answer,
-    // resume on later ones (it was paused after the previous answer).
+    let recordStream: MediaStream | null;
     try {
-      if (!sessionRecRef.current) {
-        const rec = new MediaRecorder(mic, pickRecorderMime());
-        sessionChunksRef.current = [];
-        rec.ondataavailable = (e) => {
-          if (e.data.size) sessionChunksRef.current.push(e.data);
-        };
-        rec.start();
-        sessionRecRef.current = rec;
-      } else if (sessionRecRef.current.state === "paused") {
-        sessionRecRef.current.resume();
-      }
-    } catch {
-      // Teacher recording is best-effort — keep going.
+      recordStream = await ensureAudioGraph();
+    } catch (err) {
+      console.warn("[voicequiz] audio graph failed", err);
+      recordStream = null;
+    }
+    if (!recordStream) {
+      setNotice("Couldn't start audio. Please check microphone access and try again.");
+      return;
     }
 
-    // Surface the mic track's state — a `muted`/`ended` track here explains a
-    // silent recording even with the mic LED on.
-    const track = mic.getAudioTracks()[0];
-    if (track) {
-      console.log("[voicequiz] mic track", {
-        enabled: track.enabled,
-        muted: track.muted,
-        readyState: track.readyState,
-        label: track.label,
-      });
-    }
-
-    // The per-turn recorder, whose clip we transcribe. A timeslice makes data
-    // flush as it's captured (and confirms audio is actually flowing).
+    // The per-turn recorder, over the graph's output. A timeslice makes data
+    // flush as it's captured.
     try {
-      const rec = new MediaRecorder(mic, pickRecorderMime());
+      const rec = new MediaRecorder(recordStream, pickRecorderMime());
       turnChunksRef.current = [];
       rec.ondataavailable = (e) => {
         if (e.data.size) turnChunksRef.current.push(e.data);
@@ -354,7 +334,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setRecSeconds(0);
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => setRecSeconds((s) => s + 1), 1000);
-    void startMeter();
+    startMeterLoop();
     setPhase("recording");
   }
 
@@ -381,30 +361,24 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     });
   }
 
-  // "Stop" — finish the answer: pause the teacher recorder, transcribe the clip,
-  // show it, then ask for the tutor's next line.
+  // "Stop" — finish the answer: stop the recorder, transcribe the clip, show it,
+  // then ask for the tutor's next line.
   async function stopSpeaking() {
     if (phase !== "recording") return;
     if (timerRef.current) {
       clearInterval(timerRef.current);
       timerRef.current = null;
     }
-    stopMeter();
+    stopMeterLoop();
 
     const turn = await stopTurnRecorder();
-    // Pause (don't stop) the teacher recorder so the next answer appends to the
-    // same file.
-    try {
-      if (sessionRecRef.current?.state === "recording") sessionRecRef.current.pause();
-    } catch {
-      // ignore
-    }
-
     if (!turn) {
       setNotice("I didn't catch any audio. Tap Start speaking to try again.");
       setPhase("tutorTurn");
       return;
     }
+    // Keep the clip for the teacher's stitched recording (see end()).
+    answerBlobsRef.current = [...answerBlobsRef.current, turn.blob];
 
     setPhase("transcribing");
     try {
@@ -444,26 +418,14 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
   // ---- Teardown ------------------------------------------------------------
 
-  // Stop the teacher recorder and resolve the single stitched recording.
-  function stopSessionRecorder(): Promise<{ blob: Blob; ext: string } | null> {
-    const rec = sessionRecRef.current;
-    sessionRecRef.current = null;
-    if (!rec || rec.state === "inactive") return Promise.resolve(null);
-    return new Promise((resolve) => {
-      rec.onstop = () => {
-        const chunks = sessionChunksRef.current;
-        sessionChunksRef.current = [];
-        if (!chunks.length) return resolve(null);
-        const type = rec.mimeType || "audio/webm";
-        const ext = type.includes("mp4") ? "mp4" : "webm";
-        resolve({ blob: new Blob(chunks, { type }), ext });
-      };
-      try {
-        rec.stop();
-      } catch {
-        resolve(null);
-      }
-    });
+  // The teacher's recording: every kept answer clip stitched into one file. They
+  // come from the same recorder config, so a single Blob plays back in order.
+  function buildTeacherFile(): { blob: Blob; ext: string } | null {
+    const blobs = answerBlobsRef.current.filter((b) => b.size > 0);
+    if (!blobs.length) return null;
+    const type = blobs[0].type || "audio/webm";
+    const ext = type.includes("mp4") ? "mp4" : type.includes("ogg") ? "ogg" : "webm";
+    return { blob: new Blob(blobs, { type }), ext };
   }
 
   function teardown() {
@@ -472,20 +434,24 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       clearInterval(timerRef.current);
       timerRef.current = null;
     }
-    stopMeter();
-    for (const rec of [turnRecRef.current, sessionRecRef.current]) {
-      if (rec && rec.state !== "inactive") {
-        try {
-          rec.stop();
-        } catch {
-          // ignore
-        }
+    stopMeterLoop();
+    const rec = turnRecRef.current;
+    if (rec && rec.state !== "inactive") {
+      try {
+        rec.stop();
+      } catch {
+        // ignore
       }
     }
     turnRecRef.current = null;
-    sessionRecRef.current = null;
     turnChunksRef.current = [];
-    sessionChunksRef.current = [];
+    // Tear down the Web Audio graph.
+    micSourceRef.current?.disconnect();
+    micSourceRef.current = null;
+    destRef.current = null;
+    analyserRef.current = null;
+    audioCtxRef.current?.close().catch(() => {});
+    audioCtxRef.current = null;
     micRef.current?.getTracks().forEach((t) => t.stop());
     micRef.current = null;
   }
@@ -502,6 +468,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setFinished(false);
     setTurns([]);
     transcriptRef.current = [];
+    answerBlobsRef.current = [];
     endStartedRef.current = false;
     setPhase("starting");
 
@@ -535,14 +502,17 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setFinished(false);
     setPhase("wrapup");
 
-    // If they hit End quiz mid-answer, close out that recording first.
+    // If they hit End quiz mid-answer, close out that clip and keep it.
     if (timerRef.current) {
       clearInterval(timerRef.current);
       timerRef.current = null;
     }
-    stopMeter();
-    await stopTurnRecorder();
-    const session = await stopSessionRecorder();
+    stopMeterLoop();
+    const lastTurn = await stopTurnRecorder();
+    if (lastTurn && lastTurn.blob.size > 0) {
+      answerBlobsRef.current = [...answerBlobsRef.current, lastTurn.blob];
+    }
+    const session = buildTeacherFile();
     teardown();
 
     // 1. Upload the stitched recording (best-effort) — straight from the browser
