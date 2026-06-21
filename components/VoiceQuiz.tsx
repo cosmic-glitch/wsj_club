@@ -137,6 +137,15 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // end() idempotent and lets cancel() block a racing end().
   const endStartedRef = useRef(false);
 
+  // iOS/WebKit needs the opposite recording path from desktop Chrome: it records
+  // the RAW mic track fine but does NOT reliably record a Web Audio
+  // MediaStreamDestination (which is the desktop workaround for a Chromium bug).
+  // So we branch on platform. (All iOS browsers are WebKit under the hood.)
+  const isIOS =
+    typeof navigator !== "undefined" &&
+    (/iP(hone|ad|od)/.test(navigator.userAgent) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1));
+
   function appendTurn(turn: Turn) {
     transcriptRef.current = [...transcriptRef.current, turn];
     setTurns(transcriptRef.current);
@@ -302,22 +311,31 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     if (phase !== "tutorTurn") return;
     setNotice("");
     stopTts(); // if the tutor is still talking, the student is taking over
-    if (!micRef.current) return;
+    const mic = micRef.current;
+    if (!mic) return;
 
-    let recordStream: MediaStream | null;
-    try {
-      recordStream = await ensureAudioGraph();
-    } catch (err) {
-      console.warn("[voicequiz] audio graph failed", err);
-      recordStream = null;
-    }
-    if (!recordStream) {
-      setNotice("Couldn't start audio. Please check microphone access and try again.");
-      return;
+    // Pick the stream to record. iOS: the raw mic (WebKit records it cleanly, and
+    // an AudioContext on the mic can silence capture — so no analyser meter
+    // there). Desktop: the Web Audio graph's output (dodges the Chromium
+    // raw-track-goes-silent bug and feeds the live meter).
+    let recordStream: MediaStream;
+    if (isIOS) {
+      recordStream = mic;
+    } else {
+      let graph: MediaStream | null = null;
+      try {
+        graph = await ensureAudioGraph();
+      } catch (err) {
+        console.warn("[voicequiz] audio graph failed", err);
+      }
+      if (!graph) {
+        setNotice("Couldn't start audio. Please check microphone access and try again.");
+        return;
+      }
+      recordStream = graph;
     }
 
-    // The per-turn recorder, over the graph's output. A timeslice makes data
-    // flush as it's captured.
+    // The per-turn recorder. A timeslice makes data flush as it's captured.
     try {
       const rec = new MediaRecorder(recordStream, pickRecorderMime());
       turnChunksRef.current = [];
@@ -334,7 +352,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setRecSeconds(0);
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => setRecSeconds((s) => s + 1), 1000);
-    startMeterLoop();
+    if (!isIOS) startMeterLoop(); // amplitude meter only on the desktop graph path
     setPhase("recording");
   }
 
@@ -747,14 +765,22 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                           Recording — {fmtClock(recSeconds)}
                         </span>
                       </div>
-                      {/* Live mic-level meter — an unmistakable "you're being
-                          recorded right now" cue. */}
+                      {/* Recording cue. Desktop shows a live mic-level meter; on
+                          iOS (no analyser) the bars pulse on a stagger so it's
+                          still an unmistakable "recording right now" signal. */}
                       <div className="mt-3 flex h-10 items-center gap-0.5">
                         {levels.map((lvl, i) => (
                           <span
                             key={i}
-                            className="w-1 rounded-full bg-red-400"
-                            style={{ height: `${Math.max(8, lvl * 100)}%` }}
+                            className={`w-1 rounded-full bg-red-400 ${isIOS ? "animate-pulse" : ""}`}
+                            style={
+                              isIOS
+                                ? {
+                                    height: `${30 + (i % 5) * 13}%`,
+                                    animationDelay: `${(i % 6) * 110}ms`,
+                                  }
+                                : { height: `${Math.max(8, lvl * 100)}%` }
+                            }
                           />
                         ))}
                       </div>
