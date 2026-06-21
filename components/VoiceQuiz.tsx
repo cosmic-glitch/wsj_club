@@ -69,16 +69,29 @@ function fmtClock(totalSeconds: number): string {
 // it on the client and skip the tutor model call for the FIRST turn. That model
 // call — a full chat completion with the whole article as context — is the single
 // biggest startup delay; for a greeting we already know verbatim, it's pure
-// waiting, so the opening goes straight to TTS instead.
+// waiting, so the opening goes straight to TTS instead. Kept SHORT (just the
+// task) so the opening TTS is quick — the recording mechanics (Start speaking /
+// Stop) are shown on screen under the button, not spoken (see RecordingHelp).
 function openingLine(name: string | null): string {
   const who = (name ?? "").trim() || "there";
   return (
     `Hi ${who}. Explain the key ideas in the article, as much as you remember. ` +
     `Keep speaking and bring in as many layers as you can recall. Take as much ` +
-    `time as you need — pauses and ums are all okay. Press the Start speaking ` +
-    `button, wait until it shows that recording has started, and only then start ` +
-    `talking. When you've finished your whole answer, press Stop. Do the same for ` +
-    `every question after this one.`
+    `time as you need — pauses and ums are all okay.`
+  );
+}
+
+// The recording how-to, shown on screen under the Start speaking button (every
+// turn) instead of being spoken — so the tutor's audio stays short. This is the
+// "common instructions" that used to be part of the opening line.
+function RecordingHelp() {
+  return (
+    <p className="mt-2.5 text-xs leading-relaxed text-stone-500">
+      Press <span className="font-semibold text-stone-600">Start speaking</span> and
+      wait until it shows <span className="font-semibold text-stone-600">Recording</span>{" "}
+      before you talk. Press <span className="font-semibold text-stone-600">Stop</span>{" "}
+      when you’ve finished your answer. The same steps apply to every question.
+    </p>
   );
 }
 
@@ -1049,6 +1062,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                           </button>
                         )}
                       </div>
+                      {!canRetry && <RecordingHelp />}
                     </>
                   )}
 

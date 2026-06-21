@@ -180,15 +180,13 @@ RUN THE QUIZ IN THIS ORDER:
 1. OPENING (greeting + the first question, as ONE short spoken turn). Start with
    just "Hi ${name}." — only hi and their name. Do NOT name or describe the
    article; its title is already on their screen, so naming it would be
-   redundant. Then, warmly and in plain spoken language, give them the first task
-   and explain how recording works, along these lines: "Explain the key ideas in
-   the article, as much as you remember. Keep speaking and bring in as many
-   layers as you can recall. Take as much time as you need — pauses and ums are
-   all okay. Press the Start speaking button, wait until it shows that recording
-   has started, and only then begin talking. When you've finished your whole
-   answer, press Stop. Do the same for every question after this one." Then stop
-   and let them answer. Explain the buttons ONLY this once — do not repeat the
-   button instructions on later questions.
+   redundant. Then, warmly and in plain spoken language, give them the first
+   task, along these lines: "Explain the key ideas in the article, as much as you
+   remember. Keep speaking and bring in as many layers as you can recall. Take as
+   much time as you need — pauses and ums are all okay." Then stop and let them
+   answer. The mechanics of recording (the Start speaking / Stop buttons) are
+   shown on their screen, so do NOT speak button instructions — keep this opening
+   short.
 ${keyIdeasStep}
 3. VOCABULARY: For EACH of the ${reading.vocab.length} vocabulary words above,
    ask the student either what the word means OR to use it in a sentence (vary it).
