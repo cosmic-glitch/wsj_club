@@ -42,11 +42,15 @@ export async function POST(request: Request) {
     voice: TTS_VOICE,
     input: text,
     response_format: "mp3",
+    // `speed` is honored by the tts-1 models (ignored by gpt-4o-mini-tts, which
+    // takes its pace from `instructions` below) — 1.3 ≈ 30% faster than default.
+    speed: 1.3,
   };
   if (TTS_MODEL.includes("gpt-4o")) {
     payload.instructions =
       "Speak as a warm, friendly, encouraging tutor talking to a teenager. " +
-      "Natural, unhurried pace. Clear and plain.";
+      "Speak at a brisk, lively pace — clearly faster than an unhurried read " +
+      "(about 30% quicker), while still sounding natural. Clear and plain.";
   }
 
   try {
