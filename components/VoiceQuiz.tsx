@@ -415,7 +415,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       const data = await res.json().catch(() => null);
       console.log("[voicequiz] transcribe", res.status, data);
       if (!res.ok) {
-        setNotice(`Couldn't transcribe (server error ${res.status}). Tap Start speaking to try again.`);
+        // Beta diagnostic: show the upstream detail + the recorded clip's size so
+        // we can tell an empty/garbled recording from a real server problem.
+        const m = data?.meta ? `[${(data.meta.size / 1024).toFixed(0)}KB ${data.meta.type || "?"}] ` : "";
+        setNotice(`Transcribe failed ${res.status}: ${m}${data?.detail ?? ""}`.trim());
         setPhase("tutorTurn");
         return;
       }

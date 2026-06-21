@@ -36,11 +36,14 @@ export async function POST(request: Request) {
     return Response.json({ error: "No audio." }, { status: 400 });
   }
 
+  const name = file instanceof File && file.name ? file.name : "answer.webm";
+  const meta = { size: file.size, type: file.type, name };
+  console.log("Transcribe received:", meta);
+
   try {
     const upstream = new FormData();
     // OpenAI keys off the filename extension to detect the format, so pass a
     // sensible name (the client sends one matching the recorder's container).
-    const name = file instanceof File && file.name ? file.name : "answer.webm";
     upstream.append("file", file, name);
     upstream.append("model", STT_MODEL);
     upstream.append("response_format", "json");
@@ -51,13 +54,22 @@ export async function POST(request: Request) {
       body: upstream,
     });
     if (!res.ok) {
-      console.error("Transcription failed:", res.status, await res.text());
-      return Response.json({ error: "Could not transcribe the answer." }, { status: 502 });
+      const detail = await res.text();
+      console.error("Transcription failed:", res.status, "meta:", meta, "detail:", detail);
+      // Surface the upstream detail (temporarily) so the client can show it —
+      // this is a beta diagnostic for the in-browser recording path.
+      return Response.json(
+        { error: "Could not transcribe the answer.", detail: detail.slice(0, 300), meta },
+        { status: 502 }
+      );
     }
     const data = await res.json();
     return Response.json({ text: (data.text ?? "").trim() });
   } catch (err) {
     console.error("Transcription error:", err);
-    return Response.json({ error: "Could not transcribe the answer." }, { status: 502 });
+    return Response.json(
+      { error: "Could not transcribe the answer.", detail: String(err).slice(0, 300), meta },
+      { status: 502 }
+    );
   }
 }
