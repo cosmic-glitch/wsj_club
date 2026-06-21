@@ -64,6 +64,24 @@ function fmtClock(totalSeconds: number): string {
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
+// The tutor's opening line. It's a fixed script (mirrors step 1 of
+// `buildInstructions` in lib/quiz-prompt.ts — keep the two in sync), so we build
+// it on the client and skip the tutor model call for the FIRST turn. That model
+// call — a full chat completion with the whole article as context — is the single
+// biggest startup delay; for a greeting we already know verbatim, it's pure
+// waiting, so the opening goes straight to TTS instead.
+function openingLine(name: string | null): string {
+  const who = (name ?? "").trim() || "there";
+  return (
+    `Hi ${who}. Explain the key ideas in the article, as much as you remember. ` +
+    `Keep speaking and bring in as many layers as you can recall. Take as much ` +
+    `time as you need — pauses and ums are all okay. Press the Start speaking ` +
+    `button, wait until it shows that recording has started, and only then start ` +
+    `talking. When you've finished your whole answer, press Stop. Do the same for ` +
+    `every question after this one.`
+  );
+}
+
 // ---- PCM → WAV helpers (the iOS recording path) --------------------------
 // iOS Safari won't reliably record via MediaRecorder, so there we capture raw
 // PCM through Web Audio and build a WAV ourselves. These run client-side only.
@@ -340,6 +358,19 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setNotice("");
     setCanRetry(false);
     setPhase(first ? "starting" : "thinking");
+
+    // FIRST turn: skip the tutor model entirely and speak the fixed opening (see
+    // openingLine). This is the big startup win — no chat completion, no
+    // article-from-Blob fetch before the student hears anything; just TTS.
+    if (first) {
+      const text = openingLine(user);
+      appendTurn({ role: "tutor", text });
+      const order = transcriptRef.current.length - 1;
+      setPhase("tutorTurn");
+      void speak(text, order);
+      return;
+    }
+
     try {
       const res = await fetch("/api/quiz-turn", {
         method: "POST",
@@ -355,18 +386,12 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       const order = transcriptRef.current.length - 1;
       setPhase("tutorTurn");
       void speak(data.text, order);
-    } catch (err) {
-      if (first) {
-        // Nothing has happened yet — a clean fatal error is fine.
-        teardown();
-        setError(err instanceof Error ? err.message : "Something went wrong.");
-        setPhase("error");
-      } else {
-        // Keep the session alive; let the student retry the next question.
-        setNotice("Trouble reaching the tutor. Tap Retry to continue.");
-        setCanRetry(true);
-        setPhase("tutorTurn");
-      }
+    } catch {
+      // A mid-quiz turn failed — keep the session alive and let the student retry
+      // (the first turn can't reach here; it never makes a network call).
+      setNotice("Trouble reaching the tutor. Tap Retry to continue.");
+      setCanRetry(true);
+      setPhase("tutorTurn");
     }
   }
 
