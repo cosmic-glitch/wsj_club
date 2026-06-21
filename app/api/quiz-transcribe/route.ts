@@ -37,8 +37,6 @@ export async function POST(request: Request) {
   }
 
   const name = file instanceof File && file.name ? file.name : "answer.webm";
-  const meta = { size: file.size, type: file.type, name };
-  console.log("Transcribe received:", meta);
 
   try {
     const upstream = new FormData();
@@ -54,22 +52,13 @@ export async function POST(request: Request) {
       body: upstream,
     });
     if (!res.ok) {
-      const detail = await res.text();
-      console.error("Transcription failed:", res.status, "meta:", meta, "detail:", detail);
-      // Surface the upstream detail (temporarily) so the client can show it —
-      // this is a beta diagnostic for the in-browser recording path.
-      return Response.json(
-        { error: "Could not transcribe the answer.", detail: detail.slice(0, 300), meta },
-        { status: 502 }
-      );
+      console.error("Transcription failed:", res.status, "file:", name, file.size, await res.text());
+      return Response.json({ error: "Could not transcribe the answer." }, { status: 502 });
     }
     const data = await res.json();
     return Response.json({ text: (data.text ?? "").trim() });
   } catch (err) {
     console.error("Transcription error:", err);
-    return Response.json(
-      { error: "Could not transcribe the answer.", detail: String(err).slice(0, 300), meta },
-      { status: 502 }
-    );
+    return Response.json({ error: "Could not transcribe the answer." }, { status: 502 });
   }
 }

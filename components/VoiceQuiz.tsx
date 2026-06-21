@@ -561,28 +561,18 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
     setPhase("transcribing");
     try {
-      console.log("[voicequiz] answer blob", turn.blob.size, turn.blob.type);
       const form = new FormData();
       form.append("file", turn.blob, turn.filename);
       const res = await fetch("/api/quiz-transcribe", { method: "POST", body: form });
       const data = await res.json().catch(() => null);
-      console.log("[voicequiz] transcribe", res.status, data);
       if (!res.ok) {
-        // Beta diagnostic: show the upstream detail + the recorded clip's size so
-        // we can tell an empty/garbled recording from a real server problem.
-        const m = data?.meta ? `[${(data.meta.size / 1024).toFixed(0)}KB ${data.meta.type || "?"}] ` : "";
-        setNotice(`Transcribe failed ${res.status}: ${m}${data?.detail ?? ""}`.trim());
+        setNotice("Sorry, I couldn't transcribe that. Tap Start speaking to try again.");
         setPhase("tutorTurn");
         return;
       }
       const text = (data?.text ?? "").trim();
       if (!text) {
-        // The clip recorded but held no recognizable speech — usually too quiet
-        // or the mic captured silence.
-        setNotice(
-          `I didn't catch any words (recorded ${(turn.blob.size / 1024).toFixed(0)} KB). ` +
-            "Speak a bit louder/closer and tap Start speaking to try again."
-        );
+        setNotice("I didn't catch any words — speak a bit louder/closer and tap Start speaking to try again.");
         setPhase("tutorTurn");
         return;
       }
