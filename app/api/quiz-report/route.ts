@@ -8,6 +8,10 @@ const REPORT_MODEL = process.env.REPORT_MODEL || "gpt-5.4-mini";
 
 type Turn = { role: "student" | "tutor"; text: string };
 
+// A failure recorded during the quiz (transcription / tutor unreachable). When
+// present, the session is saved as a PARTIAL attempt rather than being lost.
+type SessionFailure = { reason: string; detail: string };
+
 function transcriptToText(transcript: Turn[]): string {
   return transcript
     .map((t) => `${t.role === "student" ? "Student" : "Tutor"}: ${t.text}`)
@@ -25,7 +29,14 @@ export async function POST(request: Request) {
     return Response.json({ error: "Not logged in." }, { status: 401 });
   }
 
-  let body: { date?: string; studentName?: string; transcript?: Turn[]; audioUrl?: string };
+  let body: {
+    date?: string;
+    studentName?: string;
+    transcript?: Turn[];
+    audioUrl?: string;
+    partial?: boolean;
+    failure?: SessionFailure | null;
+  };
   try {
     body = await request.json();
   } catch {
@@ -36,6 +47,19 @@ export async function POST(request: Request) {
   const studentName = (body.studentName ?? "").trim() || user;
   const transcript = Array.isArray(body.transcript) ? body.transcript : [];
   const audioUrl = (body.audioUrl ?? "").trim() || undefined;
+  // A partial attempt: the quiz ended because of (or was abandoned after) a
+  // transcription/tutor failure. We still save whatever was captured — the
+  // recording + transcript so far — but flag it so the teacher knows it's
+  // incomplete and why. `failure` is sanitized + length-capped (it's free text
+  // from the client).
+  const partial = body.partial === true;
+  const failure: SessionFailure | null =
+    body.failure && typeof body.failure === "object"
+      ? {
+          reason: String(body.failure.reason ?? "unknown").slice(0, 200),
+          detail: String(body.failure.detail ?? "").slice(0, 2000),
+        }
+      : null;
   const reading = getReading(date);
   if (!reading) {
     return Response.json({ error: "Unknown reading." }, { status: 404 });
@@ -91,10 +115,10 @@ export async function POST(request: Request) {
         const content = data.choices?.[0]?.message?.content;
         if (content) report = JSON.parse(content);
       } else {
-        console.error("Report generation failed:", res.status, await res.text());
+        console.error("Report generation failed:", res.status, "user:", user, await res.text());
       }
     } catch (err) {
-      console.error("Report generation error:", err);
+      console.error("Report generation error for user:", user, err);
     }
   }
 
@@ -107,7 +131,29 @@ export async function POST(request: Request) {
     transcript,
     report,
     audioUrl,
+    partial,
+    failure,
   };
+
+  // A failure ended this session — log it WITH the student and how far they got
+  // (answers recorded, whether a recording was saved), so a reported problem is
+  // traceable from the runtime logs even though the per-turn failures already
+  // logged above.
+  if (partial) {
+    console.error(
+      "Voice-quiz partial session saved:",
+      JSON.stringify({
+        user,
+        studentName,
+        date,
+        reason: failure?.reason ?? "unknown",
+        detail: failure?.detail ?? "",
+        studentAnswers: studentTurns.length,
+        totalTurns: transcript.length,
+        audioSaved: !!audioUrl,
+      })
+    );
+  }
 
   // Save to Blob (best-effort — don't fail the student's session if storage hiccups).
   try {

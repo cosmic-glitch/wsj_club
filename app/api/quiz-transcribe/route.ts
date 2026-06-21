@@ -52,13 +52,24 @@ export async function POST(request: Request) {
       body: upstream,
     });
     if (!res.ok) {
-      console.error("Transcription failed:", res.status, "file:", name, file.size, await res.text());
+      // Log the student so a reported failure is traceable, plus the clip's
+      // size/name and OpenAI's reason (an empty/malformed clip 400s here).
+      console.error(
+        "Transcription failed:",
+        res.status,
+        "user:",
+        user,
+        "file:",
+        name,
+        file.size,
+        await res.text()
+      );
       return Response.json({ error: "Could not transcribe the answer." }, { status: 502 });
     }
     const data = await res.json();
     return Response.json({ text: (data.text ?? "").trim() });
   } catch (err) {
-    console.error("Transcription error:", err);
+    console.error("Transcription error for user:", user, "file:", name, file.size, err);
     return Response.json({ error: "Could not transcribe the answer." }, { status: 502 });
   }
 }

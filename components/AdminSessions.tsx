@@ -15,6 +15,7 @@ export type Report = {
   vocab?: string;
   concepts?: string;
 };
+export type SessionFailure = { reason?: string; detail?: string };
 export type Session = {
   date: string;
   title: string;
@@ -24,6 +25,11 @@ export type Session = {
   transcript: Turn[];
   report: Report | null;
   audioUrl?: string;
+  // Set when the attempt ended because of (or was abandoned after) a
+  // transcription/tutor failure — saved anyway as an INCOMPLETE attempt. `failure`
+  // carries the reason + a short detail. Older sessions predate these (undefined).
+  partial?: boolean;
+  failure?: SessionFailure | null;
   // The Blob URL of this session's JSON — attached at load time so the teacher
   // can delete it. Not part of the saved JSON itself.
   blobUrl: string;
@@ -136,6 +142,11 @@ export default function AdminSessions({ groups }: { groups: ArticleGroup[] }) {
                             <span className="w-36 shrink-0 whitespace-nowrap text-stone-500">
                               {fmtLocal(s.endedAt, mounted)}
                             </span>
+                            {s.partial && (
+                              <span className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
+                                partial
+                              </span>
+                            )}
                           </button>
                         </li>
                       );
@@ -173,6 +184,11 @@ export default function AdminSessions({ groups }: { groups: ArticleGroup[] }) {
                       {open.report.score}
                     </span>
                   )}
+                  {open.partial && (
+                    <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
+                      partial
+                    </span>
+                  )}
                 </div>
                 <p className="mt-0.5 truncate text-sm text-stone-500">
                   <Link
@@ -196,6 +212,15 @@ export default function AdminSessions({ groups }: { groups: ArticleGroup[] }) {
 
             {/* Body — report card, recording, full transcript. Scrolls if long. */}
             <div className="max-h-[70vh] overflow-y-auto px-6 py-4">
+              {open.partial && (
+                <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-800">
+                  <span className="font-semibold">Incomplete attempt</span>
+                  {open.failure?.reason ? ` — ${open.failure.reason}` : ""}.{" "}
+                  {open.failure?.detail ||
+                    "Ended because of (or was abandoned after) a failure; saved with whatever was recorded."}
+                </div>
+              )}
+
               {open.report?.summary && (
                 <p className="text-sm text-stone-600">{open.report.summary}</p>
               )}

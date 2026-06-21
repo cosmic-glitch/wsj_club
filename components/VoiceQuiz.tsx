@@ -27,6 +27,12 @@ type Report = {
   gaps?: string[];
 };
 
+// A failure during the quiz (transcription / tutor unreachable). When one
+// occurs, the session is saved as a PARTIAL attempt — the recording + transcript
+// so far, flagged with this reason — instead of being lost. `detail` is a short
+// human summary (the deep detail, incl. the student name, is logged server-side).
+type SessionFailure = { reason: string; detail: string };
+
 type Phase =
   | "idle" // modal closed
   | "needLogin" // clicked while logged out
@@ -217,6 +223,13 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // When a mid-quiz tutor-turn request fails, we keep the session alive and show
   // a Retry instead of dropping to the fatal error screen.
   const [canRetry, setCanRetry] = useState(false);
+  // The most recent failure this session (transcription / tutor unreachable).
+  // When set, ENDING or BAILING saves a PARTIAL attempt (with this reason) rather
+  // than discarding it, and the secondary button becomes "Save & exit". failureRef
+  // is the async-safe source of truth read by the save flow; `failed` drives the
+  // UI. A clean session (no failure) still cancels with nothing saved.
+  const failureRef = useRef<SessionFailure | null>(null);
+  const [failed, setFailed] = useState(false);
 
   // The on-screen conversation (tutor questions + the student's transcribed
   // answers). The student now sees their own answers, unlike the realtime build.
@@ -300,6 +313,18 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // Add one clip to the teacher's audio timeline (see segmentsRef).
   function pushSegment(seg: AudioSegment) {
     segmentsRef.current = [...segmentsRef.current, seg];
+  }
+
+  // Record a failure so the session is saved as a partial (the latest one wins —
+  // its reason is what the teacher sees). Sticky for the rest of the session.
+  function recordFailure(reason: string, detail: string) {
+    failureRef.current = { reason, detail };
+    setFailed(true);
+  }
+
+  // Count the student's answers captured so far (used to label failures).
+  function answersSoFar(): number {
+    return transcriptRef.current.filter((t) => t.role === "student").length;
   }
 
   // Pick a container the browser can record (Chrome/Firefox: webm/opus; Safari:
@@ -401,7 +426,13 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       void speak(data.text, order);
     } catch {
       // A mid-quiz turn failed — keep the session alive and let the student retry
-      // (the first turn can't reach here; it never makes a network call).
+      // (the first turn can't reach here; it never makes a network call). Flag it
+      // so that if they give up, the partial is saved rather than lost.
+      const n = answersSoFar();
+      recordFailure(
+        "tutor-unreachable",
+        `Couldn't load the next question after ${n} answer${n === 1 ? "" : "s"}.`
+      );
       setNotice("Trouble reaching the tutor. Tap Retry to continue.");
       setCanRetry(true);
       setPhase("tutorTurn");
@@ -650,6 +681,12 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       const res = await fetch("/api/quiz-transcribe", { method: "POST", body: form });
       const data = await res.json().catch(() => null);
       if (!res.ok) {
+        // The clip recorded fine (it's already in the teacher's timeline) but
+        // OpenAI rejected it — flag a failure so a give-up still saves the partial.
+        recordFailure(
+          "transcription-failed",
+          `Couldn't transcribe answer ${answersSoFar() + 1} (server returned ${res.status}).`
+        );
         setNotice("Sorry, I couldn't transcribe that. Tap Start speaking to try again.");
         setPhase("tutorTurn");
         return;
@@ -664,6 +701,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       await nextTutorTurn(false);
     } catch (err) {
       console.warn("[voicequiz] transcribe failed", err);
+      recordFailure(
+        "transcription-error",
+        `Network error transcribing answer ${answersSoFar() + 1}.`
+      );
       setNotice("Network problem reaching the transcriber. Tap Start speaking to try again.");
       setPhase("tutorTurn");
     }
@@ -767,6 +808,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setTurns([]);
     transcriptRef.current = [];
     segmentsRef.current = [];
+    failureRef.current = null;
+    setFailed(false);
     endStartedRef.current = false;
     setPhase("starting");
 
@@ -866,7 +909,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setUploadStep("done");
 
     // 2. Grade + save (transcript + report card + audio link) for the teacher,
-    // and show the student their full report card.
+    // and show the student their full report card. If a failure occurred this
+    // session, mark it a PARTIAL attempt and pass the reason — the server stores
+    // it and logs it with the student's name + how far they got.
+    const failure = failureRef.current;
+    const partial = !!failure;
     setGradeStep("active");
     try {
       const res = await fetch("/api/quiz-report", {
@@ -877,6 +924,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           studentName: user,
           transcript: transcriptRef.current,
           audioUrl,
+          partial,
+          failure,
         }),
       });
       const data = await res.json().catch(() => null);
@@ -889,10 +938,18 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     }
   }
 
-  // "Cancel quiz" — bail out with nothing saved: no recording uploaded, no
-  // transcript graded, no session written. Setting the once-guard also blocks a
-  // late end() from a double-click race.
+  // The secondary button.
+  //   - No failure this session → a true "Cancel quiz": bail out with NOTHING
+  //     saved (no recording, no transcript, no session). The once-guard also
+  //     blocks a late end() from a double-click race.
+  //   - A failure occurred → "Save & exit": don't lose the work — run the same
+  //     save flow as End quiz (which marks it partial + attaches the reason),
+  //     so the teacher still gets the recording + transcript-so-far and the why.
   function cancel() {
+    if (failureRef.current) {
+      void end();
+      return;
+    }
     endStartedRef.current = true;
     close();
   }
@@ -910,6 +967,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setTurns([]);
     transcriptRef.current = [];
     segmentsRef.current = [];
+    failureRef.current = null;
+    setFailed(false);
     endStartedRef.current = false;
   }
 
@@ -1125,7 +1184,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                     onClick={cancel}
                     className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-50"
                   >
-                    Cancel quiz
+                    {failed ? "Save & exit" : "Cancel quiz"}
                   </button>
                 </div>
               </div>
@@ -1137,7 +1196,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
             {phase === "wrapup" && (
               <div className="flex min-h-0 flex-col">
                 <h2 className="font-serif text-xl font-bold text-stone-900">
-                  {finished ? "All done — nice work!" : "Wrapping up…"}
+                  {finished
+                    ? failed
+                      ? "Saved — we hit a snag"
+                      : "All done — nice work!"
+                    : "Wrapping up…"}
                 </h2>
                 <ul className="mt-4 space-y-2.5 text-sm">
                   <li className="flex items-center gap-2.5">
@@ -1199,8 +1262,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                       )}
 
                     <p className="mt-4 text-sm text-stone-600">
-                      Saved for your teacher. If you’re not happy with your score, feel free to
-                      take the quiz again.
+                      {failed
+                        ? "Something went wrong partway, so we saved this as a partial attempt for your teacher. Please feel free to take the quiz again."
+                        : "Saved for your teacher. If you’re not happy with your score, feel free to take the quiz again."}
                     </p>
                   </div>
                 )}

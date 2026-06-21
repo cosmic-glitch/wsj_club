@@ -80,18 +80,26 @@ export async function POST(request: Request) {
       body: JSON.stringify({ model: TUTOR_MODEL, messages }),
     });
     if (!res.ok) {
-      console.error("Tutor turn failed:", res.status, await res.text());
+      console.error(
+        "Tutor turn failed:",
+        res.status,
+        "user:",
+        user,
+        "turns:",
+        transcript.length,
+        await res.text()
+      );
       return Response.json({ error: "Could not get the next question." }, { status: 502 });
     }
     const data = await res.json();
     const text = (data.choices?.[0]?.message?.content ?? "").trim();
     if (!text) {
-      console.error("Tutor turn: empty response", data);
+      console.error("Tutor turn: empty response for user:", user, "turns:", transcript.length, data);
       return Response.json({ error: "Could not get the next question." }, { status: 502 });
     }
     return Response.json({ text });
   } catch (err) {
-    console.error("Tutor turn error:", err);
+    console.error("Tutor turn error for user:", user, "turns:", transcript.length, err);
     return Response.json({ error: "Could not get the next question." }, { status: 502 });
   }
 }
