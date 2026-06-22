@@ -1,0 +1,130 @@
+{
+  "date": "2026-06-22",
+  "title": "Alan Greenspan Was a Maestro of Monetary Policy",
+  "articleUrl": "https://archive.ph/SDh3c",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "partisan",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Nixon's partisan rage turned Greenspan off, but he served happily under Gerald Ford.",
+      "inContext": "Nixon's anger came from fierce loyalty to his own political side — and that one-sidedness is what put Greenspan off.",
+      "meaning": "Strongly favoring one political party, group, or cause, often in a one-sided way that ignores the other side's point of view.",
+      "examples": [
+        "The class election got so partisan that kids would only clap for candidates from their own friend group.",
+        "A good referee can't be partisan — she has to make fair calls even when her favorite team is playing."
+      ]
+    },
+    {
+      "word": "plaudits",
+      "partOfSpeech": "noun",
+      "articleQuote": "he left the Fed to a chorus of plaudits, hailed as the man who could make the American economy sing.",
+      "inContext": "When Greenspan retired, people widely praised and applauded the job he had done.",
+      "meaning": "Enthusiastic praise or approval; applause.",
+      "examples": [
+        "Her science-fair project earned plaudits from every judge who stopped at her table.",
+        "The team's last-second comeback won plaudits even from the rival school's fans."
+      ]
+    },
+    {
+      "word": "zealous",
+      "partOfSpeech": "adjective",
+      "articleQuote": "He learned that from his friend Ayn Rand, a zealous, gut-level believer in individual freedom.",
+      "inContext": "Rand believed in personal freedom with fierce, passionate intensity — not mild interest.",
+      "meaning": "Deeply and intensely devoted to a cause, goal, or belief — enthusiastic to a strong degree.",
+      "examples": [
+        "He was so zealous about recycling that he sorted the entire cafeteria's trash by hand.",
+        "Her zealous practicing — three hours a day — paid off when she made first chair in the orchestra."
+      ]
+    },
+    {
+      "word": "rapt",
+      "partOfSpeech": "adjective",
+      "articleQuote": "never using one syllable when six would do. The American press proved a rapt audience.",
+      "inContext": "Reporters paid such close, fascinated attention to Greenspan's every word that they hung on each syllable.",
+      "meaning": "So absorbed or fascinated by something that you notice nothing else; completely attentive.",
+      "examples": [
+        "The whole class sat rapt as the speaker described surviving the earthquake.",
+        "She was so rapt in her book that she missed her bus stop."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The Federal Reserve",
+      "articleQuote": "as chairman of the Federal Reserve he presided over the then-longest American boom on record.",
+      "inContext": "Greenspan was the head of the Federal Reserve, the institution at the center of the U.S. economy, so its biggest decisions were largely his to make.",
+      "meaning": "The Federal Reserve (the \"Fed\") is the central bank of the United States. A central bank isn't a regular bank where you keep your allowance — it's the bank FOR the government and for the other banks. It has a few huge jobs: it controls how much money flows through the economy, it sets a key interest rate that ripples out into the rates people pay on car loans, mortgages, and credit cards (and earn on savings), and it acts as a safety net — a \"lender of last resort\" that can pump in emergency money when banks are in trouble so the whole system doesn't collapse. Most countries have one (the European Central Bank, the Bank of England). Its leader, the chair, is considered one of the most powerful economic figures in the world — which is why running it could be called the job that \"defined his career.\""
+    },
+    {
+      "name": "Monetary policy",
+      "articleQuote": "Alan Greenspan was a maestro of monetary policy.",
+      "inContext": "Greenspan was a master at using the Fed's main tool — nudging interest rates up or down — to keep the economy growing without letting it spin out of control.",
+      "meaning": "Monetary policy is how a central bank steers the whole economy, mainly by raising or lowering interest rates — the cost of borrowing money. Think of it like a thermostat for the economy. When things are sluggish and people aren't spending, the Fed LOWERS rates: borrowing gets cheaper, so families and businesses take out more loans, spend, and hire — and the economy heats up. When the economy runs too hot and prices climb too fast (inflation), the Fed RAISES rates: borrowing gets expensive, people spend less, and things cool down. The hard part is finding the \"just right\" setting — enough growth and jobs, but not so much that prices spiral. Doing that balancing act gracefully is what earned Greenspan the nickname \"maestro\" — a master conductor leading an orchestra."
+    },
+    {
+      "name": "The business cycle",
+      "articleQuote": "spotting turns in the business cycle—like in 1957, when growing steel inventories led him to intuit that a recession loomed.",
+      "inContext": "Greenspan made his name by reading early warning signs — like unsold steel piling up — to sense when the economy was about to flip from growing to shrinking.",
+      "meaning": "The business cycle is the up-and-down rhythm every economy goes through — it never just grows in a straight line. In the \"up\" phase (an expansion, or boom) businesses sell more, hire more, and spending and wages rise. Eventually growth peaks and tips into the \"down\" phase (a contraction; if it's bad enough, a recession), when sales fall, companies cut jobs, and people spend less — until things bottom out and start climbing again. These swings repeat over and over, though no two are exactly alike. Figuring out where the economy is in this cycle — and especially when it's about to turn — is one of the most valuable and difficult skills in economics, because a turn changes jobs, businesses, and prices for everyone. Greenspan's clue in 1957 was unsold steel piling up in warehouses, a sign factories would soon slow down."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article describes Ayn Rand as \"a zealous, gut-level believer in individual freedom.\" Someone who is zealous is:",
+      "options": [
+        "Doubtful and hesitant",
+        "Deeply and intensely devoted",
+        "Calm and indifferent",
+        "Secretive and quiet"
+      ],
+      "answerIndex": 1,
+      "explanation": "\"Zealous\" means passionately and intensely devoted to a cause or belief."
+    },
+    {
+      "question": "The Federal Reserve, which Greenspan led, is best described as:",
+      "options": [
+        "A bank where ordinary people deposit their paychecks",
+        "The central bank of the United States — the bank for the government and other banks",
+        "The agency that writes the federal budget",
+        "The New York stock exchange"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Fed is the U.S. central bank: it manages the nation's money and banks, not individual accounts."
+    },
+    {
+      "question": "If the economy is overheating and prices are rising too quickly, what is a central bank's typical move?",
+      "options": [
+        "Raise interest rates to make borrowing more expensive",
+        "Lower interest rates to encourage more borrowing",
+        "Ban companies from raising any prices",
+        "Give every citizen a cash bonus"
+      ],
+      "answerIndex": 0,
+      "explanation": "Raising rates makes borrowing costlier, so people spend less and the economy cools — the heart of monetary policy."
+    },
+    {
+      "question": "What is the \"business cycle\"?",
+      "options": [
+        "The daily schedule a company follows",
+        "The economy's repeating swing between growth (expansion) and shrinking (recession)",
+        "The path a product takes from factory to store shelf",
+        "A business's yearly budget meeting"
+      ],
+      "answerIndex": 1,
+      "explanation": "The business cycle is the economy's recurring rhythm of booms and recessions."
+    },
+    {
+      "question": "The article says \"The American press proved a rapt audience.\" A rapt audience is one that is:",
+      "options": [
+        "Bored and distracted",
+        "Completely absorbed and paying close attention",
+        "Hostile and critical",
+        "Very small in number"
+      ],
+      "answerIndex": 1,
+      "explanation": "\"Rapt\" means so fascinated that you notice nothing else — fully attentive."
+    }
+  ]
+}
