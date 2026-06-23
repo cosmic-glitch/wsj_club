@@ -102,7 +102,6 @@ export async function POST(request: Request) {
               role: "user",
               content: buildReportPrompt(
                 reading,
-                studentName,
                 transcriptToText(transcript),
                 articleText
               ),

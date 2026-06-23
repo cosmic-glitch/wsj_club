@@ -52,37 +52,49 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
        const data = await page.evaluate(() => {
          const art = document.querySelector('article') || document.querySelector('main');
          const title = (document.querySelector('h1')?.innerText || document.title || '').trim();
+         // The DECK / STANDFIRST — the subtitle line right under the headline.
+         // It frequently carries LOAD-BEARING facts that appear NOWHERE in the
+         // body (e.g. an obituary's "...died on June 22nd, aged 100"), so capture
+         // it explicitly: a plain `article p` sweep drops it, which once made the
+         // tutor/grader miss a fact the student correctly recalled.
+         const deckEl = document.querySelector(
+           '[class*="standfirst"], [class*="sub-head"], [class*="subhead"], [class*="dek"], [class*="rubric"], [data-testid*="standfirst"], [data-testid*="subhead"], h1 ~ h2, h1 + p'
+         );
+         let deck = deckEl ? deckEl.innerText.replace(/\s+/g, ' ').trim() : '';
+         if (deck && (deck === title || deck.length > 320)) deck = ''; // guard: don't grab a body paragraph
          const STOP = /^This article appeared in/i;                 // print-edition footer
          const SKIP = /^(Save|Share|Listen to this story|Video:|Discover stories|Delivered to your inbox|0:00|Advertisement)\b/i;
          const blocks = [];
          for (const n of art.querySelectorAll('p, h2, h3')) {
            const t = n.innerText.replace(/\s+/g, ' ').trim();
-           if (!t || SKIP.test(t) || /your browser does not support/i.test(t)) continue;
+           if (!t || t === deck || SKIP.test(t) || /your browser does not support/i.test(t)) continue;
            if (STOP.test(t)) break;
            if (/\bmin read\b/i.test(t) && t.length < 60) continue;  // dateline
            blocks.push({ tag: n.tagName.toLowerCase() === 'p' ? 'p' : 'h2', text: t });
          }
-         return { title, blocks };
+         return { title, deck, blocks };
        });
        // 2) Render the extracted text into a clean, plainly-styled doc and print THAT.
        const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+       const deckHtml = data.deck ? `<p class="dek">${esc(data.deck)}</p>` : '';
        const body = data.blocks.map(b => b.tag === 'p' ? `<p>${esc(b.text)}</p>` : `<h2>${esc(b.text)}</h2>`).join('\n');
        const html = `<!doctype html><html><head><meta charset="utf-8"><style>
          html,body{margin:0;padding:0}
          body{font-family:Georgia,'Times New Roman',serif;font-size:12pt;line-height:1.5;color:#111}
          h1{font-size:20pt;line-height:1.25;margin:0 0 .25em}
+         .dek{font-size:13pt;font-style:italic;color:#333;margin:.1em 0 .6em}
          .src{color:#555;font-size:10pt;margin:0 0 1.2em}
          h2{font-size:13pt;margin:1.3em 0 .35em;break-after:avoid}
          p{margin:0 0 .8em;orphans:2;widows:2}
-       </style></head><body><h1>${esc(data.title)}</h1><div class="src">SOURCE_NAME</div>${body}</body></html>`;
+       </style></head><body><h1>${esc(data.title)}</h1>${deckHtml}<div class="src">SOURCE_NAME</div>${body}</body></html>`;
        await page.setContent(html, { waitUntil: 'load' });
        await page.pdf({ path: OUT, format: 'Letter', printBackground: false,
          margin: { top: '0.6in', bottom: '0.6in', left: '0.7in', right: '0.7in' } });
-       return 'wrote ' + OUT + ' | blocks=' + data.blocks.length;
+       return 'wrote ' + OUT + ' | deck=' + (data.deck ? 'yes' : 'no') + ' | blocks=' + data.blocks.length;
      }
      ```
      (`SOURCE_NAME` = `The Wall Street Journal` or `The Economist`.) `page.setContent` *replaces* the live page with the clean doc before printing — that's intended.
-   - **Verify it:** the snippet returns a `blocks=` count — expect **roughly one per paragraph** (≈20–40 for a feature; a count under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome instead — re-check login/selectors). Then `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect **~50–150KB and a few pages**) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). To eyeball that text isn't sliced at page breaks, render a page: `pdftoppm -png -r 80 -f 1 -l 2 public/pdfs/YYYY-MM-DD.pdf /tmp/pg` and view `/tmp/pg-*.png`. If `blocks=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
+   - **Verify it:** the snippet returns `deck=yes|no` (was the standfirst captured?) and a `blocks=` count — expect **roughly one per paragraph** (≈20–40 for a feature; a count under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome instead — re-check login/selectors). For an obituary or feature whose subtitle states a key fact (death date, age, who-did-what), confirm `deck=yes`; if it's `no`, the standfirst didn't match the selectors — grab it from `browser_snapshot` and prepend it to the text by hand. Then `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect **~50–150KB and a few pages**) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). To eyeball that text isn't sliced at page breaks, render a page: `pdftoppm -png -r 80 -f 1 -l 2 public/pdfs/YYYY-MM-DD.pdf /tmp/pg` and view `/tmp/pg-*.png`. If `blocks=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
    - Set `pdfUrl: "/pdfs/YYYY-MM-DD.pdf"` in the JSON. (To skip the PDF entirely, omit `pdfUrl` — the page then shows only the Web link.)
    - **Multi-article days** (the `articles[]` shape — see step 5): capture **one PDF per article**. `browser_navigate` to each article in turn, then run the snippet writing to `public/pdfs/YYYY-MM-DD-1.pdf`, `-2.pdf`, … (note the `-N` suffix), and put each path in that article's own `pdfUrl` inside `articles[]` — there is no top-level `pdfUrl`.
    - **Manual fallback** (only if auto-capture looks wrong): the user saves the article as a PDF by hand into the `PDFs/` drop-zone at the repo root (gitignored, raw WSJ filename), and you copy it over: `cp "PDFs/<that file>.pdf" public/pdfs/YYYY-MM-DD.pdf`. The `public/pdfs/` copy is what gets committed and deployed.
@@ -92,7 +104,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
      pdftotext public/pdfs/YYYY-MM-DD.pdf article-text/YYYY-MM-DD.txt
      node --env-file=.env.local scripts/upload-article-text.mjs YYYY-MM-DD
      ```
-     Needs `BLOB_READ_WRITE_TOKEN` in `.env.local` (`vercel env pull` to get it). Best-effort: if it's skipped or fails, the quiz still works — it just falls back to a handout-only session. The `article-text/` dir is a gitignored drop-zone. **Multi-article days:** run `pdftotext` on each PDF and concatenate them into one `article-text/YYYY-MM-DD.txt` before uploading. **Open/free articles with no PDF:** save the article text to `article-text/YYYY-MM-DD.txt` by hand (or skip — the quiz degrades to handout-only).
+     Needs `BLOB_READ_WRITE_TOKEN` in `.env.local` (`vercel env pull` to get it). Best-effort: if it's skipped or fails, the quiz still works — it just falls back to a handout-only session. The `article-text/` dir is a gitignored drop-zone. **Multi-article days:** run `pdftotext` on each PDF and concatenate them into one `article-text/YYYY-MM-DD.txt` before uploading. **Open/free articles with no PDF:** save the article text to `article-text/YYYY-MM-DD.txt` by hand (or skip — the quiz degrades to handout-only). **Always include the headline AND the deck/standfirst** (the subtitle line under the headline) at the very top, before the body. This path has no extraction snippet to grab the standfirst for you, and the standfirst often carries key facts that appear nowhere in the body — e.g. an obituary's "...died on June 22nd, aged 100." Dropping it hides those facts from the tutor and the grader, which can make the grader wrongly mark a correct student answer as not-in-the-article.
 
 4. **Propose the words and concepts, and get the user's sign-off before generating anything.** This is a required manual checkpoint — **do not write the JSON or generate the quiz until the user approves.** Based on your read of the article:
    - Pick your candidate **3 vocab words** and **3–5 concepts** per the calibration above.

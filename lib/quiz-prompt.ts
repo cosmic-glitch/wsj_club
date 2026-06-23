@@ -5,10 +5,10 @@ import type { Reading } from "@/lib/content";
  * handout content (and, when we have it, the full article text) plus a
  * high-level style guide that mimics how the teacher runs the 1-1 oral quizzes.
  *
- * This text becomes the Realtime session's `instructions`. It is assembled on
- * the server so the model always has the correct "answer key" (the full article
- * plus the vocab and concept meanings) to judge the student's answers against —
- * none of which the student can see.
+ * This text becomes the system prompt for the turn-by-turn tutor model
+ * (`/api/quiz-turn`). It is assembled on the server so the model always has the
+ * correct "answer key" (the full article plus the vocab and concept meanings) to
+ * judge the student's answers against — none of which the student can see.
  */
 
 // A high-level style guide. Tune this freely — it's the single place that
@@ -177,7 +177,7 @@ ${conceptBlock(reading)}
    sentence mini-lesson, not a question) before moving to the words.`;
 
   return `
-You are a friendly oral-quiz tutor for the WSJ Reading Club. You are quizzing a
+You are a friendly oral-quiz tutor for the Reading Club. You are quizzing a
 US middle/high-school student named ${name} about a news article they were asked
 to read today. The whole exchange happens by voice.
 
@@ -222,40 +222,58 @@ Keep the whole quiz focused and unhurried. Begin now with the greeting.
 /** The prompt used to turn a finished transcript into a report card. */
 export function buildReportPrompt(
   reading: Reading,
-  studentName: string,
   transcript: string,
   articleText?: string | null
 ): string {
-  const reference = articleText
-    ? `For reference, here is the full article the student read (the student spoke
-about it from memory):
-"""
+  // The article is the grader's reference; included as its own clearly-delimited
+  // section below (omitted when we don't have the full text).
+  const articleSection = articleText
+    ? `===== BEGIN ARTICLE (reference only) =====
 ${articleText}
-"""
+===== END ARTICLE =====
+
 `
     : "";
 
   return `
-You are an experienced teacher. Below is the transcript of an oral quiz that an
-AI tutor just gave a US grade 8–10 student named "${studentName}" about the
-article "${reading.title}". Review how the student did and write a short report card.
+You are an experienced teacher writing a short report card for a student. All of
+your instructions are in this section; the ARTICLE and the TRANSCRIPT you are
+grading follow afterward, each in its own clearly marked section.
 
-${reference}Judge the student's answers, not the tutor's questions. The student was recalling
-the article from memory, so don't expect every detail — judge whether they grasped
-a reasonable set of the real ideas (including some that go beyond the headline),
-the vocabulary, and the concepts. Be fair and encouraging but honest. Base
-everything ONLY on what the transcript shows.
+THE SETUP — what this is: The Reading Club gives a small group of US grade 8–10
+students one news article to read each day. After a student has read that day's
+article, an AI tutor quizzes them about it out loud — asking them to recall the
+key ideas in their own words, then checking the day's vocabulary and concepts.
+The quiz happens entirely by voice: the tutor's questions are spoken via
+text-to-speech, and the student's spoken answers are converted back to text by
+automatic speech recognition. That transcription is imperfect, so the transcript
+may contain mis-hearings — odd words, homophones, or garbled phrases the student
+did not actually say. Read past obvious transcription slips and judge what the
+student clearly meant; never mark them down for what is likely a transcription
+error rather than a real mistake.
 
-CRITICAL — grade ONLY what the STUDENT actually said. The reference article and
-handout above are there so you can check the student's answers, NOT to give the
-student credit for. If the student gave few or no real answers — they stayed
-silent, replied only a word or two, or the quiz ended early — say that plainly
-and give a correspondingly LOW score. NEVER credit the student for an idea, word,
-or concept that does not appear in the student's own turns of the transcript, and
-NEVER invent strengths or inflate the score to be nice. A near-empty transcript
-must get a near-zero score.
+YOUR JOB: judge the quality of the student's learning on today's article,
+"${reading.title}". The transcript is your only evidence — judge the student on
+what they themselves said in it. They are recalling the article from memory after
+a read or two, so weigh their understanding, not perfect recall or exact wording.
 
-Return a JSON object with exactly these fields:
+HOW TO JUDGE:
+- Judge the student's own turns, not the tutor's questions: did they grasp a
+  reasonable set of the article's real ideas (including some that go beyond the
+  headline), the vocabulary, and the concepts?
+- The transcript is your only evidence, so a student who said little — stayed
+  mostly silent, gave one- or two-word answers, or ended early — simply has little
+  to grade and should score low; do not fill the gaps from the article or invent
+  strengths to be kind. The article section is there ONLY to check what the
+  student says, never to credit the student for ideas they did not voice.
+- It is fine — good, even — for the student to combine their own world knowledge
+  with the article while explaining, bringing in relevant information they know
+  from outside it. As long as what they say stays relevant to the article, treat
+  correct outside knowledge as a plus, not a fault. Do NOT mark a statement wrong
+  merely because it is not in the article — only count it against the student if
+  it is actually incorrect or off-topic.
+
+OUTPUT — return a JSON object with exactly these fields:
 - "score": a string like "7/10" giving your overall sense of their understanding.
 - "summary": 1–2 sentences summarizing how they did overall.
 - "strengths": an array of short strings — things they understood well.
@@ -264,7 +282,8 @@ Return a JSON object with exactly these fields:
 - "vocab": one sentence on how they did on the vocabulary words.
 - "concepts": one sentence on how they did on the concepts.
 
-TRANSCRIPT:
+${articleSection}===== BEGIN TRANSCRIPT (grade this) =====
 ${transcript}
+===== END TRANSCRIPT =====
 `.trim();
 }
