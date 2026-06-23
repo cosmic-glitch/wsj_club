@@ -1,0 +1,125 @@
+{
+  "date": "2026-06-23",
+  "title": "How to Win the World Cup",
+  "articleUrl": "https://archive.ph/OkLBs",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "coveted",
+      "partOfSpeech": "verb",
+      "articleQuote": "Xi Jinping, China's leader, has long coveted footballing glory; so has Muhammad bin Salman, Saudi Arabia's crown prince.",
+      "inContext": "Here it means these leaders have long deeply wanted their countries to win footballing prestige — a prize many powerful people crave.",
+      "meaning": "To covet something is to desire it eagerly, especially something valuable that other people want too.",
+      "examples": [
+        "She had coveted the lead role in the school play since freshman year.",
+        "The new sneakers were so coveted that students lined up before dawn to buy them."
+      ]
+    },
+    {
+      "word": "calibre",
+      "partOfSpeech": "noun",
+      "articleQuote": "This measure of performance, derived from chess, takes account of the calibre of opponents.",
+      "inContext": "Calibre here means the level of quality or skill of the teams a country plays against — beating strong opponents counts for more than beating weak ones.",
+      "meaning": "Calibre is the level of quality, ability, or importance of someone or something.",
+      "examples": [
+        "Debating students of that calibre forced him to prepare for a whole week.",
+        "The tournament attracted players of the highest calibre from across the state."
+      ]
+    },
+    {
+      "word": "disseminate",
+      "partOfSpeech": "verb",
+      "articleQuote": "It has since continuously tweaked this plan, studying global tactical trends and disseminating them at home.",
+      "inContext": "It means Japan's football authorities spread the best ideas and tactics they had learned worldwide out to all of their own clubs and coaches.",
+      "meaning": "To disseminate is to spread information or ideas widely so that many people receive them.",
+      "examples": [
+        "The club used a group chat to disseminate the practice schedule to every player.",
+        "Before the internet, newspapers were the main way to disseminate the news."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Proxy measure",
+      "articleQuote": "This measure of performance, derived from chess... is considered a better proxy for quality than tournament results, which can be skewed by a kind draw or an inspired goalkeeper.",
+      "inContext": "The Economist couldn't measure a team's true quality directly, so it used Elo ratings as a stand-in — a better one than who won the tournament, since results can be distorted by luck.",
+      "meaning": "A proxy is an indirect, measurable stand-in for something you care about but can't measure directly. People use GDP as a proxy for a country's prosperity, or test scores as a proxy for how much students have learned. A proxy is only useful as long as it tracks the real thing closely — pick a poor proxy and your conclusions go wrong."
+    },
+    {
+      "name": "Explaining the variation",
+      "articleQuote": "The most influential factors, we found, were wealth, population, height and geography. Together these account for around 70% of the variation in Elo scores. Yet no single factor is decisive.",
+      "inContext": "The model asks how much of the gap between good and bad teams can be traced to each factor; together four factors explain about 70%, leaving 30% to other things, and none alone settles the outcome.",
+      "meaning": "When things differ — test scores, incomes, team strength — analysts ask what accounts for the differences. Usually several factors each contribute a share, and rarely does one explain everything. Saying a factor 'explains' part of the variation is not the same as it being the only cause, and the leftover share shows how much is still unexplained."
+    },
+    {
+      "name": "Path dependence",
+      "articleQuote": "All this makes footballing success self-perpetuating. Our analysis suggests that the best predictor of where a country ranks today is where it ranked decades ago.",
+      "inContext": "Countries that were strong at football in the past tend to stay strong, because their advantages — money, coaches, culture — feed on themselves and keep them ahead.",
+      "meaning": "Path dependence is when where you end up depends heavily on where you started: early advantages compound and lock in over time. It's the 'rich get richer' pattern, and it shows up in wealth, in which students get placed on the advanced track, and in why popular apps keep getting more popular. It explains why catching up is hard — though, as Japan shows, not impossible."
+    },
+    {
+      "name": "Bottom-up vs. top-down",
+      "articleQuote": "Critically, Japan's approach is bottom-up. China, in contrast, has tackled football in the same way it pursues Olympic glory: through a centralised, lavishly funded effort to nurture talent.",
+      "inContext": "Japan built football from the grassroots up — many clubs, youth academies, local competition — while China tried to command success from the top with central planning and money, and Japan's way worked better.",
+      "meaning": "Bottom-up systems grow out of many small, independent efforts with no single controller; top-down systems are directed from a central authority. Some results — creativity, improvisation, a deep talent pool — emerge better from the bottom up and can't simply be ordered into existence, while other tasks genuinely need central coordination. Knowing which is which is the hard part."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article's model, which set of factors together explained about 70% of the variation in national teams' strength?",
+      "options": [
+        "Coaching budgets, stadium size, fan attendance and TV deals",
+        "Wealth, population, height and geography",
+        "Tactics, team chemistry, luck and refereeing",
+        "Climate, language, religion and diet"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Economist found wealth, population, height and geography together accounted for roughly 70% of the variation in Elo scores, though no single factor was decisive."
+    },
+    {
+      "question": "The article uses Elo ratings rather than tournament results as a \"proxy\" for a team's quality. What does using a proxy mean here?",
+      "options": [
+        "Measuring the exact thing you care about with perfect accuracy",
+        "Using an indirect, measurable stand-in for something you can't measure directly",
+        "Asking a panel of experts to vote on the best team",
+        "Predicting the future based only on past champions"
+      ],
+      "answerIndex": 1,
+      "explanation": "A proxy is an indirect stand-in; Elo ratings stand in for 'true quality' because raw results can be skewed by luck, such as a kind draw."
+    },
+    {
+      "question": "Why does the article say Japan climbed the football rankings despite a stagnant economy and population?",
+      "options": [
+        "It spent more money on its national team than any other country",
+        "It imported most of its players from European academies",
+        "It built success from the grassroots up with a long-term plan and youth academies",
+        "It hosted the World Cup and gained a home-field advantage"
+      ],
+      "answerIndex": 2,
+      "explanation": "Japan's rise came from a patient, bottom-up strategy — its 'Hundred Year Vision,' revamped league and required youth academies — not from money or population."
+    },
+    {
+      "question": "The article says footballing success is \"self-perpetuating.\" Which idea does this best illustrate?",
+      "options": [
+        "Random luck decides which countries win",
+        "Early advantages compound over time, so past success predicts future success",
+        "Smaller countries always overtake larger ones eventually",
+        "Money has no real effect on results"
+      ],
+      "answerIndex": 1,
+      "explanation": "Self-perpetuating success is path dependence — early advantages build on themselves, which is why a country's rank decades ago predicts its rank today."
+    },
+    {
+      "question": "In the sentence \"Xi Jinping... has long coveted footballing glory,\" the word coveted most nearly means:",
+      "options": [
+        "ignored",
+        "eagerly desired",
+        "openly criticized",
+        "generously funded"
+      ],
+      "answerIndex": 1,
+      "explanation": "To covet something is to desire it eagerly, especially a prize that other people want too."
+    }
+  ]
+}
