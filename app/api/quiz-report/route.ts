@@ -4,7 +4,7 @@ import { getReading } from "@/lib/content";
 import { getArticleText } from "@/lib/article-text";
 import { buildReportPrompt } from "@/lib/quiz-prompt";
 
-const REPORT_MODEL = process.env.REPORT_MODEL || "gpt-5.4-mini";
+const REPORT_MODEL = process.env.REPORT_MODEL || "gpt-5.5";
 
 type Turn = { role: "student" | "tutor"; text: string };
 
