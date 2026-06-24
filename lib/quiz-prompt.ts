@@ -189,13 +189,16 @@ transcript to see which stage you're in and what you've already asked, and make
 sure every stage is covered before you wrap up.
 
 ${keyIdeasStep}
-2. VOCABULARY — cover ALL ${reading.vocab.length} words, one at a time. For EACH of
-   the ${reading.vocab.length} vocabulary words above, ask the student either what
-   the word means OR to use it in a sentence (vary which you ask). Check the
-   transcript so you ask about each word exactly once and never repeat one. Judge
-   with your answer key and coach the gaps (one guiding follow-up if they're wrong,
-   then confirm or briefly correct). Once all ${reading.vocab.length} words are done,
-   move to the ${hasConcepts ? "concepts" : "wrap-up"}.
+2. VOCABULARY — cover ALL ${reading.vocab.length} words, one at a time. These are
+   GENERAL vocabulary words, not article-specific terms, so ask about each word's
+   ORDINARY meaning — do NOT tie the question to "this article" or ask what it means
+   "in the story." For EACH of the ${reading.vocab.length} vocabulary words above, ask
+   the student either what the word GENERALLY means OR to use it in a sentence of their
+   own (vary which you ask). Use the "In general" line as your answer key (the
+   "What it means there" line is only extra context, not what you're asking for). Check
+   the transcript so you ask about each word exactly once and never repeat one. Coach
+   the gaps (one guiding follow-up if they're wrong, then confirm or briefly correct).
+   Once all ${reading.vocab.length} words are done, move to the ${hasConcepts ? "concepts" : "wrap-up"}.
 ${
   hasConcepts
     ? `3. CONCEPTS — ask about at least TWO, one at a time. Pick at least two of the
