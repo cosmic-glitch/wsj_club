@@ -1,0 +1,133 @@
+{
+  "date": "2026-06-24",
+  "title": "Europeans Should Learn to Love the Air-Conditioner",
+  "articleUrl": "https://archive.ph/yGBWd",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "judicious",
+      "partOfSpeech": "adjective",
+      "articleQuote": "judiciously dialling down the temperature will not do much to melt the glaciers.",
+      "inContext": "Used as the adverb \"judiciously,\" it means cooling a home thoughtfully and in moderation — only as much as you actually need — rather than blasting the AC carelessly, so the extra emissions stay small.",
+      "meaning": "Showing good, careful judgment; sensible and well-considered in the decisions you make.",
+      "examples": [
+        "She made a judicious choice to study a little each night instead of cramming the evening before the exam.",
+        "A judicious coach rests the star player once the game is already won, saving her for the playoffs."
+      ]
+    },
+    {
+      "word": "laggard",
+      "partOfSpeech": "noun",
+      "articleQuote": "Italy is a laggard, getting 30-40% of its electricity from gas.",
+      "inContext": "Italy is falling behind other European countries on clean energy because it still leans heavily on gas to make electricity.",
+      "meaning": "A person, group, or thing that moves or progresses more slowly than the rest — one that lags behind.",
+      "examples": [
+        "Once the laggard of the league, the team finally climbed out of last place this season.",
+        "He was the laggard of the group hike, always trailing a few minutes behind everyone else."
+      ]
+    },
+    {
+      "word": "surly",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Yanks holidaying in Europe expect cool comfort, and grow surly on finding that many old-world buildings require them to sweat and bear it.",
+      "inContext": "American tourists turn bad-tempered and grumpy when they discover that European buildings often have no air-conditioning.",
+      "meaning": "Bad-tempered, sullen, and unfriendly in the way you speak or act.",
+      "examples": [
+        "The surly cashier barely looked up and grunted when I asked where the milk was.",
+        "He gets surly when he's hungry, snapping at everyone until he's finally had lunch."
+      ]
+    },
+    {
+      "word": "astute",
+      "partOfSpeech": "adjective",
+      "articleQuote": "And astute governments offer funding to make old houses energy-efficient, which can pay for itself.",
+      "inContext": "Smart, sharp-thinking governments recognize that paying to upgrade old houses now will save money on energy later.",
+      "meaning": "Having or showing a clever, sharp understanding of a situation; shrewd and perceptive.",
+      "examples": [
+        "An astute shopper compares the price per ounce instead of just the number on the sticker.",
+        "She made an astute observation that the movie's villain had been hinted at in the very first scene."
+      ]
+    },
+    {
+      "word": "verdant",
+      "partOfSpeech": "adjective",
+      "articleQuote": "But its 224g of CO2 per kilowatt-hour is positively verdant next to much of America.",
+      "inContext": "The writer is punning on the word: Italy's electricity is environmentally \"green\" (clean) compared with America's, even though it is far from perfect.",
+      "meaning": "Literally, green and lush with growing plants; often used figuratively to mean \"green\" in the environmental, eco-friendly sense.",
+      "examples": [
+        "After the spring rains, the once-brown hills turned verdant almost overnight.",
+        "The valley below us was a verdant patchwork of rice paddies and tea gardens."
+      ]
+    },
+    {
+      "word": "coddled",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Europe's southerners think coddled Americans don't know how to cope with heat naturally.",
+      "inContext": "Southern Europeans see Americans as pampered and over-comforted by constant air-conditioning, so they've never learned to handle heat on their own.",
+      "meaning": "Treated with excessive care and protection; pampered. To coddle someone is to baby them.",
+      "examples": [
+        "He complained that his little brother was coddled — never made to do chores or face any consequences.",
+        "Some say young athletes are coddled with constant praise and never learn to handle criticism."
+      ]
+    }
+  ],
+  "concepts": [],
+  "quiz": [
+    {
+      "question": "What is the article's main reason that Europeans shouldn't feel guilty about using more air-conditioning?",
+      "options": [
+        "Air-conditioners have become much cheaper to buy than before",
+        "Much of Europe's electricity now comes from clean sources like solar, nuclear, and hydro, so the extra emissions are small",
+        "Climate change has already been solved, so emissions no longer matter",
+        "Europeans use far less electricity overall than they did a decade ago"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article's central point is that Europe's increasingly clean electricity mix means running the AC adds relatively little CO2."
+    },
+    {
+      "question": "The article says a kilowatt-hour of electricity in Spain produced far less CO2 (86g) than one in the U.S. state of Georgia (442g). What mainly explains that gap?",
+      "options": [
+        "Spain's homes are larger than Georgia's",
+        "Spain measures its emissions in a different unit",
+        "The mix of energy sources used to generate it — Spain leans on solar, while Georgia burns more fossil fuels",
+        "Georgia actually uses more solar power than Spain does"
+      ],
+      "answerIndex": 2,
+      "explanation": "The same kilowatt-hour is \"cleaner\" or \"dirtier\" depending on what generated it; Spain's solar-heavy grid emits far less than a fossil-fuel-heavy one."
+    },
+    {
+      "question": "To \"judiciously\" dial down the temperature means to do it...",
+      "options": [
+        "carelessly and without much thought",
+        "with good judgment and in moderation",
+        "only when guests are visiting",
+        "as a last resort, very reluctantly"
+      ],
+      "answerIndex": 1,
+      "explanation": "Judicious means showing careful, sensible judgment — here, cooling only as much as you actually need."
+    },
+    {
+      "question": "When the article calls Italy \"a laggard\" on clean energy, it means Italy is...",
+      "options": [
+        "a leader that other countries try to copy",
+        "one that falls behind the others",
+        "a country with no fossil fuels at all",
+        "the cleanest performer in the group"
+      ],
+      "answerIndex": 1,
+      "explanation": "A laggard is one that lags behind the rest; Italy trails because it still relies heavily on gas."
+    },
+    {
+      "question": "Which word from the reading means \"shrewd and sharp in understanding a situation\"?",
+      "options": [
+        "surly",
+        "verdant",
+        "astute",
+        "coddled"
+      ],
+      "answerIndex": 2,
+      "explanation": "Astute means perceptive and clever; the article praises \"astute governments\" for funding efficiency upgrades that pay for themselves."
+    }
+  ]
+}

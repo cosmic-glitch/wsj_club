@@ -72,6 +72,11 @@ function handoutText(reading: Reading): string {
         `     In general: ${w.meaning}`
     )
     .join("\n");
+  // Some days are vocabulary-only (no concepts) — omit the CONCEPTS block
+  // entirely rather than leaving an empty heading in the tutor's answer key.
+  if (reading.concepts.length === 0) {
+    return `VOCABULARY:\n${vocab}`;
+  }
   const concepts = reading.concepts
     .map(
       (c, i) =>
@@ -90,6 +95,9 @@ export function buildInstructions(
   articleText?: string | null
 ): string {
   const name = studentName.trim() || "the student";
+  // Some days are vocabulary-only. When there are no concepts, the tutor skips
+  // the concepts stage entirely (rather than quizzing on concepts that don't exist).
+  const hasConcepts = reading.concepts.length > 0;
 
   // When we have the full article text, the tutor judges the student's
   // from-memory retelling against the real story. Otherwise it relies on the
@@ -103,17 +111,20 @@ ${articleText}
 """
 
 THE HANDOUT THE STUDENT STUDIED (also your reference; its "What it means there"
-and "In general" lines are your ANSWER KEY for the vocabulary and concept rounds):
+and "In general" lines are your ANSWER KEY for the vocabulary${
+        hasConcepts ? " and concept rounds" : " round"
+      }):
 """
 ${handoutText(reading)}
 """
 `.trim()
     : `
 The student studied a handout with these VOCABULARY words (this is your answer key):
-${vocabBlock(reading)}
-
-...and these CONCEPTS (your answer key):
-${conceptBlock(reading)}
+${vocabBlock(reading)}${
+        hasConcepts
+          ? `\n\n...and these CONCEPTS (your answer key):\n${conceptBlock(reading)}`
+          : ""
+      }
 `.trim();
 
   // The "key ideas" step is the centerpiece, and it differs depending on
@@ -184,16 +195,24 @@ ${keyIdeasStep}
    transcript so you ask about each word exactly once and never repeat one. Judge
    with your answer key and coach the gaps (one guiding follow-up if they're wrong,
    then confirm or briefly correct). Once all ${reading.vocab.length} words are done,
-   move to the concepts.
-3. CONCEPTS — ask about at least TWO, one at a time. Pick at least two of the
+   move to the ${hasConcepts ? "concepts" : "wrap-up"}.
+${
+  hasConcepts
+    ? `3. CONCEPTS — ask about at least TWO, one at a time. Pick at least two of the
    concepts above (more if it's going well) and, for each, ask one question that
    checks whether they understand it (what it is and why it matters). Don't repeat a
    concept you've already asked. Judge against your answer key, but do NOT over-probe
    — a correct HIGH-LEVEL understanding is enough: if they grasp the gist, acknowledge
    it and move on; don't keep drilling with extra "why"/"how" follow-ups. Only ask a
    guiding follow-up if their answer was wrong or clearly missed the point.
-4. WRAP UP — only once every stage above is done. When you have covered the key
-   ideas, ALL ${reading.vocab.length} vocabulary words, and at least two concepts,
+`
+    : ""
+}${hasConcepts ? "4" : "3"}. WRAP UP — only once every stage above is done. When you have covered the key
+   ideas${
+     hasConcepts
+       ? `, ALL ${reading.vocab.length} vocabulary words, and at least two concepts`
+       : ` and ALL ${reading.vocab.length} vocabulary words`
+   },
    give a short, encouraging wrap-up (one or two sentences on what they did well and
    what to review). Then end with EXACTLY this instruction to the student, word for
    word: "The quiz is done. You can press the End Quiz button." Do not say anything
@@ -220,6 +239,10 @@ ${articleText}
 `
     : "";
 
+  // Vocabulary-only days have no concepts to grade; don't ask the grader to
+  // assess (or penalize) concept understanding that was never quizzed.
+  const hasConcepts = reading.concepts.length > 0;
+
   return `
 You are an experienced teacher writing a short report card for a student. All of
 your instructions are in this section; the ARTICLE and the TRANSCRIPT you are
@@ -228,7 +251,9 @@ grading follow afterward, each in its own clearly marked section.
 THE SETUP — what this is: The Reading Club gives a small group of US grade 8–10
 students one news article to read each day. After a student has read that day's
 article, an AI tutor quizzes them about it out loud — asking them to recall the
-key ideas in their own words, then checking the day's vocabulary and concepts.
+key ideas in their own words, then checking the day's vocabulary${
+    hasConcepts ? " and concepts" : ""
+  }.
 The quiz happens entirely by voice: the tutor's questions are spoken via
 text-to-speech, and the student's spoken answers are converted back to text by
 automatic speech recognition. That transcription is imperfect, so the transcript
@@ -245,7 +270,7 @@ a read or two, so weigh their understanding, not perfect recall or exact wording
 HOW TO JUDGE:
 - Judge the student's own turns, not the tutor's questions: did they grasp a
   reasonable set of the article's real ideas (including some that go beyond the
-  headline), the vocabulary, and the concepts?
+  headline)${hasConcepts ? ", the vocabulary, and the concepts?" : " and the vocabulary?"}
 - The transcript is your only evidence, so a student who said little — stayed
   mostly silent, gave one- or two-word answers, or ended early — simply has little
   to grade and should score low; do not fill the gaps from the article or invent
@@ -264,8 +289,11 @@ OUTPUT — return a JSON object with exactly these fields:
 - "strengths": an array of short strings — things they understood well.
 - "gaps": an array of short strings — things they got wrong, missed, or should review.
 - "keyIdeas": one sentence on how well they grasped the article's key ideas.
-- "vocab": one sentence on how they did on the vocabulary words.
-- "concepts": one sentence on how they did on the concepts.
+- "vocab": one sentence on how they did on the vocabulary words.${
+    hasConcepts
+      ? `\n- "concepts": one sentence on how they did on the concepts.`
+      : ""
+  }
 
 ${articleSection}===== BEGIN TRANSCRIPT (grade this) =====
 ${transcript}

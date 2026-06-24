@@ -43,8 +43,9 @@ export default async function ReadingPage({
         </h1>
       </header>
 
-      {/* Vocabulary */}
-      <Section n={1} title="Words to know">
+      {/* Vocabulary. On a vocab-only day (no concepts) we drop the step number
+          so it doesn't show a lone "1" with no "2". */}
+      <Section n={reading.concepts.length > 0 ? 1 : undefined} title="Words to know">
         <div className="space-y-4">
           {reading.vocab.map((w) => (
             <VocabCard key={w.word} word={w} />
@@ -52,14 +53,16 @@ export default async function ReadingPage({
         </div>
       </Section>
 
-      {/* Concepts */}
-      <Section n={2} title="Concepts behind the story">
-        <div className="space-y-4">
-          {reading.concepts.map((c) => (
-            <ConceptCard key={c.name} concept={c} />
-          ))}
-        </div>
-      </Section>
+      {/* Concepts — omitted entirely when the day has none. */}
+      {reading.concepts.length > 0 && (
+        <Section n={2} title="Concepts behind the story">
+          <div className="space-y-4">
+            {reading.concepts.map((c) => (
+              <ConceptCard key={c.name} concept={c} />
+            ))}
+          </div>
+        </Section>
+      )}
 
       {/* Self-quiz CTA. The self-quiz lives here now (off the index) — once
           you've read the handout, this is the natural place to test yourself. */}
@@ -81,16 +84,18 @@ function Section({
   title,
   children,
 }: {
-  n: number;
+  n?: number;
   title: string;
   children: React.ReactNode;
 }) {
   return (
     <section className="mt-12">
       <div className="mb-5 flex items-center gap-3">
-        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-stone-900 text-sm font-semibold text-white">
-          {n}
-        </span>
+        {n !== undefined && (
+          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-stone-900 text-sm font-semibold text-white">
+            {n}
+          </span>
+        )}
         <h2 className="font-serif text-2xl font-bold text-stone-900">
           {title}
         </h2>
