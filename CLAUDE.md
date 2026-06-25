@@ -20,6 +20,9 @@ content/YYYY-MM-DD.json           one file = one day's handout
 public/pdfs/YYYY-MM-DD.pdf        served PDF of that day's article (the "PDF" link)
 PDFs/                             manual-fallback drop-zone for raw WSJ PDF exports (gitignored)
 article-text/YYYY-MM-DD.txt       gitignored drop-zone for full article plain text → uploaded to Blob (voice quiz)
+app/icon.svg                      browser-tab favicon — open-book on the amber→rose→indigo gradient (rounded tile)
+app/apple-icon.png                180×180 apple-touch-icon — the iPhone "Add to Home Screen" icon (full-bleed, same open-book design; iOS won't use the SVG favicon). regenerate with `node scripts/gen-icon.mjs` (sharp renders the full-bleed SVG → PNG)
+app/manifest.ts                   web app manifest (Android/Chrome): name/short_name "Reading Club" + icons; display:"browser" (no forced standalone)
 app/page.tsx                      index: a compact row-list, one row per day (date + title, then a text-link action bar: article · handout · voice quiz)
 app/reading/[date]/page.tsx       one day's handout — words + concepts, then a "Take the self-quiz" CTA at the bottom
 app/reading/[date]/quiz/page.tsx  that day's self-quiz, on its own page (linked from the bottom of that day's handout)

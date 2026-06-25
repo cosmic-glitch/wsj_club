@@ -15,6 +15,13 @@ export const metadata: Metadata = {
   title: "WSJ Reading Club",
   description:
     "A daily Wall Street Journal reading handout — vocabulary, concepts, and a self-quiz to build general knowledge.",
+  // The label shown under the icon when added to an iPhone home screen.
+  // capable:false keeps the normal "opens in Safari" behavior (no full-screen
+  // standalone mode); we only want the short name + the apple-touch-icon.
+  appleWebApp: {
+    capable: false,
+    title: "Reading Club",
+  },
 };
 
 export default function RootLayout({
