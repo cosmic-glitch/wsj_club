@@ -1,0 +1,126 @@
+{
+  "date": "2026-06-25",
+  "title": "The Data-Center Boom Is Sparking a Third Wave of Inflation",
+  "articleUrl": "https://www.wsj.com/economy/the-data-center-boom-is-sparking-a-third-wave-of-inflation-926adc6e",
+  "pdfUrl": "/pdfs/2026-06-25.pdf",
+  "voiceQuiz": true,
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "catalyst",
+      "partOfSpeech": "noun",
+      "articleQuote": "But inflation has a new catalyst: America's massive artificial-intelligence build-out is beginning to push up prices on everything from smartphones to electricity.",
+      "inContext": "In the article, the AI build-out is the catalyst — the new force that is kicking off and speeding up a fresh round of rising prices.",
+      "meaning": "A catalyst is a person, event, or thing that triggers a change or makes it happen faster. (In chemistry it's a substance that speeds up a reaction; in everyday use it's anything that sets a change in motion.)",
+      "examples": [
+        "A single embarrassing loss can be the catalyst that finally makes a team change how it practices.",
+        "Switching to a new school was the catalyst for her decision to start drawing again."
+      ]
+    },
+    {
+      "word": "waned",
+      "partOfSpeech": "verb",
+      "articleQuote": "President Trump's trade wars have waned.",
+      "inContext": "Here it means the trade wars have died down — they've become less intense and are no longer the main force pushing prices up.",
+      "meaning": "To wane is to gradually decrease in size, strength, or importance. (The moon is said to 'wane' as the lit part shrinks night by night.)",
+      "examples": [
+        "By the third hour of the road trip, everyone's energy had waned and the car went quiet.",
+        "His interest in the video game waned once all his friends stopped playing it."
+      ]
+    },
+    {
+      "word": "recoup",
+      "partOfSpeech": "verb",
+      "articleQuote": "That could raise costs for a variety of businesses, which may then try to recoup those costs by charging consumers higher prices.",
+      "inContext": "Businesses hit with higher costs try to recoup them — get that money back — by passing the expense along to their customers.",
+      "meaning": "To recoup is to get back money you have spent or lost, or to make up for a loss.",
+      "examples": [
+        "She sold her old skateboard to recoup some of what she'd spent on the new one.",
+        "After a slow opening week, the school play added two more shows to recoup the cost of the costumes."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Capital expenditure (capex)",
+      "articleQuote": "Analysts peg capital spending at five of the so-called hyperscalers—Alphabet, Amazon, Meta Platforms, Microsoft and Oracle—at $741 billion this year.",
+      "inContext": "The hyperscalers' $741 billion is capital spending: money poured into building data centers and buying equipment that will be used for years, not everyday running costs.",
+      "meaning": "Capital expenditure (often shortened to 'capex') is money a business spends to buy or build long-lived physical assets — buildings, machines, data centers — that it will use over many years. It's different from operating costs like wages or electricity, which get used up right away. Unusually big capex is a sign a company is making a large bet on future growth."
+    },
+    {
+      "name": "Demand shock vs. supply shock",
+      "articleQuote": "Both tariffs and oil are one-time shocks, temporarily making their way into price increases. AI is a shock to demand that could persist for years.",
+      "inContext": "The article sorts price pressures into two kinds: tariffs and oil are supply shocks that hit once and fade, while the AI build-out is a demand shock — a surge in buying — that could keep going.",
+      "meaning": "A supply shock is a sudden change in how much of something can be produced or delivered (a drought, an oil cutoff). A demand shock is a sudden change in how much people want to buy. Both move prices, but a one-time shock fades, while a lasting surge in demand can keep prices high for a long time as buyers compete for a limited supply."
+    },
+    {
+      "name": "Productivity",
+      "articleQuote": "That is the lesson from past technological revolutions, which boosted workers' productivity, making it easier for businesses to meet demand without raising prices.",
+      "inContext": "The article notes that if AI eventually raises productivity — letting workers produce more — supply can keep up with demand and that would help cool prices.",
+      "meaning": "Productivity is how much output a worker or machine produces in a given amount of time. When productivity rises — often thanks to new technology — the same effort makes more goods or services, so businesses can meet demand more cheaply. That's why productivity growth tends to lower prices and raise living standards over the long run."
+    },
+    {
+      "name": "Inflation expectations",
+      "articleQuote": "\"The more these things happen, the more likely it is that people think, 'Hey, this is a pattern, maybe I shouldn't expect inflation to come back down.'\"",
+      "inContext": "The economist's warning is that if people keep seeing prices climb, they start to expect more inflation — and acting on that expectation can help keep inflation high.",
+      "meaning": "Inflation expectations are what people believe will happen to prices in the future. They matter because beliefs shape behavior: if workers expect higher prices they ask for higher wages, and if sellers expect higher costs they raise prices now — which makes the inflation actually happen. It's a classic example of a self-fulfilling expectation, where believing something will happen helps cause it."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why is the AI data-center build-out pushing up prices for ordinary shoppers, not just for AI companies?",
+      "options": [
+        "Because AI companies are legally required to share their costs with the public",
+        "Because the chips, electricity, and skilled labor that data centers need are also used across the rest of the economy",
+        "Because the government raised taxes to pay for AI research",
+        "Because shoppers are suddenly buying far more AI software than before"
+      ],
+      "answerIndex": 1,
+      "explanation": "The same inputs — memory chips, electricity, electrical workers — are used widely, so bidding them up for data centers raises costs for many other products too."
+    },
+    {
+      "question": "The article contrasts the AI build-out with last year's tariffs and this year's jump in fuel prices. What is the key difference?",
+      "options": [
+        "Tariffs and oil were one-time shocks, while AI is a shock to demand that could last for years",
+        "Tariffs and oil raised prices, but the AI build-out lowers them",
+        "The AI build-out affects only electricity, while tariffs affect everything",
+        "The AI build-out is far too small to matter for inflation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article calls tariffs and oil temporary, one-time shocks, while the AI build-out is a lasting surge in demand that could keep prices elevated."
+    },
+    {
+      "question": "Some economists think AI could eventually help LOWER inflation. Why?",
+      "options": [
+        "Because AI companies will agree to stop raising their prices",
+        "Because the government will put a cap on electricity prices",
+        "Because by raising productivity, AI could let businesses meet demand without raising prices",
+        "Because people will gradually buy fewer electronics over time"
+      ],
+      "answerIndex": 2,
+      "explanation": "Like past technological revolutions, AI could boost productivity, making it easier to supply goods cheaply and eventually cool prices."
+    },
+    {
+      "question": "The article calls the AI build-out a new \"catalyst\" for inflation. A catalyst is something that —",
+      "options": [
+        "slowly cancels out a change",
+        "triggers a change or makes it happen faster",
+        "keeps a situation exactly the same",
+        "measures how fast prices are rising"
+      ],
+      "answerIndex": 1,
+      "explanation": "A catalyst sets a change in motion or speeds it up — here, a fresh round of rising prices."
+    },
+    {
+      "question": "The article says \"President Trump's trade wars have waned.\" To wane means to —",
+      "options": [
+        "suddenly explode in size",
+        "gradually decrease or fade",
+        "become more dangerous",
+        "stay exactly the same"
+      ],
+      "answerIndex": 1,
+      "explanation": "To wane is to gradually shrink or weaken — here, the trade wars have died down."
+    }
+  ]
+}
