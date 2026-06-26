@@ -1,4 +1,5 @@
 import type { Reading } from "@/lib/content";
+import { gradingExamplesBlock } from "@/lib/grading-examples";
 
 /**
  * The voice tutor's "brief" — built fresh for each session from the day's
@@ -285,6 +286,22 @@ HOW TO JUDGE:
   correct outside knowledge as a plus, not a fault. Do NOT mark a statement wrong
   merely because it is not in the article — only count it against the student if
   it is actually incorrect or off-topic.
+- Grade the DISTINCT correct ideas the student covered, not the length of their
+  answer. A long retelling that circles the same few points, or piles on concrete
+  detail, is NOT better than a shorter one that covers more of the article's real
+  substance. Count what they actually got, not how much they said.
+- Weight reaching the article's HARDER, less obvious ideas — its central argument
+  and its subtler concepts — above restating the headline or recalling vivid
+  details. Missing a whole major theme, or a core concept, should cost more than a
+  small factual slip. A genuine conceptual error about how something works should
+  keep an answer out of the top band even if its coverage was wide.
+- Calibrate the score against THIS article's own ceiling — how much of its real
+  substance a strong grade 8–10 reader could be expected to cover — so the same
+  number means the same thing from one article and one day to the next. Use the
+  full 1–10 range; do not default everyone into 8–9.
+
+CALIBRATION EXAMPLES (how to score consistently):
+${gradingExamplesBlock()}
 
 OUTPUT — return a JSON object with exactly these fields:
 - "score": a string like "7/10" giving your overall sense of their understanding.
