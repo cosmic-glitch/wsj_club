@@ -62,7 +62,15 @@ function fmtLocal(iso: string, mounted: boolean): string {
   });
 }
 
-export default function AdminSessions({ groups }: { groups: ArticleGroup[] }) {
+export default function AdminSessions({
+  groups,
+  canDelete,
+}: {
+  groups: ArticleGroup[];
+  // Only the teacher (admin) may delete attempts; students see their own
+  // sessions read-only.
+  canDelete: boolean;
+}) {
   // Which attempt's full detail is open in the modal (null = none).
   const [open, setOpen] = useState<Session | null>(null);
 
@@ -288,15 +296,21 @@ export default function AdminSessions({ groups }: { groups: ArticleGroup[] }) {
               </div>
             </div>
 
-            {/* Footer — delete this attempt, or close. Deleting closes the modal
-                (the table refreshes and the row drops). */}
-            <div className="flex items-center justify-between gap-3 border-t border-stone-200 px-6 py-3">
-              <DeleteSessionButton
-                url={open.blobUrl}
-                audioUrl={open.audioUrl}
-                label={`${open.studentName} · ${open.title}`}
-                onDeleted={() => setOpen(null)}
-              />
+            {/* Footer — delete this attempt (teacher only), or close. Deleting
+                closes the modal (the table refreshes and the row drops). */}
+            <div
+              className={`flex items-center gap-3 border-t border-stone-200 px-6 py-3 ${
+                canDelete ? "justify-between" : "justify-end"
+              }`}
+            >
+              {canDelete && (
+                <DeleteSessionButton
+                  url={open.blobUrl}
+                  audioUrl={open.audioUrl}
+                  label={`${open.studentName} · ${open.title}`}
+                  onDeleted={() => setOpen(null)}
+                />
+              )}
               <button
                 type="button"
                 onClick={() => setOpen(null)}

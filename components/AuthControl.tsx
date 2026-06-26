@@ -10,7 +10,7 @@ import { useAuth } from "./AuthProvider";
  * a small inline login form when logged out.
  */
 export default function AuthControl() {
-  const { user, isAdmin: admin, ready } = useAuth();
+  const { user, ready } = useAuth();
   const [open, setOpen] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -65,14 +65,14 @@ export default function AuthControl() {
   if (user) {
     return (
       <div className="flex items-center gap-3 text-sm">
-        {admin && (
-          <Link
-            href="/admin"
-            className="text-stone-500 transition hover:text-stone-900"
-          >
-            Admin
-          </Link>
-        )}
+        {/* Every logged-in user gets the Scores page: students see only their
+            own attempts, the teacher (admin) sees everyone's. */}
+        <Link
+          href="/admin"
+          className="text-stone-500 transition hover:text-stone-900"
+        >
+          Scores
+        </Link>
         <span className="text-stone-500">
           Hi, <span className="font-medium text-stone-800">{user}</span>
         </span>

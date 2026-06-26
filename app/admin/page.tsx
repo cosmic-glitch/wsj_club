@@ -1,5 +1,5 @@
 import { list } from "@vercel/blob";
-import { currentUser, isAdmin, adminConfigured } from "@/lib/auth";
+import { currentUser, isAdmin } from "@/lib/auth";
 import { dateBig } from "@/lib/content";
 import AdminSessions, {
   type Session,
@@ -10,7 +10,7 @@ import AdminSessions, {
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Quiz sessions · WSJ Reading Club",
+  title: "Scores · WSJ Reading Club",
 };
 
 async function loadSessions(): Promise<Session[] | { error: string }> {
@@ -71,43 +71,51 @@ function groupByArticle(sessions: Session[]): ArticleGroup[] {
 export default async function AdminPage() {
   const user = await currentUser();
 
-  // Teacher-only. Students can log in for the voice quiz but never reach here.
-  if (!isAdmin(user)) {
-    const message = !user
-      ? "Please log in (top right) as a teacher to view saved quiz sessions."
-      : !adminConfigured()
-        ? "This page is teacher-only, but no teachers are configured yet. Set the ADMIN_USERS env var to your username (comma-separated for more than one) and redeploy."
-        : "This page is for teachers only.";
+  // Any logged-in user can see their scores; logged-out visitors can't.
+  if (!user) {
     return (
       <div>
-        <h1 className="font-serif text-3xl font-bold text-stone-900">Quiz sessions</h1>
+        <h1 className="font-serif text-3xl font-bold text-stone-900">Your scores</h1>
         <p className="mt-4 rounded-lg bg-amber-50 px-4 py-3 text-sm text-amber-800">
-          {message}
+          Please log in (top right) to see your quiz scores and recordings.
         </p>
       </div>
     );
   }
 
+  // The teacher (admin) sees every student's attempts; a student sees only their
+  // own. Delete stays teacher-only (the route is admin-gated regardless).
+  const admin = isAdmin(user);
   const result = await loadSessions();
+
+  // For a student, filter to their OWN attempts *on the server* so another
+  // student's sessions never reach the browser. Match on loginUser (the real
+  // login), falling back to studentName for older sessions that predate it.
+  const visible =
+    "error" in result || admin
+      ? result
+      : result.filter((s) => (s.loginUser ?? s.studentName) === user);
+
+  const heading = admin ? "Quiz sessions" : "Your scores";
+  const subtitle = admin
+    ? "Saved voice-quiz attempts by article — click any attempt for its full report card, recording, and transcript."
+    : "Your saved voice-quiz attempts — click any attempt for its full report card, recording, and transcript.";
 
   return (
     <div>
-      <h1 className="font-serif text-3xl font-bold text-stone-900">Quiz sessions</h1>
-      <p className="mt-1 text-sm text-stone-500">
-        Saved voice-quiz attempts by article — click any attempt for its full
-        report card, recording, and transcript.
-      </p>
+      <h1 className="font-serif text-3xl font-bold text-stone-900">{heading}</h1>
+      <p className="mt-1 text-sm text-stone-500">{subtitle}</p>
 
-      {"error" in result ? (
+      {"error" in visible ? (
         <p className="mt-6 rounded-lg bg-stone-100 px-4 py-3 text-sm text-stone-600">
-          {result.error}
+          {visible.error}
         </p>
-      ) : result.length === 0 ? (
+      ) : visible.length === 0 ? (
         <p className="mt-6 rounded-lg border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
-          No quiz sessions yet.
+          {admin ? "No quiz sessions yet." : "You haven't taken any voice quizzes yet."}
         </p>
       ) : (
-        <AdminSessions groups={groupByArticle(result)} />
+        <AdminSessions groups={groupByArticle(visible)} canDelete={admin} />
       )}
     </div>
   );
