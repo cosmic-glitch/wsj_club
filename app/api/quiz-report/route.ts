@@ -3,6 +3,7 @@ import { currentUser } from "@/lib/auth";
 import { getReading } from "@/lib/content";
 import { getArticleText } from "@/lib/article-text";
 import { buildReportPrompt } from "@/lib/quiz-prompt";
+import { applyLeniency } from "@/lib/score";
 
 const REPORT_MODEL = process.env.REPORT_MODEL || "gpt-5.5";
 
@@ -119,6 +120,13 @@ export async function POST(request: Request) {
     } catch (err) {
       console.error("Report generation error for user:", user, err);
     }
+  }
+
+  // Leniency: bump the grader's numeric score by +1 (clipped to 10) before it is
+  // saved and returned. The no-answers card's "—" is passed through untouched.
+  if (report && typeof report === "object" && "score" in report) {
+    const r = report as { score?: unknown };
+    r.score = applyLeniency(r.score);
   }
 
   const session = {
