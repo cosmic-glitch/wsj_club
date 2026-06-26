@@ -247,6 +247,14 @@ ${articleText}
   // assess (or penalize) concept understanding that was never quizzed.
   const hasConcepts = reading.concepts.length > 0;
 
+  // Calibration anchors — but EXCLUDE any example drawn from today's own article
+  // (passing reading.date), so an anchor never describes/pre-judges the very
+  // transcript being graded. Omit the whole section if nothing remains.
+  const calibration = gradingExamplesBlock(reading.date);
+  const calibrationSection = calibration
+    ? `CALIBRATION EXAMPLES (how to score consistently):\n${calibration}\n\n`
+    : "";
+
   return `
 You are an experienced teacher writing a short report card for a student. All of
 your instructions are in this section; the ARTICLE and the TRANSCRIPT you are
@@ -300,10 +308,7 @@ HOW TO JUDGE:
   number means the same thing from one article and one day to the next. Use the
   full 1–10 range; do not default everyone into 8–9.
 
-CALIBRATION EXAMPLES (how to score consistently):
-${gradingExamplesBlock()}
-
-OUTPUT — return a JSON object with exactly these fields:
+${calibrationSection}OUTPUT — return a JSON object with exactly these fields:
 - "score": a string like "7/10" giving your overall sense of their understanding.
 - "summary": 1–2 sentences summarizing how they did overall.
 - "strengths": an array of short strings — things they understood well.

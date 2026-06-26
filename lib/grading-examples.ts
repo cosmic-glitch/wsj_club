@@ -29,6 +29,13 @@
  */
 
 export type GradingExample = {
+  /**
+   * The date (YYYY-MM-DD) the example's session came from. Used to EXCLUDE an
+   * example when grading its own article — an anchor must never describe (and
+   * pre-judge / leak the answer key for) the very transcript being graded, and
+   * the "from a different article" framing must stay literally true.
+   */
+  sourceDate: string;
   /** Short title of the article the example came from (a DIFFERENT day). */
   article: string;
   /** What a top-band answer on THAT article would have covered — the ceiling. */
@@ -43,6 +50,7 @@ export type GradingExample = {
 
 export const GRADING_EXAMPLES: GradingExample[] = [
   {
+    sourceDate: "2026-06-25",
     article: "The data-center boom and inflation",
     ceiling:
       "the full argument plus all four concepts: capital expenditure, demand vs. supply shock (and why an AI demand shock PERSISTS where one-time shocks fade), productivity as a later cure, and inflation expectations as a self-fulfilling loop.",
@@ -52,6 +60,7 @@ export const GRADING_EXAMPLES: GradingExample[] = [
     why: "A complete, accurate account that reaches the article's HARDEST, subtlest ideas earns the top band; trivial factual slips do not pull it down.",
   },
   {
+    sourceDate: "2026-06-25",
     article: "The data-center boom and inflation",
     ceiling:
       "the full argument plus all four concepts: capital expenditure, demand vs. supply shock and its persistence, productivity, and inflation expectations.",
@@ -61,6 +70,7 @@ export const GRADING_EXAMPLES: GradingExample[] = [
     why: "Length and concrete detail are NOT depth. A longer, example-rich transcript that misses the subtlest concepts scores BELOW a tighter one that covers them — grade the distinct correct ideas covered, not the word count.",
   },
   {
+    sourceDate: "2026-06-23",
     article: "How to win the World Cup",
     ceiling:
       "the statistical model and its concepts (proxy measure, path dependence, bottom-up vs. top-down), PLUS the article's major theme that openness to immigration / diaspora players is one of the strongest routes to success.",
@@ -70,6 +80,7 @@ export const GRADING_EXAMPLES: GradingExample[] = [
     why: "Reward breadth and independent thinking, but a genuine conceptual error about a core mechanism keeps even a wide-ranging, creative answer OUT of the top band.",
   },
   {
+    sourceDate: "2026-06-23",
     article: "How to win the World Cup",
     ceiling:
       "the model and its concepts PLUS the major immigration / diaspora theme.",
@@ -79,6 +90,7 @@ export const GRADING_EXAMPLES: GradingExample[] = [
     why: "Accuracy alone is not enough. An answer that is correct but covers only the obvious points and skips a WHOLE major theme of the article sits in the middle band — calibrate against the article's full ceiling, not against 'did they say anything wrong.'",
   },
   {
+    sourceDate: "2026-06-24",
     article: "Europeans should embrace air-conditioning",
     ceiling:
       "the culture clash, the clean-electricity country comparison, the climate/heat-DEATHS pillar that makes cooling a health issue, and the policy/economics tail (costs, efficiency, grids, fossil-fuel price-shock resilience).",
@@ -89,9 +101,17 @@ export const GRADING_EXAMPLES: GradingExample[] = [
   },
 ];
 
-/** Render the calibration examples as a prompt block. */
-export function gradingExamplesBlock(): string {
-  const items = GRADING_EXAMPLES.map((e, i) => {
+/**
+ * Render the calibration examples as a prompt block. Pass the date of the
+ * article being graded as `excludeDate` so an example never anchors the grading
+ * of its OWN article (which would leak the answer key and pre-judge the very
+ * transcript). Returns "" when no examples remain — the caller then omits the
+ * whole CALIBRATION section.
+ */
+export function gradingExamplesBlock(excludeDate?: string): string {
+  const examples = GRADING_EXAMPLES.filter((e) => e.sourceDate !== excludeDate);
+  if (examples.length === 0) return "";
+  const items = examples.map((e, i) => {
     return [
       `Example ${i + 1} — from a different article ("${e.article}").`,
       `  A top answer there would cover: ${e.ceiling}`,
