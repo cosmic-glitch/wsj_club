@@ -40,14 +40,17 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - WSJ requires login. Tell the user: *"I've opened the article — please log into WSJ in the browser window, then tell me when you're in."* Wait for them. Do **not** ask for or store their password; they log in themselves.
    - Once past the paywall, read the full article (`browser_snapshot`, or scroll and read). Capture: the real headline, the byline/section if useful, and the substance — main argument, key facts, and any jargon a teenager would trip on.
 
-3. **Capture the day's PDF automatically — but only for sign-in/paywalled articles.** The PDF exists so the club can still read paywalled WSJ/Economist pieces. **If the article is on a freely open link that needs no login** (e.g. a public essay, an `archive.ph` capture, or an open-access page), **skip the PDF entirely** — don't capture one, omit `pdfUrl` from the JSON, and the index will show just the Web link. Only do the capture below when the source sits behind a sign-in/paywall. With the article open and the user logged in (from step 2), **don't print the live page** — instead **rebuild a clean, text-only document from the article's own paragraphs and print that**. **Why:** running `page.pdf()` on the live DOM goes wrong three ways: (a) Chromium's *print* emulation picks the **largest `srcset` candidate** for every `<img>` (WSJ photos go up to ~5000px); (b) it leaves behind **empty ad placeholders and `<video>`/poster images** that a plain `document.images` strip doesn't catch — together these bloat a short article to **tens of MB across a dozen-plus mostly-blank pages**; and (c) those tall, unbreakable blocks force awkward page breaks that **slice lines of text in half at page boundaries**. Extracting just the article's `<p>`/heading **text** into a fresh, plainly-styled doc fixes all three at once: it lands at **~50–150KB** of clean, complete text that **paginates line-by-line with no slicing** — which is all the club needs. Only `public/` is served by Next, so the PDF must end up at `public/pdfs/YYYY-MM-DD.pdf` and is referenced as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`.
+3. **Capture the day's PDF automatically — but only for sign-in/paywalled articles.** The PDF exists so the club can still read paywalled WSJ/Economist pieces. **If the article is on a freely open link that needs no login** (e.g. a public essay, an `archive.ph` capture, or an open-access page), **skip the PDF entirely** — don't capture one, omit `pdfUrl` from the JSON, and the index will show just the Web link. Only do the capture below when the source sits behind a sign-in/paywall. With the article open and the user logged in (from step 2), **don't print the live page** — instead **rebuild a clean document from the article's own paragraphs *and its real content images* and print that**. The rebuilt doc keeps the article's **charts, graphs, and photos** (which often carry the substance — an Economist "(see chart)" data viz, a labeled diagram) while dropping the page chrome. **Why rebuild instead of printing the live page:** running `page.pdf()` on the live DOM goes wrong three ways: (a) Chromium's *print* emulation picks the **largest `srcset` candidate** for every `<img>` (WSJ photos go up to ~5000px); (b) it leaves behind **empty ad placeholders and `<video>`/poster images** that a plain `document.images` strip doesn't catch — together these bloat a short article to **tens of MB across a dozen-plus mostly-blank pages**; and (c) those tall, unbreakable blocks force awkward page breaks that **slice lines of text in half at page boundaries**. The rebuild fixes all three: it takes the article's `<p>`/heading **text** *plus* only its genuine content images — each fetched at a **sensible ~1000px width (never the 5000px monster), inlined as a `data:` URI, and capped in height so it fits one page** — into a fresh, plainly-styled doc. That lands at **~150–500KB** (a few hundred KB per image, not tens of MB), **paginates line-by-line with no slicing** (images get `break-inside:avoid`), and **keeps the charts the club needs**. **Earlier this skill stripped images entirely (text-only); that dropped critical charts/graphs, so it now includes them.** Only `public/` is served by Next, so the PDF must end up at `public/pdfs/YYYY-MM-DD.pdf` and is referenced as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`.
    - Make the folder: `mkdir -p public/pdfs`.
    - With the article page **already open** (loaded past the paywall — the snippet does **not** navigate), use `browser_run_code_unsafe` — **substitute the real date** in `OUT` and the real publication in `SOURCE_NAME`:
      ```js
      async (page) => {
        const OUT = '/Users/anuragved/code/wsj_club/public/pdfs/YYYY-MM-DD.pdf'; // ← real date
-       // 1) Wait for the (often client-rendered) body, then pull the article's
-       //    title + paragraph/heading TEXT in document order — no images, no ads.
+       const SOURCE_NAME = 'The Economist'; // ← or 'The Wall Street Journal'
+       // 1) Wait for the (often client-rendered) body, then walk the article in
+       //    document order, collecting paragraph/heading TEXT *and* the real
+       //    content images (charts/photos) — stopping at the end-of-article footer
+       //    so related-article thumbnails and ads are excluded.
        await page.waitForFunction(() => document.querySelectorAll('article p').length > 8, { timeout: 20000 });
        const data = await page.evaluate(() => {
          const art = document.querySelector('article') || document.querySelector('main');
@@ -62,22 +65,78 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          );
          let deck = deckEl ? deckEl.innerText.replace(/\s+/g, ' ').trim() : '';
          if (deck && (deck === title || deck.length > 320)) deck = ''; // guard: don't grab a body paragraph
-         const STOP = /^This article appeared in/i;                 // print-edition footer
-         const SKIP = /^(Save|Share|Listen to this story|Video:|Discover stories|Delivered to your inbox|0:00|Advertisement)\b/i;
-         const blocks = [];
-         for (const n of art.querySelectorAll('p, h2, h3')) {
+         // STOP marks the end of the article body. Breaking here is what keeps the
+         // footer's "more from this section" thumbnails (and the espresso/promo
+         // images that sit just after the body) OUT of the PDF.
+         const STOP = /^(This article appeared in|Discover stories from this section|Sign up to|Stay on top of|Get exclusive analysis)\b/i;
+         const SKIP = /^(Save|Share|Listen to this story|Video:|Delivered to your inbox|0:00|Advertisement)\b/i;
+         const JUNK_SRC = /\/newsletters\/|\/ident|\bsponsor|\badvert|\.svg(\?|$)/i; // logos, idents, ad pixels
+         // Pick a sensible-resolution image (never the 5000px monster, never a tiny
+         // placeholder). NOTE: srcset URLs can themselves contain commas (Cloudflare
+         // "width=360,quality=80,…"), so DON'T split on commas — match "https://… NNNw"
+         // pairs directly, else you get invalid fragment URLs that fail to fetch.
+         const pickSrc = (img) => {
+           const MAX = 1200, cands = [];
+           if (img.srcset) {
+             const re = /(https?:\/\/[^\s]+)\s+(\d+)w/g; let m;
+             while ((m = re.exec(img.srcset))) cands.push({ url: m[1], w: +m[2] });
+           }
+           const usable = cands.filter(c => c.w >= 320);
+           const under = usable.filter(c => c.w <= MAX).sort((a, b) => b.w - a.w);
+           const over  = usable.slice().sort((a, b) => a.w - b.w);
+           const chosen = under[0] || over[0];
+           const url = chosen ? chosen.url : (img.currentSrc || img.src || '');
+           return /^https?:\/\//.test(url) ? url : (img.currentSrc || img.src || '');
+         };
+         const blocks = [], seen = new Set();
+         for (const n of art.querySelectorAll('p, h2, h3, figure')) {
+           if (n.tagName.toLowerCase() === 'figure') {
+             if (n.querySelector('video')) continue;            // video poster, not a real figure
+             const img = n.querySelector('img');
+             if (!img) continue;                                // audio player / pull-quote
+             const url = pickSrc(img);
+             if (!url || JUNK_SRC.test(url)) continue;
+             const key = (url.match(/images\/[^?]+|[^/?]+\.(?:jpe?g|png|webp|gif)/i) || [url])[0];
+             if (seen.has(key)) continue; seen.add(key);        // dedupe (some imgs repeat at sizes)
+             const capEl = n.querySelector('figcaption');
+             const caption = (capEl ? capEl.innerText : (img.alt || '')).replace(/\s+/g, ' ').trim();
+             if (/^listen to this story/i.test(caption)) continue;
+             blocks.push({ type: 'img', url, caption });
+             continue;
+           }
            const t = n.innerText.replace(/\s+/g, ' ').trim();
            if (!t || t === deck || SKIP.test(t) || /your browser does not support/i.test(t)) continue;
            if (STOP.test(t)) break;
            if (/\bmin read\b/i.test(t) && t.length < 60) continue;  // dateline
-           blocks.push({ tag: n.tagName.toLowerCase() === 'p' ? 'p' : 'h2', text: t });
+           blocks.push({ type: 'text', tag: n.tagName.toLowerCase() === 'p' ? 'p' : 'h2', text: t });
          }
          return { title, deck, blocks };
        });
-       // 2) Render the extracted text into a clean, plainly-styled doc and print THAT.
+       // 2) Fetch each kept image through the *authenticated browser context*
+       //    (page.request shares cookies and is not subject to CORS) and inline it
+       //    as a data: URI, so the printed doc is fully self-contained.
+       for (const b of data.blocks) {
+         if (b.type !== 'img') continue;
+         try {
+           const resp = await page.request.get(b.url, { timeout: 25000 });
+           if (!resp.ok()) { b.skip = true; continue; }
+           const buf = await resp.body();
+           if (buf.length > 6_000_000) { b.skip = true; continue; }   // safety cap per image
+           const ct = (resp.headers()['content-type'] || 'image/jpeg').split(';')[0];
+           b.dataUri = `data:${ct};base64,${buf.toString('base64')}`;
+         } catch { b.skip = true; }
+       }
+       // 3) Render text + images into a clean, plainly-styled doc and print THAT.
        const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
        const deckHtml = data.deck ? `<p class="dek">${esc(data.deck)}</p>` : '';
-       const body = data.blocks.map(b => b.tag === 'p' ? `<p>${esc(b.text)}</p>` : `<h2>${esc(b.text)}</h2>`).join('\n');
+       const body = data.blocks.map(b => {
+         if (b.type === 'img') {
+           if (b.skip || !b.dataUri) return '';
+           const cap = b.caption ? `<figcaption>${esc(b.caption)}</figcaption>` : '';
+           return `<figure><img src="${b.dataUri}">${cap}</figure>`;
+         }
+         return b.tag === 'p' ? `<p>${esc(b.text)}</p>` : `<h2>${esc(b.text)}</h2>`;
+       }).join('\n');
        const html = `<!doctype html><html><head><meta charset="utf-8"><style>
          html,body{margin:0;padding:0}
          body{font-family:Georgia,'Times New Roman',serif;font-size:12pt;line-height:1.5;color:#111}
@@ -86,15 +145,21 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          .src{color:#555;font-size:10pt;margin:0 0 1.2em}
          h2{font-size:13pt;margin:1.3em 0 .35em;break-after:avoid}
          p{margin:0 0 .8em;orphans:2;widows:2}
-       </style></head><body><h1>${esc(data.title)}</h1>${deckHtml}<div class="src">SOURCE_NAME</div>${body}</body></html>`;
+         figure{margin:1.1em 0;break-inside:avoid;text-align:center}      /* keep image+caption together */
+         figure img{max-width:100%;max-height:7.5in;height:auto;display:block;margin:0 auto} /* fit one page */
+         figcaption{font-size:9.5pt;color:#666;margin-top:.3em;font-style:italic;text-align:left}
+       </style></head><body><h1>${esc(data.title)}</h1>${deckHtml}<div class="src">${SOURCE_NAME}</div>${body}</body></html>`;
        await page.setContent(html, { waitUntil: 'load' });
        await page.pdf({ path: OUT, format: 'Letter', printBackground: false,
          margin: { top: '0.6in', bottom: '0.6in', left: '0.7in', right: '0.7in' } });
-       return 'wrote ' + OUT + ' | deck=' + (data.deck ? 'yes' : 'no') + ' | blocks=' + data.blocks.length;
+       const imgs = data.blocks.filter(b => b.type === 'img' && b.dataUri && !b.skip);
+       const txt = data.blocks.filter(b => b.type === 'text').length;
+       return 'wrote ' + OUT + ' | deck=' + (data.deck ? 'yes' : 'no') + ' | text=' + txt
+         + ' | images=' + imgs.length + ' [' + imgs.map(b => (b.url.match(/images\/([^?/]+)/) || [, '?'])[1]).join(', ') + ']';
      }
      ```
-     (`SOURCE_NAME` = `The Wall Street Journal` or `The Economist`.) `page.setContent` *replaces* the live page with the clean doc before printing — that's intended.
-   - **Verify it:** the snippet returns `deck=yes|no` (was the standfirst captured?) and a `blocks=` count — expect **roughly one per paragraph** (≈20–40 for a feature; a count under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome instead — re-check login/selectors). For an obituary or feature whose subtitle states a key fact (death date, age, who-did-what), confirm `deck=yes`; if it's `no`, the standfirst didn't match the selectors — grab it from `browser_snapshot` and prepend it to the text by hand. Then `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect **~50–150KB and a few pages**) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). To eyeball that text isn't sliced at page breaks, render a page: `pdftoppm -png -r 80 -f 1 -l 2 public/pdfs/YYYY-MM-DD.pdf /tmp/pg` and view `/tmp/pg-*.png`. If `blocks=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
+     (Set `SOURCE_NAME` at the top = `The Wall Street Journal` or `The Economist`.) `page.setContent` *replaces* the live page with the clean doc before printing — that's intended.
+   - **Verify it:** the snippet returns `deck=yes|no` (was the standfirst captured?), a `text=` paragraph count, and an `images=N [slugs]` list. Expect `text` **roughly one per paragraph** (≈20–40 for a feature; under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome — re-check login/selectors), and `images` to roughly match the **real charts/photos** in the body (often 1–4; **`images=0` on an article you know has a chart means the image step failed** — usually a paywall/login issue or the figure markup differs, so don't ship it without checking). For an obituary or feature whose subtitle states a key fact (death date, age, who-did-what), confirm `deck=yes`; if it's `no`, the standfirst didn't match the selectors — grab it from `browser_snapshot` and prepend it to the text by hand. Then `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect **~150–500KB and a few pages** now that images are embedded; **tens of MB means the image step grabbed something huge** — re-check) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). **Always render the pages and eyeball them** — both that text isn't sliced at page breaks AND that the charts/photos actually appear and the charts are legible: `pdftoppm -png -r 90 public/pdfs/YYYY-MM-DD.pdf /tmp/pg` then view the `/tmp/pg-*.png` pages. If `text=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
    - Set `pdfUrl: "/pdfs/YYYY-MM-DD.pdf"` in the JSON. (To skip the PDF entirely, omit `pdfUrl` — the page then shows only the Web link.)
    - **Multi-article days** (the `articles[]` shape — see step 5): capture **one PDF per article**. `browser_navigate` to each article in turn, then run the snippet writing to `public/pdfs/YYYY-MM-DD-1.pdf`, `-2.pdf`, … (note the `-N` suffix), and put each path in that article's own `pdfUrl` inside `articles[]` — there is no top-level `pdfUrl`.
    - **Manual fallback** (only if auto-capture looks wrong): the user saves the article as a PDF by hand into the `PDFs/` drop-zone at the repo root (gitignored, raw WSJ filename), and you copy it over: `cp "PDFs/<that file>.pdf" public/pdfs/YYYY-MM-DD.pdf`. The `public/pdfs/` copy is what gets committed and deployed.
