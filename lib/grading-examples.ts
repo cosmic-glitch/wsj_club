@@ -18,8 +18,13 @@
  * Curation notes:
  * - Names are deliberately omitted (the grader never sees the student's name, so
  *   the name can't bias the grade).
- * - The set spans the range (≈6.5 → 9) so the scale is anchored top to bottom,
- *   not just at the high end — this is what breaks the 8–9 compression.
+ * - The set spans the range (≈6.5 → 9.5) so the scale is anchored top to bottom,
+ *   not just at the high end — this is what breaks the 8–9 compression. The 9.5
+ *   anchor (a complete, accurate answer that reached the article's hardest theme)
+ *   matters most: without a top-band anchor visible, the grader bunches strong
+ *   answers at the ceiling instead of separating them (observed live — two
+ *   data-center attempts both scored 9 with no 9-anchor present, but 9 vs 8.5
+ *   once the 9.5 anchor pinned the top).
  * - Two pairs share an article (so difficulty is held constant): a long, vivid
  *   retelling scores BELOW a tighter one that reached the subtle concepts; and a
  *   wide-but-flawed answer scores ABOVE an accurate-but-thin one. Those orderings
@@ -68,6 +73,16 @@ export const GRADING_EXAMPLES: GradingExample[] = [
       "A LONGER, vivid retelling with rich concrete texture — what's inside a data center (chips, generators, cables), 24/7 power, and specific firms raising consumer prices — plus the productivity payoff. But it never reached the inflation-expectations loop, missed the demand-shock-persistence point, and only got the shock distinction when prompted, and even then tangled it.",
     score: "8/10",
     why: "Length and concrete detail are NOT depth. A longer, example-rich transcript that misses the subtlest concepts scores BELOW a tighter one that covers them — grade the distinct correct ideas covered, not the word count.",
+  },
+  {
+    sourceDate: "2026-06-23",
+    article: "How to win the World Cup",
+    ceiling:
+      "the statistical model and its concepts (proxy measure, path dependence, bottom-up vs. top-down), PLUS the article's major theme that openness to immigration / diaspora players is one of the strongest routes to success.",
+    covered:
+      "The most COMPLETE answer in the group: covered the whole article — the model's factors and the ~70/30 split, Elo as a proxy (with a GDP analogy), Japan's bottom-up rise vs. China's top-down spending — AND the major immigration/diaspora theme in full, with specific examples (the rising foreign-born share, Morocco/Senegal/Cape Verde) and the social dynamic that fans credit immigration after wins and blame it after losses. Nailed every vocabulary word and concept, with no conceptual errors.",
+    score: "9.5/10",
+    why: "The TOP of the scale: a complete AND accurate account that reaches the article's hardest, least-obvious theme and gets every concept right, with no real errors. Reserve 9.5–10 for this. An answer that is fluent and strong but misses a major theme OR a subtle concept sits a clear notch below, even if nothing in it is wrong.",
   },
   {
     sourceDate: "2026-06-23",
