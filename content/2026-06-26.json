@@ -1,0 +1,126 @@
+{
+  "date": "2026-06-26",
+  "title": "Smartphones and AI Are Remaking Rural India",
+  "articleUrl": "https://www.economist.com/asia/2026/06/23/smartphones-and-ai-are-remaking-rural-india",
+  "pdfUrl": "/pdfs/2026-06-26.pdf",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "ubiquitous",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Scarce not long ago, smartphones are becoming ubiquitous.",
+      "inContext": "Smartphones have gone from rare to seemingly everywhere in rural India — turning up in household after household.",
+      "meaning": "Present or found everywhere at once; so common you see it all the time.",
+      "examples": [
+        "By the end of the year those wireless earbuds were ubiquitous — it felt like every kid on the bus had a pair.",
+        "Pumpkin-spice flavor becomes ubiquitous every October, showing up in coffee, candles, and even cereal."
+      ]
+    },
+    {
+      "word": "lurching",
+      "partOfSpeech": "verb (here used as an adjective)",
+      "articleQuote": "The shift is happening at lurching speed thanks to dirt-cheap devices and data.",
+      "inContext": "The change is racing ahead, but in sudden, uneven jumps rather than at a smooth, steady pace.",
+      "meaning": "To lurch is to move with a sudden, unsteady jerk; something 'lurching' lunges forward abruptly and unevenly instead of smoothly.",
+      "examples": [
+        "The old bus lurched forward every time the driver hit the gas, throwing us back against our seats.",
+        "Her grades lurched up and down all semester — an A on one test, a D on the next."
+      ]
+    },
+    {
+      "word": "behemoth",
+      "partOfSpeech": "noun",
+      "articleQuote": "Data costs were also driven down by a brutal price war between Jio and Airtel, two telecoms behemoths.",
+      "inContext": "It casts Jio and Airtel as enormous, dominant phone companies — giants that tower over India's telecom market.",
+      "meaning": "Something huge and powerful, especially an organization or thing that dwarfs its rivals. (The word comes from a giant beast described in the Bible.)",
+      "examples": [
+        "A handful of streaming behemoths now release more shows each year than all the old TV networks combined.",
+        "The corner bookstore somehow survived right next to a retail behemoth like Amazon."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Leapfrogging",
+      "articleQuote": "Along with low rates of Wi-Fi installation, cheap tariffs help to explain why Indians are the hungriest consumers of mobile data in the world.",
+      "inContext": "Rural India largely skipped the steps the rich world climbed — landline phones, home computers, wired broadband — and jumped straight to cheap smartphones and mobile data.",
+      "meaning": "Leapfrogging is when a country or group skips over an older generation of technology and adopts the newest one directly. Because latecomers aren't locked into expensive old infrastructure, they can sometimes vault ahead — going straight to mobile-money apps instead of building bank branches, or to solar panels instead of a wired power grid."
+    },
+    {
+      "name": "Economies of scale",
+      "articleQuote": "That is largely thanks to high population density, meaning that each mast can serve more customers.",
+      "inContext": "A cell-phone tower (mast) costs roughly the same whether ten people or ten thousand use it; packing many customers around each one spreads that fixed cost thin, helping make India's data dirt-cheap.",
+      "meaning": "Economies of scale: as a large fixed cost gets spread over more units or users, the cost of each one falls. It's why a factory's thousandth gadget is cheaper to make than its first, and why a crowded city can offer cheaper utilities than a remote village."
+    },
+    {
+      "name": "The digital divide",
+      "articleQuote": "Ownership remains skewed towards men… Only around half of rural women have a mobile phone.",
+      "inContext": "Even as phones spread, access isn't equal — men have them more than women, and (until recently) cities far more than villages — so the benefits reach people unevenly.",
+      "meaning": "The digital divide is the gap between people with good access to technology and the internet and those without, split along lines of income, geography, age, or gender. Because so much of modern school, work, and services now runs online, the gap tends to widen other inequalities along with it."
+    },
+    {
+      "name": "The attention economy",
+      "articleQuote": "Short-form video and algorithmic content are particularly hard to resist in sleepy villages.",
+      "inContext": "Apps full of endless reels and games are engineered to grab and hold users' time — so much that parents complain their children do little but watch and idle.",
+      "meaning": "In the attention economy, your time and focus are the scarce resource that apps compete for and then sell to advertisers. Recommendation algorithms keep serving the next video precisely because the longer you stay, the more the platform earns — which is what makes them so hard to put down."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what are two main reasons mobile data is so cheap in India?",
+      "options": [
+        "Government subsidies and free public Wi-Fi in every village",
+        "High population density and a brutal price war between Jio and Airtel",
+        "A shortage of smartphones and strict limits on how much data people may use",
+        "Foreign companies handing out free data to win new customers"
+      ],
+      "answerIndex": 1,
+      "explanation": "Dense populations let each cell tower serve many customers (an economy of scale), and a fierce price war between the telecom giants Jio and Airtel drove tariffs down."
+    },
+    {
+      "question": "If smartphones have become 'ubiquitous' in a village, that means they are…",
+      "options": [
+        "found almost everywhere",
+        "banned by the local government",
+        "too expensive for anyone to buy",
+        "quickly going out of fashion"
+      ],
+      "answerIndex": 0,
+      "explanation": "Ubiquitous means present or found everywhere at once."
+    },
+    {
+      "question": "The article notes that ownership is 'skewed towards men' and only about half of rural women have a phone. This is an example of…",
+      "options": [
+        "economies of scale",
+        "the digital divide",
+        "market saturation",
+        "leapfrogging"
+      ],
+      "answerIndex": 1,
+      "explanation": "The digital divide is the unequal access to technology across groups — here, between men and women — which lets the benefits reach people unevenly."
+    },
+    {
+      "question": "Rural India jumping straight to cheap smartphones and mobile data — skipping landlines, home PCs, and wired broadband — is an example of…",
+      "options": [
+        "slowly upgrading from one technology to the next over many decades",
+        "refusing new technology in order to protect local traditions",
+        "skipping an older technology and adopting the newest one directly",
+        "copying exactly the path that richer countries took"
+      ],
+      "answerIndex": 2,
+      "explanation": "Leapfrogging means vaulting straight to the latest technology, skipping the older steps (like landlines and home computers) that others climbed through."
+    },
+    {
+      "question": "When the article calls short-form video and 'algorithmic content' hard to resist, it is pointing to a worry rooted in…",
+      "options": [
+        "phones being too expensive for villagers to own",
+        "the internet being too slow to stream video in villages",
+        "a shortage of new videos for people to watch",
+        "apps designed to capture and hold users' attention, fueling distraction"
+      ],
+      "answerIndex": 3,
+      "explanation": "In the attention economy, recommendation algorithms are built to maximize time-on-app, which is why children end up endlessly watching reels and idling."
+    }
+  ]
+}
