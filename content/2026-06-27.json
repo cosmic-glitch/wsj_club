@@ -1,0 +1,125 @@
+{
+  "date": "2026-06-27",
+  "title": "Students Are Doing Worse Than You Think",
+  "articleUrl": "https://www.economist.com/international/2026/06/25/students-are-doing-worse-than-you-think",
+  "pdfUrl": "/pdfs/2026-06-27.pdf",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "acuity",
+      "partOfSpeech": "noun",
+      "articleQuote": "Test-takers are divided into five levels of acuity, in each discipline.",
+      "inContext": "Here, acuity means how sharp and capable a person's thinking is: the OECD sorts test-takers into five bands by how keenly they can read and reason.",
+      "meaning": "Sharpness of mind, perception, or thought — how clearly and keenly someone can understand or notice things.",
+      "examples": [
+        "Years of playing chess gave her a tactical acuity that made her hard to beat.",
+        "After a full night's sleep, his mental acuity during the morning exam was noticeably better."
+      ]
+    },
+    {
+      "word": "sanguine",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Brits can feel reasonably sanguine, despite their growing public disdain for academia.",
+      "inContext": "It means British readers can feel fairly calm and optimistic about their students' scores — which are better than average and improving — even though many people there now look down on universities.",
+      "meaning": "Cheerfully optimistic and confident, especially about how things will turn out, even in a difficult situation.",
+      "examples": [
+        "Even down two sets, she stayed sanguine, sure she could still win the match.",
+        "My coach was sanguine about the loss, telling us we'd learn more from it than from an easy win."
+      ]
+    },
+    {
+      "word": "vapid",
+      "partOfSpeech": "adjective",
+      "articleQuote": "...replacing time-tested syllabi with faddish curriculums that... favour nice-sounding but vapid “soft” skills.",
+      "inContext": "Here, vapid describes “soft skills” that sound appealing but, in the critics' view, are empty and lack real substance compared with learning concrete facts.",
+      "meaning": "Dull, flat, and lacking in substance, interest, or meaning — offering nothing that really feeds the mind.",
+      "examples": [
+        "The movie had amazing effects but a vapid plot that left us feeling nothing.",
+        "His apology was so vapid and generic that no one believed he actually meant it."
+      ]
+    },
+    {
+      "word": "exhort",
+      "partOfSpeech": "verb",
+      "articleQuote": "For a decade Harvard has been “exhorting faculty to remember that some students arrive less prepared for college than others.”",
+      "inContext": "It means Harvard has been strongly and repeatedly urging its professors to keep in mind that some students start out behind — pressing them to grade with that in mind.",
+      "meaning": "To strongly urge, encourage, or push someone to do something, often through an earnest or rousing appeal.",
+      "examples": [
+        "The captain exhorted her teammates to keep fighting even when they were three goals down.",
+        "Posters around the school exhorted students to sign up for the blood drive."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Perverse incentives",
+      "articleQuote": "Academics at Harvard fear students will avoid courses run by tough-markers, and that this might hurt their own careers... further incentive to try to keep the punters happy.",
+      "inContext": "Professors are supposed to grade honestly, but the rewards they actually face — popularity, good course evaluations, protecting their careers — push them to inflate grades instead, working against the goal of accurate marking.",
+      "meaning": "A perverse incentive is a reward or pressure that accidentally encourages the opposite of what was intended. People respond to the incentives right in front of them, so when doing the honest or hard thing is quietly punished and the easy thing is rewarded, a system slowly drifts away from its real purpose. Spotting them explains a surprising amount of behavior — from grade inflation to safety rules that end up making people less careful."
+    },
+    {
+      "name": "Selection (composition) effect",
+      "articleQuote": "Falling achievement in schools has mostly been driven by children who already ranked in the bottom half of their classes, not by clever clogs at the top.",
+      "inContext": "The overall average fell largely because the weakest students slipped further — and because colleges short of applicants admitted more low-scoring students. The make-up of the group changed, rather than every single student getting worse.",
+      "meaning": "A selection or composition effect is when a group's average changes because of who is in the group, not because the individuals themselves changed. Add more low scorers (or lose the high scorers) and the average drops even if no one person did any worse. Noticing this keeps you from misreading a statistic: a falling average can mean “the mix changed,” not “everyone declined” — the same trap hides in things like average wages, test scores, and team stats."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What problem did more than 1,800 University of California lecturers describe in their open letter?",
+      "options": [
+        "A shortage of maths and science professors",
+        "First-year undergraduates arriving without basic skills, forcing instructors to reteach middle-school material",
+        "Students cheating their way through entrance exams",
+        "Tuition rising faster than families could afford"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lecturers warned that many first-years lacked basic preparation, so instructors were having to reteach middle-school maths."
+    },
+    {
+      "question": "After many U.S. universities stopped requiring the SAT or ACT, what did the article say happened to admissions?",
+      "options": [
+        "Application numbers collapsed almost everywhere",
+        "Colleges leaned on less reliable signals — like easily AI-written essays and inflated high-school grades — turning admissions into a “black box”",
+        "Students began scoring much higher in mathematics",
+        "Universities quickly reintroduced standardized in-person finals"
+      ],
+      "answerIndex": 1,
+      "explanation": "With test scores gone, colleges relied more on essays (now easily generated by AI) and inflating grades, which one professor called a “black box.”"
+    },
+    {
+      "question": "The article says “Brits can feel reasonably sanguine” about their students' results. Someone who is sanguine is...",
+      "options": [
+        "Confused and uncertain",
+        "Cheerfully optimistic and confident",
+        "Angry and resentful",
+        "Bored and indifferent"
+      ],
+      "answerIndex": 1,
+      "explanation": "Sanguine means cheerfully optimistic — confident that things will turn out well."
+    },
+    {
+      "question": "Professors may inflate grades partly because tough marking could hurt their course evaluations and careers. This is an example of...",
+      "options": [
+        "Grade deflation",
+        "A perverse incentive",
+        "Standardized testing",
+        "Mental acuity"
+      ],
+      "answerIndex": 1,
+      "explanation": "A perverse incentive rewards behavior (easy grading) that works against the real goal (honest assessment)."
+    },
+    {
+      "question": "The piece notes that declines were “driven by children who already ranked in the bottom half,” and that colleges short of applicants admit more low scorers. Why can a group's average score drop even if no individual student gets worse?",
+      "options": [
+        "Because the test questions get harder every year",
+        "Because the make-up of the group changes — more low scorers are included",
+        "Because averages always fall over time",
+        "Because grade inflation raises everyone's marks at once"
+      ],
+      "answerIndex": 1,
+      "explanation": "This is a selection (composition) effect: changing who is in the group shifts the average, even when individuals are unchanged."
+    }
+  ]
+}
