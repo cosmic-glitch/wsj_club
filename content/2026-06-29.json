@@ -1,0 +1,126 @@
+{
+  "date": "2026-06-29",
+  "title": "He Dared to Buy Senior Housing at Its Lows. Now He Runs a $160 Billion Empire.",
+  "articleUrl": "https://www.wsj.com/real-estate/he-dared-to-buy-senior-housing-at-its-lows-now-he-runs-a-160-billion-empire-5a035faf",
+  "pdfUrl": "/pdfs/2026-06-29.pdf",
+  "voiceQuiz": true,
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "contingent",
+      "partOfSpeech": "adjective",
+      "articleQuote": "While that payout is contingent on Welltower's stock continuing to climb, the magnitude of Mitra's compensation is sparking a backlash.",
+      "inContext": "The CEO's giant stock award isn't his to keep automatically — he only actually collects it if Welltower's share price keeps rising. The payout hangs on that condition.",
+      "meaning": "Depending on something else happening first; conditional rather than guaranteed.",
+      "examples": [
+        "Your spot on the travel team is contingent on keeping your grades above a B.",
+        "We made the picnic plans contingent on the weather staying clear."
+      ]
+    },
+    {
+      "word": "rebuke",
+      "partOfSpeech": "noun",
+      "articleQuote": "About 80% of shares voting opposed the company's advisory “say-on-pay” resolution, one of the biggest rebukes of last year's executive compensation by shareholders.",
+      "inContext": "Shareholders voted overwhelmingly against the CEO's pay, and the article calls that vote a rebuke — a loud, public signal of disapproval.",
+      "meaning": "A sharp criticism or expression of disapproval. (As a verb, to rebuke someone is to scold or criticize them sharply.)",
+      "examples": [
+        "The coach's rebuke after the sloppy practice made the whole team go quiet.",
+        "Losing the class election by a landslide felt like a rebuke of his campaign promises."
+      ]
+    },
+    {
+      "word": "clout",
+      "partOfSpeech": "noun",
+      "articleQuote": "Mitra used Welltower's clout to secure exclusive partnerships with some of the industry's strongest operators while giving them better data, technology and incentives to improve performance.",
+      "inContext": "Because Welltower had grown so large, it had bargaining power — clout — that let it lock up deals with the best operators that smaller rivals simply couldn't.",
+      "meaning": "Influence or power, especially the kind that lets you get what you want or sway other people's decisions.",
+      "examples": [
+        "As captain, she had enough clout to convince the coach to move practice to the afternoon.",
+        "An account with a million followers carries real clout with brands looking for promotion."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Contrarian investing",
+      "articleQuote": "Welltower spent more than $40 billion over the following six years to acquire tens of thousands of senior-housing units, while many rivals retreated when the pandemic caused senior-facility occupancy rates to plummet.",
+      "inContext": "When the pandemic emptied senior homes and frightened competitors pulled back, Welltower did the opposite — it bought aggressively at low prices, betting the market would eventually recover.",
+      "meaning": "Going against the crowd: buying when others are scared and selling, or selling when everyone is euphoric. Prices tend to be lowest exactly when the mood is most negative, so the biggest bargains usually require betting against the prevailing sentiment. (It's also called counter-cyclical — acting opposite to the swings of the economy.)"
+    },
+    {
+      "name": "Demographic tailwinds",
+      "articleQuote": "the compensation plan gives management too much credit for gains driven largely by the aging of the baby boom generation and the industry's recovery from the pandemic.",
+      "inContext": "A critic argues Welltower's success owes less to brilliant management and more to a giant population trend — millions of baby boomers reaching the age when they need senior care — that lifts the whole industry at once.",
+      "meaning": "A tailwind is a large, slow-moving outside trend that pushes an entire industry forward no matter what any single company does (the opposite, a headwind, holds it back). Demographics — how a population's age, size, or makeup is shifting — make an especially powerful tailwind because the changes are visible decades in advance."
+    },
+    {
+      "name": "Aligning incentives (pay for performance)",
+      "articleQuote": "Roughly half of the package eventually vests based primarily on time, they say, while the performance hurdles are concentrated in the plan's first five years.",
+      "inContext": "Critics complain that too much of the CEO's pay 'vests' — becomes his to keep — just for staying at the company over time, rather than for hitting tough performance targets, so the reward isn't tightly tied to results.",
+      "meaning": "An incentive is a reward designed to encourage a certain behavior, and incentives are 'aligned' when what's good for the person earning the reward is also good for the people paying it. Pay that vests on performance rewards doing the job well; pay that vests on time rewards merely sticking around. A 'say-on-pay' vote lets shareholders push back when they think the two have drifted apart."
+    },
+    {
+      "name": "REIT (real estate investment trust)",
+      "articleQuote": "Welltower is a landlord and relies on operators such as Sunrise Senior Living and Atria Senior Living to run the communities, hire caregivers, market apartments and care for residents.",
+      "inContext": "Welltower owns the buildings but doesn't run them day to day. It's structured as a REIT — a company whose business is owning income-producing property — while separate operators handle the actual care.",
+      "meaning": "A REIT is a company that owns real estate, earns rent from it, and trades on the stock market like any other stock. It lets ordinary people invest in big properties — apartment towers, malls, senior communities — without buying a building themselves, and it often separates the job of owning the property from the job of operating it."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What was the daring bet that helped make Welltower the world's largest publicly traded real-estate company?",
+      "options": [
+        "It sold off all its senior-housing units just before the pandemic hit.",
+        "It bought tens of thousands of senior-housing units while rivals were retreating during the pandemic.",
+        "It abandoned real estate to invest in technology stocks.",
+        "It refused to ever raise rents, even as its costs soared."
+      ],
+      "answerIndex": 1,
+      "explanation": "While competitors pulled back during the pandemic, Welltower spent over $40 billion buying senior housing at low prices — a contrarian bet that paid off as occupancy later recovered."
+    },
+    {
+      "question": "The article says much of CEO Shankh Mitra's $821 million award is 'contingent' on Welltower's stock continuing to climb. This means the payout is:",
+      "options": [
+        "guaranteed no matter what happens to the stock.",
+        "dependent on a condition being met first.",
+        "paid entirely in cash up front.",
+        "against the company's own rules."
+      ],
+      "answerIndex": 1,
+      "explanation": "'Contingent' means conditional — Mitra collects the full award only if the stock keeps rising, so it is not guaranteed."
+    },
+    {
+      "question": "A critic said the pay plan 'gives management too much credit for gains driven largely by the aging of the baby boom generation.' This is an example of pointing to a:",
+      "options": [
+        "demographic tailwind lifting the entire industry.",
+        "rebuke issued by a government regulator.",
+        "short position taken against the company.",
+        "contingent bonus paid in cash."
+      ],
+      "answerIndex": 0,
+      "explanation": "A demographic tailwind is a population trend — here, millions of baby boomers aging into needing care — that pushes a whole industry forward regardless of any single company's skill."
+    },
+    {
+      "question": "About 80% of voting shareholders opposed Welltower's 'say-on-pay' resolution. Critics' main complaint was that:",
+      "options": [
+        "the CEO was paid far too little to stay motivated.",
+        "shareholders were never allowed to vote on executive pay at all.",
+        "too much of the pay vests based on time rather than on hitting performance targets.",
+        "the company was expanding into too many new markets."
+      ],
+      "answerIndex": 2,
+      "explanation": "Critics said roughly half the package vests simply for staying at the company over time, rather than for meeting tough performance goals — so the reward wasn't tightly tied to results."
+    },
+    {
+      "question": "The article calls Welltower 'a landlord' that 'relies on operators such as Sunrise Senior Living... to run the communities.' As a REIT, Welltower's core business is:",
+      "options": [
+        "hiring and training the caregivers in each community.",
+        "owning the real estate and earning income from it, while others operate it.",
+        "manufacturing medical equipment for hospitals.",
+        "lending money to people buying their first homes."
+      ],
+      "answerIndex": 1,
+      "explanation": "A REIT (real estate investment trust) owns income-producing property; Welltower owns the buildings and collects rent, while separate operators handle the day-to-day care."
+    }
+  ]
+}
