@@ -65,15 +65,11 @@ function fmtLocal(iso: string, mounted: boolean): string {
   });
 }
 
-// How long the quiz took, e.g. "4m 32s" (or "47s" under a minute). "—" when the
-// duration wasn't recorded (older sessions). Spelled out rather than "m:ss" so
-// it can't be misread as a clock time next to the timestamp.
+// Quiz length as minutes to one decimal, e.g. "8.7m" — compact, a single number.
+// "—" when the duration wasn't recorded.
 function fmtDuration(ms?: number): string {
   if (ms == null || !Number.isFinite(ms) || ms < 0) return "—";
-  const totalSec = Math.round(ms / 1000);
-  const m = Math.floor(totalSec / 60);
-  const s = totalSec % 60;
-  return m > 0 ? `${m}m ${s.toString().padStart(2, "0")}s` : `${s}s`;
+  return `${(ms / 60000).toFixed(1)}m`;
 }
 
 export default function AdminSessions({
@@ -161,7 +157,7 @@ export default function AdminSessions({
                             <span className="w-12 shrink-0 whitespace-nowrap font-semibold text-sky-700">
                               {score}
                             </span>
-                            <span className="w-20 shrink-0 whitespace-nowrap tabular-nums text-stone-500">
+                            <span className="w-14 shrink-0 whitespace-nowrap tabular-nums text-stone-500">
                               {fmtDuration(s.durationMs)}
                             </span>
                             <span className="w-36 shrink-0 whitespace-nowrap text-stone-500">
