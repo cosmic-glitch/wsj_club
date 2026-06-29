@@ -65,11 +65,19 @@ function fmtLocal(iso: string, mounted: boolean): string {
   });
 }
 
-// Quiz length as minutes to one decimal, e.g. "8.7m" — compact, a single number.
-// "—" when the duration wasn't recorded.
+// Quiz length as minutes to one decimal, e.g. "8.7" — compact, a single number.
+// The "minutes" unit lives in the column header, not on each value. "—" when the
+// duration wasn't recorded.
 function fmtDuration(ms?: number): string {
   if (ms == null || !Number.isFinite(ms) || ms < 0) return "—";
-  return `${(ms / 60000).toFixed(1)}m`;
+  return (ms / 60000).toFixed(1);
+}
+
+// Scores are all out of 10, so show just the number ("9/10" → "9"). The "—" of a
+// no-answers card (and anything without an "/10") passes through unchanged.
+function fmtScore(score?: string): string {
+  if (!score) return "";
+  return score.split("/")[0].trim();
 }
 
 export default function AdminSessions({
@@ -114,7 +122,18 @@ export default function AdminSessions({
             <tr className="border-b border-stone-200 bg-stone-50 text-left text-xs font-semibold uppercase tracking-wide text-stone-500">
               <th className="px-4 py-2.5 font-semibold">Date</th>
               <th className="px-4 py-2.5 font-semibold">Article</th>
-              <th className="px-4 py-2.5 font-semibold">Attempts</th>
+              {/* The "Attempts" cell holds a sub-grid (one line per attempt). These
+                  labels use the SAME widths + px-2 + gap-3 as the attempt rows
+                  below, and since they're in the same table column they line up.
+                  All right-aligned to match the values. */}
+              <th className="px-4 py-2.5 font-semibold">
+                <div className="flex items-end gap-3 px-2">
+                  <span className="w-24 text-right">Student</span>
+                  <span className="w-12 text-right">Score</span>
+                  <span className="w-20 text-right">Duration (min)</span>
+                  <span className="w-36 text-right">Time</span>
+                </div>
+              </th>
             </tr>
           </thead>
           <tbody className="divide-y divide-stone-200">
@@ -151,16 +170,16 @@ export default function AdminSessions({
                             onClick={() => setOpen(s)}
                             className="group flex w-full items-baseline gap-3 rounded-md px-2 py-1 text-left hover:bg-sky-50"
                           >
-                            <span className="w-24 shrink-0 whitespace-nowrap font-medium text-stone-800 group-hover:text-sky-700">
+                            <span className="w-24 shrink-0 truncate text-right font-medium text-stone-800 group-hover:text-sky-700">
                               {s.studentName}
                             </span>
-                            <span className="w-12 shrink-0 whitespace-nowrap font-semibold text-sky-700">
-                              {score}
+                            <span className="w-12 shrink-0 whitespace-nowrap text-right font-semibold text-sky-700">
+                              {fmtScore(score)}
                             </span>
-                            <span className="w-14 shrink-0 whitespace-nowrap tabular-nums text-stone-500">
+                            <span className="w-20 shrink-0 whitespace-nowrap text-right tabular-nums text-stone-500">
                               {fmtDuration(s.durationMs)}
                             </span>
-                            <span className="w-36 shrink-0 whitespace-nowrap text-stone-500">
+                            <span className="w-36 shrink-0 whitespace-nowrap text-right text-stone-500">
                               {fmtLocal(s.endedAt, mounted)}
                             </span>
                             {s.partial && (
