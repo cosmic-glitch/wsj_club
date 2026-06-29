@@ -295,10 +295,6 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // end() idempotent and lets cancel() block a racing end().
   const endStartedRef = useRef(false);
 
-  // When the quiz actually began (epoch ms, set once the first question is
-  // ready). end() reads it to record how long the quiz took (durationMs).
-  const startedAtRef = useRef(0);
-
   // iOS/WebKit needs the opposite recording path from desktop Chrome: it records
   // the RAW mic track fine but does NOT reliably record a Web Audio
   // MediaStreamDestination (which is the desktop workaround for a Chromium bug).
@@ -754,7 +750,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // desktop answer webm; iOS answers are already 16 kHz PCM) to mono 16 kHz,
   // concatenate, and encode a single seekable WAV. Best-effort: a clip that
   // won't decode is skipped rather than failing the whole recording.
-  async function buildTeacherFile(): Promise<{ blob: Blob; ext: string } | null> {
+  async function buildTeacherFile(): Promise<{ blob: Blob; ext: string; durationMs: number } | null> {
     const segments = [...segmentsRef.current].sort((a, b) => a.order - b.order);
     if (!segments.length) return null;
     let ctx: AudioContext | null = null;
@@ -782,7 +778,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     ctx?.close().catch(() => {});
     const merged = mergeFloat32(pcms.filter((p) => p.length));
     if (!merged.length) return null;
-    return { blob: encodeWav(merged, WAV_RATE), ext: "wav" };
+    // The recording's length (total talk time: tutor questions + answers). This
+    // is the same "duration" the teacher/student sees in the playback control,
+    // saved as the session's durationMs and shown in the Scores table.
+    const durationMs = Math.round((merged.length / WAV_RATE) * 1000);
+    return { blob: encodeWav(merged, WAV_RATE), ext: "wav", durationMs };
   }
 
   function teardown() {
@@ -865,8 +865,6 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       setPhase("error");
       return;
     }
-    // Mic is granted and the first question is about to show — start the clock.
-    startedAtRef.current = Date.now();
     await nextTutorTurn(true);
   }
 
@@ -882,9 +880,6 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   async function end() {
     if (endStartedRef.current) return; // ignore a double-click — run once
     endStartedRef.current = true;
-    // How long the quiz took — captured now (before upload + grading) so it
-    // measures the quiz itself, not the wrap-up. 0 only if start() never ran.
-    const durationMs = startedAtRef.current ? Date.now() - startedAtRef.current : undefined;
     setNotice("");
     setReport(null);
     setUploadStep("pending");
@@ -913,6 +908,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       }
     }
     const session = await buildTeacherFile();
+    // The recording's length — saved as the session's duration (shown in the
+    // Scores table). undefined when nothing was recorded → table shows "—".
+    const durationMs = session?.durationMs;
     teardown();
 
     // 1. Upload the stitched recording (best-effort) — straight from the browser
@@ -1003,7 +1001,6 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     failureRef.current = null;
     setFailed(false);
     endStartedRef.current = false;
-    startedAtRef.current = 0;
   }
 
   // Stop the mic/recorders if the component unmounts mid-session.

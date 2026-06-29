@@ -22,8 +22,8 @@ export type Session = {
   studentName: string;
   loginUser?: string;
   endedAt: string;
-  // How long the quiz actually took (start → "End quiz"), measured client-side.
-  // Older sessions predate it (undefined → shown as "—").
+  // Length of the saved recording (total talk time — the same duration the
+  // playback control shows), in ms. Undefined when nothing was recorded → "—".
   durationMs?: number;
   transcript: Turn[];
   report: Report | null;
