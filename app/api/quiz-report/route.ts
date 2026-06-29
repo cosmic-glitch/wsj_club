@@ -38,6 +38,12 @@ export async function POST(request: Request) {
     durationMs?: number;
     partial?: boolean;
     failure?: SessionFailure | null;
+    // Client diagnostics (logging only) — see VoiceQuiz.tsx "Diagnostics" refs.
+    sessionId?: string;
+    mountId?: string;
+    endReason?: string;
+    phaseAtEnd?: string;
+    breadcrumbs?: { t?: number; ev?: string; info?: string }[];
   };
   try {
     body = await request.json();
@@ -70,6 +76,28 @@ export async function POST(request: Request) {
           detail: String(body.failure.detail ?? "").slice(0, 2000),
         }
       : null;
+
+  // Client diagnostics (logging only): a stable per-quiz `sessionId` + per-mount
+  // `mountId`, the end trigger + phase, and an ordered breadcrumb trail. These
+  // make a recurrence of the "one quiz saved as two records" bug self-explaining
+  // (e.g. the same sessionId on two records ⇒ a double-save). All free text from
+  // the client, so sanitize + length/count-cap everything.
+  const str = (v: unknown, n: number) =>
+    typeof v === "string" && v.trim() ? v.slice(0, n) : undefined;
+  const diag = {
+    sessionId: str(body.sessionId, 64),
+    mountId: str(body.mountId, 64),
+    endReason: str(body.endReason, 64),
+    phaseAtEnd: str(body.phaseAtEnd, 32),
+    breadcrumbs: Array.isArray(body.breadcrumbs)
+      ? body.breadcrumbs.slice(0, 400).map((e) => ({
+          t: typeof e?.t === "number" && Number.isFinite(e.t) ? Math.round(e.t) : 0,
+          ev: String(e?.ev ?? "").slice(0, 48),
+          ...(e?.info ? { info: String(e.info).slice(0, 200) } : {}),
+        }))
+      : undefined,
+  };
+
   const reading = getReading(date);
   if (!reading) {
     return Response.json({ error: "Unknown reading." }, { status: 404 });
@@ -150,6 +178,7 @@ export async function POST(request: Request) {
     audioUrl,
     partial,
     failure,
+    diag,
   };
 
   // A failure ended this session — log it WITH the student and how far they got
@@ -171,6 +200,27 @@ export async function POST(request: Request) {
       })
     );
   }
+
+  // Every save — partial or clean — logs one concise diagnostic line (the
+  // partial branch above adds the failure detail). This is the server-side
+  // counterpart to the breadcrumbs and survives even if the Blob record is later
+  // deleted, so a double-save shows up as two of these lines with the SAME
+  // sessionId. console.log (info), not error — a normal save isn't an error.
+  console.log(
+    "Voice-quiz session saved:",
+    JSON.stringify({
+      user,
+      sessionId: diag.sessionId,
+      mountId: diag.mountId,
+      endReason: diag.endReason,
+      phaseAtEnd: diag.phaseAtEnd,
+      studentAnswers: studentTurns.length,
+      totalTurns: transcript.length,
+      partial,
+      audioSaved: !!audioUrl,
+      durationMs,
+    })
+  );
 
   // Save to Blob (best-effort — don't fail the student's session if storage hiccups).
   try {

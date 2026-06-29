@@ -70,6 +70,18 @@ function fmtClock(totalSeconds: number): string {
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
+// A short random id. Used for the per-quiz `sessionId` and per-mount `mountId`
+// stamped on every saved session (diagnostics): two saved records sharing a
+// sessionId mean ONE quiz that saved twice; differing mountIds mean the
+// component remounted between saves.
+function newId(): string {
+  try {
+    return crypto.randomUUID();
+  } catch {
+    return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
+  }
+}
+
 // The tutor's opening line. It's a fixed script (mirrors step 1 of
 // `buildInstructions` in lib/quiz-prompt.ts — keep the two in sync), so we build
 // it on the client and skip the tutor model call for the FIRST turn. That model
@@ -295,6 +307,23 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // end() idempotent and lets cancel() block a racing end().
   const endStartedRef = useRef(false);
 
+  // ---- Diagnostics (logging only; NO effect on the quiz) -----------------
+  // The "one quiz saved as two records" bug is hard to reproduce, so every saved
+  // session carries breadcrumbs that make the next occurrence self-explaining:
+  //   sessionId — one id per quiz (per start()); two records with the SAME id ⇒
+  //               one quiz that saved twice (the once-guard was bypassed).
+  //   mountId   — one id per component mount; two records with DIFFERENT mountIds
+  //               ⇒ the component remounted between the two saves.
+  //   phaseRef  — the live phase, read at end() time (e.g. "transcribing" is the
+  //               fingerprint of End pressed before an answer was committed).
+  //   breadcrumbs — an ordered event log (start, turns, transcribe, end:called…).
+  const sessionIdRef = useRef<string | null>(null);
+  const mountIdRef = useRef<string>("");
+  const t0Ref = useRef<number>(0); // breadcrumb time origin (ms; set at mount)
+  const endReasonRef = useRef<string>("");
+  const phaseRef = useRef<Phase>("idle");
+  const breadcrumbsRef = useRef<{ t: number; ev: string; info?: string }[]>([]);
+
   // iOS/WebKit needs the opposite recording path from desktop Chrome: it records
   // the RAW mic track fine but does NOT reliably record a Web Audio
   // MediaStreamDestination (which is the desktop workaround for a Chromium bug).
@@ -314,6 +343,14 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     segmentsRef.current = [...segmentsRef.current, seg];
   }
 
+  // Append one diagnostic breadcrumb (see the Diagnostics refs above). `t` is ms
+  // since this mount; capped so a pathological loop can't grow it without bound.
+  function logEvent(ev: string, info?: string) {
+    const list = breadcrumbsRef.current;
+    list.push({ t: Date.now() - t0Ref.current, ev, ...(info ? { info } : {}) });
+    if (list.length > 500) breadcrumbsRef.current = list.slice(-400);
+  }
+
   // Record a failure (its reason is what the teacher sees on the partial). Used
   // by failAndEnd; the latest one wins.
   function recordFailure(reason: string, detail: string) {
@@ -329,6 +366,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // are NOT errors: they stay retry-able and never come here.)
   function failAndEnd(reason: string, detail: string) {
     recordFailure(reason, detail);
+    endReasonRef.current = `fail:${reason}`;
     void end();
   }
 
@@ -405,6 +443,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   async function nextTutorTurn(first: boolean) {
     setNotice("");
     setPhase(first ? "starting" : "thinking");
+    logEvent(first ? "tutor-turn:first" : "tutor-turn:begin");
 
     // FIRST turn: skip the tutor model entirely AND don't speak it. The opening
     // is a fixed script (see openingLine), shown on screen and identical every
@@ -431,12 +470,14 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       appendTurn({ role: "tutor", text: data.text });
       // The index of the tutor line we just added — its slot in the timeline.
       const order = transcriptRef.current.length - 1;
+      logEvent("tutor-turn:ok", `idx=${order}`);
       setPhase("tutorTurn");
       void speak(data.text, order);
     } catch {
       // A mid-quiz turn failed (the first turn can't reach here; it never makes a
       // network call). Save the partial and end automatically rather than
       // stranding the student on a retry screen.
+      logEvent("tutor-turn:fail");
       const n = answersSoFar();
       failAndEnd(
         "tutor-unreachable",
@@ -621,6 +662,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => setRecSeconds((s) => s + 1), 1000);
     startMeterLoop();
+    logEvent("start-speaking", `order=${transcriptRef.current.length} ios=${isIOS}`);
     setPhase("recording");
   }
 
@@ -656,6 +698,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       timerRef.current = null;
     }
     stopMeterLoop();
+    logEvent("stop-speaking", `order=${transcriptRef.current.length} ios=${isIOS}`);
 
     // Collect this answer's clip (iOS: a WAV + its PCM from PCM capture; desktop:
     // the recorder's webm/mp4) and drop it into the teacher's audio timeline at
@@ -675,12 +718,14 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       if (turn) pushSegment({ order: studentOrder, kind: "student", blob: turn.blob });
     }
     if (!turn) {
+      logEvent("stop:no-audio");
       setNotice("I didn't catch any audio. Tap Start speaking to try again.");
       setPhase("tutorTurn");
       return;
     }
 
     setPhase("transcribing");
+    logEvent("transcribe:begin");
     try {
       // Upload the answer clip straight to Blob, then transcribe it from there.
       // Routing the bytes through /api/quiz-transcribe hit Vercel's ~4.5MB
@@ -717,6 +762,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
         // The clip recorded fine (it's already in the teacher's timeline) but
         // OpenAI rejected it. Save the partial and end automatically — the
         // student doesn't have to press anything to keep their work.
+        logEvent("transcribe:http-fail", `status=${res.status}`);
         failAndEnd(
           "transcription-failed",
           `Couldn't transcribe answer ${answersSoFar() + 1} (server returned ${res.status}).`
@@ -725,15 +771,18 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       }
       const text = (data?.text ?? "").trim();
       if (!text) {
+        logEvent("transcribe:empty");
         setNotice("I didn't catch any words — speak a bit louder/closer and tap Start speaking to try again.");
         setPhase("tutorTurn");
         return;
       }
       appendTurn({ role: "student", text });
+      logEvent("transcribe:ok", `chars=${text.length} sTurns=${answersSoFar()}`);
       await nextTutorTurn(false);
     } catch (err) {
       // Covers a failed Blob upload as well as a network error reaching the
       // transcriber — either way it's a genuine error, so save + end.
+      logEvent("transcribe:error");
       console.warn("[voicequiz] transcribe failed", err);
       failAndEnd(
         "transcription-error",
@@ -846,6 +895,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     failureRef.current = null;
     setFailed(false);
     endStartedRef.current = false;
+    // Fresh diagnostics for this quiz (mountId/t0 persist for the whole mount).
+    sessionIdRef.current = newId();
+    endReasonRef.current = "";
+    breadcrumbsRef.current = [];
+    logEvent("start", `session=${sessionIdRef.current} mount=${mountIdRef.current} ios=${isIOS}`);
     setPhase("starting");
 
     try {
@@ -878,7 +932,21 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   }
 
   async function end() {
-    if (endStartedRef.current) return; // ignore a double-click — run once
+    // Diagnostics: record EVERY end() attempt with the live phase + guard state
+    // BEFORE the once-guard can bail. If the split bug recurs we'll see whether a
+    // 2nd end() was blocked (guard worked) or somehow proceeded (guard failed),
+    // and the phase pinpoints an End pressed mid-answer (e.g. "transcribing").
+    const phaseAtEnd = phaseRef.current;
+    const endReason = endReasonRef.current || "unknown";
+    logEvent(
+      "end:called",
+      `phase=${phaseAtEnd} guard=${endStartedRef.current} reason=${endReason} ` +
+        `sTurns=${answersSoFar()} turns=${transcriptRef.current.length} segs=${segmentsRef.current.length}`
+    );
+    if (endStartedRef.current) {
+      logEvent("end:blocked");
+      return; // ignore a double-click / racing end() — run once
+    }
     endStartedRef.current = true;
     setNotice("");
     setReport(null);
@@ -953,6 +1021,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     const failure = failureRef.current;
     const partial = !!failure;
     setGradeStep("active");
+    logEvent("save:begin", `audio=${!!audioUrl} dur=${durationMs ?? "-"} partial=${partial}`);
     try {
       const res = await fetch("/api/quiz-report", {
         method: "POST",
@@ -965,12 +1034,20 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           durationMs,
           partial,
           failure,
+          // Diagnostics (see the Diagnostics refs) — attached to the saved record.
+          sessionId: sessionIdRef.current,
+          mountId: mountIdRef.current,
+          endReason,
+          phaseAtEnd,
+          breadcrumbs: breadcrumbsRef.current,
         }),
       });
+      logEvent("save:done", `status=${res.status}`);
       const data = await res.json().catch(() => null);
       if (data?.report) setReport(data.report as Report);
     } catch {
       // The session still happened; saving is best-effort.
+      logEvent("save:error");
     } finally {
       setGradeStep("done");
       setFinished(true);
@@ -982,6 +1059,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // so reaching this button always means a deliberate, clean discard. The
   // once-guard also blocks a late end() from a double-click race.
   function cancel() {
+    endReasonRef.current = "cancel";
+    logEvent("cancel");
     endStartedRef.current = true;
     close();
   }
@@ -1003,8 +1082,19 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     endStartedRef.current = false;
   }
 
-  // Stop the mic/recorders if the component unmounts mid-session.
-  useEffect(() => () => teardown(), []);
+  // Assign this mount's id + breadcrumb time origin (diagnostics), and stop the
+  // mic/recorders if the component unmounts mid-session.
+  useEffect(() => {
+    mountIdRef.current = newId();
+    t0Ref.current = Date.now();
+    return () => teardown();
+  }, []);
+
+  // Mirror the live phase into a ref so end() can read the true current phase
+  // (for diagnostics) without a stale closure.
+  useEffect(() => {
+    phaseRef.current = phase;
+  }, [phase]);
 
   // Keep the conversation log scrolled to the newest turn.
   const logRef = useRef<HTMLDivElement | null>(null);
@@ -1195,7 +1285,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                 <div className="mt-5 flex items-center gap-3 border-t border-stone-100 pt-4">
                   <button
                     type="button"
-                    onClick={end}
+                    onClick={() => {
+                      endReasonRef.current = "end-button";
+                      void end();
+                    }}
                     className="rounded-lg bg-emerald-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-emerald-700"
                   >
                     End quiz
