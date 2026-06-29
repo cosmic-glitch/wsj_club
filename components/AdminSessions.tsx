@@ -130,7 +130,7 @@ export default function AdminSessions({
                 <div className="flex items-end gap-3 px-2">
                   <span className="w-24 text-right">Student</span>
                   <span className="w-12 text-right">Score</span>
-                  <span className="w-20 text-right">Duration (min)</span>
+                  <span className="w-14 text-right">Mins</span>
                   <span className="w-36 text-right">Time</span>
                 </div>
               </th>
@@ -176,7 +176,7 @@ export default function AdminSessions({
                             <span className="w-12 shrink-0 whitespace-nowrap text-right font-semibold text-sky-700">
                               {fmtScore(score)}
                             </span>
-                            <span className="w-20 shrink-0 whitespace-nowrap text-right tabular-nums text-stone-500">
+                            <span className="w-14 shrink-0 whitespace-nowrap text-right tabular-nums text-stone-500">
                               {fmtDuration(s.durationMs)}
                             </span>
                             <span className="w-36 shrink-0 whitespace-nowrap text-right text-stone-500">
