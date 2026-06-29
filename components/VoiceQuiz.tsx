@@ -295,6 +295,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // end() idempotent and lets cancel() block a racing end().
   const endStartedRef = useRef(false);
 
+  // When the quiz actually began (epoch ms, set once the first question is
+  // ready). end() reads it to record how long the quiz took (durationMs).
+  const startedAtRef = useRef(0);
+
   // iOS/WebKit needs the opposite recording path from desktop Chrome: it records
   // the RAW mic track fine but does NOT reliably record a Web Audio
   // MediaStreamDestination (which is the desktop workaround for a Chromium bug).
@@ -861,6 +865,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       setPhase("error");
       return;
     }
+    // Mic is granted and the first question is about to show — start the clock.
+    startedAtRef.current = Date.now();
     await nextTutorTurn(true);
   }
 
@@ -876,6 +882,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   async function end() {
     if (endStartedRef.current) return; // ignore a double-click — run once
     endStartedRef.current = true;
+    // How long the quiz took — captured now (before upload + grading) so it
+    // measures the quiz itself, not the wrap-up. 0 only if start() never ran.
+    const durationMs = startedAtRef.current ? Date.now() - startedAtRef.current : undefined;
     setNotice("");
     setReport(null);
     setUploadStep("pending");
@@ -955,6 +964,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           studentName: user,
           transcript: transcriptRef.current,
           audioUrl,
+          durationMs,
           partial,
           failure,
         }),
@@ -993,6 +1003,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     failureRef.current = null;
     setFailed(false);
     endStartedRef.current = false;
+    startedAtRef.current = 0;
   }
 
   // Stop the mic/recorders if the component unmounts mid-session.

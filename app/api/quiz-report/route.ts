@@ -35,6 +35,7 @@ export async function POST(request: Request) {
     studentName?: string;
     transcript?: Turn[];
     audioUrl?: string;
+    durationMs?: number;
     partial?: boolean;
     failure?: SessionFailure | null;
   };
@@ -48,6 +49,14 @@ export async function POST(request: Request) {
   const studentName = (body.studentName ?? "").trim() || user;
   const transcript = Array.isArray(body.transcript) ? body.transcript : [];
   const audioUrl = (body.audioUrl ?? "").trim() || undefined;
+  // How long the quiz took (start → "End quiz"), measured client-side. Validate
+  // it's a sane non-negative number and cap it (6h) against a bad client value.
+  const durationMs =
+    typeof body.durationMs === "number" &&
+    Number.isFinite(body.durationMs) &&
+    body.durationMs >= 0
+      ? Math.min(Math.round(body.durationMs), 6 * 60 * 60 * 1000)
+      : undefined;
   // A partial attempt: the quiz ended because of (or was abandoned after) a
   // transcription/tutor failure. We still save whatever was captured — the
   // recording + transcript so far — but flag it so the teacher knows it's
@@ -135,6 +144,7 @@ export async function POST(request: Request) {
     studentName,
     loginUser: user,
     endedAt: new Date().toISOString(),
+    durationMs,
     transcript,
     report,
     audioUrl,

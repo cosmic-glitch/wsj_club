@@ -22,6 +22,9 @@ export type Session = {
   studentName: string;
   loginUser?: string;
   endedAt: string;
+  // How long the quiz actually took (start → "End quiz"), measured client-side.
+  // Older sessions predate it (undefined → shown as "—").
+  durationMs?: number;
   transcript: Turn[];
   report: Report | null;
   audioUrl?: string;
@@ -60,6 +63,17 @@ function fmtLocal(iso: string, mounted: boolean): string {
     hour: "numeric",
     minute: "2-digit",
   });
+}
+
+// How long the quiz took, e.g. "4m 32s" (or "47s" under a minute). "—" when the
+// duration wasn't recorded (older sessions). Spelled out rather than "m:ss" so
+// it can't be misread as a clock time next to the timestamp.
+function fmtDuration(ms?: number): string {
+  if (ms == null || !Number.isFinite(ms) || ms < 0) return "—";
+  const totalSec = Math.round(ms / 1000);
+  const m = Math.floor(totalSec / 60);
+  const s = totalSec % 60;
+  return m > 0 ? `${m}m ${s.toString().padStart(2, "0")}s` : `${s}s`;
 }
 
 export default function AdminSessions({
@@ -128,9 +142,9 @@ export default function AdminSessions({
                       Delete button's "Deleting…") leak onto whatever attempt
                       shifts into its slot. */}
                   {/* Fixed-width columns ("tabbed out") so that, down the list,
-                      every name, every score, and every time line up vertically.
-                      The score column keeps its width even when a score is
-                      missing, so the times still align. */}
+                      every name, score, duration, and time line up vertically.
+                      Each column keeps its width even when its value is missing,
+                      so the rest still align. */}
                   <ol className="space-y-0.5">
                     {g.attempts.map((s) => {
                       const score = s.report?.score;
@@ -146,6 +160,9 @@ export default function AdminSessions({
                             </span>
                             <span className="w-12 shrink-0 whitespace-nowrap font-semibold text-sky-700">
                               {score}
+                            </span>
+                            <span className="w-20 shrink-0 whitespace-nowrap tabular-nums text-stone-500">
+                              {fmtDuration(s.durationMs)}
                             </span>
                             <span className="w-36 shrink-0 whitespace-nowrap text-stone-500">
                               {fmtLocal(s.endedAt, mounted)}
