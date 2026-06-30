@@ -1,0 +1,137 @@
+{
+  "date": "2026-06-30",
+  "title": "Supreme Court Rejects Trump's Bid to Curtail Birthright Citizenship",
+  "articleUrl": "https://www.wsj.com/us-news/law/supreme-court-rejects-trumps-bid-to-curtail-birthright-citizenship-bf386c17",
+  "pdfUrl": "/pdfs/2026-06-30.pdf",
+  "voiceQuiz": true,
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "enshrined",
+      "partOfSpeech": "verb",
+      "articleQuote": "That understanding... was enshrined in the Constitution in 1868.",
+      "inContext": "Here it means the principle of birthright citizenship was written into the Constitution as a permanent, protected rule — not just an ordinary law that's easy to change.",
+      "meaning": "To enshrine something is to fix a right, value, or idea in a place where it is protected and meant to last — like a constitution, a law, or a tradition — treating it as too important to casually undo.",
+      "examples": [
+        "The school's charter enshrines every student's right to appeal a grade, so no single teacher can take it away.",
+        "Fair play is enshrined in the league's rules — even the referees are bound by it."
+      ]
+    },
+    {
+      "word": "contravene",
+      "partOfSpeech": "verb",
+      "articleQuote": "The executive order also seemed to contravene an 1898 Supreme Court decision...",
+      "inContext": "Here it means the order appeared to go directly against — to break — an established 1898 ruling that had already settled the question.",
+      "meaning": "To contravene is to act in conflict with a law, rule, or agreement — to violate or go against it.",
+      "examples": [
+        "Wearing cleats on the gym floor contravenes the posted rules, so the coach sent him to change.",
+        "Posting the exam questions in the group chat contravened the school's honor code."
+      ]
+    },
+    {
+      "word": "revisionist",
+      "partOfSpeech": "adjective",
+      "articleQuote": "...there is scant evidence for this dramatically revisionist view.",
+      "inContext": "Here it describes the administration's new reading of the 14th Amendment as a sweeping rewrite of the long-accepted understanding — a reinterpretation the Court found little support for.",
+      "meaning": "Revisionist describes an attempt to reinterpret an accepted version of history or established facts, often to support a new argument or agenda. It can be neutral (correcting a genuine error) but is frequently used critically, suggesting the rewrite distorts the record.",
+      "examples": [
+        "His revisionist version of the game made it sound like he scored the winner, when he'd actually spent it on the bench.",
+        "Some historians offered a revisionist take on the explorer, arguing he was less hero than opportunist."
+      ]
+    },
+    {
+      "word": "rebuff",
+      "partOfSpeech": "verb",
+      "articleQuote": "The decision rebuffs Trump's bid to upend the deep-rooted understanding...",
+      "inContext": "Here it means the Court flatly rejected — turned back — Trump's attempt to change who automatically counts as a citizen.",
+      "meaning": "To rebuff is to reject or refuse someone or something sharply and decisively, especially an offer, a request, or an attempt to do something.",
+      "examples": [
+        "She rebuffed his suggestion to copy her homework, telling him to do his own.",
+        "The startup's first funding request was rebuffed by every investor in the room."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Judicial review",
+      "articleQuote": "Six justices—three conservatives and three liberals—ruled against Trump, though only five did so on constitutional grounds.",
+      "inContext": "The Court examined the president's executive order and struck it down as conflicting with the Constitution — exactly the power on display in this case.",
+      "meaning": "Judicial review is the power of courts to examine actions by the president or laws passed by the legislature and cancel them if they violate the constitution. It makes the courts a check on the other branches: a rule that clashes with the higher rules of the constitution can be declared invalid and simply stop having any effect."
+    },
+    {
+      "name": "The hierarchy of law (Constitution, statutes, executive orders)",
+      "articleQuote": "...Trump's executive order wasn't unconstitutional but was illegal under a federal law that Congress first enacted in 1940.",
+      "inContext": "Justice Kavanaugh agreed the order had to fall, but on a different rung of the ladder — he said it broke a federal statute, while the majority said it broke the Constitution itself.",
+      "meaning": "Laws come in ranks. A country's constitution sits at the top; statutes passed by the legislature sit below it; and rules issued by the executive branch — like a president's executive order — sit below those. A rule is valid only if it obeys everything above it, so an executive order can be thrown out either for clashing with a statute or for clashing with the constitution — and nothing the president signs can override the constitution."
+    },
+    {
+      "name": "Majority opinion, dissent, and concurrence",
+      "articleQuote": "The court's three most conservative justices dissented.",
+      "inContext": "Chief Justice Roberts wrote the majority opinion that decided the case; Thomas, Alito, and Gorsuch dissented; and Kavanaugh agreed with the result but for his own reason.",
+      "meaning": "When a panel of judges decides a case, the side with the most votes produces the majority opinion, which becomes the binding rule. Judges who disagree write a dissent explaining why — it carries no legal force but can shape future cases. A judge who agrees with the outcome but for different reasons writes a concurrence. Reading which is which tells you not just who won, but how solid and how broad the ruling really is."
+    },
+    {
+      "name": "Precedent (stare decisis)",
+      "articleQuote": "...an 1898 Supreme Court decision that confirmed that U.S.-born children of immigrant parents are entitled to American citizenship.",
+      "inContext": "That 1898 ruling was a precedent — an earlier decision that had already answered this question, and that the new order would have had to overturn.",
+      "meaning": "Precedent is the principle that courts follow their own earlier decisions when a similar question comes up again — captured by the Latin phrase stare decisis, 'to stand by things decided.' It keeps the law predictable and stable: once a high court settles a question, lower courts and later cases are expected to follow it, and overturning a long-standing precedent is treated as a big, rare step."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did the Supreme Court decide in this case?",
+      "options": [
+        "It struck down Trump's attempt to curtail birthright citizenship.",
+        "It upheld Trump's order limiting birthright citizenship.",
+        "It ruled that Congress, not the courts, must settle the issue.",
+        "It postponed the case until after the next election."
+      ],
+      "answerIndex": 0,
+      "explanation": "Six justices rejected the executive order, leaving in place the long-standing rule that nearly everyone born on U.S. soil is a citizen."
+    },
+    {
+      "question": "The article says Trump's order \"seemed to contravene an 1898 Supreme Court decision.\" To contravene something is to —",
+      "options": [
+        "uphold and reinforce it",
+        "go against or violate it",
+        "clarify exactly what it meant",
+        "delay enforcing it"
+      ],
+      "answerIndex": 1,
+      "explanation": "To contravene is to conflict with or break a rule, law, or earlier decision — here, the established 1898 ruling."
+    },
+    {
+      "question": "The administration argued the 14th Amendment had been misread for over a century — a view the majority called \"dramatically revisionist.\" A revisionist view is one that —",
+      "options": [
+        "reinterprets accepted history or facts, often to support a new argument",
+        "strictly follows the original, long-accepted understanding",
+        "refuses to take any position at all",
+        "applies only to very recent events"
+      ],
+      "answerIndex": 0,
+      "explanation": "Revisionist describes a reinterpretation of an established account of history or facts — here, a rewrite of the long-settled reading of the amendment."
+    },
+    {
+      "question": "The Court was able to cancel the president's executive order because it conflicted with the Constitution. This power of courts to overturn government actions that violate the constitution is called —",
+      "options": [
+        "executive privilege",
+        "due process",
+        "judicial review",
+        "federalism"
+      ],
+      "answerIndex": 2,
+      "explanation": "Judicial review lets courts strike down executive or legislative actions that violate the constitution, acting as a check on the other branches."
+    },
+    {
+      "question": "Justice Kavanaugh agreed the order should be blocked, but for a different reason than the majority — that it broke a 1940 law, not the Constitution. An opinion that agrees with the outcome but offers different reasoning is a —",
+      "options": [
+        "dissent",
+        "precedent",
+        "veto",
+        "concurrence"
+      ],
+      "answerIndex": 3,
+      "explanation": "A concurrence agrees with the result but reaches it by a different legal path; a dissent, by contrast, disagrees with the result entirely."
+    }
+  ]
+}
