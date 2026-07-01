@@ -1,0 +1,119 @@
+{
+  "date": "2026-07-01",
+  "title": "For the First Time, a Cell Built From Scratch Grows and Divides",
+  "articleUrl": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/",
+  "voiceQuiz": true,
+  "source": "Quanta Magazine",
+  "vocab": [
+    {
+      "word": "watershed",
+      "partOfSpeech": "noun",
+      "articleQuote": "I think it will prove to be a watershed event for the synthetic-cell field and biology in general.",
+      "inContext": "A scientist means the synthetic cell is a landmark moment that separates everything that came before it from what comes after — a decisive turning point for the whole field.",
+      "meaning": "A watershed is an event or moment that marks an important dividing line or turning point, after which things are meaningfully different. (It originally named the ridge of high ground that separates two river systems.)",
+      "examples": [
+        "Getting her own phone was a watershed moment — after that, she was texting friends every night.",
+        "The invention of the printing press was a watershed in human history, putting books within reach of ordinary people."
+      ]
+    },
+    {
+      "word": "moniker",
+      "partOfSpeech": "noun",
+      "articleQuote": "her students and others started calling them Adamala cells — a moniker she hated.",
+      "inContext": "The name \"Adamala cells\" was a moniker — a nickname — that the scientist disliked, so her students switched to calling the cells \"spudcells\" instead.",
+      "meaning": "A moniker is a name or nickname given to a person or thing, usually an informal one.",
+      "examples": [
+        "Because he could sink a shot from anywhere on the court, his teammates gave him the moniker \"Sniper.\"",
+        "The city's moniker, \"the Big Apple,\" is far more famous than its official name."
+      ]
+    },
+    {
+      "word": "tour de force",
+      "partOfSpeech": "noun",
+      "articleQuote": "It is \"a synthetic biology tour de force,\" he said.",
+      "inContext": "An outside scientist calls the work a tour de force because it wove together many difficult techniques into one system that actually worked — an outstanding display of skill.",
+      "meaning": "A tour de force is an impressive feat or performance pulled off through great skill, mastery, or effort. (It's a French phrase, literally \"feat of strength.\")",
+      "examples": [
+        "Her final piano recital was a tour de force — twenty minutes of demanding music played flawlessly from memory.",
+        "The film's opening, shot in a single unbroken take, is a technical tour de force that took weeks to rehearse."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The central dogma (DNA → RNA → protein)",
+      "articleQuote": "They transcribe their DNA into RNA and then make proteins to carry out these tasks.",
+      "inContext": "To build a working cell, the team had to recreate this basic flow of information — the cell reads its DNA, copies it into RNA, and uses that copy to build the proteins that do the cell's jobs.",
+      "meaning": "In every living thing, genetic information flows mainly in one direction: DNA is transcribed into RNA, and RNA is translated into proteins, the molecules that actually do a cell's work. Think of DNA as the master instruction manual kept safe, RNA as a working photocopy of one page, and proteins as the machines built from those instructions. This single idea underlies almost all of molecular biology."
+    },
+    {
+      "name": "The cell cycle",
+      "articleQuote": "The lab-made synthetic cell grew, replicated its DNA, and divided, demonstrating the basic functions of a cell cycle.",
+      "inContext": "The synthetic cell managed the core steps every cell goes through — growing larger, copying its DNA, and splitting in two — which is why the scientists say it carried out a cell cycle.",
+      "meaning": "The cell cycle is the repeating sequence a cell runs through to reproduce: it grows, duplicates its DNA so each new cell gets a full copy, and then divides into two daughter cells. It is how one fertilized egg becomes an entire body and how a cut heals — essentially all growth in living things is cells running this cycle over and over."
+    },
+    {
+      "name": "Natural selection",
+      "articleQuote": "not quite natural selection, the primary mechanism that drives evolutionary change, in which organisms that are better adapted to their environment are more likely to survive.",
+      "inContext": "The team could make some cells grow bigger and leave more offspring, but that was not true natural selection: they created the variation by hand, and their DNA-copying enzyme was too accurate to throw off the random mutations real evolution runs on.",
+      "meaning": "Natural selection is the engine of evolution: a population contains random, inherited variation, and individuals whose traits happen to fit their environment tend to survive and reproduce more, so those traits spread over generations. The essential ingredients are variation that is both random (not designed) and heritable (passed to offspring) — take away either one and you get no evolution, which is exactly what was missing in the synthetic cell."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did Kate Adamala's synthetic cell actually accomplish?",
+      "options": [
+        "It came fully alive and could survive on its own with no outside help.",
+        "It grew, copied its DNA, and divided into daughter cells.",
+        "It evolved into a brand-new species of bacteria.",
+        "It learned to manufacture its own ribosomes and food from scratch."
+      ],
+      "answerIndex": 1,
+      "explanation": "The cell carried out the basic steps of a cell cycle — growing, replicating its DNA, and dividing — but it still depends on outside supplies and is not considered alive."
+    },
+    {
+      "question": "According to the central dogma of molecular biology, in what order does genetic information normally flow?",
+      "options": [
+        "Protein → RNA → DNA",
+        "RNA → DNA → protein",
+        "DNA → RNA → protein",
+        "DNA → protein → RNA"
+      ],
+      "answerIndex": 2,
+      "explanation": "DNA is transcribed into RNA, and RNA is translated into proteins — master instructions to working copy to machine."
+    },
+    {
+      "question": "The scientists said their cells were NOT yet undergoing true natural selection mainly because —",
+      "options": [
+        "the cells never actually divided",
+        "the variation was created by hand rather than arising from random, heritable mutations",
+        "the cells were already too perfectly adapted to their environment",
+        "natural selection can only happen in animals, not in single cells"
+      ],
+      "answerIndex": 1,
+      "explanation": "Natural selection needs random, inherited variation; the team introduced changes deliberately, and their DNA-copying enzyme was too accurate to produce real mutations."
+    },
+    {
+      "question": "A researcher calls the achievement \"a watershed event\" for biology. What does watershed mean here?",
+      "options": [
+        "A minor, easily forgotten setback",
+        "A major turning point that divides before from after",
+        "A costly and wasteful mistake",
+        "A discovery deliberately kept secret from the public"
+      ],
+      "answerIndex": 1,
+      "explanation": "A watershed is a decisive turning point after which things are meaningfully different."
+    },
+    {
+      "question": "Adamala disliked the moniker \"Adamala cells,\" so her students renamed them \"spudcells.\" A moniker is —",
+      "options": [
+        "a scientific measurement",
+        "a name or nickname",
+        "a written apology",
+        "a type of container"
+      ],
+      "answerIndex": 1,
+      "explanation": "A moniker is a name or nickname, often an informal one — here, the playful \"spudcells.\""
+    }
+  ]
+}
