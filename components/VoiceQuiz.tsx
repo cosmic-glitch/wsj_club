@@ -50,6 +50,17 @@ type StepState = "pending" | "active" | "done";
 // How many bars the live recording meter shows (a short history of mic levels).
 const METER_BARS = 24;
 
+// Safety valve for a `done` signal that never fires. "End quiz" only appears once
+// the tutor signals the quiz is complete, so if that signal never arrives the
+// student could be trapped answering forever. If the transcript grows past this
+// (a normal quiz is ~14 turns), we auto-save a partial and end. See stopSpeaking.
+const MAX_TURNS = 24;
+
+// A tutor-turn or transcribe fetch that hangs longer than this is treated as a
+// failure → auto partial save + clean end. Since strict End-gating removes the
+// manual escape hatch, this guarantees a stuck quiz still ends and saves.
+const FETCH_TIMEOUT_MS = 60_000;
+
 function StepIcon({ state }: { state: StepState }) {
   return (
     <span className="flex h-4 w-4 shrink-0 items-center justify-center">
@@ -303,9 +314,33 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const levelsRef = useRef<number[]>(new Array(METER_BARS).fill(0));
 
-  // The quiz ends only when the student clicks "End quiz". This once-guard keeps
-  // end() idempotent and lets cancel() block a racing end().
+  // The quiz ends only when the student clicks "End quiz" (once the tutor is done)
+  // or an internal failure/hang/backstop finalizes it. This once-guard keeps the
+  // save idempotent and lets cancel() block a racing finalize.
   const endStartedRef = useRef(false);
+
+  // ---- Run/lifecycle fencing (so a stale async op can't mutate a newer quiz) --
+  // Each quiz is one "run", identified by a generation token bumped on
+  // start()/close()/unmount. Every async step captures its runId and, after each
+  // await, bails if the run has moved on (Cancel/close/unmount) — otherwise a slow
+  // transcribe/turn/TTS from an abandoned quiz could append/speak into a new one.
+  const activeRunIdRef = useRef(0); // generation; bumped in start()/close()/unmount
+  const endingRef = useRef(false); // this run is terminating (set at finalize/cancel)
+  const mountedRef = useRef(true); // false after unmount
+  const turnAbortRef = useRef<AbortController | null>(null); // quiz-turn + TTS fetches
+  const transcribeAbortRef = useRef<AbortController | null>(null); // upload + transcribe
+
+  // Set once the tutor signals the quiz is complete (`done` from /api/quiz-turn,
+  // or the exact wrap-up phrase). ONLY then does "End quiz" appear and "Start
+  // speaking" hide — so End can never fire mid-turn, the root of the data-loss bug.
+  const [tutorDone, setTutorDone] = useState(false);
+
+  // True while this run is the current, mounted one. False after Cancel/close (the
+  // generation bumped) or unmount — the signal to discard a resolving async op.
+  const isSameRun = (runId: number) =>
+    activeRunIdRef.current === runId && mountedRef.current;
+  // True while it's still safe to advance this run (same run AND not terminating).
+  const canContinue = (runId: number) => isSameRun(runId) && !endingRef.current;
 
   // ---- Diagnostics (logging only; NO effect on the quiz) -----------------
   // The "one quiz saved as two records" bug is hard to reproduce, so every saved
@@ -314,8 +349,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   //               one quiz that saved twice (the once-guard was bypassed).
   //   mountId   — one id per component mount; two records with DIFFERENT mountIds
   //               ⇒ the component remounted between the two saves.
-  //   phaseRef  — the live phase, read at end() time (e.g. "transcribing" is the
-  //               fingerprint of End pressed before an answer was committed).
+  //   phaseRef  — the live phase, read at finalize time (a "fail:*" endReason at a
+  //               non-tutorTurn phase is expected; "end-button" should only ever be
+  //               at tutorTurn with the tutor done — anything else = a bypassed gate).
   //   breadcrumbs — an ordered event log (start, turns, transcribe, end:called…).
   const sessionIdRef = useRef<string | null>(null);
   const mountIdRef = useRef<string>("");
@@ -358,16 +394,17 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setFailed(true);
   }
 
-  // A genuine error during the quiz (transcription rejected, tutor unreachable):
-  // record it and IMMEDIATELY end the session. end() reads failureRef, so the
-  // partial conversation (transcript + recording so far) is saved automatically
-  // and the student lands on the wrap-up screen — no Retry / Save & exit press.
-  // (Soft "didn't catch that" cases — no audio captured, or a blank transcript —
-  // are NOT errors: they stay retry-able and never come here.)
+  // A genuine error/hang/backstop during the quiz (transcription rejected, tutor
+  // unreachable, fetch timed out, runaway): record it and IMMEDIATELY finalize a
+  // PARTIAL. finalizeQuiz reads failureRef, so the partial conversation (transcript
+  // + recording so far) is saved automatically and the student lands on the wrap-up
+  // screen — no button press. Unlike the user's End button, this is NOT gated on the
+  // tutor being done — it saves whatever's captured, from any phase. (Soft "didn't
+  // catch that" cases — no audio captured, or a blank transcript — are NOT errors:
+  // they stay retry-able and never come here.)
   function failAndEnd(reason: string, detail: string) {
     recordFailure(reason, detail);
-    endReasonRef.current = `fail:${reason}`;
-    void end();
+    void finalizeQuiz(`fail:${reason}`);
   }
 
   // Count the student's answers captured so far (used to label failures).
@@ -409,18 +446,28 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // screen, so the quiz simply continues silently for that turn. `order` is the
   // line's position in the conversation — we drop its mp3 into the audio timeline
   // so the teacher's recording includes the tutor's questions, in sequence.
-  async function speak(text: string, order?: number) {
+  async function speak(text: string, order: number, runId: number) {
     stopTts();
     setTtsPlaying(true);
+    // Capture the run's abort controller ONCE (never re-read after an await); a
+    // finalize/cancel aborts it to cut off a trailing wrap-up TTS.
+    const turnAbort = turnAbortRef.current;
     try {
       const res = await fetch("/api/quiz-tts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
+        signal: turnAbort?.signal,
       });
       if (!res.ok) throw new Error("tts");
       const blob = await res.blob();
-      if (order != null) pushSegment({ order, kind: "tutor", blob });
+      // The quiz ended (End/Cancel/unmount) while the TTS was in flight — don't add
+      // a late segment or start audio after teardown.
+      if (!canContinue(runId)) {
+        setTtsPlaying(false);
+        return;
+      }
+      pushSegment({ order, kind: "tutor", blob });
       const url = URL.createObjectURL(blob);
       ttsUrlRef.current = url;
       const el = audioElRef.current;
@@ -439,8 +486,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // ---- Tutor turns (the loop) --------------------------------------------
 
   // Ask the server for the tutor's next line, given the transcript so far, then
-  // show + speak it. `first` is the opening greeting/question.
-  async function nextTutorTurn(first: boolean) {
+  // show + speak it. `first` is the opening greeting/question. `runId` fences the
+  // async work so a stale turn can't resurrect an ended quiz.
+  async function nextTutorTurn(first: boolean, runId: number) {
     setNotice("");
     setPhase(first ? "starting" : "thinking");
     logEvent(first ? "tutor-turn:first" : "tutor-turn:begin");
@@ -457,32 +505,58 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       return;
     }
 
+    // Capture the run's abort controller once. A timeout (a genuine hang) aborts
+    // it too, so we track `timedOut` to tell that apart from a Cancel/finalize.
+    const turnAbort = turnAbortRef.current;
+    let timedOut = false;
+    const timeout = setTimeout(() => {
+      timedOut = true;
+      turnAbort?.abort();
+    }, FETCH_TIMEOUT_MS);
     try {
       const res = await fetch("/api/quiz-turn", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ date, studentName: user, transcript: transcriptRef.current }),
+        signal: turnAbort?.signal,
       });
+      clearTimeout(timeout);
       const data = await res.json().catch(() => null);
       if (!res.ok || !data?.text) {
         throw new Error(data?.error ?? "Could not get the next question.");
       }
+      // The quiz ended/was cancelled while this turn was in flight — discard it.
+      if (!canContinue(runId)) return;
       appendTurn({ role: "tutor", text: data.text });
       // The index of the tutor line we just added — its slot in the timeline.
       const order = transcriptRef.current.length - 1;
-      logEvent("tutor-turn:ok", `idx=${order}`);
+      const done = data.done === true;
+      logEvent("tutor-turn:ok", `idx=${order} done=${done}`);
+      // The tutor wrapped up → reveal "End quiz", hide "Start speaking".
+      if (done) setTutorDone(true);
       setPhase("tutorTurn");
-      void speak(data.text, order);
-    } catch {
-      // A mid-quiz turn failed (the first turn can't reach here; it never makes a
-      // network call). Save the partial and end automatically rather than
-      // stranding the student on a retry screen.
-      logEvent("tutor-turn:fail");
+      void speak(data.text, order, runId);
+    } catch (err) {
+      clearTimeout(timeout);
+      // Cancelled/ended/unmounted while awaiting → silently discard (not a failure).
+      if (!canContinue(runId)) return;
       const n = answersSoFar();
-      failAndEnd(
-        "tutor-unreachable",
-        `Couldn't load the next question after ${n} answer${n === 1 ? "" : "s"}.`
-      );
+      if (timedOut) {
+        logEvent("tutor-turn:fail", "timeout");
+        failAndEnd(
+          "tutor-timeout",
+          `The tutor didn't respond in time after ${n} answer${n === 1 ? "" : "s"}.`
+        );
+      } else {
+        // A mid-quiz turn failed (the first turn can't reach here; it never makes a
+        // network call). Save the partial and end automatically rather than
+        // stranding the student on a retry screen.
+        logEvent("tutor-turn:fail", (err as Error)?.name);
+        failAndEnd(
+          "tutor-unreachable",
+          `Couldn't load the next question after ${n} answer${n === 1 ? "" : "s"}.`
+        );
+      }
     }
   }
 
@@ -617,7 +691,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // student's answer off the Web Audio graph; the live meter + timer make it
   // obvious the mic is hot.
   async function startSpeaking() {
-    if (phase !== "tutorTurn") return;
+    // No new answers once the tutor is done (End quiz is the only next step).
+    if (phase !== "tutorTurn" || tutorDone) return;
+    const runId = activeRunIdRef.current;
     setNotice("");
     stopTts(); // if the tutor is still talking, the student is taking over
     // iOS records via raw-PCM capture (MediaRecorder is unreliable there);
@@ -627,6 +703,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
         await iosStartCapture();
       } catch (err) {
         console.warn("[voicequiz] iOS capture failed", err);
+        if (!canContinue(runId)) return;
         setNotice("Couldn't start the microphone. Please allow mic access and try again.");
         return;
       }
@@ -640,6 +717,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
         console.warn("[voicequiz] audio graph failed", err);
       }
       if (!graph) {
+        if (!canContinue(runId)) return;
         setNotice("Couldn't start audio. Please check microphone access and try again.");
         return;
       }
@@ -658,6 +736,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       }
     }
 
+    // The quiz was cancelled/ended while the mic was being set up — don't flip to
+    // the recording UI (teardown has already stopped the capture graph).
+    if (!canContinue(runId)) return;
     setRecSeconds(0);
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => setRecSeconds((s) => s + 1), 1000);
@@ -690,9 +771,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   }
 
   // "Stop" — finish the answer: stop the recorder, transcribe the clip, show it,
-  // then ask for the tutor's next line.
+  // then ask for the tutor's next line. `runId` fences the async work so a stale
+  // answer can't append into an ended/cancelled quiz.
   async function stopSpeaking() {
     if (phase !== "recording") return;
+    const runId = activeRunIdRef.current;
     if (timerRef.current) {
       clearInterval(timerRef.current);
       timerRef.current = null;
@@ -726,6 +809,14 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
     setPhase("transcribing");
     logEvent("transcribe:begin");
+    // A timeout on the upload + transcribe: a genuine hang becomes a failure →
+    // auto partial save. Track `timedOut` to tell it apart from a Cancel/finalize.
+    const transcribeAbort = transcribeAbortRef.current;
+    let timedOut = false;
+    const timeout = setTimeout(() => {
+      timedOut = true;
+      transcribeAbort?.abort();
+    }, FETCH_TIMEOUT_MS);
     try {
       // Upload the answer clip straight to Blob, then transcribe it from there.
       // Routing the bytes through /api/quiz-transcribe hit Vercel's ~4.5MB
@@ -750,14 +841,24 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           handleUploadUrl: "/api/quiz-audio",
           contentType,
           clientPayload: JSON.stringify({ date }),
+          abortSignal: transcribeAbort?.signal,
         }
       );
+      // Cancelled/ended/unmounted during the upload — discard silently.
+      if (!canContinue(runId)) {
+        clearTimeout(timeout);
+        return;
+      }
       const res = await fetch("/api/quiz-transcribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ date, blobUrl: uploaded.url }),
+        signal: transcribeAbort?.signal,
       });
+      clearTimeout(timeout);
       const data = await res.json().catch(() => null);
+      // Cancelled/ended while the transcribe was in flight — discard silently.
+      if (!canContinue(runId)) return;
       if (!res.ok) {
         // The clip recorded fine (it's already in the teacher's timeline) but
         // OpenAI rejected it. Save the partial and end automatically — the
@@ -778,16 +879,38 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       }
       appendTurn({ role: "student", text });
       logEvent("transcribe:ok", `chars=${text.length} sTurns=${answersSoFar()}`);
-      await nextTutorTurn(false);
+      // Runaway backstop: the tutor never signalled `done` and the transcript has
+      // grown unreasonably long. Auto-save a partial and end rather than trapping
+      // the student answering forever (End quiz is gated on `done`, §5 of the plan).
+      if (transcriptRef.current.length >= MAX_TURNS) {
+        logEvent("backstop:max-turns", `turns=${transcriptRef.current.length}`);
+        failAndEnd(
+          "quiz-runaway",
+          "The quiz ran unusually long without wrapping up, so we saved what we have."
+        );
+        return;
+      }
+      await nextTutorTurn(false, runId);
     } catch (err) {
-      // Covers a failed Blob upload as well as a network error reaching the
-      // transcriber — either way it's a genuine error, so save + end.
-      logEvent("transcribe:error");
+      clearTimeout(timeout);
+      // Cancelled/ended/unmounted while awaiting → silently discard (not a failure).
+      if (!canContinue(runId)) return;
       console.warn("[voicequiz] transcribe failed", err);
-      failAndEnd(
-        "transcription-error",
-        `Network error transcribing answer ${answersSoFar() + 1}.`
-      );
+      if (timedOut) {
+        logEvent("transcribe:error", "timeout");
+        failAndEnd(
+          "transcription-timeout",
+          `Transcribing answer ${answersSoFar() + 1} timed out.`
+        );
+      } else {
+        // Covers a failed Blob upload as well as a network error reaching the
+        // transcriber — either way it's a genuine error, so save + end.
+        logEvent("transcribe:error", (err as Error)?.name);
+        failAndEnd(
+          "transcription-error",
+          `Network error transcribing answer ${answersSoFar() + 1}.`
+        );
+      }
     }
   }
 
@@ -895,6 +1018,14 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     failureRef.current = null;
     setFailed(false);
     endStartedRef.current = false;
+    // A new run: bump the generation so any straggler from a prior quiz is fenced
+    // out, clear the terminating flag + the done gate, and arm fresh abort
+    // controllers for this run's fetches.
+    const runId = (activeRunIdRef.current += 1);
+    endingRef.current = false;
+    setTutorDone(false);
+    turnAbortRef.current = new AbortController();
+    transcribeAbortRef.current = new AbortController();
     // Fresh diagnostics for this quiz (mountId/t0 persist for the whole mount).
     sessionIdRef.current = newId();
     endReasonRef.current = "";
@@ -905,6 +1036,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     try {
       // Mic permission — this click is the user gesture that also lets audio play.
       const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
+      // Cancelled/closed/unmounted during the permission prompt — release + bail.
+      if (!isSameRun(runId)) {
+        mic.getTracks().forEach((t) => t.stop());
+        return;
+      }
       // iOS re-acquires a fresh mic for each answer (a long-lived track gets
       // muted after the tutor's audio plays), so we only need this to prompt for
       // permission up front — release it immediately. Desktop keeps it.
@@ -915,11 +1051,12 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
         micRef.current = mic;
       }
     } catch {
+      if (!isSameRun(runId)) return;
       setError("Microphone access is needed for the voice quiz. Please allow it and try again.");
       setPhase("error");
       return;
     }
-    await nextTutorTurn(true);
+    await nextTutorTurn(true, runId);
   }
 
   // The button click — preserves the user gesture (no awaits before start()).
@@ -931,23 +1068,43 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     start();
   }
 
-  async function end() {
-    // Diagnostics: record EVERY end() attempt with the live phase + guard state
-    // BEFORE the once-guard can bail. If the split bug recurs we'll see whether a
-    // 2nd end() was blocked (guard worked) or somehow proceeded (guard failed),
-    // and the phase pinpoints an End pressed mid-answer (e.g. "transcribing").
+  // The student's "End quiz" button. Allowed ONLY at the true end — once the tutor
+  // has signalled the quiz is done. The UI hides End otherwise (Start speaking is
+  // shown instead), and this guard makes that structural: End can never fire
+  // mid-turn, which is what made the old end()-races-the-loop data loss possible.
+  function userEnd() {
+    if (phase !== "tutorTurn" || !tutorDone) return;
+    void finalizeQuiz("end-button");
+  }
+
+  // The single, once-guarded save/teardown path. Reached by userEnd (gated) and
+  // failAndEnd (an internal failure/hang/backstop, any phase). `reason` becomes
+  // the saved endReason and tells the two apart in diagnostics. Because End can't
+  // fire mid-turn and an internal finalize just saves whatever's captured, there
+  // is no in-flight turn to reconcile here — no recorder closeout, no settle.
+  async function finalizeQuiz(reason: string) {
+    endReasonRef.current = reason;
+    // Diagnostics: record EVERY finalize attempt with the live phase + guard state
+    // BEFORE the once-guard can bail. If the "saved twice" bug recurs we'll see
+    // whether a 2nd finalize was blocked (guard worked) or proceeded (guard
+    // failed). An end:called at phase=tutorTurn with reason=end-button is expected;
+    // a reason starting "fail:" is valid at ANY phase (failure/hang/backstop).
     const phaseAtEnd = phaseRef.current;
-    const endReason = endReasonRef.current || "unknown";
     logEvent(
       "end:called",
-      `phase=${phaseAtEnd} guard=${endStartedRef.current} reason=${endReason} ` +
+      `phase=${phaseAtEnd} guard=${endStartedRef.current} reason=${reason} ` +
         `sTurns=${answersSoFar()} turns=${transcriptRef.current.length} segs=${segmentsRef.current.length}`
     );
     if (endStartedRef.current) {
       logEvent("end:blocked");
-      return; // ignore a double-click / racing end() — run once
+      return; // ignore a double-click / racing finalize — run once
     }
     endStartedRef.current = true;
+    endingRef.current = true;
+    // Cut off a trailing wrap-up TTS (or any straggling turn/transcribe) so nothing
+    // resolves back into the quiz after we start saving.
+    turnAbortRef.current?.abort();
+    transcribeAbortRef.current?.abort();
     setNotice("");
     setReport(null);
     setUploadStep("pending");
@@ -955,26 +1112,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setFinished(false);
     setPhase("wrapup");
 
-    // If they hit End quiz mid-answer, close out that clip and keep it.
     if (timerRef.current) {
       clearInterval(timerRef.current);
       timerRef.current = null;
     }
     stopMeterLoop();
-    // Close out an in-progress answer (if they pressed End mid-recording) so it's
-    // included in the teacher's stitched file, at the slot after the last tutor line.
-    if (phase === "recording") {
-      const lastOrder = transcriptRef.current.length;
-      if (isIOS) {
-        const cap = iosStopCapture();
-        if (cap) pushSegment({ order: lastOrder, kind: "student", pcm: cap.pcm });
-      } else {
-        const lastTurn = await stopTurnRecorder();
-        if (lastTurn && lastTurn.blob.size > 0) {
-          pushSegment({ order: lastOrder, kind: "student", blob: lastTurn.blob });
-        }
-      }
-    }
     const session = await buildTeacherFile();
     // The recording's length — saved as the session's duration (shown in the
     // Scores table). undefined when nothing was recorded → table shows "—".
@@ -1037,7 +1179,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           // Diagnostics (see the Diagnostics refs) — attached to the saved record.
           sessionId: sessionIdRef.current,
           mountId: mountIdRef.current,
-          endReason,
+          endReason: reason,
           phaseAtEnd,
           breadcrumbs: breadcrumbsRef.current,
         }),
@@ -1061,11 +1203,21 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   function cancel() {
     endReasonRef.current = "cancel";
     logEvent("cancel");
+    // Mark the run terminating + spent so a straggling async op discards, and a
+    // racing finalize is blocked by the once-guard. Abort in-flight fetches too.
+    endingRef.current = true;
     endStartedRef.current = true;
+    turnAbortRef.current?.abort();
+    transcribeAbortRef.current?.abort();
     close();
   }
 
   function close() {
+    // New generation → fence any straggler still resolving from this run; clear
+    // the terminating flag + the done gate so the next quiz starts clean.
+    activeRunIdRef.current += 1;
+    endingRef.current = false;
+    setTutorDone(false);
     teardown();
     setPhase("idle");
     setError("");
@@ -1087,11 +1239,19 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   useEffect(() => {
     mountIdRef.current = newId();
     t0Ref.current = Date.now();
-    return () => teardown();
+    return () => {
+      // Fence every in-flight async op against this mount, abort pending fetches,
+      // and release the mic/recorders.
+      mountedRef.current = false;
+      activeRunIdRef.current += 1;
+      turnAbortRef.current?.abort();
+      transcribeAbortRef.current?.abort();
+      teardown();
+    };
   }, []);
 
-  // Mirror the live phase into a ref so end() can read the true current phase
-  // (for diagnostics) without a stale closure.
+  // Mirror the live phase into a ref so finalizeQuiz can read the true current
+  // phase (for diagnostics) without a stale closure.
   useEffect(() => {
     phaseRef.current = phase;
   }, [phase]);
@@ -1223,16 +1383,29 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                           Tutor is speaking…
                         </p>
                       )}
-                      <div className="flex flex-wrap items-center gap-3">
-                        <button
-                          type="button"
-                          onClick={startSpeaking}
-                          className="rounded-lg bg-sky-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-700"
-                        >
-                          🎙 Start speaking
-                        </button>
-                      </div>
-                      <RecordingHelp />
+                      {/* Until the tutor signals it's done, the only move is to
+                          answer. Once done, Start speaking hides and the End quiz
+                          button (below) is the way to finish. */}
+                      {!tutorDone ? (
+                        <>
+                          <div className="flex flex-wrap items-center gap-3">
+                            <button
+                              type="button"
+                              onClick={startSpeaking}
+                              className="rounded-lg bg-sky-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-700"
+                            >
+                              🎙 Start speaking
+                            </button>
+                          </div>
+                          <RecordingHelp />
+                        </>
+                      ) : (
+                        <p className="text-sm text-stone-600">
+                          You’re all done — press{" "}
+                          <span className="font-semibold text-emerald-700">End quiz</span>{" "}
+                          to finish and see your report.
+                        </p>
+                      )}
                     </>
                   )}
 
@@ -1281,18 +1454,19 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                   )}
                 </div>
 
-                {/* End / Cancel are always available during a live quiz. */}
+                {/* End quiz appears ONLY once the tutor has wrapped up (tutorDone),
+                    so it can never truncate an in-flight turn. Cancel (a clean
+                    discard) is always available as the way to stop early. */}
                 <div className="mt-5 flex items-center gap-3 border-t border-stone-100 pt-4">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      endReasonRef.current = "end-button";
-                      void end();
-                    }}
-                    className="rounded-lg bg-emerald-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-emerald-700"
-                  >
-                    End quiz
-                  </button>
+                  {phase === "tutorTurn" && tutorDone && (
+                    <button
+                      type="button"
+                      onClick={userEnd}
+                      className="rounded-lg bg-emerald-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700"
+                    >
+                      End quiz
+                    </button>
+                  )}
                   <button
                     type="button"
                     onClick={cancel}

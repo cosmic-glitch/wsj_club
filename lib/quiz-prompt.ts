@@ -224,6 +224,19 @@ ${
 
 Keep the whole quiz focused and unhurried. The greeting is already done; pick up
 from the student's latest answer.
+
+YOUR RESPONSE FORMAT (IMPORTANT)
+Reply with a single JSON object and nothing else, in exactly this shape:
+  {"text": "<the one line you want spoken to ${name} this turn>", "done": false}
+- "text" is the ONLY thing the student hears and sees. Everything in the style
+  guide applies to it: plain, natural spoken sentences, one question at a time, no
+  markdown, symbols, or field names inside it.
+- "done" is a boolean that tells the app whether the quiz is over. Keep it false on
+  every ordinary turn. Set it to true ONLY on your very last turn — the wrap-up
+  whose text ends with the exact words "The quiz is done. You can press the End Quiz
+  button." Never set "done" true before you have finished the key ideas${
+    hasConcepts ? ", all the vocabulary, and the concepts" : " and all the vocabulary"
+  }.
 `.trim();
 }
 

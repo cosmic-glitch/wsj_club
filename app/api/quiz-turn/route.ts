@@ -9,7 +9,33 @@ import { buildInstructions } from "@/lib/quiz-prompt";
 // Socratic judgment if ever needed — volume is tiny.
 const TUTOR_MODEL = process.env.TUTOR_MODEL || "gpt-5.4-mini";
 
+// The exact wrap-up sentence the tutor is instructed to end with. It doubles as a
+// backup "the quiz is done" signal: if the model's reply isn't valid JSON (or it
+// forgets the `done` flag), the presence of this phrase in the spoken line still
+// marks the quiz complete. Keep it in sync with buildInstructions in lib/quiz-prompt.ts.
+const WRAP_UP_PHRASE = "The quiz is done. You can press the End Quiz button.";
+
 type Turn = { role: "student" | "tutor"; text: string };
+
+// Parse one tutor reply into the spoken line + the done flag. The model is asked
+// to return {"text","done"} JSON (response_format json_object), but we stay
+// defensive: if it isn't valid JSON we treat the raw content as the spoken line,
+// and either way the exact wrap-up phrase is a backup signal for done.
+function parseTutorReply(content: string): { text: string; done: boolean } {
+  let text = content.trim();
+  let done = false;
+  try {
+    const parsed = JSON.parse(content);
+    if (parsed && typeof parsed === "object") {
+      if (typeof parsed.text === "string") text = parsed.text.trim();
+      done = parsed.done === true;
+    }
+  } catch {
+    // Not JSON — fall back to the raw content as the spoken line.
+  }
+  if (!done && text.includes(WRAP_UP_PHRASE)) done = true;
+  return { text, done };
+}
 
 /**
  * The turn-by-turn brain of the voice quiz. Given the running transcript so far,
@@ -71,33 +97,60 @@ export async function POST(request: Request) {
   }
 
   try {
-    const res = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ model: TUTOR_MODEL, messages }),
-    });
-    if (!res.ok) {
-      console.error(
-        "Tutor turn failed:",
-        res.status,
-        "user:",
-        user,
-        "turns:",
-        transcript.length,
-        await res.text()
-      );
+    // The `done` flag is what gates the client's "End quiz" button, so an empty
+    // completion (a transient OpenAI hiccup — finish_reason "stop" with blank
+    // content) must not end the quiz prematurely: retry the request once before
+    // giving up with a 502.
+    let reply: { text: string; done: boolean } | null = null;
+    for (let attempt = 0; attempt < 2 && !reply; attempt++) {
+      const res = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          model: TUTOR_MODEL,
+          response_format: { type: "json_object" },
+          messages,
+        }),
+      });
+      if (!res.ok) {
+        console.error(
+          "Tutor turn failed:",
+          res.status,
+          "user:",
+          user,
+          "turns:",
+          transcript.length,
+          "attempt:",
+          attempt,
+          await res.text()
+        );
+        return Response.json({ error: "Could not get the next question." }, { status: 502 });
+      }
+      const data = await res.json();
+      const content = data.choices?.[0]?.message?.content ?? "";
+      const parsed = parseTutorReply(content);
+      if (parsed.text) {
+        reply = parsed;
+      } else {
+        console.error(
+          "Tutor turn: empty response for user:",
+          user,
+          "turns:",
+          transcript.length,
+          "attempt:",
+          attempt,
+          data
+        );
+        // Loop retries once on an empty completion before we 502.
+      }
+    }
+    if (!reply) {
       return Response.json({ error: "Could not get the next question." }, { status: 502 });
     }
-    const data = await res.json();
-    const text = (data.choices?.[0]?.message?.content ?? "").trim();
-    if (!text) {
-      console.error("Tutor turn: empty response for user:", user, "turns:", transcript.length, data);
-      return Response.json({ error: "Could not get the next question." }, { status: 502 });
-    }
-    return Response.json({ text });
+    return Response.json({ text: reply.text, done: reply.done });
   } catch (err) {
     console.error("Tutor turn error for user:", user, "turns:", transcript.length, err);
     return Response.json({ error: "Could not get the next question." }, { status: 502 });
