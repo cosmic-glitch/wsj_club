@@ -1231,6 +1231,17 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // session). Errors now auto-save a partial and end on their own (failAndEnd),
   // so reaching this button always means a deliberate, clean discard. The
   // once-guard also blocks a late end() from a double-click race.
+  // Cancel throws away the whole session, so the button confirms first. (While
+  // the native dialog is open JS is paused, so an in-flight turn can't advance
+  // underneath it; on OK, cancel() runs before any queued continuation and the
+  // fences discard them.)
+  function confirmCancel() {
+    if (!confirm("Cancel this quiz? Nothing will be saved — your answers so far will be lost.")) {
+      return;
+    }
+    cancel();
+  }
+
   function cancel() {
     endReasonRef.current = "cancel";
     logEvent("cancel");
@@ -1505,7 +1516,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                   )}
                   <button
                     type="button"
-                    onClick={cancel}
+                    onClick={confirmCancel}
                     className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-50"
                   >
                     Cancel quiz
