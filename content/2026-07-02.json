@@ -1,0 +1,120 @@
+{
+  "date": "2026-07-02",
+  "title": "The AI Boom and Geopolitics Are Rewiring Asia's Oceans",
+  "articleUrl": "https://www.economist.com/asia/2026/06/29/the-ai-boom-and-geopolitics-are-rewiring-asias-oceans",
+  "pdfUrl": "/pdfs/2026-07-02.pdf",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "subterfuge",
+      "partOfSpeech": "noun",
+      "articleQuote": "Some of their fears of subterfuge may be overblown; to date, no conclusive evidence has been shared to suggest that the cuts... are sabotage.",
+      "inContext": "Here, subterfuge is the suspected secret, hidden action behind the cut cables — the worry that someone deliberately sabotaged them while covering their tracks.",
+      "meaning": "Subterfuge is the use of deception, trickery, or a hidden scheme to achieve a goal or avoid getting caught.",
+      "examples": [
+        "He skipped practice through subterfuge — a fake dentist appointment he'd invented that morning.",
+        "The whole magic trick runs on subterfuge: your eyes follow one hand while the other palms the coin."
+      ]
+    },
+    {
+      "word": "defray",
+      "partOfSpeech": "verb",
+      "articleQuote": "To defray the cost, for most of the last few decades big national telecoms firms would form consortia to build them.",
+      "inContext": "Here, to defray the cost means to help pay down the enormous price of building a subsea cable — telecom companies teamed up so no single firm had to cover the whole bill.",
+      "meaning": "To defray a cost is to provide money that pays part or all of it, easing the financial burden on someone.",
+      "examples": [
+        "The bake sale helped defray the cost of the team's new uniforms.",
+        "A weekend job defrayed some of what she'd spent on concert tickets."
+      ]
+    },
+    {
+      "word": "bifurcated",
+      "partOfSpeech": "adjective",
+      "articleQuote": "These new routes are part of an increasingly bifurcated internet infrastructure beneath the waves.",
+      "inContext": "Here, bifurcated describes an internet splitting into two separate systems — one tied to America and its allies, another to China — with fewer and fewer cables crossing between them.",
+      "meaning": "Something bifurcated has divided or branched into two distinct parts or paths.",
+      "examples": [
+        "After the falling-out, the friend group became bifurcated, with two rival tables at lunch.",
+        "The trail bifurcated at the top of the hill — one path to the lake, one to the campsite."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Hyperscalers",
+      "articleQuote": "the next four years will see an average of $4bn a year in new cable investment, the bulk of it by so-called hyperscalers seeking to win the ai race.",
+      "inContext": "Here, the hyperscalers are the giant tech companies — Google, Meta, Microsoft — pouring billions into their own undersea cables so their data centres can shuttle enormous amounts of AI data.",
+      "meaning": "Hyperscalers are the handful of companies that run computing at massive (\"hyper\") scale — sprawling networks of data centres that rent out cloud computing and power much of the internet and AI. Because they operate at such scale and have so much cash, they can now afford to build infrastructure — cables, even power plants — that once only governments or big consortia could."
+    },
+    {
+      "name": "Vertical integration",
+      "articleQuote": "As the subsea cable market consolidates vertically, it is expanding geographically.",
+      "inContext": "Here, consolidating vertically means the tech giants no longer just rent cable capacity from telecom firms — they now own the whole chain, from the data centres that generate the traffic to the cables that carry it.",
+      "meaning": "Vertical integration is when a single company owns several stages of its own supply chain instead of buying from other firms at each step. Owning the links above and below you can cut costs, speed things up, and hand you more control — but it also concentrates power in fewer hands. (Picture a coffee chain that grows its own beans, roasts them, and runs the cafes.)"
+    },
+    {
+      "name": "De facto vs. de jure",
+      "articleQuote": "China has yet to effect full control on the surface but exercises de facto sovereignty over the seabed.",
+      "inContext": "Here, China has no clear legal ownership of the South China Sea seabed, yet in practice it controls what happens there — repairs to cables inside its claimed \"nine-dash line\" need Beijing's approval.",
+      "meaning": "\"De facto\" means the way things actually are in practice; \"de jure\" means the way things are according to the law. The two often diverge — someone can hold real power over something (de facto) without any legal right to it (de jure), or a rule can exist on paper (de jure) that nobody actually follows."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, which two forces are together \"rewiring\" the routes of Asia's undersea cables?",
+      "options": [
+        "Rising sea levels and overfishing",
+        "The AI boom and geopolitics",
+        "Cheaper satellite internet and tourism",
+        "A worldwide shortage of fibre-optic glass"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article argues that surging demand for AI data plus geopolitical risk are together pushing cables onto new ocean routes."
+    },
+    {
+      "question": "Australia's defence minister raised fears of \"subterfuge\" behind the cut cables. What does subterfuge mean?",
+      "options": [
+        "An honest mistake or accident",
+        "Secret, deceptive action taken to achieve a goal",
+        "A sudden change in ocean currents",
+        "An open, publicly announced plan"
+      ],
+      "answerIndex": 1,
+      "explanation": "Subterfuge is deception or a hidden scheme — here, the suspicion that the cables were secretly sabotaged."
+    },
+    {
+      "question": "The article says a major shift is in who pays for cables. What changed?",
+      "options": [
+        "Governments now build all of the world's subsea cables",
+        "Consortia of telecom firms grew from dozens of partners to hundreds",
+        "Single tech giants like Google now finance and own cables on their own",
+        "Satellite companies took over the financing of undersea cables"
+      ],
+      "answerIndex": 2,
+      "explanation": "Hyperscalers such as Google have moved from multi-partner consortia to funding and owning cables single-handedly — Google owns 18 without any partners — an example of vertical integration."
+    },
+    {
+      "question": "The article describes an \"increasingly bifurcated internet infrastructure.\" What does bifurcated mean here?",
+      "options": [
+        "Growing steadily more expensive",
+        "Splitting into two separate systems",
+        "Getting much faster",
+        "Falling under the control of one country"
+      ],
+      "answerIndex": 1,
+      "explanation": "Bifurcated means divided into two branches — here, an internet separating into an American-allied network and a Chinese one, with no new cables between them since Obama was in office."
+    },
+    {
+      "question": "The article says China \"exercises de facto sovereignty over the seabed\" of the South China Sea. What does that mean?",
+      "options": [
+        "China has a clear legal right to the seabed under international law",
+        "China controls the seabed in practice, even without a recognized legal right",
+        "China has formally given up its claims to the seabed",
+        "No country can affect what happens on that seabed"
+      ],
+      "answerIndex": 1,
+      "explanation": "\"De facto\" means in practice rather than in law — China effectively controls the seabed (for example, requiring approval for cable repairs) even though its legal claim isn't internationally recognized."
+    }
+  ]
+}
