@@ -27,7 +27,10 @@ function parseTutorReply(content: string): { text: string; done: boolean } {
   try {
     const parsed = JSON.parse(content);
     if (parsed && typeof parsed === "object") {
-      if (typeof parsed.text === "string") text = parsed.text.trim();
+      // Valid JSON but no usable "text" field → treat it as an empty completion
+      // (the caller retries once, then 502s) rather than letting the raw JSON
+      // blob become the spoken/displayed line.
+      text = typeof parsed.text === "string" ? parsed.text.trim() : "";
       done = parsed.done === true;
     }
   } catch {

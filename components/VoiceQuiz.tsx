@@ -687,6 +687,18 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     return { blob: encodeWav(pcm, WAV_RATE), filename: "answer.wav", pcm };
   }
 
+  // Abandon a just-(or partially-)built iOS capture graph: stop the mic/processor
+  // AND close the context. Needed when the run ends while iosStartCapture is
+  // mid-await — the teardown() that ran then couldn't see these refs (they're
+  // assigned after its awaits), so without this the mic stays hot and the leaked
+  // processor keeps accumulating samples — and after a failed start, so nothing
+  // half-built lingers holding the mic.
+  function iosAbandonCapture() {
+    iosStopCapture();
+    iosCtxRef.current?.close().catch(() => {});
+    iosCtxRef.current = null;
+  }
+
   // "Start speaking" — a state toggle (no press-and-hold). Begins recording the
   // student's answer off the Web Audio graph; the live meter + timer make it
   // obvious the mic is hot.
@@ -703,8 +715,17 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
         await iosStartCapture();
       } catch (err) {
         console.warn("[voicequiz] iOS capture failed", err);
+        iosAbandonCapture(); // release whatever was partially built (mic may be live)
         if (!canContinue(runId)) return;
         setNotice("Couldn't start the microphone. Please allow mic access and try again.");
+        return;
+      }
+      // The run ended (Cancel/close/unmount) while the mic was being acquired.
+      // That teardown() ran BEFORE iosStartCapture assigned its refs, so it
+      // couldn't stop this graph — abandon it here or the mic stays hot (and the
+      // leaked processor keeps feeding samples) after a discarded quiz.
+      if (!canContinue(runId)) {
+        iosAbandonCapture();
         return;
       }
     } else {
@@ -716,8 +737,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       } catch (err) {
         console.warn("[voicequiz] audio graph failed", err);
       }
+      // The run ended while the graph was being set up (that teardown stopped the
+      // mic and closed the context) — bail before building a recorder on it.
+      if (!canContinue(runId)) return;
       if (!graph) {
-        if (!canContinue(runId)) return;
         setNotice("Couldn't start audio. Please check microphone access and try again.");
         return;
       }
@@ -736,9 +759,6 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       }
     }
 
-    // The quiz was cancelled/ended while the mic was being set up — don't flip to
-    // the recording UI (teardown has already stopped the capture graph).
-    if (!canContinue(runId)) return;
     setRecSeconds(0);
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => setRecSeconds((s) => s + 1), 1000);
@@ -798,6 +818,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       }
     } else {
       turn = await stopTurnRecorder();
+      // Cancelled/ended/unmounted while the recorder was closing out — this
+      // answer belongs to a dead run; don't push its clip or advance the gone UI.
+      if (!canContinue(runId)) return;
       if (turn) pushSegment({ order: studentOrder, kind: "student", blob: turn.blob });
     }
     if (!turn) {
@@ -809,14 +832,22 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
     setPhase("transcribing");
     logEvent("transcribe:begin");
-    // A timeout on the upload + transcribe: a genuine hang becomes a failure →
-    // auto partial save. Track `timedOut` to tell it apart from a Cancel/finalize.
+    // A genuine hang becomes a failure → auto partial save. Two separate budgets:
+    // the upload leg is scaled to the clip size (iOS answers are uncompressed
+    // WAVs, ~2MB/min, and a slow uplink can legitimately need well over 60s —
+    // slow-but-progressing is not a hang), then the transcribe fetch gets a fresh
+    // standard budget. `timedOut` tells a real timeout from a Cancel/finalize.
     const transcribeAbort = transcribeAbortRef.current;
     let timedOut = false;
-    const timeout = setTimeout(() => {
-      timedOut = true;
-      transcribeAbort?.abort();
-    }, FETCH_TIMEOUT_MS);
+    const armTimeout = (ms: number) =>
+      setTimeout(() => {
+        timedOut = true;
+        transcribeAbort?.abort();
+      }, ms);
+    // 60s + ~30s per MB of clip, capped at 5 minutes.
+    let timeout = armTimeout(
+      Math.min(300_000, FETCH_TIMEOUT_MS + Math.round((turn.blob.size / 1_000_000) * 30_000))
+    );
     try {
       // Upload the answer clip straight to Blob, then transcribe it from there.
       // Routing the bytes through /api/quiz-transcribe hit Vercel's ~4.5MB
@@ -844,11 +875,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           abortSignal: transcribeAbort?.signal,
         }
       );
+      clearTimeout(timeout);
       // Cancelled/ended/unmounted during the upload — discard silently.
-      if (!canContinue(runId)) {
-        clearTimeout(timeout);
-        return;
-      }
+      if (!canContinue(runId)) return;
+      // Fresh budget for the transcribe call itself.
+      timeout = armTimeout(FETCH_TIMEOUT_MS);
       const res = await fetch("/api/quiz-transcribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -1237,6 +1268,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // Assign this mount's id + breadcrumb time origin (diagnostics), and stop the
   // mic/recorders if the component unmounts mid-session.
   useEffect(() => {
+    // Restore on every effect run: dev StrictMode runs mount → cleanup → mount on
+    // the same component, and the cleanup below sets this false — without this
+    // line isSameRun() would stay false forever in dev and every fence would
+    // bail (the quiz would hang at "Starting…").
+    mountedRef.current = true;
     mountIdRef.current = newId();
     t0Ref.current = Date.now();
     return () => {
