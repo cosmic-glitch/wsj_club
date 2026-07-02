@@ -6,6 +6,32 @@ import { currentUser } from "@/lib/auth";
 // env-overridable to gpt-4o-transcribe / gpt-4o-mini-transcribe.
 const STT_MODEL = process.env.STT_MODEL || "whisper-1";
 
+// OpenAI's transcription endpoint occasionally rejects a perfectly good request
+// with a transient error — we once saw a spurious 404 ("Invalid URL") on an
+// answer whose endpoint had just transcribed the same student's prior six
+// answers. A single non-OK response ends the whole quiz (the client saves a
+// partial and stops), so a momentary blip shouldn't. We retry ONCE on a network
+// error or one of these retryable statuses. A 400 (empty/malformed clip) is a
+// real client-side problem that won't change on a retry, so it's NOT retried.
+const RETRYABLE_STT_STATUS = new Set([404, 408, 409, 425, 429, 500, 502, 503, 504]);
+
+// Forward one clip to OpenAI speech-to-text. Split out so the retry can rebuild
+// the multipart body each attempt — a FormData stream is consumed by the fetch
+// that sends it, so the same instance can't be reused for a second try.
+async function postTranscription(audioBlob: Blob, name: string): Promise<Response> {
+  const upstream = new FormData();
+  // OpenAI keys off the filename extension to detect the format, so pass a
+  // sensible name (the stored object keeps the recorder's container extension).
+  upstream.append("file", audioBlob, name);
+  upstream.append("model", STT_MODEL);
+  upstream.append("response_format", "json");
+  return fetch("https://api.openai.com/v1/audio/transcriptions", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}` },
+    body: upstream,
+  });
+}
+
 /**
  * Transcribes one recorded student answer to text.
  *
@@ -74,18 +100,30 @@ export async function POST(request: Request) {
     }
     const audioBlob = await audioRes.blob();
 
-    const upstream = new FormData();
-    // OpenAI keys off the filename extension to detect the format, so pass a
-    // sensible name (the stored object keeps the recorder's container extension).
-    upstream.append("file", audioBlob, name);
-    upstream.append("model", STT_MODEL);
-    upstream.append("response_format", "json");
-
-    const res = await fetch("https://api.openai.com/v1/audio/transcriptions", {
-      method: "POST",
-      headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}` },
-      body: upstream,
-    });
+    // Forward to OpenAI, retrying ONCE on a transient failure (see
+    // RETRYABLE_STT_STATUS / postTranscription above) so a momentary blip doesn't
+    // end the whole quiz. Max two attempts, with a short backoff between them.
+    let res!: Response;
+    for (let attempt = 1; ; attempt++) {
+      try {
+        res = await postTranscription(audioBlob, name);
+      } catch (err) {
+        if (attempt >= 2) throw err; // last attempt — let the outer catch 502 it
+        console.error(
+          "Transcription request error (attempt " + attempt + ", will retry):",
+          "user:", user, "file:", name, err
+        );
+        await new Promise((r) => setTimeout(r, 500));
+        continue;
+      }
+      // Success, out of attempts, or a non-retryable status → stop and handle below.
+      if (res.ok || attempt >= 2 || !RETRYABLE_STT_STATUS.has(res.status)) break;
+      console.error(
+        "Transcription failed (attempt " + attempt + ", will retry):",
+        res.status, "user:", user, "file:", name, audioBlob.size, await res.text()
+      );
+      await new Promise((r) => setTimeout(r, 500));
+    }
     if (!res.ok) {
       // Log the student so a reported failure is traceable, plus the clip's
       // size/name and OpenAI's reason (an empty/malformed clip 400s here).
