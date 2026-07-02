@@ -40,13 +40,45 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - WSJ requires login. Tell the user: *"I've opened the article — please log into WSJ in the browser window, then tell me when you're in."* Wait for them. Do **not** ask for or store their password; they log in themselves.
    - Once past the paywall, read the full article (`browser_snapshot`, or scroll and read). Capture: the real headline, the byline/section if useful, and the substance — main argument, key facts, and any jargon a teenager would trip on.
 
-3. **Capture the day's PDF automatically — but only for sign-in/paywalled articles.** The PDF exists so the club can still read paywalled WSJ/Economist pieces. **If the article is on a freely open link that needs no login** (e.g. a public essay, an `archive.ph` capture, or an open-access page), **skip the PDF entirely** — don't capture one, omit `pdfUrl` from the JSON, and the index will show just the Web link. Only do the capture below when the source sits behind a sign-in/paywall. With the article open and the user logged in (from step 2), **don't print the live page** — instead **rebuild a clean document from the article's own paragraphs *and its real content images* and print that**. The rebuilt doc keeps the article's **charts, graphs, and photos** (which often carry the substance — an Economist "(see chart)" data viz, a labeled diagram) while dropping the page chrome. **Why rebuild instead of printing the live page:** running `page.pdf()` on the live DOM goes wrong three ways: (a) Chromium's *print* emulation picks the **largest `srcset` candidate** for every `<img>` (WSJ photos go up to ~5000px); (b) it leaves behind **empty ad placeholders and `<video>`/poster images** that a plain `document.images` strip doesn't catch — together these bloat a short article to **tens of MB across a dozen-plus mostly-blank pages**; and (c) those tall, unbreakable blocks force awkward page breaks that **slice lines of text in half at page boundaries**. The rebuild fixes all three: it takes the article's `<p>`/heading **text** *plus* only its genuine content images — each fetched at a **sensible ~1000px width (never the 5000px monster), inlined as a `data:` URI, and capped in height so it fits one page** — into a fresh, plainly-styled doc. That lands at **~150–500KB** (a few hundred KB per image, not tens of MB), **paginates line-by-line with no slicing** (images get `break-inside:avoid`), and **keeps the charts the club needs**. **Earlier this skill stripped images entirely (text-only); that dropped critical charts/graphs, so it now includes them.** Only `public/` is served by Next, so the PDF must end up at `public/pdfs/YYYY-MM-DD.pdf` and is referenced as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`.
+3. **Capture the day's PDF automatically — but only for sign-in/paywalled articles.** The PDF exists so the club can still read paywalled WSJ/Economist pieces. **If the article is on a freely open link that needs no login** (e.g. a public essay, an `archive.ph` capture, or an open-access page), **skip the PDF entirely** — don't capture one, omit `pdfUrl` from the JSON, and the index will show just the Web link. Only do the capture below when the source sits behind a sign-in/paywall. With the article open and the user logged in (from step 2), **don't print the live page** — instead **rebuild a clean document from the article's own paragraphs *and its real content images* and print that**. The rebuilt doc keeps the article's **charts, graphs, and photos** (which often carry the substance — an Economist "(see chart)" data viz, a labeled diagram) while dropping the page chrome. **Why rebuild instead of printing the live page:** running `page.pdf()` on the live DOM goes wrong three ways: (a) Chromium's *print* emulation picks the **largest `srcset` candidate** for every `<img>` (WSJ photos go up to ~5000px); (b) it leaves behind **empty ad placeholders and `<video>`/poster images** that a plain `document.images` strip doesn't catch — together these bloat a short article to **tens of MB across a dozen-plus mostly-blank pages**; and (c) those tall, unbreakable blocks force awkward page breaks that **slice lines of text in half at page boundaries**. The rebuild fixes all three: it takes the article's `<p>`/heading **text** *plus* only its genuine content images — each fetched at a **sensible ~1000px width (never the 5000px monster), inlined as a `data:` URI, and capped in height so it fits one page** — into a fresh, plainly-styled doc. That lands at **~150–500KB** (a few hundred KB per image, not tens of MB), **paginates line-by-line with no slicing** (images get `break-inside:avoid`), and **keeps the charts the club needs**. **Earlier this skill stripped images entirely (text-only); that dropped critical charts/graphs, so it now includes them.** **One caveat for The Economist:** its maps and data charts are usually **not** `<figure><img>` at all but **`infographics.economist.com` iframe embeds** whose labels/legend are a separate HTML overlay on top of a base "artboard" PNG — so a plain image fetch would drop **every label** (a labels-less map). The snippet's **step 0** handles these by opening each infographic in a throwaway tab and screenshotting the **rendered** widget (base + labels composited, zoomed 2× for resolution), then splicing it into the reading flow. Only `public/` is served by Next, so the PDF must end up at `public/pdfs/YYYY-MM-DD.pdf` and is referenced as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`.
    - Make the folder: `mkdir -p public/pdfs`.
-   - With the article page **already open** (loaded past the paywall — the snippet does **not** navigate), use `browser_run_code_unsafe` — **substitute the real date** in `OUT` and the real publication in `SOURCE_NAME`:
+   - With the article page **already open** (loaded past the paywall — the snippet leaves the article tab in place; it opens a **throwaway tab** only to screenshot any Economist infographic embeds, then closes it), use `browser_run_code_unsafe` — **substitute the real date** in `OUT` and the real publication in `SOURCE_NAME`:
      ```js
      async (page) => {
        const OUT = '/Users/anuragved/code/wsj_club/public/pdfs/YYYY-MM-DD.pdf'; // ← real date
        const SOURCE_NAME = 'The Economist'; // ← or 'The Wall Street Journal'
+       // 0) ECONOMIST INFOGRAPHIC MAPS/CHARTS are embedded as `infographics.economist.com`
+       //    IFRAMES (ai2html widgets), NOT as <figure><img>, so the figure walk below misses
+       //    them. And the widget's artboard PNG is only the BASE art — its labels + legend are
+       //    a separate HTML overlay — so fetching the raw PNG yields a map with NO text. The fix:
+       //    open each infographic in a THROWAWAY TAB and screenshot the RENDERED widget (base +
+       //    labels composited), zoomed 2x so the ~1400px artboard is captured crisp, clipped to
+       //    the drawn bounds. WSJ / no-chart days find no such iframe and skip this entirely.
+       const infographicUrls = await page.evaluate(() =>
+         [...document.querySelectorAll('iframe')].map(f => f.src).filter(s => /infographics\.economist\.com/.test(s || ''))
+       );
+       const infographics = [];
+       for (const src of infographicUrls) {
+         const tab = await page.context().newPage();
+         try {
+           await tab.setViewportSize({ width: 1700, height: 1900 });
+           await tab.goto(src, { waitUntil: 'networkidle' });
+           await tab.waitForFunction(() => { const i = [...document.images]; return i.length > 0 && i.every(x => x.complete); }, { timeout: 15000 }).catch(() => {});
+           await tab.evaluate(() => { document.documentElement.style.zoom = '2'; }); // render the 1400px artboard at native res
+           await tab.waitForTimeout(400);
+           const clip = await tab.evaluate(() => {
+             const vis = [...document.querySelectorAll('.g-artboard')].find(a => getComputedStyle(a).display !== 'none') || document.body;
+             let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+             const add = r => { if (r.width > 0 && r.height > 0) { x0 = Math.min(x0, r.left); y0 = Math.min(y0, r.top); x1 = Math.max(x1, r.right); y1 = Math.max(y1, r.bottom); } };
+             add(vis.getBoundingClientRect());                                            // the base art …
+             [...vis.querySelectorAll('*')].forEach(e => { if ((e.innerText || '').trim()) add(e.getBoundingClientRect()); }); // … plus every text label
+             const p = 6; return { x: Math.max(0, x0 - p), y: Math.max(0, y0 - p), width: (x1 - x0) + p * 2, height: (y1 - y0) + p * 2 };
+           });
+           const buf = await tab.screenshot({ clip });
+           infographics.push({ type: 'img', dataUri: 'data:image/png;base64,' + buf.toString('base64'), caption: '' });
+         } catch { /* best-effort: a chart that won't capture is just skipped */ }
+         finally { await tab.close(); }
+       }
        // 1) Wait for the (often client-rendered) body, then walk the article in
        //    document order, collecting paragraph/heading TEXT *and* the real
        //    content images (charts/photos) — stopping at the end-of-article footer
@@ -112,11 +144,20 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          }
          return { title, deck, blocks };
        });
+       // 1b) Splice the captured infographic(s) into the reading flow. Default: just after the
+       //     2nd body paragraph (near where Economist runs its lead chart). Move the anchor if a
+       //     different spot reads better — e.g. after the paragraph that references the chart.
+       if (infographics.length) {
+         let at = data.blocks.findIndex((b, i) => b.type === 'text' && i >= 2);
+         if (at === -1) at = data.blocks.length - 1;
+         data.blocks.splice(at + 1, 0, ...infographics);
+       }
        // 2) Fetch each kept image through the *authenticated browser context*
        //    (page.request shares cookies and is not subject to CORS) and inline it
-       //    as a data: URI, so the printed doc is fully self-contained.
+       //    as a data: URI, so the printed doc is fully self-contained. Skip blocks that
+       //    already carry a dataUri — those are the infographics we just screenshotted.
        for (const b of data.blocks) {
-         if (b.type !== 'img') continue;
+         if (b.type !== 'img' || b.dataUri) continue;
          try {
            const resp = await page.request.get(b.url, { timeout: 25000 });
            if (!resp.ok()) { b.skip = true; continue; }
@@ -155,11 +196,12 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
        const imgs = data.blocks.filter(b => b.type === 'img' && b.dataUri && !b.skip);
        const txt = data.blocks.filter(b => b.type === 'text').length;
        return 'wrote ' + OUT + ' | deck=' + (data.deck ? 'yes' : 'no') + ' | text=' + txt
-         + ' | images=' + imgs.length + ' [' + imgs.map(b => (b.url.match(/images\/([^?/]+)/) || [, '?'])[1]).join(', ') + ']';
+         + ' | images=' + imgs.length + ' [' + imgs.filter(b => b.url).map(b => (b.url.match(/images\/([^?/]+)/) || [, '?'])[1]).join(', ') + ']'
+         + ' | infographics=' + infographics.length;
      }
      ```
      (Set `SOURCE_NAME` at the top = `The Wall Street Journal` or `The Economist`.) `page.setContent` *replaces* the live page with the clean doc before printing — that's intended.
-   - **Verify it:** the snippet returns `deck=yes|no` (was the standfirst captured?), a `text=` paragraph count, and an `images=N [slugs]` list. Expect `text` **roughly one per paragraph** (≈20–40 for a feature; under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome — re-check login/selectors), and `images` to roughly match the **real charts/photos** in the body (often 1–4; **`images=0` on an article you know has a chart means the image step failed** — usually a paywall/login issue or the figure markup differs, so don't ship it without checking). For an obituary or feature whose subtitle states a key fact (death date, age, who-did-what), confirm `deck=yes`; if it's `no`, the standfirst didn't match the selectors — grab it from `browser_snapshot` and prepend it to the text by hand. Then `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect **~150–500KB and a few pages** now that images are embedded; **tens of MB means the image step grabbed something huge** — re-check) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). **Always render the pages and eyeball them** — both that text isn't sliced at page breaks AND that the charts/photos actually appear and the charts are legible: `pdftoppm -png -r 90 public/pdfs/YYYY-MM-DD.pdf /tmp/pg` then view the `/tmp/pg-*.png` pages. If `text=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
+   - **Verify it:** the snippet returns `deck=yes|no` (was the standfirst captured?), a `text=` paragraph count, an `images=N [slugs]` list, and an **`infographics=N`** count (Economist iframe maps/charts captured separately in step 0). Expect `text` **roughly one per paragraph** (≈20–40 for a feature; under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome — re-check login/selectors), and `images` to roughly match the **real `<figure>` charts/photos** in the body (often 1–4; **`images=0` on an article you know has a chart means the image step failed** — usually a paywall/login issue or the figure markup differs, so don't ship it without checking). **On an Economist day with a map or data chart, confirm `infographics≥1`** — and when you eyeball the pages (below), check the map shows **with its labels and legend**; a labels-less map means the widget didn't render (re-run) and a bare-PNG fetch would have that failure mode. For an obituary or feature whose subtitle states a key fact (death date, age, who-did-what), confirm `deck=yes`; if it's `no`, the standfirst didn't match the selectors — grab it from `browser_snapshot` and prepend it to the text by hand. Then `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect **~150–500KB and a few pages** now that images are embedded; **tens of MB means the image step grabbed something huge** — re-check) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). **Always render the pages and eyeball them** — both that text isn't sliced at page breaks AND that the charts/photos actually appear and the charts are legible: `pdftoppm -png -r 90 public/pdfs/YYYY-MM-DD.pdf /tmp/pg` then view the `/tmp/pg-*.png` pages. If `text=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
    - Set `pdfUrl: "/pdfs/YYYY-MM-DD.pdf"` in the JSON. (To skip the PDF entirely, omit `pdfUrl` — the page then shows only the Web link.)
    - **Multi-article days** (the `articles[]` shape — see step 5): capture **one PDF per article**. `browser_navigate` to each article in turn, then run the snippet writing to `public/pdfs/YYYY-MM-DD-1.pdf`, `-2.pdf`, … (note the `-N` suffix), and put each path in that article's own `pdfUrl` inside `articles[]` — there is no top-level `pdfUrl`.
    - **Manual fallback** (only if auto-capture looks wrong): the user saves the article as a PDF by hand into the `PDFs/` drop-zone at the repo root (gitignored, raw WSJ filename), and you copy it over: `cp "PDFs/<that file>.pdf" public/pdfs/YYYY-MM-DD.pdf`. The `public/pdfs/` copy is what gets committed and deployed.
