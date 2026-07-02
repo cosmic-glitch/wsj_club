@@ -252,6 +252,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // drives the wrap-up copy ("Saved — we hit a snag").
   const failureRef = useRef<SessionFailure | null>(null);
   const [failed, setFailed] = useState(false);
+  // True while a session is being saved because the student pressed Cancel. The
+  // attempt still saves for the teacher (recording + transcript so far,
+  // ungraded), but the wrap-up stays a minimal holding screen and the modal
+  // closes itself — the student never sees a report card for a cancelled run.
+  const [wasCancelled, setWasCancelled] = useState(false);
 
   // The on-screen conversation (tutor questions + the student's transcribed
   // answers). The student now sees their own answers, unlike the realtime build.
@@ -314,9 +319,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const levelsRef = useRef<number[]>(new Array(METER_BARS).fill(0));
 
-  // The quiz ends only when the student clicks "End quiz" (once the tutor is done)
-  // or an internal failure/hang/backstop finalizes it. This once-guard keeps the
-  // save idempotent and lets cancel() block a racing finalize.
+  // The quiz ends only when the student clicks "End quiz" (once the tutor is
+  // done), cancels (saved as a cancelled entry — see cancel()), or an internal
+  // failure/hang/backstop finalizes it. This once-guard keeps the save
+  // idempotent — racing finalizes run once.
   const endStartedRef = useRef(false);
 
   // ---- Run/lifecycle fencing (so a stale async op can't mutate a newer quiz) --
@@ -1048,6 +1054,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     segmentsRef.current = [];
     failureRef.current = null;
     setFailed(false);
+    setWasCancelled(false);
     endStartedRef.current = false;
     // A new run: bump the generation so any straggler from a prior quiz is fenced
     // out, clear the terminating flag + the done gate, and arm fresh abort
@@ -1108,18 +1115,23 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     void finalizeQuiz("end-button");
   }
 
-  // The single, once-guarded save/teardown path. Reached by userEnd (gated) and
-  // failAndEnd (an internal failure/hang/backstop, any phase). `reason` becomes
-  // the saved endReason and tells the two apart in diagnostics. Because End can't
-  // fire mid-turn and an internal finalize just saves whatever's captured, there
-  // is no in-flight turn to reconcile here — no recorder closeout, no settle.
+  // The single, once-guarded save/teardown path. Reached by userEnd (gated),
+  // cancel (the student stops early — saved as an ungraded cancelled entry),
+  // and failAndEnd (an internal failure/hang/backstop, any phase). `reason`
+  // becomes the saved endReason and tells them apart in diagnostics. Because
+  // End can't fire mid-turn, cancel() closes out its own recorder before
+  // calling this, and an internal finalize just saves whatever's captured,
+  // there is no in-flight turn to reconcile here — no recorder closeout, no
+  // settle.
   async function finalizeQuiz(reason: string) {
+    const cancelled = reason === "cancel";
     endReasonRef.current = reason;
     // Diagnostics: record EVERY finalize attempt with the live phase + guard state
     // BEFORE the once-guard can bail. If the "saved twice" bug recurs we'll see
     // whether a 2nd finalize was blocked (guard worked) or proceeded (guard
     // failed). An end:called at phase=tutorTurn with reason=end-button is expected;
-    // a reason starting "fail:" is valid at ANY phase (failure/hang/backstop).
+    // "fail:" and "cancel" reasons are valid at ANY phase (failures/hangs/backstops
+    // finalize from wherever they hit, and Cancel is always available).
     const phaseAtEnd = phaseRef.current;
     logEvent(
       "end:called",
@@ -1141,6 +1153,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     setUploadStep("pending");
     setGradeStep("pending");
     setFinished(false);
+    setWasCancelled(cancelled);
     setPhase("wrapup");
 
     if (timerRef.current) {
@@ -1206,6 +1219,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           audioUrl,
           durationMs,
           partial,
+          cancelled,
           failure,
           // Diagnostics (see the Diagnostics refs) — attached to the saved record.
           sessionId: sessionIdRef.current,
@@ -1217,41 +1231,61 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       });
       logEvent("save:done", `status=${res.status}`);
       const data = await res.json().catch(() => null);
-      if (data?.report) setReport(data.report as Report);
+      if (!cancelled && data?.report) setReport(data.report as Report);
     } catch {
       // The session still happened; saving is best-effort.
       logEvent("save:error");
     } finally {
       setGradeStep("done");
-      setFinished(true);
+      // A cancelled attempt shows no report card: once saved, close the modal
+      // (the student sees only the brief "Ending the quiz…" holding screen).
+      if (cancelled) close();
+      else setFinished(true);
     }
   }
 
-  // "Cancel quiz" — bail out with NOTHING saved (no recording, no transcript, no
-  // session). Errors now auto-save a partial and end on their own (failAndEnd),
-  // so reaching this button always means a deliberate, clean discard. The
-  // once-guard also blocks a late end() from a double-click race.
-  // Cancel throws away the whole session, so the button confirms first. (While
+  // "Cancel quiz" — stop early, before the tutor is done. The attempt is NOT
+  // discarded: whatever was captured — the recording + transcript so far — is
+  // saved as an ungraded CANCELLED entry (score "—") that only the teacher sees
+  // on /admin (the page filters it out of a student's own Scores list). The
+  // student just confirms, sees a brief "Ending the quiz…" screen, and the
+  // modal closes itself — no report card. The dialog wording is deliberately
+  // low-key (the quiz "won't count", not "is kept for the teacher"); the live
+  // screen already discloses that answers are recorded for the teacher. (While
   // the native dialog is open JS is paused, so an in-flight turn can't advance
-  // underneath it; on OK, cancel() runs before any queued continuation and the
-  // fences discard them.)
+  // underneath it; on OK, cancel() fences stragglers before its first await.)
   function confirmCancel() {
-    if (!confirm("Cancel this quiz? Nothing will be saved — your answers so far will be lost.")) {
+    if (!confirm("Cancel this quiz? It will end now and won’t count as a completed quiz.")) {
       return;
     }
-    cancel();
+    void cancel();
   }
 
-  function cancel() {
-    endReasonRef.current = "cancel";
+  async function cancel() {
     logEvent("cancel");
-    // Mark the run terminating + spent so a straggling async op discards, and a
-    // racing finalize is blocked by the once-guard. Abort in-flight fetches too.
+    // Fence stragglers immediately (finalizeQuiz sets this again): nothing may
+    // advance the quiz while the in-flight recorder is closed out below.
     endingRef.current = true;
-    endStartedRef.current = true;
-    turnAbortRef.current?.abort();
-    transcribeAbortRef.current?.abort();
-    close();
+    // Cancelled mid-answer: keep what the mic captured. Stop the recorder and
+    // drop the clip into the teacher's audio timeline — untranscribed, so the
+    // saved audio can run ahead of the saved transcript (fine for a cancelled
+    // entry). Best-effort like all recording work.
+    if (phase === "recording") {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
+      stopMeterLoop();
+      const studentOrder = transcriptRef.current.length;
+      if (isIOS) {
+        const cap = iosStopCapture();
+        if (cap) pushSegment({ order: studentOrder, kind: "student", pcm: cap.pcm });
+      } else {
+        const turn = await stopTurnRecorder();
+        if (turn) pushSegment({ order: studentOrder, kind: "student", blob: turn.blob });
+      }
+    }
+    void finalizeQuiz("cancel");
   }
 
   function close() {
@@ -1273,6 +1307,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     segmentsRef.current = [];
     failureRef.current = null;
     setFailed(false);
+    setWasCancelled(false);
     endStartedRef.current = false;
   }
 
@@ -1502,8 +1537,9 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                 </div>
 
                 {/* End quiz appears ONLY once the tutor has wrapped up (tutorDone),
-                    so it can never truncate an in-flight turn. Cancel (a clean
-                    discard) is always available as the way to stop early. */}
+                    so it can never truncate an in-flight turn. Cancel is always
+                    available as the way to stop early — it saves an ungraded,
+                    teacher-only "cancelled" entry (see cancel()). */}
                 <div className="mt-5 flex items-center gap-3 border-t border-stone-100 pt-4">
                   {phase === "tutorTurn" && tutorDone && (
                     <button
@@ -1525,10 +1561,22 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
               </div>
             )}
 
+            {/* Cancel path: no checklist, no report card — just a brief holding
+                screen while the cancelled entry saves; finalizeQuiz close()s
+                the modal itself when done. */}
+            {phase === "wrapup" && wasCancelled && (
+              <div>
+                <h2 className="font-serif text-xl font-bold text-stone-900">
+                  Ending the quiz…
+                </h2>
+                <p className="mt-2 text-sm text-stone-500">One moment.</p>
+              </div>
+            )}
+
             {/* One stable screen after End quiz — the checklist fills in place
                 (upload → grade → score) so nothing flashes by, and Close stays
                 disabled until everything has saved. */}
-            {phase === "wrapup" && (
+            {phase === "wrapup" && !wasCancelled && (
               <div className="flex min-h-0 flex-col">
                 <h2 className="font-serif text-xl font-bold text-stone-900">
                   {finished

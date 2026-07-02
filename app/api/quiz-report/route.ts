@@ -37,6 +37,7 @@ export async function POST(request: Request) {
     audioUrl?: string;
     durationMs?: number;
     partial?: boolean;
+    cancelled?: boolean;
     failure?: SessionFailure | null;
     // Client diagnostics (logging only) — see VoiceQuiz.tsx "Diagnostics" refs.
     sessionId?: string;
@@ -69,6 +70,9 @@ export async function POST(request: Request) {
   // incomplete and why. `failure` is sanitized + length-capped (it's free text
   // from the client).
   const partial = body.partial === true;
+  // The student pressed Cancel: the attempt is still saved for the teacher (the
+  // /admin page hides it from the student's own Scores view) but never graded.
+  const cancelled = body.cancelled === true;
   const failure: SessionFailure | null =
     body.failure && typeof body.failure === "object"
       ? {
@@ -111,7 +115,21 @@ export async function POST(request: Request) {
   const studentTurns = transcript.filter((t) => t.role === "student" && t.text.trim());
 
   let report: unknown = null;
-  if (studentTurns.length === 0) {
+  if (cancelled) {
+    // A cancelled attempt is never graded: the student chose to stop early, a
+    // score for half a quiz would be misleading, and the student never sees
+    // this entry anyway. The transcript + recording are what the teacher reviews.
+    report = {
+      score: "—",
+      summary:
+        "Cancelled — the student ended this quiz early, so it wasn't graded.",
+      strengths: [],
+      gaps: [],
+      keyIdeas: "Not assessed — the quiz was cancelled.",
+      vocab: "Not assessed — the quiz was cancelled.",
+      concepts: "Not assessed — the quiz was cancelled.",
+    };
+  } else if (studentTurns.length === 0) {
     report = {
       score: "—",
       summary:
@@ -177,6 +195,7 @@ export async function POST(request: Request) {
     report,
     audioUrl,
     partial,
+    cancelled,
     failure,
     diag,
   };
@@ -217,6 +236,7 @@ export async function POST(request: Request) {
       studentAnswers: studentTurns.length,
       totalTurns: transcript.length,
       partial,
+      cancelled,
       audioSaved: !!audioUrl,
       durationMs,
     })

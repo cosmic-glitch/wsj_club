@@ -33,6 +33,9 @@ export type Session = {
   // carries the reason + a short detail. Older sessions predate these (undefined).
   partial?: boolean;
   failure?: SessionFailure | null;
+  // Set when the student pressed Cancel: saved ungraded (score "—") for the
+  // teacher only — /admin filters these out of a student's own view.
+  cancelled?: boolean;
   // The Blob URL of this session's JSON — attached at load time so the teacher
   // can delete it. Not part of the saved JSON itself.
   blobUrl: string;
@@ -187,6 +190,11 @@ export default function AdminSessions({
                                 partial
                               </span>
                             )}
+                            {s.cancelled && (
+                              <span className="shrink-0 rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
+                                cancelled
+                              </span>
+                            )}
                           </button>
                         </li>
                       );
@@ -229,6 +237,11 @@ export default function AdminSessions({
                       partial
                     </span>
                   )}
+                  {open.cancelled && (
+                    <span className="rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
+                      cancelled
+                    </span>
+                  )}
                 </div>
                 <p className="mt-0.5 truncate text-sm text-stone-500">
                   <Link
@@ -252,6 +265,14 @@ export default function AdminSessions({
 
             {/* Body — report card, recording, full transcript. Scrolls if long. */}
             <div className="max-h-[70vh] overflow-y-auto px-6 py-4">
+              {open.cancelled && (
+                <div className="mb-4 rounded-lg border border-stone-200 bg-stone-100 px-3 py-2 text-sm text-stone-600">
+                  <span className="font-semibold">Cancelled attempt</span> — the
+                  student ended this quiz early, so it wasn’t graded; saved with
+                  whatever was recorded up to that point.
+                </div>
+              )}
+
               {open.partial && (
                 <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-800">
                   <span className="font-semibold">Incomplete attempt</span>

@@ -91,10 +91,14 @@ export default async function AdminPage() {
   // For a student, filter to their OWN attempts *on the server* so another
   // student's sessions never reach the browser. Match on loginUser (the real
   // login), falling back to studentName for older sessions that predate it.
+  // Cancelled attempts are teacher-only — a student never sees them, even
+  // their own (they were told a cancelled quiz "won't count").
   const visible =
     "error" in result || admin
       ? result
-      : result.filter((s) => (s.loginUser ?? s.studentName) === user);
+      : result.filter(
+          (s) => !s.cancelled && (s.loginUser ?? s.studentName) === user
+        );
 
   const heading = admin ? "Quiz sessions" : "Your scores";
   const subtitle = admin
