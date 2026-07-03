@@ -60,57 +60,54 @@ export default function AuthControl() {
     window.location.reload();
   }
 
+  // Outline-pill styling for the primary nav actions, so they read as buttons.
+  const navPill =
+    "rounded-full border border-stone-300 px-3 py-1.5 text-sm font-medium text-stone-700 transition hover:border-stone-400 hover:bg-stone-100";
+
   if (!ready) return <span className="text-sm text-stone-300">·</span>;
 
   if (user) {
     return (
-      <div className="flex items-center gap-3 text-sm">
-        {/* A student gets one link to their own scores; a teacher gets two —
-            all their classroom's scores, and the student manager. */}
-        {isAdmin ? (
-          <>
-            <Link
-              href="/admin"
-              className="text-stone-500 transition hover:text-stone-900"
-            >
-              All Scores
-            </Link>
-            <Link
-              href="/admin/students"
-              className="text-stone-500 transition hover:text-stone-900"
-            >
-              Manage Students
-            </Link>
-          </>
-        ) : (
-          <Link
-            href="/admin"
-            className="text-stone-500 transition hover:text-stone-900"
-          >
-            My Scores
-          </Link>
-        )}
-        <span className="text-stone-500">
-          Hi, <span className="font-medium text-stone-800">{user}</span>
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+        {/* Identity first — who you are, ahead of all the action buttons. */}
+        <span className="text-sm text-stone-500">
+          Hi, <span className="font-medium text-stone-700">{user}</span>
         </span>
-        <button
-          type="button"
-          onClick={logout}
-          className="text-stone-500 transition hover:text-stone-900"
-        >
-          Log out
-        </button>
+
+        {/* Divider, then all the actions grouped together: the nav pill(s) and a
+            quiet Log out. A student gets one pill (their own scores); a teacher
+            gets two (all their classroom's scores + the student manager). */}
+        <span aria-hidden className="h-4 w-px bg-stone-200" />
+        <div className="flex items-center gap-2">
+          {isAdmin ? (
+            <>
+              <Link href="/admin" className={navPill}>
+                All Scores
+              </Link>
+              <Link href="/admin/students" className={navPill}>
+                Manage Students
+              </Link>
+            </>
+          ) : (
+            <Link href="/admin" className={navPill}>
+              My Scores
+            </Link>
+          )}
+          <button
+            type="button"
+            onClick={logout}
+            className="ml-1 text-sm text-stone-400 transition hover:text-stone-700"
+          >
+            Log out
+          </button>
+        </div>
       </div>
     );
   }
 
   return (
     <div ref={boxRef} className="relative">
-      <button
-        type="button"
-        onClick={() => setOpen((o) => !o)}
-        className="text-sm text-stone-500 transition hover:text-stone-900"
-      >
+      <button type="button" onClick={() => setOpen((o) => !o)} className={navPill}>
         Log in
       </button>
       {open && (
