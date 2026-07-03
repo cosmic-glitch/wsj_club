@@ -12,6 +12,15 @@ import { useEffect, useState } from "react";
  * links. Whether the app actually opens still depends on the WSJ app being
  * installed and its "open supported links" setting being on; that part is out
  * of our hands. The back button returns to the club page either way.
+ *
+ * We always send `referrerPolicy="no-referrer"` so the destination never sees
+ * `wsjclub.vercel.app` as the referrer. Some archive hosts (archive.ph /
+ * archive.today) treat an inbound foreign referrer as a hotlink and trap the
+ * request on their anti-bot "security check" spinner instead of loading the
+ * article. On desktop `rel="noopener noreferrer"` already stripped it, but the
+ * mobile same-tab path used to leak it — so a phone tap would hang on the
+ * spinner while pasting the URL (no referrer) worked. This makes both behave
+ * the same.
  */
 export default function ArticleLink({
   href,
@@ -35,6 +44,7 @@ export default function ArticleLink({
       href={href}
       target={newTab ? "_blank" : undefined}
       rel={newTab ? "noopener noreferrer" : undefined}
+      referrerPolicy="no-referrer"
       className={className}
     >
       {children}
