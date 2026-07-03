@@ -40,7 +40,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - WSJ requires login. Tell the user: *"I've opened the article — please log into WSJ in the browser window, then tell me when you're in."* Wait for them. Do **not** ask for or store their password; they log in themselves.
    - Once past the paywall, read the full article (`browser_snapshot`, or scroll and read). Capture: the real headline, the byline/section if useful, and the substance — main argument, key facts, and any jargon a teenager would trip on.
 
-3. **Capture the day's PDF automatically — but only for sign-in/paywalled articles.** The PDF exists so the club can still read paywalled WSJ/Economist pieces. **If the article is on a freely open link that needs no login** (e.g. a public essay, an `archive.ph` capture, or an open-access page), **skip the PDF entirely** — don't capture one, omit `pdfUrl` from the JSON, and the index will show just the Web link. Only do the capture below when the source sits behind a sign-in/paywall. With the article open and the user logged in (from step 2), **don't print the live page** — instead **rebuild a clean document from the article's own paragraphs *and its real content images* and print that**. The rebuilt doc keeps the article's **charts, graphs, and photos** (which often carry the substance — an Economist "(see chart)" data viz, a labeled diagram) while dropping the page chrome. **Why rebuild instead of printing the live page:** running `page.pdf()` on the live DOM goes wrong three ways: (a) Chromium's *print* emulation picks the **largest `srcset` candidate** for every `<img>` (WSJ photos go up to ~5000px); (b) it leaves behind **empty ad placeholders and `<video>`/poster images** that a plain `document.images` strip doesn't catch — together these bloat a short article to **tens of MB across a dozen-plus mostly-blank pages**; and (c) those tall, unbreakable blocks force awkward page breaks that **slice lines of text in half at page boundaries**. The rebuild fixes all three: it takes the article's `<p>`/heading **text** *plus* only its genuine content images — each fetched at a **sensible ~1000px width (never the 5000px monster), inlined as a `data:` URI, and capped in height so it fits one page** — into a fresh, plainly-styled doc. That lands at **~150–500KB** (a few hundred KB per image, not tens of MB), **paginates line-by-line with no slicing** (images get `break-inside:avoid`), and **keeps the charts the club needs**. **Earlier this skill stripped images entirely (text-only); that dropped critical charts/graphs, so it now includes them.** **One caveat for The Economist:** its maps and data charts are usually **not** `<figure><img>` at all but **`infographics.economist.com` iframe embeds** whose labels/legend are a separate HTML overlay on top of a base "artboard" PNG — so a plain image fetch would drop **every label** (a labels-less map). The snippet's **step 0** handles these by opening each infographic in a throwaway tab and screenshotting the **rendered** widget (base + labels composited, zoomed 2× for resolution), then splicing it into the reading flow. Only `public/` is served by Next, so the PDF must end up at `public/pdfs/YYYY-MM-DD.pdf` and is referenced as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`.
+3. **Capture the day's PDF automatically — but only for sign-in/paywalled articles.** The PDF exists so the club can still read paywalled WSJ/Economist pieces. **If the article is on a freely open link that needs no login** (e.g. a public essay, an `archive.ph` capture, or an open-access page), **skip the PDF entirely** — don't capture one, omit `pdfUrl` from the JSON, and the index will show just the Web link. Only do the capture below when the source sits behind a sign-in/paywall. With the article open and the user logged in (from step 2), **don't print the live page** — instead **rebuild a clean document from the article's own paragraphs *and its real content images* and print that**. The rebuilt doc keeps the article's **charts, graphs, and photos** (which often carry the substance — an Economist "(see chart)" data viz, a labeled diagram) while dropping the page chrome. **Why rebuild instead of printing the live page:** running `page.pdf()` on the live DOM goes wrong three ways: (a) Chromium's *print* emulation picks the **largest `srcset` candidate** for every `<img>` (WSJ photos go up to ~5000px); (b) it leaves behind **empty ad placeholders and `<video>`/poster images** that a plain `document.images` strip doesn't catch — together these bloat a short article to **tens of MB across a dozen-plus mostly-blank pages**; and (c) those tall, unbreakable blocks force awkward page breaks that **slice lines of text in half at page boundaries**. The rebuild fixes all three: it takes the article's `<p>`/heading **text** *plus* only its genuine content images — each fetched at a **sensible ~1000px width (never the 5000px monster), inlined as a `data:` URI, and capped in height so it fits one page** — into a fresh, plainly-styled doc. That lands at **~150–500KB** (a few hundred KB per image, not tens of MB), **paginates line-by-line with no slicing** (images get `break-inside:avoid`), and **keeps the charts the club needs**. **Earlier this skill stripped images entirely (text-only); that dropped critical charts/graphs, so it now includes them.** **It also preserves the original inline typography** — small-caps acronyms (the Economist sets "AI", "IBM", "GPT" in `<small>` small caps), italics, bold, and the drop-cap opening. This matters because the Economist renders those small caps via `text-transform:lowercase` + `font-variant-caps:small-caps`, and `innerText` *applies* the transform, so a plain-text sweep would silently lowercase every acronym ("AI"→"ai") and split the drop cap ("T en years"). The snippet instead reads the **raw text nodes** (which keep the real "AI") and re-wraps `<small>`/`<em>`/`<strong>` with matching print CSS — using `font-variant-caps` (a font feature), **not** `text-transform`, so the PDF's text layer still holds real uppercase and `pdftotext` extracts "AI" for the voice-quiz article text. **One caveat for The Economist:** its maps and data charts are usually **not** `<figure><img>` at all but **`infographics.economist.com` iframe embeds** whose labels/legend are a separate HTML overlay on top of a base "artboard" PNG — so a plain image fetch would drop **every label** (a labels-less map). The snippet's **step 0** handles these by opening each infographic in a throwaway tab and screenshotting the **rendered** widget (base + labels composited, zoomed 2× for resolution), then splicing it into the reading flow. Only `public/` is served by Next, so the PDF must end up at `public/pdfs/YYYY-MM-DD.pdf` and is referenced as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`.
    - Make the folder: `mkdir -p public/pdfs`.
    - With the article page **already open** (loaded past the paywall — the snippet leaves the article tab in place; it opens a **throwaway tab** only to screenshot any Economist infographic embeds, then closes it), use `browser_run_code_unsafe` — **substitute the real date** in `OUT` and the real publication in `SOURCE_NAME`:
      ```js
@@ -80,13 +80,42 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          finally { await tab.close(); }
        }
        // 1) Wait for the (often client-rendered) body, then walk the article in
-       //    document order, collecting paragraph/heading TEXT *and* the real
-       //    content images (charts/photos) — stopping at the end-of-article footer
-       //    so related-article thumbnails and ads are excluded.
+       //    document order, collecting paragraph/heading text (WITH its inline
+       //    typography — small-caps acronyms, italics, bold, drop cap; see the
+       //    inlineHtml walker) *and* the real content images (charts/photos) —
+       //    stopping at the end-of-article footer so related-article thumbnails
+       //    and ads are excluded.
        await page.waitForFunction(() => document.querySelectorAll('article p').length > 8, { timeout: 20000 });
        const data = await page.evaluate(() => {
          const art = document.querySelector('article') || document.querySelector('main');
          const title = (document.querySelector('h1')?.innerText || document.title || '').trim();
+         const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+         // PRESERVE THE ORIGINAL TYPOGRAPHY. The Economist marks up acronyms as
+         // <small>AI</small> — the DOM text is real uppercase "AI", but its CSS
+         // (text-transform:lowercase + font-variant-caps:small-caps) RENDERS it as
+         // small capitals. `innerText` APPLIES that text-transform and returns "ai"
+         // — so the old text-only path lowercased every acronym (AI→ai, IBM→ibm) and
+         // split the drop-cap opening ("T"+"EN YEARS" → "T\nen years"). Fix: walk the
+         // RAW text nodes (nodeValue keeps "AI") and re-wrap the inline tags we care
+         // about, then re-apply small-caps / italics / bold via the print CSS below.
+         // We keep real uppercase chars + font-variant-caps (NOT text-transform), so
+         // `pdftotext` still extracts "AI" for the voice-quiz article text. Links and
+         // other unknown wrappers are unwrapped to plain text.
+         const INLINE = { EM:'em', I:'em', CITE:'em', STRONG:'strong', B:'strong', SMALL:'small', ABBR:'small', SUP:'sup', SUB:'sub' };
+         const inlineHtml = (node) => {
+           let out = '';
+           for (const c of node.childNodes) {
+             if (c.nodeType === 3) { out += esc(c.nodeValue); continue; }   // text node: RAW case ("AI")
+             if (c.nodeType !== 1) continue;
+             const cs = getComputedStyle(c);
+             if (cs.display === 'none' || cs.visibility === 'hidden' || c.getAttribute('aria-hidden') === 'true') continue;
+             const inner = inlineHtml(c);
+             if (!inner.trim()) continue;
+             const tag = INLINE[c.tagName];
+             out += tag ? `<${tag}>${inner}</${tag}>` : inner;              // unwrap span / <a> / drop-cap
+           }
+           return out;
+         };
          // The DECK / STANDFIRST — the subtitle line right under the headline.
          // It frequently carries LOAD-BEARING facts that appear NOWHERE in the
          // body (e.g. an obituary's "...died on June 22nd, aged 100"), so capture
@@ -95,8 +124,9 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          const deckEl = document.querySelector(
            '[class*="standfirst"], [class*="sub-head"], [class*="subhead"], [class*="dek"], [class*="rubric"], [data-testid*="standfirst"], [data-testid*="subhead"], h1 ~ h2, h1 + p'
          );
-         let deck = deckEl ? deckEl.innerText.replace(/\s+/g, ' ').trim() : '';
-         if (deck && (deck === title || deck.length > 320)) deck = ''; // guard: don't grab a body paragraph
+         let deckText = deckEl ? deckEl.textContent.replace(/\s+/g, ' ').trim() : '';
+         let deckHtml = deckEl ? inlineHtml(deckEl).replace(/\s+/g, ' ').trim() : '';
+         if (deckText && (deckText === title || deckText.length > 320)) { deckText = ''; deckHtml = ''; } // guard: don't grab a body paragraph
          // STOP marks the end of the article body. Breaking here is what keeps the
          // footer's "more from this section" thumbnails (and the espresso/promo
          // images that sit just after the body) OUT of the PDF.
@@ -120,7 +150,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
            const url = chosen ? chosen.url : (img.currentSrc || img.src || '');
            return /^https?:\/\//.test(url) ? url : (img.currentSrc || img.src || '');
          };
-         const blocks = [], seen = new Set();
+         const blocks = [], seen = new Set(); let firstText = true;
          for (const n of art.querySelectorAll('p, h2, h3, figure')) {
            if (n.tagName.toLowerCase() === 'figure') {
              if (n.querySelector('video')) continue;            // video poster, not a real figure
@@ -131,18 +161,22 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
              const key = (url.match(/images\/[^?]+|[^/?]+\.(?:jpe?g|png|webp|gif)/i) || [url])[0];
              if (seen.has(key)) continue; seen.add(key);        // dedupe (some imgs repeat at sizes)
              const capEl = n.querySelector('figcaption');
-             const caption = (capEl ? capEl.innerText : (img.alt || '')).replace(/\s+/g, ' ').trim();
+             const caption = (capEl ? capEl.textContent : (img.alt || '')).replace(/\s+/g, ' ').trim();
              if (/^listen to this story/i.test(caption)) continue;
              blocks.push({ type: 'img', url, caption });
              continue;
            }
-           const t = n.innerText.replace(/\s+/g, ' ').trim();
-           if (!t || t === deck || SKIP.test(t) || /your browser does not support/i.test(t)) continue;
+           const t = n.textContent.replace(/\s+/g, ' ').trim();   // raw text — for the filters below
+           if (!t || t === deckText || SKIP.test(t) || /your browser does not support/i.test(t)) continue;
            if (STOP.test(t)) break;
            if (/\bmin read\b/i.test(t) && t.length < 60) continue;  // dateline
-           blocks.push({ type: 'text', tag: n.tagName.toLowerCase() === 'p' ? 'p' : 'h2', text: t });
+           const html = inlineHtml(n).replace(/\s+/g, ' ').trim();  // formatted text — small-caps/italics kept
+           if (!html) continue;
+           const isP = n.tagName.toLowerCase() === 'p';
+           blocks.push({ type: 'text', tag: isP ? 'p' : 'h2', html, lead: isP && firstText }); // lead = first body para → drop cap
+           if (isP) firstText = false;
          }
-         return { title, deck, blocks };
+         return { title, deckText, deckHtml, blocks };
        });
        // 1b) Splice the captured infographic(s) into the reading flow. Default: just after the
        //     2nd body paragraph (near where Economist runs its lead chart). Move the anchor if a
@@ -168,15 +202,17 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          } catch { b.skip = true; }
        }
        // 3) Render text + images into a clean, plainly-styled doc and print THAT.
+       //    Text blocks already carry sanitized inline HTML (small-caps/italics/bold
+       //    preserved, from inlineHtml); captions are plain text so still get esc()'d.
        const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-       const deckHtml = data.deck ? `<p class="dek">${esc(data.deck)}</p>` : '';
+       const deckHtml = data.deckHtml ? `<p class="dek">${data.deckHtml}</p>` : '';
        const body = data.blocks.map(b => {
          if (b.type === 'img') {
            if (b.skip || !b.dataUri) return '';
            const cap = b.caption ? `<figcaption>${esc(b.caption)}</figcaption>` : '';
            return `<figure><img src="${b.dataUri}">${cap}</figure>`;
          }
-         return b.tag === 'p' ? `<p>${esc(b.text)}</p>` : `<h2>${esc(b.text)}</h2>`;
+         return b.tag === 'p' ? `<p${b.lead ? ' class="lead"' : ''}>${b.html}</p>` : `<h2>${b.html}</h2>`;
        }).join('\n');
        const html = `<!doctype html><html><head><meta charset="utf-8"><style>
          html,body{margin:0;padding:0}
@@ -186,6 +222,10 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          .src{color:#555;font-size:10pt;margin:0 0 1.2em}
          h2{font-size:13pt;margin:1.3em 0 .35em;break-after:avoid}
          p{margin:0 0 .8em;orphans:2;widows:2}
+         small{font-size:.92em;font-variant-caps:all-small-caps;letter-spacing:.02em} /* acronyms (AI, IBM, GPT) as small caps — real uppercase chars kept, so pdftotext still reads "AI" */
+         em,i{font-style:italic}
+         strong,b{font-weight:700}
+         .lead::first-letter{font-size:3.1em;font-weight:700;line-height:.82;float:left;padding:.02em .09em 0 0} /* Economist-style drop cap on the first paragraph */
          figure{margin:1.1em 0;break-inside:avoid;text-align:center}      /* keep image+caption together */
          figure img{max-width:100%;max-height:7.5in;height:auto;display:block;margin:0 auto} /* fit one page */
          figcaption{font-size:9.5pt;color:#666;margin-top:.3em;font-style:italic;text-align:left}
@@ -195,13 +235,14 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          margin: { top: '0.6in', bottom: '0.6in', left: '0.7in', right: '0.7in' } });
        const imgs = data.blocks.filter(b => b.type === 'img' && b.dataUri && !b.skip);
        const txt = data.blocks.filter(b => b.type === 'text').length;
-       return 'wrote ' + OUT + ' | deck=' + (data.deck ? 'yes' : 'no') + ' | text=' + txt
+       return 'wrote ' + OUT + ' | deck=' + (data.deckHtml ? 'yes' : 'no') + ' | text=' + txt
+         + ' | small-caps=' + (body.match(/<small>/g) || []).length
          + ' | images=' + imgs.length + ' [' + imgs.filter(b => b.url).map(b => (b.url.match(/images\/([^?/]+)/) || [, '?'])[1]).join(', ') + ']'
          + ' | infographics=' + infographics.length;
      }
      ```
      (Set `SOURCE_NAME` at the top = `The Wall Street Journal` or `The Economist`.) `page.setContent` *replaces* the live page with the clean doc before printing — that's intended.
-   - **Verify it:** the snippet returns `deck=yes|no` (was the standfirst captured?), a `text=` paragraph count, an `images=N [slugs]` list, and an **`infographics=N`** count (Economist iframe maps/charts captured separately in step 0). Expect `text` **roughly one per paragraph** (≈20–40 for a feature; under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome — re-check login/selectors), and `images` to roughly match the **real `<figure>` charts/photos** in the body (often 1–4; **`images=0` on an article you know has a chart means the image step failed** — usually a paywall/login issue or the figure markup differs, so don't ship it without checking). **On an Economist day with a map or data chart, confirm `infographics≥1`** — and when you eyeball the pages (below), check the map shows **with its labels and legend**; a labels-less map means the widget didn't render (re-run) and a bare-PNG fetch would have that failure mode. For an obituary or feature whose subtitle states a key fact (death date, age, who-did-what), confirm `deck=yes`; if it's `no`, the standfirst didn't match the selectors — grab it from `browser_snapshot` and prepend it to the text by hand. Then `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect **~150–500KB and a few pages** now that images are embedded; **tens of MB means the image step grabbed something huge** — re-check) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). **Always render the pages and eyeball them** — both that text isn't sliced at page breaks AND that the charts/photos actually appear and the charts are legible: `pdftoppm -png -r 90 public/pdfs/YYYY-MM-DD.pdf /tmp/pg` then view the `/tmp/pg-*.png` pages. If `text=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
+   - **Verify it:** the snippet returns `deck=yes|no` (was the standfirst captured?), a `text=` paragraph count, a **`small-caps=N`** count (acronyms preserved as small caps — expect `N≥1` on any Economist article, which sets AI/IBM/GPT in `<small>`; `0` there means the typography walk missed them), an `images=N [slugs]` list, and an **`infographics=N`** count (Economist iframe maps/charts captured separately in step 0). **Confirm acronym casing survived** into the extracted text — `grep -oE "\\b(AI|ai|IBM|ibm)\\b" article-text/YYYY-MM-DD.txt | sort | uniq -c` should show **uppercase** AI/IBM, not lowercase; lowercase means the `font-variant-caps`/raw-text-node path regressed to `innerText`. Expect `text` **roughly one per paragraph** (≈20–40 for a feature; under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome — re-check login/selectors), and `images` to roughly match the **real `<figure>` charts/photos** in the body (often 1–4; **`images=0` on an article you know has a chart means the image step failed** — usually a paywall/login issue or the figure markup differs, so don't ship it without checking). **On an Economist day with a map or data chart, confirm `infographics≥1`** — and when you eyeball the pages (below), check the map shows **with its labels and legend**; a labels-less map means the widget didn't render (re-run) and a bare-PNG fetch would have that failure mode. For an obituary or feature whose subtitle states a key fact (death date, age, who-did-what), confirm `deck=yes`; if it's `no`, the standfirst didn't match the selectors — grab it from `browser_snapshot` and prepend it to the text by hand. Then `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect **~150–500KB and a few pages** now that images are embedded; **tens of MB means the image step grabbed something huge** — re-check) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). **Always render the pages and eyeball them** — both that text isn't sliced at page breaks AND that the charts/photos actually appear and the charts are legible: `pdftoppm -png -r 90 public/pdfs/YYYY-MM-DD.pdf /tmp/pg` then view the `/tmp/pg-*.png` pages. If `text=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
    - Set `pdfUrl: "/pdfs/YYYY-MM-DD.pdf"` in the JSON. (To skip the PDF entirely, omit `pdfUrl` — the page then shows only the Web link.)
    - **Multi-article days** (the `articles[]` shape — see step 5): capture **one PDF per article**. `browser_navigate` to each article in turn, then run the snippet writing to `public/pdfs/YYYY-MM-DD-1.pdf`, `-2.pdf`, … (note the `-N` suffix), and put each path in that article's own `pdfUrl` inside `articles[]` — there is no top-level `pdfUrl`.
    - **Manual fallback** (only if auto-capture looks wrong): the user saves the article as a PDF by hand into the `PDFs/` drop-zone at the repo root (gitignored, raw WSJ filename), and you copy it over: `cp "PDFs/<that file>.pdf" public/pdfs/YYYY-MM-DD.pdf`. The `public/pdfs/` copy is what gets committed and deployed.
