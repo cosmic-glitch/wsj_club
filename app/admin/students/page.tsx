@@ -1,7 +1,6 @@
 import { currentUser, isAdmin } from "@/lib/auth";
 import { listStudents } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
-import AdminTabs from "@/components/AdminTabs";
 import StudentRoster, { type RosterEntry } from "@/components/StudentRoster";
 
 // Reads cookies + Blob at request time — never static.
@@ -42,7 +41,9 @@ export default async function StudentsPage() {
     );
   }
 
-  const students = await listStudents(user);
+  // Only active students are shown/managed for now (there's no deactivate/
+  // reactivate in the UI — teachers can add, rename, and reset passwords).
+  const students = (await listStudents(user)).filter((s) => s.active !== false);
 
   // Per-student stats (attempts + last active) from the saved sessions, so the
   // roster shows activity at a glance. Best-effort: a load error just yields
@@ -72,7 +73,6 @@ export default async function StudentsPage() {
 
   return (
     <div>
-      <AdminTabs active="students" />
       <StudentRoster students={roster} teacherName={user} />
     </div>
   );

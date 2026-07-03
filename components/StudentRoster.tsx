@@ -191,18 +191,6 @@ function StudentRow({
     }
   }
 
-  async function toggleActive() {
-    const activating = !student.active;
-    if (
-      !activating &&
-      !confirm(
-        `Remove ${student.displayName}? They won't be able to log in. Their past scores are kept, and you can reactivate them later.`
-      )
-    )
-      return;
-    if (await patch({ action: "setActive", active: activating })) refresh();
-  }
-
   const lastActive =
     student.lastActiveIso == null
       ? "—"
@@ -278,14 +266,6 @@ function StudentRow({
               className="text-stone-500 hover:text-stone-900 disabled:opacity-50"
             >
               Reset password
-            </button>
-            <button
-              type="button"
-              onClick={toggleActive}
-              disabled={busy}
-              className="text-stone-500 hover:text-stone-900 disabled:opacity-50"
-            >
-              {student.active ? "Remove" : "Reactivate"}
             </button>
           </div>
         )}

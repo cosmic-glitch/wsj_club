@@ -2,7 +2,6 @@ import { currentUser, isAdmin } from "@/lib/auth";
 import { listStudents } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
 import { dateBig } from "@/lib/content";
-import AdminTabs from "@/components/AdminTabs";
 import AdminSessions, {
   type Session,
   type ArticleGroup,
@@ -92,8 +91,6 @@ export default async function AdminPage() {
 
   return (
     <div>
-      {/* Teachers get tabs to their classroom management; students don't. */}
-      {admin && <AdminTabs active="scores" />}
       <h1 className="font-serif text-3xl font-bold text-stone-900">{heading}</h1>
       <p className="mt-1 text-sm text-stone-500">{subtitle}</p>
 
