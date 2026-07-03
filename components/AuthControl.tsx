@@ -60,10 +60,10 @@ export default function AuthControl() {
     window.location.reload();
   }
 
-  // Soft-filled chip styling shared by every header button (nav + Log out +
-  // Log in), so they read as buttons and all look the same.
-  const navPill =
-    "rounded-full bg-stone-100 px-3 py-1.5 text-sm font-medium text-stone-700 transition hover:bg-stone-200";
+  // Simple blue links shared by every header action (nav + Log out + Log in) —
+  // the universal "clickable" affordance, no chip padding, all styled the same.
+  const navLink =
+    "text-sm font-medium text-blue-600 transition hover:text-blue-700 hover:underline";
 
   if (!ready) return <span className="text-sm text-stone-300">·</span>;
 
@@ -82,19 +82,19 @@ export default function AuthControl() {
         <div className="flex items-center gap-2">
           {isAdmin ? (
             <>
-              <Link href="/admin" className={navPill}>
+              <Link href="/admin" className={navLink}>
                 All Scores
               </Link>
-              <Link href="/admin/students" className={navPill}>
+              <Link href="/admin/students" className={navLink}>
                 Manage Students
               </Link>
             </>
           ) : (
-            <Link href="/admin" className={navPill}>
+            <Link href="/admin" className={navLink}>
               My Scores
             </Link>
           )}
-          <button type="button" onClick={logout} className={navPill}>
+          <button type="button" onClick={logout} className={navLink}>
             Log out
           </button>
         </div>
@@ -104,7 +104,7 @@ export default function AuthControl() {
 
   return (
     <div ref={boxRef} className="relative">
-      <button type="button" onClick={() => setOpen((o) => !o)} className={navPill}>
+      <button type="button" onClick={() => setOpen((o) => !o)} className={navLink}>
         Log in
       </button>
       {open && (
