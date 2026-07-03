@@ -21,6 +21,10 @@ export type Session = {
   title: string;
   studentName: string;
   loginUser?: string;
+  // The owning teacher's username, stamped at save time so /admin can scope each
+  // teacher to their own classroom. Older sessions predate it (undefined) — the
+  // /admin filter then falls back to roster membership by loginUser.
+  teacherId?: string;
   endedAt: string;
   // Length of the saved recording (total talk time — the same duration the
   // playback control shows), in ms. Undefined when nothing was recorded → "—".

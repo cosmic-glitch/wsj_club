@@ -16,15 +16,21 @@ import { createContext, useContext, useEffect, useState } from "react";
  * generated) — just hoisted to one place instead of repeated per component.
  */
 
+type Role = "teacher" | "student" | null;
+
 type Auth = {
   user: string | null;
   isAdmin: boolean;
+  isOwner: boolean;
+  role: Role;
   ready: boolean; // false until the first /api/me has resolved
 };
 
 const AuthContext = createContext<Auth>({
   user: null,
   isAdmin: false,
+  isOwner: false,
+  role: null,
   ready: false,
 });
 
@@ -32,6 +38,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [auth, setAuth] = useState<Auth>({
     user: null,
     isAdmin: false,
+    isOwner: false,
+    role: null,
     ready: false,
   });
 
@@ -42,10 +50,20 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         setAuth({
           user: d.username ?? null,
           isAdmin: Boolean(d.isAdmin),
+          isOwner: Boolean(d.isOwner),
+          role: (d.role as Role) ?? null,
           ready: true,
         })
       )
-      .catch(() => setAuth({ user: null, isAdmin: false, ready: true }));
+      .catch(() =>
+        setAuth({
+          user: null,
+          isAdmin: false,
+          isOwner: false,
+          role: null,
+          ready: true,
+        })
+      );
   }, []);
 
   return <AuthContext.Provider value={auth}>{children}</AuthContext.Provider>;

@@ -1,5 +1,6 @@
 import { list } from "@vercel/blob";
 import { currentUser, isAdmin } from "@/lib/auth";
+import { listStudents } from "@/lib/users";
 import { dateBig } from "@/lib/content";
 import AdminSessions, {
   type Session,
@@ -83,22 +84,35 @@ export default async function AdminPage() {
     );
   }
 
-  // The teacher (admin) sees every student's attempts; a student sees only their
-  // own. Delete stays teacher-only (the route is admin-gated regardless).
-  const admin = isAdmin(user);
+  // A teacher (admin) sees their OWN classroom's attempts; a student sees only
+  // their own. Delete stays teacher-only (the route is admin-gated + ownership-
+  // checked regardless).
+  const admin = await isAdmin(user);
   const result = await loadSessions();
 
-  // For a student, filter to their OWN attempts *on the server* so another
-  // student's sessions never reach the browser. Match on loginUser (the real
-  // login), falling back to studentName for older sessions that predate it.
-  // Cancelled attempts are teacher-only — a student never sees them, even
-  // their own (they were told a cancelled quiz "won't count").
-  const visible =
-    "error" in result || admin
-      ? result
-      : result.filter(
-          (s) => !s.cancelled && (s.loginUser ?? s.studentName) === user
-        );
+  // Scope the visible sessions *on the server* so another classroom's (or
+  // another student's) sessions never reach the browser.
+  //   - Teacher: their students' attempts + their own — matched by the stamped
+  //     teacherId, falling back to roster membership by loginUser for older
+  //     sessions saved before teacherId existed. Cancelled attempts stay visible
+  //     to the teacher.
+  //   - Student: only their own, and never a cancelled one (they were told a
+  //     cancelled quiz "won't count").
+  let visible: typeof result;
+  if ("error" in result) {
+    visible = result;
+  } else if (admin) {
+    const roster = new Set((await listStudents(user!)).map((s) => s.username));
+    roster.add(user!); // include the teacher's own attempts
+    visible = result.filter((s) => {
+      const owner = s.loginUser ?? s.studentName ?? "";
+      return s.teacherId === user || roster.has(owner);
+    });
+  } else {
+    visible = result.filter(
+      (s) => !s.cancelled && (s.loginUser ?? s.studentName) === user
+    );
+  }
 
   const heading = admin ? "Quiz sessions" : "Your scores";
   const subtitle = admin

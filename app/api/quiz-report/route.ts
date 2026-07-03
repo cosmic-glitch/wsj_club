@@ -1,5 +1,6 @@
 import { put } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
+import { getUser } from "@/lib/users";
 import { getReading } from "@/lib/content";
 import { getArticleText } from "@/lib/article-text";
 import { buildReportPrompt } from "@/lib/quiz-prompt";
@@ -184,11 +185,19 @@ export async function POST(request: Request) {
     r.score = applyLeniency(r.score);
   }
 
+  // Stamp the owning teacher so /admin can scope each teacher to their own
+  // classroom by a direct field match (rather than re-deriving from the roster
+  // every load). Looked up from the student's record; undefined if the taker is
+  // a teacher quizzing themselves or an un-migrated user (the /admin filter then
+  // falls back to roster membership).
+  const teacherId = (await getUser(user))?.teacherId;
+
   const session = {
     date,
     title: reading.title,
     studentName,
     loginUser: user,
+    teacherId,
     endedAt: new Date().toISOString(),
     durationMs,
     transcript,
