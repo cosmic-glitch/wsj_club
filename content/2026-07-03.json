@@ -1,0 +1,131 @@
+{
+  "date": "2026-07-03",
+  "title": "Why big AI labs are hiring so many philosophers",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/06/24/why-big-ai-labs-are-hiring-so-many-philosophers",
+  "pdfUrl": "/pdfs/2026-07-03.pdf",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "sycophancy",
+      "partOfSpeech": "noun",
+      "articleQuote": "Many current ai systems tend towards sycophancy.",
+      "inContext": "Here it names the habit AI chatbots have of telling users what they want to hear — agreeing and flattering instead of giving an honest, truthful answer. Labs train models in the Socratic method partly to cut it down.",
+      "meaning": "Sycophancy is excessive flattery or eager agreement aimed at pleasing someone (especially someone powerful) to win their approval, rather than being honest. A person who does it is a sycophant.",
+      "examples": [
+        "The new kid laughed at every single one of the coach's jokes, and the team quietly rolled their eyes at the sycophancy.",
+        "A real friend tells you when your plan is bad; sycophancy just cheers you on into a mistake."
+      ]
+    },
+    {
+      "word": "haemorrhaging",
+      "partOfSpeech": "noun (used figuratively)",
+      "articleQuote": "Dr Floridi describes the scale of departures from philosophy departments as a “haemorrhaging”.",
+      "inContext": "Philosophy departments are losing professors to AI companies so fast that it's compared to a body bleeding out — a heavy loss that is hard to stop.",
+      "meaning": "To haemorrhage (American spelling: hemorrhage) literally means to bleed heavily. Figuratively, to haemorrhage something — money, talent, users — is to lose it rapidly and uncontrollably.",
+      "examples": [
+        "After the cheating scandal, the app was haemorrhaging users, losing thousands of accounts every day.",
+        "If you keep buying snacks at every game, your savings will haemorrhage before the season is half over."
+      ]
+    },
+    {
+      "word": "fraught",
+      "partOfSpeech": "adjective",
+      "articleQuote": "He predicts ethically fraught lawsuits.",
+      "inContext": "The lawsuits will be loaded with hard, tense moral questions — because a self-driving car's software may be programmed in advance to decide who gets hurt in a crash.",
+      "meaning": "Fraught means filled with something bad — tension, risk, or difficulty. You'll see it as “fraught with danger” (full of danger) or on its own, as in “a fraught situation” (a tense, difficult one).",
+      "examples": [
+        "The group project got fraught the moment two members insisted on completely different topics.",
+        "Sneaking the surprise cake past his mom was a fraught operation from start to finish."
+      ]
+    },
+    {
+      "word": "feigned",
+      "partOfSpeech": "verb / adjective",
+      "articleQuote": "The Socratic method… uses feigned ignorance and sequential questioning to clarify meanings.",
+      "inContext": "Socrates pretended not to know things on purpose. His “ignorance” was faked — a tactic to make the other person explain their view and expose the holes in it.",
+      "meaning": "To feign something is to fake or pretend it — an emotion, a reaction, a condition — that you don't really feel or have. “Feigned” is the adjective: pretended, put on, not genuine.",
+      "examples": [
+        "She feigned surprise at the party, even though she'd known about it for a week.",
+        "He feigned a stomachache to skip the test, but the school nurse wasn't fooled for a second."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Deontology",
+      "articleQuote": "Popular with Kant, among others, this imposes strict rules that prohibit things like lying, coercion and treating people as a means rather than an end, even if it is for a greater good.",
+      "inContext": "Deontology is one of the two ethical “operating systems” labs build into AI. A deontological model follows fixed rules — don't lie, don't manipulate — even when breaking them might produce a better result. Anthropic's Claude “constitution” is full of such rules.",
+      "meaning": "Deontology is an approach to ethics that judges an action by whether it follows moral rules or duties, not by its consequences. Some acts are simply forbidden — lying, cheating, using a person as a mere tool — no matter how good the outcome would be. (From the Greek deon, “duty.”)"
+    },
+    {
+      "name": "Consequentialism",
+      "articleQuote": "The other approach to ethics of interest to philosophers of ai is called consequentialism. It weighs costs against benefits to decide what to do.",
+      "inContext": "This is the rival framework. A consequentialist AI — like the software in a self-driving car deciding how to crash, or a weapons system weighing military gain against civilian deaths — picks whatever action produces the best overall outcome, even if that means accepting some harm.",
+      "meaning": "Consequentialism judges an action entirely by its results: the right choice is the one that produces the most good (or the least harm) overall, so the ends can justify the means. Its most famous version is utilitarianism — “the greatest good for the greatest number.” Deontology and consequentialism are the two poles most ethical debates swing between."
+    },
+    {
+      "name": "The Socratic method",
+      "articleQuote": "The Socratic method—as described by Plato, an ancient Greek philosopher—uses feigned ignorance and sequential questioning to clarify meanings, spot contradictions and reveal ramifications.",
+      "inContext": "Training an AI in the Socratic method makes it question and probe rather than simply agree, so it chases the truth instead of flattering the user (less sycophancy).",
+      "meaning": "The Socratic method (named for the ancient Greek philosopher Socrates) reaches understanding through a series of probing questions rather than by stating answers. By repeatedly asking “what do you mean by that?” and “then how do you explain this?”, it surfaces contradictions and hidden assumptions in someone's thinking — a tool used everywhere from law-school classrooms to sharp debate."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article opens with a surprising figure from the Federal Reserve Bank of New York. What did it show about philosophy graduates in 2024?",
+      "options": [
+        "They earned far higher starting salaries than other majors",
+        "They were less likely to be unemployed than computer-science graduates",
+        "They almost always stayed in universities rather than industry",
+        "They were the least likely of all majors to be hired"
+      ],
+      "answerIndex": 1,
+      "explanation": "In 2024, 5.1% of philosophy graduates were unemployed, against 7% of computer-science graduates."
+    },
+    {
+      "question": "A self-driving car's software, facing an unavoidable crash, is programmed to choose the “least tragic” outcome by weighing one harm against another. This is an example of which ethical approach?",
+      "options": [
+        "Deontology",
+        "Consequentialism",
+        "The Socratic method",
+        "Sycophancy"
+      ],
+      "answerIndex": 1,
+      "explanation": "Consequentialism decides by weighing costs and benefits to reach the best overall outcome — unlike rule-based deontology, which wouldn't calculate such trade-offs."
+    },
+    {
+      "question": "Anthropic's “constitution” for its Claude models bans acts like lying and coercion even when breaking those rules might lead to a better result. Judging actions by fixed rules rather than outcomes is called:",
+      "options": [
+        "Consequentialism",
+        "Utilitarianism",
+        "Deontology",
+        "Moral deskilling"
+      ],
+      "answerIndex": 2,
+      "explanation": "Deontology holds that some actions are right or wrong in themselves, whatever their consequences."
+    },
+    {
+      "question": "The article says AI models trained in the Socratic method tend to be less sycophantic. In practice, that means they are more likely to:",
+      "options": [
+        "Agree with users and tell them what they want to hear",
+        "Pursue the truth even when it isn't flattering to the user",
+        "Avoid answering difficult or sensitive questions",
+        "Produce much longer, more detailed answers"
+      ],
+      "answerIndex": 1,
+      "explanation": "Sycophancy is flattery meant to please; the Socratic method's probing questions push a model toward honest truth-seeking instead."
+    },
+    {
+      "question": "Socrates used “feigned ignorance” as part of his method. Someone who feigns ignorance is:",
+      "options": [
+        "Genuinely unable to understand the topic",
+        "Pretending not to know in order to draw the other person out",
+        "Honestly admitting the limits of their knowledge",
+        "Refusing to share what they know"
+      ],
+      "answerIndex": 1,
+      "explanation": "To feign is to fake or pretend; Socrates only pretended not to know, as a tactic to make others explain and examine their own reasoning."
+    }
+  ]
+}
