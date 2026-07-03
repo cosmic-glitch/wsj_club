@@ -60,9 +60,10 @@ export default function AuthControl() {
     window.location.reload();
   }
 
-  // Outline-pill styling for the primary nav actions, so they read as buttons.
+  // Soft-filled chip styling shared by every header button (nav + Log out +
+  // Log in), so they read as buttons and all look the same.
   const navPill =
-    "rounded-full border border-stone-300 px-3 py-1.5 text-sm font-medium text-stone-700 transition hover:border-stone-400 hover:bg-stone-100";
+    "rounded-full bg-stone-100 px-3 py-1.5 text-sm font-medium text-stone-700 transition hover:bg-stone-200";
 
   if (!ready) return <span className="text-sm text-stone-300">·</span>;
 
@@ -93,11 +94,7 @@ export default function AuthControl() {
               My Scores
             </Link>
           )}
-          <button
-            type="button"
-            onClick={logout}
-            className="ml-1 text-sm text-stone-400 transition hover:text-stone-700"
-          >
+          <button type="button" onClick={logout} className={navPill}>
             Log out
           </button>
         </div>
