@@ -1,7 +1,8 @@
-import { list } from "@vercel/blob";
 import { currentUser, isAdmin } from "@/lib/auth";
 import { listStudents } from "@/lib/users";
+import { loadSessions } from "@/lib/sessions";
 import { dateBig } from "@/lib/content";
+import AdminTabs from "@/components/AdminTabs";
 import AdminSessions, {
   type Session,
   type ArticleGroup,
@@ -13,36 +14,6 @@ export const dynamic = "force-dynamic";
 export const metadata = {
   title: "Scores · WSJ Reading Club",
 };
-
-async function loadSessions(): Promise<Session[] | { error: string }> {
-  try {
-    const { blobs } = await list({ prefix: "quiz-sessions/" });
-    // Audio recordings (.webm/.mp4) live in the SAME prefix as the session
-    // JSON, so only fetch/parse the .json files — never try to JSON.parse a
-    // recording. Each parse is independently guarded too, so one corrupt blob
-    // can't take down the whole page (returns null → filtered out).
-    const sessions = (
-      await Promise.all(
-        blobs
-          .filter((b) => b.pathname.endsWith(".json"))
-          .map(async (b) => {
-            try {
-              const res = await fetch(b.url, { cache: "no-store" });
-              const session = (await res.json()) as Session;
-              return { ...session, blobUrl: b.url };
-            } catch (err) {
-              console.error("Skipping unreadable session blob:", b.pathname, err);
-              return null;
-            }
-          })
-      )
-    ).filter((s): s is Session => s !== null);
-    return sessions;
-  } catch (err) {
-    console.error("Loading quiz sessions failed:", err);
-    return { error: "Could not load sessions (is Blob storage configured?)." };
-  }
-}
 
 /**
  * Group every saved session by its article (one table row per day), newest
@@ -121,6 +92,8 @@ export default async function AdminPage() {
 
   return (
     <div>
+      {/* Teachers get tabs to their classroom management; students don't. */}
+      {admin && <AdminTabs active="scores" />}
       <h1 className="font-serif text-3xl font-bold text-stone-900">{heading}</h1>
       <p className="mt-1 text-sm text-stone-500">{subtitle}</p>
 

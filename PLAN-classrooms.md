@@ -1,5 +1,8 @@
 # Plan — Classrooms (per-teacher students & scoped scores)
 
+> **Status:** Phase 1 ✅ shipped · Phase 2 ✅ shipped · Phase 3 out of scope.
+> Live behaviour is documented in `CLAUDE.md` (Voice quiz › *Classrooms*).
+
 Give each teacher their own set of students. A teacher manages only their own
 students and sees only their own students' quiz sessions. Student accounts are
 created/managed through the UI (not by editing an env var + redeploying).

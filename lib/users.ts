@@ -86,7 +86,14 @@ async function loadAll(force = false): Promise<Map<string, User>> {
       .filter((b) => b.pathname.endsWith(".json"))
       .map(async (b) => {
         try {
-          const res = await fetch(b.url, { cache: "no-store" });
+          // Cache-bust the CDN with the blob's uploadedAt. The public Blob URL
+          // is edge-cached, so after an overwrite (e.g. a password reset) a plain
+          // fetch can serve a STALE copy from a previously-warmed edge — even with
+          // no-store, which only governs our own client cache. list() metadata is
+          // read-after-write consistent, so keying the URL by uploadedAt turns a
+          // changed record into a fresh cache key and forces the current content.
+          const v = new Date(b.uploadedAt).getTime();
+          const res = await fetch(`${b.url}?v=${v}`, { cache: "no-store" });
           const u = (await res.json()) as User;
           if (u && typeof u.username === "string") users.set(u.username, u);
         } catch (err) {
