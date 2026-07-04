@@ -1,5 +1,5 @@
-import { currentUser, isAdmin } from "@/lib/auth";
-import { listStudents } from "@/lib/users";
+import { currentUser, isAdmin, isOwner } from "@/lib/auth";
+import { listStudents, listTeachers, type PublicUser } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
 import StudentRoster, { type RosterEntry } from "@/components/StudentRoster";
 
@@ -41,13 +41,10 @@ export default async function StudentsPage() {
     );
   }
 
-  // Only active students are shown/managed for now (there's no deactivate/
-  // reactivate in the UI — teachers can add, rename, and reset passwords).
-  const students = (await listStudents(user)).filter((s) => s.active !== false);
-
-  // Per-student stats (attempts + last active) from the saved sessions, so the
-  // roster shows activity at a glance. Best-effort: a load error just yields
-  // zero-stat rows rather than blanking the page.
+  // Per-student stats (attempts + last active) from the saved sessions, keyed by
+  // username, so every roster shows activity at a glance. Best-effort: a load
+  // error just yields zero-stat rows rather than blanking the page. Loaded once
+  // and shared across all classrooms (the owner may render several).
   const stats = new Map<string, { attempts: number; lastActiveIso: string | null }>();
   const result = await loadSessions();
   if (!("error" in result)) {
@@ -63,17 +60,53 @@ export default async function StudentsPage() {
     }
   }
 
-  const roster: RosterEntry[] = students.map((s) => ({
-    username: s.username,
-    displayName: s.displayName,
-    active: s.active !== false,
-    attempts: stats.get(s.username)?.attempts ?? 0,
-    lastActiveIso: stats.get(s.username)?.lastActiveIso ?? null,
-  }));
+  // Only active students are shown/managed for now (there's no deactivate/
+  // reactivate in the UI — teachers can add, rename, and reset passwords).
+  const toRoster = (students: PublicUser[]): RosterEntry[] =>
+    students
+      .filter((s) => s.active !== false)
+      .map((s) => ({
+        username: s.username,
+        displayName: s.displayName,
+        active: s.active !== false,
+        attempts: stats.get(s.username)?.attempts ?? 0,
+        lastActiveIso: stats.get(s.username)?.lastActiveIso ?? null,
+      }));
+
+  const ownRoster = toRoster(await listStudents(user));
+
+  // A regular teacher manages just their own classroom (unchanged).
+  if (!isOwner(user)) {
+    return (
+      <div>
+        <StudentRoster students={ownRoster} teacherName={user} />
+      </div>
+    );
+  }
+
+  // The owner also SEES every other teacher's classroom, read-only (they manage
+  // only their own — the /api/students* routes enforce that regardless).
+  const others = (await listTeachers()).filter((t) => t.username !== user);
+  const otherClassrooms = await Promise.all(
+    others.map(async (t) => ({
+      teacher: t,
+      roster: toRoster(await listStudents(t.username)),
+    }))
+  );
 
   return (
-    <div>
-      <StudentRoster students={roster} teacherName={user} />
+    <div className="space-y-12">
+      <StudentRoster students={ownRoster} teacherName={user} title="My classroom" />
+      {otherClassrooms.map(({ teacher, roster }) => (
+        <StudentRoster
+          key={teacher.username}
+          students={roster}
+          teacherName={teacher.username}
+          title={`${teacher.displayName}’s classroom`}
+          subtitle={`Managed by ${teacher.displayName}. View only — you can see this classroom but only manage your own.`}
+          readOnly
+        />
+      ))}
     </div>
   );
 }

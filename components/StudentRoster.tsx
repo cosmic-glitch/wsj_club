@@ -30,9 +30,19 @@ type Credential = { username: string; password: string; reset: boolean };
 export default function StudentRoster({
   students,
   teacherName,
+  title = "My classroom",
+  subtitle = "The students you manage. Add a student to give them a login for the voice quiz.",
+  readOnly = false,
 }: {
   students: RosterEntry[];
   teacherName: string;
+  title?: string;
+  subtitle?: string;
+  // When true (the owner viewing ANOTHER teacher's classroom), the roster is
+  // view-only: no Add button and no Rename/Reset row actions. The /api/students*
+  // routes ownership-check every mutation and don't exempt the owner, so hiding
+  // the controls here matches what the owner is actually allowed to do.
+  readOnly?: boolean;
 }) {
   const router = useRouter();
   const [addOpen, setAddOpen] = useState(false);
@@ -43,26 +53,27 @@ export default function StudentRoster({
 
   return (
     <div>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-4">
         <div>
-          <h1 className="font-serif text-3xl font-bold text-stone-900">My classroom</h1>
-          <p className="mt-1 text-sm text-stone-500">
-            The students you manage. Add a student to give them a login for the
-            voice quiz.
-          </p>
+          <h1 className="font-serif text-3xl font-bold text-stone-900">{title}</h1>
+          <p className="mt-1 text-sm text-stone-500">{subtitle}</p>
         </div>
-        <button
-          type="button"
-          onClick={() => setAddOpen(true)}
-          className="shrink-0 rounded-lg bg-stone-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-stone-700"
-        >
-          + Add student
-        </button>
+        {!readOnly && (
+          <button
+            type="button"
+            onClick={() => setAddOpen(true)}
+            className="shrink-0 rounded-lg bg-stone-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-stone-700"
+          >
+            + Add student
+          </button>
+        )}
       </div>
 
       {students.length === 0 ? (
         <p className="mt-6 rounded-lg border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
-          No students yet. Add your first student to get started.
+          {readOnly
+            ? "No students in this classroom yet."
+            : "No students yet. Add your first student to get started."}
         </p>
       ) : (
         <div className="mt-6 overflow-hidden rounded-xl border border-stone-200 bg-white">
@@ -73,7 +84,7 @@ export default function StudentRoster({
                 <th className="px-4 py-2 font-medium">Username</th>
                 <th className="px-4 py-2 text-right font-medium">Attempts</th>
                 <th className="px-4 py-2 font-medium">Last active</th>
-                <th className="px-4 py-2 text-right font-medium">Actions</th>
+                {!readOnly && <th className="px-4 py-2 text-right font-medium">Actions</th>}
               </tr>
             </thead>
             <tbody className="divide-y divide-stone-100">
@@ -81,6 +92,7 @@ export default function StudentRoster({
                 <StudentRow
                   key={s.username}
                   student={s}
+                  readOnly={readOnly}
                   renaming={renaming === s.username}
                   busy={busyRow === s.username}
                   onStartRename={() => setRenaming(s.username)}
@@ -123,6 +135,7 @@ export default function StudentRoster({
 
 function StudentRow({
   student,
+  readOnly,
   renaming,
   busy,
   onStartRename,
@@ -132,6 +145,7 @@ function StudentRow({
   refresh,
 }: {
   student: RosterEntry;
+  readOnly: boolean;
   renaming: boolean;
   busy: boolean;
   onStartRename: () => void;
@@ -204,7 +218,7 @@ function StudentRow({
   return (
     <tr className={student.active ? "" : "bg-stone-50 text-stone-400"}>
       <td className="px-4 py-3">
-        {renaming ? (
+        {renaming && !readOnly ? (
           <span className="flex items-center gap-2">
             <input
               value={draftName}
@@ -248,28 +262,30 @@ function StudentRow({
         {student.attempts}
       </td>
       <td className="px-4 py-3 text-stone-500">{lastActive}</td>
-      <td className="px-4 py-3">
-        {!renaming && (
-          <div className="flex justify-end gap-3 text-xs">
-            <button
-              type="button"
-              onClick={onStartRename}
-              disabled={busy}
-              className="text-stone-500 hover:text-stone-900 disabled:opacity-50"
-            >
-              Rename
-            </button>
-            <button
-              type="button"
-              onClick={resetPassword}
-              disabled={busy}
-              className="text-stone-500 hover:text-stone-900 disabled:opacity-50"
-            >
-              Reset password
-            </button>
-          </div>
-        )}
-      </td>
+      {!readOnly && (
+        <td className="px-4 py-3">
+          {!renaming && (
+            <div className="flex justify-end gap-3 text-xs">
+              <button
+                type="button"
+                onClick={onStartRename}
+                disabled={busy}
+                className="text-stone-500 hover:text-stone-900 disabled:opacity-50"
+              >
+                Rename
+              </button>
+              <button
+                type="button"
+                onClick={resetPassword}
+                disabled={busy}
+                className="text-stone-500 hover:text-stone-900 disabled:opacity-50"
+              >
+                Reset password
+              </button>
+            </div>
+          )}
+        </td>
+      )}
     </tr>
   );
 }

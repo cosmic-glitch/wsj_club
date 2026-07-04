@@ -1,5 +1,5 @@
-import { currentUser, isAdmin } from "@/lib/auth";
-import { listStudents } from "@/lib/users";
+import { currentUser, isAdmin, isOwner } from "@/lib/auth";
+import { listStudents, listTeachers } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
 import { dateBig } from "@/lib/content";
 import AdminSessions, {
@@ -39,6 +39,47 @@ function groupByArticle(sessions: Session[]): ArticleGroup[] {
   return groups;
 }
 
+/**
+ * Scope a session list to one teacher's classroom: sessions stamped with that
+ * teacherId, or (fallback for older sessions saved before teacherId existed)
+ * whose owning student/teacher is in the roster. The roster includes the teacher
+ * so their own attempts show too.
+ */
+function scopeToClassroom(
+  sessions: Session[],
+  teacher: string,
+  roster: Set<string>
+): Session[] {
+  return sessions.filter((s) => {
+    const owner = s.loginUser ?? s.studentName ?? "";
+    return s.teacherId === teacher || roster.has(owner);
+  });
+}
+
+/** One classroom's card: a labeled heading over its by-article attempts table. */
+function ClassroomSection({
+  label,
+  groups,
+  canDelete,
+}: {
+  label: string;
+  groups: ArticleGroup[];
+  canDelete: boolean;
+}) {
+  return (
+    <section>
+      <h2 className="font-serif text-xl font-bold text-stone-800">{label}</h2>
+      {groups.length === 0 ? (
+        <p className="mt-3 rounded-lg border border-dashed border-stone-300 bg-white p-6 text-center text-sm text-stone-500">
+          No quiz sessions yet.
+        </p>
+      ) : (
+        <AdminSessions groups={groups} canDelete={canDelete} />
+      )}
+    </section>
+  );
+}
+
 export default async function AdminPage() {
   const user = await currentUser();
 
@@ -54,57 +95,109 @@ export default async function AdminPage() {
     );
   }
 
-  // A teacher (admin) sees their OWN classroom's attempts; a student sees only
-  // their own. Delete stays teacher-only (the route is admin-gated + ownership-
-  // checked regardless).
   const admin = await isAdmin(user);
   const result = await loadSessions();
 
-  // Scope the visible sessions *on the server* so another classroom's (or
-  // another student's) sessions never reach the browser.
-  //   - Teacher: their students' attempts + their own — matched by the stamped
-  //     teacherId, falling back to roster membership by loginUser for older
-  //     sessions saved before teacherId existed. Cancelled attempts stay visible
-  //     to the teacher.
-  //   - Student: only their own, and never a cancelled one (they were told a
-  //     cancelled quiz "won't count").
-  let visible: typeof result;
   if ("error" in result) {
-    visible = result;
-  } else if (admin) {
-    const roster = new Set((await listStudents(user!)).map((s) => s.username));
-    roster.add(user!); // include the teacher's own attempts
-    visible = result.filter((s) => {
-      const owner = s.loginUser ?? s.studentName ?? "";
-      return s.teacherId === user || roster.has(owner);
-    });
-  } else {
-    visible = result.filter(
-      (s) => !s.cancelled && (s.loginUser ?? s.studentName) === user
+    return (
+      <div>
+        <h1 className="font-serif text-3xl font-bold text-stone-900">
+          {admin ? "Quiz sessions" : "Your scores"}
+        </h1>
+        <p className="mt-6 rounded-lg bg-stone-100 px-4 py-3 text-sm text-stone-600">
+          {result.error}
+        </p>
+      </div>
     );
   }
 
-  const heading = admin ? "Quiz sessions" : "Your scores";
-  const subtitle = admin
-    ? "Saved voice-quiz attempts by article — click any attempt for its full report card, recording, and transcript."
-    : "Your saved voice-quiz attempts — click any attempt for its full report card, recording, and transcript.";
+  // A student sees only their own attempts, and never a cancelled one (they were
+  // told a cancelled quiz "won't count"). Scoped on the server so another
+  // student's data never reaches the browser.
+  if (!admin) {
+    const visible = result.filter(
+      (s) => !s.cancelled && (s.loginUser ?? s.studentName) === user
+    );
+    return (
+      <div>
+        <h1 className="font-serif text-3xl font-bold text-stone-900">Your scores</h1>
+        <p className="mt-1 text-sm text-stone-500">
+          Your saved voice-quiz attempts — click any attempt for its full report
+          card, recording, and transcript.
+        </p>
+        {visible.length === 0 ? (
+          <p className="mt-6 rounded-lg border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
+            You haven&apos;t taken any voice quizzes yet.
+          </p>
+        ) : (
+          <AdminSessions groups={groupByArticle(visible)} canDelete={false} />
+        )}
+      </div>
+    );
+  }
+
+  // Build a scoped classroom (roster = the teacher's students + the teacher).
+  // Only the caller's OWN classroom is deletable; the owner views others read-
+  // only (the delete route ownership-checks regardless).
+  async function classroomGroups(teacher: string): Promise<ArticleGroup[]> {
+    const roster = new Set((await listStudents(teacher)).map((s) => s.username));
+    roster.add(teacher);
+    return groupByArticle(scopeToClassroom(result as Session[], teacher, roster));
+  }
+
+  // A regular teacher sees only their own classroom (unchanged: a single table).
+  if (!isOwner(user)) {
+    const groups = await classroomGroups(user);
+    return (
+      <div>
+        <h1 className="font-serif text-3xl font-bold text-stone-900">Quiz sessions</h1>
+        <p className="mt-1 text-sm text-stone-500">
+          Saved voice-quiz attempts by article — click any attempt for its full
+          report card, recording, and transcript.
+        </p>
+        {groups.length === 0 ? (
+          <p className="mt-6 rounded-lg border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
+            No quiz sessions yet.
+          </p>
+        ) : (
+          <AdminSessions groups={groups} canDelete={true} />
+        )}
+      </div>
+    );
+  }
+
+  // The owner sees every classroom as its own section — their own first
+  // (deletable), then each other teacher's (read-only).
+  const others = (await listTeachers()).filter((t) => t.username !== user);
+  const [ownGroups, otherSections] = await Promise.all([
+    classroomGroups(user),
+    Promise.all(
+      others.map(async (t) => ({
+        key: t.username,
+        label: `${t.displayName}’s classroom`,
+        groups: await classroomGroups(t.username),
+      }))
+    ),
+  ]);
 
   return (
     <div>
-      <h1 className="font-serif text-3xl font-bold text-stone-900">{heading}</h1>
-      <p className="mt-1 text-sm text-stone-500">{subtitle}</p>
-
-      {"error" in visible ? (
-        <p className="mt-6 rounded-lg bg-stone-100 px-4 py-3 text-sm text-stone-600">
-          {visible.error}
-        </p>
-      ) : visible.length === 0 ? (
-        <p className="mt-6 rounded-lg border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
-          {admin ? "No quiz sessions yet." : "You haven't taken any voice quizzes yet."}
-        </p>
-      ) : (
-        <AdminSessions groups={groupByArticle(visible)} canDelete={admin} />
-      )}
+      <h1 className="font-serif text-3xl font-bold text-stone-900">Quiz sessions</h1>
+      <p className="mt-1 text-sm text-stone-500">
+        Every classroom — your own and each teacher&apos;s. Click any attempt for
+        its full report card, recording, and transcript.
+      </p>
+      <div className="mt-8 space-y-10">
+        <ClassroomSection label="My classroom" groups={ownGroups} canDelete={true} />
+        {otherSections.map((sec) => (
+          <ClassroomSection
+            key={sec.key}
+            label={sec.label}
+            groups={sec.groups}
+            canDelete={false}
+          />
+        ))}
+      </div>
     </div>
   );
 }
