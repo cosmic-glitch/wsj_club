@@ -178,10 +178,14 @@ function ConceptCard({ concept }: { concept: Concept }) {
         {concept.inContext}
       </p>
 
-      <p className="mt-2 text-stone-700">
-        <span className="font-semibold text-stone-500">In general: </span>
-        {concept.meaning}
-      </p>
+      {concept.meaning.split(/\n\n+/).map((para, i) => (
+        <p key={i} className="mt-2 text-stone-700">
+          {i === 0 && (
+            <span className="font-semibold text-stone-500">In general: </span>
+          )}
+          {para}
+        </p>
+      ))}
     </div>
   );
 }
