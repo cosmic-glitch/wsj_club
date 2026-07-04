@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import DeleteSessionButton from "@/components/DeleteSessionButton";
 import SessionAudio from "@/components/SessionAudio";
-import InlinePlayButton from "@/components/InlinePlayButton";
 
 export type Turn = { role: "student" | "tutor"; text: string };
 export type Report = {
@@ -133,16 +132,15 @@ export default function AdminSessions({
               {/* The "Attempts" cell holds a sub-grid (one line per attempt). These
                   labels use the SAME widths + px-2 + gap-3 as the attempt rows
                   below, and since they're in the same table column they line up.
-                  Data columns are right-aligned to match the values; Play and
-                  Feedback are their own explicit action columns. */}
+                  Data columns are right-aligned to match the values; Details holds
+                  the two explicit action links (Feedback · Recording). */}
               <th className="px-4 py-2.5 font-semibold">
                 <div className="flex items-end gap-3 px-2">
                   <span className="w-24 text-right">Student</span>
                   <span className="w-12 text-right">Score</span>
                   <span className="w-14 text-right">Mins</span>
                   <span className="w-36 text-right">Time</span>
-                  <span className="w-12 text-right">Play</span>
-                  <span className="w-16 text-right">Feedback</span>
+                  <span className="w-44 text-right">Details</span>
                 </div>
               </th>
             </tr>
@@ -191,25 +189,31 @@ export default function AdminSessions({
                           <span className="w-36 shrink-0 whitespace-nowrap text-right text-stone-500">
                             {fmtLocal(s.endedAt, mounted)}
                           </span>
-                          {/* Play the recording inline — no need to open the modal. */}
-                          <span className="flex w-12 shrink-0 justify-end">
-                            {s.audioUrl ? (
-                              <InlinePlayButton src={s.audioUrl} />
-                            ) : (
-                              <span className="text-stone-300">—</span>
-                            )}
-                          </span>
-                          {/* Explicit link to the full report card / transcript
-                              modal — the score used to be the (easily-missed)
-                              click target; now the action is its own labeled link. */}
-                          <span className="flex w-16 shrink-0 justify-end">
+                          {/* Two explicit, labeled links — both open the detail
+                              modal (report card + audio + transcript). The score
+                              used to be the click target, but people missed that
+                              it was a link, so the actions are spelled out.
+                              "Recording" only shows when a clip was saved. */}
+                          <span className="flex w-44 shrink-0 items-baseline justify-end gap-2">
                             <button
                               type="button"
                               onClick={() => setOpen(s)}
                               className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
                             >
-                              Details
+                              Feedback
                             </button>
+                            {s.audioUrl && (
+                              <>
+                                <span className="text-stone-300">·</span>
+                                <button
+                                  type="button"
+                                  onClick={() => setOpen(s)}
+                                  className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
+                                >
+                                  Recording
+                                </button>
+                              </>
+                            )}
                           </span>
                           {s.partial && (
                             <span className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">

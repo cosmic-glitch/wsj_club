@@ -111,8 +111,8 @@ export default async function AdminPage() {
       <div>
         <h1 className="font-serif text-3xl font-bold text-stone-900">Your scores</h1>
         <p className="mt-1 text-sm text-stone-500">
-          Your saved voice-quiz attempts — play a recording inline, or click
-          Details for the full report card and transcript.
+          Your saved voice-quiz attempts — click Feedback or Recording on any
+          attempt for its full report card, recording, and transcript.
         </p>
         {visible.length === 0 ? (
           <p className="mt-6 rounded-lg border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
@@ -147,8 +147,8 @@ export default async function AdminPage() {
       <div>
         <h1 className="font-serif text-3xl font-bold text-stone-900">Quiz sessions</h1>
         <p className="mt-1 text-sm text-stone-500">
-          Saved voice-quiz attempts by article — play a recording inline, or
-          click Details for the full report card and transcript.
+          Saved voice-quiz attempts by article — click Feedback or Recording on
+          any attempt for its full report card, recording, and transcript.
         </p>
         {classroomPanel(ownGroups, true)}
       </div>
@@ -173,8 +173,9 @@ export default async function AdminPage() {
     <div>
       <h1 className="font-serif text-3xl font-bold text-stone-900">Quiz sessions</h1>
       <p className="mt-1 text-sm text-stone-500">
-        Every classroom — your own and each teacher&apos;s. Play a recording
-        inline, or click Details for the full report card and transcript.
+        Every classroom — your own and each teacher&apos;s. Click Feedback or
+        Recording on any attempt for its full report card, recording, and
+        transcript.
       </p>
       <div className="mt-8">
         <ClassroomTabs tabs={tabs} />
