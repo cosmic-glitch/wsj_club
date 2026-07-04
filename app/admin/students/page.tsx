@@ -2,6 +2,7 @@ import { currentUser, isAdmin, isOwner } from "@/lib/auth";
 import { listStudents, listTeachers, type PublicUser } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
 import StudentRoster, { type RosterEntry } from "@/components/StudentRoster";
+import ClassroomTabs, { type ClassroomTab } from "@/components/ClassroomTabs";
 
 // Reads cookies + Blob at request time — never static.
 export const dynamic = "force-dynamic";
@@ -75,8 +76,15 @@ export default async function StudentsPage() {
 
   const ownRoster = toRoster(await listStudents(user));
 
-  // A regular teacher manages just their own classroom (unchanged).
-  if (!isOwner(user)) {
+  // The owner also SEES every other teacher's classroom, read-only (they manage
+  // only their own — the /api/students* routes enforce that regardless). A
+  // regular teacher, and a lone owner with no other teachers, manages just their
+  // own classroom with no tab bar (unchanged).
+  const others = isOwner(user)
+    ? (await listTeachers()).filter((t) => t.username !== user)
+    : [];
+
+  if (others.length === 0) {
     return (
       <div>
         <StudentRoster students={ownRoster} teacherName={user} />
@@ -84,29 +92,49 @@ export default async function StudentsPage() {
     );
   }
 
-  // The owner also SEES every other teacher's classroom, read-only (they manage
-  // only their own — the /api/students* routes enforce that regardless).
-  const others = (await listTeachers()).filter((t) => t.username !== user);
-  const otherClassrooms = await Promise.all(
+  // Owner + other teachers → one tab per classroom (own first, editable; each
+  // other teacher's read-only). The tab names the classroom, so the roster drops
+  // its own heading (showTitle={false}).
+  const otherTabs = await Promise.all(
     others.map(async (t) => ({
-      teacher: t,
-      roster: toRoster(await listStudents(t.username)),
+      key: t.username,
+      label: `${t.displayName}’s classroom`,
+      content: (
+        <div className="mt-6">
+          <StudentRoster
+            students={toRoster(await listStudents(t.username))}
+            teacherName={t.username}
+            subtitle={`Managed by ${t.displayName}. View only — you can see this classroom but only manage your own.`}
+            readOnly
+            showTitle={false}
+          />
+        </div>
+      ),
     }))
   );
+  const tabs: ClassroomTab[] = [
+    {
+      key: user,
+      label: "My classroom",
+      content: (
+        <div className="mt-6">
+          <StudentRoster students={ownRoster} teacherName={user} showTitle={false} />
+        </div>
+      ),
+    },
+    ...otherTabs,
+  ];
 
   return (
-    <div className="space-y-12">
-      <StudentRoster students={ownRoster} teacherName={user} title="My classroom" />
-      {otherClassrooms.map(({ teacher, roster }) => (
-        <StudentRoster
-          key={teacher.username}
-          students={roster}
-          teacherName={teacher.username}
-          title={`${teacher.displayName}’s classroom`}
-          subtitle={`Managed by ${teacher.displayName}. View only — you can see this classroom but only manage your own.`}
-          readOnly
-        />
-      ))}
+    <div>
+      <h1 className="font-serif text-3xl font-bold text-stone-900">Manage students</h1>
+      <p className="mt-1 text-sm text-stone-500">
+        Every classroom — your own and each teacher&apos;s. You manage your own;
+        the others are view-only.
+      </p>
+      <div className="mt-8">
+        <ClassroomTabs tabs={tabs} />
+      </div>
     </div>
   );
 }

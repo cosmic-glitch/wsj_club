@@ -6,6 +6,7 @@ import AdminSessions, {
   type Session,
   type ArticleGroup,
 } from "@/components/AdminSessions";
+import ClassroomTabs, { type ClassroomTab } from "@/components/ClassroomTabs";
 
 // Reads cookies + Blob at request time — never static.
 export const dynamic = "force-dynamic";
@@ -56,28 +57,16 @@ function scopeToClassroom(
   });
 }
 
-/** One classroom's card: a labeled heading over its by-article attempts table. */
-function ClassroomSection({
-  label,
-  groups,
-  canDelete,
-}: {
-  label: string;
-  groups: ArticleGroup[];
-  canDelete: boolean;
-}) {
-  return (
-    <section>
-      <h2 className="font-serif text-xl font-bold text-stone-800">{label}</h2>
-      {groups.length === 0 ? (
-        <p className="mt-3 rounded-lg border border-dashed border-stone-300 bg-white p-6 text-center text-sm text-stone-500">
-          No quiz sessions yet.
-        </p>
-      ) : (
-        <AdminSessions groups={groups} canDelete={canDelete} />
-      )}
-    </section>
-  );
+/** A classroom's by-article table, or a friendly empty state when it has none. */
+function classroomPanel(groups: ArticleGroup[], canDelete: boolean) {
+  if (groups.length === 0) {
+    return (
+      <p className="mt-6 rounded-lg border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
+        No quiz sessions yet.
+      </p>
+    );
+  }
+  return <AdminSessions groups={groups} canDelete={canDelete} />;
 }
 
 export default async function AdminPage() {
@@ -145,9 +134,15 @@ export default async function AdminPage() {
     return groupByArticle(scopeToClassroom(result as Session[], teacher, roster));
   }
 
-  // A regular teacher sees only their own classroom (unchanged: a single table).
-  if (!isOwner(user)) {
-    const groups = await classroomGroups(user);
+  const ownGroups = await classroomGroups(user);
+
+  // The owner also sees every OTHER teacher's classroom; a regular teacher (and
+  // a lone owner with no other teachers) sees just their own — no tab bar.
+  const others = isOwner(user)
+    ? (await listTeachers()).filter((t) => t.username !== user)
+    : [];
+
+  if (others.length === 0) {
     return (
       <div>
         <h1 className="font-serif text-3xl font-bold text-stone-900">Quiz sessions</h1>
@@ -155,30 +150,24 @@ export default async function AdminPage() {
           Saved voice-quiz attempts by article — click any attempt for its full
           report card, recording, and transcript.
         </p>
-        {groups.length === 0 ? (
-          <p className="mt-6 rounded-lg border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
-            No quiz sessions yet.
-          </p>
-        ) : (
-          <AdminSessions groups={groups} canDelete={true} />
-        )}
+        {classroomPanel(ownGroups, true)}
       </div>
     );
   }
 
-  // The owner sees every classroom as its own section — their own first
-  // (deletable), then each other teacher's (read-only).
-  const others = (await listTeachers()).filter((t) => t.username !== user);
-  const [ownGroups, otherSections] = await Promise.all([
-    classroomGroups(user),
-    Promise.all(
-      others.map(async (t) => ({
-        key: t.username,
-        label: `${t.displayName}’s classroom`,
-        groups: await classroomGroups(t.username),
-      }))
-    ),
-  ]);
+  // Owner + other teachers → one tab per classroom (own first, deletable; each
+  // other teacher's read-only).
+  const otherTabs = await Promise.all(
+    others.map(async (t) => ({
+      key: t.username,
+      label: `${t.displayName}’s classroom`,
+      content: classroomPanel(await classroomGroups(t.username), false),
+    }))
+  );
+  const tabs: ClassroomTab[] = [
+    { key: user, label: "My classroom", content: classroomPanel(ownGroups, true) },
+    ...otherTabs,
+  ];
 
   return (
     <div>
@@ -187,16 +176,8 @@ export default async function AdminPage() {
         Every classroom — your own and each teacher&apos;s. Click any attempt for
         its full report card, recording, and transcript.
       </p>
-      <div className="mt-8 space-y-10">
-        <ClassroomSection label="My classroom" groups={ownGroups} canDelete={true} />
-        {otherSections.map((sec) => (
-          <ClassroomSection
-            key={sec.key}
-            label={sec.label}
-            groups={sec.groups}
-            canDelete={false}
-          />
-        ))}
+      <div className="mt-8">
+        <ClassroomTabs tabs={tabs} />
       </div>
     </div>
   );

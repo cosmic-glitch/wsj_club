@@ -33,6 +33,7 @@ export default function StudentRoster({
   title = "My classroom",
   subtitle = "The students you manage. Add a student to give them a login for the voice quiz.",
   readOnly = false,
+  showTitle = true,
 }: {
   students: RosterEntry[];
   teacherName: string;
@@ -43,6 +44,9 @@ export default function StudentRoster({
   // routes ownership-check every mutation and don't exempt the owner, so hiding
   // the controls here matches what the owner is actually allowed to do.
   readOnly?: boolean;
+  // When false (inside the owner's classroom tabs), the big <h1> is dropped —
+  // the tab already names the classroom — leaving just the subtitle + Add button.
+  showTitle?: boolean;
 }) {
   const router = useRouter();
   const [addOpen, setAddOpen] = useState(false);
@@ -55,8 +59,10 @@ export default function StudentRoster({
     <div>
       <div className="flex items-center justify-between gap-4">
         <div>
-          <h1 className="font-serif text-3xl font-bold text-stone-900">{title}</h1>
-          <p className="mt-1 text-sm text-stone-500">{subtitle}</p>
+          {showTitle && (
+            <h1 className="font-serif text-3xl font-bold text-stone-900">{title}</h1>
+          )}
+          <p className={`${showTitle ? "mt-1 " : ""}text-sm text-stone-500`}>{subtitle}</p>
         </div>
         {!readOnly && (
           <button
