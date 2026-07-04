@@ -36,7 +36,7 @@ export default function RootLayout({
           <header className="border-b border-stone-200 bg-white/70 backdrop-blur">
             <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-4">
               <Link href="/" className="font-serif text-lg font-bold tracking-tight">
-                WSJ Reading Club
+                Reading Club
               </Link>
               <div className="flex items-center gap-4">
                 <AllReadingsLink />
