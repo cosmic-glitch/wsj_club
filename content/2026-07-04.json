@@ -1,0 +1,125 @@
+{
+  "date": "2026-07-04",
+  "title": "Astrophysicists Puzzle Over Webb's New Universe",
+  "articleUrl": "https://www.quantamagazine.org/astrophysicists-puzzle-over-webbs-new-universe-20260702/",
+  "voiceQuiz": true,
+  "source": "Quanta Magazine",
+  "vocab": [
+    {
+      "word": "tantalizing",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Now, a wave of new theories offers tantalizing solutions — but which ones portray reality is an open question.",
+      "inContext": "The new theories are exciting and seem almost within reach of solving JWST's mysteries — but scientists can't yet confirm which one is right, so the answer stays just out of grasp.",
+      "meaning": "Tempting or exciting in a way that makes you want something you can't quite have or reach yet.",
+      "examples": [
+        "The smell of pizza drifting from the kitchen was tantalizing, but dinner was still an hour away.",
+        "The coach dropped a tantalizing hint that the starting lineup might change, then refused to say another word."
+      ]
+    },
+    {
+      "word": "coalesce",
+      "partOfSpeech": "verb",
+      "articleQuote": "As it expanded and cooled, dark matter coalesced in great clumps that scientists call halos.",
+      "inContext": "Dark matter, once spread thinly through the young universe, gradually gathered and merged into dense clumps.",
+      "meaning": "To come together and combine into a single group, mass, or whole.",
+      "examples": [
+        "A dozen scattered ideas slowly coalesced into one clear plan for the science-fair project.",
+        "By halftime the noisy, restless crowd had coalesced into a single deafening chant."
+      ]
+    },
+    {
+      "word": "rumination",
+      "partOfSpeech": "noun",
+      "articleQuote": "Though it's a mournful rumination on existence... we now understand that Hamlet's description is more scientifically accurate than Shakespeare could have known.",
+      "inContext": "The writer calls Hamlet's famous speech a gloomy, deeply pondered meditation on what it means to exist.",
+      "meaning": "A long, deep, often anxious pondering of something — turning a thought over and over in your mind.",
+      "examples": [
+        "After the loss, her journal filled with ruminations about whether she should have taken the last shot.",
+        "The essay was less an argument than a quiet rumination on growing up and leaving home."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Redshift",
+      "articleQuote": "Astronomers generally describe the timing of these events in terms of redshift, or how much the light from early objects has been stretched by cosmic expansion.",
+      "inContext": "Because the universe is expanding, light from very distant, ancient objects gets stretched to longer, redder wavelengths on its way to us; astronomers read the size of that stretch as a marker of how far back in cosmic time they are seeing.",
+      "meaning": "Redshift is what happens to waves — including light — when their source moves away from you: the waves stretch out to longer wavelengths (for light, shifting toward the red end of the spectrum). It's the same reason a siren drops in pitch as an ambulance speeds past — the Doppler effect. Because the universe is expanding, the farther away a galaxy is, the faster it recedes and the more its light is redshifted, so measuring redshift tells astronomers both how distant an object is and how long ago its light left."
+    },
+    {
+      "name": "Lookback time (light as a time machine)",
+      "articleQuote": "In many ways, those first stars are the mothers of the universe. \"We're looking back at what created us,\" said Lise Christensen.",
+      "inContext": "The ancient stars and galaxies JWST photographs do not look now the way they do in the images — we're seeing light that left them billions of years ago, so the telescope is really showing us the deep past that produced us.",
+      "meaning": "Light travels fast but not instantly — about 300,000 kilometers per second. So when you look at something far away, you see it not as it is now but as it was when the light left it. Across a room the delay is a millionth of a second; the Sun you see is 8 minutes old; a galaxy billions of light-years away is seen as it was billions of years ago. That makes every telescope a kind of time machine: the deeper into space it looks, the further back in time it sees."
+    },
+    {
+      "name": "Gravitational lensing",
+      "articleQuote": "researchers took a long look at a little red dot... that is gravitationally lensed by a cluster of galaxies in the foreground.",
+      "inContext": "A massive cluster of galaxies sitting between us and the distant red dot bends and focuses the dot's light, magnifying an object that would otherwise be too faint and far away to study.",
+      "meaning": "Mass bends the path of light. When a very massive object — like a galaxy cluster — lies between us and something farther away, its gravity curves the light passing near it, acting like a giant, lumpy magnifying lens that brightens, enlarges, or even multiplies the image of the background object. Astronomers use these natural lenses as free telescopes to see faint, distant things, and the amount of bending also reveals how much mass (including invisible dark matter) the foreground object holds."
+    },
+    {
+      "name": "Stellar nucleosynthesis",
+      "articleQuote": "erupted in powerful supernovas, seeding the universe with new elements such as carbon, nitrogen, oxygen, phosphorus, and iron — the stuff of planets and of life.",
+      "inContext": "The first stars fused light elements into heavier ones in their cores, then blew those new elements out into space when they exploded, supplying the raw material for later planets and living things.",
+      "meaning": "The early universe held almost only the lightest elements, hydrogen and helium. Stars are element factories: their intense heat and pressure fuse light nuclei into heavier ones (helium, carbon, oxygen, on up to iron), and when massive stars die in supernova explosions they forge even heavier elements and scatter everything into space. Over generations of stars, that enriched gas builds up the carbon, oxygen, iron, and other atoms that make up planets — and you. This is what people mean when they say we are made of star stuff."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did the James Webb Space Telescope's images of the early universe surprise astrophysicists?",
+      "options": [
+        "They showed the universe is far smaller than anyone expected",
+        "They revealed objects — like impossibly large ancient black holes and unexpectedly bright early galaxies — that don't fit existing theories",
+        "They proved the Big Bang never happened",
+        "They found no galaxies at all in the early universe"
+      ],
+      "answerIndex": 1,
+      "explanation": "JWST spotted little red dots, black holes too big for their age, and early galaxies too bright and abundant to square with what scientists thought they knew."
+    },
+    {
+      "question": "Astronomers describe early cosmic events in terms of 'redshift.' Redshift happens because —",
+      "options": [
+        "distant galaxies are actually colored red",
+        "light from a receding source is stretched to longer wavelengths as the universe expands",
+        "older stars always burn hotter and bluer",
+        "telescopes add a red filter to deep-space images"
+      ],
+      "answerIndex": 1,
+      "explanation": "Cosmic expansion stretches light from distant, receding objects toward the red end of the spectrum, so a larger redshift means a more distant, earlier object."
+    },
+    {
+      "question": "When astronomer Lise Christensen says 'We're looking back at what created us,' she is pointing to the idea that —",
+      "options": [
+        "telescopes can physically change the past",
+        "because light takes time to travel, seeing distant objects means seeing them as they were long ago",
+        "the first stars still look exactly as they do in the images today",
+        "humans were alive during the early universe"
+      ],
+      "answerIndex": 1,
+      "explanation": "Light's finite speed means faraway objects are seen as they were when their light left them, so deep-space telescopes reveal the ancient past."
+    },
+    {
+      "question": "According to the article, why can it be said that we are 'made of star stuff'?",
+      "options": [
+        "Human bodies still contain leftover light from the Big Bang",
+        "Stars fuse light elements into heavier ones and scatter them in supernovas, providing the atoms that make up planets and life",
+        "Every atom in your body was created during the Big Bang itself",
+        "Stars beam energy directly into living cells on Earth"
+      ],
+      "answerIndex": 1,
+      "explanation": "The first stars forged heavier elements like carbon, oxygen, and iron and flung them into space when they exploded, seeding the material that later formed planets and people."
+    },
+    {
+      "question": "The article says JWST's discoveries offered scientists 'tantalizing' new theories. Something tantalizing is —",
+      "options": [
+        "boring and easy to ignore",
+        "tempting and appealing but just out of reach",
+        "already proven completely true",
+        "dangerous and frightening"
+      ],
+      "answerIndex": 1,
+      "explanation": "Tantalizing describes something enticing that you can't quite grasp — here, promising theories that scientists cannot yet confirm."
+    }
+  ]
+}
