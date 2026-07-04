@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import DeleteSessionButton from "@/components/DeleteSessionButton";
 import SessionAudio from "@/components/SessionAudio";
+import InlinePlayButton from "@/components/InlinePlayButton";
 
 export type Turn = { role: "student" | "tutor"; text: string };
 export type Report = {
@@ -132,13 +133,16 @@ export default function AdminSessions({
               {/* The "Attempts" cell holds a sub-grid (one line per attempt). These
                   labels use the SAME widths + px-2 + gap-3 as the attempt rows
                   below, and since they're in the same table column they line up.
-                  All right-aligned to match the values. */}
+                  Data columns are right-aligned to match the values; Play and
+                  Feedback are their own explicit action columns. */}
               <th className="px-4 py-2.5 font-semibold">
                 <div className="flex items-end gap-3 px-2">
                   <span className="w-24 text-right">Student</span>
                   <span className="w-12 text-right">Score</span>
                   <span className="w-14 text-right">Mins</span>
                   <span className="w-36 text-right">Time</span>
+                  <span className="w-12 text-right">Play</span>
+                  <span className="w-16 text-right">Feedback</span>
                 </div>
               </th>
             </tr>
@@ -171,35 +175,52 @@ export default function AdminSessions({
                     {g.attempts.map((s) => {
                       const score = s.report?.score;
                       return (
-                        <li key={s.blobUrl}>
-                          <button
-                            type="button"
-                            onClick={() => setOpen(s)}
-                            className="group flex w-full items-baseline gap-3 rounded-md px-2 py-1 text-left hover:bg-sky-50"
-                          >
-                            <span className="w-24 shrink-0 truncate text-right font-medium text-stone-800 group-hover:text-sky-700">
-                              {s.studentName}
-                            </span>
-                            <span className="w-12 shrink-0 whitespace-nowrap text-right font-semibold text-sky-700">
-                              {fmtScore(score)}
-                            </span>
-                            <span className="w-14 shrink-0 whitespace-nowrap text-right tabular-nums text-stone-500">
-                              {fmtDuration(s.durationMs)}
-                            </span>
-                            <span className="w-36 shrink-0 whitespace-nowrap text-right text-stone-500">
-                              {fmtLocal(s.endedAt, mounted)}
-                            </span>
-                            {s.partial && (
-                              <span className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
-                                partial
-                              </span>
+                        <li
+                          key={s.blobUrl}
+                          className="flex items-center gap-3 px-2 py-1"
+                        >
+                          <span className="w-24 shrink-0 truncate text-right font-medium text-stone-800">
+                            {s.studentName}
+                          </span>
+                          <span className="w-12 shrink-0 whitespace-nowrap text-right font-semibold text-stone-800">
+                            {fmtScore(score)}
+                          </span>
+                          <span className="w-14 shrink-0 whitespace-nowrap text-right tabular-nums text-stone-500">
+                            {fmtDuration(s.durationMs)}
+                          </span>
+                          <span className="w-36 shrink-0 whitespace-nowrap text-right text-stone-500">
+                            {fmtLocal(s.endedAt, mounted)}
+                          </span>
+                          {/* Play the recording inline — no need to open the modal. */}
+                          <span className="flex w-12 shrink-0 justify-end">
+                            {s.audioUrl ? (
+                              <InlinePlayButton src={s.audioUrl} />
+                            ) : (
+                              <span className="text-stone-300">—</span>
                             )}
-                            {s.cancelled && (
-                              <span className="shrink-0 rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
-                                cancelled
-                              </span>
-                            )}
-                          </button>
+                          </span>
+                          {/* Explicit link to the full report card / transcript
+                              modal — the score used to be the (easily-missed)
+                              click target; now the action is its own labeled link. */}
+                          <span className="flex w-16 shrink-0 justify-end">
+                            <button
+                              type="button"
+                              onClick={() => setOpen(s)}
+                              className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
+                            >
+                              Details
+                            </button>
+                          </span>
+                          {s.partial && (
+                            <span className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
+                              partial
+                            </span>
+                          )}
+                          {s.cancelled && (
+                            <span className="shrink-0 rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
+                              cancelled
+                            </span>
+                          )}
                         </li>
                       );
                     })}
