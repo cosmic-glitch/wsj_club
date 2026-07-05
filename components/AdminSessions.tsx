@@ -87,11 +87,6 @@ function fmtScore(score?: string): string {
   return score.split("/")[0].trim();
 }
 
-// The detail modal can be opened focused on a single section — the Details
-// column has one link per section (Recording · Transcript · Feedback), and each
-// shows ONLY its own part.
-type DetailView = "recording" | "transcript" | "feedback";
-
 export default function AdminSessions({
   groups,
   canDelete,
@@ -101,13 +96,10 @@ export default function AdminSessions({
   // sessions read-only.
   canDelete: boolean;
 }) {
-  // Which attempt's detail is open in the modal, and which section it's focused
-  // on (null = closed).
-  const [open, setOpen] = useState<{ session: Session; view: DetailView } | null>(
-    null,
-  );
-  const session = open?.session ?? null;
-  const view = open?.view ?? null;
+  // Which attempt's detail is open in the modal (null = closed). A single
+  // "Details" link per attempt opens the full combined view — feedback +
+  // recording + transcript, all in one modal.
+  const [session, setSession] = useState<Session | null>(null);
 
   // Local-time labels are computed only after mount (see fmtLocal).
   const [mounted, setMounted] = useState(false);
@@ -115,9 +107,9 @@ export default function AdminSessions({
 
   // Esc closes the modal; lock body scroll while it's open.
   useEffect(() => {
-    if (!open) return;
+    if (!session) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(null);
+      if (e.key === "Escape") setSession(null);
     };
     window.addEventListener("keydown", onKey);
     const prev = document.body.style.overflow;
@@ -126,7 +118,15 @@ export default function AdminSessions({
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prev;
     };
-  }, [open]);
+  }, [session]);
+
+  const hasFeedback = (r: Report | null) =>
+    !!(
+      r &&
+      (r.summary ||
+        (r.strengths && r.strengths.length > 0) ||
+        (r.gaps && r.gaps.length > 0))
+    );
 
   return (
     <>
@@ -143,18 +143,18 @@ export default function AdminSessions({
                   labels use the SAME widths + px-1 + gap-2 as the attempt rows
                   below, and since they're in the same table column they line up.
                   Data columns are right-aligned to match the values; Details holds
-                  the three view links (Recording · Transcript · Feedback), then a
-                  final Delete column (teacher only). The sub-columns are kept tight
-                  and the admin route widens the page (app/admin/layout.tsx) so the
-                  whole line — through the last Delete column — fits without clipping
-                  on desktop. */}
+                  a single link that opens the combined detail modal, then a final
+                  Delete column (teacher only). The sub-columns are kept tight and
+                  the admin route widens the page (app/admin/layout.tsx) so the
+                  whole line — through the last Delete column — fits without
+                  clipping on desktop. */}
               <th className="px-3 py-2.5 font-semibold">
                 <div className="flex items-end gap-2 px-1">
                   <span className="w-20 text-right">Student</span>
                   <span className="w-10 text-right">Score</span>
                   <span className="w-8 text-right">Mins</span>
                   <span className="w-32 text-right">Time</span>
-                  <span className="w-64 text-right">Details</span>
+                  <span className="w-40 text-right">Details</span>
                   {canDelete && <span className="w-20 text-right">Delete</span>}
                 </div>
               </th>
@@ -208,61 +208,29 @@ export default function AdminSessions({
                           <span className="w-32 shrink-0 whitespace-nowrap text-right text-stone-500">
                             {fmtLocal(s.endedAt, mounted)}
                           </span>
-                          {/* Details: the three labeled links, each opening the
-                              view-only detail modal focused on ONLY its own
-                              section (Recording · Transcript · Feedback);
-                              "Recording" only shows when a clip was saved. Any
-                              partial/cancelled badge wraps to its OWN line above
-                              the links (basis-full) rather than widening the row,
-                              so a badge never pushes the line into horizontal
-                              overflow (which would clip the Delete column). */}
-                          <span className="flex w-64 shrink-0 flex-wrap items-baseline justify-end gap-x-2 gap-y-1">
-                            {(s.partial || s.cancelled) && (
-                              <span className="flex basis-full justify-end gap-2">
-                                {s.partial && (
-                                  <span className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
-                                    partial
-                                  </span>
-                                )}
-                                {s.cancelled && (
-                                  <span className="shrink-0 rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
-                                    cancelled
-                                  </span>
-                                )}
+                          {/* Details: ONE link that opens the combined detail
+                              modal — feedback + recording + transcript together.
+                              Any partial/cancelled badge sits INLINE (pushed left
+                              with mr-auto; the link stays right-aligned), filling
+                              this column's slack — with just one short link there's
+                              room, so a badge never forces the row to a 2nd line. */}
+                          <span className="flex w-40 shrink-0 items-center justify-end gap-2">
+                            {s.partial && (
+                              <span className="mr-auto shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
+                                partial
                               </span>
                             )}
-                            {s.audioUrl && (
-                              <>
-                                <button
-                                  type="button"
-                                  onClick={() =>
-                                    setOpen({ session: s, view: "recording" })
-                                  }
-                                  className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
-                                >
-                                  Recording
-                                </button>
-                                <span className="text-stone-300">·</span>
-                              </>
+                            {s.cancelled && (
+                              <span className="mr-auto shrink-0 rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
+                                cancelled
+                              </span>
                             )}
                             <button
                               type="button"
-                              onClick={() =>
-                                setOpen({ session: s, view: "transcript" })
-                              }
+                              onClick={() => setSession(s)}
                               className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
                             >
-                              Transcript
-                            </button>
-                            <span className="text-stone-300">·</span>
-                            <button
-                              type="button"
-                              onClick={() =>
-                                setOpen({ session: s, view: "feedback" })
-                              }
-                              className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
-                            >
-                              Feedback
+                              Details
                             </button>
                           </span>
                           {/* Delete is the LAST column — a single per-attempt
@@ -290,12 +258,12 @@ export default function AdminSessions({
       </div>
 
       {/* The attempt detail "pops out" as a modal over the same page — the table
-          stays compact no matter how long a transcript runs. Each Details link
-          opens it focused on ONE section (recording / transcript / feedback). */}
+          stays compact no matter how long a transcript runs. One modal shows the
+          whole attempt: feedback, the recording, and the transcript together. */}
       {session && (
         <div
           className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-stone-900/50 p-4 backdrop-blur-sm sm:p-6"
-          onClick={() => setOpen(null)}
+          onClick={() => setSession(null)}
           role="dialog"
           aria-modal="true"
         >
@@ -310,7 +278,7 @@ export default function AdminSessions({
                   <span className="font-serif text-xl font-bold text-stone-900">
                     {session.studentName}
                   </span>
-                  {view === "feedback" && session.report?.score && (
+                  {session.report?.score && (
                     <span className="text-xl font-bold text-sky-700">
                       {session.report.score}
                     </span>
@@ -333,14 +301,12 @@ export default function AdminSessions({
                   >
                     {session.title}
                   </Link>{" "}
-                  ·{" "}
-                  <span className="capitalize">{view}</span> ·{" "}
-                  {fmtLocal(session.endedAt, mounted)}
+                  · {fmtLocal(session.endedAt, mounted)}
                 </p>
               </div>
               <button
                 type="button"
-                onClick={() => setOpen(null)}
+                onClick={() => setSession(null)}
                 aria-label="Close"
                 className="shrink-0 rounded-md px-2 py-1 text-lg leading-none text-stone-400 hover:bg-stone-100 hover:text-stone-700"
               >
@@ -348,12 +314,11 @@ export default function AdminSessions({
               </button>
             </div>
 
-            {/* Body — ONLY the section this link asked for. The partial/cancelled
-                status banner is a one-line attempt-state note, so it shows on
-                every view for context. Scrolls if long. */}
-            <div className="max-h-[70vh] overflow-y-auto px-6 py-4">
+            {/* Body — the whole attempt in one scroll: a status banner (if any),
+                then the three labeled sections Feedback · Recording · Transcript. */}
+            <div className="max-h-[70vh] space-y-6 overflow-y-auto px-6 py-4">
               {session.cancelled && (
-                <div className="mb-4 rounded-lg border border-stone-200 bg-stone-100 px-3 py-2 text-sm text-stone-600">
+                <div className="rounded-lg border border-stone-200 bg-stone-100 px-3 py-2 text-sm text-stone-600">
                   <span className="font-semibold">Cancelled attempt</span> — the
                   student ended this quiz early, so it wasn’t graded; saved with
                   whatever was recorded up to that point.
@@ -361,7 +326,7 @@ export default function AdminSessions({
               )}
 
               {session.partial && (
-                <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-800">
+                <div className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-800">
                   <span className="font-semibold">Incomplete attempt</span>
                   {session.failure?.reason ? ` — ${session.failure.reason}` : ""}.{" "}
                   {session.failure?.detail ||
@@ -369,21 +334,24 @@ export default function AdminSessions({
                 </div>
               )}
 
-              {view === "feedback" && (
-                <>
-                  {session.report?.summary && (
-                    <p className="text-sm text-stone-600">
-                      {session.report.summary}
-                    </p>
-                  )}
-
-                  {session.report &&
-                    ((session.report.strengths &&
+              {/* Feedback */}
+              <div>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-stone-500">
+                  Feedback
+                </p>
+                {hasFeedback(session.report) ? (
+                  <>
+                    {session.report?.summary && (
+                      <p className="text-sm text-stone-600">
+                        {session.report.summary}
+                      </p>
+                    )}
+                    {((session.report?.strengths &&
                       session.report.strengths.length > 0) ||
-                      (session.report.gaps &&
+                      (session.report?.gaps &&
                         session.report.gaps.length > 0)) && (
                       <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                        {session.report.strengths &&
+                        {session.report?.strengths &&
                           session.report.strengths.length > 0 && (
                             <div>
                               <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
@@ -396,7 +364,7 @@ export default function AdminSessions({
                               </ul>
                             </div>
                           )}
-                        {session.report.gaps &&
+                        {session.report?.gaps &&
                           session.report.gaps.length > 0 && (
                             <div>
                               <p className="text-xs font-semibold uppercase tracking-wide text-amber-600">
@@ -411,35 +379,36 @@ export default function AdminSessions({
                           )}
                       </div>
                     )}
+                  </>
+                ) : (
+                  <p className="text-sm text-stone-400">
+                    No feedback was saved for this attempt.
+                  </p>
+                )}
+              </div>
 
-                  {!session.report?.summary &&
-                    !(
-                      session.report?.strengths &&
-                      session.report.strengths.length > 0
-                    ) &&
-                    !(
-                      session.report?.gaps && session.report.gaps.length > 0
-                    ) && (
-                      <p className="text-sm text-stone-400">
-                        No feedback was saved for this attempt.
-                      </p>
-                    )}
-                </>
-              )}
-
-              {view === "recording" &&
-                (session.audioUrl ? (
+              {/* Recording */}
+              <div>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-stone-500">
+                  Recording
+                </p>
+                {session.audioUrl ? (
                   <SessionAudio src={session.audioUrl} />
                 ) : (
                   <p className="text-sm text-stone-400">
                     No recording was saved for this attempt.
                   </p>
-                ))}
+                )}
+              </div>
 
-              {view === "transcript" && (
-                <div className="space-y-1.5">
-                  {session.transcript && session.transcript.length > 0 ? (
-                    session.transcript.map((t, j) => (
+              {/* Transcript */}
+              <div>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-stone-500">
+                  Transcript
+                </p>
+                {session.transcript && session.transcript.length > 0 ? (
+                  <div className="space-y-1.5">
+                    {session.transcript.map((t, j) => (
                       <p key={j} className="text-sm">
                         <span
                           className={
@@ -452,23 +421,22 @@ export default function AdminSessions({
                         </span>
                         <span className="text-stone-600">{t.text}</span>
                       </p>
-                    ))
-                  ) : (
-                    <p className="text-sm text-stone-400">
-                      No transcript was saved for this attempt.
-                    </p>
-                  )}
-                </div>
-              )}
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-sm text-stone-400">
+                    No transcript was saved for this attempt.
+                  </p>
+                )}
+              </div>
             </div>
 
-            {/* Footer — this modal is view-only. Deleting an attempt is a
-                single action in the row's Details bar (teacher only), not here,
-                so a teacher never sees a separate delete per section. */}
+            {/* Footer — this modal is view-only. Deleting an attempt is a single
+                action in the row's last column (teacher only), not here. */}
             <div className="flex items-center justify-end gap-3 border-t border-stone-200 px-6 py-3">
               <button
                 type="button"
-                onClick={() => setOpen(null)}
+                onClick={() => setSession(null)}
                 className="rounded-md border border-stone-200 px-3 py-1.5 text-sm font-medium text-stone-600 hover:bg-stone-50"
               >
                 Close
