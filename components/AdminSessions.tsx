@@ -137,19 +137,21 @@ export default function AdminSessions({
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b border-stone-200 bg-stone-50 text-left text-xs font-semibold uppercase tracking-wide text-stone-500">
-              <th className="px-4 py-2.5 font-semibold">Date</th>
-              <th className="px-4 py-2.5 font-semibold">Article</th>
+              <th className="px-3 py-2.5 font-semibold">Date</th>
+              <th className="px-3 py-2.5 font-semibold">Article</th>
               {/* The "Attempts" cell holds a sub-grid (one line per attempt). These
-                  labels use the SAME widths + px-2 + gap-3 as the attempt rows
+                  labels use the SAME widths + px-1 + gap-2 as the attempt rows
                   below, and since they're in the same table column they line up.
                   Data columns are right-aligned to match the values; Details holds
-                  the two explicit action links (Feedback · Recording). */}
-              <th className="px-4 py-2.5 font-semibold">
-                <div className="flex items-end gap-3 px-2">
-                  <span className="w-24 text-right">Student</span>
-                  <span className="w-12 text-right">Score</span>
-                  <span className="w-14 text-right">Mins</span>
-                  <span className="w-36 text-right">Time</span>
+                  the three action links (Recording · Transcript · Feedback). The
+                  data columns are kept tight (the admin route widens the page — see
+                  app/admin/layout.tsx — so all of this fits without clipping). */}
+              <th className="px-3 py-2.5 font-semibold">
+                <div className="flex items-end gap-2 px-1">
+                  <span className="w-20 text-right">Student</span>
+                  <span className="w-10 text-right">Score</span>
+                  <span className="w-12 text-right">Mins</span>
+                  <span className="w-32 text-right">Time</span>
                   <span className="w-72 pl-4 text-right">Details</span>
                 </div>
               </th>
@@ -158,10 +160,10 @@ export default function AdminSessions({
           <tbody className="divide-y divide-stone-200">
             {groups.map((g) => (
               <tr key={g.date} className="align-top">
-                <td className="whitespace-nowrap px-4 py-3 font-serif text-sm font-bold text-stone-500">
+                <td className="whitespace-nowrap px-3 py-3 font-serif text-sm font-bold text-stone-500">
                   {g.dateLabel}
                 </td>
-                <td className="px-4 py-3">
+                <td className="px-3 py-3">
                   <Link
                     href={`/reading/${g.date}`}
                     className="font-medium text-stone-900 hover:text-sky-700 hover:underline"
@@ -169,7 +171,7 @@ export default function AdminSessions({
                     {g.title}
                   </Link>
                 </td>
-                <td className="px-4 py-3">
+                <td className="px-3 py-3">
                   {/* key MUST be the stable blobUrl, never the array index: the
                       Delete flow removes one attempt and refreshes the list, and
                       an index key would let a removed row's React state (e.g. the
@@ -185,18 +187,18 @@ export default function AdminSessions({
                       return (
                         <li
                           key={s.blobUrl}
-                          className="flex items-center gap-3 px-2 py-1"
+                          className="flex items-center gap-2 px-1 py-1"
                         >
-                          <span className="w-24 shrink-0 truncate text-right font-medium text-stone-800">
+                          <span className="w-20 shrink-0 truncate text-right font-medium text-stone-800">
                             {s.studentName}
                           </span>
-                          <span className="w-12 shrink-0 whitespace-nowrap text-right font-semibold text-stone-800">
+                          <span className="w-10 shrink-0 whitespace-nowrap text-right font-semibold text-stone-800">
                             {fmtScore(score)}
                           </span>
-                          <span className="w-14 shrink-0 whitespace-nowrap text-right tabular-nums text-stone-500">
+                          <span className="w-12 shrink-0 whitespace-nowrap text-right tabular-nums text-stone-500">
                             {fmtDuration(s.durationMs)}
                           </span>
-                          <span className="w-36 shrink-0 whitespace-nowrap text-right text-stone-500">
+                          <span className="w-32 shrink-0 whitespace-nowrap text-right text-stone-500">
                             {fmtLocal(s.endedAt, mounted)}
                           </span>
                           {/* Three explicit, labeled links — each opens the detail
