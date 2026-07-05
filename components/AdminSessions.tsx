@@ -150,9 +150,9 @@ export default function AdminSessions({
                 <div className="flex items-end gap-2 px-1">
                   <span className="w-20 text-right">Student</span>
                   <span className="w-10 text-right">Score</span>
-                  <span className="w-12 text-right">Mins</span>
+                  <span className="w-8 text-right">Mins</span>
                   <span className="w-32 text-right">Time</span>
-                  <span className="w-80 text-right">Details</span>
+                  <span className="w-96 text-right">Details</span>
                 </div>
               </th>
             </tr>
@@ -195,64 +195,75 @@ export default function AdminSessions({
                           <span className="w-10 shrink-0 whitespace-nowrap text-right font-semibold text-stone-800">
                             {fmtScore(score)}
                           </span>
-                          <span className="w-12 shrink-0 whitespace-nowrap text-right tabular-nums text-stone-500">
+                          <span className="w-8 shrink-0 whitespace-nowrap text-right tabular-nums text-stone-500">
                             {fmtDuration(s.durationMs)}
                           </span>
                           <span className="w-32 shrink-0 whitespace-nowrap text-right text-stone-500">
                             {fmtLocal(s.endedAt, mounted)}
                           </span>
-                          {/* Three labeled links — each opens the detail modal
-                              focused on ONLY its own section (Recording ·
-                              Transcript · Feedback); "Recording" only shows when a
-                              clip was saved. Any partial/cancelled badge lives
-                              INSIDE this fixed-width span (pushed left with
-                              mr-auto; the links stay right-aligned), filling the
-                              span's own slack so a badge never widens the row and
-                              clips off the right edge on desktop. */}
-                          <span className="flex w-80 shrink-0 items-baseline justify-end gap-2">
-                            {s.partial && (
-                              <span className="mr-auto self-center shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
-                                partial
-                              </span>
-                            )}
-                            {s.cancelled && (
-                              <span className="mr-auto self-center shrink-0 rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
-                                cancelled
-                              </span>
-                            )}
-                            {s.audioUrl && (
-                              <>
-                                <button
-                                  type="button"
-                                  onClick={() =>
-                                    setOpen({ session: s, view: "recording" })
-                                  }
-                                  className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
-                                >
-                                  Recording
-                                </button>
-                                <span className="text-stone-300">·</span>
-                              </>
-                            )}
-                            <button
-                              type="button"
-                              onClick={() =>
-                                setOpen({ session: s, view: "transcript" })
-                              }
-                              className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
-                            >
-                              Transcript
-                            </button>
-                            <span className="text-stone-300">·</span>
-                            <button
-                              type="button"
-                              onClick={() =>
-                                setOpen({ session: s, view: "feedback" })
-                              }
-                              className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
-                            >
-                              Feedback
-                            </button>
+                          {/* Two groups, split by justify-between inside this
+                              fixed-width span. LEFT: a SINGLE Delete for the whole
+                              attempt (teacher only) plus any partial/cancelled
+                              badge — the destructive action kept apart from the
+                              safe view links. RIGHT: the labeled links, each
+                              opening the detail modal focused on ONLY its own
+                              section (Recording · Transcript · Feedback);
+                              "Recording" only shows when a clip was saved. */}
+                          <span className="flex w-96 shrink-0 items-center justify-between gap-2">
+                            <span className="flex items-center gap-2">
+                              {canDelete && (
+                                <DeleteSessionButton
+                                  url={s.blobUrl}
+                                  audioUrl={s.audioUrl}
+                                  label={`${s.studentName} · ${s.title}`}
+                                />
+                              )}
+                              {s.partial && (
+                                <span className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
+                                  partial
+                                </span>
+                              )}
+                              {s.cancelled && (
+                                <span className="shrink-0 rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
+                                  cancelled
+                                </span>
+                              )}
+                            </span>
+                            <span className="flex items-baseline gap-2">
+                              {s.audioUrl && (
+                                <>
+                                  <button
+                                    type="button"
+                                    onClick={() =>
+                                      setOpen({ session: s, view: "recording" })
+                                    }
+                                    className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
+                                  >
+                                    Recording
+                                  </button>
+                                  <span className="text-stone-300">·</span>
+                                </>
+                              )}
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  setOpen({ session: s, view: "transcript" })
+                                }
+                                className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
+                              >
+                                Transcript
+                              </button>
+                              <span className="text-stone-300">·</span>
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  setOpen({ session: s, view: "feedback" })
+                                }
+                                className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
+                              >
+                                Feedback
+                              </button>
+                            </span>
                           </span>
                         </li>
                       );
@@ -438,21 +449,10 @@ export default function AdminSessions({
               )}
             </div>
 
-            {/* Footer — delete this attempt (teacher only), or close. Deleting
-                closes the modal (the table refreshes and the row drops). */}
-            <div
-              className={`flex items-center gap-3 border-t border-stone-200 px-6 py-3 ${
-                canDelete ? "justify-between" : "justify-end"
-              }`}
-            >
-              {canDelete && (
-                <DeleteSessionButton
-                  url={session.blobUrl}
-                  audioUrl={session.audioUrl}
-                  label={`${session.studentName} · ${session.title}`}
-                  onDeleted={() => setOpen(null)}
-                />
-              )}
+            {/* Footer — this modal is view-only. Deleting an attempt is a
+                single action in the row's Details bar (teacher only), not here,
+                so a teacher never sees a separate delete per section. */}
+            <div className="flex items-center justify-end gap-3 border-t border-stone-200 px-6 py-3">
               <button
                 type="button"
                 onClick={() => setOpen(null)}

@@ -4,36 +4,35 @@ import { useState, type MouseEvent } from "react";
 import { useRouter } from "next/navigation";
 
 /**
- * Teacher-only "Delete" button shown next to each session on /admin. Confirms,
- * then asks the server to delete the session JSON (and its audio recording) from
- * Blob, then refreshes the list.
+ * Teacher-only "Delete" action — a SINGLE delete for a whole quiz attempt, shown
+ * once per row on /admin (in the Details action bar, not inside the per-section
+ * modal). It confirms, then asks the server to delete the whole session — its
+ * JSON *and* its audio recording — from Blob, then refreshes the list.
+ *
+ * Styled as an inline red text link so it sits alongside the row's other
+ * action-bar links (Recording · Transcript · Feedback).
  */
 export default function DeleteSessionButton({
   url,
   audioUrl,
   label,
-  onDeleted,
 }: {
   url: string;
   audioUrl?: string;
+  // A human label for the confirm prompt, e.g. "Arjun · The Last Question".
   label: string;
-  // Optional: called after a successful delete (e.g. to close the modal it sits
-  // in). The list still refreshes via router.refresh() regardless.
-  onDeleted?: () => void;
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   async function handleDelete(e: MouseEvent) {
-    // The button sits inside the <summary>; don't toggle the details open/closed.
+    // It's a sibling of the modal-opening links; don't let the click bubble.
     e.preventDefault();
     e.stopPropagation();
-    if (!confirm(`Delete this quiz session (${label})? This can't be undone.`)) {
+    if (!confirm(`Delete this quiz attempt (${label})? This can't be undone.`)) {
       return;
     }
     setBusy(true);
-    setError(null);
     try {
       const res = await fetch("/api/quiz-session", {
         method: "DELETE",
@@ -45,24 +44,22 @@ export default function DeleteSessionButton({
         throw new Error(data.error || "Delete failed.");
       }
       router.refresh();
-      onDeleted?.();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Delete failed.");
       setBusy(false);
+      // A bordered inline error would break the tight row layout; a native
+      // alert keeps the table stable and failures are rare.
+      alert(err instanceof Error ? err.message : "Delete failed.");
     }
   }
 
   return (
-    <span className="inline-flex items-center gap-2">
-      <button
-        type="button"
-        onClick={handleDelete}
-        disabled={busy}
-        className="rounded-md border border-red-200 px-2.5 py-1 text-xs font-medium text-red-600 hover:bg-red-50 disabled:opacity-50"
-      >
-        {busy ? "Deleting…" : "Delete"}
-      </button>
-      {error && <span className="text-xs text-red-600">{error}</span>}
-    </span>
+    <button
+      type="button"
+      onClick={handleDelete}
+      disabled={busy}
+      className="shrink-0 font-medium text-red-600 hover:text-red-700 hover:underline disabled:opacity-50"
+    >
+      {busy ? "Deleting…" : "Delete"}
+    </button>
   );
 }
