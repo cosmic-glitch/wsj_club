@@ -152,7 +152,7 @@ export default function AdminSessions({
                   <span className="w-10 text-right">Score</span>
                   <span className="w-12 text-right">Mins</span>
                   <span className="w-32 text-right">Time</span>
-                  <span className="w-72 pl-4 text-right">Details</span>
+                  <span className="w-80 text-right">Details</span>
                 </div>
               </th>
             </tr>
@@ -201,11 +201,25 @@ export default function AdminSessions({
                           <span className="w-32 shrink-0 whitespace-nowrap text-right text-stone-500">
                             {fmtLocal(s.endedAt, mounted)}
                           </span>
-                          {/* Three explicit, labeled links — each opens the detail
-                              modal focused on ONLY its own section (Recording ·
-                              Transcript · Feedback). "Recording" only shows when a
-                              clip was saved. */}
-                          <span className="flex w-72 shrink-0 items-baseline justify-end gap-2 pl-4">
+                          {/* Three labeled links — each opens the detail modal
+                              focused on ONLY its own section (Recording ·
+                              Transcript · Feedback); "Recording" only shows when a
+                              clip was saved. Any partial/cancelled badge lives
+                              INSIDE this fixed-width span (pushed left with
+                              mr-auto; the links stay right-aligned), filling the
+                              span's own slack so a badge never widens the row and
+                              clips off the right edge on desktop. */}
+                          <span className="flex w-80 shrink-0 items-baseline justify-end gap-2">
+                            {s.partial && (
+                              <span className="mr-auto self-center shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
+                                partial
+                              </span>
+                            )}
+                            {s.cancelled && (
+                              <span className="mr-auto self-center shrink-0 rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
+                                cancelled
+                              </span>
+                            )}
                             {s.audioUrl && (
                               <>
                                 <button
@@ -240,16 +254,6 @@ export default function AdminSessions({
                               Feedback
                             </button>
                           </span>
-                          {s.partial && (
-                            <span className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
-                              partial
-                            </span>
-                          )}
-                          {s.cancelled && (
-                            <span className="shrink-0 rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
-                              cancelled
-                            </span>
-                          )}
                         </li>
                       );
                     })}
