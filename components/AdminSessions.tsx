@@ -143,16 +143,19 @@ export default function AdminSessions({
                   labels use the SAME widths + px-1 + gap-2 as the attempt rows
                   below, and since they're in the same table column they line up.
                   Data columns are right-aligned to match the values; Details holds
-                  the three action links (Recording · Transcript · Feedback). The
-                  data columns are kept tight (the admin route widens the page — see
-                  app/admin/layout.tsx — so all of this fits without clipping). */}
+                  the three view links (Recording · Transcript · Feedback), then a
+                  final Delete column (teacher only). The sub-columns are kept tight
+                  and the admin route widens the page (app/admin/layout.tsx) so the
+                  whole line — through the last Delete column — fits without clipping
+                  on desktop. */}
               <th className="px-3 py-2.5 font-semibold">
                 <div className="flex items-end gap-2 px-1">
                   <span className="w-20 text-right">Student</span>
                   <span className="w-10 text-right">Score</span>
                   <span className="w-8 text-right">Mins</span>
                   <span className="w-32 text-right">Time</span>
-                  <span className="w-96 text-right">Details</span>
+                  <span className="w-64 text-right">Details</span>
+                  {canDelete && <span className="w-20 text-right">Delete</span>}
                 </div>
               </th>
             </tr>
@@ -163,7 +166,11 @@ export default function AdminSessions({
                 <td className="whitespace-nowrap px-3 py-3 font-serif text-sm font-bold text-stone-500">
                   {g.dateLabel}
                 </td>
-                <td className="px-3 py-3">
+                {/* [overflow-wrap:anywhere] lets a very long title word (e.g.
+                    "Astrophysicists") break so this column can shrink instead of
+                    forcing the whole table wider than max-w-4xl — which would push
+                    the last (Delete) column off the right edge on desktop. */}
+                <td className="px-3 py-3 [overflow-wrap:anywhere]">
                   <Link
                     href={`/reading/${g.date}`}
                     className="font-medium text-stone-900 hover:text-sky-700 hover:underline"
@@ -201,70 +208,76 @@ export default function AdminSessions({
                           <span className="w-32 shrink-0 whitespace-nowrap text-right text-stone-500">
                             {fmtLocal(s.endedAt, mounted)}
                           </span>
-                          {/* Two groups, split by justify-between inside this
-                              fixed-width span. LEFT: a SINGLE Delete for the whole
-                              attempt (teacher only) plus any partial/cancelled
-                              badge — the destructive action kept apart from the
-                              safe view links. RIGHT: the labeled links, each
-                              opening the detail modal focused on ONLY its own
+                          {/* Details: the three labeled links, each opening the
+                              view-only detail modal focused on ONLY its own
                               section (Recording · Transcript · Feedback);
-                              "Recording" only shows when a clip was saved. */}
-                          <span className="flex w-96 shrink-0 items-center justify-between gap-2">
-                            <span className="flex items-center gap-2">
-                              {canDelete && (
-                                <DeleteSessionButton
-                                  url={s.blobUrl}
-                                  audioUrl={s.audioUrl}
-                                  label={`${s.studentName} · ${s.title}`}
-                                />
-                              )}
-                              {s.partial && (
-                                <span className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
-                                  partial
-                                </span>
-                              )}
-                              {s.cancelled && (
-                                <span className="shrink-0 rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
-                                  cancelled
-                                </span>
-                              )}
-                            </span>
-                            <span className="flex items-baseline gap-2">
-                              {s.audioUrl && (
-                                <>
-                                  <button
-                                    type="button"
-                                    onClick={() =>
-                                      setOpen({ session: s, view: "recording" })
-                                    }
-                                    className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
-                                  >
-                                    Recording
-                                  </button>
-                                  <span className="text-stone-300">·</span>
-                                </>
-                              )}
-                              <button
-                                type="button"
-                                onClick={() =>
-                                  setOpen({ session: s, view: "transcript" })
-                                }
-                                className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
-                              >
-                                Transcript
-                              </button>
-                              <span className="text-stone-300">·</span>
-                              <button
-                                type="button"
-                                onClick={() =>
-                                  setOpen({ session: s, view: "feedback" })
-                                }
-                                className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
-                              >
-                                Feedback
-                              </button>
-                            </span>
+                              "Recording" only shows when a clip was saved. Any
+                              partial/cancelled badge wraps to its OWN line above
+                              the links (basis-full) rather than widening the row,
+                              so a badge never pushes the line into horizontal
+                              overflow (which would clip the Delete column). */}
+                          <span className="flex w-64 shrink-0 flex-wrap items-baseline justify-end gap-x-2 gap-y-1">
+                            {(s.partial || s.cancelled) && (
+                              <span className="flex basis-full justify-end gap-2">
+                                {s.partial && (
+                                  <span className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
+                                    partial
+                                  </span>
+                                )}
+                                {s.cancelled && (
+                                  <span className="shrink-0 rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
+                                    cancelled
+                                  </span>
+                                )}
+                              </span>
+                            )}
+                            {s.audioUrl && (
+                              <>
+                                <button
+                                  type="button"
+                                  onClick={() =>
+                                    setOpen({ session: s, view: "recording" })
+                                  }
+                                  className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
+                                >
+                                  Recording
+                                </button>
+                                <span className="text-stone-300">·</span>
+                              </>
+                            )}
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setOpen({ session: s, view: "transcript" })
+                              }
+                              className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
+                            >
+                              Transcript
+                            </button>
+                            <span className="text-stone-300">·</span>
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setOpen({ session: s, view: "feedback" })
+                              }
+                              className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
+                            >
+                              Feedback
+                            </button>
                           </span>
+                          {/* Delete is the LAST column — a single per-attempt
+                              action (teacher only), right-aligned in its own
+                              fixed-width slot so it lines up down the list and is
+                              never pushed off the right edge on desktop. */}
+                          {canDelete && (
+                            <span className="flex w-20 shrink-0 justify-end">
+                              <DeleteSessionButton
+                                url={s.blobUrl}
+                                audioUrl={s.audioUrl}
+                                label={`${s.studentName} · ${s.title}`}
+                              />
+                            </span>
+                          )}
                         </li>
                       );
                     })}
