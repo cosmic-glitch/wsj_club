@@ -4,6 +4,7 @@ import Link from "next/link";
 import AllReadingsLink from "@/components/AllReadingsLink";
 import AuthControl from "@/components/AuthControl";
 import { AuthProvider } from "@/components/AuthProvider";
+import HeaderContainer from "@/components/HeaderContainer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -34,7 +35,7 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col">
         <AuthProvider>
           <header className="border-b border-stone-200 bg-white/70 backdrop-blur">
-            <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-4">
+            <HeaderContainer>
               <Link href="/" className="font-serif text-lg font-bold tracking-tight">
                 Reading Club
               </Link>
@@ -42,7 +43,7 @@ export default function RootLayout({
                 <AllReadingsLink />
                 <AuthControl />
               </div>
-            </div>
+            </HeaderContainer>
           </header>
           <main className="mx-auto w-full max-w-3xl flex-1 px-5 py-10">
             {children}
