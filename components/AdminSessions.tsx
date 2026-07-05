@@ -150,7 +150,7 @@ export default function AdminSessions({
                   <span className="w-12 text-right">Score</span>
                   <span className="w-14 text-right">Mins</span>
                   <span className="w-36 text-right">Time</span>
-                  <span className="w-56 text-right">Details</span>
+                  <span className="w-72 pl-4 text-right">Details</span>
                 </div>
               </th>
             </tr>
@@ -203,7 +203,7 @@ export default function AdminSessions({
                               modal focused on ONLY its own section (Recording ·
                               Transcript · Feedback). "Recording" only shows when a
                               clip was saved. */}
-                          <span className="flex w-56 shrink-0 items-baseline justify-end gap-2">
+                          <span className="flex w-72 shrink-0 items-baseline justify-end gap-2 pl-4">
                             {s.audioUrl && (
                               <>
                                 <button
