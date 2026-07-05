@@ -1,0 +1,119 @@
+{
+  "date": "2026-07-05",
+  "title": "The Last Question by Isaac Asimov",
+  "articleUrl": "https://users.ece.cmu.edu/~gamvrosi/thelastq.html",
+  "voiceQuiz": true,
+  "source": "Isaac Asimov (1956)",
+  "vocab": [
+    {
+      "word": "husband",
+      "partOfSpeech": "verb",
+      "articleQuote": "Carefully husbanded, as directed by the Cosmic AC, the energy that is even yet left in all the Universe will last for billions of years.",
+      "inContext": "Here \"husbanded\" has nothing to do with marriage. It means the last of the universe's energy is being spent as slowly and carefully as possible — stretched out so it lasts billions of years instead of being burned up quickly.",
+      "meaning": "To husband something (the verb) is to manage and use a limited resource thriftily — to conserve it and make it last rather than waste it.",
+      "examples": [
+        "With one water bottle left and miles still to hike, we husbanded every sip.",
+        "She husbanded her energy for the first three laps so she'd have a sprint left at the finish."
+      ]
+    },
+    {
+      "word": "spendthrift",
+      "partOfSpeech": "noun",
+      "articleQuote": "The giant stars, spendthrifts, were gone long ago, back in the dimmest of the dim far past.",
+      "inContext": "The giant stars are called spendthrifts because they burn through their enormous fuel supply recklessly fast — blazing brilliantly but dying young, long before the smaller, thriftier stars.",
+      "meaning": "A spendthrift is a person (or thing) that spends money or resources wastefully and extravagantly, giving no thought to the future — the exact opposite of someone who husbands what they have.",
+      "examples": [
+        "He was a spendthrift with his allowance, blowing all of it the first day and borrowing for the rest of the month.",
+        "The startup was a spendthrift, throwing its funding at lavish parties before it had even built a product."
+      ]
+    },
+    {
+      "word": "reverie",
+      "partOfSpeech": "noun",
+      "articleQuote": "Zee Prime was roused out of his reverie upon coming across the wispy tendrils of another mind.",
+      "inContext": "Zee Prime is drifting in a reverie — lost in his own wandering, dreamy thoughts as his mind floats among the galaxies — until the touch of another mind snaps him back to attention.",
+      "meaning": "A reverie is a state of being pleasantly lost in your own thoughts; a daydream that carries you away from what is going on around you.",
+      "examples": [
+        "The teacher's question yanked me out of a reverie about summer vacation.",
+        "He sat by the window in a reverie, replaying the winning goal over and over in his head."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Entropy and the second law of thermodynamics",
+      "articleQuote": "But just give us a trillion years and everything will be dark. Entropy has to increase to maximum, that's all.",
+      "inContext": "The characters use \"entropy\" to explain why the universe must eventually run down and go dark: every star that shines spends energy that can never be fully recovered, and that one-way spending can only pile up until nothing is left to burn.",
+      "meaning": "Start with a simple picture. Imagine a box split in two, with all the air crammed into the left half and the right half empty. Pull out the divider and the air rushes to fill the whole box — every single time. You will never see the reverse: air spontaneously crowding back into one half and leaving a vacuum. Why not? Not because any law forbids a given molecule from drifting left — each one bounces around at random. It's a matter of counting. There are astronomically more ways for the molecules to be spread out evenly than for them all to happen to land on one side, so \"spread out\" is overwhelmingly what you find. Entropy is basically a measure of that: how many different microscopic arrangements would look the same from the outside. Low entropy means a special, orderly, unlikely arrangement (all the air on one side; a neat stack of cards; a hot coffee in a cool room). High entropy means a generic, disordered, overwhelmingly likely one (air evenly mixed; a shuffled deck; the coffee and the room settled to one lukewarm temperature). The second law of thermodynamics simply says that, left alone, things drift from the rare orderly states toward the common disordered ones — so total entropy almost always increases and essentially never decreases on its own. That single rule is why heat always flows from hot to cold and never back, why an egg scrambles but never unscrambles, and why a perpetual-motion machine is impossible. And here is the part that haunts the story: every time energy does something useful, some of it degrades into evenly spread-out, lukewarm heat that can't be gathered back up and reused. You can force entropy down in one spot — a freezer makes ice — but only by dumping even more disorder somewhere else (the heat pouring off the back of the fridge). The universe as a whole has no \"somewhere else\" to dump into, so its entropy can only ever climb. That is the one-way street Asimov's characters keep staring down."
+    },
+    {
+      "name": "Recursive self-improvement",
+      "articleQuote": "Each Universal AC designed and constructed its successor. Each… accumulated the necessary data to build a better and more intricate, more capable successor in which its own store of data and individuality would be submerged.",
+      "inContext": "The computers have stopped being built by people. Instead, each generation of AC designs and builds the next, smarter generation, so the machine's intelligence keeps ratcheting upward on its own across millions of years — until it utterly outstrips any human mind.",
+      "meaning": "Recursive self-improvement is what happens when a system becomes good enough at improving itself to make a better version of itself — which is then even better at improving itself, and so builds a better version still, round after round. The key word is recursive: the thing doing the improving is the same thing getting improved, so each step raises the ceiling on the next step. Ordinary progress tends to plateau; a self-improvement loop can instead speed up, because every gain makes the next gain easier to reach. This is the core idea behind what researchers call an \"intelligence explosion\" or the \"technological singularity\" in today's debates about AI: if a machine ever gets good enough at doing AI research, it might rapidly bootstrap itself far beyond human ability. The same feedback shape shows up whenever tools are used to build better tools — better chip-design software helps design faster chips, which then run better design software. What keeps this from being a sure thing is that real-world limits (energy, materials, raw physics, available data) can slow the loop or cap it, which is exactly why smart people still argue about how far and how fast it could actually go."
+    },
+    {
+      "name": "Heat death of the universe",
+      "articleQuote": "…nothing besides but incredibly thin matter, agitated randomly by the tag ends of heat wearing out, asymptotically, to the absolute zero.",
+      "inContext": "This is the universe at the very end: the stars have all burned out, and the last traces of energy have spread into a thin, cold, formless soup drifting toward absolute zero — the dead, uniform state the whole story has been dreading.",
+      "meaning": "Here is the counterintuitive part: the universe doesn't wind down because it runs out of energy. Energy is conserved — the total amount never changes. It winds down because energy keeps spreading out and evening up. To get useful work — to run an engine, light a star, power a living cell, or even think a thought — you don't just need energy, you need a difference: something hot next to something cold, a high place next to a low one, a dense spot next to an empty one. A waterwheel turns only because water falls from high to low; once the pond and the river settle to the same level, that same water just sits there doing nothing, even though it's all still there. Every time nature uses a difference to do work, it also wears that difference down a little — the hot thing cools, the cold thing warms, and they meet somewhere in the middle. Run that forward long enough and every difference in the whole universe gets ironed perfectly flat: the same temperature everywhere, energy smeared out completely evenly. That is maximum entropy. At that point the energy is all still present, but it is useless — there is no hot-and-cold left to push anything, so no star can shine, no machine can turn, no thought can form. Physicists call this the \"heat death\" of the universe, and everything drifts toward the coldest temperature there is, absolute zero (about −273 °C), where motion almost entirely stops. It isn't a fiery end but a cold, silent, motionless one — which is precisely the fate Asimov's characters keep begging the computer to help them escape."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "From the first scene with Multivac all the way to the Cosmic AC, humans keep asking the computer one question. What is it — and what does the computer keep replying?",
+      "options": [
+        "\"How do we travel faster than light?\" — \"PROCESSING REQUEST\"",
+        "\"Can entropy be reversed?\" — \"INSUFFICIENT DATA FOR A MEANINGFUL ANSWER\"",
+        "\"When will the sun die?\" — \"IN TEN BILLION YEARS\"",
+        "\"Is there other intelligent life?\" — \"SEARCHING\""
+      ],
+      "answerIndex": 1,
+      "explanation": "In every era the question is a version of \"Can entropy be reversed?\", and the machine always answers \"INSUFFICIENT DATA FOR A MEANINGFUL ANSWER\" — right up until the very end."
+    },
+    {
+      "question": "According to the characters, why must the universe eventually go completely dark?",
+      "options": [
+        "Because the computers will run out of things to calculate.",
+        "Because entropy always increases, so usable energy keeps degrading and can never be fully restored.",
+        "Because humans will burn up all the hydrogen in a single galaxy.",
+        "Because the universe will suddenly collapse back into a single point."
+      ],
+      "answerIndex": 1,
+      "explanation": "The second law of thermodynamics means entropy climbs and energy is spent in a one-way fashion, so eventually there is no usable energy left to make the stars shine."
+    },
+    {
+      "question": "The story calls the giant stars \"spendthrifts,\" while the Cosmic AC \"husbands\" the energy that remains. What is the contrast?",
+      "options": [
+        "The stars are enormous and the leftover energy is tiny.",
+        "The giant stars waste their fuel recklessly and fast, while the AC conserves what's left as carefully as possible.",
+        "The stars are natural and the AC is artificial.",
+        "The stars are ancient and the energy is brand new."
+      ],
+      "answerIndex": 1,
+      "explanation": "A spendthrift wastes resources extravagantly; to husband is to conserve them thriftily — opposite approaches to the same limited supply of fuel."
+    },
+    {
+      "question": "Late in the story, who designs and builds each new, more powerful computer?",
+      "options": [
+        "A council of the smartest surviving humans.",
+        "The previous computer builds its own more capable successor.",
+        "The stars themselves, through natural processes.",
+        "No one — the computers have stopped improving."
+      ],
+      "answerIndex": 1,
+      "explanation": "\"Each Universal AC designed and constructed its successor\" — a case of recursive self-improvement, where each machine builds a smarter version of itself."
+    },
+    {
+      "question": "How does the story end, and what finally allows AC to answer the last question?",
+      "options": [
+        "Humans work out the answer themselves and rebuild the stars by hand.",
+        "After the universe has reached its cold, dead end and only AC remains, AC at last solves the problem and answers by demonstration: \"LET THERE BE LIGHT.\"",
+        "The Cosmic AC concludes the question is impossible and shuts itself down.",
+        "A new universe springs up entirely on its own, with no involvement from AC."
+      ],
+      "answerIndex": 1,
+      "explanation": "Only after the universe dies (heat death) and all the data is finally correlated does AC learn how to reverse entropy — and with no one left to tell, it answers by creating a new universe: \"LET THERE BE LIGHT.\""
+    }
+  ]
+}
