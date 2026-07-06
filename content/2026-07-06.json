@@ -1,0 +1,125 @@
+{
+  "date": "2026-07-06",
+  "title": "Has China Obtained the World's Most Important Machine?",
+  "articleUrl": "https://www.economist.com/china/2026/07/05/has-china-obtained-the-worlds-most-important-machine",
+  "pdfUrl": "/pdfs/2026-07-06.pdf",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "coveted",
+      "partOfSpeech": "adjective",
+      "articleQuote": "…it will probably not be the last time that ASML and its coveted technology are caught in the crossfire.",
+      "inContext": "It describes ASML's machine-making technology as something governments and companies around the world desperately want to get their hands on.",
+      "meaning": "Coveted means eagerly wanted and prized by many people — so desirable that others envy whoever has it.",
+      "examples": [
+        "A starting spot on the varsity team is coveted by every freshman who tries out.",
+        "The corner desk by the window was the most coveted seat in the whole classroom."
+      ]
+    },
+    {
+      "word": "salvo",
+      "partOfSpeech": "noun",
+      "articleQuote": "But this is just an early salvo in the bigger battle over AI chokeholds.",
+      "inContext": "The fight over the alleged machine is called just the opening shot in a much longer struggle between the US and China over control of AI technology.",
+      "meaning": "A salvo is a sudden burst — originally of several guns firing at once — now often used for an opening or aggressive move in a larger conflict or argument.",
+      "examples": [
+        "Her sharp first question was the opening salvo in a debate that ran for an hour.",
+        "The store's surprise price cut was a salvo aimed straight at its biggest rival."
+      ]
+    },
+    {
+      "word": "decommissioned",
+      "partOfSpeech": "verb",
+      "articleQuote": "…it knows the exact location of all 340 EUV machines it has produced, including 26 decommissioned ones.",
+      "inContext": "The 26 machines that have been retired and taken out of active use — but whose whereabouts ASML says it still tracks.",
+      "meaning": "To decommission something is to officially take it out of active service, especially a machine, ship, power plant, or weapon.",
+      "examples": [
+        "The old aircraft carrier was decommissioned and turned into a floating museum.",
+        "When the new lab opened, the school decommissioned its twenty-year-old computers."
+      ]
+    },
+    {
+      "word": "fracas",
+      "partOfSpeech": "noun",
+      "articleQuote": "The fracas over Mr Lutnick's claim may die down, especially if America fails to share supporting evidence.",
+      "inContext": "The noisy public dispute and uproar set off by the US commerce secretary's accusation about the machine.",
+      "meaning": "A fracas is a noisy quarrel, uproar, or disorderly commotion, usually involving several people.",
+      "examples": [
+        "A fracas broke out in the stands after the referee's controversial call.",
+        "The group chat erupted into a fracas over who was really to blame for the lost match."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The semiconductor supply chain",
+      "articleQuote": "These machines, whose creations power the most capable artificial-intelligence models, are made only by ASML, a Dutch company.",
+      "inContext": "In the article, the world's best AI chips can only be manufactured using EUV machines, and those machines are built by exactly one company — the Dutch firm ASML. That is why a single Dutch machine sits at the center of a US–China superpower fight.",
+      "meaning": "Making an advanced computer chip is a relay race split across a few hyper-specialized companies, and almost none of them does more than one leg. First, a designer like Nvidia decides what the chip should do — but Nvidia owns no factories; it is 'fabless.' Next, a foundry actually manufactures the chip, 'printing' billions of microscopic transistors onto silicon wafers; in the real world the dominant foundry is Taiwan's TSMC (the article doesn't name it, but that's who makes chips like Nvidia's). To carve features only a few atoms wide, the foundry needs lithography machines, and the most advanced kind — extreme-ultraviolet, or EUV — is built by just one company on Earth: ASML in the Netherlands (older, less precise DUV machines are far more widely available). So the path behind a single AI chip runs Nvidia (design) → a foundry like TSMC (fabrication) → ASML (the machine that makes fabrication possible) — three near-monopolies in three different countries, each holding a piece no rival can easily replace. That is why 'just build your own' is so hard, and why controlling any one link is so powerful."
+    },
+    {
+      "name": "Export controls",
+      "articleQuote": "Since 2019 America has blocked the export to China of the extreme ultraviolet, or EUV, lithography machines that make the world's most advanced semiconductors.",
+      "inContext": "The US has legally banned the sale of the most advanced chip-making machines to China, aiming to slow China's progress in AI and advanced computing.",
+      "meaning": "Export controls are government rules that restrict or forbid selling certain goods, technologies, or know-how to particular countries — usually for national-security reasons. They differ from a tariff, which merely taxes a sale: an export control can block the sale outright. Governments reach for them to deny a rival access to strategic technology — advanced chips, weapons parts, encryption — betting that if you control something the other side can't easily make for itself, withholding it slows them down. Their reach can even stretch beyond a country's own borders when the restricted item depends on that country's technology, which is how the US can pressure a Dutch company's sales to China."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the core dispute the article describes?",
+      "options": [
+        "China has publicly admitted buying an ASML machine",
+        "The US alleges an EUV machine may have reached China, while ASML insists it tracks all 340 it ever made and none is there",
+        "ASML has announced it is moving its headquarters to China",
+        "The US and the Netherlands have agreed to start selling EUV machines to China"
+      ],
+      "answerIndex": 1,
+      "explanation": "The piece centers on a US allegation that an EUV machine may have reached China, which ASML flatly denies, saying it knows the location of all 340 machines it has ever produced."
+    },
+    {
+      "question": "In the chip supply chain, what does a 'fabless' company like Nvidia actually do?",
+      "options": [
+        "It builds the lithography machines used to make chips",
+        "It manufactures its chips in its own factories",
+        "It designs chips but relies on other companies to manufacture them",
+        "It mines the raw silicon that chips are made from"
+      ],
+      "answerIndex": 2,
+      "explanation": "'Fabless' means a company designs chips but owns no fabrication plants, so a foundry (such as TSMC) does the actual manufacturing."
+    },
+    {
+      "question": "Why has the US used export controls to block sales of EUV machines to China?",
+      "options": [
+        "To collect more tax revenue from Chinese imports",
+        "To lower the price of chips for American buyers",
+        "To deny China a strategic technology it can't easily build itself, slowing its AI progress",
+        "To force ASML to move its factories to the United States"
+      ],
+      "answerIndex": 2,
+      "explanation": "Export controls ban selling strategic technology to a rival; the US bet that withholding EUV machines China cannot yet make itself would slow its advance in AI."
+    },
+    {
+      "question": "In the sentence \"ASML and its coveted technology,\" the word coveted most nearly means:",
+      "options": [
+        "outdated and unwanted",
+        "eagerly desired by many",
+        "kept completely secret",
+        "cheap and easy to copy"
+      ],
+      "answerIndex": 1,
+      "explanation": "Coveted describes something many people strongly want and even envy — here, technology everyone would love to control."
+    },
+    {
+      "question": "The article calls the current clash \"just an early salvo in the bigger battle.\" A salvo is:",
+      "options": [
+        "a peaceful compromise",
+        "a final surrender",
+        "an opening or aggressive move in a conflict",
+        "a small, harmless accident"
+      ],
+      "answerIndex": 2,
+      "explanation": "A salvo is a burst (originally of gunfire) used figuratively to mean an opening or aggressive move in a larger fight."
+    }
+  ]
+}
