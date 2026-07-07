@@ -20,7 +20,14 @@ export async function loadSessions(): Promise<Session[] | { error: string }> {
           .filter((b) => b.pathname.endsWith(".json"))
           .map(async (b) => {
             try {
-              const res = await fetch(b.url, { cache: "no-store" });
+              // Key the URL by uploadedAt: the in-progress slot is overwritten
+              // in place, and the Blob CDN edge-caches by URL — a plain
+              // no-store fetch can serve a stale copy right after an overwrite
+              // (same trap lib/users.ts documents). list() metadata is
+              // read-after-write consistent, so this forces current content.
+              // Harmless for the immutable random-suffixed records.
+              const v = new Date(b.uploadedAt).getTime();
+              const res = await fetch(`${b.url}?v=${v}`, { cache: "no-store" });
               const session = (await res.json()) as Session;
               return { ...session, blobUrl: b.url };
             } catch (err) {

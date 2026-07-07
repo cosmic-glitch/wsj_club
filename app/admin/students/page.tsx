@@ -50,6 +50,9 @@ export default async function StudentsPage() {
   const result = await loadSessions();
   if (!("error" in result)) {
     for (const s of result) {
+      // A live/paused attempt (the in-progress slot) isn't a finished attempt
+      // yet — it becomes one when the student Ends (or Cancels) it.
+      if (s.inProgress) continue;
       const owner = s.loginUser ?? s.studentName ?? "";
       if (!owner) continue;
       const cur = stats.get(owner) ?? { attempts: 0, lastActiveIso: null };

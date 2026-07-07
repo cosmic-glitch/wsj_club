@@ -34,8 +34,11 @@ function groupByArticle(sessions: Session[]): ArticleGroup[] {
   }
   const groups = Array.from(byDate.values());
   groups.sort((a, b) => b.date.localeCompare(a.date));
+  // An in-progress slot has no endedAt (nothing ended) — order it by its last
+  // checkpoint time instead.
+  const when = (s: Session) => s.endedAt ?? s.updatedAt ?? "";
   for (const g of groups) {
-    g.attempts.sort((a, b) => (a.endedAt ?? "").localeCompare(b.endedAt ?? ""));
+    g.attempts.sort((a, b) => when(a).localeCompare(when(b)));
   }
   return groups;
 }
@@ -58,7 +61,11 @@ function scopeToClassroom(
 }
 
 /** A classroom's by-article table, or a friendly empty state when it has none. */
-function classroomPanel(groups: ArticleGroup[], canDelete: boolean) {
+function classroomPanel(
+  groups: ArticleGroup[],
+  canDelete: boolean,
+  viewerUser: string
+) {
   if (groups.length === 0) {
     return (
       <p className="mt-6 rounded-lg border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
@@ -66,7 +73,9 @@ function classroomPanel(groups: ArticleGroup[], canDelete: boolean) {
       </p>
     );
   }
-  return <AdminSessions groups={groups} canDelete={canDelete} />;
+  return (
+    <AdminSessions groups={groups} canDelete={canDelete} viewerUser={viewerUser} />
+  );
 }
 
 export default async function AdminPage() {
@@ -119,7 +128,11 @@ export default async function AdminPage() {
             You haven&apos;t taken any voice quizzes yet.
           </p>
         ) : (
-          <AdminSessions groups={groupByArticle(visible)} canDelete={false} />
+          <AdminSessions
+            groups={groupByArticle(visible)}
+            canDelete={false}
+            viewerUser={user}
+          />
         )}
       </div>
     );
@@ -150,7 +163,7 @@ export default async function AdminPage() {
           Saved voice-quiz attempts by article — click Feedback or Recording on
           any attempt for its full report card, recording, and transcript.
         </p>
-        {classroomPanel(ownGroups, true)}
+        {classroomPanel(ownGroups, true, user)}
       </div>
     );
   }
@@ -161,11 +174,15 @@ export default async function AdminPage() {
     others.map(async (t) => ({
       key: t.username,
       label: `${t.displayName}’s classroom`,
-      content: classroomPanel(await classroomGroups(t.username), false),
+      content: classroomPanel(await classroomGroups(t.username), false, user),
     }))
   );
   const tabs: ClassroomTab[] = [
-    { key: user, label: "My classroom", content: classroomPanel(ownGroups, true) },
+    {
+      key: user,
+      label: "My classroom",
+      content: classroomPanel(ownGroups, true, user),
+    },
     ...otherTabs,
   ];
 

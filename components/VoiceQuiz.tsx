@@ -27,20 +27,45 @@ type Report = {
   gaps?: string[];
 };
 
-// A failure during the quiz (transcription / tutor unreachable). When one
-// occurs, the session is saved as a PARTIAL attempt — the recording + transcript
-// so far, flagged with this reason — instead of being lost. `detail` is a short
-// human summary (the deep detail, incl. the student name, is logged server-side).
+// A failure during the quiz (transcription / tutor unreachable). It PAUSES the
+// quiz — progress is checkpointed to the in-progress slot, flagged with this
+// reason, and the student can retry now or leave and continue later. `detail` is
+// a short human summary (the deep detail, incl. the student name, is logged
+// server-side).
 type SessionFailure = { reason: string; detail: string };
+
+// What "Try again" on the paused screen should re-run: the failed tutor turn, or
+// the failed transcription of a still-held answer clip.
+type RetrySpec =
+  | { kind: "turn" }
+  | { kind: "transcribe"; blob: Blob; filename: string };
+
+// The in-progress slot as returned by GET /api/quiz-progress — a paused
+// attempt's saved state (the checkpointed transcript + where the loop was).
+// Written by /api/quiz-progress; the pathname convention mirrors
+// lib/session-io.ts (keep them in sync).
+type SlotSession = {
+  transcript?: Turn[];
+  tutorDone?: boolean;
+  resumeCount?: number;
+  audioUrl?: string;
+  durationMs?: number;
+  updatedAt?: string;
+  diag?: { sessionId?: string };
+};
 
 type Phase =
   | "idle" // modal closed
   | "needLogin" // clicked while logged out
+  | "probing" // checking the server for a saved in-progress quiz (on launch)
+  | "chooser" // a saved quiz exists: Continue / Start over
   | "starting" // mic permission + first tutor question
   | "tutorTurn" // tutor's question is shown/spoken; waiting for the student to start
   | "recording" // student is recording their answer
   | "transcribing" // turning the recorded answer into text
   | "thinking" // generating the tutor's next line
+  | "paused" // a failure/hang paused the quiz — progress is saved; retry or leave
+  | "leaving" // "Save for later": flushing the checkpoint, then the modal closes
   | "wrapup" // after "End quiz": one screen that fills in (upload → grade → score)
   | "error"; // a fatal startup problem (mic denied, first question failed)
 
@@ -53,12 +78,15 @@ const METER_BARS = 24;
 // Safety valve for a `done` signal that never fires. "End quiz" only appears once
 // the tutor signals the quiz is complete, so if that signal never arrives the
 // student could be trapped answering forever. If the transcript grows past this
-// (a normal quiz is ~14 turns), we auto-save a partial and end. See stopSpeaking.
+// (a normal quiz is ~14 turns), we FORCE the done state (tutorDone = true) so End
+// appears and the attempt stays finishable/gradable — pausing instead would make
+// a runaway permanently unfinishable (resuming re-trips the cap forever).
 const MAX_TURNS = 24;
 
 // A tutor-turn or transcribe fetch that hangs longer than this is treated as a
-// failure → auto partial save + clean end. Since strict End-gating removes the
-// manual escape hatch, this guarantees a stuck quiz still ends and saves.
+// failure → the quiz PAUSES (progress is checkpointed; the student can retry now
+// or leave and continue later). Nothing auto-finalizes — only the End and Cancel
+// buttons are terminal.
 const FETCH_TIMEOUT_MS = 60_000;
 
 function StepIcon({ state }: { state: StepState }) {
@@ -235,23 +263,33 @@ async function decodeBlobToPcm16k(blob: Blob, ctx: AudioContext): Promise<Float3
  * WAV (in the order it happened), uploaded straight to Blob (via /api/quiz-audio's
  * token) and linked from the session for the teacher to play back. Recording is
  * best-effort — a failure never breaks the quiz.
+ *
+ * PAUSE & RESUME (see PLAN-continue-voice-quiz.md): the transcript is
+ * checkpointed to a per-(student,date) "in-progress slot" after every answer
+ * and tutor turn (POST /api/quiz-progress), so leaving the page never loses a
+ * quiz — it pauses it. A failure/hang pauses too (retry-or-leave) instead of
+ * ending. Clicking the launcher while a slot exists offers Continue / Start
+ * over; the Scores page's Continue navigates to /?resume=<date>, which
+ * auto-resumes. Only the End and Cancel buttons are terminal — End grades, and
+ * both delete the slot (server-side, after the save).
  */
 export default function VoiceQuiz({ date, title }: { date: string; title: string }) {
   // Login state comes from the shared AuthProvider (one /api/me fetch for the
   // whole page); login/logout both reload the page, so it stays fresh.
-  const { user } = useAuth();
+  const { user, ready } = useAuth();
   const [phase, setPhase] = useState<Phase>("idle");
   const [error, setError] = useState("");
   // A transient, non-fatal notice (e.g. "couldn't catch that — try again") shown
   // as a small banner in the live screen; cleared on the next action.
   const [notice, setNotice] = useState("");
-  // The failure that ended this session (transcription / tutor unreachable). When
-  // an error is hit we record it here and IMMEDIATELY end the quiz (failAndEnd),
-  // saving a PARTIAL attempt with this reason — no button press required.
-  // failureRef is the async-safe source of truth the save flow reads; `failed`
-  // drives the wrap-up copy ("Saved — we hit a snag").
+  // The failure behind the current PAUSE (transcription / tutor unreachable /
+  // hang). A failure no longer ends the quiz — pauseOnFailure checkpoints and
+  // shows a retry-or-leave screen — but the reason is echoed onto the slot so
+  // the teacher can see why an in-progress attempt paused. Cleared on retry,
+  // resume, and a fresh start.
   const failureRef = useRef<SessionFailure | null>(null);
-  const [failed, setFailed] = useState(false);
+  // The student-facing line on the paused screen (why we paused).
+  const [pausedMsg, setPausedMsg] = useState("");
   // True while a session is being saved because the student pressed Cancel. The
   // attempt still saves for the teacher (recording + transcript so far,
   // ungraded), but the wrap-up stays a minimal holding screen and the modal
@@ -320,9 +358,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   const levelsRef = useRef<number[]>(new Array(METER_BARS).fill(0));
 
   // The quiz ends only when the student clicks "End quiz" (once the tutor is
-  // done), cancels (saved as a cancelled entry — see cancel()), or an internal
-  // failure/hang/backstop finalizes it. This once-guard keeps the save
-  // idempotent — racing finalizes run once.
+  // done) or cancels (saved as a cancelled entry — see cancel()) — the two
+  // terminal buttons. Failures/hangs PAUSE instead (pauseOnFailure); leaving
+  // just leaves. This once-guard keeps the save idempotent — racing finalizes
+  // run once.
   const endStartedRef = useRef(false);
 
   // ---- Run/lifecycle fencing (so a stale async op can't mutate a newer quiz) --
@@ -339,7 +378,32 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // Set once the tutor signals the quiz is complete (`done` from /api/quiz-turn,
   // or the exact wrap-up phrase). ONLY then does "End quiz" appear and "Start
   // speaking" hide — so End can never fire mid-turn, the root of the data-loss bug.
+  // tutorDoneRef mirrors it for the async checkpoint path (no stale closures);
+  // set both only via markTutorDone().
   const [tutorDone, setTutorDone] = useState(false);
+  const tutorDoneRef = useRef(false);
+
+  // ---- Pause & resume (the in-progress slot) ------------------------------
+  // The transcript is checkpointed to the server after every answer and tutor
+  // turn (POST /api/quiz-progress → the per-(student,date) "slot"), so leaving
+  // the page never loses a quiz — it pauses it. See PLAN-continue-voice-quiz.md.
+  // What "Try again" on the paused screen should re-run (null = nothing pending).
+  const pendingRetryRef = useRef<RetrySpec | null>(null);
+  // How many times THIS attempt has been paused and continued (0 on a fresh
+  // start; slot.resumeCount + 1 after each resume). Saved with the session.
+  const resumeCountRef = useRef(0);
+  // The slot's flushed audio (uploaded at pause time), echoed on every
+  // checkpoint so a plain transcript checkpoint doesn't clobber it server-side.
+  const slotAudioRef = useRef<{ url: string; durationMs?: number } | null>(null);
+  // The tail of the checkpoint chain. Checkpoints are serialized (each waits for
+  // the previous), and finalizeQuiz AWAITS this before the terminal save —
+  // a checkpoint landing after the server deleted the slot would resurrect a
+  // stale "Continue" for a finished quiz.
+  const checkpointInFlightRef = useRef<Promise<void> | null>(null);
+  // The saved slot behind the launcher's Continue / Start over chooser.
+  const [slotOffer, setSlotOffer] = useState<SlotSession | null>(null);
+  // The ?resume=<date> auto-open runs at most once per mount.
+  const autoResumeTriedRef = useRef(false);
 
   // True while this run is the current, mounted one. False after Cancel/close (the
   // generation bumped) or unmount — the signal to discard a resolving async op.
@@ -351,14 +415,16 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // ---- Diagnostics (logging only; NO effect on the quiz) -----------------
   // The "one quiz saved as two records" bug is hard to reproduce, so every saved
   // session carries breadcrumbs that make the next occurrence self-explaining:
-  //   sessionId — one id per quiz (per start()); two records with the SAME id ⇒
-  //               one quiz that saved twice (the once-guard was bypassed).
+  //   sessionId — one id per quiz (per start(); resume() REUSES the paused
+  //               quiz's id, so one quiz keeps one id across pauses); two
+  //               TERMINAL records with the SAME id ⇒ one quiz saved twice.
   //   mountId   — one id per component mount; two records with DIFFERENT mountIds
   //               ⇒ the component remounted between the two saves.
-  //   phaseRef  — the live phase, read at finalize time (a "fail:*" endReason at a
-  //               non-tutorTurn phase is expected; "end-button" should only ever be
-  //               at tutorTurn with the tutor done — anything else = a bypassed gate).
-  //   breadcrumbs — an ordered event log (start, turns, transcribe, end:called…).
+  //   phaseRef  — the live phase, read at finalize time ("end-button" should only
+  //               ever be at tutorTurn with the tutor done — anything else = a
+  //               bypassed gate; "cancel" is valid at any phase).
+  //   breadcrumbs — an ordered event log (start, turns, transcribe, checkpoint:*,
+  //               pause:*, resume:begin, backstop:done-forced, end:called…).
   const sessionIdRef = useRef<string | null>(null);
   const mountIdRef = useRef<string>("");
   const t0Ref = useRef<number>(0); // breadcrumb time origin (ms; set at mount)
@@ -393,24 +459,168 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     if (list.length > 500) breadcrumbsRef.current = list.slice(-400);
   }
 
-  // Record a failure (its reason is what the teacher sees on the partial). Used
-  // by failAndEnd; the latest one wins.
-  function recordFailure(reason: string, detail: string) {
-    failureRef.current = { reason, detail };
-    setFailed(true);
+  // The single setter for the done gate (state + ref stay in sync; the ref is
+  // what the async checkpoint path reads).
+  function markTutorDone(v: boolean) {
+    tutorDoneRef.current = v;
+    setTutorDone(v);
   }
 
-  // A genuine error/hang/backstop during the quiz (transcription rejected, tutor
-  // unreachable, fetch timed out, runaway): record it and IMMEDIATELY finalize a
-  // PARTIAL. finalizeQuiz reads failureRef, so the partial conversation (transcript
-  // + recording so far) is saved automatically and the student lands on the wrap-up
-  // screen — no button press. Unlike the user's End button, this is NOT gated on the
-  // tutor being done — it saves whatever's captured, from any phase. (Soft "didn't
-  // catch that" cases — no audio captured, or a blank transcript — are NOT errors:
-  // they stay retry-able and never come here.)
-  function failAndEnd(reason: string, detail: string) {
-    recordFailure(reason, detail);
-    void finalizeQuiz(`fail:${reason}`);
+  // Checkpoint the transcript-so-far to the server's in-progress slot. Called
+  // after every transcribed answer and every tutor turn — this is what makes
+  // leaving safe (pause & resume). Best-effort and fire-and-forget, BUT:
+  //   - checkpoints are SERIALIZED (each waits for the previous), so the slot
+  //     can't be written out of order;
+  //   - the chain's tail lives in checkpointInFlightRef, and finalizeQuiz awaits
+  //     it before the terminal save (see there for why);
+  //   - a checkpoint still queued when the run moves on (End/Cancel/close) bails,
+  //     so it can't resurrect the slot after the server deleted it.
+  // Only checkpoints with at least one student answer are sent — a quiz where
+  // the student never spoke resumes identically to a fresh start (the opening is
+  // a fixed script), so there is nothing worth saving (the server rejects it too).
+  function checkpoint(runId: number) {
+    if (!canContinue(runId)) return;
+    if (!transcriptRef.current.some((t) => t.role === "student" && t.text.trim())) {
+      return;
+    }
+    // Snapshot the body NOW — the queue wait must not change what this
+    // checkpoint says (a newer checkpoint carries the newer snapshot).
+    const audio = slotAudioRef.current;
+    const payload = JSON.stringify({
+      date,
+      transcript: transcriptRef.current,
+      tutorDone: tutorDoneRef.current,
+      resumeCount: resumeCountRef.current,
+      ...(audio ? { audioUrl: audio.url, durationMs: audio.durationMs } : {}),
+      ...(failureRef.current ? { failure: failureRef.current } : {}),
+      sessionId: sessionIdRef.current,
+      mountId: mountIdRef.current,
+      breadcrumbs: breadcrumbsRef.current,
+    });
+    const prev = checkpointInFlightRef.current;
+    const p = (async () => {
+      if (prev) await prev.catch(() => {});
+      if (!canContinue(runId)) return; // a terminal action started while queued
+      try {
+        const res = await fetch("/api/quiz-progress", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: payload,
+        });
+        logEvent(res.ok ? "checkpoint:ok" : "checkpoint:fail", `status=${res.status}`);
+      } catch {
+        logEvent("checkpoint:error");
+      }
+    })();
+    const done = p.finally(() => {
+      if (checkpointInFlightRef.current === done) checkpointInFlightRef.current = null;
+    });
+    checkpointInFlightRef.current = done;
+  }
+
+  // Best-effort: stitch the audio captured so far in THIS run and upload it to
+  // the caller's stable slot-audio key (overwritten in place across pauses), so
+  // a pause that's never resumed still leaves the teacher a recording. Runs only
+  // at pause points where the page is alive (a failure pause / Save for later) —
+  // never on unload, which is unreliable. The stored URL carries a ?v= cache-
+  // buster: the pathname is reused across flushes and the Blob CDN caches by
+  // URL. Trade-off (Phase 1): audio segments reset on resume, so a flush during
+  // a resumed run overwrites earlier runs' audio — the slot holds the latest
+  // run's audio only. Cross-resume stitching is Phase 2.
+  async function flushAudioToSlot(runId: number): Promise<void> {
+    if (!transcriptRef.current.some((t) => t.role === "student" && t.text.trim())) {
+      return; // nothing checkpoint-worthy → don't orphan a slot WAV with no slot
+    }
+    try {
+      const file = await buildTeacherFile();
+      if (!file || file.blob.size === 0) return;
+      const safeName = (user ?? "student").replace(/[^a-zA-Z0-9_-]+/g, "-").toLowerCase();
+      const uploaded = await upload(
+        // The stable slot-audio pathname — keep in sync with lib/session-io.ts
+        // (slotAudioPathname); /api/quiz-audio allows overwrite for exactly this.
+        `quiz-sessions/${date}/${safeName}-inprogress.wav`,
+        file.blob,
+        {
+          access: "public",
+          handleUploadUrl: "/api/quiz-audio",
+          contentType: "audio/wav",
+          clientPayload: JSON.stringify({ date }),
+        }
+      );
+      if (!isSameRun(runId)) return;
+      slotAudioRef.current = {
+        url: `${uploaded.url}?v=${Date.now()}`,
+        durationMs: file.durationMs,
+      };
+      logEvent("pause:audio-flushed", `bytes=${file.blob.size}`);
+    } catch {
+      logEvent("pause:audio-flush-failed");
+    }
+  }
+
+  // A genuine error/hang during the quiz (transcription rejected, tutor
+  // unreachable, fetch timed out): the quiz PAUSES instead of ending. The
+  // transcript is already checkpointed per answer; this flushes the audio-so-far
+  // too (the page is still alive here — the one reliable moment), then shows a
+  // retry-or-leave screen. Only the End and Cancel buttons are terminal.
+  // (Soft "didn't catch that" cases — no audio captured, or a blank transcript —
+  // are NOT failures: they stay on the live screen with a retry notice.)
+  function pauseOnFailure(reason: string, detail: string, retry: RetrySpec) {
+    const runId = activeRunIdRef.current;
+    failureRef.current = { reason, detail };
+    pendingRetryRef.current = retry;
+    logEvent("pause:fail", reason);
+    setNotice("");
+    setPausedMsg(detail);
+    setPhase("paused");
+    void (async () => {
+      await flushAudioToSlot(runId);
+      if (!canContinue(runId)) return;
+      checkpoint(runId);
+    })();
+  }
+
+  // "Try again" on the paused screen: re-run the failed leg from client-held
+  // state. Fresh abort controllers first — a timeout pause left the old ones
+  // aborted, and any fetch reusing them would insta-abort.
+  async function retryFromPause() {
+    const retry = pendingRetryRef.current;
+    pendingRetryRef.current = null;
+    failureRef.current = null;
+    setPausedMsg("");
+    turnAbortRef.current = new AbortController();
+    transcribeAbortRef.current = new AbortController();
+    const runId = activeRunIdRef.current;
+    logEvent("pause:retry", retry?.kind ?? "none");
+    if (!retry) {
+      setPhase("tutorTurn");
+      return;
+    }
+    if (retry.kind === "turn") {
+      await nextTutorTurn(false, runId);
+    } else {
+      await transcribeAndAdvance(retry.blob, retry.filename, runId);
+    }
+  }
+
+  // "Save for later" — leave WITHOUT ending: flush the audio + a final
+  // checkpoint (the transcript is already checkpointed per answer), then close.
+  // The attempt stays continuable — from the Voice quiz link (the chooser) or
+  // the Scores page. Offered at tutorTurn and paused, never mid-recording (the
+  // student Stops first), so there's no recorder to close out.
+  async function saveForLater() {
+    const runId = activeRunIdRef.current;
+    logEvent("pause:leave", `phase=${phaseRef.current}`);
+    setPhase("leaving");
+    await flushAudioToSlot(runId);
+    if (!isSameRun(runId)) return;
+    checkpoint(runId);
+    const pending = checkpointInFlightRef.current;
+    if (pending) {
+      await Promise.race([pending, new Promise((r) => setTimeout(r, 5000))]);
+    }
+    if (!isSameRun(runId)) return;
+    close();
   }
 
   // Count the student's answers captured so far (used to label failures).
@@ -539,28 +749,32 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       const done = data.done === true;
       logEvent("tutor-turn:ok", `idx=${order} done=${done}`);
       // The tutor wrapped up → reveal "End quiz", hide "Start speaking".
-      if (done) setTutorDone(true);
+      if (done) markTutorDone(true);
+      // Persist the tutor's line (and the done gate) so leaving right now
+      // resumes from this exact point.
+      checkpoint(runId);
       setPhase("tutorTurn");
       void speak(data.text, order, runId);
     } catch (err) {
       clearTimeout(timeout);
       // Cancelled/ended/unmounted while awaiting → silently discard (not a failure).
       if (!canContinue(runId)) return;
-      const n = answersSoFar();
+      // A mid-quiz turn failed or hung (the first turn can't reach here; it
+      // never makes a network call). PAUSE — progress is saved; the student can
+      // retry the turn now or leave and continue later.
       if (timedOut) {
         logEvent("tutor-turn:fail", "timeout");
-        failAndEnd(
+        pauseOnFailure(
           "tutor-timeout",
-          `The tutor didn't respond in time after ${n} answer${n === 1 ? "" : "s"}.`
+          "The tutor didn't respond in time.",
+          { kind: "turn" }
         );
       } else {
-        // A mid-quiz turn failed (the first turn can't reach here; it never makes a
-        // network call). Save the partial and end automatically rather than
-        // stranding the student on a retry screen.
         logEvent("tutor-turn:fail", (err as Error)?.name);
-        failAndEnd(
+        pauseOnFailure(
           "tutor-unreachable",
-          `Couldn't load the next question after ${n} answer${n === 1 ? "" : "s"}.`
+          "Couldn't load the next question.",
+          { kind: "turn" }
         );
       }
     }
@@ -836,13 +1050,22 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       return;
     }
 
+    await transcribeAndAdvance(turn.blob, turn.filename, runId);
+  }
+
+  // Transcribe one answer clip and advance the loop (upload → STT → append →
+  // next tutor turn). Split out of stopSpeaking so "Try again" on the paused
+  // screen can re-run it with the SAME still-held clip (whose audio segment was
+  // already pushed by stopSpeaking — nothing is re-pushed here).
+  async function transcribeAndAdvance(clip: Blob, filename: string, runId: number) {
     setPhase("transcribing");
     logEvent("transcribe:begin");
-    // A genuine hang becomes a failure → auto partial save. Two separate budgets:
-    // the upload leg is scaled to the clip size (iOS answers are uncompressed
-    // WAVs, ~2MB/min, and a slow uplink can legitimately need well over 60s —
-    // slow-but-progressing is not a hang), then the transcribe fetch gets a fresh
-    // standard budget. `timedOut` tells a real timeout from a Cancel/finalize.
+    // A genuine hang becomes a failure → the quiz PAUSES (retry-or-leave). Two
+    // separate budgets: the upload leg is scaled to the clip size (iOS answers
+    // are uncompressed WAVs, ~2MB/min, and a slow uplink can legitimately need
+    // well over 60s — slow-but-progressing is not a hang), then the transcribe
+    // fetch gets a fresh standard budget. `timedOut` tells a real timeout from a
+    // Cancel/finalize.
     const transcribeAbort = transcribeAbortRef.current;
     let timedOut = false;
     const armTimeout = (ms: number) =>
@@ -852,15 +1075,19 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       }, ms);
     // 60s + ~30s per MB of clip, capped at 5 minutes.
     let timeout = armTimeout(
-      Math.min(300_000, FETCH_TIMEOUT_MS + Math.round((turn.blob.size / 1_000_000) * 30_000))
+      Math.min(300_000, FETCH_TIMEOUT_MS + Math.round((clip.size / 1_000_000) * 30_000))
     );
+    // The slot in the conversation this answer will occupy (right after the
+    // tutor line above it). A retry recomputes the same value — the transcript
+    // hasn't advanced.
+    const studentOrder = transcriptRef.current.length;
     try {
       // Upload the answer clip straight to Blob, then transcribe it from there.
       // Routing the bytes through /api/quiz-transcribe hit Vercel's ~4.5MB
       // request-body limit — a long answer 413'd before the function even ran —
       // so we use the same direct-to-Blob upload() flow as the teacher recording
       // (its token route, /api/quiz-audio, allows these per-turn paths too).
-      const ext = turn.filename.split(".").pop() || "webm";
+      const ext = filename.split(".").pop() || "webm";
       const contentType =
         ext === "wav"
           ? "audio/wav"
@@ -872,7 +1099,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       const safeName = (user ?? "student").replace(/[^a-zA-Z0-9_-]+/g, "-").toLowerCase();
       const uploaded = await upload(
         `quiz-sessions/${date}/turns/${safeName}-${studentOrder}.${ext}`,
-        turn.blob,
+        clip,
         {
           access: "public",
           handleUploadUrl: "/api/quiz-audio",
@@ -897,13 +1124,14 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       // Cancelled/ended while the transcribe was in flight — discard silently.
       if (!canContinue(runId)) return;
       if (!res.ok) {
-        // The clip recorded fine (it's already in the teacher's timeline) but
-        // OpenAI rejected it. Save the partial and end automatically — the
-        // student doesn't have to press anything to keep their work.
+        // The clip recorded fine (its audio is already in the teacher's
+        // timeline) but the server rejected it. Pause — the clip is still in
+        // hand, so Try again re-uploads and re-transcribes it.
         logEvent("transcribe:http-fail", `status=${res.status}`);
-        failAndEnd(
+        pauseOnFailure(
           "transcription-failed",
-          `Couldn't transcribe answer ${answersSoFar() + 1} (server returned ${res.status}).`
+          `Couldn't transcribe answer ${answersSoFar() + 1} (server returned ${res.status}).`,
+          { kind: "transcribe", blob: clip, filename }
         );
         return;
       }
@@ -916,17 +1144,25 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       }
       appendTurn({ role: "student", text });
       logEvent("transcribe:ok", `chars=${text.length} sTurns=${answersSoFar()}`);
-      // Runaway backstop: the tutor never signalled `done` and the transcript has
-      // grown unreasonably long. Auto-save a partial and end rather than trapping
-      // the student answering forever (End quiz is gated on `done`, §5 of the plan).
-      if (transcriptRef.current.length >= MAX_TURNS) {
-        logEvent("backstop:max-turns", `turns=${transcriptRef.current.length}`);
-        failAndEnd(
-          "quiz-runaway",
-          "The quiz ran unusually long without wrapping up, so we saved what we have."
+      // Runaway backstop: the tutor never signalled `done` and the transcript
+      // has grown unreasonably long. FORCE the done state — End appears through
+      // its normal gate and the attempt stays finishable/gradable. (Pausing here
+      // instead would make a runaway permanently unfinishable: resuming a
+      // transcript already at the cap would just re-trip it, End would never
+      // appear, and nothing would ever grade the student's work.)
+      if (transcriptRef.current.length >= MAX_TURNS && !tutorDoneRef.current) {
+        logEvent("backstop:done-forced", `turns=${transcriptRef.current.length}`);
+        markTutorDone(true);
+        checkpoint(runId);
+        setNotice(
+          "This quiz ran long, so we're wrapping it up here — press End quiz to finish and get your grade."
         );
+        setPhase("tutorTurn");
         return;
       }
+      // Persist the answer before asking for the next question, so leaving
+      // during the tutor's turn can't lose it.
+      checkpoint(runId);
       await nextTutorTurn(false, runId);
     } catch (err) {
       clearTimeout(timeout);
@@ -935,17 +1171,19 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       console.warn("[voicequiz] transcribe failed", err);
       if (timedOut) {
         logEvent("transcribe:error", "timeout");
-        failAndEnd(
+        pauseOnFailure(
           "transcription-timeout",
-          `Transcribing answer ${answersSoFar() + 1} timed out.`
+          `Transcribing answer ${answersSoFar() + 1} timed out.`,
+          { kind: "transcribe", blob: clip, filename }
         );
       } else {
         // Covers a failed Blob upload as well as a network error reaching the
-        // transcriber — either way it's a genuine error, so save + end.
+        // transcriber — either way a genuine error, so pause.
         logEvent("transcribe:error", (err as Error)?.name);
-        failAndEnd(
+        pauseOnFailure(
           "transcription-error",
-          `Network error transcribing answer ${answersSoFar() + 1}.`
+          `Network error transcribing answer ${answersSoFar() + 1}.`,
+          { kind: "transcribe", blob: clip, filename }
         );
       }
     }
@@ -1045,15 +1283,19 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   async function start() {
     setError("");
     setNotice("");
+    setPausedMsg("");
     setReport(null);
     setUploadStep("pending");
     setGradeStep("pending");
     setFinished(false);
     setTurns([]);
+    setSlotOffer(null);
     transcriptRef.current = [];
     segmentsRef.current = [];
     failureRef.current = null;
-    setFailed(false);
+    pendingRetryRef.current = null;
+    resumeCountRef.current = 0;
+    slotAudioRef.current = null;
     setWasCancelled(false);
     endStartedRef.current = false;
     // A new run: bump the generation so any straggler from a prior quiz is fenced
@@ -1061,7 +1303,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     // controllers for this run's fetches.
     const runId = (activeRunIdRef.current += 1);
     endingRef.current = false;
-    setTutorDone(false);
+    markTutorDone(false);
     turnAbortRef.current = new AbortController();
     transcribeAbortRef.current = new AbortController();
     // Fresh diagnostics for this quiz (mountId/t0 persist for the whole mount).
@@ -1097,13 +1339,165 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     await nextTutorTurn(true, runId);
   }
 
-  // The button click — preserves the user gesture (no awaits before start()).
+  // Resume a paused quiz from its saved slot — the counterpart of start().
+  // Restores the transcript + the done gate, reuses the saved sessionId (so the
+  // slot key + diagnostics stay linked across the pause), then picks the loop up
+  // exactly where it left off. The fixed-opening fast path is fresh-start only.
+  // Audio segments start empty (Phase 1: the recording covers this run onward).
+  async function resume(slot: SlotSession) {
+    setError("");
+    setNotice("");
+    setPausedMsg("");
+    setReport(null);
+    setUploadStep("pending");
+    setGradeStep("pending");
+    setFinished(false);
+    setSlotOffer(null);
+    const transcript = Array.isArray(slot.transcript) ? slot.transcript : [];
+    transcriptRef.current = transcript;
+    setTurns(transcript);
+    segmentsRef.current = [];
+    failureRef.current = null;
+    pendingRetryRef.current = null;
+    resumeCountRef.current = (slot.resumeCount ?? 0) + 1;
+    slotAudioRef.current = slot.audioUrl
+      ? { url: slot.audioUrl, durationMs: slot.durationMs }
+      : null;
+    setWasCancelled(false);
+    endStartedRef.current = false;
+    const runId = (activeRunIdRef.current += 1);
+    endingRef.current = false;
+    markTutorDone(slot.tutorDone === true);
+    turnAbortRef.current = new AbortController();
+    transcribeAbortRef.current = new AbortController();
+    // Reuse the paused quiz's sessionId — one quiz, one id, across pauses (the
+    // "saved twice" tripwire keeps reading correctly for a continued session).
+    sessionIdRef.current = slot.diag?.sessionId || newId();
+    endReasonRef.current = "";
+    breadcrumbsRef.current = [];
+    logEvent(
+      "resume:begin",
+      `session=${sessionIdRef.current} mount=${mountIdRef.current} count=${resumeCountRef.current} ` +
+        `turns=${transcript.length} tutorDone=${tutorDoneRef.current} ios=${isIOS}`
+    );
+    setPhase("starting");
+
+    try {
+      // Mic permission — the Continue click is the user gesture.
+      const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
+      if (!isSameRun(runId)) {
+        mic.getTracks().forEach((t) => t.stop());
+        return;
+      }
+      if (isIOS) {
+        mic.getTracks().forEach((t) => t.stop());
+        micRef.current = null;
+      } else {
+        micRef.current = mic;
+      }
+    } catch {
+      if (!isSameRun(runId)) return;
+      setError("Microphone access is needed for the voice quiz. Please allow it and try again.");
+      setPhase("error");
+      return;
+    }
+
+    // Legacy safety: a slot at the turn cap that somehow never got the forced
+    // done — force it now rather than looping the backstop forever.
+    if (!tutorDoneRef.current && transcript.length >= MAX_TURNS) {
+      logEvent("backstop:done-forced", `turns=${transcript.length} on-resume`);
+      markTutorDone(true);
+      checkpoint(runId);
+      setNotice(
+        "This quiz ran long, so we're wrapping it up here — press End quiz to finish and get your grade."
+      );
+    }
+
+    // Pick the loop up where it left off.
+    const last = transcript[transcript.length - 1];
+    if (tutorDoneRef.current) {
+      // The tutor had already wrapped up — End quiz is available immediately.
+      setPhase("tutorTurn");
+    } else if (!last) {
+      // Shouldn't happen (a slot needs at least one answer) — start the loop.
+      await nextTutorTurn(true, runId);
+    } else if (last.role === "student") {
+      // The answer was saved but the tutor never replied — ask for the reply.
+      await nextTutorTurn(false, runId);
+    } else {
+      // The tutor's question is on screen (shown, not re-spoken) — answer it.
+      setPhase("tutorTurn");
+    }
+  }
+
+  // The launcher click. Login is checked first; then we probe the server for a
+  // saved in-progress quiz — if one exists the student chooses Continue / Start
+  // over (the launcher label itself always stays "Voice quiz"), otherwise a
+  // fresh quiz starts. getUserMedia doesn't need the click gesture, and the
+  // chooser's buttons are fresh gestures anyway, so the probe's await costs
+  // nothing but a moment of "One moment…".
   function launch() {
     if (!user) {
       setPhase("needLogin");
       return;
     }
-    start();
+    void openWithProbe();
+  }
+
+  async function openWithProbe() {
+    // Fence with the run generation: closing the modal bumps it, and a late
+    // probe result must not reopen a dismissed modal.
+    const probeId = activeRunIdRef.current;
+    setPhase("probing");
+    try {
+      const res = await fetch(`/api/quiz-progress?date=${date}`, { cache: "no-store" });
+      const data = await res.json().catch(() => null);
+      if (activeRunIdRef.current !== probeId || !mountedRef.current) return;
+      const session = data?.session as SlotSession | undefined;
+      if (
+        res.ok &&
+        data?.exists &&
+        session &&
+        Array.isArray(session.transcript) &&
+        session.transcript.length > 0
+      ) {
+        setSlotOffer(session);
+        setPhase("chooser");
+        return;
+      }
+    } catch {
+      // The probe is best-effort — fall through to a fresh start. (If a slot
+      // did exist, the fresh run's checkpoints will overwrite it.)
+    }
+    if (activeRunIdRef.current !== probeId || !mountedRef.current) return;
+    void start();
+  }
+
+  // "Start over" on the chooser: archive the saved attempt server-side (it
+  // becomes an ungraded, teacher-only cancelled record — never silently
+  // discarded), then start fresh.
+  function confirmStartOver() {
+    if (
+      !confirm(
+        "Start over? Your saved quiz will be closed — it won’t count, and you can’t go back to it."
+      )
+    ) {
+      return;
+    }
+    void startOver();
+  }
+
+  async function startOver() {
+    const probeId = activeRunIdRef.current;
+    setPhase("probing");
+    try {
+      await fetch(`/api/quiz-progress?date=${date}`, { method: "DELETE" });
+    } catch {
+      // Best-effort: if the archive+delete failed the slot lingers, but the
+      // fresh run's checkpoints overwrite it (new sessionId).
+    }
+    if (activeRunIdRef.current !== probeId || !mountedRef.current) return;
+    void start();
   }
 
   // The student's "End quiz" button. Allowed ONLY at the true end — once the tutor
@@ -1115,23 +1509,22 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     void finalizeQuiz("end-button");
   }
 
-  // The single, once-guarded save/teardown path. Reached by userEnd (gated),
-  // cancel (the student stops early — saved as an ungraded cancelled entry),
-  // and failAndEnd (an internal failure/hang/backstop, any phase). `reason`
-  // becomes the saved endReason and tells them apart in diagnostics. Because
-  // End can't fire mid-turn, cancel() closes out its own recorder before
-  // calling this, and an internal finalize just saves whatever's captured,
+  // The single, once-guarded save/teardown path — the ONLY two ways here are
+  // the terminal buttons: userEnd (gated on tutorDone) and cancel (the student
+  // stops early — saved as an ungraded cancelled entry). Failures/hangs no
+  // longer finalize — they PAUSE (pauseOnFailure), keeping the attempt
+  // continuable. `reason` becomes the saved endReason. Because End can't fire
+  // mid-turn and cancel() closes out its own recorder before calling this,
   // there is no in-flight turn to reconcile here — no recorder closeout, no
-  // settle.
+  // settle. The server deletes the in-progress slot after this save succeeds.
   async function finalizeQuiz(reason: string) {
     const cancelled = reason === "cancel";
     endReasonRef.current = reason;
     // Diagnostics: record EVERY finalize attempt with the live phase + guard state
     // BEFORE the once-guard can bail. If the "saved twice" bug recurs we'll see
     // whether a 2nd finalize was blocked (guard worked) or proceeded (guard
-    // failed). An end:called at phase=tutorTurn with reason=end-button is expected;
-    // "fail:" and "cancel" reasons are valid at ANY phase (failures/hangs/backstops
-    // finalize from wherever they hit, and Cancel is always available).
+    // failed). An end:called at phase=tutorTurn with reason=end-button is
+    // expected; "cancel" is valid at ANY phase (Cancel is always available).
     const phaseAtEnd = phaseRef.current;
     logEvent(
       "end:called",
@@ -1200,14 +1593,31 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     }
     setUploadStep("done");
 
+    // A checkpoint may still be in flight (or queued) — drain it before the
+    // terminal save. The server deletes the in-progress slot right after saving,
+    // and a checkpoint that left the browser just before End could land AFTER
+    // that delete, resurrecting a stale "Continue" for a finished quiz (fencing
+    // can't recall a request already on the wire). endingRef (set above) stops
+    // any NEW checkpoint; this wait, time-capped so a hung one can't stall the
+    // wrap-up, drains the one already sent.
+    const pendingCheckpoint = checkpointInFlightRef.current;
+    if (pendingCheckpoint) {
+      await Promise.race([
+        pendingCheckpoint,
+        new Promise((r) => setTimeout(r, 5000)),
+      ]);
+    }
+
     // 2. Grade + save (transcript + report card + audio link) for the teacher,
-    // and show the student their full report card. If a failure occurred this
-    // session, mark it a PARTIAL attempt and pass the reason — the server stores
-    // it and logs it with the student's name + how far they got.
-    const failure = failureRef.current;
-    const partial = !!failure;
+    // and show the student their full report card. Only the terminal buttons
+    // reach this save, so the record is never a partial — a quiz that hit (and
+    // recovered from) a failure along the way still completed. resumeCount tells
+    // the teacher the attempt didn't run in one sitting.
     setGradeStep("active");
-    logEvent("save:begin", `audio=${!!audioUrl} dur=${durationMs ?? "-"} partial=${partial}`);
+    logEvent(
+      "save:begin",
+      `audio=${!!audioUrl} dur=${durationMs ?? "-"} resumes=${resumeCountRef.current}`
+    );
     try {
       const res = await fetch("/api/quiz-report", {
         method: "POST",
@@ -1218,9 +1628,10 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
           transcript: transcriptRef.current,
           audioUrl,
           durationMs,
-          partial,
+          partial: false,
           cancelled,
-          failure,
+          failure: null,
+          resumeCount: resumeCountRef.current,
           // Diagnostics (see the Diagnostics refs) — attached to the saved record.
           sessionId: sessionIdRef.current,
           mountId: mountIdRef.current,
@@ -1255,7 +1666,12 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // the native dialog is open JS is paused, so an in-flight turn can't advance
   // underneath it; on OK, cancel() fences stragglers before its first await.)
   function confirmCancel() {
-    if (!confirm("Cancel this quiz? It will end now and won’t count as a completed quiz.")) {
+    if (
+      !confirm(
+        "Cancel this quiz? It won’t count and you won’t be able to continue it later. " +
+          "(To keep it for later, use Save for later instead.)"
+      )
+    ) {
       return;
     }
     void cancel();
@@ -1291,22 +1707,29 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   function close() {
     // New generation → fence any straggler still resolving from this run; clear
     // the terminating flag + the done gate so the next quiz starts clean.
+    // NOTE: closing is a LEAVE, not an end — nothing is finalized or cancelled
+    // here. A live quiz's progress is already checkpointed per answer, so it
+    // shows up as "In progress" (continuable) on the Scores page.
     activeRunIdRef.current += 1;
     endingRef.current = false;
-    setTutorDone(false);
+    markTutorDone(false);
     teardown();
     setPhase("idle");
     setError("");
     setNotice("");
+    setPausedMsg("");
     setReport(null);
     setUploadStep("pending");
     setGradeStep("pending");
     setFinished(false);
     setTurns([]);
+    setSlotOffer(null);
     transcriptRef.current = [];
     segmentsRef.current = [];
     failureRef.current = null;
-    setFailed(false);
+    pendingRetryRef.current = null;
+    resumeCountRef.current = 0;
+    slotAudioRef.current = null;
     setWasCancelled(false);
     endStartedRef.current = false;
   }
@@ -1338,6 +1761,47 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     phaseRef.current = phase;
   }, [phase]);
 
+  // ?resume=<date> auto-open (the Continue button on the Scores page navigates
+  // here). Runs once per mount, after the shared auth state resolves; it skips
+  // the chooser — that Continue click was already the explicit choice. The param
+  // is read via window.location (not useSearchParams, which would force a
+  // Suspense boundary into the static home page) and stripped afterwards so a
+  // reload doesn't re-trigger it.
+  useEffect(() => {
+    if (!ready || autoResumeTriedRef.current) return;
+    autoResumeTriedRef.current = true;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("resume") !== date) return;
+    window.history.replaceState(null, "", window.location.pathname);
+    if (!user) {
+      setPhase("needLogin");
+      return;
+    }
+    void (async () => {
+      const probeId = activeRunIdRef.current;
+      setPhase("probing");
+      try {
+        const res = await fetch(`/api/quiz-progress?date=${date}`, { cache: "no-store" });
+        const data = await res.json().catch(() => null);
+        if (activeRunIdRef.current !== probeId || !mountedRef.current) return;
+        const session = data?.session as SlotSession | undefined;
+        if (res.ok && data?.exists && session) {
+          void resume(session);
+          return;
+        }
+        setError("Couldn’t find your saved quiz — it may have been finished or removed.");
+        setPhase("error");
+      } catch {
+        if (activeRunIdRef.current !== probeId || !mountedRef.current) return;
+        setError("Couldn’t load your saved quiz. Please try again.");
+        setPhase("error");
+      }
+    })();
+    // The handlers above are stable for this mount; re-running on their account
+    // would defeat the once-only guard.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready, user, date]);
+
   // Keep the conversation log scrolled to the newest turn.
   const logRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
@@ -1347,14 +1811,21 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
   const modalOpen = phase !== "idle";
   // A stray backdrop click shouldn't drop a live quiz or interrupt the wrap-up
-  // while it's still saving — only allow close when nothing's in flight.
+  // while it's still saving — only allow close when nothing's in flight. (A
+  // live quiz IS checkpointed, but leaving should be the explicit "Save for
+  // later" button, not a mis-click.)
   const dismissable =
-    phase === "needLogin" || phase === "error" || (phase === "wrapup" && finished);
+    phase === "needLogin" ||
+    phase === "error" ||
+    phase === "probing" ||
+    phase === "chooser" ||
+    (phase === "wrapup" && finished);
   const live =
     phase === "tutorTurn" ||
     phase === "recording" ||
     phase === "transcribing" ||
-    phase === "thinking";
+    phase === "thinking" ||
+    phase === "paused";
 
   return (
     <>
@@ -1396,6 +1867,82 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                 >
                   Close
                 </button>
+              </div>
+            )}
+
+            {phase === "probing" && (
+              <div>
+                <h2 className="font-serif text-xl font-bold text-stone-900">
+                  One moment…
+                </h2>
+                <p className="mt-2 text-sm text-stone-500">
+                  Checking for a saved quiz.
+                </p>
+              </div>
+            )}
+
+            {/* A saved in-progress quiz exists for this day: the student decides
+                whether to continue it or start fresh (Start over archives the
+                old attempt — teacher-visible, ungraded — and frees the slot). */}
+            {phase === "chooser" && slotOffer && (
+              <div>
+                <h2 className="font-serif text-xl font-bold text-stone-900">
+                  Continue your quiz?
+                </h2>
+                <p className="mt-2 text-sm text-stone-600">
+                  You have a quiz in progress for this article
+                  {(() => {
+                    const n = (slotOffer.transcript ?? []).filter(
+                      (t) => t.role === "student"
+                    ).length;
+                    return n > 0 ? ` (${n} answer${n === 1 ? "" : "s"} saved)` : "";
+                  })()}
+                  . You can continue where you left off, or start over.
+                </p>
+                <p className="mt-2 text-xs text-stone-400">
+                  Starting over closes the saved attempt — it won’t count.
+                </p>
+                <div className="mt-5 flex flex-wrap items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const slot = slotOffer;
+                      setSlotOffer(null);
+                      void resume(slot);
+                    }}
+                    className="rounded-lg bg-sky-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-700"
+                  >
+                    Continue
+                  </button>
+                  <button
+                    type="button"
+                    onClick={confirmStartOver}
+                    className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-50"
+                  >
+                    Start over
+                  </button>
+                  <button
+                    type="button"
+                    onClick={close}
+                    className="rounded-lg px-3 py-2 text-sm font-medium text-stone-500 transition hover:bg-stone-50"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* "Save for later": a brief holding screen while the checkpoint +
+                audio flush land, then the modal closes itself. */}
+            {phase === "leaving" && (
+              <div>
+                <h2 className="font-serif text-xl font-bold text-stone-900">
+                  Saving your progress…
+                </h2>
+                <p className="mt-2 text-sm text-stone-500">
+                  You can continue this quiz later — from the Voice quiz link or
+                  your Scores page.
+                </p>
               </div>
             )}
 
@@ -1534,12 +2081,45 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                       Thinking about your next question…
                     </p>
                   )}
+
+                  {/* A failure/hang paused the quiz. Progress is checkpointed —
+                      the student can retry the failed step now, or leave and
+                      continue later; nothing ends unless they Cancel. */}
+                  {phase === "paused" && (
+                    <div>
+                      <p className="rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-800">
+                        <span className="font-semibold">We hit a snag</span> —{" "}
+                        {pausedMsg} Your progress is saved: you can try again
+                        now, or leave and continue later from the Voice quiz
+                        link or your Scores page.
+                      </p>
+                      <div className="mt-4 flex flex-wrap items-center gap-3">
+                        <button
+                          type="button"
+                          onClick={() => void retryFromPause()}
+                          className="rounded-lg bg-sky-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-700"
+                        >
+                          Try again
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => void saveForLater()}
+                          className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-50"
+                        >
+                          Save for later
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* End quiz appears ONLY once the tutor has wrapped up (tutorDone),
-                    so it can never truncate an in-flight turn. Cancel is always
-                    available as the way to stop early — it saves an ungraded,
-                    teacher-only "cancelled" entry (see cancel()). */}
+                    so it can never truncate an in-flight turn. Save for later
+                    leaves WITHOUT ending — the checkpointed attempt stays
+                    continuable (it's offered between turns, not mid-recording).
+                    Cancel is always available as the way to stop early FOR GOOD —
+                    it saves an ungraded, teacher-only "cancelled" entry that
+                    can't be resumed (see cancel()). */}
                 <div className="mt-5 flex items-center gap-3 border-t border-stone-100 pt-4">
                   {phase === "tutorTurn" && tutorDone && (
                     <button
@@ -1548,6 +2128,15 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                       className="rounded-lg bg-emerald-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700"
                     >
                       End quiz
+                    </button>
+                  )}
+                  {phase === "tutorTurn" && (
+                    <button
+                      type="button"
+                      onClick={() => void saveForLater()}
+                      className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-50"
+                    >
+                      Save for later
                     </button>
                   )}
                   <button
@@ -1579,11 +2168,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
             {phase === "wrapup" && !wasCancelled && (
               <div className="flex min-h-0 flex-col">
                 <h2 className="font-serif text-xl font-bold text-stone-900">
-                  {finished
-                    ? failed
-                      ? "Saved — we hit a snag"
-                      : "All done — nice work!"
-                    : "Wrapping up…"}
+                  {finished ? "All done — nice work!" : "Wrapping up…"}
                 </h2>
                 <ul className="mt-4 space-y-2.5 text-sm">
                   <li className="flex items-center gap-2.5">
@@ -1645,9 +2230,8 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
                       )}
 
                     <p className="mt-4 text-sm text-stone-600">
-                      {failed
-                        ? "Something went wrong partway, so we saved this as a partial attempt for your teacher. Please feel free to take the quiz again."
-                        : "Saved for your teacher. If you’re not happy with your score, feel free to take the quiz again."}
+                      Saved for your teacher. If you’re not happy with your
+                      score, feel free to take the quiz again.
                     </p>
                   </div>
                 )}

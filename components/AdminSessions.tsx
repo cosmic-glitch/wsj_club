@@ -40,6 +40,16 @@ export type Session = {
   // Set when the student pressed Cancel: saved ungraded (score "—") for the
   // teacher only — /admin filters these out of a student's own view.
   cancelled?: boolean;
+  // The in-progress slot (pause & resume): a paused/live attempt, checkpointed
+  // after every answer, never graded until End. Shown as "In progress" with a
+  // Continue button for its owner. Explicit flag — NOT inferred from
+  // partial/report, because legacy failure-partials whose grading errored also
+  // have report: null and must not grow a broken Continue.
+  inProgress?: boolean;
+  // The slot's last-checkpoint time (it has no endedAt — nothing ended).
+  updatedAt?: string;
+  // How many times the attempt was paused and continued (teacher-visible).
+  resumeCount?: number;
   // The Blob URL of this session's JSON — attached at load time so the teacher
   // can delete it. Not part of the saved JSON itself.
   blobUrl: string;
@@ -90,11 +100,15 @@ function fmtScore(score?: string): string {
 export default function AdminSessions({
   groups,
   canDelete,
+  viewerUser,
 }: {
   groups: ArticleGroup[];
   // Only the teacher (admin) may delete attempts; students see their own
   // sessions read-only.
   canDelete: boolean;
+  // The logged-in viewer — an in-progress attempt shows its Continue button
+  // only to the user who owns it (a teacher sees it as informational).
+  viewerUser?: string | null;
 }) {
   // Which attempt's detail is open in the modal (null = closed). A single
   // "Details" link per attempt opens the full combined view — feedback +
@@ -191,6 +205,13 @@ export default function AdminSessions({
                   <ol className="space-y-0.5">
                     {g.attempts.map((s) => {
                       const score = s.report?.score;
+                      // An in-progress attempt: its OWNER gets a Continue link
+                      // (resumes the quiz); anyone else (the teacher) gets the
+                      // usual Details view of the transcript-so-far.
+                      const ownsInProgress =
+                        s.inProgress === true &&
+                        viewerUser != null &&
+                        (s.loginUser ?? s.studentName) === viewerUser;
                       return (
                         <li
                           key={s.blobUrl}
@@ -200,22 +221,27 @@ export default function AdminSessions({
                             {s.studentName}
                           </span>
                           <span className="w-10 shrink-0 whitespace-nowrap text-right font-semibold text-stone-800">
-                            {fmtScore(score)}
+                            {s.inProgress ? "—" : fmtScore(score)}
                           </span>
                           <span className="w-8 shrink-0 whitespace-nowrap text-right tabular-nums text-stone-500">
-                            {fmtDuration(s.durationMs)}
+                            {s.inProgress ? "—" : fmtDuration(s.durationMs)}
                           </span>
                           <span className="w-32 shrink-0 whitespace-nowrap text-right text-stone-500">
-                            {fmtLocal(s.endedAt, mounted)}
+                            {fmtLocal(s.endedAt ?? s.updatedAt ?? "", mounted)}
                           </span>
                           {/* Details: ONE link that opens the combined detail
                               modal — feedback + recording + transcript together.
-                              Any partial/cancelled badge sits INLINE (pushed left
-                              with mr-auto; the link stays right-aligned), filling
-                              this column's slack — with just one short link there's
-                              room, so a badge never forces the row to a 2nd line. */}
+                              Any badge sits INLINE (pushed left with mr-auto; the
+                              link stays right-aligned), filling this column's
+                              slack — with just one short link there's room, so a
+                              badge never forces the row to a 2nd line. */}
                           <span className="flex w-40 shrink-0 items-center justify-end gap-2">
-                            {s.partial && (
+                            {s.inProgress && (
+                              <span className="mr-auto shrink-0 rounded-full bg-sky-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-sky-700">
+                                in progress
+                              </span>
+                            )}
+                            {s.partial && !s.inProgress && (
                               <span className="mr-auto shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
                                 partial
                               </span>
@@ -225,13 +251,22 @@ export default function AdminSessions({
                                 cancelled
                               </span>
                             )}
-                            <button
-                              type="button"
-                              onClick={() => setSession(s)}
-                              className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
-                            >
-                              Details
-                            </button>
+                            {ownsInProgress ? (
+                              <Link
+                                href={`/?resume=${s.date}`}
+                                className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
+                              >
+                                Continue
+                              </Link>
+                            ) : (
+                              <button
+                                type="button"
+                                onClick={() => setSession(s)}
+                                className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
+                              >
+                                Details
+                              </button>
+                            )}
                           </span>
                           {/* Delete is the LAST column — a single per-attempt
                               action (teacher only), right-aligned in its own
@@ -283,7 +318,12 @@ export default function AdminSessions({
                       {session.report.score}
                     </span>
                   )}
-                  {session.partial && (
+                  {session.inProgress && (
+                    <span className="rounded-full bg-sky-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-sky-700">
+                      in progress
+                    </span>
+                  )}
+                  {session.partial && !session.inProgress && (
                     <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
                       partial
                     </span>
@@ -301,7 +341,7 @@ export default function AdminSessions({
                   >
                     {session.title}
                   </Link>{" "}
-                  · {fmtLocal(session.endedAt, mounted)}
+                  · {fmtLocal(session.endedAt ?? session.updatedAt ?? "", mounted)}
                 </p>
               </div>
               <button
@@ -317,6 +357,17 @@ export default function AdminSessions({
             {/* Body — the whole attempt in one scroll: a status banner (if any),
                 then the three labeled sections Feedback · Recording · Transcript. */}
             <div className="max-h-[70vh] space-y-6 overflow-y-auto px-6 py-4">
+              {session.inProgress && (
+                <div className="rounded-lg border border-sky-200 bg-sky-50 px-3 py-2 text-sm text-sky-800">
+                  <span className="font-semibold">In progress</span> — this quiz
+                  hasn’t been finished yet, so it isn’t graded. The transcript and
+                  recording cover what’s been done so far.
+                  {session.failure?.detail
+                    ? ` Last paused after a problem: ${session.failure.detail}`
+                    : ""}
+                </div>
+              )}
+
               {session.cancelled && (
                 <div className="rounded-lg border border-stone-200 bg-stone-100 px-3 py-2 text-sm text-stone-600">
                   <span className="font-semibold">Cancelled attempt</span> — the
@@ -325,7 +376,7 @@ export default function AdminSessions({
                 </div>
               )}
 
-              {session.partial && (
+              {session.partial && !session.inProgress && (
                 <div className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-800">
                   <span className="font-semibold">Incomplete attempt</span>
                   {session.failure?.reason ? ` — ${session.failure.reason}` : ""}.{" "}
@@ -334,12 +385,27 @@ export default function AdminSessions({
                 </div>
               )}
 
+              {/* Pause-anytime makes a mid-quiz look-something-up detour possible,
+                  so the teacher gets to SEE that an attempt didn't run in one
+                  sitting. Teacher-only (canDelete is the teacher signal). */}
+              {canDelete && (session.resumeCount ?? 0) > 0 && (
+                <p className="text-xs text-stone-500">
+                  Resumed {session.resumeCount} time
+                  {session.resumeCount === 1 ? "" : "s"} — this attempt was paused
+                  and continued later.
+                </p>
+              )}
+
               {/* Feedback */}
               <div>
                 <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-stone-500">
                   Feedback
                 </p>
-                {hasFeedback(session.report) ? (
+                {session.inProgress ? (
+                  <p className="text-sm text-stone-400">
+                    In progress — not yet graded.
+                  </p>
+                ) : hasFeedback(session.report) ? (
                   <>
                     {session.report?.summary && (
                       <p className="text-sm text-stone-600">

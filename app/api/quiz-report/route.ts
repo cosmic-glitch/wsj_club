@@ -1,18 +1,24 @@
-import { put } from "@vercel/blob";
+import { copy, put } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 import { getUser } from "@/lib/users";
 import { getReading } from "@/lib/content";
 import { getArticleText } from "@/lib/article-text";
 import { buildReportPrompt } from "@/lib/quiz-prompt";
 import { applyLeniency } from "@/lib/score";
+import {
+  deleteSlot,
+  readSlot,
+  safeNameOf,
+  sanitizeDiag,
+  sanitizeDurationMs,
+  sanitizeFailure,
+  sanitizeResumeCount,
+  slotAudioPathname,
+  type SessionFailure,
+  type Turn,
+} from "@/lib/session-io";
 
 const REPORT_MODEL = process.env.REPORT_MODEL || "gpt-5.5";
-
-type Turn = { role: "student" | "tutor"; text: string };
-
-// A failure recorded during the quiz (transcription / tutor unreachable). When
-// present, the session is saved as a PARTIAL attempt rather than being lost.
-type SessionFailure = { reason: string; detail: string };
 
 function transcriptToText(transcript: Turn[]): string {
   return transcript
@@ -24,6 +30,13 @@ function transcriptToText(transcript: Turn[]): string {
  * Takes a finished quiz transcript, asks a text model to grade it into a report
  * card, and saves the whole session (transcript + report) to Vercel Blob so the
  * teacher can review it on /admin. Returns the report card to show the student.
+ *
+ * This is the TERMINAL save (End and Cancel both land here) — after a
+ * successful save it also deletes the caller's in-progress slot (the pause &
+ * resume checkpoint; see PLAN-continue-voice-quiz.md), so a stale "Continue"
+ * can't linger for a finished quiz. Grading happens ONLY here, only for a
+ * completed (non-cancelled, non-partial) attempt — a paused/incomplete session
+ * always has `report: null`.
  */
 export async function POST(request: Request) {
   const user = await currentUser();
@@ -40,6 +53,7 @@ export async function POST(request: Request) {
     partial?: boolean;
     cancelled?: boolean;
     failure?: SessionFailure | null;
+    resumeCount?: number;
     // Client diagnostics (logging only) — see VoiceQuiz.tsx "Diagnostics" refs.
     sessionId?: string;
     mountId?: string;
@@ -57,51 +71,22 @@ export async function POST(request: Request) {
   const studentName = (body.studentName ?? "").trim() || user;
   const transcript = Array.isArray(body.transcript) ? body.transcript : [];
   const audioUrl = (body.audioUrl ?? "").trim() || undefined;
-  // How long the quiz took (start → "End quiz"), measured client-side. Validate
-  // it's a sane non-negative number and cap it (6h) against a bad client value.
-  const durationMs =
-    typeof body.durationMs === "number" &&
-    Number.isFinite(body.durationMs) &&
-    body.durationMs >= 0
-      ? Math.min(Math.round(body.durationMs), 6 * 60 * 60 * 1000)
-      : undefined;
-  // A partial attempt: the quiz ended because of (or was abandoned after) a
-  // transcription/tutor failure. We still save whatever was captured — the
-  // recording + transcript so far — but flag it so the teacher knows it's
-  // incomplete and why. `failure` is sanitized + length-capped (it's free text
-  // from the client).
+  // How long the quiz took (start → "End quiz"), measured client-side.
+  const durationMs = sanitizeDurationMs(body.durationMs);
+  // A partial attempt: kept for backward-compatibility only. The client no
+  // longer finalizes on a failure (it PAUSES instead — the attempt stays
+  // continuable), so nothing should send partial: true anymore; if something
+  // does, the record is saved but never graded (see below).
   const partial = body.partial === true;
   // The student pressed Cancel: the attempt is still saved for the teacher (the
   // /admin page hides it from the student's own Scores view) but never graded.
   const cancelled = body.cancelled === true;
-  const failure: SessionFailure | null =
-    body.failure && typeof body.failure === "object"
-      ? {
-          reason: String(body.failure.reason ?? "unknown").slice(0, 200),
-          detail: String(body.failure.detail ?? "").slice(0, 2000),
-        }
-      : null;
-
-  // Client diagnostics (logging only): a stable per-quiz `sessionId` + per-mount
-  // `mountId`, the end trigger + phase, and an ordered breadcrumb trail. These
-  // make a recurrence of the "one quiz saved as two records" bug self-explaining
-  // (e.g. the same sessionId on two records ⇒ a double-save). All free text from
-  // the client, so sanitize + length/count-cap everything.
-  const str = (v: unknown, n: number) =>
-    typeof v === "string" && v.trim() ? v.slice(0, n) : undefined;
-  const diag = {
-    sessionId: str(body.sessionId, 64),
-    mountId: str(body.mountId, 64),
-    endReason: str(body.endReason, 64),
-    phaseAtEnd: str(body.phaseAtEnd, 32),
-    breadcrumbs: Array.isArray(body.breadcrumbs)
-      ? body.breadcrumbs.slice(0, 400).map((e) => ({
-          t: typeof e?.t === "number" && Number.isFinite(e.t) ? Math.round(e.t) : 0,
-          ev: String(e?.ev ?? "").slice(0, 48),
-          ...(e?.info ? { info: String(e.info).slice(0, 200) } : {}),
-        }))
-      : undefined,
-  };
+  const failure = sanitizeFailure(body.failure);
+  // How many times this attempt was paused and continued (surfaced to the
+  // teacher — pause-anytime makes a look-up-the-answer detour possible, and the
+  // teacher should be able to see that an attempt didn't run in one sitting).
+  const resumeCount = sanitizeResumeCount(body.resumeCount);
+  const diag = sanitizeDiag(body);
 
   const reading = getReading(date);
   if (!reading) {
@@ -141,6 +126,10 @@ export async function POST(request: Request) {
       vocab: "Not assessed — the student didn't speak.",
       concepts: "Not assessed — the student didn't speak.",
     };
+  } else if (partial) {
+    // Grade only on End: an incomplete attempt is never sent to the model.
+    // (Defensive — the client pauses on failure instead of finalizing a partial,
+    // so this shouldn't be reached; report stays null, like a paused slot's.)
   } else if (process.env.OPENAI_API_KEY) {
     // Generate the report card from the transcript (best-effort).
     const articleText = await getArticleText(date);
@@ -192,6 +181,34 @@ export async function POST(request: Request) {
   // falls back to roster membership).
   const teacherId = (await getUser(user))?.teacherId;
 
+  // This terminal record replaces any in-progress slot. If the client sent no
+  // recording — e.g. the student resumed a paused quiz and pressed End without
+  // a new answer (audio segments reset on resume) — salvage the slot's flushed
+  // audio by copying it to a permanent key BEFORE the slot (and its stable-key
+  // audio) is deleted below. Otherwise a completed, graded quiz could end up
+  // with no recording at all even though one was captured. The slot key derives
+  // from the COOKIE user (matching what /api/quiz-progress wrote), not from the
+  // client-sent studentName.
+  const slotName = safeNameOf(user);
+  let finalAudioUrl = audioUrl;
+  let finalDurationMs = durationMs;
+  if (!finalAudioUrl) {
+    try {
+      const slot = await readSlot(date, slotName);
+      if (slot?.session.audioUrl) {
+        const copied = await copy(
+          slotAudioPathname(date, slotName),
+          `quiz-sessions/${date}/${slotName}-${Date.now()}.wav`,
+          { access: "public", addRandomSuffix: true, contentType: "audio/wav" }
+        );
+        finalAudioUrl = copied.url;
+        finalDurationMs = finalDurationMs ?? sanitizeDurationMs(slot.session.durationMs);
+      }
+    } catch (err) {
+      console.error("Salvaging slot audio failed:", err, "user:", user);
+    }
+  }
+
   const session = {
     date,
     title: reading.title,
@@ -199,13 +216,14 @@ export async function POST(request: Request) {
     loginUser: user,
     teacherId,
     endedAt: new Date().toISOString(),
-    durationMs,
+    durationMs: finalDurationMs,
     transcript,
     report,
-    audioUrl,
+    audioUrl: finalAudioUrl,
     partial,
     cancelled,
     failure,
+    resumeCount,
     diag,
   };
 
@@ -224,7 +242,7 @@ export async function POST(request: Request) {
         detail: failure?.detail ?? "",
         studentAnswers: studentTurns.length,
         totalTurns: transcript.length,
-        audioSaved: !!audioUrl,
+        audioSaved: !!finalAudioUrl,
       })
     );
   }
@@ -246,19 +264,29 @@ export async function POST(request: Request) {
       totalTurns: transcript.length,
       partial,
       cancelled,
-      audioSaved: !!audioUrl,
-      durationMs,
+      resumeCount,
+      audioSaved: !!finalAudioUrl,
+      durationMs: finalDurationMs,
     })
   );
 
   // Save to Blob (best-effort — don't fail the student's session if storage hiccups).
   try {
-    const safeName = studentName.replace(/[^a-zA-Z0-9_-]+/g, "-").toLowerCase();
+    const safeName = safeNameOf(studentName);
     await put(
       `quiz-sessions/${date}/${safeName}-${Date.now()}.json`,
       JSON.stringify(session, null, 2),
       { access: "public", addRandomSuffix: true, contentType: "application/json" }
     );
+    // The terminal save succeeded — now (and only now) remove the in-progress
+    // slot, so a storage hiccup above keeps Continue alive rather than losing
+    // the attempt. Best-effort + idempotent; a quiz that never checkpointed
+    // simply has no slot to remove.
+    try {
+      await deleteSlot(date, slotName);
+    } catch (err) {
+      console.error("Deleting in-progress slot failed:", err, "user:", user);
+    }
   } catch (err) {
     console.error("Saving quiz session to Blob failed:", err);
   }

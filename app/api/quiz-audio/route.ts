@@ -1,6 +1,7 @@
 import { handleUpload, type HandleUploadBody } from "@vercel/blob/client";
 import { currentUser } from "@/lib/auth";
 import { getReading } from "@/lib/content";
+import { safeNameOf, slotAudioPathname } from "@/lib/session-io";
 
 /**
  * Issues a short-lived, auth-gated token so the browser can upload a finished
@@ -38,6 +39,23 @@ export async function POST(request: Request): Promise<Response> {
         }
         if (!getReading(date)) throw new Error("Unknown reading.");
         if (!pathname.startsWith(`quiz-sessions/${date}/`)) {
+          throw new Error("Unexpected upload path.");
+        }
+        // The stable in-progress slot WAV (the pause-time audio flush; see
+        // PLAN-continue-voice-quiz.md) is the ONE path allowed to overwrite in
+        // place — and only the caller's OWN slot. Any other "-inprogress"
+        // pathname is rejected: addRandomSuffix means it couldn't overwrite
+        // anything, but a stray `…-inprogress-xyz.wav` would look confusingly
+        // like slot state.
+        if (pathname === slotAudioPathname(date, safeNameOf(user))) {
+          return {
+            allowedContentTypes: ["audio/wav"],
+            addRandomSuffix: false,
+            allowOverwrite: true,
+            maximumSizeInBytes: 50 * 1024 * 1024,
+          };
+        }
+        if (pathname.includes("-inprogress")) {
           throw new Error("Unexpected upload path.");
         }
         return {
