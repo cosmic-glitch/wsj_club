@@ -91,6 +91,12 @@ export default function Home() {
                   when shown, nothing when signed out. */}
               {r.voiceQuiz && <VoiceQuizStep date={r.date} title={r.title} />}
             </div>
+
+            {/* Optional per-day reading tip (e.g. "read the Concepts first").
+                A subtle amber line so it reads as a helpful note, not chrome. */}
+            {r.note && (
+              <p className="mt-1.5 text-sm italic text-amber-700">{r.note}</p>
+            )}
           </li>
         );
       })}

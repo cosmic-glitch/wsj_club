@@ -64,11 +64,13 @@ scripts/upload-article-text.mjs   CLI: upload a day's full article text to Blob 
 
 ## Content schema (`lib/content.ts`)
 
-A `Reading` = `{ date, title, articleUrl?, pdfUrl?, articles?, voiceQuiz?, source?, vocab[], concepts[], quiz[] }`.
+A `Reading` = `{ date, title, articleUrl?, pdfUrl?, articles?, note?, voiceQuiz?, source?, vocab[], concepts[], quiz[] }`.
 
 - **articleUrl** — the WSJ web article (the **Web** link). **pdfUrl** (optional) — a served PDF of the article, e.g. `/pdfs/2026-06-09.pdf` (the **PDF** link); omit it and only the Web link shows.
 - **voiceQuiz** (optional `boolean`) — when `true`, the home-page row for that day shows the AI-oral-quiz launcher in its action bar **to everyone** (signed in or not); clicking it while logged out pops a login prompt instead of starting. The skill sets `voiceQuiz: true` on every new day. It is now set on **every day** — the earlier pre-feature days (2026-06-09 → 2026-06-17) were backfilled, so all entries have the voice quiz for logged-in users.
 - **articles** (optional) — for **multi-article days**: bundle two or more short articles into one combined handout. It's an array of `Source` = `{ title, articleUrl, pdfUrl? }` (each article's own headline + links). When `articles` is set, the top-level `articleUrl`/`pdfUrl` are unused, the vocab/concepts/quiz are **combined** across all the articles, and each article gets its own PDF named `/pdfs/YYYY-MM-DD-1.pdf`, `-2.pdf`, … (see `content/2026-06-14.json` for the first one). Most days are single-article and just use `articleUrl`.
+
+- **note** (optional) — a short reading tip rendered as a subtle amber italic line under that day's row on the **index** (below the action bar). Set it only when it genuinely helps — e.g. on a **concept-heavy day whose ideas build on each other**, advising the student to read the "Concepts behind the story" section of the handout *before* the article (first used on `content/2026-07-07.json`, the SpaceX/Nasdaq-100 day). Omit it on ordinary days and nothing renders.
 
 - **vocab** — exactly **3** `VocabWord`s, each presented *article-first*:
   `articleQuote` (short real quote from the article) → `inContext` (what it means there) → `meaning` (broader definition) → `examples` (exactly **2** more example sentences).
