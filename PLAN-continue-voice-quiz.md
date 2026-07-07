@@ -1,10 +1,12 @@
-# Plan — Continuable voice-quiz sessions (pause & resume)
+# Plan — Continuable voice-quiz sessions (pause & resume) · v2
 
-> **Status:** Design approved by the product owner (decisions below); **not yet implemented.**
+> **Status:** Design approved by the product owner; **not yet implemented.** v2 (2026-07-07) is a full
+> rewrite after a code review of the v1 draft: the home-launcher UX changed (see Decision 1), and the
+> review's findings are folded in as design requirements (each marked **[fix]** where it changed v1).
 > Companion to the *Voice quiz* section of `CLAUDE.md` (esp. *Strict End gating*, *Partial attempts*,
 > *Cancelled attempts*). Code sketches are illustrative pseudo-diffs against the real
 > `components/VoiceQuiz.tsx`, `app/api/quiz-report/route.ts`, `components/AdminSessions.tsx`,
-> `app/admin/page.tsx`, and `app/api/me/route.ts` — **verify against the real files; don't paste blindly.**
+> `app/admin/page.tsx`, and `lib/sessions.ts` — **verify against the real files; don't paste blindly.**
 
 ## Why
 
@@ -19,215 +21,280 @@ fetches and releases the mic; it never saves. And a transcription/tutor **failur
 *partial* with no button press (`failAndEnd`). Arjun wants the opposite: leaving/failing should **pause**
 (not lose, not finalize, not cancel), and a paused attempt should be **continuable from the UI**.
 
-## Decisions already made (product owner)
+## Decisions (product owner)
 
-1. **Continue lives in two places:** the student's **partial entry on the Scores page** *and* the home
-   **Voice quiz launcher** (clicking it for a day with an in-progress attempt offers Resume).
-2. **In-progress = no score.** A paused attempt shows in Scores as **"In progress"** with a **Continue**
-   button and **no grade**. It's graded **only** when finished with **End**. (This changes today's
-   behavior, where a partial gets a real score.)
-3. **Only buttons are terminal.** Failures / hangs / leaving all save a **continuable** partial. A session
-   is graded-and-completed **only on End**, and ended-for-good **only on Cancel** (Cancel does NOT throw the
-   work away — it still saves an ungraded, teacher-only `cancelled` record; it just doesn't count and isn't
-   continuable). Nothing auto-finalizes or
-   auto-cancels. **No stale cleanup** for now — partials persist until the student finishes or cancels them.
-4. **No End confirmation.** End is already gated to the true end (strict End-gating, shipped 2026-06-29):
+1. **The home launcher always reads "Voice quiz" — never "Continue quiz."** When the student clicks it
+   and a saved in-progress attempt exists for that day, the modal opens with a **chooser** — **Continue
+   saved quiz** / **Start over** — instead of silently starting fresh or silently resuming. (Changed from
+   v1, which relabeled the launcher "Continue quiz" and resumed on click; the owner wants the label stable
+   and the choice explicit.) No slot → the click starts fresh exactly as today. Logged-out behavior is
+   unchanged (login prompt on click).
+2. **Continue also lives on the Scores page:** a student's own in-progress entry shows a **Continue**
+   button that resumes directly (no chooser — the button is already the explicit choice).
+3. **In-progress = no score.** A paused attempt shows in Scores as **"In progress"** with **no grade**.
+   It's graded **only** when finished with **End**. (This changes today's behavior, where a failure-ended
+   partial gets a real score.)
+4. **Only buttons are terminal.** Failures / hangs / leaving all keep a **continuable** in-progress record.
+   A session is graded-and-completed **only on End**, and ended-for-good **only on Cancel** (Cancel does NOT
+   throw the work away — it still saves an ungraded, teacher-only `cancelled` record; it just doesn't count
+   and isn't continuable). Nothing auto-finalizes or auto-cancels. **No stale cleanup** — in-progress
+   records persist until the student finishes, cancels, or starts over (or the teacher deletes them).
+5. **No End confirmation.** End is already gated to the true end (strict End-gating, shipped 2026-06-29):
    it only appears once the tutor signals `done`, so a confirm there is pure friction. **Cancel keeps its
-   confirm** — it's the one exit that ends the attempt *for good* (no Continue). Note it still **saves** an
-   ungraded, teacher-only `cancelled` record (it does NOT discard the work); the confirm is reworded only to
+   confirm** — it's the one exit that ends the attempt *for good* (no Continue); the confirm is reworded to
    distinguish "end it" from "leave and continue later."
-5. **Audio is best-effort ("text-first").** Transcript + grade always resume whole. The recording for an
-   interrupted-then-resumed session may have gaps; full cross-resume audio stitching is deferred (Phase 3).
+6. **Audio is best-effort ("text-first").** Transcript + grade always resume whole. The recording for an
+   interrupted-then-resumed session may have gaps; full cross-resume audio stitching is deferred (Phase 2).
+   **[fix]** Within that: whenever a pause happens *with the page still alive* (a failure pause, or the
+   explicit "Leave — continue later" button), the audio captured so far IS flushed to the slot best-effort —
+   so a failure the student never returns to still leaves the teacher a recording, as it does today.
 
 ## The model: existing vs. new
 
 | Exit | Today | New |
 |---|---|---|
-| **End** (shown only when tutor `done`) | grade + save complete (`partial:false` + report) | unchanged |
-| **Cancel** | save ungraded `cancelled` (teacher-only) | unchanged, reworded confirm; also **deletes the partial slot** |
-| **Leave / reload / iOS tab-kill** | **silent total loss** | **checkpointed `partial` (ungraded)** → continuable |
-| **Failure / hang / runaway** | `failAndEnd` → graded **partial**, ends | keep session **`partial` (ungraded)** (retry or leave); **no auto-grade, no terminal end** |
+| **End** (shown only when tutor `done`) | grade + save complete (`partial:false` + report) | unchanged; also **deletes the in-progress slot** |
+| **Cancel** | save ungraded `cancelled` (teacher-only) | unchanged, reworded confirm; also **deletes the slot** |
+| **Start over** (new, from the launcher chooser) | n/a | **archives the old slot as a `cancelled` record** (teacher-only, ungraded — never silently discarded), deletes the slot, starts fresh |
+| **Leave / reload / modal close / iOS tab-kill** | **silent total loss** | **checkpointed in-progress record** → continuable |
+| **Failure / hang** | `failAndEnd` → graded **partial**, ends | session stays live in a **recoverable pause** — "Try again" / "Leave — continue later"; **no auto-grade, no terminal end**; audio flushed best-effort |
+| **`MAX_TURNS` runaway** | auto-saves graded partial, ends | **[fix]** backstop **sets `tutorDone = true`** (checkpointed) + shows "This quiz ran long — press End quiz to finish and get your grade." So **End appears** and the attempt is finishable/gradable. (v1 paused it, which made a runaway *permanently* unfinishable: resuming a transcript already at `MAX_TURNS` re-trips the backstop forever, End never appears, and nothing grades — the work would be stuck ungraded with Cancel as the only exit.) |
 
-**Why Cancel "deletes the partial slot":** during the quiz, each answer checkpoints the transcript to the
-in-progress slot (`…-inprogress.json`) — and *that blob's existence is literally what shows the student a
-"Continue" affordance* (on Scores and the launcher). So when the student Cancels, writing the terminal
-`cancelled` record is not enough on its own: if the slot were left behind, the student would **still see
-"Continue"** for a quiz they just chose to end, and there'd be **two live records for one attempt** (the
-`cancelled` one *and* the lingering in-progress one). Deleting the slot is what makes Cancel's "not
-continuable" real — and it frees the one-per-day slot for a fresh retake. It's the exact same reason **End**
-deletes the slot; Cancel and End are both terminal, so both must remove it (Leave/failure do the opposite —
-they *write* the slot). The delete is best-effort/idempotent: a very early Cancel (before any checkpoint)
-simply has no slot to remove.
+**Why terminal actions delete the slot:** the slot's existence is literally what shows Continue (Scores)
+and the chooser (launcher). If End/Cancel/Start-over left it behind, the student would see a stale
+"Continue" for an attempt that's already graded or ended — two live records for one attempt. The delete is
+best-effort/idempotent (a very early Cancel has no slot to remove), but **ordered after a successful final
+save**: if the final save fails, the slot is kept, so the student can still Continue rather than losing the
+attempt to a storage hiccup. **[fix — ordering was unspecified in v1.]**
 
-*This is NOT something Cancel does today.* Today the quiz persists **nothing at the session level until the
-final save**, so there is no mid-quiz blob to clean up — Cancel just writes the one `cancelled` record. The
-slot, and therefore its deletion, exist **only because checkpointing is new**: once we write a growing
-in-progress blob to enable resume, a terminal action has to remove it. (The only mid-quiz Blob writes today
-are the transient per-answer transcription clips under `turns/`, deleted by the *transcribe* route, not by
-Cancel — those aren't a session record.)
+## Session states — an explicit `inProgress` flag
 
-### No new status field — reuse `partial`
+The slot record carries an explicit **`inProgress: true`** field; Continue / "In progress" rendering keys
+off that (plus, belt-and-braces, the `-inprogress.json` pathname, which `loadSessions` already attaches as
+`blobUrl`).
 
-The existing booleans already express every state; **no `status` enum is added.** `partial` today means
-"incomplete attempt" — the new model just **broadens** it from "ended by a failure" to "incomplete for any
-reason (failed **or** paused **or** still mid-quiz)." The `failure` field keeps recording *why* (a clean
-leave → `failure: null`; a failure → `failure: {…}`).
-
-The only real subtlety — telling a **new, continuable** partial apart from a **legacy, already-graded**
-partial (e.g. Arjun's old 9/10) — falls out of one rule change: **going forward we grade only on End, so a
-live/paused partial has `report: null`.** So, read off existing fields:
+**[fix]** v1 inferred "in progress" from `partial && report == null` with "no migration needed." That
+inference is wrong: grading in `app/api/quiz-report/route.ts` is **best-effort** — if the OpenAI call
+fails/errors (or the key is unset), a *legacy* session saves with `report: null` (see the `let report =
+null` flow). Such a record would have rendered as "In progress" + Continue with no slot behind it — a
+Continue that 404s. The explicit flag costs one field and removes the ambiguity entirely.
 
 | Record | Means | Scores shows |
 |---|---|---|
-| `partial && report == null` | **in progress** (checkpointed, never graded until End) | "In progress" + **Continue** |
-| `partial && report != null` | **legacy** graded partial | exactly as today (partial badge, score, **no** Continue) |
-| `cancelled` | ended via Cancel — **saved** ungraded, not continuable | today's grey badge, teacher-only |
+| `inProgress: true` (the slot; always `partial:true, report:null, cancelled:false`) | paused or actively mid-quiz | **"In progress"** + **Continue** (owner only; teacher sees it informational + deletable) |
+| `partial && !inProgress` | **legacy** failure-partial (graded, or `report:null` if its grading failed) | exactly as today (partial badge, score or "—", **no** Continue) |
+| `cancelled` | ended via Cancel **or superseded by Start over** | today's grey badge, teacher-only |
 | neither | complete | the grade |
 
-No migration, no derived `status`; `report == null` cleanly separates new from legacy. Continue keys off
-`partial && report == null`.
+No status enum, no migration; legacy records render exactly as they do today.
 
 ## Storage
 
-**"The in-progress slot"** is the single Blob record that holds a *paused, continuable* attempt — a
-`partial` record with `report: null` (see the table above). Its mere existence **is** the "this quiz can be
-resumed" state: it's what makes the attempt show up as **"In progress" + Continue** on Scores and drives the
-launcher's **"Continue quiz"**. There is **at most one per (student, date)**.
+**"The in-progress slot"** is the single Blob record holding a paused/live attempt. At most one per
+(student, date).
 
-- **Stable key, overwritten on each checkpoint** so a paused attempt is always *exactly one* blob that
-  grows in place — never a pile of per-checkpoint blobs: `quiz-sessions/<date>/<safeName>-inprogress.json`
-  (`put(..., { addRandomSuffix: false })`). Completed/cancelled records keep today's `…-<Date.now()>.json`
-  with `addRandomSuffix: true`.
-- **"Delete the in-progress slot" = end the continuable state.** When an attempt reaches a **terminal
-  button** — **End** (→ the graded, completed record: `partial:false` + report) or **Cancel** (→ the
-  ungraded `cancelled` record) — we write that final record under the normal random-suffixed key **and then
-  `del()` the `-inprogress.json` blob** (plus its best-effort in-progress audio blob). This deletion is
-  required because:
-  - **Otherwise the student keeps seeing a stale "Continue"** for a quiz they already finished or cancelled,
-    and could resume something that's already been graded (End) or ended (Cancel) — two live representations
-    of one attempt.
-  - It **frees the one-per-day slot** so a *fresh* attempt that same day can start clean.
-
-  So a *finished* day looks exactly like today — one random-suffixed `complete` record, no slot. The stable
-  slot exists **only while an attempt is paused**; **End and Cancel are the two events that remove it**
-  (leaving/failing does the opposite — it *creates or updates* the slot).
-- **teacherId** is stamped on the slot too (same `getUser(user).teacherId` lookup), so Scores scoping works
-  while it's still in progress.
+- **Stable JSON key, overwritten on each checkpoint:** `quiz-sessions/<date>/<safeName>-inprogress.json`
+  (`put(..., { addRandomSuffix: false })`). Completed/cancelled records keep today's random-suffixed
+  `…-<Date.now()>.json`.
+- **Stable audio key** for the best-effort pause flush: `quiz-sessions/<date>/<safeName>-inprogress.wav`,
+  also overwritten in place (so repeated pauses don't pile up orphan blobs). Deleted together with the JSON
+  slot on End/Cancel/Start-over (Phase 1 doesn't merge it — see *Audio semantics*).
+- **[fix] `safeName` derives from the COOKIE user, never the request body.** Today's `quiz-report` derives
+  `safeName` from the client-sent `studentName` — harmless for random-suffixed writes, but for a **stable,
+  overwritable** key a malicious body could stomp another student's slot. `POST /api/quiz-progress` ignores
+  any client-sent name for the key ( `safeName(currentUser())` ), and `quiz-report`'s slot-*delete* computes
+  the same cookie-derived key so it matches what the checkpoint wrote. (The completed record's filename can
+  keep today's convention for compatibility.)
+- **[fix] Reads of the slot MUST cache-bust with `uploadedAt`.** The slot is overwritten in place many
+  times per quiz, and this project has already been burned by exactly this: a public Blob URL is CDN-edge-
+  cached, and a plain `no-store` fetch can return a **stale copy right after an overwrite** — `lib/users.ts`
+  had to key every read with `?v=<uploadedAt>` from `list()` metadata (which IS read-after-write
+  consistent). Without the same here, a student who leaves and quickly clicks Continue can resume from a
+  checkpoint **missing their last answers** — silent data loss inside the feature built to prevent it. So
+  the resume `GET` does `list({ prefix: "quiz-sessions/<date>/" })`, finds the slot by pathname, and fetches
+  `${blob.url}?v=${blob.uploadedAt.getTime()}`. `lib/sessions.ts` gets the same one-line treatment for all
+  session reads (cheap, and it makes the Scores view of a live attempt current too). The slot's `audioUrl`
+  is stored **with a `?v=<flush-time>` suffix baked in at flush time** so the teacher's player doesn't
+  fetch a stale overwrite.
+- **teacherId** is stamped on the slot (same `getUser(user).teacherId` lookup as `quiz-report`), so Scores
+  scoping works while it's in progress.
+- **Slot record shape:** `{ date, title, studentName, loginUser, teacherId, inProgress: true, partial:
+  true, cancelled: false, report: null, transcript, tutorDone, resumeCount, audioUrl?, durationMs?,
+  updatedAt, diag: { sessionId, mountId, breadcrumbs } }`.
 
 ## New / changed surfaces
 
 ### 1. `POST /api/quiz-progress` (new, login-gated) — checkpoint
 
-Upserts the `-inprogress.json` slot. **Never grades, never calls the model** — so the slot always has
-`report: null`, which is exactly the "in progress" signal. Body: `{ date, transcript, tutorDone, audioUrl?,
-durationMs?, sessionId, mountId, breadcrumbs }`. Writes `{ …, partial: true, report: null, cancelled: false,
-teacherId, tutorDone, updatedAt }`. Sanitize/cap like `quiz-report` does. Returns `{ ok: true }`. (Reuses
-the `quiz-report` field-validation helpers — factor the shared bits out.)
+Upserts the slot. **Never grades, never calls the model.** Body: `{ date, transcript, tutorDone,
+resumeCount, audioUrl?, durationMs?, sessionId, mountId, breadcrumbs }`. Validates `date` against
+`getReading` (no junk prefixes); sanitizes/caps every field like `quiz-report` does (factor the shared
+sanitizers out — e.g. a small `lib/session-io.ts`). Identity (slot key, `loginUser`, `studentName`,
+`teacherId`) comes **entirely from the cookie user**. Returns `{ ok: true }`.
 
-### 2. `GET` for resume — load the in-progress transcript
+### 2. `GET /api/quiz-progress?date=` (new, login-gated) — load for resume + chooser probe
 
-Either a `GET /api/quiz-progress?date=` returning the slot's session JSON, **or** fold the list of the
-student's in-progress **dates** into `/api/me` (it's already fetched once per page by `AuthProvider`) and
-fetch the full slot on Continue. Plan: **`/api/me` returns `inProgress: string[]` (dates)** for the launcher
-badge; a small `GET /api/quiz-progress?date=` returns the full transcript for the actual resume.
+Returns **the caller's own slot only** (`404`/`{ exists:false }` if none) — the key is derived from the
+cookie user; there is no way to request another user's slot. **[fix — v1 left this implicit; transcripts
+are deliberately teacher-only, so a student must never be able to read a classmate's in-progress
+transcript by guessing a date.]** Read is `uploadedAt`-cache-busted as above. Response: the full slot
+JSON (transcript, `tutorDone`, `resumeCount`, `sessionId`, `updatedAt`). The launcher also calls this on
+click just to decide fresh-vs-chooser (the same response then feeds the resume, so it's one call, not two).
 
-### 3. `components/VoiceQuiz.tsx` — checkpoint + resume + failure re-model
+### 3. `DELETE /api/quiz-progress?date=` (new, login-gated) — Start over
+
+Archives-then-deletes the caller's own slot: writes its content as a normal random-suffixed **`cancelled`**
+record (ungraded, teacher-only, `failure: { reason: "superseded", detail: "student chose Start over" }`),
+then `del()`s the slot JSON + slot audio. Nothing a student did is ever silently thrown away — same
+philosophy that made Cancel save. Idempotent if the slot is already gone.
+
+### 4. `components/VoiceQuiz.tsx` — checkpoint + resume + pause re-model
 
 - **Checkpoint** after every transcribed answer and every tutor turn: `void checkpoint()` → POST
-  `/api/quiz-progress` with `transcriptRef.current` + `tutorDone` (best-effort, fenced by `runId`; a late
-  checkpoint from a stale run must not overwrite a newer slot — guard with `canContinue(runId)`).
-- **`resume(session)`** (new, parallel to `start()`): set `transcriptRef` to the loaded transcript, render
-  the log, re-acquire mic (the relaunch click is the user gesture), bump `activeRunIdRef`, reuse the saved
-  `sessionId` (so the slot key + diagnostics stay linked), reset `endStartedRef`/`endingRef`, restore
-  `tutorDone` from the checkpoint. Then continue the loop: if the last turn is a **student** answer →
-  `nextTutorTurn(false, runId)`; if it's a **tutor** question → phase `tutorTurn` (student presses Start
-  speaking); if `tutorDone` → show **End** immediately. **Skip the fixed-opening fast-path** (that's
-  fresh-start only). Segments start empty (Phase 1: audio from resume onward).
-- **`failAndEnd` → `pauseOnFailure`:** a transcription/tutor failure, hang, or `MAX_TURNS` runaway **no
-  longer** calls `finalizeQuiz`. Instead: stop the loop, keep the checkpoint (already saved), and show a
-  recoverable state — "Couldn't reach the tutor. [Try again] [Leave — continue later]". `finalizeQuiz` is
-  now reached **only** by `userEnd()` (End) and `cancel()` (Cancel). The once-guard + run-fencing stay, but
-  only guard those two.
-- **Unmount / `pagehide` / `visibilitychange→hidden`:** do **not** finalize. Ensure the latest checkpoint is
-  flushed (transcript already is per-answer); best-effort audio flush is Phase 3. Release mic as today.
+  `/api/quiz-progress` with `transcriptRef.current` + `tutorDone` + `resumeCount` (fenced by `runId` via
+  `canContinue(runId)` so a stale run can't overwrite a newer slot). **[fix] Track the in-flight checkpoint
+  promise in a ref (`checkpointInFlightRef`), and make `finalizeQuiz` AWAIT its settlement (with a short
+  timeout, ~5s) before the final save + slot delete.** Client-side fencing alone can't stop a request that
+  has already left the browser: a fire-and-forget checkpoint sent just before End could land at the server
+  *after* the slot delete, resurrecting a stale "Continue" for a finished quiz — and resuming that would
+  produce a second record for one attempt (the exact double-save class the diagnostics tripwire watches
+  for). Once `endingRef` is set, no new checkpoints fire; awaiting the one in flight closes the race.
+- **Launcher chooser** (in `launch()`, after the login gate): GET the slot. Exists → show **"You have a
+  quiz in progress for this article. Continue where you left off, or start over?"** with **Continue** /
+  **Start over** (+ close). Continue → `resume(slot)`. Start over → confirm briefly, `DELETE
+  /api/quiz-progress?date=`, then the normal fresh `start()`. No slot → straight to `start()` as today.
+- **`resume(session)`** (new, parallel to `start()`): set `transcriptRef` from the slot, render the log,
+  re-acquire the mic (the click is the user gesture), bump `activeRunIdRef`, **reuse the saved `sessionId`**
+  (slot key + diagnostics stay linked across the pause), increment `resumeCount`, reset
+  `endStartedRef`/`endingRef`, restore `tutorDone`. Then continue the loop: last turn is a **student**
+  answer → `nextTutorTurn(...)`; last turn is a **tutor** question → phase `tutorTurn` (student presses
+  Start speaking); `tutorDone` → show **End** immediately. **Skip the fixed-opening fast-path** (fresh-start
+  only). Segments start empty (Phase 1: audio from the resume onward).
+- **`failAndEnd` → `pauseOnFailure`:** a transcription/tutor failure or hang **no longer** calls
+  `finalizeQuiz`. Instead: stop the loop, keep the checkpoint, **best-effort flush the audio-so-far**
+  (stitch current segments via `buildTeacherFile`, upload through the existing `/api/quiz-audio` token flow
+  to the stable slot-WAV key, checkpoint with `audioUrl` + `durationMs`) — the page is alive at this
+  moment, so this is cheap and preserves today's guarantee that a failed attempt leaves the teacher a
+  recording **[fix — v1's Phase 1 lost all audio for a never-resumed failure]** — and show a recoverable
+  state: *"Couldn't reach the tutor. [Try again] [Leave — continue later]"*. "Try again" re-runs the failed
+  leg from client-held state; "Leave" closes the modal without finalizing. Cancel stays available.
+- **`MAX_TURNS` runaway:** set `tutorDone = true`, checkpoint, show the ran-long notice (not spoken). End
+  appears through the normal gate — the strict-End invariant (*End only at `tutorTurn && tutorDone`*) is
+  preserved, so the `end:called`-at-wrong-phase diagnostic tripwire stays meaningful.
+- **Unmount / `pagehide` / `visibilitychange→hidden` / modal close mid-quiz:** do **not** finalize and do
+  **not** cancel — this is a **leave** (the per-answer checkpoint is already saved; a hard tab-kill loses at
+  most the last in-flight turn). Release the mic as today. No large async work on unload (unreliable,
+  which is exactly why checkpointing is per-answer).
+- **`finalizeQuiz`** is now reached **only** by `userEnd()` (gate unchanged: `tutorTurn && tutorDone`) and
+  `cancel()`. The once-guard + run-fencing stay.
 - **Cancel reword** (`confirmCancel`): *"Cancel this quiz? It won't count and you won't be able to continue
-  it later. (To keep it for later, just leave — you can resume from your Scores.)"* On confirm, `cancel()`
-  saves the `cancelled` record and **deletes the in-progress slot**.
+  it later. (To keep it for later, just leave — you can resume from your Scores page or by clicking Voice
+  quiz again.)"*
+- **`/?resume=<date>` auto-open:** on mount, read `window.location.search` (not `useSearchParams`, which
+  would force a Suspense boundary into the static home page); if it names this day's date and the user is
+  logged in, auto-launch straight into `resume()` (skipping the chooser — Scores' Continue was the explicit
+  choice). Logged out → the usual login prompt.
 
-### 4. `components/AdminSessions.tsx` + `app/admin/page.tsx` — Scores UI
+### 5. `components/AdminSessions.tsx` + `app/admin/page.tsx` — Scores UI
 
-- Render **in-progress** rows (`partial && report == null`) as **"In progress"** (no score, no Mins), with
-  a **Continue** button **only when the viewer owns the session** (`viewerUser === session.loginUser`).
-  Continue → navigate to `/?resume=<date>` (home), where the day's `VoiceQuiz` auto-opens in resume mode.
-- Students already see their own attempts; in-progress ones simply gain Continue. Teacher sees the entry as
-  informational (no Continue) and may still **Delete** it (teacher-only, unchanged). Legacy graded partials
-  (`partial && report != null`) render exactly as today — no Continue.
-- Grading/score columns: `fmtScore` shows "In progress" for an in-progress record; Details modal shows the
-  transcript-so-far and "In progress — not yet graded" instead of a report card.
-
-### 5. Home launcher — `VoiceQuiz.tsx` / `VoiceQuizStep.tsx`
-
-- Read `inProgress: string[]` from the shared `AuthProvider` (`/api/me`). If the day is in it, the action
-  reads **"Continue quiz"** and `launch()` enters resume mode (fetch the slot, `resume(session)`); otherwise
-  it's the normal fresh start. Logged-out behavior unchanged (login prompt on click).
+- Render **in-progress** rows (`inProgress === true`) as **"In progress"** (no score, no Mins), with a
+  **Continue** button **only when the viewer owns the session** (`viewerUser === session.loginUser` — pass
+  `viewerUser` down). Continue → `/?resume=<date>`.
+- The teacher sees the row as informational (no Continue) and may **Delete** it — the existing
+  `DELETE /api/quiz-session` already works on the slot (it's under the `quiz-sessions/` prefix and
+  `blobUrl` is attached at load); it must also `del()` the slot audio via `audioUrl` as it does today.
+  (If the teacher deletes a slot while the student is actively mid-quiz, the next checkpoint recreates it —
+  harmless; note it, don't fight it.)
+- Legacy partials (`partial && !inProgress`) render exactly as today — no Continue.
+- `fmtScore` shows "In progress" for a slot record; the Details modal shows the transcript-so-far and
+  "In progress — not yet graded" instead of a report card.
+- **[fix] Surface resumes to the teacher:** any session with `resumeCount > 0` gets a small note in the
+  Details modal — *"Resumed N time(s)"* (breadcrumbs carry the exact timing for forensics). This feature
+  was requested by a student, and pause-anytime creates a real look-up-the-answer loophole: hear a hard
+  vocab/concept question → leave → check the handout → resume and nail it. We're not blocking that
+  (Decision 4: leaving must be safe), but the teacher must be able to *see* it — grading integrity has been
+  a repeated, deliberate investment in this project.
 
 ### 6. `app/api/quiz-report/route.ts` — grade only on End
 
-- Unchanged for the **End** path (grades → writes the completed record: `partial:false` + report).
-  Additionally: **delete the `-inprogress.json` slot** after a successful complete/cancel save.
-- Remove the old **auto-graded partial**: an incomplete session is no longer graded here, so a live/paused
-  `partial` always has `report: null`. (The only writers of `report`/score are now the **End**-path grade
-  and the existing `cancelled` / no-answers `"—"` cards.)
+- Unchanged for the **End** path (grades → writes the completed record). Then, **only after a successful
+  final `put`**, delete the slot JSON + slot audio (cookie-derived key). Same for the **Cancel** path.
+- Remove the old **auto-graded partial**: an incomplete session is no longer graded here. (The only
+  writers of a report are now the End-path grade and the existing `cancelled` / no-answers `"—"` cards.)
+- `durationMs` on a resumed session covers the final run's recording only (Phase 1) — Mins will understate
+  for resumed sessions; accepted until Phase 2.
+
+### 7. `lib/sessions.ts` — cache-busted reads
+
+One-line change: fetch each blob as `${b.url}?v=${b.uploadedAt.getTime()}` (see *Storage*). Applies to all
+session reads, not just slots — harmless for immutable random-suffixed records, correct for the slot.
+
+## Audio semantics (Phase 1)
+
+- **Live run:** segments accumulate exactly as today; End stitches + uploads the run's WAV as today.
+- **Pause with the page alive** (failure pause, or the explicit "Leave — continue later" button): stitch +
+  upload segments-so-far to the stable slot-WAV key, stamp `audioUrl` (+ `?v=`) and `durationMs` on the
+  slot. A never-resumed pause therefore leaves the teacher a playable recording of everything up to the
+  pause.
+- **Pause via tab-kill / pagehide:** no flush (unreliable on unload) — transcript survives via the
+  per-answer checkpoint; that run's audio is lost. Accepted.
+- **Resume:** segments start empty. On End, the final record's audio is the final run only; the slot WAV is
+  deleted with the slot. So for a paused-and-resumed session the teacher hears the last run only — the
+  known "text-first" trade-off, fixed properly in Phase 2.
 
 ## Phasing
 
-- **Phase 1 — core (ship first).** Status model + `-inprogress` slot + `POST /api/quiz-progress` checkpoint
-  (transcript) + `resume()` turn-loop + **Continue from the Scores entry** + "In progress, no score" display
-  + failure/leave → continuable (drop the auto-graded partial) + Cancel reword + no End confirm. Audio =
-  final-run-only (best-effort; no cross-resume merge yet).
-- **Phase 2 — launcher entry point.** `/api/me` `inProgress` + "Continue quiz" on the home row.
-- **Phase 3 — audio continuity (best-effort).** Flush a stitched WAV of the run-so-far to the slot at pause
-  points; on End, fetch the prior slot WAV, decode + prepend to the new run's segments, stitch one file. If
-  any leg fails, fall back to the final run's audio.
+- **Phase 1 — everything except cross-resume audio.** Status model (`inProgress` flag) + slot +
+  `POST/GET/DELETE /api/quiz-progress` + checkpoint/resume/pause re-model in `VoiceQuiz.tsx` + launcher
+  chooser + Scores "In progress"/Continue + resumeCount note + runaway→`tutorDone` + Cancel reword + no End
+  confirm + cache-busted reads + drop the auto-graded partial. (v1 deferred the launcher entry to Phase 2
+  because it rode on `/api/me`; the chooser probes the slot **on click** instead, so it's now nearly free —
+  and `/api/me` stays untouched, avoiding a `list()` over the whole ever-growing `quiz-sessions/` prefix on
+  every page load for every logged-in user.)
+- **Phase 2 — audio continuity (best-effort).** On resume, fetch the slot WAV, decode + prepend to the new
+  run's segments; End stitches one continuous file. Any leg fails → fall back to final-run audio.
 
 ## Risks / edge cases
 
-- **iOS reliability:** `pagehide`/`visibilitychange` are the events to hook (not `beforeunload`); large async
-  flush on unload is unreliable, which is exactly why the transcript is checkpointed **per answer** rather
-  than only on leave. A hard tab-kill loses at most the last in-flight turn.
-- **Concurrency:** checkpoints and the resume run must respect `activeRunIdRef`/`mountedRef` fencing so a
-  stale run can't overwrite a newer slot or resurrect an ended quiz. `finalizeQuiz` stays once-guarded;
-  `resume()` resets the guards like `start()`/`close()`.
+- **iOS reliability:** `pagehide`/`visibilitychange` are the hooks (not `beforeunload`); the transcript is
+  checkpointed **per answer** precisely so unload-time work doesn't matter. A hard tab-kill loses at most
+  the last in-flight turn.
+- **Checkpoint↔terminal race:** closed by `finalizeQuiz` awaiting the in-flight checkpoint before
+  save+delete (see §4). Fencing still guards everything else; `finalizeQuiz` stays once-guarded; `resume()`
+  resets guards like `start()`.
 - **Two devices / double continue:** the stable slot is last-write-wins. Acceptable for one student on one
   device; note it, don't over-engineer.
-- **Tutor already said `done` before leaving:** persist `tutorDone` in the checkpoint so resume can show End
-  immediately (don't force another turn).
-- **Grading integrity:** in-progress is never sent to the grader, so the "no-answers 8/10" class of bug
-  can't reappear via checkpoints. Only End grades, and only a real transcript.
-- **Diagnostics:** keep `sessionId` stable across a pause/resume (reuse it in `resume()`), so the breadcrumb
-  trail and the "saved twice" tripwire still read correctly across a continued session. Add breadcrumbs:
-  `checkpoint:ok`, `pause:leave`, `pause:fail`, `resume:begin`.
+- **Tutor already said `done` before leaving:** `tutorDone` is persisted in the checkpoint, so resume shows
+  End immediately (don't force another turn).
+- **Grading integrity:** in-progress is never sent to the grader; only End grades, and only a real
+  transcript. The no-student-turns `"—"` guard stays. Resumes are visible to the teacher (`resumeCount`).
+- **Final save fails on End:** slot is kept (delete only follows a successful save) → the student still has
+  Continue; nothing is lost to a storage hiccup.
+- **Diagnostics:** `sessionId` stays stable across pause/resume, so the double-save tripwire still reads
+  correctly. New breadcrumbs: `checkpoint:ok`, `pause:leave`, `pause:fail`, `resume:begin`,
+  `startover:archived`, `backstop:done-forced`.
 
 ## CLAUDE.md updates (do with the change)
 
-Revise *Partial attempts* (partials are now **continuable, ungraded** — not auto-graded-and-ended),
-*Cancelled attempts* (Cancel also clears the in-progress slot; reworded), *Strict End gating* (failure paths
-no longer finalize), and *Reviewing results* (the "In progress" row + Continue button; students see their own
-in-progress attempts). Note the **broadened meaning of `partial`** (now = incomplete/continuable and
-**ungraded** — `report: null` — until End; no new `status` field) in the session-schema area.
+Revise *Partial attempts* (failures now pause — continuable, ungraded — instead of auto-grading-and-
+ending), *Cancelled attempts* (Cancel also clears the slot; Start over archives as `cancelled`; reworded
+confirm), *Strict End gating* (failure paths no longer finalize; runaway forces `tutorDone` instead of
+auto-saving), *Reviewing results* ("In progress" rows + Continue + resumeCount note), and the session-
+schema area (the new `inProgress` flag and the slot's stable keys; `report` stays null until End).
 
 ## Rollout
 
-Per the standing voice-quiz rule: build clean, then **smoke-test one full pause→resume→End on a preview
-deploy / real phone** (iOS especially) before promoting. Only four students use the feature, so a preview
-pass is cheap insurance.
+Per the standing voice-quiz rule: build clean, then **smoke-test on a preview deploy / real phone** (iOS
+especially) before promoting: one full pause→resume→End, one failure-pause→leave→Continue-from-Scores, one
+Start-over, and one Cancel — checking the slot appears/disappears correctly in Blob after each. Only four
+students use the feature, so a preview pass is cheap insurance.
 
-## Open questions (confirm before/while implementing)
+## Defaults chosen in this revision (flag if you disagree)
 
-- **Continue navigation:** `/?resume=<date>` querystring vs. a dedicated route — querystring is simplest and
-  keeps the launcher on the home page. OK?
-- **"Start over" when a slot exists:** if a student opens a day that already has an in-progress slot and
-  wants a fresh quiz, offer **Continue / Start over** (Start over overwrites the slot). Confirm that's the
-  desired affordance.
-- **Teacher Delete of an in-progress slot:** allowed (cleanup), and it should delete the stable
-  `-inprogress.json` blob (+ any audio). Confirm.
+- **Start over archives the abandoned attempt as a `cancelled` record** (teacher-only) rather than
+  silently discarding it — consistent with Cancel's "nothing is thrown away."
+- **Continue from Scores resumes directly** (no chooser); the chooser lives only on the launcher, where the
+  student's intent is ambiguous.
+- **`resumeCount` is shown to the teacher** in the Details modal (integrity visibility), not to the student.
+- **Continue navigation** stays the `/?resume=<date>` querystring (read via `window.location` on mount, so
+  the static home page needs no Suspense boundary).
