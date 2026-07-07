@@ -60,13 +60,22 @@ export default function Home() {
 
             {/* Optional per-day reading note (e.g. "read the Concepts first").
                 Sits right under the title (context about the article), above the
-                actions. Muted and indented so it's a quiet aside, not an
-                attention-grab: a "Note:" label + a small left tab off the
-                heading's edge. */}
+                actions. Muted so it's a quiet aside, not an attention-grab. Its
+                left edge lines up exactly with the TITLE (not the date): an
+                invisible date-width spacer in the same flex/gap pushes it over
+                by whatever this row's date happens to measure. */}
             {r.note && (
-              <p className="mt-1.5 pl-4 text-sm text-stone-500">
-                <span className="font-medium">Note:</span> {r.note}
-              </p>
+              <div className="mt-1.5 flex gap-x-2.5">
+                <span
+                  aria-hidden
+                  className="invisible shrink-0 font-serif text-sm font-bold"
+                >
+                  {dateBig(r.date)}
+                </span>
+                <p className="text-sm text-stone-500">
+                  <span className="font-medium">Note:</span> {r.note}
+                </p>
+              </div>
             )}
 
             {/* Compact action bar — text links separated by middots: Web link ·
