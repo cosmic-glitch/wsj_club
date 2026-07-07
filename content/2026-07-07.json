@@ -1,0 +1,114 @@
+{
+  "date": "2026-07-07",
+  "title": "SpaceX Is About to Join the Nasdaq-100. Here's How Exposed You'll Be.",
+  "articleUrl": "https://www.wsj.com/finance/stocks/spacex-is-about-to-join-the-nasdaq-100-heres-how-exposed-youll-be-b0227888",
+  "pdfUrl": "/pdfs/2026-07-07.pdf",
+  "voiceQuiz": true,
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "exposed",
+      "partOfSpeech": "adjective",
+      "articleQuote": "…investors holding some funds tied to the index will end up exposed whether they like it or not.",
+      "inContext": "If you own one of these index funds, you now indirectly own a piece of SpaceX — so your money will rise and fall with SpaceX's stock whether you chose that or not. You are 'exposed' to it.",
+      "meaning": "In finance, your exposure to something is how much of your money stands to gain or lose from it — how much you have riding on it. More broadly, to be exposed is to be left open or unprotected, in a position where something can reach you and affect you.",
+      "examples": [
+        "By pouring all his savings into a single video-game company's stock, Ravi gave himself huge exposure to one risky bet.",
+        "Waiting at the bus stop with no jacket, she was completely exposed to the freezing wind."
+      ]
+    },
+    {
+      "word": "undercut",
+      "partOfSpeech": "verb",
+      "articleQuote": "…the SPDR Portfolio Nasdaq 100 fund is charging holders a 0.1% annual fee…undercutting QQQ's 0.18% fee.",
+      "inContext": "State Street set its fund's fee lower than QQQ's on purpose, hoping to pull customers away from the popular rival by charging less for the same thing.",
+      "meaning": "To undercut a competitor is to offer the same thing at a lower price in order to win their business. The word has a second, related sense too: to undercut something can mean to quietly weaken it — for example, to undercut someone's argument or authority.",
+      "examples": [
+        "The new bubble-tea shop undercut the café across the street by selling the same drinks for a dollar less.",
+        "Interrupting your teammate every time she speaks undercuts her authority in front of the group."
+      ]
+    },
+    {
+      "word": "flagship",
+      "partOfSpeech": "noun",
+      "articleQuote": "…funds…that track Nasdaq's flagship tech index, including the popular Invesco QQQ ETF…",
+      "inContext": "The Nasdaq-100 is called Nasdaq's 'flagship' tech index — its single most important and best-known index, the one that represents it.",
+      "meaning": "A flagship is the best, most important, or most representative thing in a group — a company's flagship product, a chain's flagship store. The word comes from the navy: the flagship was the lead ship of a fleet, the one that carried the commanding admiral and flew his flag.",
+      "examples": [
+        "The company saves its biggest announcements for its flagship phone, the model it shows off every year.",
+        "Their flagship store on Fifth Avenue is far larger and grander than any of their other locations."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Index funds and passive investing",
+      "articleQuote": "Mutual and exchange-traded funds with a collective $800 billion in assets under management that track Nasdaq's flagship tech index…are set to buy SpaceX shares…to mirror the index's performance.",
+      "inContext": "These funds exist only to copy the Nasdaq-100, so the instant SpaceX joins that index they have to buy it — not because anyone judged SpaceX a good buy, but because copying the index is their entire job.",
+      "meaning": "Start with the index itself. A stock index is a single number that stands in for a whole group of stocks at once, so you can talk about how that group is doing without listing every company. The Nasdaq-100 tracks about 100 of the largest companies on the Nasdaq exchange; the S&P 500 tracks 500 big U.S. companies.\n\nThat number is not a plain average of the companies' share prices. It is a weighted average, and the weight each company gets is its market capitalization. A company's market capitalization ('market cap') is just the number of shares it has multiplied by the price of one share. If a company has 10 million shares and each trades at $50, its market cap is 10,000,000 × $50 = $500 million. In a weighted average, the items that carry more weight move the result more — so a company worth $2 trillion pulls on the index far harder than one worth $50 billion. Put simply: in the Nasdaq-100, bigger companies count for more, in exact proportion to their market cap.\n\nAn index fund is a fund built to copy an index. It buys every stock in the index and holds them in those same market-cap proportions, so its value rises and falls almost exactly in step with the index. Buying an index fund is called passive investing, and it is worth understanding why so many people do it. The alternative is active investing: paying a manager to study companies and try to pick the ones that will beat the rest. That sounds smarter, but decades of results show that most active managers fail to beat the index's average — especially once you subtract their fees. So enormous amounts of money have moved into index funds instead, where you simply own the whole weighted basket and take the average result. That is why the funds in this article hold a collective $800 billion.\n\nNow the fact that drives the whole story. An index fund is not allowed to have opinions. Its rule is to hold exactly the index's companies in exactly the index's proportions, and nothing else. So the moment SpaceX is added to the Nasdaq-100, every fund that tracks that index must go out and buy SpaceX shares — not because any of them decided SpaceX was a good investment, but because they have no choice if they want to keep matching the index."
+    },
+    {
+      "name": "Free float",
+      "articleQuote": "The Nasdaq adjusts index weights by a company's so-called free-float, or the number of shares available to trade publicly, capping the weight at three times a company's float-adjusted market capitalization.",
+      "inContext": "SpaceX is worth $2.1 trillion on paper, but almost none of its shares can actually be bought, so the index weights it as if it were a ~$300 billion company — and the funds barely have to buy any.",
+      "meaning": "This builds directly on market capitalization from the previous idea: a company's market cap is its number of shares times the price of one share, and you would expect that full value to set its weight in the index. Here is the wrinkle. The index does not weight a company by its full market cap. It weights it by free-float market cap — only the shares that are actually available to trade in public, multiplied by the price.\n\nWhy leave shares out? Because at any given moment, many of a company's shares are not really for sale. Founders and early investors hold large blocks they are not selling. Employees own shares too, and right after a company first sells stock to the public (its IPO), those employees are usually barred by law from selling for a set stretch of months — a restriction called a lockup. Those shares exist, and they count toward the company's value on paper, but you cannot buy them, so they are not 'in play.' The free float is the portion that genuinely is available to buy.\n\nSpaceX is an extreme example. Its full market cap is about $2.1 trillion, but it sold less than 5% of its shares to the public, and most of the rest is locked up. So only a small slice actually floats. The index weights SpaceX by that floating slice — treating it as if it were roughly a $300 billion company rather than a $2.1 trillion one — which is why its starting weight in the Nasdaq-100 is under 1%, and the tracking funds barely have to buy any of it.\n\nWhy does the index bother doing it this way? Imagine it ignored the float and weighted SpaceX by the full $2.1 trillion. It would then be instructing every tracking fund to buy a matching chunk — far more shares than are actually available for sale. The funds could never fill those orders, and their scramble to buy a tiny supply would send the price shooting up. Weighting by free float keeps the amount the funds must buy in line with the shares that can really be bought. The idea worth carrying to other situations: a company's value on paper (its full market cap) and the part of it that is actually tradable (its free float) are two different numbers, and it is the second one that governs how much has to be bought and how the price behaves."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why are index funds like the Invesco QQQ ETF being forced to buy SpaceX shares?",
+      "options": [
+        "Their managers studied SpaceX carefully and judged it a great investment",
+        "They track the Nasdaq-100, so they must hold whatever that index holds",
+        "The government ordered them to help support the company",
+        "SpaceX paid the funds to include its shares"
+      ],
+      "answerIndex": 1,
+      "explanation": "An index fund's job is to mirror its index exactly, so when SpaceX joins the Nasdaq-100 every fund tracking it has to buy the stock, regardless of opinion."
+    },
+    {
+      "question": "A stock index like the Nasdaq-100 is best described as:",
+      "options": [
+        "A simple average of the share prices of all its companies",
+        "A weighted average in which each company counts in proportion to its market capitalization",
+        "A ranking of the companies with the fastest-growing sales",
+        "The total profit earned by all its companies combined"
+      ],
+      "answerIndex": 1,
+      "explanation": "The index is a weighted average weighted by market cap, so a larger company moves the number more than a smaller one."
+    },
+    {
+      "question": "A company's market capitalization is calculated as:",
+      "options": [
+        "Its yearly profit minus its costs",
+        "The number of its shares multiplied by the price of one share",
+        "The total amount of cash it keeps in the bank",
+        "The number of its employees times their average pay"
+      ],
+      "answerIndex": 1,
+      "explanation": "Market cap = number of shares × price per share — a company's total value 'on paper.'"
+    },
+    {
+      "question": "SpaceX's full market cap is about $2.1 trillion, yet the Nasdaq-100 will treat it as roughly a $300 billion company. Why?",
+      "options": [
+        "The index caps every company at $300 billion",
+        "Only a small fraction of SpaceX's shares are actually available to trade — its free float is small",
+        "SpaceX's share price is expected to crash soon",
+        "SpaceX asked the index for a smaller weight"
+      ],
+      "answerIndex": 1,
+      "explanation": "Indexes weight by free float — only publicly tradable shares — and SpaceX sold under 5% of its shares with the rest largely locked up, so its tradable value is far below its paper value."
+    },
+    {
+      "question": "State Street charges a 0.1% fee, 'undercutting' QQQ's 0.18% fee. To undercut a competitor means to:",
+      "options": [
+        "Copy their product exactly",
+        "Offer the same thing at a lower price to take their customers",
+        "Accuse them of cheating",
+        "Buy their company outright"
+      ],
+      "answerIndex": 1,
+      "explanation": "To undercut is to price below a rival to win their business — here, by charging a lower fund fee."
+    }
+  ]
+}
