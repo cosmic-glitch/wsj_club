@@ -58,6 +58,17 @@ export default function Home() {
               </span>
             </div>
 
+            {/* Optional per-day reading note (e.g. "read the Concepts first").
+                Sits right under the title (context about the article), above the
+                actions. Muted and indented so it's a quiet aside, not an
+                attention-grab: a "Note:" label + a small left tab off the
+                heading's edge. */}
+            {r.note && (
+              <p className="mt-1.5 pl-4 text-sm text-stone-500">
+                <span className="font-medium">Note:</span> {r.note}
+              </p>
+            )}
+
             {/* Compact action bar — text links separated by middots: Web link ·
                 PDF · Handout · Voice quiz. The PDF is its own item (not a "(PDF)"
                 aside) so each link is a clear, separately tappable target. */}
@@ -91,15 +102,6 @@ export default function Home() {
                   when shown, nothing when signed out. */}
               {r.voiceQuiz && <VoiceQuizStep date={r.date} title={r.title} />}
             </div>
-
-            {/* Optional per-day reading note (e.g. "read the Concepts first").
-                Muted and indented so it's a quiet aside, not an attention-grab:
-                a "Note:" label + a small left tab off the heading's edge. */}
-            {r.note && (
-              <p className="mt-1.5 pl-4 text-sm text-stone-500">
-                <span className="font-medium">Note:</span> {r.note}
-              </p>
-            )}
           </li>
         );
       })}
