@@ -92,10 +92,13 @@ export default function Home() {
               {r.voiceQuiz && <VoiceQuizStep date={r.date} title={r.title} />}
             </div>
 
-            {/* Optional per-day reading tip (e.g. "read the Concepts first").
-                A subtle amber line so it reads as a helpful note, not chrome. */}
+            {/* Optional per-day reading note (e.g. "read the Concepts first").
+                Muted and indented so it's a quiet aside, not an attention-grab:
+                a "Note:" label + a small left tab off the heading's edge. */}
             {r.note && (
-              <p className="mt-1.5 text-sm italic text-amber-700">{r.note}</p>
+              <p className="mt-1.5 pl-4 text-sm text-stone-500">
+                <span className="font-medium">Note:</span> {r.note}
+              </p>
             )}
           </li>
         );
