@@ -17,15 +17,44 @@ const WRAP_UP_PHRASE = "The quiz is done. You can press the End Quiz button.";
 
 type Turn = { role: "student" | "tutor"; text: string };
 
+// Return the FIRST balanced {...} object in `content`, honoring strings/escapes so
+// braces inside "text" don't fool the brace counter. The model is asked for one
+// JSON object, but it occasionally emits TWO back-to-back (or wraps the object in
+// stray prose); a plain JSON.parse of the whole string then throws on the trailing
+// data and the raw JSON leaks out as the spoken line. Pulling the first object out
+// lets us parse just that. Returns null if there's no complete object.
+function firstJsonObject(content: string): string | null {
+  const start = content.indexOf("{");
+  if (start === -1) return null;
+  let depth = 0;
+  let inString = false;
+  let escaped = false;
+  for (let i = start; i < content.length; i++) {
+    const ch = content[i];
+    if (inString) {
+      if (escaped) escaped = false;
+      else if (ch === "\\") escaped = true;
+      else if (ch === '"') inString = false;
+      continue;
+    }
+    if (ch === '"') inString = true;
+    else if (ch === "{") depth++;
+    else if (ch === "}" && --depth === 0) return content.slice(start, i + 1);
+  }
+  return null;
+}
+
 // Parse one tutor reply into the spoken line + the done flag. The model is asked
 // to return {"text","done"} JSON (response_format json_object), but we stay
-// defensive: if it isn't valid JSON we treat the raw content as the spoken line,
-// and either way the exact wrap-up phrase is a backup signal for done.
+// defensive: parse the FIRST balanced {...} object (so a doubled/prose-wrapped
+// emission still yields clean text); if nothing parses we treat the raw content as
+// the spoken line, and either way the exact wrap-up phrase is a backup signal for done.
 function parseTutorReply(content: string): { text: string; done: boolean } {
   let text = content.trim();
   let done = false;
+  const candidate = firstJsonObject(content) ?? content;
   try {
-    const parsed = JSON.parse(content);
+    const parsed = JSON.parse(candidate);
     if (parsed && typeof parsed === "object") {
       // Valid JSON but no usable "text" field → treat it as an empty completion
       // (the caller retries once, then 502s) rather than letting the raw JSON
