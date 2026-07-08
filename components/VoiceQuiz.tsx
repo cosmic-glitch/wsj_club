@@ -276,7 +276,21 @@ async function decodeBlobToPcm16k(blob: Blob, ctx: AudioContext): Promise<Float3
  * auto-resumes. Only the End and Cancel buttons are terminal — End grades, and
  * both delete the slot (server-side, after the save).
  */
-export default function VoiceQuiz({ date, title }: { date: string; title: string }) {
+export default function VoiceQuiz({
+  date,
+  title,
+  launcherClassName,
+  launcherLabel,
+}: {
+  date: string;
+  title: string;
+  /** Optional restyle of the launcher button (e.g. the home page's boxed
+      brutalist action button). Styling only — the click behavior (login gate,
+      resume probe/chooser) is identical either way. */
+  launcherClassName?: string;
+  /** Optional launcher text (default "Voice quiz"). */
+  launcherLabel?: string;
+}) {
   // Login state comes from the shared AuthProvider (one /api/me fetch for the
   // whole page); login/logout both reload the page, so it stays fresh.
   const { user, ready } = useAuth();
@@ -1886,13 +1900,18 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
 
   return (
     <>
-      {/* Styled as a text link so it sits inline in the home-page action bar. */}
+      {/* Default: styled as a text link so it sits inline in an action bar;
+          the caller can restyle it (launcherClassName) without touching any
+          of the quiz behavior. */}
       <button
         type="button"
         onClick={launch}
-        className="font-medium text-sky-700 transition hover:text-sky-900 hover:underline"
+        className={
+          launcherClassName ??
+          "font-medium text-sky-700 transition hover:text-sky-900 hover:underline"
+        }
       >
-        Voice quiz
+        {launcherLabel ?? "Voice quiz"}
       </button>
 
       {modalOpen && (
