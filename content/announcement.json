@@ -1,5 +1,6 @@
 {
   "messages": [
-    "New: you can now pause a voice quiz and finish it later — press \"Save for later\" during the quiz, then \"Continue\" when you come back to it. Leaving the page mid-quiz no longer loses your progress either."
+    "New: there is now a \"Save for later\" button during the voice quiz. Press it at any time to save your progress and stop — your quiz won't be lost.",
+    "To continue a saved quiz, you can do either of two things: click \"Voice quiz\" on that article again and it will ask whether you want to continue, or open your My Scores page and click the \"Continue\" link next to that attempt."
   ]
 }

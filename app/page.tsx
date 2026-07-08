@@ -31,11 +31,11 @@ export default function Home() {
           <p className="text-xs font-semibold uppercase tracking-wide text-amber-800">
             Announcements
           </p>
-          {announcements.map((message) => (
-            <p key={message} className="mt-1 text-sm text-amber-950">
-              {message}
-            </p>
-          ))}
+          <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-amber-950">
+            {announcements.map((message) => (
+              <li key={message}>{message}</li>
+            ))}
+          </ul>
         </div>
       )}
 
