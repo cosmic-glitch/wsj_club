@@ -1,6 +1,8 @@
 # Plan — Continuable voice-quiz sessions (pause & resume) · v2
 
-> **Status:** Design approved by the product owner; **not yet implemented.** v2 (2026-07-07) is a full
+> **Status:** **Implemented — Phase 1 shipped 2026-07-07 (commit 21ce812), Phase 2 (cross-resume
+> audio) shipped 2026-07-08.** `CLAUDE.md`'s *Pause & resume* section is the current reference; this
+> file is kept as the design record. v2 (2026-07-07) is a full
 > rewrite after a code review of the v1 draft: the home-launcher UX changed (see Decision 1), and the
 > review's findings are folded in as design requirements (each marked **[fix]** where it changed v1).
 > Companion to the *Voice quiz* section of `CLAUDE.md` (esp. *Strict End gating*, *Partial attempts*,

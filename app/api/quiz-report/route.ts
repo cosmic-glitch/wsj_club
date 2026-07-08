@@ -182,13 +182,14 @@ export async function POST(request: Request) {
   const teacherId = (await getUser(user))?.teacherId;
 
   // This terminal record replaces any in-progress slot. If the client sent no
-  // recording — e.g. the student resumed a paused quiz and pressed End without
-  // a new answer (audio segments reset on resume) — salvage the slot's flushed
-  // audio by copying it to a permanent key BEFORE the slot (and its stable-key
-  // audio) is deleted below. Otherwise a completed, graded quiz could end up
-  // with no recording at all even though one was captured. The slot key derives
-  // from the COOKIE user (matching what /api/quiz-progress wrote), not from the
-  // client-sent studentName.
+  // recording — a resumed quiz normally stitches the slot's flushed WAV into
+  // its own upload (the client fetches + prepends it on resume, Phase 2), so
+  // this is the fallback for when that fetch/stitch/upload failed — salvage the
+  // slot's flushed audio by copying it to a permanent key BEFORE the slot (and
+  // its stable-key audio) is deleted below. Otherwise a completed, graded quiz
+  // could end up with no recording at all even though one was captured. The
+  // slot key derives from the COOKIE user (matching what /api/quiz-progress
+  // wrote), not from the client-sent studentName.
   const slotName = safeNameOf(user);
   let finalAudioUrl = audioUrl;
   let finalDurationMs = durationMs;

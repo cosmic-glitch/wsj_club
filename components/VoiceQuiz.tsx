@@ -11,9 +11,12 @@ type Turn = { role: "student" | "tutor"; text: string };
 // be re-interleaved in the order they actually happened. Exactly one of
 // blob/pcm is set: tutor lines and desktop answers carry a `blob` (mp3 /
 // webm-mp4) decoded at the end; iOS answers carry ready-made 16 kHz `pcm`.
+// A "prior" segment is the slot's flushed WAV — the earlier runs' audio,
+// fetched on resume and prepended at order -1 so a paused-and-resumed quiz
+// still stitches into ONE continuous recording (cross-resume audio, Phase 2).
 type AudioSegment = {
   order: number;
-  kind: "tutor" | "student";
+  kind: "tutor" | "student" | "prior";
   blob?: Blob;
   pcm?: Float32Array;
 };
@@ -395,6 +398,12 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // The slot's flushed audio (uploaded at pause time), echoed on every
   // checkpoint so a plain transcript checkpoint doesn't clobber it server-side.
   const slotAudioRef = useRef<{ url: string; durationMs?: number } | null>(null);
+  // Cross-resume audio (Phase 2): the in-flight background fetch of the slot's
+  // flushed WAV (the earlier runs' audio), kicked off by resume(). It pushes an
+  // order:-1 "prior" segment when it lands; buildTeacherFile AWAITS it (time-
+  // capped) so a stitch can't silently drop the prior runs while the download
+  // is still in flight. Never rejects; null when nothing is pending.
+  const priorAudioFetchRef = useRef<Promise<void> | null>(null);
   // The tail of the checkpoint chain. Checkpoints are serialized (each waits for
   // the previous), and finalizeQuiz AWAITS this before the terminal save —
   // a checkpoint landing after the server deleted the slot would resurrect a
@@ -524,9 +533,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // at pause points where the page is alive (a failure pause / Save for later) —
   // never on unload, which is unreliable. The stored URL carries a ?v= cache-
   // buster: the pathname is reused across flushes and the Blob CDN caches by
-  // URL. Trade-off (Phase 1): audio segments reset on resume, so a flush during
-  // a resumed run overwrites earlier runs' audio — the slot holds the latest
-  // run's audio only. Cross-resume stitching is Phase 2.
+  // URL. On a resumed run the timeline already carries the earlier runs' audio
+  // (the "prior" segment prepended by resume()), so a flush rewrites the slot
+  // WAV as the FULL recording so far — everything flushed to date, not just
+  // this run. (If the resume-time prior fetch failed, the flush overwrites with
+  // this run only — the accepted best-effort fallback.)
   async function flushAudioToSlot(runId: number): Promise<void> {
     if (!transcriptRef.current.some((t) => t.role === "student" && t.text.trim())) {
       return; // nothing checkpoint-worthy → don't orphan a slot WAV with no slot
@@ -1198,6 +1209,14 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // concatenate, and encode a single seekable WAV. Best-effort: a clip that
   // won't decode is skipped rather than failing the whole recording.
   async function buildTeacherFile(): Promise<{ blob: Blob; ext: string; durationMs: number } | null> {
+    // A resumed quiz fetches the earlier runs' audio in the background (see
+    // resume()) — wait for it, time-capped, so the stitched file doesn't
+    // silently drop the prior runs mid-download. The promise never rejects; a
+    // fetch still hanging past the cap just falls back to this run's audio.
+    const priorFetch = priorAudioFetchRef.current;
+    if (priorFetch) {
+      await Promise.race([priorFetch, new Promise((r) => setTimeout(r, 10_000))]);
+    }
     const segments = [...segmentsRef.current].sort((a, b) => a.order - b.order);
     if (!segments.length) return null;
     let ctx: AudioContext | null = null;
@@ -1296,6 +1315,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     pendingRetryRef.current = null;
     resumeCountRef.current = 0;
     slotAudioRef.current = null;
+    priorAudioFetchRef.current = null;
     setWasCancelled(false);
     endStartedRef.current = false;
     // A new run: bump the generation so any straggler from a prior quiz is fenced
@@ -1343,7 +1363,11 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
   // Restores the transcript + the done gate, reuses the saved sessionId (so the
   // slot key + diagnostics stay linked across the pause), then picks the loop up
   // exactly where it left off. The fixed-opening fast path is fresh-start only.
-  // Audio segments start empty (Phase 1: the recording covers this run onward).
+  // Audio: the slot's flushed WAV (the earlier runs' audio) is fetched in the
+  // background and prepended to the timeline, so the final recording is
+  // continuous across pauses (Phase 2); if that fetch fails, the recording
+  // falls back to this run onward (and the server-side salvage still keeps the
+  // slot WAV when this run produces no audio of its own).
   async function resume(slot: SlotSession) {
     setError("");
     setNotice("");
@@ -1380,6 +1404,38 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
       `session=${sessionIdRef.current} mount=${mountIdRef.current} count=${resumeCountRef.current} ` +
         `turns=${transcript.length} tutorDone=${tutorDoneRef.current} ios=${isIOS}`
     );
+
+    // Cross-resume audio (Phase 2): fetch the slot's flushed WAV — everything
+    // recorded up to the last flush — and prepend it to this run's timeline as
+    // an order:-1 "prior" segment, so End/Cancel stitch ONE continuous
+    // recording. Runs in the background (a slot WAV can be several MB; don't
+    // block the resume on it) — buildTeacherFile awaits this promise before
+    // stitching. Best-effort: any failure just means the recording covers this
+    // run onward (Phase 1 behavior), and if this run then captures no audio of
+    // its own the salvage in /api/quiz-report still preserves the slot WAV.
+    priorAudioFetchRef.current = null;
+    if (slot.audioUrl) {
+      // The stored URL's ?v= dates from flush time; add a fresh per-read buster
+      // so the CDN can't serve an older overwrite (same rationale as readSlot).
+      const priorUrl =
+        slot.audioUrl + (slot.audioUrl.includes("?") ? "&" : "?") + `r=${Date.now()}`;
+      priorAudioFetchRef.current = (async () => {
+        try {
+          const res = await fetch(priorUrl, { cache: "no-store" });
+          if (!res.ok) throw new Error(`status ${res.status}`);
+          const blob = await res.blob();
+          // The run moved on (Cancel/close/unmount) while downloading — a stale
+          // prior clip must not leak into a newer run's timeline.
+          if (!isSameRun(runId) || blob.size === 0) return;
+          pushSegment({ order: -1, kind: "prior", blob });
+          logEvent("resume:audio:ok", `bytes=${blob.size}`);
+        } catch (err) {
+          if (isSameRun(runId)) {
+            logEvent("resume:audio-failed", (err as Error)?.message?.slice(0, 80));
+          }
+        }
+      })();
+    }
     setPhase("starting");
 
     try {
@@ -1730,6 +1786,7 @@ export default function VoiceQuiz({ date, title }: { date: string; title: string
     pendingRetryRef.current = null;
     resumeCountRef.current = 0;
     slotAudioRef.current = null;
+    priorAudioFetchRef.current = null;
     setWasCancelled(false);
     endStartedRef.current = false;
   }
