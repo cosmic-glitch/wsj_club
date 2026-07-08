@@ -1,0 +1,125 @@
+{
+  "date": "2026-07-08",
+  "title": "Should Every Baby's DNA Be Sequenced?",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/06/29/should-every-babys-dna-be-sequenced",
+  "pdfUrl": "/pdfs/2026-07-08.pdf",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "beleaguered",
+      "partOfSpeech": "adjective",
+      "articleQuote": "In 2023 hackers stole the genetic and personal information of 6.9m customers of 23andMe, a beleaguered direct-to-consumer genetic-testing company.",
+      "inContext": "It describes 23andMe as a company already in deep trouble — struggling and under pressure — and now hit by a huge data breach on top of everything else.",
+      "meaning": "Beset with difficulties or under pressure from many directions at once; troubled and struggling.",
+      "examples": [
+        "By November the beleaguered team had lost six games in a row and its two best players to injury.",
+        "The beleaguered new principal faced furious parents, a budget cut, and a leaking roof all in her first week."
+      ]
+    },
+    {
+      "word": "accrue",
+      "partOfSpeech": "verb",
+      "articleQuote": "Medical research, by contrast, is justified by benefits that are uncertain and often accrue to other people.",
+      "inContext": "The payoff from the research doesn't necessarily go to the baby being tested — the benefits build up over time and land with other people, often years later.",
+      "meaning": "To accumulate or build up gradually over time; (of a benefit or cost) to come to someone bit by bit as it adds up.",
+      "examples": [
+        "Leave the money in a savings account and interest will accrue month after month without you lifting a finger.",
+        "The rewards of practicing an instrument accrue slowly — you barely notice day to day, but after a year you can really play."
+      ]
+    },
+    {
+      "word": "purgatory",
+      "partOfSpeech": "noun",
+      "articleQuote": "Such diagnostic purgatory is stressful enough that, in the case of cystic fibrosis, it has a name.",
+      "inContext": "It describes the miserable in-between state of families told their child might have a disease but unable to get a clear yes-or-no answer — stuck waiting and worrying.",
+      "meaning": "A state of prolonged suffering, uncertainty, or waiting; a miserable limbo between two outcomes. (Originally a religious idea of a place of temporary punishment between heaven and hell.)",
+      "examples": [
+        "The week between turning in my applications and hearing back was pure purgatory — I checked my email every ten minutes.",
+        "Not knowing whether the game was rained out or just delayed left the whole team in purgatory all afternoon."
+      ]
+    },
+    {
+      "word": "mission creep",
+      "partOfSpeech": "noun",
+      "articleQuote": "Jan Friedman... worries that many of the proposed screening programmes suffer from “mission creep”, with most requiring parents to sign up to both screening and the long-term storage of their child's data for research.",
+      "inContext": "It names the way a programme sold as simple disease-screening quietly grows into something bigger — a permanent data bank for research — beyond what parents first signed up for.",
+      "meaning": "The gradual expansion of a project or effort beyond its original goals, until it is doing far more than it was first meant to — usually without anyone ever deciding to make that jump.",
+      "examples": [
+        "The class group chat started out just for homework questions, but mission creep set in and now it's memes and weekend plans at 2 a.m.",
+        "What began as a quick weekend tidy of the garage suffered from mission creep and turned into repainting the whole house."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Penetrance (a risk gene isn't destiny)",
+      "articleQuote": "Geneticists use a concept called “penetrance” to describe the proportion of people with a disease-causing mutation who actually go on to become ill.",
+      "inContext": "Penetrance is why a scary-sounding genetic result may mean less than it seems: many people carry a “disease-causing” gene variant but never actually get the disease. For retinoblastoma, an early estimate put penetrance above 90%, yet a newer study found fewer than a third of adults with the risky variant ever got the cancer.",
+      "meaning": "Penetrance is the share of people carrying a particular risk factor who actually end up with the outcome it's linked to. The transferable idea: a risk factor is a probability, not a guarantee. Carrying a “cancer gene” — or any risk marker — raises your odds, but plenty of people with it never develop the problem, because environment, other genes, and plain chance matter too. So “you have the gene for X” almost never means “you will get X.” Whenever you hear that something “causes” or is “linked to” a bad outcome, ask how often it actually leads to that outcome — that fraction is what tells you how worried to be."
+    },
+    {
+      "name": "Selection bias (studying only the already-sick)",
+      "articleQuote": "Many disease-causing mutations are found by working backwards from people who are already ill, which risks inflating the numbers.",
+      "inContext": "This is why the old penetrance estimates were too high. Scientists first found “disease genes” by studying patients who were already sick — so of course almost everyone in that group with the gene had the disease. That starting point makes the gene look far more dangerous than it is for the general population, most of whom carry it and are fine.",
+      "meaning": "Selection bias is the distortion you get when the group you study is chosen in a way that's tied to the very thing you're trying to measure — so your sample doesn't represent everyone. If you only look at people who already have the outcome (or only the “winners,” or only the people who bothered to reply), your conclusion is skewed before you start. It's the same trap as “every successful founder I interviewed dropped out of college, so dropping out must lead to success” — you never counted the thousands who dropped out and failed. The fix is to ask: who got left out of this sample, and would including them change the answer?"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For retinoblastoma, an early estimate said the risky gene variant led to cancer more than 90% of the time, but a newer study found the real figure was under a third. What does this best illustrate?",
+      "options": [
+        "The early scientists faked their results.",
+        "A gene linked to a disease doesn't always lead to it — its penetrance was overestimated.",
+        "Retinoblastoma has now been completely cured.",
+        "The gene has nothing to do with the cancer at all."
+      ],
+      "answerIndex": 1,
+      "explanation": "The gap between the >90% estimate and the under-one-third reality is exactly what penetrance measures — a risk gene is a probability, not a certainty."
+    },
+    {
+      "question": "According to the article, why were those early penetrance estimates too high?",
+      "options": [
+        "The scientists made simple arithmetic errors.",
+        "The genes were only ever tested on animals.",
+        "The mutations were found by studying people who were already ill, so nearly everyone in that group had the disease.",
+        "Insurance companies secretly changed the numbers."
+      ],
+      "answerIndex": 2,
+      "explanation": "Starting from people who are already sick is selection bias — the sample is chosen by the outcome, which inflates how dangerous the gene looks."
+    },
+    {
+      "question": "In “hackers stole the information of 6.9m customers of 23andMe, a beleaguered company,” beleaguered most nearly means:",
+      "options": [
+        "Beset with difficulties from many sides",
+        "Extremely profitable and secure",
+        "Recently founded and small",
+        "Owned by the government"
+      ],
+      "answerIndex": 0,
+      "explanation": "Beleaguered means troubled or under pressure from many directions at once — here, a struggling company hit by a data breach on top of its other problems."
+    },
+    {
+      "question": "As used in the article, “mission creep” refers to:",
+      "options": [
+        "A slow-spreading computer virus",
+        "A programme gradually expanding beyond its original purpose",
+        "A newly discovered type of genetic mutation",
+        "A long delay in getting your test results"
+      ],
+      "answerIndex": 1,
+      "explanation": "Mission creep is when an effort quietly grows past what it was first meant to do — here, disease-screening also becoming long-term data storage for research."
+    },
+    {
+      "question": "The article describes “diagnostic purgatory” — for instance a cystic-fibrosis result that is “screen positive inconclusive.” What problem is it pointing to?",
+      "options": [
+        "Families can be left in a stressful limbo — told their child might have a disease but unable to get a clear answer.",
+        "The screening test is always wrong.",
+        "Purgatory is the name of a specific gene.",
+        "The disease can never be treated."
+      ],
+      "answerIndex": 0,
+      "explanation": "Purgatory means a miserable state of waiting — here, families stuck worrying over a result that is neither a clear yes nor a clear no."
+    }
+  ]
+}
