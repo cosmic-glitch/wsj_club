@@ -54,7 +54,6 @@ export type Reading = {
   articleUrl?: string; // single-article days: the WSJ article link (the "Web" link)
   pdfUrl?: string; // single-article days: served PDF, e.g. "/pdfs/2026-06-09.pdf"
   articles?: Source[]; // multi-article days: when set, the entry bundles these (top-level articleUrl/pdfUrl unused)
-  note?: string; // optional short reading tip shown under the home-page row (e.g. "read the Concepts section first"); set only when it genuinely helps
   voiceQuiz?: boolean; // when true, the home-page row's action bar shows a "Voice quiz" launcher for this day (login-gated; the skill sets it)
   source?: string; // e.g. "The Wall Street Journal"
   vocab: VocabWord[];
@@ -64,12 +63,33 @@ export type Reading = {
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
+/**
+ * The single site-wide announcement banner shown at the top of the home page —
+ * the day's announcements (new features, reading guidance for today's article).
+ * Edited in place in content/announcement.json; not per-day data.
+ */
+export type Announcement = {
+  messages: string[]; // one or more short announcement lines; empty → no banner
+};
+
+const ANNOUNCEMENT_FILE = path.join(CONTENT_DIR, "announcement.json");
+
+/** Load the current announcement lines (empty array → the banner is omitted). */
+export function getAnnouncements(): string[] {
+  if (!fs.existsSync(ANNOUNCEMENT_FILE)) return [];
+  const raw = JSON.parse(
+    fs.readFileSync(ANNOUNCEMENT_FILE, "utf8"),
+  ) as Announcement;
+  return Array.isArray(raw.messages) ? raw.messages.filter(Boolean) : [];
+}
+
 /** Load every reading, newest first. */
 export function getAllReadings(): Reading[] {
   if (!fs.existsSync(CONTENT_DIR)) return [];
   const files = fs
     .readdirSync(CONTENT_DIR)
-    .filter((f) => f.endsWith(".json"));
+    // Only date-named files are readings — announcement.json lives here too.
+    .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f));
   const readings = files.map((f) => {
     const raw = fs.readFileSync(path.join(CONTENT_DIR, f), "utf8");
     return JSON.parse(raw) as Reading;

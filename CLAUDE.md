@@ -17,13 +17,14 @@ Next.js app (App Router, Next 16, React 19, Tailwind v4). The daily content is *
 
 ```
 content/YYYY-MM-DD.json           one file = one day's handout
+content/announcement.json         the home-page announcement banner: { messages: string[] } — edited in place (see Content schema)
 public/pdfs/YYYY-MM-DD.pdf        served PDF of that day's article (the "PDF" link)
 PDFs/                             manual-fallback drop-zone for raw WSJ PDF exports (gitignored)
 article-text/YYYY-MM-DD.txt       gitignored drop-zone for full article plain text → uploaded to Blob (voice quiz)
 app/icon.svg                      browser-tab favicon — open-book on the amber→rose→indigo gradient (rounded tile)
 app/apple-icon.png                180×180 apple-touch-icon — the iPhone "Add to Home Screen" icon (full-bleed, same open-book design; iOS won't use the SVG favicon). regenerate with `node scripts/gen-icon.mjs` (sharp renders the full-bleed SVG → PNG)
 app/manifest.ts                   web app manifest (Android/Chrome): name/short_name "Reading Club" + icons; display:"browser" (no forced standalone)
-app/page.tsx                      index: a compact row-list, one row per day (date + title, then a text-link action bar: article · handout · voice quiz)
+app/page.tsx                      index: the announcement banner (from content/announcement.json), then a compact row-list, one row per day (date + title, then a text-link action bar: article · handout · voice quiz)
 app/reading/[date]/page.tsx       one day's handout — words + concepts, then a "Take the self-quiz" CTA at the bottom
 app/reading/[date]/quiz/page.tsx  that day's self-quiz, on its own page (linked from the bottom of that day's handout)
 app/admin/page.tsx                the "Scores" page (any logged-in user): loads sessions from Blob; a teacher sees their OWN classroom's attempts (teacherId match + roster fallback), a student sees only their own; groups by article, renders the AdminSessions table. THE OWNER sees every classroom in a ClassroomTabs interface — one tab per classroom (own first — deletable, via canDelete — then each other teacher's, read-only) built with scopeToClassroom + classroomPanel; a lone owner with no other teachers gets no tab bar
@@ -66,13 +67,13 @@ scripts/upload-article-text.mjs   CLI: upload a day's full article text to Blob 
 
 ## Content schema (`lib/content.ts`)
 
-A `Reading` = `{ date, title, articleUrl?, pdfUrl?, articles?, note?, voiceQuiz?, source?, vocab[], concepts[], quiz[] }`.
+A `Reading` = `{ date, title, articleUrl?, pdfUrl?, articles?, voiceQuiz?, source?, vocab[], concepts[], quiz[] }`.
 
 - **articleUrl** — the WSJ web article (the **Web** link). **pdfUrl** (optional) — a served PDF of the article, e.g. `/pdfs/2026-06-09.pdf` (the **PDF** link); omit it and only the Web link shows.
 - **voiceQuiz** (optional `boolean`) — when `true`, the home-page row for that day shows the AI-oral-quiz launcher in its action bar **to everyone** (signed in or not); clicking it while logged out pops a login prompt instead of starting. The skill sets `voiceQuiz: true` on every new day. It is now set on **every day** — the earlier pre-feature days (2026-06-09 → 2026-06-17) were backfilled, so all entries have the voice quiz for logged-in users.
 - **articles** (optional) — for **multi-article days**: bundle two or more short articles into one combined handout. It's an array of `Source` = `{ title, articleUrl, pdfUrl? }` (each article's own headline + links). When `articles` is set, the top-level `articleUrl`/`pdfUrl` are unused, the vocab/concepts/quiz are **combined** across all the articles, and each article gets its own PDF named `/pdfs/YYYY-MM-DD-1.pdf`, `-2.pdf`, … (see `content/2026-06-14.json` for the first one). Most days are single-article and just use `articleUrl`.
 
-- **note** (optional) — a short reading note rendered as a muted line (prefixed with a **"Note:"** label, in `text-stone-500`) on that day's row on the **index**, sitting **right under the article title and above the action bar** (it's context about the article). Its left edge is aligned **flush with the title** (not the date) via an invisible date-width spacer in the same flex/gap. It's deliberately quiet — not colored/attention-grabbing — so it reads as a quiet aside. Set it only when it genuinely helps — e.g. on a **concept-heavy day whose ideas build on each other**, advising the student to read the "Concepts behind the story" section of the handout *before* the article (first used on `content/2026-07-07.json`, the SpaceX/Nasdaq-100 day). Omit it on ordinary days and nothing renders.
+- **Announcements** (site-wide, not part of `Reading`) — a single **announcement banner at the top of the home page** replaces the old per-day `note` field (removed everywhere — schema, page, content files). Content lives in **`content/announcement.json`** = `{ messages: string[] }`, loaded by `getAnnouncements()` in `lib/content.ts` (the readings loader only matches date-named `YYYY-MM-DD.json` files, so this file is never parsed as a day). The banner is an amber card labeled **"Announcements"** rendered above the row-list, one line per message; an empty `messages` omits it entirely. It's edited in place — used to announce the latest features (e.g. voice-quiz pause & resume) or give reading guidance for today's article (the job the old `note` did, e.g. "read the Concepts section of the handout before the article").
 
 - **vocab** — **usually 3** `VocabWord`s (the `wsj-reading` skill's default recommendation; the author can and does override the count every few days — the pages and voice quiz handle any number via `reading.vocab.length`, so some days run 4+), each presented *article-first*:
   `articleQuote` (short real quote from the article) → `inContext` (what it means there) → `meaning` (broader definition) → `examples` (exactly **2** more example sentences).
