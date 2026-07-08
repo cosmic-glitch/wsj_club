@@ -29,7 +29,7 @@ export default function Home() {
       {announcements.length > 0 && (
         <div className="mb-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 shadow-sm sm:px-5">
           <p className="text-xs font-semibold uppercase tracking-wide text-amber-800">
-            Announcements
+            Announcement
           </p>
           <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-amber-950">
             {announcements.map((message) => (
