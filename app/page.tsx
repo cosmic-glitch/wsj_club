@@ -192,7 +192,7 @@ export default function Home() {
                       </span>
                     ))}
                     <Link href={`/reading/${r.date}`} className={btn}>
-                      Hand
+                      Handout
                     </Link>
                     {/* The voice-quiz launcher — full behavior (login gate,
                         resume probe/chooser) lives in VoiceQuiz; only the
