@@ -25,8 +25,12 @@ export default function HeaderContainer({
   const wide = pathname?.startsWith("/admin");
 
   return (
+    // flex-wrap: on a phone too narrow for the wordmark + the auth links on
+    // one line, the links drop below the wordmark as one right-aligned unit
+    // (they're unbreakable inside — see HomeAuthBar) instead of breaking mid-
+    // group.
     <div
-      className={`mx-auto flex items-center justify-between px-5 py-4 ${
+      className={`mx-auto flex flex-wrap items-center justify-between gap-x-4 gap-y-1 px-5 py-4 ${
         wide ? "max-w-[936px]" : "max-w-3xl"
       }`}
     >
