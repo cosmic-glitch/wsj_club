@@ -187,17 +187,28 @@ function ConceptCard({ concept }: { concept: Concept }) {
         </blockquote>
       </div>
 
-      <p className="mt-3 text-stone-800">
-        <InlineLabel>What it means here</InlineLabel>
-        {concept.inContext}
-      </p>
-
+      {/* One clear explanation of the idea (Feynman-style, with a concrete
+          example). Concepts are NOT split into "what it means here" vs "in
+          general" the way vocab is — the meaning just explains the concept. */}
       {concept.meaning.split(/\n\n+/).map((para, i) => (
-        <p key={i} className="mt-2 text-stone-800">
-          {i === 0 && <InlineLabel>In general</InlineLabel>}
+        <p
+          key={i}
+          className={i === 0 ? "mt-4 text-stone-800" : "mt-2 text-stone-800"}
+        >
           {para}
         </p>
       ))}
+
+      {concept.link && (
+        <a
+          href={concept.link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-block border-2 border-[#0a0a0a] bg-white px-4 py-2 font-mono text-xs font-bold uppercase tracking-[.06em] text-[#0a0a0a] no-underline transition hover:bg-[#ffe600]"
+        >
+          {concept.link.label}
+        </a>
+      )}
     </div>
   );
 }
