@@ -25,6 +25,7 @@ export type Concept = {
   articleQuote: string; // the segment of the article where the idea appears
   inContext: string; // what it means in that context
   meaning: string; // the broader, general meaning (how it works)
+  link?: { url: string; label: string }; // optional illustrative external link (e.g. a live prediction market), shown as a button under the meaning
 };
 
 /** A single multiple-choice quiz question. */

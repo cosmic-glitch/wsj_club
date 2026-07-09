@@ -186,6 +186,17 @@ function ConceptCard({ concept }: { concept: Concept }) {
           {para}
         </p>
       ))}
+
+      {concept.link && (
+        <a
+          href={concept.link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-block rounded-lg border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-medium text-amber-800 transition hover:bg-amber-100"
+        >
+          {concept.link.label}
+        </a>
+      )}
     </div>
   );
 }

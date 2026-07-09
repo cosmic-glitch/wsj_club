@@ -45,7 +45,11 @@
       "name": "Prediction market",
       "articleQuote": "Commodities law, which governs prediction markets, also bars deceptive and misleading practices.",
       "inContext": "Polymarket is a prediction market: a site where people bet real money on whether future events — an election result, an album's release date — will actually happen.",
-      "meaning": "A prediction market is a marketplace where people buy and sell bets on the outcome of future events. Because people put real money behind what they truly expect, the going price of a bet works like a crowd-sourced estimate of the odds: a contract trading near 70 cents roughly means the crowd thinks there's about a 70% chance the event happens. That's why economists and journalists sometimes watch prediction markets as a forecasting tool — though, as this story shows, the 'crowd' can be manipulated."
+      "meaning": "A prediction market is a marketplace where people buy and sell bets on the outcome of future events. Because people put real money behind what they truly expect, the going price of a bet works like a crowd-sourced estimate of the odds: a contract trading near 70 cents roughly means the crowd thinks there's about a 70% chance the event happens.\n\nYou can watch this live. The market linked below tracks who people think will win the 2028 U.S. presidential election — the number beside each candidate is essentially the crowd's current estimate of their chances, and it moves up and down as news breaks and new bets come in.\n\nDo these markets beat polls? Often they do about as well or better. Prices update the instant news breaks, and because bettors are risking real money, they are pushed to wager on what they think will happen, not what they hope will. In the 2024 U.S. presidential race, betting markets leaned toward the eventual winner more confidently than many poll averages did, which earned them a lot of attention. But it is debated, not settled: a market can be \"thin\" (very few bettors), can be swung by a single huge bet, and often just echoes the very polls it is supposedly beating — and, as this article shows, it can be deliberately manipulated. So treat a market price as one useful, fast, money-weighted signal of the odds — not a crystal ball.",
+      "link": {
+        "url": "https://polymarket.com/event/presidential-election-winner-2028",
+        "label": "See the live 2028 U.S. presidential election market on Polymarket →"
+      }
     },
     {
       "name": "Astroturfing",
