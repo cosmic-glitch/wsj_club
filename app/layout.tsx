@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import Link from "next/link";
 import AllReadingsLink from "@/components/AllReadingsLink";
 import AuthControl from "@/components/AuthControl";
 import { AuthProvider } from "@/components/AuthProvider";
 import HeaderContainer from "@/components/HeaderContainer";
+import SiteWordmark from "@/components/SiteWordmark";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -36,9 +36,8 @@ export default function RootLayout({
         <AuthProvider>
           <header className="border-b border-stone-200 bg-white/70 backdrop-blur">
             <HeaderContainer>
-              <Link href="/" className="font-serif text-lg font-bold tracking-tight">
-                Reading Club
-              </Link>
+              {/* Hidden on the home page, where the giant masthead is the name. */}
+              <SiteWordmark />
               <div className="flex items-center gap-4">
                 <AllReadingsLink />
                 <AuthControl />
