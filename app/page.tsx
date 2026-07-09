@@ -49,6 +49,17 @@ export default function Home() {
     <div
       className={`${anton.variable} ${spaceMono.variable} mx-[calc(50%_-_50vw)] -my-10 w-screen bg-white pb-[90px] text-[#0a0a0a] [font-family:var(--font-space-mono),monospace]`}
     >
+      {/* ---- topline: the page's own login/scores controls ---- */}
+      {/* The site-wide header is hidden on this page (see SiteHeader); these
+          small text links ARE its replacement — chrome by position (the very
+          top, above the masthead, under a hairline rule), quiet by type
+          (plain text, so the boxed buttons stay content-only). */}
+      <div className="mx-auto max-w-[980px] px-[18px]">
+        <div className="flex min-h-[37px] items-center justify-end border-b-2 border-[#0a0a0a] py-1">
+          <HomeAuthBar />
+        </div>
+      </div>
+
       {/* ---- masthead ---- */}
       <header className="animate-brutal-stamp border-b-[5px] border-[#0a0a0a] motion-reduce:animate-none">
         <div className="mx-auto max-w-[980px] px-[18px]">
@@ -60,14 +71,6 @@ export default function Home() {
           </h1>
         </div>
       </header>
-
-      {/* ---- the page's own login/scores controls ---- */}
-      {/* The site-wide header is hidden on this page (see SiteHeader); these
-          brutalist-styled controls are the same AuthControl behavior. Quiet
-          on purpose: a small right-aligned row on the white canvas. */}
-      <div className="mx-auto flex min-h-[34px] max-w-[980px] items-center justify-end px-[18px] pt-3">
-        <HomeAuthBar />
-      </div>
 
       {/* ---- index ---- */}
       <div className="mx-auto max-w-[980px] px-[18px]">

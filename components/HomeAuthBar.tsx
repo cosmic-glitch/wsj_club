@@ -5,13 +5,23 @@ import Link from "next/link";
 import { useAuth } from "./AuthProvider";
 
 // The home page's login/scores controls, restyled for the brutalist landing:
-// boxed uppercase mono buttons in the same black-on-white style as the row
-// buttons, sitting quietly right-aligned under the masthead. Same behavior as
-// the site-wide AuthControl (which the home page no longer shows — see
-// SiteHeader): inline login form when logged out, scores/students links +
-// log out when logged in.
+// small uppercase mono TEXT links in the thin topline ABOVE the masthead —
+// deliberately not boxed, so the boxed buttons stay exclusively "content
+// actions" in the index rows. Hovering inverts (black bg, yellow text), the
+// mockup's topline behavior. Same logic as the site-wide AuthControl (which
+// the home page no longer shows — see SiteHeader): inline login form when
+// logged out, scores/students links + log out when logged in.
 const bar =
-  "inline-block cursor-pointer border-2 border-[#0a0a0a] px-[10px] py-[5px] text-[10.5px] font-bold uppercase leading-normal tracking-[.08em] text-[#0a0a0a] no-underline transition-colors hover:bg-[#0a0a0a] hover:text-[#ffe600]";
+  "inline-block cursor-pointer px-1.5 py-1 text-[11px] font-bold uppercase leading-normal tracking-[.12em] text-[#0a0a0a] no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]";
+
+// The "/" between topline items.
+function Slash() {
+  return (
+    <span aria-hidden className="text-[11px] font-bold text-[#0a0a0a]">
+      /
+    </span>
+  );
+}
 
 export default function HomeAuthBar() {
   const { user, isAdmin, ready } = useAuth();
@@ -63,13 +73,13 @@ export default function HomeAuthBar() {
     window.location.reload();
   }
 
-  // Reserve the strip's height before /api/me answers so the page doesn't jump.
-  if (!ready) return <span className="py-[5px] text-[10.5px]">&nbsp;</span>;
+  // Reserve the topline's height before /api/me answers so the page doesn't jump.
+  if (!ready) return <span className="py-1 text-[11px]">&nbsp;</span>;
 
   if (user) {
     return (
-      <div className="flex flex-wrap items-center justify-end gap-2">
-        <span className="mr-1 text-[10.5px] font-bold uppercase tracking-[.14em]">
+      <div className="flex flex-wrap items-center justify-end gap-1">
+        <span className="mr-1.5 px-1.5 py-1 text-[11px] font-bold uppercase tracking-[.12em] text-stone-400">
           Hi {user}
         </span>
         {isAdmin ? (
@@ -77,14 +87,19 @@ export default function HomeAuthBar() {
             <Link href="/admin" className={bar}>
               All Scores
             </Link>
+            <Slash />
             <Link href="/admin/students" className={bar}>
               Students
             </Link>
+            <Slash />
           </>
         ) : (
-          <Link href="/admin" className={bar}>
-            My Scores
-          </Link>
+          <>
+            <Link href="/admin" className={bar}>
+              My Scores
+            </Link>
+            <Slash />
+          </>
         )}
         <button type="button" onClick={logout} className={bar}>
           Log out
