@@ -1,0 +1,126 @@
+{
+  "date": "2026-07-09",
+  "title": "Inside Polymarket's Deceptive Marketing Campaign",
+  "articleUrl": "https://www.wsj.com/business/media/we-investigated-polymarkets-deceptive-marketing-campaign-heres-what-we-found-51169858",
+  "pdfUrl": "/pdfs/2026-07-09.pdf",
+  "voiceQuiz": true,
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "disseminate",
+      "partOfSpeech": "verb",
+      "articleQuote": "paying social-media creators to disseminate short clips of online celebrities",
+      "inContext": "Polymarket disseminated the clips — it pushed them out across huge numbers of social-media accounts so that as many people as possible would see them.",
+      "meaning": "To disseminate something is to spread it widely, especially information or ideas, so that it reaches a large audience.",
+      "examples": [
+        "The principal used the morning announcements to disseminate the new bell schedule to every classroom at once.",
+        "One person posted the rumor, and within an hour group chats had disseminated it across the whole grade."
+      ]
+    },
+    {
+      "word": "groundswell",
+      "partOfSpeech": "noun",
+      "articleQuote": "create the appearance of a groundswell of authentic interest in a product or brand",
+      "inContext": "Here a groundswell means a fast-rising wave of public interest — the kind of genuine excitement Polymarket was faking so its product would look wildly popular.",
+      "meaning": "A groundswell is a sudden, strong build-up of public feeling, opinion, or support that seems to rise up on its own from ordinary people.",
+      "examples": [
+        "A groundswell of student support saved the after-school art club from being cut.",
+        "One viral clip created such a groundswell of demand that the sneakers sold out in a day."
+      ]
+    },
+    {
+      "word": "bolster",
+      "partOfSpeech": "verb",
+      "articleQuote": "The campaign bolstered the perception that Polymarket lets users make fast and easy money",
+      "inContext": "The fake videos bolstered a belief — they propped up and strengthened the impression that the site was an easy way to win money.",
+      "meaning": "To bolster something is to support or strengthen it, making it stronger, steadier, or more convincing.",
+      "examples": [
+        "She bolstered her essay's argument by adding two quotes from the textbook.",
+        "A quick pep talk from the coach bolstered the team's confidence before the final match."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Prediction market",
+      "articleQuote": "Commodities law, which governs prediction markets, also bars deceptive and misleading practices.",
+      "inContext": "Polymarket is a prediction market: a site where people bet real money on whether future events — an election result, an album's release date — will actually happen.",
+      "meaning": "A prediction market is a marketplace where people buy and sell bets on the outcome of future events. Because people put real money behind what they truly expect, the going price of a bet works like a crowd-sourced estimate of the odds: a contract trading near 70 cents roughly means the crowd thinks there's about a 70% chance the event happens. That's why economists and journalists sometimes watch prediction markets as a forecasting tool — though, as this story shows, the 'crowd' can be manipulated."
+    },
+    {
+      "name": "Astroturfing",
+      "articleQuote": "repost the videos from sockpuppet accounts that hid their Polymarket affiliation",
+      "inContext": "Polymarket paid thousands of users to repost its videos from accounts that hid the connection, manufacturing a wave of 'authentic' enthusiasm that didn't really exist.",
+      "meaning": "Astroturfing is when an organization secretly manufactures what looks like spontaneous, grassroots public support. The name is a jab at 'grassroots' — AstroTurf is fake grass. Real grassroots interest grows on its own from ordinary people; astroturfing pays or coordinates people (usually hiding who's behind it) to imitate that, so a product, opinion, or campaign seems far more popular and trusted than it is. Learning to spot it — accounts that hide their affiliation, identical talking points, a suspiciously sudden surge — is a core media-literacy skill."
+    },
+    {
+      "name": "Insider trading",
+      "articleQuote": "a webpage devoted to integrity that reads: “Insider trading is strictly prohibited.”",
+      "inContext": "On a betting site like Polymarket, insider trading would mean placing a bet using secret information others don't have — for instance, someone betting on an album's release date because they already know it before it's announced.",
+      "meaning": "Insider trading is buying or selling — or, here, betting — based on important information that isn't public yet. It's considered unfair (and in the stock market, illegal) because the insider has a guaranteed edge over everyone else, who is trading blind. The whole idea of a fair market is that everybody works from the same public information; insider trading breaks that by letting a few people cash in on what they alone know."
+    },
+    {
+      "name": "Disclosure (a “material connection”)",
+      "articleQuote": "Many of the creators didn't disclose they were paid by Polymarket until we reached out.",
+      "inContext": "The creators hid that Polymarket was paying them, so viewers thought they were watching honest, independent opinions rather than paid advertisements.",
+      "meaning": "A 'material connection' is any relationship — usually payment — between an advertiser and the person promoting a product that could change how much you trust the promotion. U.S. rules (enforced by the FTC) require that connection to be disclosed, for example with '#ad' or 'sponsored,' so the audience can judge the message knowing money changed hands. Hiding it is deceptive because an endorsement feels much more trustworthy when you believe it's unpaid and genuine — which is exactly the trust these creators were borrowing without earning."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The investigation found that about 10% of the videos implied the creators had won their bets — nearly $900,000 in all. What did the Journal find would have actually happened to anyone who placed those same bets?",
+      "options": [
+        "They would have won even more than the videos showed",
+        "They would have roughly broken even",
+        "They would have lost more than $166,000",
+        "The bets were impossible to trace"
+      ],
+      "answerIndex": 2,
+      "explanation": "The Journal traced how each bet would really have resolved and found the creators — and anyone copying them — would have lost more than $166,000, not won."
+    },
+    {
+      "question": "Which sentence uses the word 'bolster' correctly?",
+      "options": [
+        "The heavy rain bolstered the game, so it was canceled.",
+        "Extra evidence bolstered her theory, making it much harder to argue against.",
+        "He bolstered the vase off the shelf and it shattered.",
+        "The team bolstered the field before the match started."
+      ],
+      "answerIndex": 1,
+      "explanation": "To bolster is to support or strengthen something; extra evidence strengthening a theory fits that meaning."
+    },
+    {
+      "question": "Polymarket paid thousands of users to repost its videos from accounts that hid the connection, to fake a wave of genuine public enthusiasm. What is this tactic called?",
+      "options": [
+        "Insider trading",
+        "Astroturfing",
+        "Disclosure",
+        "A prediction market"
+      ],
+      "answerIndex": 1,
+      "explanation": "Secretly manufacturing fake grassroots support is astroturfing — a play on 'grassroots,' since AstroTurf is fake grass."
+    },
+    {
+      "question": "The clipping strategy aimed to 'create the appearance of a groundswell of authentic interest.' A groundswell is best described as:",
+      "options": [
+        "A sudden, powerful rise of public feeling or support",
+        "A legal complaint filed with regulators",
+        "A small, private group of wealthy investors",
+        "A hidden fee charged on every bet"
+      ],
+      "answerIndex": 0,
+      "explanation": "A groundswell is a rapid, strong surge of public opinion or support that appears to come from ordinary people."
+    },
+    {
+      "question": "U.S. advertising law generally requires a paid promoter to reveal that they were paid. Why does that disclosure matter?",
+      "options": [
+        "So the company can be charged extra taxes on the ad",
+        "So the audience knows money changed hands and can judge the endorsement accordingly",
+        "So the video is allowed to be posted in more countries",
+        "So the creator is guaranteed to earn more money"
+      ],
+      "answerIndex": 1,
+      "explanation": "Disclosing a paid ('material') connection lets viewers weigh a promotion honestly, since a hidden payment makes an endorsement seem more trustworthy than it really is."
+    }
+  ]
+}
