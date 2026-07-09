@@ -22,21 +22,14 @@ body {
   font-family: var(--font-serif);
 }
 
-/* Brutalist landing page (app/page.tsx) — the announcement-ticker scroll and
-   the header/index entry "stamp". Namespaced `brutal-*`. The keyframes live
-   inside @theme (with their --animate-* tokens) so Tailwind emits them when
-   the animate-brutal-* utilities are used — top-level @keyframes referenced
-   only from arbitrary animate-[…] values get stripped from the build. */
+/* Brutalist landing page (app/page.tsx) — the header/index entry "stamp".
+   Namespaced `brutal-*`. The keyframes live inside @theme (with their
+   --animate-* tokens) so Tailwind emits them when the animate-brutal-*
+   utilities are used — top-level @keyframes referenced only from arbitrary
+   animate-[…] values get stripped from the build. */
 @theme {
-  --animate-brutal-scroll: brutal-scroll 80s linear infinite;
   --animate-brutal-stamp: brutal-stamp 0.4s ease both;
   --animate-brutal-stamp-delayed: brutal-stamp 0.4s 0.2s ease both;
-
-  @keyframes brutal-scroll {
-    to {
-      transform: translateX(-50%);
-    }
-  }
 
   @keyframes brutal-stamp {
     from {

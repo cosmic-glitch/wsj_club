@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { Anton, Space_Mono } from "next/font/google";
 import ArticleLink from "@/components/ArticleLink";
+import HomeAuthBar from "@/components/HomeAuthBar";
 import TodayTag from "@/components/TodayTag";
 import VoiceQuizStep from "@/components/VoiceQuizStep";
-import { getAllReadings, getAnnouncements } from "@/lib/content";
+import { getAllReadings } from "@/lib/content";
 
 // The landing page's own display faces — scoped here (applied inside this
 // page's wrapper), so inner pages keep the site-wide Geist/Georgia setup.
@@ -36,40 +37,8 @@ function dateTag(date: string): string {
 const btn =
   "inline-block cursor-pointer border-2 border-[#0a0a0a] px-[10px] py-[5px] text-[10.5px] font-bold uppercase leading-normal tracking-[.08em] text-[#0a0a0a] no-underline min-[681px]:px-2 min-[681px]:py-[3px] group-hover:border-white group-hover:text-white group-hover:hover:border-[#ffe600] group-hover:hover:bg-[#ffe600] group-hover:hover:text-[#0a0a0a]";
 
-// One half of the seamless marquee loop (the whole strip is two identical
-// halves and the animation travels -50%). The second copy is aria-hidden.
-function MarqueeHalf({
-  messages,
-  ariaHidden,
-}: {
-  messages: string[];
-  ariaHidden?: boolean;
-}) {
-  return (
-    <span aria-hidden={ariaHidden}>
-      <b className="mr-[18px] ml-[30px] bg-[#0a0a0a] px-[10px] py-[2px] text-[10.5px] tracking-[.2em] text-[#ffe600]">
-        Announcement
-      </b>
-      {messages.map((message, i) => (
-        <span key={message}>
-          {i > 0 && (
-            <span className="mx-[14px]" aria-hidden>
-              ★
-            </span>
-          )}
-          {message}
-        </span>
-      ))}
-      <span className="mx-[14px]" aria-hidden>
-        ★★★
-      </span>
-    </span>
-  );
-}
-
 export default function Home() {
   const readings = getAllReadings();
-  const announcements = getAnnouncements();
 
   return (
     // Full-bleed breakout of the site-wide max-w-3xl column (the same
@@ -92,38 +61,14 @@ export default function Home() {
         </div>
       </header>
 
-      {/* ---- announcement ticker ---- */}
-      {announcements.length > 0 && (
-        <>
-          {/* The scrolling marquee (paused on hover). Hidden for
-              prefers-reduced-motion users, who get the static strip below. */}
-          <div className="group overflow-hidden whitespace-nowrap border-b-[5px] border-[#0a0a0a] bg-[#ffe600] py-[7px] text-xs font-bold uppercase tracking-[.1em] motion-reduce:hidden">
-            <div className="inline-block animate-brutal-scroll group-hover:[animation-play-state:paused]">
-              <MarqueeHalf messages={announcements} />
-              <MarqueeHalf messages={announcements} ariaHidden />
-            </div>
-          </div>
-          {/* Static reduced-motion fallback: same yellow strip, messages
-              simply wrap instead of scrolling. */}
-          <div className="hidden border-b-[5px] border-[#0a0a0a] bg-[#ffe600] py-[7px] text-xs font-bold uppercase tracking-[.1em] motion-reduce:block">
-            <div className="mx-auto max-w-[980px] px-[18px]">
-              <b className="mr-[18px] bg-[#0a0a0a] px-[10px] py-[2px] text-[10.5px] tracking-[.2em] text-[#ffe600]">
-                Announcement
-              </b>
-              {announcements.map((message, i) => (
-                <span key={message}>
-                  {i > 0 && (
-                    <span className="mx-[14px]" aria-hidden>
-                      ★
-                    </span>
-                  )}
-                  {message}
-                </span>
-              ))}
-            </div>
-          </div>
-        </>
-      )}
+      {/* ---- black strip: the page's own login/scores controls ---- */}
+      {/* The site-wide header is hidden on this page (see SiteHeader); these
+          brutalist-styled controls are the same AuthControl behavior. */}
+      <div className="bg-[#0a0a0a]">
+        <div className="mx-auto flex min-h-[46px] max-w-[980px] items-center justify-end px-[18px] py-[7px]">
+          <HomeAuthBar />
+        </div>
+      </div>
 
       {/* ---- index ---- */}
       <div className="mx-auto max-w-[980px] px-[18px]">

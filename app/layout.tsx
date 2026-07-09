@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import AllReadingsLink from "@/components/AllReadingsLink";
-import AuthControl from "@/components/AuthControl";
 import { AuthProvider } from "@/components/AuthProvider";
-import HeaderContainer from "@/components/HeaderContainer";
-import SiteWordmark from "@/components/SiteWordmark";
+import SiteHeader from "@/components/SiteHeader";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -34,16 +31,9 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <AuthProvider>
-          <header className="border-b border-stone-200 bg-white/70 backdrop-blur">
-            <HeaderContainer>
-              {/* Hidden on the home page, where the giant masthead is the name. */}
-              <SiteWordmark />
-              <div className="flex items-center gap-4">
-                <AllReadingsLink />
-                <AuthControl />
-              </div>
-            </HeaderContainer>
-          </header>
+          {/* Hidden entirely on the home page, which brings its own masthead
+              and login controls (see SiteHeader). */}
+          <SiteHeader />
           <main className="mx-auto w-full max-w-3xl flex-1 px-5 py-10">
             {children}
           </main>

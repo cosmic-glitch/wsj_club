@@ -23,15 +23,12 @@ export default function HeaderContainer({
 }) {
   const pathname = usePathname();
   const wide = pathname?.startsWith("/admin");
-  // On the home page the wordmark is hidden (see SiteWordmark) and only the
-  // login/scores controls remain — keep them on the right, like a topline.
-  const home = pathname === "/";
 
   return (
     <div
-      className={`mx-auto flex items-center px-5 py-4 ${
-        home ? "justify-end" : "justify-between"
-      } ${wide ? "max-w-[936px]" : "max-w-3xl"}`}
+      className={`mx-auto flex items-center justify-between px-5 py-4 ${
+        wide ? "max-w-[936px]" : "max-w-3xl"
+      }`}
     >
       {children}
     </div>
