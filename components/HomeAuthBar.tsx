@@ -5,12 +5,13 @@ import Link from "next/link";
 import { useAuth } from "./AuthProvider";
 
 // The home page's login/scores controls, restyled for the brutalist landing:
-// boxed uppercase mono buttons, yellow-on-black, living in the black strip
-// under the masthead. Same behavior as the site-wide AuthControl (which the
-// home page no longer shows — see SiteHeader): inline login form when logged
-// out, scores/students links + log out when logged in.
+// boxed uppercase mono buttons in the same black-on-white style as the row
+// buttons, sitting quietly right-aligned under the masthead. Same behavior as
+// the site-wide AuthControl (which the home page no longer shows — see
+// SiteHeader): inline login form when logged out, scores/students links +
+// log out when logged in.
 const bar =
-  "inline-block cursor-pointer border-2 border-[#ffe600] px-[10px] py-[5px] text-[10.5px] font-bold uppercase leading-normal tracking-[.08em] text-[#ffe600] no-underline transition-colors hover:bg-[#ffe600] hover:text-[#0a0a0a]";
+  "inline-block cursor-pointer border-2 border-[#0a0a0a] px-[10px] py-[5px] text-[10.5px] font-bold uppercase leading-normal tracking-[.08em] text-[#0a0a0a] no-underline transition-colors hover:bg-[#0a0a0a] hover:text-[#ffe600]";
 
 export default function HomeAuthBar() {
   const { user, isAdmin, ready } = useAuth();
@@ -68,7 +69,7 @@ export default function HomeAuthBar() {
   if (user) {
     return (
       <div className="flex flex-wrap items-center justify-end gap-2">
-        <span className="mr-1 text-[10.5px] font-bold uppercase tracking-[.14em] text-white">
+        <span className="mr-1 text-[10.5px] font-bold uppercase tracking-[.14em]">
           Hi {user}
         </span>
         {isAdmin ? (

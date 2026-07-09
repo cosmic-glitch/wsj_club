@@ -61,13 +61,12 @@ export default function Home() {
         </div>
       </header>
 
-      {/* ---- black strip: the page's own login/scores controls ---- */}
+      {/* ---- the page's own login/scores controls ---- */}
       {/* The site-wide header is hidden on this page (see SiteHeader); these
-          brutalist-styled controls are the same AuthControl behavior. */}
-      <div className="bg-[#0a0a0a]">
-        <div className="mx-auto flex min-h-[46px] max-w-[980px] items-center justify-end px-[18px] py-[7px]">
-          <HomeAuthBar />
-        </div>
+          brutalist-styled controls are the same AuthControl behavior. Quiet
+          on purpose: a small right-aligned row on the white canvas. */}
+      <div className="mx-auto flex min-h-[34px] max-w-[980px] items-center justify-end px-[18px] pt-3">
+        <HomeAuthBar />
       </div>
 
       {/* ---- index ---- */}
