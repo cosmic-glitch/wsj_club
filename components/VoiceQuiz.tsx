@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { upload } from "@vercel/blob/client";
 import { useAuth } from "./AuthProvider";
 
@@ -1914,13 +1915,23 @@ export default function VoiceQuiz({
         {launcherLabel ?? "Voice quiz"}
       </button>
 
-      {modalOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900/40 p-4"
-          onClick={() => {
-            if (dismissable) close();
-          }}
-        >
+      {/* The modal is PORTALED to <body>: on the landing page the launcher
+          sits inside the index <ul>, whose entrance animation animates
+          `transform` — a transformed ancestor becomes the containing block
+          for position:fixed descendants (iOS/WebKit keeps it one even after
+          the animation fills back to `none`), which anchored this "fixed"
+          overlay to the tall readings list and centered it ~15 rows down the
+          page on a phone. Rendering into document.body puts fixed back on the
+          viewport. Safe here: modalOpen only turns true on click, never
+          during SSR. */}
+      {modalOpen &&
+        createPortal(
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900/40 p-4"
+            onClick={() => {
+              if (dismissable) close();
+            }}
+          >
           <div
             className="flex max-h-[90vh] w-full max-w-md flex-col rounded-2xl bg-white p-6 shadow-xl"
             onClick={(e) => e.stopPropagation()}
@@ -2339,7 +2350,8 @@ export default function VoiceQuiz({
               </div>
             )}
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
