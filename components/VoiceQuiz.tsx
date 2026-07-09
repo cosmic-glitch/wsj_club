@@ -93,15 +93,26 @@ const MAX_TURNS = 24;
 // buttons are terminal.
 const FETCH_TIMEOUT_MS = 60_000;
 
+// The modal's button styles, in the site's boxed-uppercase brutalist language:
+// primary = black/yellow (the one action to take now), secondary = white/black.
+const BTN_PRIMARY =
+  "border-2 border-[#0a0a0a] bg-[#0a0a0a] px-5 py-2.5 font-mono text-sm font-bold uppercase tracking-[.08em] text-[#ffe600] transition hover:bg-[#ffe600] hover:text-[#0a0a0a]";
+const BTN_SECONDARY =
+  "border-2 border-[#0a0a0a] bg-white px-4 py-2 font-mono text-xs font-bold uppercase tracking-[.06em] text-[#0a0a0a] transition hover:bg-[#0a0a0a] hover:text-[#ffe600]";
+// Modal headings (Anton uppercase) and the small status lines (mono uppercase).
+const MODAL_H2 = "font-display text-xl font-normal uppercase text-[#0a0a0a]";
+const STATUS_LINE =
+  "flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[.06em] text-stone-500";
+
 function StepIcon({ state }: { state: StepState }) {
   return (
     <span className="flex h-4 w-4 shrink-0 items-center justify-center">
       {state === "done" ? (
         <span className="font-bold text-emerald-600">✓</span>
       ) : state === "active" ? (
-        <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-sky-500" />
+        <span className="h-2.5 w-2.5 animate-pulse bg-[#0a0a0a]" />
       ) : (
-        <span className="h-2.5 w-2.5 rounded-full border border-stone-300" />
+        <span className="h-2.5 w-2.5 border-2 border-stone-300" />
       )}
     </span>
   );
@@ -150,9 +161,9 @@ function openingLine(name: string | null): string {
 function RecordingHelp() {
   return (
     <p className="mt-2.5 text-xs leading-relaxed text-stone-500">
-      Press <span className="font-semibold text-stone-600">Start speaking</span> and
-      wait until it shows <span className="font-semibold text-stone-600">Recording</span>{" "}
-      before you talk. Press <span className="font-semibold text-stone-600">Stop</span>{" "}
+      Press <span className="font-bold text-[#0a0a0a]">Start speaking</span> and
+      wait until it shows <span className="font-bold text-[#0a0a0a]">Recording</span>{" "}
+      before you talk. Press <span className="font-bold text-[#0a0a0a]">Stop</span>{" "}
       when you’ve finished your answer. The same steps apply to every question.
     </p>
   );
@@ -279,12 +290,10 @@ async function decodeBlobToPcm16k(blob: Blob, ctx: AudioContext): Promise<Float3
  */
 export default function VoiceQuiz({
   date,
-  title,
   launcherClassName,
   launcherLabel,
 }: {
   date: string;
-  title: string;
   /** Optional restyle of the launcher button (e.g. the home page's boxed
       brutalist action button). Styling only — the click behavior (login gate,
       resume probe/chooser) is identical either way. */
@@ -1909,7 +1918,7 @@ export default function VoiceQuiz({
         onClick={launch}
         className={
           launcherClassName ??
-          "font-medium text-sky-700 transition hover:text-sky-900 hover:underline"
+          "font-mono text-[11px] font-bold uppercase tracking-[.06em] text-[#0a0a0a] underline decoration-2 underline-offset-2 hover:bg-[#ffe600]"
         }
       >
         {launcherLabel ?? "Voice quiz"}
@@ -1927,20 +1936,20 @@ export default function VoiceQuiz({
       {modalOpen &&
         createPortal(
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900/40 p-4"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-[#0a0a0a]/60 p-4"
             onClick={() => {
               if (dismissable) close();
             }}
           >
           <div
-            className="flex max-h-[90vh] w-full max-w-md flex-col rounded-2xl bg-white p-6 shadow-xl"
+            className="flex max-h-[90vh] w-full max-w-md flex-col border-[3px] border-[#0a0a0a] bg-white p-6 shadow-[8px_8px_0_#ffe600,8px_8px_0_3px_#0a0a0a]"
             onClick={(e) => e.stopPropagation()}
           >
             <audio ref={audioElRef} className="hidden" />
 
             {phase === "needLogin" && (
               <div>
-                <h2 className="font-serif text-xl font-bold text-stone-900">
+                <h2 className={MODAL_H2}>
                   You need to log in
                 </h2>
                 <p className="mt-2 text-sm text-stone-600">
@@ -1950,7 +1959,7 @@ export default function VoiceQuiz({
                 <button
                   type="button"
                   onClick={close}
-                  className="mt-5 rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50"
+                  className={`mt-5 ${BTN_SECONDARY}`}
                 >
                   Close
                 </button>
@@ -1959,7 +1968,7 @@ export default function VoiceQuiz({
 
             {phase === "probing" && (
               <div>
-                <h2 className="font-serif text-xl font-bold text-stone-900">
+                <h2 className={MODAL_H2}>
                   One moment…
                 </h2>
                 <p className="mt-2 text-sm text-stone-500">
@@ -1973,7 +1982,7 @@ export default function VoiceQuiz({
                 old attempt — teacher-visible, ungraded — and frees the slot). */}
             {phase === "chooser" && slotOffer && (
               <div>
-                <h2 className="font-serif text-xl font-bold text-stone-900">
+                <h2 className={MODAL_H2}>
                   Continue your quiz?
                 </h2>
                 <p className="mt-2 text-sm text-stone-600">
@@ -1997,21 +2006,21 @@ export default function VoiceQuiz({
                       setSlotOffer(null);
                       void resume(slot);
                     }}
-                    className="rounded-lg bg-sky-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-700"
+                    className={BTN_PRIMARY}
                   >
                     Continue
                   </button>
                   <button
                     type="button"
                     onClick={confirmStartOver}
-                    className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-50"
+                    className={BTN_SECONDARY}
                   >
                     Start over
                   </button>
                   <button
                     type="button"
                     onClick={close}
-                    className="rounded-lg px-3 py-2 text-sm font-medium text-stone-500 transition hover:bg-stone-50"
+                    className="px-3 py-2 font-mono text-xs font-bold uppercase tracking-[.06em] text-stone-500 transition hover:bg-[#0a0a0a] hover:text-[#ffe600]"
                   >
                     Close
                   </button>
@@ -2023,7 +2032,7 @@ export default function VoiceQuiz({
                 audio flush land, then the modal closes itself. */}
             {phase === "leaving" && (
               <div>
-                <h2 className="font-serif text-xl font-bold text-stone-900">
+                <h2 className={MODAL_H2}>
                   Saving your progress…
                 </h2>
                 <p className="mt-2 text-sm text-stone-500">
@@ -2035,7 +2044,7 @@ export default function VoiceQuiz({
 
             {phase === "starting" && (
               <div>
-                <h2 className="font-serif text-xl font-bold text-stone-900">
+                <h2 className={MODAL_H2}>
                   Starting your voice quiz…
                 </h2>
                 <p className="mt-2 text-sm text-stone-500">
@@ -2047,31 +2056,27 @@ export default function VoiceQuiz({
             {live && (
               <div className="flex min-h-0 flex-1 flex-col">
                 <div className="flex items-start justify-between gap-3">
-                  <h2 className="font-serif text-lg font-bold text-stone-900">
-                    Voice quiz — {title}
-                  </h2>
+                  <h2 className={MODAL_H2}>AI Quiz</h2>
                 </div>
-                <p className="mt-1 text-xs text-stone-400">
+                <p className="mt-1 font-mono text-[11px] text-stone-500">
                   Your answers are recorded and saved for your teacher.
                 </p>
 
                 {/* The running conversation: tutor questions + your answers. */}
                 <div
                   ref={logRef}
-                  className="mt-4 min-h-[8rem] flex-1 space-y-3 overflow-y-auto rounded-xl bg-stone-50 p-4"
+                  className="mt-4 min-h-[8rem] flex-1 space-y-3 overflow-y-auto border-2 border-[#0a0a0a] bg-stone-50 p-4"
                 >
                   {turns.map((t, i) => (
                     <div key={i}>
-                      <p
-                        className={
-                          t.role === "tutor"
-                            ? "text-xs font-semibold uppercase tracking-wide text-sky-600"
-                            : "text-xs font-semibold uppercase tracking-wide text-stone-500"
-                        }
-                      >
-                        {t.role === "tutor" ? "Tutor" : "You"}
+                      <p className="font-mono text-[10px] font-bold uppercase tracking-[.12em]">
+                        {t.role === "tutor" ? (
+                          <span className="bg-[#ffe600] px-1 text-[#0a0a0a]">Tutor</span>
+                        ) : (
+                          <span className="text-stone-500">You</span>
+                        )}
                       </p>
-                      <p className="text-sm text-stone-700">{t.text}</p>
+                      <p className="mt-0.5 text-sm text-stone-700">{t.text}</p>
                     </div>
                   ))}
                   {turns.length === 0 && (
@@ -2080,7 +2085,7 @@ export default function VoiceQuiz({
                 </div>
 
                 {notice && (
-                  <p className="mt-3 rounded-lg bg-amber-50 px-3 py-2 text-xs text-amber-700">
+                  <p className="mt-3 border-2 border-amber-600 bg-amber-50 px-3 py-2 text-xs text-amber-800">
                     {notice}
                   </p>
                 )}
@@ -2090,11 +2095,11 @@ export default function VoiceQuiz({
                   {phase === "tutorTurn" && (
                     <>
                       {ttsPlaying && (
-                        <p className="mb-3 flex items-center gap-2 text-sm text-sky-700">
-                          <span className="flex gap-0.5" aria-hidden>
-                            <span className="h-3 w-1 animate-pulse rounded-full bg-sky-500" />
-                            <span className="h-4 w-1 animate-pulse rounded-full bg-sky-500 [animation-delay:120ms]" />
-                            <span className="h-3 w-1 animate-pulse rounded-full bg-sky-500 [animation-delay:240ms]" />
+                        <p className={`mb-3 ${STATUS_LINE}`}>
+                          <span className="flex items-end gap-0.5" aria-hidden>
+                            <span className="h-3 w-1 animate-pulse bg-[#0a0a0a]" />
+                            <span className="h-4 w-1 animate-pulse bg-[#0a0a0a] [animation-delay:120ms]" />
+                            <span className="h-3 w-1 animate-pulse bg-[#0a0a0a] [animation-delay:240ms]" />
                           </span>
                           Tutor is speaking…
                         </p>
@@ -2108,7 +2113,7 @@ export default function VoiceQuiz({
                             <button
                               type="button"
                               onClick={startSpeaking}
-                              className="rounded-lg bg-sky-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-700"
+                              className={BTN_PRIMARY}
                             >
                               🎙 Start speaking
                             </button>
@@ -2118,7 +2123,9 @@ export default function VoiceQuiz({
                       ) : (
                         <p className="text-sm text-stone-600">
                           You’re all done — press{" "}
-                          <span className="font-semibold text-emerald-700">End quiz</span>{" "}
+                          <span className="bg-[#ffe600] px-1 font-bold text-[#0a0a0a]">
+                            End quiz
+                          </span>{" "}
                           to finish and see your report.
                         </p>
                       )}
@@ -2128,8 +2135,8 @@ export default function VoiceQuiz({
                   {phase === "recording" && (
                     <div>
                       <div className="flex items-center gap-3">
-                        <span className="flex h-3 w-3 animate-pulse rounded-full bg-red-500" />
-                        <span className="text-sm font-semibold text-red-600">
+                        <span className="flex h-3 w-3 animate-pulse bg-red-600" />
+                        <span className="font-mono text-sm font-bold uppercase tracking-[.06em] text-red-600">
                           Recording — {fmtClock(recSeconds)}
                         </span>
                       </div>
@@ -2140,7 +2147,7 @@ export default function VoiceQuiz({
                         {levels.map((lvl, i) => (
                           <span
                             key={i}
-                            className="w-1 rounded-full bg-red-400"
+                            className="w-1 bg-red-500"
                             style={{ height: `${Math.max(8, lvl * 100)}%` }}
                           />
                         ))}
@@ -2148,7 +2155,7 @@ export default function VoiceQuiz({
                       <button
                         type="button"
                         onClick={stopSpeaking}
-                        className="mt-4 rounded-lg bg-stone-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-stone-700"
+                        className={`mt-4 ${BTN_PRIMARY}`}
                       >
                         ⏹ Stop
                       </button>
@@ -2156,15 +2163,15 @@ export default function VoiceQuiz({
                   )}
 
                   {phase === "transcribing" && (
-                    <p className="flex items-center gap-2 text-sm text-stone-500">
-                      <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-sky-500" />
+                    <p className={STATUS_LINE}>
+                      <span className="h-2.5 w-2.5 animate-pulse bg-[#0a0a0a]" />
                       Transcribing your answer…
                     </p>
                   )}
 
                   {phase === "thinking" && (
-                    <p className="flex items-center gap-2 text-sm text-stone-500">
-                      <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-sky-500" />
+                    <p className={STATUS_LINE}>
+                      <span className="h-2.5 w-2.5 animate-pulse bg-[#0a0a0a]" />
                       Thinking about your next question…
                     </p>
                   )}
@@ -2174,8 +2181,8 @@ export default function VoiceQuiz({
                       continue later; nothing ends unless they Cancel. */}
                   {phase === "paused" && (
                     <div>
-                      <p className="rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-800">
-                        <span className="font-semibold">We hit a snag</span> —{" "}
+                      <p className="border-2 border-amber-600 bg-amber-50 px-3 py-2 text-sm text-amber-800">
+                        <span className="font-bold">We hit a snag</span> —{" "}
                         {pausedMsg} Your progress is saved: you can try again
                         now, or leave and continue later from the Voice quiz
                         link or your Scores page.
@@ -2184,14 +2191,14 @@ export default function VoiceQuiz({
                         <button
                           type="button"
                           onClick={() => void retryFromPause()}
-                          className="rounded-lg bg-sky-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-700"
+                          className={BTN_PRIMARY}
                         >
                           Try again
                         </button>
                         <button
                           type="button"
                           onClick={() => void saveForLater()}
-                          className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-50"
+                          className={BTN_SECONDARY}
                         >
                           Save for later
                         </button>
@@ -2207,13 +2214,9 @@ export default function VoiceQuiz({
                     Cancel is always available as the way to stop early FOR GOOD —
                     it saves an ungraded, teacher-only "cancelled" entry that
                     can't be resumed (see cancel()). */}
-                <div className="mt-5 flex items-center gap-3 border-t border-stone-100 pt-4">
+                <div className="mt-5 flex flex-wrap items-center gap-3 border-t-2 border-[#0a0a0a] pt-4">
                   {phase === "tutorTurn" && tutorDone && (
-                    <button
-                      type="button"
-                      onClick={userEnd}
-                      className="rounded-lg bg-emerald-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700"
-                    >
+                    <button type="button" onClick={userEnd} className={BTN_PRIMARY}>
                       End quiz
                     </button>
                   )}
@@ -2221,7 +2224,7 @@ export default function VoiceQuiz({
                     <button
                       type="button"
                       onClick={() => void saveForLater()}
-                      className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-50"
+                      className={BTN_SECONDARY}
                     >
                       Save for later
                     </button>
@@ -2229,7 +2232,7 @@ export default function VoiceQuiz({
                   <button
                     type="button"
                     onClick={confirmCancel}
-                    className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-50"
+                    className={BTN_SECONDARY}
                   >
                     Cancel quiz
                   </button>
@@ -2242,7 +2245,7 @@ export default function VoiceQuiz({
                 the modal itself when done. */}
             {phase === "wrapup" && wasCancelled && (
               <div>
-                <h2 className="font-serif text-xl font-bold text-stone-900">
+                <h2 className={MODAL_H2}>
                   Ending the quiz…
                 </h2>
                 <p className="mt-2 text-sm text-stone-500">One moment.</p>
@@ -2254,7 +2257,7 @@ export default function VoiceQuiz({
                 disabled until everything has saved. */}
             {phase === "wrapup" && !wasCancelled && (
               <div className="flex min-h-0 flex-col">
-                <h2 className="font-serif text-xl font-bold text-stone-900">
+                <h2 className={MODAL_H2}>
                   {finished ? "All done — nice work!" : "Wrapping up…"}
                 </h2>
                 <ul className="mt-4 space-y-2.5 text-sm">
@@ -2273,11 +2276,14 @@ export default function VoiceQuiz({
                 </ul>
 
                 {finished && (
-                  <div className="mt-4 max-h-[55vh] overflow-y-auto border-t border-stone-100 pt-4">
+                  <div className="mt-4 max-h-[55vh] overflow-y-auto border-t-2 border-[#0a0a0a] pt-4">
                     {report?.score && report.score !== "—" && (
                       <p className="text-sm text-stone-600">
                         You scored{" "}
-                        <span className="text-lg font-bold text-sky-700">{report.score}</span>.
+                        <span className="bg-[#ffe600] px-1.5 font-mono text-lg font-bold text-[#0a0a0a]">
+                          {report.score}
+                        </span>
+                        .
                       </p>
                     )}
 
@@ -2291,7 +2297,7 @@ export default function VoiceQuiz({
                         <div className="mt-4 grid gap-3 sm:grid-cols-2">
                           {report.strengths && report.strengths.length > 0 && (
                             <div>
-                              <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
+                              <p className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-emerald-700">
                                 Strengths
                               </p>
                               <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-700">
@@ -2303,7 +2309,7 @@ export default function VoiceQuiz({
                           )}
                           {report.gaps && report.gaps.length > 0 && (
                             <div>
-                              <p className="text-xs font-semibold uppercase tracking-wide text-amber-600">
+                              <p className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-amber-700">
                                 To review
                               </p>
                               <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-700">
@@ -2327,7 +2333,7 @@ export default function VoiceQuiz({
                   type="button"
                   onClick={close}
                   disabled={!finished}
-                  className="mt-5 rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50 disabled:cursor-not-allowed disabled:opacity-40"
+                  className={`mt-5 ${BTN_SECONDARY} disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white disabled:hover:text-[#0a0a0a]`}
                 >
                   Close
                 </button>
@@ -2336,14 +2342,14 @@ export default function VoiceQuiz({
 
             {phase === "error" && (
               <div>
-                <h2 className="font-serif text-xl font-bold text-stone-900">
+                <h2 className={MODAL_H2}>
                   Couldn’t start the quiz
                 </h2>
                 <p className="mt-2 text-sm text-red-600">{error}</p>
                 <button
                   type="button"
                   onClick={close}
-                  className="mt-5 rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50"
+                  className={`mt-5 ${BTN_SECONDARY}`}
                 >
                   Close
                 </button>

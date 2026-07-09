@@ -128,11 +128,7 @@ export default function Home() {
                         resume probe/chooser) lives in VoiceQuiz; only the
                         visible button is restyled to match the others. */}
                     {r.voiceQuiz && (
-                      <VoiceQuizStep
-                        date={r.date}
-                        title={r.title}
-                        className={btn}
-                      />
+                      <VoiceQuizStep date={r.date} className={btn} />
                     )}
                   </span>
                 </li>
