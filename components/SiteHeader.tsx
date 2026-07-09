@@ -22,7 +22,7 @@ export default function SiteHeader() {
   if (pathname === "/") return null;
 
   return (
-    <header className="border-b-[3px] border-[#0a0a0a] bg-white">
+    <header className="border-b-2 border-[#0a0a0a] bg-white">
       <HeaderContainer>
         <Link
           href="/"
