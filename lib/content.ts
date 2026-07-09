@@ -17,14 +17,17 @@ export type VocabWord = {
 
 /**
  * A richer idea that needs background knowledge, not just a definition.
- * Presented article-first: the quoted article segment, what it means there,
- * then the broader meaning.
+ * Anchored by a short article quote, then explained ONCE — a single, clear,
+ * Feynman-style explanation grounded with at least one concrete example.
+ * (Unlike vocab, a concept is NOT split into "what it means here" vs "in
+ * general" — it just broadly explains the idea. `inContext` is legacy/optional
+ * and no longer rendered.)
  */
 export type Concept = {
   name: string; // e.g. "Private credit", "Hyperscalers"
   articleQuote: string; // the segment of the article where the idea appears
-  inContext: string; // what it means in that context
-  meaning: string; // the broader, general meaning (how it works)
+  inContext?: string; // legacy: the article-specific gloss — kept on older entries, no longer rendered
+  meaning: string; // the single, intuitive, concrete explanation of the idea (with ≥1 concrete example)
   link?: { url: string; label: string }; // optional illustrative external link (e.g. a live prediction market), shown as a button under the meaning
 };
 

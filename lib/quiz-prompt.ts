@@ -55,7 +55,11 @@ function vocabBlock(reading: Reading): string {
 
 function conceptBlock(reading: Reading): string {
   return reading.concepts
-    .map((c, i) => `${i + 1}. ${c.name} — ${c.meaning} In this article: ${c.inContext}`)
+    .map((c, i) => {
+      // inContext is legacy/optional — newer concepts fold it into `meaning`.
+      const ctx = c.inContext ? ` In this article: ${c.inContext}` : "";
+      return `${i + 1}. ${c.name} — ${c.meaning}${ctx}`;
+    })
     .join("\n");
 }
 
@@ -79,13 +83,19 @@ function handoutText(reading: Reading): string {
     return `VOCABULARY:\n${vocab}`;
   }
   const concepts = reading.concepts
-    .map(
-      (c, i) =>
+    .map((c, i) => {
+      // inContext is legacy/optional; newer concepts have only a single
+      // explanation in `meaning`, so skip the "What it means there" line.
+      const ctx = c.inContext
+        ? `     What it means there: ${c.inContext}\n`
+        : "";
+      return (
         `  ${i + 1}. ${c.name}\n` +
         `     In the article: ${c.articleQuote}\n` +
-        `     What it means there: ${c.inContext}\n` +
-        `     In general: ${c.meaning}`
-    )
+        ctx +
+        `     Explanation: ${c.meaning}`
+      );
+    })
     .join("\n");
   return `VOCABULARY:\n${vocab}\n\nCONCEPTS:\n${concepts}`;
 }
