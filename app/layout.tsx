@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { AuthProvider } from "@/components/AuthProvider";
 import SiteHeader from "@/components/SiteHeader";
+import { anton, spaceMono } from "./fonts";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,7 +29,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${anton.variable} ${spaceMono.variable} h-full antialiased`}
+    >
       <body className="flex min-h-full flex-col">
         <AuthProvider>
           {/* Hidden entirely on the home page, which brings its own masthead
@@ -37,9 +41,9 @@ export default function RootLayout({
           <main className="mx-auto w-full max-w-3xl flex-1 px-5 py-10">
             {children}
           </main>
-          <footer className="border-t border-stone-200 py-6 text-center text-xs text-stone-400">
-            WSJ Reading Club · Original study material · Articles link to The Wall
-            Street Journal
+          <footer className="border-t-[3px] border-[#0a0a0a] py-6 text-center font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-500">
+            WSJ Reading Club · Original study material · Articles link to The
+            Wall Street Journal
           </footer>
         </AuthProvider>
       </body>

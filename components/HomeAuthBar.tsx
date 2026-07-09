@@ -4,20 +4,19 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useAuth } from "./AuthProvider";
 
-// The home page's login/scores controls, restyled for the brutalist landing:
-// small uppercase mono TEXT links in the thin topline ABOVE the masthead —
+// The site's login/scores controls: small uppercase mono TEXT links —
 // deliberately not boxed, so the boxed buttons stay exclusively "content
-// actions" in the index rows. Hovering inverts (black bg, yellow text), the
-// mockup's topline behavior. Same logic as the site-wide AuthControl (which
-// the home page no longer shows — see SiteHeader): inline login form when
-// logged out, scores/students links + log out when logged in.
+// actions" in the index rows. Hovering inverts (black bg, yellow text). Used
+// in the landing page's thin topline ABOVE the masthead AND in the site-wide
+// header on every inner page (SiteHeader): inline login form when logged out,
+// scores/students links + log out when logged in.
 const bar =
-  "inline-block cursor-pointer px-1.5 py-1 text-[11px] font-bold uppercase leading-normal tracking-[.12em] text-[#0a0a0a] no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]";
+  "inline-block cursor-pointer px-1.5 py-1 font-mono text-[11px] font-bold uppercase leading-normal tracking-[.12em] text-[#0a0a0a] no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]";
 
-// The "/" between topline items.
+// The "/" between items.
 function Slash() {
   return (
-    <span aria-hidden className="text-[11px] font-bold text-[#0a0a0a]">
+    <span aria-hidden className="font-mono text-[11px] font-bold text-[#0a0a0a]">
       /
     </span>
   );
@@ -73,13 +72,13 @@ export default function HomeAuthBar() {
     window.location.reload();
   }
 
-  // Reserve the topline's height before /api/me answers so the page doesn't jump.
-  if (!ready) return <span className="py-1 text-[11px]">&nbsp;</span>;
+  // Reserve the bar's height before /api/me answers so the page doesn't jump.
+  if (!ready) return <span className="py-1 font-mono text-[11px]">&nbsp;</span>;
 
   if (user) {
     return (
       <div className="flex flex-wrap items-center justify-end gap-1">
-        <span className="mr-1.5 px-1.5 py-1 text-[11px] font-bold uppercase tracking-[.12em] text-stone-400">
+        <span className="mr-1.5 px-1.5 py-1 font-mono text-[11px] font-bold uppercase tracking-[.12em] text-stone-400">
           Hi {user}
         </span>
         {isAdmin ? (
@@ -116,7 +115,7 @@ export default function HomeAuthBar() {
       {open && (
         <form
           onSubmit={login}
-          className="absolute right-0 top-full z-20 mt-2 w-64 space-y-2 border-[3px] border-[#0a0a0a] bg-white p-4 shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a]"
+          className="absolute right-0 top-full z-20 mt-2 w-64 space-y-2 border-[3px] border-[#0a0a0a] bg-white p-4 font-mono shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a]"
         >
           <input
             type="text"

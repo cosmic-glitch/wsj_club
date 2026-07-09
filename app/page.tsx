@@ -1,24 +1,9 @@
 import Link from "next/link";
-import { Anton, Space_Mono } from "next/font/google";
 import ArticleLink from "@/components/ArticleLink";
 import HomeAuthBar from "@/components/HomeAuthBar";
 import TodayTag from "@/components/TodayTag";
 import VoiceQuizStep from "@/components/VoiceQuizStep";
 import { getAllReadings } from "@/lib/content";
-
-// The landing page's own display faces — scoped here (applied inside this
-// page's wrapper), so inner pages keep the site-wide Geist/Georgia setup.
-// Palette: pure white canvas, near-black #0a0a0a ink, signal-yellow #ffe600.
-const anton = Anton({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-anton",
-});
-const spaceMono = Space_Mono({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--font-space-mono",
-});
 
 /** "2026-07-08" → "Jul 8" (rendered uppercase — the mockup's "JUL 8"). */
 function dateTag(date: string): string {
@@ -46,9 +31,7 @@ export default function Home() {
     // mockup's 980px. -my-10 reclaims <main>'s vertical padding so the white
     // canvas runs from the global header to the site footer. Only this page
     // changes; the header/footer and every inner page stay as they were.
-    <div
-      className={`${anton.variable} ${spaceMono.variable} mx-[calc(50%_-_50vw)] -my-10 w-screen bg-white pb-[90px] text-[#0a0a0a] [font-family:var(--font-space-mono),monospace]`}
-    >
+    <div className="mx-[calc(50%_-_50vw)] -my-10 w-screen bg-white pb-[90px] font-mono text-[#0a0a0a]">
       {/* ---- topline: the page's own login/scores controls ---- */}
       {/* The site-wide header is hidden on this page (see SiteHeader); these
           small text links ARE its replacement — chrome by position (the very
@@ -63,7 +46,7 @@ export default function Home() {
       {/* ---- masthead ---- */}
       <header className="animate-brutal-stamp border-b-[5px] border-[#0a0a0a] motion-reduce:animate-none">
         <div className="mx-auto max-w-[980px] px-[18px]">
-          <h1 className="pt-4 pb-2 text-[clamp(56px,12.5vw,128px)] font-normal uppercase leading-[.95] tracking-[.01em] [font-family:var(--font-anton),sans-serif]">
+          <h1 className="pt-4 pb-2 font-display text-[clamp(56px,12.5vw,128px)] font-normal uppercase leading-[.95] tracking-[.01em]">
             READING{" "}
             <span className="text-transparent [-webkit-text-stroke:2px_#0a0a0a]">
               CLUB

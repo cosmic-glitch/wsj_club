@@ -68,7 +68,7 @@ function classroomPanel(
 ) {
   if (groups.length === 0) {
     return (
-      <p className="mt-6 rounded-lg border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
+      <p className="mt-6 border-[3px] border-dashed border-[#0a0a0a] bg-white p-8 text-center font-mono text-sm font-bold uppercase tracking-[.08em] text-stone-500">
         No quiz sessions yet.
       </p>
     );
@@ -85,8 +85,10 @@ export default async function AdminPage() {
   if (!user) {
     return (
       <div>
-        <h1 className="font-serif text-3xl font-bold text-stone-900">Your scores</h1>
-        <p className="mt-4 rounded-lg bg-amber-50 px-4 py-3 text-sm text-amber-800">
+        <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
+          Your scores
+        </h1>
+        <p className="mt-4 border-[3px] border-[#0a0a0a] bg-[#ffe600] px-4 py-3 font-mono text-sm font-bold text-[#0a0a0a]">
           Please log in (top right) to see your quiz scores and recordings.
         </p>
       </div>
@@ -99,10 +101,10 @@ export default async function AdminPage() {
   if ("error" in result) {
     return (
       <div>
-        <h1 className="font-serif text-3xl font-bold text-stone-900">
+        <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
           {admin ? "Quiz sessions" : "Your scores"}
         </h1>
-        <p className="mt-6 rounded-lg bg-stone-100 px-4 py-3 text-sm text-stone-600">
+        <p className="mt-6 border-[3px] border-[#0a0a0a] bg-stone-100 px-4 py-3 font-mono text-sm text-stone-600">
           {result.error}
         </p>
       </div>
@@ -118,13 +120,15 @@ export default async function AdminPage() {
     );
     return (
       <div>
-        <h1 className="font-serif text-3xl font-bold text-stone-900">Your scores</h1>
-        <p className="mt-1 text-sm text-stone-500">
-          Your saved voice-quiz attempts — click Feedback or Recording on any
-          attempt for its full report card, recording, and transcript.
+        <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
+          Your scores
+        </h1>
+        <p className="mt-2 font-mono text-xs text-stone-500">
+          Your saved voice-quiz attempts — click Details on any attempt for its
+          full report card, recording, and transcript.
         </p>
         {visible.length === 0 ? (
-          <p className="mt-6 rounded-lg border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
+          <p className="mt-6 border-[3px] border-dashed border-[#0a0a0a] bg-white p-8 text-center font-mono text-sm font-bold uppercase tracking-[.08em] text-stone-500">
             You haven&apos;t taken any voice quizzes yet.
           </p>
         ) : (
@@ -158,10 +162,12 @@ export default async function AdminPage() {
   if (others.length === 0) {
     return (
       <div>
-        <h1 className="font-serif text-3xl font-bold text-stone-900">Quiz sessions</h1>
-        <p className="mt-1 text-sm text-stone-500">
-          Saved voice-quiz attempts by article — click Feedback or Recording on
-          any attempt for its full report card, recording, and transcript.
+        <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
+          Quiz sessions
+        </h1>
+        <p className="mt-2 font-mono text-xs text-stone-500">
+          Saved voice-quiz attempts by article — click Details on any attempt
+          for its full report card, recording, and transcript.
         </p>
         {classroomPanel(ownGroups, true, user)}
       </div>
@@ -188,11 +194,12 @@ export default async function AdminPage() {
 
   return (
     <div>
-      <h1 className="font-serif text-3xl font-bold text-stone-900">Quiz sessions</h1>
-      <p className="mt-1 text-sm text-stone-500">
-        Every classroom — your own and each teacher&apos;s. Click Feedback or
-        Recording on any attempt for its full report card, recording, and
-        transcript.
+      <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
+        Quiz sessions
+      </h1>
+      <p className="mt-2 font-mono text-xs text-stone-500">
+        Every classroom — your own and each teacher&apos;s. Click Details on
+        any attempt for its full report card, recording, and transcript.
       </p>
       <div className="mt-8">
         <ClassroomTabs tabs={tabs} />

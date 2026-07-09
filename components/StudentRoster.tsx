@@ -60,15 +60,19 @@ export default function StudentRoster({
       <div className="flex items-center justify-between gap-4">
         <div>
           {showTitle && (
-            <h1 className="font-serif text-3xl font-bold text-stone-900">{title}</h1>
+            <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
+              {title}
+            </h1>
           )}
-          <p className={`${showTitle ? "mt-1 " : ""}text-sm text-stone-500`}>{subtitle}</p>
+          <p className={`${showTitle ? "mt-2 " : ""}font-mono text-xs text-stone-500`}>
+            {subtitle}
+          </p>
         </div>
         {!readOnly && (
           <button
             type="button"
             onClick={() => setAddOpen(true)}
-            className="shrink-0 rounded-lg bg-stone-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-stone-700"
+            className="shrink-0 border-2 border-[#0a0a0a] bg-[#0a0a0a] px-4 py-2 font-mono text-sm font-bold uppercase tracking-[.06em] text-[#ffe600] transition hover:bg-[#ffe600] hover:text-[#0a0a0a]"
           >
             + Add student
           </button>
@@ -76,24 +80,24 @@ export default function StudentRoster({
       </div>
 
       {students.length === 0 ? (
-        <p className="mt-6 rounded-lg border border-dashed border-stone-300 bg-white p-8 text-center text-stone-500">
+        <p className="mt-6 border-[3px] border-dashed border-[#0a0a0a] bg-white p-8 text-center font-mono text-sm font-bold uppercase tracking-[.08em] text-stone-500">
           {readOnly
             ? "No students in this classroom yet."
             : "No students yet. Add your first student to get started."}
         </p>
       ) : (
-        <div className="mt-6 overflow-hidden rounded-xl border border-stone-200 bg-white">
+        <div className="mt-6 overflow-hidden border-[3px] border-[#0a0a0a] bg-white">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
-                <th className="px-4 py-2 font-medium">Student</th>
-                <th className="px-4 py-2 font-medium">Username</th>
-                <th className="px-4 py-2 text-right font-medium">Attempts</th>
-                <th className="px-4 py-2 font-medium">Last active</th>
-                {!readOnly && <th className="px-4 py-2 text-right font-medium">Actions</th>}
+              <tr className="bg-[#0a0a0a] text-left font-mono text-[10px] font-bold uppercase tracking-[.12em] text-white">
+                <th className="px-4 py-2.5 font-bold">Student</th>
+                <th className="px-4 py-2.5 font-bold">Username</th>
+                <th className="px-4 py-2.5 text-right font-bold">Attempts</th>
+                <th className="px-4 py-2.5 font-bold">Last active</th>
+                {!readOnly && <th className="px-4 py-2.5 text-right font-bold">Actions</th>}
               </tr>
             </thead>
-            <tbody className="divide-y divide-stone-100">
+            <tbody className="divide-y-2 divide-[#0a0a0a]">
               {students.map((s) => (
                 <StudentRow
                   key={s.username}
@@ -234,20 +238,20 @@ function StudentRow({
                 if (e.key === "Enter") saveRename();
                 if (e.key === "Escape") onStopRename();
               }}
-              className="w-32 rounded border border-stone-300 px-2 py-1 text-sm focus:border-stone-500 focus:outline-none"
+              className="w-32 border-2 border-[#0a0a0a] px-2 py-1 text-sm focus:bg-[#fffbd6] focus:outline-none"
             />
             <button
               type="button"
               onClick={saveRename}
               disabled={busy}
-              className="text-xs font-medium text-stone-900 hover:underline disabled:opacity-50"
+              className="font-mono text-[11px] font-bold uppercase tracking-[.06em] text-[#0a0a0a] hover:bg-[#ffe600] disabled:opacity-50"
             >
               Save
             </button>
             <button
               type="button"
               onClick={onStopRename}
-              className="text-xs text-stone-500 hover:underline"
+              className="font-mono text-[11px] font-bold uppercase tracking-[.06em] text-stone-500 hover:bg-[#0a0a0a] hover:text-[#ffe600]"
             >
               Cancel
             </button>
@@ -256,7 +260,7 @@ function StudentRow({
           <span className="font-medium text-stone-900">
             {student.displayName}
             {!student.active && (
-              <span className="ml-2 rounded bg-stone-200 px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide text-stone-500">
+              <span className="ml-2 bg-stone-200 px-1.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-stone-500">
                 inactive
               </span>
             )}
@@ -271,12 +275,12 @@ function StudentRow({
       {!readOnly && (
         <td className="px-4 py-3">
           {!renaming && (
-            <div className="flex justify-end gap-3 text-xs">
+            <div className="flex justify-end gap-3">
               <button
                 type="button"
                 onClick={onStartRename}
                 disabled={busy}
-                className="text-stone-500 hover:text-stone-900 disabled:opacity-50"
+                className="font-mono text-[11px] font-bold uppercase tracking-[.06em] text-[#0a0a0a] hover:bg-[#ffe600] disabled:opacity-50"
               >
                 Rename
               </button>
@@ -284,7 +288,7 @@ function StudentRow({
                 type="button"
                 onClick={resetPassword}
                 disabled={busy}
-                className="text-stone-500 hover:text-stone-900 disabled:opacity-50"
+                className="font-mono text-[11px] font-bold uppercase tracking-[.06em] text-[#0a0a0a] hover:bg-[#ffe600] disabled:opacity-50"
               >
                 Reset password
               </button>
@@ -378,18 +382,22 @@ function AddStudentModal({
     <Modal onClose={onClose} title="Add a student">
       <form onSubmit={submit} className="space-y-4">
         <label className="block">
-          <span className="text-xs font-medium text-stone-500">Display name</span>
+          <span className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-500">
+            Display name
+          </span>
           <input
             value={displayName}
             onChange={(e) => onDisplayName(e.target.value)}
             autoFocus
             placeholder="Anusha"
-            className="mt-1 w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:border-stone-500 focus:outline-none"
+            className="mt-1 w-full border-2 border-[#0a0a0a] px-3 py-2 text-sm focus:bg-[#fffbd6] focus:outline-none"
           />
         </label>
 
         <label className="block">
-          <span className="text-xs font-medium text-stone-500">Username</span>
+          <span className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-500">
+            Username
+          </span>
           <input
             value={username}
             onChange={(e) => {
@@ -398,9 +406,9 @@ function AddStudentModal({
             }}
             placeholder="anusha"
             autoComplete="off"
-            className="mt-1 w-full rounded-lg border border-stone-300 px-3 py-2 font-mono text-sm focus:border-stone-500 focus:outline-none"
+            className="mt-1 w-full border-2 border-[#0a0a0a] px-3 py-2 font-mono text-sm focus:bg-[#fffbd6] focus:outline-none"
           />
-          <span className="mt-1 block text-xs">
+          <span className="mt-1 block font-mono text-xs">
             {avail === "checking" && <span className="text-stone-400">Checking…</span>}
             {avail === "free" && <span className="text-green-600">✓ available</span>}
             {avail === "taken" && (
@@ -415,37 +423,39 @@ function AddStudentModal({
         </label>
 
         <label className="block">
-          <span className="text-xs font-medium text-stone-500">Password</span>
+          <span className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-500">
+            Password
+          </span>
           <div className="mt-1 flex gap-2">
             <input
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full rounded-lg border border-stone-300 px-3 py-2 font-mono text-sm focus:border-stone-500 focus:outline-none"
+              className="w-full border-2 border-[#0a0a0a] px-3 py-2 font-mono text-sm focus:bg-[#fffbd6] focus:outline-none"
             />
             <button
               type="button"
               onClick={() => setPassword(generatePassword())}
-              className="shrink-0 rounded-lg border border-stone-300 px-3 py-2 text-sm text-stone-600 transition hover:bg-stone-50"
+              className="shrink-0 border-2 border-[#0a0a0a] bg-white px-3 py-2 font-mono text-xs font-bold uppercase tracking-[.06em] text-[#0a0a0a] transition hover:bg-[#ffe600]"
             >
               Generate
             </button>
           </div>
         </label>
 
-        {error && <p className="text-sm text-red-600">{error}</p>}
+        {error && <p className="text-sm font-bold text-red-600">{error}</p>}
 
         <div className="flex justify-end gap-2 pt-2">
           <button
             type="button"
             onClick={onClose}
-            className="rounded-lg px-4 py-2 text-sm text-stone-600 transition hover:bg-stone-100"
+            className="border-2 border-[#0a0a0a] bg-white px-4 py-2 font-mono text-xs font-bold uppercase tracking-[.06em] text-[#0a0a0a] transition hover:bg-[#0a0a0a] hover:text-[#ffe600]"
           >
             Cancel
           </button>
           <button
             type="submit"
             disabled={busy || !canSubmit}
-            className="rounded-lg bg-stone-900 px-4 py-2 text-sm font-medium text-white transition enabled:hover:bg-stone-700 disabled:opacity-50"
+            className="border-2 border-[#0a0a0a] bg-[#0a0a0a] px-4 py-2 font-mono text-xs font-bold uppercase tracking-[.06em] text-[#ffe600] transition enabled:hover:bg-[#ffe600] enabled:hover:text-[#0a0a0a] disabled:opacity-50"
           >
             {busy ? "Creating…" : "Create student"}
           </button>
@@ -470,7 +480,7 @@ function CredentialModal({
         Give {credential.reset ? "them" : "the student"} these credentials — the
         password <strong>won&apos;t be shown again</strong>:
       </p>
-      <div className="mt-4 space-y-2 rounded-lg bg-stone-50 p-4">
+      <div className="mt-4 space-y-2 border-2 border-[#0a0a0a] bg-[#fffbd6] p-4">
         <CopyRow label="Username" value={credential.username} />
         <CopyRow label="Password" value={credential.password} />
       </div>
@@ -478,7 +488,7 @@ function CredentialModal({
         <button
           type="button"
           onClick={onClose}
-          className="rounded-lg bg-stone-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-stone-700"
+          className="border-2 border-[#0a0a0a] bg-[#0a0a0a] px-4 py-2 font-mono text-xs font-bold uppercase tracking-[.06em] text-[#ffe600] transition hover:bg-[#ffe600] hover:text-[#0a0a0a]"
         >
           Done
         </button>
@@ -500,13 +510,15 @@ function CopyRow({ label, value }: { label: string; value: string }) {
   }
   return (
     <div className="flex items-center justify-between gap-3">
-      <span className="text-xs font-medium text-stone-500">{label}</span>
+      <span className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-500">
+        {label}
+      </span>
       <span className="flex items-center gap-2">
-        <code className="font-mono text-sm text-stone-900">{value}</code>
+        <code className="font-mono text-sm font-bold text-[#0a0a0a]">{value}</code>
         <button
           type="button"
           onClick={copy}
-          className="rounded border border-stone-300 px-2 py-0.5 text-xs text-stone-600 transition hover:bg-white"
+          className="border-2 border-[#0a0a0a] bg-white px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-[.06em] text-[#0a0a0a] transition hover:bg-[#ffe600]"
         >
           {copied ? "Copied" : "Copy"}
         </button>
@@ -540,19 +552,21 @@ function Modal({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-[#0a0a0a]/60 p-4"
       onClick={onClose}
     >
       <div
-        className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl"
+        className="w-full max-w-md border-[3px] border-[#0a0a0a] bg-white p-6 shadow-[8px_8px_0_#ffe600,8px_8px_0_3px_#0a0a0a]"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="mb-4 flex items-center justify-between">
-          <h2 className="font-serif text-xl font-bold text-stone-900">{title}</h2>
+          <h2 className="font-display text-xl font-normal uppercase text-[#0a0a0a]">
+            {title}
+          </h2>
           <button
             type="button"
             onClick={onClose}
-            className="text-stone-400 transition hover:text-stone-700"
+            className="px-1 text-stone-400 transition hover:bg-[#0a0a0a] hover:text-[#ffe600]"
             aria-label="Close"
           >
             ✕

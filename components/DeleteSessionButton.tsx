@@ -57,7 +57,7 @@ export default function DeleteSessionButton({
       type="button"
       onClick={handleDelete}
       disabled={busy}
-      className="shrink-0 font-medium text-red-600 hover:text-red-700 hover:underline disabled:opacity-50"
+      className="shrink-0 font-mono text-[11px] font-bold uppercase tracking-[.06em] text-red-600 underline decoration-2 underline-offset-2 hover:bg-red-600 hover:text-white disabled:opacity-50"
     >
       {busy ? "Deleting…" : "Delete"}
     </button>

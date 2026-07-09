@@ -17,8 +17,10 @@ export default async function StudentsPage() {
   if (!user) {
     return (
       <div>
-        <h1 className="font-serif text-3xl font-bold text-stone-900">Students</h1>
-        <p className="mt-4 rounded-lg bg-amber-50 px-4 py-3 text-sm text-amber-800">
+        <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
+          Students
+        </h1>
+        <p className="mt-4 border-[3px] border-[#0a0a0a] bg-[#ffe600] px-4 py-3 font-mono text-sm font-bold text-[#0a0a0a]">
           Please log in (top right) to manage your classroom.
         </p>
       </div>
@@ -30,10 +32,12 @@ export default async function StudentsPage() {
   if (!(await isAdmin(user))) {
     return (
       <div>
-        <h1 className="font-serif text-3xl font-bold text-stone-900">Students</h1>
-        <p className="mt-4 rounded-lg bg-stone-100 px-4 py-3 text-sm text-stone-600">
+        <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
+          Students
+        </h1>
+        <p className="mt-4 border-[3px] border-[#0a0a0a] bg-stone-100 px-4 py-3 font-mono text-sm text-stone-600">
           This page is for teachers. Your scores are on the{" "}
-          <a href="/admin" className="underline">
+          <a href="/admin" className="font-bold underline">
             Scores
           </a>{" "}
           page.
@@ -130,8 +134,10 @@ export default async function StudentsPage() {
 
   return (
     <div>
-      <h1 className="font-serif text-3xl font-bold text-stone-900">Manage students</h1>
-      <p className="mt-1 text-sm text-stone-500">
+      <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
+        Manage students
+      </h1>
+      <p className="mt-2 font-mono text-xs text-stone-500">
         Every classroom — your own and each teacher&apos;s. You manage your own;
         the others are view-only.
       </p>

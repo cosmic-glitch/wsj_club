@@ -73,19 +73,19 @@ export default function SessionAudio({ src }: { src: string }) {
           shows a clickable link the recipient can play — instead of a raw
           .webm/.mp4 attachment that shares poorly. Open it in a new tab, or copy
           it to share. */}
-      <div className="mt-2 flex items-center gap-4 text-sm font-medium">
+      <div className="mt-2 flex items-center gap-4">
         <a
           href={src}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sky-700 hover:text-sky-800 hover:underline"
+          className="font-mono text-[11px] font-bold uppercase tracking-[.06em] text-[#0a0a0a] underline decoration-2 underline-offset-2 hover:bg-[#ffe600]"
         >
           Open in new tab
         </a>
         <button
           type="button"
           onClick={copyLink}
-          className="text-sky-700 hover:text-sky-800 hover:underline"
+          className="font-mono text-[11px] font-bold uppercase tracking-[.06em] text-[#0a0a0a] underline decoration-2 underline-offset-2 hover:bg-[#ffe600]"
         >
           {copied ? "Copied!" : "Copy playback link"}
         </button>

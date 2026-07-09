@@ -19,11 +19,9 @@ export default function ClassroomTabs({ tabs }: { tabs: ClassroomTab[] }) {
 
   return (
     <div>
-      <div
-        role="tablist"
-        aria-label="Classrooms"
-        className="flex flex-wrap gap-1 border-b border-stone-200"
-      >
+      {/* Boxed uppercase toggle buttons — the selected classroom is the
+          inverted (black/yellow) one, matching the site's button language. */}
+      <div role="tablist" aria-label="Classrooms" className="flex flex-wrap gap-2">
         {tabs.map((t, i) => {
           const selected = i === active;
           return (
@@ -33,10 +31,10 @@ export default function ClassroomTabs({ tabs }: { tabs: ClassroomTab[] }) {
               role="tab"
               aria-selected={selected}
               onClick={() => setActive(i)}
-              className={`-mb-px rounded-t-lg border-b-2 px-4 py-2 text-sm font-medium transition ${
+              className={`border-2 border-[#0a0a0a] px-4 py-2 font-mono text-xs font-bold uppercase tracking-[.06em] transition ${
                 selected
-                  ? "border-stone-900 text-stone-900"
-                  : "border-transparent text-stone-500 hover:border-stone-300 hover:text-stone-800"
+                  ? "bg-[#0a0a0a] text-[#ffe600]"
+                  : "bg-white text-[#0a0a0a] hover:bg-[#ffe600]"
               }`}
             >
               {t.label}

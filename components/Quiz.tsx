@@ -3,6 +3,10 @@
 import { useState } from "react";
 import type { QuizQuestion } from "@/lib/content";
 
+// The interactive self-quiz, in the site's brutalist language: square black
+// borders, mono uppercase labels, the yellow #ffe600 accent for the picked
+// (and, after submit, correct) option. Right/wrong keep the semantic
+// emerald/red hues so the feedback stays instantly readable for kids.
 export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
   // answers[i] = the option index the student picked for question i (or null)
   const [answers, setAnswers] = useState<(number | null)[]>(
@@ -35,12 +39,9 @@ export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
       {questions.map((q, qi) => {
         const picked = answers[qi];
         return (
-          <div
-            key={qi}
-            className="rounded-xl border border-stone-200 bg-white p-5 shadow-sm"
-          >
-            <p className="font-medium text-stone-900">
-              <span className="mr-2 text-stone-400">{qi + 1}.</span>
+          <div key={qi} className="border-[3px] border-[#0a0a0a] bg-white p-5">
+            <p className="font-bold text-[#0a0a0a]">
+              <span className="mr-2 font-mono text-stone-400">{qi + 1}.</span>
               {q.question}
             </p>
             <div className="mt-4 grid gap-2">
@@ -48,17 +49,17 @@ export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
                 const isPicked = picked === oi;
                 const isCorrect = oi === q.answerIndex;
                 let cls =
-                  "flex items-start gap-3 rounded-lg border px-4 py-3 text-left text-sm transition";
+                  "flex items-start gap-3 border-2 px-4 py-3 text-left text-sm transition";
                 if (!submitted) {
                   cls += isPicked
-                    ? " border-sky-500 bg-sky-50 text-stone-900"
-                    : " border-stone-200 bg-white text-stone-700 hover:border-stone-300 hover:bg-stone-50";
+                    ? " border-[#0a0a0a] bg-[#ffe600] text-[#0a0a0a]"
+                    : " border-[#0a0a0a] bg-white text-stone-800 hover:bg-[#0a0a0a] hover:text-white";
                 } else if (isCorrect) {
-                  cls += " border-emerald-500 bg-emerald-50 text-emerald-900";
+                  cls += " border-emerald-600 bg-emerald-50 text-emerald-900";
                 } else if (isPicked) {
-                  cls += " border-red-400 bg-red-50 text-red-900";
+                  cls += " border-red-500 bg-red-50 text-red-900";
                 } else {
-                  cls += " border-stone-200 bg-white text-stone-500";
+                  cls += " border-stone-300 bg-white text-stone-400";
                 }
                 return (
                   <button
@@ -68,7 +69,9 @@ export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
                     disabled={submitted}
                     className={cls}
                   >
-                    <span className="mt-0.5 font-semibold text-stone-400">
+                    {/* opacity (not a fixed grey) so the letter stays legible
+                        when the row hover-inverts to black. */}
+                    <span className="mt-0.5 font-mono font-bold opacity-50">
                       {String.fromCharCode(65 + oi)}
                     </span>
                     <span>{opt}</span>
@@ -77,9 +80,9 @@ export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
               })}
             </div>
             {submitted && (
-              <p className="mt-3 rounded-lg bg-stone-50 px-4 py-3 text-sm text-stone-600">
-                <span className="font-semibold text-stone-800">
-                  {picked === q.answerIndex ? "Correct. " : "Not quite. "}
+              <p className="mt-3 border-l-[5px] border-[#0a0a0a] bg-stone-100 px-4 py-3 text-sm text-stone-700">
+                <span className="mr-1.5 font-mono text-[11px] font-bold uppercase tracking-[.08em] text-[#0a0a0a]">
+                  {picked === q.answerIndex ? "Correct." : "Not quite."}
                 </span>
                 {q.explanation}
               </p>
@@ -88,13 +91,13 @@ export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
         );
       })}
 
-      <div className="flex items-center gap-4">
+      <div className="flex flex-wrap items-center gap-4">
         {!submitted ? (
           <button
             type="button"
             onClick={() => setSubmitted(true)}
             disabled={answeredCount < questions.length}
-            className="rounded-lg bg-stone-900 px-5 py-2.5 text-sm font-medium text-white transition enabled:hover:bg-stone-700 disabled:cursor-not-allowed disabled:opacity-40"
+            className="border-2 border-[#0a0a0a] bg-[#0a0a0a] px-5 py-2.5 font-mono text-sm font-bold uppercase tracking-[.08em] text-[#ffe600] transition enabled:hover:bg-[#ffe600] enabled:hover:text-[#0a0a0a] disabled:cursor-not-allowed disabled:opacity-40"
           >
             {answeredCount < questions.length
               ? `Answer all ${questions.length} questions (${answeredCount}/${questions.length})`
@@ -102,13 +105,16 @@ export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
           </button>
         ) : (
           <>
-            <p className="text-lg font-semibold text-stone-900">
-              You scored {score} / {questions.length}
+            <p className="font-display text-2xl font-normal uppercase text-[#0a0a0a]">
+              You scored{" "}
+              <span className="bg-[#ffe600] px-1.5">
+                {score} / {questions.length}
+              </span>
             </p>
             <button
               type="button"
               onClick={reset}
-              className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50"
+              className="border-2 border-[#0a0a0a] bg-white px-4 py-2 font-mono text-sm font-bold uppercase tracking-[.08em] text-[#0a0a0a] transition hover:bg-[#0a0a0a] hover:text-white"
             >
               Try again
             </button>

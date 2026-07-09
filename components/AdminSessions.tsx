@@ -147,10 +147,10 @@ export default function AdminSessions({
       {/* One row per article. Three columns: date · title · the sequenced list
           of every attempt on that article. overflow-x-auto is a safety net so a
           narrow screen scrolls rather than squashing the columns. */}
-      <div className="mt-6 overflow-x-auto rounded-xl border border-stone-200 bg-white shadow-sm">
+      <div className="mt-6 overflow-x-auto border-[3px] border-[#0a0a0a] bg-white">
         <table className="w-full border-collapse text-sm">
           <thead>
-            <tr className="border-b border-stone-200 bg-stone-50 text-left text-xs font-semibold uppercase tracking-wide text-stone-500">
+            <tr className="bg-[#0a0a0a] text-left font-mono text-[10px] font-bold uppercase tracking-[.12em] text-white">
               <th className="px-3 py-2.5 font-semibold">Date</th>
               <th className="px-3 py-2.5 font-semibold">Article</th>
               {/* The "Attempts" cell holds a sub-grid (one line per attempt). These
@@ -174,10 +174,10 @@ export default function AdminSessions({
               </th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-stone-200">
+          <tbody className="divide-y-2 divide-[#0a0a0a]">
             {groups.map((g) => (
               <tr key={g.date} className="align-top">
-                <td className="whitespace-nowrap px-3 py-3 font-serif text-sm font-bold text-stone-500">
+                <td className="whitespace-nowrap px-3 py-3 font-mono text-xs font-bold uppercase tracking-[.04em] text-stone-500">
                   {g.dateLabel}
                 </td>
                 {/* [overflow-wrap:anywhere] lets a very long title word (e.g.
@@ -187,7 +187,7 @@ export default function AdminSessions({
                 <td className="px-3 py-3 [overflow-wrap:anywhere]">
                   <Link
                     href={`/reading/${g.date}`}
-                    className="font-medium text-stone-900 hover:text-sky-700 hover:underline"
+                    className="font-bold text-[#0a0a0a] hover:bg-[#ffe600]"
                   >
                     {g.title}
                   </Link>
@@ -220,10 +220,10 @@ export default function AdminSessions({
                           <span className="w-20 shrink-0 truncate text-right font-medium text-stone-800">
                             {s.studentName}
                           </span>
-                          <span className="w-10 shrink-0 whitespace-nowrap text-right font-semibold text-stone-800">
+                          <span className="w-10 shrink-0 whitespace-nowrap text-right font-mono font-bold text-[#0a0a0a]">
                             {s.inProgress ? "—" : fmtScore(score)}
                           </span>
-                          <span className="w-8 shrink-0 whitespace-nowrap text-right tabular-nums text-stone-500">
+                          <span className="w-8 shrink-0 whitespace-nowrap text-right font-mono text-xs tabular-nums text-stone-500">
                             {s.inProgress ? "—" : fmtDuration(s.durationMs)}
                           </span>
                           <span className="w-32 shrink-0 whitespace-nowrap text-right text-stone-500">
@@ -237,24 +237,24 @@ export default function AdminSessions({
                               badge never forces the row to a 2nd line. */}
                           <span className="flex w-40 shrink-0 items-center justify-end gap-2">
                             {s.inProgress && (
-                              <span className="mr-auto shrink-0 rounded-full bg-sky-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-sky-700">
+                              <span className="mr-auto shrink-0 bg-sky-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-sky-700">
                                 in progress
                               </span>
                             )}
                             {s.partial && !s.inProgress && (
-                              <span className="mr-auto shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
+                              <span className="mr-auto shrink-0 bg-amber-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-amber-700">
                                 partial
                               </span>
                             )}
                             {s.cancelled && (
-                              <span className="mr-auto shrink-0 rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
+                              <span className="mr-auto shrink-0 bg-stone-200 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-stone-600">
                                 cancelled
                               </span>
                             )}
                             {ownsInProgress ? (
                               <Link
                                 href={`/?resume=${s.date}`}
-                                className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
+                                className="font-mono text-[11px] font-bold uppercase tracking-[.06em] text-[#0a0a0a] underline decoration-2 underline-offset-2 hover:bg-[#ffe600]"
                               >
                                 Continue
                               </Link>
@@ -262,7 +262,7 @@ export default function AdminSessions({
                               <button
                                 type="button"
                                 onClick={() => setSession(s)}
-                                className="font-medium text-sky-700 hover:text-sky-800 hover:underline"
+                                className="font-mono text-[11px] font-bold uppercase tracking-[.06em] text-[#0a0a0a] underline decoration-2 underline-offset-2 hover:bg-[#ffe600]"
                               >
                                 Details
                               </button>
@@ -297,39 +297,39 @@ export default function AdminSessions({
           whole attempt: feedback, the recording, and the transcript together. */}
       {session && (
         <div
-          className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-stone-900/50 p-4 backdrop-blur-sm sm:p-6"
+          className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-[#0a0a0a]/60 p-4 sm:p-6"
           onClick={() => setSession(null)}
           role="dialog"
           aria-modal="true"
         >
           <div
-            className="my-4 w-full max-w-2xl rounded-2xl bg-white shadow-xl sm:my-8"
+            className="my-4 w-full max-w-2xl border-[3px] border-[#0a0a0a] bg-white shadow-[8px_8px_0_#ffe600,8px_8px_0_3px_#0a0a0a] sm:my-8"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header — who, what, when, and the score. */}
-            <div className="flex items-start justify-between gap-4 border-b border-stone-200 px-6 py-4">
+            <div className="flex items-start justify-between gap-4 border-b-2 border-[#0a0a0a] px-6 py-4">
               <div className="min-w-0">
                 <div className="flex items-baseline gap-2">
-                  <span className="font-serif text-xl font-bold text-stone-900">
+                  <span className="font-display text-xl font-normal uppercase text-[#0a0a0a]">
                     {session.studentName}
                   </span>
                   {session.report?.score && (
-                    <span className="text-xl font-bold text-sky-700">
+                    <span className="bg-[#ffe600] px-1.5 font-mono text-lg font-bold text-[#0a0a0a]">
                       {session.report.score}
                     </span>
                   )}
                   {session.inProgress && (
-                    <span className="rounded-full bg-sky-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-sky-700">
+                    <span className="bg-sky-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-sky-700">
                       in progress
                     </span>
                   )}
                   {session.partial && !session.inProgress && (
-                    <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
+                    <span className="bg-amber-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-amber-700">
                       partial
                     </span>
                   )}
                   {session.cancelled && (
-                    <span className="rounded-full bg-stone-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-stone-600">
+                    <span className="bg-stone-200 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-stone-600">
                       cancelled
                     </span>
                   )}
@@ -337,7 +337,7 @@ export default function AdminSessions({
                 <p className="mt-0.5 truncate text-sm text-stone-500">
                   <Link
                     href={`/reading/${session.date}`}
-                    className="hover:text-sky-700 hover:underline"
+                    className="hover:bg-[#ffe600] hover:text-[#0a0a0a]"
                   >
                     {session.title}
                   </Link>{" "}
@@ -348,7 +348,7 @@ export default function AdminSessions({
                 type="button"
                 onClick={() => setSession(null)}
                 aria-label="Close"
-                className="shrink-0 rounded-md px-2 py-1 text-lg leading-none text-stone-400 hover:bg-stone-100 hover:text-stone-700"
+                className="shrink-0 px-2 py-1 text-lg leading-none text-stone-400 hover:bg-[#0a0a0a] hover:text-[#ffe600]"
               >
                 ✕
               </button>
@@ -358,8 +358,8 @@ export default function AdminSessions({
                 then the three labeled sections Feedback · Recording · Transcript. */}
             <div className="max-h-[70vh] space-y-6 overflow-y-auto px-6 py-4">
               {session.inProgress && (
-                <div className="rounded-lg border border-sky-200 bg-sky-50 px-3 py-2 text-sm text-sky-800">
-                  <span className="font-semibold">In progress</span> — this quiz
+                <div className="border-2 border-sky-700 bg-sky-50 px-3 py-2 text-sm text-sky-800">
+                  <span className="font-bold">In progress</span> — this quiz
                   hasn’t been finished yet, so it isn’t graded. The transcript and
                   recording cover what’s been done so far.
                   {session.failure?.detail
@@ -369,16 +369,16 @@ export default function AdminSessions({
               )}
 
               {session.cancelled && (
-                <div className="rounded-lg border border-stone-200 bg-stone-100 px-3 py-2 text-sm text-stone-600">
-                  <span className="font-semibold">Cancelled attempt</span> — the
+                <div className="border-2 border-stone-400 bg-stone-100 px-3 py-2 text-sm text-stone-600">
+                  <span className="font-bold">Cancelled attempt</span> — the
                   student ended this quiz early, so it wasn’t graded; saved with
                   whatever was recorded up to that point.
                 </div>
               )}
 
               {session.partial && !session.inProgress && (
-                <div className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-800">
-                  <span className="font-semibold">Incomplete attempt</span>
+                <div className="border-2 border-amber-600 bg-amber-50 px-3 py-2 text-sm text-amber-800">
+                  <span className="font-bold">Incomplete attempt</span>
                   {session.failure?.reason ? ` — ${session.failure.reason}` : ""}.{" "}
                   {session.failure?.detail ||
                     "Ended because of (or was abandoned after) a failure; saved with whatever was recorded."}
@@ -389,7 +389,7 @@ export default function AdminSessions({
                   so the teacher gets to SEE that an attempt didn't run in one
                   sitting. Teacher-only (canDelete is the teacher signal). */}
               {canDelete && (session.resumeCount ?? 0) > 0 && (
-                <p className="text-xs text-stone-500">
+                <p className="font-mono text-xs text-stone-500">
                   Resumed {session.resumeCount} time
                   {session.resumeCount === 1 ? "" : "s"} — this attempt was paused
                   and continued later.
@@ -398,7 +398,7 @@ export default function AdminSessions({
 
               {/* Feedback */}
               <div>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-stone-500">
+                <p className="mb-2 font-mono text-[10px] font-bold uppercase tracking-[.14em] text-[#0a0a0a]">
                   Feedback
                 </p>
                 {session.inProgress ? (
@@ -420,7 +420,7 @@ export default function AdminSessions({
                         {session.report?.strengths &&
                           session.report.strengths.length > 0 && (
                             <div>
-                              <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
+                              <p className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-emerald-700">
                                 Strengths
                               </p>
                               <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-700">
@@ -433,7 +433,7 @@ export default function AdminSessions({
                         {session.report?.gaps &&
                           session.report.gaps.length > 0 && (
                             <div>
-                              <p className="text-xs font-semibold uppercase tracking-wide text-amber-600">
+                              <p className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-amber-700">
                                 To review
                               </p>
                               <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-700">
@@ -455,7 +455,7 @@ export default function AdminSessions({
 
               {/* Recording */}
               <div>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-stone-500">
+                <p className="mb-2 font-mono text-[10px] font-bold uppercase tracking-[.14em] text-[#0a0a0a]">
                   Recording
                 </p>
                 {session.audioUrl ? (
@@ -469,7 +469,7 @@ export default function AdminSessions({
 
               {/* Transcript */}
               <div>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-stone-500">
+                <p className="mb-2 font-mono text-[10px] font-bold uppercase tracking-[.14em] text-[#0a0a0a]">
                   Transcript
                 </p>
                 {session.transcript && session.transcript.length > 0 ? (
@@ -479,8 +479,8 @@ export default function AdminSessions({
                         <span
                           className={
                             t.role === "tutor"
-                              ? "font-semibold text-sky-700"
-                              : "font-semibold text-stone-700"
+                              ? "bg-[#ffe600] px-1 font-bold text-[#0a0a0a]"
+                              : "font-bold text-stone-700"
                           }
                         >
                           {t.role === "tutor" ? "Tutor" : session.studentName}:{" "}
@@ -499,11 +499,11 @@ export default function AdminSessions({
 
             {/* Footer — this modal is view-only. Deleting an attempt is a single
                 action in the row's last column (teacher only), not here. */}
-            <div className="flex items-center justify-end gap-3 border-t border-stone-200 px-6 py-3">
+            <div className="flex items-center justify-end gap-3 border-t-2 border-[#0a0a0a] px-6 py-3">
               <button
                 type="button"
                 onClick={() => setSession(null)}
-                className="rounded-md border border-stone-200 px-3 py-1.5 text-sm font-medium text-stone-600 hover:bg-stone-50"
+                className="border-2 border-[#0a0a0a] bg-white px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-[.08em] text-[#0a0a0a] transition hover:bg-[#0a0a0a] hover:text-[#ffe600]"
               >
                 Close
               </button>

@@ -31,12 +31,14 @@ export default async function QuizPage({
 
   return (
     <article>
-      {/* Header — just the article name */}
-      <header>
-        <p className="text-xs font-semibold uppercase tracking-wide text-stone-400">
-          Self-quiz
+      {/* Header — the article name as a mini-masthead, matching the handout. */}
+      <header className="border-b-[5px] border-[#0a0a0a] pb-5">
+        <p>
+          <span className="inline-block bg-[#0a0a0a] px-2 py-1 font-mono text-[10px] font-bold uppercase tracking-[.2em] text-[#ffe600]">
+            Self-quiz
+          </span>
         </p>
-        <h1 className="mt-1 font-serif text-3xl font-bold leading-tight tracking-tight text-stone-900 sm:text-4xl">
+        <h1 className="mt-3 font-display text-[clamp(30px,6.5vw,48px)] font-normal uppercase leading-[1.05] tracking-[.01em] text-[#0a0a0a]">
           {reading.title}
         </h1>
       </header>

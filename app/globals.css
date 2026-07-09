@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #faf8f4;
-  --foreground: #1c1917;
+  /* Brutalist palette (site-wide): pure white canvas, near-black ink. The
+     accent is signal-yellow #ffe600, used inline in the components. */
+  --background: #ffffff;
+  --foreground: #0a0a0a;
 }
 
 @theme inline {
@@ -10,6 +12,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-serif: Georgia, "Times New Roman", serif;
+  /* font-mono → Space Mono (the UI/label face), font-display → Anton (the
+     big headline face). Both variables come from app/fonts.ts via <html>. */
+  --font-mono: var(--font-space-mono), ui-monospace, SFMono-Regular, monospace;
+  --font-display: var(--font-anton), ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
