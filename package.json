@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run check:skills",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:skills": "node scripts/check-skill-links.mjs"
   },
   "dependencies": {
     "@vercel/blob": "^2.4.0",
