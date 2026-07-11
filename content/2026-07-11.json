@@ -1,0 +1,122 @@
+{
+  "date": "2026-07-11",
+  "title": "We Know Simple Fluids Can Flow. Turns Out, Some Can Fracture.",
+  "articleUrl": "https://www.quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20260710/",
+  "voiceQuiz": true,
+  "source": "Quanta Magazine",
+  "vocab": [
+    {
+      "word": "viscous",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Thamires Lima… studies the properties of thick, viscous liquids — think honey or molasses.",
+      "inContext": "Here it describes liquids that are thick and gooey and resist flowing — honey, molasses, or the black hydrogen-and-carbon blend she was pulling on in the lab.",
+      "meaning": "Viscous means thick and sticky, so a fluid resists flowing. A fluid's 'viscosity' is how strongly it resists flow: high-viscosity fluids (syrup, honey) ooze slowly, while low-viscosity fluids (water) run fast.",
+      "examples": [
+        "The maple syrup was so viscous it took forever to spread across my pancakes.",
+        "Cold engine oil is viscous, which is one reason cars can be harder to start on a freezing morning."
+      ]
+    },
+    {
+      "word": "propagate",
+      "partOfSpeech": "verb",
+      "articleQuote": "…that crack can propagate as fast as physics will allow it.",
+      "inContext": "Here it means the crack spreads and races outward through the fluid from the spot where it first started.",
+      "meaning": "To propagate is to spread or travel outward from a source. It's used for lots of things that move through something else — cracks, waves, sound, signals, rumors, even plants (gardeners 'propagate' one plant into many).",
+      "examples": [
+        "One kid's yawn propagated across the whole classroom within seconds.",
+        "A sound wave propagates through warm air a little faster than through cold air."
+      ]
+    },
+    {
+      "word": "dissipate",
+      "partOfSpeech": "verb",
+      "articleQuote": "That has something to do with the way that the material is able to dissipate energy.",
+      "inContext": "Here it means to spread energy out and use it up: a complex fluid's long, tangled molecules soak up and scatter the crack's energy, which slows the crack down.",
+      "meaning": "To dissipate is to scatter, spread thin, and fade away — especially energy, heat, or a crowd. When something dissipates, it disperses until little is left concentrated in one place.",
+      "examples": [
+        "Once the game ended, the crowd outside the stadium quickly dissipated.",
+        "A good running shoe is built to dissipate the shock of each stride so your knees don't absorb all of it."
+      ]
+    },
+    {
+      "word": "cohesion",
+      "partOfSpeech": "noun",
+      "articleQuote": "If you think about what holds a fluid together, it's cohesiveness, or the intermolecular interactions between the molecules.",
+      "inContext": "Here cohesion (the article calls it 'cohesiveness') is the pull between a fluid's own molecules that holds it together as one blob — the very bond you have to overcome to tear it apart.",
+      "meaning": "Cohesion is the force that makes the parts of one thing stick to each other. In physics it's molecules of the same substance attracting one another — which is why water beads into droplets. More broadly, a 'cohesive' team, essay, or plan is one whose parts hold together as a unified whole.",
+      "examples": [
+        "Water's cohesion is strong enough that a water strider can stand on the surface without sinking.",
+        "The coach praised the team's cohesion — they passed like they could read each other's minds."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Critical thresholds (tipping points)",
+      "articleQuote": "Once the solid is stressed past a critical point… the crack grows catastrophically, rapidly breaking the solid apart.",
+      "meaning": "Picture slowly leaning back in your chair. For a while nothing happens — lean a little more, a little more, still fine. Then you cross one invisible line and there's no gentle warning: you're suddenly on the floor. That invisible line is a critical threshold — a point where a system stops responding gradually and flips all at once.\n\nLots of the world works this way. As stress builds, a system quietly absorbs it and looks perfectly stable — right up until a tipping point, after which the change becomes self-feeding and races ahead. In the fracturing fluid, stretching just deforms it… until the stress passes a critical value, and then it becomes 'cheaper' for a crack to grow than for the material to hold together, so the crack tears through in a flash. Before the threshold: steady. After it: catastrophic, and often impossible to undo.\n\nYou can spot this same shape everywhere. A little more snow piles on a slope, a little more, and then one extra flake triggers an avalanche. A rumor reaches a few friends, then a few more, then suddenly the whole school knows. Heat water degree by degree and nothing dramatic happens — until 100°C, when it all breaks into a boil. The lesson worth carrying around: 'stable so far' does not mean 'stable forever,' because right near a threshold the smallest push can cause the biggest change."
+    },
+    {
+      "name": "Rate-dependence (how fast you push changes what happens)",
+      "articleQuote": "When pulled at 100 millimeters per second, a blend of hydrogen and carbon stretches. At 300 millimeters per second, the fluid breaks.",
+      "meaning": "Push a door slowly and it swings open; slam that same door and it can crack the frame. Same object, same direction of force — but changing the speed changed the outcome completely. Physicists call this rate-dependence: how fast you apply a force can matter as much as how hard.\n\nThe reason is that materials need time to rearrange and 'get out of the way' of a force. Give them time — push slowly — and they flow, stretch, or bend. Don't give them time — push fast — and they can't rearrange quickly enough, so the force piles up in one spot and they snap instead. That's exactly what happens to the fluid in the study: pulled slowly it stretches like taffy, but pulled fast it can't flow in time and it fractures like glass. The scientists even found the breaking stress rises with the 'strain rate' — how quickly the stuff is being stretched.\n\nThe classic example is Silly Putty: pull it slowly and it stretches into a long rope; yank it hard and it snaps in two. Water is the same — slip into a pool gently and you glide in, but belly-flop off the high board and it feels like smacking concrete, because you gave the water no time to move aside. So when you're sizing up how something will react, don't only ask how hard the force is — ask how fast it arrives."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What surprised scientists about the 'simple fluid' Thamires Lima was stretching in the lab?",
+      "options": [
+        "It changed color as it was pulled apart",
+        "It fractured like a brittle solid, even though simple fluids were expected to just flow",
+        "It refused to move no matter how hard the machine pulled",
+        "It instantly turned into a gas"
+      ],
+      "answerIndex": 1,
+      "explanation": "Simple, non-elastic fluids were thought to only flow under stress, so watching one crack like glass overturned a long-held assumption."
+    },
+    {
+      "question": "A liquid described as 'viscous' is one that…",
+      "options": [
+        "glows in the dark",
+        "flows quickly and easily, like water",
+        "is thick and resists flowing, like honey",
+        "is always frozen solid"
+      ],
+      "answerIndex": 2,
+      "explanation": "Viscous means thick and resistant to flow — honey and molasses are viscous, while water is not."
+    },
+    {
+      "question": "The article says a fluid is held together by its 'cohesiveness.' Cohesion is best described as…",
+      "options": [
+        "the force that makes the parts of one substance stick to each other",
+        "the speed at which a liquid freezes",
+        "the tendency of a liquid to evaporate",
+        "the color a substance turns under stress"
+      ],
+      "answerIndex": 0,
+      "explanation": "Cohesion is the attraction that holds a substance's own parts together — like water molecules pulling on one another to form a droplet."
+    },
+    {
+      "question": "The same hydrogen-carbon fluid stretches when pulled at 100 mm/s but breaks when pulled at 300 mm/s. This best illustrates the idea that…",
+      "options": [
+        "the fluid gets colder the faster you pull it",
+        "faster pulling always makes any material stretch more",
+        "the machine must have malfunctioned during the fast pull",
+        "how fast a force is applied can change how a material responds"
+      ],
+      "answerIndex": 3,
+      "explanation": "This is rate-dependence: pulled slowly the fluid has time to flow, but pulled fast it can't rearrange in time and fractures."
+    },
+    {
+      "question": "The article says that once a solid is stressed 'past a critical point,' the crack 'grows catastrophically.' This is an example of a…",
+      "options": [
+        "slow, steady change that is easy to reverse",
+        "chemical reaction that gives off light",
+        "critical threshold, where a system stays stable until a limit is crossed and then changes all at once",
+        "problem that only ever happens inside laboratories"
+      ],
+      "answerIndex": 2,
+      "explanation": "A critical threshold (tipping point) is when a system holds steady until a limit is crossed, then changes suddenly — like an avalanche or a snapping rope."
+    }
+  ]
+}
