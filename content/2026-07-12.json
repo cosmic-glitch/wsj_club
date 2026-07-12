@@ -1,0 +1,112 @@
+{
+  "date": "2026-07-12",
+  "title": "Can AI Make Better Drugs? Not on Wall Street’s Timeline",
+  "articleUrl": "https://www.wsj.com/tech/ai/can-ai-make-better-drugs-not-on-wall-streets-timeline-98a50d9d",
+  "pdfUrl": "/pdfs/2026-07-12.pdf",
+  "voiceQuiz": true,
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "tangible",
+      "partOfSpeech": "adjective",
+      "articleQuote": "In the lab, AI is already delivering a tangible leap in efficiency.",
+      "inContext": "The improvement is real enough to observe and measure: AI can already help researchers examine possible drug targets and molecules more efficiently.",
+      "meaning": "Real, concrete, or clearly noticeable rather than merely imagined, theoretical, or promised.",
+      "examples": [
+        "After weeks of practice, Maya saw tangible progress when her mile time dropped by forty seconds.",
+        "The student council wanted tangible results from the fundraiser, such as twenty new library books, rather than vague promises of improvement."
+      ]
+    },
+    {
+      "word": "dilemma",
+      "partOfSpeech": "noun",
+      "articleQuote": "For investors, that creates a dilemma.",
+      "inContext": "Investors must decide whether to back drug companies because AI may transform their research someday, even though successful new medicines have not yet proven that promise today.",
+      "meaning": "A situation in which a person must choose between difficult alternatives, especially when each choice carries a meaningful drawback or risk.",
+      "examples": [
+        "Jordan faced a dilemma: attend an important team practice or study for the exam that could raise his final grade.",
+        "The school faced a budget dilemma because expanding the robotics club would leave less money for music and theater."
+      ]
+    },
+    {
+      "word": "renaissance",
+      "partOfSpeech": "noun",
+      "articleQuote": "AI might be part of a broader biotech renaissance.",
+      "inContext": "AI could contribute to a new period of rapid creativity and progress in biotechnology after years in which developing medicines became slower and more expensive.",
+      "meaning": "A renewed period of energetic activity, creativity, growth, or achievement in a field that had previously slowed or declined.",
+      "examples": [
+        "Affordable recording software helped produce a renaissance in independent music made outside major studios.",
+        "The renovated courts sparked a renaissance in neighborhood basketball, bringing back leagues that had disappeared years earlier."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Feedback loops",
+      "articleQuote": "AI models predict promising targets and molecules, researchers test those predictions experimentally, and the resulting data are fed back into the models to improve their next round of predictions.",
+      "meaning": "Imagine practicing free throws with your eyes closed. You can take hundreds of shots, but without seeing where they land, you do not know how to adjust. Open your eyes and a loop begins: shoot, observe, correct, then shoot again. Each result becomes information for the next attempt.\n\nThat repeating cycle is a feedback loop. In the article’s “lab in the loop,” an AI model makes a prediction, scientists test it in the physical world, and the test results become new data for improving the model. The model is not simply handed a textbook once and declared finished; experiment and prediction keep teaching each other.\n\nA good feedback loop needs information that is accurate, relevant and timely. A basketball player improves faster when a coach immediately explains why a shot missed than when the player receives a vague score a month later. Businesses work the same way: a bakery that tracks which pastries remain unsold each evening can adjust tomorrow’s batch. But bad feedback can train a system in the wrong direction. If online clicks are treated as the only measure of a good article, a publisher may learn to produce sensational headlines rather than trustworthy journalism. The loop optimizes whatever signal it receives, so choosing the right signal matters as much as looping quickly."
+    },
+    {
+      "name": "Bottlenecks",
+      "articleQuote": "AI will bend the curve by attacking multiple bottlenecks at once to boost a drug’s clinical probability of success.",
+      "meaning": "Turn a full water bottle upside down: all the water must squeeze through the narrow neck, so that small opening controls how fast the entire bottle empties. A bottleneck is the stage whose limited capacity holds back the whole system.\n\nDrug development is a chain. Researchers choose a possible target, search for a molecule, test it in cells and animals, run human trials, and seek approval. AI may make the early search dramatically faster. But if human trials remain slow, expensive and likely to fail, the number of successful medicines may barely change. Making a non-bottleneck faster can create a larger pile waiting at the true bottleneck rather than improving the final result.\n\nThis idea is practical anywhere work moves through stages. Suppose four students are producing a weekly video: one researches in an hour, one writes in an hour, one records in an hour, but editing takes eight hours. Buying the researcher a faster laptop will not publish the video sooner; editing is the bottleneck. If editing is improved, another stage may then become the slowest. That is why effective managers repeatedly ask, “What is limiting the final outcome now?” rather than trying to make every visible activity faster."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the article’s central reason for caution about AI-assisted drug discovery?",
+      "options": [
+        "AI cannot examine biological information as broadly as a human scientist can.",
+        "Faster discovery work has not yet clearly produced more successful medicines per research dollar.",
+        "Pharmaceutical companies have refused to invest in computing power or research platforms.",
+        "AI-designed medicines are legally prohibited from entering human trials."
+      ],
+      "answerIndex": 1,
+      "explanation": "AI is making parts of laboratory research more efficient, but the final economic measure—successful drugs produced from the money invested—has not yet clearly improved."
+    },
+    {
+      "question": "Why does AI’s promise create a dilemma for investors?",
+      "options": [
+        "They must choose between promising future gains and a lack of proven improvement in drug-development results today.",
+        "They must decide whether computers or humans should be legally allowed to own pharmaceutical stocks.",
+        "They know AI has already made drug development profitable but are unsure whether patients want new medicines.",
+        "They must choose one pharmaceutical company because investment funds cannot own shares in several companies."
+      ],
+      "answerIndex": 0,
+      "explanation": "Investors see potentially enormous future value but do not yet have evidence that AI has improved the result that matters most."
+    },
+    {
+      "question": "Which sequence is the clearest example of the article’s scientific feedback loop?",
+      "options": [
+        "A model makes a prediction, researchers test it, and the results improve the model’s next prediction.",
+        "Researchers publish a prediction and repeat it until other scientists accept it.",
+        "A company buys faster computers and assumes every prediction will therefore be correct.",
+        "Scientists collect more data but prevent the model from changing in response to it."
+      ],
+      "answerIndex": 0,
+      "explanation": "A feedback loop turns the result of one attempt into information that improves the next attempt."
+    },
+    {
+      "question": "A school newspaper writes articles quickly, but one editor needs three days to approve every issue. Which change most directly addresses the bottleneck?",
+      "options": [
+        "Give reporters software that lets them draft articles even faster.",
+        "Ask photographers to submit twice as many pictures.",
+        "Create a faster approval process or add another qualified editor.",
+        "Increase the number of story ideas discussed at each meeting."
+      ],
+      "answerIndex": 2,
+      "explanation": "Approval is the narrow stage limiting publication speed, so increasing capacity there improves the system’s final output."
+    },
+    {
+      "question": "Which development would be the strongest tangible evidence that AI is changing the economics of drug development?",
+      "options": [
+        "AI companies release more impressive demonstrations of molecule-screening software.",
+        "Scientists use AI to generate a much larger number of possible research ideas.",
+        "Drugmakers spend more money advertising that they use AI in their laboratories.",
+        "More safe and effective medicines reach patients for each dollar and year invested in research."
+      ],
+      "answerIndex": 3,
+      "explanation": "A measurable improvement in successful medicines per unit of time and money would be concrete evidence at the final-outcome level."
+    }
+  ]
+}
