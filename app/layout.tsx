@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { AuthProvider } from "@/components/AuthProvider";
 import SiteHeader from "@/components/SiteHeader";
 import { anton, spaceMono } from "./fonts";
@@ -46,6 +47,7 @@ export default function RootLayout({
             Wall Street Journal
           </footer>
         </AuthProvider>
+        <Analytics />
       </body>
     </html>
   );
