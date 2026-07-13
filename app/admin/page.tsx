@@ -159,7 +159,23 @@ export default async function AdminPage() {
     ? (await listTeachers()).filter((t) => t.username !== user)
     : [];
 
-  if (others.length === 0) {
+  // Another teacher's classroom with no recorded sessions gets no tab at all —
+  // an empty panel is just noise here (the own classroom keeps its empty state).
+  const otherTabs = (
+    await Promise.all(
+      others.map(async (t): Promise<ClassroomTab | null> => {
+        const groups = await classroomGroups(t.username);
+        if (groups.length === 0) return null;
+        return {
+          key: t.username,
+          label: `${t.displayName}’s classroom`,
+          content: classroomPanel(groups, false, user),
+        };
+      })
+    )
+  ).filter((t): t is ClassroomTab => t !== null);
+
+  if (otherTabs.length === 0) {
     return (
       <div>
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
@@ -176,13 +192,6 @@ export default async function AdminPage() {
 
   // Owner + other teachers → one tab per classroom (own first, deletable; each
   // other teacher's read-only).
-  const otherTabs = await Promise.all(
-    others.map(async (t) => ({
-      key: t.username,
-      label: `${t.displayName}’s classroom`,
-      content: classroomPanel(await classroomGroups(t.username), false, user),
-    }))
-  );
   const tabs: ClassroomTab[] = [
     {
       key: user,
