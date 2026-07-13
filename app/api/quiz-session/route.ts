@@ -1,15 +1,18 @@
 import { del } from "@vercel/blob";
-import { currentUser, isAdmin } from "@/lib/auth";
+import { currentUser, isAdmin, isOwner } from "@/lib/auth";
 import { listStudents } from "@/lib/users";
 
 /**
- * Delete a saved voice-quiz session (teacher-only, own classroom only).
+ * Delete a saved voice-quiz session.
  *
  * The admin page passes the blob URL of the session JSON plus, when present, the
  * audio recording's URL — both are deleted. Two guards: the URLs must be under
  * the `quiz-sessions/` prefix (so a stray/forged request can't delete unrelated
- * blobs), AND the session must belong to the calling teacher's classroom (so one
- * teacher can't delete another classroom's attempt with a hand-crafted URL).
+ * blobs), AND — for a regular teacher — the session must belong to their own
+ * classroom (so one teacher can't delete another classroom's attempt with a
+ * hand-crafted URL). The OWNER is exempt from the classroom check: they may
+ * delete ANY classroom's attempt (Delete is owner-only in the UI, and the owner
+ * curates every classroom's Scores).
  */
 export async function DELETE(request: Request) {
   const user = await currentUser();
@@ -42,28 +45,33 @@ export async function DELETE(request: Request) {
     return Response.json({ error: "Nothing to delete." }, { status: 400 });
   }
 
-  // Verify the session belongs to the calling teacher's classroom before
-  // deleting. Fetch the session JSON and check its teacherId / owning student;
-  // fail closed if it can't be read or doesn't belong to the caller. (The owner
-  // isn't exempt — it manages its own students only.)
-  try {
-    const res = await fetch(sessionUrl, { cache: "no-store" });
-    if (!res.ok) throw new Error(`fetch ${res.status}`);
-    const session = (await res.json()) as {
-      teacherId?: string;
-      loginUser?: string;
-      studentName?: string;
-    };
-    const owner = session.loginUser ?? session.studentName ?? "";
-    const mine = new Set((await listStudents(user!)).map((s) => s.username));
-    const allowed =
-      session.teacherId === user || owner === user || mine.has(owner);
-    if (!allowed) {
-      return Response.json({ error: "Not authorized." }, { status: 403 });
+  // The owner may delete ANY classroom's attempt, so it skips the ownership
+  // check entirely. A regular teacher must own the session's classroom: fetch the
+  // session JSON and check its teacherId / owning student, failing closed if it
+  // can't be read or doesn't belong to the caller.
+  if (!isOwner(user)) {
+    try {
+      const res = await fetch(sessionUrl, { cache: "no-store" });
+      if (!res.ok) throw new Error(`fetch ${res.status}`);
+      const session = (await res.json()) as {
+        teacherId?: string;
+        loginUser?: string;
+        studentName?: string;
+      };
+      const owner = session.loginUser ?? session.studentName ?? "";
+      const mine = new Set((await listStudents(user!)).map((s) => s.username));
+      const allowed =
+        session.teacherId === user || owner === user || mine.has(owner);
+      if (!allowed) {
+        return Response.json({ error: "Not authorized." }, { status: 403 });
+      }
+    } catch (err) {
+      console.error("Could not verify session ownership for delete:", err);
+      return Response.json(
+        { error: "Could not verify session." },
+        { status: 400 }
+      );
     }
-  } catch (err) {
-    console.error("Could not verify session ownership for delete:", err);
-    return Response.json({ error: "Could not verify session." }, { status: 400 });
   }
 
   try {

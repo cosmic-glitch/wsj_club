@@ -164,7 +164,7 @@ export default function AdminSessions({
                   below, and since they're in the same table column they line up.
                   Data columns are right-aligned to match the values; Details holds
                   a single link that opens the combined detail modal, then a final
-                  Delete column (teacher only). The sub-columns are kept tight and
+                  Delete column (owner only). The sub-columns are kept tight and
                   the admin route widens the page (app/admin/layout.tsx) so the
                   whole line — through the last Delete column — fits without
                   clipping on desktop. */}
@@ -275,7 +275,7 @@ export default function AdminSessions({
                             )}
                           </span>
                           {/* Delete is the LAST column — a single per-attempt
-                              action (teacher only), right-aligned in its own
+                              action (owner only), right-aligned in its own
                               fixed-width slot so it lines up down the list and is
                               never pushed off the right edge on desktop. */}
                           {canDelete && (
@@ -505,7 +505,7 @@ export default function AdminSessions({
             </div>
 
             {/* Footer — this modal is view-only. Deleting an attempt is a single
-                action in the row's last column (teacher only), not here. */}
+                action in the row's last column (owner only), not here. */}
             <div className="flex items-center justify-end gap-3 border-t-2 border-[#0a0a0a] px-6 py-3">
               <button
                 type="button"

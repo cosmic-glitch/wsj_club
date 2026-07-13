@@ -155,8 +155,8 @@ export default async function AdminPage() {
   }
 
   // Build a scoped classroom (roster = the teacher's students + the teacher).
-  // Only the caller's OWN classroom is deletable; the owner views others read-
-  // only (the delete route ownership-checks regardless).
+  // Delete is owner-only and the owner may delete in ANY classroom, so every tab
+  // the owner sees is deletable; a regular teacher gets no Delete column at all.
   async function classroomGroups(teacher: string): Promise<ArticleGroup[]> {
     const roster = new Set((await listStudents(teacher)).map((s) => s.username));
     roster.add(teacher);
@@ -181,7 +181,9 @@ export default async function AdminPage() {
         return {
           key: t.username,
           label: `${t.displayName}’s classroom`,
-          content: classroomPanel(groups, false, user),
+          // Only the owner builds otherTabs, and the owner may delete any
+          // classroom → these tabs are deletable too.
+          content: classroomPanel(groups, true, user),
         };
       })
     )
@@ -202,8 +204,8 @@ export default async function AdminPage() {
     );
   }
 
-  // Owner + other teachers → one tab per classroom (own first, deletable; each
-  // other teacher's read-only).
+  // Owner + other teachers → one tab per classroom (own first). The owner may
+  // delete in any classroom, so every tab is deletable.
   const tabs: ClassroomTab[] = [
     {
       key: user,
