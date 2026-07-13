@@ -1,0 +1,116 @@
+{
+  "date": "2026-07-13",
+  "title": "The World Is Awful. The World Is Much Better. The World Can Be Much Better. by Max Roser",
+  "articleUrl": "https://ourworldindata.org/much-better-awful-can-be-better",
+  "voiceQuiz": true,
+  "source": "Our World in Data",
+  "vocab": [
+    {
+      "word": "repugnant",
+      "partOfSpeech": "adjective",
+      "articleQuote": "Solely communicating the progress that the world has achieved becomes unhelpful, or even repugnant, when it glosses over the problems people are facing.",
+      "inContext": "Cheering about global progress while ignoring people's real, ongoing suffering isn't just unhelpful — to the people living through those problems, it feels offensive, almost disgusting.",
+      "meaning": "Causing strong distaste, disgust, or moral offense; something that feels deeply wrong to you.",
+      "examples": [
+        "Bragging about your win while your opponent was being carried off the field injured struck everyone as repugnant.",
+        "She found the idea of copying a friend's essay repugnant, even though she was running out of time."
+      ]
+    },
+    {
+      "word": "complacent",
+      "partOfSpeech": "adjective",
+      "articleQuote": "If we only hear about progress and what is going right, we become complacent and lose sight of the problems the world is facing.",
+      "inContext": "If all we hear is good news, we get so comfortable and satisfied that we relax and stop noticing the serious problems that still need fixing.",
+      "meaning": "So pleased with how things are going that you stop being alert to dangers, weaknesses, or work still left to do; smugly comfortable.",
+      "examples": [
+        "After three easy wins, the team got complacent, barely practiced all week, and lost to the last-place team.",
+        "Don't get complacent just because the first semester went well — the material gets much harder in the spring."
+      ]
+    },
+    {
+      "word": "dire",
+      "partOfSpeech": "adjective",
+      "articleQuote": "But it is hard to imagine how dire living conditions once were, making it difficult to grasp just how much the world has changed.",
+      "inContext": "Living conditions in the past were desperately, dreadfully bad — for most of history about half of all children died — and the word signals just how extreme that reality was.",
+      "meaning": "Extremely serious, urgent, or dreadful; so bad that disaster is close.",
+      "examples": [
+        "The coach warned that with three starters injured, the team was in dire shape for the playoffs.",
+        "Weather forecasters issued dire warnings about the storm, urging everyone to stay off the roads."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Thinking in rates, not raw counts",
+      "articleQuote": "Globally, 4.4% of all children die before they are 15 years old.",
+      "meaning": "Which school has the bigger bullying problem: one with 50 reported cases a year, or one with 20? You actually can't say — not until you know the first school has 2,000 students and the second has 200. The raw count says 50 is worse; the rate says the small school's problem (10%) is four times worse than the big school's (2.5%). A count tells you how big something is; a rate tells you how likely it is. The question that turns one into the other is: \"out of how many?\"\n\nRoser uses both on purpose, because they do different jobs. The count — 5.9 million children dying every year, 11 every minute — shows the true size of the tragedy, why the word \"awful\" is deserved. But only the rate lets you compare across time and place: about 4.4% of children die today, versus roughly 50% for almost all of human history, versus 0.47% in the European Union. Same world, and the rate is what reveals both the enormous progress and the gap that remains. Whenever a headline throws a big scary number at you, ask for the denominator: out of how many?"
+    },
+    {
+      "name": "Negativity bias in news",
+      "articleQuote": "It is easier to scare people than to encourage them to achieve positive change, and there is always a large audience for bad news.",
+      "meaning": "A plane crash makes every front page; the 130,000 flights that landed safely that same day are never mentioned. That's not a conspiracy — it's what news is. News reports events: sudden things that happened today. But most of the world's improvement happens as slow trends — child mortality inching down a little bit every year for two centuries — and a trend is never \"today's story.\" There will never be a morning where \"child deaths fell slightly again\" is breaking news, even though over time it's one of the biggest stories in human history.\n\nAdd the human side — our brains are wired to notice threats more than good news, which is why scary headlines get more clicks — and you get a news diet that systematically makes the world look worse than the data says it is. The fix isn't to stop reading news. It's to remember what news actually measures: the day's most dramatic events, not the state of the world. For the state of the world, you need long-run data — the kind of charts this essay is built on."
+    },
+    {
+      "name": "The false dilemma (both things can be true)",
+      "articleQuote": "The world is awful. The world is much better. The world can be much better. All three statements are true at the same time.",
+      "meaning": "\"Either you're with us or against us.\" \"Either you love this school or you should leave.\" A false dilemma — also called a false dichotomy or the either/or fallacy — is presenting exactly two options as if they were the only ones, when reality has more options, or when the two can both be true at once. It works because two clean choices feel simpler than the messy truth, so people fall for it constantly — and use it on you constantly.\n\nThis essay's whole engine is escaping one. You're supposedly either an optimist (\"the world is fine\") or a pessimist (\"the world is doomed\"). Roser shows the choice is fake: \"the world is awful\" and \"the world is much better\" are both true, backed by the same data — and you need both halves to act wisely. Doom-only leaves you hopeless, progress-only leaves you complacent, and both leave you doing nothing. Held together, they say: change is possible, and still badly needed.\n\nTry spotting the pattern around you: a team can be talented and underperforming; a friend can be kind and wrong about something; a country can be improving and unjust. Whenever someone hands you an either/or, check whether it's really one."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Roser says \"all three statements are true at the same time.\" What is he arguing?",
+      "options": [
+        "People are entitled to different opinions about the state of the world",
+        "The world's problems and its progress are both real, and you must see both to believe useful change is possible",
+        "The world used to be awful but is now mostly fixed",
+        "News reports are usually accurate but incomplete"
+      ],
+      "answerIndex": 1,
+      "explanation": "The essay argues that doom-only and progress-only worldviews both paralyze us — only holding the truths together shows that change is possible and still needed."
+    },
+    {
+      "question": "The essay gives both numbers: 5.9 million child deaths per year, and a 4.4% child mortality rate. Why bother with the percentage?",
+      "options": [
+        "Percentages sound smaller and make the problem feel less alarming",
+        "The raw count is unreliable because many deaths go unreported",
+        "A rate lets you compare across time and place — today's 4.4% against history's ~50% and the EU's 0.47%",
+        "Scientists prefer percentages because they are easier to compute"
+      ],
+      "answerIndex": 2,
+      "explanation": "A count shows the size of the problem, but only a rate — deaths out of how many children — makes fair comparisons possible across eras and regions."
+    },
+    {
+      "question": "According to the essay, what would happen if children everywhere were as well off as children in the European Union?",
+      "options": [
+        "Child mortality would end completely",
+        "The global death toll would fall by about half",
+        "Nothing would change, because the EU's rate is still too high",
+        "About five million fewer children would die each year"
+      ],
+      "answerIndex": 3,
+      "explanation": "Applying the EU's 0.47% rate to the whole world would cut the yearly toll from 5.9 million to about 0.6 million — roughly five million fewer deaths."
+    },
+    {
+      "question": "After winning its first four games, a team skips practice, ignores its weak defense, and gets crushed in game five. Which word best describes the team?",
+      "options": [
+        "Repugnant",
+        "Complacent",
+        "Dire",
+        "Meticulous"
+      ],
+      "answerIndex": 1,
+      "explanation": "Complacent means so satisfied with how things are going that you stop being alert to weaknesses — exactly what the winning streak caused."
+    },
+    {
+      "question": "A friend says: \"The news is full of disasters — the world is obviously falling apart.\" Based on the essay, what mistake is the friend making?",
+      "options": [
+        "Judging the state of the world from dramatic daily events instead of long-run data",
+        "Trusting percentages when they should trust raw counts",
+        "Assuming the past was worse than it really was",
+        "Confusing the world's problems with its progress"
+      ],
+      "answerIndex": 0,
+      "explanation": "News reports sudden events, not slow trends, and bad news draws bigger audiences — so a news feed makes the world look worse than the long-run data shows."
+    }
+  ]
+}
