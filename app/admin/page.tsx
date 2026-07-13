@@ -73,8 +73,15 @@ function classroomPanel(
       </p>
     );
   }
+  // Every classroom panel is a teacher/owner viewing classroom data, so the
+  // teacher-only notes show; only the owner's own classroom is deletable.
   return (
-    <AdminSessions groups={groups} canDelete={canDelete} viewerUser={viewerUser} />
+    <AdminSessions
+      groups={groups}
+      canDelete={canDelete}
+      teacherView
+      viewerUser={viewerUser}
+    />
   );
 }
 
@@ -96,6 +103,11 @@ export default async function AdminPage() {
   }
 
   const admin = await isAdmin(user);
+  // Delete is OWNER-only: a regular teacher can view (and open Details on) their
+  // classroom's attempts but never delete one — only the owner gets a Delete
+  // column, and only in their own classroom (other teachers' tabs stay read-only,
+  // and the delete route ownership-checks regardless).
+  const owner = isOwner(user);
   const result = await loadSessions();
 
   if ("error" in result) {
@@ -155,7 +167,7 @@ export default async function AdminPage() {
 
   // The owner also sees every OTHER teacher's classroom; a regular teacher (and
   // a lone owner with no other teachers) sees just their own — no tab bar.
-  const others = isOwner(user)
+  const others = owner
     ? (await listTeachers()).filter((t) => t.username !== user)
     : [];
 
@@ -185,7 +197,7 @@ export default async function AdminPage() {
           Saved voice-quiz attempts by article — click Details on any attempt
           for its full report card, recording, and transcript.
         </p>
-        {classroomPanel(ownGroups, true, user)}
+        {classroomPanel(ownGroups, owner, user)}
       </div>
     );
   }
@@ -196,7 +208,7 @@ export default async function AdminPage() {
     {
       key: user,
       label: "My classroom",
-      content: classroomPanel(ownGroups, true, user),
+      content: classroomPanel(ownGroups, owner, user),
     },
     ...otherTabs,
   ];

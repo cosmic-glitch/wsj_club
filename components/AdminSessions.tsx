@@ -100,12 +100,18 @@ function fmtScore(score?: string): string {
 export default function AdminSessions({
   groups,
   canDelete,
+  teacherView = false,
   viewerUser,
 }: {
   groups: ArticleGroup[];
-  // Only the teacher (admin) may delete attempts; students see their own
-  // sessions read-only.
+  // Only the OWNER may delete attempts; a regular teacher views their classroom
+  // read-only (and a student sees their own sessions read-only too). Distinct
+  // from teacherView: a teacher sees the classroom but gets no Delete column.
   canDelete: boolean;
+  // The viewer is a teacher/owner looking at classroom data (not a student
+  // viewing their own scores). Gates teacher-only informational bits like the
+  // "Resumed N times" note — shown to any teacher, whether or not they can delete.
+  teacherView?: boolean;
   // The logged-in viewer — an in-progress attempt shows its Continue button
   // only to the user who owns it (a teacher sees it as informational).
   viewerUser?: string | null;
@@ -387,8 +393,9 @@ export default function AdminSessions({
 
               {/* Pause-anytime makes a mid-quiz look-something-up detour possible,
                   so the teacher gets to SEE that an attempt didn't run in one
-                  sitting. Teacher-only (canDelete is the teacher signal). */}
-              {canDelete && (session.resumeCount ?? 0) > 0 && (
+                  sitting. Teacher-only (teacherView, not canDelete — a regular
+                  teacher can't delete but should still see this). */}
+              {teacherView && (session.resumeCount ?? 0) > 0 && (
                 <p className="font-mono text-xs text-stone-500">
                   Resumed {session.resumeCount} time
                   {session.resumeCount === 1 ? "" : "s"} — this attempt was paused
