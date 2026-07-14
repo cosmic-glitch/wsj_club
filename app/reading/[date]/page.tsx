@@ -174,9 +174,11 @@ function VocabCard({
         <h3 className="font-display text-[22px] font-normal uppercase leading-none text-[#0a0a0a]">
           <span className="bg-[#ffe600] px-1.5 py-0.5">{word.word}</span>
         </h3>
-        <span className="font-mono text-[11px] font-bold uppercase tracking-[.1em] text-stone-500">
-          {word.partOfSpeech}
-        </span>
+        {word.pronunciation && (
+          <span className="font-mono text-[13px] tracking-[.02em] text-stone-500">
+            {word.pronunciation}
+          </span>
+        )}
         <PronounceButton
           text={word.word}
           label={word.word}

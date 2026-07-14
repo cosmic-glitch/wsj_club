@@ -9,6 +9,7 @@
     {
       "word": "nefarious",
       "partOfSpeech": "adjective",
+      "pronunciation": "nih-FAIR-ee-us",
       "articleQuote": "Midnight Blizzard… had managed to access emails belonging to Microsoft's senior leadership by using consumer internet connections to mask nefarious traffic.",
       "inContext": "Here it describes the hackers' internet activity as criminal and harmful — traffic carrying out attacks that the hackers wanted to keep hidden.",
       "meaning": "Wicked, villainous, or criminal — done with evil intent.",
@@ -20,6 +21,7 @@
     {
       "word": "conduit",
       "partOfSpeech": "noun",
+      "pronunciation": "KON-doo-it",
       "articleQuote": "Residential proxy networks are now a go-to resource for nation-state hackers, who use them as a conduit to U.S. targets.",
       "inContext": "The proxy networks act as a channel that the hackers' attacks pass through to reach victims inside the United States.",
       "meaning": "A channel or pipe that carries something — water, electricity, information, or even influence — from one place to another.",
@@ -31,6 +33,7 @@
     {
       "word": "counterpart",
       "partOfSpeech": "noun",
+      "pronunciation": "KOWN-tur-part",
       "articleQuote": "It started with a phone call made to Davis, from her counterpart at Microsoft, Igor Tsyganskiy, who wanted to know more about the six Comcast IP addresses.",
       "inContext": "Tsyganskiy is Microsoft's top security official — the person who holds the same kind of job at Microsoft that Davis holds at Comcast.",
       "meaning": "A person or thing that has the same role or function as another, but in a different place or organization.",

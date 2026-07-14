@@ -8,7 +8,8 @@ import path from "path";
  */
 export type VocabWord = {
   word: string;
-  partOfSpeech: string; // e.g. "noun", "verb", "adjective"
+  partOfSpeech: string; // e.g. "noun", "verb", "adjective" — NOT shown on the handout anymore (the pronunciation respelling took its place), but still fed to the voice-quiz tutor (lib/quiz-prompt.ts)
+  pronunciation?: string; // plain-English US respelling shown on the card in place of the part of speech — hyphen-separated syllables, primary stress in CAPS (e.g. "rih-PUG-nunt", "yoo-BIK-wih-tus"). NOT IPA. The ▶ button plays the real audio; this is the at-a-glance text guide
   articleQuote: string; // the phrase/sentence from the article where the word appears
   inContext: string; // what the word means right there, in the article's context
   meaning: string; // the broader, general definition
