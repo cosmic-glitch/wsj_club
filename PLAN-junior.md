@@ -17,7 +17,8 @@ Status: **planned, not built.** No code has been written.
 | URL / name | **`/junior`** (singular), not `/juniors` |
 | Where the articles come from | **Human-picked only.** No changes to `wsj-pick-article`; no new picking skill. The user supplies a link. |
 | How a day is authored | A **new sibling skill, `wsj-reading-junior`** — a copy of `wsj-reading` recalibrated for grades 5–7, publishing into the junior track. Same handout format (vocab / concepts / 5-question self-quiz). |
-| Grading | **Unchanged.** Same grader, same calibration anchors (`lib/grading-examples.ts`), same +1 leniency bump (`lib/score.ts`). Revisit once real junior transcripts exist. |
+| Grading | **Unchanged in strictness.** Same grader, same calibration anchors (`lib/grading-examples.ts`), same +1 leniency bump (`lib/score.ts`). Revisit once real junior transcripts exist. |
+| Grader's audience | **Swap the audience band only.** `buildReportPrompt` hardcodes *"US grade 8–10 students"* and *"a strong grade 8–10 reader"* — those two strings become the junior band. This changes **who** is being graded, not **how strictly** (the anchors and the leniency bump are untouched). See §3, Phase 2.6. |
 | Identity | **Shared.** Same teacher/student logins and classrooms; no `level` field on the user record for now. Nothing is gated by track — any logged-in student can open either track. |
 | Sessions | Junior quiz sessions carry a **`track` field** and show a **badge** on the Scores page, so the two scales are never silently compared. |
 | Cadence | Occasional (not daily). A junior day is **additive** — it does not replace that day's senior reading. |
@@ -163,6 +164,27 @@ date-keyed Blob path.
    track supplies **grades 5–7 / 10–13 year olds**. **Nothing else about the tutor changes** —
    the flow (one from-memory retelling → all the vocab words → ≥2 concepts → wrap-up) and the
    coach-the-gaps rule are already right for both tracks.
+6. **The grader's audience band (`buildReportPrompt`, same file).** Thread the **same
+   `audience` descriptor** into the report prompt and use it to replace its two hardcoded
+   grade strings:
+   - the setup line: *"The Reading Club gives a small group of **US grade 8–10 students**…"*
+   - the calibration rule: *"…how much of its real substance **a strong grade 8–10 reader**
+     could be expected to cover…"*
+
+   **This is the only grading change, and it is deliberately narrow.** It changes **who** the
+   grader thinks it is reading — not **how strictly** it scores. Everything that sets the
+   strictness is untouched: the calibration anchors (`lib/grading-examples.ts`), every judging
+   principle, the 1–10 range guidance, and the `applyLeniency` +1 bump (`lib/score.ts`).
+
+   *Why do this rather than leave the grader completely alone:* without it, a sharp 11-year-old's
+   retelling is explicitly scored against **a strong grade 8–10 reader's ceiling** — the grader is
+   told, in as many words, to expect a high-schooler. That is a mis-framing, not a strictness
+   setting, and it costs two strings to fix. It is also cheap to revert: if junior scores come
+   out oddly *high*, put the strings back and nothing else has moved.
+
+   *What this does NOT fix:* the anchors are still senior examples drawn from senior articles, so
+   junior scores will still run low at first (see §4). That is a calibration problem, and it can
+   only be solved with real junior transcripts — which is exactly why it waits.
 
 ### Phase 3 — Scores page (`/admin`)
 
@@ -227,20 +249,14 @@ Verify, on a preview deploy and on a real phone:
 
 ## 4. Deliberately not doing (yet)
 
-- **No junior grading calibration.** The grader, the anchors in `lib/grading-examples.ts` and
-  the `applyLeniency` +1 bump are all unchanged, per the decision above. **Expect junior
-  scores to read low at first** — the anchors reward reaching an article's subtler ideas,
-  which is not what a 6th grader should be optimizing for. Don't react to the first two or
-  three. Once a handful of real junior transcripts exist, promote a couple into junior-specific
-  anchors; the `track` field on each session is what lets us find them.
-- **⚠️ Open decision — the grader's own audience strings.** `buildReportPrompt` hardcodes
-  *"US grade 8–10 students"* and *"how much of its real substance a strong grade 8–10 reader
-  could be expected to cover"*. Left as-is (the conservative reading of "no grading change"),
-  a junior's retelling is scored against a **grade 8–10 reader's ceiling**.
-  **Recommendation:** swap those two strings for the junior band while leaving the anchors and
-  the leniency bump untouched — it re-frames *who* is being graded without touching *how*
-  strictly. Cheap, reversible, and it removes a real mis-frame. **Needs an explicit yes/no
-  before Phase 2 ships.**
+- **No junior grading calibration.** Beyond the audience-band swap (Phase 2.6), the grader is
+  untouched: the anchors in `lib/grading-examples.ts`, every judging principle, and the
+  `applyLeniency` +1 bump all stay as they are. **Expect junior scores to read low at first** —
+  the anchors are senior examples that reward reaching an article's subtler ideas, which is not
+  what a 6th grader should be optimizing for, and swapping the audience strings does not change
+  that. Don't react to the first two or three. Once a handful of real junior transcripts exist,
+  promote a couple into junior-specific anchors; the `track` field on each session is what lets
+  us find them.
 - **No `level` field on the user record.** Nothing is gated by track; a junior can open a
   senior handout and vice versa. With a club this small, gating is over-engineering.
 - **No junior article-picking skill.** Human-picked links only.
