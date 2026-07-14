@@ -264,10 +264,15 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - **Multi-article days:** set `articles: [{ title, articleUrl, pdfUrl }, …]` instead of the top-level `articleUrl`/`pdfUrl` (one entry per source, in reading order). The handout `title` is then an **umbrella title** for the bundle (e.g. `"World Cup News"`) — this is the one case where a combined title beats a single headline; each individual article keeps its real WSJ headline inside `articles[]`. The index's Article column lists each one (**Article 1 · PDF**, **Article 2 · PDF**, …, each link → that article's `articleUrl`/`pdfUrl`). The handout and quiz are unchanged — one combined page. (First example: `content/2026-06-14.json`.)
 
 6. **Write `content/YYYY-MM-DD.json`** following the schema below exactly (include `pdfUrl` if you placed a PDF). Validate it's well-formed JSON.
+   - **Generate pronunciation audio.** Each **vocab word** and **concept name** gets a ▶ "hear it" button on the handout that plays a pre-generated OpenAI-TTS clip (a natural US-English voice, `alloy`). Generate them from the just-written JSON:
+     ```sh
+     node --env-file=.env.local scripts/gen-pronunciation.mjs YYYY-MM-DD
+     ```
+     This writes one `public/audio/YYYY-MM-DD/<slug>.mp3` per term (idempotent — skips existing clips; `--force` to redo). Needs `OPENAI_API_KEY` in `.env.local`. The clips are **committed and CDN-served** (like `public/pdfs/`) — so `git add public/audio/YYYY-MM-DD` at commit time (step 8). Best-effort: if a clip is missing, the button falls back to the browser's (robotic) speech voice, so the handout never breaks. There's **no phonetic respelling text** — the audio is the whole feature.
 
 7. **Build to verify:** run `npm run build`. It must succeed. If a new file breaks the build, it's almost always malformed JSON — fix it.
 
-8. **Commit, push, and share the links.** Stage the new content and PDF — `git add content/YYYY-MM-DD.json public/pdfs/YYYY-MM-DD.pdf` (add any other changed files too) — commit, and `git push origin main`. **Pushing is shipping:** the push auto-deploys to Vercel production at `wsjclub.vercel.app` (no `vercel --prod` step). Once the deploy lands, give the user today's links: `https://wsjclub.vercel.app/reading/YYYY-MM-DD` (handout) and `https://wsjclub.vercel.app/reading/YYYY-MM-DD/quiz` (quiz).
+8. **Commit, push, and share the links.** Stage the new content, PDF, and audio — `git add content/YYYY-MM-DD.json public/pdfs/YYYY-MM-DD.pdf public/audio/YYYY-MM-DD` (add any other changed files too) — commit, and `git push origin main`. **Pushing is shipping:** the push auto-deploys to Vercel production at `wsjclub.vercel.app` (no `vercel --prod` step). Once the deploy lands, give the user today's links: `https://wsjclub.vercel.app/reading/YYYY-MM-DD` (handout) and `https://wsjclub.vercel.app/reading/YYYY-MM-DD/quiz` (quiz).
 
 ## Content file schema
 
