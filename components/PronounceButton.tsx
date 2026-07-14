@@ -1,20 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 /**
  * A small "hear it" button next to a vocab word or concept name on the handout.
+ * Plays that term's pre-generated OpenAI-TTS clip (a natural US-English voice).
  *
- * Two modes:
- *   • `audioSrc` given  → play a pre-generated OpenAI-TTS mp3 (premium, natural
- *     US-English voice; no login, no runtime cost — it's a static asset).
- *   • no `audioSrc`     → the browser's built-in Web Speech API (`speechSynthesis`)
- *     with a US-English voice (free, but robotic and device-dependent).
- * If the mp3 fails to load, it falls back to the browser voice.
- *
- * Like TodayTag, it renders nothing on the server and first client paint, then
- * pops in after mount — no hydration mismatch, and a browser that supports
- * neither path simply shows no button.
+ * There is NO browser-speech fallback — the robotic Web Speech voice was
+ * deliberately dropped. If there's no clip (`audioSrc` absent) the button
+ * doesn't render at all (the page only passes a src when the mp3 exists), so
+ * there's never a dead button; if the clip fails to load mid-play it just stops.
  */
 export default function PronounceButton({
   text,
@@ -22,73 +17,18 @@ export default function PronounceButton({
   audioSrc,
   className = "",
 }: {
-  text: string; // the term actually spoken aloud (the word / concept name)
+  text: string; // the term (used only for the aria-label)
   label?: string; // for the aria-label; defaults to `text`
-  audioSrc?: string; // pre-generated mp3 URL; when set, plays that instead of browser speech
+  audioSrc?: string; // the pre-generated mp3 URL — no src, no button
   className?: string;
 }) {
-  const [supported, setSupported] = useState(false);
   const [speaking, setSpeaking] = useState(false);
   const [loading, setLoading] = useState(false);
-  const voicesRef = useRef<SpeechSynthesisVoice[]>([]);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const hasSpeech = () =>
-    typeof window !== "undefined" && "speechSynthesis" in window;
+  if (!audioSrc) return null;
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    // An mp3 button always works; the browser-speech button needs speechSynthesis.
-    setSupported(audioSrc ? true : hasSpeech());
-    if (hasSpeech()) {
-      const synth = window.speechSynthesis;
-      const load = () => {
-        voicesRef.current = synth.getVoices();
-      };
-      load();
-      synth.addEventListener("voiceschanged", load);
-      return () => {
-        synth.removeEventListener("voiceschanged", load);
-        synth.cancel();
-      };
-    }
-  }, [audioSrc]);
-
-  // Stop any playback when the button unmounts.
-  useEffect(
-    () => () => {
-      audioRef.current?.pause();
-      if (hasSpeech()) window.speechSynthesis.cancel();
-    },
-    [],
-  );
-
-  if (!supported) return null;
-
-  function pickVoice(): SpeechSynthesisVoice | undefined {
-    const voices = voicesRef.current;
-    if (!voices.length) return undefined;
-    const enUs = voices.filter((v) => v.lang === "en-US" || v.lang === "en_US");
-    const pool = enUs.length ? enUs : voices.filter((v) => v.lang?.startsWith("en"));
-    return pool.find((v) => v.default) ?? pool[0];
-  }
-
-  function speakBrowser() {
-    if (!hasSpeech()) return;
-    const synth = window.speechSynthesis;
-    synth.cancel(); // stop anything already in flight
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = "en-US";
-    u.rate = 0.9; // a touch slower than default — clearer for a single word
-    const voice = pickVoice();
-    if (voice) u.voice = voice;
-    u.onstart = () => setSpeaking(true);
-    u.onend = () => setSpeaking(false);
-    u.onerror = () => setSpeaking(false);
-    synth.speak(u);
-  }
-
-  function playMp3() {
+  function play() {
     let audio = audioRef.current;
     if (!audio) {
       audio = new Audio(audioSrc);
@@ -98,31 +38,20 @@ export default function PronounceButton({
       };
       audio.onended = () => setSpeaking(false);
       audio.onerror = () => {
-        // mp3 missing/failed — fall back to the browser voice.
         setLoading(false);
         setSpeaking(false);
-        audioRef.current = null;
-        speakBrowser();
       };
       audioRef.current = audio;
     }
     setLoading(true);
     audio.currentTime = 0;
-    audio.play().catch(() => {
-      setLoading(false);
-      speakBrowser();
-    });
-  }
-
-  function handleClick() {
-    if (audioSrc) playMp3();
-    else speakBrowser();
+    audio.play().catch(() => setLoading(false));
   }
 
   return (
     <button
       type="button"
-      onClick={handleClick}
+      onClick={play}
       disabled={loading}
       aria-busy={loading}
       aria-label={`Hear "${label ?? text}" pronounced`}

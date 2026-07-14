@@ -268,7 +268,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
      ```sh
      node --env-file=.env.local scripts/gen-pronunciation.mjs YYYY-MM-DD
      ```
-     This writes one `public/audio/YYYY-MM-DD/<slug>.mp3` per term (idempotent — skips existing clips; `--force` to redo). Needs `OPENAI_API_KEY` in `.env.local`. The clips are **committed and CDN-served** (like `public/pdfs/`) — so `git add public/audio/YYYY-MM-DD` at commit time (step 8). Best-effort: if a clip is missing, the button falls back to the browser's (robotic) speech voice, so the handout never breaks. There's **no phonetic respelling text** — the audio is the whole feature.
+     This writes one `public/audio/YYYY-MM-DD/<slug>.mp3` per term (idempotent — skips existing clips; `--force` to redo). Needs `OPENAI_API_KEY` in `.env.local`. The clips are **committed and CDN-served** (like `public/pdfs/`) — so `git add public/audio/YYYY-MM-DD` at commit time (step 8). **There is NO browser-speech fallback** — the handout renders the ▶ button only for terms whose clip exists on disk, so a term that didn't get a clip just shows no button (never a dead one). That makes it important the generator ran for **every** vocab word + concept name; the run prints `made=/skipped=/failed=` and exits non-zero on any failure, so re-run (or `--force`) until `failed=0`. There's **no phonetic respelling text** — the audio is the whole feature.
 
 7. **Build to verify:** run `npm run build`. It must succeed. If a new file breaks the build, it's almost always malformed JSON — fix it.
 
