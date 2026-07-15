@@ -376,7 +376,7 @@ function AddStudentModal({
   }
 
   const canSubmit =
-    displayName.trim() && username.trim().length >= 3 && password.length >= 4 && avail !== "taken";
+    displayName.trim() && username.trim().length >= 3 && password.length > 0 && avail !== "taken";
 
   return (
     <Modal onClose={onClose} title="Add a student">

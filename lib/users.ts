@@ -205,8 +205,8 @@ export async function createUser(
   if (input.role === "teacher" && input.teacherId) {
     throw new UserError("teacher-has-teacher", "A teacher can't belong to a teacher.");
   }
-  if (!input.password || input.password.length < 4) {
-    throw new UserError("weak-password", "Password must be at least 4 characters.");
+  if (!input.password) {
+    throw new UserError("weak-password", "A password is required.");
   }
   const all = await loadAll(true); // force-fresh so the uniqueness check is real
   if (all.has(username)) {
@@ -229,8 +229,8 @@ export async function createUser(
 
 /** Set a new password (hashes it). */
 export async function setPassword(username: string, newPassword: string): Promise<void> {
-  if (!newPassword || newPassword.length < 4) {
-    throw new UserError("weak-password", "Password must be at least 4 characters.");
+  if (!newPassword) {
+    throw new UserError("weak-password", "A password is required.");
   }
   const u = await getUser(username);
   if (!u) throw new UserError("not-found", "User not found.");
