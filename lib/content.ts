@@ -2,6 +2,21 @@ import fs from "fs";
 import path from "path";
 
 /**
+ * A reading track. `senior` (US grades 8–10) is the original club and keeps
+ * every date-keyed path exactly as it was; `junior` (US grades 5–7) is a second,
+ * occasional track that lives under a `junior/` path segment everywhere (content
+ * files, PDFs, audio, article text, Blob session keys, and the /junior routes).
+ * A day is identified by (track, date) — a junior article usually lands on a date
+ * that already has a senior one, so `date` alone is no longer a unique key.
+ */
+export type Track = "senior" | "junior";
+
+/** The content directory for a track: senior = content/, junior = content/junior/. */
+function contentDirFor(track: Track): string {
+  return track === "junior" ? path.join(CONTENT_DIR, "junior") : CONTENT_DIR;
+}
+
+/**
  * One vocabulary word the kids likely don't know yet.
  * Presented article-first: how it's used in the article, what it means there,
  * then the broader meaning, then two more examples.
@@ -88,23 +103,31 @@ export function getAnnouncements(): string[] {
   return Array.isArray(raw.messages) ? raw.messages.filter(Boolean) : [];
 }
 
-/** Load every reading, newest first. */
-export function getAllReadings(): Reading[] {
-  if (!fs.existsSync(CONTENT_DIR)) return [];
+/**
+ * Load every reading in a track, newest first. Senior reads `content/`, junior
+ * reads `content/junior/`. The default keeps every existing caller (senior)
+ * unchanged. The junior dir may not exist until the first junior reading is
+ * published — the existsSync guard returns [] then (this is why /junior needs an
+ * empty state).
+ */
+export function getAllReadings(track: Track = "senior"): Reading[] {
+  const dir = contentDirFor(track);
+  if (!fs.existsSync(dir)) return [];
   const files = fs
-    .readdirSync(CONTENT_DIR)
-    // Only date-named files are readings — announcement.json lives here too.
+    .readdirSync(dir)
+    // Only date-named files are readings — announcement.json (and the junior/
+    // subdirectory) live under content/ too, and neither matches this pattern.
     .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f));
   const readings = files.map((f) => {
-    const raw = fs.readFileSync(path.join(CONTENT_DIR, f), "utf8");
+    const raw = fs.readFileSync(path.join(dir, f), "utf8");
     return JSON.parse(raw) as Reading;
   });
   return readings.sort((a, b) => b.date.localeCompare(a.date));
 }
 
-/** Load a single reading by its date string, or undefined if missing. */
-export function getReading(date: string): Reading | undefined {
-  return getAllReadings().find((r) => r.date === date);
+/** Load a single reading by its date string within a track, or undefined. */
+export function getReading(date: string, track: Track = "senior"): Reading | undefined {
+  return getAllReadings(track).find((r) => r.date === date);
 }
 
 /** Format "2026-06-09" as "Tuesday, June 9, 2026". */
