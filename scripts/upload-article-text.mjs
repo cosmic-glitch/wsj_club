@@ -19,17 +19,28 @@
  *
  * Usage:
  *   node --env-file=.env.local scripts/upload-article-text.mjs <YYYY-MM-DD> [file]
+ *   node --env-file=.env.local scripts/upload-article-text.mjs <YYYY-MM-DD> --track=junior
  *   pdftotext file.pdf - | node --env-file=.env.local scripts/upload-article-text.mjs <YYYY-MM-DD>
+ *
+ * --track=junior uploads to the junior Blob key `article-text/junior/<date>.txt`
+ * and defaults the local source to `article-text/junior/<date>.txt`.
  */
 import fs from "node:fs";
 import { put } from "@vercel/blob";
 
-const [date, file] = process.argv.slice(2);
+const argv = process.argv.slice(2);
+const trackArg = argv.find((a) => a.startsWith("--track="));
+const track = trackArg ? trackArg.split("=")[1] : "senior";
+const [date, file] = argv.filter((a) => !a.startsWith("--"));
 
 if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
-  console.error("Usage: node --env-file=.env.local scripts/upload-article-text.mjs <YYYY-MM-DD> [file]");
+  console.error("Usage: node --env-file=.env.local scripts/upload-article-text.mjs <YYYY-MM-DD> [file] [--track=junior]");
   process.exit(1);
 }
+
+// Junior text lives under an extra `junior/` segment (Blob key + local default).
+const textDir = track === "junior" ? "article-text/junior" : "article-text";
+const blobKey = `${textDir}/${date}.txt`;
 
 if (!process.env.BLOB_READ_WRITE_TOKEN) {
   console.error("Missing BLOB_READ_WRITE_TOKEN. Run with: node --env-file=.env.local scripts/upload-article-text.mjs ...");
@@ -37,7 +48,7 @@ if (!process.env.BLOB_READ_WRITE_TOKEN) {
 }
 
 function readText() {
-  const path = file || `article-text/${date}.txt`;
+  const path = file || `${textDir}/${date}.txt`;
   if (file === "-" || (!file && !fs.existsSync(path))) {
     return fs.readFileSync(0, "utf8"); // stdin
   }
@@ -54,7 +65,7 @@ if (!text) {
   process.exit(1);
 }
 
-const blob = await put(`article-text/${date}.txt`, text, {
+const blob = await put(blobKey, text, {
   access: "public",
   allowOverwrite: true,
   addRandomSuffix: false, // deterministic pathname so the app reads it by path

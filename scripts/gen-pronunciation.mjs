@@ -8,10 +8,16 @@
 //   node --env-file=.env.local scripts/gen-pronunciation.mjs 2026-07-14   # one day
 //   node --env-file=.env.local scripts/gen-pronunciation.mjs all          # every day
 //   node --env-file=.env.local scripts/gen-pronunciation.mjs all --force  # regenerate all
+//   node --env-file=.env.local scripts/gen-pronunciation.mjs 2026-07-16 --track=junior  # junior track
 //
 // Idempotent: existing clips are skipped unless --force. The filename slug MUST
-// match slugify() in app/reading/[date]/page.tsx, or the handout won't find them.
+// match slugify() in lib/handout-audio.ts, or the handout won't find them.
 // Voice/model are env-overridable (PRONOUNCE_VOICE / PRONOUNCE_MODEL).
+//
+// --track=junior repoints BOTH bases up front (read from content/junior/, write
+// to public/audio/junior/), which is enough for all three senior-hardcoded
+// spots: the `all` sweep enumerates whichever CONTENT dir, the per-day read, and
+// the outDir write.
 
 import fs from "node:fs";
 import path from "node:path";
@@ -24,11 +30,22 @@ if (!KEY) {
 
 const MODEL = process.env.PRONOUNCE_MODEL || "gpt-4o-mini-tts";
 const VOICE = process.env.PRONOUNCE_VOICE || "alloy";
-const CONTENT = path.join(process.cwd(), "content");
-const AUDIO = path.join(process.cwd(), "public", "audio");
 
 const args = process.argv.slice(2);
 const force = args.includes("--force");
+// --track=junior (unambiguous equals form, so it never collides with the
+// positional date/all target below, which excludes anything starting with --).
+const trackArg = args.find((a) => a.startsWith("--track="));
+const track = trackArg ? trackArg.split("=")[1] : "senior";
+const CONTENT =
+  track === "junior"
+    ? path.join(process.cwd(), "content", "junior")
+    : path.join(process.cwd(), "content");
+const AUDIO =
+  track === "junior"
+    ? path.join(process.cwd(), "public", "audio", "junior")
+    : path.join(process.cwd(), "public", "audio");
+
 const target = args.find((a) => !a.startsWith("--")) || "all";
 
 const slug = (s) =>
@@ -43,6 +60,11 @@ const INSTRUCTIONS =
   "Say it once; do not spell it out.";
 
 function daysToProcess() {
+  // The junior content dir may not exist yet (before the first junior reading).
+  if (!fs.existsSync(CONTENT)) {
+    console.error(`No content directory at ${CONTENT}`);
+    process.exit(1);
+  }
   const all = fs
     .readdirSync(CONTENT)
     .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
@@ -111,5 +133,5 @@ for (const date of daysToProcess()) {
   });
 }
 
-console.log(`\nDone. made=${made} skipped=${skipped} failed=${failed}  voice=${VOICE} model=${MODEL}`);
+console.log(`\nDone. track=${track} made=${made} skipped=${skipped} failed=${failed}  voice=${VOICE} model=${MODEL}`);
 if (failed) process.exit(1);

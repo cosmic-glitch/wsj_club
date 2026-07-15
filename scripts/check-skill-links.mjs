@@ -2,7 +2,7 @@ import { access, lstat, readlink, realpath } from "node:fs/promises";
 import path from "node:path";
 
 const root = process.cwd();
-const sharedSkills = ["wsj-pick-article", "wsj-reading"];
+const sharedSkills = ["wsj-pick-article", "wsj-reading", "wsj-reading-junior"];
 const failures = [];
 
 for (const skill of sharedSkills) {
