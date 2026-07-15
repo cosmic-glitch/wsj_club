@@ -1,0 +1,120 @@
+{
+  "date": "2026-07-15",
+  "title": "Why the Golden Age of Sports TV Is Driving Fans Crazy",
+  "articleUrl": "https://www.wsj.com/business/media/sports-tv-channels-streaming-eb66be44",
+  "pdfUrl": "/pdfs/2026-07-15.pdf",
+  "voiceQuiz": true,
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "boon",
+      "partOfSpeech": "noun",
+      "pronunciation": "BOON",
+      "articleQuote": "The complex array of TV sports deals has been a boon for professional and college leagues, generating billions in revenues.",
+      "inContext": "All those overlapping TV and streaming deals have been a huge windfall for the leagues — a source of billions in new money.",
+      "meaning": "A boon is something that brings a real benefit or advantage, often arriving at just the right time — a helpful blessing.",
+      "examples": [
+        "The surprise snow day was a boon — it gave me the whole afternoon to finish my project.",
+        "A free after-school tutoring program was a boon for students who couldn't afford a private tutor."
+      ]
+    },
+    {
+      "word": "ascendant",
+      "partOfSpeech": "adjective",
+      "pronunciation": "uh-SEN-dunt",
+      "articleQuote": "the fear that the ascendant streaming services would eventually outbid the broadcast networks for events once considered a sports fan's birthright.",
+      "inContext": "Streaming services are rising fast in money and clout, so people fear they'll soon overpower the old broadcast networks.",
+      "meaning": "Ascendant describes something on the rise — growing in power, influence, or popularity and starting to dominate.",
+      "examples": [
+        "After winning three tournaments in a row, she was the ascendant star of the chess club.",
+        "Electric cars are ascendant, slowly pushing gas-powered models off the showroom floor."
+      ]
+    },
+    {
+      "word": "stratified",
+      "partOfSpeech": "adjective",
+      "pronunciation": "STRAT-uh-fyd",
+      "articleQuote": "The TV landscape, he says, is becoming as stratified as the experience of going to a game.",
+      "inContext": "Watching sports on TV is splitting into separate levels based on how much you can pay — like a stadium with cheap seats, club seats, and luxury suites.",
+      "meaning": "Stratified means arranged in distinct layers or levels — often layers of society ranked by wealth or status. (In science, rock and water can be stratified into layers too.)",
+      "examples": [
+        "The concert was stratified: general admission in the back, VIPs up front, and a roped-off section for the super-rich.",
+        "That school can feel stratified, with cliques stacked in a clear pecking order from top to bottom."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Bundling and unbundling",
+      "articleQuote": "Yankees games appear on a bewildering array of channels and platforms—some free, most not.",
+      "meaning": "Think of a value meal at a burger place: the burger, fries, and drink come together for one set price. That's a bundle. Buying each item on its own is unbundling.\n\nCompanies bundle things to sell you more at once. Cable TV was a giant bundle — hundreds of channels for one monthly bill. You paid for dozens of channels you never watched, but you didn't have to think about it, and the games you wanted were all in there.\n\nUnbundling breaks that package into pieces you buy separately. It sounds like a better deal — why pay for channels you don't watch? But here's the catch this article shows: when the pieces are sold one at a time, the total can end up *higher*, not lower. A fan who once caught every game on a single cable subscription now needs Peacock, Apple TV+, Amazon Prime, *and* a cable package — four bills instead of one. The same tug-of-war shows up everywhere: a $10 album versus buying ten singles, or one Office bundle versus paying for Word, Excel, and PowerPoint on their own."
+    },
+    {
+      "name": "Antitrust (and a special exemption)",
+      "articleQuote": "a landmark 1961 law that granted professional leagues limited antitrust protection to bargain for TV deals.",
+      "meaning": "Picture every pizza shop in town quietly agreeing to charge $40 for a plain pizza so none of them has to undercut the others. Customers get fleeced, and no one can shop around for a better price. Antitrust laws exist to stop exactly that: they keep rival companies from teaming up to kill competition. Normally competitors have to fight for your business, and that fight is what keeps prices down and quality up.\n\nSports leagues are a strange case. The teams are separate, rival businesses — so if they all pooled their games and sold the TV rights as one giant package, that would normally be illegal price-fixing. In 1961, Congress carved out a special exception, the Sports Broadcasting Act, letting leagues bargain their TV deals as a single group.\n\nThat's why the government watchdog matters here. The Department of Justice (the DOJ) is the federal agency that enforces antitrust law, and it has opened an investigation into whether the NFL's streaming deals have pushed past what that 1961 exception actually allows. In other words, the same rules that stop pizza shops from colluding are now being pointed at how football gets sold to you."
+    },
+    {
+      "name": "Crossing the Rubicon",
+      "articleQuote": "a kind of Rubicon was crossed early last year when Amazon Prime streamed an NFL playoff game on an exclusive basis, the first time a postseason contest was available only to those with a streaming subscription.",
+      "meaning": "Back in 49 BC, the Roman general Julius Caesar marched his army up to a small river in northern Italy called the Rubicon. Roman law said no general could bring troops across it — doing so meant civil war, with no way to undo it. Caesar crossed anyway, reportedly saying \"the die is cast.\" Ever since, \"crossing the Rubicon\" has meant taking a bold step past a point of no return: once you've done it, there's no going back.\n\nWriters reach for the phrase whenever some line gets crossed for the first time and can't be uncrossed. Here, the line was this: for generations the biggest playoff games were free on broadcast TV, something fans treated as a right. The first time a playoff game was locked behind a paid streaming subscription and nowhere else, a Rubicon was crossed — because once leagues and fans accept that a championship game can be paywalled, it is very hard to go back to free.\n\nYou cross smaller Rubicons all the time: hitting \"send\" on a text you can't unsend, or telling a secret you can't un-tell. The moment itself may be small; what makes it a Rubicon is that there's no rewind."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why do many fans say today's sports TV is \"not a win for the fans\"?",
+      "options": [
+        "There are far fewer games broadcast than there used to be.",
+        "Games are scattered across many channels and apps, and the total cost to follow a team has climbed steeply.",
+        "The picture quality of the broadcasts has gotten worse.",
+        "Teams are playing shorter seasons to save money."
+      ],
+      "answerIndex": 1,
+      "explanation": "The article's central complaint is fragmentation across many platforms plus an escalating, 'spiraling' cost — a hardcore fan can spend thousands of dollars a year."
+    },
+    {
+      "question": "The deals have been a \"boon\" for the leagues. A boon is —",
+      "options": [
+        "a confusing burden",
+        "a timely benefit or advantage",
+        "a legal dispute",
+        "a small, unimportant detail"
+      ],
+      "answerIndex": 1,
+      "explanation": "A boon is something that brings a real, well-timed benefit — here, billions in new revenue for the leagues."
+    },
+    {
+      "question": "When a product like a cable package gets broken up so each piece is sold separately (\"unbundling\"), what does this article show can happen to the total price?",
+      "options": [
+        "It always drops, since you only pay for what you want.",
+        "It stays exactly the same no matter what.",
+        "It can actually end up higher once every separate subscription is added up.",
+        "It is set by the government, not the companies."
+      ],
+      "answerIndex": 2,
+      "explanation": "Unbundling sounds cheaper, but paying separately for Peacock, Apple TV+, Amazon Prime, and cable can cost more than the old single bill."
+    },
+    {
+      "question": "The 1961 Sports Broadcasting Act gave leagues \"limited antitrust protection.\" Antitrust laws normally exist to —",
+      "options": [
+        "guarantee that every game is shown for free",
+        "stop rival companies from teaming up in ways that kill competition",
+        "require every athlete to be paid the same salary",
+        "protect a company's logo and brand name"
+      ],
+      "answerIndex": 1,
+      "explanation": "Antitrust law keeps competitors from colluding to crush competition; the 1961 law was a special exception letting leagues bargain TV deals as a group, which the DOJ is now investigating."
+    },
+    {
+      "question": "The article says \"a kind of Rubicon was crossed\" after the first streaming-only NFL playoff game. This means —",
+      "options": [
+        "a technical glitch briefly interrupted the broadcast",
+        "an irreversible line was crossed that is hard to go back from",
+        "the game set a new record for total viewers",
+        "two rival companies merged into one"
+      ],
+      "answerIndex": 1,
+      "explanation": "'Crossing the Rubicon' alludes to Julius Caesar's irreversible move in 49 BC; paywalling a playoff game for the first time was a point-of-no-return step."
+    }
+  ]
+}
