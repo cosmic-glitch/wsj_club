@@ -66,9 +66,12 @@ export async function POST(request: Request) {
   // Validate it's one of OUR transient per-turn clips, not an arbitrary
   // server-side fetch target. This route is reachable by any logged-in student
   // AND it DELETES the clip when done, so the guard is deliberately narrow:
-  // require the Vercel Blob host and the `quiz-sessions/<date>/turns/` prefix the
-  // client uploads to — never the bare `quiz-sessions/` prefix, so a forged URL
-  // can't make us fetch or delete a teacher recording or a saved session JSON.
+  // require the Vercel Blob host and the `quiz-sessions/[junior/]<date>/turns/`
+  // prefix the client uploads to — never the bare `quiz-sessions/` prefix, so a
+  // forged URL can't make us fetch or delete a teacher recording or a saved
+  // session JSON. The optional `junior/` segment matches the junior track's
+  // extra path level (without it, `[^/]+` allows only ONE segment, so every
+  // junior clip would be rejected and the quiz would pause on answer 1).
   let parsed: URL;
   try {
     parsed = new URL(blobUrl);
@@ -77,7 +80,7 @@ export async function POST(request: Request) {
   }
   if (
     !parsed.hostname.endsWith(".blob.vercel-storage.com") ||
-    !/\/quiz-sessions\/[^/]+\/turns\//.test(parsed.pathname)
+    !/\/quiz-sessions\/(junior\/)?[^/]+\/turns\//.test(parsed.pathname)
   ) {
     return Response.json({ error: "Unexpected audio location." }, { status: 400 });
   }

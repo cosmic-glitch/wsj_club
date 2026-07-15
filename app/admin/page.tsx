@@ -23,16 +23,28 @@ export const metadata = {
  * can't be imported into the client component.
  */
 function groupByArticle(sessions: Session[]): ArticleGroup[] {
-  const byDate = new Map<string, ArticleGroup>();
+  // Key on track+date, NOT date alone: a junior and a senior attempt land on the
+  // same date by default (junior is occasional, senior daily), and keying on
+  // date alone would merge them into one row under whichever title landed first
+  // — silently mis-filing a junior attempt under the senior article. The title
+  // is already stamped on each session (s.title), so this needs no getReading.
+  const byKey = new Map<string, ArticleGroup>();
   for (const s of sessions) {
-    let g = byDate.get(s.date);
+    const key = `${s.track ?? "senior"}:${s.date}`;
+    let g = byKey.get(key);
     if (!g) {
-      g = { date: s.date, dateLabel: dateBig(s.date), title: s.title, attempts: [] };
-      byDate.set(s.date, g);
+      g = {
+        date: s.date,
+        track: s.track,
+        dateLabel: dateBig(s.date),
+        title: s.title,
+        attempts: [],
+      };
+      byKey.set(key, g);
     }
     g.attempts.push(s);
   }
-  const groups = Array.from(byDate.values());
+  const groups = Array.from(byKey.values());
   groups.sort((a, b) => b.date.localeCompare(a.date));
   // An in-progress slot has no endedAt (nothing ended) — order it by its last
   // checkpoint time instead.

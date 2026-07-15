@@ -19,13 +19,19 @@ import HomeAuthBar from "./HomeAuthBar";
 // both.
 export default function SiteHeader() {
   const pathname = usePathname();
-  if (pathname === "/") return null;
+  // Hidden on BOTH indexes — each landing (/ and /junior) brings its own
+  // masthead + topline auth controls, so the header would duplicate them.
+  if (pathname === "/" || pathname === "/junior") return null;
+
+  // The monogram links back to the index of whichever track you're in, so a
+  // junior handout's "RC" returns to /junior (not the main club).
+  const homeHref = pathname?.startsWith("/junior") ? "/junior" : "/";
 
   return (
     <header className="border-b-2 border-[#0a0a0a] bg-white">
       <HeaderContainer>
         <Link
-          href="/"
+          href={homeHref}
           aria-label="Reading Club — all readings"
           className="-ml-1 whitespace-nowrap px-1 py-0.5 font-display text-lg font-normal uppercase leading-none tracking-[.02em] text-[#0a0a0a] hover:bg-[#ffe600]"
         >

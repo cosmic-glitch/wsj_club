@@ -1,4 +1,5 @@
 import { get } from "@vercel/blob";
+import type { Track } from "@/lib/content";
 
 /**
  * The voice tutor works best when it can see the *full* article, not just the
@@ -16,22 +17,30 @@ import { get } from "@vercel/blob";
  * behaviour. Best-effort: a Blob hiccup never blocks a session.
  */
 
-const articleTextPath = (date: string) => `article-text/${date}.txt`;
+// Junior text lives under an extra `junior/` segment, mirroring the content /
+// PDF / audio / session key convention (see lib/session-io.ts sessionPrefix).
+const articleTextPath = (date: string, track: Track) =>
+  track === "junior" ? `article-text/junior/${date}.txt` : `article-text/${date}.txt`;
 
 // Small per-instance cache — a warm function reuses the text across sessions
-// instead of re-fetching from Blob every time.
+// instead of re-fetching from Blob every time. Keyed by track+date so the two
+// tracks' same-date texts don't collide.
 const cache = new Map<string, string>();
 
-export async function getArticleText(date: string): Promise<string | null> {
-  if (cache.has(date)) return cache.get(date)!;
+export async function getArticleText(
+  date: string,
+  track: Track = "senior"
+): Promise<string | null> {
+  const cacheKey = `${track}:${date}`;
+  if (cache.has(cacheKey)) return cache.get(cacheKey)!;
   if (!process.env.BLOB_READ_WRITE_TOKEN) return null;
 
   try {
-    const result = await get(articleTextPath(date), { access: "public" });
+    const result = await get(articleTextPath(date, track), { access: "public" });
     if (!result || result.statusCode !== 200) return null;
     const text = (await new Response(result.stream).text()).trim();
     if (!text) return null;
-    cache.set(date, text);
+    cache.set(cacheKey, text);
     return text;
   } catch {
     // Not found / token issue / network — degrade to handout-only.

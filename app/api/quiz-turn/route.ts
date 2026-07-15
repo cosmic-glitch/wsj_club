@@ -1,5 +1,5 @@
 import { currentUser } from "@/lib/auth";
-import { getReading } from "@/lib/content";
+import { getReading, type Track } from "@/lib/content";
 import { getArticleText } from "@/lib/article-text";
 import { buildInstructions } from "@/lib/quiz-prompt";
 
@@ -91,7 +91,7 @@ export async function POST(request: Request) {
     return Response.json({ error: "Server is missing OPENAI_API_KEY." }, { status: 500 });
   }
 
-  let body: { date?: string; studentName?: string; transcript?: Turn[] };
+  let body: { date?: string; studentName?: string; transcript?: Turn[]; track?: string };
   try {
     body = await request.json();
   } catch {
@@ -99,15 +99,19 @@ export async function POST(request: Request) {
   }
 
   const date = (body.date ?? "").trim();
+  // `track` is a label the page knows (senior vs junior), not an identity claim —
+  // safe to take from the client (a forged track only reaches the caller's own
+  // junior path; identity still comes from the cookie). Default senior.
+  const track: Track = body.track === "junior" ? "junior" : "senior";
   const studentName = (body.studentName ?? "").trim() || user;
   const transcript = Array.isArray(body.transcript) ? body.transcript : [];
-  const reading = getReading(date);
+  const reading = getReading(date, track);
   if (!reading) {
     return Response.json({ error: "Unknown reading." }, { status: 404 });
   }
 
-  const articleText = await getArticleText(date);
-  const instructions = buildInstructions(reading, studentName, articleText);
+  const articleText = await getArticleText(date, track);
+  const instructions = buildInstructions(reading, studentName, articleText, track);
 
   // The tutor's instructions are the system prompt; the running transcript maps
   // into chat turns (tutor → assistant, student → user). On the very first call

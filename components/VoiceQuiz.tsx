@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { upload } from "@vercel/blob/client";
+import type { Track } from "@/lib/content";
 import { useAuth } from "./AuthProvider";
 
 type Turn = { role: "student" | "tutor"; text: string };
@@ -290,10 +291,16 @@ async function decodeBlobToPcm16k(blob: Blob, ctx: AudioContext): Promise<Float3
  */
 export default function VoiceQuiz({
   date,
+  track = "senior",
   launcherClassName,
   launcherLabel,
 }: {
   date: string;
+  /** Which reading track this quiz belongs to. Threaded into every API call and
+      into the upload clientPayload, and it prefixes the Blob session paths
+      (junior → `quiz-sessions/junior/<date>/…`) so a junior attempt never
+      collides with the senior day on the same date. Default senior. */
+  track?: Track;
   /** Optional restyle of the launcher button (e.g. the home page's boxed
       brutalist action button). Styling only — the click behavior (login gate,
       resume probe/chooser) is identical either way. */
@@ -301,6 +308,9 @@ export default function VoiceQuiz({
   /** Optional launcher text (default "Voice quiz"). */
   launcherLabel?: string;
 }) {
+  // The Blob key directory for this (track, date) — mirrors sessionPrefix() in
+  // lib/session-io.ts (keep the two in lockstep). Junior takes an extra segment.
+  const blobDir = track === "junior" ? `junior/${date}` : date;
   // Login state comes from the shared AuthProvider (one /api/me fetch for the
   // whole page); login/logout both reload the page, so it stays fresh.
   const { user, ready } = useAuth();
@@ -521,6 +531,7 @@ export default function VoiceQuiz({
     const audio = slotAudioRef.current;
     const payload = JSON.stringify({
       date,
+      track,
       transcript: transcriptRef.current,
       tutorDone: tutorDoneRef.current,
       resumeCount: resumeCountRef.current,
@@ -573,13 +584,13 @@ export default function VoiceQuiz({
       const uploaded = await upload(
         // The stable slot-audio pathname — keep in sync with lib/session-io.ts
         // (slotAudioPathname); /api/quiz-audio allows overwrite for exactly this.
-        `quiz-sessions/${date}/${safeName}-inprogress.wav`,
+        `quiz-sessions/${blobDir}/${safeName}-inprogress.wav`,
         file.blob,
         {
           access: "public",
           handleUploadUrl: "/api/quiz-audio",
           contentType: "audio/wav",
-          clientPayload: JSON.stringify({ date }),
+          clientPayload: JSON.stringify({ date, track }),
         }
       );
       if (!isSameRun(runId)) return;
@@ -768,7 +779,12 @@ export default function VoiceQuiz({
       const res = await fetch("/api/quiz-turn", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ date, studentName: user, transcript: transcriptRef.current }),
+        body: JSON.stringify({
+          date,
+          track,
+          studentName: user,
+          transcript: transcriptRef.current,
+        }),
         signal: turnAbort?.signal,
       });
       clearTimeout(timeout);
@@ -1133,13 +1149,13 @@ export default function VoiceQuiz({
               : "audio/webm";
       const safeName = (user ?? "student").replace(/[^a-zA-Z0-9_-]+/g, "-").toLowerCase();
       const uploaded = await upload(
-        `quiz-sessions/${date}/turns/${safeName}-${studentOrder}.${ext}`,
+        `quiz-sessions/${blobDir}/turns/${safeName}-${studentOrder}.${ext}`,
         clip,
         {
           access: "public",
           handleUploadUrl: "/api/quiz-audio",
           contentType,
-          clientPayload: JSON.stringify({ date }),
+          clientPayload: JSON.stringify({ date, track }),
           abortSignal: transcribeAbort?.signal,
         }
       );
@@ -1151,7 +1167,7 @@ export default function VoiceQuiz({
       const res = await fetch("/api/quiz-transcribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ date, blobUrl: uploaded.url }),
+        body: JSON.stringify({ date, track, blobUrl: uploaded.url }),
         signal: transcribeAbort?.signal,
       });
       clearTimeout(timeout);
@@ -1530,7 +1546,7 @@ export default function VoiceQuiz({
     const probeId = activeRunIdRef.current;
     setPhase("probing");
     try {
-      const res = await fetch(`/api/quiz-progress?date=${date}`, { cache: "no-store" });
+      const res = await fetch(`/api/quiz-progress?date=${date}&track=${track}`, { cache: "no-store" });
       const data = await res.json().catch(() => null);
       if (activeRunIdRef.current !== probeId || !mountedRef.current) return;
       const session = data?.session as SlotSession | undefined;
@@ -1571,7 +1587,7 @@ export default function VoiceQuiz({
     const probeId = activeRunIdRef.current;
     setPhase("probing");
     try {
-      await fetch(`/api/quiz-progress?date=${date}`, { method: "DELETE" });
+      await fetch(`/api/quiz-progress?date=${date}&track=${track}`, { method: "DELETE" });
     } catch {
       // Best-effort: if the archive+delete failed the slot lingers, but the
       // fresh run's checkpoints overwrite it (new sessionId).
@@ -1657,13 +1673,13 @@ export default function VoiceQuiz({
                 ? "audio/ogg"
                 : "audio/webm";
         const blob = await upload(
-          `quiz-sessions/${date}/${safeName}.${session.ext}`,
+          `quiz-sessions/${blobDir}/${safeName}.${session.ext}`,
           session.blob,
           {
             access: "public",
             handleUploadUrl: "/api/quiz-audio",
             contentType,
-            clientPayload: JSON.stringify({ date }),
+            clientPayload: JSON.stringify({ date, track }),
           }
         );
         audioUrl = blob.url;
@@ -1704,6 +1720,7 @@ export default function VoiceQuiz({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           date,
+          track,
           studentName: user,
           transcript: transcriptRef.current,
           audioUrl,
@@ -1862,7 +1879,7 @@ export default function VoiceQuiz({
       const probeId = activeRunIdRef.current;
       setPhase("probing");
       try {
-        const res = await fetch(`/api/quiz-progress?date=${date}`, { cache: "no-store" });
+        const res = await fetch(`/api/quiz-progress?date=${date}&track=${track}`, { cache: "no-store" });
         const data = await res.json().catch(() => null);
         if (activeRunIdRef.current !== probeId || !mountedRef.current) return;
         const session = data?.session as SlotSession | undefined;

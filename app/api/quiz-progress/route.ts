@@ -1,7 +1,7 @@
 import { copy, put } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 import { getUser } from "@/lib/users";
-import { getReading } from "@/lib/content";
+import { getReading, type Track } from "@/lib/content";
 import {
   deleteSlot,
   readSlot,
@@ -11,6 +11,7 @@ import {
   sanitizeFailure,
   sanitizeResumeCount,
   sanitizeTranscript,
+  sessionPrefix,
   slotAudioPathname,
   slotJsonPathname,
 } from "@/lib/session-io";
@@ -31,27 +32,31 @@ import {
  */
 
 // The one validation both identity-bearing handlers share: a logged-in caller
-// and a known reading date.
+// and a known (track, date) reading. Track is a label from the client (POST:
+// body; GET/DELETE: query param), defaulting to senior — identity always comes
+// from the cookie, never the body.
 async function callerAndDate(
   request: Request,
-  dateFromBody?: string
-): Promise<{ user: string; date: string } | Response> {
+  fromBody?: { date?: string; track?: string }
+): Promise<{ user: string; date: string; track: Track } | Response> {
   const user = await currentUser();
   if (!user) {
     return Response.json({ error: "Not logged in." }, { status: 401 });
   }
-  const date = (
-    dateFromBody ?? new URL(request.url).searchParams.get("date") ?? ""
-  ).trim();
-  if (!getReading(date)) {
+  const params = new URL(request.url).searchParams;
+  const date = (fromBody?.date ?? params.get("date") ?? "").trim();
+  const track: Track =
+    (fromBody?.track ?? params.get("track")) === "junior" ? "junior" : "senior";
+  if (!getReading(date, track)) {
     return Response.json({ error: "Unknown reading." }, { status: 404 });
   }
-  return { user, date };
+  return { user, date, track };
 }
 
 export async function POST(request: Request) {
   let body: {
     date?: string;
+    track?: string;
     transcript?: unknown;
     tutorDone?: unknown;
     resumeCount?: unknown;
@@ -68,10 +73,13 @@ export async function POST(request: Request) {
     return Response.json({ error: "Invalid request" }, { status: 400 });
   }
 
-  const ctx = await callerAndDate(request, String(body.date ?? ""));
+  const ctx = await callerAndDate(request, {
+    date: String(body.date ?? ""),
+    track: typeof body.track === "string" ? body.track : undefined,
+  });
   if (ctx instanceof Response) return ctx;
-  const { user, date } = ctx;
-  const reading = getReading(date)!;
+  const { user, date, track } = ctx;
+  const reading = getReading(date, track)!;
   const safeName = safeNameOf(user);
 
   const transcript = sanitizeTranscript(body.transcript);
@@ -91,7 +99,7 @@ export async function POST(request: Request) {
   if (rawAudio) {
     try {
       const pathname = new URL(rawAudio).pathname;
-      if (pathname.endsWith(`/${slotAudioPathname(date, safeName)}`)) {
+      if (pathname.endsWith(`/${slotAudioPathname(track, date, safeName)}`)) {
         audioUrl = rawAudio;
       }
     } catch {
@@ -103,6 +111,10 @@ export async function POST(request: Request) {
 
   const session = {
     date,
+    // Junior slots carry track: "junior" so the Scores page shows the junior
+    // badge and its Continue points at /junior?resume=. Senior omits it (absent
+    // means senior — no backfill of the existing records).
+    ...(track === "junior" ? { track } : {}),
     title: reading.title,
     studentName: user,
     loginUser: user,
@@ -128,7 +140,7 @@ export async function POST(request: Request) {
   };
 
   try {
-    await put(slotJsonPathname(date, safeName), JSON.stringify(session, null, 2), {
+    await put(slotJsonPathname(track, date, safeName), JSON.stringify(session, null, 2), {
       access: "public",
       addRandomSuffix: false,
       allowOverwrite: true,
@@ -144,10 +156,10 @@ export async function POST(request: Request) {
 export async function GET(request: Request) {
   const ctx = await callerAndDate(request);
   if (ctx instanceof Response) return ctx;
-  const { user, date } = ctx;
+  const { user, date, track } = ctx;
 
   try {
-    const slot = await readSlot(date, safeNameOf(user));
+    const slot = await readSlot(track, date, safeNameOf(user));
     if (!slot) return Response.json({ exists: false });
     return Response.json({ exists: true, session: slot.session });
   } catch (err) {
@@ -162,11 +174,12 @@ export async function GET(request: Request) {
 export async function DELETE(request: Request) {
   const ctx = await callerAndDate(request);
   if (ctx instanceof Response) return ctx;
-  const { user, date } = ctx;
+  const { user, date, track } = ctx;
   const safeName = safeNameOf(user);
+  const prefix = sessionPrefix(track, date);
 
   try {
-    const slot = await readSlot(date, safeName);
+    const slot = await readSlot(track, date, safeName);
     if (slot) {
       // Archive before deleting. The slot's audio (if flushed) lives at the
       // stable slot key that's about to be deleted, so copy it to a permanent
@@ -176,8 +189,8 @@ export async function DELETE(request: Request) {
       if (slot.session.audioUrl) {
         try {
           const copied = await copy(
-            slotAudioPathname(date, safeName),
-            `quiz-sessions/${date}/${safeName}-${Date.now()}.wav`,
+            slotAudioPathname(track, date, safeName),
+            `quiz-sessions/${prefix}/${safeName}-${Date.now()}.wav`,
             { access: "public", addRandomSuffix: true, contentType: "audio/wav" }
           );
           audioUrl = copied.url;
@@ -209,12 +222,12 @@ export async function DELETE(request: Request) {
         diag: { ...(slot.session.diag ?? {}), endReason: "start-over" },
       };
       await put(
-        `quiz-sessions/${date}/${safeName}-${Date.now()}.json`,
+        `quiz-sessions/${prefix}/${safeName}-${Date.now()}.json`,
         JSON.stringify(archived, null, 2),
         { access: "public", addRandomSuffix: true, contentType: "application/json" }
       );
     }
-    await deleteSlot(date, safeName);
+    await deleteSlot(track, date, safeName);
     console.log(
       "Voice-quiz start-over:",
       JSON.stringify({ user, date, hadSlot: !!slot })

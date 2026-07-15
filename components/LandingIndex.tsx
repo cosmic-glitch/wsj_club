@@ -164,7 +164,7 @@ export default function LandingIndex({
                         resume probe/chooser) lives in VoiceQuiz; only the
                         visible button is restyled to match the others. */}
                     {r.voiceQuiz && (
-                      <VoiceQuizStep date={r.date} className={btn} />
+                      <VoiceQuizStep date={r.date} track={track} className={btn} />
                     )}
                   </span>
                 </li>

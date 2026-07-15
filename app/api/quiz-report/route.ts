@@ -1,7 +1,7 @@
 import { copy, put } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 import { getUser } from "@/lib/users";
-import { getReading } from "@/lib/content";
+import { getReading, type Track } from "@/lib/content";
 import { getArticleText } from "@/lib/article-text";
 import { buildReportPrompt } from "@/lib/quiz-prompt";
 import { applyLeniency } from "@/lib/score";
@@ -13,6 +13,7 @@ import {
   sanitizeDurationMs,
   sanitizeFailure,
   sanitizeResumeCount,
+  sessionPrefix,
   slotAudioPathname,
   type SessionFailure,
   type Turn,
@@ -46,6 +47,7 @@ export async function POST(request: Request) {
 
   let body: {
     date?: string;
+    track?: string;
     studentName?: string;
     transcript?: Turn[];
     audioUrl?: string;
@@ -68,6 +70,8 @@ export async function POST(request: Request) {
   }
 
   const date = (body.date ?? "").trim();
+  // Track is a client label (default senior); identity stays cookie-derived.
+  const track: Track = body.track === "junior" ? "junior" : "senior";
   const studentName = (body.studentName ?? "").trim() || user;
   const transcript = Array.isArray(body.transcript) ? body.transcript : [];
   const audioUrl = (body.audioUrl ?? "").trim() || undefined;
@@ -88,7 +92,7 @@ export async function POST(request: Request) {
   const resumeCount = sanitizeResumeCount(body.resumeCount);
   const diag = sanitizeDiag(body);
 
-  const reading = getReading(date);
+  const reading = getReading(date, track);
   if (!reading) {
     return Response.json({ error: "Unknown reading." }, { status: 404 });
   }
@@ -132,7 +136,7 @@ export async function POST(request: Request) {
     // so this shouldn't be reached; report stays null, like a paused slot's.)
   } else if (process.env.OPENAI_API_KEY) {
     // Generate the report card from the transcript (best-effort).
-    const articleText = await getArticleText(date);
+    const articleText = await getArticleText(date, track);
     try {
       const res = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
@@ -149,7 +153,8 @@ export async function POST(request: Request) {
               content: buildReportPrompt(
                 reading,
                 transcriptToText(transcript),
-                articleText
+                articleText,
+                track
               ),
             },
           ],
@@ -195,11 +200,11 @@ export async function POST(request: Request) {
   let finalDurationMs = durationMs;
   if (!finalAudioUrl) {
     try {
-      const slot = await readSlot(date, slotName);
+      const slot = await readSlot(track, date, slotName);
       if (slot?.session.audioUrl) {
         const copied = await copy(
-          slotAudioPathname(date, slotName),
-          `quiz-sessions/${date}/${slotName}-${Date.now()}.wav`,
+          slotAudioPathname(track, date, slotName),
+          `quiz-sessions/${sessionPrefix(track, date)}/${slotName}-${Date.now()}.wav`,
           { access: "public", addRandomSuffix: true, contentType: "audio/wav" }
         );
         finalAudioUrl = copied.url;
@@ -212,6 +217,10 @@ export async function POST(request: Request) {
 
   const session = {
     date,
+    // Stamp track only for junior (absent means senior — no backfill of the
+    // existing senior records). This is what shows the junior badge on Scores
+    // and never silently compares a junior 8/10 against a senior 8/10.
+    ...(track === "junior" ? { track } : {}),
     title: reading.title,
     studentName,
     loginUser: user,
@@ -275,7 +284,7 @@ export async function POST(request: Request) {
   try {
     const safeName = safeNameOf(studentName);
     await put(
-      `quiz-sessions/${date}/${safeName}-${Date.now()}.json`,
+      `quiz-sessions/${sessionPrefix(track, date)}/${safeName}-${Date.now()}.json`,
       JSON.stringify(session, null, 2),
       { access: "public", addRandomSuffix: true, contentType: "application/json" }
     );
@@ -284,7 +293,7 @@ export async function POST(request: Request) {
     // the attempt. Best-effort + idempotent; a quiz that never checkpointed
     // simply has no slot to remove.
     try {
-      await deleteSlot(date, slotName);
+      await deleteSlot(track, date, slotName);
     } catch (err) {
       console.error("Deleting in-progress slot failed:", err, "user:", user);
     }

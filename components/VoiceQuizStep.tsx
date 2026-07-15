@@ -1,5 +1,6 @@
 "use client";
 
+import type { Track } from "@/lib/content";
 import VoiceQuiz from "./VoiceQuiz";
 
 /**
@@ -17,12 +18,19 @@ import VoiceQuiz from "./VoiceQuiz";
  */
 export default function VoiceQuizStep({
   date,
+  track = "senior",
   className,
 }: {
   date: string;
+  track?: Track;
   className?: string;
 }) {
   return (
-    <VoiceQuiz date={date} launcherClassName={className} launcherLabel="AI Quiz" />
+    <VoiceQuiz
+      date={date}
+      track={track}
+      launcherClassName={className}
+      launcherLabel="AI Quiz"
+    />
   );
 }

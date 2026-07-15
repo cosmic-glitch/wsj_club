@@ -18,6 +18,11 @@ export type Report = {
 export type SessionFailure = { reason?: string; detail?: string };
 export type Session = {
   date: string;
+  // The reading track. Absent means senior (no backfill of the existing
+  // records); junior attempts are stamped "junior" at save time. Drives the
+  // junior badge + the track prefix on this attempt's links, so a junior 8/10 is
+  // never silently compared against a senior 8/10.
+  track?: "junior";
   title: string;
   studentName: string;
   loginUser?: string;
@@ -55,13 +60,22 @@ export type Session = {
   blobUrl: string;
 };
 // One article's row in the table: the day + its title + every attempt on it
-// (across all students). Grouped + labeled on the server.
+// (across all students). Grouped + labeled on the server. A junior and a senior
+// attempt on the same DATE are DISTINCT groups (keyed on track+date), so `track`
+// identifies which one this is (absent = senior).
 export type ArticleGroup = {
   date: string;
+  track?: "junior";
   dateLabel: string;
   title: string;
   attempts: Session[];
 };
+
+// Track-aware hrefs — junior lives under a /junior prefix (senior unchanged).
+const readingHref = (track: string | undefined, date: string) =>
+  track === "junior" ? `/junior/reading/${date}` : `/reading/${date}`;
+const resumeHref = (track: string | undefined, date: string) =>
+  track === "junior" ? `/junior?resume=${date}` : `/?resume=${date}`;
 
 /**
  * Format an ISO timestamp in the *viewer's* local timezone. Done client-side
@@ -192,7 +206,7 @@ export default function AdminSessions({
                     the last (Delete) column off the right edge on desktop. */}
                 <td className="px-3 py-3 [overflow-wrap:anywhere]">
                   <Link
-                    href={`/reading/${g.date}`}
+                    href={readingHref(g.track, g.date)}
                     className="font-bold text-[#0a0a0a] hover:bg-[#ffe600]"
                   >
                     {g.title}
@@ -242,24 +256,36 @@ export default function AdminSessions({
                               slack — with just one short link there's room, so a
                               badge never forces the row to a 2nd line. */}
                           <span className="flex w-40 shrink-0 items-center justify-end gap-2">
-                            {s.inProgress && (
-                              <span className="mr-auto shrink-0 bg-sky-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-sky-700">
-                                in progress
-                              </span>
-                            )}
-                            {s.partial && !s.inProgress && (
-                              <span className="mr-auto shrink-0 bg-amber-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-amber-700">
-                                partial
-                              </span>
-                            )}
-                            {s.cancelled && (
-                              <span className="mr-auto shrink-0 bg-stone-200 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-stone-600">
-                                cancelled
-                              </span>
-                            )}
+                            {/* Badges, left-aligned as one group (mr-auto on the
+                                wrapper), so the Details/Continue link stays
+                                right-aligned even with several badges. junior is
+                                orthogonal to the status badges — a junior attempt
+                                can also be in-progress/partial/cancelled. */}
+                            <span className="mr-auto flex items-center gap-1.5">
+                              {s.track === "junior" && (
+                                <span className="shrink-0 bg-violet-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-violet-700">
+                                  junior
+                                </span>
+                              )}
+                              {s.inProgress && (
+                                <span className="shrink-0 bg-sky-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-sky-700">
+                                  in progress
+                                </span>
+                              )}
+                              {s.partial && !s.inProgress && (
+                                <span className="shrink-0 bg-amber-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-amber-700">
+                                  partial
+                                </span>
+                              )}
+                              {s.cancelled && (
+                                <span className="shrink-0 bg-stone-200 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-stone-600">
+                                  cancelled
+                                </span>
+                              )}
+                            </span>
                             {ownsInProgress ? (
                               <Link
-                                href={`/?resume=${s.date}`}
+                                href={resumeHref(s.track, s.date)}
                                 className="font-mono text-[11px] font-bold uppercase tracking-[.06em] text-[#0a0a0a] underline decoration-2 underline-offset-2 hover:bg-[#ffe600]"
                               >
                                 Continue
@@ -324,6 +350,11 @@ export default function AdminSessions({
                       {session.report.score}
                     </span>
                   )}
+                  {session.track === "junior" && (
+                    <span className="bg-violet-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-violet-700">
+                      junior
+                    </span>
+                  )}
                   {session.inProgress && (
                     <span className="bg-sky-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-sky-700">
                       in progress
@@ -342,7 +373,7 @@ export default function AdminSessions({
                 </div>
                 <p className="mt-0.5 truncate text-sm text-stone-500">
                   <Link
-                    href={`/reading/${session.date}`}
+                    href={readingHref(session.track, session.date)}
                     className="hover:bg-[#ffe600] hover:text-[#0a0a0a]"
                   >
                     {session.title}

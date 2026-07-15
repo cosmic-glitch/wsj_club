@@ -1,5 +1,19 @@
-import type { Reading } from "@/lib/content";
+import type { Reading, Track } from "@/lib/content";
 import { gradingExamplesBlock } from "@/lib/grading-examples";
+
+/**
+ * The audience band a track is calibrated for — WHO the tutor is talking to and
+ * the grader thinks it is reading, NOT how strictly to grade. Junior swaps the
+ * grade band down; everything that sets strictness (the calibration anchors, the
+ * judging principles, the +1 leniency bump) is untouched. `ageRange` is used in
+ * the tutor's style guide; `gradeBand` in the key-ideas bar and the grader's
+ * setup/calibration lines.
+ */
+export type Audience = { ageRange: string; gradeBand: string };
+export const AUDIENCE: Record<Track, Audience> = {
+  senior: { ageRange: "13–16 year old", gradeBand: "grade 8–10" },
+  junior: { ageRange: "10–13 year old", gradeBand: "grade 5–7" },
+};
 
 /**
  * The voice tutor's "brief" — built fresh for each session from the day's
@@ -13,10 +27,13 @@ import { gradingExamplesBlock } from "@/lib/grading-examples";
  */
 
 // A high-level style guide. Tune this freely — it's the single place that
-// shapes the tutor's manner. (No student data lives here.)
-const STYLE_GUIDE = `
+// shapes the tutor's manner. (No student data lives here.) The audience's
+// `ageRange` is the only track-dependent bit — everything else is identical for
+// both tracks.
+function styleGuide(audience: Audience): string {
+  return `
 HOW YOU QUIZ (your teaching style):
-- Warm, patient, and encouraging. You are talking to a 13–16 year old, many of
+- Warm, patient, and encouraging. You are talking to a ${audience.ageRange}, many of
   whom are new to reading the news and know little about the wider world. Keep
   your language friendly and plain.
 - This is a back-and-forth conversation, not an essay. Your questions are shown to
@@ -43,6 +60,7 @@ HOW YOU QUIZ (your teaching style):
 - Stay strictly on today's article and its words and concepts. If the student
   drifts off-topic, steer them back kindly.
 `.trim();
+}
 
 function vocabBlock(reading: Reading): string {
   return reading.vocab
@@ -103,9 +121,11 @@ function handoutText(reading: Reading): string {
 export function buildInstructions(
   reading: Reading,
   studentName: string,
-  articleText?: string | null
+  articleText?: string | null,
+  track: Track = "senior"
 ): string {
   const name = studentName.trim() || "the student";
+  const audience = AUDIENCE[track];
   // Some days are vocabulary-only. When there are no concepts, the tutor skips
   // the concepts stage entirely (rather than quizzing on concepts that don't exist).
   const hasConcepts = reading.concepts.length > 0;
@@ -147,9 +167,9 @@ ${vocabBlock(reading)}${
    FULL ARTICLE above, GENEROUSLY:
    - They read the article only once or twice and are recalling from memory, so do
      NOT chase small details or expect exact wording. Most minutiae do not matter.
-   - The bar is a GOOD READING BY A TYPICAL 8TH–10TH GRADER, not a perfect summary:
-     did they convey a substantial share of the article's real key ideas and go a
-     little beyond simply restating the headline/title?
+   - The bar is a GOOD READING BY A TYPICAL ${audience.gradeBand.toUpperCase()} STUDENT, not a
+     perfect summary: did they convey a substantial share of the article's real key
+     ideas and go a little beyond simply restating the headline/title?
    - IF they cleared that bar (a reasonable, substantial account — what you'd expect
      from a solid reading), do NOT ask ANY follow-up. Acknowledge it warmly in a few
      words and move straight on to the vocabulary. Don't pepper a good answer with
@@ -167,8 +187,8 @@ ${vocabBlock(reading)}${
     : `1. KEY IDEAS — JUDGE THE RETELLING, THEN AT MOST ONE BROAD FOLLOW-UP.
    The student's first answer in the transcript is their from-memory retelling of
    the article (the opening already asked ${name} for it). Judge it generously,
-   against a good reading by a typical 8th–10th grader: did they convey a substantial
-   share of the article's real ideas and go a little beyond just restating the title?
+   against a good reading by a typical ${audience.gradeBand} student: did they convey a
+   substantial share of the article's real ideas and go a little beyond just restating the title?
    If they cleared that bar, do NOT ask any follow-up — acknowledge it and move on to
    the words. ONLY IF their account was clearly wrong or significantly lacking do you
    ask EXACTLY ONE broad, thematic follow-up question (about the big picture / main
@@ -180,10 +200,10 @@ ${vocabBlock(reading)}${
 
   return `
 You are a friendly oral-quiz tutor for the Reading Club. You are quizzing a
-US middle/high-school student named ${name} about a news article they were asked
+US student named ${name} about a news article they were asked
 to read today. The whole exchange happens by voice.
 
-${STYLE_GUIDE}
+${styleGuide(audience)}
 
 TODAY'S ARTICLE
 Title: "${reading.title}"
@@ -263,8 +283,10 @@ object and never repeat it — in exactly this shape:
 export function buildReportPrompt(
   reading: Reading,
   transcript: string,
-  articleText?: string | null
+  articleText?: string | null,
+  track: Track = "senior"
 ): string {
+  const audience = AUDIENCE[track];
   // The article is the grader's reference; included as its own clearly-delimited
   // section below (omitted when we don't have the full text).
   const articleSection = articleText
@@ -280,9 +302,11 @@ ${articleText}
   const hasConcepts = reading.concepts.length > 0;
 
   // Calibration anchors — but EXCLUDE any example drawn from today's own article
-  // (passing reading.date), so an anchor never describes/pre-judges the very
-  // transcript being graded. Omit the whole section if nothing remains.
-  const calibration = gradingExamplesBlock(reading.date);
+  // (passing this reading's track + date), so an anchor never describes/pre-judges
+  // the very transcript being graded. Excluding on track+date (not date alone)
+  // keeps a senior anchor that merely shares a date with a junior reading. Omit
+  // the whole section if nothing remains.
+  const calibration = gradingExamplesBlock(track, reading.date);
   const calibrationSection = calibration
     ? `CALIBRATION EXAMPLES (how to score consistently):\n${calibration}\n\n`
     : "";
@@ -292,7 +316,7 @@ You are an experienced teacher writing a short report card for a student. All of
 your instructions are in this section; the ARTICLE and the TRANSCRIPT you are
 grading follow afterward, each in its own clearly marked section.
 
-THE SETUP — what this is: The Reading Club gives a small group of US grade 8–10
+THE SETUP — what this is: The Reading Club gives a small group of US ${audience.gradeBand}
 students one news article to read each day. After a student has read that day's
 article, an AI tutor quizzes them about it out loud — asking them to recall the
 key ideas in their own words, then checking the day's vocabulary${
@@ -336,7 +360,7 @@ HOW TO JUDGE:
   small factual slip. A genuine conceptual error about how something works should
   keep an answer out of the top band even if its coverage was wide.
 - Calibrate the score against THIS article's own ceiling — how much of its real
-  substance a strong grade 8–10 reader could be expected to cover — so the same
+  substance a strong ${audience.gradeBand} reader could be expected to cover — so the same
   number means the same thing from one article and one day to the next. Use the
   full 1–10 range; do not default everyone into 8–9.
 

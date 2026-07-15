@@ -33,12 +33,21 @@
  *   `covered` + the revised `score` + the principle in `why`).
  */
 
+import type { Track } from "@/lib/content";
+
 export type GradingExample = {
   /**
-   * The date (YYYY-MM-DD) the example's session came from. Used to EXCLUDE an
-   * example when grading its own article — an anchor must never describe (and
-   * pre-judge / leak the answer key for) the very transcript being graded, and
-   * the "from a different article" framing must stay literally true.
+   * The track this example's session came from. All current anchors are senior
+   * (there are no junior transcripts yet). Paired with `sourceDate` to EXCLUDE
+   * an anchor only when grading its OWN (track, date) — a junior reading that
+   * happens to share a date with a senior anchor must NOT drop that anchor.
+   */
+  track: Track;
+  /**
+   * The date (YYYY-MM-DD) the example's session came from. Used with `track` to
+   * EXCLUDE an example when grading its own article — an anchor must never
+   * describe (and pre-judge / leak the answer key for) the very transcript being
+   * graded, and the "from a different article" framing must stay literally true.
    */
   sourceDate: string;
   /** Short title of the article the example came from (a DIFFERENT day). */
@@ -55,6 +64,7 @@ export type GradingExample = {
 
 export const GRADING_EXAMPLES: GradingExample[] = [
   {
+    track: "senior",
     sourceDate: "2026-06-25",
     article: "The data-center boom and inflation",
     ceiling:
@@ -65,6 +75,7 @@ export const GRADING_EXAMPLES: GradingExample[] = [
     why: "A complete, accurate account that reaches the article's HARDEST, subtlest ideas earns the top band; trivial factual slips do not pull it down.",
   },
   {
+    track: "senior",
     sourceDate: "2026-06-25",
     article: "The data-center boom and inflation",
     ceiling:
@@ -75,6 +86,7 @@ export const GRADING_EXAMPLES: GradingExample[] = [
     why: "Length and concrete detail are NOT depth. A longer, example-rich transcript that misses the subtlest concepts scores BELOW a tighter one that covers them — grade the distinct correct ideas covered, not the word count.",
   },
   {
+    track: "senior",
     sourceDate: "2026-06-23",
     article: "How to win the World Cup",
     ceiling:
@@ -85,6 +97,7 @@ export const GRADING_EXAMPLES: GradingExample[] = [
     why: "The TOP of the scale: a complete AND accurate account that reaches the article's hardest, least-obvious theme and gets every concept right, with no real errors. Reserve 9.5–10 for this. An answer that is fluent and strong but misses a major theme OR a subtle concept sits a clear notch below, even if nothing in it is wrong.",
   },
   {
+    track: "senior",
     sourceDate: "2026-06-23",
     article: "How to win the World Cup",
     ceiling:
@@ -95,6 +108,7 @@ export const GRADING_EXAMPLES: GradingExample[] = [
     why: "Reward breadth and independent thinking, but a genuine conceptual error about a core mechanism keeps even a wide-ranging, creative answer OUT of the top band.",
   },
   {
+    track: "senior",
     sourceDate: "2026-06-23",
     article: "How to win the World Cup",
     ceiling:
@@ -105,6 +119,7 @@ export const GRADING_EXAMPLES: GradingExample[] = [
     why: "Accuracy alone is not enough. An answer that is correct but covers only the obvious points and skips a WHOLE major theme of the article sits in the middle band — calibrate against the article's full ceiling, not against 'did they say anything wrong.'",
   },
   {
+    track: "senior",
     sourceDate: "2026-06-24",
     article: "Europeans should embrace air-conditioning",
     ceiling:
@@ -117,14 +132,20 @@ export const GRADING_EXAMPLES: GradingExample[] = [
 ];
 
 /**
- * Render the calibration examples as a prompt block. Pass the date of the
- * article being graded as `excludeDate` so an example never anchors the grading
- * of its OWN article (which would leak the answer key and pre-judge the very
- * transcript). Returns "" when no examples remain — the caller then omits the
- * whole CALIBRATION section.
+ * Render the calibration examples as a prompt block. Pass the (track, date) of
+ * the article being graded so an example never anchors the grading of its OWN
+ * article (which would leak the answer key and pre-judge the very transcript).
+ * Excluding on track+date (not date alone) means a junior reading that happens
+ * to share a date with a senior anchor keeps that anchor. Returns "" when no
+ * examples remain — the caller then omits the whole CALIBRATION section.
  */
-export function gradingExamplesBlock(excludeDate?: string): string {
-  const examples = GRADING_EXAMPLES.filter((e) => e.sourceDate !== excludeDate);
+export function gradingExamplesBlock(
+  excludeTrack?: Track,
+  excludeDate?: string
+): string {
+  const examples = GRADING_EXAMPLES.filter(
+    (e) => !(e.sourceDate === excludeDate && e.track === excludeTrack)
+  );
   if (examples.length === 0) return "";
   const items = examples.map((e, i) => {
     return [

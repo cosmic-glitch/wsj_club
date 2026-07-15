@@ -1,7 +1,7 @@
 import { handleUpload, type HandleUploadBody } from "@vercel/blob/client";
 import { currentUser } from "@/lib/auth";
-import { getReading } from "@/lib/content";
-import { safeNameOf, slotAudioPathname } from "@/lib/session-io";
+import { getReading, type Track } from "@/lib/content";
+import { safeNameOf, sessionPrefix, slotAudioPathname } from "@/lib/session-io";
 
 /**
  * Issues a short-lived, auth-gated token so the browser can upload a finished
@@ -31,14 +31,23 @@ export async function POST(request: Request): Promise<Response> {
       onBeforeGenerateToken: async (pathname, clientPayload) => {
         const user = await currentUser();
         if (!user) throw new Error("Not logged in.");
+        // Inside onBeforeGenerateToken there is NO request body — the date AND
+        // track come from clientPayload (a JSON string the browser passes to
+        // upload()). Both must ride there at every client upload site.
         let date = "";
+        let track: Track = "senior";
         try {
-          date = (JSON.parse(clientPayload ?? "{}").date ?? "").trim();
+          const payload = JSON.parse(clientPayload ?? "{}");
+          date = (payload.date ?? "").trim();
+          if (payload.track === "junior") track = "junior";
         } catch {
           // no / invalid payload → date stays empty → rejected below
         }
-        if (!getReading(date)) throw new Error("Unknown reading.");
-        if (!pathname.startsWith(`quiz-sessions/${date}/`)) {
+        if (!getReading(date, track)) throw new Error("Unknown reading.");
+        // Pin the upload to this (track, date)'s session folder — the
+        // track-prefixed prefix, NOT a bare `quiz-sessions/` (that would let a
+        // forged token write arbitrary paths).
+        if (!pathname.startsWith(`quiz-sessions/${sessionPrefix(track, date)}/`)) {
           throw new Error("Unexpected upload path.");
         }
         // The stable in-progress slot WAV (the pause-time audio flush; see
@@ -47,7 +56,7 @@ export async function POST(request: Request): Promise<Response> {
         // pathname is rejected: addRandomSuffix means it couldn't overwrite
         // anything, but a stray `…-inprogress-xyz.wav` would look confusingly
         // like slot state.
-        if (pathname === slotAudioPathname(date, safeNameOf(user))) {
+        if (pathname === slotAudioPathname(track, date, safeNameOf(user))) {
           return {
             allowedContentTypes: ["audio/wav"],
             addRandomSuffix: false,

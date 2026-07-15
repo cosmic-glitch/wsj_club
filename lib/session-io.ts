@@ -1,4 +1,5 @@
 import { del, list } from "@vercel/blob";
+import type { Track } from "@/lib/content";
 
 /**
  * Shared server-side helpers for the voice-quiz session records in Blob — the
@@ -23,16 +24,35 @@ export function safeNameOf(name: string): string {
 }
 
 /**
+ * The Blob key prefix for one (track, date)'s session records: `junior/<date>`
+ * on the junior track, else just `<date>`. EVERY `quiz-sessions/…` literal must
+ * route through this — a junior article almost always shares a date with a
+ * senior one, so a track-blind key would collide (overwriting the senior day's
+ * sessions / slot).
+ *
+ * `track` is REQUIRED here and on every slot helper below — deliberately no
+ * `"senior"` default. A default would let a junior call site compile while
+ * silently computing the *senior* path, and because the slot flush is
+ * best-effort that failure is invisible (a lost junior recording / an orphaned
+ * junior slot). Required params make every call site a compile error the checker
+ * enumerates. The default lives at the API boundary, where each route parses
+ * `track` out of the request once.
+ */
+export function sessionPrefix(track: Track, date: string): string {
+  return track === "junior" ? `junior/${date}` : date;
+}
+
+/**
  * The slot's stable keys. IMPORTANT: derive `safeName` from the COOKIE user,
  * never from the request body — these pathnames are overwritable, so a
  * body-derived name would let a crafted request stomp another student's slot.
  */
-export function slotJsonPathname(date: string, safeName: string): string {
-  return `quiz-sessions/${date}/${safeName}-inprogress.json`;
+export function slotJsonPathname(track: Track, date: string, safeName: string): string {
+  return `quiz-sessions/${sessionPrefix(track, date)}/${safeName}-inprogress.json`;
 }
 
-export function slotAudioPathname(date: string, safeName: string): string {
-  return `quiz-sessions/${date}/${safeName}-inprogress.wav`;
+export function slotAudioPathname(track: Track, date: string, safeName: string): string {
+  return `quiz-sessions/${sessionPrefix(track, date)}/${safeName}-inprogress.wav`;
 }
 
 // ---- Sanitizers for client-sent fields (free text — cap everything) --------
@@ -126,10 +146,11 @@ export type SlotRecord = Record<string, unknown> & {
  * slot created in the last few seconds (the existence check).
  */
 export async function readSlot(
+  track: Track,
   date: string,
   safeName: string
 ): Promise<{ url: string; session: SlotRecord } | null> {
-  const target = slotJsonPathname(date, safeName);
+  const target = slotJsonPathname(track, date, safeName);
   const { blobs } = await list({ prefix: target });
   const blob = blobs.find((b) => b.pathname === target);
   if (!blob) return null;
@@ -145,13 +166,22 @@ export async function readSlot(
  * "Continue" can't linger and the one-per-day slot frees up. Idempotent: a very
  * early exit simply has no slot to remove.
  */
-export async function deleteSlot(date: string, safeName: string): Promise<void> {
+export async function deleteSlot(
+  track: Track,
+  date: string,
+  safeName: string
+): Promise<void> {
   const targets = new Set([
-    slotJsonPathname(date, safeName),
-    slotAudioPathname(date, safeName),
+    slotJsonPathname(track, date, safeName),
+    slotAudioPathname(track, date, safeName),
   ]);
+  // deleteSlot hand-rolls its own list() prefix (it does NOT call the pathname
+  // helpers for the list), so it must route through sessionPrefix too — left
+  // senior-keyed, End/Cancel/Start-over on a JUNIOR attempt would list the
+  // senior prefix, find nothing, and orphan the junior slot (an immortal
+  // "Continue"). The required `track` param forces this.
   const { blobs } = await list({
-    prefix: `quiz-sessions/${date}/${safeName}-inprogress`,
+    prefix: `quiz-sessions/${sessionPrefix(track, date)}/${safeName}-inprogress`,
   });
   const urls = blobs.filter((b) => targets.has(b.pathname)).map((b) => b.url);
   if (urls.length) await del(urls);
