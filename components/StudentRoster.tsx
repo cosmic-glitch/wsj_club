@@ -33,21 +33,27 @@ export default function StudentRoster({
   title = "My classroom",
   subtitle = "The students you manage. Add a student to give them a login for the voice quiz.",
   readOnly = false,
+  canAdd,
   showTitle = true,
 }: {
   students: RosterEntry[];
   teacherName: string;
   title?: string;
   subtitle?: string;
-  // When true (the owner viewing ANOTHER teacher's classroom), the roster is
-  // view-only: no Add button and no Rename/Reset row actions. The /api/students*
-  // routes ownership-check every mutation and don't exempt the owner, so hiding
-  // the controls here matches what the owner is actually allowed to do.
+  // When true (the owner viewing ANOTHER teacher's classroom), the Rename/Reset
+  // row actions are hidden — those stay own-classroom for everyone (the
+  // /api/students/[username] route ownership-checks and doesn't exempt the
+  // owner). Adding is controlled separately by `canAdd`.
   readOnly?: boolean;
+  // Whether the Add-student button shows. Defaults to `!readOnly`; the owner's
+  // other-teacher tabs pass `canAdd` so the owner can add a student to any
+  // classroom (created under `teacherName`) even while it's otherwise read-only.
+  canAdd?: boolean;
   // When false (inside the owner's classroom tabs), the big <h1> is dropped —
   // the tab already names the classroom — leaving just the subtitle + Add button.
   showTitle?: boolean;
 }) {
+  const showAdd = canAdd ?? !readOnly;
   const router = useRouter();
   const [addOpen, setAddOpen] = useState(false);
   const [credential, setCredential] = useState<Credential | null>(null);
@@ -68,7 +74,7 @@ export default function StudentRoster({
             {subtitle}
           </p>
         </div>
-        {!readOnly && (
+        {showAdd && (
           <button
             type="button"
             onClick={() => setAddOpen(true)}
@@ -81,9 +87,9 @@ export default function StudentRoster({
 
       {students.length === 0 ? (
         <p className="mt-6 border-[3px] border-dashed border-[#0a0a0a] bg-white p-8 text-center font-mono text-sm font-bold uppercase tracking-[.08em] text-stone-500">
-          {readOnly
-            ? "No students in this classroom yet."
-            : "No students yet. Add your first student to get started."}
+          {showAdd
+            ? "No students yet. Add your first student to get started."
+            : "No students in this classroom yet."}
         </p>
       ) : (
         <div className="mt-6 overflow-hidden border-[3px] border-[#0a0a0a] bg-white">
@@ -359,7 +365,9 @@ function AddStudentModal({
       const res = await fetch("/api/students", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ displayName, username, password }),
+        // teacherId names the classroom to add to. The server forces it to the
+        // caller for a regular teacher; only the owner may target another one.
+        body: JSON.stringify({ displayName, username, password, teacherId: teacherName }),
       });
       const d = await res.json();
       if (!res.ok) {

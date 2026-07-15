@@ -83,10 +83,12 @@ export default async function StudentsPage() {
 
   const ownRoster = toRoster(await listStudents(user));
 
-  // The owner also SEES every other teacher's classroom, read-only (they manage
-  // only their own — the /api/students* routes enforce that regardless). A
-  // regular teacher, and a lone owner with no other teachers, manages just their
-  // own classroom with no tab bar (unchanged).
+  // The owner also SEES every other teacher's classroom. It may ADD a student to
+  // any of them (the /api/students POST lets the owner target a teacherId), but
+  // Rename/Reset stay own-classroom (the /api/students/[username] route still
+  // ownership-checks and doesn't exempt the owner). A regular teacher, and a
+  // lone owner with no other teachers, manages just their own classroom with no
+  // tab bar (unchanged).
   const others = isOwner(user)
     ? (await listTeachers()).filter((t) => t.username !== user)
     : [];
@@ -99,9 +101,9 @@ export default async function StudentsPage() {
     );
   }
 
-  // Owner + other teachers → one tab per classroom (own first, editable; each
-  // other teacher's read-only). The tab names the classroom, so the roster drops
-  // its own heading (showTitle={false}).
+  // Owner + other teachers → one tab per classroom (own first, fully editable;
+  // each other teacher's lets the owner ADD students but not Rename/Reset). The
+  // tab names the classroom, so the roster drops its own heading (showTitle={false}).
   const otherTabs = await Promise.all(
     others.map(async (t) => ({
       key: t.username,
@@ -111,8 +113,9 @@ export default async function StudentsPage() {
           <StudentRoster
             students={toRoster(await listStudents(t.username))}
             teacherName={t.username}
-            subtitle={`Managed by ${t.displayName}. View only — you can see this classroom but only manage your own.`}
+            subtitle={`Managed by ${t.displayName}. You can add a student here; only ${t.displayName} can rename or reset passwords.`}
             readOnly
+            canAdd
             showTitle={false}
           />
         </div>
@@ -138,8 +141,9 @@ export default async function StudentsPage() {
         Manage students
       </h1>
       <p className="mt-2 font-mono text-xs text-stone-500">
-        Every classroom — your own and each teacher&apos;s. You manage your own;
-        the others are view-only.
+        Every classroom — your own and each teacher&apos;s. You can add a student
+        to any of them; renaming and password resets stay with each classroom&apos;s
+        own teacher.
       </p>
       <div className="mt-8">
         <ClassroomTabs tabs={tabs} />
