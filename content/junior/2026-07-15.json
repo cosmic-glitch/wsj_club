@@ -1,0 +1,115 @@
+{
+  "date": "2026-07-15",
+  "title": "The Greatest Rivalry in Sports Braces for Its Biggest Game Ever",
+  "articleUrl": "https://www.wsj.com/sports/soccer/england-argentina-world-cup-maradona-c9b4d29c",
+  "pdfUrl": "/pdfs/junior/2026-07-15.pdf",
+  "voiceQuiz": true,
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "effigy",
+      "partOfSpeech": "noun",
+      "pronunciation": "EF-ih-jee",
+      "articleQuote": "an effigy of a player hanged outside a London pub",
+      "inContext": "Furious England fans made a dummy meant to look like the player David Beckham and hung it up outside a pub to show how angry they were at him.",
+      "meaning": "An effigy is a rough model or dummy of a real person, usually made so people can mock, insult, or protest against that person.",
+      "examples": [
+        "Every year the festival ends by burning a giant effigy made of straw and old clothes.",
+        "The protesters carried an effigy of the unpopular mayor through the streets to show how angry they were."
+      ]
+    },
+    {
+      "word": "sublime",
+      "partOfSpeech": "adjective",
+      "pronunciation": "suh-BLYME",
+      "articleQuote": "a goal so sublime it became known as the “Goal of the Century”",
+      "inContext": "Maradona's second goal was so beautiful and skillful — he dribbled past five England players — that people were amazed and called it the greatest goal ever.",
+      "meaning": "Sublime means something is so beautiful, skillful, or impressive that it almost takes your breath away.",
+      "examples": [
+        "The gymnast's final routine was sublime — the whole gym went silent, then erupted in cheers.",
+        "Grandma's cooking is good, but her apple pie is absolutely sublime."
+      ]
+    },
+    {
+      "word": "infraction",
+      "partOfSpeech": "noun",
+      "pronunciation": "in-FRAK-shun",
+      "articleQuote": "one with his fist, an infraction that was missed by the referee",
+      "inContext": "Punching the ball into the goal with his hand is against the rules of soccer, but the referee didn't see Maradona do it, so the goal still counted.",
+      "meaning": "An infraction is a breaking of a rule or law — usually a specific one, like a rule in a game.",
+      "examples": [
+        "Talking during the fire drill is a small infraction, but you might still lose a few recess minutes.",
+        "In basketball, stepping over the line on a free throw is an infraction that cancels the point."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Proxy",
+      "articleQuote": "even more bad blood had boiled over between the two countries following the 1982 Falklands War",
+      "meaning": "A proxy is a stand-in — something that takes the place of the real thing. In 1982, England and Argentina actually fought a short war over some islands in the ocean. They are not going to fight another war over a soccer game, but when their teams meet, the match becomes a proxy for all that old anger and pride. The game is really about who is the “better” country, not just who is better at soccer.\n\nYou see proxies all the time. When two friend groups can't stand each other, they might settle it with a basketball game instead of an actual fight — the game stands in for the real argument. That's a proxy: a smaller, safer contest that carries the weight of a much bigger one."
+    },
+    {
+      "name": "Redemption",
+      "articleQuote": "England’s group-stage meeting with Argentina was decided by a single goal: a redemptive Beckham penalty",
+      "meaning": "Redemption is when you do something good that makes up for an earlier mistake — and changes how people see you. David Beckham was the villain in 1998: he got kicked out of a huge game, England lost, and furious fans hung a dummy of him outside a pub. Four years later, in almost the same situation against the same team, he stepped up and scored the winning goal. That one kick flipped him from “the boy who lost us the game” into a hero.\n\nIt works the same way at school or on your own team. If you drop the ball and cost your team the point, that moment can follow you around — until you make the game-winning play the next week. The mistake doesn't magically disappear, but the comeback is what people remember. That's redemption."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why does an England–Argentina soccer match feel so much bigger than a normal game?",
+      "options": [
+        "Because the winner gets more prize money",
+        "Because it stands in for real history between the two countries, like the 1982 Falklands War",
+        "Because the two teams play each other every week",
+        "Because both teams are brand new"
+      ],
+      "answerIndex": 1,
+      "explanation": "The match is a proxy — it carries the weight of real-world history and national pride, not just the soccer."
+    },
+    {
+      "question": "The article says fans hung an “effigy” of David Beckham outside a pub. What is an effigy?",
+      "options": [
+        "A trophy",
+        "A rough dummy or model of a real person, made to mock them",
+        "A type of song",
+        "A newspaper headline"
+      ],
+      "answerIndex": 1,
+      "explanation": "An effigy is a crude model or dummy of a person — angry fans made one of Beckham to show their fury."
+    },
+    {
+      "question": "Maradona's second goal in 1986 was described as “sublime.” What does that mean?",
+      "options": [
+        "Sneaky and unfair",
+        "So beautiful and skillful it's breathtaking",
+        "Very lucky",
+        "Slow and boring"
+      ],
+      "answerIndex": 1,
+      "explanation": "Sublime means so impressive or beautiful it almost takes your breath away — he dribbled past five defenders to score it."
+    },
+    {
+      "question": "Maradona's first goal that day was scored with his fist, which the article calls an “infraction.” An infraction is —",
+      "options": [
+        "a brilliant, legal move",
+        "a breaking of a rule",
+        "a kind of penalty kick",
+        "the team captain"
+      ],
+      "answerIndex": 1,
+      "explanation": "An infraction is a breaking of a rule; using his hand was illegal in soccer, but the referee missed it, so the goal counted."
+    },
+    {
+      "question": "In 1998 Beckham was blamed for England's loss; in 2002 he scored the winning goal against Argentina. His story is a great example of —",
+      "options": [
+        "scarcity",
+        "redemption",
+        "an infraction",
+        "an effigy"
+      ],
+      "answerIndex": 1,
+      "explanation": "Redemption is making up for a past mistake in a way that changes how people see you — Beckham went from villain to hero."
+    }
+  ]
+}
