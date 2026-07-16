@@ -5,23 +5,29 @@ import { useState, type ReactNode } from "react";
 export type ClassroomTab = { key: string; label: string; content: ReactNode };
 
 /**
- * Owner-only tabbed switcher over multiple classrooms (the Scores + Manage
- * Students pages). Each tab's content is server-rendered and passed in as a
- * ReactNode; every panel stays mounted (inactive ones hidden with `hidden`) so
- * switching tabs preserves any in-panel state — an open attempt modal, a
- * half-typed rename — and never refetches. Collapses to just the content when
- * there's a single classroom, so a lone teacher sees no tab bar.
+ * Owner-only tabbed switcher (a generic 2+-panel toggle). Used for the Manage
+ * Students classroom tabs AND the owner's Scores Regular/Junior track split.
+ * Each tab's content is server-rendered and passed in as a ReactNode; every
+ * panel stays mounted (inactive ones hidden with `hidden`) so switching tabs
+ * preserves any in-panel state — an open attempt modal, a half-typed rename —
+ * and never refetches. Collapses to just the content when there's a single tab.
  */
-export default function ClassroomTabs({ tabs }: { tabs: ClassroomTab[] }) {
+export default function ClassroomTabs({
+  tabs,
+  ariaLabel = "Classrooms",
+}: {
+  tabs: ClassroomTab[];
+  ariaLabel?: string;
+}) {
   const [active, setActive] = useState(0);
 
   if (tabs.length <= 1) return <>{tabs[0]?.content ?? null}</>;
 
   return (
     <div>
-      {/* Boxed uppercase toggle buttons — the selected classroom is the
-          inverted (black/yellow) one, matching the site's button language. */}
-      <div role="tablist" aria-label="Classrooms" className="flex flex-wrap gap-2">
+      {/* Boxed uppercase toggle buttons — the selected tab is the inverted
+          (black/yellow) one, matching the site's button language. */}
+      <div role="tablist" aria-label={ariaLabel} className="flex flex-wrap gap-2">
         {tabs.map((t, i) => {
           const selected = i === active;
           return (

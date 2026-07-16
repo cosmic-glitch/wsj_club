@@ -6,6 +6,7 @@ import AdminSessions, {
   type Session,
   type ArticleGroup,
 } from "@/components/AdminSessions";
+import ClassroomTabs from "@/components/ClassroomTabs";
 
 // Reads cookies + Blob at request time — never static.
 export const dynamic = "force-dynamic";
@@ -192,9 +193,11 @@ export default async function AdminPage() {
   }
 
   // The OWNER sees EVERY classroom collapsed into ONE table (no more per-teacher
-  // tabs to click through), by article, newest first — junior and senior
-  // combined — with a Teacher column naming whose classroom each attempt belongs
-  // to. The owner may delete in any classroom, so the whole table is deletable.
+  // tabs to click through), by article, newest first, with a Teacher column
+  // naming whose classroom each attempt belongs to. The junior and senior tracks
+  // are split into two tabs (Regular is the default) so a junior 8/10 is never
+  // shown alongside a senior 8/10; within each tab it's still all classrooms
+  // combined. The owner may delete in any classroom, so both tables are deletable.
   //
   // Resolve each session's teacher: prefer the stamped teacherId; fall back to
   // roster membership by the owning student (older sessions predate teacherId).
@@ -215,6 +218,9 @@ export default async function AdminPage() {
   };
   const enriched = result.map((s) => ({ ...s, teacherName: teacherNameFor(s) }));
 
+  const seniorGroups = groupByArticle(enriched.filter((s) => s.track !== "junior"));
+  const juniorGroups = groupByArticle(enriched.filter((s) => s.track === "junior"));
+
   return (
     <div>
       <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
@@ -225,7 +231,23 @@ export default async function AdminPage() {
         whose classroom each is. Click Details for the full report card,
         recording, and transcript.
       </p>
-      {classroomPanel(groupByArticle(enriched), true, user, true)}
+      <div className="mt-6">
+        <ClassroomTabs
+          ariaLabel="Reading track"
+          tabs={[
+            {
+              key: "senior",
+              label: "Regular",
+              content: classroomPanel(seniorGroups, true, user, true),
+            },
+            {
+              key: "junior",
+              label: "Junior",
+              content: classroomPanel(juniorGroups, true, user, true),
+            },
+          ]}
+        />
+      </div>
     </div>
   );
 }
