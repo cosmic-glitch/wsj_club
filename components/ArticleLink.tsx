@@ -26,10 +26,12 @@ export default function ArticleLink({
   href,
   className,
   children,
+  onClick,
 }: {
   href: string;
   className?: string;
   children: React.ReactNode;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>; // e.g. stopPropagation inside a clickable card (the vote modal)
 }) {
   // Default to a new tab so server render / no-JS / desktop all behave well;
   // switch to same-tab once we know we're on a touch-primary device.
@@ -46,6 +48,7 @@ export default function ArticleLink({
       rel={newTab ? "noopener noreferrer" : undefined}
       referrerPolicy="no-referrer"
       className={className}
+      onClick={onClick}
     >
       {children}
     </a>
