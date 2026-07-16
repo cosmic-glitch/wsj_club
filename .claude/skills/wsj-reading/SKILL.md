@@ -265,6 +265,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - **Multi-article days:** set `articles: [{ title, articleUrl, pdfUrl }, …]` instead of the top-level `articleUrl`/`pdfUrl` (one entry per source, in reading order). The handout `title` is then an **umbrella title** for the bundle (e.g. `"World Cup News"`) — this is the one case where a combined title beats a single headline; each individual article keeps its real WSJ headline inside `articles[]`. The index's Article column lists each one (**Article 1 · PDF**, **Article 2 · PDF**, …, each link → that article's `articleUrl`/`pdfUrl`). The handout and quiz are unchanged — one combined page. (First example: `content/2026-06-14.json`.)
 
 6. **Write `content/YYYY-MM-DD.json`** following the schema below exactly (include `pdfUrl` if you placed a PDF). Validate it's well-formed JSON.
+   - **Vote day → `clubPick: true`.** If the day's article was chosen by the club vote (the wsj-open-vote/wsj-check-vote flow — check with `node --env-file=.env.local scripts/check-vote.mjs YYYY-MM-DD`, or just: a poll exists for this date), set `"clubPick": true` so the index row carries the CLUB PICK chip. Publishing the reading is also what **closes** that poll — the home-page vote row disappears once this deploy lands, no extra step. On a non-vote day, omit the field.
    - **Generate pronunciation audio.** Each **vocab word** and **concept name** gets a ▶ "hear it" button on the handout that plays a pre-generated OpenAI-TTS clip (a natural US-English voice, `alloy`). Generate them from the just-written JSON:
      ```sh
      node --env-file=.env.local scripts/gen-pronunciation.mjs YYYY-MM-DD
@@ -321,6 +322,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
 
 Field notes:
 - `voiceQuiz`: set `"voiceQuiz": true` on **every new day**. It turns on the home-page **Voice quiz** launcher — the AI oral quiz that automates the 1-1. (Older days from before the feature omit it, so their Voice quiz column stays empty.) Pair it with the article-text upload in step 3 so the tutor gets the full article.
+- `clubPick`: set `"clubPick": true` **only when the day's article won the club vote** (see step 6) — it renders the CLUB PICK chip on the index row. Omit on normal days.
 - `pdfUrl` is the served path under `public/` (i.e. `/pdfs/YYYY-MM-DD.pdf`), **not** a filesystem path and **not** the raw `PDFs/` drop-zone. Omit the field entirely if there's no PDF for the day.
 - `answerIndex` is **0-based** (0 = first option). Double-check it points at the correct option.
 - `vocab` has **exactly 3 words** (a multi-article day may run ~4); each `examples` array has **exactly 2** sentences.

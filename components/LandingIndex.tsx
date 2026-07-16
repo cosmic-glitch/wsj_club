@@ -3,6 +3,7 @@ import ArticleLink from "@/components/ArticleLink";
 import HomeAuthBar from "@/components/HomeAuthBar";
 import TodayTag from "@/components/TodayTag";
 import VoiceQuizStep from "@/components/VoiceQuizStep";
+import VotePoll from "@/components/VotePoll";
 import { type Reading, type Track } from "@/lib/content";
 
 /** "2026-07-08" → "Jul 8" (rendered uppercase — the mockup's "JUL 8"). */
@@ -99,10 +100,18 @@ export default function LandingIndex({
           </p>
         ) : (
           <ul className="mt-[26px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] motion-reduce:animate-none">
+            {/* The daily article vote (senior only): a client row that pops in
+                as the FIRST entry while a poll is live and renders nothing
+                otherwise. Its `vote-live` class is what the [.vote-live~&]
+                variants below key off to demote the previous newest row. */}
+            {!junior && <VotePoll />}
             {readings.map((r, index) => {
               // The newest reading gets the yellow row + bigger title; the
               // TODAY chip appears only when its date is actually today
-              // (checked client-side in TodayTag).
+              // (checked client-side in TodayTag). While a vote poll is live
+              // (a preceding .vote-live sibling exists), the poll row IS the
+              // highlighted "today" entry, so the newest reading's yellow/size
+              // are demoted back to a normal row via sibling-selector variants.
               const newest = index === 0;
 
               // One set of links per source. Single-article days have one
@@ -117,7 +126,7 @@ export default function LandingIndex({
                 <li
                   key={r.date}
                   className={`group grid grid-cols-1 gap-y-[6px] border-b-2 border-[#0a0a0a] px-3.5 py-3 last:border-b-0 hover:bg-[#0a0a0a] hover:text-white min-[681px]:grid-cols-[112px_1fr_max-content] min-[681px]:items-center min-[681px]:gap-4 min-[681px]:px-4 ${
-                    newest ? "bg-[#ffe600]" : ""
+                    newest ? "bg-[#ffe600] [.vote-live~&]:bg-transparent" : ""
                   }`}
                 >
                   <span
@@ -132,11 +141,17 @@ export default function LandingIndex({
                   <span
                     className={`min-w-0 font-bold leading-[1.35] ${
                       newest
-                        ? "text-[19px] group-hover:text-[#ffe600]"
+                        ? "text-[19px] group-hover:text-[#ffe600] [.vote-live~li_&]:text-[14.5px]"
                         : "text-[14.5px]"
                     }`}
                   >
                     {r.title}
+                    {/* The day's article was chosen by the club's vote. */}
+                    {r.clubPick && (
+                      <span className="ml-2 inline-block whitespace-nowrap border-2 border-[#0a0a0a] px-[5px] py-[1px] align-[2px] text-[9px] font-bold uppercase tracking-[.14em] group-hover:border-white group-hover:text-white">
+                        Club pick
+                      </span>
+                    )}
                   </span>
 
                   <span className="flex flex-wrap gap-[6px] min-[681px]:flex-nowrap">

@@ -75,6 +75,7 @@ export type Reading = {
   pdfUrl?: string; // single-article days: served PDF, e.g. "/pdfs/2026-06-09.pdf"
   articles?: Source[]; // multi-article days: when set, the entry bundles these (top-level articleUrl/pdfUrl unused)
   voiceQuiz?: boolean; // when true, the home-page row's action bar shows a "Voice quiz" launcher for this day (login-gated; the skill sets it)
+  clubPick?: boolean; // when true, the day's article was chosen by the club's vote (see the daily vote in CLAUDE.md) — the index row shows a small CLUB PICK chip
   source?: string; // e.g. "The Wall Street Journal"
   vocab: VocabWord[];
   concepts: Concept[];
