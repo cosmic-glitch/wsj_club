@@ -30,6 +30,10 @@ export type Session = {
   // teacher to their own classroom. Older sessions predate it (undefined) — the
   // /admin filter then falls back to roster membership by loginUser.
   teacherId?: string;
+  // UI-only: the display name of the classroom teacher this attempt belongs to,
+  // resolved on the server for the OWNER's unified Scores table (the Teacher
+  // column). Not part of the saved session JSON; only populated when showTeacher.
+  teacherName?: string;
   endedAt: string;
   // Length of the saved recording (total talk time — the same duration the
   // playback control shows), in ms. Undefined when nothing was recorded → "—".
@@ -116,6 +120,7 @@ export default function AdminSessions({
   canDelete,
   teacherView = false,
   viewerUser,
+  showTeacher = false,
 }: {
   groups: ArticleGroup[];
   // Only the OWNER may delete attempts; a regular teacher views their classroom
@@ -129,6 +134,10 @@ export default function AdminSessions({
   // The logged-in viewer — an in-progress attempt shows its Continue button
   // only to the user who owns it (a teacher sees it as informational).
   viewerUser?: string | null;
+  // Show a Teacher column naming each attempt's classroom — only the OWNER's
+  // unified view (every classroom in one table) needs it; a regular teacher /
+  // student sees a single classroom, so the column would be redundant.
+  showTeacher?: boolean;
 }) {
   // Which attempt's detail is open in the modal (null = closed). A single
   // "Details" link per attempt opens the full combined view — feedback +
@@ -185,6 +194,9 @@ export default function AdminSessions({
               <th className="px-3 py-2.5 font-semibold">
                 <div className="flex items-end gap-2 px-1">
                   <span className="w-20 text-right">Student</span>
+                  {showTeacher && (
+                    <span className="w-24 text-right">Teacher</span>
+                  )}
                   <span className="w-10 text-right">Score</span>
                   <span className="w-8 text-right">Mins</span>
                   <span className="w-32 text-right">Time</span>
@@ -240,6 +252,11 @@ export default function AdminSessions({
                           <span className="w-20 shrink-0 truncate text-right font-medium text-stone-800">
                             {s.studentName}
                           </span>
+                          {showTeacher && (
+                            <span className="w-24 shrink-0 truncate text-right text-stone-500">
+                              {s.teacherName}
+                            </span>
+                          )}
                           <span className="w-10 shrink-0 whitespace-nowrap text-right font-mono font-bold text-[#0a0a0a]">
                             {s.inProgress ? "—" : fmtScore(score)}
                           </span>
@@ -377,8 +394,9 @@ export default function AdminSessions({
                     className="hover:bg-[#ffe600] hover:text-[#0a0a0a]"
                   >
                     {session.title}
-                  </Link>{" "}
-                  · {fmtLocal(session.endedAt ?? session.updatedAt ?? "", mounted)}
+                  </Link>
+                  {session.teacherName ? ` · ${session.teacherName}` : ""} ·{" "}
+                  {fmtLocal(session.endedAt ?? session.updatedAt ?? "", mounted)}
                 </p>
               </div>
               <button

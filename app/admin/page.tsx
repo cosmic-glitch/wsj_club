@@ -6,7 +6,6 @@ import AdminSessions, {
   type Session,
   type ArticleGroup,
 } from "@/components/AdminSessions";
-import ClassroomTabs, { type ClassroomTab } from "@/components/ClassroomTabs";
 
 // Reads cookies + Blob at request time — never static.
 export const dynamic = "force-dynamic";
@@ -76,7 +75,8 @@ function scopeToClassroom(
 function classroomPanel(
   groups: ArticleGroup[],
   canDelete: boolean,
-  viewerUser: string
+  viewerUser: string,
+  showTeacher = false
 ) {
   if (groups.length === 0) {
     return (
@@ -86,13 +86,16 @@ function classroomPanel(
     );
   }
   // Every classroom panel is a teacher/owner viewing classroom data, so the
-  // teacher-only notes show; only the owner's own classroom is deletable.
+  // teacher-only notes show; only the owner's own classroom is deletable. The
+  // owner's unified view (showTeacher) adds a column naming each attempt's
+  // classroom, since it collapses every classroom into one table.
   return (
     <AdminSessions
       groups={groups}
       canDelete={canDelete}
       teacherView
       viewerUser={viewerUser}
+      showTeacher={showTeacher}
     />
   );
 }
@@ -166,42 +169,14 @@ export default async function AdminPage() {
     );
   }
 
-  // Build a scoped classroom (roster = the teacher's students + the teacher).
-  // Delete is owner-only and the owner may delete in ANY classroom, so every tab
-  // the owner sees is deletable; a regular teacher gets no Delete column at all.
-  async function classroomGroups(teacher: string): Promise<ArticleGroup[]> {
-    const roster = new Set((await listStudents(teacher)).map((s) => s.username));
-    roster.add(teacher);
-    return groupByArticle(scopeToClassroom(result as Session[], teacher, roster));
-  }
-
-  const ownGroups = await classroomGroups(user);
-
-  // The owner also sees every OTHER teacher's classroom; a regular teacher (and
-  // a lone owner with no other teachers) sees just their own — no tab bar.
-  const others = owner
-    ? (await listTeachers()).filter((t) => t.username !== user)
-    : [];
-
-  // Another teacher's classroom with no recorded sessions gets no tab at all —
-  // an empty panel is just noise here (the own classroom keeps its empty state).
-  const otherTabs = (
-    await Promise.all(
-      others.map(async (t): Promise<ClassroomTab | null> => {
-        const groups = await classroomGroups(t.username);
-        if (groups.length === 0) return null;
-        return {
-          key: t.username,
-          label: `${t.displayName}’s classroom`,
-          // Only the owner builds otherTabs, and the owner may delete any
-          // classroom → these tabs are deletable too.
-          content: classroomPanel(groups, true, user),
-        };
-      })
-    )
-  ).filter((t): t is ClassroomTab => t !== null);
-
-  if (otherTabs.length === 0) {
+  // A REGULAR teacher sees only their own classroom — one table, no Teacher
+  // column, no Delete (Delete is owner-only). Roster = their students +
+  // themselves; older sessions predate teacherId, so scopeToClassroom falls back
+  // to roster membership by loginUser.
+  if (!owner) {
+    const roster = new Set((await listStudents(user)).map((s) => s.username));
+    roster.add(user);
+    const groups = groupByArticle(scopeToClassroom(result, user, roster));
     return (
       <div>
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
@@ -211,21 +186,34 @@ export default async function AdminPage() {
           Saved voice-quiz attempts by article — click Details on any attempt
           for its full report card, recording, and transcript.
         </p>
-        {classroomPanel(ownGroups, owner, user)}
+        {classroomPanel(groups, false, user)}
       </div>
     );
   }
 
-  // Owner + other teachers → one tab per classroom (own first). The owner may
-  // delete in any classroom, so every tab is deletable.
-  const tabs: ClassroomTab[] = [
-    {
-      key: user,
-      label: "My classroom",
-      content: classroomPanel(ownGroups, owner, user),
-    },
-    ...otherTabs,
-  ];
+  // The OWNER sees EVERY classroom collapsed into ONE table (no more per-teacher
+  // tabs to click through), by article, newest first — junior and senior
+  // combined — with a Teacher column naming whose classroom each attempt belongs
+  // to. The owner may delete in any classroom, so the whole table is deletable.
+  //
+  // Resolve each session's teacher: prefer the stamped teacherId; fall back to
+  // roster membership by the owning student (older sessions predate teacherId).
+  // A teacher's own attempts map to themselves.
+  const teachers = await listTeachers();
+  const teacherDisplay = new Map(teachers.map((t) => [t.username, t.displayName]));
+  const studentToTeacher = new Map<string, string>();
+  for (const t of teachers) {
+    studentToTeacher.set(t.username, t.username);
+    for (const st of await listStudents(t.username)) {
+      studentToTeacher.set(st.username, t.username);
+    }
+  }
+  const teacherNameFor = (s: Session): string => {
+    const student = s.loginUser ?? s.studentName ?? "";
+    const uname = s.teacherId || studentToTeacher.get(student) || "";
+    return teacherDisplay.get(uname) || uname || "—";
+  };
+  const enriched = result.map((s) => ({ ...s, teacherName: teacherNameFor(s) }));
 
   return (
     <div>
@@ -233,12 +221,11 @@ export default async function AdminPage() {
         Quiz sessions
       </h1>
       <p className="mt-2 font-mono text-xs text-stone-500">
-        Every classroom — your own and each teacher&apos;s. Click Details on
-        any attempt for its full report card, recording, and transcript.
+        Every classroom&apos;s attempts, by article — the Teacher column shows
+        whose classroom each is. Click Details for the full report card,
+        recording, and transcript.
       </p>
-      <div className="mt-8">
-        <ClassroomTabs tabs={tabs} />
-      </div>
+      {classroomPanel(groupByArticle(enriched), true, user, true)}
     </div>
   );
 }
