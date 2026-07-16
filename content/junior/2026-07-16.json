@@ -1,0 +1,115 @@
+{
+  "date": "2026-07-16",
+  "title": "Why the Seven New NFL Stadiums Being Built Are Mostly Domed",
+  "articleUrl": "https://www.wsj.com/sports/football/nfl-stadiums-domed-8d73f24b",
+  "pdfUrl": "/pdfs/junior/2026-07-16.pdf",
+  "voiceQuiz": true,
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "opaque",
+      "partOfSpeech": "adjective",
+      "pronunciation": "oh-PAYK",
+      "articleQuote": "The older domes from the 1960s and ’70s were essentially concrete roofs—opaque, dark, no natural light.",
+      "inContext": "The old stadium roofs were solid concrete that let no light through, so being inside felt like sitting in a giant parking garage. The new roofs are the opposite — sunlight filters right through them.",
+      "meaning": "Not letting light pass through; impossible to see through. The opposite of transparent (like clear glass).",
+      "examples": [
+        "I covered my notebook with opaque tape so nobody could read the answers underneath.",
+        "Unlike a clear water bottle, my opaque one hides how much juice I have left."
+      ]
+    },
+    {
+      "word": "converge",
+      "partOfSpeech": "verb",
+      "pronunciation": "kun-VERJ",
+      "articleQuote": "A few things are converging at once.",
+      "inContext": "Several separate forces — concert money, Super Bowl rules, and television deals — are all coming together at the same time, and together they push teams to build roofs.",
+      "meaning": "To come together toward the same point, or to happen at the same time from different directions.",
+      "examples": [
+        "After the final buzzer, fans converged on the court from every corner of the gym.",
+        "Three hallways converge at the cafeteria, which is why it gets so crowded at lunch."
+      ]
+    },
+    {
+      "word": "paradox",
+      "partOfSpeech": "noun",
+      "pronunciation": "PAIR-uh-doks",
+      "articleQuote": "It’s what I’d call the declining public-share paradox.",
+      "inContext": "Taxpayers now pay a smaller SHARE of each stadium's cost than they used to — yet they hand over more actual dollars than ever, because the stadiums have gotten so much more expensive. Two facts that seem to clash, both true.",
+      "meaning": "A statement or situation that seems to contradict itself, but turns out to be true anyway.",
+      "examples": [
+        "It's a paradox that the busiest kid in school somehow always finishes homework first.",
+        "\"The more you learn, the more you realize how much you don't know\" is a famous paradox."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Cost per use",
+      "articleQuote": "A team plays nine or so home games a year—that’s 10 days of use out of 365.",
+      "meaning": "Here's a smart way to think about any expensive thing: don't ask \"how much does it cost?\" — ask \"how much does it cost each time I use it?\" A $100 pair of cleats you wear twice costs $50 per wear. A $100 pair you wear a hundred times costs $1 per wear. Same price tag, completely different deal.\n\nNow look at an NFL stadium the same way. It costs around $3 billion, and the football team plays there only about 10 days a year. That's a gigantic machine sitting dark and empty 355 days out of 365 — a terrible cost per use. But put a roof on it, and suddenly it can host concerts, conventions, and big events all year long, in any weather. More days of use makes every single day cheaper. That — more than anything about football itself — is why almost every new stadium is getting a dome.\n\nYou can use this trick on your own money. Before buying something expensive, guess honestly how many times you'll really use it, then divide. It's how you tell a true bargain from a very fancy dust collector."
+    },
+    {
+      "name": "The substitution effect",
+      "articleQuote": "When a family spends $300 at a game, that’s $300 they don’t spend at a local restaurant or bowling alley; there’s no new economic activity, just what we economists call “substitution.”",
+      "meaning": "Suppose a new candy store opens near your school and you spend your $10 allowance there. Did your town just get $10 richer? No — that's $10 you now DIDN'T spend at the pizza place next door. Your money didn't grow; it just moved. Economists call this substitution: one kind of spending replacing another.\n\nThis is the secret to judging big promises like \"a new stadium will boost the city's economy!\" Most of the money families spend at a game is money they would have spent anyway — on movies, restaurants, or bowling — somewhere else in the same town. The stadium's cash registers fill up while other businesses' registers empty out a little, and the town as a whole barely changes. That's why economists who study stadiums keep finding that they don't create the boom that gets promised.\n\nNew wealth shows up only when the spending comes from OUTSIDE — visitors who wouldn't have come otherwise — or when something genuinely new gets made. So next time someone says a big project will \"bring in money,\" ask the substitution question: is this new money, or old money in a new place?"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, why are almost all the new NFL stadiums being built with roofs?",
+      "options": [
+        "Players complained that sunshine made it hard to catch the ball",
+        "An enclosed stadium can earn money all year from concerts and events, not just from about 10 football days",
+        "Open-air stadiums are no longer allowed by league rules",
+        "Roofs help the grass on the field grow better"
+      ],
+      "answerIndex": 1,
+      "explanation": "A team uses its stadium only about 10 days a year, so a roof lets the building earn money on the other 355 days with concerts, conventions, and other events."
+    },
+    {
+      "question": "Why do television networks prefer games in enclosed stadiums?",
+      "options": [
+        "The stadium lights make players look better on camera",
+        "Indoor crowds cheer more loudly",
+        "A game can't be delayed or called off by weather, so the broadcast they paid for is guaranteed to happen",
+        "Domes have more room for camera crews"
+      ],
+      "answerIndex": 2,
+      "explanation": "Most NFL money comes from TV deals, and networks want certainty that a scheduled game will actually be played on time."
+    },
+    {
+      "question": "A family spends $300 at a stadium instead of at local restaurants and the bowling alley. What does the article say this means for the city's economy?",
+      "options": [
+        "The city gains $300 of brand-new wealth",
+        "The money mostly just moved from one business to another, so the city as a whole barely gains",
+        "The city loses the whole $300",
+        "The money doubles because stadiums attract more spending"
+      ],
+      "answerIndex": 1,
+      "explanation": "That's the substitution effect — spending that moves from one place to another isn't new economic activity."
+    },
+    {
+      "question": "You have $60 to spend on either a costume you'll wear once or a backpack you'll use every school day for a year. Using \"cost per use,\" which is the better deal?",
+      "options": [
+        "The costume, because one big moment matters most",
+        "They're exactly equal, because both cost $60",
+        "Neither — cost per use only applies to buildings",
+        "The backpack — spread over about 180 school days, it costs only pennies per use"
+      ],
+      "answerIndex": 3,
+      "explanation": "Dividing the price by the number of uses shows the backpack costs about 33 cents per day, while the costume costs $60 for a single wear."
+    },
+    {
+      "question": "The article calls it a \"paradox\" that taxpayers pay a smaller SHARE of stadium costs than before, yet more DOLLARS than ever. Why is that a paradox?",
+      "options": [
+        "Because one of the two facts must be false",
+        "Because the two facts seem to contradict each other, and yet both are true",
+        "Because paradoxes only happen with percentages",
+        "Because taxpayers don't actually pay for stadiums"
+      ],
+      "answerIndex": 1,
+      "explanation": "A paradox seems self-contradictory but is true — a smaller slice of a much bigger pie can still be more pie."
+    }
+  ]
+}
