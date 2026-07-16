@@ -31,9 +31,10 @@ import { safeNameOf } from "@/lib/session-io";
 type VoteCandidate = {
   id: string;
   title: string;
-  source: string; // "WSJ" | "Economist" — a display label, not an enum
+  source: string; // "WSJ" | "Economist" | an enrichment source name — a display label, not an enum
   pitch: string;
   articleUrl: string;
+  kind?: "news" | "enrichment"; // ballot section (absent = news); the modal groups by it but the poll stays ONE unified vote
 };
 
 type VotePoll = { date: string; openedAt?: string; candidates: VoteCandidate[] };

@@ -13,8 +13,15 @@
  *   node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD> [candidates.json]
  *   ... | node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD>
  *
- * The candidates file (or stdin) is a JSON array of 2–4 entries:
- *   [{ "title": "...", "source": "WSJ" | "Economist", "pitch": "...", "articleUrl": "https://..." }, ...]
+ * The candidates file (or stdin) is a JSON array of 2–12 entries (typical
+ * ballot: 7 news + 3 enrichment):
+ *   [{ "title": "...", "source": "WSJ" | "Economist" | an enrichment source name,
+ *      "pitch": "...", "articleUrl": "https://...",
+ *      "kind": "news" | "enrichment"  (optional; absent = news) }, ...]
+ *
+ * `kind` drives the ballot's section labels ("The day's news" / "Enrichment —
+ * timeless reads") in the voting modal — grouping only; it stays ONE unified
+ * poll with one vote across all candidates.
  *
  * Candidate ids are slugs derived from the titles, so re-running with the same
  * titles keeps already-cast ballots valid (ballots reference candidate ids;
@@ -56,8 +63,8 @@ function readCandidates() {
     console.error(`Candidates are not valid JSON: ${err.message}`);
     process.exit(1);
   }
-  if (!Array.isArray(parsed) || parsed.length < 2 || parsed.length > 4) {
-    console.error("Expected a JSON array of 2–4 candidates.");
+  if (!Array.isArray(parsed) || parsed.length < 2 || parsed.length > 12) {
+    console.error("Expected a JSON array of 2–12 candidates.");
     process.exit(1);
   }
   return parsed.map((c, i) => {
@@ -73,12 +80,17 @@ function readCandidates() {
       console.error(`Candidate ${i + 1} has an invalid articleUrl: ${c.articleUrl}`);
       process.exit(1);
     }
+    if (c.kind !== undefined && c.kind !== "news" && c.kind !== "enrichment") {
+      console.error(`Candidate ${i + 1} has an invalid kind "${c.kind}" (use "news" or "enrichment", or omit).`);
+      process.exit(1);
+    }
     return {
       id: slugify(c.title) || `candidate-${i + 1}`,
       title: c.title.trim(),
       source: c.source.trim(),
       pitch: c.pitch.trim(),
       articleUrl: c.articleUrl.trim(),
+      ...(c.kind ? { kind: c.kind } : {}),
     };
   });
 }
@@ -109,7 +121,8 @@ await put(`votes/${date}/poll.json`, JSON.stringify(poll, null, 2), {
 });
 
 console.log(`Vote for ${date} is LIVE with ${candidates.length} candidates:`);
-for (const c of candidates) console.log(`  [${c.source}] ${c.title}  (id: ${c.id})`);
+for (const c of candidates)
+  console.log(`  [${c.source}${c.kind === "enrichment" ? " · enrichment" : ""}] ${c.title}  (id: ${c.id})`);
 console.log("\nThe poll shows at the top of https://wsjclub.vercel.app until the day's reading is published.");
 console.log("Announce the voting window in the group chat (the site shows no deadline).");
 console.log("Tally later with: node --env-file=.env.local scripts/check-vote.mjs " + date);

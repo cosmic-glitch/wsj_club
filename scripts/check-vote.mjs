@@ -88,7 +88,7 @@ const ranked = poll.candidates
   .sort((a, b) => b.voters.length - a.voters.length);
 
 for (const c of ranked) {
-  console.log(`  ${String(c.voters.length).padStart(2)}  [${c.source}] ${c.title}`);
+  console.log(`  ${String(c.voters.length).padStart(2)}  [${c.source}${c.kind === "enrichment" ? " · enrichment" : ""}] ${c.title}`);
   console.log(`      ${c.articleUrl}`);
   console.log(`      voters: ${c.voters.length ? c.voters.sort().join(", ") : "—"}\n`);
 }
@@ -99,7 +99,7 @@ if (orphans.length) {
 const top = ranked[0]?.voters.length ?? 0;
 const winners = ranked.filter((c) => c.voters.length === top && top > 0);
 if (winners.length === 1) {
-  console.log(`WINNER: [${winners[0].source}] ${winners[0].title}`);
+  console.log(`WINNER: [${winners[0].source}${winners[0].kind === "enrichment" ? " · enrichment" : ""}] ${winners[0].title}`);
   console.log(`  ${winners[0].articleUrl}`);
   console.log(`\nNext: run the wsj-reading skill with that link (it sets clubPick: true itself; publishing closes the poll).`);
 } else if (winners.length > 1) {

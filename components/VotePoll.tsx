@@ -42,6 +42,7 @@ type Candidate = {
   source: string;
   pitch: string;
   articleUrl: string;
+  kind?: "news" | "enrichment"; // ballot section (absent = news)
 };
 
 type PollState = {
@@ -108,6 +109,19 @@ export default function VotePoll() {
   if (!poll?.active || !poll.date || !poll.candidates?.length) return null;
   const { date, candidates } = poll;
   const voted = Boolean(poll.yourVote);
+
+  // The ballot's sections: news first, enrichment after — light labels inside
+  // ONE radiogroup with one submit, so it reads as a single unified poll, not
+  // two. Labels only appear when the poll actually mixes both kinds.
+  const news = candidates.filter((c) => c.kind !== "enrichment");
+  const enrichment = candidates.filter((c) => c.kind === "enrichment");
+  const sections: { label: string | null; items: Candidate[] }[] =
+    news.length && enrichment.length
+      ? [
+          { label: "The day's news", items: news },
+          { label: "Enrichment — timeless reads", items: enrichment },
+        ]
+      : [{ label: null, items: candidates }];
 
   function openModal() {
     setSelected(poll?.yourVote ?? null);
@@ -184,60 +198,70 @@ export default function VotePoll() {
                   aria-label="Today's article candidates"
                   className="min-h-0 flex-1 space-y-2 overflow-y-auto px-5 py-1"
                 >
-                  {candidates.map((c) => {
-                    const isSelected = selected === c.id;
-                    const isYourVote = poll.yourVote === c.id;
-                    const count = poll.tally?.[c.id];
-                    return (
-                      <div
-                        key={c.id}
-                        role="radio"
-                        aria-checked={isSelected}
-                        tabIndex={0}
-                        onClick={() => setSelected(c.id)}
-                        onKeyDown={(e) => {
-                          if (e.key === "Enter" || e.key === " ") {
-                            e.preventDefault();
-                            setSelected(c.id);
-                          }
-                        }}
-                        className={`cursor-pointer border-2 border-[#0a0a0a] p-3 transition-shadow ${
-                          isSelected
-                            ? "bg-[#ffe600] shadow-[4px_4px_0_#0a0a0a]"
-                            : "bg-white hover:bg-stone-100"
-                        }`}
-                      >
-                        <p className="text-[13.5px] font-bold leading-[1.35]">
-                          <span className="mr-2 inline-block bg-[#0a0a0a] px-[6px] py-[1px] align-[2px] text-[9px] font-bold uppercase tracking-[.14em] text-white">
-                            {c.source}
-                          </span>
-                          {c.title}
+                  {sections.map((section) => (
+                    <div key={section.label ?? "all"} className="space-y-2">
+                      {section.label && (
+                        <p className="flex items-center gap-2 pt-1.5 font-mono text-[10px] font-bold uppercase tracking-[.2em] text-stone-500">
+                          {section.label}
+                          <span aria-hidden className="h-[2px] flex-1 bg-[#0a0a0a]/15" />
                         </p>
-                        <p className="mt-1 font-sans text-[13px] leading-snug text-stone-700">
-                          {c.pitch}
-                        </p>
-                        <div className="mt-2 flex flex-wrap items-center gap-2">
-                          <ArticleLink
-                            href={c.articleUrl}
-                            className="inline-block border-2 border-[#0a0a0a] bg-white px-2 py-[3px] text-[10px] font-bold uppercase tracking-[.08em] text-[#0a0a0a] no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]"
-                            onClick={(e) => e.stopPropagation()}
+                      )}
+                      {section.items.map((c) => {
+                        const isSelected = selected === c.id;
+                        const isYourVote = poll.yourVote === c.id;
+                        const count = poll.tally?.[c.id];
+                        return (
+                          <div
+                            key={c.id}
+                            role="radio"
+                            aria-checked={isSelected}
+                            tabIndex={0}
+                            onClick={() => setSelected(c.id)}
+                            onKeyDown={(e) => {
+                              if (e.key === "Enter" || e.key === " ") {
+                                e.preventDefault();
+                                setSelected(c.id);
+                              }
+                            }}
+                            className={`cursor-pointer border-2 border-[#0a0a0a] p-3 transition-shadow ${
+                              isSelected
+                                ? "bg-[#ffe600] shadow-[4px_4px_0_#0a0a0a]"
+                                : "bg-white hover:bg-stone-100"
+                            }`}
                           >
-                            Read it
-                          </ArticleLink>
-                          {isYourVote && (
-                            <span className="text-[10px] font-bold uppercase tracking-[.08em]">
-                              Your vote ✓
-                            </span>
-                          )}
-                          {typeof count === "number" && (
-                            <span className="ml-auto whitespace-nowrap text-[10px] font-bold uppercase tracking-[.08em] text-stone-600">
-                              {count} vote{count === 1 ? "" : "s"}
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                    );
-                  })}
+                            <p className="text-[13.5px] font-bold leading-[1.35]">
+                              <span className="mr-2 inline-block bg-[#0a0a0a] px-[6px] py-[1px] align-[2px] text-[9px] font-bold uppercase tracking-[.14em] text-white">
+                                {c.source}
+                              </span>
+                              {c.title}
+                            </p>
+                            <p className="mt-1 font-sans text-[13px] leading-snug text-stone-700">
+                              {c.pitch}
+                            </p>
+                            <div className="mt-2 flex flex-wrap items-center gap-2">
+                              <ArticleLink
+                                href={c.articleUrl}
+                                className="inline-block border-2 border-[#0a0a0a] bg-white px-2 py-[3px] text-[10px] font-bold uppercase tracking-[.08em] text-[#0a0a0a] no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]"
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                Read it
+                              </ArticleLink>
+                              {isYourVote && (
+                                <span className="text-[10px] font-bold uppercase tracking-[.08em]">
+                                  Your vote ✓
+                                </span>
+                              )}
+                              {typeof count === "number" && (
+                                <span className="ml-auto whitespace-nowrap text-[10px] font-bold uppercase tracking-[.08em] text-stone-600">
+                                  {count} vote{count === 1 ? "" : "s"}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ))}
                 </div>
 
                 <div className="border-t-2 border-[#0a0a0a] px-5 py-4">
