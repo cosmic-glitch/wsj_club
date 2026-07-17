@@ -1,6 +1,6 @@
 ---
 name: wsj-pick-enrichment
-description: Recommend today's ENRICHMENT read for the Reading Club — five candidate pieces drawn from a broader, mostly-free pool of timeless-wisdom sources (Morgan Housel, Farnam Street, Our World in Data, Paul Graham, and the wider tier list below), NOT the daily WSJ/Economist news. Use when the user says "pick an enrichment article", "find an enrichment read", "propose enrichment pieces", "a wisdom read", "a mental-models piece", or wants a candidate from the broader sources rather than the day's news. Checks what's already been used, gathers candidates across the sources, reads each in full, verifies each is ≤2,000 words, and proposes five ranked picks (with a clear top pick) for the user to choose from.
+description: Recommend today's ENRICHMENT read for the Reading Club — five candidate pieces drawn from a broader, mostly-free pool of timeless-wisdom sources (Farnam Street, Our World in Data, Paul Graham, and the wider tier list below), NOT the daily WSJ/Economist news. Use when the user says "pick an enrichment article", "find an enrichment read", "propose enrichment pieces", "a wisdom read", "a mental-models piece", or wants a candidate from the broader sources rather than the day's news. Checks what's already been used, gathers candidates across the sources, reads each in full, verifies each is ≤2,000 words, and proposes five ranked picks (with a clear top pick) for the user to choose from.
 ---
 
 # Reading Club — pick today's enrichment read
@@ -17,8 +17,10 @@ The club's ~30+ published readings are the real statement of intent: **positive-
 
 Tiered by how well each fits a **daily** read (the ≤2,000-word rule below is the binding filter — it selects the Tier-1 four as the natural daily sources and makes the rest occasional-with-excerpting).
 
+### Excluded source — never propose (owner's standing rule, 2026-07-17)
+- **Morgan Housel / Collab Fund** (`collabfund.com`, `collaborativefund.com`, or his pieces republished anywhere) is **permanently excluded** from the enrichment pool by the owner's explicit instruction. Do not propose, shortlist, or pitch his essays — from any domain — regardless of fit. (The finance-*wisdom* layer is covered instead by Farnam Street, the Buffett/Bezos letters, and Buttonwood-style news picks.)
+
 ### Tier 1 — fit natively at daily length; scout these first every time
-- **Morgan Housel** (Collab Fund blog) — timeless money & human-behavior wisdom; the single best fill for the finance-*wisdom* layer (WSJ says *what happened*, Housel teaches the *timeless model* underneath). Archive: `https://collabfund.com/blog/authors/morgan/`
 - **Farnam Street (fs.blog)** — literally built on Munger's "latticework of mental models": inversion, compounding, second-order thinking, circle of competence. The most on-the-nose fit for the club's goal. Feed: `https://fs.blog/blog/` · Models hub: `https://fs.blog/mental-models/`
 - **Our World in Data** — empirical optimism from Oxford + **data literacy** (reading a *trend*, not a headline); the antidote to news negativity bias. Recent: `https://ourworldindata.org/latest` · Articles: `https://ourworldindata.org/articles` · Data insights: `https://ourworldindata.org/data-insights`
 - **Paul Graham (short essays)** — canon life/work wisdom, plain HTML, age-proof. Index: `https://www.paulgraham.com/articles.html` (pick the *shorter* ones to stay in range — many run long)
@@ -45,24 +47,24 @@ Shares the reading-club DNA of `wsj-pick-article` (see that skill for the long f
 
 3. **Teaches a transferable mental model (Munger worldly wisdom).** The whole point of the enrichment layer. The best pick hands the reader a **durable frame they can reuse** — inversion, compounding, circle of competence, revealed vs. stated preference, reading a trend not a headline, second-order effects. Prefer a piece that *builds* a model from everyday intuition over one that merely narrates. Name **3–5 teachable concepts** and the **1 headline model** it leaves the reader with.
 
-4. **Stretched but not stressed — the prerequisite-load gate still applies.** Could a curious 14-year-old with **no background** follow the core argument, given the handout teaches only ~3 concepts from scratch? One new hard idea = the stretch we want; a *stack* of interlocking assumed concepts = a bad pick however wise or well-written. (Same hard gate as `wsj-pick-article` criterion 4.) These sources are usually *more* accessible than a dense Economist feature — but a Housel piece leaning on LTCM or a Farnam Street piece assuming finance can still overshoot; check.
+4. **Stretched but not stressed — the prerequisite-load gate still applies.** Could a curious 14-year-old with **no background** follow the core argument, given the handout teaches only ~3 concepts from scratch? One new hard idea = the stretch we want; a *stack* of interlocking assumed concepts = a bad pick however wise or well-written. (Same hard gate as `wsj-pick-article` criterion 4.) These sources are usually *more* accessible than a dense Economist feature — but a Farnam Street piece assuming finance, or a shareholder-letter excerpt leaning on accounting, can still overshoot; check.
 
 5. **Rich enough to build a handout.** Needs **3 strong SAT-sweet-spot vocab words** and **3–5 teachable concepts** (what `wsj-reading` requires). A lovely but thin aphorism-essay that can't supply those is a weak pick.
 
 6. **Articulate + appropriate + genuinely interesting.** Crisp, well-argued prose (the club learns to write by reading good writing); nothing a parent would balk at handing a 13-year-old; and a hook a teen actually cares about.
 
-7. **Timeless beats timely; avoid repeats.** Unlike the news skill, freshness/recency is **not** a criterion — a 2015 Housel essay is as good as one posted yesterday. So there's no coverage-recency pressure, but you **must not re-propose a piece already used.** Build the exclude-list from the content files (Workflow step 1). Also lightly avoid re-hitting the *same source* two enrichment days running when a different source offers a comparably strong pick — variety across the whole enrichment layer is a mild plus (never override 1–6).
+7. **Timeless beats timely; avoid repeats.** Unlike the news skill, freshness/recency is **not** a criterion — a 2005 Paul Graham essay is as good as one posted yesterday. So there's no coverage-recency pressure, but you **must not re-propose a piece already used.** Build the exclude-list from the content files (Workflow step 1). Also lightly avoid re-hitting the *same source* two enrichment days running when a different source offers a comparably strong pick — variety across the whole enrichment layer is a mild plus (never override 1–6).
 
 ## Tools: WebFetch/WebSearch first, Playwright to verify
 
 These sources are **open and mostly not paywalled** — and the `claude-in-chrome`/`WebFetch` block that hits `wsj.com`/`economist.com` does **not** apply to them. So this skill is lighter-weight than `wsj-pick-article`:
-- **Discover candidates** with `WebSearch` (e.g. `site:collabfund.com Housel`, `site:fs.blog mental models`, `site:ourworldindata.org`) and by fetching each source's **hub/archive** page (above) with `WebFetch`.
+- **Discover candidates** with `WebSearch` (e.g. `site:fs.blog mental models`, `site:ourworldindata.org`) and by fetching each source's **hub/archive** page (above) with `WebFetch`.
 - **Read each candidate in full** with `WebFetch` (ask it for the full article text + an approximate word count). Paul Graham's plain-HTML pages and the blogs fetch cleanly.
 - **Verify the word count** — the ≤2,000 gate is binding, so don't trust an eyeballed estimate near the ceiling. When a piece is close to the limit or WebFetch under-returns, confirm with **Playwright** (`mcp__plugin_playwright_playwright__browser_navigate` then `browser_evaluate`): e.g. `document.querySelector('article, .article, #content, main').innerText.trim().split(/\s+/).length`. Playwright is also the fallback for any JS-heavy page (some Our World in Data pages) where WebFetch returns thin text. (Playwright is the same browser the club always uses; no login needed for these sources.)
 
 ## Workflow
 
-1. **Build the exclude-list (already-used pieces).** `grep -rhoE '"(articleUrl|url)":\s*"[^"]+"' content/*.json` and pull the non-WSJ/Economist URLs (Housel, fs.blog, ourworldindata.org, paulgraham.com, and any canon domains). Never re-propose one of these. Also skim the last ~5 readings' titles so you know which enrichment source was used most recently (mild variety input for criterion 7).
+1. **Build the exclude-list (already-used pieces).** `grep -rhoE '"(articleUrl|url)":\s*"[^"]+"' content/*.json` and pull the non-WSJ/Economist URLs (fs.blog, ourworldindata.org, paulgraham.com, and any canon domains). Never re-propose one of these. (Morgan Housel is excluded categorically — see the Excluded source note above — independent of this per-piece list.) Also skim the last ~5 readings' titles so you know which enrichment source was used most recently (mild variety input for criterion 7).
 
 2. **Gather a candidate pool across the sources.** Prioritise the **Tier-1 four** (they fit natively). Pull their archive/feed pages and collect promising pieces; add a couple of **Tier-3 canon** candidates and, when one is strong enough to justify excerpting, a **Tier-2** piece. Aim for a raw pool of **~8–12** candidates spanning **at least 3 different sources**, each with source, URL, and a one-line reason it looks like a fit. Skip anything you already know is off (over the ceiling with no self-contained excerpt, off-tone, a data-only chart page with no argument).
 
