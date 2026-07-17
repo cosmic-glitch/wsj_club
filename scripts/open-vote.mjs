@@ -1,20 +1,22 @@
 #!/usr/bin/env node
 /**
- * Open the day's article vote: write `votes/<date>/poll.json` to Vercel Blob,
- * which makes the "TODAY'S READ — YOU DECIDE" row appear at the top of the
- * home page immediately (no deploy — /api/vote reads Blob live). Part of the
- * wsj-open-vote skill; the companion scripts/check-vote.mjs reads the result.
+ * Open the day's article vote: write `votes/[junior/]<date>/poll.json` to
+ * Vercel Blob, which makes the "TODAY'S READ — YOU DECIDE" row appear at the
+ * top of that track's index immediately (no deploy — /api/vote reads Blob
+ * live). Part of the wsj-open-vote skill; the companion scripts/check-vote.mjs
+ * reads the result.
  *
- * The poll closes by itself when the day's reading is published (the API
- * treats a poll as live only while no senior reading exists for its date) —
- * there is no close step.
+ * The poll closes by itself when the day's reading is published ON ITS TRACK
+ * (the API treats a poll as live only while no reading on that track exists
+ * for its date) — there is no close step. The two tracks' polls are fully
+ * independent — both can be live at once.
  *
  * Usage:
- *   node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD> [candidates.json]
- *   ... | node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD>
+ *   node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD> [candidates.json] [--track=junior]
+ *   ... | node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD> [--track=junior]
  *
  * The candidates file (or stdin) is a JSON array of 2–12 entries (typical
- * ballot: 7 news + 3 enrichment):
+ * senior ballot: 7 news + 3 enrichment; typical junior ballot: 5 news):
  *   [{ "title": "...", "source": "WSJ" | "Economist" | an enrichment source name,
  *      "pitch": "...", "articleUrl": "https://...",
  *      "kind": "news" | "enrichment"  (optional; absent = news) }, ...]
@@ -32,9 +34,15 @@ import { list, put } from "@vercel/blob";
 
 const argv = process.argv.slice(2);
 const [date, file] = argv.filter((a) => !a.startsWith("--"));
+const trackFlag = argv.find((a) => a.startsWith("--track="));
+const track = trackFlag ? trackFlag.slice("--track=".length) : "senior";
 
 if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
-  console.error("Usage: node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD> [candidates.json]");
+  console.error("Usage: node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD> [candidates.json] [--track=junior]");
+  process.exit(1);
+}
+if (track !== "senior" && track !== "junior") {
+  console.error(`Unknown track "${track}" — use --track=junior (or omit for senior).`);
   process.exit(1);
 }
 if (!process.env.BLOB_READ_WRITE_TOKEN) {
@@ -42,9 +50,15 @@ if (!process.env.BLOB_READ_WRITE_TOKEN) {
   process.exit(1);
 }
 
+const junior = track === "junior";
+// The junior/ path segment everywhere junior touches (same convention as the
+// quiz sessions' sessionPrefix) — keep in lockstep with app/api/vote/route.ts.
+const votesDir = junior ? `votes/junior/${date}/` : `votes/${date}/`;
+const contentPath = junior ? `content/junior/${date}.json` : `content/${date}.json`;
+
 // A poll for a date whose reading is already published would be born closed.
-if (fs.existsSync(`content/${date}.json`)) {
-  console.error(`content/${date}.json already exists — the ${date} reading is published, so this poll would never show. Refusing.`);
+if (fs.existsSync(contentPath)) {
+  console.error(`${contentPath} already exists — the ${date} ${track} reading is published, so this poll would never show. Refusing.`);
   process.exit(1);
 }
 
@@ -103,26 +117,27 @@ if (new Set(candidates.map((c) => c.id)).size !== candidates.length) {
 
 // Re-opening an existing poll is allowed (revising candidates), but warn when
 // ballots were already cast — a changed title changes the id and orphans them.
-const { blobs: existing } = await list({ prefix: `votes/${date}/` });
-if (existing.some((b) => b.pathname === `votes/${date}/poll.json`)) {
-  const ballots = existing.filter((b) => b.pathname.startsWith(`votes/${date}/ballots/`)).length;
-  console.warn(`A poll for ${date} already exists — overwriting it.`);
+const { blobs: existing } = await list({ prefix: votesDir });
+if (existing.some((b) => b.pathname === `${votesDir}poll.json`)) {
+  const ballots = existing.filter((b) => b.pathname.startsWith(`${votesDir}ballots/`)).length;
+  console.warn(`A ${track} poll for ${date} already exists — overwriting it.`);
   if (ballots > 0) {
     console.warn(`⚠ ${ballots} ballot(s) already cast. They stay valid only for candidates whose titles (→ ids) are unchanged; a vote for a removed/renamed candidate won't be counted.`);
   }
 }
 
 const poll = { date, openedAt: new Date().toISOString(), candidates };
-await put(`votes/${date}/poll.json`, JSON.stringify(poll, null, 2), {
+await put(`${votesDir}poll.json`, JSON.stringify(poll, null, 2), {
   access: "public",
   addRandomSuffix: false,
   allowOverwrite: true,
   contentType: "application/json",
 });
 
-console.log(`Vote for ${date} is LIVE with ${candidates.length} candidates:`);
+const trackTag = junior ? " (junior)" : "";
+console.log(`Vote for ${date}${trackTag} is LIVE with ${candidates.length} candidates:`);
 for (const c of candidates)
   console.log(`  [${c.source}${c.kind === "enrichment" ? " · enrichment" : ""}] ${c.title}  (id: ${c.id})`);
-console.log("\nThe poll shows at the top of https://wsjclub.vercel.app until the day's reading is published.");
+console.log(`\nThe poll shows at the top of https://wsjclub.vercel.app${junior ? "/junior" : ""} until the day's ${track} reading is published.`);
 console.log("Announce the voting window in the group chat (the site shows no deadline).");
-console.log("Tally later with: node --env-file=.env.local scripts/check-vote.mjs " + date);
+console.log(`Tally later with: node --env-file=.env.local scripts/check-vote.mjs ${date}${junior ? " --track=junior" : ""}`);

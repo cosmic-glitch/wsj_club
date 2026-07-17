@@ -100,11 +100,12 @@ export default function LandingIndex({
           </p>
         ) : (
           <ul className="mt-[26px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] motion-reduce:animate-none">
-            {/* The daily article vote (senior only): a client row that pops in
-                as the FIRST entry while a poll is live and renders nothing
-                otherwise. Its `vote-live` class is what the [.vote-live~&]
-                variants below key off to demote the previous newest row. */}
-            {!junior && <VotePoll />}
+            {/* The daily article vote (each track shows its own poll): a
+                client row that pops in as the FIRST entry while a poll is live
+                and renders nothing otherwise. Its `vote-live` class is what
+                the [.vote-live~&] variants below key off to demote the
+                previous newest row. */}
+            <VotePoll track={track} />
             {readings.map((r, index) => {
               // The newest reading gets the yellow row + bigger title; the
               // TODAY chip appears only when its date is actually today

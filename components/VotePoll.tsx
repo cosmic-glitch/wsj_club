@@ -4,10 +4,14 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import ArticleLink from "@/components/ArticleLink";
 import TodayTag from "@/components/TodayTag";
+import type { Track } from "@/lib/content";
 
 /**
  * The daily article vote — the "TODAY'S READ — YOU DECIDE" row at the top of
- * the senior index (see the daily vote in CLAUDE.md).
+ * BOTH track indexes (see the daily vote in CLAUDE.md). The `track` prop
+ * (default senior, like VoiceQuiz's) selects which track's poll this row shows:
+ * it's sent on the GET (`?track=`) and in the POST body, so each index sees
+ * only its own poll and the two can be live at once, independently.
  *
  * The ROW is deliberately compact — date · title · one boxed VOTE button,
  * exactly the shape of every other reading row — because a poll can carry many
@@ -76,7 +80,11 @@ const BTN_SECONDARY =
   "border-2 border-[#0a0a0a] bg-white px-4 py-2 font-mono text-xs font-bold uppercase tracking-[.06em] text-[#0a0a0a] transition hover:bg-[#0a0a0a] hover:text-[#ffe600]";
 const MODAL_H2 = "font-display text-xl font-normal uppercase text-[#0a0a0a]";
 
-export default function VotePoll() {
+export default function VotePoll({
+  track = "senior",
+}: {
+  track?: Track;
+}) {
   const [poll, setPoll] = useState<PollState | null>(null);
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState<string | null>(null);
@@ -84,11 +92,11 @@ export default function VotePoll() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/api/vote", { cache: "no-store" })
+    fetch(`/api/vote?track=${track}`, { cache: "no-store" })
       .then((r) => r.json())
       .then((d: PollState) => setPoll(d))
       .catch(() => setPoll({ active: false }));
-  }, []);
+  }, [track]);
 
   // Esc closes the modal; lock body scroll while it's open (the AdminSessions
   // recipe — the ballot scrolls inside the panel, not behind it).
@@ -137,7 +145,7 @@ export default function VotePoll() {
       const res = await fetch("/api/vote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ date, candidateId: selected }),
+        body: JSON.stringify({ date, candidateId: selected, track }),
       });
       const d = await res.json();
       if (!res.ok) {

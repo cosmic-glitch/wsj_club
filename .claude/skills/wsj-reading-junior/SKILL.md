@@ -1,6 +1,6 @@
 ---
 name: wsj-reading-junior
-description: Create a JUNIOR (US grades 5–7) Reading Club handout at /junior. Use when the user gives an article link for the junior track (or says "junior reading", "add a junior article", "/junior reading"). Same handout format as the main club — vocabulary, concepts, a 5-question self-quiz, and an AI voice quiz — but recalibrated for grades 5–7 and published under the junior/ track. The user supplies the link (there is no article-picking step). Reads the article in the browser, generates the content, writes it as content/junior/YYYY-MM-DD.json, builds, and deploys.
+description: Create a JUNIOR (US grades 5–7) Reading Club handout at /junior. Use when the user gives an article link for the junior track (or says "junior reading", "add a junior article", "/junior reading"). Same handout format as the main club — vocabulary, concepts, a 5-question self-quiz, and an AI voice quiz — but recalibrated for grades 5–7 and published under the junior/ track. The user supplies the link (directly, from a wsj-pick-article-junior recommendation, or as the junior vote's winner). Reads the article in the browser, generates the content, writes it as content/junior/YYYY-MM-DD.json, builds, and deploys.
 ---
 
 # WSJ Reading Club — JUNIOR handout (grades 5–7)
@@ -36,7 +36,7 @@ Everything you write is for a sharp **10–13 year old**. Not a finance professi
 - **Don't republish the article.** Short quotes for study only — each `articleQuote` is **one sentence or phrase**, the minimum to show the word/idea in context. Everything else is **original** (your context explanations, definitions, examples, quiz). Never reproduce large chunks or the whole article. Always link to it.
 - **One file per day, in the junior dir.** Filename is the date under `content/junior/`: `content/junior/YYYY-MM-DD.json`. If the user gives a different date, use that.
 - Don't invent facts about the article. If something is unclear, open the page and read it.
-- **No article-picking step.** The user supplies the link (the `wsj-pick-article` skill is for the senior track and is untouched). If they didn't paste a URL, ask for it.
+- **The user supplies the link.** It may come from anywhere — pasted directly, chosen from a `wsj-pick-article-junior` recommendation, or the winner of a **junior vote** (`wsj-open-vote`/`wsj-check-vote` with `--track=junior`). This skill never picks the article itself; if no URL was given, ask for it.
 
 ## Junior output paths (the ONLY structural difference from the senior skill)
 
@@ -55,7 +55,7 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
 
 ## Daily workflow
 
-1. **Get the inputs.** The user supplies the article URL (no picking step). Confirm the date (default to today). If no URL was pasted, ask for it.
+1. **Get the inputs.** The user supplies the article URL (pasted directly, picked from `wsj-pick-article-junior`'s recommendations, or the junior vote's winner). Confirm the date (default to today). If no URL was pasted, ask for it.
 
 2. **Read the article in the browser.** Identical to the senior skill — use the **Playwright** browser tools (`mcp__plugin_playwright_playwright__browser_*`), **never the `claude-in-chrome` extension** (its safety classifier blocks `wsj.com`/`economist.com`). Navigate, have the **user log in themselves** (never ask for or store a password), then read the full article: the real headline, the deck/standfirst, and the substance (main argument, key facts, jargon a middle-schooler would trip on). See `wsj-reading`'s SKILL.md step 2 for the full detail.
 
@@ -85,6 +85,7 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
 5. **Draft the handout content.** Using the approved list, write the full cards (vocab article-first: `articleQuote` → `inContext` → `meaning` → `examples`, plus `pronunciation` + `partOfSpeech`; concepts: `articleQuote` → a single, concrete, Feynman-style `meaning` — no `inContext`) and the 5-question quiz, all at the grades 5–7 level. Pick a clear, descriptive `title`. **Do not invent a subtitle** — use the article's own headline (or a plainer paraphrase); only include a subtitle if the original actually has one. Credit a notable named essay author with `by <Author Name>`; use the headline alone for routine reportage. The junior handout is the same minimal shape as senior (just the title, then words + concepts, then the self-quiz CTA). **Multi-article days:** set `articles: [{ title, articleUrl, pdfUrl }, …]` (junior PDF paths) instead of top-level `articleUrl`/`pdfUrl`, with one combined `vocab`/`concepts`/`quiz` and an umbrella `title`.
 
 6. **Write `content/junior/YYYY-MM-DD.json`** following the schema below (it's the same `Reading` schema as senior — set `voiceQuiz: true`; include `pdfUrl` if you placed a PDF). `mkdir -p content/junior` first. Validate it's well-formed JSON.
+   - **Vote day → `clubPick: true`.** If the day's article was chosen by the junior club vote (the wsj-open-vote/wsj-check-vote flow with `--track=junior` — check with `node --env-file=.env.local scripts/check-vote.mjs YYYY-MM-DD --track=junior`, or just: a junior poll exists for this date), set `"clubPick": true` so the index row carries the CLUB PICK chip. Publishing this reading is also what **closes** that poll — the /junior vote row disappears once the deploy lands, no extra step. On a non-vote day, omit the field.
    - **Generate pronunciation audio** for each vocab word + concept name → the junior audio dir:
      ```sh
      node --env-file=.env.local scripts/gen-pronunciation.mjs YYYY-MM-DD --track=junior
@@ -145,6 +146,7 @@ Field notes:
 - `answerIndex` is **0-based**; double-check it.
 - `vocab` has **exactly 3 words** by default (a multi-article day may run ~4); each `examples` array has **exactly 2** sentences. `concepts` is **exactly 2** by default (the user can override), or fewer/`[]` for a concept-thin or vocabulary-only day.
 - `concepts` may be empty (`[]`); the handout omits the Concepts section and the voice quiz skips its concepts stage.
+- `clubPick`: set `"clubPick": true` **only when the day's article won the junior club vote** (see step 6) — it renders the CLUB PICK chip on the /junior index row. Omit on normal days.
 - **Multi-article days:** replace top-level `articleUrl`/`pdfUrl` with an `articles` array of `{ title, articleUrl, pdfUrl }` (junior PDF paths), keeping one combined `vocab`/`concepts`/`quiz`.
 
 ## Deployment

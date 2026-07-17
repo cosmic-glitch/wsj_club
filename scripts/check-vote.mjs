@@ -1,16 +1,17 @@
 #!/usr/bin/env node
 /**
- * Check the day's article vote: read `votes/<date>/poll.json` plus every
- * ballot from Vercel Blob and print the tally — per-candidate counts WITH
- * voter names (owner-side only; the website shows counts, never names) — and
- * the winner with its article link, ready to hand to the wsj-reading skill.
- * Part of the wsj-check-vote skill; scripts/open-vote.mjs opens the poll.
+ * Check the day's article vote: read `votes/[junior/]<date>/poll.json` plus
+ * every ballot from Vercel Blob and print the tally — per-candidate counts
+ * WITH voter names (owner-side only; the website shows counts, never names) —
+ * and the winner with its article link, ready to hand to the wsj-reading (or
+ * wsj-reading-junior) skill. Part of the wsj-check-vote skill;
+ * scripts/open-vote.mjs opens the poll.
  *
  * Usage:
- *   node --env-file=.env.local scripts/check-vote.mjs [YYYY-MM-DD]
+ *   node --env-file=.env.local scripts/check-vote.mjs [YYYY-MM-DD] [--track=junior]
  *
- * With no date it checks the newest poll. Ties are listed for the owner to
- * break by just picking one (the vote is advisory by construction).
+ * With no date it checks the track's newest poll. Ties are listed for the
+ * owner to break by just picking one (the vote is advisory by construction).
  */
 import fs from "node:fs";
 import { list } from "@vercel/blob";
@@ -20,22 +21,37 @@ if (!process.env.BLOB_READ_WRITE_TOKEN) {
   process.exit(1);
 }
 
-const arg = process.argv[2];
+const argv = process.argv.slice(2);
+const trackFlag = argv.find((a) => a.startsWith("--track="));
+const track = trackFlag ? trackFlag.slice("--track=".length) : "senior";
+const arg = argv.find((a) => !a.startsWith("--"));
+
 if (arg && !/^\d{4}-\d{2}-\d{2}$/.test(arg)) {
-  console.error("Usage: node --env-file=.env.local scripts/check-vote.mjs [YYYY-MM-DD]");
+  console.error("Usage: node --env-file=.env.local scripts/check-vote.mjs [YYYY-MM-DD] [--track=junior]");
+  process.exit(1);
+}
+if (track !== "senior" && track !== "junior") {
+  console.error(`Unknown track "${track}" — use --track=junior (or omit for senior).`);
   process.exit(1);
 }
 
+const junior = track === "junior";
+// The junior/ path segment, in lockstep with open-vote.mjs / app/api/vote.
+const votesBase = junior ? "votes/junior/" : "votes/";
+
 let date = arg;
 if (!date) {
-  const { folders } = await list({ prefix: "votes/", mode: "folded" });
+  const { folders } = await list({ prefix: votesBase, mode: "folded" });
+  // Anchored to the base so the senior listing never reads the votes/junior/
+  // folder (no date in it anyway) as a poll.
+  const re = new RegExp(`^${votesBase}(\\d{4}-\\d{2}-\\d{2})/$`);
   date = (folders ?? [])
-    .map((f) => /votes\/(\d{4}-\d{2}-\d{2})\/$/.exec(f)?.[1])
+    .map((f) => re.exec(f)?.[1])
     .filter(Boolean)
     .sort()
     .pop();
   if (!date) {
-    console.error("No polls found in Blob. Open one with scripts/open-vote.mjs first.");
+    console.error(`No ${track} polls found in Blob. Open one with scripts/open-vote.mjs first.`);
     process.exit(1);
   }
 }
@@ -48,10 +64,11 @@ async function fetchJson(url) {
   return res.json();
 }
 
-const { blobs } = await list({ prefix: `votes/${date}/` });
-const pollBlob = blobs.find((b) => b.pathname === `votes/${date}/poll.json`);
+const votesDir = `${votesBase}${date}/`;
+const { blobs } = await list({ prefix: votesDir });
+const pollBlob = blobs.find((b) => b.pathname === `${votesDir}poll.json`);
 if (!pollBlob) {
-  console.error(`No poll found for ${date}.`);
+  console.error(`No ${track} poll found for ${date}.`);
   process.exit(1);
 }
 const poll = await fetchJson(pollBlob.url);
@@ -59,7 +76,7 @@ const poll = await fetchJson(pollBlob.url);
 const ballots = (
   await Promise.all(
     blobs
-      .filter((b) => b.pathname.startsWith(`votes/${date}/ballots/`))
+      .filter((b) => b.pathname.startsWith(`${votesDir}ballots/`))
       .map(async (b) => {
         try {
           const ballot = await fetchJson(b.url);
@@ -73,8 +90,10 @@ const ballots = (
   )
 ).filter(Boolean);
 
-const published = fs.existsSync(`content/${date}.json`);
-console.log(`Vote for ${date} — ${published ? "CLOSED (reading published)" : "still live"}`);
+const published = fs.existsSync(
+  junior ? `content/junior/${date}.json` : `content/${date}.json`
+);
+console.log(`Vote for ${date}${junior ? " (junior)" : ""} — ${published ? "CLOSED (reading published)" : "still live"}`);
 console.log(`${ballots.length} ballot(s) cast\n`);
 
 const byCandidate = new Map(poll.candidates.map((c) => [c.id, []]));
@@ -98,13 +117,14 @@ if (orphans.length) {
 
 const top = ranked[0]?.voters.length ?? 0;
 const winners = ranked.filter((c) => c.voters.length === top && top > 0);
+const readingSkill = junior ? "wsj-reading-junior" : "wsj-reading";
 if (winners.length === 1) {
   console.log(`WINNER: [${winners[0].source}${winners[0].kind === "enrichment" ? " · enrichment" : ""}] ${winners[0].title}`);
   console.log(`  ${winners[0].articleUrl}`);
-  console.log(`\nNext: run the wsj-reading skill with that link (it sets clubPick: true itself; publishing closes the poll).`);
+  console.log(`\nNext: run the ${readingSkill} skill with that link (it sets clubPick: true itself; publishing closes the poll).`);
 } else if (winners.length > 1) {
   console.log(`TIE at ${top} vote(s) between: ${winners.map((c) => c.title).join(" / ")}`);
-  console.log("You break the tie — just pick one and run wsj-reading with its link.");
+  console.log(`You break the tie — just pick one and run ${readingSkill} with its link.`);
 } else {
   console.log("No votes cast yet.");
 }
