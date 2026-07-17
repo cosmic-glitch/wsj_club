@@ -1,0 +1,126 @@
+{
+  "date": "2026-07-17",
+  "title": "How to Disagree by Paul Graham",
+  "articleUrl": "https://www.paulgraham.com/disagree.html",
+  "voiceQuiz": true,
+  "source": "Paul Graham",
+  "vocab": [
+    {
+      "word": "dilettante",
+      "partOfSpeech": "noun",
+      "pronunciation": "DIL-uh-tahnt",
+      "articleQuote": "The author is a self-important dilettante.",
+      "inContext": "Graham uses this imaginary insult as an example of dressed-up name-calling: the commenter dismisses the writer as a dabbler with no real expertise instead of engaging with anything the writer actually argued.",
+      "meaning": "A person who dabbles in a subject casually, for fun or for show, without serious study or commitment.",
+      "examples": [
+        "After one week of guitar practice he was calling himself a musician, but his teacher gently hinted he was still a dilettante.",
+        "She quit three clubs in two months, and her brother teased her for being a dilettante who never stuck with anything."
+      ]
+    },
+    {
+      "word": "cavalier",
+      "partOfSpeech": "adjective",
+      "pronunciation": "kav-uh-LEER",
+      "articleQuote": "I can't believe the author dismisses intelligent design in such a cavalier fashion.",
+      "inContext": "The imaginary commenter is complaining about the author's attitude — brushing off an idea casually, without giving it what the commenter considers serious, respectful attention.",
+      "meaning": "Showing a careless, offhand lack of concern about something other people take seriously.",
+      "examples": [
+        "He was so cavalier about the final exam that he didn't even open the study guide.",
+        "Her cavalier attitude toward the group project frustrated the teammates who had worked all weekend on it."
+      ]
+    },
+    {
+      "word": "demagogue",
+      "partOfSpeech": "noun",
+      "pronunciation": "DEM-uh-gog",
+      "articleQuote": "An eloquent speaker or writer can give the impression of vanquishing an opponent merely by using forceful words. In fact that is probably the defining quality of a demagogue.",
+      "inContext": "Graham says that winning an argument through sheer force of words — sounding powerful rather than being right — is the signature move of a demagogue.",
+      "meaning": "A leader or speaker who wins people over by stirring up their emotions and prejudices instead of offering honest arguments.",
+      "examples": [
+        "The candidate for class president sounded like a demagogue, shouting crowd-pleasing promises about banning homework instead of explaining a real plan.",
+        "History classes study how demagogues in the 1930s used fear and anger, not facts, to take power."
+      ]
+    },
+    {
+      "word": "flippant",
+      "partOfSpeech": "adjective",
+      "pronunciation": "FLIP-unt",
+      "articleQuote": "Is the author flippant, but correct? Better that than grave and wrong.",
+      "inContext": "Graham asks whether a writer with a joking, unserious tone can still be right — and answers yes: a flippant-but-correct writer beats a solemn-but-wrong one, which is why criticizing tone alone is weak.",
+      "meaning": "Treating something serious with casual humor or a lack of proper respect.",
+      "examples": [
+        "His flippant answer — \"homework is a myth\" — got a laugh from the class and a frown from the teacher.",
+        "She regretted her flippant reply when she realized her friend was genuinely upset."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Ad hominem",
+      "articleQuote": "An ad hominem attack is not quite as weak as mere name-calling. It might actually carry some weight.",
+      "meaning": "In soccer there's a foul called \"playing the player, not the ball\" — you can't tackle the person just because you can't get the ball. An ad hominem (Latin for \"to the person\") is the arguing version of that foul: instead of showing what's wrong with someone's argument, you attack the someone.\n\nGraham's example: a senator writes that senators' salaries should be raised, and a critic answers, \"Of course he would say that. He's a senator.\" Notice what happened — the critic pointed at the senator's motive, but never showed the argument was wrong. Maybe salaries really should be raised! The senator's self-interest is a reason to double-check his logic, not a substitute for checking it. As Graham puts it: if something is wrong with the argument, say what it is; if nothing is, the arguer's identity doesn't matter.\n\nA common version is attacking someone's authority instead of their claim: \"You can't have an opinion on the team's strategy — you don't even play.\" But good ideas often come from outsiders, and a true statement is true no matter who says it. Once you know the name, you'll spot ad hominems everywhere: in comment sections, in politics, and in arguments with your siblings."
+    },
+    {
+      "name": "Straw man",
+      "articleQuote": "If you can't find an actual quote to disagree with, you may be arguing with a straw man.",
+      "meaning": "A scarecrow is much easier to knock over than a real person — it's made of straw and it can't fight back. A straw man argument is when you build a fake, exaggerated version of what someone said, knock *that* over, and act like you won.\n\nHere's how it works. Your friend says, \"I think we get a bit too much homework.\" You reply, \"Oh, so school should just teach us nothing at all?\" You've now defeated an argument — but not your friend's argument. Nobody said school should teach nothing. You invented a weaker claim (a scarecrow), stuffed it, and beat it up, because the real claim was harder to answer.\n\nGraham gives a practical test for catching yourself doing this: to genuinely refute someone, you should be able to quote the exact words you disagree with. If you can't find a real quote that says what you're attacking, you may be arguing with a straw man you built yourself. Keep that test handy when you read online arguments — you'll be surprised how often the comment is fighting something the article never actually said."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to Graham, what is the most convincing form of disagreement?",
+      "options": [
+        "Pointing out that the author lacks authority on the topic",
+        "Refuting the author's central point, with a quote and reasons it's mistaken",
+        "Stating the opposing position clearly and confidently",
+        "Correcting the author's grammar and minor factual slips"
+      ],
+      "answerIndex": 1,
+      "explanation": "The top of the hierarchy (DH6) is refuting the central point — quoting the key claim and explaining why it's wrong; everything below it proves less."
+    },
+    {
+      "question": "A commenter writes: \"Of course she supports longer lunch periods — she runs the cafeteria.\" Which form of disagreement is this?",
+      "options": [
+        "A straw man",
+        "A refutation",
+        "An ad hominem",
+        "A counterargument"
+      ],
+      "answerIndex": 2,
+      "explanation": "It attacks the arguer's motive and position instead of showing anything wrong with the argument itself — the definition of ad hominem."
+    },
+    {
+      "question": "Someone proposes one mental-health day per semester, and a classmate replies: \"So you think students should just skip school whenever they feel like it?\" What has the classmate done?",
+      "options": [
+        "Refuted the central point",
+        "Attacked a straw man — an exaggerated claim nobody made",
+        "Responded to the proposer's tone",
+        "Made a valid counterargument with evidence"
+      ],
+      "answerIndex": 1,
+      "explanation": "The reply defeats an invented, extreme version of the proposal (\"skip whenever you feel like it\") rather than the modest claim actually made — a classic straw man."
+    },
+    {
+      "question": "Which sentence uses the word \"cavalier\" correctly?",
+      "options": [
+        "The cavalier was parked in the driveway overnight.",
+        "He cavaliered the ball across the field to his teammate.",
+        "The chef added a cavalier of spices to the soup.",
+        "She gave a cavalier shrug when told the test counted for half her grade."
+      ],
+      "answerIndex": 3,
+      "explanation": "Cavalier is an adjective meaning carelessly unconcerned about something serious — shrugging off a huge test fits exactly."
+    },
+    {
+      "question": "Why does Graham say the disagreement hierarchy can't be used to pick the winner of an argument?",
+      "options": [
+        "Because the levels describe the form of a reply, not whether it's actually correct",
+        "Because most online arguments never rise above name-calling",
+        "Because refutation is too rare for anyone to achieve",
+        "Because lower levels are often more persuasive to readers"
+      ],
+      "answerIndex": 0,
+      "explanation": "A reply at the top level (DH6) can still be mistaken — the hierarchy sets an upper bound on how convincing a reply can be, but form alone doesn't make it true."
+    }
+  ]
+}
