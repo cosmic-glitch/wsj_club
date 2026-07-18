@@ -1,0 +1,134 @@
+{
+  "date": "2026-07-18",
+  "title": "How the U.S. Lost the World Cup—and Won Over the World",
+  "articleUrl": "https://www.wsj.com/sports/soccer/team-usa-world-cup-tourists-598ea502",
+  "pdfUrl": "/pdfs/2026-07-18.pdf",
+  "voiceQuiz": true,
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "hegemony",
+      "partOfSpeech": "noun",
+      "pronunciation": "hih-JEM-uh-nee",
+      "articleQuote": "This was a planetary event for America to prove that its cultural hegemony could absorb the world's most popular sport.",
+      "inContext": "America's dominance over global culture — its movies, music, brands, and sports leagues lead the world — was big enough to swallow soccer, the one game it never used to care about, and make even that its own.",
+      "meaning": "Dominance or leadership of one country or group over all the others — it can be military, economic, or cultural. The 'hegemon' is the one at the top that everyone else follows, imitates, or has to work around.",
+      "examples": [
+        "For most of the 2000s, Apple and Google enjoyed such hegemony over the smartphone world that every new phone was compared to theirs.",
+        "Rome's hegemony over the ancient Mediterranean meant its language, laws, and roads shaped countries that didn't even exist yet."
+      ]
+    },
+    {
+      "word": "unmitigated",
+      "partOfSpeech": "adjective",
+      "pronunciation": "un-MIH-tih-gay-tid",
+      "articleQuote": "…suggested the whole thing might turn into an unmitigated disaster.",
+      "inContext": "People feared the tournament would be a total, complete disaster — bad through and through, with nothing to soften it or redeem it.",
+      "meaning": "Absolute and total, with nothing making it less severe. It comes from 'mitigate' (to make something less bad), so 'unmitigated' literally means 'not softened at all.' It almost always intensifies something negative: an unmitigated disaster, unmitigated failure, unmitigated nonsense.",
+      "examples": [
+        "Forgetting his lines, tripping over the scenery, and knocking over the set — his first play was an unmitigated catastrophe.",
+        "The sleepover was an unmitigated success in their eyes, even though nobody actually slept."
+      ]
+    },
+    {
+      "word": "insular",
+      "partOfSpeech": "adjective",
+      "pronunciation": "IN-suh-ler",
+      "articleQuote": "…those who see an insular, inward-looking nation sharply divided by politics and culture wars…",
+      "inContext": "Critics saw an America closed in on itself — focused only on its own arguments and uninterested in the rest of the world.",
+      "meaning": "Inward-looking and cut off from outside ideas, people, or influences. It comes from the Latin 'insula,' meaning island — an insular person or country behaves like an island, keeping to itself and ignoring what's beyond its shores.",
+      "examples": [
+        "The friend group had gotten so insular that they stopped noticing new kids who wanted to join.",
+        "Critics said the studio's movies had become insular — made for the same fans, referencing only its own earlier films."
+      ]
+    },
+    {
+      "word": "fractious",
+      "partOfSpeech": "adjective",
+      "pronunciation": "FRAK-shus",
+      "articleQuote": "…the potentially fractious semifinal between ancient enemies England and Argentina.",
+      "inContext": "Officials worried the semifinal could turn quarrelsome and unruly — two sets of rival fans with a long, bitter history packed into one stadium.",
+      "meaning": "Irritable, quarrelsome, and hard to control — ready to break into arguments or fights. It shares a root with 'fracture': a fractious group is one that keeps threatening to break apart into conflict.",
+      "examples": [
+        "The debate team grew fractious after the loss, with everyone blaming everyone else.",
+        "By hour six of the road trip, the back seat had turned fractious — three siblings, one charger, zero patience."
+      ]
+    },
+    {
+      "word": "cornucopia",
+      "partOfSpeech": "noun",
+      "pronunciation": "kor-nuh-KOH-pee-uh",
+      "articleQuote": "The scale of our shopping malls, the size of our highways and the cornucopia that is the Costco frozen-food aisle.",
+      "inContext": "To visitors, the Costco freezer aisle was an overflowing abundance — more choices of more things than they had ever seen in one place.",
+      "meaning": "An overflowing abundance of good things. In Greek myth, the cornucopia was the 'horn of plenty' — a horn that magically refilled with fruit and grain forever — and the word still paints that picture: a supply so rich it spills over.",
+      "examples": [
+        "The streaming era gives you a cornucopia of shows — the hard part is picking one instead of scrolling all night.",
+        "The school club fair was a cornucopia of options, from robotics to rock climbing to a club just for baking bread."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Soft power",
+      "articleQuote": "That most of these impressions were formed outside the tournament's 104 matches helps explain why this World Cup hit harder than more traditional strains of soft power.",
+      "meaning": "There are two ways to get people to go along with you. You can push them — threaten, pressure, or pay them. Or you can pull them — be so admired that they *want* to be on your side. The push is called hard power: armies, sanctions, money. The pull is soft power: the influence a country gets when others like its culture, its values, and its way of life. The political scientist Joseph Nye coined the term, and his test is simple — hard power changes what people *must* do; soft power changes what they *want* to do.\n\nHow does it actually work? Through everything a country exports besides force: movies, music, food, universities, sports, tech. When millions of teenagers worldwide stream K-pop and K-dramas, South Korea gains something no army could buy — a generation that likes Korea, learns Korean, buys Korean, and visits Korea. You can see the same mechanic at school: one kid gets classmates to join their club by pressuring them; another never asks at all, but everyone joins because that kid's club just seems like the best place to be. The second kid has soft power.\n\nThe article adds a twist worth remembering: not all soft power is equal. Carefully staged showcases — an Olympic opening ceremony, a halftime show, a military flyover — are soft power ads, and people discount them the way they discount any ad. What hit harder at this World Cup was unscripted real life: a month of visitors eating at Waffle House, riding a Waymo, and wandering Costco. Authentic experience beats polished performance, because it can't be faked — which is why the piece concludes that 'the best advertisement for America was simply America itself.'"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what turned out to be 'the best advertisement for America' during the World Cup?",
+      "options": [
+        "The state-of-the-art NFL stadiums",
+        "The 250th-anniversary fireworks and ceremonies",
+        "Ordinary American daily life, experienced firsthand by visitors",
+        "The U.S. national team's performance on the field"
+      ],
+      "answerIndex": 2,
+      "explanation": "The authors argue it wasn't anything America deliberately projected — visitors were won over by everyday real life, from Waffle House to Costco, during their long stay."
+    },
+    {
+      "question": "Which of these is the best example of soft power?",
+      "options": [
+        "A navy blockading a rival country's ports",
+        "A government putting tariffs on imports to force a trade deal",
+        "A country's films and music making foreigners admire it and want to visit",
+        "One country paying another for permission to build a military base"
+      ],
+      "answerIndex": 2,
+      "explanation": "Soft power works by attraction — culture and values that make others want what you want — while blockades, tariffs, and payments are forms of hard power (force or money)."
+    },
+    {
+      "question": "A historian writes that 19th-century Britain enjoyed 'naval and industrial hegemony.' What does hegemony mean?",
+      "options": [
+        "A friendly alliance among equal partners",
+        "Dominance or leadership over others",
+        "A period of rapid decline",
+        "Complete isolation from world affairs"
+      ],
+      "answerIndex": 1,
+      "explanation": "Hegemony means dominance or leadership by one country or group over the rest — Britain's navy and factories led the world, just as the article says American culture does."
+    },
+    {
+      "question": "The article calls the England–Argentina semifinal 'potentially fractious.' Officials were worried the match could become…",
+      "options": [
+        "quarrelsome and hard to control",
+        "boring and low-scoring",
+        "too expensive for fans to attend",
+        "delayed by bad weather"
+      ],
+      "answerIndex": 0,
+      "explanation": "Fractious means irritable and quarrelsome — with two rival fan bases and a bitter history, authorities feared conflict, yet the fans didn't even need to be separated."
+    },
+    {
+      "question": "Why does the article say this World Cup 'hit harder' than an Olympics or a halftime show as a form of soft power?",
+      "options": [
+        "It was broadcast to a much larger television audience",
+        "Visitors spent weeks living everyday American life, not just watching a staged spectacle",
+        "The matches themselves were higher quality than Olympic events",
+        "FIFA spent more money promoting it than the Olympics ever has"
+      ],
+      "answerIndex": 1,
+      "explanation": "Most impressions were formed outside the 104 matches — a 39-day 'stay in America's guest bedroom' of unscripted real life, which persuades more than any stage-managed show."
+    }
+  ]
+}
