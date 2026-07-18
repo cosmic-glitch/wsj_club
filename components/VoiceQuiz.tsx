@@ -165,7 +165,9 @@ function RecordingHelp() {
       Press <span className="font-bold text-[#0a0a0a]">Start speaking</span> and
       wait until it shows <span className="font-bold text-[#0a0a0a]">Recording</span>{" "}
       before you talk. Press <span className="font-bold text-[#0a0a0a]">Stop</span>{" "}
-      when you’ve finished your answer. The same steps apply to every question.
+      when you’ve finished your answer — or{" "}
+      <span className="font-bold text-[#0a0a0a]">Pause</span> if you get
+      interrupted. The same steps apply to every question.
     </p>
   );
 }
@@ -268,6 +270,8 @@ async function decodeBlobToPcm16k(blob: Blob, ctx: AudioContext): Promise<Float3
  * The flow is a discrete loop (no realtime speech-to-speech model):
  *   tutor line  → spoken with TTS (/api/quiz-tts) and shown on screen
  *   "Start speaking" → records the student's mic (state toggle, not push-to-hold)
+ *   "Pause"/"Resume" → suspend/continue the recording mid-answer (interruptions);
+ *                  the clip and timer exclude the gap (see pauseSpeaking)
  *   "Stop"       → transcribes the clip (/api/quiz-transcribe), shows it
  *   next line    → /api/quiz-turn returns the tutor's next question; repeat
  * Turn-taking is entirely the student's call (the buttons), never the model's.
@@ -342,6 +346,10 @@ export default function VoiceQuiz({
   // Live recording UI: elapsed seconds + a short rolling history of mic levels.
   const [recSeconds, setRecSeconds] = useState(0);
   const [levels, setLevels] = useState<number[]>(() => new Array(METER_BARS).fill(0));
+  // True while the CURRENT answer's recording is paused (the student got
+  // interrupted mid-answer). A sub-state of phase "recording", not a phase of
+  // its own — Stop and Cancel keep working exactly as they do while recording.
+  const [recPaused, setRecPaused] = useState(false);
 
   // The graded report card, shown to the student on the wrap-up screen.
   const [report, setReport] = useState<Report | null>(null);
@@ -1031,11 +1039,102 @@ export default function VoiceQuiz({
     }
 
     setRecSeconds(0);
+    setRecPaused(false);
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => setRecSeconds((s) => s + 1), 1000);
     startMeterLoop();
     logEvent("start-speaking", `order=${transcriptRef.current.length} ios=${isIOS}`);
     setPhase("recording");
+  }
+
+  // "Pause" — suspend the in-flight recording without ending the answer (the
+  // student got interrupted mid-answer). Nothing is captured while paused — the
+  // saved clip and the timer both exclude the gap — and Resume picks the same
+  // answer back up. Desktop pauses the per-turn MediaRecorder; iOS just stops
+  // appending samples (the mic + capture graph stay in place).
+  function pauseSpeaking() {
+    if (phase !== "recording" || recPaused) return;
+    if (isIOS) {
+      iosRecordingRef.current = false;
+    } else {
+      const rec = turnRecRef.current;
+      if (!rec || rec.state !== "recording") return;
+      try {
+        rec.pause();
+      } catch {
+        return;
+      }
+    }
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+    stopMeterLoop(); // flat bars — nothing is being captured
+    logEvent("pause-speaking", `at=${recSeconds}s ios=${isIOS}`);
+    setRecPaused(true);
+  }
+
+  // "Resume" — continue the paused recording. On iOS a long pause can kill the
+  // capture session (screen lock / app switch suspends the context or mutes the
+  // mic track), so it recovers best-effort: resume the context and, if the track
+  // is no longer live, re-acquire a fresh mic into the SAME processor — the
+  // samples captured before the pause are kept either way.
+  async function resumeSpeaking() {
+    if (phase !== "recording" || !recPaused) return;
+    const runId = activeRunIdRef.current;
+    if (isIOS) {
+      try {
+        const ctx = iosCtxRef.current;
+        if (ctx && ctx.state === "suspended") await ctx.resume();
+        const track = iosMicRef.current?.getAudioTracks()[0];
+        if (!track || track.readyState !== "live" || track.muted) {
+          iosSourceRef.current?.disconnect();
+          iosSourceRef.current = null;
+          iosMicRef.current?.getTracks().forEach((t) => t.stop());
+          iosMicRef.current = null;
+          const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
+          // Stopped/cancelled/closed while the mic was being re-acquired — the
+          // capture graph is gone (or going); release the fresh mic and bail.
+          if (
+            !canContinue(runId) ||
+            phaseRef.current !== "recording" ||
+            !iosProcessorRef.current
+          ) {
+            mic.getTracks().forEach((t) => t.stop());
+            return;
+          }
+          iosMicRef.current = mic;
+          const source = iosCtxRef.current!.createMediaStreamSource(mic);
+          iosSourceRef.current = source;
+          if (analyserRef.current) source.connect(analyserRef.current);
+          source.connect(iosProcessorRef.current);
+        }
+      } catch (err) {
+        console.warn("[voicequiz] resume capture failed", err);
+        if (!canContinue(runId) || phaseRef.current !== "recording") return;
+        setNotice(
+          "Couldn’t restart the microphone. Try Resume again, or press Stop to finish the answer."
+        );
+        return;
+      }
+      if (!canContinue(runId) || phaseRef.current !== "recording") return;
+      iosRecordingRef.current = true;
+    } else {
+      const rec = turnRecRef.current;
+      if (!rec || rec.state !== "paused") return;
+      try {
+        rec.resume();
+      } catch {
+        setNotice("Couldn’t resume the recording. Press Stop to finish the answer.");
+        return;
+      }
+    }
+    setNotice("");
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => setRecSeconds((s) => s + 1), 1000);
+    startMeterLoop();
+    logEvent("resume-speaking", `at=${recSeconds}s ios=${isIOS}`);
+    setRecPaused(false);
   }
 
   // Stop the per-turn recorder and resolve its audio Blob (+ a filename the STT
@@ -1072,6 +1171,7 @@ export default function VoiceQuiz({
       timerRef.current = null;
     }
     stopMeterLoop();
+    setRecPaused(false); // Stop also works from a paused recording
     logEvent("stop-speaking", `order=${transcriptRef.current.length} ios=${isIOS}`);
 
     // Collect this answer's clip (iOS: a WAV + its PCM from PCM capture; desktop:
@@ -1349,6 +1449,7 @@ export default function VoiceQuiz({
     setFinished(false);
     setTurns([]);
     setSlotOffer(null);
+    setRecPaused(false);
     transcriptRef.current = [];
     segmentsRef.current = [];
     failureRef.current = null;
@@ -1821,6 +1922,7 @@ export default function VoiceQuiz({
     setFinished(false);
     setTurns([]);
     setSlotOffer(null);
+    setRecPaused(false);
     transcriptRef.current = [];
     segmentsRef.current = [];
     failureRef.current = null;
@@ -2152,30 +2254,67 @@ export default function VoiceQuiz({
                   {phase === "recording" && (
                     <div>
                       <div className="flex items-center gap-3">
-                        <span className="flex h-3 w-3 animate-pulse bg-red-600" />
-                        <span className="font-mono text-sm font-bold uppercase tracking-[.06em] text-red-600">
-                          Recording — {fmtClock(recSeconds)}
+                        <span
+                          className={`flex h-3 w-3 ${
+                            recPaused ? "bg-stone-400" : "animate-pulse bg-red-600"
+                          }`}
+                        />
+                        <span
+                          className={`font-mono text-sm font-bold uppercase tracking-[.06em] ${
+                            recPaused ? "text-stone-500" : "text-red-600"
+                          }`}
+                        >
+                          {recPaused ? "Paused" : "Recording"} — {fmtClock(recSeconds)}
                         </span>
                       </div>
                       {/* Live mic-level meter — an unmistakable "you're being
                           recorded right now" cue (driven by the analyser on both
-                          the desktop and iOS capture paths). */}
+                          the desktop and iOS capture paths). While paused the
+                          bars go grey + flat: nothing is being captured. */}
                       <div className="mt-3 flex h-10 items-center gap-0.5">
                         {levels.map((lvl, i) => (
                           <span
                             key={i}
-                            className="w-1 bg-red-500"
+                            className={`w-1 ${recPaused ? "bg-stone-300" : "bg-red-500"}`}
                             style={{ height: `${Math.max(8, lvl * 100)}%` }}
                           />
                         ))}
                       </div>
-                      <button
-                        type="button"
-                        onClick={stopSpeaking}
-                        className={`mt-4 ${BTN_PRIMARY}`}
-                      >
-                        ⏹ Stop
-                      </button>
+                      {recPaused && (
+                        <p className="mt-2 text-xs leading-relaxed text-stone-500">
+                          Nothing is being recorded while paused. Press{" "}
+                          <span className="font-bold text-[#0a0a0a]">Resume</span>{" "}
+                          to keep answering, or{" "}
+                          <span className="font-bold text-[#0a0a0a]">Stop</span> if
+                          you’re done with this answer.
+                        </p>
+                      )}
+                      <div className="mt-4 flex flex-wrap items-center gap-3">
+                        {recPaused ? (
+                          <button
+                            type="button"
+                            onClick={() => void resumeSpeaking()}
+                            className={BTN_PRIMARY}
+                          >
+                            ▶ Resume
+                          </button>
+                        ) : (
+                          <button
+                            type="button"
+                            onClick={pauseSpeaking}
+                            className={BTN_SECONDARY}
+                          >
+                            ⏸ Pause
+                          </button>
+                        )}
+                        <button
+                          type="button"
+                          onClick={stopSpeaking}
+                          className={recPaused ? BTN_SECONDARY : BTN_PRIMARY}
+                        >
+                          ⏹ Stop
+                        </button>
+                      </div>
                     </div>
                   )}
 
