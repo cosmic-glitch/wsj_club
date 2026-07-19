@@ -1,0 +1,119 @@
+{
+  "date": "2026-07-19",
+  "title": "Learning curves: What does it mean for a technology to follow Wright's Law?",
+  "articleUrl": "https://ourworldindata.org/learning-curve",
+  "voiceQuiz": true,
+  "source": "Our World in Data",
+  "vocab": [
+    {
+      "word": "cumulative",
+      "partOfSpeech": "adjective",
+      "pronunciation": "KYOO-myuh-luh-tiv",
+      "articleQuote": "As the cumulative installed capacity increased, the price of solar declined exponentially.",
+      "inContext": "Here it means the total amount of solar panels ever installed, added up across every year — not how many went up in any single year, but the running grand total so far.",
+      "meaning": "Describing an amount that keeps growing as each new piece is added to everything that came before — the accumulated total to date, rather than a single moment's figure.",
+      "examples": [
+        "Her cumulative grade came from every quiz and test added together, not just the final exam.",
+        "By the last game of the season, his cumulative point total made him the school's all-time leading scorer."
+      ]
+    },
+    {
+      "word": "empirically",
+      "partOfSpeech": "adverb",
+      "pronunciation": "em-PEER-ih-klee",
+      "articleQuote": "In most settings, this is difficult to disentangle empirically...",
+      "inContext": "Here it means settling the question from actual measured data — the real records of prices and production — rather than just reasoning about what ought to be true.",
+      "meaning": "Based on observation, experiment, and real-world evidence rather than on theory, guesswork, or logic alone.",
+      "examples": [
+        "We argued about which route to school was faster, so we settled it empirically by timing both for a week.",
+        "A good science-fair project tests its claim empirically instead of just assuming the answer."
+      ]
+    },
+    {
+      "word": "myriad",
+      "partOfSpeech": "noun",
+      "pronunciation": "MIH-ree-ud",
+      "articleQuote": "A myriad of small improvements across a large collective process drives this continuous price decline.",
+      "inContext": "Here it means a countless, wide-ranging number of tiny improvements — so many separate little advances that you couldn't easily list them all.",
+      "meaning": "An extremely large, practically countless number of things; a vast variety.",
+      "examples": [
+        "The night sky away from the city revealed a myriad of stars we never see at home.",
+        "There are a myriad of reasons a team might lose a game, from injuries to bad weather to plain luck."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Economies of scale",
+      "articleQuote": "such 'economies of scale' are found in the production of many goods. If you are already making one pizza, making a second one isn't that much extra work.",
+      "meaning": "Making the very first pizza is a lot of work: you buy the oven, find a recipe, clear the counter, learn where everything goes. But once all that is set up, the second pizza is easy — a little more dough, sauce, and cheese, and the tenth is easier still. The big costs got paid once, so the more pizzas you make, the less each one costs on average.\n\nThat is economies of scale: as you produce a larger quantity of something, the cost per item tends to fall, because fixed costs — the oven, the factory, the design work — get spread across more units, and you can buy materials in bulk. A giant factory stamping out a million phone cases pays far less per case than someone hand-making ten.\n\nThis is why big producers can usually sell more cheaply than small ones, and why \"we'll make it up in volume\" is a real strategy. The article points out that this kind of saving is ordinary and expected — the surprising thing about a learning curve is a separate, extra effect stacked on top of it."
+    },
+    {
+      "name": "Exponential change and log scales",
+      "articleQuote": "On a logarithmic axis, a measure that declines exponentially follows a straight line.",
+      "meaning": "Most change you picture is \"add the same amount each step\": save $10 a week and your money climbs in a straight, gentle line. Exponential change is different — it multiplies by the same percentage each step. Money growing 10% a year, or a rumor where every person tells two more, doesn't crawl up a ramp; it hugs the ground for a while and then rockets. Fold a sheet of paper in half about 42 times and, in theory, it would reach the Moon, because each fold doubles the thickness.\n\nFalling numbers can be exponential too. Solar panels dropped about 20% in price every time the total ever built doubled. Twenty percent off, again and again, compounds into a 99.6% collapse over four decades.\n\nThe catch is that exponential curves are hard to read on a normal graph — they look flat, then suddenly shoot straight up. So scientists use a logarithmic scale, where each step up the axis means ten times more (1, 10, 100, 1,000…) instead of one more (1, 2, 3, 4…). On that kind of axis, steady exponential change straightens into a clean line — and a straight line is easy to spot, measure, and extend into the future. Whenever you see a chart with axes labeled 1, 10, 100, 1,000, that trick is being used."
+    },
+    {
+      "name": "Correlation vs. causation",
+      "articleQuote": "How do we know that increasing experience is causing lower prices? After all, it could be the other way around: production only increases after costs have fallen.",
+      "meaning": "Ice-cream sales and drowning deaths both rise every summer. Does ice cream cause drowning? Of course not — hot weather causes both. That is the classic trap: when two things move together, they correlate, and it is tempting to say one causes the other. But moving together doesn't prove it.\n\nThere are three ways to get fooled. Maybe A really does cause B. Maybe B causes A — that's called reverse causality. Or maybe some hidden third thing causes both. In the solar story, prices fall as experience grows, but which way does the arrow point? Does building more make it cheaper, or do people only build more after it gets cheaper?\n\nThe clever fix is a natural experiment: find a real situation where the cause couldn't possibly run backward. During World War II, demand for weapons was driven by the war itself, not by low prices — so when production shot up and costs fell, and then the price decline slowed once the war ended, you could be confident that experience was driving prices down, not the reverse. Whenever someone claims \"X causes Y\" from data, ask: could it be Y causing X, or a third thing causing both?"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does it mean for a technology to follow Wright's Law?",
+      "options": [
+        "It gets more expensive as it becomes more popular",
+        "Its price falls by a roughly constant percentage each time cumulative production doubles",
+        "It stops improving after a fixed number of years",
+        "Its price depends only on the current year's demand"
+      ],
+      "answerIndex": 1,
+      "explanation": "Wright's Law ties price declines to cumulative experience — each doubling of the total ever produced brings a steady percentage price drop, the pattern solar followed for four decades."
+    },
+    {
+      "question": "The article says that once you're making one pizza, a second 'isn't that much extra work.' This illustrates:",
+      "options": [
+        "Reverse causality",
+        "Exponential growth",
+        "Economies of scale",
+        "A logarithmic axis"
+      ],
+      "answerIndex": 2,
+      "explanation": "Spreading one-time setup costs over more units lowers the cost per item — economies of scale, which the article calls an ordinary, expected effect."
+    },
+    {
+      "question": "Why do scientists often plot a technology's price on a logarithmic (log) axis?",
+      "options": [
+        "To hide how much the price actually changed",
+        "Because a quantity changing by a constant percentage becomes a straight line, which is easy to read",
+        "Because log axes make every line curve sharply upward",
+        "To convert the prices into another currency"
+      ],
+      "answerIndex": 1,
+      "explanation": "On a log scale, steady exponential change appears as a straight line — simple to measure and extend into the future."
+    },
+    {
+      "question": "How did studying World War II weapons production help show that experience causes lower prices, and not the reverse?",
+      "options": [
+        "Wartime weapons were all made by hand, so prices couldn't fall",
+        "Demand was driven by the war itself, not by falling prices, so the surge in production couldn't have been caused by cheaper prices",
+        "Prices always rise during wars, which proved the opposite",
+        "The researchers used solar panels instead of weapons"
+      ],
+      "answerIndex": 1,
+      "explanation": "Because the war, not price, drove demand, the jump in production couldn't be an effect of cheaper prices — a natural experiment that pins down the direction of causation."
+    },
+    {
+      "question": "In the phrase 'the cumulative installed capacity increased,' cumulative most nearly means:",
+      "options": [
+        "The amount installed in one particular year",
+        "The total amount ever installed, added up across all the years",
+        "The average price per panel",
+        "The amount predicted for next year"
+      ],
+      "answerIndex": 1,
+      "explanation": "Cumulative describes the running grand total accumulated so far, not any single year's figure."
+    }
+  ]
+}
