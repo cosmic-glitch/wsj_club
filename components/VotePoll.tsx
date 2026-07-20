@@ -244,27 +244,32 @@ export default function VotePoll({
                               {c.title}
                             </p>
                             <p className="mt-1 font-sans text-[13px] leading-snug text-stone-700">
-                              {c.pitch}
-                            </p>
-                            <div className="mt-2 flex flex-wrap items-center gap-2">
+                              {c.pitch}{" "}
+                              {/* quiet parenthetical, not a button — the modal
+                                  is about voting; a loud READ IT competed with
+                                  that (owner feedback, 2026-07-19) */}
                               <ArticleLink
                                 href={c.articleUrl}
-                                className="inline-block border-2 border-[#0a0a0a] bg-white px-2 py-[3px] text-[10px] font-bold uppercase tracking-[.08em] text-[#0a0a0a] no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]"
+                                className="whitespace-nowrap text-stone-500 underline decoration-stone-400 underline-offset-2 hover:text-[#0a0a0a]"
                                 onClick={(e) => e.stopPropagation()}
                               >
-                                Read it
+                                (read the article)
                               </ArticleLink>
-                              {isYourVote && (
-                                <span className="text-[10px] font-bold uppercase tracking-[.08em]">
-                                  Your vote ✓
-                                </span>
-                              )}
-                              {typeof count === "number" && (
-                                <span className="ml-auto whitespace-nowrap text-[10px] font-bold uppercase tracking-[.08em] text-stone-600">
-                                  {count} vote{count === 1 ? "" : "s"}
-                                </span>
-                              )}
-                            </div>
+                            </p>
+                            {(isYourVote || typeof count === "number") && (
+                              <div className="mt-2 flex flex-wrap items-center gap-2">
+                                {isYourVote && (
+                                  <span className="text-[10px] font-bold uppercase tracking-[.08em]">
+                                    Your vote ✓
+                                  </span>
+                                )}
+                                {typeof count === "number" && (
+                                  <span className="ml-auto whitespace-nowrap text-[10px] font-bold uppercase tracking-[.08em] text-stone-600">
+                                    {count} vote{count === 1 ? "" : "s"}
+                                  </span>
+                                )}
+                              </div>
+                            )}
                           </div>
                         );
                       })}
