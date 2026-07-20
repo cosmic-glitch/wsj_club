@@ -7,9 +7,11 @@ import { safeNameOf } from "@/lib/session-io";
  * The daily article vote ("club pick") — the TODAY'S READ — YOU DECIDE row
  * (components/VotePoll.tsx) on BOTH track indexes ("/" and "/junior").
  *
- *   GET  — the active poll (public), plus — for a logged-in caller — their own
- *          ballot and, once they've voted, the tally. Counts only, never voter
- *          names (names are owner-side, via scripts/check-vote.mjs).
+ *   GET  — the active poll (public) with the TOTAL ballots-cast count (public
+ *          to everyone — participation, not preference), plus — for a
+ *          logged-in caller — their own ballot and, once they've voted, the
+ *          per-candidate tally. Counts only, never voter names (names are
+ *          owner-side, via scripts/check-vote.mjs).
  *   POST — cast or change the caller's vote (login-gated; one login = one
  *          ballot, overwritten in place to change).
  *
@@ -153,15 +155,16 @@ export async function GET(request: Request) {
     if (!poll) return Response.json({ active: false });
 
     const user = await currentUser();
-    let yourVote: string | null = null;
-    let tally: Record<string, number> | undefined;
-    if (user) {
-      // The tally is shown only once the caller has voted (keeps the first
-      // vote un-herded), so ballots are read only for a voter.
-      const ballots = await readBallots(track, poll.date);
-      yourVote = ballots.find((b) => b.user === user)?.candidateId ?? null;
-      if (yourVote) tally = tallyOf(poll, ballots);
-    }
+    // The TOTAL ballots-cast count is public — everyone (logged in or not)
+    // sees participation. The PER-CANDIDATE tally stays hidden until the
+    // caller has voted (keeps the first vote un-herded): a bare total can't
+    // herd anyone toward a candidate.
+    const ballots = await readBallots(track, poll.date);
+    const tally = tallyOf(poll, ballots);
+    const totalVotes = Object.values(tally).reduce((a, b) => a + b, 0);
+    const yourVote = user
+      ? (ballots.find((b) => b.user === user)?.candidateId ?? null)
+      : null;
 
     return Response.json({
       active: true,
@@ -169,7 +172,8 @@ export async function GET(request: Request) {
       candidates: poll.candidates,
       user,
       yourVote,
-      ...(tally ? { tally } : {}),
+      totalVotes,
+      ...(yourVote ? { tally } : {}),
     });
   } catch (err) {
     // The vote row is progressive enhancement on a static page — degrade to
@@ -236,10 +240,12 @@ export async function POST(request: Request) {
       (b) => b.user !== user
     );
     ballots.push(ballot);
+    const tally = tallyOf(poll, ballots);
     return Response.json({
       ok: true,
       yourVote: candidateId,
-      tally: tallyOf(poll, ballots),
+      tally,
+      totalVotes: Object.values(tally).reduce((a, b) => a + b, 0),
     });
   } catch (err) {
     console.error("Casting a vote failed:", err, "user:", user);

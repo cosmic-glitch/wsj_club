@@ -36,8 +36,11 @@ import type { Track } from "@/lib/content";
  * same on-click gate as the voice quiz — logged out, the modal shows a log-in
  * prompt instead of the ballot); a vote can be changed while the poll is live,
  * and the tally (counts only, never names) appears only after you've cast
- * yours. No deadline is shown — the owner announces the window in the group
- * chat, and publishing the day's reading is what actually closes the poll.
+ * yours. The TOTAL ballots-cast count is public though — shown to everyone
+ * next to the row's VOTE button and in the modal subtitle (participation, not
+ * preference, so it can't herd the vote). No deadline is shown — the owner
+ * announces the window in the group chat, and publishing the day's reading is
+ * what actually closes the poll.
  */
 
 type Candidate = {
@@ -56,6 +59,7 @@ type PollState = {
   user?: string | null;
   yourVote?: string | null;
   tally?: Record<string, number>;
+  totalVotes?: number; // ballots cast so far — public (participation, not preference)
 };
 
 /** "2026-07-16" → "Jul 16" (rendered uppercase — same as the row date tags). */
@@ -152,7 +156,14 @@ export default function VotePoll({
         setError(d.error ?? "Could not save your vote. Please try again.");
       } else {
         setPoll((p) =>
-          p ? { ...p, yourVote: d.yourVote, tally: d.tally } : p
+          p
+            ? {
+                ...p,
+                yourVote: d.yourVote,
+                tally: d.tally,
+                totalVotes: d.totalVotes ?? p.totalVotes,
+              }
+            : p
         );
       }
     } catch {
@@ -197,6 +208,12 @@ export default function VotePoll({
                     {voted
                       ? "Your vote is in — you can change it until the handout is published."
                       : "Tap the article the club should read today, then submit. You can change your vote until the handout is published."}
+                    {typeof poll.totalVotes === "number" &&
+                      ` ${
+                        poll.totalVotes === 1
+                          ? "1 vote has"
+                          : `${poll.totalVotes} votes have`
+                      } been cast so far.`}
                   </p>
                 </div>
 
@@ -325,7 +342,14 @@ export default function VotePoll({
         TODAY&rsquo;S READ — YOU DECIDE
       </span>
 
-      <span className="flex flex-wrap gap-[6px] min-[681px]:flex-nowrap">
+      <span className="flex flex-wrap items-center gap-2 min-[681px]:flex-nowrap">
+        {/* participation is public — everyone sees how many ballots are in
+            (the per-candidate tally stays post-vote only) */}
+        {typeof poll.totalVotes === "number" && (
+          <span className="whitespace-nowrap text-[10px] font-bold uppercase tracking-[.08em] text-[#0a0a0a]/60 group-hover:text-white/70">
+            {poll.totalVotes} vote{poll.totalVotes === 1 ? "" : "s"} in
+          </span>
+        )}
         <button type="button" onClick={openModal} className={ROW_BTN}>
           {voted ? "Voted ✓" : "Vote"}
         </button>
