@@ -128,7 +128,8 @@ export function buildInstructions(
   const audience = AUDIENCE[track];
   // Some days are vocabulary-only. When there are no concepts, the tutor skips
   // the concepts stage entirely (rather than quizzing on concepts that don't exist).
-  const hasConcepts = reading.concepts.length > 0;
+  const conceptCount = reading.concepts.length;
+  const hasConcepts = conceptCount > 0;
 
   // When we have the full article text, the tutor judges the student's
   // from-memory retelling against the real story. Otherwise it relies on the
@@ -198,6 +199,34 @@ ${vocabBlock(reading)}${
    important area was weak, you MAY give one brief educational update (a one or two
    sentence mini-lesson, not a question) before moving to the words.`;
 
+  // The concepts stage scales to how many concepts the day actually has. A
+  // one-concept day must NOT be told to "ask about at least two" — that quota is
+  // impossible to satisfy, and the tutor resolves the contradiction by re-asking
+  // the sole concept verbatim (or promoting a vocab word into a pseudo-concept).
+  // Both were seen live on a 5-vocab / 1-concept day. So: a singular stage when
+  // there's one concept, the "at least two DIFFERENT" quota only for two or more.
+  const conceptsStep =
+    conceptCount === 1
+      ? `3. CONCEPT — there is exactly ONE concept today. Ask ONE question about it
+   (what it is and why it matters) as its OWN turn, and WAIT for the student's
+   answer before moving on — never bundle it with the wrap-up. Judge against your
+   answer key, but do NOT over-probe — a correct HIGH-LEVEL understanding is enough;
+   only ask a guiding follow-up if their answer was wrong or clearly missed the point.
+   Once you have asked this one concept, you are DONE with concepts: do NOT re-ask it,
+   and do NOT invent extra concepts or turn a vocabulary word into one — go to the
+   wrap-up.`
+      : `3. CONCEPTS — ask about at least TWO DIFFERENT concepts, one at a time. Pick at
+   least two of the ${conceptCount} concepts above (more if it's going well) and, for
+   each, ask one question that checks whether they understand it (what it is and why
+   it matters). Ask each concept as its OWN turn and WAIT for the student's answer
+   before you move on — never bundle a concept question together with the wrap-up.
+   NEVER ask the same concept twice, and never re-word a concept you've already asked
+   into a "new" question — once a concept has been asked and answered, it is done.
+   Judge against your answer key, but do NOT over-probe — a correct HIGH-LEVEL
+   understanding is enough: if they grasp the gist, acknowledge it and move on; don't
+   keep drilling with extra "why"/"how" follow-ups. Only ask a guiding follow-up if
+   their answer was wrong or clearly missed the point.`;
+
   return `
 You are a friendly oral-quiz tutor for the Reading Club. You are quizzing a
 US student named ${name} about a news article they were asked
@@ -230,24 +259,13 @@ ${keyIdeasStep}
    the transcript so you ask about each word exactly once and never repeat one. Coach
    the gaps (one guiding follow-up if they're wrong, then confirm or briefly correct).
    Once all ${reading.vocab.length} words are done, move to the ${hasConcepts ? "concepts" : "wrap-up"}.
-${
-  hasConcepts
-    ? `3. CONCEPTS — ask about at least TWO, one at a time. Pick at least two of the
-   concepts above (more if it's going well) and, for each, ask one question that
-   checks whether they understand it (what it is and why it matters). Ask each
-   concept as its OWN turn and WAIT for the student's answer before you move on —
-   never bundle a concept question together with the wrap-up. Don't repeat a
-   concept you've already asked. Judge against your answer key, but do NOT over-probe
-   — a correct HIGH-LEVEL understanding is enough: if they grasp the gist, acknowledge
-   it and move on; don't keep drilling with extra "why"/"how" follow-ups. Only ask a
-   guiding follow-up if their answer was wrong or clearly missed the point.
-`
-    : ""
-}${hasConcepts ? "4" : "3"}. WRAP UP — a turn on its OWN, only once every stage above is done AND the
+${hasConcepts ? `${conceptsStep}\n` : ""}${hasConcepts ? "4" : "3"}. WRAP UP — a turn on its OWN, only once every stage above is done AND the
    student has ANSWERED your last question. When you have covered the key
    ideas${
      hasConcepts
-       ? `, ALL ${reading.vocab.length} vocabulary words, and at least two concepts (each one asked AND answered)`
+       ? `, ALL ${reading.vocab.length} vocabulary words, and ${
+           conceptCount === 1 ? "the concept" : "at least two concepts"
+         } (each one asked AND answered)`
        : ` and ALL ${reading.vocab.length} vocabulary words`
    },
    give a short, encouraging wrap-up (one or two sentences on what they did well and
