@@ -70,7 +70,7 @@ export default function StudentRoster({
               {title}
             </h1>
           )}
-          <p className={`${showTitle ? "mt-2 " : ""}font-mono text-xs text-stone-500`}>
+          <p className={`${showTitle ? "mt-2 " : ""}font-sans text-[13px] text-stone-500`}>
             {subtitle}
           </p>
         </div>

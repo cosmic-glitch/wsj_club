@@ -445,7 +445,7 @@ export default function AdminSessions({
                   sitting. Teacher-only (teacherView, not canDelete — a regular
                   teacher can't delete but should still see this). */}
               {teacherView && (session.resumeCount ?? 0) > 0 && (
-                <p className="font-mono text-xs text-stone-500">
+                <p className="text-xs text-stone-500">
                   Resumed {session.resumeCount} time
                   {session.resumeCount === 1 ? "" : "s"} — this attempt was paused
                   and continued later.

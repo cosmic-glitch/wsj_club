@@ -139,8 +139,11 @@ export default function LandingIndex({
                     {newest && <TodayTag date={r.date} />}
                   </span>
 
+                  {/* Title in the readable sans — sentence-length text reads
+                      badly in the mono UI face; the label/button layer stays
+                      mono (the chip below opts back in). */}
                   <span
-                    className={`min-w-0 font-bold leading-[1.35] ${
+                    className={`min-w-0 font-sans font-bold leading-[1.35] tracking-[-.01em] ${
                       newest
                         ? "text-[19px] group-hover:text-[#ffe600] [.vote-live~li_&]:text-[14.5px]"
                         : "text-[14.5px]"
@@ -149,7 +152,7 @@ export default function LandingIndex({
                     {r.title}
                     {/* The day's article was chosen by the club's vote. */}
                     {r.clubPick && (
-                      <span className="ml-2 inline-block whitespace-nowrap border-2 border-[#0a0a0a] px-[5px] py-[1px] align-[2px] text-[9px] font-bold uppercase tracking-[.14em] group-hover:border-white group-hover:text-white">
+                      <span className="ml-2 inline-block whitespace-nowrap border-2 border-[#0a0a0a] px-[5px] py-[1px] align-[2px] font-mono text-[9px] font-bold uppercase tracking-[.14em] group-hover:border-white group-hover:text-white">
                         Club pick
                       </span>
                     )}

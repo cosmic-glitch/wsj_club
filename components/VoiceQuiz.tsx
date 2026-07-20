@@ -2177,7 +2177,7 @@ export default function VoiceQuiz({
                 <div className="flex items-start justify-between gap-3">
                   <h2 className={MODAL_H2}>AI Quiz</h2>
                 </div>
-                <p className="mt-1 font-mono text-[11px] text-stone-500">
+                <p className="mt-1 text-[11px] text-stone-500">
                   Your answers are recorded and saved for your teacher.
                 </p>
 

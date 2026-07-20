@@ -111,7 +111,7 @@ export default async function AdminPage() {
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
           Your scores
         </h1>
-        <p className="mt-4 border-[3px] border-[#0a0a0a] bg-[#ffe600] px-4 py-3 font-mono text-sm font-bold text-[#0a0a0a]">
+        <p className="mt-4 border-[3px] border-[#0a0a0a] bg-[#ffe600] px-4 py-3 font-sans text-sm font-bold text-[#0a0a0a]">
           Please log in (top right) to see your quiz scores and recordings.
         </p>
       </div>
@@ -132,7 +132,7 @@ export default async function AdminPage() {
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
           {admin ? "Quiz sessions" : "Your scores"}
         </h1>
-        <p className="mt-6 border-[3px] border-[#0a0a0a] bg-stone-100 px-4 py-3 font-mono text-sm text-stone-600">
+        <p className="mt-6 border-[3px] border-[#0a0a0a] bg-stone-100 px-4 py-3 font-sans text-sm text-stone-600">
           {result.error}
         </p>
       </div>
@@ -151,7 +151,7 @@ export default async function AdminPage() {
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
           Your scores
         </h1>
-        <p className="mt-2 font-mono text-xs text-stone-500">
+        <p className="mt-2 font-sans text-[13px] text-stone-500">
           Your saved voice-quiz attempts — click Details on any attempt for its
           full report card, recording, and transcript.
         </p>
@@ -183,7 +183,7 @@ export default async function AdminPage() {
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
           Quiz sessions
         </h1>
-        <p className="mt-2 font-mono text-xs text-stone-500">
+        <p className="mt-2 font-sans text-[13px] text-stone-500">
           Saved voice-quiz attempts by article — click Details on any attempt
           for its full report card, recording, and transcript.
         </p>
@@ -226,7 +226,7 @@ export default async function AdminPage() {
       <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
         Quiz sessions
       </h1>
-      <p className="mt-2 font-mono text-xs text-stone-500">
+      <p className="mt-2 font-sans text-[13px] text-stone-500">
         Every classroom&apos;s attempts, by article — the Teacher column shows
         whose classroom each is. Click Details for the full report card,
         recording, and transcript.

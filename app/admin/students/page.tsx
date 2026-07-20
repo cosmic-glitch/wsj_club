@@ -20,7 +20,7 @@ export default async function StudentsPage() {
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
           Students
         </h1>
-        <p className="mt-4 border-[3px] border-[#0a0a0a] bg-[#ffe600] px-4 py-3 font-mono text-sm font-bold text-[#0a0a0a]">
+        <p className="mt-4 border-[3px] border-[#0a0a0a] bg-[#ffe600] px-4 py-3 font-sans text-sm font-bold text-[#0a0a0a]">
           Please log in (top right) to manage your classroom.
         </p>
       </div>
@@ -35,7 +35,7 @@ export default async function StudentsPage() {
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
           Students
         </h1>
-        <p className="mt-4 border-[3px] border-[#0a0a0a] bg-stone-100 px-4 py-3 font-mono text-sm text-stone-600">
+        <p className="mt-4 border-[3px] border-[#0a0a0a] bg-stone-100 px-4 py-3 font-sans text-sm text-stone-600">
           This page is for teachers. Your scores are on the{" "}
           <a href="/admin" className="font-bold underline">
             Scores
@@ -140,7 +140,7 @@ export default async function StudentsPage() {
       <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
         Manage students
       </h1>
-      <p className="mt-2 font-mono text-xs text-stone-500">
+      <p className="mt-2 font-sans text-[13px] text-stone-500">
         Every classroom — your own and each teacher&apos;s. You can add a student
         to any of them; renaming and password resets stay with each classroom&apos;s
         own teacher.

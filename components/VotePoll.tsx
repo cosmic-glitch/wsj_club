@@ -338,7 +338,8 @@ export default function VotePoll({
         <TodayTag date={date} />
       </span>
 
-      <span className="min-w-0 text-[19px] font-bold leading-[1.35] group-hover:text-[#ffe600]">
+      {/* font-sans to match the reading rows' titles (same grid slot) */}
+      <span className="min-w-0 font-sans text-[19px] font-bold leading-[1.35] group-hover:text-[#ffe600]">
         TODAY&rsquo;S READ — YOU DECIDE
       </span>
 
