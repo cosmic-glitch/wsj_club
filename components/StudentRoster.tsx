@@ -112,9 +112,8 @@ export default function StudentRoster({
           <table className="w-full text-sm">
             <thead>
               <tr className="bg-[#0a0a0a] text-left font-mono text-[10px] font-bold uppercase tracking-[.12em] text-white">
-                <th className="px-4 py-2.5 font-bold">Student</th>
-                {showTeacher && <th className="px-4 py-2.5 font-bold">Teacher</th>}
                 <th className="px-4 py-2.5 font-bold">Username</th>
+                {showTeacher && <th className="px-4 py-2.5 font-bold">Teacher</th>}
                 <th className="px-4 py-2.5 text-right font-bold">Attempts</th>
                 <th className="px-4 py-2.5 font-bold">Last active</th>
                 {!readOnly && <th className="px-4 py-2.5 text-right font-bold">Actions</th>}
@@ -287,8 +286,8 @@ function StudentRow({
             </button>
           </span>
         ) : (
-          <span className="font-medium text-stone-900">
-            {student.displayName}
+          <span className="font-mono font-medium text-stone-900">
+            {student.username}
             {!student.active && (
               <span className="ml-2 bg-stone-200 px-1.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-stone-500">
                 inactive
@@ -300,7 +299,6 @@ function StudentRow({
       {showTeacher && (
         <td className="px-4 py-3 text-stone-600">{student.teacherName ?? "—"}</td>
       )}
-      <td className="px-4 py-3 font-mono text-xs text-stone-500">{student.username}</td>
       <td className="px-4 py-3 text-right tabular-nums text-stone-600">
         {student.attempts}
       </td>
