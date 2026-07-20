@@ -1,8 +1,10 @@
 import { currentUser, isAdmin, isOwner } from "@/lib/auth";
 import { listStudents, listTeachers, type PublicUser } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
-import StudentRoster, { type RosterEntry } from "@/components/StudentRoster";
-import ClassroomTabs, { type ClassroomTab } from "@/components/ClassroomTabs";
+import StudentRoster, {
+  type Classroom,
+  type RosterEntry,
+} from "@/components/StudentRoster";
 
 // Reads cookies + Blob at request time — never static.
 export const dynamic = "force-dynamic";
@@ -87,11 +89,10 @@ export default async function StudentsPage() {
   // any of them (the /api/students POST lets the owner target a teacherId), but
   // Rename/Reset stay own-classroom (the /api/students/[username] route still
   // ownership-checks and doesn't exempt the owner). A regular teacher, and a
-  // lone owner with no other teachers, manages just their own classroom with no
-  // tab bar (unchanged).
-  const others = isOwner(user)
-    ? (await listTeachers()).filter((t) => t.username !== user)
-    : [];
+  // lone owner with no other teachers, manages just their own classroom
+  // (unchanged).
+  const teachers = isOwner(user) ? await listTeachers() : [];
+  const others = teachers.filter((t) => t.username !== user);
 
   if (others.length === 0) {
     return (
@@ -101,53 +102,49 @@ export default async function StudentsPage() {
     );
   }
 
-  // Owner + other teachers → one tab per classroom (own first, fully editable;
-  // each other teacher's lets the owner ADD students but not Rename/Reset). The
-  // tab names the classroom, so the roster drops its own heading (showTitle={false}).
-  const otherTabs = await Promise.all(
+  // Owner + other teachers → ONE unified roster with a Teacher column (the
+  // Scores-page recipe — the per-classroom tabs were dropped as inefficient):
+  // own students first (fully editable), then each other teacher's (visible,
+  // addable-to via the modal's classroom selector, but not Rename/Reset).
+  const self = teachers.find((t) => t.username === user);
+  const otherRosters = await Promise.all(
     others.map(async (t) => ({
-      key: t.username,
-      label: `${t.displayName}’s classroom`,
-      content: (
-        <div className="mt-6">
-          <StudentRoster
-            students={toRoster(await listStudents(t.username))}
-            teacherName={t.username}
-            subtitle={`Managed by ${t.displayName}. You can add a student here; only ${t.displayName} can rename or reset passwords.`}
-            readOnly
-            canAdd
-            showTitle={false}
-          />
-        </div>
-      ),
+      teacher: t,
+      students: toRoster(await listStudents(t.username)),
     }))
   );
-  const tabs: ClassroomTab[] = [
-    {
-      key: user,
-      label: "My classroom",
-      content: (
-        <div className="mt-6">
-          <StudentRoster students={ownRoster} teacherName={user} showTitle={false} />
-        </div>
-      ),
-    },
-    ...otherTabs,
+  const unified: RosterEntry[] = [
+    ...ownRoster.map((s) => ({
+      ...s,
+      teacherName: self?.displayName ?? user,
+      canManage: true,
+    })),
+    ...otherRosters.flatMap(({ teacher, students }) =>
+      students.map((s) => ({
+        ...s,
+        teacherName: teacher.displayName,
+        canManage: false,
+      }))
+    ),
+  ];
+  const classrooms: Classroom[] = [
+    { teacherId: user, label: "My classroom" },
+    ...others.map((t) => ({
+      teacherId: t.username,
+      label: `${t.displayName}’s classroom`,
+    })),
   ];
 
   return (
     <div>
-      <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
-        Manage students
-      </h1>
-      <p className="mt-2 font-sans text-[13px] text-stone-500">
-        Every classroom — your own and each teacher&apos;s. You can add a student
-        to any of them; renaming and password resets stay with each classroom&apos;s
-        own teacher.
-      </p>
-      <div className="mt-8">
-        <ClassroomTabs tabs={tabs} />
-      </div>
+      <StudentRoster
+        students={unified}
+        teacherName={user}
+        title="Manage students"
+        subtitle="Every classroom in one list. You can add a student to any classroom; renaming and password resets stay with each classroom's own teacher."
+        showTeacher
+        classrooms={classrooms}
+      />
     </div>
   );
 }

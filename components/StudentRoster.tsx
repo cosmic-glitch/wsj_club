@@ -9,7 +9,16 @@ export type RosterEntry = {
   active: boolean;
   attempts: number;
   lastActiveIso: string | null;
+  // Owner's unified all-classrooms view: the classroom's teacher display name
+  // (the Teacher column) and whether the viewer may Rename/Reset this row
+  // (only the owner's own students — the PATCH route ownership-checks and
+  // doesn't exempt the owner). Absent on a single-classroom roster.
+  teacherName?: string;
+  canManage?: boolean;
 };
+
+// A classroom the Add-student modal can target (owner's unified view).
+export type Classroom = { teacherId: string; label: string };
 
 // Kid-friendly memorable passwords, generated client-side (the server only ever
 // receives + hashes them). e.g. "brave-otter-42".
@@ -35,23 +44,30 @@ export default function StudentRoster({
   readOnly = false,
   canAdd,
   showTitle = true,
+  showTeacher = false,
+  classrooms,
 }: {
   students: RosterEntry[];
   teacherName: string;
   title?: string;
   subtitle?: string;
-  // When true (the owner viewing ANOTHER teacher's classroom), the Rename/Reset
-  // row actions are hidden — those stay own-classroom for everyone (the
-  // /api/students/[username] route ownership-checks and doesn't exempt the
-  // owner). Adding is controlled separately by `canAdd`.
+  // When true, the Rename/Reset row actions are hidden table-wide — those stay
+  // own-classroom for everyone (the /api/students/[username] route
+  // ownership-checks and doesn't exempt the owner). Adding is controlled
+  // separately by `canAdd`. In the owner's unified view the table is NOT
+  // readOnly — per-row `canManage` gates the actions instead.
   readOnly?: boolean;
-  // Whether the Add-student button shows. Defaults to `!readOnly`; the owner's
-  // other-teacher tabs pass `canAdd` so the owner can add a student to any
-  // classroom (created under `teacherName`) even while it's otherwise read-only.
+  // Whether the Add-student button shows. Defaults to `!readOnly`.
   canAdd?: boolean;
-  // When false (inside the owner's classroom tabs), the big <h1> is dropped —
-  // the tab already names the classroom — leaving just the subtitle + Add button.
+  // When false, the big <h1> is dropped, leaving just the subtitle + Add button.
   showTitle?: boolean;
+  // Owner's unified all-classrooms view: adds a Teacher column (each row's
+  // `teacherName`) — mirrors the Scores page's unified table.
+  showTeacher?: boolean;
+  // When set (2+ classrooms — the owner), the Add-student modal shows a
+  // classroom selector so a student can be added to any teacher's classroom;
+  // defaults to `teacherName` (the caller's own).
+  classrooms?: Classroom[];
 }) {
   const showAdd = canAdd ?? !readOnly;
   const router = useRouter();
@@ -97,6 +113,7 @@ export default function StudentRoster({
             <thead>
               <tr className="bg-[#0a0a0a] text-left font-mono text-[10px] font-bold uppercase tracking-[.12em] text-white">
                 <th className="px-4 py-2.5 font-bold">Student</th>
+                {showTeacher && <th className="px-4 py-2.5 font-bold">Teacher</th>}
                 <th className="px-4 py-2.5 font-bold">Username</th>
                 <th className="px-4 py-2.5 text-right font-bold">Attempts</th>
                 <th className="px-4 py-2.5 font-bold">Last active</th>
@@ -109,6 +126,7 @@ export default function StudentRoster({
                   key={s.username}
                   student={s}
                   readOnly={readOnly}
+                  showTeacher={showTeacher}
                   renaming={renaming === s.username}
                   busy={busyRow === s.username}
                   onStartRename={() => setRenaming(s.username)}
@@ -126,6 +144,7 @@ export default function StudentRoster({
       {addOpen && (
         <AddStudentModal
           teacherName={teacherName}
+          classrooms={classrooms}
           onClose={() => setAddOpen(false)}
           onCreated={(cred) => {
             setAddOpen(false);
@@ -152,6 +171,7 @@ export default function StudentRoster({
 function StudentRow({
   student,
   readOnly,
+  showTeacher,
   renaming,
   busy,
   onStartRename,
@@ -162,6 +182,7 @@ function StudentRow({
 }: {
   student: RosterEntry;
   readOnly: boolean;
+  showTeacher: boolean;
   renaming: boolean;
   busy: boolean;
   onStartRename: () => void;
@@ -170,6 +191,9 @@ function StudentRow({
   onCredential: (c: Credential) => void;
   refresh: () => void;
 }) {
+  // Row-level Rename/Reset: the table must allow actions AND the row must be
+  // manageable by the viewer (in the owner's unified view, only own students).
+  const editable = !readOnly && student.canManage !== false;
   const [mounted, setMounted] = useState(false);
   const [draftName, setDraftName] = useState(student.displayName);
   useEffect(() => setMounted(true), []);
@@ -234,7 +258,7 @@ function StudentRow({
   return (
     <tr className={student.active ? "" : "bg-stone-50 text-stone-400"}>
       <td className="px-4 py-3">
-        {renaming && !readOnly ? (
+        {renaming && editable ? (
           <span className="flex items-center gap-2">
             <input
               value={draftName}
@@ -273,6 +297,9 @@ function StudentRow({
           </span>
         )}
       </td>
+      {showTeacher && (
+        <td className="px-4 py-3 text-stone-600">{student.teacherName ?? "—"}</td>
+      )}
       <td className="px-4 py-3 font-mono text-xs text-stone-500">{student.username}</td>
       <td className="px-4 py-3 text-right tabular-nums text-stone-600">
         {student.attempts}
@@ -280,7 +307,7 @@ function StudentRow({
       <td className="px-4 py-3 text-stone-500">{lastActive}</td>
       {!readOnly && (
         <td className="px-4 py-3">
-          {!renaming && (
+          {!renaming && editable && (
             <div className="flex justify-end gap-3">
               <button
                 type="button"
@@ -310,13 +337,18 @@ function StudentRow({
 
 function AddStudentModal({
   teacherName,
+  classrooms,
   onClose,
   onCreated,
 }: {
   teacherName: string;
+  classrooms?: Classroom[];
   onClose: () => void;
   onCreated: (c: Credential) => void;
 }) {
+  // Which classroom the new student joins. Only the owner sees a choice
+  // (2+ classrooms); everyone else adds to their own.
+  const [teacherId, setTeacherId] = useState(teacherName);
   const [displayName, setDisplayName] = useState("");
   const [username, setUsername] = useState("");
   const [usernameEdited, setUsernameEdited] = useState(false);
@@ -367,7 +399,7 @@ function AddStudentModal({
         headers: { "Content-Type": "application/json" },
         // teacherId names the classroom to add to. The server forces it to the
         // caller for a regular teacher; only the owner may target another one.
-        body: JSON.stringify({ displayName, username, password, teacherId: teacherName }),
+        body: JSON.stringify({ displayName, username, password, teacherId }),
       });
       const d = await res.json();
       if (!res.ok) {
@@ -389,6 +421,25 @@ function AddStudentModal({
   return (
     <Modal onClose={onClose} title="Add a student">
       <form onSubmit={submit} className="space-y-4">
+        {classrooms && classrooms.length > 1 && (
+          <label className="block">
+            <span className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-500">
+              Classroom
+            </span>
+            <select
+              value={teacherId}
+              onChange={(e) => setTeacherId(e.target.value)}
+              className="mt-1 w-full border-2 border-[#0a0a0a] bg-white px-3 py-2 text-sm focus:bg-[#fffbd6] focus:outline-none"
+            >
+              {classrooms.map((c) => (
+                <option key={c.teacherId} value={c.teacherId}>
+                  {c.label}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
+
         <label className="block">
           <span className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-500">
             Display name
