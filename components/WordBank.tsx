@@ -54,8 +54,7 @@ export default function WordBank({ track = "senior" }: { track?: Track }) {
         </h1>
         <p className="mt-3 text-sm leading-relaxed text-stone-600">
           Every word from the readings you&apos;ve taken the AI quiz on, newest
-          first. Tap ▶ to hear a word, or an article&apos;s title to revisit its
-          handout.
+          first.
         </p>
       </header>
 
