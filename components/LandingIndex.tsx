@@ -53,21 +53,21 @@ export default function LandingIndex({
       {/* The site-wide header is hidden on this page (see SiteHeader); these
           small text links ARE its replacement — chrome by position (the very
           top, above the masthead, under a hairline rule), quiet by type
-          (plain text, so the boxed buttons stay content-only). At the left: a
-          quiet link to the track's Word Bank (the cumulative glossary), plus,
-          on junior, the cross-link back to the main club. */}
+          (plain text, so the boxed buttons stay content-only). The My Word
+          Bank link lives INSIDE HomeAuthBar (next to My Scores), not here.
+          On junior a quiet cross-link back to the main club sits at the
+          left. */}
       <div className="mx-auto max-w-[980px] px-[18px]">
-        <div className="flex min-h-[37px] items-center justify-between gap-4 border-b-2 border-[#0a0a0a] py-1">
-          <div className="flex items-center gap-1">
-            {junior && (
-              <Link href="/" className={topLink}>
-                ← Main club
-              </Link>
-            )}
-            <Link href={`${base}/words`} className={topLink}>
-              Word bank
+        <div
+          className={`flex min-h-[37px] items-center border-b-2 border-[#0a0a0a] py-1 ${
+            junior ? "justify-between gap-4" : "justify-end"
+          }`}
+        >
+          {junior && (
+            <Link href="/" className={topLink}>
+              ← Main club
             </Link>
-          </div>
+          )}
           <HomeAuthBar />
         </div>
       </div>

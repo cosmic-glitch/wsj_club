@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useAuth } from "./AuthProvider";
 
 // The site's login/scores controls: small uppercase mono TEXT links —
@@ -9,7 +10,7 @@ import { useAuth } from "./AuthProvider";
 // actions" in the index rows. Hovering inverts (black bg, yellow text). Used
 // in the landing page's thin topline ABOVE the masthead AND in the site-wide
 // header on every inner page (SiteHeader): inline login form when logged out,
-// scores/students links + log out when logged in. The links render as ONE
+// word-bank/scores/students links + log out when logged in. The links render as ONE
 // unbreakable unit (so a wrap can never strand a "/" separator); only the
 // greeting — shown on the landing topline, suppressed in the header
 // (showGreeting={false}) to keep it uncluttered on phones — may wrap away
@@ -32,6 +33,10 @@ export default function HomeAuthBar({
   showGreeting?: boolean;
 }) {
   const { user, isAdmin, ready } = useAuth();
+  // The Word Bank is per-track (the SiteHeader monogram recipe): from a junior
+  // page it links to the junior bank, everywhere else the senior one.
+  const pathname = usePathname();
+  const wordBankHref = pathname?.startsWith("/junior") ? "/junior/words" : "/words";
   const [open, setOpen] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -95,6 +100,11 @@ export default function HomeAuthBar({
             together (below the greeting / the header wordmark), so a line can
             never end or start with a stray "/". */}
         <span className="flex items-center gap-1 whitespace-nowrap">
+          {/* Personal, so every logged-in user gets it — sits with My Scores. */}
+          <Link href={wordBankHref} className={bar}>
+            My Word Bank
+          </Link>
+          <Slash />
           {isAdmin ? (
             <>
               <Link href="/admin" className={bar}>

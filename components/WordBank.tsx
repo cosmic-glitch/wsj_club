@@ -58,7 +58,7 @@ export default function WordBank({ track = "senior" }: { track?: Track }) {
           {junior ? "Junior · Grades 5–7" : "Your review list"}
         </p>
         <h1 className="mt-2 font-display text-[clamp(30px,6.5vw,48px)] font-normal uppercase leading-[1.05] tracking-[.01em] text-[#0a0a0a]">
-          Word bank
+          My Word Bank
         </h1>
         <p className="mt-3 text-sm leading-relaxed text-stone-600">
           Every word from the readings you&apos;ve taken the AI quiz on, in one
