@@ -7,20 +7,25 @@ import { useAuth } from "@/components/AuthProvider";
 import type { Track } from "@/lib/content";
 
 /**
- * One Word Bank word — a vocab entry from one day's reading, flattened
- * server-side (components/WordBank.tsx) with its pronunciation-clip URL
- * already resolved (audioSrcFor reads the filesystem at build time, so it
- * can't run here). `meaning` is the broad "In general" definition.
+ * One word within a day's group — flattened server-side (components/
+ * WordBank.tsx) with its pronunciation-clip URL already resolved (audioSrcFor
+ * reads the filesystem at build time, so it can't run here). `meaning` is the
+ * broad "In general" definition.
  */
 export type BankWord = {
   term: string;
   pronunciation?: string; // the plain-English respelling
   meaning: string;
-  date: string; // "YYYY-MM-DD"
-  dateLabel: string; // "Jul 8" — the chip text
-  articleTitle: string;
   audioSrc?: string;
-  href: string; // track-prefixed handout link for the source day
+};
+
+/** One reading's group: the date (the sort key, shown) + its words. */
+export type BankDay = {
+  date: string; // "YYYY-MM-DD"
+  dateLabel: string; // "Jul 8" — the visible date column
+  articleTitle: string;
+  href: string; // track-prefixed handout link for the day
+  words: BankWord[];
 };
 
 /** The one bordered box every non-list state (loading/login/empty) renders in. */
@@ -32,59 +37,26 @@ function StatusBox({ children }: { children: React.ReactNode }) {
   );
 }
 
-/** A word row: term + respelling + ▶, meaning always visible, date chip. */
-function WordRow({ word }: { word: BankWord }) {
-  return (
-    <li className="border-b-2 border-[#0a0a0a] px-4 py-3 last:border-b-0">
-      <div className="flex items-center gap-x-3">
-        <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1">
-          <span className="font-sans text-[15px] font-bold leading-tight text-[#0a0a0a]">
-            {word.term}
-          </span>
-          {word.pronunciation && (
-            <span className="font-mono text-xs tracking-[.02em] text-stone-500">
-              {word.pronunciation}
-            </span>
-          )}
-          <PronounceButton
-            text={word.term}
-            label={word.term}
-            audioSrc={word.audioSrc}
-          />
-        </div>
-        <Link
-          href={word.href}
-          title={word.articleTitle}
-          className="ml-auto inline-block shrink-0 self-start whitespace-nowrap border-2 border-[#0a0a0a] px-2 py-[3px] font-mono text-[10px] font-bold uppercase tracking-[.08em] text-[#0a0a0a] no-underline hover:bg-[#ffe600]"
-        >
-          {word.dateLabel}
-        </Link>
-      </div>
-      <p className="mt-1.5 text-sm leading-relaxed text-stone-700">
-        {word.meaning}
-      </p>
-    </li>
-  );
-}
-
 /**
  * The Word Bank's interactive body. The page itself is static and carries
- * EVERY word of the track (all handouts are public anyway); what's personal
- * is the FILTER — after mount this asks /api/quiz-dates for the logged-in
- * user's own completed-quiz dates (identity from the cookie) and shows only
- * the words from those readings, so nobody is shown words from sessions they
- * never took (the TodayTag/VotePoll recipe: the page stays prerendered, the
- * personal bit hydrates in). Logged out → a log-in prompt instead of a list.
+ * EVERY reading's words for the track (all handouts are public anyway); what's
+ * personal is the FILTER — after mount this asks /api/quiz-dates for the
+ * logged-in user's own completed-quiz dates (identity from the cookie) and
+ * shows only those days (the TodayTag/VotePoll recipe: the page stays
+ * prerendered, the personal bit hydrates in). Logged out → a log-in prompt.
+ *
+ * Rendered as one row per quizzed reading, NEWEST FIRST — the date is the
+ * sort column and leads the row (the LandingIndex row grid), then the article
+ * title (→ its handout) with the day's words underneath.
  */
 export default function WordBankList({
-  words,
+  days,
   track = "senior",
 }: {
-  words: BankWord[];
+  days: BankDay[];
   track?: Track;
 }) {
   const { user, ready } = useAuth();
-  const [query, setQuery] = useState("");
   const [dates, setDates] = useState<string[] | null>(null); // null = not loaded yet
   const [failed, setFailed] = useState(false);
 
@@ -125,7 +97,7 @@ export default function WordBankList({
   }
 
   const covered = new Set(dates);
-  const mine = words.filter((w) => covered.has(w.date));
+  const mine = days.filter((d) => covered.has(d.date));
 
   if (mine.length === 0) {
     return (
@@ -138,45 +110,63 @@ export default function WordBankList({
     );
   }
 
-  const readingCount = new Set(mine.map((w) => w.date)).size;
-  const q = query.trim().toLowerCase();
-  const shown = q
-    ? mine.filter(
-        (w) =>
-          w.term.toLowerCase().includes(q) ||
-          w.meaning.toLowerCase().includes(q) ||
-          w.articleTitle.toLowerCase().includes(q),
-      )
-    : mine;
+  const wordCount = mine.reduce((n, d) => n + d.words.length, 0);
 
   return (
     <div>
       <p className="mt-4 font-mono text-xs font-bold uppercase tracking-[.1em] text-stone-500">
-        {`${mine.length} words from ${readingCount} ${
-          readingCount === 1 ? "reading" : "readings"
+        {`${wordCount} words from ${mine.length} ${
+          mine.length === 1 ? "reading" : "readings"
         } you've quizzed on`}
       </p>
 
-      <input
-        type="search"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search your words…"
-        aria-label="Search your words"
-        className="mt-4 w-full border-[3px] border-[#0a0a0a] bg-white px-4 py-3 font-mono text-sm text-[#0a0a0a] outline-none placeholder:uppercase placeholder:tracking-[.08em] placeholder:text-stone-400 focus:shadow-[5px_5px_0_0_#ffe600]"
-      />
+      <ul className="mt-4 border-[3px] border-[#0a0a0a]">
+        {mine.map((d) => (
+          <li
+            key={d.date}
+            className="grid grid-cols-1 gap-y-1 border-b-2 border-[#0a0a0a] px-3.5 py-3 last:border-b-0 min-[681px]:grid-cols-[112px_1fr] min-[681px]:gap-x-4 min-[681px]:px-4"
+          >
+            {/* The sort column: the day, newest group first. */}
+            <span className="whitespace-nowrap pt-[2px] font-mono text-xs font-bold uppercase tracking-[.06em] text-[#0a0a0a]">
+              {d.dateLabel}
+            </span>
 
-      {shown.length === 0 ? (
-        <p className="mt-8 border-[3px] border-[#0a0a0a] p-6 text-center font-mono text-sm font-bold uppercase tracking-[.08em] text-[#0a0a0a]">
-          No matches for “{query.trim()}”.
-        </p>
-      ) : (
-        <ul className="mt-8 border-[3px] border-[#0a0a0a]">
-          {shown.map((w) => (
-            <WordRow key={`${w.date}-${w.term}`} word={w} />
-          ))}
-        </ul>
-      )}
+            <div className="min-w-0">
+              <Link
+                href={d.href}
+                className="font-sans text-[14.5px] font-bold leading-[1.35] tracking-[-.01em] text-[#0a0a0a] no-underline hover:bg-[#ffe600]"
+              >
+                {d.articleTitle}
+              </Link>
+
+              <ul className="mt-2.5 space-y-2.5">
+                {d.words.map((w) => (
+                  <li key={w.term}>
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                      <span className="font-sans text-[15px] font-bold leading-tight text-[#0a0a0a]">
+                        {w.term}
+                      </span>
+                      {w.pronunciation && (
+                        <span className="font-mono text-xs tracking-[.02em] text-stone-500">
+                          {w.pronunciation}
+                        </span>
+                      )}
+                      <PronounceButton
+                        text={w.term}
+                        label={w.term}
+                        audioSrc={w.audioSrc}
+                      />
+                    </div>
+                    <p className="mt-0.5 text-sm leading-relaxed text-stone-700">
+                      {w.meaning}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
