@@ -56,12 +56,14 @@ export default function WordBankList({
   days: BankDay[];
   track?: Track;
 }) {
-  const { user, ready } = useAuth();
+  const { user, isAdmin, ready } = useAuth();
   const [dates, setDates] = useState<string[] | null>(null); // null = not loaded yet
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    if (!ready || !user) return;
+    // isAdmin (teacher/owner) skips the fetch — they get the students-only
+    // notice below, so their quiz dates are never needed.
+    if (!ready || !user || isAdmin) return;
     let cancelled = false;
     fetch(`/api/quiz-dates?track=${track}`)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`${r.status}`))))
@@ -74,9 +76,9 @@ export default function WordBankList({
     return () => {
       cancelled = true;
     };
-  }, [ready, user, track]);
+  }, [ready, user, isAdmin, track]);
 
-  if (!ready || (user && !failed && dates === null)) {
+  if (!ready) {
     return <StatusBox>Loading your words…</StatusBox>;
   }
 
@@ -92,8 +94,25 @@ export default function WordBankList({
     );
   }
 
+  // A teacher (or the owner) has no personal word bank — the bank is built
+  // from a student's own quiz sessions.
+  if (isAdmin) {
+    return (
+      <StatusBox>
+        Students only.
+        <span className="mt-2 block text-xs font-normal normal-case tracking-normal text-stone-500">
+          You need to be logged in as a student to see your personal word bank.
+        </span>
+      </StatusBox>
+    );
+  }
+
   if (failed) {
     return <StatusBox>Couldn&apos;t load your words — try a reload.</StatusBox>;
+  }
+
+  if (dates === null) {
+    return <StatusBox>Loading your words…</StatusBox>;
   }
 
   const covered = new Set(dates);

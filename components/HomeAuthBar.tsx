@@ -100,11 +100,6 @@ export default function HomeAuthBar({
             together (below the greeting / the header wordmark), so a line can
             never end or start with a stray "/". */}
         <span className="flex items-center gap-1 whitespace-nowrap">
-          {/* Personal, so every logged-in user gets it — sits with My Scores. */}
-          <Link href={wordBankHref} className={bar}>
-            My Word Bank
-          </Link>
-          <Slash />
           {isAdmin ? (
             <>
               <Link href="/admin" className={bar}>
@@ -118,6 +113,12 @@ export default function HomeAuthBar({
             </>
           ) : (
             <>
+              {/* STUDENTS ONLY — a teacher/owner has no personal word bank
+                  (the page shows them a students-only notice). */}
+              <Link href={wordBankHref} className={bar}>
+                My Word Bank
+              </Link>
+              <Slash />
               <Link href="/admin" className={bar}>
                 My Scores
               </Link>
