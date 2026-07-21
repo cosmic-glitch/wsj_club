@@ -23,6 +23,10 @@ function dateTag(date: string): string {
 const btn =
   "inline-block cursor-pointer border-2 border-[#0a0a0a] px-[10px] py-[5px] text-[10.5px] font-bold uppercase leading-normal tracking-[.08em] text-[#0a0a0a] no-underline min-[681px]:px-2 min-[681px]:py-[3px] group-hover:border-white group-hover:text-white group-hover:hover:border-[#ffe600] group-hover:hover:bg-[#ffe600] group-hover:hover:text-[#0a0a0a]";
 
+// A quiet topline text link (the "← Main club" / "Word bank" chrome links).
+const topLink =
+  "px-1.5 py-1 font-mono text-[11px] font-bold uppercase tracking-[.12em] text-stone-500 no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]";
+
 // The landing / index body, shared by the senior ("/") and junior ("/junior")
 // tracks: a thin topline (auth links), the big Anton masthead, then the readings
 // as rows in one thick-bordered list. The newest row is yellow; rows invert to
@@ -49,22 +53,21 @@ export default function LandingIndex({
       {/* The site-wide header is hidden on this page (see SiteHeader); these
           small text links ARE its replacement — chrome by position (the very
           top, above the masthead, under a hairline rule), quiet by type
-          (plain text, so the boxed buttons stay content-only). On junior a
-          quiet cross-link back to the main club sits at the left. */}
+          (plain text, so the boxed buttons stay content-only). At the left: a
+          quiet link to the track's Word Bank (the cumulative glossary), plus,
+          on junior, the cross-link back to the main club. */}
       <div className="mx-auto max-w-[980px] px-[18px]">
-        <div
-          className={`flex min-h-[37px] items-center border-b-2 border-[#0a0a0a] py-1 ${
-            junior ? "justify-between gap-4" : "justify-end"
-          }`}
-        >
-          {junior && (
-            <Link
-              href="/"
-              className="px-1.5 py-1 font-mono text-[11px] font-bold uppercase tracking-[.12em] text-stone-500 no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]"
-            >
-              ← Main club
+        <div className="flex min-h-[37px] items-center justify-between gap-4 border-b-2 border-[#0a0a0a] py-1">
+          <div className="flex items-center gap-1">
+            {junior && (
+              <Link href="/" className={topLink}>
+                ← Main club
+              </Link>
+            )}
+            <Link href={`${base}/words`} className={topLink}>
+              Word bank
             </Link>
-          )}
+          </div>
           <HomeAuthBar />
         </div>
       </div>
