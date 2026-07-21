@@ -54,3 +54,6 @@ next-env.d.ts
 /reading.png
 /quiz-result.png
 .playwright-mcp/
+
+# Blob backup snapshots (VM-only, hardlink-deduped)
+backups/
