@@ -1,0 +1,120 @@
+{
+  "date": "2026-07-21",
+  "title": "Don't Blame Supermarkets for Your Expensive Groceries",
+  "articleUrl": "https://www.economist.com/business/2026/07/20/dont-blame-supermarkets-for-your-expensive-groceries",
+  "pdfUrl": "/pdfs/2026-07-21.pdf",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "scant",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SKANT",
+      "articleQuote": "In most developed countries there is scant evidence that grocers earn excessive profit margins.",
+      "inContext": "Here, \"scant evidence\" means there is barely any proof that supermarkets are pocketing unusually big profits — hardly enough to point to at all.",
+      "meaning": "Scant means very little; barely enough; far less than you'd want or expect.",
+      "examples": [
+        "We had scant time to study, so we focused on the three topics most likely to show up on the test.",
+        "The referee had scant sympathy for the player's excuses and showed him the red card anyway."
+      ]
+    },
+    {
+      "word": "gouge",
+      "partOfSpeech": "verb",
+      "pronunciation": "GOWJ",
+      "articleQuote": "evidence of concentration—which would give grocers the market power to gouge consumers—is lacking",
+      "inContext": "To \"gouge consumers\" here means to overcharge them — to use a dominant position in the market to squeeze extra money out of shoppers who have nowhere else to go.",
+      "meaning": "To gouge someone is to charge an unfairly high price by exploiting a situation or a position of power (often called \"price gouging\"). Taken literally, to gouge also means to dig or scoop something out.",
+      "examples": [
+        "After the storm knocked out every other store, the one shop still open gouged customers by selling bottled water for ten dollars a bottle.",
+        "Fans complained that the resale site was gouging them, charging triple the printed price for concert tickets."
+      ]
+    },
+    {
+      "word": "opportunism",
+      "partOfSpeech": "noun",
+      "pronunciation": "op-er-TOO-niz-um",
+      "articleQuote": "But evidence of opportunism is hard to find.",
+      "inContext": "In the article, opportunism means grabbing the chance to raise prices further than costs required — cashing in on the confusion of inflation to pad profits.",
+      "meaning": "Opportunism is taking advantage of a situation to benefit yourself, especially in a way that ignores fairness or principle. An opportunist grabs whatever chance comes along, even when it's a little unfair.",
+      "examples": [
+        "Charging classmates double for hand sanitizer during flu season was pure opportunism.",
+        "Critics accused the candidate of opportunism for switching sides the moment it became popular."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Profit margin",
+      "articleQuote": "American supermarkets like Kroger and Albertsons collected just 1% of their sales in operating profits last year.",
+      "meaning": "Imagine a lemonade stand. You sell a cup for $1, but the lemons, sugar, and cup cost you 97 cents. You keep 3 cents. That 3 cents out of every dollar is your profit margin — the slice of each sale a business actually gets to keep after paying its costs.\n\nA margin is not the same as total profit. A business with a tiny margin can still make a lot of money if it sells an enormous amount (three cents each, but on millions of cups). But the margin tells you how much room there is inside the price — whether a business is quietly getting rich on each sale, or barely scraping by.\n\nThat is the hinge of this whole article. Supermarkets like Kroger keep only about 1 cent of profit on each dollar of groceries; Walmart, about 4. That's razor-thin — they can't be the ones gouging you, because they're hardly keeping anything. Meanwhile the companies that make the branded food on the shelves — General Mills, PepsiCo, Kraft Heinz — keep around 13 cents on the dollar. The same box of cereal earns its maker far more than the store that rings it up."
+    },
+    {
+      "name": "Cost-push inflation",
+      "articleQuote": "Grocery prices have shot up across the developed world largely because the cost of inputs like fertiliser and fuel have surged",
+      "meaning": "Think about your favorite pizza place. If the price of flour, cheese, and the gas for deliveries all jump at once, the shop has to raise the price of a slice just to break even. It isn't being greedy — it literally costs more to make the pizza than it did last year.\n\nThat's cost-push inflation. \"Inflation\" just means prices rising in general; \"cost-push\" tells you where the push is coming from — the rising cost of the ingredients and effort behind a product (raw materials, fuel, wages). When those inputs get more expensive, businesses pass the extra cost down the line until it lands on the price tag you pay. (Contrast that with the \"greedflation\" story, where the rise is blamed on sellers simply deciding to charge more.)\n\nIt's the article's answer to \"so why did groceries actually get so expensive?\" Fertiliser and fuel prices surged — first from the war in Ukraine, then conflict with Iran — and farm wages rose after governments cut immigration. Food cost more to grow and move long before it ever reached a shelf. The rise wasn't the store deciding to be greedy; it was costs climbing at the very start of the chain."
+    },
+    {
+      "name": "Where value is captured in a supply chain",
+      "articleQuote": "The real cream has traditionally been elsewhere in the supply chain, such as with the big food manufacturers.",
+      "meaning": "Follow a chocolate bar backwards. A cocoa farmer grows the beans, a factory turns them into chocolate, a famous brand puts its name on the wrapper, and a shop sells it to you. Every one of them \"touches\" the bar — but they do not split the money evenly.\n\nThe profit tends to pile up wherever a link has something others can't easily copy: a brand people specifically ask for, a secret recipe, a patent. Links that are easily swapped out — a store is a store, one cocoa farm is much like another — have to compete on price, so they keep almost nothing. Economists sometimes call the fat part of the profit \"the cream,\" and it usually sits at just one or two links in the chain.\n\nIn groceries, the supermarket that rings up your cereal keeps only about a penny per dollar, while the company whose brand is on the box keeps around 13 cents — the value is captured by the name on the front, not the shop on the corner. You see the same pattern everywhere: Apple keeps far more of an iPhone's price than the factories that assemble it, and a streaming app and a hit musician divide the same song's earnings very unevenly."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, why are supermarkets probably NOT the main reason groceries got so expensive?",
+      "options": [
+        "Because they secretly agreed with each other to keep prices high",
+        "Because their profit margins are very thin — they keep only about 1–4% of sales as profit",
+        "Because the government already forced them to lower their prices",
+        "Because most shoppers have stopped using supermarkets altogether"
+      ],
+      "answerIndex": 1,
+      "explanation": "Grocers keep only about 1–4 cents of profit per dollar of sales, so they have little room to be overcharging anyone."
+    },
+    {
+      "question": "The article says the \"real cream\" — the fatter profit margins — sits where in the food supply chain?",
+      "options": [
+        "With the farmers who grow the crops",
+        "With the supermarkets that sell the food",
+        "With the big food manufacturers whose brands are on the shelves",
+        "With the trucking companies that deliver the food"
+      ],
+      "answerIndex": 2,
+      "explanation": "Big manufacturers like PepsiCo and Kraft Heinz averaged about 13% margins, far above grocers' ~1–4%."
+    },
+    {
+      "question": "The article argues that grocery prices mostly rose because —",
+      "options": [
+        "supermarkets got greedy once the pandemic ended",
+        "the cost of inputs like fertiliser, fuel, and farm wages surged",
+        "shoppers suddenly started buying much more food than before",
+        "governments printed far too much money"
+      ],
+      "answerIndex": 1,
+      "explanation": "This is cost-push inflation: higher input costs (fuel, fertiliser, wages) got passed down the chain to the price you pay."
+    },
+    {
+      "question": "\"There is scant evidence that grocers gouge consumers.\" In this sentence, scant and gouge mean —",
+      "options": [
+        "scant = plentiful; gouge = help out",
+        "scant = very little; gouge = overcharge unfairly",
+        "scant = confusing; gouge = ignore",
+        "scant = recent; gouge = compete with"
+      ],
+      "answerIndex": 1,
+      "explanation": "Scant means barely any, and to gouge is to overcharge by exploiting power over buyers."
+    },
+    {
+      "question": "The article says \"evidence of opportunism is hard to find\" among grocers. Here, opportunism refers to —",
+      "options": [
+        "supermarkets going out of business during the pandemic",
+        "supermarkets raising prices faster than their own costs rose, just to boost profits",
+        "supermarkets giving away free food to attract new customers",
+        "supermarkets refusing to change their prices at all"
+      ],
+      "answerIndex": 1,
+      "explanation": "Opportunism here means exploiting the moment — hiking prices beyond what rising costs justified — which the article says there's little sign grocers actually did."
+    }
+  ]
+}
