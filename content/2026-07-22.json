@@ -1,0 +1,120 @@
+{
+  "date": "2026-07-22",
+  "title": "Electric aviation is taking off",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/07/22/electric-aviation-is-taking-off",
+  "pdfUrl": "/pdfs/2026-07-22.pdf",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "anthropogenic",
+      "partOfSpeech": "adjective",
+      "pronunciation": "an-throh-puh-JEN-ik",
+      "articleQuote": "Aviation accounts for around 2.5% of anthropogenic CO2 emissions, although overall its contribution to climate change is reckoned to be greater.",
+      "inContext": "Here it means the CO2 that comes from human activity — the emissions people cause, as opposed to natural sources like volcanoes.",
+      "meaning": "Caused or produced by human beings. It's the word scientists use to separate what people did from what nature did on its own.",
+      "examples": [
+        "The lake's algae bloom was anthropogenic — it started right after the new factory began dumping fertilizer runoff upstream.",
+        "Not every heat wave is a natural cycle; scientists can often measure how much of it is anthropogenic."
+      ]
+    },
+    {
+      "word": "eponymous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ih-PON-ih-mus",
+      "articleQuote": "At the eponymous biennial air show, which opened on July 20th, sustainable flying was high on the agenda.",
+      "inContext": "The Farnborough air show is held at Farnborough, so the airport and the show share a name — the show is named after the place.",
+      "meaning": "Named after something or someone — or giving your name to the thing. A band's eponymous album is the one titled with the band's own name.",
+      "examples": [
+        "Taylor Swift's eponymous first album was simply called 'Taylor Swift.'",
+        "The restaurant is named after its chef, so its eponymous owner greets you at the door every night."
+      ]
+    },
+    {
+      "word": "biennial",
+      "partOfSpeech": "adjective",
+      "pronunciation": "by-EN-ee-ul",
+      "articleQuote": "At the eponymous biennial air show, which opened on July 20th, sustainable flying was high on the agenda.",
+      "inContext": "The Farnborough air show is biennial — it happens once every two years, not every year.",
+      "meaning": "Happening once every two years. Watch the tricky cousins: 'annual' is every year, 'biannual' usually means twice a year, and 'biennial' means every two years.",
+      "examples": [
+        "The Olympics alternate between summer and winter, so in a sense the Games have become a biennial event.",
+        "Our school holds a biennial science fair, so you only get two shots at it before you graduate."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Energy density",
+      "articleQuote": "batteries are a deadweight, meaning that, unlike a combustion-engine aircraft, an electric plane does not benefit from getting lighter as fuel is burnt.",
+      "meaning": "Energy density is how much energy you can pack into each kilogram (or each liter) of something. Think of it like how many push-ups' worth of fuel you can stuff into a backpack: a small, light backpack that still powers a long hike has high energy density; a huge, heavy one that barely gets you around the block has low energy density.\n\nThis is the whole problem with electric planes. A kilogram of jet fuel holds far more usable energy than a kilogram of the best battery — roughly dozens of times more. So to store the same energy, a battery has to be much, much heavier. And a plane has to lift every kilogram it carries the entire way. That's why the article calls batteries 'deadweight.'\n\nThere's an extra twist that makes it worse. A normal plane burns its fuel as it flies, so it keeps getting lighter and easier to keep aloft. A battery weighs exactly the same when it's empty as when it's full — you haul the dead weight the whole trip. That combination is why a battery can power a tiny two-seat trainer for 50 minutes but could never lift a jumbo jet full of passengers across an ocean. It's the same reason your phone (small battery, fine) and a long-range electric car (huge, heavy battery pack) feel like such different engineering problems."
+    },
+    {
+      "name": "Hybrid systems (series vs. parallel)",
+      "articleQuote": "Hence the industry is increasingly looking at hybrids, which combine an electric motor and a combustion engine.",
+      "meaning": "A hybrid is anything that combines two different power sources to get the best of both. In a plane or a car, that usually means pairing a fuel-burning engine (great for long range) with an electric motor (quiet, efficient, strong in bursts). There are two main ways to wire them together, and the difference is worth knowing because it shows up everywhere.\n\nA 'series' hybrid is like a relay where only the last runner touches the finish line. The propeller (or the wheels) is ALWAYS turned by the electric motor. The fuel engine never drives the propeller directly — its only job is to spin a generator that makes electricity to feed the motor. A diesel-electric train works exactly this way: the diesel engine is really just a power plant on wheels.\n\nA 'parallel' hybrid is like having two people who can both push the same cart. Either the fuel engine OR the electric motor — or both together — can drive the propeller directly. A Toyota Prius does this: the electric motor helps out during hard acceleration, then the gas engine takes over on the highway. In the article, one company builds the series kind and another the parallel kind, and both cut fuel use compared with a plain jet."
+    },
+    {
+      "name": "Externality",
+      "articleQuote": "Aviation accounts for around 2.5% of anthropogenic CO2 emissions, although overall its contribution to climate change is reckoned to be greater, since high-flying jets produce other heat-trapping emissions.",
+      "meaning": "An externality is a cost (or sometimes a benefit) from something you do that lands on OTHER people, not on you — so it never shows up in the price you pay. It's the part of the bill that gets quietly passed to everyone else.\n\nWhen someone buys a plane ticket, the price covers the fuel, the crew, and the airline's profit. It does NOT charge them for the CO2 and other heat-trapping gases the flight dumps into the sky, which warm the planet for all eight billion of us. That warming is a real cost — it just isn't on the passenger's receipt. That gap is the externality, and it's a big reason pollution is so hard to fix: the person deciding whether to fly doesn't feel the full damage, so they 'over-do' the activity from society's point of view.\n\nYou see the same thing at your own scale. If a neighbor blasts music at 2 a.m., they get the fun and you get the lost sleep — the cost spilled onto you. A factory dumping waste in a river gets cheap disposal while the town downstream gets dirty water. Once you spot externalities, you start noticing them everywhere — and you understand why governments tax or regulate some things instead of just letting the market run."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, why do batteries make it so hard to build a large electric passenger jet?",
+      "options": [
+        "Batteries are illegal to use above a certain altitude",
+        "A kilogram of battery stores far less energy than a kilogram of fuel, and the plane must carry that heavy 'deadweight' the whole flight",
+        "Electric motors cannot spin a propeller fast enough for take-off",
+        "Batteries only work when the weather is warm"
+      ],
+      "answerIndex": 1,
+      "explanation": "Batteries have low energy density and stay just as heavy when empty, so a big plane would have to haul an enormous, unshrinking mass of them."
+    },
+    {
+      "question": "The article notes a combustion-engine plane 'benefits from getting lighter as fuel is burnt.' Why doesn't an electric plane get this benefit?",
+      "options": [
+        "Its motor gets heavier as it heats up",
+        "It refuels in mid-air, adding weight",
+        "A battery weighs the same whether it is full or empty, so nothing is shed during the flight",
+        "Electric planes carry extra backup batteries by law"
+      ],
+      "answerIndex": 2,
+      "explanation": "Fuel is consumed and leaves the plane, but a battery's mass never changes, so an electric plane hauls the full weight the entire trip."
+    },
+    {
+      "question": "In a 'series' hybrid like the one described, what is the fuel-burning engine's actual job?",
+      "options": [
+        "It turns the propeller directly whenever more power is needed",
+        "It only runs while the plane is parked on the ground",
+        "It spins a generator to make electricity for the electric motor, which is what turns the propeller",
+        "It cools the batteries so they last longer"
+      ],
+      "answerIndex": 2,
+      "explanation": "In a series hybrid the propeller is always driven by the electric motor; the engine is just a generator feeding it electricity — the same idea as a diesel-electric train."
+    },
+    {
+      "question": "A concert venue sits next to a quiet neighborhood, and late shows keep residents awake even though they never bought tickets. In economics, the residents' lost sleep is an example of a(n):",
+      "options": [
+        "Externality",
+        "Energy density",
+        "Subsidy",
+        "Eponymous cost"
+      ],
+      "answerIndex": 0,
+      "explanation": "An externality is a cost of an activity that falls on other people and isn't reflected in what the decision-maker pays — here, the noise the ticket price never accounts for."
+    },
+    {
+      "question": "Farnborough hosts an 'eponymous biennial air show.' What do those two words tell you about the show?",
+      "options": [
+        "It is sponsored by a battery company and lasts two days",
+        "It is named after the place (Farnborough) and is held once every two years",
+        "It is the newest and the largest air show in the world",
+        "It moves to a different country each time and happens twice a year"
+      ],
+      "answerIndex": 1,
+      "explanation": "'Eponymous' means it shares the name of Farnborough, and 'biennial' means it takes place every two years."
+    }
+  ]
+}
