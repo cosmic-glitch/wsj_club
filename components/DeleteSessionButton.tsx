@@ -4,7 +4,7 @@ import { useState, type MouseEvent } from "react";
 import { useRouter } from "next/navigation";
 
 /**
- * Teacher-only "Delete" action — a SINGLE delete for a whole quiz attempt, shown
+ * Owner-only "Delete" action — a SINGLE delete for a whole quiz attempt, shown
  * once per row on /admin (in the Details action bar, not inside the per-section
  * modal). It confirms, then asks the server to delete the whole session — its
  * JSON *and* its audio recording — from Blob, then refreshes the list.

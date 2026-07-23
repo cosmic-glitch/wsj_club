@@ -9,7 +9,7 @@ import HomeAuthBar from "./HomeAuthBar";
 // white, a thick black rule, an "RC" monogram in the Anton display face (R
 // solid, C outlined — the masthead's READING/CLUB treatment, condensed), and
 // the mono uppercase auth links of HomeAuthBar. Kept deliberately sparse so
-// even the teacher's full link set fits ONE row on a phone: the monogram IS
+// even the parent's full link set fits ONE row on a phone: the monogram IS
 // the way back to the index (no separate "← All readings" link) and the
 // "Hi <user>" greeting is suppressed here (showGreeting={false} — it lives on
 // the landing topline instead). Should a screen still be too narrow, the

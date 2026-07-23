@@ -5,7 +5,7 @@ import bcrypt from "bcryptjs";
  * User / classroom repository (Blob-backed).
  *
  * The single source of truth for who can log in, their role, and — for students
- * — which teacher's classroom they belong to. This is deliberately the ONLY
+ * — which parent's classroom they belong to. This is deliberately the ONLY
  * module that reads or writes user blobs, so a later move to a real database is
  * a change to this one file (the auth layer and the routes just call these
  * functions).
@@ -17,20 +17,54 @@ import bcrypt from "bcryptjs";
  *
  * Passwords are stored ONLY as bcrypt hashes (bcryptjs, 10 rounds — the same
  * scheme as the old AUTH_USERS env var and the foliotracker project).
+ *
+ * TERMINOLOGY: what the app calls a PARENT account was originally called a
+ * "teacher", and the stored blobs keep the legacy names — `role: "teacher"`
+ * and the `teacherId` field — so no record needs migrating. The conversion
+ * happens HERE (fromStored/toStored); nothing above this module ever sees the
+ * legacy names.
  */
 
-export type UserRole = "teacher" | "student";
+export type UserRole = "parent" | "student";
 
 export type User = {
   username: string; // login id — globally unique, lowercased
   displayName: string; // shown in the UI, e.g. "Anusha"
   passwordHash: string; // bcrypt
   role: UserRole;
-  teacherId?: string; // students: owning teacher's username; teachers: unset
+  parentId?: string; // students: owning parent's username; parents: unset
   active: boolean; // false blocks login but keeps the record + history
   createdBy?: string; // audit — who created this record
   createdAt: string; // ISO
 };
+
+/**
+ * The on-disk (Blob) shape — the legacy "teacher" era field names. Every stored
+ * record uses `role: "teacher"` + `teacherId`; we keep writing them so the
+ * store stays uniform and old records never need a migration.
+ */
+type StoredUser = Omit<User, "role" | "parentId"> & {
+  role: "teacher" | "student";
+  teacherId?: string;
+};
+
+function fromStored(raw: StoredUser): User {
+  const { role, teacherId, ...rest } = raw;
+  return {
+    ...rest,
+    role: role === "student" ? "student" : "parent",
+    ...(teacherId ? { parentId: teacherId } : {}),
+  };
+}
+
+function toStored(u: User): StoredUser {
+  const { role, parentId, ...rest } = u;
+  return {
+    ...rest,
+    role: role === "parent" ? "teacher" : "student",
+    ...(parentId ? { teacherId: parentId } : {}),
+  };
+}
 
 /** The shape safe to send to the browser — never includes the hash. */
 export type PublicUser = Omit<User, "passwordHash">;
@@ -94,8 +128,10 @@ async function loadAll(force = false): Promise<Map<string, User>> {
           // changed record into a fresh cache key and forces the current content.
           const v = new Date(b.uploadedAt).getTime();
           const res = await fetch(`${b.url}?v=${v}`, { cache: "no-store" });
-          const u = (await res.json()) as User;
-          if (u && typeof u.username === "string") users.set(u.username, u);
+          const raw = (await res.json()) as StoredUser;
+          if (raw && typeof raw.username === "string") {
+            users.set(raw.username, fromStored(raw));
+          }
         } catch (err) {
           console.error("Skipping unreadable user blob:", b.pathname, err);
         }
@@ -136,27 +172,27 @@ export async function verifyLogin(
   return null;
 }
 
-/** A teacher's classroom: their active + inactive students, by display name. */
-export async function listStudents(teacherId: string): Promise<PublicUser[]> {
+/** A parent's classroom: their active + inactive students, by display name. */
+export async function listStudents(parentId: string): Promise<PublicUser[]> {
   const all = await loadAll();
   return [...all.values()]
-    .filter((u) => u.role === "student" && u.teacherId === teacherId)
+    .filter((u) => u.role === "student" && u.parentId === parentId)
     .map(toPublic)
     .sort((a, b) => a.displayName.localeCompare(b.displayName));
 }
 
-/** Every teacher (owner use). */
-export async function listTeachers(): Promise<PublicUser[]> {
+/** Every parent (owner use). */
+export async function listParents(): Promise<PublicUser[]> {
   const all = await loadAll();
   return [...all.values()]
-    .filter((u) => u.role === "teacher")
+    .filter((u) => u.role === "parent")
     .map(toPublic)
     .sort((a, b) => a.displayName.localeCompare(b.displayName));
 }
 
-/** Write a full record (create or overwrite) and clear the cache. */
+/** Write a full record (create or overwrite, in the legacy stored shape) and clear the cache. */
 async function save(user: User): Promise<void> {
-  await put(pathFor(user.username), JSON.stringify(user, null, 2), {
+  await put(pathFor(user.username), JSON.stringify(toStored(user), null, 2), {
     access: "public",
     addRandomSuffix: false,
     allowOverwrite: true,
@@ -179,13 +215,13 @@ export type CreateUserInput = {
   displayName: string;
   password: string; // plaintext — hashed here
   role: UserRole;
-  teacherId?: string;
+  parentId?: string;
   active?: boolean;
 };
 
 /**
  * Create a new user. Enforces username format + global uniqueness and the
- * role/teacher invariant (a student must have a teacher; a teacher must not).
+ * role/parent invariant (a student must have a parent; a parent must not).
  * Throws UserError on any violation. Returns the public record (no hash).
  */
 export async function createUser(
@@ -199,11 +235,11 @@ export async function createUser(
       "Username must be 3–32 characters: lowercase letters, numbers, - or _."
     );
   }
-  if (input.role === "student" && !input.teacherId) {
-    throw new UserError("missing-teacher", "A student must belong to a teacher.");
+  if (input.role === "student" && !input.parentId) {
+    throw new UserError("missing-parent", "A student must belong to a parent.");
   }
-  if (input.role === "teacher" && input.teacherId) {
-    throw new UserError("teacher-has-teacher", "A teacher can't belong to a teacher.");
+  if (input.role === "parent" && input.parentId) {
+    throw new UserError("parent-has-parent", "A parent can't belong to a parent.");
   }
   if (!input.password) {
     throw new UserError("weak-password", "A password is required.");
@@ -218,7 +254,7 @@ export async function createUser(
     displayName: input.displayName.trim() || username,
     passwordHash,
     role: input.role,
-    ...(input.role === "student" ? { teacherId: input.teacherId } : {}),
+    ...(input.role === "student" ? { parentId: input.parentId } : {}),
     active: input.active ?? true,
     createdBy,
     createdAt: new Date().toISOString(),

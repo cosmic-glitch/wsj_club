@@ -9,8 +9,8 @@ import {
 } from "@/lib/users";
 
 /**
- * Manage one student. Teacher-gated AND ownership-checked: the target must be a
- * student in the CALLING teacher's classroom (`teacherId === caller`). The owner
+ * Manage one student. Parent-gated AND ownership-checked: the target must be a
+ * student in the CALLING parent's classroom (`parentId === caller`). The owner
  * isn't exempt — it manages its own students only.
  *
  * PATCH { action: "rename" | "resetPassword" | "setActive", ... }
@@ -26,7 +26,7 @@ export async function PATCH(
 
   const { username } = await params;
   const target = await getUser(username);
-  if (!target || target.role !== "student" || target.teacherId !== user) {
+  if (!target || target.role !== "student" || target.parentId !== user) {
     // Don't reveal whether the user exists in another classroom.
     return Response.json({ error: "Not authorized." }, { status: 403 });
   }

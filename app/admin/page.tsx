@@ -1,5 +1,5 @@
 import { currentUser, isAdmin, isOwner } from "@/lib/auth";
-import { listStudents, listTeachers } from "@/lib/users";
+import { listStudents, listParents } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
 import { dateBig } from "@/lib/content";
 import AdminSessions, {
@@ -56,19 +56,19 @@ function groupByArticle(sessions: Session[]): ArticleGroup[] {
 }
 
 /**
- * Scope a session list to one teacher's classroom: sessions stamped with that
- * teacherId, or (fallback for older sessions saved before teacherId existed)
- * whose owning student/teacher is in the roster. The roster includes the teacher
+ * Scope a session list to one parent's classroom: sessions stamped with that
+ * parentId, or (fallback for older sessions saved before the stamp existed)
+ * whose owning student/parent is in the roster. The roster includes the parent
  * so their own attempts show too.
  */
 function scopeToClassroom(
   sessions: Session[],
-  teacher: string,
+  parent: string,
   roster: Set<string>
 ): Session[] {
   return sessions.filter((s) => {
     const owner = s.loginUser ?? s.studentName ?? "";
-    return s.teacherId === teacher || roster.has(owner);
+    return s.parentId === parent || roster.has(owner);
   });
 }
 
@@ -77,7 +77,7 @@ function classroomPanel(
   groups: ArticleGroup[],
   canDelete: boolean,
   viewerUser: string,
-  showTeacher = false
+  showParent = false
 ) {
   if (groups.length === 0) {
     return (
@@ -86,17 +86,17 @@ function classroomPanel(
       </p>
     );
   }
-  // Every classroom panel is a teacher/owner viewing classroom data, so the
-  // teacher-only notes show; only the owner's own classroom is deletable. The
-  // owner's unified view (showTeacher) adds a column naming each attempt's
-  // classroom, since it collapses every classroom into one table.
+  // Every classroom panel is a parent/owner viewing classroom data, so the
+  // parent-only notes show; only the owner's own classroom is deletable. The
+  // owner's unified view (showParent) adds a column naming each attempt's
+  // parent, since it collapses every classroom into one table.
   return (
     <AdminSessions
       groups={groups}
       canDelete={canDelete}
-      teacherView
+      parentView
       viewerUser={viewerUser}
-      showTeacher={showTeacher}
+      showParent={showParent}
     />
   );
 }
@@ -119,9 +119,9 @@ export default async function AdminPage() {
   }
 
   const admin = await isAdmin(user);
-  // Delete is OWNER-only: a regular teacher can view (and open Details on) their
+  // Delete is OWNER-only: a regular parent can view (and open Details on) their
   // classroom's attempts but never delete one — only the owner gets a Delete
-  // column, and only in their own classroom (other teachers' tabs stay read-only,
+  // column, and only in their own classroom (other parents' tabs stay read-only,
   // and the delete route ownership-checks regardless).
   const owner = isOwner(user);
   const result = await loadSessions();
@@ -170,10 +170,10 @@ export default async function AdminPage() {
     );
   }
 
-  // A REGULAR teacher sees only their own classroom — one table, no Teacher
+  // A REGULAR parent sees only their own classroom — one table, no Parent
   // column, no Delete (Delete is owner-only). Roster = their students +
-  // themselves; older sessions predate teacherId, so scopeToClassroom falls back
-  // to roster membership by loginUser.
+  // themselves; older sessions predate the parent stamp, so scopeToClassroom
+  // falls back to roster membership by loginUser.
   if (!owner) {
     const roster = new Set((await listStudents(user)).map((s) => s.username));
     roster.add(user);
@@ -192,31 +192,31 @@ export default async function AdminPage() {
     );
   }
 
-  // The OWNER sees EVERY classroom collapsed into ONE table (no more per-teacher
-  // tabs to click through), by article, newest first, with a Teacher column
+  // The OWNER sees EVERY classroom collapsed into ONE table (no more per-parent
+  // tabs to click through), by article, newest first, with a Parent column
   // naming whose classroom each attempt belongs to. The junior and senior tracks
   // are split into two tabs (Regular is the default) so a junior 8/10 is never
   // shown alongside a senior 8/10; within each tab it's still all classrooms
   // combined. The owner may delete in any classroom, so both tables are deletable.
   //
-  // Resolve each session's teacher: prefer the stamped teacherId; fall back to
-  // roster membership by the owning student (older sessions predate teacherId).
-  // A teacher's own attempts map to themselves.
-  const teachers = await listTeachers();
-  const teacherDisplay = new Map(teachers.map((t) => [t.username, t.displayName]));
-  const studentToTeacher = new Map<string, string>();
-  for (const t of teachers) {
-    studentToTeacher.set(t.username, t.username);
-    for (const st of await listStudents(t.username)) {
-      studentToTeacher.set(st.username, t.username);
+  // Resolve each session's parent: prefer the stamped parentId; fall back to
+  // roster membership by the owning student (older sessions predate the stamp).
+  // A parent's own attempts map to themselves.
+  const parents = await listParents();
+  const parentDisplay = new Map(parents.map((p) => [p.username, p.displayName]));
+  const studentToParent = new Map<string, string>();
+  for (const p of parents) {
+    studentToParent.set(p.username, p.username);
+    for (const st of await listStudents(p.username)) {
+      studentToParent.set(st.username, p.username);
     }
   }
-  const teacherNameFor = (s: Session): string => {
+  const parentNameFor = (s: Session): string => {
     const student = s.loginUser ?? s.studentName ?? "";
-    const uname = s.teacherId || studentToTeacher.get(student) || "";
-    return teacherDisplay.get(uname) || uname || "—";
+    const uname = s.parentId || studentToParent.get(student) || "";
+    return parentDisplay.get(uname) || uname || "—";
   };
-  const enriched = result.map((s) => ({ ...s, teacherName: teacherNameFor(s) }));
+  const enriched = result.map((s) => ({ ...s, parentName: parentNameFor(s) }));
 
   const seniorGroups = groupByArticle(enriched.filter((s) => s.track !== "junior"));
   const juniorGroups = groupByArticle(enriched.filter((s) => s.track === "junior"));
@@ -227,7 +227,7 @@ export default async function AdminPage() {
         Quiz sessions
       </h1>
       <p className="mt-2 font-sans text-[13px] text-stone-500">
-        Every classroom&apos;s attempts, by article — the Teacher column shows
+        Every classroom&apos;s attempts, by article — the Parent column shows
         whose classroom each is. Click Details for the full report card,
         recording, and transcript.
       </p>

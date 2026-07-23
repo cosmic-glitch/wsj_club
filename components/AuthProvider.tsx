@@ -16,7 +16,7 @@ import { createContext, useContext, useEffect, useState } from "react";
  * generated) — just hoisted to one place instead of repeated per component.
  */
 
-type Role = "teacher" | "student" | null;
+type Role = "parent" | "student" | null;
 
 type Auth = {
   user: string | null;

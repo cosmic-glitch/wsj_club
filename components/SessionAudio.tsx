@@ -64,7 +64,7 @@ export default function SessionAudio({ src }: { src: string }) {
 
   return (
     <>
-      {/* preload="metadata" so the duration-fix can run before the teacher hits play. */}
+      {/* preload="metadata" so the duration-fix can run before the parent hits play. */}
       <audio ref={ref} controls preload="metadata" src={src} className="mt-2 w-full">
         <a href={src}>Open recording</a>
       </audio>

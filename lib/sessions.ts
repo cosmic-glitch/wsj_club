@@ -9,7 +9,9 @@ import type { Session } from "@/components/AdminSessions";
  * blob can't take down the page (returns null → filtered out).
  *
  * `blobUrl` is attached at load time (it isn't part of the saved JSON) so the
- * teacher can delete an attempt.
+ * owner can delete an attempt. The stored JSON stamps the owning parent under
+ * the legacy `teacherId` field name — normalized to `parentId` here, so nothing
+ * above this loader sees the legacy name.
  */
 export async function loadSessions(): Promise<Session[] | { error: string }> {
   try {
@@ -28,8 +30,13 @@ export async function loadSessions(): Promise<Session[] | { error: string }> {
               // Harmless for the immutable random-suffixed records.
               const v = new Date(b.uploadedAt).getTime();
               const res = await fetch(`${b.url}?v=${v}`, { cache: "no-store" });
-              const session = (await res.json()) as Session;
-              return { ...session, blobUrl: b.url };
+              const raw = (await res.json()) as Session & { teacherId?: string };
+              const { teacherId, ...session } = raw;
+              return {
+                ...session,
+                ...(teacherId ? { parentId: teacherId } : {}),
+                blobUrl: b.url,
+              };
             } catch (err) {
               console.error("Skipping unreadable session blob:", b.pathname, err);
               return null;

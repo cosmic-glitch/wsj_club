@@ -26,7 +26,7 @@ import {
  *            actual resume). Identity comes entirely from the cookie: there is
  *            no way to request another user's slot (in-progress transcripts are
  *            as private as finished ones).
- *   DELETE — "Start over": archive the caller's slot as an ungraded, teacher-
+ *   DELETE — "Start over": archive the caller's slot as an ungraded, parent-
  *            only `cancelled` record (nothing a student did is ever silently
  *            discarded — same philosophy as Cancel), then delete the slot.
  */
@@ -107,7 +107,9 @@ export async function POST(request: Request) {
     }
   }
 
-  const teacherId = (await getUser(user))?.teacherId;
+  // Stored under the legacy `teacherId` field name (see quiz-report) so slot
+  // records stay uniform with the existing saved sessions.
+  const parentId = (await getUser(user))?.parentId;
 
   const session = {
     date,
@@ -118,7 +120,7 @@ export async function POST(request: Request) {
     title: reading.title,
     studentName: user,
     loginUser: user,
-    teacherId,
+    teacherId: parentId,
     // The explicit in-progress marker the Scores UI keys off (NOT inferred from
     // partial/report — legacy failure-partials whose grading errored also have
     // report: null, and they must not grow a broken Continue button).
@@ -134,7 +136,7 @@ export async function POST(request: Request) {
       ? { audioUrl, durationMs: sanitizeDurationMs(body.durationMs) }
       : {}),
     // Why the quiz last paused (set on a failure pause; null on a clean leave) —
-    // shown to the teacher on the in-progress entry's detail view.
+    // shown to the parent on the in-progress entry's detail view.
     failure: sanitizeFailure(body.failure),
     diag: sanitizeDiag(body),
   };

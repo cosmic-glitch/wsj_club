@@ -30,7 +30,7 @@ function transcriptToText(transcript: Turn[]): string {
 /**
  * Takes a finished quiz transcript, asks a text model to grade it into a report
  * card, and saves the whole session (transcript + report) to Vercel Blob so the
- * teacher can review it on /admin. Returns the report card to show the student.
+ * parent can review it on /admin. Returns the report card to show the student.
  *
  * This is the TERMINAL save (End and Cancel both land here) — after a
  * successful save it also deletes the caller's in-progress slot (the pause &
@@ -82,13 +82,13 @@ export async function POST(request: Request) {
   // continuable), so nothing should send partial: true anymore; if something
   // does, the record is saved but never graded (see below).
   const partial = body.partial === true;
-  // The student pressed Cancel: the attempt is still saved for the teacher (the
+  // The student pressed Cancel: the attempt is still saved for the parent (the
   // /admin page hides it from the student's own Scores view) but never graded.
   const cancelled = body.cancelled === true;
   const failure = sanitizeFailure(body.failure);
   // How many times this attempt was paused and continued (surfaced to the
-  // teacher — pause-anytime makes a look-up-the-answer detour possible, and the
-  // teacher should be able to see that an attempt didn't run in one sitting).
+  // parent — pause-anytime makes a look-up-the-answer detour possible, and the
+  // parent should be able to see that an attempt didn't run in one sitting).
   const resumeCount = sanitizeResumeCount(body.resumeCount);
   const diag = sanitizeDiag(body);
 
@@ -108,7 +108,7 @@ export async function POST(request: Request) {
   if (cancelled) {
     // A cancelled attempt is never graded: the student chose to stop early, a
     // score for half a quiz would be misleading, and the student never sees
-    // this entry anyway. The transcript + recording are what the teacher reviews.
+    // this entry anyway. The transcript + recording are what the parent reviews.
     report = {
       score: "—",
       summary:
@@ -179,12 +179,14 @@ export async function POST(request: Request) {
     r.score = applyLeniency(r.score);
   }
 
-  // Stamp the owning teacher so /admin can scope each teacher to their own
+  // Stamp the owning parent so /admin can scope each parent to their own
   // classroom by a direct field match (rather than re-deriving from the roster
   // every load). Looked up from the student's record; undefined if the taker is
-  // a teacher quizzing themselves or an un-migrated user (the /admin filter then
-  // falls back to roster membership).
-  const teacherId = (await getUser(user))?.teacherId;
+  // a parent quizzing themselves or an un-migrated user (the /admin filter then
+  // falls back to roster membership). Saved under the legacy `teacherId` field
+  // name so the stored session JSON stays uniform with existing records
+  // (lib/sessions.ts normalizes it back to parentId on read).
+  const parentId = (await getUser(user))?.parentId;
 
   // This terminal record replaces any in-progress slot. If the client sent no
   // recording — a resumed quiz normally stitches the slot's flushed WAV into
@@ -224,7 +226,7 @@ export async function POST(request: Request) {
     title: reading.title,
     studentName,
     loginUser: user,
-    teacherId,
+    teacherId: parentId,
     endedAt: new Date().toISOString(),
     durationMs: finalDurationMs,
     transcript,

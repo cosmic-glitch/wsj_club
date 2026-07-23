@@ -1,5 +1,5 @@
 import { currentUser, isAdmin, isOwner } from "@/lib/auth";
-import { listStudents, listTeachers, type PublicUser } from "@/lib/users";
+import { listStudents, listParents, type PublicUser } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
 import StudentRoster, {
   type Classroom,
@@ -23,13 +23,13 @@ export default async function StudentsPage() {
           Students
         </h1>
         <p className="mt-4 border-[3px] border-[#0a0a0a] bg-[#ffe600] px-4 py-3 font-sans text-sm font-bold text-[#0a0a0a]">
-          Please log in (top right) to manage your classroom.
+          Please log in (top right) to manage your students.
         </p>
       </div>
     );
   }
 
-  // Teacher-only. A logged-in student who navigates here directly is sent back
+  // Parent-only. A logged-in student who navigates here directly is sent back
   // to their scores.
   if (!(await isAdmin(user))) {
     return (
@@ -38,7 +38,7 @@ export default async function StudentsPage() {
           Students
         </h1>
         <p className="mt-4 border-[3px] border-[#0a0a0a] bg-stone-100 px-4 py-3 font-sans text-sm text-stone-600">
-          This page is for teachers. Your scores are on the{" "}
+          This page is for parents. Your scores are on the{" "}
           <a href="/admin" className="font-bold underline">
             Scores
           </a>{" "}
@@ -71,7 +71,7 @@ export default async function StudentsPage() {
   }
 
   // Only active students are shown/managed for now (there's no deactivate/
-  // reactivate in the UI — teachers can add, rename, and reset passwords).
+  // reactivate in the UI — parents can add, rename, and reset passwords).
   const toRoster = (students: PublicUser[]): RosterEntry[] =>
     students
       .filter((s) => s.active !== false)
@@ -85,53 +85,53 @@ export default async function StudentsPage() {
 
   const ownRoster = toRoster(await listStudents(user));
 
-  // The owner also SEES every other teacher's classroom. It may ADD a student to
-  // any of them (the /api/students POST lets the owner target a teacherId), but
+  // The owner also SEES every other parent's classroom. It may ADD a student to
+  // any of them (the /api/students POST lets the owner target a parentId), but
   // Rename/Reset stay own-classroom (the /api/students/[username] route still
-  // ownership-checks and doesn't exempt the owner). A regular teacher, and a
-  // lone owner with no other teachers, manages just their own classroom
+  // ownership-checks and doesn't exempt the owner). A regular parent, and a
+  // lone owner with no other parents, manages just their own students
   // (unchanged).
-  const teachers = isOwner(user) ? await listTeachers() : [];
-  const others = teachers.filter((t) => t.username !== user);
+  const parents = isOwner(user) ? await listParents() : [];
+  const others = parents.filter((p) => p.username !== user);
 
   if (others.length === 0) {
     return (
       <div>
-        <StudentRoster students={ownRoster} teacherName={user} />
+        <StudentRoster students={ownRoster} parentUsername={user} />
       </div>
     );
   }
 
-  // Owner + other teachers → ONE unified roster with a Teacher column (the
+  // Owner + other parents → ONE unified roster with a Parent column (the
   // Scores-page recipe — the per-classroom tabs were dropped as inefficient):
-  // own students first (fully editable), then each other teacher's (visible,
+  // own students first (fully editable), then each other parent's (visible,
   // addable-to via the modal's classroom selector, but not Rename/Reset).
-  const self = teachers.find((t) => t.username === user);
+  const self = parents.find((p) => p.username === user);
   const otherRosters = await Promise.all(
-    others.map(async (t) => ({
-      teacher: t,
-      students: toRoster(await listStudents(t.username)),
+    others.map(async (p) => ({
+      parent: p,
+      students: toRoster(await listStudents(p.username)),
     }))
   );
   const unified: RosterEntry[] = [
     ...ownRoster.map((s) => ({
       ...s,
-      teacherName: self?.displayName ?? user,
+      parentName: self?.displayName ?? user,
       canManage: true,
     })),
-    ...otherRosters.flatMap(({ teacher, students }) =>
+    ...otherRosters.flatMap(({ parent, students }) =>
       students.map((s) => ({
         ...s,
-        teacherName: teacher.displayName,
+        parentName: parent.displayName,
         canManage: false,
       }))
     ),
   ];
   const classrooms: Classroom[] = [
-    { teacherId: user, label: "My classroom" },
-    ...others.map((t) => ({
-      teacherId: t.username,
-      label: `${t.displayName}’s classroom`,
+    { parentId: user, label: "My students" },
+    ...others.map((p) => ({
+      parentId: p.username,
+      label: `${p.displayName}’s students`,
     })),
   ];
 
@@ -139,10 +139,10 @@ export default async function StudentsPage() {
     <div>
       <StudentRoster
         students={unified}
-        teacherName={user}
+        parentUsername={user}
         title="Manage students"
-        subtitle="Every classroom in one list. You can add a student to any classroom; renaming and password resets stay with each classroom's own teacher."
-        showTeacher
+        subtitle="Every family's students in one list. You can add a student under any parent; renaming and password resets stay with each student's own parent."
+        showParent
         classrooms={classrooms}
       />
     </div>

@@ -4,11 +4,11 @@ import { createUser, getUser, UserError } from "@/lib/users";
 /**
  * Create + manage students in a classroom.
  *
- * Both handlers are teacher-gated. On create, a regular teacher's student is
- * always placed in the CALLER's own classroom (`teacherId` forced to self —
+ * Both handlers are parent-gated. On create, a regular parent's student is
+ * always placed in the CALLER's own classroom (`parentId` forced to self —
  * never trusted from the body). The OWNER is the one exception: it may pass a
- * `teacherId` in the body to add a student to ANOTHER teacher's classroom
- * (validated to be a real teacher). Renaming / password resets still stay
+ * `parentId` in the body to add a student to ANOTHER parent's classroom
+ * (validated to be a real parent). Renaming / password resets still stay
  * own-classroom for everyone (see `[username]/route.ts`).
  */
 
@@ -42,7 +42,8 @@ export async function POST(request: Request) {
     displayName?: string;
     username?: string;
     password?: string;
-    teacherId?: string;
+    parentId?: string;
+    teacherId?: string; // legacy alias for parentId (a stale pre-rename client)
   };
   try {
     body = await request.json();
@@ -50,21 +51,21 @@ export async function POST(request: Request) {
     return Response.json({ error: "Invalid request" }, { status: 400 });
   }
 
-  // A regular teacher always adds to their OWN classroom (teacherId forced to
-  // self). The owner may target another teacher's classroom by passing a
-  // `teacherId` — validated to be a real teacher; anyone else forging one is
+  // A regular parent always adds to their OWN classroom (parentId forced to
+  // self). The owner may target another parent's classroom by passing a
+  // `parentId` — validated to be a real parent; anyone else forging one is
   // rejected.
-  let teacherId = user!;
-  const requested = (body.teacherId ?? "").trim().toLowerCase();
+  let parentId = user!;
+  const requested = (body.parentId ?? body.teacherId ?? "").trim().toLowerCase();
   if (requested && requested !== user) {
     if (!isOwner(user)) {
       return Response.json({ error: "Not authorized." }, { status: 403 });
     }
-    const targetTeacher = await getUser(requested);
-    if (!targetTeacher || targetTeacher.role !== "teacher") {
-      return Response.json({ error: "Unknown teacher." }, { status: 400 });
+    const targetParent = await getUser(requested);
+    if (!targetParent || targetParent.role !== "parent") {
+      return Response.json({ error: "Unknown parent." }, { status: 400 });
     }
-    teacherId = targetTeacher.username;
+    parentId = targetParent.username;
   }
 
   try {
@@ -74,7 +75,7 @@ export async function POST(request: Request) {
         displayName: (body.displayName ?? "").trim(),
         password: body.password ?? "",
         role: "student",
-        teacherId,
+        parentId,
       },
       user!
     );
@@ -84,7 +85,7 @@ export async function POST(request: Request) {
       const status = err.code === "username-taken" ? 409 : 400;
       return Response.json({ error: err.message, code: err.code }, { status });
     }
-    console.error("Creating student failed for teacher:", user, err);
+    console.error("Creating student failed for parent:", user, err);
     return Response.json({ error: "Could not create student." }, { status: 500 });
   }
 }

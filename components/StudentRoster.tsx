@@ -9,16 +9,16 @@ export type RosterEntry = {
   active: boolean;
   attempts: number;
   lastActiveIso: string | null;
-  // Owner's unified all-classrooms view: the classroom's teacher display name
-  // (the Teacher column) and whether the viewer may Rename/Reset this row
-  // (only the owner's own students — the PATCH route ownership-checks and
-  // doesn't exempt the owner). Absent on a single-classroom roster.
-  teacherName?: string;
+  // Owner's unified all-classrooms view: the parent's display name (the Parent
+  // column) and whether the viewer may Rename/Reset this row (only the owner's
+  // own students — the PATCH route ownership-checks and doesn't exempt the
+  // owner). Absent on a single-classroom roster.
+  parentName?: string;
   canManage?: boolean;
 };
 
 // A classroom the Add-student modal can target (owner's unified view).
-export type Classroom = { teacherId: string; label: string };
+export type Classroom = { parentId: string; label: string };
 
 // Kid-friendly memorable passwords, generated client-side (the server only ever
 // receives + hashes them). e.g. "brave-otter-42".
@@ -38,17 +38,17 @@ type Credential = { username: string; password: string; reset: boolean };
 
 export default function StudentRoster({
   students,
-  teacherName,
-  title = "My classroom",
+  parentUsername,
+  title = "My students",
   subtitle = "The students you manage. Add a student to give them a login for the voice quiz.",
   readOnly = false,
   canAdd,
   showTitle = true,
-  showTeacher = false,
+  showParent = false,
   classrooms,
 }: {
   students: RosterEntry[];
-  teacherName: string;
+  parentUsername: string;
   title?: string;
   subtitle?: string;
   // When true, the Rename/Reset row actions are hidden table-wide — those stay
@@ -61,12 +61,12 @@ export default function StudentRoster({
   canAdd?: boolean;
   // When false, the big <h1> is dropped, leaving just the subtitle + Add button.
   showTitle?: boolean;
-  // Owner's unified all-classrooms view: adds a Teacher column (each row's
-  // `teacherName`) — mirrors the Scores page's unified table.
-  showTeacher?: boolean;
+  // Owner's unified all-classrooms view: adds a Parent column (each row's
+  // `parentName`) — mirrors the Scores page's unified table.
+  showParent?: boolean;
   // When set (2+ classrooms — the owner), the Add-student modal shows a
-  // classroom selector so a student can be added to any teacher's classroom;
-  // defaults to `teacherName` (the caller's own).
+  // parent selector so a student can be added under any parent; defaults to
+  // `parentUsername` (the caller's own).
   classrooms?: Classroom[];
 }) {
   const showAdd = canAdd ?? !readOnly;
@@ -113,7 +113,7 @@ export default function StudentRoster({
             <thead>
               <tr className="bg-[#0a0a0a] text-left font-mono text-[10px] font-bold uppercase tracking-[.12em] text-white">
                 <th className="px-4 py-2.5 font-bold">Username</th>
-                {showTeacher && <th className="px-4 py-2.5 font-bold">Teacher</th>}
+                {showParent && <th className="px-4 py-2.5 font-bold">Parent</th>}
                 <th className="px-4 py-2.5 text-right font-bold">Attempts</th>
                 <th className="px-4 py-2.5 font-bold">Last active</th>
                 {!readOnly && <th className="px-4 py-2.5 text-right font-bold">Actions</th>}
@@ -125,7 +125,7 @@ export default function StudentRoster({
                   key={s.username}
                   student={s}
                   readOnly={readOnly}
-                  showTeacher={showTeacher}
+                  showParent={showParent}
                   renaming={renaming === s.username}
                   busy={busyRow === s.username}
                   onStartRename={() => setRenaming(s.username)}
@@ -142,7 +142,7 @@ export default function StudentRoster({
 
       {addOpen && (
         <AddStudentModal
-          teacherName={teacherName}
+          parentUsername={parentUsername}
           classrooms={classrooms}
           onClose={() => setAddOpen(false)}
           onCreated={(cred) => {
@@ -170,7 +170,7 @@ export default function StudentRoster({
 function StudentRow({
   student,
   readOnly,
-  showTeacher,
+  showParent,
   renaming,
   busy,
   onStartRename,
@@ -181,7 +181,7 @@ function StudentRow({
 }: {
   student: RosterEntry;
   readOnly: boolean;
-  showTeacher: boolean;
+  showParent: boolean;
   renaming: boolean;
   busy: boolean;
   onStartRename: () => void;
@@ -296,8 +296,8 @@ function StudentRow({
           </span>
         )}
       </td>
-      {showTeacher && (
-        <td className="px-4 py-3 text-stone-600">{student.teacherName ?? "—"}</td>
+      {showParent && (
+        <td className="px-4 py-3 text-stone-600">{student.parentName ?? "—"}</td>
       )}
       <td className="px-4 py-3 text-right tabular-nums text-stone-600">
         {student.attempts}
@@ -334,19 +334,19 @@ function StudentRow({
 /* --------------------------- add-student modal --------------------------- */
 
 function AddStudentModal({
-  teacherName,
+  parentUsername,
   classrooms,
   onClose,
   onCreated,
 }: {
-  teacherName: string;
+  parentUsername: string;
   classrooms?: Classroom[];
   onClose: () => void;
   onCreated: (c: Credential) => void;
 }) {
-  // Which classroom the new student joins. Only the owner sees a choice
+  // Which parent the new student belongs to. Only the owner sees a choice
   // (2+ classrooms); everyone else adds to their own.
-  const [teacherId, setTeacherId] = useState(teacherName);
+  const [parentId, setParentId] = useState(parentUsername);
   const [displayName, setDisplayName] = useState("");
   const [username, setUsername] = useState("");
   const [usernameEdited, setUsernameEdited] = useState(false);
@@ -358,7 +358,7 @@ function AddStudentModal({
   const [error, setError] = useState("");
   const debounce = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Auto-suggest the username from the display name until the teacher edits it.
+  // Auto-suggest the username from the display name until the parent edits it.
   function onDisplayName(v: string) {
     setDisplayName(v);
     if (!usernameEdited) setUsername(slugify(v));
@@ -395,9 +395,9 @@ function AddStudentModal({
       const res = await fetch("/api/students", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        // teacherId names the classroom to add to. The server forces it to the
-        // caller for a regular teacher; only the owner may target another one.
-        body: JSON.stringify({ displayName, username, password, teacherId }),
+        // parentId names the parent to add under. The server forces it to the
+        // caller for a regular parent; only the owner may target another one.
+        body: JSON.stringify({ displayName, username, password, parentId }),
       });
       const d = await res.json();
       if (!res.ok) {
@@ -422,15 +422,15 @@ function AddStudentModal({
         {classrooms && classrooms.length > 1 && (
           <label className="block">
             <span className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-500">
-              Classroom
+              Parent
             </span>
             <select
-              value={teacherId}
-              onChange={(e) => setTeacherId(e.target.value)}
+              value={parentId}
+              onChange={(e) => setParentId(e.target.value)}
               className="mt-1 w-full border-2 border-[#0a0a0a] bg-white px-3 py-2 text-sm focus:bg-[#fffbd6] focus:outline-none"
             >
               {classrooms.map((c) => (
-                <option key={c.teacherId} value={c.teacherId}>
+                <option key={c.parentId} value={c.parentId}>
                   {c.label}
                 </option>
               ))}

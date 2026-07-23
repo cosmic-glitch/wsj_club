@@ -18,7 +18,7 @@ export const AUDIENCE: Record<Track, Audience> = {
 /**
  * The voice tutor's "brief" — built fresh for each session from the day's
  * handout content (and, when we have it, the full article text) plus a
- * high-level style guide that mimics how the teacher runs the 1-1 oral quizzes.
+ * high-level style guide that mimics how the parent ran the 1-1 oral quizzes.
  *
  * This text becomes the system prompt for the turn-by-turn tutor model
  * (`/api/quiz-turn`). It is assembled on the server so the model always has the

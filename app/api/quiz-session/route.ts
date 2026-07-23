@@ -8,8 +8,8 @@ import { listStudents } from "@/lib/users";
  * The admin page passes the blob URL of the session JSON plus, when present, the
  * audio recording's URL — both are deleted. Two guards: the URLs must be under
  * the `quiz-sessions/` prefix (so a stray/forged request can't delete unrelated
- * blobs), AND — for a regular teacher — the session must belong to their own
- * classroom (so one teacher can't delete another classroom's attempt with a
+ * blobs), AND — for a regular parent — the session must belong to their own
+ * classroom (so one parent can't delete another classroom's attempt with a
  * hand-crafted URL). The OWNER is exempt from the classroom check: they may
  * delete ANY classroom's attempt (Delete is owner-only in the UI, and the owner
  * curates every classroom's Scores).
@@ -46,9 +46,10 @@ export async function DELETE(request: Request) {
   }
 
   // The owner may delete ANY classroom's attempt, so it skips the ownership
-  // check entirely. A regular teacher must own the session's classroom: fetch the
-  // session JSON and check its teacherId / owning student, failing closed if it
-  // can't be read or doesn't belong to the caller.
+  // check entirely. A regular parent must own the session's classroom: fetch the
+  // session JSON and check its stamped parent (the stored `teacherId` field —
+  // the legacy name) / owning student, failing closed if it can't be read or
+  // doesn't belong to the caller.
   if (!isOwner(user)) {
     try {
       const res = await fetch(sessionUrl, { cache: "no-store" });

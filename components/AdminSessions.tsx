@@ -26,14 +26,16 @@ export type Session = {
   title: string;
   studentName: string;
   loginUser?: string;
-  // The owning teacher's username, stamped at save time so /admin can scope each
-  // teacher to their own classroom. Older sessions predate it (undefined) — the
-  // /admin filter then falls back to roster membership by loginUser.
-  teacherId?: string;
-  // UI-only: the display name of the classroom teacher this attempt belongs to,
-  // resolved on the server for the OWNER's unified Scores table (the Teacher
-  // column). Not part of the saved session JSON; only populated when showTeacher.
-  teacherName?: string;
+  // The owning parent's username, stamped at save time so /admin can scope each
+  // parent to their own classroom. Stored in the session JSON under the legacy
+  // `teacherId` field name (normalized by lib/sessions.ts). Older sessions
+  // predate it (undefined) — the /admin filter then falls back to roster
+  // membership by loginUser.
+  parentId?: string;
+  // UI-only: the display name of the parent this attempt belongs to, resolved
+  // on the server for the OWNER's unified Scores table (the Parent column).
+  // Not part of the saved session JSON; only populated when showParent.
+  parentName?: string;
   endedAt: string;
   // Length of the saved recording (total talk time — the same duration the
   // playback control shows), in ms. Undefined when nothing was recorded → "—".
@@ -47,7 +49,7 @@ export type Session = {
   partial?: boolean;
   failure?: SessionFailure | null;
   // Set when the student pressed Cancel: saved ungraded (score "—") for the
-  // teacher only — /admin filters these out of a student's own view.
+  // parent only — /admin filters these out of a student's own view.
   cancelled?: boolean;
   // The in-progress slot (pause & resume): a paused/live attempt, checkpointed
   // after every answer, never graded until End. Shown as "In progress" with a
@@ -57,9 +59,9 @@ export type Session = {
   inProgress?: boolean;
   // The slot's last-checkpoint time (it has no endedAt — nothing ended).
   updatedAt?: string;
-  // How many times the attempt was paused and continued (teacher-visible).
+  // How many times the attempt was paused and continued (parent-visible).
   resumeCount?: number;
-  // The Blob URL of this session's JSON — attached at load time so the teacher
+  // The Blob URL of this session's JSON — attached at load time so the owner
   // can delete it. Not part of the saved JSON itself.
   blobUrl: string;
 };
@@ -87,7 +89,7 @@ const resumeHref = (track: string | undefined, date: string) =>
  * on the server and during hydration — shows a deterministic date slice, then
  * we upgrade to the full local date+time after mount. This keeps server and
  * client markup identical at hydration (no mismatch) while still showing the
- * teacher their own local time.
+ * viewer their own local time.
  */
 function fmtLocal(iso: string, mounted: boolean): string {
   if (!iso) return "";
@@ -118,26 +120,26 @@ function fmtScore(score?: string): string {
 export default function AdminSessions({
   groups,
   canDelete,
-  teacherView = false,
+  parentView = false,
   viewerUser,
-  showTeacher = false,
+  showParent = false,
 }: {
   groups: ArticleGroup[];
-  // Only the OWNER may delete attempts; a regular teacher views their classroom
+  // Only the OWNER may delete attempts; a regular parent views their classroom
   // read-only (and a student sees their own sessions read-only too). Distinct
-  // from teacherView: a teacher sees the classroom but gets no Delete column.
+  // from parentView: a parent sees the classroom but gets no Delete column.
   canDelete: boolean;
-  // The viewer is a teacher/owner looking at classroom data (not a student
-  // viewing their own scores). Gates teacher-only informational bits like the
-  // "Resumed N times" note — shown to any teacher, whether or not they can delete.
-  teacherView?: boolean;
+  // The viewer is a parent/owner looking at classroom data (not a student
+  // viewing their own scores). Gates parent-only informational bits like the
+  // "Resumed N times" note — shown to any parent, whether or not they can delete.
+  parentView?: boolean;
   // The logged-in viewer — an in-progress attempt shows its Continue button
-  // only to the user who owns it (a teacher sees it as informational).
+  // only to the user who owns it (a parent sees it as informational).
   viewerUser?: string | null;
-  // Show a Teacher column naming each attempt's classroom — only the OWNER's
-  // unified view (every classroom in one table) needs it; a regular teacher /
+  // Show a Parent column naming each attempt's parent — only the OWNER's
+  // unified view (every classroom in one table) needs it; a regular parent /
   // student sees a single classroom, so the column would be redundant.
-  showTeacher?: boolean;
+  showParent?: boolean;
 }) {
   // Which attempt's detail is open in the modal (null = closed). A single
   // "Details" link per attempt opens the full combined view — feedback +
@@ -194,8 +196,8 @@ export default function AdminSessions({
               <th className="px-3 py-2.5 font-semibold">
                 <div className="flex items-end gap-2 px-1">
                   <span className="w-20 text-right">Student</span>
-                  {showTeacher && (
-                    <span className="w-24 text-right">Teacher</span>
+                  {showParent && (
+                    <span className="w-24 text-right">Parent</span>
                   )}
                   <span className="w-10 text-right">Score</span>
                   <span className="w-8 text-right">Mins</span>
@@ -238,7 +240,7 @@ export default function AdminSessions({
                     {g.attempts.map((s) => {
                       const score = s.report?.score;
                       // An in-progress attempt: its OWNER gets a Continue link
-                      // (resumes the quiz); anyone else (the teacher) gets the
+                      // (resumes the quiz); anyone else (the parent) gets the
                       // usual Details view of the transcript-so-far.
                       const ownsInProgress =
                         s.inProgress === true &&
@@ -252,9 +254,9 @@ export default function AdminSessions({
                           <span className="w-20 shrink-0 truncate text-right font-medium text-stone-800">
                             {s.studentName}
                           </span>
-                          {showTeacher && (
+                          {showParent && (
                             <span className="w-24 shrink-0 truncate text-right text-stone-500">
-                              {s.teacherName}
+                              {s.parentName}
                             </span>
                           )}
                           <span className="w-10 shrink-0 whitespace-nowrap text-right font-mono font-bold text-[#0a0a0a]">
@@ -395,7 +397,7 @@ export default function AdminSessions({
                   >
                     {session.title}
                   </Link>
-                  {session.teacherName ? ` · ${session.teacherName}` : ""} ·{" "}
+                  {session.parentName ? ` · ${session.parentName}` : ""} ·{" "}
                   {fmtLocal(session.endedAt ?? session.updatedAt ?? "", mounted)}
                 </p>
               </div>
@@ -441,10 +443,10 @@ export default function AdminSessions({
               )}
 
               {/* Pause-anytime makes a mid-quiz look-something-up detour possible,
-                  so the teacher gets to SEE that an attempt didn't run in one
-                  sitting. Teacher-only (teacherView, not canDelete — a regular
-                  teacher can't delete but should still see this). */}
-              {teacherView && (session.resumeCount ?? 0) > 0 && (
+                  so the parent gets to SEE that an attempt didn't run in one
+                  sitting. Parent-only (parentView, not canDelete — a regular
+                  parent can't delete but should still see this). */}
+              {parentView && (session.resumeCount ?? 0) > 0 && (
                 <p className="text-xs text-stone-500">
                   Resumed {session.resumeCount} time
                   {session.resumeCount === 1 ? "" : "s"} — this attempt was paused

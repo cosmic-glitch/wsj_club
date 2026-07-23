@@ -4,21 +4,21 @@ import { cookies } from "next/headers";
 import { getUser, verifyLogin, type User } from "@/lib/users";
 
 /**
- * Username/password auth for the voice quiz + the teacher (Scores/Students) area.
+ * Username/password auth for the voice quiz + the parent (Scores/Students) area.
  *
  * Exists to gate the paid OpenAI calls behind a login so the public site can't
- * run up charges, and to scope each teacher to their own classroom.
+ * run up charges, and to scope each parent to their own classroom.
  *
  * Users now live in the Blob-backed repository (`lib/users.ts`) — one record per
- * login with a role (teacher/student) and, for students, the owning teacher.
+ * login with a role (parent/student) and, for students, the owning parent.
  * This module keeps the cookie/HMAC machinery and derives role/identity by
  * looking the user up in that repository.
  *
  * - A successful login sets an httpOnly cookie: the username plus an HMAC
  *   signature (`AUTH_SECRET`) so it can't be forged. The cookie carries only the
  *   username; role/classroom are looked up fresh from the repository.
- * - Owner (may create teachers) is an env capability: `OWNER_USERS` (comma-
- *   separated). Fail closed if unset — nobody is an owner.
+ * - Owner (may create parent accounts) is an env capability: `OWNER_USERS`
+ *   (comma-separated). Fail closed if unset — nobody is an owner.
  *
  * Transitional env fallback: until the migration seed has run, a username absent
  * from the repository falls back to the legacy `AUTH_USERS` (base64 JSON of
@@ -146,7 +146,7 @@ export async function currentUserRecord(): Promise<User | null> {
 }
 
 /**
- * Legacy fallback: the teacher usernames from the `ADMIN_USERS` env var
+ * Legacy fallback: the parent usernames from the `ADMIN_USERS` env var
  * (comma-separated). Consulted only for a username not yet in the repository.
  */
 function getAdminUsers(): string[] {
@@ -158,9 +158,9 @@ function getAdminUsers(): string[] {
 
 /**
  * Owner usernames from the `OWNER_USERS` env var (comma-separated). An owner is
- * a teacher who may ALSO create teachers. Owner-ness is an env capability (not a
- * writable field on a record), so it can't be granted by writing a blob. Fail
- * closed: unset ⇒ nobody is an owner.
+ * a parent who may ALSO create parent accounts. Owner-ness is an env capability
+ * (not a writable field on a record), so it can't be granted by writing a blob.
+ * Fail closed: unset ⇒ nobody is an owner.
  */
 function getOwnerUsers(): string[] {
   return (process.env.OWNER_USERS || "")
@@ -176,15 +176,15 @@ export function isOwner(username: string | null): boolean {
 }
 
 /**
- * Teacher/admin access for the `/admin` portal (Scores + Students). True for a
- * user whose role is "teacher" (or the owner). Fail closed (null → false).
+ * Parent/admin access for the `/admin` portal (Scores + Students). True for a
+ * user whose role is "parent" (or the owner). Fail closed (null → false).
  * Async because the role now comes from the Blob repository.
  */
 export async function isAdmin(username: string | null): Promise<boolean> {
   if (!username) return false;
   if (isOwner(username)) return true;
   const record = await getUser(username);
-  if (record) return record.role === "teacher";
+  if (record) return record.role === "parent";
 
   // Transitional fallback: legacy ADMIN_USERS for an un-migrated user.
   return getAdminUsers().includes(username);

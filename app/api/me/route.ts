@@ -1,7 +1,7 @@
 import { currentUser, currentUserRecord, isAdmin, isOwner } from "@/lib/auth";
 
 // Lets client components learn the login state (username, role, classroom, and
-// whether the user is a teacher/owner) without forcing the (static) pages they
+// whether the user is a parent/owner) without forcing the (static) pages they
 // live on to render dynamically.
 export async function GET() {
   // currentUser() handles the transitional env fallback, so an un-migrated user
@@ -12,7 +12,7 @@ export async function GET() {
       username: null,
       displayName: null,
       role: null,
-      teacherId: null,
+      parentId: null,
       isAdmin: false,
       isOwner: false,
     });
@@ -22,8 +22,8 @@ export async function GET() {
   return Response.json({
     username,
     displayName: record?.displayName ?? username,
-    role: record?.role ?? (admin ? "teacher" : "student"),
-    teacherId: record?.teacherId ?? null,
+    role: record?.role ?? (admin ? "parent" : "student"),
+    parentId: record?.parentId ?? null,
     isAdmin: admin,
     isOwner: isOwner(username),
   });

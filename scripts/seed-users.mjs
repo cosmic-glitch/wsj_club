@@ -2,7 +2,11 @@
 /**
  * One-time migration: move the logins from the legacy AUTH_USERS env var into
  * the Blob-backed user repository (lib/users.ts), assigning each a role and —
- * for students — an owning teacher (their "classroom").
+ * for students — an owning parent (their "classroom").
+ *
+ * Roles here use the app's verbiage — "parent" / parentId. The stored blob keeps
+ * the LEGACY field names (`role: "teacher"`, `teacherId`) that lib/users.ts
+ * expects on disk; the conversion happens at the write below.
  *
  * It REUSES the bcrypt hashes already in AUTH_USERS (no plaintext passwords are
  * handled), and writes one blob per user at `users/<username>.json` in the same
@@ -26,14 +30,14 @@ const DRY_RUN = process.argv.includes("--dry-run");
 // the script carries that hash over. `test` is a leftover throwaway login: keep
 // the record but deactivate it so it can't log in.
 const ROSTER = [
-  { username: "anurag", role: "teacher" }, // owner (also set OWNER_USERS=anurag)
-  { username: "madan", role: "teacher" },
-  { username: "arjun", role: "student", teacherId: "anurag" },
-  { username: "anusha", role: "student", teacherId: "anurag" },
-  { username: "samaira", role: "student", teacherId: "anurag" },
-  { username: "mehar", role: "student", teacherId: "anurag" },
-  { username: "puneeth", role: "student", teacherId: "madan" },
-  { username: "test", role: "student", teacherId: "anurag", active: false },
+  { username: "anurag", role: "parent" }, // owner (also set OWNER_USERS=anurag)
+  { username: "madan", role: "parent" },
+  { username: "arjun", role: "student", parentId: "anurag" },
+  { username: "anusha", role: "student", parentId: "anurag" },
+  { username: "samaira", role: "student", parentId: "anurag" },
+  { username: "mehar", role: "student", parentId: "anurag" },
+  { username: "puneeth", role: "student", parentId: "madan" },
+  { username: "test", role: "student", parentId: "anurag", active: false },
 ];
 
 function decodeAuthUsers() {
@@ -70,16 +74,16 @@ if (!DRY_RUN && !process.env.BLOB_READ_WRITE_TOKEN) {
   process.exit(1);
 }
 
-// Validate every roster username has a hash + every teacherId points at a teacher.
-const teachers = new Set(ROSTER.filter((r) => r.role === "teacher").map((r) => r.username));
+// Validate every roster username has a hash + every parentId points at a parent.
+const parents = new Set(ROSTER.filter((r) => r.role === "parent").map((r) => r.username));
 let bad = false;
 for (const r of ROSTER) {
   if (typeof hashes[r.username] !== "string") {
     console.error(`✗ ${r.username}: no bcrypt hash in AUTH_USERS`);
     bad = true;
   }
-  if (r.role === "student" && !teachers.has(r.teacherId)) {
-    console.error(`✗ ${r.username}: teacherId "${r.teacherId}" is not a teacher in this roster`);
+  if (r.role === "student" && !parents.has(r.parentId)) {
+    console.error(`✗ ${r.username}: parentId "${r.parentId}" is not a parent in this roster`);
     bad = true;
   }
 }
@@ -92,14 +96,15 @@ for (const r of ROSTER) {
     username: r.username,
     displayName: titleCase(r.username),
     passwordHash: hashes[r.username],
-    role: r.role,
-    ...(r.role === "student" ? { teacherId: r.teacherId } : {}),
+    // Legacy stored names: "teacher"/teacherId on disk mean parent/parentId.
+    role: r.role === "parent" ? "teacher" : r.role,
+    ...(r.role === "student" ? { teacherId: r.parentId } : {}),
     active: r.active ?? true,
     createdBy: "seed",
     createdAt: now,
   };
 
-  const label = `${r.username} (${r.role}${r.teacherId ? ` → ${r.teacherId}` : ""}${user.active ? "" : ", inactive"})`;
+  const label = `${r.username} (${r.role}${r.parentId ? ` → ${r.parentId}` : ""}${user.active ? "" : ", inactive"})`;
   if (DRY_RUN) {
     console.log(`would write users/${r.username}.json  —  ${label}`);
     continue;

@@ -61,7 +61,7 @@ export default function WordBankList({
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    // isAdmin (teacher/owner) skips the fetch — they get the students-only
+    // isAdmin (parent/owner) skips the fetch — they get the students-only
     // notice below, so their quiz dates are never needed.
     if (!ready || !user || isAdmin) return;
     let cancelled = false;
@@ -94,7 +94,7 @@ export default function WordBankList({
     );
   }
 
-  // A teacher (or the owner) has no personal word bank — the bank is built
+  // A parent (or the owner) has no personal word bank — the bank is built
   // from a student's own quiz sessions.
   if (isAdmin) {
     return (

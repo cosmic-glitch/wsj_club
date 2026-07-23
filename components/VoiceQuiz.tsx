@@ -8,7 +8,7 @@ import { useAuth } from "./AuthProvider";
 
 type Turn = { role: "student" | "tutor"; text: string };
 
-// One clip in the teacher's stitched recording, tagged with its position in the
+// One clip in the parent's stitched recording, tagged with its position in the
 // conversation (`order`) so the tutor's questions and the student's answers can
 // be re-interleaved in the order they actually happened. Exactly one of
 // blob/pcm is set: tutor lines and desktop answers carry a `blob` (mp3 /
@@ -24,7 +24,7 @@ type AudioSegment = {
 };
 
 // The graded report card the student sees at the end — the same shape the
-// teacher reviews on /admin (minus the private transcript + recording).
+// parent reviews on /admin (minus the private transcript + recording).
 type Report = {
   score?: string;
   summary?: string;
@@ -277,11 +277,11 @@ async function decodeBlobToPcm16k(blob: Blob, ctx: AudioContext): Promise<Float3
  * Turn-taking is entirely the student's call (the buttons), never the model's.
  *
  * On "End quiz" the transcript is POSTed to /api/quiz-report, graded into a
- * report card, and saved to Blob for the teacher on /admin; the student is then
+ * report card, and saved to Blob for the parent on /admin; the student is then
  * shown their full report card. The whole conversation — the tutor's spoken
  * questions AND the student's spoken answers — is stitched into ONE interleaved
  * WAV (in the order it happened), uploaded straight to Blob (via /api/quiz-audio's
- * token) and linked from the session for the teacher to play back. Recording is
+ * token) and linked from the session for the parent to play back. Recording is
  * best-effort — a failure never breaks the quiz.
  *
  * PAUSE & RESUME (see PLAN-continue-voice-quiz.md): the transcript is
@@ -326,13 +326,13 @@ export default function VoiceQuiz({
   // The failure behind the current PAUSE (transcription / tutor unreachable /
   // hang). A failure no longer ends the quiz — pauseOnFailure checkpoints and
   // shows a retry-or-leave screen — but the reason is echoed onto the slot so
-  // the teacher can see why an in-progress attempt paused. Cleared on retry,
+  // the parent can see why an in-progress attempt paused. Cleared on retry,
   // resume, and a fresh start.
   const failureRef = useRef<SessionFailure | null>(null);
   // The student-facing line on the paused screen (why we paused).
   const [pausedMsg, setPausedMsg] = useState("");
   // True while a session is being saved because the student pressed Cancel. The
-  // attempt still saves for the teacher (recording + transcript so far,
+  // attempt still saves for the parent (recording + transcript so far,
   // ungraded), but the wrap-up stays a minimal holding screen and the modal
   // closes itself — the student never sees a report card for a cancelled run.
   const [wasCancelled, setWasCancelled] = useState(false);
@@ -380,11 +380,11 @@ export default function VoiceQuiz({
   const turnRecRef = useRef<MediaRecorder | null>(null);
   const turnChunksRef = useRef<Blob[]>([]);
 
-  // The ordered audio timeline for the teacher's recording: every tutor line
+  // The ordered audio timeline for the parent's recording: every tutor line
   // (its TTS mp3) and every student answer (desktop: the recorded webm/mp4 blob;
   // iOS: the captured 16 kHz PCM), each tagged with its position in the
   // conversation. At the end we sort by `order`, decode each clip to mono 16 kHz
-  // PCM, concatenate, and encode ONE interleaved WAV — so the teacher hears the
+  // PCM, concatenate, and encode ONE interleaved WAV — so the parent hears the
   // tutor's questions and the student's answers in the order they happened.
   const segmentsRef = useRef<AudioSegment[]>([]);
 
@@ -442,7 +442,7 @@ export default function VoiceQuiz({
   const slotAudioRef = useRef<{ url: string; durationMs?: number } | null>(null);
   // Cross-resume audio (Phase 2): the in-flight background fetch of the slot's
   // flushed WAV (the earlier runs' audio), kicked off by resume(). It pushes an
-  // order:-1 "prior" segment when it lands; buildTeacherFile AWAITS it (time-
+  // order:-1 "prior" segment when it lands; buildParentFile AWAITS it (time-
   // capped) so a stitch can't silently drop the prior runs while the download
   // is still in flight. Never rejects; null when nothing is pending.
   const priorAudioFetchRef = useRef<Promise<void> | null>(null);
@@ -497,7 +497,7 @@ export default function VoiceQuiz({
     setTurns(transcriptRef.current);
   }
 
-  // Add one clip to the teacher's audio timeline (see segmentsRef).
+  // Add one clip to the parent's audio timeline (see segmentsRef).
   function pushSegment(seg: AudioSegment) {
     segmentsRef.current = [...segmentsRef.current, seg];
   }
@@ -572,7 +572,7 @@ export default function VoiceQuiz({
 
   // Best-effort: stitch the audio captured so far in THIS run and upload it to
   // the caller's stable slot-audio key (overwritten in place across pauses), so
-  // a pause that's never resumed still leaves the teacher a recording. Runs only
+  // a pause that's never resumed still leaves the parent a recording. Runs only
   // at pause points where the page is alive (a failure pause / Save for later) —
   // never on unload, which is unreliable. The stored URL carries a ?v= cache-
   // buster: the pathname is reused across flushes and the Blob CDN caches by
@@ -586,7 +586,7 @@ export default function VoiceQuiz({
       return; // nothing checkpoint-worthy → don't orphan a slot WAV with no slot
     }
     try {
-      const file = await buildTeacherFile();
+      const file = await buildParentFile();
       if (!file || file.blob.size === 0) return;
       const safeName = (user ?? "student").replace(/[^a-zA-Z0-9_-]+/g, "-").toLowerCase();
       const uploaded = await upload(
@@ -715,7 +715,7 @@ export default function VoiceQuiz({
   // Speak the tutor's line. Best-effort: if TTS fails, the line is still on
   // screen, so the quiz simply continues silently for that turn. `order` is the
   // line's position in the conversation — we drop its mp3 into the audio timeline
-  // so the teacher's recording includes the tutor's questions, in sequence.
+  // so the parent's recording includes the tutor's questions, in sequence.
   async function speak(text: string, order: number, runId: number) {
     stopTts();
     setTtsPlaying(true);
@@ -939,7 +939,7 @@ export default function VoiceQuiz({
   }
 
   // iOS: stop capturing, tear down the per-turn graph + mic, and return the
-  // answer as a 16 kHz WAV (plus the PCM, kept for the teacher's stitched file).
+  // answer as a 16 kHz WAV (plus the PCM, kept for the parent's stitched file).
   function iosStopCapture(): { blob: Blob; filename: string; pcm: Float32Array } | null {
     iosRecordingRef.current = false;
     const ctx = iosCtxRef.current;
@@ -1175,7 +1175,7 @@ export default function VoiceQuiz({
     logEvent("stop-speaking", `order=${transcriptRef.current.length} ios=${isIOS}`);
 
     // Collect this answer's clip (iOS: a WAV + its PCM from PCM capture; desktop:
-    // the recorder's webm/mp4) and drop it into the teacher's audio timeline at
+    // the recorder's webm/mp4) and drop it into the parent's audio timeline at
     // the slot this answer will occupy (right after the tutor line above it).
     const studentOrder = transcriptRef.current.length;
     let turn: { blob: Blob; filename: string } | null;
@@ -1236,7 +1236,7 @@ export default function VoiceQuiz({
       // Upload the answer clip straight to Blob, then transcribe it from there.
       // Routing the bytes through /api/quiz-transcribe hit Vercel's ~4.5MB
       // request-body limit — a long answer 413'd before the function even ran —
-      // so we use the same direct-to-Blob upload() flow as the teacher recording
+      // so we use the same direct-to-Blob upload() flow as the parent recording
       // (its token route, /api/quiz-audio, allows these per-turn paths too).
       const ext = filename.split(".").pop() || "webm";
       const contentType =
@@ -1275,7 +1275,7 @@ export default function VoiceQuiz({
       // Cancelled/ended while the transcribe was in flight — discard silently.
       if (!canContinue(runId)) return;
       if (!res.ok) {
-        // The clip recorded fine (its audio is already in the teacher's
+        // The clip recorded fine (its audio is already in the parent's
         // timeline) but the server rejected it. Pause — the clip is still in
         // hand, so Try again re-uploads and re-transcribes it.
         logEvent("transcribe:http-fail", `status=${res.status}`);
@@ -1342,13 +1342,13 @@ export default function VoiceQuiz({
 
   // ---- Teardown ------------------------------------------------------------
 
-  // The teacher's recording: the whole conversation — the tutor's questions AND
+  // The parent's recording: the whole conversation — the tutor's questions AND
   // the student's answers — stitched into ONE interleaved WAV, in the order it
   // happened. We sort the timeline by position, decode every clip (tutor mp3 +
   // desktop answer webm; iOS answers are already 16 kHz PCM) to mono 16 kHz,
   // concatenate, and encode a single seekable WAV. Best-effort: a clip that
   // won't decode is skipped rather than failing the whole recording.
-  async function buildTeacherFile(): Promise<{ blob: Blob; ext: string; durationMs: number } | null> {
+  async function buildParentFile(): Promise<{ blob: Blob; ext: string; durationMs: number } | null> {
     // A resumed quiz fetches the earlier runs' audio in the background (see
     // resume()) — wait for it, time-capped, so the stitched file doesn't
     // silently drop the prior runs mid-download. The promise never rejects; a
@@ -1385,7 +1385,7 @@ export default function VoiceQuiz({
     const merged = mergeFloat32(pcms.filter((p) => p.length));
     if (!merged.length) return null;
     // The recording's length (total talk time: tutor questions + answers). This
-    // is the same "duration" the teacher/student sees in the playback control,
+    // is the same "duration" the parent/student sees in the playback control,
     // saved as the session's durationMs and shown in the Scores table.
     const durationMs = Math.round((merged.length / WAV_RATE) * 1000);
     return { blob: encodeWav(merged, WAV_RATE), ext: "wav", durationMs };
@@ -1550,7 +1550,7 @@ export default function VoiceQuiz({
     // recorded up to the last flush — and prepend it to this run's timeline as
     // an order:-1 "prior" segment, so End/Cancel stitch ONE continuous
     // recording. Runs in the background (a slot WAV can be several MB; don't
-    // block the resume on it) — buildTeacherFile awaits this promise before
+    // block the resume on it) — buildParentFile awaits this promise before
     // stitching. Best-effort: any failure just means the recording covers this
     // run onward (Phase 1 behavior), and if this run then captures no audio of
     // its own the salvage in /api/quiz-report still preserves the slot WAV.
@@ -1671,7 +1671,7 @@ export default function VoiceQuiz({
   }
 
   // "Start over" on the chooser: archive the saved attempt server-side (it
-  // becomes an ungraded, teacher-only cancelled record — never silently
+  // becomes an ungraded, parent-only cancelled record — never silently
   // discarded), then start fresh.
   function confirmStartOver() {
     if (
@@ -1751,7 +1751,7 @@ export default function VoiceQuiz({
       timerRef.current = null;
     }
     stopMeterLoop();
-    const session = await buildTeacherFile();
+    const session = await buildParentFile();
     // The recording's length — saved as the session's duration (shown in the
     // Scores table). undefined when nothing was recorded → table shows "—".
     const durationMs = session?.durationMs;
@@ -1805,11 +1805,11 @@ export default function VoiceQuiz({
       ]);
     }
 
-    // 2. Grade + save (transcript + report card + audio link) for the teacher,
+    // 2. Grade + save (transcript + report card + audio link) for the parent,
     // and show the student their full report card. Only the terminal buttons
     // reach this save, so the record is never a partial — a quiz that hit (and
     // recovered from) a failure along the way still completed. resumeCount tells
-    // the teacher the attempt didn't run in one sitting.
+    // the parent the attempt didn't run in one sitting.
     setGradeStep("active");
     logEvent(
       "save:begin",
@@ -1855,12 +1855,12 @@ export default function VoiceQuiz({
 
   // "Cancel quiz" — stop early, before the tutor is done. The attempt is NOT
   // discarded: whatever was captured — the recording + transcript so far — is
-  // saved as an ungraded CANCELLED entry (score "—") that only the teacher sees
+  // saved as an ungraded CANCELLED entry (score "—") that only the parent sees
   // on /admin (the page filters it out of a student's own Scores list). The
   // student just confirms, sees a brief "Ending the quiz…" screen, and the
   // modal closes itself — no report card. The dialog wording is deliberately
-  // low-key (the quiz "won't count", not "is kept for the teacher"); the live
-  // screen already discloses that answers are recorded for the teacher. (While
+  // low-key (the quiz "won't count", not "is kept for the parent"); the live
+  // screen already discloses that answers are recorded for the parent. (While
   // the native dialog is open JS is paused, so an in-flight turn can't advance
   // underneath it; on OK, cancel() fences stragglers before its first await.)
   function confirmCancel() {
@@ -1881,7 +1881,7 @@ export default function VoiceQuiz({
     // advance the quiz while the in-flight recorder is closed out below.
     endingRef.current = true;
     // Cancelled mid-answer: keep what the mic captured. Stop the recorder and
-    // drop the clip into the teacher's audio timeline — untranscribed, so the
+    // drop the clip into the parent's audio timeline — untranscribed, so the
     // saved audio can run ahead of the saved transcript (fine for a cancelled
     // entry). Best-effort like all recording work.
     if (phase === "recording") {
@@ -2098,7 +2098,7 @@ export default function VoiceQuiz({
 
             {/* A saved in-progress quiz exists for this day: the student decides
                 whether to continue it or start fresh (Start over archives the
-                old attempt — teacher-visible, ungraded — and frees the slot). */}
+                old attempt — parent-visible, ungraded — and frees the slot). */}
             {phase === "chooser" && slotOffer && (
               <div>
                 <h2 className={MODAL_H2}>
@@ -2178,7 +2178,7 @@ export default function VoiceQuiz({
                   <h2 className={MODAL_H2}>AI Quiz</h2>
                 </div>
                 <p className="mt-1 text-[11px] text-stone-500">
-                  Your answers are recorded and saved for your teacher.
+                  Your answers are recorded and saved for your parent.
                 </p>
 
                 {/* The running conversation: tutor questions + your answers. */}
@@ -2368,7 +2368,7 @@ export default function VoiceQuiz({
                     leaves WITHOUT ending — the checkpointed attempt stays
                     continuable (it's offered between turns, not mid-recording).
                     Cancel is always available as the way to stop early FOR GOOD —
-                    it saves an ungraded, teacher-only "cancelled" entry that
+                    it saves an ungraded, parent-only "cancelled" entry that
                     can't be resumed (see cancel()). */}
                 <div className="mt-5 flex flex-wrap items-center gap-3 border-t-2 border-[#0a0a0a] pt-4">
                   {phase === "tutorTurn" && tutorDone && (
@@ -2479,7 +2479,7 @@ export default function VoiceQuiz({
                       )}
 
                     <p className="mt-4 text-sm text-stone-600">
-                      Saved for your teacher. If you’re not happy with your
+                      Saved for your parent. If you’re not happy with your
                       score, feel free to take the quiz again.
                     </p>
                   </div>

@@ -42,7 +42,7 @@ async function postTranscription(audioBlob: Blob, name: string): Promise<Respons
  * ~4.5MB request-body limit and was rejected with a 413 BEFORE the function even
  * ran (the per-turn key-ideas retelling can be minutes long — an uncompressed
  * iOS WAV blows past 4.5MB in ~2.3 min). Routing the bytes through Blob — the
- * same dodge the full-length teacher recording uses — sidesteps that limit. The
+ * same dodge the full-length parent recording uses — sidesteps that limit. The
  * clip is transient: we delete it once we've read it. Login-gated; the OpenAI
  * key stays server side.
  */
@@ -68,7 +68,7 @@ export async function POST(request: Request) {
   // AND it DELETES the clip when done, so the guard is deliberately narrow:
   // require the Vercel Blob host and the `quiz-sessions/[junior/]<date>/turns/`
   // prefix the client uploads to — never the bare `quiz-sessions/` prefix, so a
-  // forged URL can't make us fetch or delete a teacher recording or a saved
+  // forged URL can't make us fetch or delete a parent recording or a saved
   // session JSON. The optional `junior/` segment matches the junior track's
   // extra path level (without it, `[^/]+` allows only ONE segment, so every
   // junior clip would be rejected and the quiz would pause on answer 1).
@@ -150,7 +150,7 @@ export async function POST(request: Request) {
   } finally {
     // The per-turn clip is transient — only needed long enough to transcribe.
     // Delete it best-effort so these don't pile up in the store (the permanent
-    // teacher recording is the separately-stitched WAV built at End quiz).
+    // parent recording is the separately-stitched WAV built at End quiz).
     void del(blobUrl).catch(() => {});
   }
 }
