@@ -74,7 +74,7 @@ export type Reading = {
   title: string; // a clear, descriptive title (need not match WSJ's headline)
   articleUrl?: string; // single-article days: the WSJ article link (the "Web" link on legacy days; kept as source-of-record metadata on article-page days)
   pdfUrl?: string; // single-article days: served PDF, e.g. "/pdfs/2026-06-09.pdf" (legacy days; unused when articlePageUrl is set)
-  articlePageUrl?: string; // single-article days: served self-contained responsive HTML article page, e.g. "/articles/2026-07-22.html" — when set, the index row shows ONE "Article" button in place of the Web + PDF pair (historical days without it keep Web/PDF)
+  articlePageUrl?: string; // single-article days: served self-contained responsive HTML article page, e.g. "/articles/2026-07-22.html" — when set, the index row shows ONE "Article" button in place of the Web + PDF pair. Only for paywalled sources: an OPEN web article omits it (and pdfUrl), and the row's "Article" button then links straight to articleUrl. Legacy days with a pdfUrl keep Web/PDF
   articles?: Source[]; // multi-article days: when set, the entry bundles these (top-level articleUrl/pdfUrl unused)
   voiceQuiz?: boolean; // when true, the home-page row's action bar shows a "Voice quiz" launcher for this day (login-gated; the skill sets it)
   clubPick?: boolean; // when true, the day's article was chosen by the club's vote (see the daily vote in CLAUDE.md) — the index row shows a small CLUB PICK chip

@@ -182,22 +182,33 @@ export default function LandingIndex({
                         >
                           {single ? "Article" : `Article ${i + 1}`}
                         </a>
-                      ) : (
+                      ) : a.pdfUrl ? (
+                        // Legacy pre-article-page day: the original Web + PDF
+                        // button pair, untouched.
                         <span key={a.articleUrl} className="contents">
                           <ArticleLink href={a.articleUrl} className={btn}>
                             {single ? "Web" : `Web ${i + 1}`}
                           </ArticleLink>
-                          {a.pdfUrl && (
-                            <a
-                              href={a.pdfUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className={btn}
-                            >
-                              {single ? "PDF" : `PDF ${i + 1}`}
-                            </a>
-                          )}
+                          <a
+                            href={a.pdfUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={btn}
+                          >
+                            {single ? "PDF" : `PDF ${i + 1}`}
+                          </a>
                         </span>
+                      ) : (
+                        // Open web article (no paywall): no article page of our
+                        // own — the ARTICLE button links straight to the
+                        // original.
+                        <ArticleLink
+                          key={a.articleUrl}
+                          href={a.articleUrl}
+                          className={btn}
+                        >
+                          {single ? "Article" : `Article ${i + 1}`}
+                        </ArticleLink>
                       ),
                     )}
                     <Link href={`${base}/reading/${r.date}`} className={btn}>
