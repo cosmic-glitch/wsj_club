@@ -9,7 +9,7 @@ You are producing one day's study handout for the **Junior Reading Club**: young
 
 **This is a sharp cohort, not a remedial one.** "Kids are sharp." Aim to grow their vocabulary, general knowledge, and conceptual understanding — just calibrated a couple of grades lower than the senior club. The mechanics (article-first vocab, Feynman-style concepts, a 5-question quiz, pronunciation audio, the AI voice quiz) are identical; only the **audience calibration** and the **output paths** differ.
 
-The website is already built. Your job is **only to produce one content file** (plus its PDF, audio, and article text) and deploy. Do not hand-write HTML or touch the page components unless the user asks for a design change.
+The website is already built. Your job is **only to produce one content file** (plus its article page, audio, and article text) and deploy. Do not hand-write HTML or touch the page components unless the user asks for a design change.
 
 ## The audience calibration (this is the whole point — get it right for grades 5–7)
 
@@ -45,13 +45,13 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
 | Artifact | Junior path |
 | --- | --- |
 | Content file | `content/junior/YYYY-MM-DD.json` |
-| Served PDF | `public/pdfs/junior/YYYY-MM-DD.pdf` (multi-article: `-1.pdf`, `-2.pdf`, …) |
+| Served article page | `public/articles/junior/YYYY-MM-DD.html` (multi-article: `-1.html`, `-2.html`, …) |
 | Pronunciation audio | `public/audio/junior/YYYY-MM-DD/<slug>.mp3` (via `gen-pronunciation.mjs … --track=junior`) |
 | Article text (Blob) | `article-text/junior/YYYY-MM-DD.txt` (via `upload-article-text.mjs … --track=junior`) |
 | Handout URL | `/junior/reading/YYYY-MM-DD` |
 | Self-quiz URL | `/junior/reading/YYYY-MM-DD/quiz` |
 
-`pdfUrl` in the JSON is `"/pdfs/junior/YYYY-MM-DD.pdf"` (the served path). The `voiceQuiz`, `articleUrl`, and content-shape fields are exactly as in the senior schema.
+`articlePageUrl` in the JSON is `"/articles/junior/YYYY-MM-DD.html"` (the served path). The `voiceQuiz`, `articleUrl`, and content-shape fields are exactly as in the senior schema. (`public/pdfs/junior/` + `pdfUrl` are the legacy pre-article-page shape — don't set them on new days.)
 
 ## Daily workflow
 
@@ -59,32 +59,32 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
 
 2. **Read the article in the browser.** Identical to the senior skill — use the **Playwright** browser tools (`mcp__plugin_playwright_playwright__browser_*`), **never the `claude-in-chrome` extension** (its safety classifier blocks `wsj.com`/`economist.com`). Navigate, have the **user log in themselves** (never ask for or store a password), then read the full article: the real headline, the deck/standfirst, and the substance (main argument, key facts, jargon a middle-schooler would trip on). See `wsj-reading`'s SKILL.md step 2 for the full detail.
 
-3. **Capture the day's PDF (paywalled/sign-in articles only) → the JUNIOR path, and upload the article text.**
-   - `mkdir -p public/pdfs/junior`.
-   - Use the **exact PDF-capture `browser_run_code_unsafe` snippet from the senior `wsj-reading` skill's step 3** (the rebuild-a-clean-doc-from-the-article's-own-paragraphs-and-real-content-images approach — it preserves charts, small-caps acronyms, italics, and the drop cap, and dodges the tens-of-MB / sliced-text failure modes of printing the live page). **The only change for junior is the `OUT` path:**
+3. **Capture the day's ARTICLE PAGE (every day) → the JUNIOR paths, and upload the article text.**
+   - `mkdir -p public/articles/junior article-text/junior`.
+   - Use the **exact article-page capture `browser_run_code_unsafe` snippet from the senior `wsj-reading` skill's step 3** (the rebuild-a-clean-responsive-page-from-the-article's-own-paragraphs-and-real-content-images approach — it reflows on phones, preserves charts, small-caps acronyms, italics, and the drop cap, and writes the plain article text in the same pass). **The only changes for junior are the output paths and the back-link:**
      ```js
-     const OUT = '/Users/anuragved/code/wsj_club/public/pdfs/junior/YYYY-MM-DD.pdf'; // ← junior dir + real date
+     const OUT = '/Users/anuragved/code/wsj_club/public/articles/junior/YYYY-MM-DD.html'; // ← junior dir + real date
+     const TXT_OUT = '/Users/anuragved/code/wsj_club/article-text/junior/YYYY-MM-DD.txt'; // ← junior dir + real date
      const SOURCE_NAME = 'The Wall Street Journal'; // ← or 'The Economist'
+     const BACK = '/junior'; // ← the page's "← Reading Club" link returns to the junior index
      ```
-     Do not re-derive the snippet here — copy it from the senior skill so the two stay in lockstep. Verify it the same way (the returned `deck=/text=/small-caps=/images=/infographics=` counts; render the pages with `pdftoppm` and eyeball for sliced text + legible charts; expect ~150–500KB). **Free/open articles that need no login:** skip the PDF, omit `pdfUrl`.
-   - Set `pdfUrl: "/pdfs/junior/YYYY-MM-DD.pdf"` in the JSON. **Multi-article days:** one PDF per article at `public/pdfs/junior/YYYY-MM-DD-1.pdf`, `-2.pdf`, … (`-N` suffix), each in its own `articles[]` entry's `pdfUrl`.
-   - **Manual fallback:** the user drops a hand-saved PDF into the repo-root `PDFs/` drop-zone, then `cp "PDFs/<file>.pdf" public/pdfs/junior/YYYY-MM-DD.pdf`.
-   - **Upload the full article text for the voice quiz** (keeps the tutor able to judge the retelling against the real story):
+     Do not re-derive the snippet here — copy it from the senior skill so the two stay in lockstep. Verify it the same way (the returned `deck=/text=/small-caps=/images=/infographics=` counts; check the text file's tail for footer junk; serve `public/` locally and eyeball the page at a 390px viewport; expect ~50KB–1MB).
+   - Set `articlePageUrl: "/articles/junior/YYYY-MM-DD.html"` in the JSON (no `pdfUrl` — legacy field). **Multi-article days:** one page per article at `public/articles/junior/YYYY-MM-DD-1.html`, `-2.html`, … (`-N` suffix), each in its own `articles[]` entry's `articlePageUrl`; concatenate the per-article text files into one `article-text/junior/YYYY-MM-DD.txt`.
+   - **Manual fallback** (only if auto-capture can't work): omit `articlePageUrl` — the index falls back to the legacy Web link (and a hand-saved PDF at `public/pdfs/junior/YYYY-MM-DD.pdf` + `pdfUrl` if wanted).
+   - **Upload the full article text for the voice quiz** (keeps the tutor able to judge the retelling against the real story). The capture snippet already wrote `article-text/junior/YYYY-MM-DD.txt` (headline + deck first, then the body), so just upload:
      ```sh
-     mkdir -p article-text/junior
-     pdftotext public/pdfs/junior/YYYY-MM-DD.pdf article-text/junior/YYYY-MM-DD.txt
      node --env-file=.env.local scripts/upload-article-text.mjs YYYY-MM-DD --track=junior
      ```
-     Needs `BLOB_READ_WRITE_TOKEN` in `.env.local`. Best-effort — the quiz degrades to handout-only if skipped. **Always put the headline AND the deck/standfirst at the top** before the body (the standfirst often carries a key fact found nowhere else). **Multi-article:** `pdftotext` each PDF and concatenate into one `article-text/junior/YYYY-MM-DD.txt` before uploading. **Open/free articles:** save the text by hand to `article-text/junior/YYYY-MM-DD.txt`.
+     Needs `BLOB_READ_WRITE_TOKEN` in `.env.local`. Best-effort — the quiz degrades to handout-only if skipped. **If the text file was written by hand** (fallback days), **always put the headline AND the deck/standfirst at the top** before the body (the standfirst often carries a key fact found nowhere else).
 
 4. **Propose the words and concepts, and get the user's sign-off before generating anything.** Required manual checkpoint — **do not write the JSON or generate the quiz until the user approves.** Based on your read:
    - Pick candidate **3 vocab words** and the **2 most important concepts** per the grades 5–7 calibration above (or fewer/zero concepts if the article is vocab-rich but concept-thin — see the calibration). It helps to shortlist 3–4 concept candidates and say which two you'd keep and why, so the user can trade one out.
    - Present them as a short, skimmable proposal: each word with its article quote + a one-line "why it's worth teaching (at this level)"; each concept with a one-line description + why it's broadly useful and how you'd make it concrete.
    - **Discuss and revise** until the user explicitly gives the go-ahead. This is the quality gate — fix the selection *before* the expensive generation.
 
-5. **Draft the handout content.** Using the approved list, write the full cards (vocab article-first: `articleQuote` → `inContext` → `meaning` → `examples`, plus `pronunciation` + `partOfSpeech`; concepts: `articleQuote` → a single, concrete, Feynman-style `meaning` — no `inContext`) and the 5-question quiz, all at the grades 5–7 level. Pick a clear, descriptive `title`. **Do not invent a subtitle** — use the article's own headline (or a plainer paraphrase); only include a subtitle if the original actually has one. Credit a notable named essay author with `by <Author Name>`; use the headline alone for routine reportage. The junior handout is the same minimal shape as senior (just the title, then words + concepts, then the self-quiz CTA). **Multi-article days:** set `articles: [{ title, articleUrl, pdfUrl }, …]` (junior PDF paths) instead of top-level `articleUrl`/`pdfUrl`, with one combined `vocab`/`concepts`/`quiz` and an umbrella `title`.
+5. **Draft the handout content.** Using the approved list, write the full cards (vocab article-first: `articleQuote` → `inContext` → `meaning` → `examples`, plus `pronunciation` + `partOfSpeech`; concepts: `articleQuote` → a single, concrete, Feynman-style `meaning` — no `inContext`) and the 5-question quiz, all at the grades 5–7 level. Pick a clear, descriptive `title`. **Do not invent a subtitle** — use the article's own headline (or a plainer paraphrase); only include a subtitle if the original actually has one. Credit a notable named essay author with `by <Author Name>`; use the headline alone for routine reportage. The junior handout is the same minimal shape as senior (just the title, then words + concepts, then the self-quiz CTA). **Multi-article days:** set `articles: [{ title, articleUrl, articlePageUrl }, …]` (junior article-page paths) instead of top-level `articleUrl`/`articlePageUrl`, with one combined `vocab`/`concepts`/`quiz` and an umbrella `title`.
 
-6. **Write `content/junior/YYYY-MM-DD.json`** following the schema below (it's the same `Reading` schema as senior — set `voiceQuiz: true`; include `pdfUrl` if you placed a PDF). `mkdir -p content/junior` first. Validate it's well-formed JSON.
+6. **Write `content/junior/YYYY-MM-DD.json`** following the schema below (it's the same `Reading` schema as senior — set `voiceQuiz: true`; include the `articlePageUrl` from step 3). `mkdir -p content/junior` first. Validate it's well-formed JSON.
    - **Vote day → `clubPick: true`.** If the day's article was chosen by the junior club vote (the wsj-open-vote/wsj-check-vote flow with `--track=junior` — check with `node --env-file=.env.local scripts/check-vote.mjs YYYY-MM-DD --track=junior`, or just: a junior poll exists for this date), set `"clubPick": true` so the index row carries the CLUB PICK chip. Publishing this reading is also what **closes** that poll — the /junior vote row disappears once the deploy lands, no extra step. On a non-vote day, omit the field.
    - **Generate pronunciation audio** for each vocab word + concept name → the junior audio dir:
      ```sh
@@ -94,18 +94,18 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
 
 7. **Build to verify:** `npm run build`. It must succeed (a break is almost always malformed JSON).
 
-8. **Commit, push, and share the links.** Stage the junior content, PDF, and audio — `git add content/junior/YYYY-MM-DD.json public/pdfs/junior/YYYY-MM-DD.pdf public/audio/junior/YYYY-MM-DD` (plus any other changed files) — commit, and `git push origin main`. **Pushing is shipping** (auto-deploys to `wsjclub.vercel.app`). Then give the user the junior links: `https://wsjclub.vercel.app/junior/reading/YYYY-MM-DD` (handout) and `https://wsjclub.vercel.app/junior/reading/YYYY-MM-DD/quiz` (quiz).
+8. **Commit, push, and share the links.** Stage the junior content, article page, and audio — `git add content/junior/YYYY-MM-DD.json public/articles/junior/YYYY-MM-DD.html public/audio/junior/YYYY-MM-DD` (plus any other changed files) — commit, and `git push origin main`. **Pushing is shipping** (auto-deploys to `wsjclub.vercel.app`). Then give the user the junior links: `https://wsjclub.vercel.app/junior/reading/YYYY-MM-DD` (handout) and `https://wsjclub.vercel.app/junior/reading/YYYY-MM-DD/quiz` (quiz).
 
 ## Content file schema
 
-Same `Reading` schema as the senior track (backed by `lib/content.ts`) — the only difference is the file lives at `content/junior/YYYY-MM-DD.json` and its `pdfUrl` points under `/pdfs/junior/`. The `track` is implied by the file's location, so it is **NOT** a field in the JSON.
+Same `Reading` schema as the senior track (backed by `lib/content.ts`) — the only difference is the file lives at `content/junior/YYYY-MM-DD.json` and its `articlePageUrl` points under `/articles/junior/`. The `track` is implied by the file's location, so it is **NOT** a field in the JSON.
 
 ```json
 {
   "date": "2026-07-16",
   "title": "A clear, descriptive title",
   "articleUrl": "https://www.wsj.com/...the real article link...",
-  "pdfUrl": "/pdfs/junior/2026-07-16.pdf",
+  "articlePageUrl": "/articles/junior/2026-07-16.html",
   "voiceQuiz": true,
   "source": "The Wall Street Journal",
   "vocab": [
@@ -142,12 +142,12 @@ Same `Reading` schema as the senior track (backed by `lib/content.ts`) — the o
 
 Field notes:
 - `voiceQuiz`: set `true` on every new junior day (turns on the AI oral quiz; pair with the article-text upload in step 3).
-- `pdfUrl` is the served path `"/pdfs/junior/YYYY-MM-DD.pdf"` (omit if there's no PDF).
+- `articlePageUrl` is the served path `"/articles/junior/YYYY-MM-DD.html"`. Keep `articleUrl` too (the original link). `pdfUrl` is legacy — don't set it on new days.
 - `answerIndex` is **0-based**; double-check it.
 - `vocab` has **exactly 3 words** by default (a multi-article day may run ~4); each `examples` array has **exactly 2** sentences. `concepts` is **exactly 2** by default (the user can override), or fewer/`[]` for a concept-thin or vocabulary-only day.
 - `concepts` may be empty (`[]`); the handout omits the Concepts section and the voice quiz skips its concepts stage.
 - `clubPick`: set `"clubPick": true` **only when the day's article won the junior club vote** (see step 6) — it renders the CLUB PICK chip on the /junior index row. Omit on normal days.
-- **Multi-article days:** replace top-level `articleUrl`/`pdfUrl` with an `articles` array of `{ title, articleUrl, pdfUrl }` (junior PDF paths), keeping one combined `vocab`/`concepts`/`quiz`.
+- **Multi-article days:** replace top-level `articleUrl`/`articlePageUrl` with an `articles` array of `{ title, articleUrl, articlePageUrl }` (junior article-page paths), keeping one combined `vocab`/`concepts`/`quiz`.
 
 ## Deployment
 

@@ -118,12 +118,20 @@ export default function LandingIndex({
               // are demoted back to a normal row via sibling-selector variants.
               const newest = index === 0;
 
-              // One set of links per source. Single-article days have one
-              // ("WEB"/"PDF"); multi-article days number each pair.
+              // One set of links per source. A source with an articlePageUrl
+              // (our served responsive HTML page — every new day) gets a single
+              // "ARTICLE" button; historical sources without one keep the
+              // legacy "WEB"/"PDF" pair. Multi-article days number each set.
               const sources =
                 r.articles && r.articles.length > 0
                   ? r.articles
-                  : [{ articleUrl: r.articleUrl ?? "#", pdfUrl: r.pdfUrl }];
+                  : [
+                      {
+                        articleUrl: r.articleUrl ?? "#",
+                        pdfUrl: r.pdfUrl,
+                        articlePageUrl: r.articlePageUrl,
+                      },
+                    ];
               const single = !(r.articles && r.articles.length > 0);
 
               return (
@@ -162,23 +170,36 @@ export default function LandingIndex({
                   </span>
 
                   <span className="flex flex-wrap gap-[6px] min-[681px]:flex-nowrap">
-                    {sources.map((a, i) => (
-                      <span key={a.articleUrl} className="contents">
-                        <ArticleLink href={a.articleUrl} className={btn}>
-                          {single ? "Web" : `Web ${i + 1}`}
-                        </ArticleLink>
-                        {a.pdfUrl && (
-                          <a
-                            href={a.pdfUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={btn}
-                          >
-                            {single ? "PDF" : `PDF ${i + 1}`}
-                          </a>
-                        )}
-                      </span>
-                    ))}
+                    {sources.map((a, i) =>
+                      a.articlePageUrl ? (
+                        // Our own responsive article page — reflows on phones
+                        // (the PDF never did), so it replaces the Web + PDF
+                        // pair with one button.
+                        <a
+                          key={a.articleUrl}
+                          href={a.articlePageUrl}
+                          className={btn}
+                        >
+                          {single ? "Article" : `Article ${i + 1}`}
+                        </a>
+                      ) : (
+                        <span key={a.articleUrl} className="contents">
+                          <ArticleLink href={a.articleUrl} className={btn}>
+                            {single ? "Web" : `Web ${i + 1}`}
+                          </ArticleLink>
+                          {a.pdfUrl && (
+                            <a
+                              href={a.pdfUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={btn}
+                            >
+                              {single ? "PDF" : `PDF ${i + 1}`}
+                            </a>
+                          )}
+                        </span>
+                      ),
+                    )}
                     <Link href={`${base}/reading/${r.date}`} className={btn}>
                       Handout
                     </Link>

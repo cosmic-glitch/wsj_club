@@ -40,13 +40,15 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - WSJ requires login. Tell the user: *"I've opened the article — please log into WSJ in the browser window, then tell me when you're in."* Wait for them. Do **not** ask for or store their password; they log in themselves.
    - Once past the paywall, read the full article (`browser_snapshot`, or scroll and read). Capture: the real headline, the byline/section if useful, and the substance — main argument, key facts, and any jargon a teenager would trip on.
 
-3. **Capture the day's PDF automatically — but only for sign-in/paywalled articles.** The PDF exists so the club can still read paywalled WSJ/Economist pieces. **If the article is on a freely open link that needs no login** (e.g. a public essay, an `archive.ph` capture, or an open-access page), **skip the PDF entirely** — don't capture one, omit `pdfUrl` from the JSON, and the index will show just the Web link. Only do the capture below when the source sits behind a sign-in/paywall. With the article open and the user logged in (from step 2), **don't print the live page** — instead **rebuild a clean document from the article's own paragraphs *and its real content images* and print that**. The rebuilt doc keeps the article's **charts, graphs, and photos** (which often carry the substance — an Economist "(see chart)" data viz, a labeled diagram) while dropping the page chrome. **Why rebuild instead of printing the live page:** running `page.pdf()` on the live DOM goes wrong three ways: (a) Chromium's *print* emulation picks the **largest `srcset` candidate** for every `<img>` (WSJ photos go up to ~5000px); (b) it leaves behind **empty ad placeholders and `<video>`/poster images** that a plain `document.images` strip doesn't catch — together these bloat a short article to **tens of MB across a dozen-plus mostly-blank pages**; and (c) those tall, unbreakable blocks force awkward page breaks that **slice lines of text in half at page boundaries**. The rebuild fixes all three: it takes the article's `<p>`/heading **text** *plus* only its genuine content images — each fetched at a **sensible ~1000px width (never the 5000px monster), inlined as a `data:` URI, and capped in height so it fits one page** — into a fresh, plainly-styled doc. That lands at **~150–500KB** (a few hundred KB per image, not tens of MB), **paginates line-by-line with no slicing** (images get `break-inside:avoid`), and **keeps the charts the club needs**. **Earlier this skill stripped images entirely (text-only); that dropped critical charts/graphs, so it now includes them.** **It also preserves the original inline typography** — small-caps acronyms (the Economist sets "AI", "IBM", "GPT" in `<small>` small caps), italics, bold, and the drop-cap opening. This matters because the Economist renders those small caps via `text-transform:lowercase` + `font-variant-caps:small-caps`, and `innerText` *applies* the transform, so a plain-text sweep would silently lowercase every acronym ("AI"→"ai") and split the drop cap ("T en years"). The snippet instead reads the **raw text nodes** (which keep the real "AI") and re-wraps `<small>`/`<em>`/`<strong>` with matching print CSS — using `font-variant-caps` (a font feature), **not** `text-transform`, so the PDF's text layer still holds real uppercase and `pdftotext` extracts "AI" for the voice-quiz article text. **One caveat for The Economist:** its maps and data charts are usually **not** `<figure><img>` at all but **`infographics.economist.com` iframe embeds** whose labels/legend are a separate HTML overlay on top of a base "artboard" PNG — so a plain image fetch would drop **every label** (a labels-less map). The snippet's **step 0** handles these by opening each infographic in a throwaway tab and screenshotting the **rendered** widget (base + labels composited, zoomed 2× for resolution), then splicing it into the reading flow. Only `public/` is served by Next, so the PDF must end up at `public/pdfs/YYYY-MM-DD.pdf` and is referenced as `"/pdfs/YYYY-MM-DD.pdf"` in the JSON's `pdfUrl`.
-   - Make the folder: `mkdir -p public/pdfs`.
-   - With the article page **already open** (loaded past the paywall — the snippet leaves the article tab in place; it opens a **throwaway tab** only to screenshot any Economist infographic embeds, then closes it), use `browser_run_code_unsafe` — **substitute the real date** in `OUT` and the real publication in `SOURCE_NAME`:
+3. **Capture the day's ARTICLE PAGE (the served, phone-friendly copy) — every day.** Each day publishes a **self-contained responsive HTML article page** at `public/articles/YYYY-MM-DD.html`, referenced as `"/articles/YYYY-MM-DD.html"` in the JSON's `articlePageUrl` — the index then shows **one "ARTICLE" button** for the day (in place of the old Web + PDF pair; historical days without `articlePageUrl` keep their legacy Web/PDF buttons, and `public/pdfs/` is now legacy-only — **don't capture PDFs for new days**). The page **reflows to the reader's screen width**, which is the whole point: the old PDFs rendered phone text microscopically because a PDF's lines never re-wrap. Capture it for **every** source, paywalled or free — one consistent button, and the club's copy survives link rot. With the article open and the user logged in (from step 2), **rebuild a clean document from the article's own paragraphs *and its real content images***. The rebuilt page keeps the article's **charts, graphs, and photos** (which often carry the substance — an Economist "(see chart)" data viz, a labeled diagram) while dropping the page chrome: it takes the article's `<p>`/heading **text** *plus* only its genuine content images — each fetched at a **sensible ~1000px width (never the 5000px `srcset` monster), inlined as a `data:` URI** so the file is fully self-contained (typically **~50KB–1MB**). **It preserves the original inline typography** — small-caps acronyms (the Economist sets "AI", "IBM", "GPT" in `<small>` small caps), italics, bold, and the drop-cap opening. This matters because the Economist renders those small caps via `text-transform:lowercase` + `font-variant-caps:small-caps`, and `innerText` *applies* the transform, so a plain-text sweep would silently lowercase every acronym ("AI"→"ai") and split the drop cap ("T en years"). The snippet instead reads the **raw text nodes** (which keep the real "AI") and re-wraps `<small>`/`<em>`/`<strong>` with matching CSS — using `font-variant-caps` (a font feature), **not** `text-transform`, so the page's text (and the extracted article text) still holds real uppercase "AI". **One caveat for The Economist:** its maps and data charts are usually **not** `<figure><img>` at all but **`infographics.economist.com` iframe embeds** whose labels/legend are a separate HTML overlay on top of a base "artboard" PNG — so a plain image fetch would drop **every label** (a labels-less map). The snippet's **step 0** handles these by opening each infographic in a throwaway tab and screenshotting the **rendered** widget (base + labels composited, zoomed 2× for resolution), then splicing it into the reading flow. The snippet **also writes the day's plain article text** to `article-text/YYYY-MM-DD.txt` in the same pass (headline + deck first, then the body — the voice-quiz reference; there is no PDF to `pdftotext` anymore), so after it runs you only upload that file to Blob.
+   - Make the folders: `mkdir -p public/articles article-text`.
+   - With the article page **already open** (loaded past the paywall — the snippet leaves the article tab in place; it opens **throwaway tabs** only to screenshot any Economist infographic embeds and to save the output files, then closes them), use `browser_run_code_unsafe` — **substitute the real date** in `OUT` and `TXT_OUT`, the real publication in `SOURCE_NAME`, and keep `BACK = '/'` (senior). The snippet's sandbox has **no `fs`**, so it saves each file via Playwright's download event (a throwaway tab downloads the string as a Blob and `download.saveAs()` writes it to the repo path):
      ```js
      async (page) => {
-       const OUT = '/Users/anuragved/code/wsj_club/public/pdfs/YYYY-MM-DD.pdf'; // ← real date
+       const OUT = '/Users/anuragved/code/wsj_club/public/articles/YYYY-MM-DD.html'; // ← real date
+       const TXT_OUT = '/Users/anuragved/code/wsj_club/article-text/YYYY-MM-DD.txt'; // ← real date (voice-quiz text)
        const SOURCE_NAME = 'The Economist'; // ← or 'The Wall Street Journal'
+       const BACK = '/'; // ← '/junior' for a junior-track day
        // 0) ECONOMIST INFOGRAPHIC MAPS/CHARTS are embedded as `infographics.economist.com`
        //    IFRAMES (ai2html widgets), NOT as <figure><img>, so the figure walk below misses
        //    them. And the widget's artboard PNG is only the BASE art — its labels + legend are
@@ -94,13 +96,13 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          // <small>AI</small> — the DOM text is real uppercase "AI", but its CSS
          // (text-transform:lowercase + font-variant-caps:small-caps) RENDERS it as
          // small capitals. `innerText` APPLIES that text-transform and returns "ai"
-         // — so the old text-only path lowercased every acronym (AI→ai, IBM→ibm) and
+         // — so a text-only path would lowercase every acronym (AI→ai, IBM→ibm) and
          // split the drop-cap opening ("T"+"EN YEARS" → "T\nen years"). Fix: walk the
          // RAW text nodes (nodeValue keeps "AI") and re-wrap the inline tags we care
-         // about, then re-apply small-caps / italics / bold via the print CSS below.
+         // about, then re-apply small-caps / italics / bold via the page CSS below.
          // We keep real uppercase chars + font-variant-caps (NOT text-transform), so
-         // `pdftotext` still extracts "AI" for the voice-quiz article text. Links and
-         // other unknown wrappers are unwrapped to plain text.
+         // the plain-text extraction still yields "AI" for the voice-quiz article
+         // text. Links and other unknown wrappers are unwrapped to plain text.
          const INLINE = { EM:'em', I:'em', CITE:'em', STRONG:'strong', B:'strong', SMALL:'small', ABBR:'small', SUP:'sup', SUB:'sub' };
          const inlineHtml = (node) => {
            let out = '';
@@ -129,8 +131,8 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          if (deckText && (deckText === title || deckText.length > 320)) { deckText = ''; deckHtml = ''; } // guard: don't grab a body paragraph
          // STOP marks the end of the article body. Breaking here is what keeps the
          // footer's "more from this section" thumbnails (and the espresso/promo
-         // images that sit just after the body) OUT of the PDF.
-         const STOP = /^(This article appeared in|Discover stories from this section|Sign up to|Stay on top of|Get exclusive analysis)\b/i;
+         // images that sit just after the body) OUT of the page.
+         const STOP = /^(This article appeared in|Discover stories from this section|Sign up to|Stay on top of|Get exclusive analysis|Curious about the world|Explore more)\b/i;
          const SKIP = /^(Save|Share|Listen to this story|Video:|Delivered to your inbox|0:00|Advertisement)\b/i;
          const JUNK_SRC = /\/newsletters\/|\/ident|\bsponsor|\badvert|\.svg(\?|$)/i; // logos, idents, ad pixels
          // Pick a sensible-resolution image (never the 5000px monster, never a tiny
@@ -161,19 +163,26 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
              const key = (url.match(/images\/[^?]+|[^/?]+\.(?:jpe?g|png|webp|gif)/i) || [url])[0];
              if (seen.has(key)) continue; seen.add(key);        // dedupe (some imgs repeat at sizes)
              const capEl = n.querySelector('figcaption');
-             const caption = (capEl ? capEl.textContent : (img.alt || '')).replace(/\s+/g, ' ').trim();
+             // A figcaption often holds caption + photo credit as separate child
+             // elements ("Silent flight" + "Photograph: Getty") — textContent glues
+             // them ("flightPhotograph"), so join multi-child captions with a dash.
+             const caption = (capEl
+               ? (capEl.children.length > 1
+                   ? [...capEl.children].map(e => e.textContent.trim()).filter(Boolean).join(' — ')
+                   : capEl.textContent)
+               : (img.alt || '')).replace(/\s+/g, ' ').trim();
              if (/^listen to this story/i.test(caption)) continue;
              blocks.push({ type: 'img', url, caption });
              continue;
            }
-           const t = n.textContent.replace(/\s+/g, ' ').trim();   // raw text — for the filters below
+           const t = n.textContent.replace(/\s+/g, ' ').trim();   // raw text (textContent keeps "AI") — for the filters + the plain-text file
            if (!t || t === deckText || SKIP.test(t) || /your browser does not support/i.test(t)) continue;
            if (STOP.test(t)) break;
            if (/\bmin read\b/i.test(t) && t.length < 60) continue;  // dateline
            const html = inlineHtml(n).replace(/\s+/g, ' ').trim();  // formatted text — small-caps/italics kept
            if (!html) continue;
            const isP = n.tagName.toLowerCase() === 'p';
-           blocks.push({ type: 'text', tag: isP ? 'p' : 'h2', html, lead: isP && firstText }); // lead = first body para → drop cap
+           blocks.push({ type: 'text', tag: isP ? 'p' : 'h2', html, text: t, lead: isP && firstText }); // lead = first body para → drop cap
            if (isP) firstText = false;
          }
          return { title, deckText, deckHtml, blocks };
@@ -188,7 +197,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
        }
        // 2) Fetch each kept image through the *authenticated browser context*
        //    (page.request shares cookies and is not subject to CORS) and inline it
-       //    as a data: URI, so the printed doc is fully self-contained. Skip blocks that
+       //    as a data: URI, so the page is fully self-contained. Skip blocks that
        //    already carry a dataUri — those are the infographics we just screenshotted.
        for (const b of data.blocks) {
          if (b.type !== 'img' || b.dataUri) continue;
@@ -201,58 +210,97 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
            b.dataUri = `data:${ct};base64,${buf.toString('base64')}`;
          } catch { b.skip = true; }
        }
-       // 3) Render text + images into a clean, plainly-styled doc and print THAT.
-       //    Text blocks already carry sanitized inline HTML (small-caps/italics/bold
-       //    preserved, from inlineHtml); captions are plain text so still get esc()'d.
+       // 3) Render text + images into a self-contained RESPONSIVE reading page.
+       //    This is the file the club actually reads (the index's ARTICLE button) —
+       //    unlike the old PDF it reflows to the phone's width, so text is never
+       //    tiny. Text blocks already carry sanitized inline HTML (small-caps/
+       //    italics/bold preserved, from inlineHtml); captions are plain text so
+       //    still get esc()'d.
        const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
        const deckHtml = data.deckHtml ? `<p class="dek">${data.deckHtml}</p>` : '';
        const body = data.blocks.map(b => {
          if (b.type === 'img') {
            if (b.skip || !b.dataUri) return '';
            const cap = b.caption ? `<figcaption>${esc(b.caption)}</figcaption>` : '';
-           return `<figure><img src="${b.dataUri}">${cap}</figure>`;
+           return `<figure><img src="${b.dataUri}" alt="">${cap}</figure>`;
          }
          return b.tag === 'p' ? `<p${b.lead ? ' class="lead"' : ''}>${b.html}</p>` : `<h2>${b.html}</h2>`;
        }).join('\n');
-       const html = `<!doctype html><html><head><meta charset="utf-8"><style>
-         html,body{margin:0;padding:0}
-         body{font-family:Georgia,'Times New Roman',serif;font-size:12pt;line-height:1.5;color:#111}
-         h1{font-size:20pt;line-height:1.25;margin:0 0 .25em}
-         .dek{font-size:13pt;font-style:italic;color:#333;margin:.1em 0 .6em}
-         .src{color:#555;font-size:10pt;margin:0 0 1.2em}
-         h2{font-size:13pt;margin:1.3em 0 .35em;break-after:avoid}
-         p{margin:0 0 .8em;orphans:2;widows:2}
-         small{font-size:.92em;font-variant-caps:all-small-caps;letter-spacing:.02em} /* acronyms (AI, IBM, GPT) as small caps — real uppercase chars kept, so pdftotext still reads "AI" */
-         em,i{font-style:italic}
-         strong,b{font-weight:700}
-         .lead::first-letter{font-size:3.1em;font-weight:700;line-height:.82;float:left;padding:.02em .09em 0 0} /* Economist-style drop cap on the first paragraph */
-         figure{margin:1.1em 0;break-inside:avoid;text-align:center}      /* keep image+caption together */
-         figure img{max-width:100%;max-height:7.5in;height:auto;display:block;margin:0 auto} /* fit one page */
-         figcaption{font-size:9.5pt;color:#666;margin-top:.3em;font-style:italic;text-align:left}
-       </style></head><body><h1>${esc(data.title)}</h1>${deckHtml}<div class="src">${SOURCE_NAME}</div>${body}</body></html>`;
-       await page.setContent(html, { waitUntil: 'load' });
-       await page.pdf({ path: OUT, format: 'Letter', printBackground: false,
-         margin: { top: '0.6in', bottom: '0.6in', left: '0.7in', right: '0.7in' } });
+       const html = `<!doctype html>
+     <html lang="en"><head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="robots" content="noindex">
+     <title>${esc(data.title)}</title>
+     <style>
+       html{-webkit-text-size-adjust:100%}
+       body{margin:0;background:#fff;color:#111;font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.6}
+       main{max-width:40rem;margin:0 auto;padding:20px 18px 70px}
+       .club{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#555;text-decoration:none;border-bottom:2px solid #0a0a0a;padding-bottom:2px;margin-bottom:16px}
+       h1{font-size:clamp(26px,6.5vw,34px);line-height:1.2;margin:.5em 0 .3em}
+       .dek{font-size:19px;font-style:italic;color:#333;margin:0 0 .6em}
+       .src{color:#555;font-size:13px;padding-bottom:14px;border-bottom:1px solid #ddd;margin-bottom:22px}
+       h2{font-size:21px;line-height:1.3;margin:1.5em 0 .5em}
+       p{margin:0 0 1em}
+       small{font-size:.92em;font-variant-caps:all-small-caps;letter-spacing:.02em} /* acronyms (AI, IBM, GPT) as small caps — real uppercase chars kept */
+       em,i{font-style:italic}
+       strong,b{font-weight:700}
+       .lead::first-letter{font-size:3.1em;font-weight:700;line-height:.82;float:left;padding:.04em .09em 0 0} /* Economist-style drop cap */
+       figure{margin:1.4em 0;text-align:center}
+       figure img{max-width:100%;height:auto}
+       figcaption{font-size:13px;color:#666;margin-top:.4em;font-style:italic;text-align:left}
+     </style>
+     </head><body><main>
+     <a class="club" href="${BACK}">&larr; Reading Club</a>
+     <h1>${esc(data.title)}</h1>
+     ${deckHtml}
+     <div class="src">${SOURCE_NAME}</div>
+     ${body}
+     </main></body></html>`;
+       // The plain text for the voice quiz — headline + deck first (the standfirst
+       // often carries key facts found nowhere in the body), then the body text.
+       const txt = [data.title, data.deckText, ...data.blocks.filter(b => b.type === 'text').map(b => b.text)]
+         .filter(Boolean).join('\n\n') + '\n';
+       // 4) Write both files. The snippet sandbox has no fs, so save via Playwright's
+       //    download event: a throwaway tab downloads each string as a Blob and
+       //    download.saveAs() writes it to the repo path.
+       const saveString = async (content, mime, path) => {
+         const tab = await page.context().newPage();
+         try {
+           await tab.setContent('<html><body></body></html>');
+           const [download] = await Promise.all([
+             tab.waitForEvent('download', { timeout: 15000 }),
+             tab.evaluate(([c, m]) => {
+               const a = document.createElement('a');
+               a.href = URL.createObjectURL(new Blob([c], { type: m }));
+               a.download = 'out';
+               document.body.appendChild(a);
+               a.click();
+             }, [content, mime]),
+           ]);
+           await download.saveAs(path);
+         } finally { await tab.close(); }
+       };
+       await saveString(html, 'text/html', OUT);
+       await saveString(txt, 'text/plain', TXT_OUT);
        const imgs = data.blocks.filter(b => b.type === 'img' && b.dataUri && !b.skip);
-       const txt = data.blocks.filter(b => b.type === 'text').length;
-       return 'wrote ' + OUT + ' | deck=' + (data.deckHtml ? 'yes' : 'no') + ' | text=' + txt
+       const txtBlocks = data.blocks.filter(b => b.type === 'text').length;
+       return 'wrote ' + OUT + ' + ' + TXT_OUT + ' | deck=' + (data.deckHtml ? 'yes' : 'no') + ' | text=' + txtBlocks
          + ' | small-caps=' + (body.match(/<small>/g) || []).length
          + ' | images=' + imgs.length + ' [' + imgs.filter(b => b.url).map(b => (b.url.match(/images\/([^?/]+)/) || [, '?'])[1]).join(', ') + ']'
          + ' | infographics=' + infographics.length;
      }
      ```
-     (Set `SOURCE_NAME` at the top = `The Wall Street Journal` or `The Economist`.) `page.setContent` *replaces* the live page with the clean doc before printing — that's intended.
-   - **Verify it:** the snippet returns `deck=yes|no` (was the standfirst captured?), a `text=` paragraph count, a **`small-caps=N`** count (acronyms preserved as small caps — expect `N≥1` on any Economist article, which sets AI/IBM/GPT in `<small>`; `0` there means the typography walk missed them), an `images=N [slugs]` list, and an **`infographics=N`** count (Economist iframe maps/charts captured separately in step 0). **Confirm acronym casing survived** into the extracted text — `grep -oE "\\b(AI|ai|IBM|ibm)\\b" article-text/YYYY-MM-DD.txt | sort | uniq -c` should show **uppercase** AI/IBM, not lowercase; lowercase means the `font-variant-caps`/raw-text-node path regressed to `innerText`. Expect `text` **roughly one per paragraph** (≈20–40 for a feature; under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome — re-check login/selectors), and `images` to roughly match the **real `<figure>` charts/photos** in the body (often 1–4; **`images=0` on an article you know has a chart means the image step failed** — usually a paywall/login issue or the figure markup differs, so don't ship it without checking). **On an Economist day with a map or data chart, confirm `infographics≥1`** — and when you eyeball the pages (below), check the map shows **with its labels and legend**; a labels-less map means the widget didn't render (re-run) and a bare-PNG fetch would have that failure mode. For an obituary or feature whose subtitle states a key fact (death date, age, who-did-what), confirm `deck=yes`; if it's `no`, the standfirst didn't match the selectors — grab it from `browser_snapshot` and prepend it to the text by hand. Then `ls -la public/pdfs/YYYY-MM-DD.pdf` (expect **~150–500KB and a few pages** now that images are embedded; **tens of MB means the image step grabbed something huge** — re-check) and `file public/pdfs/YYYY-MM-DD.pdf` (expect `PDF document`). **Always render the pages and eyeball them** — both that text isn't sliced at page breaks AND that the charts/photos actually appear and the charts are legible: `pdftoppm -png -r 90 public/pdfs/YYYY-MM-DD.pdf /tmp/pg` then view the `/tmp/pg-*.png` pages. If `text=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
-   - Set `pdfUrl: "/pdfs/YYYY-MM-DD.pdf"` in the JSON. (To skip the PDF entirely, omit `pdfUrl` — the page then shows only the Web link.)
-   - **Multi-article days** (the `articles[]` shape — see step 5): capture **one PDF per article**. `browser_navigate` to each article in turn, then run the snippet writing to `public/pdfs/YYYY-MM-DD-1.pdf`, `-2.pdf`, … (note the `-N` suffix), and put each path in that article's own `pdfUrl` inside `articles[]` — there is no top-level `pdfUrl`.
-   - **Manual fallback** (only if auto-capture looks wrong): the user saves the article as a PDF by hand into the `PDFs/` drop-zone at the repo root (gitignored, raw WSJ filename), and you copy it over: `cp "PDFs/<that file>.pdf" public/pdfs/YYYY-MM-DD.pdf`. The `public/pdfs/` copy is what gets committed and deployed.
-   - **Upload the full article text (for the voice quiz).** The home-page **Voice quiz** (`voiceQuiz: true`, see step 6) reads much better when the tutor has the *whole* article, not just the handout — it then judges the student's from-memory retelling against the real story. Once the PDF is captured, extract its text and upload it to **Vercel Blob** (we keep the full text **out of git** — the hard rule is never republish article text — so Blob is its home):
+     (Set `SOURCE_NAME` at the top = `The Wall Street Journal` or `The Economist`.) The live article tab is left in place, so a re-run (after fixing a filter, say) needs no re-navigation.
+   - **Verify it:** the snippet returns `deck=yes|no` (was the standfirst captured?), a `text=` paragraph count, a **`small-caps=N`** count (acronyms preserved as small caps — expect `N≥1` on any Economist article, which sets AI/IBM/GPT in `<small>`; `0` there means the typography walk missed them), an `images=N [slugs]` list, and an **`infographics=N`** count (Economist iframe maps/charts captured separately in step 0). **Confirm acronym casing survived** into the extracted text — `grep -oE "\\b(AI|ai|IBM|ibm)\\b" article-text/YYYY-MM-DD.txt | sort | uniq -c` should show **uppercase** AI/IBM, not lowercase; lowercase means the `font-variant-caps`/raw-text-node path regressed to `innerText`. Expect `text` **roughly one per paragraph** (≈12–40 for a feature; under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome — re-check login/selectors), and `images` to roughly match the **real `<figure>` charts/photos** in the body (often 1–4; **`images=0` on an article you know has a chart means the image step failed** — usually a paywall/login issue or the figure markup differs, so don't ship it without checking). **On an Economist day with a map or data chart, confirm `infographics≥1`** — and when you eyeball the page (below), check the map shows **with its labels and legend**; a labels-less map means the widget didn't render (re-run) and a bare-PNG fetch would have that failure mode. For an obituary or feature whose subtitle states a key fact (death date, age, who-did-what), confirm `deck=yes`; if it's `no`, the standfirst didn't match the selectors — grab it from `browser_snapshot` and prepend it to the text by hand. **Check the article's real ending survived AND no footer junk trailed in** — `tail -c 300 article-text/YYYY-MM-DD.txt` should end on the article's actual closing sentence (Economist pieces end with `■`), not a newsletter promo; a promo tail means the page grew a new footer block the `STOP` regex doesn't know — add its opening phrase to `STOP` and re-run. Then `ls -la public/articles/YYYY-MM-DD.html` (expect **~50KB–1MB** with images inlined; **several MB means the image step grabbed something huge** — re-check). **Always render the page and eyeball it at a phone width** — that the text reflows full-width and the charts/photos appear and are legible. `file://` is blocked in the Playwright browser, so serve `public/` for a minute: `cd public && python3 -m http.server 8734` (background it), `browser_resize` to 390×844, `browser_navigate` to `http://localhost:8734/articles/YYYY-MM-DD.html`, screenshot (`fullPage: true`) and look at it; then kill the server (`pkill -f "http.server 8734"`). If `text=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
+   - Set `articlePageUrl: "/articles/YYYY-MM-DD.html"` in the JSON (and no `pdfUrl` — that's the legacy field for pre-article-page days). The index row then shows the single **ARTICLE** button.
+   - **Multi-article days** (the `articles[]` shape — see step 5): capture **one page per article**. `browser_navigate` to each article in turn, then run the snippet writing to `public/articles/YYYY-MM-DD-1.html`, `-2.html`, … and `article-text/YYYY-MM-DD-1.txt`, `-2.txt`, … (note the `-N` suffix), and put each page path in that article's own `articlePageUrl` inside `articles[]` — there is no top-level `articlePageUrl`. Concatenate the per-article text files into one `article-text/YYYY-MM-DD.txt` before the Blob upload below.
+   - **Manual fallback** (only if auto-capture can't work on an odd page): omit `articlePageUrl` — the index then falls back to the legacy Web link (and a `pdfUrl` if you set one: the user can still hand-save a PDF into the repo-root `PDFs/` drop-zone and you `cp` it to `public/pdfs/YYYY-MM-DD.pdf`).
+   - **Upload the full article text (for the voice quiz).** The home-page **Voice quiz** (`voiceQuiz: true`, see step 6) reads much better when the tutor has the *whole* article, not just the handout — it then judges the student's from-memory retelling against the real story. The capture snippet already wrote `article-text/YYYY-MM-DD.txt` (headline + deck first, then the body), so just upload it to **Vercel Blob** (we keep the full text **out of git** — the hard rule is never republish article text — so Blob is its home; `public/articles/` is served, not "republishing to git readers", and carries a `noindex` meta):
      ```sh
-     mkdir -p article-text   # gitignored drop-zone; may not exist on a fresh checkout
-     pdftotext public/pdfs/YYYY-MM-DD.pdf article-text/YYYY-MM-DD.txt
      node --env-file=.env.local scripts/upload-article-text.mjs YYYY-MM-DD
      ```
-     Needs `BLOB_READ_WRITE_TOKEN` in `.env.local` (`vercel env pull` to get it). Best-effort: if it's skipped or fails, the quiz still works — it just falls back to a handout-only session. The `article-text/` dir is a gitignored drop-zone. **Multi-article days:** run `pdftotext` on each PDF and concatenate them into one `article-text/YYYY-MM-DD.txt` before uploading. **Open/free articles with no PDF:** save the article text to `article-text/YYYY-MM-DD.txt` by hand (or skip — the quiz degrades to handout-only). **Always include the headline AND the deck/standfirst** (the subtitle line under the headline) at the very top, before the body. This path has no extraction snippet to grab the standfirst for you, and the standfirst often carries key facts that appear nowhere in the body — e.g. an obituary's "...died on June 22nd, aged 100." Dropping it hides those facts from the tutor and the grader, which can make the grader wrongly mark a correct student answer as not-in-the-article.
+     Needs `BLOB_READ_WRITE_TOKEN` in `.env.local` (`vercel env pull` to get it). Best-effort: if it's skipped or fails, the quiz still works — it just falls back to a handout-only session. The `article-text/` dir is a gitignored drop-zone. **If the text file was written by hand** (manual-fallback days), **always include the headline AND the deck/standfirst** (the subtitle line under the headline) at the very top, before the body — the standfirst often carries key facts that appear nowhere in the body (e.g. an obituary's "...died on June 22nd, aged 100"), and dropping it can make the grader wrongly mark a correct student answer as not-in-the-article.
 
 4. **Propose the words and concepts, and get the user's sign-off before generating anything.** This is a required manual checkpoint — **do not write the JSON or generate the quiz until the user approves.** Based on your read of the article:
    - Pick your candidate **3 vocab words** and **up to 3 concepts** (as many strong, transferable ideas as the article genuinely supports, capped at three — fewer is fine, even zero on a vocab-only day; the user can override the count) per the calibration above.
@@ -261,10 +309,10 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - **Discuss and revise.** The user may swap words/concepts in or out, ask for harder or easier picks, or adjust the framing. Iterate until they explicitly give the go-ahead. Treat this as the quality gate: the point is to fix the selection *before* the expensive generation, not after.
    - Only once the user approves the final list do you move on to drafting the full handout (step 5).
 
-5. **Draft the handout content.** Using the approved words and concepts, write the full cards (vocab is still article-first: `articleQuote` → `inContext` → `meaning` → `examples`, plus a `pronunciation` respelling and `partOfSpeech`; concepts are `articleQuote` → a single Feynman-style `meaning` with ≥1 concrete example — no `inContext`) and the 5-question quiz per the calibration above. Pick a clear, descriptive `title` (it can match WSJ's headline or be a plainer version). **Do not invent a subtitle.** Use the article's own headline (or a plainer paraphrase of it); only include a subtitle/colon-tagline if the original article actually has one. Don't append your own "How X did Y"-style subtitle. **Crediting the author:** for standard media articles (WSJ news stories, etc.), use the headline alone — no byline. But when the piece is an **essay or written work by a notable named author** (e.g. a Paul Graham essay), append `by <Author Name>` to the title — e.g. `"Cities and Ambition by Paul Graham"`. Use this only for such attributed works, not routine reportage. The pages are intentionally minimal: the handout shows **just the title** at the top (no date, no summary or "big idea" blurb), then the words and concepts; the quiz lives on its own page (`/reading/<date>/quiz`). The index is a **table**, one row per day — **Date · Title · Article · Handout · Self-quiz · Voice quiz**; the article link(s) live in the Article column (single-article days show **Article · PDF**, the word "Article" → `articleUrl`, "PDF" → `pdfUrl`). The **Self-quiz** column links to `/reading/<date>/quiz` (every day has one — keep generating the 5-question quiz). The **Voice quiz** column is hidden from logged-out visitors and, once logged in, shows the AI-oral-quiz launcher only for days with `voiceQuiz: true`; older days are blank there. The only "← All readings" link is in the global header bar (`app/layout.tsx`); the handout and quiz pages have no inline back-link of their own. Don't estimate reading time either — it varies too much per student, and they're expected to re-read.
-   - **Multi-article days:** set `articles: [{ title, articleUrl, pdfUrl }, …]` instead of the top-level `articleUrl`/`pdfUrl` (one entry per source, in reading order). The handout `title` is then an **umbrella title** for the bundle (e.g. `"World Cup News"`) — this is the one case where a combined title beats a single headline; each individual article keeps its real WSJ headline inside `articles[]`. The index's Article column lists each one (**Article 1 · PDF**, **Article 2 · PDF**, …, each link → that article's `articleUrl`/`pdfUrl`). The handout and quiz are unchanged — one combined page. (First example: `content/2026-06-14.json`.)
+5. **Draft the handout content.** Using the approved words and concepts, write the full cards (vocab is still article-first: `articleQuote` → `inContext` → `meaning` → `examples`, plus a `pronunciation` respelling and `partOfSpeech`; concepts are `articleQuote` → a single Feynman-style `meaning` with ≥1 concrete example — no `inContext`) and the 5-question quiz per the calibration above. Pick a clear, descriptive `title` (it can match WSJ's headline or be a plainer version). **Do not invent a subtitle.** Use the article's own headline (or a plainer paraphrase of it); only include a subtitle/colon-tagline if the original article actually has one. Don't append your own "How X did Y"-style subtitle. **Crediting the author:** for standard media articles (WSJ news stories, etc.), use the headline alone — no byline. But when the piece is an **essay or written work by a notable named author** (e.g. a Paul Graham essay), append `by <Author Name>` to the title — e.g. `"Cities and Ambition by Paul Graham"`. Use this only for such attributed works, not routine reportage. The pages are intentionally minimal: the handout shows **just the title** at the top (no date, no summary or "big idea" blurb), then the words and concepts; the quiz lives on its own page (`/reading/<date>/quiz`). The index is a **row-list**, one row per day — date · title · boxed action buttons **ARTICLE / HANDOUT / AI QUIZ** (the ARTICLE button → the day's `articlePageUrl`; historical days without one show the legacy **WEB / PDF** pair instead). The self-quiz lives as a CTA at the bottom of each handout (`/reading/<date>/quiz` — every day has one, keep generating the 5-question quiz), and the AI QUIZ button shows for any day with `voiceQuiz: true` (login is checked on click). The way back to the index from any inner page is the header's "RC" monogram; the handout and quiz pages have no inline back-link of their own. Don't estimate reading time either — it varies too much per student, and they're expected to re-read.
+   - **Multi-article days:** set `articles: [{ title, articleUrl, articlePageUrl }, …]` instead of the top-level `articleUrl`/`articlePageUrl` (one entry per source, in reading order). The handout `title` is then an **umbrella title** for the bundle (e.g. `"World Cup News"`) — this is the one case where a combined title beats a single headline; each individual article keeps its real WSJ headline inside `articles[]`. The index row shows one button per source (**ARTICLE 1 · ARTICLE 2 · …**, each → that article's `articlePageUrl`). The handout and quiz are unchanged — one combined page. (First example, from the legacy PDF era: `content/2026-06-14.json`.)
 
-6. **Write `content/YYYY-MM-DD.json`** following the schema below exactly (include `pdfUrl` if you placed a PDF). Validate it's well-formed JSON.
+6. **Write `content/YYYY-MM-DD.json`** following the schema below exactly (include the `articlePageUrl` from step 3). Validate it's well-formed JSON.
    - **Vote day → `clubPick: true`.** If the day's article was chosen by the club vote (the wsj-open-vote/wsj-check-vote flow — check with `node --env-file=.env.local scripts/check-vote.mjs YYYY-MM-DD`, or just: a poll exists for this date), set `"clubPick": true` so the index row carries the CLUB PICK chip. Publishing the reading is also what **closes** that poll — the home-page vote row disappears once this deploy lands, no extra step. On a non-vote day, omit the field.
    - **Generate pronunciation audio.** Each **vocab word** and **concept name** gets a ▶ "hear it" button on the handout that plays a pre-generated OpenAI-TTS clip (a natural US-English voice, `alloy`). Generate them from the just-written JSON:
      ```sh
@@ -274,7 +322,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
 
 7. **Build to verify:** run `npm run build`. It must succeed. If a new file breaks the build, it's almost always malformed JSON — fix it.
 
-8. **Commit, push, and share the links.** Stage the new content, PDF, and audio — `git add content/YYYY-MM-DD.json public/pdfs/YYYY-MM-DD.pdf public/audio/YYYY-MM-DD` (add any other changed files too) — commit, and `git push origin main`. **Pushing is shipping:** the push auto-deploys to Vercel production at `wsjclub.vercel.app` (no `vercel --prod` step). Once the deploy lands, give the user today's links: `https://wsjclub.vercel.app/reading/YYYY-MM-DD` (handout) and `https://wsjclub.vercel.app/reading/YYYY-MM-DD/quiz` (quiz).
+8. **Commit, push, and share the links.** Stage the new content, article page, and audio — `git add content/YYYY-MM-DD.json public/articles/YYYY-MM-DD.html public/audio/YYYY-MM-DD` (add any other changed files too) — commit, and `git push origin main`. **Pushing is shipping:** the push auto-deploys to Vercel production at `wsjclub.vercel.app` (no `vercel --prod` step). Once the deploy lands, give the user today's links: `https://wsjclub.vercel.app/reading/YYYY-MM-DD` (handout) and `https://wsjclub.vercel.app/reading/YYYY-MM-DD/quiz` (quiz).
 
 ## Content file schema
 
@@ -285,7 +333,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
   "date": "2026-06-09",
   "title": "A clear, descriptive title",
   "articleUrl": "https://www.wsj.com/...the real article link...",
-  "pdfUrl": "/pdfs/2026-06-09.pdf",
+  "articlePageUrl": "/articles/2026-06-09.html",
   "voiceQuiz": true,
   "source": "The Wall Street Journal",
   "vocab": [
@@ -323,12 +371,12 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
 Field notes:
 - `voiceQuiz`: set `"voiceQuiz": true` on **every new day**. It turns on the home-page **Voice quiz** launcher — the AI oral quiz that automates the 1-1. (Older days from before the feature omit it, so their Voice quiz column stays empty.) Pair it with the article-text upload in step 3 so the tutor gets the full article.
 - `clubPick`: set `"clubPick": true` **only when the day's article won the club vote** (see step 6) — it renders the CLUB PICK chip on the index row. Omit on normal days.
-- `pdfUrl` is the served path under `public/` (i.e. `/pdfs/YYYY-MM-DD.pdf`), **not** a filesystem path and **not** the raw `PDFs/` drop-zone. Omit the field entirely if there's no PDF for the day.
+- `articlePageUrl` is the served path under `public/` (i.e. `/articles/YYYY-MM-DD.html`), **not** a filesystem path. Keep `articleUrl` too — it's the source-of-record link to the original. (`pdfUrl` is a legacy field from the pre-article-page days — don't set it on new days; a day with neither `articlePageUrl` nor `pdfUrl` shows just the Web link.)
 - `answerIndex` is **0-based** (0 = first option). Double-check it points at the correct option.
 - `vocab` has **exactly 3 words** (a multi-article day may run ~4); each `examples` array has **exactly 2** sentences.
 - All `articleQuote` fields are short (one sentence/phrase) and taken from the actual article.
 - Keep 4 options per quiz question.
-- **Multi-article days:** replace the top-level `"articleUrl"`/`"pdfUrl"` with an `"articles"` array — `"articles": [{ "title": "First WSJ headline", "articleUrl": "https://www.wsj.com/…", "pdfUrl": "/pdfs/YYYY-MM-DD-1.pdf" }, { "title": "Second WSJ headline", "articleUrl": "…", "pdfUrl": "/pdfs/YYYY-MM-DD-2.pdf" }]`. Keep one combined `vocab`/`concepts`/`quiz`. See `content/2026-06-14.json`.
+- **Multi-article days:** replace the top-level `"articleUrl"`/`"articlePageUrl"` with an `"articles"` array — `"articles": [{ "title": "First WSJ headline", "articleUrl": "https://www.wsj.com/…", "articlePageUrl": "/articles/YYYY-MM-DD-1.html" }, { "title": "Second WSJ headline", "articleUrl": "…", "articlePageUrl": "/articles/YYYY-MM-DD-2.html" }]`. Keep one combined `vocab`/`concepts`/`quiz`. (The pre-article-page example `content/2026-06-14.json` uses the legacy `pdfUrl` shape.)
 
 The TypeScript types backing this live in `lib/content.ts` — if you change the schema, update that file and the page components too (`app/reading/[date]/page.tsx` for words/concepts, `app/reading/[date]/quiz/page.tsx` for the quiz).
 
