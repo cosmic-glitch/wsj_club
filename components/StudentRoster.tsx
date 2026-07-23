@@ -36,6 +36,40 @@ function slugify(name: string): string {
 
 type Credential = { username: string; password: string; reset: boolean };
 
+/* ------------------------------- sorting -------------------------------- */
+
+type SortKey = "username" | "parent" | "attempts" | "lastActive";
+type SortDir = "asc" | "desc";
+
+// First click on a header: text columns start ascending, the numeric/recency
+// ones start with the most first.
+const DEFAULT_DIR: Record<SortKey, SortDir> = {
+  username: "asc",
+  parent: "asc",
+  attempts: "desc",
+  lastActive: "desc",
+};
+
+function compareBy(key: SortKey, a: RosterEntry, b: RosterEntry): number {
+  switch (key) {
+    case "username":
+      return a.username.localeCompare(b.username);
+    case "parent":
+      return (
+        (a.parentName ?? "").localeCompare(b.parentName ?? "") ||
+        a.username.localeCompare(b.username)
+      );
+    case "attempts":
+      return a.attempts - b.attempts || a.username.localeCompare(b.username);
+    case "lastActive":
+      // Never-active rows (null ISO) sort as the oldest.
+      return (
+        (a.lastActiveIso ?? "").localeCompare(b.lastActiveIso ?? "") ||
+        a.username.localeCompare(b.username)
+      );
+  }
+}
+
 export default function StudentRoster({
   students,
   parentUsername,
@@ -76,6 +110,25 @@ export default function StudentRoster({
   // The row currently being renamed inline, and a per-row busy flag.
   const [renaming, setRenaming] = useState<string | null>(null);
   const [busyRow, setBusyRow] = useState<string | null>(null);
+  // Column sort. Default: the Parent column on the owner's unified view (its
+  // grouping column), Username on a single-classroom roster (no Parent column).
+  const [sort, setSort] = useState<{ key: SortKey; dir: SortDir }>({
+    key: showParent ? "parent" : "username",
+    dir: "asc",
+  });
+
+  function toggleSort(key: SortKey) {
+    setSort((s) =>
+      s.key === key
+        ? { key, dir: s.dir === "asc" ? "desc" : "asc" }
+        : { key, dir: DEFAULT_DIR[key] }
+    );
+  }
+
+  const sorted = [...students].sort((a, b) => {
+    const c = compareBy(sort.key, a, b);
+    return sort.dir === "asc" ? c : -c;
+  });
 
   return (
     <div>
@@ -112,15 +165,23 @@ export default function StudentRoster({
           <table className="w-full text-sm">
             <thead>
               <tr className="bg-[#0a0a0a] text-left font-mono text-[10px] font-bold uppercase tracking-[.12em] text-white">
-                <th className="px-4 py-2.5 font-bold">Username</th>
-                {showParent && <th className="px-4 py-2.5 font-bold">Parent</th>}
-                <th className="px-4 py-2.5 text-right font-bold">Attempts</th>
-                <th className="px-4 py-2.5 font-bold">Last active</th>
+                <SortHeader label="Username" k="username" sort={sort} onSort={toggleSort} />
+                {showParent && (
+                  <SortHeader label="Parent" k="parent" sort={sort} onSort={toggleSort} />
+                )}
+                <SortHeader
+                  label="Attempts"
+                  k="attempts"
+                  sort={sort}
+                  onSort={toggleSort}
+                  align="right"
+                />
+                <SortHeader label="Last active" k="lastActive" sort={sort} onSort={toggleSort} />
                 {!readOnly && <th className="px-4 py-2.5 text-right font-bold">Actions</th>}
               </tr>
             </thead>
             <tbody className="divide-y-2 divide-[#0a0a0a]">
-              {students.map((s) => (
+              {sorted.map((s) => (
                 <StudentRow
                   key={s.username}
                   student={s}
@@ -162,6 +223,41 @@ export default function StudentRoster({
         />
       )}
     </div>
+  );
+}
+
+/* --------------------------- sortable header ---------------------------- */
+
+function SortHeader({
+  label,
+  k,
+  sort,
+  onSort,
+  align,
+}: {
+  label: string;
+  k: SortKey;
+  sort: { key: SortKey; dir: SortDir };
+  onSort: (key: SortKey) => void;
+  align?: "right";
+}) {
+  const active = sort.key === k;
+  return (
+    <th
+      className={`px-4 py-2.5 font-bold ${align === "right" ? "text-right" : ""}`}
+      aria-sort={active ? (sort.dir === "asc" ? "ascending" : "descending") : undefined}
+    >
+      <button
+        type="button"
+        onClick={() => onSort(k)}
+        className="inline-flex items-center gap-1 uppercase tracking-[.12em] transition hover:text-[#ffe600]"
+      >
+        {label}
+        <span aria-hidden className={active ? "" : "opacity-30"}>
+          {active && sort.dir === "desc" ? "▼" : "▲"}
+        </span>
+      </button>
+    </th>
   );
 }
 
