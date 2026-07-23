@@ -1,0 +1,396 @@
+[
+ {
+  "k": "retrenchment",
+  "t": "retrenchment",
+  "kind": "vocab",
+  "pron": "rih-TRENCH-munt",
+  "forms": ["retrenchment"],
+  "text": "Retrenchment is a deliberate retreat to a smaller, safer position — cutting back on spending, activity, or ambition to limit losses. For Detroit's Big Three it has meant quitting Europe, dropping models, and surrendering market share: shrinking on purpose, again and again, instead of growing."
+ },
+ {
+  "k": "buoyant",
+  "t": "buoyant",
+  "kind": "vocab",
+  "pron": "BOY-unt",
+  "forms": ["buoyant"],
+  "text": "Buoyant literally describes something that floats easily; figuratively it means strong and lively — staying up despite pressure pushing down. Saying cashflow is buoyant at GM and Ford means the money coming in is keeping them comfortably afloat, even as the deeper currents of the industry turn against them."
+ },
+ {
+  "k": "art-deco",
+  "t": "Art Deco",
+  "kind": "name",
+  "forms": ["Art Deco"],
+  "text": "A glamorous design style of the 1920s and '30s — bold geometry, sleek lines, lots of chrome and gold. Detroit's Art Deco skyscrapers were built when car money was pouring in, which is exactly why the article opens with them: they're monuments to a dominance that's gone."
+ },
+ {
+  "k": "attest",
+  "t": "attest to",
+  "kind": "phrase",
+  "forms": ["attest"],
+  "text": "To attest to something is to serve as evidence that it happened — to testify, the way a witness does in court. The skyscrapers attest to Detroit's early dominance of carmaking: the buildings themselves are the proof."
+ },
+ {
+  "k": "motor-city",
+  "t": "Motor City",
+  "kind": "name",
+  "forms": ["Motor City"],
+  "text": "Detroit's famous nickname, earned when it was the car-manufacturing capital of the world. (It's also where the music label “Motown” — motor town — got its name.)"
+ },
+ {
+  "k": "centre-of-gravity",
+  "t": "centre of gravity",
+  "kind": "phrase",
+  "forms": ["centre of gravity"],
+  "text": "An object's centre of gravity is the point where its weight balances. Applied to an industry, it's where the bulk of the action sits — and the article's point is that carmaking's centre of gravity has shifted from Detroit to China. (Note the British spelling of “center.”)"
+ },
+ {
+  "k": "big-three",
+  "t": "the Big Three",
+  "kind": "name",
+  "forms": ["Big Three"],
+  "text": "America's three giant carmakers: General Motors, Ford, and Stellantis (the group that now includes Chrysler). The nickname dates from the era when they utterly dominated the world's roads — in 1950, three-quarters of all cars were made in America."
+ },
+ {
+  "k": "stamp",
+  "t": "stamp",
+  "kind": "word",
+  "forms": ["stamp"],
+  "text": "Here “stamp” means a lasting mark or imprint — the way a seal stamps its image into wax. The Big Three's stamp on Detroit endures: the city is still shaped by them, headquarters and all, even though their global power has faded."
+ },
+ {
+  "k": "swish",
+  "t": "swish",
+  "kind": "word",
+  "forms": ["swish"],
+  "text": "British slang for fancy and stylish — GM's “swish new headquarters” are impressively plush. Nothing to do with a basketball going through the net."
+ },
+ {
+  "k": "moved-house",
+  "t": "moved house",
+  "kind": "phrase",
+  "forms": ["moved house"],
+  "text": "A Britishism: to move house is simply to relocate — what Americans just call moving. Ford “moved house within its home suburb” means it changed buildings without leaving Dearborn."
+ },
+ {
+  "k": "shareholder",
+  "t": "shareholder",
+  "kind": "word",
+  "forms": ["shareholder"],
+  "text": "A shareholder owns shares — pieces — of a company, and the biggest shareholder holds the largest slice. The article pauses to disclose that Stellantis's biggest shareholder part-owns The Economist's own parent company: good journalism flags its conflicts of interest."
+ },
+ {
+  "k": "circling-the-wagons",
+  "t": "circling of the wagons",
+  "kind": "phrase",
+  "forms": ["circling of the wagons"],
+  "text": "Pioneer wagon trains under attack would pull their wagons into a circle and shelter inside. To circle the wagons is to go on the defensive — huddling to protect what you have instead of advancing. The article asks whether Detroit's shiny new headquarters are confidence, or exactly this."
+ },
+ {
+  "k": "gas-guzzlers",
+  "t": "gas-guzzlers",
+  "kind": "word",
+  "forms": ["gas-guzzlers"],
+  "text": "To guzzle is to gulp greedily, so a gas-guzzler is a vehicle that drinks fuel by the gallon — the giant pickups and SUVs Detroit loves to build. The word always carries a raised eyebrow: these are the profitable dinosaurs America's rules currently favor over EVs."
+ },
+ {
+  "k": "protectionist",
+  "t": "protectionism",
+  "kind": "word",
+  "forms": ["protectionist"],
+  "text": "Protectionism is shielding your home industries from foreign competition with barriers like tariffs. It feels safe — but the article's whole argument lives in its downside: companies protected from competition can grow comfortable and fall behind, which is exactly the risk for carmakers relying on “protectionist barriers” while China races ahead."
+ },
+ {
+  "k": "tariffs",
+  "t": "tariff",
+  "kind": "word",
+  "forms": ["tariffs", "tariff-free"],
+  "text": "A tariff is a tax a government charges on imported goods. The 100% tariff on Chinese EVs roughly doubles their price in America — enough to shut them out entirely. That wall protects Detroit's profits today; the question is what happens to a walled-in industry when the wall eventually comes down."
+ },
+ {
+  "k": "chronically",
+  "t": "chronically",
+  "kind": "word",
+  "forms": ["chronically"],
+  "text": "Chronic means lasting and constantly recurring — doctors speak of chronic pain, the kind that never quite goes away. “Chronically lossmaking” Opel didn't have one bad year; it lost money year after year until GM finally sold it."
+ },
+ {
+  "k": "routed",
+  "t": "routed",
+  "kind": "word",
+  "forms": ["routed"],
+  "text": "A rout is a total, humiliating defeat — an army not just beaten but sent fleeing. Saying China's carmakers have “routed” GM and Ford there is dramatically stronger than “outcompeted”: GM's market share halved in a decade, Ford lost two-thirds. (Nothing to do with routing internet traffic.)"
+ },
+ {
+  "k": "dwindled",
+  "t": "dwindled",
+  "kind": "word",
+  "forms": ["dwindled"],
+  "text": "To dwindle is to shrink away gradually — smaller and smaller until there's little left. The Big Three's share of their own home market has dwindled from over 90% in 1965 to about 40%: not a crash, but a sixty-year leak."
+ },
+ {
+  "k": "tally",
+  "t": "tally",
+  "kind": "word",
+  "forms": ["tally"],
+  "text": "A tally is a running count or total — from the notched sticks once used to keep score. Stellantis sold 1.3m cars in America last year, less than half its tally in 2004."
+ },
+ {
+  "k": "merger",
+  "t": "merger",
+  "kind": "word",
+  "forms": ["merger"],
+  "text": "A merger is two companies fusing into one — merging like lanes of traffic. Stellantis was formed by the 2021 merger of Fiat-Chrysler and PSA, which is why it's such a jumble of American and European brands."
+ },
+ {
+  "k": "insulation",
+  "t": "insulation",
+  "kind": "word",
+  "forms": ["insulation"],
+  "text": "Insulation keeps outside forces from reaching you — in a house, the cold; here, competition. The “supposed safety of insulation” is the article's thesis in miniature: being sealed off from electrification and China feels warm and safe, but it has come at a price."
+ },
+ {
+  "k": "rolling-back",
+  "t": "roll back",
+  "kind": "phrase",
+  "forms": ["rolling-back"],
+  "text": "To roll back a policy is to undo it — rolling it backward to where things stood before. Mr Trump's rolling-back of emissions rules and EV subsidies let carmakers ease up on going electric."
+ },
+ {
+  "k": "subsidies",
+  "t": "subsidies",
+  "kind": "word",
+  "forms": ["subsidies"],
+  "text": "A subsidy is government money used to encourage something it wants more of — here, payments that made EVs cheaper to buy and build. Remove the subsidies and the nudge toward electric disappears with them."
+ },
+ {
+  "k": "bullishness",
+  "t": "bullishness",
+  "kind": "word",
+  "forms": ["bullishness"],
+  "text": "In market slang, a bull charges ahead — so being bullish means being confidently optimistic (the opposite of bearish). Detroit's “past bullishness on EVs” is now a costly embarrassment: the companies bet billions on an electric future that arrived slower than they hoped."
+ },
+ {
+  "k": "wrote-down",
+  "t": "write down",
+  "kind": "phrase",
+  "forms": ["wrote down"],
+  "text": "When a company “writes down” an investment, it isn't taking notes — it's officially lowering the recorded value of something it owns, admitting on its books that a bet went bad. Ford wrote down nearly $20bn and Stellantis $26bn, mostly for scaled-back EV plans: accounting's way of forcing companies to own up to their mistakes."
+ },
+ {
+  "k": "hefty",
+  "t": "hefty",
+  "kind": "word",
+  "forms": ["hefty"],
+  "text": "Hefty means big and heavy — hefty tariffs are substantial ones, with real weight behind them. The word comes from “heft,” the weight you feel when you lift something."
+ },
+ {
+  "k": "shed",
+  "t": "shed",
+  "kind": "word",
+  "forms": ["shed"],
+  "text": "Not a garden shed: to shed is to lose or drop away, the way a tree sheds leaves or a snake sheds skin. Stellantis shares have “shed 30%” — lost nearly a third of their value — since the new boss took over."
+ },
+ {
+  "k": "daft",
+  "t": "daft",
+  "kind": "word",
+  "forms": ["daft"],
+  "text": "British slang for silly or foolish. The article's double-negative judgment — focusing on America is “not exactly daft” — is classic Economist faint praise: a reasonable move, it concedes, though hardly a triumph."
+ },
+ {
+  "k": "sluggish",
+  "t": "sluggish",
+  "kind": "word",
+  "forms": ["sluggish"],
+  "text": "Sluggish means slow-moving and low-energy — like a slug. Growth that will be “sluggish at best” is the polite forecast for a market that has actually shrunk by a million vehicles since the pandemic."
+ },
+ {
+  "k": "footprint",
+  "t": "footprint",
+  "kind": "word",
+  "forms": ["footprint"],
+  "text": "A company's footprint is how much ground it covers — where and how big its operations are, like the mark a foot leaves. GM's chief financial officer admitting “our international footprint is smaller than it was historically” is a gentle way of saying the company has retreated from much of the world."
+ },
+ {
+  "k": "scant",
+  "t": "scant",
+  "kind": "word",
+  "forms": ["scant"],
+  "text": "Scant means barely any — in short supply. There is scant foreign competition for giant pickups: almost nobody outside Detroit builds them, which is exactly why they're such reliable money-makers."
+ },
+ {
+  "k": "money-spinners",
+  "t": "money-spinners",
+  "kind": "word",
+  "forms": ["money-spinners"],
+  "text": "A money-spinner is British business slang for a product that spins off piles of profit. Detroit's biggest money-spinners are its huge pickups and SUVs — highly profitable, barely challenged, and so far impossible to electrify successfully."
+ },
+ {
+  "k": "scrapped",
+  "t": "scrapped",
+  "kind": "word",
+  "forms": ["scrapped"],
+  "text": "To scrap a plan is to cancel it and throw it away — send it to the scrap heap, where junked cars go to be melted down. GM and Stellantis have scrapped their plans for electric versions of their big pickups; fitting imagery for a car company."
+ },
+ {
+  "k": "consultancy",
+  "t": "consultancy",
+  "kind": "word",
+  "forms": ["consultancy"],
+  "text": "A consultancy is a firm companies pay for expert advice — its consultants study your business and tell you what to do. AlixPartners, quoted here, advises carmakers among others."
+ },
+ {
+  "k": "runway",
+  "t": "runway",
+  "kind": "word",
+  "forms": ["runway"],
+  "text": "In business-speak, runway is how much time and money you have before you must take off — borrowed from the strip a plane accelerates down. The tariff “wall,” one analyst argues, gives American carmakers the runway to catch up on EVs: protected profits buying them time. Not a fashion-show catwalk, and no actual airplanes involved."
+ },
+ {
+  "k": "earmarked",
+  "t": "earmarked",
+  "kind": "word",
+  "forms": ["earmarked"],
+  "text": "To earmark money or resources is to set them aside for one specific purpose — farmers once notched the ears of livestock to mark whose they were. Factories earmarked for EV production are now being repurposed for petrol vehicles: the label changed, which tells you the strategy did too."
+ },
+ {
+  "k": "skunkworks",
+  "t": "skunkworks",
+  "kind": "word",
+  "forms": ["skunkworks"],
+  "text": "A skunkworks is a small, secretive team set apart from the rest of a company to innovate fast, free of bureaucracy. The name comes from Lockheed's legendary “Skunk Works” division, which built spy planes in wartime secrecy. Ford's California skunkworks is where its answer to the Chinese EVs is being designed."
+ },
+ {
+  "k": "brims",
+  "t": "brims with",
+  "kind": "phrase",
+  "forms": ["brims with"],
+  "text": "The brim is a container's top edge, so something that brims with people or things is filled to overflowing. Ford's skunkworks brims with software engineers — packed to the rim with them."
+ },
+ {
+  "k": "techies",
+  "t": "techies",
+  "kind": "word",
+  "forms": ["techies"],
+  "text": "Casual slang for technology specialists — programmers, engineers, the people who live and breathe software. That a car factory's future depends on techies rather than mechanics is itself part of the story."
+ },
+ {
+  "k": "platform",
+  "t": "platform",
+  "kind": "word",
+  "forms": ["platform"],
+  "text": "In carmaking, a platform is the shared engineering foundation — chassis, batteries, electronics — that several different models can be built on top of. Design one good EV platform and you can spin out a whole family of vehicles cheaply; that's Ford's plan for going “head to head” with the Chinese."
+ },
+ {
+  "k": "underpin",
+  "t": "underpin",
+  "kind": "word",
+  "forms": ["underpin"],
+  "text": "To underpin something is to support it from below, the way foundations underpin a building. A platform that “can underpin several models” is one foundation carrying many different cars."
+ },
+ {
+  "k": "novel",
+  "t": "novel",
+  "kind": "word",
+  "forms": ["novel"],
+  "text": "Not a book — as an adjective, novel means new, never seen before. GM's “novel lithium and manganese chemistry” is a newly invented battery recipe meant to slash costs without hurting performance."
+ },
+ {
+  "k": "formidable",
+  "t": "formidable",
+  "kind": "word",
+  "forms": ["formidable"],
+  "text": "Formidable describes something so powerful it inspires respect and a little fear — a formidable opponent is one you don't take lightly. America's stack of tariffs, bans, and bipartisan suspicion of Chinese tech “seems a formidable defence.” The word “seems” is doing quiet work in that sentence."
+ },
+ {
+  "k": "foresee",
+  "t": "foresee",
+  "kind": "word",
+  "forms": ["foresee"],
+  "text": "To foresee is to see something coming before it happens. Stellantis's boss doesn't foresee Chinese carmakers in America “at least for a few years” — and the article spends its remaining paragraphs explaining why that comfort may be misplaced."
+ },
+ {
+  "k": "toeholds",
+  "t": "toeholds",
+  "kind": "word",
+  "forms": ["toeholds"],
+  "text": "A toehold is a climber's tiniest grip on the rock face — just enough to keep moving up. China's carmakers already have toeholds in America: Geely owns Volvo, which has a South Carolina factory, and several Chinese brands run design centres here. Small grips now; the climb comes later."
+ },
+ {
+  "k": "state-owned",
+  "t": "state-owned",
+  "kind": "phrase",
+  "forms": ["state-owned"],
+  "text": "A state-owned company belongs to the government rather than private investors — common in China, where firms like Chery answer to the state. It's part of why Chinese carmakers can afford to be patient: they aren't only playing by market rules."
+ },
+ {
+  "k": "eyeing",
+  "t": "eyeing",
+  "kind": "word",
+  "forms": ["eyeing"],
+  "text": "To eye something is to look at it with interest — sizing it up before you act. BYD and Geely are “eyeing factories” in Mexico: not building yet, but watching, considering, circling."
+ },
+ {
+  "k": "aghast",
+  "t": "aghast",
+  "kind": "word",
+  "forms": ["aghast"],
+  "text": "Aghast means struck with shock and horror — it shares a root with “ghost,” as if you'd just seen one. Detroit's bosses were aghast when Mr Trump said it would be “great” if Chinese carmakers built factories in America: the one politician they counted on to keep the wall up suggested opening the gate."
+ },
+ {
+  "k": "obliged",
+  "t": "obliged",
+  "kind": "word",
+  "forms": ["obliged"],
+  "text": "To be obliged to do something is to be required to — bound by rule or force, not choice. Ford's boss has suggested Chinese carmakers be obliged to enter joint ventures under American control; notably, that's exactly the condition China imposed on American carmakers for decades."
+ },
+ {
+  "k": "joint-ventures",
+  "t": "joint ventures",
+  "kind": "phrase",
+  "forms": ["joint ventures"],
+  "text": "A joint venture is a business two companies own and run together, sharing the costs, profits, and control. Requiring foreign firms to operate through joint ventures with local partners is a classic way to let them in while keeping a hand on the wheel."
+ },
+ {
+  "k": "up-their-game",
+  "t": "up their game",
+  "kind": "phrase",
+  "forms": ["up their ev game"],
+  "text": "To up your game is to raise your level of performance — playing harder because the competition demands it. Other foreign carmakers, battered by the Chinese everywhere else, have been forced to up their EV game — and they'll want to sell in America too. The wall keeps out the Chinese; it can't keep out everyone."
+ },
+ {
+  "k": "work-cut-out",
+  "t": "have their work cut out",
+  "kind": "phrase",
+  "forms": ["work cut out"],
+  "text": "To have your work cut out for you is to face a task so big it will take everything you've got — like a tailor staring at a mountain of cut cloth waiting to be sewn. It's the article's closing verdict on the Big Three: living up to Detroit's past grandeur will be very hard indeed."
+ },
+ {
+  "k": "grandeur",
+  "t": "grandeur",
+  "kind": "word",
+  "forms": ["grandeur"],
+  "text": "Grandeur is magnificence — the splendor of something grand. “Detroit's past grandeur” is the world of those Art Deco skyscrapers: the wealth and dominance the opening paragraph described, which the closing line doubts the Big Three can reclaim."
+ },
+ {
+  "k": "market-share",
+  "t": "market share",
+  "kind": "phrase",
+  "forms": ["market share"],
+  "text": "Your market share is your slice of all the sales in a market — sell 4 of every 10 cars and you hold 40%. It's the scoreboard this article keeps returning to: GM's share in China halved in a decade, and the Big Three's share at home fell from 90% to about 40%."
+ },
+ {
+  "k": "cashflow",
+  "t": "cashflow",
+  "kind": "word",
+  "forms": ["cashflow"],
+  "text": "Cashflow is the stream of money moving through a business — what's actually coming in against what's going out. Healthy cashflow means the company earns real money day to day, whatever its long-term worries; at GM and Ford it's buoyant “despite everything.”"
+ },
+ {
+  "k": "rd",
+  "t": "R&D",
+  "kind": "name",
+  "forms": ["R&D"],
+  "text": "Short for research and development — the part of a company that invents and improves its future products. Several Chinese carmakers already have design and R&D centres inside America: studying the market up close before they ever sell a car here."
+ }
+]

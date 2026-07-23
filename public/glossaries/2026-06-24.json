@@ -1,0 +1,407 @@
+[
+ {
+  "k": "judicious",
+  "t": "judicious",
+  "kind": "vocab",
+  "pron": "joo-DISH-us",
+  "forms": ["judiciously"],
+  "text": "Judicious means showing good, careful judgment — sensible and well-considered rather than reckless. So “judiciously dialling down the temperature” means cooling your home thoughtfully, only as much as you actually need, instead of blasting the AC carelessly — and the article's point is that done that way, it barely dents the climate."
+ },
+ {
+  "k": "laggard",
+  "t": "laggard",
+  "kind": "vocab",
+  "pron": "LAG-urd",
+  "forms": ["laggard"],
+  "text": "A laggard is whoever lags behind the pack — a person, team, or country that moves more slowly than the rest. Here Italy is the laggard of Europe's clean-energy race, still leaning on gas for 30–40% of its electricity while its neighbors run on sun and atoms."
+ },
+ {
+  "k": "surly",
+  "t": "surly",
+  "kind": "vocab",
+  "pron": "SUR-lee",
+  "forms": ["surly"],
+  "text": "Surly means bad-tempered, sullen, and unfriendly — the mood of someone who grunts instead of answering. That's the American tourist in Europe: expecting cool comfort, then growing surly on discovering the hotel has no air-conditioning and everyone's expected to sweat."
+ },
+ {
+  "k": "astute",
+  "t": "astute",
+  "kind": "vocab",
+  "pron": "uh-STOOT",
+  "forms": ["astute"],
+  "text": "Astute means clever and sharp about how things really work — shrewd, quick to spot the smart move. The article's astute governments have figured out that paying to make old houses energy-efficient saves so much energy the upgrade eventually pays for itself."
+ },
+ {
+  "k": "verdant",
+  "t": "verdant",
+  "kind": "vocab",
+  "pron": "VUR-dunt",
+  "forms": ["verdant"],
+  "text": "Verdant literally means lush and green with growing plants — a verdant valley. The writer is punning: calling Italy's electricity “positively verdant next to much of America” means it's environmentally “green” (clean) by comparison, even though Italy is Europe's laggard."
+ },
+ {
+  "k": "coddled",
+  "t": "coddled",
+  "kind": "vocab",
+  "pron": "KOD-uld",
+  "forms": ["coddled"],
+  "text": "Coddled means pampered — treated with so much care and protection you never toughen up; to coddle someone is to baby them. Southern Europeans see Americans as coddled by constant air-conditioning: so comfortable they never learned to handle heat the old-fashioned way."
+ },
+ {
+  "k": "etiquette",
+  "t": "etiquette",
+  "kind": "word",
+  "forms": ["etiquette"],
+  "text": "Etiquette is the set of unwritten rules for polite behavior — which fork to use, when to shake hands. “Gun-carrying etiquette” is the article's dry joke: even something as heated as guns has its customs, and Americans and Europeans disagree about those too."
+ },
+ {
+  "k": "frigidly",
+  "t": "frigidly",
+  "kind": "word",
+  "forms": ["frigidly"],
+  "text": "Frigid means freezing cold, so a “frigidly air-conditioned” shop is one chilled so aggressively that European visitors need a jacket indoors — the exact opposite of the sweaty European buildings Americans complain about."
+ },
+ {
+  "k": "yanks",
+  "t": "Yanks",
+  "kind": "word",
+  "forms": ["Yanks"],
+  "text": "“Yanks” is informal — and slightly teasing — British slang for Americans, short for “Yankees.” The Economist, a British paper, uses it here with a wink while describing American tourists suffering in un-air-conditioned Europe."
+ },
+ {
+  "k": "holidaying",
+  "t": "holidaying",
+  "kind": "word",
+  "forms": ["holidaying"],
+  "text": "In British English a “holiday” is what Americans call a vacation, so “Yanks holidaying in Europe” just means Americans on vacation there — not celebrating Christmas or Thanksgiving."
+ },
+ {
+  "k": "old-world",
+  "t": "old-world",
+  "kind": "phrase",
+  "forms": ["old-world"],
+  "text": "“Old-world” describes the charm of old Europe — historic buildings, traditional ways, things built centuries before modern conveniences. Old-world buildings are lovely to look at, but they were built long before air-conditioning existed, which is the tourists' problem."
+ },
+ {
+  "k": "sweat-and-bear-it",
+  "t": "sweat and bear it",
+  "kind": "phrase",
+  "forms": ["sweat and bear it"],
+  "text": "A play on the saying “grin and bear it” — to put up with something unpleasant without complaining. European buildings force overheated visitors to sweat and bear it: endure the heat, because there's no AC coming to the rescue."
+ },
+ {
+  "k": "general-electric",
+  "t": "General Electric",
+  "kind": "name",
+  "forms": ["General Electric"],
+  "text": "One of America's great old industrial companies, famous for electrical machines and appliances — the article uses it as shorthand for the era when machines that cool air with circulating chemicals (modern air-conditioners) were invented."
+ },
+ {
+  "k": "siesta",
+  "t": "siesta",
+  "kind": "word",
+  "forms": ["siestas"],
+  "text": "A siesta is the traditional midday rest taken in Spain and other hot southern countries — you nap through the scorching early afternoon and come back to life when it cools. It's one of the old, no-electricity-needed tricks southern Europe built its whole schedule around."
+ },
+ {
+  "k": "flinty",
+  "t": "flinty",
+  "kind": "word",
+  "forms": ["Flinty"],
+  "text": "Flint is a hard, gray stone, so a flinty person is hard, stern, and unyielding — no softness, no indulgence. The article's “flinty northern Protestants” are the famously strict, thrifty northern Europeans who'd consider buying an air-conditioner for a few hot days a wasteful sin."
+ },
+ {
+  "k": "scorcher",
+  "t": "scorcher",
+  "kind": "word",
+  "forms": ["scorchers"],
+  "text": "A scorcher is slang for a brutally hot day — one that scorches. Northern Europe gets only a few real scorchers a year, which is why buying a whole machine to survive them can feel like an extravagance there."
+ },
+ {
+  "k": "broiling",
+  "t": "broiling",
+  "kind": "word",
+  "forms": ["broiling"],
+  "text": "To broil is to cook something under direct high heat, so a “broiling summer” is one that feels like the whole continent is under the oven's top burner. That's what forecasters expect for Europe — partly thanks to El Niño."
+ },
+ {
+  "k": "el-nino",
+  "t": "El Niño",
+  "kind": "name",
+  "forms": ["El Niño"],
+  "text": "A natural climate pattern in which the Pacific Ocean's surface warms up every few years, shuffling weather around the whole planet — often making an already-warming world temporarily hotter still. It's one reason Europe expects an especially fierce summer."
+ },
+ {
+  "k": "reckons",
+  "t": "reckons",
+  "kind": "word",
+  "forms": ["reckons"],
+  "text": "To reckon is to calculate or estimate — a favorite British word for “figures” or “believes based on the numbers.” The UN reckons heat contributes to about 175,000 deaths a year in Europe: their best count, not a wild guess."
+ },
+ {
+  "k": "pangs",
+  "t": "pangs",
+  "kind": "word",
+  "forms": ["pangs"],
+  "text": "A pang is a sudden sharp stab of feeling — hunger pangs, a pang of regret. “Pangs of carbon guilt” is the little jab of conscience a climate-worried European feels every time they reach for the AC remote. The article's message: those pangs are mostly out of date."
+ },
+ {
+  "k": "first-world",
+  "t": "first-world",
+  "kind": "phrase",
+  "forms": ["first-world"],
+  "text": "“First-world” describes the rich, developed countries — the US, Europe, Japan — and their comfortable lifestyles. Many Europeans blame first-world living (big houses, cars, flights, gadgets) for most of global warming, which is exactly where the guilt about air-conditioning comes from."
+ },
+ {
+  "k": "build-out",
+  "t": "build-out",
+  "kind": "word",
+  "forms": ["build-out"],
+  "text": "A build-out is the large-scale construction of something over time — here, Europe's impressive build-out of renewable energy: years of installing solar panels, wind turbines, and power lines that have quietly transformed where its electricity comes from."
+ },
+ {
+  "k": "renewable",
+  "t": "renewable energy",
+  "kind": "phrase",
+  "forms": ["renewable energy", "renewable"],
+  "text": "Renewable energy comes from sources that never run out — sunshine, wind, flowing water — unlike coal, oil, and gas, which burn once and are gone (and release CO2 doing it). Europe's hottest places have built so much of it that running the AC there is now surprisingly clean."
+ },
+ {
+  "k": "capacity",
+  "t": "capacity",
+  "kind": "word",
+  "forms": ["capacity"],
+  "text": "Capacity is the maximum amount something can produce or hold. Spain's solar capacity growing “nearly tenfold” means the total amount of electricity its solar panels can crank out is now almost ten times what it was a decade ago."
+ },
+ {
+  "k": "kilowatt-hour",
+  "t": "kilowatt-hour",
+  "kind": "name",
+  "forms": ["kilowatt-hour"],
+  "text": "The standard unit of electrical energy — roughly what it takes to run a microwave for an hour; your family's power bill is a count of them. The article compares how much CO2 making one kilowatt-hour releases: 86 grams in solar-rich Spain versus 442 in the US state of Georgia."
+ },
+ {
+  "k": "fossil-fuels",
+  "t": "fossil fuels",
+  "kind": "phrase",
+  "forms": ["fossil fuels", "fossil-fuel"],
+  "text": "Coal, oil, and natural gas — fuels formed from ancient buried life, which release the CO2 that drives global warming when burned. The whole article turns on how little of Europe's electricity still comes from them: only about 10% of Spain's on a sunny afternoon."
+ },
+ {
+  "k": "iberia",
+  "t": "Iberia",
+  "kind": "name",
+  "forms": ["Iberia"],
+  "text": "The Iberian peninsula — the chunk of southwestern Europe holding Spain and Portugal. Saying Britain “falls between Italy and Iberia” means its electricity is cleaner than Italy's but not as clean as Spain's and Portugal's."
+ },
+ {
+  "k": "rash",
+  "t": "rash",
+  "kind": "word",
+  "forms": ["rash"],
+  "text": "Here rash means hasty and reckless — a decision made too fast, without thinking through the consequences (nothing to do with itchy skin). The article calls Germany's 2011 choice to abandon nuclear power rash, because it left the country stuck burning coal and gas instead."
+ },
+ {
+  "k": "reliant",
+  "t": "reliant",
+  "kind": "word",
+  "forms": ["reliant", "reliance"],
+  "text": "Reliant means dependent — needing something to function. Poland is heavily reliant on coal, so its electricity is about as dirty as America's; after Ukraine, Europe deliberately reduced its reliance on Russian gas, which is the same idea in noun form."
+ },
+ {
+  "k": "bright-spots",
+  "t": "bright spots",
+  "kind": "phrase",
+  "forms": ["bright spots"],
+  "text": "A bright spot is the one cheering exception in an otherwise gloomy picture. The article's surprise bright spots are little Albania — sometimes 100% powered by water — and Latvia, the greenest of the Baltic states."
+ },
+ {
+  "k": "hydroelectric",
+  "t": "hydroelectric",
+  "kind": "word",
+  "forms": ["hydroelectric"],
+  "text": "Hydroelectric power is electricity made from moving water — a dam holds back a river, and the water rushing through spins turbines. “Hydro” is Greek for water. It's how Albania sometimes runs on 100% clean electricity."
+ },
+ {
+  "k": "baltics",
+  "t": "the Baltics",
+  "kind": "name",
+  "forms": ["Baltics"],
+  "text": "The three small countries on the Baltic Sea's eastern shore — Estonia, Latvia, and Lithuania. Latvia turns out to be the greenest of them, thanks to more solar power than you'd expect that far north."
+ },
+ {
+  "k": "old-continent",
+  "t": "the old continent",
+  "kind": "phrase",
+  "forms": ["old continent"],
+  "text": "“The old continent” is a classic nickname for Europe — old because its civilization long predates the “New World” of the Americas. So “many on the old continent fret” just means many Europeans worry."
+ },
+ {
+  "k": "fret",
+  "t": "fret",
+  "kind": "word",
+  "forms": ["fret"],
+  "text": "To fret is to worry — to gnaw at a concern the way a dog worries a bone. What Europeans fret about here isn't just the climate: it's the electricity bill for cranking up the aircon."
+ },
+ {
+  "k": "cranking-up",
+  "t": "cranking up",
+  "kind": "phrase",
+  "forms": ["cranking up"],
+  "text": "To crank something up is to turn it up hard — from the days when machines were started by turning a crank handle. Cranking up the aircon dial means running the air-conditioning at full blast, which is what worried Europeans fear they can't afford."
+ },
+ {
+  "k": "add-insult-to-injury",
+  "t": "add insult to injury",
+  "kind": "phrase",
+  "forms": ["add insult to injury"],
+  "text": "To add insult to injury is to make a bad situation more galling on top of the harm already done — like mocking someone you've just knocked over. The injury: Americans are about a third richer than Europeans. The insult: their electricity costs half as much too."
+ },
+ {
+  "k": "geopolitical",
+  "t": "geopolitical",
+  "kind": "word",
+  "forms": ["geopolitical"],
+  "text": "Geopolitical means having to do with power politics between countries — wars, alliances, control of resources — and how geography shapes them. A “geopolitical crisis” like a war in Iran can spike energy prices across the world overnight, which is what nervous European households fear."
+ },
+ {
+  "k": "demand-shifting",
+  "t": "demand-shifting",
+  "kind": "phrase",
+  "forms": ["demand-shifting"],
+  "text": "Demand-shifting means moving your electricity use to the hours when power is cheap and plentiful — running the dishwasher overnight instead of at the 9pm peak, or pre-cooling the house on a sunny afternoon when solar power is nearly free. Smart meters make it easy by showing the price hour by hour."
+ },
+ {
+  "k": "smart-meters",
+  "t": "smart meters",
+  "kind": "phrase",
+  "forms": ["Smart meters", "smart meter"],
+  "text": "A smart meter is a digital electricity meter that tracks your usage moment by moment and knows what power costs at each hour — unlike the old spinning-dial meters that just counted a monthly total. That hour-by-hour view is what lets families chase the cheap hours."
+ },
+ {
+  "k": "pay-for-itself",
+  "t": "pay for itself",
+  "kind": "phrase",
+  "forms": ["pay for itself"],
+  "text": "Something pays for itself when the money it saves eventually covers what it cost — insulating an old house is expensive up front, but the smaller energy bills, month after month, quietly refund the price."
+ },
+ {
+  "k": "throttled",
+  "t": "throttled",
+  "kind": "word",
+  "forms": ["throttled"],
+  "text": "To throttle is literally to choke — and figuratively to squeeze a flow down hard. After the war in Ukraine, Europeans throttled their use of Russian gas: deliberately strangled it down to a trickle rather than keep funding the country attacking their neighbor."
+ },
+ {
+  "k": "decarbonised",
+  "t": "decarbonised",
+  "kind": "word",
+  "forms": ["decarbonised"],
+  "text": "To decarbonise is to cut the carbon out — to switch an economy's energy from CO2-spewing fossil fuels to clean sources. (That's the British spelling; Americans write “decarbonized.”) The countries that decarbonised fastest, the article notes, now enjoy the cheapest, most stable power."
+ },
+ {
+  "k": "reaped",
+  "t": "reaped",
+  "kind": "word",
+  "forms": ["reaped"],
+  "text": "To reap is to harvest — to gather in the crop your earlier work planted. Countries that did the hard work of quitting fossil fuels early have now “reaped the greatest benefits”: the payoff arrived, just like a harvest."
+ },
+ {
+  "k": "energy-crunch",
+  "t": "energy crunch",
+  "kind": "phrase",
+  "forms": ["energy crunch"],
+  "text": "A crunch is a painful squeeze — a moment when there isn't enough of something to go around. Europe's energy crunch is the gap between the electricity it has and the far larger amount it will need for factories, data centres, and AI."
+ },
+ {
+  "k": "electrify",
+  "t": "electrify",
+  "kind": "word",
+  "forms": ["electrify"],
+  "text": "Here to electrify means to convert something to run on electricity instead of burning fuel — electrifying industries means swapping their gas furnaces and diesel engines for electric power. (It can also mean to thrill a crowd, but not in this sentence.)"
+ },
+ {
+  "k": "dwarfed",
+  "t": "dwarfed",
+  "kind": "word",
+  "forms": ["dwarfed"],
+  "text": "To dwarf something is to make it look tiny by comparison — a skyscraper dwarfs the houses around it. Europe's data centres are dwarfed by America's: so much smaller that Europe risks missing the AI revolution entirely."
+ },
+ {
+  "k": "lest",
+  "t": "lest",
+  "kind": "word",
+  "forms": ["lest"],
+  "text": "Lest is an old, formal word meaning “for fear that” or “in case” — you act lest something bad happen. Europe must expand its data centres lest the AI revolution render it a vassal: that is, or else it risks ending up as one."
+ },
+ {
+  "k": "render",
+  "t": "render",
+  "kind": "word",
+  "forms": ["render"],
+  "text": "Here render means to make or turn into — a formal way of saying “cause to become,” as in “the news rendered her speechless.” The fear is that the AI revolution could render Europe a vassal of the countries that control the technology."
+ },
+ {
+  "k": "vassal",
+  "t": "vassal",
+  "kind": "word",
+  "forms": ["vassal"],
+  "text": "In the Middle Ages a vassal was a lesser lord who owed service and obedience to a more powerful one. Calling a country a vassal means it has lost its independence — it takes orders. The warning: if Europe can't compete in AI, it ends up the servant of the powers that can."
+ },
+ {
+  "k": "grid",
+  "t": "grid",
+  "kind": "word",
+  "forms": ["grids"],
+  "text": "The grid is the giant network of wires, transformers, and stations that carries electricity from power plants to every socket — the plumbing of the electrical world. Upgrading grids matters because you can build all the solar farms you like, but the power still has to get to people."
+ },
+ {
+  "k": "rounding-error",
+  "t": "rounding error",
+  "kind": "phrase",
+  "forms": ["rounding error"],
+  "text": "A rounding error is the tiny difference that appears when you round numbers off — so small it changes nothing. Calling home air-conditioning “little more than a rounding error” in Europe's energy equation means its climate cost is trivial next to the giant tasks of powering factories and data centres."
+ },
+ {
+  "k": "buffeted",
+  "t": "buffeted",
+  "kind": "word",
+  "forms": ["buffeted"],
+  "text": "To be buffeted is to be knocked about by repeated blows, the way wind buffets a small plane. Green politicians have been buffeted by falling support in recent years — battered election after election, which is why embracing the AC might feel to them like surrender."
+ },
+ {
+  "k": "chill-out",
+  "t": "chill out",
+  "kind": "phrase",
+  "forms": ["chill out"],
+  "text": "To chill out is slang for relaxing — and the article can't resist the pun: a call to chill out in front of the AC means both “calm down about the guilt” and, literally, “get cold.”"
+ },
+ {
+  "k": "flip-the-script",
+  "t": "flip the script",
+  "kind": "phrase",
+  "forms": ["script that ought to be flipped"],
+  "text": "To flip the script is to turn the expected story upside down — the underdog acting like the favorite. The expected script says using more AC is a defeat for greens; the article flips it: clean, cheap air-conditioning only exists because green policies worked. It's their victory lap, not their surrender."
+ },
+ {
+  "k": "prodded",
+  "t": "prodded",
+  "kind": "word",
+  "forms": ["prodded"],
+  "text": "To prod is to poke or nudge someone into moving — like prodding cattle along. Climate-conscious governments prodded Europe to quit fossil fuels: pushed, subsidized, and regulated until the continent actually changed course."
+ },
+ {
+  "k": "tough-out",
+  "t": "tough out",
+  "kind": "phrase",
+  "forms": ["tough out"],
+  "text": "To tough something out is to endure it through sheer grit rather than seek relief — playing on through an injury, or sweating through summer with the windows open. The article says those who prefer to tough out the heat are welcome to; everyone else should get cheap, clean AC."
+ },
+ {
+  "k": "chilling",
+  "t": "chilling",
+  "kind": "word",
+  "forms": ["chilling"],
+  "text": "A chilling realisation is one that makes your blood run cold — frightening. But this section heading is a double pun: the realisation is literally about chilling — cooling Europe down — and it isn't scary at all. Classic Economist wordplay."
+ }
+]

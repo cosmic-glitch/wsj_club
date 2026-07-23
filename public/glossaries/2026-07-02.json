@@ -1,0 +1,459 @@
+[
+ {
+  "k": "subterfuge",
+  "t": "subterfuge",
+  "kind": "vocab",
+  "pron": "SUB-tur-fyooj",
+  "forms": [
+   "subterfuge"
+  ],
+  "text": "Subterfuge is deception — a hidden scheme carried out while covering your tracks, like a magic trick that keeps your eyes on the wrong hand. Here it's the suspicion that someone secretly sabotaged the cut cables; the article notes those fears may be overblown, since no conclusive proof has surfaced."
+ },
+ {
+  "k": "defray",
+  "t": "defray",
+  "kind": "vocab",
+  "pron": "dih-FRAY",
+  "forms": [
+   "defray"
+  ],
+  "text": "To defray a cost is to chip in money that covers part or all of it, so no one carries the whole burden — the way a bake sale defrays the cost of team uniforms. Subsea cables cost billions, so for decades telecom firms teamed up in big groups precisely to defray the bill among dozens of partners."
+ },
+ {
+  "k": "bifurcated",
+  "t": "bifurcated",
+  "kind": "vocab",
+  "pron": "BY-fur-kay-tid",
+  "forms": [
+   "bifurcated"
+  ],
+  "text": "Something bifurcated has split into two separate branches, like a trail forking at the top of a hill. The article's closing image is a bifurcated internet: one web of cables tied to America and its allies, another to China, and — tellingly — no new cables between the two approved since Obama was president."
+ },
+ {
+  "k": "rewiring",
+  "t": "rewiring",
+  "kind": "word",
+  "forms": [
+   "rewiring"
+  ],
+  "text": "To rewire something is to rip out its old wiring and run new wires along different paths — what an electrician does to an old house. The headline means it almost literally: the actual cables under Asia's oceans are being laid along entirely new routes."
+ },
+ {
+  "k": "geopolitics",
+  "t": "geopolitics",
+  "kind": "word",
+  "forms": [
+   "geopolitics",
+   "geopolitical"
+  ],
+  "text": "Geopolitics is politics played on the map — how geography, power, and rivalry between countries shape each other (“geo” means earth). Here it's the U.S.–China rivalry pushing cables away from waters China claims; “geopolitical risk” is the danger of getting caught in that squeeze."
+ },
+ {
+  "k": "chokepoints",
+  "t": "chokepoints",
+  "kind": "word",
+  "forms": [
+   "chokepoints",
+   "chokepoint"
+  ],
+  "text": "A chokepoint is a narrow passage everything must squeeze through — and where everything can be choked off, the way one blocked doorway stops a whole crowd. Narrow straits like Malacca are the ocean's chokepoints: whoever controls them can slow, tax, or cut what passes through, which is exactly why the new cables detour around them."
+ },
+ {
+  "k": "counterparts",
+  "t": "counterparts",
+  "kind": "word",
+  "forms": [
+   "counterparts"
+  ],
+  "text": "Your counterpart is the person who holds the same job as you somewhere else — the defence minister of Japan is the counterpart of Australia's. Marles's “16 of his counterparts” means sixteen other countries' defence ministers joined the announcement."
+ },
+ {
+  "k": "submarine",
+  "t": "submarine",
+  "kind": "word",
+  "forms": [
+   "submarine"
+  ],
+  "text": "Here “submarine” is an adjective meaning simply under the sea (“sub” = under, “marine” = of the sea) — not the naval vessel. The “submarine tendrils of the digital world” are the underwater cables, not warships."
+ },
+ {
+  "k": "tendrils",
+  "t": "tendrils",
+  "kind": "word",
+  "forms": [
+   "tendrils"
+  ],
+  "text": "Tendrils are the thin, curling threads a climbing plant sends out to grip whatever it can reach. Calling the world's 700 communications cables “tendrils” paints the internet as a living vine, its delicate threads creeping across the ocean floor."
+ },
+ {
+  "k": "awoken-to",
+  "t": "awoken to",
+  "kind": "phrase",
+  "forms": [
+   "awoken to"
+  ],
+  "text": "To awaken to something is to suddenly realize how much it matters — as if you'd been asleep while it was true all along. Asia's governments have only recently awoken to the importance of cables that have carried their internet for decades."
+ },
+ {
+  "k": "overblown",
+  "t": "overblown",
+  "kind": "word",
+  "forms": [
+   "overblown"
+  ],
+  "text": "Overblown means inflated beyond what the facts support — puffed up bigger than reality, like a balloon with too much air. The article's careful judgment: the sabotage fears may be overblown, but the worry about how exposed the cables are is real."
+ },
+ {
+  "k": "conclusive",
+  "t": "conclusive",
+  "kind": "word",
+  "forms": [
+   "conclusive"
+  ],
+  "text": "Conclusive evidence is proof strong enough to settle the question — it lets you draw a firm conclusion. No conclusive evidence of sabotage has been shared for the cut cables, which is the article's polite way of saying: nobody has actually proven it."
+ },
+ {
+  "k": "sabotage",
+  "t": "sabotage",
+  "kind": "word",
+  "forms": [
+   "sabotage"
+  ],
+  "text": "Sabotage is deliberately damaging or destroying something to hurt an enemy or rival — secretly cutting the thing they depend on. The open question haunting this article is whether the severed cables in the Baltic and around Taiwan were accidents (a dragging anchor, a fishing net) or sabotage."
+ },
+ {
+  "k": "arteries",
+  "t": "arteries",
+  "kind": "word",
+  "forms": [
+   "arteries"
+  ],
+  "text": "Arteries are the big vessels that carry blood from your heart to everywhere else — cut one and the whole body is in trouble. Calling the cables “arteries of commerce” says world trade flows through them the way blood flows through you: constantly, invisibly, and fatally if severed."
+ },
+ {
+  "k": "contested",
+  "t": "contested",
+  "kind": "word",
+  "forms": [
+   "contested"
+  ],
+  "text": "Contested means fought over — claimed by more than one side, with the dispute still unsettled. Asia's “contested waters,” like the South China Sea, are seas where rival countries' claims overlap, making them exactly the places a cable owner would rather avoid."
+ },
+ {
+  "k": "hug",
+  "t": "hug",
+  "kind": "word",
+  "forms": [
+   "hug"
+  ],
+  "text": "When a route “hugs” the coastline it stays pressed close to it, the way a race car hugs the inside of a curve — no arms involved. Older cables hug Asia's coasts because that's where the customers were; the new ones strike out across open ocean instead."
+ },
+ {
+  "k": "fibre-optic",
+  "t": "fibre-optic",
+  "kind": "word",
+  "forms": [
+   "fibre-optic",
+   "fibre"
+  ],
+  "text": "A fibre-optic cable carries data as pulses of light flashing down threads of glass thinner than a hair — by far the fastest, cheapest way to move information ever built. (“Fibre” is the British spelling of fiber; The Economist is a British paper.) Every cable in this story is one."
+ },
+ {
+  "k": "strait-of-malacca",
+  "t": "Strait of Malacca",
+  "kind": "name",
+  "forms": [
+   "Strait of Malacca"
+  ],
+  "text": "The narrow sea passage between Malaysia, Singapore, and the Indonesian island of Sumatra — one of the busiest shipping lanes on Earth and the classic chokepoint between the Indian and Pacific oceans. Much of Asia's internet has always squeezed through it; the new routes go around."
+ },
+ {
+  "k": "south-china-sea",
+  "t": "South China Sea",
+  "kind": "name",
+  "forms": [
+   "South China Sea"
+  ],
+  "text": "The sea between China, Vietnam, and the Philippines — one of the most disputed patches of water on Earth. China claims almost all of it, its neighbors and international law disagree, and that standoff is why cable companies now treat it as water to route around."
+ },
+ {
+  "k": "spurs",
+  "t": "spurs",
+  "kind": "word",
+  "forms": [
+   "spurs"
+  ],
+  "text": "A spur here is a short branch line splitting off a main route — railway language, nothing to do with cowboy boots. The Oman–Australia cable has spurs peeling off to Diego Garcia and the Cocos Islands, like driveways off a highway."
+ },
+ {
+  "k": "diego-garcia",
+  "t": "Diego Garcia",
+  "kind": "name",
+  "forms": [
+   "Diego Garcia"
+  ],
+  "text": "A tiny, remote island in the middle of the Indian Ocean that hosts a major joint British-American military base. A cable spur running to it hints at who else cares about these new routes: the military."
+ },
+ {
+  "k": "hub",
+  "t": "hub",
+  "kind": "word",
+  "forms": [
+   "hub"
+  ],
+  "text": "The hub is the center of a wheel, where all the spokes meet — so a hub is any central point that many routes connect through, like an airline's hub airport. Google is turning Christmas Island into a cable hub, and in the Pacific the American island of Guam plays the same role."
+ },
+ {
+  "k": "consortia",
+  "t": "consortia",
+  "kind": "word",
+  "forms": [
+   "consortia",
+   "consortium"
+  ],
+  "text": "A consortium (plural: consortia) is a team of companies that band together to do something too big or expensive for any one of them alone. One 1999 cable had 92 consortium partners — and the article's point is that herding that many firms made cables slow and costly, until tech giants started going it alone."
+ },
+ {
+  "k": "come-online",
+  "t": "come online",
+  "kind": "phrase",
+  "forms": [
+   "come online"
+  ],
+  "text": "When a system “comes online” it switches on and starts operating for real — engineers' slang that predates the internet. The sea-me-we 3 cable came online in 1999, one of the first big fibre links between Europe and Asia."
+ },
+ {
+  "k": "lead-time",
+  "t": "lead-time",
+  "kind": "word",
+  "forms": [
+   "lead-time"
+  ],
+  "text": "Lead-time is the waiting period between deciding to do something and actually having it done — order a custom skateboard and the lead-time is however long the shop takes to build it. One company acting alone slashes the lead-time for a new cable, since there are no 92 partners to argue with."
+ },
+ {
+  "k": "scrambling",
+  "t": "scrambling",
+  "kind": "word",
+  "forms": [
+   "scrambling"
+  ],
+  "text": "To scramble something is to mix it up so thoroughly the old pattern is destroyed — think scrambled eggs, or a scrambled radio signal. The AI boom is scrambling the economics of the cable business: the old rules about who pays and where cables go no longer hold."
+ },
+ {
+  "k": "single-handedly",
+  "t": "single-handedly",
+  "kind": "word",
+  "forms": [
+   "single-handedly"
+  ],
+  "text": "To do something single-handedly is to do it entirely alone, with no partners or help — one pair of hands. It's the article's pivot: cables that once took 92-company consortia are now financed and built single-handedly by giants like Google, which owns 18 cables with no partners at all."
+ },
+ {
+  "k": "data-centres",
+  "t": "data centres",
+  "kind": "name",
+  "forms": [
+   "data centres"
+  ],
+  "text": "A data centre is a warehouse packed with thousands of computers — the physical buildings where “the cloud” and AI models actually live. (“Centre” is the British spelling.) The key shift in the article: new cables are being built to connect these buildings to each other, not to connect cities of people."
+ },
+ {
+  "k": "hyperscalers",
+  "t": "hyperscalers",
+  "kind": "name",
+  "forms": [
+   "hyperscalers"
+  ],
+  "text": "The nickname for the handful of tech giants — Google, Meta, Microsoft, Amazon — that run computing at gigantic (“hyper”) scale, with worldwide networks of data centres. They have so much cash they can now build infrastructure, like billion-dollar cables, that once took whole consortia of telecom firms."
+ },
+ {
+  "k": "starlink",
+  "t": "Starlink",
+  "kind": "name",
+  "forms": [
+   "Starlink"
+  ],
+  "text": "SpaceX's satellite-internet service, which beams the internet down from thousands of small satellites. The article brings it up to knock it down: even as satellites get cheaper, sending data through space costs vastly more than pushing light down a cable — so cables still carry 99% of intercontinental traffic."
+ },
+ {
+  "k": "orders-of-magnitude",
+  "t": "orders of magnitude",
+  "kind": "phrase",
+  "forms": [
+   "orders of magnitude"
+  ],
+  "text": "An order of magnitude is a factor of ten, so “orders of magnitude more expensive” means not a bit pricier but ten, a hundred, a thousand times pricier. It's how scientists say “not even close” — and it's why satellites won't replace cables for many years yet."
+ },
+ {
+  "k": "consolidates-vertically",
+  "t": "consolidates vertically",
+  "kind": "phrase",
+  "forms": [
+   "consolidates vertically"
+  ],
+  "text": "A market consolidates when many separate players merge into a few; “vertically” means one company swallowing the steps above and below it in the supply chain. Here the tech giants now own the whole stack — the data centres that create the traffic and the cables that carry it — instead of renting cable space from telecom firms."
+ },
+ {
+  "k": "unshackled",
+  "t": "unshackled",
+  "kind": "word",
+  "forms": [
+   "unshackled"
+  ],
+  "text": "Shackles are the iron cuffs that chain a prisoner, so to be unshackled is to be freed from whatever was holding you back. Cables connecting data centres don't need to run near cities of customers — unshackled from that constraint, they can strike across the open ocean."
+ },
+ {
+  "k": "extract",
+  "t": "extract",
+  "kind": "word",
+  "forms": [
+   "extract"
+  ],
+  "text": "To extract is to pull something out — often, here, to squeeze money out of a position of power, the way you'd extract juice from an orange. Countries sitting on chokepoints can extract payment from every cable that must cross their seabed, which is precisely what the new routes are designed to escape."
+ },
+ {
+  "k": "acute",
+  "t": "acute",
+  "kind": "word",
+  "forms": [
+   "acute"
+  ],
+  "text": "Acute means sharp and severe — an acute pain is intense, an acute problem is at its most dangerous point. Saying geopolitical risk “has become particularly acute” in the South China Sea means that's where the danger is sharpest."
+ },
+ {
+  "k": "effect",
+  "t": "effect",
+  "kind": "word",
+  "forms": [
+   "effect"
+  ],
+  "text": "Watch this one: “effect” here is a verb meaning to bring about or accomplish — “China has yet to effect full control” means it hasn't yet achieved it. It's not the everyday noun (“a cool effect”), and it's not “affect” either; this rarer verb sense trips up plenty of adults."
+ },
+ {
+  "k": "de-facto",
+  "t": "de facto",
+  "kind": "phrase",
+  "forms": [
+   "de facto"
+  ],
+  "text": "Latin for “in fact” — describing how things actually are in practice, whatever the law says (the opposite is de jure, “by law”). China has no recognized legal title to the South China Sea's seabed, but it exercises de facto sovereignty: in practice, cable repairs there need Beijing's permission."
+ },
+ {
+  "k": "sovereignty",
+  "t": "sovereignty",
+  "kind": "word",
+  "forms": [
+   "sovereignty"
+  ],
+  "text": "Sovereignty is supreme authority over a territory — the power of a state to rule a place and answer to nobody above it. The article's sharp phrase “de facto sovereignty over the seabed” means China acts as the seabed's ruler in practice, even without the legal right."
+ },
+ {
+  "k": "territorial-sea",
+  "t": "territorial sea",
+  "kind": "phrase",
+  "forms": [
+   "territorial sea"
+  ],
+  "text": "A country's territorial sea is the strip of ocean along its coast — twelve nautical miles under international law — that legally counts as its territory. Beyond that strip, states aren't supposed to interfere with cable repairs; China's “nine-dash” claim reaches far, far past it."
+ },
+ {
+  "k": "nine-dash-line",
+  "t": "nine-dash line",
+  "kind": "name",
+  "forms": [
+   "nine-dash"
+  ],
+  "text": "The line China draws on its maps — literally nine dashes looping over a thousand kilometres from its coast — to claim nearly the whole South China Sea as its waters. International courts have rejected it, but inside the line, cable repairs still require approval from Beijing."
+ },
+ {
+  "k": "transiting",
+  "t": "transiting",
+  "kind": "word",
+  "forms": [
+   "transiting"
+  ],
+  "text": "To transit is to pass through a place on the way to somewhere else — the same root as “transit” in public transit. Cables transiting the Strait of Malacca must cross other countries' waters en route, and every crossing is a chance to be taxed, delayed, or regulated."
+ },
+ {
+  "k": "littoral",
+  "t": "littoral",
+  "kind": "word",
+  "forms": [
+   "littoral"
+  ],
+  "text": "Littoral (not “literal”!) means relating to the shore — a littoral country is one whose coast lines the waterway in question. Malaysia and Indonesia are the littoral states of the Malacca chokepoint, and their constantly shifting rules are one of the “expensive annoyances” cable firms want to escape."
+ },
+ {
+  "k": "musings",
+  "t": "musings",
+  "kind": "word",
+  "forms": [
+   "musings"
+  ],
+  "text": "Musings are thoughts spoken aloud while you're still turning them over — to muse is to ponder. When Indonesia's president publicly muses about making money from the sea-lanes crossing his country, cable companies hear a warning of tolls to come."
+ },
+ {
+  "k": "cash-strapped",
+  "t": "cash-strapped",
+  "kind": "phrase",
+  "forms": [
+   "cash-strapped"
+  ],
+  "text": "Cash-strapped means short of money — strapped so tight financially there's no room to breathe. It's the telling detail about Indonesia's president: a government hungry for revenue, sitting astride the world's busiest sea-lanes, is exactly the kind that might start charging."
+ },
+ {
+  "k": "astride",
+  "t": "astride",
+  "kind": "word",
+  "forms": [
+   "astride"
+  ],
+  "text": "To sit astride something is to straddle it with one leg on each side, like riding a horse. Indonesia sits astride the great sea-lanes between the Indian and Pacific oceans — the traffic literally has to pass between its islands."
+ },
+ {
+  "k": "sea-lanes",
+  "t": "sea-lanes",
+  "kind": "word",
+  "forms": [
+   "sea-lanes"
+  ],
+  "text": "Sea-lanes are the established highway routes ships follow across the ocean — invisible on the water but as fixed as roads on a map. Some of the world's greatest sea-lanes thread through Indonesia's straits, which is what makes its position so valuable."
+ },
+ {
+  "k": "shoals",
+  "t": "shoals",
+  "kind": "word",
+  "forms": [
+   "shoals"
+  ],
+  "text": "Shoals are hidden shallow patches — sandbanks just under the surface that wreck ships whose captains don't steer around them. The article uses them as a metaphor: chokepoints and contested waters are the “risky shoals” today's internet traffic is navigating around."
+ },
+ {
+  "k": "guam",
+  "t": "Guam",
+  "kind": "name",
+  "forms": [
+   "Guam"
+  ],
+  "text": "A U.S. island territory in the western Pacific, home to major American military bases. Its new job in this story: serving as the Pacific's cable hub, the junction connecting America to its Asian allies."
+ },
+ {
+  "k": "infrastructure",
+  "t": "infrastructure",
+  "kind": "word",
+  "forms": [
+   "infrastructure"
+  ],
+  "text": "Infrastructure is the basic underlying equipment a system runs on — roads and power lines for a country, cables and data centres for the internet. The article's final image is internet infrastructure splitting in two beneath the waves, one half American-allied, one half Chinese."
+ },
+ {
+  "k": "baltic-sea",
+  "t": "Baltic Sea",
+  "kind": "name",
+  "forms": [
+   "Baltic Sea"
+  ],
+  "text": "The sea in northern Europe ringed by Scandinavia, Germany, Poland, the Baltic states, and Russia. Several undersea cables have been mysteriously cut there in recent years — the incidents, along with cuts near Taiwan, that have defence ministers talking about the seabed as a battlefield."
+ }
+]

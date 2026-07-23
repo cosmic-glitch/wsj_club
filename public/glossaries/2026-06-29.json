@@ -1,0 +1,298 @@
+[
+ {
+  "k": "rebuke",
+  "t": "rebuke",
+  "kind": "vocab",
+  "pron": "rih-BYOOK",
+  "forms": ["rebukes"],
+  "text": "A rebuke is a sharp, public expression of disapproval — a scolding. When 80% of voting shareholders opposed the CEO's pay plan, that vote was one of the biggest rebukes of executive pay anywhere last year: the owners of the company loudly telling the board it went too far."
+ },
+ {
+  "k": "clout",
+  "t": "clout",
+  "kind": "vocab",
+  "pron": "KLOWT",
+  "forms": ["clout"],
+  "text": "Clout is influence — the power to get what you want and sway other people's decisions. Because Welltower had grown so large, it had clout smaller rivals lacked, and Mitra used it to lock up exclusive partnerships with the industry's strongest operators."
+ },
+ {
+  "k": "lows",
+  "t": "at its lows",
+  "kind": "phrase",
+  "forms": ["Lows"],
+  "text": "In markets, “the lows” are the bottom — the cheapest prices something hits. Buying senior housing “at its lows” means buying when prices were rock-bottom and everyone else was scared. That's the dare in the headline: the hardest moment to buy is exactly when things look worst, and it's when the bargains are."
+ },
+ {
+  "k": "compensation",
+  "t": "compensation",
+  "kind": "word",
+  "forms": ["compensation"],
+  "text": "In business, compensation just means pay — salary, bonus, and stock all bundled together (not “making up for” something). An executive's “compensation plan” is the full package a company designs to pay and keep them; Mitra's is one of the richest in corporate America."
+ },
+ {
+  "k": "retention",
+  "t": "retention",
+  "kind": "word",
+  "forms": ["retention", "retaining"],
+  "text": "Retention means keeping something — here, keeping people from leaving. Welltower says the giant pay plan is about “long-term retention” of its leaders: golden handcuffs that make walking away too expensive. The critics' complaint is that too much of the pay rewards exactly that — staying — rather than performing."
+ },
+ {
+  "k": "pay-package",
+  "t": "pay package",
+  "kind": "phrase",
+  "forms": ["pay package"],
+  "text": "A pay package is everything an executive gets bundled together — base salary, cash bonus, and (usually the biggest slice by far) stock awards. Five years ago, a package like this in the battered senior-housing business would have been unthinkable."
+ },
+ {
+  "k": "overbuilding",
+  "t": "overbuilding",
+  "kind": "word",
+  "forms": ["overbuilding"],
+  "text": "Overbuilding is an industry constructing more buildings than there are customers to fill them. Years of it left senior housing with too many empty units and weak rents — the first of the two blows, before the pandemic delivered the second."
+ },
+ {
+  "k": "battered",
+  "t": "battered",
+  "kind": "word",
+  "forms": ["battered"],
+  "text": "Battered means beaten up by repeated blows — a boat battered by storms. The senior-housing business was battered by the pandemic: thousands of elderly residents died, move-ins slowed, and labor costs soared. That wreckage is what Welltower chose to buy into."
+ },
+ {
+  "k": "commercial-real-estate",
+  "t": "commercial real estate",
+  "kind": "phrase",
+  "forms": ["commercial real estate"],
+  "text": "Commercial real estate is property owned to make money — office towers, malls, warehouses, apartment complexes — as opposed to homes people buy to live in. Senior housing has gone from its sick ward to one of its hottest sectors in five years."
+ },
+ {
+  "k": "baby-boom",
+  "t": "baby boom generation",
+  "kind": "name",
+  "forms": ["baby boom generation"],
+  "text": "The huge generation born in the “baby boom” after World War II, roughly 1946–1964 — one of the biggest population bulges in American history. Its oldest members are now hitting their late seventies and eighties, the age when many need senior care, and that giant, decades-visible wave is the demand lifting Welltower's whole industry."
+ },
+ {
+  "k": "assisted-living",
+  "t": "assisted living",
+  "kind": "phrase",
+  "forms": ["assisted living", "independent living", "memory care", "skilled nursing"],
+  "text": "Senior housing comes as a ladder of care levels. Independent living is an apartment with services for seniors who manage fine on their own; assisted living adds daily help with things like bathing and medications; memory care is a secure unit specializing in dementia and Alzheimer's; and skilled nursing is round-the-clock medical care. Welltower's communities span the whole ladder."
+ },
+ {
+  "k": "occupancy",
+  "t": "occupancy",
+  "kind": "word",
+  "forms": ["occupancy", "Occupied"],
+  "text": "Occupancy is the share of units that are filled — a landlord's vital sign, since an empty apartment earns nothing. The whole story is in one curve: 87.4% before the pandemic, a terrifying 78.2% low in 2021, and a record-beating 89.9% now. Welltower bought at the bottom of that curve."
+ },
+ {
+  "k": "rebound",
+  "t": "rebound",
+  "kind": "word",
+  "forms": ["rebound"],
+  "text": "To rebound is to bounce back after a fall — same word as grabbing the basketball after a missed shot. Occupancy continued to rebound this year, which is what turned Welltower's scary pandemic-era bet into a triumph."
+ },
+ {
+  "k": "quarter",
+  "t": "quarter",
+  "kind": "word",
+  "forms": ["first quarter", "quarter"],
+  "text": "In business, a quarter is one fourth of the year — three months. Companies report their numbers quarter by quarter, so “the first quarter” means January through March. Not 25 cents!"
+ },
+ {
+  "k": "operators",
+  "t": "operators",
+  "kind": "word",
+  "forms": ["operators", "operator"],
+  "text": "Here an operator is a company that runs a property day to day — hiring the caregivers, marketing the apartments, caring for residents. Welltower owns the buildings but doesn't run them; firms like Sunrise and Atria operate them. Managing those partnerships well is what analysts praise Mitra for most."
+ },
+ {
+  "k": "reit",
+  "t": "REIT",
+  "kind": "name",
+  "forms": ["REIT", "landlord"],
+  "text": "A REIT — real estate investment trust — is a company whose whole business is owning income-producing property, with shares trading on the stock market like any stock. It lets ordinary people invest in big buildings without buying one, and it typically splits owning from operating: Welltower is the landlord collecting rent; the operators run the communities."
+ },
+ {
+  "k": "market-verb",
+  "t": "market",
+  "kind": "word",
+  "forms": ["market apartments"],
+  "text": "Here “market” is a verb: to market apartments is to advertise and promote them to would-be renters. One of the operator's jobs — filling the building is half the business."
+ },
+ {
+  "k": "incentives",
+  "t": "incentives",
+  "kind": "word",
+  "forms": ["incentives"],
+  "text": "An incentive is a reward designed to encourage a behavior. Mitra gave operators incentives to improve performance and rewrote contracts so Welltower shared the gains when they filled apartments — lining everyone's rewards up so what's good for the operator is good for Welltower too. The fight over his own pay is about the same idea, pointed at him."
+ },
+ {
+  "k": "peers",
+  "t": "peers",
+  "kind": "word",
+  "forms": ["peers"],
+  "text": "Your peers are your equals — for a company, the rival firms in the same business. Welltower has “the best operator relationships among all of their peers,” and its stock trades at a far bigger premium than its REIT peers do."
+ },
+ {
+  "k": "lucrative",
+  "t": "lucrative",
+  "kind": "word",
+  "forms": ["lucrative"],
+  "text": "Lucrative means highly profitable — producing lots of money. Welltower concentrated on the industry's most lucrative segment: upscale communities for affluent seniors, where rents can top $20,000 a month."
+ },
+ {
+  "k": "upscale",
+  "t": "upscale",
+  "kind": "word",
+  "forms": ["upscale"],
+  "text": "Upscale means aimed at wealthy customers — high-end, expensive, fancy. Welltower's upscale communities look more like boutique hotels than retirement homes, and that's precisely the strategy."
+ },
+ {
+  "k": "affluent",
+  "t": "affluent",
+  "kind": "word",
+  "forms": ["affluent"],
+  "text": "Affluent means wealthy — from a Latin word for “flowing,” as in money flowing abundantly. Serving affluent seniors is Welltower's chosen niche: customers who can pay $15,000-plus a month, in rich areas like Manhattan, Southern California, and South Florida."
+ },
+ {
+  "k": "boutique-hotel",
+  "t": "boutique hotel",
+  "kind": "phrase",
+  "forms": ["boutique hotel"],
+  "text": "A boutique hotel is a small, stylish, luxurious hotel — the opposite of a giant chain. Saying Sunrise at East 56th looks more like an upscale boutique hotel than a retirement home tells you exactly what image Welltower is selling: chef-prepared meals, a salon, a theater, concierge services."
+ },
+ {
+  "k": "concierge",
+  "t": "concierge",
+  "kind": "word",
+  "forms": ["concierge"],
+  "text": "A concierge (from French, kon-see-AIRZH) is a hotel's personal-service desk — the person who books your tickets, hails your car, and handles requests. “Concierge services” in a retirement community signal five-star-hotel treatment."
+ },
+ {
+  "k": "fidelity-citadel",
+  "t": "Fidelity and Citadel",
+  "kind": "name",
+  "forms": ["Fidelity Investments", "Citadel"],
+  "text": "Two famous American finance firms — Fidelity Investments is one of the biggest managers of ordinary people's savings, and Citadel is one of the world's most successful hedge funds. Mitra's stops there, after an engineering degree in India, explain his numbers-first style."
+ },
+ {
+  "k": "shares",
+  "t": "shares",
+  "kind": "word",
+  "forms": ["shares"],
+  "text": "A share is one slice of ownership in a company; a company's share price tracks what investors think it's worth. Welltower shares went from the low $40s when Mitra became CEO in 2020 to above $200 today — the fivefold rise behind both his fame and his enormous pay award."
+ },
+ {
+  "k": "underlying",
+  "t": "underlying",
+  "kind": "word",
+  "forms": ["underlying"],
+  "text": "Underlying means lying beneath — the real thing under the surface numbers. Welltower's “underlying real estate” is the actual buildings it owns; the striking fact is that the stock trades at roughly double what those buildings alone are worth."
+ },
+ {
+  "k": "premiums",
+  "t": "premium",
+  "kind": "word",
+  "forms": ["premiums"],
+  "text": "A premium is the extra amount paid above the base value. Welltower's shares trade at a 115–125% premium to its property's value, versus 35–55% for rival REITs — investors pay extra for the management. That expensive stock is itself a weapon: the company can sell a little of it to raise a lot of money for new acquisitions."
+ },
+ {
+  "k": "acquisitions",
+  "t": "acquisitions",
+  "kind": "word",
+  "forms": ["acquisitions"],
+  "text": "An acquisition is a purchase — in business, one company buying another company or its properties. Welltower's playbook is to keep funding additional acquisitions with money raised by selling its highly valued stock."
+ },
+ {
+  "k": "metrics",
+  "t": "metrics",
+  "kind": "word",
+  "forms": ["metrics"],
+  "text": "Metrics are the numbers you measure performance by — occupancy rates, share price, premiums. “These metrics help explain” means: by the measurable scoreboard, Mitra has delivered, which is why the board felt justified paying him so much."
+ },
+ {
+  "k": "board",
+  "t": "board",
+  "kind": "word",
+  "forms": ["board"],
+  "text": "A company's board — short for board of directors — is the group elected by shareholders to oversee the company and hire, fire, and pay the CEO. Welltower's board designed Mitra's package; the shareholders it answers to then voted four-to-one against it."
+ },
+ {
+  "k": "earnings-call",
+  "t": "earnings call",
+  "kind": "phrase",
+  "forms": ["earnings call"],
+  "text": "An earnings call is the conference call a public company holds every quarter, where executives walk investors through the results and take questions. It's where CEOs speak on the record — both of Mitra's quotes here come from earnings calls."
+ },
+ {
+  "k": "say-on-pay",
+  "t": "say-on-pay",
+  "kind": "phrase",
+  "forms": ["say-on-pay", "resolution"],
+  "text": "A say-on-pay resolution is a shareholder vote on executive pay — literally the owners' “say” on what the boss earns. Crucially it's advisory: the board can ignore the result. But an 80% “no” is a public slap that boards ignore at their peril."
+ },
+ {
+  "k": "shareholders",
+  "t": "shareholders",
+  "kind": "word",
+  "forms": ["shareholders"],
+  "text": "Shareholders are the people and funds that own a company's shares — its actual owners. The drama here is owners versus board: the board granted the package; the shareholders overwhelmingly voted their disapproval."
+ },
+ {
+  "k": "base-salary",
+  "t": "base salary",
+  "kind": "phrase",
+  "forms": ["base salary"],
+  "text": "A base salary is the fixed, guaranteed part of pay — what you earn before any bonus or stock. Mitra's $1.3 million base (plus a $6.5 million bonus) is the small print; the real money is the stock award worth over a hundred times his salary."
+ },
+ {
+  "k": "modest",
+  "t": "modest",
+  "kind": "word",
+  "forms": ["modest"],
+  "text": "Modest means small and unshowy. Calling $7.8 million of regular pay “pretty modest” sounds absurd — until you learn the comparison: for the CEO of a major US company it genuinely is, and it's a rounding error next to the $821 million stock award."
+ },
+ {
+  "k": "stock-award",
+  "t": "stock award",
+  "kind": "phrase",
+  "forms": ["stock award"],
+  "text": "A stock award pays an executive in company shares rather than cash, delivered over years — Mitra's is a one-time, 10-year grant valued at $821 million. The logic: pay him in the stock itself, so he only gets rich if shareholders do too. The dispute is over how much of it actually depends on performance."
+ },
+ {
+  "k": "equity",
+  "t": "equity",
+  "kind": "word",
+  "forms": ["equity"],
+  "text": "In finance, equity means ownership — shares in the company. The “long-term equity awards” for other executives (roughly $170 million worth) are pay delivered as ownership stakes, spread over years to keep the team from leaving. As Mitra put it: “this is a team game.”"
+ },
+ {
+  "k": "fault",
+  "t": "fault",
+  "kind": "word",
+  "forms": ["fault"],
+  "text": "Here fault is a verb: to fault someone is to blame or criticize them. “Critics fault the award” means they find fault with it — specifically, that too much of it pays out for sticking around rather than for performing."
+ },
+ {
+  "k": "vests",
+  "t": "vests",
+  "kind": "word",
+  "forms": ["vests"],
+  "text": "When a stock award vests, it becomes truly yours to keep — before vesting, it's only a promise that dies if you leave. Awards can vest with the passage of time or by hitting performance targets, and that difference is the whole fight: roughly half of Mitra's package vests mainly on time — rewarding staying, not succeeding."
+ },
+ {
+  "k": "hurdles",
+  "t": "hurdles",
+  "kind": "word",
+  "forms": ["hurdles"],
+  "text": "A hurdle is a barrier you must clear, like the hurdles in a track race — in pay plans, a performance target that must be hit before money is released. Critics note Mitra's hurdles are concentrated in the plan's first five years, leaving the back half of the decade largely hurdle-free."
+ },
+ {
+  "k": "magnitudes",
+  "t": "magnitudes",
+  "kind": "word",
+  "forms": ["magnitudes"],
+  "text": "Magnitude is sheer size — how big something is (earthquakes are measured by it). The pay consultant's point: “At these magnitudes” — hundreds of millions of dollars — having half the award merely time-based “just seems too much.” Rules loosen oddly when the numbers get enormous; he's saying they shouldn't."
+ }
+]

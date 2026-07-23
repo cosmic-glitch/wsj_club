@@ -1,0 +1,688 @@
+[
+ {
+  "k": "capricious",
+  "t": "capricious",
+  "kind": "vocab",
+  "pron": "kuh-PRISH-us",
+  "forms": [
+   "capricious"
+  ],
+  "text": "Capricious means acting on sudden whims — changing direction unpredictably and for no good reason, like mountain weather that's sunny one minute and hailing the next. The article's verdict on the government's crackdown: a capricious attempt to assert authority, made on impulse rather than by plan, that ended up hurting users worldwide."
+ },
+ {
+  "k": "conundrum",
+  "t": "conundrum",
+  "kind": "vocab",
+  "pron": "kuh-NUN-drum",
+  "forms": [
+   "conundrum"
+  ],
+  "text": "A conundrum is a difficult puzzle with no easy or obvious answer. Beneath all the name-calling sits a genuine regulatory conundrum: how does a government control a powerful new technology when it deliberately never wrote any rules for doing so?"
+ },
+ {
+  "k": "supplant",
+  "t": "supplant",
+  "kind": "vocab",
+  "pron": "suh-PLANT",
+  "forms": [
+   "supplant"
+  ],
+  "text": "To supplant something is to take its place — to push aside and replace what was there before, the way streaming supplanted DVD rentals. The software industry's fear is exactly that: AI labs won't just compete with existing software companies, they'll supplant them."
+ },
+ {
+  "k": "imperious",
+  "t": "imperious",
+  "kind": "vocab",
+  "pron": "im-PEER-ee-us",
+  "forms": [
+   "imperious"
+  ],
+  "text": "Imperious means domineering and arrogant — behaving like an emperor (same root) who expects to be obeyed without question. Calling Mr Trump “America's imperious president” sets up the article's whole church-versus-state frame: a commanding ruler colliding with a company that answers to its own convictions."
+ },
+ {
+  "k": "paradox",
+  "t": "paradox",
+  "kind": "word",
+  "forms": [
+   "paradox"
+  ],
+  "text": "A paradox is a situation that seems to contradict itself yet holds true. The opening one: religious leaders matter enormously to believers yet hold almost no practical power — and it's precisely their refusal to grab worldly power that gives them moral power. The article hangs the entire Anthropic story on this frame."
+ },
+ {
+  "k": "wield",
+  "t": "wield",
+  "kind": "word",
+  "forms": [
+   "wield"
+  ],
+  "text": "To wield power is to hold it and actively use it, the way you'd wield a sword or a hammer. Spiritual leaders typically wield little practical power — no armies, no police — which is the first half of the article's paradox."
+ },
+ {
+  "k": "sully",
+  "t": "sully",
+  "kind": "word",
+  "forms": [
+   "sully"
+  ],
+  "text": "To sully something is to stain or dirty it — usually a reputation or purity, not a shirt. Holy men gain moral authority by refusing to sully themselves with everyday politics; the article hints Anthropic has taken the same stance, with the same costs."
+ },
+ {
+  "k": "quandaries",
+  "t": "quandaries",
+  "kind": "word",
+  "forms": [
+   "quandaries"
+  ],
+  "text": "A quandary is a state of not knowing what to do — a dilemma where every option feels wrong. The “quandaries and compromises of everyday life” are the messy trade-offs practical leaders must make and pure idealists get to refuse."
+ },
+ {
+  "k": "confers",
+  "t": "confer",
+  "kind": "word",
+  "forms": [
+   "confers",
+   "conferred"
+  ],
+  "text": "To confer something is to grant or bestow it, usually something valuable like an honor or a power. Staying above politics confers moral authority on holy men; later, Anthropic worries about AI being conferred on “impetuous laypeople” — handed to people unprepared for it."
+ },
+ {
+  "k": "subdue",
+  "t": "subdue",
+  "kind": "word",
+  "forms": [
+   "subdue"
+  ],
+  "text": "To subdue someone is to bring them under control by force. Kings found it easy to subdue priests in the short run (priests have no weapons) — and hard in the long run, because persecution only made them more admired. That, the article implies, is the trap the White House may be walking into with Anthropic."
+ },
+ {
+  "k": "persecution",
+  "t": "persecution",
+  "kind": "word",
+  "forms": [
+   "persecution",
+   "persecuted"
+  ],
+  "text": "Persecution is sustained, unfair mistreatment of a person or group, often for their beliefs. History's twist: persecuting holy men raises their moral standing — martyrdom is good PR. Mr Amodei leaned on exactly this vocabulary when he said Anthropic was being persecuted for withholding “dictator-style praise.”"
+ },
+ {
+  "k": "prelates",
+  "t": "prelates",
+  "kind": "word",
+  "forms": [
+   "prelates"
+  ],
+  "text": "Prelates are high-ranking church officials — bishops, cardinals, archbishops. Medieval prelates and princes spent centuries locked in exactly the power struggle this article maps onto Anthropic and the White House."
+ },
+ {
+  "k": "supreme-pontiff",
+  "t": "supreme pontiff",
+  "kind": "phrase",
+  "forms": [
+   "supreme pontiff"
+  ],
+  "text": "“Supreme pontiff” is the pope's formal title. Applying it to Dario Amodei, Anthropic's CEO, is the article's running joke — and its thesis: he leads his company like the head of a faith, preaching sermons about AI safety to the converted."
+ },
+ {
+  "k": "underlings",
+  "t": "underlings",
+  "kind": "word",
+  "forms": [
+   "underlings"
+  ],
+  "text": "Underlings are subordinates — the people under a boss who carry out his wishes. Saying “underlings of Mr Trump” interfered in Anthropic's business is a little dismissive on purpose: not the president himself, just his people."
+ },
+ {
+  "k": "peremptorily",
+  "t": "peremptorily",
+  "kind": "word",
+  "forms": [
+   "peremptorily"
+  ],
+  "text": "To act peremptorily is to give orders abruptly and dictatorially, allowing no discussion or refusal — the tone of “do it now, I won't be argued with.” That's how the article says officials interfered in Anthropic's affairs: commands, not conversations."
+ },
+ {
+  "k": "potent",
+  "t": "potent",
+  "kind": "word",
+  "forms": [
+   "potent"
+  ],
+  "text": "Potent means powerful — packing real force or effect (it shares a root with “potential”). The two sides agree AI is potent; they disagree violently about what follows: the administration sees a potent tool for American power, Anthropic sees a force too potent to hand out without safeguards."
+ },
+ {
+  "k": "impetuous",
+  "t": "impetuous",
+  "kind": "word",
+  "forms": [
+   "impetuous"
+  ],
+  "text": "Impetuous means acting on impulse — rushing in without thinking things through. In Anthropic's worldview, superpowered AI shouldn't be handed to “impetuous laypeople”: people who'd use it rashly, without understanding what they're holding."
+ },
+ {
+  "k": "laypeople",
+  "t": "laypeople",
+  "kind": "word",
+  "forms": [
+   "laypeople"
+  ],
+  "text": "Laypeople are the non-experts — originally the churchgoers who aren't priests, now anyone outside a profession. The word choice is doing double duty in this church-themed article: to Anthropic-as-church, the rest of us are the laity who can't be trusted with the sacred fire."
+ },
+ {
+  "k": "titanic",
+  "t": "titanic",
+  "kind": "word",
+  "forms": [
+   "titanic"
+  ],
+  "text": "Titanic means colossal — of enormous size or force. It comes from the Titans, the giant gods of Greek myth (the famous ship was named for the same reason). A “titanic clash between church and state” is a battle of giants, not a reference to the iceberg."
+ },
+ {
+  "k": "church-and-state",
+  "t": "church and state",
+  "kind": "phrase",
+  "forms": [
+   "church and state"
+  ],
+  "text": "“Church and state” is shorthand for the centuries-old contest between religious authority and government authority — popes versus kings, conscience versus law. The article casts Anthropic as the church (moral mission, safety sermons) and the Trump administration as the state (raw power) and asks the old question: who gets final say?"
+ },
+ {
+  "k": "ipo",
+  "t": "IPO",
+  "kind": "name",
+  "forms": [
+   "IPO",
+   "IPOs"
+  ],
+  "text": "An IPO — initial public offering — is the first time a company sells its shares to the public on a stock market, letting anyone buy a piece of it. It's a company's biggest fundraising and report-card moment, which is why a government fight landing right before Anthropic's roughly $1trn IPO is such bad timing."
+ },
+ {
+  "k": "monastic",
+  "t": "monastic",
+  "kind": "word",
+  "forms": [
+   "monastic"
+  ],
+  "text": "Monastic means like a monastery — the plain, disciplined, mission-driven world of monks. Saying Anthropic's headquarters has “a monastic feel” continues the joke: employees on a sacred mission, talk full of ethics and values, their leader writing sermons."
+ },
+ {
+  "k": "encyclical",
+  "t": "encyclical",
+  "kind": "word",
+  "forms": [
+   "encyclical",
+   "encyclicals"
+  ],
+  "text": "An encyclical is an official letter from the pope to the whole church, laying out doctrine on a big question. The article mischievously applies the word to Mr Amodei's essays on AI safety — he writes “encyclicals of his own,” pronouncements from Anthropic's pulpit."
+ },
+ {
+  "k": "piety",
+  "t": "piety",
+  "kind": "word",
+  "forms": [
+   "piety"
+  ],
+  "text": "Piety is devout religious dedication — visible, earnest devotion to a faith. “This piety has not hindered Anthropic's business” lands the article's central irony: all that safety-preaching turned out to be excellent for making money."
+ },
+ {
+  "k": "simony",
+  "t": "simony",
+  "kind": "word",
+  "forms": [
+   "simony"
+  ],
+  "text": "Simony is the medieval sin of selling holy things — church offices, blessings — for money. The section heading “Superpowered simony” is a sly dig: the safety-preaching church of Anthropic is doing an awfully good business selling its sacred product."
+ },
+ {
+  "k": "doubling-down",
+  "t": "doubling down",
+  "kind": "phrase",
+  "forms": [
+   "doubling down"
+  ],
+  "text": "To double down (from blackjack, where you double your bet) is to commit even harder to the path you're already on. Anthropic did the opposite: rather than doubling down on chatbots like everyone else, it pivoted its bet toward business customers — the decision the whole success story flows from."
+ },
+ {
+  "k": "tallies-with",
+  "t": "tallies with",
+  "kind": "phrase",
+  "forms": [
+   "tallies with"
+  ],
+  "text": "When one thing tallies with another, they match up — like two counts agreeing. Anthropic's safety emphasis tallies with business customers' fears about rogue AI: the caution that annoys Washington is exactly what corporate buyers want to hear."
+ },
+ {
+  "k": "rogue",
+  "t": "rogue",
+  "kind": "word",
+  "forms": [
+   "rogue"
+  ],
+  "text": "A rogue is someone — or something — that has broken loose from control and follows no one's rules. “Rogue AI” is the nightmare of a model acting on its own agenda; companies buying AI tools care a lot about that not happening, which is why Anthropic's guardrails sell."
+ },
+ {
+  "k": "prowess",
+  "t": "prowess",
+  "kind": "word",
+  "forms": [
+   "prowess"
+  ],
+  "text": "Prowess is exceptional skill or ability — originally a knight's prowess in battle. Anthropic's coding prowess matters beyond coding: writing software demands step-by-step reasoning and tool use, exactly the skills needed to build AI agents that work alongside humans."
+ },
+ {
+  "k": "pivoted",
+  "t": "pivoted",
+  "kind": "word",
+  "forms": [
+   "pivoted"
+  ],
+  "text": "To pivot (in business-speak) is to swing your whole strategy in a new direction while keeping one foot planted, like a basketball pivot. OpenAI has pivoted towards coding this year — turning to chase the market Anthropic staked out first."
+ },
+ {
+  "k": "tailwinds",
+  "t": "tailwinds",
+  "kind": "word",
+  "forms": [
+   "tailwinds"
+  ],
+  "text": "A tailwind blows from behind and speeds a plane along; in business-speak, tailwinds are outside trends that push your growth without extra effort (headwinds are the opposite). The “agentic tailwinds” are the boom in AI agents — a wind at the back of every company selling them."
+ },
+ {
+  "k": "sketchy",
+  "t": "sketchy",
+  "kind": "word",
+  "forms": [
+   "sketchy"
+  ],
+  "text": "Here sketchy means incomplete — details existing only in rough outline, like a sketch. Not the slang sense of “suspicious.” The two firms' IPO paperwork isn't public yet, so details of their accounts are sketchy: known only in rough form."
+ },
+ {
+  "k": "accounts",
+  "t": "accounts",
+  "kind": "word",
+  "forms": [
+   "accounts"
+  ],
+  "text": "A company's accounts are its financial records — the official books showing what it earns, spends, and owes. Not user accounts or bank logins: “details of their accounts are sketchy” means outsiders can't yet see the full financial picture."
+ },
+ {
+  "k": "notional",
+  "t": "notional",
+  "kind": "word",
+  "forms": [
+   "notional"
+  ],
+  "text": "Notional means existing as an idea or estimate rather than a solid fact. The firms' “notional annual turnover” is a projection — take the latest month's sales and multiply by 12 — useful for a fast-growing startup but very much a calculation, not a measured year."
+ },
+ {
+  "k": "turnover",
+  "t": "turnover",
+  "kind": "word",
+  "forms": [
+   "turnover"
+  ],
+  "text": "In British business English, turnover means a company's total sales — its revenue, the money coming in before costs. Nothing to do with basketball giveaways or apple pastries. Annual recurring revenue (ARR) is the annualized version both AI labs report."
+ },
+ {
+  "k": "flatter",
+  "t": "flatter",
+  "kind": "word",
+  "forms": [
+   "flatter"
+  ],
+  "text": "To flatter is to make something look better than it really is — flattering lighting, a flattering photo. Saying Anthropic's accounting of cloud-partner sales “may flatter its figures” is a polite warning: the impressive numbers might be dressed up a bit by how they're counted."
+ },
+ {
+  "k": "valuation",
+  "t": "valuation",
+  "kind": "word",
+  "forms": [
+   "valuation",
+   "valued"
+  ],
+  "text": "A valuation is the price tag investors put on a whole company — what all of it would be worth if you bought every share. Anthropic's reached $965bn in May, edging past OpenAI's $852bn: the scoreboard number in their rivalry."
+ },
+ {
+  "k": "bubble",
+  "t": "bubble",
+  "kind": "word",
+  "forms": [
+   "bubble"
+  ],
+  "text": "In finance, a bubble is when excitement pushes prices far above what things are really worth — until, like a soap bubble, it pops (tulips in the 1630s, dot-com stocks in 2000). “Talk of an AI bubble” is the worry that AI valuations are hype; the article's counterpoint is that Anthropic's revenue grew fivefold in five months."
+ },
+ {
+  "k": "insurmountable",
+  "t": "insurmountable",
+  "kind": "word",
+  "forms": [
+   "insurmountable"
+  ],
+  "text": "Insurmountable means impossible to climb over or overcome. Anthropic's lead is not insurmountable — OpenAI can still catch up, perhaps by slashing prices — a reminder that in AI, nobody stays ahead for long."
+ },
+ {
+  "k": "price-war",
+  "t": "price war",
+  "kind": "phrase",
+  "forms": [
+   "price war"
+  ],
+  "text": "A price war is when rivals repeatedly undercut each other's prices to steal customers — great for buyers, brutal for profits. OpenAI is reportedly considering launching one by slashing what it charges per token; Anthropic's pricing power (customers pay up anyway) is its shield."
+ },
+ {
+  "k": "commensurate",
+  "t": "commensurate",
+  "kind": "word",
+  "forms": [
+   "commensurate"
+  ],
+  "text": "Commensurate means matching in size or degree — proportional. When token prices fell industry-wide, Anthropic didn't need to offer a commensurate discount — a matching one — because customers valued its models enough to pay more per request."
+ },
+ {
+  "k": "commoditisation",
+  "t": "commoditisation",
+  "kind": "word",
+  "forms": [
+   "commoditisation"
+  ],
+  "text": "Commoditisation is what happens when rival products become so similar that buyers treat them as interchangeable and just pick the cheapest — the fate of flour, gasoline, and maybe AI models, since rivals catch up with each other fast. Profits then shrivel, which is why every lab is racing to build something stickier than a swappable model — like agents woven into a customer's business."
+ },
+ {
+  "k": "saas",
+  "t": "software-as-a-service (SaaS)",
+  "kind": "name",
+  "forms": [
+   "software-as-a-service",
+   "SaaS"
+  ],
+  "text": "Software-as-a-service: the business model of renting software by subscription over the internet instead of selling it in a box — think Salesforce, Slack, or Google Docs for companies. A huge industry, now nervously watching AI labs build agents that might do those jobs themselves."
+ },
+ {
+  "k": "procurement",
+  "t": "procurement",
+  "kind": "word",
+  "forms": [
+   "procurement"
+  ],
+  "text": "Procurement is the corporate department that buys things — sourcing suppliers, negotiating contracts, ordering everything a company needs. It's the kind of unglamorous back-office work (along with personnel management) that AI agents may soon take over."
+ },
+ {
+  "k": "agi-pilled",
+  "t": "AGI-pilled",
+  "kind": "phrase",
+  "forms": [
+   "AGI-pilled"
+  ],
+  "text": "Internet slang: to be “-pilled” is to be fully converted to a belief (from the red pill in “The Matrix”). AGI-pilled employees deeply believe artificial general intelligence — AI matching or beating humans at everything — is coming soon. The striking detail: many at Anthropic believe this even though they expect it to take their own jobs."
+ },
+ {
+  "k": "hand-wringing",
+  "t": "hand-wringing",
+  "kind": "phrase",
+  "forms": [
+   "hand-wringing"
+  ],
+  "text": "Hand-wringing is a show of anxious worrying — literally twisting your hands in distress — often said with an eye-roll, implying lots of fretting and not much action. It was Anthropic's public hand-wringing about AI's dangers, the article suggests, that first got under the administration's skin."
+ },
+ {
+  "k": "irked",
+  "t": "irked",
+  "kind": "word",
+  "forms": [
+   "irked"
+  ],
+  "text": "To irk is to annoy or irritate. Anthropic's doom-warnings irked the Trump administration — the low-grade annoyance that later escalated into public feuds and punishments."
+ },
+ {
+  "k": "doomer-industrial-complex",
+  "t": "doomer industrial complex",
+  "kind": "phrase",
+  "forms": [
+   "doomer industrial complex"
+  ],
+  "text": "A “doomer” is someone convinced catastrophe is coming — here, AI catastrophe. The phrase riffs on the famous “military-industrial complex”: officials are accusing Anthropic of running a whole professional machine of doom-saying whose real product is regulation favorable to itself."
+ },
+ {
+  "k": "dim-view",
+  "t": "a dim view",
+  "kind": "phrase",
+  "forms": [
+   "dim view"
+  ],
+  "text": "To take a dim view of something is to disapprove of it — to regard it darkly. For most of Mr Trump's term the government has taken a dim view of attempts to slow AI down, preferring to race China."
+ },
+ {
+  "k": "accelerationist",
+  "t": "accelerationist",
+  "kind": "word",
+  "forms": [
+   "accelerationist"
+  ],
+  "text": "An accelerationist wants technology sped up, not slowed down — floor the gas, sort out problems later. It's the opposite pole from the “doomers”: OpenAI embraced Mr Trump's accelerationist approach while Mr Amodei kept calling for brakes."
+ },
+ {
+  "k": "regulatory-capture",
+  "t": "regulatory capture",
+  "kind": "phrase",
+  "forms": [
+   "regulatory-capture"
+  ],
+  "text": "Regulatory capture is when the industry a rule is meant to police ends up shaping that rule for its own benefit — say, pushing safety requirements that big firms can afford but small rivals can't, so the watchdog ends up serving the watched. That's the accusation David Sacks hurled at Anthropic: that its safety campaign is really a strategy to write rules that favor itself."
+ },
+ {
+  "k": "falling-out",
+  "t": "falling-out",
+  "kind": "phrase",
+  "forms": [
+   "falling-out"
+  ],
+  "text": "A falling-out is a breakdown of a relationship — when two parties who got along stop speaking. Anthropic's first public falling-out with the administration came in February, over Claude and military surveillance."
+ },
+ {
+  "k": "row",
+  "t": "row",
+  "kind": "word",
+  "forms": [
+   "row"
+  ],
+  "text": "In British English a row (rhymes with “cow”) is a noisy quarrel or public dispute — nothing to do with rowing a boat or a row of seats. The article is full of them: the row with the Pentagon, the ongoing row over Mythos and Fable."
+ },
+ {
+  "k": "spat",
+  "t": "spat",
+  "kind": "word",
+  "forms": [
+   "spat"
+  ],
+  "text": "A spat is a petty quarrel — smaller and sulkier than a war. (Not the past tense of “spit” here.) The “latest spat” between Anthropic and the authorities is the fight over who got access to the Mythos model."
+ },
+ {
+  "k": "vetted",
+  "t": "vetted",
+  "kind": "word",
+  "forms": [
+   "vetted",
+   "vetting"
+  ],
+  "text": "To vet someone is to check them out thoroughly before trusting them — the way candidates for a job or a security clearance are vetted. Only customers vetted by the government could use the dangerous Mythos model; the deeper policy fight is whether new models themselves should require vetting before release."
+ },
+ {
+  "k": "guardrails",
+  "t": "guardrails",
+  "kind": "word",
+  "forms": [
+   "guardrails"
+  ],
+  "text": "Guardrails are the barriers along a highway's edge that stop cars going over the cliff — and in AI, the built-in restrictions that stop a model doing harmful things. Fable is Mythos with special guardrails added; the fight is over how easily those guardrails could be jumped."
+ },
+ {
+  "k": "curbs",
+  "t": "curbs",
+  "kind": "word",
+  "forms": [
+   "curbs"
+  ],
+  "text": "Curbs here are restraints — things that hold something back, like a curb chain on a horse. Not sidewalk edges. “America's curbs on AI chip exports” are limits on selling advanced chips to China, which Mr Amodei has loudly supported — awkwardly for anyone whispering he's soft on China."
+ },
+ {
+  "k": "came-to-a-head",
+  "t": "came to a head",
+  "kind": "phrase",
+  "forms": [
+   "came to a head"
+  ],
+  "text": "When a situation comes to a head, tension that's been building finally reaches its breaking point and forces a showdown (the image is a boil coming to a head — gross but vivid). Matters came to a head when Amazon reported it could jailbreak Fable's safety controls."
+ },
+ {
+  "k": "foolproof",
+  "t": "foolproof",
+  "kind": "word",
+  "forms": [
+   "foolproof"
+  ],
+  "text": "Foolproof means so well designed that nothing — not even a fool — can make it fail. Anthropic's defense rests on the claim that no AI safety controls are completely foolproof: some jailbreak will always exist, so finding one proves less than it seems."
+ },
+ {
+  "k": "animosity",
+  "t": "animosity",
+  "kind": "word",
+  "forms": [
+   "animosity"
+  ],
+  "text": "Animosity is strong, active dislike — hostility with a grudge behind it. Many observers think Anthropic was punished chiefly out of personal animosity between the two camps, not policy — see “God complex” and “dictator-style praise.”"
+ },
+ {
+  "k": "canossa",
+  "t": "Canossa",
+  "kind": "name",
+  "forms": [
+   "Canossa"
+  ],
+  "text": "The heading “Confusion at Canossa” is a history joke: in 1077, Holy Roman Emperor Henry IV stood barefoot in the snow for three days outside the castle of Canossa, begging the pope's forgiveness — history's most famous surrender in a church-versus-state showdown. “Going to Canossa” still means humbling yourself before an authority you defied. The confusion: in this modern version, nobody's sure who should be kneeling to whom."
+ },
+ {
+  "k": "turbulent-priest",
+  "t": "turbulent priest",
+  "kind": "phrase",
+  "forms": [
+   "Turbulent priest"
+  ],
+  "text": "Another church-state allusion: King Henry II of England supposedly cried “Will no one rid me of this turbulent priest?” — and four knights promptly murdered Archbishop Thomas Becket in his own cathedral in 1170. The heading casts Mr Amodei as the troublesome cleric a furious ruler wants silenced. (Becket, note, became a martyred saint; the king had to do public penance.)"
+ },
+ {
+  "k": "laissez-faire",
+  "t": "laissez-faire",
+  "kind": "phrase",
+  "forms": [
+   "laissez-faire"
+  ],
+  "text": "Laissez-faire (French for “let it be”) is the hands-off approach: government deliberately staying out of business and letting markets run themselves. The irony the article nails: having chosen laissez-faire on AI, the administration built no precise tools of control — so when it suddenly wanted control, all it had left were sledgehammers."
+ },
+ {
+  "k": "tussle",
+  "t": "tussle",
+  "kind": "word",
+  "forms": [
+   "tussle"
+  ],
+  "text": "A tussle is a scuffle — a vigorous, tangled struggle, more wrestling match than war. Mythos set off a tussle inside the government over whether AI models now threaten national security enough to need vetting before release; the closing line predicts the tussle lasts until Congress writes real rules."
+ },
+ {
+  "k": "hawkish",
+  "t": "hawkish",
+  "kind": "word",
+  "forms": [
+   "Hawkish"
+  ],
+  "text": "In politics, hawks favor aggressive, forceful action (doves favor caution and diplomacy). The hawkish types in this fight wanted an official government say over every new AI model's release — some even floated a whole new regulatory agency."
+ },
+ {
+  "k": "floated",
+  "t": "floated",
+  "kind": "word",
+  "forms": [
+   "floated"
+  ],
+  "text": "To float an idea is to put it forward tentatively, to see how people react — like floating a paper boat to see if it sinks. Some officials floated creating a dedicated AI regulatory agency; what they got instead was a voluntary framework."
+ },
+ {
+  "k": "sovereignty",
+  "t": "sovereignty",
+  "kind": "word",
+  "forms": [
+   "sovereignty"
+  ],
+  "text": "Sovereignty is a state's supreme authority over its own territory — the power to rule with no higher boss. The article's sharpest line invokes it: no company gets to shake the foundations of state sovereignty — rival the power of governments — while pretending to stay above politics."
+ },
+ {
+  "k": "blithely",
+  "t": "blithely",
+  "kind": "word",
+  "forms": [
+   "blithely"
+  ],
+  "text": "Blithely means carelessly cheerfully — acting without a worry about consequences you probably should be worrying about. Staying “blithely above the raw reality of politics” means breezing along as if the political storm below doesn't apply to you."
+ },
+ {
+  "k": "hamstrung",
+  "t": "hamstrung",
+  "kind": "word",
+  "forms": [
+   "hamstrung"
+  ],
+  "text": "To hamstring someone is to cripple them — literally, cutting the hamstring tendon leaves a person or animal unable to run. Anthropic ended up hamstrung: forced to shut down its own models worldwide, hurt in exactly the ability (serving customers) it runs on."
+ },
+ {
+  "k": "bottom-line",
+  "t": "bottom line",
+  "kind": "phrase",
+  "forms": [
+   "bottom line"
+  ],
+  "text": "The bottom line is the last line of a financial statement — the final profit after everything is added and subtracted — so it's shorthand for what a company actually earns. Suspending a model used by hundreds of millions of people is “bound to affect its bottom line.”"
+ },
+ {
+  "k": "testy",
+  "t": "testy",
+  "kind": "word",
+  "forms": [
+   "testy"
+  ],
+  "text": "Testy means irritable — quick to snap, easily provoked. Anthropic's testy relationship with the authorities is now a business risk in itself: investors hate not knowing when the next blow-up is coming."
+ },
+ {
+  "k": "arbiter",
+  "t": "arbiter",
+  "kind": "word",
+  "forms": [
+   "arbiter"
+  ],
+  "text": "An arbiter is the one who gets to decide — a judge whose ruling settles the matter. The article's closing worry: because laws move slower than models, Mr Amodei has ended up an unelected arbiter of AI safety — one man deciding questions nobody voted to give him."
+ },
+ {
+  "k": "fallout",
+  "t": "fallout",
+  "kind": "word",
+  "forms": [
+   "fallout"
+  ],
+  "text": "Fallout is the radioactive dust that keeps drifting down long after a nuclear blast — so, figuratively, the lingering after-effects of any disaster. The fallout from this fight will hang over Anthropic's IPO long after the shouting stops."
+ },
+ {
+  "k": "think-tank",
+  "t": "think-tank",
+  "kind": "word",
+  "forms": [
+   "think-tank"
+  ],
+  "text": "A think-tank is an organization of experts paid to study big problems and recommend policies — they “think” for a living. Two appear here: the R Street Institute and the Foundation for American Innovation, both supplying the article's analysis of the regulatory mess."
+ },
+ {
+  "k": "rockefeller",
+  "t": "John D. Rockefeller",
+  "kind": "name",
+  "forms": [
+   "Rockefeller"
+  ],
+  "text": "The oil tycoon whose Standard Oil controlled about 90% of America's oil in the late 1800s — the textbook monopoly, eventually broken up by the government in 1911. When Mr Sacks compares Anthropic to Rockefeller, he's invoking exactly that history: a private company growing powerful enough that the state decides it must be cut down."
+ }
+]

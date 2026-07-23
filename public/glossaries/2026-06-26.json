@@ -1,0 +1,404 @@
+[
+ {
+  "k": "ubiquitous",
+  "t": "ubiquitous",
+  "kind": "vocab",
+  "pron": "yoo-BIK-wih-tus",
+  "forms": ["ubiquitous"],
+  "text": "Ubiquitous means present everywhere at once — so common you see it wherever you look. Smartphones in rural India have gone from scarce to ubiquitous in a decade, turning up household after household, the way wireless earbuds seemed to appear in every kid's ears at once."
+ },
+ {
+  "k": "lurching",
+  "t": "lurching",
+  "kind": "vocab",
+  "pron": "LUR-ching",
+  "forms": ["lurching"],
+  "text": "To lurch is to move in a sudden, unsteady jerk — the way an old bus throws you back when the driver hits the gas. Change “at lurching speed” is racing ahead in abrupt, uneven jumps rather than smoothly: whole villages coming online almost overnight."
+ },
+ {
+  "k": "behemoth",
+  "t": "behemoth",
+  "kind": "vocab",
+  "pron": "bih-HEE-muth",
+  "forms": ["behemoths"],
+  "text": "A behemoth is something huge and powerful that dwarfs everything around it — the word comes from a giant beast in the Bible. Jio and Airtel are India's telecoms behemoths, and their brutal price war is a big reason Indian data became the cheapest on Earth."
+ },
+ {
+  "k": "power-loom",
+  "t": "power loom",
+  "kind": "phrase",
+  "forms": ["power loom"],
+  "text": "A loom is the machine cloth is woven on; a power loom is the motor-driven version. Nagepur was once a village of weavers, and Bahadur Kumar still works at one — while his son studies for exams with YouTube and ChatGPT a few steps away. The whole article lives in that contrast."
+ },
+ {
+  "k": "whips-out",
+  "t": "whips out",
+  "kind": "phrase",
+  "forms": ["whips out"],
+  "text": "To whip something out is to pull it out fast and eagerly, like a cowboy drawing a pistol. Karan whips out his phone to show off his study tools — the gesture itself showing how natural the device has become."
+ },
+ {
+  "k": "uttar-pradesh",
+  "t": "Uttar Pradesh",
+  "kind": "name",
+  "forms": ["Uttar Pradesh"],
+  "text": "India's most populous state — more than 200 million people, which would make it one of the biggest countries on Earth by itself — and one of its poorest. That's what makes Nagepur's new toilets, running water, power, and internet such a story."
+ },
+ {
+  "k": "scarce",
+  "t": "scarce",
+  "kind": "word",
+  "forms": ["Scarce"],
+  "text": "Scarce means in short supply — hard to find because there isn't enough to go around. Smartphones were scarce in these villages “not long ago”; the article's point is how fast scarce flipped to everywhere."
+ },
+ {
+  "k": "skewed",
+  "t": "skewed",
+  "kind": "word",
+  "forms": ["skewed"],
+  "text": "Skewed means tilted unevenly to one side instead of balanced. Phone ownership is skewed towards men — they own most of the devices — though wives and daughters borrow them the moment dad leaves for work, as 14-year-old Roshni cheerfully admits."
+ },
+ {
+  "k": "populous",
+  "t": "populous",
+  "kind": "word",
+  "forms": ["populous"],
+  "text": "Populous means having a large population — full of people. Don't confuse it with “popular”: India is the world's most populous country, home to more people than any other, and this year it's on track to pass one billion internet users."
+ },
+ {
+  "k": "trade-body",
+  "t": "trade body",
+  "kind": "phrase",
+  "forms": ["trade body"],
+  "text": "A trade body is an association that represents the companies of one industry — speaking for them and collecting statistics about them. The internet-user numbers here come from IAMAI, the trade body for India's internet and mobile industry."
+ },
+ {
+  "k": "dirt-cheap",
+  "t": "dirt-cheap",
+  "kind": "phrase",
+  "forms": ["dirt-cheap"],
+  "text": "Dirt-cheap means extremely cheap — as cheap as dirt. A used smartphone for $21 and data at 16 cents per gigabyte (less than a tenth of the world average) is what put the internet within reach of villagers earning a few dollars a day."
+ },
+ {
+  "k": "rupees",
+  "t": "rupees",
+  "kind": "name",
+  "forms": ["rupees"],
+  "text": "The rupee is India's currency — about 90 to the US dollar here, so 2,000 rupees is roughly $21. The article translates the real cost too: that phone equals about four days' pay for a labourer."
+ },
+ {
+  "k": "labourer",
+  "t": "labourer",
+  "kind": "word",
+  "forms": ["labourer", "labourers"],
+  "text": "A labourer does physical work for daily pay — building, hauling, digging. (That's the British spelling; Americans write “laborer.”) Most of Nagepur's men now work as labourers in nearby Varanasi, which is the world their phone-educated kids hope to climb out of."
+ },
+ {
+  "k": "population-density",
+  "t": "population density",
+  "kind": "phrase",
+  "forms": ["population density"],
+  "text": "Population density is how many people live packed into each square mile. India's is high, so each cell tower has thousands of customers within range — and since a tower costs about the same whether ten people use it or ten thousand, crowding spreads the cost thin. That's a big reason Indian data is the cheapest in the world."
+ },
+ {
+  "k": "mast",
+  "t": "mast",
+  "kind": "word",
+  "forms": ["mast"],
+  "text": "Here a mast is British English for a cell-phone tower — the tall antenna structure that beams the mobile signal — not the pole holding a ship's sails. Each mast serving more customers is what makes dense India so cheap to connect."
+ },
+ {
+  "k": "price-war",
+  "t": "price war",
+  "kind": "phrase",
+  "forms": ["price war"],
+  "text": "A price war is when rival companies keep undercutting each other's prices to steal customers — great for shoppers, brutal for profits. The Jio–Airtel price war drove Indian data prices through the floor, and villagers are the accidental winners."
+ },
+ {
+  "k": "telecoms",
+  "t": "telecoms",
+  "kind": "word",
+  "forms": ["telecoms"],
+  "text": "Telecoms is short for telecommunications — the industry of phone and internet companies. “Two telecoms behemoths” just means two giant phone companies."
+ },
+ {
+  "k": "blockbuster",
+  "t": "blockbuster",
+  "kind": "word",
+  "forms": ["blockbuster"],
+  "text": "A blockbuster is a smash hit — originally a WWII bomb big enough to level a city block, then a hit movie, now anything enormous and attention-grabbing. Jio's planned “blockbuster initial public offering” is expected to be one of the biggest stock-market debuts of the year."
+ },
+ {
+  "k": "ipo",
+  "t": "initial public offering",
+  "kind": "phrase",
+  "forms": ["initial public offering"],
+  "text": "An initial public offering — an IPO — is the first time a private company sells its shares to the public on the stock market, usually raising a huge pile of money. Jio announcing one tells you how big India's mobile business has become."
+ },
+ {
+  "k": "tariffs",
+  "t": "tariffs",
+  "kind": "word",
+  "forms": ["tariffs"],
+  "text": "Careful — this is the other meaning of tariff. In British English a tariff is a price plan, like your family's phone plan; “cheap tariffs” means cheap monthly rates, not import taxes. (The trade-war kind of tariff is a tax on goods crossing a border — same word, totally different beast.)"
+ },
+ {
+  "k": "saturation",
+  "t": "saturation",
+  "kind": "word",
+  "forms": ["saturation"],
+  "text": "Saturation is the point where something is completely full and can absorb no more — a soaked sponge is saturated. A market approaches saturation when almost everyone who might buy a phone already has one. India's cities are nearly there, which is why the growth has moved to the villages."
+ },
+ {
+  "k": "frontier",
+  "t": "frontier",
+  "kind": "word",
+  "forms": ["frontier"],
+  "text": "A frontier is the edge of settled territory — where the expansion is still happening. Calling the village “the digital frontier” casts rural India as the internet's Wild West: the last great unconnected territory, now filling up fast."
+ },
+ {
+  "k": "upend",
+  "t": "upend",
+  "kind": "word",
+  "forms": ["upend"],
+  "text": "To upend something is to flip it upside down — to overturn how it has always worked. Smartphones promise to upend rural life across the board: education, work, leisure, even how people find someone to marry."
+ },
+ {
+  "k": "fret",
+  "t": "fret",
+  "kind": "word",
+  "forms": ["fret"],
+  "text": "To fret is to worry — to gnaw anxiously at a problem. Indian politicians cheered the digital boom for years; now they're starting to fret about its harms, from addiction to what all that scrolling does to children."
+ },
+ {
+  "k": "revelation",
+  "t": "revelation",
+  "kind": "word",
+  "forms": ["revelation"],
+  "text": "A revelation is a surprising discovery that opens your eyes — something revealed. For village schoolkids, AI chatbots are a revelation: ask a class of 11-to-14-year-olds who uses them and a wave of hands goes up."
+ },
+ {
+  "k": "aggregator",
+  "t": "aggregator",
+  "kind": "word",
+  "forms": ["aggregator"],
+  "text": "To aggregate is to collect things into one pile, so a data aggregator is a company that gathers scattered numbers — like app downloads across millions of phones — into one picture. Sensor Tower's count: AI apps downloaded more than 600 million times in India."
+ },
+ {
+  "k": "doubt-solving",
+  "t": "doubt-solving",
+  "kind": "phrase",
+  "forms": ["doubt-solving"],
+  "text": "In Indian English, a “doubt” is a question you're stuck on — students ask teachers to “clear their doubts.” Doubt-solving is exactly what Karan uses ChatGPT for: a patient tutor that explains the confusing bits, any hour of the day."
+ },
+ {
+  "k": "patchy",
+  "t": "patchy",
+  "kind": "word",
+  "forms": ["patchy"],
+  "text": "Patchy means uneven and full of gaps — good in patches, missing in others, like patchy fog. Many Indian schools still offer a patchy education, which is precisely why an always-available AI tutor lands like a gift there."
+ },
+ {
+  "k": "ed-tech",
+  "t": "ed-tech",
+  "kind": "name",
+  "forms": ["ed-tech"],
+  "text": "Short for education technology — apps and online platforms for learning. India has huge ed-tech companies already; the bet is that AI finally makes the tutoring genuinely good, and no one has more to gain than knowledge-hungry village schoolkids."
+ },
+ {
+  "k": "varanasi",
+  "t": "Varanasi",
+  "kind": "name",
+  "forms": ["Varanasi"],
+  "text": "One of the world's oldest living cities, on the Ganges river in northern India — sacred to Hindus, and the nearest big city to Nagepur, where most of the village's men now commute to work as labourers."
+ },
+ {
+  "k": "farther-afield",
+  "t": "farther afield",
+  "kind": "phrase",
+  "forms": ["farther afield"],
+  "text": "Afield means away from home, so “farther afield” means at a greater distance — beyond your usual territory. Technology lets youngsters like Karan hunt for skilled work farther afield than the village or the nearest city, widening the map of possible lives."
+ },
+ {
+  "k": "autonomy",
+  "t": "autonomy",
+  "kind": "word",
+  "forms": ["autonomy"],
+  "text": "Autonomy is self-rule — the freedom to make your own decisions instead of having them made for you. Village women say smartphones have given them more autonomy: their own window on the world, their own contacts, their own information. That shift is exactly what some men have tried to stop."
+ },
+ {
+  "k": "losing-battle",
+  "t": "fighting a losing battle",
+  "kind": "phrase",
+  "forms": ["losing battle"],
+  "text": "To fight a losing battle is to keep resisting something you cannot actually stop. Men trying to keep phones away from women are fighting one: when 15 villages in Rajasthan banned married women from smartphones, a national outcry forced them to back down — and ownership among young women keeps climbing anyway."
+ },
+ {
+  "k": "outcry",
+  "t": "outcry",
+  "kind": "word",
+  "forms": ["outcry"],
+  "text": "An outcry is a loud public protest — the whole country crying out at once. The Rajasthan phone ban for married women triggered a national outcry, and the ban was withdrawn."
+ },
+ {
+  "k": "social-geometry",
+  "t": "social geometry",
+  "kind": "phrase",
+  "forms": ["social geometry"],
+  "text": "The article's own coined phrase: the shape of who connects with whom. A village's social geometry was once a tight local web — everyone you knew lived within walking distance. Smartphones are redrawing it, letting the young form friendships (and, whisper it, romances) far beyond the village boundary."
+ },
+ {
+  "k": "whisper-it",
+  "t": "whisper it",
+  "kind": "phrase",
+  "forms": ["whisper it"],
+  "text": "Writing “(whisper it)” before a word marks it as something scandalous, said under the breath. Romantic relationships outside the village are still hush-hush in rural India — which is why the article whispers the word, and why Karan's mother frets about “love marriages” at the end."
+ },
+ {
+  "k": "demographers",
+  "t": "demographers",
+  "kind": "word",
+  "forms": ["demographers"],
+  "text": "Demographers are scientists who study populations — births, deaths, marriages, migration — and the patterns in them. Some think smartphones are speeding up the fall in village birth rates, because rural women now see the smaller-family lifestyles of richer city women daily on their screens."
+ },
+ {
+  "k": "fertility-decline",
+  "t": "fertility decline",
+  "kind": "phrase",
+  "forms": ["fertility decline"],
+  "text": "Fertility here means the average number of children women have; fertility decline is that number falling — a shift that reshapes a whole country's future, from schools to pensions. The surprising claim: phones may be accelerating it, just by showing village women different possible lives."
+ },
+ {
+  "k": "reels",
+  "t": "reels",
+  "kind": "name",
+  "forms": ["reels"],
+  "text": "Reels are the endless short vertical videos popularized by Instagram and TikTok — swipe, watch, swipe. In Nagepur, kids admit that's where most of their phone time actually goes, whatever they tell you about study apps."
+ },
+ {
+  "k": "algorithmic-content",
+  "t": "algorithmic content",
+  "kind": "phrase",
+  "forms": ["algorithmic content"],
+  "text": "Algorithmic content is the feed a recommendation algorithm builds just for you — each video chosen because people like you kept watching it. The longer you stay, the more the app earns from ads, so the feed is engineered to be nearly impossible to put down — especially, the article notes, in a sleepy village where it's the most exciting thing around."
+ },
+ {
+  "k": "idle",
+  "t": "idle",
+  "kind": "word",
+  "forms": ["idle"],
+  "text": "To idle is to do nothing — an engine idles when it runs without going anywhere. One Nagepur parent's grumble captures the doom-loop: “The more they idle the more they watch the more they idle.”"
+ },
+ {
+  "k": "underemployed",
+  "t": "underemployed",
+  "kind": "word",
+  "forms": ["underemployed"],
+  "text": "Underemployed means having some work but not enough — a job that uses only a fraction of your time or skills. Pradyuman the taxi driver is underemployed, and the article's grim statistic frames it: only about half of Indians under 30 have a job at all."
+ },
+ {
+  "k": "rocketed",
+  "t": "rocketed",
+  "kind": "word",
+  "forms": ["rocketed"],
+  "text": "To rocket is to shoot up fast, like a rocket leaving the pad. Pradyuman's phone bill has rocketed because of short-form videos — hours of them, watched alone in the taxi: “When you are by yourself your phone is your best friend.”"
+ },
+ {
+  "k": "content-creators",
+  "t": "content creators",
+  "kind": "phrase",
+  "forms": ["content creators"],
+  "text": "Content creators make videos and posts for a living, hoping views turn into money. With real jobs scarce, millions of young Indians are betting their time and energy on becoming one — a lottery where almost every ticket loses."
+ },
+ {
+  "k": "burning-fingers",
+  "t": "burning their fingers",
+  "kind": "phrase",
+  "forms": ["burning their fingers"],
+  "text": "To burn your fingers is to get hurt by a risky venture — like grabbing a pan you should have known was hot. The expert's warning: young Indians chasing content-creator fame “are burning their fingers thinking that this is the way up” — pouring themselves into a path that will scorch most of them."
+ },
+ {
+  "k": "think-tank",
+  "t": "think-tank",
+  "kind": "word",
+  "forms": ["think-tank"],
+  "text": "A think-tank is an organization of experts paid to study big problems and advise governments — they “think” for a living. The Centre for Digital Economy Policy Research in Delhi, quoted here, is one."
+ },
+ {
+  "k": "satire",
+  "t": "satire",
+  "kind": "word",
+  "forms": ["satire"],
+  "text": "Satire is mockery with a message — using humor and exaggeration to criticize something serious. The Cockroach Janta Party is pure satire: a “political party” whose only membership requirement is spending 11 hours a day online, making fun of joblessness and screen addiction at once."
+ },
+ {
+  "k": "chronically-online",
+  "t": "chronically online",
+  "kind": "phrase",
+  "forms": ["chronically online"],
+  "text": "Chronic describes a condition that never goes away (a chronic illness), so being chronically online means living on the internet nearly all your waking hours. The satirical party wears the label as a badge of pride — which is the joke, and the worry."
+ },
+ {
+  "k": "cockroach-janta",
+  "t": "Cockroach Janta Party",
+  "kind": "name",
+  "forms": ["Cockroach Janta Party"],
+  "text": "India's newest youth “political movement” — a joke party (“janta” is Hindi for “the people”) protesting joblessness and screen addiction by celebrating both. Anyone can join, provided they're online at least 11 hours a day."
+ },
+ {
+  "k": "andhra-karnataka",
+  "t": "Andhra Pradesh and Karnataka",
+  "kind": "name",
+  "forms": ["Andhra Pradesh", "Karnataka"],
+  "text": "Two large states in southern India — Karnataka's capital, Bengaluru, is India's tech hub. In March they became the first Indian states to ban children from social media, and several others are poised to follow suit."
+ },
+ {
+  "k": "follow-suit",
+  "t": "follow suit",
+  "kind": "phrase",
+  "forms": ["follow suit"],
+  "text": "To follow suit is to copy what someone else just did — from card games, where you must play a card of the same suit that was led. Other states are poised (ready and waiting) to follow suit with their own children's social-media bans."
+ },
+ {
+  "k": "blanket-bans",
+  "t": "blanket ban",
+  "kind": "phrase",
+  "forms": ["blanket bans"],
+  "text": "A blanket ban covers everything and everyone, no exceptions — the way a blanket covers the whole bed. The lawyer's objection: blanket bans are a clumsy tool in a country where families share one phone, so a rule aimed at kids ends up hitting everyone."
+ },
+ {
+  "k": "shoddy",
+  "t": "shoddy",
+  "kind": "word",
+  "forms": ["shoddy"],
+  "text": "Shoddy means badly made or badly done — cheap, careless quality. The article's deeper point hangs on this word: many online problems “stem from a failure to fix problems offline, from shoddy schools to a lack of jobs.” Fix those, and the screens matter less."
+ },
+ {
+  "k": "digital-literacy",
+  "t": "digital literacy",
+  "kind": "phrase",
+  "forms": ["digital literacy"],
+  "text": "Literacy is the ability to read and write; digital literacy is the equivalent for the internet — knowing how to judge what's true, spot scams, manage screen time, and stay safe online. The lawyer argues teaching it beats banning phones outright."
+ },
+ {
+  "k": "sari",
+  "t": "sari",
+  "kind": "name",
+  "forms": ["sari"],
+  "text": "The traditional garment of Indian women — a single long piece of cloth, often five to nine yards, elegantly wrapped and draped. Karan's mother, in a black sari and headscarf, delivers the article's perfect closing line."
+ },
+ {
+  "k": "chips-in",
+  "t": "chips in",
+  "kind": "phrase",
+  "forms": ["chips in"],
+  "text": "To chip in is to add your bit — your contribution to a conversation or a collection. Karan's mother, listening from the steps, chips in with her verdict: technology for a better life, yes; but she worries it will make more young people want a “love marriage.”"
+ },
+ {
+  "k": "love-marriage",
+  "t": "love marriage",
+  "kind": "phrase",
+  "forms": ["love marriage"],
+  "text": "In India, a “love marriage” is one the couple chooses for themselves — as opposed to the traditional arranged marriage, set up by the two families. Phones that let the young meet people beyond the village make love marriages more likely, which is exactly what Karan's mother — approving of everything else — worries about most."
+ }
+ ]

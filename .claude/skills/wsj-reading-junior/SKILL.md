@@ -47,6 +47,7 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
 | Content file | `content/junior/YYYY-MM-DD.json` |
 | Served article page | `public/articles/junior/YYYY-MM-DD.html` (multi-article: `-1.html`, `-2.html`, …) |
 | Pronunciation audio | `public/audio/junior/YYYY-MM-DD/<slug>.mp3` (via `gen-pronunciation.mjs … --track=junior`) |
+| Article-page glossary | `public/glossaries/junior/YYYY-MM-DD.json` (check with `check-glossary.mjs junior/YYYY-MM-DD`) |
 | Article text (Blob) | `article-text/junior/YYYY-MM-DD.txt` (via `upload-article-text.mjs … --track=junior`) |
 | Handout URL | `/junior/reading/YYYY-MM-DD` |
 | Self-quiz URL | `/junior/reading/YYYY-MM-DD/quiz` |
@@ -92,10 +93,11 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
      node --env-file=.env.local scripts/gen-pronunciation.mjs YYYY-MM-DD --track=junior
      ```
      Writes `public/audio/junior/YYYY-MM-DD/<slug>.mp3` per term (idempotent; `--force` to redo; needs `OPENAI_API_KEY`). Committed + CDN-served — re-run until `failed=0`. There's no browser-speech fallback, so the ▶ button only shows for terms whose clip exists — make sure every term got one.
+   - **Author the tap-a-word GLOSSARY** for the served article page, exactly per the senior `wsj-reading` skill's step-6 glossary bullet (same `{k, t, kind, pron?, forms, text}` format, same selection taste, same ONE-woven-explanation rule) with two junior differences: (a) the paths — write `public/glossaries/junior/YYYY-MM-DD.json`, validate with `node scripts/check-glossary.mjs junior/YYYY-MM-DD`, tag with `node scripts/add-glossary-tags.mjs public/articles/junior/YYYY-MM-DD.html`; (b) the register — grades 5–7: simpler sentences, and include easier words a 5th–6th grader wouldn't know even if an 8th grader would (~40–60 entries per ~1000 words).
 
 7. **Build to verify:** `npm run build`. It must succeed (a break is almost always malformed JSON).
 
-8. **Commit, push, and share the links.** Stage the junior content, article page, and audio — `git add content/junior/YYYY-MM-DD.json public/articles/junior/YYYY-MM-DD.html public/audio/junior/YYYY-MM-DD` (plus any other changed files) — commit, and `git push origin main`. **Pushing is shipping** (auto-deploys to `wsjclub.vercel.app`). Then give the user the junior links: `https://wsjclub.vercel.app/junior/reading/YYYY-MM-DD` (handout) and `https://wsjclub.vercel.app/junior/reading/YYYY-MM-DD/quiz` (quiz).
+8. **Commit, push, and share the links.** Stage the junior content, article page, glossary, and audio — `git add content/junior/YYYY-MM-DD.json public/articles/junior/YYYY-MM-DD.html public/glossaries/junior/YYYY-MM-DD.json public/audio/junior/YYYY-MM-DD` (plus any other changed files) — commit, and `git push origin main`. **Pushing is shipping** (auto-deploys to `wsjclub.vercel.app`). Then give the user the junior links: `https://wsjclub.vercel.app/junior/reading/YYYY-MM-DD` (handout) and `https://wsjclub.vercel.app/junior/reading/YYYY-MM-DD/quiz` (quiz).
 
 ## Content file schema
 

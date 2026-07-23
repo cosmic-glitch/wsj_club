@@ -1,0 +1,383 @@
+[
+ {
+  "k": "bonanza",
+  "t": "bonanza",
+  "kind": "vocab",
+  "pron": "buh-NAN-zuh",
+  "forms": ["Bonanza", "bonanza"],
+  "text": "A bonanza is a sudden gusher of wealth or good luck — the word is old mining slang for striking a rich vein of gold. The headline treats the AI build-out as exactly that: a flood of profit and investment that everyone on Wall Street is scrambling to get a piece of."
+ },
+ {
+  "k": "defy",
+  "t": "defied",
+  "kind": "vocab",
+  "pron": "dih-FY",
+  "forms": ["defied"],
+  "text": "To defy is to openly resist or go against — and when something “defies expectations,” it proves the predictions wrong. Doubters kept saying investors' AI enthusiasm would fade; instead the demand has defied the skeptics, staying strong month after month."
+ },
+ {
+  "k": "daunting",
+  "t": "daunting",
+  "kind": "vocab",
+  "pron": "DAWN-ting",
+  "forms": ["daunting"],
+  "text": "Daunting describes something so huge or difficult that it makes you nervous just to face it — a daunting climb, a daunting reading list. Here the expense of building AI data centers was so daunting that even the tech giants couldn't cover it from their own cash and had to start borrowing."
+ },
+ {
+  "k": "conceivable",
+  "t": "conceivable",
+  "kind": "word",
+  "forms": ["Conceivable", "conceivable"],
+  "text": "Conceivable means able to be imagined — to “conceive” of something is to form the idea of it in your mind. “Every conceivable way” means every way anyone can think of: selling shares, selling bonds, borrowing from banks, all at once."
+ },
+ {
+  "k": "raking-in",
+  "t": "raking in",
+  "kind": "phrase",
+  "forms": ["raking in"],
+  "text": "To rake in money is to gather it up in big sweeps, the way you rake fallen leaves into a pile — effortlessly and by the armful. The subtitle's picture: investor cash is piling up so fast the tech companies just have to rake it toward themselves."
+ },
+ {
+  "k": "forking-it-over",
+  "t": "forking it over",
+  "kind": "phrase",
+  "forms": ["forking it over", "fork over"],
+  "text": "To fork over money is to hand it across — usually a little reluctantly, like paying up after losing a bet. Here it's the investors doing the forking: happily shoveling their cash into every AI deal on offer."
+ },
+ {
+  "k": "11-figure",
+  "t": "11-figure sums",
+  "kind": "phrase",
+  "forms": ["11-figure"],
+  "text": "Count the digits: an 11-figure number is at least 10,000,000,000 — tens of billions of dollars. Saying a funding round raises “11-figure sums” is a compact way of saying the checks have eleven digits on them."
+ },
+ {
+  "k": "blockbuster",
+  "t": "blockbuster",
+  "kind": "word",
+  "forms": ["Blockbuster", "blockbuster"],
+  "text": "A blockbuster is anything hugely big and successful — the word originally meant a WWII bomb big enough to flatten a city block, then came to describe hit movies. A “blockbuster bond sale” is a borrowing deal so large it makes headlines on its own."
+ },
+ {
+  "k": "equity",
+  "t": "equity",
+  "kind": "word",
+  "forms": ["equity"],
+  "text": "Equity means ownership — shares of a company. An “equity raise” is a company selling brand-new slices of itself for cash: it never has to pay that money back, but the buyers now own part of the company and share its future profits. It's one of the two basic ways to raise money; the other is debt (borrowing, like bonds)."
+ },
+ {
+  "k": "bond",
+  "t": "bonds",
+  "kind": "word",
+  "forms": ["bonds", "bond"],
+  "text": "A bond is an IOU a company (or government) sells to investors: you lend it money now, and it promises to pay you back later with interest. Unlike selling shares, borrowing through bonds gives the lenders no ownership. The AI giants have sold $159 billion of them this year alone."
+ },
+ {
+  "k": "ipo",
+  "t": "IPO",
+  "kind": "word",
+  "forms": ["IPOs", "IPO"],
+  "text": "An IPO — initial public offering — is a company's stock-market debut: the first time it sells its shares to the general public, so anyone can buy in. SpaceX, Anthropic and OpenAI are all lining up to do it, which could make this the biggest IPO year ever."
+ },
+ {
+  "k": "public-listings",
+  "t": "public listings",
+  "kind": "phrase",
+  "forms": ["public listings"],
+  "text": "A company gets a public listing when its shares are listed on a stock exchange for anyone to trade — that's what “going public” means. Before that, only private investors like venture-capital firms can own a piece."
+ },
+ {
+  "k": "wall-street",
+  "t": "Wall Street",
+  "kind": "name",
+  "forms": ["Wall Street"],
+  "text": "Wall Street is a real street in New York City where the stock exchange sits — but in headlines it means the whole American finance industry: the banks, investors and traders who move money around. When the article says “Wall Street is rushing to fund” AI, it means all of them at once."
+ },
+ {
+  "k": "build-out",
+  "t": "build-out",
+  "kind": "word",
+  "forms": ["build-out"],
+  "text": "A build-out is a massive construction push — building out infrastructure until it covers the need. Here it's the race to construct the data centers, chips and power supplies AI runs on, which the article compares to building the railroads in the 1850s."
+ },
+ {
+  "k": "data-centers",
+  "t": "data centers",
+  "kind": "phrase",
+  "forms": ["data centers", "data-center"],
+  "text": "A data center is a warehouse packed with thousands of computers running day and night — the physical buildings where “the cloud” and AI models actually live. They cost billions each, which is why tech companies are raising money so furiously to build them."
+ },
+ {
+  "k": "hyperscalers",
+  "t": "hyperscalers",
+  "kind": "word",
+  "forms": ["hyperscalers", "hyperscaler"],
+  "text": "The hyperscalers are the handful of giants — Alphabet, Amazon, Meta, Microsoft, Oracle — that run computing at “hyper” scale: gigantic data centers they rent out as cloud computing. Because AI needs vast computing power, these few companies are doing most of the spending and borrowing in the story."
+ },
+ {
+  "k": "flurry",
+  "t": "flurry",
+  "kind": "word",
+  "forms": ["flurry"],
+  "text": "A flurry is a sudden busy burst of activity — like a flurry of snow, lots of things swirling at once. A “flurry of fundraising” means deals are being announced faster than anyone can track them."
+ },
+ {
+  "k": "absorb",
+  "t": "absorb",
+  "kind": "word",
+  "forms": ["absorb"],
+  "text": "To absorb is to soak up, like a sponge. Markets “absorb” new stocks and bonds when investors buy everything companies offer without prices sagging — and the article's worry is whether they can keep soaking up this much."
+ },
+ {
+  "k": "poised",
+  "t": "poised",
+  "kind": "word",
+  "forms": ["poised"],
+  "text": "Poised means positioned and ready, right on the edge of doing something — a diver poised on the board. SpaceX, Anthropic and OpenAI are poised for public listings: everything is set, they just haven't jumped yet."
+ },
+ {
+  "k": "issue",
+  "t": "issued",
+  "kind": "word",
+  "forms": ["issued", "issuance", "issue"],
+  "text": "In finance, to issue means to create and sell — a company “issues” bonds or new shares the way a government issues passports. “Equity issuance” is just the noun: the act of putting new shares out into the world."
+ },
+ {
+  "k": "dilute",
+  "t": "diluting",
+  "kind": "word",
+  "forms": ["diluting"],
+  "text": "Diluting means watering something down. When a company issues lots of new shares, existing shareholders get diluted: think of a pizza recut from 8 slices into 16 — you still hold one slice, but it's half the pizza it was. That's why a big share sale can push a stock's price down."
+ },
+ {
+  "k": "selloff",
+  "t": "selloff",
+  "kind": "word",
+  "forms": ["selloff"],
+  "text": "A selloff is a wave of selling that sends prices falling fast — lots of investors heading for the exits at once. Last week's “tech selloff” was a sudden drop in technology stocks."
+ },
+ {
+  "k": "weeding-out",
+  "t": "weeding out",
+  "kind": "phrase",
+  "forms": ["weeding out"],
+  "text": "To weed out is to remove the bad ones and keep the good, the way a gardener pulls weeds and leaves the flowers. Investors expect Wall Street will eventually weed out the losers — the AI companies that overspent — and stop funding them."
+ },
+ {
+  "k": "skeptics",
+  "t": "skeptics",
+  "kind": "word",
+  "forms": ["skeptics", "skeptical"],
+  "text": "A skeptic is a doubter — someone who won't believe a claim without solid proof. The AI boom's skeptics keep predicting it will fizzle; so far, they keep being wrong."
+ },
+ {
+  "k": "treasurys",
+  "t": "Treasurys",
+  "kind": "name",
+  "forms": ["Treasurys"],
+  "text": "Treasurys are bonds issued by the U.S. government — considered the safest investment on Earth, since the government can always pay its own dollars back. That makes them the measuring stick: every other bond is judged by how much extra interest it pays compared with a Treasury."
+ },
+ {
+  "k": "spread",
+  "t": "spread",
+  "kind": "word",
+  "forms": ["spread", "spreads"],
+  "text": "Not butter on bread — in the bond world, the spread is the extra interest a company must pay investors compared with ultrasafe Treasurys. It's a fear gauge: a wide spread means lenders see danger; a narrow spread, like today's near-record lows, means they feel confident they'll be paid back."
+ },
+ {
+  "k": "yield",
+  "t": "yield",
+  "kind": "word",
+  "forms": ["yield", "high-yield"],
+  "text": "A bond's yield is what it pays you — the interest return on the money you lent, usually written as a percentage. “High-yield” bonds pay more precisely because the borrower is riskier; you're being compensated for the chance you won't get paid back."
+ },
+ {
+  "k": "hovering",
+  "t": "hovering",
+  "kind": "word",
+  "forms": ["hovering"],
+  "text": "To hover is to float in place, like a hummingbird or a drone. When a number is “hovering near multidecade lows,” it's sitting at the lowest levels in decades and staying there, barely moving."
+ },
+ {
+  "k": "fundamentals",
+  "t": "fundamentals",
+  "kind": "word",
+  "forms": ["fundamentals"],
+  "text": "In investing, fundamentals are the real-world health numbers behind a stock — sales, profits, growth — as opposed to hype or price swings. “Encouraging fundamentals” means the actual businesses look strong, giving investors a solid-sounding reason to keep buying."
+ },
+ {
+  "k": "quarter",
+  "t": "quarter",
+  "kind": "word",
+  "forms": ["quarter", "quarterly"],
+  "text": "In business, a quarter isn't 25 cents — it's a quarter of the year, one of the four three-month periods companies use to report results. A “quarterly profit” is money earned in one such stretch; “up 31% this quarter” means since the current three-month period began."
+ },
+ {
+  "k": "citing",
+  "t": "citing",
+  "kind": "word",
+  "forms": ["citing"],
+  "text": "To cite something is to point to it as your evidence or reason — the same “cite” as citing sources in an essay. Investors “citing encouraging fundamentals” are naming strong business results as their reason for optimism."
+ },
+ {
+  "k": "rebounded",
+  "t": "rebounded",
+  "kind": "word",
+  "forms": ["rebounded"],
+  "text": "To rebound is to bounce back — same word as grabbing a rebound in basketball after the ball comes off the rim. Tech shares rebounded Monday: after last week's fall, prices bounced back up."
+ },
+ {
+  "k": "monetized",
+  "t": "monetized",
+  "kind": "word",
+  "forms": ["monetized"],
+  "text": "To monetize something is to turn it into a moneymaker. The trillion-dollar question of the whole boom: can AI models be monetized — made to earn more than the staggering amounts they cost to build and run?"
+ },
+ {
+  "k": "venture-capital",
+  "t": "venture capital",
+  "kind": "phrase",
+  "forms": ["venture capital"],
+  "text": "Venture capital is money invested in young private companies before they're public — “venture” because it's a gamble: most startups fail, but one winner can pay for all the losers. OpenAI and Anthropic have each raised over $100 billion of it, unheard-of sums for private firms."
+ },
+ {
+  "k": "gusher",
+  "t": "gusher",
+  "kind": "word",
+  "forms": ["gusher"],
+  "text": "A gusher is an oil well that erupts, spraying oil into the sky faster than anyone can cap it. A “gusher of cash” is profit flowing that uncontrollably — which is what Google's and Amazon's older businesses produce, and what first funded their AI spending."
+ },
+ {
+  "k": "legacy",
+  "t": "legacy businesses",
+  "kind": "phrase",
+  "forms": ["legacy businesses", "legacy"],
+  "text": "A company's legacy businesses are its older, established moneymakers — the things it was famous for before the new bet. For Alphabet that's search ads; for Amazon, online shopping. (In tech, “legacy” means “the old stuff,” not an inheritance.)"
+ },
+ {
+  "k": "binge",
+  "t": "binge",
+  "kind": "word",
+  "forms": ["binge"],
+  "text": "A binge is doing way too much of something in one stretch — binge-watching a whole season overnight. Big tech's “borrowing binge” is the same idea with debt: gorging on borrowed billions, deal after deal."
+ },
+ {
+  "k": "bust",
+  "t": "went bust",
+  "kind": "phrase",
+  "forms": ["went bust", "bust"],
+  "text": "A boom “goes bust” when it collapses — prices crash, companies fail, the party ends. Boom-and-bust is the classic market cycle, and the article notes this borrowing spree echoes earlier credit booms that ended exactly that way."
+ },
+ {
+  "k": "bubble",
+  "t": "bubble",
+  "kind": "word",
+  "forms": ["bubble"],
+  "text": "A market bubble is when excitement inflates prices far beyond what things are really worth — like a soap bubble, it looks magnificent right up until it pops. The worry: is Wall Street's AI enthusiasm building real value, or just inflating a bubble?"
+ },
+ {
+  "k": "investment-grade",
+  "t": "investment-grade",
+  "kind": "phrase",
+  "forms": ["investment-grade"],
+  "text": "Rating agencies grade bonds like teachers grade papers, by how likely the borrower is to pay the money back. “Investment-grade” is the passing mark — a low risk of default — so those companies get to borrow at cheaper interest rates."
+ },
+ {
+  "k": "speculative-grade",
+  "t": "speculative-grade",
+  "kind": "phrase",
+  "forms": ["speculative-grade"],
+  "text": "Speculative-grade (nicknamed “junk”) is the risky end of the bond report card: a real chance the borrower won't pay everything back, so investors demand much higher interest — that's why it's also called the high-yield market. Oracle's bonds are officially rated safer than this, but the market prices them like the top tier of junk."
+ },
+ {
+  "k": "burn",
+  "t": "burn",
+  "kind": "word",
+  "forms": ["burn"],
+  "text": "When a company “burns” money, it's spending cash faster than it earns it — investors literally call the pace of loss a “burn rate.” Oracle is projected to burn tens of billions transforming itself into a cloud-computing giant before the bet pays off (if it does)."
+ },
+ {
+  "k": "leasing-out",
+  "t": "leasing out",
+  "kind": "phrase",
+  "forms": ["leasing out"],
+  "text": "To lease something out is to rent it to others for a set period — landlords lease out apartments. Oracle's plan is to lease out vast clusters of advanced AI chips to OpenAI and others: buy the computers, rent out their power."
+ },
+ {
+  "k": "prospectus",
+  "t": "prospectus",
+  "kind": "word",
+  "forms": ["prospectus"],
+  "text": "A prospectus is the official legal document a company files before selling stocks or bonds — a detailed brochure disclosing what the money is for and what could go wrong, so investors know what they're buying. That's how the article knows about Alphabet's $1 billion energy borrowing plan."
+ },
+ {
+  "k": "municipal-bond",
+  "t": "municipal bonds",
+  "kind": "phrase",
+  "forms": ["municipal-bond"],
+  "text": "Municipal bonds are IOUs sold by cities, states and local governments (“municipal” means “of a city”) — usually to fund things like schools and roads. It's unusual to see a company like Alphabet showing up in California's municipal-bond market to borrow for energy projects."
+ },
+ {
+  "k": "rallied",
+  "t": "rallied",
+  "kind": "word",
+  "forms": ["rallied"],
+  "text": "In markets, to rally is to climb strongly after a rough patch — the way a team rallies from behind. Oracle's bonds and CoreWeave's stock have both rallied: their prices surged as investors turned optimistic again."
+ },
+ {
+  "k": "tightened",
+  "t": "tightened",
+  "kind": "word",
+  "forms": ["tightened"],
+  "text": "When bond spreads “tighten,” the gap between a company's interest rate and ultrasafe Treasurys shrinks — and counterintuitively, that's good news: it means investors now see the company as less risky. CoreWeave's spreads tightening by 4 percentage points signaled a huge jump in confidence."
+ },
+ {
+  "k": "bitcoin-miner",
+  "t": "bitcoin miner",
+  "kind": "phrase",
+  "forms": ["bitcoin miner"],
+  "text": "No pickaxes involved: a bitcoin miner is a company that runs warehouses of computers competing to solve puzzles that earn new bitcoin. CoreWeave started as one — then realized its chip-packed data centers could be rented out for AI instead, and switched businesses entirely."
+ },
+ {
+  "k": "sentiment",
+  "t": "sentiment",
+  "kind": "word",
+  "forms": ["sentiment"],
+  "text": "Sentiment is the overall mood or feeling of a group. “Investor sentiment” is the market's collective attitude toward something — and toward CoreWeave it has swung from fear (last year's selloff) to enthusiasm (this year's 43% rally)."
+ },
+ {
+  "k": "hefty",
+  "t": "hefty",
+  "kind": "word",
+  "forms": ["hefty"],
+  "text": "Hefty means big and heavy — a hefty backpack, a hefty price tag. Anthropic's revenue is finally, at least temporarily, exceeding the hefty cost of training and running its models — one of the signals feeding investors' optimism."
+ },
+ {
+  "k": "upstart",
+  "t": "upstart",
+  "kind": "word",
+  "forms": ["upstart"],
+  "text": "An upstart is a newcomer that has risen suddenly and now challenges the established players — often with a hint that it hasn't quite earned its place yet. The upstart AI cloud companies are young firms borrowing heavily to buy chips and compete with the giants."
+ },
+ {
+  "k": "betting-against",
+  "t": "betting against",
+  "kind": "phrase",
+  "forms": ["betting against"],
+  "text": "To bet against something is to position yourself to win if it fails — investors can literally place trades that profit when prices fall. Even the skeptics admit there's little point betting against the AI boom while it's still accelerating."
+ },
+ {
+  "k": "sp-500",
+  "t": "S&P 500",
+  "kind": "name",
+  "forms": ["S&P 500"],
+  "text": "The S&P 500 is an index — a running scoreboard — tracking the stock prices of 500 of America's biggest companies, widely used as shorthand for “the stock market.” The Dow Jones and Nasdaq mentioned alongside it are rival scoreboards tracking different groups of companies."
+ },
+ {
+  "k": "infrastructure",
+  "t": "infrastructure",
+  "kind": "word",
+  "forms": ["infrastructure"],
+  "text": "Infrastructure is the basic underlying equipment everything else runs on — roads and power grids for a country; data centers, chips and networks for AI. The article's jaw-dropping stat: this year's AI infrastructure spending is a bigger share of the economy than the 1850s railroad expansion was."
+ }
+]

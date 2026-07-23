@@ -1,0 +1,376 @@
+[
+ {
+  "k": "prosaic",
+  "t": "prosaic",
+  "kind": "vocab",
+  "pron": "proh-ZAY-ik",
+  "forms": ["prosaic"],
+  "text": "Prosaic means dull, ordinary, matter-of-fact — the opposite of poetic or dazzling. It's the article's quiet punchline: when an AI agent beat a world-class researcher at improving his own model, its winning moves were prosaic — better starting values, a wider attention window — plain tweaks a brilliant human had simply missed."
+ },
+ {
+  "k": "tantamount",
+  "t": "tantamount",
+  "kind": "vocab",
+  "pron": "TAN-tuh-mownt",
+  "forms": ["tantamount"],
+  "text": "Tantamount to something means amounting to the same thing as it — as good as, usually said of something serious. Professor Tegmark argued that building GPT-4 was tantamount to flooring the accelerator with your eyes closed: not literally identical, but every bit as reckless."
+ },
+ {
+  "k": "amenable",
+  "t": "amenable",
+  "kind": "vocab",
+  "pron": "uh-MEE-nuh-bul",
+  "forms": ["amenable"],
+  "text": "Amenable means open or well-suited to something — willing to go along with it. Saying not all AI-lab teams are “equally amenable to AI assistance” means some kinds of work hand over easily to machines while others resist: code can be automated soon, but negotiating for a dusty archive of papers cannot."
+ },
+ {
+  "k": "debuts",
+  "t": "debut",
+  "kind": "word",
+  "forms": ["debuts"],
+  "text": "A debut is a first public appearance — an actor's first film, a singer's first album. When Anthropic “debuts on stock markets,” it's selling shares to the public for the first time; that first day is a company's stage premiere."
+ },
+ {
+  "k": "initial-public-offering",
+  "t": "initial public offering (IPO)",
+  "kind": "phrase",
+  "forms": ["initial public offerings"],
+  "text": "An initial public offering — IPO for short — is the day a private company first sells its shares to the general public, letting anyone buy a piece of it. Hot companies raise billions in one go, and Anthropic's is expected to be one of the biggest in history."
+ },
+ {
+  "k": "indispensable",
+  "t": "indispensable",
+  "kind": "word",
+  "forms": ["indispensable"],
+  "text": "Indispensable means so necessary you can't do without it — impossible to dispense with. The article's claim is that in one year Claude Code went from new tool to indispensable for developers worldwide: their work now depends on it."
+ },
+ {
+  "k": "benchmark",
+  "t": "benchmark",
+  "kind": "word",
+  "forms": ["benchmark"],
+  "text": "A benchmark is a standard test used to compare performance — originally a surveyor's mark carved on a wall to measure heights against. In AI, benchmarks are how progress gets scored; the one cited here measures how long a task a model can finish, which grew from under an hour of human work to more than a working day."
+ },
+ {
+  "k": "think-tank",
+  "t": "think-tank",
+  "kind": "word",
+  "forms": ["think-tank"],
+  "text": "A think-tank is an organization of experts whose job is to study big problems and suggest what governments and companies should do about them. They “think” for a living. Two appear here: METR, which benchmarks AI, and CSET at Georgetown, which studies security risks."
+ },
+ {
+  "k": "cynical-eyebrow",
+  "t": "raise a cynical eyebrow",
+  "kind": "phrase",
+  "forms": ["raise a cynical eyebrow"],
+  "text": "Raising an eyebrow is the universal face of doubt; a cynical person assumes people act from self-interest, not principle. So to “raise a cynical eyebrow” at Anthropic's call for a pause is to think: how convenient — of course the company in the lead wants everyone else to stop."
+ },
+ {
+  "k": "top-of-its-game",
+  "t": "at the top of its game",
+  "kind": "phrase",
+  "forms": ["top of its game"],
+  "text": "To be at the top of your game is to be performing at your absolute best — the sports image is an athlete in peak form. The article grants that Anthropic is at the top of its game right now, which is exactly why its call to slow down invites suspicion."
+ },
+ {
+  "k": "outclassing",
+  "t": "outclassing",
+  "kind": "word",
+  "forms": ["outclassing"],
+  "text": "To outclass rivals is to be in a different class from them entirely — not just winning, but making the contest look unfair. It's a step beyond outperforming."
+ },
+ {
+  "k": "frontier",
+  "t": "frontier",
+  "kind": "word",
+  "forms": ["frontier"],
+  "text": "The frontier is the outer edge of what's been explored — wagon-train language borrowed by the AI world. “Frontier AI” and “frontier models” mean the most advanced systems in existence, the ones being built past the edge of what was possible before."
+ },
+ {
+  "k": "wreaking-havoc",
+  "t": "wreak havoc",
+  "kind": "phrase",
+  "forms": ["wreaking havoc"],
+  "text": "To wreak havoc is to cause chaotic, widespread destruction — “havoc” was once the battle-cry that let an army start looting. Anthropic's founders have worried for years about an out-of-control AI wreaking havoc; that fear is what makes their call for a pause sound sincere."
+ },
+ {
+  "k": "prospect",
+  "t": "prospect",
+  "kind": "word",
+  "forms": ["prospect"],
+  "text": "A prospect is a possibility you can see coming — something ahead of you, like the view (the original meaning) down a road. “The prospect of out-of-control AI” is that possibility looming in the future. Nothing to do with gold prospecting here, though that word shares the same looking-ahead root."
+ },
+ {
+  "k": "successor",
+  "t": "successor",
+  "kind": "word",
+  "forms": ["successor"],
+  "text": "A successor is the one that comes next and takes your place — kings have successors, and so do software versions. The article's pivotal prediction: by 2028 an AI may be able to create its own successor with no human involved at all."
+ },
+ {
+  "k": "recursive",
+  "t": "recursive",
+  "kind": "word",
+  "forms": ["recursive"],
+  "text": "Recursive describes a process that feeds back into itself — its output becomes its own next input, like standing between two mirrors. “Recursive self-improvement” is the article's central idea: version one builds a better version two, which builds a better version three, and the loop runs on without humans."
+ },
+ {
+  "k": "iteration",
+  "t": "iteration",
+  "kind": "word",
+  "forms": ["iteration"],
+  "text": "An iteration is one pass through a repeating cycle — each round of doing, checking, and doing again. The improvements “grow with each iteration” means every trip around the self-improvement loop adds more than the last one did; that's what makes the loop dangerous rather than boring."
+ },
+ {
+  "k": "fanciful",
+  "t": "fanciful",
+  "kind": "word",
+  "forms": ["fanciful"],
+  "text": "Fanciful means born of fancy — imagination — rather than fact; a fanciful story is a charming invention you shouldn't take literally. The warning quoted here runs the other way: what seems fanciful (machines building machines) “may instead be a real trend.”"
+ },
+ {
+  "k": "in-short-order",
+  "t": "in short order",
+  "kind": "phrase",
+  "forms": ["in short order"],
+  "text": "In short order means very quickly, without delay — an old phrase from military commands executed at once. Some researchers think self-improvement would in short order produce a superintelligent AI: not over decades, but almost immediately once the loop closes."
+ },
+ {
+  "k": "onomatopoeically",
+  "t": "onomatopoeically",
+  "kind": "word",
+  "forms": ["onomatopoeically"],
+  "text": "Onomatopoeia is naming something after the sound it makes — buzz, crash, pop. So a runaway intelligence explosion has been onomatopoeically dubbed “going foom”: the word is the imagined sound of an AI taking off like a rocket."
+ },
+ {
+  "k": "dubbed",
+  "t": "dubbed",
+  "kind": "word",
+  "forms": ["dubbed"],
+  "text": "To dub something is to give it a name or nickname — originally the tap of a sword that dubbed a knight. A fast AI take-off has been dubbed “going foom.” (Dubbing a video — replacing its audio — is a different, unrelated sense.)"
+ },
+ {
+  "k": "doomers",
+  "t": "doomers",
+  "kind": "word",
+  "forms": ["doomers"],
+  "text": "“AI doomers” is the community's own slang for people who expect AI to end in catastrophe — doom — for humanity. It's often used teasingly, but the article treats their core fear seriously: that self-improvement is the moment control is handed to the machines."
+ },
+ {
+  "k": "novel",
+  "t": "novel",
+  "kind": "word",
+  "forms": ["novel"],
+  "text": "Not a book! As an adjective, novel means new — never seen before. Labs hunt for “novel sources of training data,” and Dr Karpathy notes the AI's tricks weren't “particularly novel.” Same root as novelty: newness."
+ },
+ {
+  "k": "alignment",
+  "t": "alignment",
+  "kind": "name",
+  "forms": ["Alignment"],
+  "text": "In AI, alignment is the field devoted to making sure an AI's goals stay lined up with what humans actually want — so a powerful system doesn't pursue its objectives in harmful ways. Alignment and safety teams check what comes out of training before it ships."
+ },
+ {
+  "k": "jagged-frontier",
+  "t": "jagged frontier",
+  "kind": "phrase",
+  "forms": ["jagged frontier"],
+  "text": "The “jagged frontier” is researchers' name for the strange, uneven edge of what AI can do: brilliant at some hard tasks, useless at some easy ones, with no smooth line between. The article's example — designing new algorithms seemed safely human until AlphaEvolve started doing it — shows why the edge is so hard to predict."
+ },
+ {
+  "k": "flagship",
+  "t": "flagship",
+  "kind": "word",
+  "forms": ["flagship"],
+  "text": "A flagship was the ship carrying the fleet's admiral — the one flying the flag. In business it means a company's lead product, the one that carries the brand: Gemini is Google's flagship large language model."
+ },
+ {
+  "k": "large-language-model",
+  "t": "large language model (LLM)",
+  "kind": "name",
+  "forms": ["large language model", "llm"],
+  "text": "A large language model — LLM — is the kind of AI behind chatbots like Claude and Gemini: a system trained on enormous amounts of text until it can read, write, and code. “Large” is no exaggeration; frontier models are terabytes in size."
+ },
+ {
+  "k": "matrix-multiplication",
+  "t": "matrix multiplication",
+  "kind": "name",
+  "forms": ["matrix multiplication"],
+  "text": "A core math operation — multiplying grids of numbers together — that happens to be the single main computation inside AI training. Find a faster way to do it, as AlphaEvolve did, and everything built on top speeds up."
+ },
+ {
+  "k": "bottlenecks",
+  "t": "bottleneck",
+  "kind": "word",
+  "forms": ["bottlenecks"],
+  "text": "A bottleneck is the narrowest point that sets the pace for everything — liquid can only leave a bottle as fast as the neck allows. The report's warning: even if some parts of AI research are hard to automate at first, accelerating progress means “those bottlenecks are soon overcome.”"
+ },
+ {
+  "k": "state-of-the-art",
+  "t": "state-of-the-art",
+  "kind": "phrase",
+  "forms": ["state-of-the-art"],
+  "text": "State-of-the-art means the most advanced version that currently exists — the “state” of the “art” being how far the craft has come. GPT-2 needed 168 hours on 32 state-of-the-art chips in 2019; Dr Karpathy matched it with eight GPUs in three hours, a measure of how fast the art moves."
+ },
+ {
+  "k": "stack-up",
+  "t": "stack up",
+  "kind": "phrase",
+  "forms": ["stack up"],
+  "text": "Small things stack up when they pile on top of each other into something big. Each of the AI agent's tweaks was minor on its own, but “they stack up” — together they beat the work of one of the field's most talented humans."
+ },
+ {
+  "k": "plumbing-together",
+  "t": "plumbing together",
+  "kind": "phrase",
+  "forms": ["plumbing together"],
+  "text": "Plumbing is pipe-work, so to “plumb together” systems is to connect them up the way a plumber joins pipes — unglamorous fitting and joining. The article uses it to deflate the mystique: much of building a frontier model is plumbing, debugging, and tweaking, not genius."
+ },
+ {
+  "k": "infrastructure",
+  "t": "infrastructure",
+  "kind": "word",
+  "forms": ["infrastructure"],
+  "text": "Infrastructure is the basic underlying stuff everything else runs on — roads and power lines for a country; chips, servers, and software layers for an AI lab. An “infrastructure stack” is those layers piled on each other, each depending on the one below."
+ },
+ {
+  "k": "nuanced",
+  "t": "nuanced",
+  "kind": "word",
+  "forms": ["nuanced"],
+  "text": "Nuance is fine shading — subtle differences that crude descriptions miss. Nuanced work is work requiring sensitivity to those subtleties, which is why it was supposed to stay human longest. The article's point: even “the more nuanced intellectual work is nearing automation.”"
+ },
+ {
+  "k": "toy-model",
+  "t": "toy model",
+  "kind": "phrase",
+  "forms": ["toy model", "toy models"],
+  "text": "A toy model isn't a plaything — it's researchers' term for a small, cheap version of a system, used to test an idea before spending millions on the real thing. Run the experiment on the toy first; if it works, scale it up."
+ },
+ {
+  "k": "at-scale",
+  "t": "at scale",
+  "kind": "phrase",
+  "forms": ["at scale", "production scale"],
+  "text": "Doing something at scale means doing it at full, massive size rather than as a small test — the leap from a recipe that works for one cake to a bakery producing thousands. A plan “ready to implement at scale” has graduated from the toy model to the real, expensive thing."
+ },
+ {
+  "k": "alluring",
+  "t": "alluring",
+  "kind": "word",
+  "forms": ["alluring"],
+  "text": "Alluring means powerfully tempting — it lures you. The sentence hangs its warning on the pairing: the productivity boost from AI-run research is “alluring, but also alarming.” The same loop that draws the labs in is the one that could take control away."
+ },
+ {
+  "k": "likens",
+  "t": "liken",
+  "kind": "word",
+  "forms": ["likens"],
+  "text": "To liken one thing to another is to compare them — to say they're alike. Professor Tegmark likens racing ahead on AI to a driver flooring the accelerator with his eyes closed; a vivid likeness is how you make an abstract risk felt."
+ },
+ {
+  "k": "flooring",
+  "t": "flooring the accelerator",
+  "kind": "phrase",
+  "forms": ["flooring the accelerator"],
+  "text": "To floor the accelerator is to press the gas pedal all the way to the floor — maximum speed, held down. Add “on the motorway with their eyes closed” and you have Tegmark's picture of humanity's current approach to AI: full throttle, no looking."
+ },
+ {
+  "k": "motorway",
+  "t": "motorway",
+  "kind": "word",
+  "forms": ["motorway"],
+  "text": "British English for a highway — The Economist is a British paper. Americans would say freeway or interstate."
+ },
+ {
+  "k": "ushering-in",
+  "t": "usher in",
+  "kind": "phrase",
+  "forms": ["ushering in"],
+  "text": "An usher shows you to your seat; to usher something in is to escort it onto the stage of history — to bring in a new era. The fear here is a first-mover with superintelligent AI “ushering in global totalitarianism.”"
+ },
+ {
+  "k": "totalitarianism",
+  "t": "totalitarianism",
+  "kind": "word",
+  "forms": ["totalitarianism"],
+  "text": "Totalitarianism is government with total control — one ruler or party commanding politics, media, the economy, even private life, with no opposition allowed. The article's nightmare scenario: whoever first controls superintelligent AI could gain the “supreme power” to impose that on the whole world."
+ },
+ {
+  "k": "warrants",
+  "t": "warrants",
+  "kind": "word",
+  "forms": ["warrants"],
+  "text": "Not a police warrant: as a verb, to warrant something is to justify it — to be serious enough to call for it. The report says the risks “warrant preparatory action now,” meaning they're grave enough to deserve action before the problem arrives."
+ },
+ {
+  "k": "constraints",
+  "t": "constraints",
+  "kind": "word",
+  "forms": ["constraints"],
+  "text": "A constraint is a limit that holds something back — from the Latin for “bind tightly.” The article's physical constraints (chips, electricity, data) are the real-world ropes on runaway self-improvement: even a self-improving AI can only move as fast as its scarcest resource allows."
+ },
+ {
+  "k": "compute",
+  "t": "compute",
+  "kind": "word",
+  "forms": ["compute"],
+  "text": "In AI-speak, “compute” is a noun: raw computing power, measured in chips and data centers. “Access to compute” — not cleverness — is named as the most important limit on how fast models can improve themselves."
+ },
+ {
+  "k": "predecessors",
+  "t": "predecessors",
+  "kind": "word",
+  "forms": ["predecessors"],
+  "text": "A predecessor is the one that came before — the opposite of a successor. Each new model uses more computing power to train than its predecessors, which chains AI progress to the slow, physical pace of building data centers."
+ },
+ {
+  "k": "interim",
+  "t": "interim",
+  "kind": "word",
+  "forms": ["interim"],
+  "text": "Interim means for the time being — filling the gap until something permanent arrives. An interim executive director holds the top job temporarily, the way a substitute teacher holds a class."
+ },
+ {
+  "k": "synthetic",
+  "t": "synthetic",
+  "kind": "word",
+  "forms": ["synthetic"],
+  "text": "Synthetic means artificially made rather than found in nature — synthetic fabric, synthetic diamonds. Synthetic data is training text generated by AI models purely to teach other models, and it's safe to use only where answers can be checked: code runs or it doesn't, a proof is right or it isn't."
+ },
+ {
+  "k": "degeneracy",
+  "t": "degeneracy",
+  "kind": "word",
+  "forms": ["degeneracy"],
+  "text": "Degeneracy is decay — a gradual collapse in quality, generation by generation. It's the known hazard of AI eating its own cooking: train a model on its own output without checks, and errors compound until the model rots. Verifiable rewards are what let labs dodge that fate."
+ },
+ {
+  "k": "disposition",
+  "t": "disposition",
+  "kind": "word",
+  "forms": ["disposition"],
+  "text": "Your disposition is your natural temperament — the way you lean, sunny or gloomy. The article's wry closing move: whether the self-improvement loop leads to utopia or doom depends, it says, on your disposition — the facts don't yet settle it either way."
+ },
+ {
+  "k": "utopia",
+  "t": "utopia",
+  "kind": "word",
+  "forms": ["utopia"],
+  "text": "A utopia is a perfect imagined world — coined by Thomas More from Greek meaning “no place,” a wink that perfection doesn't exist. Its shadow-twin is dystopia. Superintelligent AI, the article ends, could deliver either one: utopia or doom."
+ },
+ {
+  "k": "exponential",
+  "t": "exponential",
+  "kind": "word",
+  "forms": ["exponential"],
+  "text": "Exponential growth multiplies instead of adds — doubling and redoubling, deceptively slow at first and then explosive, like a penny doubled daily beating $1,000 a day within a month. The report imagines AI research speeding up ten-fold, then a hundred-fold, then a thousand-fold: that curve."
+ },
+ {
+  "k": "closing-the-loop",
+  "t": "closing the loop",
+  "kind": "phrase",
+  "forms": ["Closing the loop"],
+  "text": "To close the loop is to connect the last link so a process feeds back into itself and runs on its own — here, automating the final human job in AI-building, so models fully build models. The article's last word of caution: even a closed loop isn't the whole recipe for an intelligence explosion."
+ }
+]

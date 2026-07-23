@@ -1,0 +1,230 @@
+[
+ {
+  "k": "beleaguered",
+  "t": "beleaguered",
+  "kind": "vocab",
+  "pron": "bih-LEE-gurd",
+  "forms": ["beleaguered"],
+  "text": "Beleaguered means beset with troubles from every direction at once — struggling, under pressure, hit from all sides. The article calls 23andMe a “beleaguered” company because it was already in deep trouble when hackers stole the genetic data of 6.9 million of its customers — bad news piled on top of bad news."
+ },
+ {
+  "k": "accrue",
+  "t": "accrue",
+  "kind": "vocab",
+  "pron": "uh-KROO",
+  "forms": ["accrue"],
+  "text": "To accrue is to build up gradually over time, bit by bit — the way interest slowly stacks up in a savings account. Here the point is who the payoff lands on: the benefits of the medical research “accrue to other people,” meaning they trickle in years later and often help strangers, not the baby whose DNA was actually tested."
+ },
+ {
+  "k": "purgatory",
+  "t": "purgatory",
+  "kind": "vocab",
+  "pron": "PUR-guh-tor-ee",
+  "forms": ["purgatory"],
+  "text": "Purgatory is a miserable in-between state of waiting, stuck between two outcomes with no clear answer — the word comes from an old religious idea of a place between heaven and hell. “Diagnostic purgatory” is what parents fall into when a test says their child might have a disease but can't say for sure: no diagnosis, no all-clear, just months of worry."
+ },
+ {
+  "k": "mission-creep",
+  "t": "mission creep",
+  "kind": "vocab",
+  "pron": "MISH-un KREEP",
+  "forms": ["mission creep"],
+  "text": "Mission creep is when a project quietly grows past what it was first meant to do — no one ever decides to expand it, it just spreads. The worry here is that a programme sold to parents as simple disease-screening for their baby secretly balloons into a permanent DNA databank for research, so you “can't take part in one without taking part in the other.”"
+ },
+ {
+  "k": "sequence",
+  "t": "sequence",
+  "kind": "word",
+  "forms": ["sequenced", "sequence", "sequencing"],
+  "text": "To sequence DNA is to read out the exact order of the chemical “letters” that make up a person's genetic code — like transcribing a book one letter at a time. The whole article asks whether every newborn should have this done, since sequencing reveals far more about your health (and your risks) than an ordinary blood test."
+ },
+ {
+  "k": "genome",
+  "t": "genome",
+  "kind": "word",
+  "forms": ["genome", "genomes", "genomic"],
+  "text": "Your genome is your complete set of DNA — the full instruction manual for building and running your body, written in genes. Because a genome is so personal and permanent, storing one “indefinitely” is exactly what makes some parents nervous: it can never be changed and could reveal secrets you didn't ask to know."
+ },
+ {
+  "k": "penetrance",
+  "t": "penetrance",
+  "kind": "name",
+  "forms": ["penetrance"],
+  "text": "Penetrance is a genetics term for how often a risky gene actually causes the disease it's linked to — the fraction of people carrying a “disease gene” who really get sick. It's the article's central idea: a gene once thought to cause eye cancer over 90% of the time turned out, in a newer study, to do so in fewer than a third of carriers. High-sounding risk, much lower reality."
+ },
+ {
+  "k": "mutation",
+  "t": "mutation",
+  "kind": "word",
+  "forms": ["mutation", "mutations"],
+  "text": "A mutation is a change or “typo” in a gene — sometimes harmless, sometimes the cause of a disease. DNA sequencing can flag disease-causing mutations early, but it also flags many that may never actually make you ill, which is where a lot of the needless worry in this story comes from."
+ },
+ {
+  "k": "variant",
+  "t": "variant",
+  "kind": "word",
+  "forms": ["variants", "variant"],
+  "text": "A genetic variant is simply a version of a gene that differs from the common one — some are “risky variants” linked to disease. The catch the article keeps returning to: carrying a risky variant raises your odds of a problem, but plenty of people carry one and stay perfectly healthy their whole lives."
+ },
+ {
+  "k": "marker",
+  "t": "markers",
+  "kind": "word",
+  "forms": ["markers"],
+  "text": "Here a marker isn't something you write with — it's a biological clue, a telltale sign in the blood or DNA that points to a particular disease. Older screening tests look for “markers of conditions such as sickle-cell anaemia,” checking a blood sample for those warning signs."
+ },
+ {
+  "k": "fret",
+  "t": "fret",
+  "kind": "word",
+  "forms": ["fret"],
+  "text": "To fret is to worry — to stew and fuss over something anxiously. The article says critics “fret” that sequencing every baby's DNA could cause needless alarm and force parents to hand over deeply private data."
+ },
+ {
+  "k": "genes-destiny",
+  "t": "genes aren't destiny",
+  "kind": "phrase",
+  "forms": ["not always destiny"],
+  "text": "Saying “genes are not always destiny” means your DNA sets the odds, not the outcome — it isn't a fixed fate you can't escape. Environment, other genes, and plain luck all get a vote, which is why most people carrying a disease-linked gene never actually develop that disease."
+ },
+ {
+  "k": "middling",
+  "t": "middling",
+  "kind": "word",
+  "forms": ["middling"],
+  "text": "Middling means middle-of-the-road — not high, not low, just so-so. Testing for genes with “low or middling penetrance” means testing for genes that only sometimes lead to illness, which is exactly what leaves families stuck worrying about a problem that may never come."
+ },
+ {
+  "k": "inflating",
+  "t": "inflating",
+  "kind": "word",
+  "forms": ["inflating"],
+  "text": "Inflating here has nothing to do with pumping up a balloon — it means making a number look bigger than it really is. Finding “disease genes” by only studying people who are already sick “risks inflating the numbers,” making a gene seem far more dangerous than it is for everyone else."
+ },
+ {
+  "k": "working-backwards",
+  "t": "working backwards",
+  "kind": "phrase",
+  "forms": ["working backwards"],
+  "text": "Working backwards means starting from the answer and reasoning back toward the cause — here, starting with people who already have a disease and then hunting for the gene they share. It sounds sensible, but it quietly stacks the deck: of course almost everyone in a group of sick people carries the “disease gene,” which makes the gene look scarier than it is in the general population."
+ },
+ {
+  "k": "patients-in-waiting",
+  "t": "patients-in-waiting",
+  "kind": "phrase",
+  "forms": ["patients-in-waiting"],
+  "text": "A coined phrase for people labeled at risk of a disease they may never actually get — patients only in the sense that they're waiting to find out. Testing hundreds of low-penetrance genes could create crowds of these “patients-in-waiting,” carrying a scary label and the stress that comes with it for nothing."
+ },
+ {
+  "k": "sticking-point",
+  "t": "sticking-point",
+  "kind": "phrase",
+  "forms": ["sticking-point"],
+  "text": "A sticking-point is the one issue that snags an agreement — the obstacle everything gets stuck on. For many researchers and parents, storing a child's genome forever is the sticking-point: they might accept the disease-screening, but the idea of keeping that DNA indefinitely is where they dig in."
+ },
+ {
+  "k": "indefinitely",
+  "t": "indefinitely",
+  "kind": "word",
+  "forms": ["indefinitely"],
+  "text": "Indefinitely means for an unlimited time, with no set end — basically, forever, or at least with no promised stopping point. Storing a baby's genome “indefinitely” is one of the article's biggest worries, because that data could sit in a database long after anyone remembers agreeing to it."
+ },
+ {
+  "k": "premium",
+  "t": "premiums",
+  "kind": "word",
+  "forms": ["premiums"],
+  "text": "A premium here is the price you pay for insurance — the regular fee, not “premium” meaning fancy. The fear is that some insurers could use your genetic-test results “when setting premiums,” charging you more because your DNA hints you might get sick someday."
+ },
+ {
+  "k": "paternity",
+  "t": "paternity",
+  "kind": "word",
+  "forms": ["paternity"],
+  "text": "Paternity is fatherhood — specifically the question of who a child's biological father actually is. Because DNA can settle that question, the article warns it could be used for blackmail, dredging up “questions of paternity” a family never wanted exposed."
+ },
+ {
+  "k": "to-boot",
+  "t": "to boot",
+  "kind": "phrase",
+  "forms": ["to boot"],
+  "text": "“To boot” is an old-fashioned way to say “on top of that” or “as well” — nothing to do with footwear or computers. The trials are trying to do disease-screening and long-term research at once, “and with patients who are incapable of consenting to boot” — that is, and the patients can't even agree to it, in addition to everything else."
+ },
+ {
+  "k": "flag",
+  "t": "flagging",
+  "kind": "word",
+  "forms": ["flagging", "flag"],
+  "text": "To flag something isn't to plant a flag — it's to mark or highlight it for attention, the way a teacher flags a mistake. DNA analysis can flag mutations that aren't causing trouble yet, and later flag people who might benefit from a new treatment — marking them out so someone takes a closer look."
+ },
+ {
+  "k": "screen",
+  "t": "screen",
+  "kind": "word",
+  "forms": ["screen", "screening", "screened", "screens"],
+  "text": "To screen for a disease means to test lots of healthy people to catch a problem early — not a movie screen or a window screen. Many countries already screen newborns with a blood test; the debate here is whether to screen their whole DNA, which catches far more but also raises far more false alarms."
+ },
+ {
+  "k": "trial",
+  "t": "trials",
+  "kind": "word",
+  "forms": ["trials", "trial"],
+  "text": "A trial here isn't a courtroom event — it's a carefully run test of whether something new (a treatment, or in this case a screening programme) actually works and is safe. Trials in America, Australia, and Europe are testing DNA screening on real newborns precisely to answer the hard questions the article raises."
+ },
+ {
+  "k": "geneticist",
+  "t": "geneticist",
+  "kind": "word",
+  "forms": ["geneticist", "geneticists"],
+  "text": "A geneticist is a scientist who studies genes and how traits and diseases are passed down. The article leans on several of them — like the researcher who found that a supposedly 90%-dangerous eye-cancer gene rarely leads to cancer — because they're the ones who can tell how much a scary genetic result really means."
+ },
+ {
+  "k": "inconclusive",
+  "t": "inconclusive",
+  "kind": "word",
+  "forms": ["inconclusive"],
+  "text": "An inconclusive result doesn't settle anything — it's a “maybe,” neither a clear yes nor a clear no. The cystic-fibrosis label “screen positive inconclusive diagnosis” names exactly that limbo, and it's stressful enough that doctors gave it its own name."
+ },
+ {
+  "k": "consent",
+  "t": "consenting",
+  "kind": "word",
+  "forms": ["consenting", "consent"],
+  "text": "To consent is to give informed permission — to say yes knowing what you're agreeing to. A newborn is “incapable of consenting,” which is the ethical knot at the heart of the story: parents are deciding, on a baby's behalf, to share the most personal information that baby has."
+ },
+ {
+  "k": "equated",
+  "t": "equated",
+  "kind": "word",
+  "forms": ["equated"],
+  "text": "To equate two things is to treat them as equal or the same. The geneticist's point is that people have long “equated genetic information with certainty” — treating a gene result as a guaranteed fate — which she says is outdated now that we know how loosely many genes actually predict disease."
+ },
+ {
+  "k": "retinoblastoma",
+  "t": "retinoblastoma",
+  "kind": "name",
+  "forms": ["retinoblastoma"],
+  "text": "A rare cancer of the eye, mostly affecting young children. It opens the article as a success story — baby Freddie's was caught early thanks to genetic screening — but also as a caution, since the gene behind it turned out to cause the cancer far less often than doctors once believed."
+ },
+ {
+  "k": "cystic-fibrosis",
+  "t": "cystic fibrosis",
+  "kind": "name",
+  "forms": ["cystic fibrosis"],
+  "text": "A serious inherited disease that clogs the lungs and digestive system with thick mucus. It's the article's example of “diagnostic purgatory”: a screen can come back “positive but inconclusive,” leaving parents unsure for years whether their child truly has it."
+ },
+ {
+  "k": "23andme",
+  "t": "23andMe",
+  "kind": "name",
+  "forms": ["23andMe"],
+  "text": "A well-known company that mails you a spit kit and reads your DNA for ancestry and health clues. The article uses it as a warning: in 2023 hackers stole the genetic and personal information of 6.9 million of its customers — a reminder of what can go wrong when genomes are stored in one place."
+ },
+ {
+  "k": "generation-study",
+  "t": "Generation Study",
+  "kind": "name",
+  "forms": ["Generation Study"],
+  "text": "An English programme that plans to sequence the complete DNA of 100,000 babies — the flagship example in this story. Its two goals sit at the heart of the debate: screen each baby for genetic disease now, and bank all that genomic data to power medical research later."
+ }
+]

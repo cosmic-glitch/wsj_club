@@ -1,0 +1,570 @@
+[
+ {
+  "k": "coveted",
+  "t": "coveted",
+  "kind": "vocab",
+  "pron": "KUV-ih-tid",
+  "forms": [
+   "coveted"
+  ],
+  "text": "Coveted means wanted so badly by so many that whoever has it is envied — the way every freshman covets a varsity spot. ASML's machine-making technology is coveted by governments and companies worldwide, which is exactly why it keeps getting caught in superpower crossfire."
+ },
+ {
+  "k": "salvo",
+  "t": "salvo",
+  "kind": "vocab",
+  "pron": "SAL-voh",
+  "forms": [
+   "salvo"
+  ],
+  "text": "A salvo is a burst of several guns firing at once — and, figuratively, an opening or aggressive move in a bigger fight, like a debater's sharp first question. The article's closing warning: this whole dispute is just an early salvo in the long battle over who controls AI's chokeholds."
+ },
+ {
+  "k": "decommissioned",
+  "t": "decommissioned",
+  "kind": "vocab",
+  "pron": "dee-kuh-MISH-und",
+  "forms": [
+   "decommissioned"
+  ],
+  "text": "To decommission a machine, ship, or power plant is to officially retire it from active service — an old aircraft carrier gets decommissioned and becomes a museum. ASML's point is how tight its tracking is: it knows where all 340 EUV machines are, right down to the 26 retired ones."
+ },
+ {
+  "k": "fracas",
+  "t": "fracas",
+  "kind": "vocab",
+  "pron": "FRAY-kus",
+  "forms": [
+   "fracas"
+  ],
+  "text": "A fracas is a noisy quarrel or uproar — the commotion when a referee's bad call sets the whole stands shouting. Here it's the public row set off by the American commerce secretary's accusation, which may die down if the evidence never shows up."
+ },
+ {
+  "k": "punch-above-weight",
+  "t": "punch above their weight",
+  "kind": "phrase",
+  "forms": [
+   "punch above their weight"
+  ],
+  "text": "Boxing language: fighters compete in weight classes, so someone who punches above their weight beats opponents from a bigger class. A small country punching above its weight has far more impact than its size suggests — the Netherlands, with 18 million people, makes the one machine the two superpowers are fighting over."
+ },
+ {
+  "k": "rebut",
+  "t": "rebut",
+  "kind": "word",
+  "forms": [
+   "rebut"
+  ],
+  "text": "To rebut a claim is to argue back against it with evidence — to knock it down, not just deny it. ASML is fighting to rebut the American allegation by pointing to its records: every machine accounted for, none in China."
+ },
+ {
+  "k": "technology-transfers",
+  "t": "technology transfers",
+  "kind": "phrase",
+  "forms": [
+   "technology transfers"
+  ],
+  "text": "A technology transfer is know-how moving from one country or company to another — by teaching, by sale, or by theft. The article opens with three centuries of Dutch examples: farming tricks that fed the Industrial Revolution, shipbuilding that built Russia's navy, and stolen blueprints that seeded nuclear programs."
+ },
+ {
+  "k": "industrial-revolution",
+  "t": "Industrial Revolution",
+  "kind": "name",
+  "forms": [
+   "Industrial Revolution"
+  ],
+  "text": "The transformation, starting in 18th-century Britain, when machines, factories, and steam power replaced muscle and handcraft — arguably the biggest economic shift in human history. The article credits Dutch financial and farming innovations with laying its groundwork."
+ },
+ {
+  "k": "tsar",
+  "t": "tsar",
+  "kind": "word",
+  "forms": [
+   "tsar"
+  ],
+  "text": "A tsar (also spelled czar) was an emperor of Russia — the word descends from “Caesar.” Peter the Great famously traveled to the Netherlands to study shipbuilding, then used what he learned to build the navy that made Russia a sea power."
+ },
+ {
+  "k": "maritime",
+  "t": "maritime",
+  "kind": "word",
+  "forms": [
+   "maritime"
+  ],
+  "text": "Maritime means connected with the sea — ships, navies, sea trade (from Latin mare, sea). A maritime power is a country whose strength runs on its navy and merchant fleet, which is what Dutch shipbuilding know-how turned Russia into."
+ },
+ {
+  "k": "seed",
+  "t": "seed",
+  "kind": "word",
+  "forms": [
+   "seed"
+  ],
+  "text": "To seed something is to plant its beginnings and let it grow — no garden required. A.Q. Khan's stolen blueprints didn't just launch Pakistan's nuclear program; they seeded similar efforts in North Korea, Iran, and Libya, spreading like windblown seeds."
+ },
+ {
+  "k": "know-how",
+  "t": "know-how",
+  "kind": "word",
+  "forms": [
+   "know-how"
+  ],
+  "text": "Know-how is practical expertise — not book knowledge but the hands-on skill of actually being able to build and run something. The article's whole opening argues that Dutch know-how has repeatedly tipped world history, and asks whether it just happened again."
+ },
+ {
+  "k": "balance-of-power",
+  "t": "balance of power",
+  "kind": "phrase",
+  "forms": [
+   "balance of power"
+  ],
+  "text": "The balance of power is how strength is distributed among rival countries — picture a set of scales with nations stacked on each side. Saying Dutch know-how may have “tilted the global balance” means one machine could shift weight from America's side toward China's."
+ },
+ {
+  "k": "alleges",
+  "t": "alleges",
+  "kind": "word",
+  "forms": [
+   "alleges",
+   "allegation"
+  ],
+  "text": "To allege is to accuse without yet proving — an allegation is a claim still waiting for evidence, which is why careful newspapers lean on this word. The Trump administration alleges a machine reached China; ASML notes that despite repeated requests, no evidence has been shared."
+ },
+ {
+  "k": "lithography",
+  "t": "lithography",
+  "kind": "name",
+  "forms": [
+   "lithography"
+  ],
+  "text": "Chipmaking's core trick: using light to print circuit patterns onto silicon, layer by layer — the word literally means “stone writing.” A lithography machine is the printing press of the computer age, and the most advanced kind (EUV) is the machine this whole fight is about."
+ },
+ {
+  "k": "semiconductors",
+  "t": "semiconductors",
+  "kind": "word",
+  "forms": [
+   "semiconductors",
+   "semiconductor"
+  ],
+  "text": "A semiconductor is a material — almost always silicon — that can be engineered to switch electricity on and off billions of times a second, which is what makes it the stuff of computer chips. “Semiconductors” has become shorthand for the chips themselves, the brains inside every phone, car, and AI model."
+ },
+ {
+  "k": "asml",
+  "t": "ASML",
+  "kind": "name",
+  "forms": [
+   "ASML"
+  ],
+  "text": "The Dutch company that is the only maker on Earth of EUV lithography machines — and, not coincidentally, Europe's most valuable company. Each machine is roughly bus-sized, costs hundreds of millions of dollars, and only ASML's own engineers may move or service one."
+ },
+ {
+  "k": "euv",
+  "t": "EUV",
+  "kind": "name",
+  "forms": [
+   "EUV",
+   "extreme ultraviolet"
+  ],
+  "text": "Extreme ultraviolet — light with waves so short they can print chip features just a few atoms wide. EUV machines make the world's most advanced chips, the kind that power top AI models; America has blocked their export to China since 2019, which is why one allegedly turning up there is such a bombshell."
+ },
+ {
+  "k": "duv",
+  "t": "DUV",
+  "kind": "name",
+  "forms": [
+   "DUV",
+   "deep ultraviolet"
+  ],
+  "text": "Deep ultraviolet — ASML's older generation of lithography machine, less precise than EUV and mostly not covered by export bans. That loophole matters twice over: DUV sales to China brought ASML about a third of its 2025 revenue, and Chinese firms have found clever ways to push DUV beyond what anyone expected."
+ },
+ {
+  "k": "fabs",
+  "t": "fabs",
+  "kind": "word",
+  "forms": [
+   "fabs"
+  ],
+  "text": "Fab is industry slang for a fabrication plant — a chip factory, among the cleanest and most expensive buildings ever constructed. Even inside customers' fabs, EUV components are handled only by ASML's own engineers; that's how tightly the company says it controls its technology."
+ },
+ {
+  "k": "export-controls",
+  "t": "export controls",
+  "kind": "phrase",
+  "forms": [
+   "export controls"
+  ],
+  "text": "Export controls are government rules that forbid selling certain goods or technology to certain countries — not a tax like a tariff, but an outright block, usually for national-security reasons. America's bet since 2019: withhold the chipmaking machines China can't build itself, and its AI progress slows."
+ },
+ {
+  "k": "declined",
+  "t": "declined",
+  "kind": "word",
+  "forms": [
+   "declined"
+  ],
+  "text": "Here declined means politely refused — nothing to do with going downhill. When the Dutch trade minister “declined to provide details,” he was giving the diplomat's classic non-answer: refusing to discuss it, courteously."
+ },
+ {
+  "k": "hinges",
+  "t": "hinges",
+  "kind": "word",
+  "forms": [
+   "hinges"
+  ],
+  "text": "When something hinges on a question, the whole thing swings on it the way a door swings on its hinges — everything depends on that one point. The dispute hinges, at least on the surface, on whether Lutnick's allegation has any basis at all."
+ },
+ {
+  "k": "briefed",
+  "t": "briefed",
+  "kind": "word",
+  "forms": [
+   "briefed"
+  ],
+  "text": "To be briefed on something is to be officially filled in — given the inside information, often confidentially. “People briefed on it” is journalist code for insiders who've seen what the public hasn't; their verdict here is deliciously hedged: “unverified” yet “not unfounded.”"
+ },
+ {
+  "k": "unfounded",
+  "t": "unfounded",
+  "kind": "word",
+  "forms": [
+   "unfounded",
+   "unverified"
+  ],
+  "text": "An unfounded claim has no foundation — nothing solid under it; unverified means not yet confirmed. So “unverified yet not unfounded” is a careful double negative: nobody has proven the allegation, but insiders don't think it's built on nothing either. That sliver of doubt is what keeps the story alive."
+ },
+ {
+  "k": "third-parties",
+  "t": "third parties",
+  "kind": "phrase",
+  "forms": [
+   "third parties"
+  ],
+  "text": "In any deal there are two parties — buyer and seller; a third party is anyone outside it. Experts doubt a whole machine reached China directly, but components might have traveled through third parties: middlemen whose involvement lets everyone else say “not us.”"
+ },
+ {
+  "k": "friction",
+  "t": "friction",
+  "kind": "word",
+  "forms": [
+   "friction"
+  ],
+  "text": "Friction is the rubbing resistance between surfaces — and, between people or governments, the tension when they grind against each other. The affair highlights the friction between the Trump administration and its European allies over how hard to squeeze China."
+ },
+ {
+  "k": "undermining",
+  "t": "undermining",
+  "kind": "word",
+  "forms": [
+   "undermining"
+  ],
+  "text": "To undermine is to weaken something from below — originally, digging a mine under a castle wall so it collapses. European governments fear America is undermining their interests: quietly weakening them while cutting its own deals with China."
+ },
+ {
+  "k": "strong-arm",
+  "t": "strong-arm",
+  "kind": "phrase",
+  "forms": [
+   "strong-arm"
+  ],
+  "text": "To strong-arm someone is to force them by muscle and threats rather than persuasion — bully tactics. Some Europeans suspect the real game: pressuring ASML into moving more of its business to America to build up the chip industry there."
+ },
+ {
+  "k": "pivotal",
+  "t": "pivotal",
+  "kind": "word",
+  "forms": [
+   "pivotal"
+  ],
+  "text": "A pivot is the point something turns on, so a pivotal question is one everything else revolves around. The pivotal question here: how close is China to building its own EUV machine — because the day it succeeds, the export bans lose their power."
+ },
+ {
+  "k": "prototype",
+  "t": "prototype",
+  "kind": "word",
+  "forms": [
+   "prototype"
+  ],
+  "text": "A prototype is the first working test version of an invention — built to prove the idea, not to be the finished product. Reuters reported that ex-ASML engineers in China finished a prototype EUV machine in early 2025; it hasn't made a single working chip yet."
+ },
+ {
+  "k": "shenzhen",
+  "t": "Shenzhen",
+  "kind": "name",
+  "forms": [
+   "Shenzhen"
+  ],
+  "text": "China's tech capital, just across the border from Hong Kong — a fishing town forty years ago, now a megacity of hardware factories and giants like Huawei. A high-security lab there is where China's prototype EUV machine is reportedly being tested."
+ },
+ {
+  "k": "confidentiality-agreements",
+  "t": "confidentiality agreements",
+  "kind": "phrase",
+  "forms": [
+   "confidentiality agreements"
+  ],
+  "text": "Contracts that legally bind employees to keep company secrets even after they quit. ASML can't control where former engineers work — but if they carry its secrets to a lab in Shenzhen, those signed promises are what it sues over."
+ },
+ {
+  "k": "trade-secrets",
+  "t": "trade secrets",
+  "kind": "phrase",
+  "forms": [
+   "trade secrets"
+  ],
+  "text": "A trade secret is valuable business knowledge a company protects by keeping it secret rather than patenting it — the Coca-Cola recipe is the classic example. Stealing one is a crime, and ASML says it has already won legal cases over exactly that."
+ },
+ {
+  "k": "concede",
+  "t": "concede",
+  "kind": "word",
+  "forms": [
+   "concede"
+  ],
+  "text": "To concede is to admit something reluctantly — to grant a point you'd rather not, like conceding a game. Experts think a Chinese EUV machine is a decade away, but they concede China is moving faster than they expected. That grudging admission is doing a lot of work."
+ },
+ {
+  "k": "smic",
+  "t": "SMIC",
+  "kind": "name",
+  "forms": [
+   "SMIC"
+  ],
+  "text": "China's biggest chip manufacturer (the name stands for Semiconductor Manufacturing International Corporation). Together with Huawei, it pioneered the multi-patterning workaround that squeezes near-cutting-edge chips out of older DUV machines America hasn't banned."
+ },
+ {
+  "k": "multi-patterning",
+  "t": "multi-patterning",
+  "kind": "name",
+  "forms": [
+   "multi-patterning"
+  ],
+  "text": "A workaround technique: instead of printing a chip layer in one ultra-precise EUV pass, print it in several overlapping passes with an older DUV machine — like tracing a fine line by drawing over it repeatedly with a thicker pen. It's slower, costlier, and error-prone, but it lets China make chips the export bans were supposed to put out of reach."
+ },
+ {
+  "k": "nanometers",
+  "t": "nanometers",
+  "kind": "word",
+  "forms": [
+   "nanometers"
+  ],
+  "text": "A nanometer is a billionth of a meter — your fingernail grows about one nanometer per second. Chip generations are measured in them: “less than seven nanometers” means features tens of thousands of times thinner than a hair, territory that until recently only EUV machines could reach."
+ },
+ {
+  "k": "cutting-edge",
+  "t": "cutting edge",
+  "kind": "phrase",
+  "forms": [
+   "cutting edge",
+   "cutting-edge"
+  ],
+  "text": "The cutting edge is the sharpest, foremost part of a blade — so “the industry's cutting edge” is the most advanced point anyone has reached. China's multi-patterned chips land near it: not quite the frontier, but alarmingly close for machines that were supposed to be obsolete."
+ },
+ {
+  "k": "supremacy",
+  "t": "supremacy",
+  "kind": "word",
+  "forms": [
+   "supremacy"
+  ],
+  "text": "Supremacy is being supreme — holding the top position, above all rivals. “The race for AI supremacy” is the contest to be the world's dominant AI power, and it's the prize that makes both superpowers care so much about one Dutch machine."
+ },
+ {
+  "k": "prevailing",
+  "t": "prevailing",
+  "kind": "word",
+  "forms": [
+   "prevailing"
+  ],
+  "text": "The prevailing view is the one that prevails — the opinion held by most people, the way prevailing winds are the ones that usually blow. In Europe it's this: yes, China poses risks, but strangling ASML's revenues and provoking Chinese retaliation carries risks too."
+ },
+ {
+  "k": "ecosystem",
+  "t": "ecosystem",
+  "kind": "word",
+  "forms": [
+   "ecosystem"
+  ],
+  "text": "Borrowed from biology: an ecosystem is a web of living things that depend on each other. In business it means the network of suppliers, partners, and specialists that grows up around a big company — hundreds of firms live off ASML the way species live off a coral reef, and Europe wants that reef protected."
+ },
+ {
+  "k": "retaliation",
+  "t": "retaliation",
+  "kind": "word",
+  "forms": [
+   "retaliation"
+  ],
+  "text": "Retaliation is striking back — answering a blow with a blow. Europe's fear is well-founded: when the Dutch seized control of chipmaker Nexperia, China retaliated by blocking its exports, and European carmakers immediately felt the pain."
+ },
+ {
+  "k": "pillar",
+  "t": "pillar",
+  "kind": "word",
+  "forms": [
+   "pillar"
+  ],
+  "text": "A pillar is a column holding up a building — so a “pillar” of a strategy is one of the main supports the whole plan rests on. One pillar of America's response is the Pax Silica alliance; the more divisive MATCH Act is another."
+ },
+ {
+  "k": "supply-chains",
+  "t": "supply chains",
+  "kind": "phrase",
+  "forms": [
+   "supply chains"
+  ],
+  "text": "A supply chain is the linked series of companies that turns raw materials into a finished product, each doing one step. AI's supply chain — chip designers, factories, machine-makers like ASML — spans many countries, and whoever controls a link can choke the whole chain."
+ },
+ {
+  "k": "pax-silica",
+  "t": "Pax Silica",
+  "kind": "name",
+  "forms": [
+   "Pax Silica"
+  ],
+  "text": "America's new alliance of countries in the Western AI supply chain — 24 signatories so far, including the EU and the Netherlands. The name is a learned joke: “Pax Romana” was the peace enforced by Rome's power, and silica is the sand chips are made from — so, roughly, “peace through silicon.”"
+ },
+ {
+  "k": "signatories",
+  "t": "signatories",
+  "kind": "word",
+  "forms": [
+   "signatories"
+  ],
+  "text": "A signatory is a country (or person) that has signed an agreement and is bound by it. Pax Silica's 24 signatories include the Netherlands, which signed up in June — during the very visit its trade minister spent pushing back on the machine allegation."
+ },
+ {
+  "k": "match-act",
+  "t": "MATCH Act",
+  "kind": "name",
+  "forms": [
+   "MATCH Act"
+  ],
+  "text": "A proposed American law (an “act” is a piece of legislation) that would go far beyond today's bans: blocking DUV sales to China, cutting off spare parts and servicing for machines already there, and giving allies 150 days to match America's rules — or face penalties. To the Dutch, it's America writing rules for Dutch companies."
+ },
+ {
+  "k": "bi-partisan",
+  "t": "bi-partisan",
+  "kind": "word",
+  "forms": [
+   "bi-partisan"
+  ],
+  "text": "Bi-partisan means backed by both political parties — Democrats and Republicans together (“bi” = two, “partisan” = party supporter). The MATCH Act's bi-partisan support is a signal: being tough on China's chip access is one of the few things Washington agrees on."
+ },
+ {
+  "k": "provision",
+  "t": "provision",
+  "kind": "word",
+  "forms": [
+   "provision"
+  ],
+  "text": "Provision here means the act of providing — supplying something, as in “provision of servicing and spare parts.” The MATCH Act wouldn't just stop new sales; it would cut off the care and feeding of the hundreds of ASML machines already inside China, slowly starving them."
+ },
+ {
+  "k": "foreign-direct-product-rule",
+  "t": "Foreign Direct Product Rule",
+  "kind": "name",
+  "forms": [
+   "Foreign Direct Product Rule"
+  ],
+  "text": "The legal lever that lets American export bans reach foreign companies: if a product anywhere is made using American-origin technology, Washington claims a say over who it's sold to. Since ASML's machines contain American tech, the rule could force a Dutch company to obey American law — or pay hefty fines."
+ },
+ {
+  "k": "oblige",
+  "t": "oblige",
+  "kind": "word",
+  "forms": [
+   "oblige"
+  ],
+  "text": "To oblige someone to do something is to legally or morally force them — leave them no choice. The rule would oblige ASML to comply with American controls, which is exactly the kind of arm-twisting of a foreign company that the Dutch government resents."
+ },
+ {
+  "k": "stakes",
+  "t": "stakes",
+  "kind": "word",
+  "forms": [
+   "stakes"
+  ],
+  "text": "The stakes are what's being gambled — what stands to be won or lost, from the pile of money staked on a bet. “National-security stakes” means what's at risk here is a country's safety itself, which is the backers' argument for playing rough."
+ },
+ {
+  "k": "pentagon",
+  "t": "the Pentagon",
+  "kind": "name",
+  "forms": [
+   "Pentagon"
+  ],
+  "text": "The five-sided building outside Washington that headquarters the U.S. Department of Defense — “the Pentagon” is shorthand for the American military leadership. The hawkish quote about making chip sales illegal comes from a former director at its Joint AI Centre."
+ },
+ {
+  "k": "extra-territorially",
+  "t": "extra-territorially",
+  "kind": "word",
+  "forms": [
+   "extra-territorially"
+  ],
+  "text": "Territory is the land where a country's laws apply; extra-territorial law reaches beyond it — one country's rules imposed inside another's borders. That's the Dutch minister's core objection: the MATCH Act would apply American law extra-territorially, to Dutch companies on Dutch soil."
+ },
+ {
+  "k": "entail",
+  "t": "entail",
+  "kind": "word",
+  "forms": [
+   "entail"
+  ],
+  "text": "To entail is to involve as a necessary consequence — what a choice drags along with it. The minister's principle: each country should judge for itself what security risks its technology might entail, rather than having Washington judge for it."
+ },
+ {
+  "k": "scepticism",
+  "t": "scepticism",
+  "kind": "word",
+  "forms": [
+   "scepticism"
+  ],
+  "text": "Scepticism (American spelling: skepticism) is doubting attitude — demanding evidence before believing. Dutch scepticism has an exhibit A: America wants to ban even old DUV machines while simultaneously letting Nvidia sell China AI chips that only the newest EUV machines can make. Spot the contradiction, the Dutch say."
+ },
+ {
+  "k": "sanctions",
+  "t": "sanctions",
+  "kind": "word",
+  "forms": [
+   "sanctions"
+  ],
+  "text": "Sanctions are official penalties one country imposes on another — bans on trade, frozen assets — punishment without war. China has now built counter-weapons: new regulations let it penalize any foreign company that obeys American sanctions, trapping firms like ASML between two rulebooks."
+ },
+ {
+  "k": "reeling",
+  "t": "reeling",
+  "kind": "word",
+  "forms": [
+   "reeling"
+  ],
+  "text": "To reel is to stagger like a boxer who just took a heavy punch. The Netherlands is still reeling from the Nexperia affair: it seized control of a Chinese-owned chipmaker, China blocked the firm's exports in response, and European carmakers got caught in the blast."
+ },
+ {
+  "k": "backlash",
+  "t": "backlash",
+  "kind": "word",
+  "forms": [
+   "backlash"
+  ],
+  "text": "A backlash is the angry snap-back a decision provokes — the recoil after you push too hard. The backlash to the Dutch takeover of Nexperia came fast: Chinese export blocks that disrupted carmakers across Europe and Japan, a preview of what escalation costs."
+ },
+ {
+  "k": "chokeholds",
+  "t": "chokeholds",
+  "kind": "word",
+  "forms": [
+   "chokeholds"
+  ],
+  "text": "A chokehold is a wrestling grip on an opponent's throat — total control over what they need to survive. “AI chokeholds” are the choke-points of the AI supply chain, like ASML's machine monopoly: grip one, and you can squeeze a rival superpower's whole AI effort."
+ },
+ {
+  "k": "crossfire",
+  "t": "caught in the crossfire",
+  "kind": "phrase",
+  "forms": [
+   "crossfire"
+  ],
+  "text": "Crossfire is gunfire coming from two directions at once — and to be caught in it is to take hits in a fight that isn't yours. That's ASML's fate in one image: a Dutch company standing in the middle while America and China shoot it out over its machines."
+ }
+]

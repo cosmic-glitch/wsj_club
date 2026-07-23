@@ -1,0 +1,23 @@
+/* Tap-a-word glossary layer for the served article pages.
+   Loaded by /glossary.js (which injects the sheet/toast DOM); the marks
+   (.gw spans) are wrapped around first occurrences at runtime. */
+.gw{cursor:pointer;text-decoration:underline dotted #9a9a9a;text-decoration-thickness:1px;text-underline-offset:3px}
+h1 .gw{text-decoration-color:#c0c0c0}
+.gw--vocab{background:rgba(255,230,0,.55);text-decoration:none;padding:0 1px}
+#gsBackdrop{position:fixed;inset:0;background:rgba(10,10,10,.45);z-index:50;opacity:0;transition:opacity .18s ease-out}
+#gsBackdrop.on{opacity:1}
+#gsSheet{position:fixed;left:0;right:0;bottom:0;z-index:51;background:#fff;border-top:3px solid #0a0a0a;box-shadow:0 -6px 0 0 #ffe600;transform:translateY(102%);transition:transform .2s ease-out}
+#gsSheet.on{transform:translateY(0)}
+.gs-inner{position:relative;max-width:40rem;margin:0 auto;padding:16px 20px calc(26px + env(safe-area-inset-bottom));max-height:72vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.gs-chip{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:#0a0a0a;color:#fff;padding:3px 8px}
+.gs-chip--vocab{background:#ffe600;color:#0a0a0a}
+.gs-term{font-family:Georgia,'Times New Roman',serif;font-size:24px;font-weight:700;line-height:1.2;margin:10px 44px 10px 0}
+.gs-pron{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:#555;font-weight:400;margin-left:8px;white-space:nowrap}
+.gs-text{font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.55;margin:0 0 .8em}
+.gs-text:last-child{margin-bottom:0}
+.gs-x{position:absolute;top:12px;right:14px;width:40px;height:40px;border:2px solid #0a0a0a;background:#fff;color:#0a0a0a;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:16px;font-weight:700;line-height:1;cursor:pointer;padding:0}
+.gs-x:hover{background:#0a0a0a;color:#fff}
+.gs-x:focus-visible{outline:3px solid #ffe600;outline-offset:2px}
+#gsToast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(28px + env(safe-area-inset-bottom));background:#0a0a0a;color:#fff;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;padding:9px 14px;z-index:60;opacity:0;transition:opacity .15s;pointer-events:none;white-space:nowrap;max-width:88vw;overflow:hidden;text-overflow:ellipsis}
+#gsToast.on{opacity:1}
+@media (prefers-reduced-motion:reduce){#gsBackdrop,#gsSheet,#gsToast{transition:none}}

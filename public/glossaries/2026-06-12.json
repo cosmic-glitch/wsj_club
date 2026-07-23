@@ -1,0 +1,502 @@
+[
+ {
+  "k": "flamboyance",
+  "t": "flamboyance",
+  "kind": "vocab",
+  "pron": "flam-BOY-uns",
+  "forms": ["flamboyance"],
+  "text": "Flamboyance is a loud, colorful, attention-grabbing style — dressing, behaving or performing in a way that demands to be looked at. Jim Fisk had it in quantity, and his flamboyance (paired with Gould's bribes) made the Erie's watered stock look exactly as crooked as it was."
+ },
+ {
+  "k": "tangible",
+  "t": "tangible",
+  "kind": "vocab",
+  "pron": "TAN-juh-bul",
+  "forms": ["tangible"],
+  "text": "Tangible means touchable — real, physical, concrete rather than abstract. It's the key word of the whole essay: 19th-century Americans believed a share's value had to match tangible stuff the company owned, like rails and railcars, and the modern stock market was born when that belief broke."
+ },
+ {
+  "k": "moot",
+  "t": "moot",
+  "kind": "vocab",
+  "pron": "MOOT",
+  "forms": ["moot"],
+  "text": "A question is moot when it's no longer worth arguing about — events have made it irrelevant. If Roosevelt had managed to outlaw holding companies, giant corporations might never have formed, leaving antitrust law with almost nothing to fight: the law would have become moot."
+ },
+ {
+  "k": "gilded-age",
+  "t": "Gilded Age",
+  "kind": "name",
+  "forms": ["Gilded Age"],
+  "text": "America from roughly the 1870s to 1900: explosive industrial growth, colossal railroad and oil fortunes, and almost no rules. Mark Twain coined the name, and it's an insult — “gilded” means coated in a thin layer of gold, implying the dazzling wealth on the surface hid corruption and inequality underneath."
+ },
+ {
+  "k": "titans",
+  "t": "titans",
+  "kind": "word",
+  "forms": ["titans"],
+  "text": "The Titans were the giant gods of Greek myth, so a “titan” is a person of enormous power in their field. The Gilded Age titans — Vanderbilt, Gould, Morgan, Rockefeller — were the giants who ruled American business."
+ },
+ {
+  "k": "standard-oil",
+  "t": "Standard Oil",
+  "kind": "name",
+  "forms": ["Standard Oil"],
+  "text": "John D. Rockefeller's oil company — the most famous monopoly in American history, which at its peak controlled about 90% of U.S. oil. The Supreme Court ordered it broken into 33 pieces in 1911; the twist of this essay is that the breakup made Rockefeller *richer*."
+ },
+ {
+  "k": "sherman-antitrust",
+  "t": "Sherman Antitrust Act",
+  "kind": "name",
+  "forms": ["Sherman Antitrust Act", "antitrust"],
+  "text": "The 1890 law that made it illegal for companies to crush competition by monopolizing a market — the foundation of American “antitrust” law (giant corporate combinations were then called “trusts”). It broke up Standard Oil, but as the essay notes, it did nothing to slow Rockefeller's personal fortune."
+ },
+ {
+  "k": "rein-in",
+  "t": "rein in",
+  "kind": "phrase",
+  "forms": ["rein in"],
+  "text": "To rein in something is to pull it under control, the way a rider pulls a horse's reins to slow it down. The Sherman Act was designed to rein in corporate power — to slow the runaway horse of the giant corporations."
+ },
+ {
+  "k": "monopoly",
+  "t": "monopoly",
+  "kind": "word",
+  "forms": ["monopolies", "monopoly", "monopolize", "monopolistic"],
+  "text": "A monopoly is one company controlling an entire market, with no real competition — so it can charge what it likes (yes, the board game is named after this). To monopolize is to grab that kind of control; the government spent decades battling monopolies in court."
+ },
+ {
+  "k": "consequential",
+  "t": "consequential",
+  "kind": "word",
+  "forms": ["consequential"],
+  "text": "Consequential means having big consequences — important because of everything that follows from it. The “hugely consequential debate” over what a share is sounds dry, but the essay argues it created the modern economy, the first billionaire, and now the first trillionaire."
+ },
+ {
+  "k": "share",
+  "t": "share",
+  "kind": "word",
+  "forms": ["share", "shares"],
+  "text": "A share is one unit of ownership in a company — own a share of a company split into a million shares and you own one-millionth of it. The essay's whole question is what that slice of ownership should be worth: the company's physical stuff, or (the modern answer) whatever the market believes its future is worth."
+ },
+ {
+  "k": "concrete",
+  "t": "concrete",
+  "kind": "word",
+  "forms": ["concrete"],
+  "text": "Concrete here means solid, real and specific — the opposite of abstract — not the sidewalk material. The 19th-century “mental architecture of finance was concrete”: people could only think of value as physical things you could touch and count."
+ },
+ {
+  "k": "standard-and-poor",
+  "t": "Standard & Poor",
+  "kind": "name",
+  "forms": ["Standard & Poor"],
+  "text": "Henry Poor was a financial journalist who defended the old touch-it-to-count-it view of shares — and his name is “memorialized” (preserved) in Standard & Poor's, the rating firm behind today's S&P 500 stock index. The man who fought the modern market is now named all over it."
+ },
+ {
+  "k": "financiers",
+  "t": "financiers",
+  "kind": "word",
+  "forms": ["financiers"],
+  "text": "A financier is someone who deals in large sums of money — arranging loans, buying companies, moving fortunes around. Gould, Morgan and Rockefeller were financiers as much as businessmen: their real product was money itself."
+ },
+ {
+  "k": "abstract",
+  "t": "abstract",
+  "kind": "word",
+  "forms": ["abstract", "abstraction"],
+  "text": "Abstract means existing as an idea rather than a physical thing — the opposite of tangible. The financiers' “more abstract mindset” said a share's value could rest on invisible things: future profits, growth, control. That abstraction is what made both the modern market and modern mega-fortunes possible."
+ },
+ {
+  "k": "tycoon",
+  "t": "tycoon",
+  "kind": "word",
+  "forms": ["tycoon"],
+  "text": "A tycoon is a hugely rich and powerful business magnate — the word comes from a Japanese title for a great military ruler, taikun. Vanderbilt was the first railroad tycoon to dominate the stock exchange."
+ },
+ {
+  "k": "commodore",
+  "t": "the Commodore",
+  "kind": "name",
+  "forms": ["the Commodore"],
+  "text": "Vanderbilt's famous nickname. A commodore is a naval commander ranking above a captain — fitting for a man who built his first fortune commanding steamship lines (and who started his working life in an open boat)."
+ },
+ {
+  "k": "erie-war",
+  "t": "Erie War",
+  "kind": "name",
+  "forms": ["Erie War"],
+  "text": "The legendary 1868 battle for control of the Erie Railway — Vanderbilt trying to buy up every share, while Drew, Fisk and Gould printed new ones faster than he could buy. It featured a fleeing board of directors, a bribed legislature, and the fight over “watered stock” at the heart of this essay."
+ },
+ {
+  "k": "pious",
+  "t": "pious",
+  "kind": "word",
+  "forms": ["pious"],
+  "text": "Pious means devoutly religious. The essay deploys it with a straight face: Daniel Drew was “a pious churchman who specialized in insider trading” — a Sunday-morning saint running weekday swindles."
+ },
+ {
+  "k": "insider-trading",
+  "t": "insider trading",
+  "kind": "phrase",
+  "forms": ["insider trading"],
+  "text": "Insider trading is buying or selling stock using secret information you have from inside a company — knowing the news before the public does. Today it can land you in prison; in Drew's day it wasn't just legal, it made him look “reliable” to America's first credit agency."
+ },
+ {
+  "k": "credit-agency",
+  "t": "credit agency",
+  "kind": "phrase",
+  "forms": ["credit agency"],
+  "text": "A credit agency rates how trustworthy people and companies are about paying their debts — the higher your rating, the more easily and cheaply you can borrow. The joke here is what counted as trustworthy: Drew's insider trading made him a good bet."
+ },
+ {
+  "k": "director",
+  "t": "director",
+  "kind": "word",
+  "forms": ["director", "directors", "board"],
+  "text": "Not a movie director: a company's directors are the members of its board — the small group elected to oversee the company at the top, above even the managers. Drew sat on the Erie's board while secretly betting against its own stock, which tells you everything about the era."
+ },
+ {
+  "k": "short-selling",
+  "t": "short selling",
+  "kind": "phrase",
+  "forms": ["short selling", "shorted"],
+  "text": "Short selling is how you bet a stock will FALL: borrow shares, sell them, and buy them back later at a lower price, pocketing the difference. Drew routinely shorted his own railroad's stock and then manipulated the price down to make the bet pay — playing both referee and gambler."
+ },
+ {
+  "k": "on-margin",
+  "t": "on margin",
+  "kind": "phrase",
+  "forms": ["on margin"],
+  "text": "Buying stock on margin means buying with borrowed money — you put up part of the price and a lender covers the rest. It multiplies your winnings if prices rise and your losses if they fall, which is why Vanderbilt, buying on margin, badly needed a rising market."
+ },
+ {
+  "k": "cornering",
+  "t": "cornering",
+  "kind": "word",
+  "forms": ["cornering", "corner"],
+  "text": "To corner a stock is to buy up every available share, trapping anyone who bet against it — they must buy from you, at whatever price you name (you've backed them into a corner). Vanderbilt tried to corner Erie stock as revenge; Gould defeated the corner by printing new shares faster than Vanderbilt could buy them."
+ },
+ {
+  "k": "corpulent",
+  "t": "corpulent",
+  "kind": "word",
+  "forms": ["corpulent"],
+  "text": "Corpulent is a fancy word for fat — from the Latin corpus, “body.” The essay sketches the Erie's defenders as a double act: the brash, corpulent showman Jim Fisk and the quiet, black-bearded schemer Jay Gould."
+ },
+ {
+  "k": "ruses",
+  "t": "ruses",
+  "kind": "word",
+  "forms": ["ruses"],
+  "text": "A ruse is a trick — a scheme designed to deceive. Gould, who vowed to learn Wall Street's “magicians' skills,” used various ruses to conjure massive amounts of new Erie stock into existence."
+ },
+ {
+  "k": "issue",
+  "t": "issue",
+  "kind": "word",
+  "forms": ["issue", "issued"],
+  "text": "In finance, to issue stock is to create and sell new shares — a company can literally print more ownership of itself. Every fight in this essay runs through that power: who may issue shares, how many, and what (if anything) must stand behind them."
+ },
+ {
+  "k": "injunction",
+  "t": "injunction",
+  "kind": "word",
+  "forms": ["injunction"],
+  "text": "An injunction is a court order commanding someone to stop doing something (or to do it). A judge friendly to Vanderbilt issued one against the Erie's new stock — and when the directors ignored it, he ordered them arrested."
+ },
+ {
+  "k": "contempt",
+  "t": "contempt",
+  "kind": "word",
+  "forms": ["contempt"],
+  "text": "“Contempt” of court doesn't mean disliking the judge — it's the legal offense of defying a court's authority, like disobeying its orders. The Erie directors were to be arrested for contempt after violating the injunction, which is why they fled to New Jersey one step ahead of the police."
+ },
+ {
+  "k": "red-tape",
+  "t": "red tape",
+  "kind": "phrase",
+  "forms": ["red tape"],
+  "text": "Here it's literal: official legal documents really were bound with red ribbon-tape, and the fleeing directors grabbed armfuls of them. That old custom is where our expression “red tape” — meaning maddening bureaucratic paperwork — comes from."
+ },
+ {
+  "k": "wooed",
+  "t": "wooed",
+  "kind": "word",
+  "forms": ["wooed"],
+  "text": "To woo someone is to court them — to win them over with charm, gifts and attention, the way an old-fashioned suitor woos a sweetheart. Gould wooed the legislators in Albany for three days with food, drink and cash, and the legislature obligingly legalized his stock."
+ },
+ {
+  "k": "legislators",
+  "t": "legislators",
+  "kind": "word",
+  "forms": ["legislators", "legislature"],
+  "text": "Legislators are elected lawmakers; together they form a legislature, like New York's state assembly in Albany. In this story they're for sale: Gould's checkbook proved more persuasive than Vanderbilt's lawyers."
+ },
+ {
+  "k": "greenbacks",
+  "t": "greenbacks",
+  "kind": "word",
+  "forms": ["greenbacks"],
+  "text": "Greenbacks are U.S. dollar bills — the nickname comes from the green ink on the back of the paper money first printed during the Civil War. “A liberal supply of food, drink, and greenbacks” is a polite way of saying Gould handed out cash bribes."
+ },
+ {
+  "k": "dubious",
+  "t": "dubious",
+  "kind": "word",
+  "forms": ["dubious"],
+  "text": "Dubious means doubtful — of questionable truth or legality. The new Erie stock's “dubious legality” is a dry understatement: it was rammed through with tricks and legalized by bribery."
+ },
+ {
+  "k": "par-value",
+  "t": "par value",
+  "kind": "phrase",
+  "forms": ["par value", "face value"],
+  "text": "A share's face value — its par value — was the amount printed on the certificate, usually $100, and it was supposed to equal $100 actually spent on real property. To 19th-century Americans this number made shares honest; the market price was expected to hover around it, not climb forever. (Golf borrowed the same word: “par” is the expected standard.)"
+ },
+ {
+  "k": "capital",
+  "t": "capital",
+  "kind": "word",
+  "forms": ["capital"],
+  "text": "Capital here isn't a city or an uppercase letter — it's wealth put to work producing more wealth: the land, buildings, machines and money a business runs on. “Real capital” meant the physical stuff a share was supposed to represent."
+ },
+ {
+  "k": "rolling-stock",
+  "t": "rolling stock",
+  "kind": "phrase",
+  "forms": ["rolling stock"],
+  "text": "Rolling stock is railroad-speak for everything on wheels — the locomotives and cars themselves. A delicious coincidence in this essay: “stock” that literally rolls was exactly the kind of touchable stuff people thought stock-market “stock” had to stand for."
+ },
+ {
+  "k": "fluctuate",
+  "t": "fluctuate",
+  "kind": "word",
+  "forms": ["fluctuate"],
+  "text": "To fluctuate is to wobble up and down around a level, like waves around a tide line. The old expectation was that a share's price would fluctuate around its $100 par value — the modern assumption that stocks should steadily *rise* hadn't been invented yet."
+ },
+ {
+  "k": "dividends",
+  "t": "dividends",
+  "kind": "word",
+  "forms": ["dividends", "dividend"],
+  "text": "A dividend is a company's profit paid out to its shareholders, so much per share, usually every few months. In the old mindset dividends were the whole point of owning stock — steady “interest on capital,” like rent — rather than hoping the share's price would climb."
+ },
+ {
+  "k": "watered-stock",
+  "t": "watered stock",
+  "kind": "phrase",
+  "forms": ["watered stock", "stock watering"],
+  "text": "Watered stock was shares issued beyond the company's real, physical worth — paper that stood for nothing. The name comes from the cattle market (where Drew got his start): make the cows drink heavily before the weigh-in, and you sell water at the price of beef. Issuing extra shares “watered” the stock the same way."
+ },
+ {
+  "k": "overcapitalization",
+  "t": "overcapitalization",
+  "kind": "word",
+  "forms": ["overcapitalization"],
+  "text": "The formal name for the same sin as watered stock: giving a company a total share value (its “capitalization”) far bigger than its real assets could justify. Roosevelt attacked it, the Journal warned about it — and by 1907 New York's economists were declaring there was no such thing."
+ },
+ {
+  "k": "gold-standard",
+  "t": "gold standard",
+  "kind": "phrase",
+  "forms": ["gold standard"],
+  "text": "Under the gold standard, paper money was just a claim ticket for real gold — hand back a $10 bill, get $10 in gold coin, and the nation's gold supply limited how many bills could exist. People saw stock certificates the same way: tokens for $100 of real stuff, with the stuff limiting the shares. Both ideas have since been abandoned."
+ },
+ {
+  "k": "overt",
+  "t": "overt",
+  "kind": "word",
+  "forms": ["overt"],
+  "text": "Overt means done out in the open, plain for all to see — the opposite of covert. The essay's point: the overt corruption (Fisk's showboating, Gould's bribes) was almost a distraction; the deeper objection was to the very idea of shares representing nothing physical."
+ },
+ {
+  "k": "conventional-wisdom",
+  "t": "conventional wisdom",
+  "kind": "phrase",
+  "forms": ["Conventional wisdom"],
+  "text": "Conventional wisdom is what everyone assumes is true — the standard opinion nobody bothers to question. Then, it insisted the economy was made only of touchable things (“Transportation cannot add to wealth… It never makes one ton two”); today's conventional wisdom is the exact opposite."
+ },
+ {
+  "k": "comprised",
+  "t": "comprised",
+  "kind": "word",
+  "forms": ["comprised"],
+  "text": "To comprise is to consist of — to be made up of. Saying the economy “comprised tangible things” means people believed real wealth was made only of physical objects; services and ideas didn't count."
+ },
+ {
+  "k": "intellectual-property",
+  "t": "intellectual property",
+  "kind": "phrase",
+  "forms": ["intellectual property"],
+  "text": "Intellectual property is ownable ideas — inventions, brands, software, designs — protected by patents, trademarks and copyrights. In 1880 it counted for nothing in a company's value; today it's often worth more than every building a company owns, which is the revolution this essay traces."
+ },
+ {
+  "k": "assemblyman",
+  "t": "assemblyman",
+  "kind": "word",
+  "forms": ["assemblyman"],
+  "text": "An assemblyman is a member of a state assembly — a state-level lawmaker. Theodore Roosevelt was a 23-year-old assemblyman when he stood up in 1882 to accuse Jay Gould, one of America's most powerful men, of corrupting a judge."
+ },
+ {
+  "k": "roosevelt",
+  "t": "Theodore Roosevelt",
+  "kind": "name",
+  "forms": ["Theodore Roosevelt", "Roosevelt"],
+  "text": "The future president (1901–1909), famous as the “trust-buster” who took on giant corporations. This essay catches him young — a 23-year-old state legislator scandalized not by Gould's monopoly but by stock that represented no actual construction — and later as a president who couldn't get Congress to act against it."
+ },
+ {
+  "k": "elevated-railroad",
+  "t": "elevated railroad",
+  "kind": "phrase",
+  "forms": ["elevated railroad", "elevated railway"],
+  "text": "Trains running on iron tracks raised above the street — New York's famous “els,” the subway's predecessor. Control of the city's elevated lines was the prize in the 1882 fight where Roosevelt first went after Gould."
+ },
+ {
+  "k": "holding-company",
+  "t": "holding company",
+  "kind": "phrase",
+  "forms": ["holding company", "holding companies"],
+  "text": "A corporation that exists simply to own other corporations — it makes nothing itself; its assets are other companies' shares. Gould pioneered the trick with the Manhattan Elevated (a company existing “only on paper,” which leased the real railways to dodge a no-merger law), and after New Jersey blessed the structure in 1889, holding companies powered the great merger boom. Most modern corporate empires still work this way."
+ },
+ {
+  "k": "merger",
+  "t": "merger",
+  "kind": "word",
+  "forms": ["merging", "merger"],
+  "text": "A merger is two companies combining into one. Gould's railways were legally barred from merging — hence his holding-company workaround — and once that structure was legalized, a “merger boom” swept American manufacturing: 4,277 firms collapsing into 257 in seven years."
+ },
+ {
+  "k": "chartered",
+  "t": "chartered",
+  "kind": "word",
+  "forms": ["chartered"],
+  "text": "A corporation is chartered in whichever state officially grants it legal existence — the charter is its birth certificate. New Jersey made itself the friendliest place to be born: after it authorized companies owning companies in 1889, holding companies chartered there reshaped American industry."
+ },
+ {
+  "k": "consolidated",
+  "t": "consolidated",
+  "kind": "word",
+  "forms": ["consolidated"],
+  "text": "To consolidate is to combine many things into one solid whole. The statistic doing the heavy lifting here: between 1897 and 1904, 4,277 firms consolidated into 257, and the hundred biggest took control of 40% of the country's industrial capacity."
+ },
+ {
+  "k": "concerns",
+  "t": "concerns",
+  "kind": "word",
+  "forms": ["concerns"],
+  "text": "A trap for modern readers: in older business English, a “concern” is a company — “the hundred largest concerns” means the hundred biggest firms, and “monopolistic concerns” are monopoly companies. Nothing to do with worries."
+ },
+ {
+  "k": "maestro",
+  "t": "maestro",
+  "kind": "word",
+  "forms": ["maestro"],
+  "text": "Maestro is Italian for “master” — the title given to a great orchestra conductor. Calling J.P. Morgan “the maestro of this movement” paints him conducting the entire merger boom: dozens of companies as his orchestra, combined and harmonized on his cue."
+ },
+ {
+  "k": "rationalize",
+  "t": "rationalize",
+  "kind": "word",
+  "forms": ["rationalize"],
+  "text": "Here rationalize means to reorganize something messy so it runs efficiently and logically — not the everyday sense of making excuses. Morgan's mission was to “rationalize industries”: sweep dozens of chaotic competing firms into a few big, orderly ones."
+ },
+ {
+  "k": "us-steel",
+  "t": "U.S. Steel",
+  "kind": "name",
+  "forms": ["U.S. Steel"],
+  "text": "Morgan's masterpiece, created in 1901 by combining steelmakers into one holding company — the first corporation valued over a billion dollars. He priced it at an unheard-of $1.4 billion based not on what its plants cost to build (it built nothing) but on what he believed the market would pay: the new abstract idea of value, made flesh."
+ },
+ {
+  "k": "capitalized",
+  "t": "capitalized",
+  "kind": "word",
+  "forms": ["capitalized"],
+  "text": "To capitalize a company is to set its total value in shares — the price tag on the whole enterprise. Morgan capitalized U.S. Steel at $1.4 billion, a number with no physical stuff behind it, which is exactly why it scandalized the old guard."
+ },
+ {
+  "k": "market-would-bear",
+  "t": "what the market would bear",
+  "kind": "phrase",
+  "forms": ["market would bear"],
+  "text": "The price a market “will bear” is the most people will actually pay before walking away — bear as in carry or support. Pricing U.S. Steel at what the market would bear, instead of what its factories cost, was the revolutionary move: value set by demand, not by stuff."
+ },
+ {
+  "k": "appetite",
+  "t": "appetite",
+  "kind": "word",
+  "forms": ["appetite"],
+  "text": "Appetite here means desire or willingness, not hunger for food. The corporation-friendly Republican Party “had no appetite” for overriding state laws — no stomach for the fight — so Roosevelt's attack on overcapitalization died in Congress."
+ },
+ {
+  "k": "ethicist",
+  "t": "ethicist",
+  "kind": "word",
+  "forms": ["ethicist"],
+  "text": "An ethicist is a scholar of right and wrong — someone who studies what people *ought* to do. That a 1906 ethicist could seriously ask “Is stock watering immoral?” shows how live the question was: finance was changing faster than the country's sense of fairness."
+ },
+ {
+  "k": "spin-off",
+  "t": "spin off",
+  "kind": "phrase",
+  "forms": ["spin off", "spin-off"],
+  "text": "To spin off part of a company is to split it out as a separate, independent business — like a spinning wheel flinging off pieces. The 1911 ruling forced Standard Oil to spin off 33 companies; each piece then traded on its own."
+ },
+ {
+  "k": "subsidiaries",
+  "t": "subsidiaries",
+  "kind": "word",
+  "forms": ["subsidiaries"],
+  "text": "A subsidiary is a company owned by another company — the child firms under a corporate parent. Standard Oil's 33 subsidiaries became independent in the breakup, but Rockefeller kept his shares in every single one."
+ },
+ {
+  "k": "stake",
+  "t": "stake",
+  "kind": "word",
+  "forms": ["stake in"],
+  "text": "Your stake in a company is your ownership slice — what you have riding on it, like chips staked on a bet. Because Rockefeller retained his stake in all 33 spin-offs, the breakup multiplied his wealth instead of shrinking it: the pieces were worth $2,014 per original share, against the old $100 par value."
+ },
+ {
+  "k": "intangibles",
+  "t": "intangibles",
+  "kind": "word",
+  "forms": ["intangibles"],
+  "text": "Intangibles are valuable things you can't touch — brands, software, patents, expertise, expectations of future profit. Companies “whose value is built on intangibles” include most of today's biggest; under the old stuff-only rules, they couldn't have raised a dollar."
+ },
+ {
+  "k": "polarization",
+  "t": "polarization",
+  "kind": "word",
+  "forms": ["polarization"],
+  "text": "Polarization is splitting toward opposite extremes, like the poles of a magnet. “Wealth polarization” means the gap between the richest and everyone else stretching wider — the essay argues the old tangible-stuff rule once quietly limited it, and nothing has replaced that limit."
+ },
+ {
+  "k": "disciplined",
+  "t": "disciplined",
+  "kind": "word",
+  "forms": ["disciplined"],
+  "text": "To discipline something is to keep it under control — the way training disciplines an athlete's impulses. The old idea of share value “disciplined greed”: it built a natural ceiling into finance. Break the ceiling, the essay suggests, and greed needs a new chaperone."
+ },
+ {
+  "k": "progressive-income-tax",
+  "t": "progressive income tax",
+  "kind": "phrase",
+  "forms": ["progressive income tax"],
+  "text": "A progressive income tax charges higher earners a higher *percentage* — the rate climbs (progresses) with income. It's one of the two tools turn-of-the-century Americans invented against concentrated wealth; antitrust enforcement is the other."
+ },
+ {
+  "k": "inflection-point",
+  "t": "inflection point",
+  "kind": "phrase",
+  "forms": ["inflection point"],
+  "text": "Borrowed from math, an inflection point is where a curve changes direction — in history, a moment after which everything bends a new way. The essay's closing suggestion: the first trillion-dollar fortune may be such a point, provoking new rules the way the Gilded Age fortunes eventually did."
+ },
+ {
+  "k": "net-worth",
+  "t": "net worth",
+  "kind": "phrase",
+  "forms": ["net worth"],
+  "text": "Net worth is everything you own minus everything you owe — “net” means after the subtraction. Musk's trillion-dollar net worth is mostly not cash but the market value of his shares: the ultimate product of the abstract idea of stock this essay traces."
+ }
+]

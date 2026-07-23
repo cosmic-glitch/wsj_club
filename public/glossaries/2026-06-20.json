@@ -1,0 +1,358 @@
+[
+ {
+  "k": "existential",
+  "t": "existential",
+  "kind": "vocab",
+  "pron": "eg-zih-STEN-shul",
+  "forms": [
+   "existential"
+  ],
+  "text": "Existential means relating to existence itself — an existential crisis is one so serious it threatens whether something keeps existing at all. Losing the film wouldn't just have embarrassed Pixar: the studio didn't have the resources to survive a year's delay, so the deleted movie put the whole company's life on the line."
+ },
+ {
+  "k": "cantankerous",
+  "t": "cantankerous",
+  "kind": "vocab",
+  "pron": "kan-TANG-kur-us",
+  "forms": [
+   "cantankerous"
+  ],
+  "text": "Cantankerous means bad-tempered, argumentative, and quick to complain — generally difficult to get along with. It's the article's affectionate jab at Mr. Potato Head, the grumpiest toy in the box."
+ },
+ {
+  "k": "avert",
+  "t": "avert",
+  "kind": "vocab",
+  "pron": "uh-VURT",
+  "forms": [
+   "averting"
+  ],
+  "text": "To avert a disaster is to prevent it — to turn it away before it can do harm, like slamming the brakes to avert a crash. That's what Pixar's leaders huddled in a conference room to do: stop the loss of the movie from becoming permanent."
+ },
+ {
+  "k": "cast-of-characters",
+  "t": "cast of characters",
+  "kind": "phrase",
+  "forms": [
+   "cast of characters"
+  ],
+  "text": "A “cast of characters” is normally the full list of roles in a movie or play. The joke here is that the movie about Woody and Buzz was saved by a real-life cast of characters — including, improbably, a 6-month-old baby."
+ },
+ {
+  "k": "chauffeured",
+  "t": "chauffeured",
+  "kind": "word",
+  "forms": [
+   "chauffeured"
+  ],
+  "text": "To be chauffeured is to be driven somewhere by a personal driver, like a celebrity in a limo. The absurd image is the point: a computer, buckled into the back seat of a Volvo, being chauffeured across town like a VIP — because it held the last copy of the movie."
+ },
+ {
+  "k": "intellectual-property",
+  "t": "intellectual property",
+  "kind": "phrase",
+  "forms": [
+   "intellectual property"
+  ],
+  "text": "Intellectual property (IP) is a creation of the mind — a story, character, song, or invention — that the law treats as something a person or company owns. The computer itself was worth maybe a few thousand dollars; Woody, Buzz, and Mr. Potato Head, the characters stored inside it, were worth billions. That's why you can't legally make and sell your own Buzz Lightyear movie."
+ },
+ {
+  "k": "installment",
+  "t": "installment",
+  "kind": "word",
+  "forms": [
+   "installment"
+  ],
+  "text": "An installment is one part of a series delivered piece by piece — one episode, one sequel, one payment at a time. “Toy Story 5” is the latest installment of the franchise."
+ },
+ {
+  "k": "iconic",
+  "t": "iconic",
+  "kind": "word",
+  "forms": [
+   "iconic"
+  ],
+  "text": "Iconic means so famous and widely recognized that it stands as a symbol of its whole category — an icon. “Toy Story” is iconic the way the Nike swoosh or the Star Wars theme is: everyone knows it on sight."
+ },
+ {
+  "k": "franchise",
+  "t": "franchise",
+  "kind": "word",
+  "forms": [
+   "franchise"
+  ],
+  "text": "In entertainment, a franchise is a series of movies (plus the games, toys, and spinoffs) built around the same characters and world — Toy Story, Marvel, Pokémon. Different sense from a fast-food franchise, where someone pays for the right to run a local branch of a chain — though both come from the idea of a valuable name being extended outward."
+ },
+ {
+  "k": "spud",
+  "t": "spud",
+  "kind": "word",
+  "forms": [
+   "spud"
+  ],
+  "text": "Spud is slang for a potato. So “a cantankerous spud” is the article's playful way of saying Mr. Potato Head — a grumpy potato going up against a tablet."
+ },
+ {
+  "k": "string",
+  "t": "string of code",
+  "kind": "phrase",
+  "forms": [
+   "string of code"
+  ],
+  "text": "In computing, a “string” is a sequence of typed characters — letters, symbols, numbers in a row. The string here, /bin/rm -r -f *, is a real Unix command, and the article translates it exactly: delete everything, everywhere, by force, without asking. One line, one wrong place, ninety percent of a movie gone."
+ },
+ {
+  "k": "directory",
+  "t": "directory",
+  "kind": "word",
+  "forms": [
+   "directory",
+   "directories"
+  ],
+  "text": "A directory is what we now usually call a folder — a named container for files on a computer. The whole catastrophe came down to directories: the delete command was meant for someone's personal directory but ran in the master one holding the movie."
+ },
+ {
+  "k": "nuked",
+  "t": "nuked",
+  "kind": "word",
+  "forms": [
+   "nuked"
+  ],
+  "text": "Nuked is slang for destroyed completely and instantly — from “nuclear.” The command nuked “Toy Story 2” in about the length of one song: years of work erased in the time it takes to play “You've Got a Friend in Me.”"
+ },
+ {
+  "k": "cloud-computing",
+  "t": "cloud computing",
+  "kind": "phrase",
+  "forms": [
+   "cloud computing"
+  ],
+  "text": "Cloud computing means storing files and running programs on distant internet servers instead of your own machine — the reason your photos survive even if your phone dies. In 1998 none of that existed: Pixar's movie lived on a handful of physical computers in one building, which is why one command could destroy it."
+ },
+ {
+  "k": "master",
+  "t": "master",
+  "kind": "word",
+  "forms": [
+   "master"
+  ],
+  "text": "A “master” copy is the original, official version that everything else is copied from — the master drive held the one true “Toy Story 2.” That's what made the deletion so devastating: this wasn't somebody's personal copy, it was the source."
+ },
+ {
+  "k": "cranking-away",
+  "t": "cranking away",
+  "kind": "phrase",
+  "forms": [
+   "cranking away"
+  ],
+  "text": "To be cranking away at something is to be working on it hard and steadily, like turning a crank over and over. Oren Jacob was cranking away on the movie when the files started vanishing before his eyes."
+ },
+ {
+  "k": "vaporize",
+  "t": "vaporize",
+  "kind": "word",
+  "forms": [
+   "vaporize"
+  ],
+  "text": "To vaporize is to turn into vapor — to disappear into thin air, instantly and completely. “You don't often watch a company vaporize in front of your eyes” is Jacob's way of saying he wasn't just watching files disappear; he was watching Pixar's future evaporate with them."
+ },
+ {
+  "k": "hysteria",
+  "t": "hysteria",
+  "kind": "word",
+  "forms": [
+   "hysteria"
+  ],
+  "text": "Hysteria is wild, uncontrolled panic — emotion so strong it drowns out thinking. Susman's line is the article's calm center: “hysteria is never going to be a productive way of dealing with things.” While Jacob lost his mind, she started asking questions."
+ },
+ {
+  "k": "kaput",
+  "t": "kaput",
+  "kind": "word",
+  "forms": [
+   "kaput"
+  ],
+  "text": "Kaput (borrowed from German) means broken, ruined, finished — done for. A movie going kaput would sting at any studio; at Pixar in 1999, it threatened the company's existence."
+ },
+ {
+  "k": "direct-to-video",
+  "t": "direct-to-video",
+  "kind": "phrase",
+  "forms": [
+   "direct-to-video"
+  ],
+  "text": "A direct-to-video movie skips theaters entirely and goes straight to home video — historically the budget path for sequels nobody expected much from. Pixar had fought to give “Toy Story 2” a real theatrical release instead, which raised the stakes: a hard deadline, and no quiet way to fail."
+ },
+ {
+  "k": "counterintuitive",
+  "t": "counterintuitive",
+  "kind": "word",
+  "forms": [
+   "counterintuitive"
+  ],
+  "text": "Counterintuitive means the opposite of what your gut expects — it runs counter to intuition. Releasing a sequel in theaters instead of direct-to-video felt like a strange bet at the time; it turned out to be one of the best calls Pixar ever made."
+ },
+ {
+  "k": "staring-down",
+  "t": "staring down",
+  "kind": "phrase",
+  "forms": [
+   "staring down"
+  ],
+  "text": "To stare down a threat is to face it directly, eye to eye, like a gunslinger in a western. Pixar was staring down the possibility of blowing its deadline and delaying the sequel a full year — which its co-founder says would have been catastrophic."
+ },
+ {
+  "k": "blowing-the-deadline",
+  "t": "blowing the deadline",
+  "kind": "phrase",
+  "forms": [
+   "blowing the deadline"
+  ],
+  "text": "To blow a deadline is to miss it — “blow” as in blowing a chance or blowing a lead. For most projects that means an awkward apology; for Pixar it meant a year's delay the company couldn't afford to survive."
+ },
+ {
+  "k": "absorb",
+  "t": "absorb",
+  "kind": "word",
+  "forms": [
+   "absorb"
+  ],
+  "text": "Here absorb means to take a hit and keep functioning — the way a boxer absorbs a punch or a sponge absorbs a spill. Catmull's point is brutal accounting: Pixar simply didn't have the money to absorb a year-long delay and survive it."
+ },
+ {
+  "k": "salvaging",
+  "t": "salvaging",
+  "kind": "word",
+  "forms": [
+   "salvaging"
+  ],
+  "text": "To salvage is to rescue what can still be saved from a wreck — the word originally described recovering cargo from sunken ships. With the blame question deliberately set aside, all that mattered was salvaging the film."
+ },
+ {
+  "k": "as-it-happens",
+  "t": "as it happens",
+  "kind": "phrase",
+  "forms": [
+   "as it happens"
+  ],
+  "text": "“As it happens” flags a lucky coincidence — by chance, it turned out that way. As it happens, Susman had a new baby at home, which is the only reason a full copy of the movie existed outside Pixar's walls."
+ },
+ {
+  "k": "parental-leave",
+  "t": "parental leave",
+  "kind": "phrase",
+  "forms": [
+   "parental leave"
+  ],
+  "text": "Parental leave is time off from work to care for a new baby. Susman's work-from-home setup — built so she could keep working after her son's bedtime once her leave ended — accidentally became the backup system that saved the film."
+ },
+ {
+  "k": "lugged",
+  "t": "lugged",
+  "kind": "word",
+  "forms": [
+   "lugged"
+  ],
+  "text": "To lug something is to haul it with effort — it's heavy, awkward, and you feel every step. Once a week Susman lugged the hulking computer into the office to download the latest version of the film. That weekly chore turned out to be worth billions."
+ },
+ {
+  "k": "hulking",
+  "t": "hulking",
+  "kind": "word",
+  "forms": [
+   "hulking"
+  ],
+  "text": "Hulking means massive and bulky — built like the Hulk. Computers in 1998 weren't sleek laptops; hers was a hulking machine you needed real muscle to move."
+ },
+ {
+  "k": "smothered",
+  "t": "smothered",
+  "kind": "word",
+  "forms": [
+   "smothered"
+  ],
+  "text": "To smother is to cover something completely — usually it means dangerously (smothering a fire, or a person), but here it's protective: they smothered the computer in pillows and blankets like a newborn, because one pothole could have killed the last copy of the movie."
+ },
+ {
+  "k": "hazard-lights",
+  "t": "hazard lights",
+  "kind": "phrase",
+  "forms": [
+   "hazard lights"
+  ],
+  "text": "Hazard lights are a car's both-blinkers-at-once flashers, used to warn other drivers you're moving slowly or stopped. Denied a police escort, they drove the precious cargo home-brewed style: slowly, hazards flashing, the computer belted in like a passenger."
+ },
+ {
+  "k": "flickered-to-life",
+  "t": "flickered to life",
+  "kind": "phrase",
+  "forms": [
+   "flickered to life"
+  ],
+  "text": "To flicker to life is to start up hesitantly — screen blinking, not quite steady — the way an old machine wakes. After the drive across town, the computer flickered to life and brought Woody and Buzz back from the dead."
+ },
+ {
+  "k": "infinity-and-beyond",
+  "t": "from infinity and beyond",
+  "kind": "phrase",
+  "forms": [
+   "infinity and beyond"
+  ],
+  "text": "A wink at Buzz Lightyear's catchphrase, “To infinity and beyond!” The article says the sigh of relief could be heard “from infinity and beyond” — a Toy Story–sized exhale."
+ },
+ {
+  "k": "raves",
+  "t": "raves",
+  "kind": "word",
+  "forms": [
+   "raves"
+  ],
+  "text": "Raves here are wildly enthusiastic reviews — critics “raving” means gushing with praise, not going to a dance party. “Opened to universal raves” means essentially every reviewer loved it, less than a year after the movie had been deleted twice."
+ },
+ {
+  "k": "overhauled",
+  "t": "overhauled",
+  "kind": "word",
+  "forms": [
+   "overhauled"
+  ],
+  "text": "To overhaul something is to take it apart and rebuild it thoroughly — not a touch-up, a teardown. After saving the deleted film, Pixar's executives deleted it again on purpose and overhauled the story itself — what Catmull called “the cinematic equivalent of a heart transplant.”"
+ },
+ {
+  "k": "pulled-it-off",
+  "t": "pulled it off",
+  "kind": "phrase",
+  "forms": [
+   "pulled it off"
+  ],
+  "text": "To pull something off is to succeed at something so difficult it seemed impossible. Rebuilding a whole movie in under a year, right after nearly losing it forever — they pulled it off, and Susman still thinks it's the best film of the franchise."
+ },
+ {
+  "k": "unix-linux",
+  "t": "Unix and Linux",
+  "kind": "name",
+  "forms": [
+   "Unix and Linux",
+   "Unix"
+  ],
+  "text": "Families of powerful operating systems favored by engineers and studios — the systems behind most of the world's servers (Linux is the free descendant of Unix's design). Their command line is famously powerful and famously unforgiving: commands like rm delete instantly, no Recycle Bin, no undo."
+ },
+ {
+  "k": "station-wagon",
+  "t": "station wagon",
+  "kind": "phrase",
+  "forms": [
+   "station wagon"
+  ],
+  "text": "A station wagon is a long family car with a big cargo area behind the back seats — the minivan's ancestor. History's least glamorous rescue vehicle: a Volvo wagon carrying the only copy of a billion-dollar movie."
+ },
+ {
+  "k": "steve-jobs",
+  "t": "Steve Jobs",
+  "kind": "name",
+  "forms": [
+   "Steve Jobs"
+  ],
+  "text": "The co-founder of Apple — and, at the time, Pixar's chairman and owner. During the rescue weekend, one of the most famous executives in tech history was the guy pouring the coffee."
+ }
+]

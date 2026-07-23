@@ -1,0 +1,215 @@
+[
+ {
+  "k": "tangible",
+  "t": "tangible",
+  "kind": "vocab",
+  "pron": "TAN-juh-bul",
+  "forms": ["tangible"],
+  "text": "Tangible means real and solid enough to point at or measure — originally, something you can actually touch — as opposed to a vague promise. In the lab, AI is already delivering a “tangible leap in efficiency”: a concrete, measurable speedup, not just hype about what it might do someday."
+ },
+ {
+  "k": "dilemma",
+  "t": "dilemma",
+  "kind": "vocab",
+  "pron": "dih-LEM-uh",
+  "forms": ["dilemma"],
+  "text": "A dilemma is a hard choice between options that each carry a real downside — you can't have it both ways. Investors face one here: AI's future payoff in drugmaking could be enormous, but there's no proof yet that it's improving results, so backing these companies now is a genuine gamble either way."
+ },
+ {
+  "k": "renaissance",
+  "t": "renaissance",
+  "kind": "vocab",
+  "pron": "REN-uh-sahns",
+  "forms": ["renaissance"],
+  "text": "A renaissance is a “rebirth” — a burst of fresh energy and progress in a field that had gone quiet or stagnant. The article imagines AI sparking a “biotech renaissance,” reviving drug discovery after years of it growing slower and more expensive — but only if the harder problems get solved too."
+ },
+ {
+  "k": "validate",
+  "t": "validate",
+  "kind": "word",
+  "forms": ["validate"],
+  "text": "To validate something is to prove it's true or worthwhile — to confirm it with real evidence. Nothing would “validate AI's promise” more than genuinely improving how we make medicines, because that would show AI can help discover things humans don't already know, not just speed up what they do."
+ },
+ {
+  "k": "collides",
+  "t": "collides",
+  "kind": "word",
+  "forms": ["collides"],
+  "text": "To collide is to crash into something — here it's used for ideas, not cars. Drug development is “where AI collides with the stubborn reality of human biology”: the clever software smacks into the messy, unpredictable truth of how bodies actually work."
+ },
+ {
+  "k": "proteins",
+  "t": "proteins",
+  "kind": "name",
+  "forms": ["proteins", "protein"],
+  "text": "Proteins are the tiny molecular machines that do most of the work in your cells, and each folds into a specific 3-D shape that determines its job. Predicting “how proteins fold” is one of AI's big wins, because a protein's shape tells scientists which ones might matter in a disease and where a drug could grab hold."
+ },
+ {
+  "k": "drug-target",
+  "t": "drug target",
+  "kind": "name",
+  "forms": ["drug targets", "drug target"],
+  "text": "A drug target is the specific spot in the body — usually a particular protein — that a medicine is designed to act on, like the lock a drug is the key for. Traditionally scientists picked targets slowly by hand; AI can now suggest promising ones by sifting far more biology than any one researcher could hold in their head."
+ },
+ {
+  "k": "hypotheses",
+  "t": "hypotheses",
+  "kind": "word",
+  "forms": ["hypotheses"],
+  "text": "A hypothesis is an educated guess you set out to test; “hypotheses” is just the plural. Old-school drug research meant scientists forming hypotheses about which proteins mattered and then “spending months or years testing those hypotheses in the lab.”"
+ },
+ {
+  "k": "computational",
+  "t": "computational",
+  "kind": "word",
+  "forms": ["computational"],
+  "text": "Computational means done with, or based on, computers and calculation. A “computational biologist” studies living things using powerful computing and data rather than only test tubes — exactly the kind of scientist building AI into the drug lab here."
+ },
+ {
+  "k": "lab-in-the-loop",
+  "t": "lab in the loop",
+  "kind": "phrase",
+  "forms": ["lab in the loop"],
+  "text": "A coined nickname for a cycle where AI and real experiments teach each other: the AI predicts promising molecules, scientists actually test them, and the results feed back in to sharpen the AI's next round of guesses. It's the article's clearest example of a working feedback loop."
+ },
+ {
+  "k": "encodes",
+  "t": "encodes",
+  "kind": "word",
+  "forms": ["encodes"],
+  "text": "To encode information is to store it in a form a system can hold and use. The researcher's point is that AI isn't smarter than a person — “it encodes information very, very broadly,” meaning it can pack in and draw on far more biology than any single human brain could."
+ },
+ {
+  "k": "bottleneck",
+  "t": "bottlenecks",
+  "kind": "name",
+  "forms": ["bottlenecks"],
+  "text": "A bottleneck is the narrowest, slowest stage that holds up an entire process — like the skinny neck of a bottle that decides how fast it pours. In drugmaking, human trials are the bottleneck: speeding up the early idea-hunting barely helps if getting a drug proven in people stays slow and likely to fail."
+ },
+ {
+  "k": "diminishing-returns",
+  "t": "diminishing returns",
+  "kind": "name",
+  "forms": ["diminishing returns"],
+  "text": "Diminishing returns means each extra effort buys you less than the last — the low-hanging fruit is gone, so more work yields less reward. In drug research it bites hard: every new medicine has to beat the ones already out there, including cheap generics that work fine, so clearing the bar gets tougher over time."
+ },
+ {
+  "k": "moores-law",
+  "t": "Moore's Law",
+  "kind": "name",
+  "forms": ["Moore’s Law", "Moore's Law"],
+  "text": "A famous rule-of-thumb from computing: chips keep getting dramatically more powerful for the same cost, year after year — steady exponential progress. The article invokes it as the bright side of tech to contrast with drug research, which has moved the opposite way."
+ },
+ {
+  "k": "erooms-law",
+  "t": "Eroom's Law",
+  "kind": "name",
+  "forms": ["Eroom’s Law", "Eroom's Law"],
+  "text": "A grimly clever name — “Moore's Law” spelled backward — for the fact that drug discovery has gotten slower and more expensive over time, the reverse of computing's steady gains. The big question is whether AI can finally “bend” Eroom's Law back the other way."
+ },
+ {
+  "k": "exponential",
+  "t": "exponential",
+  "kind": "word",
+  "forms": ["exponential"],
+  "text": "Exponential growth means the rate of increase keeps compounding — doubling and doubling — so it snowballs shockingly fast rather than creeping up in equal steps. Chip performance rose exponentially under Moore's Law; the disappointment is that drug research never did the same."
+ },
+ {
+  "k": "generic",
+  "t": "generic",
+  "kind": "word",
+  "forms": ["generic"],
+  "text": "A generic medicine is a cheaper, no-brand-name copy of a drug whose patent has expired — same active ingredient, lower price — not “generic” meaning vague or plain. New drugs have to prove they're worth more than these cheap generics that already work, which is a big reason each new one is so hard to justify."
+ },
+ {
+  "k": "autonomous",
+  "t": "autonomous",
+  "kind": "word",
+  "forms": ["Autonomous"],
+  "text": "Autonomous means self-governing — able to operate on its own without a human steering. “Autonomous vehicles” are self-driving cars, and the article's point is that they work because real cars have logged millions of real miles, while medicine has never had a comparably clean map of the human body to train on."
+ },
+ {
+  "k": "waymo",
+  "t": "Waymo",
+  "kind": "name",
+  "forms": ["Waymo"],
+  "text": "Waymo is a leading self-driving-car company. It stars in a scientist's vivid put-down of over-hyped AI: training a drug AI on today's thin data, he says, is “like trying to train your Waymo for San Francisco by getting a frog to ride a bike around Albuquerque” — the practice data barely resembles the real challenge."
+ },
+ {
+  "k": "clinical",
+  "t": "clinical",
+  "kind": "word",
+  "forms": ["clinical"],
+  "text": "Clinical means having to do with actual medical treatment of real patients, as opposed to lab or theory. A drug's “clinical probability of success” is its real-world chance of working in people — the hard, expensive test that most promising molecules fail."
+ },
+ {
+  "k": "second-inning",
+  "t": "second inning",
+  "kind": "phrase",
+  "forms": ["second inning"],
+  "text": "Borrowing from baseball, saying something is only in the “second inning” means it's still very early — a long game left to play. An AI leader uses it to admit that proving AI can transform drugmaking is barely underway, not close to finished."
+ },
+ {
+  "k": "catalyst",
+  "t": "catalyst",
+  "kind": "word",
+  "forms": ["catalyst"],
+  "text": "In chemistry a catalyst is something that speeds up a reaction; more broadly it's any spark that triggers change. One investor argues that fierce competition from China could be the catalyst that finally forces the U.S. to fix its slow, costly drug-trial system."
+ },
+ {
+  "k": "bottom-line",
+  "t": "bottom line",
+  "kind": "phrase",
+  "forms": ["bottom line"],
+  "text": "The “bottom line” is the final result that really counts — the phrase comes from the last line of a financial statement, where profit is tallied. Amazing lab science means little, the article warns, until it reaches the bottom line: more successful medicines per research dollar."
+ },
+ {
+  "k": "semiconductor",
+  "t": "semiconductor",
+  "kind": "word",
+  "forms": ["semiconductor"],
+  "text": "A semiconductor is the material computer chips are made from — “the semiconductor cycle” stands for the fast, predictable improvement of chips. The closing line reminds us biology “runs on its own clock, not the semiconductor cycle”: living systems won't be rushed just because computers keep speeding up."
+ },
+ {
+  "k": "pharmaceutical",
+  "t": "pharmaceutical",
+  "kind": "name",
+  "forms": ["pharmaceutical", "Pharma"],
+  "text": "Pharmaceutical means relating to medicines and the companies that make them; “pharma” is the shorthand. Big pharmaceutical firms are pouring billions into AI and computing, and the article guesses they — with their deep data and global reach — may end up the real winners, not the AI-model builders."
+ },
+ {
+  "k": "biotech",
+  "t": "biotech",
+  "kind": "word",
+  "forms": ["biotech"],
+  "text": "Biotech (biotechnology) is the use of living cells and biology to create products like medicines. The hope floated here is a “biotech renaissance” powered by AI — but only if the industry can close the loop between discovering ideas and actually proving they work in people."
+ },
+ {
+  "k": "metric",
+  "t": "metric",
+  "kind": "word",
+  "forms": ["metric"],
+  "text": "A metric is a specific measurement you use to judge success. The article keeps circling one metric that matters most — how many successful drugs come out of each research dollar — and points out that AI hasn't moved it yet, even while making labs busier."
+ },
+ {
+  "k": "bend-the-curve",
+  "t": "bend the curve",
+  "kind": "phrase",
+  "forms": ["bend the curve"],
+  "text": "To “bend the curve” is to change the direction a trend has been heading — to knock a rising cost or falling success rate onto a better path. Believers say AI will “bend the curve” of drug development by attacking several bottlenecks at once, finally reversing decades of Eroom's Law."
+ },
+ {
+  "k": "stand-in",
+  "t": "stand-ins",
+  "kind": "word",
+  "forms": ["stand-ins"],
+  "text": "A stand-in is a substitute that fills in for the real thing — like an understudy in a play. Cell cultures, lab animals, and computer models are “imperfect stand-ins for the human body”: useful rehearsals, but never the same as testing in a real person, which is why so many drugs still fail late."
+ },
+ {
+  "k": "rerate",
+  "t": "rerate",
+  "kind": "word",
+  "forms": ["rerate"],
+  "text": "To “rerate” a group of companies is for investors to reset how much they're worth — usually to value them more highly on new expectations. Wall Street has “little reason to rerate the sector,” meaning it won't hand drugmakers a higher price until AI actually improves the results that count."
+ }
+]
