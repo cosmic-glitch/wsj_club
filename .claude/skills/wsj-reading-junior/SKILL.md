@@ -68,7 +68,7 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
      const SOURCE_NAME = 'The Wall Street Journal'; // ← or 'The Economist'
      const BACK = '/junior'; // ← the page's "← Reading Club" link returns to the junior index
      ```
-     (`ORIG_URL` is auto-derived from the open page — it becomes the "(original)" link next to the source name.)
+     (`ORIG_URL` is auto-derived from the open page — it becomes the top bar's right-aligned "Source: <publication>" link, beside the "← Reading Club" link.)
      Do not re-derive the snippet here — copy it from the senior skill so the two stay in lockstep. Verify it the same way (the returned `deck=/text=/small-caps=/images=/infographics=` counts; check the text file's tail for footer junk; serve `public/` locally and eyeball the page at a 390px viewport; expect ~50KB–1MB).
    - Set `articlePageUrl: "/articles/junior/YYYY-MM-DD.html"` in the JSON (no `pdfUrl` — legacy field). **Multi-article days:** one page per article at `public/articles/junior/YYYY-MM-DD-1.html`, `-2.html`, … (`-N` suffix), each in its own `articles[]` entry's `articlePageUrl`; concatenate the per-article text files into one `article-text/junior/YYYY-MM-DD.txt`.
    - **Manual fallback** (only if auto-capture can't work): omit `articlePageUrl` — the index falls back to the legacy Web link (and a hand-saved PDF at `public/pdfs/junior/YYYY-MM-DD.pdf` + `pdfUrl` if wanted).

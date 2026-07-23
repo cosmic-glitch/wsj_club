@@ -8,11 +8,13 @@
   html{-webkit-text-size-adjust:100%}
   body{margin:0;background:#fff;color:#111;font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.6}
   main{max-width:40rem;margin:0 auto;padding:10px 18px 70px}
-  .club{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#555;text-decoration:none;border-bottom:2px solid #0a0a0a;padding-bottom:2px;margin-bottom:8px}
+  .top{display:flex;justify-content:space-between;align-items:baseline;gap:4px 16px;flex-wrap:wrap;margin-bottom:10px}
+  .club{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#555;text-decoration:none;border-bottom:2px solid #0a0a0a;padding-bottom:2px}
   h1{font-size:clamp(23px,6.5vw,34px);line-height:1.2;margin:.2em 0 .25em}
   .dek{font-size:19px;font-style:italic;color:#333;margin:0 0 .45em}
-  .src{color:#555;font-size:13px;padding-bottom:8px;border-bottom:1px solid #ddd;margin-bottom:14px}
-  .src a{color:#0000ee;text-decoration:underline}
+  .srcline{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#555;text-align:right}
+  .rule{border-bottom:1px solid #ddd;margin:10px 0 16px}
+  .srcline a{color:#0000ee;text-decoration:underline}
   h2{font-size:21px;line-height:1.3;margin:1.5em 0 .5em}
   p{margin:0 0 1em}
   small{font-size:.92em;font-variant-caps:all-small-caps;letter-spacing:.02em}
@@ -24,9 +26,9 @@
   figcaption{font-size:13px;color:#666;margin-top:.4em;font-style:italic;text-align:left}
 </style>
 </head><body><main>
-<a class="club" href="/">&larr; Reading Club</a>
+<div class="top"><a class="club" href="/">&larr; Reading Club</a><span class="srcline">Source: <a href="https://www.wsj.com/lifestyle/travel/america-is-already-losing-the-world-cup-for-hotel-bookings-f8fb8694" rel="noopener noreferrer">The Wall Street Journal</a></span></div>
 <h1>America Is Already Losing the World Cup for Hotel Bookings</h1>
-<div class="src">The Wall Street Journal (<a href="https://www.wsj.com/lifestyle/travel/america-is-already-losing-the-world-cup-for-hotel-bookings-f8fb8694" rel="noopener noreferrer">original</a>)</div>
+<div class="rule"></div>
 <p>The World Cup starts later this week. U.S. hotels are already in last place.</p>
 <p>Hotel bookings in Canada and Mexico are outpacing all but one American city ahead of FIFA’s biggest soccer competition, which is unfolding across 16 North American cities starting Thursday.</p>
 <p>Vancouver and Guadalajara boast the top occupancy rates at 48%, according to CoStar. Toronto, Mexico City and Monterrey, Mexico, are also more than 40%-booked. San Francisco is the only U.S. city to crack that threshold at 44%.</p>

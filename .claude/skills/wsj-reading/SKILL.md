@@ -42,7 +42,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
 
 3. **Capture the day's ARTICLE PAGE (the served, phone-friendly copy) — for paywalled/sign-in articles.** A paywalled day publishes a **self-contained responsive HTML article page** at `public/articles/YYYY-MM-DD.html`, referenced as `"/articles/YYYY-MM-DD.html"` in the JSON's `articlePageUrl` — the index then shows **one "ARTICLE" button** for the day (in place of the old Web + PDF pair; historical days without `articlePageUrl` keep their legacy Web/PDF buttons, and `public/pdfs/` is now legacy-only — **don't capture PDFs for new days**). The page **reflows to the reader's screen width**, which is the whole point: the old PDFs rendered phone text microscopically because a PDF's lines never re-wrap. **If the article is on a freely OPEN link that needs no login** (a public essay, an `archive.ph` capture, an open-access page), **skip the page entirely** — omit `articlePageUrl` (and `pdfUrl`) and the index's ARTICLE button links **straight to the original** (`articleUrl`); no copy of our own is needed. (You still need the article *text* for the voice quiz — see the upload bullet below.) With the article open and the user logged in (from step 2), **rebuild a clean document from the article's own paragraphs *and its real content images***. The rebuilt page keeps the article's **charts, graphs, and photos** (which often carry the substance — an Economist "(see chart)" data viz, a labeled diagram) while dropping the page chrome: it takes the article's `<p>`/heading **text** *plus* only its genuine content images — each fetched at a **sensible ~1000px width (never the 5000px `srcset` monster), inlined as a `data:` URI** so the file is fully self-contained (typically **~50KB–1MB**). **It preserves the original inline typography** — small-caps acronyms (the Economist sets "AI", "IBM", "GPT" in `<small>` small caps), italics, bold, and the drop-cap opening. This matters because the Economist renders those small caps via `text-transform:lowercase` + `font-variant-caps:small-caps`, and `innerText` *applies* the transform, so a plain-text sweep would silently lowercase every acronym ("AI"→"ai") and split the drop cap ("T en years"). The snippet instead reads the **raw text nodes** (which keep the real "AI") and re-wraps `<small>`/`<em>`/`<strong>` with matching CSS — using `font-variant-caps` (a font feature), **not** `text-transform`, so the page's text (and the extracted article text) still holds real uppercase "AI". **One caveat for The Economist:** its maps and data charts are usually **not** `<figure><img>` at all but **`infographics.economist.com` iframe embeds** whose labels/legend are a separate HTML overlay on top of a base "artboard" PNG — so a plain image fetch would drop **every label** (a labels-less map). The snippet's **step 0** handles these by opening each infographic in a throwaway tab and screenshotting the **rendered** widget (base + labels composited, zoomed 2× for resolution), then splicing it into the reading flow. The snippet **also writes the day's plain article text** to `article-text/YYYY-MM-DD.txt` in the same pass (headline + deck first, then the body — the voice-quiz reference; there is no PDF to `pdftotext` anymore), so after it runs you only upload that file to Blob.
    - Make the folders: `mkdir -p public/articles article-text`.
-   - With the article page **already open** (loaded past the paywall — the snippet leaves the article tab in place; it opens **throwaway tabs** only to screenshot any Economist infographic embeds and to save the output files, then closes them), use `browser_run_code_unsafe` — **substitute the real date** in `OUT` and `TXT_OUT`, the real publication in `SOURCE_NAME`, and keep `BACK = '/'` (senior); `ORIG_URL` is auto-derived from the open page and renders as a parenthetical "(original)" link next to the source name at the top of the page. The snippet's sandbox has **no `fs`**, so it saves each file via Playwright's download event (a throwaway tab downloads the string as a Blob and `download.saveAs()` writes it to the repo path):
+   - With the article page **already open** (loaded past the paywall — the snippet leaves the article tab in place; it opens **throwaway tabs** only to screenshot any Economist infographic embeds and to save the output files, then closes them), use `browser_run_code_unsafe` — **substitute the real date** in `OUT` and `TXT_OUT`, the real publication in `SOURCE_NAME`, and keep `BACK = '/'` (senior); `ORIG_URL` is auto-derived from the open page and renders in the top bar — "Source: <publication>" right-aligned beside the "← Reading Club" link, the publication name being the link to the original. The snippet's sandbox has **no `fs`**, so it saves each file via Playwright's download event (a throwaway tab downloads the string as a Blob and `download.saveAs()` writes it to the repo path):
      ```js
      async (page) => {
        const OUT = '/Users/anuragved/code/wsj_club/public/articles/YYYY-MM-DD.html'; // ← real date
@@ -237,11 +237,13 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
        html{-webkit-text-size-adjust:100%}
        body{margin:0;background:#fff;color:#111;font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.6}
        main{max-width:40rem;margin:0 auto;padding:10px 18px 70px}
-       .club{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#555;text-decoration:none;border-bottom:2px solid #0a0a0a;padding-bottom:2px;margin-bottom:8px}
+       .top{display:flex;justify-content:space-between;align-items:baseline;gap:4px 16px;flex-wrap:wrap;margin-bottom:10px}
+       .club{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#555;text-decoration:none;border-bottom:2px solid #0a0a0a;padding-bottom:2px}
        h1{font-size:clamp(23px,6.5vw,34px);line-height:1.2;margin:.2em 0 .25em}
        .dek{font-size:19px;font-style:italic;color:#333;margin:0 0 .45em}
-       .src{color:#555;font-size:13px;padding-bottom:8px;border-bottom:1px solid #ddd;margin-bottom:14px}
-       .src a{color:#0000ee;text-decoration:underline}
+       .srcline{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#555;text-align:right}
+       .rule{border-bottom:1px solid #ddd;margin:10px 0 16px}
+       .srcline a{color:#0000ee;text-decoration:underline}
        h2{font-size:21px;line-height:1.3;margin:1.5em 0 .5em}
        p{margin:0 0 1em}
        small{font-size:.92em;font-variant-caps:all-small-caps;letter-spacing:.02em} /* acronyms (AI, IBM, GPT) as small caps — real uppercase chars kept */
@@ -253,10 +255,10 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
        figcaption{font-size:13px;color:#666;margin-top:.4em;font-style:italic;text-align:left}
      </style>
      </head><body><main>
-     <a class="club" href="${BACK}">&larr; Reading Club</a>
+     <div class="top"><a class="club" href="${BACK}">&larr; Reading Club</a><span class="srcline">Source: <a href="${ORIG_URL}" rel="noopener noreferrer">${SOURCE_NAME}</a></span></div>
      <h1>${esc(data.title)}</h1>
      ${deckHtml}
-     <div class="src">${SOURCE_NAME} (<a href="${ORIG_URL}" rel="noopener noreferrer">original</a>)</div>
+     <div class="rule"></div>
      ${body}
      </main></body></html>`;
        // The plain text for the voice quiz — headline + deck first (the standfirst
