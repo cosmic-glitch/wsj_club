@@ -113,7 +113,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
              const cs = getComputedStyle(c);
              if (cs.display === 'none' || cs.visibility === 'hidden' || c.getAttribute('aria-hidden') === 'true') continue;
              const inner = inlineHtml(c);
-             if (!inner.trim()) continue;
+             if (!inner.trim()) { if (inner) out += ' '; continue; }         // whitespace-only wrapper (Economist emits e.g. "was<i> </i>the"): keep ONE space, or the words glue
              const tag = INLINE[c.tagName];
              out += tag ? `<${tag}>${inner}</${tag}>` : inner;              // unwrap span / <a> / drop-cap
            }
