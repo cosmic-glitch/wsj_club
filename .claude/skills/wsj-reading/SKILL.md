@@ -167,12 +167,23 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
              // A figcaption often holds caption + photo credit as separate child
              // elements ("Silent flight" + "Photograph: Getty") — textContent glues
              // them ("flightPhotograph"), so join multi-child captions with a dash.
-             const caption = (capEl
+             const rawCaption = (capEl
                ? (capEl.children.length > 1
                    ? [...capEl.children].map(e => e.textContent.trim()).filter(Boolean).join(' — ')
                    : capEl.textContent)
                : (img.alt || '')).replace(/\s+/g, ' ').trim();
-             if (/^listen to this story/i.test(caption)) continue;
+             if (/^listen to this story/i.test(rawCaption)) continue;
+             // Keep a caption only when it DESCRIBES the image. Bare credits
+             // ("Photograph: Getty", "Chart: The Economist", "MARCO BELLO/REUTERS")
+             // are noise — the top bar already links the original. Strip trailing
+             // credits from mixed captions; drop credit-only ones entirely.
+             let caption = rawCaption
+               .replace(/\s*[—–-]+\s*(?:photograph|photo|chart|illustration|image)s?\s*:.*$/i, '')
+               .replace(/\s*\bSource:\s.*$/, '')
+               .replace(/\s*\/?\s*(?:[A-Z][A-Z'’.&-]*(?:[ /;]+|$)){2,}$/, '')
+               .trim();
+             if (/^(?:photograph|photo|chart|illustration|image)s?\s*:/i.test(caption)
+                 || (/[A-Z]/.test(caption) && !/[a-z]/.test(caption))) caption = '';
              blocks.push({ type: 'img', url, caption });
              continue;
            }
