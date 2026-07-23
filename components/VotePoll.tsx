@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import ArticleLink from "@/components/ArticleLink";
 import TodayTag from "@/components/TodayTag";
 import type { Track } from "@/lib/content";
 
@@ -265,13 +264,13 @@ export default function VotePoll({
                               {/* quiet parenthetical, not a button — the modal
                                   is about voting; a loud READ IT competed with
                                   that (owner feedback, 2026-07-19) */}
-                              <ArticleLink
+                              <a
                                 href={c.articleUrl}
                                 className="whitespace-nowrap text-stone-500 underline decoration-stone-400 underline-offset-2 hover:text-[#0a0a0a]"
                                 onClick={(e) => e.stopPropagation()}
                               >
                                 (read the article)
-                              </ArticleLink>
+                              </a>
                             </p>
                             {(isYourVote || typeof count === "number") && (
                               <div className="mt-2 flex flex-wrap items-center gap-2">
