@@ -189,12 +189,7 @@ export default function LandingIndex({
                           <ArticleLink href={a.articleUrl} className={btn}>
                             {single ? "Web" : `Web ${i + 1}`}
                           </ArticleLink>
-                          <a
-                            href={a.pdfUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={btn}
-                          >
+                          <a href={a.pdfUrl} className={btn}>
                             {single ? "PDF" : `PDF ${i + 1}`}
                           </a>
                         </span>
