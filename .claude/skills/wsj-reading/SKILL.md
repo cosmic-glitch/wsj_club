@@ -257,7 +257,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
        .srcline a{color:#0000ee;text-decoration:underline}
        h2{font-size:21px;line-height:1.3;margin:1.5em 0 .5em}
        p{margin:0 0 1em}
-       small{font-size:.92em;font-variant-caps:all-small-caps;letter-spacing:.02em} /* acronyms (AI, IBM, GPT) as small caps — real uppercase chars kept */
+       small{font-size:.85em;letter-spacing:.02em} /* acronyms (AI, IBM, GPT): reduced full caps, real uppercase chars kept. NOT font-variant-caps — Georgia has no small-caps glyphs, so the browser SYNTHESIZES them by scaling caps to ~70%, which stacked on a reduced font-size rendered acronyms shorter than the lowercase around them */
        em,i{font-style:italic}
        strong,b{font-weight:700}
        .lead::first-letter{font-size:3.1em;font-weight:700;line-height:.82;float:left;padding:.04em .09em 0 0} /* Economist-style drop cap */
