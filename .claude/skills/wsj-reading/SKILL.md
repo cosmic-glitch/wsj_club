@@ -236,11 +236,11 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
      <style>
        html{-webkit-text-size-adjust:100%}
        body{margin:0;background:#fff;color:#111;font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.6}
-       main{max-width:40rem;margin:0 auto;padding:20px 18px 70px}
-       .club{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#555;text-decoration:none;border-bottom:2px solid #0a0a0a;padding-bottom:2px;margin-bottom:16px}
-       h1{font-size:clamp(26px,6.5vw,34px);line-height:1.2;margin:.5em 0 .3em}
-       .dek{font-size:19px;font-style:italic;color:#333;margin:0 0 .6em}
-       .src{color:#555;font-size:13px;padding-bottom:14px;border-bottom:1px solid #ddd;margin-bottom:22px}
+       main{max-width:40rem;margin:0 auto;padding:10px 18px 70px}
+       .club{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#555;text-decoration:none;border-bottom:2px solid #0a0a0a;padding-bottom:2px;margin-bottom:8px}
+       h1{font-size:clamp(23px,6.5vw,34px);line-height:1.2;margin:.2em 0 .25em}
+       .dek{font-size:19px;font-style:italic;color:#333;margin:0 0 .45em}
+       .src{color:#555;font-size:13px;padding-bottom:8px;border-bottom:1px solid #ddd;margin-bottom:14px}
        .src a{color:#0000ee;text-decoration:underline}
        h2{font-size:21px;line-height:1.3;margin:1.5em 0 .5em}
        p{margin:0 0 1em}
