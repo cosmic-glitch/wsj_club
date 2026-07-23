@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>The Classic Movie That Was Nearly Destroyed by a Single Line of Code</title>
+<style>
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:#fff;color:#111;font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.6}
+  main{max-width:40rem;margin:0 auto;padding:20px 18px 70px}
+  .club{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#555;text-decoration:none;border-bottom:2px solid #0a0a0a;padding-bottom:2px;margin-bottom:16px}
+  h1{font-size:clamp(26px,6.5vw,34px);line-height:1.2;margin:.5em 0 .3em}
+  .dek{font-size:19px;font-style:italic;color:#333;margin:0 0 .6em}
+  .src{color:#555;font-size:13px;padding-bottom:14px;border-bottom:1px solid #ddd;margin-bottom:22px}
+  .src a{color:#0000ee;text-decoration:underline}
+  h2{font-size:21px;line-height:1.3;margin:1.5em 0 .5em}
+  p{margin:0 0 1em}
+  small{font-size:.92em;font-variant-caps:all-small-caps;letter-spacing:.02em}
+  em,i{font-style:italic}
+  strong,b{font-weight:700}
+  .lead::first-letter{font-size:3.1em;font-weight:700;line-height:.82;float:left;padding:.04em .09em 0 0}
+  figure{margin:1.4em 0;text-align:center}
+  figure img{max-width:100%;height:auto;display:block;margin:0 auto}
+  figcaption{font-size:13px;color:#666;margin-top:.4em;font-style:italic;text-align:left}
+</style>
+</head><body><main>
+<a class="club" href="/">&larr; Reading Club</a>
+<h1>The Classic Movie That Was Nearly Destroyed by a Single Line of Code</h1>
+<div class="src">The Wall Street Journal (<a href="https://www.wsj.com/business/media/toy-story-5-saved-pixar-78e29161" rel="noopener noreferrer">original</a>)</div>
+<p>Before anyone ever saw it, one of the most beloved movies of all time was nearly destroyed by a single line of code.</p>
+<p>It had to be saved by an unlikely cast of characters that included a 6-month-old baby.</p>
+<p>It only survived after a computer with the last known copy of the movie was strapped into the back seat of a Volvo station wagon and chauffeured to Pixar Animation Studios.</p>
+<p>And inside that computer was billions of dollars of intellectual property: Woody, Buzz Lightyear and Mr. Potato Head.</p>
+<p>“Toy Story” has been a part of our lives for so long that fully grown adults who saw the original as kids will be seeing “Toy Story 5” this weekend with their own kids. The latest installment of the iconic franchise is about the defining conflict of modern parenting and childhood: toys vs. tech.</p>
+<p>But long before a cowboy, a space ranger and a cantankerous spud went up against a tablet, the real people behind “Toy Story 2” fought their own battle with tech—and they almost lost the entire movie.</p>
+<p>It was a battle that began with this string of code:</p>
+<p><em>/bin/rm -r -f *</em></p>
+<p>Let me translate: go into every directory (<em>r</em>) and remove (<em>rm</em>) everything (<em>*</em>) by force (<em>f</em>), and don’t ask for confirmation—just do it. In other words, delete it all.</p>
+<p>This command to wipe out the files as fast as possible nuked “Toy Story 2” in the time it takes to play “You’ve Got a Friend in Me.”</p>
+<p>Nobody knew who was responsible. But everybody inside Pixar knew it could have been anybody.</p>
+<p>In the days before cloud computing and endless storage, Pixar kept hundreds of thousands of files on Unix and Linux computers. To free up space, technical employees routinely cleaned their personal directories with a command like the one above. They all had access to the master “Toy Story 2” drive and it was easy to move between their personal folders and that central server—too easy, as it turned out.</p>
+<p>One command in the wrong place was all it would take to unleash chaos.</p>
+<p>And in 1998, a technical director named Oren Jacob was in Pixar’s offices in Point Richmond, Calif., cranking away on “Toy Story 2,” when he suddenly noticed files vanishing from the computer screen: Woody’s hat, Woody’s boots, Woody himself, then Buzz, Mr. Potato Head, Rex and Hamm.</p>
+<p>Before he knew it, all the files were gone, and so was 90% of the movie.</p>
+<p>It took a few seconds to erase a few years of work. Jacob had never seen anything like it.</p>
+<p>“You don’t often watch a company vaporize in front of your eyes,” he told me.</p>
+<p>In the most terrifying moment of his career, he picked up the nearest phone, dialed the control room with the main server and shouted: <em>Unplug the machine</em>!</p>
+<p>Then he rushed down the hallway to see Galyn Susman.</p>
+<p>The film’s supervising technical director was remarkably calm upon learning that the company’s most valuable assets had disappeared.</p>
+<p>“I try to remind myself regularly that there are a lot of ways to respond to stressful circumstances,” she told me, “and hysteria is never going to be a productive way of dealing with things.”</p>
+<p>As Jacob was losing his mind, Susman put her head down and started asking questions. What happened? Are you sure that actually happened? Now that it’s happened, how are we going to fix it? At first, she figured it wouldn’t take long. They could just restore the data from Pixar’s trusty backup systems. “It’s gonna be fine,” she thought.</p>
+<p>It was not fine.</p>
+<p>When Pixar employees went looking for the lost data, they discovered that the backup systems were not working properly—and nobody was aware until it was too late.</p>
+<p>“The mechanism we had in place specifically to help us recover from data failures had itself failed,” Pixar co-founder Ed Catmull wrote in his book “Creativity, Inc.”</p>
+<p>This left them with a problem that no amount of creativity could solve.</p>
+<p>“It was like a jigsaw puzzle of all the pieces from different puzzles,” Jacob said, “with a few missing.”</p>
+<p>A movie going kaput would be a crisis at any studio. At this one, it was existential. Pixar had pushed to release “Toy Story 2” in theaters instead of direct-to-video—a counterintuitive bet at the time. Now it was staring down the possibility of blowing the deadline and delaying the sequel by a year, which Catmull says would have been nothing less than catastrophic.</p>
+<p>“We didn’t have the resources at that time to absorb that kind of delay and survive,” he told me.</p>
+<p>But as the company’s leaders huddled in a conference room to discuss plans for averting disaster, two things happened that Susman and Jacob would never forget.</p>
+<p>The first is that Catmull didn’t waste any time hunting for someone to blame.</p>
+<p>“Looking for someone to blame doesn’t help us learn from mistakes,” he told me. “We understood that the deletion of the movie was an accident because somebody typed in a command when they were in the wrong directory. We don’t know who typed the command, or if they even knew that they were the one who did it, but it didn’t matter.”</p>
+<p>All that mattered was salvaging the film and making absolutely sure this wouldn’t happen again.</p>
+<p>The second thing that Susman and Jacob remember is sprinting out of the meeting— because they realized that she had a backup of “Toy Story 2” at home.</p>
+<p>As it happens, Susman also had a baby named Eli at home. While she was pregnant, she built her own work-from-home setup long before working from home was part of the job. Once a week after her parental leave, she lugged the hulking computer to the office and downloaded the latest version of the film so she could keep working after bedtime.</p>
+<p>Which meant the only known backup of “Toy Story 2” anywhere in the galaxy was sitting in her house.</p>
+<p>Now they just had to get it back to Pixar HQ.</p>
+<p>They raced to Susman’s home, loaded the computer in her station wagon, smothered the machine in pillows and blankets—and buckled the seat belt. Jacob even called for a police escort.</p>
+<p>The request was denied, so they took their own safety precautions, driving slowly with the hazard lights flashing. The computer made it to Pixar’s campus, flickered to life and brought Woody and Buzz back from the dead.</p>
+<p>Everyone breathed a sigh of relief that could be heard from infinity and beyond.</p>
+<p>Susman, Jacob and a small team of Pixar employees then spent a weekend inspecting 30,000 files, fueled by way too much pizza and coffee poured by Catmull and Pixar’s chairman: Steve Jobs.</p>
+<p>When the cleanup was finally done, “Toy Story 2” wasn’t.</p>
+<p>In fact, after the movie was accidentally deleted, Pixar’s executives deleted the movie again—on purpose.</p>
+<p>Less than a year before it opened to universal raves, “Toy Story 2” was overhauled in a way that Catmull has called “the cinematic equivalent of a heart transplant.” They pulled it off. Susman worked on all four “Toy Story” movies, but she’s especially proud of the one that was almost lost.</p>
+<p>“Personally,” she said, “I still think ‘Toy Story 2’ is the best of the franchise.”</p>
+<p>And if you keep watching long after the movie is over, you will find one of her favorite parts.</p>
+<p>At the bottom of the credits is a list of “production babies,” a Pixar tradition of recognizing the children of employees born during the making of a film, including one named Eli—Galyn Susman’s son.</p>
+<p>He’s the only baby credited in the movie who also helped save the movie.</p>
+</main></body></html>
