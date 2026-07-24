@@ -1,0 +1,121 @@
+{
+  "date": "2026-07-24",
+  "title": "A Brief History of Luddism",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/07/23/a-brief-history-of-luddism",
+  "articlePageUrl": "/articles/2026-07-24.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "sanguine",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SANG-gwin",
+      "articleQuote": "Even normally sanguine economists have signed a letter saying that governments must “act now” to prevent the widespread loss of work.",
+      "inContext": "It describes economists who are usually cheerful and unworried about new technology — so their alarm about AI stands out.",
+      "meaning": "Cheerfully confident and optimistic, especially in a situation that looks difficult or worrying.",
+      "examples": [
+        "Even after fumbling the first two questions, she stayed sanguine, sure she'd ace the rest of the test.",
+        "Our coach was strangely sanguine about the final, telling us a tough draw was nothing to fear."
+      ]
+    },
+    {
+      "word": "destitute",
+      "partOfSpeech": "adjective",
+      "pronunciation": "DES-tih-toot",
+      "articleQuote": "Nor were they the broad-based movement of the destitute that later lefty historians claimed; they were a small bunch of relatively well-off workers.",
+      "inContext": "It means the desperately poor — and the point is that the Luddites were NOT that; they were skilled workers with decent wages.",
+      "meaning": "Extremely poor; lacking the basic necessities of life, such as food, money, and shelter.",
+      "examples": [
+        "The charity collects winter coats for families left destitute after the flood.",
+        "By the end of the board game he was destitute, having mortgaged every property he owned."
+      ]
+    },
+    {
+      "word": "moratorium",
+      "partOfSpeech": "noun",
+      "pronunciation": "mor-uh-TOR-ee-um",
+      "articleQuote": "New York state has passed a moratorium on data centres in a bid to hold down electricity prices.",
+      "inContext": "It's an official pause on building new data centers — not a permanent ban, but a temporary stop while the state sorts things out.",
+      "meaning": "An official, temporary halt to an activity, often ordered while people decide what to do about it.",
+      "examples": [
+        "After the fights at recess, the principal put a moratorium on dodgeball until new rules were written.",
+        "The town declared a moratorium on new construction until it could fix the crowded schools."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Technological unemployment",
+      "articleQuote": "Some coders and software engineers worry, like the artisan weavers of northern England, that AI will destroy jobs that once meant creativity and prestige.",
+      "meaning": "This is the fear that machines will take our jobs — and it is one of the oldest fears in economics. Picture a weaver in 1810 who spent years learning a craft, suddenly watching a machine do her work faster and cheaper. Of course she panics: that specific job really is disappearing. Today a software engineer watching an AI write code feels the exact same chill.\n\nHere is the twist the Luddites' story teaches. New machines really do destroy particular jobs — hand-weaving, then later typing pools and bank clerks copying numbers by hand. But the total amount of work in the economy has never run out. Instead the work shifts: fewer weavers, but more people making, fixing, and selling machines; fewer clerks, but more programmers. The scary part is real (your job can vanish), and the reassuring part is also real (new jobs keep appearing) — it's just that the two don't always happen to the same person, or in the same town, at the same time. That gap is exactly why the fear never fully goes away.",
+      "inContext": ""
+    },
+    {
+      "name": "Creative destruction",
+      "articleQuote": "Britain’s textile industry boomed throughout the early 19th century. Indian clerks’ initial reluctance to embrace computers did not stop the country becoming an IT-services powerhouse.",
+      "meaning": "Creative destruction is the idea that progress doesn't just add — it also tears down, and the tearing down is part of how the new gets built. Think of it like a forest fire that clears dead brush so fresh trees can grow: painful and destructive up close, but the reason the forest keeps renewing itself.\n\nThe article gives two clean examples. The Luddites smashed looms to save weaving jobs — and yet, once the machines won, Britain's textile industry exploded, creating far more work and cheaper cloth than before. In India, clerks and unions fought computers for years — and yet computing eventually turned India into one of the world's great software-services economies. In both cases the old way of doing things was destroyed, and something bigger grew in its place.\n\nYou can see the same pattern everywhere: streaming destroyed video-rental stores like Blockbuster but created Netflix and a huge world of online shows; smartphones killed the standalone camera and the paper map but created the app economy. The lesson isn't that destruction is painless — real people lose real jobs — it's that a healthy economy is constantly replacing its own parts."
+    },
+    {
+      "name": "Semantic shift",
+      "articleQuote": "“Luddite” has become a slur for technophobic stick-in-the-muds, the whingers who stand in the way of progress and want the clock to be turned back to a better time.",
+      "meaning": "Semantic shift is the way a word's meaning slowly drifts over time, until it can end up meaning something very different — sometimes even the opposite — from where it started. Words aren't fixed; they're more like rivers, quietly changing course as people use them.\n\n“Luddite” is a perfect case. It began as the name of specific, skilled English workers in the 1810s who were actually quite thoughtful — they smashed only certain machines and understood automation perfectly well. Two centuries later the word has soured into a plain insult: call someone a Luddite today and you just mean they're clueless and scared of anything new. The real history got flattened into a put-down.\n\nThis happens constantly, and it's worth noticing because it can mislead you. “Awful” once meant 'full of awe,' i.e. wonderful; “nice” once meant 'foolish.' A word carrying a modern insult may hide a more complicated, more interesting original story — as it does here."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, who were the original Luddites, really?",
+      "options": [
+        "A huge movement of the poorest, most desperate people in England",
+        "A relatively well-off, skilled group of textile workers who smashed machines selectively",
+        "Factory owners protecting their profits",
+        "Government officials enforcing new laws"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article stresses they were not the 'destitute' masses of legend but a small band of relatively well-off skilled workers who broke only certain machines."
+    },
+    {
+      "question": "What does the article suggest actually determines whether a new technology gets adopted or blocked?",
+      "options": [
+        "Whether ordinary workers protest against it",
+        "Whether it is genuinely useful",
+        "Whether those with the power to regulate it — usually the state — allow or restrict it",
+        "Whether poets and celebrities support it"
+      ],
+      "answerIndex": 2,
+      "explanation": "The piece concludes that the successful opponents of technology were not furious workers but those with the power to regulate, such as governments."
+    },
+    {
+      "question": "Why did the anti-computer movement in India succeed for a time when the Luddites failed?",
+      "options": [
+        "Indian workers smashed more machines than the Luddites did",
+        "The computers were far more expensive than looms",
+        "The state took the workers' side rather than the bosses'",
+        "There were no useful computers available yet"
+      ],
+      "answerIndex": 2,
+      "explanation": "In 1969 the West Bengal government refused police protection for installing the computer, so the state backed the workers — the key difference from the Luddites."
+    },
+    {
+      "question": "Which sentence uses 'sanguine' correctly?",
+      "options": [
+        "He was sanguine about the exam, confident he'd do fine even though he'd barely studied.",
+        "The sanguine storm knocked out power across the whole city.",
+        "She spoke in a sanguine whisper so no one would overhear.",
+        "The recipe called for a sanguine cup of flour."
+      ],
+      "answerIndex": 0,
+      "explanation": "'Sanguine' means cheerfully optimistic, especially in a tricky situation — which fits being calmly confident about an exam."
+    },
+    {
+      "question": "'Creative destruction' is best summed up by which idea?",
+      "options": [
+        "New technology should be banned to protect existing jobs",
+        "New technology destroys old jobs and industries while creating new ones in their place",
+        "Destroying old machines is the best way to spark creativity",
+        "Progress always makes everyone better off at the same time"
+      ],
+      "answerIndex": 1,
+      "explanation": "Creative destruction is the churn by which the old is torn down as something new grows up — like weaving jobs vanishing while the textile industry boomed."
+    }
+  ]
+}
