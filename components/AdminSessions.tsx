@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import DeleteSessionButton from "@/components/DeleteSessionButton";
 import SessionAudio from "@/components/SessionAudio";
@@ -40,7 +40,11 @@ export type Session = {
   // Length of the saved recording (total talk time — the same duration the
   // playback control shows), in ms. Undefined when nothing was recorded → "—".
   durationMs?: number;
-  transcript: Turn[];
+  // SCORE ONLY — loadSessions slims the report down to its score (the only bit
+  // the table shows). The summary/strengths/gaps narrative and the transcript
+  // stay in the session's Blob JSON; the Details modal fetches them from
+  // blobUrl on open (details are viewed rarely, so shipping every attempt's
+  // full record in the page payload was pure waste).
   report: Report | null;
   audioUrl?: string;
   // Set when the attempt ended because of (or was abandoned after) a
@@ -75,6 +79,14 @@ export type ArticleGroup = {
   dateLabel: string;
   title: string;
   attempts: Session[];
+};
+
+// The modal-only heavy fields, fetched straight from the session's Blob JSON
+// when Details is opened (the browser already holds blobUrl — it's the same URL
+// the Delete button sends). Only what the modal renders beyond the slim row.
+type SessionDetail = {
+  transcript?: Turn[];
+  report?: Report | null;
 };
 
 // Track-aware hrefs — junior lives under a /junior prefix (senior unchanged).
@@ -145,6 +157,47 @@ export default function AdminSessions({
   // "Details" link per attempt opens the full combined view — feedback +
   // recording + transcript, all in one modal.
   const [session, setSession] = useState<Session | null>(null);
+
+  // The heavy fields (feedback narrative + transcript), fetched from the
+  // session's own Blob JSON when the modal opens. Keyed by blobUrl so a slow
+  // response for a closed modal can never paint into a newer one; `data: null`
+  // = still loading, `error` = fetch/parse failed.
+  const [detail, setDetail] = useState<{
+    url: string;
+    data: SessionDetail | null;
+    error: boolean;
+  } | null>(null);
+  const detailUrlRef = useRef<string | null>(null);
+
+  const openDetails = (s: Session) => {
+    setSession(s);
+    setDetail({ url: s.blobUrl, data: null, error: false });
+    detailUrlRef.current = s.blobUrl;
+    // The in-progress slot is overwritten in place, so bust the CDN edge cache
+    // for a current read; a finished record is immutable (random-suffixed key),
+    // so its plain URL is fine and can be served from the edge.
+    const url = s.inProgress ? `${s.blobUrl}?v=${Date.now()}` : s.blobUrl;
+    fetch(url, { cache: "no-store" })
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json() as Promise<SessionDetail>;
+      })
+      .then((data) => {
+        if (detailUrlRef.current !== s.blobUrl) return;
+        setDetail({ url: s.blobUrl, data, error: false });
+      })
+      .catch(() => {
+        if (detailUrlRef.current !== s.blobUrl) return;
+        setDetail({ url: s.blobUrl, data: null, error: true });
+      });
+  };
+
+  // The open modal's fetched detail (null while loading / on error).
+  const sessionDetail =
+    session && detail?.url === session.blobUrl ? detail.data : null;
+  const detailFailed =
+    !!session && detail?.url === session.blobUrl && detail.error;
+  const detailLoading = !!session && !sessionDetail && !detailFailed;
 
   // Local-time labels are computed only after mount (see fmtLocal).
   const [mounted, setMounted] = useState(false);
@@ -312,7 +365,7 @@ export default function AdminSessions({
                             ) : (
                               <button
                                 type="button"
-                                onClick={() => setSession(s)}
+                                onClick={() => openDetails(s)}
                                 className="font-mono text-[11px] font-bold uppercase tracking-[.06em] text-[#0a0a0a] underline decoration-2 underline-offset-2 hover:bg-[#ffe600]"
                               >
                                 Details
@@ -454,6 +507,15 @@ export default function AdminSessions({
                 </p>
               )}
 
+              {/* The heavy fields come from the record's own Blob JSON, fetched
+                  on open — surface a fetch failure once, above both sections. */}
+              {detailFailed && (
+                <div className="border-2 border-red-700 bg-red-50 px-3 py-2 text-sm text-red-800">
+                  Couldn’t load this attempt’s feedback and transcript — check
+                  your connection, then close and reopen Details.
+                </div>
+              )}
+
               {/* Feedback */}
               <div>
                 <p className="mb-2 font-mono text-[10px] font-bold uppercase tracking-[.14em] text-[#0a0a0a]">
@@ -463,39 +525,41 @@ export default function AdminSessions({
                   <p className="text-sm text-stone-400">
                     In progress — not yet graded.
                   </p>
-                ) : hasFeedback(session.report) ? (
+                ) : detailLoading ? (
+                  <p className="text-sm text-stone-400">Loading…</p>
+                ) : hasFeedback(sessionDetail?.report ?? null) ? (
                   <>
-                    {session.report?.summary && (
+                    {sessionDetail?.report?.summary && (
                       <p className="text-sm text-stone-600">
-                        {session.report.summary}
+                        {sessionDetail.report.summary}
                       </p>
                     )}
-                    {((session.report?.strengths &&
-                      session.report.strengths.length > 0) ||
-                      (session.report?.gaps &&
-                        session.report.gaps.length > 0)) && (
+                    {((sessionDetail?.report?.strengths &&
+                      sessionDetail.report.strengths.length > 0) ||
+                      (sessionDetail?.report?.gaps &&
+                        sessionDetail.report.gaps.length > 0)) && (
                       <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                        {session.report?.strengths &&
-                          session.report.strengths.length > 0 && (
+                        {sessionDetail?.report?.strengths &&
+                          sessionDetail.report.strengths.length > 0 && (
                             <div>
                               <p className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-emerald-700">
                                 Strengths
                               </p>
                               <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-700">
-                                {session.report.strengths.map((x, j) => (
+                                {sessionDetail.report.strengths.map((x, j) => (
                                   <li key={j}>{x}</li>
                                 ))}
                               </ul>
                             </div>
                           )}
-                        {session.report?.gaps &&
-                          session.report.gaps.length > 0 && (
+                        {sessionDetail?.report?.gaps &&
+                          sessionDetail.report.gaps.length > 0 && (
                             <div>
                               <p className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-amber-700">
                                 To review
                               </p>
                               <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-stone-700">
-                                {session.report.gaps.map((x, j) => (
+                                {sessionDetail.report.gaps.map((x, j) => (
                                   <li key={j}>{x}</li>
                                 ))}
                               </ul>
@@ -506,7 +570,9 @@ export default function AdminSessions({
                   </>
                 ) : (
                   <p className="text-sm text-stone-400">
-                    No feedback was saved for this attempt.
+                    {detailFailed
+                      ? "Feedback couldn’t be loaded."
+                      : "No feedback was saved for this attempt."}
                   </p>
                 )}
               </div>
@@ -530,9 +596,12 @@ export default function AdminSessions({
                 <p className="mb-2 font-mono text-[10px] font-bold uppercase tracking-[.14em] text-[#0a0a0a]">
                   Transcript
                 </p>
-                {session.transcript && session.transcript.length > 0 ? (
+                {detailLoading ? (
+                  <p className="text-sm text-stone-400">Loading…</p>
+                ) : sessionDetail?.transcript &&
+                  sessionDetail.transcript.length > 0 ? (
                   <div className="space-y-1.5">
-                    {session.transcript.map((t, j) => (
+                    {sessionDetail.transcript.map((t, j) => (
                       <p key={j} className="text-sm">
                         <span
                           className={
@@ -549,7 +618,9 @@ export default function AdminSessions({
                   </div>
                 ) : (
                   <p className="text-sm text-stone-400">
-                    No transcript was saved for this attempt.
+                    {detailFailed
+                      ? "Transcript couldn’t be loaded."
+                      : "No transcript was saved for this attempt."}
                   </p>
                 )}
               </div>
