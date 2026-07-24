@@ -3,18 +3,19 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useAuth } from "./AuthProvider";
+import { clearAuthCache, useAuth, writeAuthCache } from "./AuthProvider";
 
 // The site's login/scores controls: small uppercase mono TEXT links —
 // deliberately not boxed, so the boxed buttons stay exclusively "content
 // actions" in the index rows. Hovering inverts (black bg, yellow text). Used
 // in the landing page's thin topline ABOVE the masthead AND in the site-wide
 // header on every inner page (SiteHeader): inline login form when logged out,
-// word-bank/scores/students links + log out when logged in. The links render as ONE
-// unbreakable unit (so a wrap can never strand a "/" separator); only the
-// greeting — shown on the landing topline, suppressed in the header
-// (showGreeting={false}) to keep it uncluttered on phones — may wrap away
-// onto its own line.
+// word-bank/scores/students links + log out when logged in. The bar renders
+// IDENTICALLY everywhere — greeting + links — so navigating between pages
+// never makes it jitter (the greeting used to be header-suppressed, which
+// made "Hi <user>" vanish and the links shift on every inner page). The links
+// render as ONE unbreakable unit (so a wrap can never strand a "/"
+// separator); only the greeting may wrap away onto its own line.
 const bar =
   "inline-block cursor-pointer px-1.5 py-1 font-mono text-[11px] font-bold uppercase leading-normal tracking-[.12em] text-[#0a0a0a] no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]";
 
@@ -27,11 +28,7 @@ function Slash() {
   );
 }
 
-export default function HomeAuthBar({
-  showGreeting = true,
-}: {
-  showGreeting?: boolean;
-}) {
+export default function HomeAuthBar() {
   const { user, isAdmin, ready } = useAuth();
   // The Word Bank is per-track (the SiteHeader monogram recipe): from a junior
   // page it links to the junior bank, everywhere else the senior one.
@@ -71,6 +68,21 @@ export default function HomeAuthBar({
         setError(data.error ?? "Login failed");
         return;
       }
+      // Prime the auth cache so the reloaded page paints the logged-in bar
+      // immediately instead of flashing blank while /api/me answers.
+      try {
+        const me = await fetch("/api/me").then((r) => r.json());
+        if (me.username) {
+          writeAuthCache({
+            user: me.username,
+            isAdmin: Boolean(me.isAdmin),
+            isOwner: Boolean(me.isOwner),
+            role: me.role ?? null,
+          });
+        }
+      } catch {
+        // Best-effort — worst case the reload shows the old one-time flash.
+      }
       // Reload so the voice-quiz launchers etc. pick up the new session.
       window.location.reload();
     } catch {
@@ -82,6 +94,9 @@ export default function HomeAuthBar({
 
   async function logout() {
     await fetch("/api/logout", { method: "POST" });
+    // Drop the cached snapshot BEFORE reloading, or the fresh page would
+    // flash the old "Hi <user>" bar until /api/me confirmed the logout.
+    clearAuthCache();
     window.location.reload();
   }
 
@@ -91,11 +106,9 @@ export default function HomeAuthBar({
   if (user) {
     return (
       <div className="flex flex-wrap items-center justify-end gap-x-1 gap-y-0.5">
-        {showGreeting && (
-          <span className="mr-1.5 px-1.5 py-1 font-mono text-[11px] font-bold uppercase tracking-[.12em] text-stone-400">
-            Hi {user}
-          </span>
-        )}
+        <span className="mr-1.5 px-1.5 py-1 font-mono text-[11px] font-bold uppercase tracking-[.12em] text-stone-400">
+          Hi {user}
+        </span>
         {/* One unbreakable unit: on a narrow screen the whole link group wraps
             together (below the greeting / the header wordmark), so a line can
             never end or start with a stray "/". */}

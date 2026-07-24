@@ -8,12 +8,13 @@ import HomeAuthBar from "./HomeAuthBar";
 // The site-wide header bar, in the brutalist language of the landing page:
 // white, a thick black rule, an "RC" monogram in the Anton display face (R
 // solid, C outlined — the masthead's READING/CLUB treatment, condensed), and
-// the mono uppercase auth links of HomeAuthBar. Kept deliberately sparse so
-// even the parent's full link set fits ONE row on a phone: the monogram IS
-// the way back to the index (no separate "← All readings" link) and the
-// "Hi <user>" greeting is suppressed here (showGreeting={false} — it lives on
-// the landing topline instead). Should a screen still be too narrow, the
-// auth-link group wraps below the monogram as one tidy unit. The home page
+// the mono uppercase auth links of HomeAuthBar — greeting included, so the
+// bar reads IDENTICALLY to the landing topline and never jitters between
+// pages (it used to suppress "Hi <user>" here, which made the greeting vanish
+// and the links shift on every inner page). The monogram IS the way back to
+// the index (no separate "← All readings" link). Should a screen be too
+// narrow, the auth-link group wraps below the monogram as one tidy unit
+// (and the greeting may wrap on its own — see HomeAuthBar). The home page
 // hides this header entirely: its landing design brings its own masthead
 // ("READING CLUB") and its own topline auth controls, so it would duplicate
 // both.
@@ -40,7 +41,7 @@ export default function SiteHeader() {
             C
           </span>
         </Link>
-        <HomeAuthBar showGreeting={false} />
+        <HomeAuthBar />
       </HeaderContainer>
     </header>
   );
