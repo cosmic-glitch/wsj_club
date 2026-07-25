@@ -1,0 +1,120 @@
+{
+  "date": "2026-07-25",
+  "title": "Two Kinds of Judgement by Paul Graham",
+  "articleUrl": "https://www.paulgraham.com/judgement.html",
+  "articlePageUrl": "/articles/2026-07-25.html",
+  "voiceQuiz": true,
+  "source": "Paul Graham",
+  "vocab": [
+    {
+      "word": "extraneous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ek-STRAY-nee-us",
+      "articleQuote": "most judgements are greatly influenced by random, extraneous factors",
+      "inContext": "The outside details that push a decision about you one way or the other even though they have nothing to do with how good you are — what mood the reader was in, how many spots were left, whose application they happened to read right before yours.",
+      "meaning": "Coming from outside and not belonging to the matter at hand; irrelevant to the real issue.",
+      "examples": [
+        "The essay was strong, but the last two paragraphs were extraneous — they wandered off the question and added nothing.",
+        "Good lab technique is mostly about shutting out extraneous factors, so that the one thing you changed is the only thing that could explain the result."
+      ]
+    },
+    {
+      "word": "fickle",
+      "partOfSpeech": "adjective",
+      "pronunciation": "FIK-ul",
+      "articleQuote": "most people judging you are more like a fickle novel buyer than a wise and perceptive magistrate",
+      "inContext": "The person deciding your fate isn't weighing you carefully; they're browsing, and what catches their eye today might not catch it tomorrow.",
+      "meaning": "Changing your mind, your loyalties, or your preferences often and without a solid reason.",
+      "examples": [
+        "The crowd at that stadium is fickle — the same player gets booed in September and chanted for in November.",
+        "Trends on social media are fickle by design: the thing everyone posted last month is already embarrassing to post now."
+      ]
+    },
+    {
+      "word": "optimal",
+      "partOfSpeech": "adjective",
+      "pronunciation": "OP-tuh-mul",
+      "articleQuote": "It's not aimed at producing a correct estimate of any given individual, but at selecting a reasonably optimal set.",
+      "inContext": "The selector's target was the best team available given twenty slots and imperfect information — not a perfect ranking of every player who tried out.",
+      "meaning": "Best possible under the circumstances, given the limits you're actually working with. Note that optimal does not mean perfect — it means nothing available would do better.",
+      "examples": [
+        "With three hours left before the test, rereading your own notes is probably the optimal use of the time, even if a full re-study would be better.",
+        "The optimal lineup isn't always the five most talented players — it's the five who work best together."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Selection, not assessment",
+      "articleQuote": "But in fact there is a second much larger class of judgements where judging you is only a means to something else.",
+      "meaning": "Imagine two people looking at the exact same test paper. One is your teacher, grading it. The other is a coach, deciding who gets the last seat on the bus to the tournament. They read the same paper and they are doing completely different jobs.\n\nThe teacher's job is to be right about you. That is the whole point — the grade is supposed to describe your work, and if it's wrong, there's a way to challenge it. The coach's job is to end up with a good bus. Whether the coach is exactly right about you is not the goal; it's just a tool for filling the seat. And you can be wrong about one person and still fill the seat perfectly well.\n\nAlmost every judgement that decides something big in your life is the second kind: college admissions, job applications, team tryouts, casting, who gets asked to join the group project. We read them all as the first kind because that's what we grew up with — nearly every judgement made on a child is a real assessment, with a grade and an appeal. So we walk into a selection expecting a verdict, and when it goes against us we hear \"you are not good enough\" instead of the far more accurate \"we filled the seats.\"\n\nThe test to run, any time someone is evaluating you: is this person trying to be right about me, or trying to end up with a good group? If there's no appeals process, it's almost always the second."
+    },
+    {
+      "name": "Measurement error",
+      "articleQuote": "Probably the difference between them will be less than the measurement error.",
+      "meaning": "Step on a bathroom scale three times in a row and you'll get three slightly different numbers. Your weight didn't change in ten seconds — the scale just isn't that precise. That wobble, the gap between what an instrument reports and what's actually true, is called measurement error, and every measurement has some.\n\nHere's the part that matters. If your scale wobbles by a pound, and you want to know whether you weigh more than your friend, and the two of you are half a pound apart — the scale simply cannot answer that question. Not \"it's hard to tell.\" There is no answer to read. Whichever name comes out on top is the wobble talking, not the weight.\n\nThat's Graham's point about the 20th and 21st best players. A tryout is a measuring instrument, and a fairly crude one: one afternoon, one coach, one set of drills, on a day someone might have slept badly. The real gap between those two players is smaller than the instrument's own noise. So the coach didn't make a mistake that a better coach would have avoided — the ranking was never actually there to be read.\n\nOnce you see this, you see it everywhere. Two students eight points apart on an SAT section. Two candidates polling within the margin of error. The honest reading of all of these is the same: too close to call, and anyone who tells you otherwise is reading the wobble."
+    },
+    {
+      "name": "The normal distribution",
+      "articleQuote": "If the players have the usual distribution of ability, the 21st best player will be only slightly worse than the 20th best.",
+      "meaning": "Line up everyone in your grade by height, shortest to tallest, and look at the shape of the line from above. A couple of people stick out at each end. Everybody else is crammed into the middle, separated by half an inch at a time. That shape — rare at the extremes, packed in the middle — is called a normal distribution, or a bell curve, and it shows up almost anywhere you measure a lot of people on one thing: height, reaction time, test scores, skill at a sport.\n\nWhy it's crowded in the middle is worth a second. Being extremely tall takes many things all going the same direction at once — genes, nutrition, timing. Being average takes almost any combination, because the pushes up and the pushes down cancel out. There are simply far more ways to be ordinary than to be extraordinary, so that's where nearly everyone lands.\n\nNow put that together with a cutoff. If a team takes 20 players, the line is drawn straight through the crowded middle, where players are separated by slivers. The stars are obvious and the no's are obvious; the only place the decision is genuinely hard is the exact spot where the most people are bunched together and the differences are smallest.\n\nThat produces the strangest sentence in the essay, and it's worth reading twice: judgement matters least, precisely where it has the most effect. Where the selector could easily be wrong about you, being wrong barely changes the team. And it means almost everyone who ever gets rejected was a borderline case — not because they were bad, but because the borderline is where nearly everybody is."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to Graham, what reliably tells you that you're facing the first kind of judgement — the kind where judging you correctly is the actual goal?",
+      "options": [
+        "The person judging you holds power over the outcome",
+        "There is usually some kind of appeals process",
+        "You are judged against other people rather than a standard",
+        "The decision is made quickly and in private"
+      ],
+      "answerIndex": 1,
+      "explanation": "Graham points to the appeals process as the giveaway: if getting you right is the goal, there's normally a way to protest that you were misjudged — which is exactly what colleges and employers don't offer."
+    },
+    {
+      "question": "In the national-team example, the selector underestimates the 20th best player and takes the 21st instead. Why does Graham say this still isn't unfair?",
+      "options": [
+        "The 20th player can try out again next season",
+        "Selectors are only human and mistakes are inevitable",
+        "The selector's goal was to pick a good team, not to rate players correctly, and the team is still good",
+        "The 21st player had worked harder and deserved the place"
+      ],
+      "answerIndex": 2,
+      "explanation": "The selector was never providing a service that estimates ability — the aim was a reasonably optimal team, and swapping two nearly identical players doesn't damage it."
+    },
+    {
+      "question": "\"Most judgements are greatly influenced by random, extraneous factors.\" What does extraneous mean here?",
+      "options": [
+        "Deliberately unfair or biased against you",
+        "Coming from outside and having nothing to do with the real question",
+        "Difficult to measure precisely",
+        "Occurring far more often than expected"
+      ],
+      "answerIndex": 1,
+      "explanation": "Extraneous means outside the matter at hand — irrelevant details that sway a decision even though they say nothing about how good you actually are."
+    },
+    {
+      "question": "Graham writes that \"it matters least to judge accurately in precisely the cases where judgement has the most effect.\" What makes this true?",
+      "options": [
+        "Selectors deliberately spend less time on the applications that matter most",
+        "Because ability follows a normal distribution, candidates are bunched most tightly right at the cutoff, where the decision is made",
+        "The best candidates are always obvious, so no real judging is ever needed",
+        "Decisions made near a deadline are necessarily rushed"
+      ],
+      "answerIndex": 1,
+      "explanation": "The bell curve packs almost everyone into the middle, so the cutoff falls exactly where candidates are nearly identical — the decision has the biggest effect there and the smallest real difference to detect."
+    },
+    {
+      "question": "Why does Graham argue that taking rejection less personally may actually get you rejected less often?",
+      "options": [
+        "Selectors can sense confidence and reward it",
+        "Applying to more places mathematically improves your odds",
+        "If you stop assuming the selector will uncover how good you are, you stop being passive and start doing things that influence the outcome",
+        "Rejections that don't upset you are easier to appeal"
+      ],
+      "answerIndex": 2,
+      "explanation": "Believing a wise judge will find your merit lets you sit back and wait; realising the process is quick and impersonal is what pushes you to actually sell yourself."
+    }
+  ]
+}

@@ -145,7 +145,7 @@ Same `Reading` schema as the senior track (backed by `lib/content.ts`) — the o
 
 Field notes:
 - `voiceQuiz`: set `true` on every new junior day (turns on the AI oral quiz; pair with the article-text upload in step 3).
-- `articlePageUrl` is the served path `"/articles/junior/YYYY-MM-DD.html"` — paywalled days only; an open web article omits it and the ARTICLE button links straight to `articleUrl`. Keep `articleUrl` too (the original link). `pdfUrl` is legacy — don't set it on new days.
+- `articlePageUrl` is the served path `"/articles/junior/YYYY-MM-DD.html"` — set it on **every** new day, open-link or paywalled (2026-07-25: open articles get a captured page too, so their pages can carry the tap-a-word glossary; see the senior skill's step 3). Keep `articleUrl` too (the original link). `pdfUrl` is legacy — don't set it on new days.
 - `answerIndex` is **0-based**; double-check it.
 - `vocab` has **exactly 3 words** by default (a multi-article day may run ~4); each `examples` array has **exactly 2** sentences. `concepts` is **exactly 2** by default (the user can override), or fewer/`[]` for a concept-thin or vocabulary-only day.
 - `concepts` may be empty (`[]`); the handout omits the Concepts section and the voice quiz skips its concepts stage.
