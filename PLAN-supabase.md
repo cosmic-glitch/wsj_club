@@ -1,5 +1,10 @@
 # PLAN: Migrate structured data from Vercel Blob to Supabase (Postgres)
 
+_Reviewed against main through `fd11016` (2026-07-25): the commits since the
+plan first landed are content/authoring-side (the 07-25 reading; article pages
+now captured for open sources too; no-byline titles) and don't touch the data
+layer — nothing here changes because of them._
+
 ## Why
 
 The app uses Vercel Blob as a database, and the seams are widening as it grows
@@ -232,6 +237,11 @@ cache-busting dies.
   ballots valid (`on conflict (track, date) do update` on the poll).
 - `scripts/seed-users.mjs` / `scripts/add-user.mjs`: rewrite to insert rows
   (or retire seed-users after Phase 1 — its job is done once users live in DB).
+  Note `add-user.mjs` is currently UNTRACKED in the working tree (it was run
+  once, 2026-07-24, adding the `aju` → `gibran` classroom directly to Blob);
+  its DB rewrite should be committed. Those two users are picked up by the
+  Phase-1 backfill like any other — it reads whatever is in `users/` at run
+  time, never a hardcoded roster.
 - `scripts/backup-blob.sh|mjs`: keeps backing up Blob (audio + article text —
   still needed). ADD `scripts/backup-db.sh` on the VM: nightly
   `pg_dump "$SUPABASE_DB_URL"` into the same dated-snapshot scheme, cron'd
