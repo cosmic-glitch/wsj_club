@@ -1,10 +1,15 @@
 import Link from "next/link";
 import { CompletedBy, CompletionsProvider } from "@/components/CompletedBy";
 import HomeAuthBar from "@/components/HomeAuthBar";
+import MoreReadings from "@/components/MoreReadings";
 import TodayTag from "@/components/TodayTag";
 import VoiceQuizStep from "@/components/VoiceQuizStep";
 import VotePoll from "@/components/VotePoll";
 import { type Reading, type Track } from "@/lib/content";
+
+// How many rows the index shows up front; everything older collapses behind
+// the MoreReadings "show more" row at the bottom of the list.
+const VISIBLE_COUNT = 10;
 
 /** "2026-07-08" → "Jul 8" (rendered uppercase — the mockup's "JUL 8"). */
 function dateTag(date: string): string {
@@ -42,6 +47,136 @@ export default function LandingIndex({
 }) {
   const junior = track === "junior";
   const base = junior ? "/junior" : "";
+
+  // One index row. `index` is the reading's absolute position in the full
+  // newest-first list (so the newest-row styling can never land on a row
+  // revealed from the collapsed tail).
+  const renderRow = (r: Reading, index: number) => {
+    // The newest reading gets the yellow row + bigger title; the
+    // TODAY chip appears only when its date is actually today
+    // (checked client-side in TodayTag). While a vote poll is live
+    // (a preceding .vote-live sibling exists), the poll row IS the
+    // highlighted "today" entry, so the newest reading's yellow/size
+    // are demoted back to a normal row via sibling-selector variants.
+    const newest = index === 0;
+
+    // One set of links per source. A source with an articlePageUrl
+    // (our served responsive HTML page — every new day) gets a single
+    // "ARTICLE" button; historical sources without one keep the
+    // legacy "WEB"/"PDF" pair. Multi-article days number each set.
+    const sources =
+      r.articles && r.articles.length > 0
+        ? r.articles
+        : [
+            {
+              articleUrl: r.articleUrl ?? "#",
+              pdfUrl: r.pdfUrl,
+              articlePageUrl: r.articlePageUrl,
+            },
+          ];
+    const single = !(r.articles && r.articles.length > 0);
+
+    return (
+      <li
+        key={r.date}
+        className={`group grid grid-cols-1 gap-y-[6px] border-b-2 border-[#0a0a0a] px-3.5 py-3 last:border-b-0 hover:bg-[#0a0a0a] hover:text-white min-[681px]:grid-cols-[112px_1fr_max-content] min-[681px]:items-center min-[681px]:gap-4 min-[681px]:px-4 ${
+          newest ? "bg-[#ffe600] [.vote-live~&]:bg-transparent" : ""
+        }`}
+      >
+        <span
+          className={`whitespace-nowrap text-xs font-bold uppercase tracking-[.06em] max-[680px]:flex max-[680px]:items-center ${
+            newest ? "group-hover:text-[#ffe600]" : ""
+          }`}
+        >
+          {dateTag(r.date)}
+          {newest && <TodayTag date={r.date} />}
+          {/* Mobile home of the completed-count: RIGHT-ALIGNED on
+              the date line (ml-auto in the mobile-only flex row) so
+              it doesn't crowd the date + TODAY chip; the action bar
+              has no slack at all (see CompletedBy). */}
+          <CompletedBy
+            date={r.date}
+            className="ml-auto pl-2 min-[681px]:hidden"
+          />
+        </span>
+
+        {/* Title in the readable sans — sentence-length text reads
+            badly in the mono UI face; the label/button layer stays
+            mono (the chip below opts back in). */}
+        <span
+          className={`min-w-0 font-sans font-bold leading-[1.35] tracking-[-.01em] ${
+            newest
+              ? "text-[19px] group-hover:text-[#ffe600] [.vote-live~li_&]:text-[14.5px]"
+              : "text-[14.5px]"
+          }`}
+        >
+          {r.title}
+          {/* The day's article was chosen by the club's vote. */}
+          {r.clubPick && (
+            <span className="ml-2 inline-block whitespace-nowrap border-2 border-[#0a0a0a] px-[5px] py-[1px] align-[2px] font-mono text-[9px] font-bold uppercase tracking-[.14em] group-hover:border-white group-hover:text-white">
+              Club pick
+            </span>
+          )}
+        </span>
+
+        <span className="flex flex-wrap gap-[6px] min-[681px]:flex-nowrap">
+          {sources.map((a, i) =>
+            a.articlePageUrl ? (
+              // Our own responsive article page — reflows on phones
+              // (the PDF never did), so it replaces the Web + PDF
+              // pair with one button.
+              <a
+                key={a.articleUrl}
+                href={a.articlePageUrl}
+                className={btn}
+              >
+                {single ? "Article" : `Article ${i + 1}`}
+              </a>
+            ) : a.pdfUrl ? (
+              // Legacy pre-article-page day: the original Web + PDF
+              // button pair, untouched.
+              <span key={a.articleUrl} className="contents">
+                <a href={a.articleUrl} className={btn}>
+                  {single ? "Web" : `Web ${i + 1}`}
+                </a>
+                <a href={a.pdfUrl} className={btn}>
+                  {single ? "PDF" : `PDF ${i + 1}`}
+                </a>
+              </span>
+            ) : (
+              // Open web article (no paywall): no article page of our
+              // own — the ARTICLE button links straight to the
+              // original.
+              <a key={a.articleUrl} href={a.articleUrl} className={btn}>
+                {single ? "Article" : `Article ${i + 1}`}
+              </a>
+            ),
+          )}
+          <Link href={`${base}/reading/${r.date}`} className={btn}>
+            Handout
+          </Link>
+          {/* The voice-quiz launcher — full behavior (login gate,
+              resume probe/chooser) lives in VoiceQuiz; only the
+              visible button is restyled to match the others. */}
+          {r.voiceQuiz && (
+            <VoiceQuizStep date={r.date} track={track} className={btn} />
+          )}
+          {/* Desktop home of the completed-count: the slack right
+              of the AI QUIZ button (kept off the title, which it
+              polluted; see CompletedBy). */}
+          <CompletedBy
+            date={r.date}
+            className="hidden self-center min-[681px]:inline"
+          />
+        </span>
+      </li>
+    );
+  };
+
+  // Only the newest VISIBLE_COUNT rows render up front; the tail is still
+  // server-rendered but stays collapsed behind the "show more" row.
+  const upfront = readings.slice(0, VISIBLE_COUNT);
+  const older = readings.slice(VISIBLE_COUNT);
 
   return (
     // Full-bleed breakout of the site-wide max-w-3xl column (the same
@@ -110,127 +245,12 @@ export default function LandingIndex({
                 the [.vote-live~&] variants below key off to demote the
                 previous newest row. */}
             <VotePoll track={track} />
-            {readings.map((r, index) => {
-              // The newest reading gets the yellow row + bigger title; the
-              // TODAY chip appears only when its date is actually today
-              // (checked client-side in TodayTag). While a vote poll is live
-              // (a preceding .vote-live sibling exists), the poll row IS the
-              // highlighted "today" entry, so the newest reading's yellow/size
-              // are demoted back to a normal row via sibling-selector variants.
-              const newest = index === 0;
-
-              // One set of links per source. A source with an articlePageUrl
-              // (our served responsive HTML page — every new day) gets a single
-              // "ARTICLE" button; historical sources without one keep the
-              // legacy "WEB"/"PDF" pair. Multi-article days number each set.
-              const sources =
-                r.articles && r.articles.length > 0
-                  ? r.articles
-                  : [
-                      {
-                        articleUrl: r.articleUrl ?? "#",
-                        pdfUrl: r.pdfUrl,
-                        articlePageUrl: r.articlePageUrl,
-                      },
-                    ];
-              const single = !(r.articles && r.articles.length > 0);
-
-              return (
-                <li
-                  key={r.date}
-                  className={`group grid grid-cols-1 gap-y-[6px] border-b-2 border-[#0a0a0a] px-3.5 py-3 last:border-b-0 hover:bg-[#0a0a0a] hover:text-white min-[681px]:grid-cols-[112px_1fr_max-content] min-[681px]:items-center min-[681px]:gap-4 min-[681px]:px-4 ${
-                    newest ? "bg-[#ffe600] [.vote-live~&]:bg-transparent" : ""
-                  }`}
-                >
-                  <span
-                    className={`whitespace-nowrap text-xs font-bold uppercase tracking-[.06em] max-[680px]:flex max-[680px]:items-center ${
-                      newest ? "group-hover:text-[#ffe600]" : ""
-                    }`}
-                  >
-                    {dateTag(r.date)}
-                    {newest && <TodayTag date={r.date} />}
-                    {/* Mobile home of the completed-count: RIGHT-ALIGNED on
-                        the date line (ml-auto in the mobile-only flex row) so
-                        it doesn't crowd the date + TODAY chip; the action bar
-                        has no slack at all (see CompletedBy). */}
-                    <CompletedBy
-                      date={r.date}
-                      className="ml-auto pl-2 min-[681px]:hidden"
-                    />
-                  </span>
-
-                  {/* Title in the readable sans — sentence-length text reads
-                      badly in the mono UI face; the label/button layer stays
-                      mono (the chip below opts back in). */}
-                  <span
-                    className={`min-w-0 font-sans font-bold leading-[1.35] tracking-[-.01em] ${
-                      newest
-                        ? "text-[19px] group-hover:text-[#ffe600] [.vote-live~li_&]:text-[14.5px]"
-                        : "text-[14.5px]"
-                    }`}
-                  >
-                    {r.title}
-                    {/* The day's article was chosen by the club's vote. */}
-                    {r.clubPick && (
-                      <span className="ml-2 inline-block whitespace-nowrap border-2 border-[#0a0a0a] px-[5px] py-[1px] align-[2px] font-mono text-[9px] font-bold uppercase tracking-[.14em] group-hover:border-white group-hover:text-white">
-                        Club pick
-                      </span>
-                    )}
-                  </span>
-
-                  <span className="flex flex-wrap gap-[6px] min-[681px]:flex-nowrap">
-                    {sources.map((a, i) =>
-                      a.articlePageUrl ? (
-                        // Our own responsive article page — reflows on phones
-                        // (the PDF never did), so it replaces the Web + PDF
-                        // pair with one button.
-                        <a
-                          key={a.articleUrl}
-                          href={a.articlePageUrl}
-                          className={btn}
-                        >
-                          {single ? "Article" : `Article ${i + 1}`}
-                        </a>
-                      ) : a.pdfUrl ? (
-                        // Legacy pre-article-page day: the original Web + PDF
-                        // button pair, untouched.
-                        <span key={a.articleUrl} className="contents">
-                          <a href={a.articleUrl} className={btn}>
-                            {single ? "Web" : `Web ${i + 1}`}
-                          </a>
-                          <a href={a.pdfUrl} className={btn}>
-                            {single ? "PDF" : `PDF ${i + 1}`}
-                          </a>
-                        </span>
-                      ) : (
-                        // Open web article (no paywall): no article page of our
-                        // own — the ARTICLE button links straight to the
-                        // original.
-                        <a key={a.articleUrl} href={a.articleUrl} className={btn}>
-                          {single ? "Article" : `Article ${i + 1}`}
-                        </a>
-                      ),
-                    )}
-                    <Link href={`${base}/reading/${r.date}`} className={btn}>
-                      Handout
-                    </Link>
-                    {/* The voice-quiz launcher — full behavior (login gate,
-                        resume probe/chooser) lives in VoiceQuiz; only the
-                        visible button is restyled to match the others. */}
-                    {r.voiceQuiz && (
-                      <VoiceQuizStep date={r.date} track={track} className={btn} />
-                    )}
-                    {/* Desktop home of the completed-count: the slack right
-                        of the AI QUIZ button (kept off the title, which it
-                        polluted; see CompletedBy). */}
-                    <CompletedBy
-                      date={r.date}
-                      className="hidden self-center min-[681px]:inline"
-                    />
-                  </span>
-                </li>
-              );
-            })}
+            {upfront.map(renderRow)}
+            {older.length > 0 && (
+              <MoreReadings count={older.length}>
+                {older.map((r, i) => renderRow(r, i + VISIBLE_COUNT))}
+              </MoreReadings>
+            )}
           </ul>
           </CompletionsProvider>
         )}
