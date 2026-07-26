@@ -5,6 +5,12 @@ plan first landed are content/authoring-side (the 07-25 reading; article pages
 now captured for open sources too; no-byline titles) and don't touch the data
 layer — nothing here changes because of them._
 
+_Revised 2026-07-25 (owner): the rollout is now a **dual-write shadow
+migration** — Blob stays the production store while the DB mirrors it in real
+time, reads flip only after a verified soak, and Blob writes stop last. The
+old plan's hard cutover for sessions (one deploy swapping writers + readers)
+is superseded._
+
 ## Why
 
 The app uses Vercel Blob as a database, and the seams are widening as it grows
@@ -165,6 +171,11 @@ Notes:
 
 ## Code changes, module by module
 
+_This section describes the **end state** (after Phase 4). The rollout stages
+it: Phase 1 adds a shadow DB write **alongside** each module's existing Blob
+I/O, Phase 3 flips the read paths, and only Phase 4 deletes the Blob code
+described as "DELETE" below._
+
 **`lib/db.ts`** (new): the shared service-key client.
 
 **`lib/users.ts`**: same exported API (`getUser`, `verifyLogin`,
@@ -247,9 +258,13 @@ cache-busting dies.
   `pg_dump "$SUPABASE_DB_URL"` into the same dated-snapshot scheme, cron'd
   next to the blob backup. This also keeps the free project from idling.
 
-## Backfill (one-time scripts, run per phase)
+## Backfill + verification scripts
 
-Idempotent by construction — safe to re-run:
+Idempotent by construction — safe to re-run. During the shadow period the
+backfill doubles as the **reconciler**: Blob is authoritative until Phase 4,
+so re-running it after fixing a shadow-write bug trues the DB up (an
+overwrite from Blob is always safe — the Blob copy is never staler than its
+DB shadow, since every write lands in Blob first):
 
 1. **Users** (`scripts/migrate-users-to-db.mjs`): read `users/*.json` blobs →
    upsert rows (`on conflict (username) do update`), mapping
@@ -262,49 +277,87 @@ Idempotent by construction — safe to re-run:
    slots → upsert into `quiz_slots`. ~120 rows, seconds. Blob records are
    **left in place** as a read-only archive (they're in the VM backups too);
    nothing deletes them.
-3. **Votes** (optional, Phase 3): backfill old polls/ballots for the
-   participation record, or let history live in the Blob archive and start
-   fresh — owner's call; the site only ever reads the newest poll.
+3. **Votes** (optional): backfill old polls/ballots for the participation
+   record, or let history live in the Blob archive and start fresh — owner's
+   call; the site only ever reads the newest poll. (The CURRENT poll, if one
+   is live when Phase 1 ships, must be backfilled so the read-flip doesn't
+   lose it.)
+4. **Diff** (`scripts/diff-blob-db.mjs`, new — the Phase 2 gate): list every
+   structured blob (`users/`, `quiz-sessions/**/*.json`, `votes/`), fetch its
+   DB twin (sessions matched by `source_blob`, slots by their PK, users/polls/
+   ballots by key), and compare field-by-field; report missing rows, orphan
+   rows, and divergent fields. A clean run taken while the site is in active
+   use is what proves the shadow write path.
 
-## Rollout order (each phase independently shippable + revertible)
+## Rollout order (dual-write shadow → verify → flip reads → retire Blob)
+
+The principle: **Blob stays the production store until the DB has proven
+itself in real time.** The site never goes offline and no deploy window
+matters — students can be mid-quiz through every phase. Every step before
+Phase 4 is trivially revertible because Blob is still being written
+throughout; Phase 4 runs only after the DB has been the read path for days.
 
 **Phase 0 — provision.** Project, env vars, deps, `lib/db.ts`, `0001_init.sql`.
 No behavior change; deployable immediately.
 
-**Phase 1 — users.** Backfill users → swap `lib/users.ts` internals → verify
-on a preview deploy (login each role, add/rename/reset a test student) → prod.
-Fallback: the `AUTH_USERS` env fallback in `lib/auth.ts` already covers a
-missing user mid-rollout (same transitional design as the original Blob
-migration), and reverting the commit restores Blob reads (user blobs stay
-current until Phase 4 — Phase 1 keeps `lib/users.ts` writes dual-target:
-DB primary + best-effort blob write, dropped in Phase 4).
+**Phase 1 — shadow writes + backfill (the DB becomes a live mirror).** Every
+writer of structured data dual-writes: the Blob write stays EXACTLY as today
+(still what production reads), plus a **best-effort DB write** — wrapped so a
+DB failure can never break a login, a checkpoint, a save, or a vote; it just
+`console.error`s (drift is caught by the diff + healed by the reconciler, so
+best-effort is safe). One deploy covers all the stores at once:
 
-**Phase 2 — sessions + slots** (the perf payoff). One deploy swaps writers
-(`quiz-report`, `quiz-progress`) and readers (`lib/sessions.ts`,
-`quiz-session` GET/DELETE, `quiz-dates`, AdminSessions/DeleteSessionButton)
-together — dual-running readers over two stores is more complex than the
-brief window is worth at this scale. Order: run backfill → deploy → **re-run
-backfill** (catches any session saved between the two; `source_blob` upsert
-makes it a no-op otherwise). Verify on preview first: full quiz → End (report
-card, Scores row, Details modal, recording playback), pause → Continue,
-Start-over archive, owner Delete, student self-view scoping, junior track.
-An in-flight quiz spanning the deploy at worst loses its slot continuity
-(checkpoints land in the new store on the next answer) — acceptable; announce
-the deploy window in the group chat. Fallback: revert the deploy; Blob
-records are still there and still being backed up.
+- **users** — create / rename / reset / deactivate upsert the row too
+  (`lib/users.ts` writes grow the shadow; reads untouched).
+- **terminal sessions** — `quiz-report` also inserts into `quiz_sessions`,
+  stamping `source_blob` with the blob pathname so every DB row is matched to
+  its Blob twin (same key the backfill uses — a row is written once, by
+  whichever runs first).
+- **slots** — `quiz-progress` POST also upserts `quiz_slots`; the terminal
+  save and DELETE (start-over archive) delete/archive the DB slot too.
+- **owner Delete** — `quiz-session` DELETE (still keyed by blob URL) also
+  deletes the matching DB row (by `source_blob`), so a deletion can't
+  resurrect at the read-flip.
+- **votes** — `open-vote.mjs` writes the poll row too; the vote POST upserts
+  the ballot row too.
 
-**Phase 3 — votes.** Swap the vote route + the two scripts; next poll opens in
-DB. No overlap concerns (polls are short-lived and owner-initiated) — do it
-between polls.
+Then run the one-time backfill (users + sessions + slots + the live poll).
+From here the DB holds all history AND tracks production in real time.
 
-**Phase 4 — cleanup.** Remove: blob read/write paths for users/sessions/votes
-(incl. Phase 1's dual-write), every `?v=` buster and CDN-staleness comment for
-those stores, `AUTH_USERS`/`ADMIN_USERS` env fallback in `lib/auth.ts` (after
-confirming all logins work from DB), `scripts/seed-users.mjs`. Update the
-backup cron (add `backup-db.sh`). Rewrite the affected CLAUDE.md sections
-(Architecture, Voice quiz storage notes, Daily vote storage, Deploy env vars,
-Blob backups) — the store-specific workaround lore (uploadedAt keying,
-list()-lag numbers, slot cache-busting) becomes historical and comes out.
+**Phase 2 — verify the mirror (~a day of real use).** Run
+`scripts/diff-blob-db.mjs` (see Backfill + verification) a few times across a
+normal day of quizzing — including after today's sessions land. Drift found →
+fix the shadow-write bug, re-run the backfill (the idempotent upserts double
+as the reconciler; Blob is authoritative, so overwriting from it is always
+safe), diff again. **Gate: a clean diff taken while the site is in active
+use.** No deploy in this phase.
+
+**Phase 3 — flip reads.** One deploy swaps the READ paths to the DB:
+`lib/users.ts` lookups, `lib/sessions.ts` (`loadSessions` → the slim select),
+`readSlot`→`getSlot` in the progress GET, `quiz-dates`, the vote GET, plus the
+reader-shaped code that rides along (`quiz-session` grows GET `?id=`,
+AdminSessions/DeleteSessionButton switch from `blobUrl` to `id`). Writers
+still dual-write, so Blob remains current — **reverting this deploy is a
+zero-data-loss rollback**, and an in-flight quiz spanning the deploy keeps
+its slot continuity (the slot is already in both stores). Verify on preview
+first: full quiz → End (report card, Scores row, Details modal, recording
+playback), pause → Continue, Start-over archive, owner Delete, student
+self-view scoping, junior track, vote cast/change/tally. iOS walk-through
+included.
+
+**Phase 4 — retire the Blob copies (after Phase 3 soaks a few days).**
+Remove: the Blob write paths for users/sessions/slots/votes (the shadow
+scaffolding — DB writes stop being "shadow" and become the only writes; they
+graduate from best-effort to error-surfacing), every `?v=` buster and
+CDN-staleness comment for those stores, `AUTH_USERS`/`ADMIN_USERS` env
+fallback in `lib/auth.ts` (after confirming all logins work from DB),
+`scripts/seed-users.mjs`, `scripts/diff-blob-db.mjs`. Existing blob records
+stay in place as a read-only archive (and in the VM backups) — nothing
+deletes them. Update the backup cron (add `backup-db.sh`). Rewrite the
+affected CLAUDE.md sections (Architecture, Voice quiz storage notes, Daily
+vote storage, Deploy env vars, Blob backups) — the store-specific workaround
+lore (uploadedAt keying, list()-lag numbers, slot cache-busting) becomes
+historical and comes out.
 
 ## Decisions & risks
 
@@ -318,11 +371,23 @@ list()-lag numbers, slot cache-busting) becomes historical and comes out.
   unguessable blob URLs (unchanged posture — revisit later if needed).
 - **Free-tier pause**: defused by the nightly `pg_dump` cron; worst case a
   paused project un-pauses on first request with a cold-start delay.
+- **Shadow writes are best-effort by design.** A partial failure (Blob ok,
+  DB errored) is drift, not data loss — Blob is authoritative until Phase 4,
+  the diff script surfaces it, and the idempotent backfill heals it. The
+  alternative (fail the request when the shadow write fails) would let a DB
+  hiccup break a live quiz for zero benefit during the mirror period.
+- **The shadow period proves the write path, not the read path.** The new
+  readers only run when Phase 3 flips them — which is why the full preview-
+  deploy verification checklist stays on Phase 3 regardless of how clean the
+  Phase 2 diffs were.
 - **What stays deliberately unsolved**: the client-side checkpoint-drain in
   `VoiceQuiz.finalizeQuiz` (an HTTP race, not a storage one — a late-landing
   checkpoint could still re-upsert a deleted slot; the drain already handles
   it); Blob-hosted audio durability (covered by the VM backup).
-- **Effort**: Phase 0+1 ≈ a short session; Phase 2 is the bulk (routes +
-  components + backfill + preview verification, iOS walk-through included);
-  Phases 3–4 are small. Nothing here touches content authoring, the daily
+- **Effort**: Phase 0 ≈ an hour; Phase 1 is the bulk of the writing (shadow
+  writes across five stores + backfill + diff script); Phase 2 is calendar
+  time, not work; Phase 3 is the reader swap + the full preview verification
+  (iOS walk-through included); Phase 4 is deletion + docs. One more deploy
+  than a hard cutover, in exchange for every step being revertible with the
+  site live throughout. Nothing here touches content authoring, the daily
   skills, or the static pages.
