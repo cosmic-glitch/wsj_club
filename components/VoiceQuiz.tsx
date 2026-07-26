@@ -25,8 +25,12 @@ type AudioSegment = {
 
 // The graded report card the student sees at the end — the same shape the
 // parent reviews on /admin (minus the private transcript + recording).
+// `feedback` (2026-07-26 →) is the teacher-voice prose report card; the
+// summary/strengths/gaps fields are the legacy shape, kept as a render
+// fallback (e.g. a response from a not-yet-redeployed server).
 type Report = {
   score?: string;
+  feedback?: string;
   summary?: string;
   strengths?: string[];
   gaps?: string[];
@@ -2443,11 +2447,22 @@ export default function VoiceQuiz({
                       </p>
                     )}
 
-                    {report?.summary && (
-                      <p className="mt-2 text-sm text-stone-600">{report.summary}</p>
+                    {report?.feedback ? (
+                      <div className="mt-2 space-y-2.5">
+                        {report.feedback.split(/\n{2,}/).map((para, j) => (
+                          <p key={j} className="text-sm text-stone-700">
+                            {para}
+                          </p>
+                        ))}
+                      </div>
+                    ) : (
+                      report?.summary && (
+                        <p className="mt-2 text-sm text-stone-600">{report.summary}</p>
+                      )
                     )}
 
                     {report &&
+                      !report.feedback &&
                       ((report.strengths && report.strengths.length > 0) ||
                         (report.gaps && report.gaps.length > 0)) && (
                         <div className="mt-4 grid gap-3 sm:grid-cols-2">

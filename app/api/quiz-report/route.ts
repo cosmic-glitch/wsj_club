@@ -21,7 +21,7 @@ import {
   type Turn,
 } from "@/lib/session-io";
 
-const REPORT_MODEL = process.env.REPORT_MODEL || "gpt-5.5";
+const REPORT_MODEL = process.env.REPORT_MODEL || "gpt-5.6-luna";
 
 function transcriptToText(transcript: Turn[]): string {
   return transcript
@@ -113,24 +113,14 @@ export async function POST(request: Request) {
     // this entry anyway. The transcript + recording are what the parent reviews.
     report = {
       score: "—",
-      summary:
+      feedback:
         "Cancelled — the student ended this quiz early, so it wasn't graded.",
-      strengths: [],
-      gaps: [],
-      keyIdeas: "Not assessed — the quiz was cancelled.",
-      vocab: "Not assessed — the quiz was cancelled.",
-      concepts: "Not assessed — the quiz was cancelled.",
     };
   } else if (studentTurns.length === 0) {
     report = {
       score: "—",
-      summary:
-        "No answers to grade — the student didn't respond during this session (it looks like the quiz ended before they spoke).",
-      strengths: [],
-      gaps: ["Re-take the quiz and answer the tutor's questions out loud."],
-      keyIdeas: "Not assessed — the student didn't speak.",
-      vocab: "Not assessed — the student didn't speak.",
-      concepts: "Not assessed — the student didn't speak.",
+      feedback:
+        "No answers to grade — the student didn't respond during this session (it looks like the quiz ended before they spoke). Re-take the quiz and answer the tutor's questions out loud.",
     };
   } else if (partial) {
     // Grade only on End: an incomplete attempt is never sent to the model.

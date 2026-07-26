@@ -8,6 +8,11 @@ import SessionAudio from "@/components/SessionAudio";
 export type Turn = { role: "student" | "tutor"; text: string };
 export type Report = {
   score?: string;
+  // The teacher-voice prose report card (2026-07-26 →): a few short paragraphs
+  // (what they covered, then at most two meaty corrections taught in place).
+  feedback?: string;
+  // Legacy shape — records saved before the feedback format (no backfill);
+  // the modal still renders these.
   summary?: string;
   strengths?: string[];
   gaps?: string[];
@@ -222,7 +227,8 @@ export default function AdminSessions({
   const hasFeedback = (r: Report | null) =>
     !!(
       r &&
-      (r.summary ||
+      (r.feedback ||
+        r.summary ||
         (r.strengths && r.strengths.length > 0) ||
         (r.gaps && r.gaps.length > 0))
     );
@@ -529,12 +535,23 @@ export default function AdminSessions({
                   <p className="text-sm text-stone-400">Loading…</p>
                 ) : hasFeedback(sessionDetail?.report ?? null) ? (
                   <>
-                    {sessionDetail?.report?.summary && (
+                    {sessionDetail?.report?.feedback ? (
+                      <div className="space-y-2.5">
+                        {sessionDetail.report.feedback
+                          .split(/\n{2,}/)
+                          .map((para, j) => (
+                            <p key={j} className="text-sm text-stone-700">
+                              {para}
+                            </p>
+                          ))}
+                      </div>
+                    ) : sessionDetail?.report?.summary ? (
                       <p className="text-sm text-stone-600">
                         {sessionDetail.report.summary}
                       </p>
-                    )}
-                    {((sessionDetail?.report?.strengths &&
+                    ) : null}
+                    {!sessionDetail?.report?.feedback &&
+                      ((sessionDetail?.report?.strengths &&
                       sessionDetail.report.strengths.length > 0) ||
                       (sessionDetail?.report?.gaps &&
                         sessionDetail.report.gaps.length > 0)) && (

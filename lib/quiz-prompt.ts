@@ -298,7 +298,17 @@ object and never repeat it — in exactly this shape:
 `.trim();
 }
 
-/** The prompt used to turn a finished transcript into a report card. */
+/**
+ * The prompt used to turn a finished transcript into a report card.
+ *
+ * Output shape (2026-07-26 →): `{score, feedback}` — the feedback is a few
+ * short teacher-voice paragraphs (what they covered, then at most TWO meaty
+ * corrections taught in place), replacing the old dry
+ * summary/strengths/gaps/keyIdeas/vocab/concepts fields. The scoring sections
+ * (setup, judging principles, calibration anchors) are unchanged from the old
+ * prompt, so scores stay on the same calibrated scale. Older saved records
+ * keep the legacy shape — no backfill; both UIs render both shapes.
+ */
 export function buildReportPrompt(
   reading: Reading,
   transcript: string,
@@ -385,15 +395,48 @@ HOW TO JUDGE:
 
 ${calibrationSection}OUTPUT — return a JSON object with exactly these fields:
 - "score": a string like "7/10" giving your overall sense of their understanding.
-- "summary": 1–2 sentences summarizing how they did overall.
-- "strengths": an array of short strings — things they understood well.
-- "gaps": an array of short strings — things they got wrong, missed, or should review.
-- "keyIdeas": one sentence on how well they grasped the article's key ideas.
-- "vocab": one sentence on how they did on the vocabulary words.${
-    hasConcepts
-      ? `\n- "concepts": one sentence on how they did on the concepts.`
-      : ""
-  }
+- "feedback": the report card itself, as ONE string — a short piece of prose the
+  student will read, written the way a good teacher talks to a student after a
+  quiz: warm, direct, and specific, in the second person ("you"). Shape it as two
+  or three short paragraphs separated by blank lines, about 120–180 words in
+  total — readable in under a minute:
+  1. FIRST, in one compact paragraph, tell them what they genuinely covered well —
+     the real substance they got, named specifically but briefly. No generic
+     praise, and no exhaustive list; capture it the way a teacher would sum it up.
+  2. THEN, ONLY IF the transcript truly contains one: the thing that matters
+     most — a genuine misunderstanding to correct, or a central idea of the
+     article they missed. HARD LIMIT: at most TWO corrections, and prefer ONE or
+     NONE — never three. The bar for a correction is HIGH: it must concern the
+     article's central argument or one of its core concepts — something a teacher
+     would put on the board — and getting it right must genuinely change the
+     student's understanding of the article. Things that do NOT qualify, ever:
+     a matter of degree or quantity (e.g. the student said "most" where the
+     article said "about half"); a secondary example or side detail; a slightly
+     imprecise wording of an idea the student otherwise clearly understood; and
+     anything they simply didn't mention that isn't a central idea. Drop all of
+     those silently — when in doubt whether something is big enough, it isn't;
+     leave it out. NEVER force a correction — corrections are OPTIONAL, and a
+     report with no correction at all is a normal, expected outcome, not a
+     failure to do your job. If the student got the important things right, SAY
+     that plainly ("you generally got the article right") and spend a sentence or
+     two deepening or extending one idea they handled well instead. When you DO
+     make a correction, be DIRECT about what it is before you correct it: first
+     say plainly what THEY said that was wrong ("You said ..., but actually ...")
+     or what they missed ("You missed the article's main argument, that ..."),
+     and only then briefly TEACH the correct idea in a sentence or two. Never
+     state a correction as a free-floating fact the student can't connect to
+     their own answer — every correction must name the specific mistake or
+     omission it is fixing.
+  3. Optionally end with a single warm, encouraging sentence.
+  This feedback is the LAST WORD on this reading — the student will never return
+  to the article or the handout. So NEVER tell them to review, revisit, re-read,
+  or "look at" anything ("review that section", "revisit this concept" are
+  forbidden endings); instead, whatever they need to know must be taught right
+  here, completely, in your own words.
+  Mention the vocabulary${hasConcepts ? " or concepts" : ""} only if something
+  stands out — a word they clearly misunderstood even after coaching, or an
+  unusually sharp answer; never walk through them item by item.
+  Plain prose only: no bullet points, no numbered lists, no headings, no markdown.
 
 ${articleSection}===== BEGIN TRANSCRIPT (grade this) =====
 ${transcript}
