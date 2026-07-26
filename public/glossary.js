@@ -4,8 +4,12 @@
    /articles/junior/2026-07-15.html -> /glossaries/junior/2026-07-15.json).
    No JSON for the page -> silent no-op, the article renders untouched.
 
-   Entry shape: { k, t, kind, pron?, forms[], text }
+   Entry shape: { k, t, kind, pron?, forms[], text, audio? }
    kind: "vocab" (the day's handout word, yellow) | "word" | "phrase" | "name".
+   audio: true when a pronunciation clip exists at
+   /audio/<date>/gloss/<k>.mp3 (junior keeps its junior/ segment; multi-article
+   pages share the date's dir) — written by scripts/gen-glossary-audio.mjs.
+   The sheet then shows a speaker button next to the term; no flag, no button.
    The first occurrence of each entry gets a dotted mark (vocab: yellow
    highlight); EVERY occurrence is tappable via caret hit-testing, and a
    tap on a word with no entry gets a small toast. Kept ES5-ish for older
@@ -15,6 +19,8 @@
 
 var m=location.pathname.match(/^\/articles\/(.+)\.html$/);
 if(!m)return;
+// Pronunciation clips live under the DATE (multi-article -1/-2 pages share it).
+var AUDIO_BASE="/audio/"+m[1].replace(/^((?:junior\/)?\d{4}-\d{2}-\d{2}).*$/,"$1")+"/gloss/";
 fetch("/glossaries/"+m[1]+".json").then(function(r){
   if(!r.ok)throw new Error("no glossary");
   return r.json();
@@ -87,15 +93,36 @@ function chipFor(e){
   return'<span class="gs-chip">Word</span>';
 }
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+/* the handout PronounceButton's speaker glyph */
+var SPEAKER_SVG='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">'+
+  '<path d="M11 5 6 9H3v6h3l5 4V5z"></path>'+
+  '<path d="M15.5 8.5a4 4 0 0 1 0 7M18 6a7 7 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>';
+var hearAudio=null;
+function stopHear(){
+  if(hearAudio){try{hearAudio.pause();}catch(err){}hearAudio=null;}
+  var b=sheet&&sheet.querySelector(".gs-hear.on");
+  if(b)b.classList.remove("on");
+}
 function openSheet(k){
   var e=byKey[k];if(!e)return;
+  stopHear();
   var h=chipFor(e);
-  h+='<div class="gs-term">'+esc(e.t)+(e.pron?'<span class="gs-pron">'+esc(e.pron)+"</span>":"")+"</div>";
+  h+='<div class="gs-term">'+esc(e.t)+(e.pron?'<span class="gs-pron">'+esc(e.pron)+"</span>":"")+
+    (e.audio?'<button class="gs-hear" title="Hear it" aria-label="Hear &quot;'+esc(e.t)+'&quot; pronounced">'+SPEAKER_SVG+"</button>":"")+"</div>";
   String(e.text).split("\n\n").forEach(function(para){
     h+='<p class="gs-text">'+esc(para)+"</p>";
   });
   sheet.innerHTML='<div class="gs-inner"><button class="gs-x" aria-label="Close">✕</button>'+h+"</div>";
   sheet.querySelector(".gs-x").addEventListener("click",closeSheet);
+  var hb=sheet.querySelector(".gs-hear");
+  if(hb)hb.addEventListener("click",function(){
+    stopHear();
+    var a=new Audio(AUDIO_BASE+e.k+".mp3");
+    hearAudio=a;
+    hb.classList.add("on");
+    a.onended=a.onerror=function(){hb.classList.remove("on");if(hearAudio===a)hearAudio=null;};
+    a.play().catch(function(){hb.classList.remove("on");if(hearAudio===a)hearAudio=null;});
+  });
   lastFocus=document.activeElement;
   backdrop.style.display="block";sheet.style.display="block";
   document.body.style.overflow="hidden";
@@ -104,6 +131,7 @@ function openSheet(k){
 }
 function closeSheet(){
   if(sheet.style.display==="none")return;
+  stopHear();
   backdrop.classList.remove("on");sheet.classList.remove("on");
   document.body.style.overflow="";
   setTimeout(function(){backdrop.style.display="none";sheet.style.display="none";},200);

@@ -13,6 +13,11 @@ h1 .gw{text-decoration-color:#c0c0c0}
 .gs-chip--vocab{background:#ffe600;color:#0a0a0a}
 .gs-term{font-family:Georgia,'Times New Roman',serif;font-size:24px;font-weight:700;line-height:1.2;margin:10px 44px 10px 0}
 .gs-pron{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:#555;font-weight:400;margin-left:8px;white-space:nowrap}
+.gs-hear{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:2px solid #0a0a0a;background:#fff;color:#0a0a0a;cursor:pointer;padding:0;margin-left:10px;vertical-align:-4px}
+.gs-hear:hover,.gs-hear.on{background:#ffe600}
+.gs-hear:active{transform:translateY(1px)}
+.gs-hear svg{width:14px;height:14px}
+.gs-hear:focus-visible{outline:3px solid #ffe600;outline-offset:2px}
 .gs-text{font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.55;margin:0 0 .8em}
 .gs-text:last-child{margin-bottom:0}
 .gs-x{position:absolute;top:12px;right:14px;width:40px;height:40px;border:2px solid #0a0a0a;background:#fff;color:#0a0a0a;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:16px;font-weight:700;line-height:1;cursor:pointer;padding:0}
