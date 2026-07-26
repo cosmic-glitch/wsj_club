@@ -32,15 +32,14 @@ Live: https://wsjclub.vercel.app · Repo: https://github.com/cosmic-glitch/wsj_c
 - `scripts/` — daily-flow CLIs (upload-article-text, gen-pronunciation, gen-glossary-audio, add-glossary-tags, check-glossary, open-vote, check-vote) + admin/ops (add-user, seed-users, hash-password, backup-blob, DB migrations)
 - `.claude/skills/` — the daily workflow (pickers, vote open/check, authoring for both tracks)
 
-## Content rules (editorial policy — not derivable from code)
+## Content rules (invariants for ANY session that touches content)
 
-- A `Reading` = `{ date, title, articleUrl, articlePageUrl, voiceQuiz: true, clubPick?, vocab[], concepts[], quiz[] }`; `articles[]` bundles multi-article days; `pdfUrl` is legacy and unused. Full types in `lib/content.ts`.
-- **vocab** — usually 3 (author-overridable), article-first: `articleQuote` → `inContext` → `meaning` → exactly 2 `examples`, plus `pronunciation` — a plain-English respelling (hyphen syllables, stress in CAPS, e.g. "yoo-BIK-wih-tus"; never IPA).
-- **concepts** — up to 3; fewer is fine and `[]` (vocab-only day) is handled everywhere — never pad. Each is `articleQuote` → ONE unified Feynman-style `meaning`: **name the field the idea belongs to** when obvious (owner rule — "Rent-seeking is one of the big ideas in economics…"), start from intuition with a vivid hook, explain how it works, ground with ≥1 concrete teen-relatable example. Optional `link {url, label}`.
-- **quiz** — exactly 5 four-option questions with explanations.
-- Inline `**bold**`/`*italic*` in authored prose renders via `lib/rich-text.tsx` (parses to React elements, never `dangerouslySetInnerHTML`); `quiz-prompt.ts` strips markers before feeding models/TTS.
-- **No author byline in `title`** — an index-row rule only; attribution in prose, glossaries, and the article page's SOURCE bar is fine and wanted.
+The card recipes, calibration, and counts live in the authoring skills — `.claude/skills/wsj-reading/SKILL.md` (junior: `wsj-reading-junior/`), the single source of truth; read the relevant skill before writing or reshaping a day's content, even by hand. Content types are in `lib/content.ts` (`pdfUrl` is legacy and unused). What must hold everywhere, skill or not:
+
 - **Hard rule: never republish article text.** Link and quote short phrases only. Full text goes to Blob (private, for the tutor) — never into the repo.
+- **No author byline in `title`** — an index-row rule only; attribution in prose, glossaries, and the article page's SOURCE bar is fine and wanted.
+- **Never pad concepts** — up to 3, fewer is fine, and `[]` (vocab-only day) is handled everywhere.
+- Inline `**bold**`/`*italic*` in authored prose renders via `lib/rich-text.tsx` (parses to React elements, never `dangerouslySetInnerHTML`); `quiz-prompt.ts` strips markers before feeding models/TTS.
 
 ## Invariants & gotchas (the load-bearing lessons)
 
