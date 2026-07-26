@@ -15,10 +15,12 @@ import type { Track } from "@/lib/content";
  * list (the AuthProvider lesson: a fetch per row would fire a dozen identical
  * requests).
  *
- * Rendered as an inline tail on the row's TITLE span (after the CLUB PICK
- * chip), not as its own grid cell: on mobile the row is a one-column grid, so
- * a new cell would cost a whole line — inline text just flows into the slack
- * at the end of the title's last line.
+ * Rendered inside the row's ACTION-BAR span, right of the AI QUIZ button —
+ * there's slack there, and it keeps the title clean (it started as a title
+ * tail, which the owner found polluted the title). Not its own grid cell: on
+ * mobile the row is a one-column grid, so a new cell would cost a whole line;
+ * in the bar it shares the buttons' line (wrapping within the bar only on the
+ * narrowest screens).
  */
 
 const CompletionsContext = createContext<Record<string, number> | null>(null);
@@ -59,10 +61,10 @@ export function CompletedBy({ date }: { date: string }) {
   if (!count) return null;
 
   return (
-    // Mono opts back in (label layer) inside the sans title span; muted so it
-    // reads as metadata next to the title, with a hover-inversion variant
-    // matching the row states.
-    <span className="ml-2 whitespace-nowrap font-mono text-[9.5px] font-bold uppercase tracking-[.1em] text-stone-500 group-hover:text-stone-400">
+    // self-center keeps the tiny label vertically centered on the buttons'
+    // line; muted so it reads as metadata next to them, with a
+    // hover-inversion variant matching the row states.
+    <span className="self-center whitespace-nowrap font-mono text-[9.5px] font-bold uppercase tracking-[.1em] text-stone-500 group-hover:text-stone-400">
       Completed by {count}
     </span>
   );

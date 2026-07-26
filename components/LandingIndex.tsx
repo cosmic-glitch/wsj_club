@@ -168,10 +168,6 @@ export default function LandingIndex({
                         Club pick
                       </span>
                     )}
-                    {/* How many have finished the day's AI quiz — an inline
-                        tail so it never costs a mobile row an extra line (see
-                        CompletedBy). */}
-                    <CompletedBy date={r.date} />
                   </span>
 
                   <span className="flex flex-wrap gap-[6px] min-[681px]:flex-nowrap">
@@ -216,6 +212,10 @@ export default function LandingIndex({
                     {r.voiceQuiz && (
                       <VoiceQuizStep date={r.date} track={track} className={btn} />
                     )}
+                    {/* How many have finished the day's AI quiz — sits in the
+                        slack right of the AI QUIZ button (kept off the title,
+                        which it polluted; see CompletedBy). */}
+                    <CompletedBy date={r.date} />
                   </span>
                 </li>
               );
