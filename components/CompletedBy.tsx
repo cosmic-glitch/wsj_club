@@ -15,12 +15,14 @@ import type { Track } from "@/lib/content";
  * list (the AuthProvider lesson: a fetch per row would fire a dozen identical
  * requests).
  *
- * Rendered inside the row's ACTION-BAR span, right of the AI QUIZ button —
- * there's slack there, and it keeps the title clean (it started as a title
- * tail, which the owner found polluted the title). Not its own grid cell: on
- * mobile the row is a one-column grid, so a new cell would cost a whole line;
- * in the bar it shares the buttons' line (wrapping within the bar only on the
- * narrowest screens).
+ * Placement is RESPONSIVE — LandingIndex renders it twice, one visible per
+ * breakpoint: on desktop in the row's action bar right of the AI QUIZ button
+ * (real slack there), on mobile on the DATE line ("JUL 26 · TODAY ·
+ * COMPLETED BY 6") — the phone's action bar has no slack (three buttons ≈ ¾
+ * of the width, so the tag wrapped to its own line, which the owner ruled
+ * out), while the date line is mostly empty. It started as a title tail,
+ * which the owner found polluted the title; never its own grid cell (a new
+ * cell = a whole extra mobile line).
  */
 
 const CompletionsContext = createContext<Record<string, number> | null>(null);
@@ -56,15 +58,23 @@ export function CompletionsProvider({
   );
 }
 
-export function CompletedBy({ date }: { date: string }) {
+export function CompletedBy({
+  date,
+  className = "",
+}: {
+  date: string;
+  className?: string;
+}) {
   const count = useContext(CompletionsContext)?.[date];
   if (!count) return null;
 
   return (
-    // self-center keeps the tiny label vertically centered on the buttons'
-    // line; muted so it reads as metadata next to them, with a
-    // hover-inversion variant matching the row states.
-    <span className="self-center whitespace-nowrap font-mono text-[9.5px] font-bold uppercase tracking-[.1em] text-stone-500 group-hover:text-stone-400">
+    // Muted so it reads as metadata next to the date / buttons, with a
+    // hover-inversion variant matching the row states; the caller's className
+    // carries the per-breakpoint visibility + spacing.
+    <span
+      className={`whitespace-nowrap font-mono text-[9.5px] font-bold uppercase tracking-[.1em] text-stone-500 group-hover:text-stone-400 ${className}`}
+    >
       Completed by {count}
     </span>
   );

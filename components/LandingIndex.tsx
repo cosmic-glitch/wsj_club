@@ -149,6 +149,12 @@ export default function LandingIndex({
                   >
                     {dateTag(r.date)}
                     {newest && <TodayTag date={r.date} />}
+                    {/* Mobile home of the completed-count: the date line has
+                        slack there, the action bar doesn't (see CompletedBy). */}
+                    <CompletedBy
+                      date={r.date}
+                      className="ml-2 min-[681px]:hidden"
+                    />
                   </span>
 
                   {/* Title in the readable sans — sentence-length text reads
@@ -212,10 +218,13 @@ export default function LandingIndex({
                     {r.voiceQuiz && (
                       <VoiceQuizStep date={r.date} track={track} className={btn} />
                     )}
-                    {/* How many have finished the day's AI quiz — sits in the
-                        slack right of the AI QUIZ button (kept off the title,
-                        which it polluted; see CompletedBy). */}
-                    <CompletedBy date={r.date} />
+                    {/* Desktop home of the completed-count: the slack right
+                        of the AI QUIZ button (kept off the title, which it
+                        polluted; see CompletedBy). */}
+                    <CompletedBy
+                      date={r.date}
+                      className="hidden self-center min-[681px]:inline"
+                    />
                   </span>
                 </li>
               );
