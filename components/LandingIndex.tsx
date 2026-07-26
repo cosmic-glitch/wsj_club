@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CompletedBy, CompletionsProvider } from "@/components/CompletedBy";
 import HomeAuthBar from "@/components/HomeAuthBar";
 import TodayTag from "@/components/TodayTag";
 import VoiceQuizStep from "@/components/VoiceQuizStep";
@@ -101,6 +102,7 @@ export default function LandingIndex({
               : "No readings yet. The first one will appear here."}
           </p>
         ) : (
+          <CompletionsProvider track={track}>
           <ul className="mt-[26px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] motion-reduce:animate-none">
             {/* The daily article vote (each track shows its own poll): a
                 client row that pops in as the FIRST entry while a poll is live
@@ -166,6 +168,10 @@ export default function LandingIndex({
                         Club pick
                       </span>
                     )}
+                    {/* Who has finished the day's AI quiz (logged-in only) —
+                        an inline tail so it never costs a mobile row an extra
+                        line (see CompletedBy). */}
+                    <CompletedBy date={r.date} />
                   </span>
 
                   <span className="flex flex-wrap gap-[6px] min-[681px]:flex-nowrap">
@@ -215,6 +221,7 @@ export default function LandingIndex({
               );
             })}
           </ul>
+          </CompletionsProvider>
         )}
 
         <p className="mt-5 text-center text-[11px] uppercase tracking-[.14em]">
