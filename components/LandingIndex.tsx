@@ -168,9 +168,9 @@ export default function LandingIndex({
                         Club pick
                       </span>
                     )}
-                    {/* Who has finished the day's AI quiz (logged-in only) —
-                        an inline tail so it never costs a mobile row an extra
-                        line (see CompletedBy). */}
+                    {/* How many have finished the day's AI quiz — an inline
+                        tail so it never costs a mobile row an extra line (see
+                        CompletedBy). */}
                     <CompletedBy date={r.date} />
                   </span>
 

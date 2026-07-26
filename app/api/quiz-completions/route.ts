@@ -1,23 +1,19 @@
-import { currentUser } from "@/lib/auth";
 import { loadSessions } from "@/lib/sessions";
 import type { Track } from "@/lib/content";
 
 /**
- * GET /api/quiz-completions?track= — for each reading date on a track, the
- * accounts that have completed the AI quiz on it. Feeds the index rows'
- * "Completed by …" tag (the peer nudge: "arjun and samaira already did it").
+ * GET /api/quiz-completions?track= — for each reading date on a track, how
+ * many accounts have completed the AI quiz on it. Feeds the index rows'
+ * "Completed by N" tag (the peer nudge).
  *
- * Login-gated: the club's usernames aren't shown to the logged-out public.
- * Deliberately names-only, no totals — the club mixes regulars with
- * occasional participants, so "N of M" would be a made-up denominator.
+ * PUBLIC (no login gate) — a bare count is participation, not identity, the
+ * same call as the vote's public totalVotes; names are deliberately NOT
+ * returned (owner, 2026-07-26). Also no "of M" denominator — the club mixes
+ * regulars with occasional participants, so a total would be made up.
  * "Completed" mirrors quiz-dates: terminal attempts (graded or
  * legacy-partial) count; `cancelled` and `inProgress` don't.
  */
 export async function GET(request: Request) {
-  const user = await currentUser();
-  if (!user) {
-    return Response.json({ error: "Not logged in." }, { status: 401 });
-  }
   const track: Track =
     new URL(request.url).searchParams.get("track") === "junior"
       ? "junior"
@@ -39,10 +35,10 @@ export async function GET(request: Request) {
     );
   }
 
-  const completions: Record<string, string[]> = {};
-  for (const [date, names] of byDate) {
-    completions[date] = [...names].sort();
+  const counts: Record<string, number> = {};
+  for (const [date, accounts] of byDate) {
+    counts[date] = accounts.size;
   }
 
-  return Response.json({ completions });
+  return Response.json({ counts });
 }
