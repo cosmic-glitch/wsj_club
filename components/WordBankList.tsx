@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import PronounceButton from "@/components/PronounceButton";
 import { useAuth } from "@/components/AuthProvider";
+import { Rich } from "@/lib/rich-text";
 import type { Track } from "@/lib/content";
 
 /**
@@ -177,7 +178,7 @@ export default function WordBankList({
                       />
                     </div>
                     <p className="mt-0.5 text-sm leading-relaxed text-stone-700">
-                      {w.meaning}
+                      <Rich text={w.meaning} />
                     </p>
                   </li>
                 ))}

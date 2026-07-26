@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { QuizQuestion } from "@/lib/content";
+import { Rich } from "@/lib/rich-text";
 
 // The interactive self-quiz, in the site's brutalist language: square black
 // borders, mono uppercase labels, the yellow #ffe600 accent for the picked
@@ -42,7 +43,7 @@ export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
           <div key={qi} className="border-[3px] border-[#0a0a0a] bg-white p-5">
             <p className="font-bold text-[#0a0a0a]">
               <span className="mr-2 font-mono text-stone-400">{qi + 1}.</span>
-              {q.question}
+              <Rich text={q.question} />
             </p>
             <div className="mt-4 grid gap-2">
               {q.options.map((opt, oi) => {
@@ -74,7 +75,9 @@ export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
                     <span className="mt-0.5 font-mono font-bold opacity-50">
                       {String.fromCharCode(65 + oi)}
                     </span>
-                    <span>{opt}</span>
+                    <span>
+                      <Rich text={opt} />
+                    </span>
                   </button>
                 );
               })}
@@ -84,7 +87,7 @@ export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
                 <span className="mr-1.5 font-mono text-[11px] font-bold uppercase tracking-[.08em] text-[#0a0a0a]">
                   {picked === q.answerIndex ? "Correct." : "Not quite."}
                 </span>
-                {q.explanation}
+                <Rich text={q.explanation} />
               </p>
             )}
           </div>

@@ -1,5 +1,6 @@
 import type { Reading, Track } from "@/lib/content";
 import { gradingExamplesBlock } from "@/lib/grading-examples";
+import { stripMarkdown } from "@/lib/rich-text";
 
 /**
  * The audience band a track is calibrated for — WHO the tutor is talking to and
@@ -66,7 +67,7 @@ function vocabBlock(reading: Reading): string {
   return reading.vocab
     .map(
       (w, i) =>
-        `${i + 1}. "${w.word}" (${w.partOfSpeech}) — means: ${w.meaning} In this article: ${w.inContext}`
+        `${i + 1}. "${w.word}" (${w.partOfSpeech}) — means: ${stripMarkdown(w.meaning)} In this article: ${stripMarkdown(w.inContext)}`
     )
     .join("\n");
 }
@@ -75,8 +76,8 @@ function conceptBlock(reading: Reading): string {
   return reading.concepts
     .map((c, i) => {
       // inContext is legacy/optional — newer concepts fold it into `meaning`.
-      const ctx = c.inContext ? ` In this article: ${c.inContext}` : "";
-      return `${i + 1}. ${c.name} — ${c.meaning}${ctx}`;
+      const ctx = c.inContext ? ` In this article: ${stripMarkdown(c.inContext)}` : "";
+      return `${i + 1}. ${c.name} — ${stripMarkdown(c.meaning)}${ctx}`;
     })
     .join("\n");
 }
@@ -91,8 +92,8 @@ function handoutText(reading: Reading): string {
       (w, i) =>
         `  ${i + 1}. "${w.word}" (${w.partOfSpeech})\n` +
         `     In the article: ${w.articleQuote}\n` +
-        `     What it means there: ${w.inContext}\n` +
-        `     In general: ${w.meaning}`
+        `     What it means there: ${stripMarkdown(w.inContext)}\n` +
+        `     In general: ${stripMarkdown(w.meaning)}`
     )
     .join("\n");
   // Some days are vocabulary-only (no concepts) — omit the CONCEPTS block
@@ -105,13 +106,13 @@ function handoutText(reading: Reading): string {
       // inContext is legacy/optional; newer concepts have only a single
       // explanation in `meaning`, so skip the "What it means there" line.
       const ctx = c.inContext
-        ? `     What it means there: ${c.inContext}\n`
+        ? `     What it means there: ${stripMarkdown(c.inContext)}\n`
         : "";
       return (
         `  ${i + 1}. ${c.name}\n` +
         `     In the article: ${c.articleQuote}\n` +
         ctx +
-        `     Explanation: ${c.meaning}`
+        `     Explanation: ${stripMarkdown(c.meaning)}`
       );
     })
     .join("\n");

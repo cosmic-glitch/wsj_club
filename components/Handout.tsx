@@ -2,6 +2,7 @@ import Link from "next/link";
 import { type Reading, type VocabWord, type Concept, type Track } from "@/lib/content";
 import { audioSrcFor } from "@/lib/handout-audio";
 import PronounceButton from "@/components/PronounceButton";
+import { Rich, RichParagraphs } from "@/lib/rich-text";
 
 // The handout body, shared by the senior (/reading/<date>) and junior
 // (/junior/reading/<date>) tracks. In the landing page's brutalist language:
@@ -159,19 +160,21 @@ function VocabCard({
 
       <p className="mt-3 text-stone-800">
         <InlineLabel>What it means here</InlineLabel>
-        {word.inContext}
+        <Rich text={word.inContext} />
       </p>
 
       <p className="mt-2 text-stone-800">
         <InlineLabel>In general</InlineLabel>
-        {word.meaning}
+        <Rich text={word.meaning} />
       </p>
 
       <div className="mt-4">
         <Label>More examples</Label>
         <ul className="mt-1.5 list-[square] space-y-1 pl-5 text-sm italic text-stone-600 marker:text-[#0a0a0a]">
           {word.examples.map((ex, i) => (
-            <li key={i}>{ex}</li>
+            <li key={i}>
+              <Rich text={ex} />
+            </li>
           ))}
         </ul>
       </div>
@@ -208,15 +211,14 @@ function ConceptCard({
 
       {/* One clear explanation of the idea (Feynman-style, with a concrete
           example). Concepts are NOT split into "what it means here" vs "in
-          general" the way vocab is — the meaning just explains the concept. */}
-      {concept.meaning.split(/\n\n+/).map((para, i) => (
-        <p
-          key={i}
-          className={i === 0 ? "mt-4 text-stone-800" : "mt-2 text-stone-800"}
-        >
-          {para}
-        </p>
-      ))}
+          general" the way vocab is — the meaning just explains the concept.
+          Paragraphs split on blank lines; `**bold**`/`*italic*` render as real
+          emphasis (see lib/rich-text) rather than as literal asterisks. */}
+      <RichParagraphs
+        text={concept.meaning}
+        className="mt-2 text-stone-800"
+        firstClassName="mt-4 text-stone-800"
+      />
 
       {concept.link && (
         <a
