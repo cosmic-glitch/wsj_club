@@ -1,6 +1,11 @@
 import { del } from "@vercel/blob";
 import { currentUser, isAdmin, isOwner } from "@/lib/auth";
 import { listStudents } from "@/lib/users";
+import {
+  shadowDeleteSessionByBlob,
+  shadowDeleteSlotBySafeName,
+} from "@/lib/shadow";
+import type { Track } from "@/lib/content";
 
 /**
  * Delete a saved voice-quiz session.
@@ -80,6 +85,28 @@ export async function DELETE(request: Request) {
   } catch (err) {
     console.error("Deleting quiz session from Blob failed:", err);
     return Response.json({ error: "Delete failed." }, { status: 500 });
+  }
+
+  // Dual-write shadow (PLAN-supabase.md Phase 1): mirror the deletion so the
+  // row can't resurrect at the read-flip. The session pathname doubles as the
+  // rc_quiz_sessions.source_blob key; an in-progress row (the stable
+  // -inprogress.json slot key) maps to its rc_quiz_slots row instead.
+  try {
+    const pathname = decodeURIComponent(new URL(sessionUrl).pathname).replace(
+      /^\/+/,
+      ""
+    );
+    const slot = /^quiz-sessions\/(junior\/)?(\d{4}-\d{2}-\d{2})\/(.+)-inprogress\.json$/.exec(
+      pathname
+    );
+    if (slot) {
+      const track: Track = slot[1] ? "junior" : "senior";
+      await shadowDeleteSlotBySafeName(track, slot[2], slot[3]);
+    } else {
+      await shadowDeleteSessionByBlob(pathname);
+    }
+  } catch (err) {
+    console.error("Shadow delete failed:", err);
   }
 
   return Response.json({ ok: true });

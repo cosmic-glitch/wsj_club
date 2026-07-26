@@ -3,6 +3,11 @@ import { currentUser } from "@/lib/auth";
 import { getUser } from "@/lib/users";
 import { getReading, type Track } from "@/lib/content";
 import {
+  shadowDeleteSlot,
+  shadowSaveSession,
+  shadowUpsertSlot,
+} from "@/lib/shadow";
+import {
   deleteSlot,
   readSlot,
   safeNameOf,
@@ -152,6 +157,9 @@ export async function POST(request: Request) {
     console.error("Checkpointing quiz progress failed:", err, "user:", user);
     return Response.json({ error: "Could not save progress." }, { status: 502 });
   }
+  // Dual-write shadow (PLAN-supabase.md Phase 1): mirror the checkpoint into
+  // rc_quiz_slots (an atomic upsert on the slot PK). Best-effort.
+  await shadowUpsertSlot(user, track, date, session);
   return Response.json({ ok: true });
 }
 
@@ -223,13 +231,16 @@ export async function DELETE(request: Request) {
         },
         diag: { ...(slot.session.diag ?? {}), endReason: "start-over" },
       };
-      await put(
+      const blob = await put(
         `quiz-sessions/${prefix}/${safeName}-${Date.now()}.json`,
         JSON.stringify(archived, null, 2),
         { access: "public", addRandomSuffix: true, contentType: "application/json" }
       );
+      // Shadow the archive as a terminal record (PLAN-supabase.md Phase 1).
+      await shadowSaveSession(archived, blob.pathname);
     }
     await deleteSlot(track, date, safeName);
+    await shadowDeleteSlot(user, track, date);
     console.log(
       "Voice-quiz start-over:",
       JSON.stringify({ user, date, hadSlot: !!slot })

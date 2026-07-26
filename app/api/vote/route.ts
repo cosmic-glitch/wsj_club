@@ -2,6 +2,7 @@ import { list, put } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 import { getReading, type Track } from "@/lib/content";
 import { safeNameOf } from "@/lib/session-io";
+import { shadowUpsertBallot } from "@/lib/shadow";
 
 /**
  * The daily article vote ("club pick") — the TODAY'S READ — YOU DECIDE row
@@ -232,6 +233,9 @@ export async function POST(request: Request) {
         contentType: "application/json",
       }
     );
+    // Dual-write shadow (PLAN-supabase.md Phase 1): mirror the ballot into
+    // rc_ballots (upsert on (poll_id, username) — change-vote included).
+    await shadowUpsertBallot(track, date, user, candidateId);
 
     // Return the fresh tally so the UI can show it immediately. list() can lag
     // a just-created blob by a few seconds, so overlay the caller's own ballot

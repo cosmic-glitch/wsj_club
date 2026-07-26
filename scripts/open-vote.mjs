@@ -31,6 +31,7 @@
  */
 import fs from "node:fs";
 import { list, put } from "@vercel/blob";
+import { dbUpsert } from "./db-rest.mjs";
 
 const argv = process.argv.slice(2);
 const [date, file] = argv.filter((a) => !a.startsWith("--"));
@@ -133,6 +134,15 @@ await put(`${votesDir}poll.json`, JSON.stringify(poll, null, 2), {
   allowOverwrite: true,
   contentType: "application/json",
 });
+
+// Dual-write shadow (PLAN-supabase.md Phase 1): mirror the poll into rc_polls
+// so /api/vote's ballot shadow can find its poll_id. Best-effort — the Blob
+// poll above is what makes the vote live.
+try {
+  await dbUpsert("rc_polls", { track, date, candidates }, "track,date");
+} catch (err) {
+  console.warn(`⚠ DB mirror of the poll failed (${err.message}) — re-run scripts/migrate-votes-to-db.mjs to catch it up.`);
+}
 
 const trackTag = junior ? " (junior)" : "";
 console.log(`Vote for ${date}${trackTag} is LIVE with ${candidates.length} candidates:`);

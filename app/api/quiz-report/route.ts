@@ -5,6 +5,7 @@ import { getReading, type Track } from "@/lib/content";
 import { getArticleText } from "@/lib/article-text";
 import { buildReportPrompt } from "@/lib/quiz-prompt";
 import { applyLeniency } from "@/lib/score";
+import { shadowDeleteSlot, shadowSaveSession } from "@/lib/shadow";
 import {
   deleteSlot,
   readSlot,
@@ -285,17 +286,21 @@ export async function POST(request: Request) {
   // Save to Blob (best-effort — don't fail the student's session if storage hiccups).
   try {
     const safeName = safeNameOf(studentName);
-    await put(
+    const blob = await put(
       `quiz-sessions/${sessionPrefix(track, date)}/${safeName}-${Date.now()}.json`,
       JSON.stringify(session, null, 2),
       { access: "public", addRandomSuffix: true, contentType: "application/json" }
     );
+    // Dual-write shadow (PLAN-supabase.md Phase 1): mirror the terminal record
+    // into rc_quiz_sessions, keyed by the blob pathname. Best-effort.
+    await shadowSaveSession(session, blob.pathname);
     // The terminal save succeeded — now (and only now) remove the in-progress
     // slot, so a storage hiccup above keeps Continue alive rather than losing
     // the attempt. Best-effort + idempotent; a quiz that never checkpointed
     // simply has no slot to remove.
     try {
       await deleteSlot(track, date, slotName);
+      await shadowDeleteSlot(user, track, date);
     } catch (err) {
       console.error("Deleting in-progress slot failed:", err, "user:", user);
     }

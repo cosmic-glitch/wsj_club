@@ -82,12 +82,17 @@ accepting the `teacherId` body alias for stale clients; it just maps to
    connection string, scripts/migrations only — from the Supabase dashboard,
    Settings → Database; local + VM, never needed in Vercel). Never expose an
    anon key; there is no browser-side Supabase access.
-3. **Deps**: `@supabase/supabase-js` (app), `pg` (devDependency, scripts).
-4. **`lib/db.ts`**: one lazily-created server-side supabase-js client
-   (`createClient(url, serviceKey, { auth: { persistSession: false } })`),
-   returning **null when the env vars are absent** so shadow writes skip
-   silently on an unconfigured checkout. PostgREST-over-HTTP means no
-   connection pooling to manage in serverless.
+3. **Deps**: `pg` (devDependency — migrations only). The app deliberately
+   does NOT use `@supabase/supabase-js`: current versions (2.110+) construct
+   a realtime client requiring Node 22's native WebSocket even when realtime
+   is never used — a silent landmine for local scripts (this machine runs
+   Node 21) and any runtime drift. Everything we need is three HTTP verbs.
+4. **`lib/db.ts`**: a minimal fetch-based PostgREST client —
+   `dbSelect`/`dbUpsert`/`dbDelete` against `$SUPABASE_URL/rest/v1/` with the
+   service key. Best-effort by design (logs + returns null/false, never
+   throws — the shadow-write contract), and a no-op when the env vars are
+   absent. `scripts/db-rest.mjs` is the scripts-side twin (loud — throws).
+   No connection pooling to manage in serverless.
 5. **Migrations**: `supabase/migrations/0001_init.sql`, applied with
    `node --env-file=.env.local scripts/apply-migration.mjs <file>` (a small
    `pg` runner — no local `psql` install). RLS is ENABLED on every `rc_*`
@@ -313,7 +318,10 @@ Phase 4 is trivially revertible because Blob is still being written
 throughout; Phase 4 runs only after the DB has been the read path for days.
 
 **Phase 0 — provision.** Project, env vars, deps, `lib/db.ts`, `0001_init.sql`.
-No behavior change; deployable immediately.
+No behavior change; deployable immediately. _DONE 2026-07-25: schema applied
+to the shared project (via the us-west-2 session pooler — the direct
+`db.<ref>` host is IPv6-only and unreachable from the owner's network;
+`SUPABASE_DB_URL` in `.env.local` uses the pooler)._
 
 **Phase 1 — shadow writes + backfill (the DB becomes a live mirror).** Every
 writer of structured data dual-writes: the Blob write stays EXACTLY as today
@@ -338,6 +346,11 @@ best-effort is safe). One deploy covers all the stores at once:
 
 Then run the one-time backfill (users + sessions + slots + the live poll).
 From here the DB holds all history AND tracks production in real time.
+_DONE 2026-07-25: shadow writes shipped; backfill ran (22 users, 128 terminal
+sessions, 1 slot, 1 poll); first full diff came back clean — and the diff's
+first run caught a live event (a student's in-progress slot created mid-
+backfill), confirming both the tooling and the "no deploy window needed"
+premise._
 
 **Phase 2 — verify the mirror (~a day of real use).** Run
 `scripts/diff-blob-db.mjs` (see Backfill + verification) a few times across a
@@ -376,9 +389,11 @@ historical and comes out.
 
 ## Decisions & risks
 
-- **supabase-js (PostgREST) for app routes, `pg` for scripts** — serverless-
-  safe, foliotracker-proven. Revisit direct Postgres only if a future feature
-  needs multi-statement transactions beyond what an upsert/RPC covers.
+- **Plain-fetch PostgREST for app routes AND scripts, `pg` for DDL only** —
+  serverless-safe, zero runtime requirements (supabase-js was dropped in
+  Phase 0 for its Node-22 native-WebSocket requirement). Revisit direct
+  Postgres only if a future feature needs multi-statement transactions beyond
+  what an upsert/RPC covers.
 - **RLS deny-all + service key only.** No anon key anywhere; the browser never
   talks to Supabase. Auth model (signed httpOnly cookie) unchanged.
 - **Shared project with whisper-anywhere** (free-plan cap). The `rc_` prefix

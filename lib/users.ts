@@ -1,5 +1,6 @@
 import { list, put } from "@vercel/blob";
 import bcrypt from "bcryptjs";
+import { shadowUpsertUser } from "@/lib/shadow";
 
 /**
  * User / classroom repository (Blob-backed).
@@ -199,6 +200,9 @@ async function save(user: User): Promise<void> {
     contentType: "application/json",
   });
   invalidateUserCache();
+  // Dual-write shadow (PLAN-supabase.md Phase 1): mirror into rc_users,
+  // best-effort — Blob above is still the store of record.
+  await shadowUpsertUser(user);
 }
 
 /**
