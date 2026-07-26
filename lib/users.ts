@@ -1,5 +1,6 @@
 import { list, put } from "@vercel/blob";
 import bcrypt from "bcryptjs";
+import { dbSelect } from "@/lib/db";
 import { shadowUpsertUser } from "@/lib/shadow";
 
 /**
@@ -104,6 +105,35 @@ async function loadAll(force = false): Promise<Map<string, User>> {
   if (!force && cache && Date.now() - cache.at < CACHE_TTL_MS) {
     return cache.users;
   }
+  // Phase 3 read flip (PLAN-supabase.md): reads come from rc_users — one
+  // query, consistent reads (no ?v= cache-busting). The DB stores the modern
+  // names natively, so no fromStored mapping. On a DB failure fall through to
+  // the legacy Blob path below, which stays dual-written until Phase 4.
+  const rows = await dbSelect("rc_users", "?select=*");
+  if (rows !== null) {
+    const users = new Map<string, User>();
+    for (const r of rows) {
+      if (typeof r.username !== "string") continue;
+      users.set(r.username, {
+        username: r.username,
+        displayName:
+          typeof r.display_name === "string" ? r.display_name : r.username,
+        passwordHash: typeof r.password_hash === "string" ? r.password_hash : "",
+        role: r.role === "student" ? "student" : "parent",
+        ...(typeof r.parent_id === "string" && r.parent_id
+          ? { parentId: r.parent_id }
+          : {}),
+        active: r.active !== false,
+        ...(typeof r.created_by === "string" ? { createdBy: r.created_by } : {}),
+        createdAt: r.created_at
+          ? new Date(String(r.created_at)).toISOString()
+          : "",
+      });
+    }
+    cache = { at: Date.now(), users };
+    return users;
+  }
+  console.error("Users DB read failed — falling back to the Blob repository");
   let blobs;
   try {
     ({ blobs } = await list({ prefix: PREFIX }));

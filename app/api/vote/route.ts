@@ -1,8 +1,8 @@
-import { list, put } from "@vercel/blob";
+import { put } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
+import { dbSelect, dbUpsert } from "@/lib/db";
 import { getReading, type Track } from "@/lib/content";
 import { safeNameOf } from "@/lib/session-io";
-import { shadowUpsertBallot } from "@/lib/shadow";
 
 /**
  * The daily article vote ("club pick") — the TODAY'S READ — YOU DECIDE row
@@ -69,68 +69,29 @@ function votesDir(track: Track, date: string): string {
   return track === "junior" ? `votes/junior/${date}/` : `votes/${date}/`;
 }
 
-function pollPathname(track: Track, date: string): string {
-  return `${votesDir(track, date)}poll.json`;
-}
-
 function ballotPrefix(track: Track, date: string): string {
   return `${votesDir(track, date)}ballots/`;
 }
 
-/**
- * Fetch a vote blob's JSON, forcing a CDN miss with a unique `?v=` per read.
- * Both the poll (re-run of open-vote.mjs) and the ballots (a changed vote) are
- * overwritten in place, and the public Blob URL is edge-cached — a plain
- * `no-store` fetch can serve the pre-overwrite copy (same lesson as
- * lib/session-io.ts's readSlot). Vote reads are light, so skipping the CDN
- * costs nothing.
- */
-async function fetchVoteJson<T>(url: string): Promise<T> {
-  const res = await fetch(`${url}?v=${Date.now()}`, { cache: "no-store" });
-  if (!res.ok) throw new Error(`vote blob fetch failed (${res.status})`);
-  return (await res.json()) as T;
-}
+// Phase 3 read flip (PLAN-supabase.md): polls + ballots are READ from
+// rc_polls / rc_ballots (single queries, consistent reads — the vote-blob
+// CDN cache-busting died here). The ballot WRITE below still dual-targets:
+// the Blob ballot first (Blob stays the store of record until Phase 4), then
+// the rc_ballots upsert the tally reads.
 
-/** The date of the track's newest poll ever opened, or null. Folded list → one folder per poll day, so this stays one cheap call as polls accumulate. */
-async function newestPollDate(track: Track): Promise<string | null> {
-  const base = track === "junior" ? "votes/junior/" : "votes/";
-  const { folders } = await list({ prefix: base, mode: "folded" });
-  // Anchored to the base so the senior list can never read a junior folder as
-  // a date (folding already hides them — `votes/junior/` has no date — but
-  // anchoring keeps this true even if the layout ever shifts).
-  const re = new RegExp(`^${base}(\\d{4}-\\d{2}-\\d{2})/$`);
-  const dates = (folders ?? [])
-    .map((f) => re.exec(f)?.[1])
-    .filter((d): d is string => Boolean(d));
-  return dates.sort().pop() ?? null;
-}
+/** The track's newest poll, with its DB row id. */
+type DbPoll = VotePoll & { id: string };
 
-async function readPoll(track: Track, date: string): Promise<VotePoll | null> {
-  const target = pollPathname(track, date);
-  const { blobs } = await list({ prefix: target });
-  const blob = blobs.find((b) => b.pathname === target);
-  if (!blob) return null;
-  const poll = await fetchVoteJson<VotePoll>(blob.url);
-  if (!Array.isArray(poll?.candidates) || poll.candidates.length === 0) return null;
-  return poll;
-}
-
-async function readBallots(track: Track, date: string): Promise<Ballot[]> {
-  const { blobs } = await list({ prefix: ballotPrefix(track, date) });
-  const ballots = await Promise.all(
-    blobs.map(async (b) => {
-      try {
-        const ballot = await fetchVoteJson<Ballot>(b.url);
-        return typeof ballot?.user === "string" &&
-          typeof ballot?.candidateId === "string"
-          ? ballot
-          : null;
-      } catch {
-        return null; // one corrupt ballot must not blank the poll
-      }
-    })
+async function readBallots(pollId: string): Promise<Ballot[]> {
+  const rows = await dbSelect(
+    "rc_ballots",
+    `?poll_id=eq.${encodeURIComponent(pollId)}&select=username,candidate_id`
   );
-  return ballots.filter((b): b is Ballot => b !== null);
+  if (rows === null) throw new Error("ballot DB read failed");
+  return rows.map((r) => ({
+    user: String(r.username),
+    candidateId: String(r.candidate_id),
+  }));
 }
 
 /** Per-candidate counts (every candidate present, so the UI needn't null-check). Ballots for removed candidate ids are ignored. */
@@ -143,10 +104,19 @@ function tallyOf(poll: VotePoll, ballots: Ballot[]): Record<string, number> {
 }
 
 /** The track's newest poll if it's live (no published reading on that track for its date). */
-async function activePoll(track: Track): Promise<VotePoll | null> {
-  const date = await newestPollDate(track);
-  if (!date || getReading(date, track)) return null;
-  return readPoll(track, date);
+async function activePoll(track: Track): Promise<DbPoll | null> {
+  const rows = await dbSelect(
+    "rc_polls",
+    `?track=eq.${track}&select=id,date,candidates&order=date.desc&limit=1`
+  );
+  if (rows === null) throw new Error("poll DB read failed");
+  const r = rows[0];
+  if (!r) return null;
+  const date = String(r.date);
+  if (getReading(date, track)) return null;
+  const candidates = r.candidates as VoteCandidate[];
+  if (!Array.isArray(candidates) || candidates.length === 0) return null;
+  return { id: String(r.id), date, candidates };
 }
 
 export async function GET(request: Request) {
@@ -160,7 +130,7 @@ export async function GET(request: Request) {
     // sees participation. The PER-CANDIDATE tally stays hidden until the
     // caller has voted (keeps the first vote un-herded): a bare total can't
     // herd anyone toward a candidate.
-    const ballots = await readBallots(track, poll.date);
+    const ballots = await readBallots(poll.id);
     const tally = tallyOf(poll, ballots);
     const totalVotes = Object.values(tally).reduce((a, b) => a + b, 0);
     const yourVote = user
@@ -233,14 +203,23 @@ export async function POST(request: Request) {
         contentType: "application/json",
       }
     );
-    // Dual-write shadow (PLAN-supabase.md Phase 1): mirror the ballot into
-    // rc_ballots (upsert on (poll_id, username) — change-vote included).
-    await shadowUpsertBallot(track, date, user, candidateId);
+    // Mirror the ballot into rc_ballots — the store the tally reads. Upsert on
+    // (poll_id, username), so change-vote overwrites in place. Best-effort:
+    // the overlay below covers the response even if this write failed.
+    await dbUpsert(
+      "rc_ballots",
+      {
+        poll_id: poll.id,
+        username: user,
+        candidate_id: candidateId,
+        updated_at: ballot.votedAt,
+      },
+      "poll_id,username"
+    );
 
-    // Return the fresh tally so the UI can show it immediately. list() can lag
-    // a just-created blob by a few seconds, so overlay the caller's own ballot
-    // in case the listing hasn't caught up yet.
-    const ballots = (await readBallots(track, date)).filter(
+    // Return the fresh tally so the UI can show it immediately, overlaying the
+    // caller's own ballot in case the upsert above failed or lagged.
+    const ballots = (await readBallots(poll.id)).filter(
       (b) => b.user !== user
     );
     ballots.push(ballot);

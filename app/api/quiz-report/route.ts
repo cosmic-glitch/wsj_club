@@ -8,6 +8,7 @@ import { applyLeniency } from "@/lib/score";
 import { shadowDeleteSlot, shadowSaveSession } from "@/lib/shadow";
 import {
   deleteSlot,
+  getSlotRecord,
   readSlot,
   safeNameOf,
   sanitizeDiag,
@@ -203,15 +204,21 @@ export async function POST(request: Request) {
   let finalDurationMs = durationMs;
   if (!finalAudioUrl) {
     try {
-      const slot = await readSlot(track, date, slotName);
-      if (slot?.session.audioUrl) {
+      // Phase 3 read flip: DB slot first, Blob fallback (dies in Phase 4).
+      let slotRecord;
+      try {
+        slotRecord = await getSlotRecord(user, track, date);
+      } catch {
+        slotRecord = (await readSlot(track, date, slotName))?.session ?? null;
+      }
+      if (slotRecord?.audioUrl) {
         const copied = await copy(
           slotAudioPathname(track, date, slotName),
           `quiz-sessions/${sessionPrefix(track, date)}/${slotName}-${Date.now()}.wav`,
           { access: "public", addRandomSuffix: true, contentType: "audio/wav" }
         );
         finalAudioUrl = copied.url;
-        finalDurationMs = finalDurationMs ?? sanitizeDurationMs(slot.session.durationMs);
+        finalDurationMs = finalDurationMs ?? sanitizeDurationMs(slotRecord.durationMs);
       }
     } catch (err) {
       console.error("Salvaging slot audio failed:", err, "user:", user);

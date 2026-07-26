@@ -6,19 +6,19 @@ import { useRouter } from "next/navigation";
 /**
  * Owner-only "Delete" action — a SINGLE delete for a whole quiz attempt, shown
  * once per row on /admin (in the Details action bar, not inside the per-section
- * modal). It confirms, then asks the server to delete the whole session — its
- * JSON *and* its audio recording — from Blob, then refreshes the list.
+ * modal). It confirms, then asks the server to delete the whole session — the
+ * DB row *and* its Blob record + audio recording — then refreshes the list.
+ * `id` is the DB row id (Phase 3 read flip): a uuid for a terminal session, or
+ * the serialized `slot:…` id for an in-progress slot.
  *
  * Styled as an inline red text link so it sits alongside the row's other
- * action-bar links (Recording · Transcript · Feedback).
+ * action-bar links.
  */
 export default function DeleteSessionButton({
-  url,
-  audioUrl,
+  id,
   label,
 }: {
-  url: string;
-  audioUrl?: string;
+  id: string;
   // A human label for the confirm prompt, e.g. "Arjun · The Last Question".
   label: string;
 }) {
@@ -37,7 +37,7 @@ export default function DeleteSessionButton({
       const res = await fetch("/api/quiz-session", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ url, audioUrl }),
+        body: JSON.stringify({ id }),
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));

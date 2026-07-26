@@ -372,6 +372,16 @@ first: full quiz → End (report card, Scores row, Details modal, recording
 playback), pause → Continue, Start-over archive, owner Delete, student
 self-view scoping, junior track, vote cast/change/tally. iOS walk-through
 included.
+_DONE 2026-07-25 (owner accepted prod-direct testing over a preview pass —
+the dual-write makes revert zero-loss): all readers flipped, with a
+DB-first/Blob-fallback in the login loader and the slot readers (the
+fallback dies in Phase 4). Verified against the live DB on a local dev
+server with minted session cookies: owner/parent/student Scores renders,
+quiz-dates, vote GET, slot checkpoint→probe→delete round-trip through both
+stores, and the GET ?id= scoping matrix (owner any / parent own-classroom
+only / student own only / 401 logged-out / 400 bad id). Remaining holes: a
+real end-to-end quiz on prod (mic → End → report card) and the iOS
+walk-through — watch the first real quiz after the flip._
 
 **Phase 4 — retire the Blob copies (after Phase 3 soaks a few days).**
 Remove: the Blob write paths for users/sessions/slots/votes (the shadow

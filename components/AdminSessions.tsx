@@ -36,7 +36,8 @@ export type Session = {
   // on the server for the OWNER's unified Scores table (the Parent column).
   // Not part of the saved session JSON; only populated when showParent.
   parentName?: string;
-  endedAt: string;
+  // Absent on an in-progress slot (nothing ended yet) — use updatedAt there.
+  endedAt?: string;
   // Length of the saved recording (total talk time — the same duration the
   // playback control shows), in ms. Undefined when nothing was recorded → "—".
   durationMs?: number;
@@ -65,9 +66,10 @@ export type Session = {
   updatedAt?: string;
   // How many times the attempt was paused and continued (parent-visible).
   resumeCount?: number;
-  // The Blob URL of this session's JSON — attached at load time so the owner
-  // can delete it. Not part of the saved JSON itself.
-  blobUrl: string;
+  // The DB row id (Phase 3 read flip): a uuid for a terminal session, or the
+  // serialized `slot:<login>:<track>:<date>` for an in-progress slot. The
+  // handle for the Details fetch and Delete.
+  id: string;
 };
 // One article's row in the table: the day + its title + every attempt on it
 // (across all students). Grouped + labeled on the server. A junior and a senior
@@ -81,9 +83,10 @@ export type ArticleGroup = {
   attempts: Session[];
 };
 
-// The modal-only heavy fields, fetched straight from the session's Blob JSON
-// when Details is opened (the browser already holds blobUrl — it's the same URL
-// the Delete button sends). Only what the modal renders beyond the slim row.
+// The modal-only heavy fields, fetched from GET /api/quiz-session?id= when
+// Details is opened — auth-scoped server-side (transcripts stopped being
+// public-URL-unguessable at the Phase 3 read flip). Only what the modal
+// renders beyond the slim row.
 type SessionDetail = {
   transcript?: Turn[];
   report?: Report | null;
@@ -159,7 +162,7 @@ export default function AdminSessions({
   const [session, setSession] = useState<Session | null>(null);
 
   // The heavy fields (feedback narrative + transcript), fetched from the
-  // session's own Blob JSON when the modal opens. Keyed by blobUrl so a slow
+  // auth-gated API when the modal opens. Keyed by the session id so a slow
   // response for a closed modal can never paint into a newer one; `data: null`
   // = still loading, `error` = fetch/parse failed.
   const [detail, setDetail] = useState<{
@@ -171,32 +174,30 @@ export default function AdminSessions({
 
   const openDetails = (s: Session) => {
     setSession(s);
-    setDetail({ url: s.blobUrl, data: null, error: false });
-    detailUrlRef.current = s.blobUrl;
-    // The in-progress slot is overwritten in place, so bust the CDN edge cache
-    // for a current read; a finished record is immutable (random-suffixed key),
-    // so its plain URL is fine and can be served from the edge.
-    const url = s.inProgress ? `${s.blobUrl}?v=${Date.now()}` : s.blobUrl;
-    fetch(url, { cache: "no-store" })
+    setDetail({ url: s.id, data: null, error: false });
+    detailUrlRef.current = s.id;
+    fetch(`/api/quiz-session?id=${encodeURIComponent(s.id)}`, {
+      cache: "no-store",
+    })
       .then((r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return r.json() as Promise<SessionDetail>;
       })
       .then((data) => {
-        if (detailUrlRef.current !== s.blobUrl) return;
-        setDetail({ url: s.blobUrl, data, error: false });
+        if (detailUrlRef.current !== s.id) return;
+        setDetail({ url: s.id, data, error: false });
       })
       .catch(() => {
-        if (detailUrlRef.current !== s.blobUrl) return;
-        setDetail({ url: s.blobUrl, data: null, error: true });
+        if (detailUrlRef.current !== s.id) return;
+        setDetail({ url: s.id, data: null, error: true });
       });
   };
 
   // The open modal's fetched detail (null while loading / on error).
   const sessionDetail =
-    session && detail?.url === session.blobUrl ? detail.data : null;
+    session && detail?.url === session.id ? detail.data : null;
   const detailFailed =
-    !!session && detail?.url === session.blobUrl && detail.error;
+    !!session && detail?.url === session.id && detail.error;
   const detailLoading = !!session && !sessionDetail && !detailFailed;
 
   // Local-time labels are computed only after mount (see fmtLocal).
@@ -280,7 +281,7 @@ export default function AdminSessions({
                   </Link>
                 </td>
                 <td className="px-3 py-3">
-                  {/* key MUST be the stable blobUrl, never the array index: the
+                  {/* key MUST be the stable session id, never the array index: the
                       Delete flow removes one attempt and refreshes the list, and
                       an index key would let a removed row's React state (e.g. the
                       Delete button's "Deleting…") leak onto whatever attempt
@@ -301,7 +302,7 @@ export default function AdminSessions({
                         (s.loginUser ?? s.studentName) === viewerUser;
                       return (
                         <li
-                          key={s.blobUrl}
+                          key={s.id}
                           className="flex items-center gap-2 px-1 py-1"
                         >
                           <span className="w-20 shrink-0 truncate text-right font-medium text-stone-800">
@@ -379,8 +380,7 @@ export default function AdminSessions({
                           {canDelete && (
                             <span className="flex w-20 shrink-0 justify-end">
                               <DeleteSessionButton
-                                url={s.blobUrl}
-                                audioUrl={s.audioUrl}
+                                id={s.id}
                                 label={`${s.studentName} · ${s.title}`}
                               />
                             </span>

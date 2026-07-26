@@ -9,6 +9,7 @@ import {
 } from "@/lib/shadow";
 import {
   deleteSlot,
+  getSlotRecord,
   readSlot,
   safeNameOf,
   sanitizeDiag,
@@ -169,9 +170,18 @@ export async function GET(request: Request) {
   const { user, date, track } = ctx;
 
   try {
-    const slot = await readSlot(track, date, safeNameOf(user));
-    if (!slot) return Response.json({ exists: false });
-    return Response.json({ exists: true, session: slot.session });
+    // Phase 3 read flip: the slot comes from rc_quiz_slots (consistent reads —
+    // no cache-buster, no "resume within ~2s misses the last turn" gap). On a
+    // DB failure fall back to the Blob slot, which is still dual-written
+    // (fallback dies in Phase 4).
+    let session;
+    try {
+      session = await getSlotRecord(user, track, date);
+    } catch {
+      session = (await readSlot(track, date, safeNameOf(user)))?.session ?? null;
+    }
+    if (!session) return Response.json({ exists: false });
+    return Response.json({ exists: true, session });
   } catch (err) {
     console.error("Loading in-progress quiz failed:", err, "user:", user);
     return Response.json(
@@ -189,14 +199,20 @@ export async function DELETE(request: Request) {
   const prefix = sessionPrefix(track, date);
 
   try {
-    const slot = await readSlot(track, date, safeName);
+    // Phase 3 read flip: DB first, Blob fallback (same as GET above).
+    let slot;
+    try {
+      slot = await getSlotRecord(user, track, date);
+    } catch {
+      slot = (await readSlot(track, date, safeName))?.session ?? null;
+    }
     if (slot) {
       // Archive before deleting. The slot's audio (if flushed) lives at the
       // stable slot key that's about to be deleted, so copy it to a permanent
       // key first — best-effort; if the copy fails the archive just has no
       // recording.
       let audioUrl: string | undefined;
-      if (slot.session.audioUrl) {
+      if (slot.audioUrl) {
         try {
           const copied = await copy(
             slotAudioPathname(track, date, safeName),
@@ -209,7 +225,7 @@ export async function DELETE(request: Request) {
         }
       }
       const archived = {
-        ...slot.session,
+        ...slot,
         inProgress: false,
         partial: false,
         cancelled: true,
@@ -229,7 +245,7 @@ export async function DELETE(request: Request) {
           reason: "superseded",
           detail: "The student chose Start over; this is the earlier, unfinished attempt.",
         },
-        diag: { ...(slot.session.diag ?? {}), endReason: "start-over" },
+        diag: { ...(slot.diag ?? {}), endReason: "start-over" },
       };
       const blob = await put(
         `quiz-sessions/${prefix}/${safeName}-${Date.now()}.json`,

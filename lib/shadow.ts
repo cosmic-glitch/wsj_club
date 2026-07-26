@@ -151,32 +151,3 @@ export async function shadowDeleteSlotBySafeName(
   if (login) await shadowDeleteSlot(login, track, date);
 }
 
-/** Mirror a poll definition (scripts/open-vote.mjs writes the Blob poll; the app never does). */
-export async function shadowUpsertBallot(
-  track: Track,
-  date: string,
-  username: string,
-  candidateId: string
-): Promise<void> {
-  const rows = await dbSelect(
-    "rc_polls",
-    `?track=eq.${track}&date=eq.${encodeURIComponent(date)}&select=id`
-  );
-  const pollId = rows?.[0]?.id;
-  if (typeof pollId !== "string") {
-    // Poll not mirrored (opened before the shadow phase / script ran without
-    // DB env) — the votes backfill catches the ballot up later.
-    console.error(`Shadow ballot skipped: no rc_polls row for ${track} ${date}`);
-    return;
-  }
-  await dbUpsert(
-    "rc_ballots",
-    {
-      poll_id: pollId,
-      username,
-      candidate_id: candidateId,
-      updated_at: new Date().toISOString(),
-    },
-    "poll_id,username"
-  );
-}

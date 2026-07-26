@@ -1,86 +1,91 @@
-import { list } from "@vercel/blob";
-import type { Report, Session, Turn } from "@/components/AdminSessions";
+import { dbSelect } from "@/lib/db";
+import type { Session } from "@/components/AdminSessions";
 
 /**
- * The full on-disk session shape — a superset of the slim `Session` the pages
- * work with. The heavy fields (transcript, the report narrative, diag) are
- * DELIBERATELY not returned by loadSessions: they're only ever read inside the
- * Details modal, which fetches this record's blobUrl directly on open. Keeping
- * them out of the loader's return keeps the Scores page's RSC payload small
- * (the transcripts + diag were the bulk of ~1.5MB shipped per view).
- */
-type StoredSession = Omit<Session, "blobUrl" | "parentId" | "parentName"> & {
-  teacherId?: string;
-  transcript?: Turn[];
-  report?: Report | null;
-  diag?: unknown;
-};
-
-/**
- * Load every saved voice-quiz session from Blob (used by the Scores page and the
- * Students roster). Audio recordings (.webm/.mp4/.wav) live in the SAME prefix
- * as the session JSON, so only fetch/parse the .json files — never try to
- * JSON.parse a recording. Each parse is independently guarded so one corrupt
- * blob can't take down the page (returns null → filtered out).
+ * Load every voice-quiz session for the Scores page / Students roster /
+ * quiz-dates — from Postgres since the Phase 3 read flip (PLAN-supabase.md):
+ * one slim select over rc_quiz_sessions (no transcript/report/diag — the
+ * modal-only heavy fields are served by GET /api/quiz-session?id= on open)
+ * plus the rc_quiz_slots rows mapped to the inProgress shape, preserving the
+ * old contract where the Scores page sees slots as sessions. This replaced
+ * one blob fetch PER SESSION (~130 and growing, the page's whole latency)
+ * with two queries.
  *
- * Returns SLIM records — an explicit allowlist of the fields the tables and
- * filters need (see StoredSession above); the modal-only heavy fields never
- * leave this module. `blobUrl` is attached at load time (it isn't part of the
- * saved JSON) so the owner can delete an attempt — and it's also what the
- * Details modal fetches for the full record. The stored JSON stamps the owning
- * parent under the legacy `teacherId` field name — normalized to `parentId`
- * here, so nothing above this loader sees the legacy name.
+ * Writers still dual-write Blob + DB (until Phase 4), so reverting the flip
+ * loses nothing. Each record's `id` is the DB row id (sessions: uuid; slots:
+ * the serialized composite key) — the handle for Details and Delete.
  */
+
+/** The serialized id of a slot row (slots have a composite PK, not a uuid). */
+export function slotId(loginUser: string, track: string, date: string): string {
+  return `slot:${loginUser}:${track}:${date}`;
+}
+
+const iso = (v: unknown): string | undefined => {
+  if (typeof v !== "string" || !v) return undefined;
+  const t = new Date(v);
+  return Number.isNaN(t.getTime()) ? undefined : t.toISOString();
+};
+const str = (v: unknown): string | undefined =>
+  typeof v === "string" && v ? v : undefined;
+const num = (v: unknown): number | undefined =>
+  typeof v === "number" && Number.isFinite(v) ? v : undefined;
+
 export async function loadSessions(): Promise<Session[] | { error: string }> {
-  try {
-    const { blobs } = await list({ prefix: "quiz-sessions/" });
-    const sessions = (
-      await Promise.all(
-        blobs
-          .filter((b) => b.pathname.endsWith(".json"))
-          .map(async (b) => {
-            try {
-              // Key the URL by uploadedAt: the in-progress slot is overwritten
-              // in place, and the Blob CDN edge-caches by URL — a plain
-              // no-store fetch can serve a stale copy right after an overwrite
-              // (same trap lib/users.ts documents). list() metadata is
-              // read-after-write consistent, so this forces current content.
-              // Harmless for the immutable random-suffixed records.
-              const v = new Date(b.uploadedAt).getTime();
-              const res = await fetch(`${b.url}?v=${v}`, { cache: "no-store" });
-              const raw = (await res.json()) as StoredSession;
-              const session: Session = {
-                date: raw.date,
-                ...(raw.track ? { track: raw.track } : {}),
-                title: raw.title,
-                studentName: raw.studentName,
-                ...(raw.loginUser ? { loginUser: raw.loginUser } : {}),
-                ...(raw.teacherId ? { parentId: raw.teacherId } : {}),
-                endedAt: raw.endedAt,
-                ...(raw.durationMs != null ? { durationMs: raw.durationMs } : {}),
-                // Score only — the summary/strengths/gaps narrative is
-                // modal-only, fetched from blobUrl on open.
-                report: raw.report?.score ? { score: raw.report.score } : null,
-                ...(raw.audioUrl ? { audioUrl: raw.audioUrl } : {}),
-                ...(raw.partial ? { partial: raw.partial } : {}),
-                ...(raw.failure ? { failure: raw.failure } : {}),
-                ...(raw.cancelled ? { cancelled: raw.cancelled } : {}),
-                ...(raw.inProgress ? { inProgress: raw.inProgress } : {}),
-                ...(raw.updatedAt ? { updatedAt: raw.updatedAt } : {}),
-                ...(raw.resumeCount ? { resumeCount: raw.resumeCount } : {}),
-                blobUrl: b.url,
-              };
-              return session;
-            } catch (err) {
-              console.error("Skipping unreadable session blob:", b.pathname, err);
-              return null;
-            }
-          })
-      )
-    ).filter((s): s is Session => s !== null);
-    return sessions;
-  } catch (err) {
-    console.error("Loading quiz sessions failed:", err);
-    return { error: "Could not load sessions (is Blob storage configured?)." };
+  const [rows, slots] = await Promise.all([
+    dbSelect(
+      "rc_quiz_sessions",
+      "?select=id,date,track,title,student_name,login_user,parent_id,ended_at,duration_ms,score,audio_url,partial,cancelled,failure,resume_count&order=ended_at.desc"
+    ),
+    dbSelect(
+      "rc_quiz_slots",
+      "?select=login_user,track,date,title,student_name,parent_id,failure,audio_url,duration_ms,resume_count,updated_at"
+    ),
+  ]);
+  if (rows === null || slots === null) {
+    return { error: "Could not load sessions (database unavailable)." };
   }
+
+  const sessions: Session[] = rows.map((r) => ({
+    id: String(r.id),
+    date: str(r.date) ?? "",
+    ...(r.track === "junior" ? { track: "junior" as const } : {}),
+    title: str(r.title) ?? "",
+    studentName: str(r.student_name) ?? "",
+    ...(str(r.login_user) ? { loginUser: str(r.login_user) } : {}),
+    ...(str(r.parent_id) ? { parentId: str(r.parent_id) } : {}),
+    endedAt: iso(r.ended_at) ?? "",
+    ...(num(r.duration_ms) != null ? { durationMs: num(r.duration_ms) } : {}),
+    // Score only — the summary/strengths/gaps narrative is modal-only.
+    report: str(r.score) ? { score: str(r.score) } : null,
+    ...(str(r.audio_url) ? { audioUrl: str(r.audio_url) } : {}),
+    ...(r.partial === true ? { partial: true } : {}),
+    ...(r.failure ? { failure: r.failure as Session["failure"] } : {}),
+    ...(r.cancelled === true ? { cancelled: true } : {}),
+    ...(num(r.resume_count) ? { resumeCount: num(r.resume_count) } : {}),
+  }));
+
+  for (const r of slots) {
+    const login = str(r.login_user) ?? "";
+    const track = r.track === "junior" ? "junior" : "senior";
+    const date = str(r.date) ?? "";
+    sessions.push({
+      id: slotId(login, track, date),
+      date,
+      ...(track === "junior" ? { track: "junior" as const } : {}),
+      title: str(r.title) ?? "",
+      studentName: str(r.student_name) ?? login,
+      loginUser: login,
+      ...(str(r.parent_id) ? { parentId: str(r.parent_id) } : {}),
+      report: null,
+      ...(str(r.audio_url) ? { audioUrl: str(r.audio_url) } : {}),
+      partial: true,
+      ...(r.failure ? { failure: r.failure as Session["failure"] } : {}),
+      inProgress: true,
+      ...(iso(r.updated_at) ? { updatedAt: iso(r.updated_at) } : {}),
+      ...(num(r.resume_count) ? { resumeCount: num(r.resume_count) } : {}),
+    });
+  }
+
+  return sessions;
 }

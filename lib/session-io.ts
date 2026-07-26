@@ -1,4 +1,5 @@
 import { del, list } from "@vercel/blob";
+import { dbSelect } from "@/lib/db";
 import type { Track } from "@/lib/content";
 
 /**
@@ -129,6 +130,55 @@ export type SlotRecord = Record<string, unknown> & {
   durationMs?: number;
   diag?: { sessionId?: string };
 };
+
+/**
+ * Read a student's in-progress slot from rc_quiz_slots (the Phase 3 read
+ * flip — PLAN-supabase.md), reconstructed into the same JSON shape the Blob
+ * slot holds so callers and the client are agnostic to the store. Returns
+ * null when no slot exists; THROWS on a DB failure so callers can fall back
+ * to the Blob `readSlot` below (the slot is still dual-written until Phase 4,
+ * when that fallback dies). Keyed by the login user — the DB PK — not the
+ * filename-safe name.
+ */
+export async function getSlotRecord(
+  loginUser: string,
+  track: Track,
+  date: string
+): Promise<SlotRecord | null> {
+  const rows = await dbSelect(
+    "rc_quiz_slots",
+    `?login_user=eq.${encodeURIComponent(loginUser)}&track=eq.${track}&date=eq.${encodeURIComponent(date)}&select=*`
+  );
+  if (rows === null) throw new Error("slot DB read failed");
+  const r = rows[0];
+  if (!r) return null;
+  const num = (v: unknown) =>
+    typeof v === "number" && Number.isFinite(v) ? v : undefined;
+  return {
+    date,
+    ...(track === "junior" ? { track } : {}),
+    title: typeof r.title === "string" ? r.title : "",
+    studentName: typeof r.student_name === "string" ? r.student_name : loginUser,
+    loginUser,
+    ...(typeof r.parent_id === "string" ? { teacherId: r.parent_id } : {}),
+    inProgress: true,
+    partial: true,
+    cancelled: false,
+    report: null,
+    updatedAt: r.updated_at
+      ? new Date(String(r.updated_at)).toISOString()
+      : new Date().toISOString(),
+    transcript: Array.isArray(r.transcript) ? (r.transcript as Turn[]) : [],
+    tutorDone: r.tutor_done === true,
+    resumeCount: num(r.resume_count) ?? 0,
+    ...(typeof r.audio_url === "string" && r.audio_url
+      ? { audioUrl: r.audio_url }
+      : {}),
+    ...(num(r.duration_ms) != null ? { durationMs: num(r.duration_ms) } : {}),
+    failure: r.failure ?? null,
+    ...(r.diag ? { diag: r.diag as SlotRecord["diag"] } : {}),
+  };
+}
 
 /**
  * Read a student's in-progress slot; null when none exists.
