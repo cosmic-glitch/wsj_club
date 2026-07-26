@@ -143,17 +143,19 @@ export default function LandingIndex({
                   }`}
                 >
                   <span
-                    className={`whitespace-nowrap text-xs font-bold uppercase tracking-[.06em] ${
+                    className={`whitespace-nowrap text-xs font-bold uppercase tracking-[.06em] max-[680px]:flex max-[680px]:items-center ${
                       newest ? "group-hover:text-[#ffe600]" : ""
                     }`}
                   >
                     {dateTag(r.date)}
                     {newest && <TodayTag date={r.date} />}
-                    {/* Mobile home of the completed-count: the date line has
-                        slack there, the action bar doesn't (see CompletedBy). */}
+                    {/* Mobile home of the completed-count: RIGHT-ALIGNED on
+                        the date line (ml-auto in the mobile-only flex row) so
+                        it doesn't crowd the date + TODAY chip; the action bar
+                        has no slack at all (see CompletedBy). */}
                     <CompletedBy
                       date={r.date}
-                      className="ml-2 min-[681px]:hidden"
+                      className="ml-auto pl-2 min-[681px]:hidden"
                     />
                   </span>
 

@@ -17,10 +17,12 @@ import type { Track } from "@/lib/content";
  *
  * Placement is RESPONSIVE — LandingIndex renders it twice, one visible per
  * breakpoint: on desktop in the row's action bar right of the AI QUIZ button
- * (real slack there), on mobile on the DATE line ("JUL 26 · TODAY ·
- * COMPLETED BY 6") — the phone's action bar has no slack (three buttons ≈ ¾
- * of the width, so the tag wrapped to its own line, which the owner ruled
- * out), while the date line is mostly empty. It started as a title tail,
+ * (real slack there), on mobile RIGHT-ALIGNED on the DATE line (the date +
+ * TODAY chip sit left, the count is pushed to the row's right edge so the
+ * line doesn't read crowded) — the phone's action bar has no slack (three
+ * buttons ≈ ¾ of the width, so the tag wrapped to its own line, which the
+ * owner ruled out), while the date line is mostly empty. It started as a
+ * title tail,
  * which the owner found polluted the title; never its own grid cell (a new
  * cell = a whole extra mobile line).
  */
