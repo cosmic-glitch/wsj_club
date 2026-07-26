@@ -42,11 +42,11 @@ scripts, VM cron env plumbing) carry over directly. Even optimistic growth
 
 | Today (Blob)                                      | Becomes            |
 | ------------------------------------------------- | ------------------ |
-| `users/<username>.json`                           | `users` table      |
-| `quiz-sessions/[junior/]<date>/<name>-<rand>.json` (terminal sessions) | `quiz_sessions` table |
-| `quiz-sessions/[junior/]<date>/<name>-inprogress.json` (pause/resume slot) | `quiz_slots` table |
-| `votes/[junior/]<date>/poll.json`                 | `polls` table      |
-| `votes/[junior/]<date>/ballots/<name>.json`       | `ballots` table    |
+| `users/<username>.json`                           | `rc_users` table   |
+| `quiz-sessions/[junior/]<date>/<name>-<rand>.json` (terminal sessions) | `rc_quiz_sessions` table |
+| `quiz-sessions/[junior/]<date>/<name>-inprogress.json` (pause/resume slot) | `rc_quiz_slots` table |
+| `votes/[junior/]<date>/poll.json`                 | `rc_polls` table   |
+| `votes/[junior/]<date>/ballots/<name>.json`       | `rc_ballots` table |
 
 **Stays in Blob / static** (large, immutable, served-by-URL — the right tool):
 
@@ -67,38 +67,51 @@ accepting the `teacherId` body alias for stale clients; it just maps to
 
 ## Setup (Phase 0)
 
-1. **New free Supabase project** `wsj-club` (separate from foliotracker —
-   isolation, independent backups). Free-tier pause-on-idle is defused by the
-   daily backup cron (below); daily quiz traffic makes it moot anyway.
+1. **Shared Supabase project** — reuse the existing `whisper-anywhere`
+   project (owner's call, 2026-07-25: the free plan allows 2 projects and
+   both slots are taken — foliotracker + whisper-anywhere). Isolation is by
+   table prefix: **every Reading Club table is `rc_*`**. The service key is
+   shared with whisper-anywhere's website API — acceptable: both are the
+   owner's server-side apps, and neither exposes the key to a browser.
+   Free-tier pause-on-idle is defused by whisper-anywhere's own traffic plus
+   the nightly `pg_dump` cron (below).
 2. **Env vars** (Vercel Production + Preview, and `.env.local`):
-   `SUPABASE_URL`, `SUPABASE_SERVICE_KEY` (app routes), `SUPABASE_DB_URL`
-   (scripts/migrations only — the foliotracker `pg` recipe). Never expose an
+   `SUPABASE_URL`, `SUPABASE_SERVICE_KEY` (app routes) — copied from
+   `../whisper-anywhere/website/.env.local` (there the key is named
+   `SUPABASE_SERVICE_ROLE_KEY`) — and `SUPABASE_DB_URL` (direct Postgres
+   connection string, scripts/migrations only — from the Supabase dashboard,
+   Settings → Database; local + VM, never needed in Vercel). Never expose an
    anon key; there is no browser-side Supabase access.
 3. **Deps**: `@supabase/supabase-js` (app), `pg` (devDependency, scripts).
 4. **`lib/db.ts`**: one lazily-created server-side supabase-js client
-   (`createClient(url, serviceKey, { auth: { persistSession: false } })`).
-   PostgREST-over-HTTP means no connection pooling to manage in serverless.
-5. **Migrations**: `supabase/migrations/0001_init.sql`, applied with `psql
-   "$SUPABASE_DB_URL" -f …` (matching foliotracker's convention). RLS is
-   ENABLED on every table with **no policies** — deny-all for anon/authed
-   roles; only the service key (which bypasses RLS) can touch data.
+   (`createClient(url, serviceKey, { auth: { persistSession: false } })`),
+   returning **null when the env vars are absent** so shadow writes skip
+   silently on an unconfigured checkout. PostgREST-over-HTTP means no
+   connection pooling to manage in serverless.
+5. **Migrations**: `supabase/migrations/0001_init.sql`, applied with
+   `node --env-file=.env.local scripts/apply-migration.mjs <file>` (a small
+   `pg` runner — no local `psql` install). RLS is ENABLED on every `rc_*`
+   table with **no policies** — deny-all for anon/authed roles; only the
+   service key (which bypasses RLS) can touch data. (whisper-anywhere's own
+   tables are untouched; migrations here only ever create/alter `rc_*`.)
 
 ## Schema
 
 ```sql
-create table users (
+-- All tables rc_-prefixed: the project is shared with whisper-anywhere.
+create table rc_users (
   username      text primary key,                -- login id, lowercased
   display_name  text not null,
   password_hash text not null,                   -- bcrypt, as today
   role          text not null check (role in ('parent','student')),
-  parent_id     text references users(username), -- students only
+  parent_id     text references rc_users(username), -- students only
   active        boolean not null default true,
   created_by    text,
   created_at    timestamptz not null default now(),
   check ((role = 'student') = (parent_id is not null))
 );
 
-create table quiz_sessions (                     -- TERMINAL attempts only
+create table rc_quiz_sessions (                  -- TERMINAL attempts only
   id           uuid primary key default gen_random_uuid(),
   date         text not null,                    -- 'YYYY-MM-DD' (matches content keys)
   track        text not null default 'senior' check (track in ('senior','junior')),
@@ -120,10 +133,10 @@ create table quiz_sessions (                     -- TERMINAL attempts only
   source_blob  text unique,                      -- backfill provenance + idempotency; null on new rows
   created_at   timestamptz not null default now()
 );
-create index quiz_sessions_by_user  on quiz_sessions (login_user, date);
-create index quiz_sessions_by_scope on quiz_sessions (parent_id);
+create index rc_quiz_sessions_by_user  on rc_quiz_sessions (login_user, date);
+create index rc_quiz_sessions_by_scope on rc_quiz_sessions (parent_id);
 
-create table quiz_slots (                        -- the pause/resume slot
+create table rc_quiz_slots (                        -- the pause/resume slot
   login_user  text not null,
   track       text not null check (track in ('senior','junior')),
   date        text not null,
@@ -141,7 +154,7 @@ create table quiz_slots (                        -- the pause/resume slot
   primary key (login_user, track, date)          -- "at most one slot per (student, track, date)" — now a DB invariant
 );
 
-create table polls (
+create table rc_polls (
   id         uuid primary key default gen_random_uuid(),
   track      text not null check (track in ('senior','junior')),
   date       text not null,
@@ -150,8 +163,8 @@ create table polls (
   unique (track, date)
 );
 
-create table ballots (
-  poll_id      uuid not null references polls(id) on delete cascade,
+create table rc_ballots (
+  poll_id      uuid not null references rc_polls(id) on delete cascade,
   username     text not null,
   candidate_id text not null,
   updated_at   timestamptz not null default now(),
@@ -189,7 +202,7 @@ described as "DELETE" below._
 `AUTH_USERS`/`ADMIN_USERS` env fallback survives until Phase 4 cleanup.
 
 **`lib/sessions.ts`**: `loadSessions()` becomes one select of the slim columns
-(no transcript/report/diag) over `quiz_sessions` UNION the `quiz_slots` rows
+(no transcript/report/diag) over `rc_quiz_sessions` UNION the `rc_quiz_slots` rows
 mapped to `inProgress: true` shape — preserving today's contract where the
 Scores page sees slots as sessions. `Session.blobUrl` → `Session.id` (slot ids
 are the composite key, serialized `slot:<login>:<track>:<date>`). Track emitted
@@ -205,12 +218,12 @@ CDN-staleness comments/workarounds die.
 overwrite-in-place semantics are now transactional); GET → `getSlot` (no
 cache-buster; reads are consistent, killing the "resume within ~2s can miss the
 last turn" gap); DELETE (start-over) → insert a `cancelled` row into
-`quiz_sessions` (archiving the slot, audio blob copied to a permanent key as
+`rc_quiz_sessions` (archiving the slot, audio blob copied to a permanent key as
 today) + delete the slot row, in one transaction via a small
 `archive_slot` SQL function (or sequential with the insert first — same order
 as today's copy-then-delete).
 
-**`app/api/quiz-report`**: terminal save inserts into `quiz_sessions` then
+**`app/api/quiz-report`**: terminal save inserts into `rc_quiz_sessions` then
 deletes the slot row (insert-then-delete preserves today's "a storage hiccup
 keeps Continue alive" ordering). Slot-WAV salvage (copy blob to permanent key)
 unchanged. Grading unchanged.
@@ -232,13 +245,13 @@ race-guard logic unchanged). **`components/DeleteSessionButton.tsx`**: takes
 `loadSessions`/`listStudents`/`listParents` keep their contracts. (Optional
 later: push scoping into SQL; not needed for correctness.)
 
-**`app/api/quiz-dates`**: `select distinct date from quiz_sessions where …` —
+**`app/api/quiz-dates`**: `select distinct date from rc_quiz_sessions where …` —
 or keep filtering `loadSessions()` output; either is fine, the data is small.
 
 **`app/api/vote`**: GET → newest poll for the track (one query), active iff no
 reading exists for its date (unchanged derivation, still checked against
 `content/`); caller's ballot + tally via two more cheap queries (`count(*)
-group by candidate_id`). POST → upsert into `ballots`. All vote-blob
+group by candidate_id`). POST → upsert into `rc_ballots`. All vote-blob
 cache-busting dies.
 
 **Scripts**:
@@ -255,8 +268,10 @@ cache-busting dies.
   time, never a hardcoded roster.
 - `scripts/backup-blob.sh|mjs`: keeps backing up Blob (audio + article text —
   still needed). ADD `scripts/backup-db.sh` on the VM: nightly
-  `pg_dump "$SUPABASE_DB_URL"` into the same dated-snapshot scheme, cron'd
-  next to the blob backup. This also keeps the free project from idling.
+  `pg_dump "$SUPABASE_DB_URL" --table='rc_*'` (ONLY our tables — the project
+  is shared with whisper-anywhere, whose data has its own backup story) into
+  the same dated-snapshot scheme, cron'd next to the blob backup. This also
+  keeps the free project from idling.
 
 ## Backfill + verification scripts
 
@@ -271,10 +286,10 @@ DB shadow, since every write lands in Blob first):
    `role: "teacher"→"parent"`, `teacherId→parent_id`. ~10 rows, seconds.
 2. **Sessions** (`scripts/migrate-sessions-to-db.mjs`): read every
    `quiz-sessions/**/*.json` blob. Terminal records → upsert into
-   `quiz_sessions` keyed on `source_blob` (the pathname), deriving
+   `rc_quiz_sessions` keyed on `source_blob` (the pathname), deriving
    `track` from the `junior/` path segment where the stamp is absent, `score`
    from `report.score`, `parent_id` from the stored `teacherId`. `-inprogress`
-   slots → upsert into `quiz_slots`. ~120 rows, seconds. Blob records are
+   slots → upsert into `rc_quiz_slots`. ~120 rows, seconds. Blob records are
    **left in place** as a read-only archive (they're in the VM backups too);
    nothing deletes them.
 3. **Votes** (optional): backfill old polls/ballots for the participation
@@ -309,11 +324,11 @@ best-effort is safe). One deploy covers all the stores at once:
 
 - **users** — create / rename / reset / deactivate upsert the row too
   (`lib/users.ts` writes grow the shadow; reads untouched).
-- **terminal sessions** — `quiz-report` also inserts into `quiz_sessions`,
+- **terminal sessions** — `quiz-report` also inserts into `rc_quiz_sessions`,
   stamping `source_blob` with the blob pathname so every DB row is matched to
   its Blob twin (same key the backfill uses — a row is written once, by
   whichever runs first).
-- **slots** — `quiz-progress` POST also upserts `quiz_slots`; the terminal
+- **slots** — `quiz-progress` POST also upserts `rc_quiz_slots`; the terminal
   save and DELETE (start-over archive) delete/archive the DB slot too.
 - **owner Delete** — `quiz-session` DELETE (still keyed by blob URL) also
   deletes the matching DB row (by `source_blob`), so a deletion can't
@@ -366,6 +381,11 @@ historical and comes out.
   needs multi-statement transactions beyond what an upsert/RPC covers.
 - **RLS deny-all + service key only.** No anon key anywhere; the browser never
   talks to Supabase. Auth model (signed httpOnly cookie) unchanged.
+- **Shared project with whisper-anywhere** (free-plan cap). The `rc_` prefix
+  is the isolation boundary: our migrations/scripts/backups only ever touch
+  `rc_*` tables. The shared blast radius is the service key (either app could
+  technically read the other's tables) and the free-tier resource pool — both
+  acceptable for two low-traffic personal apps; revisit if either grows.
 - **Privacy improves**: session details (transcripts) move from
   public-but-unguessable blob URLs to an auth-scoped API. Audio stays on
   unguessable blob URLs (unchanged posture — revisit later if needed).
