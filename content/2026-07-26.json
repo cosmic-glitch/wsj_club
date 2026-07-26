@@ -1,0 +1,120 @@
+{
+  "date": "2026-07-26",
+  "title": "The rise of the deserving rich",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/07/23/the-rise-of-the-deserving-rich",
+  "articlePageUrl": "/articles/2026-07-26.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "loathe",
+      "partOfSpeech": "verb",
+      "pronunciation": "LOHTH",
+      "articleQuote": "Billionaires have never exactly been popular, but today they are loathed.",
+      "inContext": "The article is drawing a line between two different feelings. People have always been a bit suspicious of the very rich — that is the \"never exactly been popular\" part. What is new, the writer says, is something much hotter: an active disgust, the kind of feeling that shows up in campaign slogans and fundraising emails.",
+      "meaning": "To loathe something is to hate it with a feeling of disgust — not just to dislike it or find it annoying, but to find it repellent. It is one of the strongest words in English for dislike, so it loses its force if you spend it on small things.",
+      "examples": [
+        "She loves every sport except cross-country, which she loathes with her whole heart.",
+        "He loathed the smell of the science lab so much that he held his breath walking past it."
+      ]
+    },
+    {
+      "word": "plausibly",
+      "partOfSpeech": "adverb",
+      "pronunciation": "PLAW-zuh-blee",
+      "articleQuote": "Yet they plausibly represent policy failures too, on the grounds that their immense riches are undeserved.",
+      "inContext": "Notice how careful this word is. The writer is talking about people who inherited their billions and is saying: you could reasonably make the case against them. It is not \"they definitely are policy failures\" — it is \"that argument holds together.\" The word marks the difference between a claim being arguable and a claim being proved.",
+      "meaning": "Plausibly means in a way that seems reasonable or believable, based on what we know. It signals that something is worth taking seriously — but stops short of saying it is true. (The related adjective is plausible.)",
+      "examples": [
+        "He could plausibly claim he didn't hear the alarm, since his headphones were on the whole time.",
+        "Her theory about who took the missing charger was plausible, but nobody could prove it."
+      ]
+    },
+    {
+      "word": "begrudge",
+      "partOfSpeech": "verb",
+      "pronunciation": "bih-GRUJ",
+      "articleQuote": "Can you really begrudge someone who makes such great T-shirts?",
+      "inContext": "The writer has just introduced the founder of Uniqlo, worth tens of billions of dollars, and is asking the reader a pointed question. He is not asking whether the man is rich — he obviously is. He is asking whether you can resent him for it, when what he did to get rich was sell you something you were glad to buy.",
+      "meaning": "To begrudge someone something is to resent that they have it — to feel they don't deserve it, or to give it grudgingly. You can begrudge a person their money, their luck, their praise, or even the time you spend helping them.",
+      "examples": [
+        "Nobody begrudged her the trophy — she had trained harder than anyone on the team.",
+        "He begrudged every minute of the two hours he spent redoing a group project his partner had rushed."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Rent-seeking vs. value creation",
+      "articleQuote": "These sectors often depend on political access. It is hard to open a mine or a casino, for instance, without friends in the government.",
+      "meaning": "This is one of the big organising ideas in economics, and once you have it you will see it everywhere. Economists split money-making into two kinds. Value creation is getting paid because you made something people actually wanted. Rent-seeking is getting paid because you control a position other people aren't allowed to compete for.\n\nPicture two lemonade stands on the same street. The first one wins by making better lemonade — colder, cheaper, with real lemons. If you want to beat it, you can: make yours better. The second one wins differently. Its owner is friends with whoever hands out permits, and there is now exactly one permit for the whole street. That lemonade can be mediocre and warm and it will still sell, because you are not allowed to open a stand next to it. The word \"rent\" here is an old economics term — it doesn't mean apartment rent, it means the extra money you can charge purely because nobody is permitted to undercut you.\n\nThat distinction is exactly what this article is built on. When it sorts billionaires into \"competitive\" and \"uncompetitive\" industries, it is really asking: did this person have to win customers, or did they just have to win a licence? Selling T-shirts, scoring goals, and running a restaurant chain all require millions of people to keep choosing you, and they can stop tomorrow. Opening a casino or a mine usually requires a government's permission, and once you have it, no one can take your customers by simply doing the job better.\n\nThe useful habit is to ask it of any rich person or successful company you read about: what would happen if a rival tried to compete with them tomorrow? If the answer is \"they'd have to be better,\" that's value creation. If the answer is \"they'd be blocked,\" that's rent-seeking."
+    },
+    {
+      "name": "Paper wealth",
+      "articleQuote": "This has done a great deal for founders, whose wealth is often tied up in shares, as well as enriching some hedge-fund managers.",
+      "meaning": "This idea comes from finance and accounting, where it goes by the technical name mark-to-market. Here's the thing it fixes in your head: when you read that someone is \"worth $60 billion,\" there is no vault with $60 billion in it. Almost none of that is money. It is a multiplication — the number of company shares they own, times what one share sold for today.\n\nThat second number is set by strangers trading with each other, which means a person's fortune moves enormously while they sit perfectly still. Elon Musk, the article notes, \"briefly became the world's first trillionaire\" and then wasn't one anymore. He didn't spend it. SpaceX's share price fell, and the multiplication produced a smaller answer. Wang Jianlin was worth $31bn in 2017 and $4.4bn now, mostly for the same reason in reverse — Chinese property prices sank and took his number with them.\n\nYou already know this feeling from anything you collect. A rare skin or a graded card is \"worth $400\" because that's what the last one sold for. Your card sat in a drawer all week and did nothing, and now the tracker says $250. You are $150 poorer without having done a single thing — and you don't actually have either number until someone hands you cash for it.\n\nThis matters for reading the news. It explains why billionaire rankings lurch around, why a decade of rising stock markets creates billionaires without anyone inventing anything new that year, and why \"tax their wealth\" is harder than it sounds: you would be taxing a number that only becomes real when they sell."
+    },
+    {
+      "name": "Threshold effects",
+      "articleQuote": "Billionaire-creation is not linear. At low levels of income, even rapid growth can leave most fortunes far from the billion-dollar line. But once a country is richer, many more sit just below it.",
+      "meaning": "This is an idea from mathematics that economists lean on constantly, and it is the answer to a genuine puzzle in this article. China's economy grew more slowly over the past decade than in the decade before it. Yet its billionaire count went from about 200 to about 800. How does less growth produce more billionaires?\n\nThink about a high-jump bar set at five feet. Now imagine some magic that makes every athlete in the gym jump two inches higher. How many new people clear the bar? It depends entirely on something the two inches can't tell you: where everyone was standing. If the whole group tops out around three feet, your two inches produce exactly zero new clearers. If the group is bunched at four feet ten, the same two inches produce a flood of them.\n\nThat's a threshold effect. When there's a hard line — cleared or not, over or under — what matters isn't only how much things changed, but how many people were sitting just beneath the line when the change arrived. China's earlier fast growth mostly moved people from far below the billion-dollar bar to somewhat closer to it, which creates no billionaires at all. Its later, slower growth then nudged a crowd that was already stacked up just underneath, and hundreds crossed.\n\nYou live with these lines all the time. The gap between an 89 and a 90 is one point and can be the gap between two letter grades, while the gap between a 91 and a 98 is seven points and changes nothing. Qualifying times, tax brackets, minimum heights for a ride, the cutoff for a team — every one of them means a tiny change can matter enormously or not at all, depending entirely on where you were standing when it hit."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article mentions that Elon Musk \"briefly became the world's first trillionaire\" before dropping back below that mark. What mainly caused the drop?",
+      "options": [
+        "He gave a huge share of his fortune away to charity",
+        "SpaceX's share price fell, so the value of the shares he owns went down",
+        "He paid an enormous one-time tax bill",
+        "He sold one of his companies for less than he had paid for it"
+      ],
+      "answerIndex": 1,
+      "explanation": "His wealth is mostly shares, not cash — so when SpaceX's share price fell, his \"net worth\" fell with it without him doing anything."
+    },
+    {
+      "question": "The Economist writes that inheritors \"plausibly represent policy failures too.\" What does that word, plausibly, tell you about how firmly the writer is making that claim?",
+      "options": [
+        "It is a reasonable argument, but the writer is not calling it proven",
+        "It has been proved with data earlier in the article",
+        "The writer thinks the argument is obviously wrong",
+        "It is a claim everyone already agrees about"
+      ],
+      "answerIndex": 0,
+      "explanation": "Plausibly means the case seems believable and worth taking seriously — it deliberately stops short of saying it is true."
+    },
+    {
+      "question": "Which fortune best fits what the article calls \"uncompetitive\" wealth?",
+      "options": [
+        "A footballer paid enormous sums because millions of fans watch him play",
+        "A founder who built a clothing chain that sells cheap T-shirts worldwide",
+        "A casino owner whose business depends on a licence that is very hard to get",
+        "A restaurant founder whose chain serves millions of cheap meals"
+      ],
+      "answerIndex": 2,
+      "explanation": "A casino needs government permission that rivals can't easily obtain — the money comes from holding a protected position rather than from out-competing anyone."
+    },
+    {
+      "question": "China's economy grew more slowly in the past decade than in the 2000s, yet its number of billionaires rose from roughly 200 to roughly 800. What explanation does the article give?",
+      "options": [
+        "Chinese billionaires mostly inherited their money from earlier generations",
+        "Slower growth is generally better than fast growth at creating large fortunes",
+        "China simply changed how it counts who is a billionaire",
+        "By then many fortunes already sat just below the billion-dollar line, so modest growth pushed lots of them over"
+      ],
+      "answerIndex": 3,
+      "explanation": "This is a threshold effect: what matters is not just how much things grew, but how many people were bunched just beneath the line when the growth arrived."
+    },
+    {
+      "question": "\"Can you really begrudge someone who makes such great T-shirts?\" What is the writer asking?",
+      "options": [
+        "Whether you can resent that person for the money they've made",
+        "Whether that person's T-shirts are worth their price",
+        "Whether you would lend that person money",
+        "Whether that person ought to pay their workers more"
+      ],
+      "answerIndex": 0,
+      "explanation": "To begrudge someone something is to resent that they have it — here, the writer is asking whether the resentment is fair when the wealth came from selling people something they wanted."
+    }
+  ]
+}

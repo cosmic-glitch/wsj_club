@@ -1,0 +1,474 @@
+[
+  {
+    "k": "loathe",
+    "t": "loathed",
+    "kind": "vocab",
+    "pron": "LOHTH",
+    "forms": ["loathed"],
+    "text": "To loathe something is to hate it with real disgust — much stronger than disliking it. The article opens by drawing a careful line: billionaires were never exactly popular, but being loathed is a hotter, more active feeling, the kind that shows up in campaign slogans and fundraising emails."
+  },
+  {
+    "k": "plausibly",
+    "t": "plausibly",
+    "kind": "vocab",
+    "pron": "PLAW-zuh-blee",
+    "forms": ["plausibly"],
+    "text": "Plausibly means in a way that seems reasonable or believable — it says an argument holds together, without claiming it has been proved. Watch how carefully it works here: heirs \"plausibly represent policy failures too\" means you could reasonably make that case against them, not that the case is settled."
+  },
+  {
+    "k": "begrudge",
+    "t": "begrudge",
+    "kind": "vocab",
+    "pron": "bih-GRUJ",
+    "forms": ["begrudge"],
+    "text": "To begrudge someone something is to resent that they have it — to feel they don't deserve it. Having just described the founder of Uniqlo, worth tens of billions, the writer asks whether you can really begrudge a man whose fortune came from selling people T-shirts they were glad to buy."
+  },
+  {
+    "k": "decry",
+    "t": "decry",
+    "kind": "word",
+    "forms": ["decry"],
+    "text": "To decry something is to condemn it loudly and publicly. Politicians decry billionaires' \"ill-gotten gains\" — they aren't quietly disagreeing, they're denouncing them in speeches meant to be heard."
+  },
+  {
+    "k": "ill-gotten",
+    "t": "ill-gotten gains",
+    "kind": "phrase",
+    "forms": ["ill-gotten gains", "ill-gotten"],
+    "text": "Ill-gotten gains are profits obtained dishonestly or unfairly — the phrase is centuries old and always carries an accusation. It's what critics in Congress say billionaires have, and testing whether that accusation is still true is the whole project of this article."
+  },
+  {
+    "k": "malign",
+    "t": "malign",
+    "kind": "word",
+    "forms": ["malign"],
+    "text": "Malign describes something harmful in a deliberate, ill-willed way — evil influence rather than accidental damage. Politicians accuse billionaires of a malign influence on politics: not merely a big effect, but a bad one they intend. As a verb, to malign someone means to speak evil of them."
+  },
+  {
+    "k": "rigged",
+    "t": "rigged",
+    "kind": "word",
+    "forms": ["rigged"],
+    "text": "Something rigged has been secretly arranged in advance so a particular side wins — a rigged game, a rigged election. \"A rigged economy\" is the claim that the rules themselves are tilted, so the outcome was never a fair contest."
+  },
+  {
+    "k": "ten-figure-club",
+    "t": "the ten-figure club",
+    "kind": "phrase",
+    "forms": ["ten-figure club"],
+    "text": "Count the digits: $1,000,000,000 has ten of them. \"The ten-figure club\" is a wry way of saying billionaires — a club whose only entry requirement is the length of your number."
+  },
+  {
+    "k": "policy-failure",
+    "t": "policy failure",
+    "kind": "phrase",
+    "forms": ["policy failure", "policy failures"],
+    "text": "A policy failure means the rules a government chose produced a bad result — the blame sits with the system, not the individual. \"Every billionaire is a policy failure\" is a slogan from the left arguing that no one should be able to get that rich under well-designed rules, so each fortune is evidence something went wrong."
+  },
+  {
+    "k": "derive",
+    "t": "derive",
+    "kind": "word",
+    "forms": ["derive", "derived"],
+    "text": "To derive something is to get it from a particular source. Wealth derived from inheritance and wealth derived from building a business are the two sources this whole article is busy separating."
+  },
+  {
+    "k": "gaming-the-system",
+    "t": "gaming the system",
+    "kind": "phrase",
+    "forms": ["gaming the system"],
+    "text": "Gaming the system means exploiting the rules to your advantage without technically breaking them — following the letter of the rules while defeating their point. Note the sense of \"gaming\" here: nothing to do with video games, everything to do with playing an angle."
+  },
+  {
+    "k": "sketchy",
+    "t": "sketchy",
+    "kind": "word",
+    "forms": ["sketchy"],
+    "text": "In this informal sense, sketchy means dubious or untrustworthy — a sketchy deal is one you suspect isn't clean. (The other meaning, \"lacking detail, like a rough sketch,\" is unrelated.) Saying many billionaires are \"unquestionably sketchy\" concedes the critics' point before the argument turns."
+  },
+  {
+    "k": "net-worth",
+    "t": "net worth",
+    "kind": "phrase",
+    "forms": ["net worth"],
+    "text": "Your net worth is everything you own minus everything you owe — \"net\" always means after the subtractions. When the article says Rockefeller's net worth crossed $1bn, it doesn't mean he had a billion dollars in cash; most of it was the value of what he owned."
+  },
+  {
+    "k": "stack-the-deck",
+    "t": "stack the deck",
+    "kind": "phrase",
+    "forms": ["stack the deck"],
+    "text": "To stack the deck is to arrange a card deck secretly so you'll win — and, by extension, to fix any situation in your own favour before it starts. Standard Oil is said to have used weak competition laws and bribes to stack the deck, meaning it didn't just play the game well, it bent the game."
+  },
+  {
+    "k": "oligarchs",
+    "t": "oligarchs",
+    "kind": "word",
+    "forms": ["oligarchs", "oligarch"],
+    "text": "Oligarchs are a small group of extremely rich people who hold real political power alongside their money — the word comes from Greek for \"rule by the few.\" It's used most often for the businessmen who grabbed state industries as the Soviet Union collapsed, which is exactly the group this article names."
+  },
+  {
+    "k": "seized",
+    "t": "seized",
+    "kind": "word",
+    "forms": ["seized"],
+    "text": "To seize something is to take it suddenly and by force, without permission. Russia's oligarchs \"seized state assets\" — factories, oilfields and mines that had belonged to the whole country were simply taken during the chaos of the 1990s."
+  },
+  {
+    "k": "dodgy",
+    "t": "dodgy",
+    "kind": "word",
+    "forms": ["dodgy"],
+    "text": "Dodgy is British informal for shady or not-quite-honest — a dodgy character, a dodgy deal. \"Dodgy wealth is a satirist's dream\" means crooked money is easy and fun to mock, which is why cartoons keep inventing villains like Mr Burns."
+  },
+  {
+    "k": "satirist",
+    "t": "satirist",
+    "kind": "word",
+    "forms": ["satirist’s"],
+    "text": "A satirist is a writer or cartoonist who attacks something by making it ridiculous — mockery aimed at a target rather than jokes for their own sake. The Simpsons is satire, and its nuclear-plant owner is a satirist's version of a billionaire."
+  },
+  {
+    "k": "burns",
+    "t": "C. Montgomery Burns",
+    "kind": "name",
+    "forms": ["C. Montgomery Burns"],
+    "text": "Mr Burns is the ancient, miserly nuclear-plant owner in The Simpsons — cartoon shorthand for a rich man who cuts corners at everyone else's expense. The article uses him as its picture of the bad kind of wealth, the opposite end of the scale from Oprah Winfrey."
+  },
+  {
+    "k": "skimps",
+    "t": "skimps",
+    "kind": "word",
+    "forms": ["skimps"],
+    "text": "To skimp on something is to spend too little on it, cutting a corner that shouldn't be cut. Mr Burns skimps on safety at his nuclear plant to save money — the joke being that safety is the last place you'd want savings."
+  },
+  {
+    "k": "rockefeller",
+    "t": "John D. Rockefeller",
+    "kind": "name",
+    "forms": ["John D. Rockefeller"],
+    "text": "Rockefeller (1839–1937) built Standard Oil into an empire that controlled most American oil refining, and was probably the first person ever worth a billion dollars. He's the historical benchmark for both sides of this article's argument: a genuine business genius who also crushed competitors in ways now illegal."
+  },
+  {
+    "k": "standard-oil",
+    "t": "Standard Oil",
+    "kind": "name",
+    "forms": ["Standard Oil"],
+    "text": "Standard Oil was Rockefeller's oil company, so dominant that the US government eventually broke it into pieces in 1911 — the case that shaped modern competition law. The article's point is that it grew partly on merit and partly because the laws meant to stop it were still weak."
+  },
+  {
+    "k": "sentiment",
+    "t": "sentiment",
+    "kind": "word",
+    "forms": ["sentiment"],
+    "text": "Sentiment here means the general mood or opinion a group holds — not sentimentality or soppiness. \"Anti-billionaire sentiment\" is the public feeling running against the rich, the thing the article says is surging just as the facts underneath begin to shift."
+  },
+  {
+    "k": "surge",
+    "t": "surge",
+    "kind": "word",
+    "forms": ["surge", "surged"],
+    "text": "A surge is a sudden powerful rise, like a wave swelling — the word implies speed and force, not a gentle climb. Two different things surge in this piece: anger at billionaires, and the share of billionaire wealth that was actually earned."
+  },
+  {
+    "k": "market-power",
+    "t": "market power",
+    "kind": "phrase",
+    "forms": ["market power"],
+    "text": "Market power is a company's ability to raise its prices without losing its customers — which only works when buyers have nowhere better to go. The accusation described here is that billionaires use market power to overcharge for everything from housing to groceries."
+  },
+  {
+    "k": "two-sides-same-coin",
+    "t": "two sides of the same coin",
+    "kind": "phrase",
+    "forms": ["two sides of the same coin"],
+    "text": "Two things are two sides of the same coin when they look separate but are really one thing seen from different angles — you can't have one without the other. The claim here is that the affordability crisis and the powerful billionaire aren't two problems but one."
+  },
+  {
+    "k": "hit-on",
+    "t": "hit on",
+    "kind": "phrase",
+    "forms": ["hit on a winning message"],
+    "text": "To hit on an idea is to find it, often by luck rather than design — like hitting on the answer to a riddle. Politicians think they have hit on a winning message; the article's twist is that the facts started moving underneath it just as they found it."
+  },
+  {
+    "k": "monopolies",
+    "t": "monopolies",
+    "kind": "word",
+    "forms": ["monopolies"],
+    "text": "A monopoly exists when one seller controls a market with no real competition, so customers must accept its price. The test the article applies to each fortune is whether it rests on \"questionable monopolies or political favour\" — a protected position — or on customers freely choosing you."
+  },
+  {
+    "k": "quantified",
+    "t": "quantified",
+    "kind": "word",
+    "forms": ["quantified"],
+    "text": "To quantify something is to turn it into numbers you can count and compare. The interesting move here is quantifying a question that sounds unmeasurable — which fortunes are \"better\" and \"worse\" — by counting something you can measure instead: which industry the money came from."
+  },
+  {
+    "k": "forbes",
+    "t": "Forbes",
+    "kind": "name",
+    "forms": ["Forbes"],
+    "text": "Forbes is an American business magazine best known for publishing annual lists of the world's richest people. Those lists are estimates, not audited accounts, which is why the article draws on Forbes plus two other sources to build its 7,000-billionaire database."
+  },
+  {
+    "k": "defence-industry",
+    "t": "defence",
+    "kind": "word",
+    "forms": ["defence"],
+    "text": "Defence here means the weapons and military-equipment industry (British spelling of \"defense\"). It's grouped with gambling, construction and raw materials as \"uncompetitive\" because its customer is usually the government itself — you win by winning contracts, not shoppers."
+  },
+  {
+    "k": "heirs",
+    "t": "Heirs",
+    "kind": "word",
+    "forms": ["Heirs", "inheritors"],
+    "text": "An heir is someone who inherits money, property or a title from a relative. The article makes a pointed distinction: heirs usually haven't broken any law or cheated anyone — they were simply born into the right family — yet it still files their wealth under \"uncompetitive.\""
+  },
+  {
+    "k": "screwed-over",
+    "t": "screwed over",
+    "kind": "phrase",
+    "forms": ["screwed over"],
+    "text": "To screw someone over is blunt informal English for treating them unfairly to your own advantage. Its bluntness is doing a job here: heirs have not screwed over customers, which is precisely why lumping them in with oligarchs is awkward."
+  },
+  {
+    "k": "immense",
+    "t": "immense",
+    "kind": "word",
+    "forms": ["immense"],
+    "text": "Immense means enormous, beyond ordinary scale. Calling inherited riches \"immense\" sets up the argument against them: the objection isn't that heirs did something wrong, it's that the sheer size of what they were handed seems undeserved."
+  },
+  {
+    "k": "undeserved",
+    "t": "undeserved",
+    "kind": "word",
+    "forms": ["undeserved"],
+    "text": "Undeserved means not earned — received without having done anything to warrant it. The word is the hinge of the whole article, whose title claims a growing share of today's billionaires are, by contrast, deserving."
+  },
+  {
+    "k": "entrepreneurs",
+    "t": "entrepreneurs",
+    "kind": "word",
+    "forms": ["entrepreneurs"],
+    "text": "An entrepreneur starts and runs a business, taking on the risk of it failing in exchange for the reward if it works. \"Self-made entrepreneurs in competitive sectors\" is the article's name for the good category — people who had to win customers rather than permission."
+  },
+  {
+    "k": "out-and-out",
+    "t": "out-and-out",
+    "kind": "phrase",
+    "forms": ["Out-and-out"],
+    "text": "Out-and-out means complete, thoroughgoing, no qualifications attached — an out-and-out lie is entirely a lie. \"Out-and-out oligarchs\" are the unambiguous cases, as opposed to the borderline ones the article has been carefully sorting."
+  },
+  {
+    "k": "colossal",
+    "t": "colossal",
+    "kind": "word",
+    "forms": ["colossal"],
+    "text": "Colossal means gigantic. It comes from the Colossus of Rhodes, an ancient statue so enormous it became a byword for size — so a \"policy failure of colossal proportions\" is one on the scale of a monument."
+  },
+  {
+    "k": "devastated",
+    "t": "devastated",
+    "kind": "word",
+    "forms": ["devastated"],
+    "text": "To devastate something is to destroy or ruin it comprehensively. Here it's literal rather than emotional: war has devastated the factories and mines in Ukraine that made Rinat Akhmetov rich."
+  },
+  {
+    "k": "sanctions",
+    "t": "sanctions",
+    "kind": "word",
+    "forms": ["sanctions"],
+    "text": "Sanctions are penalties one country imposes on another — freezing bank accounts, banning trade, seizing property — to force a change in behaviour without going to war. Western sanctions on people close to Putin are why Roman Abramovich is billions poorer than in 2021."
+  },
+  {
+    "k": "taken-their-toll",
+    "t": "taken their toll",
+    "kind": "phrase",
+    "forms": ["taken their toll"],
+    "text": "A toll was originally a fee charged for passing along a road; to take a toll is to exact a cost gradually. Saying the sanctions have taken their toll means the damage accumulated steadily rather than landing all at once."
+  },
+  {
+    "k": "clientelist",
+    "t": "clientelist",
+    "kind": "word",
+    "forms": ["clientelist"],
+    "text": "A clientelist industry is one where success depends on favours traded with politicians — you get contracts, permits or protection in return for loyalty or money. It's the formal name for exactly what this article means by \"uncompetitive\": property, casinos and mining, where the useful relationship is with an official, not a customer."
+  },
+  {
+    "k": "moguls",
+    "t": "moguls",
+    "kind": "word",
+    "forms": ["moguls"],
+    "text": "A mogul is a powerful owner in some particular industry — a casino mogul, a media mogul. The word is a leftover from the Mughal emperors of India, borrowed into English to suggest someone who rules their business the way an emperor rules a country."
+  },
+  {
+    "k": "crackdown",
+    "t": "crackdown",
+    "kind": "word",
+    "forms": ["crackdown"],
+    "text": "A crackdown is a sudden burst of strict enforcement against something previously tolerated. China's crackdown on gambling in Macao is why several casino fortunes shrank — a reminder that wealth built on official permission can shrink the moment officials change their minds."
+  },
+  {
+    "k": "macao",
+    "t": "Macao",
+    "kind": "name",
+    "forms": ["Macao"],
+    "text": "Macao is a small territory on China's south coast, run under Chinese sovereignty with its own laws, and the only place in the country where casino gambling is legal. That legal monopoly made a handful of people extraordinarily rich — and left them exposed when Beijing tightened the rules."
+  },
+  {
+    "k": "populate",
+    "t": "populate",
+    "kind": "word",
+    "forms": ["populate"],
+    "text": "To populate something is to fill it — usually a place with people, but here a list with names. Cargill's descendants \"still populate rich lists\": more than 150 years on, the same family keeps appearing on them."
+  },
+  {
+    "k": "old-money",
+    "t": "old money",
+    "kind": "phrase",
+    "forms": ["old money"],
+    "text": "Old money means wealth inherited across generations, as opposed to \"new money\" made in one lifetime — and traditionally the phrase carried a whiff of social superiority. The article's finding turns that snobbery upside down: old money is \"fast losing relative power,\" down from about half of billionaire wealth to a quarter."
+  },
+  {
+    "k": "relative",
+    "t": "relative",
+    "kind": "word",
+    "forms": ["relative"],
+    "text": "Relative means measured against something else rather than on its own. It matters here: old money is losing relative power, meaning its share of the total is shrinking — inherited fortunes are still enormous, they're just a smaller slice of a much bigger pie."
+  },
+  {
+    "k": "threshold",
+    "t": "threshold",
+    "kind": "word",
+    "forms": ["threshold"],
+    "text": "A threshold is a line you cross — originally the strip of wood under a doorway, now any level at which something changes. The article uses it twice over: the 13-figure threshold Musk briefly crossed into trillionaire territory, and the billion-dollar line that a crowd of nearly-billionaires in China was sitting just beneath."
+  },
+  {
+    "k": "linear",
+    "t": "linear",
+    "kind": "word",
+    "forms": ["linear"],
+    "text": "Something is linear when a change in one thing produces a matching, proportional change in another — double the input, double the output, a straight line on a graph. \"Billionaire-creation is not linear\" is the key to the China puzzle: the same amount of growth can produce almost no new billionaires or hundreds, depending on how many fortunes were already near the line."
+  },
+  {
+    "k": "at-first-glance",
+    "t": "At first glance",
+    "kind": "phrase",
+    "forms": ["At first glance"],
+    "text": "At first glance means on a quick look, before you examine something properly — and it almost always signals that the writer is about to overturn the first impression. Sure enough: slower Chinese growth producing far more billionaires looks impossible, until the threshold explanation arrives."
+  },
+  {
+    "k": "slump",
+    "t": "slump",
+    "kind": "word",
+    "forms": ["slump"],
+    "text": "A slump is a sharp, sustained fall in prices or business activity — the word suggests something sagging rather than crashing. China's property slump is the collapse in its housing market, which wiped out fortunes like Wang Jianlin's."
+  },
+  {
+    "k": "dethroned",
+    "t": "dethroned",
+    "kind": "word",
+    "forms": ["dethroned"],
+    "text": "To dethrone someone is to remove them from a throne, and by extension from any top position. Calling falling property prices something that \"dethroned some billionaires\" quietly makes the point that these fortunes were more like inherited kingdoms than earned prizes."
+  },
+  {
+    "k": "bull-market",
+    "t": "bull market",
+    "kind": "phrase",
+    "forms": ["bull market"],
+    "text": "A bull market is a long stretch in which share prices keep rising (a bear market is the falling opposite — the bull attacks by throwing its horns upward, the bear by swiping down). The decade-long bull market described here made founders vastly richer without their companies necessarily doing anything new, because their wealth is mostly shares."
+  },
+  {
+    "k": "equities",
+    "t": "equities",
+    "kind": "word",
+    "forms": ["equities"],
+    "text": "Equities is just the formal word for shares in companies — an \"equity\" is a slice of ownership. \"Global equities returned more than 13% a year\" means a spread of shares from around the world gained that much annually, on average, over the decade."
+  },
+  {
+    "k": "techno-optimism",
+    "t": "techno-optimism",
+    "kind": "word",
+    "forms": ["techno-optimism"],
+    "text": "Techno-optimism is the belief that technology will keep making things dramatically better — and, for investors, that tech companies will keep growing. The article notes it kept money flowing into risky bets \"even when rates rose,\" which normally pulls money out."
+  },
+  {
+    "k": "hedge-fund",
+    "t": "hedge-fund managers",
+    "kind": "name",
+    "forms": ["hedge-fund managers"],
+    "text": "A hedge fund invests large sums for wealthy clients using strategies ordinary funds can't, and its managers keep a slice of the profits — which is how a person, rather than a company, gets rich from rising markets. They're mentioned as a second group swept up by the same decade-long boom."
+  },
+  {
+    "k": "lvmh",
+    "t": "LVMH",
+    "kind": "name",
+    "forms": ["LVMH"],
+    "text": "LVMH is the French company that owns Louis Vuitton, Dior, Moët and dozens of other luxury brands — the biggest luxury group in the world. Bernard Arnault assembled it by buying famous names one at a time, and it added roughly $100bn to his fortune in a decade."
+  },
+  {
+    "k": "catl",
+    "t": "CATL",
+    "kind": "name",
+    "forms": ["CATL"],
+    "text": "CATL is the Chinese firm that makes more electric-vehicle batteries than anyone else on earth, supplying carmakers worldwide. It's here as the article's cleanest example of fast, self-made wealth outside American tech: founded in 2011, and its founder is worth $60bn."
+  },
+  {
+    "k": "ubiquitous",
+    "t": "ubiquitous",
+    "kind": "word",
+    "forms": ["ubiquitous"],
+    "text": "Ubiquitous means present everywhere at once. Mobile phones made payments and messaging ubiquitous — not merely popular but always within reach, in everyone's pocket all day, which is what let companies like Stripe and ByteDance grow at speeds no earlier business could."
+  },
+  {
+    "k": "striking-gold",
+    "t": "striking gold",
+    "kind": "phrase",
+    "forms": ["striking gold"],
+    "text": "To strike gold is to hit a rich seam while digging — the image is from the gold rushes — and now means suddenly finding something enormously valuable. People are \"striking gold\" in finance, food and manufacturing: the point is that it's no longer only tech founders getting rich."
+  },
+  {
+    "k": "titan",
+    "t": "titan",
+    "kind": "word",
+    "forms": ["titan"],
+    "text": "A titan is a giant of its field. The Titans were the enormous gods who ruled before Zeus in Greek myth, so calling LVMH a \"global luxury titan\" says it doesn't just compete in that industry — it towers over it."
+  },
+  {
+    "k": "sway",
+    "t": "sway",
+    "kind": "word",
+    "forms": ["sway"],
+    "text": "To sway something is to influence which way it goes — the image is of physically tipping it. Musk's \"desire to sway elections\" is the article's concession to its own opponents: this objection to billionaires survives even if every one of them earned their money honestly."
+  },
+  {
+    "k": "to-the-hilt",
+    "t": "to the hilt",
+    "kind": "phrase",
+    "forms": ["to the hilt"],
+    "text": "The hilt is a sword's handle, so driving a blade in to the hilt means all the way — completely, with nothing held back. \"Taxing Mr Abramovich to the hilt\" means taxing him as hard as possible, and the sentence's force comes from what follows: but Lionel Messi?"
+  },
+  {
+    "k": "spurs",
+    "t": "spurs",
+    "kind": "word",
+    "forms": ["spurs"],
+    "text": "A spur is the spike a rider digs into a horse to make it go; to spur something is to drive it forward. The claim that today's billionaires' wealth \"spurs employment growth and productivity gains\" is that their businesses actively cause hiring and efficiency, rather than merely coinciding with them."
+  },
+  {
+    "k": "productivity",
+    "t": "productivity gains",
+    "kind": "phrase",
+    "forms": ["productivity gains"],
+    "text": "Productivity means how much output you get per hour of work, and productivity gains are improvements in that ratio — the same people producing more, usually through better tools or methods. It's the single biggest reason living standards rise over decades, which is why the article treats it as a serious point in billionaires' favour."
+  },
+  {
+    "k": "remedies",
+    "t": "remedies",
+    "kind": "word",
+    "forms": ["remedies"],
+    "text": "A remedy is a cure or fix — medical originally, but standard for any proposed solution to a problem. The closing line does a neat two-step: billionaires are less popular than ever, but the remedies on offer, chiefly wealth taxes, \"look weaker than ever.\""
+  }
+]
