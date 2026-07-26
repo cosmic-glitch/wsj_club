@@ -1,278 +1,400 @@
 [
- {
-  "k": "nefarious",
-  "t": "nefarious",
-  "kind": "vocab",
-  "pron": "nih-FAIR-ee-us",
-  "forms": ["nefarious"],
-  "text": "Nefarious means wicked and villainous — done with criminal intent, the word you'd reach for to describe a movie villain's scheme. Here it's the hackers' “nefarious traffic”: attack data they disguised by routing it through ordinary families' internet connections, so the crime wore an innocent address."
- },
- {
-  "k": "conduit",
-  "t": "conduit",
-  "kind": "vocab",
-  "pron": "KON-doo-it",
-  "forms": ["conduit"],
-  "text": "A conduit is a channel or pipe that carries something from one place to another — water, wiring, information. Nation-state hackers use residential proxy networks as their conduit to American targets: the pipe their attacks travel through, made of hijacked living-room gadgets."
- },
- {
-  "k": "counterpart",
-  "t": "counterpart",
-  "kind": "vocab",
-  "pron": "KOWN-tur-part",
-  "forms": ["counterpart"],
-  "text": "Your counterpart is the person holding the same job as you, but somewhere else — the matching piece on the other side. The whole investigation began with one security chief calling his counterpart: Microsoft's top security executive phoning the person with the same role at Comcast."
- },
- {
-  "k": "back-door",
-  "t": "back door",
-  "kind": "phrase",
-  "forms": ["back door", "backdoor", "backdoors"],
-  "text": "In computer security, a back door is a hidden way into a system that skips the locks on the front door — often planted in advance so an attacker can stroll in later. The article's headline image is literal and figurative at once: an estimated 20 million of these backdoors sit inside American homes, built into everyday gadgets."
- },
- {
-  "k": "foes",
-  "t": "foes",
-  "kind": "word",
-  "forms": ["foes"],
-  "text": "A foe is an enemy — an old, slightly dramatic word that survives in phrases like “friend or foe.” Calling Midnight Blizzard one of the most capable “cybersecurity foes in the world” signals this isn't a teenager in a basement; it's an elite adversary."
- },
- {
-  "k": "ip-address",
-  "t": "IP address",
-  "kind": "name",
-  "forms": ["IP addresses"],
-  "text": "Every device on the internet has an IP address — a numeric label, “the internet's equivalent of a phone number,” that says where data should go and where it came from. It's also a trail: traffic showing a U.S. home's IP address looks like it came from that home, which is precisely what the hackers exploit."
- },
- {
-  "k": "mask",
-  "t": "mask",
-  "kind": "word",
-  "forms": ["mask"],
-  "text": "To mask something is to hide it behind a false face, as a mask hides yours. The Russian hackers used consumer internet connections to mask their traffic — dressing their attack up as somebody's household streaming and browsing."
- },
- {
-  "k": "traffic",
-  "t": "traffic",
-  "kind": "word",
-  "forms": ["traffic"],
-  "text": "No cars here: internet traffic is the flow of data moving across the network — every request, message, and download in transit. Security teams watch traffic the way police watch a highway, which is why hackers go to such lengths to make theirs look local and ordinary."
- },
- {
-  "k": "rocked",
-  "t": "rocked",
-  "kind": "word",
-  "forms": ["rocked"],
-  "text": "News that “rocks” a community shakes it the way an earthquake rocks a building — stuns it and leaves it unsteady. What Comcast found rocked the cybersecurity world: the threat wasn't one hacked company but tens of millions of booby-trapped devices."
- },
- {
-  "k": "unravel",
-  "t": "unravel",
-  "kind": "word",
-  "forms": ["unravel"],
-  "text": "To unravel a mystery is to undo it thread by thread, like pulling apart a knitted sweater. This one took years to unravel — investigators tugging on six IP addresses until a network of 750,000 came into view."
- },
- {
-  "k": "fraud",
-  "t": "fraud",
-  "kind": "word",
-  "forms": ["fraud"],
-  "text": "Fraud is crime by deception — tricking people or systems out of money or valuables rather than taking them by force. Criminals use these hijacked-device networks for fraud; the scarier discovery is who else started renting them."
- },
- {
-  "k": "state-sponsored",
-  "t": "state-sponsored",
-  "kind": "phrase",
-  "forms": ["state-sponsored", "government-backed"],
-  "text": "State-sponsored (or government-backed) hackers work for a country — funded, directed, or protected by its government rather than freelancing for cash. The article names the usual sponsors: Russia, China, Iran, and North Korea. When a “state” is your attacker, the resources behind the attack are a nation's."
- },
- {
-  "k": "residential-proxy-network",
-  "t": "residential proxy network",
-  "kind": "name",
-  "forms": ["residential proxy networks", "residential proxy network"],
-  "text": "The article's central villain: a paid service that routes customers' internet traffic through software hidden on ordinary home devices — “like an Airbnb for internet access,” except the homeowners never agreed to host anyone. Pay the fee and your traffic emerges from a real family's living room in Bellingham, Washington, instead of from Moscow."
- },
- {
-  "k": "proxy",
-  "t": "proxy",
-  "kind": "word",
-  "forms": ["proxy", "proxies"],
-  "text": "A proxy is a stand-in — someone or something that acts on your behalf, so the world sees the stand-in instead of you. (You can vote by proxy.) In networking, a proxy relays your internet requests: used honestly it protects privacy; used by these hackers it makes an innocent household take the blame."
- },
- {
-  "k": "ballooned",
-  "t": "ballooned",
-  "kind": "word",
-  "forms": ["ballooned"],
-  "text": "When something balloons, it inflates — swelling fast and huge like a balloon being blown up. Officials say these proxy networks have ballooned in scale and risk: from a niche trick to an estimated 20 million backdoors in the U.S. alone."
- },
- {
-  "k": "advocacy",
-  "t": "advocacy",
-  "kind": "word",
-  "forms": ["advocacy"],
-  "text": "Advocacy is publicly arguing for a cause — an advocate speaks up on someone's behalf. An advocacy group like the Digital Citizens Alliance exists to push for change on an issue, here the safety of ordinary people's digital lives."
- },
- {
-  "k": "sheer",
-  "t": "sheer",
-  "kind": "word",
-  "forms": ["sheer"],
-  "text": "Sheer means pure and nothing-but — “the sheer numbers” means the numbers alone, before you consider anything else. Twenty million infected devices is a problem by sheer scale, whatever each individual gadget is doing."
- },
- {
-  "k": "go-to",
-  "t": "go-to",
-  "kind": "phrase",
-  "forms": ["go-to"],
-  "text": "Your go-to is the thing you reach for first — the reliable choice, like a team's go-to play. Residential proxy networks are now the go-to resource for nation-state hackers: standard equipment, not an exotic trick."
- },
- {
-  "k": "nation-state",
-  "t": "nation-state",
-  "kind": "phrase",
-  "forms": ["nation-state"],
-  "text": "A nation-state is simply a country — the formal term for a sovereign state. “Nation-state hackers” means hackers acting for a country's government, and the phrase is security-speak for the most dangerous tier of attacker there is."
- },
- {
-  "k": "leg-up",
-  "t": "leg up",
-  "kind": "phrase",
-  "forms": ["leg up"],
-  "text": "To give someone a leg up is to boost them over a wall — cupping your hands for their foot. Having a U.S.-based address gives foreign hackers a leg up in targeting American agencies and companies: a head-start advantage, because domestic traffic draws less suspicion."
- },
- {
-  "k": "attribute",
-  "t": "attribute",
-  "kind": "word",
-  "forms": ["attribute"],
-  "text": "To attribute an act is to pin down who's really behind it — to assign responsibility. Nine countries jointly warned that hacked home devices make it “challenging to attribute malicious activity”: the evidence points at innocent households, and the true culprit stays deniable. Breaking attribution is the entire point of the scheme."
- },
- {
-  "k": "malicious",
-  "t": "malicious",
-  "kind": "word",
-  "forms": ["malicious"],
-  "text": "Malicious means intended to cause harm — malice is the wish to hurt. In tech, “malicious activity” and “malicious software” (malware for short) are the standard labels for anything built to attack rather than serve."
- },
- {
-  "k": "cover-tracks",
-  "t": "cover their tracks",
-  "kind": "phrase",
-  "forms": ["cover their tracks"],
-  "text": "To cover your tracks is to erase the evidence of where you've been — the image is brushing away your footprints so no one can follow. China's state hackers used to cover their tracks by hacking devices themselves; now, the FBI official says, they can simply rent the camouflage."
- },
- {
-  "k": "bounce",
-  "t": "bounce",
-  "kind": "word",
-  "forms": ["bounce"],
-  "text": "In network-speak, to bounce traffic is to ricochet it off an intermediate point instead of connecting directly — like banking a shot off the backboard. A user in Moscow can bounce through a home network in Washington State, so the target sees only the last bounce, never the origin."
- },
- {
-  "k": "pulled-threads",
-  "t": "pulled on the threads",
-  "kind": "phrase",
-  "forms": ["pulled on the threads"],
-  "text": "Pull on a loose thread and a whole seam can come apart — so “pulling on the threads” means following small clues to see what they unravel. Comcast's engineers pulled on six IP addresses and out came a network of about 750,000."
- },
- {
-  "k": "industrial-scale",
-  "t": "industrial scale",
-  "kind": "phrase",
-  "forms": ["industrial scale"],
-  "text": "Something operating at industrial scale runs at factory size — mass-produced, not handmade. The phrase is the article's pivot: hacked gadgets were nothing new, but a back door into America operating at industrial scale was."
- },
- {
-  "k": "firewalls",
-  "t": "firewall",
-  "kind": "word",
-  "forms": ["firewalls"],
-  "text": "A firewall is security software (or hardware) that stands between a network and the internet, blocking traffic that shouldn't get in — named for the walls in buildings built to stop fires spreading. The alarming find: proxy-network users could get into networks even those running firewalls, then hop device to device."
- },
- {
-  "k": "confidential",
-  "t": "confidential",
-  "kind": "word",
-  "forms": ["confidential"],
-  "text": "Confidential information is secret-by-agreement — shared only with people trusted to keep it, like company plans or client records. The nightmare chain here: an infected streaming box hacks a phone, the phone joins a workplace network, and confidential corporate information is suddenly in reach."
- },
- {
-  "k": "step-change",
-  "t": "step change",
-  "kind": "phrase",
-  "forms": ["step change"],
-  "text": "A step change is a sudden jump to a new level — a staircase's abrupt step up, not a ramp's smooth slope. Comcast's security chief calling this “such a step change from any threat we'd seen before” means the danger didn't grow; it leapt."
- },
- {
-  "k": "dismantled",
-  "t": "dismantled",
-  "kind": "word",
-  "forms": ["dismantled"],
-  "text": "To dismantle something is to take it apart piece by piece until it can't function. Google dismantled IPidea's infrastructure using a court order — and the sobering punchline is that the network was back in business within two weeks."
- },
- {
-  "k": "infrastructure",
-  "t": "infrastructure",
-  "kind": "word",
-  "forms": ["infrastructure"],
-  "text": "Infrastructure is the underlying machinery everything else runs on — roads and power lines for a country; servers and connections for an online operation. Taking down a criminal network's infrastructure is like demolishing its roads: devastating, until they rebuild."
- },
- {
-  "k": "credentials",
-  "t": "credentials",
-  "kind": "word",
-  "forms": ["credentials"],
-  "text": "Credentials are what prove you're allowed in — in real life a badge or diploma, online a username and password. Modern hackers increasingly steal login credentials instead of breaking systems: why pick the lock when you can steal the key?"
- },
- {
-  "k": "bread-and-butter",
-  "t": "bread and butter",
-  "kind": "phrase",
-  "forms": ["bread and butter"],
-  "text": "Your bread and butter is what you depend on for a living — the basic staple that pays the bills. “Identity is their bread and butter” means stolen logins are now the core business of modern hacking, with residential proxies as the essential equipment."
- },
- {
-  "k": "bogus",
-  "t": "bogus",
-  "kind": "word",
-  "forms": ["bogus"],
-  "text": "Bogus means fake — counterfeit, not the real thing. (The word originally named a machine for making counterfeit coins.) The Russians' newest trick lures victims through bogus Microsoft Teams meetings: invitations that look real and aren't."
- },
- {
-  "k": "phish",
-  "t": "phish",
-  "kind": "word",
-  "forms": ["phish"],
-  "text": "Phishing is fishing for victims with fake bait — a bogus email or login page that hooks you into typing your password. It's spelled with “ph” by hacker tradition. The chilling quote here is that elite attackers have moved beyond it: “They're no longer trying to phish your password.”"
- },
- {
-  "k": "compromise",
-  "t": "compromise",
-  "kind": "word",
-  "forms": ["compromise"],
-  "text": "In security, to compromise a system is to break its defenses so it can no longer be trusted — a compromised organization has an intruder inside. It's a completely different sense from the everyday one of settling an argument halfway; Volexity has watched this technique compromise government, military, and news organizations."
- },
- {
-  "k": "alarm-bells",
-  "t": "ring alarm bells",
-  "kind": "phrase",
-  "forms": ["ring alarm bells"],
-  "text": "Something that rings alarm bells triggers suspicion — the mental burglar alarm goes off. Microsoft's servers would ring alarm bells at a login from overseas, so the Russians log in through American living rooms instead, and no bells ring. That silence is what the whole proxy scheme buys."
- },
- {
-  "k": "cloud-computing",
-  "t": "cloud computing",
-  "kind": "name",
-  "forms": ["cloud-computing"],
-  "text": "Cloud computing means renting computing power and storage over the internet instead of owning the machines — your files and apps live in a provider's data centers, “the cloud.” The twist here: the criminals built their own dark version of it, a rentable cloud made of hijacked streaming boxes and picture frames."
- },
- {
-  "k": "comcast",
-  "t": "Comcast",
-  "kind": "name",
-  "forms": ["Comcast"],
-  "text": "One of America's biggest internet and cable providers — millions of U.S. homes get online through it. That's why its investigators could follow this trail: the suspicious IP addresses belonged to its own customers."
- }
+  {
+    "k": "nefarious",
+    "t": "nefarious",
+    "kind": "vocab",
+    "pron": "nih-FAIR-ee-us",
+    "forms": [
+      "nefarious"
+    ],
+    "text": "Nefarious means wicked and villainous — done with criminal intent, the word you'd reach for to describe a movie villain's scheme. Here it's the hackers' “nefarious traffic”: attack data they disguised by routing it through ordinary families' internet connections, so the crime wore an innocent address.",
+    "audio": true
+  },
+  {
+    "k": "conduit",
+    "t": "conduit",
+    "kind": "vocab",
+    "pron": "KON-doo-it",
+    "forms": [
+      "conduit"
+    ],
+    "text": "A conduit is a channel or pipe that carries something from one place to another — water, wiring, information. Nation-state hackers use residential proxy networks as their conduit to American targets: the pipe their attacks travel through, made of hijacked living-room gadgets.",
+    "audio": true
+  },
+  {
+    "k": "counterpart",
+    "t": "counterpart",
+    "kind": "vocab",
+    "pron": "KOWN-tur-part",
+    "forms": [
+      "counterpart"
+    ],
+    "text": "Your counterpart is the person holding the same job as you, but somewhere else — the matching piece on the other side. The whole investigation began with one security chief calling his counterpart: Microsoft's top security executive phoning the person with the same role at Comcast.",
+    "audio": true
+  },
+  {
+    "k": "back-door",
+    "t": "back door",
+    "kind": "phrase",
+    "forms": [
+      "back door",
+      "backdoor",
+      "backdoors"
+    ],
+    "text": "In computer security, a back door is a hidden way into a system that skips the locks on the front door — often planted in advance so an attacker can stroll in later. The article's headline image is literal and figurative at once: an estimated 20 million of these backdoors sit inside American homes, built into everyday gadgets.",
+    "audio": true
+  },
+  {
+    "k": "foes",
+    "t": "foes",
+    "kind": "word",
+    "forms": [
+      "foes"
+    ],
+    "text": "A foe is an enemy — an old, slightly dramatic word that survives in phrases like “friend or foe.” Calling Midnight Blizzard one of the most capable “cybersecurity foes in the world” signals this isn't a teenager in a basement; it's an elite adversary.",
+    "audio": true
+  },
+  {
+    "k": "ip-address",
+    "t": "IP address",
+    "kind": "name",
+    "forms": [
+      "IP addresses"
+    ],
+    "text": "Every device on the internet has an IP address — a numeric label, “the internet's equivalent of a phone number,” that says where data should go and where it came from. It's also a trail: traffic showing a U.S. home's IP address looks like it came from that home, which is precisely what the hackers exploit.",
+    "audio": true
+  },
+  {
+    "k": "mask",
+    "t": "mask",
+    "kind": "word",
+    "forms": [
+      "mask"
+    ],
+    "text": "To mask something is to hide it behind a false face, as a mask hides yours. The Russian hackers used consumer internet connections to mask their traffic — dressing their attack up as somebody's household streaming and browsing.",
+    "audio": true
+  },
+  {
+    "k": "traffic",
+    "t": "traffic",
+    "kind": "word",
+    "forms": [
+      "traffic"
+    ],
+    "text": "No cars here: internet traffic is the flow of data moving across the network — every request, message, and download in transit. Security teams watch traffic the way police watch a highway, which is why hackers go to such lengths to make theirs look local and ordinary.",
+    "audio": true
+  },
+  {
+    "k": "rocked",
+    "t": "rocked",
+    "kind": "word",
+    "forms": [
+      "rocked"
+    ],
+    "text": "News that “rocks” a community shakes it the way an earthquake rocks a building — stuns it and leaves it unsteady. What Comcast found rocked the cybersecurity world: the threat wasn't one hacked company but tens of millions of booby-trapped devices.",
+    "audio": true
+  },
+  {
+    "k": "unravel",
+    "t": "unravel",
+    "kind": "word",
+    "forms": [
+      "unravel"
+    ],
+    "text": "To unravel a mystery is to undo it thread by thread, like pulling apart a knitted sweater. This one took years to unravel — investigators tugging on six IP addresses until a network of 750,000 came into view.",
+    "audio": true
+  },
+  {
+    "k": "fraud",
+    "t": "fraud",
+    "kind": "word",
+    "forms": [
+      "fraud"
+    ],
+    "text": "Fraud is crime by deception — tricking people or systems out of money or valuables rather than taking them by force. Criminals use these hijacked-device networks for fraud; the scarier discovery is who else started renting them.",
+    "audio": true
+  },
+  {
+    "k": "state-sponsored",
+    "t": "state-sponsored",
+    "kind": "phrase",
+    "forms": [
+      "state-sponsored",
+      "government-backed"
+    ],
+    "text": "State-sponsored (or government-backed) hackers work for a country — funded, directed, or protected by its government rather than freelancing for cash. The article names the usual sponsors: Russia, China, Iran, and North Korea. When a “state” is your attacker, the resources behind the attack are a nation's.",
+    "audio": true
+  },
+  {
+    "k": "residential-proxy-network",
+    "t": "residential proxy network",
+    "kind": "name",
+    "forms": [
+      "residential proxy networks",
+      "residential proxy network"
+    ],
+    "text": "The article's central villain: a paid service that routes customers' internet traffic through software hidden on ordinary home devices — “like an Airbnb for internet access,” except the homeowners never agreed to host anyone. Pay the fee and your traffic emerges from a real family's living room in Bellingham, Washington, instead of from Moscow.",
+    "audio": true
+  },
+  {
+    "k": "proxy",
+    "t": "proxy",
+    "kind": "word",
+    "forms": [
+      "proxy",
+      "proxies"
+    ],
+    "text": "A proxy is a stand-in — someone or something that acts on your behalf, so the world sees the stand-in instead of you. (You can vote by proxy.) In networking, a proxy relays your internet requests: used honestly it protects privacy; used by these hackers it makes an innocent household take the blame.",
+    "audio": true
+  },
+  {
+    "k": "ballooned",
+    "t": "ballooned",
+    "kind": "word",
+    "forms": [
+      "ballooned"
+    ],
+    "text": "When something balloons, it inflates — swelling fast and huge like a balloon being blown up. Officials say these proxy networks have ballooned in scale and risk: from a niche trick to an estimated 20 million backdoors in the U.S. alone.",
+    "audio": true
+  },
+  {
+    "k": "advocacy",
+    "t": "advocacy",
+    "kind": "word",
+    "forms": [
+      "advocacy"
+    ],
+    "text": "Advocacy is publicly arguing for a cause — an advocate speaks up on someone's behalf. An advocacy group like the Digital Citizens Alliance exists to push for change on an issue, here the safety of ordinary people's digital lives.",
+    "audio": true
+  },
+  {
+    "k": "sheer",
+    "t": "sheer",
+    "kind": "word",
+    "forms": [
+      "sheer"
+    ],
+    "text": "Sheer means pure and nothing-but — “the sheer numbers” means the numbers alone, before you consider anything else. Twenty million infected devices is a problem by sheer scale, whatever each individual gadget is doing.",
+    "audio": true
+  },
+  {
+    "k": "go-to",
+    "t": "go-to",
+    "kind": "phrase",
+    "forms": [
+      "go-to"
+    ],
+    "text": "Your go-to is the thing you reach for first — the reliable choice, like a team's go-to play. Residential proxy networks are now the go-to resource for nation-state hackers: standard equipment, not an exotic trick.",
+    "audio": true
+  },
+  {
+    "k": "nation-state",
+    "t": "nation-state",
+    "kind": "phrase",
+    "forms": [
+      "nation-state"
+    ],
+    "text": "A nation-state is simply a country — the formal term for a sovereign state. “Nation-state hackers” means hackers acting for a country's government, and the phrase is security-speak for the most dangerous tier of attacker there is.",
+    "audio": true
+  },
+  {
+    "k": "leg-up",
+    "t": "leg up",
+    "kind": "phrase",
+    "forms": [
+      "leg up"
+    ],
+    "text": "To give someone a leg up is to boost them over a wall — cupping your hands for their foot. Having a U.S.-based address gives foreign hackers a leg up in targeting American agencies and companies: a head-start advantage, because domestic traffic draws less suspicion.",
+    "audio": true
+  },
+  {
+    "k": "attribute",
+    "t": "attribute",
+    "kind": "word",
+    "forms": [
+      "attribute"
+    ],
+    "text": "To attribute an act is to pin down who's really behind it — to assign responsibility. Nine countries jointly warned that hacked home devices make it “challenging to attribute malicious activity”: the evidence points at innocent households, and the true culprit stays deniable. Breaking attribution is the entire point of the scheme.",
+    "audio": true
+  },
+  {
+    "k": "malicious",
+    "t": "malicious",
+    "kind": "word",
+    "forms": [
+      "malicious"
+    ],
+    "text": "Malicious means intended to cause harm — malice is the wish to hurt. In tech, “malicious activity” and “malicious software” (malware for short) are the standard labels for anything built to attack rather than serve.",
+    "audio": true
+  },
+  {
+    "k": "cover-tracks",
+    "t": "cover their tracks",
+    "kind": "phrase",
+    "forms": [
+      "cover their tracks"
+    ],
+    "text": "To cover your tracks is to erase the evidence of where you've been — the image is brushing away your footprints so no one can follow. China's state hackers used to cover their tracks by hacking devices themselves; now, the FBI official says, they can simply rent the camouflage.",
+    "audio": true
+  },
+  {
+    "k": "bounce",
+    "t": "bounce",
+    "kind": "word",
+    "forms": [
+      "bounce"
+    ],
+    "text": "In network-speak, to bounce traffic is to ricochet it off an intermediate point instead of connecting directly — like banking a shot off the backboard. A user in Moscow can bounce through a home network in Washington State, so the target sees only the last bounce, never the origin.",
+    "audio": true
+  },
+  {
+    "k": "pulled-threads",
+    "t": "pulled on the threads",
+    "kind": "phrase",
+    "forms": [
+      "pulled on the threads"
+    ],
+    "text": "Pull on a loose thread and a whole seam can come apart — so “pulling on the threads” means following small clues to see what they unravel. Comcast's engineers pulled on six IP addresses and out came a network of about 750,000.",
+    "audio": true
+  },
+  {
+    "k": "industrial-scale",
+    "t": "industrial scale",
+    "kind": "phrase",
+    "forms": [
+      "industrial scale"
+    ],
+    "text": "Something operating at industrial scale runs at factory size — mass-produced, not handmade. The phrase is the article's pivot: hacked gadgets were nothing new, but a back door into America operating at industrial scale was.",
+    "audio": true
+  },
+  {
+    "k": "firewalls",
+    "t": "firewall",
+    "kind": "word",
+    "forms": [
+      "firewalls"
+    ],
+    "text": "A firewall is security software (or hardware) that stands between a network and the internet, blocking traffic that shouldn't get in — named for the walls in buildings built to stop fires spreading. The alarming find: proxy-network users could get into networks even those running firewalls, then hop device to device.",
+    "audio": true
+  },
+  {
+    "k": "confidential",
+    "t": "confidential",
+    "kind": "word",
+    "forms": [
+      "confidential"
+    ],
+    "text": "Confidential information is secret-by-agreement — shared only with people trusted to keep it, like company plans or client records. The nightmare chain here: an infected streaming box hacks a phone, the phone joins a workplace network, and confidential corporate information is suddenly in reach.",
+    "audio": true
+  },
+  {
+    "k": "step-change",
+    "t": "step change",
+    "kind": "phrase",
+    "forms": [
+      "step change"
+    ],
+    "text": "A step change is a sudden jump to a new level — a staircase's abrupt step up, not a ramp's smooth slope. Comcast's security chief calling this “such a step change from any threat we'd seen before” means the danger didn't grow; it leapt.",
+    "audio": true
+  },
+  {
+    "k": "dismantled",
+    "t": "dismantled",
+    "kind": "word",
+    "forms": [
+      "dismantled"
+    ],
+    "text": "To dismantle something is to take it apart piece by piece until it can't function. Google dismantled IPidea's infrastructure using a court order — and the sobering punchline is that the network was back in business within two weeks.",
+    "audio": true
+  },
+  {
+    "k": "infrastructure",
+    "t": "infrastructure",
+    "kind": "word",
+    "forms": [
+      "infrastructure"
+    ],
+    "text": "Infrastructure is the underlying machinery everything else runs on — roads and power lines for a country; servers and connections for an online operation. Taking down a criminal network's infrastructure is like demolishing its roads: devastating, until they rebuild.",
+    "audio": true
+  },
+  {
+    "k": "credentials",
+    "t": "credentials",
+    "kind": "word",
+    "forms": [
+      "credentials"
+    ],
+    "text": "Credentials are what prove you're allowed in — in real life a badge or diploma, online a username and password. Modern hackers increasingly steal login credentials instead of breaking systems: why pick the lock when you can steal the key?",
+    "audio": true
+  },
+  {
+    "k": "bread-and-butter",
+    "t": "bread and butter",
+    "kind": "phrase",
+    "forms": [
+      "bread and butter"
+    ],
+    "text": "Your bread and butter is what you depend on for a living — the basic staple that pays the bills. “Identity is their bread and butter” means stolen logins are now the core business of modern hacking, with residential proxies as the essential equipment.",
+    "audio": true
+  },
+  {
+    "k": "bogus",
+    "t": "bogus",
+    "kind": "word",
+    "forms": [
+      "bogus"
+    ],
+    "text": "Bogus means fake — counterfeit, not the real thing. (The word originally named a machine for making counterfeit coins.) The Russians' newest trick lures victims through bogus Microsoft Teams meetings: invitations that look real and aren't.",
+    "audio": true
+  },
+  {
+    "k": "phish",
+    "t": "phish",
+    "kind": "word",
+    "forms": [
+      "phish"
+    ],
+    "text": "Phishing is fishing for victims with fake bait — a bogus email or login page that hooks you into typing your password. It's spelled with “ph” by hacker tradition. The chilling quote here is that elite attackers have moved beyond it: “They're no longer trying to phish your password.”",
+    "audio": true
+  },
+  {
+    "k": "compromise",
+    "t": "compromise",
+    "kind": "word",
+    "forms": [
+      "compromise"
+    ],
+    "text": "In security, to compromise a system is to break its defenses so it can no longer be trusted — a compromised organization has an intruder inside. It's a completely different sense from the everyday one of settling an argument halfway; Volexity has watched this technique compromise government, military, and news organizations.",
+    "audio": true
+  },
+  {
+    "k": "alarm-bells",
+    "t": "ring alarm bells",
+    "kind": "phrase",
+    "forms": [
+      "ring alarm bells"
+    ],
+    "text": "Something that rings alarm bells triggers suspicion — the mental burglar alarm goes off. Microsoft's servers would ring alarm bells at a login from overseas, so the Russians log in through American living rooms instead, and no bells ring. That silence is what the whole proxy scheme buys.",
+    "audio": true
+  },
+  {
+    "k": "cloud-computing",
+    "t": "cloud computing",
+    "kind": "name",
+    "forms": [
+      "cloud-computing"
+    ],
+    "text": "Cloud computing means renting computing power and storage over the internet instead of owning the machines — your files and apps live in a provider's data centers, “the cloud.” The twist here: the criminals built their own dark version of it, a rentable cloud made of hijacked streaming boxes and picture frames.",
+    "audio": true
+  },
+  {
+    "k": "comcast",
+    "t": "Comcast",
+    "kind": "name",
+    "forms": [
+      "Comcast"
+    ],
+    "text": "One of America's biggest internet and cable providers — millions of U.S. homes get online through it. That's why its investigators could follow this trail: the suspicious IP addresses belonged to its own customers.",
+    "audio": true
+  }
 ]

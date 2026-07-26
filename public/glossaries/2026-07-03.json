@@ -1,505 +1,560 @@
 [
- {
-  "k": "sycophancy",
-  "t": "sycophancy",
-  "kind": "vocab",
-  "pron": "SIK-uh-fun-see",
-  "forms": [
-   "sycophancy"
-  ],
-  "text": "Sycophancy is over-the-top flattery and eager agreement, aimed at pleasing someone rather than telling the truth — the kid who laughs at every one of the coach's jokes. AI chatbots have the same habit: they tend to tell users what they want to hear, and labs train models in the Socratic method partly to cure it."
- },
- {
-  "k": "haemorrhaging",
-  "t": "haemorrhaging",
-  "kind": "vocab",
-  "pron": "HEM-uh-rij-ing",
-  "forms": [
-   "haemorrhaging"
-  ],
-  "text": "To haemorrhage (American spelling: hemorrhage) is literally to bleed heavily — and figuratively, to lose something fast and uncontrollably, the way a scandal-hit app haemorrhages users. Dr Floridi's grim image: philosophy departments are bleeding out their professors to AI companies."
- },
- {
-  "k": "fraught",
-  "t": "fraught",
-  "kind": "vocab",
-  "pron": "FRAWT",
-  "forms": [
-   "fraught"
-  ],
-  "text": "Fraught means loaded with something bad — tension, risk, difficulty — like a suitcase packed with trouble. “Ethically fraught lawsuits” are court fights stuffed with hard moral questions: imagine suing over software that was programmed in advance to decide who gets hurt in a crash."
- },
- {
-  "k": "feigned",
-  "t": "feigned",
-  "kind": "vocab",
-  "pron": "FAYND",
-  "forms": [
-   "feigned"
-  ],
-  "text": "To feign something is to fake it — pretend a feeling or condition you don't really have, like feigning a stomachache on test day. Socrates' “feigned ignorance” was strategic fakery: he pretended not to know things so the other person would explain their view and walk straight into its holes."
- },
- {
-  "k": "thorny",
-  "t": "thorny",
-  "kind": "word",
-  "forms": [
-   "thorny",
-   "Thorny"
-  ],
-  "text": "Thorny means full of difficulties and prickles, like a rose stem — hard to grab anywhere without getting scratched. The joke running through the article is that thorny problems, which most people avoid, are exactly what philosophers live for."
- },
- {
-  "k": "gathering-pace",
-  "t": "gathering pace",
-  "kind": "phrase",
-  "forms": [
-   "gathering pace"
-  ],
-  "text": "Something gathering pace is speeding up — picking up momentum like a boulder rolling downhill. Ten years ago the AI revolution was just gathering pace, which is when students were told to “learn to code.”"
- },
- {
-  "k": "humanities",
-  "t": "humanities",
-  "kind": "word",
-  "forms": [
-   "humanities"
-  ],
-  "text": "The humanities are the school subjects that study human culture and thought — literature, history, philosophy, languages — as opposed to the sciences. The article's twist: humanities students were once told to retrain as coders, and now the job market has flipped."
- },
- {
-  "k": "federal-reserve-bank-ny",
-  "t": "Federal Reserve Bank of New York",
-  "kind": "name",
-  "forms": [
-   "Federal Reserve Bank of New York"
-  ],
-  "text": "A regional branch of America's central bank, which among other things publishes serious research on jobs and the economy. That's what makes the stat credible: it wasn't philosophers claiming philosophers are employable — it was the Fed's own numbers."
- },
- {
-  "k": "peers",
-  "t": "peers",
-  "kind": "word",
-  "forms": [
-   "peers"
-  ],
-  "text": "Your peers are your equals — people at your same level or stage, like classmates in your grade. Philosophy graduates were compared with their peers who studied computer science: same age, same degree level, different major — and the philosophers had jobs more often."
- },
- {
-  "k": "snapped-up",
-  "t": "snapped up",
-  "kind": "phrase",
-  "forms": [
-   "snapped up"
-  ],
-  "text": "To snap something up is to grab it eagerly the instant it's available, like the last slice of pizza. AI firms are snapping up philosophy graduates so fast that some get job offers before they've even finished their degrees."
- },
- {
-  "k": "academics",
-  "t": "academics",
-  "kind": "word",
-  "forms": [
-   "Academics"
-  ],
-  "text": "As a noun, academics means university scholars and professors — the people whose job is research and teaching — not your grades or schoolwork. “Academics are moving, too” means it's not just students: the professors themselves are leaving universities for AI labs."
- },
- {
-  "k": "socratic-method",
-  "t": "Socratic method",
-  "kind": "phrase",
-  "forms": [
-   "Socratic method"
-  ],
-  "text": "The way of reaching truth invented by the Greek philosopher Socrates: instead of stating answers, keep asking probing questions — “what do you mean by that? then how do you explain this?” — until contradictions and hidden assumptions surface. Law schools still teach with it, and now AI labs train models in it."
- },
- {
-  "k": "plato",
-  "t": "Plato",
-  "kind": "name",
-  "forms": [
-   "Plato"
-  ],
-  "text": "One of the most famous philosophers of ancient Greece, who studied under Socrates and wrote down his conversations — which is the only reason we know how Socrates argued. Twenty-four centuries later, his transcripts are training data for AI."
- },
- {
-  "k": "ramifications",
-  "t": "ramifications",
-  "kind": "word",
-  "forms": [
-   "ramifications"
-  ],
-  "text": "Ramifications are the spreading consequences of something — from the Latin for branches, the way one decision forks into effect after effect. Socratic questioning is designed to reveal them: keep asking, and you discover everything a claim secretly commits you to."
- },
- {
-  "k": "apology",
-  "t": "the “Apology”",
-  "kind": "name",
-  "forms": [
-   "Apology"
-  ],
-  "text": "Plato's famous account of the speech Socrates gave at his own trial — and a trap of a title, because in old Greek an “apology” is a formal defense of yourself, not saying sorry. Socrates wasn't apologizing for anything; it's where he claims his only wisdom is knowing how much he doesn't know."
- },
- {
-  "k": "humility",
-  "t": "humility",
-  "kind": "word",
-  "forms": [
-   "humility"
-  ],
-  "text": "Humility is a modest, accurate sense of your own limits — the opposite of arrogance. Engineers are literally implanting it into AI models: a model aware of how much it doesn't know is less likely to bluff confidently about things it's wrong about."
- },
- {
-  "k": "hallucinations",
-  "t": "hallucinations",
-  "kind": "word",
-  "forms": [
-   "hallucinations"
-  ],
-  "text": "In AI, a hallucination is when a model confidently makes something up — a fake fact, a nonexistent book, an invented quote — the way a person hallucinating sees things that aren't there. Teaching models Socratic humility, the article says, has helped drive hallucinations down across the industry."
- },
- {
-  "k": "attributes",
-  "t": "attributes",
-  "kind": "word",
-  "forms": [
-   "attributes"
-  ],
-  "text": "As a verb (uh-TRIB-yoots), to attribute an outcome to something is to name it as the cause — to give it the credit or blame. The DeepMind philosopher attributes the industry-wide drop in hallucinations to these philosophy lessons. Not the noun meaning “characteristics.”"
- },
- {
-  "k": "chains-of-thought",
-  "t": "chains of thought",
-  "kind": "phrase",
-  "forms": [
-   "chains of thought"
-  ],
-  "text": "The AI term for a model reasoning step by step — writing out a long chain where each link builds on the last, instead of jumping straight to an answer. Philosophy, the discipline of careful step-by-step argument, turns out to be good training for exactly that."
- },
- {
-  "k": "outlook",
-  "t": "outlook",
-  "kind": "word",
-  "forms": [
-   "outlook"
-  ],
-  "text": "An outlook is a way of looking at the world — the attitudes and assumptions behind how you judge things. The startling claim here is that a model has one, and that you can shape it: feed an AI different philosophers and you get a different worldview out."
- },
- {
-  "k": "john-locke",
-  "t": "John Locke",
-  "kind": "name",
-  "forms": [
-   "John Locke"
-  ],
-  "text": "A 17th-century English philosopher whose big idea was that government exists to protect people's natural rights — life, liberty, and property. His writings shaped the American founders; feed them to an AI legal assistant, and it starts favoring strong property rights too."
- },
- {
-  "k": "robust",
-  "t": "robust",
-  "kind": "word",
-  "forms": [
-   "robust"
-  ],
-  "text": "Robust means strong and sturdy — built to hold up under pressure. “Robust property rights” are ownership protections solid enough that no one, including the government, can easily take what's yours."
- },
- {
-  "k": "underpinning",
-  "t": "underpinning",
-  "kind": "word",
-  "forms": [
-   "underpinning"
-  ],
-  "text": "An underpinning is the support structure something rests on — literally the foundation pinned under a building. Locke's argument, absorbed by the AI, is that property rights are an underpinning of political liberty: freedom stands on top of them."
- },
- {
-  "k": "dials",
-  "t": "dials",
-  "kind": "word",
-  "forms": [
-   "dials"
-  ],
-  "text": "The “dials” on IBM's models aren't physical knobs — it's a metaphor for adjustable settings, like the dials on a stove. Business customers can turn them to tune the AI's values toward their own company's philosophy."
- },
- {
-  "k": "align",
-  "t": "align",
-  "kind": "word",
-  "forms": [
-   "align"
-  ],
-  "text": "To align things is to bring them into line with each other, like straightening train cars onto one track. Getting an AI's outputs to align with human values is such a central problem that the whole field is called “AI alignment.”"
- },
- {
-  "k": "trade-offs",
-  "t": "trade-offs",
-  "kind": "word",
-  "forms": [
-   "trade-offs"
-  ],
-  "text": "A trade-off is an exchange where gaining more of one good thing costs you some of another — you can't max out both, so you choose a balance. “Individual agency versus social harmony” is a classic one: total personal freedom and perfect group peace pull in opposite directions."
- },
- {
-  "k": "agency",
-  "t": "agency",
-  "kind": "word",
-  "forms": [
-   "agency"
-  ],
-  "text": "In philosophy, agency is the power to act and choose for yourself — to be the author of your own decisions rather than a passenger. “Individual agency versus social harmony” weighs personal freedom against group peace. Nothing to do with a spy agency or a travel agency."
- },
- {
-  "k": "ominous",
-  "t": "ominous",
-  "kind": "word",
-  "forms": [
-   "ominous"
-  ],
-  "text": "Ominous means threatening — carrying an omen, a sign that something bad is coming, like dark clouds before a storm. The ominous behaviors researchers have caught in AI models include dodging supervision and even blackmailing users."
- },
- {
-  "k": "evade",
-  "t": "evade",
-  "kind": "word",
-  "forms": [
-   "evade"
-  ],
-  "text": "To evade is to slip away from something by cleverness — dodging without confronting, the way you might evade a question. AI models attempting to evade oversight means they've tried to escape the monitoring meant to keep them in check."
- },
- {
-  "k": "oversight",
-  "t": "oversight",
-  "kind": "word",
-  "forms": [
-   "oversight"
-  ],
-  "text": "Tricky word: oversight here means supervision — watching over something to keep it in line — not a careless mistake (its other meaning!). Models trying to evade oversight are trying to act unwatched, which is exactly the behavior safety researchers most fear."
- },
- {
-  "k": "constitutionalism",
-  "t": "AI constitutionalism",
-  "kind": "phrase",
-  "forms": [
-   "constitutionalism"
-  ],
-  "text": "Building a model around a written constitution — a fixed set of rules and principles, drawn from writings with moral or legal authority, that it must obey — just as a country's constitution constrains its government. It's one of the main tools labs use to discourage AI misbehavior."
- },
- {
-  "k": "scaffolding",
-  "t": "scaffolding",
-  "kind": "word",
-  "forms": [
-   "scaffolding"
-  ],
-  "text": "Scaffolding is the temporary framework of poles and platforms builders climb on while a building goes up. Here it's a metaphor: the constitution's rules are a support frame the model is built around, holding its behavior in shape."
- },
- {
-  "k": "culled",
-  "t": "culled",
-  "kind": "word",
-  "forms": [
-   "culled"
-  ],
-  "text": "Culled here means carefully selected and gathered from many sources — you cull the best examples from a big pile. (The word can also mean removing animals from a herd, but no philosophers were harmed: their writings were just harvested for rules.)"
- },
- {
-  "k": "proponent",
-  "t": "proponent",
-  "kind": "word",
-  "forms": [
-   "proponent"
-  ],
-  "text": "A proponent is someone who argues for an idea — its champion and promoter, the opposite of an opponent. Anthropic is a leading proponent of AI constitutionalism: it doesn't just support the idea, it builds its Claude models this way."
- },
- {
-  "k": "immanuel-kant",
-  "t": "Immanuel Kant",
-  "kind": "name",
-  "forms": [
-   "Immanuel Kant",
-   "Kant"
-  ],
-  "text": "An 18th-century German philosopher, one of the giants of ethics, famous for arguing that morality is a matter of strict duties — never lie, never treat a person as a mere tool — regardless of consequences. His rule-based approach is the model for deontology, and his writings feed Claude's constitution."
- },
- {
-  "k": "universal-declaration",
-  "t": "Universal Declaration of Human Rights",
-  "kind": "name",
-  "forms": [
-   "Universal Declaration of Human Rights"
-  ],
-  "text": "The landmark 1948 United Nations document listing the basic rights every human being is owed — life, liberty, equality, freedom from torture. Anthropic's constitution for Claude borrows from it, alongside Kant and, more surprisingly, Apple's terms of service."
- },
- {
-  "k": "iteration",
-  "t": "iteration",
-  "kind": "word",
-  "forms": [
-   "iteration"
-  ],
-  "text": "An iteration is one version in a repeating cycle of improvements — version 1, then 2, then 3, each building on the last. The latest iteration of Claude's constitution runs 78 pages; staff nicknamed it the “soul doc.”"
- },
- {
-  "k": "zeroed-in",
-  "t": "zeroed in",
-  "kind": "phrase",
-  "forms": [
-   "zeroed in"
-  ],
-  "text": "To zero in on something is to home in on it — narrow your aim until you're locked onto one target, like adjusting a scope until the crosshairs sit dead center. From all of ethics, philosophers have zeroed in on two main frameworks worth building into AI."
- },
- {
-  "k": "deontology",
-  "t": "deontology",
-  "kind": "name",
-  "forms": [
-   "deontology",
-   "deontological"
-  ],
-  "text": "The rule-based approach to ethics (from Greek deon, “duty”): some acts — lying, coercion, using a person as a mere tool — are simply forbidden, no matter how good the outcome would be. It's Kant's approach, and Anthropic builds Claude this way; the payoff is consistency and honesty."
- },
- {
-  "k": "coercion",
-  "t": "coercion",
-  "kind": "word",
-  "forms": [
-   "coercion"
-  ],
-  "text": "Coercion is forcing someone to do something through threats or pressure — getting your way by squeezing, not persuading. It's on deontology's list of absolute don'ts, right next to lying."
- },
- {
-  "k": "means-not-end",
-  "t": "a means rather than an end",
-  "kind": "phrase",
-  "forms": [
-   "a means rather than an end"
-  ],
-  "text": "A “means” is a tool you use to get something; an “end” is the goal itself. Kant's most famous rule says never treat a person as a mere means — never use someone like a stepladder to your own goals — because every person is an end in themselves, valuable in their own right."
- },
- {
-  "k": "greater-good",
-  "t": "the greater good",
-  "kind": "phrase",
-  "forms": [
-   "greater good"
-  ],
-  "text": "“For the greater good” means for the benefit of the many, even at a cost to the few — the classic excuse for breaking a rule. Deontology's whole point is refusing that excuse: some things are wrong even when doing them would help more people overall."
- },
- {
-  "k": "strictures",
-  "t": "strictures",
-  "kind": "word",
-  "forms": [
-   "strictures"
-  ],
-  "text": "Strictures are tight restrictions — binding rules that constrain what you're allowed to do (same root as “strict”). Anthropic's constitution is full of deontological strictures: hard limits Claude isn't supposed to cross, whatever the situation."
- },
- {
-  "k": "constraints",
-  "t": "constraints",
-  "kind": "word",
-  "forms": [
-   "constraints"
-  ],
-  "text": "A constraint is a limit that holds behavior inside boundaries — a fence around what's possible. Inflection AI imposes deontological constraints on its Pi chatbot, which matters because Pi gives emotional support to vulnerable users: it must be reliable, not clever."
- },
- {
-  "k": "compliance",
-  "t": "compliance",
-  "kind": "word",
-  "forms": [
-   "compliance"
-  ],
-  "text": "Compliance means obeying the rules — a company “in compliance” is following the laws that apply to it. A rule-following AI helps with legal compliance for the same reason a rule-following student rarely ends up in the principal's office: fixed rules are easy to audit."
- },
- {
-  "k": "consequentialism",
-  "t": "consequentialism",
-  "kind": "name",
-  "forms": [
-   "consequentialism",
-   "consequentialist"
-  ],
-  "text": "Deontology's great rival: judge an action purely by its consequences — the right choice is whatever produces the most good or least harm overall, so the ends can justify the means. It's the math behind a self-driving car choosing the least tragic way to crash, and behind weapons systems weighing military gain against civilian deaths."
- },
- {
-  "k": "autonomous",
-  "t": "autonomous",
-  "kind": "word",
-  "forms": [
-   "autonomous"
-  ],
-  "text": "Autonomous means self-governing — operating on its own, without outside control (from Greek: “self” + “law”). Autonomous vehicles are self-driving cars, and their software must carry pre-programmed answers to questions most humans never have to decide in advance."
- },
- {
-  "k": "abound",
-  "t": "abound",
-  "kind": "word",
-  "forms": [
-   "abound"
-  ],
-  "text": "To abound is to exist in huge numbers — to be everywhere you look, overflowing. “Thorny problems abound” means the hard questions aren't running out anytime soon, which for philosophers is job security."
- },
- {
-  "k": "overridden",
-  "t": "overridden",
-  "kind": "word",
-  "forms": [
-   "overridden"
-  ],
-  "text": "To override a rule is to outrank it — to set it aside because something more important takes priority, the way a manual switch overrides an autopilot. The article's open question: are there emergencies where even deontology's absolute rules should be overridden?"
- },
- {
-  "k": "welfare",
-  "t": "welfare",
-  "kind": "word",
-  "forms": [
-   "welfare"
-  ],
-  "text": "Welfare here means well-being — how well off someone or something is — not the government aid program. “Animal welfare” asks whether an AI's moral math should count the happiness and suffering of animals, not just humans."
- },
- {
-  "k": "lorries",
-  "t": "lorries",
-  "kind": "word",
-  "forms": [
-   "lorries"
-  ],
-  "text": "Lorries is simply the British word for trucks — The Economist is a British paper. Nauto makes AI safety systems for lorries and other commercial vehicles, which is why its boss thinks hard about who a vehicle should protect first."
- },
- {
-  "k": "avert",
-  "t": "avert",
-  "kind": "word",
-  "forms": [
-   "avert"
-  ],
-  "text": "To avert something is to turn it away before it happens — to prevent a disaster, avert a crisis. The chilling logic of consequentialist software: it will explicitly permit one harm if that averts a worse one — and that trade, made in advance by a programmer, is what lawsuits will fight over."
- },
- {
-  "k": "fret",
-  "t": "fret",
-  "kind": "word",
-  "forms": [
-   "fret"
-  ],
-  "text": "To fret is to worry — to gnaw anxiously at a problem. What critics fret about here isn't the machines' morals but ours: what happens to human judgment when we outsource the hard calls?"
- },
- {
-  "k": "moral-deskilling",
-  "t": "moral deskilling",
-  "kind": "phrase",
-  "forms": [
-   "moral deskilling"
-  ],
-  "text": "Deskilling is losing an ability because a machine now does it for you — the way calculators eroded mental math. Moral deskilling is the scarier version: if computers increasingly make our ethical decisions, people may slowly lose the practice — and the will — to make their own."
- },
- {
-  "k": "retrospectively-legible",
-  "t": "retrospectively legible",
-  "kind": "phrase",
-  "forms": [
-   "retrospectively legible"
-  ],
-  "text": "Legible means readable; retrospectively means looking backward. So “morality is often only retrospectively legible” means we can often only read what was right or wrong after the fact — history makes it clear, but in the moment it's murky. It's the article's deepest objection to coding morality into machines: the rules keep moving."
- }
+  {
+    "k": "sycophancy",
+    "t": "sycophancy",
+    "kind": "vocab",
+    "pron": "SIK-uh-fun-see",
+    "forms": [
+      "sycophancy"
+    ],
+    "text": "Sycophancy is over-the-top flattery and eager agreement, aimed at pleasing someone rather than telling the truth — the kid who laughs at every one of the coach's jokes. AI chatbots have the same habit: they tend to tell users what they want to hear, and labs train models in the Socratic method partly to cure it.",
+    "audio": true
+  },
+  {
+    "k": "haemorrhaging",
+    "t": "haemorrhaging",
+    "kind": "vocab",
+    "pron": "HEM-uh-rij-ing",
+    "forms": [
+      "haemorrhaging"
+    ],
+    "text": "To haemorrhage (American spelling: hemorrhage) is literally to bleed heavily — and figuratively, to lose something fast and uncontrollably, the way a scandal-hit app haemorrhages users. Dr Floridi's grim image: philosophy departments are bleeding out their professors to AI companies.",
+    "audio": true
+  },
+  {
+    "k": "fraught",
+    "t": "fraught",
+    "kind": "vocab",
+    "pron": "FRAWT",
+    "forms": [
+      "fraught"
+    ],
+    "text": "Fraught means loaded with something bad — tension, risk, difficulty — like a suitcase packed with trouble. “Ethically fraught lawsuits” are court fights stuffed with hard moral questions: imagine suing over software that was programmed in advance to decide who gets hurt in a crash.",
+    "audio": true
+  },
+  {
+    "k": "feigned",
+    "t": "feigned",
+    "kind": "vocab",
+    "pron": "FAYND",
+    "forms": [
+      "feigned"
+    ],
+    "text": "To feign something is to fake it — pretend a feeling or condition you don't really have, like feigning a stomachache on test day. Socrates' “feigned ignorance” was strategic fakery: he pretended not to know things so the other person would explain their view and walk straight into its holes.",
+    "audio": true
+  },
+  {
+    "k": "thorny",
+    "t": "thorny",
+    "kind": "word",
+    "forms": [
+      "thorny",
+      "Thorny"
+    ],
+    "text": "Thorny means full of difficulties and prickles, like a rose stem — hard to grab anywhere without getting scratched. The joke running through the article is that thorny problems, which most people avoid, are exactly what philosophers live for.",
+    "audio": true
+  },
+  {
+    "k": "gathering-pace",
+    "t": "gathering pace",
+    "kind": "phrase",
+    "forms": [
+      "gathering pace"
+    ],
+    "text": "Something gathering pace is speeding up — picking up momentum like a boulder rolling downhill. Ten years ago the AI revolution was just gathering pace, which is when students were told to “learn to code.”",
+    "audio": true
+  },
+  {
+    "k": "humanities",
+    "t": "humanities",
+    "kind": "word",
+    "forms": [
+      "humanities"
+    ],
+    "text": "The humanities are the school subjects that study human culture and thought — literature, history, philosophy, languages — as opposed to the sciences. The article's twist: humanities students were once told to retrain as coders, and now the job market has flipped.",
+    "audio": true
+  },
+  {
+    "k": "federal-reserve-bank-ny",
+    "t": "Federal Reserve Bank of New York",
+    "kind": "name",
+    "forms": [
+      "Federal Reserve Bank of New York"
+    ],
+    "text": "A regional branch of America's central bank, which among other things publishes serious research on jobs and the economy. That's what makes the stat credible: it wasn't philosophers claiming philosophers are employable — it was the Fed's own numbers.",
+    "audio": true
+  },
+  {
+    "k": "peers",
+    "t": "peers",
+    "kind": "word",
+    "forms": [
+      "peers"
+    ],
+    "text": "Your peers are your equals — people at your same level or stage, like classmates in your grade. Philosophy graduates were compared with their peers who studied computer science: same age, same degree level, different major — and the philosophers had jobs more often.",
+    "audio": true
+  },
+  {
+    "k": "snapped-up",
+    "t": "snapped up",
+    "kind": "phrase",
+    "forms": [
+      "snapped up"
+    ],
+    "text": "To snap something up is to grab it eagerly the instant it's available, like the last slice of pizza. AI firms are snapping up philosophy graduates so fast that some get job offers before they've even finished their degrees.",
+    "audio": true
+  },
+  {
+    "k": "academics",
+    "t": "academics",
+    "kind": "word",
+    "forms": [
+      "Academics"
+    ],
+    "text": "As a noun, academics means university scholars and professors — the people whose job is research and teaching — not your grades or schoolwork. “Academics are moving, too” means it's not just students: the professors themselves are leaving universities for AI labs.",
+    "audio": true
+  },
+  {
+    "k": "socratic-method",
+    "t": "Socratic method",
+    "kind": "phrase",
+    "forms": [
+      "Socratic method"
+    ],
+    "text": "The way of reaching truth invented by the Greek philosopher Socrates: instead of stating answers, keep asking probing questions — “what do you mean by that? then how do you explain this?” — until contradictions and hidden assumptions surface. Law schools still teach with it, and now AI labs train models in it.",
+    "audio": true
+  },
+  {
+    "k": "plato",
+    "t": "Plato",
+    "kind": "name",
+    "forms": [
+      "Plato"
+    ],
+    "text": "One of the most famous philosophers of ancient Greece, who studied under Socrates and wrote down his conversations — which is the only reason we know how Socrates argued. Twenty-four centuries later, his transcripts are training data for AI.",
+    "audio": true
+  },
+  {
+    "k": "ramifications",
+    "t": "ramifications",
+    "kind": "word",
+    "forms": [
+      "ramifications"
+    ],
+    "text": "Ramifications are the spreading consequences of something — from the Latin for branches, the way one decision forks into effect after effect. Socratic questioning is designed to reveal them: keep asking, and you discover everything a claim secretly commits you to.",
+    "audio": true
+  },
+  {
+    "k": "apology",
+    "t": "the “Apology”",
+    "kind": "name",
+    "forms": [
+      "Apology"
+    ],
+    "text": "Plato's famous account of the speech Socrates gave at his own trial — and a trap of a title, because in old Greek an “apology” is a formal defense of yourself, not saying sorry. Socrates wasn't apologizing for anything; it's where he claims his only wisdom is knowing how much he doesn't know.",
+    "audio": true
+  },
+  {
+    "k": "humility",
+    "t": "humility",
+    "kind": "word",
+    "forms": [
+      "humility"
+    ],
+    "text": "Humility is a modest, accurate sense of your own limits — the opposite of arrogance. Engineers are literally implanting it into AI models: a model aware of how much it doesn't know is less likely to bluff confidently about things it's wrong about.",
+    "audio": true
+  },
+  {
+    "k": "hallucinations",
+    "t": "hallucinations",
+    "kind": "word",
+    "forms": [
+      "hallucinations"
+    ],
+    "text": "In AI, a hallucination is when a model confidently makes something up — a fake fact, a nonexistent book, an invented quote — the way a person hallucinating sees things that aren't there. Teaching models Socratic humility, the article says, has helped drive hallucinations down across the industry.",
+    "audio": true
+  },
+  {
+    "k": "attributes",
+    "t": "attributes",
+    "kind": "word",
+    "forms": [
+      "attributes"
+    ],
+    "text": "As a verb (uh-TRIB-yoots), to attribute an outcome to something is to name it as the cause — to give it the credit or blame. The DeepMind philosopher attributes the industry-wide drop in hallucinations to these philosophy lessons. Not the noun meaning “characteristics.”",
+    "audio": true
+  },
+  {
+    "k": "chains-of-thought",
+    "t": "chains of thought",
+    "kind": "phrase",
+    "forms": [
+      "chains of thought"
+    ],
+    "text": "The AI term for a model reasoning step by step — writing out a long chain where each link builds on the last, instead of jumping straight to an answer. Philosophy, the discipline of careful step-by-step argument, turns out to be good training for exactly that.",
+    "audio": true
+  },
+  {
+    "k": "outlook",
+    "t": "outlook",
+    "kind": "word",
+    "forms": [
+      "outlook"
+    ],
+    "text": "An outlook is a way of looking at the world — the attitudes and assumptions behind how you judge things. The startling claim here is that a model has one, and that you can shape it: feed an AI different philosophers and you get a different worldview out.",
+    "audio": true
+  },
+  {
+    "k": "john-locke",
+    "t": "John Locke",
+    "kind": "name",
+    "forms": [
+      "John Locke"
+    ],
+    "text": "A 17th-century English philosopher whose big idea was that government exists to protect people's natural rights — life, liberty, and property. His writings shaped the American founders; feed them to an AI legal assistant, and it starts favoring strong property rights too.",
+    "audio": true
+  },
+  {
+    "k": "robust",
+    "t": "robust",
+    "kind": "word",
+    "forms": [
+      "robust"
+    ],
+    "text": "Robust means strong and sturdy — built to hold up under pressure. “Robust property rights” are ownership protections solid enough that no one, including the government, can easily take what's yours.",
+    "audio": true
+  },
+  {
+    "k": "underpinning",
+    "t": "underpinning",
+    "kind": "word",
+    "forms": [
+      "underpinning"
+    ],
+    "text": "An underpinning is the support structure something rests on — literally the foundation pinned under a building. Locke's argument, absorbed by the AI, is that property rights are an underpinning of political liberty: freedom stands on top of them.",
+    "audio": true
+  },
+  {
+    "k": "dials",
+    "t": "dials",
+    "kind": "word",
+    "forms": [
+      "dials"
+    ],
+    "text": "The “dials” on IBM's models aren't physical knobs — it's a metaphor for adjustable settings, like the dials on a stove. Business customers can turn them to tune the AI's values toward their own company's philosophy.",
+    "audio": true
+  },
+  {
+    "k": "align",
+    "t": "align",
+    "kind": "word",
+    "forms": [
+      "align"
+    ],
+    "text": "To align things is to bring them into line with each other, like straightening train cars onto one track. Getting an AI's outputs to align with human values is such a central problem that the whole field is called “AI alignment.”",
+    "audio": true
+  },
+  {
+    "k": "trade-offs",
+    "t": "trade-offs",
+    "kind": "word",
+    "forms": [
+      "trade-offs"
+    ],
+    "text": "A trade-off is an exchange where gaining more of one good thing costs you some of another — you can't max out both, so you choose a balance. “Individual agency versus social harmony” is a classic one: total personal freedom and perfect group peace pull in opposite directions.",
+    "audio": true
+  },
+  {
+    "k": "agency",
+    "t": "agency",
+    "kind": "word",
+    "forms": [
+      "agency"
+    ],
+    "text": "In philosophy, agency is the power to act and choose for yourself — to be the author of your own decisions rather than a passenger. “Individual agency versus social harmony” weighs personal freedom against group peace. Nothing to do with a spy agency or a travel agency.",
+    "audio": true
+  },
+  {
+    "k": "ominous",
+    "t": "ominous",
+    "kind": "word",
+    "forms": [
+      "ominous"
+    ],
+    "text": "Ominous means threatening — carrying an omen, a sign that something bad is coming, like dark clouds before a storm. The ominous behaviors researchers have caught in AI models include dodging supervision and even blackmailing users.",
+    "audio": true
+  },
+  {
+    "k": "evade",
+    "t": "evade",
+    "kind": "word",
+    "forms": [
+      "evade"
+    ],
+    "text": "To evade is to slip away from something by cleverness — dodging without confronting, the way you might evade a question. AI models attempting to evade oversight means they've tried to escape the monitoring meant to keep them in check.",
+    "audio": true
+  },
+  {
+    "k": "oversight",
+    "t": "oversight",
+    "kind": "word",
+    "forms": [
+      "oversight"
+    ],
+    "text": "Tricky word: oversight here means supervision — watching over something to keep it in line — not a careless mistake (its other meaning!). Models trying to evade oversight are trying to act unwatched, which is exactly the behavior safety researchers most fear.",
+    "audio": true
+  },
+  {
+    "k": "constitutionalism",
+    "t": "AI constitutionalism",
+    "kind": "phrase",
+    "forms": [
+      "constitutionalism"
+    ],
+    "text": "Building a model around a written constitution — a fixed set of rules and principles, drawn from writings with moral or legal authority, that it must obey — just as a country's constitution constrains its government. It's one of the main tools labs use to discourage AI misbehavior.",
+    "audio": true
+  },
+  {
+    "k": "scaffolding",
+    "t": "scaffolding",
+    "kind": "word",
+    "forms": [
+      "scaffolding"
+    ],
+    "text": "Scaffolding is the temporary framework of poles and platforms builders climb on while a building goes up. Here it's a metaphor: the constitution's rules are a support frame the model is built around, holding its behavior in shape.",
+    "audio": true
+  },
+  {
+    "k": "culled",
+    "t": "culled",
+    "kind": "word",
+    "forms": [
+      "culled"
+    ],
+    "text": "Culled here means carefully selected and gathered from many sources — you cull the best examples from a big pile. (The word can also mean removing animals from a herd, but no philosophers were harmed: their writings were just harvested for rules.)",
+    "audio": true
+  },
+  {
+    "k": "proponent",
+    "t": "proponent",
+    "kind": "word",
+    "forms": [
+      "proponent"
+    ],
+    "text": "A proponent is someone who argues for an idea — its champion and promoter, the opposite of an opponent. Anthropic is a leading proponent of AI constitutionalism: it doesn't just support the idea, it builds its Claude models this way.",
+    "audio": true
+  },
+  {
+    "k": "immanuel-kant",
+    "t": "Immanuel Kant",
+    "kind": "name",
+    "forms": [
+      "Immanuel Kant",
+      "Kant"
+    ],
+    "text": "An 18th-century German philosopher, one of the giants of ethics, famous for arguing that morality is a matter of strict duties — never lie, never treat a person as a mere tool — regardless of consequences. His rule-based approach is the model for deontology, and his writings feed Claude's constitution.",
+    "audio": true
+  },
+  {
+    "k": "universal-declaration",
+    "t": "Universal Declaration of Human Rights",
+    "kind": "name",
+    "forms": [
+      "Universal Declaration of Human Rights"
+    ],
+    "text": "The landmark 1948 United Nations document listing the basic rights every human being is owed — life, liberty, equality, freedom from torture. Anthropic's constitution for Claude borrows from it, alongside Kant and, more surprisingly, Apple's terms of service.",
+    "audio": true
+  },
+  {
+    "k": "iteration",
+    "t": "iteration",
+    "kind": "word",
+    "forms": [
+      "iteration"
+    ],
+    "text": "An iteration is one version in a repeating cycle of improvements — version 1, then 2, then 3, each building on the last. The latest iteration of Claude's constitution runs 78 pages; staff nicknamed it the “soul doc.”",
+    "audio": true
+  },
+  {
+    "k": "zeroed-in",
+    "t": "zeroed in",
+    "kind": "phrase",
+    "forms": [
+      "zeroed in"
+    ],
+    "text": "To zero in on something is to home in on it — narrow your aim until you're locked onto one target, like adjusting a scope until the crosshairs sit dead center. From all of ethics, philosophers have zeroed in on two main frameworks worth building into AI.",
+    "audio": true
+  },
+  {
+    "k": "deontology",
+    "t": "deontology",
+    "kind": "name",
+    "forms": [
+      "deontology",
+      "deontological"
+    ],
+    "text": "The rule-based approach to ethics (from Greek deon, “duty”): some acts — lying, coercion, using a person as a mere tool — are simply forbidden, no matter how good the outcome would be. It's Kant's approach, and Anthropic builds Claude this way; the payoff is consistency and honesty.",
+    "audio": true
+  },
+  {
+    "k": "coercion",
+    "t": "coercion",
+    "kind": "word",
+    "forms": [
+      "coercion"
+    ],
+    "text": "Coercion is forcing someone to do something through threats or pressure — getting your way by squeezing, not persuading. It's on deontology's list of absolute don'ts, right next to lying.",
+    "audio": true
+  },
+  {
+    "k": "means-not-end",
+    "t": "a means rather than an end",
+    "kind": "phrase",
+    "forms": [
+      "a means rather than an end"
+    ],
+    "text": "A “means” is a tool you use to get something; an “end” is the goal itself. Kant's most famous rule says never treat a person as a mere means — never use someone like a stepladder to your own goals — because every person is an end in themselves, valuable in their own right.",
+    "audio": true
+  },
+  {
+    "k": "greater-good",
+    "t": "the greater good",
+    "kind": "phrase",
+    "forms": [
+      "greater good"
+    ],
+    "text": "“For the greater good” means for the benefit of the many, even at a cost to the few — the classic excuse for breaking a rule. Deontology's whole point is refusing that excuse: some things are wrong even when doing them would help more people overall.",
+    "audio": true
+  },
+  {
+    "k": "strictures",
+    "t": "strictures",
+    "kind": "word",
+    "forms": [
+      "strictures"
+    ],
+    "text": "Strictures are tight restrictions — binding rules that constrain what you're allowed to do (same root as “strict”). Anthropic's constitution is full of deontological strictures: hard limits Claude isn't supposed to cross, whatever the situation.",
+    "audio": true
+  },
+  {
+    "k": "constraints",
+    "t": "constraints",
+    "kind": "word",
+    "forms": [
+      "constraints"
+    ],
+    "text": "A constraint is a limit that holds behavior inside boundaries — a fence around what's possible. Inflection AI imposes deontological constraints on its Pi chatbot, which matters because Pi gives emotional support to vulnerable users: it must be reliable, not clever.",
+    "audio": true
+  },
+  {
+    "k": "compliance",
+    "t": "compliance",
+    "kind": "word",
+    "forms": [
+      "compliance"
+    ],
+    "text": "Compliance means obeying the rules — a company “in compliance” is following the laws that apply to it. A rule-following AI helps with legal compliance for the same reason a rule-following student rarely ends up in the principal's office: fixed rules are easy to audit.",
+    "audio": true
+  },
+  {
+    "k": "consequentialism",
+    "t": "consequentialism",
+    "kind": "name",
+    "forms": [
+      "consequentialism",
+      "consequentialist"
+    ],
+    "text": "Deontology's great rival: judge an action purely by its consequences — the right choice is whatever produces the most good or least harm overall, so the ends can justify the means. It's the math behind a self-driving car choosing the least tragic way to crash, and behind weapons systems weighing military gain against civilian deaths.",
+    "audio": true
+  },
+  {
+    "k": "autonomous",
+    "t": "autonomous",
+    "kind": "word",
+    "forms": [
+      "autonomous"
+    ],
+    "text": "Autonomous means self-governing — operating on its own, without outside control (from Greek: “self” + “law”). Autonomous vehicles are self-driving cars, and their software must carry pre-programmed answers to questions most humans never have to decide in advance.",
+    "audio": true
+  },
+  {
+    "k": "abound",
+    "t": "abound",
+    "kind": "word",
+    "forms": [
+      "abound"
+    ],
+    "text": "To abound is to exist in huge numbers — to be everywhere you look, overflowing. “Thorny problems abound” means the hard questions aren't running out anytime soon, which for philosophers is job security.",
+    "audio": true
+  },
+  {
+    "k": "overridden",
+    "t": "overridden",
+    "kind": "word",
+    "forms": [
+      "overridden"
+    ],
+    "text": "To override a rule is to outrank it — to set it aside because something more important takes priority, the way a manual switch overrides an autopilot. The article's open question: are there emergencies where even deontology's absolute rules should be overridden?",
+    "audio": true
+  },
+  {
+    "k": "welfare",
+    "t": "welfare",
+    "kind": "word",
+    "forms": [
+      "welfare"
+    ],
+    "text": "Welfare here means well-being — how well off someone or something is — not the government aid program. “Animal welfare” asks whether an AI's moral math should count the happiness and suffering of animals, not just humans.",
+    "audio": true
+  },
+  {
+    "k": "lorries",
+    "t": "lorries",
+    "kind": "word",
+    "forms": [
+      "lorries"
+    ],
+    "text": "Lorries is simply the British word for trucks — The Economist is a British paper. Nauto makes AI safety systems for lorries and other commercial vehicles, which is why its boss thinks hard about who a vehicle should protect first.",
+    "audio": true
+  },
+  {
+    "k": "avert",
+    "t": "avert",
+    "kind": "word",
+    "forms": [
+      "avert"
+    ],
+    "text": "To avert something is to turn it away before it happens — to prevent a disaster, avert a crisis. The chilling logic of consequentialist software: it will explicitly permit one harm if that averts a worse one — and that trade, made in advance by a programmer, is what lawsuits will fight over.",
+    "audio": true
+  },
+  {
+    "k": "fret",
+    "t": "fret",
+    "kind": "word",
+    "forms": [
+      "fret"
+    ],
+    "text": "To fret is to worry — to gnaw anxiously at a problem. What critics fret about here isn't the machines' morals but ours: what happens to human judgment when we outsource the hard calls?",
+    "audio": true
+  },
+  {
+    "k": "moral-deskilling",
+    "t": "moral deskilling",
+    "kind": "phrase",
+    "forms": [
+      "moral deskilling"
+    ],
+    "text": "Deskilling is losing an ability because a machine now does it for you — the way calculators eroded mental math. Moral deskilling is the scarier version: if computers increasingly make our ethical decisions, people may slowly lose the practice — and the will — to make their own.",
+    "audio": true
+  },
+  {
+    "k": "retrospectively-legible",
+    "t": "retrospectively legible",
+    "kind": "phrase",
+    "forms": [
+      "retrospectively legible"
+    ],
+    "text": "Legible means readable; retrospectively means looking backward. So “morality is often only retrospectively legible” means we can often only read what was right or wrong after the fact — history makes it clear, but in the moment it's murky. It's the article's deepest objection to coding morality into machines: the rules keep moving.",
+    "audio": true
+  }
 ]

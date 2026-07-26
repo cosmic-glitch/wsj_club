@@ -1,417 +1,605 @@
 [
- {
-  "k": "converge",
-  "t": "converge",
-  "kind": "vocab",
-  "pron": "kun-VERJ",
-  "forms": ["converging"],
-  "text": "To converge is to come together toward the same point from different directions — like three hallways all meeting at the cafeteria. Here, several separate forces — concert money, Super Bowl rules, TV deals — are converging at once, and together they push every new stadium toward a roof."
- },
- {
-  "k": "paradox",
-  "t": "paradox",
-  "kind": "vocab",
-  "pron": "PAIR-uh-doks",
-  "forms": ["paradox"],
-  "text": "A paradox is a situation that seems to contradict itself but turns out to be true. Here: taxpayers pay a smaller SHARE of each stadium than they used to — yet more actual dollars than ever, because stadiums cost so much more. A smaller slice of a much bigger pie can still be more pie."
- },
- {
-  "k": "trade-offs",
-  "t": "trade-offs",
-  "kind": "word",
-  "forms": ["trade-offs"],
-  "text": "A trade-off is what you give up to get something else — every big choice has one. A roof gets you comfort and year-round concerts; the trade-off is losing real weather and open sky."
- },
- {
-  "k": "concrete-bunker",
-  "t": "concrete bunker",
-  "kind": "phrase",
-  "forms": ["sealed-in-concrete-bunker"],
-  "text": "A bunker is a sealed concrete shelter built to survive bombs — dark, windowless, cut off from the world. Old domed stadiums felt like sitting inside one, which is why people hated them. The new see-through roofs are the fix for that feeling."
- },
- {
-  "k": "critique",
-  "t": "critique",
-  "kind": "word",
-  "forms": ["critique"],
-  "text": "A critique is a careful judgment of what’s wrong (and right) with something. The “concrete bunker” complaint was the original critique of domed stadiums — and the expert says it no longer applies."
- },
- {
-  "k": "enclosure",
-  "t": "enclosure",
-  "kind": "word",
-  "forms": ["enclosure", "enclosed", "enclose"],
-  "text": "An enclosure is anything that closes a space in — here, the roof and walls that seal a stadium off from the sky. An “enclosed venue” just means a roofed-over one."
- },
- {
-  "k": "accounts-for",
-  "t": "accounts for",
-  "kind": "phrase",
-  "forms": ["accounts for"],
-  "text": "Here “accounts for” means “makes up” — open-air stadiums account for half the league means half of all NFL stadiums are open-air. Nothing to do with bank accounts."
- },
- {
-  "k": "etfe",
-  "t": "ETFE",
-  "kind": "name",
-  "forms": ["ETFE"],
-  "text": "A super-strong, super-light clear plastic used for modern stadium roofs. Unlike the old concrete domes, an ETFE roof lets daylight pour through — you’re indoors, but it doesn’t feel like a basement."
- },
- {
-  "k": "sofi",
-  "t": "SoFi",
-  "kind": "name",
-  "forms": ["SoFi"],
-  "text": "SoFi Stadium in Los Angeles — one of the newest and most expensive NFL stadiums, with a clear ETFE roof. It’s unusual because private money paid for all of it, zero taxpayer dollars — which is why it “skews the numbers” later in the article."
- },
- {
-  "k": "seating-bowl",
-  "t": "seating bowl",
-  "kind": "phrase",
-  "forms": ["seating bowl"],
-  "text": "The seating bowl is the giant bowl-shaped ring of seats wrapped around the field. A partial roof covers the bowl — where the fans sit — while the field itself stays open to the sky."
- },
- {
-  "k": "the-elements",
-  "t": "the elements",
-  "kind": "phrase",
-  "forms": ["the elements"],
-  "text": "“The elements” is an old-fashioned way of saying the weather — wind, rain, snow, sun. Keeping “some connection to the elements” means fans still feel a little real outdoors. Not chemistry-class elements."
- },
- {
-  "k": "retractables",
-  "t": "retractables",
-  "kind": "word",
-  "forms": ["retractables"],
-  "text": "A retractable roof can open and close, like a giant convertible car. Sounds perfect — but they’re expensive, they break down, and teams end up keeping them closed anyway, so almost nobody builds them anymore."
- },
- {
-  "k": "virtually",
-  "t": "virtually",
-  "kind": "word",
-  "forms": ["virtually"],
-  "text": "Virtually means “almost” or “practically” — “virtually no one” means almost nobody at all. It has nothing to do with virtual reality."
- },
- {
-  "k": "venue",
-  "t": "venue",
-  "kind": "word",
-  "forms": ["venue", "venues"],
-  "text": "A venue is a place where events are held — a stadium, arena, or concert hall. The word choice matters: with a roof, the building stops being just a football field and becomes an all-year event venue."
- },
- {
-  "k": "conventions",
-  "t": "conventions",
-  "kind": "word",
-  "forms": ["conventions"],
-  "text": "Conventions are giant organized gatherings — thousands of people meeting up about business, comics, games, anything. They rent huge indoor spaces, which is exactly the kind of money a domed stadium can collect on non-football days."
- },
- {
-  "k": "calculus",
-  "t": "calculus",
-  "kind": "word",
-  "forms": ["calculus"],
-  "text": "Not the math class! Here “calculus” means the whole set of pluses and minuses behind a decision. Adding a roof “changes the whole calculus”: suddenly the building can earn money 365 days a year, so the expensive roof starts to make sense."
- },
- {
-  "k": "rules-out",
-  "t": "rules out",
-  "kind": "phrase",
-  "forms": ["rules out"],
-  "text": "To rule something out is to eliminate it as a possibility. The NFL requires a roof anywhere the average game-day temperature is below 50 degrees — which rules out most of the country in winter. Want a Super Bowl? Build a roof."
- },
- {
-  "k": "overwhelming-majority",
-  "t": "overwhelming majority",
-  "kind": "phrase",
-  "forms": ["overwhelming majority"],
-  "text": "An overwhelming majority means nearly all of it — so much that everything else barely counts. Nearly all of the NFL’s money comes from TV, not from tickets at the gate."
- },
- {
-  "k": "revenue",
-  "t": "revenue",
-  "kind": "word",
-  "forms": ["revenue", "revenues"],
-  "text": "Revenue is the money coming in — everything a business earns before paying its costs. For the NFL, the biggest river of revenue by far is television."
- },
- {
-  "k": "broadcast",
-  "t": "broadcast",
-  "kind": "word",
-  "forms": ["broadcast"],
-  "text": "To broadcast is to send a show out over TV, radio, or streaming. Broadcast contracts are the giant deals networks sign for the right to show NFL games — the league’s main source of money."
- },
- {
-  "k": "slot",
-  "t": "slot",
-  "kind": "word",
-  "forms": ["slot"],
-  "text": "A slot here is a reserved spot in the TV schedule — like the Monday-night slot. Networks pay fortunes for those time slots, so they hate the thought of weather wrecking one. Not a coin slot."
- },
- {
-  "k": "called-off",
-  "t": "called off",
-  "kind": "phrase",
-  "forms": ["called off"],
-  "text": "Called off means canceled. For a network that paid millions to show a game, “called off” is the scariest phrase in the language."
- },
- {
-  "k": "baseline",
-  "t": "baseline",
-  "kind": "word",
-  "forms": ["baseline"],
-  "text": "A baseline is the starting point you measure from. A new stadium “runs $2 to $3 billion as a baseline” means that’s the minimum — before extras like a roof add hundreds of millions more. Not the line on a basketball court."
- },
- {
-  "k": "subsidy",
-  "t": "subsidy",
-  "kind": "word",
-  "forms": ["subsidy", "subsidies"],
-  "text": "A subsidy is money the government chips in to help pay for something. A “public subsidy” for a stadium means taxpayers cover part of the bill for a billionaire owner’s building — which is exactly why people argue about it."
- },
- {
-  "k": "strip-out",
-  "t": "strip out",
-  "kind": "phrase",
-  "forms": ["strip out"],
-  "text": "To strip out a number is to remove it from your math to get a clearer picture. SoFi was 100% privately paid, which drags the average down; strip it out, and the taxpayers’ usual share looks bigger."
- },
- {
-  "k": "financed",
-  "t": "financed",
-  "kind": "word",
-  "forms": ["financed"],
-  "text": "Financed means paid for — usually with money arranged or borrowed up front. “Privately financed” means the owners’ own money, not taxpayers’."
- },
- {
-  "k": "skews",
-  "t": "skews",
-  "kind": "word",
-  "forms": ["skews"],
-  "text": "To skew numbers is to tilt or distort them so they give a misleading picture. One unusual stadium (SoFi, with zero public money) skews the league-wide average for everyone."
- },
- {
-  "k": "tab",
-  "t": "tab",
-  "kind": "word",
-  "forms": ["tab"],
-  "text": "The tab is the bill — like a restaurant check. “Paying less of the tab” means covering a smaller share of the total cost. The catch: a smaller share of a $3 billion tab is still way more money than before."
- },
- {
-  "k": "below-market",
-  "t": "below-market prices",
-  "kind": "phrase",
-  "forms": ["below-market prices"],
-  "text": "Below-market means cheaper than what things normally sell for. When a city sells a team land at below-market prices, that’s a hidden gift — real money the public gives up, without it ever showing on a bill."
- },
- {
-  "k": "tax-abatements",
-  "t": "tax abatements",
-  "kind": "phrase",
-  "forms": ["tax abatements"],
-  "text": "A tax abatement is an official discount on taxes — the government agrees to charge a company less than the normal amount. It’s another quiet way cities help pay for stadiums without writing a visible check."
- },
- {
-  "k": "infrastructure",
-  "t": "infrastructure",
-  "kind": "word",
-  "forms": ["infrastructure"],
-  "text": "Infrastructure is the basic built stuff everything else runs on: roads, ramps, pipes, power lines. Cities often build the highway ramps to the stadium at public expense — another hidden piece of the price."
- },
- {
-  "k": "sanitation",
-  "t": "sanitation",
-  "kind": "word",
-  "forms": ["sanitation"],
-  "text": "Sanitation services means trash pickup and sewer service. Even garbage collection can be written into a stadium deal — the city does it free, and the public quietly pays."
- },
- {
-  "k": "mixed-use",
-  "t": "mixed-use",
-  "kind": "word",
-  "forms": ["mixed-use"],
-  "text": "A mixed-use area combines homes, shops, offices, and restaurants in one development instead of just one thing. Stadium deals often include a whole mixed-use neighborhood built around the building."
- },
- {
-  "k": "pledged",
-  "t": "pledged",
-  "kind": "word",
-  "forms": ["pledged"],
-  "text": "Pledged means promised ahead of time. When decades of future tax money are pledged to pay off stadium debt, the city is spending money it hasn’t even collected yet."
- },
- {
-  "k": "bonds",
-  "t": "bonds",
-  "kind": "word",
-  "forms": ["bonds", "bond"],
-  "text": "A bond is basically an IOU: the city borrows money from investors and promises to pay it back, with interest, over many years. Stadium bonds are how cities afford billion-dollar buildings — by pushing the cost into the future. Not James Bond, and not glue."
- },
- {
-  "k": "factor-in",
-  "t": "factor in",
-  "kind": "phrase",
-  "forms": ["factor in"],
-  "text": "To factor something in is to include it in your math. A stadium deal that looks 50-50 can really be 70-30 against the public — once you factor in the cheap land and all the hidden extras."
- },
- {
-  "k": "off-balance-sheet",
-  "t": "off-balance-sheet",
-  "kind": "phrase",
-  "forms": ["off-balance-sheet"],
-  "text": "A balance sheet is the official list of what’s being paid and owed. “Off-balance-sheet” costs are kept off that official list — real costs, just invisible in the numbers voters are shown."
- },
- {
-  "k": "substitution",
-  "t": "substitution",
-  "kind": "word",
-  "forms": ["substitution"],
-  "text": "Economists’ word for spending that just moves around instead of growing. The $300 a family spends at the game is $300 they now DON’T spend at the local restaurant or bowling alley — the money changed places, but the town didn’t get richer. It’s the article’s key idea. (Not a substitute teacher.)"
- },
- {
-  "k": "leaks",
-  "t": "leaks out",
-  "kind": "phrase",
-  "forms": ["leaks out", "leaks"],
-  "text": "Money “leaks out” of a city’s economy when it’s earned there but spent or saved somewhere else — like water dripping out of a bucket. Stadium money flows to owners and players who live elsewhere, so it drips right out of town."
- },
- {
-  "k": "debt-service",
-  "t": "debt service",
-  "kind": "phrase",
-  "forms": ["debt service", "service that debt"],
-  "text": "Debt service means the regular payments on borrowed money — not customer service. To “service that debt” is to keep up those payments. If the stadium doesn’t earn enough to cover them, the city — or the fans — must."
- },
- {
-  "k": "exceeds",
-  "t": "exceeds",
-  "kind": "word",
-  "forms": ["exceeds"],
-  "text": "To exceed is to go over or be bigger than. If the city’s debt payments exceed what the stadium brings in, the city loses money year after year."
- },
- {
-  "k": "fiscal",
-  "t": "fiscal",
-  "kind": "word",
-  "forms": ["fiscal"],
-  "text": "Fiscal means having to do with government money — taxes, budgets, spending. A “fiscal hole” is a gap in the city’s budget that has to be filled by cutting services or raising taxes."
- },
- {
-  "k": "equation",
-  "t": "out of the equation",
-  "kind": "phrase",
-  "forms": ["equation"],
-  "text": "Taking weather “out of the equation” means removing it as a factor that affects the result — as if you deleted one variable from a math problem. There’s no literal equation; it’s a way of saying weather stops mattering."
- },
- {
-  "k": "minimize",
-  "t": "minimize",
-  "kind": "word",
-  "forms": ["minimize"],
-  "text": "Here minimize means to talk about something as if it’s smaller than it really is — to downplay it. The expert says losing weather is a genuine loss and he won’t pretend otherwise. (Not shrinking a window on a screen.)"
- },
- {
-  "k": "ice-bowl",
-  "t": "Ice Bowl",
-  "kind": "name",
-  "forms": ["Ice Bowl"],
-  "text": "The 1967 NFL championship game in Green Bay, played in roughly minus-13-degree cold — one of the most famous games ever, partly BECAUSE of the brutal weather. Exactly the kind of drama a dome makes impossible."
- },
- {
-  "k": "tuck-rule",
-  "t": "Tuck Rule game",
-  "kind": "name",
-  "forms": ["Tuck Rule"],
-  "text": "A legendary snowy 2002 playoff game decided by an obscure rule about fumbles — the falling snow is half of what made it unforgettable. Another case of weather becoming a character in the story."
- },
- {
-  "k": "variable",
-  "t": "variable",
-  "kind": "word",
-  "forms": ["variable"],
-  "text": "A variable — borrowed from math — is a factor that changes and affects the outcome. Weather has been football’s wildest variable for a century; putting on a roof deletes it from the game."
- },
- {
-  "k": "competitive-equity",
-  "t": "competitive equity",
-  "kind": "phrase",
-  "forms": ["competitive equity"],
-  "text": "Competitive equity means fairness of competition — everyone facing the same conditions. A dome team never has to play in snow all season; then a snowy playoff game on the road hits them extra hard. Fair, or just football? That’s the debate."
- },
- {
-  "k": "neutralizing",
-  "t": "neutralizing",
-  "kind": "word",
-  "forms": ["neutralizing"],
-  "text": "To neutralize something is to cancel out its power. A snowstorm can neutralize a great passing game — slippery ball, sliding receivers — so a team’s biggest weapon suddenly stops working."
- },
- {
-  "k": "feature-or-bug",
-  "t": "a feature or a bug",
-  "kind": "phrase",
-  "forms": ["a feature of the sport or merely a bug"],
-  "text": "Borrowed from software: a “feature” is something good that’s there on purpose; a “bug” is a flaw to be fixed. The whole dome debate squeezes into one question — is weather part of what football IS (a feature), or a problem to engineer away (a bug)?"
- },
- {
-  "k": "premium-seating",
-  "t": "premium seating",
-  "kind": "phrase",
-  "forms": ["premium seating", "suites", "loge sections"],
-  "text": "Premium seating is the expensive fancy stuff: private suites (mini rooms with their own snacks), club seats, and loge sections (small roped-off box areas). Roofed stadiums make it easier to sell, because buyers are paying for guaranteed comfort."
- },
- {
-  "k": "corporate-clients",
-  "t": "corporate clients",
-  "kind": "phrase",
-  "forms": ["corporate clients"],
-  "text": "Corporate clients are companies — not regular fans — that buy the expensive seats, often to impress their own customers. What they’re really buying is a promise: comfortable, weatherproof, nothing left to chance."
- },
- {
-  "k": "capital-basis",
-  "t": "capital basis",
-  "kind": "phrase",
-  "forms": ["capital basis"],
-  "text": "The capital basis is the total money invested in building something. Raise it by $300 million for a roof, and everything inside — tickets, parking, hot dogs — has to cost more to pay it back. As the expert puts it: the roof isn’t free to fans."
- },
- {
-  "k": "lambeau",
-  "t": "Lambeau Field",
-  "kind": "name",
-  "forms": ["Lambeau Field"],
-  "text": "The Green Bay Packers’ legendary open-air stadium in Wisconsin, home of freezing “frozen tundra” games since 1957. If any stadium in America will never get a roof, it’s this one."
- },
- {
-  "k": "franchises",
-  "t": "franchises",
-  "kind": "word",
-  "forms": ["franchises"],
-  "text": "In pro sports, a franchise is a team — the whole team-as-a-business. Not a fast-food chain. “There will always be franchises” that stay outdoors means some teams’ very identities depend on open-air football."
- },
- {
-  "k": "markets",
-  "t": "markets",
-  "kind": "word",
-  "forms": ["markets"],
-  "text": "In business-speak, a market is a city or region where a team sells itself — Green Bay and Buffalo are “markets.” Not a supermarket, and not a farmers market."
- },
- {
-  "k": "embedded",
-  "t": "embedded",
-  "kind": "word",
-  "forms": ["embedded"],
-  "text": "Embedded means stuck so deeply inside something that it can’t be pulled out. Outdoor football is embedded in some teams’ identities — take it away and the team wouldn’t feel like the same team."
- },
- {
-  "k": "untenable",
-  "t": "untenable",
-  "kind": "word",
-  "forms": ["untenable"],
-  "text": "Untenable means impossible to keep going or defend. Climate change could someday make outdoor football in Miami or Phoenix untenable — simply too dangerously hot. The opposite problem from Buffalo’s snow, same result: a roof."
- },
- {
-  "k": "zimbalist-long",
-  "t": "Zimbalist and Long",
-  "kind": "name",
-  "forms": ["ZIMBALIST", "LONG"],
-  "text": "The two experts the Journal is interviewing: Andrew Zimbalist, an economist famous for studying the business of sports, and Long, a researcher who studies how stadium deals get paid for. The all-caps name at the start of each paragraph tells you whose answer you’re reading."
- }
+  {
+    "k": "converge",
+    "t": "converge",
+    "kind": "vocab",
+    "pron": "kun-VERJ",
+    "forms": [
+      "converging"
+    ],
+    "text": "To converge is to come together toward the same point from different directions — like three hallways all meeting at the cafeteria. Here, several separate forces — concert money, Super Bowl rules, TV deals — are converging at once, and together they push every new stadium toward a roof.",
+    "audio": true
+  },
+  {
+    "k": "paradox",
+    "t": "paradox",
+    "kind": "vocab",
+    "pron": "PAIR-uh-doks",
+    "forms": [
+      "paradox"
+    ],
+    "text": "A paradox is a situation that seems to contradict itself but turns out to be true. Here: taxpayers pay a smaller SHARE of each stadium than they used to — yet more actual dollars than ever, because stadiums cost so much more. A smaller slice of a much bigger pie can still be more pie.",
+    "audio": true
+  },
+  {
+    "k": "trade-offs",
+    "t": "trade-offs",
+    "kind": "word",
+    "forms": [
+      "trade-offs"
+    ],
+    "text": "A trade-off is what you give up to get something else — every big choice has one. A roof gets you comfort and year-round concerts; the trade-off is losing real weather and open sky.",
+    "audio": true
+  },
+  {
+    "k": "concrete-bunker",
+    "t": "concrete bunker",
+    "kind": "phrase",
+    "forms": [
+      "sealed-in-concrete-bunker"
+    ],
+    "text": "A bunker is a sealed concrete shelter built to survive bombs — dark, windowless, cut off from the world. Old domed stadiums felt like sitting inside one, which is why people hated them. The new see-through roofs are the fix for that feeling.",
+    "audio": true
+  },
+  {
+    "k": "critique",
+    "t": "critique",
+    "kind": "word",
+    "forms": [
+      "critique"
+    ],
+    "text": "A critique is a careful judgment of what’s wrong (and right) with something. The “concrete bunker” complaint was the original critique of domed stadiums — and the expert says it no longer applies.",
+    "audio": true
+  },
+  {
+    "k": "enclosure",
+    "t": "enclosure",
+    "kind": "word",
+    "forms": [
+      "enclosure",
+      "enclosed",
+      "enclose"
+    ],
+    "text": "An enclosure is anything that closes a space in — here, the roof and walls that seal a stadium off from the sky. An “enclosed venue” just means a roofed-over one.",
+    "audio": true
+  },
+  {
+    "k": "accounts-for",
+    "t": "accounts for",
+    "kind": "phrase",
+    "forms": [
+      "accounts for"
+    ],
+    "text": "Here “accounts for” means “makes up” — open-air stadiums account for half the league means half of all NFL stadiums are open-air. Nothing to do with bank accounts.",
+    "audio": true
+  },
+  {
+    "k": "etfe",
+    "t": "ETFE",
+    "kind": "name",
+    "forms": [
+      "ETFE"
+    ],
+    "text": "A super-strong, super-light clear plastic used for modern stadium roofs. Unlike the old concrete domes, an ETFE roof lets daylight pour through — you’re indoors, but it doesn’t feel like a basement.",
+    "audio": true
+  },
+  {
+    "k": "sofi",
+    "t": "SoFi",
+    "kind": "name",
+    "forms": [
+      "SoFi"
+    ],
+    "text": "SoFi Stadium in Los Angeles — one of the newest and most expensive NFL stadiums, with a clear ETFE roof. It’s unusual because private money paid for all of it, zero taxpayer dollars — which is why it “skews the numbers” later in the article.",
+    "audio": true
+  },
+  {
+    "k": "seating-bowl",
+    "t": "seating bowl",
+    "kind": "phrase",
+    "forms": [
+      "seating bowl"
+    ],
+    "text": "The seating bowl is the giant bowl-shaped ring of seats wrapped around the field. A partial roof covers the bowl — where the fans sit — while the field itself stays open to the sky.",
+    "audio": true
+  },
+  {
+    "k": "the-elements",
+    "t": "the elements",
+    "kind": "phrase",
+    "forms": [
+      "the elements"
+    ],
+    "text": "“The elements” is an old-fashioned way of saying the weather — wind, rain, snow, sun. Keeping “some connection to the elements” means fans still feel a little real outdoors. Not chemistry-class elements.",
+    "audio": true
+  },
+  {
+    "k": "retractables",
+    "t": "retractables",
+    "kind": "word",
+    "forms": [
+      "retractables"
+    ],
+    "text": "A retractable roof can open and close, like a giant convertible car. Sounds perfect — but they’re expensive, they break down, and teams end up keeping them closed anyway, so almost nobody builds them anymore.",
+    "audio": true
+  },
+  {
+    "k": "virtually",
+    "t": "virtually",
+    "kind": "word",
+    "forms": [
+      "virtually"
+    ],
+    "text": "Virtually means “almost” or “practically” — “virtually no one” means almost nobody at all. It has nothing to do with virtual reality.",
+    "audio": true
+  },
+  {
+    "k": "venue",
+    "t": "venue",
+    "kind": "word",
+    "forms": [
+      "venue",
+      "venues"
+    ],
+    "text": "A venue is a place where events are held — a stadium, arena, or concert hall. The word choice matters: with a roof, the building stops being just a football field and becomes an all-year event venue.",
+    "audio": true
+  },
+  {
+    "k": "conventions",
+    "t": "conventions",
+    "kind": "word",
+    "forms": [
+      "conventions"
+    ],
+    "text": "Conventions are giant organized gatherings — thousands of people meeting up about business, comics, games, anything. They rent huge indoor spaces, which is exactly the kind of money a domed stadium can collect on non-football days.",
+    "audio": true
+  },
+  {
+    "k": "calculus",
+    "t": "calculus",
+    "kind": "word",
+    "forms": [
+      "calculus"
+    ],
+    "text": "Not the math class! Here “calculus” means the whole set of pluses and minuses behind a decision. Adding a roof “changes the whole calculus”: suddenly the building can earn money 365 days a year, so the expensive roof starts to make sense.",
+    "audio": true
+  },
+  {
+    "k": "rules-out",
+    "t": "rules out",
+    "kind": "phrase",
+    "forms": [
+      "rules out"
+    ],
+    "text": "To rule something out is to eliminate it as a possibility. The NFL requires a roof anywhere the average game-day temperature is below 50 degrees — which rules out most of the country in winter. Want a Super Bowl? Build a roof.",
+    "audio": true
+  },
+  {
+    "k": "overwhelming-majority",
+    "t": "overwhelming majority",
+    "kind": "phrase",
+    "forms": [
+      "overwhelming majority"
+    ],
+    "text": "An overwhelming majority means nearly all of it — so much that everything else barely counts. Nearly all of the NFL’s money comes from TV, not from tickets at the gate.",
+    "audio": true
+  },
+  {
+    "k": "revenue",
+    "t": "revenue",
+    "kind": "word",
+    "forms": [
+      "revenue",
+      "revenues"
+    ],
+    "text": "Revenue is the money coming in — everything a business earns before paying its costs. For the NFL, the biggest river of revenue by far is television.",
+    "audio": true
+  },
+  {
+    "k": "broadcast",
+    "t": "broadcast",
+    "kind": "word",
+    "forms": [
+      "broadcast"
+    ],
+    "text": "To broadcast is to send a show out over TV, radio, or streaming. Broadcast contracts are the giant deals networks sign for the right to show NFL games — the league’s main source of money.",
+    "audio": true
+  },
+  {
+    "k": "slot",
+    "t": "slot",
+    "kind": "word",
+    "forms": [
+      "slot"
+    ],
+    "text": "A slot here is a reserved spot in the TV schedule — like the Monday-night slot. Networks pay fortunes for those time slots, so they hate the thought of weather wrecking one. Not a coin slot.",
+    "audio": true
+  },
+  {
+    "k": "called-off",
+    "t": "called off",
+    "kind": "phrase",
+    "forms": [
+      "called off"
+    ],
+    "text": "Called off means canceled. For a network that paid millions to show a game, “called off” is the scariest phrase in the language.",
+    "audio": true
+  },
+  {
+    "k": "baseline",
+    "t": "baseline",
+    "kind": "word",
+    "forms": [
+      "baseline"
+    ],
+    "text": "A baseline is the starting point you measure from. A new stadium “runs $2 to $3 billion as a baseline” means that’s the minimum — before extras like a roof add hundreds of millions more. Not the line on a basketball court.",
+    "audio": true
+  },
+  {
+    "k": "subsidy",
+    "t": "subsidy",
+    "kind": "word",
+    "forms": [
+      "subsidy",
+      "subsidies"
+    ],
+    "text": "A subsidy is money the government chips in to help pay for something. A “public subsidy” for a stadium means taxpayers cover part of the bill for a billionaire owner’s building — which is exactly why people argue about it.",
+    "audio": true
+  },
+  {
+    "k": "strip-out",
+    "t": "strip out",
+    "kind": "phrase",
+    "forms": [
+      "strip out"
+    ],
+    "text": "To strip out a number is to remove it from your math to get a clearer picture. SoFi was 100% privately paid, which drags the average down; strip it out, and the taxpayers’ usual share looks bigger.",
+    "audio": true
+  },
+  {
+    "k": "financed",
+    "t": "financed",
+    "kind": "word",
+    "forms": [
+      "financed"
+    ],
+    "text": "Financed means paid for — usually with money arranged or borrowed up front. “Privately financed” means the owners’ own money, not taxpayers’.",
+    "audio": true
+  },
+  {
+    "k": "skews",
+    "t": "skews",
+    "kind": "word",
+    "forms": [
+      "skews"
+    ],
+    "text": "To skew numbers is to tilt or distort them so they give a misleading picture. One unusual stadium (SoFi, with zero public money) skews the league-wide average for everyone.",
+    "audio": true
+  },
+  {
+    "k": "tab",
+    "t": "tab",
+    "kind": "word",
+    "forms": [
+      "tab"
+    ],
+    "text": "The tab is the bill — like a restaurant check. “Paying less of the tab” means covering a smaller share of the total cost. The catch: a smaller share of a $3 billion tab is still way more money than before.",
+    "audio": true
+  },
+  {
+    "k": "below-market",
+    "t": "below-market prices",
+    "kind": "phrase",
+    "forms": [
+      "below-market prices"
+    ],
+    "text": "Below-market means cheaper than what things normally sell for. When a city sells a team land at below-market prices, that’s a hidden gift — real money the public gives up, without it ever showing on a bill.",
+    "audio": true
+  },
+  {
+    "k": "tax-abatements",
+    "t": "tax abatements",
+    "kind": "phrase",
+    "forms": [
+      "tax abatements"
+    ],
+    "text": "A tax abatement is an official discount on taxes — the government agrees to charge a company less than the normal amount. It’s another quiet way cities help pay for stadiums without writing a visible check.",
+    "audio": true
+  },
+  {
+    "k": "infrastructure",
+    "t": "infrastructure",
+    "kind": "word",
+    "forms": [
+      "infrastructure"
+    ],
+    "text": "Infrastructure is the basic built stuff everything else runs on: roads, ramps, pipes, power lines. Cities often build the highway ramps to the stadium at public expense — another hidden piece of the price.",
+    "audio": true
+  },
+  {
+    "k": "sanitation",
+    "t": "sanitation",
+    "kind": "word",
+    "forms": [
+      "sanitation"
+    ],
+    "text": "Sanitation services means trash pickup and sewer service. Even garbage collection can be written into a stadium deal — the city does it free, and the public quietly pays.",
+    "audio": true
+  },
+  {
+    "k": "mixed-use",
+    "t": "mixed-use",
+    "kind": "word",
+    "forms": [
+      "mixed-use"
+    ],
+    "text": "A mixed-use area combines homes, shops, offices, and restaurants in one development instead of just one thing. Stadium deals often include a whole mixed-use neighborhood built around the building.",
+    "audio": true
+  },
+  {
+    "k": "pledged",
+    "t": "pledged",
+    "kind": "word",
+    "forms": [
+      "pledged"
+    ],
+    "text": "Pledged means promised ahead of time. When decades of future tax money are pledged to pay off stadium debt, the city is spending money it hasn’t even collected yet.",
+    "audio": true
+  },
+  {
+    "k": "bonds",
+    "t": "bonds",
+    "kind": "word",
+    "forms": [
+      "bonds",
+      "bond"
+    ],
+    "text": "A bond is basically an IOU: the city borrows money from investors and promises to pay it back, with interest, over many years. Stadium bonds are how cities afford billion-dollar buildings — by pushing the cost into the future. Not James Bond, and not glue.",
+    "audio": true
+  },
+  {
+    "k": "factor-in",
+    "t": "factor in",
+    "kind": "phrase",
+    "forms": [
+      "factor in"
+    ],
+    "text": "To factor something in is to include it in your math. A stadium deal that looks 50-50 can really be 70-30 against the public — once you factor in the cheap land and all the hidden extras.",
+    "audio": true
+  },
+  {
+    "k": "off-balance-sheet",
+    "t": "off-balance-sheet",
+    "kind": "phrase",
+    "forms": [
+      "off-balance-sheet"
+    ],
+    "text": "A balance sheet is the official list of what’s being paid and owed. “Off-balance-sheet” costs are kept off that official list — real costs, just invisible in the numbers voters are shown.",
+    "audio": true
+  },
+  {
+    "k": "substitution",
+    "t": "substitution",
+    "kind": "word",
+    "forms": [
+      "substitution"
+    ],
+    "text": "Economists’ word for spending that just moves around instead of growing. The $300 a family spends at the game is $300 they now DON’T spend at the local restaurant or bowling alley — the money changed places, but the town didn’t get richer. It’s the article’s key idea. (Not a substitute teacher.)",
+    "audio": true
+  },
+  {
+    "k": "leaks",
+    "t": "leaks out",
+    "kind": "phrase",
+    "forms": [
+      "leaks out",
+      "leaks"
+    ],
+    "text": "Money “leaks out” of a city’s economy when it’s earned there but spent or saved somewhere else — like water dripping out of a bucket. Stadium money flows to owners and players who live elsewhere, so it drips right out of town.",
+    "audio": true
+  },
+  {
+    "k": "debt-service",
+    "t": "debt service",
+    "kind": "phrase",
+    "forms": [
+      "debt service",
+      "service that debt"
+    ],
+    "text": "Debt service means the regular payments on borrowed money — not customer service. To “service that debt” is to keep up those payments. If the stadium doesn’t earn enough to cover them, the city — or the fans — must.",
+    "audio": true
+  },
+  {
+    "k": "exceeds",
+    "t": "exceeds",
+    "kind": "word",
+    "forms": [
+      "exceeds"
+    ],
+    "text": "To exceed is to go over or be bigger than. If the city’s debt payments exceed what the stadium brings in, the city loses money year after year.",
+    "audio": true
+  },
+  {
+    "k": "fiscal",
+    "t": "fiscal",
+    "kind": "word",
+    "forms": [
+      "fiscal"
+    ],
+    "text": "Fiscal means having to do with government money — taxes, budgets, spending. A “fiscal hole” is a gap in the city’s budget that has to be filled by cutting services or raising taxes.",
+    "audio": true
+  },
+  {
+    "k": "equation",
+    "t": "out of the equation",
+    "kind": "phrase",
+    "forms": [
+      "equation"
+    ],
+    "text": "Taking weather “out of the equation” means removing it as a factor that affects the result — as if you deleted one variable from a math problem. There’s no literal equation; it’s a way of saying weather stops mattering.",
+    "audio": true
+  },
+  {
+    "k": "minimize",
+    "t": "minimize",
+    "kind": "word",
+    "forms": [
+      "minimize"
+    ],
+    "text": "Here minimize means to talk about something as if it’s smaller than it really is — to downplay it. The expert says losing weather is a genuine loss and he won’t pretend otherwise. (Not shrinking a window on a screen.)",
+    "audio": true
+  },
+  {
+    "k": "ice-bowl",
+    "t": "Ice Bowl",
+    "kind": "name",
+    "forms": [
+      "Ice Bowl"
+    ],
+    "text": "The 1967 NFL championship game in Green Bay, played in roughly minus-13-degree cold — one of the most famous games ever, partly BECAUSE of the brutal weather. Exactly the kind of drama a dome makes impossible.",
+    "audio": true
+  },
+  {
+    "k": "tuck-rule",
+    "t": "Tuck Rule game",
+    "kind": "name",
+    "forms": [
+      "Tuck Rule"
+    ],
+    "text": "A legendary snowy 2002 playoff game decided by an obscure rule about fumbles — the falling snow is half of what made it unforgettable. Another case of weather becoming a character in the story.",
+    "audio": true
+  },
+  {
+    "k": "variable",
+    "t": "variable",
+    "kind": "word",
+    "forms": [
+      "variable"
+    ],
+    "text": "A variable — borrowed from math — is a factor that changes and affects the outcome. Weather has been football’s wildest variable for a century; putting on a roof deletes it from the game.",
+    "audio": true
+  },
+  {
+    "k": "competitive-equity",
+    "t": "competitive equity",
+    "kind": "phrase",
+    "forms": [
+      "competitive equity"
+    ],
+    "text": "Competitive equity means fairness of competition — everyone facing the same conditions. A dome team never has to play in snow all season; then a snowy playoff game on the road hits them extra hard. Fair, or just football? That’s the debate.",
+    "audio": true
+  },
+  {
+    "k": "neutralizing",
+    "t": "neutralizing",
+    "kind": "word",
+    "forms": [
+      "neutralizing"
+    ],
+    "text": "To neutralize something is to cancel out its power. A snowstorm can neutralize a great passing game — slippery ball, sliding receivers — so a team’s biggest weapon suddenly stops working.",
+    "audio": true
+  },
+  {
+    "k": "feature-or-bug",
+    "t": "a feature or a bug",
+    "kind": "phrase",
+    "forms": [
+      "a feature of the sport or merely a bug"
+    ],
+    "text": "Borrowed from software: a “feature” is something good that’s there on purpose; a “bug” is a flaw to be fixed. The whole dome debate squeezes into one question — is weather part of what football IS (a feature), or a problem to engineer away (a bug)?",
+    "audio": true
+  },
+  {
+    "k": "premium-seating",
+    "t": "premium seating",
+    "kind": "phrase",
+    "forms": [
+      "premium seating",
+      "suites",
+      "loge sections"
+    ],
+    "text": "Premium seating is the expensive fancy stuff: private suites (mini rooms with their own snacks), club seats, and loge sections (small roped-off box areas). Roofed stadiums make it easier to sell, because buyers are paying for guaranteed comfort.",
+    "audio": true
+  },
+  {
+    "k": "corporate-clients",
+    "t": "corporate clients",
+    "kind": "phrase",
+    "forms": [
+      "corporate clients"
+    ],
+    "text": "Corporate clients are companies — not regular fans — that buy the expensive seats, often to impress their own customers. What they’re really buying is a promise: comfortable, weatherproof, nothing left to chance.",
+    "audio": true
+  },
+  {
+    "k": "capital-basis",
+    "t": "capital basis",
+    "kind": "phrase",
+    "forms": [
+      "capital basis"
+    ],
+    "text": "The capital basis is the total money invested in building something. Raise it by $300 million for a roof, and everything inside — tickets, parking, hot dogs — has to cost more to pay it back. As the expert puts it: the roof isn’t free to fans.",
+    "audio": true
+  },
+  {
+    "k": "lambeau",
+    "t": "Lambeau Field",
+    "kind": "name",
+    "forms": [
+      "Lambeau Field"
+    ],
+    "text": "The Green Bay Packers’ legendary open-air stadium in Wisconsin, home of freezing “frozen tundra” games since 1957. If any stadium in America will never get a roof, it’s this one.",
+    "audio": true
+  },
+  {
+    "k": "franchises",
+    "t": "franchises",
+    "kind": "word",
+    "forms": [
+      "franchises"
+    ],
+    "text": "In pro sports, a franchise is a team — the whole team-as-a-business. Not a fast-food chain. “There will always be franchises” that stay outdoors means some teams’ very identities depend on open-air football.",
+    "audio": true
+  },
+  {
+    "k": "markets",
+    "t": "markets",
+    "kind": "word",
+    "forms": [
+      "markets"
+    ],
+    "text": "In business-speak, a market is a city or region where a team sells itself — Green Bay and Buffalo are “markets.” Not a supermarket, and not a farmers market.",
+    "audio": true
+  },
+  {
+    "k": "embedded",
+    "t": "embedded",
+    "kind": "word",
+    "forms": [
+      "embedded"
+    ],
+    "text": "Embedded means stuck so deeply inside something that it can’t be pulled out. Outdoor football is embedded in some teams’ identities — take it away and the team wouldn’t feel like the same team.",
+    "audio": true
+  },
+  {
+    "k": "untenable",
+    "t": "untenable",
+    "kind": "word",
+    "forms": [
+      "untenable"
+    ],
+    "text": "Untenable means impossible to keep going or defend. Climate change could someday make outdoor football in Miami or Phoenix untenable — simply too dangerously hot. The opposite problem from Buffalo’s snow, same result: a roof.",
+    "audio": true
+  },
+  {
+    "k": "zimbalist-long",
+    "t": "Zimbalist and Long",
+    "kind": "name",
+    "forms": [
+      "ZIMBALIST",
+      "LONG"
+    ],
+    "text": "The two experts the Journal is interviewing: Andrew Zimbalist, an economist famous for studying the business of sports, and Long, a researcher who studies how stadium deals get paid for. The all-caps name at the start of each paragraph tells you whose answer you’re reading.",
+    "audio": true
+  }
 ]

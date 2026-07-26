@@ -1,340 +1,377 @@
 [
- {
-  "k": "anthropogenic",
-  "t": "anthropogenic",
-  "kind": "vocab",
-  "pron": "an-throh-puh-JEN-ik",
-  "forms": [
-   "anthropogenic"
-  ],
-  "text": "Anthropogenic means caused by human beings — it's the word scientists use to separate what people did from what nature did on its own (Greek: anthropos = human, -genic = produced by). Aviation's 2.5% share of anthropogenic CO2 means 2.5% of the carbon dioxide humans put out — volcanoes and other natural sources don't count."
- },
- {
-  "k": "biennial",
-  "t": "biennial",
-  "kind": "vocab",
-  "pron": "by-EN-ee-ul",
-  "forms": [
-   "biennial"
-  ],
-  "text": "Biennial means happening once every two years — the Farnborough air show is biennial, so it opened this July but won't return for another two summers. Watch the tricky cousins: “annual” is every year, “biannual” usually means twice a year, and “biennial” is every two."
- },
- {
-  "k": "taxiing",
-  "t": "taxiing",
-  "kind": "word",
-  "forms": [
-   "taxiing"
-  ],
-  "text": "When a plane taxis, it drives slowly along the ground under its own power, making its way to or from the runway — nothing to do with yellow cabs. The story opens mid-taxi, when the propeller suddenly stops turning: alarming in a normal plane, perfectly routine in an electric one."
- },
- {
-  "k": "throttle",
-  "t": "throttle",
-  "kind": "word",
-  "forms": [
-   "throttle"
-  ],
-  "text": "The throttle is the lever that controls how much power an engine delivers — pull it back to ease off, advance it to speed up (that's why “full throttle” means flat out). The writer pulls the throttle back and the electric motor simply stops, just like a Tesla at a red light."
- },
- {
-  "k": "your-correspondent",
-  "t": "your correspondent",
-  "kind": "phrase",
-  "forms": [
-   "your correspondent"
-  ],
-  "text": "The Economist publishes its writers without names, so a reporter refers to himself in the third person as “your correspondent.” Here it means the journalist writing the piece — who is also, remarkably, the one flying the plane."
- },
- {
-  "k": "eerily",
-  "t": "eerily",
-  "kind": "word",
-  "forms": [
-   "eerily"
-  ],
-  "text": "Eerie means strange in a spooky, unsettling way. An aircraft climbing “in an eerily quiet manner” is unnerving precisely because your brain expects engine roar and gets near-silence instead."
- },
- {
-  "k": "certified",
-  "t": "certified",
-  "kind": "word",
-  "forms": [
-   "certified"
-  ],
-  "text": "Certified means officially approved by the authorities after rigorous testing — in aviation, a plane can't carry passengers or train pilots until regulators certify it as safe. The Velis Electro being the first electric aircraft certified for pilot training is a genuine milestone, not just a demo."
- },
- {
-  "k": "combustion",
-  "t": "combustion",
-  "kind": "word",
-  "forms": [
-   "combustion"
-  ],
-  "text": "Combustion is burning — a combustion engine works by burning fuel in tiny controlled explosions, the way nearly every car and plane engine of the last century has. The article's running contest: combustion versus batteries versus a hybrid marriage of the two."
- },
- {
-  "k": "topping-up",
-  "t": "topping up",
-  "kind": "phrase",
-  "forms": [
-   "topping up"
-  ],
-  "text": "British English for refilling something toward full — you top up a drink, a phone plan, or here a battery. Topping up the Electro's battery takes just over an hour."
- },
- {
-  "k": "looms",
-  "t": "looms",
-  "kind": "word",
-  "forms": [
-   "looms"
-  ],
-  "text": "To loom is to rise up large and imposing nearby, often with a hint of importance or threat. Farnborough Airport looms near little Blackbushe both physically and in the story — it's the stage where the industry's future is on display."
- },
- {
-  "k": "sustainable",
-  "t": "sustainable",
-  "kind": "word",
-  "forms": [
-   "sustainable"
-  ],
-  "text": "Sustainable means able to keep going long-term without wrecking the resources it depends on — in aviation, flying that doesn't keep loading the atmosphere with heat-trapping gases. “Sustainable flying” sitting high on the air show's agenda tells you the industry knows it has a problem."
- },
- {
-  "k": "high-on-the-agenda",
-  "t": "high on the agenda",
-  "kind": "phrase",
-  "forms": [
-   "high on the agenda"
-  ],
-  "text": "An agenda is the list of things a meeting will deal with, so something “high on the agenda” is a top priority — near the top of the list. At Farnborough this year, that spot belonged to sustainable flying."
- },
- {
-  "k": "reckoned",
-  "t": "reckoned",
-  "kind": "word",
-  "forms": [
-   "reckoned"
-  ],
-  "text": "Reckoned means calculated or estimated — “is reckoned to be greater” is the careful, British way of saying experts believe it's bigger even though it can't be measured exactly. Aviation's true climate impact is reckoned to exceed its plain CO2 number, because jets emit other warming gases too."
- },
- {
-  "k": "nitrogen-oxides",
-  "t": "nitrogen oxides",
-  "kind": "name",
-  "forms": [
-   "nitrogen oxides"
-  ],
-  "text": "A family of heat-trapping, polluting gases (shorthand: NOx) produced when fuel burns at high temperature. Jets release them miles up in the atmosphere, where they do extra climate damage on top of CO2 — and they're proving especially tough to clean up."
- },
- {
-  "k": "pledge",
-  "t": "pledge",
-  "kind": "word",
-  "forms": [
-   "pledge"
-  ],
-  "text": "A pledge is a solemn public promise. The aviation industry has pledged to reach net-zero emissions by 2050 — and the article states flatly that the pledge will probably be missed."
- },
- {
-  "k": "net-zero",
-  "t": "net-zero",
-  "kind": "phrase",
-  "forms": [
-   "net-zero"
-  ],
-  "text": "Net-zero means the total added to the atmosphere, after subtractions, comes out to zero: whatever you still emit, you remove or offset an equal amount. It's the headline climate target for countries and industries — “net” because it's the balance that counts, not a promise never to emit at all."
- },
- {
-  "k": "range",
-  "t": "range",
-  "kind": "word",
-  "forms": [
-   "range"
-  ],
-  "text": "A vehicle's range is how far it can travel before refueling or recharging — the same spec electric-car buyers agonize over as “range anxiety.” Range is the electric plane's Achilles' heel: the little Electro manages about 50 minutes aloft, emergency cushion included."
- },
- {
-  "k": "aerospace",
-  "t": "aerospace",
-  "kind": "word",
-  "forms": [
-   "aerospace"
-  ],
-  "text": "Aerospace is the industry that builds things that fly — aircraft and spacecraft (air + space). Textron, Heart Aerospace, and GE Aerospace are all players in it."
- },
- {
-  "k": "leases",
-  "t": "leases",
-  "kind": "word",
-  "forms": [
-   "leases"
-  ],
-  "text": "To lease is to rent something out long-term under a contract rather than sell it — companies lease aircraft the way families lease cars. NEBOair leases Electros to customers like flying schools, which spreads out the cost of a new technology."
- },
- {
-  "k": "in-the-pipeline",
-  "t": "in the pipeline",
-  "kind": "phrase",
-  "forms": [
-   "in the pipeline"
-  ],
-  "text": "Something in the pipeline is already on its way but hasn't arrived yet — the image is of oil flowing through a pipe toward you. Better batteries are in the pipeline, so electric planes' range will stretch over time."
- },
- {
-  "k": "let-alone",
-  "t": "let alone",
-  "kind": "phrase",
-  "forms": [
-   "let alone"
-  ],
-  "text": "“Let alone” links two things where the second is even less likely than the first: batteries will probably never be powerful enough, let alone light enough. Translation — the power problem is hard, and the weight problem is even harder."
- },
- {
-  "k": "deadweight",
-  "t": "deadweight",
-  "kind": "word",
-  "forms": [
-   "deadweight"
-  ],
-  "text": "Deadweight is weight that just sits there contributing nothing — cargo you haul without any benefit. It's the article's damning word for batteries: fuel burns away and the plane gets lighter as it flies, but a battery weighs exactly as much empty as full, so you lug the whole load the whole trip."
- },
- {
-  "k": "divert",
-  "t": "divert",
-  "kind": "word",
-  "forms": [
-   "divert"
-  ],
-  "text": "To divert is to change course away from your planned route — a diverted flight lands somewhere other than its destination. The rules require airliners to carry enough energy to circle or divert to another airport that might be far away, and that safety cushion is exactly what batteries can't provide."
- },
- {
-  "k": "reserve",
-  "t": "reserve",
-  "kind": "word",
-  "forms": [
-   "reserve"
-  ],
-  "text": "A reserve is an extra amount deliberately held back for emergencies — reserve fuel, reserve players, cash reserves. A small airliner would need hours of flying plus sufficient reserve, and a battery that big would be so heavy there'd be no weight left over for passengers."
- },
- {
-  "k": "gas-turbine",
-  "t": "gas turbine",
-  "kind": "phrase",
-  "forms": [
-   "gas turbines",
-   "gas turbine"
-  ],
-  "text": "The engine type behind nearly all airliners: hot expanding gas from burning fuel spins a turbine — a shaft of fan blades — at enormous speed. Blast the thrust straight out the back and it's a jet; use the spin to turn a propeller and it's a turboprop."
- },
- {
-  "k": "turboprop",
-  "t": "turboprop",
-  "kind": "word",
-  "forms": [
-   "turboprops",
-   "turboprop"
-  ],
-  "text": "A turboprop is a gas-turbine engine that turns a propeller instead of blasting thrust out like a jet. Slower than a jet but efficient on shorter hops — which is why the first hybrid airliners are likely to be turboprops flying regional routes."
- },
- {
-  "k": "short-haul",
-  "t": "short-haul",
-  "kind": "phrase",
-  "forms": [
-   "short-haul"
-  ],
-  "text": "Haul is the distance something is carried, so short-haul flights are the quick hops between nearby cities — the opposite of long-haul ocean-crossers. Electric and hybrid planes make sense on short-haul routes first, where their limited range matters least."
- },
- {
-  "k": "demonstrator",
-  "t": "demonstrator",
-  "kind": "word",
-  "forms": [
-   "demonstrator"
-  ],
-  "text": "Not a person waving a protest sign — in engineering, a demonstrator is a working test version built to prove a design actually works before the real product is built. Heart's demonstrator will be the largest battery-powered aircraft ever to take off."
- },
- {
-  "k": "ground-trials",
-  "t": "ground trials",
-  "kind": "phrase",
-  "forms": [
-   "ground trials"
-  ],
-  "text": "A trial here is a test, not a courtroom — ground trials are all the testing a new aircraft goes through before it ever leaves the runway: engines, systems, taxiing. Heart has finished those; actually flying comes next."
- },
- {
-  "k": "housing",
-  "t": "housing",
-  "kind": "word",
-  "forms": [
-   "housing"
-  ],
-  "text": "In machinery, a housing is the rigid casing that encloses and protects the working parts — nobody lives in it. The ES-30's gas turbine would be built into the same housing that holds the electric motors, so one pod contains the whole hybrid heart."
- },
- {
-  "k": "conventional",
-  "t": "conventional",
-  "kind": "word",
-  "forms": [
-   "conventional"
-  ],
-  "text": "Conventional means the ordinary, standard kind — following convention rather than breaking new ground. GE's design starts from a conventional turboprop and bolts on an electric helper motor for the power-hungry moments like take-off and climbing."
- },
- {
-  "k": "intriguing",
-  "t": "intriguing",
-  "kind": "word",
-  "forms": [
-   "intriguing"
-  ],
-  "text": "Intriguing means fascinating in a curiosity-hooking way — something that makes you lean in wanting to know more. The article saves the word for eVTOLs, the closest thing here to an actual flying car."
- },
- {
-  "k": "deployed",
-  "t": "deployed",
-  "kind": "word",
-  "forms": [
-   "deployed"
-  ],
-  "text": "To deploy something is to move it out of development and into actual use — soldiers deploy to the field; software deploys to users. eVTOLs have been “long talked of, but are at last starting to be deployed”: the era of demos and promises is finally ending."
- },
- {
-  "k": "evtol",
-  "t": "eVTOL",
-  "kind": "name",
-  "forms": [
-   "eVTOLs",
-   "eVTOL"
-  ],
-  "text": "Short for electric Vertical Take-Off and Landing craft — a car-sized electric vehicle that lifts straight up like a helicopter, no runway needed. The dream job: air taxis hopping handfuls of passengers across a city, and quieter, simpler replacements for helicopters."
- },
- {
-  "k": "farnborough",
-  "t": "Farnborough",
-  "kind": "name",
-  "forms": [
-   "Farnborough"
-  ],
-  "text": "A town south-west of London whose airport hosts one of the world's great air shows every two years — the industry's stage for showing off what's next, from new airliners to, this year, the first eVTOL flight."
- },
- {
-  "k": "saab",
-  "t": "Saab",
-  "kind": "name",
-  "forms": [
-   "Saab"
-  ],
-  "text": "A Swedish company best known for cars and fighter jets that also built regional airliners. One of them, refitted with a hybrid engine in place of one of its two normal ones, flew across the North Atlantic to appear at the show — a working proof of the parallel-hybrid idea."
- },
- {
-  "k": "reach-for-the-sky",
-  "t": "reach for the sky",
-  "kind": "phrase",
-  "forms": [
-   "reach for the sky"
-  ],
-  "text": "To reach for the sky is to aim as high as you possibly can. The closing pun works twice over: electric aviation has started to reach for the sky both literally — these machines are finally taking off — and in ambition."
- }
+  {
+    "k": "anthropogenic",
+    "t": "anthropogenic",
+    "kind": "vocab",
+    "pron": "an-throh-puh-JEN-ik",
+    "forms": [
+      "anthropogenic"
+    ],
+    "text": "Anthropogenic means caused by human beings — it's the word scientists use to separate what people did from what nature did on its own (Greek: anthropos = human, -genic = produced by). Aviation's 2.5% share of anthropogenic CO2 means 2.5% of the carbon dioxide humans put out — volcanoes and other natural sources don't count.",
+    "audio": true
+  },
+  {
+    "k": "biennial",
+    "t": "biennial",
+    "kind": "vocab",
+    "pron": "by-EN-ee-ul",
+    "forms": [
+      "biennial"
+    ],
+    "text": "Biennial means happening once every two years — the Farnborough air show is biennial, so it opened this July but won't return for another two summers. Watch the tricky cousins: “annual” is every year, “biannual” usually means twice a year, and “biennial” is every two.",
+    "audio": true
+  },
+  {
+    "k": "taxiing",
+    "t": "taxiing",
+    "kind": "word",
+    "forms": [
+      "taxiing"
+    ],
+    "text": "When a plane taxis, it drives slowly along the ground under its own power, making its way to or from the runway — nothing to do with yellow cabs. The story opens mid-taxi, when the propeller suddenly stops turning: alarming in a normal plane, perfectly routine in an electric one.",
+    "audio": true
+  },
+  {
+    "k": "throttle",
+    "t": "throttle",
+    "kind": "word",
+    "forms": [
+      "throttle"
+    ],
+    "text": "The throttle is the lever that controls how much power an engine delivers — pull it back to ease off, advance it to speed up (that's why “full throttle” means flat out). The writer pulls the throttle back and the electric motor simply stops, just like a Tesla at a red light.",
+    "audio": true
+  },
+  {
+    "k": "your-correspondent",
+    "t": "your correspondent",
+    "kind": "phrase",
+    "forms": [
+      "your correspondent"
+    ],
+    "text": "The Economist publishes its writers without names, so a reporter refers to himself in the third person as “your correspondent.” Here it means the journalist writing the piece — who is also, remarkably, the one flying the plane.",
+    "audio": true
+  },
+  {
+    "k": "eerily",
+    "t": "eerily",
+    "kind": "word",
+    "forms": [
+      "eerily"
+    ],
+    "text": "Eerie means strange in a spooky, unsettling way. An aircraft climbing “in an eerily quiet manner” is unnerving precisely because your brain expects engine roar and gets near-silence instead.",
+    "audio": true
+  },
+  {
+    "k": "certified",
+    "t": "certified",
+    "kind": "word",
+    "forms": [
+      "certified"
+    ],
+    "text": "Certified means officially approved by the authorities after rigorous testing — in aviation, a plane can't carry passengers or train pilots until regulators certify it as safe. The Velis Electro being the first electric aircraft certified for pilot training is a genuine milestone, not just a demo.",
+    "audio": true
+  },
+  {
+    "k": "combustion",
+    "t": "combustion",
+    "kind": "word",
+    "forms": [
+      "combustion"
+    ],
+    "text": "Combustion is burning — a combustion engine works by burning fuel in tiny controlled explosions, the way nearly every car and plane engine of the last century has. The article's running contest: combustion versus batteries versus a hybrid marriage of the two.",
+    "audio": true
+  },
+  {
+    "k": "topping-up",
+    "t": "topping up",
+    "kind": "phrase",
+    "forms": [
+      "topping up"
+    ],
+    "text": "British English for refilling something toward full — you top up a drink, a phone plan, or here a battery. Topping up the Electro's battery takes just over an hour.",
+    "audio": true
+  },
+  {
+    "k": "looms",
+    "t": "looms",
+    "kind": "word",
+    "forms": [
+      "looms"
+    ],
+    "text": "To loom is to rise up large and imposing nearby, often with a hint of importance or threat. Farnborough Airport looms near little Blackbushe both physically and in the story — it's the stage where the industry's future is on display.",
+    "audio": true
+  },
+  {
+    "k": "sustainable",
+    "t": "sustainable",
+    "kind": "word",
+    "forms": [
+      "sustainable"
+    ],
+    "text": "Sustainable means able to keep going long-term without wrecking the resources it depends on — in aviation, flying that doesn't keep loading the atmosphere with heat-trapping gases. “Sustainable flying” sitting high on the air show's agenda tells you the industry knows it has a problem.",
+    "audio": true
+  },
+  {
+    "k": "high-on-the-agenda",
+    "t": "high on the agenda",
+    "kind": "phrase",
+    "forms": [
+      "high on the agenda"
+    ],
+    "text": "An agenda is the list of things a meeting will deal with, so something “high on the agenda” is a top priority — near the top of the list. At Farnborough this year, that spot belonged to sustainable flying.",
+    "audio": true
+  },
+  {
+    "k": "reckoned",
+    "t": "reckoned",
+    "kind": "word",
+    "forms": [
+      "reckoned"
+    ],
+    "text": "Reckoned means calculated or estimated — “is reckoned to be greater” is the careful, British way of saying experts believe it's bigger even though it can't be measured exactly. Aviation's true climate impact is reckoned to exceed its plain CO2 number, because jets emit other warming gases too.",
+    "audio": true
+  },
+  {
+    "k": "nitrogen-oxides",
+    "t": "nitrogen oxides",
+    "kind": "name",
+    "forms": [
+      "nitrogen oxides"
+    ],
+    "text": "A family of heat-trapping, polluting gases (shorthand: NOx) produced when fuel burns at high temperature. Jets release them miles up in the atmosphere, where they do extra climate damage on top of CO2 — and they're proving especially tough to clean up.",
+    "audio": true
+  },
+  {
+    "k": "pledge",
+    "t": "pledge",
+    "kind": "word",
+    "forms": [
+      "pledge"
+    ],
+    "text": "A pledge is a solemn public promise. The aviation industry has pledged to reach net-zero emissions by 2050 — and the article states flatly that the pledge will probably be missed.",
+    "audio": true
+  },
+  {
+    "k": "net-zero",
+    "t": "net-zero",
+    "kind": "phrase",
+    "forms": [
+      "net-zero"
+    ],
+    "text": "Net-zero means the total added to the atmosphere, after subtractions, comes out to zero: whatever you still emit, you remove or offset an equal amount. It's the headline climate target for countries and industries — “net” because it's the balance that counts, not a promise never to emit at all.",
+    "audio": true
+  },
+  {
+    "k": "range",
+    "t": "range",
+    "kind": "word",
+    "forms": [
+      "range"
+    ],
+    "text": "A vehicle's range is how far it can travel before refueling or recharging — the same spec electric-car buyers agonize over as “range anxiety.” Range is the electric plane's Achilles' heel: the little Electro manages about 50 minutes aloft, emergency cushion included.",
+    "audio": true
+  },
+  {
+    "k": "aerospace",
+    "t": "aerospace",
+    "kind": "word",
+    "forms": [
+      "aerospace"
+    ],
+    "text": "Aerospace is the industry that builds things that fly — aircraft and spacecraft (air + space). Textron, Heart Aerospace, and GE Aerospace are all players in it.",
+    "audio": true
+  },
+  {
+    "k": "leases",
+    "t": "leases",
+    "kind": "word",
+    "forms": [
+      "leases"
+    ],
+    "text": "To lease is to rent something out long-term under a contract rather than sell it — companies lease aircraft the way families lease cars. NEBOair leases Electros to customers like flying schools, which spreads out the cost of a new technology.",
+    "audio": true
+  },
+  {
+    "k": "in-the-pipeline",
+    "t": "in the pipeline",
+    "kind": "phrase",
+    "forms": [
+      "in the pipeline"
+    ],
+    "text": "Something in the pipeline is already on its way but hasn't arrived yet — the image is of oil flowing through a pipe toward you. Better batteries are in the pipeline, so electric planes' range will stretch over time.",
+    "audio": true
+  },
+  {
+    "k": "let-alone",
+    "t": "let alone",
+    "kind": "phrase",
+    "forms": [
+      "let alone"
+    ],
+    "text": "“Let alone” links two things where the second is even less likely than the first: batteries will probably never be powerful enough, let alone light enough. Translation — the power problem is hard, and the weight problem is even harder.",
+    "audio": true
+  },
+  {
+    "k": "deadweight",
+    "t": "deadweight",
+    "kind": "word",
+    "forms": [
+      "deadweight"
+    ],
+    "text": "Deadweight is weight that just sits there contributing nothing — cargo you haul without any benefit. It's the article's damning word for batteries: fuel burns away and the plane gets lighter as it flies, but a battery weighs exactly as much empty as full, so you lug the whole load the whole trip.",
+    "audio": true
+  },
+  {
+    "k": "divert",
+    "t": "divert",
+    "kind": "word",
+    "forms": [
+      "divert"
+    ],
+    "text": "To divert is to change course away from your planned route — a diverted flight lands somewhere other than its destination. The rules require airliners to carry enough energy to circle or divert to another airport that might be far away, and that safety cushion is exactly what batteries can't provide.",
+    "audio": true
+  },
+  {
+    "k": "reserve",
+    "t": "reserve",
+    "kind": "word",
+    "forms": [
+      "reserve"
+    ],
+    "text": "A reserve is an extra amount deliberately held back for emergencies — reserve fuel, reserve players, cash reserves. A small airliner would need hours of flying plus sufficient reserve, and a battery that big would be so heavy there'd be no weight left over for passengers.",
+    "audio": true
+  },
+  {
+    "k": "gas-turbine",
+    "t": "gas turbine",
+    "kind": "phrase",
+    "forms": [
+      "gas turbines",
+      "gas turbine"
+    ],
+    "text": "The engine type behind nearly all airliners: hot expanding gas from burning fuel spins a turbine — a shaft of fan blades — at enormous speed. Blast the thrust straight out the back and it's a jet; use the spin to turn a propeller and it's a turboprop.",
+    "audio": true
+  },
+  {
+    "k": "turboprop",
+    "t": "turboprop",
+    "kind": "word",
+    "forms": [
+      "turboprops",
+      "turboprop"
+    ],
+    "text": "A turboprop is a gas-turbine engine that turns a propeller instead of blasting thrust out like a jet. Slower than a jet but efficient on shorter hops — which is why the first hybrid airliners are likely to be turboprops flying regional routes.",
+    "audio": true
+  },
+  {
+    "k": "short-haul",
+    "t": "short-haul",
+    "kind": "phrase",
+    "forms": [
+      "short-haul"
+    ],
+    "text": "Haul is the distance something is carried, so short-haul flights are the quick hops between nearby cities — the opposite of long-haul ocean-crossers. Electric and hybrid planes make sense on short-haul routes first, where their limited range matters least.",
+    "audio": true
+  },
+  {
+    "k": "demonstrator",
+    "t": "demonstrator",
+    "kind": "word",
+    "forms": [
+      "demonstrator"
+    ],
+    "text": "Not a person waving a protest sign — in engineering, a demonstrator is a working test version built to prove a design actually works before the real product is built. Heart's demonstrator will be the largest battery-powered aircraft ever to take off.",
+    "audio": true
+  },
+  {
+    "k": "ground-trials",
+    "t": "ground trials",
+    "kind": "phrase",
+    "forms": [
+      "ground trials"
+    ],
+    "text": "A trial here is a test, not a courtroom — ground trials are all the testing a new aircraft goes through before it ever leaves the runway: engines, systems, taxiing. Heart has finished those; actually flying comes next.",
+    "audio": true
+  },
+  {
+    "k": "housing",
+    "t": "housing",
+    "kind": "word",
+    "forms": [
+      "housing"
+    ],
+    "text": "In machinery, a housing is the rigid casing that encloses and protects the working parts — nobody lives in it. The ES-30's gas turbine would be built into the same housing that holds the electric motors, so one pod contains the whole hybrid heart.",
+    "audio": true
+  },
+  {
+    "k": "conventional",
+    "t": "conventional",
+    "kind": "word",
+    "forms": [
+      "conventional"
+    ],
+    "text": "Conventional means the ordinary, standard kind — following convention rather than breaking new ground. GE's design starts from a conventional turboprop and bolts on an electric helper motor for the power-hungry moments like take-off and climbing.",
+    "audio": true
+  },
+  {
+    "k": "intriguing",
+    "t": "intriguing",
+    "kind": "word",
+    "forms": [
+      "intriguing"
+    ],
+    "text": "Intriguing means fascinating in a curiosity-hooking way — something that makes you lean in wanting to know more. The article saves the word for eVTOLs, the closest thing here to an actual flying car.",
+    "audio": true
+  },
+  {
+    "k": "deployed",
+    "t": "deployed",
+    "kind": "word",
+    "forms": [
+      "deployed"
+    ],
+    "text": "To deploy something is to move it out of development and into actual use — soldiers deploy to the field; software deploys to users. eVTOLs have been “long talked of, but are at last starting to be deployed”: the era of demos and promises is finally ending.",
+    "audio": true
+  },
+  {
+    "k": "evtol",
+    "t": "eVTOL",
+    "kind": "name",
+    "forms": [
+      "eVTOLs",
+      "eVTOL"
+    ],
+    "text": "Short for electric Vertical Take-Off and Landing craft — a car-sized electric vehicle that lifts straight up like a helicopter, no runway needed. The dream job: air taxis hopping handfuls of passengers across a city, and quieter, simpler replacements for helicopters.",
+    "audio": true
+  },
+  {
+    "k": "farnborough",
+    "t": "Farnborough",
+    "kind": "name",
+    "forms": [
+      "Farnborough"
+    ],
+    "text": "A town south-west of London whose airport hosts one of the world's great air shows every two years — the industry's stage for showing off what's next, from new airliners to, this year, the first eVTOL flight.",
+    "audio": true
+  },
+  {
+    "k": "saab",
+    "t": "Saab",
+    "kind": "name",
+    "forms": [
+      "Saab"
+    ],
+    "text": "A Swedish company best known for cars and fighter jets that also built regional airliners. One of them, refitted with a hybrid engine in place of one of its two normal ones, flew across the North Atlantic to appear at the show — a working proof of the parallel-hybrid idea.",
+    "audio": true
+  },
+  {
+    "k": "reach-for-the-sky",
+    "t": "reach for the sky",
+    "kind": "phrase",
+    "forms": [
+      "reach for the sky"
+    ],
+    "text": "To reach for the sky is to aim as high as you possibly can. The closing pun works twice over: electric aviation has started to reach for the sky both literally — these machines are finally taking off — and in ambition.",
+    "audio": true
+  }
 ]

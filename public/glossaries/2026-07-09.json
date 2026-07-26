@@ -1,208 +1,298 @@
 [
- {
-  "k": "disseminate",
-  "t": "disseminate",
-  "kind": "vocab",
-  "pron": "dih-SEM-uh-nayt",
-  "forms": ["disseminate"],
-  "text": "To disseminate something is to scatter it far and wide — literally the word comes from spreading seeds. Polymarket paid creators to disseminate clips of celebrities hinting at how easy it would be to cheat, pushing those videos out to as many people as possible."
- },
- {
-  "k": "groundswell",
-  "t": "groundswell",
-  "kind": "vocab",
-  "pron": "GROWND-swel",
-  "forms": ["groundswell"],
-  "text": "A groundswell is a sudden rising wave of public interest or support that seems to well up on its own from ordinary people — like a swell rolling in from the deep ocean. The whole “clipping” trick was designed to fake a groundswell, making Polymarket look organically popular when the excitement was actually bought and staged."
- },
- {
-  "k": "bolster",
-  "t": "bolster",
-  "kind": "vocab",
-  "pron": "BOHL-stur",
-  "forms": ["bolstered"],
-  "text": "To bolster is to prop something up and make it stronger — a bolster is literally a firm pillow used for support. The fake videos “bolstered the perception” that Polymarket was an easy way to win money, reinforcing an impression the company badly wanted people to believe."
- },
- {
-  "k": "waging",
-  "t": "waging",
-  "kind": "word",
-  "forms": ["waging"],
-  "text": "You wage a war or a campaign — “waging” means actively carrying one on over time, not paying wages. The article says Polymarket is “waging a secret campaign” for Americans' attention, running a sustained, coordinated push rather than a one-off ad."
- },
- {
-  "k": "perception",
-  "t": "perception",
-  "kind": "word",
-  "forms": ["perception"],
-  "text": "A perception is the impression people have of something — how it looks to them, which may or may not match reality. Polymarket's videos worked on perception, engineering the belief that trading there means fast, easy money."
- },
- {
-  "k": "offshore",
-  "t": "offshore",
-  "kind": "word",
-  "forms": ["offshore"],
-  "text": "Offshore here doesn't mean out at sea — it means based in another country, often to sit outside a government's rules. Polymarket runs an “offshore website” because it's banned from operating in the U.S., and the campaign is about sneaking that offshore business back to American users."
- },
- {
-  "k": "onshore",
-  "t": "onshore",
-  "kind": "word",
-  "forms": ["onshore"],
-  "text": "The opposite of offshore: brought inside the country, where U.S. law and regulators apply. A government official argued prediction markets should be “brought onshore,” so they could actually be watched and policed instead of running from abroad."
- },
- {
-  "k": "go-viral",
-  "t": "go viral",
-  "kind": "phrase",
-  "forms": ["go viral"],
-  "text": "To “go viral” is for a video or post to spread explosively across the internet, passed on person to person — borrowed from the way a virus spreads. Polymarket engineered this on purpose, hiring armies of low-wage users to repost clips and make them go viral inside the U.S."
- },
- {
-  "k": "transparent",
-  "t": "transparent",
-  "kind": "word",
-  "forms": ["transparent"],
-  "text": "Transparent here means honest and open — nothing hidden — not literally see-through. There's a sharp irony in it: Polymarket claimed to run “transparent markets” in the same breath as it was secretly paying people to fake enthusiasm and hide who they worked for."
- },
- {
-  "k": "audit",
-  "t": "audit",
-  "kind": "word",
-  "forms": ["audit"],
-  "text": "An audit is a careful, official inspection to check whether things are honest and correct — usually of money or records. Caught out, Polymarket promised to “conduct an audit” of its promotional content, i.e. go back and inspect the videos it had paid for."
- },
- {
-  "k": "resolved",
-  "t": "resolved",
-  "kind": "word",
-  "forms": ["resolved"],
-  "text": "When a bet is “resolved,” it's settled — the outcome is known and the payout decided; it doesn't mean someone made a New Year's resolution. The Journal traced how each faked bet would really have resolved and found that anyone copying it would have lost more than $166,000, not won."
- },
- {
-  "k": "depicted",
-  "t": "depicted",
-  "kind": "word",
-  "forms": ["depicted"],
-  "text": "To depict something is to show or portray it, in a picture or a video. About 10% of the clips “depicted the creators winning” — using old footage and fake headlines to make it look like they'd raked in nearly $900,000."
- },
- {
-  "k": "gray-area",
-  "t": "gray area",
-  "kind": "phrase",
-  "forms": ["gray area"],
-  "text": "A gray area is a zone where the rules are fuzzy — not clearly allowed, not clearly banned, somewhere in between black and white. The article notes there's “some gray area” in advertising law about what promoters can get away with, which is part of how a campaign like this operates."
- },
- {
-  "k": "commodities",
-  "t": "commodities",
-  "kind": "name",
-  "forms": ["Commodities", "commodity"],
-  "text": "Commodities are basic tradable goods like oil, gold, or wheat — and the financial contracts based on them. It matters here because prediction markets are legally treated like commodities trading, so “commodities law” is what bars them from deceptive and misleading practices."
- },
- {
-  "k": "cftc",
-  "t": "Commodity Futures Trading Commission",
-  "kind": "name",
-  "forms": ["Commodity Futures Trading Commission"],
-  "text": "A U.S. government agency (the CFTC) that regulates trading in commodities and related bets — including prediction markets. Its spokeswoman argued these markets should be pulled onshore so regulators could actually police them."
- },
- {
-  "k": "ftc",
-  "t": "Federal Trade Commission",
-  "kind": "name",
-  "forms": ["Federal Trade Commission"],
-  "text": "The U.S. agency (the FTC) that guards against deceptive advertising and unfair business practices — the body that makes influencers disclose paid promotions. It declined to comment for this article, even though its rules are exactly what the hidden payments seem to bend."
- },
- {
-  "k": "clipping",
-  "t": "clipping",
-  "kind": "name",
-  "forms": ["clipping"],
-  "text": "In this story “clipping” is a marketing tactic: paying crowds of ordinary social-media users to chop a promotional video into short clips and repost them from accounts that hide who's behind them. The goal is to manufacture the look of spontaneous, grassroots buzz."
- },
- {
-  "k": "sockpuppet",
-  "t": "sockpuppet",
-  "kind": "word",
-  "forms": ["sockpuppet"],
-  "text": "A sockpuppet is a fake online account someone uses to pretend to be an independent, unconnected person — like hiding your hand inside a puppet so the voice seems to come from someone else. Polymarket's reposters used sockpuppet accounts that concealed their tie to the company."
- },
- {
-  "k": "affiliation",
-  "t": "affiliation",
-  "kind": "word",
-  "forms": ["affiliation"],
-  "text": "An affiliation is an official connection or membership — the link between you and a group you belong to or work for. The sockpuppet accounts hid their Polymarket affiliation on purpose, because the whole trick collapses the moment viewers realize the “fans” are really the company."
- },
- {
-  "k": "authentic",
-  "t": "authentic",
-  "kind": "word",
-  "forms": ["authentic"],
-  "text": "Authentic means genuine and real, not faked or staged. The clipping campaign chased “the appearance of a groundswell of authentic interest” — the key word being appearance, since the interest only looked authentic while being carefully manufactured."
- },
- {
-  "k": "prediction-market",
-  "t": "prediction market",
-  "kind": "name",
-  "forms": ["prediction markets", "prediction market"],
-  "text": "A prediction market is a place where people bet real money on whether a future event will happen — an election, a game, an album's release date. Because everyone is risking their own cash, the going price of a bet acts like a crowd's best guess at the odds; Polymarket is one of the biggest."
- },
- {
-  "k": "insider-trading",
-  "t": "insider trading",
-  "kind": "name",
-  "forms": ["insider trading", "inside information"],
-  "text": "Insider trading is making a bet or trade using important secret information the public doesn't have yet — like buying when you alone know good news is coming. It's considered deeply unfair (and in the stock market, illegal), which is why it's damning that Polymarket publicly “banned” it while quietly paying creators to hype exactly that."
- },
- {
-  "k": "integrity",
-  "t": "integrity",
-  "kind": "word",
-  "forms": ["integrity"],
-  "text": "Integrity means honesty and strong moral principles — doing the right thing even when no one's watching. Polymarket launched a webpage “devoted to integrity” insisting cheating is banned, a claim the article's findings make look hollow."
- },
- {
-  "k": "barred",
-  "t": "barred",
-  "kind": "word",
-  "forms": ["barred"],
-  "text": "To be barred from something is to be blocked or forbidden from it, as if a bar were dropped across the door. Polymarket is barred from offering its website to U.S. traders — which is what makes the whole secret U.S. campaign so questionable."
- },
- {
-  "k": "outlandish",
-  "t": "outlandish",
-  "kind": "word",
-  "forms": ["outlandish"],
-  "text": "Outlandish means bizarre, absurd, or wildly far-fetched. The CEO waved away worries about insider trading as “outlandish and baseless” — even as the company was paying to spread videos about how easy such cheating would be."
- },
- {
-  "k": "baseless",
-  "t": "baseless",
-  "kind": "word",
-  "forms": ["baseless"],
-  "text": "Baseless means having no foundation — no facts or evidence to stand on. Calling the insider-trading concerns “baseless” was the CEO's way of saying they were made up out of nothing, which the reporting undercuts."
- },
- {
-  "k": "manosphere",
-  "t": "manosphere",
-  "kind": "name",
-  "forms": ["manosphere"],
-  "text": "The “manosphere” is a loose web of online communities, influencers, and forums aimed at young men, often around money, dating, and status. The article calls creator Adin Ross a “manosphere phenomenon,” a star of that world — and one Polymarket paid millions to reach his audience."
- },
- {
-  "k": "acquaintance",
-  "t": "acquaintance",
-  "kind": "word",
-  "forms": ["acquaintance"],
-  "text": "An acquaintance is someone you know a bit but who isn't a close friend. The detail that the rapper Drake is Ross's “acquaintance” matters because Ross joked about betting on the release date of Drake's album — the kind of personal connection that would make insider knowledge feel plausible."
- },
- {
-  "k": "dow-jones",
-  "t": "Dow Jones",
-  "kind": "name",
-  "forms": ["Dow Jones"],
-  "text": "Dow Jones is the company that publishes The Wall Street Journal. The article flags it up front for honesty's sake: Polymarket has a data partnership with Dow Jones, so the Journal notes it used only publicly available data — a small act of the transparency the story is about."
- }
+  {
+    "k": "disseminate",
+    "t": "disseminate",
+    "kind": "vocab",
+    "pron": "dih-SEM-uh-nayt",
+    "forms": [
+      "disseminate"
+    ],
+    "text": "To disseminate something is to scatter it far and wide — literally the word comes from spreading seeds. Polymarket paid creators to disseminate clips of celebrities hinting at how easy it would be to cheat, pushing those videos out to as many people as possible.",
+    "audio": true
+  },
+  {
+    "k": "groundswell",
+    "t": "groundswell",
+    "kind": "vocab",
+    "pron": "GROWND-swel",
+    "forms": [
+      "groundswell"
+    ],
+    "text": "A groundswell is a sudden rising wave of public interest or support that seems to well up on its own from ordinary people — like a swell rolling in from the deep ocean. The whole “clipping” trick was designed to fake a groundswell, making Polymarket look organically popular when the excitement was actually bought and staged.",
+    "audio": true
+  },
+  {
+    "k": "bolster",
+    "t": "bolster",
+    "kind": "vocab",
+    "pron": "BOHL-stur",
+    "forms": [
+      "bolstered"
+    ],
+    "text": "To bolster is to prop something up and make it stronger — a bolster is literally a firm pillow used for support. The fake videos “bolstered the perception” that Polymarket was an easy way to win money, reinforcing an impression the company badly wanted people to believe.",
+    "audio": true
+  },
+  {
+    "k": "waging",
+    "t": "waging",
+    "kind": "word",
+    "forms": [
+      "waging"
+    ],
+    "text": "You wage a war or a campaign — “waging” means actively carrying one on over time, not paying wages. The article says Polymarket is “waging a secret campaign” for Americans' attention, running a sustained, coordinated push rather than a one-off ad.",
+    "audio": true
+  },
+  {
+    "k": "perception",
+    "t": "perception",
+    "kind": "word",
+    "forms": [
+      "perception"
+    ],
+    "text": "A perception is the impression people have of something — how it looks to them, which may or may not match reality. Polymarket's videos worked on perception, engineering the belief that trading there means fast, easy money.",
+    "audio": true
+  },
+  {
+    "k": "offshore",
+    "t": "offshore",
+    "kind": "word",
+    "forms": [
+      "offshore"
+    ],
+    "text": "Offshore here doesn't mean out at sea — it means based in another country, often to sit outside a government's rules. Polymarket runs an “offshore website” because it's banned from operating in the U.S., and the campaign is about sneaking that offshore business back to American users.",
+    "audio": true
+  },
+  {
+    "k": "onshore",
+    "t": "onshore",
+    "kind": "word",
+    "forms": [
+      "onshore"
+    ],
+    "text": "The opposite of offshore: brought inside the country, where U.S. law and regulators apply. A government official argued prediction markets should be “brought onshore,” so they could actually be watched and policed instead of running from abroad.",
+    "audio": true
+  },
+  {
+    "k": "go-viral",
+    "t": "go viral",
+    "kind": "phrase",
+    "forms": [
+      "go viral"
+    ],
+    "text": "To “go viral” is for a video or post to spread explosively across the internet, passed on person to person — borrowed from the way a virus spreads. Polymarket engineered this on purpose, hiring armies of low-wage users to repost clips and make them go viral inside the U.S.",
+    "audio": true
+  },
+  {
+    "k": "transparent",
+    "t": "transparent",
+    "kind": "word",
+    "forms": [
+      "transparent"
+    ],
+    "text": "Transparent here means honest and open — nothing hidden — not literally see-through. There's a sharp irony in it: Polymarket claimed to run “transparent markets” in the same breath as it was secretly paying people to fake enthusiasm and hide who they worked for.",
+    "audio": true
+  },
+  {
+    "k": "audit",
+    "t": "audit",
+    "kind": "word",
+    "forms": [
+      "audit"
+    ],
+    "text": "An audit is a careful, official inspection to check whether things are honest and correct — usually of money or records. Caught out, Polymarket promised to “conduct an audit” of its promotional content, i.e. go back and inspect the videos it had paid for.",
+    "audio": true
+  },
+  {
+    "k": "resolved",
+    "t": "resolved",
+    "kind": "word",
+    "forms": [
+      "resolved"
+    ],
+    "text": "When a bet is “resolved,” it's settled — the outcome is known and the payout decided; it doesn't mean someone made a New Year's resolution. The Journal traced how each faked bet would really have resolved and found that anyone copying it would have lost more than $166,000, not won.",
+    "audio": true
+  },
+  {
+    "k": "depicted",
+    "t": "depicted",
+    "kind": "word",
+    "forms": [
+      "depicted"
+    ],
+    "text": "To depict something is to show or portray it, in a picture or a video. About 10% of the clips “depicted the creators winning” — using old footage and fake headlines to make it look like they'd raked in nearly $900,000.",
+    "audio": true
+  },
+  {
+    "k": "gray-area",
+    "t": "gray area",
+    "kind": "phrase",
+    "forms": [
+      "gray area"
+    ],
+    "text": "A gray area is a zone where the rules are fuzzy — not clearly allowed, not clearly banned, somewhere in between black and white. The article notes there's “some gray area” in advertising law about what promoters can get away with, which is part of how a campaign like this operates.",
+    "audio": true
+  },
+  {
+    "k": "commodities",
+    "t": "commodities",
+    "kind": "name",
+    "forms": [
+      "Commodities",
+      "commodity"
+    ],
+    "text": "Commodities are basic tradable goods like oil, gold, or wheat — and the financial contracts based on them. It matters here because prediction markets are legally treated like commodities trading, so “commodities law” is what bars them from deceptive and misleading practices.",
+    "audio": true
+  },
+  {
+    "k": "cftc",
+    "t": "Commodity Futures Trading Commission",
+    "kind": "name",
+    "forms": [
+      "Commodity Futures Trading Commission"
+    ],
+    "text": "A U.S. government agency (the CFTC) that regulates trading in commodities and related bets — including prediction markets. Its spokeswoman argued these markets should be pulled onshore so regulators could actually police them.",
+    "audio": true
+  },
+  {
+    "k": "ftc",
+    "t": "Federal Trade Commission",
+    "kind": "name",
+    "forms": [
+      "Federal Trade Commission"
+    ],
+    "text": "The U.S. agency (the FTC) that guards against deceptive advertising and unfair business practices — the body that makes influencers disclose paid promotions. It declined to comment for this article, even though its rules are exactly what the hidden payments seem to bend.",
+    "audio": true
+  },
+  {
+    "k": "clipping",
+    "t": "clipping",
+    "kind": "name",
+    "forms": [
+      "clipping"
+    ],
+    "text": "In this story “clipping” is a marketing tactic: paying crowds of ordinary social-media users to chop a promotional video into short clips and repost them from accounts that hide who's behind them. The goal is to manufacture the look of spontaneous, grassroots buzz.",
+    "audio": true
+  },
+  {
+    "k": "sockpuppet",
+    "t": "sockpuppet",
+    "kind": "word",
+    "forms": [
+      "sockpuppet"
+    ],
+    "text": "A sockpuppet is a fake online account someone uses to pretend to be an independent, unconnected person — like hiding your hand inside a puppet so the voice seems to come from someone else. Polymarket's reposters used sockpuppet accounts that concealed their tie to the company.",
+    "audio": true
+  },
+  {
+    "k": "affiliation",
+    "t": "affiliation",
+    "kind": "word",
+    "forms": [
+      "affiliation"
+    ],
+    "text": "An affiliation is an official connection or membership — the link between you and a group you belong to or work for. The sockpuppet accounts hid their Polymarket affiliation on purpose, because the whole trick collapses the moment viewers realize the “fans” are really the company.",
+    "audio": true
+  },
+  {
+    "k": "authentic",
+    "t": "authentic",
+    "kind": "word",
+    "forms": [
+      "authentic"
+    ],
+    "text": "Authentic means genuine and real, not faked or staged. The clipping campaign chased “the appearance of a groundswell of authentic interest” — the key word being appearance, since the interest only looked authentic while being carefully manufactured.",
+    "audio": true
+  },
+  {
+    "k": "prediction-market",
+    "t": "prediction market",
+    "kind": "name",
+    "forms": [
+      "prediction markets",
+      "prediction market"
+    ],
+    "text": "A prediction market is a place where people bet real money on whether a future event will happen — an election, a game, an album's release date. Because everyone is risking their own cash, the going price of a bet acts like a crowd's best guess at the odds; Polymarket is one of the biggest.",
+    "audio": true
+  },
+  {
+    "k": "insider-trading",
+    "t": "insider trading",
+    "kind": "name",
+    "forms": [
+      "insider trading",
+      "inside information"
+    ],
+    "text": "Insider trading is making a bet or trade using important secret information the public doesn't have yet — like buying when you alone know good news is coming. It's considered deeply unfair (and in the stock market, illegal), which is why it's damning that Polymarket publicly “banned” it while quietly paying creators to hype exactly that.",
+    "audio": true
+  },
+  {
+    "k": "integrity",
+    "t": "integrity",
+    "kind": "word",
+    "forms": [
+      "integrity"
+    ],
+    "text": "Integrity means honesty and strong moral principles — doing the right thing even when no one's watching. Polymarket launched a webpage “devoted to integrity” insisting cheating is banned, a claim the article's findings make look hollow.",
+    "audio": true
+  },
+  {
+    "k": "barred",
+    "t": "barred",
+    "kind": "word",
+    "forms": [
+      "barred"
+    ],
+    "text": "To be barred from something is to be blocked or forbidden from it, as if a bar were dropped across the door. Polymarket is barred from offering its website to U.S. traders — which is what makes the whole secret U.S. campaign so questionable.",
+    "audio": true
+  },
+  {
+    "k": "outlandish",
+    "t": "outlandish",
+    "kind": "word",
+    "forms": [
+      "outlandish"
+    ],
+    "text": "Outlandish means bizarre, absurd, or wildly far-fetched. The CEO waved away worries about insider trading as “outlandish and baseless” — even as the company was paying to spread videos about how easy such cheating would be.",
+    "audio": true
+  },
+  {
+    "k": "baseless",
+    "t": "baseless",
+    "kind": "word",
+    "forms": [
+      "baseless"
+    ],
+    "text": "Baseless means having no foundation — no facts or evidence to stand on. Calling the insider-trading concerns “baseless” was the CEO's way of saying they were made up out of nothing, which the reporting undercuts.",
+    "audio": true
+  },
+  {
+    "k": "manosphere",
+    "t": "manosphere",
+    "kind": "name",
+    "forms": [
+      "manosphere"
+    ],
+    "text": "The “manosphere” is a loose web of online communities, influencers, and forums aimed at young men, often around money, dating, and status. The article calls creator Adin Ross a “manosphere phenomenon,” a star of that world — and one Polymarket paid millions to reach his audience.",
+    "audio": true
+  },
+  {
+    "k": "acquaintance",
+    "t": "acquaintance",
+    "kind": "word",
+    "forms": [
+      "acquaintance"
+    ],
+    "text": "An acquaintance is someone you know a bit but who isn't a close friend. The detail that the rapper Drake is Ross's “acquaintance” matters because Ross joked about betting on the release date of Drake's album — the kind of personal connection that would make insider knowledge feel plausible.",
+    "audio": true
+  },
+  {
+    "k": "dow-jones",
+    "t": "Dow Jones",
+    "kind": "name",
+    "forms": [
+      "Dow Jones"
+    ],
+    "text": "Dow Jones is the company that publishes The Wall Street Journal. The article flags it up front for honesty's sake: Polymarket has a data partnership with Dow Jones, so the Journal notes it used only publicly available data — a small act of the transparency the story is about.",
+    "audio": true
+  }
 ]

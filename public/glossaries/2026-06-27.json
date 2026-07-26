@@ -1,475 +1,681 @@
 [
- {
-  "k": "acuity",
-  "t": "acuity",
-  "kind": "vocab",
-  "pron": "uh-KYOO-uh-tee",
-  "forms": ["acuity"],
-  "text": "Acuity is sharpness of mind — how keenly and clearly someone can perceive, read, and reason. The OECD's test sorts people into five levels of acuity, and the article's larger worry is about “the acuity of America's young”: whether young minds are getting duller."
- },
- {
-  "k": "sanguine",
-  "t": "sanguine",
-  "kind": "vocab",
-  "pron": "SANG-gwin",
-  "forms": ["sanguine"],
-  "text": "Sanguine means cheerfully optimistic — calm and confident things will turn out fine, even amid bad news. Brits can feel reasonably sanguine because their students' scores are better than average and improving, one of the few bright spots in a gloomy chart."
- },
- {
-  "k": "vapid",
-  "t": "vapid",
-  "kind": "vocab",
-  "pron": "VAP-id",
-  "forms": ["vapid"],
-  "text": "Vapid means flat, empty, and lacking real substance — like soda gone dead. Critics call the trendy “soft skills” in new curriculums nice-sounding but vapid: pleasant labels with nothing solid inside, replacing the concrete facts kids used to learn."
- },
- {
-  "k": "exhort",
-  "t": "exhort",
-  "kind": "vocab",
-  "pron": "ig-ZORT",
-  "forms": ["exhorting"],
-  "text": "To exhort is to urge someone strongly and earnestly — a coach exhorting the team to keep fighting. Harvard has spent a decade exhorting its professors to remember that students arrive stressed and unevenly prepared — pressure that nudges the professors toward gentler grading."
- },
- {
-  "k": "open-letter",
-  "t": "open letter",
-  "kind": "phrase",
-  "forms": ["open letter"],
-  "text": "An open letter is a letter published for everyone to read, even though it's addressed to someone specific — going public is the point. When 1,800 University of California lecturers sign one about unprepared students, they're not just telling the administration; they're raising the alarm for the whole country."
- },
- {
-  "k": "lecturers",
-  "t": "lecturers",
-  "kind": "word",
-  "forms": ["lecturers"],
-  "text": "A lecturer is a university teacher — the British-flavored catch-all for the people who actually stand in front of classes. They're the article's witnesses: the ones discovering they must reteach middle-school math to college students."
- },
- {
-  "k": "undergraduates",
-  "t": "undergraduates",
-  "kind": "word",
-  "forms": ["undergraduates", "undergraduate"],
-  "text": "Undergraduates are students working toward their first college degree — the four years after high school. (Graduate students come after.) The alarming finding is about first-year undergraduates: the freshmen just arriving."
- },
- {
-  "k": "gobsmacking",
-  "t": "gobsmacking",
-  "kind": "word",
-  "forms": ["gobsmacking"],
-  "text": "British slang for astonishing — “gob” is slang for mouth, so gobsmacked is being smacked speechless. The gobsmacking report: students entering UC San Diego with below-high-school math skills grew nearly thirtyfold in five years, to almost one in eight."
- },
- {
-  "k": "literacy-numeracy",
-  "t": "literacy and numeracy",
-  "kind": "phrase",
-  "forms": ["literacy", "numeracy"],
-  "text": "Literacy is reading-and-writing ability; numeracy is its math twin — being comfortable enough with numbers to handle real life, from a pill bottle's instructions to how much wallpaper a room needs. They're the two skills the OECD's big adult survey measures."
- },
- {
-  "k": "humanities",
-  "t": "humanities",
-  "kind": "name",
-  "forms": ["humanities"],
-  "text": "The humanities are the subjects that study human culture — literature, history, philosophy, languages — as opposed to the sciences. At Yale, humanities courses hand out A's more than 80% of the time; economics, at about 50%, is the campus tough guy."
- },
- {
-  "k": "faculty",
-  "t": "faculty",
-  "kind": "word",
-  "forms": ["faculty"],
-  "text": "A university's faculty is its professors as a group — the teaching staff, not a “faculty” like the ability to see. Reports “released to faculty” are internal documents for the professors, which is why they're so unusually frank."
- },
- {
-  "k": "prose",
-  "t": "prose",
-  "kind": "word",
-  "forms": ["prose"],
-  "text": "Prose is ordinary written language — sentences and paragraphs, as opposed to poetry. Harvard's students arrive “with less experience reading complex prose”: long, demanding writing, the kind a whole book is made of."
- },
- {
-  "k": "griping",
-  "t": "griping",
-  "kind": "word",
-  "forms": ["griping"],
-  "text": "To gripe is to grumble and complain, usually about the same things over and over. The article is fair-minded enough to admit professors have been griping about “kids these days” forever — which is exactly why it goes hunting for hard data instead."
- },
- {
-  "k": "ivory-towers",
-  "t": "ivory towers",
-  "kind": "phrase",
-  "forms": ["ivory towers"],
-  "text": "The “ivory tower” is the classic image of academia — a beautiful tower where scholars think lofty thoughts, comfortably sealed off from the real world. “As long as there have been ivory towers” just means: as long as universities have existed."
- },
- {
-  "k": "spotty",
-  "t": "spotty",
-  "kind": "word",
-  "forms": ["spotty"],
-  "text": "Spotty means patchy and inconsistent — coverage in spots, with gaps between. Since adults rarely sit standardized exams, fact-finders must rely on spotty reports from professors: scattered alarms rather than systematic evidence."
- },
- {
-  "k": "fly-blind",
-  "t": "fly blind",
-  "kind": "phrase",
-  "forms": ["fly completely blind"],
-  "text": "To fly blind is to navigate with no instruments and no visibility — guessing your way through. Observers of global education “need not fly completely blind” because one big instrument does exist: the OECD's once-a-decade adult skills survey."
- },
- {
-  "k": "wrung",
-  "t": "wrung",
-  "kind": "word",
-  "forms": ["wrung"],
-  "text": "Wrung is the past tense of wring — to twist and squeeze, the way you wring water from a wet towel. Insight being “wrung from” a test means extracted with effort: the data doesn't give up its answers easily."
- },
- {
-  "k": "oecd",
-  "t": "OECD",
-  "kind": "name",
-  "forms": ["OECD"],
-  "text": "The Organisation for Economic Co-operation and Development — a club of mostly rich countries that collects famously careful statistics on its members. Its “Survey of Adult Skills,” run once a decade, is the article's best evidence: 160,000 people tested across dozens of countries."
- },
- {
-  "k": "gauge",
-  "t": "gauge",
-  "kind": "word",
-  "forms": ["gauge"],
-  "text": "To gauge something is to measure or estimate it — a fuel gauge gauges the tank. The OECD's survey aims to gauge whether citizens have the literacy and numeracy to thrive in real life."
- },
- {
-  "k": "tertiary",
-  "t": "tertiary",
-  "kind": "word",
-  "forms": ["tertiary"],
-  "text": "Tertiary means third-level: after primary school (first) and secondary school (second) comes tertiary education — universities and colleges. The article's shocking statistic is about tertiary students specifically: people who made it to college yet test at a ten-year-old's level."
- },
- {
-  "k": "abysmally",
-  "t": "abysmally",
-  "kind": "word",
-  "forms": ["abysmally"],
-  "text": "An abyss is a bottomless pit, so to perform abysmally is to do terribly — rock-bottom badly. The finding: many tertiary students do very well, but a striking 8% perform abysmally, scoring no better than a ten-year-old."
- },
- {
-  "k": "notch-up",
-  "t": "notch up",
-  "kind": "phrase",
-  "forms": ["notch up", "notched up"],
-  "text": "To notch up a score is to record or achieve it — from cutting a notch in a stick to keep count. The phrase turns bitter later in the article: a quarter of San Diego's weakest remedial-math students had notched up perfect math scores in high school."
- },
- {
-  "k": "disdain",
-  "t": "disdain",
-  "kind": "word",
-  "forms": ["disdain"],
-  "text": "Disdain is looking down on something — contempt, the feeling that a thing is beneath your respect. Britain's “growing public disdain for academia” means many Brits now scorn universities, even though British students' scores are actually holding up well."
- },
- {
-  "k": "academia",
-  "t": "academia",
-  "kind": "word",
-  "forms": ["academia"],
-  "text": "Academia is the university world as a whole — professors, research, degrees, the entire scholarly ecosystem. Someone “in academia” works at a university."
- },
- {
-  "k": "every-child-left-behind",
-  "t": "Every child left behind",
-  "kind": "phrase",
-  "forms": ["Every child left behind"],
-  "text": "This section heading flips a famous American law: No Child Left Behind (2002), which promised that schools would let no student fall through the cracks. Inverting it to “Every child left behind” is the article's darkest joke about how that promise worked out."
- },
- {
-  "k": "rota",
-  "t": "rota",
-  "kind": "word",
-  "forms": ["Rota"],
-  "text": "A rota is a rotating schedule — British English for taking turns. Pandemic-era rota systems meant students attended school in shifts, only some days a week, which kept disrupting lessons long after the full closures ended."
- },
- {
-  "k": "mega-lurgy",
-  "t": "mega-lurgy",
-  "kind": "word",
-  "forms": ["mega-lurgy"],
-  "text": "“The lurgy” is jokey British slang for whatever illness is going around school — the crud, the bug. Calling covid “the mega-lurgy” is the article's wry nickname for the pandemic: the bug to end all bugs. The key point in the sentence: schooling was already sliding before it hit."
- },
- {
-  "k": "naep",
-  "t": "NAEP",
-  "kind": "name",
-  "forms": ["NAEP"],
-  "text": "The National Assessment of Educational Progress — the exam nicknamed “America's report card,” given to samples of US students so the country can track itself over time. NAEP scores peaked in the early 2010s and have been slipping ever since: the decline predates covid."
- },
- {
-  "k": "pisa",
-  "t": "PISA",
-  "kind": "name",
-  "forms": ["PISA"],
-  "text": "An international exam taken by 15-year-olds in dozens of countries, run by the OECD — the closest thing to a world championship of school systems. PISA scores are drifting down across a swathe of countries, so this isn't just an American problem."
- },
- {
-  "k": "swathe",
-  "t": "swathe",
-  "kind": "word",
-  "forms": ["swathe"],
-  "text": "A swathe is a broad strip or band — originally the wide path a scythe cuts through grass. “A swathe of other countries” means a whole belt of them at once: France, Germany, the Netherlands, New Zealand and more, all sliding together."
- },
- {
-  "k": "watering-down",
-  "t": "watering down",
-  "kind": "phrase",
-  "forms": ["watering down"],
-  "text": "To water something down is to weaken it, the way water thins a drink. It's the article's recurring accusation: reformers watering down testing, and universities watering down standards rather than shrinking. Each dilution looks small; together they add up."
- },
- {
-  "k": "syllabi",
-  "t": "syllabi",
-  "kind": "word",
-  "forms": ["syllabi"],
-  "text": "Syllabi is the plural of syllabus — the plan of what a course will teach. “Time-tested syllabi” are course plans proven over decades, which traditionalists say are being swapped for trendy new ones."
- },
- {
-  "k": "faddish",
-  "t": "faddish",
-  "kind": "word",
-  "forms": ["faddish"],
-  "text": "A fad is a craze that burns bright and dies fast, so faddish means fashionable-but-shallow — chasing the trend of the moment. “Faddish curriculums” is the traditionalists' jab: teaching plans built on this year's fashion rather than what's proven to work."
- },
- {
-  "k": "soft-skills",
-  "t": "“soft” skills",
-  "kind": "phrase",
-  "forms": ["soft"],
-  "text": "Soft skills are the fuzzy, hard-to-measure abilities — communication, teamwork, “critical thinking” — as opposed to hard skills like solving equations. The scare quotes carry the critics' sneer: they say schools traded concrete knowledge for skills that sound nice but can't be pinned down or tested."
- },
- {
-  "k": "displaced",
-  "t": "displaced",
-  "kind": "word",
-  "forms": ["displaced"],
-  "text": "To displace something is to push it out of its place and take that place yourself. Screens have displaced more nourishing hobbies: reading for pleasure among American nine-year-olds fell from nearly 60% in the 1990s to 37% now — the phone sits where the book used to."
- },
- {
-  "k": "marking-own-homework",
-  "t": "marking their own homework",
-  "kind": "phrase",
-  "forms": ["marking their own homework"],
-  "text": "A British idiom for judging your own performance — as trustworthy as a student grading their own test. Universities claiming to be innocent bystanders are marking their own homework: they control admissions, so they helped create the very problem they're lamenting."
- },
- {
-  "k": "capitalise",
-  "t": "capitalise on",
-  "kind": "phrase",
-  "forms": ["capitalise"],
-  "text": "To capitalise on something is to turn it to your advantage — to cash in. Critics say universities lowered entry standards to capitalise on booming demand for degrees: more students admitted, more tuition collected. (British spelling; Americans write “capitalize.”)"
- },
- {
-  "k": "downsize",
-  "t": "downsize",
-  "kind": "word",
-  "forms": ["downsize"],
-  "text": "To downsize is to deliberately shrink — a company downsizes by cutting staff. With the number of 18-year-olds peaking, universities face a choice: admit weaker students or downsize. The article's data hints most choose the first."
- },
- {
-  "k": "throws-up",
-  "t": "throws up",
-  "kind": "phrase",
-  "forms": ["throws up"],
-  "text": "Here “throws up” means produces or reveals — an analysis that throws up a pattern has tossed one into view. Nothing to do with being sick! Comparing skills data with enrollment numbers throws up a correlation: shrinking university systems tend to hold more very-low-scoring students."
- },
- {
-  "k": "correlation",
-  "t": "correlation",
-  "kind": "word",
-  "forms": ["correlation"],
-  "text": "A correlation is a pattern where two things move together — when one is high, the other tends to be too. Crucially, correlation isn't proof that one causes the other, which is why the article carefully says this one “deserves further study” rather than claiming case closed."
- },
- {
-  "k": "clever-clogs",
-  "t": "clever clogs",
-  "kind": "phrase",
-  "forms": ["clever clogs"],
-  "text": "British slang for the smart kids — a “clever clogs” is a know-it-all. The point of the sentence is statistical: falling averages were driven by the bottom half of classes slipping further, not by the clever clogs at the top getting worse."
- },
- {
-  "k": "irate",
-  "t": "irate",
-  "kind": "word",
-  "forms": ["irate"],
-  "text": "Irate means furious — full of ire, the old word for wrath. The irate academics in California aren't mildly concerned; they're angry enough to organize an 1,800-signature public protest letter."
- },
- {
-  "k": "scrapping",
-  "t": "scrapping",
-  "kind": "word",
-  "forms": ["scrapping"],
-  "text": "To scrap something is to throw it on the scrap heap — abolish it, get rid of it. The professors blame the flood of unprepared students on the scrapping of entry tests: before the pandemic over half of American universities required the SAT or ACT; now as few as 10% do."
- },
- {
-  "k": "sat-act",
-  "t": "SAT / ACT",
-  "kind": "name",
-  "forms": ["sat or act"],
-  "text": "America's two big college-entrance exams, testing verbal and math reasoning. Since the US has no national graduation exam, they were the one common yardstick for comparing applicants from wildly different high schools — which is what vanished when colleges dropped them."
- },
- {
-  "k": "cynics",
-  "t": "cynics",
-  "kind": "word",
-  "forms": ["Cynics"],
-  "text": "A cynic assumes people's real motives are more selfish than their stated ones. The cynics here suspect universities dropped the tests not out of fairness but because it freed administrators to shape their campuses' ethnic mix as they saw fit — even after the Supreme Court outlawed race-based admissions in 2023."
- },
- {
-  "k": "canning",
-  "t": "canning",
-  "kind": "word",
-  "forms": ["canning"],
-  "text": "To can something, in slang, is to cancel or scrap it — toss it in the trash can. “Canning them” means killing off the entrance tests."
- },
- {
-  "k": "affirmative-action",
-  "t": "affirmative action",
-  "kind": "phrase",
-  "forms": ["affirmative action"],
-  "text": "Affirmative action means deliberately favoring groups that faced past discrimination — in admissions, giving a boost to applicants from underrepresented races. The US Supreme Court outlawed race-based affirmative action at universities in 2023, which is the ruling the cynics say colleges are quietly working around."
- },
- {
-  "k": "food-chain",
-  "t": "down the food chain",
-  "kind": "phrase",
-  "forms": ["down the food chain"],
-  "text": "The food chain ranks who eats whom — top predators up top. “Institutions down the food chain” are the less famous, less selective colleges. For them, dropping the tests wasn't about ideals; it was about survival — filling seats."
- },
- {
-  "k": "bums-on-seats",
-  "t": "bums on seats",
-  "kind": "phrase",
-  "forms": ["bums on seats"],
-  "text": "A cheerfully blunt British idiom — “bum” is British for backside, so bums on seats means paying customers filling the room, whatever it takes. For struggling colleges the pressing task isn't picking the best students; it's making sure there are enough bums on seats to pay the bills."
- },
- {
-  "k": "whipped-up",
-  "t": "whipped up",
-  "kind": "phrase",
-  "forms": ["whipped up"],
-  "text": "To whip something up is to produce it quickly with little effort, like whipping up a snack. Application essays can now be whipped up using AI in seconds — which, a Berkeley professor says, makes them worth next to nothing as a signal of who a student really is."
- },
- {
-  "k": "grade-inflation",
-  "t": "grade inflation",
-  "kind": "phrase",
-  "forms": ["grade inflation", "inflating"],
-  "text": "Grade inflation is grades creeping up year after year without students actually learning more — like money inflation, each A buys less meaning. The numbers are stark: 79% of Yale grades are now A or A-; 30% of British students get a first-class degree, up from 7% in 1995. When almost everyone gets the top mark, the mark stops telling you anything — Yale's own academics call the system “almost meaningless.”"
- },
- {
-  "k": "remedial",
-  "t": "remedial",
-  "kind": "word",
-  "forms": ["remedial"],
-  "text": "Remedial classes are catch-up classes — a remedy for material students should already know. The devastating detail: about a quarter of the students San Diego professors send to their weakest remedial math class had perfect math scores in high school."
- },
- {
-  "k": "black-box",
-  "t": "black box",
-  "kind": "phrase",
-  "forms": ["black box"],
-  "text": "A black box is a system whose inner workings you can't see — inputs go in, outputs come out, mystery in between. With test scores gone, essays AI-written, and grades inflated, admissions has become a black box: nobody can tell how students are actually being chosen, which one professor says is barely better than choosing at random."
- },
- {
-  "k": "quantitative-rigour",
-  "t": "quantitative rigour",
-  "kind": "phrase",
-  "forms": ["quantitative rigour"],
-  "text": "Quantitative means math-based; rigour is strictness and precision. To “dilute quantitative rigour” is to water down how demanding the math is — the pressure the California letter warns about: when students can't handle the course, the temptation is to soften the course."
- },
- {
-  "k": "blunt",
-  "t": "blunt",
-  "kind": "word",
-  "forms": ["blunt"],
-  "text": "Here blunt is a verb: to dull something's edge, weakening its force. Britain's big national exams somewhat blunt grade inflation in high schools — an outside check that stops grades drifting upward. British universities have no such check, and their grades show it."
- },
- {
-  "k": "first-class-degree",
-  "t": "first-class degree",
-  "kind": "phrase",
-  "forms": ["first-class degree"],
-  "text": "In Britain, university degrees come in ranked classes, and a “first” is the top one — traditionally a real distinction. In 1995 only 7% of students earned one; by 2025 it was 30%. Same label, four times as many winners: grade inflation in one statistic."
- },
- {
-  "k": "mediocre",
-  "t": "mediocre",
-  "kind": "word",
-  "forms": ["mediocre"],
-  "text": "Mediocre means middling — not awful, just ordinary, a solid “meh.” Harvard's report notes today's students have often never once received a mediocre mark in their lives, which is exactly why they push back so confidently when college finally hands them one."
- },
- {
-  "k": "appealing",
-  "t": "appealing",
-  "kind": "word",
-  "forms": ["appealing"],
-  "text": "Here appealing means formally challenging a decision — as in appealing a court ruling — not “attractive.” Students who've never seen a B are increasingly appealing less-than-perfect grades: filing protests to get the mark changed."
- },
- {
-  "k": "punters",
-  "t": "punters",
-  "kind": "word",
-  "forms": ["punters"],
-  "text": "British slang for paying customers. Calling students “punters” is the article's sharpest jab: professors keep grades high to keep the customers happy, because unhappy customers write bad course evaluations — and managers read those. The incentives all point the wrong way."
- },
- {
-  "k": "have-their-back",
-  "t": "have their back",
-  "kind": "phrase",
-  "forms": ["have their back"],
-  "text": "To have someone's back is to defend them when trouble comes. Professors who grade honestly haven't always been sure the university would have their back if a student complained — and a professor who fears being left exposed learns to stop giving honest grades."
- },
- {
-  "k": "cheatgpt",
-  "t": "CheatGPT",
-  "kind": "name",
-  "forms": ["CheatGPT"],
-  "text": "The section heading's pun: ChatGPT with the cheating built into the name. It introduces the article's final act — AI turbocharging academic dishonesty, with 94% of British undergraduates using AI on assessed work."
- },
- {
-  "k": "rampant",
-  "t": "rampant",
-  "kind": "word",
-  "forms": ["rampant"],
-  "text": "Rampant means spreading wildly and unchecked, like weeds taking over a garden. AI appears to be enabling rampant cheating: 12% of British students admit pasting AI text straight into their coursework, quadruple the year before."
- },
- {
-  "k": "gallingly",
-  "t": "gallingly",
-  "kind": "word",
-  "forms": ["gallingly"],
-  "text": "Galling means bitterly irritating — it rubs you raw like a chafing saddle. The galling detail: cheating rates were highest among economics students (17%) and journalism students (16%) — the future money-handlers and truth-tellers."
- },
- {
-  "k": "working-paper",
-  "t": "working paper",
-  "kind": "phrase",
-  "forms": ["working paper"],
-  "text": "A working paper is research published early, before other scholars have formally checked it — shared as a work in progress. The Texas grades study (500,000 grades, A's soaring in exactly the AI-friendly subjects since ChatGPT launched) is one, so treat it as strong-but-provisional evidence."
- },
- {
-  "k": "invigilated",
-  "t": "invigilated",
-  "kind": "word",
-  "forms": ["invigilated", "proctored"],
-  "text": "An invigilated exam is one taken under live supervision — someone watching the room; “proctored” is the American word for the same thing, and both appear here. Lecturers are bringing supervised, in-person exams back because it's the one format AI can't sit for you."
- },
- {
-  "k": "resignation",
-  "t": "resignation",
-  "kind": "word",
-  "forms": ["resignation"],
-  "text": "Here resignation means giving up — accepting defeat with a shrug, not quitting a job. AI has induced “a sense of resignation” in some academics: why teach basic skills if machines will do the work? The article's stinging last word on that attitude: “That is not pragmatism; it is surrender.”"
- },
- {
-  "k": "pragmatism",
-  "t": "pragmatism",
-  "kind": "word",
-  "forms": ["pragmatism"],
-  "text": "Pragmatism is practicality — dealing with the world as it is rather than as you wish it were. Academics shrugging that students no longer need basic skills dress the shrug up as pragmatism; the article's closing line rips the costume off: it's surrender."
- }
+  {
+    "k": "acuity",
+    "t": "acuity",
+    "kind": "vocab",
+    "pron": "uh-KYOO-uh-tee",
+    "forms": [
+      "acuity"
+    ],
+    "text": "Acuity is sharpness of mind — how keenly and clearly someone can perceive, read, and reason. The OECD's test sorts people into five levels of acuity, and the article's larger worry is about “the acuity of America's young”: whether young minds are getting duller.",
+    "audio": true
+  },
+  {
+    "k": "sanguine",
+    "t": "sanguine",
+    "kind": "vocab",
+    "pron": "SANG-gwin",
+    "forms": [
+      "sanguine"
+    ],
+    "text": "Sanguine means cheerfully optimistic — calm and confident things will turn out fine, even amid bad news. Brits can feel reasonably sanguine because their students' scores are better than average and improving, one of the few bright spots in a gloomy chart.",
+    "audio": true
+  },
+  {
+    "k": "vapid",
+    "t": "vapid",
+    "kind": "vocab",
+    "pron": "VAP-id",
+    "forms": [
+      "vapid"
+    ],
+    "text": "Vapid means flat, empty, and lacking real substance — like soda gone dead. Critics call the trendy “soft skills” in new curriculums nice-sounding but vapid: pleasant labels with nothing solid inside, replacing the concrete facts kids used to learn.",
+    "audio": true
+  },
+  {
+    "k": "exhort",
+    "t": "exhort",
+    "kind": "vocab",
+    "pron": "ig-ZORT",
+    "forms": [
+      "exhorting"
+    ],
+    "text": "To exhort is to urge someone strongly and earnestly — a coach exhorting the team to keep fighting. Harvard has spent a decade exhorting its professors to remember that students arrive stressed and unevenly prepared — pressure that nudges the professors toward gentler grading.",
+    "audio": true
+  },
+  {
+    "k": "open-letter",
+    "t": "open letter",
+    "kind": "phrase",
+    "forms": [
+      "open letter"
+    ],
+    "text": "An open letter is a letter published for everyone to read, even though it's addressed to someone specific — going public is the point. When 1,800 University of California lecturers sign one about unprepared students, they're not just telling the administration; they're raising the alarm for the whole country.",
+    "audio": true
+  },
+  {
+    "k": "lecturers",
+    "t": "lecturers",
+    "kind": "word",
+    "forms": [
+      "lecturers"
+    ],
+    "text": "A lecturer is a university teacher — the British-flavored catch-all for the people who actually stand in front of classes. They're the article's witnesses: the ones discovering they must reteach middle-school math to college students.",
+    "audio": true
+  },
+  {
+    "k": "undergraduates",
+    "t": "undergraduates",
+    "kind": "word",
+    "forms": [
+      "undergraduates",
+      "undergraduate"
+    ],
+    "text": "Undergraduates are students working toward their first college degree — the four years after high school. (Graduate students come after.) The alarming finding is about first-year undergraduates: the freshmen just arriving.",
+    "audio": true
+  },
+  {
+    "k": "gobsmacking",
+    "t": "gobsmacking",
+    "kind": "word",
+    "forms": [
+      "gobsmacking"
+    ],
+    "text": "British slang for astonishing — “gob” is slang for mouth, so gobsmacked is being smacked speechless. The gobsmacking report: students entering UC San Diego with below-high-school math skills grew nearly thirtyfold in five years, to almost one in eight.",
+    "audio": true
+  },
+  {
+    "k": "literacy-numeracy",
+    "t": "literacy and numeracy",
+    "kind": "phrase",
+    "forms": [
+      "literacy",
+      "numeracy"
+    ],
+    "text": "Literacy is reading-and-writing ability; numeracy is its math twin — being comfortable enough with numbers to handle real life, from a pill bottle's instructions to how much wallpaper a room needs. They're the two skills the OECD's big adult survey measures.",
+    "audio": true
+  },
+  {
+    "k": "humanities",
+    "t": "humanities",
+    "kind": "name",
+    "forms": [
+      "humanities"
+    ],
+    "text": "The humanities are the subjects that study human culture — literature, history, philosophy, languages — as opposed to the sciences. At Yale, humanities courses hand out A's more than 80% of the time; economics, at about 50%, is the campus tough guy.",
+    "audio": true
+  },
+  {
+    "k": "faculty",
+    "t": "faculty",
+    "kind": "word",
+    "forms": [
+      "faculty"
+    ],
+    "text": "A university's faculty is its professors as a group — the teaching staff, not a “faculty” like the ability to see. Reports “released to faculty” are internal documents for the professors, which is why they're so unusually frank.",
+    "audio": true
+  },
+  {
+    "k": "prose",
+    "t": "prose",
+    "kind": "word",
+    "forms": [
+      "prose"
+    ],
+    "text": "Prose is ordinary written language — sentences and paragraphs, as opposed to poetry. Harvard's students arrive “with less experience reading complex prose”: long, demanding writing, the kind a whole book is made of.",
+    "audio": true
+  },
+  {
+    "k": "griping",
+    "t": "griping",
+    "kind": "word",
+    "forms": [
+      "griping"
+    ],
+    "text": "To gripe is to grumble and complain, usually about the same things over and over. The article is fair-minded enough to admit professors have been griping about “kids these days” forever — which is exactly why it goes hunting for hard data instead.",
+    "audio": true
+  },
+  {
+    "k": "ivory-towers",
+    "t": "ivory towers",
+    "kind": "phrase",
+    "forms": [
+      "ivory towers"
+    ],
+    "text": "The “ivory tower” is the classic image of academia — a beautiful tower where scholars think lofty thoughts, comfortably sealed off from the real world. “As long as there have been ivory towers” just means: as long as universities have existed.",
+    "audio": true
+  },
+  {
+    "k": "spotty",
+    "t": "spotty",
+    "kind": "word",
+    "forms": [
+      "spotty"
+    ],
+    "text": "Spotty means patchy and inconsistent — coverage in spots, with gaps between. Since adults rarely sit standardized exams, fact-finders must rely on spotty reports from professors: scattered alarms rather than systematic evidence.",
+    "audio": true
+  },
+  {
+    "k": "fly-blind",
+    "t": "fly blind",
+    "kind": "phrase",
+    "forms": [
+      "fly completely blind"
+    ],
+    "text": "To fly blind is to navigate with no instruments and no visibility — guessing your way through. Observers of global education “need not fly completely blind” because one big instrument does exist: the OECD's once-a-decade adult skills survey.",
+    "audio": true
+  },
+  {
+    "k": "wrung",
+    "t": "wrung",
+    "kind": "word",
+    "forms": [
+      "wrung"
+    ],
+    "text": "Wrung is the past tense of wring — to twist and squeeze, the way you wring water from a wet towel. Insight being “wrung from” a test means extracted with effort: the data doesn't give up its answers easily.",
+    "audio": true
+  },
+  {
+    "k": "oecd",
+    "t": "OECD",
+    "kind": "name",
+    "forms": [
+      "OECD"
+    ],
+    "text": "The Organisation for Economic Co-operation and Development — a club of mostly rich countries that collects famously careful statistics on its members. Its “Survey of Adult Skills,” run once a decade, is the article's best evidence: 160,000 people tested across dozens of countries.",
+    "audio": true
+  },
+  {
+    "k": "gauge",
+    "t": "gauge",
+    "kind": "word",
+    "forms": [
+      "gauge"
+    ],
+    "text": "To gauge something is to measure or estimate it — a fuel gauge gauges the tank. The OECD's survey aims to gauge whether citizens have the literacy and numeracy to thrive in real life.",
+    "audio": true
+  },
+  {
+    "k": "tertiary",
+    "t": "tertiary",
+    "kind": "word",
+    "forms": [
+      "tertiary"
+    ],
+    "text": "Tertiary means third-level: after primary school (first) and secondary school (second) comes tertiary education — universities and colleges. The article's shocking statistic is about tertiary students specifically: people who made it to college yet test at a ten-year-old's level.",
+    "audio": true
+  },
+  {
+    "k": "abysmally",
+    "t": "abysmally",
+    "kind": "word",
+    "forms": [
+      "abysmally"
+    ],
+    "text": "An abyss is a bottomless pit, so to perform abysmally is to do terribly — rock-bottom badly. The finding: many tertiary students do very well, but a striking 8% perform abysmally, scoring no better than a ten-year-old.",
+    "audio": true
+  },
+  {
+    "k": "notch-up",
+    "t": "notch up",
+    "kind": "phrase",
+    "forms": [
+      "notch up",
+      "notched up"
+    ],
+    "text": "To notch up a score is to record or achieve it — from cutting a notch in a stick to keep count. The phrase turns bitter later in the article: a quarter of San Diego's weakest remedial-math students had notched up perfect math scores in high school.",
+    "audio": true
+  },
+  {
+    "k": "disdain",
+    "t": "disdain",
+    "kind": "word",
+    "forms": [
+      "disdain"
+    ],
+    "text": "Disdain is looking down on something — contempt, the feeling that a thing is beneath your respect. Britain's “growing public disdain for academia” means many Brits now scorn universities, even though British students' scores are actually holding up well.",
+    "audio": true
+  },
+  {
+    "k": "academia",
+    "t": "academia",
+    "kind": "word",
+    "forms": [
+      "academia"
+    ],
+    "text": "Academia is the university world as a whole — professors, research, degrees, the entire scholarly ecosystem. Someone “in academia” works at a university.",
+    "audio": true
+  },
+  {
+    "k": "every-child-left-behind",
+    "t": "Every child left behind",
+    "kind": "phrase",
+    "forms": [
+      "Every child left behind"
+    ],
+    "text": "This section heading flips a famous American law: No Child Left Behind (2002), which promised that schools would let no student fall through the cracks. Inverting it to “Every child left behind” is the article's darkest joke about how that promise worked out.",
+    "audio": true
+  },
+  {
+    "k": "rota",
+    "t": "rota",
+    "kind": "word",
+    "forms": [
+      "Rota"
+    ],
+    "text": "A rota is a rotating schedule — British English for taking turns. Pandemic-era rota systems meant students attended school in shifts, only some days a week, which kept disrupting lessons long after the full closures ended.",
+    "audio": true
+  },
+  {
+    "k": "mega-lurgy",
+    "t": "mega-lurgy",
+    "kind": "word",
+    "forms": [
+      "mega-lurgy"
+    ],
+    "text": "“The lurgy” is jokey British slang for whatever illness is going around school — the crud, the bug. Calling covid “the mega-lurgy” is the article's wry nickname for the pandemic: the bug to end all bugs. The key point in the sentence: schooling was already sliding before it hit.",
+    "audio": true
+  },
+  {
+    "k": "naep",
+    "t": "NAEP",
+    "kind": "name",
+    "forms": [
+      "NAEP"
+    ],
+    "text": "The National Assessment of Educational Progress — the exam nicknamed “America's report card,” given to samples of US students so the country can track itself over time. NAEP scores peaked in the early 2010s and have been slipping ever since: the decline predates covid.",
+    "audio": true
+  },
+  {
+    "k": "pisa",
+    "t": "PISA",
+    "kind": "name",
+    "forms": [
+      "PISA"
+    ],
+    "text": "An international exam taken by 15-year-olds in dozens of countries, run by the OECD — the closest thing to a world championship of school systems. PISA scores are drifting down across a swathe of countries, so this isn't just an American problem.",
+    "audio": true
+  },
+  {
+    "k": "swathe",
+    "t": "swathe",
+    "kind": "word",
+    "forms": [
+      "swathe"
+    ],
+    "text": "A swathe is a broad strip or band — originally the wide path a scythe cuts through grass. “A swathe of other countries” means a whole belt of them at once: France, Germany, the Netherlands, New Zealand and more, all sliding together.",
+    "audio": true
+  },
+  {
+    "k": "watering-down",
+    "t": "watering down",
+    "kind": "phrase",
+    "forms": [
+      "watering down"
+    ],
+    "text": "To water something down is to weaken it, the way water thins a drink. It's the article's recurring accusation: reformers watering down testing, and universities watering down standards rather than shrinking. Each dilution looks small; together they add up.",
+    "audio": true
+  },
+  {
+    "k": "syllabi",
+    "t": "syllabi",
+    "kind": "word",
+    "forms": [
+      "syllabi"
+    ],
+    "text": "Syllabi is the plural of syllabus — the plan of what a course will teach. “Time-tested syllabi” are course plans proven over decades, which traditionalists say are being swapped for trendy new ones.",
+    "audio": true
+  },
+  {
+    "k": "faddish",
+    "t": "faddish",
+    "kind": "word",
+    "forms": [
+      "faddish"
+    ],
+    "text": "A fad is a craze that burns bright and dies fast, so faddish means fashionable-but-shallow — chasing the trend of the moment. “Faddish curriculums” is the traditionalists' jab: teaching plans built on this year's fashion rather than what's proven to work.",
+    "audio": true
+  },
+  {
+    "k": "soft-skills",
+    "t": "“soft” skills",
+    "kind": "phrase",
+    "forms": [
+      "soft"
+    ],
+    "text": "Soft skills are the fuzzy, hard-to-measure abilities — communication, teamwork, “critical thinking” — as opposed to hard skills like solving equations. The scare quotes carry the critics' sneer: they say schools traded concrete knowledge for skills that sound nice but can't be pinned down or tested.",
+    "audio": true
+  },
+  {
+    "k": "displaced",
+    "t": "displaced",
+    "kind": "word",
+    "forms": [
+      "displaced"
+    ],
+    "text": "To displace something is to push it out of its place and take that place yourself. Screens have displaced more nourishing hobbies: reading for pleasure among American nine-year-olds fell from nearly 60% in the 1990s to 37% now — the phone sits where the book used to.",
+    "audio": true
+  },
+  {
+    "k": "marking-own-homework",
+    "t": "marking their own homework",
+    "kind": "phrase",
+    "forms": [
+      "marking their own homework"
+    ],
+    "text": "A British idiom for judging your own performance — as trustworthy as a student grading their own test. Universities claiming to be innocent bystanders are marking their own homework: they control admissions, so they helped create the very problem they're lamenting.",
+    "audio": true
+  },
+  {
+    "k": "capitalise",
+    "t": "capitalise on",
+    "kind": "phrase",
+    "forms": [
+      "capitalise"
+    ],
+    "text": "To capitalise on something is to turn it to your advantage — to cash in. Critics say universities lowered entry standards to capitalise on booming demand for degrees: more students admitted, more tuition collected. (British spelling; Americans write “capitalize.”)",
+    "audio": true
+  },
+  {
+    "k": "downsize",
+    "t": "downsize",
+    "kind": "word",
+    "forms": [
+      "downsize"
+    ],
+    "text": "To downsize is to deliberately shrink — a company downsizes by cutting staff. With the number of 18-year-olds peaking, universities face a choice: admit weaker students or downsize. The article's data hints most choose the first.",
+    "audio": true
+  },
+  {
+    "k": "throws-up",
+    "t": "throws up",
+    "kind": "phrase",
+    "forms": [
+      "throws up"
+    ],
+    "text": "Here “throws up” means produces or reveals — an analysis that throws up a pattern has tossed one into view. Nothing to do with being sick! Comparing skills data with enrollment numbers throws up a correlation: shrinking university systems tend to hold more very-low-scoring students.",
+    "audio": true
+  },
+  {
+    "k": "correlation",
+    "t": "correlation",
+    "kind": "word",
+    "forms": [
+      "correlation"
+    ],
+    "text": "A correlation is a pattern where two things move together — when one is high, the other tends to be too. Crucially, correlation isn't proof that one causes the other, which is why the article carefully says this one “deserves further study” rather than claiming case closed.",
+    "audio": true
+  },
+  {
+    "k": "clever-clogs",
+    "t": "clever clogs",
+    "kind": "phrase",
+    "forms": [
+      "clever clogs"
+    ],
+    "text": "British slang for the smart kids — a “clever clogs” is a know-it-all. The point of the sentence is statistical: falling averages were driven by the bottom half of classes slipping further, not by the clever clogs at the top getting worse.",
+    "audio": true
+  },
+  {
+    "k": "irate",
+    "t": "irate",
+    "kind": "word",
+    "forms": [
+      "irate"
+    ],
+    "text": "Irate means furious — full of ire, the old word for wrath. The irate academics in California aren't mildly concerned; they're angry enough to organize an 1,800-signature public protest letter.",
+    "audio": true
+  },
+  {
+    "k": "scrapping",
+    "t": "scrapping",
+    "kind": "word",
+    "forms": [
+      "scrapping"
+    ],
+    "text": "To scrap something is to throw it on the scrap heap — abolish it, get rid of it. The professors blame the flood of unprepared students on the scrapping of entry tests: before the pandemic over half of American universities required the SAT or ACT; now as few as 10% do.",
+    "audio": true
+  },
+  {
+    "k": "sat-act",
+    "t": "SAT / ACT",
+    "kind": "name",
+    "forms": [
+      "sat or act"
+    ],
+    "text": "America's two big college-entrance exams, testing verbal and math reasoning. Since the US has no national graduation exam, they were the one common yardstick for comparing applicants from wildly different high schools — which is what vanished when colleges dropped them.",
+    "audio": true
+  },
+  {
+    "k": "cynics",
+    "t": "cynics",
+    "kind": "word",
+    "forms": [
+      "Cynics"
+    ],
+    "text": "A cynic assumes people's real motives are more selfish than their stated ones. The cynics here suspect universities dropped the tests not out of fairness but because it freed administrators to shape their campuses' ethnic mix as they saw fit — even after the Supreme Court outlawed race-based admissions in 2023.",
+    "audio": true
+  },
+  {
+    "k": "canning",
+    "t": "canning",
+    "kind": "word",
+    "forms": [
+      "canning"
+    ],
+    "text": "To can something, in slang, is to cancel or scrap it — toss it in the trash can. “Canning them” means killing off the entrance tests.",
+    "audio": true
+  },
+  {
+    "k": "affirmative-action",
+    "t": "affirmative action",
+    "kind": "phrase",
+    "forms": [
+      "affirmative action"
+    ],
+    "text": "Affirmative action means deliberately favoring groups that faced past discrimination — in admissions, giving a boost to applicants from underrepresented races. The US Supreme Court outlawed race-based affirmative action at universities in 2023, which is the ruling the cynics say colleges are quietly working around.",
+    "audio": true
+  },
+  {
+    "k": "food-chain",
+    "t": "down the food chain",
+    "kind": "phrase",
+    "forms": [
+      "down the food chain"
+    ],
+    "text": "The food chain ranks who eats whom — top predators up top. “Institutions down the food chain” are the less famous, less selective colleges. For them, dropping the tests wasn't about ideals; it was about survival — filling seats.",
+    "audio": true
+  },
+  {
+    "k": "bums-on-seats",
+    "t": "bums on seats",
+    "kind": "phrase",
+    "forms": [
+      "bums on seats"
+    ],
+    "text": "A cheerfully blunt British idiom — “bum” is British for backside, so bums on seats means paying customers filling the room, whatever it takes. For struggling colleges the pressing task isn't picking the best students; it's making sure there are enough bums on seats to pay the bills.",
+    "audio": true
+  },
+  {
+    "k": "whipped-up",
+    "t": "whipped up",
+    "kind": "phrase",
+    "forms": [
+      "whipped up"
+    ],
+    "text": "To whip something up is to produce it quickly with little effort, like whipping up a snack. Application essays can now be whipped up using AI in seconds — which, a Berkeley professor says, makes them worth next to nothing as a signal of who a student really is.",
+    "audio": true
+  },
+  {
+    "k": "grade-inflation",
+    "t": "grade inflation",
+    "kind": "phrase",
+    "forms": [
+      "grade inflation",
+      "inflating"
+    ],
+    "text": "Grade inflation is grades creeping up year after year without students actually learning more — like money inflation, each A buys less meaning. The numbers are stark: 79% of Yale grades are now A or A-; 30% of British students get a first-class degree, up from 7% in 1995. When almost everyone gets the top mark, the mark stops telling you anything — Yale's own academics call the system “almost meaningless.”",
+    "audio": true
+  },
+  {
+    "k": "remedial",
+    "t": "remedial",
+    "kind": "word",
+    "forms": [
+      "remedial"
+    ],
+    "text": "Remedial classes are catch-up classes — a remedy for material students should already know. The devastating detail: about a quarter of the students San Diego professors send to their weakest remedial math class had perfect math scores in high school.",
+    "audio": true
+  },
+  {
+    "k": "black-box",
+    "t": "black box",
+    "kind": "phrase",
+    "forms": [
+      "black box"
+    ],
+    "text": "A black box is a system whose inner workings you can't see — inputs go in, outputs come out, mystery in between. With test scores gone, essays AI-written, and grades inflated, admissions has become a black box: nobody can tell how students are actually being chosen, which one professor says is barely better than choosing at random.",
+    "audio": true
+  },
+  {
+    "k": "quantitative-rigour",
+    "t": "quantitative rigour",
+    "kind": "phrase",
+    "forms": [
+      "quantitative rigour"
+    ],
+    "text": "Quantitative means math-based; rigour is strictness and precision. To “dilute quantitative rigour” is to water down how demanding the math is — the pressure the California letter warns about: when students can't handle the course, the temptation is to soften the course.",
+    "audio": true
+  },
+  {
+    "k": "blunt",
+    "t": "blunt",
+    "kind": "word",
+    "forms": [
+      "blunt"
+    ],
+    "text": "Here blunt is a verb: to dull something's edge, weakening its force. Britain's big national exams somewhat blunt grade inflation in high schools — an outside check that stops grades drifting upward. British universities have no such check, and their grades show it.",
+    "audio": true
+  },
+  {
+    "k": "first-class-degree",
+    "t": "first-class degree",
+    "kind": "phrase",
+    "forms": [
+      "first-class degree"
+    ],
+    "text": "In Britain, university degrees come in ranked classes, and a “first” is the top one — traditionally a real distinction. In 1995 only 7% of students earned one; by 2025 it was 30%. Same label, four times as many winners: grade inflation in one statistic.",
+    "audio": true
+  },
+  {
+    "k": "mediocre",
+    "t": "mediocre",
+    "kind": "word",
+    "forms": [
+      "mediocre"
+    ],
+    "text": "Mediocre means middling — not awful, just ordinary, a solid “meh.” Harvard's report notes today's students have often never once received a mediocre mark in their lives, which is exactly why they push back so confidently when college finally hands them one.",
+    "audio": true
+  },
+  {
+    "k": "appealing",
+    "t": "appealing",
+    "kind": "word",
+    "forms": [
+      "appealing"
+    ],
+    "text": "Here appealing means formally challenging a decision — as in appealing a court ruling — not “attractive.” Students who've never seen a B are increasingly appealing less-than-perfect grades: filing protests to get the mark changed.",
+    "audio": true
+  },
+  {
+    "k": "punters",
+    "t": "punters",
+    "kind": "word",
+    "forms": [
+      "punters"
+    ],
+    "text": "British slang for paying customers. Calling students “punters” is the article's sharpest jab: professors keep grades high to keep the customers happy, because unhappy customers write bad course evaluations — and managers read those. The incentives all point the wrong way.",
+    "audio": true
+  },
+  {
+    "k": "have-their-back",
+    "t": "have their back",
+    "kind": "phrase",
+    "forms": [
+      "have their back"
+    ],
+    "text": "To have someone's back is to defend them when trouble comes. Professors who grade honestly haven't always been sure the university would have their back if a student complained — and a professor who fears being left exposed learns to stop giving honest grades.",
+    "audio": true
+  },
+  {
+    "k": "cheatgpt",
+    "t": "CheatGPT",
+    "kind": "name",
+    "forms": [
+      "CheatGPT"
+    ],
+    "text": "The section heading's pun: ChatGPT with the cheating built into the name. It introduces the article's final act — AI turbocharging academic dishonesty, with 94% of British undergraduates using AI on assessed work.",
+    "audio": true
+  },
+  {
+    "k": "rampant",
+    "t": "rampant",
+    "kind": "word",
+    "forms": [
+      "rampant"
+    ],
+    "text": "Rampant means spreading wildly and unchecked, like weeds taking over a garden. AI appears to be enabling rampant cheating: 12% of British students admit pasting AI text straight into their coursework, quadruple the year before.",
+    "audio": true
+  },
+  {
+    "k": "gallingly",
+    "t": "gallingly",
+    "kind": "word",
+    "forms": [
+      "gallingly"
+    ],
+    "text": "Galling means bitterly irritating — it rubs you raw like a chafing saddle. The galling detail: cheating rates were highest among economics students (17%) and journalism students (16%) — the future money-handlers and truth-tellers.",
+    "audio": true
+  },
+  {
+    "k": "working-paper",
+    "t": "working paper",
+    "kind": "phrase",
+    "forms": [
+      "working paper"
+    ],
+    "text": "A working paper is research published early, before other scholars have formally checked it — shared as a work in progress. The Texas grades study (500,000 grades, A's soaring in exactly the AI-friendly subjects since ChatGPT launched) is one, so treat it as strong-but-provisional evidence.",
+    "audio": true
+  },
+  {
+    "k": "invigilated",
+    "t": "invigilated",
+    "kind": "word",
+    "forms": [
+      "invigilated",
+      "proctored"
+    ],
+    "text": "An invigilated exam is one taken under live supervision — someone watching the room; “proctored” is the American word for the same thing, and both appear here. Lecturers are bringing supervised, in-person exams back because it's the one format AI can't sit for you.",
+    "audio": true
+  },
+  {
+    "k": "resignation",
+    "t": "resignation",
+    "kind": "word",
+    "forms": [
+      "resignation"
+    ],
+    "text": "Here resignation means giving up — accepting defeat with a shrug, not quitting a job. AI has induced “a sense of resignation” in some academics: why teach basic skills if machines will do the work? The article's stinging last word on that attitude: “That is not pragmatism; it is surrender.”",
+    "audio": true
+  },
+  {
+    "k": "pragmatism",
+    "t": "pragmatism",
+    "kind": "word",
+    "forms": [
+      "pragmatism"
+    ],
+    "text": "Pragmatism is practicality — dealing with the world as it is rather than as you wish it were. Academics shrugging that students no longer need basic skills dress the shrug up as pragmatism; the article's closing line rips the costume off: it's surrender.",
+    "audio": true
+  }
 ]

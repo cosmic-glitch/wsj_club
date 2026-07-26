@@ -1,327 +1,472 @@
 [
- {
-  "k": "sanguine",
-  "t": "sanguine",
-  "kind": "vocab",
-  "pron": "SANG-gwin",
-  "forms": ["sanguine"],
-  "text": "Sanguine means cheerfully optimistic, especially when a situation looks worrying. The word is doing heavy lifting here: even economists who are normally sanguine — calm and unbothered about new technology — are alarmed enough by AI to demand governments 'act now,' which tells you how unusual the worry is."
- },
- {
-  "k": "destitute",
-  "t": "destitute",
-  "kind": "vocab",
-  "pron": "DES-tih-toot",
-  "forms": ["destitute"],
-  "text": "Destitute means desperately poor, lacking even the basics of life. The article uses it to bust a myth: the Luddites were NOT a movement of the destitute, as later historians claimed — they were relatively well-off, skilled workers protecting valuable trades."
- },
- {
-  "k": "moratorium",
-  "t": "moratorium",
-  "kind": "vocab",
-  "pron": "mor-uh-TOR-ee-um",
-  "forms": ["moratorium"],
-  "text": "A moratorium is an official, temporary halt to some activity — a pause, not a permanent ban. Here New York state has put a moratorium on new data centres to hold electricity prices down; it's an example of the article's big point that governments, not protesters, are what really slows a technology."
- },
- {
-  "k": "luddite",
-  "t": "Luddite",
-  "kind": "name",
-  "forms": ["Luddites", "Luddite"],
-  "text": "The Luddites were textile workers in early-1800s England who smashed weaving machines they believed were stealing their jobs. Today 'Luddite' is thrown around as an insult for anyone scared of new technology — but the article argues the real Luddites were skilled, thoughtful, and selective, not clueless."
- },
- {
-  "k": "loom",
-  "t": "looms",
-  "kind": "word",
-  "forms": ["looms"],
-  "text": "A loom is a machine (or frame) for weaving thread into cloth. The Luddites broke mechanical looms because these powered machines could do the weaving that skilled workers had trained for years to do by hand."
- },
- {
-  "k": "stocking-frame",
-  "t": "stocking frame",
-  "kind": "name",
-  "forms": ["stocking frames", "stocking frame"],
-  "text": "A stocking frame is an early knitting machine for making stockings and other hosiery. The article notes some of the frames the Luddites smashed weren't even new — the stocking frame had been invented 200 years earlier."
- },
- {
-  "k": "champion",
-  "t": "champion",
-  "kind": "word",
-  "forms": ["champion"],
-  "text": "Here 'champion' doesn't mean a contest winner — it means a defender or fighter for a cause or group. Robin Hood is called a champion of the downtrodden because he stood up for the poor and oppressed."
- },
- {
-  "k": "downtrodden",
-  "t": "downtrodden",
-  "kind": "word",
-  "forms": ["downtrodden"],
-  "text": "The downtrodden are people who are oppressed and badly treated by those with more power — literally 'trodden down.' Legends like Robin Hood and King Ludd were imagined as champions of the downtrodden, standing up for ordinary workers against harsh masters."
- },
- {
-  "k": "apprentice",
-  "t": "apprentice",
-  "kind": "word",
-  "forms": ["apprentice", "apprenticeship"],
-  "text": "An apprentice is someone learning a skilled trade by working under an expert, usually for years. That long apprenticeship is exactly what the Luddites were defending — machines threatened to make their hard-won skills worthless."
- },
- {
-  "k": "overbearing",
-  "t": "overbearing",
-  "kind": "word",
-  "forms": ["overbearing"],
-  "text": "An overbearing person is domineering and bossy — throwing their weight around and ignoring how others feel. The legend imagined King Ludd as an apprentice pushed to smash looms by an overbearing master."
- },
- {
-  "k": "mills",
-  "t": "mills",
-  "kind": "word",
-  "forms": ["mills"],
-  "text": "A mill here is a factory building, especially one full of machines for making cloth. The Luddites would sneak into these textile mills by night to break the machinery inside."
- },
- {
-  "k": "slur",
-  "t": "slur",
-  "kind": "word",
-  "forms": ["slur"],
-  "text": "A slur is an insult — a word used to put someone down. The article's point is that 'Luddite' has decayed into a slur for anyone who resists technology, even though the original Luddites deserved more respect than that."
- },
- {
-  "k": "technophobic",
-  "t": "technophobic",
-  "kind": "word",
-  "forms": ["technophobic"],
-  "text": "Technophobic means fearful of, or hostile to, new technology ('techno-' + '-phobic,' meaning fear). Calling someone technophobic paints them as clinging to the past — the exact stereotype attached to 'Luddite' today."
- },
- {
-  "k": "stick-in-the-muds",
-  "t": "stick-in-the-muds",
-  "kind": "phrase",
-  "forms": ["stick-in-the-muds"],
-  "text": "A stick-in-the-mud is a person who refuses to change or try anything new — imagine someone so stuck they can't move forward. The article lumps the insult in with 'technophobic' to describe how people dismiss the Luddites as backward."
- },
- {
-  "k": "whingers",
-  "t": "whingers",
-  "kind": "word",
-  "forms": ["whingers"],
-  "text": "'Whinger' is British slang for someone who complains and moans constantly (to 'whinge' is to whine). It's used mockingly here for people accused of standing in the way of progress."
- },
- {
-  "k": "white-collar",
-  "t": "white-collar",
-  "kind": "phrase",
-  "forms": ["white-collar"],
-  "text": "White-collar work is office or professional work — think desks, computers, and salaries — as opposed to 'blue-collar' manual labour. The scary twist for today's workers is that AI can now do much white-collar work, threatening jobs once thought safe from automation."
- },
- {
-  "k": "artisan",
-  "t": "artisan",
-  "kind": "word",
-  "forms": ["artisan"],
-  "text": "An artisan is a skilled craftsperson who makes things by hand with real expertise. The artisan weavers of northern England took pride in a craft learned over years — which is why the machines felt like such a threat."
- },
- {
-  "k": "automation",
-  "t": "automation",
-  "kind": "word",
-  "forms": ["automation"],
-  "text": "Automation is getting a machine to do work that people used to do by hand. It sits at the heart of this whole story: from looms to AI, every wave of automation raises the same fear that human jobs will vanish."
- },
- {
-  "k": "mechanisation",
-  "t": "mechanisation",
-  "kind": "word",
-  "forms": ["mechanisation"],
-  "text": "Mechanisation means switching from hand labour to machines — closely related to automation. Historians still argue whether ordinary Britons actually shared in the gains from the mechanisation of the early Industrial Revolution."
- },
- {
-  "k": "industrial-revolution",
-  "t": "Industrial Revolution",
-  "kind": "name",
-  "forms": ["Industrial Revolution"],
-  "text": "The Industrial Revolution was the roughly late-1700s-to-1800s shift when Britain and then the world moved from handmade goods to factory production powered by machines. The Luddites were reacting to its early years, when new machinery was upending centuries-old crafts."
- },
- {
-  "k": "patchy",
-  "t": "patchy",
-  "kind": "word",
-  "forms": ["patchy"],
-  "text": "Patchy means incomplete and uneven — good in some spots, missing in others, like a lawn with bald patches. When the article says the data from the period are patchy, it means historians simply don't have enough solid records to settle the argument."
- },
- {
-  "k": "byron",
-  "t": "Lord Byron",
-  "kind": "name",
-  "forms": ["Lord Byron", "Byron"],
-  "text": "Lord Byron was a famous, flamboyant English Romantic poet of the early 1800s. He sympathised with the Luddites and even wrote a poem defending them — though the article dryly notes he was 'an oddball,' not a mainstream supporter."
- },
- {
-  "k": "capital-crime",
-  "t": "capital crime",
-  "kind": "phrase",
-  "forms": ["capital crime"],
-  "text": "A capital crime is one punishable by death ('capital' from a Latin root for 'head,' as in losing your head). To crush the movement, the state made machine-breaking a capital crime — a brutal sign of how seriously it took the threat."
- },
- {
-  "k": "spared-the-noose",
-  "t": "spared the noose",
-  "kind": "phrase",
-  "forms": ["spared the noose"],
-  "text": "The noose is the loop of rope used for hanging, so to be 'spared the noose' is to escape execution. Luddite ringleaders who were spared the noose weren't set free — they were shipped off to Australia instead."
- },
- {
-  "k": "transported",
-  "t": "transported",
-  "kind": "word",
-  "forms": ["transported"],
-  "text": "Here 'transported' has a historical meaning: to be sent overseas as punishment, exiled to a penal colony. Britain 'transported' many convicts — including Luddite leaders — to Australia in the 1800s."
- },
- {
-  "k": "theatricality",
-  "t": "theatricality",
-  "kind": "word",
-  "forms": ["theatricality"],
-  "text": "Theatricality is dramatic, showy, attention-grabbing behaviour — acting as if for a stage. The Luddites stuck in people's memories, the article argues, more because of their theatricality (like dressing in women's clothes to smash machines) than because of any lasting economic effect."
- },
- {
-  "k": "threshing-machines",
-  "t": "threshing machines",
-  "kind": "name",
-  "forms": ["threshing machines"],
-  "text": "A threshing machine separates grain from the stalks and husks of harvested crops — work farmhands once did slowly by hand. In the 1830s, English farm workers smashed threshing machines for the same reason the Luddites broke looms: the machines were replacing their jobs."
- },
- {
-  "k": "repression",
-  "t": "repression",
-  "kind": "word",
-  "forms": ["repression"],
-  "text": "Repression is the use of force by those in power to crush protest or opposition. Every copycat machine-breaking movement — in Britain, France, and Prussia — met the same harsh repression from the state."
- },
- {
-  "k": "vigil",
-  "t": "vigil",
-  "kind": "word",
-  "forms": ["vigil"],
-  "text": "A vigil is a period of staying awake and watchful, often as a form of protest or devotion. Indian union activists kept a 24-hour vigil outside the office for two years to physically block a computer from being installed."
- },
- {
-  "k": "unions",
-  "t": "unions",
-  "kind": "word",
-  "forms": ["unions", "union"],
-  "text": "A union (labour union) is an organised group of workers who join together to bargain with employers over pay, conditions, and — as here — whether new machines get brought in. India's unions were powerful enough to block computers for years, especially once the government sided with them."
- },
- {
-  "k": "lic",
-  "t": "Life Insurance Corporation",
-  "kind": "name",
-  "forms": ["Life Insurance Corporation", "LIC"],
-  "text": "The Life Insurance Corporation (LIC) is India's giant, state-owned life-insurance company. Its 1965 attempt to install an IBM computer in its offices set off the anti-computer fight the article describes."
- },
- {
-  "k": "ibm",
-  "t": "IBM",
-  "kind": "name",
-  "forms": ["IBM"],
-  "text": "IBM is a huge American technology company, historically the biggest name in early business computers and mainframes. The IBM machine that India's LIC tried to install was exactly the kind of automation unions feared would erase clerical jobs."
- },
- {
-  "k": "west-bengal",
-  "t": "West Bengal",
-  "kind": "name",
-  "forms": ["West Bengal"],
-  "text": "West Bengal is a state in eastern India whose capital is Kolkata (Calcutta). Its Communist-led government backed the workers against the computer — and the article hints this long dominance by communists is partly why the state later 'missed out' on India's tech boom."
- },
- {
-  "k": "rajiv-gandhi",
-  "t": "Rajiv Gandhi",
-  "kind": "name",
-  "forms": ["Rajiv Gandhi"],
-  "text": "Rajiv Gandhi was India's prime minister in the 1980s, taking office as a relatively young leader. Unlike earlier governments, he backed computerisation — a turning point that helped push India toward becoming a technology power."
- },
- {
-  "k": "computerisation",
-  "t": "computerisation",
-  "kind": "word",
-  "forms": ["computerisation"],
-  "text": "Computerisation is the process of bringing computers in to do work previously done by people or on paper. In India it was so politically explosive that officials disguised the machines under harmless-sounding names to sneak them in."
- },
- {
-  "k": "advanced-ledger-posting-machines",
-  "t": "advanced ledger posting machines",
-  "kind": "phrase",
-  "forms": ["advanced ledger posting machines"],
-  "text": "This was a deliberately dull euphemism — a soothing fake name — that the Reserve Bank of India slapped on computers to avoid alarming unions (a 'ledger' is a book of financial records). Renaming a thing to make it sound less threatening is a classic way to get a controversial change accepted."
- },
- {
-  "k": "cheques",
-  "t": "cheques",
-  "kind": "word",
-  "forms": ["cheques"],
-  "text": "'Cheques' is the British spelling of 'checks' — the paper slips people once used to pay money from a bank account. India's first disguised computers were introduced just to clear cheques, a boring task that made the machines seem harmless."
- },
- {
-  "k": "clerical",
-  "t": "clerical",
-  "kind": "word",
-  "forms": ["clerical", "clerks"],
-  "text": "Clerical work is routine office work — filing, record-keeping, copying figures — done by clerks. The great fear was that computers would 'spell the end of clerical jobs'; in reality the machines mostly changed that work rather than erasing it."
- },
- {
-  "k": "pike",
-  "t": "pike",
-  "kind": "word",
-  "forms": ["pike"],
-  "text": "A pike is an old weapon: a very long wooden pole tipped with a metal spearhead, once carried by foot soldiers. The heading 'With hatchet, pike and gun' evokes the makeshift arsenal of angry workers ready to fight."
- },
- {
-  "k": "powerhouse",
-  "t": "powerhouse",
-  "kind": "word",
-  "forms": ["powerhouse"],
-  "text": "A powerhouse is a person, place, or thing that is exceptionally strong or productive in some area. Despite all the early resistance to computers, India ended up an IT-services powerhouse — a global leader in software and tech support."
- },
- {
-  "k": "power-to-regulate",
-  "t": "power to regulate",
-  "kind": "phrase",
-  "forms": ["power to regulate"],
-  "text": "To regulate something is to control it with official rules, and the 'power to regulate' is the authority — usually a government's — to permit, restrict, or ban an activity. The article's punchline is that technology is really slowed not by furious workers but by whoever holds this power."
- },
- {
-  "k": "elizabeth-i",
-  "t": "Elizabeth I",
-  "kind": "name",
-  "forms": ["Elizabeth I"],
-  "text": "Elizabeth I was Queen of England from 1558 to 1603. According to a much-repeated story, she blocked a patent for the new stocking-frame knitting machine — an early example of a ruler using state power to hold back a technology (though the article warns the evidence is shaky)."
- },
- {
-  "k": "patent",
-  "t": "patent",
-  "kind": "word",
-  "forms": ["patent"],
-  "text": "A patent is a government-granted right that lets an inventor be the only one allowed to make or sell their invention for a set time. By supposedly forbidding a patent, Elizabeth I would have denied the stocking frame the legal protection it needed to spread."
- },
- {
-  "k": "coarse",
-  "t": "coarse",
-  "kind": "word",
-  "forms": ["coarse"],
-  "text": "Coarse means rough and low-quality in texture — the opposite of fine and smooth. One version of the Elizabeth I story says she disliked the machine because it made coarse wool stockings rather than the fine silk ones she preferred."
- },
- {
-  "k": "data-centres",
-  "t": "data centres",
-  "kind": "name",
-  "forms": ["data centres"],
-  "text": "Data centres are giant warehouses packed with computer servers that power the internet and, increasingly, AI. They gulp enormous amounts of electricity, which is why New York put a moratorium on new ones to keep power prices down."
- },
- {
-  "k": "whiff",
-  "t": "whiff",
-  "kind": "word",
-  "forms": ["whiff"],
-  "text": "A whiff literally means a faint trace of a smell, but here it's used figuratively: a slight hint or suggestion of something. The Luddites had 'the whiff of doomed tragedy' — a faint aura of a heroic lost cause — but not the actual power to change the outcome."
- }
+  {
+    "k": "sanguine",
+    "t": "sanguine",
+    "kind": "vocab",
+    "pron": "SANG-gwin",
+    "forms": [
+      "sanguine"
+    ],
+    "text": "Sanguine means cheerfully optimistic, especially when a situation looks worrying. The word is doing heavy lifting here: even economists who are normally sanguine — calm and unbothered about new technology — are alarmed enough by AI to demand governments 'act now,' which tells you how unusual the worry is.",
+    "audio": true
+  },
+  {
+    "k": "destitute",
+    "t": "destitute",
+    "kind": "vocab",
+    "pron": "DES-tih-toot",
+    "forms": [
+      "destitute"
+    ],
+    "text": "Destitute means desperately poor, lacking even the basics of life. The article uses it to bust a myth: the Luddites were NOT a movement of the destitute, as later historians claimed — they were relatively well-off, skilled workers protecting valuable trades.",
+    "audio": true
+  },
+  {
+    "k": "moratorium",
+    "t": "moratorium",
+    "kind": "vocab",
+    "pron": "mor-uh-TOR-ee-um",
+    "forms": [
+      "moratorium"
+    ],
+    "text": "A moratorium is an official, temporary halt to some activity — a pause, not a permanent ban. Here New York state has put a moratorium on new data centres to hold electricity prices down; it's an example of the article's big point that governments, not protesters, are what really slows a technology.",
+    "audio": true
+  },
+  {
+    "k": "luddite",
+    "t": "Luddite",
+    "kind": "name",
+    "forms": [
+      "Luddites",
+      "Luddite"
+    ],
+    "text": "The Luddites were textile workers in early-1800s England who smashed weaving machines they believed were stealing their jobs. Today 'Luddite' is thrown around as an insult for anyone scared of new technology — but the article argues the real Luddites were skilled, thoughtful, and selective, not clueless.",
+    "audio": true
+  },
+  {
+    "k": "loom",
+    "t": "looms",
+    "kind": "word",
+    "forms": [
+      "looms"
+    ],
+    "text": "A loom is a machine (or frame) for weaving thread into cloth. The Luddites broke mechanical looms because these powered machines could do the weaving that skilled workers had trained for years to do by hand.",
+    "audio": true
+  },
+  {
+    "k": "stocking-frame",
+    "t": "stocking frame",
+    "kind": "name",
+    "forms": [
+      "stocking frames",
+      "stocking frame"
+    ],
+    "text": "A stocking frame is an early knitting machine for making stockings and other hosiery. The article notes some of the frames the Luddites smashed weren't even new — the stocking frame had been invented 200 years earlier.",
+    "audio": true
+  },
+  {
+    "k": "champion",
+    "t": "champion",
+    "kind": "word",
+    "forms": [
+      "champion"
+    ],
+    "text": "Here 'champion' doesn't mean a contest winner — it means a defender or fighter for a cause or group. Robin Hood is called a champion of the downtrodden because he stood up for the poor and oppressed.",
+    "audio": true
+  },
+  {
+    "k": "downtrodden",
+    "t": "downtrodden",
+    "kind": "word",
+    "forms": [
+      "downtrodden"
+    ],
+    "text": "The downtrodden are people who are oppressed and badly treated by those with more power — literally 'trodden down.' Legends like Robin Hood and King Ludd were imagined as champions of the downtrodden, standing up for ordinary workers against harsh masters.",
+    "audio": true
+  },
+  {
+    "k": "apprentice",
+    "t": "apprentice",
+    "kind": "word",
+    "forms": [
+      "apprentice",
+      "apprenticeship"
+    ],
+    "text": "An apprentice is someone learning a skilled trade by working under an expert, usually for years. That long apprenticeship is exactly what the Luddites were defending — machines threatened to make their hard-won skills worthless.",
+    "audio": true
+  },
+  {
+    "k": "overbearing",
+    "t": "overbearing",
+    "kind": "word",
+    "forms": [
+      "overbearing"
+    ],
+    "text": "An overbearing person is domineering and bossy — throwing their weight around and ignoring how others feel. The legend imagined King Ludd as an apprentice pushed to smash looms by an overbearing master.",
+    "audio": true
+  },
+  {
+    "k": "mills",
+    "t": "mills",
+    "kind": "word",
+    "forms": [
+      "mills"
+    ],
+    "text": "A mill here is a factory building, especially one full of machines for making cloth. The Luddites would sneak into these textile mills by night to break the machinery inside.",
+    "audio": true
+  },
+  {
+    "k": "slur",
+    "t": "slur",
+    "kind": "word",
+    "forms": [
+      "slur"
+    ],
+    "text": "A slur is an insult — a word used to put someone down. The article's point is that 'Luddite' has decayed into a slur for anyone who resists technology, even though the original Luddites deserved more respect than that.",
+    "audio": true
+  },
+  {
+    "k": "technophobic",
+    "t": "technophobic",
+    "kind": "word",
+    "forms": [
+      "technophobic"
+    ],
+    "text": "Technophobic means fearful of, or hostile to, new technology ('techno-' + '-phobic,' meaning fear). Calling someone technophobic paints them as clinging to the past — the exact stereotype attached to 'Luddite' today.",
+    "audio": true
+  },
+  {
+    "k": "stick-in-the-muds",
+    "t": "stick-in-the-muds",
+    "kind": "phrase",
+    "forms": [
+      "stick-in-the-muds"
+    ],
+    "text": "A stick-in-the-mud is a person who refuses to change or try anything new — imagine someone so stuck they can't move forward. The article lumps the insult in with 'technophobic' to describe how people dismiss the Luddites as backward.",
+    "audio": true
+  },
+  {
+    "k": "whingers",
+    "t": "whingers",
+    "kind": "word",
+    "forms": [
+      "whingers"
+    ],
+    "text": "'Whinger' is British slang for someone who complains and moans constantly (to 'whinge' is to whine). It's used mockingly here for people accused of standing in the way of progress.",
+    "audio": true
+  },
+  {
+    "k": "white-collar",
+    "t": "white-collar",
+    "kind": "phrase",
+    "forms": [
+      "white-collar"
+    ],
+    "text": "White-collar work is office or professional work — think desks, computers, and salaries — as opposed to 'blue-collar' manual labour. The scary twist for today's workers is that AI can now do much white-collar work, threatening jobs once thought safe from automation.",
+    "audio": true
+  },
+  {
+    "k": "artisan",
+    "t": "artisan",
+    "kind": "word",
+    "forms": [
+      "artisan"
+    ],
+    "text": "An artisan is a skilled craftsperson who makes things by hand with real expertise. The artisan weavers of northern England took pride in a craft learned over years — which is why the machines felt like such a threat.",
+    "audio": true
+  },
+  {
+    "k": "automation",
+    "t": "automation",
+    "kind": "word",
+    "forms": [
+      "automation"
+    ],
+    "text": "Automation is getting a machine to do work that people used to do by hand. It sits at the heart of this whole story: from looms to AI, every wave of automation raises the same fear that human jobs will vanish.",
+    "audio": true
+  },
+  {
+    "k": "mechanisation",
+    "t": "mechanisation",
+    "kind": "word",
+    "forms": [
+      "mechanisation"
+    ],
+    "text": "Mechanisation means switching from hand labour to machines — closely related to automation. Historians still argue whether ordinary Britons actually shared in the gains from the mechanisation of the early Industrial Revolution.",
+    "audio": true
+  },
+  {
+    "k": "industrial-revolution",
+    "t": "Industrial Revolution",
+    "kind": "name",
+    "forms": [
+      "Industrial Revolution"
+    ],
+    "text": "The Industrial Revolution was the roughly late-1700s-to-1800s shift when Britain and then the world moved from handmade goods to factory production powered by machines. The Luddites were reacting to its early years, when new machinery was upending centuries-old crafts.",
+    "audio": true
+  },
+  {
+    "k": "patchy",
+    "t": "patchy",
+    "kind": "word",
+    "forms": [
+      "patchy"
+    ],
+    "text": "Patchy means incomplete and uneven — good in some spots, missing in others, like a lawn with bald patches. When the article says the data from the period are patchy, it means historians simply don't have enough solid records to settle the argument.",
+    "audio": true
+  },
+  {
+    "k": "byron",
+    "t": "Lord Byron",
+    "kind": "name",
+    "forms": [
+      "Lord Byron",
+      "Byron"
+    ],
+    "text": "Lord Byron was a famous, flamboyant English Romantic poet of the early 1800s. He sympathised with the Luddites and even wrote a poem defending them — though the article dryly notes he was 'an oddball,' not a mainstream supporter.",
+    "audio": true
+  },
+  {
+    "k": "capital-crime",
+    "t": "capital crime",
+    "kind": "phrase",
+    "forms": [
+      "capital crime"
+    ],
+    "text": "A capital crime is one punishable by death ('capital' from a Latin root for 'head,' as in losing your head). To crush the movement, the state made machine-breaking a capital crime — a brutal sign of how seriously it took the threat.",
+    "audio": true
+  },
+  {
+    "k": "spared-the-noose",
+    "t": "spared the noose",
+    "kind": "phrase",
+    "forms": [
+      "spared the noose"
+    ],
+    "text": "The noose is the loop of rope used for hanging, so to be 'spared the noose' is to escape execution. Luddite ringleaders who were spared the noose weren't set free — they were shipped off to Australia instead.",
+    "audio": true
+  },
+  {
+    "k": "transported",
+    "t": "transported",
+    "kind": "word",
+    "forms": [
+      "transported"
+    ],
+    "text": "Here 'transported' has a historical meaning: to be sent overseas as punishment, exiled to a penal colony. Britain 'transported' many convicts — including Luddite leaders — to Australia in the 1800s.",
+    "audio": true
+  },
+  {
+    "k": "theatricality",
+    "t": "theatricality",
+    "kind": "word",
+    "forms": [
+      "theatricality"
+    ],
+    "text": "Theatricality is dramatic, showy, attention-grabbing behaviour — acting as if for a stage. The Luddites stuck in people's memories, the article argues, more because of their theatricality (like dressing in women's clothes to smash machines) than because of any lasting economic effect.",
+    "audio": true
+  },
+  {
+    "k": "threshing-machines",
+    "t": "threshing machines",
+    "kind": "name",
+    "forms": [
+      "threshing machines"
+    ],
+    "text": "A threshing machine separates grain from the stalks and husks of harvested crops — work farmhands once did slowly by hand. In the 1830s, English farm workers smashed threshing machines for the same reason the Luddites broke looms: the machines were replacing their jobs.",
+    "audio": true
+  },
+  {
+    "k": "repression",
+    "t": "repression",
+    "kind": "word",
+    "forms": [
+      "repression"
+    ],
+    "text": "Repression is the use of force by those in power to crush protest or opposition. Every copycat machine-breaking movement — in Britain, France, and Prussia — met the same harsh repression from the state.",
+    "audio": true
+  },
+  {
+    "k": "vigil",
+    "t": "vigil",
+    "kind": "word",
+    "forms": [
+      "vigil"
+    ],
+    "text": "A vigil is a period of staying awake and watchful, often as a form of protest or devotion. Indian union activists kept a 24-hour vigil outside the office for two years to physically block a computer from being installed.",
+    "audio": true
+  },
+  {
+    "k": "unions",
+    "t": "unions",
+    "kind": "word",
+    "forms": [
+      "unions",
+      "union"
+    ],
+    "text": "A union (labour union) is an organised group of workers who join together to bargain with employers over pay, conditions, and — as here — whether new machines get brought in. India's unions were powerful enough to block computers for years, especially once the government sided with them.",
+    "audio": true
+  },
+  {
+    "k": "lic",
+    "t": "Life Insurance Corporation",
+    "kind": "name",
+    "forms": [
+      "Life Insurance Corporation",
+      "LIC"
+    ],
+    "text": "The Life Insurance Corporation (LIC) is India's giant, state-owned life-insurance company. Its 1965 attempt to install an IBM computer in its offices set off the anti-computer fight the article describes.",
+    "audio": true
+  },
+  {
+    "k": "ibm",
+    "t": "IBM",
+    "kind": "name",
+    "forms": [
+      "IBM"
+    ],
+    "text": "IBM is a huge American technology company, historically the biggest name in early business computers and mainframes. The IBM machine that India's LIC tried to install was exactly the kind of automation unions feared would erase clerical jobs.",
+    "audio": true
+  },
+  {
+    "k": "west-bengal",
+    "t": "West Bengal",
+    "kind": "name",
+    "forms": [
+      "West Bengal"
+    ],
+    "text": "West Bengal is a state in eastern India whose capital is Kolkata (Calcutta). Its Communist-led government backed the workers against the computer — and the article hints this long dominance by communists is partly why the state later 'missed out' on India's tech boom.",
+    "audio": true
+  },
+  {
+    "k": "rajiv-gandhi",
+    "t": "Rajiv Gandhi",
+    "kind": "name",
+    "forms": [
+      "Rajiv Gandhi"
+    ],
+    "text": "Rajiv Gandhi was India's prime minister in the 1980s, taking office as a relatively young leader. Unlike earlier governments, he backed computerisation — a turning point that helped push India toward becoming a technology power.",
+    "audio": true
+  },
+  {
+    "k": "computerisation",
+    "t": "computerisation",
+    "kind": "word",
+    "forms": [
+      "computerisation"
+    ],
+    "text": "Computerisation is the process of bringing computers in to do work previously done by people or on paper. In India it was so politically explosive that officials disguised the machines under harmless-sounding names to sneak them in.",
+    "audio": true
+  },
+  {
+    "k": "advanced-ledger-posting-machines",
+    "t": "advanced ledger posting machines",
+    "kind": "phrase",
+    "forms": [
+      "advanced ledger posting machines"
+    ],
+    "text": "This was a deliberately dull euphemism — a soothing fake name — that the Reserve Bank of India slapped on computers to avoid alarming unions (a 'ledger' is a book of financial records). Renaming a thing to make it sound less threatening is a classic way to get a controversial change accepted.",
+    "audio": true
+  },
+  {
+    "k": "cheques",
+    "t": "cheques",
+    "kind": "word",
+    "forms": [
+      "cheques"
+    ],
+    "text": "'Cheques' is the British spelling of 'checks' — the paper slips people once used to pay money from a bank account. India's first disguised computers were introduced just to clear cheques, a boring task that made the machines seem harmless.",
+    "audio": true
+  },
+  {
+    "k": "clerical",
+    "t": "clerical",
+    "kind": "word",
+    "forms": [
+      "clerical",
+      "clerks"
+    ],
+    "text": "Clerical work is routine office work — filing, record-keeping, copying figures — done by clerks. The great fear was that computers would 'spell the end of clerical jobs'; in reality the machines mostly changed that work rather than erasing it.",
+    "audio": true
+  },
+  {
+    "k": "pike",
+    "t": "pike",
+    "kind": "word",
+    "forms": [
+      "pike"
+    ],
+    "text": "A pike is an old weapon: a very long wooden pole tipped with a metal spearhead, once carried by foot soldiers. The heading 'With hatchet, pike and gun' evokes the makeshift arsenal of angry workers ready to fight.",
+    "audio": true
+  },
+  {
+    "k": "powerhouse",
+    "t": "powerhouse",
+    "kind": "word",
+    "forms": [
+      "powerhouse"
+    ],
+    "text": "A powerhouse is a person, place, or thing that is exceptionally strong or productive in some area. Despite all the early resistance to computers, India ended up an IT-services powerhouse — a global leader in software and tech support.",
+    "audio": true
+  },
+  {
+    "k": "power-to-regulate",
+    "t": "power to regulate",
+    "kind": "phrase",
+    "forms": [
+      "power to regulate"
+    ],
+    "text": "To regulate something is to control it with official rules, and the 'power to regulate' is the authority — usually a government's — to permit, restrict, or ban an activity. The article's punchline is that technology is really slowed not by furious workers but by whoever holds this power.",
+    "audio": true
+  },
+  {
+    "k": "elizabeth-i",
+    "t": "Elizabeth I",
+    "kind": "name",
+    "forms": [
+      "Elizabeth I"
+    ],
+    "text": "Elizabeth I was Queen of England from 1558 to 1603. According to a much-repeated story, she blocked a patent for the new stocking-frame knitting machine — an early example of a ruler using state power to hold back a technology (though the article warns the evidence is shaky).",
+    "audio": true
+  },
+  {
+    "k": "patent",
+    "t": "patent",
+    "kind": "word",
+    "forms": [
+      "patent"
+    ],
+    "text": "A patent is a government-granted right that lets an inventor be the only one allowed to make or sell their invention for a set time. By supposedly forbidding a patent, Elizabeth I would have denied the stocking frame the legal protection it needed to spread.",
+    "audio": true
+  },
+  {
+    "k": "coarse",
+    "t": "coarse",
+    "kind": "word",
+    "forms": [
+      "coarse"
+    ],
+    "text": "Coarse means rough and low-quality in texture — the opposite of fine and smooth. One version of the Elizabeth I story says she disliked the machine because it made coarse wool stockings rather than the fine silk ones she preferred.",
+    "audio": true
+  },
+  {
+    "k": "data-centres",
+    "t": "data centres",
+    "kind": "name",
+    "forms": [
+      "data centres"
+    ],
+    "text": "Data centres are giant warehouses packed with computer servers that power the internet and, increasingly, AI. They gulp enormous amounts of electricity, which is why New York put a moratorium on new ones to keep power prices down.",
+    "audio": true
+  },
+  {
+    "k": "whiff",
+    "t": "whiff",
+    "kind": "word",
+    "forms": [
+      "whiff"
+    ],
+    "text": "A whiff literally means a faint trace of a smell, but here it's used figuratively: a slight hint or suggestion of something. The Luddites had 'the whiff of doomed tragedy' — a faint aura of a heroic lost cause — but not the actual power to change the outcome.",
+    "audio": true
+  }
 ]

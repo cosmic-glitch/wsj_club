@@ -1,356 +1,394 @@
 [
- {
-  "k": "exposed",
-  "t": "exposed",
-  "kind": "vocab",
-  "pron": "ik-SPOHZD",
-  "forms": [
-   "exposed"
-  ],
-  "text": "In finance, your exposure to something is how much of your money stands to gain or lose from it — how much you have riding on it, the way you're exposed to freezing wind with no jacket. The headline's point: if you own one of these index funds, you now indirectly own a piece of SpaceX, so your money rises and falls with its stock whether you chose that or not."
- },
- {
-  "k": "undercut",
-  "t": "undercut",
-  "kind": "vocab",
-  "pron": "UN-dur-kut",
-  "forms": [
-   "undercutting"
-  ],
-  "text": "To undercut a competitor is to offer the same thing at a lower price to steal their customers — the new bubble-tea shop selling the same drinks for a dollar less. State Street's new fund charges 0.1% a year, undercutting QQQ's 0.18% for an essentially identical product. (The word can also mean quietly weakening something, like undercutting someone's authority.)"
- },
- {
-  "k": "flagship",
-  "t": "flagship",
-  "kind": "vocab",
-  "pron": "FLAG-ship",
-  "forms": [
-   "flagship"
-  ],
-  "text": "A flagship was originally the lead ship of a navy fleet — the one carrying the admiral and flying his flag. Now it means the best-known, most important thing in a group: a flagship store, a flagship phone. The Nasdaq-100 is Nasdaq's flagship tech index, the one that represents it to the world."
- },
- {
-  "k": "nasdaq-100",
-  "t": "Nasdaq-100",
-  "kind": "name",
-  "forms": [
-   "Nasdaq-100",
-   "Nasdaq"
-  ],
-  "text": "Nasdaq is a big American stock exchange, famous as the home of tech companies; the Nasdaq-100 is its star index — one number tracking about 100 of its largest companies, Apple and Microsoft and Nvidia among them. Joining it is the event this whole article is about."
- },
- {
-  "k": "mutual-etf",
-  "t": "mutual and exchange-traded funds",
-  "kind": "phrase",
-  "forms": [
-   "Mutual and exchange-traded funds",
-   "ETF"
-  ],
-  "text": "A fund pools many people's money to buy a basket of stocks, so each investor owns a slice of the whole basket. Mutual funds and exchange-traded funds (ETFs) are the two main kinds — an ETF's special trick is that the fund itself trades on the stock exchange like a single stock, so you can buy the whole basket with one click."
- },
- {
-  "k": "collective",
-  "t": "collective",
-  "kind": "word",
-  "forms": [
-   "collective"
-  ],
-  "text": "Collective means combined — added up across the whole group. “A collective $800 billion” is the total of all these funds' money together; no single fund holds that much."
- },
- {
-  "k": "assets-under-management",
-  "t": "assets under management",
-  "kind": "phrase",
-  "forms": [
-   "assets under management"
-  ],
-  "text": "Assets are things of value — here, the stocks and cash a fund holds; assets under management is the total pile of customers' money a fund is in charge of. It's the standard measure of how big a fund is, and $800 billion worth of it is about to be forced to buy SpaceX."
- },
- {
-  "k": "track",
-  "t": "track",
-  "kind": "word",
-  "forms": [
-   "track",
-   "tracking"
-  ],
-  "text": "A fund that “tracks” an index follows it like a shadow — it copies the index's holdings so its value moves in lockstep, the way you'd track someone by matching their every step. Tracking is the whole job: no opinions, no stock-picking, just copy the index exactly."
- },
- {
-  "k": "qqq",
-  "t": "QQQ",
-  "kind": "name",
-  "forms": [
-   "QQQ"
-  ],
-  "text": "The ticker symbol of Invesco's giant Nasdaq-100-tracking ETF — with roughly half a trillion dollars in it, the fifth-largest ETF anywhere and a favorite of individual investors. (Every listed fund and stock gets a short ticker code like this; SpaceX's is another string of letters.) Famous, but no longer the cheapest way to own the index."
- },
- {
-  "k": "closing-price",
-  "t": "closing price",
-  "kind": "phrase",
-  "forms": [
-   "closing price"
-  ],
-  "text": "The stock market opens and closes at set hours each day, and the closing price is where a stock stands when the bell rings at day's end — the day's official final number. The index funds will all buy SpaceX at Monday's closing price so they start Tuesday perfectly matched to the index."
- },
- {
-  "k": "mirror",
-  "t": "mirror",
-  "kind": "word",
-  "forms": [
-   "mirror"
-  ],
-  "text": "As a verb, to mirror something is to copy it exactly, the way your reflection copies your every move. These funds exist to mirror the index's performance — if the Nasdaq-100 rises 2%, they must rise 2% too, which is why they have no choice about buying SpaceX."
- },
- {
-  "k": "fast-tracked",
-  "t": "fast-tracked",
-  "kind": "phrase",
-  "forms": [
-   "fast-tracked"
-  ],
-  "text": "To fast-track something is to rush it through ahead of the normal schedule — putting it on the express lane. SpaceX was fast-tracked into the index under new rules that let huge newly public companies skip the usual waiting period."
- },
- {
-  "k": "newly-public",
-  "t": "newly public",
-  "kind": "phrase",
-  "forms": [
-   "newly public"
-  ],
-  "text": "A “public” company is one whose shares anyone can buy on the stock market; going public is the moment a private company first sells shares to everyone. SpaceX only just did — which matters later in the story, because a newly public company's insiders can't sell their shares yet."
- },
- {
-  "k": "megacap",
-  "t": "megacap",
-  "kind": "word",
-  "forms": [
-   "megacap"
-  ],
-  "text": "Cap is short for market capitalization — a company's total stock-market value — and Wall Street sorts companies by it: small-cap, mid-cap, large-cap. Megacap is the top shelf, the trillion-dollar giants. At $2.1 trillion, SpaceX walked in the door already one of them."
- },
- {
-  "k": "component",
-  "t": "component",
-  "kind": "word",
-  "forms": [
-   "component",
-   "components"
-  ],
-  "text": "A component is one part of a larger whole — here, one of the companies inside an index, the way a player is a component of a team. The surprise of the article: the most valuable newcomer imaginable enters as a small component, not a top one."
- },
- {
-  "k": "market-cap",
-  "t": "market cap",
-  "kind": "phrase",
-  "forms": [
-   "market cap",
-   "market capitalization"
-  ],
-  "text": "Market capitalization — “market cap” — is a company's total value on paper: the number of shares it has, times the price of one share. It's the standard measure of how big a company is, and SpaceX's $2.1 trillion makes it one of the biggest in America. But keep reading: value on paper and shares you can actually buy turn out to be very different things."
- },
- {
-  "k": "cap-weighted",
-  "t": "cap-weighted",
-  "kind": "phrase",
-  "forms": [
-   "cap-weighted"
-  ],
-  "text": "In a cap-weighted index, each company counts in proportion to its market cap — a $2 trillion company pulls on the index number forty times harder than a $50 billion one. It's not a simple average; the giants dominate it, which is why who gets what weight is the entire game."
- },
- {
-  "k": "public-offering",
-  "t": "public offering",
-  "kind": "phrase",
-  "forms": [
-   "public offering"
-  ],
-  "text": "A public offering is when a company sells its shares to the general public for the first time — the famous version is the IPO, initial public offering. SpaceX's twist: it offered less than 5% of its shares, keeping the other 95% off the market — the fact the rest of the article hangs on."
- },
- {
-  "k": "lockup",
-  "t": "lockup",
-  "kind": "word",
-  "forms": [
-   "lockup"
-  ],
-  "text": "Lockup rules bar a newly public company's employees and insiders from selling their shares for a set stretch of months after the debut — their stock is locked in a box they can't open yet. The rule prevents a day-one flood of insider selling; when SpaceX's lockups expire over the next year, that held-back selling finally arrives."
- },
- {
-  "k": "circulating",
-  "t": "circulating",
-  "kind": "word",
-  "forms": [
-   "circulating"
-  ],
-  "text": "Circulating means moving around in public use, the way money circulates from hand to hand. Shares “circulating publicly” are the ones actually out there being traded — and for SpaceX right now, that's only a small fraction of all the shares that exist."
- },
- {
-  "k": "free-float",
-  "t": "free-float",
-  "kind": "phrase",
-  "forms": [
-   "free-float",
-   "float-adjusted",
-   "float"
-  ],
-  "text": "A company's free-float is the portion of its shares actually free to trade — floating in the open market rather than locked up by founders, employees, and early investors. The Nasdaq weights companies by float, not full value: since almost all of SpaceX is locked away, the index treats a $2.1 trillion company like a $300 billion one, keeping its starting weight under 1%."
- },
- {
-  "k": "capping",
-  "t": "capping",
-  "kind": "word",
-  "forms": [
-   "capping"
-  ],
-  "text": "To cap something is to put a lid on it — set a maximum it can't exceed, like a salary cap in sports. The index caps SpaceX's weight at three times its float-adjusted value, one more brake making sure funds aren't ordered to buy more shares than actually exist to buy."
- },
- {
-  "k": "weight",
-  "t": "weight",
-  "kind": "word",
-  "forms": [
-   "weight",
-   "weights"
-  ],
-  "text": "A company's weight in an index is its share of the total — how much of the index number it accounts for, like how much one test counts toward your final grade. SpaceX's initial weight is under 1%: for every $100 in a Nasdaq-100 fund, less than $1 goes into SpaceX."
- },
- {
-  "k": "state-street",
-  "t": "State Street",
-  "kind": "name",
-  "forms": [
-   "State Street"
-  ],
-  "text": "One of the world's biggest asset-management companies — as is BlackRock, mentioned right after. These giants compete by shaving fees ever thinner: State Street's new Nasdaq-100 fund costs $10 a year per $10,000 invested, cheaper than the famous QQQ."
- },
- {
-  "k": "index-providers",
-  "t": "index providers",
-  "kind": "phrase",
-  "forms": [
-   "index providers"
-  ],
-  "text": "The companies that build and run the indexes themselves — deciding the rules for who gets in and at what weight. A telling detail: SpaceX's advisers went to them asking for early inclusion, because the company understood exactly what joining an index is worth."
- },
- {
-  "k": "inclusion",
-  "t": "inclusion",
-  "kind": "word",
-  "forms": [
-   "inclusion"
-  ],
-  "text": "Inclusion just means being included — but “index inclusion” is an event stocks lobby for. The moment a stock enters a big index, every fund tracking that index must buy it automatically, creating built-in demand no marketing campaign could match."
- },
- {
-  "k": "parked",
-  "t": "parked",
-  "kind": "word",
-  "forms": [
-   "parked"
-  ],
-  "text": "Money “parked” somewhere is sitting there long-term, like a car left in a garage — invested and left alone, not actively moved around. Trillions of dollars are parked in index funds, and all of it buys whatever the index says, automatically."
- },
- {
-  "k": "passive",
-  "t": "passive",
-  "kind": "word",
-  "forms": [
-   "passive"
-  ],
-  "text": "Passive investing means copying an index and leaving it alone, rather than paying a manager to actively pick winning stocks. It sounds lazy but usually wins: most active stock-pickers fail to beat the index once you subtract their fees — which is why so many trillions have gone passive, and why index membership now moves markets."
- },
- {
-  "k": "net-inflow",
-  "t": "net inflow",
-  "kind": "phrase",
-  "forms": [
-   "net inflow",
-   "net outflows"
-  ],
-  "text": "“Net” means after subtracting the opposite direction: a fund's net inflow is money coming in minus money going out. QQQM's $16 billion net inflow this year forced it to buy billions of dollars of the stocks it tracks; net outflows would force the reverse — selling."
- },
- {
-  "k": "equity",
-  "t": "equity",
-  "kind": "word",
-  "forms": [
-   "equity"
-  ],
-  "text": "On Wall Street, equity means stocks — ownership shares in companies (because a share is a slice of ownership, and “equity” is an old word for an ownership stake). “U.S. equity ETFs” are simply funds that hold American stocks. Nothing to do with equity meaning fairness."
- },
- {
-  "k": "posting",
-  "t": "posting",
-  "kind": "word",
-  "forms": [
-   "posting"
-  ],
-  "text": "In business news, to post a number is to record or report it — “posting net inflow records” means officially chalking up record-breaking inflows. It's ledger language, not mailing a letter or posting online."
- },
- {
-  "k": "absorb",
-  "t": "absorb",
-  "kind": "word",
-  "forms": [
-   "absorb"
-  ],
-  "text": "To absorb something is to soak it up the way a sponge absorbs water. When employees' lockups end and they sell, index funds' steady buying will absorb some of that flood of shares — soaking up supply that would otherwise push the price down."
- },
- {
-  "k": "cash-out",
-  "t": "cash out",
-  "kind": "phrase",
-  "forms": [
-   "cash out"
-  ],
-  "text": "To cash out is to sell your investment and turn it into actual money — like trading in your chips at the end of a casino night. Many SpaceX employees, rich on paper, are waiting for their lockups to end so they can finally cash out."
- },
- {
-  "k": "phenomenon",
-  "t": "phenomenon",
-  "kind": "word",
-  "forms": [
-   "phenomenon"
-  ],
-  "text": "A phenomenon is an observable happening — a pattern that occurs, whether or not anyone fully understands it. The phenomenon here: waves of post-lockup employee selling have dragged down newly public stocks before, famously including Facebook."
- },
- {
-  "k": "weighed-on",
-  "t": "weighed on",
-  "kind": "phrase",
-  "forms": [
-   "weighed on"
-  ],
-  "text": "Something that weighs on a stock drags its price down, like a heavy load pressing on it (people say worries “weigh on” you the same way). Employee selling after lockups has weighed on shares of newly public companies in the past — the warning buried in this article's cheerful setup."
- },
- {
-  "k": "keeping-a-lid-on",
-  "t": "keeping a lid on",
-  "kind": "phrase",
-  "forms": [
-   "keeping a lid on"
-  ],
-  "text": "To keep a lid on something is to hold it down and stop it boiling over, like a lid on a pot. The float adjustments are keeping a lid on how much SpaceX these funds must buy — the index's rules deliberately hold the buying to a simmer."
- },
- {
-  "k": "sp-500",
-  "t": "S&P 500",
-  "kind": "name",
-  "forms": [
-   "S&P 500"
-  ],
-  "text": "The other famous index — 500 large U.S. companies spanning the whole economy, not just tech — and the most widely tracked index in the world. SpaceX won't be eligible for it for at least a year, so the truly enormous wave of automatic buying is still ahead."
- },
- {
-  "k": "drivers",
-  "t": "drivers",
-  "kind": "word",
-  "forms": [
-   "drivers"
-  ],
-  "text": "A driver here is a force that pushes something forward — whatever makes a number move, not a person behind a wheel. The article's sober closing point: index inclusion helps early, but the real drivers of long-term performance are the company's actual results and genuine investor demand."
- }
+  {
+    "k": "exposed",
+    "t": "exposed",
+    "kind": "vocab",
+    "pron": "ik-SPOHZD",
+    "forms": [
+      "exposed"
+    ],
+    "text": "In finance, your exposure to something is how much of your money stands to gain or lose from it — how much you have riding on it, the way you're exposed to freezing wind with no jacket. The headline's point: if you own one of these index funds, you now indirectly own a piece of SpaceX, so your money rises and falls with its stock whether you chose that or not.",
+    "audio": true
+  },
+  {
+    "k": "undercut",
+    "t": "undercut",
+    "kind": "vocab",
+    "pron": "UN-dur-kut",
+    "forms": [
+      "undercutting"
+    ],
+    "text": "To undercut a competitor is to offer the same thing at a lower price to steal their customers — the new bubble-tea shop selling the same drinks for a dollar less. State Street's new fund charges 0.1% a year, undercutting QQQ's 0.18% for an essentially identical product. (The word can also mean quietly weakening something, like undercutting someone's authority.)",
+    "audio": true
+  },
+  {
+    "k": "flagship",
+    "t": "flagship",
+    "kind": "vocab",
+    "pron": "FLAG-ship",
+    "forms": [
+      "flagship"
+    ],
+    "text": "A flagship was originally the lead ship of a navy fleet — the one carrying the admiral and flying his flag. Now it means the best-known, most important thing in a group: a flagship store, a flagship phone. The Nasdaq-100 is Nasdaq's flagship tech index, the one that represents it to the world.",
+    "audio": true
+  },
+  {
+    "k": "nasdaq-100",
+    "t": "Nasdaq-100",
+    "kind": "name",
+    "forms": [
+      "Nasdaq-100",
+      "Nasdaq"
+    ],
+    "text": "Nasdaq is a big American stock exchange, famous as the home of tech companies; the Nasdaq-100 is its star index — one number tracking about 100 of its largest companies, Apple and Microsoft and Nvidia among them. Joining it is the event this whole article is about.",
+    "audio": true
+  },
+  {
+    "k": "mutual-etf",
+    "t": "mutual and exchange-traded funds",
+    "kind": "phrase",
+    "forms": [
+      "Mutual and exchange-traded funds",
+      "ETF"
+    ],
+    "text": "A fund pools many people's money to buy a basket of stocks, so each investor owns a slice of the whole basket. Mutual funds and exchange-traded funds (ETFs) are the two main kinds — an ETF's special trick is that the fund itself trades on the stock exchange like a single stock, so you can buy the whole basket with one click.",
+    "audio": true
+  },
+  {
+    "k": "collective",
+    "t": "collective",
+    "kind": "word",
+    "forms": [
+      "collective"
+    ],
+    "text": "Collective means combined — added up across the whole group. “A collective $800 billion” is the total of all these funds' money together; no single fund holds that much.",
+    "audio": true
+  },
+  {
+    "k": "assets-under-management",
+    "t": "assets under management",
+    "kind": "phrase",
+    "forms": [
+      "assets under management"
+    ],
+    "text": "Assets are things of value — here, the stocks and cash a fund holds; assets under management is the total pile of customers' money a fund is in charge of. It's the standard measure of how big a fund is, and $800 billion worth of it is about to be forced to buy SpaceX.",
+    "audio": true
+  },
+  {
+    "k": "track",
+    "t": "track",
+    "kind": "word",
+    "forms": [
+      "track",
+      "tracking"
+    ],
+    "text": "A fund that “tracks” an index follows it like a shadow — it copies the index's holdings so its value moves in lockstep, the way you'd track someone by matching their every step. Tracking is the whole job: no opinions, no stock-picking, just copy the index exactly.",
+    "audio": true
+  },
+  {
+    "k": "qqq",
+    "t": "QQQ",
+    "kind": "name",
+    "forms": [
+      "QQQ"
+    ],
+    "text": "The ticker symbol of Invesco's giant Nasdaq-100-tracking ETF — with roughly half a trillion dollars in it, the fifth-largest ETF anywhere and a favorite of individual investors. (Every listed fund and stock gets a short ticker code like this; SpaceX's is another string of letters.) Famous, but no longer the cheapest way to own the index.",
+    "audio": true
+  },
+  {
+    "k": "closing-price",
+    "t": "closing price",
+    "kind": "phrase",
+    "forms": [
+      "closing price"
+    ],
+    "text": "The stock market opens and closes at set hours each day, and the closing price is where a stock stands when the bell rings at day's end — the day's official final number. The index funds will all buy SpaceX at Monday's closing price so they start Tuesday perfectly matched to the index.",
+    "audio": true
+  },
+  {
+    "k": "mirror",
+    "t": "mirror",
+    "kind": "word",
+    "forms": [
+      "mirror"
+    ],
+    "text": "As a verb, to mirror something is to copy it exactly, the way your reflection copies your every move. These funds exist to mirror the index's performance — if the Nasdaq-100 rises 2%, they must rise 2% too, which is why they have no choice about buying SpaceX.",
+    "audio": true
+  },
+  {
+    "k": "fast-tracked",
+    "t": "fast-tracked",
+    "kind": "phrase",
+    "forms": [
+      "fast-tracked"
+    ],
+    "text": "To fast-track something is to rush it through ahead of the normal schedule — putting it on the express lane. SpaceX was fast-tracked into the index under new rules that let huge newly public companies skip the usual waiting period.",
+    "audio": true
+  },
+  {
+    "k": "newly-public",
+    "t": "newly public",
+    "kind": "phrase",
+    "forms": [
+      "newly public"
+    ],
+    "text": "A “public” company is one whose shares anyone can buy on the stock market; going public is the moment a private company first sells shares to everyone. SpaceX only just did — which matters later in the story, because a newly public company's insiders can't sell their shares yet.",
+    "audio": true
+  },
+  {
+    "k": "megacap",
+    "t": "megacap",
+    "kind": "word",
+    "forms": [
+      "megacap"
+    ],
+    "text": "Cap is short for market capitalization — a company's total stock-market value — and Wall Street sorts companies by it: small-cap, mid-cap, large-cap. Megacap is the top shelf, the trillion-dollar giants. At $2.1 trillion, SpaceX walked in the door already one of them.",
+    "audio": true
+  },
+  {
+    "k": "component",
+    "t": "component",
+    "kind": "word",
+    "forms": [
+      "component",
+      "components"
+    ],
+    "text": "A component is one part of a larger whole — here, one of the companies inside an index, the way a player is a component of a team. The surprise of the article: the most valuable newcomer imaginable enters as a small component, not a top one.",
+    "audio": true
+  },
+  {
+    "k": "market-cap",
+    "t": "market cap",
+    "kind": "phrase",
+    "forms": [
+      "market cap",
+      "market capitalization"
+    ],
+    "text": "Market capitalization — “market cap” — is a company's total value on paper: the number of shares it has, times the price of one share. It's the standard measure of how big a company is, and SpaceX's $2.1 trillion makes it one of the biggest in America. But keep reading: value on paper and shares you can actually buy turn out to be very different things.",
+    "audio": true
+  },
+  {
+    "k": "cap-weighted",
+    "t": "cap-weighted",
+    "kind": "phrase",
+    "forms": [
+      "cap-weighted"
+    ],
+    "text": "In a cap-weighted index, each company counts in proportion to its market cap — a $2 trillion company pulls on the index number forty times harder than a $50 billion one. It's not a simple average; the giants dominate it, which is why who gets what weight is the entire game.",
+    "audio": true
+  },
+  {
+    "k": "public-offering",
+    "t": "public offering",
+    "kind": "phrase",
+    "forms": [
+      "public offering"
+    ],
+    "text": "A public offering is when a company sells its shares to the general public for the first time — the famous version is the IPO, initial public offering. SpaceX's twist: it offered less than 5% of its shares, keeping the other 95% off the market — the fact the rest of the article hangs on.",
+    "audio": true
+  },
+  {
+    "k": "lockup",
+    "t": "lockup",
+    "kind": "word",
+    "forms": [
+      "lockup"
+    ],
+    "text": "Lockup rules bar a newly public company's employees and insiders from selling their shares for a set stretch of months after the debut — their stock is locked in a box they can't open yet. The rule prevents a day-one flood of insider selling; when SpaceX's lockups expire over the next year, that held-back selling finally arrives.",
+    "audio": true
+  },
+  {
+    "k": "circulating",
+    "t": "circulating",
+    "kind": "word",
+    "forms": [
+      "circulating"
+    ],
+    "text": "Circulating means moving around in public use, the way money circulates from hand to hand. Shares “circulating publicly” are the ones actually out there being traded — and for SpaceX right now, that's only a small fraction of all the shares that exist.",
+    "audio": true
+  },
+  {
+    "k": "free-float",
+    "t": "free-float",
+    "kind": "phrase",
+    "forms": [
+      "free-float",
+      "float-adjusted",
+      "float"
+    ],
+    "text": "A company's free-float is the portion of its shares actually free to trade — floating in the open market rather than locked up by founders, employees, and early investors. The Nasdaq weights companies by float, not full value: since almost all of SpaceX is locked away, the index treats a $2.1 trillion company like a $300 billion one, keeping its starting weight under 1%.",
+    "audio": true
+  },
+  {
+    "k": "capping",
+    "t": "capping",
+    "kind": "word",
+    "forms": [
+      "capping"
+    ],
+    "text": "To cap something is to put a lid on it — set a maximum it can't exceed, like a salary cap in sports. The index caps SpaceX's weight at three times its float-adjusted value, one more brake making sure funds aren't ordered to buy more shares than actually exist to buy.",
+    "audio": true
+  },
+  {
+    "k": "weight",
+    "t": "weight",
+    "kind": "word",
+    "forms": [
+      "weight",
+      "weights"
+    ],
+    "text": "A company's weight in an index is its share of the total — how much of the index number it accounts for, like how much one test counts toward your final grade. SpaceX's initial weight is under 1%: for every $100 in a Nasdaq-100 fund, less than $1 goes into SpaceX.",
+    "audio": true
+  },
+  {
+    "k": "state-street",
+    "t": "State Street",
+    "kind": "name",
+    "forms": [
+      "State Street"
+    ],
+    "text": "One of the world's biggest asset-management companies — as is BlackRock, mentioned right after. These giants compete by shaving fees ever thinner: State Street's new Nasdaq-100 fund costs $10 a year per $10,000 invested, cheaper than the famous QQQ.",
+    "audio": true
+  },
+  {
+    "k": "index-providers",
+    "t": "index providers",
+    "kind": "phrase",
+    "forms": [
+      "index providers"
+    ],
+    "text": "The companies that build and run the indexes themselves — deciding the rules for who gets in and at what weight. A telling detail: SpaceX's advisers went to them asking for early inclusion, because the company understood exactly what joining an index is worth.",
+    "audio": true
+  },
+  {
+    "k": "inclusion",
+    "t": "inclusion",
+    "kind": "word",
+    "forms": [
+      "inclusion"
+    ],
+    "text": "Inclusion just means being included — but “index inclusion” is an event stocks lobby for. The moment a stock enters a big index, every fund tracking that index must buy it automatically, creating built-in demand no marketing campaign could match.",
+    "audio": true
+  },
+  {
+    "k": "parked",
+    "t": "parked",
+    "kind": "word",
+    "forms": [
+      "parked"
+    ],
+    "text": "Money “parked” somewhere is sitting there long-term, like a car left in a garage — invested and left alone, not actively moved around. Trillions of dollars are parked in index funds, and all of it buys whatever the index says, automatically.",
+    "audio": true
+  },
+  {
+    "k": "passive",
+    "t": "passive",
+    "kind": "word",
+    "forms": [
+      "passive"
+    ],
+    "text": "Passive investing means copying an index and leaving it alone, rather than paying a manager to actively pick winning stocks. It sounds lazy but usually wins: most active stock-pickers fail to beat the index once you subtract their fees — which is why so many trillions have gone passive, and why index membership now moves markets.",
+    "audio": true
+  },
+  {
+    "k": "net-inflow",
+    "t": "net inflow",
+    "kind": "phrase",
+    "forms": [
+      "net inflow",
+      "net outflows"
+    ],
+    "text": "“Net” means after subtracting the opposite direction: a fund's net inflow is money coming in minus money going out. QQQM's $16 billion net inflow this year forced it to buy billions of dollars of the stocks it tracks; net outflows would force the reverse — selling.",
+    "audio": true
+  },
+  {
+    "k": "equity",
+    "t": "equity",
+    "kind": "word",
+    "forms": [
+      "equity"
+    ],
+    "text": "On Wall Street, equity means stocks — ownership shares in companies (because a share is a slice of ownership, and “equity” is an old word for an ownership stake). “U.S. equity ETFs” are simply funds that hold American stocks. Nothing to do with equity meaning fairness.",
+    "audio": true
+  },
+  {
+    "k": "posting",
+    "t": "posting",
+    "kind": "word",
+    "forms": [
+      "posting"
+    ],
+    "text": "In business news, to post a number is to record or report it — “posting net inflow records” means officially chalking up record-breaking inflows. It's ledger language, not mailing a letter or posting online.",
+    "audio": true
+  },
+  {
+    "k": "absorb",
+    "t": "absorb",
+    "kind": "word",
+    "forms": [
+      "absorb"
+    ],
+    "text": "To absorb something is to soak it up the way a sponge absorbs water. When employees' lockups end and they sell, index funds' steady buying will absorb some of that flood of shares — soaking up supply that would otherwise push the price down.",
+    "audio": true
+  },
+  {
+    "k": "cash-out",
+    "t": "cash out",
+    "kind": "phrase",
+    "forms": [
+      "cash out"
+    ],
+    "text": "To cash out is to sell your investment and turn it into actual money — like trading in your chips at the end of a casino night. Many SpaceX employees, rich on paper, are waiting for their lockups to end so they can finally cash out.",
+    "audio": true
+  },
+  {
+    "k": "phenomenon",
+    "t": "phenomenon",
+    "kind": "word",
+    "forms": [
+      "phenomenon"
+    ],
+    "text": "A phenomenon is an observable happening — a pattern that occurs, whether or not anyone fully understands it. The phenomenon here: waves of post-lockup employee selling have dragged down newly public stocks before, famously including Facebook.",
+    "audio": true
+  },
+  {
+    "k": "weighed-on",
+    "t": "weighed on",
+    "kind": "phrase",
+    "forms": [
+      "weighed on"
+    ],
+    "text": "Something that weighs on a stock drags its price down, like a heavy load pressing on it (people say worries “weigh on” you the same way). Employee selling after lockups has weighed on shares of newly public companies in the past — the warning buried in this article's cheerful setup.",
+    "audio": true
+  },
+  {
+    "k": "keeping-a-lid-on",
+    "t": "keeping a lid on",
+    "kind": "phrase",
+    "forms": [
+      "keeping a lid on"
+    ],
+    "text": "To keep a lid on something is to hold it down and stop it boiling over, like a lid on a pot. The float adjustments are keeping a lid on how much SpaceX these funds must buy — the index's rules deliberately hold the buying to a simmer.",
+    "audio": true
+  },
+  {
+    "k": "sp-500",
+    "t": "S&P 500",
+    "kind": "name",
+    "forms": [
+      "S&P 500"
+    ],
+    "text": "The other famous index — 500 large U.S. companies spanning the whole economy, not just tech — and the most widely tracked index in the world. SpaceX won't be eligible for it for at least a year, so the truly enormous wave of automatic buying is still ahead.",
+    "audio": true
+  },
+  {
+    "k": "drivers",
+    "t": "drivers",
+    "kind": "word",
+    "forms": [
+      "drivers"
+    ],
+    "text": "A driver here is a force that pushes something forward — whatever makes a number move, not a person behind a wheel. The article's sober closing point: index inclusion helps early, but the real drivers of long-term performance are the company's actual results and genuine investor demand.",
+    "audio": true
+  }
 ]

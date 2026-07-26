@@ -4,318 +4,458 @@
     "t": "extraneous",
     "kind": "vocab",
     "pron": "ek-STRAY-nee-us",
-    "forms": ["extraneous"],
-    "text": "Extraneous means coming from outside and having nothing to do with the real matter at hand — the stuff that shouldn't count but does. Graham's point is that most judgements of you are \"greatly influenced by random, extraneous factors\": what mood the reader was in, what they read just before yours, how many spots were left. None of that is about you, which is exactly why taking rejection personally is a mistake."
+    "forms": [
+      "extraneous"
+    ],
+    "text": "Extraneous means coming from outside and having nothing to do with the real matter at hand — the stuff that shouldn't count but does. Graham's point is that most judgements of you are \"greatly influenced by random, extraneous factors\": what mood the reader was in, what they read just before yours, how many spots were left. None of that is about you, which is exactly why taking rejection personally is a mistake.",
+    "audio": true
   },
   {
     "k": "fickle",
     "t": "fickle",
     "kind": "vocab",
     "pron": "FIK-ul",
-    "forms": ["fickle"],
-    "text": "Someone fickle changes their mind often and for no solid reason — loyal to one thing on Monday and something else by Friday. The whole essay turns on this word: the person judging you is \"more like a fickle novel buyer than a wise and perceptive magistrate.\" Not a careful judge weighing you properly, but a shopper who might pick up a different book tomorrow."
+    "forms": [
+      "fickle"
+    ],
+    "text": "Someone fickle changes their mind often and for no solid reason — loyal to one thing on Monday and something else by Friday. The whole essay turns on this word: the person judging you is \"more like a fickle novel buyer than a wise and perceptive magistrate.\" Not a careful judge weighing you properly, but a shopper who might pick up a different book tomorrow.",
+    "audio": true
   },
   {
     "k": "optimal",
     "t": "optimal",
     "kind": "vocab",
     "pron": "OP-tuh-mul",
-    "forms": ["optimal", "optimally"],
-    "text": "Optimal means the best available given the limits you're working under — not perfect, just the best you can actually do. That distinction carries Graham's argument: the selector's job was never to rate you accurately, it was \"selecting a reasonably optimal set.\" If swapping the 20th player for the 21st still gives you a good team, the selector has done the job optimally even though they got you wrong."
+    "forms": [
+      "optimal",
+      "optimally"
+    ],
+    "text": "Optimal means the best available given the limits you're working under — not perfect, just the best you can actually do. That distinction carries Graham's argument: the selector's job was never to rate you accurately, it was \"selecting a reasonably optimal set.\" If swapping the 20th player for the 21st still gives you a good team, the selector has done the job optimally even though they got you wrong.",
+    "audio": true
   },
-
   {
     "k": "judgement",
     "t": "judgement",
     "kind": "word",
-    "forms": ["judgement", "judgements"],
-    "text": "A judgement is a decision or opinion someone forms about you after weighing things up. (Graham uses the British spelling; Americans usually write \"judgment.\") The essay's claim is that we lump all of them together when there are really two very different kinds, and confusing them is what makes rejection sting more than it should."
+    "forms": [
+      "judgement",
+      "judgements"
+    ],
+    "text": "A judgement is a decision or opinion someone forms about you after weighing things up. (Graham uses the British spelling; Americans usually write \"judgment.\") The essay's claim is that we lump all of them together when there are really two very different kinds, and confusing them is what makes rejection sting more than it should.",
+    "audio": true
   },
   {
     "k": "end-goal",
     "t": "end goal",
     "kind": "phrase",
-    "forms": ["end goal"],
-    "text": "Your end goal is the thing you're actually trying to reach, as opposed to a step along the way. It's the hinge of the whole essay: when judging you is the end goal (a court case, a grade), accuracy matters and there's an appeals process. When it's only a step toward something else (picking a team), accuracy about you was never the point."
+    "forms": [
+      "end goal"
+    ],
+    "text": "Your end goal is the thing you're actually trying to reach, as opposed to a step along the way. It's the hinge of the whole essay: when judging you is the end goal (a court case, a grade), accuracy matters and there's an appeals process. When it's only a step toward something else (picking a team), accuracy about you was never the point.",
+    "audio": true
   },
   {
     "k": "regard",
     "t": "regard",
     "kind": "word",
-    "forms": ["regard"],
-    "text": "Here \"regard\" doesn't mean respect or admiration — it means to consider or think of something as a certain way. \"We tend to regard all judgements of us as the first type\" means we treat them all as verdicts. Later Graham flips it: if you regard the person judging you as a customer instead of a judge, your expectation of fairness quietly disappears."
+    "forms": [
+      "regard"
+    ],
+    "text": "Here \"regard\" doesn't mean respect or admiration — it means to consider or think of something as a certain way. \"We tend to regard all judgements of us as the first type\" means we treat them all as verdicts. Later Graham flips it: if you regard the person judging you as a customer instead of a judge, your expectation of fairness quietly disappears.",
+    "audio": true
   },
   {
     "k": "court-cases",
     "t": "court cases",
     "kind": "phrase",
-    "forms": ["court cases"],
-    "text": "A court case is a legal dispute decided by a judge or jury. Graham lists it first among judgements where getting you right is the entire purpose — which is why courts have appeals. It's the clearest example of the type of judgement we wrongly assume everything else works like."
+    "forms": [
+      "court cases"
+    ],
+    "text": "A court case is a legal dispute decided by a judge or jury. Graham lists it first among judgements where getting you right is the entire purpose — which is why courts have appeals. It's the clearest example of the type of judgement we wrongly assume everything else works like.",
+    "audio": true
   },
   {
     "k": "appeals-process",
     "t": "appeals process",
     "kind": "phrase",
-    "forms": ["appeals process"],
-    "text": "An appeals process is a formal route for asking that a decision be looked at again by someone higher up. Its existence is a giveaway, and Graham treats it as the tell: wherever there's an appeals process, judging you correctly was the goal. Colleges and employers don't offer one, and now you know why."
+    "forms": [
+      "appeals process"
+    ],
+    "text": "An appeals process is a formal route for asking that a decision be looked at again by someone higher up. Its existence is a giveaway, and Graham treats it as the tell: wherever there's an appeals process, judging you correctly was the goal. Colleges and employers don't offer one, and now you know why.",
+    "audio": true
   },
   {
     "k": "protest",
     "t": "protest",
     "kind": "word",
-    "forms": ["protest"],
-    "text": "This isn't a march with signs. To protest here means to formally object — to state that something was wrong and ask for it to be fixed. \"You can protest that you've been treated unfairly\" only makes sense in the first kind of judgement, where fairness to you was the actual aim."
+    "forms": [
+      "protest"
+    ],
+    "text": "This isn't a march with signs. To protest here means to formally object — to state that something was wrong and ask for it to be fixed. \"You can protest that you've been treated unfairly\" only makes sense in the first kind of judgement, where fairness to you was the actual aim.",
+    "audio": true
   },
   {
     "k": "misjudged",
     "t": "misjudged",
     "kind": "word",
-    "forms": ["misjudged", "misjudgement"],
-    "text": "To be misjudged is to have someone form a wrong opinion of you — to rate you as worse (or better) than you really are. Graham's twist is that the 20th best player genuinely was misjudged, and it still doesn't mean anything went wrong: the selector wasn't in the business of rating players correctly."
+    "forms": [
+      "misjudged",
+      "misjudgement"
+    ],
+    "text": "To be misjudged is to have someone form a wrong opinion of you — to rate you as worse (or better) than you really are. Graham's twist is that the 20th best player genuinely was misjudged, and it still doesn't mean anything went wrong: the selector wasn't in the business of rating players correctly.",
+    "audio": true
   },
   {
     "k": "class",
     "t": "class",
     "kind": "word",
-    "forms": ["class"],
-    "text": "Watch this one — it isn't a class at school. A class is a category, a group of things that belong together. \"A second much larger class of judgements\" means a whole other category of them, and calling it larger is the essay's quiet bombshell: the kind of judgement we understand least is the kind we meet most."
+    "forms": [
+      "class"
+    ],
+    "text": "Watch this one — it isn't a class at school. A class is a category, a group of things that belong together. \"A second much larger class of judgements\" means a whole other category of them, and calling it larger is the essay's quiet bombshell: the kind of judgement we understand least is the kind we meet most.",
+    "audio": true
   },
   {
     "k": "means-to-something-else",
     "t": "a means to something else",
     "kind": "phrase",
-    "forms": ["a means to something else"],
-    "text": "A means is a method for getting somewhere — so \"a means to something else\" is a step taken for the sake of a different goal. Judging you is a means when a coach sizes you up in order to build a squad, or an employer reads your application in order to fill a role. The judging is real, but it's the tool, never the destination."
+    "forms": [
+      "a means to something else"
+    ],
+    "text": "A means is a method for getting somewhere — so \"a means to something else\" is a step taken for the sake of a different goal. Judging you is a means when a coach sizes you up in order to build a squad, or an employer reads your application in order to fill a role. The judging is real, but it's the tool, never the destination.",
+    "audio": true
   },
   {
     "k": "admissions-committees",
     "t": "admissions committees",
     "kind": "phrase",
-    "forms": ["admissions committees"],
-    "text": "An admissions committee is the group at a college that reads applications and decides who gets in. Graham says students imagine them as \"all-seeing\" and as caring enough to dig into each application — and that both assumptions are wrong. They're a small number of tired people moving fast through an enormous stack."
+    "forms": [
+      "admissions committees"
+    ],
+    "text": "An admissions committee is the group at a college that reads applications and decides who gets in. Graham says students imagine them as \"all-seeing\" and as caring enough to dig into each application — and that both assumptions are wrong. They're a small number of tired people moving fast through an enormous stack.",
+    "audio": true
   },
   {
     "k": "put-yourself-in-the-position",
     "t": "Put yourself in the position of",
     "kind": "phrase",
-    "forms": ["Put yourself in the position of"],
-    "text": "This means: imagine you're the one doing the job, and see how it looks from there. It's a genuine thinking tool, not just a figure of speech — the fastest way to test whether something really is unfair is to switch seats. The moment you're the one picking 20 players, the borderline calls stop feeling like verdicts on anybody."
+    "forms": [
+      "Put yourself in the position of"
+    ],
+    "text": "This means: imagine you're the one doing the job, and see how it looks from there. It's a genuine thinking tool, not just a figure of speech — the fastest way to test whether something really is unfair is to switch seats. The moment you're the one picking 20 players, the borderline calls stop feeling like verdicts on anybody.",
+    "audio": true
   },
   {
     "k": "for-the-sake-of-simplicity",
     "t": "for the sake of simplicity",
     "kind": "phrase",
-    "forms": ["for the sake of simplicity"],
-    "text": "This signals that the writer is deliberately stripping out complications to make an example clearer — not because reality is that simple, but because the point survives without the detail. Graham removes player positions from his imaginary sport so nothing distracts from the one thing he wants you to see: what happens at the borderline."
+    "forms": [
+      "for the sake of simplicity"
+    ],
+    "text": "This signals that the writer is deliberately stripping out complications to make an example clearer — not because reality is that simple, but because the point survives without the detail. Graham removes player positions from his imaginary sport so nothing distracts from the one thing he wants you to see: what happens at the borderline.",
+    "audio": true
   },
   {
     "k": "positions",
     "t": "positions",
     "kind": "word",
-    "forms": ["positions"],
-    "text": "Here positions means the fixed roles players fill on a team — goalkeeper, striker, defender. \"A game with no positions\" is an imaginary sport where every player is interchangeable, so the selector only has to ask one question: who are the 20 best? It keeps the example clean."
+    "forms": [
+      "positions"
+    ],
+    "text": "Here positions means the fixed roles players fill on a team — goalkeeper, striker, defender. \"A game with no positions\" is an imaginary sport where every player is interchangeable, so the selector only has to ask one question: who are the 20 best? It keeps the example clean.",
+    "audio": true
   },
   {
     "k": "borderline-cases",
     "t": "borderline cases",
     "kind": "phrase",
-    "forms": ["borderline cases"],
-    "text": "Borderline cases are the ones sitting right on the cutoff line, where the decision could plausibly go either way. Graham's observation is sharp: they're the only place a selector's judgement changes anything, because the obvious stars and the obvious no's decide themselves. Almost everyone who gets rejected was a borderline case."
+    "forms": [
+      "borderline cases"
+    ],
+    "text": "Borderline cases are the ones sitting right on the cutoff line, where the decision could plausibly go either way. Graham's observation is sharp: they're the only place a selector's judgement changes anything, because the obvious stars and the obvious no's decide themselves. Almost everyone who gets rejected was a borderline case.",
+    "audio": true
   },
   {
     "k": "screw-up",
     "t": "screw up",
     "kind": "phrase",
-    "forms": ["screw up"],
-    "text": "Informal for making a mistake or getting something wrong. Graham drops it in deliberately — \"Suppose you screw up and underestimate the 20th best player\" — because his point is that even a real, admitted mistake here doesn't produce a bad outcome. The team is still good."
+    "forms": [
+      "screw up"
+    ],
+    "text": "Informal for making a mistake or getting something wrong. Graham drops it in deliberately — \"Suppose you screw up and underestimate the 20th best player\" — because his point is that even a real, admitted mistake here doesn't produce a bad outcome. The team is still good.",
+    "audio": true
   },
   {
     "k": "underestimate",
     "t": "underestimate",
     "kind": "word",
-    "forms": ["underestimate"],
-    "text": "To underestimate someone is to judge them as less able than they actually are. It's the specific error the essay grants: yes, the selector really did underestimate that player. The surprise is that the error still didn't matter, because the goal was a good team rather than a correct rating."
+    "forms": [
+      "underestimate"
+    ],
+    "text": "To underestimate someone is to judge them as less able than they actually are. It's the specific error the essay grants: yes, the selector really did underestimate that player. The surprise is that the error still didn't matter, because the goal was a good team rather than a correct rating.",
+    "audio": true
   },
   {
     "k": "distribution",
     "t": "distribution",
     "kind": "word",
-    "forms": ["distribution"],
-    "text": "A distribution describes how something is spread across a group — how many people fall at each level of height, income, or skill. \"The usual distribution of ability\" means the ordinary pattern where a few are far out at the top, a few at the bottom, and most are crowded together in the middle."
+    "forms": [
+      "distribution"
+    ],
+    "text": "A distribution describes how something is spread across a group — how many people fall at each level of height, income, or skill. \"The usual distribution of ability\" means the ordinary pattern where a few are far out at the top, a few at the bottom, and most are crowded together in the middle.",
+    "audio": true
   },
   {
     "k": "normal-distribution",
     "t": "normal distribution",
     "kind": "phrase",
-    "forms": ["normal distribution"],
-    "text": "The normal distribution is the bell curve: rare at the extremes, packed in the middle. That shape is why applicants bunch up so tightly around the cutoff — and it drives the essay's most surprising line. Because everyone near the borderline is nearly identical, careful judging matters least in exactly the cases where the decision matters most."
+    "forms": [
+      "normal distribution"
+    ],
+    "text": "The normal distribution is the bell curve: rare at the extremes, packed in the middle. That shape is why applicants bunch up so tightly around the cutoff — and it drives the essay's most surprising line. Because everyone near the borderline is nearly identical, careful judging matters least in exactly the cases where the decision matters most.",
+    "audio": true
   },
   {
     "k": "measurement-error",
     "t": "measurement error",
     "kind": "phrase",
-    "forms": ["measurement error"],
-    "text": "Measurement error is the wobble in any attempt to measure something — the difference between what you record and what's actually true. Weigh yourself three times and get three numbers; that spread is the error. Graham's key move is that the gap between the 20th and 21st best player is smaller than this wobble, which means ranking them isn't just hard, it's meaningless."
+    "forms": [
+      "measurement error"
+    ],
+    "text": "Measurement error is the wobble in any attempt to measure something — the difference between what you record and what's actually true. Weigh yourself three times and get three numbers; that spread is the error. Graham's key move is that the gap between the 20th and 21st best player is smaller than this wobble, which means ranking them isn't just hard, it's meaningless.",
+    "audio": true
   },
   {
     "k": "estimate",
     "t": "estimate",
     "kind": "word",
-    "forms": ["estimate", "estimating"],
-    "text": "To estimate is to work out an approximate value for something you can't measure exactly. The essay uses it to name a service nobody actually offered you: the selector \"wasn't in the business of providing a service estimating people's ability.\" You wanted an accurate estimate of yourself; they were never selling one."
+    "forms": [
+      "estimate",
+      "estimating"
+    ],
+    "text": "To estimate is to work out an approximate value for something you can't measure exactly. The essay uses it to name a service nobody actually offered you: the selector \"wasn't in the business of providing a service estimating people's ability.\" You wanted an accurate estimate of yourself; they were never selling one.",
+    "audio": true
   },
   {
     "k": "false-analogy",
     "t": "false analogy",
     "kind": "phrase",
-    "forms": ["false analogy"],
-    "text": "An analogy compares two things to explain one of them; a false analogy is a comparison that breaks down because the two things aren't actually alike in the way that matters. Graham says calling a selection \"unfair\" is a false analogy — fairness belongs to judges and referees, and a selector isn't one, so the word simply doesn't apply."
+    "forms": [
+      "false analogy"
+    ],
+    "text": "An analogy compares two things to explain one of them; a false analogy is a comparison that breaks down because the two things aren't actually alike in the way that matters. Graham says calling a selection \"unfair\" is a false analogy — fairness belongs to judges and referees, and a selector isn't one, so the word simply doesn't apply.",
+    "audio": true
   },
   {
     "k": "analogy",
     "t": "analogy",
     "kind": "word",
-    "forms": ["analogy"],
-    "text": "An analogy explains something unfamiliar by comparing it to something you already understand — a cell is like a factory, an argument is like a building. Analogies are how most hard ideas get taught, which is also why a bad one can quietly lead you somewhere wrong."
+    "forms": [
+      "analogy"
+    ],
+    "text": "An analogy explains something unfamiliar by comparing it to something you already understand — a cell is like a factory, an argument is like a building. Analogies are how most hard ideas get taught, which is also why a bad one can quietly lead you somewhere wrong.",
+    "audio": true
   },
   {
     "k": "astray",
     "t": "astray",
     "kind": "word",
-    "forms": ["astray"],
-    "text": "To be led astray is to be drawn off the right path — usually by something that looks convincing. \"One thing that leads us astray here\" introduces the trap: the selector holds the power, and power makes someone look like a judge. That resemblance is what fools us into expecting fairness."
+    "forms": [
+      "astray"
+    ],
+    "text": "To be led astray is to be drawn off the right path — usually by something that looks convincing. \"One thing that leads us astray here\" introduces the trap: the selector holds the power, and power makes someone look like a judge. That resemblance is what fools us into expecting fairness.",
+    "audio": true
   },
   {
     "k": "selector",
     "t": "selector",
     "kind": "word",
-    "forms": ["selector"],
-    "text": "A selector is simply whoever does the choosing — the coach picking a squad, the recruiter filling a job, the committee reading applications. Graham insists on this plain word instead of \"judge\" because it names what the person is actually doing, and the whole misunderstanding comes from mixing the two up."
+    "forms": [
+      "selector"
+    ],
+    "text": "A selector is simply whoever does the choosing — the coach picking a squad, the recruiter filling a job, the committee reading applications. Graham insists on this plain word instead of \"judge\" because it names what the person is actually doing, and the whole misunderstanding comes from mixing the two up.",
+    "audio": true
   },
   {
     "k": "position-of-power",
     "t": "position of power",
     "kind": "phrase",
-    "forms": ["position of power"],
-    "text": "Being in a position of power means holding control over an outcome that affects someone else. Graham's insight is about the illusion it creates: because the selector decides your fate, they look like a judge, and judges are supposed to be fair. The power is real; the obligation to be fair to you isn't."
+    "forms": [
+      "position of power"
+    ],
+    "text": "Being in a position of power means holding control over an outcome that affects someone else. Graham's insight is about the illusion it creates: because the selector decides your fate, they look like a judge, and judges are supposed to be fair. The power is real; the obligation to be fair to you isn't.",
+    "audio": true
   },
   {
     "k": "potboiler",
     "t": "potboiler",
     "kind": "word",
-    "forms": ["potboiler"],
-    "text": "A potboiler is a book written mainly to sell rather than to be good — cheap thrills, formula plot. The name comes from writing just to keep the pot boiling, meaning to keep food on the table. Graham's example is that a serious novelist can't call readers unfair for buying one instead: \"Stupid, perhaps, but not unfair.\""
+    "forms": [
+      "potboiler"
+    ],
+    "text": "A potboiler is a book written mainly to sell rather than to be good — cheap thrills, formula plot. The name comes from writing just to keep the pot boiling, meaning to keep food on the table. Graham's example is that a serious novelist can't call readers unfair for buying one instead: \"Stupid, perhaps, but not unfair.\"",
+    "audio": true
   },
   {
     "k": "racy",
     "t": "racy",
     "kind": "word",
-    "forms": ["racy"],
-    "text": "Racy describes something mildly shocking or suggestive — designed to raise an eyebrow and pull you in. A racy cover is a marketing trick, and that's precisely why Graham picks it: it wins attention for reasons that have nothing to do with whether the book is any good."
+    "forms": [
+      "racy"
+    ],
+    "text": "Racy describes something mildly shocking or suggestive — designed to raise an eyebrow and pull you in. A racy cover is a marketing trick, and that's precisely why Graham picks it: it wins attention for reasons that have nothing to do with whether the book is any good.",
+    "audio": true
   },
   {
     "k": "self-centeredness",
     "t": "self-centeredness",
     "kind": "word",
-    "forms": ["self-centeredness", "self-centered"],
-    "text": "Self-centeredness is assuming you're the main character in other people's decisions — that they're thinking about you as much as you are. Graham gives it an unexpected consequence: being less self-centered actually makes you more confident, because once you grasp how little the selector was thinking about you, rejection stops reading as a verdict on your worth."
+    "forms": [
+      "self-centeredness",
+      "self-centered"
+    ],
+    "text": "Self-centeredness is assuming you're the main character in other people's decisions — that they're thinking about you as much as you are. Graham gives it an unexpected consequence: being less self-centered actually makes you more confident, because once you grasp how little the selector was thinking about you, rejection stops reading as a verdict on your worth.",
+    "audio": true
   },
   {
     "k": "precisely",
     "t": "precisely",
     "kind": "word",
-    "forms": ["precisely"],
-    "text": "Precisely means exactly, with no room for vagueness — and writers reach for it to point at something surprising. \"It matters least to judge accurately in precisely the cases where judgement has the most effect\" is the essay's sharpest sentence, and the word is doing real work: this isn't roughly true, it's exactly the situation."
+    "forms": [
+      "precisely"
+    ],
+    "text": "Precisely means exactly, with no room for vagueness — and writers reach for it to point at something surprising. \"It matters least to judge accurately in precisely the cases where judgement has the most effect\" is the essay's sharpest sentence, and the word is doing real work: this isn't roughly true, it's exactly the situation.",
+    "audio": true
   },
   {
     "k": "afford",
     "t": "afford",
     "kind": "word",
-    "forms": ["afford"],
-    "text": "Nothing to do with money here. To afford to do something means you can safely get away with it. \"You can afford to be passive\" means sitting back would carry no cost — which would be true if selectors really did work hard to judge you correctly. They don't, so it isn't."
+    "forms": [
+      "afford"
+    ],
+    "text": "Nothing to do with money here. To afford to do something means you can safely get away with it. \"You can afford to be passive\" means sitting back would carry no cost — which would be true if selectors really did work hard to judge you correctly. They don't, so it isn't.",
+    "audio": true
   },
   {
     "k": "passive",
     "t": "passive",
     "kind": "word",
-    "forms": ["passive"],
-    "text": "Being passive means letting things happen to you instead of acting to shape them. It's the behaviour Graham is trying to talk you out of: believing the committee will uncover how good you are makes you sit back and wait to be discovered, which is the one strategy guaranteed not to help."
+    "forms": [
+      "passive"
+    ],
+    "text": "Being passive means letting things happen to you instead of acting to shape them. It's the behaviour Graham is trying to talk you out of: believing the committee will uncover how good you are makes you sit back and wait to be discovered, which is the one strategy guaranteed not to help.",
+    "audio": true
   },
   {
     "k": "perceptive",
     "t": "perceptive",
     "kind": "word",
-    "forms": ["perceptive"],
-    "text": "Perceptive means quick to notice and understand things other people miss — someone perceptive reads the room in seconds. Graham pairs it with \"wise\" to build the flattering picture of a judge that most of us imagine is assessing us, right before replacing it with a distracted shopper."
+    "forms": [
+      "perceptive"
+    ],
+    "text": "Perceptive means quick to notice and understand things other people miss — someone perceptive reads the room in seconds. Graham pairs it with \"wise\" to build the flattering picture of a judge that most of us imagine is assessing us, right before replacing it with a distracted shopper.",
+    "audio": true
   },
   {
     "k": "magistrate",
     "t": "magistrate",
     "kind": "word",
-    "forms": ["magistrate"],
-    "text": "A magistrate is a minor judge, one who hears smaller cases in a local court. The word carries an air of dignity and careful weighing, which is exactly the effect Graham wants: \"a wise and perceptive magistrate\" is the fantasy version of whoever is reading your application."
+    "forms": [
+      "magistrate"
+    ],
+    "text": "A magistrate is a minor judge, one who hears smaller cases in a local court. The word carries an air of dignity and careful weighing, which is exactly the effect Graham wants: \"a wise and perceptive magistrate\" is the fantasy version of whoever is reading your application.",
+    "audio": true
   },
   {
     "k": "curiously-enough",
     "t": "curiously enough",
     "kind": "phrase",
-    "forms": ["curiously enough"],
-    "text": "A signal that what follows is counter-intuitive — the opposite of what you'd expect. Here it flags the essay's most useful practical claim: taking rejection less personally actually gets you rejected less often, because once you stop waiting to be discovered you start doing things that change the outcome."
+    "forms": [
+      "curiously enough"
+    ],
+    "text": "A signal that what follows is counter-intuitive — the opposite of what you'd expect. Here it flags the essay's most useful practical claim: taking rejection less personally actually gets you rejected less often, because once you stop waiting to be discovered you start doing things that change the outcome.",
+    "audio": true
   },
   {
     "k": "applicant-pools",
     "t": "applicant pools",
     "kind": "phrase",
-    "forms": ["applicant pools"],
-    "text": "An applicant pool is the whole set of people who applied for something. \"Pool\" is the giveaway word: to a selector you aren't a person being assessed, you're one item in a body of candidates they're drawing from. The word itself tells you which kind of judgement you're in."
+    "forms": [
+      "applicant pools"
+    ],
+    "text": "An applicant pool is the whole set of people who applied for something. \"Pool\" is the giveaway word: to a selector you aren't a person being assessed, you're one item in a body of candidates they're drawing from. The word itself tells you which kind of judgement you're in.",
+    "audio": true
   },
   {
     "k": "applicants",
     "t": "applicants",
     "kind": "word",
-    "forms": ["applicants", "applicant"],
-    "text": "An applicant is someone who has formally asked to be given a place or a job. Graham's advice lands squarely on this group: applicants who understand how quick and impersonal the process is stop being passive, put more effort into presenting themselves, and take the outcome less to heart."
+    "forms": [
+      "applicants",
+      "applicant"
+    ],
+    "text": "An applicant is someone who has formally asked to be given a place or a job. Graham's advice lands squarely on this group: applicants who understand how quick and impersonal the process is stop being passive, put more effort into presenting themselves, and take the outcome less to heart.",
+    "audio": true
   },
   {
     "k": "principle",
     "t": "principle",
     "kind": "word",
-    "forms": ["principle"],
-    "text": "A principle is a general rule that holds across many different situations — and note the spelling: a principle is a rule, a principal is a person or the main one. \"One good place to apply this principle is in college applications\" signals that everything before it was the general rule, and this is just where it bites hardest."
+    "forms": [
+      "principle"
+    ],
+    "text": "A principle is a general rule that holds across many different situations — and note the spelling: a principle is a rule, a principal is a person or the main one. \"One good place to apply this principle is in college applications\" signals that everything before it was the general rule, and this is just where it bites hardest.",
+    "audio": true
   },
   {
     "k": "inferiority",
     "t": "inferiority",
     "kind": "word",
-    "forms": ["inferiority"],
-    "text": "Inferiority is the feeling of being lesser — not as good, not as capable as the people around you. Graham pairs it with self-centeredness as \"the usual child's mix,\" and the combination is oddly contradictory: you think the committee is all-seeing (so you must be small) and that they're studying you closely (so you must be big)."
+    "forms": [
+      "inferiority"
+    ],
+    "text": "Inferiority is the feeling of being lesser — not as good, not as capable as the people around you. Graham pairs it with self-centeredness as \"the usual child's mix,\" and the combination is oddly contradictory: you think the committee is all-seeing (so you must be small) and that they're studying you closely (so you must be big).",
+    "audio": true
   },
   {
     "k": "all-seeing",
     "t": "all-seeing",
     "kind": "word",
-    "forms": ["all-seeing"],
-    "text": "All-seeing means able to perceive everything, missing nothing — a word usually reserved for gods. That's the joke in it. Students picture admissions committees as all-seeing, when in reality a reader may spend only a few minutes on an application they'll never think about again."
+    "forms": [
+      "all-seeing"
+    ],
+    "text": "All-seeing means able to perceive everything, missing nothing — a word usually reserved for gods. That's the joke in it. Students picture admissions committees as all-seeing, when in reality a reader may spend only a few minutes on an application they'll never think about again.",
+    "audio": true
   },
   {
     "k": "dig-down-into",
     "t": "dig down into",
     "kind": "phrase",
-    "forms": ["dig down into"],
-    "text": "To dig down into something is to go past the surface and examine it in real depth. Graham uses it for the thing applicants wrongly assume happens — that someone will dig down into their application and work out whether they're actually good. The reality he describes is much closer to skimming."
+    "forms": [
+      "dig down into"
+    ],
+    "text": "To dig down into something is to go past the surface and examine it in real depth. Graham uses it for the thing applicants wrongly assume happens — that someone will dig down into their application and work out whether they're actually good. The reality he describes is much closer to skimming.",
+    "audio": true
   },
   {
     "k": "impersonal",
     "t": "impersonal",
     "kind": "word",
-    "forms": ["impersonal"],
-    "text": "Impersonal means not directed at you as an individual — the process would have run the same way whoever you were. Graham calls selection \"quick and impersonal,\" and that phrase is meant as a relief rather than an insult: a rejection that was never personal in the first place is not a statement about your worth."
+    "forms": [
+      "impersonal"
+    ],
+    "text": "Impersonal means not directed at you as an individual — the process would have run the same way whoever you were. Graham calls selection \"quick and impersonal,\" and that phrase is meant as a relief rather than an insult: a rejection that was never personal in the first place is not a statement about your worth.",
+    "audio": true
   },
   {
     "k": "sell-themselves",
     "t": "sell themselves",
     "kind": "phrase",
-    "forms": ["sell themselves"],
-    "text": "To sell yourself is to actively present your strengths so someone notices them, rather than hoping they'll be found. It follows directly from everything before it: if the reader is a fickle shopper skimming quickly, then making your case clearly isn't showing off — it's the only sensible response to how the process actually works."
+    "forms": [
+      "sell themselves"
+    ],
+    "text": "To sell yourself is to actively present your strengths so someone notices them, rather than hoping they'll be found. It follows directly from everything before it: if the reader is a fickle shopper skimming quickly, then making your case clearly isn't showing off — it's the only sensible response to how the process actually works.",
+    "audio": true
   }
 ]

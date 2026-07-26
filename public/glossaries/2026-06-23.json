@@ -1,450 +1,499 @@
 [
- {
-  "k": "coveted",
-  "t": "coveted",
-  "kind": "vocab",
-  "pron": "KUV-ih-tid",
-  "forms": [
-   "coveted"
-  ],
-  "text": "To covet something is to want it eagerly — especially a prize others want too. China's leader and Saudi Arabia's crown prince have long coveted footballing glory: World Cup success lifts the national mood and impresses the world, which is exactly why powerful men crave it and why it stings that money alone can't buy it."
- },
- {
-  "k": "calibre",
-  "t": "calibre",
-  "kind": "vocab",
-  "pron": "KAL-ih-bur",
-  "forms": [
-   "calibre"
-  ],
-  "text": "Calibre is the level of quality or skill of someone or something. Elo ratings account for the calibre of opponents — beating a powerhouse counts for far more than beating a pushover — which is what makes them a fairer measure than raw results. (That's the British spelling; Americans write “caliber.”)"
- },
- {
-  "k": "disseminate",
-  "t": "disseminate",
-  "kind": "vocab",
-  "pron": "dih-SEM-uh-nayt",
-  "forms": [
-   "disseminating"
-  ],
-  "text": "To disseminate is to spread ideas or information widely so many people receive them — the word literally means scattering seeds. Japan's football authorities study global tactical trends and then disseminate them at home, seeding every club and academy with the world's best ideas."
- },
- {
-  "k": "football",
-  "t": "football",
-  "kind": "word",
-  "forms": [
-   "football",
-   "footballing"
-  ],
-  "text": "Heads up, American readers: to The Economist (a British paper) football means soccer — the game the whole world calls football. The NFL kind never appears in this article."
- },
- {
-  "k": "vexes",
-  "t": "vexes",
-  "kind": "word",
-  "forms": [
-   "vexes"
-  ],
-  "text": "To vex is to annoy, puzzle, and frustrate all at once — a vexing question is one that nags at you and won't be solved. Why do only eight countries ever win the World Cup? The question vexes fans, leaders, and economists alike."
- },
- {
-  "k": "pitch",
-  "t": "pitch",
-  "kind": "word",
-  "forms": [
-   "pitch"
-  ],
-  "text": "In British English the pitch is the playing field — “success on the pitch” means success in the games themselves. Not a baseball pitch, not a sales pitch: the grass."
- },
- {
-  "k": "elo",
-  "t": "Elo ratings",
-  "kind": "name",
-  "forms": [
-   "Elo ratings",
-   "Elo"
-  ],
-  "text": "A scoring system invented for chess (by physicist Arpad Elo) and now used across competitive games: your rating rises for wins and falls for losses, with beating strong opponents worth far more than beating weak ones. That opponent-weighting is why the article treats Elo scores as a better measure of a team's true strength than tournament results."
- },
- {
-  "k": "proxy",
-  "t": "proxy",
-  "kind": "word",
-  "forms": [
-   "proxy"
-  ],
-  "text": "A proxy is a measurable stand-in for something you care about but can't measure directly — the way test scores stand in for learning. “True team quality” is invisible, so the model uses Elo ratings as its proxy, and a better one than tournament results, which luck can distort. A proxy is only as good as how closely it tracks the real thing."
- },
- {
-  "k": "skewed",
-  "t": "skewed",
-  "kind": "word",
-  "forms": [
-   "skewed"
-  ],
-  "text": "Skewed means distorted — pushed off-true so it no longer reflects reality. Tournament results can be skewed by luck: an easy bracket or one goalkeeper having the week of his life can carry a mediocre team far, making it look better than it is."
- },
- {
-  "k": "kind-draw",
-  "t": "a kind draw",
-  "kind": "phrase",
-  "forms": [
-   "kind draw"
-  ],
-  "text": "In a tournament, the “draw” is the random assignment of who plays whom, and a kind one is lucky — your team gets handed the weak opponents while rivals face giants. It's the article's first example of why raw results mislead: sometimes a team goes far because the draw was kind, not because the team was good."
- },
- {
-  "k": "variation",
-  "t": "variation",
-  "kind": "word",
-  "forms": [
-   "variation",
-   "variables"
-  ],
-  "text": "Variation is the spread of differences across a group — line every national team up from weakest to strongest and that whole range is the variation. The model asks how much of it can be predicted from a few facts (the “variables”): wealth, population, height, and geography together account for about 70%. The leftover 30% is coaching, culture, and plain luck — which is why no single factor is decisive."
- },
- {
-  "k": "filthy-rich",
-  "t": "filthy rich",
-  "kind": "phrase",
-  "forms": [
-   "filthy rich"
-  ],
-  "text": "Filthy rich is slang for extravagantly, absurdly wealthy — so much money it's almost indecent. The Gulf monarchies are filthy rich and football-mad, yet still underperform: the article's proof that money, on its own, can't buy a World Cup."
- },
- {
-  "k": "monarchies-gulf",
-  "t": "the monarchies of the Gulf",
-  "kind": "name",
-  "forms": [
-   "monarchies of the Gulf"
-  ],
-  "text": "The oil-rich kingdoms around the Persian Gulf ruled by royal families — Saudi Arabia, Qatar, the UAE and their neighbors. A monarchy is a country ruled by a king or hereditary ruler; these particular ones have poured fortunes into football with little World Cup glory to show for it."
- },
- {
-  "k": "talent-pool",
-  "t": "talent pool",
-  "kind": "phrase",
-  "forms": [
-   "talent pool"
-  ],
-  "text": "A talent pool is the whole population of potential players you can draw from — the bigger the pool, the better your odds of fishing out a superstar. A big population deepens the pool, but China and India show depth alone wins nothing: a billion people, one World Cup appearance between them."
- },
- {
-  "k": "fare",
-  "t": "fare",
-  "kind": "word",
-  "forms": [
-   "fare"
-  ],
-  "text": "To fare is to get along or perform — “the worse it tends to fare” means the worse it tends to do. Nothing to do with bus fare: the article's finding is that the further a country's average man stands from the optimal 181cm, the worse its team fares."
- },
- {
-  "k": "chasm",
-  "t": "chasm",
-  "kind": "word",
-  "forms": [
-   "chasm"
-  ],
-  "text": "A chasm is a deep, gaping canyon — so, figuratively, an enormous gap. Even after adjusting for income, population, and physique, the chasm between South American and Asian teams only narrows to 492 Elo points. Something besides money and size — culture, geography — is holding the gap open."
- },
- {
-  "k": "physique",
-  "t": "physique",
-  "kind": "word",
-  "forms": [
-   "physique"
-  ],
-  "text": "Physique is the build of a body — its height, muscle, and shape. It's the article's polite one-word summary of the height factor: even after accounting for differences in income, population, and physique, the regional gaps stay huge."
- },
- {
-  "k": "confederation",
-  "t": "confederation",
-  "kind": "word",
-  "forms": [
-   "confederation",
-   "confederations"
-  ],
-  "text": "A confederation is an alliance of groups joined under one umbrella. In football it's the official term for the continental blocs — UEFA for Europe, CONMEBOL for South America, and so on. Europe alone has more than 200,000 coaches, far more than any other confederation, and richer confederations can plough far more into youth development."
- },
- {
-  "k": "plough",
-  "t": "plough",
-  "kind": "word",
-  "forms": [
-   "plough"
-  ],
-  "text": "To plough money into something (British spelling of “plow”) is to invest heavily in it — the farming image is turning your resources into the soil so more grows later. Rich confederations plough fortunes into coaching and youth academies, which is exactly how advantages compound."
- },
- {
-  "k": "compounds",
-  "t": "compounds",
-  "kind": "word",
-  "forms": [
-   "compounds"
-  ],
-  "text": "To compound something is to make it grow on top of itself — like compound interest, where you earn interest on your interest. “Money compounds such divides” means wealth doesn't just add to the coaching gap, it multiplies it: richer regions fund better academies, which produce better players, which attract more money."
- },
- {
-  "k": "self-perpetuating",
-  "t": "self-perpetuating",
-  "kind": "phrase",
-  "forms": [
-   "self-perpetuating"
-  ],
-  "text": "Self-perpetuating means keeping itself going — success that automatically produces more success. Footballing glory works like that: winning brings money, prestige, and eager kids, which produce more winning. Hence the article's striking stat: the best predictor of a country's rank today is its rank decades ago — four-fifths of 1976's top quarter are still there."
- },
- {
-  "k": "heavyweights",
-  "t": "heavyweights",
-  "kind": "word",
-  "forms": [
-   "heavyweights"
-  ],
-  "text": "Borrowed from boxing's biggest weight class, heavyweights are the most powerful players in any arena. Germany and Spain are footballing heavyweights — multiple World Cups each — which is why Japan beating both in Qatar announced its arrival."
- },
- {
-  "k": "dark-horse",
-  "t": "dark horse",
-  "kind": "phrase",
-  "forms": [
-   "dark horse"
-  ],
-  "text": "A dark horse is a little-fancied competitor who might just win it all — from horse racing, where an unknown horse (“dark” as in obscure) sometimes stuns the field. Many consider Japan a dark horse this World Cup: not among the favorites, but nobody wants to draw them."
- },
- {
-  "k": "ascribed",
-  "t": "ascribed",
-  "kind": "word",
-  "forms": [
-   "ascribed"
-  ],
-  "text": "To ascribe a result to something is to credit that thing as its cause. Japan's rise cannot be ascribed to its economy or population — both have stagnated for decades — so the cause must lie elsewhere: in strategy, not circumstance."
- },
- {
-  "k": "stagnated",
-  "t": "stagnated",
-  "kind": "word",
-  "forms": [
-   "stagnated"
-  ],
-  "text": "To stagnate is to stop moving or growing — like stagnant water going stale in a still pond. Japan's economy and population have stagnated since the 1990s, which makes its climb up the football rankings all the more remarkable: it improved with none of the usual tailwinds."
- },
- {
-  "k": "revamped",
-  "t": "revamped",
-  "kind": "word",
-  "forms": [
-   "revamped"
-  ],
-  "text": "To revamp something is to overhaul and rebuild it in improved form. In 1992 Japan revamped its amateur league into a professional one and launched its “Hundred Year Vision” — a plan measured in generations, aiming for 100 professional clubs by 2092."
- },
- {
-  "k": "prescriptions",
-  "t": "prescriptions",
-  "kind": "word",
-  "forms": [
-   "prescriptions"
-  ],
-  "text": "Here prescriptions are official instructions — rules prescribing what must be done — not slips from a doctor (though it's the same idea: an authority telling you exactly what to take). Japan's plan includes prescriptions for clubs, like the requirement that every one run a youth academy."
- },
- {
-  "k": "bottom-up",
-  "t": "bottom-up",
-  "kind": "phrase",
-  "forms": [
-   "bottom-up"
-  ],
-  "text": "A bottom-up system grows from many small, local efforts — thousands of clubs, academies, and playground games — with no single controller; its opposite, top-down, is directed from central headquarters. Japan built football bottom-up and thrived; China went top-down, Olympic-style, and failed — because football runs on improvisation and a deep grassroots base, things you can't order into existence."
- },
- {
-  "k": "lavishly",
-  "t": "lavishly",
-  "kind": "word",
-  "forms": [
-   "lavishly"
-  ],
-  "text": "Lavishly means extravagantly, with money poured out freely. China's football program was centralised and lavishly funded — and that's the point of the comparison: all that lavish spending bought less than Japan's patient grassroots plan."
- },
- {
-  "k": "grassroots",
-  "t": "grassroots",
-  "kind": "word",
-  "forms": [
-   "grassroots"
-  ],
-  "text": "The grassroots of anything are its ordinary, ground-level participants — in football, the millions of kids playing in parks and school leagues, not the stars or officials. A deep grassroots base is where improvisation and genius get discovered; it's precisely what a government program can fund but can't command into being."
- },
- {
-  "k": "diaspora",
-  "t": "diaspora",
-  "kind": "word",
-  "forms": [
-   "diaspora"
-  ],
-  "text": "A diaspora is a people scattered far from their homeland — the communities of emigrants and their descendants living abroad. Senegal's shortcut to footballing strength was drawing on its diaspora: around half its World Cup squad are sons of Senegalese migrants, trained at academies in France."
- },
- {
-  "k": "teranga-lions",
-  "t": "Teranga Lions",
-  "kind": "name",
-  "forms": [
-   "Teranga Lions"
-  ],
-  "text": "The nickname of Senegal's national football team — “teranga” is the Wolof word for hospitality, a point of national pride in Senegal."
- },
- {
-  "k": "akin",
-  "t": "akin",
-  "kind": "word",
-  "forms": [
-   "akin"
-  ],
-  "text": "Akin means similar in nature — literally “of the same kin,” like family. Senegal fielding its diaspora's sons is akin to funding development through remittances: in both cases, the country earns rewards from citizens working abroad."
- },
- {
-  "k": "remittances",
-  "t": "remittances",
-  "kind": "word",
-  "forms": [
-   "remittances"
-  ],
-  "text": "Remittances are the money migrants working abroad send home to their families — for some countries, a bigger income source than any export. The article's clever comparison: a diaspora footballer playing for Senegal is a kind of remittance — value earned abroad, sent home, only in goals instead of cash."
- },
- {
-  "k": "curacao",
-  "t": "Curaçao",
-  "kind": "name",
-  "forms": [
-   "Curaçao"
-  ],
-  "text": "A small Caribbean island nation (population about 150,000) that's part of the Kingdom of the Netherlands. Fully 96% of its World Cup squad was born abroad — the most extreme example of building a national team from a diaspora."
- },
- {
-  "k": "cape-verde",
-  "t": "Cape Verde",
-  "kind": "name",
-  "forms": [
-   "Cape Verde"
-  ],
-  "text": "A small island nation off the west coast of Africa, population about half a million, with a huge diaspora — more Cape Verdeans live abroad than at home. That shows in its squad: 62% born outside the country."
- },
- {
-  "k": "stingy",
-  "t": "stingy",
-  "kind": "word",
-  "forms": [
-   "stingy"
-  ],
-  "text": "Stingy means ungenerous — hating to give anything away. The joke is in the contrast: countries usually stingy with passports, making citizenship painfully hard to get, suddenly throw them at anyone who can bend a free kick."
- },
- {
-  "k": "naturalised",
-  "t": "naturalised",
-  "kind": "word",
-  "forms": [
-   "naturalised"
-  ],
-  "text": "To be naturalised is to be granted citizenship of a country you weren't born in. Qatar fields several naturalised players — like Belgian-born Edmilson Junior — athletes handed a new nationality largely so they can wear the national shirt."
- },
- {
-  "k": "fields",
-  "t": "fields",
-  "kind": "word",
-  "forms": [
-   "fields"
-  ],
-  "text": "As a verb, to field players is to put them on the field — to select them for your team. “Qatar fields several naturalised players” means Qatar plays them; Malaysia was punished for fielding seven players whose eligibility was faked."
- },
- {
-  "k": "ruse",
-  "t": "ruse",
-  "kind": "word",
-  "forms": [
-   "ruse"
-  ],
-  "text": "A ruse is a crafty trick — a scheme designed to deceive. The passport-throwing strategy is called a ruse with a raised eyebrow: at times it goes beyond even FIFA's permissive rules, as when Malaysia fielded seven players whose Malaysian roots had been falsified outright."
- },
- {
-  "k": "permissive",
-  "t": "permissive",
-  "kind": "word",
-  "forms": [
-   "permissive"
-  ],
-  "text": "Permissive means allowing a lot — setting loose rules and letting most things slide. Even FIFA's permissive eligibility rules, which already let players switch countries generously, weren't loose enough for Malaysia's faked-ancestry scheme."
- },
- {
-  "k": "controlling-for",
-  "t": "controlling for",
-  "kind": "phrase",
-  "forms": [
-   "controlling for"
-  ],
-  "text": "In statistics, controlling for a factor means mathematically holding it equal so it can't secretly drive your result. Teams with more foreign-born players progress further even after controlling for wealth and footballing tradition — meaning the diaspora effect isn't just rich, established nations in disguise; the foreign-born players themselves seem to matter."
- },
- {
-  "k": "accrue",
-  "t": "accrue",
-  "kind": "word",
-  "forms": [
-   "accrue"
-  ],
-  "text": "To accrue is to build up gradually as gains flow in — interest accrues in a savings account. The benefits of migration accrue to both countries involved: the one the family left gains diaspora stars like Senegal's, and the one that received them gains stars like Lamine Yamal."
- },
- {
-  "k": "duality",
-  "t": "duality",
-  "kind": "word",
-  "forms": [
-   "duality"
-  ],
-  "text": "Duality means two-sidedness — one thing with two faces. The Doué family captures the duality of migration's impact perfectly in two brothers: Désiré plays for France, the country his family moved to; Guéla plays for Ivory Coast, the country they came from."
- },
- {
-  "k": "soul-searching",
-  "t": "soul-searching",
-  "kind": "phrase",
-  "forms": [
-   "soul-searching"
-  ],
-  "text": "Soul-searching is a hard, honest look inward at what went wrong — examining your own soul. Italy missing this World Cup (the only past winner to miss out) triggered deep national soul-searching, with some commentators blaming citizenship rules so strict they kept migrants' children off the team."
- },
- {
-  "k": "azzurri",
-  "t": "the Azzurri",
-  "kind": "name",
-  "forms": [
-   "Azzurri"
-  ],
-  "text": "The nickname of Italy's national football team — Italian for “the Blues,” after their azure shirts. Four-time world champions, which is why their failure to even qualify this time set off such national anguish."
- },
- {
-  "k": "cop",
-  "t": "cop",
-  "kind": "word",
-  "forms": [
-   "cop"
-  ],
-  "text": "British slang: to cop something is to receive it — usually something unpleasant. When England gets knocked out, it's the team's black players who cop the most abuse: they receive the worst of the racist backlash. Nothing to do with police."
- },
- {
-  "k": "far-right",
-  "t": "the far right",
-  "kind": "phrase",
-  "forms": [
-   "far right"
-  ],
-  "text": "The far right is the extreme end of right-wing politics — movements built on fierce nationalism and hostility to immigration. The study's unsettling finding: when a diverse team wins, attitudes to immigration warm; when it loses, support for the far right can rise. A football match, quietly moving a country's politics."
- },
- {
-  "k": "bragging-rights",
-  "t": "bragging rights",
-  "kind": "phrase",
-  "forms": [
-   "bragging rights"
-  ],
-  "text": "Bragging rights are the informal prize of winning — the right to boast over the loser until the next match. The article's closing point is that World Cup results carry far more than bragging rights: they can shift how whole nations feel about immigrants."
- }
+  {
+    "k": "coveted",
+    "t": "coveted",
+    "kind": "vocab",
+    "pron": "KUV-ih-tid",
+    "forms": [
+      "coveted"
+    ],
+    "text": "To covet something is to want it eagerly — especially a prize others want too. China's leader and Saudi Arabia's crown prince have long coveted footballing glory: World Cup success lifts the national mood and impresses the world, which is exactly why powerful men crave it and why it stings that money alone can't buy it.",
+    "audio": true
+  },
+  {
+    "k": "calibre",
+    "t": "calibre",
+    "kind": "vocab",
+    "pron": "KAL-ih-bur",
+    "forms": [
+      "calibre"
+    ],
+    "text": "Calibre is the level of quality or skill of someone or something. Elo ratings account for the calibre of opponents — beating a powerhouse counts for far more than beating a pushover — which is what makes them a fairer measure than raw results. (That's the British spelling; Americans write “caliber.”)",
+    "audio": true
+  },
+  {
+    "k": "disseminate",
+    "t": "disseminate",
+    "kind": "vocab",
+    "pron": "dih-SEM-uh-nayt",
+    "forms": [
+      "disseminating"
+    ],
+    "text": "To disseminate is to spread ideas or information widely so many people receive them — the word literally means scattering seeds. Japan's football authorities study global tactical trends and then disseminate them at home, seeding every club and academy with the world's best ideas.",
+    "audio": true
+  },
+  {
+    "k": "football",
+    "t": "football",
+    "kind": "word",
+    "forms": [
+      "football",
+      "footballing"
+    ],
+    "text": "Heads up, American readers: to The Economist (a British paper) football means soccer — the game the whole world calls football. The NFL kind never appears in this article.",
+    "audio": true
+  },
+  {
+    "k": "vexes",
+    "t": "vexes",
+    "kind": "word",
+    "forms": [
+      "vexes"
+    ],
+    "text": "To vex is to annoy, puzzle, and frustrate all at once — a vexing question is one that nags at you and won't be solved. Why do only eight countries ever win the World Cup? The question vexes fans, leaders, and economists alike.",
+    "audio": true
+  },
+  {
+    "k": "pitch",
+    "t": "pitch",
+    "kind": "word",
+    "forms": [
+      "pitch"
+    ],
+    "text": "In British English the pitch is the playing field — “success on the pitch” means success in the games themselves. Not a baseball pitch, not a sales pitch: the grass.",
+    "audio": true
+  },
+  {
+    "k": "elo",
+    "t": "Elo ratings",
+    "kind": "name",
+    "forms": [
+      "Elo ratings",
+      "Elo"
+    ],
+    "text": "A scoring system invented for chess (by physicist Arpad Elo) and now used across competitive games: your rating rises for wins and falls for losses, with beating strong opponents worth far more than beating weak ones. That opponent-weighting is why the article treats Elo scores as a better measure of a team's true strength than tournament results.",
+    "audio": true
+  },
+  {
+    "k": "proxy",
+    "t": "proxy",
+    "kind": "word",
+    "forms": [
+      "proxy"
+    ],
+    "text": "A proxy is a measurable stand-in for something you care about but can't measure directly — the way test scores stand in for learning. “True team quality” is invisible, so the model uses Elo ratings as its proxy, and a better one than tournament results, which luck can distort. A proxy is only as good as how closely it tracks the real thing.",
+    "audio": true
+  },
+  {
+    "k": "skewed",
+    "t": "skewed",
+    "kind": "word",
+    "forms": [
+      "skewed"
+    ],
+    "text": "Skewed means distorted — pushed off-true so it no longer reflects reality. Tournament results can be skewed by luck: an easy bracket or one goalkeeper having the week of his life can carry a mediocre team far, making it look better than it is.",
+    "audio": true
+  },
+  {
+    "k": "kind-draw",
+    "t": "a kind draw",
+    "kind": "phrase",
+    "forms": [
+      "kind draw"
+    ],
+    "text": "In a tournament, the “draw” is the random assignment of who plays whom, and a kind one is lucky — your team gets handed the weak opponents while rivals face giants. It's the article's first example of why raw results mislead: sometimes a team goes far because the draw was kind, not because the team was good.",
+    "audio": true
+  },
+  {
+    "k": "variation",
+    "t": "variation",
+    "kind": "word",
+    "forms": [
+      "variation",
+      "variables"
+    ],
+    "text": "Variation is the spread of differences across a group — line every national team up from weakest to strongest and that whole range is the variation. The model asks how much of it can be predicted from a few facts (the “variables”): wealth, population, height, and geography together account for about 70%. The leftover 30% is coaching, culture, and plain luck — which is why no single factor is decisive.",
+    "audio": true
+  },
+  {
+    "k": "filthy-rich",
+    "t": "filthy rich",
+    "kind": "phrase",
+    "forms": [
+      "filthy rich"
+    ],
+    "text": "Filthy rich is slang for extravagantly, absurdly wealthy — so much money it's almost indecent. The Gulf monarchies are filthy rich and football-mad, yet still underperform: the article's proof that money, on its own, can't buy a World Cup.",
+    "audio": true
+  },
+  {
+    "k": "monarchies-gulf",
+    "t": "the monarchies of the Gulf",
+    "kind": "name",
+    "forms": [
+      "monarchies of the Gulf"
+    ],
+    "text": "The oil-rich kingdoms around the Persian Gulf ruled by royal families — Saudi Arabia, Qatar, the UAE and their neighbors. A monarchy is a country ruled by a king or hereditary ruler; these particular ones have poured fortunes into football with little World Cup glory to show for it.",
+    "audio": true
+  },
+  {
+    "k": "talent-pool",
+    "t": "talent pool",
+    "kind": "phrase",
+    "forms": [
+      "talent pool"
+    ],
+    "text": "A talent pool is the whole population of potential players you can draw from — the bigger the pool, the better your odds of fishing out a superstar. A big population deepens the pool, but China and India show depth alone wins nothing: a billion people, one World Cup appearance between them.",
+    "audio": true
+  },
+  {
+    "k": "fare",
+    "t": "fare",
+    "kind": "word",
+    "forms": [
+      "fare"
+    ],
+    "text": "To fare is to get along or perform — “the worse it tends to fare” means the worse it tends to do. Nothing to do with bus fare: the article's finding is that the further a country's average man stands from the optimal 181cm, the worse its team fares.",
+    "audio": true
+  },
+  {
+    "k": "chasm",
+    "t": "chasm",
+    "kind": "word",
+    "forms": [
+      "chasm"
+    ],
+    "text": "A chasm is a deep, gaping canyon — so, figuratively, an enormous gap. Even after adjusting for income, population, and physique, the chasm between South American and Asian teams only narrows to 492 Elo points. Something besides money and size — culture, geography — is holding the gap open.",
+    "audio": true
+  },
+  {
+    "k": "physique",
+    "t": "physique",
+    "kind": "word",
+    "forms": [
+      "physique"
+    ],
+    "text": "Physique is the build of a body — its height, muscle, and shape. It's the article's polite one-word summary of the height factor: even after accounting for differences in income, population, and physique, the regional gaps stay huge.",
+    "audio": true
+  },
+  {
+    "k": "confederation",
+    "t": "confederation",
+    "kind": "word",
+    "forms": [
+      "confederation",
+      "confederations"
+    ],
+    "text": "A confederation is an alliance of groups joined under one umbrella. In football it's the official term for the continental blocs — UEFA for Europe, CONMEBOL for South America, and so on. Europe alone has more than 200,000 coaches, far more than any other confederation, and richer confederations can plough far more into youth development.",
+    "audio": true
+  },
+  {
+    "k": "plough",
+    "t": "plough",
+    "kind": "word",
+    "forms": [
+      "plough"
+    ],
+    "text": "To plough money into something (British spelling of “plow”) is to invest heavily in it — the farming image is turning your resources into the soil so more grows later. Rich confederations plough fortunes into coaching and youth academies, which is exactly how advantages compound.",
+    "audio": true
+  },
+  {
+    "k": "compounds",
+    "t": "compounds",
+    "kind": "word",
+    "forms": [
+      "compounds"
+    ],
+    "text": "To compound something is to make it grow on top of itself — like compound interest, where you earn interest on your interest. “Money compounds such divides” means wealth doesn't just add to the coaching gap, it multiplies it: richer regions fund better academies, which produce better players, which attract more money.",
+    "audio": true
+  },
+  {
+    "k": "self-perpetuating",
+    "t": "self-perpetuating",
+    "kind": "phrase",
+    "forms": [
+      "self-perpetuating"
+    ],
+    "text": "Self-perpetuating means keeping itself going — success that automatically produces more success. Footballing glory works like that: winning brings money, prestige, and eager kids, which produce more winning. Hence the article's striking stat: the best predictor of a country's rank today is its rank decades ago — four-fifths of 1976's top quarter are still there.",
+    "audio": true
+  },
+  {
+    "k": "heavyweights",
+    "t": "heavyweights",
+    "kind": "word",
+    "forms": [
+      "heavyweights"
+    ],
+    "text": "Borrowed from boxing's biggest weight class, heavyweights are the most powerful players in any arena. Germany and Spain are footballing heavyweights — multiple World Cups each — which is why Japan beating both in Qatar announced its arrival.",
+    "audio": true
+  },
+  {
+    "k": "dark-horse",
+    "t": "dark horse",
+    "kind": "phrase",
+    "forms": [
+      "dark horse"
+    ],
+    "text": "A dark horse is a little-fancied competitor who might just win it all — from horse racing, where an unknown horse (“dark” as in obscure) sometimes stuns the field. Many consider Japan a dark horse this World Cup: not among the favorites, but nobody wants to draw them.",
+    "audio": true
+  },
+  {
+    "k": "ascribed",
+    "t": "ascribed",
+    "kind": "word",
+    "forms": [
+      "ascribed"
+    ],
+    "text": "To ascribe a result to something is to credit that thing as its cause. Japan's rise cannot be ascribed to its economy or population — both have stagnated for decades — so the cause must lie elsewhere: in strategy, not circumstance.",
+    "audio": true
+  },
+  {
+    "k": "stagnated",
+    "t": "stagnated",
+    "kind": "word",
+    "forms": [
+      "stagnated"
+    ],
+    "text": "To stagnate is to stop moving or growing — like stagnant water going stale in a still pond. Japan's economy and population have stagnated since the 1990s, which makes its climb up the football rankings all the more remarkable: it improved with none of the usual tailwinds.",
+    "audio": true
+  },
+  {
+    "k": "revamped",
+    "t": "revamped",
+    "kind": "word",
+    "forms": [
+      "revamped"
+    ],
+    "text": "To revamp something is to overhaul and rebuild it in improved form. In 1992 Japan revamped its amateur league into a professional one and launched its “Hundred Year Vision” — a plan measured in generations, aiming for 100 professional clubs by 2092.",
+    "audio": true
+  },
+  {
+    "k": "prescriptions",
+    "t": "prescriptions",
+    "kind": "word",
+    "forms": [
+      "prescriptions"
+    ],
+    "text": "Here prescriptions are official instructions — rules prescribing what must be done — not slips from a doctor (though it's the same idea: an authority telling you exactly what to take). Japan's plan includes prescriptions for clubs, like the requirement that every one run a youth academy.",
+    "audio": true
+  },
+  {
+    "k": "bottom-up",
+    "t": "bottom-up",
+    "kind": "phrase",
+    "forms": [
+      "bottom-up"
+    ],
+    "text": "A bottom-up system grows from many small, local efforts — thousands of clubs, academies, and playground games — with no single controller; its opposite, top-down, is directed from central headquarters. Japan built football bottom-up and thrived; China went top-down, Olympic-style, and failed — because football runs on improvisation and a deep grassroots base, things you can't order into existence.",
+    "audio": true
+  },
+  {
+    "k": "lavishly",
+    "t": "lavishly",
+    "kind": "word",
+    "forms": [
+      "lavishly"
+    ],
+    "text": "Lavishly means extravagantly, with money poured out freely. China's football program was centralised and lavishly funded — and that's the point of the comparison: all that lavish spending bought less than Japan's patient grassroots plan.",
+    "audio": true
+  },
+  {
+    "k": "grassroots",
+    "t": "grassroots",
+    "kind": "word",
+    "forms": [
+      "grassroots"
+    ],
+    "text": "The grassroots of anything are its ordinary, ground-level participants — in football, the millions of kids playing in parks and school leagues, not the stars or officials. A deep grassroots base is where improvisation and genius get discovered; it's precisely what a government program can fund but can't command into being.",
+    "audio": true
+  },
+  {
+    "k": "diaspora",
+    "t": "diaspora",
+    "kind": "word",
+    "forms": [
+      "diaspora"
+    ],
+    "text": "A diaspora is a people scattered far from their homeland — the communities of emigrants and their descendants living abroad. Senegal's shortcut to footballing strength was drawing on its diaspora: around half its World Cup squad are sons of Senegalese migrants, trained at academies in France.",
+    "audio": true
+  },
+  {
+    "k": "teranga-lions",
+    "t": "Teranga Lions",
+    "kind": "name",
+    "forms": [
+      "Teranga Lions"
+    ],
+    "text": "The nickname of Senegal's national football team — “teranga” is the Wolof word for hospitality, a point of national pride in Senegal.",
+    "audio": true
+  },
+  {
+    "k": "akin",
+    "t": "akin",
+    "kind": "word",
+    "forms": [
+      "akin"
+    ],
+    "text": "Akin means similar in nature — literally “of the same kin,” like family. Senegal fielding its diaspora's sons is akin to funding development through remittances: in both cases, the country earns rewards from citizens working abroad.",
+    "audio": true
+  },
+  {
+    "k": "remittances",
+    "t": "remittances",
+    "kind": "word",
+    "forms": [
+      "remittances"
+    ],
+    "text": "Remittances are the money migrants working abroad send home to their families — for some countries, a bigger income source than any export. The article's clever comparison: a diaspora footballer playing for Senegal is a kind of remittance — value earned abroad, sent home, only in goals instead of cash.",
+    "audio": true
+  },
+  {
+    "k": "curacao",
+    "t": "Curaçao",
+    "kind": "name",
+    "forms": [
+      "Curaçao"
+    ],
+    "text": "A small Caribbean island nation (population about 150,000) that's part of the Kingdom of the Netherlands. Fully 96% of its World Cup squad was born abroad — the most extreme example of building a national team from a diaspora.",
+    "audio": true
+  },
+  {
+    "k": "cape-verde",
+    "t": "Cape Verde",
+    "kind": "name",
+    "forms": [
+      "Cape Verde"
+    ],
+    "text": "A small island nation off the west coast of Africa, population about half a million, with a huge diaspora — more Cape Verdeans live abroad than at home. That shows in its squad: 62% born outside the country.",
+    "audio": true
+  },
+  {
+    "k": "stingy",
+    "t": "stingy",
+    "kind": "word",
+    "forms": [
+      "stingy"
+    ],
+    "text": "Stingy means ungenerous — hating to give anything away. The joke is in the contrast: countries usually stingy with passports, making citizenship painfully hard to get, suddenly throw them at anyone who can bend a free kick.",
+    "audio": true
+  },
+  {
+    "k": "naturalised",
+    "t": "naturalised",
+    "kind": "word",
+    "forms": [
+      "naturalised"
+    ],
+    "text": "To be naturalised is to be granted citizenship of a country you weren't born in. Qatar fields several naturalised players — like Belgian-born Edmilson Junior — athletes handed a new nationality largely so they can wear the national shirt.",
+    "audio": true
+  },
+  {
+    "k": "fields",
+    "t": "fields",
+    "kind": "word",
+    "forms": [
+      "fields"
+    ],
+    "text": "As a verb, to field players is to put them on the field — to select them for your team. “Qatar fields several naturalised players” means Qatar plays them; Malaysia was punished for fielding seven players whose eligibility was faked.",
+    "audio": true
+  },
+  {
+    "k": "ruse",
+    "t": "ruse",
+    "kind": "word",
+    "forms": [
+      "ruse"
+    ],
+    "text": "A ruse is a crafty trick — a scheme designed to deceive. The passport-throwing strategy is called a ruse with a raised eyebrow: at times it goes beyond even FIFA's permissive rules, as when Malaysia fielded seven players whose Malaysian roots had been falsified outright.",
+    "audio": true
+  },
+  {
+    "k": "permissive",
+    "t": "permissive",
+    "kind": "word",
+    "forms": [
+      "permissive"
+    ],
+    "text": "Permissive means allowing a lot — setting loose rules and letting most things slide. Even FIFA's permissive eligibility rules, which already let players switch countries generously, weren't loose enough for Malaysia's faked-ancestry scheme.",
+    "audio": true
+  },
+  {
+    "k": "controlling-for",
+    "t": "controlling for",
+    "kind": "phrase",
+    "forms": [
+      "controlling for"
+    ],
+    "text": "In statistics, controlling for a factor means mathematically holding it equal so it can't secretly drive your result. Teams with more foreign-born players progress further even after controlling for wealth and footballing tradition — meaning the diaspora effect isn't just rich, established nations in disguise; the foreign-born players themselves seem to matter.",
+    "audio": true
+  },
+  {
+    "k": "accrue",
+    "t": "accrue",
+    "kind": "word",
+    "forms": [
+      "accrue"
+    ],
+    "text": "To accrue is to build up gradually as gains flow in — interest accrues in a savings account. The benefits of migration accrue to both countries involved: the one the family left gains diaspora stars like Senegal's, and the one that received them gains stars like Lamine Yamal.",
+    "audio": true
+  },
+  {
+    "k": "duality",
+    "t": "duality",
+    "kind": "word",
+    "forms": [
+      "duality"
+    ],
+    "text": "Duality means two-sidedness — one thing with two faces. The Doué family captures the duality of migration's impact perfectly in two brothers: Désiré plays for France, the country his family moved to; Guéla plays for Ivory Coast, the country they came from.",
+    "audio": true
+  },
+  {
+    "k": "soul-searching",
+    "t": "soul-searching",
+    "kind": "phrase",
+    "forms": [
+      "soul-searching"
+    ],
+    "text": "Soul-searching is a hard, honest look inward at what went wrong — examining your own soul. Italy missing this World Cup (the only past winner to miss out) triggered deep national soul-searching, with some commentators blaming citizenship rules so strict they kept migrants' children off the team.",
+    "audio": true
+  },
+  {
+    "k": "azzurri",
+    "t": "the Azzurri",
+    "kind": "name",
+    "forms": [
+      "Azzurri"
+    ],
+    "text": "The nickname of Italy's national football team — Italian for “the Blues,” after their azure shirts. Four-time world champions, which is why their failure to even qualify this time set off such national anguish.",
+    "audio": true
+  },
+  {
+    "k": "cop",
+    "t": "cop",
+    "kind": "word",
+    "forms": [
+      "cop"
+    ],
+    "text": "British slang: to cop something is to receive it — usually something unpleasant. When England gets knocked out, it's the team's black players who cop the most abuse: they receive the worst of the racist backlash. Nothing to do with police.",
+    "audio": true
+  },
+  {
+    "k": "far-right",
+    "t": "the far right",
+    "kind": "phrase",
+    "forms": [
+      "far right"
+    ],
+    "text": "The far right is the extreme end of right-wing politics — movements built on fierce nationalism and hostility to immigration. The study's unsettling finding: when a diverse team wins, attitudes to immigration warm; when it loses, support for the far right can rise. A football match, quietly moving a country's politics.",
+    "audio": true
+  },
+  {
+    "k": "bragging-rights",
+    "t": "bragging rights",
+    "kind": "phrase",
+    "forms": [
+      "bragging rights"
+    ],
+    "text": "Bragging rights are the informal prize of winning — the right to boast over the loser until the next match. The article's closing point is that World Cup results carry far more than bragging rights: they can shift how whole nations feel about immigrants.",
+    "audio": true
+  }
 ]

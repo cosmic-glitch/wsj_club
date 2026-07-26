@@ -1,334 +1,479 @@
 [
- {
-  "k": "conduit",
-  "t": "conduit",
-  "kind": "vocab",
-  "pron": "KON-doo-it",
-  "forms": ["conduit"],
-  "text": "A conduit is a channel or pipe that something travels through to get from one place to another — literal, like a cable duct, or figurative, like a go-between carrying messages. The Strait of Hormuz is called the Middle East's most critical energy conduit because a huge share of the world's oil must flow through that one narrow passage."
- },
- {
-  "k": "mitigate",
-  "t": "mitigate",
-  "kind": "vocab",
-  "pron": "MIT-ih-gayt",
-  "forms": ["mitigate"],
-  "text": "To mitigate something bad is to make it less severe — to soften or cushion it without necessarily making it go away. The IMF's chief said improvements in energy efficiency were helping to mitigate the shock from the war: the pain was still real, just smaller than it would have been."
- },
- {
-  "k": "sapped",
-  "t": "sapped",
-  "kind": "vocab",
-  "pron": "SAPT",
-  "forms": ["sapped"],
-  "text": "To sap something is to drain it gradually — weakening it bit by bit rather than in one blow, the way a long hot day saps your energy. The energy crisis has sapped economic growth worldwide: expensive, hard-to-get oil slowly wearing the world economy down."
- },
- {
-  "k": "strait-of-hormuz",
-  "t": "Strait of Hormuz",
-  "kind": "name",
-  "forms": ["Strait of Hormuz", "strait"],
-  "text": "A strait is a narrow stretch of sea squeezed between two coastlines. This one — between Iran and the Arabian Peninsula — is the single most important oil passage on Earth: roughly a fifth of the world's oil normally sails through it, which is why closing it shook the entire global economy."
- },
- {
-  "k": "fueled",
-  "t": "fueled",
-  "kind": "word",
-  "forms": ["fueled"],
-  "text": "To fuel something is to feed it and make it burn hotter — here used figuratively, and a little ironically for an oil story: the crisis “fueled inflation,” feeding the worldwide rise in prices."
- },
- {
-  "k": "inflation",
-  "t": "inflation",
-  "kind": "word",
-  "forms": ["inflation"],
-  "text": "Inflation is prices rising across the board, so each dollar buys less than it used to. Oil shocks are classic inflation-starters because energy is baked into the cost of nearly everything — shipping it, making it, even (as Japan's snack makers found) printing the ink on its packaging."
- },
- {
-  "k": "strategic-reserves",
-  "t": "strategic reserves",
-  "kind": "phrase",
-  "forms": ["strategic reserves"],
-  "text": "A strategic reserve is a giant emergency stockpile a government builds in good times — oil stored in tanks and salt caverns — precisely so it can be released when a crisis chokes off supply. Countries that had them rode out the Hormuz closure; countries that couldn't afford them had to ration fuel instead."
- },
- {
-  "k": "inventories",
-  "t": "inventories",
-  "kind": "word",
-  "forms": ["inventories"],
-  "text": "Inventory is the stock of goods a business keeps on hand — here, the oil that companies (rather than governments) hold in storage. “Commercial inventories were healthy” means private tanks were full too, adding a second cushion on top of the national reserves."
- },
- {
-  "k": "run-up",
-  "t": "run-up",
-  "kind": "word",
-  "forms": ["run-up"],
-  "text": "A run-up is a build-up beforehand — a period of rising or stocking up that comes before the main event. Inventories were healthy “after a run-up in 2025”: the stockpiles had been growing before the crisis hit, which turned out to be lucky timing."
- },
- {
-  "k": "cushion",
-  "t": "cushion",
-  "kind": "word",
-  "forms": ["cushion"],
-  "text": "A cushion softens an impact — and in economics it's anything extra you hold in reserve so a shock doesn't hit you at full force. Full oil stockpiles gave big economies a cushion; the article's tragedy is that the countries without one took the blow directly."
- },
- {
-  "k": "ride-out",
-  "t": "ride out",
-  "kind": "phrase",
-  "forms": ["ride out"],
-  "text": "To ride out a storm is to endure it until it passes — sailor's language for surviving rough weather rather than escaping it. Well-stocked economies could ride out the shock with only limited disruption."
- },
- {
-  "k": "pruned",
-  "t": "pruned",
-  "kind": "word",
-  "forms": ["pruned"],
-  "text": "Pruning is what a gardener does — snipping branches off a bush so the rest grows better. Airlines “pruned flight schedules” in response to costly jet fuel: they trimmed away the least profitable flights, a small everyday sign of how far the oil squeeze reached."
- },
- {
-  "k": "squarely",
-  "t": "squarely",
-  "kind": "word",
-  "forms": ["squarely"],
-  "text": "Squarely means directly, full-on — a punch that lands squarely hits dead center. The burden of the supply crunch fell “more squarely” on poorer countries: they took the hit straight, with nothing to deflect it."
- },
- {
-  "k": "crunch",
-  "t": "crunch",
-  "kind": "word",
-  "forms": ["supply crunch"],
-  "text": "In economics, a crunch is a painful squeeze — a sudden shortage of something everyone needs, as in “credit crunch.” The supply crunch here is the world's oil supply being pinched by the closed strait; nothing is literally crunching."
- },
- {
-  "k": "curb",
-  "t": "curb",
-  "kind": "word",
-  "forms": ["curb"],
-  "text": "To curb something is to hold it back — from the strap that reins in a horse, not the edge of a sidewalk. Countries took steps to curb demand for oil: forcing people to use less because there wasn't enough to go around."
- },
- {
-  "k": "rationing",
-  "t": "rationing",
-  "kind": "word",
-  "forms": ["rationing"],
-  "text": "Rationing is the government limiting how much of a scarce thing each person may have — your allotted share is your ration. Fuel rationing in Bangladesh and Sri Lanka meant drivers couldn't simply buy all the gasoline they wanted; wartime economies do the same with food."
- },
- {
-  "k": "embargo",
-  "t": "embargo",
-  "kind": "word",
-  "forms": ["embargo"],
-  "text": "An embargo is an official ban on trade — a country or group refusing to sell (or buy) as a weapon of pressure. The 1973 Arab oil embargo, when Arab producers cut off oil sales to punish supporters of Israel, caused gas lines across America and is still the yardstick every oil shock gets measured against."
- },
- {
-  "k": "underscoring",
-  "t": "underscoring",
-  "kind": "word",
-  "forms": ["underscoring"],
-  "text": "To underscore is to underline — literally to draw a line under something, and so to emphasize it. The mild 5% demand drop, versus 10% in past crises, underscores the article's biggest lesson: oil shocks have become easier to manage."
- },
- {
-  "k": "propel",
-  "t": "propel",
-  "kind": "word",
-  "forms": ["propel", "propelled"],
-  "text": "To propel is to drive something forward or upward — the root of “propeller.” Fears that the crisis would propel oil to $200 a barrel never came true; meanwhile the AI gold rush propelled economic momentum across Asia. Same verb, opposite fortunes."
- },
- {
-  "k": "realized",
-  "t": "realized",
-  "kind": "word",
-  "forms": ["realized"],
-  "text": "Here “realized” doesn't mean “suddenly understood” — it means made real. Fears that “haven't been realized” are fears that never came true: oil at $150 or $200 a barrel stayed a nightmare, not a fact."
- },
- {
-  "k": "stepped-up",
-  "t": "stepped up",
-  "kind": "phrase",
-  "forms": ["stepped up"],
-  "text": "To step up production is to increase it — and the phrase carries a whiff of rising to the occasion, like a player stepping up in a big game. Other producers, including the U.S., stepped up output to plug the gap Iran's closed strait left."
- },
- {
-  "k": "plug-the-gap",
-  "t": "plug the gap",
-  "kind": "phrase",
-  "forms": ["plug some of the gap"],
-  "text": "To plug a gap is to fill a hole so nothing leaks through — the image is stopping up a leak in a barrel. The “gap” here is the missing Hormuz oil, and producers from Venezuela to Brazil poured extra exports into it."
- },
- {
-  "k": "crude",
-  "t": "crude",
-  "kind": "word",
-  "forms": ["crude"],
-  "text": "Crude means raw and unprocessed — nothing to do with rudeness here. Crude oil is petroleum exactly as it comes out of the ground, before refineries turn it into gasoline, jet fuel, and plastics; traders just call it “crude.”"
- },
- {
-  "k": "barrel",
-  "t": "barrel",
-  "kind": "word",
-  "forms": ["barrels", "barrel"],
-  "text": "The barrel is oil's universal unit — 42 gallons, a standard from the days when oil actually shipped in wooden barrels. World demand runs to about 100 million barrels a day, so a drop of “5 million barrels a day” is roughly 5% of everything humanity burns."
- },
- {
-  "k": "throttle",
-  "t": "throttle",
-  "kind": "word",
-  "forms": ["throttle"],
-  "text": "To throttle something is to choke it down — squeezing the flow the way a throttle valve controls fuel to an engine. The headline's point is about control: China can throttle its own oil imports, deliberately dialing them back without strangling its economy."
- },
- {
-  "k": "foremost",
-  "t": "foremost",
-  "kind": "word",
-  "forms": ["foremost"],
-  "text": "Foremost means first-ranked — standing at the very front. China is the world's foremost manufacturing powerhouse: not just a big producer, the leading one."
- },
- {
-  "k": "powerhouse",
-  "t": "powerhouse",
-  "kind": "word",
-  "forms": ["powerhouse"],
-  "text": "Originally a building that generates power; as a metaphor, anything overwhelmingly strong and productive. A manufacturing powerhouse is a country whose factories out-produce everyone else's."
- },
- {
-  "k": "refineries",
-  "t": "refineries",
-  "kind": "word",
-  "forms": ["Refineries"],
-  "text": "A refinery is the industrial plant that refines crude oil — separating and processing it into usable products like gasoline, diesel, and jet fuel. China's refineries cut back production to conserve crude: processing less so the raw supply would last longer."
- },
- {
-  "k": "reoriented",
-  "t": "reoriented",
-  "kind": "word",
-  "forms": ["reoriented"],
-  "text": "To reorient is to turn something to face a new direction. China has reoriented its economy to need less imported oil — pivoting toward coal, renewables, and electric cars — a years-long turn made deliberately, out of worry about exactly this kind of crisis."
- },
- {
-  "k": "renewables",
-  "t": "renewables",
-  "kind": "word",
-  "forms": ["renewables"],
-  "text": "Shorthand for renewable energy sources — solar, wind, hydro — which replenish themselves instead of burning up like coal, oil, or gas. They also waste less: burning fossil fuels loses much of the energy as heat, one reason economies running on renewables squeeze more out of every unit."
- },
- {
-  "k": "adopters",
-  "t": "adopters",
-  "kind": "word",
-  "forms": ["adopters"],
-  "text": "An adopter, in tech-speak, is someone who takes up a new technology — the way “early adopters” are first in line for new gadgets. Chinese drivers have been enthusiastic adopters of electric vehicles, and every EV on the road is a car that no longer needs imported gasoline."
- },
- {
-  "k": "lurched",
-  "t": "lurched",
-  "kind": "word",
-  "forms": ["lurched"],
-  "text": "To lurch is to stagger suddenly and unsteadily — the motion of a bus braking hard. Producer prices “lurched higher” in China: not a smooth climb but an ugly jolt, proof the crisis wasn't costless even there."
- },
- {
-  "k": "resilience",
-  "t": "resilience",
-  "kind": "word",
-  "forms": ["resilience"],
-  "text": "Resilience is the ability to absorb a blow and spring back — from the Latin for “leap back.” China's resilience, and that of other Asian economies most exposed to the closed strait, is what kept the whole global economy humming through the crisis."
- },
- {
-  "k": "humming",
-  "t": "humming",
-  "kind": "word",
-  "forms": ["humming"],
-  "text": "Machinery running smoothly gives off a steady hum — so an economy that keeps humming is one that keeps running along nicely. The phrase is doing quiet work here: despite the biggest oil disruption in decades, the world economy never stalled."
- },
- {
-  "k": "gauge",
-  "t": "gauge",
-  "kind": "word",
-  "forms": ["gauge"],
-  "text": "To gauge something is to measure or estimate it — a gauge is a measuring instrument, like a fuel gauge. The article gauges energy efficiency with a clever yardstick: how much energy an economy burns to produce one dollar of output."
- },
- {
-  "k": "gdp",
-  "t": "gross domestic product (GDP)",
-  "kind": "name",
-  "forms": ["gross domestic product"],
-  "text": "GDP is the total value of everything a country produces in a year — the standard scoreboard for the size of an economy. Divide energy used by GDP produced and you get the efficiency measure this article leans on."
- },
- {
-  "k": "energy-intensity",
-  "t": "energy intensity",
-  "kind": "phrase",
-  "forms": ["energy intensity"],
-  "text": "Energy intensity is how much energy an economy burns per dollar of GDP it produces — a ratio, which is what makes it a fair comparison across countries and decades. It has fallen by about a third in the U.S. and Europe since 2000 and 40% in China: the same dollar of output now takes far less fuel, which blunts every oil shock."
- },
- {
-  "k": "weather",
-  "t": "weather",
-  "kind": "word",
-  "forms": ["weather"],
-  "text": "As a verb, to weather something is to survive it — from ships weathering storms. A shift that “helps economies weather supply disruptions” helps them come through the storm intact. Not the forecast kind of weather."
- },
- {
-  "k": "squeeze",
-  "t": "squeeze",
-  "kind": "word",
-  "forms": ["squeezed out", "oil squeeze"],
-  "text": "Squeezing is this article's favorite image, used both ways: firms “squeezed out improvements” in their factories (extracted every last drop of efficiency), while the “oil squeeze” (the shortage pressing on everyone) hurt economies elsewhere. Pressure in, pressure out."
- },
- {
-  "k": "took-to-heart",
-  "t": "take to heart",
-  "kind": "phrase",
-  "forms": ["took to heart"],
-  "text": "To take a lesson to heart is to absorb it deeply and actually change your behavior — not just nod along. Europe took energy-saving to heart after Russia invaded Ukraine in 2022 and its gas grew scarce; that hard-earned habit paid off again when Hormuz closed."
- },
- {
-  "k": "counterweight",
-  "t": "counterweight",
-  "kind": "word",
-  "forms": ["counterweight"],
-  "text": "A counterweight balances a load by pulling in the opposite direction — cranes and elevators depend on one. Calling the AI boom “a major counterweight to the energy crisis” means its lift roughly balanced the oil shock's drag on the world economy."
- },
- {
-  "k": "offset",
-  "t": "offset",
-  "kind": "word",
-  "forms": ["offset"],
-  "text": "To offset something is to cancel it out with an opposite force — a gain that balances a loss. The AI boom offset the energy drag: booming tech investment and exports pulled the global economy up roughly as hard as expensive oil pulled it down."
- },
- {
-  "k": "drag",
-  "t": "drag",
-  "kind": "word",
-  "forms": ["drag"],
-  "text": "In economics, a drag is anything that slows growth — the metaphor is air resistance dragging on a moving object. The “energy drag” is the slowing force of costly oil; not “a drag” as in something boring."
- },
- {
-  "k": "gold-rush",
-  "t": "gold rush",
-  "kind": "phrase",
-  "forms": ["gold rush"],
-  "text": "A gold rush is a frenzied stampede toward sudden riches, named for the 1849 California rush. The “technological gold rush” is the AI boom — and true to the original, much of the money is being made by those selling the picks and shovels: the chipmakers of Taiwan, South Korea, and Japan, whose exports have soared."
- },
- {
-  "k": "momentum",
-  "t": "momentum",
-  "kind": "word",
-  "forms": ["momentum"],
-  "text": "Momentum is the physics of staying in motion — a rolling boulder is hard to stop. Economic momentum is growth that keeps feeding itself; the AI rush propelled it in key parts of the world economy even while the oil squeeze dragged elsewhere."
- },
- {
-  "k": "imf",
-  "t": "International Monetary Fund (IMF)",
-  "kind": "name",
-  "forms": ["International Monetary Fund"],
-  "text": "The IMF is a global organization of nearly every country, which watches over the world economy and lends to nations in financial trouble. When its managing director speaks about a crisis, it's the closest thing the world economy has to an official diagnosis."
- },
- {
-  "k": "suez-crisis",
-  "t": "Suez Crisis",
-  "kind": "name",
-  "forms": ["Suez Crisis"],
-  "text": "The 1956 showdown over Egypt's Suez Canal — another of the world's great shipping chokepoints — which disrupted oil flows to Europe. It's one of the three historic oil shocks the article uses as a measuring stick for Hormuz."
- }
+  {
+    "k": "conduit",
+    "t": "conduit",
+    "kind": "vocab",
+    "pron": "KON-doo-it",
+    "forms": [
+      "conduit"
+    ],
+    "text": "A conduit is a channel or pipe that something travels through to get from one place to another — literal, like a cable duct, or figurative, like a go-between carrying messages. The Strait of Hormuz is called the Middle East's most critical energy conduit because a huge share of the world's oil must flow through that one narrow passage.",
+    "audio": true
+  },
+  {
+    "k": "mitigate",
+    "t": "mitigate",
+    "kind": "vocab",
+    "pron": "MIT-ih-gayt",
+    "forms": [
+      "mitigate"
+    ],
+    "text": "To mitigate something bad is to make it less severe — to soften or cushion it without necessarily making it go away. The IMF's chief said improvements in energy efficiency were helping to mitigate the shock from the war: the pain was still real, just smaller than it would have been.",
+    "audio": true
+  },
+  {
+    "k": "sapped",
+    "t": "sapped",
+    "kind": "vocab",
+    "pron": "SAPT",
+    "forms": [
+      "sapped"
+    ],
+    "text": "To sap something is to drain it gradually — weakening it bit by bit rather than in one blow, the way a long hot day saps your energy. The energy crisis has sapped economic growth worldwide: expensive, hard-to-get oil slowly wearing the world economy down.",
+    "audio": true
+  },
+  {
+    "k": "strait-of-hormuz",
+    "t": "Strait of Hormuz",
+    "kind": "name",
+    "forms": [
+      "Strait of Hormuz",
+      "strait"
+    ],
+    "text": "A strait is a narrow stretch of sea squeezed between two coastlines. This one — between Iran and the Arabian Peninsula — is the single most important oil passage on Earth: roughly a fifth of the world's oil normally sails through it, which is why closing it shook the entire global economy.",
+    "audio": true
+  },
+  {
+    "k": "fueled",
+    "t": "fueled",
+    "kind": "word",
+    "forms": [
+      "fueled"
+    ],
+    "text": "To fuel something is to feed it and make it burn hotter — here used figuratively, and a little ironically for an oil story: the crisis “fueled inflation,” feeding the worldwide rise in prices.",
+    "audio": true
+  },
+  {
+    "k": "inflation",
+    "t": "inflation",
+    "kind": "word",
+    "forms": [
+      "inflation"
+    ],
+    "text": "Inflation is prices rising across the board, so each dollar buys less than it used to. Oil shocks are classic inflation-starters because energy is baked into the cost of nearly everything — shipping it, making it, even (as Japan's snack makers found) printing the ink on its packaging.",
+    "audio": true
+  },
+  {
+    "k": "strategic-reserves",
+    "t": "strategic reserves",
+    "kind": "phrase",
+    "forms": [
+      "strategic reserves"
+    ],
+    "text": "A strategic reserve is a giant emergency stockpile a government builds in good times — oil stored in tanks and salt caverns — precisely so it can be released when a crisis chokes off supply. Countries that had them rode out the Hormuz closure; countries that couldn't afford them had to ration fuel instead.",
+    "audio": true
+  },
+  {
+    "k": "inventories",
+    "t": "inventories",
+    "kind": "word",
+    "forms": [
+      "inventories"
+    ],
+    "text": "Inventory is the stock of goods a business keeps on hand — here, the oil that companies (rather than governments) hold in storage. “Commercial inventories were healthy” means private tanks were full too, adding a second cushion on top of the national reserves.",
+    "audio": true
+  },
+  {
+    "k": "run-up",
+    "t": "run-up",
+    "kind": "word",
+    "forms": [
+      "run-up"
+    ],
+    "text": "A run-up is a build-up beforehand — a period of rising or stocking up that comes before the main event. Inventories were healthy “after a run-up in 2025”: the stockpiles had been growing before the crisis hit, which turned out to be lucky timing.",
+    "audio": true
+  },
+  {
+    "k": "cushion",
+    "t": "cushion",
+    "kind": "word",
+    "forms": [
+      "cushion"
+    ],
+    "text": "A cushion softens an impact — and in economics it's anything extra you hold in reserve so a shock doesn't hit you at full force. Full oil stockpiles gave big economies a cushion; the article's tragedy is that the countries without one took the blow directly.",
+    "audio": true
+  },
+  {
+    "k": "ride-out",
+    "t": "ride out",
+    "kind": "phrase",
+    "forms": [
+      "ride out"
+    ],
+    "text": "To ride out a storm is to endure it until it passes — sailor's language for surviving rough weather rather than escaping it. Well-stocked economies could ride out the shock with only limited disruption.",
+    "audio": true
+  },
+  {
+    "k": "pruned",
+    "t": "pruned",
+    "kind": "word",
+    "forms": [
+      "pruned"
+    ],
+    "text": "Pruning is what a gardener does — snipping branches off a bush so the rest grows better. Airlines “pruned flight schedules” in response to costly jet fuel: they trimmed away the least profitable flights, a small everyday sign of how far the oil squeeze reached.",
+    "audio": true
+  },
+  {
+    "k": "squarely",
+    "t": "squarely",
+    "kind": "word",
+    "forms": [
+      "squarely"
+    ],
+    "text": "Squarely means directly, full-on — a punch that lands squarely hits dead center. The burden of the supply crunch fell “more squarely” on poorer countries: they took the hit straight, with nothing to deflect it.",
+    "audio": true
+  },
+  {
+    "k": "crunch",
+    "t": "crunch",
+    "kind": "word",
+    "forms": [
+      "supply crunch"
+    ],
+    "text": "In economics, a crunch is a painful squeeze — a sudden shortage of something everyone needs, as in “credit crunch.” The supply crunch here is the world's oil supply being pinched by the closed strait; nothing is literally crunching.",
+    "audio": true
+  },
+  {
+    "k": "curb",
+    "t": "curb",
+    "kind": "word",
+    "forms": [
+      "curb"
+    ],
+    "text": "To curb something is to hold it back — from the strap that reins in a horse, not the edge of a sidewalk. Countries took steps to curb demand for oil: forcing people to use less because there wasn't enough to go around.",
+    "audio": true
+  },
+  {
+    "k": "rationing",
+    "t": "rationing",
+    "kind": "word",
+    "forms": [
+      "rationing"
+    ],
+    "text": "Rationing is the government limiting how much of a scarce thing each person may have — your allotted share is your ration. Fuel rationing in Bangladesh and Sri Lanka meant drivers couldn't simply buy all the gasoline they wanted; wartime economies do the same with food.",
+    "audio": true
+  },
+  {
+    "k": "embargo",
+    "t": "embargo",
+    "kind": "word",
+    "forms": [
+      "embargo"
+    ],
+    "text": "An embargo is an official ban on trade — a country or group refusing to sell (or buy) as a weapon of pressure. The 1973 Arab oil embargo, when Arab producers cut off oil sales to punish supporters of Israel, caused gas lines across America and is still the yardstick every oil shock gets measured against.",
+    "audio": true
+  },
+  {
+    "k": "underscoring",
+    "t": "underscoring",
+    "kind": "word",
+    "forms": [
+      "underscoring"
+    ],
+    "text": "To underscore is to underline — literally to draw a line under something, and so to emphasize it. The mild 5% demand drop, versus 10% in past crises, underscores the article's biggest lesson: oil shocks have become easier to manage.",
+    "audio": true
+  },
+  {
+    "k": "propel",
+    "t": "propel",
+    "kind": "word",
+    "forms": [
+      "propel",
+      "propelled"
+    ],
+    "text": "To propel is to drive something forward or upward — the root of “propeller.” Fears that the crisis would propel oil to $200 a barrel never came true; meanwhile the AI gold rush propelled economic momentum across Asia. Same verb, opposite fortunes.",
+    "audio": true
+  },
+  {
+    "k": "realized",
+    "t": "realized",
+    "kind": "word",
+    "forms": [
+      "realized"
+    ],
+    "text": "Here “realized” doesn't mean “suddenly understood” — it means made real. Fears that “haven't been realized” are fears that never came true: oil at $150 or $200 a barrel stayed a nightmare, not a fact.",
+    "audio": true
+  },
+  {
+    "k": "stepped-up",
+    "t": "stepped up",
+    "kind": "phrase",
+    "forms": [
+      "stepped up"
+    ],
+    "text": "To step up production is to increase it — and the phrase carries a whiff of rising to the occasion, like a player stepping up in a big game. Other producers, including the U.S., stepped up output to plug the gap Iran's closed strait left.",
+    "audio": true
+  },
+  {
+    "k": "plug-the-gap",
+    "t": "plug the gap",
+    "kind": "phrase",
+    "forms": [
+      "plug some of the gap"
+    ],
+    "text": "To plug a gap is to fill a hole so nothing leaks through — the image is stopping up a leak in a barrel. The “gap” here is the missing Hormuz oil, and producers from Venezuela to Brazil poured extra exports into it.",
+    "audio": true
+  },
+  {
+    "k": "crude",
+    "t": "crude",
+    "kind": "word",
+    "forms": [
+      "crude"
+    ],
+    "text": "Crude means raw and unprocessed — nothing to do with rudeness here. Crude oil is petroleum exactly as it comes out of the ground, before refineries turn it into gasoline, jet fuel, and plastics; traders just call it “crude.”",
+    "audio": true
+  },
+  {
+    "k": "barrel",
+    "t": "barrel",
+    "kind": "word",
+    "forms": [
+      "barrels",
+      "barrel"
+    ],
+    "text": "The barrel is oil's universal unit — 42 gallons, a standard from the days when oil actually shipped in wooden barrels. World demand runs to about 100 million barrels a day, so a drop of “5 million barrels a day” is roughly 5% of everything humanity burns.",
+    "audio": true
+  },
+  {
+    "k": "throttle",
+    "t": "throttle",
+    "kind": "word",
+    "forms": [
+      "throttle"
+    ],
+    "text": "To throttle something is to choke it down — squeezing the flow the way a throttle valve controls fuel to an engine. The headline's point is about control: China can throttle its own oil imports, deliberately dialing them back without strangling its economy.",
+    "audio": true
+  },
+  {
+    "k": "foremost",
+    "t": "foremost",
+    "kind": "word",
+    "forms": [
+      "foremost"
+    ],
+    "text": "Foremost means first-ranked — standing at the very front. China is the world's foremost manufacturing powerhouse: not just a big producer, the leading one.",
+    "audio": true
+  },
+  {
+    "k": "powerhouse",
+    "t": "powerhouse",
+    "kind": "word",
+    "forms": [
+      "powerhouse"
+    ],
+    "text": "Originally a building that generates power; as a metaphor, anything overwhelmingly strong and productive. A manufacturing powerhouse is a country whose factories out-produce everyone else's.",
+    "audio": true
+  },
+  {
+    "k": "refineries",
+    "t": "refineries",
+    "kind": "word",
+    "forms": [
+      "Refineries"
+    ],
+    "text": "A refinery is the industrial plant that refines crude oil — separating and processing it into usable products like gasoline, diesel, and jet fuel. China's refineries cut back production to conserve crude: processing less so the raw supply would last longer.",
+    "audio": true
+  },
+  {
+    "k": "reoriented",
+    "t": "reoriented",
+    "kind": "word",
+    "forms": [
+      "reoriented"
+    ],
+    "text": "To reorient is to turn something to face a new direction. China has reoriented its economy to need less imported oil — pivoting toward coal, renewables, and electric cars — a years-long turn made deliberately, out of worry about exactly this kind of crisis.",
+    "audio": true
+  },
+  {
+    "k": "renewables",
+    "t": "renewables",
+    "kind": "word",
+    "forms": [
+      "renewables"
+    ],
+    "text": "Shorthand for renewable energy sources — solar, wind, hydro — which replenish themselves instead of burning up like coal, oil, or gas. They also waste less: burning fossil fuels loses much of the energy as heat, one reason economies running on renewables squeeze more out of every unit.",
+    "audio": true
+  },
+  {
+    "k": "adopters",
+    "t": "adopters",
+    "kind": "word",
+    "forms": [
+      "adopters"
+    ],
+    "text": "An adopter, in tech-speak, is someone who takes up a new technology — the way “early adopters” are first in line for new gadgets. Chinese drivers have been enthusiastic adopters of electric vehicles, and every EV on the road is a car that no longer needs imported gasoline.",
+    "audio": true
+  },
+  {
+    "k": "lurched",
+    "t": "lurched",
+    "kind": "word",
+    "forms": [
+      "lurched"
+    ],
+    "text": "To lurch is to stagger suddenly and unsteadily — the motion of a bus braking hard. Producer prices “lurched higher” in China: not a smooth climb but an ugly jolt, proof the crisis wasn't costless even there.",
+    "audio": true
+  },
+  {
+    "k": "resilience",
+    "t": "resilience",
+    "kind": "word",
+    "forms": [
+      "resilience"
+    ],
+    "text": "Resilience is the ability to absorb a blow and spring back — from the Latin for “leap back.” China's resilience, and that of other Asian economies most exposed to the closed strait, is what kept the whole global economy humming through the crisis.",
+    "audio": true
+  },
+  {
+    "k": "humming",
+    "t": "humming",
+    "kind": "word",
+    "forms": [
+      "humming"
+    ],
+    "text": "Machinery running smoothly gives off a steady hum — so an economy that keeps humming is one that keeps running along nicely. The phrase is doing quiet work here: despite the biggest oil disruption in decades, the world economy never stalled.",
+    "audio": true
+  },
+  {
+    "k": "gauge",
+    "t": "gauge",
+    "kind": "word",
+    "forms": [
+      "gauge"
+    ],
+    "text": "To gauge something is to measure or estimate it — a gauge is a measuring instrument, like a fuel gauge. The article gauges energy efficiency with a clever yardstick: how much energy an economy burns to produce one dollar of output.",
+    "audio": true
+  },
+  {
+    "k": "gdp",
+    "t": "gross domestic product (GDP)",
+    "kind": "name",
+    "forms": [
+      "gross domestic product"
+    ],
+    "text": "GDP is the total value of everything a country produces in a year — the standard scoreboard for the size of an economy. Divide energy used by GDP produced and you get the efficiency measure this article leans on.",
+    "audio": true
+  },
+  {
+    "k": "energy-intensity",
+    "t": "energy intensity",
+    "kind": "phrase",
+    "forms": [
+      "energy intensity"
+    ],
+    "text": "Energy intensity is how much energy an economy burns per dollar of GDP it produces — a ratio, which is what makes it a fair comparison across countries and decades. It has fallen by about a third in the U.S. and Europe since 2000 and 40% in China: the same dollar of output now takes far less fuel, which blunts every oil shock.",
+    "audio": true
+  },
+  {
+    "k": "weather",
+    "t": "weather",
+    "kind": "word",
+    "forms": [
+      "weather"
+    ],
+    "text": "As a verb, to weather something is to survive it — from ships weathering storms. A shift that “helps economies weather supply disruptions” helps them come through the storm intact. Not the forecast kind of weather.",
+    "audio": true
+  },
+  {
+    "k": "squeeze",
+    "t": "squeeze",
+    "kind": "word",
+    "forms": [
+      "squeezed out",
+      "oil squeeze"
+    ],
+    "text": "Squeezing is this article's favorite image, used both ways: firms “squeezed out improvements” in their factories (extracted every last drop of efficiency), while the “oil squeeze” (the shortage pressing on everyone) hurt economies elsewhere. Pressure in, pressure out.",
+    "audio": true
+  },
+  {
+    "k": "took-to-heart",
+    "t": "take to heart",
+    "kind": "phrase",
+    "forms": [
+      "took to heart"
+    ],
+    "text": "To take a lesson to heart is to absorb it deeply and actually change your behavior — not just nod along. Europe took energy-saving to heart after Russia invaded Ukraine in 2022 and its gas grew scarce; that hard-earned habit paid off again when Hormuz closed.",
+    "audio": true
+  },
+  {
+    "k": "counterweight",
+    "t": "counterweight",
+    "kind": "word",
+    "forms": [
+      "counterweight"
+    ],
+    "text": "A counterweight balances a load by pulling in the opposite direction — cranes and elevators depend on one. Calling the AI boom “a major counterweight to the energy crisis” means its lift roughly balanced the oil shock's drag on the world economy.",
+    "audio": true
+  },
+  {
+    "k": "offset",
+    "t": "offset",
+    "kind": "word",
+    "forms": [
+      "offset"
+    ],
+    "text": "To offset something is to cancel it out with an opposite force — a gain that balances a loss. The AI boom offset the energy drag: booming tech investment and exports pulled the global economy up roughly as hard as expensive oil pulled it down.",
+    "audio": true
+  },
+  {
+    "k": "drag",
+    "t": "drag",
+    "kind": "word",
+    "forms": [
+      "drag"
+    ],
+    "text": "In economics, a drag is anything that slows growth — the metaphor is air resistance dragging on a moving object. The “energy drag” is the slowing force of costly oil; not “a drag” as in something boring.",
+    "audio": true
+  },
+  {
+    "k": "gold-rush",
+    "t": "gold rush",
+    "kind": "phrase",
+    "forms": [
+      "gold rush"
+    ],
+    "text": "A gold rush is a frenzied stampede toward sudden riches, named for the 1849 California rush. The “technological gold rush” is the AI boom — and true to the original, much of the money is being made by those selling the picks and shovels: the chipmakers of Taiwan, South Korea, and Japan, whose exports have soared.",
+    "audio": true
+  },
+  {
+    "k": "momentum",
+    "t": "momentum",
+    "kind": "word",
+    "forms": [
+      "momentum"
+    ],
+    "text": "Momentum is the physics of staying in motion — a rolling boulder is hard to stop. Economic momentum is growth that keeps feeding itself; the AI rush propelled it in key parts of the world economy even while the oil squeeze dragged elsewhere.",
+    "audio": true
+  },
+  {
+    "k": "imf",
+    "t": "International Monetary Fund (IMF)",
+    "kind": "name",
+    "forms": [
+      "International Monetary Fund"
+    ],
+    "text": "The IMF is a global organization of nearly every country, which watches over the world economy and lends to nations in financial trouble. When its managing director speaks about a crisis, it's the closest thing the world economy has to an official diagnosis.",
+    "audio": true
+  },
+  {
+    "k": "suez-crisis",
+    "t": "Suez Crisis",
+    "kind": "name",
+    "forms": [
+      "Suez Crisis"
+    ],
+    "text": "The 1956 showdown over Egypt's Suez Canal — another of the world's great shipping chokepoints — which disrupted oil flows to Europe. It's one of the three historic oil shocks the article uses as a measuring stick for Hormuz.",
+    "audio": true
+  }
 ]

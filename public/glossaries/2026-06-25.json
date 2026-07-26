@@ -1,369 +1,528 @@
 [
- {
-  "k": "catalyst",
-  "t": "catalyst",
-  "kind": "vocab",
-  "pron": "KAT-uh-list",
-  "forms": ["catalyst"],
-  "text": "A catalyst is whatever triggers a change or makes it happen faster — in chemistry, a substance that speeds up a reaction; in everyday use, the spark that sets things in motion. Here the AI build-out is inflation's new catalyst: the fresh force kicking off another round of rising prices just as the old ones faded."
- },
- {
-  "k": "waned",
-  "t": "waned",
-  "kind": "vocab",
-  "pron": "WAYND",
-  "forms": ["waned"],
-  "text": "To wane is to gradually shrink in size, strength, or importance — the moon wanes as its lit sliver narrows night by night. The trade wars have waned: died down, no longer the main thing pushing prices up. Which is exactly when the new inflation driver showed up."
- },
- {
-  "k": "recoup",
-  "t": "recoup",
-  "kind": "vocab",
-  "pron": "rih-KOOP",
-  "forms": ["recoup"],
-  "text": "To recoup is to get back money you've spent or lost. When data centers bid up the cost of chips and electricity, ordinary businesses pay more too — and they recoup those costs the only way they can: by charging you higher prices. That's the chain that carries AI spending into your family's bills."
- },
- {
-  "k": "sparking",
-  "t": "sparking",
-  "kind": "word",
-  "forms": ["Sparking"],
-  "text": "To spark something is to set it off — the way one spark starts a fire. The headline says the data-center boom is sparking a new round of inflation: igniting it, not just accompanying it."
- },
- {
-  "k": "third-wave",
-  "t": "third wave of inflation",
-  "kind": "phrase",
-  "forms": ["Third Wave of Inflation"],
-  "text": "The article counts three waves of price rises hitting Americans in a row: first the tariffs from the trade wars, then the jump in fuel prices, and now — the third wave — the AI build-out. Each wave is a different force, arriving just as the last one recedes."
- },
- {
-  "k": "inflation",
-  "t": "inflation",
-  "kind": "word",
-  "forms": ["inflation"],
-  "text": "Inflation is the general rise of prices across the whole economy — the same dollar buying a little less each year. The Fed tries to keep it around 2% a year; the article's worry is that AI spending will keep it stuck near 4% instead."
- },
- {
-  "k": "trade-wars",
-  "t": "trade wars",
-  "kind": "phrase",
-  "forms": ["trade wars"],
-  "text": "A trade war is a fight between countries waged with tariffs — each side taxing the other's goods, which raises prices for shoppers on both sides. President Trump's trade wars were inflation wave number one; the article says they've now died down."
- },
- {
-  "k": "build-out",
-  "t": "build-out",
-  "kind": "word",
-  "forms": ["build-out"],
-  "text": "A build-out is the large-scale physical construction of something — and the article's key point is how strikingly physical the AI build-out is: not just software, but buildings, cooling systems, cables, and generators, perhaps $8 trillion worth by 2032. All that buying is what pushes prices up."
- },
- {
-  "k": "ripple-through",
-  "t": "ripple through",
-  "kind": "phrase",
-  "forms": ["ripple through"],
-  "text": "When something ripples through the economy, its effects spread outward in widening circles, like rings from a stone dropped in a pond. The big question is how far the AI build-out's price effects will ripple — from data centers out to phones, cars, and electric bills."
- },
- {
-  "k": "elevated",
-  "t": "elevated",
-  "kind": "word",
-  "forms": ["elevated"],
-  "text": "Elevated means raised above the normal level — an elevator lifts you, an elevated temperature is a fever. “Keep inflation elevated” means keep it stuck higher than the Fed's 2% target, not spiking wildly but refusing to come down."
- },
- {
-  "k": "arms-race",
-  "t": "arms race",
-  "kind": "phrase",
-  "forms": ["arms race"],
-  "text": "An arms race is a contest where rivals keep building more weapons because the other side is — originally the Cold War nuclear buildup. The “AI arms race” borrows the image: tech giants pouring in ever-bigger sums mostly because their competitors are, with $741 billion of spending this year alone."
- },
- {
-  "k": "unprecedented",
-  "t": "unprecedented",
-  "kind": "word",
-  "forms": ["unprecedented"],
-  "text": "Unprecedented means never seen before — with no earlier example (no “precedent”) to compare it to. The money flooding into AI is unprecedented; even Apple's Tim Cook says he's seen nothing like the cost jump in over 40 years."
- },
- {
-  "k": "peg",
-  "t": "peg",
-  "kind": "word",
-  "forms": ["peg"],
-  "text": "Here to peg a number is to estimate it and pin it down at a figure — “analysts peg capital spending at $741 billion” means that's the number they've fixed on. Nothing to do with a clothes-peg or a tent peg, except the pinning."
- },
- {
-  "k": "capital-spending",
-  "t": "capital spending",
-  "kind": "phrase",
-  "forms": ["capital spending"],
-  "text": "Capital spending (business people say “capex”) is money spent building or buying long-lived things — buildings, machines, data centers — that a company will use for years, as opposed to everyday costs like wages or electricity. Unusually huge capital spending is a company making a giant bet on its future, and the hyperscalers are making the biggest one ever."
- },
- {
-  "k": "hyperscalers",
-  "t": "hyperscalers",
-  "kind": "name",
-  "forms": ["hyperscalers"],
-  "text": "Industry slang for the handful of tech giants — Alphabet (Google), Amazon, Meta, Microsoft, Oracle — that run computing at “hyper scale”: vast worldwide fleets of data centers. When just five companies spend $741 billion in a year, their shopping list moves prices for everyone."
- },
- {
-  "k": "fiber-optic",
-  "t": "fiber-optic",
-  "kind": "word",
-  "forms": ["fiber-optic"],
-  "text": "Fiber-optic cables carry data as pulses of light down hair-thin strands of glass — the fastest way to move information, and part of the very physical shopping list (chips, cooling, cables, generators) every new data center needs."
- },
- {
-  "k": "spilling-over",
-  "t": "spilling over",
-  "kind": "phrase",
-  "forms": ["spilling over"],
-  "text": "When effects spill over, they slosh out of their original container into everything nearby. Chips and electricity aren't used only for AI — so when data centers bid their prices up, the increases spill over into game consoles, cars, phones, and household bills."
- },
- {
-  "k": "array",
-  "t": "array",
-  "kind": "word",
-  "forms": ["array"],
-  "text": "An array is a wide-ranging assortment — a “broad array of consumer-electronics products” means memory chips go into everything from videogame consoles to cars, which is exactly why chip inflation can't stay contained in the AI world."
- },
- {
-  "k": "federal-reserve",
-  "t": "Federal Reserve",
-  "kind": "name",
-  "forms": ["Federal Reserve", "Fed"],
-  "text": "America's central bank — “the Fed” for short — which sets interest rates to keep inflation low and employment high. Its new chairman, Kevin Warsh, has argued AI will eventually push prices down; the article notes his read on that question will be the first big test of his leadership."
- },
- {
-  "k": "disinflationary",
-  "t": "disinflationary",
-  "kind": "word",
-  "forms": ["disinflationary"],
-  "text": "A disinflationary force is one that pushes inflation down — slows the rise of prices (not the same as deflation, where prices actually fall). Warsh's claim is that AI will be “a significant disinflationary force” once it makes workers more productive. The catch: that payoff is years away, and the price pressure is now."
- },
- {
-  "k": "bolstering",
-  "t": "bolstering",
-  "kind": "word",
-  "forms": ["bolstering"],
-  "text": "To bolster something is to prop it up and strengthen it — a bolster is literally a long support pillow. Warsh predicts AI will bolster American competitiveness: shore it up against rivals."
- },
- {
-  "k": "read",
-  "t": "read",
-  "kind": "word",
-  "forms": ["read on the AI boom"],
-  "text": "Here a “read” is a person's interpretation of a situation — their take, as in “what's your read on this?” Warsh's read on the AI boom — whether he judges it inflationary or not — matters enormously, because as Fed chairman he sets interest rates based on it."
- },
- {
-  "k": "infrastructure",
-  "t": "infrastructure",
-  "kind": "word",
-  "forms": ["infrastructure"],
-  "text": "Infrastructure is the basic underlying equipment everything else runs on — roads and power lines for a country; data centers, chips, and cables for AI. The article compares building AI infrastructure to building the railroads or the electric grid: a once-a-century construction project."
- },
- {
-  "k": "dot-com-boom",
-  "t": "dot-com boom",
-  "kind": "name",
-  "forms": ["dot-com boom"],
-  "text": "The late-1990s frenzy when the internet went mainstream and money poured into anything with “.com” in its name — including a massive build-out of telecommunications networks. The article lists it alongside railroads and electrification as a past technology wave the AI boom might resemble."
- },
- {
-  "k": "bear-fruit",
-  "t": "bear fruit",
-  "kind": "phrase",
-  "forms": ["bear fruit"],
-  "text": "An effort bears fruit when it finally produces results — like a tree that takes years before its first harvest. AI's promised benefits (higher productivity, cheaper goods) will take time to bear fruit; the costs, meanwhile, are showing up right now."
- },
- {
-  "k": "reckon",
-  "t": "reckon",
-  "kind": "word",
-  "forms": ["reckon"],
-  "text": "To reckon is to calculate or estimate — “economists at UBS reckon” means that's what their number-crunching suggests. A favorite word of British-flavored financial writing, not a cowboy's “I reckon.”"
- },
- {
-  "k": "ubs",
-  "t": "UBS",
-  "kind": "name",
-  "forms": ["UBS"],
-  "text": "A giant Swiss bank whose economists the article quotes. Their estimate: even on a fast timeline, it'll be at least a couple of years before AI starts helping to lower inflation."
- },
- {
-  "k": "respondents",
-  "t": "respondents",
-  "kind": "word",
-  "forms": ["respondents"],
-  "text": "Respondents are the people who respond to a survey. Of the economists surveyed by NABE, 81% of respondents said the AI build-out will add to inflation over the next year — a strikingly lopsided verdict."
- },
- {
-  "k": "strain",
-  "t": "strain",
-  "kind": "word",
-  "forms": ["strain"],
-  "text": "A strain is stress from being stretched or overloaded — you strain a muscle, or a budget. “A strain on limited resources” means the early phase of every technological revolution demands more chips, workers, and power than exist, and that stretching is what forces prices up."
- },
- {
-  "k": "in-the-pipeline",
-  "t": "in the pipeline",
-  "kind": "phrase",
-  "forms": ["in the pipeline"],
-  "text": "Something in the pipeline is already on its way but hasn't arrived yet — like oil flowing toward you through a pipe. Wholesale electronics prices are up 27%, so more consumer price increases are in the pipeline: already loaded, coming soon to a store near you."
- },
- {
-  "k": "wholesale",
-  "t": "wholesale",
-  "kind": "word",
-  "forms": ["wholesale"],
-  "text": "Wholesale prices are what businesses pay each other for goods in bulk, before anything reaches a store shelf; retail is what you pay. Wholesale prices are an early-warning signal — when they jump 27%, as electronic components just did, consumer prices usually follow."
- },
- {
-  "k": "tariffs",
-  "t": "tariffs",
-  "kind": "word",
-  "forms": ["tariffs"],
-  "text": "A tariff is a tax a country charges on imported goods, usually paid by the importer and passed on to shoppers. Last year's tariffs were inflation wave number one — but the article calls them a one-time shock: prices jump once, then the effect fades."
- },
- {
-  "k": "demand-shock",
-  "t": "demand shock",
-  "kind": "phrase",
-  "forms": ["demand shock", "shock to demand", "shocks"],
-  "text": "In economics, a shock is a sudden jolt to the system. Tariffs and oil spikes are one-time supply shocks — they hit, prices jump, the effect fades. The AI build-out is a shock to demand: a surge in buying that could persist for years, with buyers competing over limited chips, workers, and power the whole time. That difference — fading versus lasting — is the article's core idea."
- },
- {
-  "k": "persist",
-  "t": "persist",
-  "kind": "word",
-  "forms": ["persist"],
-  "text": "To persist is to keep going stubbornly, refusing to stop or fade. It's the scary word in the article's key sentence: AI is a demand shock “that could persist for years” — not a blip that passes, but pressure that stays."
- },
- {
-  "k": "forthcoming",
-  "t": "forthcoming",
-  "kind": "word",
-  "forms": ["forthcoming"],
-  "text": "Forthcoming means coming soon — about to arrive or be released. OpenAI's and Anthropic's forthcoming stock-market debuts could raise even more billions to pour into data centers."
- },
- {
-  "k": "ipo",
-  "t": "initial public offering",
-  "kind": "phrase",
-  "forms": ["initial public offerings"],
-  "text": "An initial public offering — an IPO — is the first time a private company sells its shares to the public on the stock market, usually raising a mountain of cash in the process. OpenAI and Anthropic are both expected to hold one, and that fresh money would add even more fuel to the build-out."
- },
- {
-  "k": "add-fuel",
-  "t": "add fuel to",
-  "kind": "phrase",
-  "forms": ["add even more fuel"],
-  "text": "From the saying “add fuel to the fire” — to make something already intense burn even hotter. Billions raised in IPOs wouldn't start the AI spending fire; they'd feed a blaze that's already roaring."
- },
- {
-  "k": "dynamic",
-  "t": "dynamic",
-  "kind": "word",
-  "forms": ["dynamic"],
-  "text": "A dynamic is the pattern of forces driving a situation — how the pieces push on each other. “That dynamic” refers to years of persistent AI demand ahead, and the stock market has already priced it in."
- },
- {
-  "k": "rally",
-  "t": "rally",
-  "kind": "word",
-  "forms": ["rally"],
-  "text": "In markets, a rally is a strong, sustained rise in prices — the way a team “rallies” from behind. The rally in chip stocks means investors have bid them sharply higher, betting that AI demand keeps growing. Nothing to do with a car rally or a political rally."
- },
- {
-  "k": "shares",
-  "t": "shares",
-  "kind": "word",
-  "forms": ["shares"],
-  "text": "A share is one slice of ownership in a company — own shares of a chipmaker and you own a tiny piece of the business. Chip companies' shares have soared because investors expect data centers to keep buying everything the chipmakers can produce."
- },
- {
-  "k": "selloff",
-  "t": "selloff",
-  "kind": "word",
-  "forms": ["selloff"],
-  "text": "A selloff is a wave of selling that knocks stock prices down fast — the opposite of a rally. Even after a sharp selloff this week, chip stocks are still up about 150% in a year, which tells you how enormous the run-up was."
- },
- {
-  "k": "semiconductor",
-  "t": "semiconductor",
-  "kind": "word",
-  "forms": ["Semiconductor"],
-  "text": "Semiconductors are computer chips — named for silicon, a material that half-conducts electricity, which is what lets it act as billions of tiny switches. The PHLX Semiconductor Index tracks the stock prices of the big chipmakers as one number; it's up about 150% over the past year."
- },
- {
-  "k": "contractors",
-  "t": "contractors",
-  "kind": "word",
-  "forms": ["contractors"],
-  "text": "A contractor is a company hired under contract to do building work — electrical and wiring-installation contractors are the crews who wire up data centers. Their workers' wages are climbing 6.5% a year, nearly double the average, because everyone wants them at once."
- },
- {
-  "k": "picking-up",
-  "t": "picking up",
-  "kind": "phrase",
-  "forms": ["picking up"],
-  "text": "When wages or sales are “picking up,” they're accelerating — gaining speed, like a car picking up speed downhill. Data-center construction has wages for electricians picking up fast."
- },
- {
-  "k": "come-online",
-  "t": "come online",
-  "kind": "phrase",
-  "forms": ["come online"],
-  "text": "When a facility comes online, it switches on and starts operating — plugged into the network at last. Every data center that comes online starts drinking electricity around the clock, which is why power demand (and your electric bill) is forecast to climb."
- },
- {
-  "k": "goldman-sachs",
-  "t": "Goldman Sachs",
-  "kind": "name",
-  "forms": ["Goldman Sachs"],
-  "text": "One of Wall Street's most famous investment banks. Its economists forecast that data centers will account for nearly half of America's growth in electricity demand through 2030 — pushing consumer electricity prices up about 6% a year."
- },
- {
-  "k": "to-be-sure",
-  "t": "to be sure",
-  "kind": "phrase",
-  "forms": ["To be sure"],
-  "text": "“To be sure” is journalist-speak for “admittedly” — the signal that the writer is about to concede the other side's point. Here the concession: nobody expects Covid-level inflation from AI, since electronics and electricity are only a small slice of what families spend."
- },
- {
-  "k": "foresee",
-  "t": "foresee",
-  "kind": "word",
-  "forms": ["foresee"],
-  "text": "To foresee is to see something coming before it happens. Economists don't foresee an inflation surge like the post-Covid one — they expect something quieter but more stubborn: inflation held above target for years."
- },
- {
-  "k": "reading",
-  "t": "reading",
-  "kind": "word",
-  "forms": ["reading of the Fed"],
-  "text": "Here a “reading” is one measurement from an ongoing gauge — the way you take a temperature reading. “The May reading of the Fed's preferred measure” is May's number for inflation, expected to come in at 4.1% — more than double the Fed's 2% target."
- },
- {
-  "k": "labor-department",
-  "t": "Labor Department",
-  "kind": "name",
-  "forms": ["Labor Department"],
-  "text": "The US government department that tracks jobs, wages, and prices — the official scorekeeper behind most of the article's numbers, from the 15% jump in software prices to electricians' rising pay."
- },
- {
-  "k": "central-bank",
-  "t": "central bank",
-  "kind": "phrase",
-  "forms": ["central bank"],
-  "text": "A central bank is the institution that manages a country's money supply and interest rates — for America, the Federal Reserve. “The central bank aims to get inflation to 2%” just means the Fed does; that 2% target hasn't been hit in over five years."
- },
- {
-  "k": "productivity",
-  "t": "productivity",
-  "kind": "word",
-  "forms": ["productivity"],
-  "text": "Productivity is how much a worker produces per hour of work. When technology raises it, the same effort makes more stuff, so businesses can meet demand without raising prices — which is why every past technological revolution eventually cooled inflation, and why AI optimists think this one will too. Eventually."
- }
+  {
+    "k": "catalyst",
+    "t": "catalyst",
+    "kind": "vocab",
+    "pron": "KAT-uh-list",
+    "forms": [
+      "catalyst"
+    ],
+    "text": "A catalyst is whatever triggers a change or makes it happen faster — in chemistry, a substance that speeds up a reaction; in everyday use, the spark that sets things in motion. Here the AI build-out is inflation's new catalyst: the fresh force kicking off another round of rising prices just as the old ones faded.",
+    "audio": true
+  },
+  {
+    "k": "waned",
+    "t": "waned",
+    "kind": "vocab",
+    "pron": "WAYND",
+    "forms": [
+      "waned"
+    ],
+    "text": "To wane is to gradually shrink in size, strength, or importance — the moon wanes as its lit sliver narrows night by night. The trade wars have waned: died down, no longer the main thing pushing prices up. Which is exactly when the new inflation driver showed up.",
+    "audio": true
+  },
+  {
+    "k": "recoup",
+    "t": "recoup",
+    "kind": "vocab",
+    "pron": "rih-KOOP",
+    "forms": [
+      "recoup"
+    ],
+    "text": "To recoup is to get back money you've spent or lost. When data centers bid up the cost of chips and electricity, ordinary businesses pay more too — and they recoup those costs the only way they can: by charging you higher prices. That's the chain that carries AI spending into your family's bills.",
+    "audio": true
+  },
+  {
+    "k": "sparking",
+    "t": "sparking",
+    "kind": "word",
+    "forms": [
+      "Sparking"
+    ],
+    "text": "To spark something is to set it off — the way one spark starts a fire. The headline says the data-center boom is sparking a new round of inflation: igniting it, not just accompanying it.",
+    "audio": true
+  },
+  {
+    "k": "third-wave",
+    "t": "third wave of inflation",
+    "kind": "phrase",
+    "forms": [
+      "Third Wave of Inflation"
+    ],
+    "text": "The article counts three waves of price rises hitting Americans in a row: first the tariffs from the trade wars, then the jump in fuel prices, and now — the third wave — the AI build-out. Each wave is a different force, arriving just as the last one recedes.",
+    "audio": true
+  },
+  {
+    "k": "inflation",
+    "t": "inflation",
+    "kind": "word",
+    "forms": [
+      "inflation"
+    ],
+    "text": "Inflation is the general rise of prices across the whole economy — the same dollar buying a little less each year. The Fed tries to keep it around 2% a year; the article's worry is that AI spending will keep it stuck near 4% instead.",
+    "audio": true
+  },
+  {
+    "k": "trade-wars",
+    "t": "trade wars",
+    "kind": "phrase",
+    "forms": [
+      "trade wars"
+    ],
+    "text": "A trade war is a fight between countries waged with tariffs — each side taxing the other's goods, which raises prices for shoppers on both sides. President Trump's trade wars were inflation wave number one; the article says they've now died down.",
+    "audio": true
+  },
+  {
+    "k": "build-out",
+    "t": "build-out",
+    "kind": "word",
+    "forms": [
+      "build-out"
+    ],
+    "text": "A build-out is the large-scale physical construction of something — and the article's key point is how strikingly physical the AI build-out is: not just software, but buildings, cooling systems, cables, and generators, perhaps $8 trillion worth by 2032. All that buying is what pushes prices up.",
+    "audio": true
+  },
+  {
+    "k": "ripple-through",
+    "t": "ripple through",
+    "kind": "phrase",
+    "forms": [
+      "ripple through"
+    ],
+    "text": "When something ripples through the economy, its effects spread outward in widening circles, like rings from a stone dropped in a pond. The big question is how far the AI build-out's price effects will ripple — from data centers out to phones, cars, and electric bills.",
+    "audio": true
+  },
+  {
+    "k": "elevated",
+    "t": "elevated",
+    "kind": "word",
+    "forms": [
+      "elevated"
+    ],
+    "text": "Elevated means raised above the normal level — an elevator lifts you, an elevated temperature is a fever. “Keep inflation elevated” means keep it stuck higher than the Fed's 2% target, not spiking wildly but refusing to come down.",
+    "audio": true
+  },
+  {
+    "k": "arms-race",
+    "t": "arms race",
+    "kind": "phrase",
+    "forms": [
+      "arms race"
+    ],
+    "text": "An arms race is a contest where rivals keep building more weapons because the other side is — originally the Cold War nuclear buildup. The “AI arms race” borrows the image: tech giants pouring in ever-bigger sums mostly because their competitors are, with $741 billion of spending this year alone.",
+    "audio": true
+  },
+  {
+    "k": "unprecedented",
+    "t": "unprecedented",
+    "kind": "word",
+    "forms": [
+      "unprecedented"
+    ],
+    "text": "Unprecedented means never seen before — with no earlier example (no “precedent”) to compare it to. The money flooding into AI is unprecedented; even Apple's Tim Cook says he's seen nothing like the cost jump in over 40 years.",
+    "audio": true
+  },
+  {
+    "k": "peg",
+    "t": "peg",
+    "kind": "word",
+    "forms": [
+      "peg"
+    ],
+    "text": "Here to peg a number is to estimate it and pin it down at a figure — “analysts peg capital spending at $741 billion” means that's the number they've fixed on. Nothing to do with a clothes-peg or a tent peg, except the pinning.",
+    "audio": true
+  },
+  {
+    "k": "capital-spending",
+    "t": "capital spending",
+    "kind": "phrase",
+    "forms": [
+      "capital spending"
+    ],
+    "text": "Capital spending (business people say “capex”) is money spent building or buying long-lived things — buildings, machines, data centers — that a company will use for years, as opposed to everyday costs like wages or electricity. Unusually huge capital spending is a company making a giant bet on its future, and the hyperscalers are making the biggest one ever.",
+    "audio": true
+  },
+  {
+    "k": "hyperscalers",
+    "t": "hyperscalers",
+    "kind": "name",
+    "forms": [
+      "hyperscalers"
+    ],
+    "text": "Industry slang for the handful of tech giants — Alphabet (Google), Amazon, Meta, Microsoft, Oracle — that run computing at “hyper scale”: vast worldwide fleets of data centers. When just five companies spend $741 billion in a year, their shopping list moves prices for everyone.",
+    "audio": true
+  },
+  {
+    "k": "fiber-optic",
+    "t": "fiber-optic",
+    "kind": "word",
+    "forms": [
+      "fiber-optic"
+    ],
+    "text": "Fiber-optic cables carry data as pulses of light down hair-thin strands of glass — the fastest way to move information, and part of the very physical shopping list (chips, cooling, cables, generators) every new data center needs.",
+    "audio": true
+  },
+  {
+    "k": "spilling-over",
+    "t": "spilling over",
+    "kind": "phrase",
+    "forms": [
+      "spilling over"
+    ],
+    "text": "When effects spill over, they slosh out of their original container into everything nearby. Chips and electricity aren't used only for AI — so when data centers bid their prices up, the increases spill over into game consoles, cars, phones, and household bills.",
+    "audio": true
+  },
+  {
+    "k": "array",
+    "t": "array",
+    "kind": "word",
+    "forms": [
+      "array"
+    ],
+    "text": "An array is a wide-ranging assortment — a “broad array of consumer-electronics products” means memory chips go into everything from videogame consoles to cars, which is exactly why chip inflation can't stay contained in the AI world.",
+    "audio": true
+  },
+  {
+    "k": "federal-reserve",
+    "t": "Federal Reserve",
+    "kind": "name",
+    "forms": [
+      "Federal Reserve",
+      "Fed"
+    ],
+    "text": "America's central bank — “the Fed” for short — which sets interest rates to keep inflation low and employment high. Its new chairman, Kevin Warsh, has argued AI will eventually push prices down; the article notes his read on that question will be the first big test of his leadership.",
+    "audio": true
+  },
+  {
+    "k": "disinflationary",
+    "t": "disinflationary",
+    "kind": "word",
+    "forms": [
+      "disinflationary"
+    ],
+    "text": "A disinflationary force is one that pushes inflation down — slows the rise of prices (not the same as deflation, where prices actually fall). Warsh's claim is that AI will be “a significant disinflationary force” once it makes workers more productive. The catch: that payoff is years away, and the price pressure is now.",
+    "audio": true
+  },
+  {
+    "k": "bolstering",
+    "t": "bolstering",
+    "kind": "word",
+    "forms": [
+      "bolstering"
+    ],
+    "text": "To bolster something is to prop it up and strengthen it — a bolster is literally a long support pillow. Warsh predicts AI will bolster American competitiveness: shore it up against rivals.",
+    "audio": true
+  },
+  {
+    "k": "read",
+    "t": "read",
+    "kind": "word",
+    "forms": [
+      "read on the AI boom"
+    ],
+    "text": "Here a “read” is a person's interpretation of a situation — their take, as in “what's your read on this?” Warsh's read on the AI boom — whether he judges it inflationary or not — matters enormously, because as Fed chairman he sets interest rates based on it.",
+    "audio": true
+  },
+  {
+    "k": "infrastructure",
+    "t": "infrastructure",
+    "kind": "word",
+    "forms": [
+      "infrastructure"
+    ],
+    "text": "Infrastructure is the basic underlying equipment everything else runs on — roads and power lines for a country; data centers, chips, and cables for AI. The article compares building AI infrastructure to building the railroads or the electric grid: a once-a-century construction project.",
+    "audio": true
+  },
+  {
+    "k": "dot-com-boom",
+    "t": "dot-com boom",
+    "kind": "name",
+    "forms": [
+      "dot-com boom"
+    ],
+    "text": "The late-1990s frenzy when the internet went mainstream and money poured into anything with “.com” in its name — including a massive build-out of telecommunications networks. The article lists it alongside railroads and electrification as a past technology wave the AI boom might resemble.",
+    "audio": true
+  },
+  {
+    "k": "bear-fruit",
+    "t": "bear fruit",
+    "kind": "phrase",
+    "forms": [
+      "bear fruit"
+    ],
+    "text": "An effort bears fruit when it finally produces results — like a tree that takes years before its first harvest. AI's promised benefits (higher productivity, cheaper goods) will take time to bear fruit; the costs, meanwhile, are showing up right now.",
+    "audio": true
+  },
+  {
+    "k": "reckon",
+    "t": "reckon",
+    "kind": "word",
+    "forms": [
+      "reckon"
+    ],
+    "text": "To reckon is to calculate or estimate — “economists at UBS reckon” means that's what their number-crunching suggests. A favorite word of British-flavored financial writing, not a cowboy's “I reckon.”",
+    "audio": true
+  },
+  {
+    "k": "ubs",
+    "t": "UBS",
+    "kind": "name",
+    "forms": [
+      "UBS"
+    ],
+    "text": "A giant Swiss bank whose economists the article quotes. Their estimate: even on a fast timeline, it'll be at least a couple of years before AI starts helping to lower inflation.",
+    "audio": true
+  },
+  {
+    "k": "respondents",
+    "t": "respondents",
+    "kind": "word",
+    "forms": [
+      "respondents"
+    ],
+    "text": "Respondents are the people who respond to a survey. Of the economists surveyed by NABE, 81% of respondents said the AI build-out will add to inflation over the next year — a strikingly lopsided verdict.",
+    "audio": true
+  },
+  {
+    "k": "strain",
+    "t": "strain",
+    "kind": "word",
+    "forms": [
+      "strain"
+    ],
+    "text": "A strain is stress from being stretched or overloaded — you strain a muscle, or a budget. “A strain on limited resources” means the early phase of every technological revolution demands more chips, workers, and power than exist, and that stretching is what forces prices up.",
+    "audio": true
+  },
+  {
+    "k": "in-the-pipeline",
+    "t": "in the pipeline",
+    "kind": "phrase",
+    "forms": [
+      "in the pipeline"
+    ],
+    "text": "Something in the pipeline is already on its way but hasn't arrived yet — like oil flowing toward you through a pipe. Wholesale electronics prices are up 27%, so more consumer price increases are in the pipeline: already loaded, coming soon to a store near you.",
+    "audio": true
+  },
+  {
+    "k": "wholesale",
+    "t": "wholesale",
+    "kind": "word",
+    "forms": [
+      "wholesale"
+    ],
+    "text": "Wholesale prices are what businesses pay each other for goods in bulk, before anything reaches a store shelf; retail is what you pay. Wholesale prices are an early-warning signal — when they jump 27%, as electronic components just did, consumer prices usually follow.",
+    "audio": true
+  },
+  {
+    "k": "tariffs",
+    "t": "tariffs",
+    "kind": "word",
+    "forms": [
+      "tariffs"
+    ],
+    "text": "A tariff is a tax a country charges on imported goods, usually paid by the importer and passed on to shoppers. Last year's tariffs were inflation wave number one — but the article calls them a one-time shock: prices jump once, then the effect fades.",
+    "audio": true
+  },
+  {
+    "k": "demand-shock",
+    "t": "demand shock",
+    "kind": "phrase",
+    "forms": [
+      "demand shock",
+      "shock to demand",
+      "shocks"
+    ],
+    "text": "In economics, a shock is a sudden jolt to the system. Tariffs and oil spikes are one-time supply shocks — they hit, prices jump, the effect fades. The AI build-out is a shock to demand: a surge in buying that could persist for years, with buyers competing over limited chips, workers, and power the whole time. That difference — fading versus lasting — is the article's core idea.",
+    "audio": true
+  },
+  {
+    "k": "persist",
+    "t": "persist",
+    "kind": "word",
+    "forms": [
+      "persist"
+    ],
+    "text": "To persist is to keep going stubbornly, refusing to stop or fade. It's the scary word in the article's key sentence: AI is a demand shock “that could persist for years” — not a blip that passes, but pressure that stays.",
+    "audio": true
+  },
+  {
+    "k": "forthcoming",
+    "t": "forthcoming",
+    "kind": "word",
+    "forms": [
+      "forthcoming"
+    ],
+    "text": "Forthcoming means coming soon — about to arrive or be released. OpenAI's and Anthropic's forthcoming stock-market debuts could raise even more billions to pour into data centers.",
+    "audio": true
+  },
+  {
+    "k": "ipo",
+    "t": "initial public offering",
+    "kind": "phrase",
+    "forms": [
+      "initial public offerings"
+    ],
+    "text": "An initial public offering — an IPO — is the first time a private company sells its shares to the public on the stock market, usually raising a mountain of cash in the process. OpenAI and Anthropic are both expected to hold one, and that fresh money would add even more fuel to the build-out.",
+    "audio": true
+  },
+  {
+    "k": "add-fuel",
+    "t": "add fuel to",
+    "kind": "phrase",
+    "forms": [
+      "add even more fuel"
+    ],
+    "text": "From the saying “add fuel to the fire” — to make something already intense burn even hotter. Billions raised in IPOs wouldn't start the AI spending fire; they'd feed a blaze that's already roaring.",
+    "audio": true
+  },
+  {
+    "k": "dynamic",
+    "t": "dynamic",
+    "kind": "word",
+    "forms": [
+      "dynamic"
+    ],
+    "text": "A dynamic is the pattern of forces driving a situation — how the pieces push on each other. “That dynamic” refers to years of persistent AI demand ahead, and the stock market has already priced it in.",
+    "audio": true
+  },
+  {
+    "k": "rally",
+    "t": "rally",
+    "kind": "word",
+    "forms": [
+      "rally"
+    ],
+    "text": "In markets, a rally is a strong, sustained rise in prices — the way a team “rallies” from behind. The rally in chip stocks means investors have bid them sharply higher, betting that AI demand keeps growing. Nothing to do with a car rally or a political rally.",
+    "audio": true
+  },
+  {
+    "k": "shares",
+    "t": "shares",
+    "kind": "word",
+    "forms": [
+      "shares"
+    ],
+    "text": "A share is one slice of ownership in a company — own shares of a chipmaker and you own a tiny piece of the business. Chip companies' shares have soared because investors expect data centers to keep buying everything the chipmakers can produce.",
+    "audio": true
+  },
+  {
+    "k": "selloff",
+    "t": "selloff",
+    "kind": "word",
+    "forms": [
+      "selloff"
+    ],
+    "text": "A selloff is a wave of selling that knocks stock prices down fast — the opposite of a rally. Even after a sharp selloff this week, chip stocks are still up about 150% in a year, which tells you how enormous the run-up was.",
+    "audio": true
+  },
+  {
+    "k": "semiconductor",
+    "t": "semiconductor",
+    "kind": "word",
+    "forms": [
+      "Semiconductor"
+    ],
+    "text": "Semiconductors are computer chips — named for silicon, a material that half-conducts electricity, which is what lets it act as billions of tiny switches. The PHLX Semiconductor Index tracks the stock prices of the big chipmakers as one number; it's up about 150% over the past year.",
+    "audio": true
+  },
+  {
+    "k": "contractors",
+    "t": "contractors",
+    "kind": "word",
+    "forms": [
+      "contractors"
+    ],
+    "text": "A contractor is a company hired under contract to do building work — electrical and wiring-installation contractors are the crews who wire up data centers. Their workers' wages are climbing 6.5% a year, nearly double the average, because everyone wants them at once.",
+    "audio": true
+  },
+  {
+    "k": "picking-up",
+    "t": "picking up",
+    "kind": "phrase",
+    "forms": [
+      "picking up"
+    ],
+    "text": "When wages or sales are “picking up,” they're accelerating — gaining speed, like a car picking up speed downhill. Data-center construction has wages for electricians picking up fast.",
+    "audio": true
+  },
+  {
+    "k": "come-online",
+    "t": "come online",
+    "kind": "phrase",
+    "forms": [
+      "come online"
+    ],
+    "text": "When a facility comes online, it switches on and starts operating — plugged into the network at last. Every data center that comes online starts drinking electricity around the clock, which is why power demand (and your electric bill) is forecast to climb.",
+    "audio": true
+  },
+  {
+    "k": "goldman-sachs",
+    "t": "Goldman Sachs",
+    "kind": "name",
+    "forms": [
+      "Goldman Sachs"
+    ],
+    "text": "One of Wall Street's most famous investment banks. Its economists forecast that data centers will account for nearly half of America's growth in electricity demand through 2030 — pushing consumer electricity prices up about 6% a year.",
+    "audio": true
+  },
+  {
+    "k": "to-be-sure",
+    "t": "to be sure",
+    "kind": "phrase",
+    "forms": [
+      "To be sure"
+    ],
+    "text": "“To be sure” is journalist-speak for “admittedly” — the signal that the writer is about to concede the other side's point. Here the concession: nobody expects Covid-level inflation from AI, since electronics and electricity are only a small slice of what families spend.",
+    "audio": true
+  },
+  {
+    "k": "foresee",
+    "t": "foresee",
+    "kind": "word",
+    "forms": [
+      "foresee"
+    ],
+    "text": "To foresee is to see something coming before it happens. Economists don't foresee an inflation surge like the post-Covid one — they expect something quieter but more stubborn: inflation held above target for years.",
+    "audio": true
+  },
+  {
+    "k": "reading",
+    "t": "reading",
+    "kind": "word",
+    "forms": [
+      "reading of the Fed"
+    ],
+    "text": "Here a “reading” is one measurement from an ongoing gauge — the way you take a temperature reading. “The May reading of the Fed's preferred measure” is May's number for inflation, expected to come in at 4.1% — more than double the Fed's 2% target.",
+    "audio": true
+  },
+  {
+    "k": "labor-department",
+    "t": "Labor Department",
+    "kind": "name",
+    "forms": [
+      "Labor Department"
+    ],
+    "text": "The US government department that tracks jobs, wages, and prices — the official scorekeeper behind most of the article's numbers, from the 15% jump in software prices to electricians' rising pay.",
+    "audio": true
+  },
+  {
+    "k": "central-bank",
+    "t": "central bank",
+    "kind": "phrase",
+    "forms": [
+      "central bank"
+    ],
+    "text": "A central bank is the institution that manages a country's money supply and interest rates — for America, the Federal Reserve. “The central bank aims to get inflation to 2%” just means the Fed does; that 2% target hasn't been hit in over five years.",
+    "audio": true
+  },
+  {
+    "k": "productivity",
+    "t": "productivity",
+    "kind": "word",
+    "forms": [
+      "productivity"
+    ],
+    "text": "Productivity is how much a worker produces per hour of work. When technology raises it, the same effort makes more stuff, so businesses can meet demand without raising prices — which is why every past technological revolution eventually cooled inflation, and why AI optimists think this one will too. Eventually.",
+    "audio": true
+  }
 ]

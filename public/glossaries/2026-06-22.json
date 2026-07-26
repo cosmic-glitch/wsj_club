@@ -1,478 +1,530 @@
 [
- {
-  "k": "partisan",
-  "t": "partisan",
-  "kind": "vocab",
-  "pron": "PAR-tih-zun",
-  "forms": [
-   "partisan"
-  ],
-  "text": "Partisan means fiercely loyal to one political party or side, often so one-sidedly that the other side's view doesn't count. Greenspan was “not a rabid partisan by nature” — he leaned Republican but wasn't a fanatic — and it was Nixon's partisan rage, that all-consuming us-versus-them fury, that turned him off."
- },
- {
-  "k": "plaudits",
-  "t": "plaudits",
-  "kind": "vocab",
-  "pron": "PLAW-dits",
-  "forms": [
-   "plaudits"
-  ],
-  "text": "Plaudits are enthusiastic praise — applause, in word form (same root as “applaud”). Greenspan left the Fed to a chorus of plaudits, hailed as the man who made the American economy sing. The article's sting is what came next: the financial crisis, and the question of whether the applause was deserved."
- },
- {
-  "k": "zealous",
-  "t": "zealous",
-  "kind": "vocab",
-  "pron": "ZEL-us",
-  "forms": [
-   "zealous"
-  ],
-  "text": "Zealous means intensely, passionately devoted to a cause — enthusiasm cranked to maximum. Ayn Rand was a zealous, gut-level believer in individual freedom and the evils of government meddling; her fire, not data, is what pulled the numbers-man toward a political philosophy."
- },
- {
-  "k": "rapt",
-  "t": "rapt",
-  "kind": "vocab",
-  "pron": "RAPT",
-  "forms": [
-   "rapt"
-  ],
-  "text": "Rapt means so absorbed and fascinated that you notice nothing else. The American press proved a rapt audience for Greenspan's deliberately foggy pronouncements — reporters hanging on every syllable of a man famous for using six where one would do."
- },
- {
-  "k": "maestro",
-  "t": "maestro",
-  "kind": "word",
-  "forms": [
-   "maestro"
-  ],
-  "text": "A maestro is a master conductor — the person who leads an orchestra — or any master of an art. It's the article's central image (and the title of a famous book about Greenspan): the jazz-playing economist conducting the American economy, coaxing it to “play its sweetest.” The final paragraph turns the word into a question: was he really a maestro, or just lucky?"
- },
- {
-  "k": "monetary-policy",
-  "t": "monetary policy",
-  "kind": "phrase",
-  "forms": [
-   "monetary policy"
-  ],
-  "text": "Monetary policy is how a central bank steers the whole economy, mainly by raising or lowering interest rates — the cost of borrowing money. Think of it as the economy's thermostat: lower rates when things are sluggish (cheap loans get people spending and hiring), raise them when prices climb too fast (expensive loans cool things down). Doing that balancing act gracefully for 18 years is what made Greenspan “a maestro of monetary policy.”"
- },
- {
-  "k": "federal-reserve",
-  "t": "Federal Reserve",
-  "kind": "name",
-  "forms": [
-   "Federal Reserve",
-   "Fed"
-  ],
-  "text": "The central bank of the United States — “the Fed.” Not a bank for your allowance: it's the bank for the government and for other banks. It controls how much money flows through the economy, sets the key interest rate that ripples into car loans and mortgages, and acts as a lender of last resort when banks are in trouble. Its chairman is often called the most powerful economic figure in the world — the job Greenspan held from 1987 to 2006."
- },
- {
-  "k": "presided",
-  "t": "presided over",
-  "kind": "phrase",
-  "forms": [
-   "presided over"
-  ],
-  "text": "To preside over something is to be the one in charge while it happens — to sit at the head of it (a president, literally, is one who presides). Greenspan presided over the then-longest American boom on record: it happened on his watch, under his baton."
- },
- {
-  "k": "boom",
-  "t": "boom",
-  "kind": "word",
-  "forms": [
-   "boom"
-  ],
-  "text": "In economics, a boom is a stretch of strong growth — businesses expanding, jobs plentiful, spirits high. The 1990s boom Greenspan presided over was the longest America had ever recorded. Its opposite, when the economy shrinks, is a recession — and the swing between them is the business cycle."
- },
- {
-  "k": "business-cycle",
-  "t": "business cycle",
-  "kind": "phrase",
-  "forms": [
-   "business cycle"
-  ],
-  "text": "The business cycle is the economy's up-and-down rhythm — it never grows in a straight line. Expansions (booms) eventually tip into contractions (recessions), which bottom out and turn back up, over and over. Spotting the turns before they arrive is one of the hardest, most valuable skills in economics — and it's how young Greenspan the consultant made his name."
- },
- {
-  "k": "inventories",
-  "t": "inventories",
-  "kind": "word",
-  "forms": [
-   "inventories"
-  ],
-  "text": "A company's inventories are its stocks of unsold goods sitting in warehouses. They're a classic economic clue: in 1957 Greenspan noticed steel inventories growing — steel piling up unsold — and read it as a sign factories would soon slow down. A recession followed, and his reputation was made."
- },
- {
-  "k": "intuit",
-  "t": "intuit",
-  "kind": "word",
-  "forms": [
-   "intuit"
-  ],
-  "text": "To intuit something is to sense it directly, without step-by-step reasoning — to just know, from a feel for the pattern. The irony is lovely: the man who “trusted the notes on the page” used growing steel inventories to intuit that a recession must be looming."
- },
- {
-  "k": "looming",
-  "t": "looming",
-  "kind": "word",
-  "forms": [
-   "looming"
-  ],
-  "text": "Something looming is approaching in a threatening way — rising up ahead of you, large and unavoidable, like a storm cloud on the horizon. A looming recession is one you can see coming before it hits."
- },
- {
-  "k": "conservatoire",
-  "t": "conservatoire",
-  "kind": "word",
-  "forms": [
-   "conservatoire"
-  ],
-  "text": "A conservatoire (or conservatory) is an elite college for training musicians. Juilliard, where Greenspan took classes, is America's most famous — the fact that the future Fed chairman studied there, and toured with a professional jazz band, is the article's whole musical frame in miniature."
- },
- {
-  "k": "reefer",
-  "t": "reefer",
-  "kind": "word",
-  "forms": [
-   "reefer"
-  ],
-  "text": "Reefer is 1940s slang for marijuana. The detail is there for the contrast: between sets, the other jazz musicians would sit and smoke a little reefer — while Greenspan read books about finance and American industry. Same bandstand, very different futures."
- },
- {
-  "k": "jp-morgan",
-  "t": "J.P. Morgan",
-  "kind": "name",
-  "forms": [
-   "J.P. Morgan"
-  ],
-  "text": "The most powerful banker in American history (1837–1913) — a financier so dominant he personally halted financial panics before the Federal Reserve existed to do the job. Fitting reading material for a teenager who would grow up to run the institution invented to replace him."
- },
- {
-  "k": "keynes",
-  "t": "John Maynard Keynes",
-  "kind": "name",
-  "forms": [
-   "Keynes"
-  ],
-  "text": "The British economist (1883–1946) whose analysis of the Great Depression transformed economics — he argued governments should spend to fight downturns, and much of modern macroeconomics grew from his ideas. Greenspan admired Keynes's brilliance but distrusted his “sweeping vision,” preferring to keep to his data."
- },
- {
-  "k": "depression",
-  "t": "the Depression",
-  "kind": "name",
-  "forms": [
-   "Depression"
-  ],
-  "text": "The Great Depression — the catastrophic worldwide economic collapse of the 1930s, when a quarter of American workers had no job. It's the disaster that shaped modern economics (and Keynes's fame), and the ghost every Fed chairman since has been hired to keep from returning."
- },
- {
-  "k": "sweeping",
-  "t": "sweeping",
-  "kind": "word",
-  "forms": [
-   "sweeping"
-  ],
-  "text": "Sweeping here means broad and grand — covering everything in one great arc, like one stroke of a broom. A “sweeping vision” is a big-picture theory of how the whole world works. That's exactly what Greenspan distrusted: he admired Keynes's technical wizardry but had no time for grand visions. He kept to his data."
- },
- {
-  "k": "knack",
-  "t": "knack",
-  "kind": "word",
-  "forms": [
-   "knack"
-  ],
-  "text": "A knack is a natural talent for doing a particular thing — an instinctive skill you can't fully explain or teach. Greenspan's knack was spotting turns in the business cycle before they happened, which made him a star consultant."
- },
- {
-  "k": "ayn-rand",
-  "t": "Ayn Rand",
-  "kind": "name",
-  "forms": [
-   "Ayn Rand"
-  ],
-  "text": "The Russian-born novelist and philosopher (1905–1982) behind “Atlas Shrugged” and “The Fountainhead,” who preached radical individualism: heroic self-reliance, unfettered capitalism, government kept to a bare minimum. Greenspan belonged to her inner circle as a young man — the article credits her with teaching the data-obsessed economist that there was “more to life than data.”"
- },
- {
-  "k": "state-intervention",
-  "t": "state intervention",
-  "kind": "phrase",
-  "forms": [
-   "state intervention"
-  ],
-  "text": "Here “state” means government (as in the state, not Ohio), so state intervention is the government stepping into the economy — regulating, taxing, controlling. Rand considered it evil; her circle saw America's 1960s troubles as the side-effects of government grown too big."
- },
- {
-  "k": "bloat",
-  "t": "bloat",
-  "kind": "word",
-  "forms": [
-   "bloat"
-  ],
-  "text": "Bloat is unhealthy swelling — puffing up beyond proper size. “Government bloat” is the accusation that the state has swollen fat with agencies, spending, and rules; to Rand's circle, America's slowing growth and rising inflation were its inevitable side-effects."
- },
- {
-  "k": "rabid",
-  "t": "rabid",
-  "kind": "word",
-  "forms": [
-   "rabid"
-  ],
-  "text": "Rabid literally means infected with rabies; figuratively it means fanatical to the point of frothing at the mouth. Saying Greenspan was “not a rabid partisan by nature” means he held his politics without the foaming intensity of a true zealot."
- },
- {
-  "k": "libertarian",
-  "t": "libertarian",
-  "kind": "word",
-  "forms": [
-   "libertarian"
-  ],
-  "text": "A libertarian believes in maximum individual freedom and minimum government — let people run their own lives and businesses, and keep the state small. It was the libertarian spirit of Rand and her circle that infused the young Greenspan and steered him toward the Republican Party."
- },
- {
-  "k": "gravitated",
-  "t": "gravitated",
-  "kind": "word",
-  "forms": [
-   "gravitated"
-  ],
-  "text": "To gravitate toward something is to be drawn to it steadily and naturally, as if by gravity — no single decision, just a pull. Greenspan gravitated towards the Republican Party: not a conversion moment, but a slow drift along the lines of his beliefs."
- },
- {
-  "k": "squiring",
-  "t": "squiring",
-  "kind": "word",
-  "forms": [
-   "squiring"
-  ],
-  "text": "To squire someone is to escort them — an old-fashioned, slightly twinkly word for accompanying a woman about town (a squire once attended a knight). Greenspan began squiring Barbara Walters, the famous TV journalist, in 1975 — the article's evidence that the shy numbers-man “had a way with people in high places.”"
- },
- {
-  "k": "fell-in-with",
-  "t": "fell in with",
-  "kind": "phrase",
-  "forms": [
-   "fell in with"
-  ],
-  "text": "To fall in with someone is to drift into their company and circle — joining up by association rather than by formal decision. Greenspan fell in with Richard Nixon, who made him a campaign adviser; the phrase's faint suggestion of questionable company may not be accidental."
- },
- {
-  "k": "tenure",
-  "t": "tenure",
-  "kind": "word",
-  "forms": [
-   "tenure"
-  ],
-  "text": "A tenure is the period someone holds an office or position. Greenspan's tenure at the Fed ran nearly two decades — and it “began on a sour note”: Black Monday hit when he was two months into the job."
- },
- {
-  "k": "sour-note",
-  "t": "sour note",
-  "kind": "phrase",
-  "forms": [
-   "sour note",
-   "Sour notes"
-  ],
-  "text": "A sour note is a wrong, off-pitch note in music — so beginning “on a sour note” means starting badly. The music metaphor is the obituary's spine: his tenure opens on a sour note (the 1987 crash), and at the end “sour notes sounded” again, as people questioned whether the maestro had really been so masterful."
- },
- {
-  "k": "black-monday",
-  "t": "Black Monday",
-  "kind": "name",
-  "forms": [
-   "Black Monday"
-  ],
-  "text": "October 19th 1987 — the day America's stock markets lost more than 20% of their value, the worst one-day drop in the country's history. It hit when Greenspan was just two months into the Fed job; his calm response (keep the banks lending, project confidence) became the template for crisis-fighting central bankers."
- },
- {
-  "k": "jawboned",
-  "t": "jawboned",
-  "kind": "word",
-  "forms": [
-   "jawboned"
-  ],
-  "text": "To jawbone is to pressure someone using nothing but talk — persuading, arm-twisting, leaning on them with words instead of laws or money. After Black Monday, Greenspan jawboned banks into maintaining credit: no rule forced them to keep lending, the Fed chairman just talked them into it. A perfect word for a man whose syllables could move markets."
- },
- {
-  "k": "budget-deficit",
-  "t": "budget deficit",
-  "kind": "phrase",
-  "forms": [
-   "budget deficit"
-  ],
-  "text": "A budget deficit is the gap when a government spends more in a year than it collects in taxes — covered by borrowing. Greenspan pushed the administration to call for cuts to the deficit, reckoning that a government living closer to its means would boost confidence."
- },
- {
-  "k": "reckoned",
-  "t": "reckoned",
-  "kind": "word",
-  "forms": [
-   "reckoned"
-  ],
-  "text": "To reckon is to calculate or judge — “he reckoned it would boost confidence” means that was his considered estimate. An old counting-house word (you reckon up a bill), fitting for a man who lived by the numbers."
- },
- {
-  "k": "leaned-on",
-  "t": "leaned on",
-  "kind": "phrase",
-  "forms": [
-   "leaned on"
-  ],
-  "text": "To lean on someone is to pressure them — applying steady weight until they give. When the first Bush administration leaned on the Fed to juice the economy before an election, Greenspan refused: central-bank independence means the president doesn't get to lean."
- },
- {
-  "k": "had-none-of-it",
-  "t": "had none of it",
-  "kind": "phrase",
-  "forms": [
-   "had none of it"
-  ],
-  "text": "To “have none of it” is to refuse flatly — to reject the pressure or the suggestion outright. The White House leaned on the Fed to fight the recession harder; Greenspan had none of it. That flat refusal is what defending the Fed's independence looks like in practice."
- },
- {
-  "k": "murky",
-  "t": "murky",
-  "kind": "word",
-  "forms": [
-   "murky"
-  ],
-  "text": "Murky means dark and cloudy — hard to see through, like muddy water. “Fedspeak,” the murky language Greenspan spoke more fluently than anyone, was deliberately unclear: a Fed chairman's plain words can move markets, so he learned to say things no one could quite pin down — six syllables where one would do."
- },
- {
-  "k": "havoc",
-  "t": "havoc",
-  "kind": "word",
-  "forms": [
-   "havoc"
-  ],
-  "text": "Havoc is widespread chaos and destruction. The financial havoc of the late 1990s — currency collapses in East Asia and Russia, a giant hedge fund imploding at home — is what Greenspan and his trio of crisis-fighters spent the decade managing."
- },
- {
-  "k": "hedge-fund",
-  "t": "hedge fund",
-  "kind": "phrase",
-  "forms": [
-   "hedge fund"
-  ],
-  "text": "A hedge fund is a lightly regulated investment fund for big investors, free to make aggressive, complicated bets with borrowed money. Long-Term Capital Management was a massive one whose bets went so wrong in 1998 that its collapse threatened the whole financial system — forcing the Fed to orchestrate a rescue."
- },
- {
-  "k": "bail-out",
-  "t": "bail-out",
-  "kind": "word",
-  "forms": [
-   "bail-out",
-   "bail-outs"
-  ],
-  "text": "A bail-out is an emergency rescue of a failing company or bank, usually with other people's money — the image is bailing water out of a sinking boat. The Fed orchestrated one for the hedge fund LTCM in 1998; a decade later, critics would ask whether all those rescues taught Wall Street it could gamble freely because someone would always bail it out."
- },
- {
-  "k": "humming",
-  "t": "humming",
-  "kind": "word",
-  "forms": [
-   "humming"
-  ],
-  "text": "A machine that's humming is running smoothly and steadily — you can hear the contented engine sound. “His Fed kept the American economy humming” blends the article's two metaphors at once: the economy as machine, and as music."
- },
- {
-  "k": "krugman",
-  "t": "Paul Krugman",
-  "kind": "name",
-  "forms": [
-   "Paul Krugman"
-  ],
-  "text": "A famous American economist and columnist (later a Nobel laureate). His 1997 joke — that unemployment would be whatever Greenspan wanted it to be, “plus or minus a random error reflecting the fact that he is not quite God” — captures how total Greenspan's authority seemed at the peak."
- },
- {
-  "k": "playing-by-feel",
-  "t": "playing by feel",
-  "kind": "phrase",
-  "forms": [
-   "played by feel",
-   "playing by feel"
-  ],
-  "text": "Musicians who play by feel improvise from instinct instead of reading the sheet music. The article plants the phrase early — the jazz geniuses played by feel while Greenspan trusted the notes on the page — then springs it at the climax: in the late 1990s, the great data-trusting economist was finally playing by feel, overriding his own numbers on instinct. What follows is the story of that instinct running out."
- },
- {
-  "k": "running-too-hot",
-  "t": "running too hot",
-  "kind": "phrase",
-  "forms": [
-   "running too hot"
-  ],
-  "text": "An economy running too hot is growing faster than it can sustain — demand outracing supply until prices start climbing, like an engine overheating. When Fed colleagues warned the 1990s economy was running too hot, Greenspan told them to be cool: he bet a productivity miracle would keep inflation down. For years, he was right."
- },
- {
-  "k": "productivity",
-  "t": "productivity",
-  "kind": "word",
-  "forms": [
-   "productivity"
-  ],
-  "text": "Productivity is output per worker per hour — how much the economy squeezes from the same labor. It's the magic variable: if new technology lets workers produce more, the economy can grow fast without prices rising. Greenspan's great 1990s bet was that computers had delivered exactly that miracle, so he let the boom run."
- },
- {
-  "k": "inflation",
-  "t": "inflation",
-  "kind": "word",
-  "forms": [
-   "inflation"
-  ],
-  "text": "Inflation is prices rising across the whole economy, so each dollar buys less. Keeping it in check without strangling growth is the Fed's core balancing act — the tightrope Greenspan walked for 18 years, and the fear behind every debate about whether the economy was “running too hot.”"
- },
- {
-  "k": "irrational-exuberance",
-  "t": "irrational exuberance",
-  "kind": "phrase",
-  "forms": [
-   "irrational exuberance"
-  ],
-  "text": "Greenspan's most famous two words, from a 1996 speech: exuberance is bubbling, overflowing excitement, and irrational exuberance is excitement unmoored from reason — investors bidding stock prices up on pure mood. Classic Fedspeak: a gentle, six-syllable way of hinting “this looks like a bubble” without ever saying so."
- },
- {
-  "k": "resilient",
-  "t": "resilient",
-  "kind": "word",
-  "forms": [
-   "resilient"
-  ],
-  "text": "Resilient means able to absorb a blow and bounce back into shape, like a good spring. Even while warning about giddy stock prices, Greenspan believed the economy was more resilient than ever — tough enough to take a shock. The 2008 crisis would test that belief brutally."
- },
- {
-  "k": "utterances",
-  "t": "utterances",
-  "kind": "word",
-  "forms": [
-   "utterances"
-  ],
-  "text": "Utterances are things spoken aloud — the word treats each remark as an event in itself, which is exactly how markets once treated Greenspan's. The telling line: after the crash, the economy “did not jump at his utterances as it had before.” The maestro's baton had stopped commanding the orchestra."
- },
- {
-  "k": "jobless-recovery",
-  "t": "jobless recovery",
-  "kind": "phrase",
-  "forms": [
-   "jobless recovery"
-  ],
-  "text": "A jobless recovery is the frustrating aftermath of a recession in which the economy technically starts growing again but hiring doesn't come back — output recovers, workers don't. That's what followed the dot-com crash of the early 2000s, before the housing boom took over."
- },
- {
-  "k": "memoir",
-  "t": "memoir",
-  "kind": "word",
-  "forms": [
-   "memoir"
-  ],
-  "text": "A memoir is a book of one's own life and career, written by oneself. The timing here is the obituary's cruelest joke: Greenspan barely had time to publish his triumphant memoir before the global financial crisis hit — and rewrote how his story would be judged."
- },
- {
-  "k": "deregulation",
-  "t": "deregulation",
-  "kind": "word",
-  "forms": [
-   "deregulation"
-  ],
-  "text": "Deregulation is the removing of government rules from an industry — letting banks and markets police themselves. It was Greenspan's lifelong faith, inherited from his libertarian youth. The 2008 crisis “shook his faith in deregulation”: a remarkable admission from the man who had preached it for decades."
- }
+  {
+    "k": "partisan",
+    "t": "partisan",
+    "kind": "vocab",
+    "pron": "PAR-tih-zun",
+    "forms": [
+      "partisan"
+    ],
+    "text": "Partisan means fiercely loyal to one political party or side, often so one-sidedly that the other side's view doesn't count. Greenspan was “not a rabid partisan by nature” — he leaned Republican but wasn't a fanatic — and it was Nixon's partisan rage, that all-consuming us-versus-them fury, that turned him off.",
+    "audio": true
+  },
+  {
+    "k": "plaudits",
+    "t": "plaudits",
+    "kind": "vocab",
+    "pron": "PLAW-dits",
+    "forms": [
+      "plaudits"
+    ],
+    "text": "Plaudits are enthusiastic praise — applause, in word form (same root as “applaud”). Greenspan left the Fed to a chorus of plaudits, hailed as the man who made the American economy sing. The article's sting is what came next: the financial crisis, and the question of whether the applause was deserved.",
+    "audio": true
+  },
+  {
+    "k": "zealous",
+    "t": "zealous",
+    "kind": "vocab",
+    "pron": "ZEL-us",
+    "forms": [
+      "zealous"
+    ],
+    "text": "Zealous means intensely, passionately devoted to a cause — enthusiasm cranked to maximum. Ayn Rand was a zealous, gut-level believer in individual freedom and the evils of government meddling; her fire, not data, is what pulled the numbers-man toward a political philosophy.",
+    "audio": true
+  },
+  {
+    "k": "rapt",
+    "t": "rapt",
+    "kind": "vocab",
+    "pron": "RAPT",
+    "forms": [
+      "rapt"
+    ],
+    "text": "Rapt means so absorbed and fascinated that you notice nothing else. The American press proved a rapt audience for Greenspan's deliberately foggy pronouncements — reporters hanging on every syllable of a man famous for using six where one would do.",
+    "audio": true
+  },
+  {
+    "k": "maestro",
+    "t": "maestro",
+    "kind": "word",
+    "forms": [
+      "maestro"
+    ],
+    "text": "A maestro is a master conductor — the person who leads an orchestra — or any master of an art. It's the article's central image (and the title of a famous book about Greenspan): the jazz-playing economist conducting the American economy, coaxing it to “play its sweetest.” The final paragraph turns the word into a question: was he really a maestro, or just lucky?",
+    "audio": true
+  },
+  {
+    "k": "monetary-policy",
+    "t": "monetary policy",
+    "kind": "phrase",
+    "forms": [
+      "monetary policy"
+    ],
+    "text": "Monetary policy is how a central bank steers the whole economy, mainly by raising or lowering interest rates — the cost of borrowing money. Think of it as the economy's thermostat: lower rates when things are sluggish (cheap loans get people spending and hiring), raise them when prices climb too fast (expensive loans cool things down). Doing that balancing act gracefully for 18 years is what made Greenspan “a maestro of monetary policy.”",
+    "audio": true
+  },
+  {
+    "k": "federal-reserve",
+    "t": "Federal Reserve",
+    "kind": "name",
+    "forms": [
+      "Federal Reserve",
+      "Fed"
+    ],
+    "text": "The central bank of the United States — “the Fed.” Not a bank for your allowance: it's the bank for the government and for other banks. It controls how much money flows through the economy, sets the key interest rate that ripples into car loans and mortgages, and acts as a lender of last resort when banks are in trouble. Its chairman is often called the most powerful economic figure in the world — the job Greenspan held from 1987 to 2006.",
+    "audio": true
+  },
+  {
+    "k": "presided",
+    "t": "presided over",
+    "kind": "phrase",
+    "forms": [
+      "presided over"
+    ],
+    "text": "To preside over something is to be the one in charge while it happens — to sit at the head of it (a president, literally, is one who presides). Greenspan presided over the then-longest American boom on record: it happened on his watch, under his baton.",
+    "audio": true
+  },
+  {
+    "k": "boom",
+    "t": "boom",
+    "kind": "word",
+    "forms": [
+      "boom"
+    ],
+    "text": "In economics, a boom is a stretch of strong growth — businesses expanding, jobs plentiful, spirits high. The 1990s boom Greenspan presided over was the longest America had ever recorded. Its opposite, when the economy shrinks, is a recession — and the swing between them is the business cycle.",
+    "audio": true
+  },
+  {
+    "k": "business-cycle",
+    "t": "business cycle",
+    "kind": "phrase",
+    "forms": [
+      "business cycle"
+    ],
+    "text": "The business cycle is the economy's up-and-down rhythm — it never grows in a straight line. Expansions (booms) eventually tip into contractions (recessions), which bottom out and turn back up, over and over. Spotting the turns before they arrive is one of the hardest, most valuable skills in economics — and it's how young Greenspan the consultant made his name.",
+    "audio": true
+  },
+  {
+    "k": "inventories",
+    "t": "inventories",
+    "kind": "word",
+    "forms": [
+      "inventories"
+    ],
+    "text": "A company's inventories are its stocks of unsold goods sitting in warehouses. They're a classic economic clue: in 1957 Greenspan noticed steel inventories growing — steel piling up unsold — and read it as a sign factories would soon slow down. A recession followed, and his reputation was made.",
+    "audio": true
+  },
+  {
+    "k": "intuit",
+    "t": "intuit",
+    "kind": "word",
+    "forms": [
+      "intuit"
+    ],
+    "text": "To intuit something is to sense it directly, without step-by-step reasoning — to just know, from a feel for the pattern. The irony is lovely: the man who “trusted the notes on the page” used growing steel inventories to intuit that a recession must be looming.",
+    "audio": true
+  },
+  {
+    "k": "looming",
+    "t": "looming",
+    "kind": "word",
+    "forms": [
+      "looming"
+    ],
+    "text": "Something looming is approaching in a threatening way — rising up ahead of you, large and unavoidable, like a storm cloud on the horizon. A looming recession is one you can see coming before it hits.",
+    "audio": true
+  },
+  {
+    "k": "conservatoire",
+    "t": "conservatoire",
+    "kind": "word",
+    "forms": [
+      "conservatoire"
+    ],
+    "text": "A conservatoire (or conservatory) is an elite college for training musicians. Juilliard, where Greenspan took classes, is America's most famous — the fact that the future Fed chairman studied there, and toured with a professional jazz band, is the article's whole musical frame in miniature.",
+    "audio": true
+  },
+  {
+    "k": "reefer",
+    "t": "reefer",
+    "kind": "word",
+    "forms": [
+      "reefer"
+    ],
+    "text": "Reefer is 1940s slang for marijuana. The detail is there for the contrast: between sets, the other jazz musicians would sit and smoke a little reefer — while Greenspan read books about finance and American industry. Same bandstand, very different futures.",
+    "audio": true
+  },
+  {
+    "k": "jp-morgan",
+    "t": "J.P. Morgan",
+    "kind": "name",
+    "forms": [
+      "J.P. Morgan"
+    ],
+    "text": "The most powerful banker in American history (1837–1913) — a financier so dominant he personally halted financial panics before the Federal Reserve existed to do the job. Fitting reading material for a teenager who would grow up to run the institution invented to replace him.",
+    "audio": true
+  },
+  {
+    "k": "keynes",
+    "t": "John Maynard Keynes",
+    "kind": "name",
+    "forms": [
+      "Keynes"
+    ],
+    "text": "The British economist (1883–1946) whose analysis of the Great Depression transformed economics — he argued governments should spend to fight downturns, and much of modern macroeconomics grew from his ideas. Greenspan admired Keynes's brilliance but distrusted his “sweeping vision,” preferring to keep to his data.",
+    "audio": true
+  },
+  {
+    "k": "depression",
+    "t": "the Depression",
+    "kind": "name",
+    "forms": [
+      "Depression"
+    ],
+    "text": "The Great Depression — the catastrophic worldwide economic collapse of the 1930s, when a quarter of American workers had no job. It's the disaster that shaped modern economics (and Keynes's fame), and the ghost every Fed chairman since has been hired to keep from returning.",
+    "audio": true
+  },
+  {
+    "k": "sweeping",
+    "t": "sweeping",
+    "kind": "word",
+    "forms": [
+      "sweeping"
+    ],
+    "text": "Sweeping here means broad and grand — covering everything in one great arc, like one stroke of a broom. A “sweeping vision” is a big-picture theory of how the whole world works. That's exactly what Greenspan distrusted: he admired Keynes's technical wizardry but had no time for grand visions. He kept to his data.",
+    "audio": true
+  },
+  {
+    "k": "knack",
+    "t": "knack",
+    "kind": "word",
+    "forms": [
+      "knack"
+    ],
+    "text": "A knack is a natural talent for doing a particular thing — an instinctive skill you can't fully explain or teach. Greenspan's knack was spotting turns in the business cycle before they happened, which made him a star consultant.",
+    "audio": true
+  },
+  {
+    "k": "ayn-rand",
+    "t": "Ayn Rand",
+    "kind": "name",
+    "forms": [
+      "Ayn Rand"
+    ],
+    "text": "The Russian-born novelist and philosopher (1905–1982) behind “Atlas Shrugged” and “The Fountainhead,” who preached radical individualism: heroic self-reliance, unfettered capitalism, government kept to a bare minimum. Greenspan belonged to her inner circle as a young man — the article credits her with teaching the data-obsessed economist that there was “more to life than data.”",
+    "audio": true
+  },
+  {
+    "k": "state-intervention",
+    "t": "state intervention",
+    "kind": "phrase",
+    "forms": [
+      "state intervention"
+    ],
+    "text": "Here “state” means government (as in the state, not Ohio), so state intervention is the government stepping into the economy — regulating, taxing, controlling. Rand considered it evil; her circle saw America's 1960s troubles as the side-effects of government grown too big.",
+    "audio": true
+  },
+  {
+    "k": "bloat",
+    "t": "bloat",
+    "kind": "word",
+    "forms": [
+      "bloat"
+    ],
+    "text": "Bloat is unhealthy swelling — puffing up beyond proper size. “Government bloat” is the accusation that the state has swollen fat with agencies, spending, and rules; to Rand's circle, America's slowing growth and rising inflation were its inevitable side-effects.",
+    "audio": true
+  },
+  {
+    "k": "rabid",
+    "t": "rabid",
+    "kind": "word",
+    "forms": [
+      "rabid"
+    ],
+    "text": "Rabid literally means infected with rabies; figuratively it means fanatical to the point of frothing at the mouth. Saying Greenspan was “not a rabid partisan by nature” means he held his politics without the foaming intensity of a true zealot.",
+    "audio": true
+  },
+  {
+    "k": "libertarian",
+    "t": "libertarian",
+    "kind": "word",
+    "forms": [
+      "libertarian"
+    ],
+    "text": "A libertarian believes in maximum individual freedom and minimum government — let people run their own lives and businesses, and keep the state small. It was the libertarian spirit of Rand and her circle that infused the young Greenspan and steered him toward the Republican Party.",
+    "audio": true
+  },
+  {
+    "k": "gravitated",
+    "t": "gravitated",
+    "kind": "word",
+    "forms": [
+      "gravitated"
+    ],
+    "text": "To gravitate toward something is to be drawn to it steadily and naturally, as if by gravity — no single decision, just a pull. Greenspan gravitated towards the Republican Party: not a conversion moment, but a slow drift along the lines of his beliefs.",
+    "audio": true
+  },
+  {
+    "k": "squiring",
+    "t": "squiring",
+    "kind": "word",
+    "forms": [
+      "squiring"
+    ],
+    "text": "To squire someone is to escort them — an old-fashioned, slightly twinkly word for accompanying a woman about town (a squire once attended a knight). Greenspan began squiring Barbara Walters, the famous TV journalist, in 1975 — the article's evidence that the shy numbers-man “had a way with people in high places.”",
+    "audio": true
+  },
+  {
+    "k": "fell-in-with",
+    "t": "fell in with",
+    "kind": "phrase",
+    "forms": [
+      "fell in with"
+    ],
+    "text": "To fall in with someone is to drift into their company and circle — joining up by association rather than by formal decision. Greenspan fell in with Richard Nixon, who made him a campaign adviser; the phrase's faint suggestion of questionable company may not be accidental.",
+    "audio": true
+  },
+  {
+    "k": "tenure",
+    "t": "tenure",
+    "kind": "word",
+    "forms": [
+      "tenure"
+    ],
+    "text": "A tenure is the period someone holds an office or position. Greenspan's tenure at the Fed ran nearly two decades — and it “began on a sour note”: Black Monday hit when he was two months into the job.",
+    "audio": true
+  },
+  {
+    "k": "sour-note",
+    "t": "sour note",
+    "kind": "phrase",
+    "forms": [
+      "sour note",
+      "Sour notes"
+    ],
+    "text": "A sour note is a wrong, off-pitch note in music — so beginning “on a sour note” means starting badly. The music metaphor is the obituary's spine: his tenure opens on a sour note (the 1987 crash), and at the end “sour notes sounded” again, as people questioned whether the maestro had really been so masterful.",
+    "audio": true
+  },
+  {
+    "k": "black-monday",
+    "t": "Black Monday",
+    "kind": "name",
+    "forms": [
+      "Black Monday"
+    ],
+    "text": "October 19th 1987 — the day America's stock markets lost more than 20% of their value, the worst one-day drop in the country's history. It hit when Greenspan was just two months into the Fed job; his calm response (keep the banks lending, project confidence) became the template for crisis-fighting central bankers.",
+    "audio": true
+  },
+  {
+    "k": "jawboned",
+    "t": "jawboned",
+    "kind": "word",
+    "forms": [
+      "jawboned"
+    ],
+    "text": "To jawbone is to pressure someone using nothing but talk — persuading, arm-twisting, leaning on them with words instead of laws or money. After Black Monday, Greenspan jawboned banks into maintaining credit: no rule forced them to keep lending, the Fed chairman just talked them into it. A perfect word for a man whose syllables could move markets.",
+    "audio": true
+  },
+  {
+    "k": "budget-deficit",
+    "t": "budget deficit",
+    "kind": "phrase",
+    "forms": [
+      "budget deficit"
+    ],
+    "text": "A budget deficit is the gap when a government spends more in a year than it collects in taxes — covered by borrowing. Greenspan pushed the administration to call for cuts to the deficit, reckoning that a government living closer to its means would boost confidence.",
+    "audio": true
+  },
+  {
+    "k": "reckoned",
+    "t": "reckoned",
+    "kind": "word",
+    "forms": [
+      "reckoned"
+    ],
+    "text": "To reckon is to calculate or judge — “he reckoned it would boost confidence” means that was his considered estimate. An old counting-house word (you reckon up a bill), fitting for a man who lived by the numbers.",
+    "audio": true
+  },
+  {
+    "k": "leaned-on",
+    "t": "leaned on",
+    "kind": "phrase",
+    "forms": [
+      "leaned on"
+    ],
+    "text": "To lean on someone is to pressure them — applying steady weight until they give. When the first Bush administration leaned on the Fed to juice the economy before an election, Greenspan refused: central-bank independence means the president doesn't get to lean.",
+    "audio": true
+  },
+  {
+    "k": "had-none-of-it",
+    "t": "had none of it",
+    "kind": "phrase",
+    "forms": [
+      "had none of it"
+    ],
+    "text": "To “have none of it” is to refuse flatly — to reject the pressure or the suggestion outright. The White House leaned on the Fed to fight the recession harder; Greenspan had none of it. That flat refusal is what defending the Fed's independence looks like in practice.",
+    "audio": true
+  },
+  {
+    "k": "murky",
+    "t": "murky",
+    "kind": "word",
+    "forms": [
+      "murky"
+    ],
+    "text": "Murky means dark and cloudy — hard to see through, like muddy water. “Fedspeak,” the murky language Greenspan spoke more fluently than anyone, was deliberately unclear: a Fed chairman's plain words can move markets, so he learned to say things no one could quite pin down — six syllables where one would do.",
+    "audio": true
+  },
+  {
+    "k": "havoc",
+    "t": "havoc",
+    "kind": "word",
+    "forms": [
+      "havoc"
+    ],
+    "text": "Havoc is widespread chaos and destruction. The financial havoc of the late 1990s — currency collapses in East Asia and Russia, a giant hedge fund imploding at home — is what Greenspan and his trio of crisis-fighters spent the decade managing.",
+    "audio": true
+  },
+  {
+    "k": "hedge-fund",
+    "t": "hedge fund",
+    "kind": "phrase",
+    "forms": [
+      "hedge fund"
+    ],
+    "text": "A hedge fund is a lightly regulated investment fund for big investors, free to make aggressive, complicated bets with borrowed money. Long-Term Capital Management was a massive one whose bets went so wrong in 1998 that its collapse threatened the whole financial system — forcing the Fed to orchestrate a rescue.",
+    "audio": true
+  },
+  {
+    "k": "bail-out",
+    "t": "bail-out",
+    "kind": "word",
+    "forms": [
+      "bail-out",
+      "bail-outs"
+    ],
+    "text": "A bail-out is an emergency rescue of a failing company or bank, usually with other people's money — the image is bailing water out of a sinking boat. The Fed orchestrated one for the hedge fund LTCM in 1998; a decade later, critics would ask whether all those rescues taught Wall Street it could gamble freely because someone would always bail it out.",
+    "audio": true
+  },
+  {
+    "k": "humming",
+    "t": "humming",
+    "kind": "word",
+    "forms": [
+      "humming"
+    ],
+    "text": "A machine that's humming is running smoothly and steadily — you can hear the contented engine sound. “His Fed kept the American economy humming” blends the article's two metaphors at once: the economy as machine, and as music.",
+    "audio": true
+  },
+  {
+    "k": "krugman",
+    "t": "Paul Krugman",
+    "kind": "name",
+    "forms": [
+      "Paul Krugman"
+    ],
+    "text": "A famous American economist and columnist (later a Nobel laureate). His 1997 joke — that unemployment would be whatever Greenspan wanted it to be, “plus or minus a random error reflecting the fact that he is not quite God” — captures how total Greenspan's authority seemed at the peak.",
+    "audio": true
+  },
+  {
+    "k": "playing-by-feel",
+    "t": "playing by feel",
+    "kind": "phrase",
+    "forms": [
+      "played by feel",
+      "playing by feel"
+    ],
+    "text": "Musicians who play by feel improvise from instinct instead of reading the sheet music. The article plants the phrase early — the jazz geniuses played by feel while Greenspan trusted the notes on the page — then springs it at the climax: in the late 1990s, the great data-trusting economist was finally playing by feel, overriding his own numbers on instinct. What follows is the story of that instinct running out.",
+    "audio": true
+  },
+  {
+    "k": "running-too-hot",
+    "t": "running too hot",
+    "kind": "phrase",
+    "forms": [
+      "running too hot"
+    ],
+    "text": "An economy running too hot is growing faster than it can sustain — demand outracing supply until prices start climbing, like an engine overheating. When Fed colleagues warned the 1990s economy was running too hot, Greenspan told them to be cool: he bet a productivity miracle would keep inflation down. For years, he was right.",
+    "audio": true
+  },
+  {
+    "k": "productivity",
+    "t": "productivity",
+    "kind": "word",
+    "forms": [
+      "productivity"
+    ],
+    "text": "Productivity is output per worker per hour — how much the economy squeezes from the same labor. It's the magic variable: if new technology lets workers produce more, the economy can grow fast without prices rising. Greenspan's great 1990s bet was that computers had delivered exactly that miracle, so he let the boom run.",
+    "audio": true
+  },
+  {
+    "k": "inflation",
+    "t": "inflation",
+    "kind": "word",
+    "forms": [
+      "inflation"
+    ],
+    "text": "Inflation is prices rising across the whole economy, so each dollar buys less. Keeping it in check without strangling growth is the Fed's core balancing act — the tightrope Greenspan walked for 18 years, and the fear behind every debate about whether the economy was “running too hot.”",
+    "audio": true
+  },
+  {
+    "k": "irrational-exuberance",
+    "t": "irrational exuberance",
+    "kind": "phrase",
+    "forms": [
+      "irrational exuberance"
+    ],
+    "text": "Greenspan's most famous two words, from a 1996 speech: exuberance is bubbling, overflowing excitement, and irrational exuberance is excitement unmoored from reason — investors bidding stock prices up on pure mood. Classic Fedspeak: a gentle, six-syllable way of hinting “this looks like a bubble” without ever saying so.",
+    "audio": true
+  },
+  {
+    "k": "resilient",
+    "t": "resilient",
+    "kind": "word",
+    "forms": [
+      "resilient"
+    ],
+    "text": "Resilient means able to absorb a blow and bounce back into shape, like a good spring. Even while warning about giddy stock prices, Greenspan believed the economy was more resilient than ever — tough enough to take a shock. The 2008 crisis would test that belief brutally.",
+    "audio": true
+  },
+  {
+    "k": "utterances",
+    "t": "utterances",
+    "kind": "word",
+    "forms": [
+      "utterances"
+    ],
+    "text": "Utterances are things spoken aloud — the word treats each remark as an event in itself, which is exactly how markets once treated Greenspan's. The telling line: after the crash, the economy “did not jump at his utterances as it had before.” The maestro's baton had stopped commanding the orchestra.",
+    "audio": true
+  },
+  {
+    "k": "jobless-recovery",
+    "t": "jobless recovery",
+    "kind": "phrase",
+    "forms": [
+      "jobless recovery"
+    ],
+    "text": "A jobless recovery is the frustrating aftermath of a recession in which the economy technically starts growing again but hiring doesn't come back — output recovers, workers don't. That's what followed the dot-com crash of the early 2000s, before the housing boom took over.",
+    "audio": true
+  },
+  {
+    "k": "memoir",
+    "t": "memoir",
+    "kind": "word",
+    "forms": [
+      "memoir"
+    ],
+    "text": "A memoir is a book of one's own life and career, written by oneself. The timing here is the obituary's cruelest joke: Greenspan barely had time to publish his triumphant memoir before the global financial crisis hit — and rewrote how his story would be judged.",
+    "audio": true
+  },
+  {
+    "k": "deregulation",
+    "t": "deregulation",
+    "kind": "word",
+    "forms": [
+      "deregulation"
+    ],
+    "text": "Deregulation is the removing of government rules from an industry — letting banks and markets police themselves. It was Greenspan's lifelong faith, inherited from his libertarian youth. The 2008 crisis “shook his faith in deregulation”: a remarkable admission from the man who had preached it for decades.",
+    "audio": true
+  }
 ]

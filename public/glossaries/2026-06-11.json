@@ -1,439 +1,631 @@
 [
- {
-  "k": "caliber",
-  "t": "caliber",
-  "kind": "vocab",
-  "pron": "KAL-ih-bur",
-  "forms": ["caliber"],
-  "text": "Caliber is a level of quality or ability — a different caliber means a different class entirely. (Literally, it's the inside diameter of a gun barrel.) By 2006 MLS was done signing whoever it could get; it set its sights on a different caliber of player, and went straight for one of the most famous humans alive."
- },
- {
-  "k": "embodiment",
-  "t": "embodiment",
-  "kind": "vocab",
-  "pron": "em-BOD-ee-munt",
-  "forms": ["embodiment"],
-  "text": "An embodiment is an idea made flesh — a person or thing that is the perfect, visible example of a quality, as if the idea grew a body. Calling Pelé “the human embodiment of the World Cup” means one man who stood for everything the tournament represents."
- },
- {
-  "k": "leverage",
-  "t": "leveraging",
-  "kind": "vocab",
-  "pron": "LEV-ur-ij",
-  "forms": ["Leveraging"],
-  "text": "To leverage something is to use what you already have — money, connections, partnerships — as a lever to move something much bigger. Beckham leveraged the league's deals with Apple and Adidas to pull off the signing of the century: making Messi the highest-paid player in American soccer history."
- },
- {
-  "k": "kicking-and-screaming",
-  "t": "kicking and screaming",
-  "kind": "phrase",
-  "forms": ["Kicking and Screaming"],
-  "text": "To be dragged somewhere kicking and screaming is to get there against your will, resisting the whole way — like a toddler leaving the playground. The headline's joke works twice: America resisted soccer for 75 years, and kicking and screaming is also just… soccer."
- },
- {
-  "k": "forged",
-  "t": "forged",
-  "kind": "word",
-  "forms": ["Forged"],
-  "text": "To forge is to shape metal by heating and hammering it — so something “forged” was made the hard way, through fire and pressure. Saying the struggle forged America into a soccer nation means 75 years of failure and effort hammered it into shape. (A different sense of forge means to fake a signature — not this one.)"
- },
- {
-  "k": "backwater",
-  "t": "backwater",
-  "kind": "word",
-  "forms": ["backwater"],
-  "text": "A backwater is literally a stagnant side-pool a river leaves behind — and figuratively, an unimportant place cut off from where the action is. For decades the U.S. was a soccer backwater: the sport's main current flowed through Europe and South America and skipped America entirely."
- },
- {
-  "k": "underground",
-  "t": "underground",
-  "kind": "word",
-  "forms": ["underground"],
-  "text": "An “underground” band is one that's beloved by a small devoted circle but unknown to the mainstream — hidden below the surface of popular culture. That's how America loved soccer for most of a century: passionately, but in secret."
- },
- {
-  "k": "roundly",
-  "t": "roundly",
-  "kind": "word",
-  "forms": ["roundly"],
-  "text": "Roundly means thoroughly and completely — usually attached to something negative, like being roundly defeated or roundly criticized. Soccer, for most of its American history, was roundly ignored: ignored by pretty much everyone, pretty much totally."
- },
- {
-  "k": "boasts",
-  "t": "boasts",
-  "kind": "word",
-  "forms": ["boasts"],
-  "text": "When a place or organization “boasts” something, it possesses something impressive — no actual bragging required. The U.S. now boasts one of the world's best-attended leagues; MLS boasts 30 teams. It's the proud-owner sense of the word."
- },
- {
-  "k": "domestic",
-  "t": "domestic",
-  "kind": "word",
-  "forms": ["domestic"],
-  "text": "Domestic here means within your own country — a domestic league is the one played at home, as opposed to international competition. Nothing to do with housework: America's domestic league is MLS."
- },
- {
-  "k": "pints",
-  "t": "pints",
-  "kind": "word",
-  "forms": ["pints"],
-  "text": "A pint is a pub glass of beer — and “Saturday-morning pints” is shorthand for a whole ritual: because English games kick off in the European afternoon, American fans gather at bars at breakfast time to watch. The odd hour became part of the fun."
- },
- {
-  "k": "undercurrent",
-  "t": "undercurrent",
-  "kind": "word",
-  "forms": ["undercurrent"],
-  "text": "An undercurrent is a current flowing beneath the surface of the water, invisible from the shore but strong. The article's image: while America ignored soccer up top, a bubbling undercurrent of fans and players kept the game alive underneath for nearly a century."
- },
- {
-  "k": "linear",
-  "t": "linear",
-  "kind": "word",
-  "forms": ["linear"],
-  "text": "Linear means moving in a straight line, step by steady step. Saying America's soccer story is “not linear” warns you it's a zigzag: breakthroughs, collapses, 40-year gaps, and sudden leaps."
- },
- {
-  "k": "fits-and-starts",
-  "t": "fits and starts",
-  "kind": "phrase",
-  "forms": ["fits and starts"],
-  "text": "Something that happens in fits and starts keeps lurching forward, stalling, then lurching again — like a car engine that won't stay running. It's the perfect description of American soccer: a miracle in 1950, then nothing for 40 years."
- },
- {
-  "k": "encompass",
-  "t": "encompass",
-  "kind": "word",
-  "forms": ["encompass"],
-  "text": "To encompass is to include or contain — to draw a circle (a “compass”) around a whole set of things. This story's circle encompasses a forgotten goal in Brazil, an invented league, and a Hollywood celebrity signing."
- },
- {
-  "k": "from-scratch",
-  "t": "from scratch",
-  "kind": "phrase",
-  "forms": ["from scratch"],
-  "text": "To build something from scratch is to start with nothing — the way you bake from scratch instead of using a box mix. In the 1990s America literally invented a professional soccer league from scratch: no teams, no stadiums, no history."
- },
- {
-  "k": "spice-boy",
-  "t": "Spice Boy",
-  "kind": "name",
-  "forms": ["Spice Boy"],
-  "text": "A wink at David Beckham: he married Victoria “Posh Spice” Adams of the Spice Girls, the '90s pop supergroup, making him the honorary “Spice Boy.” The joke is that his fame went far beyond soccer — which is exactly why MLS wanted him."
- },
- {
-  "k": "brand",
-  "t": "brand",
-  "kind": "word",
-  "forms": ["brand"],
-  "text": "A “brand” of something is a particular type or flavor of it — “a uniquely American brand of optimism” means optimism in its distinctly American style. Not a logo or a company name in this sense."
- },
- {
-  "k": "miracle-on-grass",
-  "t": "Miracle on Grass",
-  "kind": "name",
-  "forms": ["Miracle on Grass"],
-  "text": "A play on the “Miracle on Ice” — the 1980 Olympics, when a team of American amateurs shocked the unbeatable Soviet hockey squad. The 1950 soccer version: a bunch of American part-timers beating England, the country that invented the game."
- },
- {
-  "k": "amateurs",
-  "t": "amateurs",
-  "kind": "word",
-  "forms": ["amateurs"],
-  "text": "An amateur plays for love, not money — the word comes from the Latin for “lover.” The 1950 U.S. team was a squad of relative amateurs with day jobs, which is what made beating England's professionals so unbelievable that Londoners assumed the score was a typo."
- },
- {
-  "k": "upset",
-  "t": "upset",
-  "kind": "word",
-  "forms": ["upset"],
-  "text": "In sports, an upset isn't about being sad — it's when the heavy underdog knocks off the big favorite, upsetting the expected order of things. The U.S. beating England 1-0 in 1950 remains one of the greatest upsets in World Cup history."
- },
- {
-  "k": "regime",
-  "t": "regime",
-  "kind": "word",
-  "forms": ["regime"],
-  "text": "A regime is a government — the word usually carries a shudder, implying harsh, authoritarian rule. Goal-scorer Joe Gaetjens later disappeared in Haiti under the regime of François Duvalier, a grim footnote to the miracle."
- },
- {
-  "k": "duvalier",
-  "t": "François Duvalier",
-  "kind": "name",
-  "forms": ["François Duvalier", "Duvalier"],
-  "text": "Haiti's dictator from 1957 to 1971, known as “Papa Doc” — his secret police made thousands of people vanish. Joe Gaetjens, the Haitian-born hero of the 1950 upset, was one of them."
- },
- {
-  "k": "qualify",
-  "t": "qualify",
-  "kind": "word",
-  "forms": ["qualify"],
-  "text": "To qualify for the World Cup is to earn one of the limited spots by winning enough matches in the regional tryouts beforehand — most countries never make it. After 1950, the U.S. failed to qualify again for 40 straight years."
- },
- {
-  "k": "pele",
-  "t": "Pelé",
-  "kind": "name",
-  "forms": ["Pelé"],
-  "text": "The Brazilian widely considered the greatest soccer player ever — three World Cup titles, over a thousand career goals, famous enough to go by one name. His real name, as the article notes, was Edson Arantes do Nascimento; in 1975 he came out of retirement to play for the New York Cosmos."
- },
- {
-  "k": "studio-54",
-  "t": "Studio 54",
-  "kind": "name",
-  "forms": ["Studio 54"],
-  "text": "The legendary 1970s New York nightclub where celebrities partied until dawn. Saying Pelé “routinely closed down Studio 54” means he was there till the lights came on — a measure of how huge a celebrity he was off the field, even while soccer itself stayed niche."
- },
- {
-  "k": "stick",
-  "t": "stick",
-  "kind": "word",
-  "forms": ["stick"],
-  "text": "When something new “sticks,” it catches on and lasts — like a poster that stays on the wall instead of peeling off. Even Pelé couldn't make soccer stick in 1970s America: the crowds came for him, then vanished, and the whole league collapsed."
- },
- {
-  "k": "wasteland",
-  "t": "wasteland",
-  "kind": "word",
-  "forms": ["wasteland"],
-  "text": "A wasteland is barren, empty ground where nothing grows. Calling 1980s America a “soccer wasteland” means the professional game was dead: the league had collapsed, and nothing had taken its place."
- },
- {
-  "k": "pioneer-frontier",
-  "t": "pioneer frontier",
-  "kind": "phrase",
-  "forms": ["pioneer frontier"],
-  "text": "The frontier was the wild, unsettled edge of America where pioneers went to build from nothing — most of them failed. Calling 1990s U.S. soccer “the game's pioneer frontier” paints every new team as a settler's cabin: dozens were built, and dozens burned through their money and vanished."
- },
- {
-  "k": "fifa",
-  "t": "FIFA",
-  "kind": "name",
-  "forms": ["FIFA"],
-  "text": "Soccer's world governing body — the organization that owns and runs the World Cup and decides which country gets to host it. That power is what let FIFA attach a condition to the 1994 tournament: no professional league, no World Cup."
- },
- {
-  "k": "mls",
-  "t": "Major League Soccer (MLS)",
-  "kind": "name",
-  "forms": ["Major League Soccer", "MLS"],
-  "text": "America's professional soccer league, founded with $5 million as FIFA's price for the 1994 World Cup. It launched with 10 teams all owned by the league itself, hoping merely to survive; today it has 30 teams, crowds over 20,000, and a $2.5 billion Apple deal."
- },
- {
-  "k": "kicked-off",
-  "t": "kicked off",
-  "kind": "phrase",
-  "forms": ["kicked off"],
-  "text": "To kick off is to begin — an expression that actually comes from soccer, where every match starts with a kickoff. So “when the league kicked off” is the sport describing its own launch."
- },
- {
-  "k": "centrally-owned",
-  "t": "centrally-owned",
-  "kind": "phrase",
-  "forms": ["centrally-owned"],
-  "text": "MLS's 10 original teams were centrally owned — the league itself owned all of them, instead of each having its own rich owner like European clubs. One company controlling every team kept costs (and salaries) tightly capped, which is why signing a megastar later required changing the rules."
- },
- {
-  "k": "bust",
-  "t": "bust",
-  "kind": "word",
-  "forms": ["bust"],
-  "text": "A bust is a flop — a total failure. The 1994 organizer's confession: if that World Cup had been a bust, American soccer might have been set back a decade or more. Everything since was riding on those five weeks."
- },
- {
-  "k": "shot-heard-round",
-  "t": "The Shot Heard Round America",
-  "kind": "name",
-  "forms": ["The Shot Heard Round America"],
-  "text": "A riff on “the shot heard round the world” — the phrase for the first musket shot of the American Revolution, a single act that changed history. Here the “shot” is Brandi Chastain's 1999 penalty kick, watched by 18 million people."
- },
- {
-  "k": "stormed",
-  "t": "stormed",
-  "kind": "word",
-  "forms": ["stormed"],
-  "text": "To storm your way somewhere is to advance with unstoppable force, like weather nobody can argue with. The U.S. women stormed to the 1999 final — and unlike the men, they were the favorites, not the underdogs."
- },
- {
-  "k": "buried",
-  "t": "buried",
-  "kind": "word",
-  "forms": ["buried"],
-  "text": "In soccer slang, to “bury” a shot is to score it emphatically — hit it so cleanly there was never any doubt. Chastain buried the winning penalty against China; nobody was digging a hole."
- },
- {
-  "k": "shootout",
-  "t": "penalty shootout",
-  "kind": "phrase",
-  "forms": ["shootout", "penalty kick"],
-  "text": "When a knockout soccer match is still tied after extra time, it's settled by a penalty shootout: players take turns firing one-on-one penalty kicks from 12 yards, keeper against shooter, until one team misses. It's the most nerve-shredding way any sport ends — and how the 1999 final was decided."
- },
- {
-  "k": "supremacy",
-  "t": "supremacy",
-  "kind": "word",
-  "forms": ["supremacy"],
-  "text": "Supremacy is being supreme — standing above everyone else, unchallenged at the top. Chastain's celebration became a symbol of American athletic supremacy because the U.S. women weren't just winning; they were the best in the world, and everyone had watched it happen."
- },
- {
-  "k": "spend-it-like-beckham",
-  "t": "Spend It Like Beckham",
-  "kind": "name",
-  "forms": ["Spend It Like Beckham"],
-  "text": "A pun on “Bend It Like Beckham,” the 2002 movie named for his signature curving free kicks. Swapping “bend” for “spend” sums up his second act: what he did to American soccer with money and fame, not just his right foot."
- },
- {
-  "k": "a-list",
-  "t": "A-list",
-  "kind": "phrase",
-  "forms": ["A-list"],
-  "text": "The A-list is the top tier of fame — the celebrities everyone on Earth recognizes. The article's point is that MLS skipped past merely A-list soccer stars and went for someone even bigger: a global celebrity who happened to play soccer."
- },
- {
-  "k": "commissioner",
-  "t": "commissioner",
-  "kind": "word",
-  "forms": ["commissioner"],
-  "text": "A league's commissioner is its top boss — the executive who runs the whole league, not any one team. MLS commissioner Don Garber's “Let's go get David Beckham, and adjust our rules” is the article's turning point: the league literally rewrote itself for one player."
- },
- {
-  "k": "beckham",
-  "t": "David Beckham",
-  "kind": "name",
-  "forms": ["David Beckham", "Beckham"],
-  "text": "The English superstar — famous free-kick specialist, tabloid fixture, husband of a Spice Girl — whose 2007 move to Los Angeles made the world take MLS seriously. He shaped the league twice: first by arriving as a player, then by founding his own team, Inter Miami, and signing Messi to it."
- },
- {
-  "k": "bc-ad",
-  "t": "a B.C./A.D. moment",
-  "kind": "phrase",
-  "forms": ["B.C./A.D."],
-  "text": "B.C. and A.D. are how history splits time into “before” and “after” one world-changing event. Calling Beckham's arrival a B.C./A.D. moment means American soccer's timeline now divides in two: everything before Beckham, and everything after."
- },
- {
-  "k": "legitimacy",
-  "t": "legitimacy",
-  "kind": "word",
-  "forms": ["legitimacy"],
-  "text": "Legitimacy is being accepted as real and worthy of respect — not a joke, not a knockoff. It's what a struggling league can't buy directly but can borrow: if a player of Beckham's stature chose MLS, the league must be legitimate. That was the entire bet."
- },
- {
-  "k": "touched-off",
-  "t": "touched off",
-  "kind": "phrase",
-  "forms": ["touched off"],
-  "text": "To touch off is to ignite — the phrase comes from touching a flame to a cannon's fuse. Beckham's arrival touched off a period of aggressive expansion: the league exploded from 12 teams to 30."
- },
- {
-  "k": "expansion",
-  "t": "expansion",
-  "kind": "word",
-  "forms": ["expansion", "expansion team"],
-  "text": "In sports, expansion is a league growing by adding brand-new teams — each newcomer is an “expansion team.” Beckham's Inter Miami is one: his playing contract included an option to buy the right to create a team, which he later cashed in."
- },
- {
-  "k": "group-stage",
-  "t": "group stage",
-  "kind": "phrase",
-  "forms": ["group stage"],
-  "text": "The World Cup's opening round: teams are sorted into small groups and play round-robin games, and only the top finishers advance — everyone else goes home. “Facing elimination in the group stage” means the U.S. was one bad result from an early exit."
- },
- {
-  "k": "91st-minute",
-  "t": "91st-minute winner",
-  "kind": "phrase",
-  "forms": ["91st-minute winner"],
-  "text": "A soccer match is 90 minutes, plus a few added minutes of stoppage time — so a 91st-minute winner is a goal scored after the clock has technically run out, the most dramatic finish the sport allows. Donovan's 2010 goal came exactly then, with the U.S. about to be eliminated."
- },
- {
-  "k": "side",
-  "t": "side",
-  "kind": "word",
-  "forms": ["side"],
-  "text": "In British soccer-speak, a “side” is simply a team — “to keep his side in the tournament” means to keep his team alive. Using it is a small signal of how thoroughly soccer's vocabulary has crossed the Atlantic."
- },
- {
-  "k": "back-of-the-network",
-  "t": "Back of the Network",
-  "kind": "name",
-  "forms": ["Back of the Network"],
-  "text": "A pun stacking two things: “back of the net!” — what commentators shout when a goal is scored — and the TV networks this section is about. The goal being scored here is NBC's deal to broadcast English soccer in America."
- },
- {
-  "k": "cinematic-universe",
-  "t": "cinematic universe",
-  "kind": "phrase",
-  "forms": ["cinematic universe"],
-  "text": "A “cinematic universe” — like Marvel's — is a sprawling set of interconnected stories and characters that keeps fans hooked between blockbusters. The article's point: World Cup excitement fades every four years unless fans can plug into a continuing story, and European club soccer, with its weekly episodes and running rivalries, is exactly that."
- },
- {
-  "k": "premier-league",
-  "t": "Premier League",
-  "kind": "name",
-  "forms": ["Premier League"],
-  "text": "England's top soccer division — the most-watched sports league on the planet. NBC's gamble on broadcasting every single game live turned it into a fixture of American TV, and the rights that cost $250 million in 2013 now run over $450 million per season."
- },
- {
-  "k": "carved-out",
-  "t": "carved out",
-  "kind": "phrase",
-  "forms": ["carved out"],
-  "text": "To carve out a space is to create your own spot in a crowded field, the way you'd carve a shape from a block of wood — slowly, deliberately, against resistance. English soccer carved out its own small corner of the packed U.S. sports-TV landscape."
- },
- {
-  "k": "status-symbol",
-  "t": "status symbol",
-  "kind": "phrase",
-  "forms": ["status symbol"],
-  "text": "A status symbol is something you display to show what kind of person you are — a luxury watch, the right sneakers. The article teases that Premier League fandom became one: following an English club marked you as a worldly, sophisticated sports fan."
- },
- {
-  "k": "junkie",
-  "t": "sports junkie",
-  "kind": "phrase",
-  "forms": ["junkie"],
-  "text": "A junkie is literally a drug addict — but casually, a “sports junkie” is someone hopelessly hooked on watching sports. The Premier League found its American audience among junkies who'd grown tired of three-hour football broadcasts."
- },
- {
-  "k": "slogging",
-  "t": "slogging",
-  "kind": "word",
-  "forms": ["slogging"],
-  "text": "To slog is to trudge heavily through something long and tiring — you slog through mud, or homework. Part of soccer's American appeal, the article argues, was relief from slogging through three-hour NFL games: a soccer match is 90 minutes, in and out, done by lunch."
- },
- {
-  "k": "pretty-in-pink",
-  "t": "Pretty in Pink",
-  "kind": "name",
-  "forms": ["Pretty in Pink"],
-  "text": "Borrowed from the title of a classic 1986 teen movie — here it's about Inter Miami's famously pink jerseys, the ones Messi made the league's top seller."
- },
- {
-  "k": "exercising-an-option",
-  "t": "exercising an option",
-  "kind": "phrase",
-  "forms": ["exercising an option"],
-  "text": "In a contract, an option is a right you can choose to use later — and “exercising” it means cashing it in (no gym involved). Beckham's old playing contract included an option to buy an expansion team at a bargain price; years later he exercised it, and Inter Miami was born."
- },
- {
-  "k": "messi",
-  "t": "Lionel Messi",
-  "kind": "name",
-  "forms": ["Lionel Messi", "Messi"],
-  "text": "The Argentine widely called the greatest player of his generation — and, after captaining Argentina to the 2022 World Cup title, arguably of all time. His 2023 move to Beckham's Inter Miami instantly made his jersey the league's best seller “from Brooklyn to Buenos Aires.”"
- },
- {
-  "k": "number-10",
-  "t": "the number 10",
-  "kind": "phrase",
-  "forms": ["number 10"],
-  "text": "In soccer, the number 10 shirt carries an aura: it's traditionally worn by the team's creative star — Pelé wore it, Messi wears it. Mentioning that Landon Donovan had “the number 10 on his back” quietly tells you he was the man the U.S. team ran through."
- },
- {
-  "k": "endorsement",
-  "t": "endorsement",
-  "kind": "word",
-  "forms": ["endorsement"],
-  "text": "An endorsement is a public stamp of approval, especially from someone whose opinion carries weight. The greatest player alive choosing to play in America was “the ultimate endorsement” — the final proof that the old soccer backwater had become the real thing."
- }
+  {
+    "k": "caliber",
+    "t": "caliber",
+    "kind": "vocab",
+    "pron": "KAL-ih-bur",
+    "forms": [
+      "caliber"
+    ],
+    "text": "Caliber is a level of quality or ability — a different caliber means a different class entirely. (Literally, it's the inside diameter of a gun barrel.) By 2006 MLS was done signing whoever it could get; it set its sights on a different caliber of player, and went straight for one of the most famous humans alive.",
+    "audio": true
+  },
+  {
+    "k": "embodiment",
+    "t": "embodiment",
+    "kind": "vocab",
+    "pron": "em-BOD-ee-munt",
+    "forms": [
+      "embodiment"
+    ],
+    "text": "An embodiment is an idea made flesh — a person or thing that is the perfect, visible example of a quality, as if the idea grew a body. Calling Pelé “the human embodiment of the World Cup” means one man who stood for everything the tournament represents.",
+    "audio": true
+  },
+  {
+    "k": "leverage",
+    "t": "leveraging",
+    "kind": "vocab",
+    "pron": "LEV-ur-ij",
+    "forms": [
+      "Leveraging"
+    ],
+    "text": "To leverage something is to use what you already have — money, connections, partnerships — as a lever to move something much bigger. Beckham leveraged the league's deals with Apple and Adidas to pull off the signing of the century: making Messi the highest-paid player in American soccer history.",
+    "audio": true
+  },
+  {
+    "k": "kicking-and-screaming",
+    "t": "kicking and screaming",
+    "kind": "phrase",
+    "forms": [
+      "Kicking and Screaming"
+    ],
+    "text": "To be dragged somewhere kicking and screaming is to get there against your will, resisting the whole way — like a toddler leaving the playground. The headline's joke works twice: America resisted soccer for 75 years, and kicking and screaming is also just… soccer.",
+    "audio": true
+  },
+  {
+    "k": "forged",
+    "t": "forged",
+    "kind": "word",
+    "forms": [
+      "Forged"
+    ],
+    "text": "To forge is to shape metal by heating and hammering it — so something “forged” was made the hard way, through fire and pressure. Saying the struggle forged America into a soccer nation means 75 years of failure and effort hammered it into shape. (A different sense of forge means to fake a signature — not this one.)",
+    "audio": true
+  },
+  {
+    "k": "backwater",
+    "t": "backwater",
+    "kind": "word",
+    "forms": [
+      "backwater"
+    ],
+    "text": "A backwater is literally a stagnant side-pool a river leaves behind — and figuratively, an unimportant place cut off from where the action is. For decades the U.S. was a soccer backwater: the sport's main current flowed through Europe and South America and skipped America entirely.",
+    "audio": true
+  },
+  {
+    "k": "underground",
+    "t": "underground",
+    "kind": "word",
+    "forms": [
+      "underground"
+    ],
+    "text": "An “underground” band is one that's beloved by a small devoted circle but unknown to the mainstream — hidden below the surface of popular culture. That's how America loved soccer for most of a century: passionately, but in secret.",
+    "audio": true
+  },
+  {
+    "k": "roundly",
+    "t": "roundly",
+    "kind": "word",
+    "forms": [
+      "roundly"
+    ],
+    "text": "Roundly means thoroughly and completely — usually attached to something negative, like being roundly defeated or roundly criticized. Soccer, for most of its American history, was roundly ignored: ignored by pretty much everyone, pretty much totally.",
+    "audio": true
+  },
+  {
+    "k": "boasts",
+    "t": "boasts",
+    "kind": "word",
+    "forms": [
+      "boasts"
+    ],
+    "text": "When a place or organization “boasts” something, it possesses something impressive — no actual bragging required. The U.S. now boasts one of the world's best-attended leagues; MLS boasts 30 teams. It's the proud-owner sense of the word.",
+    "audio": true
+  },
+  {
+    "k": "domestic",
+    "t": "domestic",
+    "kind": "word",
+    "forms": [
+      "domestic"
+    ],
+    "text": "Domestic here means within your own country — a domestic league is the one played at home, as opposed to international competition. Nothing to do with housework: America's domestic league is MLS.",
+    "audio": true
+  },
+  {
+    "k": "pints",
+    "t": "pints",
+    "kind": "word",
+    "forms": [
+      "pints"
+    ],
+    "text": "A pint is a pub glass of beer — and “Saturday-morning pints” is shorthand for a whole ritual: because English games kick off in the European afternoon, American fans gather at bars at breakfast time to watch. The odd hour became part of the fun.",
+    "audio": true
+  },
+  {
+    "k": "undercurrent",
+    "t": "undercurrent",
+    "kind": "word",
+    "forms": [
+      "undercurrent"
+    ],
+    "text": "An undercurrent is a current flowing beneath the surface of the water, invisible from the shore but strong. The article's image: while America ignored soccer up top, a bubbling undercurrent of fans and players kept the game alive underneath for nearly a century.",
+    "audio": true
+  },
+  {
+    "k": "linear",
+    "t": "linear",
+    "kind": "word",
+    "forms": [
+      "linear"
+    ],
+    "text": "Linear means moving in a straight line, step by steady step. Saying America's soccer story is “not linear” warns you it's a zigzag: breakthroughs, collapses, 40-year gaps, and sudden leaps.",
+    "audio": true
+  },
+  {
+    "k": "fits-and-starts",
+    "t": "fits and starts",
+    "kind": "phrase",
+    "forms": [
+      "fits and starts"
+    ],
+    "text": "Something that happens in fits and starts keeps lurching forward, stalling, then lurching again — like a car engine that won't stay running. It's the perfect description of American soccer: a miracle in 1950, then nothing for 40 years.",
+    "audio": true
+  },
+  {
+    "k": "encompass",
+    "t": "encompass",
+    "kind": "word",
+    "forms": [
+      "encompass"
+    ],
+    "text": "To encompass is to include or contain — to draw a circle (a “compass”) around a whole set of things. This story's circle encompasses a forgotten goal in Brazil, an invented league, and a Hollywood celebrity signing.",
+    "audio": true
+  },
+  {
+    "k": "from-scratch",
+    "t": "from scratch",
+    "kind": "phrase",
+    "forms": [
+      "from scratch"
+    ],
+    "text": "To build something from scratch is to start with nothing — the way you bake from scratch instead of using a box mix. In the 1990s America literally invented a professional soccer league from scratch: no teams, no stadiums, no history.",
+    "audio": true
+  },
+  {
+    "k": "spice-boy",
+    "t": "Spice Boy",
+    "kind": "name",
+    "forms": [
+      "Spice Boy"
+    ],
+    "text": "A wink at David Beckham: he married Victoria “Posh Spice” Adams of the Spice Girls, the '90s pop supergroup, making him the honorary “Spice Boy.” The joke is that his fame went far beyond soccer — which is exactly why MLS wanted him.",
+    "audio": true
+  },
+  {
+    "k": "brand",
+    "t": "brand",
+    "kind": "word",
+    "forms": [
+      "brand"
+    ],
+    "text": "A “brand” of something is a particular type or flavor of it — “a uniquely American brand of optimism” means optimism in its distinctly American style. Not a logo or a company name in this sense.",
+    "audio": true
+  },
+  {
+    "k": "miracle-on-grass",
+    "t": "Miracle on Grass",
+    "kind": "name",
+    "forms": [
+      "Miracle on Grass"
+    ],
+    "text": "A play on the “Miracle on Ice” — the 1980 Olympics, when a team of American amateurs shocked the unbeatable Soviet hockey squad. The 1950 soccer version: a bunch of American part-timers beating England, the country that invented the game.",
+    "audio": true
+  },
+  {
+    "k": "amateurs",
+    "t": "amateurs",
+    "kind": "word",
+    "forms": [
+      "amateurs"
+    ],
+    "text": "An amateur plays for love, not money — the word comes from the Latin for “lover.” The 1950 U.S. team was a squad of relative amateurs with day jobs, which is what made beating England's professionals so unbelievable that Londoners assumed the score was a typo.",
+    "audio": true
+  },
+  {
+    "k": "upset",
+    "t": "upset",
+    "kind": "word",
+    "forms": [
+      "upset"
+    ],
+    "text": "In sports, an upset isn't about being sad — it's when the heavy underdog knocks off the big favorite, upsetting the expected order of things. The U.S. beating England 1-0 in 1950 remains one of the greatest upsets in World Cup history.",
+    "audio": true
+  },
+  {
+    "k": "regime",
+    "t": "regime",
+    "kind": "word",
+    "forms": [
+      "regime"
+    ],
+    "text": "A regime is a government — the word usually carries a shudder, implying harsh, authoritarian rule. Goal-scorer Joe Gaetjens later disappeared in Haiti under the regime of François Duvalier, a grim footnote to the miracle.",
+    "audio": true
+  },
+  {
+    "k": "duvalier",
+    "t": "François Duvalier",
+    "kind": "name",
+    "forms": [
+      "François Duvalier",
+      "Duvalier"
+    ],
+    "text": "Haiti's dictator from 1957 to 1971, known as “Papa Doc” — his secret police made thousands of people vanish. Joe Gaetjens, the Haitian-born hero of the 1950 upset, was one of them.",
+    "audio": true
+  },
+  {
+    "k": "qualify",
+    "t": "qualify",
+    "kind": "word",
+    "forms": [
+      "qualify"
+    ],
+    "text": "To qualify for the World Cup is to earn one of the limited spots by winning enough matches in the regional tryouts beforehand — most countries never make it. After 1950, the U.S. failed to qualify again for 40 straight years.",
+    "audio": true
+  },
+  {
+    "k": "pele",
+    "t": "Pelé",
+    "kind": "name",
+    "forms": [
+      "Pelé"
+    ],
+    "text": "The Brazilian widely considered the greatest soccer player ever — three World Cup titles, over a thousand career goals, famous enough to go by one name. His real name, as the article notes, was Edson Arantes do Nascimento; in 1975 he came out of retirement to play for the New York Cosmos.",
+    "audio": true
+  },
+  {
+    "k": "studio-54",
+    "t": "Studio 54",
+    "kind": "name",
+    "forms": [
+      "Studio 54"
+    ],
+    "text": "The legendary 1970s New York nightclub where celebrities partied until dawn. Saying Pelé “routinely closed down Studio 54” means he was there till the lights came on — a measure of how huge a celebrity he was off the field, even while soccer itself stayed niche.",
+    "audio": true
+  },
+  {
+    "k": "stick",
+    "t": "stick",
+    "kind": "word",
+    "forms": [
+      "stick"
+    ],
+    "text": "When something new “sticks,” it catches on and lasts — like a poster that stays on the wall instead of peeling off. Even Pelé couldn't make soccer stick in 1970s America: the crowds came for him, then vanished, and the whole league collapsed.",
+    "audio": true
+  },
+  {
+    "k": "wasteland",
+    "t": "wasteland",
+    "kind": "word",
+    "forms": [
+      "wasteland"
+    ],
+    "text": "A wasteland is barren, empty ground where nothing grows. Calling 1980s America a “soccer wasteland” means the professional game was dead: the league had collapsed, and nothing had taken its place.",
+    "audio": true
+  },
+  {
+    "k": "pioneer-frontier",
+    "t": "pioneer frontier",
+    "kind": "phrase",
+    "forms": [
+      "pioneer frontier"
+    ],
+    "text": "The frontier was the wild, unsettled edge of America where pioneers went to build from nothing — most of them failed. Calling 1990s U.S. soccer “the game's pioneer frontier” paints every new team as a settler's cabin: dozens were built, and dozens burned through their money and vanished.",
+    "audio": true
+  },
+  {
+    "k": "fifa",
+    "t": "FIFA",
+    "kind": "name",
+    "forms": [
+      "FIFA"
+    ],
+    "text": "Soccer's world governing body — the organization that owns and runs the World Cup and decides which country gets to host it. That power is what let FIFA attach a condition to the 1994 tournament: no professional league, no World Cup.",
+    "audio": true
+  },
+  {
+    "k": "mls",
+    "t": "Major League Soccer (MLS)",
+    "kind": "name",
+    "forms": [
+      "Major League Soccer",
+      "MLS"
+    ],
+    "text": "America's professional soccer league, founded with $5 million as FIFA's price for the 1994 World Cup. It launched with 10 teams all owned by the league itself, hoping merely to survive; today it has 30 teams, crowds over 20,000, and a $2.5 billion Apple deal.",
+    "audio": true
+  },
+  {
+    "k": "kicked-off",
+    "t": "kicked off",
+    "kind": "phrase",
+    "forms": [
+      "kicked off"
+    ],
+    "text": "To kick off is to begin — an expression that actually comes from soccer, where every match starts with a kickoff. So “when the league kicked off” is the sport describing its own launch.",
+    "audio": true
+  },
+  {
+    "k": "centrally-owned",
+    "t": "centrally-owned",
+    "kind": "phrase",
+    "forms": [
+      "centrally-owned"
+    ],
+    "text": "MLS's 10 original teams were centrally owned — the league itself owned all of them, instead of each having its own rich owner like European clubs. One company controlling every team kept costs (and salaries) tightly capped, which is why signing a megastar later required changing the rules.",
+    "audio": true
+  },
+  {
+    "k": "bust",
+    "t": "bust",
+    "kind": "word",
+    "forms": [
+      "bust"
+    ],
+    "text": "A bust is a flop — a total failure. The 1994 organizer's confession: if that World Cup had been a bust, American soccer might have been set back a decade or more. Everything since was riding on those five weeks.",
+    "audio": true
+  },
+  {
+    "k": "shot-heard-round",
+    "t": "The Shot Heard Round America",
+    "kind": "name",
+    "forms": [
+      "The Shot Heard Round America"
+    ],
+    "text": "A riff on “the shot heard round the world” — the phrase for the first musket shot of the American Revolution, a single act that changed history. Here the “shot” is Brandi Chastain's 1999 penalty kick, watched by 18 million people.",
+    "audio": true
+  },
+  {
+    "k": "stormed",
+    "t": "stormed",
+    "kind": "word",
+    "forms": [
+      "stormed"
+    ],
+    "text": "To storm your way somewhere is to advance with unstoppable force, like weather nobody can argue with. The U.S. women stormed to the 1999 final — and unlike the men, they were the favorites, not the underdogs.",
+    "audio": true
+  },
+  {
+    "k": "buried",
+    "t": "buried",
+    "kind": "word",
+    "forms": [
+      "buried"
+    ],
+    "text": "In soccer slang, to “bury” a shot is to score it emphatically — hit it so cleanly there was never any doubt. Chastain buried the winning penalty against China; nobody was digging a hole.",
+    "audio": true
+  },
+  {
+    "k": "shootout",
+    "t": "penalty shootout",
+    "kind": "phrase",
+    "forms": [
+      "shootout",
+      "penalty kick"
+    ],
+    "text": "When a knockout soccer match is still tied after extra time, it's settled by a penalty shootout: players take turns firing one-on-one penalty kicks from 12 yards, keeper against shooter, until one team misses. It's the most nerve-shredding way any sport ends — and how the 1999 final was decided.",
+    "audio": true
+  },
+  {
+    "k": "supremacy",
+    "t": "supremacy",
+    "kind": "word",
+    "forms": [
+      "supremacy"
+    ],
+    "text": "Supremacy is being supreme — standing above everyone else, unchallenged at the top. Chastain's celebration became a symbol of American athletic supremacy because the U.S. women weren't just winning; they were the best in the world, and everyone had watched it happen.",
+    "audio": true
+  },
+  {
+    "k": "spend-it-like-beckham",
+    "t": "Spend It Like Beckham",
+    "kind": "name",
+    "forms": [
+      "Spend It Like Beckham"
+    ],
+    "text": "A pun on “Bend It Like Beckham,” the 2002 movie named for his signature curving free kicks. Swapping “bend” for “spend” sums up his second act: what he did to American soccer with money and fame, not just his right foot.",
+    "audio": true
+  },
+  {
+    "k": "a-list",
+    "t": "A-list",
+    "kind": "phrase",
+    "forms": [
+      "A-list"
+    ],
+    "text": "The A-list is the top tier of fame — the celebrities everyone on Earth recognizes. The article's point is that MLS skipped past merely A-list soccer stars and went for someone even bigger: a global celebrity who happened to play soccer.",
+    "audio": true
+  },
+  {
+    "k": "commissioner",
+    "t": "commissioner",
+    "kind": "word",
+    "forms": [
+      "commissioner"
+    ],
+    "text": "A league's commissioner is its top boss — the executive who runs the whole league, not any one team. MLS commissioner Don Garber's “Let's go get David Beckham, and adjust our rules” is the article's turning point: the league literally rewrote itself for one player.",
+    "audio": true
+  },
+  {
+    "k": "beckham",
+    "t": "David Beckham",
+    "kind": "name",
+    "forms": [
+      "David Beckham",
+      "Beckham"
+    ],
+    "text": "The English superstar — famous free-kick specialist, tabloid fixture, husband of a Spice Girl — whose 2007 move to Los Angeles made the world take MLS seriously. He shaped the league twice: first by arriving as a player, then by founding his own team, Inter Miami, and signing Messi to it.",
+    "audio": true
+  },
+  {
+    "k": "bc-ad",
+    "t": "a B.C./A.D. moment",
+    "kind": "phrase",
+    "forms": [
+      "B.C./A.D."
+    ],
+    "text": "B.C. and A.D. are how history splits time into “before” and “after” one world-changing event. Calling Beckham's arrival a B.C./A.D. moment means American soccer's timeline now divides in two: everything before Beckham, and everything after.",
+    "audio": true
+  },
+  {
+    "k": "legitimacy",
+    "t": "legitimacy",
+    "kind": "word",
+    "forms": [
+      "legitimacy"
+    ],
+    "text": "Legitimacy is being accepted as real and worthy of respect — not a joke, not a knockoff. It's what a struggling league can't buy directly but can borrow: if a player of Beckham's stature chose MLS, the league must be legitimate. That was the entire bet.",
+    "audio": true
+  },
+  {
+    "k": "touched-off",
+    "t": "touched off",
+    "kind": "phrase",
+    "forms": [
+      "touched off"
+    ],
+    "text": "To touch off is to ignite — the phrase comes from touching a flame to a cannon's fuse. Beckham's arrival touched off a period of aggressive expansion: the league exploded from 12 teams to 30.",
+    "audio": true
+  },
+  {
+    "k": "expansion",
+    "t": "expansion",
+    "kind": "word",
+    "forms": [
+      "expansion",
+      "expansion team"
+    ],
+    "text": "In sports, expansion is a league growing by adding brand-new teams — each newcomer is an “expansion team.” Beckham's Inter Miami is one: his playing contract included an option to buy the right to create a team, which he later cashed in.",
+    "audio": true
+  },
+  {
+    "k": "group-stage",
+    "t": "group stage",
+    "kind": "phrase",
+    "forms": [
+      "group stage"
+    ],
+    "text": "The World Cup's opening round: teams are sorted into small groups and play round-robin games, and only the top finishers advance — everyone else goes home. “Facing elimination in the group stage” means the U.S. was one bad result from an early exit.",
+    "audio": true
+  },
+  {
+    "k": "91st-minute",
+    "t": "91st-minute winner",
+    "kind": "phrase",
+    "forms": [
+      "91st-minute winner"
+    ],
+    "text": "A soccer match is 90 minutes, plus a few added minutes of stoppage time — so a 91st-minute winner is a goal scored after the clock has technically run out, the most dramatic finish the sport allows. Donovan's 2010 goal came exactly then, with the U.S. about to be eliminated.",
+    "audio": true
+  },
+  {
+    "k": "side",
+    "t": "side",
+    "kind": "word",
+    "forms": [
+      "side"
+    ],
+    "text": "In British soccer-speak, a “side” is simply a team — “to keep his side in the tournament” means to keep his team alive. Using it is a small signal of how thoroughly soccer's vocabulary has crossed the Atlantic.",
+    "audio": true
+  },
+  {
+    "k": "back-of-the-network",
+    "t": "Back of the Network",
+    "kind": "name",
+    "forms": [
+      "Back of the Network"
+    ],
+    "text": "A pun stacking two things: “back of the net!” — what commentators shout when a goal is scored — and the TV networks this section is about. The goal being scored here is NBC's deal to broadcast English soccer in America.",
+    "audio": true
+  },
+  {
+    "k": "cinematic-universe",
+    "t": "cinematic universe",
+    "kind": "phrase",
+    "forms": [
+      "cinematic universe"
+    ],
+    "text": "A “cinematic universe” — like Marvel's — is a sprawling set of interconnected stories and characters that keeps fans hooked between blockbusters. The article's point: World Cup excitement fades every four years unless fans can plug into a continuing story, and European club soccer, with its weekly episodes and running rivalries, is exactly that.",
+    "audio": true
+  },
+  {
+    "k": "premier-league",
+    "t": "Premier League",
+    "kind": "name",
+    "forms": [
+      "Premier League"
+    ],
+    "text": "England's top soccer division — the most-watched sports league on the planet. NBC's gamble on broadcasting every single game live turned it into a fixture of American TV, and the rights that cost $250 million in 2013 now run over $450 million per season.",
+    "audio": true
+  },
+  {
+    "k": "carved-out",
+    "t": "carved out",
+    "kind": "phrase",
+    "forms": [
+      "carved out"
+    ],
+    "text": "To carve out a space is to create your own spot in a crowded field, the way you'd carve a shape from a block of wood — slowly, deliberately, against resistance. English soccer carved out its own small corner of the packed U.S. sports-TV landscape.",
+    "audio": true
+  },
+  {
+    "k": "status-symbol",
+    "t": "status symbol",
+    "kind": "phrase",
+    "forms": [
+      "status symbol"
+    ],
+    "text": "A status symbol is something you display to show what kind of person you are — a luxury watch, the right sneakers. The article teases that Premier League fandom became one: following an English club marked you as a worldly, sophisticated sports fan.",
+    "audio": true
+  },
+  {
+    "k": "junkie",
+    "t": "sports junkie",
+    "kind": "phrase",
+    "forms": [
+      "junkie"
+    ],
+    "text": "A junkie is literally a drug addict — but casually, a “sports junkie” is someone hopelessly hooked on watching sports. The Premier League found its American audience among junkies who'd grown tired of three-hour football broadcasts.",
+    "audio": true
+  },
+  {
+    "k": "slogging",
+    "t": "slogging",
+    "kind": "word",
+    "forms": [
+      "slogging"
+    ],
+    "text": "To slog is to trudge heavily through something long and tiring — you slog through mud, or homework. Part of soccer's American appeal, the article argues, was relief from slogging through three-hour NFL games: a soccer match is 90 minutes, in and out, done by lunch.",
+    "audio": true
+  },
+  {
+    "k": "pretty-in-pink",
+    "t": "Pretty in Pink",
+    "kind": "name",
+    "forms": [
+      "Pretty in Pink"
+    ],
+    "text": "Borrowed from the title of a classic 1986 teen movie — here it's about Inter Miami's famously pink jerseys, the ones Messi made the league's top seller.",
+    "audio": true
+  },
+  {
+    "k": "exercising-an-option",
+    "t": "exercising an option",
+    "kind": "phrase",
+    "forms": [
+      "exercising an option"
+    ],
+    "text": "In a contract, an option is a right you can choose to use later — and “exercising” it means cashing it in (no gym involved). Beckham's old playing contract included an option to buy an expansion team at a bargain price; years later he exercised it, and Inter Miami was born.",
+    "audio": true
+  },
+  {
+    "k": "messi",
+    "t": "Lionel Messi",
+    "kind": "name",
+    "forms": [
+      "Lionel Messi",
+      "Messi"
+    ],
+    "text": "The Argentine widely called the greatest player of his generation — and, after captaining Argentina to the 2022 World Cup title, arguably of all time. His 2023 move to Beckham's Inter Miami instantly made his jersey the league's best seller “from Brooklyn to Buenos Aires.”",
+    "audio": true
+  },
+  {
+    "k": "number-10",
+    "t": "the number 10",
+    "kind": "phrase",
+    "forms": [
+      "number 10"
+    ],
+    "text": "In soccer, the number 10 shirt carries an aura: it's traditionally worn by the team's creative star — Pelé wore it, Messi wears it. Mentioning that Landon Donovan had “the number 10 on his back” quietly tells you he was the man the U.S. team ran through.",
+    "audio": true
+  },
+  {
+    "k": "endorsement",
+    "t": "endorsement",
+    "kind": "word",
+    "forms": [
+      "endorsement"
+    ],
+    "text": "An endorsement is a public stamp of approval, especially from someone whose opinion carries weight. The greatest player alive choosing to play in America was “the ultimate endorsement” — the final proof that the old soccer backwater had become the real thing.",
+    "audio": true
+  }
 ]

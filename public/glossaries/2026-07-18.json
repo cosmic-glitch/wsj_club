@@ -1,273 +1,387 @@
 [
- {
-  "k": "hegemony",
-  "t": "hegemony",
-  "kind": "vocab",
-  "pron": "hih-JEM-uh-nee",
-  "forms": ["hegemony"],
-  "text": "Hegemony is dominance — one country or group leading and setting the tone for everyone else, whether through armies, money, or culture. The article says America's “cultural hegemony” was big enough to “absorb” soccer, the one sport it never cared about, and make even that its own during the World Cup."
- },
- {
-  "k": "unmitigated",
-  "t": "unmitigated",
-  "kind": "vocab",
-  "pron": "un-MIH-tih-gay-tid",
-  "forms": ["unmitigated"],
-  "text": "Unmitigated means total and absolute, with nothing to soften it — it comes from “mitigate” (to make less bad), so “un-mitigated” is “not softened at all.” Before the tournament, people feared it would be an “unmitigated disaster”: a complete, top-to-bottom failure. It turned out the opposite."
- },
- {
-  "k": "insular",
-  "t": "insular",
-  "kind": "vocab",
-  "pron": "IN-suh-ler",
-  "forms": ["insular"],
-  "text": "Insular means inward-looking and closed off — behaving like an island (Latin insula), keeping to yourself and ignoring the outside world. Critics saw the U.S. as an “insular, inward-looking nation” absorbed in its own quarrels, and the article argues the World Cup told a very different story."
- },
- {
-  "k": "fractious",
-  "t": "fractious",
-  "kind": "vocab",
-  "pron": "FRAK-shus",
-  "forms": ["fractious"],
-  "text": "Fractious means quarrelsome and hard to control, ready to break into conflict — it shares a root with “fracture.” Officials braced for a “potentially fractious” England–Argentina semifinal, two sets of bitter rival fans in one stadium — yet in America they didn't even need to be kept apart."
- },
- {
-  "k": "cornucopia",
-  "t": "cornucopia",
-  "kind": "vocab",
-  "pron": "kor-nuh-KOH-pee-uh",
-  "forms": ["cornucopia"],
-  "text": "A cornucopia is an overflowing abundance — from the Greek “horn of plenty” that magically refilled with fruit forever. To wide-eyed visitors, the Costco frozen-food aisle was a cornucopia: more of everything, in more sizes, than they'd ever seen piled in one place."
- },
- {
-  "k": "soft-power",
-  "t": "soft power",
-  "kind": "name",
-  "forms": ["soft power"],
-  "text": "Soft power is a country's ability to get its way by being admired rather than by force — through its culture, values, food, movies, and way of life, so others want what it wants. The article's whole argument is that a month of visitors simply experiencing everyday America was more persuasive soft power than any staged ceremony or military flyover could be."
- },
- {
-  "k": "affirmation",
-  "t": "affirmation",
-  "kind": "word",
-  "forms": ["affirmation"],
-  "text": "An affirmation is a strong confirmation — proof that says “yes, this is real and true.” The tournament became “an eye-opening affirmation of American soft power”: living evidence that the country's pull on the rest of the world is still very much alive."
- },
- {
-  "k": "bandwagon",
-  "t": "bandwagon",
-  "kind": "phrase",
-  "forms": ["bandwagon"],
-  "text": "To “hop on the bandwagon” is to jump aboard something popular just as it's winning — from the old parade wagon carrying the band that everyone rushed to join. Fans in star-spangled jerseys “hopped on the bandwagon” of the U.S. team, only to be “violently thrown off” when it lost early."
- },
- {
-  "k": "squandered",
-  "t": "squandered",
-  "kind": "word",
-  "forms": ["squandered"],
-  "text": "To squander is to waste something valuable carelessly, throwing away a chance you can't get back. The U.S. team “squandered a generous draw, a high-price coach and a golden opportunity” — it had every advantage and blew it, missing a quarterfinal for the first time in 24 years."
- },
- {
-  "k": "draw",
-  "t": "draw",
-  "kind": "word",
-  "forms": ["draw"],
-  "text": "In a tournament, your “draw” is the set of opponents luck assigns you — the bracket you land in — not drawing a picture or a tied score. A “generous draw” means easy early matchups, which made the U.S. team's flameout all the more disappointing."
- },
- {
-  "k": "lamented",
-  "t": "lamented",
-  "kind": "word",
-  "forms": ["lamented"],
-  "text": "To lament is to express sorrow or regret — to mourn or complain about something. Visitors “lamented the lack of public transportation,” groaning about how car-dependent America is, then were promptly amazed by a self-driving Waymo."
- },
- {
-  "k": "marveled",
-  "t": "marveled",
-  "kind": "word",
-  "forms": ["marveled"],
-  "text": "To marvel is to be filled with wonder and astonishment. Fans who complained about the transit then “marveled at Waymo,” gaping at the driverless cars gliding around as one of the trip's small everyday shocks."
- },
- {
-  "k": "entrance",
-  "t": "entrance",
-  "kind": "word",
-  "forms": ["entrance"],
-  "text": "As a verb, “to entrance” (en-TRANCE) means to enchant or spellbind — to fill with delight, as if putting someone in a trance — nothing to do with a doorway. The article says America still has a shine “dazzling enough to entrance the rest of the world,” captivating visitors despite everything."
- },
- {
-  "k": "enamored",
-  "t": "enamored",
-  "kind": "word",
-  "forms": ["enamored"],
-  "text": "To be enamored of something is to be charmed by it, even in love with it. Norway's star striker grew so “enamored with the States” that he flew home with several $750 stuffed raccoons he bought in Dallas — a very literal souvenir of his infatuation."
- },
- {
-  "k": "taxidermied",
-  "t": "taxidermied",
-  "kind": "word",
-  "forms": ["taxidermied"],
-  "text": "Taxidermy is the craft of preserving and mounting a dead animal so it looks lifelike; a “taxidermied” raccoon is a stuffed, posed one. That a visiting soccer star hauled home $750 taxidermied raccoons is exactly the kind of quirky, only-in-America detail the article delights in."
- },
- {
-  "k": "prohibitive",
-  "t": "prohibitive",
-  "kind": "word",
-  "forms": ["prohibitive"],
-  "text": "A prohibitive price is one so high it practically prohibits you — it stops you from buying in. Fears of “prohibitive ticket prices” were part of why people expected the World Cup to flop, worried ordinary fans simply couldn't afford to come."
- },
- {
-  "k": "vetting",
-  "t": "vetting",
-  "kind": "word",
-  "forms": ["vetting"],
-  "text": "Vetting is checking someone's background carefully before letting them in or approving them. A referee from Somalia was “denied entry over vetting concerns” — turned away after that background screening — one of the ugly pre-tournament headlines that made America look unwelcoming."
- },
- {
-  "k": "flocked",
-  "t": "flocked",
-  "kind": "word",
-  "forms": ["flocked"],
-  "text": "To flock is to move somewhere in a big crowd, like birds gathering in a flock. Despite all the grim predictions, fans “flocked to the U.S. by the millions,” and what they found looked nothing like the America they'd seen online."
- },
- {
-  "k": "strains",
-  "t": "strains",
-  "kind": "word",
-  "forms": ["strains"],
-  "text": "A “strain” here means a type or variety — the way you'd speak of strains of a plant or a virus — not stress or effort. The World Cup “hit harder than more traditional strains of soft power,” meaning it outdid the usual kinds, like a summer blockbuster or an Olympic ceremony."
- },
- {
-  "k": "spectacle",
-  "t": "spectacle",
-  "kind": "word",
-  "forms": ["spectacle"],
-  "text": "A spectacle is a big, eye-catching show put on for an audience. The article contrasts a “brief spectacle” like a Super Bowl halftime show with the World Cup's month-long stay, arguing the flashy one-off persuades less than weeks of real life."
- },
- {
-  "k": "hoopla",
-  "t": "hoopla",
-  "kind": "word",
-  "forms": ["hoopla"],
-  "text": "Hoopla is noisy, showy excitement and fuss made around an event. The “carefully stage-managed hoopla of an Olympic games” is exactly the kind of polished, planned razzle-dazzle the article says people tune out — unlike unscripted daily life, which they can't."
- },
- {
-  "k": "stage-managed",
-  "t": "stage-managed",
-  "kind": "phrase",
-  "forms": ["stage-managed"],
-  "text": "Something “stage-managed” is carefully arranged and controlled behind the scenes, like a play run by a stage manager, so nothing looks accidental. The article's key idea is that stage-managed showcases feel like ads and get discounted, while a real, unstaged month in America can't be faked — and so lands harder."
- },
- {
-  "k": "hunker-down",
-  "t": "hunker down",
-  "kind": "phrase",
-  "forms": ["hunker down"],
-  "text": "To hunker down is to settle in and hole up somewhere for a good while, digging in for the long haul. The World Cup was “an invitation to hunker down for a 39-day stay in America's guest bedroom” — visitors didn't just drop by, they moved in and had to experience real life."
- },
- {
-  "k": "recedes",
-  "t": "recedes",
-  "kind": "word",
-  "forms": ["recedes"],
-  "text": "To recede is to pull back or fade away, the way a tide draws out. Once the soccer began, “everything else recedes into the background” — the politics and worries slipped out of view and the games took over."
- },
- {
-  "k": "geopolitics",
-  "t": "geopolitics",
-  "kind": "word",
-  "forms": ["geopolitics"],
-  "text": "Geopolitics is the power struggle between countries — how geography, alliances, and rivalries shape world politics. Fears “about geopolitics,” from wars to tense standoffs, hung over the tournament, yet the article says they “melted away” once the matches got going."
- },
- {
-  "k": "sweltering",
-  "t": "sweltering",
-  "kind": "word",
-  "forms": ["sweltering"],
-  "text": "Sweltering means oppressively, sweatily hot. The “sweltering conditions in Florida in July” were a real worry — until fans stepped into the giant air-conditioned NFL stadiums, which the article jokingly calls cool “cathedrals.”"
- },
- {
-  "k": "purists",
-  "t": "purists",
-  "kind": "word",
-  "forms": ["purists"],
-  "text": "A purist is someone who insists on the pure, traditional form of something and looks down on anything that strays from it. Soccer “purists” wanted classic European-style stadiums, but the article says this World Cup “wasn't for the purists” — it was a big, brash American party."
- },
- {
-  "k": "xenophobic",
-  "t": "xenophobic",
-  "kind": "word",
-  "forms": ["xenophobic"],
-  "text": "Xenophobic means fearful or hostile toward foreigners (xeno- means “stranger”). Visitors expected a “xenophobic country” that would treat them coldly — and instead, the article says, often found themselves welcomed better than fans are back home in Europe or South America."
- },
- {
-  "k": "segregating",
-  "t": "segregating",
-  "kind": "word",
-  "forms": ["segregating"],
-  "text": "To segregate people is to keep opposing groups forcibly apart. At many overseas matches, rival fans have to be segregated to prevent fights — but at this World Cup, U.S. authorities “didn't bother segregating them,” even at the tense England–Argentina semifinal, and it was fine."
- },
- {
-  "k": "hooliganism",
-  "t": "hooliganism",
-  "kind": "word",
-  "forms": ["hooliganism"],
-  "text": "Hooliganism is rowdy, violent troublemaking, especially the fighting some soccer fans became infamous for. England fans carry “a history of hooliganism,” so it's telling that even Britain's own football-policing unit praised how calmly America handled them."
- },
- {
-  "k": "fraught",
-  "t": "fraught",
-  "kind": "word",
-  "forms": ["fraught"],
-  "text": "Fraught means loaded with tension, anxiety, or trouble. America's 250th birthday was “a fraught celebration” for people who see a nation split by politics — a party clouded by unease — which the World Cup, the article argues, briefly cut through."
- },
- {
-  "k": "polarizing",
-  "t": "polarizing",
-  "kind": "word",
-  "forms": ["polarizing"],
-  "text": "Something polarizing drives people to opposite extremes, splitting them into two hostile camps — like the opposite poles of a magnet. The article says the World Cup showed that America's “polarizing politics” don't always have to define the country; for a month, something else did."
- },
- {
-  "k": "conspicuously",
-  "t": "conspicuously",
-  "kind": "word",
-  "forms": ["conspicuously"],
-  "text": "Conspicuously means in a way that stands out and can't be missed. President Trump kept himself “conspicuously absent” from the first 103 games — his staying away was itself noticeable — before suddenly inserting himself into a disciplinary dispute."
- },
- {
-  "k": "gravitated",
-  "t": "gravitated",
-  "kind": "word",
-  "forms": ["gravitated"],
-  "text": "To gravitate toward something is to be pulled toward it as if by gravity — drawn in naturally. A U.S. player said people “gravitated toward the team” because it felt relatable and real, representing the country as it actually is."
- },
- {
-  "k": "brand-ambassadors",
-  "t": "brand ambassadors",
-  "kind": "phrase",
-  "forms": ["brand ambassadors"],
-  "text": "A brand ambassador is a person who represents and talks up a product or place, spreading a good impression of it. A travel study called international visitors America's “best brand ambassadors”: they went home and sold the country to everyone they knew, better than any official campaign."
- },
- {
-  "k": "fifa",
-  "t": "FIFA",
-  "kind": "name",
-  "forms": ["FIFA"],
-  "text": "FIFA is soccer's world governing body — the organization that runs the World Cup and sets the sport's global rules. Its confidence in this tournament ran so high that it quietly raised its revenue forecast from $11 billion to $15 billion."
- },
- {
-  "k": "tartan-army",
-  "t": "Tartan Army",
-  "kind": "name",
-  "forms": ["Tartan Army"],
-  "text": "The “Tartan Army” is the affectionate nickname for Scotland's traveling soccer fans, famous for their friendly, festive invasions of host cities (tartan being Scotland's checkered plaid). The article pictures them “drinking Boston dry” as one of the joyful scenes that won America over."
- },
- {
-  "k": "verged-on",
-  "t": "verged on",
-  "kind": "phrase",
-  "forms": ["verged on"],
-  "text": "To “verge on” something is to come right up to its edge, almost reaching it. Belgium's anger at the president meddling in a disciplinary ruling “verged on disbelief” — it nearly tipped into flat-out amazement that it was happening at all."
- }
+  {
+    "k": "hegemony",
+    "t": "hegemony",
+    "kind": "vocab",
+    "pron": "hih-JEM-uh-nee",
+    "forms": [
+      "hegemony"
+    ],
+    "text": "Hegemony is dominance — one country or group leading and setting the tone for everyone else, whether through armies, money, or culture. The article says America's “cultural hegemony” was big enough to “absorb” soccer, the one sport it never cared about, and make even that its own during the World Cup.",
+    "audio": true
+  },
+  {
+    "k": "unmitigated",
+    "t": "unmitigated",
+    "kind": "vocab",
+    "pron": "un-MIH-tih-gay-tid",
+    "forms": [
+      "unmitigated"
+    ],
+    "text": "Unmitigated means total and absolute, with nothing to soften it — it comes from “mitigate” (to make less bad), so “un-mitigated” is “not softened at all.” Before the tournament, people feared it would be an “unmitigated disaster”: a complete, top-to-bottom failure. It turned out the opposite.",
+    "audio": true
+  },
+  {
+    "k": "insular",
+    "t": "insular",
+    "kind": "vocab",
+    "pron": "IN-suh-ler",
+    "forms": [
+      "insular"
+    ],
+    "text": "Insular means inward-looking and closed off — behaving like an island (Latin insula), keeping to yourself and ignoring the outside world. Critics saw the U.S. as an “insular, inward-looking nation” absorbed in its own quarrels, and the article argues the World Cup told a very different story.",
+    "audio": true
+  },
+  {
+    "k": "fractious",
+    "t": "fractious",
+    "kind": "vocab",
+    "pron": "FRAK-shus",
+    "forms": [
+      "fractious"
+    ],
+    "text": "Fractious means quarrelsome and hard to control, ready to break into conflict — it shares a root with “fracture.” Officials braced for a “potentially fractious” England–Argentina semifinal, two sets of bitter rival fans in one stadium — yet in America they didn't even need to be kept apart.",
+    "audio": true
+  },
+  {
+    "k": "cornucopia",
+    "t": "cornucopia",
+    "kind": "vocab",
+    "pron": "kor-nuh-KOH-pee-uh",
+    "forms": [
+      "cornucopia"
+    ],
+    "text": "A cornucopia is an overflowing abundance — from the Greek “horn of plenty” that magically refilled with fruit forever. To wide-eyed visitors, the Costco frozen-food aisle was a cornucopia: more of everything, in more sizes, than they'd ever seen piled in one place.",
+    "audio": true
+  },
+  {
+    "k": "soft-power",
+    "t": "soft power",
+    "kind": "name",
+    "forms": [
+      "soft power"
+    ],
+    "text": "Soft power is a country's ability to get its way by being admired rather than by force — through its culture, values, food, movies, and way of life, so others want what it wants. The article's whole argument is that a month of visitors simply experiencing everyday America was more persuasive soft power than any staged ceremony or military flyover could be.",
+    "audio": true
+  },
+  {
+    "k": "affirmation",
+    "t": "affirmation",
+    "kind": "word",
+    "forms": [
+      "affirmation"
+    ],
+    "text": "An affirmation is a strong confirmation — proof that says “yes, this is real and true.” The tournament became “an eye-opening affirmation of American soft power”: living evidence that the country's pull on the rest of the world is still very much alive.",
+    "audio": true
+  },
+  {
+    "k": "bandwagon",
+    "t": "bandwagon",
+    "kind": "phrase",
+    "forms": [
+      "bandwagon"
+    ],
+    "text": "To “hop on the bandwagon” is to jump aboard something popular just as it's winning — from the old parade wagon carrying the band that everyone rushed to join. Fans in star-spangled jerseys “hopped on the bandwagon” of the U.S. team, only to be “violently thrown off” when it lost early.",
+    "audio": true
+  },
+  {
+    "k": "squandered",
+    "t": "squandered",
+    "kind": "word",
+    "forms": [
+      "squandered"
+    ],
+    "text": "To squander is to waste something valuable carelessly, throwing away a chance you can't get back. The U.S. team “squandered a generous draw, a high-price coach and a golden opportunity” — it had every advantage and blew it, missing a quarterfinal for the first time in 24 years.",
+    "audio": true
+  },
+  {
+    "k": "draw",
+    "t": "draw",
+    "kind": "word",
+    "forms": [
+      "draw"
+    ],
+    "text": "In a tournament, your “draw” is the set of opponents luck assigns you — the bracket you land in — not drawing a picture or a tied score. A “generous draw” means easy early matchups, which made the U.S. team's flameout all the more disappointing.",
+    "audio": true
+  },
+  {
+    "k": "lamented",
+    "t": "lamented",
+    "kind": "word",
+    "forms": [
+      "lamented"
+    ],
+    "text": "To lament is to express sorrow or regret — to mourn or complain about something. Visitors “lamented the lack of public transportation,” groaning about how car-dependent America is, then were promptly amazed by a self-driving Waymo.",
+    "audio": true
+  },
+  {
+    "k": "marveled",
+    "t": "marveled",
+    "kind": "word",
+    "forms": [
+      "marveled"
+    ],
+    "text": "To marvel is to be filled with wonder and astonishment. Fans who complained about the transit then “marveled at Waymo,” gaping at the driverless cars gliding around as one of the trip's small everyday shocks.",
+    "audio": true
+  },
+  {
+    "k": "entrance",
+    "t": "entrance",
+    "kind": "word",
+    "forms": [
+      "entrance"
+    ],
+    "text": "As a verb, “to entrance” (en-TRANCE) means to enchant or spellbind — to fill with delight, as if putting someone in a trance — nothing to do with a doorway. The article says America still has a shine “dazzling enough to entrance the rest of the world,” captivating visitors despite everything.",
+    "audio": true
+  },
+  {
+    "k": "enamored",
+    "t": "enamored",
+    "kind": "word",
+    "forms": [
+      "enamored"
+    ],
+    "text": "To be enamored of something is to be charmed by it, even in love with it. Norway's star striker grew so “enamored with the States” that he flew home with several $750 stuffed raccoons he bought in Dallas — a very literal souvenir of his infatuation.",
+    "audio": true
+  },
+  {
+    "k": "taxidermied",
+    "t": "taxidermied",
+    "kind": "word",
+    "forms": [
+      "taxidermied"
+    ],
+    "text": "Taxidermy is the craft of preserving and mounting a dead animal so it looks lifelike; a “taxidermied” raccoon is a stuffed, posed one. That a visiting soccer star hauled home $750 taxidermied raccoons is exactly the kind of quirky, only-in-America detail the article delights in.",
+    "audio": true
+  },
+  {
+    "k": "prohibitive",
+    "t": "prohibitive",
+    "kind": "word",
+    "forms": [
+      "prohibitive"
+    ],
+    "text": "A prohibitive price is one so high it practically prohibits you — it stops you from buying in. Fears of “prohibitive ticket prices” were part of why people expected the World Cup to flop, worried ordinary fans simply couldn't afford to come.",
+    "audio": true
+  },
+  {
+    "k": "vetting",
+    "t": "vetting",
+    "kind": "word",
+    "forms": [
+      "vetting"
+    ],
+    "text": "Vetting is checking someone's background carefully before letting them in or approving them. A referee from Somalia was “denied entry over vetting concerns” — turned away after that background screening — one of the ugly pre-tournament headlines that made America look unwelcoming.",
+    "audio": true
+  },
+  {
+    "k": "flocked",
+    "t": "flocked",
+    "kind": "word",
+    "forms": [
+      "flocked"
+    ],
+    "text": "To flock is to move somewhere in a big crowd, like birds gathering in a flock. Despite all the grim predictions, fans “flocked to the U.S. by the millions,” and what they found looked nothing like the America they'd seen online.",
+    "audio": true
+  },
+  {
+    "k": "strains",
+    "t": "strains",
+    "kind": "word",
+    "forms": [
+      "strains"
+    ],
+    "text": "A “strain” here means a type or variety — the way you'd speak of strains of a plant or a virus — not stress or effort. The World Cup “hit harder than more traditional strains of soft power,” meaning it outdid the usual kinds, like a summer blockbuster or an Olympic ceremony.",
+    "audio": true
+  },
+  {
+    "k": "spectacle",
+    "t": "spectacle",
+    "kind": "word",
+    "forms": [
+      "spectacle"
+    ],
+    "text": "A spectacle is a big, eye-catching show put on for an audience. The article contrasts a “brief spectacle” like a Super Bowl halftime show with the World Cup's month-long stay, arguing the flashy one-off persuades less than weeks of real life.",
+    "audio": true
+  },
+  {
+    "k": "hoopla",
+    "t": "hoopla",
+    "kind": "word",
+    "forms": [
+      "hoopla"
+    ],
+    "text": "Hoopla is noisy, showy excitement and fuss made around an event. The “carefully stage-managed hoopla of an Olympic games” is exactly the kind of polished, planned razzle-dazzle the article says people tune out — unlike unscripted daily life, which they can't.",
+    "audio": true
+  },
+  {
+    "k": "stage-managed",
+    "t": "stage-managed",
+    "kind": "phrase",
+    "forms": [
+      "stage-managed"
+    ],
+    "text": "Something “stage-managed” is carefully arranged and controlled behind the scenes, like a play run by a stage manager, so nothing looks accidental. The article's key idea is that stage-managed showcases feel like ads and get discounted, while a real, unstaged month in America can't be faked — and so lands harder.",
+    "audio": true
+  },
+  {
+    "k": "hunker-down",
+    "t": "hunker down",
+    "kind": "phrase",
+    "forms": [
+      "hunker down"
+    ],
+    "text": "To hunker down is to settle in and hole up somewhere for a good while, digging in for the long haul. The World Cup was “an invitation to hunker down for a 39-day stay in America's guest bedroom” — visitors didn't just drop by, they moved in and had to experience real life.",
+    "audio": true
+  },
+  {
+    "k": "recedes",
+    "t": "recedes",
+    "kind": "word",
+    "forms": [
+      "recedes"
+    ],
+    "text": "To recede is to pull back or fade away, the way a tide draws out. Once the soccer began, “everything else recedes into the background” — the politics and worries slipped out of view and the games took over.",
+    "audio": true
+  },
+  {
+    "k": "geopolitics",
+    "t": "geopolitics",
+    "kind": "word",
+    "forms": [
+      "geopolitics"
+    ],
+    "text": "Geopolitics is the power struggle between countries — how geography, alliances, and rivalries shape world politics. Fears “about geopolitics,” from wars to tense standoffs, hung over the tournament, yet the article says they “melted away” once the matches got going.",
+    "audio": true
+  },
+  {
+    "k": "sweltering",
+    "t": "sweltering",
+    "kind": "word",
+    "forms": [
+      "sweltering"
+    ],
+    "text": "Sweltering means oppressively, sweatily hot. The “sweltering conditions in Florida in July” were a real worry — until fans stepped into the giant air-conditioned NFL stadiums, which the article jokingly calls cool “cathedrals.”",
+    "audio": true
+  },
+  {
+    "k": "purists",
+    "t": "purists",
+    "kind": "word",
+    "forms": [
+      "purists"
+    ],
+    "text": "A purist is someone who insists on the pure, traditional form of something and looks down on anything that strays from it. Soccer “purists” wanted classic European-style stadiums, but the article says this World Cup “wasn't for the purists” — it was a big, brash American party.",
+    "audio": true
+  },
+  {
+    "k": "xenophobic",
+    "t": "xenophobic",
+    "kind": "word",
+    "forms": [
+      "xenophobic"
+    ],
+    "text": "Xenophobic means fearful or hostile toward foreigners (xeno- means “stranger”). Visitors expected a “xenophobic country” that would treat them coldly — and instead, the article says, often found themselves welcomed better than fans are back home in Europe or South America.",
+    "audio": true
+  },
+  {
+    "k": "segregating",
+    "t": "segregating",
+    "kind": "word",
+    "forms": [
+      "segregating"
+    ],
+    "text": "To segregate people is to keep opposing groups forcibly apart. At many overseas matches, rival fans have to be segregated to prevent fights — but at this World Cup, U.S. authorities “didn't bother segregating them,” even at the tense England–Argentina semifinal, and it was fine.",
+    "audio": true
+  },
+  {
+    "k": "hooliganism",
+    "t": "hooliganism",
+    "kind": "word",
+    "forms": [
+      "hooliganism"
+    ],
+    "text": "Hooliganism is rowdy, violent troublemaking, especially the fighting some soccer fans became infamous for. England fans carry “a history of hooliganism,” so it's telling that even Britain's own football-policing unit praised how calmly America handled them.",
+    "audio": true
+  },
+  {
+    "k": "fraught",
+    "t": "fraught",
+    "kind": "word",
+    "forms": [
+      "fraught"
+    ],
+    "text": "Fraught means loaded with tension, anxiety, or trouble. America's 250th birthday was “a fraught celebration” for people who see a nation split by politics — a party clouded by unease — which the World Cup, the article argues, briefly cut through.",
+    "audio": true
+  },
+  {
+    "k": "polarizing",
+    "t": "polarizing",
+    "kind": "word",
+    "forms": [
+      "polarizing"
+    ],
+    "text": "Something polarizing drives people to opposite extremes, splitting them into two hostile camps — like the opposite poles of a magnet. The article says the World Cup showed that America's “polarizing politics” don't always have to define the country; for a month, something else did.",
+    "audio": true
+  },
+  {
+    "k": "conspicuously",
+    "t": "conspicuously",
+    "kind": "word",
+    "forms": [
+      "conspicuously"
+    ],
+    "text": "Conspicuously means in a way that stands out and can't be missed. President Trump kept himself “conspicuously absent” from the first 103 games — his staying away was itself noticeable — before suddenly inserting himself into a disciplinary dispute.",
+    "audio": true
+  },
+  {
+    "k": "gravitated",
+    "t": "gravitated",
+    "kind": "word",
+    "forms": [
+      "gravitated"
+    ],
+    "text": "To gravitate toward something is to be pulled toward it as if by gravity — drawn in naturally. A U.S. player said people “gravitated toward the team” because it felt relatable and real, representing the country as it actually is.",
+    "audio": true
+  },
+  {
+    "k": "brand-ambassadors",
+    "t": "brand ambassadors",
+    "kind": "phrase",
+    "forms": [
+      "brand ambassadors"
+    ],
+    "text": "A brand ambassador is a person who represents and talks up a product or place, spreading a good impression of it. A travel study called international visitors America's “best brand ambassadors”: they went home and sold the country to everyone they knew, better than any official campaign.",
+    "audio": true
+  },
+  {
+    "k": "fifa",
+    "t": "FIFA",
+    "kind": "name",
+    "forms": [
+      "FIFA"
+    ],
+    "text": "FIFA is soccer's world governing body — the organization that runs the World Cup and sets the sport's global rules. Its confidence in this tournament ran so high that it quietly raised its revenue forecast from $11 billion to $15 billion.",
+    "audio": true
+  },
+  {
+    "k": "tartan-army",
+    "t": "Tartan Army",
+    "kind": "name",
+    "forms": [
+      "Tartan Army"
+    ],
+    "text": "The “Tartan Army” is the affectionate nickname for Scotland's traveling soccer fans, famous for their friendly, festive invasions of host cities (tartan being Scotland's checkered plaid). The article pictures them “drinking Boston dry” as one of the joyful scenes that won America over.",
+    "audio": true
+  },
+  {
+    "k": "verged-on",
+    "t": "verged on",
+    "kind": "phrase",
+    "forms": [
+      "verged on"
+    ],
+    "text": "To “verge on” something is to come right up to its edge, almost reaching it. Belgium's anger at the president meddling in a disciplinary ruling “verged on disbelief” — it nearly tipped into flat-out amazement that it was happening at all.",
+    "audio": true
+  }
 ]

@@ -1,193 +1,276 @@
 [
- {
-  "k": "ascendant",
-  "t": "ascendant",
-  "kind": "vocab",
-  "pron": "uh-SEN-dunt",
-  "forms": ["ascendant"],
-  "text": "Ascendant describes something on the rise — climbing in power, money, and influence and starting to take over. The fear in the article is that the “ascendant streaming services” — the newcomers surging upward — will soon outbid the old broadcast networks for even the Super Bowl and World Series."
- },
- {
-  "k": "stratified",
-  "t": "stratified",
-  "kind": "vocab",
-  "pron": "STRAT-uh-fyd",
-  "forms": ["stratified"],
-  "text": "Stratified means split into separate layers or levels, like bands of rock stacked on top of each other — here, layers of fans sorted by how much they can pay. Watching sports on TV is becoming stratified the way a stadium already is: cheap seats, club seats, and luxury suites, with fans divided by their wallets."
- },
- {
-  "k": "out-of-market",
-  "t": "out-of-market",
-  "kind": "phrase",
-  "forms": ["out-of-market"],
-  "text": "“Out-of-market” games are the ones played outside your local TV region — not your hometown team. Packages like NFL Sunday Ticket exist to sell you those out-of-market games, which is why a fan following a distant team can end up paying so much."
- },
- {
-  "k": "cut-the-cord",
-  "t": "cut the cord",
-  "kind": "phrase",
-  "forms": ["cut the cord"],
-  "text": "To “cut the cord” means to cancel your cable or satellite TV subscription — snipping the physical cable that used to pipe channels into the house. One fan cut the cord in 2021 as prices climbed, then drifted away from his team entirely, following games on the radio instead."
- },
- {
-  "k": "regional-sports-network",
-  "t": "regional sports network",
-  "kind": "name",
-  "forms": ["regional sports network"],
-  "text": "A regional sports network is a TV channel that carries a local team's games for one area — the traditional home for hometown baseball, basketball, and hockey. The article opens with a fan who paid for one to watch his Dodgers, until the rising cost pushed him to quit."
- },
- {
-  "k": "well-heeled",
-  "t": "well-heeled",
-  "kind": "word",
-  "forms": ["well-heeled"],
-  "text": "Well-heeled means wealthy, with money to spare — an old expression tied to being able to afford good shoes. The complaint is that today's sports-TV setup “serves well-heeled superfans” who can pay for everything, while doing little to welcome ordinary new fans."
- },
- {
-  "k": "broadcast",
-  "t": "broadcast",
-  "kind": "word",
-  "forms": ["broadcast"],
-  "text": "Broadcast TV is the free, over-the-air television anyone with an antenna can watch — networks like CBS, Fox, and NBC — as opposed to paid cable or streaming. The whole debate is about games “migrating” off broadcast, where everyone could see them, and onto services you have to pay for."
- },
- {
-  "k": "telecasts",
-  "t": "telecasts",
-  "kind": "word",
-  "forms": ["telecasts"],
-  "text": "A telecast is simply a television broadcast of an event. The article recalls how “widely available broadcast TV telecasts” once brought games to everyone in a fan's youth — a shared free window that's now shrinking."
- },
- {
-  "k": "rubicon",
-  "t": "Rubicon",
-  "kind": "phrase",
-  "forms": ["Rubicon"],
-  "text": "“Crossing the Rubicon” means taking a step past a point of no return — from the river Julius Caesar illegally marched his army across in 49 BC, sparking a war he couldn't undo. Locking an NFL playoff game behind a paid streaming subscription for the first time was “a kind of Rubicon,” because once championship games can be paywalled, it's very hard to go back to free."
- },
- {
-  "k": "postseason",
-  "t": "postseason",
-  "kind": "word",
-  "forms": ["postseason"],
-  "text": "The postseason is the playoffs — the elimination games after the regular season that decide the champion. It was a milestone precisely because it was a postseason contest, the high-stakes kind fans most expect to be able to watch for free, that landed exclusively on streaming."
- },
- {
-  "k": "exclusive-basis",
-  "t": "exclusive basis",
-  "kind": "phrase",
-  "forms": ["exclusive basis", "exclusive"],
-  "text": "Showing a game “on an exclusive basis” means only one service carries it — you can't watch it anywhere else. When Amazon Prime streamed that playoff game exclusively, fans without a Prime subscription simply couldn't see it, which is what set off the alarm."
- },
- {
-  "k": "birthright",
-  "t": "birthright",
-  "kind": "word",
-  "forms": ["birthright"],
-  "text": "A birthright is something you feel entitled to simply because of who you are or where you were born — a right you're born with. Fans treated free access to the Super Bowl and World Series as “a sports fan's birthright,” which is why moving those games behind a paywall feels like taking something away."
- },
- {
-  "k": "antitrust",
-  "t": "antitrust",
-  "kind": "name",
-  "forms": ["antitrust"],
-  "text": "Antitrust laws stop rival companies from teaming up in ways that kill competition — like agreeing to fix prices so customers can't shop around. Sports leagues normally couldn't sell all their teams' TV rights as one giant package, but a 1961 law gave them “limited antitrust protection” to do so, and the DOJ is now probing whether the NFL's streaming deals stretch past what that exception allows."
- },
- {
-  "k": "landmark",
-  "t": "landmark",
-  "kind": "word",
-  "forms": ["landmark"],
-  "text": "Here “landmark” doesn't mean a famous building — it means historic and hugely important, a turning point. The 1961 Sports Broadcasting Act was a “landmark” law because it reshaped how leagues sell their games on TV, and its rules are exactly what's now being tested."
- },
- {
-  "k": "bargain",
-  "t": "bargain",
-  "kind": "word",
-  "forms": ["bargain"],
-  "text": "To bargain here means to negotiate a deal, not to find a cheap price. The 1961 law let leagues “bargain for TV deals” as a single group — jointly haggling with the networks — which is normally the sort of teaming-up antitrust law forbids."
- },
- {
-  "k": "inquiry",
-  "t": "inquiry",
-  "kind": "word",
-  "forms": ["inquiry"],
-  "text": "An inquiry is an official investigation — a formal effort to dig into whether something's gone wrong. The Federal Communications Commission opened its own inquiry into sports moving off free TV, and its public-comment file is stuffed with angry fans."
- },
- {
-  "k": "justice-department",
-  "t": "Justice Department",
-  "kind": "name",
-  "forms": ["Justice Department", "DOJ"],
-  "text": "The U.S. Department of Justice (the DOJ) is the federal agency that enforces the country's laws, including antitrust law. It opened an investigation into whether the NFL's streaming deals break the terms of that special 1961 exemption — the government watchdog stepping into the sports-TV fight."
- },
- {
-  "k": "fcc",
-  "t": "Federal Communications Commission",
-  "kind": "name",
-  "forms": ["Federal Communications Commission"],
-  "text": "The Federal Communications Commission (FCC) is the U.S. agency that regulates television, radio, and other communications. It launched its own inquiry into the trend of games leaving broadcast TV, and found a pile of public complaints waiting."
- },
- {
-  "k": "appalling",
-  "t": "appalling",
-  "kind": "word",
-  "forms": ["appalling"],
-  "text": "Appalling means shocking and dismaying — bad enough to fill you with dismay. One longtime fan wrote that it's “appalling” to watch games he'd followed for decades get “hijacked” onto paid cable, capturing the anger in the FCC's comment file."
- },
- {
-  "k": "simulcasts",
-  "t": "simulcasts",
-  "kind": "word",
-  "forms": ["simulcasts"],
-  "text": "A simulcast is broadcasting the same thing on two channels at the same time (“simultaneous” + “broadcast”). The NFL counts “Monday Night Football” as reaching broadcast TV through ABC simulcasts of the ESPN telecast — one way it argues most of its games are still widely available."
- },
- {
-  "k": "balk",
-  "t": "balk",
-  "kind": "word",
-  "forms": ["balk"],
-  "text": "To balk is to hesitate or refuse — to pull up short at something you find unacceptable, the way a horse stops dead before a jump. Many viewers “balk at the cost and complexity” of today's tangle of sports services, even if some decide the trade-off is worth it."
- },
- {
-  "k": "fragmented",
-  "t": "fragmented",
-  "kind": "word",
-  "forms": ["fragmented"],
-  "text": "Fragmented means broken into many scattered pieces. A retired fan mourns the “fragmented viewing marketplace,” where games are split across so many channels and apps that the old experience of a whole region watching together has shattered."
- },
- {
-  "k": "solidarity",
-  "t": "solidarity",
-  "kind": "word",
-  "forms": ["solidarity"],
-  "text": "Solidarity is a feeling of unity and togetherness — standing shoulder to shoulder as one group. The article's deeper worry is cultural: the “feeling of solidarity” fans once shared, rich and poor watching the same free game, is being eroded as viewing splits along class lines."
- },
- {
-  "k": "eroded",
-  "t": "eroded",
-  "kind": "word",
-  "forms": ["eroded"],
-  "text": "To erode is to wear away slowly, the way water gradually carves a riverbank. The shared experience of being fans is “being eroded” — not banned outright, just quietly worn down as games scatter behind different paywalls."
- },
- {
-  "k": "tier",
-  "t": "tier",
-  "kind": "word",
-  "forms": ["tier"],
-  "text": "A tier is a level or rank in a system — like the stacked rows of a wedding cake. The open question is whether even the Super Bowl might one day move to a “paid tier,” a higher level fans would have to pay extra to reach."
- },
- {
-  "k": "standstill",
-  "t": "standstill",
-  "kind": "phrase",
-  "forms": ["standstill"],
-  "text": "A standstill is a complete stop — nothing moving. A fan remembers how a winning team once brought a whole region “to a standstill” every Sunday, everybody tuned to the same free game, a shared ritual he doubts can happen in today's fractured landscape."
- },
- {
-  "k": "configurations",
-  "t": "configurations",
-  "kind": "word",
-  "forms": ["configurations"],
-  "text": "A configuration is a particular way of arranging or combining the parts of something — here, the different bundles of add-ons you can pick. NFL Sunday Ticket can top $500 “in some configurations,” meaning certain combinations of extras push the price that high."
- }
+  {
+    "k": "ascendant",
+    "t": "ascendant",
+    "kind": "vocab",
+    "pron": "uh-SEN-dunt",
+    "forms": [
+      "ascendant"
+    ],
+    "text": "Ascendant describes something on the rise — climbing in power, money, and influence and starting to take over. The fear in the article is that the “ascendant streaming services” — the newcomers surging upward — will soon outbid the old broadcast networks for even the Super Bowl and World Series.",
+    "audio": true
+  },
+  {
+    "k": "stratified",
+    "t": "stratified",
+    "kind": "vocab",
+    "pron": "STRAT-uh-fyd",
+    "forms": [
+      "stratified"
+    ],
+    "text": "Stratified means split into separate layers or levels, like bands of rock stacked on top of each other — here, layers of fans sorted by how much they can pay. Watching sports on TV is becoming stratified the way a stadium already is: cheap seats, club seats, and luxury suites, with fans divided by their wallets.",
+    "audio": true
+  },
+  {
+    "k": "out-of-market",
+    "t": "out-of-market",
+    "kind": "phrase",
+    "forms": [
+      "out-of-market"
+    ],
+    "text": "“Out-of-market” games are the ones played outside your local TV region — not your hometown team. Packages like NFL Sunday Ticket exist to sell you those out-of-market games, which is why a fan following a distant team can end up paying so much.",
+    "audio": true
+  },
+  {
+    "k": "cut-the-cord",
+    "t": "cut the cord",
+    "kind": "phrase",
+    "forms": [
+      "cut the cord"
+    ],
+    "text": "To “cut the cord” means to cancel your cable or satellite TV subscription — snipping the physical cable that used to pipe channels into the house. One fan cut the cord in 2021 as prices climbed, then drifted away from his team entirely, following games on the radio instead.",
+    "audio": true
+  },
+  {
+    "k": "regional-sports-network",
+    "t": "regional sports network",
+    "kind": "name",
+    "forms": [
+      "regional sports network"
+    ],
+    "text": "A regional sports network is a TV channel that carries a local team's games for one area — the traditional home for hometown baseball, basketball, and hockey. The article opens with a fan who paid for one to watch his Dodgers, until the rising cost pushed him to quit.",
+    "audio": true
+  },
+  {
+    "k": "well-heeled",
+    "t": "well-heeled",
+    "kind": "word",
+    "forms": [
+      "well-heeled"
+    ],
+    "text": "Well-heeled means wealthy, with money to spare — an old expression tied to being able to afford good shoes. The complaint is that today's sports-TV setup “serves well-heeled superfans” who can pay for everything, while doing little to welcome ordinary new fans.",
+    "audio": true
+  },
+  {
+    "k": "broadcast",
+    "t": "broadcast",
+    "kind": "word",
+    "forms": [
+      "broadcast"
+    ],
+    "text": "Broadcast TV is the free, over-the-air television anyone with an antenna can watch — networks like CBS, Fox, and NBC — as opposed to paid cable or streaming. The whole debate is about games “migrating” off broadcast, where everyone could see them, and onto services you have to pay for.",
+    "audio": true
+  },
+  {
+    "k": "telecasts",
+    "t": "telecasts",
+    "kind": "word",
+    "forms": [
+      "telecasts"
+    ],
+    "text": "A telecast is simply a television broadcast of an event. The article recalls how “widely available broadcast TV telecasts” once brought games to everyone in a fan's youth — a shared free window that's now shrinking.",
+    "audio": true
+  },
+  {
+    "k": "rubicon",
+    "t": "Rubicon",
+    "kind": "phrase",
+    "forms": [
+      "Rubicon"
+    ],
+    "text": "“Crossing the Rubicon” means taking a step past a point of no return — from the river Julius Caesar illegally marched his army across in 49 BC, sparking a war he couldn't undo. Locking an NFL playoff game behind a paid streaming subscription for the first time was “a kind of Rubicon,” because once championship games can be paywalled, it's very hard to go back to free.",
+    "audio": true
+  },
+  {
+    "k": "postseason",
+    "t": "postseason",
+    "kind": "word",
+    "forms": [
+      "postseason"
+    ],
+    "text": "The postseason is the playoffs — the elimination games after the regular season that decide the champion. It was a milestone precisely because it was a postseason contest, the high-stakes kind fans most expect to be able to watch for free, that landed exclusively on streaming.",
+    "audio": true
+  },
+  {
+    "k": "exclusive-basis",
+    "t": "exclusive basis",
+    "kind": "phrase",
+    "forms": [
+      "exclusive basis",
+      "exclusive"
+    ],
+    "text": "Showing a game “on an exclusive basis” means only one service carries it — you can't watch it anywhere else. When Amazon Prime streamed that playoff game exclusively, fans without a Prime subscription simply couldn't see it, which is what set off the alarm.",
+    "audio": true
+  },
+  {
+    "k": "birthright",
+    "t": "birthright",
+    "kind": "word",
+    "forms": [
+      "birthright"
+    ],
+    "text": "A birthright is something you feel entitled to simply because of who you are or where you were born — a right you're born with. Fans treated free access to the Super Bowl and World Series as “a sports fan's birthright,” which is why moving those games behind a paywall feels like taking something away.",
+    "audio": true
+  },
+  {
+    "k": "antitrust",
+    "t": "antitrust",
+    "kind": "name",
+    "forms": [
+      "antitrust"
+    ],
+    "text": "Antitrust laws stop rival companies from teaming up in ways that kill competition — like agreeing to fix prices so customers can't shop around. Sports leagues normally couldn't sell all their teams' TV rights as one giant package, but a 1961 law gave them “limited antitrust protection” to do so, and the DOJ is now probing whether the NFL's streaming deals stretch past what that exception allows.",
+    "audio": true
+  },
+  {
+    "k": "landmark",
+    "t": "landmark",
+    "kind": "word",
+    "forms": [
+      "landmark"
+    ],
+    "text": "Here “landmark” doesn't mean a famous building — it means historic and hugely important, a turning point. The 1961 Sports Broadcasting Act was a “landmark” law because it reshaped how leagues sell their games on TV, and its rules are exactly what's now being tested.",
+    "audio": true
+  },
+  {
+    "k": "bargain",
+    "t": "bargain",
+    "kind": "word",
+    "forms": [
+      "bargain"
+    ],
+    "text": "To bargain here means to negotiate a deal, not to find a cheap price. The 1961 law let leagues “bargain for TV deals” as a single group — jointly haggling with the networks — which is normally the sort of teaming-up antitrust law forbids.",
+    "audio": true
+  },
+  {
+    "k": "inquiry",
+    "t": "inquiry",
+    "kind": "word",
+    "forms": [
+      "inquiry"
+    ],
+    "text": "An inquiry is an official investigation — a formal effort to dig into whether something's gone wrong. The Federal Communications Commission opened its own inquiry into sports moving off free TV, and its public-comment file is stuffed with angry fans.",
+    "audio": true
+  },
+  {
+    "k": "justice-department",
+    "t": "Justice Department",
+    "kind": "name",
+    "forms": [
+      "Justice Department",
+      "DOJ"
+    ],
+    "text": "The U.S. Department of Justice (the DOJ) is the federal agency that enforces the country's laws, including antitrust law. It opened an investigation into whether the NFL's streaming deals break the terms of that special 1961 exemption — the government watchdog stepping into the sports-TV fight.",
+    "audio": true
+  },
+  {
+    "k": "fcc",
+    "t": "Federal Communications Commission",
+    "kind": "name",
+    "forms": [
+      "Federal Communications Commission"
+    ],
+    "text": "The Federal Communications Commission (FCC) is the U.S. agency that regulates television, radio, and other communications. It launched its own inquiry into the trend of games leaving broadcast TV, and found a pile of public complaints waiting.",
+    "audio": true
+  },
+  {
+    "k": "appalling",
+    "t": "appalling",
+    "kind": "word",
+    "forms": [
+      "appalling"
+    ],
+    "text": "Appalling means shocking and dismaying — bad enough to fill you with dismay. One longtime fan wrote that it's “appalling” to watch games he'd followed for decades get “hijacked” onto paid cable, capturing the anger in the FCC's comment file.",
+    "audio": true
+  },
+  {
+    "k": "simulcasts",
+    "t": "simulcasts",
+    "kind": "word",
+    "forms": [
+      "simulcasts"
+    ],
+    "text": "A simulcast is broadcasting the same thing on two channels at the same time (“simultaneous” + “broadcast”). The NFL counts “Monday Night Football” as reaching broadcast TV through ABC simulcasts of the ESPN telecast — one way it argues most of its games are still widely available.",
+    "audio": true
+  },
+  {
+    "k": "balk",
+    "t": "balk",
+    "kind": "word",
+    "forms": [
+      "balk"
+    ],
+    "text": "To balk is to hesitate or refuse — to pull up short at something you find unacceptable, the way a horse stops dead before a jump. Many viewers “balk at the cost and complexity” of today's tangle of sports services, even if some decide the trade-off is worth it.",
+    "audio": true
+  },
+  {
+    "k": "fragmented",
+    "t": "fragmented",
+    "kind": "word",
+    "forms": [
+      "fragmented"
+    ],
+    "text": "Fragmented means broken into many scattered pieces. A retired fan mourns the “fragmented viewing marketplace,” where games are split across so many channels and apps that the old experience of a whole region watching together has shattered.",
+    "audio": true
+  },
+  {
+    "k": "solidarity",
+    "t": "solidarity",
+    "kind": "word",
+    "forms": [
+      "solidarity"
+    ],
+    "text": "Solidarity is a feeling of unity and togetherness — standing shoulder to shoulder as one group. The article's deeper worry is cultural: the “feeling of solidarity” fans once shared, rich and poor watching the same free game, is being eroded as viewing splits along class lines.",
+    "audio": true
+  },
+  {
+    "k": "eroded",
+    "t": "eroded",
+    "kind": "word",
+    "forms": [
+      "eroded"
+    ],
+    "text": "To erode is to wear away slowly, the way water gradually carves a riverbank. The shared experience of being fans is “being eroded” — not banned outright, just quietly worn down as games scatter behind different paywalls.",
+    "audio": true
+  },
+  {
+    "k": "tier",
+    "t": "tier",
+    "kind": "word",
+    "forms": [
+      "tier"
+    ],
+    "text": "A tier is a level or rank in a system — like the stacked rows of a wedding cake. The open question is whether even the Super Bowl might one day move to a “paid tier,” a higher level fans would have to pay extra to reach.",
+    "audio": true
+  },
+  {
+    "k": "standstill",
+    "t": "standstill",
+    "kind": "phrase",
+    "forms": [
+      "standstill"
+    ],
+    "text": "A standstill is a complete stop — nothing moving. A fan remembers how a winning team once brought a whole region “to a standstill” every Sunday, everybody tuned to the same free game, a shared ritual he doubts can happen in today's fractured landscape.",
+    "audio": true
+  },
+  {
+    "k": "configurations",
+    "t": "configurations",
+    "kind": "word",
+    "forms": [
+      "configurations"
+    ],
+    "text": "A configuration is a particular way of arranging or combining the parts of something — here, the different bundles of add-ons you can pick. NFL Sunday Ticket can top $500 “in some configurations,” meaning certain combinations of extras push the price that high.",
+    "audio": true
+  }
 ]

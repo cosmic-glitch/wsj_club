@@ -1,221 +1,317 @@
 [
- {
-  "k": "shoehorn",
-  "t": "shoehorning",
-  "kind": "vocab",
-  "pron": "SHOO-horn",
-  "forms": ["shoehorning"],
-  "text": "A shoehorn is the little tool that forces your heel into a too-tight shoe — so to shoehorn something is to cram it into a space or format that's really the wrong shape for it. That's the problem here: soccer, a sport built on nonstop play, being forced into an American TV format designed for sports full of natural stoppages."
- },
- {
-  "k": "capitalize",
-  "t": "capitalize on",
-  "kind": "vocab",
-  "pron": "KAP-ih-tuh-lyze",
-  "forms": ["capitalize"],
-  "text": "To capitalize on something is to make the most of an opportunity — to seize a chance and squeeze the value out of it. Fox didn't capitalize on the new breaks modestly, with one quick ad per pause; midway through the very first half it ran five commercials in a row."
- },
- {
-  "k": "acquainting",
-  "t": "acquainting",
-  "kind": "word",
-  "forms": ["acquainting"],
-  "text": "To acquaint yourself with something is to get to know it — an acquaintance is someone you sort of know. International fans have been acquainting themselves with America's “pleasures”: barbecue, traffic jams, Texas heat. The quotation-mark tone is deliberate."
- },
- {
-  "k": "tolerate",
-  "t": "tolerate",
-  "kind": "word",
-  "forms": ["tolerate"],
-  "text": "To tolerate something is to put up with it even though you don't like it. Fans will tolerate the traffic and the heat — but mid-game ad breaks are the one American tradition they simply cannot."
- },
- {
-  "k": "smack-in-the-middle",
-  "t": "smack in the middle",
-  "kind": "phrase",
-  "forms": ["smack in the middle"],
-  "text": "“Smack” here means exactly, right there — with the force of a slap. Ads landing smack in the middle of each half means dead center of the action, which is precisely what makes them so infuriating."
- },
- {
-  "k": "as-a-matter-of-course",
-  "t": "as a matter of course",
-  "kind": "phrase",
-  "forms": ["as a matter of course"],
-  "text": "Something done as a matter of course happens automatically, as standard routine — no special reason needed. That's the shift: breaks that were once a rare heat-emergency measure now interrupt every match around the 22nd and 67th minutes, just because."
- },
- {
-  "k": "governing-body",
-  "t": "governing body",
-  "kind": "phrase",
-  "forms": ["governing body"],
-  "text": "A sport's governing body is the organization that runs it worldwide — writing the rules, staging the tournaments, collecting the money. Soccer's is FIFA, which is why FIFA gets to decide whether World Cup matches pause for “hydration.”"
- },
- {
-  "k": "fifa",
-  "t": "FIFA",
-  "kind": "name",
-  "forms": ["FIFA"],
-  "text": "Soccer's world governing body — the organization that owns and runs the World Cup. Its official line is that the new breaks protect players from the heat; most of the soccer world suspects the real reason has more to do with the ad money."
- },
- {
-  "k": "hydration",
-  "t": "hydration",
-  "kind": "word",
-  "forms": ["hydration", "Hydration"],
-  "text": "Hydration just means getting enough water. A “hydration break” sounds medical and caring — but the article's killer detail is that the break now happens regardless of temperature (it was 71°F in Los Angeles), and on TV it arrives branded as the “Powerade Hydration Break,” named for a sports drink."
- },
- {
-  "k": "scorching",
-  "t": "scorching",
-  "kind": "word",
-  "forms": ["scorching"],
-  "text": "Scorching means burning hot — to scorch is to burn the surface of something. The “scorching American summer” is FIFA's official justification for the breaks; the 71-degree evening in Los Angeles is the article's rebuttal."
- },
- {
-  "k": "broadcasters",
-  "t": "broadcasters",
-  "kind": "word",
-  "forms": ["broadcasters", "broadcast"],
-  "text": "A broadcaster is a TV or radio network that transmits — broadcasts — programming to the public. For the broadcasters, a mandatory three-minute pause isn't an interruption; it's inventory: fresh airtime they can sell."
- },
- {
-  "k": "cutting-away",
-  "t": "cutting away",
-  "kind": "phrase",
-  "forms": ["cutting away"],
-  "text": "In TV, to cut away is to switch the picture from the live event to something else — here, from the stadium to commercials for beer and gambling companies. The complaint isn't just the pause; it's that viewers literally lose sight of the game."
- },
- {
-  "k": "manager",
-  "t": "manager",
-  "kind": "word",
-  "forms": ["manager"],
-  "text": "In soccer, the manager is the head coach — the person who picks the team and runs it from the sideline, not someone managing an office. Didier Deschamps, France's World Cup-winning manager, coached them to the 2018 title."
- },
- {
-  "k": "the-beautiful-game",
-  "t": "the beautiful game",
-  "kind": "phrase",
-  "forms": ["the beautiful game"],
-  "text": "Soccer's most famous nickname — popularized by Pelé, who called soccer “o jogo bonito,” the beautiful game. Using it here sharpens the outrage: the beautiful game, paused so corporations can pitch products."
- },
- {
-  "k": "pitch",
-  "t": "pitch",
-  "kind": "word",
-  "forms": ["pitch"],
-  "text": "To pitch a product is to promote it — to make your sales pitch. There's a wink buried here: in soccer, the “pitch” is also the field itself. So the beautiful game stops on the pitch so that companies can pitch."
- },
- {
-  "k": "immersed",
-  "t": "immersed",
-  "kind": "word",
-  "forms": ["immersed"],
-  "text": "To be immersed is to be completely surrounded by something, as if underwater in it — fully absorbed, the outside world gone. The fan's complaint: you want to be immersed in the match, and the ad break yanks you straight out of the water."
- },
- {
-  "k": "cash-grab",
-  "t": "cash grab",
-  "kind": "phrase",
-  "forms": ["cash grab"],
-  "text": "A cash grab is something done purely to grab money — with no care for quality or for the people paying. It's the accusation underneath every complaint in this article: the “hydration break” is really a revenue break."
- },
- {
-  "k": "mandatory",
-  "t": "mandatory",
-  "kind": "word",
-  "forms": ["mandatory"],
-  "text": "Mandatory means required — you don't get a choice. The tell in the story: breaks invented in 2014 for dangerous 89°F-plus heat are now mandatory in every match, whatever the weather."
- },
- {
-  "k": "opener",
-  "t": "opener",
-  "kind": "word",
-  "forms": ["opener"],
-  "text": "A team's opener is its first game of a tournament or season. The U.S. men's opener in Los Angeles is where the article catches the “hydration break” red-handed: game paused for player safety, temperature 71 degrees."
- },
- {
-  "k": "at-play",
-  "t": "at play",
-  "kind": "phrase",
-  "forms": ["at play"],
-  "text": "When a force is “at play,” it's operating in the situation — at work behind events. The soccer world sees something besides player safety at play here: corporate greed. (In an article about a game, the phrase is a quiet pun.)"
- },
- {
-  "k": "window",
-  "t": "window",
-  "kind": "word",
-  "forms": ["window"],
-  "text": "A window here is a slot of time — an opening, like a window in a wall. Carve a three-minute window into each half of 104 matches and it adds up to over 10 extra hours of sellable advertising time across the tournament."
- },
- {
-  "k": "quarters",
-  "t": "quarters",
-  "kind": "word",
-  "forms": ["quarters"],
-  "text": "American football and basketball split their games into four quarters, with breaks between. Soccer's identity is the opposite — two unbroken halves. So the ex-ESPN executive's line “they've essentially divided the game into quarters” is the sharpest insult in the piece: they've Americanized the game's very shape."
- },
- {
-  "k": "consultant",
-  "t": "consultant",
-  "kind": "word",
-  "forms": ["consultant", "executive"],
-  "text": "A consultant is an expert hired to give advice; an executive is a high-ranking manager who runs part of a company. John Kosner is both — a former ESPN executive turned consultant — which is why he can price exactly what those new breaks are worth."
- },
- {
-  "k": "spot",
-  "t": "spot",
-  "kind": "word",
-  "forms": ["spot"],
-  "text": "In advertising, a “spot” is a commercial slot — a 30-second spot is 30 seconds of airtime for your ad. The price tells you what attention is worth: about $200,000 in early games, jumping to $750,000 when the U.S. team plays and the audience balloons."
- },
- {
-  "k": "rights",
-  "t": "rights",
-  "kind": "word",
-  "forms": ["rights"],
-  "text": "Broadcast rights are the exclusive permission a network buys to show an event. Fox Sports holds the English-language rights to this World Cup in the U.S. — it paid enormously for them, and selling ads during the games is how it earns that money back. That's the economic engine behind the whole story."
- },
- {
-  "k": "innovate",
-  "t": "innovate",
-  "kind": "word",
-  "forms": ["innovate"],
-  "text": "To innovate is to introduce new ideas and ways of doing things. Notice who's using the word: the Fox executive praising FIFA for “finding ways to innovate” — where fans would say the innovation in question is interrupting the game to sell beer."
- },
- {
-  "k": "intrigued",
-  "t": "intrigued",
-  "kind": "word",
-  "forms": ["intrigued"],
-  "text": "Intrigued means fascinated and curious — your interest hooked. FIFA is “very intrigued in the American market, the way we do sports here”: translated, world soccer's bosses have noticed how much money American-style TV sports make."
- },
- {
-  "k": "shot-through",
-  "t": "shot through with",
-  "kind": "phrase",
-  "forms": ["shot through"],
-  "text": "Something shot through with a thing is threaded with it all the way through, like streaks of color through fabric. American sports are shot through with natural pauses — timeouts, innings, possession changes — which is exactly why TV ads fit them and never fit soccer."
- },
- {
-  "k": "possession",
-  "t": "possession",
-  "kind": "word",
-  "forms": ["possession"],
-  "text": "In sports, possession means having the ball — a “change of possession” is the ball switching teams, one of the many built-in pauses in American football that give TV its ad windows. Soccer's possession changes constantly and the clock never stops, leaving ads nowhere to hide."
- },
- {
-  "k": "coverage",
-  "t": "coverage",
-  "kind": "word",
-  "forms": ["coverage"],
-  "text": "A network's coverage of an event is its broadcasting of it — everything it shows and reports. Rob Stone hosts Fox Sports' World Cup coverage, which makes his “as a fan, I don't love it” quietly remarkable: even the man presenting the broadcasts winces at the breaks."
- },
- {
-  "k": "a-bridge-too-far",
-  "t": "a bridge too far",
-  "kind": "phrase",
-  "forms": ["a bridge too far"],
-  "text": "A bridge too far is the step that goes beyond what anyone can accept — from a failed World War II operation where the Allies tried to capture one bridge more than they could hold. The German fan's line draws the limit perfectly: ads in the game, fine, this is America — but an ad that costs me a goal is a bridge too far."
- }
+  {
+    "k": "shoehorn",
+    "t": "shoehorning",
+    "kind": "vocab",
+    "pron": "SHOO-horn",
+    "forms": [
+      "shoehorning"
+    ],
+    "text": "A shoehorn is the little tool that forces your heel into a too-tight shoe — so to shoehorn something is to cram it into a space or format that's really the wrong shape for it. That's the problem here: soccer, a sport built on nonstop play, being forced into an American TV format designed for sports full of natural stoppages.",
+    "audio": true
+  },
+  {
+    "k": "capitalize",
+    "t": "capitalize on",
+    "kind": "vocab",
+    "pron": "KAP-ih-tuh-lyze",
+    "forms": [
+      "capitalize"
+    ],
+    "text": "To capitalize on something is to make the most of an opportunity — to seize a chance and squeeze the value out of it. Fox didn't capitalize on the new breaks modestly, with one quick ad per pause; midway through the very first half it ran five commercials in a row.",
+    "audio": true
+  },
+  {
+    "k": "acquainting",
+    "t": "acquainting",
+    "kind": "word",
+    "forms": [
+      "acquainting"
+    ],
+    "text": "To acquaint yourself with something is to get to know it — an acquaintance is someone you sort of know. International fans have been acquainting themselves with America's “pleasures”: barbecue, traffic jams, Texas heat. The quotation-mark tone is deliberate.",
+    "audio": true
+  },
+  {
+    "k": "tolerate",
+    "t": "tolerate",
+    "kind": "word",
+    "forms": [
+      "tolerate"
+    ],
+    "text": "To tolerate something is to put up with it even though you don't like it. Fans will tolerate the traffic and the heat — but mid-game ad breaks are the one American tradition they simply cannot.",
+    "audio": true
+  },
+  {
+    "k": "smack-in-the-middle",
+    "t": "smack in the middle",
+    "kind": "phrase",
+    "forms": [
+      "smack in the middle"
+    ],
+    "text": "“Smack” here means exactly, right there — with the force of a slap. Ads landing smack in the middle of each half means dead center of the action, which is precisely what makes them so infuriating.",
+    "audio": true
+  },
+  {
+    "k": "as-a-matter-of-course",
+    "t": "as a matter of course",
+    "kind": "phrase",
+    "forms": [
+      "as a matter of course"
+    ],
+    "text": "Something done as a matter of course happens automatically, as standard routine — no special reason needed. That's the shift: breaks that were once a rare heat-emergency measure now interrupt every match around the 22nd and 67th minutes, just because.",
+    "audio": true
+  },
+  {
+    "k": "governing-body",
+    "t": "governing body",
+    "kind": "phrase",
+    "forms": [
+      "governing body"
+    ],
+    "text": "A sport's governing body is the organization that runs it worldwide — writing the rules, staging the tournaments, collecting the money. Soccer's is FIFA, which is why FIFA gets to decide whether World Cup matches pause for “hydration.”",
+    "audio": true
+  },
+  {
+    "k": "fifa",
+    "t": "FIFA",
+    "kind": "name",
+    "forms": [
+      "FIFA"
+    ],
+    "text": "Soccer's world governing body — the organization that owns and runs the World Cup. Its official line is that the new breaks protect players from the heat; most of the soccer world suspects the real reason has more to do with the ad money.",
+    "audio": true
+  },
+  {
+    "k": "hydration",
+    "t": "hydration",
+    "kind": "word",
+    "forms": [
+      "hydration",
+      "Hydration"
+    ],
+    "text": "Hydration just means getting enough water. A “hydration break” sounds medical and caring — but the article's killer detail is that the break now happens regardless of temperature (it was 71°F in Los Angeles), and on TV it arrives branded as the “Powerade Hydration Break,” named for a sports drink.",
+    "audio": true
+  },
+  {
+    "k": "scorching",
+    "t": "scorching",
+    "kind": "word",
+    "forms": [
+      "scorching"
+    ],
+    "text": "Scorching means burning hot — to scorch is to burn the surface of something. The “scorching American summer” is FIFA's official justification for the breaks; the 71-degree evening in Los Angeles is the article's rebuttal.",
+    "audio": true
+  },
+  {
+    "k": "broadcasters",
+    "t": "broadcasters",
+    "kind": "word",
+    "forms": [
+      "broadcasters",
+      "broadcast"
+    ],
+    "text": "A broadcaster is a TV or radio network that transmits — broadcasts — programming to the public. For the broadcasters, a mandatory three-minute pause isn't an interruption; it's inventory: fresh airtime they can sell.",
+    "audio": true
+  },
+  {
+    "k": "cutting-away",
+    "t": "cutting away",
+    "kind": "phrase",
+    "forms": [
+      "cutting away"
+    ],
+    "text": "In TV, to cut away is to switch the picture from the live event to something else — here, from the stadium to commercials for beer and gambling companies. The complaint isn't just the pause; it's that viewers literally lose sight of the game.",
+    "audio": true
+  },
+  {
+    "k": "manager",
+    "t": "manager",
+    "kind": "word",
+    "forms": [
+      "manager"
+    ],
+    "text": "In soccer, the manager is the head coach — the person who picks the team and runs it from the sideline, not someone managing an office. Didier Deschamps, France's World Cup-winning manager, coached them to the 2018 title.",
+    "audio": true
+  },
+  {
+    "k": "the-beautiful-game",
+    "t": "the beautiful game",
+    "kind": "phrase",
+    "forms": [
+      "the beautiful game"
+    ],
+    "text": "Soccer's most famous nickname — popularized by Pelé, who called soccer “o jogo bonito,” the beautiful game. Using it here sharpens the outrage: the beautiful game, paused so corporations can pitch products.",
+    "audio": true
+  },
+  {
+    "k": "pitch",
+    "t": "pitch",
+    "kind": "word",
+    "forms": [
+      "pitch"
+    ],
+    "text": "To pitch a product is to promote it — to make your sales pitch. There's a wink buried here: in soccer, the “pitch” is also the field itself. So the beautiful game stops on the pitch so that companies can pitch.",
+    "audio": true
+  },
+  {
+    "k": "immersed",
+    "t": "immersed",
+    "kind": "word",
+    "forms": [
+      "immersed"
+    ],
+    "text": "To be immersed is to be completely surrounded by something, as if underwater in it — fully absorbed, the outside world gone. The fan's complaint: you want to be immersed in the match, and the ad break yanks you straight out of the water.",
+    "audio": true
+  },
+  {
+    "k": "cash-grab",
+    "t": "cash grab",
+    "kind": "phrase",
+    "forms": [
+      "cash grab"
+    ],
+    "text": "A cash grab is something done purely to grab money — with no care for quality or for the people paying. It's the accusation underneath every complaint in this article: the “hydration break” is really a revenue break.",
+    "audio": true
+  },
+  {
+    "k": "mandatory",
+    "t": "mandatory",
+    "kind": "word",
+    "forms": [
+      "mandatory"
+    ],
+    "text": "Mandatory means required — you don't get a choice. The tell in the story: breaks invented in 2014 for dangerous 89°F-plus heat are now mandatory in every match, whatever the weather.",
+    "audio": true
+  },
+  {
+    "k": "opener",
+    "t": "opener",
+    "kind": "word",
+    "forms": [
+      "opener"
+    ],
+    "text": "A team's opener is its first game of a tournament or season. The U.S. men's opener in Los Angeles is where the article catches the “hydration break” red-handed: game paused for player safety, temperature 71 degrees.",
+    "audio": true
+  },
+  {
+    "k": "at-play",
+    "t": "at play",
+    "kind": "phrase",
+    "forms": [
+      "at play"
+    ],
+    "text": "When a force is “at play,” it's operating in the situation — at work behind events. The soccer world sees something besides player safety at play here: corporate greed. (In an article about a game, the phrase is a quiet pun.)",
+    "audio": true
+  },
+  {
+    "k": "window",
+    "t": "window",
+    "kind": "word",
+    "forms": [
+      "window"
+    ],
+    "text": "A window here is a slot of time — an opening, like a window in a wall. Carve a three-minute window into each half of 104 matches and it adds up to over 10 extra hours of sellable advertising time across the tournament.",
+    "audio": true
+  },
+  {
+    "k": "quarters",
+    "t": "quarters",
+    "kind": "word",
+    "forms": [
+      "quarters"
+    ],
+    "text": "American football and basketball split their games into four quarters, with breaks between. Soccer's identity is the opposite — two unbroken halves. So the ex-ESPN executive's line “they've essentially divided the game into quarters” is the sharpest insult in the piece: they've Americanized the game's very shape.",
+    "audio": true
+  },
+  {
+    "k": "consultant",
+    "t": "consultant",
+    "kind": "word",
+    "forms": [
+      "consultant",
+      "executive"
+    ],
+    "text": "A consultant is an expert hired to give advice; an executive is a high-ranking manager who runs part of a company. John Kosner is both — a former ESPN executive turned consultant — which is why he can price exactly what those new breaks are worth.",
+    "audio": true
+  },
+  {
+    "k": "spot",
+    "t": "spot",
+    "kind": "word",
+    "forms": [
+      "spot"
+    ],
+    "text": "In advertising, a “spot” is a commercial slot — a 30-second spot is 30 seconds of airtime for your ad. The price tells you what attention is worth: about $200,000 in early games, jumping to $750,000 when the U.S. team plays and the audience balloons.",
+    "audio": true
+  },
+  {
+    "k": "rights",
+    "t": "rights",
+    "kind": "word",
+    "forms": [
+      "rights"
+    ],
+    "text": "Broadcast rights are the exclusive permission a network buys to show an event. Fox Sports holds the English-language rights to this World Cup in the U.S. — it paid enormously for them, and selling ads during the games is how it earns that money back. That's the economic engine behind the whole story.",
+    "audio": true
+  },
+  {
+    "k": "innovate",
+    "t": "innovate",
+    "kind": "word",
+    "forms": [
+      "innovate"
+    ],
+    "text": "To innovate is to introduce new ideas and ways of doing things. Notice who's using the word: the Fox executive praising FIFA for “finding ways to innovate” — where fans would say the innovation in question is interrupting the game to sell beer.",
+    "audio": true
+  },
+  {
+    "k": "intrigued",
+    "t": "intrigued",
+    "kind": "word",
+    "forms": [
+      "intrigued"
+    ],
+    "text": "Intrigued means fascinated and curious — your interest hooked. FIFA is “very intrigued in the American market, the way we do sports here”: translated, world soccer's bosses have noticed how much money American-style TV sports make.",
+    "audio": true
+  },
+  {
+    "k": "shot-through",
+    "t": "shot through with",
+    "kind": "phrase",
+    "forms": [
+      "shot through"
+    ],
+    "text": "Something shot through with a thing is threaded with it all the way through, like streaks of color through fabric. American sports are shot through with natural pauses — timeouts, innings, possession changes — which is exactly why TV ads fit them and never fit soccer.",
+    "audio": true
+  },
+  {
+    "k": "possession",
+    "t": "possession",
+    "kind": "word",
+    "forms": [
+      "possession"
+    ],
+    "text": "In sports, possession means having the ball — a “change of possession” is the ball switching teams, one of the many built-in pauses in American football that give TV its ad windows. Soccer's possession changes constantly and the clock never stops, leaving ads nowhere to hide.",
+    "audio": true
+  },
+  {
+    "k": "coverage",
+    "t": "coverage",
+    "kind": "word",
+    "forms": [
+      "coverage"
+    ],
+    "text": "A network's coverage of an event is its broadcasting of it — everything it shows and reports. Rob Stone hosts Fox Sports' World Cup coverage, which makes his “as a fan, I don't love it” quietly remarkable: even the man presenting the broadcasts winces at the breaks.",
+    "audio": true
+  },
+  {
+    "k": "a-bridge-too-far",
+    "t": "a bridge too far",
+    "kind": "phrase",
+    "forms": [
+      "a bridge too far"
+    ],
+    "text": "A bridge too far is the step that goes beyond what anyone can accept — from a failed World War II operation where the Allies tried to capture one bridge more than they could hold. The German fan's line draws the limit perfectly: ads in the game, fine, this is America — but an ad that costs me a goal is a bridge too far.",
+    "audio": true
+  }
 ]
