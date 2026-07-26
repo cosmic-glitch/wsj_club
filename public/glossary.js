@@ -107,8 +107,12 @@ function openSheet(k){
   var e=byKey[k];if(!e)return;
   stopHear();
   var h=chipFor(e);
-  h+='<div class="gs-term">'+esc(e.t)+(e.pron?'<span class="gs-pron">'+esc(e.pron)+"</span>":"")+
-    (e.audio?'<button class="gs-hear" title="Hear it" aria-label="Hear &quot;'+esc(e.t)+'&quot; pronounced">'+SPEAKER_SVG+"</button>":"")+"</div>";
+  // The pron + speaker button ride in a no-wrap span with the term's LAST word,
+  // so a wrapping phrase never strands the button alone on the next line.
+  var words=esc(e.t).split(" "),lastWord=words.pop();
+  h+='<div class="gs-term">'+(words.length?words.join(" ")+" ":"")+
+    '<span class="gs-tail">'+lastWord+(e.pron?'<span class="gs-pron">'+esc(e.pron)+"</span>":"")+
+    (e.audio?'<button class="gs-hear" title="Hear it" aria-label="Hear &quot;'+esc(e.t)+'&quot; pronounced">'+SPEAKER_SVG+"</button>":"")+"</span></div>";
   String(e.text).split("\n\n").forEach(function(para){
     h+='<p class="gs-text">'+esc(para)+"</p>";
   });

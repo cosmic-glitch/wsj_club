@@ -12,8 +12,9 @@ h1 .gw{text-decoration-color:#c0c0c0}
 .gs-chip{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:#0a0a0a;color:#fff;padding:3px 8px}
 .gs-chip--vocab{background:#ffe600;color:#0a0a0a}
 .gs-term{font-family:Georgia,'Times New Roman',serif;font-size:24px;font-weight:700;line-height:1.2;margin:10px 44px 10px 0}
-.gs-pron{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:#555;font-weight:400;margin-left:8px;white-space:nowrap}
-.gs-hear{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:2px solid #0a0a0a;background:#fff;color:#0a0a0a;cursor:pointer;padding:0;margin-left:10px;vertical-align:-4px}
+.gs-tail{white-space:nowrap}
+.gs-pron{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:#555;font-weight:400;margin-left:8px}
+.gs-hear{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:2px solid #0a0a0a;background:#fff;color:#0a0a0a;cursor:pointer;padding:0;margin-left:10px;vertical-align:middle}
 .gs-hear:hover,.gs-hear.on{background:#ffe600}
 .gs-hear:active{transform:translateY(1px)}
 .gs-hear svg{width:14px;height:14px}
