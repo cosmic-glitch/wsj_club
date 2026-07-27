@@ -1621,7 +1621,8 @@ export default function VoiceQuiz({
     priorAudioFetchRef.current = null;
     if (slot.audioUrl) {
       // The stored URL's ?v= dates from flush time; add a fresh per-read buster
-      // so the CDN can't serve an older overwrite (same rationale as readSlot).
+      // so the CDN can't serve an older overwrite (the slot WAV is one of the
+      // few blobs still overwritten in place).
       const priorUrl =
         slot.audioUrl + (slot.audioUrl.includes("?") ? "&" : "?") + `r=${Date.now()}`;
       priorAudioFetchRef.current = (async () => {

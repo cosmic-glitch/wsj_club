@@ -1,6 +1,6 @@
 ---
 name: wsj-check-vote
-description: Check the day's article vote for the Reading Club. Use when the user says "check the vote", "what's the tally", "who won the vote", "which article won", or wants the result of the poll opened with wsj-open-vote — including the JUNIOR track ("check the junior vote"). Reads the poll and every ballot from Vercel Blob, presents the tally with voter names (owner-only view), and hands over the winning article's link ready for the wsj-reading (or wsj-reading-junior) skill.
+description: Check the day's article vote for the Reading Club. Use when the user says "check the vote", "what's the tally", "who won the vote", "which article won", or wants the result of the poll opened with wsj-open-vote — including the JUNIOR track ("check the junior vote"). Reads the poll and every ballot from the database, presents the tally with voter names (owner-only view), and hands over the winning article's link ready for the wsj-reading (or wsj-reading-junior) skill.
 ---
 
 # WSJ Reading Club — check the day's vote

@@ -70,8 +70,8 @@ async function saveBlob(blob) {
     }
   }
 
-  // Cache-bust: slots/users/votes are overwritten in place and the Blob edge
-  // cache lags overwrites (see CLAUDE.md), so force a fresh read.
+  // Cache-bust: the slot WAVs are overwritten in place and the Blob edge
+  // cache lags overwrites, so force a fresh read.
   const url = `${blob.downloadUrl}&v=${Date.now()}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${blob.pathname}`);

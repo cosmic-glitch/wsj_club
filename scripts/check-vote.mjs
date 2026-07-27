@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
- * Check the day's article vote: read `votes/[junior/]<date>/poll.json` plus
- * every ballot from Vercel Blob and print the tally — per-candidate counts
- * WITH voter names (owner-side only; the website shows counts, never names) —
- * and the winner with its article link, ready to hand to the wsj-reading (or
+ * Check the day's article vote: read the poll and every ballot from the DB
+ * (rc_polls / rc_ballots) and print the tally — per-candidate counts WITH
+ * voter names (owner-side only; the website shows counts, never names) — and
+ * the winner with its article link, ready to hand to the wsj-reading (or
  * wsj-reading-junior) skill. Part of the wsj-check-vote skill;
  * scripts/open-vote.mjs opens the poll.
  *
@@ -14,12 +14,7 @@
  * owner to break by just picking one (the vote is advisory by construction).
  */
 import fs from "node:fs";
-import { list } from "@vercel/blob";
-
-if (!process.env.BLOB_READ_WRITE_TOKEN) {
-  console.error("Missing BLOB_READ_WRITE_TOKEN. Run with: node --env-file=.env.local scripts/check-vote.mjs ...");
-  process.exit(1);
-}
+import { dbSelect } from "./db-rest.mjs";
 
 const argv = process.argv.slice(2);
 const trackFlag = argv.find((a) => a.startsWith("--track="));
@@ -36,59 +31,29 @@ if (track !== "senior" && track !== "junior") {
 }
 
 const junior = track === "junior";
-// The junior/ path segment, in lockstep with open-vote.mjs / app/api/vote.
-const votesBase = junior ? "votes/junior/" : "votes/";
 
-let date = arg;
-if (!date) {
-  const { folders } = await list({ prefix: votesBase, mode: "folded" });
-  // Anchored to the base so the senior listing never reads the votes/junior/
-  // folder (no date in it anyway) as a poll.
-  const re = new RegExp(`^${votesBase}(\\d{4}-\\d{2}-\\d{2})/$`);
-  date = (folders ?? [])
-    .map((f) => re.exec(f)?.[1])
-    .filter(Boolean)
-    .sort()
-    .pop();
-  if (!date) {
-    console.error(`No ${track} polls found in Blob. Open one with scripts/open-vote.mjs first.`);
-    process.exit(1);
-  }
-}
-
-// Blob URLs are CDN-cached and these blobs are overwritten in place, so every
-// read gets a unique ?v= buster (same recipe as lib/session-io.ts's readSlot).
-async function fetchJson(url) {
-  const res = await fetch(`${url}?v=${Date.now()}`, { cache: "no-store" });
-  if (!res.ok) throw new Error(`fetch failed (${res.status}) for ${url}`);
-  return res.json();
-}
-
-const votesDir = `${votesBase}${date}/`;
-const { blobs } = await list({ prefix: votesDir });
-const pollBlob = blobs.find((b) => b.pathname === `${votesDir}poll.json`);
-if (!pollBlob) {
-  console.error(`No ${track} poll found for ${date}.`);
+const filter = arg ? `&date=eq.${arg}` : "";
+const polls = await dbSelect(
+  "rc_polls",
+  `?track=eq.${track}${filter}&select=id,date,candidates&order=date.desc&limit=1`
+);
+const poll = polls[0];
+if (!poll) {
+  console.error(
+    arg
+      ? `No ${track} poll found for ${arg}.`
+      : `No ${track} polls found. Open one with scripts/open-vote.mjs first.`
+  );
   process.exit(1);
 }
-const poll = await fetchJson(pollBlob.url);
+const date = poll.date;
 
 const ballots = (
-  await Promise.all(
-    blobs
-      .filter((b) => b.pathname.startsWith(`${votesDir}ballots/`))
-      .map(async (b) => {
-        try {
-          const ballot = await fetchJson(b.url);
-          return typeof ballot?.user === "string" && typeof ballot?.candidateId === "string"
-            ? ballot
-            : null;
-        } catch {
-          return null;
-        }
-      })
+  await dbSelect(
+    "rc_ballots",
+    `?poll_id=eq.${poll.id}&select=username,candidate_id`
   )
-).filter(Boolean);
+).map((r) => ({ user: r.username, candidateId: r.candidate_id }));
 
 const published = fs.existsSync(
   junior ? `content/junior/${date}.json` : `content/${date}.json`

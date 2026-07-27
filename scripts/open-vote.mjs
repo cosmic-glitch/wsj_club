@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 /**
- * Open the day's article vote: write `votes/[junior/]<date>/poll.json` to
- * Vercel Blob, which makes the "TODAY'S READ — YOU DECIDE" row appear at the
- * top of that track's index immediately (no deploy — /api/vote reads Blob
- * live). Part of the wsj-open-vote skill; the companion scripts/check-vote.mjs
- * reads the result.
+ * Open the day's article vote: upsert the poll into rc_polls, which makes the
+ * "TODAY'S READ — YOU DECIDE" row appear at the top of that track's index
+ * immediately (no deploy — /api/vote reads the DB live). Part of the
+ * wsj-open-vote skill; the companion scripts/check-vote.mjs reads the result.
  *
  * The poll closes by itself when the day's reading is published ON ITS TRACK
  * (the API treats a poll as live only while no reading on that track exists
@@ -30,8 +29,7 @@
  * a ballot for a removed id is simply not counted).
  */
 import fs from "node:fs";
-import { list, put } from "@vercel/blob";
-import { dbUpsert } from "./db-rest.mjs";
+import { dbSelect, dbUpsert } from "./db-rest.mjs";
 
 const argv = process.argv.slice(2);
 const [date, file] = argv.filter((a) => !a.startsWith("--"));
@@ -46,15 +44,7 @@ if (track !== "senior" && track !== "junior") {
   console.error(`Unknown track "${track}" — use --track=junior (or omit for senior).`);
   process.exit(1);
 }
-if (!process.env.BLOB_READ_WRITE_TOKEN) {
-  console.error("Missing BLOB_READ_WRITE_TOKEN. Run with: node --env-file=.env.local scripts/open-vote.mjs ...");
-  process.exit(1);
-}
-
 const junior = track === "junior";
-// The junior/ path segment everywhere junior touches (same convention as the
-// quiz sessions' sessionPrefix) — keep in lockstep with app/api/vote/route.ts.
-const votesDir = junior ? `votes/junior/${date}/` : `votes/${date}/`;
 const contentPath = junior ? `content/junior/${date}.json` : `content/${date}.json`;
 
 // A poll for a date whose reading is already published would be born closed.
@@ -118,31 +108,18 @@ if (new Set(candidates.map((c) => c.id)).size !== candidates.length) {
 
 // Re-opening an existing poll is allowed (revising candidates), but warn when
 // ballots were already cast — a changed title changes the id and orphans them.
-const { blobs: existing } = await list({ prefix: votesDir });
-if (existing.some((b) => b.pathname === `${votesDir}poll.json`)) {
-  const ballots = existing.filter((b) => b.pathname.startsWith(`${votesDir}ballots/`)).length;
+const existing = await dbSelect("rc_polls", `?track=eq.${track}&date=eq.${date}&select=id`);
+if (existing.length > 0) {
+  const ballots = await dbSelect("rc_ballots", `?poll_id=eq.${existing[0].id}&select=username`);
   console.warn(`A ${track} poll for ${date} already exists — overwriting it.`);
-  if (ballots > 0) {
-    console.warn(`⚠ ${ballots} ballot(s) already cast. They stay valid only for candidates whose titles (→ ids) are unchanged; a vote for a removed/renamed candidate won't be counted.`);
+  if (ballots.length > 0) {
+    console.warn(`⚠ ${ballots.length} ballot(s) already cast. They stay valid only for candidates whose titles (→ ids) are unchanged; a vote for a removed/renamed candidate won't be counted.`);
   }
 }
 
-const poll = { date, openedAt: new Date().toISOString(), candidates };
-await put(`${votesDir}poll.json`, JSON.stringify(poll, null, 2), {
-  access: "public",
-  addRandomSuffix: false,
-  allowOverwrite: true,
-  contentType: "application/json",
-});
-
-// Dual-write shadow (PLAN-supabase.md Phase 1): mirror the poll into rc_polls
-// so /api/vote's ballot shadow can find its poll_id. Best-effort — the Blob
-// poll above is what makes the vote live.
-try {
-  await dbUpsert("rc_polls", { track, date, candidates }, "track,date");
-} catch (err) {
-  console.warn(`⚠ DB mirror of the poll failed (${err.message}) — re-run scripts/migrate-votes-to-db.mjs to catch it up.`);
-}
+// The upsert (on track,date) keeps the poll's row id — and so its ballots —
+// across a re-open.
+await dbUpsert("rc_polls", { track, date, candidates }, "track,date");
 
 const trackTag = junior ? " (junior)" : "";
 console.log(`Vote for ${date}${trackTag} is LIVE with ${candidates.length} candidates:`);

@@ -3,17 +3,13 @@ import type { Session } from "@/components/AdminSessions";
 
 /**
  * Load every voice-quiz session for the Scores page / Students roster /
- * quiz-dates — from Postgres since the Phase 3 read flip (PLAN-supabase.md):
- * one slim select over rc_quiz_sessions (no transcript/report/diag — the
- * modal-only heavy fields are served by GET /api/quiz-session?id= on open)
- * plus the rc_quiz_slots rows mapped to the inProgress shape, preserving the
- * old contract where the Scores page sees slots as sessions. This replaced
- * one blob fetch PER SESSION (~130 and growing, the page's whole latency)
- * with two queries.
- *
- * Writers still dual-write Blob + DB (until Phase 4), so reverting the flip
- * loses nothing. Each record's `id` is the DB row id (sessions: uuid; slots:
- * the serialized composite key) — the handle for Details and Delete.
+ * quiz-dates — one slim select over rc_quiz_sessions (no transcript/report/
+ * diag — the modal-only heavy fields are served by GET /api/quiz-session?id=
+ * on open) plus the rc_quiz_slots rows mapped to the inProgress shape,
+ * preserving the old contract where the Scores page sees slots as sessions.
+ * (This replaced the Blob era's one fetch PER SESSION — the page's whole
+ * latency.) Each record's `id` is the DB row id (sessions: uuid; slots: the
+ * serialized composite key) — the handle for Details and Delete.
  */
 
 /** The serialized id of a slot row (slots have a composite PK, not a uuid). */

@@ -1,8 +1,6 @@
-import { put } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 import { dbSelect, dbUpsert } from "@/lib/db";
 import { getReading, type Track } from "@/lib/content";
-import { safeNameOf } from "@/lib/session-io";
 
 /**
  * The daily article vote ("club pick") — the TODAY'S READ — YOU DECIDE row
@@ -16,16 +14,10 @@ import { safeNameOf } from "@/lib/session-io";
  *   POST — cast or change the caller's vote (login-gated; one login = one
  *          ballot, overwritten in place to change).
  *
- * Storage (Vercel Blob, same store as the quiz sessions), track-prefixed the
- * same way as everything else junior (only junior takes a path segment):
- *   votes/[junior/]<date>/poll.json      — the poll definition (written by
- *                                          scripts/open-vote.mjs, never by this
- *                                          route)
- *   votes/[junior/]<date>/ballots/<safeName>.json
- *                                        — one blob per voter. Identity ALWAYS
- *                                          comes from the cookie — the pathname
- *                                          is overwritable, so a body-derived
- *                                          name could stomp another voter.
+ * Storage (Postgres): rc_polls holds the poll definition (written by
+ * scripts/open-vote.mjs, never by this route); rc_ballots holds one row per
+ * (poll, voter) — the PK, so one login = one vote and a change is an upsert.
+ * Identity ALWAYS comes from the cookie, never the body.
  *
  * `track` is a LABEL from the request (GET `?track=`, POST body; default
  *  senior at this API boundary, like the quiz routes) — never identity. A
@@ -59,25 +51,6 @@ type Ballot = { user: string; candidateId: string; votedAt?: string };
 function parseTrack(v: unknown): Track {
   return v === "junior" ? "junior" : "senior";
 }
-
-/**
- * The track's vote directory in Blob. `track` is REQUIRED on this and every
- * helper below (no "senior" default) — the sessionPrefix rule: a defaulted
- * helper would silently compute the senior path at a junior call site.
- */
-function votesDir(track: Track, date: string): string {
-  return track === "junior" ? `votes/junior/${date}/` : `votes/${date}/`;
-}
-
-function ballotPrefix(track: Track, date: string): string {
-  return `${votesDir(track, date)}ballots/`;
-}
-
-// Phase 3 read flip (PLAN-supabase.md): polls + ballots are READ from
-// rc_polls / rc_ballots (single queries, consistent reads — the vote-blob
-// CDN cache-busting died here). The ballot WRITE below still dual-targets:
-// the Blob ballot first (Blob stays the store of record until Phase 4), then
-// the rc_ballots upsert the tally reads.
 
 /** The track's newest poll, with its DB row id. */
 type DbPoll = VotePoll & { id: string };
@@ -188,41 +161,26 @@ export async function POST(request: Request) {
       return Response.json({ error: "Unknown candidate." }, { status: 400 });
     }
 
-    const ballot: Ballot = {
-      user,
-      candidateId,
-      votedAt: new Date().toISOString(),
-    };
-    await put(
-      `${ballotPrefix(track, date)}${safeNameOf(user)}.json`,
-      JSON.stringify(ballot, null, 2),
-      {
-        access: "public",
-        addRandomSuffix: false,
-        allowOverwrite: true,
-        contentType: "application/json",
-      }
-    );
-    // Mirror the ballot into rc_ballots — the store the tally reads. Upsert on
-    // (poll_id, username), so change-vote overwrites in place. Best-effort:
-    // the overlay below covers the response even if this write failed.
-    await dbUpsert(
+    // Upsert on (poll_id, username) — change-vote overwrites in place.
+    const ok = await dbUpsert(
       "rc_ballots",
       {
         poll_id: poll.id,
         username: user,
         candidate_id: candidateId,
-        updated_at: ballot.votedAt,
+        updated_at: new Date().toISOString(),
       },
       "poll_id,username"
     );
+    if (!ok) {
+      return Response.json(
+        { error: "Could not save your vote." },
+        { status: 502 }
+      );
+    }
 
-    // Return the fresh tally so the UI can show it immediately, overlaying the
-    // caller's own ballot in case the upsert above failed or lagged.
-    const ballots = (await readBallots(poll.id)).filter(
-      (b) => b.user !== user
-    );
-    ballots.push(ballot);
+    // Return the fresh tally so the UI can show it immediately.
+    const ballots = await readBallots(poll.id);
     const tally = tallyOf(poll, ballots);
     return Response.json({
       ok: true,

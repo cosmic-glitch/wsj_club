@@ -1,25 +1,21 @@
-import { copy, put } from "@vercel/blob";
+import { copy } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 import { getUser } from "@/lib/users";
 import { getReading, type Track } from "@/lib/content";
 import {
-  shadowDeleteSlot,
-  shadowSaveSession,
-  shadowUpsertSlot,
-} from "@/lib/shadow";
-import {
-  deleteSlot,
+  deleteSlotBlobs,
+  deleteSlotRow,
   getSlotRecord,
-  readSlot,
   safeNameOf,
   sanitizeDiag,
   sanitizeDurationMs,
   sanitizeFailure,
   sanitizeResumeCount,
   sanitizeTranscript,
+  saveSessionRow,
   sessionPrefix,
   slotAudioPathname,
-  slotJsonPathname,
+  upsertSlotRecord,
 } from "@/lib/session-io";
 
 /**
@@ -148,19 +144,11 @@ export async function POST(request: Request) {
   };
 
   try {
-    await put(slotJsonPathname(track, date, safeName), JSON.stringify(session, null, 2), {
-      access: "public",
-      addRandomSuffix: false,
-      allowOverwrite: true,
-      contentType: "application/json",
-    });
+    await upsertSlotRecord(user, track, date, session);
   } catch (err) {
     console.error("Checkpointing quiz progress failed:", err, "user:", user);
     return Response.json({ error: "Could not save progress." }, { status: 502 });
   }
-  // Dual-write shadow (PLAN-supabase.md Phase 1): mirror the checkpoint into
-  // rc_quiz_slots (an atomic upsert on the slot PK). Best-effort.
-  await shadowUpsertSlot(user, track, date, session);
   return Response.json({ ok: true });
 }
 
@@ -170,16 +158,7 @@ export async function GET(request: Request) {
   const { user, date, track } = ctx;
 
   try {
-    // Phase 3 read flip: the slot comes from rc_quiz_slots (consistent reads —
-    // no cache-buster, no "resume within ~2s misses the last turn" gap). On a
-    // DB failure fall back to the Blob slot, which is still dual-written
-    // (fallback dies in Phase 4).
-    let session;
-    try {
-      session = await getSlotRecord(user, track, date);
-    } catch {
-      session = (await readSlot(track, date, safeNameOf(user)))?.session ?? null;
-    }
+    const session = await getSlotRecord(user, track, date);
     if (!session) return Response.json({ exists: false });
     return Response.json({ exists: true, session });
   } catch (err) {
@@ -199,13 +178,7 @@ export async function DELETE(request: Request) {
   const prefix = sessionPrefix(track, date);
 
   try {
-    // Phase 3 read flip: DB first, Blob fallback (same as GET above).
-    let slot;
-    try {
-      slot = await getSlotRecord(user, track, date);
-    } catch {
-      slot = (await readSlot(track, date, safeName))?.session ?? null;
-    }
+    const slot = await getSlotRecord(user, track, date);
     if (slot) {
       // Archive before deleting. The slot's audio (if flushed) lives at the
       // stable slot key that's about to be deleted, so copy it to a permanent
@@ -247,16 +220,16 @@ export async function DELETE(request: Request) {
         },
         diag: { ...(slot.diag ?? {}), endReason: "start-over" },
       };
-      const blob = await put(
-        `quiz-sessions/${prefix}/${safeName}-${Date.now()}.json`,
-        JSON.stringify(archived, null, 2),
-        { access: "public", addRandomSuffix: true, contentType: "application/json" }
-      );
-      // Shadow the archive as a terminal record (PLAN-supabase.md Phase 1).
-      await shadowSaveSession(archived, blob.pathname);
+      // Archive first, delete second — a failed archive must keep the slot
+      // (nothing a student did is ever silently discarded).
+      if (!(await saveSessionRow(archived))) {
+        return Response.json({ error: "Could not start over." }, { status: 502 });
+      }
     }
-    await deleteSlot(track, date, safeName);
-    await shadowDeleteSlot(user, track, date);
+    await deleteSlotBlobs(track, date, safeName);
+    if (!(await deleteSlotRow(user, track, date))) {
+      return Response.json({ error: "Could not start over." }, { status: 502 });
+    }
     console.log(
       "Voice-quiz start-over:",
       JSON.stringify({ user, date, hadSlot: !!slot })

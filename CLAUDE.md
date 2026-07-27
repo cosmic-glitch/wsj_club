@@ -16,7 +16,7 @@ Live: https://dailyreadingclub.com · Repo: https://github.com/cosmic-glitch/wsj
 - **Next.js** (App Router, Next 16, React 19, Tailwind v4). Daily content is **data, not code**: one JSON per day in `content/` (senior) / `content/junior/`. Content pages (index, handout, self-quiz, word bank) are **statically generated**; the voice quiz adds dynamic API routes and the admin pages.
 - **Roles:** every login is a **parent** (the grown-up role — historically "teacher") or a **student** with a `parentId`. A parent sees/manages only their own classroom; the **owner** (env `OWNER_USERS`) additionally sees every classroom, may delete any attempt, and may add students to any classroom (rename/reset stay own-classroom for everyone). See `PLAN-classrooms.md`.
 - **Tracks:** `type Track = "senior" | "junior"` (`lib/content.ts`). `date` is NOT unique across tracks. Senior keeps bare paths; junior inserts a `junior/` segment everywhere (content, article pages, audio, article-text, Blob keys, routes). Shared components (`LandingIndex`, `Handout`, `SelfQuiz`, `VoiceQuiz`, `WordBank`) take a `track` prop; each track's routes are thin wrappers around them. See `PLAN-junior.md`.
-- **Storage:** Vercel Blob holds users, quiz sessions + in-progress slots, votes, recordings, and article text. **Migration to Supabase Postgres is in progress** (`rc_*` tables in the shared whisper-anywhere project): the dual-write shadow AND the read flip are live — production reads the DB, with Blob fallback. See `PLAN-supabase.md`.
+- **Storage:** structured data (users, quiz sessions, in-progress slots, polls/ballots) lives in **Supabase Postgres** — `rc_*` tables in the shared whisper-anywhere project, accessed via `lib/db.ts` (plain-fetch PostgREST, service key, RLS deny-all; scripts use `scripts/db-rest.mjs`). **Vercel Blob** keeps only the large/immutable byte blobs: recordings (incl. the overwritten-in-place slot WAV), article text, plus the pre-migration records as a read-only archive. Migration history: `PLAN-supabase.md`.
 - **Design language:** brutalist — Anton display + Space Mono labels (`app/fonts.ts`), white canvas, near-black ink, signal-yellow accent, thick square borders, hard offset shadows, hover inversion.
 
 ### Where things live
@@ -28,8 +28,8 @@ Live: https://dailyreadingclub.com · Repo: https://github.com/cosmic-glitch/wsj
 - `article-text/` — gitignored drop-zone for full article text → uploaded to Blob for the tutor (`scripts/upload-article-text.mjs`)
 - `app/` — routes (thin wrappers) + API routes; `app/admin/` = Scores + Manage Students
 - `components/` — the shared page bodies and client widgets
-- `lib/` — content schema/loader (`content.ts`), auth (`auth.ts`, `users.ts`), tutor + grader prompts (`quiz-prompt.ts`, `grading-examples.ts`, `score.ts`), session helpers (`sessions.ts`, `session-io.ts`), rich text (`rich-text.tsx`), DB (`db.ts`, `shadow.ts`)
-- `scripts/` — daily-flow CLIs (upload-article-text, gen-pronunciation, gen-glossary-audio, add-glossary-tags, check-glossary, open-vote, check-vote) + admin/ops (add-user, seed-users, hash-password, backup-blob, DB migrations)
+- `lib/` — content schema/loader (`content.ts`), auth (`auth.ts`, `users.ts`), tutor + grader prompts (`quiz-prompt.ts`, `grading-examples.ts`, `score.ts`), session helpers (`sessions.ts`, `session-io.ts`), rich text (`rich-text.tsx`), DB (`db.ts`)
+- `scripts/` — daily-flow CLIs (upload-article-text, gen-pronunciation, gen-glossary-audio, add-glossary-tags, check-glossary, open-vote, check-vote) + admin/ops (add-user, backup-blob, backup-db, apply-migration)
 - `.claude/skills/` — the daily workflow (pickers, vote open/check, authoring for both tracks)
 
 ## Content rules (invariants for ANY session that touches content)
@@ -43,10 +43,10 @@ The card recipes, calibration, and counts live in the authoring skills — `.cla
 
 ## Invariants & gotchas (the load-bearing lessons)
 
-- **`track` is a REQUIRED param** on `sessionPrefix` + every slot/vote path helper — no `"senior"` default. A defaulted helper silently computes the senior path at a junior call site, and best-effort writes make that failure invisible.
-- **Identity always comes from the signed cookie, never the request body.** Blob keys derived from a name are overwritable — a body-derived name could stomp another user's slot/ballot. `track` in a request is only a label.
-- **Cache-bust every read of an overwritten-in-place blob** (slots, users, votes, flushed audio): unique `?v=` per read. The Blob CDN edge cache AND `list()`'s `uploadedAt` lag behind overwrites.
-- **Storage still says "teacher".** User blobs store `role: "teacher"` + `teacherId`; sessions stamp `teacherId`. The parent rename happens only at the storage boundaries (`lib/users.ts` `fromStored`/`toStored`, `lib/sessions.ts`, the session-writing routes). Keep stored records byte-compatible.
+- **`track` is a REQUIRED param** on `sessionPrefix` + every slot helper — no `"senior"` default (also enforced by the `rc_quiz_slots` PK). A defaulted helper silently computes the senior path/row at a junior call site.
+- **Identity always comes from the signed cookie, never the request body.** Slot rows are keyed by login user and the slot-WAV pathname is overwritable — a body-derived name could stomp another user's record. `track` in a request is only a label.
+- **Cache-bust every read of the slot WAV** (the one blob still overwritten in place): unique `?v=`/`?r=` per read — the Blob CDN edge cache lags overwrites. Structured reads come from Postgres and need no busting.
+- **The DB uses the modern names** (`role: 'parent'`, `parent_id`) but the in-memory session/slot records still carry the legacy `teacherId` field name (mapped to `parent_id` at the `lib/session-io.ts` write helpers) — pre-migration Blob-era records and the client shapes stay uniform.
 - **Voice-quiz endings:** End appears only when the tutor's `done` flag is set; failures/hangs **pause** (checkpointed slot, retryable), never finalize; only End and Cancel are terminal, both through the once-guarded `finalizeQuiz` with run-id fencing on every async step. Nothing is graded until End; Cancel saves an ungraded `cancelled` attempt (parent-only). Background: `BUG-anusha-voice-quiz.md`, `PLAN-continue-voice-quiz.md`.
 - **Handout/WordBank stay server components** — they fs-check `public/audio/` at build time (`lib/handout-audio.ts`); a dynamic render can't see those files on Vercel. `slugify()` there must match `scripts/gen-pronunciation.mjs`. The general recipe for personal/live bits on static pages: server-render the page, hydrate a small client leaf that fetches once (TodayTag/VotePoll/CompletedBy/StreakStrip/WordBankList all follow it — never a fetch per row).
 - **Vote "active" is derived, never a flag:** a track's newest poll is live iff no reading exists for its date on that track — publishing the reading is what closes the vote. Site shows counts, never voter names; the per-candidate tally only after you've voted.
@@ -64,7 +64,7 @@ An AI tutor orally quizzes the student on the day's article in a modal: TTS ques
 
 ## Daily vote (club pick)
 
-The club can choose the day's article by voting on the home page — per-track, opt-in per day, always for today. The owner opens it with the `wsj-open-vote` skill (senior ballot: top 7 news + top 3 enrichment picks; junior: top 5 news), everyone votes via the ballot modal (one login = one vote, changeable while live), and the owner reads the tally with `wsj-check-vote` (voter names owner-side only). Publishing the winner (with `clubPick: true`) is what closes the poll. No deadline on the site — the owner announces the window in the group chat. Polls/ballots live in Blob under `votes/[junior/]<date>/`, one ballot blob per voter, overwritten in place.
+The club can choose the day's article by voting on the home page — per-track, opt-in per day, always for today. The owner opens it with the `wsj-open-vote` skill (senior ballot: top 7 news + top 3 enrichment picks; junior: top 5 news), everyone votes via the ballot modal (one login = one vote, changeable while live), and the owner reads the tally with `wsj-check-vote` (voter names owner-side only). Publishing the winner (with `clubPick: true`) is what closes the poll. No deadline on the site — the owner announces the window in the group chat. Polls live in `rc_polls` (unique per track+date), ballots in `rc_ballots` — one row per (poll, voter), the PK, upserted to change a vote.
 
 ## Daily workflow
 
@@ -78,11 +78,14 @@ Audience calibration and the exact browser-capture snippet live in the skills �
 
 GitHub `cosmic-glitch/wsj_club` → Vercel project `wsj_club` (team *Anurag's projects*); **push to `main` = production deploy** at dailyreadingclub.com. `npm run build` validates all content JSON.
 
-Env (Vercel Production + Preview, mirrored in the gitignored `.env.local`): `OPENAI_API_KEY`, `AUTH_SECRET`, `OWNER_USERS` (= `anurag`), `BLOB_READ_WRITE_TOKEN` (from the linked `wsj-club-quizzes` store), `SUPABASE_URL` + `SUPABASE_SERVICE_KEY`; `SUPABASE_DB_URL` (direct Postgres string) is local/VM-only, for migrations. `AUTH_USERS`/`ADMIN_USERS` are only a transitional login fallback — users live in the repository (`lib/users.ts`). Sensitive values aren't `vercel env pull`-able; recreate `.env.local` by hand on a fresh checkout. Current roster: `anurag` (owner) → arjun, anusha, samaira, mehar; `madan` → puneeth.
+Env (Vercel Production + Preview, mirrored in the gitignored `.env.local`): `OPENAI_API_KEY`, `AUTH_SECRET`, `OWNER_USERS` (= `anurag`), `BLOB_READ_WRITE_TOKEN` (from the linked `wsj-club-quizzes` store), `SUPABASE_URL` + `SUPABASE_SERVICE_KEY`; `SUPABASE_DB_URL` (direct Postgres string) is local/VM-only, for migrations + the DB backup. (`AUTH_USERS`/`ADMIN_USERS` are dead — users live in `rc_users` via `lib/users.ts`; the env vars can be deleted wherever they linger.) Sensitive values aren't `vercel env pull`-able; recreate `.env.local` by hand on a fresh checkout. Current roster: `anurag` (owner) → arjun, anusha, samaira, mehar; `madan` → puneeth; `aju` → gibran.
 
-## Blob backups
+## Backups
 
-Daily cron on the Hetzner VM (`myhetzner`, repo at `~/wsj_club`): `scripts/backup-blob.sh` at 06:15 → hardlink-incremental snapshots under `backups/<date>/` with a manifest, 30-day retention. VM-only (no off-box copy yet); transient `turns/` clips are deleted after transcription, so their absence from snapshots is normal.
+Daily crons on the Hetzner VM (`myhetzner`, repo at `~/wsj_club`), both 30-day retention, VM-only (no off-box copy yet):
+
+- **Blob** — `scripts/backup-blob.sh` at 06:15 → hardlink-incremental snapshots under `backups/<date>/` with a manifest. Transient `turns/` clips are deleted after transcription, so their absence from snapshots is normal.
+- **DB** — `scripts/backup-db.sh` at 06:05 → `pg_dump` of ONLY the `rc_*` tables (the project is shared with whisper-anywhere) into `backups/db/<date>.sql.gz`. Also keeps the free-tier project from idling.
 
 ## Commands
 

@@ -1,30 +1,21 @@
-import { list, put } from "@vercel/blob";
 import bcrypt from "bcryptjs";
-import { dbSelect } from "@/lib/db";
-import { shadowUpsertUser } from "@/lib/shadow";
+import { dbInsert, dbSelect, dbUpsert } from "@/lib/db";
 
 /**
- * User / classroom repository (Blob-backed).
+ * User / classroom repository (Postgres — the rc_users table).
  *
  * The single source of truth for who can log in, their role, and — for students
  * — which parent's classroom they belong to. This is deliberately the ONLY
- * module that reads or writes user blobs, so a later move to a real database is
- * a change to this one file (the auth layer and the routes just call these
- * functions).
+ * module that reads or writes user records; the auth layer and the routes just
+ * call these functions.
  *
- * Storage: one blob per user at `users/<username>.json` (deterministic pathname,
- * no random suffix, so a user is looked up by key). Reads go through the Blob
- * API (`list` + `fetch(..., no-store)`), never a long-lived cached URL. The set
- * is tiny (a handful of logins), so listing everyone on each read is cheap.
+ * The DB stores the modern field names natively (role "parent"/"student",
+ * parent_id) — the legacy Blob store's "teacher"/teacherId era ended with the
+ * Supabase migration (PLAN-supabase.md). Reads are single consistent queries;
+ * a DB failure THROWS so callers surface an error instead of silently treating
+ * everyone as logged out.
  *
- * Passwords are stored ONLY as bcrypt hashes (bcryptjs, 10 rounds — the same
- * scheme as the old AUTH_USERS env var and the foliotracker project).
- *
- * TERMINOLOGY: what the app calls a PARENT account was originally called a
- * "teacher", and the stored blobs keep the legacy names — `role: "teacher"`
- * and the `teacherId` field — so no record needs migrating. The conversion
- * happens HERE (fromStored/toStored); nothing above this module ever sees the
- * legacy names.
+ * Passwords are stored ONLY as bcrypt hashes (bcryptjs, 10 rounds).
  */
 
 export type UserRole = "parent" | "student";
@@ -40,34 +31,6 @@ export type User = {
   createdAt: string; // ISO
 };
 
-/**
- * The on-disk (Blob) shape — the legacy "teacher" era field names. Every stored
- * record uses `role: "teacher"` + `teacherId`; we keep writing them so the
- * store stays uniform and old records never need a migration.
- */
-type StoredUser = Omit<User, "role" | "parentId"> & {
-  role: "teacher" | "student";
-  teacherId?: string;
-};
-
-function fromStored(raw: StoredUser): User {
-  const { role, teacherId, ...rest } = raw;
-  return {
-    ...rest,
-    role: role === "student" ? "student" : "parent",
-    ...(teacherId ? { parentId: teacherId } : {}),
-  };
-}
-
-function toStored(u: User): StoredUser {
-  const { role, parentId, ...rest } = u;
-  return {
-    ...rest,
-    role: role === "parent" ? "teacher" : "student",
-    ...(parentId ? { teacherId: parentId } : {}),
-  };
-}
-
 /** The shape safe to send to the browser — never includes the hash. */
 export type PublicUser = Omit<User, "passwordHash">;
 
@@ -81,14 +44,8 @@ export class UserError extends Error {
   }
 }
 
-const PREFIX = "users/";
 const BCRYPT_ROUNDS = 10;
 const USERNAME_RE = /^[a-z0-9_-]{3,32}$/;
-const CACHE_TTL_MS = 15_000;
-
-function pathFor(username: string): string {
-  return `${PREFIX}${username}.json`;
-}
 
 /** Strip the password hash for anything that leaves the server. */
 export function toPublic(u: User): PublicUser {
@@ -97,91 +54,49 @@ export function toPublic(u: User): PublicUser {
   return rest as PublicUser;
 }
 
-// A short per-instance cache so gated requests don't each re-list Blob. Kept
-// brief so a deactivation / password reset takes effect quickly. Writes clear it.
-let cache: { at: number; users: Map<string, User> } | null = null;
-
-async function loadAll(force = false): Promise<Map<string, User>> {
-  if (!force && cache && Date.now() - cache.at < CACHE_TTL_MS) {
-    return cache.users;
-  }
-  // Phase 3 read flip (PLAN-supabase.md): reads come from rc_users — one
-  // query, consistent reads (no ?v= cache-busting). The DB stores the modern
-  // names natively, so no fromStored mapping. On a DB failure fall through to
-  // the legacy Blob path below, which stays dual-written until Phase 4.
-  const rows = await dbSelect("rc_users", "?select=*");
-  if (rows !== null) {
-    const users = new Map<string, User>();
-    for (const r of rows) {
-      if (typeof r.username !== "string") continue;
-      users.set(r.username, {
-        username: r.username,
-        displayName:
-          typeof r.display_name === "string" ? r.display_name : r.username,
-        passwordHash: typeof r.password_hash === "string" ? r.password_hash : "",
-        role: r.role === "student" ? "student" : "parent",
-        ...(typeof r.parent_id === "string" && r.parent_id
-          ? { parentId: r.parent_id }
-          : {}),
-        active: r.active !== false,
-        ...(typeof r.created_by === "string" ? { createdBy: r.created_by } : {}),
-        createdAt: r.created_at
-          ? new Date(String(r.created_at)).toISOString()
-          : "",
-      });
-    }
-    cache = { at: Date.now(), users };
-    return users;
-  }
-  console.error("Users DB read failed — falling back to the Blob repository");
-  let blobs;
-  try {
-    ({ blobs } = await list({ prefix: PREFIX }));
-  } catch (err) {
-    // Transient Blob failure: serve the last good cache if we have one rather
-    // than pretending there are no users (which would log everyone out). If we
-    // have nothing cached, return empty and let the auth layer's env fallback
-    // decide — fail closed for unknown users.
-    console.error("Loading users from Blob failed:", err);
-    return cache?.users ?? new Map();
-  }
-  const users = new Map<string, User>();
-  await Promise.all(
-    blobs
-      .filter((b) => b.pathname.endsWith(".json"))
-      .map(async (b) => {
-        try {
-          // Cache-bust the CDN with the blob's uploadedAt. The public Blob URL
-          // is edge-cached, so after an overwrite (e.g. a password reset) a plain
-          // fetch can serve a STALE copy from a previously-warmed edge — even with
-          // no-store, which only governs our own client cache. list() metadata is
-          // read-after-write consistent, so keying the URL by uploadedAt turns a
-          // changed record into a fresh cache key and forces the current content.
-          const v = new Date(b.uploadedAt).getTime();
-          const res = await fetch(`${b.url}?v=${v}`, { cache: "no-store" });
-          const raw = (await res.json()) as StoredUser;
-          if (raw && typeof raw.username === "string") {
-            users.set(raw.username, fromStored(raw));
-          }
-        } catch (err) {
-          console.error("Skipping unreadable user blob:", b.pathname, err);
-        }
-      })
-  );
-  cache = { at: Date.now(), users };
-  return users;
+function fromRow(r: Record<string, unknown>): User | null {
+  if (typeof r.username !== "string") return null;
+  return {
+    username: r.username,
+    displayName:
+      typeof r.display_name === "string" ? r.display_name : r.username,
+    passwordHash: typeof r.password_hash === "string" ? r.password_hash : "",
+    role: r.role === "student" ? "student" : "parent",
+    ...(typeof r.parent_id === "string" && r.parent_id
+      ? { parentId: r.parent_id }
+      : {}),
+    active: r.active !== false,
+    ...(typeof r.created_by === "string" ? { createdBy: r.created_by } : {}),
+    createdAt: r.created_at ? new Date(String(r.created_at)).toISOString() : "",
+  };
 }
 
-/** Force the next read to re-list Blob (used after a write). */
-export function invalidateUserCache(): void {
-  cache = null;
+function toRow(u: User): Record<string, unknown> {
+  return {
+    username: u.username,
+    display_name: u.displayName,
+    password_hash: u.passwordHash,
+    role: u.role,
+    parent_id: u.parentId ?? null,
+    active: u.active !== false,
+    created_by: u.createdBy ?? null,
+    ...(u.createdAt ? { created_at: u.createdAt } : {}),
+  };
+}
+
+async function selectUsers(query: string): Promise<User[]> {
+  const rows = await dbSelect("rc_users", query);
+  if (rows === null) throw new Error("users DB read failed");
+  return rows.map(fromRow).filter((u): u is User => u !== null);
 }
 
 /** Look up a single user by username, or null. */
 export async function getUser(username: string): Promise<User | null> {
   if (!username) return null;
-  const all = await loadAll();
-  return all.get(username) ?? null;
+  const users = await selectUsers(
+    `?username=eq.${encodeURIComponent(username)}&select=*`
+  );
+  return users[0] ?? null;
 }
 
 /**
@@ -205,43 +120,26 @@ export async function verifyLogin(
 
 /** A parent's classroom: their active + inactive students, by display name. */
 export async function listStudents(parentId: string): Promise<PublicUser[]> {
-  const all = await loadAll();
-  return [...all.values()]
-    .filter((u) => u.role === "student" && u.parentId === parentId)
+  const users = await selectUsers(
+    `?role=eq.student&parent_id=eq.${encodeURIComponent(parentId)}&select=*`
+  );
+  return users
     .map(toPublic)
     .sort((a, b) => a.displayName.localeCompare(b.displayName));
 }
 
 /** Every parent (owner use). */
 export async function listParents(): Promise<PublicUser[]> {
-  const all = await loadAll();
-  return [...all.values()]
-    .filter((u) => u.role === "parent")
+  const users = await selectUsers("?role=eq.parent&select=*");
+  return users
     .map(toPublic)
     .sort((a, b) => a.displayName.localeCompare(b.displayName));
 }
 
-/** Write a full record (create or overwrite, in the legacy stored shape) and clear the cache. */
+/** Overwrite an existing record (rename / reset / deactivate). */
 async function save(user: User): Promise<void> {
-  await put(pathFor(user.username), JSON.stringify(toStored(user), null, 2), {
-    access: "public",
-    addRandomSuffix: false,
-    allowOverwrite: true,
-    contentType: "application/json",
-  });
-  invalidateUserCache();
-  // Dual-write shadow (PLAN-supabase.md Phase 1): mirror into rc_users,
-  // best-effort — Blob above is still the store of record.
-  await shadowUpsertUser(user);
-}
-
-/**
- * Write a complete record verbatim (reusing an existing hash) — used by the
- * one-time migration seed, which carries hashes over from AUTH_USERS rather than
- * re-hashing. Normal app flows use createUser (which hashes a plaintext).
- */
-export async function upsertUser(user: User): Promise<void> {
-  await save(user);
+  const ok = await dbUpsert("rc_users", toRow(user), "username");
+  if (!ok) throw new Error("users DB write failed");
 }
 
 export type CreateUserInput = {
@@ -254,9 +152,10 @@ export type CreateUserInput = {
 };
 
 /**
- * Create a new user. Enforces username format + global uniqueness and the
- * role/parent invariant (a student must have a parent; a parent must not).
- * Throws UserError on any violation. Returns the public record (no hash).
+ * Create a new user. Enforces username format + the role/parent invariant (a
+ * student must have a parent; a parent must not). Global uniqueness is the
+ * table's primary key — a duplicate insert conflicts, it can never silently
+ * overwrite. Throws UserError on any violation. Returns the public record.
  */
 export async function createUser(
   input: CreateUserInput,
@@ -278,10 +177,6 @@ export async function createUser(
   if (!input.password) {
     throw new UserError("weak-password", "A password is required.");
   }
-  const all = await loadAll(true); // force-fresh so the uniqueness check is real
-  if (all.has(username)) {
-    throw new UserError("username-taken", "That username is already taken.");
-  }
   const passwordHash = await bcrypt.hash(input.password, BCRYPT_ROUNDS);
   const user: User = {
     username,
@@ -293,7 +188,11 @@ export async function createUser(
     createdBy,
     createdAt: new Date().toISOString(),
   };
-  await save(user);
+  const status = await dbInsert("rc_users", toRow(user));
+  if (status === "conflict") {
+    throw new UserError("username-taken", "That username is already taken.");
+  }
+  if (status !== "ok") throw new Error("users DB write failed");
   return toPublic(user);
 }
 

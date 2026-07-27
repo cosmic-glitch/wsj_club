@@ -1,16 +1,16 @@
-import { copy, put } from "@vercel/blob";
+import { copy } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 import { getUser } from "@/lib/users";
 import { getReading, type Track } from "@/lib/content";
 import { getArticleText } from "@/lib/article-text";
 import { buildReportPrompt } from "@/lib/quiz-prompt";
 import { applyLeniency } from "@/lib/score";
-import { shadowDeleteSlot, shadowSaveSession } from "@/lib/shadow";
 import {
-  deleteSlot,
+  deleteSlotBlobs,
+  deleteSlotRow,
   getSlotRecord,
-  readSlot,
   safeNameOf,
+  saveSessionRow,
   sanitizeDiag,
   sanitizeDurationMs,
   sanitizeFailure,
@@ -31,8 +31,9 @@ function transcriptToText(transcript: Turn[]): string {
 
 /**
  * Takes a finished quiz transcript, asks a text model to grade it into a report
- * card, and saves the whole session (transcript + report) to Vercel Blob so the
- * parent can review it on /admin. Returns the report card to show the student.
+ * card, and saves the whole session (transcript + report) to rc_quiz_sessions
+ * so the parent can review it on /admin. Returns the report card to show the
+ * student.
  *
  * This is the TERMINAL save (End and Cancel both land here) — after a
  * successful save it also deletes the caller's in-progress slot (the pause &
@@ -194,13 +195,7 @@ export async function POST(request: Request) {
   let finalDurationMs = durationMs;
   if (!finalAudioUrl) {
     try {
-      // Phase 3 read flip: DB slot first, Blob fallback (dies in Phase 4).
-      let slotRecord;
-      try {
-        slotRecord = await getSlotRecord(user, track, date);
-      } catch {
-        slotRecord = (await readSlot(track, date, slotName))?.session ?? null;
-      }
+      const slotRecord = await getSlotRecord(user, track, date);
       if (slotRecord?.audioUrl) {
         const copied = await copy(
           slotAudioPathname(track, date, slotName),
@@ -280,29 +275,21 @@ export async function POST(request: Request) {
     })
   );
 
-  // Save to Blob (best-effort — don't fail the student's session if storage hiccups).
-  try {
-    const safeName = safeNameOf(studentName);
-    const blob = await put(
-      `quiz-sessions/${sessionPrefix(track, date)}/${safeName}-${Date.now()}.json`,
-      JSON.stringify(session, null, 2),
-      { access: "public", addRandomSuffix: true, contentType: "application/json" }
-    );
-    // Dual-write shadow (PLAN-supabase.md Phase 1): mirror the terminal record
-    // into rc_quiz_sessions, keyed by the blob pathname. Best-effort.
-    await shadowSaveSession(session, blob.pathname);
+  // Save the terminal record (best-effort — don't fail the student's session
+  // if storage hiccups: the report is already in hand, and skipping the slot
+  // delete below keeps Continue alive so the attempt isn't lost).
+  if (await saveSessionRow(session)) {
     // The terminal save succeeded — now (and only now) remove the in-progress
-    // slot, so a storage hiccup above keeps Continue alive rather than losing
-    // the attempt. Best-effort + idempotent; a quiz that never checkpointed
-    // simply has no slot to remove.
+    // slot. Best-effort + idempotent; a quiz that never checkpointed simply
+    // has no slot to remove.
     try {
-      await deleteSlot(track, date, slotName);
-      await shadowDeleteSlot(user, track, date);
+      await deleteSlotBlobs(track, date, slotName);
+      await deleteSlotRow(user, track, date);
     } catch (err) {
       console.error("Deleting in-progress slot failed:", err, "user:", user);
     }
-  } catch (err) {
-    console.error("Saving quiz session to Blob failed:", err);
+  } else {
+    console.error("Saving quiz session failed — slot kept for Continue. user:", user);
   }
 
   return Response.json({ report });

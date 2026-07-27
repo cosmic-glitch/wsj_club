@@ -2,28 +2,20 @@ import { del } from "@vercel/blob";
 import { currentUser, isAdmin, isOwner } from "@/lib/auth";
 import { listStudents } from "@/lib/users";
 import { dbDelete, dbSelect } from "@/lib/db";
-import { deleteSlot, safeNameOf } from "@/lib/session-io";
-import {
-  shadowDeleteSessionByBlob,
-  shadowDeleteSlotBySafeName,
-} from "@/lib/shadow";
+import { deleteSlotBlobs, safeNameOf } from "@/lib/session-io";
 import type { Track } from "@/lib/content";
 
 /**
- * A saved voice-quiz session, by DB row id (the Phase 3 read flip —
- * PLAN-supabase.md):
+ * A saved voice-quiz session, by DB row id:
  *
  *   GET ?id=  — the modal-only heavy fields ({transcript, report}) for the
  *               Details modal, AUTH-SCOPED server-side: owner → any; parent →
- *               own classroom; student → own, non-cancelled. This replaced the
- *               modal fetching the session's public-but-unguessable blob URL —
- *               transcripts are now properly auth-gated.
- *   DELETE    — remove a whole attempt: the DB row AND its Blob record + audio
- *               (Blob is still dual-written until Phase 4, so both must go).
- *               `{id}` is the DB row id — a uuid for a terminal session, or
- *               the serialized `slot:<login>:<track>:<date>` for an
- *               in-progress slot. A legacy `{url, audioUrl}` body (a stale
- *               pre-flip client tab) still works via the old blob-URL path.
+ *               own classroom; student → own, non-cancelled.
+ *   DELETE    — remove a whole attempt: the DB row plus its Blob audio (and,
+ *               for pre-migration rows, the archived session JSON at
+ *               source_blob). `{id}` is the DB row id — a uuid for a terminal
+ *               session, or the serialized `slot:<login>:<track>:<date>` for
+ *               an in-progress slot.
  *
  * Scoping: the OWNER may touch ANY classroom's session; a regular parent only
  * their own classroom's; a student only their own (and never a cancelled one,
@@ -126,7 +118,7 @@ export async function DELETE(request: Request) {
   }
   const owner = isOwner(user);
 
-  let body: { id?: string; url?: string; audioUrl?: string };
+  let body: { id?: string };
   try {
     body = await request.json();
   } catch {
@@ -134,50 +126,13 @@ export async function DELETE(request: Request) {
   }
 
   const id = (body.id ?? "").trim();
-  if (id) {
-    const slot = SLOT_ID_RE.exec(id);
-    if (slot) {
-      const [, login, trackRaw, date] = slot;
-      const track = trackRaw as Track;
-      const rows = await dbSelect(
-        "rc_quiz_slots",
-        `?login_user=eq.${encodeURIComponent(login)}&track=eq.${track}&date=eq.${date}&select=login_user,student_name,parent_id`
-      );
-      if (rows === null) {
-        return Response.json({ error: "Could not load." }, { status: 502 });
-      }
-      const r = rows[0];
-      if (!r) return Response.json({ error: "Not found." }, { status: 404 });
-      if (!(await mayAccess(user!, true, owner, r))) {
-        return Response.json({ error: "Not authorized." }, { status: 403 });
-      }
-      try {
-        // Blob first (JSON + flushed WAV), then the row — same order as the
-        // legacy path; a blob failure keeps both stores intact.
-        await deleteSlot(track, date, safeNameOf(login));
-      } catch (err) {
-        console.error("Deleting slot blobs failed:", err);
-        return Response.json({ error: "Delete failed." }, { status: 500 });
-      }
-      const ok = await dbDelete(
-        "rc_quiz_slots",
-        `?login_user=eq.${encodeURIComponent(login)}&track=eq.${track}&date=eq.${date}`
-      );
-      if (!ok) {
-        return Response.json(
-          { error: "Removed the recording but not the row — try again." },
-          { status: 500 }
-        );
-      }
-      return Response.json({ ok: true });
-    }
-
-    if (!UUID_RE.test(id)) {
-      return Response.json({ error: "Invalid id." }, { status: 400 });
-    }
+  const slot = SLOT_ID_RE.exec(id);
+  if (slot) {
+    const [, login, trackRaw, date] = slot;
+    const track = trackRaw as Track;
     const rows = await dbSelect(
-      "rc_quiz_sessions",
-      `?id=eq.${id}&select=login_user,student_name,parent_id,source_blob,audio_url`
+      "rc_quiz_slots",
+      `?login_user=eq.${encodeURIComponent(login)}&track=eq.${track}&date=eq.${date}&select=login_user,student_name,parent_id`
     );
     if (rows === null) {
       return Response.json({ error: "Could not load." }, { status: 502 });
@@ -188,17 +143,17 @@ export async function DELETE(request: Request) {
       return Response.json({ error: "Not authorized." }, { status: 403 });
     }
     try {
-      // The session JSON by pathname (source_blob), the audio by URL.
-      const targets = [
-        typeof r.source_blob === "string" ? r.source_blob : null,
-        bareUrl(r.audio_url),
-      ].filter((u): u is string => Boolean(u));
-      if (targets.length) await del(targets);
+      // Blob first (flushed WAV + any legacy JSON), then the row — a blob
+      // failure keeps both intact.
+      await deleteSlotBlobs(track, date, safeNameOf(login));
     } catch (err) {
-      console.error("Deleting session blobs failed:", err);
+      console.error("Deleting slot blobs failed:", err);
       return Response.json({ error: "Delete failed." }, { status: 500 });
     }
-    const ok = await dbDelete("rc_quiz_sessions", `?id=eq.${id}`);
+    const ok = await dbDelete(
+      "rc_quiz_slots",
+      `?login_user=eq.${encodeURIComponent(login)}&track=eq.${track}&date=eq.${date}`
+    );
     if (!ok) {
       return Response.json(
         { error: "Removed the recording but not the row — try again." },
@@ -208,83 +163,39 @@ export async function DELETE(request: Request) {
     return Response.json({ ok: true });
   }
 
-  // ---- Legacy body: {url, audioUrl} (a stale pre-flip client tab) -----------
-
-  // Only allow deleting blobs under quiz-sessions/ — never arbitrary URLs.
-  const isSessionBlob = (u: string) => {
-    try {
-      return new URL(u).pathname.includes("/quiz-sessions/");
-    } catch {
-      return false;
-    }
-  };
-
-  const sessionUrl = (body.url ?? "").trim();
-  const urls = [body.url, body.audioUrl]
-    .map((u) => (u ?? "").trim())
-    .filter((u) => u && isSessionBlob(u));
-
-  if (!sessionUrl || !isSessionBlob(sessionUrl) || urls.length === 0) {
-    return Response.json({ error: "Nothing to delete." }, { status: 400 });
+  if (!UUID_RE.test(id)) {
+    return Response.json({ error: "Invalid id." }, { status: 400 });
   }
-
-  // The owner may delete ANY classroom's attempt, so it skips the ownership
-  // check entirely. A regular parent must own the session's classroom: fetch the
-  // session JSON and check its stamped parent (the stored `teacherId` field —
-  // the legacy name) / owning student, failing closed if it can't be read or
-  // doesn't belong to the caller.
-  if (!owner) {
-    try {
-      const res = await fetch(sessionUrl, { cache: "no-store" });
-      if (!res.ok) throw new Error(`fetch ${res.status}`);
-      const session = (await res.json()) as {
-        teacherId?: string;
-        loginUser?: string;
-        studentName?: string;
-      };
-      const sessionOwner = session.loginUser ?? session.studentName ?? "";
-      const mine = new Set((await listStudents(user!)).map((s) => s.username));
-      const allowed =
-        session.teacherId === user ||
-        sessionOwner === user ||
-        mine.has(sessionOwner);
-      if (!allowed) {
-        return Response.json({ error: "Not authorized." }, { status: 403 });
-      }
-    } catch (err) {
-      console.error("Could not verify session ownership for delete:", err);
-      return Response.json(
-        { error: "Could not verify session." },
-        { status: 400 }
-      );
-    }
+  const rows = await dbSelect(
+    "rc_quiz_sessions",
+    `?id=eq.${id}&select=login_user,student_name,parent_id,source_blob,audio_url`
+  );
+  if (rows === null) {
+    return Response.json({ error: "Could not load." }, { status: 502 });
   }
-
+  const r = rows[0];
+  if (!r) return Response.json({ error: "Not found." }, { status: 404 });
+  if (!(await mayAccess(user!, true, owner, r))) {
+    return Response.json({ error: "Not authorized." }, { status: 403 });
+  }
   try {
-    await del(urls);
+    // Pre-migration rows: the archived session JSON by pathname (source_blob);
+    // every row: the audio by URL.
+    const targets = [
+      typeof r.source_blob === "string" ? r.source_blob : null,
+      bareUrl(r.audio_url),
+    ].filter((u): u is string => Boolean(u));
+    if (targets.length) await del(targets);
   } catch (err) {
-    console.error("Deleting quiz session from Blob failed:", err);
+    console.error("Deleting session blobs failed:", err);
     return Response.json({ error: "Delete failed." }, { status: 500 });
   }
-
-  // Mirror the deletion into the DB so the row can't linger past the flip.
-  try {
-    const pathname = decodeURIComponent(new URL(sessionUrl).pathname).replace(
-      /^\/+/,
-      ""
+  const ok = await dbDelete("rc_quiz_sessions", `?id=eq.${id}`);
+  if (!ok) {
+    return Response.json(
+      { error: "Removed the recording but not the row — try again." },
+      { status: 500 }
     );
-    const slot = /^quiz-sessions\/(junior\/)?(\d{4}-\d{2}-\d{2})\/(.+)-inprogress\.json$/.exec(
-      pathname
-    );
-    if (slot) {
-      const track: Track = slot[1] ? "junior" : "senior";
-      await shadowDeleteSlotBySafeName(track, slot[2], slot[3]);
-    } else {
-      await shadowDeleteSessionByBlob(pathname);
-    }
-  } catch (err) {
-    console.error("Shadow delete failed:", err);
   }
-
   return Response.json({ ok: true });
 }

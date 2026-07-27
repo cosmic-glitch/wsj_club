@@ -11,11 +11,11 @@
  * machine runs Node 21) and for any future runtime drift. The three verbs we
  * need are plain HTTP against PostgREST.
  *
- * Every call is BEST-EFFORT (dual-write shadow phase): a failure logs and
- * returns null/false, never throws — Blob stays the store of record, drift is
- * caught by scripts/diff-blob-db.mjs and healed by the backfill scripts. When
- * the reads flip (Phase 3), the readers get strict variants that surface
- * errors instead.
+ * The rc_* tables are the ONLY store for users, quiz sessions, slots, and
+ * votes (the Blob migration finished at Phase 4 — PLAN-supabase.md). Every
+ * call logs and returns null/false on failure rather than throwing; callers
+ * are responsible for surfacing that as an error (a failed write is a failed
+ * request now, not tolerable drift).
  */
 
 type DbConfig = { base: string; headers: Record<string, string> };
@@ -64,8 +64,35 @@ export async function dbSelect(
 }
 
 /**
- * INSERT … ON CONFLICT (onConflict) DO UPDATE — the atomic upsert every
- * shadow write uses. Accepts one row or an array. Returns success.
+ * Plain INSERT (no conflict resolution) — for creates where a duplicate key
+ * must be an error, never a silent overwrite (e.g. a new username). Returns
+ * "conflict" on a unique-key violation so callers can map it to a friendly
+ * error.
+ */
+export async function dbInsert(
+  table: string,
+  row: Record<string, unknown>
+): Promise<"ok" | "conflict" | "error"> {
+  const cfg = config();
+  if (!cfg) return "error";
+  try {
+    const res = await fetch(`${cfg.base}${table}`, {
+      method: "POST",
+      headers: { ...cfg.headers, Prefer: "return=minimal" },
+      body: JSON.stringify([row]),
+    });
+    if (res.status === 409) return "conflict";
+    if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
+    return "ok";
+  } catch (err) {
+    console.error(`DB insert ${table} failed:`, err);
+    return "error";
+  }
+}
+
+/**
+ * INSERT … ON CONFLICT (onConflict) DO UPDATE — the atomic upsert.
+ * Accepts one row or an array. Returns success.
  */
 export async function dbUpsert(
   table: string,

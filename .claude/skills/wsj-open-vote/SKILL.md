@@ -1,6 +1,6 @@
 ---
 name: wsj-open-vote
-description: Open the day's article vote on the Reading Club home page. Use when the user says "open the vote", "start today's vote", "put up the vote", "publish the vote choices", or wants the club to choose today's article — including the JUNIOR track ("open the junior vote"). Senior ballot = 7 news picks (via the wsj-pick-article workflow) + 3 enrichment picks (via wsj-pick-enrichment); junior ballot = 5 news picks (via wsj-pick-article-junior). Gets the user's sign-off on the candidates and their kid-friendly pitches, then publishes the poll to Vercel Blob; it appears at the top of the track's index immediately, no deploy.
+description: Open the day's article vote on the Reading Club home page. Use when the user says "open the vote", "start today's vote", "put up the vote", "publish the vote choices", or wants the club to choose today's article — including the JUNIOR track ("open the junior vote"). Senior ballot = 7 news picks (via the wsj-pick-article workflow) + 3 enrichment picks (via wsj-pick-enrichment); junior ballot = 5 news picks (via wsj-pick-article-junior). Gets the user's sign-off on the candidates and their kid-friendly pitches, then publishes the poll to the database; it appears at the top of the track's index immediately, no deploy.
 ---
 
 # WSJ Reading Club — open the day's vote
@@ -44,7 +44,7 @@ The user can override the counts on either track (2–12 total is supported end-
 
    The date is **today** (the vote is always for today's read — never tomorrow). The script refuses if the track's `content/[junior/]<date>.json` already exists, and warns when overwriting a poll that already has ballots (candidate ids are title slugs — keep titles unchanged when revising, or already-cast votes for them are orphaned).
 
-5. **Verify it's live:** `curl -s https://dailyreadingclub.com/api/vote` (senior) or `curl -s "https://dailyreadingclub.com/api/vote?track=junior"` should return `"active": true` with the candidates. (Blob is read live — no build, no commit, no deploy for this step; there is nothing to push.)
+5. **Verify it's live:** `curl -s https://dailyreadingclub.com/api/vote` (senior) or `curl -s "https://dailyreadingclub.com/api/vote?track=junior"` should return `"active": true` with the candidates. (The poll is read live from the database — no build, no commit, no deploy for this step; there is nothing to push.)
 
 6. **Remind the user** to announce the voting window in the group chat — the site deliberately shows **no deadline** (the owner's message is the deadline; publishing the reading is what actually closes the poll).
 

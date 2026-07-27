@@ -1,8 +1,8 @@
 /**
- * Shared PostgREST helpers for the Node scripts (backfill, diff, open-vote).
- * Plain fetch against the Supabase REST API with the service key — same
- * approach as lib/db.ts, but LOUD: scripts want failures thrown, not
- * swallowed (the app's shadow writes are the best-effort side).
+ * Shared PostgREST helpers for the Node scripts (open-vote, check-vote,
+ * add-user). Plain fetch against the Supabase REST API with the service key —
+ * same approach as lib/db.ts, but LOUD: scripts want failures thrown, not
+ * swallowed.
  *
  * Needs SUPABASE_URL + SUPABASE_SERVICE_KEY (run with --env-file=.env.local).
  * The project is shared with whisper-anywhere — only ever touch rc_* tables.
@@ -54,11 +54,4 @@ export async function dbDelete(table, query) {
     headers: { ...headers, Prefer: "return=minimal" },
   });
   if (!res.ok) throw new Error(`delete ${table}: ${res.status} ${await res.text()}`);
-}
-
-/** Fetch a Blob JSON with a per-read cache-buster (overwritten-in-place blobs lag the CDN). */
-export async function fetchBlobJson(url) {
-  const res = await fetch(`${url}?v=${Date.now()}`, { cache: "no-store" });
-  if (!res.ok) throw new Error(`blob fetch ${url}: ${res.status}`);
-  return res.json();
 }

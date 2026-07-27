@@ -396,6 +396,20 @@ affected CLAUDE.md sections (Architecture, Voice quiz storage notes, Daily
 vote storage, Deploy env vars, Blob backups) — the store-specific workaround
 lore (uploadedAt keying, list()-lag numbers, slot cache-busting) becomes
 historical and comes out.
+_DONE 2026-07-27, after two days of soak with clean diffs during live use
+(136 sessions vs 128 at backfill — real quizzes ran through the dual-write
+path). Before the cut, a one-time local safety net was taken:
+`backups/pre-phase4-2026-07-27/` (gitignored) holds a JSON dump of all five
+rc_* tables plus a full Blob-store snapshot (351 blobs). Beyond the plan:
+the backfill/reconciler scripts (`migrate-*-to-db.mjs`) were deleted along
+with the listed removals (their premise — Blob authoritative — died here,
+and re-running one would resurrect deleted rows from the stale archive);
+`hash-password.mjs` went too (it only minted AUTH_USERS values); the
+quiz-session DELETE's legacy `{url}` body was dropped (stale pre-flip tabs
+get a 400; refresh fixes). The slot WAV is the one blob still overwritten
+in place, so its `?v=` busters stay. Verified locally against the prod DB:
+login/me, vote GET, slot checkpoint→read→start-over-archive→owner-delete
+round-trip (archive row landed with `source_blob: null`)._
 
 ## Decisions & risks
 
