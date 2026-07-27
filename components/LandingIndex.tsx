@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CompletedBy, CompletionsProvider } from "@/components/CompletedBy";
 import HomeAuthBar from "@/components/HomeAuthBar";
 import MoreReadings from "@/components/MoreReadings";
+import StreakStrip from "@/components/StreakStrip";
 import TodayTag from "@/components/TodayTag";
 import VoiceQuizStep from "@/components/VoiceQuizStep";
 import VotePoll from "@/components/VotePoll";
@@ -227,6 +228,10 @@ export default function LandingIndex({
           </h1>
         </div>
       </header>
+
+      {/* The logged-in student's personal streak ribbon (students only —
+          renders nothing for parents / logged-out visitors). */}
+      <StreakStrip track={track} dates={readings.map((r) => r.date)} />
 
       {/* ---- index ---- */}
       <div className="mx-auto max-w-[980px] px-[18px]">
