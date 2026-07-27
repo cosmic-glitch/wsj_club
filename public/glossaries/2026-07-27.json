@@ -45,10 +45,9 @@
   },
   {
     "k": "germination",
-    "t": "germination points",
-    "kind": "phrase",
+    "t": "germination",
+    "kind": "word",
     "forms": [
-      "germination points",
       "germination"
     ],
     "text": "Germination is what a seed does when it sprouts and starts to grow. Calling planets “germination points for life” borrows that gardening image for the whole galaxy: billions of places where life could have sprouted. The metaphor makes the puzzle vivid — plant that many seeds and you'd expect something to come up.",
@@ -207,17 +206,6 @@
     "audio": true
   },
   {
-    "k": "cosmic-dice",
-    "t": "rolls of the cosmic dice",
-    "kind": "phrase",
-    "forms": [
-      "rolls of the cosmic dice",
-      "cosmic dice"
-    ],
-    "text": "This treats each life-bearing planet as one roll of a die — a fresh, independent chance for evolution to come up lucky. The image captures why the silence is so puzzling: roll a die billions of times and even a rare result should show up eventually. That it hasn't is what tells Bostrom the odds must be astronomically worse than we assume.",
-    "audio": true
-  },
-  {
     "k": "neck-of-the-woods",
     "t": "our neck of the woods",
     "kind": "phrase",
@@ -250,7 +238,7 @@
   {
     "k": "self-replicating",
     "t": "self replicating",
-    "kind": "phrase",
+    "kind": "word",
     "forms": [
       "self replicating",
       "replicate",
@@ -370,16 +358,6 @@
     "audio": true
   },
   {
-    "k": "sneeze",
-    "t": "it's a sneeze",
-    "kind": "phrase",
-    "forms": [
-      "it’s a sneeze"
-    ],
-    "text": "Calling a thousand years “a sneeze” means it's so brief as to be negligible — over before you've noticed. It's a deliberately jarring comparison, and that's the point: on a timescale where planets are billions of years older than Earth, even a millennium of collapse and recovery barely registers. This is Bostrom teaching you to feel astronomical time, not just read it.",
-    "audio": true
-  },
-  {
     "k": "ample",
     "t": "ample",
     "kind": "word",
@@ -402,7 +380,7 @@
   {
     "k": "maturity",
     "t": "technological maturity",
-    "kind": "phrase",
+    "kind": "name",
     "forms": [
       "technological maturity",
       "maturity"
@@ -585,10 +563,10 @@
   },
   {
     "k": "initiative",
-    "t": "hand the initiative",
-    "kind": "phrase",
+    "t": "initiative",
+    "kind": "word",
     "forms": [
-      "hand the initiative"
+      "initiative"
     ],
     "text": "The initiative here isn't the personal quality of being a self-starter — it's the strategic sense borrowed from war and sport: the advantage of being the one who acts while everyone else reacts. To hand someone the initiative is to let them set the agenda by stepping back yourself. Civilizations that abstain from expanding simply give that advantage to one that won't.",
     "audio": true
@@ -601,17 +579,6 @@
       "intrepid"
     ],
     "text": "Intrepid means fearless and adventurous — the word you'd attach to an explorer setting off somewhere nobody has been. It's admiring rather than reckless. Bostrom needs only one intrepid civilization somewhere in the galaxy for colonization to begin, which is why he thinks universal restraint is implausible.",
-    "audio": true
-  },
-  {
-    "k": "one-match",
-    "t": "only one match to start a fire",
-    "kind": "phrase",
-    "forms": [
-      "only one match to start a fire",
-      "one match"
-    ],
-    "text": "This is the argument that demolishes the zoo hypothesis, compressed into an image. A forest doesn't need every match to be struck — one is enough, and then it spreads on its own. Likewise, galactic colonization doesn't require all civilizations to be expansionist; it requires exactly one, ever. Any theory that depends on unanimous restraint is fragile in the same way a forest is.",
     "audio": true
   },
   {
@@ -688,7 +655,7 @@
   {
     "k": "randomly-selected-sample",
     "t": "randomly selected sample",
-    "kind": "phrase",
+    "kind": "name",
     "forms": [
       "randomly selected sample"
     ],
@@ -697,10 +664,10 @@
   },
   {
     "k": "grounds",
-    "t": "grounds for hope",
-    "kind": "phrase",
+    "t": "grounds",
+    "kind": "word",
     "forms": [
-      "grounds for hope"
+      "grounds"
     ],
     "text": "Grounds here means reasons or justification — the basis on which you hold a belief, as in “grounds for appeal” or “grounds for concern.” Nothing to do with soil or coffee. A barren Mars would give us genuine grounds for hope, because it leaves open the possibility that the hard part is already behind us.",
     "audio": true
@@ -767,10 +734,10 @@
   },
   {
     "k": "naivete",
-    "t": "the height of naiveté",
-    "kind": "phrase",
+    "t": "naiveté",
+    "kind": "word",
     "forms": [
-      "the height of naiveté"
+      "naiveté"
     ],
     "text": "Naiveté is a lack of experience or judgement that makes someone believe things too easily; “the height of naiveté” means the most extreme possible case of it. Bostrom uses the phrase to dismiss the assumption that human nature will stay unchanged forever, given millions of years and technologies like genetics and nanotechnology.",
     "audio": true
