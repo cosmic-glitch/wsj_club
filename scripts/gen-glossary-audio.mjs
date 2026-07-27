@@ -18,6 +18,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 
 const KEY = process.env.OPENAI_API_KEY;
 if (!KEY) {
@@ -64,7 +65,21 @@ async function tts(text) {
     }),
   });
   if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
-  return Buffer.from(await res.arrayBuffer());
+  return trimLeadingSilence(Buffer.from(await res.arrayBuffer()));
+}
+
+// The TTS clips arrive with ~0.4s of leading silence, a noticeable lag when
+// the speaker button is pressed. Trim it (keeping 50ms) via ffmpeg; if ffmpeg
+// isn't installed or chokes, keep the raw clip — a slow clip beats no clip.
+function trimLeadingSilence(buf) {
+  const r = spawnSync(
+    "ffmpeg",
+    ["-hide_banner", "-loglevel", "error", "-i", "pipe:0",
+     "-af", "silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.05",
+     "-c:a", "libmp3lame", "-q:a", "4", "-f", "mp3", "pipe:1"],
+    { input: buf, maxBuffer: 64 * 1024 * 1024 },
+  );
+  return r.status === 0 && r.stdout?.length ? r.stdout : buf;
 }
 
 async function mapLimit(items, limit, fn) {

@@ -97,6 +97,17 @@ var SPEAKER_SVG='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
   '<path d="M11 5 6 9H3v6h3l5 4V5z"></path>'+
   '<path d="M15.5 8.5a4 4 0 0 1 0 7M18 6a7 7 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>';
 var hearAudio=null;
+/* Fetch the clip into a blob URL the moment the sheet opens, so pressing the
+   speaker plays instantly instead of downloading the mp3 first. */
+var preK=null,preUrl=null;
+function preloadClip(e){
+  if(!e.audio||preK===e.k)return;
+  if(preUrl){URL.revokeObjectURL(preUrl);preUrl=null;}
+  preK=e.k;
+  fetch(AUDIO_BASE+e.k+".mp3").then(function(r){return r.ok?r.blob():null;}).then(function(b){
+    if(b&&preK===e.k)preUrl=URL.createObjectURL(b);
+  }).catch(function(){});
+}
 function stopHear(){
   if(hearAudio){try{hearAudio.pause();}catch(err){}hearAudio=null;}
   var b=sheet&&sheet.querySelector(".gs-hear.on");
@@ -104,7 +115,7 @@ function stopHear(){
 }
 function openSheet(k){
   var e=byKey[k];if(!e)return;
-  stopHear();
+  stopHear();preloadClip(e);
   var h=chipFor(e);
   // The pron + speaker button ride in a no-wrap span with the term's LAST word,
   // so a wrapping phrase never strands the button alone on the next line.
@@ -120,7 +131,7 @@ function openSheet(k){
   var hb=sheet.querySelector(".gs-hear");
   if(hb)hb.addEventListener("click",function(){
     stopHear();
-    var a=new Audio(AUDIO_BASE+e.k+".mp3");
+    var a=new Audio(preK===e.k&&preUrl?preUrl:AUDIO_BASE+e.k+".mp3");
     hearAudio=a;
     hb.classList.add("on");
     a.onended=a.onerror=function(){hb.classList.remove("on");if(hearAudio===a)hearAudio=null;};
