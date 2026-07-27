@@ -222,7 +222,7 @@
     "t": "our neck of the woods",
     "kind": "phrase",
     "forms": [
-      "neck of the woods"
+      "our neck of the woods"
     ],
     "text": "Your neck of the woods is your local area, your part of the map — an informal American idiom, originally about a narrow strip of forest. Bostrom uses it to hedge with a shrug: there may be no aliens at all, or at least none in our corner of the galaxy. The casual phrasing is a reminder this was written to be read aloud on the radio.",
     "audio": true
@@ -374,7 +374,7 @@
     "t": "it's a sneeze",
     "kind": "phrase",
     "forms": [
-      "sneeze"
+      "it’s a sneeze"
     ],
     "text": "Calling a thousand years “a sneeze” means it's so brief as to be negligible — over before you've noticed. It's a deliberately jarring comparison, and that's the point: on a timescale where planets are billions of years older than Earth, even a millennium of collapse and recovery barely registers. This is Bostrom teaching you to feel astronomical time, not just read it.",
     "audio": true
@@ -436,7 +436,7 @@
     "t": "our own back yard",
     "kind": "phrase",
     "forms": [
-      "back yard"
+      "our own back yard"
     ],
     "text": "“In our own back yard” means right next to us, close to home — a homely idiom deliberately applied to something enormous. Our solar system is the back yard here. If life started independently twice in one back yard, Bostrom reasons, it must be starting millions of times across the galaxy.",
     "audio": true
@@ -446,7 +446,7 @@
     "t": "the bulk of",
     "kind": "phrase",
     "forms": [
-      "bulk"
+      "the bulk of"
     ],
     "text": "The bulk of something is the greater part of it — most of it, by quantity. It has nothing to do with physical size or muscle here. Saying “the bulk of the Great Filter is ahead of us” treats the filter as a total amount of improbability that can be divided, with most of it still waiting.",
     "audio": true
@@ -466,7 +466,7 @@
     "t": "a crushing blow",
     "kind": "phrase",
     "forms": [
-      "crushing blow"
+      "a crushing blow"
     ],
     "text": "A crushing blow is a hit you don't recover from — it doesn't just hurt, it defeats. Bostrom applies it not to a physical disaster but to a piece of *information*: learning that our future is probably foreclosed. That's the essay's central move — a discovery that changes nothing physically can still be the worst news imaginable.",
     "audio": true
@@ -558,7 +558,7 @@
     "t": "every nook and cranny",
     "kind": "phrase",
     "forms": [
-      "nook and cranny"
+      "every nook and cranny"
     ],
     "text": "Nooks and crannies are small corners and crevices — the phrase means absolutely everywhere, including the awkward hidden bits. Bostrom's evidence is that life on Earth has spread into every nook and cranny that can support it, from deep-sea vents to Antarctic rock. Life goes wherever it can, he argues, and there's no reason the galaxy would be an exception.",
     "audio": true
@@ -588,7 +588,7 @@
     "t": "hand the initiative",
     "kind": "phrase",
     "forms": [
-      "initiative"
+      "hand the initiative"
     ],
     "text": "The initiative here isn't the personal quality of being a self-starter — it's the strategic sense borrowed from war and sport: the advantage of being the one who acts while everyone else reacts. To hand someone the initiative is to let them set the agenda by stepping back yourself. Civilizations that abstain from expanding simply give that advantage to one that won't.",
     "audio": true
@@ -700,7 +700,7 @@
     "t": "grounds for hope",
     "kind": "phrase",
     "forms": [
-      "grounds"
+      "grounds for hope"
     ],
     "text": "Grounds here means reasons or justification — the basis on which you hold a belief, as in “grounds for appeal” or “grounds for concern.” Nothing to do with soil or coffee. A barren Mars would give us genuine grounds for hope, because it leaves open the possibility that the hard part is already behind us.",
     "audio": true
@@ -770,8 +770,7 @@
     "t": "the height of naiveté",
     "kind": "phrase",
     "forms": [
-      "naiveté",
-      "naivete"
+      "the height of naiveté"
     ],
     "text": "Naiveté is a lack of experience or judgement that makes someone believe things too easily; “the height of naiveté” means the most extreme possible case of it. Bostrom uses the phrase to dismiss the assumption that human nature will stay unchanged forever, given millions of years and technologies like genetics and nanotechnology.",
     "audio": true
