@@ -52,7 +52,10 @@ export default async function StudentsPage() {
   // username, so every roster shows activity at a glance. Best-effort: a load
   // error just yields zero-stat rows rather than blanking the page. Loaded once
   // and shared across all classrooms (the owner may render several).
-  const stats = new Map<string, { attempts: number; lastActiveIso: string | null }>();
+  const stats = new Map<
+    string,
+    { attempts: number; lastActiveIso: string | null; scoreSum: number; scoreCount: number }
+  >();
   const result = await loadSessions();
   if (!("error" in result)) {
     for (const s of result) {
@@ -61,10 +64,18 @@ export default async function StudentsPage() {
       if (s.inProgress) continue;
       const owner = s.loginUser ?? s.studentName ?? "";
       if (!owner) continue;
-      const cur = stats.get(owner) ?? { attempts: 0, lastActiveIso: null };
+      const cur =
+        stats.get(owner) ?? { attempts: 0, lastActiveIso: null, scoreSum: 0, scoreCount: 0 };
       cur.attempts += 1;
       if (s.endedAt && (!cur.lastActiveIso || s.endedAt > cur.lastActiveIso)) {
         cur.lastActiveIso = s.endedAt;
+      }
+      // Average only graded "X/10" scores — cancelled attempts and the "—" of a
+      // no-answers card carry no number and stay out of the denominator.
+      const m = s.report?.score?.match(/(-?\d+(?:\.\d+)?)\s*\/\s*10/);
+      if (m) {
+        cur.scoreSum += parseFloat(m[1]);
+        cur.scoreCount += 1;
       }
       stats.set(owner, cur);
     }
@@ -75,13 +86,17 @@ export default async function StudentsPage() {
   const toRoster = (students: PublicUser[]): RosterEntry[] =>
     students
       .filter((s) => s.active !== false)
-      .map((s) => ({
-        username: s.username,
-        displayName: s.displayName,
-        active: s.active !== false,
-        attempts: stats.get(s.username)?.attempts ?? 0,
-        lastActiveIso: stats.get(s.username)?.lastActiveIso ?? null,
-      }));
+      .map((s) => {
+        const st = stats.get(s.username);
+        return {
+          username: s.username,
+          displayName: s.displayName,
+          active: s.active !== false,
+          attempts: st?.attempts ?? 0,
+          lastActiveIso: st?.lastActiveIso ?? null,
+          avgScore: st && st.scoreCount > 0 ? st.scoreSum / st.scoreCount : null,
+        };
+      });
 
   const ownRoster = toRoster(await listStudents(user));
 

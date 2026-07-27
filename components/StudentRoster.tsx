@@ -8,6 +8,8 @@ export type RosterEntry = {
   displayName: string;
   active: boolean;
   attempts: number;
+  // Mean of the student's graded "X/10" scores, null when nothing is graded yet.
+  avgScore: number | null;
   lastActiveIso: string | null;
   // Owner's unified all-classrooms view: the parent's display name (the Parent
   // column) and whether the viewer may Rename/Reset this row (only the owner's
@@ -38,7 +40,7 @@ type Credential = { username: string; password: string; reset: boolean };
 
 /* ------------------------------- sorting -------------------------------- */
 
-type SortKey = "username" | "parent" | "attempts" | "lastActive";
+type SortKey = "username" | "parent" | "attempts" | "avgScore" | "lastActive";
 type SortDir = "asc" | "desc";
 
 // First click on a header: text columns start ascending, the numeric/recency
@@ -47,6 +49,7 @@ const DEFAULT_DIR: Record<SortKey, SortDir> = {
   username: "asc",
   parent: "asc",
   attempts: "desc",
+  avgScore: "desc",
   lastActive: "desc",
 };
 
@@ -61,6 +64,12 @@ function compareBy(key: SortKey, a: RosterEntry, b: RosterEntry): number {
       );
     case "attempts":
       return a.attempts - b.attempts || a.username.localeCompare(b.username);
+    case "avgScore":
+      // Ungraded rows (null) sort as the lowest.
+      return (
+        (a.avgScore ?? -1) - (b.avgScore ?? -1) ||
+        a.username.localeCompare(b.username)
+      );
     case "lastActive":
       // Never-active rows (null ISO) sort as the oldest.
       return (
@@ -172,6 +181,13 @@ export default function StudentRoster({
                 <SortHeader
                   label="Attempts"
                   k="attempts"
+                  sort={sort}
+                  onSort={toggleSort}
+                  align="right"
+                />
+                <SortHeader
+                  label="Avg score"
+                  k="avgScore"
                   sort={sort}
                   onSort={toggleSort}
                   align="right"
@@ -397,6 +413,9 @@ function StudentRow({
       )}
       <td className="px-4 py-3 text-right tabular-nums text-stone-600">
         {student.attempts}
+      </td>
+      <td className="px-4 py-3 text-right tabular-nums text-stone-600">
+        {student.avgScore == null ? "—" : student.avgScore.toFixed(1)}
       </td>
       <td className="px-4 py-3 text-stone-500">{lastActive}</td>
       {!readOnly && (
