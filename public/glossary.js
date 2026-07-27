@@ -130,7 +130,10 @@ function openSheet(k){
   backdrop.style.display="block";sheet.style.display="block";
   document.body.style.overflow="hidden";
   requestAnimationFrame(function(){backdrop.classList.add("on");sheet.classList.add("on");});
-  sheet.querySelector(".gs-x").focus({preventScroll:true});
+  // Focus only after the slide-in: focusing while the sheet is still translated
+  // off-screen makes iOS Safari pan the visual viewport to chase it.
+  var x=sheet.querySelector(".gs-x");
+  setTimeout(function(){if(sheet.style.display!=="none")x.focus({preventScroll:true});},220);
 }
 function closeSheet(){
   if(sheet.style.display==="none")return;

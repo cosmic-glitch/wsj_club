@@ -4,11 +4,16 @@
 .gw{cursor:pointer;text-decoration:underline dotted #9a9a9a;text-decoration-thickness:1px;text-underline-offset:3px}
 h1 .gw{text-decoration-color:#c0c0c0}
 .gw--vocab{background:rgba(255,230,0,.55);text-decoration:none;padding:0 1px}
-#gsBackdrop{position:fixed;inset:0;background:rgba(10,10,10,.45);z-index:50;opacity:0;transition:opacity .18s ease-out}
+/* The -30vh bleed + the sheet's ::after: iOS Safari pins fixed elements to the
+   stable (toolbar-expanded) viewport once the body is scroll-locked, which can
+   leave a toolbar-height strip of page visible below bottom:0 while the toolbar
+   is minimized. Overpaint past the bottom so nothing shows through the gap. */
+#gsBackdrop{position:fixed;inset:0 0 -30vh 0;background:rgba(10,10,10,.45);z-index:50;opacity:0;transition:opacity .18s ease-out}
 #gsBackdrop.on{opacity:1}
 #gsSheet{position:fixed;left:0;right:0;bottom:0;z-index:51;background:#fff;border-top:3px solid #0a0a0a;box-shadow:0 -6px 0 0 #ffe600;transform:translateY(102%);transition:transform .2s ease-out}
+#gsSheet::after{content:"";position:absolute;top:100%;left:0;right:0;height:30vh;background:#fff}
 #gsSheet.on{transform:translateY(0)}
-.gs-inner{position:relative;max-width:40rem;margin:0 auto;padding:16px 20px calc(26px + env(safe-area-inset-bottom));max-height:72vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.gs-inner{position:relative;max-width:40rem;margin:0 auto;padding:16px 20px calc(26px + env(safe-area-inset-bottom));max-height:72vh;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
 .gs-chip{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:#0a0a0a;color:#fff;padding:3px 8px}
 .gs-chip--vocab{background:#ffe600;color:#0a0a0a}
 .gs-term{font-family:Georgia,'Times New Roman',serif;font-size:24px;font-weight:700;line-height:1.2;margin:10px 44px 10px 0}
