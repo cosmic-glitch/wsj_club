@@ -1,0 +1,819 @@
+[
+  {
+    "k": "sterile",
+    "t": "sterile",
+    "kind": "vocab",
+    "pron": "STEH-ril",
+    "forms": [
+      "sterile"
+    ],
+    "text": "Sterile means barren — unable to produce or support life. You've probably met the hospital sense, where sterile instruments are free of germs, but that's one narrow branch of a bigger meaning. Bostrom wants the broad one: a completely sterile Mars would be a planet where biology never began at all, just dead rock and lifeless sand.",
+    "audio": true
+  },
+  {
+    "k": "preclude",
+    "t": "preclude",
+    "kind": "vocab",
+    "pron": "prih-KLOOD",
+    "forms": [
+      "precludes",
+      "preclude"
+    ],
+    "text": "To preclude something is to rule it out in advance — to shut the door on a possibility before it can happen. It's a favourite of careful arguers because it says exactly which options the evidence has eliminated. Here Bostrom is heading off a comfortable conclusion: nothing he has argued precludes the Great Filter from sitting behind us and ahead of us at the same time.",
+    "audio": true
+  },
+  {
+    "k": "relinquish",
+    "t": "relinquish",
+    "kind": "vocab",
+    "pron": "rih-LING-kwish",
+    "forms": [
+      "relinquish"
+    ],
+    "text": "To relinquish is to give something up — a claim, a right, a hope — deliberately and usually reluctantly. It's the formal cousin of “give up,” the word used when a monarch relinquishes a throne or a country relinquishes territory. If the Great Filter lies ahead of us, Bostrom says, we must relinquish all hope of ever colonizing the galaxy: not just accept bad odds, but let the idea go entirely.",
+    "audio": true
+  },
+  {
+    "k": "manifest",
+    "t": "manifest",
+    "kind": "word",
+    "forms": [
+      "manifest"
+    ],
+    "text": "Here manifest means plainly visible or detectable — obvious to anyone looking. It is not the “manifest your goals” sense from social media, nor “Manifest Destiny” from history class. Bostrom's point is that zero alien civilizations have ever developed far enough to become manifest to us, meaning far enough that we could actually notice them.",
+    "audio": true
+  },
+  {
+    "k": "germination",
+    "t": "germination points",
+    "kind": "phrase",
+    "forms": [
+      "germination points",
+      "germination"
+    ],
+    "text": "Germination is what a seed does when it sprouts and starts to grow. Calling planets “germination points for life” borrows that gardening image for the whole galaxy: billions of places where life could have sprouted. The metaphor makes the puzzle vivid — plant that many seeds and you'd expect something to come up.",
+    "audio": true
+  },
+  {
+    "k": "notwithstanding",
+    "t": "notwithstanding",
+    "kind": "word",
+    "forms": [
+      "notwithstanding"
+    ],
+    "text": "Notwithstanding means “despite” or “setting that aside.” It often comes *after* the thing being dismissed, which is what makes it hard to read: “UFO-believers notwithstanding” means “ignoring what UFO-believers claim.” Bostrom uses it to wave away a whole category of evidence in two words before making his real point.",
+    "audio": true
+  },
+  {
+    "k": "to-date",
+    "t": "to date",
+    "kind": "phrase",
+    "forms": [
+      "to date"
+    ],
+    "text": "To date means “up until now.” It's a formal way of stressing that a search is still running and could still turn something up — it just hasn't yet. Saying we have received no alien visitors to date is more precise than saying we never will.",
+    "audio": true
+  },
+  {
+    "k": "cosmos",
+    "t": "cosmos",
+    "kind": "word",
+    "forms": [
+      "cosmos"
+    ],
+    "text": "The cosmos is the universe considered as one whole, ordered system — a slightly grander, more poetic word than “space.” It comes from a Greek word meaning order or arrangement, which is why it suggests the universe as an organised thing rather than just a lot of emptiness. Bostrom calls it “this vast cold cosmos” when describing how lonely the silence feels.",
+    "audio": true
+  },
+  {
+    "k": "heartening",
+    "t": "heartening",
+    "kind": "word",
+    "forms": [
+      "heartening"
+    ],
+    "text": "Something heartening lifts your spirits and gives you courage — it puts heart back into you. It's the exact opposite of “disheartening,” which is the more common half of the pair. Many people, Bostrom notes, would find it heartening to learn we aren't alone; his whole essay argues that this comforting reaction has it backwards.",
+    "audio": true
+  },
+  {
+    "k": "primitive",
+    "t": "primitive",
+    "kind": "word",
+    "forms": [
+      "primitive"
+    ],
+    "text": "Primitive here means early and simple in design, not stupid or crude in a dismissive way. The first astronomers' telescopes were primitive compared with ours, yet they were good enough to reveal Mars's polar ice caps and start a 300-year conversation about life there.",
+    "audio": true
+  },
+  {
+    "k": "dire",
+    "t": "dire",
+    "kind": "word",
+    "forms": [
+      "dire"
+    ],
+    "text": "Dire means dreadful in a way that signals disaster ahead — think “dire warning” or “dire consequences.” It carries a note of urgency that “bad” doesn't. Bostrom calls a Martian fossil “scientifically interesting yes, but dire news for the future of the human race,” which is the paradox the whole essay unpacks.",
+    "audio": true
+  },
+  {
+    "k": "extinct",
+    "t": "extinct",
+    "kind": "word",
+    "forms": [
+      "extinct"
+    ],
+    "text": "A species is extinct when every member of it has died and none remain anywhere. Bostrom asks whether Mars holds traces of life “whether extinct or still active” — meaning it would count either way, because he cares that life *started*, not that it survived.",
+    "audio": true
+  },
+  {
+    "k": "bacterium",
+    "t": "bacterium",
+    "kind": "word",
+    "forms": [
+      "bacterium"
+    ],
+    "text": "A bacterium is a single-celled organism, among the simplest forms of life there is — and it's the singular of “bacteria,” a distinction people get wrong constantly. One bacterium, two bacteria. Finding even a single fossil bacterium on Mars would be, in Bostrom's view, bad news.",
+    "audio": true
+  },
+  {
+    "k": "algae",
+    "t": "algae",
+    "kind": "word",
+    "forms": [
+      "algae"
+    ],
+    "text": "Algae are simple plant-like organisms that live in water — pond scum and seaweed are both algae. They're more complex than bacteria but far simpler than anything with organs or a skeleton. Bostrom lists them as a middle rung on his ladder of increasingly alarming Martian discoveries.",
+    "audio": true
+  },
+  {
+    "k": "trilobite",
+    "t": "trilobite",
+    "kind": "name",
+    "forms": [
+      "trilobite"
+    ],
+    "text": "A trilobite was a hard-shelled sea creature, a bit like a woodlouse, that lived in Earth's oceans hundreds of millions of years ago and is now one of the most common fossils in museum collections. It matters here because a trilobite is genuinely complex — with eyes, limbs and a segmented body — so finding one on Mars would mean evolution there got much further than bacteria.",
+    "audio": true
+  },
+  {
+    "k": "vertebrate",
+    "t": "vertebrate",
+    "kind": "word",
+    "forms": [
+      "vertebrate"
+    ],
+    "text": "A vertebrate is an animal with a backbone — fish, birds, reptiles, mammals, us. The word marks a huge evolutionary step up in complexity from creatures without one. Bostrom saves “a vertebrate mammal” for his worst case, because finding one on Mars would mean the hard steps in evolution are easy, and the Great Filter almost certainly lies ahead.",
+    "audio": true
+  },
+  {
+    "k": "sum-total",
+    "t": "sum total",
+    "kind": "phrase",
+    "forms": [
+      "sum total"
+    ],
+    "text": "The sum total is the final amount once everything has been added up — the phrase exists to emphasise finality. It lands hard here because the number Bostrom is adding up to is zero: billions of possible starting worlds, and a sum total of no alien civilizations we can see.",
+    "audio": true
+  },
+  {
+    "k": "conceptualize",
+    "t": "conceptualize",
+    "kind": "word",
+    "forms": [
+      "conceptualize"
+    ],
+    "text": "To conceptualize something is to form a clear mental model of it — to decide what shape the idea has so you can reason about it. Bostrom says we can conceptualize the barrier as a “Great Filter,” which is him choosing a metaphor on purpose: a filter is a thing almost nothing passes through, and that image does the work of a paragraph of explanation.",
+    "audio": true
+  },
+  {
+    "k": "great-filter",
+    "t": "Great Filter",
+    "kind": "name",
+    "forms": [
+      "Great Filter"
+    ],
+    "text": "The Great Filter is the name for whatever step stops planets from producing galaxy-colonizing civilizations — one or more transitions so wildly improbable that essentially nothing gets through. It's Bostrom's proposed answer to the silence in the sky. The crucial question is *where* it sits: behind us in our evolutionary past, meaning we already got freakishly lucky, or ahead of us in our future, meaning we should expect to be stopped like everyone else.",
+    "audio": true
+  },
+  {
+    "k": "improbable",
+    "t": "improbable",
+    "kind": "word",
+    "forms": [
+      "improbable",
+      "improbability",
+      "improbabilities"
+    ],
+    "text": "Improbable means unlikely — but in this essay it's doing precise mathematical work, not casual exaggeration. When Bostrom calls a step “highly improbable,” he means the odds against it are so steep that out of billions of attempts, essentially none succeed. The noun form, improbability, names that same steepness as a quantity.",
+    "audio": true
+  },
+  {
+    "k": "cosmic-dice",
+    "t": "rolls of the cosmic dice",
+    "kind": "phrase",
+    "forms": [
+      "rolls of the cosmic dice",
+      "cosmic dice"
+    ],
+    "text": "This treats each life-bearing planet as one roll of a die — a fresh, independent chance for evolution to come up lucky. The image captures why the silence is so puzzling: roll a die billions of times and even a rare result should show up eventually. That it hasn't is what tells Bostrom the odds must be astronomically worse than we assume.",
+    "audio": true
+  },
+  {
+    "k": "neck-of-the-woods",
+    "t": "our neck of the woods",
+    "kind": "phrase",
+    "forms": [
+      "neck of the woods"
+    ],
+    "text": "Your neck of the woods is your local area, your part of the map — an informal American idiom, originally about a narrow strip of forest. Bostrom uses it to hedge with a shrug: there may be no aliens at all, or at least none in our corner of the galaxy. The casual phrasing is a reminder this was written to be read aloud on the radio.",
+    "audio": true
+  },
+  {
+    "k": "millennia",
+    "t": "millennia",
+    "kind": "word",
+    "forms": [
+      "millennia"
+    ],
+    "text": "Millennia is the plural of millennium — a period of a thousand years. Bostrom asks whether the Great Filter waits for us “in the millennia or decades to come,” and that gap between the two words is deliberate: it might be thousands of years away, or close enough that we'd meet it ourselves.",
+    "audio": true
+  },
+  {
+    "k": "inevitable",
+    "t": "inevitable",
+    "kind": "word",
+    "forms": [
+      "inevitable"
+    ],
+    "text": "Inevitable means certain to happen, impossible to avoid. Bostrom is pointing at a bias in how we think: because intelligent life *did* evolve here, we assume it was always going to — lengthy and complex, sure, but ultimately inevitable. He thinks that assumption is completely unearned.",
+    "audio": true
+  },
+  {
+    "k": "self-replicating",
+    "t": "self replicating",
+    "kind": "phrase",
+    "forms": [
+      "self replicating",
+      "replicate",
+      "replicas"
+    ],
+    "text": "Something self-replicating makes copies of itself, and those copies make more copies. It's the defining trick of life — the first self-replicating molecule is where biology arguably begins — and later in the essay it's also the trick that would let one space probe become billions. The same idea explains both the origin of life and how a galaxy could be colonized quickly.",
+    "audio": true
+  },
+  {
+    "k": "prokaryotes",
+    "t": "prokaryotes",
+    "kind": "word",
+    "forms": [
+      "prokaryotes"
+    ],
+    "text": "Prokaryotes are the simplest single-celled organisms, with their genetic material floating loose inside the cell rather than packed into a nucleus. Bacteria are prokaryotes. They were Earth's only life for a very long stretch, which is the fact Bostrom builds his argument on.",
+    "audio": true
+  },
+  {
+    "k": "eukaryotes",
+    "t": "eukaryotes",
+    "kind": "word",
+    "forms": [
+      "eukaryotes"
+    ],
+    "text": "Eukaryotes are cells that keep their DNA inside a membrane-enclosed nucleus — a tidier, more capable design than prokaryotes. Every plant, animal and fungus is built from them. The striking number is that it took life on Earth about 1.8 billion years to make this one step, and a delay that enormous is exactly what a Great Filter would look like.",
+    "audio": true
+  },
+  {
+    "k": "mutations",
+    "t": "mutations",
+    "kind": "word",
+    "forms": [
+      "mutations"
+    ],
+    "text": "A mutation is a random change in an organism's genetic instructions. Most do nothing or cause harm; very occasionally one is useful and gets passed on, which is the raw material evolution works with. Bostrom's point is that some steps may have needed a very particular *set* of mutations to land together, and waiting for that combination could take a billion years.",
+    "audio": true
+  },
+  {
+    "k": "get-stuck",
+    "t": "get stuck",
+    "kind": "phrase",
+    "forms": [
+      "get stuck"
+    ],
+    "text": "Here “get stuck” means halt permanently at one stage and never advance — like a game level almost no player ever clears. Bostrom suggests almost all planets may get stuck at the very first step, never producing even simple self-replicating life. The casual phrase carries a bleak idea: not destroyed, just frozen forever partway.",
+    "audio": true
+  },
+  {
+    "k": "desolate",
+    "t": "desolate",
+    "kind": "word",
+    "forms": [
+      "desolate"
+    ],
+    "text": "Desolate means empty and bleak, abandoned — a word that describes both a landscape and a mood, which is why it's so effective. A desolate universe is one where we are the only minds in it. Bostrom asks “Don't like the idea of such a desolate universe?” knowing full well that most readers don't, and that the comfortable alternative is far more dangerous.",
+    "audio": true
+  },
+  {
+    "k": "imploded",
+    "t": "imploded",
+    "kind": "word",
+    "forms": [
+      "imploded"
+    ],
+    "text": "To implode is to collapse violently inward — the opposite of explode. Applied to civilizations it suggests they fell apart from internal pressures rather than being destroyed from outside. Bostrom lists the Roman Empire and the Mayan civilization as examples, then argues that even collapses this dramatic aren't nearly severe enough to be the Great Filter.",
+    "audio": true
+  },
+  {
+    "k": "flourished",
+    "t": "flourished",
+    "kind": "word",
+    "forms": [
+      "flourished"
+    ],
+    "text": "To flourish is to thrive — to grow strongly and do well, whether you're a plant, a business, or a civilization. The word makes the fall that follows land harder, which is why Bostrom uses it of the Mayan civilization “that once flourished in Central America.”",
+    "audio": true
+  },
+  {
+    "k": "hypothesizing",
+    "t": "hypothesizing",
+    "kind": "word",
+    "forms": [
+      "hypothesizing"
+    ],
+    "text": "To hypothesize is to propose an idea for the sake of testing it — not to claim it's true, but to see what would follow if it were. Scientists live in this mode. Bostrom flags that he is hypothesizing “a more drastic termination” than any historical collapse, signalling he's exploring a scenario rather than predicting one.",
+    "audio": true
+  },
+  {
+    "k": "drastic",
+    "t": "drastic",
+    "kind": "word",
+    "forms": [
+      "drastic"
+    ],
+    "text": "Drastic means extreme and severe, with a sense of going much further than usual. A drastic haircut is one you can't undo quickly. Bostrom needs the word because he's distinguishing ordinary historical collapse from something far worse: the permanent end of a species' potential.",
+    "audio": true
+  },
+  {
+    "k": "termination",
+    "t": "termination",
+    "kind": "word",
+    "forms": [
+      "termination"
+    ],
+    "text": "Termination is a formal word for an ending or a stopping. Its coldness is doing real work here — Bostrom is describing the extinction of an intelligent species, and the clinical vocabulary keeps the sentence analytical rather than melodramatic.",
+    "audio": true
+  },
+  {
+    "k": "existential",
+    "t": "existential",
+    "kind": "word",
+    "forms": [
+      "existential"
+    ],
+    "text": "An existential threat is one to your very *existence* — not something that damages you, but something that ends you entirely. This is the distinction the whole paragraph rests on: nuclear war or a deadly superbug would be catastrophic, but humanity might recover eventually, so they don't qualify. Only an existential disaster could be a Great Filter, because only permanent endings explain a permanently silent sky.",
+    "audio": true
+  },
+  {
+    "k": "sneeze",
+    "t": "it's a sneeze",
+    "kind": "phrase",
+    "forms": [
+      "sneeze"
+    ],
+    "text": "Calling a thousand years “a sneeze” means it's so brief as to be negligible — over before you've noticed. It's a deliberately jarring comparison, and that's the point: on a timescale where planets are billions of years older than Earth, even a millennium of collapse and recovery barely registers. This is Bostrom teaching you to feel astronomical time, not just read it.",
+    "audio": true
+  },
+  {
+    "k": "ample",
+    "t": "ample",
+    "kind": "word",
+    "forms": [
+      "ample"
+    ],
+    "text": "Ample means more than enough, with room to spare. Older civilizations, Bostrom argues, would have had ample time to recover from repeated collapses — even failing a thousand times, they could still have reached us hundreds of millions of years ago. The generosity built into the word is what makes their absence so damning.",
+    "audio": true
+  },
+  {
+    "k": "confront",
+    "t": "confront",
+    "kind": "word",
+    "forms": [
+      "confront"
+    ],
+    "text": "To confront something is to face it directly rather than avoid it. There's a note of unavoidable difficulty in the word — you confront a problem or an opponent, not a nice surprise. If the Great Filter lies ahead of us, Bostrom says, we have still to confront it: it is waiting, and it cannot be gone around.",
+    "audio": true
+  },
+  {
+    "k": "maturity",
+    "t": "technological maturity",
+    "kind": "phrase",
+    "forms": [
+      "technological maturity",
+      "maturity"
+    ],
+    "text": "Technological maturity means a civilization's full-grown state — the stage where it has developed roughly everything physics permits, including cheap travel between stars. It's the finish line Bostrom keeps referring to. His fear is that almost every intelligent species goes extinct before reaching it, and that we have no special reason to think we'll be luckier.",
+    "audio": true
+  },
+  {
+    "k": "prematurely",
+    "t": "prematurely",
+    "kind": "word",
+    "forms": [
+      "prematurely"
+    ],
+    "text": "Prematurely means too early, before the proper time — a premature baby arrives before it's ready. Ending “prematurely” is a quietly devastating way to describe human extinction, because it frames our whole history so far as an opening chapter rather than a completed story.",
+    "audio": true
+  },
+  {
+    "k": "implications",
+    "t": "implications",
+    "kind": "word",
+    "forms": [
+      "implications",
+      "implication"
+    ],
+    "text": "The implications of a fact are what it *quietly tells you* beyond what it directly states — the conclusions that follow from it. This word is the hinge of the essay. Most people reading about Martian fossils, Bostrom says, would be thrilled and “would not understand the implications of the finding”: the discovery itself is neutral, but what it implies about the Great Filter is catastrophic.",
+    "audio": true
+  },
+  {
+    "k": "back-yard",
+    "t": "our own back yard",
+    "kind": "phrase",
+    "forms": [
+      "back yard"
+    ],
+    "text": "“In our own back yard” means right next to us, close to home — a homely idiom deliberately applied to something enormous. Our solar system is the back yard here. If life started independently twice in one back yard, Bostrom reasons, it must be starting millions of times across the galaxy.",
+    "audio": true
+  },
+  {
+    "k": "bulk",
+    "t": "the bulk of",
+    "kind": "phrase",
+    "forms": [
+      "bulk"
+    ],
+    "text": "The bulk of something is the greater part of it — most of it, by quantity. It has nothing to do with physical size or muscle here. Saying “the bulk of the Great Filter is ahead of us” treats the filter as a total amount of improbability that can be divided, with most of it still waiting.",
+    "audio": true
+  },
+  {
+    "k": "overwhelming",
+    "t": "overwhelming",
+    "kind": "word",
+    "forms": [
+      "overwhelming"
+    ],
+    "text": "When a probability is overwhelming, the evidence points one way so strongly that it swamps any argument on the other side. Bostrom reserves the word for his worst case: discover a complex fossil on Mars, and the probability becomes overwhelming that the bulk of the Great Filter is still to come.",
+    "audio": true
+  },
+  {
+    "k": "crushing-blow",
+    "t": "a crushing blow",
+    "kind": "phrase",
+    "forms": [
+      "crushing blow"
+    ],
+    "text": "A crushing blow is a hit you don't recover from — it doesn't just hurt, it defeats. Bostrom applies it not to a physical disaster but to a piece of *information*: learning that our future is probably foreclosed. That's the essay's central move — a discovery that changes nothing physically can still be the worst news imaginable.",
+    "audio": true
+  },
+  {
+    "k": "europa",
+    "t": "Europa",
+    "kind": "name",
+    "forms": [
+      "Europa"
+    ],
+    "text": "Europa is a moon of Jupiter with a global ocean of liquid water beneath a thick crust of ice, which makes it one of the most promising places in the solar system to look for life. That promise is exactly why Bostrom hopes we find nothing there — a second independent origin of life nearby would be very bad news indeed.",
+    "audio": true
+  },
+  {
+    "k": "fermi",
+    "t": "Enrico Fermi",
+    "kind": "name",
+    "forms": [
+      "Enrico Fermi",
+      "Fermi"
+    ],
+    "text": "Enrico Fermi (1901–1954) was an Italian-born physicist, a Nobel laureate who built the first nuclear reactor. He's remembered here for a lunchtime remark in 1950: reflecting on how many stars there are and how old they are, he asked simply, “Where are they?” The question was casual; the puzzle it named has occupied scientists ever since.",
+    "audio": true
+  },
+  {
+    "k": "fermis-paradox",
+    "t": "Fermi's paradox",
+    "kind": "name",
+    "forms": [
+      "Fermi’s paradox",
+      "Fermi's paradox"
+    ],
+    "text": "Fermi's paradox is the clash between what our reasoning predicts — a galaxy of 100 billion stars, many far older than ours, should be full of civilizations — and what we actually observe, which is total silence. The word “paradox” matters: it doesn't mean the universe is broken, it means one of our assumptions must be wrong. The rest of the essay is an attempt to work out which one.",
+    "audio": true
+  },
+  {
+    "k": "repost",
+    "t": "repost",
+    "kind": "word",
+    "forms": [
+      "repost"
+    ],
+    "text": "This is a slip in Bostrom's script for **riposte** (pronounced rih-POST) — a quick, sharp reply, borrowed from fencing, where a riposte is the counter-thrust straight after you block an attack. It has nothing to do with re-posting something online. His point is that “there aren't any aliens” is a correct but unexciting comeback to Fermi's question, and people prefer more imaginative answers.",
+    "audio": true
+  },
+  {
+    "k": "concocting",
+    "t": "concocting",
+    "kind": "word",
+    "forms": [
+      "concocting"
+    ],
+    "text": "To concoct is to cook something up — originally a recipe, now usually a story or an excuse. The word carries a hint of invention that isn't quite honest, so it's a small jab: Bostrom says people have “busied themselves concocting more fanciful explanations,” implying they're entertaining themselves rather than reasoning carefully.",
+    "audio": true
+  },
+  {
+    "k": "fanciful",
+    "t": "fanciful",
+    "kind": "word",
+    "forms": [
+      "fanciful"
+    ],
+    "text": "Fanciful means imaginative in a way that isn't grounded in evidence — pleasant to think about, unlikely to be true. It's dismissive but gentle, closer to “charmingly far-fetched” than “stupid.” Bostrom uses it of the elaborate theories people invent to explain the silence, of which the zoo hypothesis is his main example.",
+    "audio": true
+  },
+  {
+    "k": "speculate",
+    "t": "speculate",
+    "kind": "word",
+    "forms": [
+      "speculate"
+    ],
+    "text": "To speculate is to form ideas without solid evidence — reasoning about what *might* be true rather than what you can show is. Scientists speculate constantly, and there's nothing wrong with it as long as everyone knows that's what's happening. Bostrom signals a shift into that mode with “One might speculate…” before laying out the zoo hypothesis.",
+    "audio": true
+  },
+  {
+    "k": "zoo-hypothesis",
+    "t": "zoo hypothesis",
+    "kind": "name",
+    "forms": [
+      "zoo hypothesis"
+    ],
+    "text": "The zoo hypothesis proposes that advanced aliens exist and know about us, but deliberately stay hidden — watching us the way we watch animals in an enclosure, perhaps until we're judged mature enough to join them. It's a genuinely popular idea in science fiction. Bostrom rejects it for a simple structural reason: it requires *every single* civilization to agree to hide, and it takes only one exception to break the silence.",
+    "audio": true
+  },
+  {
+    "k": "nook-and-cranny",
+    "t": "every nook and cranny",
+    "kind": "phrase",
+    "forms": [
+      "nook and cranny"
+    ],
+    "text": "Nooks and crannies are small corners and crevices — the phrase means absolutely everywhere, including the awkward hidden bits. Bostrom's evidence is that life on Earth has spread into every nook and cranny that can support it, from deep-sea vents to Antarctic rock. Life goes wherever it can, he argues, and there's no reason the galaxy would be an exception.",
+    "audio": true
+  },
+  {
+    "k": "requisite",
+    "t": "requisite",
+    "kind": "word",
+    "forms": [
+      "requisite"
+    ],
+    "text": "Requisite means required — the necessary level or amount of something. It's a formal cousin of “needed,” common in official writing (“the requisite qualifications”). Any civilization reaching the requisite stage of technology, Bostrom argues, will most likely try to colonize space.",
+    "audio": true
+  },
+  {
+    "k": "forego",
+    "t": "forego",
+    "kind": "word",
+    "forms": [
+      "forego"
+    ],
+    "text": "To forgo something is to choose to do without it — to pass it up voluntarily. (Bostrom spells it “forego,” a common variant; the strictly correct spelling for this meaning is *forgo*, since “forego” properly means to go before.) Even if some civilizations decided to forego space colonization, he argues, that decision only clears the field for one that doesn't.",
+    "audio": true
+  },
+  {
+    "k": "initiative",
+    "t": "hand the initiative",
+    "kind": "phrase",
+    "forms": [
+      "initiative"
+    ],
+    "text": "The initiative here isn't the personal quality of being a self-starter — it's the strategic sense borrowed from war and sport: the advantage of being the one who acts while everyone else reacts. To hand someone the initiative is to let them set the agenda by stepping back yourself. Civilizations that abstain from expanding simply give that advantage to one that won't.",
+    "audio": true
+  },
+  {
+    "k": "intrepid",
+    "t": "intrepid",
+    "kind": "word",
+    "forms": [
+      "intrepid"
+    ],
+    "text": "Intrepid means fearless and adventurous — the word you'd attach to an explorer setting off somewhere nobody has been. It's admiring rather than reckless. Bostrom needs only one intrepid civilization somewhere in the galaxy for colonization to begin, which is why he thinks universal restraint is implausible.",
+    "audio": true
+  },
+  {
+    "k": "one-match",
+    "t": "only one match to start a fire",
+    "kind": "phrase",
+    "forms": [
+      "only one match to start a fire",
+      "one match"
+    ],
+    "text": "This is the argument that demolishes the zoo hypothesis, compressed into an image. A forest doesn't need every match to be struck — one is enough, and then it spreads on its own. Likewise, galactic colonization doesn't require all civilizations to be expansionist; it requires exactly one, ever. Any theory that depends on unanimous restraint is fragile in the same way a forest is.",
+    "audio": true
+  },
+  {
+    "k": "expansionist",
+    "t": "expansionist",
+    "kind": "word",
+    "forms": [
+      "expansionist"
+    ],
+    "text": "An expansionist power is one committed to growing its territory or reach — the word usually shows up in history class describing empires. Applying it to a civilization spreading between stars keeps that flavour deliberately. It takes only one expansionist civilization, Bostrom argues, to fill a galaxy.",
+    "audio": true
+  },
+  {
+    "k": "feasibility",
+    "t": "feasibility",
+    "kind": "word",
+    "forms": [
+      "feasibility"
+    ],
+    "text": "Feasibility is whether something can actually be done — not whether it's a good idea, just whether it's possible. Engineers and planners separate these questions on purpose. Bostrom turns to the feasibility of space colonization to head off the objection that the whole scenario is fantasy, pointing out that Voyager 1 has already left our solar system.",
+    "audio": true
+  },
+  {
+    "k": "voyager",
+    "t": "Voyager 1",
+    "kind": "name",
+    "forms": [
+      "Voyager 1",
+      "Voyager"
+    ],
+    "text": "Voyager 1 is a NASA probe launched in 1977 that has now travelled beyond our solar system and is still transmitting — the most distant human-made object in existence. Bostrom cites it as a modest but real proof of concept: we're a young civilization and our machines are already leaving. Given millions of years, far more becomes plausible.",
+    "audio": true
+  },
+  {
+    "k": "nanotechnology",
+    "t": "nanotechnology",
+    "kind": "word",
+    "forms": [
+      "nanotechnology"
+    ],
+    "text": "Nanotechnology is engineering at the scale of individual molecules and atoms — “nano” means one-billionth, so a nanometre is a billionth of a metre. Bostrom lists it alongside artificial intelligence and robotics as a technology that could let a civilization spread into space, and later as one of the transformative technologies “already in sight.”",
+    "audio": true
+  },
+  {
+    "k": "on-route",
+    "t": "on route",
+    "kind": "phrase",
+    "forms": [
+      "on route"
+    ],
+    "text": "This is a slip in the script for **en route** (pronounced on ROOT), a French borrowing meaning “on the way.” Bostrom is imagining billions of self-copying probes travelling toward every part of the galaxy. Worth knowing both the correct spelling and that this radio script was never copy-edited — you'll spot a couple of these.",
+    "audio": true
+  },
+  {
+    "k": "coincidence",
+    "t": "coincidence",
+    "kind": "word",
+    "forms": [
+      "coincidence"
+    ],
+    "text": "A coincidence is a striking co-occurrence that happens by chance alone, without one thing causing the other. The objection Bostrom is answering runs: it would be an amazing coincidence if Earth were the only planet where intelligent life evolved. His reply is that our position isn't a coincidence at all — it's guaranteed, because only planets with observers have anyone to notice.",
+    "audio": true
+  },
+  {
+    "k": "observation-selection-effect",
+    "t": "observation selection effect",
+    "kind": "name",
+    "forms": [
+      "observation selection effect"
+    ],
+    "text": "An observation selection effect happens when the very fact that you exist to make an observation guarantees what that observation will show — so the evidence proves far less than it appears to. Ask everyone alive whether they survived childhood and you'll get 100% yes, which tells you nothing about how safe childhood is. In the same way, every observer wondering about alien life is necessarily standing on a planet where life arose, so “it happened here” is much weaker evidence than it feels like.",
+    "audio": true
+  },
+  {
+    "k": "randomly-selected-sample",
+    "t": "randomly selected sample",
+    "kind": "phrase",
+    "forms": [
+      "randomly selected sample"
+    ],
+    "text": "A random sample is a subset picked by chance, with every member of the group equally likely to be chosen — it's what makes a survey trustworthy, because a fair sample resembles the whole. Bostrom's point is that Earth fails this test badly. We didn't pick our planet at random from all planets; we could only ever have found ourselves on one where intelligent life already existed.",
+    "audio": true
+  },
+  {
+    "k": "grounds",
+    "t": "grounds for hope",
+    "kind": "phrase",
+    "forms": [
+      "grounds"
+    ],
+    "text": "Grounds here means reasons or justification — the basis on which you hold a belief, as in “grounds for appeal” or “grounds for concern.” Nothing to do with soil or coffee. A barren Mars would give us genuine grounds for hope, because it leaves open the possibility that the hard part is already behind us.",
+    "audio": true
+  },
+  {
+    "k": "barren",
+    "t": "barren",
+    "kind": "word",
+    "forms": [
+      "barren"
+    ],
+    "text": "Barren means empty and unable to produce life or growth — a barren field grows nothing. It's the near-twin of “sterile,” the word Bostrom opened the essay with, and he returns to it at the end for the hopeful version of the same wish: that Mars is indeed found to be barren.",
+    "audio": true
+  },
+  {
+    "k": "play-our-cards-right",
+    "t": "play our cards right",
+    "kind": "phrase",
+    "forms": [
+      "play our cards right"
+    ],
+    "text": "To play your cards right is to handle a situation skilfully enough to get the good outcome available to you — an idiom from card games, where the hand you're dealt is luck but what you do with it isn't. The phrase carries a quiet warning: a barren Mars would give humanity a *chance* at an extraordinary future, not a guarantee of one.",
+    "audio": true
+  },
+  {
+    "k": "eons",
+    "t": "eons",
+    "kind": "word",
+    "forms": [
+      "eons"
+    ],
+    "text": "An eon is an immensely long period of time — in geology it's the largest official division of Earth's history, spanning hundreds of millions of years. Bostrom sets all of human history so far against “the eons of history that lie still before us,” a comparison designed to make our entire recorded past feel like an opening sentence.",
+    "audio": true
+  },
+  {
+    "k": "tribulations",
+    "t": "tribulations",
+    "kind": "word",
+    "forms": [
+      "tribulations"
+    ],
+    "text": "Tribulations are severe troubles and sufferings — the word is old and slightly biblical, which is why it usually travels in the pair “trials and tribulations.” Bostrom pairs it with triumphs to sweep up the entire emotional range of human history, then calls the whole lot “mere birth pangs.”",
+    "audio": true
+  },
+  {
+    "k": "mesopotamia",
+    "t": "Mesopotamia",
+    "kind": "name",
+    "forms": [
+      "Mesopotamia"
+    ],
+    "text": "Mesopotamia was the region between the Tigris and Euphrates rivers, in what's now largely Iraq — home to Sumer and Babylon, and often called the cradle of civilization for producing the first cities and the first writing. Bostrom picks it as the starting line of human history, roughly 5,000 years ago, to make the point that even *all* of that is a blink against what may lie ahead.",
+    "audio": true
+  },
+  {
+    "k": "birth-pangs",
+    "t": "birth pangs",
+    "kind": "phrase",
+    "forms": [
+      "birth pangs"
+    ],
+    "text": "Birth pangs are the pains of labour — the phrase is used figuratively for the painful early struggles of something new coming into being. Calling all human history so far “mere birth pangs in the delivery process” recasts our triumphs and disasters as the difficult beginning of something that hasn't properly started yet.",
+    "audio": true
+  },
+  {
+    "k": "naivete",
+    "t": "the height of naiveté",
+    "kind": "phrase",
+    "forms": [
+      "naiveté",
+      "naivete"
+    ],
+    "text": "Naiveté is a lack of experience or judgement that makes someone believe things too easily; “the height of naiveté” means the most extreme possible case of it. Bostrom uses the phrase to dismiss the assumption that human nature will stay unchanged forever, given millions of years and technologies like genetics and nanotechnology.",
+    "audio": true
+  },
+  {
+    "k": "transformative",
+    "t": "transformative",
+    "kind": "word",
+    "forms": [
+      "transformative"
+    ],
+    "text": "Something transformative doesn't just improve a situation — it changes its fundamental nature into something different. Bostrom means technologies powerful enough to alter what a human being *is*, not merely what humans can do, and he argues that genetics and nanotechnology are already in sight.",
+    "audio": true
+  },
+  {
+    "k": "posthuman",
+    "t": "posthuman",
+    "kind": "word",
+    "forms": [
+      "posthuman"
+    ],
+    "text": "Posthuman describes a state beyond the current human condition — descendants so changed by technology in body, mind, or lifespan that “human” no longer quite fits. It's a central term in Bostrom's wider work. His claim is measured but startling: given millions of years to develop, if we survive and prosper we will not stay as we are.",
+    "audio": true
+  },
+  {
+    "k": "midwife",
+    "t": "midwife",
+    "kind": "word",
+    "forms": [
+      "midwife"
+    ],
+    "text": "A midwife is a person trained to help deliver babies — but here Bostrom uses it as a **verb**, meaning to help something difficult be born. It completes the birth imagery running through his final paragraphs. The responsibility he describes belongs to whoever happens to be alive at the moment a vast future is being delivered — which, he says in the last line, is us.",
+    "audio": true
+  },
+  {
+    "k": "conception",
+    "t": "conception",
+    "kind": "word",
+    "forms": [
+      "conception"
+    ],
+    "text": "Conception has two everyday meanings — the beginning of a pregnancy, and an idea or way of understanding something (“my conception of justice”). Bostrom wants the first, continuing the birth metaphor: the future he describes is being conceived rather than merely imagined. Watch for the second sense elsewhere; the two are easy to mix up.",
+    "audio": true
+  }
+]
