@@ -57,8 +57,8 @@ const slug = (s) =>
 
 const INSTRUCTIONS =
   "Say the following word or phrase clearly and naturally in standard " +
-  "American English, at a calm, unhurried pace with the correct stress. " +
-  "Say it once; do not spell it out.";
+  "American English, at a normal conversational pace with the correct " +
+  "stress. Say it once; do not spell it out.";
 
 function daysToProcess() {
   // The junior content dir may not exist yet (before the first junior reading).

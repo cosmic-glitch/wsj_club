@@ -10,6 +10,8 @@
 //   node --env-file=.env.local scripts/gen-glossary-audio.mjs junior/2026-07-15
 //   node --env-file=.env.local scripts/gen-glossary-audio.mjs 2026-06-14-1   # multi-article page
 //   ... --force to regenerate existing clips
+//   ... --only=desolate,cosmos to regenerate just those keys (e.g. after adding
+//       a `say` pronunciation hint to an entry that came out mispronounced)
 //
 // <name> is the GLOSSARY name (same as check-glossary.mjs). Multi-article
 // pages (-1/-2 suffix) share the date's audio dir, mirroring how glossary.js
@@ -31,9 +33,13 @@ const VOICE = process.env.PRONOUNCE_VOICE || "alloy";
 
 const args = process.argv.slice(2);
 const force = args.includes("--force");
+// --only=k1,k2 regenerates just those entry keys (implies --force for them) —
+// for fixing a single mispronounced clip without rerolling the whole day.
+const onlyArg = args.find((a) => a.startsWith("--only="));
+const only = onlyArg ? onlyArg.slice("--only=".length).split(",") : null;
 const name = args.find((a) => !a.startsWith("--"));
 if (!name) {
-  console.error("usage: gen-glossary-audio.mjs <name> [--force]   e.g. 2026-07-26 or junior/2026-07-15");
+  console.error("usage: gen-glossary-audio.mjs <name> [--force] [--only=k1,k2]   e.g. 2026-07-26 or junior/2026-07-15");
   process.exit(1);
 }
 
@@ -49,10 +55,12 @@ fs.mkdirSync(outDir, { recursive: true });
 
 const INSTRUCTIONS =
   "Say the following word or phrase clearly and naturally in standard " +
-  "American English, at a calm, unhurried pace with the correct stress. " +
-  "Say it once; do not spell it out.";
+  "American English, at a normal conversational pace with the correct " +
+  "stress. Say it once; do not spell it out.";
 
-async function tts(text) {
+// hint: an entry's optional `say` field — a respelling/note steering the TTS
+// toward the right pronunciation (e.g. "DESS-uh-lut, with an s sound, not z").
+async function tts(text, hint) {
   const res = await fetch("https://api.openai.com/v1/audio/speech", {
     method: "POST",
     headers: { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json" },
@@ -61,7 +69,7 @@ async function tts(text) {
       voice: VOICE,
       input: text,
       response_format: "mp3",
-      instructions: INSTRUCTIONS,
+      instructions: hint ? `${INSTRUCTIONS} Pronounce it: ${hint}.` : INSTRUCTIONS,
     }),
   });
   if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
@@ -96,13 +104,14 @@ let failed = 0;
 
 await mapLimit(entries, 6, async (e) => {
   const file = path.join(outDir, `${e.k}.mp3`);
-  if (!force && fs.existsSync(file)) {
-    e.audio = true;
+  const wanted = only ? only.includes(e.k) : force || !fs.existsSync(file);
+  if (!wanted) {
+    if (fs.existsSync(file)) e.audio = true;
     skipped++;
     return;
   }
   try {
-    const buf = await tts(e.t);
+    const buf = await tts(e.t, e.say);
     fs.writeFileSync(file, buf);
     e.audio = true;
     made++;
