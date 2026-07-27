@@ -1,6 +1,6 @@
 # WSJ Reading Club
 
-**Live:** https://wsjclub.vercel.app
+**Live:** https://dailyreadingclub.com
 
 A daily reading handout for a small club of US grade 8–10 students. Each day we
 take one Wall Street Journal article and build a study page from it:

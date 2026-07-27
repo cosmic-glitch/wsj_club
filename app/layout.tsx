@@ -12,9 +12,24 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
+  // Resolves every relative URL in the metadata below (and in any page's own
+  // openGraph) to an absolute one. Without it Next falls back to localhost in
+  // dev and to VERCEL_URL — the per-deployment *.vercel.app hostname — in
+  // production, so shared links would carry a URL that changes every deploy.
+  metadataBase: new URL("https://dailyreadingclub.com"),
   title: "WSJ Reading Club",
   description:
     "A daily Wall Street Journal reading handout — vocabulary, concepts, and a self-quiz to build general knowledge.",
+  // Link previews — handouts get pasted into the club's group chat, so the
+  // title/description should render there rather than a bare URL.
+  openGraph: {
+    type: "website",
+    siteName: "Reading Club",
+    url: "/",
+    title: "WSJ Reading Club",
+    description:
+      "A daily Wall Street Journal reading handout — vocabulary, concepts, and a self-quiz to build general knowledge.",
+  },
   // The label shown under the icon when added to an iPhone home screen.
   // capable:false keeps the normal "opens in Safari" behavior (no full-screen
   // standalone mode); we only want the short name + the apple-touch-icon.

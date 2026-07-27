@@ -4,7 +4,7 @@
 
 A daily reading-handout website for a small club of kids. Each day = one article (WSJ / Economist / an enrichment source) turned into a study handout — **Words to know** and **Concepts behind the story** — plus a self-quiz page and an AI **voice quiz**. Goal: general knowledge, vocabulary, conceptual understanding. Two tracks share the site: **senior** (US grades 8–10, at `/`) and **junior** (grades 5–7, at `/junior`, occasional).
 
-Live: https://wsjclub.vercel.app · Repo: https://github.com/cosmic-glitch/wsj_club
+Live: https://dailyreadingclub.com · Repo: https://github.com/cosmic-glitch/wsj_club
 
 ## Working agreement
 
@@ -76,7 +76,7 @@ Audience calibration and the exact browser-capture snippet live in the skills �
 
 ## Deploy & env
 
-GitHub `cosmic-glitch/wsj_club` → Vercel project `wsj_club` (team *Anurag's projects*); **push to `main` = production deploy** at wsjclub.vercel.app. `npm run build` validates all content JSON.
+GitHub `cosmic-glitch/wsj_club` → Vercel project `wsj_club` (team *Anurag's projects*); **push to `main` = production deploy** at dailyreadingclub.com. `npm run build` validates all content JSON.
 
 Env (Vercel Production + Preview, mirrored in the gitignored `.env.local`): `OPENAI_API_KEY`, `AUTH_SECRET`, `OWNER_USERS` (= `anurag`), `BLOB_READ_WRITE_TOKEN` (from the linked `wsj-club-quizzes` store), `SUPABASE_URL` + `SUPABASE_SERVICE_KEY`; `SUPABASE_DB_URL` (direct Postgres string) is local/VM-only, for migrations. `AUTH_USERS`/`ADMIN_USERS` are only a transitional login fallback — users live in the repository (`lib/users.ts`). Sensitive values aren't `vercel env pull`-able; recreate `.env.local` by hand on a fresh checkout. Current roster: `anurag` (owner) → arjun, anusha, samaira, mehar; `madan` → puneeth.
 

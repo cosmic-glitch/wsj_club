@@ -148,6 +148,6 @@ const trackTag = junior ? " (junior)" : "";
 console.log(`Vote for ${date}${trackTag} is LIVE with ${candidates.length} candidates:`);
 for (const c of candidates)
   console.log(`  [${c.source}${c.kind === "enrichment" ? " · enrichment" : ""}] ${c.title}  (id: ${c.id})`);
-console.log(`\nThe poll shows at the top of https://wsjclub.vercel.app${junior ? "/junior" : ""} until the day's ${track} reading is published.`);
+console.log(`\nThe poll shows at the top of https://dailyreadingclub.com${junior ? "/junior" : ""} until the day's ${track} reading is published.`);
 console.log("Announce the voting window in the group chat (the site shows no deadline).");
 console.log(`Tally later with: node --env-file=.env.local scripts/check-vote.mjs ${date}${junior ? " --track=junior" : ""}`);

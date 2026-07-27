@@ -98,7 +98,7 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
 
 7. **Build to verify:** `npm run build`. It must succeed (a break is almost always malformed JSON).
 
-8. **Commit, push, and share the links.** Stage the junior content, article page, glossary, and audio — `git add content/junior/YYYY-MM-DD.json public/articles/junior/YYYY-MM-DD.html public/glossaries/junior/YYYY-MM-DD.json public/audio/junior/YYYY-MM-DD` (plus any other changed files) — commit, and `git push origin main`. **Pushing is shipping** (auto-deploys to `wsjclub.vercel.app`). Then give the user the junior links: `https://wsjclub.vercel.app/junior/reading/YYYY-MM-DD` (handout) and `https://wsjclub.vercel.app/junior/reading/YYYY-MM-DD/quiz` (quiz).
+8. **Commit, push, and share the links.** Stage the junior content, article page, glossary, and audio — `git add content/junior/YYYY-MM-DD.json public/articles/junior/YYYY-MM-DD.html public/glossaries/junior/YYYY-MM-DD.json public/audio/junior/YYYY-MM-DD` (plus any other changed files) — commit, and `git push origin main`. **Pushing is shipping** (auto-deploys to `dailyreadingclub.com`). Then give the user the junior links: `https://dailyreadingclub.com/junior/reading/YYYY-MM-DD` (handout) and `https://dailyreadingclub.com/junior/reading/YYYY-MM-DD/quiz` (quiz).
 
 ## Content file schema
 
@@ -155,7 +155,7 @@ Field notes:
 
 ## Deployment
 
-Same as the senior track: **`git push origin main` ships to Vercel production** at `wsjclub.vercel.app` (no manual `vercel --prod`). The local `npm run build` (step 7) is the pre-flight. After the deploy lands, share the `/junior/reading/…` links.
+Same as the senior track: **`git push origin main` ships to Vercel production** at `dailyreadingclub.com` (no manual `vercel --prod`). The local `npm run build` (step 7) is the pre-flight. After the deploy lands, share the `/junior/reading/…` links.
 
 ## If the user asks for changes
 

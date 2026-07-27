@@ -5,7 +5,7 @@ description: Open the day's article vote on the Reading Club home page. Use when
 
 # WSJ Reading Club — open the day's vote
 
-You are opening the **daily article vote**: instead of the owner picking today's article alone, the club (kids + parents, each with a site login) votes among the day's candidates on the home page. The poll shows as the **"TODAY'S READ — YOU DECIDE"** row at the top of the track's index — `https://wsjclub.vercel.app` (senior) or `https://wsjclub.vercel.app/junior` (junior) — a compact row whose VOTE button opens the ballot modal; it closes by itself when that track's reading for the date is published (no close step). See "The daily vote" in CLAUDE.md for the architecture.
+You are opening the **daily article vote**: instead of the owner picking today's article alone, the club (kids + parents, each with a site login) votes among the day's candidates on the home page. The poll shows as the **"TODAY'S READ — YOU DECIDE"** row at the top of the track's index — `https://dailyreadingclub.com` (senior) or `https://dailyreadingclub.com/junior` (junior) — a compact row whose VOTE button opens the ballot modal; it closes by itself when that track's reading for the date is published (no close step). See "The daily vote" in CLAUDE.md for the architecture.
 
 **The vote is per-track.** Default is **senior**; the user saying "open the junior vote" / "junior vote" selects the **junior** track, which changes three things: the candidate source (the junior picker), the ballot composition (5 news, no enrichment), and `--track=junior` on the script. The two tracks' polls are fully independent — one of each can be live at once.
 
@@ -44,7 +44,7 @@ The user can override the counts on either track (2–12 total is supported end-
 
    The date is **today** (the vote is always for today's read — never tomorrow). The script refuses if the track's `content/[junior/]<date>.json` already exists, and warns when overwriting a poll that already has ballots (candidate ids are title slugs — keep titles unchanged when revising, or already-cast votes for them are orphaned).
 
-5. **Verify it's live:** `curl -s https://wsjclub.vercel.app/api/vote` (senior) or `curl -s "https://wsjclub.vercel.app/api/vote?track=junior"` should return `"active": true` with the candidates. (Blob is read live — no build, no commit, no deploy for this step; there is nothing to push.)
+5. **Verify it's live:** `curl -s https://dailyreadingclub.com/api/vote` (senior) or `curl -s "https://dailyreadingclub.com/api/vote?track=junior"` should return `"active": true` with the candidates. (Blob is read live — no build, no commit, no deploy for this step; there is nothing to push.)
 
 6. **Remind the user** to announce the voting window in the group chat — the site deliberately shows **no deadline** (the owner's message is the deadline; publishing the reading is what actually closes the poll).
 
