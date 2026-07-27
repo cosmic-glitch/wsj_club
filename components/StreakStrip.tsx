@@ -104,7 +104,8 @@ export default function StreakStrip({
         <div className="mb-2 flex items-baseline justify-between gap-3 text-[9px] font-bold uppercase tracking-[.15em]">
           <span className="whitespace-nowrap">
             <span className="text-[#ffe600]">{current}-day streak</span>
-            {" · "}Best {best}
+            {/* "Best" is noise when the current streak IS the best. */}
+            {best > current && <>{" · "}Best {best}</>}
             {" · "}
             {total} {total === 1 ? "quiz" : "quizzes"}
           </span>
