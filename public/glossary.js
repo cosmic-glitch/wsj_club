@@ -11,8 +11,8 @@
    pages share the date's dir) — written by scripts/gen-glossary-audio.mjs.
    The sheet then shows a speaker button next to the term; no flag, no button.
    The first occurrence of each entry gets a dotted mark (vocab: yellow
-   highlight); EVERY occurrence is tappable via caret hit-testing, and a
-   tap on a word with no entry gets a small toast. Kept ES5-ish for older
+   highlight); EVERY occurrence is tappable via caret hit-testing; a tap
+   on a word with no entry does nothing. Kept ES5-ish for older
    iOS WebKit. */
 (function(){
 "use strict";
@@ -75,14 +75,13 @@ function markAll(){
   });
 }
 
-/* ---- bottom sheet + toast ---- */
-var backdrop,sheet,toastEl,toastTimer,lastFocus=null;
+/* ---- bottom sheet ---- */
+var backdrop,sheet,lastFocus=null;
 function buildUi(){
   backdrop=document.createElement("div");backdrop.id="gsBackdrop";backdrop.style.display="none";
   sheet=document.createElement("div");sheet.id="gsSheet";sheet.style.display="none";
   sheet.setAttribute("role","dialog");sheet.setAttribute("aria-modal","true");
-  toastEl=document.createElement("div");toastEl.id="gsToast";
-  document.body.appendChild(backdrop);document.body.appendChild(sheet);document.body.appendChild(toastEl);
+  document.body.appendChild(backdrop);document.body.appendChild(sheet);
   backdrop.addEventListener("click",closeSheet);
   document.addEventListener("keydown",function(ev){if(ev.key==="Escape")closeSheet();});
 }
@@ -141,12 +140,6 @@ function closeSheet(){
   setTimeout(function(){backdrop.style.display="none";sheet.style.display="none";},200);
   if(lastFocus&&lastFocus.focus)lastFocus.focus({preventScroll:true});
 }
-function toast(msg){
-  toastEl.textContent=msg;toastEl.classList.add("on");
-  clearTimeout(toastTimer);
-  toastTimer=setTimeout(function(){toastEl.classList.remove("on");},1800);
-}
-
 /* ---- tap anywhere: caret -> word -> entry ---- */
 function caretFromPoint(x,y){
   if(document.caretRangeFromPoint){var r=document.caretRangeFromPoint(x,y);
@@ -186,8 +179,7 @@ function handleTap(ev){
     }
   }
   var key=aliasMap[w.word.toLowerCase()];
-  if(key){openSheet(key);return;}
-  toast("No entry for “"+w.word+"”");
+  if(key)openSheet(key);
 }
 
 markAll();buildUi();

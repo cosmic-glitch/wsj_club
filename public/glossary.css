@@ -1,5 +1,5 @@
 /* Tap-a-word glossary layer for the served article pages.
-   Loaded by /glossary.js (which injects the sheet/toast DOM); the marks
+   Loaded by /glossary.js (which injects the sheet DOM); the marks
    (.gw spans) are wrapped around first occurrences at runtime. */
 .gw{cursor:pointer;text-decoration:underline dotted #9a9a9a;text-decoration-thickness:1px;text-underline-offset:3px}
 h1 .gw{text-decoration-color:#c0c0c0}
@@ -24,6 +24,4 @@ h1 .gw{text-decoration-color:#c0c0c0}
 .gs-x{position:absolute;top:12px;right:14px;width:40px;height:40px;border:2px solid #0a0a0a;background:#fff;color:#0a0a0a;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:16px;font-weight:700;line-height:1;cursor:pointer;padding:0}
 .gs-x:hover{background:#0a0a0a;color:#fff}
 .gs-x:focus-visible{outline:3px solid #ffe600;outline-offset:2px}
-#gsToast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(28px + env(safe-area-inset-bottom));background:#0a0a0a;color:#fff;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;padding:9px 14px;z-index:60;opacity:0;transition:opacity .15s;pointer-events:none;white-space:nowrap;max-width:88vw;overflow:hidden;text-overflow:ellipsis}
-#gsToast.on{opacity:1}
-@media (prefers-reduced-motion:reduce){#gsBackdrop,#gsSheet,#gsToast{transition:none}}
+@media (prefers-reduced-motion:reduce){#gsBackdrop,#gsSheet{transition:none}}
