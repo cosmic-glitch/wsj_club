@@ -129,11 +129,11 @@ export default function HomeAuthBar() {
               {/* STUDENTS ONLY — a parent/owner has no personal word bank
                   (the page shows them a students-only notice). */}
               <Link href={wordBankHref} className={bar}>
-                My Word Bank
+                Word Bank
               </Link>
               <Slash />
               <Link href="/admin" className={bar}>
-                My Scores
+                Scores
               </Link>
               <Slash />
             </>
