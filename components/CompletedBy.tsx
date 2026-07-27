@@ -67,8 +67,11 @@ export function CompletedBy({
   date: string;
   className?: string;
 }) {
-  const count = useContext(CompletionsContext)?.[date];
-  if (!count) return null;
+  const counts = useContext(CompletionsContext);
+  // null = not loaded yet (or fetch failed) — show nothing rather than a wrong
+  // number. Once loaded, a date absent from the map is a real zero.
+  if (counts === null) return null;
+  const count = counts[date] ?? 0;
 
   return (
     // Muted so it reads as metadata next to the date / buttons, with a
