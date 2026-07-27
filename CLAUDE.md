@@ -82,10 +82,10 @@ Env (Vercel Production + Preview, mirrored in the gitignored `.env.local`): `OPE
 
 ## Backups
 
-Daily crons on the Hetzner VM (`myhetzner`, repo at `~/wsj_club`), both 30-day retention, VM-only (no off-box copy yet):
+One nightly cron on the Hetzner VM (`myhetzner`, login `av`, repo at `~/wsj_club`) at 06:05 UTC runs both scripts sequentially (`;` — a DB failure doesn't skip the blob backup); both 30-day retention, VM-only (no off-box copy yet):
 
-- **Blob** — `scripts/backup-blob.sh` at 06:15 → hardlink-incremental snapshots under `backups/<date>/` with a manifest. Transient `turns/` clips are deleted after transcription, so their absence from snapshots is normal.
-- **DB** — `scripts/backup-db.sh` at 06:05 → `pg_dump` of ONLY the `rc_*` tables (the project is shared with whisper-anywhere) into `backups/db/<date>.sql.gz`. Also keeps the free-tier project from idling.
+- **DB** — `scripts/backup-db.sh` → `pg_dump` of ONLY the `rc_*` tables (the project is shared with whisper-anywhere) into `backups/db/<date>.sql.gz`. Also keeps the free-tier project from idling.
+- **Blob** — `scripts/backup-blob.sh` → hardlink-incremental snapshots under `backups/<date>/` with a manifest. Transient `turns/` clips are deleted after transcription, so their absence from snapshots is normal.
 
 ## Commands
 

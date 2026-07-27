@@ -8,8 +8,9 @@
 # Needs SUPABASE_DB_URL (the direct Postgres connection string — the pooler
 # host; see PLAN-supabase.md) in .env.local.
 #
-# Cron (06:05, just before the blob backup):
-#   5 6 * * * /root/wsj_club/scripts/backup-db.sh >> /root/wsj_club/backups/db/backup.log 2>&1
+# Cron: one nightly entry runs this then backup-blob.sh sequentially (";" so
+# a DB failure doesn't skip the blob backup):
+#   5 6 * * * $HOME/wsj_club/scripts/backup-db.sh >> $HOME/wsj_club/backups/db/backup.log 2>&1; $HOME/wsj_club/scripts/backup-blob.sh >> $HOME/wsj_club/backups/backup.log 2>&1
 
 set -euo pipefail
 
