@@ -4,6 +4,14 @@
 // like public/pdfs). The clip speaks the real word — not a respelling — so the
 // handout shows no phonetic text.
 //
+// ALSO generates the day's AI-quiz spoken opening, quiz-intro.mp3 — the tutor
+// voice greeting the student and NAMING THE ARTICLE ("Hey there! Explain the
+// key ideas in the article: <title>."), played when the voice quiz starts. The
+// title is spoken so a student who launched the quiz from the wrong day's row
+// hears it before recording. Its text must stay the first sentences of
+// openingLine() in components/VoiceQuiz.tsx; its voice/tone mirror
+// app/api/quiz-tts/route.ts so the opening sounds like the rest of the tutor.
+//
 // Usage:
 //   node --env-file=.env.local scripts/gen-pronunciation.mjs 2026-07-14   # one day
 //   node --env-file=.env.local scripts/gen-pronunciation.mjs all          # every day
@@ -60,6 +68,21 @@ const INSTRUCTIONS =
   "American English, at a normal conversational pace with the correct " +
   "stress. Say it once; do not spell it out.";
 
+// The quiz-intro clip mirrors the tutor's live TTS (app/api/quiz-tts/route.ts):
+// same env knobs, same defaults, same tone instructions — the pre-generated
+// opening must sound like the same tutor who asks the follow-ups.
+const INTRO_MODEL = process.env.TTS_MODEL || "gpt-4o-mini-tts";
+const INTRO_VOICE = process.env.TTS_VOICE || "onyx";
+const INTRO_INSTRUCTIONS =
+  "Speak as a warm, friendly, encouraging tutor talking to a teenager. " +
+  "Speak at a brisk, lively pace — clearly faster than an unhurried read " +
+  "(about 30% quicker), while still sounding natural. Clear and plain.";
+
+// Keep in sync with the first sentences of openingLine() in
+// components/VoiceQuiz.tsx.
+const introText = (title) =>
+  `Hey there! Explain the key ideas in the article: ${title.trim()}.`;
+
 function daysToProcess() {
   // The junior content dir may not exist yet (before the first junior reading).
   if (!fs.existsSync(CONTENT)) {
@@ -79,16 +102,16 @@ function daysToProcess() {
   return [target];
 }
 
-async function tts(text) {
+async function tts(text, { model = MODEL, voice = VOICE, instructions = INSTRUCTIONS } = {}) {
   const res = await fetch("https://api.openai.com/v1/audio/speech", {
     method: "POST",
     headers: { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json" },
     body: JSON.stringify({
-      model: MODEL,
-      voice: VOICE,
+      model,
+      voice,
       input: text,
       response_format: "mp3",
-      instructions: INSTRUCTIONS,
+      instructions,
     }),
   });
   if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
@@ -129,6 +152,28 @@ for (const date of daysToProcess()) {
   ].filter(Boolean);
   const outDir = path.join(AUDIO, date);
   fs.mkdirSync(outDir, { recursive: true });
+
+  // The day's AI-quiz opening clip (see header comment). Same skip/--force
+  // rules as the word clips. "quiz-intro" can't collide with a term clip
+  // unless a vocab word were literally "quiz intro".
+  const introFile = path.join(outDir, "quiz-intro.mp3");
+  if (force || !fs.existsSync(introFile)) {
+    try {
+      const buf = await tts(introText(reading.title), {
+        model: INTRO_MODEL,
+        voice: INTRO_VOICE,
+        instructions: INTRO_INSTRUCTIONS,
+      });
+      fs.writeFileSync(introFile, buf);
+      made++;
+      console.log(`ok   ${date}/quiz-intro.mp3  (${(buf.length / 1024).toFixed(0)} KB)`);
+    } catch (e) {
+      failed++;
+      console.error(`FAIL ${date}/quiz-intro.mp3  <- "${reading.title}"  ${e.message}`);
+    }
+  } else {
+    skipped++;
+  }
 
   await mapLimit(terms, 6, async (term) => {
     const file = path.join(outDir, `${slug(term)}.mp3`);

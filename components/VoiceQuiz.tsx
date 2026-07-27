@@ -146,18 +146,31 @@ function newId(): string {
 // it on the client and skip the tutor model call for the FIRST turn. That model
 // call — a full chat completion with the whole article as context — is the single
 // biggest startup delay; for a greeting we already know verbatim, it's pure
-// waiting, so we skip it. The opening is also NOT spoken: it's the same every
-// time and already on screen, so the student just reads it and presses Start
-// speaking (only the tutor's dynamic follow-ups are spoken). Kept SHORT (just
-// the task); the recording mechanics (Start speaking / Stop) are shown on screen
-// under the button, not spoken (see RecordingHelp).
-function openingLine(name: string | null): string {
-  const who = (name ?? "").trim() || "there";
+// waiting, so we skip it. The spoken opening skips the TTS API the same way: it's
+// a pre-generated per-day clip (public/audio/[junior/]<date>/quiz-intro.mp3, made
+// by scripts/gen-pronunciation.mjs — its intro text must stay the first sentences
+// of this line). The clip NAMES THE ARTICLE and skips the student's name (a
+// personalized clip couldn't be pre-generated) — hearing the title is the audible
+// guard against taking the quiz for the wrong day. The guidance after the first
+// sentences stays screen-only; the recording mechanics (Start speaking / Stop)
+// are shown under the button, not spoken (see RecordingHelp).
+function openingLine(title: string): string {
   return (
-    `Hi ${who}. Explain the key ideas in the article, as much as you remember. ` +
-    `Keep speaking and bring in as many layers as you can recall. Take as much ` +
-    `time as you need — pauses and ums are all okay.`
+    `Hey there! Explain the key ideas in the article: ${title.trim()}. ` +
+    `Say as much as you remember — keep speaking and bring in as many layers ` +
+    `as you can recall. Take as much time as you need — pauses and ums are ` +
+    `all okay.`
   );
+}
+
+/** "2026-07-08" → "Jul 8" — the modal's date chip, matching the index rows'. */
+function dateLabel(date: string): string {
+  const [y, m, d] = date.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
 }
 
 // The recording how-to, shown on screen under the Start speaking button (every
@@ -299,11 +312,17 @@ async function decodeBlobToPcm16k(blob: Blob, ctx: AudioContext): Promise<Float3
  */
 export default function VoiceQuiz({
   date,
+  title,
   track = "senior",
   launcherClassName,
   launcherLabel,
 }: {
   date: string;
+  /** The day's article title. Pinned atop every modal state and named in the
+      opening line — kids kept starting the quiz for the wrong day's article
+      and only realizing after recording, so the modal must make the article
+      unmissable. */
+  title: string;
   /** Which reading track this quiz belongs to. Threaded into every API call and
       into the upload clientPayload, and it prefixes the Blob session paths
       (junior → `quiz-sessions/junior/<date>/…`) so a junior attempt never
@@ -367,6 +386,13 @@ export default function VoiceQuiz({
   const micRef = useRef<MediaStream | null>(null);
   const audioElRef = useRef<HTMLAudioElement | null>(null);
   const ttsUrlRef = useRef<string | null>(null);
+
+  // The pre-generated spoken opening (see openingLine). Fetch starts on the
+  // launcher click so the clip is usually downloaded by the time the mic
+  // permission lands; the promise is cached for the mount (the file is a
+  // static, immutable-per-day CDN asset). Resolves null on any failure —
+  // playIntro then just skips the audio (the opening stays text-only).
+  const introFetchRef = useRef<Promise<Blob | null> | null>(null);
 
   // ONE Web Audio graph owns the mic for the whole quiz: mic → source → (a)
   // analyser for the level meter and (b) a MediaStreamDestination we record. The
@@ -757,6 +783,39 @@ export default function VoiceQuiz({
     }
   }
 
+  function preloadIntro() {
+    if (introFetchRef.current) return;
+    introFetchRef.current = fetch(`/audio/${blobDir}/quiz-intro.mp3`)
+      .then((res) => (res.ok ? res.blob() : null))
+      .catch(() => null);
+  }
+
+  // Speak the fixed opening from its pre-generated per-day clip — the audible
+  // "you're being quizzed on THIS article" guard (the clip names the title; see
+  // openingLine). No model call, no TTS API. Best-effort like speak(): a
+  // missing/unfetchable clip (e.g. a day authored before the clips existed)
+  // just means a silent, text-only opening — the pre-clip behavior.
+  async function playIntro(runId: number) {
+    preloadIntro();
+    const blob = await introFetchRef.current;
+    if (!blob || !canContinue(runId)) return;
+    // Into the parent's stitched recording (slot 0 = the opening turn), so the
+    // playback also states which article the attempt was for.
+    pushSegment({ order: 0, kind: "tutor", blob });
+    stopTts();
+    setTtsPlaying(true);
+    const url = URL.createObjectURL(blob);
+    ttsUrlRef.current = url;
+    const el = audioElRef.current;
+    if (!el) {
+      setTtsPlaying(false);
+      return;
+    }
+    el.src = url;
+    el.onended = () => setTtsPlaying(false);
+    await el.play().catch(() => setTtsPlaying(false));
+  }
+
   // ---- Tutor turns (the loop) --------------------------------------------
 
   // Ask the server for the tutor's next line, given the transcript so far, then
@@ -767,15 +826,16 @@ export default function VoiceQuiz({
     setPhase(first ? "starting" : "thinking");
     logEvent(first ? "tutor-turn:first" : "tutor-turn:begin");
 
-    // FIRST turn: skip the tutor model entirely AND don't speak it. The opening
-    // is a fixed script (see openingLine), shown on screen and identical every
-    // time, so the student just reads it and presses Start speaking — there's
-    // nothing dynamic to hear. Skipping its TTS also removes the last bit of
-    // startup latency (mic permission is now the only wait). Only the tutor's
-    // later, dynamic follow-ups are spoken (below).
+    // FIRST turn: skip the tutor model AND the TTS API entirely. The opening is
+    // a fixed script (see openingLine) shown on screen immediately, and its
+    // audio is a pre-generated static clip that names the article — played
+    // best-effort while the student reads. Startup stays instant (mic
+    // permission is the only wait); only the tutor's later, dynamic follow-ups
+    // go through the model + TTS routes (below).
     if (first) {
-      appendTurn({ role: "tutor", text: openingLine(user) });
+      appendTurn({ role: "tutor", text: openingLine(title) });
       setPhase("tutorTurn");
+      void playIntro(runId);
       return;
     }
 
@@ -1642,6 +1702,9 @@ export default function VoiceQuiz({
       setPhase("needLogin");
       return;
     }
+    // Start pulling the opening clip now, in parallel with the slot probe +
+    // mic permission — it's usually ready before the first turn needs it.
+    preloadIntro();
     void openWithProbe();
   }
 
@@ -2070,6 +2133,20 @@ export default function VoiceQuiz({
           >
             <audio ref={audioElRef} className="hidden" />
 
+            {/* Which article this quiz is for — pinned atop EVERY modal state
+                (chooser, starting, live, wrap-up…). Kids kept launching the
+                quiz from the wrong day's row and only noticing after they'd
+                recorded, so the title must be unmissable before and during
+                the quiz. */}
+            <div className="mb-4 shrink-0 border-b-2 border-[#0a0a0a] pb-3">
+              <p className="font-mono text-[10px] font-bold uppercase tracking-[.12em] text-stone-500">
+                AI Quiz · {dateLabel(date)}
+              </p>
+              <p className="mt-1 font-sans text-[15px] font-bold leading-snug text-[#0a0a0a]">
+                {title}
+              </p>
+            </div>
+
             {phase === "needLogin" && (
               <div>
                 <h2 className={MODAL_H2}>
@@ -2178,10 +2255,9 @@ export default function VoiceQuiz({
 
             {live && (
               <div className="flex min-h-0 flex-1 flex-col">
-                <div className="flex items-start justify-between gap-3">
-                  <h2 className={MODAL_H2}>AI Quiz</h2>
-                </div>
-                <p className="mt-1 text-[11px] text-stone-500">
+                {/* The modal's article strip above is the header; no repeated
+                    "AI Quiz" h2 here. */}
+                <p className="text-[11px] text-stone-500">
                   Your answers are recorded and saved for your parent.
                 </p>
 

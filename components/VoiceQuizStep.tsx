@@ -18,16 +18,19 @@ import VoiceQuiz from "./VoiceQuiz";
  */
 export default function VoiceQuizStep({
   date,
+  title,
   track = "senior",
   className,
 }: {
   date: string;
+  title: string;
   track?: Track;
   className?: string;
 }) {
   return (
     <VoiceQuiz
       date={date}
+      title={title}
       track={track}
       launcherClassName={className}
       launcherLabel="AI Quiz"

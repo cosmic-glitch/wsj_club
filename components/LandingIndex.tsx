@@ -160,7 +160,12 @@ export default function LandingIndex({
               resume probe/chooser) lives in VoiceQuiz; only the
               visible button is restyled to match the others. */}
           {r.voiceQuiz && (
-            <VoiceQuizStep date={r.date} track={track} className={btn} />
+            <VoiceQuizStep
+              date={r.date}
+              title={r.title}
+              track={track}
+              className={btn}
+            />
           )}
           {/* Desktop home of the completed-count: the slack right
               of the AI QUIZ button (kept off the title, which it

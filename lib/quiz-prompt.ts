@@ -241,10 +241,10 @@ Title: "${reading.title}"
 ${referenceSection}
 
 HOW THE QUIZ FLOWS
-The quiz has already opened: ${name} was greeted by name and asked to explain the
-article's key ideas from memory. That fixed opening line is shown to them on
-screen and appears as your first turn in the transcript — you do NOT produce it,
-and you never repeat the greeting. Your job is to carry the quiz forward from the
+The quiz has already opened: ${name} was greeted (a fixed line that names the
+article's title) and asked to explain the article's key ideas from memory. That
+fixed opening line is shown to them on screen and appears as your first turn in
+the transcript — you do NOT produce it, and you never repeat the greeting. Your job is to carry the quiz forward from the
 student's answers through the stages below, IN ORDER. Each turn, look at the
 transcript to see which stage you're in and what you've already asked, and make
 sure every stage is covered before you wrap up.
