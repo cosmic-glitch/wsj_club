@@ -9,7 +9,8 @@
    audio: true when a pronunciation clip exists at
    /audio/<date>/gloss/<k>.mp3 (junior keeps its junior/ segment; multi-article
    pages share the date's dir) — written by scripts/gen-glossary-audio.mjs.
-   The sheet then shows a speaker button next to the term; no flag, no button.
+   The clip auto-plays when the sheet opens, and the sheet shows a speaker
+   button next to the term for replays; no flag, no clip, no button.
    The first occurrence of each entry gets a dotted mark (vocab: yellow
    highlight); EVERY occurrence is tappable via caret hit-testing; a tap
    on a word with no entry does nothing. Kept ES5-ish for older
@@ -97,17 +98,6 @@ var SPEAKER_SVG='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
   '<path d="M11 5 6 9H3v6h3l5 4V5z"></path>'+
   '<path d="M15.5 8.5a4 4 0 0 1 0 7M18 6a7 7 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>';
 var hearAudio=null;
-/* Fetch the clip into a blob URL the moment the sheet opens, so pressing the
-   speaker plays instantly instead of downloading the mp3 first. */
-var preK=null,preUrl=null;
-function preloadClip(e){
-  if(!e.audio||preK===e.k)return;
-  if(preUrl){URL.revokeObjectURL(preUrl);preUrl=null;}
-  preK=e.k;
-  fetch(AUDIO_BASE+e.k+".mp3").then(function(r){return r.ok?r.blob():null;}).then(function(b){
-    if(b&&preK===e.k)preUrl=URL.createObjectURL(b);
-  }).catch(function(){});
-}
 function stopHear(){
   if(hearAudio){try{hearAudio.pause();}catch(err){}hearAudio=null;}
   var b=sheet&&sheet.querySelector(".gs-hear.on");
@@ -115,7 +105,7 @@ function stopHear(){
 }
 function openSheet(k){
   var e=byKey[k];if(!e)return;
-  stopHear();preloadClip(e);
+  stopHear();
   var h=chipFor(e);
   // The pron + speaker button ride in a no-wrap span with the term's LAST word,
   // so a wrapping phrase never strands the button alone on the next line.
@@ -129,14 +119,22 @@ function openSheet(k){
   sheet.innerHTML='<div class="gs-inner"><button class="gs-x" aria-label="Close">✕</button>'+h+"</div>";
   sheet.querySelector(".gs-x").addEventListener("click",closeSheet);
   var hb=sheet.querySelector(".gs-hear");
-  if(hb)hb.addEventListener("click",function(){
-    stopHear();
-    var a=new Audio(preK===e.k&&preUrl?preUrl:AUDIO_BASE+e.k+".mp3");
-    hearAudio=a;
-    hb.classList.add("on");
-    a.onended=a.onerror=function(){hb.classList.remove("on");if(hearAudio===a)hearAudio=null;};
-    a.play().catch(function(){hb.classList.remove("on");if(hearAudio===a)hearAudio=null;});
-  });
+  if(e.audio&&hb){
+    // One Audio element per open: auto-played right away (still inside the
+    // opening tap's user gesture, which iOS requires), and the speaker button
+    // replays the same already-downloaded clip.
+    var clip=new Audio(AUDIO_BASE+e.k+".mp3");
+    clip.onended=clip.onerror=function(){hb.classList.remove("on");if(hearAudio===clip)hearAudio=null;};
+    var playClip=function(){
+      stopHear();
+      hearAudio=clip;
+      hb.classList.add("on");
+      try{clip.currentTime=0;}catch(err){}
+      clip.play().catch(function(){hb.classList.remove("on");if(hearAudio===clip)hearAudio=null;});
+    };
+    hb.addEventListener("click",playClip);
+    playClip();
+  }
   lastFocus=document.activeElement;
   backdrop.style.display="block";sheet.style.display="block";
   document.body.style.overflow="hidden";
