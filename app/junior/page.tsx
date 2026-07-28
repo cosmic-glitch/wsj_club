@@ -2,7 +2,7 @@ import LandingIndex from "@/components/LandingIndex";
 import { getAllReadings } from "@/lib/content";
 
 export const metadata = {
-  title: "Junior · WSJ Reading Club",
+  title: "Junior · Daily Reading Club",
   description:
     "The Junior Reading Club (US grades 5–7) — a daily-ish news handout with vocabulary, concepts, and a self-quiz.",
 };

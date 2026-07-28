@@ -10,7 +10,7 @@ import StudentRoster, {
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Students · WSJ Reading Club",
+  title: "Students · Daily Reading Club",
 };
 
 export default async function StudentsPage() {

@@ -17,18 +17,18 @@ export const metadata: Metadata = {
   // dev and to VERCEL_URL — the per-deployment *.vercel.app hostname — in
   // production, so shared links would carry a URL that changes every deploy.
   metadataBase: new URL("https://dailyreadingclub.com"),
-  title: "WSJ Reading Club",
+  title: "Daily Reading Club",
   description:
-    "A daily Wall Street Journal reading handout — vocabulary, concepts, and a self-quiz to build general knowledge.",
+    "One hand-picked article a day — vocabulary, concepts, and an AI quiz that checks you actually read it.",
   // Link previews — handouts get pasted into the club's group chat, so the
   // title/description should render there rather than a bare URL.
   openGraph: {
     type: "website",
-    siteName: "Reading Club",
+    siteName: "Daily Reading Club",
     url: "/",
-    title: "WSJ Reading Club",
+    title: "Daily Reading Club",
     description:
-      "A daily Wall Street Journal reading handout — vocabulary, concepts, and a self-quiz to build general knowledge.",
+      "One hand-picked article a day — vocabulary, concepts, and an AI quiz that checks you actually read it.",
   },
   // The label shown under the icon when added to an iPhone home screen.
   // capable:false keeps the normal "opens in Safari" behavior (no full-screen
@@ -57,10 +57,6 @@ export default function RootLayout({
           <main className="mx-auto w-full max-w-3xl flex-1 px-5 py-10">
             {children}
           </main>
-          <footer className="border-t-[3px] border-[#0a0a0a] py-6 text-center font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-500">
-            WSJ Reading Club · Original study material · Articles link to The
-            Wall Street Journal
-          </footer>
         </AuthProvider>
         <Analytics />
       </body>

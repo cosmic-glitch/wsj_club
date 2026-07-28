@@ -1,4 +1,4 @@
-# WSJ Reading Club
+# Daily Reading Club
 
 **Live:** https://dailyreadingclub.com
 

@@ -10,7 +10,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Reading Club",
     short_name: "Reading Club",
     description:
-      "A daily Wall Street Journal reading handout — vocabulary, concepts, and a self-quiz to build general knowledge.",
+      "One hand-picked article a day — vocabulary, concepts, and an AI quiz that checks you actually read it.",
     start_url: "/",
     display: "browser",
     background_color: "#ffffff",

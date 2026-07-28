@@ -12,7 +12,7 @@ import ClassroomTabs from "@/components/ClassroomTabs";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Scores · WSJ Reading Club",
+  title: "Scores · Daily Reading Club",
 };
 
 /**
