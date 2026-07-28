@@ -131,8 +131,7 @@ export default function SuggestArticle({ className }: { className: string }) {
               <form onSubmit={submit} className="p-6">
                 <h2 className={MODAL_H2}>Suggest an article</h2>
                 <p className="mt-2 font-sans text-[13px] leading-snug text-stone-600">
-                  Found something the club should read? Paste the link. That&rsquo;s
-                  the whole form.
+                  Found something the club should read? Paste the link.
                 </p>
 
                 <fieldset className="mt-5">
