@@ -41,6 +41,7 @@ function validate(name) {
     if (!e.t || !e.text || !Array.isArray(e.forms) || !e.forms.length) { errors.push(`${id}: missing t/text/forms`); continue; }
     if (!e.forms.some(f => formRe(f).test(text))) errors.push(`${id}: no form found in article text (forms: ${e.forms.join(", ")})`);
     if (/In this article:|In general:/.test(e.text)) errors.push(`${id}: text has section labels — must be one woven explanation`);
+    if (/\*\*|\*[A-Za-z][^*\n]{0,60}\*/.test(e.text)) errors.push(`${id}: text has markdown asterisks — glossary.js renders plain text`);
   }
   return { count: entries.length, errors, warnings };
 }
