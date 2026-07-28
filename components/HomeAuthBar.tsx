@@ -119,13 +119,16 @@ export default function HomeAuthBar() {
             never end or start with a stray "/". */}
         <span className="flex items-center gap-1 whitespace-nowrap">
           {/* Parents and students propose reads; the owner (who picks) reads
-              the queue instead. */}
+              the queue instead — a link that exists only while the queue is
+              non-empty, so it brings its own trailing slash. */}
           {isOwner ? (
             <SuggestionsQueue className={bar} />
           ) : (
-            <SuggestArticle className={bar} />
+            <>
+              <SuggestArticle className={bar} />
+              <Slash />
+            </>
           )}
-          <Slash />
           {isAdmin ? (
             <>
               <Link href="/admin" className={bar}>

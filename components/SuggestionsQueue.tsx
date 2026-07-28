@@ -11,6 +11,11 @@ import { createPortal } from "react-dom";
  * suggester's name. Read-only on purpose: resolving (used/declined) stays in
  * scripts/suggestions.mjs, which the daily pickers run — closing one here
  * would let a suggestion vanish without ever being read into a day's field.
+ *
+ * The link only exists when there's something to read: the queue is
+ * prefetched once on mount and an empty (or unfetchable) queue renders
+ * NOTHING — including the trailing "/" separator, which therefore lives here
+ * rather than in HomeAuthBar and must match its Slash markup.
  */
 
 const MODAL_H2 = "font-display text-xl font-normal uppercase text-[#0a0a0a]";
@@ -58,20 +63,34 @@ export default function SuggestionsQueue({ className }: { className: string }) {
     };
   }, [open]);
 
+  // Prefetch on mount — the button's very existence depends on the count.
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/api/suggestions")
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((d) => {
+        if (!cancelled) setRows(d.suggestions ?? []);
+      })
+      .catch(() => {
+        // Leave rows null — the button stays hidden (fail quiet).
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   async function openModal() {
-    setRows(null);
     setError(null);
     setOpen(true);
+    // Refresh behind the already-usable prefetched list; on failure keep
+    // showing what we have (it was fresh moments ago).
     try {
       const res = await fetch("/api/suggestions");
       const d = await res.json();
-      if (!res.ok) {
-        setError(d.error ?? "Could not load the suggestions.");
-      } else {
-        setRows(d.suggestions ?? []);
-      }
+      if (res.ok) setRows(d.suggestions ?? []);
+      else if (rows === null) setError(d.error ?? "Could not load the suggestions.");
     } catch {
-      setError("Could not load the suggestions.");
+      if (rows === null) setError("Could not load the suggestions.");
     }
   }
 
@@ -140,11 +159,19 @@ export default function SuggestionsQueue({ className }: { className: string }) {
         document.body
       );
 
+  // Hidden until the prefetch confirms a non-empty queue — but never while the
+  // modal is up (a refetch that empties the queue mid-view shouldn't yank the
+  // whole thing off the screen).
+  if (!open && (rows === null || rows.length === 0)) return null;
+
   return (
     <>
       <button type="button" onClick={openModal} className={className}>
         Suggestions
       </button>
+      <span aria-hidden className="font-mono text-[11px] font-bold text-[#0a0a0a]">
+        /
+      </span>
       {modal}
     </>
   );
