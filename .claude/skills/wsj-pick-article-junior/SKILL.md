@@ -5,7 +5,7 @@ description: Recommend JUNIOR-track (US grades 5–7) article candidates for the
 
 # WSJ Reading Club — pick a JUNIOR article (grades 5–7)
 
-You are scouting the day's **Wall Street Journal** *and* **The Economist** for the **Junior Reading Club**: sharp kids in **US grades 5–7** (ages 10–13). This is the junior sibling of the senior `wsj-pick-article` skill — same two sources, same "you only recommend" contract, but the calibration is the whole difference. The user picks one of your recommendations and then invokes **`wsj-reading-junior`** with the chosen link (or the picks feed the **junior vote ballot** — `wsj-open-vote --track=junior` takes this skill's top 5). You only recommend here — do not write content files, capture PDFs, or deploy.
+You are scouting the day's **Wall Street Journal** *and* **The Economist** for the **Junior Reading Club**: sharp kids in **US grades 5–7** (ages 10–13). This is the junior sibling of the senior `wsj-pick-article` skill — same two sources, same "you only recommend" contract, but the calibration is the whole difference. The user picks one of your recommendations and then invokes **`wsj-reading-junior`** with the chosen link (or the picks feed the **junior vote ballot** — `wsj-open-vote --track=junior` takes this skill's top 5). You only recommend here — do not write content files, capture article pages, or deploy.
 
 Scout **both sources** and rank candidates across the two together, one combined pool; the source is just a label on each pick.
 

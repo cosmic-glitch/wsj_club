@@ -34,7 +34,7 @@ Live: https://dailyreadingclub.com · Repo: https://github.com/cosmic-glitch/wsj
 
 ## Content rules (invariants for ANY session that touches content)
 
-The card recipes, calibration, and counts live in the authoring skills — `.claude/skills/wsj-reading/SKILL.md` (junior: `wsj-reading-junior/`), the single source of truth; read the relevant skill before writing or reshaping a day's content, even by hand. Content types are in `lib/content.ts` (`pdfUrl` is legacy and unused). What must hold everywhere, skill or not:
+The card recipes, calibration, and counts live in the authoring skills — `.claude/skills/wsj-reading/SKILL.md` (junior: `wsj-reading-junior/`), the single source of truth; read the relevant skill before writing or reshaping a day's content, even by hand. Content types are in `lib/content.ts`. What must hold everywhere, skill or not:
 
 - **Hard rule: never republish article text.** Link and quote short phrases only. Full text goes to Blob (private, for the tutor) — never into the repo.
 - **No author byline in `title`** — an index-row rule only; attribution in prose, glossaries, and the article page's SOURCE bar is fine and wanted.

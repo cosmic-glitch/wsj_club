@@ -5,7 +5,7 @@ import path from "path";
  * A reading track. `senior` (US grades 8–10) is the original club and keeps
  * every date-keyed path exactly as it was; `junior` (US grades 5–7) is a second,
  * occasional track that lives under a `junior/` path segment everywhere (content
- * files, PDFs, audio, article text, Blob session keys, and the /junior routes).
+ * files, article pages, audio, article text, Blob session keys, and the /junior routes).
  * A day is identified by (track, date) — a junior article usually lands on a date
  * that already has a senior one, so `date` alone is no longer a unique key.
  */
@@ -66,9 +66,8 @@ export type QuizQuestion = {
 export type Reading = {
   date: string; // "YYYY-MM-DD"
   title: string; // a clear, descriptive title (need not match WSJ's headline)
-  articleUrl?: string; // the WSJ article link (the "Web" link on legacy days; kept as source-of-record metadata on article-page days)
-  pdfUrl?: string; // served PDF, e.g. "/pdfs/2026-06-09.pdf" (legacy days; unused when articlePageUrl is set)
-  articlePageUrl?: string; // served self-contained responsive HTML article page, e.g. "/articles/2026-07-22.html" — when set, the index row shows ONE "Article" button in place of the Web + PDF pair. Only for paywalled sources: an OPEN web article omits it (and pdfUrl), and the row's "Article" button then links straight to articleUrl. Legacy days with a pdfUrl keep Web/PDF
+  articleUrl?: string; // link to the original article at its publisher — the source of record, and what the index's "Article" button points at when there's no page of our own
+  articlePageUrl?: string; // served self-contained responsive HTML article page, e.g. "/articles/2026-07-22.html". Set on every new day (it's what carries the tap-a-word glossary); when absent the "Article" button falls back to articleUrl
   voiceQuiz?: boolean; // when true, the home-page row's action bar shows a "Voice quiz" launcher for this day (login-gated; the skill sets it)
   clubPick?: boolean; // when true, the day's article was chosen by the club's vote (see the daily vote in CLAUDE.md) — the index row shows a small CLUB PICK chip
   source?: string; // e.g. "The Wall Street Journal"

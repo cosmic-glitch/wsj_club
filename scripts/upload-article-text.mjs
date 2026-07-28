@@ -3,14 +3,14 @@
  * Upload a day's FULL article plain text to Vercel Blob, where the voice quiz
  * reads it (see lib/article-text.ts). We keep the full text OUT of this public
  * repo — CLAUDE.md's hard rule is never to republish article text — so Blob is
- * its home. (The store is public, like the rest of the app's Blob data; that's
- * no new exposure since the article PDF is already public.) Days without an
- * uploaded text fall back to a handout-only quiz.
+ * its home. (The store is public, like the rest of the app's Blob data; the
+ * served article page is public too.) Days without an uploaded text fall back
+ * to a handout-only quiz.
  *
- * The text usually comes straight from the day's served PDF, which is already
- * text (the wsj-reading skill captures it text-focused):
+ * The text file is normally already on disk: the wsj-reading skill's capture
+ * step writes article-text/<date>.txt in the same pass that builds the day's
+ * article page, so this is just the upload:
  *
- *   pdftotext public/pdfs/2026-06-18.pdf article-text/2026-06-18.txt
  *   node --env-file=.env.local scripts/upload-article-text.mjs 2026-06-18
  *
  * Needs BLOB_READ_WRITE_TOKEN (it's in .env.local — `--env-file=.env.local`
@@ -20,7 +20,7 @@
  * Usage:
  *   node --env-file=.env.local scripts/upload-article-text.mjs <YYYY-MM-DD> [file]
  *   node --env-file=.env.local scripts/upload-article-text.mjs <YYYY-MM-DD> --track=junior
- *   pdftotext file.pdf - | node --env-file=.env.local scripts/upload-article-text.mjs <YYYY-MM-DD>
+ *   cat some.txt | node --env-file=.env.local scripts/upload-article-text.mjs <YYYY-MM-DD>
  *
  * --track=junior uploads to the junior Blob key `article-text/junior/<date>.txt`
  * and defaults the local source to `article-text/junior/<date>.txt`.
@@ -53,7 +53,7 @@ function readText() {
     return fs.readFileSync(0, "utf8"); // stdin
   }
   if (!fs.existsSync(path)) {
-    console.error(`No text file at ${path}. Create it (e.g. pdftotext public/pdfs/${date}.pdf ${path}) or pipe text on stdin.`);
+    console.error(`No text file at ${path}. The wsj-reading capture step normally writes it; otherwise create it by hand (headline + deck first, then the body) or pipe text on stdin.`);
     process.exit(1);
   }
   return fs.readFileSync(path, "utf8");

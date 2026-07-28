@@ -5,7 +5,7 @@ description: Recommend today's article candidates for the Reading Club, scouting
 
 # WSJ Reading Club — pick today's article
 
-You are scouting the day's **Wall Street Journal** *and* **The Economist** for the **WSJ Reading Club**: four kids in US grades 8–10, strong students (SAT verbal 600 to 680). The user runs this skill first each day, picks one of your recommendations after checking it, and then invokes the **wsj-reading** skill with the chosen link to build and deploy the handout. You only recommend here — do not write content files, capture PDFs, or deploy.
+You are scouting the day's **Wall Street Journal** *and* **The Economist** for the **WSJ Reading Club**: four kids in US grades 8–10, strong students (SAT verbal 600 to 680). The user runs this skill first each day, picks one of your recommendations after checking it, and then invokes the **wsj-reading** skill with the chosen link to build and deploy the handout. You only recommend here — do not write content files, capture article pages, or deploy.
 
 Scout **both sources every day** and rank candidates across the two together — The Economist's weekly features and science/culture coverage often beat the day's WSJ stories on learning payload, and vice versa. Treat them as one combined candidate pool; the source is just a label on each pick.
 

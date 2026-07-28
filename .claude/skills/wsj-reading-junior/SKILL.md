@@ -52,7 +52,7 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
 | Handout URL | `/junior/reading/YYYY-MM-DD` |
 | Self-quiz URL | `/junior/reading/YYYY-MM-DD/quiz` |
 
-`articlePageUrl` in the JSON is `"/articles/junior/YYYY-MM-DD.html"` (the served path). The `voiceQuiz`, `articleUrl`, and content-shape fields are exactly as in the senior schema. (`public/pdfs/junior/` + `pdfUrl` are the legacy pre-article-page shape — don't set them on new days.)
+`articlePageUrl` in the JSON is `"/articles/junior/YYYY-MM-DD.html"` (the served path). The `voiceQuiz`, `articleUrl`, and content-shape fields are exactly as in the senior schema. (don't set them on new days.)
 
 ## Daily workflow
 
@@ -60,7 +60,7 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
 
 2. **Read the article in the browser.** Identical to the senior skill — use the **Playwright** browser tools (`mcp__plugin_playwright_playwright__browser_*`), **never the `claude-in-chrome` extension** (its safety classifier blocks `wsj.com`/`economist.com`). Navigate, have the **user log in themselves** (never ask for or store a password), then read the full article: the real headline, the deck/standfirst, and the substance (main argument, key facts, jargon a middle-schooler would trip on). See `wsj-reading`'s SKILL.md step 2 for the full detail.
 
-3. **Capture the day's ARTICLE PAGE (paywalled/sign-in articles) → the JUNIOR paths, and upload the article text.** **Open/free articles need no page of our own** — omit `articlePageUrl` (and `pdfUrl`); the /junior index's ARTICLE button then links straight to the original (`articleUrl`). You still need the article text for the voice quiz (run the snippet anyway and `rm` the unused page file, or save the text by hand with headline + deck at the top).
+3. **Capture the day's ARTICLE PAGE (paywalled/sign-in articles) → the JUNIOR paths, and upload the article text.** **Open/free articles need no page of our own** — omit `articlePageUrl`; the /junior index's ARTICLE button then links straight to the original (`articleUrl`). You still need the article text for the voice quiz (run the snippet anyway and `rm` the unused page file, or save the text by hand with headline + deck at the top).
    - `mkdir -p public/articles/junior article-text/junior`.
    - Use the **exact article-page capture `browser_run_code_unsafe` snippet from the senior `wsj-reading` skill's step 3** (the rebuild-a-clean-responsive-page-from-the-article's-own-paragraphs-and-real-content-images approach — it reflows on phones, preserves charts, small-caps acronyms, italics, and the drop cap, and writes the plain article text in the same pass). **The only changes for junior are the output paths and the back-link:**
      ```js
@@ -71,8 +71,8 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
      ```
      (`ORIG_URL` is auto-derived from the open page — it becomes the top bar's right-aligned "Source: <publication>" link, beside the "← Reading Club" link.)
      Do not re-derive the snippet here — copy it from the senior skill so the two stay in lockstep. Verify it the same way (the returned `deck=/text=/small-caps=/images=/infographics=` counts; check the text file's tail for footer junk; serve `public/` locally and eyeball the page at a 390px viewport; expect ~50KB–1MB).
-   - Set `articlePageUrl: "/articles/junior/YYYY-MM-DD.html"` in the JSON (no `pdfUrl` — legacy field).
-   - **Manual fallback** (only if auto-capture can't work): omit `articlePageUrl` — the index falls back to the legacy Web link (and a hand-saved PDF at `public/pdfs/junior/YYYY-MM-DD.pdf` + `pdfUrl` if wanted).
+   - Set `articlePageUrl: "/articles/junior/YYYY-MM-DD.html"` in the JSON.
+   - **Manual fallback** (only if auto-capture can't work): omit `articlePageUrl` — the ARTICLE button then links straight to `articleUrl`. The day loses its glossary, so treat this as a last resort.
    - **Upload the full article text for the voice quiz** (keeps the tutor able to judge the retelling against the real story). The capture snippet already wrote `article-text/junior/YYYY-MM-DD.txt` (headline + deck first, then the body), so just upload:
      ```sh
      node --env-file=.env.local scripts/upload-article-text.mjs YYYY-MM-DD --track=junior
@@ -146,7 +146,7 @@ Same `Reading` schema as the senior track (backed by `lib/content.ts`) — the o
 
 Field notes:
 - `voiceQuiz`: set `true` on every new junior day (turns on the AI oral quiz; pair with the article-text upload in step 3).
-- `articlePageUrl` is the served path `"/articles/junior/YYYY-MM-DD.html"` — set it on **every** new day, open-link or paywalled (2026-07-25: open articles get a captured page too, so their pages can carry the tap-a-word glossary; see the senior skill's step 3). Keep `articleUrl` too (the original link). `pdfUrl` is legacy — don't set it on new days.
+- `articlePageUrl` is the served path `"/articles/junior/YYYY-MM-DD.html"` — set it on **every** new day, open-link or paywalled (2026-07-25: open articles get a captured page too, so their pages can carry the tap-a-word glossary; see the senior skill's step 3). Keep `articleUrl` too (the original link).
 - `answerIndex` is **0-based**; double-check it.
 - `vocab` has **exactly 3 words** by default; each `examples` array has **exactly 2** sentences. `concepts` is **exactly 2** by default (the user can override), or fewer/`[]` for a concept-thin or vocabulary-only day.
 - `concepts` may be empty (`[]`); the handout omits the Concepts section and the voice quiz skips its concepts stage.

@@ -114,28 +114,12 @@ export default function LandingIndex({
         </span>
 
         <span className="flex flex-wrap gap-[6px] min-[681px]:flex-nowrap">
-          {/* A day is one article. Ours is the served responsive page when we
-              have one (it reflows on phones, which the PDF never did); a legacy
-              day without one keeps the original WEB + PDF pair; an open web
-              article with neither links straight to the original. */}
-          {r.articlePageUrl ? (
-            <a href={r.articlePageUrl} className={btn}>
-              Article
-            </a>
-          ) : r.pdfUrl ? (
-            <span className="contents">
-              <a href={r.articleUrl ?? "#"} className={btn}>
-                Web
-              </a>
-              <a href={r.pdfUrl} className={btn}>
-                PDF
-              </a>
-            </span>
-          ) : (
-            <a href={r.articleUrl ?? "#"} className={btn}>
-              Article
-            </a>
-          )}
+          {/* A day is one article: our own served page when we have one (every
+              new day does — it's what carries the glossary), otherwise straight
+              to the publisher. */}
+          <a href={r.articlePageUrl ?? r.articleUrl ?? "#"} className={btn}>
+            Article
+          </a>
           <span aria-hidden="true" className={stepArrow}>
             →
           </span>

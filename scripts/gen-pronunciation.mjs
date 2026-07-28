@@ -1,7 +1,7 @@
 // Generate US-English pronunciation audio (OpenAI TTS, `alloy`) for a day's
 // vocabulary words and concept names, saved as static clips the handout plays
-// via the ▶ button:  public/audio/<date>/<slug>.mp3  (committed + CDN-served,
-// like public/pdfs). The clip speaks the real word — not a respelling — so the
+// via the ▶ button:  public/audio/<date>/<slug>.mp3  (committed + CDN-served).
+// The clip speaks the real word — not a respelling — so the
 // handout shows no phonetic text.
 //
 // ALSO generates the day's AI-quiz spoken opening, quiz-intro.mp3 — the tutor

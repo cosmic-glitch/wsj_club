@@ -8,9 +8,9 @@ import type { Track } from "@/lib/content";
  * repo (CLAUDE.md: never republish the article text); instead each day's plain
  * text lives in **Vercel Blob** at `article-text/<date>.txt`, uploaded with
  * `scripts/upload-article-text.mjs`. (The store is public, like the rest of the
- * app's Blob data — but that's no new exposure: the full article PDF is already
- * public at a guessable /pdfs/ URL. Keeping the bulk text out of git is the
- * point.) This reads it back server-side.
+ * app's Blob data — the served article page at /articles/<date>.html is public
+ * too. Keeping the bulk text out of git is the point.) This reads it back
+ * server-side.
  *
  * Returns null when there's no text for that day (older articles, or before an
  * upload) — callers fall back to a handout-only quiz, which is the prior
@@ -18,7 +18,7 @@ import type { Track } from "@/lib/content";
  */
 
 // Junior text lives under an extra `junior/` segment, mirroring the content /
-// PDF / audio / session key convention (see lib/session-io.ts sessionPrefix).
+// article-page / audio / session key convention (see lib/session-io.ts sessionPrefix).
 const articleTextPath = (date: string, track: Track) =>
   track === "junior" ? `article-text/junior/${date}.txt` : `article-text/${date}.txt`;
 
