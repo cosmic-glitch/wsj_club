@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import SuggestArticle from "./SuggestArticle";
+import SuggestionsQueue from "./SuggestionsQueue";
 import { clearAuthCache, useAuth, writeAuthCache } from "./AuthProvider";
 
 // The site's login/reports controls: small uppercase mono TEXT links —
@@ -14,10 +15,12 @@ import { clearAuthCache, useAuth, writeAuthCache } from "./AuthProvider";
 // word-bank/reports/students links + log out when logged in. The bar renders
 // IDENTICALLY everywhere — greeting + links — so navigating between pages
 // never makes it jitter (the greeting used to be header-suppressed, which
-// made "Hi <user>" vanish and the links shift on every inner page). "Suggest"
-// (any member may propose an article) sits first in the logged-in group. The links
-// render as ONE unbreakable unit (so a wrap can never strand a "/"
-// separator); only the greeting may wrap away onto its own line.
+// made "Hi <user>" vanish and the links shift on every inner page). First in
+// the logged-in group: "Suggest" (any member may propose an article) — except
+// for the OWNER, who picks rather than proposes and instead gets
+// "Suggestions", the open queue with suggester names. The links render as ONE
+// unbreakable unit (so a wrap can never strand a "/" separator); only the
+// greeting may wrap away onto its own line.
 const bar =
   "inline-block cursor-pointer px-1.5 py-1 font-mono text-[11px] font-bold uppercase leading-normal tracking-[.12em] text-[#0a0a0a] no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]";
 
@@ -31,7 +34,7 @@ function Slash() {
 }
 
 export default function HomeAuthBar() {
-  const { user, isAdmin, ready } = useAuth();
+  const { user, isAdmin, isOwner, ready } = useAuth();
   // The Word Bank is per-track (the SiteHeader monogram recipe): from a junior
   // page it links to the junior bank, everywhere else the senior one.
   const pathname = usePathname();
@@ -115,8 +118,13 @@ export default function HomeAuthBar() {
             together (below the greeting / the header wordmark), so a line can
             never end or start with a stray "/". */}
         <span className="flex items-center gap-1 whitespace-nowrap">
-          {/* Everyone — parent, student, owner — may propose a read. */}
-          <SuggestArticle className={bar} />
+          {/* Parents and students propose reads; the owner (who picks) reads
+              the queue instead. */}
+          {isOwner ? (
+            <SuggestionsQueue className={bar} />
+          ) : (
+            <SuggestArticle className={bar} />
+          )}
           <Slash />
           {isAdmin ? (
             <>

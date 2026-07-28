@@ -1,4 +1,4 @@
-import { currentUser } from "@/lib/auth";
+import { currentUser, isOwner } from "@/lib/auth";
 import { dbSelect, dbUpsert } from "@/lib/db";
 import type { Track } from "@/lib/content";
 
@@ -10,9 +10,12 @@ import type { Track } from "@/lib/content";
  * wsj-pick-article / wsj-pick-article-junior skills run so every open
  * suggestion is evaluated alongside the candidates they scout themselves.
  *
- * Write-only by design: there is no GET. A suggestion is a note to the owner,
- * not a public list — surfacing who suggested what (or how many are queued)
- * on the site would turn it into a second, competing vote.
+ * Write-only for members: a suggestion is a note to the owner, not a public
+ * list — surfacing who suggested what (or how many are queued) on the site
+ * would turn it into a second, competing vote. The one reader is the OWNER's
+ * GET below (the topline "Suggestions" panel, components/SuggestionsQueue.tsx),
+ * which shows the open queue with suggester names. Resolution stays in
+ * scripts/suggestions.mjs — the site never closes a suggestion.
  *
  * Identity ALWAYS comes from the signed cookie, never the body — `track` is
  * the only thing the request gets to say, and it's a label (which picker
@@ -45,6 +48,29 @@ function parseUrl(raw: string): string | null {
     return url.toString();
   } catch {
     return null;
+  }
+}
+
+// GET /api/suggestions → { suggestions: [{ id, track, url, username, created_at }] }
+// Owner-only: the open queue, newest first.
+export async function GET() {
+  const user = await currentUser();
+  if (!user || !isOwner(user)) {
+    return Response.json({ error: "Not allowed." }, { status: 403 });
+  }
+  try {
+    const rows = await dbSelect(
+      "rc_suggestions",
+      "?status=eq.open&select=id,track,url,username,created_at&order=created_at.desc"
+    );
+    if (rows === null) throw new Error("suggestion DB read failed");
+    return Response.json({ suggestions: rows });
+  } catch (err) {
+    console.error("Listing suggestions failed:", err, "user:", user);
+    return Response.json(
+      { error: "Could not load the suggestions." },
+      { status: 502 }
+    );
   }
 }
 
