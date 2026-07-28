@@ -70,22 +70,6 @@ export default function LandingIndex({
     // are demoted back to a normal row via sibling-selector variants.
     const newest = index === 0;
 
-    // One set of links per source. A source with an articlePageUrl
-    // (our served responsive HTML page — every new day) gets a single
-    // "ARTICLE" button; historical sources without one keep the
-    // legacy "WEB"/"PDF" pair. Multi-article days number each set.
-    const sources =
-      r.articles && r.articles.length > 0
-        ? r.articles
-        : [
-            {
-              articleUrl: r.articleUrl ?? "#",
-              pdfUrl: r.pdfUrl,
-              articlePageUrl: r.articlePageUrl,
-            },
-          ];
-    const single = !(r.articles && r.articles.length > 0);
-
     return (
       <li
         key={r.date}
@@ -130,37 +114,27 @@ export default function LandingIndex({
         </span>
 
         <span className="flex flex-wrap gap-[6px] min-[681px]:flex-nowrap">
-          {sources.map((a, i) =>
-            a.articlePageUrl ? (
-              // Our own responsive article page — reflows on phones
-              // (the PDF never did), so it replaces the Web + PDF
-              // pair with one button.
-              <a
-                key={a.articleUrl}
-                href={a.articlePageUrl}
-                className={btn}
-              >
-                {single ? "Article" : `Article ${i + 1}`}
+          {/* A day is one article. Ours is the served responsive page when we
+              have one (it reflows on phones, which the PDF never did); a legacy
+              day without one keeps the original WEB + PDF pair; an open web
+              article with neither links straight to the original. */}
+          {r.articlePageUrl ? (
+            <a href={r.articlePageUrl} className={btn}>
+              Article
+            </a>
+          ) : r.pdfUrl ? (
+            <span className="contents">
+              <a href={r.articleUrl ?? "#"} className={btn}>
+                Web
               </a>
-            ) : a.pdfUrl ? (
-              // Legacy pre-article-page day: the original Web + PDF
-              // button pair, untouched.
-              <span key={a.articleUrl} className="contents">
-                <a href={a.articleUrl} className={btn}>
-                  {single ? "Web" : `Web ${i + 1}`}
-                </a>
-                <a href={a.pdfUrl} className={btn}>
-                  {single ? "PDF" : `PDF ${i + 1}`}
-                </a>
-              </span>
-            ) : (
-              // Open web article (no paywall): no article page of our
-              // own — the ARTICLE button links straight to the
-              // original.
-              <a key={a.articleUrl} href={a.articleUrl} className={btn}>
-                {single ? "Article" : `Article ${i + 1}`}
+              <a href={r.pdfUrl} className={btn}>
+                PDF
               </a>
-            ),
+            </span>
+          ) : (
+            <a href={r.articleUrl ?? "#"} className={btn}>
+              Article
+            </a>
           )}
           <span aria-hidden="true" className={stepArrow}>
             →

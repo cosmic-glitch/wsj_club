@@ -56,26 +56,19 @@ export type QuizQuestion = {
 };
 
 /**
- * One source article. Most days have a single article (use the top-level
- * `articleUrl`/`pdfUrl` on `Reading`). Some days bundle two or more short
- * articles into one handout — those go in `Reading.articles`, each with its
- * own headline and links.
+ * A full day's reading handout. The skill writes one JSON file per day.
+ *
+ * A day is ONE article per track. Bundling several short articles into a single
+ * handout used to be supported via an `articles: Source[]` field; exactly one
+ * day ever used it (2026-06-14) and it was collapsed to a single article, so
+ * the shape is gone. A day that needs two articles is two days.
  */
-export type Source = {
-  title: string; // the article's own headline (shown as the link text on the index)
-  articleUrl: string; // link to the original WSJ article (the "Web" link)
-  pdfUrl?: string; // served PDF of the article, e.g. "/pdfs/2026-06-14-1.pdf"
-  articlePageUrl?: string; // served self-contained responsive HTML article page, e.g. "/articles/2026-07-22-1.html" — when set, the index shows ONE "Article N" button instead of Web/PDF for this source
-};
-
-/** A full day's reading handout. The skill writes one JSON file per day. */
 export type Reading = {
   date: string; // "YYYY-MM-DD"
   title: string; // a clear, descriptive title (need not match WSJ's headline)
-  articleUrl?: string; // single-article days: the WSJ article link (the "Web" link on legacy days; kept as source-of-record metadata on article-page days)
-  pdfUrl?: string; // single-article days: served PDF, e.g. "/pdfs/2026-06-09.pdf" (legacy days; unused when articlePageUrl is set)
-  articlePageUrl?: string; // single-article days: served self-contained responsive HTML article page, e.g. "/articles/2026-07-22.html" — when set, the index row shows ONE "Article" button in place of the Web + PDF pair. Only for paywalled sources: an OPEN web article omits it (and pdfUrl), and the row's "Article" button then links straight to articleUrl. Legacy days with a pdfUrl keep Web/PDF
-  articles?: Source[]; // multi-article days: when set, the entry bundles these (top-level articleUrl/pdfUrl unused)
+  articleUrl?: string; // the WSJ article link (the "Web" link on legacy days; kept as source-of-record metadata on article-page days)
+  pdfUrl?: string; // served PDF, e.g. "/pdfs/2026-06-09.pdf" (legacy days; unused when articlePageUrl is set)
+  articlePageUrl?: string; // served self-contained responsive HTML article page, e.g. "/articles/2026-07-22.html" — when set, the index row shows ONE "Article" button in place of the Web + PDF pair. Only for paywalled sources: an OPEN web article omits it (and pdfUrl), and the row's "Article" button then links straight to articleUrl. Legacy days with a pdfUrl keep Web/PDF
   voiceQuiz?: boolean; // when true, the home-page row's action bar shows a "Voice quiz" launcher for this day (login-gated; the skill sets it)
   clubPick?: boolean; // when true, the day's article was chosen by the club's vote (see the daily vote in CLAUDE.md) — the index row shows a small CLUB PICK chip
   source?: string; // e.g. "The Wall Street Journal"

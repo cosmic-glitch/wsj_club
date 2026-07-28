@@ -7,8 +7,8 @@
    Entry shape: { k, t, kind, pron?, forms[], text, audio? }
    kind: "vocab" (the day's handout word, yellow) | "word" | "phrase" | "name".
    audio: true when a pronunciation clip exists at
-   /audio/<date>/gloss/<k>.mp3 (junior keeps its junior/ segment; multi-article
-   pages share the date's dir) — written by scripts/gen-glossary-audio.mjs.
+   /audio/<date>/gloss/<k>.mp3 (junior keeps its junior/ segment) — written by
+   scripts/gen-glossary-audio.mjs.
    The clip auto-plays when the sheet opens, and the sheet shows a speaker
    button next to the term for replays; no flag, no clip, no button.
    The first occurrence of each entry gets a dotted mark (vocab: yellow
@@ -20,7 +20,8 @@
 
 var m=location.pathname.match(/^\/articles\/(.+)\.html$/);
 if(!m)return;
-// Pronunciation clips live under the DATE (multi-article -1/-2 pages share it).
+// Pronunciation clips live under the DATE — the trailing-anything match keeps
+// junior's junior/<date> prefix working and is harmless for a plain date.
 var AUDIO_BASE="/audio/"+m[1].replace(/^((?:junior\/)?\d{4}-\d{2}-\d{2}).*$/,"$1")+"/gloss/";
 fetch("/glossaries/"+m[1]+".json").then(function(r){
   if(!r.ok)throw new Error("no glossary");
