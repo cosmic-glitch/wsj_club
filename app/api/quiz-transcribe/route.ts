@@ -1,10 +1,34 @@
 import { del } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
+import { getReading, type Track } from "@/lib/content";
 
 // The speech-to-text model for the student's spoken answers. `whisper-1` is the
 // robust default (it's what the realtime session used for input transcription);
 // env-overridable to gpt-4o-transcribe / gpt-4o-mini-transcribe.
 const STT_MODEL = process.env.STT_MODEL || "whisper-1";
+
+/**
+ * Context prompt for the STT call. Each clip is transcribed in isolation, so
+ * the model never hears the tutor's question — and reliably garbles the very
+ * word being quizzed ("fickle" → "Circle", "loathe" → "love"), which then reads
+ * as a wrong answer to the tutor. Priming the decoder with the pending question
+ * and the day's terms fixed 6/6 replayed garbles. whisper-1 keeps only the LAST
+ * 224 tokens of the prompt, so the vocabulary list goes at the end — it's the
+ * one part that must survive truncation.
+ */
+function buildSttPrompt(date: string, track: Track, question: string): string | undefined {
+  const reading = getReading(date, track);
+  if (!reading) return undefined;
+  const parts: string[] = [];
+  const q = question.replace(/\s+/g, " ").trim().slice(0, 300);
+  if (q) parts.push(`The student is answering the question: ${q}`);
+  parts.push(`The article is "${reading.title}".`);
+  if (reading.concepts.length > 0) {
+    parts.push(`Concepts: ${reading.concepts.map((c) => c.name).join(", ")}.`);
+  }
+  parts.push(`Vocabulary words: ${reading.vocab.map((v) => v.word).join(", ")}.`);
+  return parts.join(" ");
+}
 
 // OpenAI's transcription endpoint occasionally rejects a perfectly good request
 // with a transient error — we once saw a spurious 404 ("Invalid URL") on an
@@ -18,13 +42,18 @@ const RETRYABLE_STT_STATUS = new Set([404, 408, 409, 425, 429, 500, 502, 503, 50
 // Forward one clip to OpenAI speech-to-text. Split out so the retry can rebuild
 // the multipart body each attempt — a FormData stream is consumed by the fetch
 // that sends it, so the same instance can't be reused for a second try.
-async function postTranscription(audioBlob: Blob, name: string): Promise<Response> {
+async function postTranscription(
+  audioBlob: Blob,
+  name: string,
+  prompt: string | undefined
+): Promise<Response> {
   const upstream = new FormData();
   // OpenAI keys off the filename extension to detect the format, so pass a
   // sensible name (the stored object keeps the recorder's container extension).
   upstream.append("file", audioBlob, name);
   upstream.append("model", STT_MODEL);
   upstream.append("response_format", "json");
+  if (prompt) upstream.append("prompt", prompt);
   return fetch("https://api.openai.com/v1/audio/transcriptions", {
     method: "POST",
     headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}` },
@@ -56,9 +85,20 @@ export async function POST(request: Request) {
   }
 
   let blobUrl: string;
+  let sttPrompt: string | undefined;
   try {
-    const body = (await request.json()) as { blobUrl?: string };
+    const body = (await request.json()) as {
+      blobUrl?: string;
+      date?: string;
+      track?: string;
+      question?: string;
+    };
     blobUrl = (body?.blobUrl ?? "").trim();
+    // `date`/`track`/`question` are labels the page knows, not identity claims
+    // (same rationale as /api/quiz-turn) — they only pick which public handout's
+    // terms prime the transcription. Unknown reading → no prompt, old behavior.
+    const track: Track = body?.track === "junior" ? "junior" : "senior";
+    sttPrompt = buildSttPrompt((body?.date ?? "").trim(), track, body?.question ?? "");
   } catch {
     return Response.json({ error: "Invalid request" }, { status: 400 });
   }
@@ -109,7 +149,7 @@ export async function POST(request: Request) {
     let res!: Response;
     for (let attempt = 1; ; attempt++) {
       try {
-        res = await postTranscription(audioBlob, name);
+        res = await postTranscription(audioBlob, name, sttPrompt);
       } catch (err) {
         if (attempt >= 2) throw err; // last attempt — let the outer catch 502 it
         console.error(

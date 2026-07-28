@@ -1328,10 +1328,16 @@ export default function VoiceQuiz({
       if (!canContinue(runId)) return;
       // Fresh budget for the transcribe call itself.
       timeout = armTimeout(FETCH_TIMEOUT_MS);
+      // The tutor line this answer responds to — the server primes the STT with
+      // it (plus the day's vocab/concept terms) so the quizzed word itself
+      // survives transcription; an isolated clip otherwise garbles exactly that
+      // word ("fickle" → "Circle") and the tutor reads it as a wrong answer.
+      const question =
+        [...transcriptRef.current].reverse().find((t) => t.role === "tutor")?.text ?? "";
       const res = await fetch("/api/quiz-transcribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ date, track, blobUrl: uploaded.url }),
+        body: JSON.stringify({ date, track, blobUrl: uploaded.url, question }),
         signal: transcribeAbort?.signal,
       });
       clearTimeout(timeout);
