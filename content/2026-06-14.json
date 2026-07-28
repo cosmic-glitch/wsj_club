@@ -1,43 +1,21 @@
 {
   "date": "2026-06-14",
-  "title": "World Cup News",
+  "title": "America Is Already Losing the World Cup for Hotel Bookings",
+  "articleUrl": "https://www.wsj.com/lifestyle/travel/america-is-already-losing-the-world-cup-for-hotel-bookings-f8fb8694",
+  "articlePageUrl": "/articles/2026-06-14.html",
   "voiceQuiz": true,
   "source": "The Wall Street Journal",
-  "articles": [
-    {
-      "title": "The American World Cup Introduced Ad Breaks—and Everyone Absolutely Hates It",
-      "articleUrl": "https://www.wsj.com/sports/soccer/world-cup-ad-breaks-hydration-fifa-5d302605",
-      "articlePageUrl": "/articles/2026-06-14-1.html"
-    },
-    {
-      "title": "America Is Already Losing the World Cup for Hotel Bookings",
-      "articleUrl": "https://www.wsj.com/lifestyle/travel/america-is-already-losing-the-world-cup-for-hotel-bookings-f8fb8694",
-      "articlePageUrl": "/articles/2026-06-14-2.html"
-    }
-  ],
   "vocab": [
     {
-      "word": "shoehorn",
-      "partOfSpeech": "verb",
-      "pronunciation": "SHOO-horn",
-      "articleQuote": "…there's been just one problem with shoehorning [soccer] into the American way of televised sports.",
-      "inContext": "It means forcing soccer — a sport built on nonstop play — into a TV format designed for sports that have lots of natural stoppages, even though it doesn't fit comfortably.",
-      "meaning": "To shoehorn something is to force it into a space, schedule, or role that's really too small or the wrong shape for it.",
+      "word": "rabid",
+      "partOfSpeech": "adjective",
+      "pronunciation": "RAB-id",
+      "articleQuote": "…the foreign host cities hold a number of advantages…including often more rabid soccer fans and overall affordability.",
+      "inContext": "It describes fans whose enthusiasm for soccer is extreme and intense — the kind who pack stadiums and travel for matches.",
+      "meaning": "Rabid means extreme, fanatical, or out of control in your enthusiasm or opinions. (It literally describes an animal with rabies, which is where the 'uncontrolled' sense comes from.)",
       "examples": [
-        "The teacher tried to shoehorn three lab experiments into a single 45-minute class, so we rushed through all of them.",
-        "He shoehorned a quote from his favorite movie into his history essay, even though it didn't really belong."
-      ]
-    },
-    {
-      "word": "capitalize (on)",
-      "partOfSpeech": "verb",
-      "pronunciation": "KAP-ih-tuh-lyze",
-      "articleQuote": "Fox Sports…didn't capitalize on that value simply by dropping in a brief ad for each pause in the action.",
-      "inContext": "Fox didn't just take advantage of the valuable ad time in the obvious, minimal way — it packed in far more commercials than one ad per break.",
-      "meaning": "To capitalize on something is to make the most of an opportunity or advantage. (It's related to 'capital'/money, but in this sense it's about seizing a chance, not just cash.)",
-      "examples": [
-        "After the goalie slipped, our striker capitalized on the open net and scored.",
-        "She capitalized on the long weekend to finish the project she'd been putting off."
+        "He's a rabid fan of the series — he reread every book the week before the finale came out.",
+        "The argument turned rabid, with neither side willing to listen to the other."
       ]
     },
     {
@@ -53,34 +31,22 @@
       ]
     },
     {
-      "word": "rabid",
+      "word": "transient",
       "partOfSpeech": "adjective",
-      "pronunciation": "RAB-id",
-      "articleQuote": "…the foreign host cities hold a number of advantages…including often more rabid soccer fans and overall affordability.",
-      "inContext": "It describes fans whose enthusiasm for soccer is extreme and intense — the kind who pack stadiums and travel for matches.",
-      "meaning": "Rabid means extreme, fanatical, or out of control in your enthusiasm or opinions. (It literally describes an animal with rabies, which is where the 'uncontrolled' sense comes from.)",
+      "pronunciation": "TRAN-shuhnt",
+      "articleQuote": "Host Hotels & Resorts…is already seeing a 38% jump in average daily rates from transient travelers for the tournament period.",
+      "inContext": "Here it's hotel-industry language for ordinary individual guests booking a night or two on their own, as opposed to big groups or blocks of business rooms.",
+      "meaning": "Transient means lasting only a short time, or passing through. (It comes from the Latin for 'crossing over.') A transient thing is temporary and already on its way somewhere else — which is why hotels use the word for short-stay guests.",
       "examples": [
-        "He's a rabid fan of the series — he reread every book the week before the finale came out.",
-        "The argument turned rabid, with neither side willing to listen to the other."
+        "Her interest in the guitar turned out to be transient — she quit after two months.",
+        "The beach town's population is transient, swelling every summer and emptying out by September."
       ]
     }
   ],
   "concepts": [
     {
-      "name": "Broadcast rights",
-      "articleQuote": "Fox Sports, which holds the English-language rights to the tournament in the U.S.…",
-      "inContext": "Fox paid for the exclusive right to show the World Cup in English in the United States, which is why American viewers watch it on Fox rather than wherever they like.",
-      "meaning": "Broadcast rights are the exclusive permission a network or streaming service buys to show an event — a game, a concert, a show. Whoever owns the rights controls where you can watch it and charges advertisers or subscribers to earn their money back. It's why one big game might be available on only a single channel or app."
-    },
-    {
-      "name": "The attention economy",
-      "articleQuote": "…a 30-second spot during early games costs some brands roughly $200,000, but jumps to around $750,000 when the U.S. national team is playing.",
-      "inContext": "A commercial slot costs far more during the U.S. game because far more people are watching — advertisers are really paying for all those eyeballs.",
-      "meaning": "In 'free' or ad-supported media, the audience's attention is the product being sold. Advertisers pay the platform for access to your eyes and time, and the price rises with the size and value of the audience. That's why the most-watched moments cost advertisers the most — and why so much of what you watch is designed to keep you watching."
-    },
-    {
       "name": "Dynamic pricing (supply and demand)",
-      "articleQuote": "Host Hotels & Resorts…is already seeing a 38% jump in average daily rates from transient travelers for the tournament period.",
+      "articleQuote": "Tickets to this year’s World Cup games in the U.S. reached record-high prices, with dozens of tickets to the final match already selling for more than $20,000 a seat…",
       "inContext": "Hotels raised their nightly rates sharply for the World Cup because they expected lots of visitors competing for a limited number of rooms.",
       "meaning": "Dynamic pricing means prices move with demand instead of staying fixed. When many buyers want a limited supply, sellers raise prices (a $20,000 resale ticket, a surged hotel room); when demand is weak, prices fall to attract buyers. It's the everyday engine behind airfares, concert tickets, and ride-share surge pricing."
     },
@@ -93,23 +59,23 @@
   ],
   "quiz": [
     {
-      "question": "A 30-second commercial during early World Cup games cost some brands about $200,000, but the price jumped to roughly $750,000 when the U.S. national team played. What best explains the increase?",
+      "question": "Ahead of the tournament, Vancouver and Guadalajara led all host cities at 48% hotel occupancy, and San Francisco was the only U.S. city above 40%, at 44%. What does this comparison show?",
       "options": [
-        "Ads during U.S. games were required to be twice as long.",
-        "Many more people watch the U.S. team, so that audience is worth more to advertisers.",
-        "Fox Sports accidentally underpriced the early games.",
-        "FIFA charges teams a fee to appear in commercials."
+        "American host cities were filling their hotels faster than foreign ones.",
+        "The Canadian and Mexican host cities were drawing World Cup visitors more successfully than the U.S. cities.",
+        "Every host city was more than half booked.",
+        "Vancouver and Guadalajara had built the most hotel rooms."
       ],
       "answerIndex": 1,
-      "explanation": "In an ad-supported broadcast, advertisers pay for attention — the bigger the audience, the more a slot is worth."
+      "explanation": "That gap is the story's central finding — the foreign host cities were out-booking almost every American one."
     },
     {
       "question": "Resale tickets to the World Cup final were selling for more than $20,000 a seat. This price is best explained by —",
       "options": [
-        "broadcast rights",
-        "a hydration break",
+        "the cost of building the stadium",
+        "the hotel occupancy rate in the host city",
         "limited seats meeting very strong demand, which pushes prices up",
-        "the cost of building the stadium"
+        "the price of a round-trip train ticket to the stadium"
       ],
       "answerIndex": 2,
       "explanation": "Dynamic pricing: when a scarce, highly wanted item meets strong demand, the price rises."
@@ -126,15 +92,15 @@
       "explanation": "That's opportunity cost — the true benefit counts what you gave up, not just what you took in."
     },
     {
-      "question": "The article describes the 'problem with shoehorning' soccer into American-style TV. To shoehorn something means to —",
+      "question": "One hotel company reported a 38% jump in daily rates from 'transient' travelers. In general, something transient is —",
       "options": [
-        "advertise it widely",
-        "force it into a space or format it doesn't really fit",
-        "make it far more popular",
-        "cancel it at the last minute"
+        "extremely expensive",
+        "lasting only a short time; passing through",
+        "booked far in advance",
+        "owned by a large company"
       ],
       "answerIndex": 1,
-      "explanation": "To shoehorn is to cram something into a space, schedule, or role that's too small or the wrong shape for it."
+      "explanation": "Transient means short-lived or passing through, which is why hotels use it for guests staying only a night or two."
     },
     {
       "question": "Visa worries and an unwelcoming climate 'dissuaded' some fans from traveling to the U.S. To dissuade someone is to —",
