@@ -9,6 +9,7 @@ Live: https://dailyreadingclub.com · Repo: https://github.com/cosmic-glitch/wsj
 ## Working agreement
 
 - **Commit and push every logical change.** Push to `main` auto-deploys to Vercel — pushing is shipping. Don't leave requested changes uncommitted (throwaway experiments excepted).
+- **ALWAYS ask the owner before any batch of paid model calls.** Analysis/debugging sweeps — replaying transcripts through a grader, A/B-ing `TUTOR_MODEL`/`REPORT_MODEL`, sampling a prompt N times, re-scoring past sessions — bill to the owner's own OpenAI key as a lump one-time charge, and these prompts are big (the full article text rides in every call). State the plan and the rough call count and WAIT for a yes. A single re-run of one session to check something is fine; a loop is not. This applies to *investigation*, not to the club's normal daily traffic.
 - **Keep this file current — by replacing, not appending.** Record decisions, invariants, and workflows only. Never add change history, dates of changes, reversal narratives, or per-component UI detail — git history and the code hold those. Deep rationale for a subsystem goes in a `PLAN-*.md`, linked from here. If an entry here duplicates what reading the code would tell you, delete it.
 
 ## Architecture
