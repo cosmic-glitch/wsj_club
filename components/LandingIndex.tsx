@@ -29,6 +29,15 @@ function dateTag(date: string): string {
 const btn =
   "inline-block cursor-pointer border-2 border-[#0a0a0a] px-[10px] py-[5px] text-[10.5px] font-bold uppercase leading-normal tracking-[.08em] text-[#0a0a0a] no-underline min-[681px]:px-2 min-[681px]:py-[3px] group-hover:border-white group-hover:text-white group-hover:hover:border-[#ffe600] group-hover:hover:bg-[#ffe600] group-hover:hover:text-[#0a0a0a]";
 
+// The "→" separating the row's action groups. A day is a sequence — read the
+// article, then the handout, then the AI quiz — but three identical boxes read
+// as three alternatives, so the arrows carry the order. Decorative only
+// (aria-hidden): the buttons are already in sequence in the DOM. No arrow goes
+// *between* source buttons on a multi-article day — those are parallel, not
+// steps.
+const stepArrow =
+  "self-center text-[11px] font-bold leading-none text-stone-500 group-hover:text-stone-400";
+
 // A quiet topline text link (the "← Main club" / "Word bank" chrome links).
 const topLink =
   "px-1.5 py-1 font-mono text-[11px] font-bold uppercase tracking-[.12em] text-stone-500 no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]";
@@ -153,6 +162,9 @@ export default function LandingIndex({
               </a>
             ),
           )}
+          <span aria-hidden="true" className={stepArrow}>
+            →
+          </span>
           <Link href={`${base}/reading/${r.date}`} className={btn}>
             Handout
           </Link>
@@ -160,12 +172,17 @@ export default function LandingIndex({
               resume probe/chooser) lives in VoiceQuiz; only the
               visible button is restyled to match the others. */}
           {r.voiceQuiz && (
-            <VoiceQuizStep
-              date={r.date}
-              title={r.title}
-              track={track}
-              className={btn}
-            />
+            <>
+              <span aria-hidden="true" className={stepArrow}>
+                →
+              </span>
+              <VoiceQuizStep
+                date={r.date}
+                title={r.title}
+                track={track}
+                className={btn}
+              />
+            </>
           )}
           {/* Desktop home of the completed-count: the slack right
               of the AI QUIZ button (kept off the title, which it
@@ -265,8 +282,11 @@ export default function LandingIndex({
           </CompletionsProvider>
         )}
 
+        {/* Spells out the same three steps the row's arrows imply — the row
+            has only room for the nouns, so the verbs live here. */}
         <p className="mt-5 text-center text-[11px] uppercase tracking-[.14em]">
-          READ → HANDOUT → QUIZ. REPEAT TOMORROW.
+          Read the article → Study the handout → Take the AI quiz. Repeat
+          tomorrow.
         </p>
       </div>
     </div>
