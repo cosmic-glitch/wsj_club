@@ -3,11 +3,16 @@ import { getReading, type Track } from "@/lib/content";
 import { getArticleText } from "@/lib/article-text";
 import { buildInstructions } from "@/lib/quiz-prompt";
 
-// The chat model that plays the tutor, turn by turn. Same family as the grader
-// (REPORT_MODEL) and confirmed working with our chat/completions request this
-// build. Env-overridable; bump to the full model (e.g. gpt-5.4) for stronger
-// Socratic judgment if ever needed — volume is tiny.
-const TUTOR_MODEL = process.env.TUTOR_MODEL || "gpt-5.4-mini";
+// The chat model that plays the tutor, turn by turn — same model as the grader
+// (REPORT_MODEL). Env-overridable, but do NOT drop this to a mini/nano tier to
+// save money: the whole stage plan below (key ideas → vocabulary → concepts →
+// wrap-up) is honour-system, since nothing here validates `done` against the
+// stages actually covered. gpt-5.4-mini set `done: true` at the vocabulary →
+// concept boundary in half of all sessions (16/32 on replayed decision points;
+// 44% of graded sessions never met the two-concept quota), silently ending the
+// quiz before any concept was asked. luna was 0/32 on the same replays. The
+// cost gap is ~$0.004 per quiz — not worth a skipped concept stage.
+const TUTOR_MODEL = process.env.TUTOR_MODEL || "gpt-5.6-luna";
 
 // The exact wrap-up sentence the tutor is instructed to end with. It doubles as a
 // backup "the quiz is done" signal: if the model's reply isn't valid JSON (or it
