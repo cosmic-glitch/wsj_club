@@ -5,12 +5,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { clearAuthCache, useAuth, writeAuthCache } from "./AuthProvider";
 
-// The site's login/scores controls: small uppercase mono TEXT links —
+// The site's login/reports controls: small uppercase mono TEXT links —
 // deliberately not boxed, so the boxed buttons stay exclusively "content
 // actions" in the index rows. Hovering inverts (black bg, yellow text). Used
 // in the landing page's thin topline ABOVE the masthead AND in the site-wide
 // header on every inner page (SiteHeader): inline login form when logged out,
-// word-bank/scores/students links + log out when logged in. The bar renders
+// word-bank/reports/students links + log out when logged in. The bar renders
 // IDENTICALLY everywhere — greeting + links — so navigating between pages
 // never makes it jitter (the greeting used to be header-suppressed, which
 // made "Hi <user>" vanish and the links shift on every inner page). The links
@@ -116,7 +116,7 @@ export default function HomeAuthBar() {
           {isAdmin ? (
             <>
               <Link href="/admin" className={bar}>
-                All Scores
+                Reports
               </Link>
               <Slash />
               <Link href="/admin/students" className={bar}>
@@ -133,7 +133,7 @@ export default function HomeAuthBar() {
               </Link>
               <Slash />
               <Link href="/admin" className={bar}>
-                Scores
+                Reports
               </Link>
               <Slash />
             </>

@@ -12,7 +12,7 @@ import ClassroomTabs from "@/components/ClassroomTabs";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Scores · Daily Reading Club",
+  title: "Reports · Daily Reading Club",
 };
 
 /**
@@ -104,15 +104,15 @@ function classroomPanel(
 export default async function AdminPage() {
   const user = await currentUser();
 
-  // Any logged-in user can see their scores; logged-out visitors can't.
+  // Any logged-in user can see their reports; logged-out visitors can't.
   if (!user) {
     return (
       <div>
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
-          Your scores
+          Your reports
         </h1>
         <p className="mt-4 border-[3px] border-[#0a0a0a] bg-[#ffe600] px-4 py-3 font-sans text-sm font-bold text-[#0a0a0a]">
-          Please log in (top right) to see your quiz scores and recordings.
+          Please log in (top right) to see your quiz reports and recordings.
         </p>
       </div>
     );
@@ -130,7 +130,7 @@ export default async function AdminPage() {
     return (
       <div>
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
-          {admin ? "Quiz sessions" : "Your scores"}
+          {admin ? "Quiz reports" : "Your reports"}
         </h1>
         <p className="mt-6 border-[3px] border-[#0a0a0a] bg-stone-100 px-4 py-3 font-sans text-sm text-stone-600">
           {result.error}
@@ -149,7 +149,7 @@ export default async function AdminPage() {
     return (
       <div>
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
-          Your scores
+          Your reports
         </h1>
         <p className="mt-2 font-sans text-[13px] text-stone-500">
           Your saved voice-quiz attempts — click Details on any attempt for its
@@ -181,7 +181,7 @@ export default async function AdminPage() {
     return (
       <div>
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
-          Quiz sessions
+          Quiz reports
         </h1>
         <p className="mt-2 font-sans text-[13px] text-stone-500">
           Saved voice-quiz attempts by article — click Details on any attempt
@@ -224,7 +224,7 @@ export default async function AdminPage() {
   return (
     <div>
       <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
-        Quiz sessions
+        Quiz reports
       </h1>
       <p className="mt-2 font-sans text-[13px] text-stone-500">
         Every classroom&apos;s attempts, by article — the Parent column shows

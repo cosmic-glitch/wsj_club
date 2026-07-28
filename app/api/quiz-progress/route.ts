@@ -87,7 +87,7 @@ export async function POST(request: Request) {
   const transcript = sanitizeTranscript(body.transcript);
   // A quiz where the student never spoke resumes identically to a fresh start
   // (the opening is a fixed script), so there is nothing worth saving — and
-  // rejecting it keeps junk slots out of the Scores page.
+  // rejecting it keeps junk slots out of the Reports page.
   if (!transcript.some((t) => t.role === "student" && t.text.trim())) {
     return Response.json({ error: "Nothing to save yet." }, { status: 400 });
   }
@@ -115,7 +115,7 @@ export async function POST(request: Request) {
 
   const session = {
     date,
-    // Junior slots carry track: "junior" so the Scores page shows the junior
+    // Junior slots carry track: "junior" so the Reports page shows the junior
     // badge and its Continue points at /junior?resume=. Senior omits it (absent
     // means senior — no backfill of the existing records).
     ...(track === "junior" ? { track } : {}),
@@ -123,7 +123,7 @@ export async function POST(request: Request) {
     studentName: user,
     loginUser: user,
     teacherId: parentId,
-    // The explicit in-progress marker the Scores UI keys off (NOT inferred from
+    // The explicit in-progress marker the Reports UI keys off (NOT inferred from
     // partial/report — legacy failure-partials whose grading errored also have
     // report: null, and they must not grow a broken Continue button).
     inProgress: true,

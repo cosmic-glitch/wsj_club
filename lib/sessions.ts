@@ -2,11 +2,11 @@ import { dbSelect } from "@/lib/db";
 import type { Session } from "@/components/AdminSessions";
 
 /**
- * Load every voice-quiz session for the Scores page / Students roster /
+ * Load every voice-quiz session for the Reports page / Students roster /
  * quiz-dates — one slim select over rc_quiz_sessions (no transcript/report/
  * diag — the modal-only heavy fields are served by GET /api/quiz-session?id=
  * on open) plus the rc_quiz_slots rows mapped to the inProgress shape,
- * preserving the old contract where the Scores page sees slots as sessions.
+ * preserving the old contract where the Reports page sees slots as sessions.
  * (This replaced the Blob era's one fetch PER SESSION — the page's whole
  * latency.) Each record's `id` is the DB row id (sessions: uuid; slots: the
  * serialized composite key) — the handle for Details and Delete.

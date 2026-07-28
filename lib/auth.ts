@@ -3,7 +3,7 @@ import { cookies } from "next/headers";
 import { getUser, verifyLogin, type User } from "@/lib/users";
 
 /**
- * Username/password auth for the voice quiz + the parent (Scores/Students) area.
+ * Username/password auth for the voice quiz + the parent (Reports/Students) area.
  *
  * Exists to gate the paid OpenAI calls behind a login so the public site can't
  * run up charges, and to scope each parent to their own classroom.
@@ -114,7 +114,7 @@ export function isOwner(username: string | null): boolean {
 }
 
 /**
- * Parent/admin access for the `/admin` portal (Scores + Students). True for a
+ * Parent/admin access for the `/admin` portal (Reports + Students). True for a
  * user whose role is "parent" (or the owner). Fail closed (null → false).
  * Async because the role comes from the repository.
  */

@@ -12,7 +12,7 @@ import type { Track } from "@/lib/content";
  *
  * The SLOT is the single record holding a paused/live attempt — at most one
  * per (student, track, date), a DB invariant (the rc_quiz_slots PK). Its
- * existence is what shows "Continue" (Scores) and the Continue/Start-over
+ * existence is what shows "Continue" (Reports) and the Continue/Start-over
  * chooser (the home launcher); the terminal actions (End / Cancel / Start
  * over) delete it. Server-only — the client mirrors the slot-AUDIO pathname
  * convention in components/VoiceQuiz.tsx.

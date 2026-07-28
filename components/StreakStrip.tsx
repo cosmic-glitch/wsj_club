@@ -13,7 +13,7 @@ import type { Track } from "@/lib/content";
  * The TodayTag/VotePoll/CompletedBy recipe: the page stays statically
  * generated and this hydrates in, ONE fetch on mount — and it reuses
  * /api/quiz-dates (identity from the cookie, "completed" = the same terminal
- * attempts the Word Bank and Scores count) rather than adding a route.
+ * attempts the Word Bank and Reports count) rather than adding a route.
  *
  * A streak counts consecutive READINGS quizzed, not calendar days — a day
  * with no published reading can't break it, and the occasional junior track

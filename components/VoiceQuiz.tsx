@@ -306,7 +306,7 @@ async function decodeBlobToPcm16k(blob: Blob, ctx: AudioContext): Promise<Float3
  * and tutor turn (POST /api/quiz-progress), so leaving the page never loses a
  * quiz — it pauses it. A failure/hang pauses too (retry-or-leave) instead of
  * ending. Clicking the launcher while a slot exists offers Continue / Start
- * over; the Scores page's Continue navigates to /?resume=<date>, which
+ * over; the Reports page's Continue navigates to /?resume=<date>, which
  * auto-resumes. Only the End and Cancel buttons are terminal — End grades, and
  * both delete the slot (server-side, after the save).
  */
@@ -690,7 +690,7 @@ export default function VoiceQuiz({
   // "Save for later" — leave WITHOUT ending: flush the audio + a final
   // checkpoint (the transcript is already checkpointed per answer), then close.
   // The attempt stays continuable — from the Voice quiz link (the chooser) or
-  // the Scores page. Offered at tutorTurn and paused, never mid-recording (the
+  // the Reports page. Offered at tutorTurn and paused, never mid-recording (the
   // student Stops first), so there's no recorder to close out.
   async function saveForLater() {
     const runId = activeRunIdRef.current;
@@ -1450,7 +1450,7 @@ export default function VoiceQuiz({
     if (!merged.length) return null;
     // The recording's length (total talk time: tutor questions + answers). This
     // is the same "duration" the parent/student sees in the playback control,
-    // saved as the session's durationMs and shown in the Scores table.
+    // saved as the session's durationMs and shown in the Reports table.
     const durationMs = Math.round((merged.length / WAV_RATE) * 1000);
     return { blob: encodeWav(merged, WAV_RATE), ext: "wav", durationMs };
   }
@@ -1821,7 +1821,7 @@ export default function VoiceQuiz({
     stopMeterLoop();
     const session = await buildParentFile();
     // The recording's length — saved as the session's duration (shown in the
-    // Scores table). undefined when nothing was recorded → table shows "—".
+    // Reports table). undefined when nothing was recorded → table shows "—".
     const durationMs = session?.durationMs;
     teardown();
 
@@ -1924,7 +1924,7 @@ export default function VoiceQuiz({
   // "Cancel quiz" — stop early, before the tutor is done. The attempt is NOT
   // discarded: whatever was captured — the recording + transcript so far — is
   // saved as an ungraded CANCELLED entry (score "—") that only the parent sees
-  // on /admin (the page filters it out of a student's own Scores list). The
+  // on /admin (the page filters it out of a student's own Reports list). The
   // student just confirms, sees a brief "Ending the quiz…" screen, and the
   // modal closes itself — no report card. The dialog wording is deliberately
   // low-key (the quiz "won't count", not "is kept for the parent"); the live
@@ -1975,7 +1975,7 @@ export default function VoiceQuiz({
     // the terminating flag + the done gate so the next quiz starts clean.
     // NOTE: closing is a LEAVE, not an end — nothing is finalized or cancelled
     // here. A live quiz's progress is already checkpointed per answer, so it
-    // shows up as "In progress" (continuable) on the Scores page.
+    // shows up as "In progress" (continuable) on the Reports page.
     activeRunIdRef.current += 1;
     endingRef.current = false;
     markTutorDone(false);
@@ -2029,7 +2029,7 @@ export default function VoiceQuiz({
     phaseRef.current = phase;
   }, [phase]);
 
-  // ?resume=<date> auto-open (the Continue button on the Scores page navigates
+  // ?resume=<date> auto-open (the Continue button on the Reports page navigates
   // here). Runs once per mount, after the shared auth state resolves; it skips
   // the chooser — that Continue click was already the explicit choice. The param
   // is read via window.location (not useSearchParams, which would force a
@@ -2238,7 +2238,7 @@ export default function VoiceQuiz({
                 </h2>
                 <p className="mt-2 text-sm text-stone-500">
                   You can continue this quiz later — from the Voice quiz link or
-                  your Scores page.
+                  your Reports page.
                 </p>
               </div>
             )}
@@ -2422,7 +2422,7 @@ export default function VoiceQuiz({
                         <span className="font-bold">We hit a snag</span> —{" "}
                         {pausedMsg} Your progress is saved: you can try again
                         now, or leave and continue later from the Voice quiz
-                        link or your Scores page.
+                        link or your Reports page.
                       </p>
                       <div className="mt-4 flex flex-wrap items-center gap-3">
                         <button

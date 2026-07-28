@@ -30,7 +30,7 @@ export default async function StudentsPage() {
   }
 
   // Parent-only. A logged-in student who navigates here directly is sent back
-  // to their scores.
+  // to their reports.
   if (!(await isAdmin(user))) {
     return (
       <div>
@@ -38,9 +38,9 @@ export default async function StudentsPage() {
           Students
         </h1>
         <p className="mt-4 border-[3px] border-[#0a0a0a] bg-stone-100 px-4 py-3 font-sans text-sm text-stone-600">
-          This page is for parents. Your scores are on the{" "}
+          This page is for parents. Your quiz results are on the{" "}
           <a href="/admin" className="font-bold underline">
-            Scores
+            Reports
           </a>{" "}
           page.
         </p>
@@ -118,7 +118,7 @@ export default async function StudentsPage() {
   }
 
   // Owner + other parents → ONE unified roster with a Parent column (the
-  // Scores-page recipe — the per-classroom tabs were dropped as inefficient):
+  // Reports-page recipe — the per-classroom tabs were dropped as inefficient):
   // own students first (fully editable), then each other parent's (visible,
   // addable-to via the modal's classroom selector, but not Rename/Reset).
   const self = parents.find((p) => p.username === user);

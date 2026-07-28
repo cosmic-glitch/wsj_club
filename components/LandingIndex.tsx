@@ -165,12 +165,12 @@ export default function LandingIndex({
     // mockup's 980px. -my-10 reclaims <main>'s vertical padding so the white
     // canvas runs from the global header to the site footer.
     <div className="mx-[calc(50%_-_50vw)] -my-10 w-screen bg-white pb-[90px] font-mono text-[#0a0a0a]">
-      {/* ---- topline: the page's own login/scores controls ---- */}
+      {/* ---- topline: the page's own login/reports controls ---- */}
       {/* The site-wide header is hidden on this page (see SiteHeader); these
           small text links ARE its replacement — chrome by position (the very
           top, above the masthead, under a hairline rule), quiet by type
           (plain text, so the boxed buttons stay content-only). The My Word
-          Bank link lives INSIDE HomeAuthBar (next to My Scores), not here.
+          Bank link lives INSIDE HomeAuthBar (next to Reports), not here.
           On junior a quiet cross-link back to the main club sits at the
           left. */}
       <div className="mx-auto max-w-[980px] px-[18px]">

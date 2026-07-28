@@ -7,7 +7,7 @@ description: Delete all cancelled voice-quiz sessions — the Supabase rc_quiz_s
 
 This skill runs a prepackaged script that deletes every **cancelled** voice-quiz session. A cancelled session is one saved with `cancelled: true` — the student pressed **Cancel quiz**, so it ended early and was never graded (score `"—"`). They're safe cleanup targets, but **deletion is irreversible**.
 
-Since the Supabase read-flip, production reads sessions from the `rc_quiz_sessions` table, so the script is **DB-first**: it lists cancelled sessions from the DB, deletes each one's blobs (the session JSON via `source_blob`, the stitched audio via `audio_url`), then deletes the DB row — the same order and targets as the admin Delete button (`app/api/quiz-session/route.ts`). Deleting only from Blob leaves the attempts visible on the Scores page.
+Since the Supabase read-flip, production reads sessions from the `rc_quiz_sessions` table, so the script is **DB-first**: it lists cancelled sessions from the DB, deletes each one's blobs (the session JSON via `source_blob`, the stitched audio via `audio_url`), then deletes the DB row — the same order and targets as the admin Delete button (`app/api/quiz-session/route.ts`). Deleting only from Blob leaves the attempts visible on the Reports page.
 
 The script lives next to this file: `.claude/skills/delete-cancelled-sessions/delete-cancelled-sessions.mjs`. Don't rewrite it inline — run it.
 

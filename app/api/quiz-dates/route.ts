@@ -9,7 +9,7 @@ import type { Track } from "@/lib/content";
  *
  * Identity always comes from the cookie — there is no way to request another
  * user's dates. `track` is just a label (default senior at the boundary, like
- * every quiz route). "Completed" mirrors the student's own Scores view:
+ * every quiz route). "Completed" mirrors the student's own Reports view:
  * terminal attempts (graded or legacy-partial) count; a `cancelled` attempt
  * doesn't (the student was told it won't count), nor does an `inProgress`
  * slot (the quiz isn't done — its words join the bank when it is).

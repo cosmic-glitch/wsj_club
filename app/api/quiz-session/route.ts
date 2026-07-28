@@ -19,7 +19,7 @@ import type { Track } from "@/lib/content";
  *
  * Scoping: the OWNER may touch ANY classroom's session; a regular parent only
  * their own classroom's; a student only their own (and never a cancelled one,
- * which their Scores view hides). DELETE additionally requires a parent
+ * which their Reports view hides). DELETE additionally requires a parent
  * (isAdmin), as before.
  */
 

@@ -86,7 +86,7 @@ export async function POST(request: Request) {
   // does, the record is saved but never graded (see below).
   const partial = body.partial === true;
   // The student pressed Cancel: the attempt is still saved for the parent (the
-  // /admin page hides it from the student's own Scores view) but never graded.
+  // /admin page hides it from the student's own Reports view) but never graded.
   const cancelled = body.cancelled === true;
   const failure = sanitizeFailure(body.failure);
   // How many times this attempt was paused and continued (surfaced to the
@@ -213,7 +213,7 @@ export async function POST(request: Request) {
   const session = {
     date,
     // Stamp track only for junior (absent means senior — no backfill of the
-    // existing senior records). This is what shows the junior badge on Scores
+    // existing senior records). This is what shows the junior badge on Reports
     // and never silently compares a junior 8/10 against a senior 8/10.
     ...(track === "junior" ? { track } : {}),
     title: reading.title,

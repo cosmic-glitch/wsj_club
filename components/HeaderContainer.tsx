@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 /**
  * The header's inner width. Everywhere on the site the header sits in the same
  * `max-w-3xl` column as the page content, so its "Reading Club" logo lines up
- * with whatever is below it. The admin routes (Scores + Manage Students) are the
+ * with whatever is below it. The admin routes (Reports + Manage Students) are the
  * exception: their data tables break out to a wider `max-w-4xl` column (see
  * `app/admin/layout.tsx`), so a `max-w-3xl` header left the logo ~84px to the
  * right of the table's left edge.

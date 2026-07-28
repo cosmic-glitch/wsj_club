@@ -105,7 +105,7 @@ export default function StudentRoster({
   // When false, the big <h1> is dropped, leaving just the subtitle + Add button.
   showTitle?: boolean;
   // Owner's unified all-classrooms view: adds a Parent column (each row's
-  // `parentName`) — mirrors the Scores page's unified table.
+  // `parentName`) — mirrors the Reports page's unified table.
   showParent?: boolean;
   // When set (2+ classrooms — the owner), the Add-student modal shows a
   // parent selector so a student can be added under any parent; defaults to

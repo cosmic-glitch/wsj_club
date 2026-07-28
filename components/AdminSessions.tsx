@@ -38,7 +38,7 @@ export type Session = {
   // membership by loginUser.
   parentId?: string;
   // UI-only: the display name of the parent this attempt belongs to, resolved
-  // on the server for the OWNER's unified Scores table (the Parent column).
+  // on the server for the OWNER's unified Reports table (the Parent column).
   // Not part of the saved session JSON; only populated when showParent.
   parentName?: string;
   // Absent on an in-progress slot (nothing ended yet) — use updatedAt there.

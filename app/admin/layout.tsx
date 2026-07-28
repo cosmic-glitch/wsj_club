@@ -1,5 +1,5 @@
 /**
- * The admin routes (Scores + Manage Students) show data-dense tables — most
+ * The admin routes (Reports + Manage Students) show data-dense tables — most
  * notably the by-article Quiz-sessions table, whose per-attempt line has several
  * tight sub-columns (Student · Score · Mins · Time · Details, plus Delete for the
  * owner, and a Parent column in the owner's unified all-classrooms view). That
