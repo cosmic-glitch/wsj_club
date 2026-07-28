@@ -25,6 +25,10 @@ import type { Track } from "@/lib/content";
  *
  * Nothing about the queue is shown back: suggestions are a note to the owner,
  * read by scripts/suggestions.mjs during the daily pick, not a leaderboard.
+ *
+ * No autoFocus on the URL field, and the sheet is top-anchored on phones:
+ * an auto-opened iOS keyboard halves the viewport and pans a vertically
+ * centered dialog's title off-screen before the user ever sees it.
  */
 
 const BTN_PRIMARY =
@@ -99,7 +103,7 @@ export default function SuggestArticle({ className }: { className: string }) {
     ? null
     : createPortal(
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-[#0a0a0a]/60 p-4"
+          className="fixed inset-0 z-50 flex items-start justify-center bg-[#0a0a0a]/60 p-4 pt-14 sm:items-center sm:pt-4"
           onClick={() => setOpen(false)}
         >
           <div
@@ -170,7 +174,6 @@ export default function SuggestArticle({ className }: { className: string }) {
                   <input
                     type="text"
                     inputMode="url"
-                    autoFocus
                     value={url}
                     onChange={(e) => setUrl(e.target.value)}
                     placeholder="https://…"
