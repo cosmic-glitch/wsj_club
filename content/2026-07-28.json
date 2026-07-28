@@ -1,0 +1,120 @@
+{
+  "date": "2026-07-28",
+  "title": "The geopolitics of air-conditioning",
+  "articleUrl": "https://www.economist.com/international/2026/07/23/the-geopolitics-of-air-conditioning",
+  "articlePageUrl": "/articles/2026-07-28.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "calculus",
+      "partOfSpeech": "noun",
+      "pronunciation": "KAL-kyuh-lus",
+      "articleQuote": "All that might seem to lead to a straightforward political calculus: more AC for everyone, everywhere.",
+      "inContext": "This is not the math class. The writer has just finished stacking up the evidence — air-conditioning prevents about 190,000 deaths a year among older people, and cut the risk of dying on a very hot day by roughly 75% over the last century. So the *sum* a politician has to do looks easy: AC saves lives, therefore give everyone AC. The word is doing a quiet bit of work here, because the whole rest of the article is about why that sum turns out not to be simple at all.",
+      "meaning": "Outside of math, a **calculus** is the weighing-up you do when several factors pull against each other — the mental arithmetic of costs, benefits and risks behind a decision. You will meet it constantly in serious writing: *the political calculus*, *the strategic calculus*, *changing the calculus*. It always signals that someone is adding up pros and cons, not solving an equation.",
+      "examples": [
+        "Once she found out the away game was the same night, the calculus of whether to take the extra shift changed completely.",
+        "His calculus was simple: an hour of practice now was worth three hours of panic the night before."
+      ]
+    },
+    {
+      "word": "squeamishness",
+      "partOfSpeech": "noun",
+      "pronunciation": "SKWEE-mish-nis",
+      "articleQuote": "For some in the rich world, like Mr Mélenchon, there remains a stubborn squeamishness about adapting to rising temperatures with AC.",
+      "inContext": "Notice what the writer is *not* saying. He is not saying these politicians have an argument against air-conditioning; he is saying they have a feeling about it — a sense that reaching for the AC is a slightly shameful way to deal with a hot planet. Al Gore, quoted right after, called relying on adaptation \"a kind of laziness.\" Calling it squeamishness is a bit of a jab: it suggests a reaction of distaste that has not been fully thought through.",
+      "meaning": "**Squeamishness** is reluctance that comes from distaste rather than from reasoning — being put off by something because it feels wrong or unpleasant. Literally, a squeamish person is one who is easily sickened (by blood, say); figuratively, it describes anyone too uneasy about a thing to do it or discuss it plainly.",
+      "examples": [
+        "He got over his squeamishness about the frog dissection roughly four seconds after the teacher said it counted for a quarter of the grade.",
+        "There is a certain squeamishness about discussing money among friends, so nobody mentions who actually paid."
+      ]
+    },
+    {
+      "word": "corrodes",
+      "partOfSpeech": "verb",
+      "pronunciation": "kuh-RODES",
+      "articleQuote": "Unreliable supply also corrodes the economics of adoption from both ends.",
+      "inContext": "Nothing here is actually rusting. The writer means that patchy electricity slowly eats away at the case for buying an air-conditioner, and it does so from two directions at once: households hesitate to pay for a machine they cannot always run, and the electricity companies lose money during shortages, so they cannot fix the grid that caused the problem. The damage is gradual rather than dramatic — which is exactly why *corrode* is the right verb and not, say, *destroy*.",
+      "meaning": "To **corrode** is literally to eat away at metal, the way rust or acid does. Used figuratively — which is how you will usually meet it — it means to weaken something slowly and steadily from within: trust, confidence, an argument, a relationship. The key idea is slow damage, not a sudden break.",
+      "examples": [
+        "Being left out of the group chat for a month corroded a friendship that had lasted since third grade.",
+        "Cutting corners on small assignments corrodes the study habits you need when the big test finally arrives."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Adaptation vs. mitigation",
+      "articleQuote": "Jean-Luc Mélenchon, her rival on the populist left, countered that \"air-conditioning everywhere\" would heat up the planet, thereby only \"increasing the damage\".",
+      "meaning": "This is the central organising distinction in **environmental policy**, and it explains a fight running underneath almost every climate story you will ever read.\n\nStart with a leaking roof. There are two completely different things you can do about it. You can climb up and patch the hole — that attacks the *cause*. Or you can put buckets on the floor and move the sofa — that reduces the *harm* while the hole stays exactly where it is. Both are sensible. Neither is a substitute for the other. And if you only have one afternoon, you have to choose.\n\nClimate policy has the same two moves. **Mitigation** attacks the cause: fewer greenhouse-gas emissions, so the planet warms less. **Adaptation** reduces the harm you suffer from the warming that is already coming: sea walls, heat-proof housing, shaded schools — and air-conditioning.\n\nThat is exactly the argument in this article. Marine Le Pen demands more air-conditioners in French schools, hospitals and care homes: pure adaptation, protect people from the heat that is here. Mélenchon objects that cooling everything would heat the planet further — and he has a point, since cooling already produces about 4% of global greenhouse-gas emissions, and the UN expects demand to more than triple by 2050. His worry is that the buckets make you lazy about the roof. Al Gore said as much, calling reliance on adaptation \"a kind of laziness.\"\n\nThe reason this distinction is worth carrying around is that it applies far beyond climate. You are failing a class: do you fix the cause (study differently, get a tutor) or limit the damage (extra credit, drop to a lighter course)? A town floods: build upstream drainage, or raise the houses? Whenever you read about a response to a problem, ask which one it is — and notice when someone is accused of doing the second to avoid the first."
+    },
+    {
+      "name": "Peak demand",
+      "articleQuote": "Power cuts cluster in heatwaves—when electricity demand peaks—leaving people who have grown accustomed to AC both unprotected and unacclimatised.",
+      "meaning": "This is an idea from **engineering and economics**, and it is the single best explanation for why systems break at the worst possible moment.\n\nThink about your school's hallways. They are not built for the average number of students walking through them, because on average the hallways are empty — everyone is in class. They are built for the four minutes between periods when *everybody* moves at once. That busiest moment is the **peak**, and the peak is what determines how big the hallway has to be.\n\nElectricity works the same way. A grid has to be able to deliver whatever everyone is drawing *simultaneously*, right now — electricity is used the instant it is made. So the size of a country's grid is set by its worst hour of the year, not its typical one. Here is the cruel part: the peak and the emergency are the same event. On the hottest day, every air-conditioner in the country switches on within a few hours of each other. In India, AC units already account for perhaps a quarter of peak electricity demand, and peak consumption for cooling alone could triple to 180 gigawatts by 2035. That is why blackouts *cluster in heatwaves* — the grid fails precisely when people need it to save their lives.\n\nPeaks are also expensive in a way that feels unfair. All that extra capacity — the plants, the wires, the transformers — sits mostly idle the rest of the year, but somebody still has to pay to build it. That is why New York's mayor asked people to set their thermostats to 78°F: not because the grid lacked power on average, but to shave the peak.\n\nOnce you have the idea you will spot it everywhere: the school wifi that only dies during online testing, the bathroom line that only exists at halftime, the highway with eight lanes that are empty at 2pm. The right question about any shared system is never \"how much does it handle usually?\" — it is \"what happens when everyone wants it at once?\""
+    },
+    {
+      "name": "Self-reinforcing spiral",
+      "articleQuote": "Countries that cannot afford to invest in grids, and in AC, risk entering a self-reinforcing spiral.",
+      "meaning": "This one comes from **systems thinking** (economists call it a feedback loop, and when it runs downhill, a vicious cycle). The idea: sometimes a problem's *output* becomes its own *input*, so it feeds itself and gets worse without anyone doing anything new.\n\nThe classic demonstration is a microphone held too close to a speaker. A tiny sound goes into the mic, comes out of the speaker louder, goes back into the mic louder still — and within a second you get that ear-splitting screech. Nobody turned anything up. The loop did it.\n\nThe article lays out a beautifully clean example. A country's grid is weak, so power cuts hit during heatwaves. To cope, the state-owned electricity firms have to buy emergency power on the spot market at terrible prices. That loses them money, so they sink further into debt. Being in debt means they cannot afford to upgrade the grid — which is what caused the power cuts in the first place. Round it goes, each lap leaving the grid worse than the last. Meanwhile households, watching the blackouts, hesitate to buy an AC they may not be able to run, so demand for reliable power never turns into the paying customers that would fund the fix.\n\nLoops run uphill too. A team wins a few games, so more good players want to join, so it wins more — that is a *virtuous* cycle, the same machinery pointed the other way. You have probably lived through both: falling behind in a class makes you dread it, so you avoid the homework, so you fall further behind; getting good at a game makes it fun, so you play more, so you get better.\n\nThe practical payoff is knowing what to look for. You cannot escape a spiral by trying harder inside it — you have to break one link. That is exactly why the article's proposed fixes are things like development banks financing grid storage or bulk-buying efficient units: outside money, injected once, to snap the loop."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article calls Europe the region where heat kills most disproportionately. What makes that striking?",
+      "options": [
+        "Europe is the hottest region on Earth by average temperature",
+        "Europe has under 10% of the world's people but about 36% of its heat deaths",
+        "Europe has no laws requiring cooling in hospitals or schools",
+        "Europe's heat deaths are falling faster than anywhere else"
+      ],
+      "answerIndex": 1,
+      "explanation": "Europe is wealthy and temperate for its latitude, yet accounts for roughly 36% of the world's heat deaths with less than a tenth of its population — partly because it is ageing and warming fast, and partly because only about 23% of European households have AC."
+    },
+    {
+      "question": "\"All that might seem to lead to a straightforward political calculus: more AC for everyone, everywhere.\" What does calculus mean here?",
+      "options": [
+        "A branch of advanced mathematics used to model the climate",
+        "An official policy that several governments have already adopted",
+        "The weighing-up of costs and benefits behind a decision",
+        "A precise numerical forecast of future demand"
+      ],
+      "answerIndex": 2,
+      "explanation": "Outside of math class, a calculus is the mental arithmetic of pros and cons behind a decision — here, the seemingly easy sum of \"AC saves lives, so provide more of it.\""
+    },
+    {
+      "question": "Marine Le Pen wants more air-conditioners in French schools and hospitals; Mélenchon says cooling everything would only \"increase the damage.\" What is the underlying disagreement?",
+      "options": [
+        "Whether extreme heat is actually dangerous to human health",
+        "Whether to reduce the harm from heat, or to avoid worsening the cause of it",
+        "Whether France or the EU should pay for the machines",
+        "Whether air-conditioners actually lower indoor temperatures"
+      ],
+      "answerIndex": 1,
+      "explanation": "This is the adaptation-versus-mitigation split: Le Pen wants to protect people from heat that is already here, while Mélenchon worries that all that cooling — already about 4% of global emissions — makes the warming worse."
+    },
+    {
+      "question": "Why do power cuts tend to cluster during heatwaves rather than being spread evenly through the year?",
+      "options": [
+        "Extreme heat physically melts most power lines and transformers",
+        "Utilities deliberately shut off power in summer to save fuel for winter",
+        "Everyone's cooling switches on at once, so demand hits a peak the grid was never built to handle",
+        "Power plants must be closed for maintenance during the hottest months"
+      ],
+      "answerIndex": 2,
+      "explanation": "A grid has to meet whatever everyone draws simultaneously, and a heatwave creates the year's peak — in India, AC alone is about a quarter of peak demand — so the system fails exactly when it is needed most."
+    },
+    {
+      "question": "The article describes state-owned electricity firms in places like India and Pakistan sinking into a \"self-reinforcing spiral.\" How does that loop work?",
+      "options": [
+        "Shortages force costly emergency power purchases, which deepen debt, which prevents the grid investment that would end the shortages",
+        "Customers use less power each year, so firms raise prices, so customers use even less",
+        "Governments seize the firms' profits, so the firms stop generating electricity",
+        "New air-conditioners are so efficient that firms can no longer sell enough electricity"
+      ],
+      "answerIndex": 0,
+      "explanation": "Each lap of the loop leaves the grid weaker: cuts force expensive spot-market buying, the losses sap the ability to invest, and the un-upgraded grid produces more cuts."
+    }
+  ]
+}
