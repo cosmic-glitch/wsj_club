@@ -85,7 +85,7 @@ Audience calibration and the exact browser-capture snippet live in the skills �
 
 GitHub `cosmic-glitch/wsj_club` → Vercel project `wsj_club` (team *Anurag's projects*); **push to `main` = production deploy** at dailyreadingclub.com. `npm run build` validates all content JSON.
 
-Env (Vercel Production + Preview, mirrored in the gitignored `.env.local`): `OPENAI_API_KEY`, `AUTH_SECRET`, `OWNER_USERS` (= `anurag`), `BLOB_READ_WRITE_TOKEN` (from the linked `wsj-club-quizzes` store), `SUPABASE_URL` + `SUPABASE_SERVICE_KEY`; `SUPABASE_DB_URL` (direct Postgres string) is local/VM-only, for migrations + the DB backup. (`AUTH_USERS`/`ADMIN_USERS` are dead — users live in `rc_users` via `lib/users.ts`; the env vars can be deleted wherever they linger.) Sensitive values aren't `vercel env pull`-able; recreate `.env.local` by hand on a fresh checkout. Current roster: `anurag` (owner) → arjun, anusha, samaira, mehar; `madan` → puneeth; `aju` → gibran; `madhu` (no students yet).
+Env (Vercel Production + Preview, mirrored in the gitignored `.env.local`): `OPENAI_API_KEY`, `AUTH_SECRET`, `OWNER_USERS` (= `anurag`), `BLOB_READ_WRITE_TOKEN` (from the linked `wsj-club-quizzes` store), `SUPABASE_URL` + `SUPABASE_SERVICE_KEY`; `SUPABASE_DB_URL` (direct Postgres string) is local/VM-only, for migrations + the DB backup. That list is exhaustive — logins are NOT env-based; they live in `rc_users` via `lib/users.ts` (add people with `scripts/add-user.mjs`). Sensitive values aren't `vercel env pull`-able; recreate `.env.local` by hand on a fresh checkout. Current roster: `anurag` (owner) → arjun, anusha, samaira, mehar; `madan` → puneeth; `aju` → gibran; `madhu` (no students yet).
 
 ## Backups
 
