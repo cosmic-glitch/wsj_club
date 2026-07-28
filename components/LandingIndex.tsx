@@ -173,7 +173,11 @@ export default function LandingIndex({
           Bank link lives INSIDE HomeAuthBar (next to Reports), not here.
           On junior a quiet cross-link back to the main club sits at the
           left. */}
-      <div className="mx-auto max-w-[980px] px-[18px]">
+      {/* relative z-10: the masthead's Anton line box overflows UPWARD well
+          past the <header> (leading-.95 on a 128px face), and since the header
+          comes later in the DOM it would otherwise paint over this bar and eat
+          clicks on whichever link sits above the "CLUB" glyphs. */}
+      <div className="relative z-10 mx-auto max-w-[980px] px-[18px]">
         <div
           className={`flex min-h-[37px] items-center border-b-2 border-[#0a0a0a] py-1 ${
             junior ? "justify-between gap-4" : "justify-end"

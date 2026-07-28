@@ -1,6 +1,6 @@
 ---
 name: wsj-pick-article-junior
-description: Recommend JUNIOR-track (US grades 5–7) article candidates for the Reading Club, scouting both The Wall Street Journal and The Economist. Use when the user says "pick a junior article", "junior candidates", "what should the juniors read", or wants suggestions for the /junior track — including building the junior vote ballot (wsj-open-vote's junior mode draws its candidates from this skill's ranked field). Browses both homepages (checking each is logged in), checks what the junior track has already covered, shortlists 8 candidates and reads each one in full, then recommends a ranked pick plus runners-up for the user to choose from.
+description: Recommend JUNIOR-track (US grades 5–7) article candidates for the Reading Club, scouting both The Wall Street Journal and The Economist. Use when the user says "pick a junior article", "junior candidates", "what should the juniors read", or wants suggestions for the /junior track — including building the junior vote ballot (wsj-open-vote's junior mode draws its candidates from this skill's ranked field). Reads the club's open junior suggestions (members propose links from the site), browses both homepages (checking each is logged in), checks what the junior track has already covered, shortlists 8 candidates and reads each one in full alongside every suggestion, then recommends a ranked pick plus runners-up for the user to choose from.
 ---
 
 # WSJ Reading Club — pick a JUNIOR article (grades 5–7)
@@ -25,7 +25,9 @@ Scout **both sources** and rank candidates across the two together, one combined
 
 6. **It must be a real text article you can read in full** — same rule as senior (no video-led pages, live blogs, chart-only stubs; The Economist hard-paywalls logged-out readers, which is a login problem to fix, not a reason to drop a piece).
 
-7. **Coverage check runs on the JUNIOR dir.** `ls content/junior/` and skim those titles/concepts (the track is occasional, so this list is short). Also glance at recent senior titles for awareness — but overlap with the senior track is **not** a strike: the two tracks serve different kids, and a story worth teaching twice at two depths is fine.
+7. **Club suggestions are candidates too.** Members can propose an article from the site, tagged for the junior track. Every **open** junior suggestion enters the field: read it in full, judge it on the criteria above — no bonus for being suggested, no free pass either — and give it a line in the ranked field so the member gets a real answer. See `wsj-pick-article`'s criterion 6 for the full reasoning.
+
+8. **Coverage check runs on the JUNIOR dir.** `ls content/junior/` and skim those titles/concepts (the track is occasional, so this list is short). Also glance at recent senior titles for awareness — but overlap with the senior track is **not** a strike: the two tracks serve different kids, and a story worth teaching twice at two depths is fine.
 
 ## Browser: always use Playwright (never the Chrome extension)
 
@@ -35,12 +37,25 @@ Same hard rule as the senior skill: **all browsing goes through the Playwright M
 
 Mirror the senior skill's workflow with these deltas:
 
-1. **Check junior coverage.** `ls content/junior/` and read the titles (and skim concepts) of the recent junior readings; glance at the last few senior titles for awareness only.
+1. **Read the junior suggestions first.**
 
-2. **Browse both homepages** (WSJ + The Economist), with the senior skill's login checks. Sweep widely and collect a raw pool of **12–16 candidates**, tagged with source, URL, and a one-line blurb — but sweep with junior eyes: features, science/nature, sports, space, animals, money-in-real-life, how-things-work. From the raw pool, shortlist **exactly 8** on the headlines/blurbs alone.
+   ```
+   node --env-file=.env.local scripts/suggestions.mjs --track=junior
+   ```
 
-3. **Read all 8 in full — don't decide on headlines.** For each, pull the real body (`browser_evaluate` on `article p`) and judge from the actual text: the story hook for a 10–13 year old, the 3 junior-register vocab words, the 2 transferable concepts, the prerequisite load (the 11-year-old gate — bake it into the score as a cap), articulation, and appropriateness. Jot a one-line verdict + rough 1–10 score per article. A dud (video-led, live blog, stub, genuine paywall) gets dropped and replaced from the raw pool — finish having genuinely read 8.
+   Each row is an article a member asked the junior club to read. They are read in step 3 **in addition to** the 8 you shortlist, and each gets a line in the ranked field in step 4. A row tagged `ALREADY READ` is one the club has published — say so and drop it. Nothing printed means no suggestions today.
 
-4. **Recommend — grounded in all 8 reads.** Present the **full ranked field** (one line each: rank, source, linked title, domain, verdict/score), then **one top pick** expanded (the story hook, the vocab/concepts you found, why it clears the 11-year-old gate) and **2–3 runners-up** with trade-offs. Note any dud you dropped and why.
+2. **Check junior coverage.** `ls content/junior/` and read the titles (and skim concepts) of the recent junior readings; glance at the last few senior titles for awareness only.
 
-5. **Stop there.** The user is the validation layer — they choose and invoke `wsj-reading-junior` (or say "go with the top pick", in which case run that skill with the URL). On a **junior vote day**, the `wsj-open-vote` skill takes this field's **top 5** as the ballot instead — but that's its workflow, not yours.
+3. **Browse both homepages** (WSJ + The Economist), with the senior skill's login checks. Sweep widely and collect a raw pool of **12–16 candidates**, tagged with source, URL, and a one-line blurb — but sweep with junior eyes: features, science/nature, sports, space, animals, money-in-real-life, how-things-work. From the raw pool, shortlist **exactly 8** on the headlines/blurbs alone.
+
+4. **Read all 8 in full — plus every open suggestion — don't decide on headlines.** For each, pull the real body (`browser_evaluate` on `article p`) and judge from the actual text: the story hook for a 10–13 year old, the 3 junior-register vocab words, the 2 transferable concepts, the prerequisite load (the 11-year-old gate — bake it into the score as a cap), articulation, and appropriateness. Jot a one-line verdict + rough 1–10 score per article. A dud (video-led, live blog, stub, genuine paywall) gets dropped and replaced from the raw pool — finish having genuinely read 8, plus the suggestions. A dud *suggestion* isn't replaced: that verdict is what the member gets told.
+
+5. **Recommend — grounded in every read.** Present the **full ranked field** — the 8 shortlisted plus every open suggestion, one line each: rank, source, linked title, domain, verdict/score, and **who suggested it** where that applies. Then **one top pick** expanded (the story hook, the vocab/concepts you found, why it clears the 11-year-old gate) and **2–3 runners-up** with trade-offs. Note any dud you dropped and why, and give **a short verdict on each suggestion by name** so the user can tell the member something real.
+
+6. **Stop there — but hand over the suggestion bookkeeping.** The user is the validation layer — they choose and invoke `wsj-reading-junior` (or say "go with the top pick", in which case run that skill with the URL). On a **junior vote day**, the `wsj-open-vote` skill takes this field's **top 5** as the ballot instead — but that's its workflow, not yours. If suggestions were in play, close with the lines to resolve them (unresolved ones come back tomorrow) and offer to run them once the user decides:
+
+   ```
+   node --env-file=.env.local scripts/suggestions.mjs --used=<id>      # it became the day's read
+   node --env-file=.env.local scripts/suggestions.mjs --declined=<id>  # the club looked and passed
+   ```

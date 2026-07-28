@@ -16,7 +16,7 @@ Live: https://dailyreadingclub.com · Repo: https://github.com/cosmic-glitch/wsj
 - **Next.js** (App Router, Next 16, React 19, Tailwind v4). Daily content is **data, not code**: one JSON per day in `content/` (senior) / `content/junior/`. Content pages (index, handout, self-quiz, word bank) are **statically generated**; the voice quiz adds dynamic API routes and the admin pages.
 - **Roles:** every login is a **parent** (the grown-up role — historically "teacher") or a **student** with a `parentId`. A parent sees/manages only their own classroom; the **owner** (env `OWNER_USERS`) additionally sees every classroom, may delete any attempt, and may add students to any classroom (rename/reset stay own-classroom for everyone). See `PLAN-classrooms.md`.
 - **Tracks:** `type Track = "senior" | "junior"` (`lib/content.ts`). `date` is NOT unique across tracks. Senior keeps bare paths; junior inserts a `junior/` segment everywhere (content, article pages, audio, article-text, Blob keys, routes). Shared components (`LandingIndex`, `Handout`, `SelfQuiz`, `VoiceQuiz`, `WordBank`) take a `track` prop; each track's routes are thin wrappers around them. See `PLAN-junior.md`.
-- **Storage:** structured data (users, quiz sessions, in-progress slots, polls/ballots) lives in **Supabase Postgres** — `rc_*` tables in the shared whisper-anywhere project, accessed via `lib/db.ts` (plain-fetch PostgREST, service key, RLS deny-all; scripts use `scripts/db-rest.mjs`). **Vercel Blob** keeps only the large/immutable byte blobs: recordings (incl. the overwritten-in-place slot WAV), article text, plus the pre-migration records as a read-only archive. Migration history: `PLAN-supabase.md`.
+- **Storage:** structured data (users, quiz sessions, in-progress slots, polls/ballots, article suggestions) lives in **Supabase Postgres** — `rc_*` tables in the shared whisper-anywhere project, accessed via `lib/db.ts` (plain-fetch PostgREST, service key, RLS deny-all; scripts use `scripts/db-rest.mjs`). **Vercel Blob** keeps only the large/immutable byte blobs: recordings (incl. the overwritten-in-place slot WAV), article text, plus the pre-migration records as a read-only archive. Migration history: `PLAN-supabase.md`.
 - **Design language:** brutalist — Anton display + Space Mono labels (`app/fonts.ts`), white canvas, near-black ink, signal-yellow accent, thick square borders, hard offset shadows, hover inversion.
 
 ### Where things live
@@ -29,7 +29,7 @@ Live: https://dailyreadingclub.com · Repo: https://github.com/cosmic-glitch/wsj
 - `app/` — routes (thin wrappers) + API routes; `app/admin/` = Reports + Manage Students
 - `components/` — the shared page bodies and client widgets
 - `lib/` — content schema/loader (`content.ts`), auth (`auth.ts`, `users.ts`), tutor + grader prompts (`quiz-prompt.ts`, `grading-examples.ts`, `score.ts`), session helpers (`sessions.ts`, `session-io.ts`), rich text (`rich-text.tsx`), DB (`db.ts`)
-- `scripts/` — daily-flow CLIs (upload-article-text, gen-pronunciation, gen-glossary-audio, add-glossary-tags, check-glossary, open-vote, check-vote) + admin/ops (add-user, backup-blob, backup-db, apply-migration)
+- `scripts/` — daily-flow CLIs (upload-article-text, gen-pronunciation, gen-glossary-audio, add-glossary-tags, check-glossary, open-vote, check-vote, suggestions) + admin/ops (add-user, backup-blob, backup-db, apply-migration)
 - `.claude/skills/` — the daily workflow (pickers, vote open/check, authoring for both tracks)
 
 ## Content rules (invariants for ANY session that touches content)
@@ -66,9 +66,15 @@ An AI tutor orally quizzes the student on the day's article in a modal: TTS ques
 
 The club can choose the day's article by voting on the home page — per-track, opt-in per day, always for today. The owner opens it with the `wsj-open-vote` skill (senior ballot: top 7 news + top 3 enrichment picks; junior: top 5 news), everyone votes via the ballot modal (one login = one vote, changeable while live), and the owner reads the tally with `wsj-check-vote` (voter names owner-side only). Publishing the winner (with `clubPick: true`) is what closes the poll. No deadline on the site — the owner announces the window in the group chat. Polls live in `rc_polls` (unique per track+date), ballots in `rc_ballots` — one row per (poll, voter), the PK, upserted to change a vote.
 
+## Article suggestions
+
+Any logged-in member can propose a read: **Suggest** in the topline auth bar (`components/SuggestArticle.tsx`, in `HomeAuthBar`, so it's on every page) opens a one-field modal — track (Regular default / Junior) + the URL, nothing else. It POSTs to `/api/suggestions`, which is **write-only by design**: the queue is a note to the owner, never shown back on the site (a visible queue would become a second, competing vote).
+
+Rows live in `rc_suggestions`, unique per (track, url, username) so a re-send upserts instead of piling up. `scripts/suggestions.mjs` is the owner's whole interface — it lists the **open** ones (flagging any URL already published as `ALREADY READ`) and resolves them with `--used=<id>` / `--declined=<id>`. **Resolution is manual and nothing expires:** an unresolved suggestion comes back to the picker every day until you close it. Both news pickers (`wsj-pick-article`, `wsj-pick-article-junior`) run that script as step 1 and must read each suggestion in full, rank it in the day's field, and report a verdict by suggester name — the member always gets an answer. Enrichment picking is deliberately outside this loop (a suggestion surfacing on both pickers would double it on a vote ballot).
+
 ## Daily workflow
 
-1. **Pick** — `wsj-pick-article` (day's news, WSJ + Economist; stops and asks you to log in if either site looks paywalled out) or `wsj-pick-enrichment` (timeless-wisdom read, ≤2,000 words, mostly-free sources; Morgan Housel permanently excluded — owner rule). Junior: `wsj-pick-article-junior`. Pickers only recommend — the user picks.
+1. **Pick** — `wsj-pick-article` (day's news, WSJ + Economist; reads the club's open suggestions into the field first; stops and asks you to log in if either site looks paywalled out) or `wsj-pick-enrichment` (timeless-wisdom read, ≤2,000 words, mostly-free sources; Morgan Housel permanently excluded — owner rule). Junior: `wsj-pick-article-junior`. Pickers only recommend — the user picks.
 2. *(vote days)* **`wsj-open-vote`** → the club votes → **`wsj-check-vote`** → the winner feeds step 3 with `clubPick: true`.
 3. **Author** — `wsj-reading` (senior) / `wsj-reading-junior` (grades 5–7 calibration, ≤2 concepts). Reads the article in the browser, **proposes vocab + concepts and waits for explicit sign-off**, then: writes the content JSON, captures the self-contained HTML article page + plain article text, uploads the text to Blob, generates pronunciation clips, authors + validates the glossary (+ glossary audio), builds, commits, pushes (= deploys).
 

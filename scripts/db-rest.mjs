@@ -43,6 +43,20 @@ export async function dbUpsert(table, rows, onConflict) {
   if (!res.ok) throw new Error(`upsert ${table}: ${res.status} ${await res.text()}`);
 }
 
+/** PATCH the rows matching the filter query (refuses an empty filter). */
+export async function dbUpdate(table, query, patch) {
+  if (!query?.startsWith("?") || query.length < 2) {
+    throw new Error(`update ${table}: empty filter refused`);
+  }
+  const { base, headers } = config();
+  const res = await fetch(`${base}${table}${query}`, {
+    method: "PATCH",
+    headers: { ...headers, Prefer: "return=minimal" },
+    body: JSON.stringify(patch),
+  });
+  if (!res.ok) throw new Error(`update ${table}: ${res.status} ${await res.text()}`);
+}
+
 /** DELETE rows matching the filter query (refuses an empty filter). */
 export async function dbDelete(table, query) {
   if (!query?.startsWith("?") || query.length < 2) {

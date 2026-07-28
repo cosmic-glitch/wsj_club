@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import SuggestArticle from "./SuggestArticle";
 import { clearAuthCache, useAuth, writeAuthCache } from "./AuthProvider";
 
 // The site's login/reports controls: small uppercase mono TEXT links —
@@ -13,7 +14,8 @@ import { clearAuthCache, useAuth, writeAuthCache } from "./AuthProvider";
 // word-bank/reports/students links + log out when logged in. The bar renders
 // IDENTICALLY everywhere — greeting + links — so navigating between pages
 // never makes it jitter (the greeting used to be header-suppressed, which
-// made "Hi <user>" vanish and the links shift on every inner page). The links
+// made "Hi <user>" vanish and the links shift on every inner page). "Suggest"
+// (any member may propose an article) sits first in the logged-in group. The links
 // render as ONE unbreakable unit (so a wrap can never strand a "/"
 // separator); only the greeting may wrap away onto its own line.
 const bar =
@@ -113,6 +115,9 @@ export default function HomeAuthBar() {
             together (below the greeting / the header wordmark), so a line can
             never end or start with a stray "/". */}
         <span className="flex items-center gap-1 whitespace-nowrap">
+          {/* Everyone — parent, student, owner — may propose a read. */}
+          <SuggestArticle className={bar} />
+          <Slash />
           {isAdmin ? (
             <>
               <Link href="/admin" className={bar}>
