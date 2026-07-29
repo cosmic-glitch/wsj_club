@@ -1,5 +1,5 @@
-import { currentUser, isAdmin, isOwner } from "@/lib/auth";
-import { listStudents, listParents, type PublicUser } from "@/lib/users";
+import { currentUserRecord, isOwner } from "@/lib/auth";
+import { listAllUsers, type PublicUser } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
 import StudentRoster, {
   type Classroom,
@@ -14,9 +14,12 @@ export const metadata = {
 };
 
 export default async function StudentsPage() {
-  const user = await currentUser();
+  // Same two-round-trip budget as the Reports page: one record read for
+  // identity + role, then sessions and the full roster overlapped below.
+  const record = await currentUserRecord();
+  const user = record && record.active !== false ? record.username : null;
 
-  if (!user) {
+  if (!user || !record) {
     return (
       <div>
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
@@ -31,7 +34,8 @@ export default async function StudentsPage() {
 
   // Parent-only. A logged-in student who navigates here directly is sent back
   // to their reports.
-  if (!(await isAdmin(user))) {
+  const owner = isOwner(user);
+  if (!owner && record.role !== "parent") {
     return (
       <div>
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
@@ -56,16 +60,16 @@ export default async function StudentsPage() {
     string,
     { attempts: number; lastActiveIso: string | null; scoreSum: number; scoreCount: number }
   >();
-  const result = await loadSessions();
+  const [result, allUsers] = await Promise.all([loadSessions(), listAllUsers()]);
   if (!("error" in result)) {
     for (const s of result) {
       // A live/paused attempt (the in-progress slot) isn't a finished attempt
       // yet — it becomes one when the student Ends (or Cancels) it.
       if (s.inProgress) continue;
-      const owner = s.loginUser ?? s.studentName ?? "";
-      if (!owner) continue;
+      const who = s.loginUser ?? s.studentName ?? "";
+      if (!who) continue;
       const cur =
-        stats.get(owner) ?? { attempts: 0, lastActiveIso: null, scoreSum: 0, scoreCount: 0 };
+        stats.get(who) ?? { attempts: 0, lastActiveIso: null, scoreSum: 0, scoreCount: 0 };
       cur.attempts += 1;
       if (s.endedAt && (!cur.lastActiveIso || s.endedAt > cur.lastActiveIso)) {
         cur.lastActiveIso = s.endedAt;
@@ -77,7 +81,7 @@ export default async function StudentsPage() {
         cur.scoreSum += parseFloat(m[1]);
         cur.scoreCount += 1;
       }
-      stats.set(owner, cur);
+      stats.set(who, cur);
     }
   }
 
@@ -98,7 +102,16 @@ export default async function StudentsPage() {
         };
       });
 
-  const ownRoster = toRoster(await listStudents(user));
+  // Classrooms are carved out of the one listAllUsers read; keep listStudents'
+  // display-name ordering.
+  const byName = (a: PublicUser, b: PublicUser) =>
+    a.displayName.localeCompare(b.displayName);
+  const studentsOf = (parentId: string): PublicUser[] =>
+    allUsers
+      .filter((u) => u.role === "student" && u.parentId === parentId)
+      .sort(byName);
+
+  const ownRoster = toRoster(studentsOf(user));
 
   // The owner also SEES every other parent's classroom. It may ADD a student to
   // any of them (the /api/students POST lets the owner target a parentId), but
@@ -106,7 +119,9 @@ export default async function StudentsPage() {
   // ownership-checks and doesn't exempt the owner). A regular parent, and a
   // lone owner with no other parents, manages just their own students
   // (unchanged).
-  const parents = isOwner(user) ? await listParents() : [];
+  const parents = owner
+    ? allUsers.filter((u) => u.role === "parent").sort(byName)
+    : [];
   const others = parents.filter((p) => p.username !== user);
 
   if (others.length === 0) {
@@ -122,12 +137,10 @@ export default async function StudentsPage() {
   // own students first (fully editable), then each other parent's (visible,
   // addable-to via the modal's classroom selector, but not Rename/Reset).
   const self = parents.find((p) => p.username === user);
-  const otherRosters = await Promise.all(
-    others.map(async (p) => ({
-      parent: p,
-      students: toRoster(await listStudents(p.username)),
-    }))
-  );
+  const otherRosters = others.map((p) => ({
+    parent: p,
+    students: toRoster(studentsOf(p.username)),
+  }));
   const unified: RosterEntry[] = [
     ...ownRoster.map((s) => ({
       ...s,

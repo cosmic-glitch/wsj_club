@@ -128,6 +128,16 @@ export async function listStudents(parentId: string): Promise<PublicUser[]> {
     .sort((a, b) => a.displayName.localeCompare(b.displayName));
 }
 
+/**
+ * Every user record in one query (owner's Reports view). The per-parent
+ * listStudents loop this replaces cost one sequential DB round trip per
+ * classroom.
+ */
+export async function listAllUsers(): Promise<PublicUser[]> {
+  const users = await selectUsers("?select=*");
+  return users.map(toPublic);
+}
+
 /** Every parent (owner use). */
 export async function listParents(): Promise<PublicUser[]> {
   const users = await selectUsers("?role=eq.parent&select=*");

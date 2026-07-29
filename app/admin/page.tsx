@@ -1,5 +1,5 @@
-import { currentUser, isAdmin, isOwner } from "@/lib/auth";
-import { listStudents, listParents } from "@/lib/users";
+import { currentUserRecord, isOwner } from "@/lib/auth";
+import { listAllUsers, type PublicUser } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
 import { dateBig } from "@/lib/content";
 import AdminSessions, {
@@ -102,10 +102,15 @@ function classroomPanel(
 }
 
 export default async function AdminPage() {
-  const user = await currentUser();
+  // One record read serves both identity and role — currentUser() followed by
+  // isAdmin() would fetch the same rc_users row twice. Every DB round trip
+  // here is ~300ms+, so the page's whole budget is the number of sequential
+  // awaits; keep it at two (this read, then the Promise.all below).
+  const record = await currentUserRecord();
+  const user = record && record.active !== false ? record.username : null;
 
   // Any logged-in user can see their reports; logged-out visitors can't.
-  if (!user) {
+  if (!user || !record) {
     return (
       <div>
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
@@ -118,13 +123,19 @@ export default async function AdminPage() {
     );
   }
 
-  const admin = await isAdmin(user);
   // Delete is OWNER-only: a regular parent can view (and open Details on) their
   // classroom's attempts but never delete one — only the owner gets a Delete
   // column, and only in their own classroom (other parents' tabs stay read-only,
   // and the delete route ownership-checks regardless).
   const owner = isOwner(user);
-  const result = await loadSessions();
+  const admin = owner || record.role === "parent";
+
+  // Sessions and the roster are independent reads — overlap them. Students
+  // never need the roster, so theirs stays a single read.
+  const [result, allUsers] = await Promise.all([
+    loadSessions(),
+    admin ? listAllUsers() : Promise.resolve<PublicUser[]>([]),
+  ]);
 
   if ("error" in result) {
     return (
@@ -175,7 +186,11 @@ export default async function AdminPage() {
   // themselves; older sessions predate the parent stamp, so scopeToClassroom
   // falls back to roster membership by loginUser.
   if (!owner) {
-    const roster = new Set((await listStudents(user)).map((s) => s.username));
+    const roster = new Set(
+      allUsers
+        .filter((u) => u.role === "student" && u.parentId === user)
+        .map((u) => u.username)
+    );
     roster.add(user);
     const groups = groupByArticle(scopeToClassroom(result, user, roster));
     return (
@@ -202,13 +217,14 @@ export default async function AdminPage() {
   // Resolve each session's parent: prefer the stamped parentId; fall back to
   // roster membership by the owning student (older sessions predate the stamp).
   // A parent's own attempts map to themselves.
-  const parents = await listParents();
-  const parentDisplay = new Map(parents.map((p) => [p.username, p.displayName]));
+  const parentDisplay = new Map<string, string>();
   const studentToParent = new Map<string, string>();
-  for (const p of parents) {
-    studentToParent.set(p.username, p.username);
-    for (const st of await listStudents(p.username)) {
-      studentToParent.set(st.username, p.username);
+  for (const u of allUsers) {
+    if (u.role === "parent") {
+      parentDisplay.set(u.username, u.displayName);
+      studentToParent.set(u.username, u.username);
+    } else if (u.parentId) {
+      studentToParent.set(u.username, u.parentId);
     }
   }
   const parentNameFor = (s: Session): string => {
