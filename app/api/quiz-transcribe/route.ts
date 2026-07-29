@@ -2,19 +2,21 @@ import { del } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 import { getReading, type Track } from "@/lib/content";
 
-// The speech-to-text model for the student's spoken answers. `whisper-1` is the
-// robust default (it's what the realtime session used for input transcription);
-// env-overridable to gpt-4o-transcribe / gpt-4o-mini-transcribe.
-const STT_MODEL = process.env.STT_MODEL || "whisper-1";
+// The speech-to-text model for the student's spoken answers. `gpt-transcribe`
+// beat whisper-1 on an A/B over two real session recordings (no repetition
+// loops, no dropped opening, fewer garbles) and is cheaper ($0.0045/min vs
+// $0.006); env-overridable back to whisper-1 / gpt-4o-transcribe.
+const STT_MODEL = process.env.STT_MODEL || "gpt-transcribe";
 
 /**
  * Context prompt for the STT call. Each clip is transcribed in isolation, so
  * the model never hears the tutor's question — and reliably garbles the very
  * word being quizzed ("fickle" → "Circle", "loathe" → "love"), which then reads
  * as a wrong answer to the tutor. Priming the decoder with the pending question
- * and the day's terms fixed 6/6 replayed garbles. whisper-1 keeps only the LAST
- * 224 tokens of the prompt, so the vocabulary list goes at the end — it's the
- * one part that must survive truncation.
+ * and the day's terms fixed 6/6 replayed garbles. The vocabulary list goes at
+ * the end: whisper-1 (still an env-selectable fallback) keeps only the LAST
+ * 224 tokens of the prompt, and the vocab is the one part that must survive
+ * truncation.
  */
 function buildSttPrompt(date: string, track: Track, question: string): string | undefined {
   const reading = getReading(date, track);
