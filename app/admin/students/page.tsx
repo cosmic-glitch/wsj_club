@@ -1,6 +1,7 @@
 import { currentUserRecord, isOwner } from "@/lib/auth";
 import { listAllUsers, type PublicUser } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
+import { getAllReadings } from "@/lib/content";
 import StudentRoster, {
   type Classroom,
   type RosterEntry,
@@ -52,13 +53,31 @@ export default async function StudentsPage() {
     );
   }
 
+  // The last 7 reading dates across both tracks (a junior reading usually
+  // shares its date with a senior one), oldest → newest — the roster's
+  // past-week completion squares.
+  const recentDates = [
+    ...new Set([
+      ...getAllReadings("senior").map((r) => r.date),
+      ...getAllReadings("junior").map((r) => r.date),
+    ]),
+  ]
+    .sort()
+    .slice(-7);
+
   // Per-student stats (attempts + last active) from the saved sessions, keyed by
   // username, so every roster shows activity at a glance. Best-effort: a load
   // error just yields zero-stat rows rather than blanking the page. Loaded once
   // and shared across all classrooms (the owner may render several).
   const stats = new Map<
     string,
-    { attempts: number; lastActiveIso: string | null; scoreSum: number; scoreCount: number }
+    {
+      attempts: number;
+      lastActiveIso: string | null;
+      scoreSum: number;
+      scoreCount: number;
+      doneDates: Set<string>;
+    }
   >();
   const [result, allUsers] = await Promise.all([loadSessions(), listAllUsers()]);
   if (!("error" in result)) {
@@ -69,8 +88,17 @@ export default async function StudentsPage() {
       const who = s.loginUser ?? s.studentName ?? "";
       if (!who) continue;
       const cur =
-        stats.get(who) ?? { attempts: 0, lastActiveIso: null, scoreSum: 0, scoreCount: 0 };
+        stats.get(who) ?? {
+          attempts: 0,
+          lastActiveIso: null,
+          scoreSum: 0,
+          scoreCount: 0,
+          doneDates: new Set<string>(),
+        };
       cur.attempts += 1;
+      // "Completed" for the squares matches /api/quiz-dates (the streak's
+      // source): terminal and not cancelled, either track.
+      if (!s.cancelled && s.date) cur.doneDates.add(s.date);
       if (s.endedAt && (!cur.lastActiveIso || s.endedAt > cur.lastActiveIso)) {
         cur.lastActiveIso = s.endedAt;
       }
@@ -99,6 +127,7 @@ export default async function StudentsPage() {
           attempts: st?.attempts ?? 0,
           lastActiveIso: st?.lastActiveIso ?? null,
           avgScore: st && st.scoreCount > 0 ? st.scoreSum / st.scoreCount : null,
+          recentDone: st ? recentDates.filter((d) => st.doneDates.has(d)) : [],
         };
       });
 
@@ -127,7 +156,11 @@ export default async function StudentsPage() {
   if (others.length === 0) {
     return (
       <div>
-        <StudentRoster students={ownRoster} parentUsername={user} />
+        <StudentRoster
+          students={ownRoster}
+          parentUsername={user}
+          recentDates={recentDates}
+        />
       </div>
     );
   }
@@ -168,6 +201,7 @@ export default async function StudentsPage() {
       <StudentRoster
         students={unified}
         parentUsername={user}
+        recentDates={recentDates}
         title="Manage students"
         subtitle="Every family's students in one list. You can add a student under any parent; renaming and password resets stay with each student's own parent."
         showParent

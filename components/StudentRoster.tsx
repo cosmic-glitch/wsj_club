@@ -11,6 +11,9 @@ export type RosterEntry = {
   // Mean of the student's graded "X/10" scores, null when nothing is graded yet.
   avgScore: number | null;
   lastActiveIso: string | null;
+  // Of the roster's `recentDates` (the last week of readings), the ones this
+  // student has a completed quiz for — the row's filled squares.
+  recentDone: string[];
   // Owner's unified all-classrooms view: the parent's display name (the Parent
   // column) and whether the viewer may Rename/Reset this row (only the owner's
   // own students — the PATCH route ownership-checks and doesn't exempt the
@@ -34,6 +37,26 @@ function generatePassword(): string {
 
 function slugify(name: string): string {
   return name.toLowerCase().replace(/[^a-z0-9_-]+/g, "").slice(0, 32);
+}
+
+/** The viewer's local date as "YYYY-MM-DD" (StreakStrip's computation). */
+function localYMD(): string {
+  const now = new Date();
+  return [
+    now.getFullYear(),
+    String(now.getMonth() + 1).padStart(2, "0"),
+    String(now.getDate()).padStart(2, "0"),
+  ].join("-");
+}
+
+/** "2026-07-08" → "Jul 8" — for the squares' tooltips. */
+function dateTag(date: string): string {
+  const [y, m, d] = date.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
 }
 
 type Credential = { username: string; password: string; reset: boolean };
@@ -89,6 +112,7 @@ export default function StudentRoster({
   showTitle = true,
   showParent = false,
   classrooms,
+  recentDates = [],
 }: {
   students: RosterEntry[];
   parentUsername: string;
@@ -111,6 +135,10 @@ export default function StudentRoster({
   // parent selector so a student can be added under any parent; defaults to
   // `parentUsername` (the caller's own).
   classrooms?: Classroom[];
+  // The last week of reading dates (both tracks merged), oldest → newest — the
+  // Past week column's squares, StreakStrip-style: filled = quizzed, dashed =
+  // today's still open, empty = missed. Omitted/empty → no column.
+  recentDates?: string[];
 }) {
   const showAdd = canAdd ?? !readOnly;
   const router = useRouter();
@@ -178,6 +206,11 @@ export default function StudentRoster({
                 {showParent && (
                   <SortHeader label="Parent" k="parent" sort={sort} onSort={toggleSort} />
                 )}
+                {recentDates.length > 0 && (
+                  <th className="px-4 py-2.5 font-bold uppercase tracking-[.12em]">
+                    Past week
+                  </th>
+                )}
                 <SortHeader
                   label="Attempts"
                   k="attempts"
@@ -203,6 +236,7 @@ export default function StudentRoster({
                   student={s}
                   readOnly={readOnly}
                   showParent={showParent}
+                  recentDates={recentDates}
                   renaming={renaming === s.username}
                   busy={busyRow === s.username}
                   onStartRename={() => setRenaming(s.username)}
@@ -283,6 +317,7 @@ function StudentRow({
   student,
   readOnly,
   showParent,
+  recentDates,
   renaming,
   busy,
   onStartRename,
@@ -294,6 +329,7 @@ function StudentRow({
   student: RosterEntry;
   readOnly: boolean;
   showParent: boolean;
+  recentDates: string[];
   renaming: boolean;
   busy: boolean;
   onStartRename: () => void;
@@ -305,6 +341,7 @@ function StudentRow({
   // Row-level Rename/Reset: the table must allow actions AND the row must be
   // manageable by the viewer (in the owner's unified view, only own students).
   const editable = !readOnly && student.canManage !== false;
+  const done = new Set(student.recentDone);
   const [mounted, setMounted] = useState(false);
   const [draftName, setDraftName] = useState(student.displayName);
   useEffect(() => setMounted(true), []);
@@ -410,6 +447,32 @@ function StudentRow({
       </td>
       {showParent && (
         <td className="px-4 py-3 text-stone-600">{student.parentName ?? "—"}</td>
+      )}
+      {recentDates.length > 0 && (
+        <td className="px-4 py-3">
+          <div className="flex gap-1">
+            {recentDates.map((d) => {
+              const isDone = done.has(d);
+              // Local "today" only after mount (StreakStrip's semantics; the
+              // server can't know the viewer's timezone) — until then a
+              // not-yet-taken today briefly renders as missed.
+              const pending = !isDone && mounted && d >= localYMD();
+              return (
+                <div
+                  key={d}
+                  title={`${dateTag(d)} — ${isDone ? "done" : pending ? "today, still open" : "missed"}`}
+                  className={`h-3.5 w-3.5 shrink-0 ${
+                    isDone
+                      ? "border border-[#0a0a0a] bg-[#ffe600]"
+                      : pending
+                        ? "border-2 border-dashed border-[#0a0a0a]"
+                        : "border border-stone-300"
+                  }`}
+                />
+              );
+            })}
+          </div>
+        </td>
       )}
       <td className="px-4 py-3 text-right tabular-nums text-stone-600">
         {student.attempts}
