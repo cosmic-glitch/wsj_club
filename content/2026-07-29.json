@@ -1,0 +1,115 @@
+{
+  "date": "2026-07-29",
+  "title": "The Map Is Not the Territory",
+  "articleUrl": "https://fs.blog/map-and-territory/",
+  "articlePageUrl": "/articles/2026-07-29.html",
+  "voiceQuiz": true,
+  "source": "Farnam Street",
+  "vocab": [
+    {
+      "word": "fidelity",
+      "partOfSpeech": "noun",
+      "pronunciation": "fih-DEL-ih-tee",
+      "articleQuote": "If a map were to represent the territory with perfect fidelity, it would no longer be a reduction and thus would no longer be useful to us.",
+      "inContext": "Here it means exactness — a map with *perfect fidelity* would copy the real landscape detail for detail, leaving nothing out.",
+      "meaning": "Faithfulness to the original — how exactly a copy, description, or reproduction matches the real thing. (It can also mean loyalty to a person or a promise; both senses share the idea of *staying true*.)",
+      "examples": [
+        "The movie follows the book with surprising fidelity — even the small scenes made it in.",
+        "Cheap earbuds lose audio fidelity, so the song sounds flat compared to good speakers."
+      ]
+    },
+    {
+      "word": "dogma",
+      "partOfSpeech": "noun",
+      "pronunciation": "DAWG-muh",
+      "articleQuote": "We can't use maps as dogma.",
+      "inContext": "Treating a map or model as a fixed truth that must never be questioned — even after the world it describes has changed.",
+      "meaning": "A belief or set of rules treated as unquestionably true, accepted on authority rather than re-checked against evidence.",
+      "examples": [
+        "\"Never swing at the first pitch\" had hardened into dogma on the team — even when the first pitch was perfect.",
+        "Good science treats every theory as testable, never as dogma."
+      ]
+    },
+    {
+      "word": "distill",
+      "partOfSpeech": "verb",
+      "pronunciation": "dih-STIL",
+      "articleQuote": "…the financial statements of a company, which are meant to distill the complexity of thousands of transactions into something manageable.",
+      "inContext": "The statements boil thousands of individual transactions down to a few summary numbers — keeping the essentials, dropping the detail.",
+      "meaning": "To reduce something to its essential core. Literally it means purifying a liquid by boiling and condensing it; figuratively, it means extracting just the important part from a mass of material.",
+      "examples": [
+        "She distilled twenty pages of notes into a one-page study guide.",
+        "The coach distilled the whole scouting report into one line: stop their left-handed shooter."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Proxy measures",
+      "articleQuote": "The head of customer service reported the wait-time metric as under sixty seconds, which was in line with expectations.",
+      "meaning": "This is a core idea in **statistics and management**. Many of the things we care most about can't be measured directly — how much a student actually understands, how happy customers are, how good a musician is. So we measure a **stand-in** we *can* count: a grade, a wait-time metric, a follower count. That stand-in is called a **proxy measure** (a *proxy* is someone who stands in for you, like a proxy vote).\n\nA proxy works only as long as it moves together with the real thing. The danger is **drift**: the number and the reality quietly come apart, and the dashboard keeps saying \"fine\" while the truth says otherwise. That's exactly what Jeff Bezos caught at Amazon — the system reported hold times *under sixty seconds*, so he dialed the customer-service line in the middle of the meeting and sat on hold for over ten minutes. The proxy said one thing; the territory said another.\n\nYou live with proxies every day: a grade is a proxy for learning (you can raise it by memorizing practice tests without understanding more), and likes are a proxy for whether people actually care. The skill is remembering *what the number stands for* — and, once in a while, doing Bezos's move: go check the real thing directly."
+    },
+    {
+      "name": "Feedback loops",
+      "articleQuote": "When we close off or ignore feedback loops, we don't see that the terrain has changed and we dramatically reduce our ability to adapt to a changing environment.",
+      "meaning": "An idea from **systems thinking**, used everywhere from engineering to biology to economics. A **feedback loop** is when the *results* of an action flow back to you as information that shapes your *next* action. Riding a bike is one continuous feedback loop: you drift left, you feel it, you correct right — dozens of times a minute, without thinking.\n\nNow imagine riding with your eyes closed: the actions continue, but the information stops coming back. That's a **closed-off** loop, and it's how errors pile up unnoticed. Practicing free throws without watching where the ball goes teaches you nothing; taking practice tests but never checking which answers you missed locks your mistakes in place. The article's point is that maps only stay accurate the same way — explorers go into the territory, find where the map is wrong, and send corrections back. Cut off that flow, and the map quietly goes stale while the world moves on.\n\nSo when something you're doing isn't improving, ask the systems-thinking question: *where is my feedback loop?* Is information about my results actually reaching me — and am I letting it change what I do next?"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, why would a map with perfect fidelity be useless?",
+      "options": [
+        "It would take too long and cost too much to produce",
+        "It would no longer be a reduction — it would be as complex as the reality it represents",
+        "It would become outdated the moment it was finished",
+        "No one would be trained to read it"
+      ],
+      "answerIndex": 1,
+      "explanation": "A map is useful precisely because it simplifies; copy every detail and you've just duplicated the territory instead of making a guide to it."
+    },
+    {
+      "question": "What did Jeff Bezos's phone call to the 1-800 number demonstrate?",
+      "options": [
+        "The wait-time data wasn't capturing what customers were actually experiencing",
+        "Customers had been exaggerating their complaints",
+        "The customer-service line had been disconnected",
+        "Wait times were fine, but customers were simply impatient"
+      ],
+      "answerIndex": 0,
+      "explanation": "The metric (the map) said under sixty seconds while the real experience (the territory) was a ten-minute hold — the proxy measure had drifted from reality."
+    },
+    {
+      "question": "What lesson does the article draw from Newton and Einstein?",
+      "options": [
+        "Newton's physics was proven completely wrong and abandoned",
+        "Einstein's physics is the final, complete map of the universe",
+        "Models must be updated as reality is better understood — and good users know exactly where each model's limits are",
+        "Physics advances too slowly to be a useful model"
+      ],
+      "answerIndex": 2,
+      "explanation": "Newtonian physics is still useful within its limits; physicists' skill is carefully delimiting where each map works and exploring beyond it without assuming the old map explains everything."
+    },
+    {
+      "question": "The team treated the old game plan as dogma. What does that mean?",
+      "options": [
+        "They used it as a rough draft to keep improving",
+        "They treated it as unquestionable truth and refused to rethink it, even as opponents changed",
+        "They kept it secret from other teams",
+        "They summarized it into a few key plays"
+      ],
+      "answerIndex": 1,
+      "explanation": "Dogma is belief treated as beyond question — the opposite of updating your map when the territory changes."
+    },
+    {
+      "question": "Which situation is a proxy-measure failure, like Amazon's wait-time metric?",
+      "options": [
+        "A student memorizes practice-test answers, so the score rises while real understanding doesn't",
+        "A store's register counts every sale accurately",
+        "A runner times every lap with a stopwatch to track speed",
+        "A teacher reads every essay before grading it"
+      ],
+      "answerIndex": 0,
+      "explanation": "The score is a stand-in for understanding, and gaming it makes the number drift away from the real thing it was supposed to measure."
+    }
+  ]
+}

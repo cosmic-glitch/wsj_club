@@ -1,0 +1,432 @@
+[
+  {
+    "k": "fidelity",
+    "t": "fidelity",
+    "kind": "vocab",
+    "pron": "fih-DEL-ih-tee",
+    "forms": [
+      "fidelity"
+    ],
+    "text": "Fidelity is faithfulness to the original — how exactly a copy, description, or reproduction matches the real thing. A map with perfect fidelity would reproduce the landscape detail for detail, which is exactly why it would stop being useful: it would no longer simplify anything. The word can also mean loyalty to a person or promise; both senses share the idea of staying true.",
+    "audio": true
+  },
+  {
+    "k": "dogma",
+    "t": "dogma",
+    "kind": "vocab",
+    "pron": "DAWG-muh",
+    "forms": [
+      "dogma"
+    ],
+    "text": "Dogma is belief treated as unquestionably true — accepted on authority and never re-checked against evidence. The article warns against using maps as dogma: a model you refuse to question keeps steering you long after the world it described has changed.",
+    "audio": true
+  },
+  {
+    "k": "distill",
+    "t": "distill",
+    "kind": "vocab",
+    "pron": "dih-STIL",
+    "forms": [
+      "distill"
+    ],
+    "text": "To distill something is to boil it down to its essential core. Literally it means purifying a liquid by heating and condensing it; figuratively — as with financial statements distilling thousands of transactions into a few numbers — it means extracting just the important part from a mass of detail.",
+    "audio": true
+  },
+  {
+    "k": "reduction",
+    "t": "reduction",
+    "kind": "word",
+    "forms": [
+      "reductions",
+      "reduction"
+    ],
+    "text": "Here a reduction is a simplified version — something with most of the detail deliberately stripped out, not a price cut. Maps are reductions of the territory: that loss of detail is what makes them usable at all.",
+    "audio": true
+  },
+  {
+    "k": "snapshot",
+    "t": "snapshot",
+    "kind": "word",
+    "forms": [
+      "snapshot"
+    ],
+    "text": "A snapshot is a picture of one single moment — so calling a map a snapshot means it shows the world as it was when the map was made, with no promise that the world still looks like that now.",
+    "audio": true
+  },
+  {
+    "k": "anecdotes",
+    "t": "anecdotes",
+    "kind": "word",
+    "forms": [
+      "anecdotes"
+    ],
+    "text": "Anecdotes are individual stories or firsthand reports — 'a customer told me they waited forever' — as opposed to systematic data. Bezos's rule that when the data and the anecdotes disagree, the anecdotes are usually right, flips the usual advice: a vivid story can be the early warning that your measurements are broken.",
+    "audio": true
+  },
+  {
+    "k": "metric",
+    "t": "metric",
+    "kind": "word",
+    "forms": [
+      "metric"
+    ],
+    "text": "A metric is a number a company tracks to measure how something is going — wait time, sales, clicks. Metrics are maps of performance: useful summaries that can quietly stop matching what customers actually experience.",
+    "audio": true
+  },
+  {
+    "k": "abstractions",
+    "t": "abstractions",
+    "kind": "word",
+    "forms": [
+      "abstractions"
+    ],
+    "text": "An abstraction is a general, simplified idea pulled away from messy specifics — 'the economy' instead of millions of individual purchases. Maps and models are abstractions: handy compressions of reality, dangerous only when you forget the compression happened.",
+    "audio": true
+  },
+  {
+    "k": "static",
+    "t": "static",
+    "kind": "word",
+    "forms": [
+      "static"
+    ],
+    "text": "Static here means fixed and unchanging — not TV fuzz. Static rules keep enforcing yesterday's map on today's world, which is the article's warning against locking a model in place.",
+    "audio": true
+  },
+  {
+    "k": "dynamic",
+    "t": "dynamic",
+    "kind": "word",
+    "forms": [
+      "dynamic"
+    ],
+    "text": "Dynamic is the opposite of static: constantly moving and changing. Saying the world is dynamic is the reason maps go stale — the territory keeps shifting after the map is drawn.",
+    "audio": true
+  },
+  {
+    "k": "celestial",
+    "t": "celestial",
+    "kind": "word",
+    "forms": [
+      "celestial"
+    ],
+    "text": "Celestial means belonging to the sky or outer space — celestial motion is the movement of planets, moons, and stars. Newton's physics mapped that motion so well it guided astronomy for centuries.",
+    "audio": true
+  },
+  {
+    "k": "delimit",
+    "t": "delimit",
+    "kind": "word",
+    "forms": [
+      "delimit"
+    ],
+    "text": "To delimit something is to mark exactly where its boundaries are. Physicists delimit Newton's and Einstein's theories — they know, to many decimal places, where each one works and where it stops — which is precisely the skill of knowing your map's limits.",
+    "audio": true
+  },
+  {
+    "k": "uncharted",
+    "t": "uncharted",
+    "kind": "word",
+    "forms": [
+      "uncharted"
+    ],
+    "text": "Uncharted literally means not yet mapped — no chart exists for it. Uncharted territory is any area, like quantum mechanics in the article, where your existing maps simply don't apply and you have to explore carefully.",
+    "audio": true
+  },
+  {
+    "k": "cartographer",
+    "t": "cartographer",
+    "kind": "word",
+    "forms": [
+      "cartographer"
+    ],
+    "text": "A cartographer is a person who makes maps. 'Consider the cartographer' means: every map reflects its maker's goals, values, and blind spots — so before trusting a map (or a news source, or a study), ask who made it and why.",
+    "audio": true
+  },
+  {
+    "k": "objective",
+    "t": "objective",
+    "kind": "word",
+    "forms": [
+      "objective"
+    ],
+    "text": "Objective means based purely on facts, uninfluenced by anyone's opinions or interests. The article's point is that maps are not purely objective — choices about what to include and leave out always carry the mapmaker's perspective.",
+    "audio": true
+  },
+  {
+    "k": "depicted",
+    "t": "depicted",
+    "kind": "word",
+    "forms": [
+      "depicted",
+      "depicting",
+      "depicts"
+    ],
+    "text": "To depict something is to show or represent it, in a picture or a description. What a map depicts is what its maker chose to show — which is never everything.",
+    "audio": true
+  },
+  {
+    "k": "chronicled",
+    "t": "chronicled",
+    "kind": "word",
+    "forms": [
+      "chronicled"
+    ],
+    "text": "To chronicle something is to record events carefully over time, like a historian. Jane Jacobs chronicled what city planners did to real neighborhoods — she documented it case by case, which is what made her critique so hard to dismiss.",
+    "audio": true
+  },
+  {
+    "k": "elaborate",
+    "t": "elaborate",
+    "kind": "word",
+    "forms": [
+      "elaborate"
+    ],
+    "text": "As an adjective, elaborate means highly detailed and complicated. The planners' elaborate models looked impressive on paper — the article's point is that complexity in the model is no guarantee it matches how cities actually work.",
+    "audio": true
+  },
+  {
+    "k": "correspond",
+    "t": "correspond",
+    "kind": "word",
+    "forms": [
+      "correspond"
+    ],
+    "text": "To correspond to something is to match or line up with it. Cities were changed to correspond to the planners' models — reality was forced to fit the map, instead of the map being corrected to fit reality.",
+    "audio": true
+  },
+  {
+    "k": "reconciling",
+    "t": "reconciling",
+    "kind": "word",
+    "forms": [
+      "reconciling"
+    ],
+    "text": "Reconciling two things means making them agree. Updating your map is a process of reconciling what you want to be true with what is true — and the wanting side usually puts up a fight.",
+    "audio": true
+  },
+  {
+    "k": "pundits",
+    "t": "pundits",
+    "kind": "word",
+    "forms": [
+      "pundits"
+    ],
+    "text": "A pundit is someone who gives opinions publicly as an expert — the commentators on news shows and podcasts. The article groups them with experts and teachers as people whose maps we borrow, which is why it matters to choose rigorous ones.",
+    "audio": true
+  },
+  {
+    "k": "rigorous",
+    "t": "rigorous",
+    "kind": "word",
+    "forms": [
+      "rigorous"
+    ],
+    "text": "Rigorous means thorough, careful, and strict about standards — checking the work instead of hand-waving. A rigorous mapmaker tests their claims against reality before publishing them.",
+    "audio": true
+  },
+  {
+    "k": "transparent",
+    "t": "transparent",
+    "kind": "word",
+    "forms": [
+      "transparent"
+    ],
+    "text": "Here transparent means open about how you work — showing your sources, methods, and reasoning — not see-through like glass. A transparent expert lets you inspect how the map was drawn.",
+    "audio": true
+  },
+  {
+    "k": "terrain",
+    "t": "terrain",
+    "kind": "word",
+    "forms": [
+      "terrain",
+      "terrain."
+    ],
+    "text": "Terrain is the physical character of a stretch of land — its hills, rivers, and obstacles. The article uses it interchangeably with territory: the real ground you must deal with, whatever the map claims.",
+    "audio": true
+  },
+  {
+    "k": "predictive",
+    "t": "predictive",
+    "kind": "word",
+    "forms": [
+      "predictive"
+    ],
+    "text": "Predictive means able to tell you what will happen next. A model earns its keep by being explanatory and predictive — if it can't forecast anything about the territory, it's decoration, not a map.",
+    "audio": true
+  },
+  {
+    "k": "reliant",
+    "t": "reliant",
+    "kind": "word",
+    "forms": [
+      "reliant"
+    ],
+    "text": "Reliant on something means depending on it. We're reliant on maps other people made — teachers, experts, journalists — because nobody can explore every territory firsthand.",
+    "audio": true
+  },
+  {
+    "k": "resume",
+    "t": "résumé",
+    "kind": "word",
+    "forms": [
+      "résumé"
+    ],
+    "text": "A résumé is the one-page summary of your education, jobs, and achievements that you send when applying for work. It's a perfect example of a map: a person with an outstanding résumé who can't do the job is a territory that doesn't match its map.",
+    "audio": true
+  },
+  {
+    "k": "solely",
+    "t": "solely",
+    "kind": "word",
+    "forms": [
+      "solely"
+    ],
+    "text": "Solely means only, and nothing else. Relying solely on maps means trusting the summary alone and never checking reality — which is how the map's errors become your errors.",
+    "audio": true
+  },
+  {
+    "k": "in-line-with",
+    "t": "in line with",
+    "kind": "phrase",
+    "forms": [
+      "in line with"
+    ],
+    "text": "In line with something means matching or consistent with it. A wait-time metric in line with expectations means the number looked normal — which is exactly why nobody questioned it.",
+    "audio": true
+  },
+  {
+    "k": "on-hold",
+    "t": "on hold",
+    "kind": "phrase",
+    "forms": [
+      "on hold"
+    ],
+    "text": "Waiting on hold means staying on a phone call, usually listening to music, until someone is available to help you. Bezos waited on hold for over ten minutes — the real customer experience his dashboard said couldn't happen.",
+    "audio": true
+  },
+  {
+    "k": "on-the-flip-side",
+    "t": "on the flip side",
+    "kind": "phrase",
+    "forms": [
+      "on the flip side"
+    ],
+    "text": "On the flip side introduces the other side of the same situation — like flipping a coin or a record over. Newton's map still works; on the flip side, Einstein's isn't complete either.",
+    "audio": true
+  },
+  {
+    "k": "take-into-account",
+    "t": "take into account",
+    "kind": "phrase",
+    "forms": [
+      "take into account"
+    ],
+    "text": "To take something into account is to include it in your thinking before deciding. The article says to take into account three principles whenever you use a map or model.",
+    "audio": true
+  },
+  {
+    "k": "cautionary-tale",
+    "t": "cautionary tale",
+    "kind": "phrase",
+    "forms": [
+      "cautionary tale"
+    ],
+    "text": "A cautionary tale is a story told as a warning — here's what went wrong, don't repeat it. Jacobs's book is a cautionary tale about forcing real cities to fit tidy models.",
+    "audio": true
+  },
+  {
+    "k": "checks-all-the-boxes",
+    "t": "checks all the boxes",
+    "kind": "phrase",
+    "forms": [
+      "checks all the boxes"
+    ],
+    "text": "To check all the boxes is to meet every listed requirement, like ticking items on a checklist. Someone who checks all the boxes on paper looks perfect by the map — the article's warning is that paper and performance are different things.",
+    "audio": true
+  },
+  {
+    "k": "newtonian-physics",
+    "t": "Newtonian physics",
+    "kind": "name",
+    "forms": [
+      "Newtonian physics",
+      "Newtonian"
+    ],
+    "text": "The physics of Isaac Newton (1600s–1700s): laws of motion and gravity that predict how objects move, from falling apples to orbiting planets. Still accurate enough for everyday engineering — it just breaks down at extreme speeds and scales.",
+    "audio": true
+  },
+  {
+    "k": "special-relativity",
+    "t": "special relativity",
+    "kind": "name",
+    "forms": [
+      "special relativity"
+    ],
+    "text": "Albert Einstein's 1905 theory showing that time and space aren't fixed — they stretch and shrink depending on how fast you're moving. It replaced Newton's map for things moving near the speed of light.",
+    "audio": true
+  },
+  {
+    "k": "quantum-mechanics",
+    "t": "quantum mechanics",
+    "kind": "name",
+    "forms": [
+      "quantum mechanics",
+      "quantum physics"
+    ],
+    "text": "The physics of the very small — atoms and particles — where matter behaves in strange, probabilistic ways. Physicists still can't fully connect it to Einstein's physics, which is why the article calls it uncharted territory.",
+    "audio": true
+  },
+  {
+    "k": "feedback-loops",
+    "t": "feedback loops",
+    "kind": "name",
+    "forms": [
+      "feedback loops"
+    ],
+    "text": "A feedback loop is when the results of your actions flow back to you as information that shapes what you do next — like feeling a bike tip and correcting. Close off the loop and errors pile up unseen; it's how maps, habits, and skills all go stale.",
+    "audio": true
+  },
+  {
+    "k": "jane-jacobs",
+    "t": "Jane Jacobs",
+    "kind": "name",
+    "forms": [
+      "Jane Jacobs",
+      "Jacobs"
+    ],
+    "text": "An American writer (1916–2006) whose book The Death and Life of Great American Cities took down the top-down city planning of her era. She showed that planners' neat models ignored how real streets and neighborhoods actually work.",
+    "audio": true
+  },
+  {
+    "k": "1-800-number",
+    "t": "1-800 number",
+    "kind": "name",
+    "forms": [
+      "1-800 number"
+    ],
+    "text": "A toll-free phone number in the US — calls cost the caller nothing because the company pays. Companies use them for customer service, which is why Bezos dialed one to test his own company's wait times.",
+    "audio": true
+  },
+  {
+    "k": "master-plans",
+    "t": "master plans",
+    "kind": "name",
+    "forms": [
+      "master plans"
+    ],
+    "text": "A master plan is a single big blueprint meant to direct how an entire city or project develops for decades. Jacobs's warning: a master plan drawn for the statistical city can flatten the real one.",
+    "audio": true
+  },
+  {
+    "k": "financial-statements",
+    "t": "financial statements",
+    "kind": "name",
+    "forms": [
+      "financial statements"
+    ],
+    "text": "The standard summary reports of a company's money — what it earned, spent, owns, and owes. They distill thousands of transactions into a few pages: a map of the business, not the business itself.",
+    "audio": true
+  }
+]
