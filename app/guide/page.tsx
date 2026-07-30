@@ -62,16 +62,6 @@ function Step({
   );
 }
 
-/** Small uppercase mono label above a sub-part of a step (the handout's
- *  label-over-value recipe). */
-function SubLabel({ children }: { children: React.ReactNode }) {
-  return (
-    <p className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-500">
-      {children}
-    </p>
-  );
-}
-
 /** One entry in the "also good to know" grid. */
 function Extra({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -169,37 +159,22 @@ export default function GuidePage() {
           <p>
             An AI tutor interviews you about the article, out loud. Press{" "}
             <strong>Start</strong> to answer, <strong>Stop</strong>{" "}when
-            you&rsquo;re done. Here&rsquo;s how a session goes:
+            you&rsquo;re done.
           </p>
-          <div className="space-y-4 border-l-[3px] border-[#0a0a0a] pl-4">
-            <div>
-              <SubLabel>First, always</SubLabel>
-              <p className="mt-1">
-                <strong>Explain the article.</strong> The expectation: talk for{" "}
-                <strong>5&ndash;10 minutes, non-stop</strong>, covering
-                everything you learned. Scribbling a few notes while you read
-                helps, but keep them light. Excessive note-taking hampers your
-                thinking
-                and turns the explanation rote, so be careful on that front
-                too.
-              </p>
-            </div>
-            <div>
-              <SubLabel>Then</SubLabel>
-              <p className="mt-1">
-                The AI asks about the <strong>vocabulary words</strong> and
-                the <strong>concepts</strong> from the handout.
-              </p>
-            </div>
-            <div>
-              <SubLabel>At the end</SubLabel>
-              <p className="mt-1">
-                You get a <strong>score out of 10</strong> and the{" "}
-                <strong>full recording</strong> of your session, so you can
-                track your progress over time.
-              </p>
-            </div>
-          </div>
+          <p>
+            The first question is always the big one: explain the article,
+            covering everything you learned, for 5&ndash;10 minutes. Pauses
+            and ums are completely fine. Take your time and think out loud. A
+            few scribbled notes from your reading can help, but keep them
+            light: heavy note-taking hampers your thinking and turns the
+            explanation rote.
+          </p>
+          <p>
+            After that, the tutor asks about the vocabulary words and concepts
+            from the handout. At the end you get a score out of 10 and the
+            full recording of your session, so you can track your progress
+            over time.
+          </p>
           <p>
             Interrupted mid-quiz? It saves your place. Just resume later.
           </p>
