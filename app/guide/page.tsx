@@ -112,8 +112,8 @@ export default function GuidePage() {
             about it.
           </p>
           <p>
-            This club is built on Feynman&rsquo;s insight. Read a hand-picked
-            article every day, then explain it to an AI tutor for 5&ndash;10
+            This club is built on Feynman&rsquo;s insight. You read a
+            hand-picked article every day, then explain it to an AI tutor for 5&ndash;10
             minutes straight, recalling all the important details. Then the AI
             quizzes you on the highlighted vocabulary and concepts from the
             article, to solidify your understanding. Ten minutes of explaining
