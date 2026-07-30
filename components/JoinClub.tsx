@@ -150,8 +150,9 @@ export default function JoinClub({ className }: { className: string }) {
               <div className="p-6">
                 <h2 className={MODAL_H2}>Join the club</h2>
                 <p className="mt-2 font-sans text-[13px] leading-snug text-stone-600">
-                  A free login gets you the voice quiz, your word bank, and a
-                  vote in the day&rsquo;s article pick. Who&rsquo;s joining?
+                  A login lets you take the daily voice quiz — an AI tutor asks
+                  you about the article and grades your answers. Who&rsquo;s
+                  joining?
                 </p>
                 <div className="mt-5 space-y-2">
                   <button
