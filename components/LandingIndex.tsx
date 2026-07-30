@@ -215,8 +215,9 @@ export default function LandingIndex({
           {!junior && (
             <p className="max-w-[640px] pb-4 font-sans text-[14px] leading-relaxed text-stone-700">
               One hand-picked article a day. Read it, then explain it to an AI
-              tutor for 5&ndash;10 minutes straight. That is active reading,
-              the kind that sticks. Do it daily and your general knowledge,
+              tutor for 5&ndash;10 minutes straight. That is{" "}
+              <em>active reading</em>, the kind that sticks. Do it daily and
+              your general knowledge,
               vocabulary, and SAT verbal all climb.
             </p>
           )}
