@@ -103,11 +103,13 @@ export default function GuidePage() {
         </h1>
         <div className="mt-4 max-w-2xl space-y-3 font-sans text-[15px] leading-relaxed text-stone-700">
           <p>
-            The Nobel Prize-winning physicist Richard Feynman had a simple
-            test for whether you
-            actually know something: explain it, in your own words, without
-            looking. Most reading fails this test. You finish an article, and
-            a day later you can&rsquo;t say three sentences about it.
+            Here is a simple test for whether you actually know something:
+            explain it, in your own words, without looking. The Nobel
+            Prize-winning physicist Richard Feynman made this his standard:
+            if he could not explain an idea simply, he took it to mean he did
+            not understand it. Most reading fails the test. You finish an
+            article, and a day later you can&rsquo;t say three sentences
+            about it.
           </p>
           <p>
             This club is built on that test. Read a hand-picked
