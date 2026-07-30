@@ -210,6 +210,16 @@ export default function LandingIndex({
               CLUB
             </span>
           </h1>
+          {/* The deck: what this is, in the two seconds a newcomer gives us.
+              Senior only — the junior page skips the SAT pitch. */}
+          {!junior && (
+            <p className="max-w-[640px] pb-4 font-sans text-[14px] leading-relaxed text-stone-700">
+              One hand-picked article a day. Read it, then explain it to an AI
+              tutor for 5&ndash;10 minutes straight. That is active reading,
+              the kind that sticks. Do it daily and your general knowledge,
+              vocabulary, and SAT verbal all climb.
+            </p>
+          )}
         </div>
       </header>
 
@@ -245,11 +255,14 @@ export default function LandingIndex({
         )}
 
         {/* Spells out the same three steps the row's arrows imply — the row
-            has only room for the nouns, so the verbs live here. */}
-        <p className="mt-5 text-center text-[11px] uppercase tracking-[.14em]">
-          Read the article → Study the handout → Take the AI quiz. Repeat
-          tomorrow.
-        </p>
+            has only room for the nouns, so the verbs live here. Junior only:
+            the senior page's masthead deck already carries the pitch. */}
+        {junior && (
+          <p className="mt-5 text-center text-[11px] uppercase tracking-[.14em]">
+            Read the article → Study the handout → Take the AI quiz. Repeat
+            tomorrow.
+          </p>
+        )}
       </div>
     </div>
   );
