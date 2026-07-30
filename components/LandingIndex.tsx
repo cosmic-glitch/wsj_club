@@ -210,17 +210,6 @@ export default function LandingIndex({
               CLUB
             </span>
           </h1>
-          {/* The deck: what this is, in the two seconds a newcomer gives us.
-              Senior only — the junior page skips the SAT pitch. */}
-          {!junior && (
-            <p className="max-w-[640px] pb-4 font-sans text-[14px] leading-relaxed text-stone-700">
-              One hand-picked article a day. Read it, then explain it to an AI
-              tutor for 5&ndash;10 minutes straight. That is{" "}
-              <em>active reading</em>, the kind that sticks. Do it daily and
-              your general knowledge,
-              vocabulary, and SAT verbal all climb.
-            </p>
-          )}
         </div>
       </header>
 
@@ -230,6 +219,20 @@ export default function LandingIndex({
 
       {/* ---- index ---- */}
       <div className="mx-auto max-w-[980px] px-[18px]">
+        {/* The deck: what this is, in the two seconds a newcomer gives us —
+            boxed in the site's card language (hard yellow-black offset
+            shadow, like the login popover) so it belongs to the page rather
+            than floating in it. Senior only — junior skips the SAT pitch. */}
+        {!junior && (
+          <div className="mt-[26px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] p-4 shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a] motion-reduce:animate-none">
+            <p className="font-sans text-[14.5px] leading-relaxed text-[#0a0a0a]">
+              One hand-picked article a day. Read it, then explain it to an AI
+              tutor for 5&ndash;10 minutes straight. That is{" "}
+              <em>active reading</em>, the kind that sticks. Do it daily and
+              your general knowledge, vocabulary, and SAT verbal all climb.
+            </p>
+          </div>
+        )}
         {readings.length === 0 ? (
           <p className="mt-[26px] border-[3px] border-[#0a0a0a] p-8 text-center text-sm font-bold uppercase tracking-[.08em]">
             {junior
