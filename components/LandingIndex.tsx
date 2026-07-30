@@ -224,7 +224,7 @@ export default function LandingIndex({
             shadow, like the login popover) so it belongs to the page rather
             than floating in it. Senior only — junior skips the SAT pitch. */}
         {!junior && (
-          <div className="mt-[26px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] p-4 shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a] motion-reduce:animate-none">
+          <div className="mt-[17px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] p-4 shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a] motion-reduce:animate-none">
             <p className="font-sans text-[14.5px] leading-relaxed text-[#0a0a0a]">
               One hand-picked article a day. Read it, then explain it to an AI
               tutor for 5&ndash;10 minutes straight. That is{" "}
@@ -232,7 +232,7 @@ export default function LandingIndex({
               your general knowledge, vocabulary, and SAT verbal all climb.{" "}
               <Link
                 href="/guide"
-                className="whitespace-nowrap font-mono text-[11.5px] font-bold uppercase tracking-[.08em] underline decoration-2 underline-offset-4 hover:bg-[#ffe600]"
+                className="ml-2 whitespace-nowrap font-mono text-[11.5px] font-bold uppercase tracking-[.08em] underline decoration-2 underline-offset-4 hover:bg-[#ffe600]"
               >
                 How it works →
               </Link>
