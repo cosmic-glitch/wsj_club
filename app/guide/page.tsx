@@ -107,9 +107,8 @@ export default function GuidePage() {
             The Nobel Prize-winning physicist Richard Feynman had a simple
             test for whether you
             actually know something: explain it, in your own words, without
-            looking. Most reading fails this test. You finish an article, feel
-            informed, and a day later you can&rsquo;t say three sentences
-            about it.
+            looking. Most reading fails this test. You finish an article, and
+            a day later you can&rsquo;t say three sentences about it.
           </p>
           <p>
             This club is built on that test. Read a hand-picked
