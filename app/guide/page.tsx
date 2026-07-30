@@ -92,10 +92,7 @@ export default function GuidePage() {
       {/* Header — the handout pages' mini-masthead recipe, then the pitch:
           what the club is for, and the active-reading idea that drives it. */}
       <header className="border-b-[5px] border-[#0a0a0a] pb-6">
-        <p className="font-mono text-[11px] font-bold uppercase tracking-[.18em] text-stone-500">
-          New here?
-        </p>
-        <h1 className="mt-2 font-display text-[clamp(38px,9vw,64px)] font-normal uppercase leading-[1.02] tracking-[.01em] text-[#0a0a0a]">
+        <h1 className="font-display text-[clamp(38px,9vw,64px)] font-normal uppercase leading-[1.02] tracking-[.01em] text-[#0a0a0a]">
           How it{" "}
           <span className="text-transparent [-webkit-text-stroke:2px_#0a0a0a]">
             works
