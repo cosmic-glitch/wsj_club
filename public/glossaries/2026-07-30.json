@@ -1,0 +1,620 @@
+[
+  {
+    "k": "idiosyncrasy",
+    "t": "idiosyncrasy",
+    "kind": "vocab",
+    "pron": "ih-dee-oh-SIN-kruh-see",
+    "forms": [
+      "idiosyncrasies"
+    ],
+    "text": "An idiosyncrasy is a personal quirk — a habit or style choice distinctive to one particular person. Emily Dickinson's em-dash obsession was hers; each AI model has its own quirks too, which is exactly why there is no single \"AI style\" to hunt for.",
+    "audio": true
+  },
+  {
+    "k": "lucidity",
+    "t": "lucidity",
+    "kind": "vocab",
+    "pron": "loo-SID-ih-tee",
+    "forms": [
+      "lucidity"
+    ],
+    "text": "Lucidity is clarity — the quality of being easy to understand, from the Latin for \"light.\" Lucid writing lets the light through. The article's verdict is that for all its long words, AI prose lacks it: impressive-sounding fog rather than clear glass.",
+    "audio": true
+  },
+  {
+    "k": "pontificate",
+    "t": "pontificate",
+    "kind": "vocab",
+    "pron": "pon-TIF-ih-kayt",
+    "forms": [
+      "pontificating"
+    ],
+    "text": "To pontificate is to hold forth pompously, as if your opinions were official truth. It comes from pontiff — the pope — so it is literally \"talking as though you issue decrees.\" Orwell's \"pontificating penmen\" dress up simple ideas in grand words to sound wise.",
+    "audio": true
+  },
+  {
+    "k": "spectre",
+    "t": "spectre",
+    "kind": "word",
+    "forms": [
+      "spectre"
+    ],
+    "text": "A spectre (British spelling of specter) is a ghost — and, figuratively, a haunting threat that hangs over everything. The opening line is also a sly nod to one of history's most famous sentences, Karl Marx's \"A spectre is haunting Europe.\"",
+    "audio": true
+  },
+  {
+    "k": "turn-its-hand-to",
+    "t": "turn its hand to",
+    "kind": "phrase",
+    "forms": [
+      "turn its hand to"
+    ],
+    "text": "To turn your hand to something is to take up a new kind of work or skill, usually with ease — \"she can turn her hand to anything.\" The AI ghost switches between poetry, journalism and printer manuals without breaking stride.",
+    "audio": true
+  },
+  {
+    "k": "journalese",
+    "t": "journalese",
+    "kind": "word",
+    "forms": [
+      "journalese"
+    ],
+    "text": "Journalese is the clichéd, formula-heavy style of hurried news writing — \"officials slammed the move amid mounting concerns.\" The -ese ending (as in legalese) marks the specialised dialect of a trade.",
+    "audio": true
+  },
+  {
+    "k": "jargon",
+    "t": "jargon",
+    "kind": "word",
+    "forms": [
+      "jargon"
+    ],
+    "text": "Jargon is the specialised vocabulary of a trade or group — useful shorthand to insiders, fog to everyone else. Corporate jargon (\"synergize our learnings\") is the ghost's easiest impression.",
+    "audio": true
+  },
+  {
+    "k": "frightfully",
+    "t": "frightfully",
+    "kind": "word",
+    "forms": [
+      "frightfully"
+    ],
+    "text": "Frightfully is an old-fashioned, very British intensifier meaning \"extremely\" — frightfully clever, frightfully fast. The article picks it deliberately: for a ghost, everything really is frightful.",
+    "audio": true
+  },
+  {
+    "k": "versatile",
+    "t": "versatile",
+    "kind": "word",
+    "forms": [
+      "versatile"
+    ],
+    "text": "Versatile means able to do many different things well — a versatile athlete covers several positions. The AI ghost is versatile because it can mimic any style ever written.",
+    "audio": true
+  },
+  {
+    "k": "schlocky",
+    "t": "schlocky",
+    "kind": "word",
+    "forms": [
+      "schlocky"
+    ],
+    "text": "Schlock is cheap, trashy entertainment (the word comes from Yiddish), so a schlocky beach read is a paperback that's fun but junk — the opposite of Shakespeare. The ghost imitates high and low style alike.",
+    "audio": true
+  },
+  {
+    "k": "taut",
+    "t": "taut",
+    "kind": "word",
+    "forms": [
+      "taut"
+    ],
+    "text": "Taut literally means pulled tight, like a rope with no slack. Hemingway's taut prose is writing with all the slack cut out — short, tight sentences, not one wasted word.",
+    "audio": true
+  },
+  {
+    "k": "hemingway",
+    "t": "Ernest Hemingway",
+    "kind": "name",
+    "forms": [
+      "Ernest Hemingway",
+      "Hemingway"
+    ],
+    "text": "Ernest Hemingway (1899–1961), American novelist famous for stripped-down, muscular prose — short sentences, plain words, no decoration. His style is one pole of the ghost's range; the office-printer manual is the other.",
+    "audio": true
+  },
+  {
+    "k": "churning-out",
+    "t": "churn out",
+    "kind": "phrase",
+    "forms": [
+      "churning out"
+    ],
+    "text": "To churn out means to produce something fast, mechanically and in bulk, like a factory line — here, thousands of words a minute. The phrase carries a sniff: quantity, not quality.",
+    "audio": true
+  },
+  {
+    "k": "wordsmiths",
+    "t": "wordsmith",
+    "kind": "word",
+    "forms": [
+      "wordsmiths"
+    ],
+    "text": "A wordsmith is a skilled crafter of words — writer, journalist, poet — built like \"blacksmith\": someone who works words the way a smith works metal. They're spooked because the ghost does their craft at machine speed.",
+    "audio": true
+  },
+  {
+    "k": "prose",
+    "t": "prose",
+    "kind": "word",
+    "forms": [
+      "prose"
+    ],
+    "text": "Prose is ordinary written language — sentences and paragraphs — as opposed to poetry. Novels, essays and news articles are all prose.",
+    "audio": true
+  },
+  {
+    "k": "allege",
+    "t": "allege",
+    "kind": "word",
+    "forms": [
+      "allege"
+    ],
+    "text": "To allege is to claim something happened without (yet) proving it — the careful word journalists and lawyers use. Some allege an AI-written story won the prize; the organisers deny it; nobody has shown proof.",
+    "audio": true
+  },
+  {
+    "k": "llm",
+    "t": "LLM",
+    "kind": "name",
+    "forms": [
+      "LLMs",
+      "LLM"
+    ],
+    "text": "LLM stands for large language model — the technology behind ChatGPT, Claude, Gemini and Grok. It's a system trained on oceans of text to predict which words come next, which is how it writes.",
+    "audio": true
+  },
+  {
+    "k": "quirk",
+    "t": "quirk",
+    "kind": "word",
+    "forms": [
+      "quirks"
+    ],
+    "text": "A quirk is a small odd habit or feature that makes someone or something distinctive. Each chatbot has its own stylistic quirks, just as each human writer does.",
+    "audio": true
+  },
+  {
+    "k": "delve",
+    "t": "delve",
+    "kind": "word",
+    "forms": [
+      "delve"
+    ],
+    "text": "To delve is to dig deeply into something — a topic, an archive, a mystery. It became the single most famous \"AI word\" because chatbots overused it wildly; the study finds they have since dropped the habit.",
+    "audio": true
+  },
+  {
+    "k": "deep-dive",
+    "t": "deep dive",
+    "kind": "phrase",
+    "forms": [
+      "deep dive"
+    ],
+    "text": "A deep dive is a thorough, detailed exploration of a topic — business-speak the bots picked up and wore out. Like \"delve,\" it turned into a tell.",
+    "audio": true
+  },
+  {
+    "k": "rich-tapestry",
+    "t": "rich tapestry",
+    "kind": "phrase",
+    "forms": [
+      "rich tapestry"
+    ],
+    "text": "A tapestry is a woven wall-hanging, so \"the rich tapestry of life\" pictures the world as many colourful interwoven threads. It's such a worn-out cliché that AI's fondness for it became a joke — which the article slyly makes twice.",
+    "audio": true
+  },
+  {
+    "k": "em-dash",
+    "t": "em-dash",
+    "kind": "name",
+    "forms": [
+      "em-dashes",
+      "em-dash"
+    ],
+    "text": "The em-dash is the long dash — like these — used to set off a thought mid-sentence. It's named for being about the width of a letter M, and it became famous as the punctuation mark AI supposedly couldn't resist.",
+    "audio": true
+  },
+  {
+    "k": "imprudence",
+    "t": "imprudence",
+    "kind": "word",
+    "forms": [
+      "imprudence"
+    ],
+    "text": "Imprudence is a lack of caution — rash, unwise behaviour, the opposite of prudence. It's exactly the kind of word Jane Austen loved, which is the article's point: one fancy word can't identify an author.",
+    "audio": true
+  },
+  {
+    "k": "jane-austen",
+    "t": "Jane Austen",
+    "kind": "name",
+    "forms": [
+      "Jane Austen"
+    ],
+    "text": "English novelist (1775–1817) of Pride and Prejudice and Emma, celebrated for precise, ironic prose about manners, money and marriage. Here she stands for the rule that vocabulary alone can't prove who wrote something.",
+    "audio": true
+  },
+  {
+    "k": "emily-dickinson",
+    "t": "Emily Dickinson",
+    "kind": "name",
+    "forms": [
+      "Emily Dickinson"
+    ],
+    "text": "American poet (1830–1886) famous for short, strange, brilliant poems — and for scattering dashes everywhere. Her dash habit shows that a punctuation quirk can simply be a writer's signature.",
+    "audio": true
+  },
+  {
+    "k": "texture",
+    "t": "texture",
+    "kind": "word",
+    "forms": [
+      "texture"
+    ],
+    "text": "Texture here means the feel of prose — the pattern made by its word choices and rhythms — the way fabric has a feel under your fingers. Detectors are trained to sense that overall texture rather than any single word.",
+    "audio": true
+  },
+  {
+    "k": "black-box",
+    "t": "black box",
+    "kind": "name",
+    "forms": [
+      "black-box"
+    ],
+    "text": "A black box is a system you can only see from the outside: input goes in, an answer comes out, and what happens inside is hidden. AI detectors are black boxes — they declare \"this is AI\" without giving reasons, which makes their verdicts hard to challenge.",
+    "audio": true
+  },
+  {
+    "k": "false-positives",
+    "t": "false positive",
+    "kind": "name",
+    "forms": [
+      "false positives"
+    ],
+    "text": "A false positive is an alarm that fires when nothing is wrong: the test says \"positive\" but the truth is negative. For AI detectors that means accusing a human writer of being a bot. The idea comes from statistics and turns up everywhere — spam filters, medical tests, security scanners.",
+    "audio": true
+  },
+  {
+    "k": "scouring",
+    "t": "scour",
+    "kind": "word",
+    "forms": [
+      "scouring"
+    ],
+    "text": "To scour is to search through something thoroughly — combing texts for suspicious words. Its other sense, scrubbing a pan hard, gives the same flavour of vigorous going-over.",
+    "audio": true
+  },
+  {
+    "k": "disentangle",
+    "t": "disentangle",
+    "kind": "word",
+    "forms": [
+      "disentangle"
+    ],
+    "text": "To disentangle is to separate things twisted together, like unknotting earbuds. The researchers' problem: AI quirks and normal language fashion are tangled — if everyone suddenly says \"delve,\" is that bots, or just a trend?",
+    "audio": true
+  },
+  {
+    "k": "not-least",
+    "t": "not least",
+    "kind": "phrase",
+    "forms": [
+      "not least"
+    ],
+    "text": "\"Not least\" is a set phrase meaning \"especially — importantly among other reasons\": the approaches have drawbacks, not least because AI quirks are hard to isolate. It flags the biggest item in a list without quite saying \"most of all.\"",
+    "audio": true
+  },
+  {
+    "k": "hallmark",
+    "t": "hallmark",
+    "kind": "word",
+    "forms": [
+      "hallmarks"
+    ],
+    "text": "A hallmark is a defining, identifying mark. The word was once literal: Goldsmiths' Hall in London stamped gold and silver to certify purity. Now any telltale characteristic — like AI's long sentences — is called a hallmark.",
+    "audio": true
+  },
+  {
+    "k": "baseline",
+    "t": "baseline",
+    "kind": "name",
+    "forms": [
+      "baseline"
+    ],
+    "text": "A baseline is the known starting measurement you compare everything against. To say AI uses a word \"too often,\" you first have to know how often normal human writing uses it — that's your baseline. The idea runs through all of science and statistics.",
+    "audio": true
+  },
+  {
+    "k": "corpus",
+    "t": "corpus",
+    "kind": "name",
+    "forms": [
+      "corpus"
+    ],
+    "text": "Corpus is Latin for \"body\" — in linguistics, a large body of text collected for analysis. The study's corpus ran to 55,940 sentences; patterns are counted across the whole body rather than judged from single examples.",
+    "audio": true
+  },
+  {
+    "k": "prompt",
+    "t": "prompt",
+    "kind": "name",
+    "forms": [
+      "prompt"
+    ],
+    "text": "In AI, the prompt is the instruction or starting text you feed a model — here, short summaries the chatbots were asked to expand into full articles. What you ask shapes what you get.",
+    "audio": true
+  },
+  {
+    "k": "excerpts",
+    "t": "excerpt",
+    "kind": "word",
+    "forms": [
+      "Excerpts"
+    ],
+    "text": "An excerpt is a short passage taken from a longer work. Excerpts from decades of hit novels gave the study one more human baseline to check the AI texts against.",
+    "audio": true
+  },
+  {
+    "k": "formulaic",
+    "t": "formulaic",
+    "kind": "word",
+    "forms": [
+      "formulaic"
+    ],
+    "text": "Formulaic means built from a formula — assembled from stock patterns rather than fresh thought, like every superhero-movie trailer. It's the article's core criticism of AI prose.",
+    "audio": true
+  },
+  {
+    "k": "peculiarities",
+    "t": "peculiarity",
+    "kind": "word",
+    "forms": [
+      "peculiarities"
+    ],
+    "text": "Peculiarities are distinctive oddities — the specific strange features of a thing. The article catalogues AI's peculiarities precisely so human writers can avoid them.",
+    "audio": true
+  },
+  {
+    "k": "polysyllables",
+    "t": "polysyllable",
+    "kind": "word",
+    "forms": [
+      "polysyllables"
+    ],
+    "text": "A polysyllable is a word of many syllables — \"increasingly,\" \"consequences.\" Poly- is Greek for \"many.\" Stacking polysyllables makes prose sound weighty while actually slowing it down.",
+    "audio": true
+  },
+  {
+    "k": "lingo",
+    "t": "lingo",
+    "kind": "word",
+    "forms": [
+      "lingo"
+    ],
+    "text": "Lingo is informal for the special vocabulary of a group or field — gamer lingo, lab lingo. Bots sprinkle scientific lingo like \"parameter\" and \"methodology\" even where it doesn't belong.",
+    "audio": true
+  },
+  {
+    "k": "nominalisation",
+    "t": "nominalisation",
+    "kind": "name",
+    "forms": [
+      "nominalisations"
+    ],
+    "text": "A nominalisation turns a verb into a noun: expand becomes expansion, decide becomes decision. Writing teachers call heavy nominalisation \"zombie nouns\" because it drains the action out of sentences — and AI is fond of it.",
+    "audio": true
+  },
+  {
+    "k": "pretentious-diction",
+    "t": "pretentious diction",
+    "kind": "name",
+    "forms": [
+      "pretentious diction",
+      "pretentious"
+    ],
+    "text": "Pretentious diction is George Orwell's name for dressing up simple statements in grand words to sound clever — \"utilize\" for use, \"commence\" for start. Diction just means word choice. Today's handout teaches the full idea.",
+    "audio": true
+  },
+  {
+    "k": "railed-against",
+    "t": "rail against",
+    "kind": "phrase",
+    "forms": [
+      "railed against"
+    ],
+    "text": "To rail against something is to protest it loudly and bitterly — Orwell railed against fake-fancy writing. A set phrase worth knowing, and nothing to do with trains.",
+    "audio": true
+  },
+  {
+    "k": "penmen",
+    "t": "penmen",
+    "kind": "word",
+    "forms": [
+      "penmen"
+    ],
+    "text": "Penmen is an old-fashioned word for writers — people of the pen. \"Pontificating penmen\" is Orwell being mocking, with the alliteration twisting the knife: self-important scribblers.",
+    "audio": true
+  },
+  {
+    "k": "george-orwell",
+    "t": "George Orwell",
+    "kind": "name",
+    "forms": [
+      "George Orwell",
+      "Orwell"
+    ],
+    "text": "George Orwell (1903–1950), author of 1984 and Animal Farm, also wrote the most famous essay on clear writing, \"Politics and the English Language\" (1946). Its rules — cut clichés, prefer the short word — are still taught everywhere.",
+    "audio": true
+  },
+  {
+    "k": "latinate",
+    "t": "Latinate",
+    "kind": "word",
+    "forms": [
+      "Latinate"
+    ],
+    "text": "Latinate describes words derived from Latin — usually the longer, more formal option: \"interrogate\" versus \"ask.\" English is a hybrid language, and choosing between its plain Germanic core and its fancy Latin layer sets the tone of every sentence.",
+    "audio": true
+  },
+  {
+    "k": "saxon",
+    "t": "Saxon",
+    "kind": "name",
+    "forms": [
+      "Saxon"
+    ],
+    "text": "\"Saxon\" words are the plain old-English core of the language, inherited from the Anglo-Saxons — go, help, start, thing. Orwell's rule of thumb: the short Saxon word usually beats the grand Latin one.",
+    "audio": true
+  },
+  {
+    "k": "suffixes",
+    "t": "suffix",
+    "kind": "word",
+    "forms": [
+      "suffixes"
+    ],
+    "text": "A suffix is a word-ending that changes meaning or grammar — -tion, -ise, -ity. Latinate suffixes are the polysyllabic endings that make words sound formal, and bots reach for them more than humans do.",
+    "audio": true
+  },
+  {
+    "k": "crop-up",
+    "t": "crop up",
+    "kind": "phrase",
+    "forms": [
+      "crop up"
+    ],
+    "text": "To crop up is to appear or occur unexpectedly, here and there — the way weeds crop up in a garden. More Latinate suffixes crop up in bot writing than in human writing.",
+    "audio": true
+  },
+  {
+    "k": "markedly",
+    "t": "markedly",
+    "kind": "word",
+    "forms": [
+      "markedly"
+    ],
+    "text": "Markedly means noticeably — to a degree that stands out. ChatGPT now uses markedly fewer em-dashes than any human writer in the study.",
+    "audio": true
+  },
+  {
+    "k": "joycean",
+    "t": "Joycean",
+    "kind": "name",
+    "forms": [
+      "Joycean"
+    ],
+    "text": "Joycean means \"in the manner of James Joyce,\" the Irish modernist whose novel Ulysses famously plays fast and loose with punctuation — its final chapter runs dozens of pages with almost none. Saying LLMs are \"very Joycean\" about punctuation is a joke: they barely use it.",
+    "audio": true
+  },
+  {
+    "k": "punchy",
+    "t": "punchy",
+    "kind": "word",
+    "forms": [
+      "punchy"
+    ],
+    "text": "Punchy writing lands like a punch — short, direct, forceful. \"How dull.\" is the article demonstrating one mid-argument. Bots almost never throw punches like that.",
+    "audio": true
+  },
+  {
+    "k": "rhetorical-device",
+    "t": "rhetorical device",
+    "kind": "name",
+    "forms": [
+      "rhetorical device"
+    ],
+    "text": "A rhetorical device is a ready-made pattern for making language persuasive or memorable — \"not X but Y,\" repetition, the rule of three. Rhetoric, the ancient art of persuasion, has catalogued such devices since the Greeks.",
+    "audio": true
+  },
+  {
+    "k": "rule-of-three",
+    "t": "rule of three",
+    "kind": "name",
+    "forms": [
+      "rule of three"
+    ],
+    "text": "The rule of three says ideas grouped in threes feel complete and satisfying: \"life, liberty and the pursuit of happiness.\" It works so reliably that AI leans on it — hard.",
+    "audio": true
+  },
+  {
+    "k": "constructions",
+    "t": "construction",
+    "kind": "word",
+    "forms": [
+      "constructions"
+    ],
+    "text": "Here a construction is a grammatical pattern — a way of building a sentence — not a building site. ChatGPT and Claude reach for these stock constructions far more often than human writers do.",
+    "audio": true
+  },
+  {
+    "k": "bland",
+    "t": "bland",
+    "kind": "word",
+    "forms": [
+      "bland"
+    ],
+    "text": "Bland means lacking flavour or personality — plain rice, elevator music, and (per the article) AI prose. Bland-but-pretentious is the ghost's signature combination.",
+    "audio": true
+  },
+  {
+    "k": "lavished",
+    "t": "lavish",
+    "kind": "word",
+    "forms": [
+      "lavished"
+    ],
+    "text": "To lavish something on a thing is to pour it out generously — prose lavished with Latinate words is drenched in them. You can lavish praise, attention or money; the word descends from an old term for a downpour.",
+    "audio": true
+  },
+  {
+    "k": "copy",
+    "t": "copy",
+    "kind": "word",
+    "forms": [
+      "copy"
+    ],
+    "text": "In journalism, copy means the written text itself — reporters file copy, editors cut it. So \"AI-generated copy\" just means AI-written text; nothing is being copied.",
+    "audio": true
+  },
+  {
+    "k": "correspondent",
+    "t": "correspondent",
+    "kind": "word",
+    "forms": [
+      "correspondent"
+    ],
+    "text": "A correspondent is a journalist — originally one who wrote letters back from far away. The Economist's articles carry no bylines, so its writers refer to themselves in print as \"your correspondent.\"",
+    "audio": true
+  },
+  {
+    "k": "soberly",
+    "t": "soberly",
+    "kind": "word",
+    "forms": [
+      "soberly"
+    ],
+    "text": "Soberly here means in a serious, restrained, level-headed way — the opposite of gushing — not merely \"not drunk.\" The bot that once cried \"Ha—great question!\" now answers soberly.",
+    "audio": true
+  },
+  {
+    "k": "sparingly",
+    "t": "sparingly",
+    "kind": "word",
+    "forms": [
+      "sparingly"
+    ],
+    "text": "Sparingly means in small, careful amounts — use hot sauce sparingly. The reformed ChatGPT now advises that em-dashes are \"best used sparingly.\"",
+    "audio": true
+  }
+]

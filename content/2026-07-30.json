@@ -1,0 +1,115 @@
+{
+  "date": "2026-07-30",
+  "title": "How to spot AI writing",
+  "articleUrl": "https://www.economist.com/culture/2026/07/30/how-to-spot-ai-writing",
+  "articlePageUrl": "/articles/2026-07-30.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "idiosyncrasy",
+      "partOfSpeech": "noun",
+      "pronunciation": "ih-dee-oh-SIN-kruh-see",
+      "articleQuote": "Writers have idiosyncrasies—Emily Dickinson, for instance, loved em-dashes—and bots may do, too.",
+      "inContext": "The article's point is that every writer — human or bot — has personal quirks of style. Emily Dickinson scattered em-dashes everywhere; each AI model has its own habits too. So there is no single \"AI style\" you can hunt for.",
+      "meaning": "A small habit, preference, or way of doing things that is distinctive to one particular person — a personal quirk.",
+      "examples": [
+        "My coach's idiosyncrasy is that he always ties his left shoe first — he swears the team loses if he doesn't.",
+        "Everyone's texting has idiosyncrasies: my dad signs his messages \"— Dad\", as if the contact name weren't right there."
+      ]
+    },
+    {
+      "word": "lucidity",
+      "partOfSpeech": "noun",
+      "pronunciation": "loo-SID-ih-tee",
+      "articleQuote": "their prose lacks lucidity and elegance and is often formulaic",
+      "inContext": "For all its long, impressive-sounding words, AI prose doesn't actually make ideas easy to grasp — the article says it lacks the clearness that marks genuinely good writing.",
+      "meaning": "Clarity — the quality of being easy to understand, or of thinking clearly. From the Latin for \"light\": lucid writing lets the light through.",
+      "examples": [
+        "The best explainer videos have real lucidity — two minutes in, you wonder why the textbook made it feel so hard.",
+        "She described the whole confusing group-chat drama with such lucidity that even the teachers understood who did what."
+      ]
+    },
+    {
+      "word": "pontificate",
+      "partOfSpeech": "verb",
+      "pronunciation": "pon-TIF-ih-kayt",
+      "articleQuote": "Such pontificating penmen, Orwell observed, also believe that “Latin or Greek words are grander than Saxon ones”.",
+      "inContext": "Orwell's \"pontificating penmen\" are writers holding forth self-importantly — dressing simple ideas in grand words to sound wise and authoritative.",
+      "meaning": "To speak or write in a pompous, know-it-all way, as if your opinions were official truth. It comes from pontiff — the pope — so to pontificate is literally to talk as though you were issuing decrees from the throne.",
+      "examples": [
+        "Ask him one question about sneakers and he'll pontificate for twenty minutes about \"the culture.\"",
+        "The group chat goes silent whenever she starts pontificating about the one correct way to revise for exams."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Pretentious diction",
+      "articleQuote": "He railed against writers who “dress up simple statements” with complicated words and jargon to sound clever.",
+      "meaning": "**Pretentious diction** is a famous idea from **writing and rhetoric**, named by George Orwell in his 1946 essay *Politics and the English Language*. It means dressing up a simple statement in big, important-sounding words — wearing a tuxedo to gym class. A pretentious writer never *uses* a thing, they *utilize* it; nothing *starts*, it *commences*; rain doesn't fall, there is *significant precipitation*.\n\nOrwell noticed that weak writers reach for long Latin-derived words (*utilize*, *facilitate*, *commence*) because they sound grander than plain old English ones (*use*, *help*, *start*). But the plain word is almost always stronger: it reads faster, it's harder to hide behind, and it proves you actually understand what you're saying. Compare \"I facilitated the distribution of nutritional resources\" with \"I handed out lunches\" — the second writer sounds like a human who was actually there.\n\nThe article's twist is that AI models are champion offenders — stuffing prose with *significant*, *increasingly* and *methodology* — which is exactly why AI writing can sound impressive at first glance while saying very little. The lesson for your own essays: wherever a short word could replace a long one, the short word wins."
+    },
+    {
+      "name": "Corpus analysis",
+      "articleQuote": "This gave us a corpus of human and AI creations and we compared them across 55,940 sentences and 1.2m words.",
+      "meaning": "**Corpus analysis** is how **linguistics** borrows the tools of **statistics**: instead of judging writing by feel, you treat text as data. A *corpus* (Latin for \"body\") is a huge body of text — thousands of sentences — in which you can count things: how often each word appears, how long sentences run, how many commas show up per paragraph.\n\nThe key move is comparing your mystery text against a **baseline** — a sample whose origin you already know. One clue proves nothing: a text isn't AI-written just because it says *delve*, any more than a novel is by Jane Austen because it says *imprudence*. But if a pile of text uses *significant* three times as often as a million words of known-human writing, consistently, across thousands of sentences — that's a fingerprint, not luck. That is exactly what The Economist did: it had chatbots rewrite its own articles, compared the two piles across 1.2 million words, and even cross-checked against CNN and the *New York Times* so it wouldn't mistake its *own* quirks for AI's.\n\nThe same logic runs everywhere: plagiarism checkers compare your essay against millions of documents, forensic linguists identify anonymous writers by their word habits, and scholars use it to argue over which plays Shakespeare really wrote. The transferable rule: before you can call something *unusual*, you have to measure what *usual* looks like."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The Economist wanted to find AI's stylistic fingerprints. What was its method?",
+      "options": [
+        "It surveyed readers on which articles felt machine-written",
+        "It ran its old articles through a commercial AI detector and studied what got flagged",
+        "It had top chatbots rewrite its own articles, then compared the two piles of text across 1.2 million words",
+        "It asked each chatbot to describe its own writing habits"
+      ],
+      "answerIndex": 2,
+      "explanation": "The study built a corpus — AI versions of Economist articles — and compared it against a baseline of prose known to be human: the paper's own."
+    },
+    {
+      "question": "What does the study say about the famous \"AI loves em-dashes\" tell?",
+      "options": [
+        "It's stronger than ever — every model overuses them",
+        "It's mostly outdated: after recent updates only Claude overuses them, and ChatGPT now uses markedly fewer than the humans studied",
+        "It was never true for any model at any point",
+        "The models switched from em-dashes to exclamation marks"
+      ],
+      "answerIndex": 1,
+      "explanation": "Software updates erased the habit — a reminder that AI \"tells\" are moving targets, not permanent fingerprints."
+    },
+    {
+      "question": "Which rewrite is the clearest case of pretentious diction?",
+      "options": [
+        "\"We ran out of money halfway through the trip.\"",
+        "\"The trip was cut short.\"",
+        "\"Halfway through, our wallets were empty.\"",
+        "\"We experienced a significant depletion of financial resources mid-journey.\""
+      ],
+      "answerIndex": 3,
+      "explanation": "That's a simple fact dressed up in inflated, Latinate vocabulary — exactly what Orwell railed against."
+    },
+    {
+      "question": "Why does the article bring up Emily Dickinson's love of em-dashes?",
+      "options": [
+        "To show writers have idiosyncrasies — a single quirk can't prove a text is AI-written",
+        "To argue that Dickinson's poems would fail modern AI detectors",
+        "To show that em-dashes make writing more emotional",
+        "To prove nineteenth-century writers were better than today's"
+      ],
+      "answerIndex": 0,
+      "explanation": "One writer's signature quirk shows that a stylistic habit by itself is weak evidence — you need patterns across a large sample."
+    },
+    {
+      "question": "Why will spotting AI prose only get harder, according to the article?",
+      "options": [
+        "Governments are starting to ban AI detectors",
+        "AI companies add invisible watermarks that disguise the style",
+        "LLMs learn from human feedback — they pick up what people find impressive and drop habits people mock, so each update sounds more human",
+        "People are too busy to read carefully anymore"
+      ],
+      "answerIndex": 2,
+      "explanation": "The tells fade with every update — \"delve\" is already gone, and ChatGPT now scolds em-dash overuse. Only a ghost, the article says, could shapeshift so quickly."
+    }
+  ]
+}
