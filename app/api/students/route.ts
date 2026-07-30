@@ -31,7 +31,9 @@ export async function GET(request: Request) {
   return Response.json({ available: !existing });
 }
 
-// POST /api/students { displayName, username, password } → { student }
+// POST /api/students { username, password, displayName? } → { student }
+// displayName is legacy-optional — new clients don't send it (it defaults to
+// the username in createUser).
 export async function POST(request: Request) {
   const user = await currentUser();
   if (!(await isAdmin(user))) {

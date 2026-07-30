@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import JoinClub from "./JoinClub";
 import SuggestArticle from "./SuggestArticle";
 import SuggestionsQueue from "./SuggestionsQueue";
 import { clearAuthCache, useAuth, writeAuthCache } from "./AuthProvider";
@@ -15,7 +16,9 @@ import { clearAuthCache, useAuth, writeAuthCache } from "./AuthProvider";
 // word-bank/reports/students links + log out when logged in. The bar renders
 // IDENTICALLY everywhere — greeting + links — so navigating between pages
 // never makes it jitter (the greeting used to be header-suppressed, which
-// made "Hi <user>" vanish and the links shift on every inner page). First in
+// made "Hi <user>" vanish and the links shift on every inner page). Logged
+// out it's "Join / Log in" — self-signup (JoinClub) plus the login popover.
+// First in
 // the logged-in group: "Suggest" (any member may propose an article) — except
 // for the OWNER, who picks rather than proposes and instead gets
 // "Suggestions", the open queue with suggester names. The links render as ONE
@@ -162,8 +165,12 @@ export default function HomeAuthBar() {
     );
   }
 
+  // Logged out: "Join / Log in" — self-signup (JoinClub's modal) beside the
+  // login popover. Both anchor to this box; the popover hangs off its right edge.
   return (
-    <div ref={boxRef} className="relative">
+    <div ref={boxRef} className="relative flex items-center gap-1">
+      <JoinClub className={bar} />
+      <Slash />
       <button type="button" onClick={() => setOpen((o) => !o)} className={bar}>
         Log in
       </button>

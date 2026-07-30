@@ -26,6 +26,7 @@ export type User = {
   passwordHash: string; // bcrypt
   role: UserRole;
   parentId?: string; // students: owning parent's username; parents: unset
+  email?: string; // optional — stored only for future password recovery
   active: boolean; // false blocks login but keeps the record + history
   createdBy?: string; // audit — who created this record
   createdAt: string; // ISO
@@ -46,6 +47,7 @@ export class UserError extends Error {
 
 const BCRYPT_ROUNDS = 10;
 const USERNAME_RE = /^[a-z0-9_-]{3,32}$/;
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /** Strip the password hash for anything that leaves the server. */
 export function toPublic(u: User): PublicUser {
@@ -65,6 +67,7 @@ function fromRow(r: Record<string, unknown>): User | null {
     ...(typeof r.parent_id === "string" && r.parent_id
       ? { parentId: r.parent_id }
       : {}),
+    ...(typeof r.email === "string" && r.email ? { email: r.email } : {}),
     active: r.active !== false,
     ...(typeof r.created_by === "string" ? { createdBy: r.created_by } : {}),
     createdAt: r.created_at ? new Date(String(r.created_at)).toISOString() : "",
@@ -78,6 +81,10 @@ function toRow(u: User): Record<string, unknown> {
     password_hash: u.passwordHash,
     role: u.role,
     parent_id: u.parentId ?? null,
+    // Only sent when set: PostgREST updates just the columns present, so an
+    // email-less write never nulls a stored one (and pre-migration rows —
+    // before the email column exists — keep working).
+    ...(u.email ? { email: u.email } : {}),
     active: u.active !== false,
     created_by: u.createdBy ?? null,
     ...(u.createdAt ? { created_at: u.createdAt } : {}),
@@ -154,10 +161,11 @@ async function save(user: User): Promise<void> {
 
 export type CreateUserInput = {
   username: string;
-  displayName: string;
+  displayName?: string; // defaults to the username (new accounts don't collect one)
   password: string; // plaintext — hashed here
   role: UserRole;
   parentId?: string;
+  email?: string; // optional — password recovery only
   active?: boolean;
 };
 
@@ -187,13 +195,18 @@ export async function createUser(
   if (!input.password) {
     throw new UserError("weak-password", "A password is required.");
   }
+  const email = input.email?.trim().toLowerCase() || undefined;
+  if (email && !EMAIL_RE.test(email)) {
+    throw new UserError("invalid-email", "That email address doesn't look right.");
+  }
   const passwordHash = await bcrypt.hash(input.password, BCRYPT_ROUNDS);
   const user: User = {
     username,
-    displayName: input.displayName.trim() || username,
+    displayName: (input.displayName ?? "").trim() || username,
     passwordHash,
     role: input.role,
     ...(input.role === "student" ? { parentId: input.parentId } : {}),
+    ...(email ? { email } : {}),
     active: input.active ?? true,
     createdBy,
     createdAt: new Date().toISOString(),

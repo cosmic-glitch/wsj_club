@@ -98,9 +98,10 @@ export async function currentUserRecord(): Promise<User | null> {
  * Owner usernames from the `OWNER_USERS` env var (comma-separated). An owner is
  * a parent who may ALSO create parent accounts. Owner-ness is an env capability
  * (not a writable field on a record), so it can't be granted by writing a blob.
- * Fail closed: unset ⇒ nobody is an owner.
+ * Fail closed: unset ⇒ nobody is an owner. Exported for the self-signup route,
+ * which files parent-less students into the owner's classroom.
  */
-function getOwnerUsers(): string[] {
+export function getOwnerUsers(): string[] {
   return (process.env.OWNER_USERS || "")
     .split(",")
     .map((s) => s.trim())

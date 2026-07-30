@@ -35,10 +35,6 @@ function generatePassword(): string {
   return `${pick(ADJ)}-${pick(ANIMAL)}-${n}`;
 }
 
-function slugify(name: string): string {
-  return name.toLowerCase().replace(/[^a-z0-9_-]+/g, "").slice(0, 32);
-}
-
 /** The viewer's local date as "YYYY-MM-DD" (StreakStrip's computation). */
 function localYMD(): string {
   const now = new Date();
@@ -525,9 +521,7 @@ function AddStudentModal({
   // Which parent the new student belongs to. Only the owner sees a choice
   // (2+ classrooms); everyone else adds to their own.
   const [parentId, setParentId] = useState(parentUsername);
-  const [displayName, setDisplayName] = useState("");
   const [username, setUsername] = useState("");
-  const [usernameEdited, setUsernameEdited] = useState(false);
   const [password, setPassword] = useState(() => generatePassword());
   const [avail, setAvail] = useState<"idle" | "checking" | "free" | "taken" | "invalid">(
     "idle"
@@ -535,12 +529,6 @@ function AddStudentModal({
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const debounce = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  // Auto-suggest the username from the display name until the parent edits it.
-  function onDisplayName(v: string) {
-    setDisplayName(v);
-    if (!usernameEdited) setUsername(slugify(v));
-  }
 
   // Live uniqueness check (debounced).
   useEffect(() => {
@@ -575,7 +563,8 @@ function AddStudentModal({
         headers: { "Content-Type": "application/json" },
         // parentId names the parent to add under. The server forces it to the
         // caller for a regular parent; only the owner may target another one.
-        body: JSON.stringify({ displayName, username, password, parentId }),
+        // No display name — it defaults to the username server-side.
+        body: JSON.stringify({ username, password, parentId }),
       });
       const d = await res.json();
       if (!res.ok) {
@@ -592,7 +581,7 @@ function AddStudentModal({
   }
 
   const canSubmit =
-    displayName.trim() && username.trim().length >= 3 && password.length > 0 && avail !== "taken";
+    username.trim().length >= 3 && password.length > 0 && avail !== "taken";
 
   return (
     <Modal onClose={onClose} title="Add a student">
@@ -618,27 +607,12 @@ function AddStudentModal({
 
         <label className="block">
           <span className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-500">
-            Display name
-          </span>
-          <input
-            value={displayName}
-            onChange={(e) => onDisplayName(e.target.value)}
-            autoFocus
-            placeholder="Anusha"
-            className="mt-1 w-full border-2 border-[#0a0a0a] px-3 py-2 text-sm focus:bg-[#fffbd6] focus:outline-none"
-          />
-        </label>
-
-        <label className="block">
-          <span className="font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-500">
             Username
           </span>
           <input
             value={username}
-            onChange={(e) => {
-              setUsernameEdited(true);
-              setUsername(e.target.value.toLowerCase());
-            }}
+            onChange={(e) => setUsername(e.target.value.toLowerCase())}
+            autoFocus
             placeholder="anusha"
             autoComplete="off"
             className="mt-1 w-full border-2 border-[#0a0a0a] px-3 py-2 font-mono text-sm focus:bg-[#fffbd6] focus:outline-none"
