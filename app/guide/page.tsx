@@ -14,21 +14,20 @@ export const metadata: Metadata = {
 // junior track works the same way, so one page serves both. Per the site
 // rule, mono is the label layer only — every sentence here is in the sans.
 
-/** Placeholder frame for a step's screen-recording loop (swapped for the real
- *  clip once recorded). The diagonal-stripe fill marks it as clearly unfinished. */
-function ClipSlot({ caption }: { caption: string }) {
+/** A step's screen-recording loop: recorded against the real site (960x540),
+ *  muted + looping like a GIF but a fraction of the size. */
+function Clip({ src, label }: { src: string; label: string }) {
   return (
-    <div
-      className="mt-5 flex aspect-video items-center justify-center border-2 border-dashed border-stone-300"
-      style={{
-        backgroundImage:
-          "repeating-linear-gradient(45deg, transparent, transparent 12px, #f5f5f4 12px, #f5f5f4 24px)",
-      }}
-    >
-      <p className="bg-white px-3 py-1 text-center font-mono text-[10px] font-bold uppercase tracking-[.14em] text-stone-400">
-        Clip: {caption}
-      </p>
-    </div>
+    <video
+      src={src}
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata"
+      aria-label={label}
+      className="mt-5 aspect-video w-full border-2 border-[#0a0a0a]"
+    />
   );
 }
 
@@ -42,7 +41,7 @@ function Step({
 }: {
   n: number;
   title: string;
-  clip: string;
+  clip: { src: string; label: string };
   children: React.ReactNode;
 }) {
   return (
@@ -58,7 +57,7 @@ function Step({
       <div className="mt-3 space-y-3 font-sans text-[15px] leading-relaxed text-stone-700">
         {children}
       </div>
-      <ClipSlot caption={clip} />
+      <Clip src={clip.src} label={clip.label} />
     </li>
   );
 }
@@ -125,7 +124,14 @@ export default function GuidePage() {
 
       {/* The daily loop. */}
       <ol className="mt-10 space-y-8">
-        <Step n={1} title="Read the article" clip="tapping a glossary word">
+        <Step
+          n={1}
+          title="Read the article"
+          clip={{
+            src: "/guide/clip-article.mp4",
+            label: "Tapping a highlighted word on the article page opens its definition",
+          }}
+        >
           <p>
             Start from the day&rsquo;s row on the home page and hit{" "}
             <strong>Article</strong>. Read it like you&rsquo;ll have to explain
@@ -138,7 +144,14 @@ export default function GuidePage() {
           </p>
         </Step>
 
-        <Step n={2} title="Study the handout" clip="scrolling the handout">
+        <Step
+          n={2}
+          title="Study the handout"
+          clip={{
+            src: "/guide/clip-handout.mp4",
+            label: "Scrolling through a day's handout: words to know, then concepts",
+          }}
+        >
           <p>
             The <strong>Handout</strong>{" "}button opens the day&rsquo;s study
             sheet: the words to know and the concepts behind the story. This is
@@ -146,7 +159,14 @@ export default function GuidePage() {
           </p>
         </Step>
 
-        <Step n={3} title="Do the AI voice quiz" clip="a voice-quiz turn (start → answer → stop)">
+        <Step
+          n={3}
+          title="Do the AI voice quiz"
+          clip={{
+            src: "/guide/clip-quiz.mp4",
+            label: "One voice-quiz turn: the tutor asks, you record an answer, the tutor follows up",
+          }}
+        >
           <p>
             An AI tutor interviews you about the article, out loud. Press{" "}
             <strong>Start</strong> to answer, <strong>Stop</strong>{" "}when
