@@ -40,7 +40,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
    - WSJ requires login. Tell the user: *"I've opened the article — please log into WSJ in the browser window, then tell me when you're in."* Wait for them. Do **not** ask for or store their password; they log in themselves.
    - Once past the paywall, read the full article (`browser_snapshot`, or scroll and read). Capture: the real headline, the byline/section if useful, and the substance — main argument, key facts, and any jargon a teenager would trip on.
 
-3. **Capture the day's ARTICLE PAGE (the served, phone-friendly copy) — for EVERY article, paywalled or open.** Every day publishes a **self-contained responsive HTML article page** at `public/articles/YYYY-MM-DD.html`, referenced as `"/articles/YYYY-MM-DD.html"` in the JSON's `articlePageUrl` — the index then shows **one "ARTICLE" button** for the day (a day without `articlePageUrl` points that button straight at the publisher). The page **reflows to the reader's screen width**, which is the whole point: fixed-width captures rendered phone text microscopically. **OPEN articles get a page too** (owner's call, 2026-07-25). They used to be skipped — the ARTICLE button just linked to the original — but **the tap-a-word glossary (step 6) only exists on a page we serve**, so skipping the capture silently cost an open-link day its whole word-lookup layer. That's the single biggest study feature on the page, so it outweighs the "why copy a page that's already free?" argument. **So: capture every day, paywalled or open.** (The `noindex` meta + the prominent Source link in the top bar keep it a study copy, not a republication; the hard rule against reproducing *paywalled* text is unchanged, and the source link is what sends readers to the original.) With the article open and the user logged in (from step 2), **rebuild a clean document from the article's own paragraphs *and its real content images***. The rebuilt page keeps the article's **charts, graphs, and photos** (which often carry the substance — an Economist "(see chart)" data viz, a labeled diagram) while dropping the page chrome: it takes the article's `<p>`/heading **text** *plus* only its genuine content images — each fetched at a **sensible ~1000px width (never the 5000px `srcset` monster), inlined as a `data:` URI** so the file is fully self-contained (typically **~50KB–1MB**). **It preserves the original inline typography** — small-caps acronyms (the Economist sets "AI", "IBM", "GPT" in `<small>` small caps), italics, bold, and the drop-cap opening. This matters because the Economist renders those small caps via `text-transform:lowercase` + `font-variant-caps:small-caps`, and `innerText` *applies* the transform, so a plain-text sweep would silently lowercase every acronym ("AI"→"ai") and split the drop cap ("T en years"). The snippet instead reads the **raw text nodes** (which keep the real "AI") and re-wraps `<small>`/`<em>`/`<strong>` with matching CSS — using `font-variant-caps` (a font feature), **not** `text-transform`, so the page's text (and the extracted article text) still holds real uppercase "AI". **One caveat for The Economist:** its maps and data charts are usually **not** `<figure><img>` at all but **`infographics.economist.com` iframe embeds** whose labels/legend are a separate HTML overlay on top of a base "artboard" PNG — so a plain image fetch would drop **every label** (a labels-less map). The snippet's **step 0** handles these by opening each infographic in a throwaway tab and screenshotting the **rendered** widget (base + labels composited, zoomed 2× for resolution), then splicing it into the reading flow. The snippet **also writes the day's plain article text** to `article-text/YYYY-MM-DD.txt` in the same pass (headline + deck first, then the body — the voice-quiz reference), so after it runs you only upload that file to Blob.
+3. **Capture the day's ARTICLE PAGE (the served, phone-friendly copy) — for EVERY article, paywalled or open.** Every day publishes a **self-contained responsive HTML article page** at `public/articles/YYYY-MM-DD.html`, referenced as `"/articles/YYYY-MM-DD.html"` in the JSON's `articlePageUrl` — the index then shows **one "ARTICLE" button** for the day (a day without `articlePageUrl` points that button straight at the publisher). The page **reflows to the reader's screen width**, which is the whole point: fixed-width captures rendered phone text microscopically. **OPEN articles get a page too** (owner's call, 2026-07-25). They used to be skipped — the ARTICLE button just linked to the original — but **the tap-a-word glossary (step 6) only exists on a page we serve**, so skipping the capture silently cost an open-link day its whole word-lookup layer. That's the single biggest study feature on the page, so it outweighs the "why copy a page that's already free?" argument. **So: capture every day, paywalled or open.** (The `noindex` meta + the prominent Source link in the top bar keep it a study copy, not a republication; the hard rule against reproducing *paywalled* text is unchanged, and the source link is what sends readers to the original.) With the article open and the user logged in (from step 2), **rebuild a clean document from the article's own paragraphs *and its real content images***. The rebuilt page keeps the article's **charts, graphs, and photos** (which often carry the substance — an Economist "(see chart)" data viz, a labeled diagram) while dropping the page chrome: it takes the article's `<p>`/heading **text** *plus* only its genuine content images — each fetched at a **sensible ~1000px width (never the 5000px `srcset` monster), inlined as a `data:` URI** so the file is fully self-contained (typically **~50KB–1MB**). **It preserves the original inline typography** — small-caps acronyms (the Economist sets "AI", "IBM", "GPT" in `<small>` small caps), italics, bold, and the drop-cap opening. This matters because the Economist renders those small caps via `text-transform:lowercase` + `font-variant-caps:small-caps`, and `innerText` *applies* the transform, so a plain-text sweep would silently lowercase every acronym ("AI"→"ai") and split the drop cap ("T en years"). The snippet instead reads the **raw text nodes** (which keep the real "AI") and re-wraps `<small>`/`<em>`/`<strong>` with matching CSS — using `font-variant-caps` (a font feature), **not** `text-transform`, so the page's text (and the extracted article text) still holds real uppercase "AI". **One caveat for The Economist:** its maps and data charts are usually **not** `<figure><img>` at all but **`infographics.economist.com` iframe embeds** whose labels/legend are a separate HTML overlay on top of a base "artboard" PNG — so a plain image fetch would drop **every label** (a labels-less map). The snippet handles these by recording a placeholder at each iframe's own spot during the document-order walk, then opening it in a throwaway tab and screenshotting the **rendered** widget (base + labels composited, zoomed 2× for resolution) into that slot — so every chart stays beside the paragraph that references it, exactly as in the original. The snippet **also writes the day's plain article text** to `article-text/YYYY-MM-DD.txt` in the same pass (headline + deck first, then the body — the voice-quiz reference), so after it runs you only upload that file to Blob.
    - Make the folders: `mkdir -p public/articles article-text`.
    - With the article page **already open** (loaded past the paywall — the snippet leaves the article tab in place; it opens **throwaway tabs** only to screenshot any Economist infographic embeds and to save the output files, then closes them), use `browser_run_code_unsafe` — **substitute the real date** in `OUT` and `TXT_OUT`, the real publication in `SOURCE_NAME`, and keep `BACK = '/'` (senior); `ORIG_URL` is auto-derived from the open page and renders in the top bar — "Source: <publication>" right-aligned beside the "← Reading Club" link, the publication name being the link to the original. The snippet's sandbox has **no `fs`**, so it saves each file via Playwright's download event (a throwaway tab downloads the string as a Blob and `download.saveAs()` writes it to the repo path):
      ```js
@@ -50,38 +50,6 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
        const SOURCE_NAME = 'The Economist'; // ← or 'WSJ' (the short form — the full "The Wall Street Journal" wraps the top bar on phones)
        const BACK = '/'; // ← '/junior' for a junior-track day
        const ORIG_URL = page.url(); // the open article IS the original — no substitution needed
-       // 0) ECONOMIST INFOGRAPHIC MAPS/CHARTS are embedded as `infographics.economist.com`
-       //    IFRAMES (ai2html widgets), NOT as <figure><img>, so the figure walk below misses
-       //    them. And the widget's artboard PNG is only the BASE art — its labels + legend are
-       //    a separate HTML overlay — so fetching the raw PNG yields a map with NO text. The fix:
-       //    open each infographic in a THROWAWAY TAB and screenshot the RENDERED widget (base +
-       //    labels composited), zoomed 2x so the ~1400px artboard is captured crisp, clipped to
-       //    the drawn bounds. WSJ / no-chart days find no such iframe and skip this entirely.
-       const infographicUrls = await page.evaluate(() =>
-         [...document.querySelectorAll('iframe')].map(f => f.src).filter(s => /infographics\.economist\.com/.test(s || ''))
-       );
-       const infographics = [];
-       for (const src of infographicUrls) {
-         const tab = await page.context().newPage();
-         try {
-           await tab.setViewportSize({ width: 1700, height: 1900 });
-           await tab.goto(src, { waitUntil: 'networkidle' });
-           await tab.waitForFunction(() => { const i = [...document.images]; return i.length > 0 && i.every(x => x.complete); }, { timeout: 15000 }).catch(() => {});
-           await tab.evaluate(() => { document.documentElement.style.zoom = '2'; }); // render the 1400px artboard at native res
-           await tab.waitForTimeout(400);
-           const clip = await tab.evaluate(() => {
-             const vis = [...document.querySelectorAll('.g-artboard')].find(a => getComputedStyle(a).display !== 'none') || document.body;
-             let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
-             const add = r => { if (r.width > 0 && r.height > 0) { x0 = Math.min(x0, r.left); y0 = Math.min(y0, r.top); x1 = Math.max(x1, r.right); y1 = Math.max(y1, r.bottom); } };
-             add(vis.getBoundingClientRect());                                            // the base art …
-             [...vis.querySelectorAll('*')].forEach(e => { if ((e.innerText || '').trim()) add(e.getBoundingClientRect()); }); // … plus every text label
-             const p = 6; return { x: Math.max(0, x0 - p), y: Math.max(0, y0 - p), width: (x1 - x0) + p * 2, height: (y1 - y0) + p * 2 };
-           });
-           const buf = await tab.screenshot({ clip });
-           infographics.push({ type: 'img', dataUri: 'data:image/png;base64,' + buf.toString('base64'), caption: '' });
-         } catch { /* best-effort: a chart that won't capture is just skipped */ }
-         finally { await tab.close(); }
-       }
        // 1) Wait for the (often client-rendered) body, then walk the article in
        //    document order, collecting paragraph/heading text (WITH its inline
        //    typography — small-caps acronyms, italics, bold, drop cap; see the
@@ -153,7 +121,7 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          // STOP marks the end of the article body. Breaking here is what keeps the
          // footer's "more from this section" thumbnails (and the espresso/promo
          // images that sit just after the body) OUT of the page.
-         const STOP = /^(This article appeared in|Discover stories from this section|Sign up to|Stay on top of|Get exclusive analysis|Curious about the world|Explore more|To track the trends shaping|Subscribers to The Economist can sign up|(?:Spanish|Russian|Arabic|Japanese|French|German|Chinese|Korean|Italian|Portuguese|Turkish|Hebrew|Polish|Dutch|Persian) Translation)\b/i;
+         const STOP = /^(This article appeared in|Discover stories from this section|Sign up to|Stay on top of|Get exclusive analysis|Curious about the world|Explore more|To track the trends shaping|Subscribers to The Economist can sign up|For more on the latest books|(?:Spanish|Russian|Arabic|Japanese|French|German|Chinese|Korean|Italian|Portuguese|Turkish|Hebrew|Polish|Dutch|Persian) Translation)\b/i;
          const SKIP = /^(Save|Share|Listen to this story|Video:|Delivered to your inbox|0:00|Advertisement)\b/i;
          const JUNK_SRC = /\/newsletters\/|\/ident|\bsponsor|\badvert|\.svg(\?|$)/i; // logos, idents, ad pixels
          // Pick a sensible-resolution image (never the 5000px monster, never a tiny
@@ -177,7 +145,18 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          // A bare date line ("April 2007") opens many essays. It's NOT the first
          // body paragraph, so it must not take the drop cap — tag it .dateline.
          const DATELINE = /^(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}$/i;
-         for (const n of art.querySelectorAll('p, h2, h3, figure')) {
+         for (const n of art.querySelectorAll('p, h2, h3, figure, iframe')) {
+           // ECONOMIST INFOGRAPHIC MAPS/CHARTS are `infographics.economist.com` IFRAMES
+           // (ai2html widgets), NOT <figure><img> — record a placeholder AT THIS SPOT so
+           // the screenshot (taken in step 1b, after this walk) lands at the chart's own
+           // position in the reading flow, beside the paragraph that references it (an
+           // earlier build spliced them all after the 2nd paragraph, scrambling the
+           // order). WSJ / no-chart days find no such iframe and skip this entirely.
+           if (n.tagName.toLowerCase() === 'iframe') {
+             const src = n.src || '';
+             if (/infographics\.economist\.com/.test(src)) blocks.push({ type: 'img', infographic: src, caption: '' });
+             continue;
+           }
            if (n.tagName.toLowerCase() === 'figure') {
              if (n.querySelector('video')) continue;            // video poster, not a real figure
              const img = n.querySelector('img');
@@ -246,20 +225,39 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          }
          return { title, deckText, deckHtml, blocks };
        });
-       // 1b) Splice the captured infographic(s) into the reading flow. Default: just after the
-       //     2nd body paragraph (near where Economist runs its lead chart). Move the anchor if a
-       //     different spot reads better — e.g. after the paragraph that references the chart.
-       if (infographics.length) {
-         let at = data.blocks.findIndex((b, i) => b.type === 'text' && i >= 2);
-         if (at === -1) at = data.blocks.length - 1;
-         data.blocks.splice(at + 1, 0, ...infographics);
+       // 1b) Screenshot each infographic placeholder IN PLACE. The widget's artboard PNG
+       //     is only the BASE art — its labels + legend are a separate HTML overlay — so
+       //     fetching the raw PNG would yield a chart with NO text. Instead open each in a
+       //     THROWAWAY TAB and screenshot the RENDERED widget (base + labels composited),
+       //     zoomed 2x so the ~1400px artboard is captured crisp, clipped to the drawn bounds.
+       for (const b of data.blocks) {
+         if (!b.infographic) continue;
+         const tab = await page.context().newPage();
+         try {
+           await tab.setViewportSize({ width: 1700, height: 1900 });
+           await tab.goto(b.infographic, { waitUntil: 'networkidle' });
+           await tab.waitForFunction(() => { const i = [...document.images]; return i.length > 0 && i.every(x => x.complete); }, { timeout: 15000 }).catch(() => {});
+           await tab.evaluate(() => { document.documentElement.style.zoom = '2'; }); // render the 1400px artboard at native res
+           await tab.waitForTimeout(400);
+           const clip = await tab.evaluate(() => {
+             const vis = [...document.querySelectorAll('.g-artboard')].find(a => getComputedStyle(a).display !== 'none') || document.body;
+             let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+             const add = r => { if (r.width > 0 && r.height > 0) { x0 = Math.min(x0, r.left); y0 = Math.min(y0, r.top); x1 = Math.max(x1, r.right); y1 = Math.max(y1, r.bottom); } };
+             add(vis.getBoundingClientRect());                                            // the base art …
+             [...vis.querySelectorAll('*')].forEach(e => { if ((e.innerText || '').trim()) add(e.getBoundingClientRect()); }); // … plus every text label
+             const p = 6; return { x: Math.max(0, x0 - p), y: Math.max(0, y0 - p), width: (x1 - x0) + p * 2, height: (y1 - y0) + p * 2 };
+           });
+           const buf = await tab.screenshot({ clip });
+           b.dataUri = 'data:image/png;base64,' + buf.toString('base64');
+         } catch { b.skip = true; }   // best-effort: a chart that won't capture is just skipped
+         finally { await tab.close(); }
        }
        // 2) Fetch each kept image through the *authenticated browser context*
        //    (page.request shares cookies and is not subject to CORS) and inline it
        //    as a data: URI, so the page is fully self-contained. Skip blocks that
        //    already carry a dataUri — those are the infographics we just screenshotted.
        for (const b of data.blocks) {
-         if (b.type !== 'img' || b.dataUri) continue;
+         if (b.type !== 'img' || b.dataUri || !b.url) continue;
          try {
            const resp = await page.request.get(b.url, { timeout: 25000 });
            if (!resp.ok()) { b.skip = true; continue; }
@@ -352,11 +350,11 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
        return 'wrote ' + OUT + ' + ' + TXT_OUT + ' | deck=' + (data.deckHtml ? 'yes' : 'no') + ' | text=' + txtBlocks
          + ' | small-caps=' + (body.match(/<small>/g) || []).length
          + ' | images=' + imgs.length + ' [' + imgs.filter(b => b.url).map(b => (b.url.match(/images\/([^?/]+)/) || [, '?'])[1]).join(', ') + ']'
-         + ' | infographics=' + infographics.length;
+         + ' | infographics=' + data.blocks.filter(b => b.infographic && b.dataUri).length;
      }
      ```
      (Set `SOURCE_NAME` at the top = `WSJ` or `The Economist` — the short WSJ form, so the top bar stays one line on phones.) The live article tab is left in place, so a re-run (after fixing a filter, say) needs no re-navigation.
-   - **Verify it:** the snippet returns `deck=yes|no` (was the standfirst captured?), a `text=` paragraph count, a **`small-caps=N`** count (acronyms preserved as small caps — expect `N≥1` on any Economist article, which sets AI/IBM/GPT in `<small>`; `0` there means the typography walk missed them), an `images=N [slugs]` list, and an **`infographics=N`** count (Economist iframe maps/charts captured separately in step 0). **Confirm acronym casing survived** into the extracted text — `grep -oE "\\b(AI|ai|IBM|ibm)\\b" article-text/YYYY-MM-DD.txt | sort | uniq -c` should show **uppercase** AI/IBM, not lowercase; lowercase means the `font-variant-caps`/raw-text-node path regressed to `innerText`. Expect `text` **roughly one per paragraph** (≈12–40 for a feature; under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome — re-check login/selectors), and `images` to roughly match the **real `<figure>` charts/photos** in the body (often 1–4; **`images=0` on an article you know has a chart means the image step failed** — usually a paywall/login issue or the figure markup differs, so don't ship it without checking). **On an Economist day with a map or data chart, confirm `infographics≥1`** — and when you eyeball the page (below), check the map shows **with its labels and legend**; a labels-less map means the widget didn't render (re-run) and a bare-PNG fetch would have that failure mode. For an obituary or feature whose subtitle states a key fact (death date, age, who-did-what), confirm `deck=yes`; if it's `no`, the standfirst didn't match the selectors — grab it from `browser_snapshot` and prepend it to the text by hand. **Check the article's real ending survived AND no footer junk trailed in** — `tail -c 300 article-text/YYYY-MM-DD.txt` should end on the article's actual closing sentence (Economist pieces end with `■`), not a newsletter promo; a promo tail means the page grew a new footer block the `STOP` regex doesn't know — add its opening phrase to `STOP` and re-run. Then `ls -la public/articles/YYYY-MM-DD.html` (expect **~50KB–1MB** with images inlined; **several MB means the image step grabbed something huge** — re-check). **Always render the page and eyeball it at a phone width** — that the text reflows full-width and the charts/photos appear and are legible. `file://` is blocked in the Playwright browser, so serve `public/` for a minute: `cd public && python3 -m http.server 8734` (background it), `browser_resize` to 390×844, `browser_navigate` to `http://localhost:8734/articles/YYYY-MM-DD.html`, screenshot (`fullPage: true`) and look at it; then kill the server (`pkill -f "http.server 8734"`). If `text=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
+   - **Verify it:** the snippet returns `deck=yes|no` (was the standfirst captured?), a `text=` paragraph count, a **`small-caps=N`** count (acronyms preserved as small caps — expect `N≥1` on any Economist article, which sets AI/IBM/GPT in `<small>`; `0` there means the typography walk missed them), an `images=N [slugs]` list, and an **`infographics=N`** count (Economist iframe maps/charts screenshotted into their own document positions). **Confirm acronym casing survived** into the extracted text — `grep -oE "\\b(AI|ai|IBM|ibm)\\b" article-text/YYYY-MM-DD.txt | sort | uniq -c` should show **uppercase** AI/IBM, not lowercase; lowercase means the `font-variant-caps`/raw-text-node path regressed to `innerText`. Expect `text` **roughly one per paragraph** (≈12–40 for a feature; under ~8 means the `article p`/`<article>` selectors missed the body and you got page chrome — re-check login/selectors), and `images` to roughly match the **real `<figure>` charts/photos** in the body (often 1–4; **`images=0` on an article you know has a chart means the image step failed** — usually a paywall/login issue or the figure markup differs, so don't ship it without checking). **On an Economist day with a map or data chart, confirm `infographics≥1`** — and when you eyeball the page (below), check the map shows **with its labels and legend**; a labels-less map means the widget didn't render (re-run) and a bare-PNG fetch would have that failure mode. For an obituary or feature whose subtitle states a key fact (death date, age, who-did-what), confirm `deck=yes`; if it's `no`, the standfirst didn't match the selectors — grab it from `browser_snapshot` and prepend it to the text by hand. **Check the article's real ending survived AND no footer junk trailed in** — `tail -c 300 article-text/YYYY-MM-DD.txt` should end on the article's actual closing sentence (Economist pieces end with `■`), not a newsletter promo; a promo tail means the page grew a new footer block the `STOP` regex doesn't know — add its opening phrase to `STOP` and re-run. Then `ls -la public/articles/YYYY-MM-DD.html` (expect **~50KB–1MB** with images inlined; **several MB means the image step grabbed something huge** — re-check). **Always render the page and eyeball it at a phone width** — that the text reflows full-width and the charts/photos appear and are legible. `file://` is blocked in the Playwright browser, so serve `public/` for a minute: `cd public && python3 -m http.server 8734` (background it), `browser_resize` to 390×844, `browser_navigate` to `http://localhost:8734/articles/YYYY-MM-DD.html`, screenshot (`fullPage: true`) and look at it; then kill the server (`pkill -f "http.server 8734"`). If `text=0`/near-empty, the paywall wasn't cleared — re-check login or use the manual fallback below.
    - Set `articlePageUrl: "/articles/YYYY-MM-DD.html"` in the JSON. The index row then shows the single **ARTICLE** button. This now applies to **every** day, open or paywalled — only the manual-fallback case below omits it.
    - **Manual fallback** (only if auto-capture can't work on an odd page): omit `articlePageUrl` — the ARTICLE button then links straight to `articleUrl`. The day loses its glossary, so treat this as a last resort.
    - **Upload the full article text (for the voice quiz).** The home-page **Voice quiz** (`voiceQuiz: true`, see step 6) reads much better when the tutor has the *whole* article, not just the handout — it then judges the student's from-memory retelling against the real story. The capture snippet already wrote `article-text/YYYY-MM-DD.txt` (headline + deck first, then the body), so just upload it to **Vercel Blob** (we keep the full text **out of git** — the hard rule is never republish article text — so Blob is its home; `public/articles/` is served, not "republishing to git readers", and carries a `noindex` meta):
