@@ -1,0 +1,115 @@
+{
+  "date": "2026-07-31",
+  "title": "What the Big Mac index reveals about a global currency beef",
+  "articleUrl": "https://www.economist.com/interactive/leaders/2026/07/30/what-the-big-mac-index-reveals-about-a-global-currency-beef",
+  "articlePageUrl": "/articles/2026-07-31.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "ensconced",
+      "partOfSpeech": "verb",
+      "pronunciation": "en-SKONST",
+      "articleQuote": "Locked in a vault near Paris, ensconced in three bell jars, sits a small cylinder of platinum alloy, forged in London in 1879.",
+      "inContext": "The metal cylinder that once defined the kilogram is tucked away snugly and securely inside three protective glass domes, safe from dust, fingerprints, and time.",
+      "meaning": "Settled comfortably, snugly, or securely into a place — often somewhere protective, cozy, or hard to dislodge from. The article enjoys the word so much it uses it twice: the Big Mac, it jokes, is 'ensconced in a cardboard box.'",
+      "examples": [
+        "By the second week of summer break, my brother was fully ensconced on the couch with a blanket, snacks, and three remote controls.",
+        "The team's star striker is so ensconced in the starting lineup that no one even competes for her spot anymore."
+      ]
+    },
+    {
+      "word": "strident",
+      "partOfSpeech": "adjective",
+      "pronunciation": "STRY-dent",
+      "articleQuote": "Donald Trump, America's president, has often been the world's most strident critic of cheap Asian currencies.",
+      "inContext": "Among all the world leaders complaining about undervalued currencies, Trump has been the loudest and most aggressive — his criticism is forceful and impossible to ignore.",
+      "meaning": "Loud, harsh, and insistently forceful — used for voices, complaints, or opinions pressed so aggressively that they grate on listeners.",
+      "examples": [
+        "The debate turned unpleasant when one side stopped arguing facts and just got more strident, repeating the same points at higher volume.",
+        "Parents at the game grew so strident about the referee's calls that the league sent out a reminder about sideline behavior."
+      ]
+    },
+    {
+      "word": "tumult",
+      "partOfSpeech": "noun",
+      "pronunciation": "TOO-mult",
+      "articleQuote": "In a world of currency tumult and controversy, our palatable guide to exchange rates is as valuable as ever.",
+      "inContext": "Exchange rates are swinging, politicians are arguing about them, and no one agrees what currencies should be worth — a state of noisy financial upheaval.",
+      "meaning": "A state of loud confusion, disorder, or upheaval — the word works for excited crowds, chaotic markets, or a period of turmoil in someone's life.",
+      "examples": [
+        "In the tumult after the buzzer-beater, nobody noticed the coach quietly walk to the locker room.",
+        "Moving to a new school mid-year threw her life into tumult for a month before things settled down."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Purchasing-power parity",
+      "articleQuote": "In America $100 buys about 16 Big Macs. That is roughly the same burger-buying power as 100 euros, 426 Chinese yuan, or 8,039 Japanese yen.",
+      "meaning": "**Purchasing-power parity** (PPP) is one of the big ideas in **economics**, and it starts from a simple question: what is money actually *for*? Buying things. So the honest way to compare two currencies isn't the number flashing on a currency exchange screen — it's what each one can buy. The same burger, the same haircut, the same pair of sneakers should cost about the same everywhere once you convert the money. That imaginary exchange rate — the one that would make prices match — is the currency's *fair value*.\n\nReal exchange rates constantly drift away from that fair value, and the gap tells you something. If you convert $6.22 into Swiss francs and it can't buy you the burger that $6.22 buys in America, the franc is *overvalued* — Switzerland is expensive. If the same dollars converted into Taiwan's currency buy you two and a half burgers, Taiwan's dollar is *undervalued* — your money goes unusually far there. That's the entire Big Mac index: one identical product, sold in over 100 countries, used as a measuring stick for whether currencies are priced honestly.\n\nYou already sense PPP when you travel: in some countries $20 makes you feel rich, in others it barely buys lunch. Economists use the same idea, with thousands of products instead of one burger, to compare countries' real living standards — and, as this article shows, to judge whether a country like China is keeping its currency artificially cheap."
+    },
+    {
+      "name": "Standards of measure",
+      "articleQuote": "Known as Le Grand K, it long served as the definitive standard for measuring the kilogram.",
+      "meaning": "This idea comes from **metrology**, the science of measurement. Here's the puzzle it solves: how do you know a kilogram is *actually* a kilogram? Your kitchen scale was checked against a better scale, which was checked against a better one — but that chain has to end somewhere, at some final reference everyone agrees on. For 130 years, that reference was one physical object: Le Grand K, a platinum cylinder locked in a vault near Paris. By definition it weighed exactly one kilogram, and every scale on Earth ultimately traced back to it.\n\nA **standard of measure** needs two things: everyone must agree on it, and it must not change. That second part is the hard part — Le Grand K was retired in 2019 partly because even a pampered metal cylinder can gain or lose a few atoms, and the world switched to defining the kilogram with unchanging constants of physics. The same logic shows up everywhere measurements matter: the meter is defined by the speed of light, and the SAT is carefully equated from year to year so that a 650 this March means the same as a 650 last October.\n\nThe article's joke — and its genuine insight — is that the Big Mac works as a Le Grand K for money: one product made to nearly identical specifications in over 100 countries. Because the burger itself stays constant, any difference in its price must be telling you something about the *currencies* — which is exactly what a good standard does: hold one thing fixed so you can measure everything else against it."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the Big Mac index actually designed to reveal?",
+      "options": [
+        "Which country produces the cheapest fast food",
+        "Whether currencies are overvalued or undervalued relative to what they can buy",
+        "How quickly McDonald's is expanding around the world",
+        "Which countries have the highest minimum wages"
+      ],
+      "answerIndex": 1,
+      "explanation": "The index compares Big Mac prices across countries to judge whether currencies have strayed from their purchasing power — their fair, burger-buying value."
+    },
+    {
+      "question": "The article calls Trump the world's most \"strident\" critic of cheap Asian currencies. Strident means:",
+      "options": [
+        "Occasional and mild",
+        "Secretive and indirect",
+        "Loud, harsh, and insistent",
+        "Careful and well-researched"
+      ],
+      "answerIndex": 2,
+      "explanation": "Strident describes criticism pressed loudly and forcefully — hard to ignore, and often grating."
+    },
+    {
+      "question": "A Big Mac costs $6.22 in America. You convert $6.22 into Mexican pesos and it buys two Big Macs in Mexico. According to the index's logic, the peso is:",
+      "options": [
+        "Overvalued",
+        "Undervalued",
+        "At exactly fair value",
+        "About to collapse"
+      ],
+      "answerIndex": 1,
+      "explanation": "Your dollars buy more burger in Mexico than at home, meaning the peso is cheaper than its purchasing power justifies — undervalued."
+    },
+    {
+      "question": "Why does the article open with Le Grand K, the platinum cylinder near Paris?",
+      "options": [
+        "Because it was recently stolen from its vault",
+        "Because France invented the Big Mac index",
+        "Because economists secretly set the kilogram standard",
+        "As an example of a standard of measure — a role the Big Mac plays for currencies"
+      ],
+      "answerIndex": 3,
+      "explanation": "Le Grand K defined the kilogram for 130 years; the article argues the unchanging Big Mac serves the same purpose as a standard for measuring currencies."
+    },
+    {
+      "question": "The article says China's yuan could become less undervalued even if its exchange rate never moves. How?",
+      "options": [
+        "China could print more yuan",
+        "Chinese wages and prices could rise faster than America's",
+        "America could lower its interest rates",
+        "McDonald's could cut burger prices in China"
+      ],
+      "answerIndex": 1,
+      "explanation": "If China's prices rise faster than America's, its Big Macs get closer to American prices — economists call that a rise in the 'real', price-adjusted exchange rate."
+    }
+  ]
+}
