@@ -5,10 +5,11 @@ import type { Track } from "@/lib/content";
 
 /**
  * "Completed by 3" on each index row — how many accounts have finished the
- * day's AI quiz. The peer-nudge layer: a bare count, PUBLIC to everyone
- * (participation, not identity — the vote's totalVotes call), with no names
- * and deliberately no "of M" denominator (the club mixes regulars with
- * occasional participants, so a total would lie).
+ * day's AI quiz. OWNER-ONLY (owner's rule, 2026-07-31; it began as a public
+ * peer nudge): the API 403s for everyone else, which lands in the provider's
+ * "leave the tags off" path, so members never see the tag at all. Still a
+ * bare count — no names, and deliberately no "of M" denominator (the club
+ * mixes regulars with occasional participants, so a total would lie).
  *
  * The TodayTag/VotePoll recipe: the page stays statically generated and this
  * hydrates in — but the fetch is hoisted to ONE provider around the readings
