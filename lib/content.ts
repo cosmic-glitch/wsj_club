@@ -18,16 +18,19 @@ function contentDirFor(track: Track): string {
 
 /**
  * One vocabulary word the kids likely don't know yet.
- * Presented article-first: how it's used in the article, what it means there,
- * then the broader meaning, then two more examples.
+ * Presented article-first: how it's used in the article, then ONE woven
+ * definition covering both what the word does in the article and its broader
+ * everyday meaning (glossary-pop-up style), then two more examples.
+ * (`inContext` is legacy — older days authored a separate article-specific
+ * gloss, and the card still renders both segments when it's present.)
  */
 export type VocabWord = {
   word: string;
   partOfSpeech: string; // e.g. "noun", "verb", "adjective" — NOT shown on the handout anymore (the pronunciation respelling took its place), but still fed to the voice-quiz tutor (lib/quiz-prompt.ts)
   pronunciation?: string; // plain-English US respelling shown on the card in place of the part of speech — hyphen-separated syllables, primary stress in CAPS (e.g. "rih-PUG-nunt", "yoo-BIK-wih-tus"). NOT IPA. The ▶ button plays the real audio; this is the at-a-glance text guide
   articleQuote: string; // the phrase/sentence from the article where the word appears
-  inContext: string; // what the word means right there, in the article's context
-  meaning: string; // the broader, general definition
+  inContext?: string; // legacy: the separate article-specific gloss on pre-2026-07-31 days — rendered only when present
+  meaning: string; // the single woven definition — article sense + general meaning in one flow
   examples: string[]; // two more example sentences a teenager would relate to
 };
 

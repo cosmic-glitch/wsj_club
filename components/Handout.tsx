@@ -158,15 +158,25 @@ function VocabCard({
         </blockquote>
       </div>
 
-      <p className="mt-3 text-stone-800">
-        <InlineLabel>What it means here</InlineLabel>
-        <Rich text={word.inContext} />
-      </p>
-
-      <p className="mt-2 text-stone-800">
-        <InlineLabel>In general</InlineLabel>
-        <Rich text={word.meaning} />
-      </p>
+      {word.inContext ? (
+        <>
+          {/* Legacy days: a separate article gloss + general definition were
+              authored as two segments — keep rendering both. */}
+          <p className="mt-3 text-stone-800">
+            <InlineLabel>What it means here</InlineLabel>
+            <Rich text={word.inContext} />
+          </p>
+          <p className="mt-2 text-stone-800">
+            <InlineLabel>In general</InlineLabel>
+            <Rich text={word.meaning} />
+          </p>
+        </>
+      ) : (
+        <p className="mt-3 text-stone-800">
+          <InlineLabel>Meaning</InlineLabel>
+          <Rich text={word.meaning} />
+        </p>
+      )}
 
       <div className="mt-4">
         <Label>More examples</Label>
@@ -210,10 +220,9 @@ function ConceptCard({
       </div>
 
       {/* One clear explanation of the idea (Feynman-style, with a concrete
-          example). Concepts are NOT split into "what it means here" vs "in
-          general" the way vocab is — the meaning just explains the concept.
-          Paragraphs split on blank lines; `**bold**`/`*italic*` render as real
-          emphasis (see lib/rich-text) rather than as literal asterisks. */}
+          example). Paragraphs split on blank lines; `**bold**`/`*italic*`
+          render as real emphasis (see lib/rich-text) rather than as literal
+          asterisks. */}
       <RichParagraphs
         text={concept.meaning}
         className="mt-2 text-stone-800"

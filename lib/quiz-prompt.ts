@@ -65,10 +65,11 @@ HOW YOU QUIZ (your teaching style):
 
 function vocabBlock(reading: Reading): string {
   return reading.vocab
-    .map(
-      (w, i) =>
-        `${i + 1}. "${w.word}" (${w.partOfSpeech}) — means: ${stripMarkdown(w.meaning)} In this article: ${stripMarkdown(w.inContext)}`
-    )
+    .map((w, i) => {
+      // inContext is legacy/optional — newer vocab folds it into `meaning`.
+      const ctx = w.inContext ? ` In this article: ${stripMarkdown(w.inContext)}` : "";
+      return `${i + 1}. "${w.word}" (${w.partOfSpeech}) — means: ${stripMarkdown(w.meaning)}${ctx}`;
+    })
     .join("\n");
 }
 
@@ -88,13 +89,19 @@ function conceptBlock(reading: Reading): string {
  */
 function handoutText(reading: Reading): string {
   const vocab = reading.vocab
-    .map(
-      (w, i) =>
+    .map((w, i) => {
+      // inContext is legacy/optional; newer vocab has one woven definition in
+      // `meaning`, so skip the "What it means there" line.
+      const ctx = w.inContext
+        ? `     What it means there: ${stripMarkdown(w.inContext)}\n`
+        : "";
+      return (
         `  ${i + 1}. "${w.word}" (${w.partOfSpeech})\n` +
         `     In the article: ${w.articleQuote}\n` +
-        `     What it means there: ${stripMarkdown(w.inContext)}\n` +
-        `     In general: ${stripMarkdown(w.meaning)}`
-    )
+        ctx +
+        `     Meaning: ${stripMarkdown(w.meaning)}`
+      );
+    })
     .join("\n");
   // Some days are vocabulary-only (no concepts) — omit the CONCEPTS block
   // entirely rather than leaving an empty heading in the tutor's answer key.
