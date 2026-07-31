@@ -227,9 +227,9 @@ export default function LandingIndex({
           <div className="mt-[17px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] p-4 shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a] motion-reduce:animate-none">
             <p className="font-sans text-[14.5px] leading-relaxed text-[#0a0a0a]">
               One hand-picked article a day. Read it, then explain it to an AI
-              tutor for 5&ndash;10 minutes straight. That is{" "}
-              <em>active reading</em>, the kind that sticks. Do it daily and
-              your general knowledge, vocabulary, and SAT verbal all climb.{" "}
+              tutor for 5&ndash;10 minutes straight. Explaining is how it
+              sticks. Do it daily and your general knowledge, vocabulary, and
+              SAT verbal all climb.{" "}
               <Link
                 href="/guide"
                 className="ml-2 whitespace-nowrap font-mono text-[11.5px] font-bold uppercase tracking-[.08em] underline decoration-2 underline-offset-4 hover:bg-[#ffe600]"

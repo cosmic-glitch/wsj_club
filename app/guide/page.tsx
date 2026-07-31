@@ -4,11 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "How it works · Daily Reading Club",
   description:
-    "One hand-picked article a day, read actively: study the handout, then explain the article to an AI tutor that keeps you honest.",
+    "One hand-picked article a day: read it, study the handout, then explain the article to an AI tutor that keeps you honest. Explaining is how it sticks.",
 };
 
-// The new-joiner guide: why the club exists (active reading, out loud, kept
-// honest by the AI), then the daily loop as three numbered step cards (each
+// The new-joiner guide: why the club exists (explaining out loud is what
+// makes reading stick, kept honest by the AI), then the daily loop as three
+// numbered step cards (each
 // with a slot for a short screen-recording loop), the smaller things worth
 // knowing, and a CTA back to today's reading. Static, track-agnostic — the
 // junior track works the same way, so one page serves both. Per the site
@@ -80,7 +81,7 @@ export default function GuidePage() {
   return (
     <article>
       {/* Header — the handout pages' mini-masthead recipe, then the pitch:
-          what the club is for, and the active-reading idea that drives it. */}
+          what the club is for, and the Feynman idea that drives it. */}
       <header className="border-b-[5px] border-[#0a0a0a] pb-6">
         <h1 className="font-display text-[clamp(38px,9vw,64px)] font-normal uppercase leading-[1.02] tracking-[.01em] text-[#0a0a0a]">
           How it{" "}
@@ -220,8 +221,8 @@ export default function GuidePage() {
       {/* CTA back into the loop. */}
       <div className="mt-14 border-[3px] border-[#0a0a0a] bg-[#ffe600] p-6 text-center">
         <p className="font-sans text-[15px] font-bold text-[#0a0a0a]">
-          That&rsquo;s the whole loop. Read actively, explain it out loud,
-          repeat tomorrow.
+          That&rsquo;s the whole loop. Read, explain it out loud, repeat
+          tomorrow.
         </p>
         <Link
           href="/"
