@@ -202,11 +202,11 @@ export default function VotePoll({
             ) : (
               <>
                 <div className="px-5 pt-5 pb-3">
-                  <h2 className={MODAL_H2}>Today&rsquo;s read — you decide</h2>
+                  <h2 className={MODAL_H2}>The next read — you decide</h2>
                   <p className="mt-1 font-sans text-[13px] leading-snug text-stone-600">
                     {voted
                       ? "Your vote is in — you can change it until the handout is published."
-                      : "Tap the article the club should read today, then submit. You can change your vote until the handout is published."}
+                      : "Tap the article the club should read next, then submit. You can change your vote until the handout is published."}
                     {typeof poll.totalVotes === "number" &&
                       ` ${
                         poll.totalVotes === 1
@@ -219,7 +219,7 @@ export default function VotePoll({
                 {/* the ballot — scrolls inside the panel on a long candidate list */}
                 <div
                   role="radiogroup"
-                  aria-label="Today's article candidates"
+                  aria-label="Article candidates"
                   className="min-h-0 flex-1 space-y-2 overflow-y-auto px-5 py-1"
                 >
                   {sections.map((section) => (
@@ -339,7 +339,7 @@ export default function VotePoll({
 
       {/* font-sans to match the reading rows' titles (same grid slot) */}
       <span className="min-w-0 font-sans text-[19px] font-bold leading-[1.35] group-hover:text-[#ffe600]">
-        TODAY&rsquo;S READ — YOU DECIDE
+        THE NEXT READ — YOU DECIDE
       </span>
 
       <span className="flex flex-wrap items-center gap-2 min-[681px]:flex-nowrap">
