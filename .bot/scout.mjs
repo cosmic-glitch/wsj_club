@@ -4,6 +4,7 @@
 //   node --env-file=.bot/.env .bot/scout.mjs
 // Only lists candidates (works even logged-out); reading bodies is read.mjs.
 import { ensureEconSession } from "./lib.mjs";
+import { loadPublished, isPublished } from "./published.mjs";
 
 const SECTIONS = [
   "", // homepage — surfaces most of the day's spread
@@ -58,6 +59,14 @@ function slugToTitle(url) {
   return slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
-const out = [...byUrl.values()];
-console.error(`scout: ${out.length} Economist candidates across ${SECTIONS.length} sections`);
+// Drop anything the club has already read — section hubs surface weeks of
+// articles, so past picks reliably resurface here looking fresh.
+const published = loadPublished();
+const all = [...byUrl.values()];
+const out = all.filter((c) => !isPublished(published, { url: c.url, title: c.headline }));
+const dropped = all.filter((c) => !out.includes(c));
+if (dropped.length) {
+  console.error(`scout: dropped ${dropped.length} already-published: ${dropped.map((c) => c.url).join(", ")}`);
+}
+console.error(`scout: ${out.length} Economist candidates across ${SECTIONS.length} sections (${published.count} published readings excluded)`);
 process.stdout.write(JSON.stringify(out, null, 2) + "\n");

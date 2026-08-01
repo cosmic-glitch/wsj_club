@@ -5,6 +5,7 @@
 //   node --env-file=.env.local .bot/open-vote.mjs <YYYY-MM-DD> <candidates.json> [--dry-run]
 import fs from "node:fs";
 import pg from "pg";
+import { loadPublished, isPublished } from "./published.mjs";
 
 const argv = process.argv.slice(2);
 const [date, file] = argv.filter((a) => !a.startsWith("--"));
@@ -75,6 +76,17 @@ function readCandidates() {
 const candidates = readCandidates();
 if (new Set(candidates.map((c) => c.id)).size !== candidates.length) {
   console.error("Two candidates slugified to the same id — give them more distinct titles.");
+  process.exit(1);
+}
+
+// Backstop: never ballot an article the club has already read (either track,
+// matched by normalized URL or title). scout.mjs filters these too, but a
+// hand-built or model-built ballot must not slip one through.
+const published = loadPublished();
+const repeats = candidates.filter((c) => isPublished(published, { url: c.articleUrl, title: c.title }));
+if (repeats.length > 0) {
+  for (const c of repeats) console.error(`Already published: "${c.title}" (${c.articleUrl})`);
+  console.error(`Refusing — ${repeats.length} candidate(s) are readings the club has already done.`);
   process.exit(1);
 }
 

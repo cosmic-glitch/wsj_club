@@ -26,14 +26,15 @@ All commands run from the repo root (`~/wsj_club`). The `.bot/` scripts must be 
 3. **A real, full-text article** — not a video-led page, live blog, chart-only *Graphic detail* stub, or podcast. It must carry **3 strong SAT-sweet-spot vocab words** and **3–5 teachable concepts**.
 4. **Quality + articulation first**, then the standing lean toward **worldly wisdom — general knowledge, finance/markets, and modern forces, AI above all** (these may recur; don't ration them). Variety is only a mild tiebreaker.
 
-## Step 1 — Coverage check (what's been read lately)
+## Step 1 — The do-not-repeat list (a hard gate) + coverage awareness
 
-- `ls content/` and `grep -h '"title"' content/*.json | tail -20` to see recent readings; skim the last ~5 for their domains. Use this only to stay *aware* (a repeat domain is fine if it's the best article), never to force rotation.
-- Build the enrichment **exclude-list**: `grep -rhoE '"(articleUrl|url)":\s*"[^"]+"' content/*.json` and pull the non-Economist URLs (fs.blog, ourworldindata.org, paulgraham.com, etc.). Never re-propose one of these. **Morgan Housel / Collab Fund is permanently excluded** regardless.
+- **Build the do-not-repeat list from EVERY published reading — news and enrichment alike, both tracks:** `grep -h '"title"' content/*.json content/junior/*.json` and `grep -rhoE '"articleUrl":\s*"[^"]+"' content/*.json content/junior/*.json`. **A candidate matching any published reading by URL or by title (case-insensitive; headlines sometimes get re-capitalized or lightly reworded between a section page and the article) is disqualified — no exceptions, however strong.** This has actually happened: a past run balloted three already-read articles, including one published two days earlier, because section hubs resurface weeks of articles. Two mechanical layers back you up — `scout.mjs` filters published articles out of its output, and `open-vote.mjs` refuses a ballot containing one — but a reworded title or variant URL can slip past string matching, so check your shortlist against the published *titles* yourself before reading.
+- **Domain awareness (soft, unchanged):** skim the last ~5 readings for their domains. A repeat *domain* is fine if it's the best article — never force rotation. Only a repeat *article* is banned.
+- **Morgan Housel / Collab Fund is permanently excluded** regardless.
 
 ## Step 2 — News candidates (The Economist)
 
-1. `node --env-file=.bot/.env .bot/scout.mjs > /tmp/econ-candidates.json` — returns `[{url, headline, section}]` swept across the homepage + main sections (it auto-refreshes the login if the session expired).
+1. `node --env-file=.bot/.env .bot/scout.mjs > /tmp/econ-candidates.json` — returns `[{url, headline, section}]` swept across the homepage + main sections, minus already-published readings (it auto-refreshes the login if the session expired; its stderr names any candidates it dropped as already-read).
 2. On the **headlines**, shortlist the **~12 most promising** against the gates above (favor Leaders/Briefing/Finance/Science/Business/International features; down-weight thin explainers and anything that looks video- or chart-led).
 3. Read those ~12 in full: `node --env-file=.bot/.env .bot/read.mjs <url1> <url2> …` → `[{url,title,words,wall,text}]`. **Decide on the real text, not the headline.** For each, judge: 3 strong vocab words? 3–5 teachable concepts? **prerequisite-load gate** (the hard veto)? articulation? teen hook? appropriateness? A piece that comes back with very few words / `wall:true` is a dud — drop it and read a replacement from the shortlist, so you finish having genuinely read ~10.
 4. Rank them, **recording for each a rating (1–10) and a one-line "why it fits" verdict** — the same opinionated read the interactive picker hands the owner (the concept/vocab payload, the hook, the domain, any reservation). These feed the Step 5 owner notification, so keep them as you go. Take the **top 7** as the news candidates (`kind: "news"`, `source: "Economist"`).
@@ -44,7 +45,7 @@ Scout the **enrichment layer** — durable mental-models / progress / wisdom rea
 
 1. Discover candidates with `WebSearch` and `WebFetch` of the hub pages (these open sources are **not** blocked and need no login).
 2. **The ≤2,000-word rule is a HARD gate** (~1,000 target). Verify the count with `node --env-file=.bot/.env .bot/read.mjs <url>` (authoritative) — never eyeball near the ceiling. A great piece over the ceiling isn't a daily pick unless you can point at one self-contained excerpt.
-3. Read each in full; require the enrichment DNA: **positive/constructive tone**, a **transferable mental model**, the **prerequisite-load gate**, 3 vocab words + 3–5 concepts. Exclude already-used URLs (Step 1) and Morgan Housel.
+3. Read each in full; require the enrichment DNA: **positive/constructive tone**, a **transferable mental model**, the **prerequisite-load gate**, 3 vocab words + 3–5 concepts. The Step 1 do-not-repeat gate and the Morgan Housel exclusion apply here too.
 4. Take the **top 3** across a spread of sources (`kind: "enrichment"`, `source:` the source's name, e.g. `Farnam Street`, `Paul Graham`). As with news, **record a rating (1–10) and a one-line "why it fits" verdict for each** (name the mental model it teaches) — these go in the Step 5 notification.
 
 If enrichment discovery comes up short (a source is down, too few clear the word gate), it's acceptable to open with fewer than 3 enrichment picks rather than force a weak one — but try hard for 3. News from the Economist should reliably yield 7.
@@ -60,7 +61,7 @@ If enrichment discovery comes up short (a source is down, too few clear the word
    ```bash
    node --env-file=.env.local .bot/open-vote.mjs "${TODAY}" /tmp/ballot.json
    ```
-   It refuses if `content/${TODAY}.json` exists and upserts idempotently on `(track,date)` otherwise (re-running keeps already-cast ballots for unchanged titles). Add `--dry-run` to validate without writing.
+   It refuses if `content/${TODAY}.json` exists, refuses any candidate matching an already-published reading (Step 1's gate, enforced), and upserts idempotently on `(track,date)` otherwise (re-running keeps already-cast ballots for unchanged titles). Add `--dry-run` to validate without writing.
 4. **Verify live:** `curl -s https://dailyreadingclub.com/api/vote` should show `"active": true` with your candidates for `${TODAY}`. If it doesn't, do **not** notify — log the failure and stop.
 
 ## Step 5 — Notify the owner (your ranked verdict, with reasoning)
