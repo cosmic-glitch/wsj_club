@@ -25,7 +25,9 @@ import type { Track } from "@/lib/content";
  * Rendered as the FIRST <li> of the (statically generated) readings list; it
  * fetches `/api/vote` after mount and renders nothing when no poll is live, so
  * the page stays static and hydration always matches (same recipe as the TODAY
- * chip). While a poll is live the previous newest row keeps its server-rendered
+ * chip). To hide that fetch's latency, the last live poll paints immediately
+ * from a localStorage copy while the real answer is in flight — see the cache
+ * helpers below. While a poll is live the previous newest row keeps its server-rendered
  * yellow — the `vote-live` class on this row is what demotes it, via sibling-
  * selector variants in LandingIndex (`[.vote-live~&]:…`), so the poll takes
  * over as THE highlighted "today" entry.
@@ -61,6 +63,41 @@ type PollState = {
   totalVotes?: number; // ballots cast so far — public (participation, not preference)
 };
 
+// Optimistic first paint: the last-known live poll re-renders instantly from
+// localStorage while the real /api/vote answer is in flight, killing the
+// visible pop-in for repeat visitors (the first-ever visit still waits for
+// the network). Only PUBLIC fields are cached — never user/yourVote/tally,
+// since a shared device can switch accounts between visits — so the row may
+// briefly show "Vote" before the fetch upgrades it to "Voted ✓".
+const CACHE_PREFIX = "vote-poll:";
+
+function readCache(track: Track): PollState | null {
+  try {
+    const raw = localStorage.getItem(CACHE_PREFIX + track);
+    if (!raw) return null;
+    const p = JSON.parse(raw) as PollState;
+    return p?.active && p.date && p.candidates?.length ? p : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeCache(track: Track, d: PollState) {
+  try {
+    if (d.active && d.date && d.candidates?.length) {
+      const { active, date, candidates, totalVotes } = d;
+      localStorage.setItem(
+        CACHE_PREFIX + track,
+        JSON.stringify({ active, date, candidates, totalVotes })
+      );
+    } else {
+      localStorage.removeItem(CACHE_PREFIX + track);
+    }
+  } catch {
+    // storage full/blocked — the cache is only an optimization
+  }
+}
+
 /** "2026-07-16" → "Jul 16" (rendered uppercase — same as the row date tags). */
 function dateTag(date: string): string {
   const [y, m, d] = date.split("-").map(Number);
@@ -94,11 +131,30 @@ export default function VotePoll({
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // `synced` = the real /api/vote answer has landed; before that `poll` may be
+  // the localStorage copy, which never carries login/vote state.
+  const [synced, setSynced] = useState(false);
+
   useEffect(() => {
+    // Cache first (post-mount, so server and first client paint still match —
+    // the hydration recipe in the header comment), then reconcile with the API.
+    setSynced(false);
+    setPoll(readCache(track));
+    let alive = true;
     fetch(`/api/vote?track=${track}`, { cache: "no-store" })
       .then((r) => r.json())
-      .then((d: PollState) => setPoll(d))
-      .catch(() => setPoll({ active: false }));
+      .then((d: PollState) => {
+        if (!alive) return;
+        setPoll(d);
+        setSynced(true);
+        writeCache(track, d);
+      })
+      .catch(() => {
+        if (alive) setPoll({ active: false });
+      });
+    return () => {
+      alive = false;
+    };
   }, [track]);
 
   // Esc closes the modal; lock body scroll while it's open (the AdminSessions
@@ -183,7 +239,13 @@ export default function VotePoll({
             className="flex max-h-[90vh] w-full max-w-lg flex-col border-[3px] border-[#0a0a0a] bg-white shadow-[8px_8px_0_#ffe600,8px_8px_0_3px_#0a0a0a]"
             onClick={(e) => e.stopPropagation()}
           >
-            {!poll.user ? (
+            {!poll.user && !synced ? (
+              // Opened from the cached copy before the API answered — login
+              // state is unknown for a beat, so don't flash the log-in gate.
+              <div className="p-6 font-mono text-xs font-bold uppercase tracking-[.08em] text-stone-500">
+                Loading…
+              </div>
+            ) : !poll.user ? (
               // Logged out: the same on-click gate as the voice quiz.
               <div className="p-6">
                 <h2 className={MODAL_H2}>You need to log in</h2>
