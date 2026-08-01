@@ -49,6 +49,13 @@ next-env.d.ts
 # to private Vercel Blob via scripts/upload-article-text.mjs for the voice quiz.
 /article-text/
 
+# autonomous reading-club bot (Hetzner-only): Playwright + its scripts + the
+# logged-in browser session state (Economist cookies) for reading full articles
+# from this box without a paid browser service. SENSITIVE + heavy + local-only —
+# this repo is public and Vercel-deployed, so NEVER commit and never let it reach
+# the build. Next.js ignores dot-dirs, so this stays out of the app entirely.
+/.bot/
+
 # local test artifacts (browser screenshots from the wsj-reading skill)
 /index.png
 /reading.png
