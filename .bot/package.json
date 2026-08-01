@@ -1,0 +1,11 @@
+{
+  "name": "reading-club-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Hetzner-only autonomous picker/vote bot for the Reading Club. Gitignored; never deployed.",
+  "dependencies": {
+    "pg": "^8.22.0",
+    "playwright": "^1.62.1"
+  }
+}

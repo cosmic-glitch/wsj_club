@@ -94,7 +94,7 @@ ENRICHMENT
 
 Dropped: <notable cuts + why>
 MSG
-node .bot/notify.mjs --file /tmp/vote-notify.txt
+node --env-file=.bot/.env .bot/notify.mjs --file /tmp/vote-notify.txt
 ```
 
 (The `${TODAY}` above must be the real date — expand it when writing the file, e.g. build the text in your session and write the literal value, since the heredoc is single-quoted.)
