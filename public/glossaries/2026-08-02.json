@@ -1,0 +1,536 @@
+[
+  {
+    "k": "propensity",
+    "t": "propensity",
+    "kind": "vocab",
+    "pron": "pruh-PEN-sih-tee",
+    "forms": [
+      "high-propensity",
+      "propensity"
+    ],
+    "text": "A natural tendency or leaning toward a particular behavior. The Census Bureau calls an application high-propensity when the new business shows a tendency toward hiring, meaning it will probably employ someone beyond the founder. That share falling to 30% is the article's clue that more Americans are building one-person companies.",
+    "audio": true
+  },
+  {
+    "k": "enamoured",
+    "t": "enamoured",
+    "kind": "vocab",
+    "pron": "ih-NAM-erd",
+    "forms": [
+      "enamoured"
+    ],
+    "text": "Charmed or captivated by something, close to being in love with it. The article uses it for America's long romance with being your own boss: about 60% of Americans have said for decades they'd rather start a business than work for someone else. American writing usually spells it enamored.",
+    "audio": true
+  },
+  {
+    "k": "clamour",
+    "t": "clamour",
+    "kind": "vocab",
+    "pron": "KLAM-er",
+    "forms": [
+      "clamoured"
+    ],
+    "text": "To demand something loudly and insistently, the way a crowd shouts until it gets what it wants. Businesses coming out of the pandemic were desperate to hire, practically shouting for workers. American English spells it clamor, and it works as a noun too.",
+    "audio": true
+  },
+  {
+    "k": "hawking",
+    "t": "hawking",
+    "kind": "word",
+    "forms": [
+      "hawking"
+    ],
+    "text": "Selling things, often by promoting them loudly or pushing them at people, the way a street vendor calls out to passers-by. Nothing to do with birds here: Zachary Dunn started hawking, that is aggressively selling, slogan hats online.",
+    "audio": true
+  },
+  {
+    "k": "emblazoned",
+    "t": "emblazoned",
+    "kind": "word",
+    "forms": [
+      "emblazoned"
+    ],
+    "text": "Decorated boldly and conspicuously with words or designs, so they're impossible to miss. The hats are emblazoned with slogans: the slogan is printed big, front and center.",
+    "audio": true
+  },
+  {
+    "k": "toil",
+    "t": "toil",
+    "kind": "word",
+    "forms": [
+      "toil"
+    ],
+    "text": "To work long and hard, usually at something exhausting or tedious. The article contrasts starting your own business with toiling for someone else, and the word choice makes working for a boss sound like drudgery.",
+    "audio": true
+  },
+  {
+    "k": "lured",
+    "t": "lured",
+    "kind": "word",
+    "forms": [
+      "lured"
+    ],
+    "text": "Attracted or tempted someone with something appealing, the way bait lures a fish. Big companies lured workers away from self-employment by offering steady paychecks and stability.",
+    "audio": true
+  },
+  {
+    "k": "flurry",
+    "t": "flurry",
+    "kind": "word",
+    "forms": [
+      "flurry"
+    ],
+    "text": "A sudden burst of activity, like a flurry of snow: lots of things happening at once in a short time. The industries seeing the biggest flurry of applications are professional services, retail and health care.",
+    "audio": true
+  },
+  {
+    "k": "elevated",
+    "t": "elevated",
+    "kind": "word",
+    "forms": [
+      "elevated"
+    ],
+    "text": "Literally raised up high, but in data-speak it means staying above the normal level. Applications remained elevated: even after the pandemic surge faded, the numbers stayed higher than usual instead of falling back.",
+    "audio": true
+  },
+  {
+    "k": "buzzy",
+    "t": "buzzy",
+    "kind": "word",
+    "forms": [
+      "Buzzy"
+    ],
+    "text": "Generating lots of excited talk, or buzz. Buzzy AI startups are the ones everyone in tech is chattering about, though the article's point is that they're only a small part of the boom.",
+    "audio": true
+  },
+  {
+    "k": "cohorts",
+    "t": "cohorts",
+    "kind": "word",
+    "forms": [
+      "cohorts"
+    ],
+    "text": "Groups of people or things that start something at the same time and can be tracked together, like the class of 2026. New cohorts of small businesses means each year's batch of newly founded firms, and each batch adopts AI earlier than the last.",
+    "audio": true
+  },
+  {
+    "k": "accruing",
+    "t": "accruing",
+    "kind": "word",
+    "forms": [
+      "accruing"
+    ],
+    "text": "Building up gradually over time, or flowing to someone as a benefit. The economist's claim is that AI's value could end up accruing to, that is piling up in the pockets of, small sellers rather than corporate giants.",
+    "audio": true
+  },
+  {
+    "k": "deems",
+    "t": "deems",
+    "kind": "word",
+    "forms": [
+      "deems"
+    ],
+    "text": "Officially judges or considers something to be a certain way. When the Census Bureau deems an application high-propensity, it has applied its criteria and put the application in that category.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckons",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "Thinks or estimates. In British writing, an expert who reckons something is offering their considered judgment, not doing math. American English uses it too, but more casually.",
+    "audio": true
+  },
+  {
+    "k": "uptick",
+    "t": "uptick",
+    "kind": "word",
+    "forms": [
+      "uptick"
+    ],
+    "text": "A small increase, pictured as a tick mark moving up on a chart. The uptick in e-commerce from the pandemic means online shopping rose and stayed higher.",
+    "audio": true
+  },
+  {
+    "k": "pollster",
+    "t": "pollster",
+    "kind": "word",
+    "forms": [
+      "pollster"
+    ],
+    "text": "A company or person that runs polls, surveys asking many people their opinions to estimate what the whole population thinks. Gallup is one of the oldest and best-known American pollsters.",
+    "audio": true
+  },
+  {
+    "k": "subsidies",
+    "t": "subsidies",
+    "kind": "word",
+    "forms": [
+      "subsidies"
+    ],
+    "text": "Money a government gives to people or businesses to support an activity it wants more of. During the pandemic, federal subsidies helped small businesses survive, and helped new founders get started.",
+    "audio": true
+  },
+  {
+    "k": "payrolled",
+    "t": "payrolled",
+    "kind": "word",
+    "forms": [
+      "payrolled"
+    ],
+    "text": "On a company's payroll, meaning employed as regular staff with a salary. A payrolled position is a traditional job, the opposite of working for yourself.",
+    "audio": true
+  },
+  {
+    "k": "niche",
+    "t": "niche",
+    "kind": "word",
+    "forms": [
+      "niche"
+    ],
+    "text": "A small, specialized corner of a market serving a particular group with particular tastes, like custom pill cases or rare trading cards. Pronounced neesh. Niche products have fewer customers but also far fewer competitors.",
+    "audio": true
+  },
+  {
+    "k": "scaling",
+    "t": "scaling",
+    "kind": "word",
+    "forms": [
+      "scaling"
+    ],
+    "text": "In business-speak, growing a company bigger, serving more customers, hiring more people. A founder with the intention of scaling never planned to stay a one-person shop.",
+    "audio": true
+  },
+  {
+    "k": "capital",
+    "t": "capital",
+    "kind": "word",
+    "forms": [
+      "capital"
+    ],
+    "text": "Not a city here: in economics, capital means the money and equipment needed to run a business. Reducing the capital it takes to grow a business means you need less cash upfront to get going.",
+    "audio": true
+  },
+  {
+    "k": "downsizing",
+    "t": "downsizing",
+    "kind": "word",
+    "forms": [
+      "downsizing"
+    ],
+    "text": "Moving to a smaller home, usually when children have grown and left, and shedding decades of accumulated stuff. Downsizing consultants help elderly people manage that move, one of the businesses booming as America ages.",
+    "audio": true
+  },
+  {
+    "k": "fruits",
+    "t": "fruits",
+    "kind": "word",
+    "forms": [
+      "fruits"
+    ],
+    "text": "The rewards or benefits of something, as in the fruits of your labor: what grows from the work you put in. The headline's claim is that ordinary sellers and accountants, not just tech giants, are enjoying the fruits of AI.",
+    "audio": true
+  },
+  {
+    "k": "correlation",
+    "t": "correlation",
+    "kind": "word",
+    "forms": [
+      "correlation"
+    ],
+    "text": "A statistical link between two things that tend to move together. Researchers found a close correlation between people quitting jobs in a place and new businesses being registered there, suggesting the quitters were becoming founders.",
+    "audio": true
+  },
+  {
+    "k": "incentives",
+    "t": "incentives",
+    "kind": "word",
+    "forms": [
+      "incentives"
+    ],
+    "text": "Rewards designed to encourage a behavior. Government incentives here were pandemic-era programs that made starting or keeping a small business easier, later wound down as the emergency passed.",
+    "audio": true
+  },
+  {
+    "k": "laid-off",
+    "t": "laid-off",
+    "kind": "word",
+    "forms": [
+      "laid-off"
+    ],
+    "text": "Let go from a job because the company is cutting positions, not because the worker did anything wrong. Millions of laid-off Americans during covid turned to self-employment instead of job hunting.",
+    "audio": true
+  },
+  {
+    "k": "pharmaceutical",
+    "t": "pharmaceutical",
+    "kind": "word",
+    "forms": [
+      "pharmaceutical"
+    ],
+    "text": "Related to medicines and the companies that develop and sell them. Pharmaceutical companies run clinical trials to test new drugs, and one founder in the article built a business helping them manage those trials.",
+    "audio": true
+  },
+  {
+    "k": "colonial",
+    "t": "colonial",
+    "kind": "word",
+    "forms": [
+      "colonial"
+    ],
+    "text": "From the era when America was a set of European colonies, before independence in 1776. Colonial New Yorkers lived under Dutch and then British rule, which is how the Dutch word baas ended up becoming the English word boss.",
+    "audio": true
+  },
+  {
+    "k": "barista",
+    "t": "barista",
+    "kind": "word",
+    "forms": [
+      "baristas"
+    ],
+    "text": "A person who prepares and serves espresso drinks and other coffee. The Tennessee coffee-cart founder has hired five baristas as his business grows, the article's counterexample to the claim that AI businesses don't hire.",
+    "audio": true
+  },
+  {
+    "k": "back-office",
+    "t": "back-office",
+    "kind": "word",
+    "forms": [
+      "back-office"
+    ],
+    "text": "The behind-the-scenes work of running a business that customers never see: bookkeeping, scheduling, invoices, paperwork. It's the part AI automates most easily, which is why the coffee founder automated his back-office work but still hired baristas.",
+    "audio": true
+  },
+  {
+    "k": "eight-figures",
+    "t": "eight figures",
+    "kind": "phrase",
+    "forms": [
+      "eight figures"
+    ],
+    "text": "A number with eight digits, meaning somewhere between $10,000,000 and $99,999,999. Saying a business makes eight figures in sales is a way of saying tens of millions of dollars without giving the exact number.",
+    "audio": true
+  },
+  {
+    "k": "wound-down",
+    "t": "wound down",
+    "kind": "phrase",
+    "forms": [
+      "wound down"
+    ],
+    "text": "Gradually brought to an end, like a wind-up toy slowing to a stop. The pandemic subsidies weren't cancelled overnight; they were wound down, phased out step by step.",
+    "audio": true
+  },
+  {
+    "k": "strike-out-on-their-own",
+    "t": "strike out on their own",
+    "kind": "phrase",
+    "forms": [
+      "strike out on their own"
+    ],
+    "text": "To leave the safety of a group or employer and start something independently. Nothing to do with baseball strikeouts: people who strike out on their own become their own bosses.",
+    "audio": true
+  },
+  {
+    "k": "a-roaring-trade",
+    "t": "a roaring trade",
+    "kind": "phrase",
+    "forms": [
+      "a roaring trade"
+    ],
+    "text": "A booming, highly successful business. Trade here means business activity, not swapping. Serving America's growing elderly population has become a roaring trade, from nursing homes to downsizing consultants.",
+    "audio": true
+  },
+  {
+    "k": "fertile-ground",
+    "t": "fertile ground",
+    "kind": "phrase",
+    "forms": [
+      "fertile ground"
+    ],
+    "text": "Conditions where something can easily grow and thrive, borrowed from farming, where fertile soil grows the best crops. Economic and technological shifts have created fertile ground for entrepreneurship: the conditions are ideal for new businesses to sprout.",
+    "audio": true
+  },
+  {
+    "k": "ushering-in",
+    "t": "ushering in",
+    "kind": "phrase",
+    "forms": [
+      "ushering in"
+    ],
+    "text": "Marking or causing the beginning of a new era, like an usher showing you to your seat. The Stripe economists argue AI is ushering in the age of the solopreneur, opening the door to a new period.",
+    "audio": true
+  },
+  {
+    "k": "campaign-trail",
+    "t": "the campaign trail",
+    "kind": "phrase",
+    "forms": [
+      "campaign trail"
+    ],
+    "text": "The endless circuit of speeches, rallies and town halls politicians travel while running for office. Saying politicians on the campaign trail love to call small businesses job creators hints the praise is a crowd-pleasing line, not always backed by facts.",
+    "audio": true
+  },
+  {
+    "k": "catering-to",
+    "t": "catering to",
+    "kind": "phrase",
+    "forms": [
+      "catering to"
+    ],
+    "text": "Providing what a particular group wants or needs. Not just food: any business catering to the elderly is built around serving that group's demands, from nursing homes to moving help.",
+    "audio": true
+  },
+  {
+    "k": "mint-money",
+    "t": "mint money",
+    "kind": "phrase",
+    "forms": [
+      "mint money"
+    ],
+    "text": "To earn money rapidly and in large amounts, as if you were the mint, the government factory that literally makes coins and bills. Entrepreneurs can mint money in niche categories because there's less competition there.",
+    "audio": true
+  },
+  {
+    "k": "the-man",
+    "t": "The Man",
+    "kind": "name",
+    "forms": [
+      "The Man"
+    ],
+    "text": "American slang for the bosses, big corporations, or the authorities in general: the faceless system you work for. Working for The Man means being an employee instead of your own boss, and the article ends by saying that century-long shift may be reversing.",
+    "audio": true
+  },
+  {
+    "k": "census-bureau",
+    "t": "Census Bureau",
+    "kind": "name",
+    "forms": [
+      "Census Bureau"
+    ],
+    "text": "The US government agency that counts the population every ten years and collects statistics on the economy in between, including the new-business application numbers this article is built on.",
+    "audio": true
+  },
+  {
+    "k": "federal-reserve",
+    "t": "Federal Reserve",
+    "kind": "name",
+    "forms": [
+      "Federal Reserve"
+    ],
+    "text": "America's central bank, which sets interest rates and studies the economy. Its regional banks and board employ economists, two of whom are quoted researching why business applications are surging.",
+    "audio": true
+  },
+  {
+    "k": "venture-capital",
+    "t": "venture capital",
+    "kind": "name",
+    "forms": [
+      "venture capital"
+    ],
+    "text": "Money that investment firms put into young, risky companies in exchange for part ownership, hoping a few become huge. The article notes that VC-backed startups are only a small slice of the boom; most new businesses are ordinary shops and services.",
+    "audio": true
+  },
+  {
+    "k": "think-tank",
+    "t": "think-tank",
+    "kind": "name",
+    "forms": [
+      "think-tank"
+    ],
+    "text": "An organization of researchers who study public issues like the economy or foreign policy and publish reports to influence debate. The American Enterprise Institute is a Washington think-tank.",
+    "audio": true
+  },
+  {
+    "k": "trade-group",
+    "t": "trade group",
+    "kind": "name",
+    "forms": [
+      "trade group"
+    ],
+    "text": "An association that represents the companies in one industry, promoting their shared interests and publishing statistics about their field, like the Small Business & Entrepreneurship Council here.",
+    "audio": true
+  },
+  {
+    "k": "silicon-valley",
+    "t": "Silicon Valley",
+    "kind": "name",
+    "forms": [
+      "Silicon Valley"
+    ],
+    "text": "The region south of San Francisco that is home to many of the world's biggest tech companies and startups. The name comes from silicon, the material computer chips are made from.",
+    "audio": true
+  },
+  {
+    "k": "etsy",
+    "t": "Etsy",
+    "kind": "name",
+    "forms": [
+      "Etsy-sellers"
+    ],
+    "text": "An online marketplace where individuals sell handmade, custom and vintage goods. Etsy-sellers stands in for the article's little-guy entrepreneurs, tiny independent sellers rather than corporate giants.",
+    "audio": true
+  },
+  {
+    "k": "solopreneur",
+    "t": "solopreneur",
+    "kind": "name",
+    "forms": [
+      "solopreneur"
+    ],
+    "text": "A blend of solo and entrepreneur: someone who runs a business entirely alone, with no employees. Economists at Stripe argue AI fills the gaps that once forced founders to hire, ushering in the age of the solopreneur.",
+    "audio": true
+  },
+  {
+    "k": "activation-potential",
+    "t": "activation potential",
+    "kind": "name",
+    "forms": [
+      "activation potential"
+    ],
+    "text": "A chemistry idea, usually called activation energy: the energy hump molecules must clear before a reaction happens. Lower the hump and reactions fire off everywhere. The founder's analogy is that AI lowers the hump for starting a business, so far more people actually do it.",
+    "audio": true
+  },
+  {
+    "k": "e-commerce",
+    "t": "e-commerce",
+    "kind": "name",
+    "forms": [
+      "e-commerce"
+    ],
+    "text": "Buying and selling online, short for electronic commerce. The pandemic explosion in e-commerce meant a shop no longer needed a physical storefront to reach customers, one of the forces behind the new-business boom.",
+    "audio": true
+  },
+  {
+    "k": "clinical-trials",
+    "t": "clinical trials",
+    "kind": "name",
+    "forms": [
+      "clinical trials"
+    ],
+    "text": "Carefully controlled studies that test whether a new drug or treatment is safe and effective in people, required before medicines can be sold. Managing them is complex enough that one founder built his whole business around helping drug companies do it.",
+    "audio": true
+  },
+  {
+    "k": "mad-hatter",
+    "t": "The Mad Hatter Company",
+    "kind": "name",
+    "forms": [
+      "The Mad Hatter Company"
+    ],
+    "text": "The hat business in the story, named with a wink at the Mad Hatter, the tea-party-hosting hatmaker from Alice in Wonderland. A fitting pun for a company that sells hats.",
+    "audio": true
+  },
+  {
+    "k": "entry-level",
+    "t": "entry-level",
+    "kind": "name",
+    "forms": [
+      "entry-level"
+    ],
+    "text": "The bottom rung of a career: jobs meant for people just starting out, requiring little experience. The article says young people face a tough market for entry-level jobs, which pushes some toward starting businesses instead.",
+    "audio": true
+  }
+]

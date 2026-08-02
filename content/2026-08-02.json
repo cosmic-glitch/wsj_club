@@ -1,0 +1,113 @@
+{
+  "date": "2026-08-02",
+  "title": "America has become an entrepreneur's paradise",
+  "articleUrl": "https://www.economist.com/business/2026/07/27/america-has-become-an-entrepreneurs-paradise",
+  "articlePageUrl": "/articles/2026-08-02.html",
+  "voiceQuiz": true,
+  "clubPick": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "propensity",
+      "partOfSpeech": "noun",
+      "pronunciation": "pruh-PEN-sih-tee",
+      "articleQuote": "Yet the share of new-business applications that the Census Bureau deems \"high-propensity\" was only 30% last year, down from 38% in 2019.",
+      "meaning": "A propensity is a natural tendency or leaning toward a particular behavior, the thing you're inclined to do before anyone pushes you. The Census Bureau calls a new-business application *high-propensity* when it shows signs of leaning toward hiring, meaning the business will probably employ someone beyond the founder. That share is falling, which is the article's clue that more Americans are building one-person companies.",
+      "examples": [
+        "My little brother has a propensity for losing his phone, so we put a tracker on it.",
+        "Coaches noticed her propensity to pass rather than shoot, even when she was open."
+      ]
+    },
+    {
+      "word": "enamoured",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ih-NAM-erd",
+      "articleQuote": "Economic and technological shifts have created fertile ground for a nation already enamoured with entrepreneurship.",
+      "meaning": "To be enamoured with something is to be charmed and captivated by it, close to being in love with it. The article uses it for America's long romance with the idea of being your own boss: around 60% of Americans have said for decades that they'd rather start a business than work for someone else. This is the British spelling; in American writing you'll usually see *enamored*.",
+      "examples": [
+        "He was so enamored with the new game that he forgot we had a math test the next day.",
+        "After one week at space camp, she was completely enamored with the idea of becoming an engineer."
+      ]
+    },
+    {
+      "word": "clamour",
+      "partOfSpeech": "verb",
+      "pronunciation": "KLAM-er",
+      "articleQuote": "As the pandemic faded, existing businesses clamoured for workers and government incentives were wound down.",
+      "meaning": "To clamour for something is to demand it loudly and insistently, the way a crowd shouts until it gets what it wants. Here, businesses coming out of the pandemic were desperate to hire, practically shouting for workers, yet people kept filing new-business applications anyway. Spelled *clamor* in American English, and it works as a noun too: the clamor of the cafeteria.",
+      "examples": [
+        "Fans clamored for an encore until the band finally came back on stage.",
+        "Students clamored for the school to bring back the vending machines."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Barriers to entry",
+      "articleQuote": "\"It's like chemical reactions that have an activation potential,\" says Miquel Llobet ... AI lowers the bar for those reactions to occur.",
+      "meaning": "**Barriers to entry** is one of the big ideas in **economics**: the hurdles that stop a would-be competitor from entering a market. It's not about having the idea, it's about everything between the idea and actually operating, like startup money, technical skills, licenses and regulations, and reaching customers. A founder in the article borrows a perfect analogy from chemistry: a reaction only happens once molecules clear an energy hump called the activation energy. Lower the hump and reactions fire off everywhere.\n\nThat's what the article says is happening to entrepreneurship. Millions of Americans always *wanted* to start businesses (the fuel was there), but building a website, handling paperwork, and learning marketing formed the hump. Chatbots and cheap e-commerce tools shrank it, and applications nearly doubled.\n\nYou already know this pattern from media: starting a TV channel required studios, broadcast licenses, and millions of dollars, so only a few companies had channels. Starting a YouTube channel requires a phone. When the barrier collapsed, the number of \"channels\" went from hundreds to millions. Watch for this idea everywhere: whenever some technology makes a hard thing easy, expect a flood of new players, and expect the old players to complain."
+    },
+    {
+      "name": "The long tail",
+      "articleQuote": "More than half of sales supported by Shopify, a provider of e-commerce tools, now come from \"niche\" categories outside the 100 most common.",
+      "meaning": "**The long tail** is a famous idea in **business and statistics**. Picture a chart of everything for sale, ranked by popularity: a few mega-hits form a tall spike on the left (the head), then the line drops and stretches far to the right in a long, low tail of niche products that each sell just a little. A physical store has limited shelf space, so it stocks only the head: the bestsellers. But an online store has infinite shelves, so it can carry the whole tail, and here's the surprise: millions of tiny niches *added together* can outsell the hits.\n\nThat's exactly what the Shopify statistic shows. More than half of sales now come from niche categories, which is why the article's entrepreneurs can \"mint money selling trading cards and custom pill cases\" instead of fighting giants in crowded categories like phone cases or T-shirts.\n\nYou live in the long tail already. Spotify carries millions of songs that would never make radio, yet obscure tracks collectively rack up enormous streams. YouTube channels about lock-picking or medieval cooking find their audience because the internet gathers scattered fans into a market. For a small entrepreneur, the lesson is that the smart move is often to serve a narrow niche deeply rather than compete head-on for the mainstream."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the main trend the article describes?",
+      "options": [
+        "Venture-capital funding for AI startups has hit a record high",
+        "New-business applications have surged, with June's figure nearly double the 2019 monthly average",
+        "Large corporations are hiring more workers than at any point this century",
+        "Small businesses are failing at the fastest rate since the pandemic"
+      ],
+      "answerIndex": 1,
+      "explanation": "About 531,000 applications were filed in June, nearly twice the 2019 monthly average, and full-time self-employment is at its highest level this century."
+    },
+    {
+      "question": "The Census Bureau labels an application \"high-propensity\" when the new business is likely to do what?",
+      "options": [
+        "Earn over a million dollars in its first year",
+        "Use AI tools to run its operations",
+        "Hire at least one employee besides the founder",
+        "Survive for more than five years"
+      ],
+      "answerIndex": 2,
+      "explanation": "High-propensity means the business shows a tendency toward hiring; that share fell from 38% to 30%, hinting at a rise of one-person \"solopreneur\" firms."
+    },
+    {
+      "question": "A founder in the article compares starting a business to a chemical reaction with an \"activation potential.\" What is his point about AI?",
+      "options": [
+        "AI makes chemistry startups especially profitable",
+        "AI lowers the barriers to entry, so people who already wanted to start businesses now actually do",
+        "AI creates business ideas that humans could never think of",
+        "AI makes reactions between competing businesses more intense"
+      ],
+      "answerIndex": 1,
+      "explanation": "Like lowering a reaction's activation energy, AI shrinks the hurdles (websites, regulations, marketing) between wanting a business and running one, so far more get started."
+    },
+    {
+      "question": "More than half of Shopify-supported sales now come from niche categories outside the 100 most common. Which concept does this illustrate?",
+      "options": [
+        "The long tail: many small niches added together can outsell the mainstream hits",
+        "Economies of scale: bigger sellers always beat smaller ones",
+        "Loss aversion: shoppers fear wasting money on unusual products",
+        "Barriers to entry: niche products are harder to start selling"
+      ],
+      "answerIndex": 0,
+      "explanation": "Online shelf space is unlimited, so the long tail of niche products, like trading cards and custom pill cases, becomes a huge combined market."
+    },
+    {
+      "question": "Which of these is NOT one of the article's three explanations for the entrepreneurship boom?",
+      "options": [
+        "A tough job market pushed people, especially the young, toward working for themselves",
+        "Shifting consumption patterns, like an ageing population and booming e-commerce",
+        "AI tools making it far easier to launch and run a business",
+        "New federal subsidies passed last year to reward small-business founders"
+      ],
+      "answerIndex": 3,
+      "explanation": "Pandemic-era subsidies helped the first surge, but the article says incentives were wound down; the current boom rests on the job market, consumption shifts, and AI."
+    }
+  ]
+}
