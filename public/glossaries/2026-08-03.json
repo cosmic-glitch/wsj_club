@@ -1,0 +1,490 @@
+[
+  {
+    "k": "taxonomy",
+    "t": "taxonomy",
+    "kind": "vocab",
+    "pron": "tak-SON-uh-mee",
+    "forms": [
+      "Taxonomy"
+    ],
+    "text": "A system for sorting things into organized groups by kind, the way biology sorts living things from kingdom down to species. Writers borrow it for any messy subject that needs order, which is what Tsimerman did: his paper sorts the ways AI could wipe out humanity into a tidy classification.",
+    "audio": true
+  },
+  {
+    "k": "epiphany",
+    "t": "epiphany",
+    "kind": "vocab",
+    "pron": "ih-PIF-uh-nee",
+    "forms": [
+      "epiphany"
+    ],
+    "text": "A sudden flash of understanding that reorganizes how you think, bigger than just learning a new fact. Tsimerman's came when he first tinkered with ChatGPT: if it could chat about chocolate and write a poem, it could talk about math and write equations.",
+    "audio": true
+  },
+  {
+    "k": "treacherous",
+    "t": "treacherous",
+    "kind": "vocab",
+    "pron": "TRETCH-er-us",
+    "forms": [
+      "treacherous"
+    ],
+    "text": "Full of hidden dangers, or likely to betray your trust; both senses share the root treachery. An icy trail is treacherous because it looks walkable right up until it isn't, and the Jacobian conjecture earned the word by luring mathematicians into confident, doomed proof attempts for 87 years.",
+    "audio": true
+  },
+  {
+    "k": "pivot",
+    "t": "pivot",
+    "kind": "vocab",
+    "pron": "PIV-ut",
+    "forms": [
+      "pivoting"
+    ],
+    "text": "Literally to turn while keeping one foot planted, like a basketball player on a pivot foot. In careers and business it means a deliberate change of direction that keeps your footing, and here Tsimerman pivots from number theory to AI safety with his mathematician's foot still planted.",
+    "audio": true
+  },
+  {
+    "k": "decipher",
+    "t": "decipher",
+    "kind": "vocab",
+    "pron": "dih-SY-fer",
+    "forms": [
+      "decipher"
+    ],
+    "text": "To crack something coded, garbled, or baffling until it makes sense; a cipher is a secret code, so deciphering is un-coding. The code here is the inner workings of AI systems, which behave in ways even their creators cannot fully read.",
+    "audio": true
+  },
+  {
+    "k": "striking",
+    "t": "striking",
+    "kind": "word",
+    "forms": [
+      "striking"
+    ],
+    "text": "Here it means remarkable and attention-grabbing, nothing to do with hitting. An announcement as striking as a powder-blue tuxedo is one people cannot look away from.",
+    "audio": true
+  },
+  {
+    "k": "satin",
+    "t": "satin",
+    "kind": "word",
+    "forms": [
+      "satin"
+    ],
+    "text": "A smooth, glossy fabric that catches the light, used for fancy clothes. On a tuxedo, the shiny trim is usually satin.",
+    "audio": true
+  },
+  {
+    "k": "lapels",
+    "t": "lapels",
+    "kind": "word",
+    "forms": [
+      "lapels"
+    ],
+    "text": "The folded flaps of fabric on the front of a jacket, running down from the collar. Tuxedo lapels are often faced in satin, which is why his stood out.",
+    "audio": true
+  },
+  {
+    "k": "partial-differential-equations",
+    "t": "partial differential equations",
+    "kind": "name",
+    "forms": [
+      "partial differential equations"
+    ],
+    "text": "A major branch of advanced math describing how things change across space and time at once, like heat spreading through a pan or waves moving through water. Physics and engineering run on them.",
+    "audio": true
+  },
+  {
+    "k": "number-theory",
+    "t": "number theory",
+    "kind": "name",
+    "forms": [
+      "number theory"
+    ],
+    "text": "The branch of pure math that studies whole numbers and their patterns, especially primes. It was Tsimerman's home field before he turned to AI safety.",
+    "audio": true
+  },
+  {
+    "k": "complex-algebraic-geometry",
+    "t": "complex algebraic geometry",
+    "kind": "name",
+    "forms": [
+      "complex algebraic geometry"
+    ],
+    "text": "A branch of math that studies shapes defined by polynomial equations using complex numbers. The word complex refers to those numbers, not to difficulty, though it is plenty difficult too.",
+    "audio": true
+  },
+  {
+    "k": "taking-a-leave",
+    "t": "taking a leave",
+    "kind": "phrase",
+    "forms": [
+      "taking a leave"
+    ],
+    "text": "Short for taking a leave of absence: officially stepping away from a job for a stretch of time with the option to come back. Tsimerman is not quitting the University of Toronto; he is pressing pause on it.",
+    "audio": true
+  },
+  {
+    "k": "formal",
+    "t": "formal",
+    "kind": "word",
+    "forms": [
+      "formal"
+    ],
+    "text": "In math and logic, formal means written in precise symbols with strict rules, so every step can be checked mechanically. It has nothing to do with dressing up; a formal proof is one a computer could verify line by line.",
+    "audio": true
+  },
+  {
+    "k": "verification",
+    "t": "verification",
+    "kind": "word",
+    "forms": [
+      "verification"
+    ],
+    "text": "The act of checking that something is definitely true or works as claimed. In Tsimerman's field it means proving a statement beyond doubt rather than just testing it a few times and hoping.",
+    "audio": true
+  },
+  {
+    "k": "frontier",
+    "t": "frontier",
+    "kind": "word",
+    "forms": [
+      "frontier"
+    ],
+    "text": "The outer edge of what is known or possible, where new ground is being broken. Companies on the AI frontier are the ones building the most advanced systems that exist.",
+    "audio": true
+  },
+  {
+    "k": "raiding",
+    "t": "raiding",
+    "kind": "word",
+    "forms": [
+      "raiding"
+    ],
+    "text": "Here it means aggressively hiring away another institution's best people, not an armed attack. AI companies are raiding universities the way rich sports teams raid smaller clubs for star players.",
+    "audio": true
+  },
+  {
+    "k": "stock-options",
+    "t": "stock options",
+    "kind": "name",
+    "forms": [
+      "stock options"
+    ],
+    "text": "A form of pay that gives an employee the right to buy shares of the company later at a locked-in price. If the company's value soars, the options can be worth far more than a salary, which is how tech firms tempt star hires.",
+    "audio": true
+  },
+  {
+    "k": "robustly",
+    "t": "robustly",
+    "kind": "word",
+    "forms": [
+      "robustly"
+    ],
+    "text": "In a strong, dependable way that holds up under pressure or repeated tests. Robustly superhuman means better than humans reliably and across the board, not just on a lucky day.",
+    "audio": true
+  },
+  {
+    "k": "wrap-mind-around",
+    "t": "wrap your mind around",
+    "kind": "phrase",
+    "forms": [
+      "wrapping his mind around"
+    ],
+    "text": "A set phrase meaning to work hard at understanding something big or strange until it finally fits in your head. You wrap your mind around an idea the way your hands wrap around something too large to grip easily.",
+    "audio": true
+  },
+  {
+    "k": "alma-mater",
+    "t": "alma mater",
+    "kind": "name",
+    "forms": [
+      "alma mater"
+    ],
+    "text": "Latin for nourishing mother: the school, college, or university you attended. Tsimerman's alma mater is the University of Toronto, which he returned to as its youngest math professor ever.",
+    "audio": true
+  },
+  {
+    "k": "andre-oort-conjecture",
+    "t": "André-Oort conjecture",
+    "kind": "name",
+    "forms": [
+      "André-Oort conjecture"
+    ],
+    "text": "A deep, decades-old problem in number theory that Tsimerman helped crack, part of what made his reputation. The details need a doctorate, which is exactly the article's joke about moving on.",
+    "audio": true
+  },
+  {
+    "k": "doctorate",
+    "t": "doctorate",
+    "kind": "word",
+    "forms": [
+      "doctorate"
+    ],
+    "text": "The highest degree a university awards, also called a Ph.D. Earning one means years of original research beyond college, which is why it is shorthand for deep expertise.",
+    "audio": true
+  },
+  {
+    "k": "skeptical",
+    "t": "skeptical",
+    "kind": "word",
+    "forms": [
+      "skeptical"
+    ],
+    "text": "Doubting a claim until you see solid evidence, rather than taking it on faith. Tsimerman was skeptical of AI for most of his career, which makes his change of mind more striking.",
+    "audio": true
+  },
+  {
+    "k": "replicate",
+    "t": "replicate",
+    "kind": "word",
+    "forms": [
+      "replicate"
+    ],
+    "text": "To copy or reproduce something so exactly that it works the same way. He doubted AI could replicate intuition and creativity, the things that feel most human.",
+    "audio": true
+  },
+  {
+    "k": "intuition",
+    "t": "intuition",
+    "kind": "word",
+    "forms": [
+      "intuition"
+    ],
+    "text": "Knowing or sensing something without step-by-step reasoning, the answer that arrives before the explanation does. Mathematicians prize it because it points them toward proofs long before they can write them.",
+    "audio": true
+  },
+  {
+    "k": "tinkered",
+    "t": "tinkered",
+    "kind": "word",
+    "forms": [
+      "tinkered"
+    ],
+    "text": "Played around with something casually to see how it works, with no serious plan. His world-changing conclusion started with just tinkering with ChatGPT in 2022.",
+    "audio": true
+  },
+  {
+    "k": "dystopian",
+    "t": "dystopian",
+    "kind": "word",
+    "forms": [
+      "dystopian"
+    ],
+    "text": "Describing a nightmare version of the future where things have gone terribly wrong, the opposite of a utopia. Novels like 1984 and The Hunger Games are dystopian; Tsimerman's paper imagines dystopian scenarios with AI in the starring role.",
+    "audio": true
+  },
+  {
+    "k": "conjecture",
+    "t": "conjecture",
+    "kind": "word",
+    "forms": [
+      "conjectures",
+      "conjecture"
+    ],
+    "text": "In math, an educated guess that looks true and may have piles of evidence behind it, but has never been proven. A conjecture can wait decades in that unproven state until someone finds a proof or a counterexample that settles it.",
+    "audio": true
+  },
+  {
+    "k": "unit-distance-problem",
+    "t": "unit-distance problem",
+    "kind": "name",
+    "forms": [
+      "unit-distance problem"
+    ],
+    "text": "A famous geometry problem, open for 80 years, about how many pairs of points in a set can sit exactly one unit apart. An unreleased OpenAI model cracked it, which kicked off the current run of AI math breakthroughs.",
+    "audio": true
+  },
+  {
+    "k": "coherently",
+    "t": "coherently",
+    "kind": "word",
+    "forms": [
+      "coherently"
+    ],
+    "text": "In a way that hangs together logically, with each part connecting to the next. The model's edge was thinking coherently for far longer than a person can, keeping a 125-page argument straight without losing the thread.",
+    "audio": true
+  },
+  {
+    "k": "chain-of-thought",
+    "t": "chain of thought",
+    "kind": "name",
+    "forms": [
+      "chain of thought"
+    ],
+    "text": "An AI term for the model's written-out reasoning, the step-by-step work it shows on the way to an answer. The chain of thought for the unit-distance problem ran 125 pages.",
+    "audio": true
+  },
+  {
+    "k": "counterexample",
+    "t": "counterexample",
+    "kind": "word",
+    "forms": [
+      "counterexample"
+    ],
+    "text": "A single case that breaks a general claim and disproves it for good. If someone claims no student can beat the chess captain, one lost game is a counterexample, and one was all it took to end the Jacobian conjecture's 87-year run.",
+    "audio": true
+  },
+  {
+    "k": "jacobian-conjecture",
+    "t": "Jacobian conjecture",
+    "kind": "name",
+    "forms": [
+      "Jacobian conjecture"
+    ],
+    "text": "A famous algebra problem posed in 1939 about when certain polynomial functions can be reversed. It defeated mathematicians for 87 years until Anthropic's Fable model found a counterexample, settling it at last.",
+    "audio": true
+  },
+  {
+    "k": "defied",
+    "t": "defied",
+    "kind": "word",
+    "forms": [
+      "defied"
+    ],
+    "text": "Resisted or refused to give in to something, the way a locked safe defies every attempt to open it. The Jacobian conjecture defied mathematicians for 87 years before it finally fell.",
+    "audio": true
+  },
+  {
+    "k": "morgan-prize",
+    "t": "Morgan Prize",
+    "kind": "name",
+    "forms": [
+      "Morgan Prize"
+    ],
+    "text": "The award given each year to the best undergraduate mathematics researcher in America. The Anthropic employee who reported the Jacobian counterexample won it as a student, under Tsimerman's guidance.",
+    "audio": true
+  },
+  {
+    "k": "adviser",
+    "t": "adviser",
+    "kind": "word",
+    "forms": [
+      "adviser"
+    ],
+    "text": "In graduate school, the professor who guides a student's research, a role somewhere between coach and mentor. The twist in the article is that the AI researcher who reported the counterexample trained under Tsimerman himself.",
+    "audio": true
+  },
+  {
+    "k": "improv-comedy",
+    "t": "improv comedy",
+    "kind": "name",
+    "forms": [
+      "improv comedy"
+    ],
+    "text": "Comedy performed with no script, invented on the spot from audience suggestions. The article offers it, with a wink, as one human skill AI has not mastered.",
+    "audio": true
+  },
+  {
+    "k": "outsource",
+    "t": "outsource",
+    "kind": "word",
+    "forms": [
+      "outsource"
+    ],
+    "text": "To hand a task over to someone or something outside yourself or your organization. Companies outsource factory work; Tsimerman outsources the boring parts of math, like hunting through old papers for one equation.",
+    "audio": true
+  },
+  {
+    "k": "literature",
+    "t": "literature",
+    "kind": "word",
+    "forms": [
+      "literature"
+    ],
+    "text": "Here it means the accumulated published research of a field, not novels and poetry. Reading through centuries of literature means digging through old math papers, which is exactly the chore he now hands to AI.",
+    "audio": true
+  },
+  {
+    "k": "generalize",
+    "t": "generalize",
+    "kind": "word",
+    "forms": [
+      "generalize"
+    ],
+    "text": "In math, to stretch an argument so it covers more cases than the one you started with. Tsimerman asked a model to help generalize one of his arguments, and it found an error in the argument instead.",
+    "audio": true
+  },
+  {
+    "k": "sandboxes",
+    "t": "sandbox",
+    "kind": "word",
+    "forms": [
+      "sandboxes"
+    ],
+    "text": "In computing, a sealed-off test environment where software can run without touching the real world, named after the fenced sand where kids play safely. AI models busting out of their sandboxes is the digital version of the dinosaurs getting out of the paddock.",
+    "audio": true
+  },
+  {
+    "k": "rogue",
+    "t": "rogue",
+    "kind": "word",
+    "forms": [
+      "rogue"
+    ],
+    "text": "Acting on its own, outside anyone's control or approval; an agent gone rogue no longer follows its instructions. The word originally meant a dishonest wanderer and still carries that edge of unpredictability.",
+    "audio": true
+  },
+  {
+    "k": "agents",
+    "t": "agents",
+    "kind": "word",
+    "forms": [
+      "agents"
+    ],
+    "text": "In AI, an agent is a system that does not just answer questions but takes actions on its own, like browsing, writing code, or breaking into networks. Not spies in trench coats, though the hacking incidents blur the line.",
+    "audio": true
+  },
+  {
+    "k": "omnicidal",
+    "t": "omnicidal",
+    "kind": "word",
+    "forms": [
+      "omnicidal",
+      "omnicide"
+    ],
+    "text": "Killing everyone: omni is Latin for all, and -cide is the killing ending from words like pesticide and homicide. The article translates it bluntly, as in everyone dies.",
+    "audio": true
+  },
+  {
+    "k": "fields-medal",
+    "t": "Fields Medal",
+    "kind": "name",
+    "forms": [
+      "Fields Medal",
+      "Fields medalists"
+    ],
+    "text": "The most prestigious prize in mathematics, often called the Nobel Prize of math. It is awarded only every four years, and only to mathematicians under 40, which makes winning one rarer than a Nobel.",
+    "audio": true
+  },
+  {
+    "k": "prestigious",
+    "t": "prestigious",
+    "kind": "word",
+    "forms": [
+      "prestigious"
+    ],
+    "text": "Carrying high status and respect, the kind of honor that impresses people the moment they hear its name. The Fields Medal is the most prestigious prize in math.",
+    "audio": true
+  },
+  {
+    "k": "alignment",
+    "t": "alignment",
+    "kind": "name",
+    "forms": [
+      "alignment"
+    ],
+    "text": "The field of AI research focused on making systems actually pursue what humans intend, not just the literal goal they were given. It is the problem Tsimerman moved to OpenAI to work on; the handout's concept card walks through it.",
+    "audio": true
+  },
+  {
+    "k": "no-shortage-of",
+    "t": "no shortage of",
+    "kind": "phrase",
+    "forms": [
+      "no shortage of"
+    ],
+    "text": "A set phrase meaning plenty of, said with understatement. Having no shortage of things to do means the list is long.",
+    "audio": true
+  }
+]
