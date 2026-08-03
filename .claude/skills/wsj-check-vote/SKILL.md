@@ -22,6 +22,6 @@ You are reading back the **daily article vote** that `wsj-open-vote` opened (see
 
 2. **Present the result:** per-candidate counts with voter names, total ballots, and the winner with its article link. On a **tie** (or zero votes), say so plainly — the user breaks it by just picking; the vote is advisory and the site never claims "the winner was X".
 
-3. **Hand off, don't proceed.** The next step is the user invoking **wsj-reading** (senior) / **wsj-reading-junior** (junior) with the winning (or chosen) link — wait for them to say so (they may just say "go with the winner", in which case run the track's reading skill with that URL). Publishing the reading is what closes that track's poll — the poll row disappears on its own and the published day carries the CLUB PICK chip (`clubPick: true`, which the reading skill sets when a poll exists for the date).
+3. **Hand off, don't proceed.** The next step is the user invoking **wsj-reading** (senior) / **wsj-reading-junior** (junior) with the winning (or chosen) link — wait for them to say so (they may just say "go with the winner", in which case run the track's reading skill with that URL). Publishing the reading is what closes that track's poll — the poll row disappears on its own.
 
 Checking the tally does NOT close the poll — people can keep voting until the reading is published, so it's fine to peek mid-window.

@@ -86,7 +86,7 @@ const readingSkill = junior ? "wsj-reading-junior" : "wsj-reading";
 if (winners.length === 1) {
   console.log(`WINNER: [${winners[0].source}${winners[0].kind === "enrichment" ? " · enrichment" : ""}] ${winners[0].title}`);
   console.log(`  ${winners[0].articleUrl}`);
-  console.log(`\nNext: run the ${readingSkill} skill with that link (it sets clubPick: true itself; publishing closes the poll).`);
+  console.log(`\nNext: run the ${readingSkill} skill with that link (publishing closes the poll).`);
 } else if (winners.length > 1) {
   console.log(`TIE at ${top} vote(s) between: ${winners.map((c) => c.title).join(" / ")}`);
   console.log(`You break the tie — just pick one and run ${readingSkill} with its link.`);

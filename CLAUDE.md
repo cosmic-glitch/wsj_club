@@ -63,9 +63,9 @@ The card recipes, calibration, and counts live in the authoring skills — `.cla
 
 An AI tutor orally quizzes the student on the day's article in a modal: TTS question → student presses **Start/Stop** to record → transcribe → chat model picks the next turn (key-ideas retelling → vocab → concepts → wrap-up), then a graded report card is saved for the parent and shown to the student. **Turn-taking is button-driven, never inferred** (the earlier realtime/VAD build was scrapped as unreliable). The transcript checkpoints after every turn into a per-(student, date) in-progress slot — leaving or a failure just **pauses**; resume via the launcher chooser or the Reports page's Continue link, with cross-resume audio stitched into one WAV. The tutor and grader get the full article text from Blob. Reports page (`/admin`): students see their own attempts, parents their classroom, the owner everything (Regular/Junior tabs). Models/voice are env knobs (`TUTOR_MODEL`, `TTS_MODEL`, `TTS_VOICE`, `STT_MODEL`, `REPORT_MODEL` — defaults live in the routes). Tutor behavior is tuned in `STYLE_GUIDE` (`lib/quiz-prompt.ts`); resume design in `PLAN-continue-voice-quiz.md`.
 
-## Daily vote (club pick)
+## Daily vote
 
-The club can choose the day's article by voting on the home page — per-track, opt-in per day, always for today. The owner opens it with the `wsj-open-vote` skill (senior ballot: top 7 news + top 3 enrichment picks; junior: top 5 news), everyone votes via the ballot modal (one login = one vote, changeable while live), and the owner reads the tally with `wsj-check-vote` (voter names owner-side only). Publishing the winner (with `clubPick: true`) is what closes the poll. No deadline on the site — the owner announces the window in the group chat. Polls live in `rc_polls` (unique per track+date), ballots in `rc_ballots` — one row per (poll, voter), the PK, upserted to change a vote.
+The club can choose the day's article by voting on the home page — per-track, opt-in per day, always for today. The owner opens it with the `wsj-open-vote` skill (senior ballot: top 7 news + top 3 enrichment picks; junior: top 5 news), everyone votes via the ballot modal (one login = one vote, changeable while live), and the owner reads the tally with `wsj-check-vote` (voter names owner-side only). Publishing the winner is what closes the poll — no tag or flag marks vote-picked days (the old CLUB PICK chip was removed). No deadline on the site — the owner announces the window in the group chat. Polls live in `rc_polls` (unique per track+date), ballots in `rc_ballots` — one row per (poll, voter), the PK, upserted to change a vote.
 
 ## Article suggestions
 
@@ -76,7 +76,7 @@ Rows live in `rc_suggestions`, unique per (track, url, username) so a re-send up
 ## Daily workflow
 
 1. **Pick** — `wsj-pick-article` (day's news, WSJ + Economist; reads the club's open suggestions into the field first; stops and asks you to log in if either site looks paywalled out) or `wsj-pick-enrichment` (timeless-wisdom read, ≤2,000 words, mostly-free sources; Morgan Housel permanently excluded — owner rule). Junior: `wsj-pick-article-junior`. Pickers only recommend — the user picks.
-2. *(vote days)* **`wsj-open-vote`** → the club votes → **`wsj-check-vote`** → the winner feeds step 3 with `clubPick: true`.
+2. *(vote days)* **`wsj-open-vote`** → the club votes → **`wsj-check-vote`** → the winner feeds step 3.
 3. **Author** — `wsj-reading` (senior) / `wsj-reading-junior` (grades 5–7 calibration, ≤2 concepts). Reads the article in the browser, **proposes vocab + concepts and waits for explicit sign-off**, then: writes the content JSON, captures the self-contained HTML article page + plain article text, uploads the text to Blob, generates pronunciation clips, authors + validates the glossary (+ glossary audio), builds, commits, pushes (= deploys).
 
 Audience calibration and the exact browser-capture snippet live in the skills — the fragile snippet is single-sourced in `wsj-reading/SKILL.md`.

@@ -105,12 +105,6 @@ export default function LandingIndex({
           }`}
         >
           {r.title}
-          {/* The day's article was chosen by the club's vote. */}
-          {r.clubPick && (
-            <span className="ml-2 inline-block whitespace-nowrap border-2 border-[#0a0a0a] px-[5px] py-[1px] align-[2px] font-mono text-[9px] font-bold uppercase tracking-[.14em] group-hover:border-white group-hover:text-white">
-              Club pick
-            </span>
-          )}
         </span>
 
         <span className="flex flex-wrap gap-[6px] min-[681px]:flex-nowrap">

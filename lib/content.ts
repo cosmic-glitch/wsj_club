@@ -72,7 +72,6 @@ export type Reading = {
   articleUrl?: string; // link to the original article at its publisher — the source of record, and what the index's "Article" button points at when there's no page of our own
   articlePageUrl?: string; // served self-contained responsive HTML article page, e.g. "/articles/2026-07-22.html". Set on every new day (it's what carries the tap-a-word glossary); when absent the "Article" button falls back to articleUrl
   voiceQuiz?: boolean; // when true, the home-page row's action bar shows a "Voice quiz" launcher for this day (login-gated; the skill sets it)
-  clubPick?: boolean; // when true, the day's article was chosen by the club's vote (see the daily vote in CLAUDE.md) — the index row shows a small CLUB PICK chip
   source?: string; // e.g. "The Wall Street Journal"
   vocab: VocabWord[];
   concepts: Concept[];

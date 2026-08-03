@@ -3,7 +3,7 @@ import { dbSelect, dbUpsert } from "@/lib/db";
 import { getReading, type Track } from "@/lib/content";
 
 /**
- * The daily article vote ("club pick") — the TODAY'S READ — YOU DECIDE row
+ * The daily article vote — the TODAY'S READ — YOU DECIDE row
  * (components/VotePoll.tsx) on BOTH track indexes ("/" and "/junior").
  *
  *   GET  — the active poll (public) with the TOTAL ballots-cast count (public

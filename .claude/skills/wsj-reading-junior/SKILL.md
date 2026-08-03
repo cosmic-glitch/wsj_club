@@ -86,7 +86,7 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
 5. **Draft the handout content.** Using the approved list, write the full cards (vocab article-first: `articleQuote` → one woven `meaning` → `examples`, plus `pronunciation` + `partOfSpeech`; concepts: `articleQuote` → a single, concrete, Feynman-style `meaning`; `inContext` is legacy on both — never authored on new days) and the 5-question quiz, all at the grades 5–7 level. Pick a clear, descriptive `title`. **Do not invent a subtitle** — use the article's own headline (or a plainer paraphrase); only include a subtitle if the original actually has one. **No author byline in the `title`** (owner's rule, 2026-07-25) — the headline alone, even for a signed essay by a famous writer, because the `title` is what the index row renders and a trailing `by <Author>` clutters the list. Name the author freely **everywhere else** (concept/vocab text, quiz, glossary, the page's `SOURCE:` bar, the `source` field) — this is a list-row rule, not a general one. The junior handout is the same minimal shape as senior (just the title, then words + concepts, then the self-quiz CTA).
 
 6. **Write `content/junior/YYYY-MM-DD.json`** following the schema below (it's the same `Reading` schema as senior — set `voiceQuiz: true`; include the `articlePageUrl` from step 3). `mkdir -p content/junior` first. Validate it's well-formed JSON.
-   - **Vote day → `clubPick: true`.** If the day's article was chosen by the junior club vote (the wsj-open-vote/wsj-check-vote flow with `--track=junior` — check with `node --env-file=.env.local scripts/check-vote.mjs YYYY-MM-DD --track=junior`, or just: a junior poll exists for this date), set `"clubPick": true` so the index row carries the CLUB PICK chip. Publishing this reading is also what **closes** that poll — the /junior vote row disappears once the deploy lands, no extra step. On a non-vote day, omit the field.
+   - **Vote day: publishing closes the poll.** If the day's article was chosen by the junior club vote (the wsj-open-vote/wsj-check-vote flow with `--track=junior`), publishing this reading is what **closes** that poll — the /junior vote row disappears once the deploy lands, no extra step and no special field.
    - **Generate pronunciation audio** for each vocab word + concept name → the junior audio dir:
      ```sh
      node --env-file=.env.local scripts/gen-pronunciation.mjs YYYY-MM-DD --track=junior
@@ -148,7 +148,6 @@ Field notes:
 - `answerIndex` is **0-based**; double-check it.
 - `vocab` has **exactly 3 words** by default; each `examples` array has **exactly 2** sentences. `concepts` is **exactly 2** by default (the user can override), or fewer/`[]` for a concept-thin or vocabulary-only day.
 - `concepts` may be empty (`[]`); the handout omits the Concepts section and the voice quiz skips its concepts stage.
-- `clubPick`: set `"clubPick": true` **only when the day's article won the junior club vote** (see step 6) — it renders the CLUB PICK chip on the /junior index row. Omit on normal days.
 
 ## Deployment
 

@@ -9,7 +9,7 @@ You are opening the **daily article vote**: instead of the owner picking today's
 
 **The vote is per-track.** Default is **senior**; the user saying "open the junior vote" / "junior vote" selects the **junior** track, which changes three things: the candidate source (the junior picker), the ballot composition (5 news, no enrichment), and `--track=junior` on the script. The two tracks' polls are fully independent — one of each can be live at once.
 
-This skill only opens the poll. The companion flow is: **wsj-check-vote** later reads the tally, and the winner goes into **wsj-reading** (senior) / **wsj-reading-junior** (junior) exactly as usual (which sets `clubPick: true` on the day and — by publishing — closes that track's poll).
+This skill only opens the poll. The companion flow is: **wsj-check-vote** later reads the tally, and the winner goes into **wsj-reading** (senior) / **wsj-reading-junior** (junior) exactly as usual (publishing the reading is what closes that track's poll).
 
 ## The ballot
 
