@@ -1,6 +1,6 @@
 {
   "date": "2026-08-03",
-  "title": "The Math Superstar Who's Terrified of AI—and Just Took a Job at OpenAI",
+  "title": "The Math Superstar Who's Terrified of AI",
   "articleUrl": "https://www.wsj.com/tech/ai/openai-jacob-tsimerman-fields-medal-ai-safety-391d0f79",
   "articlePageUrl": "/articles/2026-08-03.html",
   "voiceQuiz": true,
@@ -37,28 +37,6 @@
       "examples": [
         "The last section of the hike looked easy on the map but turned treacherous when the gravel started sliding underfoot.",
         "That level looks beginner-friendly, but it is the most treacherous one in the game; the easy start lures you into wasting your power-ups."
-      ]
-    },
-    {
-      "word": "pivot",
-      "partOfSpeech": "verb",
-      "pronunciation": "PIV-ut",
-      "articleQuote": "It turns out he's so worried about the dangers of AI that he's now pivoting to work on AI safety.",
-      "meaning": "To pivot is literally to turn while keeping one foot planted, the way a basketball player swings around a pivot foot. In careers and business it has become the word for a deliberate change of direction that keeps your footing: a startup pivots when its first idea fails, and Tsimerman pivots from number theory to AI safety while keeping his mathematician's foot firmly planted.",
-      "examples": [
-        "When nobody downloaded their study-tips app, the team pivoted to making flashcard software, which took off.",
-        "She spent two years on violin, then pivoted to jazz piano once she realized improvisation was the part she actually loved."
-      ]
-    },
-    {
-      "word": "decipher",
-      "partOfSpeech": "verb",
-      "pronunciation": "dih-SY-fer",
-      "articleQuote": "Tsimerman will be using them to decipher the behavior of machines.",
-      "meaning": "To decipher is to crack something coded, garbled, or baffling until it finally makes sense; a cipher is a secret code, so deciphering is literally un-coding. You decipher a doctor's handwriting, an ancient script, or a cryptic text from a friend. In the article the code to be cracked is the inner workings of AI systems, which behave in ways even their creators cannot fully read.",
-      "examples": [
-        "It took the group chat twenty minutes to decipher his one-word reply and figure out whether he was actually coming.",
-        "Archaeologists spent decades trying to decipher the symbols on the stone tablets."
       ]
     }
   ],
