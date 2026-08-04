@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-04",
+  "title": "How China gets better bang for its buck than America in AI",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/08/03/how-china-gets-better-bang-for-its-buck-than-america-in-ai",
+  "articlePageUrl": "/articles/2026-08-04.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "profligate",
+      "partOfSpeech": "adjective",
+      "pronunciation": "PROF-lih-gut",
+      "articleQuote": "The American AI splurge looks especially profligate compared with Chinese parsimony.",
+      "meaning": "Recklessly wasteful with money, spending as if there were no tomorrow. The word carries a note of judgment: a profligate spender is not just generous but careless. The article uses it to suggest that America's tech giants, pouring hundreds of billions into data centres, may be throwing money around rather than investing it wisely.",
+      "examples": [
+        "One profligate weekend of in-app purchases wiped out his entire summer allowance.",
+        "Critics called the school board profligate for buying a jumbotron while the library ran out of books."
+      ]
+    },
+    {
+      "word": "parsimony",
+      "partOfSpeech": "noun",
+      "pronunciation": "PAR-sih-moh-nee",
+      "articleQuote": "The American AI splurge looks especially profligate compared with Chinese parsimony.",
+      "meaning": "Extreme carefulness with money, holding onto every dollar even when spending might make sense. It goes beyond ordinary thrift and shades into stinginess as a settled habit. The Economist uses it as the mirror image of American profligacy: Chinese tech firms invest a fraction of what their American rivals do, and their models barely suffer for it.",
+      "examples": [
+        "Her parsimony was legendary: she brought her own snacks to the movies and refused to pay for parking anywhere.",
+        "Out of sheer parsimony, he used a cracked phone screen for two years rather than pay for the repair."
+      ]
+    },
+    {
+      "word": "behemoth",
+      "partOfSpeech": "noun",
+      "pronunciation": "bih-HEE-muth",
+      "articleQuote": "Huawei, a technology behemoth blacklisted by America since 2019.",
+      "meaning": "Something enormous and immensely powerful, usually a company or organization so big it towers over everything around it. The word comes from a giant beast in the Bible, which gives it a hint of something almost too large to control. Here it describes Huawei, a company so sprawling that it designs chips, builds phones and runs telecom networks all at once.",
+      "examples": [
+        "Amazon started as an online bookstore and grew into a retail behemoth that sells nearly everything.",
+        "Our small club team somehow knocked out the behemoth academy that recruits players from three states."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Capital expenditure",
+      "articleQuote": "Their capital spending on data centres may surpass $740bn this year.",
+      "meaning": "Capital expenditure, or capex, is a core idea in finance. Think of a lemonade stand: the money you spend on lemons and sugar disappears with every batch, but the money you spend on the stand itself, the cooler and the juicer keeps working for you all summer. Capex is that second kind of spending, cash a company sinks into long-lasting assets like buildings, machines and data centres, as opposed to day-to-day costs like electricity bills and salaries.\n\nInvestors watch capex obsessively because it is a bet on the future placed with their money. Spend too little and you fall behind your rivals; spend too much on things that never earn their keep and you have simply burned shareholders' cash. That is the drama running through this whole article: American tech giants may spend $740 billion on data centres in a single year, and investors are starting to ask which side of that line the spending falls on, especially when Chinese firms seem to get similar AI models for less than a tenth of the outlay."
+    },
+    {
+      "name": "Free-riding",
+      "articleQuote": "Such “distillation”, as the process is known, lets China’s AI developers free-ride on some American spending.",
+      "meaning": "Free-riding is one of the classic ideas in economics. Picture a group project where four names go on the poster but one member never shows up: that member free-rides, collecting a benefit others worked for. Economists use the word whenever someone enjoys the upside of something without chipping in, like watching the town fireworks from your roof instead of buying a ticket, or a country skipping vaccination because everyone around it is already immune.\n\nIn this article the free ride is called distillation: Chinese labs are accused of training their AI models on the answers produced by expensive American models. American firms paid billions to build the teacher; the student learns from it almost for free. The reason economists care so much about free-riding is what it does to incentives. If too many people ride free, the ones paying may eventually stop building the thing everyone shares."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Compared with America's tech giants, how much are China's forecast to invest in data centres in 2026?",
+      "options": [
+        "About the same amount",
+        "Roughly half as much",
+        "Less than one-tenth as much",
+        "Slightly more"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says Chinese tech titans are forecast to invest less than a tenth as much in data centres as their American counterparts, yet their models are only fractionally less powerful."
+    },
+    {
+      "question": "In the article, what is \"distillation\"?",
+      "options": [
+        "Purifying the water used to cool data centres",
+        "Training a model using the outputs of expensive existing models",
+        "Shrinking a chip so it fits inside a phone",
+        "Deleting low-quality data before training begins"
+      ],
+      "answerIndex": 1,
+      "explanation": "Distillation means training your model on the outputs of someone else's costly model, which lets Chinese developers free-ride on American spending."
+    },
+    {
+      "question": "The article calls American AI spending \"profligate.\" What does profligate mean?",
+      "options": [
+        "Carefully planned",
+        "Wastefully extravagant",
+        "Highly profitable",
+        "Hidden from investors"
+      ],
+      "answerIndex": 1,
+      "explanation": "Profligate means recklessly wasteful with money, the opposite of the parsimony the article credits to Chinese firms."
+    },
+    {
+      "question": "Why can't Chinese firms simply buy the world's best AI chips?",
+      "options": [
+        "They cost more than any Chinese firm can afford",
+        "American export restrictions bar the sales",
+        "Chinese law bans all foreign technology",
+        "TSMC only sells to companies based in Taiwan"
+      ],
+      "answerIndex": 1,
+      "explanation": "American restrictions on tech exports block sales of the best chips, which are designed by Nvidia and manufactured by TSMC, and Beijing has discouraged even the second-rate ones."
+    },
+    {
+      "question": "Which situation is the clearest example of free-riding?",
+      "options": [
+        "Splitting a bill evenly after everyone ordered the same meal",
+        "A student who does no work on a group project but shares the grade",
+        "Paying extra for faster shipping on an order",
+        "Practicing harder than your teammates before a big game"
+      ],
+      "answerIndex": 1,
+      "explanation": "Free-riding means enjoying a benefit others paid for without contributing yourself, exactly like the teammate who shares the grade but not the work."
+    }
+  ]
+}

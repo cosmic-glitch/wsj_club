@@ -1,0 +1,550 @@
+[
+  {
+    "k": "profligate",
+    "t": "profligate",
+    "kind": "vocab",
+    "pron": "PROF-lih-gut",
+    "forms": [
+      "profligate",
+      "profligacy"
+    ],
+    "text": "Recklessly wasteful with money, spending as if there were no tomorrow. The article uses it to suggest America's tech giants may be throwing hundreds of billions at data centres carelessly rather than investing wisely. The noun form, profligacy, appears later for the same habit.",
+    "audio": true
+  },
+  {
+    "k": "parsimony",
+    "t": "parsimony",
+    "kind": "vocab",
+    "pron": "PAR-sih-moh-nee",
+    "forms": [
+      "parsimony"
+    ],
+    "text": "Extreme carefulness with money, beyond ordinary thrift and shading into stinginess. Here it is the mirror image of American profligacy: Chinese tech firms spend a small fraction of what American ones do on AI, and their models barely suffer for it.",
+    "audio": true
+  },
+  {
+    "k": "behemoth",
+    "t": "behemoth",
+    "kind": "vocab",
+    "pron": "bih-HEE-muth",
+    "forms": [
+      "behemoth"
+    ],
+    "text": "Something enormous and immensely powerful, usually a giant company or organization. The word comes from a huge beast in the Bible. Here it describes Huawei, which designs chips, builds phones and runs telecom networks all at once.",
+    "audio": true
+  },
+  {
+    "k": "bang-for-its-buck",
+    "t": "bang for its buck",
+    "kind": "phrase",
+    "forms": [
+      "bang for its buck"
+    ],
+    "text": "Value received for the money spent. Getting more bang for your buck means getting a better result per dollar. The headline's claim is that China squeezes far more AI capability out of each dollar than America does.",
+    "audio": true
+  },
+  {
+    "k": "lavish",
+    "t": "lavish",
+    "kind": "word",
+    "forms": [
+      "lavish"
+    ],
+    "text": "As a verb, to spend or give something in huge, generous amounts. Asking how much money companies should lavish on AI means asking how freely they should pour money into it.",
+    "audio": true
+  },
+  {
+    "k": "second-thoughts",
+    "t": "second thoughts",
+    "kind": "phrase",
+    "forms": [
+      "second thoughts"
+    ],
+    "text": "Doubts that creep in after you have already decided something. Investors who cheered big AI spending are now having second thoughts, meaning they are reconsidering whether it was wise.",
+    "audio": true
+  },
+  {
+    "k": "underwrite",
+    "t": "underwrite",
+    "kind": "word",
+    "forms": [
+      "underwrite"
+    ],
+    "text": "In finance, to promise the money behind a project and accept the risk if it fails. Nvidia being in talks to underwrite $250bn of a data centre means it would guarantee a huge share of the funding, not just sell the chips.",
+    "audio": true
+  },
+  {
+    "k": "in-talks",
+    "t": "in talks",
+    "kind": "phrase",
+    "forms": [
+      "in talks"
+    ],
+    "text": "In the middle of formal negotiations that have not yet produced a deal. When a company is in talks, nothing is signed but serious bargaining is under way.",
+    "audio": true
+  },
+  {
+    "k": "gargantuan",
+    "t": "gargantuan",
+    "kind": "word",
+    "forms": [
+      "gargantuan"
+    ],
+    "text": "Enormous, gigantic. It comes from Gargantua, a giant in an old French novel famous for his monstrous appetite. A gargantuan data centre costing over $500bn is one of the biggest construction projects imaginable.",
+    "audio": true
+  },
+  {
+    "k": "blanched",
+    "t": "blanched",
+    "kind": "word",
+    "forms": [
+      "blanched"
+    ],
+    "text": "Turned pale from shock or fear. Saying investors blanched at Alphabet's $205bn spending plan is a vivid way of saying the number frightened them.",
+    "audio": true
+  },
+  {
+    "k": "plummeted",
+    "t": "plummeted",
+    "kind": "word",
+    "forms": [
+      "plummeted"
+    ],
+    "text": "Fell fast and hard, like a stone dropped off a cliff. AI stocks in Japan, South Korea and Taiwan did not drift downward, they crashed.",
+    "audio": true
+  },
+  {
+    "k": "splurge",
+    "t": "splurge",
+    "kind": "word",
+    "forms": [
+      "splurge"
+    ],
+    "text": "A burst of extravagant spending, treating yourself on a grand scale. The American AI splurge is the tech giants' spree of data-centre spending.",
+    "audio": true
+  },
+  {
+    "k": "titans",
+    "t": "titans",
+    "kind": "word",
+    "forms": [
+      "titans",
+      "titan"
+    ],
+    "text": "Giants of an industry, the biggest and most powerful players. The word comes from the Titans of Greek myth, gods of enormous size and strength. Chinese tech titans means companies like Alibaba and ByteDance.",
+    "audio": true
+  },
+  {
+    "k": "counterparts",
+    "t": "counterparts",
+    "kind": "word",
+    "forms": [
+      "counterparts"
+    ],
+    "text": "The people or companies that hold the matching position on the other side. Chinese firms' American counterparts are the American companies doing the same job, like Amazon and Alphabet.",
+    "audio": true
+  },
+  {
+    "k": "frugality",
+    "t": "frugality",
+    "kind": "word",
+    "forms": [
+      "frugality"
+    ],
+    "text": "The habit of spending little and wasting nothing. Unlike parsimony, frugality is usually a compliment. The article marvels that Chinese models are nearly as good despite this frugality.",
+    "audio": true
+  },
+  {
+    "k": "fractionally",
+    "t": "fractionally",
+    "kind": "word",
+    "forms": [
+      "fractionally"
+    ],
+    "text": "By a tiny amount, a small fraction. Models that are only fractionally less powerful are almost as good as the leaders.",
+    "audio": true
+  },
+  {
+    "k": "benchmarks",
+    "t": "benchmarks",
+    "kind": "name",
+    "forms": [
+      "benchmarks"
+    ],
+    "text": "Standard tests used to compare AI models against each other, like a common exam every model takes. Scoring 95% as well on widely used benchmarks means the Chinese model nearly matches the American one on those tests.",
+    "audio": true
+  },
+  {
+    "k": "whizz-kids",
+    "t": "whizz-kids",
+    "kind": "word",
+    "forms": [
+      "whizz-kids"
+    ],
+    "text": "Young people who are brilliantly skilled at something, especially technology. AI whizz-kids are the young engineers and researchers every lab competes to hire.",
+    "audio": true
+  },
+  {
+    "k": "distillation",
+    "t": "distillation",
+    "kind": "name",
+    "forms": [
+      "distillation"
+    ],
+    "text": "In AI, training a new model on the outputs of an existing, more expensive model, so the student model absorbs much of the teacher's skill at a fraction of the cost. Chinese labs are accused of distilling American models, which is why the article calls it a free ride on American spending.",
+    "audio": true
+  },
+  {
+    "k": "free-ride",
+    "t": "free-ride",
+    "kind": "word",
+    "forms": [
+      "free-ride"
+    ],
+    "text": "To enjoy a benefit others paid for without contributing yourself, like a group-project member who does nothing but shares the grade. Distillation lets Chinese developers free-ride on the billions American firms spent building their models.",
+    "audio": true
+  },
+  {
+    "k": "headline",
+    "t": "headline",
+    "kind": "word",
+    "forms": [
+      "headline capital-expenditure figures"
+    ],
+    "text": "Here headline means the big, publicly reported number, the figure that makes the news. Spending not captured in the headline capital-expenditure figures is real spending that the famous totals leave out.",
+    "audio": true
+  },
+  {
+    "k": "jump-scare",
+    "t": "jump scare",
+    "kind": "phrase",
+    "forms": [
+      "jump scare"
+    ],
+    "text": "A sudden fright, borrowed from horror movies where something leaps out without warning. DeepSeek's surprisingly good cheap model in early 2025 made American firms and investors jump in exactly that way.",
+    "audio": true
+  },
+  {
+    "k": "dearth",
+    "t": "dearth",
+    "kind": "word",
+    "forms": [
+      "dearth"
+    ],
+    "text": "A serious shortage or scarcity of something. China's problem has not been a shortage of money but a dearth of things to spend it on, because the best chips are off limits.",
+    "audio": true
+  },
+  {
+    "k": "sanction-proof",
+    "t": "sanction-proof",
+    "kind": "word",
+    "forms": [
+      "sanction-proof"
+    ],
+    "text": "To make something able to survive sanctions, the economic penalties one country imposes on another. Beijing wants China's AI infrastructure built so that American restrictions cannot cripple it.",
+    "audio": true
+  },
+  {
+    "k": "foundry",
+    "t": "foundry",
+    "kind": "name",
+    "forms": [
+      "foundry"
+    ],
+    "text": "A factory that manufactures chips designed by other companies. TSMC is the world's most important foundry: Nvidia designs the chips, TSMC actually makes them.",
+    "audio": true
+  },
+  {
+    "k": "chump-change",
+    "t": "chump change",
+    "kind": "phrase",
+    "forms": [
+      "chump change"
+    ],
+    "text": "An amount of money so small it barely matters, pocket change. Calling Alibaba's $53bn plan chump change next to Amazon's or Alphabet's spending shows just how colossal the American budgets are.",
+    "audio": true
+  },
+  {
+    "k": "out-of-reach",
+    "t": "out of reach",
+    "kind": "phrase",
+    "forms": [
+      "out of reach"
+    ],
+    "text": "Impossible to get or achieve, like a shelf too high to touch. Even Alibaba's comparatively modest spending plan may be out of reach because sanctions limit what it can buy.",
+    "audio": true
+  },
+  {
+    "k": "outsource",
+    "t": "outsource",
+    "kind": "word",
+    "forms": [
+      "outsource"
+    ],
+    "text": "To pay an outside company to do work instead of doing it in-house. Alibaba used to outsource its chip manufacturing to TSMC until American sanctions forced it to find suppliers at home.",
+    "audio": true
+  },
+  {
+    "k": "purveyors",
+    "t": "purveyors",
+    "kind": "word",
+    "forms": [
+      "purveyors"
+    ],
+    "text": "Suppliers, the businesses that provide a particular product. The only Chinese purveyors of comparably powerful chips are Huawei and SMIC.",
+    "audio": true
+  },
+  {
+    "k": "blacklisted",
+    "t": "blacklisted",
+    "kind": "word",
+    "forms": [
+      "blacklisted"
+    ],
+    "text": "Put on an official list of banned companies or people. Huawei has been blacklisted by America since 2019, which bars American firms from selling it most technology.",
+    "audio": true
+  },
+  {
+    "k": "workarounds",
+    "t": "workarounds",
+    "kind": "word",
+    "forms": [
+      "workarounds"
+    ],
+    "text": "Clever indirect ways of getting something done when the normal route is blocked. Because Huawei and SMIC cannot buy the best chipmaking machines, they rely on costly workarounds that limit how many good chips they can produce.",
+    "audio": true
+  },
+  {
+    "k": "churn-out",
+    "t": "churn out",
+    "kind": "phrase",
+    "forms": [
+      "churn out"
+    ],
+    "text": "To produce something rapidly and in large quantities, like a machine that never stops. The sanctions limit how many powerful chips Huawei and SMIC can churn out.",
+    "audio": true
+  },
+  {
+    "k": "offset",
+    "t": "offset",
+    "kind": "word",
+    "forms": [
+      "offset"
+    ],
+    "text": "To balance out or cancel the effect of something. SMIC cannot offset its inefficient production by simply spending more, because sanctions also limit the equipment it can buy.",
+    "audio": true
+  },
+  {
+    "k": "ramping-up",
+    "t": "ramping up",
+    "kind": "phrase",
+    "forms": [
+      "ramping up"
+    ],
+    "text": "Increasing something quickly and steadily, like a car accelerating up a ramp. Ramping up capital spending means sharply boosting investment.",
+    "audio": true
+  },
+  {
+    "k": "kit",
+    "t": "kit",
+    "kind": "word",
+    "forms": [
+      "chipmaking kit"
+    ],
+    "text": "Kit is British English for equipment or gear. Chipmaking kit means the machines used to manufacture semiconductors, some of which China is barred from buying.",
+    "audio": true
+  },
+  {
+    "k": "stingy",
+    "t": "stingy",
+    "kind": "word",
+    "forms": [
+      "stingy"
+    ],
+    "text": "Unwilling to spend money, tight-fisted. Chinese businesses are notoriously stingy with their IT budgets, spending less than a tenth of what American firms do on software.",
+    "audio": true
+  },
+  {
+    "k": "penny-pinching",
+    "t": "penny-pinching",
+    "kind": "word",
+    "forms": [
+      "penny-pinching"
+    ],
+    "text": "Extreme reluctance to spend even small amounts, watching every penny. This penny-pinching by Chinese businesses shrinks the rewards for building AI services, so firms invest less in the first place.",
+    "audio": true
+  },
+  {
+    "k": "purchasing-power",
+    "t": "purchasing power",
+    "kind": "name",
+    "forms": [
+      "purchasing power"
+    ],
+    "text": "An economics measure of what money actually buys in each country. A dollar stretches further in China than in America, so adjusted for purchasing power China's economy looks bigger than the raw numbers suggest.",
+    "audio": true
+  },
+  {
+    "k": "diffusing",
+    "t": "diffusing",
+    "kind": "word",
+    "forms": [
+      "diffusing",
+      "Diffusion",
+      "diffusion"
+    ],
+    "text": "Spreading something widely through a system, the way a drop of dye spreads through water. China's leaders care more about diffusing AI through the whole economy, getting every factory and office using it, than about building the single cleverest system.",
+    "audio": true
+  },
+  {
+    "k": "agi",
+    "t": "artificial general intelligence",
+    "kind": "name",
+    "forms": [
+      "artificial general intelligence",
+      "AGI"
+    ],
+    "text": "AI that could outperform humans at most intellectual tasks, not just one specialty. Dozens of American firms are chasing it; fewer than ten Chinese companies are known to be trying.",
+    "audio": true
+  },
+  {
+    "k": "wary",
+    "t": "wary",
+    "kind": "word",
+    "forms": [
+      "wary"
+    ],
+    "text": "Cautious and on guard against possible danger. Chinese investors have long been wary of AI overspending, punishing companies that splashed out too freely.",
+    "audio": true
+  },
+  {
+    "k": "entertaining",
+    "t": "entertaining",
+    "kind": "word",
+    "forms": [
+      "entertaining the idea"
+    ],
+    "text": "Here entertaining means seriously considering, not amusing. Investors entertaining the idea that America has too many data centres are starting to believe it might be true.",
+    "audio": true
+  },
+  {
+    "k": "restraint",
+    "t": "restraint",
+    "kind": "word",
+    "forms": [
+      "restraint"
+    ],
+    "text": "Self-control, holding back from doing more than is wise. China's admirable restraint is its refusal to overspend, though the article warns it may have held back too much.",
+    "audio": true
+  },
+  {
+    "k": "bottlenecks",
+    "t": "bottlenecks",
+    "kind": "word",
+    "forms": [
+      "bottlenecks"
+    ],
+    "text": "Narrow points that slow everything down, like the neck of a bottle that lets liquid out only so fast. ByteDance's computing bottlenecks mean it lacks enough processing power, so some video clips take ten hours to make.",
+    "audio": true
+  },
+  {
+    "k": "metered",
+    "t": "metered",
+    "kind": "word",
+    "forms": [
+      "metered"
+    ],
+    "text": "Rationed out in measured amounts, the way a parking meter sells time. Some Chinese AI services are strictly metered because demand far outstrips the computing available, and they sell out in minutes.",
+    "audio": true
+  },
+  {
+    "k": "cash-in",
+    "t": "cash in",
+    "kind": "phrase",
+    "forms": [
+      "cash in"
+    ],
+    "text": "To finally turn success into money. China's AI stars have impressive technology, but without enough data centres they may struggle to cash in on it.",
+    "audio": true
+  },
+  {
+    "k": "stunt",
+    "t": "stunt",
+    "kind": "word",
+    "forms": [
+      "stunt"
+    ],
+    "text": "As a verb, to prevent something from growing to full size. The closing warning is that an overly restrictive diet of computing power can stunt the growth of China's AI industry.",
+    "audio": true
+  },
+  {
+    "k": "superintelligence",
+    "t": "superintelligence",
+    "kind": "name",
+    "forms": [
+      "superintelligence"
+    ],
+    "text": "A hypothetical AI far smarter than any human at essentially everything, a step beyond AGI. The quest for superintelligence is what demands ever more computing power; everyday practical AI needs much less.",
+    "audio": true
+  },
+  {
+    "k": "nvidia",
+    "t": "Nvidia",
+    "kind": "name",
+    "forms": [
+      "Nvidia"
+    ],
+    "text": "The American company whose chips power most of the world's AI, making it one of the most valuable firms on earth. It designs the chips; TSMC manufactures them.",
+    "audio": true
+  },
+  {
+    "k": "tsmc",
+    "t": "TSMC",
+    "kind": "name",
+    "forms": [
+      "TSMC"
+    ],
+    "text": "Taiwan Semiconductor Manufacturing Company, the giant Taiwanese foundry that makes the world's most advanced chips for Nvidia, Apple and others. Its close links to America put it inside the export restrictions.",
+    "audio": true
+  },
+  {
+    "k": "smic",
+    "t": "SMIC",
+    "kind": "name",
+    "forms": [
+      "SMIC"
+    ],
+    "text": "China's leading state-controlled chip foundry, which manufactures Huawei's chip designs. Sanctions keep it from buying the best chipmaking machines, so it produces powerful chips only slowly and expensively.",
+    "audio": true
+  },
+  {
+    "k": "alphabet",
+    "t": "Alphabet",
+    "kind": "name",
+    "forms": [
+      "Alphabet"
+    ],
+    "text": "Google's parent company, one of America's biggest AI spenders. Its plan to spend $205bn on AI this year made investors flinch.",
+    "audio": true
+  },
+  {
+    "k": "deepseek",
+    "t": "DeepSeek",
+    "kind": "name",
+    "forms": [
+      "DeepSeek"
+    ],
+    "text": "The Chinese lab that shocked the AI world in early 2025 with a model that matched far more expensive American ones. It specializes in techniques that squeeze strong results from less computing power.",
+    "audio": true
+  },
+  {
+    "k": "bytedance",
+    "t": "ByteDance",
+    "kind": "name",
+    "forms": [
+      "ByteDance"
+    ],
+    "text": "The Chinese company behind TikTok and the world's top-ranked video-making AI. Its computing shortage is so severe that some AI video clips take ten hours to process.",
+    "audio": true
+  }
+]
