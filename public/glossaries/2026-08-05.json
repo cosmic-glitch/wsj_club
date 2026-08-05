@@ -1,0 +1,408 @@
+[
+  {
+    "k": "serendipity",
+    "t": "serendipity",
+    "kind": "vocab",
+    "pron": "ser-un-DIP-ih-tee",
+    "forms": [
+      "serendipity"
+    ],
+    "text": "The happy accident: stumbling onto something valuable when you were not looking for it. The crash here is nobody's plan, yet it hands astronomers exactly the experiment they could never arrange on purpose, which is what makes it scientific serendipity.",
+    "audio": true
+  },
+  {
+    "k": "trajectory",
+    "t": "trajectory",
+    "kind": "vocab",
+    "pron": "truh-JEK-tuh-ree",
+    "forms": [
+      "trajectory"
+    ],
+    "text": "The path an object traces as it moves, like a basketball's arc or this rocket stage's loop toward the Moon. Calculating the trajectory is how astronomers knew the rocket would pass worryingly close to a satellite, and the word also works figuratively for the direction anything is heading.",
+    "audio": true
+  },
+  {
+    "k": "shrapnel",
+    "t": "shrapnel",
+    "kind": "vocab",
+    "pron": "SHRAP-nul",
+    "forms": [
+      "shrapnel"
+    ],
+    "text": "The jagged fragments hurled outward by an explosion or violent impact, named after Henry Shrapnel, who invented an exploding artillery shell. Here it is the rock and metal a lunar crash flings across the surface, dangerous because nothing slows it down.",
+    "audio": true
+  },
+  {
+    "k": "smashup",
+    "t": "smashup",
+    "kind": "word",
+    "forms": [
+      "smashup"
+    ],
+    "text": "An informal word for a violent collision or crash, the kind of word a headline writer reaches for. Here it is the rocket stage slamming into the Moon at 8,700kph.",
+    "audio": true
+  },
+  {
+    "k": "rocket-stage",
+    "t": "rocket stage",
+    "kind": "name",
+    "forms": [
+      "rocket stage",
+      "upper stage"
+    ],
+    "text": "Rockets are built in sections called stages that fire one after another and are dropped when their fuel is spent. The upper stage is the final section, the one that gives the payload its last push, and it is this discarded piece of the Falcon 9 that is about to hit the Moon.",
+    "audio": true
+  },
+  {
+    "k": "falcon-9",
+    "t": "Falcon 9",
+    "kind": "name",
+    "forms": [
+      "Falcon 9"
+    ],
+    "text": "SpaceX's workhorse rocket, the most frequently launched rocket in the world. Its reusable first stage lands back on Earth, but upper stages like this one are discarded after their single flight.",
+    "audio": true
+  },
+  {
+    "k": "lunar",
+    "t": "lunar",
+    "kind": "word",
+    "forms": [
+      "lunar"
+    ],
+    "text": "Relating to the Moon, from luna, the Latin word for it. Lunar landers touch down on the Moon, the lunar surface is the Moon's ground, and lunar dust is Moon dust.",
+    "audio": true
+  },
+  {
+    "k": "low-earth-orbit",
+    "t": "low-earth orbit",
+    "kind": "name",
+    "forms": [
+      "low-earth orbit"
+    ],
+    "text": "The zone of space just above Earth, a few hundred kilometres up, where most satellites and the International Space Station circle the planet. Objects parked there eventually get dragged back down by the traces of atmosphere that still exist at that height.",
+    "audio": true
+  },
+  {
+    "k": "wisps",
+    "t": "wisps",
+    "kind": "word",
+    "forms": [
+      "wisps"
+    ],
+    "text": "Thin, faint strands or traces of something, like a wisp of smoke or a wisp of hair. The article uses it for the extremely thin leftover atmosphere at high altitude, barely there but enough to slow a satellite over time.",
+    "audio": true
+  },
+  {
+    "k": "altitudes",
+    "t": "altitudes",
+    "kind": "word",
+    "forms": [
+      "altitudes"
+    ],
+    "text": "Heights above the ground or above sea level. At the altitudes where satellites orbit, the air is almost, but not quite, gone.",
+    "audio": true
+  },
+  {
+    "k": "re-entry",
+    "t": "re-entry",
+    "kind": "word",
+    "forms": [
+      "re-entry"
+    ],
+    "text": "The moment a spacecraft or piece of space junk comes back into Earth's atmosphere. Slamming into air at enormous speed creates so much heat that most objects burn up completely, which is how discarded rockets are usually disposed of.",
+    "audio": true
+  },
+  {
+    "k": "atmospheric-drag",
+    "t": "atmospheric drag",
+    "kind": "name",
+    "forms": [
+      "atmospheric drag"
+    ],
+    "text": "The friction force air exerts on anything moving through it, the same resistance you feel sticking a hand out of a car window. Even the wispy air at orbital heights slowly steals a satellite's speed until it falls, but this rocket ended up too far away for drag to ever catch it.",
+    "audio": true
+  },
+  {
+    "k": "discarded",
+    "t": "discarded",
+    "kind": "word",
+    "forms": [
+      "discarded"
+    ],
+    "text": "Thrown away as no longer useful. Thousands of rocket stages have been discarded in space after their one flight, which is exactly the carelessness the article is pointing at.",
+    "audio": true
+  },
+  {
+    "k": "moon-bound",
+    "t": "Moon-bound",
+    "kind": "word",
+    "forms": [
+      "Moon-bound"
+    ],
+    "text": "Headed toward the Moon. The suffix -bound means going in that direction: a homeward-bound traveler, a New York-bound train.",
+    "audio": true
+  },
+  {
+    "k": "cause-alarm",
+    "t": "cause alarm",
+    "kind": "word",
+    "forms": [
+      "cause alarm"
+    ],
+    "text": "To make people worried or frightened. The rocket's predicted path passed close enough to a South Korean satellite that its operators briefly feared a collision.",
+    "audio": true
+  },
+  {
+    "k": "meteoroids",
+    "t": "meteoroids",
+    "kind": "name",
+    "forms": [
+      "Meteoroids",
+      "meteoroid"
+    ],
+    "text": "Chunks of rock traveling through space, smaller than asteroids. If one burns up in Earth's atmosphere it makes the streak we call a meteor, and any piece that reaches the ground is a meteorite. The Moon has no atmosphere, so meteoroids hit its surface at full speed.",
+    "audio": true
+  },
+  {
+    "k": "infer",
+    "t": "infer",
+    "kind": "word",
+    "forms": [
+      "infer"
+    ],
+    "text": "To figure something out from clues rather than observing it directly. Scientists could not see the rocks that hit the Moon, so they inferred each rock's size from how bright and long its impact flash was.",
+    "audio": true
+  },
+  {
+    "k": "dimensions",
+    "t": "dimensions",
+    "kind": "word",
+    "forms": [
+      "dimensions"
+    ],
+    "text": "The measurements of an object: its length, width, and height. Natural space rocks arrive with unknown dimensions, but the Falcon 9 stage's exact size is on record, which is what makes this crash so useful.",
+    "audio": true
+  },
+  {
+    "k": "duration",
+    "t": "duration",
+    "kind": "word",
+    "forms": [
+      "duration"
+    ],
+    "text": "How long something lasts. Astronomers used both the brightness and the duration of each impact flash to estimate the size of the rock that caused it.",
+    "audio": true
+  },
+  {
+    "k": "calibrate",
+    "t": "calibrate",
+    "kind": "word",
+    "forms": [
+      "calibrate"
+    ],
+    "text": "To check and correct a measuring method against a case where the true answer is known, like testing a scale with a weight you know is exactly 10 pounds. Because the rocket's true size is known, its flash lets astronomers calibrate the formula they have used on every past impact.",
+    "audio": true
+  },
+  {
+    "k": "nudged",
+    "t": "nudged",
+    "kind": "word",
+    "forms": [
+      "nudged"
+    ],
+    "text": "Pushed gently, a small shove rather than a shove that sends something flying. Months of faint sunlight pressure have nudged the rocket's orbit just enough to move the predicted crash site by a few kilometres.",
+    "audio": true
+  },
+  {
+    "k": "faint",
+    "t": "faint",
+    "kind": "word",
+    "forms": [
+      "faint"
+    ],
+    "text": "Very weak or dim, barely detectable. Sunlight exerts a faint but real push on objects in space, and a crash into hard rock would make a flash too faint for telescopes to measure.",
+    "audio": true
+  },
+  {
+    "k": "exerted",
+    "t": "exerted",
+    "kind": "word",
+    "forms": [
+      "exerted"
+    ],
+    "text": "Applied or put forth, usually said of force, pressure, or effort. Sunlight exerts a tiny pressure on everything it touches, too small to feel but enough to shift an orbit over months.",
+    "audio": true
+  },
+  {
+    "k": "solar-radiation",
+    "t": "solar radiation",
+    "kind": "name",
+    "forms": [
+      "solar radiation"
+    ],
+    "text": "The energy the Sun pours out as light and other rays. Light carries momentum, so it presses ever so slightly on whatever it hits, and in the emptiness of space that whisper of pressure adds up.",
+    "audio": true
+  },
+  {
+    "k": "bedrock",
+    "t": "bedrock",
+    "kind": "word",
+    "forms": [
+      "bedrock"
+    ],
+    "text": "The solid rock layer underneath loose soil or dust. On the Moon, a crash into hard bedrock would barely flash, while a crash into soft dust would light up brightly. People also use it figuratively for an unshakable foundation, as in bedrock principles.",
+    "audio": true
+  },
+  {
+    "k": "blankets",
+    "t": "blankets",
+    "kind": "word",
+    "forms": [
+      "blankets"
+    ],
+    "text": "Covers completely, the way a blanket covers a bed. A layer of soft dust blankets most of the Moon's surface. Watch the sense: here it is a verb, not the thing on your bed.",
+    "audio": true
+  },
+  {
+    "k": "debris",
+    "t": "debris",
+    "kind": "word",
+    "forms": [
+      "debris"
+    ],
+    "text": "Scattered pieces of something broken or destroyed, pronounced duh-BREE with a silent s. The impact will throw a shower of debris above the Moon's surface, and flying debris is exactly what future astronauts will need to worry about.",
+    "audio": true
+  },
+  {
+    "k": "ejecta-plume",
+    "t": "ejecta plume",
+    "kind": "name",
+    "forms": [
+      "ejecta plume"
+    ],
+    "text": "The fountain of material thrown up and out by an impact. Ejecta is the ejected stuff, and a plume is a rising column, like smoke from a chimney. Lit by the Sun against black space, this one should be easy to study from Earth.",
+    "audio": true
+  },
+  {
+    "k": "composition",
+    "t": "composition",
+    "kind": "word",
+    "forms": [
+      "composition"
+    ],
+    "text": "What something is made of, its ingredients and their mix. Scientists will read the debris's composition from the light it reflects. Not the school-essay meaning here.",
+    "audio": true
+  },
+  {
+    "k": "of-academic-interest",
+    "t": "of academic interest",
+    "kind": "phrase",
+    "forms": [
+      "of academic interest"
+    ],
+    "text": "A set phrase meaning interesting only in theory, with no practical consequences. The article flips it: how lunar debris flies is NOT just of academic interest, because real astronauts may soon be standing in the line of fire.",
+    "audio": true
+  },
+  {
+    "k": "preprint",
+    "t": "preprint",
+    "kind": "name",
+    "forms": [
+      "preprint"
+    ],
+    "text": "A scientific paper shared publicly before it has been checked by other experts through peer review. Scientists post preprints to get findings out fast, which mattered here because the crash date was approaching.",
+    "audio": true
+  },
+  {
+    "k": "artemis",
+    "t": "Artemis IV",
+    "kind": "name",
+    "forms": [
+      "Artemis IV"
+    ],
+    "text": "A mission in NASA's Artemis program, the American effort to return astronauts to the Moon. Artemis IV is planned as the first crewed landing since 1972. In Greek myth Artemis is the Moon goddess and twin sister of Apollo, the name of the original Moon-landing program.",
+    "audio": true
+  },
+  {
+    "k": "crewed",
+    "t": "crewed",
+    "kind": "word",
+    "forms": [
+      "crewed"
+    ],
+    "text": "Carrying human beings aboard, as opposed to an uncrewed robotic mission. A crewed landing means astronauts actually walking on the Moon again.",
+    "audio": true
+  },
+  {
+    "k": "outpost",
+    "t": "outpost",
+    "kind": "word",
+    "forms": [
+      "outpost"
+    ],
+    "text": "A small settlement or station far from the main centers, at the edge of explored territory. America wants a permanent lunar outpost at the Moon's south pole, essentially a frontier base.",
+    "audio": true
+  },
+  {
+    "k": "come-to-fruition",
+    "t": "come to fruition",
+    "kind": "phrase",
+    "forms": [
+      "come to fruition"
+    ],
+    "text": "A set phrase meaning to actually happen, for a plan to bear fruit and become real. The article is openly unsure whether the Moon-base plans will come to fruition, calling that quite a big if.",
+    "audio": true
+  },
+  {
+    "k": "big-if",
+    "t": "a big if",
+    "kind": "word",
+    "forms": [
+      "big if"
+    ],
+    "text": "Here the word if is used as a noun meaning an uncertainty or condition. A big if is a major open question the whole plan depends on, in this case whether the Moon bases actually get built.",
+    "audio": true
+  },
+  {
+    "k": "admittedly",
+    "t": "admittedly",
+    "kind": "word",
+    "forms": [
+      "admittedly"
+    ],
+    "text": "A word writers use to concede a point against their own argument before moving on: it must be admitted that. The author grants that the Moon-base plans may never happen, then explains why the research matters anyway.",
+    "audio": true
+  },
+  {
+    "k": "habitat",
+    "t": "habitat",
+    "kind": "word",
+    "forms": [
+      "habitat"
+    ],
+    "text": "In biology, the environment where a creature naturally lives. In space talk it means the sealed living quarters that keep astronauts alive, so a fragment hitting a habitat could be as dangerous as one hitting a person.",
+    "audio": true
+  },
+  {
+    "k": "los-alamos",
+    "t": "Los Alamos National Laboratory",
+    "kind": "name",
+    "forms": [
+      "Los Alamos National Laboratory"
+    ],
+    "text": "A famous American government research lab in New Mexico, born as the secret home of the Manhattan Project that built the first atomic bomb during the second world war. Today its scientists work on everything from national security to astronomy.",
+    "audio": true
+  },
+  {
+    "k": "forewarned-forearmed",
+    "t": "forewarned is forearmed",
+    "kind": "phrase",
+    "forms": [
+      "Forewarned",
+      "forearmed"
+    ],
+    "text": "An old proverb: if you are warned about a danger in advance, you can prepare for it, arming yourself beforehand. Knowing how impact debris flies today means Moon bases can be designed to survive it tomorrow.",
+    "audio": true
+  }
+]

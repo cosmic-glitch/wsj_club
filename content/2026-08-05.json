@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-05",
+  "title": "An Old SpaceX Rocket Is About to Crash Into the Moon",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/08/04/an-old-spacex-rocket-is-about-to-crash-into-the-moon",
+  "articlePageUrl": "/articles/2026-08-05.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "serendipity",
+      "partOfSpeech": "noun",
+      "pronunciation": "ser-un-DIP-ih-tee",
+      "articleQuote": "Careless or not, the collision is a welcome bit of scientific serendipity.",
+      "meaning": "Serendipity is the happy accident: stumbling onto something valuable when you were not looking for it. The word carries a note of delight, luck so good it almost feels planned. In this article the crash is nobody's plan and even looks like carelessness, yet it hands astronomers exactly the experiment they could never arrange on purpose, which is what makes it *scientific serendipity*.",
+      "examples": [
+        "She went to the library for a chemistry textbook and, by pure serendipity, found the novel that became her all-time favorite.",
+        "Meeting his future best friend because they were both lost on the first day of school was total serendipity."
+      ]
+    },
+    {
+      "word": "trajectory",
+      "partOfSpeech": "noun",
+      "pronunciation": "truh-JEK-tuh-ree",
+      "articleQuote": "Its estimated trajectory initially had it passing close enough to a South Korean lunar satellite to cause alarm.",
+      "meaning": "A trajectory is the path an object traces as it moves, whether that is a basketball arcing toward the hoop or a rocket stage looping toward the Moon. Scientists calculate trajectories to predict where something will be later, which is how astronomers knew this discarded rocket would pass worryingly close to a satellite. The word also works figuratively for the direction anything is heading, like a career or a team's season.",
+      "examples": [
+        "The receiver read the ball's trajectory mid-flight and adjusted his route to catch it.",
+        "Her upward trajectory since ninth grade, from B student to honor roll, impressed the counselor."
+      ]
+    },
+    {
+      "word": "shrapnel",
+      "partOfSpeech": "noun",
+      "pronunciation": "SHRAP-nul",
+      "articleQuote": "Without air resistance to slow it down, shrapnel from meteoroid impacts or spacecraft landings can travel for hundreds of kilometres at thousands of kilometres per hour.",
+      "meaning": "Shrapnel means the jagged fragments hurled outward by an explosion or a violent impact. It started as a military word, named after Henry Shrapnel, the British officer who invented an exploding artillery shell, and news reports still use it for flying debris from blasts and crashes. Here it describes the rock and metal fragments a lunar impact flings across the surface, which, with no air to slow them, could strike an astronaut hundreds of kilometres away.",
+      "examples": [
+        "Firefighters pushed the crowd far back because an exploding fuel tank can throw shrapnel across a whole parking lot.",
+        "The shop teacher insists on goggles so metal shrapnel from the grinder never reaches anyone's eyes."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Calibration",
+      "articleQuote": "The advance warning of the impact therefore gives astronomers a chance to capture data that will let them properly calibrate their past measurements.",
+      "meaning": "**Calibration** is a workhorse idea from *measurement science*, and it lives in every lab in the world. Imagine your bathroom scale has seemed off for months. You could argue about it forever, or you could do one simple thing: put a dumbbell you *know* weighs exactly 10 pounds on it. If the scale reads 12, you have learned it runs 2 pounds heavy, and suddenly every reading it has ever given you can be corrected. That known dumbbell is what scientists call *ground truth*.\n\nThe Moon astronomers have the same problem. For decades they have watched flashes from meteoroid impacts and worked backwards from a flash's brightness to guess each rock's size, but nobody could ever check the guesses, because nobody knew the rocks' true sizes. The Falcon 9 stage is the known dumbbell: its exact size and mass are on record, so watching its flash lets scientists test and correct their whole formula. The trick is everywhere once you see it: pollsters check their methods against real election results, and AI models are graded on questions with known answers."
+    },
+    {
+      "name": "Negative externalities",
+      "articleQuote": "The crash demonstrates a “certain carelessness” about how space hardware is disposed of, wrote Bill Gray.",
+      "meaning": "A **negative externality** is a big idea from *economics*: a cost created by your decision that lands on someone who had no say in it. Think of someone blasting music at 1 a.m. The listener gets all the enjoyment; the neighbors, who never agreed to anything, pay the price in lost sleep. Because the person making the choice does not feel the cost, people tend to produce too much of the harm. That is why pollution, secondhand smoke, and traffic jams are the textbook examples.\n\nSpace junk is the same story at orbital speed. Discarding a spent rocket stage was the cheap, easy option for the launch company, but the risk drifted onto everyone else, including the operators of a South Korean lunar satellite who got a scare when the stage's path passed close by. When economists spot an externality, their usual fix is to make the decider feel the cost, which is exactly what rules requiring companies to safely dispose of old rockets try to do."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why does the Falcon 9 crash give scientists a rare opportunity that ordinary meteoroid impacts don't?",
+      "options": [
+        "It will be the first object ever recorded striking the Moon's surface.",
+        "Its exact dimensions are known and the impact was predicted in advance.",
+        "It will hit the far side of the Moon, which telescopes rarely observe.",
+        "It is traveling far faster than any natural meteoroid could."
+      ],
+      "answerIndex": 1,
+      "explanation": "Meteoroids arrive unannounced and their sizes must be guessed from the flash, but the rocket's dimensions are on record and its impact time is known, so past measurements can finally be checked."
+    },
+    {
+      "question": "The article calls the collision \"a welcome bit of scientific serendipity.\" What does serendipity mean?",
+      "options": [
+        "A carefully planned and controlled experiment",
+        "A disaster that was narrowly avoided",
+        "A valuable discovery made by lucky accident",
+        "A finding that later turns out to be false"
+      ],
+      "answerIndex": 2,
+      "explanation": "Serendipity is finding something valuable by happy accident, and here an unplanned crash hands astronomers an experiment they could never arrange themselves."
+    },
+    {
+      "question": "Why is the exact location of the crash still uncertain?",
+      "options": [
+        "The Moon's gravity varies unpredictably from place to place.",
+        "SpaceX has been quietly steering the rocket stage.",
+        "Earth-based telescopes cannot track an object that small.",
+        "Faint pressure from solar radiation has nudged the rocket's orbit over the months."
+      ],
+      "answerIndex": 3,
+      "explanation": "The tiny but steady push of sunlight on the rocket stage has shifted its orbit enough to move the predicted impact point by a few kilometres."
+    },
+    {
+      "question": "Why can debris from a lunar impact travel hundreds of kilometres, much farther than similar debris would on Earth?",
+      "options": [
+        "The Moon has no air resistance to slow the fragments down.",
+        "The Moon's surface is smooth enough for debris to slide great distances.",
+        "Impacts on the Moon release far more energy than impacts on Earth.",
+        "The Sun's radiation keeps pushing the fragments along."
+      ],
+      "answerIndex": 0,
+      "explanation": "With no atmosphere to create drag, fragments keep their speed and can fly for hundreds of kilometres, which is exactly why they worry planners of future Moon bases."
+    },
+    {
+      "question": "A factory saves money by dumping waste into a river, and a town downstream must pay to clean its drinking water. Which idea from today's handout does this illustrate, the same one the article applies to discarded rockets?",
+      "options": [
+        "Calibration",
+        "Serendipity",
+        "A negative externality",
+        "Atmospheric drag"
+      ],
+      "answerIndex": 2,
+      "explanation": "The cost of the factory's choice lands on people who had no say in it, just as a carelessly discarded rocket stage put a South Korean satellite operator at risk."
+    }
+  ]
+}
