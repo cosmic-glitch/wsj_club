@@ -53,7 +53,7 @@
       "SPVs",
       "SPV"
     ],
-    "text": "A fund created to do one job: hold shares of a single private company and sell investors slices of itself. You never own the shares — you own a claim on the box that says it holds them, and when SPVs buy into other SPVs, the layers make it very hard to know who owns what.",
+    "text": "A fund created to do one job: hold shares of a single private company and sell investors stakes in itself. The fund owns the shares; you own a piece of the fund, never the shares themselves — and when SPVs buy into other SPVs, the layers of ownership make it very hard to verify who actually holds what.",
     "audio": true
   },
   {
