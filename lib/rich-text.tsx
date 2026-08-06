@@ -14,13 +14,19 @@ import React from "react";
  *
  * Deliberately NOT a Markdown library and deliberately NOT
  * `dangerouslySetInnerHTML`: it parses into React elements, so authored content
- * can never inject markup. Only inline emphasis is supported — no links, lists,
- * or headings. Paragraphs come from blank lines (see `RichParagraphs`), which
- * is the convention the content files already follow.
+ * can never inject markup. Only inline emphasis and `[label](https://…)` links
+ * are supported — no lists or headings, and link hrefs must be http(s), so a
+ * content file can never produce a `javascript:` URL. Paragraphs come from
+ * blank lines (see `RichParagraphs`), which is the convention the content
+ * files already follow.
  */
 
-/** `**bold**` (checked first, so `**x**` never parses as two italics) or `*italic*`. */
-const EMPHASIS = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
+/**
+ * `[label](https://url)` (checked first — its label may contain `*`),
+ * then `**bold**` (before italic, so `**x**` never parses as two italics),
+ * then `*italic*`.
+ */
+const EMPHASIS = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)|\*\*([^*]+)\*\*|\*([^*]+)\*/g;
 
 /**
  * Parse one string's inline emphasis into React nodes.
@@ -37,8 +43,14 @@ export function parseInline(text: string): React.ReactNode[] {
   for (const m of text.matchAll(EMPHASIS)) {
     const at = m.index ?? 0;
     if (at > last) nodes.push(text.slice(last, at));
-    if (m[1] !== undefined) nodes.push(<strong key={key++}>{m[1]}</strong>);
-    else nodes.push(<em key={key++}>{m[2]}</em>);
+    if (m[1] !== undefined)
+      nodes.push(
+        <a key={key++} href={m[2]} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
+          {m[1]}
+        </a>
+      );
+    else if (m[3] !== undefined) nodes.push(<strong key={key++}>{m[3]}</strong>);
+    else nodes.push(<em key={key++}>{m[4]}</em>);
     last = at + m[0].length;
   }
   if (last < text.length) nodes.push(text.slice(last));
@@ -85,5 +97,5 @@ export function RichParagraphs({
  * aloud through TTS.
  */
 export function stripMarkdown(text: string): string {
-  return text.replace(EMPHASIS, (_, bold, italic) => bold ?? italic);
+  return text.replace(EMPHASIS, (_, label, _href, bold, italic) => label ?? bold ?? italic);
 }

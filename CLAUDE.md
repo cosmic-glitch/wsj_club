@@ -40,7 +40,7 @@ The card recipes, calibration, and counts live in the authoring skills — `.cla
 - **Hard rule: never republish article text.** Link and quote short phrases only. Full text goes to Blob (private, for the tutor) — never into the repo.
 - **No author byline in `title`** — an index-row rule only; attribution in prose, glossaries, and the article page's SOURCE bar is fine and wanted.
 - **Never pad concepts** — default 2, a third only when it genuinely shouts (hard cap 3), fewer is fine, and `[]` (vocab-only day) is handled everywhere.
-- Inline `**bold**`/`*italic*` in authored prose renders via `lib/rich-text.tsx` (parses to React elements, never `dangerouslySetInnerHTML`); `quiz-prompt.ts` strips markers before feeding models/TTS.
+- Inline `**bold**`/`*italic*` and `[label](https://…)` links in authored prose render via `lib/rich-text.tsx` (parses to React elements, never `dangerouslySetInnerHTML`; hrefs must be http(s)); `quiz-prompt.ts` strips markers before feeding models/TTS (links reduce to their label).
 
 ## Invariants & gotchas (the load-bearing lessons)
 
