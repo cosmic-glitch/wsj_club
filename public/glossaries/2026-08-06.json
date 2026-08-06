@@ -1,0 +1,644 @@
+[
+  {
+    "k": "windfall",
+    "t": "windfall",
+    "kind": "vocab",
+    "pron": "WIND-fawl",
+    "forms": [
+      "windfall"
+    ],
+    "text": "A sudden pile of money you didn't work for day to day — it just lands on you, like ripe fruit blown down by the wind, free for whoever picks it up. Rupireddy's hoped-for windfall was his $17,250 turning into $300,000 when SpaceX went public. The word almost always carries that flavor of luck and suddenness.",
+    "audio": true
+  },
+  {
+    "k": "opaque",
+    "t": "opaque",
+    "kind": "vocab",
+    "pron": "oh-PAYK",
+    "forms": [
+      "opaque"
+    ],
+    "text": "Literally: you can't see through it, like frosted glass. Figuratively — the sense here — you can't see into it: an opaque fund is one where outsiders can't tell what it actually owns or where the money goes. The article's point is that these funds are risky partly because nobody can check what's inside.",
+    "audio": true
+  },
+  {
+    "k": "fraught",
+    "t": "fraught",
+    "kind": "vocab",
+    "pron": "FRAWT",
+    "forms": [
+      "fraught"
+    ],
+    "text": "Loaded with something bad — danger, tension, problems. It originally meant freighted, like a ship loaded with cargo, and 'fraught with risk' still means packed full of it. Saying SPVs are 'especially fraught' means the whole arrangement is tense and likely to go wrong.",
+    "audio": true
+  },
+  {
+    "k": "ipo",
+    "t": "IPO",
+    "kind": "name",
+    "forms": [
+      "IPO",
+      "IPOs",
+      "pre-IPO"
+    ],
+    "text": "Initial public offering — the day a private company first sells its shares to the general public and starts trading on a stock exchange. Before the IPO, shares are scarce and only insiders can own them; that scarcity is what 'pre-IPO' funds sell access to, and what made SpaceX stakes so coveted.",
+    "audio": true
+  },
+  {
+    "k": "spv",
+    "t": "special-purpose vehicles (SPVs)",
+    "kind": "name",
+    "forms": [
+      "special-purpose vehicles",
+      "SPVs",
+      "SPV"
+    ],
+    "text": "A fund created to do one job: hold shares of a single private company and sell investors slices of itself. You never own the shares — you own a claim on the box that says it holds them, and when SPVs buy into other SPVs, the layers make it very hard to know who owns what.",
+    "audio": true
+  },
+  {
+    "k": "sec",
+    "t": "SEC",
+    "kind": "name",
+    "forms": [
+      "Securities and Exchange Commission",
+      "SEC"
+    ],
+    "text": "The Securities and Exchange Commission — the US government agency that referees investing. It forces public companies to publish honest, audited numbers and sues cheaters. The funds in this story sit in a corner of finance the SEC barely watches, which is why investors filed complaints only after the damage was done.",
+    "audio": true
+  },
+  {
+    "k": "accredited-investors",
+    "t": "accredited investors",
+    "kind": "name",
+    "forms": [
+      "accredited investors"
+    ],
+    "text": "People wealthy enough — roughly $200,000 a year in income or $1 million in net worth — that the law lets them buy risky private investments ordinary investors can't. The theory is they can afford losses and can vet deals themselves, so the government doesn't protect them the way it protects buyers of public stocks.",
+    "audio": true
+  },
+  {
+    "k": "venture-capital",
+    "t": "venture capital",
+    "kind": "name",
+    "forms": [
+      "venture-capital",
+      "Venture-capital"
+    ],
+    "text": "Firms that invest in young private companies (startups), hoping a few big winners pay for many failures. When startup price tags grew huge, venture firms didn't always have enough cash for each round — so they created SPVs to collect money from individual investors.",
+    "audio": true
+  },
+  {
+    "k": "private-equity",
+    "t": "private equity",
+    "kind": "name",
+    "forms": [
+      "private-equity"
+    ],
+    "text": "Funds that buy stakes in companies that aren't traded on public stock markets — often whole companies. Like venture capital and SPVs, they're 'alternative investments': potentially profitable, lightly regulated, and mostly closed to ordinary investors.",
+    "audio": true
+  },
+  {
+    "k": "mutual-funds",
+    "t": "mutual funds",
+    "kind": "name",
+    "forms": [
+      "mutual funds"
+    ],
+    "text": "The ordinary, heavily regulated funds regular people invest in — they pool many investors' money into a basket of public stocks or bonds, must report what they hold, and answer to the SEC. The article contrasts them with SPVs, which face almost none of that oversight.",
+    "audio": true
+  },
+  {
+    "k": "lockup",
+    "t": "lockup period",
+    "kind": "name",
+    "forms": [
+      "lockup agreements",
+      "lockup period",
+      "lockup rules"
+    ],
+    "text": "A promise that early investors won't sell their shares for a set time after a company's IPO — often several months — so the market isn't flooded on day one. The article's news hook is a lockup expiring: the first wave of pre-IPO SpaceX investors finally allowed to sell, and to find out whether their shares really exist.",
+    "audio": true
+  },
+  {
+    "k": "stock-split",
+    "t": "stock split",
+    "kind": "name",
+    "forms": [
+      "stock split"
+    ],
+    "text": "When a company divides each share into several cheaper ones — in a 5-1 split, 500 shares become 2,500, each worth a fifth as much, so the total value doesn't change. It matters here because Rupireddy's 500 pre-split shares equal 2,500 post-split shares, the number he believed he held at the IPO.",
+    "audio": true
+  },
+  {
+    "k": "liquidity-event",
+    "t": "liquidity event",
+    "kind": "name",
+    "forms": [
+      "liquidity event"
+    ],
+    "text": "Any moment that turns a locked-up investment into money you can actually spend — usually the company going public or being bought. 'Liquid' in finance means easily converted to cash; until a liquidity event, startup investors are rich only on paper.",
+    "audio": true
+  },
+  {
+    "k": "funding-round",
+    "t": "funding round",
+    "kind": "name",
+    "forms": [
+      "funding round"
+    ],
+    "text": "Startups raise money in stages called rounds — each time selling a new batch of shares to investors, usually at a higher price than the last. As valuations swelled, each successive round demanded bigger checks, which is what pushed venture firms to create SPVs.",
+    "audio": true
+  },
+  {
+    "k": "alternative-investments",
+    "t": "alternative investments",
+    "kind": "name",
+    "forms": [
+      "alternative investments"
+    ],
+    "text": "The catch-all label for investments outside ordinary stocks and bonds — private-equity funds, venture capital, SPVs and the like. They can pay off handsomely, but they're lightly regulated, hard to see into, and hard to exit, which is why the article calls them risky for smaller investors.",
+    "audio": true
+  },
+  {
+    "k": "class-action",
+    "t": "class-action lawsuit",
+    "kind": "name",
+    "forms": [
+      "class-action lawsuit",
+      "class-action"
+    ],
+    "text": "One lawsuit filed on behalf of a whole group ('class') of people harmed the same way — here, Late Stage investors suing together. It lets many small victims share lawyers and act as one, instead of each fighting alone over amounts too small to justify a case.",
+    "audio": true
+  },
+  {
+    "k": "went-public",
+    "t": "going public",
+    "kind": "name",
+    "forms": [
+      "went public",
+      "goes public"
+    ],
+    "text": "Shorthand for holding an IPO: the company's shares start trading on a stock exchange where anyone can buy them, a public price appears, and strict disclosure rules kick in. Before that, the company is private — it picks its own shareholders and reveals far less.",
+    "audio": true
+  },
+  {
+    "k": "privately-held",
+    "t": "privately held",
+    "kind": "name",
+    "forms": [
+      "privately held"
+    ],
+    "text": "Owned by a limited circle — founders, employees, chosen investors — rather than traded on a public stock exchange. A privately held company like pre-IPO SpaceX controls who may own its shares, which is exactly why outsiders paid middlemen for 'exposure'.",
+    "audio": true
+  },
+  {
+    "k": "net-worth",
+    "t": "net worth",
+    "kind": "name",
+    "forms": [
+      "net worth"
+    ],
+    "text": "Everything you own minus everything you owe. It's the standard measure of wealth — and the yardstick the law uses to decide who counts as an accredited investor.",
+    "audio": true
+  },
+  {
+    "k": "audited-financials",
+    "t": "audited financials",
+    "kind": "name",
+    "forms": [
+      "audited financials"
+    ],
+    "text": "Financial statements checked by an independent accounting firm that verifies the numbers are real. Public companies must file them; SPVs don't have to — meaning nobody outside Late Stage ever had to confirm the SpaceX shares were actually there.",
+    "audio": true
+  },
+  {
+    "k": "quarterly-earnings",
+    "t": "quarterly earnings",
+    "kind": "name",
+    "forms": [
+      "quarterly earnings"
+    ],
+    "text": "The report card public companies must publish every three months: sales, profits, and losses. SpaceX's first one as a public company disappointed investors, and the stock fell more than 13% in a day.",
+    "audio": true
+  },
+  {
+    "k": "federal-prosecutors",
+    "t": "federal prosecutors",
+    "kind": "name",
+    "forms": [
+      "Federal prosecutors",
+      "prosecutors"
+    ],
+    "text": "Government lawyers who bring criminal charges on behalf of the United States — the people who charged the three Late Stage executives. Federal (national) prosecutors handle crimes that cross state lines or break national laws, like securities fraud.",
+    "audio": true
+  },
+  {
+    "k": "late-stage-management",
+    "t": "Late Stage Management",
+    "kind": "name",
+    "forms": [
+      "Late Stage Management",
+      "Late Stage"
+    ],
+    "text": "The New Jersey investment firm at the center of the story. Its name is finance jargon turned into a brand: a 'late-stage' company is a startup near the finish line — big, valuable, and close to an IPO — exactly what the firm claimed to offer pieces of.",
+    "audio": true
+  },
+  {
+    "k": "sofi",
+    "t": "SoFi",
+    "kind": "name",
+    "forms": [
+      "SoFi"
+    ],
+    "text": "A financial-technology company (originally 'Social Finance') offering loans and banking through an app. One of the pre-IPO investments Rupireddy bought into — and one where he actually did receive his shares after the IPO.",
+    "audio": true
+  },
+  {
+    "k": "impossible-foods",
+    "t": "Impossible Foods",
+    "kind": "name",
+    "forms": [
+      "Impossible Foods"
+    ],
+    "text": "The startup behind the plant-based Impossible Burger — another buzzy private company whose shares Late Stage claimed to offer.",
+    "audio": true
+  },
+  {
+    "k": "valuation",
+    "t": "valuation",
+    "kind": "name",
+    "forms": [
+      "valuation",
+      "valuations"
+    ],
+    "text": "The price tag on a whole company — what all its shares together are worth. SpaceX's valuation went from $58 billion when Rupireddy invested to $1.77 trillion at its IPO, a roughly thirty-fold rise, which is why his small stake should have grown so much.",
+    "audio": true
+  },
+  {
+    "k": "counterparty",
+    "t": "counterparty",
+    "kind": "name",
+    "forms": [
+      "counterparty"
+    ],
+    "text": "The other side of any deal — whoever you're buying from, selling to, or trusting to deliver. The lawyer's point is the article's moral: an investment is only as good as the counterparty behind it, because if they won't or can't deliver, the paper you hold is worthless.",
+    "audio": true
+  },
+  {
+    "k": "brokerages",
+    "t": "brokerages",
+    "kind": "name",
+    "forms": [
+      "brokerages",
+      "brokers"
+    ],
+    "text": "Firms (and the people, brokers) that buy and sell investments on behalf of customers, earning fees on each deal. The article closes on brokerages still texting people offers of Anthropic stock through SPVs — the same structure that just burned SpaceX investors.",
+    "audio": true
+  },
+  {
+    "k": "pleaded-guilty",
+    "t": "pleaded guilty",
+    "kind": "name",
+    "forms": [
+      "pleaded guilty"
+    ],
+    "text": "Formally admitted to the crime in court instead of fighting the charges at trial. Defendants often plead guilty hoping for a lighter sentence; the three Late Stage executives who did are now awaiting sentencing, facing decades in prison.",
+    "audio": true
+  },
+  {
+    "k": "disclosure",
+    "t": "disclosure",
+    "kind": "name",
+    "forms": [
+      "disclosure"
+    ],
+    "text": "Revealing the facts investors need — what a fund holds, what was sold, what fees were charged. Disclosure is the core idea of US securities law: you may sell risky things, but you must tell the truth about them. Rupireddy's complaint is that Late Stage failed at exactly this.",
+    "audio": true
+  },
+  {
+    "k": "vehicles",
+    "t": "vehicles",
+    "kind": "word",
+    "forms": [
+      "vehicles"
+    ],
+    "text": "Not cars. In finance, a vehicle is any legal structure built to carry money or investments — a fund, a trust, a holding company. Late Stage sold 'stakes in vehicles', meaning slices of funds, not actual SpaceX shares.",
+    "audio": true
+  },
+  {
+    "k": "exposure",
+    "t": "exposure",
+    "kind": "word",
+    "forms": [
+      "exposure",
+      "exposed to"
+    ],
+    "text": "In investing, having exposure to a stock means your money rises and falls with it — even if you don't own it directly. The word is doing sneaky work here: SPVs sell 'exposure', not shares, so investors who thought they held SpaceX actually held a promise several layers removed from it.",
+    "audio": true
+  },
+  {
+    "k": "stakes",
+    "t": "stake",
+    "kind": "word",
+    "forms": [
+      "stakes",
+      "stake"
+    ],
+    "text": "An ownership share in something — not the wooden kind and not 'at stake'. Buying a stake in a fund means owning a slice of it. The article's investors bought stakes in funds that claimed to hold stakes in other funds that held SpaceX.",
+    "audio": true
+  },
+  {
+    "k": "interests",
+    "t": "interests",
+    "kind": "word",
+    "forms": [
+      "interests"
+    ],
+    "text": "Here it doesn't mean hobbies or curiosity: in law and finance, an interest is a legal share of ownership in something. Selling 'interests in the fund' means selling slices of the fund itself — one more word that lets sellers avoid saying 'you are not buying shares'.",
+    "audio": true
+  },
+  {
+    "k": "holdings",
+    "t": "holdings",
+    "kind": "word",
+    "forms": [
+      "holdings",
+      "holding"
+    ],
+    "text": "The investments someone owns — their holdings. Your holding in a fund is your position in it. The whole fight in this story is over what Rupireddy's holdings really were: his portal and tax forms said one thing, the firm's late emails another.",
+    "audio": true
+  },
+  {
+    "k": "block",
+    "t": "block",
+    "kind": "word",
+    "forms": [
+      "block"
+    ],
+    "text": "In stock-market language, a block is a large batch of shares bought or sold together — 'that block of SpaceX was sold' means the whole chunk went at once. (Elsewhere in the article 'block' is the ordinary verb: investors asked a court to block, or stop, any sale.)",
+    "audio": true
+  },
+  {
+    "k": "materialize",
+    "t": "materialize",
+    "kind": "word",
+    "forms": [
+      "materialize"
+    ],
+    "text": "To actually show up, to become real — from 'material', physical stuff. Profits that fail to materialize are profits you were promised but never see. Often used exactly this way, for expected things that never arrive.",
+    "audio": true
+  },
+  {
+    "k": "fielded",
+    "t": "fielded",
+    "kind": "word",
+    "forms": [
+      "fielded"
+    ],
+    "text": "Handled or received a stream of things coming at you — borrowed from baseball, where you field balls hit your way. Rupireddy fielded dozens of congratulatory texts, meaning they kept coming and he kept responding.",
+    "audio": true
+  },
+  {
+    "k": "wired",
+    "t": "wired",
+    "kind": "word",
+    "forms": [
+      "wired"
+    ],
+    "text": "Sent money electronically straight from one bank account to another. A wire transfer is fast and hard to reverse — which is why fraudsters love it, and why 'he wired over money' to people he'd never met in person is a quiet alarm bell in this story.",
+    "audio": true
+  },
+  {
+    "k": "buzzy",
+    "t": "buzzy",
+    "kind": "word",
+    "forms": [
+      "buzzy"
+    ],
+    "text": "Generating buzz — excited chatter and hype. A buzzy company is one everyone's talking about, which is precisely what makes its shares easy to sell to people afraid of missing out.",
+    "audio": true
+  },
+  {
+    "k": "pitching",
+    "t": "pitching",
+    "kind": "word",
+    "forms": [
+      "pitching"
+    ],
+    "text": "Not baseball: to pitch something is to present it persuasively, trying to sell it. A firm pitching investment opportunities is making its best sales case — a reminder that everything Rupireddy first heard was, at bottom, a sales pitch.",
+    "audio": true
+  },
+  {
+    "k": "threshold",
+    "t": "threshold",
+    "kind": "word",
+    "forms": [
+      "threshold"
+    ],
+    "text": "The line you must cross for something to apply — originally the strip at the bottom of a doorway. An income threshold is the minimum income that qualifies you; here, the wealth line that makes someone an accredited investor.",
+    "audio": true
+  },
+  {
+    "k": "successive",
+    "t": "successive",
+    "kind": "word",
+    "forms": [
+      "successive"
+    ],
+    "text": "Following one after another in a row. Each successive funding round means each next round in the sequence — and in startup investing, each one usually came with a bigger price tag than the last.",
+    "audio": true
+  },
+  {
+    "k": "parlance",
+    "t": "parlance",
+    "kind": "word",
+    "forms": [
+      "parlance"
+    ],
+    "text": "The particular way a group talks — its insider vocabulary. 'In the funds' parlance' signals that what follows is industry-speak: calling it 'holding' shares when investors don't actually own any. Watching a group's parlance often reveals what it would rather not say plainly.",
+    "audio": true
+  },
+  {
+    "k": "oversight",
+    "t": "oversight",
+    "kind": "word",
+    "forms": [
+      "oversight"
+    ],
+    "text": "Watchful supervision — a regulator keeping an eye on things. Tricky word: an oversight can also mean an accidental mistake, nearly the opposite. Here 'regulatory oversight' is the watching kind, and SPVs get far less of it than mutual funds do.",
+    "audio": true
+  },
+  {
+    "k": "proceeds",
+    "t": "proceeds",
+    "kind": "word",
+    "forms": [
+      "proceeds"
+    ],
+    "text": "The money received from selling something — not the verb 'to proceed'. If Late Stage truly sold his shares in 2024, Rupireddy should have received the proceeds; he says he never got a cent, which is central to his complaint.",
+    "audio": true
+  },
+  {
+    "k": "discrepancy",
+    "t": "discrepancy",
+    "kind": "word",
+    "forms": [
+      "discrepancy"
+    ],
+    "text": "A mismatch between two accounts of the same fact — two numbers or stories that should agree but don't. The firm gave two different sale dates for the same shares; each new discrepancy made its story harder to believe.",
+    "audio": true
+  },
+  {
+    "k": "volatile",
+    "t": "volatile",
+    "kind": "word",
+    "forms": [
+      "volatile"
+    ],
+    "text": "Prone to sudden, sharp swings — in chemistry, a volatile liquid evaporates in a flash; in markets, a volatile stock jumps and crashes unpredictably. Newly public companies often trade volatilely at first, which can wipe out early investors' paper gains.",
+    "audio": true
+  },
+  {
+    "k": "defrauding",
+    "t": "defrauding",
+    "kind": "word",
+    "forms": [
+      "defrauding"
+    ],
+    "text": "Cheating someone out of money through deliberate deception — fraud as a verb. The executives pleaded guilty to defrauding investors by hiding markups and fees; it's a crime, not just sharp business practice.",
+    "audio": true
+  },
+  {
+    "k": "markups",
+    "t": "markups",
+    "kind": "word",
+    "forms": [
+      "markups",
+      "markup"
+    ],
+    "text": "The amount added to a price above what the seller paid — a store that buys a hoodie for $20 and sells it for $50 has a $30 markup. Markups are normal when disclosed; the Late Stage executives' crime was hiding theirs, secretly charging investors more than the shares cost.",
+    "audio": true
+  },
+  {
+    "k": "alleges",
+    "t": "alleges",
+    "kind": "word",
+    "forms": [
+      "alleges"
+    ],
+    "text": "Claims something happened without it being proven yet. Careful newspapers use 'alleges' for accusations still being fought over in court — the class-action lawsuit alleges hidden fees, meaning that's the accusation, not yet an established fact.",
+    "audio": true
+  },
+  {
+    "k": "rattled",
+    "t": "rattled",
+    "kind": "word",
+    "forms": [
+      "rattled"
+    ],
+    "text": "Shaken and unnerved — like something rattling that should sit still. Anthropic's warning rattled investors in SPVs tied to its stock: it made them suddenly nervous that their 'shares' might not be recognized.",
+    "audio": true
+  },
+  {
+    "k": "prospective",
+    "t": "prospective",
+    "kind": "word",
+    "forms": [
+      "prospective"
+    ],
+    "text": "Likely or hoped-for in the future — a prospective investor is someone who hasn't invested yet but might. From the same root as 'prospect', looking ahead. Brokerages pitching prospective investors are hunting for their next customers.",
+    "audio": true
+  },
+  {
+    "k": "tally",
+    "t": "tally",
+    "kind": "word",
+    "forms": [
+      "tally"
+    ],
+    "text": "A running count. 'No official tally of how many SPVs exist' means nobody — not even the government — is counting them, which says a lot about how unwatched this corner of finance is.",
+    "audio": true
+  },
+  {
+    "k": "repackaged",
+    "t": "repackaged",
+    "kind": "word",
+    "forms": [
+      "repackaged"
+    ],
+    "text": "Took something, wrapped it in a new form, and sold it on. Capital Truth bought a slice of a fund holding SpaceX shares, repackaged those interests, and sold them to Late Stage — each rewrap adding a layer, a fee, and more distance from the real shares.",
+    "audio": true
+  },
+  {
+    "k": "pool",
+    "t": "pool money",
+    "kind": "word",
+    "forms": [
+      "pool money"
+    ],
+    "text": "To combine many people's money into one shared pot — like classmates pooling cash for a group gift. Funds exist to pool money: many small investors together can buy what none could alone. The danger is that whoever manages the pool controls everyone's money at once.",
+    "audio": true
+  },
+  {
+    "k": "offshore",
+    "t": "offshore",
+    "kind": "word",
+    "forms": [
+      "offshore"
+    ],
+    "text": "Based in another country, usually one with looser rules, lower taxes, or more secrecy — literally 'off the shore' of your own country. An offshore firm in the Bahamas is harder for US regulators and courts to reach, which matters when investors want their money back.",
+    "audio": true
+  },
+  {
+    "k": "in-the-red",
+    "t": "in the red",
+    "kind": "phrase",
+    "forms": [
+      "in the red"
+    ],
+    "text": "Losing money. Accountants once wrote losses in red ink and profits in black, so 'in the red' means below break-even and 'in the black' means profitable. People who bought SpaceX at its IPO price are in the red because the stock now trades below what they paid.",
+    "audio": true
+  },
+  {
+    "k": "piece-of-the-pie",
+    "t": "a piece of the pie",
+    "kind": "phrase",
+    "forms": [
+      "a piece of the pie"
+    ],
+    "text": "A share of something valuable being divided up — everyone wants their slice. Investors 'desperate for a piece of the pie' wanted in on startup riches; the desperation is what SPV sellers count on.",
+    "audio": true
+  },
+  {
+    "k": "cash-in",
+    "t": "cash in",
+    "kind": "phrase",
+    "forms": [
+      "cash in",
+      "Cash In"
+    ],
+    "text": "To finally convert an investment into actual money — to collect your winnings. Investors waiting for lockups to end are waiting to cash in; the title's cruel twist is that these investors' shares vanished before they could.",
+    "audio": true
+  },
+  {
+    "k": "scores-of",
+    "t": "scores of",
+    "kind": "phrase",
+    "forms": [
+      "scores of"
+    ],
+    "text": "Lots of — a score is an old word for twenty (Lincoln's 'four score and seven years ago'), so scores of investors means many dozens of them. A staple of news writing.",
+    "audio": true
+  },
+  {
+    "k": "far-removed",
+    "t": "far removed",
+    "kind": "phrase",
+    "forms": [
+      "far removed"
+    ],
+    "text": "Separated by many steps or a great distance from something. The SpaceX stock was far removed from Rupireddy's account — several funds and firms stood between him and any real shares, and he admits he didn't grasp how many.",
+    "audio": true
+  }
+]
