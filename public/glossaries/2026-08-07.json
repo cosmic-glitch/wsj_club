@@ -1,0 +1,689 @@
+[
+  {
+    "k": "rancour",
+    "t": "rancour",
+    "kind": "vocab",
+    "pron": "RANG-ker",
+    "forms": [
+      "rancour"
+    ],
+    "text": "Rancour is bitter resentment that doesn't fade — a grudge that keeps simmering long after the original fight. Three years after the 2023 strikes, Hollywood's rancour toward AI is still strong enough to fuel death threats over a cartoon. You'll also see the American spelling \"rancor\"; The Economist is British, so it writes \"rancour\".",
+    "audio": true
+  },
+  {
+    "k": "deluge",
+    "t": "deluge",
+    "kind": "vocab",
+    "pron": "DEL-yooj",
+    "forms": [
+      "deluge"
+    ],
+    "text": "A deluge is literally a great flood, and figuratively an overwhelming rush of something arriving all at once. The fear here is that AI will let anyone churn out video in minutes, flooding screens with more low-quality content than viewers can sort through.",
+    "audio": true
+  },
+  {
+    "k": "encroachment",
+    "t": "encroachment",
+    "kind": "vocab",
+    "pron": "en-KROHCH-ment",
+    "forms": [
+      "encroachment"
+    ],
+    "text": "Encroachment is a gradual, step-by-step advance onto territory that belongs to someone else — not a sudden invasion. Amazon and Google keep edging into Hollywood's turf: owning studios, running streaming platforms, supplying the computing, funding the AI tools. Each step looks small; together they add up.",
+    "audio": true
+  },
+  {
+    "k": "tinseltown",
+    "t": "Tinseltown",
+    "kind": "name",
+    "forms": [
+      "Tinseltown"
+    ],
+    "text": "Tinseltown is a nickname for Hollywood. Tinsel is the glittery decoration you hang on a Christmas tree — shiny but flimsy — so the name captures both Hollywood's glamour and a hint that the sparkle is fake.",
+    "audio": true
+  },
+  {
+    "k": "rail-against",
+    "t": "rail against",
+    "kind": "phrase",
+    "forms": [
+      "rail against",
+      "railed against"
+    ],
+    "text": "To rail against something is to protest it loudly and bitterly, going on at length about how wrong it is. Nothing to do with trains — this \"rail\" comes from an old word for scolding. Hollywood figures have railed against AI; people once railed against cars.",
+    "audio": true
+  },
+  {
+    "k": "grievances",
+    "t": "grievance",
+    "kind": "word",
+    "forms": [
+      "grievances"
+    ],
+    "text": "A grievance is a formal complaint about unfair treatment — the word unions and workers use when listing what they're angry about. Fear of AI was one of the grievances behind the 2023 Hollywood strikes.",
+    "audio": true
+  },
+  {
+    "k": "hotshots",
+    "t": "hotshot",
+    "kind": "word",
+    "forms": [
+      "hotshots"
+    ],
+    "text": "A hotshot is a flashy, successful big name — someone at the top of their field, often with a whiff of showing off. Here it means Hollywood's star directors and producers.",
+    "audio": true
+  },
+  {
+    "k": "prospect",
+    "t": "prospect",
+    "kind": "word",
+    "forms": [
+      "prospect"
+    ],
+    "text": "Here a prospect is the possibility of something happening in the future — \"the prospect of generative AI producing scripts\" means the mere possibility of it. Not the gold-mining sense of searching for treasure, though both come from the Latin for \"looking ahead\".",
+    "audio": true
+  },
+  {
+    "k": "replicas",
+    "t": "replica",
+    "kind": "word",
+    "forms": [
+      "replicas"
+    ],
+    "text": "A replica is an exact copy of something. The strikes were partly about studios creating digital replicas of actors — computer-generated copies of their faces and voices that could perform without them.",
+    "audio": true
+  },
+  {
+    "k": "adaptation",
+    "t": "adaptation",
+    "kind": "word",
+    "forms": [
+      "adaptation"
+    ],
+    "text": "In film, an adaptation is a story remade for the screen from another form — a book, play or older movie. Christopher Nolan's new blockbuster is an adaptation of \"The Odyssey\", Homer's epic poem.",
+    "audio": true
+  },
+  {
+    "k": "the-odyssey",
+    "t": "The Odyssey",
+    "kind": "name",
+    "forms": [
+      "The Odyssey"
+    ],
+    "text": "The Odyssey is an ancient Greek epic poem, roughly 2,700 years old and credited to Homer. It follows the hero Odysseus on his ten-year journey home from the Trojan War — one of the foundational stories of Western literature, and now a Christopher Nolan blockbuster.",
+    "audio": true
+  },
+  {
+    "k": "trojan-horse",
+    "t": "Trojan Horse",
+    "kind": "name",
+    "forms": [
+      "Trojan Horse"
+    ],
+    "text": "In Greek myth, the Greeks ended the Trojan War by leaving a giant wooden horse as a \"gift\"; Troy wheeled it inside its walls, and the soldiers hidden in its belly opened the gates. A Trojan Horse now means anything welcomed in that carries hidden danger — Nolan's warning about AI's friendly-looking arrival.",
+    "audio": true
+  },
+  {
+    "k": "championing",
+    "t": "champion (verb)",
+    "kind": "word",
+    "forms": [
+      "championing"
+    ],
+    "text": "To champion a cause is to fight for it and promote it publicly — the way a knight once fought as someone's champion. It has nothing to do with winning a title here: \"those championing AI\" are its loudest promoters.",
+    "audio": true
+  },
+  {
+    "k": "scepticism",
+    "t": "scepticism",
+    "kind": "word",
+    "forms": [
+      "scepticism"
+    ],
+    "text": "Scepticism is a doubting attitude — refusing to accept claims until you've seen the evidence. This is the British spelling; Americans write \"skepticism\". Nolan thinks AI boosters' motives deserve exactly this treatment.",
+    "audio": true
+  },
+  {
+    "k": "fleeting",
+    "t": "fleeting",
+    "kind": "word",
+    "forms": [
+      "fleeting"
+    ],
+    "text": "Fleeting means lasting only a very short time — gone almost as soon as it arrives. The panic over Tilly Norwood, the AI-generated actor, was fleeting: it flared up and quickly died down.",
+    "audio": true
+  },
+  {
+    "k": "red-carpet",
+    "t": "the red carpet",
+    "kind": "phrase",
+    "forms": [
+      "red carpet"
+    ],
+    "text": "The red carpet is the walkway stars parade down at premieres and award shows. Here it stands for star acting jobs themselves: saying AI won't \"replace humans on the red carpet\" means real actors aren't losing the spotlight yet.",
+    "audio": true
+  },
+  {
+    "k": "coy",
+    "t": "coy",
+    "kind": "word",
+    "forms": [
+      "coy"
+    ],
+    "text": "Coy means deliberately cagey about revealing something — playing secretive. Studios taking a \"don't ask, don't tell\" approach are being coy about their AI use; film-makers who talk openly about it are \"less coy\".",
+    "audio": true
+  },
+  {
+    "k": "superimpose",
+    "t": "superimpose",
+    "kind": "word",
+    "forms": [
+      "superimpose"
+    ],
+    "text": "To superimpose is to lay one image on top of another so they combine into a single picture. Director Jon Erwin used AI to superimpose raging water onto footage of a dry trench — the actors were never near real danger.",
+    "audio": true
+  },
+  {
+    "k": "torrent",
+    "t": "torrent",
+    "kind": "word",
+    "forms": [
+      "torrent"
+    ],
+    "text": "A torrent is a violent, rushing flood of water. Erwin's AI added a \"raging torrent\" to a dry trench. The word also gets used figuratively — a torrent of abuse, a torrent of questions — for anything that pours out overwhelmingly fast.",
+    "audio": true
+  },
+  {
+    "k": "sparing",
+    "t": "spare (verb)",
+    "kind": "word",
+    "forms": [
+      "sparing"
+    ],
+    "text": "To spare someone something is to save them from having to endure it. Superimposing the flood digitally spared the actors a dangerous stunt — they never had to face real rushing water.",
+    "audio": true
+  },
+  {
+    "k": "footage",
+    "t": "footage",
+    "kind": "word",
+    "forms": [
+      "footage"
+    ],
+    "text": "Footage is recorded film or video material. The word is a fossil: movie film was once measured in feet of physical filmstrip, so the amount you shot was your \"footage\".",
+    "audio": true
+  },
+  {
+    "k": "your-correspondent",
+    "t": "your correspondent",
+    "kind": "phrase",
+    "forms": [
+      "your correspondent"
+    ],
+    "text": "\"Your correspondent\" is The Economist's old-fashioned way of saying \"the reporter writing this article\". The magazine publishes articles without bylines (no author names), so writers refer to themselves this way instead of saying \"I\".",
+    "audio": true
+  },
+  {
+    "k": "debut",
+    "t": "debut",
+    "kind": "word",
+    "forms": [
+      "debut"
+    ],
+    "text": "A debut (from French, pronounced day-BYOO) is a first public appearance or first attempt. A \"directorial debut\" is the first film someone directs — here, jokingly, the reporter's ten-second AI clip.",
+    "audio": true
+  },
+  {
+    "k": "takes",
+    "t": "take (in filming)",
+    "kind": "word",
+    "forms": [
+      "takes"
+    ],
+    "text": "In film-making, a take is one recorded attempt at a scene; directors often shoot many takes and keep the best. The AI clip took four minutes to generate, but a professional version would need more takes — more attempts — to get right.",
+    "audio": true
+  },
+  {
+    "k": "on-location",
+    "t": "on location",
+    "kind": "phrase",
+    "forms": [
+      "on location"
+    ],
+    "text": "Shooting on location means filming in a real place — a street, a forest, an actual city — instead of on a studio set. It usually looks better and costs more: the ten-second arrest scene would have taken half a day to shoot on location.",
+    "audio": true
+  },
+  {
+    "k": "upend",
+    "t": "upend",
+    "kind": "word",
+    "forms": [
+      "upend"
+    ],
+    "text": "To upend something is to flip it upside down — and figuratively, to overturn a whole system or way of doing things. Erwin hopes AI will upend Hollywood's economics: completely change how much films cost and what gets made.",
+    "audio": true
+  },
+  {
+    "k": "risk-averse",
+    "t": "risk-averse",
+    "kind": "word",
+    "forms": [
+      "risk-averse"
+    ],
+    "text": "Risk-averse means preferring the safe, known option over a gamble. When a film costs hundreds of millions, studios get risk-averse and greenlight sequels to proven hits instead of betting on original ideas. See today's concept card for the full idea.",
+    "audio": true
+  },
+  {
+    "k": "slop",
+    "t": "slop",
+    "kind": "word",
+    "forms": [
+      "slop"
+    ],
+    "text": "Slop originally meant the watery waste fed to pigs. It has become the standard insult for cheap, mass-produced AI content — videos and images churned out with no care or craft, made to fill feeds rather than to be good.",
+    "audio": true
+  },
+  {
+    "k": "crassly",
+    "t": "crass",
+    "kind": "word",
+    "forms": [
+      "crassly"
+    ],
+    "text": "Crass means crude and tasteless, with no subtlety or care for quality. \"Crassly titillating\" micro-dramas grab attention in the cheapest, most obvious ways.",
+    "audio": true
+  },
+  {
+    "k": "titillating",
+    "t": "titillating",
+    "kind": "word",
+    "forms": [
+      "titillating"
+    ],
+    "text": "Titillating describes content designed to excite or thrill in a cheap, mildly scandalous way — grabbing attention through shock and flirtation rather than quality. It's usually a criticism, as it is here.",
+    "audio": true
+  },
+  {
+    "k": "cautionary-tale",
+    "t": "cautionary tale",
+    "kind": "phrase",
+    "forms": [
+      "cautionary tale"
+    ],
+    "text": "A cautionary tale is a story held up as a warning: look what happened to them, don't let it happen to you. China's flood of cheap AI micro-dramas serves as a cautionary tale for what Hollywood could become.",
+    "audio": true
+  },
+  {
+    "k": "sanguine",
+    "t": "sanguine",
+    "kind": "word",
+    "forms": [
+      "sanguine"
+    ],
+    "text": "Sanguine means cheerfully optimistic and unworried, especially when others are anxious. TV producer Evan Shapiro is sanguine about the flood of AI junk — he's confident viewers will still seek out quality. From the Latin for blood: medieval doctors thought blood-dominated people were the cheerful ones.",
+    "audio": true
+  },
+  {
+    "k": "harnessing",
+    "t": "harness (verb)",
+    "kind": "word",
+    "forms": [
+      "harnessing"
+    ],
+    "text": "To harness something is to bring it under control and put it to productive use, the way a harness turns a horse's raw power into pulling a plow. Studios harnessing AI means putting it to work for them.",
+    "audio": true
+  },
+  {
+    "k": "perusing",
+    "t": "peruse",
+    "kind": "word",
+    "forms": [
+      "perusing"
+    ],
+    "text": "To peruse is to read or browse through something. Fun fact: it originally meant to read carefully and thoroughly, but it's now mostly used for casual scrolling and browsing — as with teenagers perusing YouTube.",
+    "audio": true
+  },
+  {
+    "k": "spurring",
+    "t": "spur (verb)",
+    "kind": "word",
+    "forms": [
+      "spurring"
+    ],
+    "text": "To spur is to prod into action, from the spike on a rider's boot that urges a horse forward. Losing viewers to YouTube is spurring studios to repackage their shows for phones.",
+    "audio": true
+  },
+  {
+    "k": "fiddly",
+    "t": "fiddly",
+    "kind": "word",
+    "forms": [
+      "fiddly"
+    ],
+    "text": "Fiddly is a British word for a task that's awkward and full of small, fussy details — like threading a needle or untangling earbuds. Converting horizontal video to vertical is fiddly work, which is why AI helps.",
+    "audio": true
+  },
+  {
+    "k": "change-their-tune",
+    "t": "change their tune",
+    "kind": "phrase",
+    "forms": [
+      "change their tune"
+    ],
+    "text": "To change your tune is to switch to the opposite opinion or attitude, like a musician abruptly playing a different song. Stars who denounced AI during the strikes are now changing their tune and exploring what it can do for them.",
+    "audio": true
+  },
+  {
+    "k": "a-listers",
+    "t": "A-lister",
+    "kind": "word",
+    "forms": [
+      "A-listers"
+    ],
+    "text": "A-listers are the most famous, most in-demand celebrities — the top tier, as if fame were sorted into lists from A downward. Creative Artists Agency represents many of them.",
+    "audio": true
+  },
+  {
+    "k": "likenesses",
+    "t": "likeness",
+    "kind": "word",
+    "forms": [
+      "likenesses"
+    ],
+    "text": "Your likeness is your visual image — what you look like. Actors worried about protecting their likenesses and voices: stopping AI companies from copying their faces and speech without permission.",
+    "audio": true
+  },
+  {
+    "k": "compensation",
+    "t": "compensation",
+    "kind": "word",
+    "forms": [
+      "compensation"
+    ],
+    "text": "Compensation is payment — for work done, or to make up for a harm or loss. It's the third of the actors' \"three Cs\": if AI uses your likeness, you get paid for it.",
+    "audio": true
+  },
+  {
+    "k": "model",
+    "t": "model (in AI)",
+    "kind": "word",
+    "forms": [
+      "model",
+      "models",
+      "model-makers"
+    ],
+    "text": "In AI, a model is the trained system itself — the program that generates text, images or video, like Seedance, Sora or Veo. Nothing to do with fashion models or toy replicas. \"Model-makers\" are the companies that build these systems.",
+    "audio": true
+  },
+  {
+    "k": "infringement",
+    "t": "infringement",
+    "kind": "word",
+    "forms": [
+      "infringement"
+    ],
+    "text": "Infringement is violating a law or someone's rights. Copyright infringement means using creative work you don't own without permission — the studios' accusation when Bytedance's tool generated a realistic Tom Cruise.",
+    "audio": true
+  },
+  {
+    "k": "intellectual-property",
+    "t": "intellectual property",
+    "kind": "name",
+    "forms": [
+      "intellectual property"
+    ],
+    "text": "Intellectual property (IP) is the legal idea that creations of the mind — characters, stories, songs, inventions, brand names — can be owned like physical property. Mickey Mouse is Disney's intellectual property, which is why using him requires a licence.",
+    "audio": true
+  },
+  {
+    "k": "license",
+    "t": "license (verb)",
+    "kind": "word",
+    "forms": [
+      "license"
+    ],
+    "text": "To license something is to grant formal permission to use what you own, usually in exchange for money. Disney's collapsed deal would have licensed characters like Mickey Mouse to OpenAI — renting them out under agreed rules, not selling them.",
+    "audio": true
+  },
+  {
+    "k": "dissemination",
+    "t": "dissemination",
+    "kind": "word",
+    "forms": [
+      "dissemination"
+    ],
+    "text": "Dissemination is the spreading of something far and wide — from the Latin for scattering seed. Big tech's involvement speeds the dissemination of AI through the film industry.",
+    "audio": true
+  },
+  {
+    "k": "crops-up",
+    "t": "crop up",
+    "kind": "phrase",
+    "forms": [
+      "crops up"
+    ],
+    "text": "To crop up is to appear or come up unexpectedly, like plants sprouting where you didn't sow them. Amazon's name crops up surprisingly often in this story — it keeps appearing wherever you look.",
+    "audio": true
+  },
+  {
+    "k": "exerts",
+    "t": "exert",
+    "kind": "word",
+    "forms": [
+      "exerts"
+    ],
+    "text": "To exert is to apply force or influence. Amazon exerts influence through Prime Video and AWS — it doesn't command Hollywood directly, but its weight is felt everywhere.",
+    "audio": true
+  },
+  {
+    "k": "backbone",
+    "t": "backbone",
+    "kind": "word",
+    "forms": [
+      "backbone"
+    ],
+    "text": "A backbone is figuratively the essential support structure holding something up, as the spine holds up the body. Calling AWS the \"invisible backbone\" of entertainment means the industry quietly runs on Amazon's computers.",
+    "audio": true
+  },
+  {
+    "k": "cloud-infrastructure",
+    "t": "cloud infrastructure",
+    "kind": "name",
+    "forms": [
+      "cloud infrastructure"
+    ],
+    "text": "Cloud infrastructure means the huge remote data centres full of computers that companies rent over the internet instead of owning their own. Amazon Web Services (AWS) rents this computing power to many of the big studios.",
+    "audio": true
+  },
+  {
+    "k": "latency",
+    "t": "latency",
+    "kind": "word",
+    "forms": [
+      "latency"
+    ],
+    "text": "Latency is the delay between an action and its result — the lag. Low latency means nearly instant: Fox Sports broadcasts get converted to vertical phone format almost in real time.",
+    "audio": true
+  },
+  {
+    "k": "ill-fated",
+    "t": "ill-fated",
+    "kind": "word",
+    "forms": [
+      "ill-fated"
+    ],
+    "text": "Ill-fated means doomed to end badly, as if fate itself were against it. The ill-fated \"Punky Duck\" series was abandoned after its director received death threats.",
+    "audio": true
+  },
+  {
+    "k": "stem",
+    "t": "stem from",
+    "kind": "phrase",
+    "forms": [
+      "stem in part from",
+      "stem"
+    ],
+    "text": "To stem from something is to have it as your origin or cause, the way a flower grows from its stem. Amazon's AI enthusiasm may stem in part from wanting its data-centre investment to pay off.",
+    "audio": true
+  },
+  {
+    "k": "colossal",
+    "t": "colossal",
+    "kind": "word",
+    "forms": [
+      "colossal"
+    ],
+    "text": "Colossal means gigantic — from the Colossus of Rhodes, a hundred-foot bronze statue of the ancient world. Amazon's colossal investment in AI data centres runs to tens of billions of dollars.",
+    "audio": true
+  },
+  {
+    "k": "data-centres",
+    "t": "data centre",
+    "kind": "name",
+    "forms": [
+      "data centres"
+    ],
+    "text": "A data centre (British spelling of \"center\") is a warehouse packed with thousands of computer servers. They power the cloud and train AI models — and because AI video is so computationally hungry, companies like Amazon and Google have spent fortunes building them.",
+    "audio": true
+  },
+  {
+    "k": "hold-outs",
+    "t": "hold-out",
+    "kind": "word",
+    "forms": [
+      "hold-outs"
+    ],
+    "text": "A hold-out is someone who keeps refusing after most others have given in or gone along. Even if AI becomes standard in film-making, there will be hold-outs who never touch it.",
+    "audio": true
+  },
+  {
+    "k": "purists",
+    "t": "purist",
+    "kind": "word",
+    "forms": [
+      "purists"
+    ],
+    "text": "A purist insists on doing things the traditional, original way and rejects shortcuts or new methods. Christopher Nolan is a film purist — he still shoots on 35mm film when nearly everyone else has gone digital.",
+    "audio": true
+  },
+  {
+    "k": "craft",
+    "t": "craft",
+    "kind": "word",
+    "forms": [
+      "craft"
+    ],
+    "text": "Here craft means a skilled trade — an occupation requiring practiced, expert skill, like carpentry or film-making. When film-makers saw digital cameras as \"a threat to their craft\", they meant a threat to their hard-earned skills, not to any boat.",
+    "audio": true
+  },
+  {
+    "k": "likened",
+    "t": "liken",
+    "kind": "word",
+    "forms": [
+      "likened"
+    ],
+    "text": "To liken one thing to another is to compare them, to say they're alike. George Lucas likened AI's opponents to the people who once railed against cars.",
+    "audio": true
+  },
+  {
+    "k": "franchise",
+    "t": "franchise",
+    "kind": "word",
+    "forms": [
+      "franchise"
+    ],
+    "text": "In entertainment, a franchise is a whole series of connected films, shows and products built on one brand — Star Wars, Marvel, Harry Potter. (The word also covers licensed chain restaurants like a McDonald's franchise; both senses mean a valuable brand extended under licence.)",
+    "audio": true
+  },
+  {
+    "k": "generative-ai",
+    "t": "generative AI",
+    "kind": "name",
+    "forms": [
+      "generative AI"
+    ],
+    "text": "Generative AI is the kind of artificial intelligence that creates new content — text, images, video, music — rather than just analysing existing data. ChatGPT, Sora and Veo are all generative AI. It's the specific technology Hollywood has been fighting over.",
+    "audio": true
+  },
+  {
+    "k": "mgm",
+    "t": "MGM",
+    "kind": "name",
+    "forms": [
+      "MGM"
+    ],
+    "text": "MGM (Metro-Goldwyn-Mayer) is one of Hollywood's most storied studios — the one with the roaring lion logo, maker of classics from \"The Wizard of Oz\" to the James Bond films. Amazon bought it in 2022, which is why the article calls it Amazon MGM.",
+    "audio": true
+  },
+  {
+    "k": "strikes",
+    "t": "strike (labor)",
+    "kind": "word",
+    "forms": [
+      "strikes"
+    ],
+    "text": "A strike is when workers stop working together, as a group, to force their employer to meet demands. In 2023 Hollywood's writers and actors both went on strike for months — and fear of AI taking their work was one of the key grievances.",
+    "audio": true
+  },
+  {
+    "k": "micro-dramas",
+    "t": "micro-dramas",
+    "kind": "name",
+    "forms": [
+      "micro-dramas"
+    ],
+    "text": "Micro-dramas are ultra-short soap-opera episodes — often a minute or two each, shot vertically for phones — that boomed in China, where viewers pay per episode. They're cheap, addictive and increasingly AI-made, which is why the article treats them as a warning.",
+    "audio": true
+  },
+  {
+    "k": "adoption",
+    "t": "adoption",
+    "kind": "word",
+    "forms": [
+      "adoption"
+    ],
+    "text": "Here adoption means taking up and starting to use something new — the adoption of AI tools means film-makers actually putting them to work. Nothing to do with adopting a child; tech writers use this word constantly.",
+    "audio": true
+  },
+  {
+    "k": "body",
+    "t": "body (organization)",
+    "kind": "word",
+    "forms": [
+      "industry body"
+    ],
+    "text": "A body here is an organized group — an official organization, as in a \"governing body\" or \"student body\". The Motion Picture Association is an industry body: an organization that represents Hollywood's big studios.",
+    "audio": true
+  },
+  {
+    "k": "alleged",
+    "t": "alleged",
+    "kind": "word",
+    "forms": [
+      "alleged"
+    ],
+    "text": "Alleged means claimed but not yet proven. Careful writers say \"alleged copyright infringement\" because the accusation hasn't been tested in court — the word keeps the writer neutral about whether it's true.",
+    "audio": true
+  },
+  {
+    "k": "blockbuster",
+    "t": "blockbuster",
+    "kind": "word",
+    "forms": [
+      "blockbuster"
+    ],
+    "text": "A blockbuster is a massive hit movie — the word originally named a WWII bomb big enough to flatten a city block. Nolan's adaptation of \"The Odyssey\" is a blockbuster in scale: enormous budget, enormous audience.",
+    "audio": true
+  },
+  {
+    "k": "35mm",
+    "t": "35mm film",
+    "kind": "name",
+    "forms": [
+      "35mm"
+    ],
+    "text": "35mm is traditional photographic film, 35 millimetres wide — the standard way movies were shot for about a century before digital cameras. Purists like Christopher Nolan still prefer it; in the 1990s a 35mm camera could cost $300,000.",
+    "audio": true
+  }
+]

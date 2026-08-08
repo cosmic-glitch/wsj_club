@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-07",
+  "title": "Hollywood is entering its AI era",
+  "articleUrl": "https://www.economist.com/business/2026/08/04/hollywood-is-entering-its-ai-era",
+  "articlePageUrl": "/articles/2026-08-07.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "rancour",
+      "partOfSpeech": "noun",
+      "pronunciation": "RANG-ker",
+      "articleQuote": "Rancour over the prospect of generative AI being used to produce scripts and create digital replicas of actors was among the grievances that led to strikes in 2023.",
+      "meaning": "**Rancour** is bitter resentment that doesn't fade — not a flash of anger but a grudge that keeps simmering long after the original fight. That's the mood the article opens on: three years after the 2023 strikes, Hollywood's bitterness toward AI is still strong enough that one director received death threats just for making an AI-supported cartoon. (You'll also see the American spelling *rancor* — same word; The Economist is British, so it writes *rancour*.)",
+      "examples": [
+        "Two seasons after the championship was decided by a blown call, the rancour between the two schools still shows up at every game.",
+        "They patched up the group-chat argument quickly, before it could harden into real rancour."
+      ]
+    },
+    {
+      "word": "deluge",
+      "partOfSpeech": "noun",
+      "pronunciation": "DEL-yooj",
+      "articleQuote": "Others fear a deluge of AI-generated slop.",
+      "meaning": "A **deluge** is literally a great flood — and figuratively, an overwhelming rush of something arriving all at once, far faster than anyone can deal with it. Critics in the article use it as a warning: if AI lets anyone churn out video in minutes, screens could be flooded with low-quality \"slop\" that drowns out the good stuff. News writers reach for this word constantly: a *deluge* of emails, applications, complaints.",
+      "examples": [
+        "The moment the trailer dropped, the studio's account got a deluge of comments demanding a release date.",
+        "After the snow day was announced, the principal faced a deluge of questions about whether the game was still on."
+      ]
+    },
+    {
+      "word": "encroachment",
+      "partOfSpeech": "noun",
+      "pronunciation": "en-KROHCH-ment",
+      "articleQuote": "Big tech's encroachment on Hollywood may help to encourage the dissemination of AI through the film industry.",
+      "meaning": "**Encroachment** is a gradual move onto territory that belongs to someone else — not a sudden invasion but a slow, step-by-step advance (the verb is *encroach*). Here it describes how Amazon and Google keep edging into Hollywood's turf: owning a studio, running the streaming platforms, supplying the cloud computers, funding AI tools. Each step looks small; together they add up to real control. The word turns up everywhere serious writing does — encroachment on someone's rights, on a habitat, on a rival's market.",
+      "examples": [
+        "The soccer team complained about the marching band's slow encroachment on their half of the practice field.",
+        "He saw the new Sunday practices as an encroachment on the one free day he had left."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Risk aversion",
+      "articleQuote": "huge costs lead to risk-averse choices such as the creation of endless sequels",
+      "meaning": "**Risk aversion** is one of the big ideas in **economics**. A risk-averse person prefers a sure thing over a gamble, even when the gamble's average payoff is just as good or better. Offered a guaranteed $50 or a coin flip for $120, many people take the $50 — the certainty itself is worth something to them.\n\nThe bigger the stakes, the stronger the pull. A modern blockbuster can cost $200 million or more, so a studio betting that much behaves the way you would with your life savings on the line: it picks the safest option available. That is why Hollywood makes \"endless sequels\" — the seventh installment of a proven franchise is a known quantity, while an original script from an unknown writer is a gamble. Director Jon Erwin's hope in the article runs the same logic in reverse: if AI cuts the cost of making a film, the stakes shrink, and studios can afford to take more creative risks.\n\nDon't confuse this with *loss aversion*, which we covered earlier: loss aversion says a loss hurts more than an equal gain feels good; risk aversion says you'll give up some expected value just to avoid uncertainty. You can spot risk aversion wherever stakes are high — writing a safe, formula essay on a big exam instead of the bold one you actually wanted to write, or a coach sitting on a one-goal lead instead of attacking."
+    },
+    {
+      "name": "Luddites",
+      "articleQuote": "established film-makers saw digital technology as a threat to their craft",
+      "meaning": "**Luddite** is a word from **history** that you'll meet in articles for the rest of your life. Between 1811 and 1816, skilled English textile workers — calling themselves followers of a possibly invented leader named \"Ned Ludd\" — smashed the new mechanized looms that were replacing their well-paid craft work. They weren't fools who hated progress; the machines really were taking their jobs. But the machines won anyway, and *Luddite* came to mean anyone who resists a new technology.\n\nThe article shows the same pattern playing out in Hollywood twice. In the 1990s, Jon Erwin shot on a $3,000 digital camera instead of a $300,000 35mm film camera, and established film-makers called digital a threat to their craft; today it's simply how movies are made. Now AI is the new machine on the lot: one director says he'd \"snap my fingers\" to make it disappear, while George Lucas compares AI's opponents to people who once railed against cars for being more dangerous than horses and carts.\n\nThe pattern runs: a new tool arrives, the people whose skills it threatens fight it, and the tool becomes commonplace anyway. But keep both halves of the story. The resisters usually lose the fight over the technology, yet they're often right that jobs will change or disappear — the hand-loom weavers genuinely ended up poorer. That's why today's actors, instead of smashing looms, are negotiating for the \"three Cs\": consent, controls and compensation."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, which of these did Netflix actually do?",
+      "options": [
+        "Banned AI from all of its productions after the 2023 strikes",
+        "Acquired an AI production company led by Ben Affleck for almost $600m",
+        "Cast Tilly Norwood, an AI-generated actor, in a leading role",
+        "Sued Bytedance over the Tom Cruise rooftop video"
+      ],
+      "answerIndex": 1,
+      "explanation": "Netflix bought InterPositive, Ben Affleck's AI production company, for almost $600m in March — and said it used AI in about 300 titles this year."
+    },
+    {
+      "question": "In the sentence \"Rancour over the prospect of generative AI... was among the grievances that led to strikes,\" rancour most nearly means:",
+      "options": [
+        "Deep, bitter resentment",
+        "Sudden, short-lived panic",
+        "Open curiosity",
+        "Quiet disappointment"
+      ],
+      "answerIndex": 0,
+      "explanation": "Rancour is long-lasting bitterness — the kind of grudge that was still fueling death threats years after the strikes."
+    },
+    {
+      "question": "The article says Hollywood's huge costs lead to \"risk-averse choices.\" Which of these is the best example of risk aversion?",
+      "options": [
+        "A director stays up late experimenting with new AI tools",
+        "A studio sends a legal letter demanding a rival stop copying its characters",
+        "A studio greenlights a seventh sequel instead of an original script",
+        "An agency negotiates consent and compensation for its clients"
+      ],
+      "answerIndex": 2,
+      "explanation": "Risk aversion means preferring the safe, known bet — a proven franchise's sequel — over a gamble on something original, especially when $200m is on the line."
+    },
+    {
+      "question": "Why does the article suggest Amazon is so keen to promote AI in Hollywood?",
+      "options": [
+        "It wants to shut down rival studios like Disney and Paramount",
+        "AI video tools need huge computing power, helping Amazon earn a return on its data centres",
+        "It is legally required to support AI under the strike settlement",
+        "It plans to replace Prime Video with an AI-only service"
+      ],
+      "answerIndex": 1,
+      "explanation": "Video AI is computationally hungry, and Amazon has spent colossal sums on AI data centres — Hollywood adopting AI helps that investment pay off through AWS."
+    },
+    {
+      "question": "George Lucas compares opponents of generative AI to people who once railed against cars. What point is he making?",
+      "options": [
+        "Cars proved more dangerous than horses, and AI will too",
+        "Hollywood should regulate AI the way early cars were regulated",
+        "Only famous directors have the power to stop new technology",
+        "Resistance to a transformative technology tends to fade, because the technology arrives anyway"
+      ],
+      "answerIndex": 3,
+      "explanation": "His comparison is the classic Luddite pattern: people fight a disruptive new technology, but \"it's the future\" — it becomes commonplace regardless."
+    }
+  ]
+}
