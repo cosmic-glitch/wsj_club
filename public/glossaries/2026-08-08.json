@@ -1,0 +1,660 @@
+[
+  {
+    "k": "pretext",
+    "t": "pretext",
+    "kind": "vocab",
+    "pron": "PREE-tekst",
+    "forms": [
+      "pretexts",
+      "pretext"
+    ],
+    "text": "A pretext is a reason you give for doing something that sounds acceptable but isn't the real reason — a cover story or a technical excuse. The article says the new law hands workers more pretexts on which to sue: more official grounds a claim can be hung on, whatever the filer's true motive.",
+    "audio": true
+  },
+  {
+    "k": "grievance",
+    "t": "grievance",
+    "kind": "vocab",
+    "pron": "GREE-vunss",
+    "forms": [
+      "grievance",
+      "grievances"
+    ],
+    "text": "A grievance is a complaint that you've been treated unfairly, especially one serious enough to take to someone in authority. It's the raw material of every case here: a worker types a vague grievance into a chatbot and gets back a polished legal claim — one NHS employee's case packed in 67 of them.",
+    "audio": true
+  },
+  {
+    "k": "exasperation",
+    "t": "exasperation",
+    "kind": "vocab",
+    "pron": "ig-zas-puh-RAY-shun",
+    "forms": [
+      "exasperation"
+    ],
+    "text": "Exasperation is the worn-out, end-of-your-patience form of annoyance — what you feel when the same problem keeps coming back no matter what you do. Britain's employment judges are showing it in their rulings as AI claims hundreds of pages long, citing laws that don't exist, keep landing on their desks.",
+    "audio": true
+  },
+  {
+    "k": "interim-relief",
+    "t": "interim relief",
+    "kind": "name",
+    "forms": [
+      "interim relief"
+    ],
+    "text": "An emergency measure in British employment law: while a case waits for its full hearing, a judge can order the firm to take a fired worker back, or at least keep paying their wages. \"Interim\" means \"in the meantime.\" Once about 20 applications a year were filed across all of Britain; now it's about 20 a month in each regional office.",
+    "audio": true
+  },
+  {
+    "k": "tribunal",
+    "t": "tribunal",
+    "kind": "name",
+    "forms": [
+      "tribunal",
+      "tribunals"
+    ],
+    "text": "A tribunal is a special court set up to decide one particular kind of dispute. Britain's employment tribunals resolve fights between workers and employers — and they were deliberately designed to be cheap, quick and open to ordinary people, which is exactly what makes them easy to flood.",
+    "audio": true
+  },
+  {
+    "k": "provision",
+    "t": "provision",
+    "kind": "word",
+    "forms": [
+      "provision",
+      "provisions"
+    ],
+    "text": "In a law or contract, a provision is one specific clause or rule inside the larger document — not \"supplies,\" the other meaning. Interim relief is a provision of employment law: one small section that AI has learned to aim at.",
+    "audio": true
+  },
+  {
+    "k": "reinstate",
+    "t": "reinstate",
+    "kind": "word",
+    "forms": [
+      "reinstate"
+    ],
+    "text": "To reinstate someone is to put them back in the position they held before — here, a judge ordering a company to re-hire a worker it fired while the case is decided.",
+    "audio": true
+  },
+  {
+    "k": "whistleblower",
+    "t": "whistleblower",
+    "kind": "name",
+    "forms": [
+      "whistleblower"
+    ],
+    "text": "A whistleblower is an insider who reports wrongdoing at their own organization — unsafe practices, fraud, broken rules. Laws in many countries protect whistleblowers from being fired for speaking up, which is why interim relief exists for them.",
+    "audio": true
+  },
+  {
+    "k": "trade-union",
+    "t": "trade union",
+    "kind": "name",
+    "forms": [
+      "trade-union"
+    ],
+    "text": "A trade union is an organization of workers who band together to negotiate with employers over pay and conditions. Union officials can be thorns in a company's side, so the law gives them extra protection against being fired for their union work.",
+    "audio": true
+  },
+  {
+    "k": "lodged",
+    "t": "lodged",
+    "kind": "word",
+    "forms": [
+      "lodged"
+    ],
+    "text": "Here \"lodged\" means officially filed or submitted — you lodge a complaint or an application with a court. Nothing to do with cabins or getting stuck.",
+    "audio": true
+  },
+  {
+    "k": "patchy",
+    "t": "patchy",
+    "kind": "word",
+    "forms": [
+      "patchy"
+    ],
+    "text": "Patchy means incomplete and uneven — good in some patches, missing in others. Saying \"data are patchy\" is a careful writer's way of admitting the numbers don't cover everything, right before arguing the trend is clear anyway.",
+    "audio": true
+  },
+  {
+    "k": "carnage",
+    "t": "carnage",
+    "kind": "word",
+    "forms": [
+      "carnage"
+    ],
+    "text": "Carnage literally means mass slaughter, but it's used figuratively for any scene of chaos and destruction. The image here: AI locking onto an obscure corner of the law like a heat-seeking missile and leaving wreckage — a court system buried in cases.",
+    "audio": true
+  },
+  {
+    "k": "analogue",
+    "t": "analogue",
+    "kind": "word",
+    "forms": [
+      "analogue"
+    ],
+    "text": "Analogue (US spelling: analog) means pre-digital — the world of paper forms, filing cabinets and human clerks. Bureaucracies \"built for the analogue age\" were sized for the number of complaints humans could write by hand, not the number AI can generate.",
+    "audio": true
+  },
+  {
+    "k": "bureaucracies",
+    "t": "bureaucracy",
+    "kind": "word",
+    "forms": [
+      "bureaucracies"
+    ],
+    "text": "A bureaucracy is any large organization that runs on rules, forms and officials — government agencies above all. The word often carries a sigh: slow, paperwork-heavy, hard to hurry. AI-generated demand is swamping bureaucracies from Dutch tax offices to parking-ticket tribunals.",
+    "audio": true
+  },
+  {
+    "k": "fantastical",
+    "t": "fantastical",
+    "kind": "word",
+    "forms": [
+      "fantastical"
+    ],
+    "text": "Fantastical means so far-fetched it belongs in fantasy — invented, fanciful, not grounded in reality. Note it's not praise (that's \"fantastic\"): the article pairs \"well-founded\" claims with \"fantastical\" ones, meaning made-up.",
+    "audio": true
+  },
+  {
+    "k": "grounds",
+    "t": "grounds",
+    "kind": "word",
+    "forms": [
+      "grounds"
+    ],
+    "text": "In law, grounds are the official reasons or bases on which you can bring a case — not a place. An employer can now be sued on over 100 different grounds, and AI-drafted claims cite \"scores of grounds\" at once, hoping something sticks.",
+    "audio": true
+  },
+  {
+    "k": "discounted",
+    "t": "discounted",
+    "kind": "word",
+    "forms": [
+      "discounted"
+    ],
+    "text": "Here \"discounted\" means ruled out or dismissed as unlikely — no shopping involved. When the article says other explanations \"can be discounted,\" it means the usual suspects (a bad economy, fewer judges) don't fit the facts, leaving AI as the culprit.",
+    "audio": true
+  },
+  {
+    "k": "downturn",
+    "t": "downturn",
+    "kind": "word",
+    "forms": [
+      "downturn"
+    ],
+    "text": "A downturn is a period when the economy shrinks or slows — businesses struggle, layoffs rise. Layoffs usually mean more employment disputes, so a downturn is the normal explanation for a surge in claims. This time, there isn't one.",
+    "audio": true
+  },
+  {
+    "k": "vacancies",
+    "t": "vacancies",
+    "kind": "word",
+    "forms": [
+      "vacancies"
+    ],
+    "text": "A vacancy is an unfilled job opening. \"Unfilled vacancies\" among judges means the bench is short-staffed — and yet the article notes there are still more judges sitting than before the pandemic, so a judge shortage can't explain the backlog.",
+    "audio": true
+  },
+  {
+    "k": "sitting-days",
+    "t": "sitting days",
+    "kind": "name",
+    "forms": [
+      "sitting days"
+    ],
+    "text": "A sitting day is a day a court is actually in session hearing cases. Counting sitting days is how you measure a court system's capacity — like counting how many hours a checkout lane is actually open.",
+    "audio": true
+  },
+  {
+    "k": "barrister",
+    "t": "barrister",
+    "kind": "name",
+    "forms": [
+      "barrister"
+    ],
+    "text": "In Britain, a barrister is the kind of lawyer who argues cases in court, traditionally in a wig and gown (a solicitor handles the paperwork side). The barristers quoted here are the people watching AI-written claims land in front of judges every day.",
+    "audio": true
+  },
+  {
+    "k": "rolls-royce-service",
+    "t": "a Rolls-Royce service",
+    "kind": "phrase",
+    "forms": [
+      "Rolls-Royce service"
+    ],
+    "text": "Calling something \"the Rolls-Royce\" of its kind means it's the luxury, top-quality version — from the famously expensive British car. The point: British tribunal justice is still excellent, if you can stand the years-long queue to get it.",
+    "audio": true
+  },
+  {
+    "k": "litigants-in-person",
+    "t": "litigants-in-person",
+    "kind": "name",
+    "forms": [
+      "litigants-in-person"
+    ],
+    "text": "A litigant is someone involved in a lawsuit; a litigant-in-person is one who represents themselves in court without a lawyer. They're exactly who free AI legal help empowers — and exactly who it misleads, since there's no professional to say \"you'll lose.\"",
+    "audio": true
+  },
+  {
+    "k": "over-egg-the-pudding",
+    "t": "over-egg the pudding",
+    "kind": "phrase",
+    "forms": [
+      "over-egg the pudding"
+    ],
+    "text": "A British idiom meaning to overdo something until you spoil it — add too many eggs and the pudding gets worse, not richer. AI tempts claimants to over-egg their cases: 67 grievances, 282 pages, rhetorical flourishes nobody asked for.",
+    "audio": true
+  },
+  {
+    "k": "cross-examination",
+    "t": "cross-examination",
+    "kind": "name",
+    "forms": [
+      "cross-examination"
+    ],
+    "text": "Cross-examination is the part of a trial where the opposing side's lawyer questions you, probing for holes in your story. ChatGPT even offers coaching for it — one more way AI packages a courtroom-ready case from a vague complaint.",
+    "audio": true
+  },
+  {
+    "k": "protected-belief",
+    "t": "protected belief",
+    "kind": "name",
+    "forms": [
+      "protected belief"
+    ],
+    "text": "Under British discrimination law, certain deeply held beliefs are \"protected\" — firing or bullying someone for holding them is illegal. Courts have ruled ethical veganism qualifies; liking horoscopes doesn't. The chatbot helpfully pointed its user toward the belief that would count.",
+    "audio": true
+  },
+  {
+    "k": "unprompted",
+    "t": "unprompted",
+    "kind": "word",
+    "forms": [
+      "unprompted"
+    ],
+    "text": "Unprompted means without being asked — the AI volunteered dramatic claims of \"distress\" that its user never mentioned. A sly word choice here, since instructions to an AI are literally called prompts.",
+    "audio": true
+  },
+  {
+    "k": "luddites",
+    "t": "Luddite",
+    "kind": "name",
+    "forms": [
+      "Luddites"
+    ],
+    "text": "The original Luddites were English textile workers in the 1810s who smashed the new machines they feared would take their jobs. Today a Luddite is anyone who resists new technology. The judges insist they're not Luddites — they like AI fine, for laundry-level chores.",
+    "audio": true
+  },
+  {
+    "k": "judiciary",
+    "t": "judiciary",
+    "kind": "name",
+    "forms": [
+      "judiciary"
+    ],
+    "text": "The judiciary is the judge branch of government — all the courts and judges together, alongside the legislature (makes laws) and the executive (enforces them). Lady Carr heads the judiciary of England and Wales.",
+    "audio": true
+  },
+  {
+    "k": "submissions",
+    "t": "submissions",
+    "kind": "word",
+    "forms": [
+      "submissions"
+    ],
+    "text": "In court, submissions are the written or spoken arguments a party submits to the judge. Judges want them short and factual; AI-generated submissions can run to hundreds of pages.",
+    "audio": true
+  },
+  {
+    "k": "coherent",
+    "t": "coherent",
+    "kind": "word",
+    "forms": [
+      "coherent"
+    ],
+    "text": "Coherent means logically connected and clear — the parts hang together so you can follow the argument. The judges' backhanded compliment: AI submissions are often more coherent than the loose-paper ramblings some people bring to court in carrier bags.",
+    "audio": true
+  },
+  {
+    "k": "scattergun",
+    "t": "scattergun",
+    "kind": "word",
+    "forms": [
+      "scattergun"
+    ],
+    "text": "A scattergun (shotgun) sprays pellets everywhere rather than firing one aimed shot — so a scattergun approach throws out dozens of claims hoping any one of them hits. The opposite of the concise, focused case judges actually want.",
+    "audio": true
+  },
+  {
+    "k": "scores-of",
+    "t": "scores of",
+    "kind": "phrase",
+    "forms": [
+      "scores of"
+    ],
+    "text": "A score is twenty, so \"scores of\" means a great many — dozens upon dozens. AI-drafted claims cite scores of legal grounds at once. Same word as in Lincoln's \"four score and seven years ago.\"",
+    "audio": true
+  },
+  {
+    "k": "hallucinated",
+    "t": "hallucinated",
+    "kind": "name",
+    "forms": [
+      "hallucinated"
+    ],
+    "text": "When an AI \"hallucinates,\" it confidently invents things that don't exist — fake facts, fake citations, and here, fake laws. Hallucinated legal authorities are a known hazard of chatbot lawyering, and judges have to waste time checking which cited laws are real.",
+    "audio": true
+  },
+  {
+    "k": "magna-carta",
+    "t": "Magna Carta",
+    "kind": "name",
+    "forms": [
+      "Magna Carta"
+    ],
+    "text": "The Great Charter of 1215, in which England's barons forced King John to accept that even the king is under the law. It's a foundation stone of legal history — and mostly irrelevant to a modern workplace dispute, which is the joke: AI claims throw it in anyway for grandeur.",
+    "audio": true
+  },
+  {
+    "k": "frank",
+    "t": "frank",
+    "kind": "word",
+    "forms": [
+      "frank"
+    ],
+    "text": "Frank means honest and direct, even when the truth is unwelcome. Claimants need frank advice — \"your case is weak, drop it\" — but AI flatters instead, telling users what they want to hear.",
+    "audio": true
+  },
+  {
+    "k": "flatters",
+    "t": "flatters",
+    "kind": "word",
+    "forms": [
+      "flatters"
+    ],
+    "text": "To flatter someone is to please them with praise or agreement — often more than they deserve. A chatbot that turns every vague complaint into a \"model legal argument\" is flattering its user, not advising them.",
+    "audio": true
+  },
+  {
+    "k": "grok",
+    "t": "Grok",
+    "kind": "name",
+    "forms": [
+      "Grok"
+    ],
+    "text": "Grok is the chatbot made by xAI, Elon Musk's AI company — a rival to ChatGPT. One claimant used it to prepare a case with 67 grievances across 282 pages.",
+    "audio": true
+  },
+  {
+    "k": "nhs",
+    "t": "NHS",
+    "kind": "name",
+    "forms": [
+      "NHS"
+    ],
+    "text": "The National Health Service — Britain's government-run health system, free at the point of use and one of the country's biggest employers. An NHS employee is simply someone who works for it.",
+    "audio": true
+  },
+  {
+    "k": "covert",
+    "t": "covert",
+    "kind": "word",
+    "forms": [
+      "covert"
+    ],
+    "text": "Covert means hidden or secret — done without others knowing. The opposite is overt, out in the open. One claimant covertly recorded hundreds of conversations with colleagues; the recordings turned out to be inaudible.",
+    "audio": true
+  },
+  {
+    "k": "inaudible",
+    "t": "inaudible",
+    "kind": "word",
+    "forms": [
+      "inaudible"
+    ],
+    "text": "Inaudible means impossible to hear — from the same root as \"audio\" and \"audible.\" Hundreds of secret recordings that are completely inaudible prove nothing, which their maker couldn't seem to grasp.",
+    "audio": true
+  },
+  {
+    "k": "neurodiversity",
+    "t": "neurodiversity",
+    "kind": "name",
+    "forms": [
+      "neurodiversity"
+    ],
+    "text": "Neurodiversity is the idea that brains naturally vary — autism, ADHD and dyslexia are differences, not defects. In employment law it can be the basis of a discrimination claim if someone is treated unfairly for how their brain works.",
+    "audio": true
+  },
+  {
+    "k": "restraining-order",
+    "t": "restraining order",
+    "kind": "name",
+    "forms": [
+      "restraining order"
+    ],
+    "text": "A restraining order is a court order forbidding someone from doing a specific thing. Here it's used against a serial litigant: after at least 60 claims, he needs permission before filing more. His new plan — test future claims with AI first.",
+    "audio": true
+  },
+  {
+    "k": "attorney-general",
+    "t": "attorney-general",
+    "kind": "name",
+    "forms": [
+      "attorney-general"
+    ],
+    "text": "The attorney-general is the government's chief legal officer — its top lawyer. One of the job's lesser-known powers is asking courts to restrain people who file endless meritless lawsuits.",
+    "audio": true
+  },
+  {
+    "k": "merits",
+    "t": "merits",
+    "kind": "word",
+    "forms": [
+      "merits"
+    ],
+    "text": "The merits of a case are its actual strengths — whether, on the facts and the law, it deserves to win. Testing claims \"on their merits\" means judging substance, not paperwork. With no fee and no risk, nothing forces filers to weigh the merits before suing.",
+    "audio": true
+  },
+  {
+    "k": "layperson",
+    "t": "layperson",
+    "kind": "word",
+    "forms": [
+      "layperson"
+    ],
+    "text": "A layperson is anyone who isn't a professional in the field being discussed — here, someone with no legal training. Employment tribunals were deliberately built so a layperson could bring a case alone; that openness is now their weak spot.",
+    "audio": true
+  },
+  {
+    "k": "old-bailey",
+    "t": "Old Bailey",
+    "kind": "name",
+    "forms": [
+      "Old Bailey"
+    ],
+    "text": "The Old Bailey is London's famous central criminal court, shorthand for formal, intimidating, wigs-and-gowns justice. Tribunals were meant to be its opposite: a \"people's court\" without the stuffiness.",
+    "audio": true
+  },
+  {
+    "k": "settlement",
+    "t": "settlement",
+    "kind": "word",
+    "forms": [
+      "settlement"
+    ],
+    "text": "A settlement is a deal that ends a dispute before a judge rules — usually the employer pays something and the case stops. In most courts, refusing a fair settlement offer and losing anyway costs you; in employment tribunals there's no such penalty.",
+    "audio": true
+  },
+  {
+    "k": "upshot",
+    "t": "upshot",
+    "kind": "word",
+    "forms": [
+      "upshot"
+    ],
+    "text": "The upshot is the final result or bottom line once everything is added up — \"the upshot is...\" means \"what it all comes down to is...\". The upshot of no fees, no loser-pays and no settlement penalty: nothing makes parties think hard before suing.",
+    "audio": true
+  },
+  {
+    "k": "slop",
+    "t": "slop",
+    "kind": "name",
+    "forms": [
+      "slop"
+    ],
+    "text": "\"AI slop\" is the now-standard term for low-quality, mass-produced AI output — text churned out fast with little human thought or checking. Sloppy 300-page claims are slop; the article's twist is that tomorrow's AI might file precise, winning cases instead.",
+    "audio": true
+  },
+  {
+    "k": "striking-out",
+    "t": "striking out",
+    "kind": "name",
+    "forms": [
+      "Striking out"
+    ],
+    "text": "In law, striking out a claim means a judge throws it out early, without a full hearing, because it's hopeless or abusive. British judges have ruled that a badly written case shouldn't be struck out if a real grievance might be buried inside — so even slop gets its day in court.",
+    "audio": true
+  },
+  {
+    "k": "rabbit-in-the-headlights",
+    "t": "rabbit in the headlights",
+    "kind": "phrase",
+    "forms": [
+      "rabbit in the headlights"
+    ],
+    "text": "The British version of \"deer in the headlights\": frozen in fear or confusion, unable to act — like an animal caught in a car's beams at night. A self-represented claimant can freeze this way in court, and judges are told to help them, not punish them for it.",
+    "audio": true
+  },
+  {
+    "k": "unfair-dismissal",
+    "t": "unfair dismissal",
+    "kind": "name",
+    "forms": [
+      "unfair-dismissal"
+    ],
+    "text": "Dismissal is being fired; unfair dismissal is a legal claim that the firing broke the rules — wrong reason or wrong process. From January 2027 British workers can bring this claim after six months in a job instead of two years, opening the door much wider.",
+    "audio": true
+  },
+  {
+    "k": "employment-rights-act",
+    "t": "Employment Rights Act",
+    "kind": "name",
+    "forms": [
+      "Employment Rights Act"
+    ],
+    "text": "The Labour government's big new workplace law. It adds around 25 new grounds for suing an employer, lets unfair-dismissal claims start after six months, and scraps the roughly £123,543 cap on most compensation — all of which points toward more litigation.",
+    "audio": true
+  },
+  {
+    "k": "labour",
+    "t": "Labour",
+    "kind": "name",
+    "forms": [
+      "Labour"
+    ],
+    "text": "Labour is Britain's centre-left political party, historically tied to trade unions, and currently the party in government. Its stated goal with the new act is shifting power from employers to workers.",
+    "audio": true
+  },
+  {
+    "k": "scrapped",
+    "t": "scrapped",
+    "kind": "word",
+    "forms": [
+      "scrapped"
+    ],
+    "text": "To scrap something is to abolish or throw it away, like scrapping a car for parts. The cap on compensation — about £123,543 for most claims — is being scrapped, so there will be no upper limit on what a winning claimant might be awarded.",
+    "audio": true
+  },
+  {
+    "k": "compensation",
+    "t": "compensation",
+    "kind": "word",
+    "forms": [
+      "compensation"
+    ],
+    "text": "Compensation is money paid to make up for a loss or wrong — here, what a tribunal awards a worker who wins. Uncapped compensation means no legal maximum, which AI can spin into dreams of a huge payday.",
+    "audio": true
+  },
+  {
+    "k": "prospective",
+    "t": "prospective",
+    "kind": "word",
+    "forms": [
+      "prospective"
+    ],
+    "text": "Prospective means likely or hoping to become something — a prospective claimant hasn't sued yet but might. Related to \"prospect,\" a thing looked forward to. Colleges talk about prospective students the same way.",
+    "audio": true
+  },
+  {
+    "k": "claimant",
+    "t": "claimant",
+    "kind": "word",
+    "forms": [
+      "claimant",
+      "claimants"
+    ],
+    "text": "A claimant is the person who brings a claim — the one doing the suing (in other courts often called the plaintiff). The employer on the receiving end is the respondent.",
+    "audio": true
+  },
+  {
+    "k": "litigation",
+    "t": "litigation",
+    "kind": "word",
+    "forms": [
+      "litigation"
+    ],
+    "text": "Litigation is the process of taking disputes through the courts — suing and being sued. \"More litigation\" simply means more lawsuits; every factor in the article points that way.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckons",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "In British English, to reckon is to think or estimate — \"she reckons\" means \"she believes.\" It comes from the older sense of counting things up, as in \"a day of reckoning.\"",
+    "audio": true
+  },
+  {
+    "k": "top-flight",
+    "t": "top-flight",
+    "kind": "word",
+    "forms": [
+      "top-flight"
+    ],
+    "text": "Top-flight means among the very best — first-rank, elite. The article's closing warning imagines every worker with the equivalent of a top-flight lawyer in their pocket.",
+    "audio": true
+  },
+  {
+    "k": "at-will",
+    "t": "at will",
+    "kind": "phrase",
+    "forms": [
+      "at will"
+    ],
+    "text": "To do something at will is to do it whenever and however you please, with nothing stopping you. If AI keeps improving, workers could file precisely built cases against their bosses at will.",
+    "audio": true
+  },
+  {
+    "k": "deluge",
+    "t": "deluge",
+    "kind": "word",
+    "forms": [
+      "deluge"
+    ],
+    "text": "A deluge is a great flood — literally of water, figuratively of anything arriving in overwhelming quantity. Today's deluge of slop claims could give way to something scarier for employers: a wave of winning ones.",
+    "audio": true
+  },
+  {
+    "k": "out-of-step",
+    "t": "out of step",
+    "kind": "phrase",
+    "forms": [
+      "out of step"
+    ],
+    "text": "Marchers are out of step when their feet no longer move together — so two things \"moving out of step\" are changing at mismatched speeds. Here technology is racing ahead while the law changes on its own slower clock, and the mismatch is the story.",
+    "audio": true
+  }
+]

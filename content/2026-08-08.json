@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-08",
+  "title": "The tragedy of the commons, AI edition",
+  "articleUrl": "https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition",
+  "articlePageUrl": "/articles/2026-08-08.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "pretext",
+      "partOfSpeech": "noun",
+      "pronunciation": "PREE-tekst",
+      "articleQuote": "For prospective claimants this means more pretexts on which to bring a case and the hope of a bigger prize.",
+      "meaning": "A **pretext** is a reason you give for doing something that sounds acceptable but is not the real reason, or is only a technical excuse. The article says Britain's new employment law hands workers more pretexts for suing: more official grounds a claim can be hung on, whatever the filer's true motive. The word usually carries a whiff of suspicion; if someone acts \"on a pretext\", you are being told the stated reason is cover.",
+      "examples": [
+        "She stopped by the gym on the pretext of returning a water bottle, but really she wanted to see if the team roster was posted.",
+        "The coach used the drizzle as a pretext to cancel a practice he had been planning to cut short anyway."
+      ]
+    },
+    {
+      "word": "grievance",
+      "partOfSpeech": "noun",
+      "pronunciation": "GREE-vunss",
+      "articleQuote": "Enter a vague grievance into ChatGPT and before long it offers to draft a claims form.",
+      "meaning": "A **grievance** is a complaint that you have been treated unfairly, especially one serious enough that you want someone in authority to fix it. Workplaces and schools often have a formal \"grievance procedure\" for exactly this. In the article it is the raw material of every lawsuit: a worker types a vague grievance into a chatbot, and the AI turns it into a polished legal claim, sometimes hundreds of pages of one.",
+      "examples": [
+        "Her main grievance was that the starting lineup never changed, no matter how well the substitutes played in practice.",
+        "The students brought a list of grievances about the cafeteria to the principal, starting with the disappearing pizza Fridays."
+      ]
+    },
+    {
+      "word": "exasperation",
+      "partOfSpeech": "noun",
+      "pronunciation": "ig-zas-puh-RAY-shun",
+      "articleQuote": "But recent tribunal rulings reveal a growing judicial exasperation.",
+      "meaning": "**Exasperation** is the worn-out, end-of-your-patience form of annoyance you feel when the same problem keeps coming back no matter what you do. The article finds it in Britain's employment judges, whose rulings show growing exasperation with AI-written claims that run to hundreds of pages and cite laws that do not exist. It is stronger than irritation: an exasperated person is close to throwing up their hands.",
+      "examples": [
+        "In exasperation, the teacher banned phones after asking the same three students to put them away five times in one class.",
+        "You could hear the exasperation in Dad's voice the third time the Wi-Fi cut out during his call."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Tragedy of the commons",
+      "articleQuote": "Instead, it is proving to be a tragedy of the commons.",
+      "meaning": "The **tragedy of the commons** is one of the most famous ideas in **economics**. It describes what happens to a shared resource that is free for anyone to use: each person gains by using a little more of it, nobody pays the full cost of their own use, and so the resource gets overused until it is wrecked for everyone. The name comes from the \"commons\", the shared grazing land in old English villages. Each farmer did better by adding one more cow, but when every farmer did that, the grass was grazed bare and all the cows went hungry.\n\nThe shared resource in this article is court time. Britain's employment tribunals are free to use, and AI has made filing a claim almost effortless. Each extra claim costs the person filing it nothing, but it adds to the queue for everyone. The results are stark: claims up 39% in a year to 50,000, a backlog of 64,000 unresolved cases, and a claim filed today that may not be heard until 2030. That is the tragedy: a system built to give ordinary workers access to justice is being crushed by too much access, and the people with genuine grievances wait the longest.\n\nOnce you know the pattern you see it everywhere: ocean fish stocks collapse because each boat catches as much as it can, a group chat becomes unreadable because each person's one more meme costs them nothing, and the school printer runs dry because printing is free."
+    },
+    {
+      "name": "Skin in the game",
+      "articleQuote": "There is no financial mechanism to make parties think hard about the merits of their case.",
+      "meaning": "**Skin in the game** is an idea from **economics** about incentives: people decide carefully when they personally stand to lose something if they are wrong, and carelessly when they do not. The phrase comes from betting. Having \"skin\" in a game means your own money is riding on the outcome.\n\nBritain's tribunals were deliberately built with no skin required: there is no fee to file a case, the losing side rarely pays the winner's legal bills, and turning down a fair settlement offer carries no penalty. That design was meant to keep a \"people's court\" open to everyone, but it also means a weak claim costs its filer nothing while costing the employer and the court plenty. Add AI, which shrinks the effort of filing to nearly zero, and the flood of low-quality claims stops being surprising. The article notes France looks safer to employers partly because payouts there are usually capped at 20 months' pay, so the prize for a long-shot claim is smaller.\n\nThe idea shows up anywhere behavior needs filtering: a $10 deposit you lose for skipping an event makes people sign up honestly, poker with real chips is played more carefully than poker with play money, and an entry fee for a tournament keeps out teams that were never going to show up."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What has happened to \"interim relief\" applications in Britain's employment tribunals?",
+      "options": [
+        "Judges have started granting nearly all of them to clear the backlog faster.",
+        "The government abolished them in the new Employment Rights Act.",
+        "They used to total about 20 a year across Britain; now each of the 12 regional offices gets about 20 a month.",
+        "AI screening tools have cut the number of applications sharply."
+      ],
+      "answerIndex": 2,
+      "explanation": "The judges' memo describes a more-than-100-fold surge, and their prime suspect for it is AI."
+    },
+    {
+      "question": "Why does the article say employment tribunals are especially vulnerable to an AI-driven flood of claims, compared with other courts?",
+      "options": [
+        "Their judges are volunteers with no legal training.",
+        "They were designed to be open to ordinary people: no filing fee, the loser rarely pays the winner's bills, and no penalty for rejecting a fair settlement.",
+        "They are the only courts that allow AI-written documents.",
+        "They handle only discrimination cases, which AI is best at drafting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The tribunals were built as a cheap, open \"people's court\", so there is no financial mechanism that makes filers think hard about the merits of a claim."
+    },
+    {
+      "question": "The new law gives workers \"more pretexts on which to bring a case.\" A pretext is best described as:",
+      "options": [
+        "a stated reason that serves as a cover or excuse, not necessarily the real motive",
+        "a written summary that must be filed before a trial begins",
+        "a payment offered to settle a dispute out of court",
+        "an early draft of a legal document"
+      ],
+      "answerIndex": 0,
+      "explanation": "A pretext is a reason given to justify an action that may hide the true motive; the \"pre-\" does not mean an early version of a text."
+    },
+    {
+      "question": "Which of these is the clearest example of giving people \"skin in the game\"?",
+      "options": [
+        "Letting students retake a quiz as many times as they like with no penalty.",
+        "Offering a free trial that anyone can cancel anytime.",
+        "Asking players to vote on tournament rules before it starts.",
+        "Requiring a $10 deposit that you lose if you sign up for an event and don't show up."
+      ],
+      "answerIndex": 3,
+      "explanation": "Skin in the game means you personally lose something if you act carelessly, which is exactly what a forfeitable deposit creates."
+    },
+    {
+      "question": "What does the article predict could happen if specialist legal AI keeps improving?",
+      "options": [
+        "Claims would drop as AI talks most workers out of suing, and the backlog would disappear.",
+        "Every worker could have the equivalent of a top lawyer in their pocket, and the deluge of sloppy claims could give way to a wave of winning ones.",
+        "Judges would be replaced by algorithms that decide cases instantly.",
+        "Employers would use AI to countersue workers and cancel out the surge."
+      ],
+      "answerIndex": 1,
+      "explanation": "The article ends by warning that better AI would trade today's slop problem for precisely built, winnable cases, shifting power to workers faster than politicians imagined."
+    }
+  ]
+}
