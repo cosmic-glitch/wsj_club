@@ -1,0 +1,662 @@
+[
+  {
+    "k": "nascent",
+    "t": "nascent",
+    "kind": "vocab",
+    "pron": "NAY-sent",
+    "forms": [
+      "nascent"
+    ],
+    "text": "Just being born, still in its earliest stage of existence; the word comes from the Latin for 'to be born.' The Economist calls embryo screening a nascent technology because the industry exists but is brand new, serving a tiny group of customers, and nobody yet knows what it will grow into.",
+    "audio": true
+  },
+  {
+    "k": "circumspect",
+    "t": "circumspect",
+    "kind": "vocab",
+    "pron": "SUR-kum-spekt",
+    "forms": [
+      "circumspect"
+    ],
+    "text": "Careful and guarded, thinking about how your words or actions will land before committing to them; literally 'looking around' in Latin. Most screening companies here are circumspect: they say customers just want healthy children and avoid boasting about super-babies, because they know how explosive the topic is.",
+    "audio": true
+  },
+  {
+    "k": "precipitously",
+    "t": "precipitously",
+    "kind": "vocab",
+    "pron": "prih-SIP-ih-tus-lee",
+    "forms": [
+      "precipitously"
+    ],
+    "text": "Steeply and suddenly, the way ground falls away at a precipice (a cliff edge). Here the expected benefits of embryo selection drop precipitously when parents have only two or three embryos to choose from instead of ten: the gains don't shrink gently, they plunge.",
+    "audio": true
+  },
+  {
+    "k": "stirred",
+    "t": "stirred",
+    "kind": "word",
+    "forms": [
+      "stirred"
+    ],
+    "text": "Literally to mix something by moving it around, but here it means provoked or set off. The subway ads 'stirred controversy': they got people arguing, the way stirring a pot gets everything moving.",
+    "audio": true
+  },
+  {
+    "k": "burgeoning",
+    "t": "burgeoning",
+    "kind": "word",
+    "forms": [
+      "burgeoning"
+    ],
+    "text": "Growing rapidly, flourishing like a plant putting out new buds. The 'burgeoning industry' of embryo screening is small today but sprouting new startups and ambitions quickly.",
+    "audio": true
+  },
+  {
+    "k": "jurisdictions",
+    "t": "jurisdictions",
+    "kind": "word",
+    "forms": [
+      "jurisdictions"
+    ],
+    "text": "Territories where a particular set of laws and courts has authority: a country, a state, sometimes a city. Saying screening is illegal 'in many jurisdictions, including Britain' means different places have different rules, which is why the startups cluster in loosely regulated America.",
+    "audio": true
+  },
+  {
+    "k": "polygenic",
+    "t": "polygenic",
+    "kind": "name",
+    "forms": [
+      "polygenic",
+      "Polygenic"
+    ],
+    "text": "From Greek 'many genes': describes traits and diseases shaped by hundreds or thousands of genes, each with a tiny effect, rather than by one gene alone. Height, hypertension, and IQ-test performance are polygenic, which is why they can only be predicted with statistical scores, never read directly off the DNA.",
+    "audio": true
+  },
+  {
+    "k": "hypertension",
+    "t": "hypertension",
+    "kind": "word",
+    "forms": [
+      "hypertension"
+    ],
+    "text": "The medical name for chronically high blood pressure, a common condition that raises the risk of heart attacks and strokes. It's the article's example of a polygenic condition: no single gene causes it, so screening for it means playing statistical odds.",
+    "audio": true
+  },
+  {
+    "k": "sceptical",
+    "t": "sceptical",
+    "kind": "word",
+    "forms": [
+      "sceptical"
+    ],
+    "text": "Doubting, not convinced without solid evidence; this is the British spelling of 'skeptical' (The Economist is a British paper). Many geneticists are sceptical of embryo screening, meaning they think the companies' claims outrun the science.",
+    "audio": true
+  },
+  {
+    "k": "vehemently",
+    "t": "vehemently",
+    "kind": "word",
+    "forms": [
+      "vehemently"
+    ],
+    "text": "With intense, forceful passion. Groups that are 'vehemently opposed' to embryo screening don't just disagree with it, they fight it with heat and conviction.",
+    "audio": true
+  },
+  {
+    "k": "ivf",
+    "t": "in-vitro fertilisation (IVF)",
+    "kind": "name",
+    "forms": [
+      "IVF",
+      "in-vitro fertilisation"
+    ],
+    "text": "A fertility treatment in which egg and sperm are combined in a lab dish ('in vitro' is Latin for 'in glass') and the resulting embryo is placed in the womb. Screening is only possible because IVF creates several embryos outside the body, giving parents something to choose among. About 2.8% of American babies were conceived this way in 2024.",
+    "audio": true
+  },
+  {
+    "k": "brewing",
+    "t": "brewing",
+    "kind": "word",
+    "forms": [
+      "brewing"
+    ],
+    "text": "Literally how you make coffee or beer, but figuratively it means slowly building toward a boil. 'A fight is brewing' over these technologies: the big public battle hasn't erupted yet, but it's coming.",
+    "audio": true
+  },
+  {
+    "k": "share",
+    "t": "share",
+    "kind": "word",
+    "forms": [
+      "share"
+    ],
+    "text": "Here it doesn't mean a piece of a company or posting something online; it means a portion or fraction of a total. 'A tiny share of babies' means only a small percentage of all babies born.",
+    "audio": true
+  },
+  {
+    "k": "endocrinologist",
+    "t": "reproductive endocrinologist",
+    "kind": "name",
+    "forms": [
+      "reproductive endocrinologist"
+    ],
+    "text": "A doctor who specializes in hormones (the endocrine system) as they relate to fertility and reproduction; these are the physicians who run IVF treatment. David Sable, quoted on the market's size, used to practise as one before becoming an investor.",
+    "audio": true
+  },
+  {
+    "k": "venture-capital",
+    "t": "venture capital (VC)",
+    "kind": "name",
+    "forms": [
+      "venture-capital",
+      "VC"
+    ],
+    "text": "Money that investment firms put into young, risky startups in exchange for part ownership, hoping a few big winners pay for the many failures. VC investment in fertility startups nearly doubled between 2019 and 2022, which is why so many embryo-screening companies suddenly exist.",
+    "audio": true
+  },
+  {
+    "k": "out-of-pocket",
+    "t": "out of pocket",
+    "kind": "phrase",
+    "forms": [
+      "out of pocket"
+    ],
+    "text": "Paying with your own money, with no insurance or employer covering the bill. Because only 15 states make insurers cover IVF, most American patients pay the full $15,000-20,000 per cycle out of pocket.",
+    "audio": true
+  },
+  {
+    "k": "risk-pooling",
+    "t": "pooling risk",
+    "kind": "name",
+    "forms": [
+      "pooling risk"
+    ],
+    "text": "The idea behind all insurance: many people pay into a shared pot, the lucky ones pay a little more than they needed to, and the unlucky ones draw out much more than they paid. Gaia uses it to protect fertility patients from the worst-case bill of needing many IVF cycles.",
+    "audio": true
+  },
+  {
+    "k": "cycle",
+    "t": "cycle",
+    "kind": "word",
+    "forms": [
+      "cycle",
+      "cycles"
+    ],
+    "text": "In IVF, one full round of treatment: stimulating the ovaries, collecting eggs, fertilising them, and transferring an embryo. Each cycle costs $15,000-20,000 and may fail, so many patients need several, which is what makes the process so expensive and uncertain.",
+    "audio": true
+  },
+  {
+    "k": "economies-of-scale",
+    "t": "economies of scale",
+    "kind": "name",
+    "forms": [
+      "economies of scale"
+    ],
+    "text": "An idea from economics: making something in larger quantities usually makes each unit cheaper, because fixed costs get spread over more output and processes get streamlined. It's one reason Dr Sable expects the price of IVF to fall as the industry grows.",
+    "audio": true
+  },
+  {
+    "k": "standardisation",
+    "t": "standardisation",
+    "kind": "word",
+    "forms": [
+      "standardisation"
+    ],
+    "text": "Making processes uniform so every clinic does things the same proven way instead of improvising (British spelling of 'standardization'). Standardised procedures are cheaper and more reliable, another force expected to bring IVF prices down.",
+    "audio": true
+  },
+  {
+    "k": "miscarriage",
+    "t": "miscarriage",
+    "kind": "word",
+    "forms": [
+      "miscarriage"
+    ],
+    "text": "The loss of a pregnancy before the baby can survive outside the womb. Some studies claim the chromosome-counting test PGT-A lowers the miscarriage risk, though the article notes many experts doubt it.",
+    "audio": true
+  },
+  {
+    "k": "cystic-fibrosis",
+    "t": "cystic fibrosis",
+    "kind": "name",
+    "forms": [
+      "cystic fibrosis"
+    ],
+    "text": "A serious inherited disease that clogs the lungs and digestive system with thick mucus. It's caused by a single gene, which makes it the kind of disorder the older PGT-M test can screen for directly.",
+    "audio": true
+  },
+  {
+    "k": "huntingtons",
+    "t": "Huntington’s",
+    "kind": "name",
+    "forms": [
+      "Huntington’s"
+    ],
+    "text": "Huntington's disease, a fatal inherited brain disorder that usually appears in mid-adulthood. Like cystic fibrosis it comes from a single gene, so an embryo either carries it or doesn't, and PGT-M can check.",
+    "audio": true
+  },
+  {
+    "k": "provided",
+    "t": "provided",
+    "kind": "word",
+    "forms": [
+      "provided"
+    ],
+    "text": "Here it doesn't mean 'supplied'; it means 'on the condition that.' The survey found 43% of IVF participants would screen for university admission chances 'provided it were safe and free': only if those conditions held.",
+    "audio": true
+  },
+  {
+    "k": "monogenic",
+    "t": "monogenic",
+    "kind": "name",
+    "forms": [
+      "monogenic"
+    ],
+    "text": "From Greek 'one gene': describes diseases caused by a single gene, like cystic fibrosis or Huntington's. The contrast with polygenic matters because monogenic conditions can be screened with near-certainty, while polygenic ones only get statistical risk scores.",
+    "audio": true
+  },
+  {
+    "k": "embryo",
+    "t": "embryo",
+    "kind": "name",
+    "forms": [
+      "embryo",
+      "embryos"
+    ],
+    "text": "The earliest stage of a developing organism, from fertilised egg through the first weeks of growth. In IVF several embryos are usually created in the lab, and screening ranks them before one is chosen for implantation.",
+    "audio": true
+  },
+  {
+    "k": "niche",
+    "t": "niche",
+    "kind": "word",
+    "forms": [
+      "niche"
+    ],
+    "text": "A small, specialized corner of a market or field (pronounced NEESH). Calling commercial embryo screening 'a niche industry' means it serves a tiny population, mostly very rich Americans, at least so far.",
+    "audio": true
+  },
+  {
+    "k": "cater",
+    "t": "cater",
+    "kind": "word",
+    "forms": [
+      "cater"
+    ],
+    "text": "Not about food here: to cater to a group is to serve its particular wants and needs. Startups like Herasight cater to a small population of wealthy clients, shaping their product around what those customers will pay for.",
+    "audio": true
+  },
+  {
+    "k": "gwas",
+    "t": "genome-wide association studies (GWAS)",
+    "kind": "name",
+    "forms": [
+      "genome-wide association studies",
+      "GWAS"
+    ],
+    "text": "Studies that scan the full DNA of huge numbers of people and look for gene variants that show up more often in people with a particular trait or disease. They are the raw material for polygenic risk scores: without these giant databases, there would be nothing to score an embryo against.",
+    "audio": true
+  },
+  {
+    "k": "discern",
+    "t": "discern",
+    "kind": "word",
+    "forms": [
+      "discern"
+    ],
+    "text": "To detect or make out something that isn't obvious, like spotting a faint pattern in noise. GWAS try to discern associations between genes and traits: the signals are real but subtle, buried in data from millions of people.",
+    "audio": true
+  },
+  {
+    "k": "variants",
+    "t": "variants",
+    "kind": "word",
+    "forms": [
+      "variants",
+      "variant"
+    ],
+    "text": "Different versions of the same gene, the way one word can have alternate spellings. Most variants nudge risk only slightly, but a rare variant can have a large effect, which is one reason population statistics can mislead about a single embryo.",
+    "audio": true
+  },
+  {
+    "k": "correlations",
+    "t": "correlations",
+    "kind": "name",
+    "forms": [
+      "correlations"
+    ],
+    "text": "A statistics term: two things are correlated when they tend to move together, like height and shoe size. Polygenic scores are built from population-level correlations between genes and traits, and the article's key warning is that patterns true across a crowd can fail for any single person.",
+    "audio": true
+  },
+  {
+    "k": "surface",
+    "t": "surface",
+    "kind": "word",
+    "forms": [
+      "surface"
+    ],
+    "text": "As a verb it means to appear or come to light, like a submarine rising into view. A rare gene variant would be 'unlikely to surface' in population statistics: its effect is real but too uncommon to show up in the averages.",
+    "audio": true
+  },
+  {
+    "k": "concerns",
+    "t": "concerns",
+    "kind": "word",
+    "forms": [
+      "concerns"
+    ],
+    "text": "Here it's a verb meaning 'is about' or 'relates to,' not the noun meaning worries. 'Some concerns the underlying science' means some of the criticism is about the science itself.",
+    "audio": true
+  },
+  {
+    "k": "underlying",
+    "t": "underlying",
+    "kind": "word",
+    "forms": [
+      "underlying"
+    ],
+    "text": "Lying beneath the surface, forming the foundation of something. The 'underlying science' is the base of research the whole screening industry is built on; if it's shaky, everything above it wobbles.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckons",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "Thinks, estimates, or calculates; a common word in British journalism. When Dr Sable 'reckons' the market could reach $400bn-500bn, he's giving an informed estimate, not a proven fact.",
+    "audio": true
+  },
+  {
+    "k": "baseline",
+    "t": "baseline",
+    "kind": "name",
+    "forms": [
+      "baseline"
+    ],
+    "text": "The starting point you measure change against, a term used across statistics and science. Herasight's claim only makes sense with the baseline attached: cutting diabetes risk by 12-20 percentage points matters because the starting risk for those couples was already 40-60%.",
+    "audio": true
+  },
+  {
+    "k": "percentage-points",
+    "t": "percentage points",
+    "kind": "name",
+    "forms": [
+      "percentage points"
+    ],
+    "text": "The unit for the gap between two percentages. Going from 40% to 28% is a drop of 12 percentage points, but a 30% relative drop; journalists and scientists use 'percentage points' to keep those two very different claims straight.",
+    "audio": true
+  },
+  {
+    "k": "absolute-risk",
+    "t": "absolute risk",
+    "kind": "name",
+    "forms": [
+      "absolute risk"
+    ],
+    "text": "Your actual probability of getting a condition, like a 40% chance of diabetes, as opposed to relative risk, which only says how much higher or lower one group's chance is than another's. Quoting absolute risk is the more honest framing, since 'halves your risk' sounds dramatic even when the risk was tiny to begin with.",
+    "audio": true
+  },
+  {
+    "k": "methodology",
+    "t": "methodology",
+    "kind": "word",
+    "forms": [
+      "methodology"
+    ],
+    "text": "The set of methods behind a piece of research: how the data was gathered, what was measured, how conclusions were reached. Herasight criticises Nucleus for not publishing details of its methodology, because without them outsiders can't check whether the scores actually work.",
+    "audio": true
+  },
+  {
+    "k": "magnitude",
+    "t": "magnitude",
+    "kind": "word",
+    "forms": [
+      "magnitude"
+    ],
+    "text": "The size or scale of something. Critics don't just question whether embryo screening works, they question the magnitude of the benefits: even in the best case the gains may be too small to matter.",
+    "audio": true
+  },
+  {
+    "k": "overstated",
+    "t": "overstated",
+    "kind": "word",
+    "forms": [
+      "overstated"
+    ],
+    "text": "Described as bigger or better than it really is; exaggerated. Some scientists argue the benefits of embryo screening are overstated, pointing to the modest three-IQ-point gain even under ideal conditions.",
+    "audio": true
+  },
+  {
+    "k": "median",
+    "t": "median",
+    "kind": "name",
+    "forms": [
+      "median"
+    ],
+    "text": "A statistics term: the middle value in a sorted list, so half the cases fall above it and half below. The Cell paper's 'median boost' of 2.9cm means a typical family would gain about that much, some more, some less, it's not a guarantee.",
+    "audio": true
+  },
+  {
+    "k": "viable",
+    "t": "viable",
+    "kind": "word",
+    "forms": [
+      "viable"
+    ],
+    "text": "Capable of surviving and developing normally. Not every embryo from an IVF cycle is viable, and that's the crunch in the math: the paper's gains assume ten viable embryos, while many patients get only two or three.",
+    "audio": true
+  },
+  {
+    "k": "exacerbating",
+    "t": "exacerbating",
+    "kind": "word",
+    "forms": [
+      "exacerbating"
+    ],
+    "text": "Making a problem worse. Because one gene can affect many things, selecting an embryo to lower one disease risk could be exacerbating a different risk nobody scored.",
+    "audio": true
+  },
+  {
+    "k": "pleiotropy",
+    "t": "pleiotropy",
+    "kind": "name",
+    "forms": [
+      "pleiotropy"
+    ],
+    "text": "A genetics term for one gene influencing multiple, seemingly unrelated traits: the same variant might affect both heart health and mood. It's why choosing an embryo for one trait can have unintended consequences somewhere else in the body.",
+    "audio": true
+  },
+  {
+    "k": "training-data",
+    "t": "training data",
+    "kind": "name",
+    "forms": [
+      "training data"
+    ],
+    "text": "The examples a statistical or AI model learns from. Polygenic scores are only as good as their training data, and because the big genetic databases skew heavily toward people of European ancestry, the scores are less accurate for everyone else.",
+    "audio": true
+  },
+  {
+    "k": "sample-size",
+    "t": "sample size",
+    "kind": "name",
+    "forms": [
+      "sample size"
+    ],
+    "text": "The number of cases a study is based on; a core idea in statistics. Bigger samples reveal fainter patterns, which is why the Cell paper estimated that growing the databases could double the predictive gain of polygenic scoring.",
+    "audio": true
+  },
+  {
+    "k": "account-for",
+    "t": "account for",
+    "kind": "phrase",
+    "forms": [
+      "account for"
+    ],
+    "text": "A set phrase meaning to explain something or properly include it in a calculation. Future AI models may be better able to account for rare variants, meaning their effects would finally be captured in the scores instead of ignored.",
+    "audio": true
+  },
+  {
+    "k": "promissory-note",
+    "t": "promissory note",
+    "kind": "name",
+    "forms": [
+      "promissory note"
+    ],
+    "text": "Literally a signed IOU, a written promise to pay later. Calling the technology 'kind of a promissory note' is Dr Mitchell's jab: the companies are asking customers to pay now for accuracy they promise to deliver someday.",
+    "audio": true
+  },
+  {
+    "k": "wary",
+    "t": "wary",
+    "kind": "word",
+    "forms": [
+      "wary"
+    ],
+    "text": "Cautious and on guard, alert to possible danger. Disability-rights groups are wary of genetic screening because of what it implies about whose lives are considered worth living.",
+    "audio": true
+  },
+  {
+    "k": "eugenics",
+    "t": "eugenics",
+    "kind": "name",
+    "forms": [
+      "eugenics"
+    ],
+    "text": "The idea of 'improving' the human population by controlling who reproduces or which traits get passed on. It has a dark history: early-twentieth-century eugenics movements led to forced sterilisations in America and fed Nazi ideology, which is why comparing embryo screening to eugenics is such a serious charge.",
+    "audio": true
+  },
+  {
+    "k": "de-facto",
+    "t": "de-facto",
+    "kind": "name",
+    "forms": [
+      "de-facto"
+    ],
+    "text": "Latin for 'in fact': describing something true in practice even if no official rule declares it. America's de-facto ban on embryo editing means no law spells out a ban, but regulators have made it effectively impossible since 2016.",
+    "audio": true
+  },
+  {
+    "k": "fretting",
+    "t": "fretting",
+    "kind": "word",
+    "forms": [
+      "fretting"
+    ],
+    "text": "Worrying, especially in a visible, ongoing way. Industry insiders 'reject the fretting': they wave off the critics' anxieties as overblown.",
+    "audio": true
+  },
+  {
+    "k": "best-in-class",
+    "t": "best in class",
+    "kind": "phrase",
+    "forms": [
+      "best in class"
+    ],
+    "text": "A business phrase meaning the best available in its category. The investor's point is that risk scores don't need to be perfect to be worth using, just better than every alternative.",
+    "audio": true
+  },
+  {
+    "k": "genetic-counsellors",
+    "t": "genetic counsellors",
+    "kind": "name",
+    "forms": [
+      "genetic counsellors"
+    ],
+    "text": "Health professionals trained to explain genetic test results and help people make decisions about them (British spelling of 'counselors'). The screening startups employ them to walk clients through their results, a nod to how easy the numbers are to misread.",
+    "audio": true
+  },
+  {
+    "k": "hinge",
+    "t": "Hinge",
+    "kind": "name",
+    "forms": [
+      "Hinge"
+    ],
+    "text": "A popular dating app. The investor's quip 'If this is eugenics, then so is Hinge' argues that choosing a partner is already a form of genetic selection, so screening embryos is nothing categorically new.",
+    "audio": true
+  },
+  {
+    "k": "maha",
+    "t": "Make America Healthy Again",
+    "kind": "name",
+    "forms": [
+      "Make America Healthy Again"
+    ],
+    "text": "A political health movement (often shortened to MAHA) skeptical of pharmaceutical and biotech industries. Its adherents oppose embryo screening, putting them, unusually, on the same side as many mainstream geneticists.",
+    "audio": true
+  },
+  {
+    "k": "peter-thiel",
+    "t": "Peter Thiel",
+    "kind": "name",
+    "forms": [
+      "Peter Thiel"
+    ],
+    "text": "A billionaire venture capitalist, co-founder of PayPal and the firm Founders Fund. He and Elon Musk helped kick off Silicon Valley's interest in fertility by framing low birth rates as a threat to America and investing accordingly.",
+    "audio": true
+  },
+  {
+    "k": "aesthetic",
+    "t": "aesthetic",
+    "kind": "word",
+    "forms": [
+      "aesthetic"
+    ],
+    "text": "Relating to beauty and appearance. Offering scores for 'aesthetic traits' like hair and eye colour is what makes critics suspect the companies are selling more than health.",
+    "audio": true
+  },
+  {
+    "k": "cohort",
+    "t": "cohort",
+    "kind": "word",
+    "forms": [
+      "cohort"
+    ],
+    "text": "A group of people or things considered together, originally a unit of a Roman legion; in research it means a group followed in a study. 'A small cohort of startups' just means the handful of companies in this new industry.",
+    "audio": true
+  },
+  {
+    "k": "contentious",
+    "t": "contentious",
+    "kind": "word",
+    "forms": [
+      "contentious"
+    ],
+    "text": "Causing heated argument and disagreement. The article's closing point is that many fertility technologies, including IVF itself, were once contentious and are now routine.",
+    "audio": true
+  },
+  {
+    "k": "ferocity",
+    "t": "ferocity",
+    "kind": "word",
+    "forms": [
+      "ferocity"
+    ],
+    "text": "Fierce, savage intensity. Predicting that the debate will grow in ferocity means the fight over embryo screening will get harsher as the business gets bigger.",
+    "audio": true
+  },
+  {
+    "k": "adherents",
+    "t": "adherents",
+    "kind": "word",
+    "forms": [
+      "adherents"
+    ],
+    "text": "Followers or committed supporters of a movement, cause, or belief; people who 'stick to' it, from the same root as 'adhesive.' Here it refers to followers of the Make America Healthy Again movement.",
+    "audio": true
+  },
+  {
+    "k": "unintended-consequences",
+    "t": "unintended consequences",
+    "kind": "phrase",
+    "forms": [
+      "unintended consequences"
+    ],
+    "text": "A set phrase for the side effects an action produces that nobody planned or foresaw; a favorite concept of economists. Selecting embryos for one trait could carry unintended consequences for other traits, thanks to pleiotropy.",
+    "audio": true
+  }
+]

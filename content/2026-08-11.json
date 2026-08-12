@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-11",
+  "title": "How much would you pay for a smarter baby?",
+  "articleUrl": "https://www.economist.com/business/2026/08/10/how-much-would-you-pay-for-a-smarter-baby",
+  "articlePageUrl": "/articles/2026-08-11.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "nascent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "NAY-sent",
+      "articleQuote": "Nucleus is one of a growing number of Silicon Valley startups pushing the nascent technology.",
+      "meaning": "Something **nascent** is just being born, still in its earliest stage of existence. The word comes from the Latin for 'to be born,' and writers reach for it when an industry, idea, or movement exists but hasn't taken real shape yet. The Economist calls embryo screening a nascent technology because a handful of startups are selling it to a tiny group of customers, and nobody yet knows what it will grow into.",
+      "examples": [
+        "The school's nascent robotics club had only four members and one donated laptop, but big plans.",
+        "Streaming was a nascent business in 2007, when Netflix still mailed most of its movies as DVDs."
+      ]
+    },
+    {
+      "word": "circumspect",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SUR-kum-spekt",
+      "articleQuote": "Most of the companies offering PGT-P are more circumspect.",
+      "meaning": "To be **circumspect** is to be careful and guarded, thinking about how your words or actions might land before you commit to them. It literally means 'looking around' in Latin, the way you scan a street before crossing it. In the article, most screening companies are circumspect: they say their customers just want healthy children, and avoid boasting about 'super-babies,' because they know how explosive the topic is.",
+      "examples": [
+        "After the group chat leaked, everyone became more circumspect about what they posted.",
+        "The coach was circumspect when reporters asked about the injury, saying only that the star would play when ready."
+      ]
+    },
+    {
+      "word": "precipitously",
+      "partOfSpeech": "adverb",
+      "pronunciation": "prih-SIP-ih-tus-lee",
+      "articleQuote": "Moreover, for those picking among fewer than five embryos, the expected gains drop precipitously.",
+      "meaning": "**Precipitously** means steeply and suddenly, the way the ground falls away at a precipice, which is a cliff edge. Numbers that fall precipitously don't drift down, they plunge. The article uses it for the payoff of embryo selection: with ten embryos to choose from the predicted gains are already modest, and with only two or three, which is what many patients actually have, they drop precipitously.",
+      "examples": [
+        "His grades fell precipitously the semester he started skipping homework.",
+        "The game's player count dropped precipitously a month after launch, once the bugs became famous."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Polygenic traits and polygenic scores",
+      "articleQuote": "PGT-P, which scores embryos for conditions and traits determined by multiple genes, potentially ranging from certain cancers to eye colour and IQ.",
+      "meaning": "This idea comes from **genetics**, with a big assist from statistics. A few diseases are caused by a single broken gene: inherit the Huntington's variant and you get Huntington's disease. But most human traits don't work that way. Height, diabetes risk, heart disease risk, even how you score on an IQ test are **polygenic**, shaped by hundreds or thousands of genes that each push you a tiny bit one way or the other, plus everything in your environment: food, sleep, school, luck.\n\nA **polygenic score** tries to add up all those tiny pushes into one number. Scientists compare the DNA of millions of people against their real health records, find which gene variants show up slightly more often in, say, people with type-2 diabetes, and then scan a new genome (here, an embryo's) to estimate its risk.\n\nThe catch, and it's the heart of the scientific fight in this article, is that these scores are built from averages across huge populations, and averages can be right about crowds while being wrong about any single person. Selecting on scores works when breeders pick across hundreds of animals, but one embryo might carry a single rare variant with a huge effect that the population statistics never noticed. The article's own numbers show how modest the payoff is: picking the 'best' of ten embryos buys about 3 IQ points or 2.9 cm of height on average, and most patients have only two or three embryos to pick from, not ten."
+    },
+    {
+      "name": "Risk pooling",
+      "articleQuote": "its services save patients an average of $15,000 over the entire fertility process, largely by pooling risk",
+      "meaning": "**Risk pooling** is one of the foundational ideas in economics, and it's the engine inside every kind of insurance. IVF shows the problem it solves: one cycle costs $15,000 to $20,000, and nobody knows in advance whether they'll need one cycle or four. A family could get lucky and pay $15,000, or end up paying $80,000.\n\nPooling fixes this by having many people pay into one shared pot. The lucky ones, who succeed on the first try, pay a bit more than they strictly needed to; the unlucky ones draw out far more than they paid in. Everyone trades a small certain cost for protection against a huge uncertain one. That, says Gaia's founder, is largely how his firm saves fertility patients an average of $15,000.\n\nHere's the neat part: pooling works because of the same statistical fact that limits polygenic scores, just run in the opposite direction. No one can predict whether *you* will need four IVF cycles, but across a thousand customers the average is very predictable, so the company can set one fair price. A simple version: if a broken phone screen costs $100 to fix and about one student in twenty breaks theirs each year, twenty friends could each chip in $5 and everyone's screen is covered."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article describes three kinds of embryo screening. What does the newest one, PGT-P, do that the older tests don't?",
+      "options": [
+        "It checks whether an embryo has the right number of chromosomes",
+        "It scores embryos for conditions and traits shaped by many genes at once, such as height, IQ and certain cancers",
+        "It edits an embryo's genes to remove disease variants",
+        "It guarantees the baby will be born free of genetic disease"
+      ],
+      "answerIndex": 1,
+      "explanation": "PGT-A counts chromosomes and PGT-M checks single-gene disorders; PGT-P is new because it estimates polygenic traits, and gene editing is not screening at all (America has had a de-facto ban on it since 2016)."
+    },
+    {
+      "question": "The Economist calls embryo screening a 'nascent technology.' What does nascent mean?",
+      "options": [
+        "Banned in most countries",
+        "Scientifically discredited",
+        "Just emerging, still in its earliest stage",
+        "Extremely expensive"
+      ],
+      "answerIndex": 2,
+      "explanation": "Nascent comes from the Latin for 'to be born': the industry exists but is brand new and still taking shape."
+    },
+    {
+      "question": "Geneticist Kevin Mitchell says selecting on polygenic risk scores 'works across many offspring, as in animal breeding,' but is less certain for a single child. Why?",
+      "options": [
+        "The scores are built from population averages, and any one individual can differ from the average, for example through a rare variant the statistics never captured",
+        "Animal genomes are much simpler than human genomes",
+        "An embryo's DNA keeps changing after it is implanted",
+        "Breeding animals is legal but screening humans is not"
+      ],
+      "answerIndex": 0,
+      "explanation": "A polygenic score is a statistical average built from huge populations, so it can be right about crowds while missing the one rare variant that matters in a particular genome."
+    },
+    {
+      "question": "Gaia says its fertility insurance saves patients an average of $15,000 'largely by pooling risk.' How does risk pooling save people money?",
+      "options": [
+        "The company invests customers' fees in the stock market",
+        "Many customers pay into a shared pot, so the lucky ones effectively cover the unlucky ones, and no one faces the worst-case bill alone",
+        "The government reimburses insured patients",
+        "Pooled patients share one IVF cycle among several families"
+      ],
+      "answerIndex": 1,
+      "explanation": "Insurance trades a small certain payment for protection against a large uncertain one; the pool's average cost is predictable even though each family's isn't."
+    },
+    {
+      "question": "According to the 2019 paper in Cell, if parents picked the 'best' of ten viable embryos for intelligence, the expected gain would be about…",
+      "options": [
+        "30 IQ points",
+        "15 IQ points",
+        "3 IQ points",
+        "No measurable change at all"
+      ],
+      "answerIndex": 2,
+      "explanation": "The estimated median boost was three IQ points (and 2.9 cm for height), which the article notes is unlikely to be life-changing."
+    }
+  ]
+}
