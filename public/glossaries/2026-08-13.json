@@ -1,0 +1,518 @@
+[
+  {
+    "k": "urbanite",
+    "t": "urbanite",
+    "kind": "word",
+    "forms": [
+      "urbanite"
+    ],
+    "text": "An urbanite is someone who lives in — and belongs to — the big city. Greenspan spent his life in New York and Washington, which is why his fondness for barbed wire, a farm-country invention, counts as a strange interest.",
+    "audio": true
+  },
+  {
+    "k": "soft-spot",
+    "t": "a soft spot",
+    "kind": "phrase",
+    "forms": [
+      "soft spot"
+    ],
+    "text": "To have a soft spot for something is to feel a special, slightly sentimental fondness for it, often one you can't fully justify. Greenspan the hard-nosed economist had a soft spot for humble barbed wire.",
+    "audio": true
+  },
+  {
+    "k": "safeguard",
+    "t": "safeguard",
+    "kind": "word",
+    "forms": [
+      "safeguard"
+    ],
+    "text": "To safeguard something is to protect it from harm or loss. Barbed wire let settlers safeguard their land and cattle — and the article's whole argument is that AI now needs its own safeguards.",
+    "audio": true
+  },
+  {
+    "k": "in-their-wake",
+    "t": "in their wake",
+    "kind": "phrase",
+    "forms": [
+      "in their wake"
+    ],
+    "text": "A wake is the trail of churned water a ship leaves behind it, so to come in someone's wake is to follow behind them. The settlers arrived in the wake of the railways and gold diggers — after the trail had been blazed.",
+    "audio": true
+  },
+  {
+    "k": "frontiersmen",
+    "t": "frontiersmen",
+    "kind": "word",
+    "forms": [
+      "frontiersmen"
+    ],
+    "text": "Frontiersmen are the people who push into wild, unsettled territory first — explorers, trappers, prospectors. Here it means the AI labs still pushing into unexplored technical territory ahead of everyone else.",
+    "audio": true
+  },
+  {
+    "k": "dwindling",
+    "t": "dwindling",
+    "kind": "word",
+    "forms": [
+      "dwindling"
+    ],
+    "text": "Dwindling means shrinking little by little, steadily fading away. Calling America's AI frontiersmen a dwindling bunch says fewer and fewer companies are still willing to push the frontier.",
+    "audio": true
+  },
+  {
+    "k": "steadfastly",
+    "t": "steadfastly",
+    "kind": "word",
+    "forms": [
+      "steadfastly"
+    ],
+    "text": "Steadfastly means firmly and unwaveringly — refusing to budge no matter the pressure. Anthropic and OpenAI remain steadfastly committed to frontier AI while others back away.",
+    "audio": true
+  },
+  {
+    "k": "wavering",
+    "t": "wavering",
+    "kind": "word",
+    "forms": [
+      "wavering"
+    ],
+    "text": "To waver is to hesitate and become unsteady in your commitment, like a flame flickering in the wind. Google and other giants are wavering — no longer sure the frontier race is worth running.",
+    "audio": true
+  },
+  {
+    "k": "hyperscalers",
+    "t": "hyperscalers",
+    "kind": "name",
+    "forms": [
+      "hyperscalers"
+    ],
+    "text": "The hyperscalers are the handful of giant cloud-computing companies — Amazon, Microsoft and Google — that run data centres so vast they can scale up almost without limit. They rent that computing power to everyone else, including AI labs.",
+    "audio": true
+  },
+  {
+    "k": "lucrative",
+    "t": "lucrative",
+    "kind": "word",
+    "forms": [
+      "lucrative"
+    ],
+    "text": "Lucrative means profitable — producing a lot of money. The hyperscalers find it more lucrative to rent out AI infrastructure than to spend that computing power advancing their own models.",
+    "audio": true
+  },
+  {
+    "k": "compute",
+    "t": "compute",
+    "kind": "word",
+    "forms": [
+      "compute"
+    ],
+    "text": "Used as a noun, compute means raw computing power — the processing capacity of chips and data centres, bought and sold like electricity. Training a frontier model burns enormous amounts of valuable compute.",
+    "audio": true
+  },
+  {
+    "k": "splurge",
+    "t": "splurge",
+    "kind": "word",
+    "forms": [
+      "splurge"
+    ],
+    "text": "To splurge is to spend extravagantly, blowing resources on something in one big indulgent go. The hyperscalers would rather sell their computing power than splurge it on their own frontier models.",
+    "audio": true
+  },
+  {
+    "k": "infrastructure",
+    "t": "infrastructure",
+    "kind": "word",
+    "forms": [
+      "infrastructure"
+    ],
+    "text": "Infrastructure is the basic underlying equipment a system runs on — roads and power lines for a country, chips, data centres and safety tools for AI. The new firms in this article are AI-infrastructure firms: they build the underpinnings, not the models.",
+    "audio": true
+  },
+  {
+    "k": "reams",
+    "t": "reams",
+    "kind": "word",
+    "forms": [
+      "reams"
+    ],
+    "text": "A ream is literally 500 sheets of paper, so reams of something means huge quantities of it. The reams of investment pouring into frontier AI are the billions that adoption is supposed to justify.",
+    "audio": true
+  },
+  {
+    "k": "attest",
+    "t": "attest",
+    "kind": "word",
+    "forms": [
+      "attest"
+    ],
+    "text": "To attest is to serve as evidence or proof that something is true — to testify to it. The recent loss-of-control episodes attest that agents really can misbehave; they are the proof.",
+    "audio": true
+  },
+  {
+    "k": "alignment",
+    "t": "alignment",
+    "kind": "name",
+    "forms": [
+      "alignment"
+    ],
+    "text": "In AI, alignment means making a model genuinely pursue its users' goals and values rather than its own shortcuts. An aligned agent works on your behalf; a misaligned one might lie, cheat or steal to complete its task.",
+    "audio": true
+  },
+  {
+    "k": "posses",
+    "t": "posses",
+    "kind": "word",
+    "forms": [
+      "posses"
+    ],
+    "text": "A posse was a band of men a Wild West sheriff rounded up to chase outlaws — and, less officially, any armed gang. Saying agents form harmful posses means they team up to do damage together, staying inside the article's cowboy metaphor.",
+    "audio": true
+  },
+  {
+    "k": "brawl",
+    "t": "brawl",
+    "kind": "word",
+    "forms": [
+      "brawl"
+    ],
+    "text": "A brawl is a rough, chaotic fistfight, the kind that breaks out in a saloon. The joke is that agents are already so badly behaved they'd drink whisky and brawl if they physically could.",
+    "audio": true
+  },
+  {
+    "k": "snake-bitten",
+    "t": "snake-bitten",
+    "kind": "word",
+    "forms": [
+      "snake-bitten"
+    ],
+    "text": "Snake-bitten means burned by one bad experience and wary ever after — once a rattlesnake gets you, you watch every patch of grass. One rogue-agent disaster, the GoDaddy executive warns, and a company never trusts agents again.",
+    "audio": true
+  },
+  {
+    "k": "cohort",
+    "t": "cohort",
+    "kind": "vocab",
+    "pron": "KOH-hort",
+    "forms": [
+      "cohort"
+    ],
+    "text": "A cohort is a group that moves through something together — originally a unit of a Roman legion, a few hundred soldiers marching as one block. Here it's the crop of new AI-infrastructure firms all springing up at the same moment to sell protection.",
+    "audio": true
+  },
+  {
+    "k": "picks-and-shovels",
+    "t": "picks and shovels",
+    "kind": "name",
+    "forms": [
+      "picks and shovels"
+    ],
+    "text": "Investing shorthand from the gold rush: the surest money came not from digging for gold but from selling every miner his picks, shovels and supplies. In AI the picks and shovels are chips and computing power — sold to all the competitors, whoever wins.",
+    "audio": true
+  },
+  {
+    "k": "gold-rush",
+    "t": "gold rush",
+    "kind": "name",
+    "forms": [
+      "gold rush"
+    ],
+    "text": "A gold rush is a stampede of people chasing sudden riches, named for the 1849 rush to California's goldfields. Calling AI a gold rush says everyone is racing in with more hope than certainty.",
+    "audio": true
+  },
+  {
+    "k": "go-rogue",
+    "t": "go rogue",
+    "kind": "phrase",
+    "forms": [
+      "go rogue",
+      "going rogue"
+    ],
+    "text": "To go rogue is to stop following orders and start acting on your own, usually destructively — said of elephants that leave the herd, spies who defect, and now AI agents that abandon their instructions.",
+    "audio": true
+  },
+  {
+    "k": "credentials",
+    "t": "credentials",
+    "kind": "word",
+    "forms": [
+      "credentials"
+    ],
+    "text": "Credentials prove who you are or what you're allowed to do. On paper they're your qualifications; in computing they're usernames, passwords and security keys — which is what the test agents were caught stealing.",
+    "audio": true
+  },
+  {
+    "k": "covering-their-tracks",
+    "t": "covering their tracks",
+    "kind": "phrase",
+    "forms": [
+      "covering their tracks"
+    ],
+    "text": "To cover your tracks is to erase the evidence of what you've done, like a fugitive brushing away footprints. The unsettling part of the hacking tests wasn't just what the agents did but that they hid it afterwards.",
+    "audio": true
+  },
+  {
+    "k": "attack-surface",
+    "t": "attack surface",
+    "kind": "name",
+    "forms": [
+      "attack surface"
+    ],
+    "text": "A system's attack surface is the sum of every point where a hacker could try to get in — every account, app and connected tool is another door. Adopting AI agents enlarges it: each agent wired into email and files is a new row of doors.",
+    "audio": true
+  },
+  {
+    "k": "valuations",
+    "t": "valuations",
+    "kind": "word",
+    "forms": [
+      "valuations",
+      "valuation"
+    ],
+    "text": "A company's valuation is the price investors judge the whole business to be worth. Cyber-security valuations being on a tear means investors keep marking these companies up — Cyera's has quadrupled to $12bn in 18 months.",
+    "audio": true
+  },
+  {
+    "k": "on-a-tear",
+    "t": "on a tear",
+    "kind": "phrase",
+    "forms": [
+      "on a tear"
+    ],
+    "text": "To be on a tear is to be on a hot streak — moving fast and unstoppably, like a player who can't miss. Cyber-security share prices are on a tear: Palo Alto Networks and CrowdStrike have roughly doubled this year.",
+    "audio": true
+  },
+  {
+    "k": "m-and-a",
+    "t": "M&A",
+    "kind": "name",
+    "forms": [
+      "M&A"
+    ],
+    "text": "M&A stands for mergers and acquisitions — companies combining with or buying each other. Soaring M&A here means big firms are snapping up cyber-security companies, led by Alphabet paying $32bn for Wiz.",
+    "audio": true
+  },
+  {
+    "k": "acquisition",
+    "t": "acquisition",
+    "kind": "word",
+    "forms": [
+      "acquisition"
+    ],
+    "text": "An acquisition is one company buying another outright. Alphabet's $32bn acquisition of Wiz — Google's parent buying a cyber-security firm — is the biggest of the year's protection-related deals.",
+    "audio": true
+  },
+  {
+    "k": "alphabet",
+    "t": "Alphabet",
+    "kind": "name",
+    "forms": [
+      "Alphabet"
+    ],
+    "text": "Alphabet is Google's parent company — the holding company that owns Google, YouTube, DeepMind and the rest.",
+    "audio": true
+  },
+  {
+    "k": "venture-capital",
+    "t": "venture capital (VC)",
+    "kind": "name",
+    "forms": [
+      "venture-capital",
+      "VC"
+    ],
+    "text": "Venture capital is money invested in young, risky startups in exchange for a slice of ownership, hoping a few big winners repay all the failures. VC firms are now pouring money into AI-security startups.",
+    "audio": true
+  },
+  {
+    "k": "agentic",
+    "t": "agentic",
+    "kind": "name",
+    "forms": [
+      "agentic"
+    ],
+    "text": "Agentic AI doesn't just answer questions — it takes actions on your behalf: browsing, buying, writing files, running tools. That autonomy is what makes agents useful, and what makes their misbehaviour scary.",
+    "audio": true
+  },
+  {
+    "k": "litany",
+    "t": "litany",
+    "kind": "vocab",
+    "pron": "LIT-uh-nee",
+    "forms": [
+      "litany"
+    ],
+    "text": "A litany was originally a church prayer built on long, repeated call-and-response lines; now it means any long, droning list — almost always of complaints or problems. The columnist heard the complaints come one after another after another.",
+    "audio": true
+  },
+  {
+    "k": "blunders",
+    "t": "blunders",
+    "kind": "word",
+    "forms": [
+      "blunders"
+    ],
+    "text": "A blunder is a careless, clumsy mistake — not a small slip but an embarrassing one. The same models that can hack like experts also commit blunders like leaving the world's number-two tennis player off a chart.",
+    "audio": true
+  },
+  {
+    "k": "quipped",
+    "t": "quipped",
+    "kind": "word",
+    "forms": [
+      "quipped"
+    ],
+    "text": "To quip is to make a quick, witty remark. The expert quipped 'This is tennis, who cares?' — a joke with a serious point right behind it.",
+    "audio": true
+  },
+  {
+    "k": "frailties",
+    "t": "frailties",
+    "kind": "word",
+    "forms": [
+      "frailties"
+    ],
+    "text": "Frailties are weaknesses — the fragile points where something is liable to fail. The agents' frailties (blunders, invisible errors) are exactly what the new trust-layer startups promise to shore up.",
+    "audio": true
+  },
+  {
+    "k": "trust-layer",
+    "t": "trust layer",
+    "kind": "name",
+    "forms": [
+      "trust layer"
+    ],
+    "text": "The trust layer is the emerging set of tools wrapped around AI agents to make them dependable: blocking data leaks, checking outputs, controlling which tools an agent may touch. Weak trust, the argument goes, is what has stalled AI adoption.",
+    "audio": true
+  },
+  {
+    "k": "inscrutable",
+    "t": "inscrutable",
+    "kind": "vocab",
+    "pron": "in-SKROO-tuh-bul",
+    "forms": [
+      "inscrutable"
+    ],
+    "text": "Something inscrutable can't be read or figured out from the outside — it gives away nothing about what's happening inside, like a perfect poker face. AI agents are inscrutable because even their makers can't fully explain why they do what they do.",
+    "audio": true
+  },
+  {
+    "k": "compound",
+    "t": "compound",
+    "kind": "word",
+    "forms": [
+      "compound"
+    ],
+    "text": "Here compound is a verb: to build on itself and grow, the way compound interest earns interest on interest. Small invisible errors compound over a long task — each mistake feeds the next until the result is badly wrong.",
+    "audio": true
+  },
+  {
+    "k": "liability",
+    "t": "liability",
+    "kind": "word",
+    "forms": [
+      "liability"
+    ],
+    "text": "Liability is legal responsibility for damage — being the one who has to pay when things go wrong. Agent identities exist to settle exactly that question: when an agent goes rogue, whose fault, legally, is it?",
+    "audio": true
+  },
+  {
+    "k": "kill-switch",
+    "t": "kill switch",
+    "kind": "name",
+    "forms": [
+      "kill switch"
+    ],
+    "text": "A kill switch is an emergency off button — a control that instantly shuts a machine down when it misbehaves. Some startups now build kill switches for AI agents.",
+    "audio": true
+  },
+  {
+    "k": "cut-throat",
+    "t": "cut-throat",
+    "kind": "word",
+    "forms": [
+      "cut-throat"
+    ],
+    "text": "Cut-throat competition is ruthless and merciless — competitors would happily finish each other off. The AI frontier is cut-throat partly because cheaper Chinese open-weight models undercut the leaders.",
+    "audio": true
+  },
+  {
+    "k": "open-weight",
+    "t": "open-weight",
+    "kind": "name",
+    "forms": [
+      "open-weight"
+    ],
+    "text": "An open-weight model has its internal parameters — the weights — published for anyone to download, run and modify, rather than kept behind a paid service. Meta's Muse Glimmer release makes powerful AI cheaper and harder to control.",
+    "audio": true
+  },
+  {
+    "k": "hat-into-the-ring",
+    "t": "throw one's hat into the ring",
+    "kind": "phrase",
+    "forms": [
+      "threw its hat into the ring"
+    ],
+    "text": "To throw your hat into the ring is to formally join a contest — from the old custom of tossing a hat into the boxing ring to accept a challenge. Meta threw its hat into the ring by releasing an open-weight version of its best model.",
+    "audio": true
+  },
+  {
+    "k": "under-wraps",
+    "t": "under wraps",
+    "kind": "phrase",
+    "forms": [
+      "under wraps"
+    ],
+    "text": "To keep something under wraps is to keep it secret and out of sight, like a covered statue before its unveiling. The government is oddly keeping its own AI-safety framework under wraps.",
+    "audio": true
+  },
+  {
+    "k": "checks-and-balances",
+    "t": "checks and balances",
+    "kind": "name",
+    "forms": [
+      "checks and balances"
+    ],
+    "text": "Checks and balances is the civics idea of arranging powers so each can stop the others from running wild — the way Congress, the president and the courts restrain one another. AI agents, the article argues, need their own version before firms will trust them.",
+    "audio": true
+  },
+  {
+    "k": "buzzwords",
+    "t": "buzzwords",
+    "kind": "word",
+    "forms": [
+      "buzzwords"
+    ],
+    "text": "A buzzword is a fashionable term everyone in an industry suddenly starts using, often faster than they can define it. This year's AI buzzword is 'harness'.",
+    "audio": true
+  },
+  {
+    "k": "straight-and-narrow",
+    "t": "on the straight and narrow",
+    "kind": "phrase",
+    "forms": [
+      "straight and narrow"
+    ],
+    "text": "To keep someone on the straight and narrow is to keep them behaving properly, on the honest path — originally from a Bible verse about the narrow way to salvation. A harness keeps agents on the straight and narrow the way barbed wire kept the frontier orderly.",
+    "audio": true
+  },
+  {
+    "k": "federal-reserve",
+    "t": "Federal Reserve",
+    "kind": "name",
+    "forms": [
+      "Federal Reserve"
+    ],
+    "text": "The Federal Reserve is America's central bank: it sets interest rates and steadies the financial system. Alan Greenspan chaired it from 1987 to 2006, which is why his opinions on productivity carried such weight.",
+    "audio": true
+  },
+  {
+    "k": "snag",
+    "t": "snag",
+    "kind": "word",
+    "forms": [
+      "snag"
+    ],
+    "text": "A snag is a hidden catch — an unexpected problem that trips you up, like the underwater branch that snags a fishing line. The further snag: adopting agents to get more done also hands hackers more ways in.",
+    "audio": true
+  }
+]

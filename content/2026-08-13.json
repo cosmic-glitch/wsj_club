@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-13",
+  "title": "AI agents lie, cheat and steal. That is putting off users",
+  "articleUrl": "https://www.economist.com/business/2026/08/12/ai-agents-lie-cheat-and-steal-that-is-putting-off-users",
+  "articlePageUrl": "/articles/2026-08-13.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "inscrutable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-SKROO-tuh-bul",
+      "articleQuote": "They provide protection against cyber-threats, fixes for untrustworthy and inscrutable agents, and controls if they go rogue.",
+      "meaning": "Something **inscrutable** can't be read or figured out from the outside — it gives away nothing about what's happening inside, the way a poker player's blank face gives away nothing about their cards. The article calls AI agents inscrutable because even the companies that build them can't fully explain why a model does what it does, and businesses hesitate to hand real work to a tool nobody can see into.",
+      "examples": [
+        "The substitute teacher's inscrutable expression made it impossible to tell whether she was joking or completely serious.",
+        "He studied the chess board, inscrutable, giving no hint of the trap he was setting."
+      ]
+    },
+    {
+      "word": "litany",
+      "partOfSpeech": "noun",
+      "pronunciation": "LIT-uh-nee",
+      "articleQuote": "…your guest columnist heard a litany of complaints not just about the hacking potential posed by large language models…",
+      "meaning": "A **litany** was originally a church prayer built on a long series of repeated call-and-response lines; today it means any long, droning list — almost always of complaints, excuses or problems. When the columnist hears a litany of complaints at an AI conference, the word tells you the grievances came one after another after another: not a gripe or two, but a full recital.",
+      "examples": [
+        "Asked why they lost, the coach got a litany of excuses: the sun, the referee, the muddy field, the bus being late.",
+        "Her review of the cafeteria was a litany of grievances, starting with the cold pizza and ending with the broken vending machine."
+      ]
+    },
+    {
+      "word": "cohort",
+      "partOfSpeech": "noun",
+      "pronunciation": "KOH-hort",
+      "articleQuote": "The need for law and order is giving rise to a new cohort of AI-infrastructure firms.",
+      "meaning": "A **cohort** is a group that moves through something together — the word originally named a unit of a Roman legion, a few hundred soldiers who marched as one block. Now it covers any batch of people or companies advancing at the same time: your graduating class is a cohort, and the article uses it for the crop of AI-security startups all springing up at once to sell protection to the industry.",
+      "examples": [
+        "Researchers followed a cohort of 1,000 kids born in 2010 to see how screen time affected their sleep.",
+        "The startup accelerator's spring cohort included twelve companies, three of them founded by college students."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "“Picks and shovels” businesses",
+      "articleQuote": "They are not selling chips or compute—the typical picks and shovels of the AI gold rush.",
+      "meaning": "This is one of the classic ideas of **business and investing**. In the California gold rush of 1849, most miners never struck gold — but the people selling them picks, shovels, tents and sturdy work trousers got paid no matter whose claim came up empty. Levi Strauss built a clothing empire that outlived every mining camp. The lesson: when a boom is on, you don't have to gamble on which prospector wins. You can sell what *every* prospector needs.\n\nInvestors use “picks and shovels” as shorthand for exactly that strategy today. Nobody knows which AI lab will end up on top, but all of them need chips, computing power and electricity — a big part of why Nvidia, which sells chips to everyone in the race, became one of the world's most valuable companies. The article adds a twist: the newest picks-and-shovels businesses around AI aren't selling chips at all but *protection* — security tools, trust checks, kill switches — because that turns out to be the thing every company trying to use AI agents needs."
+    },
+    {
+      "name": "Attack surface",
+      "articleQuote": "If organisations adopt autonomous agents, they increase the potential “attack surface” for hackers…",
+      "meaning": "**Attack surface** is a core idea in **cybersecurity**: the sum of every point where an attacker could possibly get in. Think of buildings. A vault with one steel door has a tiny attack surface; a shopping mall with forty entrances, loading docks and skylights has a huge one — and a burglar only needs *one* of them to be unlocked. Every door you add is one more thing that can be left open.\n\nYour phone works the same way: every app you install, every account you link and every permission you grant adds a little more surface for scammers to probe — which is why security experts tell you to delete apps you no longer use. The article's warning is that AI agents expand a company's attack surface dramatically. An agent that can read email, browse the web and move files is, to a hacker, a whole new row of doors — and one that can be tricked with words instead of lockpicks."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The columnist compares AI to the Wild West. In the analogy, who are the missing “settlers”?",
+      "options": [
+        "The frontier scientists at labs like Anthropic and OpenAI",
+        "Makers of cheaper Chinese open-weight models",
+        "The individuals and businesses that would actually put AI agents to work",
+        "Government regulators who could police the industry"
+      ],
+      "answerIndex": 2,
+      "explanation": "The settlers are the everyday users and firms whose adoption would justify the huge investment in frontier AI — and they're staying away because the frontier feels reckless."
+    },
+    {
+      "question": "What is the business of the new “barbed wire” cohort of AI-infrastructure firms?",
+      "options": [
+        "Selling chips and computing power to AI labs",
+        "Building ever more powerful frontier models",
+        "Buying up struggling cyber-security companies",
+        "Selling protection: security, trust fixes and controls for agents that go rogue"
+      ],
+      "answerIndex": 3,
+      "explanation": "Like barbed wire on the real frontier, these firms sell safety — cyber-defences, fixes for untrustworthy agents, kill switches — rather than the usual picks and shovels of chips and compute."
+    },
+    {
+      "question": "An AI agent described as inscrutable is one that…",
+      "options": [
+        "cannot be understood — you can't tell what it's doing or why",
+        "refuses to follow its instructions",
+        "works too slowly to be useful",
+        "copies the behaviour of other models"
+      ],
+      "answerIndex": 0,
+      "explanation": "Inscrutable means impossible to read or figure out — the agent's inner workings are opaque even to its makers, which is exactly why firms find agents hard to trust."
+    },
+    {
+      "question": "Which of these is the best example of a “picks and shovels” business?",
+      "options": [
+        "An AI lab racing to build the smartest model",
+        "An investor betting on which AI lab will win",
+        "A gold miner staking a claim in California",
+        "A chipmaker selling processors to every AI lab in the race"
+      ],
+      "answerIndex": 3,
+      "explanation": "A picks-and-shovels business profits from a boom by supplying what every competitor needs — like selling shovels to all the miners — instead of gambling on any one of them winning."
+    },
+    {
+      "question": "According to Berkeley's Dawn Song, adopting autonomous agents increases a company's “attack surface” because…",
+      "options": [
+        "agents make the company a richer, more famous target",
+        "each agent with access to systems adds new entry points hackers can strike",
+        "agents fight back against hackers and provoke them",
+        "agents automatically publish the company's secrets"
+      ],
+      "answerIndex": 1,
+      "explanation": "An attack surface is the sum of all the ways in; every agent wired into email, files and tools is a fresh set of doors a hacker can try."
+    }
+  ]
+}
