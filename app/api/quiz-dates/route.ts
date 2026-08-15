@@ -1,5 +1,6 @@
 import { currentUser } from "@/lib/auth";
 import { loadSessions } from "@/lib/sessions";
+import { completedQuizDates } from "@/lib/word-quiz";
 import type { Track } from "@/lib/content";
 
 /**
@@ -29,19 +30,7 @@ export async function GET(request: Request) {
     return Response.json({ error: sessions.error }, { status: 500 });
   }
 
-  const dates = [
-    ...new Set(
-      sessions
-        .filter(
-          (s) =>
-            (s.loginUser ?? s.studentName) === user &&
-            !s.cancelled &&
-            !s.inProgress &&
-            (s.track === "junior") === (track === "junior"),
-        )
-        .map((s) => s.date),
-    ),
-  ].sort();
+  const dates = [...completedQuizDates(sessions, user, track)].sort();
 
   return Response.json({ dates });
 }

@@ -1,6 +1,7 @@
 import { currentUserRecord, isOwner } from "@/lib/auth";
 import { listAllUsers, type PublicUser } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
+import { loadWordQuizAttempts, type WordQuizAttempt } from "@/lib/word-quiz";
 import { dateBig } from "@/lib/content";
 import AdminSessions, {
   type Session,
@@ -101,6 +102,91 @@ function classroomPanel(
   );
 }
 
+/**
+ * The compact word-bank-quiz history — one row per recorded round, newest
+ * first. No Details modal: the whole story fits the row (score + the words
+ * missed). Rendered only when the viewer's scope has at least one round.
+ */
+function WordQuizPanel({
+  attempts,
+  showStudent,
+  parentNameFor,
+}: {
+  attempts: WordQuizAttempt[];
+  showStudent: boolean;
+  parentNameFor?: (a: WordQuizAttempt) => string;
+}) {
+  if (attempts.length === 0) return null;
+  const when = (iso: string) =>
+    `${dateBig(iso.slice(0, 10))}, ${new Date(iso).toLocaleTimeString("en-US", {
+      timeZone: "America/Los_Angeles",
+      hour: "numeric",
+      minute: "2-digit",
+    })}`;
+  const th =
+    "border-b-[3px] border-[#0a0a0a] px-3 py-2 text-left font-mono text-[11px] font-bold uppercase tracking-[.1em] text-[#0a0a0a]";
+  const td = "border-b border-stone-300 px-3 py-2 align-top text-sm";
+  return (
+    <section className="mt-10">
+      <h2 className="font-display text-2xl font-normal uppercase text-[#0a0a0a]">
+        Word quizzes
+      </h2>
+      <p className="mt-1 font-sans text-[13px] text-stone-500">
+        Self-quiz rounds on the word bank — missed words come back sooner until
+        they&apos;re mastered.
+      </p>
+      <div className="mt-3 overflow-x-auto border-[3px] border-[#0a0a0a] bg-white">
+        <table className="w-full border-collapse">
+          <thead>
+            <tr>
+              <th className={th}>When</th>
+              {showStudent && <th className={th}>Student</th>}
+              {parentNameFor && <th className={th}>Parent</th>}
+              <th className={th}>Track</th>
+              <th className={th}>Score</th>
+              <th className={th}>Missed words</th>
+            </tr>
+          </thead>
+          <tbody>
+            {attempts.map((a) => (
+              <tr key={a.id} className="last:[&>td]:border-b-0">
+                <td className={`${td} whitespace-nowrap text-stone-600`}>
+                  {when(a.createdAt)}
+                </td>
+                {showStudent && (
+                  <td className={`${td} font-bold text-[#0a0a0a]`}>
+                    {a.username}
+                  </td>
+                )}
+                {parentNameFor && (
+                  <td className={`${td} text-stone-600`}>{parentNameFor(a)}</td>
+                )}
+                <td className={td}>
+                  <span className="font-mono text-[11px] font-bold uppercase tracking-[.08em] text-stone-500">
+                    {a.track === "junior" ? "Junior" : "Regular"}
+                  </span>
+                </td>
+                <td className={`${td} whitespace-nowrap font-bold text-[#0a0a0a]`}>
+                  {a.score} / {a.total}
+                </td>
+                <td className={`${td} text-stone-600`}>
+                  {a.missed.length === 0 ? (
+                    <span className="font-mono text-[11px] font-bold uppercase tracking-[.08em] text-emerald-700">
+                      None
+                    </span>
+                  ) : (
+                    a.missed.join(", ")
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
 export default async function AdminPage() {
   // One record read serves both identity and role — currentUser() followed by
   // isAdmin() would fetch the same rc_users row twice. Every DB round trip
@@ -132,10 +218,13 @@ export default async function AdminPage() {
 
   // Sessions and the roster are independent reads — overlap them. Students
   // never need the roster, so theirs stays a single read.
-  const [result, allUsers] = await Promise.all([
+  const [result, allUsers, wordAttemptsRaw] = await Promise.all([
     loadSessions(),
     admin ? listAllUsers() : Promise.resolve<PublicUser[]>([]),
+    loadWordQuizAttempts(),
   ]);
+  // A failed attempts read never blocks the page — the section just hides.
+  const wordAttempts = wordAttemptsRaw ?? [];
 
   if ("error" in result) {
     return (
@@ -177,6 +266,10 @@ export default async function AdminPage() {
             viewerUser={user}
           />
         )}
+        <WordQuizPanel
+          attempts={wordAttempts.filter((a) => a.username === user)}
+          showStudent={false}
+        />
       </div>
     );
   }
@@ -203,6 +296,12 @@ export default async function AdminPage() {
           for its full report card, recording, and transcript.
         </p>
         {classroomPanel(groups, false, user)}
+        <WordQuizPanel
+          attempts={wordAttempts.filter(
+            (a) => a.parentId === user || roster.has(a.username),
+          )}
+          showStudent
+        />
       </div>
     );
   }
@@ -264,6 +363,14 @@ export default async function AdminPage() {
           ]}
         />
       </div>
+      <WordQuizPanel
+        attempts={wordAttempts}
+        showStudent
+        parentNameFor={(a) => {
+          const uname = a.parentId || studentToParent.get(a.username) || "";
+          return parentDisplay.get(uname) || uname || "—";
+        }}
+      />
     </div>
   );
 }

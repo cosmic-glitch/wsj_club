@@ -1,6 +1,7 @@
 import { getAllReadings, type Track } from "@/lib/content";
 import { audioSrcFor } from "@/lib/handout-audio";
 import WordBankList, { type BankDay } from "@/components/WordBankList";
+import WordQuiz from "@/components/WordQuiz";
 
 /** "2026-07-08" → "Jul 8" (rendered uppercase in the date column). */
 function dateTag(date: string): string {
@@ -57,6 +58,8 @@ export default function WordBank({ track = "senior" }: { track?: Track }) {
           first.
         </p>
       </header>
+
+      {days.length > 0 && <WordQuiz track={track} />}
 
       {days.length === 0 ? (
         <p className="mt-10 border-[3px] border-[#0a0a0a] p-8 text-center font-mono text-sm font-bold uppercase tracking-[.08em] text-[#0a0a0a]">
