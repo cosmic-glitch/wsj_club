@@ -25,16 +25,17 @@ type Answered = Pick<
   "word" | "date" | "kind" | "prompt" | "options" | "answerIndex"
 > & { pickedIndex: number };
 
+/**
+ * Deliberately NO total word count here: the quiz pool dedupes words that
+ * appeared in more than one reading (one mastery entry per word), so its
+ * total runs slightly under the list's per-reading count below — showing
+ * both invited "why don't these match?". Only the two numbers that don't
+ * sum to a total survive: mastered, and due today.
+ */
 function SummaryStrip({ summary }: { summary: MasterySummary }) {
-  const bits = [
-    `${summary.total} ${summary.total === 1 ? "word" : "words"}`,
-    `${summary.mastered} mastered`,
-    `${summary.learning} learning`,
-    `${summary.fresh} new`,
-  ];
   return (
     <p className="font-mono text-xs font-bold uppercase tracking-[.1em] text-stone-500">
-      {bits.join(" · ")}
+      {`${summary.mastered} ${summary.mastered === 1 ? "word" : "words"} mastered`}
       {summary.due > 0 && (
         <span className="ml-2 bg-[#ffe600] px-1.5 py-0.5 text-[#0a0a0a]">
           {summary.due} due for review
@@ -170,9 +171,9 @@ export default function WordQuiz({ track = "senior" }: { track?: Track }) {
         <div className="space-y-4 p-4 min-[681px]:p-5">
           <SummaryStrip summary={summary} />
           <p className="text-sm leading-relaxed text-stone-600">
-            Ten quick questions on the words in your bank. Words you miss come
-            back sooner; words you keep getting right show up less and less
-            until they&apos;re mastered.
+            Test yourself on all the words you&apos;ve read so far. Words you
+            miss come back sooner; words you keep getting right show up less
+            and less until they&apos;re mastered.
           </p>
           {error && (
             <p className="border-2 border-red-500 bg-red-50 px-3 py-2 font-mono text-xs font-bold uppercase tracking-[.08em] text-red-900">
@@ -185,9 +186,7 @@ export default function WordQuiz({ track = "senior" }: { track?: Track }) {
             disabled={phase === "starting"}
             className="border-2 border-[#0a0a0a] bg-[#0a0a0a] px-5 py-2.5 font-mono text-sm font-bold uppercase tracking-[.08em] text-[#ffe600] transition enabled:hover:bg-[#ffe600] enabled:hover:text-[#0a0a0a] disabled:cursor-wait disabled:opacity-60"
           >
-            {phase === "starting"
-              ? "Picking your words…"
-              : `Quiz me · ${Math.min(10, summary.total)} words`}
+            {phase === "starting" ? "Picking your words…" : "Quiz me"}
           </button>
         </div>
       )}
