@@ -1,0 +1,624 @@
+[
+  {
+    "k": "ostensibly",
+    "t": "ostensibly",
+    "kind": "vocab",
+    "pron": "ah-STEN-sih-blee",
+    "forms": [
+      "ostensibly"
+    ],
+    "text": "As it appears or is claimed on the surface, with a hint that the reality may be different. The article says China can switch off oil demand \"ostensibly at low economic cost\": that is the official picture, but the word leaves room for doubt about the true cost.",
+    "audio": true
+  },
+  {
+    "k": "requisition",
+    "t": "requisition",
+    "kind": "vocab",
+    "pron": "rek-wih-ZIH-shun",
+    "forms": [
+      "requisition"
+    ],
+    "text": "To officially demand and take something for government or military use, by authority rather than by asking. Here the Chinese state can requisition commercial oil stocks, meaning it can simply take over the barrels its companies were storing to sell for profit.",
+    "audio": true
+  },
+  {
+    "k": "spectre",
+    "t": "spectre",
+    "kind": "vocab",
+    "pron": "SPEK-ter",
+    "forms": [
+      "spectre"
+    ],
+    "text": "Literally a ghost; in writing, a looming threat that haunts people before it arrives. The mere spectre of a \"superglut\", the fear of far too much oil, was enough to push prices down, letting China buy cheap. Americans spell it specter.",
+    "audio": true
+  },
+  {
+    "k": "opec",
+    "t": "OPEC",
+    "kind": "name",
+    "forms": [
+      "OPEC+",
+      "OPEC"
+    ],
+    "text": "The Organisation of the Petroleum Exporting Countries, a club of oil-selling nations led by Saudi Arabia that props up prices by agreeing production limits. OPEC+ is the wider group of 21 countries that includes Russia and other allied producers.",
+    "audio": true
+  },
+  {
+    "k": "brent",
+    "t": "Brent",
+    "kind": "name",
+    "forms": [
+      "Brent"
+    ],
+    "text": "The world's benchmark oil price, named after a North Sea oil field. When traders or headlines say \"oil is at $80\", they usually mean the price of a barrel of Brent crude.",
+    "audio": true
+  },
+  {
+    "k": "strait-of-hormuz",
+    "t": "Strait of Hormuz",
+    "kind": "name",
+    "forms": [
+      "Strait of Hormuz"
+    ],
+    "text": "The narrow waterway between Iran and Arabia that connects the Persian Gulf to the open ocean. Roughly a fifth of the world's oil ships through it, so blocking it, as Iran does in this story, traps huge volumes of crude inside the Gulf.",
+    "audio": true
+  },
+  {
+    "k": "b-d",
+    "t": "b/d",
+    "kind": "name",
+    "forms": [
+      "b/d"
+    ],
+    "text": "Barrels per day, the standard unit for measuring oil flows. A barrel is 159 litres; the world burns about 100m b/d, so China cutting 5.5m b/d is a serious slice of global demand.",
+    "audio": true
+  },
+  {
+    "k": "central-planners",
+    "t": "central planners",
+    "kind": "name",
+    "forms": [
+      "central planners"
+    ],
+    "text": "Government officials who direct an economy from the top, deciding what gets produced, imported or rationed, instead of leaving those choices to markets. China's system gives its central planners the power to move the whole country's oil demand at once.",
+    "audio": true
+  },
+  {
+    "k": "floating-storage",
+    "t": "floating storage",
+    "kind": "name",
+    "forms": [
+      "floating storage"
+    ],
+    "text": "Oil kept on board tankers anchored at sea, used as extra warehouse space when land tanks are full or when owners are waiting for better prices. It is one of the harder-to-see places China keeps its oil.",
+    "audio": true
+  },
+  {
+    "k": "refined-products",
+    "t": "refined products",
+    "kind": "name",
+    "forms": [
+      "refined products"
+    ],
+    "text": "The useful fuels a refinery makes out of crude oil: petrol, diesel, jet fuel and the rest. Crude itself powers nothing; it is the refined products that go into engines, which is why China's export ban on them mattered.",
+    "audio": true
+  },
+  {
+    "k": "involution",
+    "t": "involution",
+    "kind": "name",
+    "forms": [
+      "involution"
+    ],
+    "text": "A buzzword in China for competition so fierce it becomes self-defeating: firms pile into the same industries, build more capacity than anyone needs, and grind down each other's profits. Here it explains why China had mountains of unsold plastics to fall back on.",
+    "audio": true
+  },
+  {
+    "k": "shaved-off",
+    "t": "shaved off",
+    "kind": "phrase",
+    "forms": [
+      "shaved off",
+      "shaved",
+      "shave"
+    ],
+    "text": "To shave something off is to trim a small amount from a total, the way a razor takes off a thin layer. Rationing shaved off a chunk of demand, and China's import cuts shaved $30 or more off the oil price.",
+    "audio": true
+  },
+  {
+    "k": "chugged-along",
+    "t": "chugged along",
+    "kind": "phrase",
+    "forms": [
+      "chugged along"
+    ],
+    "text": "To keep moving forward steadily, if unspectacularly, like an old train engine. Saying China's GDP has chugged along just fine means the economy kept growing normally even while oil imports were slashed.",
+    "audio": true
+  },
+  {
+    "k": "snapped-up",
+    "t": "snapped up",
+    "kind": "phrase",
+    "forms": [
+      "snapped up"
+    ],
+    "text": "To buy something quickly and eagerly before the chance disappears, the way limited-edition sneakers get snapped up in minutes. China snapped up 200m barrels while oil was cheap.",
+    "audio": true
+  },
+  {
+    "k": "on-the-cheap",
+    "t": "on the cheap",
+    "kind": "phrase",
+    "forms": [
+      "on the cheap"
+    ],
+    "text": "At a low price, or spending as little as possible. Buying oil on the cheap while everyone feared a glut is exactly the buy-low half of a smart trade.",
+    "audio": true
+  },
+  {
+    "k": "under-the-bonnet",
+    "t": "under the bonnet",
+    "kind": "phrase",
+    "forms": [
+      "under the bonnet"
+    ],
+    "text": "The bonnet is what the British call a car's hood, so a look under the bonnet means examining how something really works inside, not just its outside appearance. Here it introduces the detailed evidence on China's fuel use.",
+    "audio": true
+  },
+  {
+    "k": "picking-up-the-slack",
+    "t": "picking up the slack",
+    "kind": "phrase",
+    "forms": [
+      "picking up the slack"
+    ],
+    "text": "To take over the work something or someone else has stopped doing, like a teammate covering for a player who went off injured. Trains are picking up the slack from the domestic flights China cancelled.",
+    "audio": true
+  },
+  {
+    "k": "munitions",
+    "t": "munitions",
+    "kind": "word",
+    "forms": [
+      "munitions"
+    ],
+    "text": "Military weapons and ammunition: missiles, shells, bombs. Iranian munitions are what made the Strait of Hormuz too dangerous for tankers to pass.",
+    "audio": true
+  },
+  {
+    "k": "crude",
+    "t": "crude",
+    "kind": "word",
+    "forms": [
+      "crude"
+    ],
+    "text": "Short for crude oil: petroleum as it comes out of the ground, before refining. In everyday English crude means rough or unrefined, and crude oil is exactly that, the raw, unprocessed stuff.",
+    "audio": true
+  },
+  {
+    "k": "petro-monarchs",
+    "t": "petro-monarchs",
+    "kind": "word",
+    "forms": [
+      "petro-monarchs"
+    ],
+    "text": "The royal rulers of oil-rich states, here the kings and emirs of Saudi Arabia and the United Arab Emirates. \"Petro\" tags them as monarchs whose power and wealth rest on petroleum.",
+    "audio": true
+  },
+  {
+    "k": "conduit",
+    "t": "conduit",
+    "kind": "word",
+    "forms": [
+      "conduit"
+    ],
+    "text": "A channel or pipe that something flows through, and figuratively any route by which things pass. Here the conduit is the Strait of Hormuz itself, which the pipelines were built to bypass.",
+    "audio": true
+  },
+  {
+    "k": "rationing",
+    "t": "rationing",
+    "kind": "word",
+    "forms": [
+      "rationing"
+    ],
+    "text": "Limiting how much of something each person or business may use, usually in a shortage. Poorer countries rationed fuel during the crisis, which cut demand and helped keep prices from exploding.",
+    "audio": true
+  },
+  {
+    "k": "benchmark",
+    "t": "benchmark",
+    "kind": "word",
+    "forms": [
+      "benchmark"
+    ],
+    "text": "A standard reference point that other things are measured against. Brent is the global benchmark for oil: thousands of contracts around the world set their prices relative to it.",
+    "audio": true
+  },
+  {
+    "k": "cartel",
+    "t": "cartel",
+    "kind": "word",
+    "forms": [
+      "cartel"
+    ],
+    "text": "A group of producers who agree not to compete, usually by limiting supply so prices stay high. OPEC is the world's most famous cartel; in most countries a private cartel would be illegal.",
+    "audio": true
+  },
+  {
+    "k": "quotas",
+    "t": "quotas",
+    "kind": "word",
+    "forms": [
+      "quotas"
+    ],
+    "text": "Fixed limits on an amount, here the ceiling each OPEC member accepts on how much oil it may pump. Quotas only work if members resist the temptation to cheat and pump more.",
+    "audio": true
+  },
+  {
+    "k": "fragmented",
+    "t": "fragmented",
+    "kind": "word",
+    "forms": [
+      "fragmented"
+    ],
+    "text": "Broken into many separate pieces. Oil buyers are fragmented, millions of drivers, airlines and factories in many countries, which is why they normally cannot coordinate the way a small club of sellers can.",
+    "audio": true
+  },
+  {
+    "k": "statist",
+    "t": "statist",
+    "kind": "word",
+    "forms": [
+      "statist"
+    ],
+    "text": "Describes a system where the state, the government, controls much of the economy rather than leaving it to private markets. Calling China statist explains why its government can simply order refiners and importers around.",
+    "audio": true
+  },
+  {
+    "k": "unilaterally",
+    "t": "unilaterally",
+    "kind": "word",
+    "forms": [
+      "unilaterally"
+    ],
+    "text": "Acting alone, without needing anyone else's agreement. OPEC+ must get 21 countries to agree; China's planners can act unilaterally on the orders of one man.",
+    "audio": true
+  },
+  {
+    "k": "striven",
+    "t": "striven",
+    "kind": "word",
+    "forms": [
+      "striven"
+    ],
+    "text": "The past participle of strive, to try hard for something over a long period. OPEC has striven for four decades to keep prices high.",
+    "audio": true
+  },
+  {
+    "k": "levers",
+    "t": "levers",
+    "kind": "word",
+    "forms": [
+      "levers",
+      "lever"
+    ],
+    "text": "Literally the bars you pull to operate a machine; figuratively, the tools a government can pull to make things happen. China's three levers here are its stockpiles, its export controls and its power to curb demand.",
+    "audio": true
+  },
+  {
+    "k": "superglut",
+    "t": "superglut",
+    "kind": "word",
+    "forms": [
+      "superglut"
+    ],
+    "text": "A glut is a supply so large it swamps demand and crushes prices; a superglut is an extreme one. The mere expectation of a superglut in oil was pushing prices down before the war.",
+    "audio": true
+  },
+  {
+    "k": "depressed",
+    "t": "depressed",
+    "kind": "word",
+    "forms": [
+      "depressed"
+    ],
+    "text": "Here it has nothing to do with sadness: to depress a price is to push it down and hold it low. Fear of a superglut depressed crude prices, which is what let China buy cheaply.",
+    "audio": true
+  },
+  {
+    "k": "ample",
+    "t": "ample",
+    "kind": "word",
+    "forms": [
+      "ample"
+    ],
+    "text": "More than enough, plentiful. China's reserves were already ample, a billion barrels, before it added 200m more.",
+    "audio": true
+  },
+  {
+    "k": "forgo",
+    "t": "forgo",
+    "kind": "word",
+    "forms": [
+      "forgo"
+    ],
+    "text": "To go without something, to skip it voluntarily. The extra barrels China bought for storage were purchases it could later forgo, letting it cut imports without cutting actual use.",
+    "audio": true
+  },
+  {
+    "k": "cargoes",
+    "t": "cargoes",
+    "kind": "word",
+    "forms": [
+      "cargoes",
+      "cargo"
+    ],
+    "text": "The goods a ship carries; one tanker's load of oil is a cargo. China's last pre-war Gulf cargoes arrived in late April, and after that it lived off storage.",
+    "audio": true
+  },
+  {
+    "k": "drawing-down",
+    "t": "drawing down",
+    "kind": "word",
+    "forms": [
+      "drawing down",
+      "drawdowns",
+      "draws"
+    ],
+    "text": "To draw down a stockpile is to use up what is in storage instead of buying new supply; the amounts taken out are drawdowns. China met months of demand by drawing down its brimming reserves.",
+    "audio": true
+  },
+  {
+    "k": "brimming",
+    "t": "brimming",
+    "kind": "word",
+    "forms": [
+      "brimming"
+    ],
+    "text": "Full to the very top, like a glass filled to the brim. China's oil tanks were brimming because it had spent a year buying cheap crude.",
+    "audio": true
+  },
+  {
+    "k": "inventories",
+    "t": "inventories",
+    "kind": "word",
+    "forms": [
+      "inventories"
+    ],
+    "text": "The stock of goods a company or country holds in storage. China's oil inventories fell by 70m barrels in three months; its factories also sat on big inventories of unsold plastics.",
+    "audio": true
+  },
+  {
+    "k": "stocks",
+    "t": "stocks",
+    "kind": "word",
+    "forms": [
+      "stocks",
+      "stock"
+    ],
+    "text": "In this article, stocks are stored supplies of oil, not shares in companies. Strategic stocks belong to the government for emergencies; commercial stocks are held by firms planning to sell at a profit.",
+    "audio": true
+  },
+  {
+    "k": "exemption",
+    "t": "exemption",
+    "kind": "word",
+    "forms": [
+      "exemption"
+    ],
+    "text": "Official permission not to follow a rule that applies to everyone else. Refiners normally must replace oil they draw from storage within a month, but the state presumably granted an exemption.",
+    "audio": true
+  },
+  {
+    "k": "unwind",
+    "t": "unwind",
+    "kind": "word",
+    "forms": [
+      "unwind"
+    ],
+    "text": "Here it means to cancel or reverse a deal already made, not to relax. Chinese refiners were ordered to unwind export contracts they had already signed.",
+    "audio": true
+  },
+  {
+    "k": "petrochemical",
+    "t": "petrochemical",
+    "kind": "word",
+    "forms": [
+      "petrochemical",
+      "petrochemicals"
+    ],
+    "text": "Chemicals made from petroleum or natural gas, and the industry that makes them. Petrochemical plants turn refinery products like naphtha and LPG into plastics, synthetic rubber and fabrics.",
+    "audio": true
+  },
+  {
+    "k": "naphtha",
+    "t": "naphtha",
+    "kind": "name",
+    "forms": [
+      "naphtha"
+    ],
+    "text": "A light, flammable liquid produced in oil refining, used less as a fuel than as a raw material: petrochemical plants crack it into the building blocks of plastics.",
+    "audio": true
+  },
+  {
+    "k": "lpg",
+    "t": "LPG",
+    "kind": "name",
+    "forms": [
+      "LPG"
+    ],
+    "text": "Liquefied petroleum gas, the propane-butane mix used in gas cylinders and camping stoves, and, at industrial scale, as a feedstock for making plastics. China normally imports a lot of it from the Gulf.",
+    "audio": true
+  },
+  {
+    "k": "feedstocks",
+    "t": "feedstocks",
+    "kind": "word",
+    "forms": [
+      "feedstocks"
+    ],
+    "text": "The raw materials fed into an industrial process, the way flour is a feedstock for a bakery. Naphtha and LPG are the feedstocks China's petrochemical industry turns into polymers.",
+    "audio": true
+  },
+  {
+    "k": "cash-strapped",
+    "t": "cash-strapped",
+    "kind": "word",
+    "forms": [
+      "cash-strapped"
+    ],
+    "text": "Short of money. Small, cash-strapped refiners buy fuel oil instead of crude because it is cheaper to work with.",
+    "audio": true
+  },
+  {
+    "k": "margins",
+    "t": "margins",
+    "kind": "word",
+    "forms": [
+      "margins"
+    ],
+    "text": "Profit margins: the gap between what something costs to make and what it sells for. Refiners earn higher margins on exports than on domestic sales, so keeping fuel at home costs them money the Party is willing to sacrifice.",
+    "audio": true
+  },
+  {
+    "k": "stomach",
+    "t": "stomach",
+    "kind": "word",
+    "forms": [
+      "stomach"
+    ],
+    "text": "As a verb, to stomach something is to tolerate it, to put up with something unpleasant. The Communist Party can stomach the hit to refiners' profits because it cares more about oil security.",
+    "audio": true
+  },
+  {
+    "k": "gargantuan",
+    "t": "gargantuan",
+    "kind": "word",
+    "forms": [
+      "gargantuan"
+    ],
+    "text": "Enormous, giant-sized, from Gargantua, a giant in French literature. The word stresses just how huge China's 5.5m b/d cut in imports really is.",
+    "audio": true
+  },
+  {
+    "k": "curbing",
+    "t": "curbing",
+    "kind": "word",
+    "forms": [
+      "curbing"
+    ],
+    "text": "To curb something is to restrain or hold it back, like a curb keeping cars off the sidewalk. China's third lever was curbing domestic demand: making its own people and firms burn less fuel.",
+    "audio": true
+  },
+  {
+    "k": "kerosene",
+    "t": "kerosene",
+    "kind": "word",
+    "forms": [
+      "kerosene"
+    ],
+    "text": "A fuel refined from oil, used in lamps and heaters and, in a highly refined form, as jet fuel. Less flying means less kerosene burned.",
+    "audio": true
+  },
+  {
+    "k": "straitened",
+    "t": "straitened",
+    "kind": "word",
+    "forms": [
+      "straitened"
+    ],
+    "text": "Restricted and short of money or resources; straitened circumstances are hard times that force belt-tightening. China's petrochemical industry is adapting to straitened circumstances now that Gulf feedstocks are cut off.",
+    "audio": true
+  },
+  {
+    "k": "polymers",
+    "t": "polymers",
+    "kind": "word",
+    "forms": [
+      "polymers"
+    ],
+    "text": "Materials built from long chains of repeating molecules. Plastics like PVC and polyethylene, synthetic rubber, nylon and polyester are all polymers, and most are made from oil.",
+    "audio": true
+  },
+  {
+    "k": "edict",
+    "t": "edict",
+    "kind": "word",
+    "forms": [
+      "edict"
+    ],
+    "text": "An official order from an authority that must be obeyed, a word with the flavour of emperors and decrees. The government edict here told industry to prioritise fuel over feedstocks.",
+    "audio": true
+  },
+  {
+    "k": "byproduct",
+    "t": "byproduct",
+    "kind": "word",
+    "forms": [
+      "byproduct"
+    ],
+    "text": "Something produced incidentally while making something else. Ethane comes out as a gaseous byproduct of oil refining, and China's chemists found ways to make polymers from it.",
+    "audio": true
+  },
+  {
+    "k": "belt-tightening",
+    "t": "belt-tightening",
+    "kind": "word",
+    "forms": [
+      "belt-tightening"
+    ],
+    "text": "Cutting back and making do with less, as if tightening your belt after losing weight from eating less. It sums up all of China's fuel-saving measures at once.",
+    "audio": true
+  },
+  {
+    "k": "overcapacity",
+    "t": "overcapacity",
+    "kind": "word",
+    "forms": [
+      "overcapacity"
+    ],
+    "text": "When an industry can produce more than anyone wants to buy. Years of overcapacity left China with warehouses of unsold plastics, which became a useful cushion in this crisis.",
+    "audio": true
+  },
+  {
+    "k": "buffers",
+    "t": "buffers",
+    "kind": "word",
+    "forms": [
+      "buffers"
+    ],
+    "text": "Reserves that absorb a shock, the way a phone case absorbs a drop. China's buffers, stored oil and stockpiled materials, are why prices at home did not spike when imports were cut.",
+    "audio": true
+  },
+  {
+    "k": "hangover",
+    "t": "hangover",
+    "kind": "word",
+    "forms": [
+      "hangover"
+    ],
+    "text": "Here, the lingering after-effects of a past problem, not the morning after a party. China's slow growth owes more to a hangover from its property crisis than to any oil shortage.",
+    "audio": true
+  },
+  {
+    "k": "think-tank",
+    "t": "think-tank",
+    "kind": "word",
+    "forms": [
+      "think-tank"
+    ],
+    "text": "An organisation of researchers who study policy questions and publish analysis, like a university department without students. The Oxford Institute for Energy Studies is one.",
+    "audio": true
+  },
+  {
+    "k": "fractious",
+    "t": "fractious",
+    "kind": "word",
+    "forms": [
+      "fractious"
+    ],
+    "text": "Quarrelsome and hard to keep together, like a group that keeps bickering. Calling OPEC increasingly fractious points at members cheating on quotas and the UAE walking out altogether.",
+    "audio": true
+  }
+]

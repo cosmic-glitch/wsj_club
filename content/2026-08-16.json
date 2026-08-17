@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-16",
+  "title": "China is now the world’s great oil power",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/08/09/china-is-now-the-worlds-great-oil-power",
+  "articlePageUrl": "/articles/2026-08-16.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "ostensibly",
+      "partOfSpeech": "adverb",
+      "pronunciation": "ah-STEN-sih-blee",
+      "articleQuote": "This ability to turn oil demand on and off, ostensibly at low economic cost, allows the world’s biggest oil importer to move prices…",
+      "meaning": "Ostensibly means as it appears or is claimed on the surface, with a quiet hint that the reality may be different. It is the writer's way of reporting what something looks like without fully vouching for it. When the article says China can switch off oil demand \"ostensibly at low economic cost,\" it is passing along the official picture while leaving room for doubt about what the cuts really cost the country.",
+      "examples": [
+        "He was ostensibly at the library studying for finals, but his location kept showing the food court.",
+        "The team meeting was ostensibly about scheduling, though everyone knew it was really about benching the starting goalie."
+      ]
+    },
+    {
+      "word": "requisition",
+      "partOfSpeech": "verb",
+      "pronunciation": "rek-wih-ZIH-shun",
+      "articleQuote": "But since those firms are state-owned, and the state can requisition commercial stock, an exemption was presumably made.",
+      "meaning": "To requisition something is to officially demand and take it for government or military use, by authority rather than by asking. It shows up in wartime and emergencies, when the state claims trucks, buildings or supplies from their owners. In the article, Beijing can requisition the oil that companies were storing to sell for profit, which is why China's commercial stockpiles could be drained on government orders.",
+      "examples": [
+        "After the hurricane, the governor requisitioned school buses to evacuate coastal towns.",
+        "In the movie, the army requisitions the family's farmhouse as a field hospital, and they simply have to move out."
+      ]
+    },
+    {
+      "word": "spectre",
+      "partOfSpeech": "noun",
+      "pronunciation": "SPEK-ter",
+      "articleQuote": "In the 12 months to early 2026, as the spectre of a “superglut” depressed crude prices, China snapped up 200m barrels on the cheap…",
+      "meaning": "A spectre is literally a ghost, but writers almost always use it for a looming threat that haunts people before it actually arrives. Just the fear is enough to change behaviour. In the article, the spectre of a \"superglut,\" the expectation that the world would soon have far too much oil, pushed prices down on its own, and China took advantage by buying 200m cheap barrels. Americans spell it specter.",
+      "examples": [
+        "The spectre of tryout cuts hung over every practice that week.",
+        "Even with good grades, she couldn't shake the spectre of the college rejection letter."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "OPEC (and OPEC+)",
+      "articleQuote": "For four decades OPEC has striven to keep prices high using production quotas.",
+      "meaning": "OPEC, the Organisation of the Petroleum Exporting Countries, sits at the crossroads of *economics* and *geopolitics*. It is a club of oil-selling nations, founded in 1960 and dominated by Saudi Arabia and its Gulf neighbours, that together pumps a huge share of the world's oil. With allied producers, the article notes, it has long controlled about half of global output.\n\nIts power comes from acting as a **cartel**: instead of competing against each other, members agree on production quotas, limits on how much each country may pump. When they all sell less, every barrel becomes scarcer and the world price rises. The famous demonstration came in 1973, when OPEC's Arab members cut output and embargoed sales to countries backing Israel. Oil prices roughly quadrupled and Americans sat in mile-long gas station lines. Since 2016 the club has coordinated with Russia and other outside producers under the name OPEC+, which the article says takes agreement among 21 countries to act.\n\nA cartel's weakness is that every member is tempted to cheat by quietly pumping more than its quota, and unhappy members can walk. That is why the article calls the cartel \"increasingly fractious\": the United Arab Emirates has just quit, and the remaining Gulf members are straining their production capacity. The article's twist is that China now moves prices the way OPEC does, but from the opposite side of the market, as the world's biggest buyer rather than a group of sellers."
+    },
+    {
+      "name": "Oil refining",
+      "articleQuote": "As the world’s second-largest oil refiner, China is usually a big fuel supplier to its Asian neighbours.",
+      "meaning": "Refining is the *industrial chemistry* step between crude oil and everything oil actually does. Crude straight out of the ground is a thick soup of mixed hydrocarbons; you cannot pour it into a car. A refinery heats it in a tall distillation tower, and different products boil off at different levels: gases like LPG near the top, then petrol (gasoline), then jet fuel, then diesel, down to heavy fuel oil and asphalt at the bottom. One barrel of crude comes out the other end as a whole menu of products.\n\nTwo of those products matter beyond fuel. Naphtha and LPG are **feedstocks**, raw materials that petrochemical plants turn into polymers: the PVC, synthetic rubber, nylon and polyester in practically everything you own. Your phone case and your polyester hoodie both started life in a refinery's output stream.\n\nRefining is why China had so many levers to pull in this article. Because it refines more oil than any country except America, it could order refiners to stop exporting fuel and keep the products at home, steer refineries away from export fuels and toward the naphtha and LPG it normally buys from the Gulf, and let petrochemical firms make some polymers from coal and ethane instead. A country that only pumps crude, or only buys it, has none of that flexibility."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "During the Iran war, how did China almost single-handedly keep world oil prices from exploding?",
+      "options": [
+        "It pumped more oil from its own domestic wells",
+        "It sent tankers to escort shipping through the Strait of Hormuz",
+        "It cut its own crude imports roughly in half, by about 5.5m barrels a day",
+        "It lent OPEC members money so they could boost production"
+      ],
+      "answerIndex": 2,
+      "explanation": "Between February and June China slashed its crude imports by 5.5m barrels a day, enough, experts reckon, to shave $30 or more off the Brent benchmark."
+    },
+    {
+      "question": "For four decades, how has OPEC kept oil prices high?",
+      "options": [
+        "Its members agree on production quotas that limit how much each country pumps",
+        "It buys up surplus oil and stores it in strategic reserves",
+        "It places heavy taxes on oil exports to rich countries",
+        "It bans members from selling oil to non-member countries"
+      ],
+      "answerIndex": 0,
+      "explanation": "OPEC works as a cartel: members restrict how much they produce, and the resulting scarcity pushes up the price of every barrel."
+    },
+    {
+      "question": "Which of these was NOT one of the three levers the article says China pulled to slash its oil imports?",
+      "options": [
+        "Drawing down its enormous national and commercial oil stockpiles",
+        "Ordering refiners to stop signing new fuel-export contracts",
+        "Curbing domestic demand, with fewer flights and less driving",
+        "Buying extra discounted crude from Russia to replace Gulf supplies"
+      ],
+      "answerIndex": 3,
+      "explanation": "The three levers were stock management, export controls and curbing domestic demand; buying extra Russian crude is not mentioned as one of them."
+    },
+    {
+      "question": "The article says China can switch off oil demand \"ostensibly at low economic cost.\" What is the word ostensibly signalling?",
+      "options": [
+        "That the low cost has been definitively proven by economists",
+        "That this is how it appears or is claimed, though the reality may differ",
+        "That the government announced the cost officially",
+        "That the low cost will only last a short time"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ostensibly flags the surface appearance or official claim while leaving room for doubt, so the true cost to China's economy may be higher than it looks."
+    },
+    {
+      "question": "When Gulf shipments of naphtha and LPG dried up, what did China's petrochemical firms do?",
+      "options": [
+        "They shut down their plants until the war ended",
+        "They imported finished plastics from Europe instead",
+        "They found ways to make some polymers using coal and ethane instead",
+        "They switched their factories entirely to recycled plastic"
+      ],
+      "answerIndex": 2,
+      "explanation": "With feedstocks scarce and a government edict to prioritise fuel, petrochemical firms worked out how to make some polymers from coal and from ethane, a refining byproduct."
+    }
+  ]
+}
