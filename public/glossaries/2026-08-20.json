@@ -1,0 +1,567 @@
+[
+  {
+    "k": "efficacy",
+    "t": "efficacy",
+    "kind": "vocab",
+    "pron": "EF-ih-kuh-see",
+    "forms": [
+      "efficacy"
+    ],
+    "text": "The power to actually produce the intended result. Ordinary sleeping pills are said to lose efficacy with continued use: the same dose gradually stops working. Not the same as efficiency, which is about avoiding waste; efficacy is about whether something works at all.",
+    "audio": true
+  },
+  {
+    "k": "tantalising",
+    "t": "tantalising",
+    "kind": "vocab",
+    "pron": "TAN-tuh-lye-zing",
+    "forms": [
+      "tantalising"
+    ],
+    "text": "Dangling something desirable just out of reach, the way the mythical king Tantalus stood beneath fruit that rose away whenever he grabbed for it. The ideas about treating depression and addiction are tantalising because they are exciting but still unproven. American spelling: tantalizing.",
+    "audio": true
+  },
+  {
+    "k": "speculative",
+    "t": "speculative",
+    "kind": "vocab",
+    "pron": "SPEK-yuh-luh-tiv",
+    "forms": [
+      "speculative"
+    ],
+    "text": "Based on guesses rather than solid evidence. Using orexin drugs to boost motivation is called a more speculative approach because that science is far less developed than the narcolepsy results. In money contexts, a speculative investment is one that could pay off big or lose everything.",
+    "audio": true
+  },
+  {
+    "k": "peptide",
+    "t": "peptide",
+    "kind": "name",
+    "forms": [
+      "peptide",
+      "peptides"
+    ],
+    "text": "A short chain of amino acids, the building blocks of proteins. Many of the body's chemical messengers, including GLP-1 and the orexins, are peptides.",
+    "audio": true
+  },
+  {
+    "k": "glp-1",
+    "t": "GLP-1",
+    "kind": "name",
+    "forms": [
+      "GLP-1",
+      "GLP-1s"
+    ],
+    "text": "Glucagon-like peptide-1, the gut hormone that Ozempic-style drugs imitate. Developed for diabetes, those drugs turned out to help with weight, heart disease and more, which is the success story this article says orexins might repeat.",
+    "audio": true
+  },
+  {
+    "k": "orexin",
+    "t": "orexins",
+    "kind": "name",
+    "forms": [
+      "orexins",
+      "orexin",
+      "Orexins",
+      "Orexin"
+    ],
+    "text": "The pair of brain chemicals at the center of this story. Made in the hypothalamus, they keep you awake and help run attention, motivation and reward; people with narcolepsy type 1 have lost the neurons that make them.",
+    "audio": true
+  },
+  {
+    "k": "neurotransmitter",
+    "t": "neurotransmitter",
+    "kind": "name",
+    "forms": [
+      "neurotransmitters",
+      "neurotransmitter"
+    ],
+    "text": "A chemical that carries messages between neurons, the brain's wiring cells. One neuron releases it, the next detects it, and a signal passes along.",
+    "audio": true
+  },
+  {
+    "k": "receptor",
+    "t": "receptor",
+    "kind": "name",
+    "forms": [
+      "receptors",
+      "receptor"
+    ],
+    "text": "A docking site on a cell's surface that a chemical messenger fits into, like a key into a lock. When the right molecule binds, the cell switches its behavior.",
+    "audio": true
+  },
+  {
+    "k": "agonist",
+    "t": "agonist",
+    "kind": "name",
+    "forms": [
+      "agonist",
+      "agonists"
+    ],
+    "text": "A drug that fits a receptor and switches it on, copying what the body's own messenger would do. Oveporexton is an orexin agonist: it stands in for the missing wakefulness signal.",
+    "audio": true
+  },
+  {
+    "k": "antagonist",
+    "t": "antagonist",
+    "kind": "name",
+    "forms": [
+      "antagonists",
+      "antagonist"
+    ],
+    "text": "A drug that blocks a receptor so the body's own messenger can't switch it on. Orexin antagonists mute the brain's wakefulness signal, which is why they are sold as insomnia treatments.",
+    "audio": true
+  },
+  {
+    "k": "narcolepsy",
+    "t": "narcolepsy",
+    "kind": "name",
+    "forms": [
+      "narcolepsy",
+      "narcoleptic"
+    ],
+    "text": "A disorder in which the brain cannot properly maintain wakefulness, leaving people extremely sleepy by day and liable to fall asleep without warning. Type 1 comes with cataplexy; type 2 does not.",
+    "audio": true
+  },
+  {
+    "k": "cataplexy",
+    "t": "cataplexy",
+    "kind": "name",
+    "forms": [
+      "cataplexy",
+      "Cataplexy"
+    ],
+    "text": "A sudden loss of muscle control, often triggered by a strong emotion like laughter, that makes a fully awake person go limp and collapse. It happens when the paralysis meant for dream sleep fires at the wrong time.",
+    "audio": true
+  },
+  {
+    "k": "hypothalamus",
+    "t": "hypothalamus",
+    "kind": "name",
+    "forms": [
+      "hypothalamus"
+    ],
+    "text": "A small region deep in the brain, tucked behind the eyes, that runs basic drives like hunger, thirst, temperature and sleep. The orexin-producing neurons live there.",
+    "audio": true
+  },
+  {
+    "k": "rem-sleep",
+    "t": "REM sleep",
+    "kind": "name",
+    "forms": [
+      "REM"
+    ],
+    "text": "Rapid eye movement sleep, the phase when dreams are most vivid. The brain paralyses the body during REM so you do not act your dreams out.",
+    "audio": true
+  },
+  {
+    "k": "blood-brain-barrier",
+    "t": "blood-brain barrier",
+    "kind": "name",
+    "forms": [
+      "blood-brain barrier"
+    ],
+    "text": "A protective filter in the brain's blood vessels that keeps most molecules out. It shields the brain from harm but also makes brain drugs hard to design, since a medicine must slip through it to work.",
+    "audio": true
+  },
+  {
+    "k": "placebo",
+    "t": "placebo",
+    "kind": "name",
+    "forms": [
+      "placebo"
+    ],
+    "text": "A fake treatment, such as a sugar pill, given to some patients in a trial. Comparing them with patients on the real drug shows how much of any improvement comes from the medicine and how much from expectation.",
+    "audio": true
+  },
+  {
+    "k": "gaba",
+    "t": "GABA",
+    "kind": "name",
+    "forms": [
+      "GABA"
+    ],
+    "text": "The brain's main calming, signal-damping neurotransmitter. Conventional sleeping pills boost GABA, which sedates the whole brain rather than producing natural sleep.",
+    "audio": true
+  },
+  {
+    "k": "sleep-apnoea",
+    "t": "sleep apnoea",
+    "kind": "name",
+    "forms": [
+      "sleep apnoea"
+    ],
+    "text": "A disorder in which breathing repeatedly stops during sleep, wrecking its quality; apnoea is the British spelling of apnea. It is far more common than narcolepsy.",
+    "audio": true
+  },
+  {
+    "k": "idiopathic-hypersomnia",
+    "t": "idiopathic hypersomnia",
+    "kind": "name",
+    "forms": [
+      "idiopathic hypersomnia"
+    ],
+    "text": "A condition of extreme daytime sleepiness with no known cause; idiopathic is medicine's formal word for arising on its own, cause unknown.",
+    "audio": true
+  },
+  {
+    "k": "stimulants",
+    "t": "stimulants",
+    "kind": "name",
+    "forms": [
+      "stimulants"
+    ],
+    "text": "Drugs that speed up the nervous system, boosting alertness and energy; caffeine is the everyday example. Doctors prescribe stronger ones for narcolepsy and ADHD, but they can raise anxiety and blood pressure and can be addictive.",
+    "audio": true
+  },
+  {
+    "k": "methylphenidate",
+    "t": "methylphenidate",
+    "kind": "name",
+    "forms": [
+      "methylphenidate"
+    ],
+    "text": "A prescription stimulant better known by the brand name Ritalin, widely used for ADHD and, as here, to keep narcolepsy patients awake.",
+    "audio": true
+  },
+  {
+    "k": "homeostasis",
+    "t": "homeostasis",
+    "kind": "name",
+    "forms": [
+      "homeostasis"
+    ],
+    "text": "Biology's word for the body's self-balancing: the systems that hold temperature, blood sugar, hunger and sleep at steady set points, adjusting automatically whenever they drift.",
+    "audio": true
+  },
+  {
+    "k": "biotech",
+    "t": "biotech",
+    "kind": "name",
+    "forms": [
+      "biotech"
+    ],
+    "text": "Short for biotechnology company: a firm, usually smaller than the pharma giants, that develops drugs from biological science. Big drugmakers often buy biotechs to acquire their experimental medicines.",
+    "audio": true
+  },
+  {
+    "k": "norepinephrine",
+    "t": "norepinephrine",
+    "kind": "name",
+    "forms": [
+      "norepinephrine"
+    ],
+    "text": "One of the brain's alertness chemicals, a close cousin of adrenaline. Orexin keeps norepinephrine and its partner systems working together, which is part of how it maintains wakefulness.",
+    "audio": true
+  },
+  {
+    "k": "pharma",
+    "t": "pharma",
+    "kind": "name",
+    "forms": [
+      "Pharma’s"
+    ],
+    "text": "Shorthand for the pharmaceutical industry, the world's drug-making companies as a group.",
+    "audio": true
+  },
+  {
+    "k": "regulator",
+    "t": "regulator",
+    "kind": "word",
+    "forms": [
+      "regulator"
+    ],
+    "text": "Here, a government agency that decides what is allowed, not a machine part. America's drug regulator is the FDA, which must approve every new medicine before it can be sold.",
+    "audio": true
+  },
+  {
+    "k": "afflict",
+    "t": "afflict",
+    "kind": "word",
+    "forms": [
+      "afflict"
+    ],
+    "text": "To cause suffering to someone, the way a disease does. Saying narcolepsy afflicts one person in 2,000 means one in every 2,000 people lives with it.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckons",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "British English for estimates or believes after doing some figuring. When a bank reckons orexin drugs could earn $16 billion a year, that is its calculated guess, not a settled fact.",
+    "audio": true
+  },
+  {
+    "k": "crop",
+    "t": "crop",
+    "kind": "word",
+    "forms": [
+      "crop"
+    ],
+    "text": "Not plants here: a crop is the current batch or group of something. The current crop of narcolepsy drugs means the ones on the market right now.",
+    "audio": true
+  },
+  {
+    "k": "crosshairs",
+    "t": "crosshairs",
+    "kind": "word",
+    "forms": [
+      "crosshairs"
+    ],
+    "text": "The aiming lines in a rifle scope. To be in someone's crosshairs is to be their target; the sleep disorders in drugmakers' crosshairs are the ones they plan to treat next.",
+    "audio": true
+  },
+  {
+    "k": "upstream",
+    "t": "upstream",
+    "kind": "word",
+    "forms": [
+      "upstream"
+    ],
+    "text": "Closer to the source, the way upstream on a river is toward where the water starts. A drug that works upstream acts on the cause of a process rather than patching its downstream effects one by one.",
+    "audio": true
+  },
+  {
+    "k": "fortunes",
+    "t": "fortunes",
+    "kind": "word",
+    "forms": [
+      "fortunes"
+    ],
+    "text": "A company's overall success and prospects, not just its cash. Saying GLP-1s transformed Eli Lilly's fortunes means the drugs changed the company's whole trajectory.",
+    "audio": true
+  },
+  {
+    "k": "shed",
+    "t": "shed",
+    "kind": "word",
+    "forms": [
+      "shed"
+    ],
+    "text": "To lose or drop something, the way a snake sheds its skin. Shedding weight simply means losing it.",
+    "audio": true
+  },
+  {
+    "k": "prone",
+    "t": "prone",
+    "kind": "word",
+    "forms": [
+      "prone"
+    ],
+    "text": "Inclined or likely to do something, usually something unwanted. Being prone to nod off means falling asleep easily and often.",
+    "audio": true
+  },
+  {
+    "k": "ailments",
+    "t": "ailments",
+    "kind": "word",
+    "forms": [
+      "ailments"
+    ],
+    "text": "Illnesses or health problems, usually ongoing ones rather than sudden emergencies.",
+    "audio": true
+  },
+  {
+    "k": "sedation",
+    "t": "sedation",
+    "kind": "word",
+    "forms": [
+      "sedation"
+    ],
+    "text": "An artificially calmed, dulled state produced by drugs. The article's point is that old sleeping pills sedate you, which is not the same thing as natural sleep.",
+    "audio": true
+  },
+  {
+    "k": "induce",
+    "t": "induce",
+    "kind": "word",
+    "forms": [
+      "induce"
+    ],
+    "text": "To bring something about or cause it. Pills that induce sedation are pills that produce that state.",
+    "audio": true
+  },
+  {
+    "k": "inhibitory",
+    "t": "inhibitory",
+    "kind": "word",
+    "forms": [
+      "inhibitory"
+    ],
+    "text": "Slowing or blocking activity rather than encouraging it. GABA is inhibitory because it damps down the neurons it reaches.",
+    "audio": true
+  },
+  {
+    "k": "hereditary",
+    "t": "hereditary",
+    "kind": "word",
+    "forms": [
+      "hereditary"
+    ],
+    "text": "Passed down from parents to offspring through genes. Hereditary narcolepsy in certain dog breeds is what let scientists track down the broken gene behind the disease.",
+    "audio": true
+  },
+  {
+    "k": "engineered",
+    "t": "engineered",
+    "kind": "word",
+    "forms": [
+      "engineered"
+    ],
+    "text": "Deliberately altered by scientists, here genetically: mice engineered to lack orexins were created with that gene switched off on purpose.",
+    "audio": true
+  },
+  {
+    "k": "fire",
+    "t": "fire",
+    "kind": "word",
+    "forms": [
+      "fire"
+    ],
+    "text": "When scientists say a neuron or brain circuit fires, they mean it sends its electrical signal. The paralysis circuit firing at the wrong moment is what makes a person with narcolepsy collapse.",
+    "audio": true
+  },
+  {
+    "k": "circuit",
+    "t": "circuit",
+    "kind": "word",
+    "forms": [
+      "circuit",
+      "circuitry"
+    ],
+    "text": "A set of neurons wired together to do one job, like the circuit that paralyses the body during dreams. Brain scientists borrow the word from electronics.",
+    "audio": true
+  },
+  {
+    "k": "crumple",
+    "t": "crumple",
+    "kind": "word",
+    "forms": [
+      "crumple"
+    ],
+    "text": "To collapse or fold up suddenly, like a sheet of paper being crushed in a fist. A person who crumples to the floor loses all muscle strength at once.",
+    "audio": true
+  },
+  {
+    "k": "albeit",
+    "t": "albeit",
+    "kind": "word",
+    "forms": [
+      "albeit"
+    ],
+    "text": "A compact way of saying although, or though it must be admitted. Encouraging results, albeit from a small sample, are encouraging even though the sample is small.",
+    "audio": true
+  },
+  {
+    "k": "preliminary",
+    "t": "preliminary",
+    "kind": "word",
+    "forms": [
+      "Preliminary"
+    ],
+    "text": "Early and not yet final. Preliminary data are first results that hint at an answer but still need bigger, longer studies to confirm it.",
+    "audio": true
+  },
+  {
+    "k": "prevalent",
+    "t": "prevalent",
+    "kind": "word",
+    "forms": [
+      "prevalent"
+    ],
+    "text": "Widespread or common. ADHD and sleep apnoea are more prevalent conditions than narcolepsy, meaning many more people have them.",
+    "audio": true
+  },
+  {
+    "k": "curbing",
+    "t": "curbing",
+    "kind": "word",
+    "forms": [
+      "curbing"
+    ],
+    "text": "Holding something back or keeping it under control, the way a curb edges in a road. Curbing cravings means restraining them.",
+    "audio": true
+  },
+  {
+    "k": "robust",
+    "t": "robust",
+    "kind": "word",
+    "forms": [
+      "robust"
+    ],
+    "text": "Strong and hard to knock down. Robust tests are rigorous experiments whose results you can trust, as opposed to small or flimsy ones.",
+    "audio": true
+  },
+  {
+    "k": "sample",
+    "t": "sample",
+    "kind": "word",
+    "forms": [
+      "sample"
+    ],
+    "text": "In statistics, the group of people actually studied. A trial with 55 patients has a small sample, so its results carry less certainty than a trial with thousands.",
+    "audio": true
+  },
+  {
+    "k": "abuse",
+    "t": "abuse",
+    "kind": "word",
+    "forms": [
+      "abuse"
+    ],
+    "text": "Here, using a drug the wrong way or too much in order to chase its effects. Stimulants carry a real risk of abuse; orexin drugs may carry less.",
+    "audio": true
+  },
+  {
+    "k": "nod-off",
+    "t": "nod off",
+    "kind": "phrase",
+    "forms": [
+      "nod off"
+    ],
+    "text": "To drift into sleep without meaning to, usually briefly, the way your head nods forward when you doze in class. Narcolepsy patients nod off without warning.",
+    "audio": true
+  },
+  {
+    "k": "held-in-check",
+    "t": "held in check",
+    "kind": "phrase",
+    "forms": [
+      "held in check"
+    ],
+    "text": "Kept under control, stopped from acting. In a waking brain the dream-paralysis system is held in check; without enough orexin, the grip slips.",
+    "audio": true
+  },
+  {
+    "k": "created-a-stir",
+    "t": "created a stir",
+    "kind": "phrase",
+    "forms": [
+      "created a stir"
+    ],
+    "text": "Caused a wave of excitement and talk. Oveporexton's trial results created a stir among scientists and investors when they were published.",
+    "audio": true
+  },
+  {
+    "k": "down-the-line",
+    "t": "down the line",
+    "kind": "phrase",
+    "forms": [
+      "Further down the line"
+    ],
+    "text": "At some later point, further into the future. The targets further down the line are narcolepsy type 2 and idiopathic hypersomnia, after the first approvals land.",
+    "audio": true
+  },
+  {
+    "k": "acting-out",
+    "t": "act out",
+    "kind": "phrase",
+    "forms": [
+      "acting out"
+    ],
+    "text": "To physically perform something, turning an impulse or a dream into real movements. The brain paralyses the body during dreams precisely to stop you acting them out.",
+    "audio": true
+  }
+]

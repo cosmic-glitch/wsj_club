@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-20",
+  "title": "The brain may be about to have its Ozempic moment",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/08/11/the-brain-may-be-about-to-have-its-ozempic-moment",
+  "articlePageUrl": "/articles/2026-08-20.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "efficacy",
+      "partOfSpeech": "noun",
+      "pronunciation": "EF-ih-kuh-see",
+      "articleQuote": "such pills induce sedation rather than natural sleep and often lose efficacy with continued use",
+      "meaning": "The power of something to actually produce the result it promises. Doctors and scientists lean on this word constantly: a vaccine's efficacy is how well it prevents disease, a drug's efficacy is how well it treats one. Here, ordinary sleeping pills are said to lose efficacy with continued use, meaning the same dose gradually stops delivering sleep. Don't confuse it with *efficiency*, which is about avoiding waste; efficacy is about whether the thing works at all.",
+      "examples": [
+        "The study compared the efficacy of flashcards and rereading, and flashcards won by a wide margin.",
+        "After we kept losing close games, the coach began to question the efficacy of our late-practice free-throw drills."
+      ]
+    },
+    {
+      "word": "tantalising",
+      "partOfSpeech": "adjective",
+      "pronunciation": "TAN-tuh-lye-zing",
+      "articleQuote": "There are more tantalising ideas, too, about the reward-and-motivation role of the other receptor",
+      "meaning": "Something tantalising dangles a prize you badly want just out of reach, teasing you with a possibility you can't yet grab. The word comes from Tantalus, a king in Greek myth punished by standing in water that drained away whenever he bent to drink, beneath fruit that rose whenever he reached for it. The Economist calls the ideas about treating depression and addiction tantalising because they are thrilling but still unproven, visible on the horizon rather than in hand. The American spelling is *tantalizing*.",
+      "examples": [
+        "The trailer offered a tantalising thirty-second glimpse of the new map, then cut to black.",
+        "The smell of pizza drifting from the cafeteria during sixth period was tantalising, with lunch still an hour away."
+      ]
+    },
+    {
+      "word": "speculative",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SPEK-yuh-luh-tiv",
+      "articleQuote": "Activating the receptor, rather than blocking it, is a more speculative approach",
+      "meaning": "Based on guesses about what might be true rather than on solid evidence. A speculative idea could turn out right, but nobody has proven it yet, so the word acts as a warning label: interesting, but don't bet on it. In the article, using orexin drugs to boost motivation is a more speculative approach because that science is far less developed than the narcolepsy results. You'll also meet the word around money, where a speculative investment is one that might pay off big or lose everything.",
+      "examples": [
+        "Talk of our school adding an esports team is still speculative; the principal hasn't confirmed anything.",
+        "His theory that the substitute is secretly a famous novelist is entertaining but purely speculative."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Homeostasis",
+      "articleQuote": "Hunger and sleep, argues Dan Skovronsky, Lilly’s chief scientific officer, are both “master homeostasis mechanisms”—systems that keep the body in balance",
+      "meaning": "Homeostasis is one of the central ideas of **biology**: the body's constant work of holding its internal conditions steady, the way a thermostat holds a room at 70 degrees. Get too hot and you sweat; too cold and you shiver. Blood sugar spikes after lunch and insulin pulls it back down; run low on water and thirst kicks in. Each of these is a *feedback loop*: a sensor notices things drifting from the set point, and a response pushes them back.\n\nThe article's closing argument leans on this idea. Hunger and sleep are master homeostasis mechanisms, whole-body balance systems, and GLP-1 drugs like Ozempic succeeded spectacularly because they adjusted the hunger system itself instead of patching one symptom, which is why one drug ended up helping with diabetes, weight, heart disease and more. Orexin drugs are a bet that the same trick will work on the system balancing sleep and wakefulness: fix the regulator, and the problems downstream of it may fix themselves."
+    },
+    {
+      "name": "Agonists vs. antagonists",
+      "articleQuote": "the first orexin agonist (ie, molecule that stimulates the same cell-surface receptors)",
+      "meaning": "This pair comes from **pharmacology**, the science of how drugs act on the body. Your neurons are studded with receptors; think of each one as a lock. The body's own chemical messengers, like orexin, are the keys: when orexin clicks into its receptor, the neuron switches on and you stay awake. An **agonist** is a drug built as a copy of the key, turning the lock just as the real messenger would. An **antagonist** does the opposite: it jams the lock so the real key can't get in, silencing the signal.\n\nThe article shows both acting on the same receptor. The insomnia pills sold since 2014 are orexin *antagonists*: they block the brain's wakefulness signal so sleep can take over. Oveporexton, the new narcolepsy drug, is an orexin *agonist*: narcolepsy patients have lost the neurons that make orexin, so the drug steps in as a replacement key. It also explains why agonists took a decade longer to invent — a blocker only has to plug the lock, while a mimic has to reproduce the effect of a natural peptide many times its own size. Once you know this pair, drug stories everywhere snap into focus: antihistamines are antagonists that block histamine's receptors to stop allergy symptoms, and many strong painkillers are agonists at the body's own opioid receptors."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "In the trial of oveporexton, narcolepsy patients sat in a darkened room to see how long they could stay awake. What happened for those taking the drug?",
+      "options": [
+        "They fell asleep about a minute sooner than patients on a placebo",
+        "They stayed awake 12.5 to 25 minutes longer, pushing many into the normal range",
+        "They slept better at night but showed no change in daytime alertness",
+        "They stayed awake longer but had far more cataplexy attacks"
+      ],
+      "answerIndex": 1,
+      "explanation": "Depending on the dose, patients on oveporexton stayed awake 12.5 to 25 minutes longer, and their cataplexy attacks were roughly a third as frequent as on placebo."
+    },
+    {
+      "question": "Why does the article compare orexin drugs to GLP-1 drugs like Ozempic?",
+      "options": [
+        "Both were discovered by the same two research teams",
+        "Both cause significant weight loss",
+        "Both aim at a master regulatory system, so one class of drug could end up treating many different conditions",
+        "Both are cheap generic medicines already on the market"
+      ],
+      "answerIndex": 2,
+      "explanation": "GLP-1 drugs targeted the body's hunger-balancing system and turned out to help many ailments; drugmakers hope orexin drugs, aimed at the wakefulness system, will spread the same way."
+    },
+    {
+      "question": "A doctor wants to treat a patient's insomnia. Based on the article, which type of drug fits that job?",
+      "options": [
+        "An orexin agonist, to stimulate the wakefulness receptors",
+        "An orexin antagonist, to turn down the brain's wakefulness signal",
+        "A stimulant such as methylphenidate",
+        "A drug that raises orexin levels in the hypothalamus"
+      ],
+      "answerIndex": 1,
+      "explanation": "Antagonists block orexin's wake-up signal so the brain's sleep-promoting systems can take over, which is why they've been sold as insomnia treatments since 2014."
+    },
+    {
+      "question": "The article says conventional sleeping pills \"often lose efficacy with continued use.\" That means the pills:",
+      "options": [
+        "become dangerous if taken for too long",
+        "gradually stop working as well as they did at first",
+        "become more efficient the longer you take them",
+        "start interfering with other medicines"
+      ],
+      "answerIndex": 1,
+      "explanation": "Efficacy is the power to produce the intended effect, so losing efficacy means the same pill delivers less and less of that effect over time."
+    },
+    {
+      "question": "Why do people with narcolepsy type 1 sometimes crumple to the floor in the middle of a laugh?",
+      "options": [
+        "Their muscles briefly run out of energy from daytime exhaustion",
+        "Low orexin lets the paralysis circuit meant for REM sleep fire while they are wide awake",
+        "Laughing raises blood pressure enough to cause a brief faint",
+        "Their brains release too much dopamine during strong emotion"
+      ],
+      "answerIndex": 1,
+      "explanation": "During REM sleep the brain paralyses the body so dreams aren't acted out; with too little orexin, that circuit can fire during waking hours, causing cataplexy."
+    }
+  ]
+}
