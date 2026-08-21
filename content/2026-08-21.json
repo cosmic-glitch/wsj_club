@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-21",
+  "title": "US National Debt Hits $40 Trillion",
+  "articleUrl": "https://www.bbc.com/news/articles/c9d8z72nn02o",
+  "articlePageUrl": "/articles/2026-08-21.html",
+  "voiceQuiz": true,
+  "source": "BBC",
+  "vocab": [
+    {
+      "word": "austerity",
+      "partOfSpeech": "noun",
+      "pronunciation": "aw-STAIR-uh-tee",
+      "articleQuote": "They could include reforming the tax system and public spending, or austerity.",
+      "meaning": "Austerity means strictness and self-denial, a way of living stripped of comforts and extras. In economics it names a deliberate government program of deep spending cuts, often paired with tax rises, aimed at closing the gap between what a country spends and what it collects. The article lists austerity among the painful options the US may face if economic growth alone can't ease its debt.",
+      "examples": [
+        "After blowing his savings on in-game purchases all semester, Marcus put himself on an austerity plan: packed lunches and zero impulse buys.",
+        "The school board's austerity budget cut the late buses, the art program and the new gym floor in a single meeting."
+      ]
+    },
+    {
+      "word": "outstrip",
+      "partOfSpeech": "verb",
+      "pronunciation": "out-STRIP",
+      "articleQuote": "Ballooning costs for social programmes and other spending have outstripped revenues undermined by tax cuts.",
+      "meaning": "To outstrip something is to grow or move faster than it and pull ahead, the way a sprinter outstrips the pack on the final lap. The article uses it to state the entire debt problem in one line: government spending has grown faster than tax revenues, and the widening gap between the two has to be covered with borrowed money.",
+      "examples": [
+        "Demand for the concert tickets outstripped supply in minutes, and the website crashed.",
+        "Her curiosity always outstripped the textbook, so she ended up three chapters ahead of the class."
+      ]
+    },
+    {
+      "word": "fiscal",
+      "partOfSpeech": "adjective",
+      "pronunciation": "FISS-kul",
+      "articleQuote": "The dollar being the world's reserve currency gives the US a \"much longer runway to fiscally misbehave\" than other countries.",
+      "meaning": "Fiscal describes anything to do with a government's budget: the taxes it collects and the money it spends. A fiscal decision is a taxing-or-spending decision, which is why an economist in the article describes years of overspending as a country \"fiscally misbehaving\". It's the partner term to monetary, which covers interest rates and the money supply.",
+      "examples": [
+        "The student council treasurer delivered a very serious fiscal report on the $214 left over from the bake sale.",
+        "Every January, Dad announces a month of fiscal responsibility, which mostly means no takeout."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Debt vs. deficit",
+      "articleQuote": "What happens when interest rates go up is that the funding of the deficit becomes more expensive.",
+      "meaning": "This is the most useful distinction in economics reporting, and most adults get it wrong. The deficit is one year's gap: the government spends more than it collects in taxes, and the difference must be borrowed. The debt is the running total of everything borrowed over the decades that still hasn't been paid back. Economists call this a flow versus a stock: the deficit is water pouring from the tap each year, the debt is the level in the tub.\n\nPut real numbers on it. If you spend $60 in a month but only have $50, your deficit that month is $10. Do that for a year, covering the gap by borrowing from your sister, and your debt to her is $120. Even if you shrink next month's overspend to $5, your debt still grows, because a smaller gap is still a gap. That's exactly the trap in the article: politicians talk about \"lowering the deficit\", but the $40 trillion debt keeps climbing by about $7.8 billion a day, and the Congressional Budget Office expects it to reach $64 trillion by 2036."
+    },
+    {
+      "name": "How government bonds work",
+      "articleQuote": "The bond market is demanding higher returns with investors wary of the scale of the US's debt.",
+      "meaning": "A bond, in finance, is an IOU that can be bought and sold. When the US government needs cash, it doesn't visit a bank; it sells Treasury bonds. An investor hands over money today, and the government promises to repay it on a set date, plus interest along the way. The \"bond market\" is simply all the world's investors deciding, every day, what interest rate they demand before they'll lend.\n\nThat rate is a price on trust. Imagine lending $20 to two classmates: one always pays you back, the other already owes half the school. You'd lend to the first for almost nothing and demand extra from the second to cover the risk. The article shows the US drifting toward the second position: with $40 trillion owed, investors have grown warier, so they demand higher returns, which makes borrowing costlier, which grows the debt, which makes investors warier still. Economists in the article call it a vicious cycle, and it's why interest payments now eat almost 20% of US tax revenue, more than the entire defense budget."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "US national debt just crossed a headline-making milestone. How big is it, and how fast is it growing?",
+      "options": [
+        "$40 trillion, growing about $90,000 every second",
+        "$40 billion, growing about $90,000 every day",
+        "$4 trillion, and it has recently stopped growing",
+        "$40 trillion, shrinking slowly as tax revenue comes in"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article opens with the $40tn milestone and cites the Congress Joint Economic Committee's figure of roughly $90,000 in new debt every second, or $7.8bn a day."
+    },
+    {
+      "question": "The government announces it \"cut the deficit this year.\" Which of these definitely happened?",
+      "options": [
+        "The national debt went down",
+        "This year's gap between spending and tax revenue got smaller",
+        "The government paid off some of its bonds early",
+        "Taxes were lowered for most people"
+      ],
+      "answerIndex": 1,
+      "explanation": "The deficit is the single year's gap between spending and revenue, so cutting it only narrows the gap; the total debt usually keeps growing anyway, because a smaller gap is still borrowed money."
+    },
+    {
+      "question": "Why does the bond market \"demanding higher returns\" make America's debt problem worse?",
+      "options": [
+        "Borrowing gets more expensive, so interest payments swallow even more tax revenue",
+        "It instantly makes the dollar stop being the world's reserve currency",
+        "It forces the government to default on its existing bonds",
+        "It lowers mortgage rates, so households borrow recklessly"
+      ],
+      "answerIndex": 0,
+      "explanation": "When investors demand higher returns, funding the deficit costs more, feeding the vicious cycle the article describes: interest payments already take almost 20% of tax revenue, more than defense."
+    },
+    {
+      "question": "Which of these is the best example of austerity?",
+      "options": [
+        "A government sharply cuts spending and raises taxes to close its budget gap",
+        "A government borrows extra money to launch new programs",
+        "A central bank lowers interest rates to boost the economy",
+        "A company buys back its own shares from investors"
+      ],
+      "answerIndex": 0,
+      "explanation": "Austerity is the deliberate belt-tightening option the article mentions: deep spending cuts, often with tax rises, to shrink the gap between spending and revenue."
+    },
+    {
+      "question": "Why do economists say the US has a \"much longer runway to fiscally misbehave\" than other countries?",
+      "options": [
+        "Its national debt is smaller than every other country's",
+        "The dollar is the world's reserve currency and the US is the largest economy, so global investors keep lending",
+        "The US Constitution puts a strict cap on the deficit",
+        "Japan and Italy have promised to lend the US unlimited money"
+      ],
+      "answerIndex": 1,
+      "explanation": "Because the world runs on dollars and the US economy is the biggest, investors keep buying US bonds far longer than they would for other heavily indebted borrowers, which is why El-Erian calls it a flashing yellow light rather than a red one."
+    }
+  ]
+}
