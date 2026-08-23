@@ -1,0 +1,593 @@
+[
+  {
+    "k": "ephemeral",
+    "t": "ephemeral",
+    "kind": "vocab",
+    "pron": "uh-FEM-er-ul",
+    "forms": [
+      "ephemeral"
+    ],
+    "text": "Something ephemeral lasts only a short time and then is gone. Here it splits contrails into two kinds: most streamed out behind the plane and faded within minutes, while a smaller share widened into cloud that lingered and warmed the planet. Outside science writing the word usually describes things people wish would last longer, like a mood or a trend.",
+    "audio": true
+  },
+  {
+    "k": "consortium",
+    "t": "consortium",
+    "kind": "vocab",
+    "pron": "kun-SOR-shee-um",
+    "forms": [
+      "consortium"
+    ],
+    "text": "A consortium is a group of separate organizations that team up on one project while each stays independent. You reach for the word when a job is too big or too technical for any single member. The consortium here includes the company that runs British airspace, two universities, the Met Office, a research nonprofit and Google.",
+    "audio": true
+  },
+  {
+    "k": "progenitor",
+    "t": "progenitor",
+    "kind": "vocab",
+    "pron": "pruh-JEN-uh-ter",
+    "forms": [
+      "progenitor"
+    ],
+    "text": "A progenitor is the ancestor or originator of something, the thing that came first and gave rise to what followed. The article uses it playfully, casting the plane as the parent and the trail of ice behind it as the offspring. It belongs to the same family as progeny, generate and genesis.",
+    "audio": true
+  },
+  {
+    "k": "contrail",
+    "t": "contrail",
+    "kind": "name",
+    "forms": [
+      "contrails",
+      "contrail"
+    ],
+    "text": "A contrail is the white line a plane draws across the sky, short for condensation trail. Water vapour in the engine exhaust freezes into tiny ice particles in the freezing air at cruising altitude. Most vanish in minutes, but some spread into sheets of cloud that hold heat in, which is the whole subject of this article.",
+    "audio": true
+  },
+  {
+    "k": "cirrus",
+    "t": "cirrus",
+    "kind": "name",
+    "forms": [
+      "cirrus"
+    ],
+    "text": "Cirrus are the high, thin, wispy clouds made of ice crystals rather than water droplets, the ones that look like streaks brushed across a blue sky. They form at the same altitudes where planes cruise. A persistent contrail is effectively a man-made cirrus cloud.",
+    "audio": true
+  },
+  {
+    "k": "issrs",
+    "t": "ISSRs",
+    "kind": "name",
+    "forms": [
+      "ISSRs",
+      "ice-supersaturated regions"
+    ],
+    "text": "Ice-supersaturated regions are patches of sky that are well below freezing and yet still hold water vapour that has not turned to ice, because nothing is there for the ice to form around. They sit at about 8 to 13 kilometres up, spread hundreds of kilometres wide but only hundreds of metres deep. A plane crossing one seeds the vapour and turns it into lasting cloud, so avoiding them is the entire plan.",
+    "audio": true
+  },
+  {
+    "k": "water-vapour",
+    "t": "water vapour",
+    "kind": "name",
+    "forms": [
+      "water vapour"
+    ],
+    "text": "Water vapour is water in its invisible gas form, mixed into the air around you right now. It is not steam or mist, which are already tiny droplets you can see. Cooling it or giving it something to cling to turns it back into liquid or ice, which is how clouds and contrails get made.",
+    "audio": true
+  },
+  {
+    "k": "infrared",
+    "t": "infrared radiation",
+    "kind": "name",
+    "forms": [
+      "infrared radiation",
+      "infrared"
+    ],
+    "text": "Infrared radiation is light with wavelengths just too long for your eyes to see, which you feel as heat coming off a radiator or a sunny sidewalk. Earth constantly radiates its warmth back to space as infrared. Anything that absorbs that infrared and re-emits part of it downward, whether a greenhouse gas or an ice crystal in a contrail, keeps heat in.",
+    "audio": true
+  },
+  {
+    "k": "greenhouse-gases",
+    "t": "greenhouse gases",
+    "kind": "name",
+    "forms": [
+      "greenhouse gases"
+    ],
+    "text": "Greenhouse gases are gases such as carbon dioxide, methane and water vapour that let sunlight through but absorb the infrared heat Earth radiates back out, sending some of it downward again. The result is a warmer surface than the planet would otherwise have. The article's point is that contrail ice crystals do much the same job, which is why they warm despite being white and reflective.",
+    "audio": true
+  },
+  {
+    "k": "shanwick",
+    "t": "Shanwick",
+    "kind": "name",
+    "forms": [
+      "Shanwick"
+    ],
+    "text": "Shanwick is a block of airspace over the North Atlantic west of the British Isles, 1.8 million square kilometres of it, controlled from Britain. The name is a blend of Shannon in Ireland and Prestwick in Scotland, the two stations that run it. It was chosen for the trial because it is damp, cold at cruising altitude and extremely busy.",
+    "audio": true
+  },
+  {
+    "k": "nats",
+    "t": "NATS",
+    "kind": "name",
+    "forms": [
+      "NATS"
+    ],
+    "text": "NATS is the company that runs air-traffic control for British airspace, once the National Air Traffic Services. Its controllers are the people who would actually nudge planes to different altitudes during the trial. Nothing happens in this experiment without them.",
+    "audio": true
+  },
+  {
+    "k": "blue-skies",
+    "t": "Operation Blue Skies",
+    "kind": "name",
+    "forms": [
+      "Operation Blue Skies",
+      "Blue Skies"
+    ],
+    "text": "Operation Blue Skies is the British trial announced on August 18th, the largest test so far of steering planes around contrail-forming air. It runs over two winters in Shanwick airspace on a 5 million pound budget. Its job is to prove both that the rerouting cuts contrails and that airlines and controllers can do it safely as part of normal operations.",
+    "audio": true
+  },
+  {
+    "k": "contrails-org",
+    "t": "Contrails.org",
+    "kind": "name",
+    "forms": [
+      "Contrails.org"
+    ],
+    "text": "Contrails.org is a not-for-profit research organisation devoted to the contrail problem, run by Marc Shapiro. It helped run an earlier trial with American Airlines in 2025 and is part of the Blue Skies consortium. Much of its funding comes from Breakthrough Energy.",
+    "audio": true
+  },
+  {
+    "k": "breakthrough-energy",
+    "t": "Breakthrough Energy",
+    "kind": "name",
+    "forms": [
+      "Breakthrough Energy"
+    ],
+    "text": "Breakthrough Energy is a network of investors founded by Bill Gates that funds climate technology which is too early or too risky for ordinary investors. It backs research and start-ups in areas like clean fuels, batteries and, here, contrail science.",
+    "audio": true
+  },
+  {
+    "k": "bill-gates",
+    "t": "Bill Gates",
+    "kind": "name",
+    "forms": [
+      "Bill Gates"
+    ],
+    "text": "Bill Gates co-founded Microsoft and became one of the richest people in the world before turning to philanthropy full time. He now spends much of his money and attention on global health and on climate technology, which is how his name appears in a story about contrails.",
+    "audio": true
+  },
+  {
+    "k": "met-office",
+    "t": "Met Office",
+    "kind": "name",
+    "forms": [
+      "Met Office"
+    ],
+    "text": "The Met Office is Britain's national weather service, short for meteorological office. Its forecasting models matter here because the trial only works if you can predict where the damp, freezing patches of sky will be before the planes get there.",
+    "audio": true
+  },
+  {
+    "k": "imperial-college",
+    "t": "Imperial College",
+    "kind": "name",
+    "forms": [
+      "Imperial College"
+    ],
+    "text": "Imperial College London is a British university known for science, engineering and medicine. Sebastian Eastham, quoted in the article on what a perfect result would look like, works on the Blue Skies team there.",
+    "audio": true
+  },
+  {
+    "k": "safs",
+    "t": "SAFs",
+    "kind": "name",
+    "forms": [
+      "SAFs",
+      "sustainable aviation fuels"
+    ],
+    "text": "Sustainable aviation fuels are jet fuels made from things like used cooking oil, plant waste or captured carbon rather than freshly pumped crude oil. They can cut an airline's net carbon emissions and burn cleaner, which also means fewer particles for ice to form on. They are far more expensive than ordinary jet fuel, which is why the article treats them as the costly alternative to simply flying around the damp patches.",
+    "audio": true
+  },
+  {
+    "k": "co2-equivalent",
+    "t": "carbon-dioxide equivalent",
+    "kind": "name",
+    "forms": [
+      "carbon-dioxide equivalent"
+    ],
+    "text": "Carbon-dioxide equivalent is a common unit for comparing different causes of warming by asking how much carbon dioxide would produce the same effect. It lets you put methane, contrails and CO2 on one scale. Boucher's claim that you can save 100 tonnes of it for one extra tonne of carbon dioxide is a straight hundred-to-one trade in that shared currency.",
+    "audio": true
+  },
+  {
+    "k": "air-traffic-controllers",
+    "t": "air-traffic controllers",
+    "kind": "name",
+    "forms": [
+      "air-traffic controllers"
+    ],
+    "text": "Air-traffic controllers are the people who direct aircraft from the ground, assigning each plane its route, altitude and spacing so none come too close. Every altitude change in this trial has to pass through them, on top of the traffic they already juggle.",
+    "audio": true
+  },
+  {
+    "k": "cruising-altitudes",
+    "t": "cruising altitudes",
+    "kind": "name",
+    "forms": [
+      "cruising altitudes"
+    ],
+    "text": "Cruising altitude is the height a plane settles at for the long middle stretch of a flight, typically around 10 to 12 kilometres up, where thin air means less drag and better fuel economy. It is also, inconveniently, exactly where ice-supersaturated regions live.",
+    "audio": true
+  },
+  {
+    "k": "flight-plans",
+    "t": "filed flight plans",
+    "kind": "name",
+    "forms": [
+      "filed flight plans",
+      "flight plans"
+    ],
+    "text": "A flight plan is the formal route, altitude and timing an airline files with air-traffic control before a flight leaves. Filing it is a legal step, not a suggestion, so changing where a plane flies means changing an official document. The trial would push planes a few hundred metres below the altitude they filed.",
+    "audio": true
+  },
+  {
+    "k": "not-for-profit",
+    "t": "not-for-profit",
+    "kind": "name",
+    "forms": [
+      "not-for-profit"
+    ],
+    "text": "A not-for-profit organisation exists to pursue a mission rather than to make money for owners, so any surplus it earns goes back into the work. It still pays salaries and needs funding, which is why the article names who funds this one.",
+    "audio": true
+  },
+  {
+    "k": "winters-tale",
+    "t": "The Winter’s tale",
+    "kind": "name",
+    "forms": [
+      "The Winter’s tale"
+    ],
+    "text": "A wink at The Winter's Tale, a late Shakespeare play, used here simply because the trial runs over the coming winters. The Economist loves these punning section headings, and they are usually a joke on a famous title rather than a real clue about the paragraph below.",
+    "audio": true
+  },
+  {
+    "k": "tonne",
+    "t": "tonnes",
+    "kind": "word",
+    "forms": [
+      "tonnes",
+      "tonne"
+    ],
+    "text": "A tonne is the metric ton, 1,000 kilograms or about 2,200 pounds, and it is spelled with the extra letters to distinguish it from the US ton of 2,000 pounds. The two are close enough that the difference rarely changes an argument, but scientific and European writing almost always means the metric one.",
+    "audio": true
+  },
+  {
+    "k": "british-spellings",
+    "t": "organisation",
+    "kind": "word",
+    "forms": [
+      "organisation",
+      "programme",
+      "metres"
+    ],
+    "text": "The Economist is British, so it uses British spellings throughout: organisation for organization, programme for program, metres and kilometres for meters and kilometers, vapour for vapor, realised for realized. The words mean exactly the same thing. Getting used to the pattern makes British writing much faster to read.",
+    "audio": true
+  },
+  {
+    "k": "m-bn",
+    "t": "40m",
+    "kind": "word",
+    "forms": [
+      "40m",
+      "61bn"
+    ],
+    "text": "The Economist abbreviates large numbers with a lower-case m for million and bn for billion, so 40m is 40 million flights and 61bn is 61 billion kilometres. The same shorthand shows up in money figures elsewhere in the article, like a 5 million pound budget written as 5m pounds.",
+    "audio": true
+  },
+  {
+    "k": "seed",
+    "t": "seed",
+    "kind": "word",
+    "forms": [
+      "seed",
+      "seeds"
+    ],
+    "text": "Outside gardening, to seed something is to plant the small starting point that lets a much bigger process take off. In physics and chemistry it means giving a substance a speck to build on, since ice and crystals need a surface to start forming around. A plane crossing damp freezing air seeds it with trillions of particles, and cloud appears where there was none.",
+    "audio": true
+  },
+  {
+    "k": "constituent",
+    "t": "constituent",
+    "kind": "word",
+    "forms": [
+      "constituent"
+    ],
+    "text": "As a noun, a constituent is a voter in a politician's district, which is the meaning most people meet first. As an adjective it means making up the parts of a whole, so the constituent ice crystals are simply the crystals the contrail is made of. Same root either way: something that constitutes, or composes, a larger thing.",
+    "audio": true
+  },
+  {
+    "k": "prone",
+    "t": "prone",
+    "kind": "word",
+    "forms": [
+      "prone"
+    ],
+    "text": "Prone has two meanings that trip readers up. Lying prone means lying face down. But prone to something means naturally likely to have it or do it, which is the sense here: that stretch of the Atlantic tends toward damp, freezing air at cruising height. You are prone to a cold, a mistake, or a laughing fit.",
+    "audio": true
+  },
+  {
+    "k": "handily",
+    "t": "handily",
+    "kind": "word",
+    "forms": [
+      "handily"
+    ],
+    "text": "Handily means easily and by a comfortable margin, the way a team handily wins a game. Here the warming from contrails handily outweighs the cooling, meaning it is not a close call. It can also mean conveniently, as in a handily placed outlet.",
+    "audio": true
+  },
+  {
+    "k": "measures",
+    "t": "measures",
+    "kind": "word",
+    "forms": [
+      "measures",
+      "measure"
+    ],
+    "text": "Besides sizing something up, a measure is an action taken to deal with a problem, especially an official one. Safety measures, cost-cutting measures, emergency measures. The avoidance measures in this article are the rerouting rules themselves, not anything being measured.",
+    "audio": true
+  },
+  {
+    "k": "route",
+    "t": "route",
+    "kind": "word",
+    "forms": [
+      "route"
+    ],
+    "text": "Route is usually a noun, the path you take, but here it works as a verb: to route something is to send it along a chosen path. Controllers route planes, phone systems route calls, and delivery apps route drivers. Routing around ISSRs means steering flights so their path misses those patches.",
+    "audio": true
+  },
+  {
+    "k": "realised",
+    "t": "realised",
+    "kind": "word",
+    "forms": [
+      "realised"
+    ],
+    "text": "This is not the realise that means to suddenly understand something. The other sense, common in formal writing, means to make real or actually achieve, as in realising a plan or realising a profit. A benefit that could be realised faster is one you could actually get sooner.",
+    "audio": true
+  },
+  {
+    "k": "attributed",
+    "t": "attributed",
+    "kind": "word",
+    "forms": [
+      "attributed"
+    ],
+    "text": "To attribute an effect to a cause is to credit that cause with producing it. Scientists attribute a share of warming to contrails the way a teacher attributes a quotation to its author. The noun is attribution, and arguing over what caused what is a large part of climate science.",
+    "audio": true
+  },
+  {
+    "k": "induce",
+    "t": "induce",
+    "kind": "word",
+    "forms": [
+      "induce",
+      "induced"
+    ],
+    "text": "To induce something is to bring it about or cause it to happen, often indirectly. Contrails induce cirrus clouds: the plane does not make the whole cloud itself, it triggers freezing in vapour that was already there. You also see the word in inducing sleep, inducing labour and induced demand.",
+    "audio": true
+  },
+  {
+    "k": "offset",
+    "t": "offset",
+    "kind": "word",
+    "forms": [
+      "offset"
+    ],
+    "text": "To offset something is to cancel it out with an equal amount going the other way, the way a bonus offsets a bad month. In climate talk it has a specific meaning: leaving emissions in place but paying for an equal amount of carbon dioxide to be removed elsewhere. The article contrasts offsetting with actually reducing emissions, because only one of the two puts less carbon into the air in the first place.",
+    "audio": true
+  },
+  {
+    "k": "concentrated",
+    "t": "concentrated",
+    "kind": "word",
+    "forms": [
+      "concentrated"
+    ],
+    "text": "Here concentrated does not mean focusing hard. It means packed into a small part of the whole rather than spread evenly, the way wealth or rainfall can be concentrated. Contrail warming is concentrated because roughly 80 percent of it comes from about 2 percent of flights.",
+    "audio": true
+  },
+  {
+    "k": "savour",
+    "t": "savour",
+    "kind": "word",
+    "forms": [
+      "savour"
+    ],
+    "text": "To savour something is to enjoy it slowly and deliberately, drawing the pleasure out instead of rushing. It started with food and taste and spread to anything worth lingering over, like savouring a win. The closing joke is that contrail avoidance costs passengers only an extra minute or two with the airline food.",
+    "audio": true
+  },
+  {
+    "k": "translucent",
+    "t": "translucent",
+    "kind": "word",
+    "forms": [
+      "translucent"
+    ],
+    "text": "Translucent means light passes through but you cannot see a clear image through it, like frosted glass or a lampshade. It sits between transparent, which you see straight through, and opaque, which blocks light entirely. A spread-out contrail is a translucent stripe: bright, but not something you can see the stars through.",
+    "audio": true
+  },
+  {
+    "k": "persist",
+    "t": "persist",
+    "kind": "word",
+    "forms": [
+      "persist",
+      "persisted",
+      "persistent"
+    ],
+    "text": "To persist is to keep going or keep existing despite conditions that might end it. A persistent contrail is one that refuses to fade, spreading instead into cloud. The same word describes a persistent cough, a persistent rumour or a persistent friend who keeps texting.",
+    "audio": true
+  },
+  {
+    "k": "undertaken",
+    "t": "undertaken",
+    "kind": "word",
+    "forms": [
+      "undertaken"
+    ],
+    "text": "To undertake something is to formally take it on and commit to doing it, usually something substantial. A trial so far undertaken means the biggest one anyone has committed to yet. The noun undertaking means either the task itself or a formal promise to do it.",
+    "audio": true
+  },
+  {
+    "k": "net",
+    "t": "net",
+    "kind": "word",
+    "forms": [
+      "net warming"
+    ],
+    "text": "Net means what is left after the opposite effects are subtracted, as opposed to gross, which is the total before anything is taken out. Net warming is warming minus cooling: contrails reflect sunlight away, which cools, but trap more infrared than that, so the net figure is still positive. The same distinction runs through net pay, net profit and net emissions.",
+    "audio": true
+  },
+  {
+    "k": "diverted",
+    "t": "diverted",
+    "kind": "word",
+    "forms": [
+      "diverted"
+    ],
+    "text": "To divert something is to turn it aside from the path it was on. Planes get diverted around storms, traffic gets diverted around roadworks, and money gets diverted to a different budget. In the American Airlines trial, the diverted flights are the ones sent off their planned altitude.",
+    "audio": true
+  },
+  {
+    "k": "emitted",
+    "t": "emitted",
+    "kind": "word",
+    "forms": [
+      "emitted",
+      "emissions",
+      "re-emit"
+    ],
+    "text": "To emit is to send something out, whether gas, light, heat or sound. An engine emits carbon dioxide; an ice crystal absorbs infrared and re-emits it in all directions. The noun emissions has become shorthand for the greenhouse gases a country, company or activity puts into the air.",
+    "audio": true
+  },
+  {
+    "k": "radiated",
+    "t": "radiated",
+    "kind": "word",
+    "forms": [
+      "radiated"
+    ],
+    "text": "To radiate is to send energy outward in all directions from a source, the way a fire radiates heat or the sun radiates light. Earth radiates heat as infrared, some of which escapes to space and some of which gets bounced back down. Radiation is just that energy on its way.",
+    "audio": true
+  },
+  {
+    "k": "robustly",
+    "t": "robustly",
+    "kind": "word",
+    "forms": [
+      "robustly"
+    ],
+    "text": "Robust means strong and able to hold up under pressure. In science a robust result is one that keeps showing up even when you change the conditions, look at different years, or check it a different way. Eastham wants satellite images that robustly show fewer contrails, meaning the effect is real rather than a lucky week.",
+    "audio": true
+  },
+  {
+    "k": "promising",
+    "t": "promising",
+    "kind": "word",
+    "forms": [
+      "promising"
+    ],
+    "text": "Promising here has nothing to do with making a promise. It means showing early signs of turning out well, the way a young player or a first draft is promising. It is a careful word: promising results are encouraging but not yet proof, which is exactly why a bigger trial is being run.",
+    "audio": true
+  },
+  {
+    "k": "turbulence",
+    "t": "turbulence",
+    "kind": "word",
+    "forms": [
+      "turbulence"
+    ],
+    "text": "Turbulence is chaotic, churning air that makes a flight bumpy, caused by wind shear, storms or air flowing over mountains. It matters here as a limit on the plan: controllers will only push planes to a new altitude when there is no reason not to, and rough air is exactly such a reason.",
+    "audio": true
+  },
+  {
+    "k": "preindustrial",
+    "t": "preindustrial",
+    "kind": "word",
+    "forms": [
+      "preindustrial"
+    ],
+    "text": "Preindustrial means before the Industrial Revolution, roughly before 1850, when humans began burning coal and oil at scale. Climate targets are almost always stated against preindustrial temperatures because that is the baseline before we started adding greenhouse gases. This is what the 2 degrees in the article is measured from.",
+    "audio": true
+  },
+  {
+    "k": "aviation",
+    "t": "aviation",
+    "kind": "word",
+    "forms": [
+      "aviation"
+    ],
+    "text": "Aviation is flying taken as a whole: the aircraft, the airlines, the airports and the industry around them. Saying aviation is responsible for some share of warming means the entire activity of flying, not any one airline. The word comes from the Latin for bird.",
+    "audio": true
+  },
+  {
+    "k": "one-off",
+    "t": "one-off",
+    "kind": "word",
+    "forms": [
+      "one-off"
+    ],
+    "text": "A one-off is something that happens a single time and is not repeated, more common in British English than American. The criticism in the article is that cutting contrails is a one-off gain: you get the improvement once, and after that more flying still means more warming.",
+    "audio": true
+  },
+  {
+    "k": "go-mainstream",
+    "t": "go mainstream",
+    "kind": "phrase",
+    "forms": [
+      "go mainstream"
+    ],
+    "text": "To go mainstream is to move from a small or specialist corner into ordinary, widespread use. Bands, apps, diets and technologies all go mainstream. For contrail avoidance it would mean every airline doing it every day, not a research trial over one patch of ocean.",
+    "audio": true
+  },
+  {
+    "k": "steering-clear",
+    "t": "steering clear of",
+    "kind": "phrase",
+    "forms": [
+      "steering clear of"
+    ],
+    "text": "To steer clear of something is to deliberately keep away from it, from steering a boat or car around a hazard. It carries a hint that the thing is trouble worth avoiding. Here it is close to literal, since the steering is done by pilots and controllers.",
+    "audio": true
+  },
+  {
+    "k": "no-free-lunch",
+    "t": "no free lunch",
+    "kind": "phrase",
+    "forms": [
+      "no free lunch"
+    ],
+    "text": "There is no free lunch is an economics saying meaning nothing is truly costless, because someone somewhere pays. It comes from old American saloons that offered a free lunch to anyone buying a drink, with the food's price folded into the drink. The article uses it to admit that contrail avoidance still burns extra fuel before arguing the trade is worth it.",
+    "audio": true
+  },
+  {
+    "k": "ideal-enemy-good",
+    "t": "The ideal is the enemy of the good",
+    "kind": "phrase",
+    "forms": [
+      "The ideal is the enemy of the good"
+    ],
+    "text": "A version of the old saying that the perfect is the enemy of the good, usually credited to Voltaire. It warns that holding out for a flawless solution can stop you from taking the decent one available now. As a section heading it sets up the argument that a partial fix beats waiting for a complete one.",
+    "audio": true
+  },
+  {
+    "k": "nuclei",
+    "t": "nuclei",
+    "kind": "word",
+    "forms": [
+      "nuclei",
+      "nucleus"
+    ],
+    "text": "A nucleus is the central core that something else gathers around, and nuclei is the plural. You meet it as the centre of an atom or of a cell, but here it means a speck of solid matter that water can freeze onto, which is how a cloud droplet or ice crystal gets started. The heading The nucleus of the problem plays on the other everyday sense: the core of the issue.",
+    "audio": true
+  }
+]

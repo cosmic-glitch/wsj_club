@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-22",
+  "title": "Contrail-free flying could help the climate",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/08/19/contrail-free-flying-could-help-the-climate",
+  "articlePageUrl": "/articles/2026-08-22.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "ephemeral",
+      "partOfSpeech": "adjective",
+      "pronunciation": "uh-FEM-er-ul",
+      "articleQuote": "Many of these trails were ephemeral.",
+      "meaning": "Something ephemeral lasts only a short time and then is gone. The word is the dividing line in this part of the article: most contrails streamed out behind the plane and faded within minutes, while a smaller share widened into stripes of cirrus cloud that lingered and warmed the planet. Outside science writing it usually describes things people wish would last longer, like a mood, a trend, or a perfect afternoon.",
+      "examples": [
+        "The mural the seniors painted on the gym wall turned out to be ephemeral: it was under a coat of beige paint by August.",
+        "Most of what trends online is ephemeral, which is why a joke everyone repeated in October can feel unrecognizable by spring."
+      ]
+    },
+    {
+      "word": "consortium",
+      "partOfSpeech": "noun",
+      "pronunciation": "kun-SOR-shee-um",
+      "articleQuote": "On August 18th a consortium based in Britain announced Operation Blue Skies, the most important trial of this approach to cooling the climate so far undertaken.",
+      "meaning": "A consortium is a group of separate organizations that team up on a single project while each stays independent. You reach for the word when a job is too big, too expensive or too technical for any one member to take on alone. The consortium behind Operation Blue Skies is a good example: the company that runs British airspace, Imperial College London, the University of Cambridge, Britain's Met Office, a research nonprofit, and Google, which is putting hardware and computing time worth 1.4 million pounds into a 5 million pound budget.",
+      "examples": [
+        "A consortium of six school districts pooled their money to buy an online tutoring license none of them could afford alone.",
+        "The new stadium is going up under a consortium of three construction firms, each responsible for a different section."
+      ]
+    },
+    {
+      "word": "progenitor",
+      "partOfSpeech": "noun",
+      "pronunciation": "pruh-JEN-uh-ter",
+      "articleQuote": "They streamed out behind their progenitor planes before fading quickly away.",
+      "meaning": "A progenitor is the ancestor or originator of something, the thing that came first and gave rise to what followed. The article uses it a little playfully here, casting the plane as the parent and the trail of ice behind it as the offspring. It belongs to the same family as progeny, generate and genesis, and you meet it most often in biology and history, where a species or an idea gets traced back to the progenitor it descended from.",
+      "examples": [
+        "Biologists think a small feathered dinosaur was the progenitor of every bird alive today.",
+        "That scratchy two-minute demo, recorded in somebody's garage, was the progenitor of the album that made them famous."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Opportunity cost",
+      "articleQuote": "There are also opportunity costs.",
+      "meaning": "Opportunity cost is one of the foundational ideas in economics, and it says the real price of anything is not the money you hand over. It is the best thing you gave up in order to get it. Ask what else that same time, money or attention could have bought, and whichever alternative you would have valued most is what the choice actually cost you.\n\nYou run this calculation all the time without naming it. Spending Saturday afternoon on a video game costs zero dollars, but its opportunity cost is the shift you did not pick up, the essay you did not start, or the practice you did not go to, whichever of those you would have wanted most. Turn down a job paying $15 an hour to take an unpaid internship and the internship is not free: it costs you $15 for every hour you are there.\n\nThe article uses the idea twice, and the second use is the sharper one. The easy version is that flying a few hundred metres lower burns more fuel, so cutting contrails costs some extra carbon dioxide. The harder version is why the phrase appears at all: critics worry that the attention, money and political goodwill an airline spends on contrails is attention, money and goodwill it is not spending on the much harder problem of its carbon dioxide emissions. Killing contrails, as the article puts it, \"provides a one-off gain but does not change the fundamental fact that, in the long term, more flying means more warming.\" That forgone alternative is the opportunity cost, and it never appears on anyone's budget line."
+    },
+    {
+      "name": "Controlled comparison",
+      "articleQuote": "Comparing contrails made during periods when these changes are happening and periods when they are not should provide reliable data on how much the contrails are being reduced.",
+      "meaning": "This is the central idea of experimental design, the part of science and statistics that decides whether a result means anything at all. The problem it solves is that the world keeps changing on its own. If controllers reroute planes all winter and satellites show fewer contrails than last winter, nobody has learned much: the winter could simply have been drier, or traffic could have been lighter. Your change and the changes that happened anyway are tangled together, and no amount of staring at the data pulls them apart.\n\nThe fix is to build the comparison into the trial itself. Blue Skies will apply the rerouting on between 20 and 40 days across the winter and leave the other days alone, then compare satellite images. Those untouched days are the control: they show what the sky would have looked like without the intervention, under similar weather and similar traffic, so whatever difference is left over is the thing you did. It is also why Sebastian Eastham of Imperial College describes the perfect outcome as fewer contrails \"time after time after time\" rather than on one good day. A single comparison can be luck. A difference that repeats across dozens of paired days is evidence.\n\nYou can run the same logic on yourself. If you start studying with music and your next test score jumps, you have learned almost nothing, because that test was also easier and you also slept more. The version that actually tells you something is alternating: music on some sessions, off on others, over enough weeks that the other differences average out. Whenever a headline says something works, the useful question is always what it was compared against."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Persistent contrails reflect sunlight back into space, which cools. So why do they warm the planet overall?",
+      "options": [
+        "Their ice crystals also absorb infrared radiation and send some of it back toward Earth, and that happens 24 hours a day",
+        "The ice crystals trap carbon dioxide from the engine exhaust inside the cloud",
+        "They block the wind patterns that would otherwise carry heat away from the surface",
+        "Sunlight they reflect bounces off the ocean and gets absorbed by the crystals a second time"
+      ],
+      "answerIndex": 0,
+      "explanation": "Reflection only cools while the sun is up, but absorbing and re-emitting infrared radiation warms around the clock, and the article says that effect handily outweighs the cooling."
+    },
+    {
+      "question": "What will Operation Blue Skies actually change about the planes flying through Shanwick airspace?",
+      "options": [
+        "It will route them a few hundred metres below their filed flight plans when conditions suggest a contrail risk",
+        "It will ground them on the 20 to 40 days when ice-supersaturated regions are forecast",
+        "It will require them to switch to sustainable aviation fuels for the Atlantic crossing",
+        "It will send them several hundred kilometres north, around the dampest air over the Atlantic"
+      ],
+      "answerIndex": 0,
+      "explanation": "The trial adjusts altitude rather than fuel or destination: planes fly slightly lower to stay out of suspected ice-supersaturated regions, unless there is a reason such as turbulence not to."
+    },
+    {
+      "question": "Which sentence uses ephemeral correctly?",
+      "options": [
+        "The first snow of the year was ephemeral, melting off the sidewalk before lunch.",
+        "The ephemeral bridge has carried traffic across the river for over a century.",
+        "She gave an ephemeral answer, refusing to say what she actually thought.",
+        "His ephemeral appetite got him through three plates at the buffet."
+      ],
+      "answerIndex": 0,
+      "explanation": "Ephemeral means lasting a very short time, which fits snow that melts by lunchtime but not a century-old bridge, an evasive answer or a huge appetite."
+    },
+    {
+      "question": "An airline announces $20m for contrail avoidance. A critic answers that this is $20m the airline is now not spending on cutting its carbon dioxide emissions. The critic is pointing at",
+      "options": [
+        "the opportunity cost of the contrail program",
+        "the fuel penalty that comes from flying at lower altitudes",
+        "the fact that a small share of flights causes most of the contrail warming",
+        "the difficulty of predicting ice-supersaturated regions in advance"
+      ],
+      "answerIndex": 0,
+      "explanation": "Opportunity cost is the value of the best alternative you gave up, and here that alternative is the emissions work the same money could have paid for."
+    },
+    {
+      "question": "Why will the trial reroute planes on only some days of the winter rather than every day?",
+      "options": [
+        "The untouched days serve as a comparison, showing what the sky would have looked like without any rerouting",
+        "Air-traffic controllers are only permitted to alter filed flight plans a few days each month",
+        "Rerouting every day would burn so much extra fuel that airlines would refuse to take part",
+        "Weather satellites can only photograph the Shanwick region on 20 to 40 days each winter"
+      ],
+      "answerIndex": 0,
+      "explanation": "Without days that were left alone, a quiet contrail season might just mean drier weather; the untreated days are the control that lets researchers credit the difference to the rerouting."
+    }
+  ]
+}
