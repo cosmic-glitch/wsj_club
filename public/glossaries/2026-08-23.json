@@ -1,0 +1,598 @@
+[
+  {
+    "k": "marginal-cost",
+    "t": "marginal cost",
+    "kind": "name",
+    "forms": [
+      "marginal cost"
+    ],
+    "text": "The marginal cost of something is the cost of one more unit of it: the next life saved, the next pizza baked. Charities watch it because it climbs as the cheap opportunities get used up, which is the article's opening puzzle. Today's handout teaches the full idea as diminishing marginal returns.",
+    "audio": true
+  },
+  {
+    "k": "interventions",
+    "t": "interventions",
+    "kind": "word",
+    "forms": [
+      "interventions"
+    ],
+    "text": "Here an intervention is any deliberate action taken to fix a problem: handing out malaria nets, funding a vaccine campaign. In everyday speech intervening means stepping into a situation; charities, doctors and economists use the word for each specific fix money can buy.",
+    "audio": true
+  },
+  {
+    "k": "scalable",
+    "t": "scalable",
+    "kind": "word",
+    "forms": [
+      "scalable"
+    ],
+    "text": "Scalable means able to grow from small to huge without breaking or getting much more expensive per unit. A malaria-net program is scalable: buying a million nets works just like buying a thousand. Tech people prize the word, which is partly why it appears in an article about Silicon Valley donors.",
+    "audio": true
+  },
+  {
+    "k": "altruism",
+    "t": "altruism",
+    "kind": "vocab",
+    "pron": "AL-troo-iz-um",
+    "forms": [
+      "altruism",
+      "Altruism"
+    ],
+    "text": "Altruism is unselfish concern for other people's well-being: helping others at a cost to yourself while expecting nothing back. It is the root of Effective Altruism, the movement many AI donors follow, which tries to squeeze the most measurable good from every dollar. In the article it covers everything from malaria nets to vaccines, acts whose whole point is someone else's survival.",
+    "audio": true
+  },
+  {
+    "k": "influx",
+    "t": "influx",
+    "kind": "word",
+    "forms": [
+      "influx"
+    ],
+    "text": "An influx is a sudden flowing-in of people, money or things, like the influx of students when the first bell rings. The article imagines an influx of donations so large it pays for every cheap way of doing good, pushing the rest toward costlier ones.",
+    "audio": true
+  },
+  {
+    "k": "deluge",
+    "t": "deluge",
+    "kind": "vocab",
+    "pron": "DEL-yooj",
+    "forms": [
+      "deluge"
+    ],
+    "text": "A deluge is a great flood, an overwhelming rush of water, and by extension a huge amount of anything arriving at once: complaints, applications, cash. Here it is the hundreds of billions of dollars that could crash into charity when the AI labs' shares go public.",
+    "audio": true
+  },
+  {
+    "k": "grantmakers",
+    "t": "grantmakers",
+    "kind": "word",
+    "forms": [
+      "grantmakers",
+      "grantmaker"
+    ],
+    "text": "A grantmaker is an organization that gives out money (grants) to fund causes, researchers or charities rather than running the programs itself. Coefficient Giving, quoted throughout the article, decides where Silicon Valley donations will do the most good.",
+    "audio": true
+  },
+  {
+    "k": "philanthropy",
+    "t": "philanthropy",
+    "kind": "word",
+    "forms": [
+      "philanthropy",
+      "philanthropic",
+      "philanthropists",
+      "philanthropist"
+    ],
+    "text": "Philanthropy is organized giving: donating money, deliberately and at scale, to improve other people's lives. A philanthropist is the giver, and philanthropic describes the giving. The Greek roots literally mean love of humankind.",
+    "audio": true
+  },
+  {
+    "k": "ipos",
+    "t": "initial public offering (IPO)",
+    "kind": "name",
+    "forms": [
+      "initial public offerings",
+      "IPOs",
+      "IPO"
+    ],
+    "text": "In an initial public offering a private company sells its shares to the public on the stockmarket for the first time. An IPO turns paper stakes into money that founders and employees can actually spend, which is why the article treats the coming Anthropic and OpenAI IPOs as the starting gun for the giving.",
+    "audio": true
+  },
+  {
+    "k": "marshall-plans",
+    "t": "Marshall Plans",
+    "kind": "name",
+    "forms": [
+      "Marshall Plans"
+    ],
+    "text": "The Marshall Plan was America's famous aid program that rebuilt Western Europe's shattered economies after the second world war, worth well over $100bn in today's money. Saying the AI pledges equal two Marshall Plans is a way of saying this is nation-rebuilding scale.",
+    "audio": true
+  },
+  {
+    "k": "endowed",
+    "t": "endowed",
+    "kind": "word",
+    "forms": [
+      "endowed",
+      "endowment"
+    ],
+    "text": "To endow an institution is to give it a large pot of money meant to last: the pot, called the endowment, gets invested, and the yearly returns pay the bills indefinitely. Carnegie and Rockefeller endowed universities this way, which is why their names are still on buildings a century later.",
+    "audio": true
+  },
+  {
+    "k": "giving-pledge",
+    "t": "Giving Pledge",
+    "kind": "name",
+    "forms": [
+      "Giving Pledge"
+    ],
+    "text": "The Giving Pledge is a campaign started in 2010 by Bill Gates and Warren Buffett in which billionaires publicly promise to give away at least half their fortunes. The article treats it as the signature of the internet age of philanthropy.",
+    "audio": true
+  },
+  {
+    "k": "ilk",
+    "t": "ilk",
+    "kind": "word",
+    "forms": [
+      "ilk"
+    ],
+    "text": "Someone's ilk is their type or kind, the group of people like them. Zuckerberg and their ilk means Zuckerberg and the other internet-age billionaires. The word often carries a slightly dismissive shrug.",
+    "audio": true
+  },
+  {
+    "k": "public-goods",
+    "t": "public goods",
+    "kind": "name",
+    "forms": [
+      "public goods"
+    ],
+    "text": "In economics a public good is something everyone benefits from and no one can be fenced out of: clean air, streetlights, basic scientific research. Because no single buyer can be made to pay for them, they tend to be underfunded, which is why donors and governments step in.",
+    "audio": true
+  },
+  {
+    "k": "newly-minted",
+    "t": "newly minted",
+    "kind": "phrase",
+    "forms": [
+      "newly minted"
+    ],
+    "text": "Newly minted means freshly created, the way a mint stamps out brand-new coins. The newly minted rich are people whose fortunes appeared almost overnight, here thanks to AI.",
+    "audio": true
+  },
+  {
+    "k": "exotic",
+    "t": "exotic",
+    "kind": "word",
+    "forms": [
+      "exotic"
+    ],
+    "text": "Exotic usually means strikingly foreign or unfamiliar, and here it means strange and far outside the mainstream. Calling the donors' moral views exotic is the article's polite way of flagging unusual ideas, like weighing chicken welfare alongside human lives.",
+    "audio": true
+  },
+  {
+    "k": "gearing-up",
+    "t": "gearing up",
+    "kind": "phrase",
+    "forms": [
+      "gearing up"
+    ],
+    "text": "Gearing up means preparing and equipping yourself for something big, like a team gearing up for the playoffs. GiveDirectly is hiring and planning so it can handle a wave of new donations.",
+    "audio": true
+  },
+  {
+    "k": "outstrips",
+    "t": "outstrips",
+    "kind": "word",
+    "forms": [
+      "outstrips"
+    ],
+    "text": "To outstrip something is to race past it, exceeding it by a clear distance. The promised AI giving outstrips earlier waves the way a sprinter outstrips a jogger.",
+    "audio": true
+  },
+  {
+    "k": "dafs",
+    "t": "donor-advised funds (DAFs)",
+    "kind": "name",
+    "forms": [
+      "donor-advised funds",
+      "DAFs"
+    ],
+    "text": "A donor-advised fund is a charity account: you put money in, collect the full tax break immediately, then decide later, sometimes years later, which charities actually get it. The article notes $326bn is parked in American DAFs, which is why some worry these accounts slow giving down.",
+    "audio": true
+  },
+  {
+    "k": "namesake",
+    "t": "namesake",
+    "kind": "word",
+    "forms": [
+      "namesake’s",
+      "namesake"
+    ],
+    "text": "Your namesake is the person or thing that shares your name. The OpenAI Foundation's namesake is OpenAI itself: the foundation holds 26% of the company it is named after.",
+    "audio": true
+  },
+  {
+    "k": "disbursed",
+    "t": "disbursed",
+    "kind": "word",
+    "forms": [
+      "disbursed"
+    ],
+    "text": "To disburse money is to pay it out from a fund, the opposite of collecting it. Around $20.5bn a year may be disbursed, meaning actually handed over to charities rather than merely promised.",
+    "audio": true
+  },
+  {
+    "k": "dwarfs",
+    "t": "dwarfs",
+    "kind": "word",
+    "forms": [
+      "dwarfs",
+      "dwarf"
+    ],
+    "text": "As a verb, to dwarf something is to make it look tiny by comparison, the way a skyscraper dwarfs the houses beside it. The AI wave's dollars dwarf both earlier waves of giving, even though its share of the economy does not.",
+    "audio": true
+  },
+  {
+    "k": "bar-one",
+    "t": "bar one",
+    "kind": "phrase",
+    "forms": [
+      "bar one"
+    ],
+    "text": "Bar here means except, so in all respects bar one means in every way except one. You will also meet bar none, which means with no exceptions at all.",
+    "audio": true
+  },
+  {
+    "k": "dished-out",
+    "t": "dished out",
+    "kind": "phrase",
+    "forms": [
+      "dished out"
+    ],
+    "text": "To dish out is to hand out in quantity, like a cafeteria worker dishing out servings. The internet wave dished out $230bn over nearly three decades.",
+    "audio": true
+  },
+  {
+    "k": "would-be",
+    "t": "would-be",
+    "kind": "word",
+    "forms": [
+      "would-be"
+    ],
+    "text": "A would-be philanthropist is someone hoping or intending to become one, who is not quite one yet. The word marks the gap between wanting the title and earning it.",
+    "audio": true
+  },
+  {
+    "k": "subscribe-to",
+    "t": "subscribe to",
+    "kind": "phrase",
+    "forms": [
+      "subscribe to"
+    ],
+    "text": "Here subscribe to means believe in or sign on to an idea, not pay for a service. You can subscribe to a worldview without paying for a single magazine.",
+    "audio": true
+  },
+  {
+    "k": "purport",
+    "t": "purport",
+    "kind": "vocab",
+    "pron": "per-PORT",
+    "forms": [
+      "purport"
+    ],
+    "text": "To purport to do something is to claim or present yourself as doing it, with a quiet hint that the claim might not survive inspection. The Economist says EA followers purport to do good: it reports their story while stepping back from vouching for it.",
+    "audio": true
+  },
+  {
+    "k": "hedge-fund",
+    "t": "hedge fund",
+    "kind": "name",
+    "forms": [
+      "hedge fund"
+    ],
+    "text": "A hedge fund is a lightly regulated investment fund for wealthy clients that makes aggressive bets with their money. The article mentions Sam Bankman-Fried, who is in prison for defrauding his fund's clients.",
+    "audio": true
+  },
+  {
+    "k": "espoused",
+    "t": "espoused",
+    "kind": "word",
+    "forms": [
+      "espoused"
+    ],
+    "text": "To espouse an idea is to adopt and openly champion it, to make it your cause. Bankman-Fried espoused earning-to-give, the belief that you should make as much money as possible in order to give it away.",
+    "audio": true
+  },
+  {
+    "k": "conviction",
+    "t": "conviction",
+    "kind": "word",
+    "forms": [
+      "conviction"
+    ],
+    "text": "Watch the trap: a conviction here is a strongly held belief, not a guilty verdict. The sentence happens to be about Bankman-Fried, who has both kinds: an EA conviction about giving, and a criminal conviction for fraud.",
+    "audio": true
+  },
+  {
+    "k": "tithe",
+    "t": "tithe",
+    "kind": "word",
+    "forms": [
+      "tithe"
+    ],
+    "text": "To tithe is to give away a fixed slice of your income, traditionally a tenth to the church. Earning-to-give borrows that old religious habit for a secular cause.",
+    "audio": true
+  },
+  {
+    "k": "adherents",
+    "t": "adherents",
+    "kind": "word",
+    "forms": [
+      "adherents"
+    ],
+    "text": "An adherent is a follower of a movement, belief or cause, someone who sticks to it; adhere literally means stick. The adherents here are Effective Altruists who earn a lot in order to give a lot away.",
+    "audio": true
+  },
+  {
+    "k": "stand-to",
+    "t": "stand to",
+    "kind": "phrase",
+    "forms": [
+      "stand to"
+    ],
+    "text": "To stand to gain or lose means to be positioned so that you probably will. Scientific research stands to get more cash: if the money flows as promised, it will land there.",
+    "audio": true
+  },
+  {
+    "k": "think-tank",
+    "t": "think-tank",
+    "kind": "word",
+    "forms": [
+      "think-tank"
+    ],
+    "text": "A think-tank is an organization whose product is ideas: researchers who study big policy questions and publish recommendations rather than selling goods. The Centre for Effective Altruism in Oxford is one.",
+    "audio": true
+  },
+  {
+    "k": "utilitarian",
+    "t": "utilitarian",
+    "kind": "word",
+    "forms": [
+      "utilitarian"
+    ],
+    "text": "Utilitarianism is the moral theory that the best action is whichever produces the greatest total well-being, added up across everyone affected. That arithmetic mindset explains EA's odd-sounding causes: if animal suffering counts in the sum, then preventing lots of it scores highly.",
+    "audio": true
+  },
+  {
+    "k": "lame",
+    "t": "lame",
+    "kind": "word",
+    "forms": [
+      "lame"
+    ],
+    "text": "Here lame carries its original meaning: crippled, unable to walk properly. Chickens bred to grow fast can go lame under their own weight. The slang sense of uncool came much later.",
+    "audio": true
+  },
+  {
+    "k": "at-scale",
+    "t": "at scale",
+    "kind": "phrase",
+    "forms": [
+      "at scale"
+    ],
+    "text": "At scale means at very large size, done industrially rather than one at a time. Humanely stunning fish at scale means a method that works for millions of fish, not a handful.",
+    "audio": true
+  },
+  {
+    "k": "yimby",
+    "t": "YIMBY",
+    "kind": "name",
+    "forms": [
+      "YIMBY"
+    ],
+    "text": "YIMBY stands for yes in my backyard: a movement that wants far more housing built in expensive cities, pushing back against neighbors who block new construction (the NIMBYs, not in my backyard). Some grantmakers fund YIMBY campaigns as a way to make housing cheaper.",
+    "audio": true
+  },
+  {
+    "k": "existential-risks",
+    "t": "existential risks",
+    "kind": "name",
+    "forms": [
+      "existential risks"
+    ],
+    "text": "An existential risk is a threat to humanity's very existence, like an asteroid strike, an engineered pandemic or, some argue, an out-of-control AI. Existential comes from existence: these are risks to whether we exist at all.",
+    "audio": true
+  },
+  {
+    "k": "rogue",
+    "t": "rogue",
+    "kind": "word",
+    "forms": [
+      "rogue"
+    ],
+    "text": "As an adjective, rogue means gone out of control and no longer following the rules, like a rogue wave or a rogue state. A rogue AI is one that stops obeying its makers.",
+    "audio": true
+  },
+  {
+    "k": "alignment",
+    "t": "alignment",
+    "kind": "name",
+    "forms": [
+      "aligning",
+      "alignment"
+    ],
+    "text": "AI alignment is the research problem of making powerful AI systems reliably pursue human goals and values rather than unintended ones of their own. The article describes a $160m gift to Resolution, a group working on exactly this.",
+    "audio": true
+  },
+  {
+    "k": "high-priest",
+    "t": "high priest",
+    "kind": "phrase",
+    "forms": [
+      "high priest"
+    ],
+    "text": "Calling someone the high priest of a movement means they are its most influential figure and chief preacher, said with a wink. EA is not a religion, but Will MacAskill leads it like one.",
+    "audio": true
+  },
+  {
+    "k": "mammon",
+    "t": "mammon",
+    "kind": "word",
+    "forms": [
+      "mammon"
+    ],
+    "text": "Mammon is an old biblical word for wealth treated as a false god, money pursued for its own sake. Saying the chatbots helped make their mammon is a sly jab: the fortunes came from the very technology some of the money now guards against.",
+    "audio": true
+  },
+  {
+    "k": "counter-factual",
+    "t": "counter-factual",
+    "kind": "name",
+    "forms": [
+      "counter-factual"
+    ],
+    "text": "A counterfactual is what would have happened if you had acted differently, the invisible comparison world every claim of success leans on. There is no counterfactual to human extinction: you cannot run the world twice, so billions spent on AI safety can never be measured against the world without them.",
+    "audio": true
+  },
+  {
+    "k": "handsomely",
+    "t": "handsomely",
+    "kind": "word",
+    "forms": [
+      "handsomely"
+    ],
+    "text": "Handsomely means generously, in large amounts; it has nothing to do with looks. To invest handsomely in research is to pour serious money into it.",
+    "audio": true
+  },
+  {
+    "k": "bloat",
+    "t": "bloat",
+    "kind": "word",
+    "forms": [
+      "bloat"
+    ],
+    "text": "Bloat is unhealthy swelling. Bureaucratic bloat is an organization swollen with managers, meetings and paperwork that add cost but not results, and critics like Tyler Cowen say non-profits are especially prone to it.",
+    "audio": true
+  },
+  {
+    "k": "lofty",
+    "t": "lofty",
+    "kind": "word",
+    "forms": [
+      "lofty"
+    ],
+    "text": "Lofty literally means towering high, like a loft up under the roof. Lofty salaries are very high ones and lofty goals are ambitious ones. Here the most talented workers take lofty pay at AI labs instead of joining charities.",
+    "audio": true
+  },
+  {
+    "k": "slashed",
+    "t": "slashed",
+    "kind": "word",
+    "forms": [
+      "slashed"
+    ],
+    "text": "To slash is to cut violently and deeply, and in news prose slashing a budget means cutting it drastically. Musk slashed programs run by USAID, meaning he shut large parts of them down.",
+    "audio": true
+  },
+  {
+    "k": "wobbly",
+    "t": "wobbly",
+    "kind": "word",
+    "forms": [
+      "wobbly"
+    ],
+    "text": "Wobbly means shaky, unsteady, liable to tip over. Saying the two companies' valuations have at times looked wobbly means investors have sometimes doubted the trillion-dollar price tags.",
+    "audio": true
+  },
+  {
+    "k": "bank",
+    "t": "bank",
+    "kind": "word",
+    "forms": [
+      "bank"
+    ],
+    "text": "Here bank is a verb: to bank something is to lock it in and store it safely, the way you bank a paycheck. Donors bank the tax break immediately even though the actual giving may happen years later.",
+    "audio": true
+  },
+  {
+    "k": "up-front",
+    "t": "up front",
+    "kind": "phrase",
+    "forms": [
+      "up front"
+    ],
+    "text": "Up front means immediately, at the start, before anything else happens. The tax break arrives up front; the charity may wait years for the money.",
+    "audio": true
+  },
+  {
+    "k": "hoarding",
+    "t": "hoarding",
+    "kind": "word",
+    "forms": [
+      "hoarding"
+    ],
+    "text": "Hoarding is piling up and clinging to more of something than you use, like a dragon on its gold. Charitable money hoarded in an account does nobody any good until it is actually given away.",
+    "audio": true
+  },
+  {
+    "k": "brimming",
+    "t": "brimming with",
+    "kind": "phrase",
+    "forms": [
+      "brimming with"
+    ],
+    "text": "To brim is to be full to the very top edge, the brim, like a glass about to spill over. People brimming with urgency are so full of it that it shows.",
+    "audio": true
+  },
+  {
+    "k": "talking-a-big-game",
+    "t": "talking a big game",
+    "kind": "phrase",
+    "forms": [
+      "talking a big game"
+    ],
+    "text": "To talk a big game is to make impressive promises without necessarily delivering on them. In earlier waves some donors talked a big game and never wrote the checks; the article asks whether this wave will be different.",
+    "audio": true
+  },
+  {
+    "k": "follow-through",
+    "t": "follow-through",
+    "kind": "word",
+    "forms": [
+      "follow-through"
+    ],
+    "text": "Follow-through is actually finishing what you promised or started, the way a basketball shot needs follow-through after the ball leaves your hand. Big pledges mean little without it.",
+    "audio": true
+  },
+  {
+    "k": "equity-stakes",
+    "t": "equity stakes",
+    "kind": "name",
+    "forms": [
+      "equity stakes",
+      "equity"
+    ],
+    "text": "Equity means ownership, so an equity stake is a slice of a company held as shares. Anthropic employees are selling down some of their stakes, turning paper ownership into cash they can donate now.",
+    "audio": true
+  },
+  {
+    "k": "squishier",
+    "t": "squishier",
+    "kind": "word",
+    "forms": [
+      "squishier"
+    ],
+    "text": "Squishy literally means soft and easily squeezed; figuratively, a squishy question is one with no firm, measurable answer. What makes a life meaningful is squishier than how many lives did this vaccine save.",
+    "audio": true
+  },
+  {
+    "k": "flourish",
+    "t": "flourish",
+    "kind": "word",
+    "forms": [
+      "flourish"
+    ],
+    "text": "To flourish is to thrive and bloom, to do far better than merely survive; it comes from the Latin for flower. The article imagines charity one day shifting from keeping people alive to helping them flourish.",
+    "audio": true
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-23",
+  "title": "Silicon Valley’s AI boom is remaking American charity",
+  "articleUrl": "https://www.economist.com/international/2026/08/13/silicon-valleys-ai-boom-is-remaking-american-charity",
+  "articlePageUrl": "/articles/2026-08-23.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "altruism",
+      "partOfSpeech": "noun",
+      "pronunciation": "AL-troo-iz-um",
+      "articleQuote": "If an influx of donations pays for all the inexpensive ways of doing good, then the rest flows into costlier acts of altruism that can save yet more lives.",
+      "meaning": "Altruism is unselfish concern for other people’s well-being: helping others at a cost to yourself while expecting nothing back. It is the root of Effective Altruism, the movement many AI donors follow, which tries to squeeze the most measurable good out of every dollar given away. In the article the word covers everything from buying malaria nets to funding new vaccines, acts whose whole point is someone else’s survival.",
+      "examples": [
+        "Giving up your Saturday to help a teammate rescue his algebra grade, with nothing in it for you, is plain altruism.",
+        "Biologists argue about whether true altruism exists in nature, since animals that share food often get paid back later."
+      ]
+    },
+    {
+      "word": "purport",
+      "partOfSpeech": "verb",
+      "pronunciation": "per-PORT",
+      "articleQuote": "Many, though not all, subscribe to a worldview of “Effective Altruism” (EA), a movement of hyper-rationalists who purport to do good by identifying the highest-return, evidence-based uses of donations.",
+      "meaning": "To purport to do something is to claim or present yourself as doing it, and the word carries a quiet hint that the claim might not survive inspection. A writer who says a group purports to do good is reporting the group’s own story while stepping back from vouching for it. That distance is exactly why The Economist chooses the word here: whether EA giving really is the most effective possible is still an open question.",
+      "examples": [
+        "The app purports to teach you a language in ten minutes a day, but most users still can’t order lunch after a year.",
+        "The email purported to be from the school office, so nobody questioned it until the principal said she never sent it."
+      ]
+    },
+    {
+      "word": "deluge",
+      "partOfSpeech": "noun",
+      "pronunciation": "DEL-yooj",
+      "articleQuote": "Just such a deluge of cash may be coming.",
+      "meaning": "A deluge is a great flood, an overwhelming rush of water, and by extension a huge amount of anything arriving at once. News writers use it for whatever pours in faster than it can be handled: complaints, applications, information. Here it is the hundreds of billions of dollars that could crash into charity when the AI labs’ shares go public.",
+      "examples": [
+        "The moment the snow day was announced, the group chat got a deluge of celebration memes.",
+        "The tiny bakery went viral and faced a deluge of orders it had no way to fill."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Diminishing marginal returns",
+      "articleQuote": "In the coming years the marginal cost of saving a child’s life from disease or starvation could jump from about $5,000 to $15,000, or more.",
+      "meaning": "One of the workhorse ideas of economics. When you spend money, time or effort on a goal, you naturally use the cheapest, most effective options first. Once those are used up, every extra dollar has to buy the next-best thing, which costs more and achieves less. So each added unit of effort returns a little less than the one before. That is the whole idea: the returns shrink at the margin, meaning on the last dollar you add.\n\nThe article opens with a live example. Today roughly $5,000 spent on things like malaria nets saves a life, because nets are cheap and many people still need them. If AI donors flood charities with money, all the nets get bought, and the next life has to be saved with costlier tools like new vaccines, at $15,000 or more. Alexander Berger’s point is that the rising price is good news in disguise: it means the cheapest ways of saving lives are the ones getting fully funded first, exactly as they should be.\n\nYou live this rule every study session. The first hour before a test lifts your grade enormously; the fourth hour adds a little; the eighth is mostly rereading what you already know. The idea shows up everywhere from farming (the first bag of fertilizer helps most) to basketball practice, and economists use it to decide when putting more into one thing stops being worth it."
+    },
+    {
+      "name": "Counterfactual",
+      "articleQuote": "Donors concede that there is no “counter-factual” to human extinction, so it is hard to know whether alignment research, possibly costing billions of dollars, is working or if the same outcome could have been achieved with less money.",
+      "meaning": "A tool from statistics and causal reasoning. The counterfactual is what would have happened if you had acted differently: the invisible comparison world where you did not take the medicine, run the ad or make the donation. You can never visit that world, but every claim that something worked secretly leans on it. If you chug an energy drink before a test and score well, the drink only gets credit if you know how you would have scored without it. That unseen score is the counterfactual.\n\nScience builds stand-ins for it. Drug trials give half the patients a placebo; the placebo group shows what would have happened anyway, so any extra recovery among the treated patients can be credited to the drug. Serious charities rank programs the same way: not did kids do better after the program, but did they do better than similar kids who never got it.\n\nThe article puts a sharp edge on this. Effective Altruists pride themselves on evidence, but their biggest bet, spending billions so a rogue AI never wipes out humanity, has no possible comparison group. If humanity survives, was it the research, or would we have been fine anyway? With no counterfactual available even in principle, the most evidence-obsessed movement in charity cannot measure its most expensive project."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Alexander Berger argues that the rising cost of saving a life is actually good news. Why?",
+      "options": [
+        "Charities can use the higher prices to pay their staff more.",
+        "It means the cheapest life-saving projects are already fully funded, so new money moves on to costlier ones.",
+        "Higher prices attract more attention from billionaires.",
+        "It shows that inflation is finally under control."
+      ],
+      "answerIndex": 1,
+      "explanation": "Charities fund the cheap, scalable interventions first, so a rising marginal cost signals the bargains, like malaria nets, are already paid for."
+    },
+    {
+      "question": "How does the coming AI wave of giving compare with the earlier philanthropic waves?",
+      "options": [
+        "It is smaller than the internet wave in dollar terms.",
+        "It matches the industrialists as a share of the economy.",
+        "In dollars it dwarfs both earlier waves, though at about 1.3% of GDP it still trails the industrialists’ 1.9%.",
+        "It is the largest in history by every measure."
+      ],
+      "answerIndex": 2,
+      "explanation": "The promised $430bn dwarfs earlier waves in dollars, but because America is much richer now, its share of GDP falls short of the industrial age’s roughly 1.9%."
+    },
+    {
+      "question": "The Economist writes that Effective Altruists “purport to do good” with evidence-based donations. What does the word “purport” add?",
+      "options": [
+        "It reports their claim while quietly leaving room to doubt it.",
+        "It confirms that the movement has proven its impact.",
+        "It means they do good only by accident.",
+        "It means they secretly refuse to donate at all."
+      ],
+      "answerIndex": 0,
+      "explanation": "Purport means to claim or profess something, with a built-in hint that the claim may not hold up under inspection."
+    },
+    {
+      "question": "Donors concede there is no “counter-factual” to human extinction. What problem does that create for AI-safety giving?",
+      "options": [
+        "It proves that alignment research is a scam.",
+        "It means extinction has already been prevented.",
+        "It shows AI safety costs less than everyone expected.",
+        "With no way to compare against what would have happened anyway, nobody can measure whether the billions spent are working."
+      ],
+      "answerIndex": 3,
+      "explanation": "A counterfactual is the comparison world without the intervention, and since you cannot run history twice, safe-AI spending can never be tested against it."
+    },
+    {
+      "question": "Why could donor-advised funds (DAFs) slow this wave of giving down?",
+      "options": [
+        "They are only legal for AI companies.",
+        "They cap charitable donations at $5,000 per year.",
+        "Donors bank the tax break up front but can leave the money parked for years, and $326bn already sits untouched.",
+        "They automatically invest everything in the stockmarket."
+      ],
+      "answerIndex": 2,
+      "explanation": "A DAF lets a donor take the tax deduction immediately and decide where the money goes later, which can turn into hoarding: $326bn is already sitting unspent in American DAFs."
+    }
+  ]
+}
