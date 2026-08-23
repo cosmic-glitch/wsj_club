@@ -1,9 +1,8 @@
 // Read one or more article URLs in full and print their body text + word count.
 // Works for the Economist (via the saved session, auto-refreshing if expired)
-// and for open enrichment sources (the session cookies are harmless there).
+// and for open web sources (the session cookies are harmless there).
 //   node --env-file=.bot/.env .bot/read.mjs <url> [url2 ...]
-// Prints a JSON array of { url, title, words, wall, text } on stdout. The
-// word count is authoritative for the enrichment ≤2,000-word gate.
+// Prints a JSON array of { url, title, words, wall, text } on stdout.
 import { ensureEconSession, extractArticle } from "./lib.mjs";
 
 const urls = process.argv.slice(2).filter((a) => !a.startsWith("--"));

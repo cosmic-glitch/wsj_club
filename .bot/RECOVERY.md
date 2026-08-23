@@ -56,7 +56,7 @@ AUTOVOTE_FORCE=1 AUTOVOTE_DATE=YYYY-MM-DD bash ~/wsj_club/.bot/run-auto-vote.sh
 - `lib.mjs` — browser + session helpers; login check = "can I read a full article",
   auto-refresh via `.env`.
 - `scout.mjs` — sweep the Economist for candidate news articles.
-- `read.mjs` — full article text + word count (also sizes the enrichment ≤2,000 gate).
+- `read.mjs` — full article text + word count.
 - `refresh-session.mjs` — re-login and overwrite `econ-state.json`.
 - `open-vote.mjs` — psql/`pg` upsert into `rc_polls` (box has no PostgREST keys).
 - `notify.mjs` — drop a nanoclaw IPC message → owner's WhatsApp.
