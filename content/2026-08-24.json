@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-24",
+  "title": "What happens when interceptor missiles run out",
+  "articleUrl": "https://www.economist.com/international/2026/08/18/what-happens-when-interceptor-missiles-run-out",
+  "articlePageUrl": "/articles/2026-08-24.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "prodigious",
+      "partOfSpeech": "adjective",
+      "pronunciation": "pruh-DIJ-us",
+      "articleQuote": "The proximate cause of the crisis is the prodigious use of interceptors by America and its Middle Eastern allies during Mr Trump’s war against Iran this year.",
+      "meaning": "Prodigious means enormous, on a scale that startles you. It shares a root with prodigy, a young person with startlingly outsized talent, and it carries the same feeling of disbelief at sheer size. Here it describes how fast America burned through its interceptors against Iran: nearly two-thirds of the entire pre-war Patriot stockpile fired off in one short conflict.",
+      "examples": [
+        "The swim captain has a prodigious appetite; six-hour practices will do that to you.",
+        "She has a prodigious memory for lyrics and can finish any verse you start."
+      ]
+    },
+    {
+      "word": "panacea",
+      "partOfSpeech": "noun",
+      "pronunciation": "pan-uh-SEE-uh",
+      "articleQuote": "Although deep-strike weapons are no panacea, they do help to deter attack.",
+      "meaning": "A panacea is a cure-all, a single remedy that would fix every problem at once. The word comes from Panacea, the Greek goddess of universal healing, and you will almost always meet it in the negative: calling something no panacea warns that a promising fix will not solve everything. That is exactly the move here: striking Russia’s launchers and factories helps, but it cannot end the missile threat on its own.",
+      "examples": [
+        "A new laptop is no panacea for bad grades; the problem was never the equipment.",
+        "Coaches warn that switching schools is no panacea, since an unhappy player usually packs the unhappiness too."
+      ]
+    },
+    {
+      "word": "proliferation",
+      "partOfSpeech": "noun",
+      "pronunciation": "pruh-lif-uh-RAY-shun",
+      "articleQuote": "That error has been compounded by the global proliferation of missiles…",
+      "meaning": "Proliferation is rapid multiplication and spread, the way something goes from rare to everywhere. The verb is proliferate. In this story it is missile technology spreading to more countries and armed groups, which keeps demand for interceptors climbing faster than factories can supply them. It is also the word inside nuclear non-proliferation, the decades-long effort to keep nuclear weapons from spreading to new states.",
+      "examples": [
+        "The proliferation of AI homework tools forced the school to rewrite its honor code in a single semester.",
+        "After one prank video went viral, there was a proliferation of copycat accounts trying the same stunt."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Drones, cruise missiles and ballistic missiles",
+      "articleQuote": "But only the precious Patriots can take on Russia’s Iskander-M and Kinzhal ballistic missiles.",
+      "meaning": "Ukraine shoots down whole swarms of Russian drones and most cruise missiles, yet on the night of August 5th it stopped zero ballistic missiles. Same defenders, same sky, opposite results. The explanation is a piece of basic military science that every war report now assumes you know: drones, cruise missiles and ballistic missiles are not three sizes of the same weapon. They are three different physics problems.\n\nDrones are the bottom rung of the ladder. They are slow propeller aircraft, cost about as much as a used car, and hum toward their target for hours at roughly highway speed; guns, jammers and cheap interceptor drones can bring them down. Cruise missiles are the middle rung: robot jet planes that hug the ground at hundreds of miles per hour to stay under the radar, harder to catch but still within reach of ordinary air-defence missiles. Ballistic missiles are the top rung. A rocket throws them high, often to the edge of space, and then gravity does the rest: the warhead falls onto its target at several times the speed of sound. Defenders get minutes of warning at most, and in Ukraine’s arsenal only one system, the American Patriot, can reliably make that intercept, a feat often described as hitting a bullet with a bullet.\n\nThat ladder explains why Ukraine’s defence is layered: cheap answers handle the cheap threats, saving the $4m-5m Patriot shots for the missiles nothing else can touch. It also explains why running out of Patriots is a catastrophe even while the drone shield still works: in March Ukraine intercepted about 70% of incoming ballistic missiles, by July 20%, and some August nights none at all. So when a news report names the weapon, a Shahed drone or an Iskander ballistic missile, you now know which rung it sits on, how hard it is to stop, and what stopping it costs the defender."
+    },
+    {
+      "name": "Magazine depth",
+      "articleQuote": "Ukraine, which had previously thwarted most such attacks with Patriot anti-missile batteries, is “going Winchester”—military jargon for running out of ammunition.",
+      "meaning": "America just fought a short war against Iran, a medium-sized power, and fired nearly two-thirds of every Patriot interceptor it had stockpiled. Analysts think rebuilding that pile will take until 2029. Defence planners have a name for the thing that ran out: magazine depth. A magazine is where ammunition is stored, and depth is how long the store lasts once the shooting starts. Pilots who have fired everything radio the code word Winchester, which is why Kyiv’s empty Patriot batteries are described as going Winchester.\n\nThe trap is a mismatch of speeds: modern munitions are built in years but spent in days. Factories currently turn out about 600 Patriot interceptors a year, while defenders fire at least two, at $4m-5m apiece, at every serious incoming missile, so a few bad weeks of attacks can eat a year of production. The shallowness was decades in the making. In peacetime, generals prefer spending on the flashy weapon, the jet or the launcher, over boring stacks of the munitions it consumes, and factories settle into a peacetime rhythm that nobody pays to speed up. Then a war arrives and reveals how shallow the magazine really was.\n\nThis is why wars between industrial powers are won as much by production lines as by battlefield skill, and why the article’s scariest arithmetic concerns China: defending against it could take more than 19,000 Patriot interceptors, over 20 times what America is thought to have. So when you size up any armed force, or any operation that consumes supplies faster than it makes them, do not just ask how good the equipment is. Ask how deep the magazine is and how fast it refills."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The print edition ran this story under the headline “Going Winchester.” What does the phrase mean?",
+      "options": [
+        "Retreating to fortified positions",
+        "Running out of ammunition",
+        "Switching to older, cheaper weapons",
+        "Flying too low for radar to track"
+      ],
+      "answerIndex": 1,
+      "explanation": "Winchester is military radio code for having fired everything you have; Ukraine’s Patriot batteries are running dry, and so is America’s stockpile behind them."
+    },
+    {
+      "question": "Ukraine already downs most Russian drones and cruise missiles. Why can only Patriot batteries stop the Iskander-M and Kinzhal?",
+      "options": [
+        "Those missiles are invisible to every radar",
+        "Those missiles fly lower than any other weapon",
+        "They are ballistic missiles that plunge from great height at several times the speed of sound, leaving defenders almost no time to react",
+        "They carry decoys that confuse cheaper interceptors"
+      ],
+      "answerIndex": 2,
+      "explanation": "Ballistic missiles arc high and fall at extreme speed, so intercepting one is like hitting a bullet with a bullet, and only the most advanced systems can do it."
+    },
+    {
+      "question": "Colonel Sabah Al Sabah compares a drone that costs as much as a used car with an interceptor that costs as much as a small apartment. What is his point?",
+      "options": [
+        "A defender can win every single engagement and still lose, because each shootdown costs far more than the weapon it destroys",
+        "Modern drones can only be stopped by the most expensive interceptors",
+        "Drones are now more accurate than ballistic missiles",
+        "Western countries should sell interceptors to allies at lower prices"
+      ],
+      "answerIndex": 0,
+      "explanation": "His warning is about the exchange of costs: if every kill costs you an apartment to destroy a used car, winning the engagements still drains you faster than your enemy."
+    },
+    {
+      "question": "The article says deep-strike weapons are “no panacea.” What does that tell you?",
+      "options": [
+        "They are banned under international law",
+        "They have never worked in combat",
+        "They are too expensive for any country to build",
+        "They help, but they cannot fix the whole problem by themselves"
+      ],
+      "answerIndex": 3,
+      "explanation": "A panacea is a cure-all, so calling something no panacea concedes it is useful while warning it will not solve everything."
+    },
+    {
+      "question": "The crisis was “compounded by the global proliferation of missiles.” Proliferation means:",
+      "options": [
+        "Missiles becoming more accurate every year",
+        "Missiles spreading rapidly to more and more countries and groups",
+        "Treaties that ban missile production",
+        "The rising price of each missile"
+      ],
+      "answerIndex": 1,
+      "explanation": "Proliferation is rapid multiplication and spread; as missile technology reaches more hands, the demand for interceptors keeps climbing."
+    }
+  ]
+}
