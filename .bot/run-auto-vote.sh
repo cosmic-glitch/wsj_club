@@ -34,17 +34,36 @@ LOG_FILE="$LOG_DIR/auto-vote-$(TZ=America/Los_Angeles date +%F).log"
 
 echo "[$(date -u +%FT%TZ)] auto-vote: starting (Pacific $(TZ=America/Los_Angeles date +%FT%T))" >> "$LOG_FILE"
 
-# Self-sync the committed parts (skill + scripts) so edits pushed to main
-# propagate without manual SSH. Non-fatal. (.bot/ is gitignored and box-local.)
+# Self-sync the committed parts (skill + .bot/ code; secrets stay box-local) so
+# edits pushed to main propagate without manual SSH. Non-fatal.
 if git pull --ff-only origin main >> "$LOG_FILE" 2>&1; then
   echo "[$(date -u +%FT%TZ)] auto-vote: git pull OK at $(git rev-parse --short HEAD)" >> "$LOG_FILE"
 else
   echo "[$(date -u +%FT%TZ)] auto-vote: git pull failed at $(git rev-parse --short HEAD); proceeding" >> "$LOG_FILE"
 fi
 
-# One agentic session runs the whole pick → open-vote → notify flow.
+# One agentic session runs the whole pick → open-vote → notify flow. Don't let
+# set -e abort on a non-zero exit — the outcome check below is the verdict.
+CLAUDE_RC=0
 claude -p "Use the auto-vote skill to open today's Reading Club senior vote. Run fully autonomously end to end — never pause for confirmation — and follow the skill's idempotency guard and quality gates exactly." \
   --dangerously-skip-permissions \
-  >> "$LOG_FILE" 2>&1
+  >> "$LOG_FILE" 2>&1 || CLAUDE_RC=$?
 
-echo "[$(date -u +%FT%TZ)] auto-vote: claude session exited" >> "$LOG_FILE"
+echo "[$(date -u +%FT%TZ)] auto-vote: claude session exited (rc=$CLAUDE_RC)" >> "$LOG_FILE"
+
+# --- Outcome check (the alerting contract) ----------------------------------
+# claude -p exits 0 even when the skill's failure path ran (the session can't
+# set the CLI's exit code), so success is verified from the outcome itself:
+# today's reading is published (vote closed / not needed), or today's poll is
+# live. Anything else exits non-zero so hc-run pages the owner — the skill's
+# failure path is deliberately silent (no WhatsApp), making this the only alarm.
+TODAY="${AUTOVOTE_DATE:-$(TZ=America/Los_Angeles date +%F)}"
+VOTE_JSON="$(curl -fsS -m 15 https://dailyreadingclub.com/api/vote || true)"
+if [ -f "$PROJECT_DIR/content/${TODAY}.json" ]; then
+  echo "[$(date -u +%FT%TZ)] auto-vote: outcome OK — reading ${TODAY} already published" >> "$LOG_FILE"
+elif echo "$VOTE_JSON" | grep -q '"active":true' && echo "$VOTE_JSON" | grep -q "\"date\":\"${TODAY}\""; then
+  echo "[$(date -u +%FT%TZ)] auto-vote: outcome OK — vote for ${TODAY} is live" >> "$LOG_FILE"
+else
+  echo "[$(date -u +%FT%TZ)] auto-vote: OUTCOME FAILURE — no reading and no live vote for ${TODAY}; exiting 1 for healthchecks" >> "$LOG_FILE"
+  exit 1
+fi
