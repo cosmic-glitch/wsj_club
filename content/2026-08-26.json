@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-26",
+  "title": "Meta Reaches $18 Billion Settlement With 48 States Over Child-Safety Claims",
+  "articleUrl": "https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b",
+  "articlePageUrl": "/articles/2026-08-26.html",
+  "voiceQuiz": true,
+  "source": "The Wall Street Journal",
+  "vocab": [
+    {
+      "word": "rectify",
+      "partOfSpeech": "verb",
+      "pronunciation": "REK-tih-fye",
+      "articleQuote": "create a $567 million abatement fund to rectify harms toward New Mexico youth",
+      "meaning": "To rectify something is to set it right, to correct a mistake or repair a harm that has already happened. It is the formal cousin of \"fix,\" and it usually carries a whiff of responsibility: the person rectifying the problem is often the one who caused it. In the article, a court ordered Meta to pay into a fund meant to rectify, as far as money can, the damage its apps did to young people in New Mexico.",
+      "examples": [
+        "After the scorekeeper's mistake, the league rectified the standings and our team got credit for the win.",
+        "He sent a follow-up text to rectify the confusion his first message had caused."
+      ]
+    },
+    {
+      "word": "coalition",
+      "partOfSpeech": "noun",
+      "pronunciation": "koh-uh-LISH-un",
+      "articleQuote": "collaborate with the multistate coalition to protect kids who deserve better",
+      "meaning": "A coalition is a group of separate people, organizations, or governments that team up temporarily to achieve one shared goal while staying independent of each other. News about politics and world affairs is full of them: coalitions of countries in a war, coalitions of parties forming a government. Here, 48 states that normally act on their own formed a single coalition against Meta, and that combined weight is what made an $18 billion settlement possible.",
+      "examples": [
+        "Three rival schools formed a coalition to push the district for later start times.",
+        "Clans that usually fight each other joined a coalition to take down the game's hardest raid boss."
+      ]
+    },
+    {
+      "word": "abatement",
+      "partOfSpeech": "noun",
+      "pronunciation": "uh-BAYT-ment",
+      "articleQuote": "a $567 million abatement fund to rectify harms toward New Mexico youth",
+      "meaning": "To abate is to lessen or die down, the way a storm or a fever abates, and abatement is the act of reducing something, usually something harmful. Governments and lawyers use the word for organized efforts to shrink a problem: noise abatement near airports, pollution abatement at factories. The abatement fund in the article is money Meta must spend specifically on shrinking the damage to New Mexico's young people rather than on anything else.",
+      "examples": [
+        "The city started a noise-abatement program after neighbors complained about the new highway.",
+        "Our science class studied pollution abatement, the filters and rules that cut down factory smoke."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The state attorney general",
+      "articleQuote": "Meta Platforms agreed to an $18 billion settlement with 48 state attorneys general",
+      "meaning": "One lawsuit against Meta was brought by a single 20-year-old woman in Los Angeles. Another was brought by 48 states at once, and that one ended in an $18 billion settlement. Same company, similar complaint, so why are the plaintiffs so different? The answer is a basic piece of civics: courts hear two broad kinds of cases. In a civil case, one party sues another. A person or company says \"you harmed me, now make it right,\" and the fight is usually over money. That is the 20-year-old woman, and the school districts suing Meta on their own. A criminal case is different: it is always the government versus the accused, because a crime like a theft or an assault is treated as a wrong against the public, not just against the victim. And if the government is going to bring cases to court, it needs its own lawyer.\n\nEach state has one: the attorney general, the state's chief lawyer, separate from the U.S. attorney general in Washington. The attorney general prosecutes crimes under state law, and when a harm hits everyone in the state rather than one identifiable victim, the office can also sue civilly on behalf of the state's entire population. That is what happened here. The 48 attorneys general filed a civil suit under their states' consumer-protection laws, each one representing every family in their state, which is why the settlement money gets split among the states \"based on their populations,\" and why 48 of them together had the muscle to win $18 billion and force Instagram to change. (A side note worth knowing: the plural is attorneys general, not attorney generals.)\n\nNext time you read that an attorney general sued someone, check which hat the office is wearing: the criminal prosecutor's, or, like here, the people's lawyer in a civil case."
+    },
+    {
+      "name": "Settling a lawsuit",
+      "articleQuote": "A federal judge must still approve the settlement, which halts the Oakland trial",
+      "meaning": "The trial was in its second week. The head of Instagram was on the witness stand, and Mark Zuckerberg was expected to testify next. Then it simply stopped, because the two sides made a deal. That deal is called a settlement, and it is how most big lawsuits in the American legal system actually end: instead of letting a judge and jury decide who wins, the two sides negotiate their own ending. Meta agrees to pay $18 billion and change its apps; the states agree to end the case. Nobody is found guilty or innocent. The trial just stops, though a judge still has to approve the deal to make sure it is fair.\n\nWhy would both sides walk away from a fight they had already started? Because a trial is a gamble for everyone. The states had asked for roughly $200 billion, more than ten times what Meta ended up paying, but a jury might have awarded far less, and appeals could have dragged on for years. Meta faced the reverse gamble: keep fighting and maybe pay nothing, or lose and owe a company-shaking amount. A settlement trades the small chance of a huge win for the certainty of a decent one, like taking a guaranteed B+ instead of a coin flip between an A and an F.\n\nSo when you read that a company settled, resist both easy readings. It is not proof of guilt, and it is not getting away with it. It means both sides decided that certainty beats risk."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which change will Meta make for users under 18 as part of the settlement?",
+      "options": [
+        "Deleting the accounts of anyone under 16",
+        "A default two-hour daily time limit on its apps",
+        "Banning under-18 users from Instagram entirely",
+        "Requiring a school ID to create an account"
+      ],
+      "answerIndex": 1,
+      "explanation": "The settlement sets a default two-hour daily limit for under-18 users, plus night mode and school mode, and only a parent can change those settings."
+    },
+    {
+      "question": "Meta will pay the last 30% of the settlement only if TikTok and YouTube accept similar limits and payments. What problem is that condition designed to solve?",
+      "options": [
+        "Meta cannot afford to pay the full amount on its own",
+        "Meta doesn't want to restrict its apps while rival apps stay unrestricted",
+        "The states preferred to collect money from three companies instead of one",
+        "Federal law requires all platforms to be punished equally"
+      ],
+      "answerIndex": 1,
+      "explanation": "If only Meta limited teens' screen time, those teens might simply drift to TikTok and YouTube, so the clause pressures the whole industry to adopt the limits together."
+    },
+    {
+      "question": "The lawsuit that produced this settlement was brought by state attorneys general rather than by individual victims. What does that tell you about the case?",
+      "options": [
+        "It was a criminal case seeking prison time for Meta executives",
+        "It was a civil case brought by governments on behalf of everyone in their states",
+        "It could only be decided by the U.S. Supreme Court",
+        "Individual people were not allowed to sue Meta themselves"
+      ],
+      "answerIndex": 1,
+      "explanation": "Attorneys general are each state's chief lawyer and can sue civilly for their whole population, while individuals, like the Los Angeles plaintiff, can still bring their own separate cases."
+    },
+    {
+      "question": "The states originally asked for roughly $200 billion in damages. Why might they accept a settlement of $18 billion instead?",
+      "options": [
+        "The judge ordered them to accept the lower amount",
+        "They discovered their evidence was too weak to continue",
+        "A settlement guarantees money and app changes now instead of gambling on the trial's outcome",
+        "Federal law caps damages at $18 billion"
+      ],
+      "answerIndex": 2,
+      "explanation": "A trial is a gamble for both sides, and settling trades the small chance of a much bigger award for a large, certain payment plus the app changes the states wanted."
+    },
+    {
+      "question": "In the phrase \"an abatement fund to rectify harms toward New Mexico youth,\" what does rectify mean?",
+      "options": [
+        "To measure precisely",
+        "To set right or repair",
+        "To publicly apologize for",
+        "To investigate thoroughly"
+      ],
+      "answerIndex": 1,
+      "explanation": "Rectify means to correct or set right, so the fund exists to repair, as far as money can, the harm done to young people."
+    }
+  ]
+}

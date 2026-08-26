@@ -1,0 +1,322 @@
+[
+  {
+    "k": "rectify",
+    "t": "rectify",
+    "kind": "vocab",
+    "pron": "REK-tih-fye",
+    "forms": [
+      "rectify"
+    ],
+    "text": "To set right, to correct a mistake or repair a harm that has already happened. It is the formal cousin of fix, and often the person rectifying the problem is the one who caused it. Here a court ordered Meta to pay into a fund meant to rectify, as far as money can, the damage its apps did to young people in New Mexico.",
+    "audio": true
+  },
+  {
+    "k": "coalition",
+    "t": "coalition",
+    "kind": "vocab",
+    "pron": "koh-uh-LISH-un",
+    "forms": [
+      "coalition"
+    ],
+    "text": "A group of separate people, organizations, or governments that team up temporarily for one shared goal while staying independent. Politics and world news are full of them. Here, 48 states that normally act alone formed a single coalition against Meta, and that combined weight is what produced an $18 billion settlement.",
+    "audio": true
+  },
+  {
+    "k": "abatement",
+    "t": "abatement",
+    "kind": "vocab",
+    "pron": "uh-BAYT-ment",
+    "forms": [
+      "abatement"
+    ],
+    "text": "Reducing or lessening something, usually something harmful; to abate is to die down the way a storm abates. Governments use the word for organized efforts to shrink a problem, like noise abatement near airports. The abatement fund here is money Meta must spend specifically on shrinking the damage done to New Mexico's young people.",
+    "audio": true
+  },
+  {
+    "k": "attorneys-general",
+    "t": "attorneys general",
+    "kind": "name",
+    "forms": [
+      "attorneys general",
+      "attorney general"
+    ],
+    "text": "Each state's chief lawyer and top law-enforcement officer, separate from the U.S. attorney general in Washington. The office prosecutes crimes under state law and can also sue companies civilly on behalf of everyone in the state, which is what 48 of them did to Meta here. The plural is attorneys general, not attorney generals.",
+    "audio": true
+  },
+  {
+    "k": "settlement",
+    "t": "settlement",
+    "kind": "word",
+    "forms": [
+      "settlement",
+      "settlements",
+      "settled"
+    ],
+    "text": "A deal that ends a lawsuit before a judge or jury decides it: one side pays or promises something, the other drops the case, and nobody is found guilty or innocent. Most big lawsuits end this way because a trial is a gamble for both sides. Meta's settlement trades $18 billion and app changes for an end to the states' case.",
+    "audio": true
+  },
+  {
+    "k": "ushering-in",
+    "t": "ushering in",
+    "kind": "phrase",
+    "forms": [
+      "ushering in"
+    ],
+    "text": "To usher in something is to bring it on stage, to mark the start of it, the way an usher walks you to your seat. Saying the settlement is ushering in a new era means it is opening a new period in which tech companies carry legal responsibility for their platforms.",
+    "audio": true
+  },
+  {
+    "k": "sweeping",
+    "t": "sweeping",
+    "kind": "word",
+    "forms": [
+      "sweeping"
+    ],
+    "text": "Wide-ranging and touching everything in its path, the way a broom sweeps a whole floor. Sweeping changes are not small tweaks; here it means Meta is changing how its apps work for every user under 18, not adjusting one feature.",
+    "audio": true
+  },
+  {
+    "k": "default",
+    "t": "default",
+    "kind": "word",
+    "forms": [
+      "default"
+    ],
+    "text": "The setting something starts with before anyone changes it. A default two-hour limit means the limit is on automatically for every teen account, and staying under it requires no action while turning it off requires a parent's permission. Defaults matter because most people never change them.",
+    "audio": true
+  },
+  {
+    "k": "jurisdictions",
+    "t": "jurisdictions",
+    "kind": "word",
+    "forms": [
+      "jurisdictions"
+    ],
+    "text": "Areas that have their own legal authority, their own courts and laws. The article counts 48 states plus four other U.S. jurisdictions, meaning places like Washington D.C. and Puerto Rico that are not states but still have governments that can join a lawsuit.",
+    "audio": true
+  },
+  {
+    "k": "installments",
+    "t": "installments",
+    "kind": "word",
+    "forms": [
+      "installments"
+    ],
+    "text": "Payments made piece by piece on a schedule instead of all at once, the way a phone can be paid off monthly. Meta will pay the states their shares of the $18 billion in annual installments spread over ten years.",
+    "audio": true
+  },
+  {
+    "k": "consumer-protection-laws",
+    "t": "consumer-protection laws",
+    "kind": "name",
+    "forms": [
+      "consumer-protection laws"
+    ],
+    "text": "Laws that protect ordinary people from unfair, deceptive, or harmful business practices, covering things like false advertising and unsafe products. The states argued Meta broke these laws by knowingly building addictive apps and aiming them at young users.",
+    "audio": true
+  },
+  {
+    "k": "coppa",
+    "t": "COPPA",
+    "kind": "name",
+    "forms": [
+      "COPPA"
+    ],
+    "text": "The Children's Online Privacy Protection Act, a federal law from 1998 that limits how websites and apps may collect data from children under 13. It is why many apps officially require users to be 13 or older. The states accused Meta of violating it by going after young users.",
+    "audio": true
+  },
+  {
+    "k": "alleged",
+    "t": "alleged",
+    "kind": "word",
+    "forms": [
+      "alleged",
+      "alleging"
+    ],
+    "text": "Claimed but not yet proven. When a lawsuit alleges something, that is the accusation the case is built on, and careful news writing keeps the word to signal the claim was never tested by a verdict. Because Meta settled, the states' allegations were never proven or disproven in court.",
+    "audio": true
+  },
+  {
+    "k": "damages",
+    "t": "damages",
+    "kind": "word",
+    "forms": [
+      "damages"
+    ],
+    "text": "In law, damages is money, not harm: the amount a court can order one side to pay the other to make up for injury caused. The states asked for roughly $200 billion in damages before settling for $18 billion.",
+    "audio": true
+  },
+  {
+    "k": "civil-penalties",
+    "t": "civil penalties",
+    "kind": "name",
+    "forms": [
+      "civil penalties"
+    ],
+    "text": "Fines a court or government imposes for breaking the law in a non-criminal case; nobody goes to jail, but the wrongdoer pays. New Mexico's separate trial ended with Meta ordered to pay $375 million in civil penalties on top of its abatement fund.",
+    "audio": true
+  },
+  {
+    "k": "plaintiff",
+    "t": "plaintiffs",
+    "kind": "word",
+    "forms": [
+      "plaintiffs",
+      "plaintiff"
+    ],
+    "text": "The side that brings a lawsuit, the one saying it was harmed; the side being sued is the defendant. In this story the plaintiffs range from single people, like the 20-year-old woman in Los Angeles, to school districts and entire states.",
+    "audio": true
+  },
+  {
+    "k": "product-liability",
+    "t": "product-liability",
+    "kind": "name",
+    "forms": [
+      "product-liability"
+    ],
+    "text": "The area of law that makes a company responsible for harm caused by the design of its product, the way a carmaker can be sued over faulty brakes. Calling it a novel argument here means lawyers are applying that old idea to something new: treating an app's addictive design, rather than its content, as the defective product.",
+    "audio": true
+  },
+  {
+    "k": "immune",
+    "t": "immune",
+    "kind": "word",
+    "forms": [
+      "immune"
+    ],
+    "text": "Protected or exempt, so that something cannot touch you. In biology you are immune to a disease; in law, being immune means you cannot be successfully sued over something. Courts have held Meta immune from liability for what its users post, which is why these new lawsuits attack the app's design instead.",
+    "audio": true
+  },
+  {
+    "k": "liability",
+    "t": "liability",
+    "kind": "word",
+    "forms": [
+      "liability"
+    ],
+    "text": "Legal responsibility for harm, the state of being the one who has to pay when something goes wrong. A federal law shields platforms from liability for user-generated material, meaning Meta generally cannot be made to pay for what its users post.",
+    "audio": true
+  },
+  {
+    "k": "novel",
+    "t": "novel",
+    "kind": "word",
+    "forms": [
+      "novel"
+    ],
+    "text": "As an adjective, novel means new and original, not a book. A novel legal argument is one courts have not really seen before; here, the new idea is suing over an app's design the way you would sue over a defective product.",
+    "audio": true
+  },
+  {
+    "k": "invoked",
+    "t": "invoked",
+    "kind": "word",
+    "forms": [
+      "invoked"
+    ],
+    "text": "Called upon or brought up as support. Invoking a rule, a right, or a piece of evidence means formally using it in your argument. The Journal's Facebook Files reporting was invoked in the trials, meaning lawyers cited it to back their case.",
+    "audio": true
+  },
+  {
+    "k": "relief",
+    "t": "relief",
+    "kind": "word",
+    "forms": [
+      "relief"
+    ],
+    "text": "In everyday speech relief is a good feeling, but in law it is what a lawsuit actually gets you: the money, changes, or protections the winning side receives. When Colorado's attorney general calls the relief meaningful, he means the payments and app changes, not an emotion.",
+    "audio": true
+  },
+  {
+    "k": "regulators",
+    "t": "regulators",
+    "kind": "word",
+    "forms": [
+      "regulators"
+    ],
+    "text": "Government officials and agencies whose job is to set and enforce the rules an industry must follow, the referees of the business world. Meta's legal chief describes the settlement as the company and regulators from all over the country finally agreeing on the rules.",
+    "audio": true
+  },
+  {
+    "k": "testify",
+    "t": "testifying",
+    "kind": "word",
+    "forms": [
+      "testifying",
+      "testify"
+    ],
+    "text": "To answer questions under oath as a witness in court, where lying is itself a crime called perjury. The head of Instagram had already begun testifying, and Mark Zuckerberg was expected to testify next, when the settlement stopped the trial.",
+    "audio": true
+  },
+  {
+    "k": "accountable",
+    "t": "accountable",
+    "kind": "word",
+    "forms": [
+      "accountable"
+    ],
+    "text": "Required to answer for your actions and face the consequences. Holding a company accountable means forcing it to accept responsibility, usually through courts, fines, or new rules rather than just criticism.",
+    "audio": true
+  },
+  {
+    "k": "user-generated-material",
+    "t": "user-generated material",
+    "kind": "name",
+    "forms": [
+      "user-generated material"
+    ],
+    "text": "Content made by an app's users rather than the company itself: posts, photos, videos, comments. Federal law largely protects platforms from being sued over user-generated material, which is why the new lawsuits target how the apps are designed instead of what people post on them.",
+    "audio": true
+  },
+  {
+    "k": "facebook-files",
+    "t": "The Facebook Files",
+    "kind": "name",
+    "forms": [
+      "The Facebook Files",
+      "the Facebook Files"
+    ],
+    "text": "An award-winning Wall Street Journal investigative series from 2021 that revealed Meta's own internal research showing its products harmed some users, including teenagers. Lawyers cited it in these trials as evidence that the company knew about the harms.",
+    "audio": true
+  },
+  {
+    "k": "brought-by",
+    "t": "brought by",
+    "kind": "phrase",
+    "forms": [
+      "brought by"
+    ],
+    "text": "In law, to bring a case is to start it, to file the lawsuit. A case brought by the state attorneys general is a case those officials filed, so the phrase tells you who is doing the suing.",
+    "audio": true
+  },
+  {
+    "k": "playing-out",
+    "t": "playing out",
+    "kind": "phrase",
+    "forms": [
+      "playing out"
+    ],
+    "text": "Unfolding or running its course over time, like a game playing out to its final score. The Tennessee case had been playing out in state court, meaning it was moving through its stages there, before the settlement ended it.",
+    "audio": true
+  },
+  {
+    "k": "alphabet",
+    "t": "Alphabet",
+    "kind": "name",
+    "forms": [
+      "Alphabet"
+    ],
+    "text": "The parent company of Google, and therefore of YouTube. When Google reorganized in 2015 it created Alphabet as the holding company that owns Google and its sibling ventures, so news stories about YouTube's obligations often name Alphabet as the responsible company.",
+    "audio": true
+  },
+  {
+    "k": "federal",
+    "t": "federal",
+    "kind": "word",
+    "forms": [
+      "federal"
+    ],
+    "text": "Belonging to the national level of American government in Washington, as opposed to the states. A federal trial happens in a national court, a federal law applies across all 50 states, and a federal judge is appointed under the U.S. Constitution. This case mixed both levels: state officials suing in federal court under state and federal laws.",
+    "audio": true
+  }
+]
