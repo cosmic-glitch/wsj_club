@@ -1,0 +1,603 @@
+[
+  {
+    "k": "draconian",
+    "t": "draconian",
+    "kind": "vocab",
+    "pron": "druh-KOH-nee-un",
+    "forms": [
+      "draconian"
+    ],
+    "text": "Draconian describes a rule or a punishment that is unusually harsh and severe. It comes from Draco, an ancient Athenian lawmaker whose legal code prescribed death even for small thefts. Calling the immigration crackdown draconian tells you it was close to the strictest version available, not a mild tightening.",
+    "audio": true
+  },
+  {
+    "k": "curtail",
+    "t": "curtail",
+    "kind": "vocab",
+    "pron": "kur-TAYL",
+    "forms": [
+      "curtailed"
+    ],
+    "text": "To curtail something is to cut it back or cut it short, reducing it rather than ending it. You can curtail a trip, a budget, or a legal right. Here access to asylum has been sharply curtailed: the door still legally exists, but it is far narrower than before.",
+    "audio": true
+  },
+  {
+    "k": "levy",
+    "t": "levy",
+    "kind": "vocab",
+    "pron": "LEV-ee",
+    "forms": [
+      "levy"
+    ],
+    "text": "A levy is a charge that an authority, almost always a government, imposes and requires people to pay. It is broader than the word tax, covering fees and one-off assessments such as the $103,265 proposed for a new H-1B visa. As a verb, to levy is to impose that charge, and here a court struck an earlier one down.",
+    "audio": true
+  },
+  {
+    "k": "ice",
+    "t": "ICE",
+    "kind": "name",
+    "forms": [
+      "Immigration and Customs Enforcement",
+      "ICE"
+    ],
+    "text": "ICE stands for Immigration and Customs Enforcement, the federal agency that arrests and deports people already inside the United States. It is separate from the Border Patrol, which operates at the border itself. The whole story turns on ICE shifting its focus from the border to arrests on ordinary American streets.",
+    "audio": true
+  },
+  {
+    "k": "detain",
+    "t": "detain",
+    "kind": "word",
+    "forms": [
+      "detained",
+      "detention"
+    ],
+    "text": "To detain someone is to hold them in official custody, which is not the same as convicting them of anything. People can be detained for months while an immigration case is decided. The hotel worker detained in the opening paragraph had legal status the whole time.",
+    "audio": true
+  },
+  {
+    "k": "criminal-convictions",
+    "t": "criminal convictions",
+    "kind": "name",
+    "forms": [
+      "criminal convictions"
+    ],
+    "text": "A conviction is a court's formal finding that someone is guilty of a crime, a far higher bar than being arrested or merely suspected. The distinction is doing real work in this sentence: ICE picked up many people without criminal convictions, meaning no court had found them guilty of anything. Being in the country illegally is usually a civil violation rather than a crime.",
+    "audio": true
+  },
+  {
+    "k": "irregular-migrants",
+    "t": "irregular migrants",
+    "kind": "name",
+    "forms": [
+      "irregular migrants"
+    ],
+    "text": "Irregular migrants are people who cross a border or remain in a country outside its official legal channels. Officials often prefer the term because it describes the route someone took rather than labelling the person. The article says the southern border has in effect been closed to them.",
+    "audio": true
+  },
+  {
+    "k": "asylum",
+    "t": "asylum",
+    "kind": "name",
+    "forms": [
+      "asylum"
+    ],
+    "text": "Asylum is legal protection a country grants to someone who can show they face persecution at home for reasons such as their religion, politics, or ethnicity. It is a humanitarian route, so it has nothing to do with a job offer or a degree. The article says access to it has been sharply curtailed.",
+    "audio": true
+  },
+  {
+    "k": "humanitarian-parole",
+    "t": "humanitarian parole",
+    "kind": "name",
+    "forms": [
+      "humanitarian-parole"
+    ],
+    "text": "Humanitarian parole is temporary permission to enter or stay in the United States for an urgent humanitarian reason, granted case by case and carrying no path to permanent status. It has been used for people fleeing wars and collapsing governments. The article lists these routes as mostly shut.",
+    "audio": true
+  },
+  {
+    "k": "temporary-protection",
+    "t": "temporary protection",
+    "kind": "name",
+    "forms": [
+      "temporary protection"
+    ],
+    "text": "Temporary protection lets people from a country in crisis, such as one hit by war or disaster, live and work legally until conditions at home improve. Because it is designed to expire, a government can withdraw it. Withdrawing it can make people who were working entirely legally suddenly deportable.",
+    "audio": true
+  },
+  {
+    "k": "student-visas",
+    "t": "student visas",
+    "kind": "name",
+    "forms": [
+      "student visas"
+    ],
+    "text": "A student visa, usually the F-1, is temporary permission to be in the country for the single purpose of studying, and it lapses when the program ends. Many foreign scientists and engineers start on one and move to a work visa afterwards. That is why student visas being down by a third is damage that only shows up years later.",
+    "audio": true
+  },
+  {
+    "k": "green-cards",
+    "t": "green cards",
+    "kind": "name",
+    "forms": [
+      "green cards"
+    ],
+    "text": "A green card is formal permanent residence in the United States: the holder can live and work anywhere, for any employer, indefinitely, with nobody sponsoring them. It sits one rung below citizenship, which adds voting and a US passport. Employment-based green cards are among the routes the article says are being restricted.",
+    "audio": true
+  },
+  {
+    "k": "h-1b",
+    "t": "H-1B",
+    "kind": "name",
+    "forms": [
+      "H-1B"
+    ],
+    "text": "The H-1B is a temporary American work visa for specialised jobs, normally three years and extendable to six, and it is tied to the employer who sponsors it. Losing the job can mean losing the right to stay, which hands the employer unusual leverage. The article reports a proposed fee of $103,265 for each new one.",
+    "audio": true
+  },
+  {
+    "k": "deport",
+    "t": "deport",
+    "kind": "word",
+    "forms": [
+      "deported",
+      "deportations",
+      "deportation"
+    ],
+    "text": "To deport someone is for a government to formally remove them from the country, usually to their country of citizenship. It is a legal process, distinct from leaving on your own, which is why the administration reports two separate numbers: 1m deported and 2.2m said to have left voluntarily. Deportations from inside the country are running at roughly five times the earlier rate.",
+    "audio": true
+  },
+  {
+    "k": "all-told",
+    "t": "all told",
+    "kind": "phrase",
+    "forms": [
+      "All told"
+    ],
+    "text": "All told is a set phrase meaning counting everything up, taken together, in total. Writers use it to signal that separate figures are about to be summed into one claim. Here it introduces the combined total of deportations plus voluntary departures.",
+    "audio": true
+  },
+  {
+    "k": "in-effect",
+    "t": "in effect",
+    "kind": "phrase",
+    "forms": [
+      "in effect"
+    ],
+    "text": "In effect means in practice, or for all practical purposes, even when that is not the formal legal position. The border has not been legally abolished as a crossing point, but in effect it has been closed to irregular migrants. Do not confuse it with in force, which means a rule is officially active.",
+    "audio": true
+  },
+  {
+    "k": "net-immigration",
+    "t": "net immigration",
+    "kind": "name",
+    "forms": [
+      "net immigration"
+    ],
+    "text": "Net means what is left after subtracting the flow going the other way, so net immigration is arrivals minus departures. A country can welcome a million people and still have net immigration of zero if a million leave. That arithmetic is behind the claim that net immigration fell from over 2m a year to roughly zero or below.",
+    "audio": true
+  },
+  {
+    "k": "think-tank",
+    "t": "think-tank",
+    "kind": "name",
+    "forms": [
+      "think-tank"
+    ],
+    "text": "A think-tank is an organisation that researches public policy and publishes its findings to shape debate, without being part of the government or a company. Brookings, KFF, and the Peterson Institute in this article are all think-tanks. Knowing that tells you their figures are independent estimates rather than official government numbers.",
+    "audio": true
+  },
+  {
+    "k": "brookings",
+    "t": "the Brookings Institution",
+    "kind": "name",
+    "forms": [
+      "Brookings Institution",
+      "Brookings"
+    ],
+    "text": "The Brookings Institution is one of the oldest and most cited think-tanks in Washington, known for economic and social policy research. Wendy Edelberg, quoted here on break-even job growth, is one of its economists. Its estimates carry weight in the article precisely because they are independent of the administration.",
+    "audio": true
+  },
+  {
+    "k": "dynamism",
+    "t": "dynamism",
+    "kind": "word",
+    "forms": [
+      "dynamism"
+    ],
+    "text": "Dynamism is the quality of being full of energy and change: new companies starting, people moving for better work, industries rising and falling. Economists treat it as a measure of an economy's vitality rather than just its size. The article warns that the long-term hit to America's economic dynamism will be severe.",
+    "audio": true
+  },
+  {
+    "k": "demographic",
+    "t": "demographic",
+    "kind": "word",
+    "forms": [
+      "demographic"
+    ],
+    "text": "Demography is the study of populations by the numbers: how many people there are, how old they are, and how births, deaths, and moves change the total. So demographic maths means the arithmetic of who is actually in the country. The article calls that arithmetic ugly because the working-age population is set to shrink.",
+    "audio": true
+  },
+  {
+    "k": "cbo",
+    "t": "the Congressional Budget Office",
+    "kind": "name",
+    "forms": [
+      "Congressional Budget Office"
+    ],
+    "text": "The Congressional Budget Office is the US Congress's own number-crunching agency, estimating what proposed laws will cost and how the economy is likely to behave, for both parties equally. That is what the article means by calling it a non-partisan scorekeeper. Its projections are the baseline that political arguments start from.",
+    "audio": true
+  },
+  {
+    "k": "non-partisan",
+    "t": "non-partisan",
+    "kind": "word",
+    "forms": [
+      "non-partisan"
+    ],
+    "text": "Partisan means taking one political side; non-partisan means deliberately taking none. A non-partisan agency serves both parties and publishes the same numbers no matter who is in power. The label matters here because it means the CBO's grim population estimate is not a political attack.",
+    "audio": true
+  },
+  {
+    "k": "scorekeeper",
+    "t": "scorekeeper",
+    "kind": "word",
+    "forms": [
+      "scorekeeper"
+    ],
+    "text": "A scorekeeper is whoever keeps the official count in a game instead of playing in it. Applied to the CBO, it means the agency's job is to tally the cost and effect of policies while staying out of the fight over them. The word is chosen to signal neutrality, since a scorekeeper who took sides would be useless.",
+    "audio": true
+  },
+  {
+    "k": "federal-reserve",
+    "t": "the Federal Reserve",
+    "kind": "name",
+    "forms": [
+      "Federal Reserve",
+      "Fed"
+    ],
+    "text": "The Federal Reserve, usually shortened to the Fed, is America's central bank. It sets the country's main interest rate, aiming to keep prices stable and employment high, and it employs a large staff of economists whose research runs through this article. The Dallas Fed is one of its twelve regional banks.",
+    "audio": true
+  },
+  {
+    "k": "reckon",
+    "t": "reckon",
+    "kind": "word",
+    "forms": [
+      "reckon"
+    ],
+    "text": "To reckon is to calculate or judge, and in British writing it is a plain, neutral word for what an expert estimates. American ears hear it as folksy, but The Economist is a British publication and uses it straight. Fed economists reckon the population could grow by less than 0.2% this year.",
+    "audio": true
+  },
+  {
+    "k": "labour-force",
+    "t": "the labour force",
+    "kind": "name",
+    "forms": [
+      "labour force"
+    ],
+    "text": "The labour force counts people who are working plus people actively looking for work, and nobody else. Retirees, full-time students, and anyone who has given up searching sit outside it entirely. That is how the labour force can shrink by more than a million while the number counted as unemployed barely moves.",
+    "audio": true
+  },
+  {
+    "k": "greying",
+    "t": "greying",
+    "kind": "word",
+    "forms": [
+      "greying"
+    ],
+    "text": "A greying population is one whose average age keeps climbing, because people live longer and fewer babies are born; grey hair is the image behind the word. It shrinks the share of people who are of working age. Greying and lost immigration are the two forces the article says are holding job growth down together.",
+    "audio": true
+  },
+  {
+    "k": "barely-budged",
+    "t": "barely budged",
+    "kind": "phrase",
+    "forms": [
+      "barely budged"
+    ],
+    "text": "To budge is to move even slightly, and the word almost always appears in the negative: it would not budge, he refused to budge. Barely budged therefore means a number that stayed stubbornly where it was. Here it is the count of unemployed Americans, stuck just below 7m while everything around it moved.",
+    "audio": true
+  },
+  {
+    "k": "break-even",
+    "t": "break-even",
+    "kind": "name",
+    "forms": [
+      "break-even"
+    ],
+    "text": "Break-even is the level at which gains and losses exactly cancel out, so nothing changes: in business, the point where sales finally cover costs. Applied to jobs, the break-even rate is how many new jobs a month the economy needs just to hold unemployment steady. When the labour force is shrinking, that number can fall all the way to zero.",
+    "audio": true
+  },
+  {
+    "k": "cut-rates",
+    "t": "cut rates",
+    "kind": "phrase",
+    "forms": [
+      "cut rates"
+    ],
+    "text": "Cutting rates means the central bank lowering the interest rate it controls, which makes borrowing cheaper and is the standard response to a weakening economy. Job losses normally call for a cut. The awkwardness here is that job losses caused by a shrinking workforce do not mean the economy is weak, so cutting could overheat it instead.",
+    "audio": true
+  },
+  {
+    "k": "full-employment",
+    "t": "full employment",
+    "kind": "name",
+    "forms": [
+      "full employment"
+    ],
+    "text": "Full employment does not mean literally everyone has a job. It is the economists' term for the point where almost everyone who wants work has it and the only unemployment left is people moving between jobs. Past that point, extra hiring tends to push wages and prices up rather than adding output.",
+    "audio": true
+  },
+  {
+    "k": "inflationary",
+    "t": "inflationary",
+    "kind": "word",
+    "forms": [
+      "inflationary"
+    ],
+    "text": "Inflation is a general rise in prices across an economy, so inflationary describes anything that pushes prices upward. A tight labour market is inflationary because employers bid against each other for scarce workers and pass the higher wages into their prices. That is the opposite risk the article says the Fed now faces.",
+    "audio": true
+  },
+  {
+    "k": "potential-gdp",
+    "t": "potential GDP",
+    "kind": "name",
+    "forms": [
+      "potential GDP"
+    ],
+    "text": "GDP is the total value of everything a country produces in a year. Potential GDP is not what the economy did produce but the most it could sustainably produce with the workers and machines available, which the article calls the economy's sustainable speed. A growing workforce used to add about 1.4 percentage points a year to it.",
+    "audio": true
+  },
+  {
+    "k": "percentage-points",
+    "t": "percentage points",
+    "kind": "name",
+    "forms": [
+      "percentage points"
+    ],
+    "text": "A percentage point is the plain gap between two percentages, while a percent change is relative to where you started. Moving from 2% to 3% is a rise of one percentage point but also a 50% increase, and the two get confused constantly. Careful writers say percentage points precisely to keep them apart.",
+    "audio": true
+  },
+  {
+    "k": "productivity",
+    "t": "productivity",
+    "kind": "word",
+    "forms": [
+      "productivity",
+      "labour-productivity"
+    ],
+    "text": "Productivity is how much output a worker produces per hour of work. It matters because an economy can grow either by adding workers or by each worker producing more, and with the workforce no longer growing, productivity has to do nearly all the work. The article calls its 1.1% growth lacklustre.",
+    "audio": true
+  },
+  {
+    "k": "lacklustre",
+    "t": "lacklustre",
+    "kind": "word",
+    "forms": [
+      "lacklustre"
+    ],
+    "text": "Lacklustre, spelled lackluster in America, means dull and lacking energy or shine. Lustre is the gleam on a polished surface, so something lacklustre literally has none. Productivity growth of 1.1% is not a disaster, but it is nowhere near enough to replace a missing workforce.",
+    "audio": true
+  },
+  {
+    "k": "annualised",
+    "t": "annualised",
+    "kind": "word",
+    "forms": [
+      "annualised"
+    ],
+    "text": "An annualised rate takes a short stretch of data and asks what it would add up to if it kept going for a full year. Half a year of roughly 0.55% growth becomes an annualised 1.1%. Economists do this so figures covering different lengths of time can be compared fairly.",
+    "audio": true
+  },
+  {
+    "k": "data-centre-build-out",
+    "t": "data-centre build-out",
+    "kind": "name",
+    "forms": [
+      "data-centre build-out"
+    ],
+    "text": "A data centre is a warehouse full of computers, and the build-out is the enormous construction wave now going up to run artificial intelligence. Those buildings need electricians, steelworkers, and concrete crews, exactly the trades already short of people. That is why the article says AI could worsen the shortage before it relieves it.",
+    "audio": true
+  },
+  {
+    "k": "the-interior",
+    "t": "the interior",
+    "kind": "name",
+    "forms": [
+      "in the interior"
+    ],
+    "text": "The interior, in immigration policy, means everywhere inside the country as opposed to the border itself. Interior enforcement is arrests at workplaces, homes, and traffic stops, hundreds of miles from any crossing. That shift is what brought ICE agents to a hotel renovation in upstate New York.",
+    "audio": true
+  },
+  {
+    "k": "chilling-effect",
+    "t": "chilling effect",
+    "kind": "phrase",
+    "forms": [
+      "chilling effect"
+    ],
+    "text": "A chilling effect is when people stop doing something perfectly legal because they are afraid of what might happen, not because anyone forbade it. The phrase comes from free-speech law, where a vague rule can silence speech it never actually banned. Here it means two in five likely undocumented immigrants avoided going to work at all.",
+    "audio": true
+  },
+  {
+    "k": "respondents",
+    "t": "respondents",
+    "kind": "word",
+    "forms": [
+      "respondents"
+    ],
+    "text": "Respondents are the people who actually answered a survey, as opposed to everyone it was sent to. Every survey result describes its respondents, which is why who answers matters as much as what they say. Two in five respondents likely to be undocumented reported avoiding work.",
+    "audio": true
+  },
+  {
+    "k": "ghost-towns",
+    "t": "ghost town",
+    "kind": "phrase",
+    "forms": [
+      "ghost towns"
+    ],
+    "text": "A ghost town is an abandoned settlement whose people all left, usually after a mine or a single industry died. Used figuratively, it means somewhere that should be busy and is eerily empty instead. A Texas builder uses it for construction sites where the crews simply stopped showing up.",
+    "audio": true
+  },
+  {
+    "k": "proxy",
+    "t": "proxy",
+    "kind": "word",
+    "forms": [
+      "proxy"
+    ],
+    "text": "A proxy is a stand-in: something you can measure that closely tracks the thing you actually care about but cannot measure directly. Undocumented workers cannot be counted openly, so The Economist counts non-citizens aged 18 to 64, born abroad, with no more than a high-school education, and treats that group as a proxy. Every proxy is imperfect, which is why the estimate comes with a warning attached.",
+    "audio": true
+  },
+  {
+    "k": "current-population-survey",
+    "t": "the Current Population Survey",
+    "kind": "name",
+    "forms": [
+      "Current Population Survey"
+    ],
+    "text": "The Current Population Survey is the monthly government survey of roughly 60,000 American households that produces the official unemployment rate. Because it asks households rather than employers, it can pick up people no payroll record lists. The Economist builds its undocumented-worker proxy out of that raw data.",
+    "audio": true
+  },
+  {
+    "k": "volatile",
+    "t": "volatile",
+    "kind": "word",
+    "forms": [
+      "volatile"
+    ],
+    "text": "Volatile means liable to swing sharply and unpredictably. In statistics it usually points at a small sample: when a survey reaches only a few hundred people in some group, one unusual month can jerk the whole line around. The 900,000 decline is big enough to trust even though the monthly figures jump.",
+    "audio": true
+  },
+  {
+    "k": "trades",
+    "t": "trades",
+    "kind": "word",
+    "forms": [
+      "trades"
+    ],
+    "text": "A trade here is a skilled manual occupation learned through apprenticeship rather than a degree, such as plumbing, welding, or roofing. This is a completely different sense from trade meaning buying and selling between countries. In the trades this article names, most workers are immigrants.",
+    "audio": true
+  },
+  {
+    "k": "framing",
+    "t": "framing",
+    "kind": "word",
+    "forms": [
+      "framing"
+    ],
+    "text": "Framing is building the wooden or steel skeleton of a structure, the frame that everything else gets attached to. It comes first, so when a framing crew disappears the electricians and drywallers behind them have nothing to work on. That sequence is why immigrant and American-born employment fell together instead of trading places.",
+    "audio": true
+  },
+  {
+    "k": "drywalling",
+    "t": "drywalling",
+    "kind": "word",
+    "forms": [
+      "drywalling"
+    ],
+    "text": "Drywall is the flat gypsum board that forms the interior walls of almost every modern American building, and drywalling is the trade of hanging and finishing it. It is fast, physical work done after the framing and wiring are in. About 30% of construction workers overall are foreign-born, but in a trade like this one most are.",
+    "audio": true
+  },
+  {
+    "k": "depleted",
+    "t": "depleted",
+    "kind": "word",
+    "forms": [
+      "depleted"
+    ],
+    "text": "To deplete something is to use it up or drain it down until little is left, the way a battery or a savings account gets depleted. A Florida builder says his local workforce has been depleted by 70 to 75% in some trades, meaning roughly three of every four skilled workers are gone. The word implies a stock that took years to build and will take years to refill.",
+    "audio": true
+  },
+  {
+    "k": "hefty",
+    "t": "hefty",
+    "kind": "word",
+    "forms": [
+      "hefty"
+    ],
+    "text": "Hefty means large, heavy, and substantial, and it gets used for amounts as often as for objects: a hefty raise, a hefty fine. Heft is physical weight, so the word carries the sense of something you would actually feel. Even hefty pay rises failed to pull enough American-born workers into construction.",
+    "audio": true
+  },
+  {
+    "k": "lure",
+    "t": "lure",
+    "kind": "word",
+    "forms": [
+      "lure"
+    ],
+    "text": "To lure someone is to draw them toward you with the promise of something attractive; as a noun, a lure is the bait itself, like the shiny one on a fishing line. It implies deliberate temptation rather than force. American employers could not lure workers into the trades with higher pay, while China's new K visa is built to lure young scientists away.",
+    "audio": true
+  },
+  {
+    "k": "complementary",
+    "t": "complementary",
+    "kind": "word",
+    "forms": [
+      "complementary"
+    ],
+    "text": "Two things are complementary when each makes the other more useful, so they work together rather than compete: a phone and its charger, a quarterback and a receiver. Do not confuse it with complimentary, which means free of charge or full of praise. Framers and electricians are complementary, which is why losing one group cost the other work too.",
+    "audio": true
+  },
+  {
+    "k": "non-supervisory",
+    "t": "non-supervisory",
+    "kind": "word",
+    "forms": [
+      "non-supervisory"
+    ],
+    "text": "Non-supervisory workers are the ones doing the hands-on work rather than managing other people. Economists track their pay separately because it shows what ordinary workers earn, uncontaminated by managers' and executives' salaries. Their construction wages are rising at 5.2% a year, well above the January 2025 pace.",
+    "audio": true
+  },
+  {
+    "k": "technological-frontier",
+    "t": "the technological frontier",
+    "kind": "name",
+    "forms": [
+      "technological frontier"
+    ],
+    "text": "The technological frontier is the leading edge of what is currently possible, where genuinely new things get invented rather than copied. Countries at the frontier grow by innovating; countries behind it can grow simply by catching up. The article's point is that America sits at the frontier and staffs it heavily with people born abroad.",
+    "audio": true
+  },
+  {
+    "k": "peterson-institute",
+    "t": "the Peterson Institute for International Economics",
+    "kind": "name",
+    "forms": [
+      "Peterson Institute for International Economics",
+      "Peterson Institute"
+    ],
+    "text": "The Peterson Institute for International Economics is a Washington think-tank specialising in trade, currencies, and the world economy. Michael Clemens, cited here, is one of the economists best known for studying what migration does to growth. His estimate is where the $500bn figure comes from.",
+    "audio": true
+  },
+  {
+    "k": "struck-down",
+    "t": "struck down",
+    "kind": "phrase",
+    "forms": [
+      "struck down"
+    ],
+    "text": "When a court strikes down a rule or a law, it cancels it as illegal and the rule stops having any force. It is the standard phrase for judicial cancellation, so you meet it constantly in news about policy. An earlier H-1B levy was struck down, which is why a new one had to be proposed.",
+    "audio": true
+  },
+  {
+    "k": "k-visa",
+    "t": "the K visa",
+    "kind": "name",
+    "forms": [
+      "K visa"
+    ],
+    "text": "The K visa is a Chinese immigration route introduced last year to attract young foreign scientists and technologists. It exists because talent is something countries actively compete for, not something that simply shows up. The article sets it beside expanded skilled-worker routes in Canada and the EU to show America's rivals moving the opposite way.",
+    "audio": true
+  },
+  {
+    "k": "best-of-the-brightest",
+    "t": "the best and the brightest",
+    "kind": "phrase",
+    "forms": [
+      "the best of the brightest"
+    ],
+    "text": "The best and the brightest is a well-worn English phrase for the most talented people available, which the article varies slightly as the best of the brightest. It became famous as the title of a book about brilliant officials who led America into the Vietnam war, so it can carry a sting of irony. Here it is meant straight: the global talent America spent decades attracting.",
+    "audio": true
+  }
+]

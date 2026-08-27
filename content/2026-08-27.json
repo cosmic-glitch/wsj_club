@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-27",
+  "title": "The economic costs of Donald Trump's immigration crackdown",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/08/27/the-economic-costs-of-donald-trumps-immigration-crackdown",
+  "articlePageUrl": "/articles/2026-08-27.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "draconian",
+      "partOfSpeech": "adjective",
+      "pronunciation": "druh-KOH-nee-un",
+      "articleQuote": "Donald Trump promised a draconian crackdown on immigration and has largely kept his word.",
+      "meaning": "Draconian describes a rule, a punishment, or a policy that is unusually harsh and severe. The word comes from Draco, a lawmaker in ancient Athens whose legal code was so brutal that even small thefts carried the death penalty. Calling this crackdown draconian signals that it was not a modest tightening of the rules but close to the strictest version available: the southern border effectively closed, asylum access narrowed, and street arrests of people with no criminal convictions.",
+      "examples": [
+        "The new phone policy was draconian: one buzz in your pocket and it was locked in the front office until Friday.",
+        "Our coach has a draconian rule that missing a single practice means sitting out the next game, no matter the reason."
+      ]
+    },
+    {
+      "word": "curtail",
+      "partOfSpeech": "verb",
+      "pronunciation": "kur-TAYL",
+      "articleQuote": "access to asylum has been sharply curtailed",
+      "meaning": "To curtail something is to cut it back or cut it short. It is a word about reduction rather than elimination, which is why you curtail a trip, a budget, or a right that used to stretch further. In the article asylum has not been abolished, it has been sharply curtailed: the legal door is still there, just far narrower than it was.",
+      "examples": [
+        "Heavy rain curtailed the tournament, so the last two games were never played.",
+        "After the data bill arrived, my parents curtailed my plan instead of taking the phone away."
+      ]
+    },
+    {
+      "word": "levy",
+      "partOfSpeech": "noun",
+      "pronunciation": "LEV-ee",
+      "articleQuote": "replacing an earlier levy struck down by a court",
+      "meaning": "A levy is a charge that an authority, almost always a government, imposes on people or businesses and requires them to pay. It is broader than the word tax, covering fees, fines, and one-off assessments, which is why a $103,265 charge on a new H-1B visa counts as one. As a verb, to levy is to impose that charge. Here an earlier version of the visa levy was struck down by a court, a reminder that the power to levy is limited by law rather than unlimited.",
+      "examples": [
+        "Our swim club added a $20 levy on every member this season to pay for new lane ropes.",
+        "The city levied a fee on plastic bags, so now everyone brings a tote to the store."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The labour force",
+      "articleQuote": "Yet the number unemployed, just below 7m, has barely budged.",
+      "meaning": "Monthly job gains collapsed from more than 230,000 to about 30,000. The labour force shrank by over a million people since January. And yet the number of unemployed Americans, just under 7m, hardly moved at all. Those three facts sound like they cannot all be true at once, and the reason they are comes down to what the official statistics actually count.\n\nGovernment economists sort every working-age adult into exactly three boxes. Employed: you have a job. Unemployed: you have no job and you are actively looking for one. Not in the labour force: you have no job and you are not looking, which covers retirees, full-time students, and anyone who has given up searching. The labour force is only the first two boxes added together, working people plus job hunters. American statistics spell it labor force; The Economist is British, so it writes labour. The unemployment rate is that middle box divided by the labour force, which means both the top and the bottom of the fraction can move.\n\nSay your school's chess club has 100 members. Ninety come to meetings, and ten have stopped coming but still want to. Now 20 of the regulars move away and drop their membership entirely. The club has just lost a fifth of its people, but the number of members who want to attend and cannot is still ten. Anyone tracking only that second number would report no problem at all.\n\nThat is what happened to the American workforce this year. A worker who is deported, who leaves the country voluntarily, or who stops showing up out of fear of an ICE arrest does not become unemployed. They leave the labour force, so they vanish from the count instead of appearing in it. It is also why economists now talk about a break-even rate near zero: with the labour force shrinking, the economy needs almost no new jobs each month to hold unemployment steady, a number that used to be much higher. Whenever you meet an unemployment figure, ask who it leaves out before you decide whether it is good news."
+    },
+    {
+      "name": "Visas, green cards and the H-1B",
+      "articleQuote": "The administration has tightened rules on student visas—down by a third last year—H-1B visas for skilled workers and green cards.",
+      "meaning": "On August 24th the administration proposed charging $103,265 for a single new H-1B visa. Before you can judge whether that is outrageous or reasonable, you need the thing the article assumes you already know: the ladder that American immigration law uses to decide who may live and work in the country.\n\nThe bottom rung is a visa, which is temporary permission to be in the country for one stated purpose. An F-1 student visa lets you study and runs out when your degree does. An H-1B lets a company employ you in a specialized job, normally for three years and extendable to six, and it is tied to that employer. The visa belongs to the job, not to you, which is why losing the job can mean losing the right to stay. The next rung up is a green card, formally called permanent residence: you can live and work anywhere, for anyone, for as long as you like, and no employer holds the string. Above that sits citizenship, which adds voting and a US passport and cannot be taken away because you switched jobs.\n\nRunning alongside that ladder is a separate door for people in danger rather than people with skills. Asylum is for those who can show they face persecution at home, and temporary protection covers people from countries in crisis. Nothing on that side depends on an employer or a degree, which is why the article treats those routes as a different track, closed by different means.\n\nNow the $103,265 makes sense as a strategy. It puts a price on the employer-sponsored rung, while student visas, the rung most future H-1B holders climb first, are already down by a third. That is the mechanism behind the article's warning about fewer innovators tomorrow: American-trained workers born abroad hold 35% of the PhDs in science, technology, engineering and maths, and you cannot thin out one rung without losing the people who would have stood on the ones above it. When a story says immigration, check which rung it actually means, because students, sponsored workers, permanent residents and refugees are four different systems, and a change to one tells you nothing about the others."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Monthly job gains fell from more than 230,000 to about 30,000, yet the number of unemployed Americans stayed just below 7m. Why?",
+      "options": [
+        "Employers kept workers on the payroll without giving them any hours",
+        "The government stopped counting immigrants in the monthly jobs report",
+        "People who are deported or who stop looking for work leave the labour force entirely instead of being counted as unemployed",
+        "Rising wages pulled enough American-born workers into the trades to fill the gap"
+      ],
+      "answerIndex": 2,
+      "explanation": "Only people who have no job and are actively looking count as unemployed, so everyone else who stops working drops out of the labour force and disappears from the count."
+    },
+    {
+      "question": "The article says Trump promised a \"draconian crackdown\" on immigration. Draconian means:",
+      "options": [
+        "Gradual and carefully phased",
+        "Harsh and severe",
+        "Popular with most voters",
+        "Aimed at the economy rather than the law"
+      ],
+      "answerIndex": 1,
+      "explanation": "Draconian describes unusually harsh rules or punishments, after Draco, whose ancient Athenian code prescribed death even for small crimes."
+    },
+    {
+      "question": "\"Access to asylum has been sharply curtailed\" means that access to asylum was:",
+      "options": [
+        "Cut back sharply, though not abolished",
+        "Abolished completely by an act of Congress",
+        "Handed over to the states to administer",
+        "Opened up to many more applicants"
+      ],
+      "answerIndex": 0,
+      "explanation": "To curtail is to cut something back or cut it short, so curtailed access is narrower than before but still exists."
+    },
+    {
+      "question": "The proposed $103,265 charge on new H-1B visas would replace \"an earlier levy struck down by a court.\" A levy is:",
+      "options": [
+        "A written legal opinion explaining a court's decision",
+        "A limit on how many visas may be issued each year",
+        "A deposit that is refunded once the visa expires",
+        "A charge that an authority such as a government imposes and requires people to pay"
+      ],
+      "answerIndex": 3,
+      "explanation": "A levy is any compulsory charge imposed by an authority, broader than a tax, and a court can strike one down if it goes beyond the government's legal power."
+    },
+    {
+      "question": "What is the difference between an H-1B visa and a green card?",
+      "options": [
+        "An H-1B is permanent, while a green card must be renewed every year",
+        "An H-1B is temporary and tied to a specific employer, while a green card grants permanent residence and the freedom to work for anyone",
+        "An H-1B grants the right to vote in federal elections, while a green card does not",
+        "An H-1B is for students, while a green card is for tourists"
+      ],
+      "answerIndex": 1,
+      "explanation": "A visa is temporary permission for one purpose and the H-1B is tied to the sponsoring employer, whereas a green card is permanent residence with no employer holding the string."
+    }
+  ]
+}
