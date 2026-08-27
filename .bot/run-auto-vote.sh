@@ -42,10 +42,22 @@ else
   echo "[$(date -u +%FT%TZ)] auto-vote: git pull failed at $(git rev-parse --short HEAD); proceeding" >> "$LOG_FILE"
 fi
 
+# The Economist's bot challenge is only solved by a HEADED browser (see the
+# header comment in .bot/lib.mjs), and cron has no display — so the whole
+# session runs under a virtual one. Every child process inherits DISPLAY, which
+# is what flips `launch()` in lib.mjs out of headless. Without xvfb the run
+# still proceeds, just headless, and article reads will fail the same way.
+XVFB=()
+if command -v xvfb-run >/dev/null 2>&1; then
+  XVFB=(xvfb-run -a --server-args="-screen 0 1440x900x24")
+else
+  echo "[$(date -u +%FT%TZ)] auto-vote: WARNING xvfb-run not found; running headless, article reads will likely be bot-blocked" >> "$LOG_FILE"
+fi
+
 # One agentic session runs the whole pick → open-vote → notify flow. Don't let
 # set -e abort on a non-zero exit — the outcome check below is the verdict.
 CLAUDE_RC=0
-claude -p "Use the auto-vote skill to open today's Reading Club senior vote. Run fully autonomously end to end — never pause for confirmation — and follow the skill's idempotency guard and quality gates exactly." \
+"${XVFB[@]}" claude -p "Use the auto-vote skill to open today's Reading Club senior vote. Run fully autonomously end to end — never pause for confirmation — and follow the skill's idempotency guard and quality gates exactly." \
   --dangerously-skip-permissions \
   >> "$LOG_FILE" 2>&1 || CLAUDE_RC=$?
 

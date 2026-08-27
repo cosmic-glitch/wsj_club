@@ -11,22 +11,31 @@ import { fileURLToPath } from "node:url";
 export const HERE = path.dirname(fileURLToPath(import.meta.url));
 export const STATE_PATH = path.join(HERE, "econ-state.json");
 
-// The one fingerprint that has worked for both login and reading from this box:
-// full Chromium (not headless-shell) + a realistic desktop UA. Cloudflare on the
-// Economist passes with this; the site does NOT IP-block this box.
-const UA =
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36";
+// Two things are load-bearing against the Economist's bot challenge, and both
+// were learned the hard way (2026-08-27, after three days of failed runs):
+//
+//   1. NO spoofed user-agent. A UA claiming Windows/Chrome contradicts the
+//      client hints the real browser sends (Sec-CH-UA-Platform and friends —
+//      the challenge response literally lists them in `critical-ch`), and
+//      Cloudflare fails the mismatch every time. The native UA passes.
+//   2. HEADED, not headless. Headless never solves the JS challenge no matter
+//      the UA. Under cron there is no display, so the entrypoint wraps the run
+//      in `xvfb-run`; `launch()` goes headed whenever a DISPLAY exists and
+//      falls back to headless rather than failing to start when it doesn't.
+//
+// Neither the IP nor the credentials were ever the problem: the same headless
+// run is blocked from a residential IP too, and the saved session still reads
+// full articles (721 words vs a 136-word logged-out teaser) once headed.
 const CONTEXT_OPTS = {
   viewport: { width: 1440, height: 900 },
   locale: "en-US",
   timezoneId: "America/New_York",
-  userAgent: UA,
 };
 
 export function launch() {
   return chromium.launch({
-    headless: true,
-    args: ["--disable-blink-features=AutomationControlled"],
+    headless: !process.env.DISPLAY,
+    args: ["--disable-blink-features=AutomationControlled", "--no-sandbox"],
   });
 }
 
@@ -127,26 +136,48 @@ export async function loginAndSave() {
       .catch(() => {});
     await page.waitForTimeout(9000);
 
-    // Confirm by reading a real article in full.
+    // Confirm by reading a real article in full. Try several: any single
+    // article can draw a bot challenge, and judging the login on one unlucky
+    // pick is what produced three days of bogus "check credentials" alerts.
     await page.goto("https://www.economist.com/", { waitUntil: "domcontentloaded", timeout: 45000 });
     await page.waitForTimeout(3000);
-    const art = await page.evaluate(() =>
-      Array.from(document.querySelectorAll("a[href]"))
+    const arts = await page.evaluate(() => {
+      const seen = new Set();
+      return Array.from(document.querySelectorAll("a[href]"))
         .map((a) => a.href)
-        .find((h) => /economist\.com\/[a-z-]+\/20\d\d\//.test(h)),
-    );
+        .filter((h) => /economist\.com\/[a-z-]+\/20\d\d\/\d{2}\/\d{2}\/[a-z0-9-]+/i.test(h))
+        .filter((h) => (seen.has(h) ? false : (seen.add(h), true)))
+        .slice(0, 4);
+    });
     let ok = false;
-    if (art) {
-      await page.goto(art, { waitUntil: "domcontentloaded", timeout: 45000 });
+    let best = 0;
+    let challenged = false;
+    for (const art of arts) {
+      await page.goto(art, { waitUntil: "domcontentloaded", timeout: 45000 }).catch(() => {});
       await page.waitForTimeout(3500);
       const { words } = await extractArticle(page);
-      ok = words > 400;
+      // A solved page renders the headline; a challenge leaves a stub title.
+      if (words === 0 && /^(economist\.com|just a moment)/i.test(await page.title())) challenged = true;
+      best = Math.max(best, words);
+      if (words > 400) {
+        ok = true;
+        break;
+      }
     }
     if (ok) {
       await ctx.storageState({ path: STATE_PATH });
       console.error("refresh: login OK, session saved");
+    } else if (challenged || best === 0) {
+      // Distinguish a bot block from a genuine auth failure — they need
+      // completely different fixes, and only one of them is about the password.
+      console.error(
+        `refresh: login NOT confirmed — bot challenge, not credentials (read ${arts.length} articles, best ${best} words). ` +
+          "Check that the run is headed (DISPLAY set / xvfb-run) and that no spoofed user-agent is set.",
+      );
     } else {
-      console.error("refresh: login NOT confirmed (still truncated) — check credentials");
+      console.error(
+        `refresh: login NOT confirmed — pages load but stay truncated (best ${best} words); this one really may be credentials or an expired subscription.`,
+      );
     }
     return ok;
   } finally {
