@@ -40,7 +40,7 @@
     "forms": [
       "clocks"
     ],
-    "text": "To clock something, in this British sense, is to notice or spot it. It has nothing to do with telling time. When the article says the immune system clocks mutated proteins as foreign, it means the system registers them as not belonging to you, and then destroys the cells carrying them.",
+    "text": "To clock something, in this British sense, is to notice or spot it, and it has nothing to do with telling time. The article is using the word loosely. What physically happens is that a receptor on an immune cell binds to the mutated protein piece on the other cell's surface, and the cell carrying that piece is then destroyed.",
     "audio": true
   },
   {
@@ -62,7 +62,7 @@
       "melanoma",
       "melanomas"
     ],
-    "text": "Melanoma is a cancer that starts in the pigment-making cells of the skin, the ones responsible for moles and tanning, and it is the most dangerous common form of skin cancer because it spreads early. It matters here for a specific reason: melanomas carry unusually many mutations, which makes them among the easiest tumours for the immune system to spot. That is also why a success in melanoma might not repeat in other cancers.",
+    "text": "Melanoma is a cancer that starts in the pigment-making cells of the skin, the ones responsible for moles and tanning, and it is the most dangerous common form of skin cancer because it spreads early. It matters here for a specific reason: melanoma cells carry unusually many mutations, so they carry unusually many mutated protein pieces for T cells to bind to. That is also why a success in melanoma might not repeat in other cancers.",
     "audio": true
   },
   {
@@ -82,7 +82,7 @@
     "forms": [
       "immunotherapy"
     ],
-    "text": "Immunotherapy is the branch of cancer medicine that treats the patient's immune system rather than the tumour, on the principle that a well-aimed immune system finds stray cancer cells better than any drug can. Chemotherapy poisons fast-dividing cells directly, while immunotherapy instead removes whatever is stopping your own defences from doing the job. Checkpoint inhibitors and cancer vaccines are both kinds of immunotherapy.",
+    "text": "Immunotherapy is the branch of cancer medicine that treats the patient's immune system rather than the tumour, on the principle that immune cells make contact with cells one at a time and so reach scattered cancer cells that surgery and radiation cannot. Chemotherapy poisons fast-dividing cells directly, while immunotherapy instead removes whatever is stopping the patient's own immune cells from destroying the tumour. Checkpoint inhibitors and cancer vaccines are both kinds of immunotherapy.",
     "audio": true
   },
   {
@@ -104,7 +104,7 @@
       "neoantigens",
       "neoantigen"
     ],
-    "text": "An antigen is anything the immune system can recognise and react to, and neo means new. A neoantigen is a protein that exists only inside a tumour, built from a gene that mutated, so it has never appeared anywhere else in that person's body. It is the one genuinely foreign-looking thing about a cancer made of your own cells, and it is what a cancer vaccine aims the immune system at.",
+    "text": "An antigen is a molecule, or a piece of one, that an immune cell can bind to, and neo means new. A neoantigen is a protein piece that exists only inside a tumour, built from a gene that mutated, so no cell in that person's body has ever carried it before. It is the only part of a cancer cell that is not also found on healthy cells, which is what makes it something a vaccine can aim at.",
     "audio": true
   },
   {
@@ -116,7 +116,7 @@
       "checkpoint inhibitor",
       "checkpoint drugs"
     ],
-    "text": "Your cells carry molecules that tell an approaching immune cell to stand down, a safety catch that keeps the immune system from attacking healthy tissue. Tumours end up displaying those same stand-down signals, which switches the attack off. A checkpoint inhibitor is a drug that blocks the signal so the immune cell never receives it, which is why these drugs are given alongside a cancer vaccine rather than instead of one.",
+    "text": "Many healthy cells carry a particular molecule on their surface, and T cells carry a receptor that this molecule fits. When those two bind, the killing response inside the T cell shuts down, which is what stops immune cells destroying healthy tissue. Cancer cells that happen to make a lot of that same molecule are not killed, so they are the ones that keep dividing. A checkpoint inhibitor is a drug that binds one half of that pair first, so the two cannot reach each other and the shutdown never starts.",
     "audio": true
   },
   {
@@ -126,7 +126,7 @@
     "forms": [
       "mRNA"
     ],
-    "text": "DNA is the master copy of your instructions and stays inside the cell's nucleus. When a cell needs a protein it copies out that one stretch as messenger RNA, or mRNA, a temporary working copy that travels to the protein-building machinery and is destroyed within hours. An mRNA vaccine delivers that instruction slip so your own cells build the protein, which is why a new vaccine can be written in weeks and why it cannot alter your DNA.",
+    "text": "DNA is the master copy of your genetic instructions and stays inside the cell's nucleus. When a cell needs a protein it copies out that one stretch as messenger RNA, or mRNA, a temporary copy that travels to the protein-building machinery and is broken down within hours. An mRNA vaccine delivers that temporary copy so your own cells build the protein themselves, which is why a new vaccine can be written in weeks and why it cannot change your DNA.",
     "audio": true
   },
   {
@@ -200,7 +200,7 @@
       "suppress",
       "suppression"
     ],
-    "text": "To suppress something is to hold it down or stop it happening, whether that is a cough, a protest, or a feeling. Tumours suppress an immune response by displaying signals that switch off the immune cells arriving to attack. The noun is suppression, and a drug that stops the suppression lets the response go ahead.",
+    "text": "To suppress something is to hold it down or stop it happening, whether that is a cough, a protest, or a feeling. Tumours suppress an immune response by carrying molecules that shut down the immune cells making contact with them. The noun is suppression, and a drug that stops the suppression lets the response go ahead.",
     "audio": true
   },
   {
@@ -292,7 +292,7 @@
     "forms": [
       "microscopic"
     ],
-    "text": "Microscopic means too small to see without a microscope. The point being made here is medical rather than descriptive: after surgery or chemotherapy, clusters of cancer cells too small for any scan to detect can survive, and those are what later grow back as tumours. An immune system trained to hunt them down is why doctors think a vaccine could prevent recurrence.",
+    "text": "Microscopic means too small to see without a microscope. The point being made here is medical rather than descriptive: after surgery or chemotherapy, clusters of cancer cells too small for any scan to detect can survive, and those are what later grow back as tumours. A vaccine could matter because T cells make contact with cells one at a time, so they reach single scattered cells that no scan located and no surgeon could remove.",
     "audio": true
   },
   {
