@@ -26,6 +26,7 @@ Live: https://dailyreadingclub.com · Repo: https://github.com/cosmic-glitch/wsj
 - `public/articles/` — served self-contained HTML article pages, one per day, captured by the wsj-reading skill (every day has one; it's what makes the glossary possible)
 - `public/glossary.js|css` + `public/glossaries/` — the article pages' tap-a-word glossary: pre-baked JSON per page, authored by Claude in the skill (no runtime API); validate with `scripts/check-glossary.mjs`, tag pages with `scripts/add-glossary-tags.mjs`
 - `public/audio/<date>/` — pronunciation clips for vocab/concepts (`scripts/gen-pronunciation.mjs`) + `gloss/` glossary clips (`scripts/gen-glossary-audio.mjs`)
+- `public/diagrams/<date>/` — hand-authored SVGs for a concept card's optional `diagram` field; rare (only when the idea is spatial), self-contained palette since an `<img>` gets no page CSS. Rules in the authoring skill
 - `article-text/` — gitignored drop-zone for full article text → uploaded to Blob for the tutor (`scripts/upload-article-text.mjs`)
 - `app/` — routes (thin wrappers) + API routes; `app/admin/` = Reports + Manage Students
 - `components/` — the shared page bodies and client widgets

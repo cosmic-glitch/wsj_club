@@ -229,6 +229,25 @@ function ConceptCard({
         firstClassName="mt-4 text-stone-800"
       />
 
+      {/* Optional diagram — a plain <img> of a hand-authored SVG under
+          public/diagrams/. It sits AFTER the prose on purpose: read the
+          mechanism, then check yourself against the picture. The SVG carries
+          its own palette (no CSS reaches inside an <img>). */}
+      {concept.diagram && (
+        <figure className="mt-5 border-[3px] border-[#0a0a0a] bg-white p-3">
+          <img
+            src={concept.diagram.src}
+            alt={concept.diagram.alt}
+            className="mx-auto block h-auto w-full"
+          />
+          {concept.diagram.caption && (
+            <figcaption className="mt-2.5 border-t-2 border-stone-200 pt-2 text-center font-sans text-sm text-stone-600">
+              {concept.diagram.caption}
+            </figcaption>
+          )}
+        </figure>
+      )}
+
       {concept.link && (
         <a
           href={concept.link.url}
