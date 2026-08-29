@@ -1,0 +1,389 @@
+[
+  {
+    "k": "notorious",
+    "t": "notorious",
+    "kind": "vocab",
+    "pron": "noh-TOR-ee-us",
+    "forms": [
+      "notorious"
+    ],
+    "text": "Notorious means famous, but only ever for something bad. A notorious intersection is one everybody knows is dangerous, which is why you can never be notorious for kindness. Saying the cancer-vaccine field is notorious for broken promises means everyone in medicine knows the field, and knows it for decades of announcements that led nowhere.",
+    "audio": true
+  },
+  {
+    "k": "caveat",
+    "t": "caveat",
+    "kind": "vocab",
+    "pron": "KAV-ee-at",
+    "forms": [
+      "caveats",
+      "caveat"
+    ],
+    "text": "A caveat is a warning or condition attached to a claim, the part that starts with 'but keep in mind' and stops you believing more than the evidence supports. It comes from the Latin for 'let him beware.' Here the writer reports that the vaccine slowed the return of melanoma and then immediately lists caveats: the delay might not mean longer life, the cost might be enormous, and melanoma might be an unusually easy target.",
+    "audio": true
+  },
+  {
+    "k": "interim",
+    "t": "interim",
+    "kind": "vocab",
+    "pron": "IN-tur-im",
+    "forms": [
+      "interim"
+    ],
+    "text": "Interim means in between and temporary, filling a gap until the final version arrives. A school with an interim principal has someone holding the job until a permanent one is hired. Interim results in a drug trial are what researchers can see partway through, before the study has finished, which is why they support 'the vaccine is working so far' rather than 'the vaccine works.'",
+    "audio": true
+  },
+  {
+    "k": "clocks",
+    "t": "clocks",
+    "kind": "word",
+    "forms": [
+      "clocks"
+    ],
+    "text": "To clock something, in this British sense, is to notice or spot it. It has nothing to do with telling time. When the article says the immune system clocks mutated proteins as foreign, it means the system registers them as not belonging to you, and then destroys the cells carrying them.",
+    "audio": true
+  },
+  {
+    "k": "former-and-latter",
+    "t": "the former and the latter",
+    "kind": "phrase",
+    "forms": [
+      "the former",
+      "the latter"
+    ],
+    "text": "When a writer names two things and then refers back to them, the former means the first one mentioned and the latter means the second. This article opens with pancreatic cancer and then melanoma, so the treatment for the former is the pancreatic one and the trial for the latter is the melanoma one. The pair saves repeating long names, and reading carefully means tracking which is which.",
+    "audio": true
+  },
+  {
+    "k": "melanoma",
+    "t": "melanoma",
+    "kind": "name",
+    "forms": [
+      "melanoma",
+      "melanomas"
+    ],
+    "text": "Melanoma is a cancer that starts in the pigment-making cells of the skin, the ones responsible for moles and tanning, and it is the most dangerous common form of skin cancer because it spreads early. It matters here for a specific reason: melanomas carry unusually many mutations, which makes them among the easiest tumours for the immune system to spot. That is also why a success in melanoma might not repeat in other cancers.",
+    "audio": true
+  },
+  {
+    "k": "pancreatic-cancer",
+    "t": "pancreatic cancer",
+    "kind": "name",
+    "forms": [
+      "pancreatic cancer"
+    ],
+    "text": "Pancreatic cancer starts in the pancreas, the organ behind the stomach that makes insulin and digestive juices. It is one of the deadliest cancers because it causes few symptoms until it has already spread. The article mentions it as the first of two recent pieces of good news, with a treatment fast-tracked to approval in August.",
+    "audio": true
+  },
+  {
+    "k": "immunotherapy",
+    "t": "immunotherapy",
+    "kind": "name",
+    "forms": [
+      "immunotherapy"
+    ],
+    "text": "Immunotherapy is the branch of cancer medicine that treats the patient's immune system rather than the tumour, on the principle that a well-aimed immune system finds stray cancer cells better than any drug can. Chemotherapy poisons fast-dividing cells directly, while immunotherapy instead removes whatever is stopping your own defences from doing the job. Checkpoint inhibitors and cancer vaccines are both kinds of immunotherapy.",
+    "audio": true
+  },
+  {
+    "k": "tumour",
+    "t": "tumour",
+    "kind": "name",
+    "forms": [
+      "tumours",
+      "tumour"
+    ],
+    "text": "A tumour is a lump of cells that keep dividing when they should have stopped. British English spells it tumour and American English spells it tumor. The word by itself does not mean cancer, since some tumours are harmless growths, but every tumour discussed in this article is a cancerous one.",
+    "audio": true
+  },
+  {
+    "k": "neoantigens",
+    "t": "neoantigens",
+    "kind": "name",
+    "forms": [
+      "neoantigens",
+      "neoantigen"
+    ],
+    "text": "An antigen is anything the immune system can recognise and react to, and neo means new. A neoantigen is a protein that exists only inside a tumour, built from a gene that mutated, so it has never appeared anywhere else in that person's body. It is the one genuinely foreign-looking thing about a cancer made of your own cells, and it is what a cancer vaccine aims the immune system at.",
+    "audio": true
+  },
+  {
+    "k": "checkpoint-inhibitors",
+    "t": "checkpoint inhibitors",
+    "kind": "name",
+    "forms": [
+      "checkpoint inhibitors",
+      "checkpoint inhibitor",
+      "checkpoint drugs"
+    ],
+    "text": "Your cells carry molecules that tell an approaching immune cell to stand down, a safety catch that keeps the immune system from attacking healthy tissue. Tumours end up displaying those same stand-down signals, which switches the attack off. A checkpoint inhibitor is a drug that blocks the signal so the immune cell never receives it, which is why these drugs are given alongside a cancer vaccine rather than instead of one.",
+    "audio": true
+  },
+  {
+    "k": "mrna",
+    "t": "mRNA",
+    "kind": "name",
+    "forms": [
+      "mRNA"
+    ],
+    "text": "DNA is the master copy of your instructions and stays inside the cell's nucleus. When a cell needs a protein it copies out that one stretch as messenger RNA, or mRNA, a temporary working copy that travels to the protein-building machinery and is destroyed within hours. An mRNA vaccine delivers that instruction slip so your own cells build the protein, which is why a new vaccine can be written in weeks and why it cannot alter your DNA.",
+    "audio": true
+  },
+  {
+    "k": "intismeran",
+    "t": "intismeran",
+    "kind": "name",
+    "forms": [
+      "intismeran"
+    ],
+    "text": "Intismeran is the personalised mRNA cancer vaccine in this story, developed by Moderna and Merck. It is not one fixed product: each dose is written for a single patient, based on the mutations found in that person's own tumour. The trial reported here gave it to melanoma patients alongside a checkpoint inhibitor.",
+    "audio": true
+  },
+  {
+    "k": "moderna-and-merck",
+    "t": "Moderna and Merck",
+    "kind": "name",
+    "forms": [
+      "Moderna and Merck",
+      "Moderna",
+      "Merck"
+    ],
+    "text": "Moderna is the American biotech firm that became famous for one of the mRNA covid vaccines, and Merck is a far older American pharmaceutical giant. They are developing this cancer vaccine together, which is a common arrangement in the industry: the smaller firm brings the new technology and the larger one brings the money, the trial machinery and the experience of dealing with regulators.",
+    "audio": true
+  },
+  {
+    "k": "drug-regulator",
+    "t": "drug regulator",
+    "kind": "name",
+    "forms": [
+      "drug regulator"
+    ],
+    "text": "America's drug regulator is the Food and Drug Administration, the government agency that decides whether a medicine may be sold, based on trial evidence that it works and is safe enough to use. Nothing reaches patients without its approval. Fast-tracking means the agency reviews a promising treatment for a serious disease on a compressed schedule instead of the usual one.",
+    "audio": true
+  },
+  {
+    "k": "fast-tracked",
+    "t": "fast-tracked",
+    "kind": "word",
+    "forms": [
+      "fast-tracked"
+    ],
+    "text": "To fast-track something is to push it through a process faster than the normal queue allows. Regulators do this for treatments aimed at serious diseases with few good options. The word is used well beyond medicine, for a bill fast-tracked through parliament or an employee fast-tracked into management.",
+    "audio": true
+  },
+  {
+    "k": "clinical-trials",
+    "t": "trials",
+    "kind": "name",
+    "forms": [
+      "trials",
+      "trial"
+    ],
+    "text": "A clinical trial is the controlled experiment that decides whether a treatment actually works, usually by giving it to one group of patients and comparing them with a group that does not receive it. Trials run in stages and take years, which is why researchers sometimes look at interim results partway through. Everything claimed in this article rests on trial evidence rather than on individual success stories.",
+    "audio": true
+  },
+  {
+    "k": "deployed",
+    "t": "deployed",
+    "kind": "word",
+    "forms": [
+      "deployed"
+    ],
+    "text": "To deploy something is to put it into action where it is needed. The word comes from the military, where you deploy troops, so it carries a sense of deliberate positioning rather than casual use. Saying immunotherapy has been deployed to encourage the immune system pictures an organised campaign against tumours.",
+    "audio": true
+  },
+  {
+    "k": "suppress",
+    "t": "suppress",
+    "kind": "word",
+    "forms": [
+      "suppress",
+      "suppression"
+    ],
+    "text": "To suppress something is to hold it down or stop it happening, whether that is a cough, a protest, or a feeling. Tumours suppress an immune response by displaying signals that switch off the immune cells arriving to attack. The noun is suppression, and a drug that stops the suppression lets the response go ahead.",
+    "audio": true
+  },
+  {
+    "k": "revived",
+    "t": "revived",
+    "kind": "word",
+    "forms": [
+      "revived"
+    ],
+    "text": "To revive something is to bring it back to life after it had faded or stopped. You revive an old tradition, a dying plant, or an unconscious person. Interest in cancer vaccines had nearly died out after years of failure, and the arrival of checkpoint inhibitors revived it by clearing away the obstacle that had been defeating them.",
+    "audio": true
+  },
+  {
+    "k": "personalised",
+    "t": "personalised",
+    "kind": "word",
+    "forms": [
+      "personalised"
+    ],
+    "text": "Personalised means made for one particular person rather than produced in a single version for everyone. British English spells it with an s and American English with a z. A personalised vaccine is built from the mutations found in one patient's own tumour, so no two patients receive the same molecule.",
+    "audio": true
+  },
+  {
+    "k": "implication",
+    "t": "by implication",
+    "kind": "word",
+    "forms": [
+      "by implication",
+      "implication"
+    ],
+    "text": "An implication is something a statement points to without saying it outright. If this particular vaccine works, then by implication the whole neoantigen theory behind it works too, even though nobody tested that theory directly. Reading well means noticing what a result implies as well as what it states.",
+    "audio": true
+  },
+  {
+    "k": "recurrence",
+    "t": "recurrence",
+    "kind": "word",
+    "forms": [
+      "recurrence",
+      "re-occurrence"
+    ],
+    "text": "A recurrence is something happening again after it had stopped. In cancer it names the specific fear that follows successful treatment: the disease returning months or years later, often growing from a few cells left behind. The article uses recurrence and re-occurrence for the same thing, and what the vaccine has achieved so far is delaying it, not preventing it.",
+    "audio": true
+  },
+  {
+    "k": "marginal",
+    "t": "marginal",
+    "kind": "word",
+    "forms": [
+      "marginal"
+    ],
+    "text": "Marginal means small, slight, or barely worth counting. A marginal improvement is one you would struggle to notice at all. The caution here is that the vaccine might deliver a marginal benefit at great expense, meaning a delay so short that nobody would think it worth an enormous bill.",
+    "audio": true
+  },
+  {
+    "k": "scale",
+    "t": "scale",
+    "kind": "word",
+    "forms": [
+      "scale"
+    ],
+    "text": "Scale here means size or magnitude, not a weighing machine or a fish's covering. Asking about the scale of the response means asking how big the effect was, not whether there was one at all. It is the number that decides whether this is a curiosity or a genuine advance, and it is exactly what the partial results have not yet revealed.",
+    "audio": true
+  },
+  {
+    "k": "field",
+    "t": "field",
+    "kind": "word",
+    "forms": [
+      "field"
+    ],
+    "text": "A field is an area of study or work, the sense used when someone is called an expert in her field. It has nothing to do with grass. The field here is cancer-vaccine research, so calling a field notorious describes the reputation of everyone working in it rather than any single experiment.",
+    "audio": true
+  },
+  {
+    "k": "nonetheless",
+    "t": "nonetheless",
+    "kind": "word",
+    "forms": [
+      "nonetheless"
+    ],
+    "text": "Nonetheless means in spite of what was just said, a one-word version of 'even so.' It signals that the writer accepts the objections and is about to disagree with them anyway. The doubts about cost and survival have just been listed, and clinicians are nonetheless excited.",
+    "audio": true
+  },
+  {
+    "k": "microscopic",
+    "t": "microscopic",
+    "kind": "word",
+    "forms": [
+      "microscopic"
+    ],
+    "text": "Microscopic means too small to see without a microscope. The point being made here is medical rather than descriptive: after surgery or chemotherapy, clusters of cancer cells too small for any scan to detect can survive, and those are what later grow back as tumours. An immune system trained to hunt them down is why doctors think a vaccine could prevent recurrence.",
+    "audio": true
+  },
+  {
+    "k": "chemotherapy",
+    "t": "chemotherapy",
+    "kind": "name",
+    "forms": [
+      "chemotherapy"
+    ],
+    "text": "Chemotherapy is treatment with drugs that kill fast-dividing cells. Cancer cells divide fast, so they are hit hardest, but hair follicles, gut lining and bone marrow divide fast too, which is why the treatment causes hair loss, nausea and exhaustion. The hope with immunotherapy is to aim precisely enough that patients need less of it.",
+    "audio": true
+  },
+  {
+    "k": "radiation",
+    "t": "radiation",
+    "kind": "name",
+    "forms": [
+      "radiation"
+    ],
+    "text": "Radiation therapy uses focused high-energy beams to damage the DNA of cancer cells so badly that they can no longer divide. It is aimed carefully at the tumour, but healthy tissue in the path of the beam takes damage too. That is what makes it one of the harmful treatments the article hopes a vaccine could reduce the need for.",
+    "audio": true
+  },
+  {
+    "k": "medical-oncologist",
+    "t": "medical oncologist",
+    "kind": "name",
+    "forms": [
+      "medical oncologist",
+      "oncologist"
+    ],
+    "text": "An oncologist is a doctor who specialises in cancer, from the Greek onkos, meaning mass or tumour. A medical oncologist treats cancer with drugs, as distinct from a surgical oncologist who operates or a radiation oncologist who uses beams. Elad Sharon, quoted here, is a medical oncologist at a major cancer hospital, so he is judging the result as someone who would actually prescribe the treatment.",
+    "audio": true
+  },
+  {
+    "k": "dana-farber",
+    "t": "Dana-Farber Cancer Institute",
+    "kind": "name",
+    "forms": [
+      "Dana-Farber Cancer Institute"
+    ],
+    "text": "The Dana-Farber Cancer Institute in Boston is one of the leading cancer hospitals and research centres in the United States, affiliated with Harvard Medical School. Journalists quote doctors from places like it because such centres both treat patients and run the trials, so their staff can judge whether a result will actually change how cancer is treated.",
+    "audio": true
+  },
+  {
+    "k": "under-way",
+    "t": "under way",
+    "kind": "phrase",
+    "forms": [
+      "under way"
+    ],
+    "text": "Under way means started and in progress, from the sailing expression for a ship that has begun to move. Trials under way for several years are running but not finished. It is usually two words in British writing, though you will also see it as underway.",
+    "audio": true
+  },
+  {
+    "k": "in-any-case",
+    "t": "in any case",
+    "kind": "phrase",
+    "forms": [
+      "in any case"
+    ],
+    "text": "In any case means whatever else may be true, or regardless of what was just said. Writers use it to set one argument aside and add another that stands on its own. Here it adds a separate reason the early vaccines failed: quite apart from targeting only one protein, some were aimed at the wrong proteins in the first place.",
+    "audio": true
+  },
+  {
+    "k": "points-to",
+    "t": "points to",
+    "kind": "phrase",
+    "forms": [
+      "points to"
+    ],
+    "text": "To point to something is to indicate or suggest it, the way evidence points to a conclusion without proving it. It is a deliberately hedged verb, used when the evidence leans one way but is not settled. The result points to a better way of preventing recurrence, which is a claim about direction rather than proof.",
+    "audio": true
+  },
+  {
+    "k": "breakthrough",
+    "t": "breakthrough",
+    "kind": "word",
+    "forms": [
+      "breakthrough"
+    ],
+    "text": "A breakthrough is a sudden advance past an obstacle that had blocked progress for a long time, borrowed from breaking through an enemy line. In science reporting it is a badly overused word, which is why the article's last line is so careful: full results will show the scale of the breakthrough, if breakthrough it indeed turns out to be.",
+    "audio": true
+  },
+  {
+    "k": "definitive",
+    "t": "definitive",
+    "kind": "word",
+    "forms": [
+      "definitive"
+    ],
+    "text": "Definitive means final and settling the question, so that nothing more needs arguing. A definitive answer ends the debate, and a definitive edition of a book is the one that replaces all the others. The subtitle warns that these results are promising but not yet definitive, which compresses the whole caution of the article into a single word.",
+    "audio": true
+  }
+]
