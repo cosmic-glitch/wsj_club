@@ -48,11 +48,6 @@ export type Concept = {
   inContext?: string; // legacy: the article-specific gloss — kept on older entries, no longer rendered
   meaning: string; // the single, intuitive, concrete explanation of the idea (with ≥1 concrete example)
   link?: { url: string; label: string }; // optional illustrative external link (e.g. a live prediction market), shown as a button under the meaning
-  diagram?: {
-    src: string; // served path to a hand-authored SVG under public/, e.g. "/diagrams/2026-08-29/neoantigens.svg"
-    alt: string; // what the picture shows, for screen readers
-    caption?: string; // one line under the figure
-  }; // RARE and optional — only when the idea is spatial and a picture shows a mechanism the prose can't (a thing being compared, blocked, or passed along). Rendered as a plain <img> after the meaning, so the SVG must carry its own brutalist palette (white ground, #0a0a0a ink, #ffe600 accent)
 };
 
 /** A single multiple-choice quiz question. */
