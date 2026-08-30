@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-30",
+  "title": "How Shein came crashing down",
+  "articleUrl": "https://www.economist.com/business/2026/08/24/how-shein-came-crashing-down",
+  "articlePageUrl": "/articles/2026-08-30.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "pittance",
+      "partOfSpeech": "noun",
+      "pronunciation": "PIT-uhns",
+      "articleQuote": "its network of Chinese suppliers stitch for a pittance",
+      "meaning": "A pittance is an amount of money so small that it is close to an insult. It describes what someone is paid or what something sold for, never what something costs to buy: you can work for a pittance or sell your old bike for a pittance, but you do not pay a pittance for a concert ticket. In this sentence the word is the answer to a question the reader is already asking, which is how a blouse can possibly cost $3. The clothes are cheap because the people sewing them are paid very little, and the writer packs that whole fact into one word.",
+      "examples": [
+        "She coached the junior team all summer for a pittance, and did it because she loved the sport.",
+        "He sold his old skateboard for a pittance rather than let it sit in the garage another year."
+      ]
+    },
+    {
+      "word": "conspicuously",
+      "partOfSpeech": "adverb",
+      "pronunciation": "kun-SPIK-yoo-us-lee",
+      "articleQuote": "Shein’s prospectus, however, is conspicuously quiet on the topic of supply-chain diversification.",
+      "meaning": "Something conspicuous stands out and is impossible to miss, like a bright yellow jacket in a crowd of grey coats. The adverb is at its sharpest when it is attached to an absence, because then it says the missing thing is as noticeable as anything actually there. A prospectus describes a company's business in enormous detail, so when this one says almost nothing about moving production out of China, that silence is itself a piece of information, and the article reads it as Shein being careful not to irritate Chinese officials.",
+      "examples": [
+        "He was conspicuously absent from the group photo, and everyone noticed before the coach did.",
+        "Her lab report was conspicuously quiet about the one experiment that had failed."
+      ]
+    },
+    {
+      "word": "precipitous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "prih-SIP-ih-tus",
+      "articleQuote": "investors who have experienced precipitous losses",
+      "meaning": "Precipitous comes from precipice, meaning a cliff edge, and it means steep and sudden. It can describe a literal slope, but you will meet it far more often describing a number that falls fast: a precipitous decline in ticket sales, a precipitous drop in temperature. Applied to Shein's investors it measures the speed of the fall as much as the size of it. People who bought in when the company was valued at $100bn in 2022 are watching it list at a reported $27bn four years later, and the fall has been fast enough that Shein has had to pay some of them settlements.",
+      "examples": [
+        "After the coach left there was a precipitous slide from first place to last in six weeks.",
+        "The app saw a precipitous drop in users the week it started charging for the free features."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Revenue, profit, and operating at a loss",
+      "articleQuote": "In 2024 the company’s net profit reached $3.4bn. It is now operating at a loss.",
+      "meaning": "In 2025 Shein sold $42bn of clothing, more than in any year before it, and the company is now losing money. Both of those are true at the same time, and accounting, the part of business that tracks where money goes, keeps two separate words for them.\n\nRevenue is the money customers hand over. Every $3 blouse and $5 pair of khakis adds its price to revenue, which is how the figure reaches tens of billions. Revenue by itself says nothing about whether a business is doing well, because it counts only what comes in the door.\n\nProfit is what is left after every cost is taken out. Costs means all of it: paying the suppliers who stitch the clothes, mailing the parcels, running the app, salaries, advertising, and any duties charged at the border. Net profit is the number after everything, tax included. When that number comes out below zero the business spent more than it took in, and that is what operating at a loss means.\n\nWalk one candy-bar fundraiser all the way through and the two numbers pull apart. You buy 200 bars at $1.20 each, so $240 goes out, and you spend $30 on a table and a printed sign. You sell all 200 at $2, so $400 comes in. Revenue is $400. Profit is $400 minus $270, which is $130. Now the wholesaler raises its price to $2.10 a bar. You cannot charge more than $2, because the class down the hall is selling the identical bars at that price. You sell exactly as many as before, revenue holds at $400, and your costs are now $450, so you end the week $50 down. Nothing about your sales changed. The costs did.\n\nThat is Shein's year in miniature. Sales are still enormous and still growing a little, while tariffs, the end of duty-free parcels, and the money spent fighting off Temu and TikTok Shop have pushed costs past what comes in. A company can run at a loss for a while by spending cash investors handed it earlier, which is why Shein is still open, but it cannot do that forever.\n\nSo when a headline quotes a huge number about a company, the first thing worth asking is which number it is. Money coming in and money left over are different, and only the second one tells you whether the business works."
+    },
+    {
+      "name": "Import duties and the de minimis rule",
+      "articleQuote": "a tax loophole in America and the European Union known as the de minimis rule, which had allowed packages below a certain value to be imported free of duties",
+      "meaning": "When goods cross a national border they stop. Customs, the government agency stationed at ports and airports, checks what is in the shipment and charges a percentage of its declared value before releasing it. That charge is a duty, and the published table of rates is the tariff. The importer pays it to the government in cash, and the goods do not move on until it is paid. Taxing trade at the border is one of the oldest ways a state raises money, older than income tax by centuries, and it sits in the field of international trade.\n\nCollecting duty on a shipping container holding 20,000 blouses is worth the trouble. Collecting it on a single $8 parcel is not, because the staff time to handle the paperwork, value the item, and take 50 cents costs more than the 50 cents. So countries set a floor. Below a certain parcel value, no duty is collected at all. The legal name for that floor is de minimis, from a Latin phrase lawyers still use, de minimis non curat lex, meaning the law does not concern itself with the smallest things. In America the floor was $800, high enough that essentially nothing Shein mailed was ever taxed.\n\nNow look at why this mattered to Shein in particular rather than to clothing sellers generally. A traditional chain ships one container to a warehouse, pays duty on the container, and trucks the clothes out to its stores. Shein skips the warehouse. An order is stitched in China and mailed as its own small parcel to the customer's front door, and every one of those parcels sat under the floor. The exemption was not a minor perk for this company, it was the shape of the business, which is why the article ranks its closing above the copycat rivals as a reason for the trouble.\n\nThe article's own numbers show the size of the hit. America produced nearly 30% of Shein's global revenue in 2023 and about 23% in the first three months of 2026, a fall that lines up with the end of duty-free parcels and the higher tariffs on Chinese goods arriving together.\n\nThe habit worth taking from this is to ask what a rule change costs each company separately, instead of assuming a rule that applies to everyone lands on everyone equally. Two firms selling the identical blouse can be hit very differently, and the difference usually lies in how the goods physically reach the buyer."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "In 2025 Shein's sales grew by 8% to $42bn, and the company is now operating at a loss. How can both be true?",
+      "options": [
+        "Revenue is the money customers pay in, and a loss means the costs of running the business added up to more than that, so growing sales does not by itself leave anything over",
+        "A loss means sales actually fell, so the $42bn figure must include money put in by investors",
+        "Operating at a loss refers to the drop in the company's valuation, which is measured separately from its sales",
+        "The $42bn is a forecast for the coming year rather than money already received"
+      ],
+      "answerIndex": 0,
+      "explanation": "Revenue counts only what comes in the door, and profit is what survives after suppliers, shipping, salaries, advertising and duties are paid, so costs can climb past a growing revenue."
+    },
+    {
+      "question": "The de minimis rule let packages below a certain value be imported without duties. Why did its closing hit Shein harder than it hit most other clothing sellers?",
+      "options": [
+        "Shein sells only in America, so it had no other markets to fall back on",
+        "Shein mails enormous numbers of small, individually cheap parcels straight from China to each customer, so almost everything it shipped had been crossing the border duty-free",
+        "Shein was the only company shipping clothes out of China",
+        "The rule had been written to cover clothing and nothing else"
+      ],
+      "answerIndex": 1,
+      "explanation": "A traditional chain pays duty on a whole container into a warehouse, while Shein's parcels each sat under the value floor, so the exemption was built into the shape of its business."
+    },
+    {
+      "question": "The article says Shein's prospectus is \"conspicuously quiet\" on supply-chain diversification. What is the writer getting at?",
+      "options": [
+        "The prospectus covers the topic at unusual length",
+        "The prospectus is written in language too technical for investors to follow",
+        "A document that details everything else says almost nothing here, and that noticeable silence suggests Shein does not want to antagonise Chinese officials",
+        "Shein has not in fact moved any of its manufacturing outside China"
+      ],
+      "answerIndex": 2,
+      "explanation": "Conspicuously attaches to an absence here, and the article reads the gap as caution about Chinese officials who are watching operations and jobs leave the country."
+    },
+    {
+      "question": "Shein first planned to list its shares in New York, then sought a London listing, and is now listing in Hong Kong. Why did the earlier plans fail?",
+      "options": [
+        "American lawmakers pushed back over alleged forced labour in its supply chain, and the London plan stalled when China's government did not bless it",
+        "Hong Kong simply offered the company a higher valuation than New York or London would",
+        "Britain's regulator refused to approve a London listing",
+        "A company must list on the exchange in the country where its headquarters sit"
+      ],
+      "answerIndex": 0,
+      "explanation": "Britain's regulator did approve the London plan in April last year, and the switch to Hong Kong followed China's government declining to bless it; Shein denies the forced-labour allegations raised in America."
+    },
+    {
+      "question": "Shein's suppliers \"stitch for a pittance.\" What does that phrase contribute to the article's explanation of the business model?",
+      "options": [
+        "It means the suppliers are paid in instalments spread across the year",
+        "It names the reason the clothes can sell for $3 or $5, which is that the people sewing them are paid very little",
+        "It means Shein pays its suppliers generously in exchange for very fast turnaround",
+        "It refers to how few suppliers Shein has in its network"
+      ],
+      "answerIndex": 1,
+      "explanation": "A pittance is a payment small enough to be insulting, so the word supplies the cost side of the $3 blouse in a single term."
+    }
+  ]
+}
