@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-30",
+  "title": "How to combine exercise with video games",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/08/28/how-to-combine-exercise-with-video-games",
+  "articlePageUrl": "/articles/junior/2026-08-30.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "tedious",
+      "partOfSpeech": "adjective",
+      "pronunciation": "TEE-dee-us",
+      "articleQuote": "Exercising can be tedious.",
+      "meaning": "Something tedious is boring in a slow, dragging way — not difficult, just dull and repetitive enough to make you want to stop. The article opens with the word because that dullness is the whole problem it is trying to solve: ordinary exercise works fine, but doing the same movements over and over is so tedious that people quit doing it.",
+      "examples": [
+        "Copying twenty vocabulary words into a notebook is tedious, even though not one of them is hard.",
+        "The first hour of the drive was fun; the next four were tedious."
+      ]
+    },
+    {
+      "word": "sedentary",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SED-un-teh-ree",
+      "articleQuote": "participants played a sedentary video game, two VR games, and walked on a treadmill",
+      "meaning": "Sedentary means sitting still, with little or no movement. Doctors and scientists usually use it for a whole pattern of living rather than one afternoon — a sedentary job, a sedentary lifestyle. In this study it labels the comparison game, the one you play without ever leaving your chair, so the researchers had something still to measure the moving games against.",
+      "examples": [
+        "Our cat has a sedentary morning routine: eat, then sleep on the windowsill until noon.",
+        "The coach warned that a sedentary summer would make the first week of practice brutal."
+      ]
+    },
+    {
+      "word": "vigorous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "VIG-er-us",
+      "articleQuote": "Anything over six METs is considered “vigorous” exercise.",
+      "meaning": "Vigorous means done with a lot of energy and force. In this article it is not a matter of opinion — scientists put a number on it, so any activity above six METs counts as vigorous no matter how easy it happens to feel. Outside the lab the word stretches further: a vigorous argument, a vigorous shake of the bottle, a vigorous plant that grows fast.",
+      "examples": [
+        "She gave the bottle a vigorous shake before pouring.",
+        "Twenty minutes of vigorous swimming left him more tired than an hour of walking."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Metabolic equivalent (MET)",
+      "articleQuote": "Someone at rest expends about one MET. Walking is three METs. Playing football, ten.",
+      "meaning": "Is punching targets in a video game real exercise, or not? You could argue about that forever. Scientists who work in **exercise physiology** — the study of what happens inside the body while it works — settled it a different way. They built a measuring scale.\n\nThe scale is called the **metabolic equivalent of task**, or MET. Take the name apart. *Metabolic* means about how your body burns fuel. *Equivalent* means equal to. *Of task* means for one particular activity. So a MET tells you how much fuel one activity burns compared with a fixed starting point.\n\nThe starting point is a body doing nothing at all. Sit still and you burn one MET. Everything else gets measured against that. Walking is three METs, which means walking burns three times the fuel of sitting. Football is ten. Scientists drew a line at six and agreed that anything above it counts as vigorous.\n\nNow the argument is settled by measurement instead of opinion. Researchers measured how much oxygen people breathed in while they played, and *The Thrill of the Fight* came out at 9.3 METs — nearly football. *Beat Saber* came out at 2 to 3, barely above sitting on the sofa. Same headset, same living room, completely different answers.\n\nThat is how a great deal of measuring works: pick something ordinary, call it one, and measure the whole world against it. Once the scale exists, a question people used to argue about turns into a number you can look up."
+    },
+    {
+      "name": "Control group",
+      "articleQuote": "divided 227 adolescents into five groups: real table tennis, real football, virtual table tennis, virtual football and a control group.",
+      "meaning": "227 teenagers, eight weeks, about 5kg lost each. Sounds like the sport did it. But wait — teenagers grow, seasons change, people pick up other habits. How would anyone actually know?\n\nThe researchers built the study the way **experiments** are built across every science: one of the five groups played no sport at all. That is the **control group** — the group that gets nothing, or gets the ordinary thing, so the other groups have something to be compared against.\n\nLook at what it bought them. Four groups played something, real or virtual, and lost about 5kg. The fifth group did nothing and lost nothing. Because that fifth number is zero, the 5kg can be credited to the sport. Without the fifth group, 5kg is just a number floating on its own.\n\nYou can run this yourself. Say you think new shoes make you faster. You time yourself in them and you are two seconds quicker. Two seconds from the shoes? Or from being warmed up, or from trying harder because the shoes are new and you want them to work? The only way to find out is to time yourself in your old shoes too — same day, same track, same effort. Your old shoes are the control.\n\nThe article turns this on its own subject at the end: most VR exercise studies, it says, are small and skip the comparison entirely. Which is why, whenever somebody hands you an impressive number, the useful question is *compared to what?*"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "On the scale the article uses, an activity counts as “vigorous” exercise once it goes above:",
+      "options": [
+        "One MET",
+        "Three METs",
+        "Six METs",
+        "Ten METs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article puts the vigorous line at six METs, which is why a 9.3-MET boxing game clears it easily."
+    },
+    {
+      "question": "The article opens by calling exercise tedious. What problem is that meant to set up?",
+      "options": [
+        "Exercise is dangerous without an adult watching",
+        "People quit dull routines, so making exercise fun might keep them going",
+        "Exercise equipment has become too expensive for most families",
+        "Teenagers are not strong enough for real sports"
+      ],
+      "answerIndex": 1,
+      "explanation": "Tedious means dull and repetitive, and the whole question of the piece is whether making exercise fun gets people to actually keep doing it."
+    },
+    {
+      "question": "In the study of 227 adolescents, why did the researchers include a fifth group that played no sport at all?",
+      "options": [
+        "To save money on equipment",
+        "Because some of the teenagers refused to play",
+        "To give the other four groups something to be compared against",
+        "To find out whether table tennis is harder than football"
+      ],
+      "answerIndex": 2,
+      "explanation": "That fifth group is the control group, and because it lost no weight, the 5kg the others lost can be credited to the sport."
+    },
+    {
+      "question": "Which of these is the most sedentary?",
+      "options": [
+        "Playing a boxing game in a VR headset",
+        "Sitting on the sofa watching a boxing match",
+        "Walking on a treadmill for ten minutes",
+        "Doing deadlifts on a cable machine"
+      ],
+      "answerIndex": 1,
+      "explanation": "Sedentary means sitting still with almost no movement, which describes watching a match rather than doing any of the other three."
+    },
+    {
+      "question": "The article says VR games are no good for strength training. Why not?",
+      "options": [
+        "The headsets are too heavy to wear while lifting",
+        "The games never last longer than ten minutes",
+        "Players get too tired during the game to lift anything afterwards",
+        "Virtual objects cannot push back with any real-world resistance"
+      ],
+      "answerIndex": 3,
+      "explanation": "You cannot build strength against something that has no physical weight, which is why the UCLA researchers attached a VR headset to a real cable machine instead."
+    }
+  ]
+}
