@@ -1,0 +1,491 @@
+[
+  {
+    "k": "bestow",
+    "t": "bestow",
+    "kind": "vocab",
+    "pron": "bih-STOH",
+    "forms": [
+      "bestow"
+    ],
+    "text": "To bestow something is to give it, with a sense that the thing is valuable and that the giver has the standing to hand it over: universities bestow degrees, countries bestow medals. The column's first line borrows the wish-granting version of the word, asking which single quality you would grant a child if you could.",
+    "audio": true
+  },
+  {
+    "k": "dither",
+    "t": "dither",
+    "kind": "vocab",
+    "pron": "DITH-er",
+    "forms": [
+      "dithering"
+    ],
+    "text": "To dither is to swing back and forth between choices without committing to one, usually while the clock runs out. It is not the same as thinking carefully, because someone dithering already has the information and keeps circling anyway, which is why a coin toss was enough to push these people off the fence.",
+    "audio": true
+  },
+  {
+    "k": "pointedly",
+    "t": "pointedly",
+    "kind": "vocab",
+    "pron": "POYN-tid-lee",
+    "forms": [
+      "pointedly"
+    ],
+    "text": "Something done pointedly is aimed, carrying a deliberate message you are meant to notice, as in a pointed question. Calling the book “You Can Just Do Things” pointedly titled says the title is not simply a label: it is already the argument, aimed at readers who believe they need someone's permission first.",
+    "audio": true
+  },
+  {
+    "k": "locus-of-control",
+    "t": "locus of control",
+    "kind": "name",
+    "forms": [
+      "locus of control"
+    ],
+    "text": "A term from psychology for where you believe the causes of your life sit. Locus is Latin for place, so an internal locus means you place the cause in your own actions, while an external locus means you place it in luck, fate or other people. It measures a belief about causes rather than how much control you actually have, and people fall along a spectrum rather than into two camps.",
+    "audio": true
+  },
+  {
+    "k": "agency",
+    "t": "agency",
+    "kind": "word",
+    "forms": [
+      "agency"
+    ],
+    "text": "In everyday English an agency is an organisation, but this is the other sense: agency is the capacity to act and to shape what happens to you. Psychologists and economists use it for the state of being the one steering, which is why the article treats a sense of agency and an internal locus of control as nearly the same thing.",
+    "audio": true
+  },
+  {
+    "k": "internals",
+    "t": "internals",
+    "kind": "word",
+    "forms": [
+      "internals",
+      "Internals",
+      "an internal"
+    ],
+    "text": "The article turns an adjective into a label for people: an internal is a person with an internal locus of control, someone who believes their own actions drive what happens to them. Researchers use internals and externals as shorthand for the two ends of the scale.",
+    "audio": true
+  },
+  {
+    "k": "externals",
+    "t": "externals",
+    "kind": "word",
+    "forms": [
+      "Externals"
+    ],
+    "text": "The other end of that same scale. Externals tend to explain what happens to them by luck, fate or other people's decisions rather than their own effort. The word is a label for a kind of person here, not a description of something on the outside.",
+    "audio": true
+  },
+  {
+    "k": "cohort",
+    "t": "cohort",
+    "kind": "word",
+    "forms": [
+      "cohort"
+    ],
+    "text": "In research a cohort is a group of people who share a starting point and are studied together, such as everyone who lost a job in the same year, or a school's entire ninth grade. The word signals that the researchers followed one defined group rather than surveying people at random.",
+    "audio": true
+  },
+  {
+    "k": "reservation-wages",
+    "t": "reservation wages",
+    "kind": "name",
+    "forms": [
+      "reservation wages"
+    ],
+    "text": "Your reservation wage is the lowest pay you would accept for a job instead of turning it down and continuing to look. The name comes from a reserve price at an auction, the floor below which the seller keeps the item. Finding that externals had lower reservation wages means they would settle for worse pay, not that they were offered less.",
+    "audio": true
+  },
+  {
+    "k": "households",
+    "t": "households",
+    "kind": "word",
+    "forms": [
+      "households"
+    ],
+    "text": "In economics a household is everyone living together and sharing money, treated as a single unit that earns, spends and saves. Saying households with a greater sense of agency save more of their wealth is a claim about families as financial units, not about buildings.",
+    "audio": true
+  },
+  {
+    "k": "wealth",
+    "t": "wealth",
+    "kind": "word",
+    "forms": [
+      "wealth"
+    ],
+    "text": "Wealth is everything you own that has value, such as savings, a home and investments, minus what you owe. It is not the same as income, which is money arriving each month, so saving more of their wealth means holding on to a larger share of what they have.",
+    "audio": true
+  },
+  {
+    "k": "entrepreneurial",
+    "t": "entrepreneurial",
+    "kind": "word",
+    "forms": [
+      "entrepreneurial"
+    ],
+    "text": "Entrepreneurial describes starting and running a business of your own and carrying the risk that comes with it. People with entrepreneurial aspirations want to build something themselves, and the study's point is that wanting it and actually doing it are two separate steps.",
+    "audio": true
+  },
+  {
+    "k": "aspirations",
+    "t": "aspirations",
+    "kind": "word",
+    "forms": [
+      "aspirations"
+    ],
+    "text": "An aspiration is a hope for something you want to become or achieve, stronger than a passing wish because it points at a goal you would work toward. It usually shows up in the plural and attaches to careers and futures, as in entrepreneurial aspirations.",
+    "audio": true
+  },
+  {
+    "k": "take-the-leap",
+    "t": "take the leap",
+    "kind": "phrase",
+    "forms": [
+      "take the leap"
+    ],
+    "text": "To take the leap is to finally commit to a risky change after hesitating, like leaving a steady job to start a company. The phrase always implies there was an edge to step off and a gap where the outcome is uncertain.",
+    "audio": true
+  },
+  {
+    "k": "founder",
+    "t": "founder",
+    "kind": "word",
+    "forms": [
+      "founder"
+    ],
+    "text": "Here founder is a noun, the person who starts a company, and not the verb meaning to sink or fail. Becoming a founder is exactly the step this research says a sense of agency helps people actually take.",
+    "audio": true
+  },
+  {
+    "k": "other-things-being-equal",
+    "t": "other things being equal",
+    "kind": "phrase",
+    "forms": [
+      "other things being equal"
+    ],
+    "text": "A standard research phrase meaning: once the other differences between people are accounted for, this pattern still shows up. Researchers say it because two groups differ in many ways at once, so they compare people who are similar in income, education and age before claiming the one factor they care about matters.",
+    "audio": true
+  },
+  {
+    "k": "correlated",
+    "t": "correlated",
+    "kind": "word",
+    "forms": [
+      "correlated"
+    ],
+    "text": "Two things are correlated when they tend to move together, so knowing one tells you something about the other. It does not by itself mean one causes the other, which is why the sentence carefully says the locus of control of expectant mothers is correlated with parenting effort rather than that it produces it.",
+    "audio": true
+  },
+  {
+    "k": "expectant-mothers",
+    "t": "expectant mothers",
+    "kind": "phrase",
+    "forms": [
+      "expectant mothers"
+    ],
+    "text": "Expectant here means pregnant, from expecting a baby, so expectant mothers are women who have not given birth yet. The timing matters to the study, because their beliefs were measured before the child arrived.",
+    "audio": true
+  },
+  {
+    "k": "sprogs",
+    "t": "sprogs",
+    "kind": "word",
+    "forms": [
+      "sprogs"
+    ],
+    "text": "British slang for children, casual and a little jokey. The Economist is written in British English, and the word is a deliberate drop in formality in a paragraph otherwise full of research.",
+    "audio": true
+  },
+  {
+    "k": "spectrum",
+    "t": "spectrum",
+    "kind": "word",
+    "forms": [
+      "spectrum"
+    ],
+    "text": "A spectrum is a continuous range with no sharp dividing lines, so saying the locus of control exists on a spectrum means people are not sorted into two boxes but sit somewhere between the extremes. The word comes from the band of colours in light, where each shade blends into the next.",
+    "audio": true
+  },
+  {
+    "k": "minority",
+    "t": "minority",
+    "kind": "word",
+    "forms": [
+      "minority"
+    ],
+    "text": "Here minority simply means a small part of a group, less than half, with no reference to ethnicity or identity. The small minority Cobb-Clark worries about are the people who never develop a sense of their own agency at all.",
+    "audio": true
+  },
+  {
+    "k": "exert",
+    "t": "exert",
+    "kind": "word",
+    "forms": [
+      "exert"
+    ],
+    "text": "To exert something is to put it into action rather than merely have it: you exert force, pressure, influence or control. Underestimating your power to exert control over your circumstances means underestimating how much of it you could actually use.",
+    "audio": true
+  },
+  {
+    "k": "cites",
+    "t": "cites",
+    "kind": "word",
+    "forms": [
+      "cites"
+    ],
+    "text": "To cite something is to point to it as evidence for your argument. It sounds like site (a place) and sight (vision) but means neither, and when an author cites research they are borrowing someone else's findings to support a claim.",
+    "audio": true
+  },
+  {
+    "k": "cate-hall",
+    "t": "Cate Hall",
+    "kind": "name",
+    "forms": [
+      "Cate Hall"
+    ],
+    "text": "A writer whose book “You Can Just Do Things” argues that people spend their lives waiting for permission they never actually needed. She is cited here for research on how badly people predict whether strangers will help them.",
+    "audio": true
+  },
+  {
+    "k": "julian-rotter",
+    "t": "Julian Rotter",
+    "kind": "name",
+    "forms": [
+      "Julian Rotter",
+      "Rotter"
+    ],
+    "text": "The American psychologist who developed the idea of a locus of control in the 1960s and built the questionnaire that measures it. His name is attached to the concept the way Pavlov's is to conditioning.",
+    "audio": true
+  },
+  {
+    "k": "deborah-cobb-clark",
+    "t": "Deborah Cobb-Clark",
+    "kind": "name",
+    "forms": [
+      "Deborah Cobb-Clark",
+      "Cobb-Clark"
+    ],
+    "text": "An economist at the University of Sydney whose research runs through this column. She studies how psychological traits, especially locus of control, show up in economic behaviour such as job searching and saving.",
+    "audio": true
+  },
+  {
+    "k": "virtual",
+    "t": "virtual",
+    "kind": "word",
+    "forms": [
+      "virtual"
+    ],
+    "text": "Virtual here means simulated by a computer rather than physical, so a virtual coin is one flipped on a screen. Watch out for the related word virtually, which usually means almost.",
+    "audio": true
+  },
+  {
+    "k": "status-quo",
+    "t": "status quo",
+    "kind": "phrase",
+    "forms": [
+      "status quo"
+    ],
+    "text": "Latin for the state in which things currently are, used in English for the existing arrangement. To break with the status quo is to change it, and the phrase usually carries a hint that the current arrangement survives mainly because nobody has challenged it.",
+    "audio": true
+  },
+  {
+    "k": "nudge",
+    "t": "nudge",
+    "kind": "word",
+    "forms": [
+      "nudge"
+    ],
+    "text": "A nudge is a small push that makes an action more likely without forcing it, and behavioural economists use the word as a technical term for exactly that kind of design, such as putting fruit at eye level in a cafeteria. The coin toss worked as a nudge, since nothing stopped anyone from ignoring it.",
+    "audio": true
+  },
+  {
+    "k": "seize",
+    "t": "seize",
+    "kind": "word",
+    "forms": [
+      "seize"
+    ],
+    "text": "To seize something is to take hold of it suddenly and firmly, whether that is grabbing an object or, as here, taking control of your own destiny. The word carries decisiveness, which is what the article says these people were missing.",
+    "audio": true
+  },
+  {
+    "k": "hindering",
+    "t": "hindering",
+    "kind": "word",
+    "forms": [
+      "hindering"
+    ],
+    "text": "To hinder something is to slow it down or get in its way without stopping it outright, so it is weaker than blocking. Asking whether an external locus of control could be hindering organisations means asking whether it quietly drags on how well companies work.",
+    "audio": true
+  },
+  {
+    "k": "adoption",
+    "t": "adoption",
+    "kind": "word",
+    "forms": [
+      "adoption"
+    ],
+    "text": "Adoption here means starting to use something new, the standard word for how a technology spreads through firms or a population, not adopting a child. Studying adoption of artificial intelligence in Shenzhen factories means studying who actually puts it to work.",
+    "audio": true
+  },
+  {
+    "k": "firms",
+    "t": "firms",
+    "kind": "word",
+    "forms": [
+      "firms"
+    ],
+    "text": "A firm is a business, anything from a two-person shop to a manufacturer employing thousands. Economists prefer firm to company because it names the unit that hires people, makes things and sells them.",
+    "audio": true
+  },
+  {
+    "k": "shenzhen",
+    "t": "Shenzhen",
+    "kind": "name",
+    "forms": [
+      "Shenzhen"
+    ],
+    "text": "A city in southern China next to Hong Kong that grew from a small town in the 1980s into the centre of the country's electronics manufacturing. A great deal of the world's phones, drones and circuit boards are built there, which is why a study of factory AI is set in it.",
+    "audio": true
+  },
+  {
+    "k": "prone-to",
+    "t": "prone to",
+    "kind": "phrase",
+    "forms": [
+      "prone to"
+    ],
+    "text": "Prone to means likely to do or suffer something, and what follows is usually unwelcome: prone to injury, prone to forgetting. Saying externals are more prone to hiding information is a statement about a tendency across a group, not about any one person.",
+    "audio": true
+  },
+  {
+    "k": "andrej-karpathy",
+    "t": "Andrej Karpathy",
+    "kind": "name",
+    "forms": [
+      "Andrej Karpathy",
+      "Karpathy"
+    ],
+    "text": "A well-known artificial-intelligence researcher who has worked at Tesla and OpenAI and writes and speaks widely about the field. He is quoted here for the claim that agency is rarer and more valuable than intelligence.",
+    "audio": true
+  },
+  {
+    "k": "trait",
+    "t": "trait",
+    "kind": "word",
+    "forms": [
+      "trait"
+    ],
+    "text": "A trait is a lasting characteristic of a person, such as curiosity or patience, rather than a passing mood. Calling agency a trait means treating it as stable enough that an employer could test for it during hiring.",
+    "audio": true
+  },
+  {
+    "k": "scarcer",
+    "t": "scarcer",
+    "kind": "word",
+    "forms": [
+      "scarcer"
+    ],
+    "text": "Scarce means in short supply, so scarcer means harder to find. Karpathy's line is that agency is both more powerful and scarcer than intelligence, which is a claim about which of the two is the rarer find.",
+    "audio": true
+  },
+  {
+    "k": "compensation",
+    "t": "compensation",
+    "kind": "word",
+    "forms": [
+      "Compensation"
+    ],
+    "text": "In workplace writing compensation means pay: salary, bonuses and benefits taken together. It is not the other sense, money paid to make up for harm, so a compensation system is simply how a company decides what people earn.",
+    "audio": true
+  },
+  {
+    "k": "as-a-matter-of-course",
+    "t": "as a matter of course",
+    "kind": "phrase",
+    "forms": [
+      "as a matter of course"
+    ],
+    "text": "As a matter of course means automatically, as the normal routine, without anyone having to ask. Saying pay should reward achievement as a matter of course means it ought to be the default rather than a special exception.",
+    "audio": true
+  },
+  {
+    "k": "explicit",
+    "t": "explicit",
+    "kind": "word",
+    "forms": [
+      "explicit"
+    ],
+    "text": "Explicit means stated openly and in so many words, the opposite of implied. Making the link more explicit means spelling out that this particular achievement earned that particular raise, instead of leaving people to guess.",
+    "audio": true
+  },
+  {
+    "k": "norms",
+    "t": "norms",
+    "kind": "word",
+    "forms": [
+      "norms"
+    ],
+    "text": "Norms are the unwritten rules of a group, what counts as normal behaviour, enforced by everyone's reactions rather than by any written policy. Cultural norms at work cover things like whether people speak up in meetings or wait to be asked.",
+    "audio": true
+  },
+  {
+    "k": "prompt",
+    "t": "prompt",
+    "kind": "word",
+    "forms": [
+      "prompt"
+    ],
+    "text": "To prompt someone is to cause them to act by supplying the push that starts the behaviour. It is the same idea as the prompt you type into an AI system, which is the input that sets it going.",
+    "audio": true
+  },
+  {
+    "k": "mantra",
+    "t": "mantra",
+    "kind": "word",
+    "forms": [
+      "mantra"
+    ],
+    "text": "A mantra is a phrase repeated so often that it becomes a group's shorthand for how to behave. The word comes from Hindu and Buddhist practice, where a mantra is a sound or phrase repeated during meditation, and English borrowed it for slogans people live by.",
+    "audio": true
+  },
+  {
+    "k": "guardrails",
+    "t": "guardrails",
+    "kind": "word",
+    "forms": [
+      "guardrails"
+    ],
+    "text": "Guardrails are the barriers along the edge of a road that keep cars from going over, and in writing about organisations the word means the limits that keep bold action from causing damage. Lots of high-agency people and no guardrails means plenty of initiative with nothing to stop the bad ideas.",
+    "audio": true
+  },
+  {
+    "k": "sound",
+    "t": "sound",
+    "kind": "word",
+    "forms": [
+      "sound"
+    ],
+    "text": "Here sound is an adjective meaning well founded and reliable, with nothing wrong in the reasoning, as in a sound argument or a sound plan. It has nothing to do with noise, and it is the same sense as the phrase safe and sound.",
+    "audio": true
+  },
+  {
+    "k": "ask-forgiveness-not-permission",
+    "t": "Ask forgiveness, not permission",
+    "kind": "phrase",
+    "forms": [
+      "Ask forgiveness, not permission"
+    ],
+    "text": "A workplace saying, usually credited to the computing pioneer Grace Hopper, meaning it is better to act and apologise afterwards than to wait for approval that may never come. The article agrees with the instinct behind it while pointing out what happens when nothing limits it.",
+    "audio": true
+  },
+  {
+    "k": "steven-levitt",
+    "t": "Steven Levitt",
+    "kind": "name",
+    "forms": [
+      "Steven Levitt",
+      "Levitt"
+    ],
+    "text": "An economist at the University of Chicago, best known as co-author of the book Freakonomics, who studies everyday behaviour with economic tools. The coin-toss experiment described here is his.",
+    "audio": true
+  }
+]

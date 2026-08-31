@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-31",
+  "title": "The quality you should most wish for your children",
+  "articleUrl": "https://www.economist.com/business/2026/08/27/the-quality-you-should-most-wish-for-your-children",
+  "articlePageUrl": "/articles/2026-08-31.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "bestow",
+      "partOfSpeech": "verb",
+      "pronunciation": "bih-STOH",
+      "articleQuote": "If you could bestow any quality on your children, which one would you pick?",
+      "meaning": "To bestow something is to give it, but not the way you hand a friend a pencil. The word implies that what is given is valuable and that the giver has the standing to give it, which is why universities bestow degrees, countries bestow medals, and in old stories fairies bestow gifts on a newborn. The column's opening question borrows that wish-granting sense: if you could hand your child one quality outright, which would it be? The answer it goes on to give is neither intelligence nor kindness.",
+      "examples": [
+        "Our school bestows one award each June on the student who improved the most.",
+        "If I could bestow a single skill on my little brother, it would be losing a video game without yelling."
+      ]
+    },
+    {
+      "word": "dither",
+      "partOfSpeech": "verb",
+      "pronunciation": "DITH-er",
+      "articleQuote": "people who were dithering over a big decision",
+      "meaning": "To dither is to go back and forth between choices without settling on one, usually while the clock runs out. It is not the same as thinking carefully: a careful thinker is still gathering information, while someone dithering already has the information and keeps circling anyway. That difference is the point of the experiment described here, in which people stuck on a big decision were handed a coin toss, and the ones the coin pushed toward change went ahead and were happier for it.",
+      "examples": [
+        "I dithered over which elective to pick until sign-ups closed and the choice got made for me.",
+        "He dithered about texting her back for two days, then sent three words."
+      ]
+    },
+    {
+      "word": "pointedly",
+      "partOfSpeech": "adverb",
+      "pronunciation": "POYN-tid-lee",
+      "articleQuote": "In her pointedly titled book, “You Can Just Do Things”",
+      "meaning": "Something done pointedly is aimed. The word marks an action that carries a deliberate message and is meant to be noticed, as in a pointed question, or a pointedly empty chair at a family dinner. Calling Cate Hall's book “You Can Just Do Things” pointedly titled says the title is not merely describing the contents: the title is already the argument, aimed at readers who assume they need someone's permission first.",
+      "examples": [
+        "She pointedly thanked everyone in the group except the one person who had done no work.",
+        "When I asked whether I could stay out later, my mom pointedly looked at the clock."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Reservation wage",
+      "articleQuote": "Externals also had lower reservation wages, the minimum pay they were prepared to accept for a job.",
+      "meaning": "The newly unemployed Germans in that study differed in two ways at once. The ones who believed outcomes were out of their hands searched for work less intensively, and they would also say yes to worse pay. Labour economics has a name for that second number: your reservation wage, the lowest pay at which you would take a job rather than turn it down and keep looking.\n\nThe odd-sounding first word comes from auctions. A seller who puts a painting up for auction can set a reserve price, a floor below which the painting does not sell and goes home with them again. A reservation wage is that same floor applied to your own hours: below it, you keep your time.\n\nSay you mow lawns over the summer. At $20 an hour you would say yes instantly; at $5 you would rather stay home; somewhere in between sits the number where you genuinely have to think about it, and that number is your reservation wage. Now notice how easily it moves. If you are saving for something you want in two weeks, it drops. If three neighbours have already asked you, it rises, because turning one of them down costs you nothing. If someone else is covering your phone bill either way, it rises again.\n\nThat is why economists ask about it. How long a person stays unemployed usually depends less on whether they want to work than on the number they are measuring offers against, and savings, benefits and confidence all push that number up or down. So when someone says a person refuses to work, the useful question is what pay they are comparing the offer to. Everyone has a number, and the number moves."
+    },
+    {
+      "name": "Locus of control",
+      "articleQuote": "The concept of a locus of control was developed in the 1960s by a psychologist with the tremendous name of Julian Rotter.",
+      "meaning": "Asked what single quality she would give a child, an economist skips intelligence, kindness and every other obvious answer, and picks a belief: the belief that what happens to you follows from what you do. Psychologists have been measuring that belief since the 1960s and call it your locus of control. Locus is Latin for place, so the term asks a literal question. Where do you place the cause of what happens in your life, inside yourself or outside?\n\nSomeone with an internal locus explains outcomes mostly by their own actions: I did badly because I skipped the practice problems. Someone with an external locus explains the very same outcome by luck, fate, other people, or how the world is set up: the test was unfair. Rotter measured this with a questionnaire that makes you choose, over and over, which of two statements you agree with more, and the answers place you somewhere along a spectrum rather than in one of two boxes.\n\nWhat is being measured is a belief about causes, not the amount of control a person actually has. Two students in the same class, with the same teachers and the same schedule, can hold opposite beliefs about it, and that is exactly why the measure is useful: the belief changes what the person does next. If you think practice pays off, you practise. If you think the result was settled before you started, you do not. That chain is what every study in this column is tracking, from how hard unemployed people search for work to how much money households save.\n\nNeither setting is simply correct. Plenty of outcomes really are outside a 14-year-old's control, and believing you control everything turns every piece of bad luck into your own fault. The useful move is a smaller one: next time you explain a result to yourself, notice whether your explanation points at something you could change, and then check whether that is actually true."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What quality does economist Deborah Cobb-Clark say she would most want to give children?",
+      "options": [
+        "An internal locus of control",
+        "Unusually high intelligence",
+        "Deep empathy for other people",
+        "The self-discipline to save money"
+      ],
+      "answerIndex": 0,
+      "explanation": "Her answer is a belief about agency, an internal locus of control, rather than intelligence or empathy."
+    },
+    {
+      "question": "What is a reservation wage?",
+      "options": [
+        "The lowest pay at which someone will accept a job instead of continuing to look",
+        "The average pay for a job in a particular industry",
+        "Money an employer sets aside in case a worker quits",
+        "The minimum wage a government requires employers to pay"
+      ],
+      "answerIndex": 0,
+      "explanation": "It is a personal floor, the point below which someone would rather keep searching, which is what makes it different from a legal minimum wage."
+    },
+    {
+      "question": "Which statement best describes what a locus of control measures?",
+      "options": [
+        "A person's belief about whether their own actions determine what happens to them",
+        "How much control a person actually has over their circumstances",
+        "How confident a person happens to feel on a given day",
+        "Whether a person prefers working alone or in a group"
+      ],
+      "answerIndex": 0,
+      "explanation": "It measures a belief about the cause of outcomes, which is why two people in identical circumstances can land in very different places on the scale."
+    },
+    {
+      "question": "In the phrase \"people who were dithering over a big decision\", dithering means:",
+      "options": [
+        "Going back and forth between choices without committing to one",
+        "Gathering more information before deciding",
+        "Complaining about a decision someone else made",
+        "Deciding quickly and then regretting it"
+      ],
+      "answerIndex": 0,
+      "explanation": "To dither is to circle between options without settling, which is different from carefully gathering facts."
+    },
+    {
+      "question": "What did Steven Levitt find when people tossed a virtual coin to settle a big decision?",
+      "options": [
+        "A toss favouring change made people much more likely to make the change, and those who did reported being happier",
+        "Most people ignored the coin and stuck with the status quo",
+        "People who followed the coin usually regretted the decision later",
+        "The coin toss made people take much longer to decide"
+      ],
+      "answerIndex": 0,
+      "explanation": "The nudge pushed people over the line, and those who broke with the status quo reported being much happier than those who did not."
+    }
+  ]
+}
