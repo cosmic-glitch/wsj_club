@@ -1,0 +1,506 @@
+[
+  {
+    "k": "ignominious",
+    "t": "ignominious",
+    "kind": "vocab",
+    "pron": "ig-nuh-MIN-ee-us",
+    "forms": [
+      "ignominious"
+    ],
+    "text": "Humiliating and disgraceful, the kind of failure that happens in public and gets remembered. The robot had just broken Usain Bolt’s sprint record, so running straight into a wall seconds later was an ignominious ending: triumph and embarrassment back to back.",
+    "audio": true
+  },
+  {
+    "k": "glean",
+    "t": "glean",
+    "kind": "vocab",
+    "pron": "GLEEN",
+    "forms": [
+      "gleaning"
+    ],
+    "text": "To gather information slowly, a scrap at a time, from sources that never hand it over all at once; originally, picking up the grain the harvesters missed. The training centres glean the secrets of human movement by recording thousands of hours of people doing ordinary tasks and keeping only the useful parts.",
+    "audio": true
+  },
+  {
+    "k": "legion",
+    "t": "legion",
+    "kind": "vocab",
+    "pron": "LEE-jun",
+    "forms": [
+      "legion"
+    ],
+    "text": "A very large number of people or things, from the name of a Roman army unit of several thousand soldiers. A legion of humanoids pictures rows of identical robots on a military scale. As an adjective after the noun (“the problems were legion”) it means there were a great many.",
+    "audio": true
+  },
+  {
+    "k": "humanoids",
+    "t": "humanoid",
+    "kind": "name",
+    "forms": [
+      "humanoids",
+      "humanoid"
+    ],
+    "text": "A robot built in roughly human shape, with a head, two arms and two legs, so it can use tools and spaces designed for people. The whole article is about this category of machine.",
+    "audio": true
+  },
+  {
+    "k": "unitree",
+    "t": "Unitree",
+    "kind": "name",
+    "forms": [
+      "Unitree"
+    ],
+    "text": "A Chinese robot-maker, the builder of the record-breaking Superman robot, whose shares started trading in Shanghai in August 2026 and jumped 460% on the first day before falling back.",
+    "audio": true
+  },
+  {
+    "k": "clocked-up",
+    "t": "clock up",
+    "kind": "phrase",
+    "forms": [
+      "clocked up"
+    ],
+    "text": "To reach or record a total, as a stopwatch or an odometer does. The robot clocked up a speed of 12.66 metres per second, meaning that was the figure recorded for it.",
+    "audio": true
+  },
+  {
+    "k": "feat",
+    "t": "feat",
+    "kind": "word",
+    "forms": [
+      "feat"
+    ],
+    "text": "An impressive achievement that takes skill, strength or daring. Outrunning Usain Bolt was the robot’s feat; crashing into the wall was how the feat ended.",
+    "audio": true
+  },
+  {
+    "k": "debuted",
+    "t": "debut",
+    "kind": "word",
+    "forms": [
+      "debuted"
+    ],
+    "text": "To appear for the first time. When a company debuts its shares, they are traded on a stock exchange for the first time, so the public can buy them; that first day of trading is what sent Unitree’s price soaring.",
+    "audio": true
+  },
+  {
+    "k": "another-matter",
+    "t": "another matter",
+    "kind": "phrase",
+    "forms": [
+      "another matter"
+    ],
+    "text": "A different and usually harder question. Saying the hardware is mastered but the software is another matter means the software is a separate problem that is far from solved.",
+    "audio": true
+  },
+  {
+    "k": "foundation-models",
+    "t": "foundation models",
+    "kind": "name",
+    "forms": [
+      "foundation models"
+    ],
+    "text": "Very large AI models trained on huge amounts of general data so they can be adapted to many different tasks, rather than built for one job. The chatbots people use are built on foundation models; robot-makers want the same thing for physical tasks.",
+    "audio": true
+  },
+  {
+    "k": "seamlessly",
+    "t": "seamlessly",
+    "kind": "word",
+    "forms": [
+      "seamlessly"
+    ],
+    "text": "Smoothly, with no visible joins or interruptions, the way a garment without seams has no stitching to see. A robot that carries out tasks seamlessly moves from one to the next without stalling or needing help.",
+    "audio": true
+  },
+  {
+    "k": "multitude",
+    "t": "multitude",
+    "kind": "word",
+    "forms": [
+      "multitude"
+    ],
+    "text": "A very large number or variety. A multitude of useful tasks means not one trick but hundreds of different jobs.",
+    "audio": true
+  },
+  {
+    "k": "parameters",
+    "t": "parameters",
+    "kind": "name",
+    "forms": [
+      "parameters"
+    ],
+    "text": "The adjustable numbers inside an AI model that get tuned during training and together determine how it responds. Today’s robot models have a few billion; the article says a robot that moves like a human body will need hundreds of billions, similar to a large chatbot.",
+    "audio": true
+  },
+  {
+    "k": "large-language-models",
+    "t": "large language models",
+    "kind": "name",
+    "forms": [
+      "large language models"
+    ],
+    "text": "The kind of AI model behind chatbots such as ChatGPT: trained on enormous amounts of written text to predict and produce language. They had the whole internet to learn from, which is exactly what robots lack.",
+    "audio": true
+  },
+  {
+    "k": "reams-of",
+    "t": "reams of",
+    "kind": "phrase",
+    "forms": [
+      "reams of"
+    ],
+    "text": "Huge quantities of, originally a ream being a stack of 500 sheets of paper. Reams of digital text means the vast amount of writing already sitting on the internet.",
+    "audio": true
+  },
+  {
+    "k": "mined",
+    "t": "mine (information)",
+    "kind": "word",
+    "forms": [
+      "mined"
+    ],
+    "text": "Here, not digging for coal: to extract something valuable from a large mass of raw material. Data mined from real-world experiences is pulled out of recordings of actual events.",
+    "audio": true
+  },
+  {
+    "k": "spatial",
+    "t": "spatial",
+    "kind": "word",
+    "forms": [
+      "spatial"
+    ],
+    "text": "Relating to space and position, where things are and how far apart. A robot’s spatial position is where its hand is relative to the glass it is reaching for.",
+    "audio": true
+  },
+  {
+    "k": "brittleness",
+    "t": "brittleness",
+    "kind": "word",
+    "forms": [
+      "brittleness"
+    ],
+    "text": "How easily something snaps or shatters instead of bending. A robot must sense the brittleness of a glass so it grips firmly enough to lift it but not hard enough to break it.",
+    "audio": true
+  },
+  {
+    "k": "viscosity",
+    "t": "viscosity",
+    "kind": "word",
+    "forms": [
+      "viscosity"
+    ],
+    "text": "How thick and slow-flowing a liquid is: honey has high viscosity, water low. Pouring coffee well means allowing for the viscosity of what is in the kettle.",
+    "audio": true
+  },
+  {
+    "k": "recreations",
+    "t": "recreations",
+    "kind": "word",
+    "forms": [
+      "recreations"
+    ],
+    "text": "Here, not leisure activities: re-creations, detailed copies of real situations built in software so a robot can practise in them. It is a sense trap; the stress falls on the idea of creating something again.",
+    "audio": true
+  },
+  {
+    "k": "fed",
+    "t": "fed (data)",
+    "kind": "word",
+    "forms": [
+      "fed"
+    ],
+    "text": "Given as input, the way you feed paper into a printer. Robots fed a hotchpotch of data are being trained on a messy mix of examples.",
+    "audio": true
+  },
+  {
+    "k": "hotchpotch",
+    "t": "hotchpotch",
+    "kind": "word",
+    "forms": [
+      "hotchpotch"
+    ],
+    "text": "A jumbled mixture of odds and ends, spelled hodgepodge in American English. The robots’ training data is a hotchpotch because it comes from many sources of uneven quality.",
+    "audio": true
+  },
+  {
+    "k": "sought-after",
+    "t": "sought after",
+    "kind": "phrase",
+    "forms": [
+      "sought after"
+    ],
+    "text": "In high demand, wanted by many people. Real-world robot data is highly sought after because it is scarce and every robot-maker needs it.",
+    "audio": true
+  },
+  {
+    "k": "real-machine-data",
+    "t": "real machine data",
+    "kind": "name",
+    "forms": [
+      "real machine"
+    ],
+    "text": "Training data recorded from a robot’s own movements, whether a human is steering it remotely or it is acting on its own. The article calls it the most valuable kind, because it captures exactly how a robot body behaves.",
+    "audio": true
+  },
+  {
+    "k": "egocentric",
+    "t": "egocentric",
+    "kind": "name",
+    "forms": [
+      "egocentric"
+    ],
+    "text": "Usually it means self-centred; here it is a technical label meaning recorded from a person’s own viewpoint. Egocentric data comes from a headset and sensor gloves worn by a human doing a task, so it captures what that human saw and did.",
+    "audio": true
+  },
+  {
+    "k": "haptic",
+    "t": "haptic",
+    "kind": "word",
+    "forms": [
+      "haptic"
+    ],
+    "text": "Relating to touch. Haptic-sensor gloves record the pressure and motion of a person’s fingers, and a haptic buzz on a phone is the same idea in reverse.",
+    "audio": true
+  },
+  {
+    "k": "kit",
+    "t": "kit",
+    "kind": "word",
+    "forms": [
+      "kit"
+    ],
+    "text": "British English for equipment or gear, not a box of parts to assemble. The headset and gloves together are the kit a person wears to record egocentric data.",
+    "audio": true
+  },
+  {
+    "k": "frontrunner",
+    "t": "frontrunner",
+    "kind": "word",
+    "forms": [
+      "frontrunner"
+    ],
+    "text": "The competitor most likely to win, the one currently ahead in a race. China is the frontrunner in collecting robot data because it has built the most training centres.",
+    "audio": true
+  },
+  {
+    "k": "wuhan",
+    "t": "Wuhan",
+    "kind": "name",
+    "forms": [
+      "Wuhan"
+    ],
+    "text": "A large city in central China, capital of Hubei province, and home to the training centre the article’s reporter visited.",
+    "audio": true
+  },
+  {
+    "k": "sprawling",
+    "t": "sprawling",
+    "kind": "word",
+    "forms": [
+      "sprawling"
+    ],
+    "text": "Spread out over a large area in an untidy, irregular way. A sprawling facility covers a lot of ground rather than being one neat building.",
+    "audio": true
+  },
+  {
+    "k": "makeshift",
+    "t": "makeshift",
+    "kind": "word",
+    "forms": [
+      "makeshift"
+    ],
+    "text": "Put together quickly as a temporary substitute, using whatever is at hand. The makeshift café at the centre is a stage set for training, not a real coffee shop.",
+    "audio": true
+  },
+  {
+    "k": "cutting-edge",
+    "t": "cutting-edge",
+    "kind": "word",
+    "forms": [
+      "cutting-edge"
+    ],
+    "text": "The most advanced available, at the leading edge of what technology can do. Cutting-edge humanoids are the newest and most capable robots, which is also why they cost so much.",
+    "audio": true
+  },
+  {
+    "k": "run-to",
+    "t": "run to",
+    "kind": "phrase",
+    "forms": [
+      "run to"
+    ],
+    "text": "To reach a total of, used about costs. Robots that can run to 100,000 yuan apiece can cost as much as that each.",
+    "audio": true
+  },
+  {
+    "k": "yuan",
+    "t": "yuan",
+    "kind": "name",
+    "forms": [
+      "yuan"
+    ],
+    "text": "China’s currency. At the time of the article 100,000 yuan was about $15,000.",
+    "audio": true
+  },
+  {
+    "k": "apiece",
+    "t": "apiece",
+    "kind": "word",
+    "forms": [
+      "apiece"
+    ],
+    "text": "Each, for every single one. 100,000 yuan apiece means every robot costs that much.",
+    "audio": true
+  },
+  {
+    "k": "droid",
+    "t": "droid",
+    "kind": "word",
+    "forms": [
+      "droid"
+    ],
+    "text": "Short for android, a robot shaped like a human; the word spread from Star Wars. The droid at the café station is simply the humanoid robot working there.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckon",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "To estimate or calculate, and in British English simply to think or believe. When an analyst reckons a cost, he is giving his best estimate, not a measured fact.",
+    "audio": true
+  },
+  {
+    "k": "pick-up-the-tab",
+    "t": "pick up the tab",
+    "kind": "phrase",
+    "forms": [
+      "picking up much of the tab"
+    ],
+    "text": "To pay the bill, as when a diner pays the restaurant tab for the whole table. The Chinese government picking up much of the tab means taxpayers, not the robot companies, are covering most of the cost of the training centres.",
+    "audio": true
+  },
+  {
+    "k": "state-backed",
+    "t": "state-backed",
+    "kind": "word",
+    "forms": [
+      "state-backed"
+    ],
+    "text": "Funded or supported by the government. Four-fifths of the training centres are state-backed, which is the heart of the article’s argument about who is really paying for China’s robot boom.",
+    "audio": true
+  },
+  {
+    "k": "shore-up",
+    "t": "shore up",
+    "kind": "phrase",
+    "forms": [
+      "shore up"
+    ],
+    "text": "To support something that would otherwise sag or collapse, from the beams used to prop up a wall. Officials shore up demand for robots by buying them for training centres, holding up sales that customers alone would not provide.",
+    "audio": true
+  },
+  {
+    "k": "cottage-industry",
+    "t": "cottage industry",
+    "kind": "phrase",
+    "forms": [
+      "cottage industry"
+    ],
+    "text": "A business done on a small scale by many small operators, originally people working from their own cottages. A cottage industry of sensor-glove makers means lots of small vendors rather than one big manufacturer.",
+    "audio": true
+  },
+  {
+    "k": "jd-com",
+    "t": "JD.com",
+    "kind": "name",
+    "forms": [
+      "JD.com"
+    ],
+    "text": "One of China’s largest online retailers, similar to Amazon. It is paying hundreds of thousands of people to record their movements as training data.",
+    "audio": true
+  },
+  {
+    "k": "owing-to",
+    "t": "owing to",
+    "kind": "phrase",
+    "forms": [
+      "owing to"
+    ],
+    "text": "Because of; nothing to do with owing money. Human data is less useful owing to the differences between human and robot limbs, meaning those differences are the cause.",
+    "audio": true
+  },
+  {
+    "k": "labelled",
+    "t": "label (data)",
+    "kind": "word",
+    "forms": [
+      "labelled"
+    ],
+    "text": "To attach a tag saying what a piece of data shows, so a model can learn from it; spelled with two l’s in British English. Labelling every recorded movement by hand is slow and expensive, which is why it needs so many workers.",
+    "audio": true
+  },
+  {
+    "k": "gain-an-edge",
+    "t": "gain an edge",
+    "kind": "phrase",
+    "forms": [
+      "gained an early edge"
+    ],
+    "text": "To get an advantage over rivals. China gained an early edge in image recognition by hiring large numbers of people to tag photos, and the article suggests it may do the same with robot data.",
+    "audio": true
+  },
+  {
+    "k": "computer-vision",
+    "t": "computer vision",
+    "kind": "name",
+    "forms": [
+      "computer vision"
+    ],
+    "text": "The field of AI that lets machines identify what is in an image or video, from faces to stop signs. China built a lead in it partly by paying people to tag millions of pictures.",
+    "audio": true
+  },
+  {
+    "k": "initial-pop",
+    "t": "pop (shares)",
+    "kind": "name",
+    "forms": [
+      "initial pop"
+    ],
+    "text": "Stock-market slang for a sharp jump in a share price, especially on the first day of trading. Unitree’s initial pop was a 460% rise, which its shares have since given back in part.",
+    "audio": true
+  },
+  {
+    "k": "slumped",
+    "t": "slump",
+    "kind": "word",
+    "forms": [
+      "slumped"
+    ],
+    "text": "To fall suddenly and heavily, like a person collapsing into a chair. A share price that has slumped by 30% has dropped sharply.",
+    "audio": true
+  },
+  {
+    "k": "don",
+    "t": "don (verb)",
+    "kind": "word",
+    "forms": [
+      "don"
+    ],
+    "text": "To put on a piece of clothing or equipment; the opposite is doff. Workers who don headsets and gloves are putting them on for the shift.",
+    "audio": true
+  },
+  {
+    "k": "dim-witted",
+    "t": "dim-witted",
+    "kind": "word",
+    "forms": [
+      "dim-witted"
+    ],
+    "text": "Slow to understand, not very bright. The article’s closing jab is that many robots will remain dim-witted for years, still charging into walls.",
+    "audio": true
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-01",
+  "title": "China is training up thousands of humanoid robots",
+  "articleUrl": "https://www.economist.com/business/2026/08/23/china-is-training-up-thousands-of-humanoid-robots",
+  "articlePageUrl": "/articles/2026-09-01.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "ignominious",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ig-nuh-MIN-ee-us",
+      "articleQuote": "Yet as the ignominious end of Superman’s running feat demonstrates, the technology still has a long way to go.",
+      "meaning": "Ignominious means humiliating and disgraceful, the kind of failure that happens in public and gets remembered. It comes from a Latin word for losing your good name. The robot Superman had just broken Usain Bolt’s sprint record, so its ending, running straight into a wall, was ignominious precisely because the triumph and the embarrassment came seconds apart. The word is stronger than embarrassing: it implies everyone saw.",
+      "examples": [
+        "After trash-talking all week, the team suffered an ignominious 6-0 loss in front of the whole school.",
+        "His run for class president came to an ignominious end when he forgot his own speech halfway through."
+      ]
+    },
+    {
+      "word": "glean",
+      "partOfSpeech": "verb",
+      "pronunciation": "GLEEN",
+      "articleQuote": "The centre in Wuhan is one of 53 facilities in China built especially for gleaning the secrets of human movement",
+      "meaning": "To glean is to gather information slowly, a scrap at a time, from sources that never hand it over all at once. The word originally meant picking up the leftover grain that harvesters had missed in a field, which is why it still carries a sense of patient collecting rather than being told. The Wuhan centre gleans the secrets of human movement by recording people pouring water and stocking shelves for thousands of hours and keeping only the useful parts.",
+      "examples": [
+        "From a few of her posts, he gleaned that she had switched schools over the summer.",
+        "You can glean a lot about a coach’s game plan just by watching which players warm up first."
+      ]
+    },
+    {
+      "word": "legion",
+      "partOfSpeech": "noun",
+      "pronunciation": "LEE-jun",
+      "articleQuote": "a legion of cutting-edge humanoids, which can run to 100,000 yuan ($15,000) apiece",
+      "meaning": "A legion was the basic unit of the ancient Roman army, several thousand soldiers marching together, and the word now means any very large number of people or things. Calling the training centre’s robots a legion pictures rows of identical machines on a scale that feels military. You will also meet it as an adjective placed after the noun, as in “the problems were legion,” meaning there were a great many of them.",
+      "examples": [
+        "A legion of fans camped outside the arena overnight to grab front-row spots.",
+        "The reasons to finish homework before gaming are legion, though none of them feel convincing at 9 p.m."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Training data",
+      "articleQuote": "The models powering the current generation of humanoids possess a few billion “parameters”; to replicate the functioning of the human body, they will need hundreds of billions.",
+      "meaning": "Chinese factories can already build a robot that sprints faster than Usain Bolt. What they cannot yet build is one that reliably pours a cup of coffee. The hardware is solved and the software is not, and the reason is a shortage of **training data**, the central idea in the branch of computer science called machine learning.\n\nAn AI model is, underneath, an enormous pile of numbers called **parameters**. Nobody types those numbers in by hand. Instead the model is shown millions of examples, and after each one a program nudges the parameters slightly so that the model’s output comes a little closer to the example. Repeat billions of times and the numbers settle into values that produce good answers. Those examples are the training data. A model with more parameters can capture more detail, but only if there are enough examples to set all those numbers; a huge model with little data is a giant spreadsheet full of blanks.\n\nChatbots got their examples for free. The internet holds trillions of words that people had already written, so the models behind ChatGPT could be trained on it directly. A robot has no equivalent. There is no giant public library of measurements from a mechanical hand gripping a glass that might shatter, or tilting a kettle whose water pours at a certain speed. Every one of those examples has to be manufactured. That is what the Wuhan centre is doing: a person wearing sensor gloves pours water, a robot beside them copies the motion, and each attempt is recorded. The article names two kinds of examples. “Real machine” data, recorded from a robot’s own movements, is the most valuable. “Egocentric” data, recorded from sensors worn by a human, is cheaper but a worse fit, because a human arm and a robot arm move differently. Of every eight hours a robot spends pouring coffee, only about three hours are clean enough to keep, at a cost of 500 to 700 yuan an hour, and one estimate says a general-purpose robot will need 100 million hours in total.\n\nThe takeaway travels well beyond robots: whenever someone says an AI is bad at some task, ask where its examples came from. If good examples already exist in bulk, expect the model to improve fast; if they have to be created one at a time, expect it to lag for years."
+    },
+    {
+      "name": "Industrial policy",
+      "articleQuote": "Around four-fifths are state-backed. Many are collaborations between private enterprises and local governments, which buy humanoids and sell the data produced back to the companies.",
+      "meaning": "Who is buying China’s humanoid robots? Mostly not customers. Up to 70% of the humanoids made in the first half of 2026 went to training centres, and about four-fifths of those centres are paid for by the government. The economics term for this is **industrial policy**: a government deliberately steering money toward an industry it has decided the country should lead in, instead of leaving the choice to buyers.\n\nNormally an industry grows because customers want the product. A robot that runs into walls has no customers yet, so a company like Unitree would have to sell hundreds of thousands of costly, mostly useless machines at a loss while it gathered the data to make them useful, and few private firms could survive that. Industrial policy fills the gap. Here the tool is not a rule or a tax break but a purchase order: a local government buys the robots, builds a training centre in its own city, and covers much of the bill. The robot-maker gets revenue now, and a factory in the officials’ own district stays busy, which is why the article says building a centre lets officials “shore up demand” for machines made in their area. China ran the same playbook for solar panels, electric cars and high-speed rail, and it now leads the world in all three.\n\nThe bet can fail, which is the article’s real question: “at what cost?” The government is paying for machines that may be obsolete before a market for them exists, and Unitree’s shares have already slumped 30% since their first-day pop. Compare the American approach in the piece: Tesla trains robots inside its own warehouses, and other firms pay low-wage workers abroad to wear the sensors, spending far less and betting that cheaper data will be good enough.\n\nSo when you read that a country “leads” in some new technology, ask who paid for the early, unprofitable years. If the answer is the government, you are looking at industrial policy, and the next question is whether the bet ever pays off."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what is the main thing holding back China’s humanoid robots?",
+      "options": [
+        "Factories cannot build the hardware fast enough",
+        "The software, which needs vast amounts of real-world training data that does not yet exist",
+        "Chinese consumers refuse to buy robots",
+        "American export controls on advanced chips"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says Chinese companies have largely mastered the hardware; the software lags because the data to train it must be collected from scratch in the real world."
+    },
+    {
+      "question": "Why were chatbots easier to train than humanoid robots, according to the article?",
+      "options": [
+        "Chatbots have far fewer parameters than robots",
+        "Huge amounts of text already existed on the internet, while data on physical tasks must be created from scratch",
+        "Robots cannot be connected to the internet",
+        "Chatbots were trained by governments rather than companies"
+      ],
+      "answerIndex": 1,
+      "explanation": "Chatbots could be trained on the reams of digital text already online, whereas a robot’s data must be mined from real-world experiences or detailed recreations of them."
+    },
+    {
+      "question": "Which kind of training data does the article describe as the most valuable?",
+      "options": [
+        "Data from low-quality computer simulations",
+        "“Egocentric” data recorded from sensors worn by humans",
+        "“Real machine” data generated by a robot’s own actions",
+        "Videos of human movement found online"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article calls “real machine” data the most valuable form; egocentric human data is less useful because human and robotic limbs move differently."
+    },
+    {
+      "question": "Why does the article say local officials are keen to build robot training centres?",
+      "options": [
+        "The centres are highly profitable businesses",
+        "Buying robots for a centre shores up demand for robots manufactured in their own area",
+        "The national government fines cities that do not have one",
+        "They want to replace human factory workers as quickly as possible"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says that by building a centre, local officials can shore up demand for robots that are being manufactured in their area: the government is acting as the customer."
+    },
+    {
+      "question": "A sprinter breaks a world record, then trips and falls flat while celebrating in front of the crowd. Which word best describes the ending?",
+      "options": [
+        "legion",
+        "ignominious",
+        "egocentric",
+        "gleaned"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ignominious means humiliating and disgraceful, especially a public failure, which is exactly the article’s word for Superman’s crash into a wall right after beating Usain Bolt’s record."
+    }
+  ]
+}
