@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-02",
+  "title": "How salmon evolved to cope with the ice age",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/08/26/how-salmon-evolved-to-cope-with-the-ice-age",
+  "articlePageUrl": "/articles/junior/2026-09-02.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "baffled",
+      "partOfSpeech": "adjective",
+      "pronunciation": "BAF-uld",
+      "articleQuote": "Some of this variation is, though, so extreme that it has left researchers baffled.",
+      "meaning": "To be baffled is to be completely puzzled by something you cannot explain, even after trying hard. It is stronger than confused: a confused person is muddled, while a baffled person has looked closely and still has no answer. The chum salmon near Kodiak island and the Salish sea carry genes so unlike their neighbors' that scientists were baffled, and that puzzle is the one Patrick Martin set out to solve.",
+      "examples": [
+        "The teacher was baffled when the whole class got question 7 wrong, because every single answer was different.",
+        "I am baffled by how my little brother beat the final boss on his very first try."
+      ]
+    },
+    {
+      "word": "relic",
+      "partOfSpeech": "noun",
+      "pronunciation": "REL-ik",
+      "articleQuote": "Their odd behaviour seems to be a relic of the time of the glaciers",
+      "meaning": "A relic is something left over from an earlier time that is still around today. It can be an object, like a rusty sword in a museum, but the word works just as well for a habit or a rule that only makes sense once you know where it came from. The salmon's strange habits, spawning in summer or in a lake, are relics: they were useful when the fish were trapped in ice-age lakes, and they simply never went away.",
+      "examples": [
+        "The old rotary phone in Grandpa's hallway is a relic; nobody has dialed it in twenty years.",
+        "Our school's rule about no hats indoors is a relic from a time when almost every boy wore one."
+      ]
+    },
+    {
+      "word": "speculate",
+      "partOfSpeech": "verb",
+      "pronunciation": "SPEK-yuh-layt",
+      "articleQuote": "Mr Martin speculated that the Kodiak, Cook and Salish salmon are genetically different from their neighbours because they got trapped, and survived, in glacial lakes.",
+      "meaning": "To speculate is to form an idea about something by reasoning from clues, without yet having proof. It is more than a wild guess, because a speculation is built to be tested. Martin speculated that the odd salmon had once been trapped in ice-age lakes, then gathered a team and 32,817 fish samples to find out whether he was right.",
+      "examples": [
+        "Fans speculated for weeks about who the new coach would be before the team finally announced it.",
+        "We can only speculate about why the dog buried the remote control under the couch cushion."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Salmon run",
+      "articleQuote": "Most salmon migrate from the sea into fresh water to spawn in autumn or winter.",
+      "meaning": "A salmon lives two lives in two kinds of water. It hatches in a cold, shallow river far inland, then swims downstream to the ocean, where it spends years growing big on the sea's food. When it is ready to lay eggs it swims back the way it came, upstream, sometimes hundreds of kilometers, to the very river it hatched in. Biologists call this journey the **salmon run**, and they call fish that live this way **anadromous**, from Greek words meaning running up.\n\nLaying eggs is called **spawning**, and the patch of river gravel where it happens is the spawning ground. Salmon cannot spawn in the ocean, because the eggs need cold, oxygen-rich fresh water to develop. So the run is not optional. A salmon that cannot get back to fresh water cannot have young at all.\n\nThat is why the ice age was such a disaster for chum salmon. When a glacier froze a river shut, the fish out at sea were locked out of their spawning grounds and had to find another river. The fish already upstream were locked in, cut off from the ocean where they normally grow. Scientists assumed those trapped fish simply died out. The surprise in the article is that some did not. They used their lake the way they would have used the ocean, growing up in its deep water and then swimming up the streams that fed it to spawn, so the whole cycle kept going in miniature.\n\nYou will meet the salmon run again in stories about dams, because a concrete wall across a river blocks the run exactly as the ice did, which is why many dams have fish ladders built beside them. Whenever salmon come up, ask where the fish are on the loop: in the river, out at sea, or on the way back home."
+    },
+    {
+      "name": "Geographic isolation",
+      "articleQuote": "Isolation over periods of thousands of years is well understood to drive evolution. This is obvious on small islands, such as the Galápagos. But walls of ice can isolate, too.",
+      "meaning": "Why do the Galápagos islands have finches found nowhere else on Earth? Because the birds that reached those islands long ago could not fly back across hundreds of kilometers of open ocean, so their descendants have bred only with each other ever since. Biologists call this **geographic isolation**: a physical barrier, such as the sea, a mountain range, or a wall of ice, splits one group of animals into two groups that can no longer mix.\n\nHere is what happens next, step by step. Every animal is born with small random changes in its genes. In one big mixed population, animals from anywhere in the group breed with each other, so a new change either spreads through the whole group or fades away. Once a barrier cuts the group in two, a change on one side stays on that side. Over thousands of generations the two halves pile up different changes, until they look different, behave differently, and sometimes cannot breed with each other at all. That is **evolution** running in two directions at once, and isolation is what keeps the two directions from blending back together.\n\nThe ice age did this to the chum salmon. Glaciers dammed the valleys and turned them into lakes, and the salmon inside were cut off from every other salmon in the Pacific for thousands of years. Their genes changed in their own direction, and so did their habits. When the ice melted, the barrier vanished, but the differences stayed. That is why fish near Kodiak island still spawn in a lake and the Salish sea fish still spawn in summer, unlike almost every other chum salmon alive.\n\nWherever you see a strange animal on an island, a mountaintop, or in a deep cave, ask what cut its ancestors off from everyone else, and for how long."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Until recently, what did scientists assume had happened to the chum salmon trapped on the land side of the ice?",
+      "options": [
+        "They found other rivers along the coast to lay their eggs in",
+        "They died out, because they could not finish the ocean part of their life",
+        "They stopped spawning until the ice melted",
+        "They swam to Asia and mixed with the salmon there"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says it was assumed the land-side fish died out because they could not complete the marine part of their life cycle, and the new study shows that some of them survived instead."
+    },
+    {
+      "question": "Why did a glacier freezing a river shut matter so much to salmon?",
+      "options": [
+        "Salmon must swim upstream into fresh water to lay their eggs",
+        "Salmon cannot survive in water as cold as a river",
+        "Salmon eat only insects that live in rivers",
+        "Salmon need fast-moving water in order to breathe"
+      ],
+      "answerIndex": 0,
+      "explanation": "Salmon eggs need cold fresh water, so a fish that cannot get back up its river cannot spawn at all, which is the whole reason a blocked river was a disaster."
+    },
+    {
+      "question": "Patrick Martin speculated that the odd salmon had once been trapped in glacial lakes. What did he do next?",
+      "options": [
+        "Published the idea right away as a proven fact",
+        "Waited for the next ice age to see whether it happened again",
+        "Gathered a team and tested the idea by analysing the genes of thousands of salmon",
+        "Asked fishermen to vote on whether the idea sounded right"
+      ],
+      "answerIndex": 2,
+      "explanation": "Speculating means forming an idea from clues before you have proof, and Martin then convened a team to analyse 32,817 specimens from 310 populations to test his hunch."
+    },
+    {
+      "question": "According to the study, why are the Kodiak, Cook inlet and Salish sea salmon so genetically different from other chum salmon?",
+      "options": [
+        "A few salmon from Asia took a wrong turn and mixed in with them",
+        "Fish farmers bred them on purpose to survive colder water",
+        "They live farther north than any other salmon in the Pacific",
+        "They were cut off in glacial lakes for thousands of years and evolved on their own"
+      ],
+      "answerIndex": 3,
+      "explanation": "The team checked the Asia idea and found no close relation, so the best explanation is geographic isolation: the fish were sealed in ice-age lakes and changed in their own direction."
+    },
+    {
+      "question": "The article calls the salmon's odd behaviour a relic. What does relic mean here?",
+      "options": [
+        "A behaviour that is rare and very valuable",
+        "A behaviour left over from an earlier time that is still around today",
+        "A behaviour that has been recorded in a museum",
+        "A behaviour that scientists only recently discovered"
+      ],
+      "answerIndex": 1,
+      "explanation": "A relic is a leftover from the past, and spawning in a lake or in summer only makes sense once you know the fish were once trapped in ice-age lakes."
+    }
+  ]
+}
