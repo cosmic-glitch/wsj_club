@@ -1,0 +1,525 @@
+[
+  {
+    "k": "ubiquitous",
+    "t": "ubiquitous",
+    "kind": "vocab",
+    "pron": "yoo-BIK-wih-tus",
+    "forms": [
+      "ubiquitous"
+    ],
+    "text": "Present everywhere at once, so common you stop noticing it. The QR code has spread to every coconut cart and checkout page in India, and its everywhereness hides how new it is.",
+    "audio": true
+  },
+  {
+    "k": "quotidian",
+    "t": "quotidian",
+    "kind": "vocab",
+    "pron": "kwoh-TID-ee-un",
+    "forms": [
+      "quotidian"
+    ],
+    "text": "Daily, ordinary, routine. Scanning a code to pay for peanuts has gone from a novelty to an everyday act in ten years, which is why nobody thinks about what it costs to run.",
+    "audio": true
+  },
+  {
+    "k": "ostensibly",
+    "t": "ostensibly",
+    "kind": "vocab",
+    "pron": "ah-STEN-sib-lee",
+    "forms": [
+      "ostensibly"
+    ],
+    "text": "According to the stated reason, said with a raised eyebrow. The government said it cancelled the notes to punish hidden untaxed cash; the word hints the real effects were different from the official story.",
+    "audio": true
+  },
+  {
+    "k": "atop",
+    "t": "atop",
+    "kind": "word",
+    "forms": [
+      "ATOP"
+    ],
+    "text": "On top of. The QR code sits on top of the pile of coconuts on the beach cart, propped up where customers can scan it.",
+    "audio": true
+  },
+  {
+    "k": "navy-cuts",
+    "t": "Navy Cuts",
+    "kind": "name",
+    "forms": [
+      "Navy Cuts"
+    ],
+    "text": "A brand of cigarettes sold in India. The point of the list is that even a tiny roadside cigarette stall now takes digital payment.",
+    "audio": true
+  },
+  {
+    "k": "utility-companies",
+    "t": "utility companies",
+    "kind": "name",
+    "forms": [
+      "utility companies’"
+    ],
+    "text": "The companies that supply electricity, water, gas or phone service. Their bills carry a QR code so customers can pay from a phone.",
+    "audio": true
+  },
+  {
+    "k": "rupee",
+    "t": "rupee",
+    "kind": "name",
+    "forms": [
+      "rupees",
+      "rupee"
+    ],
+    "text": "India's currency. Ten rupees is about ten US cents, so the article's numbers in billions and trillions of rupees are big but not as big as they sound in dollars.",
+    "audio": true
+  },
+  {
+    "k": "landscape",
+    "t": "landscape",
+    "kind": "word",
+    "forms": [
+      "landscape"
+    ],
+    "text": "Here not scenery but the overall scene or environment: the QR code is a recent arrival in India's everyday world, not a fixture that was always there.",
+    "audio": true
+  },
+  {
+    "k": "visual-signature",
+    "t": "visual signature",
+    "kind": "phrase",
+    "forms": [
+      "visual signature"
+    ],
+    "text": "The image that instantly identifies something, the way a logo identifies a brand. The QR code is the picture everyone associates with UPI.",
+    "audio": true
+  },
+  {
+    "k": "upi",
+    "t": "UPI",
+    "kind": "name",
+    "forms": [
+      "Unified Payments Interface",
+      "UPI",
+      "UPI’s"
+    ],
+    "text": "Unified Payments Interface, the government-built platform that links Indian bank accounts to phone apps so anyone can send or receive money by scanning a QR code or entering a phone number. Launched in 2016.",
+    "audio": true
+  },
+  {
+    "k": "revolutionised",
+    "t": "revolutionised",
+    "kind": "word",
+    "forms": [
+      "revolutionised"
+    ],
+    "text": "Changed completely and suddenly, like a revolution. British spelling of revolutionized. UPI changed how money moves in India within a decade.",
+    "audio": true
+  },
+  {
+    "k": "paleolithic",
+    "t": "paleolithic",
+    "kind": "word",
+    "forms": [
+      "paleolithic"
+    ],
+    "text": "The Stone Age, the earliest period of human tools. The writer is joking that pre-2016 India, when nearly everything was paid in cash, feels prehistoric now.",
+    "audio": true
+  },
+  {
+    "k": "by-number-by-value",
+    "t": "by number / by value",
+    "kind": "phrase",
+    "forms": [
+      "by number and two-thirds by value",
+      "by value"
+    ],
+    "text": "Two ways of counting transactions: how many there were (by number) versus how much money they added up to (by value). Cash was almost all payments by count, but only two-thirds of the money, because big payments used other methods.",
+    "audio": true
+  },
+  {
+    "k": "cheques",
+    "t": "cheques",
+    "kind": "word",
+    "forms": [
+      "Cheques",
+      "cheques"
+    ],
+    "text": "British spelling of checks: paper slips instructing your bank to pay someone. Once the main non-cash payment in India; now just 0.2% of them.",
+    "audio": true
+  },
+  {
+    "k": "dealings",
+    "t": "dealings",
+    "kind": "word",
+    "forms": [
+      "dealings"
+    ],
+    "text": "Transactions, business done between people. Non-cash dealings means payments made without physical notes and coins.",
+    "audio": true
+  },
+  {
+    "k": "small-change",
+    "t": "small change",
+    "kind": "phrase",
+    "forms": [
+      "small change"
+    ],
+    "text": "Coins and low-value notes used to give change. Shopkeepers claiming to have none is a running joke in India, and the article says they handed out boiled sweets instead.",
+    "audio": true
+  },
+  {
+    "k": "alt-currency",
+    "t": "alt-currency",
+    "kind": "word",
+    "forms": [
+      "alt-currency"
+    ],
+    "text": "Alternative currency, something used in place of money. The joke is that one-rupee sweets became a stand-in for the coins shops claimed not to have.",
+    "audio": true
+  },
+  {
+    "k": "bn-m-trn",
+    "t": "m / bn / trn",
+    "kind": "name",
+    "forms": [
+      "73m",
+      "227bn",
+      "24bn",
+      "30trn",
+      "2m"
+    ],
+    "text": "The Economist's shorthand for million, billion and trillion. So 30trn rupees is 30 trillion rupees, roughly 340 billion US dollars, moved in a single month.",
+    "audio": true
+  },
+  {
+    "k": "non-cash-transactions",
+    "t": "non-cash transactions",
+    "kind": "phrase",
+    "forms": [
+      "non-cash transactions"
+    ],
+    "text": "Any payment that isn't physical notes or coins: cards, cheques, bank transfers, phone apps. UPI now carries more than 85% of them in India.",
+    "audio": true
+  },
+  {
+    "k": "room-for-growth",
+    "t": "room for growth",
+    "kind": "phrase",
+    "forms": [
+      "room for growth"
+    ],
+    "text": "Space to get bigger still. Only about half of Indian adults use UPI, so the network can keep adding users.",
+    "audio": true
+  },
+  {
+    "k": "odd",
+    "t": "-odd",
+    "kind": "phrase",
+    "forms": [
+      "550m-odd"
+    ],
+    "text": "Attached to a number, -odd means roughly or a little over. 550m-odd users means about 550 million, give or take.",
+    "audio": true
+  },
+  {
+    "k": "chief-among-them",
+    "t": "chief among them",
+    "kind": "phrase",
+    "forms": [
+      "Chief among them"
+    ],
+    "text": "The most important one of the group. Of all the reasons UPI succeeded, simplicity is the biggest.",
+    "audio": true
+  },
+  {
+    "k": "fiddle-with",
+    "t": "fiddle with",
+    "kind": "phrase",
+    "forms": [
+      "fiddle with"
+    ],
+    "text": "To fuss or mess around with something small and awkward. Paying by UPI means no fumbling with plastic cards.",
+    "audio": true
+  },
+  {
+    "k": "point-of-sale-device",
+    "t": "point-of-sale device",
+    "kind": "name",
+    "forms": [
+      "point-of-sale device"
+    ],
+    "text": "The card reader at a shop counter where you tap or swipe. UPI needs none: the shop just shows a printed QR code.",
+    "audio": true
+  },
+  {
+    "k": "jio",
+    "t": "Jio",
+    "kind": "name",
+    "forms": [
+      "Jio"
+    ],
+    "text": "An Indian mobile network launched in 2016 by the Reliance group. Its rock-bottom data prices brought hundreds of millions of Indians online for the first time.",
+    "audio": true
+  },
+  {
+    "k": "telecom",
+    "t": "telecom",
+    "kind": "word",
+    "forms": [
+      "telecom"
+    ],
+    "text": "Short for telecommunications: phone and internet service. A telecom network is a mobile-phone carrier.",
+    "audio": true
+  },
+  {
+    "k": "aggressive-pricing",
+    "t": "aggressive pricing",
+    "kind": "phrase",
+    "forms": [
+      "aggressive pricing"
+    ],
+    "text": "Setting prices very low on purpose to grab customers from rivals. Jio's cheap plans forced the whole industry's data prices down.",
+    "audio": true
+  },
+  {
+    "k": "plummet",
+    "t": "plummet",
+    "kind": "word",
+    "forms": [
+      "plummet"
+    ],
+    "text": "To fall fast and far, like a dropped stone. Mobile-data costs didn't just dip, they crashed.",
+    "audio": true
+  },
+  {
+    "k": "narendra-modi",
+    "t": "Narendra Modi",
+    "kind": "name",
+    "forms": [
+      "Narendra Modi’s"
+    ],
+    "text": "India's prime minister since 2014. In November 2016 he announced, with a few hours' notice, that the two largest banknotes were no longer valid.",
+    "audio": true
+  },
+  {
+    "k": "invalidate",
+    "t": "invalidate",
+    "kind": "word",
+    "forms": [
+      "invalidate"
+    ],
+    "text": "To make something no longer legally valid. Invalidating the notes meant shops and banks would no longer accept them as payment.",
+    "audio": true
+  },
+  {
+    "k": "undeclared-cash-holdings",
+    "t": "undeclared cash holdings",
+    "kind": "phrase",
+    "forms": [
+      "undeclared cash holdings"
+    ],
+    "text": "Piles of cash that were never reported to the tax office, often called black money. The stated target of the 2016 note cancellation.",
+    "audio": true
+  },
+  {
+    "k": "informal-economy",
+    "t": "informal economy",
+    "kind": "name",
+    "forms": [
+      "informal economy"
+    ],
+    "text": "The part of the economy that runs on cash and handshakes, outside official records: street vendors, day labourers, small workshops. Huge in India, and the part the note cancellation hurt most.",
+    "audio": true
+  },
+  {
+    "k": "gdp",
+    "t": "GDP",
+    "kind": "name",
+    "forms": [
+      "GDP"
+    ],
+    "text": "Gross domestic product, the total value of everything a country produces in a year. GDP growth slowing means the economy expanded less than it otherwise would have.",
+    "audio": true
+  },
+  {
+    "k": "soared",
+    "t": "soared",
+    "kind": "word",
+    "forms": [
+      "soared"
+    ],
+    "text": "Rose fast and high, the opposite of plummeted. Cashless payments shot up once cash became hard to use.",
+    "audio": true
+  },
+  {
+    "k": "merchant",
+    "t": "merchant",
+    "kind": "word",
+    "forms": [
+      "merchant"
+    ],
+    "text": "A seller, any business that takes payment from customers, from a corner shop to Amazon.",
+    "audio": true
+  },
+  {
+    "k": "pays-for-the-privilege",
+    "t": "pay for the privilege",
+    "kind": "phrase",
+    "forms": [
+      "pays for the privilege"
+    ],
+    "text": "To be charged for something you might expect to get for free, said with a touch of irony. A shop has to pay a fee just to be allowed to accept your card.",
+    "audio": true
+  },
+  {
+    "k": "network-provider",
+    "t": "network provider",
+    "kind": "name",
+    "forms": [
+      "network provider"
+    ],
+    "text": "The company that runs the wires and rules connecting banks so a card payment can go through, such as Visa or Mastercard. It takes a slice of every fee.",
+    "audio": true
+  },
+  {
+    "k": "card-issuing-bank",
+    "t": "card-issuing bank",
+    "kind": "name",
+    "forms": [
+      "card-issuing bank"
+    ],
+    "text": "The bank that gave you your card and holds or lends you the money behind it. It takes the largest share of the merchant's fee for carrying the risk.",
+    "audio": true
+  },
+  {
+    "k": "spurs",
+    "t": "spurs",
+    "kind": "word",
+    "forms": [
+      "spurs"
+    ],
+    "text": "Encourages or pushes forward, from the spur a rider uses on a horse. Zero fees spur adoption: they push shops to sign up.",
+    "audio": true
+  },
+  {
+    "k": "legislation",
+    "t": "legislation",
+    "kind": "word",
+    "forms": [
+      "legislation"
+    ],
+    "text": "A law or set of laws passed by a parliament. Parliament passed legislation lifting the ban on UPI fees.",
+    "audio": true
+  },
+  {
+    "k": "commercial-transactions",
+    "t": "commercial transactions",
+    "kind": "phrase",
+    "forms": [
+      "commercial UPI transactions",
+      "commercial transactions"
+    ],
+    "text": "Payments to a business, as opposed to money sent between friends or family. The new fees are expected to apply only to these, and only above a minimum size.",
+    "audio": true
+  },
+  {
+    "k": "have-merit",
+    "t": "has merit",
+    "kind": "phrase",
+    "forms": [
+      "has merit"
+    ],
+    "text": "Has real value or a good point to it. The writer concedes one of the critics' arguments is worth taking seriously before knocking it down.",
+    "audio": true
+  },
+  {
+    "k": "offset",
+    "t": "offset",
+    "kind": "word",
+    "forms": [
+      "offset"
+    ],
+    "text": "Balanced out or cancelled by something on the other side. Critics say what the government spends on UPI is offset by what it saves on printing banknotes.",
+    "audio": true
+  },
+  {
+    "k": "bear-the-burden",
+    "t": "bear the burden",
+    "kind": "phrase",
+    "forms": [
+      "bear the burden"
+    ],
+    "text": "To end up carrying the cost or difficulty. Critics fear businesses will pass the new fees on so that customers ultimately bear the burden.",
+    "audio": true
+  },
+  {
+    "k": "non-profit",
+    "t": "non-profit body",
+    "kind": "name",
+    "forms": [
+      "non-profit body"
+    ],
+    "text": "An organisation that exists to provide a service rather than make money for owners. The body running UPI is owned jointly by public and private banks and keeps no profit.",
+    "audio": true
+  },
+  {
+    "k": "subsidies",
+    "t": "subsidies",
+    "kind": "word",
+    "forms": [
+      "subsidies"
+    ],
+    "text": "Money a government pays to support an activity it wants to keep going. Banks get subsidies for running UPI, but they cover only a small fraction of the cost.",
+    "audio": true
+  },
+  {
+    "k": "incentive",
+    "t": "incentive",
+    "kind": "word",
+    "forms": [
+      "incentive"
+    ],
+    "text": "A reason to do something, usually a reward. With no fee income, banks have little reason to invest in improving UPI.",
+    "audio": true
+  },
+  {
+    "k": "indirectly",
+    "t": "indirectly",
+    "kind": "word",
+    "forms": [
+      "indirectly"
+    ],
+    "text": "Not straight from your pocket but by a roundabout route. Consumers already pay for UPI through taxes and a service that is worse than it could be.",
+    "audio": true
+  },
+  {
+    "k": "backbone",
+    "t": "backbone",
+    "kind": "word",
+    "forms": [
+      "backbone"
+    ],
+    "text": "The central support that holds everything up, as the spine does for a body. UPI is the structure India's payments are built on.",
+    "audio": true
+  },
+  {
+    "k": "stagnates",
+    "t": "stagnates",
+    "kind": "word",
+    "forms": [
+      "stagnates"
+    ],
+    "text": "Stops moving or improving, like still water going stale. A payments system that stagnates falls behind on security and new features.",
+    "audio": true
+  },
+  {
+    "k": "pay-its-own-way",
+    "t": "pay its own way",
+    "kind": "phrase",
+    "forms": [
+      "pay its own way"
+    ],
+    "text": "To earn enough to cover its own costs instead of relying on someone else. The closing pun: UPI helps everyone else pay, and now needs to fund itself.",
+    "audio": true
+  }
+]

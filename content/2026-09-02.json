@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-02",
+  "title": "India's payments system is ten. It must start paying for itself",
+  "articleUrl": "https://www.economist.com/asia/2026/08/30/indias-payments-system-is-ten-it-must-start-paying-for-itself",
+  "articlePageUrl": "/articles/2026-09-02.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "ubiquitous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "yoo-BIK-wih-tus",
+      "articleQuote": "So ubiquitous has the QR code become—and so quotidian its use—that it is easy to forget just how recent an addition it is to the Indian landscape.",
+      "meaning": "Something **ubiquitous** is everywhere at once, so common that you stop noticing it. The word comes from the Latin for \"everywhere\" and is usually said of things that have quietly spread into every corner of life: smartphones, plastic packaging, background music in shops. The article uses it for India's payment QR codes, which now sit on coconut carts, rickshaw seat backs and Amazon's checkout page alike, and the point is that the very everywhereness of the thing hides how new it is.",
+      "examples": [
+        "AirPods are so ubiquitous at school that a kid without them looks like they're making a statement.",
+        "By the end of the season the team's celebration dance was ubiquitous, copied by every middle-school squad in the district."
+      ]
+    },
+    {
+      "word": "ostensibly",
+      "partOfSpeech": "adverb",
+      "pronunciation": "ah-STEN-sib-lee",
+      "articleQuote": "cancelling 500- and 1,000-rupee notes, ostensibly to punish undeclared cash holdings",
+      "meaning": "**Ostensibly** means \"according to the stated reason\", and it carries a raised eyebrow: the writer is reporting the official explanation while signalling that the real reason may be different, or that the stated one didn't hold up. Here the Indian government said it cancelled most of the country's banknotes to punish people hiding untaxed cash; the word hints that the policy did a lot of other things, some of them unintended. Whenever you see *ostensibly*, expect the sentence after it to complicate the story.",
+      "examples": [
+        "He stayed after practice ostensibly to work on free throws, but everyone knew he was waiting for the coach to notice him.",
+        "The group chat was ostensibly for planning the science project, and about ninety percent memes."
+      ]
+    },
+    {
+      "word": "quotidian",
+      "partOfSpeech": "adjective",
+      "pronunciation": "kwoh-TID-ee-un",
+      "articleQuote": "and so quotidian its use",
+      "meaning": "**Quotidian** means daily, ordinary, routine, the stuff of everyday life rather than anything special. It comes from the Latin for \"every day\", and writers reach for it when they want a slightly grander word for \"normal\", often to make a point about how something once remarkable has become plain habit. The article pairs it with *ubiquitous*: scanning a QR code to pay for peanuts has gone from a novelty to a quotidian act in ten years, which is exactly why nobody thinks about what it costs to run.",
+      "examples": [
+        "Her vlog is all quotidian stuff, packing lunch and walking the dog, and somehow that's why people watch.",
+        "Once the new phone stopped being exciting, taking photos with it became quotidian, just something you do."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Merchant fees",
+      "articleQuote": "A merchant accepting a credit or debit card typically pays for the privilege.",
+      "meaning": "Tap a card for a $10 pizza and the pizza shop does not get $10. It gets roughly $9.70 to $9.80, and the missing few cents are the **merchant fee**, the part of the payments business most people never see. Understanding it explains why India's zero-fee system is both a triumph and a problem.\n\nA card payment involves more players than it looks. There is the shop's bank, which receives the money. There is your bank, the one that issued the card and either holds your money or is lending it to you until the bill comes. And there is the **card network**, Visa or Mastercard, which owns none of the money but runs the wires and the rulebook that let those two banks settle up in seconds. Each of them charges for its part: the network takes a small slice for running the system, your bank takes the largest slice (called the **interchange fee**) for taking on the risk that you won't pay or that the card is stolen, and the shop's bank takes a slice for handling the account. Added together they come to a couple of percent of the purchase in most countries, and the shop pays all of it, which is why small businesses sometimes set a minimum for card payments or quietly build the fee into their prices.\n\nIndia's UPI is a different kind of pipe. It links bank accounts directly through phone apps, and in 2020 the government banned merchant fees on it entirely. The coconut seller keeps every rupee, so almost every coconut seller signed up, and UPI now carries more than 85% of the country's non-cash payments. But the banks that run the pipes still spend heavily on servers, fraud checks and making sure a payment goes through, and the government subsidy covers only a small fraction of it. That is the article's warning: with nobody paying, the banks have little reason to invest and struggle to keep up with basic maintenance. Whenever a payment is \"free\", ask who is paying for the pipes, because somebody always is."
+    },
+    {
+      "name": "Demonetisation",
+      "articleQuote": "Narendra Modi's surprise decision to invalidate 86% of cash rupees by value in November that year",
+      "meaning": "At 8pm on November 8th 2016, India's prime minister went on television and announced that from midnight the 500- and 1,000-rupee notes, 86% of all the cash in the country by value, would no longer be money. The paper in people's wallets did not change. The law did: shops and banks would no longer accept those notes as payment, and the only thing you could do with them was deposit them at a bank by a deadline in exchange for new notes. Economists call this **demonetisation**, and it is one of the most dramatic tools a government can reach for, because it exposes what money actually is: paper that is valuable only for as long as the law and everyone else agree to treat it as valuable.\n\nThe stated reason was **black money**, cash earned but never declared to the tax office. Someone sitting on a suitcase of untaxed notes now had to choose: deposit them and explain to the bank where they came from, or let them become worthless. Counterfeit notes would be flushed out the same way. On paper it was a clever trap.\n\nIn practice it hit the wrong people hardest. India's economy ran on cash, especially the vast informal part of it, the street vendors, day labourers and small workshops that pay and get paid in notes. Overnight their customers had nothing to spend, people queued for hours outside banks, and growth slowed for months. Meanwhile almost all the cancelled cash was deposited back into the banks, which suggested the black-money hoards were smaller, or better hidden, than the government claimed. The one clear winner was digital payment: with cash unusable, UPI transactions went from 100,000 a month to 2 million in two months and never looked back. The lesson travels well beyond India: a policy aimed at a small group of wrongdoers can land on everyone who shares the same tool, so always ask who else uses the thing you are about to break."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is UPI, the system the article is about?",
+      "options": [
+        "A government-run credit card that replaced Visa and Mastercard in India",
+        "A platform that links a bank account to a phone app so people can pay by scanning a QR code or entering a phone number",
+        "A digital currency issued by India's central bank instead of paper rupees",
+        "A network of ATMs that let people withdraw cash without a card"
+      ],
+      "answerIndex": 1,
+      "explanation": "UPI links bank accounts to mobile apps; paying is as simple as scanning someone's QR code or entering their phone number, with no card or point-of-sale device."
+    },
+    {
+      "question": "According to the article, which of the following helped UPI take off in its early years?",
+      "options": [
+        "A new law requiring every shop to accept card payments",
+        "Cheap mobile data from Jio and the 2016 cancellation of most banknotes, which pushed people toward cashless payment",
+        "A government payment of 100 rupees to every new user",
+        "The collapse of India's cheque-clearing system"
+      ],
+      "answerIndex": 1,
+      "explanation": "Jio's aggressive pricing brought millions online the same year UPI launched, and demonetisation made cash unusable overnight, so UPI transactions jumped from 100,000 to 2 million in two months."
+    },
+    {
+      "question": "Why did the 2020 ban on UPI fees speed up adoption by shops?",
+      "options": [
+        "Shops were fined if they kept accepting cash",
+        "The government paid shops a bonus for each UPI transaction",
+        "Unlike a card payment, where the shop pays a slice to the card network and banks, a shop paid nothing to accept UPI",
+        "Customers received a discount for paying with UPI"
+      ],
+      "answerIndex": 2,
+      "explanation": "A merchant accepting a card typically pays a fee split between the network provider, the card-issuing bank and others; since 2020 a merchant has paid nothing to accept UPI, which spurs adoption."
+    },
+    {
+      "question": "The article says the government cancelled the 500- and 1,000-rupee notes \"ostensibly to punish undeclared cash holdings.\" What does \"ostensibly\" signal here?",
+      "options": [
+        "That the policy was announced in secret",
+        "That this was the stated reason, with a hint that the full story is more complicated",
+        "That the policy succeeded exactly as planned",
+        "That the writer strongly supports the policy"
+      ],
+      "answerIndex": 1,
+      "explanation": "\"Ostensibly\" reports the official reason while signalling doubt; the article goes on to say the policy wrecked the informal economy and slowed growth."
+    },
+    {
+      "question": "What is the article's main argument about charging fees on UPI again?",
+      "options": [
+        "Fees should stay banned because the government already saves money by printing fewer notes",
+        "Fees should apply to everyone, including coconut vendors and person-to-person transfers",
+        "UPI should be sold to Visa or Mastercard so they can run it profitably",
+        "UPI costs real money to run, banks receive only a small subsidy for it, and without proper funding the system will stagnate"
+      ],
+      "answerIndex": 3,
+      "explanation": "The article argues that banks spend heavily to maintain and secure the network, the subsidy covers only a fraction, and consumers already pay indirectly through taxes and a worse service."
+    }
+  ]
+}
