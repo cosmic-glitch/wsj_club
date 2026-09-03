@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-03",
+  "title": "Nvidia is driving the AI boom. Good",
+  "articleUrl": "https://www.economist.com/leaders/2026/09/03/nvidia-is-driving-the-ai-boom-good",
+  "articlePageUrl": "/articles/2026-09-03.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "hubristic",
+      "partOfSpeech": "adjective",
+      "pronunciation": "hyoo-BRIS-tik",
+      "articleQuote": "True, the dotcom and AI booms share unnerving similarities: an exciting new technology, an epic bull run, hubristic tech bosses.",
+      "meaning": "**Hubristic** describes a person so sure of their own powers that they stop seeing the risks. The noun is *hubris*, the ancient Greek word for the swelling pride that made a tragic hero overreach and fall, and English still uses it for confidence that the universe seems about to punish. The Economist lists \"hubristic tech bosses\" as one thing the AI boom shares with the dotcom mania: leaders so certain their technology will remake the world that they bet the company on it. The rest of the leader is really an argument about whether Jensen Huang's bet is hubris or sound judgement.",
+      "examples": [
+        "Skipping every practice because you \"already know the plays\" is hubristic, and the coach will make you pay for it in the first game.",
+        "It was a hubristic move to tell the whole group chat she would ace the test without opening the book."
+      ]
+    },
+    {
+      "word": "linchpin",
+      "partOfSpeech": "noun",
+      "pronunciation": "LINCH-pin",
+      "articleQuote": "Nvidia’s rise from seller of chips to video-gamers and cryptocurrency miners to linchpin of the economy has been so rapid",
+      "meaning": "A **linchpin** is, literally, the small metal pin pushed through the end of an axle to stop the wheel sliding off: pull it out and the whole cart collapses. Writers borrow it for the one person or thing that everything else depends on. The article calls Nvidia the linchpin of the economy because its chips sit inside nearly every AI product and its shares alone produced about 15 cents of every dollar the American stock market has returned since 2023, so if Nvidia wobbles, a great deal wobbles with it.",
+      "examples": [
+        "Our point guard is the linchpin of the team; when she is out, the whole offense just stops working.",
+        "Grandma is the linchpin of every family holiday, the one person who makes sure everyone actually shows up."
+      ]
+    },
+    {
+      "word": "presuppose",
+      "partOfSpeech": "verb",
+      "pronunciation": "pree-suh-POHZ",
+      "articleQuote": "Just as Cisco’s sales of routers and switches presupposed exponential growth in web traffic, Nvidia’s GPU revenues assume endless demand for AI tokens.",
+      "meaning": "To **presuppose** something is to treat it as already true before your argument or plan even starts, so that everything you build on top only works if that hidden assumption holds. The prefix *pre-* means beforehand: it is a supposition made in advance and usually never said out loud. Cisco's sales in 2000 presupposed that internet traffic would keep growing exponentially, and when it grew more slowly than expected the sales collapsed. Whenever a confident forecast rests on a number nobody checked, that number is being presupposed, and it is usually where the argument breaks.",
+      "examples": [
+        "Planning a beach day in April presupposes that the weather will cooperate, which around here it rarely does.",
+        "His whole case for a later curfew presupposes that he always texts back, and his parents have evidence otherwise."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Vendor financing",
+      "articleQuote": "its financial engineering smacks of the “vendor financing” which pumped up the revenues of networking-gear makers like Cisco in the dotcom mania of 2000-01",
+      "meaning": "Nvidia sells the chips, and Nvidia is also putting up roughly $1trn so its customers can afford to buy them. That is why some people call it \"the bank of AI\", and the corporate-finance term for the arrangement is **vendor financing**: the *vendor*, the seller, provides the *financing*, the money to buy, instead of leaving that job to a bank.\n\nYou have already met the small version. A new iPhone costs about $1,000, and almost nobody hands over $1,000. The carrier lets you pay $40 a month for two years, and the sale goes through today. The seller records the sale now, the phone ships now, and the cash arrives later, in pieces. The seller accepts the wait, and the chance that some buyers stop paying, because otherwise the sale would not happen at all.\n\nNow scale it up. Nvidia's customers are data-centre landlords and AI labs that need tens of billions of dollars of GPUs, more than they have in the bank. So Nvidia hands them cash, or signs **guarantees**, written promises that if the customer cannot repay a loan, Nvidia will pay the lender instead. The customer buys the GPUs, Nvidia records the sale, and its revenue climbs. But look at what has actually happened: Nvidia has sold a product and, in the same deal, taken on the risk that the buyer never pays for it. If a customer goes bust, Nvidia owes the lender and gets back some used chips, which, as the article notes, may be worth very little once newer chips exist.\n\nThat is the trap Cisco and other equipment makers fell into in 2000. They lent money to internet start-ups so the start-ups could buy their routers, their sales looked spectacular, and when the start-ups died the customers turned out to have been paying with the sellers' own money. The article's defence of Nvidia is that it makes its promises out of its own $99bn of cash rather than out of borrowed money, so a failure would hurt its shareholders without sinking the company. Whenever a company's sales are booming, ask who is paying for the goods, because if the answer is the seller itself, the sales and the risk arrived together."
+    },
+    {
+      "name": "The dotcom bubble",
+      "articleQuote": "Cisco was right about eventual demand but wrong about the timing—hence the dotcom crash.",
+      "meaning": "Cisco was right. The internet really did take over the world, web traffic really did explode, and Cisco's shares still fell by nearly 90% in the two years after March 2000. That is the strange lesson of the **dotcom bubble**, the episode in financial history that this article measures Nvidia against.\n\nBetween about 1995 and 2000 the internet went from a curiosity to a business, and investors decided that any company with \".com\" in its name would be enormous. The Nasdaq, the stock index where most technology companies are listed, rose about five-fold in five years. Companies like Pets.com went public with almost no revenue and huge advertising budgets, their shares rose anyway, and people bought because prices were rising. That is what a **bubble** is: prices pushed up by the expectation that they will keep rising, rather than by what the companies actually earn. Cisco, which made the routers and switches that carried internet traffic, looked like the sensible pick, the seller of picks and shovels to the gold rush, and in March 2000 it briefly became the world's most valuable company, worth more than $500bn.\n\nThen the money ran out. Start-ups that were burning cash could not raise more, so they stopped buying equipment. Pets.com shut down nine months after listing. The Nasdaq fell 78% from its peak by late 2002, and America slipped into recession in 2001. The strange part is that the demand the boom presupposed did arrive: by 2010 the world was streaming video over exactly the kind of network Cisco had built. But it arrived years later than the share prices had assumed, and the companies that had bet on it arriving on time had already run out of money. The article's point is that Nvidia's demand may be just as real and its timing just as uncertain. Being right about the future is not enough; you also have to stay solvent until it gets here."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what is Nvidia doing through its \"$1trn-worth of deals\"?",
+      "options": [
+        "Buying up its rivals' chip factories",
+        "Providing data-centre landlords and AI labs with cash or guarantees so they can buy its GPUs",
+        "Paying out its cash to shareholders as dividends",
+        "Building its own AI models to compete with OpenAI and Anthropic"
+      ],
+      "answerIndex": 1,
+      "explanation": "Nvidia gives its customers cash or loan guarantees so they can afford its chips, which is why some call it the \"bank of AI\"."
+    },
+    {
+      "question": "The article says the differences from the dotcom boom matter more than the similarities. What is the key difference between Nvidia today and Cisco in 2000?",
+      "options": [
+        "Nvidia's chips are faster than Cisco's routers were",
+        "Cisco financed its customers with debt, while Nvidia can use its own huge pile of cash and has a very strong balance sheet",
+        "Nvidia has no competitors, whereas Cisco had many",
+        "Cisco's customers were mostly abroad, whereas Nvidia's are American"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article stresses that Nvidia has $99bn of cash and generates about $200bn a year, so it can backstop its deals with cash where Cisco used debt."
+    },
+    {
+      "question": "\"Cisco's sales of routers and switches presupposed exponential growth in web traffic.\" What does \"presupposed\" mean here?",
+      "options": [
+        "Prevented",
+        "Took for granted as already true, before checking",
+        "Advertised publicly",
+        "Measured after the fact"
+      ],
+      "answerIndex": 1,
+      "explanation": "To presuppose is to assume something in advance; Cisco's sales only made sense if web traffic really did keep growing exponentially."
+    },
+    {
+      "question": "The article calls Nvidia's financial wizardry \"partly defensive.\" Defensive against what?",
+      "options": [
+        "Government antitrust lawsuits",
+        "Its biggest customers, the hyperscalers, designing their own chips while non-Nvidia AI chips take a growing share of the market",
+        "A ban on exporting chips to China",
+        "Falling interest rates that make its cash worth less"
+      ],
+      "answerIndex": 1,
+      "explanation": "Roughly half of Nvidia's revenue comes from hyperscalers that are now designing their own silicon, and non-Nvidia chips have grown from 26% to 38% of the market."
+    },
+    {
+      "question": "Why does the article conclude that Nvidia's bets are \"how capitalism is supposed to work\"?",
+      "options": [
+        "Because the government has reviewed and approved the deals",
+        "Because if the bets succeed AI arrives sooner and living standards rise, and if they fail the cost falls chiefly on Nvidia's shareholders, who chose to take the risk",
+        "Because America's six largest banks have guaranteed Nvidia's commitments",
+        "Because Nvidia has no competitors and so cannot lose money"
+      ],
+      "answerIndex": 1,
+      "explanation": "The leader's argument is that this is an entrepreneurial bet with Nvidia's own money on the line: the upside is faster AI adoption, and the downside lands on the shareholders who chose it."
+    }
+  ]
+}

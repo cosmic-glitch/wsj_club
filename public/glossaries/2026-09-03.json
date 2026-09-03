@@ -1,0 +1,631 @@
+[
+  {
+    "k": "hubristic",
+    "t": "hubristic",
+    "kind": "vocab",
+    "pron": "hyoo-BRIS-tik",
+    "forms": [
+      "hubristic"
+    ],
+    "text": "So sure of your own powers that you stop seeing the risks; from hubris, the Greek word for the pride that made a tragic hero overreach and fall. Hubristic tech bosses are one thing the AI boom shares with the dotcom mania.",
+    "audio": true
+  },
+  {
+    "k": "linchpin",
+    "t": "linchpin",
+    "kind": "vocab",
+    "pron": "LINCH-pin",
+    "forms": [
+      "linchpin"
+    ],
+    "text": "Literally the pin through the end of an axle that keeps the wheel on; figuratively the one thing everything else depends on. Nvidia is the linchpin of the economy because so much of the stock market's gains and the AI boom rest on its chips.",
+    "audio": true
+  },
+  {
+    "k": "presuppose",
+    "t": "presuppose",
+    "kind": "vocab",
+    "pron": "pree-suh-POHZ",
+    "forms": [
+      "presupposed"
+    ],
+    "text": "To treat something as already true before the argument starts, so the whole plan only works if that unspoken assumption holds. Cisco's sales presupposed that web traffic would keep growing exponentially, and when it grew more slowly the sales collapsed.",
+    "audio": true
+  },
+  {
+    "k": "colossus",
+    "t": "colossus",
+    "kind": "word",
+    "forms": [
+      "colossus"
+    ],
+    "text": "A giant, from the Colossus of Rhodes, a huge ancient statue. Calling Nvidia an American colossus means it towers over everything around it.",
+    "audio": true
+  },
+  {
+    "k": "insatiable",
+    "t": "insatiable",
+    "kind": "word",
+    "forms": [
+      "insatiable"
+    ],
+    "text": "Impossible to satisfy, always hungry for more. Insatiable demand for Nvidia's chips means customers keep buying every one it can make.",
+    "audio": true
+  },
+  {
+    "k": "gpu",
+    "t": "GPU",
+    "kind": "name",
+    "forms": [
+      "graphics-processing units",
+      "GPUs",
+      "GPU"
+    ],
+    "text": "A graphics-processing unit, the chip Nvidia sells. It was designed to draw video-game graphics, which means doing millions of small calculations at the same time, and training and running AI models needs exactly that kind of parallel arithmetic.",
+    "audio": true
+  },
+  {
+    "k": "net-income",
+    "t": "net income",
+    "kind": "name",
+    "forms": [
+      "net income"
+    ],
+    "text": "Profit after every cost and tax has been paid, the bottom line. $370bn of net income would make Nvidia the most profitable company in the world.",
+    "audio": true
+  },
+  {
+    "k": "trn-bn",
+    "t": "trn / bn",
+    "kind": "name",
+    "forms": [
+      "trn",
+      "bn"
+    ],
+    "text": "British shorthand: trn is trillion, bn is billion. $5.4trn is 5,400 billion dollars, and a trillion is a thousand billion.",
+    "audio": true
+  },
+  {
+    "k": "share-price",
+    "t": "share price",
+    "kind": "name",
+    "forms": [
+      "share price"
+    ],
+    "text": "The price of one share, one small slice of ownership of the company. Nvidia's share price is 14 times what it was when ChatGPT launched, so $100 invested then would be about $1,400 now.",
+    "audio": true
+  },
+  {
+    "k": "public-companies",
+    "t": "public companies",
+    "kind": "name",
+    "forms": [
+      "public companies"
+    ],
+    "text": "Companies whose shares anyone can buy on a stock exchange, as opposed to private ones owned by founders and a few investors. The ten biggest public companies backing AI make up 40% of the S&P 500's value.",
+    "audio": true
+  },
+  {
+    "k": "sp-500",
+    "t": "S&P 500",
+    "kind": "name",
+    "forms": [
+      "S&P 500"
+    ],
+    "text": "An index that tracks the shares of 500 of America's largest public companies and is the usual shorthand for the whole US stock market. Nvidia alone is 8% of it.",
+    "audio": true
+  },
+  {
+    "k": "returned",
+    "t": "returned",
+    "kind": "word",
+    "forms": [
+      "returned",
+      "returns"
+    ],
+    "text": "Here not came back but the money an investment produces: price gains plus dividends. Nvidia produced about 15 cents of every dollar of return the US stock market has delivered since 2023.",
+    "audio": true
+  },
+  {
+    "k": "bubble",
+    "t": "bubble",
+    "kind": "name",
+    "forms": [
+      "bubble"
+    ],
+    "text": "In finance, a period when prices rise far above what the underlying businesses are worth because buyers expect prices to keep rising. Bubbles end when the buyers run out and the price collapses.",
+    "audio": true
+  },
+  {
+    "k": "data-centre-landlords",
+    "t": "data-centre landlords",
+    "kind": "name",
+    "forms": [
+      "data-centre landlords"
+    ],
+    "text": "Companies that build and own the giant warehouses full of computers where AI models run, then rent that capacity to AI labs and cloud providers. They are among Nvidia's biggest customers.",
+    "audio": true
+  },
+  {
+    "k": "guarantees",
+    "t": "guarantees",
+    "kind": "word",
+    "forms": [
+      "guarantees"
+    ],
+    "text": "Here not a warranty but a loan guarantee: a promise to a lender that if the borrower cannot repay, you will. Nvidia guarantees its customers' borrowing so they can buy GPUs, which means the debt lands on Nvidia if they fail.",
+    "audio": true
+  },
+  {
+    "k": "financial-engineering",
+    "t": "financial engineering",
+    "kind": "name",
+    "forms": [
+      "financial engineering"
+    ],
+    "text": "Clever arrangements of loans, guarantees and deals that make a company's numbers look better. The phrase is usually said with a raised eyebrow, and Nvidia's critics use it that way.",
+    "audio": true
+  },
+  {
+    "k": "smacks-of",
+    "t": "smacks of",
+    "kind": "phrase",
+    "forms": [
+      "smacks of"
+    ],
+    "text": "Has the flavour of, reminds you uncomfortably of. Saying Nvidia's deals smack of vendor financing means they look suspiciously like the trick that inflated Cisco's sales in 2000.",
+    "audio": true
+  },
+  {
+    "k": "vendor-financing",
+    "t": "vendor financing",
+    "kind": "name",
+    "forms": [
+      "vendor financing"
+    ],
+    "text": "When the seller lends its customers the money to buy its own products. Sales rise, but the seller also takes on the risk that the buyers never pay. The handout has a full card on it.",
+    "audio": true
+  },
+  {
+    "k": "networking-gear",
+    "t": "networking-gear",
+    "kind": "name",
+    "forms": [
+      "networking-gear"
+    ],
+    "text": "The routers, switches and cables that connect computers into networks and carry internet traffic. Cisco was the biggest maker of it in 2000.",
+    "audio": true
+  },
+  {
+    "k": "cisco",
+    "t": "Cisco",
+    "kind": "name",
+    "forms": [
+      "Cisco"
+    ],
+    "text": "An American company whose routers and switches carried the early internet. It briefly became the world's most valuable firm in March 2000, then lost nearly 90% of its value when the dotcom bubble burst.",
+    "audio": true
+  },
+  {
+    "k": "dotcom",
+    "t": "dotcom",
+    "kind": "name",
+    "forms": [
+      "dotcom"
+    ],
+    "text": "From .com, the ending of a web address. The dotcom boom of the late 1990s was the stock-market frenzy over internet companies; the dotcom crash of 2000-01 was its collapse.",
+    "audio": true
+  },
+  {
+    "k": "come-good",
+    "t": "come good",
+    "kind": "phrase",
+    "forms": [
+      "come good"
+    ],
+    "text": "Turn out well, deliver what was promised. If Nvidia's bets come good, the chips get used and the loans get repaid.",
+    "audio": true
+  },
+  {
+    "k": "productivity",
+    "t": "productivity",
+    "kind": "name",
+    "forms": [
+      "productivity"
+    ],
+    "text": "How much a worker or a whole economy produces per hour of work. Rising productivity is what makes a country richer over time, which is why the article calls it the prize if AI works.",
+    "audio": true
+  },
+  {
+    "k": "shareholders",
+    "t": "shareholders",
+    "kind": "name",
+    "forms": [
+      "shareholders"
+    ],
+    "text": "The people and funds that own a company's shares and so own the company. They gain if it thrives and lose if its bets fail, which is the article's point about who bears the risk.",
+    "audio": true
+  },
+  {
+    "k": "bull-run",
+    "t": "bull run",
+    "kind": "name",
+    "forms": [
+      "bull run"
+    ],
+    "text": "A long stretch of rising share prices. A bull tosses its horns upward, so a bull market is a rising one; a bear swipes down, so a bear market is a falling one.",
+    "audio": true
+  },
+  {
+    "k": "cryptocurrency-miners",
+    "t": "cryptocurrency miners",
+    "kind": "name",
+    "forms": [
+      "cryptocurrency miners"
+    ],
+    "text": "People who run banks of computers solving the puzzles that keep cryptocurrencies like Bitcoin working, and get paid in new coins for it. GPUs turned out to be good at that, which gave Nvidia a big customer base before AI.",
+    "audio": true
+  },
+  {
+    "k": "routers-and-switches",
+    "t": "routers and switches",
+    "kind": "name",
+    "forms": [
+      "routers and switches"
+    ],
+    "text": "The boxes that direct internet traffic: a switch connects devices within one network, a router passes data between networks. Cisco sold them by the truckload in 2000.",
+    "audio": true
+  },
+  {
+    "k": "ai-tokens",
+    "t": "AI tokens",
+    "kind": "name",
+    "forms": [
+      "AI tokens"
+    ],
+    "text": "The chunks of text, roughly a word or part of a word, that an AI model reads and writes. Every token processed takes a slice of GPU time, so demand for tokens is demand for Nvidia's chips.",
+    "audio": true
+  },
+  {
+    "k": "claude-addled",
+    "t": "Claude-addled",
+    "kind": "word",
+    "forms": [
+      "Claude-addled"
+    ],
+    "text": "Addled means muddled or scrambled. The joke is that software engineers are so hooked on Claude, an AI assistant made by Anthropic, that they are the one group whose AI use is already heavy; everyone else's is still small.",
+    "audio": true
+  },
+  {
+    "k": "fledgling",
+    "t": "fledgling",
+    "kind": "word",
+    "forms": [
+      "fledgling"
+    ],
+    "text": "A young bird that has only just grown its flight feathers, hence anything new and still weak. AI usage outside coding remains fledgling: it exists, but it cannot yet fly on its own.",
+    "audio": true
+  },
+  {
+    "k": "call-in",
+    "t": "call in",
+    "kind": "phrase",
+    "forms": [
+      "call in the guarantees"
+    ],
+    "text": "To demand payment of a promise. If Nvidia's customers call in the guarantees, they are asking Nvidia to hand over the money it promised to cover.",
+    "audio": true
+  },
+  {
+    "k": "repossesses",
+    "t": "repossess",
+    "kind": "word",
+    "forms": [
+      "repossesses"
+    ],
+    "text": "To take goods back when the buyer stops paying for them, the way a lender repossesses a car. Nvidia would get its GPUs back, but used chips may be worth little.",
+    "audio": true
+  },
+  {
+    "k": "hyperscalers",
+    "t": "hyperscalers",
+    "kind": "name",
+    "forms": [
+      "hyperscalers"
+    ],
+    "text": "The handful of giant cloud-computing companies, chiefly Amazon, Google, Meta and Microsoft, that run data centres at enormous scale. They are Nvidia's biggest customers and, increasingly, its rivals.",
+    "audio": true
+  },
+  {
+    "k": "silicon",
+    "t": "silicon",
+    "kind": "word",
+    "forms": [
+      "silicon"
+    ],
+    "text": "Here it means chips, which are made from the element silicon. The hyperscalers designing their own silicon are designing their own AI chips instead of buying Nvidia's.",
+    "audio": true
+  },
+  {
+    "k": "research-and-development",
+    "t": "research and development",
+    "kind": "name",
+    "forms": [
+      "research and development"
+    ],
+    "text": "The spending on scientists and engineers that produces a company's next products, often shortened to R&D. Nvidia used to spend a fifth of its sales on it and now spends less than a tenth.",
+    "audio": true
+  },
+  {
+    "k": "credit-exposure",
+    "t": "credit exposure",
+    "kind": "name",
+    "forms": [
+      "credit exposure"
+    ],
+    "text": "The total amount a company stands to lose if the people who owe it money, or whose loans it has guaranteed, fail to pay. Morgan Stanley estimates Nvidia's at $200bn by 2029.",
+    "audio": true
+  },
+  {
+    "k": "ie",
+    "t": "ie",
+    "kind": "name",
+    "forms": [
+      "ie"
+    ],
+    "text": "Short for the Latin id est, that is, used to spell out exactly what was just said. The article uses it to define credit exposure.",
+    "audio": true
+  },
+  {
+    "k": "shadow-debt",
+    "t": "shadow debt",
+    "kind": "name",
+    "forms": [
+      "shadow debt"
+    ],
+    "text": "Obligations that do not show up as ordinary borrowing, such as guarantees on other people's loans, but that could turn into real debt if things go wrong. Nvidia's could reach $300bn.",
+    "audio": true
+  },
+  {
+    "k": "gargantuan",
+    "t": "gargantuan",
+    "kind": "word",
+    "forms": [
+      "gargantuan"
+    ],
+    "text": "Enormous, from Gargantua, the giant in a 16th-century French novel famous for his appetite. $300bn is a gargantuan sum.",
+    "audio": true
+  },
+  {
+    "k": "balance-sheet",
+    "t": "balance-sheet",
+    "kind": "name",
+    "forms": [
+      "balance-sheet"
+    ],
+    "text": "The snapshot of what a company owns and what it owes. A robust balance-sheet means lots of cash and little debt, so the company can survive a bad year.",
+    "audio": true
+  },
+  {
+    "k": "gross-margins",
+    "t": "gross margins",
+    "kind": "name",
+    "forms": [
+      "Gross margins"
+    ],
+    "text": "The share of each sale left over after paying for the product itself. If a chip sells for $100 and costs $25 to make, the gross margin is 75%. Nvidia's rose from under 60% to 75%.",
+    "audio": true
+  },
+  {
+    "k": "burn",
+    "t": "burn",
+    "kind": "word",
+    "forms": [
+      "burn"
+    ],
+    "text": "Here burning cash means spending more than you take in, so the pile shrinks. SpaceX burns cash; Nvidia generates it.",
+    "audio": true
+  },
+  {
+    "k": "yield",
+    "t": "yield",
+    "kind": "word",
+    "forms": [
+      "yield"
+    ],
+    "text": "Here a verb: produce, give off. Nvidia will yield about $200bn of cash this year.",
+    "audio": true
+  },
+  {
+    "k": "backstop",
+    "t": "backstop",
+    "kind": "word",
+    "forms": [
+      "backstop"
+    ],
+    "text": "To stand behind something as the final guarantee, from the fence behind home plate that stops the ball. Nvidia uses its cash to backstop its customers' deals.",
+    "audio": true
+  },
+  {
+    "k": "came-due",
+    "t": "come due",
+    "kind": "phrase",
+    "forms": [
+      "came due"
+    ],
+    "text": "A debt comes due when the date to pay it arrives. Even if all of Nvidia's commitments came due at once, the article argues it could pay.",
+    "audio": true
+  },
+  {
+    "k": "leveraged",
+    "t": "leveraged",
+    "kind": "name",
+    "forms": [
+      "leveraged"
+    ],
+    "text": "Carrying debt relative to what you own or earn. A highly leveraged company has borrowed a lot; a lightly leveraged one, like Nvidia, could pay its debts many times over.",
+    "audio": true
+  },
+  {
+    "k": "forsake",
+    "t": "forsake",
+    "kind": "word",
+    "forms": [
+      "forsake"
+    ],
+    "text": "Give up, abandon. Profits would have to fall 60% for Nvidia to forsake its top-tier credit rating.",
+    "audio": true
+  },
+  {
+    "k": "investment-grade-credit-rating",
+    "t": "investment-grade credit rating",
+    "kind": "name",
+    "forms": [
+      "investment-grade credit rating"
+    ],
+    "text": "A grade from agencies like Moody's or S&P saying a borrower is very likely to repay. Investment-grade is the top band; below it is junk. Losing the rating makes borrowing dearer.",
+    "audio": true
+  },
+  {
+    "k": "illusory",
+    "t": "illusory",
+    "kind": "word",
+    "forms": [
+      "illusory"
+    ],
+    "text": "Based on illusion, not real. Demand for AI is not illusory: the revenue is actually arriving.",
+    "audio": true
+  },
+  {
+    "k": "pets-com",
+    "t": "Pets.com",
+    "kind": "name",
+    "forms": [
+      "Pets.com"
+    ],
+    "text": "An online pet-supplies shop that became the symbol of the dotcom bubble. It listed on the stock market in February 2000 with tiny sales and a famous sock-puppet mascot, and shut down nine months later.",
+    "audio": true
+  },
+  {
+    "k": "booking",
+    "t": "booking",
+    "kind": "word",
+    "forms": [
+      "booking"
+    ],
+    "text": "Here it means recording revenue in the accounts, not reserving a table. The hyperscalers are booking AI income: real money, written down.",
+    "audio": true
+  },
+  {
+    "k": "all-told",
+    "t": "all told",
+    "kind": "phrase",
+    "forms": [
+      "All told"
+    ],
+    "text": "Counting everything together. All told, AI may be earning American tech $150bn a year.",
+    "audio": true
+  },
+  {
+    "k": "capital-spending",
+    "t": "capital spending",
+    "kind": "name",
+    "forms": [
+      "capital spending"
+    ],
+    "text": "Money spent on long-lasting things like buildings, machines and chips, rather than on day-to-day costs. AI capital spending of $2.5trn still needs to be paid back.",
+    "audio": true
+  },
+  {
+    "k": "capital",
+    "t": "capital",
+    "kind": "word",
+    "forms": [
+      "capital"
+    ],
+    "text": "Here it means money available to invest, not a capital city. Huang thinks the markets will not supply capital fast enough, so Nvidia supplies it.",
+    "audio": true
+  },
+  {
+    "k": "reinvests",
+    "t": "reinvest",
+    "kind": "word",
+    "forms": [
+      "reinvests"
+    ],
+    "text": "To put profits back into the business instead of paying them out to shareholders. Every company that reinvests is betting it can earn more with the money than its investors could.",
+    "audio": true
+  },
+  {
+    "k": "beat-the-market",
+    "t": "beat the market",
+    "kind": "phrase",
+    "forms": [
+      "beat the market"
+    ],
+    "text": "Earn a higher return than the stock market as a whole. A company that keeps its cash is betting it can do that.",
+    "audio": true
+  },
+  {
+    "k": "concentrated",
+    "t": "concentrated",
+    "kind": "word",
+    "forms": [
+      "concentrated"
+    ],
+    "text": "Here it means focused in one place rather than spread out. A concentrated bet puts everything on one outcome, the opposite of diversifying.",
+    "audio": true
+  },
+  {
+    "k": "diversify",
+    "t": "diversify",
+    "kind": "word",
+    "forms": [
+      "diversify"
+    ],
+    "text": "Spread money across many different investments so that no single failure ruins you. The article says that is the investors' job, not Nvidia's.",
+    "audio": true
+  },
+  {
+    "k": "wall-street",
+    "t": "Wall Street",
+    "kind": "name",
+    "forms": [
+      "Wall Street"
+    ],
+    "text": "The street in New York where the stock exchange sits, used as shorthand for America's big banks and investment firms.",
+    "audio": true
+  },
+  {
+    "k": "goldman-blackrock-blackstone",
+    "t": "Goldman Sachs, BlackRock, Blackstone",
+    "kind": "name",
+    "forms": [
+      "Goldman Sachs",
+      "BlackRock",
+      "Blackstone"
+    ],
+    "text": "Three of Wall Street's biggest names: Goldman Sachs is an investment bank, BlackRock the world's largest fund manager, Blackstone a giant private-investment firm. Together they joined Nvidia's $500bn data-centre plan.",
+    "audio": true
+  },
+  {
+    "k": "rushed-for-the-exit",
+    "t": "rush for the exit",
+    "kind": "phrase",
+    "forms": [
+      "rushed for the exit"
+    ],
+    "text": "Sold up in a panic, like a crowd bolting from a theatre. Nvidia's shareholders have not done so yet.",
+    "audio": true
+  },
+  {
+    "k": "capitalism",
+    "t": "capitalism",
+    "kind": "name",
+    "forms": [
+      "capitalism"
+    ],
+    "text": "The economic system in which private companies and investors, not the government, decide where to put money and then keep the profits or eat the losses. The article's point is that Nvidia's bet is capitalism doing its job.",
+    "audio": true
+  }
+]

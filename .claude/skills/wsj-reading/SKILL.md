@@ -128,8 +128,8 @@ Everything you write is for a sharp 13–16 year old, not a finance professional
          // STOP marks the end of the article body. Breaking here is what keeps the
          // footer's "more from this section" thumbnails (and the espresso/promo
          // images that sit just after the body) OUT of the page.
-         const STOP = /^(This article appeared in|Discover stories from this section|Sign up to|Stay on top of|Get exclusive analysis|Curious about the world|Explore more|To track the trends shaping|Subscribers to The Economist can sign up|For more on the latest books|(?:Spanish|Russian|Arabic|Japanese|French|German|Chinese|Korean|Italian|Portuguese|Turkish|Hebrew|Polish|Dutch|Persian) Translation)\b/i;
-         const SKIP = /^(Save|Share|Listen to this story|Video:|Delivered to your inbox|0:00|Advertisement)\b/i;
+         const STOP = /^(This article appeared in|Discover stories from this section|Sign up to|Stay on top of|Get exclusive analysis|Curious about the world|Explore more|To track the trends shaping|Subscribers to The Economist can sign up|For more on the latest books|For subscribers only|(?:Spanish|Russian|Arabic|Japanese|French|German|Chinese|Korean|Italian|Portuguese|Turkish|Hebrew|Polish|Dutch|Persian) Translation)\b/i;
+         const SKIP = /^(Save|Share|Listen to this story|Video:|Delivered to your inbox|0:00|Advertisement|Read the rest of our cover package)\b/i;
          const JUNK_SRC = /\/newsletters\/|\/ident|\bsponsor|\badvert|\.svg(\?|$)/i; // logos, idents, ad pixels
          // Pick a sensible-resolution image (never the 5000px monster, never a tiny
          // placeholder). NOTE: srcset URLs can themselves contain commas (Cloudflare
