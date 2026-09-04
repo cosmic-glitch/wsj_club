@@ -40,9 +40,9 @@ All commands run from the repo root (`~/wsj_club`). The `.bot/` scripts must be 
 5. **Persist the ranked field for the afternoon run.** `mkdir -p .bot/state` and write `.bot/state/${TODAY}-field.json` for the 7 balloted candidates, in rank order:
    ```json
    { "date": "<TODAY>", "generatedAt": "<ISO timestamp>",
-     "ranked": [ { "rank": 1, "rating": 8, "title": "<exact ballot title>", "articleUrl": "<url>", "source": "Economist", "why": "<the one-line verdict>" }, … ] }
+     "ranked": [ { "rank": 1, "rating": 8, "title": "<exact ballot title>", "articleUrl": "<url>", "source": "Economist", "words": <read.mjs word count>, "why": "<the one-line verdict>" }, … ] }
    ```
-   The `auto-publish` cron's tally (`.bot/tally.mjs`) reads it to break a tied vote and to pick when nobody voted — a missing file degrades those fallbacks to ballot order, so don't skip it. (`.bot/state/` is box-local and gitignored.)
+   The `auto-publish` cron's tally (`.bot/tally.mjs`) reads it to break a tied vote and to pick when nobody voted — a missing file degrades those fallbacks to ballot order, so don't skip it. **`words` is the `words` figure `read.mjs` returned for that URL in step 3** — the afternoon capture cross-checks its own word count against it (an independent read of the same page) to catch a capture that silently dropped body text; a candidate without `words` just skips that check. (`.bot/state/` is box-local and gitignored.)
 
 ## Step 3 — Write the ballot and open the vote
 

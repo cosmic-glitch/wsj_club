@@ -113,7 +113,18 @@ async (page) => {
     // footer's "more from this section" thumbnails (and the espresso/promo
     // images that sit just after the body) OUT of the page.
     const STOP = /^(This article appeared in|Discover stories from this section|Sign up to|Stay on top of|Get exclusive analysis|Curious about the world|Explore more|To track the trends shaping|Subscribers to The Economist can sign up|For more on the latest books|For subscribers only|(?:Spanish|Russian|Arabic|Japanese|French|German|Chinese|Korean|Italian|Portuguese|Turkish|Hebrew|Polish|Dutch|Persian) Translation)\b/i;
-    const SKIP = /^(Save|Share|Listen to this story|Video:|Delivered to your inbox|0:00|Advertisement|Read the rest of our cover package)\b/i;
+    const SKIP = /^(Listen to this story|Video:|Delivered to your inbox|0:00|Advertisement|Read the rest of our cover package)\b/i;
+    // The Save/Share buttons leak in as bare one-word paragraphs ("Save", "Share",
+    // at most "Save this story"). Real prose can START with those words too —
+    // "Share prices fell…", "Save for a few exceptions…" — so match them only
+    // when the whole paragraph is a label-length stub, never by prefix alone.
+    const isChromeLabel = (t) => /^(Save|Share)\b/i.test(t) && t.split(/\s+/).length <= 3;
+    // Every paragraph a filter removes is REPORTED (see `dropped` in the summary
+    // line) so a misfire on body text is visible instead of a silent hole —
+    // the voice-quiz grader reads this text, and a missing paragraph there
+    // can mark a student's correct recall as "not in the article".
+    const dropped = [];
+    const snip = (t) => (t.length > 60 ? t.slice(0, 57) + '…' : t);
     const JUNK_SRC = /\/newsletters\/|\/ident|\bsponsor|\badvert|\.svg(\?|$)/i; // logos, idents, ad pixels
     // Pick a sensible-resolution image (never the 5000px monster, never a tiny
     // placeholder). NOTE: srcset URLs can themselves contain commas (Cloudflare
@@ -136,7 +147,9 @@ async (page) => {
     // A bare date line ("April 2007") opens many essays. It's NOT the first
     // body paragraph, so it must not take the drop cap — tag it .dateline.
     const DATELINE = /^(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}$/i;
-    for (const n of art.querySelectorAll('p, h2, h3, figure, iframe')) {
+    const nodes = Array.from(art.querySelectorAll('p, h2, h3, figure, iframe'));
+    for (let ni = 0; ni < nodes.length; ni++) {
+      const n = nodes[ni];
       // ECONOMIST INFOGRAPHIC MAPS/CHARTS are `infographics.economist.com` IFRAMES
       // (ai2html widgets), NOT <figure><img> — record a placeholder AT THIS SPOT so
       // the screenshot (taken in step 1b, after this walk) lands at the chart's own
@@ -186,8 +199,18 @@ async (page) => {
         continue;
       }
       const t = n.textContent.replace(/\s+/g, ' ').trim();   // raw text (textContent keeps "AI") — for the filters + the plain-text file
-      if (!t || t === deckText || SKIP.test(t) || /your browser does not support/i.test(t)) continue;
-      if (STOP.test(t)) break;
+      if (!t || t === deckText || /your browser does not support/i.test(t)) continue;
+      if (SKIP.test(t) || isChromeLabel(t)) { dropped.push({ why: 'skip', t: snip(t) }); continue; }
+      if (STOP.test(t)) {
+        // Everything after the footer boundary is discarded — list what it was,
+        // so body prose sitting past a misfired STOP shows up in the summary.
+        const after = nodes.slice(ni + 1)
+          .filter(m => /^(p|h2|h3)$/i.test(m.tagName))
+          .map(m => m.textContent.replace(/\s+/g, ' ').trim())
+          .filter(Boolean);
+        dropped.push({ why: 'stop', t: snip(t), after: after.length, afterSample: after.slice(0, 3).map(snip) });
+        break;
+      }
       if (/\bmin read\b/i.test(t) && t.length < 60) continue;  // dateline
       const html = inlineHtml(n).replace(/\s+/g, ' ').trim();  // formatted text — small-caps/italics kept
       if (!html) continue;
@@ -210,8 +233,9 @@ async (page) => {
         const holder = document.createElement('div');
         holder.innerHTML = chunk.replace(/<br\s*\/?>/gi, ' ');
         const t = (holder.textContent || '').replace(/\s+/g, ' ').trim();
-        if (!t || SKIP.test(t)) continue;
-        if (STOP.test(t)) break;
+        if (!t) continue;
+        if (SKIP.test(t) || isChromeLabel(t)) { dropped.push({ why: 'skip', t: snip(t) }); continue; }
+        if (STOP.test(t)) { dropped.push({ why: 'stop', t: snip(t), after: -1, afterSample: [] }); break; }
         const html = inlineHtml(holder).replace(/\s+/g, ' ').trim();
         if (!html) continue;
         if (DATELINE.test(t)) { blocks.push({ type: 'text', tag: 'dateline', html, text: t }); continue; }
@@ -219,7 +243,7 @@ async (page) => {
         firstText = false;
       }
     }
-    return { title, deckText, deckHtml, blocks };
+    return { title, deckText, deckHtml, blocks, dropped };
   });
   // 1b) Screenshot each infographic placeholder IN PLACE. The widget's artboard PNG
   //     is only the BASE art — its labels + legend are a separate HTML overlay — so
@@ -346,5 +370,12 @@ ${body}
   return 'wrote ' + OUT + ' + ' + TXT_OUT + ' | deck=' + (data.deckHtml ? 'yes' : 'no') + ' | text=' + txtBlocks
     + ' | small-caps=' + (body.match(/<small>/g) || []).length
     + ' | images=' + imgs.length + ' [' + imgs.filter(b => b.url).map(b => (b.url.match(/images\/([^?/]+)/) || [, '?'])[1]).join(', ') + ']'
-    + ' | infographics=' + data.blocks.filter(b => b.infographic && b.dataUri).length;
+    + ' | infographics=' + data.blocks.filter(b => b.infographic && b.dataUri).length
+    // What the filters removed. Every entry must be chrome (a bare Save/Share
+    // label, "Listen to this story", the "This article appeared in…" footer);
+    // body prose here means a filter misfired — fix the filter, don't ship a hole.
+    + ' | dropped=' + data.dropped.length + (data.dropped.length ? ': ' + data.dropped.map(d =>
+        d.why === 'stop'
+          ? `STOP at "${d.t}"` + (d.after > 0 ? ` (+${d.after} after: ${d.afterSample.map(x => `"${x}"`).join(', ')})` : d.after === 0 ? ' (nothing after)' : '')
+          : `skipped "${d.t}"`).join('; ') : '');
 }
