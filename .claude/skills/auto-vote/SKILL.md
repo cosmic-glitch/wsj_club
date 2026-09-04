@@ -37,6 +37,12 @@ All commands run from the repo root (`~/wsj_club`). The `.bot/` scripts must be 
 2. On the **headlines**, shortlist the **~12 most promising** against the gates above (favor Leaders/Briefing/Finance/Science/Business/International features; down-weight thin explainers and anything that looks video- or chart-led).
 3. Read those ~12 in full: `node --env-file=.bot/.env .bot/read.mjs <url1> <url2> …` → `[{url,title,words,wall,text}]`. **Decide on the real text, not the headline.** For each, judge: 3 strong vocab words? 3–5 teachable concepts? **prerequisite-load gate** (the hard veto)? articulation? teen hook? appropriateness? A piece that comes back with very few words / `wall:true` is a dud — drop it and read a replacement from the shortlist, so you finish having genuinely read ~10.
 4. Rank them, **recording for each a rating (1–10) and a one-line "why it fits" verdict** — the same opinionated read the interactive picker hands the owner (the concept/vocab payload, the hook, the domain, any reservation). These feed the Step 4 owner notification, so keep them as you go. Take the **top 7** as the candidates (`kind: "news"`, `source: "Economist"`). The ballot is **news only** — never add enrichment picks in this flow.
+5. **Persist the ranked field for the afternoon run.** `mkdir -p .bot/state` and write `.bot/state/${TODAY}-field.json` for the 7 balloted candidates, in rank order:
+   ```json
+   { "date": "<TODAY>", "generatedAt": "<ISO timestamp>",
+     "ranked": [ { "rank": 1, "rating": 8, "title": "<exact ballot title>", "articleUrl": "<url>", "source": "Economist", "why": "<the one-line verdict>" }, … ] }
+   ```
+   The `auto-publish` cron's tally (`.bot/tally.mjs`) reads it to break a tied vote and to pick when nobody voted — a missing file degrades those fallbacks to ballot order, so don't skip it. (`.bot/state/` is box-local and gitignored.)
 
 ## Step 3 — Write the ballot and open the vote
 
@@ -57,7 +63,7 @@ All commands run from the repo root (`~/wsj_club`). The `.bot/` scripts must be 
 Text the owner your **ranked assessment** — the opinionated field the interactive picker gives, **not** a bare title list and **not** the kids' pitches. Use the rating + "why it fits" verdict you recorded per candidate in Step 2. This is the owner's whole window into your judgment (there's no interactive review), so it must explain *why*, not just *what*.
 
 Compose one WhatsApp message (one line per candidate — mind the length; concise verdicts). **Every candidate line MUST end with its article link** so the owner can open any of them straight from the text:
-- **Header:** vote is open, `${TODAY}`, and the vote link.
+- **Header:** vote is open, `${TODAY}`, the vote link, and the fixed close (11:00am Pacific, when `auto-publish` tallies and publishes the winner).
 - **Top pick** (1–2 sentences + its link): source, title, rating, and the real case — the specific concept/vocab payload, the teen hook, the domain fit — why it's the strongest of the field.
 - **News, ranked** (7 lines): `N. [source] title — R/10 — <why it fits> — <url>`.
 - **Dropped:** one line on the notable cuts and why, so the owner sees the judgment calls.
@@ -68,6 +74,7 @@ Write the message to a temp file and send with `--file` (long, link-laden messag
 cat > /tmp/vote-notify.txt <<'MSG'
 🗳️ Reading Club vote is open — ${TODAY}
 Vote: https://dailyreadingclub.com
+Closes 11:00am PT — the winner auto-publishes then
 
 ⭐ TOP PICK [<source>] <title> (R/10)
 <1–2 sentence case: why it's the best fit — concepts, hook, domain>
@@ -86,7 +93,7 @@ node --env-file=.bot/.env .bot/notify.mjs --file /tmp/vote-notify.txt
 
 Keep the **ballot pitches** (Step 3) exactly as written — spoiler-free and non-steering, for the kids. Your ranking and opinion live **only** in this owner notification, never on the ballot.
 
-Then stop. Do **not** author the reading — the club votes, and the owner runs `wsj-reading` on the winner later (which closes the poll by publishing).
+Then stop. Do **not** author the reading — the club votes until **11:00am Pacific**, when the `auto-publish` cron (`run-auto-publish.sh`, the `auto-publish` skill) tallies the poll and publishes the winner, which is what closes it. The owner can still publish by hand before then with `wsj-reading`; the afternoon run then finds the day published and does nothing.
 
 ## Failure handling
 

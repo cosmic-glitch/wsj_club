@@ -1,25 +1,33 @@
-# Reading Club auto-vote bot — recovery (Hetzner-only)
+# Reading Club autopilot — recovery (Hetzner-only)
 
-`.bot/` is the box-local runtime for the `auto-vote` skill (`.claude/skills/auto-vote/`).
-The **code here is committed**; the **secrets are not**. If the Hetzner box is
-lost, restore the working state on a fresh box as follows.
+`.bot/` is the box-local runtime for the two autopilot skills, `auto-vote`
+(6am Pacific: scout → ballot → open the vote) and `auto-publish` (11am Pacific:
+tally → capture → author → ship). The **code here is committed**; the
+**secrets are not**. If the Hetzner box is lost, restore the working state on a
+fresh box as follows.
 
 Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
 
 ## Prerequisites
-- `~/wsj_club` cloned, Node ≥ 20 on PATH.
-- nanoclaw installed and running on the box (for the WhatsApp notification).
+- `~/wsj_club` cloned, Node ≥ 20 on PATH, `claude` CLI logged in (the cron runs
+  `claude -p`).
+- nanoclaw installed and running on the box (for the WhatsApp notifications).
 - **`xvfb-run`** (`apt install xvfb`). The Economist's bot challenge is only
   solved by a headed browser, so every browsing command runs under a virtual
   display. Headless silently fails: article pages come back 0 words.
+- `ffmpeg` (optional — the audio scripts trim leading silence with it and fall
+  back to the raw clip without it).
+- Enough RAM for `next build` (the publish run builds before shipping; ~2 GB
+  free — add swap on a small box).
 
 ## Steps
 
-1. **Install deps + browser** (node_modules and the Playwright binaries are not in git):
+1. **Install deps + browser.** Two package trees: the repo root (the `scripts/`
+   CLIs need `@vercel/blob`; the publish run needs `next build`) and `.bot/`
+   (its own Playwright + `pg`):
    ```bash
-   cd ~/wsj_club/.bot
-   npm install
-   npx playwright install --with-deps chromium
+   cd ~/wsj_club && npm ci
+   cd ~/wsj_club/.bot && npm install && npx playwright install --with-deps chromium
    ```
 
 2. **Recreate the secret files** (never in git):
@@ -27,42 +35,72 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
      ```
      ECON_EMAIL='...'                          # Economist login (owner has the password)
      ECON_PASS='...'
-     NANOCLAW_CHATJID='<number>@s.whatsapp.net' # owner's WhatsApp DM
+     NANOCLAW_CHATJID='<number>@s.whatsapp.net' # owner's WhatsApp DM (later: the club group's JID)
      ```
-   - `~/wsj_club/.env.local` — must contain at least `SUPABASE_DB_URL` (from Vercel)
-     and `BLOB_READ_WRITE_TOKEN`. The bot does **not** need `SUPABASE_URL`/
-     `SUPABASE_SERVICE_KEY` (it writes via `.bot/open-vote.mjs` over psql).
+   - `~/wsj_club/.env.local` — must contain `SUPABASE_DB_URL` (from Vercel),
+     `BLOB_READ_WRITE_TOKEN` (article-text upload) and `OPENAI_API_KEY`
+     (pronunciation + glossary audio). The bot does **not** need `SUPABASE_URL`/
+     `SUPABASE_SERVICE_KEY` (it talks to Postgres directly via `.bot/open-vote.mjs`
+     and `.bot/tally.mjs`).
 
-3. **Regenerate the Economist session** (creates `econ-state.json`) — note the
+3. **Git push access** (the publish run pushes to `main` = deploys). A deploy key
+   scoped to this one repo, with write access:
+   ```bash
+   ssh-keygen -t ed25519 -f ~/.ssh/wsj_club_deploy -N '' -C 'wsj_club autopilot'
+   cat ~/.ssh/wsj_club_deploy.pub      # → GitHub → repo Settings → Deploy keys → Add, "Allow write access"
+   printf 'Host github.com\n  IdentityFile ~/.ssh/wsj_club_deploy\n  IdentitiesOnly yes\n' >> ~/.ssh/config
+   cd ~/wsj_club && git remote set-url origin git@github.com:cosmic-glitch/wsj_club.git
+   git config user.name 'Reading Club autopilot' && git config user.email 'autopilot@dailyreadingclub.com'
+   ssh -T git@github.com    # "Hi cosmic-glitch/wsj_club! You've successfully authenticated…"
+   ```
+
+4. **Regenerate the Economist session** (creates `econ-state.json`) — note the
    `xvfb-run`, without which the login cannot clear the bot challenge:
    ```bash
    xvfb-run -a node --env-file=.bot/.env .bot/refresh-session.mjs
    ```
 
-4. **Smoke-test** the pieces:
+5. **Smoke-test** the pieces:
    ```bash
-   xvfb-run -a node --env-file=.bot/.env .bot/scout.mjs | head   # Economist candidates
-   xvfb-run -a node --env-file=.bot/.env .bot/read.mjs <article-url>  # must be >400 words
-   node --env-file=.bot/.env .bot/notify.mjs "recovery test"     # should hit WhatsApp
+   xvfb-run -a node --env-file=.bot/.env .bot/scout.mjs | head            # Economist candidates
+   xvfb-run -a node --env-file=.bot/.env .bot/read.mjs <article-url>      # must be >400 words
+   xvfb-run -a node --env-file=.bot/.env .bot/capture.mjs <article-url> 1999-01-01   # writes public/articles/1999-01-01.html + article-text/1999-01-01.txt — then delete both
+   node --env-file=.env.local .bot/tally.mjs                              # newest senior poll, read-only
+   node --env-file=.bot/.env .bot/notify.mjs "recovery test"              # should hit WhatsApp
    ```
 
-5. **Re-arm the cron** (opens the daily senior vote at 6am Pacific; fires at
-   13:00 & 14:00 UTC and the script's Pacific gate lets exactly one proceed):
+6. **Re-arm the crons.** Both wrappers fire at two UTC hours and gate on the
+   Pacific hour, so each runs exactly once a day year-round:
    ```
-   0 13,14 * * *  bash $HOME/wsj_club/.bot/run-auto-vote.sh >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+   0 13,14 * * *  bash $HOME/wsj_club/.bot/run-auto-vote.sh    >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+   0 18,19 * * *  bash $HOME/wsj_club/.bot/run-auto-publish.sh >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
    ```
+   (Wrap each in the healthcheck runner if one is in use — a non-zero exit is
+   the alert.) Start the publish cron with `touch ~/wsj_club/.bot/DRY_RUN` and
+   remove the file once a dry-run day looks right.
 
-## Manual run (test any date without waiting for 6am)
+## Controls (flag files in `.bot/`, box-local)
+- `PAUSE` — the publish run skips the day (the vote still opens).
+- `DRY_RUN` — the publish run does everything but ships to branch `auto/<date>`
+  (force-pushed; Vercel builds a preview; `main` untouched) and texts a DRY RUN
+  summary. Delete it to go live.
+
+## Manual runs (test any date without waiting for the cron)
 ```bash
-AUTOVOTE_FORCE=1 AUTOVOTE_DATE=YYYY-MM-DD bash ~/wsj_club/.bot/run-auto-vote.sh
+AUTOVOTE_FORCE=1   AUTOVOTE_DATE=YYYY-MM-DD   bash ~/wsj_club/.bot/run-auto-vote.sh
+AUTOPUBLISH_FORCE=1 AUTOPUBLISH_DATE=YYYY-MM-DD AUTOPUBLISH_DRY_RUN=1 bash ~/wsj_club/.bot/run-auto-publish.sh
 ```
+Logs: `.bot/logs/auto-vote-<date>.log`, `.bot/logs/auto-publish-<date>.log`.
+A failed publish run leaves its half-made files in a `git stash` (`git stash
+list`), and the tree back on a clean `main`.
 
 ## When reads come back empty
 Article pages returning 0 words (title `economist.com` or `Just a moment...`)
 is a **bot challenge, not a credentials problem** — don't touch `ECON_PASS`.
 It means the browser ran headless or with a spoofed user-agent. Check that the
 run is wrapped in `xvfb-run` and that `CONTEXT_OPTS` in `lib.mjs` still sets no
-`userAgent`; the header comment there explains why both matter.
+`userAgent`; the header comment there explains why both matter. `capture.mjs`
+refuses to write a teaser (exit 2) for the same reason.
 
 ## What each file does
 - `lib.mjs` — browser + session helpers; login check = "can I read a full article"
@@ -70,7 +108,18 @@ run is wrapped in `xvfb-run` and that `CONTEXT_OPTS` in `lib.mjs` still sets no
   `.env`. Goes headed whenever `DISPLAY` is set.
 - `scout.mjs` — sweep the Economist for candidate news articles.
 - `read.mjs` — full article text + word count.
+- `capture.mjs` — the day's article page + plain text, by running the shared
+  `scripts/capture-article.js` snippet in the saved session.
 - `refresh-session.mjs` — re-login and overwrite `econ-state.json`.
+- `published.mjs` — the do-not-repeat set (every published reading, both tracks).
 - `open-vote.mjs` — psql/`pg` upsert into `rc_polls` (box has no PostgREST keys).
-- `notify.mjs` — drop a nanoclaw IPC message → owner's WhatsApp.
-- `run-auto-vote.sh` — cron entrypoint (Pacific gate → `git pull` → `xvfb-run claude -p`).
+- `tally.mjs` — read the poll + ballots, decide the winner (ties → the morning
+  run's ratings in `state/<date>-field.json`; no ballots → its top pick).
+- `commit-message.mjs` — the commit message for an auto-published day.
+- `ship.sh` — stage the day's files, commit, rebase, push (or branch on dry
+  run), wait for the live URL. The only thing that touches git.
+- `notify.mjs` — drop a nanoclaw IPC message → the owner's WhatsApp.
+- `run-auto-vote.sh` / `run-auto-publish.sh` — the cron entrypoints (Pacific
+  gate → `git pull` → `xvfb-run claude -p` → outcome check).
+- `state/` — box-local hand-off between the two runs (`<date>-field.json`,
+  `<date>-tally.json`); `logs/` — per-day logs.

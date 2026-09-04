@@ -30,8 +30,9 @@ Live: https://dailyreadingclub.com · Repo: https://github.com/cosmic-glitch/wsj
 - `app/` — routes (thin wrappers) + API routes; `app/admin/` = Reports + Manage Students
 - `components/` — the shared page bodies and client widgets
 - `lib/` — content schema/loader (`content.ts`), auth (`auth.ts`, `users.ts`), tutor + grader prompts (`quiz-prompt.ts`, `grading-examples.ts`, `score.ts`), session helpers (`sessions.ts`, `session-io.ts`), rich text (`rich-text.tsx`), DB (`db.ts`)
-- `scripts/` — daily-flow CLIs (upload-article-text, gen-pronunciation, gen-glossary-audio, add-glossary-tags, check-glossary, open-vote, check-vote, suggestions) + admin/ops (add-user, backup-blob, backup-db, apply-migration)
-- `.claude/skills/` — the daily workflow (pickers, vote open/check, authoring for both tracks)
+- `scripts/` — daily-flow CLIs (upload-article-text, gen-pronunciation, gen-glossary-audio, add-glossary-tags, check-glossary, check-content, open-vote, check-vote, suggestions) + admin/ops (add-user, backup-blob, backup-db, apply-migration); `scripts/capture-article.js` is the ONE article-capture snippet (the MCP loads it by `filename`, the autopilot runs it via `.bot/capture.mjs`)
+- `.claude/skills/` — the daily workflow (pickers, vote open/check, authoring for both tracks) + the autopilot pair (`auto-vote`, `auto-publish`)
+- `.bot/` — the Hetzner-only autopilot runtime (code committed, secrets not): Economist session helpers (`lib`, `scout`, `read`, `capture`, `refresh-session`), `tally` + `open-vote` over the direct Postgres URL, `ship` (git), `notify` (nanoclaw), `commit-message`, the two cron wrappers; rebuild notes in `.bot/RECOVERY.md`
 
 ## Content rules (invariants for ANY session that touches content)
 
@@ -69,7 +70,7 @@ Students self-quiz on their word bank from `/words` (junior: `/junior/words`) �
 
 ## Daily vote
 
-The club can choose the day's article by voting on the home page — per-track, opt-in per day, always for today. The owner opens it with the `wsj-open-vote` skill (senior ballot: top 7 news + top 3 enrichment picks; junior: top 5 news), everyone votes via the ballot modal (one login = one vote, changeable while live), and the owner reads the tally with `wsj-check-vote` (voter names owner-side only). Publishing the winner is what closes the poll — no tag or flag marks vote-picked days (the old CLUB PICK chip was removed). No deadline on the site — the owner announces the window in the group chat. Polls live in `rc_polls` (unique per track+date), ballots in `rc_ballots` — one row per (poll, voter), the PK, upserted to change a vote.
+The club can choose the day's article by voting on the home page — per-track, opt-in per day, always for today. The owner opens it with the `wsj-open-vote` skill (senior ballot: top 7 news + top 3 enrichment picks; junior: top 5 news), everyone votes via the ballot modal (one login = one vote, changeable while live), and the owner reads the tally with `wsj-check-vote` (voter names owner-side only). Publishing the winner is what closes the poll — no tag or flag marks vote-picked days (the old CLUB PICK chip was removed). The site shows no deadline; on autopilot days the poll closes at **11:00am Pacific**, when `auto-publish` publishes the winner (the owner announces the window in the group chat). Polls live in `rc_polls` (unique per track+date), ballots in `rc_ballots` — one row per (poll, voter), the PK, upserted to change a vote.
 
 ## Article suggestions
 
@@ -83,7 +84,19 @@ Rows live in `rc_suggestions`, unique per (track, url, username) so a re-send up
 2. *(vote days)* **`wsj-open-vote`** → the club votes → **`wsj-check-vote`** → the winner feeds step 3.
 3. **Author** — `wsj-reading` (senior) / `wsj-reading-junior` (grades 5–7 calibration, ≤2 concepts). Reads the article in the browser, **proposes vocab + concepts and waits for explicit sign-off**, then: writes the content JSON, captures the self-contained HTML article page + plain article text, uploads the text to Blob, generates pronunciation clips, authors + validates the glossary (+ glossary audio), builds, commits, pushes (= deploys).
 
-Audience calibration and the exact browser-capture snippet live in the skills — the fragile snippet is single-sourced in `wsj-reading/SKILL.md`.
+**Autopilot (senior, Economist-only):** the same day also runs unattended from the Hetzner box — `auto-vote` at 6:00am Pacific (scout → rank → open the vote → text the owner the ranked field) and `auto-publish` at 11:00am Pacific (tally → capture → author → glossary/audio → build → ship → text the owner the links). Publishing by hand before 11am makes the afternoon run a no-op. See **Autopilot** below.
+
+Audience calibration lives in the skills; the article-capture snippet is single-sourced in `scripts/capture-article.js` — both authoring skills and the autopilot run that one file (never re-inline it in a skill).
+
+## Autopilot (Hetzner box)
+
+Two crons on the Hetzner VM run the senior day with no human in the loop; the owner reviews after the fact and fixes interactively (a fix is just another push). Junior and enrichment stay interactive.
+
+- **Runtime = `.bot/`** (code committed; secrets box-local — `.bot/.env` holds the Economist login + the owner's WhatsApp JID, `.env.local` holds `SUPABASE_DB_URL`, `BLOB_READ_WRITE_TOKEN`, `OPENAI_API_KEY`). The box has no PostgREST keys, so `.bot/open-vote.mjs` / `.bot/tally.mjs` talk to Postgres over the direct URL. Browsing is the box's own Playwright with a saved Economist session, **headed under `xvfb-run`** — the bot challenge never passes headless, and a spoofed UA fails it (`.bot/lib.mjs`). WSJ is IP-blocked there: Economist only.
+- **`auto-vote`** (`run-auto-vote.sh`, 6:00am Pacific): scout → rank with the picker's gates → 7-candidate news ballot → text the owner the ranked verdicts. Persists its ratings to `.bot/state/<date>-field.json` for the afternoon's tie-break.
+- **`auto-publish`** (`run-auto-publish.sh`, 11:00am Pacific — the club's fixed vote deadline): `tally.mjs` (most votes; a tie → the morning's rating; no ballots → the morning's top pick) → `capture.mjs` (the shared snippet; refuses a teaser) → author to the `wsj-reading` calibration, with a written self-review plus `scripts/check-content.mjs` (every quote verified against the captured text) and `check-glossary.mjs` as the mechanical gates in place of the sign-off → `npm run build` → `ship.sh` (stages only the day's files, rebases, refuses if `main` already has the day, pushes, waits for the live URL) → text the owner the links. The notification goes to the owner's DM for now; the group chat is a later JID change in `notify.mjs`.
+- **Controls:** `.bot/PAUSE` skips the day; `.bot/DRY_RUN` ships to branch `auto/<date>` instead of `main` (Vercel previews it) — the rollout mode; `AUTOPUBLISH_FORCE=1 AUTOPUBLISH_DATE=… bash .bot/run-auto-publish.sh` for a supervised run. Publishing by hand first always wins: both runs bail on an existing `content/<date>.json`.
+- **Alerting contract:** the skills' failure paths are silent (no WhatsApp). Each wrapper verifies the *outcome* (vote live / reading on `origin/main` and serving) and exits non-zero otherwise — that exit is what the cron's healthcheck pages on. A failed publish run's files go to a `git stash` on the box, never to `main`.
 
 ## Deploy & env
 
