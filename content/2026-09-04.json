@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-04",
+  "title": "The moral panic over data centres is foolish",
+  "articleUrl": "https://www.economist.com/leaders/2026/09/03/the-moral-panic-over-data-centres-is-foolish",
+  "articlePageUrl": "/articles/2026-09-04.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "illusory",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ih-LOO-suh-ree",
+      "articleQuote": "Set against the illusory costs of data centres are the tangible benefits.",
+      "meaning": "Something **illusory** looks real but isn't — it's based on an illusion, and it shrinks or vanishes when you examine it closely. The writer calls the costs of data centres illusory because the scary claims about water and electricity loom large in voters' minds yet don't survive contact with the actual numbers, while the benefits — tax revenue, growth — can be counted.",
+      "examples": [
+        "The lead felt safe at halftime, but it proved illusory once the other team started pressing.",
+        "The game's 'limited-time offer' created an illusory sense of scarcity — the same deal was back a week later."
+      ]
+    },
+    {
+      "word": "unilaterally",
+      "partOfSpeech": "adverb",
+      "pronunciation": "yoo-nih-LAT-er-uh-lee",
+      "articleQuote": "America unilaterally making it harder to build AI infrastructure will simply hand the advantage to China, whose authoritarian leaders can put data centres wherever they choose.",
+      "meaning": "To act **unilaterally** is to act one-sidedly — going ahead on your own without waiting for anyone else to agree or join in (*uni-* means one, *latus* means side). The article's warning turns on the word: if America alone restricts data-centre building while China doesn't, America pays the full cost of the restriction and gets none of the benefit, because the building simply happens somewhere else.",
+      "examples": [
+        "You can't unilaterally change the group project's topic the night before it's due.",
+        "My sister unilaterally declared the front seat hers for the entire road trip."
+      ]
+    },
+    {
+      "word": "numerate",
+      "partOfSpeech": "adjective",
+      "pronunciation": "NOO-mer-ut",
+      "articleQuote": "Concerns over electricity use are more numerate: data centres really do need a striking amount of power.",
+      "meaning": "**Numerate** means comfortable with numbers — able to do rough arithmetic and sense whether a figure could possibly be true. It's the number-sense counterpart of *literate*. The writer is being pointed with it: worries about electricity at least rest on real quantities, unlike the water panic, which the article says was built on grossly inaccurate calculations.",
+      "examples": [
+        "A numerate reader sees 'this app uses a billion gallons of water a day' and immediately asks: compared with what?",
+        "Being numerate saved me money at the fair — I worked out that the 'deal' wristband actually cost more per ride."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Price signals",
+      "articleQuote": "But the answer to competing demands on resources—whether water, electricity or something else—is to price them according to their scarcity, thereby encouraging more provision and higher living standards over time.",
+      "meaning": "Homes, farms, factories and now data centres all want the same water and electricity — so who should get how much? One answer is for officials to decide: cap this, ban that, ration the rest. The economics idea this article runs on is the other answer: **price signals**. When something is scarce, let its price rise. A higher price does two jobs at once. It pushes every user to economize — a data centre paying the true price of water has a money reason to recycle it, which many now do — and it makes supplying more of the thing profitable, so companies build new plants, wells and reservoirs. That is what \"encouraging more provision\" means: the higher price is what pulls new supply into existence.\n\nRationing does neither job. If a committee simply assigns who may use water, nobody earns anything by producing more of it, so the shortage stays — and the fight moves into politics, where the loudest group wins. You've seen the price mechanism work with concert tickets: when a tour sells out, prices jump and promoters add dates, while a free lottery leaves the same number of seats and a mile-long line. Whenever you see a shortage or a fight over a resource, ask what the price is doing — if the price isn't allowed to move, expect queues, rationing and arguments instead of new supply."
+    },
+    {
+      "name": "Electric utilities",
+      "articleQuote": "In fact, by increasing demand they are spreading the fixed costs of infrastructure among more kilowatt-hours sold.",
+      "meaning": "The strangest claim in this article is that giant new electricity users have been linked to *lower* bills. To see how that can be true, you need to know what a **utility** is. Electricity reaches your house from a utility — the company that builds the power plants, strings the wires and sends your family a bill. Because running five competing sets of wires down every street would be absurd, most homes can buy only from the one utility serving their area — so governments regulate utilities, and a public commission must approve the rates they charge. Your bill is measured in **kilowatt-hours**; one kilowatt-hour is roughly a microwave running for an hour.\n\nThe key fact about a utility's money: most of its costs are the infrastructure itself — plants, poles, transformers, transmission lines — and that costs nearly the same whether customers use a little electricity or a lot. Rates are set so that all the kilowatt-hours sold, added together, cover those costs. When a data centre arrives and buys enormous amounts of power, the same infrastructure bill is split across far more kilowatt-hours, so each one can carry a smaller share — which is how some utilities have credited data centres with reductions in bills. (It can cut the other way: if a utility must build lots of new plants for one customer, everyone may share that cost too.) Whenever a big new user joins an expensive shared network — a power grid, a subway system, an internet provider — ask whether it is mostly adding new costs or mostly helping pay off the ones everyone already shares."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, roughly how much water does a mid-sized data centre use?",
+      "options": [
+        "About as much as a small city",
+        "About as much as two golf courses",
+        "More than all of Netflix's streaming combined",
+        "Almost none — data centres don't use water"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says a mid-sized data centre uses roughly as much water as two golf courses — and considerably less if it recycles its water."
+    },
+    {
+      "question": "The article calls the costs of data centres \"illusory.\" What does that mean?",
+      "options": [
+        "Enormous and growing every year",
+        "Hidden inside everyone's electricity bills",
+        "Seeming real but not actually there when examined",
+        "Impossible for economists to calculate"
+      ],
+      "answerIndex": 2,
+      "explanation": "Illusory means based on an illusion — the costs loom large in the panic but don't hold up against the real numbers, unlike the tangible benefits."
+    },
+    {
+      "question": "How does the article say competing demands for water and electricity should be settled?",
+      "options": [
+        "Ban the heaviest users until supplies recover",
+        "Let officials decide which uses matter most",
+        "Price the resources according to their scarcity",
+        "Require data centres to recycle all their water"
+      ],
+      "answerIndex": 2,
+      "explanation": "The leader's core argument is price signals: a scarcity price makes users economize and makes new supply profitable, unlike rationing by \"the arbitrary judgment of scolds.\""
+    },
+    {
+      "question": "Why, according to the article, might data centres actually reduce electricity bills?",
+      "options": [
+        "They generate their own power and sell the surplus",
+        "Their demand spreads the grid's fixed costs across more kilowatt-hours sold",
+        "They run only at night, when power is cheapest",
+        "The government subsidizes electricity in counties that host them"
+      ],
+      "answerIndex": 1,
+      "explanation": "A utility's costs are mostly fixed infrastructure, so a huge new customer splits the same bill across more kilowatt-hours — several utilities have linked data centres to lower bills."
+    },
+    {
+      "question": "What does the article warn would happen if America unilaterally made it harder to build AI infrastructure?",
+      "options": [
+        "Electricity prices would spike nationwide",
+        "The advantage would be handed to China",
+        "AI research would become safer for humanity",
+        "Tax revenues in data-centre counties would rise"
+      ],
+      "answerIndex": 1,
+      "explanation": "Because unilateral means one-sided, America restricting itself while China builds freely just moves the data centres — and the economic and military edge — to China."
+    }
+  ]
+}

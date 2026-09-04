@@ -1,0 +1,366 @@
+[
+  {
+    "k": "illusory",
+    "t": "illusory",
+    "kind": "vocab",
+    "pron": "ih-LOO-suh-ree",
+    "forms": [
+      "illusory"
+    ],
+    "text": "Based on an illusion — seeming real but shrinking or vanishing when you look closely. The writer calls the costs of data centres illusory because the scary water and electricity claims don't survive contact with the real numbers, while the benefits can be counted.",
+    "audio": true
+  },
+  {
+    "k": "unilaterally",
+    "t": "unilaterally",
+    "kind": "vocab",
+    "pron": "yoo-nih-LAT-er-uh-lee",
+    "forms": [
+      "unilaterally"
+    ],
+    "text": "One-sidedly — acting alone without waiting for others to agree or join in (uni- means one, latus means side). If America alone restricts data centres while China doesn't, only America pays the price; the building simply happens elsewhere.",
+    "audio": true
+  },
+  {
+    "k": "numerate",
+    "t": "numerate",
+    "kind": "vocab",
+    "pron": "NOO-mer-ut",
+    "forms": [
+      "numerate"
+    ],
+    "text": "Comfortable with numbers — able to do rough arithmetic and judge whether a figure could possibly be true; the number-sense counterpart of literate. The writer means the electricity worries at least rest on real quantities, unlike the water panic built on wildly wrong calculations.",
+    "audio": true
+  },
+  {
+    "k": "moral-panic",
+    "t": "moral panic",
+    "kind": "name",
+    "forms": [
+      "moral panic"
+    ],
+    "text": "A sociologist's term for a wave of exaggerated public fear that some new thing — comic books, video games, now data centres — is destroying society. The label itself carries the article's argument: the fury is out of all proportion to the real harm.",
+    "audio": true
+  },
+  {
+    "k": "capital",
+    "t": "capital",
+    "kind": "word",
+    "forms": [
+      "capital"
+    ],
+    "text": "Here it means money available to invest — the funds AI companies spend on building — not a capital city or an uppercase letter. Financial writing uses the word this way constantly.",
+    "audio": true
+  },
+  {
+    "k": "constraint",
+    "t": "constraint",
+    "kind": "word",
+    "forms": [
+      "constraint"
+    ],
+    "text": "A limit — something that holds back what you can do. The opening point is that money is not the only limit on AI companies' building plans; angry politics is a limit too.",
+    "audio": true
+  },
+  {
+    "k": "moratoriums",
+    "t": "moratorium",
+    "kind": "word",
+    "forms": [
+      "moratoriums"
+    ],
+    "text": "A moratorium is an official pause — a temporary ban on an activity until further notice. Towns and states are ordering data-centre construction to stop, a step between a mere restriction and a permanent ban.",
+    "audio": true
+  },
+  {
+    "k": "guzzle",
+    "t": "guzzle",
+    "kind": "word",
+    "forms": [
+      "guzzle"
+    ],
+    "text": "To gulp something down greedily and fast, like chugging a sports drink. Applied to data centres it paints them as gulping vast amounts of water — the vivid image the article calls a myth.",
+    "audio": true
+  },
+  {
+    "k": "agastya",
+    "t": "Agastya",
+    "kind": "name",
+    "forms": [
+      "Agastya"
+    ],
+    "text": "A legendary sage in Hindu mythology who in one famous story drank the entire ocean to expose demons hiding in it. Saying data centres guzzle more water than Agastya is a joking way of stating the wildly exaggerated claim.",
+    "audio": true
+  },
+  {
+    "k": "grossly",
+    "t": "grossly",
+    "kind": "word",
+    "forms": [
+      "grossly"
+    ],
+    "text": "Here it means extremely or flagrantly — grossly inaccurate calculations are wrong by a huge margin — not 'disgustingly.' The word usually signals an error or offence far beyond the acceptable.",
+    "audio": true
+  },
+  {
+    "k": "hair-shirt",
+    "t": "hair-shirt",
+    "kind": "word",
+    "forms": [
+      "hair-shirt"
+    ],
+    "text": "A hair shirt was a scratchy garment that religious penitents wore on purpose to suffer. Calling someone a hair-shirt environmentalist accuses them of treating self-denial as a virtue in itself — wanting everyone to give things up whether or not it actually helps.",
+    "audio": true
+  },
+  {
+    "k": "gemini",
+    "t": "Gemini",
+    "kind": "name",
+    "forms": [
+      "Gemini"
+    ],
+    "text": "Google's AI chatbot and family of AI models, its rival to ChatGPT. Google's own estimate — about five drops of water for a typical typed question — is the article's evidence that individual AI queries use trivial amounts.",
+    "audio": true
+  },
+  {
+    "k": "striking",
+    "t": "striking",
+    "kind": "word",
+    "forms": [
+      "striking"
+    ],
+    "text": "Remarkable, attention-grabbing — something that stands out — nothing to do with hitting. A striking amount of power is the article conceding that the electricity numbers really are big.",
+    "audio": true
+  },
+  {
+    "k": "utilities",
+    "t": "utilities",
+    "kind": "word",
+    "forms": [
+      "utilities"
+    ],
+    "text": "Companies that deliver essential services — electricity, gas, water — over shared networks of wires and pipes; here, electric power companies. Several large ones have said data-centre demand is helping lower customers' bills.",
+    "audio": true
+  },
+  {
+    "k": "generation",
+    "t": "generation",
+    "kind": "word",
+    "forms": [
+      "generation"
+    ],
+    "text": "In the electricity business, generation means producing power — not an age group. New sources of generation are new power plants, solar farms and wind farms.",
+    "audio": true
+  },
+  {
+    "k": "ration",
+    "t": "ration",
+    "kind": "word",
+    "forms": [
+      "ration"
+    ],
+    "text": "To limit how much of something each person may have, with the amounts set by an authority rather than by price — like wartime ration books for sugar and fuel. The article argues that officials rationing water and power is the wrong answer to scarcity.",
+    "audio": true
+  },
+  {
+    "k": "scolds",
+    "t": "scold",
+    "kind": "word",
+    "forms": [
+      "scolds"
+    ],
+    "text": "As a noun, a scold is a person who constantly criticizes and lectures others about how they live. The article's jab: resources shouldn't be handed out according to the opinions of professional finger-waggers.",
+    "audio": true
+  },
+  {
+    "k": "provision",
+    "t": "provision",
+    "kind": "word",
+    "forms": [
+      "provision"
+    ],
+    "text": "Here it means the supplying of something — more provision of water or power means more of it gets produced and delivered. Not the other common sense, a clause in a contract or law.",
+    "audio": true
+  },
+  {
+    "k": "planning-judgements",
+    "t": "planning judgements",
+    "kind": "name",
+    "forms": [
+      "planning judgements"
+    ],
+    "text": "In British usage, 'planning' is the government process of deciding what may be built where — what Americans call zoning. A planning judgement is officials weighing a proposed building's local effects, such as noise, case by case.",
+    "audio": true
+  },
+  {
+    "k": "grid",
+    "t": "the grid",
+    "kind": "word",
+    "forms": [
+      "grid"
+    ],
+    "text": "The electricity grid — the interconnected network of power plants, transmission lines and transformers that moves power across a region. Data centres have to sit near it to draw the huge amounts of electricity they need.",
+    "audio": true
+  },
+  {
+    "k": "bitcoin-mines",
+    "t": "Bitcoin mines",
+    "kind": "name",
+    "forms": [
+      "Bitcoin mines"
+    ],
+    "text": "Warehouses of computers racing through calculations that earn new Bitcoin, a digital currency — typically older, louder operations than modern AI data centres. The article says many viral 'data centre noise' videos actually filmed these.",
+    "audio": true
+  },
+  {
+    "k": "state-of-the-art",
+    "t": "state-of-the-art",
+    "kind": "phrase",
+    "forms": [
+      "state-of-the-art"
+    ],
+    "text": "Using the most advanced techniques and equipment that currently exist. A standard set phrase: a state-of-the-art facility is the newest and best of its kind.",
+    "audio": true
+  },
+  {
+    "k": "hyperscaler",
+    "t": "hyperscaler",
+    "kind": "name",
+    "forms": [
+      "hyperscaler"
+    ],
+    "text": "Industry term for the giant cloud-computing companies — Amazon, Microsoft, Google — that build data centres at enormous ('hyper') scale. Their newest facilities are the quiet, efficient kind the article contrasts with Bitcoin mines.",
+    "audio": true
+  },
+  {
+    "k": "tangible",
+    "t": "tangible",
+    "kind": "word",
+    "forms": [
+      "tangible"
+    ],
+    "text": "Real and concrete — literally touchable — the opposite of illusory. The benefits of data centres, like tax money funding schools, can be seen and measured.",
+    "audio": true
+  },
+  {
+    "k": "prosaically",
+    "t": "prosaically",
+    "kind": "word",
+    "forms": [
+      "prosaically"
+    ],
+    "text": "In a plain, ordinary, down-to-earth way — prose as opposed to poetry. After the grand talk of economic growth and national defence, the article turns 'more prosaically' to something humbler and very concrete: tax bills.",
+    "audio": true
+  },
+  {
+    "k": "loudoun-county",
+    "t": "Loudoun County",
+    "kind": "name",
+    "forms": [
+      "Loudoun County"
+    ],
+    "text": "A county in northern Virginia, just outside Washington, DC, that hosts the world's largest cluster of data centres — more than 250. The tax on the computer equipment inside them is expected to supply 40% of the county's revenue next year.",
+    "audio": true
+  },
+  {
+    "k": "windfall",
+    "t": "windfall",
+    "kind": "word",
+    "forms": [
+      "windfall"
+    ],
+    "text": "An unexpected pile of money that arrives without extra work — originally fruit blown down by the wind, free for the picking. The data-centre tax haul let Loudoun County cut residents' property taxes by about 30%.",
+    "audio": true
+  },
+  {
+    "k": "property-taxes",
+    "t": "property taxes",
+    "kind": "name",
+    "forms": [
+      "property taxes"
+    ],
+    "text": "Taxes local governments charge on what you own — mainly homes and land, and in some places business equipment — usually a small percentage of the value each year. They are the main way American counties fund schools, libraries and police.",
+    "audio": true
+  },
+  {
+    "k": "going-rogue",
+    "t": "going rogue",
+    "kind": "phrase",
+    "forms": [
+      "going rogue"
+    ],
+    "text": "Breaking loose from control and acting on its own, against the wishes of whoever is supposed to be in charge. The serious AI worry the article grants is the technology being misused — or slipping out of human control entirely.",
+    "audio": true
+  },
+  {
+    "k": "uncle-sam",
+    "t": "Uncle Sam",
+    "kind": "name",
+    "forms": [
+      "Uncle Sam"
+    ],
+    "text": "The traditional personification of the United States government — the top-hatted, finger-pointing figure from old recruiting posters. Leaving Uncle Sam without wartime industries means leaving the US government without them.",
+    "audio": true
+  },
+  {
+    "k": "hollowed-out",
+    "t": "hollowed out",
+    "kind": "phrase",
+    "forms": [
+      "hollowed out"
+    ],
+    "text": "Emptied of its substance while the outer shell remains. Saying America's physical economy was hollowed out means its factories and heavy industry drained away — the towns and company names remained, the making of things didn't.",
+    "audio": true
+  },
+  {
+    "k": "populists",
+    "t": "populists",
+    "kind": "word",
+    "forms": [
+      "populists"
+    ],
+    "text": "Politicians and movements that claim to champion ordinary people against out-of-touch elites — in America today, especially the nationalist right. The article notes the irony: the same populists who mourned lost industry now oppose building the newest kind.",
+    "audio": true
+  },
+  {
+    "k": "authoritarian",
+    "t": "authoritarian",
+    "kind": "word",
+    "forms": [
+      "authoritarian"
+    ],
+    "text": "Demanding obedience and concentrating power in the rulers, with little room for elections or dissent. China's leaders can place data centres anywhere precisely because no local vote can stop them.",
+    "audio": true
+  },
+  {
+    "k": "midterm-elections",
+    "t": "midterm elections",
+    "kind": "name",
+    "forms": [
+      "midterm elections"
+    ],
+    "text": "US congressional elections held in the middle of a president's four-year term — every House seat and a third of the Senate. They're read as a nationwide verdict on the party in power, which is why a hot local issue like data centres matters in them.",
+    "audio": true
+  },
+  {
+    "k": "data-centres",
+    "t": "data centre",
+    "kind": "name",
+    "forms": [
+      "data centres",
+      "data centre"
+    ],
+    "text": "Warehouse-sized buildings packed with thousands of computer servers — the physical machinery behind 'the cloud' and AI, providing the computing power to train and run models. Every chatbot answer is computed inside one.",
+    "audio": true
+  },
+  {
+    "k": "kilowatt-hours",
+    "t": "kilowatt-hours",
+    "kind": "name",
+    "forms": [
+      "kilowatt-hours"
+    ],
+    "text": "The unit on an electricity bill: one kilowatt-hour is 1,000 watts flowing for one hour — roughly a microwave running for an hour. Utilities spread their fixed infrastructure costs across all the kilowatt-hours they sell.",
+    "audio": true
+  }
+]
