@@ -72,12 +72,15 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
 6. **Re-arm the crons.** Both wrappers fire at two UTC hours and gate on the
    Pacific hour, so each runs exactly once a day year-round:
    ```
-   0 13,14 * * *  bash $HOME/wsj_club/.bot/run-auto-vote.sh    >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
-   0 18,19 * * *  bash $HOME/wsj_club/.bot/run-auto-publish.sh >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+   0 13,14 * * *  $HOME/bin/hc-run wsjclub-auto-vote    bash $HOME/wsj_club/.bot/run-auto-vote.sh    >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+   0 18,19 * * *  $HOME/bin/hc-run wsjclub-auto-publish bash $HOME/wsj_club/.bot/run-auto-publish.sh >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
    ```
-   (Wrap each in the healthcheck runner if one is in use — a non-zero exit is
-   the alert.) Start the publish cron with `touch ~/wsj_club/.bot/DRY_RUN` and
-   remove the file once a dry-run day looks right.
+   `hc-run` (in `~/bin`, from the foliotracker setup) pings healthchecks.io with
+   the wrapper's exit code — a non-zero exit is the alert. The checks are
+   `wsjclub-auto-vote` and `wsjclub-auto-publish` (period 1 day); a missing
+   check can be auto-created by pinging its slug once with `?create=1`. Start
+   the publish cron with `touch ~/wsj_club/.bot/DRY_RUN` and remove the file
+   once a dry-run day looks right.
 
 ## Controls (flag files in `.bot/`, box-local)
 - `PAUSE` — the publish run skips the day (the vote still opens).
