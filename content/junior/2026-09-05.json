@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-05",
+  "title": "In praise of Scandinavia's risky and dirty playgrounds",
+  "articleUrl": "https://www.economist.com/europe/2026/07/16/in-praise-of-scandinavias-risky-and-dirty-playgrounds",
+  "articlePageUrl": "/articles/junior/2026-09-05.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "intrepid",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-TREP-id",
+      "articleQuote": "Tree branches that might tempt intrepid youths have been cut down.",
+      "meaning": "Intrepid means fearless and eager for adventure, the kind of person who keeps climbing when everyone else stops. It comes from Latin words meaning not alarmed. In the article the intrepid youths are the kids who would climb a tree branch just because it is there, which is exactly why cautious park managers cut the branches down.",
+      "examples": [
+        "The intrepid campers hiked to the top of the ridge in the rain while the rest of us stayed in the tents.",
+        "Our intrepid goalkeeper dove straight into the mud to block the penalty."
+      ]
+    },
+    {
+      "word": "fret",
+      "partOfSpeech": "verb",
+      "pronunciation": "FRET",
+      "articleQuote": "Adult chaperones may fret about lurking hazards, but their peace of mind is secondary.",
+      "meaning": "To fret is to worry about something over and over, often out loud, usually about things that might go wrong. It is quieter than panic: a fretting person paces, checks, and keeps asking if you are sure. The grown-ups in the article fret about hidden dangers on the playground, and the designer says their worry matters less than the kids learning to watch their own step. The article also calls city officials fretful, which means full of that kind of worry.",
+      "examples": [
+        "My mom fretted about the weather all week before our camping trip.",
+        "Stop fretting about the test. You studied more than anyone in the class."
+      ]
+    },
+    {
+      "word": "harried",
+      "partOfSpeech": "adjective",
+      "pronunciation": "HAIR-eed",
+      "articleQuote": "The second is the free coffee on offer for harried parents.",
+      "meaning": "Harried means worn out from being rushed and pestered by too many demands at once. It comes from the old verb harry, to keep attacking or bothering someone, so a harried person feels chased. The playground hands out free coffee to harried parents because a day of chasing small children leaves grown-ups frazzled.",
+      "examples": [
+        "By the end of the school play, the harried drama teacher had lost her clipboard, her voice and one shoe.",
+        "The harried waiter was juggling six tables and still forgot our drinks."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Litigation",
+      "articleQuote": "Across Europe, but unlike America, there is no culture of litigation in case risky play results in a broken arm.",
+      "meaning": "A kid falls off a climbing frame in an American park and breaks an arm. What happens next? Quite often, the family hires a lawyer and sues the city that owns the playground. Lawyers call that **litigation**: taking a disagreement to court and asking a judge to settle it, usually by ordering one side to pay the other money. The person who sues is the plaintiff, the one being sued is the defendant, and the money is called damages.\n\nNow think about who builds a playground. It is normally the city government, and the officials there know that losing one lawsuit can cost the city a huge amount of money. So the safe choice for them is the dull one: rubber flooring, short slides, no branches to climb. Nobody sues over a slide that was too tame. The article says this fear of lawsuits is a big reason playgrounds from Tokyo to Toronto got boring.\n\nDanish officials can leave the trees standing because Danish families almost never sue over a broken arm from play. Same fall, same cast, different rules about who pays. So when you see something that has been made extra safe and extra boring, ask who would get sued if it went wrong. The answer usually explains the design."
+    },
+    {
+      "name": "Universal health care",
+      "articleQuote": "Free health care means a broken bone is a nuisance, not a financial burden.",
+      "meaning": "A broken arm needs an X-ray, a doctor to set the bone, and a cast. Somebody has to pay for all of that, and the article's line only makes sense once you know that countries answer the question of who pays in very different ways.\n\nIn Denmark, Norway and Sweden the government pays the hospitals and doctors out of taxes, so a family walks out of the emergency room with a cast and no bill. Governments and economists call this **universal health care**: universal because it covers everyone, whether or not they have a job or savings. The care is not really free. Everyone pays a bit every year through taxes, and that money covers whoever happens to get hurt.\n\nThe United States has no system that covers everyone. Most families get health insurance through a parent's job, and even with insurance a broken arm can leave a bill of hundreds or thousands of dollars. That changes how parents feel about risk. If a fall from a tree could cost your family a month's rent, you cut the tree down.\n\nSo the same broken bone is a different-sized event in different countries. In Copenhagen it is six annoying weeks in a cast. In an American suburb it can be a money problem on top. Whenever people in one country take a risk that people in another avoid, check who pays the doctor when things go wrong."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The playground at Valbyparken in Copenhagen was built on what?",
+      "options": [
+        "A former royal hunting ground",
+        "A filled-in part of the harbour",
+        "An old rubbish tip",
+        "The grounds of a closed school"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says the sprawling park sits on what was once a rubbish tip for the Danish capital, the first of a visitor's three surprises."
+    },
+    {
+      "question": "Helle Nebelong, who designed Valbyparken, says the risks there are on purpose because...",
+      "options": [
+        "Parents should watch their children more closely",
+        "Children must learn to take responsibility for their own safety",
+        "Staff remove every hazard before the park opens each day",
+        "Minor injuries teach children to stay away from playgrounds"
+      ],
+      "answerIndex": 1,
+      "explanation": "She says it is children who need to be aware of every step they take, and that they must take responsibility for their own safety."
+    },
+    {
+      "question": "The article says tree branches that might tempt intrepid youths have been cut down. An intrepid kid is one who is...",
+      "options": [
+        "Easily tired",
+        "Careful to follow every rule",
+        "Often sick",
+        "Fearless and up for adventure"
+      ],
+      "answerIndex": 3,
+      "explanation": "Intrepid means fearless and adventurous, so the branches were removed precisely because bold kids would climb them."
+    },
+    {
+      "question": "According to the article, why do many city officials prefer tame, cookie-cutter playground equipment picked from a catalogue?",
+      "options": [
+        "They fear lawsuits and criticism from health-and-safety bureaucrats",
+        "Children voted for the safer designs",
+        "Trees are too expensive to plant in cities",
+        "Rubber flooring lasts longer than dirt"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says the cookie-cutter approach delights fretful municipal officials who fear lawsuits and criticism from health-and-safety bureaucrats."
+    },
+    {
+      "question": "The article says that in Scandinavia a broken bone is a nuisance, not a financial burden. What makes that true?",
+      "options": [
+        "Children there almost never break bones",
+        "Playgrounds pay for any injuries that happen on them",
+        "Health care is paid for through taxes, so families get no big hospital bill",
+        "Scandinavian parents are richer than American ones"
+      ],
+      "answerIndex": 2,
+      "explanation": "Free health care, paid for out of taxes, means a family in Scandinavia is not hit with a hospital bill when a child breaks a bone."
+    }
+  ]
+}

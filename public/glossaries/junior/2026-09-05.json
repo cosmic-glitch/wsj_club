@@ -1,0 +1,649 @@
+[
+  {
+    "k": "intrepid",
+    "t": "intrepid",
+    "kind": "vocab",
+    "pron": "in-TREP-id",
+    "forms": [
+      "intrepid"
+    ],
+    "text": "Intrepid means fearless and eager for adventure, the kind of person who keeps climbing when everyone else stops. It comes from Latin words meaning not alarmed. The intrepid youths here are the kids who would climb a branch just because it is there, which is why cautious park managers cut the branches down.",
+    "audio": true
+  },
+  {
+    "k": "fret",
+    "t": "fret",
+    "kind": "vocab",
+    "pron": "FRET",
+    "forms": [
+      "fret",
+      "fretful"
+    ],
+    "text": "To fret is to worry about something over and over, often out loud, about things that might go wrong. It is quieter than panic: a fretting person paces, checks and keeps asking if you are sure. Fretful means full of that kind of worry. The chaperones fret about hidden dangers; the fretful officials worry about lawsuits.",
+    "audio": true
+  },
+  {
+    "k": "harried",
+    "t": "harried",
+    "kind": "vocab",
+    "pron": "HAIR-eed",
+    "forms": [
+      "harried"
+    ],
+    "text": "Harried means worn out from being rushed and pestered by too many demands at once. It comes from the old verb harry, to keep attacking or bothering someone, so a harried person feels chased. The free coffee is for parents frazzled by a day of chasing small children.",
+    "audio": true
+  },
+  {
+    "k": "rubbish-tip",
+    "t": "rubbish tip",
+    "kind": "word",
+    "forms": [
+      "rubbish tip"
+    ],
+    "text": "Rubbish is the British word for garbage, and a tip is a dump where a town piles it up. Valbyparken was built on top of Copenhagen's old dump, which is the first of the visitor's three surprises.",
+    "audio": true
+  },
+  {
+    "k": "sprogs",
+    "t": "sprog",
+    "kind": "word",
+    "forms": [
+      "sprogs"
+    ],
+    "text": "Sprog is British slang for a child, a bit like kid or rugrat. It is affectionate and slightly cheeky, which fits the teasing tone of the whole column.",
+    "audio": true
+  },
+  {
+    "k": "whittle",
+    "t": "whittle",
+    "kind": "word",
+    "forms": [
+      "whittle"
+    ],
+    "text": "To whittle is to carve wood by shaving off thin slices with a knife. It is slow, careful work, and it is exactly what the children do with the knives they are handed.",
+    "audio": true
+  },
+  {
+    "k": "dispensing",
+    "t": "dispensing",
+    "kind": "word",
+    "forms": [
+      "knife-dispensing"
+    ],
+    "text": "To dispense something is to hand it out, the way a vending machine dispenses snacks or a pharmacy dispenses medicine. A knife-dispensing strategy is the writer's mock-serious name for staff handing knives to children.",
+    "audio": true
+  },
+  {
+    "k": "oversight",
+    "t": "oversight",
+    "kind": "word",
+    "forms": [
+      "oversight"
+    ],
+    "text": "An oversight is a mistake made by not noticing something, not by doing it on purpose. Some people might assume the knives are an oversight, a careless slip, and the article answers that they are the whole point. Confusingly, oversight can also mean supervision, watching over something, but that is not the meaning here.",
+    "audio": true
+  },
+  {
+    "k": "feature-not-bug",
+    "t": "a feature, not a bug",
+    "kind": "phrase",
+    "forms": [
+      "a feature, not a bug"
+    ],
+    "text": "This saying comes from computer programming, where a bug is a mistake in the code and a feature is something built in on purpose. Saying the risk is a feature, not a bug means the danger in the playground was designed in deliberately, not left there by accident.",
+    "audio": true
+  },
+  {
+    "k": "litany",
+    "t": "litany",
+    "kind": "word",
+    "forms": [
+      "litany"
+    ],
+    "text": "A litany is a long list of things, usually recited in a tired or complaining tone. Originally it meant a long church prayer with many repeated lines. The playground offers a litany of ways to get hurt: trees, brambles, tricycles, a pond, trails.",
+    "audio": true
+  },
+  {
+    "k": "chaperones",
+    "t": "chaperone",
+    "kind": "word",
+    "forms": [
+      "chaperones"
+    ],
+    "text": "A chaperone is an adult who goes along with children or teenagers to keep an eye on them, on a field trip or at a dance. The adult chaperones here are the parents and minders standing at the edge of the playground.",
+    "audio": true
+  },
+  {
+    "k": "lurking",
+    "t": "lurking",
+    "kind": "word",
+    "forms": [
+      "lurking"
+    ],
+    "text": "To lurk is to wait hidden, ready to cause trouble. A lurking hazard is a danger you do not see until you are on top of it, like a root across a trail.",
+    "audio": true
+  },
+  {
+    "k": "peace-of-mind",
+    "t": "peace of mind",
+    "kind": "phrase",
+    "forms": [
+      "peace of mind"
+    ],
+    "text": "Peace of mind is the calm feeling of not having to worry. The article says the parents' peace of mind is secondary, meaning the children's learning comes first even if the grown-ups are nervous.",
+    "audio": true
+  },
+  {
+    "k": "secondary",
+    "t": "secondary",
+    "kind": "word",
+    "forms": [
+      "secondary"
+    ],
+    "text": "Secondary means less important, coming second. It has nothing to do with secondary school here. The parents' comfort is secondary: it counts, but not as much as the kids' experience.",
+    "audio": true
+  },
+  {
+    "k": "turn-of-the-century",
+    "t": "turn of the century",
+    "kind": "phrase",
+    "forms": [
+      "turn of the century"
+    ],
+    "text": "The turn of the century is the time when one century ends and the next begins. Here it means around the year 2000, when Helle Nebelong designed the playground.",
+    "audio": true
+  },
+  {
+    "k": "cadre",
+    "t": "cadre",
+    "kind": "word",
+    "forms": [
+      "cadre"
+    ],
+    "text": "A cadre is a small, trained group of people who form the core of an organisation. The young staff at Valbyparken are a cadre: a tight team with one shared job, which is to get play going.",
+    "audio": true
+  },
+  {
+    "k": "catalyse",
+    "t": "catalyse",
+    "kind": "word",
+    "forms": [
+      "catalyse"
+    ],
+    "text": "To catalyse is to make something happen faster or get it started. In chemistry a catalyst is a substance that speeds up a reaction without being used up. The staff catalyse play: they spark it and then step back.",
+    "audio": true
+  },
+  {
+    "k": "stymie",
+    "t": "stymie",
+    "kind": "word",
+    "forms": [
+      "stymie"
+    ],
+    "text": "To stymie is to block or get in the way of something so it cannot go forward. It began as a golf word for a ball sitting in the path to the hole. The staff are there to help play along, not to stymie it.",
+    "audio": true
+  },
+  {
+    "k": "utmost",
+    "t": "utmost",
+    "kind": "word",
+    "forms": [
+      "utmost"
+    ],
+    "text": "Utmost means the greatest amount possible. Doing your utmost is trying as hard as you can. Playgrounds have done their utmost to remove risk, that is, tried as hard as they possibly could.",
+    "audio": true
+  },
+  {
+    "k": "bubble-wrap",
+    "t": "bubble-wrap",
+    "kind": "word",
+    "forms": [
+      "bubble-wrap"
+    ],
+    "text": "Bubble wrap is the plastic sheet full of little air pockets used to protect fragile things in a package. Saying childhood is wrapped in bubble-wrap means adults protect kids as if they would break at the slightest knock.",
+    "audio": true
+  },
+  {
+    "k": "frequented",
+    "t": "frequented",
+    "kind": "word",
+    "forms": [
+      "frequented"
+    ],
+    "text": "To frequent a place is to go there often. It is a verb here, not the adjective frequent. A play area you frequented as a child is one you went to all the time.",
+    "audio": true
+  },
+  {
+    "k": "grazed",
+    "t": "grazed",
+    "kind": "word",
+    "forms": [
+      "grazed"
+    ],
+    "text": "Grazed here means scraped, the way a knee is grazed when you skid on it. The same word means eating grass when it is about cows, but this is the skin-scrape meaning.",
+    "audio": true
+  },
+  {
+    "k": "done-away-with",
+    "t": "done away with",
+    "kind": "phrase",
+    "forms": [
+      "done away with"
+    ],
+    "text": "To do away with something is to get rid of it or abolish it. Anything that could cause a scrape has been done away with, that is, removed.",
+    "audio": true
+  },
+  {
+    "k": "in-their-stead",
+    "t": "in their stead",
+    "kind": "phrase",
+    "forms": [
+      "in their stead"
+    ],
+    "text": "In their stead is an old-fashioned way of saying in their place or instead of them. Where the trees stood, standard catalogue equipment now stands in their stead.",
+    "audio": true
+  },
+  {
+    "k": "cookie-cutter",
+    "t": "cookie-cutter",
+    "kind": "word",
+    "forms": [
+      "cookie-cutter"
+    ],
+    "text": "A cookie cutter stamps out identical shapes from dough. A cookie-cutter approach makes everything the same with no thought for the particular place, which is the article's complaint about modern playgrounds.",
+    "audio": true
+  },
+  {
+    "k": "municipal",
+    "t": "municipal",
+    "kind": "word",
+    "forms": [
+      "municipal"
+    ],
+    "text": "Municipal means belonging to a town or city government. Municipal officials are the people at city hall who decide what gets built in public parks.",
+    "audio": true
+  },
+  {
+    "k": "bureaucrats",
+    "t": "bureaucrat",
+    "kind": "word",
+    "forms": [
+      "bureaucrats"
+    ],
+    "text": "A bureaucrat is an official who runs things by following rules and paperwork. Health-and-safety bureaucrats are the officials whose job is to make sure safety rules are obeyed. The word is often a little insulting, suggesting someone who cares more about the rules than the result.",
+    "audio": true
+  },
+  {
+    "k": "alas",
+    "t": "alas",
+    "kind": "word",
+    "forms": [
+      "alas"
+    ],
+    "text": "Alas is an old word meaning sadly or unfortunately, like a sigh written down. Alas, the safe playgrounds bore kids to tears.",
+    "audio": true
+  },
+  {
+    "k": "bored-to-tears",
+    "t": "bored to tears",
+    "kind": "phrase",
+    "forms": [
+      "bores kids to tears"
+    ],
+    "text": "To be bored to tears is to be so bored you could cry. It is an exaggeration, a common way of saying something is deadly dull.",
+    "audio": true
+  },
+  {
+    "k": "decries",
+    "t": "decry",
+    "kind": "word",
+    "forms": [
+      "decries"
+    ],
+    "text": "To decry something is to speak out strongly against it, to condemn it in public. Mariana Brussoni decries anxiety-based parenting, meaning she criticises it openly.",
+    "audio": true
+  },
+  {
+    "k": "epidemic",
+    "t": "epidemic",
+    "kind": "word",
+    "forms": [
+      "epidemic"
+    ],
+    "text": "An epidemic is properly an outbreak of a disease that spreads fast through a population. Here it is used as a picture: an epidemic of anxious parenting means the worry has spread from parent to parent the way an illness does.",
+    "audio": true
+  },
+  {
+    "k": "broods",
+    "t": "brood",
+    "kind": "word",
+    "forms": [
+      "broods"
+    ],
+    "text": "A brood is the set of chicks a bird hatches at once. Used for people it means all the children in one family. Smaller broods means families with fewer kids.",
+    "audio": true
+  },
+  {
+    "k": "bestowed",
+    "t": "bestow",
+    "kind": "word",
+    "forms": [
+      "bestowed"
+    ],
+    "text": "To bestow is to give something as a gift or honour, usually from someone above to someone below. Attention has been bestowed on children: given to them generously, perhaps too generously.",
+    "audio": true
+  },
+  {
+    "k": "cultivated",
+    "t": "cultivated",
+    "kind": "word",
+    "forms": [
+      "cultivated"
+    ],
+    "text": "To cultivate is to grow a plant carefully, with watering, weeding and pruning. Applied to children it means raising them deliberately, with lessons and schedules, as if they were a crop that must be tended rather than left to grow on their own.",
+    "audio": true
+  },
+  {
+    "k": "own-devices",
+    "t": "left to their own devices",
+    "kind": "phrase",
+    "forms": [
+      "left to their own devices"
+    ],
+    "text": "To be left to your own devices is to be left alone to do whatever you like. Devices here is an old sense meaning plans or ways of doing things, not gadgets, which is the joke in the article's aside about smartphones.",
+    "audio": true
+  },
+  {
+    "k": "well-off",
+    "t": "well-off",
+    "kind": "word",
+    "forms": [
+      "well-off"
+    ],
+    "text": "Well-off means having plenty of money, comfortably rich. In well-off circles means among wealthy families.",
+    "audio": true
+  },
+  {
+    "k": "indulgence",
+    "t": "indulgence",
+    "kind": "word",
+    "forms": [
+      "indulgence"
+    ],
+    "text": "An indulgence is a treat you allow yourself even though you do not strictly need it. The article says busy families have come to treat plain old playing as an indulgence, a luxury, rather than a normal part of childhood.",
+    "audio": true
+  },
+  {
+    "k": "shuttled",
+    "t": "shuttled",
+    "kind": "word",
+    "forms": [
+      "shuttled"
+    ],
+    "text": "To shuttle is to carry someone back and forth between places, like an airport shuttle bus. Kids are shuttled from school to ballet to fencing, driven from one activity to the next.",
+    "audio": true
+  },
+  {
+    "k": "fencing",
+    "t": "fencing",
+    "kind": "word",
+    "forms": [
+      "fencing"
+    ],
+    "text": "Fencing here is the sport of sword-fighting with thin blades and protective masks, not building fences. It is on the list of activities well-off children get shuttled to.",
+    "audio": true
+  },
+  {
+    "k": "rob",
+    "t": "rob",
+    "kind": "word",
+    "forms": [
+      "rob"
+    ],
+    "text": "To rob someone of something is to take it away from them. It does not have to involve theft: overprotecting children robs them of experiences, that is, deprives them of things they need.",
+    "audio": true
+  },
+  {
+    "k": "wallowing",
+    "t": "wallow",
+    "kind": "word",
+    "forms": [
+      "wallowing"
+    ],
+    "text": "To wallow is to roll about happily in mud or water, the way a pig or a hippo does. Children wallowing in soil are getting properly muddy.",
+    "audio": true
+  },
+  {
+    "k": "immune-systems",
+    "t": "immune system",
+    "kind": "name",
+    "forms": [
+      "immune systems"
+    ],
+    "text": "The immune system is the set of cells and organs in the body that fight off germs. Researchers in Finland found that when day-care yards were covered with forest soil and plants, the children's immune systems became healthier than those of children playing on gravel and concrete, because their skin met a wider range of harmless microbes.",
+    "audio": true
+  },
+  {
+    "k": "benefit-of-the-doubt",
+    "t": "benefit of the doubt",
+    "kind": "phrase",
+    "forms": [
+      "benefit of the doubt"
+    ],
+    "text": "To give someone the benefit of the doubt is to trust them when you are not sure, instead of assuming the worst. Scandinavian playgrounds give children the benefit of the doubt: they assume kids can handle risk until proven otherwise.",
+    "audio": true
+  },
+  {
+    "k": "prevails",
+    "t": "prevail",
+    "kind": "word",
+    "forms": [
+      "prevails"
+    ],
+    "text": "To prevail is to be the most common way or to win out. This attitude still prevails in Scandinavia, meaning it is still the normal way of thinking there.",
+    "audio": true
+  },
+  {
+    "k": "boggles",
+    "t": "boggle",
+    "kind": "word",
+    "forms": [
+      "boggles"
+    ],
+    "text": "To boggle the mind is to be so surprising it is hard to take in. The Scandinavian approach boggles foreign minds: visitors can hardly believe it.",
+    "audio": true
+  },
+  {
+    "k": "construction-playgrounds",
+    "t": "construction playgrounds",
+    "kind": "name",
+    "forms": [
+      "Construction playgrounds",
+      "construction playground"
+    ],
+    "text": "Construction playgrounds, also called junk or adventure playgrounds, began in Copenhagen in the 1940s. They are yards full of scrap wood, tyres and real tools where children build their own huts and dens, with adults nearby but not in charge. The idea later spread to Britain and beyond.",
+    "audio": true
+  },
+  {
+    "k": "anchor",
+    "t": "anchor",
+    "kind": "word",
+    "forms": [
+      "anchor"
+    ],
+    "text": "As a verb, to anchor something is to hold it firmly in place, the way a ship's anchor holds the ship. Two traditions anchor the culture of risky play: they are what keep it steady.",
+    "audio": true
+  },
+  {
+    "k": "social-norms",
+    "t": "social norms",
+    "kind": "name",
+    "forms": [
+      "social norms"
+    ],
+    "text": "Social norms are the unwritten rules about how people are expected to behave, like queueing or saying thank you. Nobody votes on them, but everyone feels them. One Scandinavian norm is that kids walk or cycle to school on their own.",
+    "audio": true
+  },
+  {
+    "k": "frowned-upon",
+    "t": "frowned upon",
+    "kind": "phrase",
+    "forms": [
+      "frowned upon"
+    ],
+    "text": "If something is frowned upon, people disapprove of it, even if it is not against any rule. Driving a healthy child to school is frowned upon in Scandinavia: other parents would raise an eyebrow.",
+    "audio": true
+  },
+  {
+    "k": "ferry",
+    "t": "ferry",
+    "kind": "word",
+    "forms": [
+      "ferry"
+    ],
+    "text": "As a verb, to ferry people is to carry them back and forth, like the boat of the same name. Parents who ferry kids to school drive them there and back.",
+    "audio": true
+  },
+  {
+    "k": "litigation",
+    "t": "litigation",
+    "kind": "word",
+    "forms": [
+      "litigation"
+    ],
+    "text": "Litigation means taking a dispute to court, in other words suing someone. A culture of litigation is one where people routinely sue when things go wrong. The article says America has one and Europe mostly does not, which is one reason European playgrounds can stay risky.",
+    "audio": true
+  },
+  {
+    "k": "nuisance",
+    "t": "nuisance",
+    "kind": "word",
+    "forms": [
+      "nuisance"
+    ],
+    "text": "A nuisance is something annoying and inconvenient but not serious. A broken bone as a nuisance is a hassle, not a disaster.",
+    "audio": true
+  },
+  {
+    "k": "burden",
+    "t": "burden",
+    "kind": "word",
+    "forms": [
+      "burden"
+    ],
+    "text": "A burden is a heavy load, either a real one on your back or a weight of worry or cost. A financial burden is a cost that is hard for a family to carry.",
+    "audio": true
+  },
+  {
+    "k": "free-health-care",
+    "t": "free health care",
+    "kind": "name",
+    "forms": [
+      "Free health care"
+    ],
+    "text": "In Scandinavia, hospitals and doctors are paid for out of taxes, so patients pay nothing or almost nothing when they are treated. This is often called universal health care, because it covers everyone. It is why a broken arm there costs a family time and annoyance rather than money.",
+    "audio": true
+  },
+  {
+    "k": "aficionado",
+    "t": "aficionado",
+    "kind": "word",
+    "forms": [
+      "afficionados"
+    ],
+    "text": "An aficionado, usually spelled with one f, is a devoted fan and expert of something, from a Spanish word for a passionate follower. Four playground aficionados means four boys who love playgrounds and know them well.",
+    "audio": true
+  },
+  {
+    "k": "columnist",
+    "t": "columnist",
+    "kind": "word",
+    "forms": [
+      "columnist"
+    ],
+    "text": "A columnist is a journalist who writes a regular opinion piece, called a column, under the same heading each week. Your columnist is how the writer refers to himself; this piece is The Economist's Charlemagne column about Europe.",
+    "audio": true
+  },
+  {
+    "k": "wits",
+    "t": "wits",
+    "kind": "word",
+    "forms": [
+      "wits"
+    ],
+    "text": "Your wits are your quick thinking and good sense. To be left to your own wits is to have to work things out for yourself with no help.",
+    "audio": true
+  },
+  {
+    "k": "secured",
+    "t": "secured",
+    "kind": "word",
+    "forms": [
+      "secured"
+    ],
+    "text": "To secure something here means to get hold of it, to obtain it. It is not about locking things up. The boys secured equipment for cooking, meaning they managed to get it.",
+    "audio": true
+  },
+  {
+    "k": "deftly",
+    "t": "deftly",
+    "kind": "word",
+    "forms": [
+      "deftly"
+    ],
+    "text": "Deftly means skilfully and neatly, with quick, sure movements. The boys deftly navigated the rusty nails: they picked their way past them without getting hurt.",
+    "audio": true
+  },
+  {
+    "k": "opined",
+    "t": "opine",
+    "kind": "word",
+    "forms": [
+      "opined"
+    ],
+    "text": "To opine is to give your opinion, usually in a slightly formal or grand way. The writer uses it about his 12-year-old as a joke: the eldest opined that this playground beats the old kind.",
+    "audio": true
+  },
+  {
+    "k": "leave-them-kids-alone",
+    "t": "Hey, parents, leave them kids alone",
+    "kind": "name",
+    "forms": [
+      "Hey, parents, leave them kids alone"
+    ],
+    "text": "The heading plays on a famous line from the 1979 Pink Floyd song Another Brick in the Wall: Hey, teachers, leave them kids alone. Swapping in parents turns a protest against strict schools into a protest against over-careful parenting.",
+    "audio": true
+  },
+  {
+    "k": "scandinavia",
+    "t": "Scandinavia",
+    "kind": "name",
+    "forms": [
+      "Scandinavia",
+      "Scandinavian",
+      "Nordic"
+    ],
+    "text": "Scandinavia is the region of northern Europe made up of Denmark, Norway and Sweden. Nordic is a slightly wider word that also takes in Finland and Iceland. These countries are known for high taxes, strong public services and, as this article shows, relaxed attitudes to childhood risk.",
+    "audio": true
+  },
+  {
+    "k": "on-the-contrary",
+    "t": "on the contrary",
+    "kind": "phrase",
+    "forms": [
+      "on the contrary"
+    ],
+    "text": "On the contrary is a way of saying the opposite is true. Someone might think the knives are a careless mistake; on the contrary, they are the plan.",
+    "audio": true
+  },
+  {
+    "k": "saw-fit",
+    "t": "saw fit",
+    "kind": "phrase",
+    "forms": [
+      "saw fit"
+    ],
+    "text": "To see fit to do something is to decide it is the right thing to do. Whatever they saw fit means whatever the children judged worth doing.",
+    "audio": true
+  }
+]
