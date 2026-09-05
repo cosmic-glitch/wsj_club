@@ -38,9 +38,14 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
      NANOCLAW_CHATJID='<number>@s.whatsapp.net' # owner's WhatsApp DM: the 6am ranked field, dry-run + warning notes
      NANOCLAW_GROUP_JID='<id>@g.us'             # the club's WhatsApp group: the 11am "Today's article is up" line
      ```
-     The group JID is in nanoclaw's chat store (its SQLite `chats` table; group
-     JIDs end in `@g.us`). Leave `NANOCLAW_GROUP_JID` unset and the announcement
-     falls back to the owner's DM with a note — it is never dropped.
+     To find a group's JID (the bot's number must be a member): force nanoclaw to
+     re-sync its group list, then read its chat store —
+     ```bash
+     echo '{"type":"refresh_groups"}' > ~/nanoclaw/data/ipc/main/tasks/refresh-$(date +%s).json; sleep 3
+     cd ~/nanoclaw && node -e 'const d=new (require("better-sqlite3"))("store/messages.db",{readonly:true});console.log(d.prepare("select jid,name from chats where jid like ?").all("%@g.us"))'
+     ```
+     Leave `NANOCLAW_GROUP_JID` unset and the announcement falls back to the
+     owner's DM with a note — it is never dropped.
    - `~/wsj_club/.env.local` — must contain `SUPABASE_DB_URL` (from Vercel),
      `BLOB_READ_WRITE_TOKEN` (article-text upload) and `OPENAI_API_KEY`
      (pronunciation + glossary audio). The bot does **not** need `SUPABASE_URL`/
