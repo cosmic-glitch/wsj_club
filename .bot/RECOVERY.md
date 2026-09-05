@@ -35,8 +35,12 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
      ```
      ECON_EMAIL='...'                          # Economist login (owner has the password)
      ECON_PASS='...'
-     NANOCLAW_CHATJID='<number>@s.whatsapp.net' # owner's WhatsApp DM (later: the club group's JID)
+     NANOCLAW_CHATJID='<number>@s.whatsapp.net' # owner's WhatsApp DM: the 6am ranked field, dry-run + warning notes
+     NANOCLAW_GROUP_JID='<id>@g.us'             # the club's WhatsApp group: the 11am "Today's article is up" line
      ```
+     The group JID is in nanoclaw's chat store (its SQLite `chats` table; group
+     JIDs end in `@g.us`). Leave `NANOCLAW_GROUP_JID` unset and the announcement
+     falls back to the owner's DM with a note — it is never dropped.
    - `~/wsj_club/.env.local` — must contain `SUPABASE_DB_URL` (from Vercel),
      `BLOB_READ_WRITE_TOKEN` (article-text upload) and `OPENAI_API_KEY`
      (pronunciation + glossary audio). The bot does **not** need `SUPABASE_URL`/
@@ -66,7 +70,7 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
    xvfb-run -a node --env-file=.bot/.env .bot/read.mjs <article-url>      # must be >400 words
    xvfb-run -a node --env-file=.bot/.env .bot/capture.mjs <article-url> 1999-01-01   # writes public/articles/1999-01-01.html + article-text/1999-01-01.txt — then delete both
    node --env-file=.env.local .bot/tally.mjs                              # newest senior poll, read-only
-   node --env-file=.bot/.env .bot/notify.mjs "recovery test"              # should hit WhatsApp
+   node --env-file=.bot/.env .bot/notify.mjs "recovery test"              # should hit the owner's WhatsApp DM (don't smoke-test --to=group: that is the real club group)
    ```
 
 6. **Re-arm the crons.** Both wrappers fire at two UTC hours and gate on the
@@ -121,7 +125,8 @@ refuses to write a teaser (exit 2) for the same reason.
 - `commit-message.mjs` — the commit message for an auto-published day.
 - `ship.sh` — stage the day's files, commit, rebase, push (or branch on dry
   run), wait for the live URL. The only thing that touches git.
-- `notify.mjs` — drop a nanoclaw IPC message → the owner's WhatsApp.
+- `notify.mjs` — drop a nanoclaw IPC message → WhatsApp: the owner's DM by
+  default, `--to=group` for the club group (the daily announcement).
 - `run-auto-vote.sh` / `run-auto-publish.sh` — the cron entrypoints (Pacific
   gate → `git pull` → `xvfb-run claude -p` → outcome check).
 - `state/` — box-local hand-off between the two runs (`<date>-field.json`,

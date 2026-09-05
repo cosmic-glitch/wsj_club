@@ -1,11 +1,11 @@
 ---
 name: auto-publish
-description: AUTONOMOUS daily publisher for the Reading Club, run UNATTENDED from the Hetzner box by cron at 11am Pacific — the afternoon half of the autopilot (auto-vote opens the ballot at 6am). Tallies the day's senior vote, captures the winning Economist article via the saved session in .bot/, authors the full handout (vocab, concepts, quiz, glossary, audio) to the wsj-reading calibration WITHOUT a human sign-off, ships it to main (= deploys; publishing is what closes the vote) via .bot/ship.sh, and texts the owner over nanoclaw. Senior track only. Do NOT invoke this by hand for the normal interactive flow — use wsj-check-vote + wsj-reading for that; this exists so the cron can run tally→author→publish with no human in the loop.
+description: AUTONOMOUS daily publisher for the Reading Club, run UNATTENDED from the Hetzner box by cron at 11am Pacific — the afternoon half of the autopilot (auto-vote opens the ballot at 6am). Tallies the day's senior vote, captures the winning Economist article via the saved session in .bot/, authors the full handout (vocab, concepts, quiz, glossary, audio) to the wsj-reading calibration WITHOUT a human sign-off, ships it to main (= deploys; publishing is what closes the vote) via .bot/ship.sh, and announces it to the club's WhatsApp group over nanoclaw in one fixed line. Senior track only. Do NOT invoke this by hand for the normal interactive flow — use wsj-check-vote + wsj-reading for that; this exists so the cron can run tally→author→publish with no human in the loop.
 ---
 
 # Reading Club — autonomous daily publish (Hetzner cron)
 
-You are running **unattended** on the Hetzner box (`run-auto-publish.sh` fired at 11am Pacific). Your job: turn the day's vote into the day's published reading with no human in the loop, then text the owner. There is **no approval step** — you are the author *and* the reviewer, so the quality gates below are strict and mechanical wherever a script can check them. The owner reviews **after** the fact and fixes anything they dislike interactively; a weak card is a re-push, but a **wrong** one (a quote that isn't in the article, a broken page, a half-shipped day) is the failure to avoid.
+You are running **unattended** on the Hetzner box (`run-auto-publish.sh` fired at 11am Pacific). Your job: turn the day's vote into the day's published reading with no human in the loop, then announce it to the club's WhatsApp group. There is **no approval step** — you are the author *and* the reviewer, so the quality gates below are strict and mechanical wherever a script can check them. The owner reviews **after** the fact and fixes anything they dislike interactively; a weak card is a re-push, but a **wrong** one (a quote that isn't in the article, a broken page, a half-shipped day) is the failure to avoid.
 
 This is the autonomous cousin of **`wsj-check-vote` + `wsj-reading`**. **`wsj-reading/SKILL.md` stays the single source of truth for everything editorial** — the audience calibration, the card recipes (vocab article-first, concepts Feynman-style and concrete-before-abstract, the 5-question quiz), the content schema, the glossary rules. **Read those sections of it before authoring** (its "audience calibration", "Hard rules", steps 4–6, "Content file schema"); this skill lists only what differs:
 
@@ -110,30 +110,33 @@ Live: commits the day's files on `main`, rebases on `origin/main`, pushes (= dep
 - Exit **0** → shipped (or dry-run branch pushed). Continue to Step 9.
 - Exit **3** → `origin/main` already had the day (the owner published by hand while you worked). Your commit was dropped. **Exit 0 silently** — nothing to announce.
 - Exit **4** → nothing pushed (credential/network). Failure path.
-- Exit **5** → pushed to `main`, but the site hadn't served the handout after 12 minutes. The commit **is** on main, so still notify (Step 9) with an explicit "⚠️ deploy hadn't landed after 12 min — check Vercel" line; the wrapper's outcome check will also flag it.
+- Exit **5** → pushed to `main`, but the site hadn't served the handout after 12 minutes. The commit **is** on main, but the reading is not verifiably up, so **do not announce to the group** — DM the owner instead (Step 9's warning form); the wrapper's outcome check will also flag it.
 
-## Step 9 — Notify the owner
+## Step 9 — Announce to the club group
 
-One WhatsApp message — the links first, then what you chose and why it's shaped the way it is (the owner's whole window into the day; keep it to a screen). Write it to a file and send with `--file`:
+**Live run, ship exit 0:** one WhatsApp message to the **club group**, always this exact shape and nothing more — no links, no vote stats, no word list, no emoji, no date:
+
+```
+Today's article is up ("<title>").
+```
+
+`<title>` is the content JSON's `title` verbatim (the article's own headline) inside straight double quotes, then a period after the closing parenthesis. Write it to a file (the heredoc is single-quoted, so apostrophes in the title are safe) and send with `--to=group`:
 
 ```bash
 cat > /tmp/publish-notify.txt <<'MSG'
-📚 Reading Club — today's reading is live — <TODAY>
-[Economist] <title>
-
-Vote: <N> ballots — <winner votes> for the winner<; runner-up "<title>" with M>   (or: no ballots cast — went with the morning's top pick)
-Words: <a>, <b>, <c>
-Concepts: <X>; <Y>
-Glossary: <n> entries
-
-Handout: https://dailyreadingclub.com/reading/<TODAY>
-Quiz: https://dailyreadingclub.com/reading/<TODAY>/quiz
-Article: https://dailyreadingclub.com/articles/<TODAY>.html
+Today's article is up ("<title>").
 MSG
-node --env-file=.bot/.env .bot/notify.mjs --file /tmp/publish-notify.txt
+node --env-file=.bot/.env .bot/notify.mjs --to=group --file /tmp/publish-notify.txt
 ```
 
-Dry run: header `🧪 Reading Club DRY RUN — <TODAY> (nothing published)`, then the same vote/words/concepts/glossary lines, then `Branch: auto/<TODAY> pushed — main untouched; Vercel builds a preview of it. Delete .bot/DRY_RUN on the box to go live.` and no site links (they'd 404). Fill in the real values — the heredoc is single-quoted, so build the text with the literal date and titles. **Voter names never go in the message** (the owner can run the tally script; the group chat will eventually get this text).
+The group JID is `NANOCLAW_GROUP_JID` in `.bot/.env`; if it is unset, `notify.mjs` sends the same line to the owner's DM with a note saying so — never skip the send.
+
+**Everything else goes to the owner's DM (default target), never the group:**
+
+- Dry run: `🧪 Reading Club DRY RUN — <TODAY> (nothing published): "<title>" → branch auto/<TODAY> pushed, main untouched; delete .bot/DRY_RUN on the box to go live.`
+- Ship exit 5: `⚠️ Reading Club — <TODAY> "<title>" is on main but the site hadn't served it after 12 min — check Vercel. The group was NOT told; announce by hand once it's live.`
+
+The owner's window into what you chose and why is the commit and the log, not the message — **voter names never go in any message.**
 
 Then stop.
 

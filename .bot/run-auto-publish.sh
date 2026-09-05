@@ -55,7 +55,8 @@ export AUTOPUBLISH_DATE="$TODAY"
 log "starting (Pacific $(TZ=America/Los_Angeles date +%FT%T), mode=${MODE}, date=${TODAY})"
 
 # Secrets for every command in the session: SUPABASE_DB_URL, BLOB_READ_WRITE_TOKEN,
-# OPENAI_API_KEY from .env.local; ECON_* + NANOCLAW_CHATJID from .bot/.env.
+# OPENAI_API_KEY from .env.local; ECON_* + NANOCLAW_CHATJID (owner DM) +
+# NANOCLAW_GROUP_JID (the club group, for the announcement) from .bot/.env.
 set -a
 # shellcheck source=/dev/null
 [ -f "$PROJECT_DIR/.env.local" ] && source "$PROJECT_DIR/.env.local"
