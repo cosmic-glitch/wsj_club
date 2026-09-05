@@ -1,0 +1,566 @@
+[
+  {
+    "k": "incumbent",
+    "t": "incumbent",
+    "kind": "vocab",
+    "pron": "in-KUM-bunt",
+    "forms": [
+      "Incumbents"
+    ],
+    "text": "Whoever currently holds a position — a senator already in office, or, as here, an established company that already dominates its market when a new rival or technology shows up. The article's incumbents are the big existing firms hurriedly creating AI roles so that younger AI startups don't steal their customers.",
+    "audio": true
+  },
+  {
+    "k": "proliferate",
+    "t": "proliferate",
+    "kind": "vocab",
+    "pron": "pruh-LIF-uh-rayt",
+    "forms": [
+      "proliferating"
+    ],
+    "text": "To multiply rapidly — to grow in number so fast it's hard to keep count. Here it's jobs doing the multiplying: construction workers at data-centre sites, and just after this sentence, a whole new class of white-collar AI roles.",
+    "audio": true
+  },
+  {
+    "k": "imminent",
+    "t": "imminent",
+    "kind": "vocab",
+    "pron": "IM-ih-nunt",
+    "forms": [
+      "imminent"
+    ],
+    "text": "About to happen — so close you should brace for it now. The forecasts said AI lay-offs were imminent, yet the targeted jobs have kept growing instead. Don't confuse it with 'eminent', which means famous and respected.",
+    "audio": true
+  },
+  {
+    "k": "cast-as",
+    "t": "cast as",
+    "kind": "phrase",
+    "forms": [
+      "cast as"
+    ],
+    "text": "To describe or portray someone in a particular role, the way a director casts an actor in a part. Young workers are 'often cast as AI's first victims' — that's the role commentators assign them, not necessarily the truth.",
+    "audio": true
+  },
+  {
+    "k": "holding-up",
+    "t": "holding up",
+    "kind": "phrase",
+    "forms": [
+      "holding up"
+    ],
+    "text": "Staying strong under pressure; not collapsing when you might expect it to. Young workers' job prospects are 'holding up remarkably well' — surviving the strain everyone predicted would break them.",
+    "audio": true
+  },
+  {
+    "k": "disrupted",
+    "t": "disrupt",
+    "kind": "word",
+    "forms": [
+      "disrupted"
+    ],
+    "text": "To throw something badly out of its normal pattern. In business writing it has a special edge: a company or worker is 'disrupted' when a new technology upends the way their industry has always made money.",
+    "audio": true
+  },
+  {
+    "k": "running",
+    "t": "running (at a level)",
+    "kind": "word",
+    "forms": [
+      "running"
+    ],
+    "text": "Not jogging — in statistics-speak, a number is 'running' at some level, meaning that's its current ongoing rate. Hiring 'running about 10% below the average' means it is currently, and continuously, about 10% lower than usual.",
+    "audio": true
+  },
+  {
+    "k": "headcounts",
+    "t": "headcount",
+    "kind": "word",
+    "forms": [
+      "headcounts"
+    ],
+    "text": "The total number of people a company employs — literally, counting heads. 'Trimming headcounts' is corporate language for cutting jobs; the bloodless phrasing is exactly why companies prefer it.",
+    "audio": true
+  },
+  {
+    "k": "consultancy",
+    "t": "consultancy",
+    "kind": "word",
+    "forms": [
+      "consultancy"
+    ],
+    "text": "A firm whose product is advice: companies pay it to analyse problems and recommend what to do. Challenger, Gray & Christmas is an employment consultancy — it advises on hiring and firing, which is why it keeps count of lay-off announcements.",
+    "audio": true
+  },
+  {
+    "k": "churning",
+    "t": "churn",
+    "kind": "word",
+    "forms": [
+      "churning"
+    ],
+    "text": "Constant turbulent turnover — things entering and leaving in huge numbers even when the total barely moves. The 'churning jobs market' sheds roughly 1.7m workers in a typical month and hires even more, which is why 16,000 AI-related cuts get lost in it.",
+    "audio": true
+  },
+  {
+    "k": "shed",
+    "t": "shed",
+    "kind": "word",
+    "forms": [
+      "shed"
+    ],
+    "text": "Not the garden hut — as a verb, to shed something is to let it drop away, like a snake shedding skin. When employers 'shed' workers, they let them go; economists use it as a neutral word for cutting jobs.",
+    "audio": true
+  },
+  {
+    "k": "like-there-is-no-tomorrow",
+    "t": "like there is no tomorrow",
+    "kind": "phrase",
+    "forms": [
+      "like there is no tomorrow"
+    ],
+    "text": "Doing something at maximum speed and volume, without holding anything back — the way you'd act if there were literally no future to save for. AI startups 'hiring like there is no tomorrow' are hiring as fast as they possibly can.",
+    "audio": true
+  },
+  {
+    "k": "data-centres",
+    "t": "data centre",
+    "kind": "name",
+    "forms": [
+      "data centres",
+      "data-centre"
+    ],
+    "text": "A warehouse-sized building packed with racks of computers that run websites, apps and AI models. Training and running AI takes enormous numbers of these machines, which is why America is building data centres at a rate of more than $75bn a year — and hiring armies of workers to build and run them.",
+    "audio": true
+  },
+  {
+    "k": "attributed",
+    "t": "attribute",
+    "kind": "word",
+    "forms": [
+      "attributed"
+    ],
+    "text": "To officially credit or blame something as the cause. The 200,000 lay-offs 'attributed to AI' are the ones analysts have traced to AI specifically — a reminder that someone had to make a judgment call about the cause of each one.",
+    "audio": true
+  },
+  {
+    "k": "offset",
+    "t": "offset",
+    "kind": "word",
+    "forms": [
+      "offset"
+    ],
+    "text": "To cancel out or balance against. If new AI jobs offset weak hiring elsewhere, the gains in one place make up for the losses in another, so the overall total holds steady.",
+    "audio": true
+  },
+  {
+    "k": "back-office",
+    "t": "back-office",
+    "kind": "name",
+    "forms": [
+      "back-office"
+    ],
+    "text": "The parts of a company customers never see — payroll, record-keeping, scheduling, data entry — as opposed to the 'front office' that faces clients. Back-office roles are heavy on routine paperwork, which is exactly what AI handles best.",
+    "audio": true
+  },
+  {
+    "k": "splurge",
+    "t": "splurge",
+    "kind": "word",
+    "forms": [
+      "splurge"
+    ],
+    "text": "A burst of extravagant spending — blowing your savings on sneakers is a splurge. America's 'AI infrastructure splurge' is the same behaviour at national scale: roughly $500bn a year of extra spending on chips, servers, data centres and power.",
+    "audio": true
+  },
+  {
+    "k": "kit",
+    "t": "kit",
+    "kind": "word",
+    "forms": [
+      "kit"
+    ],
+    "text": "British English for equipment or gear — not a model-airplane kit. 'The kit needed to make AI run' means the hardware: chips, servers, cooling systems and the rest.",
+    "audio": true
+  },
+  {
+    "k": "goldman-sachs",
+    "t": "Goldman Sachs",
+    "kind": "name",
+    "forms": [
+      "Goldman Sachs"
+    ],
+    "text": "One of the world's most famous investment banks, based in New York. Its economists publish widely quoted estimates about the economy, like the $500bn-a-year AI spending figure here.",
+    "audio": true
+  },
+  {
+    "k": "census-bureau",
+    "t": "Census Bureau",
+    "kind": "name",
+    "forms": [
+      "Census Bureau"
+    ],
+    "text": "The US government agency best known for counting the population every ten years — but it also measures the economy year-round, including how much the country spends on construction, which is the data cited here.",
+    "audio": true
+  },
+  {
+    "k": "spree",
+    "t": "spree",
+    "kind": "word",
+    "forms": [
+      "spree"
+    ],
+    "text": "A burst of unrestrained activity — usually spending or, here, building. A 'building spree' is a stretch where construction happens fast and everywhere at once.",
+    "audio": true
+  },
+  {
+    "k": "hvac",
+    "t": "HVAC",
+    "kind": "name",
+    "forms": [
+      "HVAC"
+    ],
+    "text": "Heating, Ventilation and Air Conditioning — the systems that control temperature and airflow in buildings. Data centres need serious HVAC because thousands of computers running at once generate enough heat to destroy themselves without constant cooling.",
+    "audio": true
+  },
+  {
+    "k": "grid",
+    "t": "the grid",
+    "kind": "name",
+    "forms": [
+      "grid"
+    ],
+    "text": "The power grid: the network of power plants, transmission lines and transformers that carries electricity across the country. Grid engineers connect big new customers like data centres to it — no connection, no power, no AI.",
+    "audio": true
+  },
+  {
+    "k": "build-out",
+    "t": "build-out",
+    "kind": "name",
+    "forms": [
+      "build-out"
+    ],
+    "text": "Industry shorthand for the phase of constructing infrastructure at large scale. The 'data-centre build-out' is the ongoing nationwide push to get these buildings up and running.",
+    "audio": true
+  },
+  {
+    "k": "utilities",
+    "t": "utilities",
+    "kind": "word",
+    "forms": [
+      "utilities"
+    ],
+    "text": "The companies that deliver essential services through wires and pipes — electricity, gas, water. Statisticians treat them as their own sector, and the BLS expects it to be the fastest-growing big sector through 2035, largely because data centres need so much power.",
+    "audio": true
+  },
+  {
+    "k": "vacancies",
+    "t": "vacancy",
+    "kind": "word",
+    "forms": [
+      "vacancies"
+    ],
+    "text": "Openings waiting to be filled — a vacant job, like a vacant hotel room. Data-centre vacancies more than doubling means twice as many unfilled jobs advertised, a sign employers want workers faster than they can find them.",
+    "audio": true
+  },
+  {
+    "k": "indeed-site",
+    "t": "Indeed",
+    "kind": "name",
+    "forms": [
+      "Indeed"
+    ],
+    "text": "A major job-search website — easy to misread here because the company's name is also an ordinary English adverb. 'Indeed, a jobs website, finds…' means the company Indeed reports the finding.",
+    "audio": true
+  },
+  {
+    "k": "strivers",
+    "t": "striver",
+    "kind": "word",
+    "forms": [
+      "strivers"
+    ],
+    "text": "People pushing hard to get ahead — from 'strive', to struggle toward a goal. Calling LinkedIn 'a social network for strivers' is the article's wry way of saying it's where the professionally ambitious gather.",
+    "audio": true
+  },
+  {
+    "k": "scramble",
+    "t": "scramble",
+    "kind": "word",
+    "forms": [
+      "scramble"
+    ],
+    "text": "A frantic, competitive rush — picture players scrambling for a loose ball. The 'scramble for workers' means employers are competing urgently for too few electricians and technicians, which is what pushes wages up.",
+    "audio": true
+  },
+  {
+    "k": "pay-cheques",
+    "t": "pay cheque",
+    "kind": "word",
+    "forms": [
+      "pay cheques"
+    ],
+    "text": "The British spelling of paycheck — the payment a worker receives. Something 'showing up in pay cheques' means you can see it in what workers are actually being paid.",
+    "audio": true
+  },
+  {
+    "k": "transformer",
+    "t": "transformer",
+    "kind": "word",
+    "forms": [
+      "transformer"
+    ],
+    "text": "Not the robot and not the AI model architecture — here it's the electrical device that changes voltage so power can travel long distances and then be used safely in buildings. Every data centre needs them, which is why transformer factories can't hire fast enough.",
+    "audio": true
+  },
+  {
+    "k": "lines",
+    "t": "lines (production)",
+    "kind": "word",
+    "forms": [
+      "lines"
+    ],
+    "text": "Production lines — the sequences of stations along which a factory assembles its products. The chief executive asking a visitor to 'run one of our lines' is a joke with an edge: she is so short of workers she'd take anyone.",
+    "audio": true
+  },
+  {
+    "k": "hard-hats",
+    "t": "hard hats",
+    "kind": "phrase",
+    "forms": [
+      "hard hats"
+    ],
+    "text": "Literally the protective helmets construction workers wear; by extension, the workers themselves. 'It is not just hard hats that are proliferating' means the boom is creating more than construction jobs.",
+    "audio": true
+  },
+  {
+    "k": "white-collar",
+    "t": "white-collar",
+    "kind": "name",
+    "forms": [
+      "white-collar"
+    ],
+    "text": "Office and professional work, done at a desk — named for the white dress shirts office workers historically wore, as opposed to 'blue-collar' manual trades. The article's point is that AI is creating both kinds of jobs at once.",
+    "audio": true
+  },
+  {
+    "k": "annotators",
+    "t": "data annotator",
+    "kind": "name",
+    "forms": [
+      "annotators"
+    ],
+    "text": "People paid to label the data AI learns from — marking what's in an image, rating whether an answer is good, tagging text. To annotate is to add explanatory notes; here it's done at industrial scale to teach models.",
+    "audio": true
+  },
+  {
+    "k": "forward-deployed",
+    "t": "forward-deployed",
+    "kind": "name",
+    "forms": [
+      "forward-deployed"
+    ],
+    "text": "A military term borrowed by tech: forward-deployed troops are stationed out where the action is rather than back at base. A forward-deployed engineer works inside the customer's business, adapting the AI system to that customer's real problems.",
+    "audio": true
+  },
+  {
+    "k": "newly-minted",
+    "t": "newly minted",
+    "kind": "phrase",
+    "forms": [
+      "newly minted"
+    ],
+    "text": "Brand new, fresh off the press — from minting, the stamping of new coins. 'Newly minted heads of AI' are executives whose job titles didn't exist until a moment ago.",
+    "audio": true
+  },
+  {
+    "k": "preliminary",
+    "t": "preliminary",
+    "kind": "word",
+    "forms": [
+      "Preliminary"
+    ],
+    "text": "Coming before the main thing; early and not yet final. Preliminary research is a first pass whose numbers may still change — a signal to hold the conclusion loosely.",
+    "audio": true
+  },
+  {
+    "k": "outfit",
+    "t": "outfit",
+    "kind": "word",
+    "forms": [
+      "outfit’s"
+    ],
+    "text": "Not clothes — informally, an outfit is an organization or company. 'The research outfit's database' just means the research organization's database.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckon",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "To calculate or estimate; in British journalism it's the standard verb for 'concludes after doing the math'. When the economist 'reckons' 1% of professional jobs are AI jobs, that's his considered estimate, not a guess.",
+    "audio": true
+  },
+  {
+    "k": "on-the-order-of",
+    "t": "on the order of",
+    "kind": "phrase",
+    "forms": [
+      "on the order of"
+    ],
+    "text": "Roughly; in the general size range of. 'On the order of 1m positions' means about a million — the phrase signals the number is an estimate of scale, not a precise count.",
+    "audio": true
+  },
+  {
+    "k": "life-sciences",
+    "t": "life sciences",
+    "kind": "name",
+    "forms": [
+      "life sciences"
+    ],
+    "text": "The sciences of living things — biology, medicine, pharmaceuticals, biotech. The article singles them out because researchers there use AI heavily, for instance to discover new drugs.",
+    "audio": true
+  },
+  {
+    "k": "net",
+    "t": "net",
+    "kind": "word",
+    "forms": [
+      "net job creator"
+    ],
+    "text": "The amount left after subtracting what goes out from what comes in — your net allowance is what remains after you pay your debts. AI as a 'net job creator' means that after subtracting every job it has destroyed from every job it has created, the total is positive.",
+    "audio": true
+  },
+  {
+    "k": "above-trend",
+    "t": "above trend",
+    "kind": "name",
+    "forms": [
+      "above trend"
+    ],
+    "text": "A statistics term: the trend is the path a number was already on, so growth 'above trend' is the extra beyond what you'd have expected anyway. The 730,000 jobs above trend are the ones ordinary growth doesn't explain — the surplus the article credits largely to AI.",
+    "audio": true
+  },
+  {
+    "k": "productivity",
+    "t": "productivity",
+    "kind": "name",
+    "forms": [
+      "productivity"
+    ],
+    "text": "How much output a worker produces per hour of work — the central measure of economic efficiency. When productivity rises, the same person produces more, which can make their service cheaper and, as the article argues, sometimes increases demand for it.",
+    "audio": true
+  },
+  {
+    "k": "draft",
+    "t": "draft",
+    "kind": "word",
+    "forms": [
+      "draft"
+    ],
+    "text": "Here it means to write up a document, especially a first version — lawyers draft contracts the way you draft an essay. Nothing to do with sports drafts or military drafts.",
+    "audio": true
+  },
+  {
+    "k": "comb-through",
+    "t": "comb through",
+    "kind": "phrase",
+    "forms": [
+      "comb through"
+    ],
+    "text": "To search something slowly and thoroughly, the way a comb passes through every strand of hair. Analysts comb through financial filings looking for the details that matter; AI now does it in minutes.",
+    "audio": true
+  },
+  {
+    "k": "filings",
+    "t": "filings",
+    "kind": "word",
+    "forms": [
+      "filings"
+    ],
+    "text": "Official documents submitted ('filed') to a government body. Financial filings are the reports companies must submit about their finances — long, dense, and exactly the kind of reading AI is good at speeding up.",
+    "audio": true
+  },
+  {
+    "k": "paralegals",
+    "t": "paralegal",
+    "kind": "name",
+    "forms": [
+      "paralegals"
+    ],
+    "text": "Trained assistants who do much of a law firm's document work — research, organizing evidence, preparing drafts — without being licensed lawyers ('para-' means alongside, as in paramedic). They were predicted to be early AI victims; instead their numbers rose 11%.",
+    "audio": true
+  },
+  {
+    "k": "dire",
+    "t": "dire",
+    "kind": "word",
+    "forms": [
+      "dire"
+    ],
+    "text": "Extremely serious or dreadful — a dire warning predicts disaster. The article leans on the word ironically: the dire warnings about professional jobs haven't come true, so far.",
+    "audio": true
+  },
+  {
+    "k": "projected",
+    "t": "projected",
+    "kind": "word",
+    "forms": [
+      "projected"
+    ],
+    "text": "Forecast — calculated forward from current data, like projecting a line further along its path. Growth that is 'projected' hasn't happened yet; it's the statisticians' best estimate of what will.",
+    "audio": true
+  },
+  {
+    "k": "excel",
+    "t": "excel",
+    "kind": "word",
+    "forms": [
+      "excel"
+    ],
+    "text": "To be exceptionally good at something (the spreadsheet is named after the word, not the other way round). Routine tasks are what 'AI agents increasingly excel' at — the machines' strongest suit.",
+    "audio": true
+  },
+  {
+    "k": "ai-agents",
+    "t": "AI agent",
+    "kind": "name",
+    "forms": [
+      "AI agents"
+    ],
+    "text": "AI systems that don't just answer questions but carry out multi-step tasks on their own — reading messages, filling forms, completing workflows. Their strength at routine office work is why customer-service and secretarial jobs are shrinking.",
+    "audio": true
+  },
+  {
+    "k": "gig-economy",
+    "t": "gig economy",
+    "kind": "name",
+    "forms": [
+      "gig economy"
+    ],
+    "text": "The slice of the economy built on short, app-arranged jobs — driving for Uber, delivering for DoorDash — instead of steady employment with one company. 'Gig' is musicians' slang for a single booked performance.",
+    "audio": true
+  },
+  {
+    "k": "autonomous",
+    "t": "autonomous",
+    "kind": "word",
+    "forms": [
+      "autonomous"
+    ],
+    "text": "Self-governing; able to operate without outside control — from Greek roots meaning 'own law'. Autonomous agents are AI systems working through tasks without a human directing each step; tomorrow's workers, the article suggests, may supervise teams of them.",
+    "audio": true
+  },
+  {
+    "k": "fanciful",
+    "t": "fanciful",
+    "kind": "word",
+    "forms": [
+      "Fanciful"
+    ],
+    "text": "Based on imagination rather than reality; charming but unrealistic. The article asks whether its own vision of future jobs is fanciful — then answers that being an influencer sounded fanciful too, twenty years ago.",
+    "audio": true
+  }
+]

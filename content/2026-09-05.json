@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-05",
+  "title": "The jobs apocalypse is postponed. An AI jobs boom is here",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/09/04/the-jobs-apocalypse-is-postponed-an-ai-jobs-boom-is-here",
+  "articlePageUrl": "/articles/2026-09-05.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "incumbent",
+      "partOfSpeech": "noun",
+      "pronunciation": "in-KUM-bunt",
+      "articleQuote": "Incumbents racing to keep up are creating new AI roles.",
+      "meaning": "An **incumbent** is whoever currently holds a position — the senator already in office when an election starts, or, in business writing like this article, an established company that already dominates its market when a new rival or technology arrives. The Economist's incumbents are the big existing firms hurriedly creating AI jobs so that younger AI startups don't steal their customers. The word almost always carries this flavor of a defender with a head start — name recognition, loyal customers — facing a challenger.",
+      "examples": [
+        "The incumbent class president barely had to campaign; everyone already knew her name.",
+        "Netflix was once the scrappy challenger to cable TV — now it's the incumbent that newer streaming apps are trying to unseat."
+      ]
+    },
+    {
+      "word": "proliferate",
+      "partOfSpeech": "verb",
+      "pronunciation": "pruh-LIF-uh-rayt",
+      "articleQuote": "It is not just hard hats that are proliferating.",
+      "meaning": "To **proliferate** is to multiply rapidly — to grow in number so fast that it's hard to keep count. The article uses it for jobs: construction workers (\"hard hats\") are multiplying at data-centre sites, and white-collar AI roles are spreading just as fast. Serious journalism reaches for this word whenever something is spreading quickly, from nuclear weapons to conspiracy theories to food-delivery apps.",
+      "examples": [
+        "After one student brought a fidget spinner to school, they proliferated until every desk had one.",
+        "Fake accounts proliferated on the platform faster than the moderators could delete them."
+      ]
+    },
+    {
+      "word": "imminent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "IM-ih-nunt",
+      "articleQuote": "Despite dire warnings of imminent lay-offs, professional services are projected to keep growing rapidly",
+      "meaning": "**Imminent** means about to happen — so close that you should brace for it right now. The article's whole point hangs on this word: forecasters warned that AI lay-offs were imminent, yet the jobs those warnings targeted have kept growing instead. Don't mix it up with its sound-alike *eminent*, which means famous and respected — an *eminent* scientist might warn you that a storm is *imminent*.",
+      "examples": [
+        "Dark clouds and a sudden cold wind made it obvious the storm was imminent, so the referee called the game early.",
+        "With finals imminent, he finally cleared the games off his desk and started reviewing."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Labour-market churn",
+      "articleQuote": "AI-related lay-offs gets lost in the churning jobs market where employers shed roughly 1.7m workers in a typical month.",
+      "meaning": "America \"added 162,000 jobs in August.\" That sounds like 162,000 people got hired — but what actually happened is vastly bigger. In a typical month, American employers shed roughly **1.7 million** workers, and hire even more than that. The 162,000 is just the difference between two enormous flows: all the hiring minus all the leaving. Economists call that constant flow of jobs appearing and disappearing **labour-market churn**, and the number the headlines report — the *net* change — is the small tip of it.\n\nPicture your school announcing \"enrollment grew by 5 students this year.\" That could mean 5 kids arrived and nobody left — or that 200 new students enrolled while 195 moved away. Same net number, wildly different amounts of actual coming and going. Job markets are always the second kind: churning underneath even when the surface number barely moves.\n\nChurn is why this article can say AI lay-offs \"get lost.\" Roughly 16,000 AI-related job cuts a month sounds enormous on its own — but next to 1.7 million normal monthly lay-offs, it's about 1% of the churn that happens anyway. The takeaway travels far beyond jobs: when a headline gives you one number about a big system, ask whether it's really the *net* of two much larger flows moving in opposite directions."
+    },
+    {
+      "name": "The lump of labour fallacy",
+      "articleQuote": "If higher productivity lowers the cost of professional services, it is possible that demand for them can rise enough to create more work overall.",
+      "meaning": "Paralegals — who help lawyers prepare documents — were supposed to be among AI's first victims. Instead, their employment rose about 11% between 2023 and 2025, four times the national average. The economics mistake that made the prediction fail has a name: the **lump of labour fallacy** — the assumption that there is a fixed lump of work to go around, so every task a machine takes on is subtracted from what's left for humans.\n\nThe amount of work is not fixed. When a tool makes a worker faster, the service that worker sells gets cheaper — and people buy more of cheaper things. ATMs were expected to wipe out bank tellers, since a machine could hand out cash. Instead, ATMs made each bank branch much cheaper to run, so banks opened far more branches, and teller jobs kept growing for decades. The same chain is now running through law: AI lets one paralegal do the document work of several, legal help gets cheaper, and more people and companies can afford to buy it — so firms hire *more* paralegals, not fewer.\n\nThe fallacy failing doesn't mean every job is safe: the article notes that secretarial employment has fallen roughly 15%, because demand for that work couldn't grow enough to offset the automation. So the next time someone predicts a machine will erase a job, ask the question that separates the paralegals from the secretaries: will making this work cheaper make people buy a lot more of it?"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, how do AI's effects on American jobs add up so far?",
+      "options": [
+        "AI has destroyed about 1 million jobs while creating only 200,000",
+        "AI has created roughly 1 million jobs, easily exceeding the roughly 200,000 lay-offs attributed to it",
+        "AI has had no measurable effect on employment in either direction",
+        "AI has created jobs only for software engineers"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Economist estimates AI has created around 1m new American jobs, against roughly 200,000 AI-attributed lay-offs since mid-2023."
+    },
+    {
+      "question": "Why do roughly 16,000 AI-related job cuts a month barely show up in the overall jobs numbers?",
+      "options": [
+        "Companies are legally required to hide AI-related lay-offs",
+        "Employers shed about 1.7 million workers in a typical month anyway, so the AI cuts are a tiny share of normal churn",
+        "The Bureau of Labour Statistics does not count lay-offs at technology companies",
+        "Every worker laid off because of AI is immediately rehired by an AI startup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The jobs market constantly churns — about 1.7m monthly lay-offs in normal times — so 16,000 AI-related cuts get lost in that much larger flow."
+    },
+    {
+      "question": "In the sentence \"Incumbents racing to keep up are creating new AI roles,\" the incumbents are…",
+      "options": [
+        "newly founded AI startups",
+        "unemployed workers retraining for AI jobs",
+        "established companies that already dominate their markets",
+        "government agencies that regulate technology"
+      ],
+      "answerIndex": 2,
+      "explanation": "An incumbent is the party already holding a position — here, the existing firms adding AI roles to fend off newer challengers."
+    },
+    {
+      "question": "Paralegals were expected to be highly vulnerable to AI, yet their employment rose about 11%. Which mechanism from the article best explains this?",
+      "options": [
+        "AI turned out to be useless for legal document work",
+        "Law firms agreed among themselves not to adopt AI",
+        "AI made paralegals more productive, lowering the cost of legal services and raising demand for them",
+        "Most paralegals left law to take construction jobs at data centres"
+      ],
+      "answerIndex": 2,
+      "explanation": "Higher productivity can lower the cost of a service enough that demand — and therefore employment — rises, the opposite of the lump-of-labour prediction."
+    },
+    {
+      "question": "The article says installation and maintenance jobs at data centres advertise wages about 40% higher than comparable work elsewhere. What is driving those wages up?",
+      "options": [
+        "A federal law that sets a special data-centre minimum wage",
+        "Labour unions that negotiated raises across the industry",
+        "The danger of the work compared with ordinary electrical jobs",
+        "A construction boom that has made electricians, HVAC specialists and grid engineers scarce"
+      ],
+      "answerIndex": 3,
+      "explanation": "The roughly $500bn-a-year infrastructure splurge has set off a race for scarce workers — even with the pay gains, firms say workers are still hard to find."
+    }
+  ]
+}
