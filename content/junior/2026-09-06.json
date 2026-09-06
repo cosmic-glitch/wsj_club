@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-06",
+  "title": "Why smugglers are stealing Kenya's ants",
+  "articleUrl": "https://www.economist.com/middle-east-and-africa/2026/08/26/why-smugglers-are-stealing-kenyas-ants",
+  "articlePageUrl": "/articles/junior/2026-09-06.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "lucrative",
+      "partOfSpeech": "adjective",
+      "pronunciation": "LOO-kruh-tiv",
+      "articleQuote": "A global craze for pet ants has created a lucrative black market",
+      "meaning": "Something is **lucrative** when it makes a lot of money. The article calls the secret ant trade lucrative because a queen ant that costs about $3 in Kenya can be sold to collectors for over $200 — a huge profit for the smugglers.",
+      "examples": [
+        "Mowing lawns in the summer turned out to be surprisingly lucrative — Jayden earned enough for a new bike in one month.",
+        "Selling homemade slime was fun, but it was never lucrative; after buying the glue, Maya barely made a dollar."
+      ]
+    },
+    {
+      "word": "abundant",
+      "partOfSpeech": "adjective",
+      "pronunciation": "uh-BUN-dunt",
+      "articleQuote": "it has abundant populations of the species",
+      "meaning": "**Abundant** means existing in large amounts — there is plenty of it. Kenya has abundant harvester ants, meaning huge numbers of them live there naturally, and that is one big reason smugglers go to Kenya to collect them.",
+      "examples": [
+        "After the storm, puddles were abundant on the playground, so recess moved indoors.",
+        "Snacks were abundant at the sleepover — three bags of popcorn, two pizzas, and a whole tray of brownies."
+      ]
+    },
+    {
+      "word": "forage",
+      "partOfSpeech": "verb",
+      "pronunciation": "FOR-ij",
+      "articleQuote": "they watch the insects dig tunnels and forage for food",
+      "meaning": "To **forage** is to move around searching for food, the way wild animals do. In the article, pet ants forage inside their glass ant cities, and wild ants forage across the savannah — and as they do, they spread grass seeds that keep the grasslands growing.",
+      "examples": [
+        "The squirrels spent all morning foraging under the oak tree for acorns.",
+        "On the camping trip, our guide showed us how deer forage for berries and leaves at the edge of the woods."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Black market",
+      "articleQuote": "An African harvester queen can sell for more than $200 in the black market",
+      "meaning": "In Kenya, a queen ant costs about $3. Sold secretly to a collector in another country, that same ant goes for more than $200. Why the giant difference? Because this buying and selling happens on the **black market** — the name economists give to trade that is against the law.\n\nA black market is not a place you can visit. It is all the deals people make in secret because the thing they are trading is banned or strictly controlled: protected animals, for example. Since sellers on the black market are breaking the law, they can be fined or sent to prison — one ant smuggler in the article got a year in prison. Taking that risk is exactly why they charge so much. The harder the police work to stop the trade, the riskier smuggling gets, and the higher the secret prices climb.\n\nHere is a small, legal-world version of the same idea: if your school bans candy, a kid with a backpack full of candy bars can suddenly charge triple what the store charges — not because the candy got better, but because getting it is now risky and hard. That is the rule to remember: when something people want is banned, the trade does not always stop — it often goes secret, and the prices go way up."
+    },
+    {
+      "name": "Queen ants",
+      "articleQuote": "Traffickers target queens because each colony has just one breeding female",
+      "meaning": "Why would smugglers bother with queen ants instead of just grabbing any ants? The answer is a piece of biology the article expects you to know: in an ant colony, only **one** ant lays the eggs — the queen.\n\nAn ant colony can hold thousands of ants, but almost all of them are workers, which never have babies. They dig the tunnels, find the food, and guard the nest. The queen is the single egg-laying female, and she can keep laying eggs for around 25 years. Every worker in the colony hatched from her eggs. So a queen is not just one ant — she is a whole future colony in one body. That is why a collector will pay $200 for a queen but almost nothing for a worker: with a queen, you can grow thousands of ants; with a worker, you just have one ant.\n\nIt also explains why the smuggling worries scientists so much. Take 100 workers from the savannah and the colony replaces them. Take the queen, and the whole colony eventually dies out with no new eggs. Remember it this way: in an ant colony, one ant makes all the others — and taking her takes the future."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did Kenyan authorities find hidden in a man's luggage at Nairobi airport?",
+      "options": [
+        "More than 2,200 African harvester ants packed in plastic tubes",
+        "5,000 rare beetles hidden inside books",
+        "A live pangolin wrapped in blankets",
+        "Bags of protected grass seeds"
+      ],
+      "answerIndex": 0,
+      "explanation": "Authorities discovered more than 2,200 African harvester ants in small plastic tubes plugged with damp cotton, meant to keep the ants alive on the trip to collectors in China."
+    },
+    {
+      "question": "Why is Kenya a hub for the illegal ant trade?",
+      "options": [
+        "Its laws allow anyone to export ants freely",
+        "It has abundant harvester ant populations plus existing wildlife-smuggling networks",
+        "Its ants are the only ones that survive shipping",
+        "Chinese collectors are only allowed to buy from Kenya"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says Kenya has abundant populations of the species alongside established smuggling networks that have long trafficked wildlife."
+    },
+    {
+      "question": "Why do traffickers go after queen ants in particular?",
+      "options": [
+        "Queens are the biggest and most colorful ants",
+        "Queens are easier to catch than workers",
+        "Each colony has just one breeding female, so a queen can produce a whole new colony",
+        "Queens survive longer without food during shipping"
+      ],
+      "answerIndex": 2,
+      "explanation": "The queen is a colony's only egg-layer — she can live about 25 years and produce thousands of workers, so one queen is worth far more than any number of workers."
+    },
+    {
+      "question": "A queen ant costs about $3 in Kenya but sells for over $200 to collectors abroad. What best explains that price jump?",
+      "options": [
+        "Shipping ants by airplane is extremely expensive",
+        "The ants grow much larger once they leave Kenya",
+        "Black-market sellers charge more because the trade is illegal and risky",
+        "Kenya sets an official worldwide price for its ants"
+      ],
+      "answerIndex": 2,
+      "explanation": "The trade runs on the black market, where sellers risk fines and prison — smugglers charge high prices to make that risk worth taking."
+    },
+    {
+      "question": "According to the article, how do harvester ants help east Africa's savannahs?",
+      "options": [
+        "They eat the insects that attack farm crops",
+        "They spread grass seeds and their nests add oxygen and nutrients to the soil",
+        "They dig water channels that keep the grass wet",
+        "They scare away animals that overgraze the grasslands"
+      ],
+      "answerIndex": 1,
+      "explanation": "As the ants forage they collect and disperse grass seeds, and their underground nests add oxygen to the soil and create nutrient-rich spots where plants grow — many animals, like pangolins, also eat the ants."
+    }
+  ]
+}
