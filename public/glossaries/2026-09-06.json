@@ -1,0 +1,498 @@
+[
+  {
+    "k": "uptake",
+    "t": "uptake",
+    "kind": "vocab",
+    "pron": "UP-tayk",
+    "forms": [
+      "Uptake"
+    ],
+    "text": "The uptake of something new — a technology, a vaccine, a habit — is how readily people actually start using it, as opposed to how many merely could. Here it means workers adopting exoskeletons: uptake is rising fastest among younger workers, who are the quickest to strap the machines on.",
+    "audio": true
+  },
+  {
+    "k": "aspirational",
+    "t": "aspirational",
+    "kind": "vocab",
+    "pron": "as-puh-RAY-shuh-nul",
+    "forms": [
+      "aspirational"
+    ],
+    "text": "Something aspirational appeals to the person you want to be rather than the person you are — from aspire, to aim high. Skip designs its hiking exoskeleton as cool, aspirational “powered clothing” you would covet, not a medical device you might be embarrassed to need.",
+    "audio": true
+  },
+  {
+    "k": "rendered",
+    "t": "rendered",
+    "kind": "vocab",
+    "pron": "REN-derd",
+    "forms": [
+      "rendered"
+    ],
+    "text": "To render something a certain way is to make it that way — a storm renders roads impassable, an injury renders a signal too faint. You may know “render” from computer graphics, but this cause-to-become sense is the one serious writing uses constantly, as here: disease has rendered the muscle signals too weak to work.",
+    "audio": true
+  },
+  {
+    "k": "exoskeleton",
+    "t": "exoskeleton",
+    "kind": "name",
+    "forms": [
+      "Exoskeletons",
+      "exoskeletons",
+      "exoskeleton"
+    ],
+    "text": "Exo- means outside, so an exoskeleton is a skeleton worn on the outside of the body. Biologists use the word for a crab's or insect's hard shell; engineers borrowed it for wearable rigs of motors and braces that add strength or take strain off the wearer's own bones and muscles — the subject of this article.",
+    "audio": true
+  },
+  {
+    "k": "actuator",
+    "t": "actuator",
+    "kind": "name",
+    "forms": [
+      "actuators",
+      "actuator"
+    ],
+    "text": "An actuator is the part of a machine that turns stored energy into actual motion — an electric motor, or a rod driven by pressurised air or fluid. Sensors measure and chips compute, but the actuator is what physically pushes, pulls or lifts; in the French back-support belt, four of them extend and retract like shock absorbers as the wearer bends.",
+    "audio": true
+  },
+  {
+    "k": "staple",
+    "t": "staple",
+    "kind": "word",
+    "forms": [
+      "staple"
+    ],
+    "text": "Not the little wire in your stapler: a staple of something is a standard, ever-present feature of it, the way rice is a staple food. Exoskeletons are a staple of science-fiction films — they show up in them all the time.",
+    "audio": true
+  },
+  {
+    "k": "rig",
+    "t": "rig",
+    "kind": "word",
+    "forms": [
+      "rigs"
+    ],
+    "text": "A rig is a piece of assembled equipment or apparatus built for a job — think of an oil rig or a gaming rig. The article calls exoskeletons “strength-amplifying rigs”: contraptions of straps, motors and frames worn on the body.",
+    "audio": true
+  },
+  {
+    "k": "strength-amplifying",
+    "t": "strength-amplifying",
+    "kind": "word",
+    "forms": [
+      "strength-amplifying"
+    ],
+    "text": "To amplify is to make bigger or stronger — an amplifier boosts a guitar's sound. A strength-amplifying rig takes the force your muscles produce and adds to it, so a weak grip becomes a firm one.",
+    "audio": true
+  },
+  {
+    "k": "restraint",
+    "t": "restraint",
+    "kind": "word",
+    "forms": [
+      "restraint"
+    ],
+    "text": "Restraint is deliberately holding back — not doing everything you could. The article's paradox is that the industry's biggest leap forward was restraint: engineers stopped trying to build do-everything Hollywood supersuits and built smaller machines that help just one part of the body.",
+    "audio": true
+  },
+  {
+    "k": "paradoxically",
+    "t": "paradoxically",
+    "kind": "word",
+    "forms": [
+      "paradoxically"
+    ],
+    "text": "A paradox is something that seems self-contradictory yet is true, so paradoxically flags a surprising twist: you'd expect progress to come from bigger, bolder designs, but here it came from aiming lower.",
+    "audio": true
+  },
+  {
+    "k": "dominant",
+    "t": "dominant",
+    "kind": "word",
+    "forms": [
+      "dominant"
+    ],
+    "text": "Dominant means strongest or most in charge. Your dominant hand is the one you naturally write and work with — Mr Letschert's is his left, which is why its weakness threatened his whole career.",
+    "audio": true
+  },
+  {
+    "k": "tin-snippers",
+    "t": "tin snippers",
+    "kind": "name",
+    "forms": [
+      "tin snippers"
+    ],
+    "text": "Tin snips (here “tin snippers”) are heavy-duty scissors for cutting sheet metal. Squeezing them takes real hand strength, which is why they are a good test of the powered glove.",
+    "audio": true
+  },
+  {
+    "k": "sheet-metal",
+    "t": "sheet metal",
+    "kind": "name",
+    "forms": [
+      "sheet metal"
+    ],
+    "text": "Sheet metal is metal rolled flat into thin sheets, the raw material for ducts, roofs and car panels. Factories bend it into shape with powerful press machines — the kind that crushed Mr Letschert's hands.",
+    "audio": true
+  },
+  {
+    "k": "scaffolding",
+    "t": "scaffolding",
+    "kind": "word",
+    "forms": [
+      "scaffolding"
+    ],
+    "text": "Scaffolding is the temporary framework of metal poles and platforms erected around a building so workers can reach high places. Climbing it while carrying materials demands a strong grip.",
+    "audio": true
+  },
+  {
+    "k": "hardly",
+    "t": "hardly",
+    "kind": "word",
+    "forms": [
+      "hardly"
+    ],
+    "text": "A sense trap: hardly does not mean “in a hard way” — it means barely, or not really at all. “Ironhand is hardly cheap” is a dry way of saying it is expensive.",
+    "audio": true
+  },
+  {
+    "k": "spinal-cord",
+    "t": "spinal cord",
+    "kind": "name",
+    "forms": [
+      "spinal-cord"
+    ],
+    "text": "The spinal cord is the thick bundle of nerves running down inside your backbone, the highway carrying the brain's movement commands to the body. When an injury cuts it, signals can no longer reach the legs — which is why people with spinal-cord injuries may be unable to walk even though their leg muscles are intact.",
+    "audio": true
+  },
+  {
+    "k": "crutches",
+    "t": "crutches",
+    "kind": "word",
+    "forms": [
+      "crutches"
+    ],
+    "text": "Crutches are the tall supports that fit under the arms or forearms and take weight off the legs. ReWalk users typically still need them for balance while the exoskeleton drives their legs through each step.",
+    "audio": true
+  },
+  {
+    "k": "sophisticated",
+    "t": "sophisticated",
+    "kind": "word",
+    "forms": [
+      "sophisticated"
+    ],
+    "text": "Sophisticated means advanced and complex, with many refined parts working together. The article calls MyoPro's activation more sophisticated than ReWalk's because it reads the body's own electrical signals instead of just detecting a lean.",
+    "audio": true
+  },
+  {
+    "k": "electrode",
+    "t": "electrode",
+    "kind": "name",
+    "forms": [
+      "electrodes"
+    ],
+    "text": "An electrode is a small conductor that carries electricity into or out of something — here, sticker-like pads on the skin that pick up the faint electrical pulses the body sends its muscles.",
+    "audio": true
+  },
+  {
+    "k": "microprocessor",
+    "t": "microprocessor",
+    "kind": "name",
+    "forms": [
+      "microprocessor"
+    ],
+    "text": "A microprocessor is a complete computer processor on a single tiny chip — the same kind of part that runs your phone. In MyoPro it analyses the electrode readings and works out which gesture the wearer is attempting.",
+    "audio": true
+  },
+  {
+    "k": "infer",
+    "t": "infer",
+    "kind": "word",
+    "forms": [
+      "infer"
+    ],
+    "text": "To infer is to work something out from clues rather than being told directly — a detective infers who did it from fingerprints. MyoPro's chip infers the intended gesture from the pattern of muscle signals it measures.",
+    "audio": true
+  },
+  {
+    "k": "contraction",
+    "t": "contraction",
+    "kind": "word",
+    "forms": [
+      "contractions"
+    ],
+    "text": "A contraction here is a muscle tightening and shortening — that is how all movement happens, not the grammar kind like “don't.” Injury has left the nerve signals too faint to trigger sufficient contractions, so the arm stays still.",
+    "audio": true
+  },
+  {
+    "k": "faint",
+    "t": "faint",
+    "kind": "word",
+    "forms": [
+      "faint"
+    ],
+    "text": "Faint means weak, dim, barely detectable — a faint sound, a faint signal. The muscle signals still exist but are too faint to make the muscle contract, though electrodes can still pick them up.",
+    "audio": true
+  },
+  {
+    "k": "torso",
+    "t": "torso",
+    "kind": "word",
+    "forms": [
+      "torso"
+    ],
+    "text": "The torso is the trunk of the body — chest, back and belly, without the head, arms or legs. The Japet.W+ belt wraps around the waist and lower torso to support the spine.",
+    "audio": true
+  },
+  {
+    "k": "shock-absorber",
+    "t": "shock absorber",
+    "kind": "name",
+    "forms": [
+      "shock absorbers"
+    ],
+    "text": "A shock absorber is the piston-in-a-cylinder device on a car or mountain bike that smooths out bumps by resisting sudden movement. The back-support belt's four actuators look and work like small shock absorbers, extending and retracting as the wearer bends.",
+    "audio": true
+  },
+  {
+    "k": "retract",
+    "t": "retract",
+    "kind": "word",
+    "forms": [
+      "retract"
+    ],
+    "text": "To retract is to pull back in — a cat retracts its claws, landing gear retracts into a plane. The belt's actuators extend and retract as the wearer moves, taking pressure off the lower spine.",
+    "audio": true
+  },
+  {
+    "k": "strenuous",
+    "t": "strenuous",
+    "kind": "word",
+    "forms": [
+      "strenuous"
+    ],
+    "text": "Strenuous work demands great physical effort and energy — the kind that leaves you sweating and sore. Lifting patients or hauling freight is strenuous labour, which is exactly where exoskeletons are catching on.",
+    "audio": true
+  },
+  {
+    "k": "labour",
+    "t": "labour",
+    "kind": "word",
+    "forms": [
+      "labour"
+    ],
+    "text": "Labour is simply the British spelling of labor: physical work. The Economist is a British publication, so you will also see “licence”, “tyres” and “paralysed” in this piece.",
+    "audio": true
+  },
+  {
+    "k": "freight",
+    "t": "freight",
+    "kind": "word",
+    "forms": [
+      "freight-transport"
+    ],
+    "text": "Freight is goods transported in bulk — the cargo on trucks, trains and ships. Freight-transport workers load and unload it all day, so heavy-lifting exoskeletons suit them.",
+    "audio": true
+  },
+  {
+    "k": "union",
+    "t": "union",
+    "kind": "name",
+    "forms": [
+      "union bosses"
+    ],
+    "text": "A union (in full, a labour union or trade union) is an organisation workers form to bargain with employers as a group over pay, hours and safety. Some union leaders worry that if exoskeletons make workers stronger, companies will respond by simply demanding more output.",
+    "audio": true
+  },
+  {
+    "k": "production-targets",
+    "t": "production targets",
+    "kind": "name",
+    "forms": [
+      "production targets"
+    ],
+    "text": "A production target is the quota a company sets for how much workers must produce in a shift or a week. The union fear is that gains from exoskeletons would be swallowed by higher targets rather than easier days.",
+    "audio": true
+  },
+  {
+    "k": "ego",
+    "t": "ego",
+    "kind": "word",
+    "forms": [
+      "Egos"
+    ],
+    "text": "Your ego is your sense of self-importance and pride. “Egos matter” means pride shapes the decision: some men refuse the equipment because wearing help feels like admitting weakness.",
+    "audio": true
+  },
+  {
+    "k": "dismiss",
+    "t": "dismiss",
+    "kind": "word",
+    "forms": [
+      "dismiss"
+    ],
+    "text": "To dismiss something is to wave it away as unworthy of consideration. About a third of potential male users dismiss the exoskeleton as being for wimps — they reject it without really trying it.",
+    "audio": true
+  },
+  {
+    "k": "kit",
+    "t": "kit",
+    "kind": "word",
+    "forms": [
+      "kit"
+    ],
+    "text": "In British English, kit means equipment or gear — sports kit, camera kit. Here “the kit” is just the exoskeleton itself.",
+    "audio": true
+  },
+  {
+    "k": "wimp",
+    "t": "wimp",
+    "kind": "word",
+    "forms": [
+      "wimps"
+    ],
+    "text": "A wimp is an informal, mocking word for a weak or timid person. The insult explains the ego problem: some workers fear the gear brands them as not tough enough for the job.",
+    "audio": true
+  },
+  {
+    "k": "reluctant",
+    "t": "reluctant",
+    "kind": "word",
+    "forms": [
+      "reluctant"
+    ],
+    "text": "Reluctant means unwilling, hesitant to do something. Younger workers are increasingly reluctant to wear their bodies out for an employer — so they are the readiest to accept mechanical help.",
+    "audio": true
+  },
+  {
+    "k": "ride-on",
+    "t": "ride on",
+    "kind": "phrase",
+    "forms": [
+      "will ride on"
+    ],
+    "text": "When one thing rides on another, it depends on it — “everything rides on this exam.” Much will ride on workplace testing: whether exoskeletons spread depends on whether pilots like Michelin's show they really prevent injuries.",
+    "audio": true
+  },
+  {
+    "k": "pilot-deployment",
+    "t": "pilot deployment",
+    "kind": "name",
+    "forms": [
+      "pilot deployment"
+    ],
+    "text": "A pilot (nothing to do with flying) is a small-scale trial run of something before committing to it fully — a pilot program, a pilot episode. Michelin's centre in Spain is running a pilot deployment of six Ironhands to see whether the gloves reduce injuries before buying more.",
+    "audio": true
+  },
+  {
+    "k": "repetitive-strain-injury",
+    "t": "repetitive-strain injury",
+    "kind": "name",
+    "forms": [
+      "repetitive-strain injuries"
+    ],
+    "text": "A repetitive-strain injury (RSI) is damage that builds up from doing the same motion thousands of times — the wrist pain of typists, the sore elbows of tennis players. Workers who cut tyres open all day are prime candidates, which is what the Michelin trial hopes the gloves prevent.",
+    "audio": true
+  },
+  {
+    "k": "licence",
+    "t": "licence",
+    "kind": "word",
+    "forms": [
+      "licence"
+    ],
+    "text": "Licence (British spelling of license) here means permission or freedom to do something, not a plastic card. Makers stress the technology is not a licence to lift heavier loads — the assistance is meant to reduce strain, not to justify taking on more.",
+    "audio": true
+  },
+  {
+    "k": "reroute",
+    "t": "reroute",
+    "kind": "word",
+    "forms": [
+      "reroutes"
+    ],
+    "text": "To reroute is to send something along a different path, like a GPS rerouting you around traffic. An exoskeleton reroutes mechanical forces through its own frame — which helps one joint but may load up another, and researchers want to know whether that causes new problems.",
+    "audio": true
+  },
+  {
+    "k": "edge-into",
+    "t": "edge into",
+    "kind": "word",
+    "forms": [
+      "edge into"
+    ],
+    "text": "To edge into something is to move into it slowly and cautiously, a little at a time. Exoskeletons are edging into the consumer market: a few hiking and running products are appearing, but it is early days.",
+    "audio": true
+  },
+  {
+    "k": "production-capacity",
+    "t": "production capacity",
+    "kind": "name",
+    "forms": [
+      "production capacity"
+    ],
+    "text": "Production capacity is the maximum a factory can make in a given time. Saying six months of production capacity is already ordered means customers have bought everything Skip can build for the next half-year — a sign of strong demand.",
+    "audio": true
+  },
+  {
+    "k": "movewear",
+    "t": "movewear",
+    "kind": "name",
+    "forms": [
+      "movewear"
+    ],
+    "text": "“Movewear” is a marketing word Skip coined, blending movement and wear (as in sportswear), for motorised clothing that helps you move. Putting it in quotes, the article signals the term is the company's invention, not established English.",
+    "audio": true
+  },
+  {
+    "k": "styles",
+    "t": "styles",
+    "kind": "word",
+    "forms": [
+      "styles"
+    ],
+    "text": "A sense trap: to style something a name is to call or brand it that — “consumer movewear, as Skip styles it” means that is the label Skip has chosen, with a hint that the writer is not endorsing it.",
+    "audio": true
+  },
+  {
+    "k": "buzzy",
+    "t": "buzzy",
+    "kind": "word",
+    "forms": [
+      "buzziest"
+    ],
+    "text": "Buzzy describes something generating buzz — excited chatter and hype. The buzziest consumer exoskeleton is the one everyone online is talking about, Hypershell's powered hips.",
+    "audio": true
+  },
+  {
+    "k": "prominent",
+    "t": "prominent",
+    "kind": "word",
+    "forms": [
+      "prominent"
+    ],
+    "text": "Prominent means standing out — widely known and noticed. A prominent reviewer is one with a big audience, so their verdict on a product carries weight.",
+    "audio": true
+  },
+  {
+    "k": "whereby",
+    "t": "whereby",
+    "kind": "word",
+    "forms": [
+      "whereby"
+    ],
+    "text": "Whereby is a formal connector meaning “by which” or “through which”: a puppet effect whereby the exoskeleton moves the user means an effect in which that is what happens. Common in legal and serious writing.",
+    "audio": true
+  },
+  {
+    "k": "here-to-stay",
+    "t": "here to stay",
+    "kind": "phrase",
+    "forms": [
+      "here to stay"
+    ],
+    "text": "A set phrase: something here to stay has become permanent — it will not fade away like a fad. The article's closing verdict is that unlike the failed combat supersuits, today's modest exoskeletons are here to stay.",
+    "audio": true
+  }
+]

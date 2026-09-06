@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-06",
+  "title": "Humble exoskeletons work better than combat supersuits",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/02/humble-exoskeletons-work-better-than-combat-supersuits",
+  "articlePageUrl": "/articles/2026-09-06.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "uptake",
+      "partOfSpeech": "noun",
+      "pronunciation": "UP-tayk",
+      "articleQuote": "Uptake is rising fastest among younger workers who are increasingly reluctant, Mr Duwe says, \"to use their body as a simple resource\" for a company.",
+      "meaning": "The uptake of something new — a technology, a vaccine, a habit — is how readily people actually start using it, as opposed to how many merely could. Journalists reach for it whenever the story is adoption: here it means workers strapping on exoskeletons, and the article notes that younger workers are the quickest to do so, so uptake is rising fastest among them.",
+      "examples": [
+        "The school launched an esports club, but uptake was slow — only five students signed up in the first month.",
+        "Free tutoring runs every Tuesday, and the counselor advertises it during homeroom to boost uptake."
+      ]
+    },
+    {
+      "word": "aspirational",
+      "partOfSpeech": "adjective",
+      "pronunciation": "as-puh-RAY-shuh-nul",
+      "articleQuote": "The units, which strap to the thigh and calf, and weigh less than 1kg, are designed to be cool, aspirational “powered clothing”, not something that looks like a medical device, says Kathryn Zealand, Skip’s boss.",
+      "meaning": "Something aspirational appeals to the person you *want* to be rather than the person you are — the word comes from *aspire*, to aim high. Marketers lean on it to sell products as a slice of a dream life, and that is exactly the move here: Skip styles its hiking exoskeleton as cool, aspirational \"powered clothing\" you would covet, not a medical device you might be embarrassed to need.",
+      "examples": [
+        "The sneaker ad barely showed the shoes — it was pure aspirational footage of athletes training at dawn and winning at dusk.",
+        "Her study-with-me channel is more aspirational than realistic: sunrise workouts, flawless notes, color-coded planners."
+      ]
+    },
+    {
+      "word": "rendered",
+      "partOfSpeech": "verb",
+      "pronunciation": "REN-derd",
+      "articleQuote": "These read muscle signals that injury or disease has rendered too faint to trigger sufficient contractions.",
+      "meaning": "To render something a certain way is to *make* it that way — a storm renders roads impassable, an injury renders a signal too faint. You may know \"render\" from computer graphics, where it means drawing an image, but this cause-to-become sense is the one serious writing uses constantly. In the article, nerve damage has rendered the body's muscle signals too weak to make the muscles contract on their own.",
+      "examples": [
+        "One broken string rendered the guitar useless for the rest of the show.",
+        "The snowstorm rendered the highway impassable, so the game was pushed to Saturday."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Actuators",
+      "articleQuote": "When the wearer bends, lifts or carries objects, four actuators that resemble shock absorbers extend or retract, reducing pressure on the lower spine.",
+      "meaning": "Every machine in this article — the glove that tightens a weakened grip, the legs that walk for a paralysed wearer, the belt that takes strain off a roofer's spine — depends on one engineering part: the **actuator**, the component that turns stored energy into physical motion. A sensor can measure and a chip can compute, but nothing in the real world moves until an actuator pushes, pulls, spins or stretches. Electric motors are the most common kind; others use pressurised air or fluid in a cylinder, like the shock-absorber-style rods on the French back-support belt that extend and retract as the wearer bends.\n\nEngineers usually build robots as a three-part chain, and the article's opening device walks it perfectly. In the Ironhand glove, pressure sensors in the fingertips and palm *measure* how hard the hand is gripping; a small computer *compares* those readings with its programmed thresholds; and when they cross the line, five little motors — the actuators — *act*, winding in cables that pull the fingers tighter. Sense, compute, act. A thermostat's chain ends in an actuator that switches the furnace on; a car's anti-lock brakes end in actuators that pulse the brake pressure many times a second. Next time you read about any robot, look for its actuators — whatever the software computes, they are the only parts that actually touch the world."
+    },
+    {
+      "name": "Muscle signals",
+      "articleQuote": "Its exoskeleton, MyoPro, moves a paralysed arm and hand with help from electrodes attached to the skin.",
+      "meaning": "Every time you move, your brain sends the muscle a command as a tiny electrical pulse — down the spinal cord, along a nerve, into the muscle fibres, which contract when the pulse arrives. Those pulses are real, measurable electricity, and a faint trace of each one reaches the surface of the skin. Measuring that trace is a technique from biomedical engineering called **electromyography**, or EMG: sticker-like electrodes on the skin pick up the tiny voltage changes happening in the muscle underneath.\n\nThat is how the MyoPro arm in the article works. For someone whose arm is paralysed, the brain still sends its commands, but injury or disease has rendered the pulses too faint to make the muscle contract. They are still strong enough to detect, though. Electrodes on the skin pick them up, a microprocessor matches the voltage pattern to the gesture it belongs to — *this* pattern shows up when the person tries to bend the elbow — and motors then move the elbow the way the muscle would have. The person moves their own arm simply by trying to move it; the machine supplies the strength the body no longer can. The same trick drives modern prosthetic hands, so when a headline says a device is \"controlled by thought\", check the fine print — it is usually reading muscle electricity at the skin, not reading the brain."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what was the \"biggest leap forward\" that finally made exoskeletons useful?",
+      "options": [
+        "Military funding for full-body combat suits",
+        "Restraint — designing machines that assist just one part of the body",
+        "A breakthrough that made batteries ten times cheaper",
+        "New laws requiring companies to protect workers' backs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The expert quoted says the industry's biggest leap was restraint: it stopped chasing \"Hollywood, do-it-all\" designs and focused on assisting a single part of the body."
+    },
+    {
+      "question": "What happens inside the Ironhand glove when its sensors detect pressure in the fingertips and palm?",
+      "options": [
+        "Electrodes send electrical pulses into the hand's muscles",
+        "Air pumps inflate the glove to cushion the grip",
+        "Five small motors pull cables that tighten the wearer's grip",
+        "Elastic bands release energy stored from earlier movements"
+      ],
+      "answerIndex": 2,
+      "explanation": "When the glove's sensors detect pressure, five little motors whir into action, pulling cables that tighten the grip — a sensors-to-actuators chain."
+    },
+    {
+      "question": "\"Uptake is rising fastest among younger workers…\" In this sentence, uptake most nearly means:",
+      "options": [
+        "criticism of a new technology",
+        "adoption — people actually starting to use something",
+        "the amount a machine can lift",
+        "the speed of a factory's production line"
+      ],
+      "answerIndex": 1,
+      "explanation": "Uptake is how readily people take up — start using — something new; here, workers adopting exoskeletons."
+    },
+    {
+      "question": "How does the MyoPro exoskeleton figure out which movement a person with a paralysed arm intends to make?",
+      "options": [
+        "A camera watches the arm and copies its small movements",
+        "The user selects each gesture on a smartphone app",
+        "It runs through a fixed sequence of pre-programmed motions",
+        "Electrodes on the skin read faint electrical signals from the muscles"
+      ],
+      "answerIndex": 3,
+      "explanation": "Electrodes read muscle signals too faint to trigger contractions, and a microprocessor infers the intended gesture before motors move the elbow and hand."
+    },
+    {
+      "question": "What was the \"puppet effect\" a prominent reviewer reported about Hypershell's powered hips?",
+      "options": [
+        "The exoskeleton was moving the user rather than the other way round",
+        "The device made the wearer look like a marionette on stage",
+        "The hips only worked when controlled remotely by another person",
+        "The suit collapsed whenever its battery ran out"
+      ],
+      "answerIndex": 0,
+      "explanation": "The reviewer felt tugged into robotic movements — the exoskeleton moving the user rather than the user moving it — which the article says most users won't want."
+    }
+  ]
+}
