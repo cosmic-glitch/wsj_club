@@ -150,13 +150,17 @@ refuses to write a teaser (exit 2) for the same reason.
 - `commit-message.mjs` — the commit message for an auto-published day
   (`--track=junior` adds the "Junior: " prefix the hand-authored junior days use).
 - `ship.sh` — stage the day's files, commit, rebase, push (or branch on dry
-  run), wait for the live URL. The only thing that touches git. `--track=junior`
-  selects the junior paths, branch and URL.
+  run), drop `state/<date>[-junior]-pushed`, return. The only thing that touches
+  git; it never waits for the deploy (the wrapper does). `--track=junior`
+  selects the junior paths and branch.
 - `notify.mjs` — drop a nanoclaw IPC message → WhatsApp: the owner's DM by
-  default, `--to=group` for the club group (the daily announcements).
+  default, `--to=group` for the club group (the daily announcements — sent by
+  `run-auto-publish.sh` once it has verified the day is live, never by the skill).
 - `run-auto-vote.sh` / `run-auto-publish.sh` — the cron entrypoints (Pacific
-  gate → lock → `git pull` → `xvfb-run claude -p` → outcome check), one per
-  phase for both tracks (`--track=junior`).
+  gate → lock → `git pull` → `xvfb-run claude -p` → outcome check; the publish
+  wrapper's outcome check also polls the live URL for up to 12 minutes and then
+  sends the announcement / owner DM), one per phase for both tracks
+  (`--track=junior`).
 - `state/` — box-local hand-off between the two runs (`<date>-field.json`,
   `<date>-tally.json`; junior `<date>-junior-field.json`, `<date>-junior-tally.json`);
   `logs/` — per-day logs + the lock.

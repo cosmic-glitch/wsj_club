@@ -1,18 +1,18 @@
 ---
 name: auto-publish
-description: AUTONOMOUS daily publisher for the Reading Club, run UNATTENDED from the Hetzner box by cron at 11am Pacific — the afternoon half of the autopilot (auto-vote opens the ballot at 6am). Tallies the day's senior vote, captures the winning Economist article via the saved session in .bot/, authors the full handout (vocab, concepts, quiz, glossary, audio) to the wsj-reading calibration WITHOUT a human sign-off, ships it to main (= deploys; publishing is what closes the vote) via .bot/ship.sh, and announces it to the club's WhatsApp group over nanoclaw in one fixed line. Senior track only. Do NOT invoke this by hand for the normal interactive flow — use wsj-check-vote + wsj-reading for that; this exists so the cron can run tally→author→publish with no human in the loop.
+description: AUTONOMOUS daily publisher for the Reading Club, run UNATTENDED from the Hetzner box by cron at 11am Pacific — the afternoon half of the autopilot (auto-vote opens the ballot at 6am). Tallies the day's senior vote, captures the winning Economist article via the saved session in .bot/, authors the full handout (vocab, concepts, quiz, glossary, audio) to the wsj-reading calibration WITHOUT a human sign-off, ships it to main (= deploys; publishing is what closes the vote) via .bot/ship.sh; the cron wrapper then verifies the deploy and announces it to the club's WhatsApp group over nanoclaw in one fixed line. Senior track only. Do NOT invoke this by hand for the normal interactive flow — use wsj-check-vote + wsj-reading for that; this exists so the cron can run tally→author→publish with no human in the loop.
 ---
 
 # Reading Club — autonomous daily publish (Hetzner cron)
 
-You are running **unattended** on the Hetzner box (`run-auto-publish.sh` fired at 11am Pacific). Your job: turn the day's vote into the day's published reading with no human in the loop, then announce it to the club's WhatsApp group. There is **no approval step** — you are the author *and* the reviewer, so the quality gates below are strict and mechanical wherever a script can check them. The owner reviews **after** the fact and fixes anything they dislike interactively; a weak card is a re-push, but a **wrong** one (a quote that isn't in the article, a broken page, a half-shipped day) is the failure to avoid.
+You are running **unattended** on the Hetzner box (`run-auto-publish.sh` fired at 11am Pacific). Your job: turn the day's vote into the day's published reading with no human in the loop; the cron wrapper then verifies the deploy and announces it to the club's WhatsApp group (you never message anyone). There is **no approval step** — you are the author *and* the reviewer, so the quality gates below are strict and mechanical wherever a script can check them. The owner reviews **after** the fact and fixes anything they dislike interactively; a weak card is a re-push, but a **wrong** one (a quote that isn't in the article, a broken page, a half-shipped day) is the failure to avoid.
 
 This is the autonomous cousin of **`wsj-check-vote` + `wsj-reading`**. **`wsj-reading/SKILL.md` stays the single source of truth for everything editorial** — the audience calibration, the card recipes (vocab article-first, concepts Feynman-style and concrete-before-abstract, the 5-question quiz), the content schema, the glossary rules. **Read those sections of it before authoring** (its "audience calibration", "Hard rules", steps 4–6, "Content file schema"); this skill lists only what differs:
 
 1. **Inputs come from the tally**, not the user (Step 1). The winner is whatever the club voted for; you don't re-pick.
 2. **Capture goes through `.bot/capture.mjs`** (the box's own Playwright + saved Economist session), never the Playwright MCP (not available here). It runs the very same `scripts/capture-article.js` snippet the interactive skill uses.
 3. **No sign-off.** The manual checkpoint is replaced by a written self-review (Step 4) plus `scripts/check-content.mjs`, which verifies every quote against the captured text mechanically.
-4. **Git goes through `.bot/ship.sh`** — never drive `git commit`/`push` yourself. It stages exactly the day's files, rebases, refuses to stomp a hand-published day, pushes, and waits for the deploy.
+4. **Git goes through `.bot/ship.sh`** — never drive `git commit`/`push` yourself. It stages exactly the day's files, rebases, refuses to stomp a hand-published day, pushes, and returns — the wrapper waits for the deploy.
 5. **Senior track, Economist only** (the box is IP-blocked by WSJ; the ballot never carries WSJ). The junior track has its own sibling, `auto-publish-junior`, queued behind this run; enrichment stays interactive.
 
 All commands run from the repo root (`~/wsj_club`). `.bot/` browsing scripts take `node --env-file=.bot/.env …`; the `scripts/` CLIs take `node --env-file=.env.local …` (the wrapper also exports both env files into the session, but keep the explicit form). `AUTOPUBLISH_DATE` and `AUTOPUBLISH_DRY_RUN` are set by the wrapper.
@@ -98,47 +98,24 @@ must print `ok`. Fix **every** ERROR: a quote it can't find is a quote you misre
 
 `npm run build` must succeed (it validates every content file). A failure on a new day is almost always malformed JSON — fix and re-run. Never ship without a passing build.
 
-## Step 8 — Ship
+## Step 8 — Ship, then stop
 
 ```bash
 .bot/ship.sh "$TODAY"              # live
 .bot/ship.sh "$TODAY" --dry-run    # when AUTOPUBLISH_DRY_RUN=1
 ```
 
-Live: commits the day's files on `main`, rebases on `origin/main`, pushes (= deploys), and waits until `https://dailyreadingclub.com/reading/${TODAY}` serves. Dry run: the same commit goes to branch `auto/${TODAY}` (pushed; `main` untouched; Vercel builds a preview of the branch) and the tree returns to `main`.
+Live: commits the day's files on `main`, rebases on `origin/main`, pushes (= deploys) and **returns right after the push** — well under a minute; it does not wait for Vercel. Dry run: the same commit goes to branch `auto/${TODAY}` (pushed; `main` untouched; Vercel builds a preview of the branch) and the tree returns to `main`.
 
-- Exit **0** → shipped (or dry-run branch pushed). Continue to Step 9.
-- Exit **3** → `origin/main` already had the day (the owner published by hand while you worked). Your commit was dropped. **Exit 0 silently** — nothing to announce.
+**Run it in the foreground as a plain Bash call and wait for its exit code. Never run it in the background**, and never end your turn while it is running: this is a `claude -p` session — the moment you stop, the session exits and anything still running in the background is killed with it.
+
+- Exit **0** → pushed. `ship.sh` dropped `.bot/state/${TODAY}-pushed`; the wrapper takes it from here (Step 9). Finish your output with the run summary and stop.
+- Exit **3** → `origin/main` already had the day (the owner published by hand while you worked). Your commit was dropped. **Exit 0 silently.**
 - Exit **4** → nothing pushed (credential/network). Failure path.
-- Exit **5** → pushed to `main`, but the site hadn't served the handout after 12 minutes. The commit **is** on main, but the reading is not verifiably up, so **do not announce to the group** — DM the owner instead (Step 9's warning form); the wrapper's outcome check will also flag it.
 
-## Step 9 — Announce to the club group
+## Step 9 — The wrapper announces (you send nothing)
 
-**Live run, ship exit 0:** one WhatsApp message to the **club group**, always this exact shape and nothing more — no other links, no vote stats, no word list, no emoji, no date:
-
-```
-Today's article is up ("<title>").  dailyreadingclub.com
-```
-
-`<title>` is the content JSON's `title` verbatim (the article's own headline) inside straight double quotes, then a period after the closing parenthesis, then **two spaces** and the bare address `dailyreadingclub.com` (no `https://`, no path — WhatsApp links it as is). Write it to a file (the heredoc is single-quoted, so apostrophes in the title are safe) and send with `--to=group`:
-
-```bash
-cat > /tmp/publish-notify.txt <<'MSG'
-Today's article is up ("<title>").  dailyreadingclub.com
-MSG
-node --env-file=.bot/.env .bot/notify.mjs --to=group --file /tmp/publish-notify.txt
-```
-
-The group JID is `NANOCLAW_GROUP_JID` in `.bot/.env`; if it is unset, `notify.mjs` sends the same line to the owner's DM with a note saying so — never skip the send.
-
-**Everything else goes to the owner's DM (default target), never the group:**
-
-- Dry run: `🧪 Reading Club DRY RUN — <TODAY> (nothing published): "<title>" → branch auto/<TODAY> pushed, main untouched; delete .bot/DRY_RUN on the box to go live.`
-- Ship exit 5: `⚠️ Reading Club — <TODAY> "<title>" is on main but the site hadn't served it after 12 min — check Vercel. The group was NOT told; announce by hand once it's live.`
-
-The owner's window into what you chose and why is the commit and the log, not the message — **voter names never go in any message.**
-
-Then stop.
+After your session ends, `run-auto-publish.sh` polls `https://dailyreadingclub.com/reading/${TODAY}` for up to 12 minutes and, once it serves, sends the club group its one fixed line — `Today's article is up ("<title>").  dailyreadingclub.com` — built from the content JSON's `title`. The dry-run note and the pushed-but-not-serving warning go to the owner's DM the same way, and every message is gated on the marker from Step 8, so a day the owner published by hand is never announced by the autopilot. **You never call `notify.mjs` in this skill** — no message to the group, none to the owner. The owner's window into what you chose and why is the commit and the log; **voter names never go in either.**
 
 ## Failure handling
 

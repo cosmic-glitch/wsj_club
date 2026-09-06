@@ -1,6 +1,10 @@
 #!/bin/bash
 # Autonomous daily PUBLISH for the Reading Club — the afternoon cousin of
-# run-auto-vote.sh, one wrapper for both tracks:
+# run-auto-vote.sh, one wrapper for both tracks. The agentic session inside it
+# tallies, captures, authors and pushes (via ship.sh); THIS script then waits
+# for Vercel to serve the day and sends the WhatsApp messages — the model never
+# sits on a long wait or messages anyone (a `claude -p` session ends the moment
+# the model ends its turn, and anything it left in the background dies with it).
 #   bash .bot/run-auto-publish.sh                 # senior (default): the auto-publish skill
 #   bash .bot/run-auto-publish.sh --track=junior  # junior: the auto-publish-junior skill
 #
@@ -50,16 +54,27 @@ cd "$PROJECT_DIR" || exit 1
 # Per-track knobs: the skill, the content path, the branch a dry run lands on,
 # and the URL that proves the day is serving.
 TODAY="${AUTOPUBLISH_DATE:-$(TZ=America/Los_Angeles date +%F)}"
+# MARK is dropped by ship.sh after a successful push — the announcement is
+# gated on it, so a day the owner published by hand while the run worked is
+# never announced by us.
 if [ "$TRACK" = "junior" ]; then
   NAME="auto-publish-junior"
   CONTENT="content/junior/${TODAY}.json"
   DRY_BRANCH="auto/junior/${TODAY}"
   READING_URL="https://dailyreadingclub.com/junior/reading/${TODAY}"
+  MARK=".bot/state/${TODAY}-junior-pushed"
+  ANNOUNCE="Today's junior-track article is up"
+  SITE="dailyreadingclub.com/junior"
+  TRACK_LABEL="JUNIOR "
 else
   NAME="auto-publish"
   CONTENT="content/${TODAY}.json"
   DRY_BRANCH="auto/${TODAY}"
   READING_URL="https://dailyreadingclub.com/reading/${TODAY}"
+  MARK=".bot/state/${TODAY}-pushed"
+  ANNOUNCE="Today's article is up"
+  SITE="dailyreadingclub.com"
+  TRACK_LABEL=""
 fi
 
 LOG_DIR="$PROJECT_DIR/.bot/logs"
@@ -134,40 +149,73 @@ else
   log "WARNING xvfb-run not found; running headless, the capture will likely be bot-blocked"
 fi
 
-# One agentic session runs tally → capture → author → ship → notify. Same
-# invocation shape as run-auto-vote.sh (unattended, so no permission prompts).
+# One agentic session runs tally → capture → author → ship (the push only).
+# Same invocation shape as run-auto-vote.sh (unattended, so no permission
+# prompts). A stale marker from an earlier attempt must not gate today's send.
+rm -f "$MARK"
 CLAUDE_RC=0
 "${XVFB[@]}" claude -p "Use the ${NAME} skill to publish today's Reading Club ${TRACK} reading (date ${TODAY}, mode ${MODE}). Run fully autonomously end to end — never pause for confirmation — and follow the skill's guards, quality gates, and failure handling exactly." \
   --dangerously-skip-permissions \
   >> "$LOG_FILE" 2>&1 || CLAUDE_RC=$?
 log "claude session exited (rc=$CLAUDE_RC)"
 
-# --- Outcome check (the alerting contract) ----------------------------------
+# --- Outcome check + messages (the alerting contract) -----------------------
 # claude -p exits 0 even when the skill's failure path ran, so success is
 # verified from the outcome: LIVE = the day is on origin/main AND the site
-# serves it; DRY RUN = origin has the dry-run branch. Anything else exits 1 so
-# the cron's healthcheck pages the owner (the skill's failure path is silent).
+# serves it — polled for up to ~12 minutes, since ship.sh returns right after
+# the push and Vercel builds it afterwards; DRY RUN = origin has the dry-run
+# branch. Anything else exits 1 so the cron's healthcheck pages the owner (the
+# skill's failure path is silent).
+# The messages are sent from here, never from the skill, and only when MARK
+# exists (ship.sh pushed in THIS run): the club group gets the one fixed
+# announcement line for a verified-live day; the owner's DM gets the dry-run
+# note or the pushed-but-not-serving warning.
 git fetch -q origin >> "$LOG_FILE" 2>&1
+title_of() { # title_of <git object, e.g. origin/main:content/2026-09-06.json>
+  git show "$1" 2>/dev/null | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(String(JSON.parse(s).title||""))}catch{}})'
+}
+notify() { # notify <owner|group> <text> — NANOCLAW_* come from .bot/.env, sourced above
+  if printf '%s' "$2" | node .bot/notify.mjs --to="$1" --stdin >> "$LOG_FILE" 2>&1; then
+    log "notified ${1}: $2"
+  else
+    log "WARNING notify.mjs --to=${1} failed (see above); the message was: $2"
+  fi
+}
 if [ "$MODE" = "dry-run" ]; then
   if git rev-parse -q --verify "origin/${DRY_BRANCH}" >/dev/null; then
     log "outcome OK — dry run landed on origin/${DRY_BRANCH}"
     RC=0
+    if [ -f "$MARK" ]; then
+      notify owner "🧪 ${TRACK_LABEL}Reading Club DRY RUN — ${TODAY} (nothing published): \"$(title_of "origin/${DRY_BRANCH}:${CONTENT}")\" → branch ${DRY_BRANCH} pushed, main untouched; delete .bot/DRY_RUN (or DRY_RUN-${TRACK}) on the box to go live."
+    fi
   else
     log "OUTCOME FAILURE — no origin/${DRY_BRANCH} branch after the dry run"
     RC=1
   fi
-else
-  CODE="$(curl -s -o /dev/null -w '%{http_code}' -m 20 "$READING_URL" || echo 000)"
-  if git cat-file -e "origin/main:${CONTENT}" 2>/dev/null && [ "$CODE" = "200" ]; then
-    log "outcome OK — ${TRACK} reading ${TODAY} is on main and live"
+elif git cat-file -e "origin/main:${CONTENT}" 2>/dev/null; then
+  CODE=000
+  for i in $(seq 1 36); do
+    CODE="$(curl -s -o /dev/null -w '%{http_code}' -m 20 "$READING_URL" || echo 000)"
+    [ "$CODE" = "200" ] && break
+    sleep 20
+  done
+  TITLE="$(title_of "origin/main:${CONTENT}")"
+  if [ "$CODE" = "200" ]; then
+    log "outcome OK — ${TRACK} reading ${TODAY} is on main and live (poll ${i})"
     RC=0
-  elif git cat-file -e "origin/main:${CONTENT}" 2>/dev/null; then
-    log "OUTCOME PARTIAL — ${TRACK} ${TODAY} is on origin/main but the site returns HTTP ${CODE}; check the Vercel deploy"
-    RC=1
+    if [ -f "$MARK" ]; then
+      notify group "${ANNOUNCE} (\"${TITLE}\").  ${SITE}"
+    else
+      log "not announcing — no ${MARK}, so this run didn't push it (published by hand meanwhile)"
+    fi
   else
-    log "OUTCOME FAILURE — ${TRACK} ${TODAY} is not on origin/main (site HTTP ${CODE})"
+    log "OUTCOME PARTIAL — ${TRACK} ${TODAY} is on origin/main but the site still returns HTTP ${CODE} after 12 minutes; check the Vercel deploy"
     RC=1
+    [ -f "$MARK" ] && notify owner "⚠️ ${TRACK_LABEL}Reading Club — ${TODAY} \"${TITLE}\" is on main but the site hadn't served it after 12 min — check Vercel. The group was NOT told; announce by hand once it's live."
   fi
+else
+  log "OUTCOME FAILURE — ${TRACK} ${TODAY} is not on origin/main"
+  RC=1
 fi
 
 # Leave the tree clean on main for the next run. A failed run's half-made files

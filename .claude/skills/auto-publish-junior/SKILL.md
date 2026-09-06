@@ -1,11 +1,11 @@
 ---
 name: auto-publish-junior
-description: AUTONOMOUS daily JUNIOR publisher for the Reading Club (US grades 5–7), run UNATTENDED from the Hetzner box by cron, queued behind the senior auto-publish at 11am Pacific — the afternoon half of the junior autopilot (auto-vote-junior opens the ballot at 6am). Tallies the day's junior vote, captures the winning Economist article via the saved session in .bot/, authors the full junior handout (3 words, ≤2 concepts, quiz, glossary, audio) to the wsj-reading-junior calibration WITHOUT a human sign-off, ships it to main (= deploys; publishing is what closes the junior vote) via .bot/ship.sh --track=junior, and announces it to the club's WhatsApp group in one fixed line. Junior track only. Do NOT invoke this by hand for the normal interactive flow — use wsj-check-vote + wsj-reading-junior for that; this exists so the cron can run tally→author→publish with no human in the loop.
+description: AUTONOMOUS daily JUNIOR publisher for the Reading Club (US grades 5–7), run UNATTENDED from the Hetzner box by cron, queued behind the senior auto-publish at 11am Pacific — the afternoon half of the junior autopilot (auto-vote-junior opens the ballot at 6am). Tallies the day's junior vote, captures the winning Economist article via the saved session in .bot/, authors the full junior handout (3 words, ≤2 concepts, quiz, glossary, audio) to the wsj-reading-junior calibration WITHOUT a human sign-off, ships it to main (= deploys; publishing is what closes the junior vote) via .bot/ship.sh --track=junior; the cron wrapper then verifies the deploy and announces it to the club's WhatsApp group in one fixed line. Junior track only. Do NOT invoke this by hand for the normal interactive flow — use wsj-check-vote + wsj-reading-junior for that; this exists so the cron can run tally→author→publish with no human in the loop.
 ---
 
 # Reading Club — autonomous daily JUNIOR publish (Hetzner cron)
 
-You are running **unattended** on the Hetzner box (`run-auto-publish.sh --track=junior`, queued behind the senior publish at 11am Pacific). Your job: turn the day's **junior** vote into the day's published **junior** reading with no human in the loop, then announce it to the club's WhatsApp group. There is **no approval step** — you are the author *and* the reviewer, so the quality gates below are strict and mechanical wherever a script can check them. The owner reviews **after** the fact and fixes anything they dislike interactively; a weak card is a re-push, but a **wrong** one (a quote that isn't in the article, a broken page, a half-shipped day) is the failure to avoid.
+You are running **unattended** on the Hetzner box (`run-auto-publish.sh --track=junior`, queued behind the senior publish at 11am Pacific). Your job: turn the day's **junior** vote into the day's published **junior** reading with no human in the loop; the cron wrapper then verifies the deploy and announces it to the club's WhatsApp group (you never message anyone). There is **no approval step** — you are the author *and* the reviewer, so the quality gates below are strict and mechanical wherever a script can check them. The owner reviews **after** the fact and fixes anything they dislike interactively; a weak card is a re-push, but a **wrong** one (a quote that isn't in the article, a broken page, a half-shipped day) is the failure to avoid.
 
 This is the junior sibling of **`auto-publish`** (identical mechanics) and the autonomous cousin of **`wsj-check-vote` + `wsj-reading-junior`**. **`wsj-reading-junior/SKILL.md` stays the single source of truth for everything editorial** — the grades 5–7 calibration (its "audience calibration" section: the junior vocab register, concrete-before-abstract concepts, the literal-verbs rule, the tone), the card recipes, the content schema, the junior output paths. **Read that section and its steps 4–6 before authoring.** This skill lists only what differs from the interactive junior flow:
 
@@ -98,47 +98,24 @@ must print `ok`. Fix **every** ERROR: a quote it can't find is a quote you misre
 
 `npm run build` must succeed (it validates every content file). A failure on a new day is almost always malformed JSON — fix and re-run. Never ship without a passing build.
 
-## Step 8 — Ship
+## Step 8 — Ship, then stop
 
 ```bash
 .bot/ship.sh "$TODAY" --track=junior              # live
 .bot/ship.sh "$TODAY" --track=junior --dry-run    # when AUTOPUBLISH_DRY_RUN=1
 ```
 
-Live: commits the day's junior files on `main`, rebases on `origin/main`, pushes (= deploys), and waits until `https://dailyreadingclub.com/junior/reading/${TODAY}` serves. Dry run: the same commit goes to branch `auto/junior/${TODAY}` (pushed; `main` untouched; Vercel builds a preview) and the tree returns to `main`.
+Live: commits the junior day's files on `main`, rebases on `origin/main`, pushes (= deploys) and **returns right after the push** — well under a minute; it does not wait for Vercel. Dry run: the same commit goes to branch `auto/junior/${TODAY}` (pushed; `main` untouched; Vercel builds a preview of the branch) and the tree returns to `main`.
 
-- Exit **0** → shipped (or dry-run branch pushed). Continue to Step 9.
-- Exit **3** → `origin/main` already had the junior day (the owner published by hand while you worked). Your commit was dropped. **Exit 0 silently** — nothing to announce.
+**Run it in the foreground as a plain Bash call and wait for its exit code. Never run it in the background**, and never end your turn while it is running: this is a `claude -p` session — the moment you stop, the session exits and anything still running in the background is killed with it.
+
+- Exit **0** → pushed. `ship.sh` dropped `.bot/state/${TODAY}-junior-pushed`; the wrapper takes it from here (Step 9). Finish your output with the run summary and stop.
+- Exit **3** → `origin/main` already had the junior day (the owner published by hand while you worked). Your commit was dropped. **Exit 0 silently.**
 - Exit **4** → nothing pushed (credential/network). Failure path.
-- Exit **5** → pushed to `main`, but the site hadn't served the handout after 12 minutes. The commit **is** on main, but the reading is not verifiably up, so **do not announce to the group** — DM the owner instead (Step 9's warning form); the wrapper's outcome check will also flag it.
 
-## Step 9 — Announce to the club group
+## Step 9 — The wrapper announces (you send nothing)
 
-**Live run, ship exit 0:** one WhatsApp message to the **club group**, always this exact shape and nothing more — no other links, no vote stats, no word list, no emoji, no date:
-
-```
-Today's junior-track article is up ("<title>").  dailyreadingclub.com/junior
-```
-
-`<title>` is the content JSON's `title` verbatim (the article's own headline) inside straight double quotes, then a period after the closing parenthesis, then **two spaces** and the bare junior address `dailyreadingclub.com/junior` (no `https://` — WhatsApp links it as is). Write it to a file (the heredoc is single-quoted, so apostrophes in the title are safe) and send with `--to=group`:
-
-```bash
-cat > /tmp/junior-publish-notify.txt <<'MSG'
-Today's junior-track article is up ("<title>").  dailyreadingclub.com/junior
-MSG
-node --env-file=.bot/.env .bot/notify.mjs --to=group --file /tmp/junior-publish-notify.txt
-```
-
-The group JID is `NANOCLAW_GROUP_JID` in `.bot/.env`; if it is unset, `notify.mjs` sends the same line to the owner's DM with a note saying so — never skip the send.
-
-**Everything else goes to the owner's DM (default target), never the group:**
-
-- Dry run: `🧪 JUNIOR Reading Club DRY RUN — <TODAY> (nothing published): "<title>" → branch auto/junior/<TODAY> pushed, main untouched; delete .bot/DRY_RUN-junior on the box to go live.`
-- Ship exit 5: `⚠️ JUNIOR Reading Club — <TODAY> "<title>" is on main but the site hadn't served it after 12 min — check Vercel. The group was NOT told; announce by hand once it's live.`
-
-The owner's window into what you chose and why is the commit and the log, not the message — **voter names never go in any message.**
-
-Then stop.
+After your session ends, `run-auto-publish.sh` polls `https://dailyreadingclub.com/junior/reading/${TODAY}` for up to 12 minutes and, once it serves, sends the club group its one fixed line — `Today's junior-track article is up ("<title>").  dailyreadingclub.com/junior` — built from the content JSON's `title`. The dry-run note and the pushed-but-not-serving warning go to the owner's DM the same way, and every message is gated on the marker from Step 8, so a junior day the owner published by hand is never announced by the autopilot. **You never call `notify.mjs` in this skill** — no message to the group, none to the owner. The owner's window into what you chose and why is the commit and the log; **voter names never go in either.**
 
 ## Failure handling
 

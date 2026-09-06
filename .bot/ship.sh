@@ -12,14 +12,20 @@
 #
 # LIVE (default): commit on main → `git pull --rebase origin main` → refuse if
 #   main already carries the day (the owner published by hand meanwhile) →
-#   `git push origin main` → poll the handout URL until it serves (Vercel
-#   builds the push), up to ~12 minutes.
+#   `git push origin main`. Returns as soon as the push lands (well under a
+#   minute) — it does NOT wait for Vercel. The cron wrapper
+#   (run-auto-publish.sh) polls the live URL and sends the announcement; this
+#   split is deliberate: the agentic session must never sit on a long wait
+#   (it backgrounds it and exits, and the announcement dies with it).
 # DRY RUN: the same commit goes to branch auto/[junior/]<date> (force-pushed;
 #   Vercel builds a preview of it, main is untouched) and the tree returns to main.
 #
-# Exit codes: 0 shipped · 2 nothing to ship / bad args · 3 main already has the
-# day (aborted, tree reset) · 4 push failed · 5 pushed but the site never served
-# the handout in time (deploy still probably lands — check Vercel).
+# A successful push (either mode) drops `.bot/state/<date>[-junior]-pushed`
+# holding the SHA — the wrapper announces only when that marker exists, so a
+# day the owner published by hand while the run worked is never announced.
+#
+# Exit codes: 0 pushed · 2 nothing to ship / bad args · 3 main already has the
+# day (aborted, tree reset) · 4 push failed.
 # Needs a push credential on the box (deploy key, see RECOVERY.md).
 set -uo pipefail
 
@@ -43,7 +49,9 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$(dirname "$SCRIPT_DIR")" || exit 2
 
 SUB=""
-[ "$TRACK" = "junior" ] && SUB="junior/"
+SUFFIX=""
+if [ "$TRACK" = "junior" ]; then SUB="junior/"; SUFFIX="-junior"; fi
+MARK=".bot/state/${DATE}${SUFFIX}-pushed"
 CONTENT="content/${SUB}${DATE}.json"
 PAGE="public/articles/${SUB}${DATE}.html"
 GLOSS="public/glossaries/${SUB}${DATE}.json"
@@ -77,6 +85,7 @@ if [ "$MODE" = "dry-run" ]; then
   "${GIT[@]}" checkout -q -B "$BRANCH" || exit 4
   "${GIT[@]}" commit -q -m "$MSG" || { git checkout -q main; exit 4; }
   if "${GIT[@]}" push -f -q origin "$BRANCH"; then
+    mkdir -p .bot/state && echo "dry-run $BRANCH $(git rev-parse --short HEAD)" > "$MARK"
     echo "ship: DRY RUN — committed $(git rev-parse --short HEAD) on $BRANCH and pushed it (main untouched; Vercel builds a preview of the branch)."
     RC=0
   else
@@ -106,17 +115,6 @@ if ! "${GIT[@]}" push -q origin main; then
   echo "ship: push FAILED (deploy key? network?) — commit $SHA stays on local main; the next run's pull will see it" >&2
   exit 4
 fi
-echo "ship: pushed $(git rev-parse --short HEAD) to main — Vercel is deploying"
-
-# --- Wait for the deploy: the handout route serves only once the build lands ---
-URL="https://dailyreadingclub.com/${SUB}reading/${DATE}"
-for i in $(seq 1 36); do
-  CODE="$(curl -s -o /dev/null -w '%{http_code}' -m 20 "$URL" || echo 000)"
-  if [ "$CODE" = "200" ]; then
-    echo "ship: LIVE — $URL (after ~$((i * 20))s)"
-    exit 0
-  fi
-  sleep 20
-done
-echo "ship: pushed, but $URL still isn't serving after 12 minutes (last HTTP $CODE) — check the Vercel deploy" >&2
-exit 5
+mkdir -p .bot/state && echo "live main $(git rev-parse --short HEAD)" > "$MARK"
+echo "ship: pushed $(git rev-parse --short HEAD) to main — Vercel is deploying; the wrapper waits for https://dailyreadingclub.com/${SUB}reading/${DATE} and announces"
+exit 0
