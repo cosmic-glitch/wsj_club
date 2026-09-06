@@ -14,7 +14,8 @@
 // Winner rules (the vote is advisory, so ties need a deterministic breaker):
 //   1. most ballots wins;
 //   2. a tie is broken by the auto-vote run's own ratings — the ranked field it
-//      saved to .bot/state/<date>-field.json (--field overrides the path) —
+//      saved to .bot/state/<date>-field.json (junior: <date>-junior-field.json;
+//      --field overrides the path) —
 //      highest-rated tied candidate wins;
 //   3. no ballots at all → the field's top-rated candidate (the morning's TOP
 //      PICK); with no field file, ballot order (which IS the bot's rank order).
@@ -79,7 +80,7 @@ const orphans = [];
 for (const b of ballots) (byCandidate.get(b.candidate_id) ?? orphans).push(b.username);
 
 // The morning run's ranked field (ratings), matched by URL then title.
-const fieldPath = fieldFlag ? fieldFlag.slice("--field=".length) : path.join(HERE, "state", `${date}-field.json`);
+const fieldPath = fieldFlag ? fieldFlag.slice("--field=".length) : path.join(HERE, "state", `${date}-${track === "junior" ? "junior-" : ""}field.json`);
 let field = null;
 if (fs.existsSync(fieldPath)) {
   try {

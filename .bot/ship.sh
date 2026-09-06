@@ -2,16 +2,20 @@
 # Ship one day's reading from the Hetzner box: stage exactly the day's files,
 # commit, rebase on main, push (= deploy), and wait for the live site to serve
 # the handout. The git sequence is deterministic on purpose — the auto-publish
-# skill calls this instead of driving git itself.
+# skills call this instead of driving git themselves.
 #
-#   .bot/ship.sh <YYYY-MM-DD> [--dry-run]
+#   .bot/ship.sh <YYYY-MM-DD> [--track=junior] [--dry-run]
+#
+# The track picks the paths: senior = content/<date>.json + public/articles/,
+# public/glossaries/, public/audio/ under the bare date; junior = the same four
+# under a junior/ segment, with /junior/reading/<date> as the live URL.
 #
 # LIVE (default): commit on main → `git pull --rebase origin main` → refuse if
 #   main already carries the day (the owner published by hand meanwhile) →
-#   `git push origin main` → poll https://dailyreadingclub.com/reading/<date>
-#   until it serves (Vercel builds the push), up to ~12 minutes.
-# DRY RUN: the same commit goes to branch auto/<date> (force-pushed; Vercel
-#   builds a preview of it, main is untouched) and the tree returns to main.
+#   `git push origin main` → poll the handout URL until it serves (Vercel
+#   builds the push), up to ~12 minutes.
+# DRY RUN: the same commit goes to branch auto/[junior/]<date> (force-pushed;
+#   Vercel builds a preview of it, main is untouched) and the tree returns to main.
 #
 # Exit codes: 0 shipped · 2 nothing to ship / bad args · 3 main already has the
 # day (aborted, tree reset) · 4 push failed · 5 pushed but the site never served
@@ -19,21 +23,31 @@
 # Needs a push credential on the box (deploy key, see RECOVERY.md).
 set -uo pipefail
 
-DATE="${1:-}"
+DATE=""
 MODE="live"
-[ "${2:-}" = "--dry-run" ] && MODE="dry-run"
+TRACK="senior"
+for a in "$@"; do
+  case "$a" in
+    --dry-run) MODE="dry-run" ;;
+    --track=senior|--track=junior) TRACK="${a#--track=}" ;;
+    --*) echo "usage: .bot/ship.sh <YYYY-MM-DD> [--track=junior] [--dry-run]" >&2; exit 2 ;;
+    *) DATE="$a" ;;
+  esac
+done
 if ! [[ "$DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
-  echo "usage: .bot/ship.sh <YYYY-MM-DD> [--dry-run]" >&2
+  echo "usage: .bot/ship.sh <YYYY-MM-DD> [--track=junior] [--dry-run]" >&2
   exit 2
 fi
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$(dirname "$SCRIPT_DIR")" || exit 2
 
-CONTENT="content/${DATE}.json"
-PAGE="public/articles/${DATE}.html"
-GLOSS="public/glossaries/${DATE}.json"
-AUDIO="public/audio/${DATE}"
+SUB=""
+[ "$TRACK" = "junior" ] && SUB="junior/"
+CONTENT="content/${SUB}${DATE}.json"
+PAGE="public/articles/${SUB}${DATE}.html"
+GLOSS="public/glossaries/${SUB}${DATE}.json"
+AUDIO="public/audio/${SUB}${DATE}"
 if [ ! -f "$CONTENT" ]; then
   echo "ship: $CONTENT does not exist — nothing to ship" >&2
   exit 2
@@ -45,7 +59,7 @@ GIT=(git)
 [ -z "$(git config user.email)" ] && GIT+=(-c user.email="autopilot@dailyreadingclub.com")
 
 # --- Commit message (same shape as the hand-authored days) ------------------
-MSG="$(node .bot/commit-message.mjs "$DATE")" || { echo "ship: could not compose the commit message" >&2; exit 2; }
+MSG="$(node .bot/commit-message.mjs "$DATE" --track="$TRACK")" || { echo "ship: could not compose the commit message" >&2; exit 2; }
 
 # --- Stage exactly the day's files ----------------------------------------------
 "${GIT[@]}" add -- "$CONTENT" "$PAGE" 2>/dev/null
@@ -59,7 +73,7 @@ OTHER="$(git status --porcelain | grep -v -E " (${CONTENT}|${PAGE}|${GLOSS}|${AU
 [ -n "$OTHER" ] && echo "ship: NOTE — leaving these unrelated changes unstaged:"$'\n'"$OTHER" >&2
 
 if [ "$MODE" = "dry-run" ]; then
-  BRANCH="auto/${DATE}"
+  BRANCH="auto/${SUB}${DATE}"
   "${GIT[@]}" checkout -q -B "$BRANCH" || exit 4
   "${GIT[@]}" commit -q -m "$MSG" || { git checkout -q main; exit 4; }
   if "${GIT[@]}" push -f -q origin "$BRANCH"; then
@@ -95,7 +109,7 @@ fi
 echo "ship: pushed $(git rev-parse --short HEAD) to main — Vercel is deploying"
 
 # --- Wait for the deploy: the handout route serves only once the build lands ---
-URL="https://dailyreadingclub.com/reading/${DATE}"
+URL="https://dailyreadingclub.com/${SUB}reading/${DATE}"
 for i in $(seq 1 36); do
   CODE="$(curl -s -o /dev/null -w '%{http_code}' -m 20 "$URL" || echo 000)"
   if [ "$CODE" = "200" ]; then

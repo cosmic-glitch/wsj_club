@@ -1,12 +1,21 @@
 // Scout The Economist for the day's candidate news articles.
 // Sweeps the homepage + a handful of section hubs, returns a deduped JSON array
-// of { url, headline, section } on stdout for the auto-vote skill to rank.
-//   node --env-file=.bot/.env .bot/scout.mjs
+// of { url, headline, section } on stdout for the auto-vote skills to rank.
+//   node --env-file=.bot/.env .bot/scout.mjs                  # senior sections
+//   node --env-file=.bot/.env .bot/scout.mjs --track=junior   # junior sections
 // Only lists candidates (works even logged-out); reading bodies is read.mjs.
 import { ensureEconSession } from "./lib.mjs";
 import { loadPublished, isPublished } from "./published.mjs";
 
-const SECTIONS = [
+const trackFlag = process.argv.find((a) => a.startsWith("--track="));
+const track = trackFlag ? trackFlag.slice("--track=".length) : "senior";
+if (track !== "senior" && track !== "junior") {
+  console.error(`scout: unknown track "${track}" (senior|junior)`);
+  process.exit(1);
+}
+
+// Senior: where the argument-driven, payload-rich pieces live.
+const SENIOR_SECTIONS = [
   "", // homepage — surfaces most of the day's spread
   "leaders",
   "briefing",
@@ -17,6 +26,25 @@ const SECTIONS = [
   "culture",
   "united-states",
 ];
+// Junior (grades 5–7): story-first pieces — science, culture, and the regional
+// sections' human-interest features. Leaders, Briefing and Finance are left
+// out on purpose: argument pieces, 3,000-word briefings and markets coverage
+// are senior material (see wsj-pick-article-junior's length and register gates).
+const JUNIOR_SECTIONS = [
+  "",
+  "science-and-technology",
+  "culture",
+  "international",
+  "united-states",
+  "europe",
+  "britain",
+  "asia",
+  "china",
+  "the-americas",
+  "middle-east-and-africa",
+  "business",
+];
+const SECTIONS = track === "junior" ? JUNIOR_SECTIONS : SENIOR_SECTIONS;
 // Dated article path: /section/YYYY/MM/DD/slug. Skip non-text formats.
 const ARTICLE_RE = /economist\.com\/([a-z0-9-]+)\/(20\d\d)\/\d{2}\/\d{2}\/[a-z0-9-]+/i;
 const SKIP_SECTIONS = new Set(["podcasts", "films", "interactive", "newsletters"]);
@@ -68,5 +96,5 @@ const dropped = all.filter((c) => !out.includes(c));
 if (dropped.length) {
   console.error(`scout: dropped ${dropped.length} already-published: ${dropped.map((c) => c.url).join(", ")}`);
 }
-console.error(`scout: ${out.length} Economist candidates across ${SECTIONS.length} sections (${published.count} published readings excluded)`);
+console.error(`scout: ${out.length} Economist candidates across ${SECTIONS.length} ${track} sections (${published.count} published readings excluded)`);
 process.stdout.write(JSON.stringify(out, null, 2) + "\n");

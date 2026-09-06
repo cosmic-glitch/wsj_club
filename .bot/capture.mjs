@@ -13,7 +13,8 @@
 //   { out, txtOut, words, paragraphs, summary, acronymCheck, lengthCheck }
 // lengthCheck cross-checks the captured word count against the count the
 // morning run (auto-vote → read.mjs) recorded for this URL in
-// .bot/state/<date>-field.json — an independent second read of the same page,
+// .bot/state/<date>-field.json (junior: <date>-junior-field.json) — an
+// independent second read of the same page,
 // so a capture that comes out materially shorter means the filters (or a
 // half-rendered page) dropped body text. Exit 2 = the page read as a teaser /
 // bot challenge (nothing written); exit 3 = the snippet ran but the output
@@ -109,7 +110,7 @@ try {
   const MAX_GAP_WORDS = 160;
   const SHORT_RATIO = 0.85;
   let lengthCheck = "no morning count for this URL";
-  const fieldPath = path.join(HERE, "state", `${date}-field.json`);
+  const fieldPath = path.join(HERE, "state", `${date}-${track === "junior" ? "junior-" : ""}field.json`);
   if (fs.existsSync(fieldPath)) {
     try {
       const parsed = JSON.parse(fs.readFileSync(fieldPath, "utf8"));

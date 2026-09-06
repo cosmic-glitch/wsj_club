@@ -13,7 +13,7 @@ This is the autonomous cousin of **`wsj-check-vote` + `wsj-reading`**. **`wsj-re
 2. **Capture goes through `.bot/capture.mjs`** (the box's own Playwright + saved Economist session), never the Playwright MCP (not available here). It runs the very same `scripts/capture-article.js` snippet the interactive skill uses.
 3. **No sign-off.** The manual checkpoint is replaced by a written self-review (Step 4) plus `scripts/check-content.mjs`, which verifies every quote against the captured text mechanically.
 4. **Git goes through `.bot/ship.sh`** — never drive `git commit`/`push` yourself. It stages exactly the day's files, rebases, refuses to stomp a hand-published day, pushes, and waits for the deploy.
-5. **Senior track, Economist only** (the box is IP-blocked by WSJ; the ballot never carries WSJ). Junior and enrichment stay interactive.
+5. **Senior track, Economist only** (the box is IP-blocked by WSJ; the ballot never carries WSJ). The junior track has its own sibling, `auto-publish-junior`, queued behind this run; enrichment stays interactive.
 
 All commands run from the repo root (`~/wsj_club`). `.bot/` browsing scripts take `node --env-file=.bot/.env …`; the `scripts/` CLIs take `node --env-file=.env.local …` (the wrapper also exports both env files into the session, but keep the explicit form). `AUTOPUBLISH_DATE` and `AUTOPUBLISH_DRY_RUN` are set by the wrapper.
 

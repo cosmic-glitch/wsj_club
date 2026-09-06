@@ -1,17 +1,28 @@
 #!/bin/bash
 # Autonomous daily PUBLISH for the Reading Club — the afternoon cousin of
-# run-auto-vote.sh. Cron fires this at BOTH 18:00 and 19:00 UTC; the Pacific
-# gate lets exactly one proceed, so it runs at 11:00 America/Los_Angeles
-# year-round. Publishing the reading is what closes the vote — this IS the
-# close, so 11am Pacific is the club's fixed voting deadline.
+# run-auto-vote.sh, one wrapper for both tracks:
+#   bash .bot/run-auto-publish.sh                 # senior (default): the auto-publish skill
+#   bash .bot/run-auto-publish.sh --track=junior  # junior: the auto-publish-junior skill
 #
-# Crontab entry (UTC):
-#   0 18,19 * * *  bash $HOME/wsj_club/.bot/run-auto-publish.sh >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+# Cron fires each track at BOTH 18:xx and 19:xx UTC; the Pacific gate lets
+# exactly one proceed, so it runs at 11:xx America/Los_Angeles year-round.
+# Publishing the reading is what closes the vote — this IS the close, so 11am
+# Pacific is the club's fixed voting deadline on both tracks. The junior cron
+# fires 10 minutes after the senior one and waits for the shared autopilot
+# lock, so the junior tally happens once the senior day has shipped (typically
+# 11:30–11:45; a junior ballot cast in that window still counts).
+#
+# Crontab entries (UTC):
+#   0  18,19 * * *  bash $HOME/wsj_club/.bot/run-auto-publish.sh                 >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+#   10 18,19 * * *  bash $HOME/wsj_club/.bot/run-auto-publish.sh --track=junior  >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
 #
 # Controls (flag files in .bot/, box-local, never committed):
-#   .bot/PAUSE    → skip today's run entirely (log a line, exit 0)
-#   .bot/DRY_RUN  → do everything but ship to branch auto/<date> instead of
-#                   main — the rollout mode; delete the file to go live
+#   .bot/PAUSE            → skip today's publish run on every track (log a line, exit 0)
+#   .bot/PAUSE-<track>    → the same for one track only
+#   .bot/DRY_RUN          → do everything but ship to branch auto/[junior/]<date>
+#                           instead of main — the rollout mode; delete the file to go live
+#   .bot/DRY_RUN-<track>  → the same for one track only (roll a track out alone)
+#   .bot/OFF-<track>      → that track's autopilot is switched off entirely (vote + publish)
 # Env overrides for a supervised manual run:
 #   AUTOPUBLISH_FORCE=1      bypass the 11am gate
 #   AUTOPUBLISH_DATE=…       publish a specific poll date (default: today Pacific)
@@ -19,6 +30,14 @@
 set -uo pipefail
 
 export PATH="$HOME/.local/bin:$PATH"   # `claude`, `node` under cron's minimal PATH
+
+TRACK="senior"
+for a in "$@"; do
+  case "$a" in
+    --track=senior|--track=junior) TRACK="${a#--track=}" ;;
+    *) echo "usage: $0 [--track=senior|junior]" >&2; exit 2 ;;
+  esac
+done
 
 if [ "${AUTOPUBLISH_FORCE:-}" != "1" ] && [ "$(TZ=America/Los_Angeles date +%H)" != "11" ]; then
   exit 0
@@ -28,31 +47,53 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 cd "$PROJECT_DIR" || exit 1
 
-LOG_DIR="$PROJECT_DIR/.bot/logs"
-mkdir -p "$LOG_DIR" "$PROJECT_DIR/.bot/state"
+# Per-track knobs: the skill, the content path, the branch a dry run lands on,
+# and the URL that proves the day is serving.
 TODAY="${AUTOPUBLISH_DATE:-$(TZ=America/Los_Angeles date +%F)}"
-LOG_FILE="$LOG_DIR/auto-publish-${TODAY}.log"
-log() { echo "[$(date -u +%FT%TZ)] auto-publish: $*" >> "$LOG_FILE"; }
-
-# One run at a time (a manual test must not overlap the cron's run).
-exec 9>"$LOG_DIR/.auto-publish.lock"
-if ! flock -n 9; then
-  log "another run holds the lock; exiting"
-  exit 0
+if [ "$TRACK" = "junior" ]; then
+  NAME="auto-publish-junior"
+  CONTENT="content/junior/${TODAY}.json"
+  DRY_BRANCH="auto/junior/${TODAY}"
+  READING_URL="https://dailyreadingclub.com/junior/reading/${TODAY}"
+else
+  NAME="auto-publish"
+  CONTENT="content/${TODAY}.json"
+  DRY_BRANCH="auto/${TODAY}"
+  READING_URL="https://dailyreadingclub.com/reading/${TODAY}"
 fi
 
-if [ -f "$PROJECT_DIR/.bot/PAUSE" ]; then
-  log "PAUSED (.bot/PAUSE exists) — skipping ${TODAY}"
+LOG_DIR="$PROJECT_DIR/.bot/logs"
+mkdir -p "$LOG_DIR" "$PROJECT_DIR/.bot/state"
+LOG_FILE="$LOG_DIR/${NAME}-${TODAY}.log"
+log() { echo "[$(date -u +%FT%TZ)] ${NAME}: $*" >> "$LOG_FILE"; }
+
+if [ -f "$PROJECT_DIR/.bot/OFF-${TRACK}" ]; then
+  log "OFF (.bot/OFF-${TRACK} exists) — the ${TRACK} autopilot is switched off; skipping ${TODAY}"
+  exit 0
+fi
+if [ -f "$PROJECT_DIR/.bot/PAUSE" ] || [ -f "$PROJECT_DIR/.bot/PAUSE-${TRACK}" ]; then
+  log "PAUSED (.bot/PAUSE or .bot/PAUSE-${TRACK} exists) — skipping ${TODAY}"
   exit 0
 fi
 MODE="live"
-if [ -f "$PROJECT_DIR/.bot/DRY_RUN" ] || [ "${AUTOPUBLISH_DRY_RUN:-}" = "1" ]; then
+if [ -f "$PROJECT_DIR/.bot/DRY_RUN" ] || [ -f "$PROJECT_DIR/.bot/DRY_RUN-${TRACK}" ] || [ "${AUTOPUBLISH_DRY_RUN:-}" = "1" ]; then
   MODE="dry-run"
   export AUTOPUBLISH_DRY_RUN=1
 fi
 export AUTOPUBLISH_DATE="$TODAY"
+export AUTOPUBLISH_TRACK="$TRACK"
 
-log "starting (Pacific $(TZ=America/Los_Angeles date +%FT%T), mode=${MODE}, date=${TODAY})"
+log "starting (Pacific $(TZ=America/Los_Angeles date +%FT%T), track=${TRACK}, mode=${MODE}, date=${TODAY})"
+
+# One autopilot run at a time on this box — the tree, the build and the browser
+# are all shared. Waits rather than skips: that is how the junior run queues
+# behind the senior one (and a manual test queues behind the cron). Two hours
+# of waiting means something is badly stuck: exit 1 → the healthcheck pages.
+exec 9>"$LOG_DIR/.autopilot.lock"
+if ! flock -w 7200 9; then
+  log "could not get the autopilot lock within 2 hours; exiting 1 for healthchecks"
+  exit 1
+fi
 
 # Secrets for every command in the session: SUPABASE_DB_URL, BLOB_READ_WRITE_TOKEN,
 # OPENAI_API_KEY from .env.local; ECON_* + NANOCLAW_CHATJID (owner DM) +
@@ -70,7 +111,7 @@ set +a
 if [ -n "$(git status --porcelain | grep -v '^?? article-text/')" ]; then
   log "working tree is dirty — stashing leftovers before starting:"
   git status --porcelain >> "$LOG_FILE"
-  git stash push -u -q -m "auto-publish leftovers before ${TODAY}" >> "$LOG_FILE" 2>&1
+  git stash push -u -q -m "${NAME} leftovers before ${TODAY}" >> "$LOG_FILE" 2>&1
 fi
 git checkout -q main 2>> "$LOG_FILE"
 if git pull --ff-only origin main >> "$LOG_FILE" 2>&1; then
@@ -79,8 +120,8 @@ else
   log "git pull failed at $(git rev-parse --short HEAD); proceeding"
 fi
 
-if [ -f "$PROJECT_DIR/content/${TODAY}.json" ]; then
-  log "outcome OK — reading ${TODAY} already published (by hand); nothing to do"
+if [ -f "$PROJECT_DIR/$CONTENT" ]; then
+  log "outcome OK — ${TRACK} reading ${TODAY} already published (by hand); nothing to do"
   exit 0
 fi
 
@@ -96,7 +137,7 @@ fi
 # One agentic session runs tally → capture → author → ship → notify. Same
 # invocation shape as run-auto-vote.sh (unattended, so no permission prompts).
 CLAUDE_RC=0
-"${XVFB[@]}" claude -p "Use the auto-publish skill to publish today's Reading Club senior reading (date ${TODAY}, mode ${MODE}). Run fully autonomously end to end — never pause for confirmation — and follow the skill's guards, quality gates, and failure handling exactly." \
+"${XVFB[@]}" claude -p "Use the ${NAME} skill to publish today's Reading Club ${TRACK} reading (date ${TODAY}, mode ${MODE}). Run fully autonomously end to end — never pause for confirmation — and follow the skill's guards, quality gates, and failure handling exactly." \
   --dangerously-skip-permissions \
   >> "$LOG_FILE" 2>&1 || CLAUDE_RC=$?
 log "claude session exited (rc=$CLAUDE_RC)"
@@ -104,37 +145,37 @@ log "claude session exited (rc=$CLAUDE_RC)"
 # --- Outcome check (the alerting contract) ----------------------------------
 # claude -p exits 0 even when the skill's failure path ran, so success is
 # verified from the outcome: LIVE = the day is on origin/main AND the site
-# serves it; DRY RUN = origin has auto/<date>. Anything else exits 1 so the
-# cron's healthcheck pages the owner (the skill's failure path is silent).
+# serves it; DRY RUN = origin has the dry-run branch. Anything else exits 1 so
+# the cron's healthcheck pages the owner (the skill's failure path is silent).
 git fetch -q origin >> "$LOG_FILE" 2>&1
 if [ "$MODE" = "dry-run" ]; then
-  if git rev-parse -q --verify "origin/auto/${TODAY}" >/dev/null; then
-    log "outcome OK — dry run landed on origin/auto/${TODAY}"
+  if git rev-parse -q --verify "origin/${DRY_BRANCH}" >/dev/null; then
+    log "outcome OK — dry run landed on origin/${DRY_BRANCH}"
     RC=0
   else
-    log "OUTCOME FAILURE — no origin/auto/${TODAY} branch after the dry run"
+    log "OUTCOME FAILURE — no origin/${DRY_BRANCH} branch after the dry run"
     RC=1
   fi
 else
-  CODE="$(curl -s -o /dev/null -w '%{http_code}' -m 20 "https://dailyreadingclub.com/reading/${TODAY}" || echo 000)"
-  if git cat-file -e "origin/main:content/${TODAY}.json" 2>/dev/null && [ "$CODE" = "200" ]; then
-    log "outcome OK — reading ${TODAY} is on main and live"
+  CODE="$(curl -s -o /dev/null -w '%{http_code}' -m 20 "$READING_URL" || echo 000)"
+  if git cat-file -e "origin/main:${CONTENT}" 2>/dev/null && [ "$CODE" = "200" ]; then
+    log "outcome OK — ${TRACK} reading ${TODAY} is on main and live"
     RC=0
-  elif git cat-file -e "origin/main:content/${TODAY}.json" 2>/dev/null; then
-    log "OUTCOME PARTIAL — ${TODAY} is on origin/main but the site returns HTTP ${CODE}; check the Vercel deploy"
+  elif git cat-file -e "origin/main:${CONTENT}" 2>/dev/null; then
+    log "OUTCOME PARTIAL — ${TRACK} ${TODAY} is on origin/main but the site returns HTTP ${CODE}; check the Vercel deploy"
     RC=1
   else
-    log "OUTCOME FAILURE — ${TODAY} is not on origin/main (site HTTP ${CODE})"
+    log "OUTCOME FAILURE — ${TRACK} ${TODAY} is not on origin/main (site HTTP ${CODE})"
     RC=1
   fi
 fi
 
-# Leave the tree clean on main for tomorrow. A failed run's half-made files go
-# to a stash (never deleted); local main is then realigned with origin.
+# Leave the tree clean on main for the next run. A failed run's half-made files
+# go to a stash (never deleted); local main is then realigned with origin.
 git checkout -q main 2>> "$LOG_FILE"
 if [ -n "$(git status --porcelain | grep -v '^?? article-text/')" ]; then
   log "stashing the run's leftover files (git stash list to inspect)"
-  git stash push -u -q -m "auto-publish ${TODAY} leftovers (rc=${RC})" >> "$LOG_FILE" 2>&1
+  git stash push -u -q -m "${NAME} ${TODAY} leftovers (rc=${RC})" >> "$LOG_FILE" 2>&1
 fi
 git reset -q --hard origin/main >> "$LOG_FILE" 2>&1
 exit $RC

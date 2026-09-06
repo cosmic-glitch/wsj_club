@@ -5,7 +5,7 @@ description: Create a JUNIOR (US grades 5–7) Reading Club handout at /junior. 
 
 # WSJ Reading Club — JUNIOR handout (grades 5–7)
 
-You are producing one day's study handout for the **Junior Reading Club**: younger kids in **US grades 5–7**. This is a **second track** alongside the main (senior, grades 8–10) club — it shares the same site, the same logins, and the same Reports page, but lives under **`/junior`** and publishes into a **`junior/` path segment everywhere** (see the paths below). It's **occasional**, not daily, and **additive** — a junior day does not replace that day's senior reading.
+You are producing one day's study handout for the **Junior Reading Club**: younger kids in **US grades 5–7**. This is a **second track** alongside the main (senior, grades 8–10) club — it shares the same site, the same logins, and the same Reports page, but lives under **`/junior`** and publishes into a **`junior/` path segment everywhere** (see the paths below). It runs **daily on the autopilot** (`auto-vote-junior` / `auto-publish-junior`, Economist only, from the Hetzner box) and interactively through this skill whenever the owner wants; it is **additive** — a junior day does not replace that day's senior reading.
 
 **This is a sharp cohort, not a remedial one.** "Kids are sharp." Aim to grow their vocabulary, general knowledge, and conceptual understanding — just calibrated a couple of grades lower than the senior club. The mechanics (article-first vocab, Feynman-style concepts, a 5-question quiz, pronunciation audio, the AI voice quiz) are identical; only the **audience calibration** and the **output paths** differ.
 
