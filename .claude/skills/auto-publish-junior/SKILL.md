@@ -114,17 +114,17 @@ Live: commits the day's junior files on `main`, rebases on `origin/main`, pushes
 
 ## Step 9 — Announce to the club group
 
-**Live run, ship exit 0:** one WhatsApp message to the **club group**, always this exact shape and nothing more — no links, no vote stats, no word list, no emoji, no date:
+**Live run, ship exit 0:** one WhatsApp message to the **club group**, always this exact shape and nothing more — no other links, no vote stats, no word list, no emoji, no date:
 
 ```
-Today's junior article is up ("<title>").
+Today's junior-track article is up ("<title>").  dailyreadingclub.com/junior
 ```
 
-`<title>` is the content JSON's `title` verbatim (the article's own headline) inside straight double quotes, then a period after the closing parenthesis. Write it to a file (the heredoc is single-quoted, so apostrophes in the title are safe) and send with `--to=group`:
+`<title>` is the content JSON's `title` verbatim (the article's own headline) inside straight double quotes, then a period after the closing parenthesis, then **two spaces** and the bare junior address `dailyreadingclub.com/junior` (no `https://` — WhatsApp links it as is). Write it to a file (the heredoc is single-quoted, so apostrophes in the title are safe) and send with `--to=group`:
 
 ```bash
 cat > /tmp/junior-publish-notify.txt <<'MSG'
-Today's junior article is up ("<title>").
+Today's junior-track article is up ("<title>").  dailyreadingclub.com/junior
 MSG
 node --env-file=.bot/.env .bot/notify.mjs --to=group --file /tmp/junior-publish-notify.txt
 ```
