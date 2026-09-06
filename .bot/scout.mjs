@@ -47,7 +47,14 @@ const JUNIOR_SECTIONS = [
 const SECTIONS = track === "junior" ? JUNIOR_SECTIONS : SENIOR_SECTIONS;
 // Dated article path: /section/YYYY/MM/DD/slug. Skip non-text formats.
 const ARTICLE_RE = /economist\.com\/([a-z0-9-]+)\/(20\d\d)\/\d{2}\/\d{2}\/[a-z0-9-]+/i;
-const SKIP_SECTIONS = new Set(["podcasts", "films", "interactive", "newsletters"]);
+// Never handout material on either track: non-text formats, chart-only stubs,
+// letters, the daily digest. Junior additionally skips the argument-driven and
+// long-form sections the homepage links to (they are senior material — see the
+// junior picker's length and register gates).
+const SKIP_SECTIONS = new Set([
+  "podcasts", "films", "interactive", "newsletters", "graphic-detail", "letters", "the-world-in-brief",
+  ...(track === "junior" ? ["leaders", "briefing", "finance-and-economics", "by-invitation", "1843", "obituary"] : []),
+]);
 
 const { browser, ctx } = await ensureEconSession();
 const page = await ctx.newPage();
