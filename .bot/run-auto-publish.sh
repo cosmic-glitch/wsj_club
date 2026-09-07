@@ -1,5 +1,5 @@
 #!/bin/bash
-# Autonomous daily PUBLISH for the Reading Club — the afternoon cousin of
+# Autonomous daily PUBLISH for the Reading Club — the mid-morning cousin of
 # run-auto-vote.sh, one wrapper for both tracks. The agentic session inside it
 # tallies, captures, authors and pushes (via ship.sh); THIS script then waits
 # for Vercel to serve the day and sends the WhatsApp messages — the model never
@@ -8,17 +8,17 @@
 #   bash .bot/run-auto-publish.sh                 # senior (default): the auto-publish skill
 #   bash .bot/run-auto-publish.sh --track=junior  # junior: the auto-publish-junior skill
 #
-# Cron fires each track at BOTH 18:xx and 19:xx UTC; the Pacific gate lets
-# exactly one proceed, so it runs at 11:xx America/Los_Angeles year-round.
-# Publishing the reading is what closes the vote — this IS the close, so 11am
+# Cron fires each track at BOTH 16:xx and 17:xx UTC; the Pacific gate lets
+# exactly one proceed, so it runs at 09:xx America/Los_Angeles year-round.
+# Publishing the reading is what closes the vote — this IS the close, so 9am
 # Pacific is the club's fixed voting deadline on both tracks. The junior cron
 # fires 10 minutes after the senior one and waits for the shared autopilot
 # lock, so the junior tally happens once the senior day has shipped (typically
-# 11:30–11:45; a junior ballot cast in that window still counts).
+# 9:30–9:45; a junior ballot cast in that window still counts).
 #
 # Crontab entries (UTC):
-#   0  18,19 * * *  bash $HOME/wsj_club/.bot/run-auto-publish.sh                 >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
-#   10 18,19 * * *  bash $HOME/wsj_club/.bot/run-auto-publish.sh --track=junior  >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+#   0  16,17 * * *  bash $HOME/wsj_club/.bot/run-auto-publish.sh                 >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+#   10 16,17 * * *  bash $HOME/wsj_club/.bot/run-auto-publish.sh --track=junior  >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
 #
 # Controls (flag files in .bot/, box-local, never committed):
 #   .bot/PAUSE            → skip today's publish run on every track (log a line, exit 0)
@@ -28,7 +28,7 @@
 #   .bot/DRY_RUN-<track>  → the same for one track only (roll a track out alone)
 #   .bot/OFF-<track>      → that track's autopilot is switched off entirely (vote + publish)
 # Env overrides for a supervised manual run:
-#   AUTOPUBLISH_FORCE=1      bypass the 11am gate
+#   AUTOPUBLISH_FORCE=1      bypass the 9am gate
 #   AUTOPUBLISH_DATE=…       publish a specific poll date (default: today Pacific)
 #   AUTOPUBLISH_DRY_RUN=1    same as the DRY_RUN flag file
 set -uo pipefail
@@ -43,7 +43,7 @@ for a in "$@"; do
   esac
 done
 
-if [ "${AUTOPUBLISH_FORCE:-}" != "1" ] && [ "$(TZ=America/Los_Angeles date +%H)" != "11" ]; then
+if [ "${AUTOPUBLISH_FORCE:-}" != "1" ] && [ "$(TZ=America/Los_Angeles date +%H)" != "09" ]; then
   exit 0
 fi
 

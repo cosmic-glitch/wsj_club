@@ -40,7 +40,7 @@ All commands run from the repo root (`~/wsj_club`). `.bot/` browsing scripts tak
 2. On the **headlines**, shortlist the **~10 most promising** against the gates (favor Science & technology, Culture, and the regional sections' human-interest features; down-weight anything that looks like a column, an argument piece, a markets story, or a video/chart-led page).
 3. Read those ~10 in full: `node --env-file=.bot/.env .bot/read.mjs <url1> <url2> …` → `[{url,title,words,wall,text}]`. **Decide on the real text, not the headline.** For each, judge: the 11-year-old gate (the veto — apply it first), the story hook, 3 junior-register words, 2 concrete concepts, length, register, appropriateness. A piece that comes back with very few words / `wall:true` is a dud — drop it and read a replacement from the shortlist, so you finish having genuinely read ~8.
 4. Rank them, **recording per article a rating (1–10) and a one-line "why it fits" verdict** — the same opinionated read the interactive junior picker gives the owner (the story hook, the words/concepts you found, the domain, any reservation, and explicitly *why it clears the 11-year-old gate*). **An article that fails a hard gate (1, 3, 4, 6) is capped low and never balloted, whatever its payload.** Take the **top 5** as the candidates (`source: "Economist"`, no `kind` — the junior ballot is news only, so the modal shows no section labels).
-5. **Persist the ranked field for the afternoon run.** `mkdir -p .bot/state` and write `.bot/state/${TODAY}-junior-field.json` for the 5 balloted candidates, in rank order:
+5. **Persist the ranked field for the publish run.** `mkdir -p .bot/state` and write `.bot/state/${TODAY}-junior-field.json` for the 5 balloted candidates, in rank order:
    ```json
    { "date": "<TODAY>", "track": "junior", "generatedAt": "<ISO timestamp>",
      "ranked": [ { "rank": 1, "rating": 8, "title": "<exact ballot title>", "articleUrl": "<url>", "source": "Economist", "words": <read.mjs word count>, "why": "<the one-line verdict>" }, … ] }
@@ -66,7 +66,7 @@ All commands run from the repo root (`~/wsj_club`). `.bot/` browsing scripts tak
 Text the owner your **ranked assessment** — the opinionated field the interactive picker gives, **not** a bare title list and **not** the kids' pitches. This is the owner's whole window into your judgment, so it must explain *why*: for each candidate, the story hook, the words/concepts, and how it clears the 11-year-old gate. **Every candidate line MUST end with its article link.**
 
 Compose one WhatsApp message (mind the length; concise verdicts):
-- **Header:** the **junior** vote is open, `${TODAY}`, the junior vote link, and the fixed close (11:00am Pacific; `auto-publish-junior` tallies and publishes the winner once the senior day has shipped).
+- **Header:** the **junior** vote is open, `${TODAY}`, the junior vote link, and the fixed close (9:00am Pacific; `auto-publish-junior` tallies and publishes the winner once the senior day has shipped).
 - **Top pick** (1–2 sentences + its link): title, rating, and the real case.
 - **Ranked** (5 lines): `N. [Economist] title — R/10 — <why it fits> — <url>`.
 - **Dropped:** one line on the notable cuts and why (especially anything cut on the 11-year-old gate or appropriateness), so the owner sees the judgment calls.
@@ -77,7 +77,7 @@ Write the message to a temp file and send with `--file`:
 cat > /tmp/junior-vote-notify.txt <<'MSG'
 🗳️ JUNIOR Reading Club vote is open — <TODAY>
 Vote: https://dailyreadingclub.com/junior
-Closes 11:00am PT — the winner auto-publishes after the senior day
+Closes 9:00am PT — the winner auto-publishes after the senior day
 
 ⭐ TOP PICK [Economist] <title> (R/10)
 <1–2 sentence case: story hook, words/concepts, why an 11-year-old can follow it>
@@ -96,7 +96,7 @@ node --env-file=.bot/.env .bot/notify.mjs --file /tmp/junior-vote-notify.txt
 
 Keep the **ballot pitches** (Step 3) exactly as written — spoiler-free and non-steering, for the kids. Your ranking and opinion live **only** in this owner notification.
 
-Then stop. Do **not** author the reading — the club votes until **11:00am Pacific**; `auto-publish-junior` (`run-auto-publish.sh --track=junior`) tallies the poll and publishes the winner, which is what closes it. The owner can still publish by hand before then with `wsj-reading-junior`; the afternoon run then finds the day published and does nothing.
+Then stop. Do **not** author the reading — the club votes until **9:00am Pacific**; `auto-publish-junior` (`run-auto-publish.sh --track=junior`) tallies the poll and publishes the winner, which is what closes it. The owner can still publish by hand before then with `wsj-reading-junior`; the 9am run then finds the day published and does nothing.
 
 ## Failure handling
 

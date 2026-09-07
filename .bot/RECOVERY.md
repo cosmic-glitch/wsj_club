@@ -1,7 +1,7 @@
 # Reading Club autopilot — recovery (Hetzner-only)
 
 `.bot/` is the box-local runtime for the autopilot skills — `auto-vote` (6am
-Pacific: scout → ballot → open the vote) and `auto-publish` (11am Pacific:
+Pacific: scout → ballot → open the vote) and `auto-publish` (9am Pacific:
 tally → capture → author → ship) for the senior track, and their junior
 siblings `auto-vote-junior` / `auto-publish-junior`, which the same two
 wrappers run with `--track=junior`, queued 10 minutes behind the senior runs
@@ -39,7 +39,7 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
      ECON_EMAIL='...'                          # Economist login (owner has the password)
      ECON_PASS='...'
      NANOCLAW_CHATJID='<number>@s.whatsapp.net' # owner's WhatsApp DM: the 6am ranked fields, dry-run + warning notes
-     NANOCLAW_GROUP_JID='<id>@g.us'             # the club's WhatsApp group: the 11am "Today's [junior-track] article is up" lines
+     NANOCLAW_GROUP_JID='<id>@g.us'             # the club's WhatsApp group: the 9am "Today's [junior-track] article is up" lines
      ```
      To find a group's JID (the bot's number must be a member): force nanoclaw to
      re-sync its group list, then read its chat store —
@@ -90,8 +90,8 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
    ```
    0  13,14 * * *  $HOME/bin/hc-run wsjclub-auto-vote           bash $HOME/wsj_club/.bot/run-auto-vote.sh                   >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
    10 13,14 * * *  $HOME/bin/hc-run wsjclub-auto-vote-junior    bash $HOME/wsj_club/.bot/run-auto-vote.sh --track=junior    >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
-   0  18,19 * * *  $HOME/bin/hc-run wsjclub-auto-publish        bash $HOME/wsj_club/.bot/run-auto-publish.sh                >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
-   10 18,19 * * *  $HOME/bin/hc-run wsjclub-auto-publish-junior bash $HOME/wsj_club/.bot/run-auto-publish.sh --track=junior >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+   0  16,17 * * *  $HOME/bin/hc-run wsjclub-auto-publish        bash $HOME/wsj_club/.bot/run-auto-publish.sh                >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+   10 16,17 * * *  $HOME/bin/hc-run wsjclub-auto-publish-junior bash $HOME/wsj_club/.bot/run-auto-publish.sh --track=junior >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
    ```
    `hc-run` (in `~/bin`, from the foliotracker setup) pings healthchecks.io with
    the wrapper's exit code — a non-zero exit is the alert. The four checks are
