@@ -131,7 +131,6 @@ function PeopleTable({ r }: { r: ReadingActivity }) {
               <th className={th}>Read</th>
               <th className={th}>First open</th>
               <th className={th}>Handout</th>
-              <th className={th}>Self-quiz</th>
               <th className={th}>AI quiz</th>
               <th className={th}>Taps</th>
             </tr>
@@ -149,9 +148,6 @@ function PeopleTable({ r }: { r: ReadingActivity }) {
                 </td>
                 <td className={td}>
                   <Count n={p.handoutOpens} />
-                </td>
-                <td className={td}>
-                  <Count n={p.selfquizOpens} />
                 </td>
                 <td className={`${td} whitespace-nowrap`}>
                   <Check on={p.quizDone} />
@@ -200,12 +196,12 @@ function ReadingsTable({
       else n.add(k);
       return n;
     });
-  const cols = showAnon ? 10 : 9;
+  const cols = showAnon ? 9 : 8;
 
   return (
     <Section
       title={`${TRACK_LABEL[tr.track]} readings`}
-      note="The funnel per reading: article → handout → self-quiz → AI quiz, as the number of people who took each step. Read = median time the article page was visible. Click a row for who did what, with their opens."
+      note="The funnel per reading: article → handout → AI quiz, as the number of people who took each step. Read = median time the article page was visible. Click a row for who did what, with their opens."
     >
       {tr.readings.length === 0 ? (
         <Empty>No readings in this window.</Empty>
@@ -220,7 +216,6 @@ function ReadingsTable({
                 <th className={th}>Article</th>
                 <th className={th}>Read</th>
                 <th className={th}>Handout</th>
-                <th className={th}>Self-quiz</th>
                 <th className={th}>AI quiz</th>
                 <th className={th}>Taps</th>
                 {showAnon && <th className={th}>Logged out</th>}
@@ -289,9 +284,6 @@ function ReadingRows({
           <Count n={r.handoutPeople} />
         </td>
         <td className={td}>
-          <Count n={r.selfquizPeople} />
-        </td>
-        <td className={td}>
           <Count n={r.quizPeople} />
         </td>
         <td className={td}>
@@ -299,8 +291,8 @@ function ReadingRows({
         </td>
         {showAnon && (
           <td className={`${td} whitespace-nowrap ${muted}`}>
-            {r.anon.articleOpens + r.anon.handoutOpens + r.anon.selfquizOpens + r.anon.glossTaps
-              ? `${r.anon.articleOpens} · ${r.anon.handoutOpens} · ${r.anon.selfquizOpens} · ${r.anon.glossTaps}`
+            {r.anon.articleOpens + r.anon.handoutOpens + r.anon.glossTaps
+              ? `${r.anon.articleOpens} · ${r.anon.handoutOpens} · ${r.anon.glossTaps}`
               : "—"}
           </td>
         )}
@@ -336,7 +328,6 @@ function DaysTable({ days }: { days: StudentDay[] }) {
             <th className={th}>Article</th>
             <th className={th}>Read</th>
             <th className={th}>Handout</th>
-            <th className={th}>Self-quiz</th>
             <th className={th}>AI quiz</th>
             <th className={th}>Taps</th>
           </tr>
@@ -357,9 +348,6 @@ function DaysTable({ days }: { days: StudentDay[] }) {
               <td className={td}>{dur(d.readSeconds)}</td>
               <td className={td}>
                 <Count n={d.handoutOpens} />
-              </td>
-              <td className={td}>
-                <Count n={d.selfquizOpens} />
               </td>
               <td className={td}>
                 <Check on={d.quizDone} />
@@ -390,7 +378,7 @@ function StudentsTable({
       else n.add(k);
       return n;
     });
-  const cols = parentNames ? 11 : 10;
+  const cols = parentNames ? 9 : 8;
   const published = data.tracks
     .map((t) => `${t.readingsInWindow} ${TRACK_LABEL[t.track]}`)
     .join(", ");
@@ -412,9 +400,7 @@ function StudentsTable({
                 {parentNames && <th className={th}>Parent</th>}
                 <th className={th}>Articles</th>
                 <th className={th}>Handouts</th>
-                <th className={th}>Self-quizzes</th>
                 <th className={th}>AI quizzes</th>
-                <th className={th}>Word rounds</th>
                 <th className={th}>Read</th>
                 <th className={th}>Taps</th>
                 <th className={th}>Last active</th>
@@ -497,13 +483,7 @@ function StudentRows({
           <Count n={s.handouts} />
         </td>
         <td className={td}>
-          <Count n={s.selfquizzes} />
-        </td>
-        <td className={td}>
           <Count n={s.quizzes} />
-        </td>
-        <td className={td}>
-          <Count n={s.wordRounds} />
         </td>
         <td className={`${td} whitespace-nowrap`}>{dur(s.readSeconds)}</td>
         <td className={td}>
@@ -545,12 +525,12 @@ export default function ActivityReport({
         <p className="mt-3 font-sans text-[13px] text-stone-500">
           <span className={chip}>Logged out: </span>
           {anyAnon
-            ? `${a.articleOpens} article · ${a.handoutOpens} handout · ${a.selfquizOpens} self-quiz · ${a.wordbankOpens} word bank · ${a.glossTaps} taps`
+            ? `${a.articleOpens} article · ${a.handoutOpens} handout · ${a.wordbankOpens} word bank · ${a.glossTaps} taps`
             : "no logged-out opens in this window"}
           <span className={muted}>
             {" "}
             — opens with no login on either track, never attributed. The
-            column reads article · handout · self-quiz · taps.
+            column reads article · handout · taps.
           </span>
         </p>
       )}
