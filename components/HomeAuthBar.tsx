@@ -142,6 +142,10 @@ export default function HomeAuthBar() {
                 Students
               </Link>
               <Slash />
+              <Link href="/admin/analytics" className={bar}>
+                Activity
+              </Link>
+              <Slash />
             </>
           ) : (
             <>
