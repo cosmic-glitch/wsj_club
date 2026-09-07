@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-07",
+  "title": "Should you avoid blue light before bed?",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/04/should-you-avoid-blue-light-before-bed",
+  "articlePageUrl": "/articles/junior/2026-09-07.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "adverse",
+      "partOfSpeech": "adjective",
+      "pronunciation": "AD-vurs",
+      "articleQuote": "The adverse effects might not just be limited progress on “War and Peace”.",
+      "meaning": "**Adverse** means harmful, or working against you — the opposite of helpful. Doctors and scientists use it all the time: an \"adverse effect\" is an unwanted bad result of something. Here the writer means the downsides of using a screen before bed might go beyond just never finishing your book.",
+      "examples": [
+        "The championship game was postponed because of adverse weather.",
+        "The label warns that the medicine can have adverse effects, like an upset stomach."
+      ]
+    },
+    {
+      "word": "suppress",
+      "partOfSpeech": "verb",
+      "pronunciation": "suh-PRESS",
+      "articleQuote": "That suppresses production of melatonin—a hormone which induces night-related physiological processes",
+      "meaning": "To **suppress** something is to hold it down or keep it from happening. In this article, light suppresses melatonin: when bright light reaches the eye, the body makes less of that sleep chemical than it otherwise would.",
+      "examples": [
+        "I had to suppress a laugh when my dad's ringtone went off in the silent library.",
+        "Firefighters worked through the night to suppress the wildfire before it reached the town."
+      ]
+    },
+    {
+      "word": "inconclusive",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-kun-KLOO-siv",
+      "articleQuote": "The effectiveness of blue-filtering software for screens is inconclusive, too.",
+      "meaning": "Take the word apart: *in-* means \"not,\" and *conclusive* means \"settling the question for good.\" So **inconclusive** evidence doesn't prove anything either way — the question stays open. The article calls the research on blue-light filters inconclusive: the studies don't show the filters help, but they don't fully prove they're useless either.",
+      "examples": [
+        "The blurry photo was inconclusive — the \"ghost\" could easily have been a smudge on the lens.",
+        "Our science-fair results were inconclusive, so we ran the experiment again with twice as many plants."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The circadian clock",
+      "articleQuote": "The body’s daily rhythm is run by the brain’s circadian clock.",
+      "meaning": "Why do you get sleepy around the same time every night, even in a room with no clock? Your brain has a built-in timer that biologists call the **circadian clock** — *circadian* comes from Latin words meaning \"about a day,\" because the timer runs on a roughly 24-hour loop. It is a small cluster of brain cells that keeps the rest of your body on schedule: alert in the morning, drowsy at night.\n\nThe clock can't know the time on its own — light is what sets it. A few special cells in your eye contain melanopsin, a pigment (a light-absorbing chemical). When bright light hits those cells, they send electrical signals to the clock's brain cells, and the body then makes less **melatonin** — a hormone, meaning a chemical released into the blood, that starts the body's nighttime processes. When it gets dark, melatonin rises and you feel sleepy. That's why staying up all weekend with the lights blazing can leave your clock set late, so that Monday's 7am alarm feels like the middle of the night — and it's why this article asks whether a glowing phone at 10pm is quietly resetting a clock you want winding down. The takeaway: your sleepiness runs on an internal clock, and light is the dial that sets it."
+    },
+    {
+      "name": "Wavelength",
+      "articleQuote": "Melanopsin is particularly sensitive to light with wavelengths of around 480 nanometres, squarely in the spectrum’s blue zone.",
+      "meaning": "What actually makes blue light *blue*? Light travels as a wave, like ripples moving across a pond, and its **wavelength** — a term from physics — is the distance from the top of one ripple to the top of the next. For light that distance is incredibly small, measured in nanometres (there are a million nanometres in one millimetre), and it is what your eye detects as color. Waves about 480 nanometres long look blue; longer waves look green, then yellow, then red at around 700.\n\nLine all the wavelengths up in order and you get the **spectrum** — a rainbow is exactly that, sunlight split by raindrops into its separate wavelengths. So when the article says screen light has \"a lot of blue in its spectrum,\" that's a physical measurement, not a look: screens give off lots of short-wavelength light, the exact wave size the melanopsin in your eye responds to most strongly. Wherever you next meet the idea — a rainbow, sunburn from UV, a radio station's frequency — it's the same rule: it's all waves, and the length of the wave decides what kind it is."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the article's main message about blue light before bed?",
+      "options": [
+        "Blue light has been proven to ruin sleep, so screens must be avoided at night",
+        "The evidence against blue light in particular is weak — the brightness of any light may matter more",
+        "Blue-blocking glasses are proven to give you better sleep",
+        "Screens have no effect of any kind on sleep"
+      ],
+      "answerIndex": 1,
+      "explanation": "Scientists like Russell Foster say bright light of any color can shift the body's clock, and the studies singling out blue are inconclusive."
+    },
+    {
+      "question": "According to the article, what happens when light hits the melanopsin-containing cells in the eye?",
+      "options": [
+        "They sharpen your vision in the dark",
+        "They release melatonin into the blood",
+        "They send signals that suppress the body's melatonin production",
+        "They filter out the blue part of the light"
+      ],
+      "answerIndex": 2,
+      "explanation": "Those cells don't help you see — they signal the circadian clock's neurons, which suppresses melatonin and keeps the body synced to day and night."
+    },
+    {
+      "question": "In the 2015 study, people who read a screen for four hours before bed took about how much longer to fall asleep than print readers?",
+      "options": [
+        "About ten minutes",
+        "About an hour",
+        "About three hours",
+        "They actually fell asleep faster"
+      ],
+      "answerIndex": 0,
+      "explanation": "Their melatonin dropped by roughly half, but they dozed off only about ten minutes later on average — one reason the article says the case isn't closed."
+    },
+    {
+      "question": "The article calls the evidence on blue-filtering software \"inconclusive.\" What does that mean?",
+      "options": [
+        "It proves the filters work",
+        "It proves the filters are harmful",
+        "It doesn't settle the question either way",
+        "It was based on too many studies"
+      ],
+      "answerIndex": 2,
+      "explanation": "Inconclusive evidence doesn't prove anything either way — the studies leave the question open."
+    },
+    {
+      "question": "Blue light has a wavelength of around 480 nanometres. What is a wavelength?",
+      "options": [
+        "How bright a light is",
+        "The distance from the top of one wave to the top of the next",
+        "How fast light travels",
+        "The number of colors mixed in a light"
+      ],
+      "answerIndex": 1,
+      "explanation": "A wavelength is the distance between wave peaks — and for light, that tiny distance is what your eye detects as color."
+    }
+  ]
+}

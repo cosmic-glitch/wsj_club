@@ -1,0 +1,420 @@
+[
+  {
+    "k": "adverse",
+    "t": "adverse",
+    "kind": "vocab",
+    "pron": "AD-vurs",
+    "forms": [
+      "adverse"
+    ],
+    "text": "Adverse means harmful, or working against you — the opposite of helpful. Doctors and scientists talk about the adverse effects of things, meaning the unwanted bad results. Here the adverse effects of screens before bed might go beyond just never finishing your book.",
+    "audio": true
+  },
+  {
+    "k": "suppress",
+    "t": "suppress",
+    "kind": "vocab",
+    "pron": "suh-PRESS",
+    "forms": [
+      "suppresses"
+    ],
+    "text": "To suppress something is to hold it down or keep it from happening. In this article, light suppresses melatonin: when bright light reaches the eye, the body makes less of that sleep chemical than it otherwise would.",
+    "audio": true
+  },
+  {
+    "k": "inconclusive",
+    "t": "inconclusive",
+    "kind": "vocab",
+    "pron": "in-kun-KLOO-siv",
+    "forms": [
+      "inconclusive"
+    ],
+    "text": "In- means not, and conclusive means settling a question for good. So inconclusive evidence doesn't prove anything either way — the question stays open. The studies on blue-light filters are inconclusive: they don't show the filters help, but they don't fully prove they're useless either.",
+    "audio": true
+  },
+  {
+    "k": "long-neglected",
+    "t": "long-neglected",
+    "kind": "word",
+    "forms": [
+      "long-neglected"
+    ],
+    "text": "To neglect something is to ignore it or fail to give it attention. A long-neglected book is one that has sat untouched for ages — here, the book on the nightstand that keeps losing out to the phone.",
+    "audio": true
+  },
+  {
+    "k": "pre-slumber",
+    "t": "pre-slumber",
+    "kind": "word",
+    "forms": [
+      "pre-slumber"
+    ],
+    "text": "Slumber is a slightly old-fashioned word for sleep, and pre- means before. So pre-slumber screen-use just means looking at a screen in the time before you fall asleep.",
+    "audio": true
+  },
+  {
+    "k": "subsequent",
+    "t": "subsequent",
+    "kind": "word",
+    "forms": [
+      "subsequent"
+    ],
+    "text": "Subsequent means coming after something else. A subsequent bad night's sleep is the bad sleep that follows the evening screen time. It's a common word in science writing for what happens next.",
+    "audio": true
+  },
+  {
+    "k": "kip",
+    "t": "kip",
+    "kind": "word",
+    "forms": [
+      "kip"
+    ],
+    "text": "Kip is British slang for sleep. Poor kip just means a bad night's sleep. The Economist is a British magazine, so casual British words like this pop up now and then.",
+    "audio": true
+  },
+  {
+    "k": "gaggle",
+    "t": "gaggle",
+    "kind": "word",
+    "forms": [
+      "gaggle"
+    ],
+    "text": "A gaggle is literally a flock of geese, but writers use it playfully for any noisy or jumbled group. A gaggle of products means a whole crowd of them — glasses, software, screen covers — all honking for your attention.",
+    "audio": true
+  },
+  {
+    "k": "bias",
+    "t": "bias",
+    "kind": "word",
+    "forms": [
+      "bias"
+    ],
+    "text": "A bias is an unfair leaning against (or for) something before the facts are in. The writer jokes that treating blue light as the villain is a bias against blue — a prejudice the evidence doesn't really back up.",
+    "audio": true
+  },
+  {
+    "k": "flying-colours",
+    "t": "with flying colours",
+    "kind": "phrase",
+    "forms": [
+      "with flying colours"
+    ],
+    "text": "To pass with flying colours is to succeed brilliantly — the image comes from ships sailing home with their flags (colours) flying after a victory. The article flips it: the evidence against blue light hardly passes with flying colours, meaning it does badly.",
+    "audio": true
+  },
+  {
+    "k": "tempo",
+    "t": "tempo",
+    "kind": "word",
+    "forms": [
+      "tempo"
+    ],
+    "text": "Tempo is the speed or beat of something, a word borrowed from music. Saying light sets the tempo means light controls the timing of the body's daily rhythm, the way a drummer sets the beat for a band.",
+    "audio": true
+  },
+  {
+    "k": "circadian-clock",
+    "t": "circadian clock",
+    "kind": "name",
+    "pron": "sur-KAY-dee-un",
+    "forms": [
+      "circadian clock",
+      "circadian"
+    ],
+    "text": "The circadian clock is the brain's built-in timer, running on a roughly 24-hour cycle — circadian comes from Latin for 'about a day'. It makes you alert in the morning and drowsy at night, and light is what keeps it set to the right time.",
+    "audio": true
+  },
+  {
+    "k": "pigment",
+    "t": "pigment",
+    "kind": "word",
+    "forms": [
+      "pigment"
+    ],
+    "text": "A pigment is a chemical that absorbs light — it's what gives paint, skin, and leaves their color. Here, cells in the eye contain a light-sensitive pigment called melanopsin that reacts when light hits it.",
+    "audio": true
+  },
+  {
+    "k": "melanopsin",
+    "t": "melanopsin",
+    "kind": "name",
+    "pron": "mel-uh-NOP-sin",
+    "forms": [
+      "melanopsin"
+    ],
+    "text": "Melanopsin is a light-sensitive chemical found in a few special cells of the eye. Those cells don't help you see. When light hits the melanopsin, they send signals to the brain's clock — that's how your body learns whether it's day or night.",
+    "audio": true
+  },
+  {
+    "k": "neurons",
+    "t": "neurons",
+    "kind": "word",
+    "forms": [
+      "neurons"
+    ],
+    "text": "Neurons are nerve cells — the cells that carry electrical signals in your brain and body. The circadian clock is made of neurons, and the eye's light-sensing cells send their signals to them.",
+    "audio": true
+  },
+  {
+    "k": "melatonin",
+    "t": "melatonin",
+    "kind": "name",
+    "pron": "mel-uh-TOH-nin",
+    "forms": [
+      "melatonin"
+    ],
+    "text": "Melatonin is a hormone the brain releases into the blood as night approaches; it starts the body's sleep-related processes. Bright light suppresses it — which is why light at bedtime is suspected of pushing sleep later.",
+    "audio": true
+  },
+  {
+    "k": "hormone",
+    "t": "hormone",
+    "kind": "word",
+    "forms": [
+      "hormone"
+    ],
+    "text": "A hormone is a chemical made in one part of the body and released into the blood to affect other parts. Adrenaline and melatonin are hormones. Think of it as a chemical message sent through the bloodstream.",
+    "audio": true
+  },
+  {
+    "k": "induce",
+    "t": "induces",
+    "kind": "word",
+    "forms": [
+      "induces"
+    ],
+    "text": "To induce something is to cause it or bring it on. Melatonin induces night-related processes, meaning it sets off the body changes that come with sleep.",
+    "audio": true
+  },
+  {
+    "k": "physiological",
+    "t": "physiological",
+    "kind": "word",
+    "forms": [
+      "physiological"
+    ],
+    "text": "Physiological means to do with how the body works — breathing, heartbeat, temperature, sleep. Night-related physiological processes are the physical changes your body goes through as it gets ready to sleep.",
+    "audio": true
+  },
+  {
+    "k": "synchronise",
+    "t": "synchronises",
+    "kind": "word",
+    "forms": [
+      "synchronises"
+    ],
+    "text": "To synchronise things is to line them up in time so they run together — like players syncing their game clocks. Light synchronises the body to Earth's day-night cycle, keeping your inner clock matched to the actual day outside. This is the British spelling; Americans write synchronize.",
+    "audio": true
+  },
+  {
+    "k": "wavelength",
+    "t": "wavelengths",
+    "kind": "name",
+    "pron": "WAYV-length",
+    "forms": [
+      "wavelengths"
+    ],
+    "text": "Light travels as a wave, and a wavelength is the distance from the top of one wave to the top of the next. For light that distance is tiny — and it's what your eye detects as color. Waves around 480 nanometres look blue; longer ones look green, yellow, then red.",
+    "audio": true
+  },
+  {
+    "k": "nanometre",
+    "t": "nanometres",
+    "kind": "word",
+    "forms": [
+      "nanometres"
+    ],
+    "text": "A nanometre is a billionth of a metre — a million of them fit in one millimetre. Scientists use nanometres to measure things as small as light waves. This is the British spelling of nanometer.",
+    "audio": true
+  },
+  {
+    "k": "spectrum",
+    "t": "spectrum",
+    "kind": "word",
+    "forms": [
+      "spectrum"
+    ],
+    "text": "The spectrum is the full range of light wavelengths lined up in order — a rainbow is the spectrum made visible, sunlight split into its separate colors. Light with a lot of blue in its spectrum contains a big share of short, blue wavelengths.",
+    "audio": true
+  },
+  {
+    "k": "uncontroversial",
+    "t": "uncontroversial",
+    "kind": "word",
+    "forms": [
+      "uncontroversial"
+    ],
+    "text": "Something controversial causes arguments; something uncontroversial is a fact nearly everyone accepts. That blue light blocks melatonin is uncontroversial — the argument is only about whether everyday screen use matters.",
+    "audio": true
+  },
+  {
+    "k": "pnas",
+    "t": "Proceedings of the National Academy of Sciences",
+    "kind": "name",
+    "forms": [
+      "Proceedings of the National Academy of Sciences"
+    ],
+    "text": "A famous American science journal, often shortened to PNAS. Scientists publish their studies in journals like this one so other scientists can check the work. A study appearing here is serious research — though, as this article shows, even serious studies can disagree.",
+    "audio": true
+  },
+  {
+    "k": "hit-the-sack",
+    "t": "hitting the sack",
+    "kind": "phrase",
+    "forms": [
+      "hitting the sack"
+    ],
+    "text": "To hit the sack is a casual way of saying to go to bed. Long ago mattresses were sacks stuffed with straw, and the phrase stuck around long after the straw didn't.",
+    "audio": true
+  },
+  {
+    "k": "bookworm",
+    "t": "bookworm",
+    "kind": "word",
+    "forms": [
+      "bookworm"
+    ],
+    "text": "A bookworm is someone who loves reading and does a lot of it. The article's point: four hours of reading in one evening is a lot even for a bookworm, so the study's setup wasn't very realistic.",
+    "audio": true
+  },
+  {
+    "k": "square-eyes",
+    "t": "square eyes",
+    "kind": "phrase",
+    "forms": [
+      "square eyes"
+    ],
+    "text": "Square eyes is a joking British expression for what you supposedly get from staring at screens too long — eyes the shape of the screen. Here, those with square eyes just means the people in the study who read on screens.",
+    "audio": true
+  },
+  {
+    "k": "doze-off",
+    "t": "doze off",
+    "kind": "phrase",
+    "forms": [
+      "doze off"
+    ],
+    "text": "To doze off is to drift into sleep, usually without quite meaning to. The screen readers took about ten minutes longer to doze off than the print readers — a much smaller gap than you might expect.",
+    "audio": true
+  },
+  {
+    "k": "onset",
+    "t": "onset",
+    "kind": "word",
+    "forms": [
+      "onset"
+    ],
+    "text": "The onset of something is its beginning — the moment it starts. The onset of sleep means the point when you actually fall asleep. Scientists measure sleep onset to compare how fast different groups nod off.",
+    "audio": true
+  },
+  {
+    "k": "duration",
+    "t": "duration",
+    "kind": "word",
+    "forms": [
+      "duration"
+    ],
+    "text": "Duration means how long something lasts. The duration of sleep is simply the number of hours you stay asleep. The 2016 study found no difference in either the onset or the duration of sleep between screen readers and print readers.",
+    "audio": true
+  },
+  {
+    "k": "boffin",
+    "t": "boffins",
+    "kind": "word",
+    "forms": [
+      "boffins"
+    ],
+    "text": "Boffin is playful British slang for a scientist or technical expert. Blue-light boffins are the researchers who study blue light. British newspapers love this word; you'll rarely hear it in America.",
+    "audio": true
+  },
+  {
+    "k": "swamped",
+    "t": "swamped",
+    "kind": "word",
+    "forms": [
+      "swamped"
+    ],
+    "text": "A swamp is waterlogged ground, so to be swamped is to be flooded — buried in more of something than you can handle. Being swamped with complications means the researchers face a pile of confusing factors, not that anyone is literally underwater.",
+    "audio": true
+  },
+  {
+    "k": "extrapolate",
+    "t": "extrapolating",
+    "kind": "word",
+    "forms": [
+      "extrapolating"
+    ],
+    "text": "To extrapolate is to stretch a conclusion beyond the facts you actually have — to assume a pattern continues outside what you measured. Dr Foster warns against extrapolating from lab experiments to real life: what happens in a controlled lab may not happen in your bedroom.",
+    "audio": true
+  },
+  {
+    "k": "cite",
+    "t": "citing",
+    "kind": "word",
+    "forms": [
+      "citing"
+    ],
+    "text": "To cite something is to point to it as your evidence or reason. Citing a lack of data means giving 'we don't have enough data' as the reason for his warning.",
+    "audio": true
+  },
+  {
+    "k": "spectacles",
+    "t": "spectacles",
+    "kind": "word",
+    "forms": [
+      "spectacles"
+    ],
+    "text": "Spectacles is a formal, slightly old-fashioned word for eyeglasses. Blue-blocking spectacles are glasses with lenses that filter out blue light — one of the products this article is questioning.",
+    "audio": true
+  },
+  {
+    "k": "cochrane",
+    "t": "Cochrane Database of Systematic Reviews",
+    "kind": "name",
+    "forms": [
+      "Cochrane Database of Systematic Reviews"
+    ],
+    "text": "A respected collection of systematic reviews — studies of studies. Instead of running a new experiment, a systematic review gathers every good trial on a question (here, 17 of them) and weighs the results together. That makes its verdicts stronger than any single study.",
+    "audio": true
+  },
+  {
+    "k": "trial",
+    "t": "trials",
+    "kind": "word",
+    "forms": [
+      "trials"
+    ],
+    "text": "In science, a trial isn't a courtroom event — it's a careful test of whether something works, usually comparing people who get the thing with people who don't. The review looked at 17 trials of blue-blocking lenses.",
+    "audio": true
+  },
+  {
+    "k": "eschew",
+    "t": "eschew",
+    "kind": "word",
+    "forms": [
+      "eschew"
+    ],
+    "text": "To eschew something is to deliberately avoid or give it up. Dr Foster isn't telling anyone to eschew blue light in particular — his advice is simply to keep all light low before bed.",
+    "audio": true
+  },
+  {
+    "k": "frequency",
+    "t": "frequencies",
+    "kind": "word",
+    "forms": [
+      "frequencies"
+    ],
+    "text": "A wave's frequency is how many waves pass a point each second. It's the flip side of wavelength: shorter waves come more often, so blue light has a high frequency. Blue frequencies here just means the blue part of light.",
+    "audio": true
+  },
+  {
+    "k": "war-and-peace",
+    "t": "War and Peace",
+    "kind": "name",
+    "forms": [
+      "War and Peace"
+    ],
+    "text": "A famous Russian novel by Leo Tolstoy, and one of the longest books people commonly attempt — well over 1,000 pages. Writers use it as shorthand for a giant reading project, which is why progress on it stalls when the phone wins at bedtime.",
+    "audio": true
+  }
+]
