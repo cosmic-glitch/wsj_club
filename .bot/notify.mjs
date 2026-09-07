@@ -10,8 +10,8 @@
 // Targets (JIDs live in the gitignored .bot/.env; run with --env-file=.bot/.env):
 //   owner (default) → NANOCLAW_CHATJID   the owner's personal DM — the morning
 //                     ranked field, dry-run notes, warnings
-//   group           → NANOCLAW_GROUP_JID  the club's WhatsApp group — the daily
-//                     "Today's article is up" line, nothing else
+//   group           → NANOCLAW_GROUP_JID  the club's WhatsApp group — the day's one
+//                     "Today's articles are up." message, nothing else
 // If NANOCLAW_GROUP_JID is unset, a group message falls back to the owner's DM
 // with a note saying so — the announcement must never vanish silently.
 import fs from "node:fs";

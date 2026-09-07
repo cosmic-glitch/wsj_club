@@ -115,7 +115,7 @@ Live: commits the day's files on `main`, rebases on `origin/main`, pushes (= dep
 
 ## Step 9 — The wrapper announces (you send nothing)
 
-After your session ends, `run-auto-publish.sh` polls `https://dailyreadingclub.com/reading/${TODAY}` for up to 12 minutes and, once it serves, sends the club group its one fixed line — `Today's article is up ("<title>").  dailyreadingclub.com` — built from the content JSON's `title`. The dry-run note and the pushed-but-not-serving warning go to the owner's DM the same way, and every message is gated on the marker from Step 8, so a day the owner published by hand is never announced by the autopilot. **You never call `notify.mjs` in this skill** — no message to the group, none to the owner. The owner's window into what you chose and why is the commit and the log; **voter names never go in either.**
+After your session ends, `run-auto-publish.sh` polls `https://dailyreadingclub.com/reading/${TODAY}` for up to 12 minutes and, once it serves, hands the content JSON's `title` to the junior run, which announces both tracks to the club group in the day's one message (`Today's articles are up.` + a Regular line + a Junior line); when no junior run is coming, the wrapper sends the senior one-liner itself. The dry-run note and the pushed-but-not-serving warning go to the owner's DM the same way, and every message is gated on the marker from Step 8, so a day the owner published by hand is never announced by the autopilot. **You never call `notify.mjs` in this skill** — no message to the group, none to the owner. The owner's window into what you chose and why is the commit and the log; **voter names never go in either.**
 
 ## Failure handling
 

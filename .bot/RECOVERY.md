@@ -39,7 +39,7 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
      ECON_EMAIL='...'                          # Economist login (owner has the password)
      ECON_PASS='...'
      NANOCLAW_CHATJID='<number>@s.whatsapp.net' # owner's WhatsApp DM: the 6am ranked fields, dry-run + warning notes
-     NANOCLAW_GROUP_JID='<id>@g.us'             # the club's WhatsApp group: the 9am "Today's [junior-track] article is up" lines
+     NANOCLAW_GROUP_JID='<id>@g.us'             # the club's WhatsApp group: the day's one "Today's articles are up." message
      ```
      To find a group's JID (the bot's number must be a member): force nanoclaw to
      re-sync its group list, then read its chat store —
@@ -154,13 +154,17 @@ refuses to write a teaser (exit 2) for the same reason.
   git; it never waits for the deploy (the wrapper does). `--track=junior`
   selects the junior paths and branch.
 - `notify.mjs` — drop a nanoclaw IPC message → WhatsApp: the owner's DM by
-  default, `--to=group` for the club group (the daily announcements — sent by
-  `run-auto-publish.sh` once it has verified the day is live, never by the skill).
+  default, `--to=group` for the club group (the day's one announcement — sent by
+  `run-auto-publish.sh --track=junior` once both tracks are verified live, the
+  senior wrapper having handed its title over via `state/<date>-senior-live`;
+  never by the skill).
 - `run-auto-vote.sh` / `run-auto-publish.sh` — the cron entrypoints (Pacific
   gate → lock → `git pull` → `xvfb-run claude -p` → outcome check; the publish
   wrapper's outcome check also polls the live URL for up to 12 minutes and then
   sends the announcement / owner DM), one per phase for both tracks
   (`--track=junior`).
 - `state/` — box-local hand-off between the two runs (`<date>-field.json`,
-  `<date>-tally.json`; junior `<date>-junior-field.json`, `<date>-junior-tally.json`);
+  `<date>-tally.json`, `<date>-pushed`, `<date>-senior-live` — the senior title
+  for the junior wrapper's combined announcement; junior `<date>-junior-field.json`,
+  `<date>-junior-tally.json`, `<date>-junior-pushed`);
   `logs/` — per-day logs + the lock.
