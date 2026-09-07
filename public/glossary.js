@@ -20,6 +20,42 @@
 
 var m=location.pathname.match(/^\/articles\/(.+)\.html$/);
 if(!m)return;
+
+/* ---- activity beacon (analytics; lib/events.ts) ----
+   Every article page loads this file, so it is the article page's runtime:
+   one article_view per page load, then article_read carrying the CUMULATIVE
+   seconds the page was actually visible, flushed each time the reader hides
+   the tab or leaves (iOS never fires pagehide reliably, so visibilitychange
+   is the primary signal; the reader takes the max per view id `v`).
+   gloss_tap fires from openSheet below. Identity is the login cookie,
+   resolved server-side; a logged-out read lands in the anonymous bucket.
+   Fire-and-forget: sendBeacon survives the unload, a failure changes
+   nothing for the reader. The body is a plain-text string carrying JSON
+   (what sendBeacon sends for a string; the route parses it). */
+var TRACK=/^junior\//.test(m[1])?"junior":"senior";
+var DATE=(m[1].match(/(\d{4}-\d{2}-\d{2})/)||[])[1]||null;
+var VIEW=Math.random().toString(36).slice(2,10)+Date.now().toString(36);
+function beacon(kind,meta){
+  if(!DATE)return;
+  try{
+    var body=JSON.stringify({kind:kind,track:TRACK,date:DATE,meta:meta});
+    if(navigator.sendBeacon){navigator.sendBeacon("/api/events",body);return;}
+    fetch("/api/events",{method:"POST",body:body,keepalive:true,credentials:"same-origin"}).catch(function(){});
+  }catch(err){}
+}
+beacon("article_view",{v:VIEW});
+var visibleSince=document.visibilityState==="hidden"?null:Date.now(),visibleMs=0,sentMs=0;
+function flushRead(){
+  if(visibleSince!=null){visibleMs+=Date.now()-visibleSince;visibleSince=null;}
+  // hidden + pagehide both fire on a navigation — send only when there's new time.
+  if(visibleMs>=1000&&visibleMs>sentMs){sentMs=visibleMs;beacon("article_read",{v:VIEW,seconds:Math.round(visibleMs/1000)});}
+}
+document.addEventListener("visibilitychange",function(){
+  if(document.visibilityState==="hidden")flushRead();
+  else if(visibleSince==null)visibleSince=Date.now();
+});
+window.addEventListener("pagehide",flushRead);
+
 // Pronunciation clips live under the DATE — the trailing-anything match keeps
 // junior's junior/<date> prefix working and is harmless for a plain date.
 var AUDIO_BASE="/audio/"+m[1].replace(/^((?:junior\/)?\d{4}-\d{2}-\d{2}).*$/,"$1")+"/gloss/";
@@ -106,6 +142,7 @@ function stopHear(){
 }
 function openSheet(k){
   var e=byKey[k];if(!e)return;
+  beacon("gloss_tap",{v:VIEW,word:e.t,kind:e.kind});
   stopHear();
   var h=chipFor(e);
   // The pron + speaker button ride in a no-wrap span with the term's LAST word,

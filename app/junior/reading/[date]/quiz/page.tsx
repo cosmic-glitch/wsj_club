@@ -28,5 +28,5 @@ export default async function JuniorQuizPage({
   const { date } = await params;
   const reading = getReading(date, "junior");
   if (!reading) notFound();
-  return <SelfQuiz reading={reading} />;
+  return <SelfQuiz reading={reading} track="junior" />;
 }

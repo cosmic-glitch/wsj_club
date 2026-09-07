@@ -1,13 +1,22 @@
-import { type Reading } from "@/lib/content";
+import { type Reading, type Track } from "@/lib/content";
 import Quiz from "@/components/Quiz";
+import PageBeacon from "@/components/PageBeacon";
 
 // The self-quiz page body, shared by the senior (/reading/<date>/quiz) and
 // junior (/junior/reading/<date>/quiz) tracks. A black SELF-QUIZ chip + Anton
 // title matching the handout, then the interactive Quiz. No track-dependent nav
-// hrefs live inside it, so it doesn't need `track`.
-export default function SelfQuiz({ reading }: { reading: Reading }) {
+// hrefs live inside it; `track` only labels the activity beacon.
+export default function SelfQuiz({
+  reading,
+  track = "senior",
+}: {
+  reading: Reading;
+  track?: Track;
+}) {
   return (
     <article>
+      {/* Activity beacon (analytics) — one selfquiz_view per open. */}
+      <PageBeacon kind="selfquiz_view" track={track} date={reading.date} />
       {/* Header — the article name as a mini-masthead, matching the handout. */}
       <header className="border-b-[5px] border-[#0a0a0a] pb-5">
         <p>

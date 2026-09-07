@@ -2,6 +2,7 @@ import Link from "next/link";
 import { type Reading, type VocabWord, type Concept, type Track } from "@/lib/content";
 import { audioSrcFor } from "@/lib/handout-audio";
 import PronounceButton from "@/components/PronounceButton";
+import PageBeacon from "@/components/PageBeacon";
 import { Rich, RichParagraphs } from "@/lib/rich-text";
 
 // The handout body, shared by the senior (/reading/<date>) and junior
@@ -25,6 +26,8 @@ export default function Handout({
 
   return (
     <article>
+      {/* Activity beacon (analytics) — one handout_view per open. */}
+      <PageBeacon kind="handout_view" track={track} date={reading.date} />
       {/* Header — the article name as a mini-masthead. */}
       <header className="border-b-[5px] border-[#0a0a0a] pb-5">
         <p className="font-mono text-[11px] font-bold uppercase tracking-[.18em] text-stone-500">

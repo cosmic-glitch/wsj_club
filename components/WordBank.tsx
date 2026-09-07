@@ -2,6 +2,7 @@ import { getAllReadings, type Track } from "@/lib/content";
 import { audioSrcFor } from "@/lib/handout-audio";
 import WordBankList, { type BankDay } from "@/components/WordBankList";
 import WordQuiz from "@/components/WordQuiz";
+import PageBeacon from "@/components/PageBeacon";
 
 /** "2026-07-08" → "Jul 8" (rendered uppercase in the date column). */
 function dateTag(date: string): string {
@@ -46,6 +47,9 @@ export default function WordBank({ track = "senior" }: { track?: Track }) {
 
   return (
     <div>
+      {/* Activity beacon (analytics) — one wordbank_view per open; the bank
+          belongs to no single reading, so no date. */}
+      <PageBeacon kind="wordbank_view" track={track} />
       <header className="border-b-[5px] border-[#0a0a0a] pb-5">
         <p className="font-mono text-[11px] font-bold uppercase tracking-[.18em] text-stone-500">
           {junior ? "Junior · Grades 5–7" : "Your review list"}
