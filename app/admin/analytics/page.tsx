@@ -7,7 +7,6 @@ import { loadEvents, type ActivityEvent } from "@/lib/events";
 import { getAllReadings, type Track } from "@/lib/content";
 import {
   buildTrackAnalytics,
-  clubDay,
   windowStart,
   type ActivityWindow,
   type Member,
@@ -28,8 +27,8 @@ export const metadata = {
  * rc_events + the quiz tables). Scoped exactly like Reports: the owner sees
  * every classroom (plus the logged-out bucket and a Parent column), a parent
  * their own classroom; students don't have it. Both tracks as tabs; the
- * window (7 / 30 days / all) is a query param so the aggregation stays on the
- * server.
+ * window (7 days by default / 30 / all) is a query param so the aggregation
+ * stays on the server.
  */
 
 const WINDOWS: { key: string; w: ActivityWindow; label: string }[] = [
@@ -38,9 +37,11 @@ const WINDOWS: { key: string; w: ActivityWindow; label: string }[] = [
   { key: "all", w: "all", label: "All time" },
 ];
 
+const DEFAULT_WINDOW: ActivityWindow = 7;
+
 function parseWindow(v: string | string[] | undefined): ActivityWindow {
   const s = Array.isArray(v) ? v[0] : v;
-  return WINDOWS.find((x) => x.key === s)?.w ?? 30;
+  return WINDOWS.find((x) => x.key === s)?.w ?? DEFAULT_WINDOW;
 }
 
 function Title({ children }: { children: React.ReactNode }) {
@@ -139,7 +140,6 @@ export default async function AnalyticsPage({
   const parentNames: Record<string, string> = {};
   for (const u of active) if (u.role === "parent") parentNames[u.username] = u.displayName;
 
-  const today = clubDay(new Date().toISOString());
   const build = (track: Track, events: ActivityEvent[]) =>
     buildTrackAnalytics({
       track,
@@ -151,7 +151,6 @@ export default async function AnalyticsPage({
       wordAttempts: wordAttempts.filter((a) => a.track === track && inScopeAttempt(a)),
       members,
       since,
-      today,
     });
 
   const senior = build("senior", seniorEvents);
@@ -187,7 +186,7 @@ export default async function AnalyticsPage({
           return (
             <Link
               key={x.key}
-              href={x.key === "30" ? "/admin/analytics" : `/admin/analytics?days=${x.key}`}
+              href={x.w === DEFAULT_WINDOW ? "/admin/analytics" : `/admin/analytics?days=${x.key}`}
               aria-current={selected ? "page" : undefined}
               className={`border-2 border-[#0a0a0a] px-4 py-2 font-mono text-xs font-bold uppercase tracking-[.06em] no-underline transition ${
                 selected

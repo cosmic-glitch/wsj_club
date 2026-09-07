@@ -11,9 +11,9 @@ import type {
 
 /**
  * The Activity page's body for ONE track (app/admin/analytics renders one per
- * track tab): the 30-day strip, the by-reading funnel table, the by-student
- * table — each table row expands in place to its detail (who did which step
- * and when / that student's per-reading timeline). All numbers arrive
+ * track tab): the by-student table, then the by-reading funnel table — each
+ * row expands in place to its detail (that student's per-reading timeline /
+ * who did which step and when). All numbers arrive
  * pre-aggregated from lib/analytics.ts; this component only lays them out.
  * Client only for the expand/collapse state — nothing is fetched here.
  *
@@ -132,50 +132,6 @@ function Section({
       <p className="mt-1 font-sans text-[13px] text-stone-500">{note}</p>
       {children}
     </section>
-  );
-}
-
-/* ------------------------------------------------------------ 30-day strip */
-
-function DailyStrip({ data }: { data: TrackAnalytics }) {
-  const max = Math.max(1, ...data.daily.map((d) => d.active));
-  return (
-    <Section
-      title="Last 30 days"
-      note="Members active each day (any open or quiz), club time. A marked day had a reading published."
-    >
-      <div className="mt-3 overflow-x-auto">
-        <div className="grid min-w-[720px] grid-cols-[repeat(30,minmax(0,1fr))] gap-[3px]">
-          {data.daily.map((d) => {
-            const on = d.active > 0;
-            return (
-              <div
-                key={d.day}
-                title={`${dateTag(d.day)}: ${d.active} active${d.hasReading ? " · reading published" : ""}`}
-                className={`flex h-9 items-center justify-center border-2 border-[#0a0a0a] font-mono text-[12px] font-bold ${
-                  on ? "bg-[#0a0a0a] text-[#ffe600]" : "bg-white text-stone-300"
-                } ${d.hasReading ? "border-b-[5px]" : ""}`}
-                style={on ? { opacity: 0.55 + 0.45 * (d.active / max) } : undefined}
-              >
-                {on ? d.active : "·"}
-              </div>
-            );
-          })}
-        </div>
-        <div className="mt-1 grid min-w-[720px] grid-cols-[repeat(30,minmax(0,1fr))] gap-[3px]">
-          {/* A label every 7th day counting back from today; the cells are
-              narrow, so labels overflow into their (empty) neighbours. */}
-          {data.daily.map((d, i) => (
-            <div
-              key={d.day}
-              className="whitespace-nowrap text-left font-mono text-[9px] font-bold uppercase tracking-[.04em] text-stone-400"
-            >
-              {(29 - i) % 7 === 0 ? dateTag(d.day) : ""}
-            </div>
-          ))}
-        </div>
-      </div>
-    </Section>
   );
 }
 
@@ -591,7 +547,7 @@ export default function ActivityReport({
   const anyAnon = a.articleOpens + a.handoutOpens + a.selfquizOpens + a.wordbankOpens + a.glossTaps;
   return (
     <div>
-      <DailyStrip data={data} />
+      <StudentsTable data={data} parentNames={parentNames} />
       <ReadingsTable data={data} showAnon={showAnon} />
       {showAnon && (
         <p className="mt-3 font-sans text-[13px] text-stone-500">
@@ -606,7 +562,6 @@ export default function ActivityReport({
           </span>
         </p>
       )}
-      <StudentsTable data={data} parentNames={parentNames} />
     </div>
   );
 }
