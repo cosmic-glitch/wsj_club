@@ -420,10 +420,10 @@ function StudentsTable({
   return (
     <Section
       title="By student"
-      note={`Readings touched in this window, both tracks (${published} published). /N is what was published on the track(s) that person read. Read = total time on article pages. Parents follow the students. Click a row for the per-reading timeline, with junior readings marked.`}
+      note={`Everyone with any activity in this window, both tracks (${published} published). /N is what was published on the track(s) that person read. Read = total time on article pages. Parents follow the students. Click a row for the per-reading timeline, with junior readings marked.`}
     >
       {data.students.length === 0 ? (
-        <Empty>No students in this classroom.</Empty>
+        <Empty>No activity in this window.</Empty>
       ) : (
         <div className="mt-3 overflow-x-auto border-[3px] border-[#0a0a0a] bg-white">
           <table className="w-full border-collapse">
@@ -465,6 +465,12 @@ function StudentsTable({
             </tbody>
           </table>
         </div>
+      )}
+      {data.idleMembers > 0 && (
+        <p className={`${chip} mt-2`}>
+          {data.idleMembers} {data.idleMembers === 1 ? "member" : "members"} with nothing in
+          this window, not listed.
+        </p>
       )}
     </Section>
   );

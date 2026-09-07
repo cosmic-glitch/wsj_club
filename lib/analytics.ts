@@ -9,10 +9,11 @@ import type { WordQuizAttempt } from "@/lib/word-quiz";
  * events/sessions a viewer may see; this module only counts). One build
  * covers BOTH tracks and yields two views:
  *
- *   students — one row per roster member (students, then parents), combined
- *              across tracks: distinct readings touched per step within the
- *              window, read time, taps, last active — plus a per-reading
- *              timeline (both tracks, newest first) for the expanded row.
+ *   students — one row per person with any activity in the window (students,
+ *              then parents; the idle roster is only counted), combined
+ *              across tracks: distinct readings touched per step, read time,
+ *              taps, last active — plus a per-reading timeline (both tracks,
+ *              newest first) for the expanded row.
  *   tracks   — per track, one row per reading dated in the window, with the
  *              funnel (article → handout → self-quiz → AI quiz) as people +
  *              opens, the median read time, glossary taps, and the per-person
@@ -116,6 +117,7 @@ export type TrackReadings = {
 
 export type Analytics = {
   students: StudentRow[];
+  idleMembers: number; // roster members with no row (nothing in the window)
   tracks: TrackReadings[]; // senior, then junior
   anon: {
     articleOpens: number;
@@ -214,7 +216,7 @@ export function buildAnalytics(input: {
   sessions: Session[];
   /** Word-bank rounds, both tracks, scoped. */
   wordAttempts: WordQuizAttempt[];
-  /** The roster rows to show — every one gets a row, even with no activity. */
+  /** The roster — sets role/parent on a row; the idle ones are only counted. */
   members: Member[];
   /** Window start (ISO) or null for all time. */
   since: string | null;
@@ -383,6 +385,7 @@ export function buildAnalytics(input: {
   const memberOf = new Map(members.map((m) => [m.username, m]));
   const trackOrder = (t: Track) => TRACKS.indexOf(t);
   const studentRows: StudentRow[] = [];
+  let idleMembers = 0;
   for (const u of people) {
     const m = memberOf.get(u);
     const days: StudentDay[] = [];
@@ -412,9 +415,12 @@ export function buildAnalytics(input: {
     );
     const hasActivity =
       days.length > 0 || (wordRounds.get(u) ?? 0) > 0 || (wordbankOpens.get(u) ?? 0) > 0;
-    // Roster members always get a row (a zero row is the point — who isn't
-    // reading); anyone else only when they did something.
-    if (!m && !hasActivity) continue;
+    // Only people who did something get a row — a roster of zero rows hid
+    // the few real ones. The idle members surface as one count.
+    if (!hasActivity) {
+      if (m) idleMembers++;
+      continue;
+    }
     const tracksTouched = new Set(days.map((d) => d.track));
     const published = TRACKS.filter(
       (t) => tracksTouched.size === 0 || tracksTouched.has(t)
@@ -447,5 +453,5 @@ export function buildAnalytics(input: {
     return a.username.localeCompare(b.username);
   });
 
-  return { students: studentRows, tracks, anon };
+  return { students: studentRows, idleMembers, tracks, anon };
 }
