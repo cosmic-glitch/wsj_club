@@ -4,16 +4,15 @@ import { listAllUsers } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
 import { loadWordQuizAttempts } from "@/lib/word-quiz";
 import { loadEvents, type ActivityEvent } from "@/lib/events";
-import { getAllReadings, type Track } from "@/lib/content";
+import { getAllReadings } from "@/lib/content";
 import {
-  buildTrackAnalytics,
+  buildAnalytics,
   windowStart,
   type ActivityWindow,
   type Member,
 } from "@/lib/analytics";
 import type { Session } from "@/components/AdminSessions";
 import ActivityReport from "@/components/ActivityReport";
-import ClassroomTabs from "@/components/ClassroomTabs";
 
 // Reads cookies + the DB at request time — never static.
 export const dynamic = "force-dynamic";
@@ -26,7 +25,8 @@ export const metadata = {
  * The Activity page — who opened what, and how often (lib/analytics.ts over
  * rc_events + the quiz tables). Scoped exactly like Reports: the owner sees
  * every classroom (plus the logged-out bucket and a Parent column), a parent
- * their own classroom; students don't have it. Both tracks as tabs; the
+ * their own classroom; students don't have it. One page for both tracks: the
+ * member table is combined, the per-reading tables are one per track. The
  * window (7 days by default / 30 / all) is a query param so the aggregation
  * stays on the server.
  */
@@ -115,7 +115,8 @@ export default async function AnalyticsPage({
   // ---- scope ---------------------------------------------------------------
   // The owner sees everyone. A parent sees their classroom: their students +
   // themselves, matched by the stamped parent id or (older rows / sessions
-  // that predate the stamp) by roster membership.
+  // that predate the stamp) by roster membership. Parents are roster members
+  // too — their own opens are recorded like anyone's and get a row.
   const active = allUsers.filter((u) => u.active !== false);
   const roster = new Set<string>(
     owner
@@ -133,37 +134,27 @@ export default async function AnalyticsPage({
     owner ? true : a.parentId === user || roster.has(a.username);
 
   const members: Member[] = active
-    .filter((u) => u.role === "student" && roster.has(u.username))
-    .map((u) => ({ username: u.username, role: "student", parentId: u.parentId ?? null }));
+    .filter((u) => roster.has(u.username))
+    .map((u) => ({
+      username: u.username,
+      role: u.role === "parent" ? "parent" : "student",
+      parentId: u.role === "parent" ? null : u.parentId ?? null,
+    }));
 
   // Owner's Parent column: parent username → display name.
   const parentNames: Record<string, string> = {};
   for (const u of active) if (u.role === "parent") parentNames[u.username] = u.displayName;
 
-  const build = (track: Track, events: ActivityEvent[]) =>
-    buildTrackAnalytics({
-      track,
-      readings: getAllReadings(track),
-      events: events.filter(inScopeEvent),
-      sessions: terminal.filter(
-        (s) => (s.track === "junior") === (track === "junior") && inScopeSession(s)
-      ),
-      wordAttempts: wordAttempts.filter((a) => a.track === track && inScopeAttempt(a)),
-      members,
-      since,
-    });
-
-  const senior = build("senior", seniorEvents);
-  const junior = build("junior", juniorEvents);
+  const data = buildAnalytics({
+    readings: { senior: getAllReadings("senior"), junior: getAllReadings("junior") },
+    events: seniorEvents.concat(juniorEvents).filter(inScopeEvent),
+    sessions: terminal.filter(inScopeSession),
+    wordAttempts: wordAttempts.filter(inScopeAttempt),
+    members,
+    since,
+  });
 
   const windowKey = WINDOWS.find((x) => x.w === w)!.key;
-  const panel = (data: typeof senior) => (
-    <ActivityReport
-      data={data}
-      showAnon={owner}
-      parentNames={owner ? parentNames : undefined}
-    />
-  );
 
   return (
     <div>
@@ -200,15 +191,11 @@ export default async function AnalyticsPage({
         })}
       </div>
 
-      <div className="mt-6">
-        <ClassroomTabs
-          ariaLabel="Reading track"
-          tabs={[
-            { key: "senior", label: "Regular", content: panel(senior) },
-            { key: "junior", label: "Junior", content: panel(junior) },
-          ]}
-        />
-      </div>
+      <ActivityReport
+        data={data}
+        showAnon={owner}
+        parentNames={owner ? parentNames : undefined}
+      />
     </div>
   );
 }

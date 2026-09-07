@@ -2,18 +2,20 @@
 
 import { useState } from "react";
 import type {
+  Analytics,
   PersonActivity,
   ReadingActivity,
   StudentDay,
   StudentRow,
-  TrackAnalytics,
+  TrackReadings,
 } from "@/lib/analytics";
 
 /**
- * The Activity page's body for ONE track (app/admin/analytics renders one per
- * track tab): the by-student table, then the by-reading funnel table — each
- * row expands in place to its detail (that student's per-reading timeline /
- * who did which step and when). All numbers arrive
+ * The Activity page's body (app/admin/analytics): the by-student table,
+ * combined across both tracks, then one by-reading funnel table per track
+ * (Regular, then Junior) — each row expands in place to its detail (that
+ * student's per-reading timeline / who did which step and when). All numbers
+ * arrive
  * pre-aggregated from lib/analytics.ts; this component only lays them out.
  * Client only for the expand/collapse state — nothing is fetched here.
  *
@@ -203,11 +205,13 @@ function PeopleTable({ r }: { r: ReadingActivity }) {
   );
 }
 
+const TRACK_LABEL = { senior: "Regular", junior: "Junior" } as const;
+
 function ReadingsTable({
-  data,
+  tr,
   showAnon,
 }: {
-  data: TrackAnalytics;
+  tr: TrackReadings;
   showAnon: boolean;
 }) {
   const [open, setOpen] = useState<Set<string>>(new Set());
@@ -222,10 +226,10 @@ function ReadingsTable({
 
   return (
     <Section
-      title="By reading"
+      title={`${TRACK_LABEL[tr.track]} readings`}
       note="The funnel per reading: article → handout → self-quiz → AI quiz. Each step shows people who took it / total opens. Read = median time the article page was visible. Click a row for who did what."
     >
-      {data.readings.length === 0 ? (
+      {tr.readings.length === 0 ? (
         <Empty>No readings in this window.</Empty>
       ) : (
         <div className="mt-3 overflow-x-auto border-[3px] border-[#0a0a0a] bg-white">
@@ -245,7 +249,7 @@ function ReadingsTable({
               </tr>
             </thead>
             <tbody>
-              {data.readings.map((r) => {
+              {tr.readings.map((r) => {
                 const isOpen = open.has(r.date);
                 return (
                   <ReadingRows
@@ -361,11 +365,14 @@ function DaysTable({ days }: { days: StudentDay[] }) {
         </thead>
         <tbody>
           {days.map((d) => (
-            <tr key={d.date} className="last:[&>td]:border-b-0">
+            <tr key={`${d.track} ${d.date}`} className="last:[&>td]:border-b-0">
               <td className={`${td} whitespace-nowrap font-mono text-[11px] font-bold uppercase tracking-[.06em]`}>
                 {dateTag(d.date)}
               </td>
-              <td className={`${td} font-sans text-[#0a0a0a]`}>{d.title || d.date}</td>
+              <td className={`${td} font-sans text-[#0a0a0a]`}>
+                {d.title || d.date}
+                {d.track === "junior" && <span className={`${chip} ml-2`}>junior</span>}
+              </td>
               <td className={td}>
                 <Count n={d.articleOpens} />
               </td>
@@ -394,7 +401,7 @@ function StudentsTable({
   data,
   parentNames,
 }: {
-  data: TrackAnalytics;
+  data: Analytics;
   parentNames?: Record<string, string>;
 }) {
   const [open, setOpen] = useState<Set<string>>(new Set());
@@ -405,13 +412,15 @@ function StudentsTable({
       else n.add(k);
       return n;
     });
-  const total = data.readingsInWindow;
   const cols = parentNames ? 11 : 10;
+  const published = data.tracks
+    .map((t) => `${t.readingsInWindow} ${TRACK_LABEL[t.track]}`)
+    .join(", ");
 
   return (
     <Section
       title="By student"
-      note={`Readings touched in this window, of the ${total} published. Read = total time on article pages. Click a row for the per-reading timeline.`}
+      note={`Readings touched in this window, both tracks (${published} published). /N is what was published on the track(s) that person read. Read = total time on article pages. Parents follow the students. Click a row for the per-reading timeline, with junior readings marked.`}
     >
       {data.students.length === 0 ? (
         <Empty>No students in this classroom.</Empty>
@@ -440,7 +449,6 @@ function StudentsTable({
                   <StudentRows
                     key={s.username}
                     s={s}
-                    total={total}
                     isOpen={isOpen}
                     onToggle={() => toggle(s.username)}
                     parentName={
@@ -464,14 +472,12 @@ function StudentsTable({
 
 function StudentRows({
   s,
-  total,
   isOpen,
   onToggle,
   parentName,
   cols,
 }: {
   s: StudentRow;
-  total: number;
   isOpen: boolean;
   onToggle: () => void;
   parentName?: string;
@@ -501,16 +507,16 @@ function StudentRows({
           <td className={`${td} text-stone-600`}>{parentName}</td>
         )}
         <td className={td}>
-          <OfN n={s.articles} total={total} />
+          <OfN n={s.articles} total={s.published} />
         </td>
         <td className={td}>
-          <OfN n={s.handouts} total={total} />
+          <OfN n={s.handouts} total={s.published} />
         </td>
         <td className={td}>
-          <OfN n={s.selfquizzes} total={total} />
+          <OfN n={s.selfquizzes} total={s.published} />
         </td>
         <td className={td}>
-          <OfN n={s.quizzes} total={total} />
+          <OfN n={s.quizzes} total={s.published} />
         </td>
         <td className={td}>
           <Count n={s.wordRounds} />
@@ -539,7 +545,7 @@ export default function ActivityReport({
   showAnon = false,
   parentNames,
 }: {
-  data: TrackAnalytics;
+  data: Analytics;
   showAnon?: boolean;
   parentNames?: Record<string, string>;
 }) {
@@ -548,7 +554,9 @@ export default function ActivityReport({
   return (
     <div>
       <StudentsTable data={data} parentNames={parentNames} />
-      <ReadingsTable data={data} showAnon={showAnon} />
+      {data.tracks.map((tr) => (
+        <ReadingsTable key={tr.track} tr={tr} showAnon={showAnon} />
+      ))}
       {showAnon && (
         <p className="mt-3 font-sans text-[13px] text-stone-500">
           <span className={chip}>Logged out: </span>
@@ -557,8 +565,8 @@ export default function ActivityReport({
             : "no logged-out opens in this window"}
           <span className={muted}>
             {" "}
-            — opens with no login, never attributed. The column reads article ·
-            handout · self-quiz · taps.
+            — opens with no login on either track, never attributed. The
+            column reads article · handout · self-quiz · taps.
           </span>
         </p>
       )}
