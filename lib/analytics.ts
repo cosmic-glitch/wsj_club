@@ -98,9 +98,6 @@ export type StudentRow = {
   handouts: number;
   selfquizzes: number;
   quizzes: number; // distinct readings with a terminal AI quiz
-  /** Readings published in the window on the track(s) this person touched —
-   *  the "/N" behind the counts above (both tracks when they touched none). */
-  published: number;
   wordRounds: number; // word-bank quiz rounds finished
   wordbankOpens: number;
   readSeconds: number;
@@ -421,10 +418,6 @@ export function buildAnalytics(input: {
       if (m) idleMembers++;
       continue;
     }
-    const tracksTouched = new Set(days.map((d) => d.track));
-    const published = TRACKS.filter(
-      (t) => tracksTouched.size === 0 || tracksTouched.has(t)
-    ).reduce((n, t) => n + readingsInWindow[t].length, 0);
     studentRows.push({
       username: u,
       role: m?.role ?? "parent",
@@ -433,7 +426,6 @@ export function buildAnalytics(input: {
       handouts: days.filter((d) => d.handoutOpens > 0).length,
       selfquizzes: days.filter((d) => d.selfquizOpens > 0).length,
       quizzes: days.filter((d) => d.quizDone).length,
-      published,
       wordRounds: wordRounds.get(u) ?? 0,
       wordbankOpens: wordbankOpens.get(u) ?? 0,
       readSeconds: readSecs,

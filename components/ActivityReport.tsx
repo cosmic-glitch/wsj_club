@@ -62,28 +62,6 @@ function dur(seconds: number | null): React.ReactNode {
   return `${Math.floor(m / 60)}h ${String(m % 60).padStart(2, "0")}m`;
 }
 
-/** "3 /7" — people who took the step, then total opens, muted. */
-function Step({ people, opens }: { people: number; opens: number }) {
-  if (!opens) return <span className={muted}>—</span>;
-  return (
-    <span className="whitespace-nowrap">
-      <b className="text-[#0a0a0a]">{people}</b>
-      <span className={muted}> /{opens}</span>
-    </span>
-  );
-}
-
-/** "5 /12" — of the readings in the window. */
-function OfN({ n, total }: { n: number; total: number }) {
-  if (!n) return <span className={muted}>—</span>;
-  return (
-    <span className="whitespace-nowrap">
-      <b className="text-[#0a0a0a]">{n}</b>
-      <span className={muted}> /{total}</span>
-    </span>
-  );
-}
-
 function Count({ n }: { n: number }) {
   return n ? <span className="text-[#0a0a0a]">{n}</span> : <span className={muted}>—</span>;
 }
@@ -227,7 +205,7 @@ function ReadingsTable({
   return (
     <Section
       title={`${TRACK_LABEL[tr.track]} readings`}
-      note="The funnel per reading: article → handout → self-quiz → AI quiz. Each step shows people who took it / total opens. Read = median time the article page was visible. Click a row for who did what."
+      note="The funnel per reading: article → handout → self-quiz → AI quiz, as the number of people who took each step. Read = median time the article page was visible. Click a row for who did what, with their opens."
     >
       {tr.readings.length === 0 ? (
         <Empty>No readings in this window.</Empty>
@@ -304,14 +282,14 @@ function ReadingRows({
         </td>
         <td className={`${td} font-sans font-bold text-[#0a0a0a]`}>{r.title}</td>
         <td className={td}>
-          <Step people={r.articlePeople} opens={r.articleOpens} />
+          <Count n={r.articlePeople} />
         </td>
         <td className={`${td} whitespace-nowrap`}>{dur(r.readMedianSeconds)}</td>
         <td className={td}>
-          <Step people={r.handoutPeople} opens={r.handoutOpens} />
+          <Count n={r.handoutPeople} />
         </td>
         <td className={td}>
-          <Step people={r.selfquizPeople} opens={r.selfquizOpens} />
+          <Count n={r.selfquizPeople} />
         </td>
         <td className={td}>
           <Count n={r.quizPeople} />
@@ -420,7 +398,7 @@ function StudentsTable({
   return (
     <Section
       title="By student"
-      note={`Everyone with any activity in this window, both tracks (${published} published). /N is what was published on the track(s) that person read. Read = total time on article pages. Parents follow the students. Click a row for the per-reading timeline, with junior readings marked.`}
+      note={`Everyone with any activity in this window, both tracks (${published} published). Each step counts the readings that person took it on. Read = total time on article pages. Parents follow the students. Click a row for the per-reading timeline, with junior readings marked.`}
     >
       {data.students.length === 0 ? (
         <Empty>No activity in this window.</Empty>
@@ -513,16 +491,16 @@ function StudentRows({
           <td className={`${td} text-stone-600`}>{parentName}</td>
         )}
         <td className={td}>
-          <OfN n={s.articles} total={s.published} />
+          <Count n={s.articles} />
         </td>
         <td className={td}>
-          <OfN n={s.handouts} total={s.published} />
+          <Count n={s.handouts} />
         </td>
         <td className={td}>
-          <OfN n={s.selfquizzes} total={s.published} />
+          <Count n={s.selfquizzes} />
         </td>
         <td className={td}>
-          <OfN n={s.quizzes} total={s.published} />
+          <Count n={s.quizzes} />
         </td>
         <td className={td}>
           <Count n={s.wordRounds} />
