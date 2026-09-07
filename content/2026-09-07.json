@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-07",
+  "title": "Inflation is back around the world—as is the fight against it",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/09/06/inflation-is-back-around-the-world-as-is-the-fight-against-it",
+  "articlePageUrl": "/articles/2026-09-07.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "entrenched",
+      "partOfSpeech": "adjective",
+      "pronunciation": "en-TRENCHT",
+      "articleQuote": "They “shouldn’t wait” for inflation to become entrenched before responding, Slovenia’s central-bank governor has counselled.",
+      "meaning": "Literally, dug into a trench: an entrenched army has dug itself defensive positions and cannot easily be pushed out, and the word now describes any habit, belief, or problem that has settled in so deeply that removing it takes a real fight. Central bankers fear inflation becoming entrenched — built into wage deals and price-setting everywhere — because once it settles in like that, bringing it back down is far harder than stopping it early.",
+      "examples": [
+        "The team's losing mentality was so entrenched that even a new coach couldn't change it in one season.",
+        "By senior year, his habit of leaving essays to the last minute was thoroughly entrenched."
+      ]
+    },
+    {
+      "word": "volatile",
+      "partOfSpeech": "adjective",
+      "pronunciation": "VOL-uh-tul",
+      "articleQuote": "services prices, which are largely determined by the price of labour (rather than more volatile commodities)",
+      "meaning": "Something volatile changes suddenly and unpredictably — in chemistry a volatile liquid evaporates at the slightest heat, and by extension a volatile market, mood, or situation can swing sharply without warning. The article contrasts services prices, which move slowly because they mostly reflect wages, with volatile commodities like oil and gas, whose prices can double after a single war or bad harvest.",
+      "examples": [
+        "Crypto prices are so volatile that the coin she bought doubled and then crashed in the same month.",
+        "His volatile temper meant a small joke could turn into a shouting match."
+      ]
+    },
+    {
+      "word": "evoke",
+      "partOfSpeech": "verb",
+      "pronunciation": "ih-VOHK",
+      "articleQuote": "in some places prices are evoking the sad memories of the “cost-of-living crisis”",
+      "meaning": "To evoke something is to call it up in someone's mind — a smell, a song, or a phrase evokes a memory or feeling without stating it outright. The article says today's rising prices are evoking memories of the painful cost-of-living crisis of a few years ago: nobody has to remind shoppers of it, because the price tags themselves bring the bad years flooding back.",
+      "examples": [
+        "The smell of sunscreen instantly evokes memories of summer camp.",
+        "The movie's synth soundtrack was designed to evoke the feeling of an '80s arcade."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Core inflation",
+      "articleQuote": "average annual “core” inflation, which strips out energy and food, has increased from 2.7% in early 2026 to 2.9% today",
+      "meaning": "The scariest number in this article isn't $4-a-gallon petrol — it's a quieter one: **core** inflation creeping from 2.7% to 2.9%. In economics, inflation is measured by tracking the prices of a huge basket of things people buy — rent, haircuts, groceries, gasoline — and reporting the average rise. But two items in that basket, food and energy, jump around violently for reasons that have little to do with the rest of the economy: a war closes a shipping lane, a drought ruins a harvest, and oil or wheat prices spike overnight. One spike like that can drag the whole average up even if nothing else changed.\n\nSo statisticians also publish **core inflation**: the same measurement with food and energy removed. The name means what it says — the core is what is left at the center once you strip away the jumpiest items. Policymakers watch it to answer one question: is this a one-off shock, or are price rises spreading into everything else — rents, insurance, restaurant meals? In this article energy is \"the main culprit,\" but core inflation is rising too, and that is exactly why central banks are raising rates instead of waiting for the shock to pass.\n\nNext time you see an inflation headline, check whether core inflation moved. If only the overall number jumped, it may be one volatile price; if core moved, prices are rising across the board."
+    },
+    {
+      "name": "The 2% inflation target",
+      "articleQuote": "Average annual inflation across rich countries has stopped falling towards 2%, the target in most of them",
+      "meaning": "Why does euro-zone inflation of 3.3% count as an emergency? Because nearly every major central bank — the Federal Reserve, the European Central Bank, the Bank of Japan — has publicly promised to keep inflation at about **2% a year**, and in monetary policy that number is the benchmark everything else is judged against. When inflation runs above 2% and rising, as now, the bank raises interest rates: borrowing gets more expensive, so households and companies spend and hire a little less, which takes the pressure off prices. When inflation falls below 2%, it cuts rates to do the opposite.\n\nThe odd part is that the target isn't zero. Two reasons. First, a little inflation is a safety margin against **deflation** — falling prices — which sounds pleasant but is dangerous: when people expect prices to keep dropping, they postpone purchases, so businesses sell less and cut jobs, which shrinks spending even further, and history shows that spiral is much harder to escape than inflation. Second, keeping inflation (and therefore interest rates) a bit above zero in normal times leaves a central bank room to cut rates when a recession hits. Two percent is judged high enough for both cushions, yet low enough that people can mostly ignore it in daily life.\n\nThat one number explains every move in this article: 3.3% against a 2% target is why the ECB is expected to raise rates on September 10th. Whenever you read that a central bank raised or cut rates, find the country's inflation figure and compare it with 2% — the gap is usually the whole story."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what are many central banks around the world now doing?",
+      "options": [
+        "Cutting interest rates to boost economic growth",
+        "Raising interest rates to fight rising inflation",
+        "Freezing energy prices by law",
+        "Replacing their inflation targets with higher ones"
+      ],
+      "answerIndex": 1,
+      "explanation": "New Zealand, Australia, Japan and South Korea have already raised rates this year, the ECB is expected to follow on September 10th, and UBS reckons more central banks will join — a new tightening cycle."
+    },
+    {
+      "question": "What does \"core\" inflation leave out, and why?",
+      "options": [
+        "Rent and housing, because they change too slowly",
+        "Wages, because they are hard to measure",
+        "Energy and food, because their volatile prices can hide the underlying trend",
+        "Imported goods, because exchange rates distort them"
+      ],
+      "answerIndex": 2,
+      "explanation": "Core inflation strips out energy and food, whose prices swing wildly for one-off reasons, so policymakers can see whether price rises are spreading through the rest of the economy."
+    },
+    {
+      "question": "A central banker warns against waiting for inflation to become entrenched. \"Entrenched\" most nearly means…",
+      "options": [
+        "Invisible in the official statistics",
+        "Firmly established and very hard to remove",
+        "Spread from one country to another",
+        "Higher than interest rates"
+      ],
+      "answerIndex": 1,
+      "explanation": "Something entrenched has dug in so deeply that dislodging it takes a real fight — which is why rate-setters would rather act early than late."
+    },
+    {
+      "question": "Why does the article call energy \"the main culprit\" behind rising inflation?",
+      "options": [
+        "War in the Middle East has pushed up the price of oil and natural gas",
+        "Power plants have been shutting down across the rich world",
+        "Governments removed energy subsidies all at the same time",
+        "An unusually cold winter froze pipelines across Europe"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says war in the Middle East has raised oil and gas prices — European natural gas costs more than twice what it did before the Iran war, and American petrol has climbed past $4 a gallon."
+    },
+    {
+      "question": "What development would \"really spook\" policymakers, according to the article?",
+      "options": [
+        "A falling stock market",
+        "A stronger dollar",
+        "Slower wage growth across rich countries",
+        "People starting to expect bigger price rises in the future"
+      ],
+      "answerIndex": 3,
+      "explanation": "If people start expecting higher inflation, they build it into wage demands and prices — but so far, market measures and an ECB survey suggest expectations remain steady."
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+[
+  {
+    "k": "entrenched",
+    "t": "entrenched",
+    "kind": "vocab",
+    "pron": "en-TRENCHT",
+    "forms": [
+      "entrenched"
+    ],
+    "text": "Dug in so firmly that removing it takes a real fight — the image is an army that has dug defensive trenches and cannot easily be pushed out. Central bankers fear inflation becoming entrenched, meaning built into wage deals and price-setting everywhere, because once it settles in like that it is far harder to bring back down than to stop early.",
+    "audio": true
+  },
+  {
+    "k": "volatile",
+    "t": "volatile",
+    "kind": "vocab",
+    "pron": "VOL-uh-tul",
+    "forms": [
+      "volatile"
+    ],
+    "text": "Liable to change suddenly and unpredictably — in chemistry a volatile liquid evaporates at the slightest heat, and by extension a volatile market or mood can swing sharply without warning. The article contrasts slow-moving services prices with volatile commodities like oil and gas, whose prices can double after a single war or bad harvest.",
+    "audio": true
+  },
+  {
+    "k": "evoke",
+    "t": "evoke",
+    "kind": "vocab",
+    "pron": "ih-VOHK",
+    "forms": [
+      "evoking"
+    ],
+    "text": "To call a memory, feeling, or image up in someone's mind without stating it outright — a smell or a song can evoke a whole summer. Here rising prices are evoking memories of the painful cost-of-living crisis: the price tags themselves bring the bad years flooding back.",
+    "audio": true
+  },
+  {
+    "k": "soft-landing",
+    "t": "soft landing",
+    "kind": "name",
+    "forms": [
+      "soft landing"
+    ],
+    "text": "Economists' term for the best-case ending to an inflation fight: the central bank raises interest rates enough to bring inflation down, but not so much that it tips the economy into a recession. The name borrows from aviation — slowing a plane to touch down gently instead of crashing. The article says the rich world came close to one in 2022-23, but the fight is now resuming.",
+    "audio": true
+  },
+  {
+    "k": "central-bank",
+    "t": "central bank",
+    "kind": "name",
+    "forms": [
+      "central banks",
+      "central bank",
+      "central bankers",
+      "central-bank"
+    ],
+    "text": "A country's official bank-for-banks, in charge of its money: it sets the key interest rate that all other borrowing costs follow, and its main job in rich countries is keeping inflation near a target, usually 2% a year. America's is the Federal Reserve, the euro zone's is the European Central Bank. The people who run one are central bankers.",
+    "audio": true
+  },
+  {
+    "k": "recession",
+    "t": "recession",
+    "kind": "name",
+    "forms": [
+      "recession"
+    ],
+    "text": "A period when a country's economy shrinks instead of grows — businesses sell less, cut jobs, and unemployment rises. Raising interest rates to fight inflation slows spending on purpose, so the constant danger is slowing it so much that a recession starts; avoiding that is the soft landing central bankers dream of.",
+    "audio": true
+  },
+  {
+    "k": "rate-setters",
+    "t": "rate-setters",
+    "kind": "word",
+    "forms": [
+      "rate-setters",
+      "Rate-setters"
+    ],
+    "text": "Journalists' shorthand for the officials at a central bank who vote on where to set interest rates — the Federal Reserve's committee, the ECB's governing council, and their counterparts elsewhere. When the article says rate-setters do not want to repeat past mistakes, it means these decision-makers.",
+    "audio": true
+  },
+  {
+    "k": "tasman-sea",
+    "t": "Tasman sea",
+    "kind": "name",
+    "forms": [
+      "Tasman sea"
+    ],
+    "text": "The stretch of ocean between New Zealand and Australia. Saying rate-setters on the other side of the Tasman sea have raised rates is the article's roundabout way of saying Australia's central bank has.",
+    "audio": true
+  },
+  {
+    "k": "borrowing-costs",
+    "t": "borrowing costs",
+    "kind": "name",
+    "forms": [
+      "borrowing costs"
+    ],
+    "text": "What it costs to borrow money — the interest paid on mortgages, car loans, credit cards, and business loans. When a central bank raises its rate, borrowing costs across the whole economy rise with it, so people and companies borrow and spend less, which is exactly how rate rises cool inflation.",
+    "audio": true
+  },
+  {
+    "k": "ecb",
+    "t": "European Central Bank (ECB)",
+    "kind": "name",
+    "forms": [
+      "European Central Bank",
+      "ECB"
+    ],
+    "text": "The central bank for the 20 European countries that share the euro, headquartered in Frankfurt. It plays the same role for the euro zone that the Federal Reserve plays for America, and the article expects it to raise its deposit rate on September 10th.",
+    "audio": true
+  },
+  {
+    "k": "deposit-rate",
+    "t": "deposit rate",
+    "kind": "name",
+    "forms": [
+      "deposit rate"
+    ],
+    "text": "The ECB's main policy interest rate — the rate it pays banks for money parked with it overnight. It anchors all other euro-zone interest rates, so raising it to 2.5% makes borrowing dearer across the whole currency bloc.",
+    "audio": true
+  },
+  {
+    "k": "federal-reserve",
+    "t": "the Federal Reserve",
+    "kind": "name",
+    "forms": [
+      "Federal Reserve"
+    ],
+    "text": "America's central bank, usually shortened to the Fed. It sets the interest rate that steers the world's largest economy, so traders everywhere watch its next move — here, many expect it to join the rate-raisers before long.",
+    "audio": true
+  },
+  {
+    "k": "euro-zone",
+    "t": "euro zone",
+    "kind": "name",
+    "forms": [
+      "euro zone",
+      "euro-zone"
+    ],
+    "text": "The group of 20 European Union countries that use the euro as their currency, including Germany, France, Spain, and Lithuania. They share one central bank, the ECB, so one interest-rate decision applies to all of them at once.",
+    "audio": true
+  },
+  {
+    "k": "cost-of-living-crisis",
+    "t": "cost-of-living crisis",
+    "kind": "name",
+    "forms": [
+      "cost-of-living crisis"
+    ],
+    "text": "The name given to the years around 2021-23 when inflation surged across the rich world and essentials — food, fuel, rent — got more expensive faster than most people's pay rose. It is the sad memory the article says today's price rises are starting to evoke.",
+    "audio": true
+  },
+  {
+    "k": "core-inflation",
+    "t": "core inflation",
+    "kind": "name",
+    "forms": [
+      "core"
+    ],
+    "text": "Inflation measured with food and energy prices removed. Those two swing wildly for one-off reasons — a war, a drought — so stripping them out reveals the slower-moving center of price rises. Policymakers watch core inflation to tell a passing shock from price rises spreading through the whole economy; here it has crept from 2.7% to 2.9%.",
+    "audio": true
+  },
+  {
+    "k": "commodities",
+    "t": "commodities",
+    "kind": "word",
+    "forms": [
+      "commodities"
+    ],
+    "text": "Raw materials that are bought and sold in bulk and are basically identical wherever they come from — oil, natural gas, wheat, copper. Their prices bounce around on world markets, which is why the article calls them volatile and contrasts them with services, whose prices mostly follow wages.",
+    "audio": true
+  },
+  {
+    "k": "inflation-expectations",
+    "t": "inflation expectations",
+    "kind": "name",
+    "forms": [
+      "inflation expectations"
+    ],
+    "text": "How much inflation people and investors think is coming. It matters enormously: workers who expect higher prices demand bigger raises, and firms expecting higher costs raise prices early — so expected inflation can turn into real inflation. That is why a rise in expectations is the thing that would really spook policymakers, and why the article checks that measures of it have stayed steady.",
+    "audio": true
+  },
+  {
+    "k": "leading-indicators",
+    "t": "leading indicators",
+    "kind": "name",
+    "forms": [
+      "leading indicators"
+    ],
+    "text": "Statistics that tend to move before the thing you actually care about moves — an early-warning gauge. A model that scans millions of news articles for inflation talk is one attempt at a leading indicator of inflation; the article notes such tools point upward but have a patchy track record.",
+    "audio": true
+  },
+  {
+    "k": "tightening-cycle",
+    "t": "tightening cycle",
+    "kind": "name",
+    "forms": [
+      "tightening cycle",
+      "tightening"
+    ],
+    "text": "A stretch of months or years in which central banks raise interest rates step by step — tightening the flow of cheap money — to squeeze inflation out of the economy. The opposite, cutting rates, is loosening or easing. The article argues a new tightening cycle may just be getting started.",
+    "audio": true
+  },
+  {
+    "k": "ubs",
+    "t": "UBS",
+    "kind": "name",
+    "forms": [
+      "UBS"
+    ],
+    "text": "A large Swiss bank whose economists publish forecasts about the world economy. The article cites its prediction that many central banks which have not yet raised rates will soon do so.",
+    "audio": true
+  },
+  {
+    "k": "iran-war",
+    "t": "the Iran war",
+    "kind": "name",
+    "forms": [
+      "Iran war"
+    ],
+    "text": "The war in the Middle East the article blames for higher energy prices. Because so much of the world's oil and natural gas comes from or passes through that region, fighting there makes traders fear supply cuts, and fuel prices jump worldwide — European natural gas now costs more than twice what it did before the war.",
+    "audio": true
+  },
+  {
+    "k": "tantalisingly",
+    "t": "tantalisingly",
+    "kind": "word",
+    "forms": [
+      "tantalisingly"
+    ],
+    "text": "So close you can almost touch it, in a way that teases you — from the Greek myth of Tantalus, condemned to stand under fruit that pulled away whenever he reached for it. Victory over inflation was tantalisingly close: nearly won, which makes the new flare-up all the more frustrating. British spelling; Americans write tantalizingly.",
+    "audio": true
+  },
+  {
+    "k": "redoubling",
+    "t": "redoubling",
+    "kind": "word",
+    "forms": [
+      "redoubling"
+    ],
+    "text": "Greatly intensifying an effort — to redouble your fight is to throw much more energy into it, not literally to double it twice. Central banks that thought the inflation battle was nearly over are now redoubling their fight by raising rates again.",
+    "audio": true
+  },
+  {
+    "k": "diagnosis",
+    "t": "diagnosis",
+    "kind": "word",
+    "forms": [
+      "diagnosis"
+    ],
+    "text": "A doctor's identification of what is wrong with a patient. The article borrows the medical word for the economy: examining the world's symptoms — rising prices, dearer energy — the diagnosis is not promising, meaning the expert reading of the situation looks bad.",
+    "audio": true
+  },
+  {
+    "k": "policymakers",
+    "t": "policymakers",
+    "kind": "word",
+    "forms": [
+      "policymakers",
+      "Policymakers"
+    ],
+    "text": "The officials who decide government or central-bank policy. In this article it means the central bankers choosing where to set interest rates.",
+    "audio": true
+  },
+  {
+    "k": "culprit",
+    "t": "culprit",
+    "kind": "word",
+    "forms": [
+      "culprit"
+    ],
+    "text": "The one guilty of a crime — or, by extension, the thing responsible for a problem. Calling energy the main culprit means dearer oil and gas are the biggest single cause of the new inflation, though not the only one.",
+    "audio": true
+  },
+  {
+    "k": "petrol",
+    "t": "petrol",
+    "kind": "word",
+    "forms": [
+      "petrol"
+    ],
+    "text": "The British word for gasoline — the fuel cars run on. The Economist is a British publication, so it says petrol even when describing Americans paying over $4 a gallon at the pump.",
+    "audio": true
+  },
+  {
+    "k": "underlying",
+    "t": "underlying",
+    "kind": "word",
+    "forms": [
+      "underlying"
+    ],
+    "text": "Lying beneath the surface — the real, basic condition once you look past temporary noise. Underlying inflationary pressure is the price-rise trend that remains after stripping away one-off swings like an oil spike; core inflation and services prices are attempts to measure exactly that.",
+    "audio": true
+  },
+  {
+    "k": "labour",
+    "t": "labour",
+    "kind": "word",
+    "forms": [
+      "labour"
+    ],
+    "text": "The British spelling of labor: work, and the workers who do it. The price of labour means wages — so saying services prices are largely determined by the price of labour means a haircut or a restaurant meal costs what it costs mostly because of what the people providing it are paid.",
+    "audio": true
+  },
+  {
+    "k": "productivity",
+    "t": "productivity",
+    "kind": "word",
+    "forms": [
+      "productivity"
+    ],
+    "text": "How much output a worker produces per hour of work. When productivity grows, a firm can pay higher wages without raising prices, because each worker brings in more. The article suggests falling productivity growth in services may explain why prices there keep rising even as wage growth slows — firms cannot absorb the pay rises.",
+    "audio": true
+  },
+  {
+    "k": "absorb",
+    "t": "absorb",
+    "kind": "word",
+    "forms": [
+      "absorb"
+    ],
+    "text": "Literally to soak up, like a sponge. A firm absorbs a cost increase when it pays it out of its own profits instead of passing it on to customers as higher prices; the article says weak productivity growth makes it harder for service firms to absorb pay rises, so they raise prices instead.",
+    "audio": true
+  },
+  {
+    "k": "spook",
+    "t": "spook",
+    "kind": "word",
+    "forms": [
+      "spook"
+    ],
+    "text": "To frighten suddenly, the way a loud noise spooks a horse. The thing that would really spook policymakers is people starting to expect bigger price rises — because expected inflation has a way of becoming real inflation.",
+    "audio": true
+  },
+  {
+    "k": "consultancy",
+    "t": "consultancy",
+    "kind": "word",
+    "forms": [
+      "consultancy"
+    ],
+    "text": "A firm that sells expert advice and analysis rather than physical products. Alternative Macro Signals, the consultancy named here, sells economic forecasts built by analysing millions of news articles.",
+    "audio": true
+  },
+  {
+    "k": "fancy",
+    "t": "fancy",
+    "kind": "word",
+    "forms": [
+      "Fancy"
+    ],
+    "text": "Here it means sophisticated and elaborate, not decorated or pretty — fancy leading indicators are clever, high-tech forecasting tools. There is a faint eye-roll in the word: the article immediately notes their predictive record is patchy.",
+    "audio": true
+  },
+  {
+    "k": "patchy",
+    "t": "patchy",
+    "kind": "word",
+    "forms": [
+      "patchy"
+    ],
+    "text": "Uneven — good in patches, bad in others, like a lawn with bare spots. A patchy predictive record means these forecasting tools have sometimes been right and sometimes badly wrong, so their current warning cannot be fully trusted.",
+    "audio": true
+  },
+  {
+    "k": "dawdled",
+    "t": "dawdle",
+    "kind": "word",
+    "forms": [
+      "dawdled"
+    ],
+    "text": "To move or act slowly when you should hurry — a kid dawdles on the way to school. Critics say central banks dawdled in 2021-22, waiting too long to raise rates while inflation surged, and today's rate-setters are determined not to repeat that mistake.",
+    "audio": true
+  },
+  {
+    "k": "counselled",
+    "t": "counsel",
+    "kind": "word",
+    "forms": [
+      "counselled"
+    ],
+    "text": "To advise, especially formally or wisely — the same root as a school counsellor. Slovenia's central-bank governor counselled, that is advised, against waiting for inflation to become entrenched. British spelling with a double L; Americans write counseled.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckon",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "To calculate or form a judgment — in British usage, reckons simply means thinks or estimates, with no cowboy drawl about it. UBS reckons many more central banks will soon start tightening: that is the bank's considered estimate.",
+    "audio": true
+  },
+  {
+    "k": "edged-up",
+    "t": "edge up",
+    "kind": "phrase",
+    "forms": [
+      "edged up"
+    ],
+    "text": "To rise slowly, in small steps — moving by edges rather than leaps. Inflation has edged up in recent months: no sudden explosion, but a steady creep in the wrong direction, which is what has central banks worried.",
+    "audio": true
+  },
+  {
+    "k": "strips-out",
+    "t": "strip out",
+    "kind": "phrase",
+    "forms": [
+      "strips out"
+    ],
+    "text": "To remove something from a calculation so you can see what is left. Core inflation strips out energy and food — takes them out of the average — because their wild swings can hide the underlying trend.",
+    "audio": true
+  },
+  {
+    "k": "pass-through",
+    "t": "pass through",
+    "kind": "phrase",
+    "forms": [
+      "pass through"
+    ],
+    "text": "In economics, a cost passes through when it travels from one price into another: dearer energy raises firms' bills, firms raise their prices, workers then demand higher pay to cope. The ECB's Isabel Schnabel warns that waiting until energy costs pass through to pay — show up in wages — could leave policymakers reacting too late.",
+    "audio": true
+  },
+  {
+    "k": "behind-the-curve",
+    "t": "behind the curve",
+    "kind": "phrase",
+    "forms": [
+      "behind the curve"
+    ],
+    "text": "Reacting too slowly to a trend, so events stay ahead of you — the curve is the rising line on a chart you are failing to keep up with. A central bank behind the curve is raising rates only after inflation has already taken hold, forcing harsher medicine later.",
+    "audio": true
+  },
+  {
+    "k": "for-all",
+    "t": "for all",
+    "kind": "phrase",
+    "forms": [
+      "For all"
+    ],
+    "text": "A set phrase meaning despite: for all the appearance of a soft landing means even though things looked like a soft landing. It concedes something is true before pushing past it — for all his talent, he never practised.",
+    "audio": true
+  }
+]
