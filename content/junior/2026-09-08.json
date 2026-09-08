@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-08",
+  "title": "From protein to matcha, food fads spread faster than ever",
+  "articleUrl": "https://www.economist.com/business/2026/09/03/from-protein-to-matcha-food-fads-spread-faster-than-ever",
+  "articlePageUrl": "/articles/junior/2026-09-08.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "coveted",
+      "partOfSpeech": "adjective",
+      "pronunciation": "KUV-ih-tid",
+      "articleQuote": "Pineapples were so coveted in Georgian England that rental shops opened peddling display fruits.",
+      "meaning": "Something is **coveted** when lots of people want it badly — often more than they can actually get. Here, pineapples were so coveted in England 200 years ago that people who couldn't afford to buy one would *rent* one, just to show it off on the table.",
+      "examples": [
+        "The gold trophy was the most coveted prize at the science fair, and every team wanted it.",
+        "She finally got the coveted front-row seat on the bus that everyone fights over."
+      ]
+    },
+    {
+      "word": "anticipate",
+      "partOfSpeech": "verb",
+      "pronunciation": "an-TISS-ih-payt",
+      "articleQuote": "Anticipating trends as early as possible allows them to lock in suppliers before rivals do.",
+      "meaning": "To **anticipate** something is to expect it before it happens — and get ready for it. In the article, food companies try to anticipate the next big food craze so they can buy up ingredients before other companies even notice the trend starting.",
+      "examples": [
+        "Our goalie anticipated the shot and was already diving before the ball left the striker's foot.",
+        "I anticipated a pop quiz on Friday, so I reread my notes the night before."
+      ]
+    },
+    {
+      "word": "novelty",
+      "partOfSpeech": "noun",
+      "pronunciation": "NOV-ul-tee",
+      "articleQuote": "Young buyers, who spend a good deal of their lives on social media, are also more inclined towards novelty, notes Dan Frommer, author of \"The New Consumer\", a blog.",
+      "meaning": "**Novelty** is the quality of being new and different — and the excitement that comes with it. The article says young people especially enjoy novelty, which is why a brand-new drink like a violet ube latte can take off online: half the fun is that nobody has tried it yet.",
+      "examples": [
+        "The novelty of the new video game wore off after a week, and he went back to his old favorite.",
+        "She picked the weirdest flavor at the ice cream shop just for the novelty of it."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Supply and demand",
+      "articleQuote": "The price of whey protein thus rose fivefold in the three years to June, according to Vesper, a research firm.",
+      "meaning": "Whey used to be so cheap that farmers fed it to pigs. Then millions of people started buying protein shakes — and suddenly the same stuff cost **five times** as much. Why?\n\nEconomists call this **supply and demand**, and it is the most famous idea in economics. *Demand* is how much of something people want to buy. *Supply* is how much of it there is to sell. When demand grows faster than supply, buyers start competing with each other, and sellers can raise the price — because someone will still pay it. When there is plenty to go around, prices fall back.\n\nYou have seen this at school. If one kid brings 50 sticker packs to trade, stickers are cheap — you can get a pack for almost nothing. But if a rare card comes out and only two kids have it, suddenly people offer their whole binder for one card. Nothing about the card changed. What changed is that many people wanted it and almost nobody had it.\n\nThat is exactly what happened to whey, matcha, and pistachios in this article. So when you see a price jump, ask two questions: did more people start wanting it, or did there get to be less of it?"
+    },
+    {
+      "name": "Supply chain",
+      "articleQuote": "Explosive demand has overwhelmed supply chains.",
+      "meaning": "Before a matcha latte reaches your cup, the tea in it made a long journey: a farmer in Japan grew tencha bushes, workers picked and ground the leaves, a company packed the powder, ships and trucks carried it across the ocean, and a cafe finally whisked it into your drink. Business people call that whole relay — every farm, factory, ship, and store a product passes through — a **supply chain**.\n\nThe key thing to know about supply chains is that they are *slow to change*. Each link is built to handle a certain amount, and making a link bigger takes time and money. The article's best example: tencha bushes need **years** to grow. So when a matcha video goes viral and millions of new customers show up in a few weeks, the farms physically cannot make more leaves that fast. The chain gets overwhelmed, shelves go empty, and prices shoot up.\n\nImagine your school's pizza day. The kitchen is set up to make 200 slices. If 600 kids suddenly want pizza tomorrow, the cooks can't triple the ovens overnight — ordering new ovens and hiring cooks takes months. That mismatch — demand can explode in weeks, but supply chains grow in years — is the problem every food company in this article is wrestling with."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did the price of whey protein rise fivefold in three years?",
+      "options": [
+        "Farmers started feeding more whey to pigs",
+        "Demand from the protein craze soared, but cheese production (which makes whey) didn't grow to match",
+        "A disease wiped out most dairy cows",
+        "The government put a new tax on gym shakes"
+      ],
+      "answerIndex": 1,
+      "explanation": "Whey is a byproduct of cheesemaking, and dairies didn't scale up cheese production even as protein-shake demand exploded — classic demand outrunning supply."
+    },
+    {
+      "question": "If a toy is described as \"coveted,\" what does that mean?",
+      "options": [
+        "It is covered in a protective wrapper",
+        "It is old-fashioned and forgotten",
+        "Lots of people want it badly",
+        "It is secretly hidden away"
+      ],
+      "answerIndex": 2,
+      "explanation": "Coveted means strongly wanted by many people — like the pineapples people in Georgian England would even rent to display."
+    },
+    {
+      "question": "Why can't matcha producers quickly make more tencha leaves when demand explodes?",
+      "options": [
+        "The bushes the leaves come from take years to grow",
+        "Japan has banned new tea farms",
+        "The leaves can only be picked in winter",
+        "Factories refuse to grind more powder"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says tencha bushes require years to grow — a supply chain can't stretch as fast as an online trend can spread."
+    },
+    {
+      "question": "How does Starbucks try to stay ahead of food fads?",
+      "options": [
+        "It copies whatever its rivals launch first",
+        "It only sells classic drinks and ignores trends",
+        "It waits until a trend is fully proven before joining",
+        "It anticipates trends early — like selling green-tea lattes in 2006, long before the matcha boom"
+      ],
+      "answerIndex": 3,
+      "explanation": "Starbucks tries to spot trends early and lock in suppliers first, now by tracking millions of customers online instead of small focus groups."
+    },
+    {
+      "question": "What does the failure of Starbucks' olive-oil coffee show?",
+      "options": [
+        "Every new food trend eventually succeeds",
+        "Not every fad is worth joining — some flop badly",
+        "Olive oil is about to become the next matcha",
+        "Customers never complain about new drinks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The olive-oil coffees were pulled from menus within a year amid complaints — the article's reminder that chasing every fad can backfire."
+    }
+  ]
+}
