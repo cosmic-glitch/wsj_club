@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-08",
+  "title": "Are teenagers growing dimmer?",
+  "articleUrl": "https://www.economist.com/international/2026/09/08/are-teenagers-growing-dimmer",
+  "articlePageUrl": "/articles/2026-09-08.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "espouse",
+      "partOfSpeech": "verb",
+      "pronunciation": "ih-SPOWZ",
+      "articleQuote": "Its educational establishment espoused “play-based” learning, especially for younger children.",
+      "meaning": "To **espouse** an idea, cause, or way of doing things is to adopt it as your own and support it openly — the word shares a root with *spouse*, as if you had married the idea. Finland's education leaders espoused play-based learning: they didn't just permit it, they embraced it and promoted it as their official philosophy. You espouse things you actively stand behind, not things you merely tolerate.",
+      "examples": [
+        "Our coach espouses the idea that defense wins championships, so every practice starts with defensive drills.",
+        "After the debate unit, half the class began to espouse positions just to argue, whether they believed them or not."
+      ]
+    },
+    {
+      "word": "posit",
+      "partOfSpeech": "verb",
+      "pronunciation": "PAH-zit",
+      "articleQuote": "Finland’s critics posit that the high marks it achieved in 2000 in fact reflected old-fashioned educational approaches that were still prevalent in its schools well into the 1990s",
+      "meaning": "To **posit** something is to put it forward as a claim or explanation — offered seriously, as a basis for argument, but not yet proven. Finland's critics posit an explanation for its 2000 triumph: the old teaching methods, not the new ones, deserved the credit. It is the workhorse verb of research and journalism — scientists, historians, and columnists posit theories all the time, and the word quietly signals *this is a proposal, judge it yourself*.",
+      "examples": [
+        "Scientists posit that a ninth planet exists far beyond Neptune, based on the strange orbits of distant objects.",
+        "My sister posits that the cafeteria serves its best food on days when parents visit — she has been collecting evidence all semester."
+      ]
+    },
+    {
+      "word": "scourge",
+      "partOfSpeech": "noun",
+      "pronunciation": "SKURJ",
+      "articleQuote": "Covid or screens do not explain the disparity, given that these scourges have affected all children in Britain in a fairly similar way.",
+      "meaning": "A **scourge** is something that causes widespread suffering or damage — the word originally meant a whip, and it still carries that sting. Writers reach for it when a problem lashes a whole population: the scourge of war, of malaria, of misinformation. The article uses it for covid and smartphones — two afflictions that have battered every child's schooling, which is exactly why they can't explain why Scotland fell while England held up.",
+      "examples": [
+        "Mosquitoes are the scourge of every summer camping trip, no matter how much repellent we pack.",
+        "Cheating apps became such a scourge that the school finally banned phones during exams."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "PISA",
+      "articleQuote": "The OECD’s project, known as PISA, takes a measure of young people’s aptitudes as they approach the end of their compulsory school days.",
+      "meaning": "How would you know whether a whole country's schools are getting better or worse? You can't compare grades — an A in Texas, a 9 in Finland, and an A* in England measure different things on different tests. So the OECD, a club of 38 mostly rich countries that collects statistics so its members can compare themselves, built a common yardstick: **PISA**, the Programme for International Student Assessment. Every three years, a large sample of 15-year-olds — the same age everywhere, near the end of compulsory schooling — sits the same tests in reading, mathematics, and science. Because everyone takes the same test at the same age, the scores can be lined up into a league table of school systems: this round, four rich provinces of China came top, with Singapore, Macau, Taiwan, and Japan close behind, and Estonia the best performer in the West.\n\nThe scale needs one decoder: about **20 points equals roughly one full year of learning**. That converts abstract scores into something you can feel — when the article says 15-year-olds in rich countries now test where 14-year-olds did a decade ago, it means the average teenager has lost about a year of ability. So when a headline mentions PISA scores rising or falling, you now know exactly what's being claimed: same test, same age, dozens of countries — the closest thing the world has to a report card for entire school systems."
+    },
+    {
+      "name": "Progressive education",
+      "articleQuote": "It argued that teachers should spend less time talking in front of blackboards and more time helping pupils work things out for themselves.",
+      "meaning": "In 2000 Finland shocked everyone by topping the first PISA table, and education ministers flew to Helsinki to learn its secret. What Finland preached was **progressive education**: a century-old movement holding that children learn best by discovering things for themselves — through play, projects, and open-ended exploration — rather than by sitting in rows while a teacher explains facts at the blackboard and tests them on it. The rival tradition, often called *knowledge-rich* schooling or *direct instruction*, argues the reverse: you can't think critically about things you don't know, so children need facts taught explicitly, packed into memory, and checked with rigorous exams.\n\nThe article delivers a twist on both. Since 2000, almost no country's scores have fallen as steeply as Finland's — its critics posit that the famous results actually came from old-fashioned teaching still lingering in its classrooms, not the progressive ideas it advertised. Meanwhile England did the opposite of the fashion: it made curriculums more fact-filled, toughened exams and inspections, and steered teachers back toward tested methods — and its teenagers now rank in the world's top ten in all three subjects. The takeaway travels well beyond this article: nearly every fight about schools — homework, testing, phonics, group projects — is this same century-old argument between discovery and direct teaching, wearing different clothes."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did the latest round of PISA results show for rich countries?",
+      "options": [
+        "Scores rebounded now that the pandemic is well in the past",
+        "Scores fell further, with the decline in literacy actually speeding up",
+        "Scores held steady everywhere except East Asia",
+        "Scores fell only in countries that kept schools closed longest"
+      ],
+      "answerIndex": 1,
+      "explanation": "Policymakers hoped for a rebound, but scores in rich countries fell further — and in literacy the decline is accelerating."
+    },
+    {
+      "question": "On the PISA scale, about how much is 20 points worth?",
+      "options": [
+        "One month of learning",
+        "One semester of learning",
+        "One full year of learning",
+        "Four years of learning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The rule of thumb is that 20 points is roughly what an average pupil gains in a full year of learning — the decoder that makes PISA scores meaningful."
+    },
+    {
+      "question": "Finland's educational establishment 'espoused' play-based learning. What does espoused mean?",
+      "options": [
+        "Quietly abandoned",
+        "Adopted and openly supported",
+        "Carefully tested in experiments",
+        "Reluctantly tolerated"
+      ],
+      "answerIndex": 1,
+      "explanation": "To espouse an idea is to adopt it as your own and champion it — Finland made play-based learning its official philosophy."
+    },
+    {
+      "question": "Why is the comparison between Scotland and England so revealing?",
+      "options": [
+        "Scotland spends far less per pupil than England does",
+        "Scottish pupils sit completely different tests from English ones",
+        "Covid and screens hit both similarly, so the different results point at their different school policies",
+        "England's schools have much smaller classes than Scotland's"
+      ],
+      "answerIndex": 2,
+      "explanation": "Since covid and screens affected all of Britain's children in a fairly similar way, Scotland falling behind while England held up points at their starkly different policies — Scotland actually spends more per pupil."
+    },
+    {
+      "question": "According to the article, what do East Asian school systems generally do differently from Western ones?",
+      "options": [
+        "They keep classes as small as possible by hiring many teachers",
+        "They choose to have fewer teachers, whom they pay more and train more intensely",
+        "They rely more heavily on educational software in classrooms",
+        "They test their pupils far less often"
+      ],
+      "answerIndex": 1,
+      "explanation": "Asian countries are much less obsessed with small classes: fewer, better-paid, better-trained teachers — the opposite of America's add-more-staff approach."
+    }
+  ]
+}
