@@ -1,0 +1,728 @@
+[
+  {
+    "k": "threshold",
+    "t": "threshold",
+    "kind": "vocab",
+    "pron": "THRESH-hohld",
+    "forms": [
+      "threshold"
+    ],
+    "text": "The line or level where something changes — cross it and things work differently on the other side. Reflecting 93% of sunlight instead of 84% takes the new paint over the threshold where it gives off more heat than it soaks up, so it can actually cool a surface down.",
+    "audio": true
+  },
+  {
+    "k": "replicate",
+    "t": "replicate",
+    "kind": "vocab",
+    "pron": "REP-lih-kayt",
+    "forms": [
+      "replicate"
+    ],
+    "text": "To copy something exactly so it comes out the same way again. The Stanford team's lab method was too fiddly for paint factories to replicate, which kept their invention stuck in the lab for years.",
+    "audio": true
+  },
+  {
+    "k": "replenish",
+    "t": "replenish",
+    "kind": "vocab",
+    "pron": "rih-PLEN-ish",
+    "forms": [
+      "replenished"
+    ],
+    "text": "To fill something back up after it has been used or emptied. The cement coating loses its stored water as it evaporates, and the next rainfall replenishes it — refilling the tiny holes so the cooling can start over.",
+    "audio": true
+  },
+  {
+    "k": "measure",
+    "t": "measure",
+    "kind": "word",
+    "forms": [
+      "measure"
+    ],
+    "text": "Here this is not about rulers: a measure is an action taken to fix or improve something. Painting bus roofs white was a heat-reduction measure — a step London took to make hot rides more bearable.",
+    "audio": true
+  },
+  {
+    "k": "top-deck",
+    "t": "top deck",
+    "kind": "phrase",
+    "forms": [
+      "top deck"
+    ],
+    "text": "The upstairs level of a double-decker bus, the famous two-floor buses London is known for. The top deck sits right under the roof, so it gets hottest — which is why the roofs were painted white.",
+    "audio": true
+  },
+  {
+    "k": "cope",
+    "t": "cope",
+    "kind": "word",
+    "forms": [
+      "cope"
+    ],
+    "text": "To manage or deal with something difficult. The buses struggle to cope with rising temperatures — the white roofs help, but not enough on the hottest days.",
+    "audio": true
+  },
+  {
+    "k": "crucial",
+    "t": "crucial",
+    "kind": "word",
+    "forms": [
+      "crucial"
+    ],
+    "text": "Extremely important — so important that everything depends on it. The jump from 84% to 93% reflection sounds small, but it crosses a crucial line: the point where the paint starts cooling instead of warming.",
+    "audio": true
+  },
+  {
+    "k": "emit",
+    "t": "emit",
+    "kind": "word",
+    "forms": [
+      "emits",
+      "emitting",
+      "emit"
+    ],
+    "text": "To send something out — light, heat, sound, or a smell. Every object emits heat as invisible infrared light; this paint is special because it emits more heat than it takes in from the sun.",
+    "audio": true
+  },
+  {
+    "k": "absorb",
+    "t": "absorb",
+    "kind": "word",
+    "forms": [
+      "absorbs",
+      "absorb",
+      "absorbing"
+    ],
+    "text": "To soak something up. A dark roof absorbs sunlight and turns it into heat; the porous cement absorbs rainwater like a sponge. The opposite of absorbing light is reflecting it.",
+    "audio": true
+  },
+  {
+    "k": "terrestrial",
+    "t": "terrestrial",
+    "kind": "word",
+    "forms": [
+      "Terrestrial"
+    ],
+    "text": "On or from the Earth — from terra, the Latin word for earth. Terrestrial objects here just means ordinary things on Earth's surface, like buses and buildings, as opposed to the sun out in space. It is the same root as extraterrestrial, which means from beyond Earth.",
+    "audio": true
+  },
+  {
+    "k": "shed",
+    "t": "shed",
+    "kind": "word",
+    "forms": [
+      "shed",
+      "shedding"
+    ],
+    "text": "Not the little building in a garden — to shed something is to let it go or get rid of it, the way a dog sheds fur. Objects shed heat by sending it away as infrared light, and you shed heat by sweating.",
+    "audio": true
+  },
+  {
+    "k": "solar-radiation",
+    "t": "solar radiation",
+    "kind": "name",
+    "forms": [
+      "solar radiation"
+    ],
+    "text": "The energy the sun sends out as light — both the light you can see and kinds you cannot. When solar radiation hits a roof, whatever is not reflected gets absorbed and becomes heat.",
+    "audio": true
+  },
+  {
+    "k": "breaks-even",
+    "t": "break even",
+    "kind": "phrase",
+    "forms": [
+      "breaks even"
+    ],
+    "text": "To come out exactly level, with nothing gained and nothing lost. If the paint reflects nine-tenths of sunlight, the heat coming in matches the heat going out — it breaks even. Reflect any more and the surface starts getting cooler.",
+    "audio": true
+  },
+  {
+    "k": "in-principle",
+    "t": "in principle",
+    "kind": "phrase",
+    "forms": [
+      "in principle"
+    ],
+    "text": "According to how things should work in theory, even if real life is messier. In principle the paint can cool a bus below the air temperature — but in practice the rest of the bus is still soaking up heat.",
+    "audio": true
+  },
+  {
+    "k": "sonata",
+    "t": "sonata",
+    "kind": "word",
+    "forms": [
+      "sonata"
+    ],
+    "text": "A piece of classical music, usually for one or two instruments — Beethoven's Moonlight Sonata is the most famous. The heading Sunlight sonata is a joke: a little musical piece about sunlight.",
+    "audio": true
+  },
+  {
+    "k": "in-practice",
+    "t": "in practice",
+    "kind": "phrase",
+    "forms": [
+      "In practice"
+    ],
+    "text": "What actually happens in real life, as opposed to what theory promises. The paint can cool surfaces below air temperature in theory; in practice, a painted bus still has windows and sides soaking up heat, so passengers won't feel colder than the outdoors.",
+    "audio": true
+  },
+  {
+    "k": "peer-reviewed",
+    "t": "peer-reviewed",
+    "kind": "word",
+    "forms": [
+      "peer-reviewed"
+    ],
+    "text": "Checked by other scientists — peers means equals — before being officially published. The Madrid experiment has not been peer-reviewed yet, so The Economist is flagging that other experts haven't double-checked the results.",
+    "audio": true
+  },
+  {
+    "k": "radiative-coating",
+    "t": "radiative coating",
+    "kind": "name",
+    "forms": [
+      "radiative coatings",
+      "radiative coating",
+      "radiative cooling",
+      "radiative-cooling"
+    ],
+    "text": "A paint or layer that cools whatever it covers by radiating heat away — sending it off as invisible infrared light — while reflecting sunlight. That combination lets a surface get cooler than the air around it without using any electricity.",
+    "audio": true
+  },
+  {
+    "k": "stanford",
+    "t": "Stanford University",
+    "kind": "name",
+    "forms": [
+      "Stanford University",
+      "Stanford"
+    ],
+    "text": "A famous university in California, known for science and for launching tech companies. A Stanford team made the 2014 breakthrough that started this whole field: a material that stayed cooler than its surroundings while sitting in direct sunlight.",
+    "audio": true
+  },
+  {
+    "k": "ucl",
+    "t": "UCL",
+    "kind": "name",
+    "forms": [
+      "UCL",
+      "University College, London"
+    ],
+    "text": "University College London, one of Britain's biggest and oldest universities. Its researchers made the super-reflective paint now being tested on the roofs of two London buses.",
+    "audio": true
+  },
+  {
+    "k": "hafnium-dioxide",
+    "t": "hafnium dioxide",
+    "kind": "name",
+    "forms": [
+      "hafnium dioxide"
+    ],
+    "text": "A compound made from hafnium, a rare and expensive metal, plus oxygen. The Stanford team used layers of it and silver in their breakthrough material — which is exactly why that material cost too much to mass produce.",
+    "audio": true
+  },
+  {
+    "k": "electron-beam-evaporation",
+    "t": "electron beam evaporation",
+    "kind": "name",
+    "forms": [
+      "electron beam evaporation"
+    ],
+    "text": "A lab technique for building super-thin layers: a beam of electrons heats a material until it turns to vapour, which then settles as a fine coating on a surface. It works beautifully in a lab but is hard to do in a paint factory.",
+    "audio": true
+  },
+  {
+    "k": "mass-produced",
+    "t": "mass produce",
+    "kind": "phrase",
+    "forms": [
+      "mass produced",
+      "mass production"
+    ],
+    "text": "To make something in huge quantities in factories, the way cars or phones are made. A material only changes the world if it can be mass produced cheaply — the Stanford version couldn't be, and the new paints are designed so they can.",
+    "audio": true
+  },
+  {
+    "k": "moreover",
+    "t": "moreover",
+    "kind": "word",
+    "forms": [
+      "Moreover"
+    ],
+    "text": "A formal way of saying 'and on top of that' — it stacks one more reason onto the ones already given. Writers use it to pile up evidence: the material was expensive, hard to make, and moreover, shiny like a mirror.",
+    "audio": true
+  },
+  {
+    "k": "not-a-moment-too-soon",
+    "t": "not a moment too soon",
+    "kind": "phrase",
+    "forms": [
+      "not a moment too soon"
+    ],
+    "text": "Just in time — any later would have been too late. The coatings are nearly ready for sale not a moment too soon, because climate change is making the need to cool buildings more urgent every year.",
+    "audio": true
+  },
+  {
+    "k": "space-cooling",
+    "t": "space-cooling",
+    "kind": "name",
+    "forms": [
+      "space-cooling"
+    ],
+    "text": "Cooling indoor spaces — rooms and buildings — mostly with air-conditioning. Nothing to do with outer space: 'space' here means the space inside a building. It already uses 10% of the world's electricity, up from 6% in 1990.",
+    "audio": true
+  },
+  {
+    "k": "global-warming-potential",
+    "t": "global-warming potential",
+    "kind": "name",
+    "forms": [
+      "global-warming potential"
+    ],
+    "text": "A score for how strongly a gas heats the planet compared with carbon dioxide, the best-known greenhouse gas. Some air-conditioner gases score around 2,000 — meaning one kilogram of them traps as much heat as two tonnes of carbon dioxide.",
+    "audio": true
+  },
+  {
+    "k": "heat-island",
+    "t": "heat island",
+    "kind": "name",
+    "forms": [
+      "heat islands"
+    ],
+    "text": "A city area that stays noticeably hotter than the countryside around it — an 'island' of heat on the map. Dark roads and roofs soak up sun, and air-conditioners make it worse by pumping the heat from inside buildings out into the streets.",
+    "audio": true
+  },
+  {
+    "k": "employ",
+    "t": "employ",
+    "kind": "word",
+    "forms": [
+      "employ",
+      "employed"
+    ],
+    "text": "Here this doesn't mean giving someone a job — to employ something is simply to use it. Air-conditioners employ powerful heat-trapping gases; ordinary white paint employs titanium-oxide particles to do its reflecting.",
+    "audio": true
+  },
+  {
+    "k": "constitute",
+    "t": "constitute",
+    "kind": "word",
+    "forms": [
+      "constitute"
+    ],
+    "text": "To make up or form something. Roofs constitute more than a fifth of the surface of some American cities — meaning if you looked straight down, over 20% of what you'd see would be rooftop.",
+    "audio": true
+  },
+  {
+    "k": "consumption",
+    "t": "consumption",
+    "kind": "word",
+    "forms": [
+      "consumption"
+    ],
+    "text": "The using-up of something — not just eating. Electricity consumption means how much electric power gets used. Painting roofs with cooling paint could cut a city's electricity consumption because millions of air-conditioners would work less hard.",
+    "audio": true
+  },
+  {
+    "k": "tropical",
+    "t": "tropical",
+    "kind": "word",
+    "forms": [
+      "tropical"
+    ],
+    "text": "In or near the tropics, the hot band of the Earth on either side of the equator. Tropical countries are hot year-round, which is why people there need cooling the most — yet many can least afford air-conditioning.",
+    "audio": true
+  },
+  {
+    "k": "decade",
+    "t": "decade",
+    "kind": "word",
+    "forms": [
+      "decade"
+    ],
+    "text": "A period of ten years. The article compares two decades — the ten years before 2021 against the ten years before 1999 — and finds heat-related deaths per year rose 63% between them.",
+    "audio": true
+  },
+  {
+    "k": "infrared",
+    "t": "infrared",
+    "kind": "word",
+    "forms": [
+      "infrared"
+    ],
+    "text": "Light with waves too long for human eyes to see — infra is Latin for below, so it means 'below red', just past the red end of the rainbow. Everything gives off infrared light; that glow is how objects shed heat, and it's what night-vision goggles pick up.",
+    "audio": true
+  },
+  {
+    "k": "wavelength",
+    "t": "wavelength",
+    "kind": "word",
+    "forms": [
+      "wavelengths",
+      "wavelength"
+    ],
+    "text": "The distance from one peak of a wave to the next. Light comes in many wavelengths, and the wavelength decides what kind of light it is: the short ones are colors we can see, longer ones are invisible infrared.",
+    "audio": true
+  },
+  {
+    "k": "pent-up",
+    "t": "pent-up",
+    "kind": "word",
+    "forms": [
+      "pent-up"
+    ],
+    "text": "Held inside and building up, waiting to get out — like pent-up excitement before a big game. An object's pent-up heat is the warmth stored inside it that it needs to release to cool down.",
+    "audio": true
+  },
+  {
+    "k": "evolved",
+    "t": "evolve",
+    "kind": "word",
+    "forms": [
+      "evolved"
+    ],
+    "text": "To change gradually over many generations. Human eyes evolved to be sensitive to exactly the wavelengths the sun sends out most strongly — the ancestors who could see that light best survived best, and we inherited their eyes.",
+    "audio": true
+  },
+  {
+    "k": "sensitive",
+    "t": "sensitive",
+    "kind": "word",
+    "forms": [
+      "sensitive"
+    ],
+    "text": "Able to notice or respond to something, even something faint. Here it's about eyes, not feelings: our eyes are sensitive to certain wavelengths of light, meaning those are the ones they can detect.",
+    "audio": true
+  },
+  {
+    "k": "celsius",
+    "t": "Celsius",
+    "kind": "name",
+    "forms": [
+      "Celsius"
+    ],
+    "text": "The temperature scale used almost everywhere outside America: water freezes at 0°C and boils at 100°C. 'The low tens of degrees Celsius' means roughly 10–30°C — between 50°F and 86°F, everyday Earth temperatures.",
+    "audio": true
+  },
+  {
+    "k": "exploit",
+    "t": "exploit",
+    "kind": "word",
+    "forms": [
+      "exploits"
+    ],
+    "text": "To make clever use of something — in science this is a positive word, not about treating anyone unfairly. The UCL group exploits the difference between visible and infrared light: their paint reflects one and releases the other.",
+    "audio": true
+  },
+  {
+    "k": "aerogel",
+    "t": "aerogel",
+    "kind": "name",
+    "forms": [
+      "aerogel"
+    ],
+    "text": "One of the lightest solid materials ever made — a stiff foam that is mostly air trapped in a fine skeleton, here made of silica. Tiny aerogel particles mixed into the paint make incoming light bounce around and back out, which is what makes it so reflective.",
+    "audio": true
+  },
+  {
+    "k": "silica",
+    "t": "silica",
+    "kind": "name",
+    "forms": [
+      "silica"
+    ],
+    "text": "A common compound of silicon and oxygen — it is what sand and glass are mostly made of. The aerogel in the UCL paint is a sponge-like structure built out of silica.",
+    "audio": true
+  },
+  {
+    "k": "polymer",
+    "t": "polymer",
+    "kind": "name",
+    "forms": [
+      "polymer"
+    ],
+    "text": "A material built from long chains of repeating molecules — plastics and rubber are polymers, and so is the base of most paint. The UCL team mixed their aerogel particles into a carefully chosen polymer to make the new coating.",
+    "audio": true
+  },
+  {
+    "k": "refractive-index",
+    "t": "refractive index",
+    "kind": "name",
+    "forms": [
+      "refractive indices"
+    ],
+    "text": "A number describing how much a material bends and slows light passing through it — indices is just the plural of index. Because the aerogel and the polymer have different refractive indices, light rays ricochet between them instead of passing straight through, and bounce back out of the paint.",
+    "audio": true
+  },
+  {
+    "k": "nanometre",
+    "t": "nanometre",
+    "kind": "name",
+    "forms": [
+      "nanometres"
+    ],
+    "text": "A billionth of a metre — so small that a human hair is about 80,000 nanometres wide. The paint sheds heat at wavelengths around 9,000 nanometres, in the infrared range our eyes can't see.",
+    "audio": true
+  },
+  {
+    "k": "transparent",
+    "t": "transparent",
+    "kind": "word",
+    "forms": [
+      "transparent"
+    ],
+    "text": "Letting light pass straight through, like clear glass. The atmosphere happens to be transparent to waves around 9,000 nanometres — so heat radiated at that wavelength slips past the air entirely and escapes into outer space.",
+    "audio": true
+  },
+  {
+    "k": "diffuse",
+    "t": "diffuse",
+    "kind": "word",
+    "forms": [
+      "diffuse"
+    ],
+    "text": "Spread out in every direction rather than concentrated. A diffuse white surface scatters reflected light everywhere, so it looks soft and matte like ordinary paint — unlike the Stanford coating, which bounced light back in one beam like a mirror.",
+    "audio": true
+  },
+  {
+    "k": "constituents",
+    "t": "constituent",
+    "kind": "word",
+    "forms": [
+      "constituents"
+    ],
+    "text": "The parts or ingredients that something is made of. All the constituents of the UCL paint can already be bought commercially — no rare metals — which is why it could be made cheaply at scale.",
+    "audio": true
+  },
+  {
+    "k": "at-scale",
+    "t": "at scale",
+    "kind": "phrase",
+    "forms": [
+      "at scale"
+    ],
+    "text": "In very large quantities, not just small test batches. Making something at scale is the real test of an invention: plenty of materials work in a lab but are too expensive or difficult to produce by the tonne.",
+    "audio": true
+  },
+  {
+    "k": "hit-the-market",
+    "t": "hit the market",
+    "kind": "phrase",
+    "forms": [
+      "hit the market"
+    ],
+    "text": "To go on sale to the public for the first time. After twelve years of lab work, the first radiative coatings are beginning to hit the market — real companies are now selling them.",
+    "audio": true
+  },
+  {
+    "k": "akzonobel",
+    "t": "AkzoNobel",
+    "kind": "name",
+    "forms": [
+      "AkzoNobel"
+    ],
+    "text": "A big Dutch company that makes paints and coatings — Dulux is one of its brands. It is developing radiative-cooling paint using the aerogel approach, a sign that major manufacturers take the idea seriously.",
+    "audio": true
+  },
+  {
+    "k": "i2cool",
+    "t": "i2Cool",
+    "kind": "name",
+    "forms": [
+      "i2Cool"
+    ],
+    "text": "A company in Hong Kong already selling cooling coatings. Its paints use particles of many materials and sizes to reflect more of the sun's wavelengths, and it says it has covered 850,000 square metres of buildings — about 119 football fields.",
+    "audio": true
+  },
+  {
+    "k": "incident",
+    "t": "incident",
+    "kind": "word",
+    "forms": [
+      "incident"
+    ],
+    "text": "Here this is not an event or accident — in physics, incident light is light arriving at and striking a surface. Incident sunlight just means the sunlight landing on the paint.",
+    "audio": true
+  },
+  {
+    "k": "titanium-oxide",
+    "t": "titanium oxide",
+    "kind": "name",
+    "forms": [
+      "titanium-oxide"
+    ],
+    "text": "A bright white compound of titanium and oxygen — the standard ingredient that makes ordinary white paint white. Its particles reflect a lot of sunlight, but fewer wavelengths of it than the new multi-material coatings manage.",
+    "audio": true
+  },
+  {
+    "k": "football-pitch",
+    "t": "football pitch",
+    "kind": "phrase",
+    "forms": [
+      "football pitches"
+    ],
+    "text": "The British word for a soccer field — in Britain, football means soccer and a pitch is the field it's played on. Saying an area equals 119 football pitches helps readers picture how big 850,000 square metres really is.",
+    "audio": true
+  },
+  {
+    "k": "emissions",
+    "t": "emissions",
+    "kind": "word",
+    "forms": [
+      "emissions"
+    ],
+    "text": "Gases sent out into the air, especially the ones that warm the planet. Running air-conditioners burns electricity, which mostly means burning fuel — so cooling buildings without electricity avoids carbon-dioxide emissions.",
+    "audio": true
+  },
+  {
+    "k": "harness",
+    "t": "harness",
+    "kind": "word",
+    "forms": [
+      "harness"
+    ],
+    "text": "To capture something and put it to work — the word comes from the straps that let a horse pull a cart. The Singapore team harnesses evaporation: they turn the natural drying-out of water into a machine for carrying heat away.",
+    "audio": true
+  },
+  {
+    "k": "science-journal",
+    "t": "Science (the journal)",
+    "kind": "name",
+    "forms": [
+      "Science"
+    ],
+    "text": "With a capital S, Science is one of the world's most respected research journals — a magazine where scientists publish discoveries after strict checking. Getting a paper into Science signals the work is a big deal.",
+    "audio": true
+  },
+  {
+    "k": "porous",
+    "t": "porous",
+    "kind": "word",
+    "forms": [
+      "porous"
+    ],
+    "text": "Full of tiny holes, called pores, that liquid or air can pass into — like a sponge. The special cement is porous so it can soak up rainwater and hold it until hot weather evaporates it away.",
+    "audio": true
+  },
+  {
+    "k": "formulation",
+    "t": "formulation",
+    "kind": "word",
+    "forms": [
+      "formulation"
+    ],
+    "text": "The exact recipe of a mixture — which ingredients, and how much of each. By adjusting the formulation of their cement, the researchers controlled the size of its pores down to a millionth of a metre.",
+    "audio": true
+  },
+  {
+    "k": "ratio",
+    "t": "ratio",
+    "kind": "word",
+    "forms": [
+      "ratio"
+    ],
+    "text": "A comparison of two amounts — like mixing juice one part syrup to four parts water. The ratio of water to cement in the mix decides what the final material is like, including how big its pores turn out.",
+    "audio": true
+  },
+  {
+    "k": "micron",
+    "t": "micron",
+    "kind": "name",
+    "forms": [
+      "micron"
+    ],
+    "text": "A millionth of a metre, also called a micrometre. The pores in the cement are about a micron across — roughly a hundredth the width of a human hair, the right size to pull in water.",
+    "audio": true
+  },
+  {
+    "k": "capillary-action",
+    "t": "capillary action",
+    "kind": "name",
+    "forms": [
+      "capillary action"
+    ],
+    "text": "The way liquid climbs into narrow spaces all by itself, with no pump — it's how a paper towel pulls up spilled juice and how water rises inside a plant's stem. The cement's micron-sized pores use capillary action to drink in rainwater.",
+    "audio": true
+  },
+  {
+    "k": "evaporate",
+    "t": "evaporate",
+    "kind": "word",
+    "forms": [
+      "evaporates"
+    ],
+    "text": "To turn from liquid into vapour and drift away into the air, like a puddle disappearing on a sunny day. When the water in the cement evaporates, it carries heat away with it — the same reason sweating cools you down.",
+    "audio": true
+  },
+  {
+    "k": "vapour",
+    "t": "vapour",
+    "kind": "word",
+    "forms": [
+      "vapour"
+    ],
+    "text": "Water floating in the air as a gas, too spread out to see — the British spelling of vapor. The salt in the cement attracts water vapour, letting the coating pull moisture straight out of humid air even when it hasn't rained.",
+    "audio": true
+  },
+  {
+    "k": "humid",
+    "t": "humid",
+    "kind": "word",
+    "forms": [
+      "humid"
+    ],
+    "text": "Air that carries a lot of water vapour — humid days feel sticky and heavy. In humid places the salted cement can refill itself from the air alone, no rain needed.",
+    "audio": true
+  },
+  {
+    "k": "scatter",
+    "t": "scatter",
+    "kind": "word",
+    "forms": [
+      "scatter"
+    ],
+    "text": "To bounce or fling things off in all directions, like scattering crumbs for birds. The pores in the cement scatter incoming light every which way instead of absorbing it, which keeps the coating reflective.",
+    "audio": true
+  },
+  {
+    "k": "trial",
+    "t": "trial",
+    "kind": "word",
+    "forms": [
+      "trial"
+    ],
+    "text": "A careful test to see how well something works — not a courtroom trial. In a real-world trial, the cement coating stayed 5°C cooler than a standard radiative coating.",
+    "audio": true
+  },
+  {
+    "k": "as-it-were",
+    "t": "as it were",
+    "kind": "phrase",
+    "forms": [
+      "as it were"
+    ],
+    "text": "A little phrase writers drop in to signal a pun or a figure of speech — 'so to speak'. The article ends calling cheap cement 'the coolest thing of all, as it were': cool meaning both low-temperature and excellent.",
+    "audio": true
+  },
+  {
+    "k": "sweating-the-big-stuff",
+    "t": "Sweating the big stuff",
+    "kind": "phrase",
+    "forms": [
+      "Sweating the big stuff"
+    ],
+    "text": "A twist on the saying 'don't sweat the small stuff', which means don't stress over little things. Here it's a pun: the cement coating literally sweats — sheds water to lose heat — on big stuff, meaning whole buildings.",
+    "audio": true
+  },
+  {
+    "k": "nanyang",
+    "t": "Nanyang Technological University",
+    "kind": "name",
+    "forms": [
+      "Nanyang Technological University"
+    ],
+    "text": "A large, highly ranked university in Singapore, strong in science and engineering. Fei Jipeng's team there invented the sweating cement coating described at the end of the article.",
+    "audio": true
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-09",
+  "title": "How to cool buildings on the cheap",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/08/how-to-cool-buildings-on-the-cheap",
+  "articlePageUrl": "/articles/junior/2026-09-09.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "threshold",
+      "partOfSpeech": "noun",
+      "pronunciation": "THRESH-hohld",
+      "articleQuote": "The difference might sound small, but it takes the new coating over a crucial threshold: the point where it emits more heat than it absorbs from the sun.",
+      "meaning": "A **threshold** is the line or level where something changes — cross it and things work differently on the other side. In the article, reflecting 93% of sunlight instead of 84% pushes the paint past the level where it starts giving off more heat than it takes in, so it can actually cool things down.",
+      "examples": [
+        "Maya needed 90% on the test to make the honor roll, and her 91 put her just over the threshold.",
+        "The coach said 50 push-ups was the threshold for making the team — 49 wasn't enough."
+      ]
+    },
+    {
+      "word": "replicate",
+      "partOfSpeech": "verb",
+      "pronunciation": "REP-lih-kayt",
+      "articleQuote": "…their method of layering these substances using \"electron beam evaporation\" was hard to replicate in commercial settings.",
+      "meaning": "To **replicate** something is to copy it exactly, so it comes out the same way again. Scientists care a lot about this: a discovery only counts if other people can replicate it. In the article, the Stanford team's fancy lab method was too hard for paint factories to replicate, so their invention stayed stuck in the lab.",
+      "examples": [
+        "Jaden tried to replicate his winning chess opening in the rematch, but his opponent was ready for it.",
+        "The recipe worked at home, but Priya couldn't replicate it in the school kitchen with different ovens."
+      ]
+    },
+    {
+      "word": "replenish",
+      "partOfSpeech": "verb",
+      "pronunciation": "rih-PLEN-ish",
+      "articleQuote": "It is then replenished the next time rain falls.",
+      "meaning": "To **replenish** something is to fill it back up after it has been used or emptied. In the article, the special cement coating loses its stored water as it evaporates — and the next rainfall replenishes it, refilling the tiny pores so the cooling can keep going.",
+      "examples": [
+        "At halftime the players replenished their water bottles at the fountain.",
+        "After the bake sale sold out, the class replenished the table with a fresh batch of cookies."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Infrared light",
+      "articleQuote": "Terrestrial objects such as London buses, by contrast, have temperatures in the low tens of degrees Celsius and therefore emit longer-wavelength infrared rays.",
+      "meaning": "Here is the surprise hiding inside this article: everything around you is glowing right now — your desk, your dog, you — in a kind of light your eyes cannot see. Physicists call it **infrared light**.\n\nLight comes in different wavelengths, like waves in water that can be close together or spread far apart. Our eyes only pick up a narrow slice of them: the colors of the rainbow. Infrared waves are longer than that slice, so they're invisible to us — but they're still light, and they still carry energy. Every object gives off this glow, and the hotter the object, the shorter the waves it sends out. The sun is so hot (5,500°C) that its glow lands right in the slice we can see. A school bus, a building, or your own body is far cooler, so its glow comes out as infrared instead.\n\nThis is how things cool off: they send their heat away as infrared light. It's also how night-vision goggles find people in the dark and how a no-touch thermometer reads your forehead — both are just seeing that invisible glow. The paint in this article is clever because it handles the two kinds of light differently: it bounces away the sun's visible light while letting the building's own infrared glow escape into space. Remember it this way: everything glows — hot things in light you can see, everything else in infrared."
+    },
+    {
+      "name": "Evaporative cooling",
+      "articleQuote": "When this evaporates it carries away heat, cooling the structure it is covering in a manner similar to a person shedding heat by sweating.",
+      "meaning": "Why do you feel cold when you climb out of a pool, even on a hot day? The answer is a physics trick called **evaporative cooling**, and it's the same trick the cement coating in this article uses.\n\nWhen water evaporates — turns from liquid into vapor — the escaping molecules need energy to break free, and they take that energy from whatever they're sitting on. Heat leaves with them. That's the whole trick: water leaving = heat leaving. It's why sweating works. Sweat itself isn't cold; it cools you because as each bit of it evaporates off your skin, it carries some of your heat away with it. Dogs do the same thing by panting, and you do it every time you blow on hot soup — you speed up evaporation, and the soup loses heat faster.\n\nThe scientists in Singapore built this trick into cement. Their coating is full of tiny holes that soak up rainwater like a sponge. On hot days that water slowly evaporates, carrying heat away from the building — the building is basically sweating. Then the next rain refills the holes and the cooling starts again. Next time you shiver getting out of the pool, you'll know exactly what's happening: evaporating water is stealing your heat."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why does The Economist say London buses are often white on top, even though they look red from the street?",
+      "options": [
+        "White paint is cheaper than red paint",
+        "The white tops reflect sunlight to keep the buses cooler inside",
+        "It helps helicopters identify the buses from above",
+        "The law requires all tall vehicles to have white roofs"
+      ],
+      "answerIndex": 1,
+      "explanation": "Painting the tops white is a heat-reduction measure, begun in 2004 to make rides more comfortable — especially on the top deck."
+    },
+    {
+      "question": "The new UCL paint reflects 93% of sunlight instead of the 84% ordinary white paint manages. Why does that small difference matter so much?",
+      "options": [
+        "It makes the paint last nine years longer",
+        "It pushes the paint past the threshold where it sheds more heat than it absorbs",
+        "It makes the paint visible from space",
+        "It means the paint no longer needs to be reapplied after rain"
+      ],
+      "answerIndex": 1,
+      "explanation": "Crossing that threshold means the coating gives off more heat than it takes in from the sun, so it can cool the surface below the air temperature around it."
+    },
+    {
+      "question": "How does a radiative coating get rid of a building's heat?",
+      "options": [
+        "It sends the heat away as infrared light that can pass through the atmosphere into space",
+        "It stores the heat in tiny particles until nighttime",
+        "It converts the heat into electricity for the building",
+        "It pumps the heat into the ground below the building"
+      ],
+      "answerIndex": 0,
+      "explanation": "The materials radiate at a wavelength of around 9,000 nanometres, to which the atmosphere is transparent — so the heat escapes as infrared light straight into outer space."
+    },
+    {
+      "question": "The cement-based coating from Singapore cools buildings the way sweating cools people. What is the trick?",
+      "options": [
+        "Water stored in the cement's tiny pores carries heat away as it evaporates",
+        "The cement melts slightly and absorbs heat",
+        "Salt in the cement reacts with sunlight to make cold air",
+        "The pores let cool wind blow through the walls"
+      ],
+      "answerIndex": 0,
+      "explanation": "The porous cement soaks up rainwater, and when that water evaporates it carries heat away — then the next rain replenishes it."
+    },
+    {
+      "question": "Why does the article say the need for these coatings is greatest in poorer, often tropical countries?",
+      "options": [
+        "Their buildings are painted in darker colors",
+        "Paint companies refuse to sell air-conditioners there",
+        "The power to run air-conditioning there is often unavailable or unaffordable",
+        "Their roofs are flatter, so paint works better"
+      ],
+      "answerIndex": 2,
+      "explanation": "Heat-related deaths are rising fastest in places that can least afford air-conditioning, and these coatings cool buildings without using any electricity."
+    }
+  ]
+}
