@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-10",
+  "title": "The problem with the world’s oldest mummies",
+  "articleUrl": "https://www.economist.com/the-americas/2026/08/27/the-problem-with-the-worlds-oldest-mummies",
+  "articlePageUrl": "/articles/junior/2026-09-10.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "meticulous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "muh-TIK-yuh-lus",
+      "articleQuote": "were meticulous preservers of their dead",
+      "meaning": "Meticulous means extremely careful about small details — doing something slowly and thoroughly so that nothing gets missed. Here it tells you the Chinchorro did not just bury people quickly. Their mummification took months of exact, fiddly work: taking the body apart, drying it, rebuilding it with sticks, clay and a painted mask.",
+      "examples": [
+        "Her science-fair poster was meticulous — every label was straight and every number was checked twice.",
+        "He is meticulous about his sneakers and cleans the white parts with a toothbrush."
+      ]
+    },
+    {
+      "word": "makeshift",
+      "partOfSpeech": "adjective",
+      "pronunciation": "MAYK-shift",
+      "articleQuote": "A small fishing community has illegally built makeshift homes in the Camerones valley within the site.",
+      "meaning": "Something makeshift is put together quickly out of whatever is on hand, as a rough stand-in for the proper version. It usually is not meant to last, though it often ends up lasting anyway. The fishing families' homes are makeshift because they were built fast from scrap materials, without permission or plans — which is part of why the site's protectors want them gone.",
+      "examples": [
+        "When the net ripped, we made a makeshift one out of two hoodies tied together.",
+        "The classroom flooded, so for a week our makeshift library was three carts in the hallway."
+      ]
+    },
+    {
+      "word": "deliberately",
+      "partOfSpeech": "adverb",
+      "pronunciation": "dih-LIB-ur-it-lee",
+      "articleQuote": "the world’s oldest deliberately preserved bodies are so numerous that they are creating problems",
+      "meaning": "To do something deliberately is to do it on purpose, after thinking about it first — the opposite of by accident. (The same word can also describe moving slowly and carefully, which comes from that same idea of thinking before you act.) That one word is what makes these bodies famous: plenty of ancient corpses survived by luck, but the Chinchorro chose to preserve theirs, thousands of years before the Egyptians did.",
+      "examples": [
+        "I deliberately sat in the front row so I would stop checking my phone.",
+        "She stepped on my line deliberately, then pretended it was an accident."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Decomposition",
+      "articleQuote": "This, combined with the dry environment of the Atacama, has led to an odd situation",
+      "meaning": "Here is the strange part of this story: bodies from 7,000 years ago are still lying in the ground with skin on them. Almost anywhere else on Earth they would have vanished long ago. Why?\n\nWhen something dies, it does not disappear on its own. Bacteria and fungi — tiny living things already in the soil and inside the body — feed on the soft tissue and break it into simpler stuff. Biologists call this **decomposition**. The key fact is that those microbes are alive, and like every living thing they need **water** to grow. Take the water away and they simply cannot get going. The flesh dries out and hardens instead of breaking down.\n\nYou have eaten the proof. A fresh grape left in a cupboard goes soft, then fuzzy, then gross, in about a week — microbes are feeding on it. A raisin is the same grape with the water dried out of it, and it sits in that cupboard for a year without changing. Nothing was added to the raisin. Something was *removed*.\n\nThe Atacama is one of the driest deserts on the planet. Parts of it can go years without measurable rain. So a body buried there turns into the raisin, not the grape — and the Chinchorro's careful work got a 7,000-year head start from the weather.\n\nWherever water is missing — a desert, a freezer, a jar of salt, a bag of dried mango — decay slows down or stops. That is the whole trick behind mummies, jerky and the food in your pantry."
+    },
+    {
+      "name": "World Heritage sites",
+      "articleQuote": "In 2021 UNESCO added the Chinchorro remains and their landscape to its list of world heritage sites.",
+      "meaning": "Getting on this list was supposed to *solve* the mummy problem. Instead it started a fight. To see why, you need to know what the list actually is — and what it is not.\n\nUNESCO is a branch of the United Nations, the organisation that most of the world's countries belong to. It keeps a list of World Heritage sites: places judged so valuable to all of humanity that losing them would be everybody's loss. The Pyramids of Giza are on it. So are the Great Barrier Reef, the Taj Mahal and Yellowstone.\n\nNow the part people usually get wrong. Being listed does **not** hand the place over to UNESCO. UNESCO owns nothing, and it has no police. Chile still owns the Chinchorro sites and still makes the rules there. What the country gets is expert help, access to money, and a lot of attention. What it gives back is a promise to look after the place. That is the deal: a promise, plus publicity.\n\nPublicity cuts both ways, and Peru's Machu Picchu shows how. It joined the list in 1983, and being listed made it world-famous. Visitors poured in — so many that their footsteps started wearing down the stone paths of the very ruins they came to see. Peru's answer was to cap how many tickets it sells each day. The listing brought the money *and* the crowds that had to be limited.\n\nThat is exactly the squeeze in northern Chile. The listing opened the door to tourists who could pay to protect the mummies, and at the same time told a fishing village already living there that it should leave. So when you next read that somewhere was \"named a World Heritage site\", read it as a spotlight switching on — not as a fence going up."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why are the Chinchorro mummies causing a problem today?",
+      "options": [
+        "Grave robbers keep stealing them and selling them abroad",
+        "So many are eroding out of the ground that there is nowhere left to store them properly",
+        "Scientists have proved they are fakes made in the 20th century",
+        "Chile's government has banned anyone from studying them"
+      ],
+      "answerIndex": 1,
+      "explanation": "Wind and human activity keep exposing more bodies, and the article says the region has run out of space to keep them safely — it would take hundreds of trucks to move them all."
+    },
+    {
+      "question": "What are archaeologists doing with newly exposed remains while they wait for better technology?",
+      "options": [
+        "Shipping them to museums in Santiago",
+        "Sealing them in glass cases at the site",
+        "Studying them where they lie and then reburying them",
+        "Letting tourists handle them for a fee"
+      ],
+      "answerIndex": 2,
+      "explanation": "Because museums have no room and light and heat would damage the bodies, researchers study them in place and put them back under the soil."
+    },
+    {
+      "question": "If a job is done meticulously, it is done —",
+      "options": [
+        "in a rush, with lots of shortcuts",
+        "with extreme care for every small detail",
+        "by accident, without meaning to",
+        "by a large group instead of one person"
+      ],
+      "answerIndex": 1,
+      "explanation": "Meticulous means painstakingly careful — which is why the word fits a mummification ritual that took months of exact work."
+    },
+    {
+      "question": "Bodies buried in the Atacama desert survive for thousands of years mainly because —",
+      "options": [
+        "the desert sand contains a natural chemical preservative",
+        "it is so cold that everything stays frozen",
+        "there is almost no water, so the bacteria and fungi that break down tissue cannot grow",
+        "the bodies were sealed inside airtight stone tombs"
+      ],
+      "answerIndex": 2,
+      "explanation": "Decomposition depends on living microbes, and living things need water — remove the water and decay nearly stops, which is also why a raisin lasts far longer than a grape."
+    },
+    {
+      "question": "What does adding a place to the World Heritage list actually do?",
+      "options": [
+        "UNESCO takes ownership of the site and polices it",
+        "The site is closed permanently to visitors",
+        "The country promises to protect the site and gains attention, help and money — while keeping control of it",
+        "The country must hand any objects found there to a museum abroad"
+      ],
+      "answerIndex": 2,
+      "explanation": "Listing is a promise plus publicity: Chile still owns and runs the Chinchorro sites, but the spotlight brought both possible tourist money and new conflict with the families living there."
+    }
+  ]
+}
