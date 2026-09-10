@@ -38,10 +38,18 @@
 # Env overrides for a supervised manual run:
 #   AUTOPUBLISH_FORCE=1      bypass the 9am gate
 #   AUTOPUBLISH_DATE=…       publish a specific poll date (default: today Pacific)
+#   AUTOPILOT_MODEL=…        run the session on another model (default claude-opus-5[1m])
 #   AUTOPUBLISH_DRY_RUN=1    same as the DRY_RUN flag file
 set -uo pipefail
 
 export PATH="$HOME/.local/bin:$PATH"   # `claude`, `node` under cron's minimal PATH
+
+# Which model the agentic session runs on. Pinned here rather than left to the
+# box's ~/.claude/settings.json default: a per-model usage limit on that
+# ambient default silently kills every run of the day (the session exits
+# immediately with "You've reached your … limit"). Override for one run with
+# AUTOPILOT_MODEL=… to fall back to another model when this one is capped.
+AUTOPILOT_MODEL="${AUTOPILOT_MODEL:-claude-opus-5[1m]}"
 
 TRACK="senior"
 for a in "$@"; do
@@ -205,6 +213,7 @@ rm -f "$MARK"
 [ "$TRACK" = "senior" ] && rm -f "$DEFER"
 CLAUDE_RC=0
 "${XVFB[@]}" claude -p "Use the ${NAME} skill to publish today's Reading Club ${TRACK} reading (date ${TODAY}, mode ${MODE}). Run fully autonomously end to end — never pause for confirmation — and follow the skill's guards, quality gates, and failure handling exactly." \
+  --model "$AUTOPILOT_MODEL" \
   --dangerously-skip-permissions \
   >> "$LOG_FILE" 2>&1 || CLAUDE_RC=$?
 log "claude session exited (rc=$CLAUDE_RC)"

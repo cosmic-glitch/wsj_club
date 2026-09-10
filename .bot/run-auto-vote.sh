@@ -24,9 +24,17 @@
 # Env overrides for a supervised manual run:
 #   AUTOVOTE_FORCE=1  bypass the 6am gate
 #   AUTOVOTE_DATE=…   open the vote for a specific date (default: today Pacific)
+#   AUTOPILOT_MODEL=… run the session on another model (default claude-opus-5[1m])
 set -euo pipefail
 
 export PATH="$HOME/.local/bin:$PATH"   # find `claude`, `node` under cron's minimal PATH
+
+# Which model the agentic session runs on. Pinned here rather than left to the
+# box's ~/.claude/settings.json default: a per-model usage limit on that
+# ambient default silently kills every run of the day (the session exits
+# immediately with "You've reached your … limit"). Override for one run with
+# AUTOPILOT_MODEL=… to fall back to another model when this one is capped.
+AUTOPILOT_MODEL="${AUTOPILOT_MODEL:-claude-opus-5[1m]}"
 
 TRACK="senior"
 for a in "$@"; do
@@ -110,6 +118,7 @@ fi
 # set -e abort on a non-zero exit — the outcome check below is the verdict.
 CLAUDE_RC=0
 "${XVFB[@]}" claude -p "Use the ${NAME} skill to open today's Reading Club ${TRACK} vote (date ${TODAY}). Run fully autonomously end to end — never pause for confirmation — and follow the skill's idempotency guard and quality gates exactly." \
+  --model "$AUTOPILOT_MODEL" \
   --dangerously-skip-permissions \
   >> "$LOG_FILE" 2>&1 || CLAUDE_RC=$?
 
