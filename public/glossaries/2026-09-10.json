@@ -1,0 +1,412 @@
+[
+  {
+    "k": "elude",
+    "t": "eludes",
+    "kind": "vocab",
+    "pron": "ih-LOOD",
+    "forms": [
+      "eludes"
+    ],
+    "text": "To elude something is to slip out of its reach and stay just beyond whoever is chasing, hunting or trying to understand you. It started out describing physical escape, the way a suspect eludes the police, but it works just as well for things with no legs at all: a name, an answer, a championship. Here it is knowledge doing the escaping — mathematicians can use these equations to design aircraft, yet a full understanding of how the equations themselves behave has stayed out of their grasp for a century.",
+    "audio": true
+  },
+  {
+    "k": "pertinent",
+    "t": "pertinent",
+    "kind": "vocab",
+    "pron": "PUR-tuh-nunt",
+    "forms": [
+      "pertinent"
+    ],
+    "text": "Something pertinent bears directly on the matter being discussed, rather than being merely interesting. It shares a root with pertain, meaning to belong to, so a pertinent fact is one that belongs to the argument and cannot be brushed aside. Calling these questions ever more pertinent is a claim about scale: as AI is set loose on more unsolved problems, the fight over who deserves credit stops being one professor's quarrel and starts bearing on all of science.",
+    "audio": true
+  },
+  {
+    "k": "inadvertently",
+    "t": "inadvertently",
+    "kind": "vocab",
+    "pron": "in-uhd-VUR-tunt-lee",
+    "forms": [
+      "inadvertently"
+    ],
+    "text": "To do something inadvertently is to do it without meaning to, through inattention rather than intent. Hidden inside the word is the root advert, to turn your attention toward, so acting inadvertently is acting without having turned your attention to what you were doing. Writers reach for it when they want to describe a mistake without accusing anyone of dishonesty, which is exactly its job here: the suggestion is not that OpenAI deliberately fed rival work to its model, only that the work may have got in unnoticed.",
+    "audio": true
+  },
+  {
+    "k": "apparent",
+    "t": "apparent",
+    "kind": "word",
+    "forms": [
+      "apparent"
+    ],
+    "text": "Apparent can mean plainly visible, but in careful journalism it usually means close to the opposite of settled: it looks that way, and nobody has confirmed it yet. The headline says an apparent breakthrough rather than a breakthrough because no other mathematician has checked the proof. Whenever you see apparent, alleged or reported placed in front of a claim, the writer is quietly telling you the claim is still unverified.",
+    "audio": true
+  },
+  {
+    "k": "maths",
+    "t": "maths",
+    "kind": "word",
+    "forms": [
+      "maths"
+    ],
+    "text": "Maths is the British abbreviation of mathematics, where American English shortens the same word to math. The Economist is a British paper, so its house style uses maths throughout, alongside spellings such as modelling, rumour and cheque. Nothing about the subject differs; only the abbreviation does.",
+    "audio": true
+  },
+  {
+    "k": "discipline",
+    "t": "discipline",
+    "kind": "word",
+    "forms": [
+      "discipline"
+    ],
+    "text": "Discipline usually means self-control, or punishment for the lack of it. In academic writing it means something else: a field of study with its own methods and standards, such as history, chemistry or mathematics. Saying the announcement stirred controversy about how the discipline should work means mathematicians are now arguing about what ought to count as doing mathematics at all.",
+    "audio": true
+  },
+  {
+    "k": "purse",
+    "t": "purse",
+    "kind": "word",
+    "forms": [
+      "purse"
+    ],
+    "text": "A purse is usually a small bag for carrying money, but the word also names the money itself when it is put up as a prize — the purse in a boxing match or a horse race is what the winner takes home. That is the sense here: solving one of the seven problems earns a purse of one million dollars. The meaning dates from when prize money really was handed over in a bag.",
+    "audio": true
+  },
+  {
+    "k": "conquered",
+    "t": "conquered",
+    "kind": "word",
+    "forms": [
+      "conquered"
+    ],
+    "text": "To conquer is to defeat something and take control of it, most literally an army or a country. Applied to problems, diseases and mountains it keeps the flavour of a long struggle finally won: doctors conquered polio, climbers conquered Everest. Saying OpenAI had conquered another Millennium problem casts a century of failed attempts as a siege that has just been broken.",
+    "audio": true
+  },
+  {
+    "k": "capture",
+    "t": "capture",
+    "kind": "word",
+    "forms": [
+      "capture"
+    ],
+    "text": "Outside science, to capture is to catch something and hold it. Applied to equations, descriptions or photographs it means to pin the essential thing down so accurately that nothing important is left out — equations that capture the flow of fluids reproduce how real fluids actually behave. It is high praise in mathematics, and worth noticing, because equations that capture something are not the same as equations that merely approximate it.",
+    "audio": true
+  },
+  {
+    "k": "fluid",
+    "t": "fluid",
+    "kind": "word",
+    "forms": [
+      "fluid",
+      "fluids"
+    ],
+    "text": "In everyday speech a fluid means a liquid, but in physics a fluid is anything that flows and takes the shape of its container, which includes gases as well as liquids. That is why one set of equations covers air moving over a wing, oil forced through a pipe and plasma circulating inside a star: to a physicist all three are fluids. Holding on to the wider sense stops this problem looking like a question only about water.",
+    "audio": true
+  },
+  {
+    "k": "harness",
+    "t": "harness",
+    "kind": "word",
+    "forms": [
+      "harness"
+    ],
+    "text": "A harness is the set of straps that hitches a horse to a cart, and as a verb to harness something is to attach it to work you want done — to bring a powerful force under control and put it to use. People harness wind, sunlight, anger and now AI. Saying mathematicians have a good grasp of how to harness these equations practically means they get real engineering out of them without fully understanding them.",
+    "audio": true
+  },
+  {
+    "k": "properties",
+    "t": "properties",
+    "kind": "word",
+    "forms": [
+      "properties"
+    ],
+    "text": "Property most often means something you own, but in maths and science the properties of a thing are its permanent characteristics — the features it has no matter who is looking. Water's properties include its boiling point and its density; an equation's properties include whether its solutions always stay finite. This whole problem concerns a property of the Navier-Stokes equations, not any particular river or aeroplane.",
+    "audio": true
+  },
+  {
+    "k": "prove",
+    "t": "prove",
+    "kind": "word",
+    "forms": [
+      "prove"
+    ],
+    "text": "In ordinary use, proving something means producing convincing evidence. Mathematics is stricter: a proof is an argument that leaves no possible exception, covering every case at once. That strictness explains the odd stalemate described here — mathematicians could not prove singularities never occur, and could not find one either, so the question stayed open for a century. Notice the asymmetry, which is useful everywhere: proving a universal claim takes an argument, but demolishing one takes a single counterexample.",
+    "audio": true
+  },
+  {
+    "k": "open",
+    "t": "open",
+    "kind": "word",
+    "forms": [
+      "open"
+    ],
+    "text": "To mathematicians and scientists, an open problem is one nobody has solved yet — open in the sense of an unresolved case rather than an unlocked door. Setting the agents to work on the open Millennium problems means the six of the seven still unanswered. The same use turns up in open question and open case.",
+    "audio": true
+  },
+  {
+    "k": "claims",
+    "t": "claims",
+    "kind": "word",
+    "forms": [
+      "claims"
+    ],
+    "text": "When a news story says a company claims something, rather than says or shows it, the wording is deliberate: a claim is an assertion someone has put forward that the writer is not vouching for. Reporters use it to stay accurate about who is doing the asserting. Watch this piece switch between announced, says and claims — each switch is a small signal about how much has actually been established.",
+    "audio": true
+  },
+  {
+    "k": "model",
+    "t": "model",
+    "kind": "word",
+    "forms": [
+      "model",
+      "models"
+    ],
+    "text": "In artificial intelligence a model is the trained program itself: an enormous set of adjustable numbers, tuned by working through mountains of text until it is good at continuing whatever it is shown. Scientists began training a new model and the agents were powered by it, which means every one of those agents was the same model running under different instructions. The word also keeps its older scientific sense, a simplified description of something real, which is what modelling how air flows over a wing means.",
+    "audio": true
+  },
+  {
+    "k": "chaotic",
+    "t": "chaotic",
+    "kind": "word",
+    "forms": [
+      "chaotic"
+    ],
+    "text": "In everyday use chaotic just means wildly disordered. In physics it has an exact meaning: a chaotic system is one where a tiny change in the starting conditions leads to a completely different outcome, which is why weather cannot be forecast far ahead. Fluid flow is the classic chaotic system, so calling the argument over the prize as chaotic as the equations themselves is a joke aimed at readers who know that.",
+    "audio": true
+  },
+  {
+    "k": "talks",
+    "t": "talks",
+    "kind": "word",
+    "forms": [
+      "talks"
+    ],
+    "text": "In the plural and with no article in front of it, talks means formal negotiations between sides trying to reach an agreement — peace talks, pay talks, trade talks. So saying talks between OpenAI and Dr Buckmaster broke down claims something specific: the two were bargaining, presumably over collaborating or sharing credit, and the bargaining failed. It is a far stronger word than a conversation.",
+    "audio": true
+  },
+  {
+    "k": "velocity",
+    "t": "velocity",
+    "kind": "word",
+    "forms": [
+      "velocity"
+    ],
+    "text": "In physics velocity is not simply a synonym for speed: speed is how fast something moves, while velocity is how fast and in which direction. A car going round a roundabout at a steady 30mph has constant speed but constantly changing velocity. Here the distinction matters less than the size — the fluid's velocity grows uncontrollably, with no limit at all, which is what makes the point a singularity.",
+    "audio": true
+  },
+  {
+    "k": "finite",
+    "t": "finite",
+    "kind": "word",
+    "forms": [
+      "finite"
+    ],
+    "text": "Finite means having an end or a limit; a finite amount of time is some definite stretch of it, however long. Its opposite, infinite, means without limit, and the gap between the two is the hinge of this entire problem: can the fluid's speed become infinite after only a finite amount of time has passed? Mathematicians attend to finite and infinite the way lawyers attend to the exact wording of a statute.",
+    "audio": true
+  },
+  {
+    "k": "density",
+    "t": "density",
+    "kind": "word",
+    "forms": [
+      "density"
+    ],
+    "text": "Density measures how much mass is packed into a given volume — lead is dense, foam is not. The problem specifies a fluid of fixed density, meaning one that cannot be squeezed into a smaller space, which is a good approximation for water and a poor one for air being shoved along by a jet engine. That specification is not a technicality: it is what makes the question precise enough to have a yes-or-no answer.",
+    "audio": true
+  },
+  {
+    "k": "plasma",
+    "t": "plasma",
+    "kind": "word",
+    "forms": [
+      "plasma"
+    ],
+    "text": "Plasma in a hospital means the liquid part of blood, but in physics it is a fourth state of matter beyond solid, liquid and gas: a gas heated so fiercely that electrons are stripped from its atoms, leaving a soup of charged particles. Stars are made of it, and so is the glow inside a neon sign. Because it flows, the same equations that describe oil in a pipe also describe plasma circulating inside the sun.",
+    "audio": true
+  },
+  {
+    "k": "autonomous",
+    "t": "autonomous",
+    "kind": "word",
+    "forms": [
+      "autonomous"
+    ],
+    "text": "Autonomous comes from Greek roots meaning self-governing, and it describes something that operates without being steered step by step from outside — an autonomous car, an autonomous region. Calling the agents a swarm of autonomous mathematicians means the scientists set the goal and the agents picked their own moves from there. The word carries a lot of weight in that sentence, because how autonomous they really were is part of what is in dispute.",
+    "audio": true
+  },
+  {
+    "k": "vortex",
+    "t": "vortex",
+    "kind": "word",
+    "forms": [
+      "vortex"
+    ],
+    "text": "A vortex is fluid spinning around a centre: the funnel above a bath drain, a whirlpool, the eye of a hurricane. Vortices are where fluid motion turns violent, because spinning can concentrate energy into a very small region. What the agents produced is a swirling vortex whose spin tightens until the speed at its centre runs away to infinity.",
+    "audio": true
+  },
+  {
+    "k": "allegedly",
+    "t": "allegedly",
+    "kind": "word",
+    "forms": [
+      "allegedly"
+    ],
+    "text": "Allegedly signals that what follows has been asserted by somebody but not established, and that the writer is reporting the assertion rather than endorsing it. Newspapers lean on it hardest in crime reporting, where calling someone a thief before a verdict would be both unfair and legally risky. With the Millennium problem allegedly solved keeps exactly that distance: OpenAI says it is solved, and mathematicians have not agreed yet.",
+    "audio": true
+  },
+  {
+    "k": "took-stock",
+    "t": "took stock of",
+    "kind": "phrase",
+    "forms": [
+      "took stock of"
+    ],
+    "text": "To take stock of something is to stop and assess where things stand, the way a shop counts the goods on its shelves. It implies a deliberate survey rather than a glance. The Clay Mathematics Institute took stock of what mathematicians knew and did not know, and the seven Millennium problems were the list that survey produced.",
+    "audio": true
+  },
+  {
+    "k": "bottle-up",
+    "t": "bottle up",
+    "kind": "phrase",
+    "forms": [
+      "bottle this one up"
+    ],
+    "text": "To bottle something up normally means keeping a feeling shut inside instead of letting it out, as in bottling up anger. Used of a problem, the picture shifts to catching something slippery and sealing it in a container where it can finally be examined. There is a pun buried in it here, since the thing being bottled is a set of equations about fluids.",
+    "audio": true
+  },
+  {
+    "k": "break-down",
+    "t": "break down",
+    "kind": "phrase",
+    "forms": [
+      "break down",
+      "broke down"
+    ],
+    "text": "Break down means to stop working, and this article uses it twice in two different registers. The equations break down at a singularity, meaning they stop producing usable answers; talks between OpenAI and Dr Buckmaster broke down, meaning the negotiations collapsed with no agreement. Both senses are common, and which one is meant depends on whether the thing that failed is a machine, an argument or a discussion.",
+    "audio": true
+  },
+  {
+    "k": "stepping-stone",
+    "t": "stepping-stone",
+    "kind": "phrase",
+    "forms": [
+      "stepping-stone"
+    ],
+    "text": "A stepping-stone is one of a line of stones you cross a stream on, and figuratively it is an intermediate achievement that carries you toward a bigger one — a summer job as a stepping-stone to a career. Noting the agents' first result as a stepping-stone tells you the scientists read it as progress toward the real target rather than the target itself. That is why they redirected everything onto Navier-Stokes.",
+    "audio": true
+  },
+  {
+    "k": "cheque-in-the-post",
+    "t": "a cheque in the post",
+    "kind": "phrase",
+    "forms": [
+      "cheque in the post"
+    ],
+    "text": "A cheque is a written order telling a bank to pay someone, spelled check in American English, and the cheque is in the post is a stock phrase for a payment supposedly on its way — often said by people who are stalling. Asking whether OpenAI should expect a cheque in the post is a dry way of asking whether the million-dollar prize is actually coming. The answer turns out to be complicated.",
+    "audio": true
+  },
+  {
+    "k": "final-hurdle",
+    "t": "the final hurdle",
+    "kind": "phrase",
+    "forms": [
+      "the final hurdle"
+    ],
+    "text": "A hurdle is a barrier a runner jumps over, so the final hurdle is the last obstacle before the finish, with the sense that clearing it settles the race. Asking whether AI leaps the final hurdle frames a century of human work as the earlier hurdles and the machine's contribution as the last jump. That framing is exactly what the argument over credit is about.",
+    "audio": true
+  },
+  {
+    "k": "rule-out",
+    "t": "rule out",
+    "kind": "phrase",
+    "forms": [
+      "rule out"
+    ],
+    "text": "To rule something out is to eliminate it as a possibility, the way a detective rules out a suspect. Cannot rule out is therefore a careful admission rather than a denial: the possibility is still on the table and the speaker has nothing that removes it. When an organisation says it cannot rule something out, read that as the closest thing to a concession you are likely to get.",
+    "audio": true
+  },
+  {
+    "k": "clay-mathematics-institute",
+    "t": "the Clay Mathematics Institute",
+    "kind": "name",
+    "forms": [
+      "Clay Mathematics Institute"
+    ],
+    "text": "The Clay Mathematics Institute is a private American foundation set up in 1998 by the businessman Landon Clay to support mathematical research. Its most famous act was drawing up the seven Millennium Prize problems in 2000 and attaching a million-dollar prize to each. Prizes like these are one way private money shapes research: they cannot make anyone work on a problem, but they advertise which problems the field considers most important.",
+    "audio": true
+  },
+  {
+    "k": "millennium-prize-problems",
+    "t": "the Millennium Prize problems",
+    "kind": "name",
+    "forms": [
+      "Millennium Prize problems",
+      "Millennium problems",
+      "Millennium problem"
+    ],
+    "text": "The Millennium Prize problems are seven unsolved mathematics questions chosen in 2000 as the most important facing the field, each carrying a one-million-dollar prize. Before this announcement only one had fallen: the Poincaré conjecture, proved by the Russian mathematician Grigori Perelman, who then turned down both the money and the discipline's highest honour, the Fields Medal. The list works as mathematics' public scoreboard, which is why a claim to have cleared one draws attention like this.",
+    "audio": true
+  },
+  {
+    "k": "navier-stokes",
+    "t": "the Navier-Stokes equations",
+    "kind": "name",
+    "forms": [
+      "Navier-Stokes"
+    ],
+    "text": "The Navier-Stokes equations, written in the nineteenth century by Claude-Louis Navier and George Stokes, describe how fluids move by applying Newton's laws of motion to every point in a flow. Engineers depend on them daily in aircraft design, weather forecasting and the study of blood flow, almost always by having computers grind out approximate answers. The Millennium problem is not about using them but about whether their solutions always stay sensible, and nobody has been able to settle that.",
+    "audio": true
+  },
+  {
+    "k": "openai",
+    "t": "OpenAI",
+    "kind": "name",
+    "forms": [
+      "OpenAI"
+    ],
+    "text": "OpenAI is the San Francisco company behind ChatGPT, founded in 2015 and now among the largest AI firms in the world. It is the party making the claim in this story, which is worth keeping in mind while reading: the announcement comes from the company whose abilities it advertises, not from an independent referee.",
+    "audio": true
+  },
+  {
+    "k": "anthropic",
+    "t": "Anthropic",
+    "kind": "name",
+    "forms": [
+      "Anthropic"
+    ],
+    "text": "Anthropic is an American AI company founded in 2021 by former OpenAI staff, and the maker of the Claude models. It matters here mainly because it turns the story into a rivalry: one of the two mathematicians racing OpenAI to a solution works there.",
+    "audio": true
+  },
+  {
+    "k": "ai-agents",
+    "t": "AI agents",
+    "kind": "name",
+    "forms": [
+      "AI agents",
+      "agents"
+    ],
+    "text": "An AI agent is a language model handed a goal, some tools and permission to take steps on its own — reading web pages, running code, messaging other agents — instead of answering a single question and stopping. Here around ten thousand of them worked the same problem for 88 hours and exchanged 2.7m messages. The shift is one of scale rather than cleverness: no single agent is smarter than a chatbot, but a swarm of them can grind through far more attempts than any group of humans could.",
+    "audio": true
+  },
+  {
+    "k": "training-data",
+    "t": "training data",
+    "kind": "name",
+    "forms": [
+      "training data"
+    ],
+    "text": "Training data is the pile of material a language model learns from — books, code, web pages — which it works through over and over while its internal numbers are tuned to predict what comes next. Nothing in that pile arrives labelled as a test, so if the solution to a problem happens to be inside it, the model can later reproduce that solution and appear to have worked it out. That is why the suggestion that the two mathematicians' work snuck into the training data is so damaging to the claim.",
+    "audio": true
+  },
+  {
+    "k": "singularity",
+    "t": "singularity",
+    "kind": "name",
+    "forms": [
+      "singularity",
+      "singularities"
+    ],
+    "text": "In mathematics and physics a singularity is a point where some quantity in your equations stops having a finite value and the equations stop giving usable answers; dividing one by a number that shrinks toward zero is the simplest example. Physicists meet the word again at the centre of a black hole and at the Big Bang. It has nothing to do with the singularity AI enthusiasts talk about, which means a hypothetical moment when machine intelligence overtakes human intelligence.",
+    "audio": true
+  }
+]

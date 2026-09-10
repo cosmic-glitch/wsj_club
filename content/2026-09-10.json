@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-10",
+  "title": "OpenAI's apparent maths breakthrough raises profound questions",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/09/openais-apparent-maths-breakthrough-raises-profound-questions",
+  "articlePageUrl": "/articles/2026-09-10.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "elude",
+      "partOfSpeech": "verb",
+      "pronunciation": "ih-LOOD",
+      "articleQuote": "a thorough understanding of the properties of the equations themselves eludes them",
+      "meaning": "To **elude** something is to slip out of its reach — to stay just beyond whoever is trying to catch, find, or understand you. It began as a word about physical escape, the way a suspect eludes the police, and it is used just as often for things that have no legs at all: an answer, a name, a solution, a championship. Here what is doing the escaping is knowledge. Mathematicians can *use* the Navier-Stokes equations perfectly well to design aircraft wings and pipelines, but a full understanding of how those equations behave has stayed out of their grasp for more than a century.",
+      "examples": [
+        "She knew the actor’s name a second ago, and now it completely eludes her.",
+        "The team wins its league every year, but a state title has eluded them for a decade."
+      ]
+    },
+    {
+      "word": "pertinent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "PUR-tuh-nunt",
+      "articleQuote": "The spat raises questions that will become ever more pertinent as AI is unleashed on humanity’s many unsolved problems.",
+      "meaning": "Something **pertinent** bears directly on the matter being discussed — it is not merely interesting, it belongs to the question actually on the table. It shares a root with *pertain*, “to belong to”, which is a useful clue: a pertinent fact is one the argument cannot ignore. The Economist is making a claim about scale with it. The fight over who deserves credit for the Navier-Stokes result is not a one-off squabble between a company and a professor; as AI is turned loose on more of the problems humans have never cracked, that same question will bear on more and more of science.",
+      "examples": [
+        "In an argument about later school start times, how much sleep teenagers actually need is the most pertinent fact you can bring.",
+        "He talked for five minutes without saying one thing pertinent to the question the teacher had asked."
+      ]
+    },
+    {
+      "word": "inadvertently",
+      "partOfSpeech": "adverb",
+      "pronunciation": "in-uhd-VUR-tunt-lee",
+      "articleQuote": "might have inadvertently snuck into their models’ training data",
+      "meaning": "To do something **inadvertently** is to do it without meaning to — by accident or inattention rather than on purpose. Buried inside it is the root *advert*, “to turn your attention toward”, so acting inadvertently is literally acting without having turned your attention to what you were doing. That is why writers reach for it when they want to describe a mistake without accusing anyone of bad faith, and it is doing exactly that job here: nobody is claiming OpenAI deliberately trained its model on two rival mathematicians’ work, only that the work may have found its way in unnoticed.",
+      "examples": [
+        "She inadvertently sent the whole group chat a screenshot meant for one friend.",
+        "By propping the back door open, he inadvertently let the dog out."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Singularity",
+      "articleQuote": "Such a malfunction would come in the form of a singularity: a point where a quantity, such as the fluid’s speed, becomes infinite and the equations break down.",
+      "meaning": "A century-old $1m question about how air and water move turns out to hinge on whether a number is allowed to run away to infinity. In mathematics and physics, a **singularity** is a point where some quantity in your equations no longer has a finite value — it grows without bound — and the equations stop returning usable answers.\n\nThe clearest example fits on a scrap of paper. Divide 1 by a number that shrinks toward zero: 1 ÷ 0.1 is 10, 1 ÷ 0.01 is 100, 1 ÷ 0.000001 is a million. Keep shrinking the bottom number and the result climbs with no ceiling, and at exactly zero there is no answer at all — no number times zero gives you 1. Zero is a singularity of 1/x. Notice what did *not* happen: no paper tore. What failed was the description.\n\nHold on to that distinction, because it is the whole point of the Millennium problem. The Navier-Stokes equations describe how fluids flow, and the problem asks whether an ordinary fluid obeying them can reach a moment where its speed at some point becomes infinite. Real water never moves infinitely fast. So a singularity here would not mean water doing something impossible — it would mean the equations we use to model water give out before the water does. What OpenAI’s agents say they built is exactly such a case: a swirling vortex whose velocity grows uncontrollably.\n\nPhysicists meet the same word at the centre of a black hole and at the Big Bang, and it carries the same warning every time. When a model hands you infinity, the honest reading is usually not “infinity happens here” but “this model has reached the edge of where it applies”."
+    },
+    {
+      "name": "Data contamination",
+      "articleQuote": "There is also the troubling question of whether Dr Buckmaster’s and Dr Alpöge’s work, which made use of OpenAI’s products, might have inadvertently snuck into their models’ training data",
+      "meaning": "Asked the most awkward question about its own proof, OpenAI’s answer is that it cannot rule it out. In machine learning that question has a name — **data contamination** — and it means the answer a model is being tested on was already sitting somewhere in the material the model learned from.\n\nA language model is built by running it through an enormous pile of text — books, code, web pages — and adjusting its internal numbers over and over until it is good at continuing whatever it is shown. Nothing in that pile arrives labelled “this part is the test”. So if a worked solution happens to be in there, the model can later produce that solution, and from the outside the output looks the same as if it had been worked out from scratch.\n\nPicture revising for a maths final from a practice packet, and, unknown to you, someone had slipped the real exam’s answer key into it. You score 98. The score is real in the sense that you wrote those answers yourself — it just measures something other than what everyone believes it measures, and from the inside you cannot tell the difference. That is the position OpenAI is in. Dr Buckmaster and Dr Alpöge used OpenAI’s products while building their own near-solution, and if that material reached the training data, the swarm of agents may have been partly retrieving a proof instead of finding one.\n\nThe habit worth carrying out of this story: whenever something is reported to have aced a test, ask what it had already been shown. A result only counts as new if the answer was not already in the room."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did OpenAI announce on September 8th?",
+      "options": [
+        "That its AI agents had found a singularity in the Navier-Stokes equations, apparently cracking a Millennium Prize problem",
+        "That it had proved singularities in the Navier-Stokes equations can never exist",
+        "That it had built a model able to predict the weather exactly",
+        "That it had won the $1m prize for the one Millennium problem already solved"
+      ],
+      "answerIndex": 0,
+      "explanation": "After 88 hours, about 10,000 agents produced a swirling vortex whose velocity grows uncontrollably — a singularity — which is what the Navier-Stokes Millennium problem asks about."
+    },
+    {
+      "question": "In this article, what does it mean to say the Navier-Stokes equations have a singularity?",
+      "options": [
+        "The equations give two different answers for the same fluid",
+        "The fluid physically tears itself into separate pieces",
+        "A quantity such as the fluid’s speed becomes infinite, so the equations stop giving usable answers",
+        "The equations can only be solved by a computer, never by hand"
+      ],
+      "answerIndex": 2,
+      "explanation": "A singularity is a point where a quantity grows without bound and the description breaks down — the model gives out, not the water."
+    },
+    {
+      "question": "“A thorough understanding of the properties of the equations themselves eludes them.” What does eludes mean here?",
+      "options": [
+        "Bores them",
+        "Stays out of their reach",
+        "Deliberately misleads them",
+        "Belongs to only a few of them"
+      ],
+      "answerIndex": 1,
+      "explanation": "To elude someone is to slip out of their grasp — here it is an understanding, not a person, doing the escaping."
+    },
+    {
+      "question": "Why does the article call it troubling that the two mathematicians’ work may have inadvertently snuck into OpenAI’s training data?",
+      "options": [
+        "It would mean the mathematicians had broken the Millennium Prize rules",
+        "It would prove the singularity does not really exist",
+        "It would make the Navier-Stokes equations useless for designing aircraft",
+        "It would mean the agents may have been reproducing a solution they had already been shown rather than working it out"
+      ],
+      "answerIndex": 3,
+      "explanation": "That is data contamination: if the answer was already in the material the model learned from, the result no longer shows that the agents solved anything new."
+    },
+    {
+      "question": "Which sentence uses pertinent correctly?",
+      "options": [
+        "She raised a pertinent objection: the plan assumes a budget the club does not have.",
+        "The witness gave a pertinent answer that had nothing to do with the question.",
+        "The pertinent weather made it impossible to finish the game.",
+        "He was very pertinent about handing the essay in before midnight."
+      ],
+      "answerIndex": 0,
+      "explanation": "Pertinent means bearing directly on the matter under discussion, which the budget objection does."
+    }
+  ]
+}
