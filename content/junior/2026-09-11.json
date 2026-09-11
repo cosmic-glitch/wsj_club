@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-11",
+  "title": "Warming seas are enticing octopus to British waters",
+  "articleUrl": "https://www.economist.com/britain/2026/09/07/warming-seas-are-enticing-octopus-to-british-waters",
+  "articlePageUrl": "/articles/junior/2026-09-11.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "infamous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "IN-fuh-mus",
+      "articleQuote": "Yet one infamous species is absent.",
+      "meaning": "If something is **infamous**, it is well known — but known for something bad. That is the difference from *famous*: a famous singer is known for great songs, an infamous one for a scandal. At Brixham the octopus is infamous among the fishermen because it gets into their pots and eats the crab and lobster they were after.",
+      "examples": [
+        "Our canteen is infamous for its Monday pasta, which nobody will touch.",
+        "He was infamous at school for a week after scoring a goal against his own team."
+      ]
+    },
+    {
+      "word": "withstand",
+      "partOfSpeech": "verb",
+      "pronunciation": "with-STAND",
+      "articleQuote": "some long-term aquatic residents are finding it hard to withstand the heat",
+      "meaning": "To **withstand** something is to take it without breaking, giving way, or being damaged. You withstand a force pressing on you — heat, cold, wind, weight. In the article, cod and haddock cannot withstand the warmer water: above a certain temperature their bodies no longer work properly, so they do not stay.",
+      "examples": [
+        "Our old tent withstood a whole night of heavy rain without a single leak.",
+        "These boots are built to withstand deep snow, so my feet stayed dry all day."
+      ]
+    },
+    {
+      "word": "livelihood",
+      "partOfSpeech": "noun",
+      "pronunciation": "LYVE-lee-hood",
+      "articleQuote": "many others have seen the crab and lobster that their livelihoods rely on vanish",
+      "meaning": "Your **livelihood** is the work you earn your living from — the money that pays for your food and your home, not just a job you could drop tomorrow. The word points at the thing you depend on. For the Brixham fishermen, crab and lobster *are* the livelihood, so when those animals vanish from the pots, their income vanishes with them.",
+      "examples": [
+        "The flood wrecked the farm, and with it my uncle's livelihood.",
+        "That little bakery has been her family's livelihood for thirty years."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Overfishing",
+      "articleQuote": "The heat has helped to lure back bluefin tuna, which were once abundant off the British coast before overfishing drove them away.",
+      "meaning": "Bluefin tuna were once everywhere off the British coast. Then they were gone — and the sea itself had not changed. People had simply caught them faster than new tuna were being born. Fisheries scientists call this **overfishing**.\n\nHere is how it works. A fish population is not a fixed pile of fish. Every year some are born and some die, and the number born depends on how many adults are left to breed. If boats take fewer fish each year than are born, the population holds steady and you can go on fishing forever. If boats take more, fewer adults are left, so fewer young are born the next year, so there are fewer adults the year after that. Each year of over-catching makes the next year worse.\n\nPicture a bowl at home that gets refilled with ten sweets every Sunday. Take ten a week and the bowl never runs out. Take fifteen and it is empty within a month. Fish are harsher than the bowl, though, because the fish *are* the refill. Take too many adults and next Sunday's refill is smaller too.\n\nThat is the part worth remembering. Overfishing does not just shrink today's catch — it shrinks the thing that makes next year's."
+    },
+    {
+      "name": "Sea-surface temperature",
+      "articleQuote": "The mean sea-surface temperature around England today is about 2.2°C warmer than average conditions over the previous 40 years.",
+      "meaning": "Read that sentence closely, because it does not say what people often think it says. It does not say the sea off England is 2.2°C. It says it is 2.2°C *warmer than* something — \"average conditions over the previous 40 years\". The comparison is the measurement.\n\n**Sea-surface temperature** is the temperature of the ocean's top layer, roughly the first few metres. Climate scientists watch that layer because it is the part the sun heats directly and the part most sea creatures live in. Satellites read it from above and floating buoys read it from in the water, day and night, all over the world. Average all the readings around England and you get a single number — the *mean*.\n\nBut one number on its own tells you nothing. Is 17°C warm for the sea off England? You cannot say until you know what it normally is. So scientists first work out the ordinary value by averaging many past years — 40 of them here. That long average is called the **baseline**. Every new reading is then reported as the gap from the baseline, and the gap is what shows whether anything is changing.\n\nYou already think this way about your own results. Getting 18 out of 25 on a test means nothing by itself. It means a great deal the moment you know you usually get 12. A baseline is what turns a number into news."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article's subtitle says \"some fish are being pushed away\". Which fish does it name as retreating north, unable to withstand the warmer water?",
+      "options": [
+        "Cod and haddock",
+        "Sardines and sea bass",
+        "Bluefin tuna",
+        "Octopus and squid"
+      ],
+      "answerIndex": 0,
+      "explanation": "Bryce Stewart explains that cooler-water species such as cod and haddock are at the limits of what they are adapted to, so as the sea warmed they moved north."
+    },
+    {
+      "question": "At Brixham's fish market the octopus is called an \"infamous\" species. What does infamous mean?",
+      "options": [
+        "So rare that few fishermen have ever seen one",
+        "Well known, but for bad reasons",
+        "Admired and celebrated by the fishermen",
+        "Not yet given an official scientific name"
+      ],
+      "answerIndex": 1,
+      "explanation": "Infamous means well known for something bad — here, for getting into lobster pots and eating the shellfish the fishermen were after."
+    },
+    {
+      "question": "Many Brixham fishermen have watched the crab and lobster \"that their livelihoods rely on\" vanish. What does that tell you about their situation?",
+      "options": [
+        "A hobby of theirs has become less enjoyable",
+        "They have had their fishing boats taken away",
+        "The animals they earn their living from are disappearing",
+        "They now have to pay more for crab at the shop"
+      ],
+      "answerIndex": 2,
+      "explanation": "A livelihood is the work you earn your living from, so losing the crab and lobster means losing their income, not merely their catch."
+    },
+    {
+      "question": "Bluefin tuna once disappeared from British waters because of overfishing. What does overfishing mean?",
+      "options": [
+        "Catching fish faster than the population can replace itself by breeding",
+        "Fishing in water that has grown too warm for the fish to survive",
+        "Catching fish that are still too small to be worth eating",
+        "Using types of net that are illegal in that country"
+      ],
+      "answerIndex": 0,
+      "explanation": "Overfishing means the catch outruns the birth rate, so fewer adults are left to breed and the population shrinks further every year."
+    },
+    {
+      "question": "The article reports the sea around England as \"about 2.2°C warmer than average conditions over the previous 40 years\". Why report the gap from a long-run average instead of just the temperature?",
+      "options": [
+        "Because thermometers in the sea cannot measure an exact temperature",
+        "Because a single temperature tells you nothing unless you know what is normal there",
+        "Because the ocean has no real temperature at any one moment",
+        "Because 40 years is exactly how long satellites have existed"
+      ],
+      "answerIndex": 1,
+      "explanation": "A number like 17°C is meaningless on its own; comparing it with a long-run baseline is what reveals whether things have actually changed."
+    }
+  ]
+}
