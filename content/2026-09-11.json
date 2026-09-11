@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-11",
+  "title": "The economic folly of free buses",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/09/10/the-economic-folly-of-free-buses",
+  "articlePageUrl": "/articles/2026-09-11.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "proffer",
+      "partOfSpeech": "verb",
+      "pronunciation": "PROF-er",
+      "articleQuote": "Advocates of the idea proffer three main arguments.",
+      "meaning": "To proffer something is to hold it out and offer it — originally a hand, a gift, a cup — and in formal writing it nearly always means offering an idea, an argument, or a piece of evidence for other people to take or refuse. It carries a faint shrug that plain *offer* doesn't: what is proffered has been put on the table, not proved. That shrug is doing quiet work here, because the three arguments supporters of free transport proffer are exactly the three the rest of the article takes apart one by one.",
+      "examples": [
+        "When the coach asked who had cracked the gym window, Devin proffered an explanation that nobody quite believed.",
+        "Before a debate round, each team proffers its own definition of the motion, and the judges decide which one they will work from."
+      ]
+    },
+    {
+      "word": "patchy",
+      "partOfSpeech": "adjective",
+      "pronunciation": "PATCH-ee",
+      "articleQuote": "Evidence is also patchy when it comes to deterring car use.",
+      "meaning": "Something patchy exists in patches — there in one spot, missing in the next: patchy fog, patchy phone reception, a patchy game that is brilliant after half-time and sleepy before it. Said of evidence or research, which is how you will meet the word most often in serious journalism, it means the studies exist but do not line up: a few find an effect, a few find almost none, and some places have never been studied at all. That is the article's verdict on whether free transport actually gets people out of their cars — not that the answer is no, but that the findings are too scattered to support a confident yes.",
+      "examples": [
+        "Wi-Fi on the school bus is patchy: fine at the first stop, gone by the second traffic light.",
+        "Her attendance at practice was patchy all season, which is why she started the final on the bench."
+      ]
+    },
+    {
+      "word": "bane",
+      "partOfSpeech": "noun",
+      "pronunciation": "BAYN",
+      "articleQuote": "free transport can be both a boon (it led to more walking in Chile) and a bane (in Estonia and Germany, it came at the expense of walking and cycling)",
+      "meaning": "A bane is the thing that ruins or spoils something — a lasting source of trouble rather than a passing annoyance. The word is old and once meant an actual poison, which is why it still lands harder than *nuisance* and why the poisonous plant wolfsbane is named that way; today you meet it most often in the set phrase *the bane of someone's life*. Here it is deliberately paired with its opposite, a **boon** — a benefit, a gift — to make one balanced point: free transport got Chileans walking more, while in Estonia and Germany it did the reverse, pulling people off their own feet and bicycles and onto buses and trains.",
+      "examples": [
+        "Group projects are the bane of my existence: one person does the work and five people collect the grade.",
+        "Rain on the morning of the meet was a boon for the distance runners and a bane for the sprinters."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Price elasticity of demand",
+      "articleQuote": "public transport turns out to have what economists call low price elasticity of demand",
+      "meaning": "Tallinn made its buses and trams free — not cheaper, *free* — and the number of trips rose by just over 1%. Cutting a price all the way to zero and getting almost nothing back is odd enough that economics keeps a name for it: **price elasticity of demand**, the measure of how much the quantity people buy responds when the price moves.\n\nTake the name apart. *Demand* is how much of something people actually buy. *Elasticity* is how stretchy that amount is when you pull on the price — an elastic waistband gives a lot, a leather belt barely moves. So demand is **elastic** when a small price cut brings a big jump in sales, and **inelastic** when you can slash the price and people buy about what they bought before. The number behind it is a simple division: the percentage change in how much is bought, divided by the percentage change in price. Drop the price by 100% and get 1% more trips, and the answer sits a hair above zero — about as inelastic as a market gets.\n\nThink about one bus ride. Whether you take it is hardly settled by the fare; it is settled by whether a bus goes where you are going, how long you will stand at the stop, and whether a car or a lift is available instead. The fare is one cost among several, and for most riders it is the small one — the waiting is the big one. That is why the price can fall to nothing and the crowd barely changes, and it is why the article keeps arguing that the same money buys more when it pays for *more buses* rather than cheaper ones: extra frequency cuts the cost that was actually stopping people.\n\nThe habit generalises far beyond buses. Whenever anyone proposes moving a price — a tax on sugary drinks, a tariff, a minimum wage, a concert ticket — the first question is not whether the new price is fairer but how much the quantity will really move. Cigarettes and insulin barely budge; one brand of cereal with five rivals on the same shelf budges enormously."
+    },
+    {
+      "name": "Carbon pricing",
+      "articleQuote": "the €9 programme reduced carbon emissions at a cost of €6,140 per tonne, a comically high figure next to the €85 per tonne in the European Union’s emissions-trading scheme",
+      "meaning": "Two numbers in this article do all the damage: €6,140 and €85. Both are prices for exactly the same thing — keeping one tonne of carbon dioxide out of the air — and Germany's cheap-ticket scheme paid about 72 times the going rate.\n\nThe machinery behind that comparison belongs to environmental economics, and it starts with weighing the gas. Carbon dioxide is counted in tonnes: burn a bit over 400 litres of petrol and you have put roughly one tonne of it into the atmosphere. In the European Union a power station, steel mill or airline cannot simply release that tonne. For every tonne it emits it must hand over one permit, and the EU issues only a capped number of permits each year, shrinking the cap over time. A firm that can cut its emissions cheaply cuts them and sells the permits it no longer needs; a firm facing expensive cuts buys permits instead. Whatever one permit changes hands for — lately about €85 — is the **carbon price**, and that is the entire purpose of an **emissions-trading scheme**: it attaches real money to a tonne of CO₂, so the cheapest cuts get made first.\n\nThat price then doubles as a ruler. Any climate policy — free buses, insulating houses, subsidising heat pumps — can be divided out as *what it cost* over *tonnes it kept out of the air*, which gives a cost per tonne you can lay beside any other policy. Germany's €9 ticket came out at about €6,140 per tonne avoided, because the money went to millions of people who were going to take the train anyway and shifted only a sliver of car traffic. The same euros spent buying permits on the EU market and cancelling them, so that nobody could ever use them, would have kept roughly 72 times as much carbon out of the air.\n\nSo when a policy is sold as green, the question worth asking is not whether it cuts emissions at all, but what each tonne cost — and what the same money would have bought somewhere else."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Advocates proffer three main arguments for free public transport. What is the article's verdict on them?",
+      "options": [
+        "All three are simply wrong, and free transport achieves nothing whatsoever.",
+        "All three have merit, but none justifies free fares — cheaper tools like pricing road use, or just running more buses, do the job better.",
+        "All three are correct, and the results from Tallinn and Germany prove it.",
+        "The arguments hold in Europe but cannot apply in the United States."
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says plainly that \"All three arguments have merit\" but that none of them justifies giving transport away, then points to congestion pricing, pollution rules and more frequent service as better buys."
+    },
+    {
+      "question": "Public transport in Tallinn has been free since 2012, and the number of trips rose by just over 1%. What does that tell an economist?",
+      "options": [
+        "Demand for public transport is highly elastic, so small price changes swing ridership sharply.",
+        "Demand for public transport has low price elasticity — the quantity barely responds even to a huge price cut.",
+        "Tallinn's buses were already full, so no additional passengers could physically fit.",
+        "Estonians drive instead because petrol there is unusually cheap."
+      ],
+      "answerIndex": 1,
+      "explanation": "Cutting the fare all the way to zero and getting only about 1% more trips means quantity hardly responds to price, which is what inelastic demand means."
+    },
+    {
+      "question": "A German analysis found the €9 ticket cut carbon at €6,140 per tonne, against about €85 per tonne in the EU's emissions-trading scheme. Why is that comparison damaging?",
+      "options": [
+        "It shows the €9 ticket was priced too high for ordinary passengers to afford.",
+        "It shows Germany emitted 72 times more carbon than EU rules permit.",
+        "It shows the same money, spent through the permit market, could have kept roughly 72 times as much carbon out of the air.",
+        "It shows the EU's carbon price is set too low to change any behaviour."
+      ],
+      "answerIndex": 2,
+      "explanation": "Cost per tonne avoided is a common ruler for climate policies, and €6,140 beside €85 means the ticket bought very little emissions reduction per euro spent."
+    },
+    {
+      "question": "The article says the \"evidence is also patchy\" on whether free transport deters car use. What does patchy mean here?",
+      "options": [
+        "The evidence has been deliberately withheld by governments.",
+        "The evidence is uneven and inconsistent — some studies find an effect, others find little, and some places were never studied.",
+        "The evidence is too recent to have been published anywhere.",
+        "The evidence is overwhelming and all points the same way."
+      ],
+      "answerIndex": 1,
+      "explanation": "Patchy means present in some spots and missing in others; a review of more than 150 papers found little substitution away from driving, and the estimates that do exist carry high uncertainty."
+    },
+    {
+      "question": "For public health, the article calls free transport \"both a boon and a bane\". What does it mean by that?",
+      "options": [
+        "It raised walking in Chile, but in Estonia and Germany it came at the expense of walking and cycling.",
+        "It improved air quality everywhere while making train delays worse everywhere.",
+        "It helped the elderly but harmed the young, in every country studied.",
+        "It was healthy in the short run and unhealthy in the long run, in every country studied."
+      ],
+      "answerIndex": 0,
+      "explanation": "A boon is a benefit and a bane is the thing that spoils it: free rides got Chileans walking more, while Estonians and Germans walked and cycled less because they rode instead."
+    }
+  ]
+}
