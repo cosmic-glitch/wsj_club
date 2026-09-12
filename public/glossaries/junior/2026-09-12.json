@@ -1,0 +1,571 @@
+[
+  {
+    "k": "debris",
+    "t": "debris",
+    "kind": "vocab",
+    "pron": "duh-BREE",
+    "forms": [
+      "debris"
+    ],
+    "text": "Debris is the scattered bits and pieces left behind when something breaks apart, like branches after a storm. The s on the end is silent: you say it duh-BREE. Space debris means the dead satellites, spent rocket parts and paint flakes still circling Earth after decades of launches.",
+    "audio": true
+  },
+  {
+    "k": "projectile",
+    "t": "projectile",
+    "kind": "vocab",
+    "pron": "pruh-JEK-tul",
+    "forms": [
+      "projectiles",
+      "Projectiles"
+    ],
+    "text": "A projectile is an object that has been thrown, fired or launched and is now flying along on its own, like an arrow or a bullet. It comes from the same root as the word project, which once meant to throw forward. Here the projectiles are both the pea-sized pellets fired at test shields and the real bits of junk flying around in orbit.",
+    "audio": true
+  },
+  {
+    "k": "conventional",
+    "t": "conventional",
+    "kind": "vocab",
+    "pron": "kun-VEN-shuh-nul",
+    "forms": [
+      "conventional"
+    ],
+    "text": "Conventional means the usual way, the standard version that people already use rather than a new one. It is not praise and not a criticism, just a label for the familiar option. A conventional Whipple shield is the ordinary aluminium design engineers have built for decades.",
+    "audio": true
+  },
+  {
+    "k": "whipple-shield",
+    "t": "Whipple shield",
+    "kind": "name",
+    "forms": [
+      "Whipple shield",
+      "Whipple shields"
+    ],
+    "text": "A Whipple shield is a design for protecting spacecraft, named after the American astronomer Fred Whipple, who suggested it in 1947. It is two layers with a gap between them: a thin outer sheet that shatters whatever hits it, and a thicker inner wall that stops the pieces. Almost every idea in this article is either a Whipple shield or an attempt to get the same effect for less weight.",
+    "audio": true
+  },
+  {
+    "k": "odin-space",
+    "t": "Odin Space",
+    "kind": "name",
+    "forms": [
+      "Odin Space"
+    ],
+    "text": "Odin Space is a company in Santa Ana, California that makes sensors for spacecraft. Its product is a sticky strip that feels the vibration of a tiny impact and reports it, so operators finally learn what is hitting their satellites. Better data on what is actually up there is what would let engineers choose the right shield.",
+    "audio": true
+  },
+  {
+    "k": "atomic-6",
+    "t": "Atomic-6",
+    "kind": "name",
+    "forms": [
+      "Atomic-6"
+    ],
+    "text": "Atomic-6 is a company near Atlanta, Georgia that builds materials for spacecraft. It sells its armour tiles under the brand name Space Armor. Its boss, Trevor Smith, will not say exactly what the tiles are made of.",
+    "audio": true
+  },
+  {
+    "k": "kevlar",
+    "t": "Kevlar",
+    "kind": "name",
+    "forms": [
+      "Kevlar"
+    ],
+    "text": "Kevlar is a man-made fibre, invented at the DuPont company in 1965, that is extremely hard to tear. Woven into cloth it is what makes bullet-proof vests work, and it is also used in bike tyres, sails and spacecraft walls. It is light for its strength, which is why it keeps turning up wherever weight matters.",
+    "audio": true
+  },
+  {
+    "k": "nextel",
+    "t": "Nextel",
+    "kind": "name",
+    "forms": [
+      "Nextel"
+    ],
+    "text": "Nextel is a brand of ceramic that has been drawn out into fine threads and woven like cloth. That gives it something ordinary ceramic does not have: it can bend and drape instead of snapping. Paired with Kevlar it makes a shield that is hard on the outside and tough on the inside.",
+    "audio": true
+  },
+  {
+    "k": "european-space-agency",
+    "t": "European Space Agency",
+    "kind": "name",
+    "forms": [
+      "European Space Agency"
+    ],
+    "text": "The European Space Agency, usually shortened to ESA, is the space organisation run jointly by more than twenty European countries. It builds rockets and satellites and tracks what is in orbit, which is where this article's figures on space junk come from. It plays much the same role in Europe that NASA plays in America.",
+    "audio": true
+  },
+  {
+    "k": "gas-gun",
+    "t": "gas gun",
+    "kind": "name",
+    "forms": [
+      "gas gun"
+    ],
+    "text": "A gas gun is a laboratory machine that uses compressed gas, rather than gunpowder, to fire a small object at enormous speed. Scientists use one to copy in a lab what debris does to a satellite in orbit. The tests in this article fired pellets at 7.2 kilometres a second, many times faster than a rifle bullet.",
+    "audio": true
+  },
+  {
+    "k": "hurtling",
+    "t": "hurtling",
+    "kind": "word",
+    "forms": [
+      "HURTLING",
+      "Hurtling",
+      "hurtling"
+    ],
+    "text": "To hurtle is to move very fast and without control, the way a boulder hurtles down a hillside. The word carries a hint of danger, which is the point of opening the article with it. Debris hurtling around Earth is not gently drifting; it is racing along at seven kilometres a second.",
+    "audio": true
+  },
+  {
+    "k": "poses",
+    "t": "pose",
+    "kind": "word",
+    "forms": [
+      "poses"
+    ],
+    "text": "You probably know pose as holding still for a photo, but it has a second meaning: to pose a threat, a problem or a question is to present one. Nothing is being arranged or posed for a picture. Saying that junk poses a greater threat than space rocks simply means it is the bigger danger.",
+    "audio": true
+  },
+  {
+    "k": "rubbish",
+    "t": "rubbish",
+    "kind": "word",
+    "forms": [
+      "rubbish"
+    ],
+    "text": "Rubbish is the British word for what Americans call trash or garbage. The Economist is a British magazine, so it turns up throughout. Here the rubbish is in orbit rather than in a bin, and the amount of it has more than doubled since 2017.",
+    "audio": true
+  },
+  {
+    "k": "operators",
+    "t": "operator",
+    "kind": "word",
+    "forms": [
+      "operators"
+    ],
+    "text": "An operator is not just someone pressing buttons. In business it means the company or agency that owns a piece of equipment and runs it day to day. Satellite operators are the firms whose satellites these are, and the striking fact is that in most failures they never find out what went wrong.",
+    "audio": true
+  },
+  {
+    "k": "adhesive",
+    "t": "adhesive",
+    "kind": "word",
+    "forms": [
+      "adhesive"
+    ],
+    "text": "Adhesive means sticky, or able to glue itself to a surface. A sticking plaster and a sticker are both adhesive. Odin Space's product is an adhesive strip you stick onto the outside of a satellite so it can feel impacts.",
+    "audio": true
+  },
+  {
+    "k": "smart-money",
+    "t": "the smart money is on",
+    "kind": "phrase",
+    "forms": [
+      "The smart money is on"
+    ],
+    "text": "The smart money is on something is a set phrase meaning that the people who know the most would bet on it. It comes from gambling, where smart money means the bets placed by experts rather than by the crowd. Nobody is actually betting here; the writer just means that experts think collisions are the likely cause.",
+    "audio": true
+  },
+  {
+    "k": "assess",
+    "t": "assess",
+    "kind": "word",
+    "forms": [
+      "assess"
+    ],
+    "text": "To assess something is to look at it carefully and judge how big, good or serious it is. A teacher assesses your essay; a doctor assesses an injury. The sensors do not just notice that an impact happened, they assess it, working out how hard the hit was.",
+    "audio": true
+  },
+  {
+    "k": "affair",
+    "t": "affair",
+    "kind": "word",
+    "forms": [
+      "affair"
+    ],
+    "text": "An affair usually means an event or a piece of business, but in British writing it is often used loosely to mean simply a thing or an arrangement. Calling a shield a two-stage affair just means it is a two-part setup. No drama or scandal is involved.",
+    "audio": true
+  },
+  {
+    "k": "outlying",
+    "t": "outlying",
+    "kind": "word",
+    "forms": [
+      "outlying"
+    ],
+    "text": "Outlying means set apart from the main part, out on the edge. An outlying farm sits away from the village. The outlying bumper is the thin sheet held a few centimetres out in front of the shield proper.",
+    "audio": true
+  },
+  {
+    "k": "bumper",
+    "t": "bumper",
+    "kind": "word",
+    "forms": [
+      "bumper"
+    ],
+    "text": "On a car, the bumper is the bar at the front and back that takes the knock in a small crash. On a Whipple shield it means the same idea in space: the sacrificial outer sheet that gets hit first. It is not there to survive, but to break the incoming object up.",
+    "audio": true
+  },
+  {
+    "k": "spray",
+    "t": "spray",
+    "kind": "word",
+    "forms": [
+      "spray"
+    ],
+    "text": "A spray normally means a fine mist of water, but it also means a burst of many small things flying outward together. A spray of gravel comes off a bike tyre. Here a single lump of metal hits the bumper and comes out the far side as a spray of much smaller pieces.",
+    "audio": true
+  },
+  {
+    "k": "energetic",
+    "t": "energetic",
+    "kind": "word",
+    "forms": [
+      "energetic"
+    ],
+    "text": "In everyday speech an energetic person is lively and full of beans, but in physics energetic means carrying a lot of energy. Less energetic fragments are not sleepy; they simply hit with less force. Breaking one fast lump into many small ones spreads that energy out, so no single piece can punch through.",
+    "audio": true
+  },
+  {
+    "k": "stiffened",
+    "t": "stiffened",
+    "kind": "word",
+    "forms": [
+      "stiffened"
+    ],
+    "text": "To stiffen something is to make it harder to bend. Cardboard stiffened with a corrugated layer inside is exactly the same trick. Aluminium panels stiffened with an aluminium honeycomb are strong for their weight, but they were designed for stiffness, not for stopping debris.",
+    "audio": true
+  },
+  {
+    "k": "honeycomb",
+    "t": "honeycomb",
+    "kind": "word",
+    "forms": [
+      "honeycomb"
+    ],
+    "text": "A honeycomb is the grid of six-sided wax cells bees build, and engineers borrow the pattern because it is remarkably stiff for how little material it uses. A honeycomb layer glued between two thin sheets makes a light, rigid panel. Aircraft floors, doors and satellite bodies are built this way.",
+    "audio": true
+  },
+  {
+    "k": "composite",
+    "t": "composite",
+    "kind": "word",
+    "forms": [
+      "composite",
+      "Composite"
+    ],
+    "text": "A composite is one material built out of two or more different materials joined together, so that the mixture does something neither could do alone. The word means put together from parts. A bike helmet, with hard plastic over crushable foam, is a composite you have probably worn.",
+    "audio": true
+  },
+  {
+    "k": "cagey",
+    "t": "cagey",
+    "kind": "word",
+    "forms": [
+      "cagey"
+    ],
+    "text": "Someone who is cagey is careful not to give much away, answering without really answering. People are cagey about things they want to keep secret. Atomic-6 is cagey about what its tiles are made of, because that recipe is the company's advantage over its rivals.",
+    "audio": true
+  },
+  {
+    "k": "accelerated",
+    "t": "accelerate",
+    "kind": "word",
+    "forms": [
+      "accelerated"
+    ],
+    "text": "To accelerate is to speed up, to go faster and faster. A car accelerates away from a traffic light. In the tests the pellets are accelerated by a gas gun until they are travelling at 7.2 kilometres a second.",
+    "audio": true
+  },
+  {
+    "k": "shrapnel",
+    "t": "shrapnel",
+    "kind": "word",
+    "forms": [
+      "shrapnel"
+    ],
+    "text": "Shrapnel is the small sharp fragments thrown outwards when something shatters or explodes, named after a British officer called Henry Shrapnel. The danger is that the fragments keep flying and hit something else. A Whipple shield makes shrapnel on purpose, which is fine for the satellite behind it but adds more junk to everybody else's orbit.",
+    "audio": true
+  },
+  {
+    "k": "vaporised",
+    "t": "vaporised",
+    "kind": "word",
+    "forms": [
+      "vaporised"
+    ],
+    "text": "To vaporise something is to turn it straight from solid or liquid into gas. It takes a lot of energy, which is exactly what a 7-kilometre-a-second impact supplies: the metal gets so hot so fast that it becomes vapour instead of splinters. British English spells it with an s where American English uses a z.",
+    "audio": true
+  },
+  {
+    "k": "fibre",
+    "t": "fibre",
+    "kind": "word",
+    "forms": [
+      "fibre",
+      "fibres"
+    ],
+    "text": "A fibre is a thread, natural or man-made, and lots of fibres laid together make a strong material. Cotton, wool, Kevlar and carbon are all fibres. British English spells it fibre; American English spells it fiber.",
+    "audio": true
+  },
+  {
+    "k": "ceramic",
+    "t": "ceramic",
+    "kind": "word",
+    "forms": [
+      "ceramic"
+    ],
+    "text": "A ceramic is a hard material made by baking clay, sand or a mineral powder at high heat. Plates, bricks and the tiles on the underside of a space shuttle are all ceramics. Ceramics are very hard and stand up to heat, but they shatter, which is why engineers usually pair them with something tough like Kevlar.",
+    "audio": true
+  },
+  {
+    "k": "woven",
+    "t": "woven",
+    "kind": "word",
+    "forms": [
+      "woven"
+    ],
+    "text": "Woven means made by crossing threads over and under each other, the way cloth is made on a loom. Woven material bends and drapes instead of snapping. A woven ceramic is ceramic spun into threads first, so that a stiff, brittle substance can behave like fabric.",
+    "audio": true
+  },
+  {
+    "k": "crucial",
+    "t": "crucial",
+    "kind": "word",
+    "forms": [
+      "crucial"
+    ],
+    "text": "Crucial means absolutely essential, the thing a decision turns on. If one detail decides everything, it is crucial. Weight is a crucial consideration in spaceflight because you pay for every kilogram you launch.",
+    "audio": true
+  },
+  {
+    "k": "up-the-ante",
+    "t": "up the ante",
+    "kind": "phrase",
+    "forms": [
+      "up the ante"
+    ],
+    "text": "To up the ante is to raise what is at stake, or to push things to a higher level. The ante is the money each player must put in before a hand of poker begins, so upping it makes the game bigger. Here the Padua team is not gambling, just taking the shielding idea further than before.",
+    "audio": true
+  },
+  {
+    "k": "resin",
+    "t": "resin",
+    "kind": "word",
+    "forms": [
+      "resin"
+    ],
+    "text": "Resin is a thick, gluey liquid that sets hard, rather like very strong clear glue. In composite materials it is the part that soaks around the fibres and locks them in place once it hardens. The fibres carry the strength; the resin holds the shape.",
+    "audio": true
+  },
+  {
+    "k": "reinforced",
+    "t": "reinforced",
+    "kind": "word",
+    "forms": [
+      "reinforced"
+    ],
+    "text": "To reinforce something is to make it stronger by adding material to it. Concrete reinforced with steel bars is the everyday example: the bars stop the concrete cracking apart. Resin reinforced with carbon fibres works the same way, with the fibres doing the bar's job.",
+    "audio": true
+  },
+  {
+    "k": "cavities",
+    "t": "cavity",
+    "kind": "word",
+    "forms": [
+      "cavities"
+    ],
+    "text": "A cavity is a hollow space inside something solid, which is also why a hole in a tooth is called a cavity. Printing a shield layer by layer lets engineers leave deliberate cavities in the middle of it. Those empty spaces are not a flaw; they are the whole point.",
+    "audio": true
+  },
+  {
+    "k": "voids",
+    "t": "void",
+    "kind": "word",
+    "forms": [
+      "voids"
+    ],
+    "text": "A void is an empty space with nothing at all in it. In a piece of metal a void is a bubble or gap left inside. The aluminium foam here is riddled with voids up to 5 millimetres across, and each gap acts like another small bumper for an incoming fragment to cross.",
+    "audio": true
+  },
+  {
+    "k": "successive",
+    "t": "successive",
+    "kind": "word",
+    "forms": [
+      "successive"
+    ],
+    "text": "Successive means following one after another in a row. Three successive rainy days are three rainy days in a row. A projectile crossing a shield full of cavities gets hit by successive shocks, each one breaking it into smaller pieces than the last.",
+    "audio": true
+  },
+  {
+    "k": "mimicking",
+    "t": "mimic",
+    "kind": "word",
+    "forms": [
+      "Whipple-mimicking"
+    ],
+    "text": "To mimic something is to copy the way it behaves. A parrot mimics speech. A Whipple-mimicking shield is not built like a Whipple shield at all, but it produces the same repeated shocks, so it does the same job.",
+    "audio": true
+  },
+  {
+    "k": "means",
+    "t": "means",
+    "kind": "word",
+    "forms": [
+      "means"
+    ],
+    "text": "Besides the verb to mean, means is a noun that stands for a method or way of doing something, as in a means of transport. It looks plural but takes a singular verb: one means, two means. A further means to deliver repeated shocks is simply another way of achieving them.",
+    "audio": true
+  },
+  {
+    "k": "porous",
+    "t": "porous",
+    "kind": "word",
+    "forms": [
+      "porous"
+    ],
+    "text": "Something porous is full of tiny holes that liquid or air can pass through, like a sponge or a brick. The pores are the holes themselves. The foam here starts as a porous plastic structure, whose holes later fill with molten metal.",
+    "audio": true
+  },
+  {
+    "k": "molten",
+    "t": "molten",
+    "kind": "word",
+    "forms": [
+      "molten"
+    ],
+    "text": "Molten means melted into liquid by heat, and it is used almost only about rock, glass and metal. Lava is molten rock. Molten aluminium is poured into the gaps in the mould, then cools and hardens into the finished foam.",
+    "audio": true
+  },
+  {
+    "k": "matrix",
+    "t": "matrix",
+    "kind": "word",
+    "forms": [
+      "matrix"
+    ],
+    "text": "A matrix is the solid background material that surrounds and holds everything else, whether that is fibres, grains or bubbles. In maths the same word means a grid of numbers, and the film borrowed it, but this is the original sense. A metal matrix full of voids is a continuous block of aluminium with holes scattered through it.",
+    "audio": true
+  },
+  {
+    "k": "incorporating",
+    "t": "incorporate",
+    "kind": "word",
+    "forms": [
+      "incorporating"
+    ],
+    "text": "To incorporate something is to build it in as part of a larger whole. A recipe incorporates an ingredient; a design incorporates a feature. A shield incorporating a layer of foam is one with the foam built into it, not bolted on afterwards.",
+    "audio": true
+  },
+  {
+    "k": "repertoire",
+    "t": "repertoire",
+    "kind": "word",
+    "forms": [
+      "repertoire"
+    ],
+    "text": "A repertoire, said REP-uh-twar, is the full set of things a person or group can do or perform. A band's repertoire is all the songs it can play. This repertoire of shielding types is the whole range of options engineers now have to choose from.",
+    "audio": true
+  },
+  {
+    "k": "hinge-on",
+    "t": "hinge on",
+    "kind": "phrase",
+    "forms": [
+      "hinge on"
+    ],
+    "text": "To hinge on something is to depend on it completely, the way a door depends on its hinges to swing at all. If one fact decides the outcome, everything hinges on that fact. How well these shields work will hinge on what they actually get hit by.",
+    "audio": true
+  },
+  {
+    "k": "flecks",
+    "t": "fleck",
+    "kind": "word",
+    "forms": [
+      "flecks"
+    ],
+    "text": "A fleck is a tiny spot or flake of something, like a fleck of paint or a fleck of dust. Flecks are the smallest things on this article's list of projectiles, which makes them a good illustration of the main point. At orbital speed even a fleck can do real damage.",
+    "audio": true
+  },
+  {
+    "k": "notes",
+    "t": "note",
+    "kind": "word",
+    "forms": [
+      "notes"
+    ],
+    "text": "As a verb, to note something is to remark on it or point it out, and journalists use notes to mean says. Nothing is being written down. Notes Rannveig Marie Faergestad is just an old-fashioned way of writing she said this, with the verb placed before the name.",
+    "audio": true
+  },
+  {
+    "k": "prevails",
+    "t": "prevail",
+    "kind": "word",
+    "forms": [
+      "prevails"
+    ],
+    "text": "To prevail has two senses: to win out in a contest, and, as here, to be the common or dominant condition in a place. The weather that prevails in a region is the weather you usually get. Knowing what kind of debris prevails in a given orbit would tell engineers which shield to fit.",
+    "audio": true
+  },
+  {
+    "k": "girding",
+    "t": "gird",
+    "kind": "word",
+    "forms": [
+      "girding"
+    ],
+    "text": "To gird is an old word meaning to belt something on, and it survives mostly in the phrase girding for, meaning preparing yourself for something hard. Knights girded on armour before a battle. Girding for orbit means kitting a satellite out for the battering it is about to take.",
+    "audio": true
+  },
+  {
+    "k": "shot-in-the-dark",
+    "t": "a shot in the dark",
+    "kind": "phrase",
+    "forms": [
+      "a shot in the dark"
+    ],
+    "text": "A shot in the dark is a wild guess, made without enough information to aim properly. It comes from firing at a target you cannot see. Choosing satellite armour today is close to a shot in the dark, and the article's last line is that better impact data would make it less of one.",
+    "audio": true
+  },
+  {
+    "k": "pack-a-punch",
+    "t": "pack quite a punch",
+    "kind": "phrase",
+    "forms": [
+      "pack quite a punch"
+    ],
+    "text": "To pack a punch is a set phrase meaning to hit hard, or to have a much stronger effect than you would expect. It comes from boxing, and quite a punch makes it stronger still. Tiny pieces of debris pack quite a punch because of their speed, not their size.",
+    "audio": true
+  },
+  {
+    "k": "take-their-chances",
+    "t": "take their chances",
+    "kind": "phrase",
+    "forms": [
+      "take their chances"
+    ],
+    "text": "To take your chances is to go ahead and accept whatever risk comes, rather than protect yourself against it. You take your chances if you leave without a coat. Most satellites take their chances behind ordinary aluminium panels, gambling that nothing will hit them.",
+    "audio": true
+  },
+  {
+    "k": "promises",
+    "t": "promise",
+    "kind": "word",
+    "forms": [
+      "promises"
+    ],
+    "text": "Besides making a promise, the verb can mean to look likely to produce something good. A dark sky promises rain. Saying this combination promises light shields means it looks set to deliver them, not that anyone has given their word.",
+    "audio": true
+  },
+  {
+    "k": "employs",
+    "t": "employ",
+    "kind": "word",
+    "forms": [
+      "employs"
+    ],
+    "text": "To employ someone is to give them a job, but the same verb also simply means to use. A writer employs a trick; a team employs a method. The Padua team employs 3D printing, meaning that is the technique it uses.",
+    "audio": true
+  }
+]

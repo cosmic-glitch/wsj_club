@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-12",
+  "title": "Satellites get a new type of armour",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/07/satellites-get-a-new-type-of-armour",
+  "articlePageUrl": "/articles/junior/2026-09-12.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "debris",
+      "partOfSpeech": "noun",
+      "pronunciation": "duh-BREE",
+      "articleQuote": "The smart money is on quite a few such failures being caused by collisions with space debris.",
+      "meaning": "Debris is the scattered bits and pieces left behind when something breaks apart — snapped branches after a storm, or metal and glass after a crash. It is leftover junk, spread around, that nobody is keeping track of. In this article it means **space debris**: the dead satellites, spent rocket parts and flecks of paint still circling Earth after decades of launches.",
+      "examples": [
+        "After the windstorm, the soccer field was covered in debris — leaves, snapped branches and somebody's blown-away lunch bag.",
+        "We had to sweep up every last bit of debris from the broken beaker before anyone walked near that table again."
+      ]
+    },
+    {
+      "word": "projectile",
+      "partOfSpeech": "noun",
+      "pronunciation": "pruh-JEK-tul",
+      "articleQuote": "In tests, they successfully stop aluminium projectiles the size of a pea that have been accelerated by a gas gun to 7.2km a second.",
+      "meaning": "A projectile is an object that has been thrown, fired or launched and is now flying on its own — a pitched baseball, an arrow, a bullet. It shares a root with the word *project*, which once meant to throw forward. In this article the projectiles are the pea-sized aluminium pellets that engineers fire from a gas gun to copy what space junk does to a satellite.",
+      "examples": [
+        "In science class we learned that a kicked football is a projectile: once your foot leaves it, only gravity and the air are still acting on it.",
+        "The catapult our team built launched a marshmallow projectile clear across the gym."
+      ]
+    },
+    {
+      "word": "conventional",
+      "partOfSpeech": "adjective",
+      "pronunciation": "kun-VEN-shuh-nul",
+      "articleQuote": "a shield incorporating a layer of this foam a little over 6mm thick could provide the same protection as a conventional Whipple shield of twice the weight",
+      "meaning": "Conventional means the usual way — the standard version that people already use, as opposed to a new or unusual one. It is not praise and not an insult; it simply marks something as the familiar option. In this article a **conventional** Whipple shield is the ordinary two-layer aluminium design engineers have built for decades, and it is what every new material has to beat.",
+      "examples": [
+        "The conventional way to open an essay is with a hook, but our teacher let us start with a list instead.",
+        "Our chess club sticks to conventional openings, so the other side usually knows what is coming."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Kinetic energy",
+      "articleQuote": "Hurtling around Earth at roughly seven kilometres a second, even tiny pieces of debris pack quite a punch.",
+      "meaning": "A fleck of paint is harmless. You could catch one on your fingertip. But a fleck of paint in orbit can blast a crater in a satellite, and the only thing that changed is how fast it is moving.\n\nPhysicists call the energy stored in a moving object its **kinetic energy**, and the rule behind it is strange the first time you meet it. Double an object's mass and you double that energy. But double its *speed* and you multiply the energy by four. Ten times faster is a hundred times the energy. Speed counts for far more than size.\n\nPicture two tennis balls. One rolls off a table and taps your shoe, and you barely feel it. The other comes off a serving machine at 100mph and hits your shoe, and you are limping to the nurse. Same ball, same mass — only the speed is different. Now push that ball to seven kilometres a second, the speed of junk in low orbit, which is about eight times the speed of a rifle bullet. At that speed it would not bruise a satellite. It would tear a hole straight through.\n\nSo when you want to know how much damage a moving object can do, ask how fast it is going before you ask how big it is."
+    },
+    {
+      "name": "Composite materials",
+      "articleQuote": "One combines Kevlar, a fibre used to make bullet-proof jackets … with Nextel, a woven ceramic.",
+      "meaning": "Every material is a trade-off. Steel is strong but heavy. Plastic is light but soft. Ceramic is hard but shatters. For centuries, building something meant picking the least-bad single material for the job — until people began locking materials together instead.\n\nMaterials scientists call the result a **composite**: one material built from two or more different materials joined so the mixture does something neither could do alone. The word just means *put together from parts*. Usually one part is a stiff fibre and the other is a softer material that holds those fibres in place. Kevlar, the stuff in bullet-proof vests, is a mesh of extremely tough fibres. Nextel, its partner in this article, is ceramic drawn into threads and woven like cloth, which makes it hard in a way Kevlar is not. Bond the two and you get a sheet that is hard on the outside, tough on the inside, and still light enough to launch.\n\nYou already own composites. A bike helmet is stiff foam under a hard plastic shell. When your head hits the pavement, the shell spreads the force of the blow across a wide area instead of one point, and the foam crushes slowly underneath, which stretches the stop out over a longer time. Neither layer works by itself: bare foam tears open on a rock, and bare plastic passes the whole jolt through to your skull. Together they do the job, at a weight you can wear all afternoon without noticing.\n\nThat is the whole trick. When no single material has everything you need, build one that does."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Space debris is the leftover junk circling Earth — dead satellites, rocket parts, flecks of paint. Why can a piece no bigger than a pea seriously damage a working satellite?",
+      "options": [
+        "It is made of a rare metal that dissolves aluminium on contact",
+        "It is travelling at roughly seven kilometres a second, so it carries enormous energy",
+        "It builds up an electric charge that short-circuits the satellite",
+        "It sticks to solar panels and blocks the sunlight they need"
+      ],
+      "answerIndex": 1,
+      "explanation": "Speed, not size, is what makes orbital debris dangerous: at about seven kilometres a second even a tiny fragment carries a huge amount of kinetic energy."
+    },
+    {
+      "question": "In a Whipple shield, what does the outer bumper do to an incoming piece of debris?",
+      "options": [
+        "It reflects the debris back out into space",
+        "It pulls the debris off course with a magnetic field",
+        "It breaks the debris into a spray of smaller, less energetic fragments",
+        "It melts the debris into a liquid that drains away"
+      ],
+      "answerIndex": 2,
+      "explanation": "The bumper shatters the incoming object so that the main shield a few centimetres behind it only has to stop small, weaker fragments."
+    },
+    {
+      "question": "NASA found that a shield with a layer of aluminium foam \"could provide the same protection as a conventional Whipple shield of twice the weight.\" What does conventional mean here?",
+      "options": [
+        "Old-fashioned and no longer permitted in space",
+        "The usual, standard kind that engineers already build",
+        "Unusually cheap to manufacture",
+        "Designed by a convention of international scientists"
+      ],
+      "answerIndex": 1,
+      "explanation": "Conventional marks the familiar, standard version of something — here, the ordinary two-layer aluminium shield the new foam is measured against."
+    },
+    {
+      "question": "Which of these is a projectile?",
+      "options": [
+        "A pea-sized aluminium pellet fired from a gas gun",
+        "A roll of Kevlar fabric sitting in a factory",
+        "A wrench lying on an engineer's workbench",
+        "A ceramic tile bolted to the side of a spacecraft"
+      ],
+      "answerIndex": 0,
+      "explanation": "A projectile is an object that has been thrown, fired or launched and is flying on its own — the other three are not moving at all."
+    },
+    {
+      "question": "What makes something a composite material?",
+      "options": [
+        "It is a single pure material with nothing else added",
+        "It is any material light enough to be launched into orbit",
+        "It is a material that has been melted down and recycled",
+        "It is two or more different materials locked together so the mixture does what neither could do alone"
+      ],
+      "answerIndex": 3,
+      "explanation": "A composite joins different materials — like tough Kevlar fibres with hard woven ceramic — so the combination beats either material on its own."
+    }
+  ]
+}
