@@ -1,0 +1,1433 @@
+[
+  {
+    "k": "assuage",
+    "t": "assuage",
+    "kind": "vocab",
+    "pron": "uh-SWAYJ",
+    "forms": [
+      "assuage"
+    ],
+    "text": "To assuage is to make a painful feeling less intense — you assuage fear, guilt, anger or grief. The crucial part is what it does not mean: soothing a feeling is not the same as fixing whatever caused it, so the word often carries a hint of managing people rather than solving their problem. Here the government wants to assuage anxious workers without slowing the AI push that is making them anxious.",
+    "audio": true
+  },
+  {
+    "k": "sacrosanct",
+    "t": "sacrosanct",
+    "kind": "vocab",
+    "pron": "SAK-roh-sankt",
+    "forms": [
+      "sacrosanct"
+    ],
+    "text": "Something sacrosanct is treated as too important to question, change or touch at all. The word is built from Latin pieces meaning sacred and made holy, and it usually describes an arrangement people defend as if it were religious even when it is nothing of the kind. Saying that job security in China's state sector is sacrosanct means everyone understands those jobs simply do not get cut.",
+    "audio": true
+  },
+  {
+    "k": "palpable",
+    "t": "palpable",
+    "kind": "vocab",
+    "pron": "PAL-puh-buhl",
+    "forms": [
+      "palpable"
+    ],
+    "text": "Palpable literally means able to be felt with the hand — a doctor still speaks of a palpable pulse. Most often it describes a mood so strong it seems physical, something you notice the moment you walk in: palpable tension, palpable relief. In Shenzhen the writer finds both excitement about robots and quiet acceptance of being replaced strong enough to sense without being told.",
+    "audio": true
+  },
+  {
+    "k": "displaced",
+    "t": "displaced",
+    "kind": "word",
+    "forms": [
+      "displaced",
+      "displacement",
+      "displace"
+    ],
+    "text": "To displace someone is to push them out of the place they occupied. In talk about work it is the standard word for a job disappearing under someone rather than the person being fired for anything they did, which is why economists say displacement instead of unemployment when a machine takes over the task.",
+    "audio": true
+  },
+  {
+    "k": "microdrama",
+    "t": "microdrama",
+    "kind": "name",
+    "forms": [
+      "microdramas",
+      "microdrama"
+    ],
+    "text": "Microdramas are the minute-long serialised shows made for phone screens that have swept China — cheap, melodramatic, released an episode at a time. The article opens with them because they became a 100bn yuan industry employing hundreds of thousands of people, then were upended by AI video in a matter of weeks.",
+    "audio": true
+  },
+  {
+    "k": "serialised",
+    "t": "serialised",
+    "kind": "word",
+    "forms": [
+      "serialised"
+    ],
+    "text": "A serialised story is released in instalments rather than all at once — one chapter, episode or minute-long clip at a time, each ending where you want the next. Dickens published his novels this way in magazines; microdramas do the same thing on a phone.",
+    "audio": true
+  },
+  {
+    "k": "hub",
+    "t": "hub",
+    "kind": "word",
+    "forms": [
+      "hub"
+    ],
+    "text": "A hub is the centre of a wheel, where all the spokes meet, and by extension any place everything else runs through — an airline hub, a transport hub. Calling Zhengzhou a hub for microdramas means the studios, crews and actors have clustered there rather than spreading evenly across China.",
+    "audio": true
+  },
+  {
+    "k": "dynamism",
+    "t": "dynamism",
+    "kind": "word",
+    "forms": [
+      "dynamism"
+    ],
+    "text": "Dynamism is energy and rapid change in a system, especially an economy: new firms starting, new jobs appearing, people moving between them. The article calls the microdrama boom a rare bright spot of dynamism, which quietly tells you the rest of China's economy is doing rather little of that.",
+    "audio": true
+  },
+  {
+    "k": "sputtering",
+    "t": "sputtering",
+    "kind": "word",
+    "forms": [
+      "sputtering"
+    ],
+    "text": "An engine sputters when it fires unevenly and threatens to stall — bursts of power broken by coughs. Applied to an economy, sputtering means growth that keeps stalling and restarting rather than running smoothly, which is a gentler way of saying things are going badly.",
+    "audio": true
+  },
+  {
+    "k": "bright-spot",
+    "t": "a bright spot",
+    "kind": "phrase",
+    "forms": [
+      "bright spot"
+    ],
+    "text": "A bright spot is the one encouraging thing in an otherwise gloomy picture — the phrase turns up constantly in business writing and in school reports. Microdramas are a bright spot precisely because they grew fast while China's wider economy sputtered.",
+    "audio": true
+  },
+  {
+    "k": "yuan",
+    "t": "yuan",
+    "kind": "name",
+    "forms": [
+      "yuan"
+    ],
+    "text": "The yuan is China's currency, also called the renminbi. The article gives figures both ways — 100bn yuan is about $15bn — because foreign readers cannot picture yuan amounts, and journalists convert to dollars in brackets as a courtesy.",
+    "audio": true
+  },
+  {
+    "k": "bn-trn",
+    "t": "bn / m / trn",
+    "kind": "name",
+    "forms": [
+      "trn",
+      "bn"
+    ],
+    "text": "The Economist compresses big numbers with letters: m for million, bn for billion, trn for trillion. So 100bn yuan is one hundred billion yuan, and a $2trn e-commerce industry is two trillion dollars. Each step up is a thousand times the one before.",
+    "audio": true
+  },
+  {
+    "k": "bytedance",
+    "t": "ByteDance",
+    "kind": "name",
+    "forms": [
+      "ByteDance"
+    ],
+    "text": "ByteDance is the Chinese technology giant behind TikTok and its Chinese twin Douyin, and one of the world's most valuable private companies. In this story it matters as an AI lab: its video model is what collapsed the cost of making microdramas.",
+    "audio": true
+  },
+  {
+    "k": "seedance",
+    "t": "Seedance 2.0",
+    "kind": "name",
+    "forms": [
+      "Seedance"
+    ],
+    "text": "Seedance 2.0 is ByteDance's artificial-intelligence model for generating video — you describe a scene in words and it produces the footage. Launched in February, it is the specific piece of software that took Li Dazhi's acting work away.",
+    "audio": true
+  },
+  {
+    "k": "upended",
+    "t": "upended",
+    "kind": "word",
+    "forms": [
+      "upended"
+    ],
+    "text": "To upend something is literally to turn it on its end, and figuratively to overturn how it has always worked. Saying Seedance quickly upended the business is stronger than saying it changed it: the old order of scripts, crews and actors was tipped over rather than adjusted.",
+    "audio": true
+  },
+  {
+    "k": "gig",
+    "t": "gig",
+    "kind": "word",
+    "forms": [
+      "gigs",
+      "gig"
+    ],
+    "text": "A gig is a single short job rather than a steady position — the word comes from musicians, who play a gig at one venue for one night. It has spread to any paid task booked one at a time, which is why delivery and ride-share work is called the gig economy.",
+    "audio": true
+  },
+  {
+    "k": "dried-up",
+    "t": "dried up",
+    "kind": "phrase",
+    "forms": [
+      "dried up"
+    ],
+    "text": "When work, money or opportunities dry up, they stop coming — the image is of a stream shrinking to nothing rather than being cut off at once. Mr Li's gigs dried up because studios kept making shows, just without hiring actors.",
+    "audio": true
+  },
+  {
+    "k": "tokens",
+    "t": "tokens",
+    "kind": "word",
+    "forms": [
+      "tokens"
+    ],
+    "text": "In everyday English a token is a small physical stand-in — a bus token, a token of appreciation. In AI it means the small chunks of text or image data a model processes, and firms are billed per token, so a token is effectively the unit that AI work is sold in. That is the joke in the article: the bill for a microdrama is now mostly tokens instead of humans.",
+    "audio": true
+  },
+  {
+    "k": "takeaway",
+    "t": "takeaway",
+    "kind": "word",
+    "forms": [
+      "takeaway"
+    ],
+    "text": "Takeaway is British English for what Americans call takeout — restaurant food carried away or delivered rather than eaten in. Delivering takeaway food is one of the fallback jobs the article lists for people pushed out of other work.",
+    "audio": true
+  },
+  {
+    "k": "conviction",
+    "t": "conviction",
+    "kind": "word",
+    "forms": [
+      "conviction"
+    ],
+    "text": "A conviction is a belief held firmly enough to act on — quite separate from the courtroom sense, where a conviction is a guilty verdict. China pushes AI under the conviction that dominating the technology is nearly a matter of survival, meaning this is treated not as one option among many but as settled truth.",
+    "audio": true
+  },
+  {
+    "k": "existential",
+    "t": "existential",
+    "kind": "word",
+    "forms": [
+      "existential"
+    ],
+    "text": "An existential threat or necessity is one that concerns whether something continues to exist at all, rather than merely how well it does. Calling AI dominance an almost existential necessity says China's leaders think losing the race would threaten the country's standing itself, not just its profits.",
+    "audio": true
+  },
+  {
+    "k": "mitigate",
+    "t": "mitigate",
+    "kind": "word",
+    "forms": [
+      "mitigate"
+    ],
+    "text": "To mitigate something bad is to make it less severe — you do not remove it, you soften it. Seatbelts mitigate injuries; sandbags mitigate flooding. AI is meant to mitigate labour shortages by doing some of the work there will not be enough young people to do.",
+    "audio": true
+  },
+  {
+    "k": "embodied-ai",
+    "t": "embodied AI",
+    "kind": "name",
+    "forms": [
+      "embodied AI",
+      "embodied intelligence"
+    ],
+    "text": "Embodied AI means putting an AI model into something with a body — a robot, a car, a drone — so it acts on the physical world instead of only producing text or images on a screen. The distinction matters because a model that writes fluently may still be helpless at picking up a potato, since touch, force and balance are problems that text never posed.",
+    "audio": true
+  },
+  {
+    "k": "communist-party",
+    "t": "the Communist Party",
+    "kind": "name",
+    "forms": [
+      "Communist Party",
+      "the party",
+      "party"
+    ],
+    "text": "The Chinese Communist Party is the single ruling party of China; it is not one contender in elections but the body that controls the government, the courts, the army and much of the economy. When the article says the party worries about job losses, it means the country's actual decision-makers, which is why that worry turns into policy so directly.",
+    "audio": true
+  },
+  {
+    "k": "fallback",
+    "t": "fallback",
+    "kind": "word",
+    "forms": [
+      "fallback"
+    ],
+    "text": "A fallback is what you turn to when your first choice fails — a backup plan, a safety option. The article's point is sharp: blue-collar jobs have been the fallback for people laid off from other work, so if AI takes those too, there is nothing left to fall back on.",
+    "audio": true
+  },
+  {
+    "k": "laid-off",
+    "t": "laid off / lay-offs",
+    "kind": "word",
+    "forms": [
+      "laid off",
+      "lay-offs"
+    ],
+    "text": "To be laid off is to lose your job because the employer no longer needs the position — not because of anything you did wrong, which is what separates it from being fired or sacked. The noun is a lay-off, and firms often prefer it precisely because it sounds like nobody's fault.",
+    "audio": true
+  },
+  {
+    "k": "safety-net",
+    "t": "safety-net",
+    "kind": "word",
+    "forms": [
+      "safety-net"
+    ],
+    "text": "A safety net is the net stretched under a trapeze artist, and the phrase has become the standard term for government programmes that catch people when work stops — unemployment payments, pensions, health insurance. Describing China's as threadbare means it exists but is thin enough to fall through, which is the whole worry in a country about to automate millions of jobs.",
+    "audio": true
+  },
+  {
+    "k": "asymmetrical",
+    "t": "asymmetrical",
+    "kind": "word",
+    "forms": [
+      "asymmetrical"
+    ],
+    "text": "Symmetrical means the two sides match; asymmetrical means they do not. Cai Fang calls AI's effects asymmetrical because job destruction and job creation do not balance out neatly — the losses tend to arrive first and run larger, so even if the totals eventually even out, real people spend years in the gap.",
+    "audio": true
+  },
+  {
+    "k": "think-tank",
+    "t": "think-tank",
+    "kind": "name",
+    "forms": [
+      "think-tank",
+      "think-tanks"
+    ],
+    "text": "A think-tank is an organisation that employs researchers to study policy questions and publish recommendations, sitting somewhere between a university and a lobbying group. The article quotes several — a Chinese state one, the Carnegie Endowment in America — and whose think-tank an expert works for usually tells you a good deal about the argument they will make.",
+    "audio": true
+  },
+  {
+    "k": "macroeconomic",
+    "t": "macroeconomic",
+    "kind": "word",
+    "forms": [
+      "macroeconomic"
+    ],
+    "text": "Macroeconomics studies an economy as a whole — total growth, unemployment, inflation — as opposed to microeconomics, which studies single markets and decisions. A bleak macroeconomic picture means the countrywide numbers are poor, which makes every individual job loss harder to absorb.",
+    "audio": true
+  },
+  {
+    "k": "gulf",
+    "t": "gulf",
+    "kind": "word",
+    "forms": [
+      "gulf"
+    ],
+    "text": "Beyond the body of water, a gulf is a wide gap between two things that is hard to cross — a gulf between generations, between rich and poor. The article warns of a widening gulf between China's have-bots and have-nots.",
+    "audio": true
+  },
+  {
+    "k": "have-nots",
+    "t": "have-nots",
+    "kind": "phrase",
+    "forms": [
+      "have-nots"
+    ],
+    "text": "The haves and the have-nots is a very old way of dividing a society into those who own things and those who do not. The article plays on it with have-bots and have-nots: the new dividing line may be who owns the machines doing the work.",
+    "audio": true
+  },
+  {
+    "k": "bulk-cargo",
+    "t": "bulk cargo",
+    "kind": "name",
+    "forms": [
+      "bulk cargo"
+    ],
+    "text": "Bulk cargo is freight carried loose and unpackaged — coal, grain, sand, ore — poured or shovelled into a vehicle rather than stacked as boxes. It is a basic category in shipping because loose cargo needs completely different loading equipment from containers.",
+    "audio": true
+  },
+  {
+    "k": "lorry",
+    "t": "lorry",
+    "kind": "word",
+    "forms": [
+      "lorry",
+      "lorries"
+    ],
+    "text": "Lorry is British English for a truck, and The Economist is a British paper, so its articles say lorry throughout. There are 38m lorry drivers in China moving more than 70% of the country's freight, which is why automating the job is such a big deal.",
+    "audio": true
+  },
+  {
+    "k": "driver-assistance",
+    "t": "driver-assistance technology",
+    "kind": "name",
+    "forms": [
+      "driver-assistance",
+      "advanced driver-assistance technology"
+    ],
+    "text": "Driver-assistance technology is software that takes over part of the driving — holding the lane, keeping distance from the vehicle ahead, braking in an emergency — while a human stays responsible for watching the road. It sits well below self-driving: Mr Jia's lorry can nearly drive itself and he must still keep his hands on the wheel.",
+    "audio": true
+  },
+  {
+    "k": "your-correspondent",
+    "t": "your correspondent",
+    "kind": "phrase",
+    "forms": [
+      "your correspondent"
+    ],
+    "text": "A correspondent is a journalist who reports from a particular place or beat, and your correspondent is the old newspaper way of saying I without saying I. The Economist prints its articles without bylines, so when the reporter has to appear in the story — here, riding along in the lorry cab — this is the phrase that does it.",
+    "audio": true
+  },
+  {
+    "k": "last-leg",
+    "t": "last leg",
+    "kind": "phrase",
+    "forms": [
+      "last leg"
+    ],
+    "text": "A leg of a journey is one stage of it, between two stops — a word borrowed from sailing. The last leg to Shanghai is the final stretch of the trip. Do not confuse it with the separate idiom on its last legs, meaning worn out and about to fail.",
+    "audio": true
+  },
+  {
+    "k": "marvels",
+    "t": "marvels",
+    "kind": "word",
+    "forms": [
+      "marvels"
+    ],
+    "text": "To marvel at something is to be filled with wonder at it — the same root as marvellous. The detail of a nine-year-old marvelling over a video call at a lorry that drives itself is doing quiet work in the article: what unsettles the father delights the child.",
+    "audio": true
+  },
+  {
+    "k": "rattling-off",
+    "t": "rattling off",
+    "kind": "phrase",
+    "forms": [
+      "rattling off"
+    ],
+    "text": "To rattle something off is to list it quickly and easily, without having to stop and think — you rattle off the multiplication table or the names of a team. Mr Jia rattling off flat tyres, leaky air pipes and sudden engine death shows these are everyday problems to him, which is his argument for why drivers will still be needed.",
+    "audio": true
+  },
+  {
+    "k": "tyres",
+    "t": "tyres",
+    "kind": "word",
+    "forms": [
+      "tyres"
+    ],
+    "text": "Tyre is the British spelling of tire, the rubber ring around a wheel. British and American English split on a handful of such words — tyre and tire, kerb and curb, aluminium and aluminum — and a British paper keeps its own spellings even for American readers.",
+    "audio": true
+  },
+  {
+    "k": "freight",
+    "t": "freight",
+    "kind": "word",
+    "forms": [
+      "freight"
+    ],
+    "text": "Freight is goods being transported in bulk, and by extension the business of moving them. Saying lorry drivers transport more than 70% of China's freight means most goods in the country spend part of their journey on a truck rather than a train, ship or plane.",
+    "audio": true
+  },
+  {
+    "k": "pitches",
+    "t": "pitches",
+    "kind": "word",
+    "forms": [
+      "pitches"
+    ],
+    "text": "To pitch an idea is to present it persuasively to someone you want to buy or back it — the sales pitch. Julian Ma pitches his technology as the solution to a labour shortage, which is a reminder to read the claim as an argument from someone with something to sell.",
+    "audio": true
+  },
+  {
+    "k": "autonomous",
+    "t": "autonomous",
+    "kind": "word",
+    "forms": [
+      "autonomous"
+    ],
+    "text": "Autonomous comes from Greek roots meaning self-governing, and describes anything that operates without outside control — an autonomous region, an autonomous vehicle. Note how carefully the article uses it: an autonomous lorry still has a human sitting in it, because autonomous describes what the machine can do, not whether the law lets it do it alone.",
+    "audio": true
+  },
+  {
+    "k": "derailing",
+    "t": "derailing",
+    "kind": "word",
+    "forms": [
+      "derailing"
+    ],
+    "text": "To derail is to come off the rails, and figuratively to knock something off its intended course — a derailed plan, a derailed conversation. A labour shortage derailing the logistics sector would mean too few drivers to keep goods moving at all.",
+    "audio": true
+  },
+  {
+    "k": "logistics",
+    "t": "logistics",
+    "kind": "word",
+    "forms": [
+      "logistics",
+      "logistics sector"
+    ],
+    "text": "Logistics is the organised movement and storage of goods — warehouses, lorries, routes, timing, the whole chain that gets an item from factory to doorstep. The word began as a military term for supplying armies and is now the name of a vast industry.",
+    "audio": true
+  },
+  {
+    "k": "clock",
+    "t": "clock",
+    "kind": "word",
+    "forms": [
+      "clock"
+    ],
+    "text": "As a verb, to clock miles or hours is to accumulate them — the image is of a clock or odometer ticking up. Saying American autonomous lorries are allowed but fewer clock miles there means the permission exists on paper while the actual driving is happening in China.",
+    "audio": true
+  },
+  {
+    "k": "rubber-hits-the-road",
+    "t": "where the rubber hits the road",
+    "kind": "phrase",
+    "forms": [
+      "the rubber hits the road"
+    ],
+    "text": "Where the rubber hits the road is the moment theory meets reality — the point where a tyre actually touches the surface and grip either works or does not. It is one of those idioms worth knowing because it turns up in business and sports talk constantly, and here it is a small joke, since the subject really is lorry tyres.",
+    "audio": true
+  },
+  {
+    "k": "regulators",
+    "t": "regulators",
+    "kind": "word",
+    "forms": [
+      "regulators"
+    ],
+    "text": "Regulators are the government bodies that write and enforce the rules for an industry — what a vehicle must have, what a drug must prove, what a bank may risk. The article keeps them separate from engineers on purpose: the technology may be ready before regulators allow lorries to operate without humans.",
+    "audio": true
+  },
+  {
+    "k": "jd-com",
+    "t": "JD.com",
+    "kind": "name",
+    "forms": [
+      "JD.com",
+      "JD"
+    ],
+    "text": "JD.com is one of China's largest online retailers, a rival to Alibaba, and unusually it owns its own warehouses and delivery fleet instead of leaving that to other firms. That is why it appears here: it employs the couriers and buys the robots, so automation shows up in its own headcount.",
+    "audio": true
+  },
+  {
+    "k": "pilot",
+    "t": "pilot",
+    "kind": "word",
+    "forms": [
+      "pilot"
+    ],
+    "text": "Besides the person flying a plane, a pilot is a small first trial of something before it is rolled out widely — a pilot programme, a pilot episode. When the article says the pilot permits the lorry to drive itself, it means the trial scheme does, not a person in the cab.",
+    "audio": true
+  },
+  {
+    "k": "safety-driver",
+    "t": "safety driver",
+    "kind": "name",
+    "forms": [
+      "safety driver"
+    ],
+    "text": "A safety driver is a trained human who rides in a self-driving vehicle doing nothing at all unless something goes wrong, ready to take the controls. Their presence is the clearest sign a vehicle is not yet trusted alone, and regulators usually require one for years before allowing genuinely empty vehicles.",
+    "audio": true
+  },
+  {
+    "k": "unmanned",
+    "t": "unmanned",
+    "kind": "word",
+    "forms": [
+      "unmanned"
+    ],
+    "text": "Unmanned means operating with no human aboard — unmanned vehicles, unmanned aircraft. It describes where the person is, not whether one is involved, since an unmanned drone may still have someone controlling it from a desk far away.",
+    "audio": true
+  },
+  {
+    "k": "couriers",
+    "t": "couriers",
+    "kind": "word",
+    "forms": [
+      "couriers",
+      "courier"
+    ],
+    "text": "A courier is someone who carries packages or messages from one place to another, especially for a delivery company. The word carries a whiff of old formality — diplomatic couriers — but in China today it means the scooter riders delivering parcels and food, several hundred thousand of them at JD alone.",
+    "audio": true
+  },
+  {
+    "k": "wont",
+    "t": "wont",
+    "kind": "word",
+    "forms": [
+      "wont"
+    ],
+    "text": "Wont, rhyming with want, means accustomed or in the habit of — bosses are wont to predict means they habitually do. It is old-fashioned and now survives mainly in this construction and in the phrase as is his wont. Take care not to read it as won't, which means the opposite of doing something.",
+    "audio": true
+  },
+  {
+    "k": "counterparts",
+    "t": "counterparts",
+    "kind": "word",
+    "forms": [
+      "counterparts"
+    ],
+    "text": "Your counterpart is the person who holds the equivalent position somewhere else — a French minister's counterpart is the British minister with the same job. Chinese bosses being quieter than their American counterparts means bosses compared with bosses, which is what makes the contrast fair.",
+    "audio": true
+  },
+  {
+    "k": "took-pains",
+    "t": "took pains to",
+    "kind": "phrase",
+    "forms": [
+      "took pains"
+    ],
+    "text": "To take pains to do something is to go to deliberate trouble over it — the pains here are effort, not hurt. Saying Mr Liu took pains to note that he intends to keep his workers employed hints that he knew the announcement sounded alarming and worked hard to soften it.",
+    "audio": true
+  },
+  {
+    "k": "juggernaut",
+    "t": "juggernaut",
+    "kind": "word",
+    "forms": [
+      "juggernaut"
+    ],
+    "text": "A juggernaut is something huge and unstoppable, usually a company or a force rolling over whatever is in its way. The word comes from Jagannath, a Hindu deity whose enormous temple chariot British writers described as crushing everything in its path. Calling JD a retail juggernaut says it is vast and hard to stop, and the sentence then turns it around: even a juggernaut will not need that many robot technicians.",
+    "audio": true
+  },
+  {
+    "k": "blue-collar",
+    "t": "blue-collar",
+    "kind": "word",
+    "forms": [
+      "blue-collar"
+    ],
+    "text": "Blue-collar work is manual or skilled physical labour — factories, construction, driving, delivery — named for the hard-wearing blue shirts such workers traditionally wore. The pairing with white-collar is one of the oldest ways English divides the workforce, and this article's alarming claim is that AI now threatens both at once.",
+    "audio": true
+  },
+  {
+    "k": "white-collar",
+    "t": "white-collar",
+    "kind": "word",
+    "forms": [
+      "white-collar"
+    ],
+    "text": "White-collar work is office work — administration, finance, design, management — named for the white dress shirts worn at a desk. Mr Liu's promise to turn blue-collar workers into white-collar ones means moving them from vans and warehouses into offices maintaining robots, which is a genuine ladder for some people and, as the article notes, not for that many.",
+    "audio": true
+  },
+  {
+    "k": "give-rise-to",
+    "t": "give rise to",
+    "kind": "phrase",
+    "forms": [
+      "give rise to"
+    ],
+    "text": "To give rise to something is to cause it to come into existence — a standard, slightly formal way of stating cause. The optimistic argument runs that technology gives rise to whole new sectors and roles nobody could have imagined, as e-commerce did.",
+    "audio": true
+  },
+  {
+    "k": "quintupled",
+    "t": "quintupled",
+    "kind": "word",
+    "forms": [
+      "quintupled"
+    ],
+    "text": "To quintuple is to multiply by five, the next step along from double, triple and quadruple. JD's workforce going from 180,000 to 930,000 has quintupled, and the number is doing argumentative work: it is Mr Shen's evidence that automating does not have to mean shrinking.",
+    "audio": true
+  },
+  {
+    "k": "hawk",
+    "t": "hawk",
+    "kind": "word",
+    "forms": [
+      "hawk"
+    ],
+    "text": "Beyond the bird, to hawk goods is to sell them by calling out and pushing them at people, the way a street vendor does. AI livestreamers that hawk products are software presenters doing the shouty sales patter that human streamers used to do.",
+    "audio": true
+  },
+  {
+    "k": "livestreamers",
+    "t": "livestreamers",
+    "kind": "word",
+    "forms": [
+      "livestreamers"
+    ],
+    "text": "A livestreamer broadcasts live video online, and in China livestream selling is an enormous industry: hosts demonstrate products for hours while viewers buy with a tap. It is a real career, which is what makes an AI livestreamer that replaces a human one such a pointed example.",
+    "audio": true
+  },
+  {
+    "k": "last-mile",
+    "t": "last-mile delivery",
+    "kind": "name",
+    "forms": [
+      "last-mile"
+    ],
+    "text": "The last mile is logistics jargon for the final stretch of a parcel's journey — from the local depot to your actual door. It gets its own name because it is the most expensive and awkward part: one van, one street, many stops, which is exactly why firms want robots to do it.",
+    "audio": true
+  },
+  {
+    "k": "ventures",
+    "t": "ventures",
+    "kind": "word",
+    "forms": [
+      "ventures"
+    ],
+    "text": "To venture somewhere is to go into it despite risk — the same root as adventure. A company that ventures into services is moving into a business it has not done before, and the word quietly admits that it might not work.",
+    "audio": true
+  },
+  {
+    "k": "dovetails",
+    "t": "dovetails",
+    "kind": "word",
+    "forms": [
+      "dovetails"
+    ],
+    "text": "A dovetail is a woodworking joint whose wedge-shaped pins interlock so tightly the pieces cannot be pulled apart. So when one plan dovetails with another, the two fit together neatly, each supporting the other. Mr Shen's vision dovetails with the government's goal because retraining couriers for care work serves his business and Beijing's policy at once.",
+    "audio": true
+  },
+  {
+    "k": "domestic-demand",
+    "t": "domestic demand",
+    "kind": "name",
+    "forms": [
+      "domestic demand"
+    ],
+    "text": "Domestic demand is the total spending by people and firms inside a country, as opposed to what it sells abroad. It matters here because China has long relied on exports and investment, and workers who lose income cannot spend, so displacement threatens the very demand the government is trying to grow.",
+    "audio": true
+  },
+  {
+    "k": "working-age-population",
+    "t": "working-age population",
+    "kind": "name",
+    "forms": [
+      "working-age population"
+    ],
+    "text": "The working-age population is everyone in the age band a country counts as able to work — usually about 15 to 64 — whether or not they actually have a job. It is the pool all workers must come from, so a 25% shrinkage by 2050 means China will simply have far fewer possible workers, which is the long-run reason its leaders want robots.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckons",
+    "kind": "word",
+    "forms": [
+      "reckons",
+      "reckon"
+    ],
+    "text": "To reckon is to calculate or judge, and in British English it doubles as a plain way of saying think — the UN reckons, Morgan Stanley reckons. Journalists use it to mark an estimate as somebody's considered guess rather than a measured fact.",
+    "audio": true
+  },
+  {
+    "k": "rolling-out",
+    "t": "rolling out",
+    "kind": "phrase",
+    "forms": [
+      "rolling out"
+    ],
+    "text": "To roll something out is to introduce it gradually and at scale — a new app rolled out to users, a vaccine rolled out across a country. The article's warning is about timing: rolling out robots is sensible in the long run and may cause a lot of pain in the short run.",
+    "audio": true
+  },
+  {
+    "k": "shenzhen",
+    "t": "Shenzhen",
+    "kind": "name",
+    "forms": [
+      "Shenzhen"
+    ],
+    "text": "Shenzhen is a southern Chinese city next to Hong Kong that grew from a small settlement into a metropolis of millions in about forty years, and is now the centre of Chinese electronics and hardware manufacturing. If you want a factory to build a prototype quickly, Shenzhen is where it happens — hence its ambition to be a Robot Valley.",
+    "audio": true
+  },
+  {
+    "k": "metropolis",
+    "t": "metropolis",
+    "kind": "word",
+    "forms": [
+      "metropolis"
+    ],
+    "text": "A metropolis is a very large, important city — from Greek words for mother and city. It is a step up from town or city in scale and usually implies the place is a centre for a whole region, which Shenzhen is for Chinese manufacturing.",
+    "audio": true
+  },
+  {
+    "k": "resignation",
+    "t": "resignation",
+    "kind": "word",
+    "forms": [
+      "resignation"
+    ],
+    "text": "Alongside the familiar sense of quitting a job, resignation means calm acceptance of something unpleasant you believe you cannot change. That is the meaning here: workers in Shenzhen are not protesting the robots, they simply expect to be replaced eventually, and Mr Lin's Replacement is normal is resignation in three words.",
+    "audio": true
+  },
+  {
+    "k": "thwarted",
+    "t": "thwarted",
+    "kind": "word",
+    "forms": [
+      "thwarted"
+    ],
+    "text": "To thwart something is to block it from succeeding. It is a strong, slightly dramatic word — thwarted ambitions, a thwarted plot — so using it for floor-sweeping robots stopped by leaves and stones is gently comic, which is exactly the writer's point about how far they still have to go.",
+    "audio": true
+  },
+  {
+    "k": "humanoid",
+    "t": "humanoid",
+    "kind": "word",
+    "forms": [
+      "humanoids",
+      "humanoid"
+    ],
+    "text": "Humanoid means shaped like a human — two arms, two legs, roughly our proportions. Robots are built this way not because it is efficient but because the world is already built for human bodies: stairs, door handles and tools all assume hands and legs, so a humanoid can work in places a specialised machine cannot.",
+    "audio": true
+  },
+  {
+    "k": "robotaxi",
+    "t": "robotaxis",
+    "kind": "name",
+    "forms": [
+      "robotaxis"
+    ],
+    "text": "A robotaxi is a self-driving car offering rides for money with no driver aboard. Several Chinese cities already run them commercially, which is why they keep appearing in this article as the thing ordinary workers point at: proof that being replaced is not a prediction but something passing them on the street.",
+    "audio": true
+  },
+  {
+    "k": "pragmatic",
+    "t": "pragmatic",
+    "kind": "word",
+    "forms": [
+      "pragmatic"
+    ],
+    "text": "A pragmatic person deals with things as they actually are rather than as they should be — practical rather than principled, focused on what works. The article calls Chinese blue-collar workers more pragmatic than fearful: they expect replacement and get on with the day anyway.",
+    "audio": true
+  },
+  {
+    "k": "stock",
+    "t": "stock",
+    "kind": "word",
+    "forms": [
+      "stock"
+    ],
+    "text": "Separate from shares in a company, a stock is the total quantity of something held at a given moment — the stock in a shop's back room, a country's housing stock. China increasing its stock of industrial robots to 2m means the total now installed and working, not the number bought that year, which was almost 300,000.",
+    "audio": true
+  },
+  {
+    "k": "tubers",
+    "t": "tubers",
+    "kind": "word",
+    "forms": [
+      "tubers"
+    ],
+    "text": "A tuber is the swollen underground part of certain plants that stores food — a potato is the familiar one. The detail matters mechanically: because tubers vary in shape and size, no fixed motion works twice, which is why cutting bad bits from potatoes is hard for a traditional robot and a good test for a more flexible one.",
+    "audio": true
+  },
+  {
+    "k": "conveyor-belt",
+    "t": "conveyor belt",
+    "kind": "name",
+    "forms": [
+      "conveyor belt"
+    ],
+    "text": "A conveyor belt is the moving loop of rubber that carries items steadily past a line of workers or machines. It is the basic piece of equipment that made assembly-line production possible, and it sets the terms of factory automation: the machine must handle whatever arrives, at the belt's pace, without stopping the line.",
+    "audio": true
+  },
+  {
+    "k": "for-all-the",
+    "t": "for all the",
+    "kind": "phrase",
+    "forms": [
+      "For all the"
+    ],
+    "text": "For all the X means despite all the X — a compact way of conceding something before contradicting it. For all the hype around humanoids, few yet work on factory floors sets up the gap between excitement and reality, and the construction is worth recognising because the real point always comes after the comma.",
+    "audio": true
+  },
+  {
+    "k": "state-owned-enterprises",
+    "t": "state-owned enterprises",
+    "kind": "name",
+    "forms": [
+      "state-owned enterprises"
+    ],
+    "text": "A state-owned enterprise is a company the government owns and controls, run as a business but answering to the state. They dominate energy, banking, telecoms and heavy industry in China, which is why leaders can simply instruct them to put 10,000 humanoids to work — an order no government could give a private firm.",
+    "audio": true
+  },
+  {
+    "k": "scale",
+    "t": "scale",
+    "kind": "word",
+    "forms": [
+      "scale",
+      "scales"
+    ],
+    "text": "To achieve scale is to reach a size large enough that costs per unit fall and the business works — a very common verb in technology writing. As production scales, each robot gets cheaper to make, which is the mechanism behind the prediction that robots will keep becoming cheaper relative to human workers.",
+    "audio": true
+  },
+  {
+    "k": "return-on-investment",
+    "t": "return on investment",
+    "kind": "name",
+    "forms": [
+      "return on their investment"
+    ],
+    "text": "Return on investment is what you get back compared with what you put in, and how long that takes. A factory wanting its investment back within two years means the robot must save more in wages over two years than the 300,000 yuan it cost — which is why the price of robots and the price of labour decide the whole question.",
+    "audio": true
+  },
+  {
+    "k": "slack-off",
+    "t": "slack off",
+    "kind": "phrase",
+    "forms": [
+      "slack off"
+    ],
+    "text": "To slack off is to work less hard than you should — from slack, meaning loose or not taut. It appears here as part of a manager's argument for robots, and it is worth noticing what that argument really is: the appeal is not only efficiency but the fact that a machine has no bad days.",
+    "audio": true
+  },
+  {
+    "k": "training-data",
+    "t": "training data",
+    "kind": "name",
+    "forms": [
+      "training data"
+    ],
+    "text": "Training data is the pile of examples an AI model learns patterns from, and for a robot that means recordings of a task being done physically — the exact forces, angles and movements. That is what the 500 sensor-wearing humans in Tianjin are producing: to teach a robot to fold clothes, somebody must first fold clothes while wearing sensors, thousands of times.",
+    "audio": true
+  },
+  {
+    "k": "gimmicky",
+    "t": "gimmicky",
+    "kind": "word",
+    "forms": [
+      "gimmicky"
+    ],
+    "text": "A gimmick is an eye-catching trick used to attract attention rather than to do something genuinely useful, and gimmicky describes anything that feels like one. Robo-baristas that need a human to fill their coffee machines are gimmicky in precisely that sense: the robot is the show, and a person is still doing the work.",
+    "audio": true
+  },
+  {
+    "k": "prospects",
+    "t": "prospects",
+    "kind": "word",
+    "forms": [
+      "prospects"
+    ],
+    "text": "Your prospects are your chances of doing well in the future — job prospects, career prospects. Saying young Chinese workers' prospects are especially grim means the outlook for them specifically, not the state of things right now.",
+    "audio": true
+  },
+  {
+    "k": "property-crisis",
+    "t": "the property crisis",
+    "kind": "name",
+    "forms": [
+      "property crisis"
+    ],
+    "text": "China's property crisis is the long slump that began around 2021, when huge developers ran out of money and unfinished flats, falling prices and lost savings followed. It matters to a jobs story because construction employed enormous numbers of people and because most Chinese families hold their savings in property, so the crisis hit both work and wealth.",
+    "audio": true
+  },
+  {
+    "k": "grappling-with",
+    "t": "grappling with",
+    "kind": "phrase",
+    "forms": [
+      "grappling with"
+    ],
+    "text": "To grapple with something is to struggle with it at close quarters — the word comes from wrestling and from grappling hooks. An economy grappling with weak wage growth is fighting a problem it has not beaten, and the phrase implies effort rather than helplessness.",
+    "audio": true
+  },
+  {
+    "k": "youth-unemployment",
+    "t": "youth unemployment",
+    "kind": "name",
+    "forms": [
+      "youth unemployment"
+    ],
+    "text": "Youth unemployment measures the share of young people — usually 16 to 24 — who want work and cannot find it. It is tracked separately from the overall rate because it behaves differently and matters more: people who start badly tend to earn less for decades, and large numbers of idle young people worry every government.",
+    "audio": true
+  },
+  {
+    "k": "five-year-plan",
+    "t": "five-year plan",
+    "kind": "name",
+    "forms": [
+      "five-year plan"
+    ],
+    "text": "A five-year plan is the Chinese government's published programme of economic targets and priorities for the coming five years, a practice inherited from the Soviet Union. Because these plans normally set a target for new urban jobs, the article's quiet detail is enormous: this year, for the first time in decades, no such target was set.",
+    "audio": true
+  },
+  {
+    "k": "frontier",
+    "t": "the frontier",
+    "kind": "word",
+    "forms": [
+      "frontier"
+    ],
+    "text": "A frontier is the edge of settled territory, and in technology it means the leading edge of what anyone can currently do. Companies pushing to the frontier are working at the limit of the field rather than copying what already exists — a line of explorers rather than followers.",
+    "audio": true
+  },
+  {
+    "k": "calibrating",
+    "t": "calibrating",
+    "kind": "word",
+    "forms": [
+      "calibrating"
+    ],
+    "text": "To calibrate an instrument is to adjust it precisely against a known standard so its readings are right. Used of policy, calibrating the degree of intervention means tuning how much the government interferes — enough to reassure workers, not so much that it discourages firms from innovating.",
+    "audio": true
+  },
+  {
+    "k": "intervention",
+    "t": "intervention",
+    "kind": "word",
+    "forms": [
+      "intervention"
+    ],
+    "text": "Intervention is stepping into a situation to change how it turns out; in economics it means government action in a market it would otherwise leave alone — subsidies, rules, bans, price controls. The debate running through this article is not whether the state may intervene but how much and how soon.",
+    "audio": true
+  },
+  {
+    "k": "stifle",
+    "t": "stifle",
+    "kind": "word",
+    "forms": [
+      "stifle"
+    ],
+    "text": "To stifle is to smother — literally to stop someone breathing, figuratively to suppress something before it can develop. Stifled innovation is the standard argument against regulation: rules meant to protect workers may also prevent the useful thing from ever being built.",
+    "audio": true
+  },
+  {
+    "k": "social-stability",
+    "t": "social stability",
+    "kind": "name",
+    "forms": [
+      "social stability"
+    ],
+    "text": "Social stability is the phrase Chinese officials use for public order and the absence of unrest, and it functions as a supreme policy goal — protests, strikes and mass anger are what the system most works to avoid. Reading that the party worries about AI disrupting social stability tells you the concern is not only economic but about control.",
+    "audio": true
+  },
+  {
+    "k": "ballast",
+    "t": "ballast",
+    "kind": "word",
+    "forms": [
+      "ballast"
+    ],
+    "text": "Ballast is heavy material — stone, water, sand — carried low in a ship to keep it steady in rough seas. Calling the public sector ballast says its millions of secure jobs are dead weight in the useful sense: they do not move when everything else does, so they keep the whole vessel from tipping.",
+    "audio": true
+  },
+  {
+    "k": "offset",
+    "t": "offset",
+    "kind": "word",
+    "forms": [
+      "offset"
+    ],
+    "text": "To offset something is to balance it out with an equal and opposite amount — offsetting a loss with a gain. Officials pressing firms to add new jobs to offset lay-offs caused by automation want the totals to cancel out, though a job created is rarely in the same place or for the same person as a job destroyed.",
+    "audio": true
+  },
+  {
+    "k": "mouthpiece",
+    "t": "mouthpiece",
+    "kind": "word",
+    "forms": [
+      "mouthpiece"
+    ],
+    "text": "A mouthpiece is a person or publication that speaks on behalf of somebody else rather than independently, and the word is nearly always a criticism when applied to media. Calling Workers' Daily the mouthpiece of China's official trade union tells you to read its criticism of digital cloning as the union's position, and so as a signal about what the state will tolerate.",
+    "audio": true
+  },
+  {
+    "k": "trade-union",
+    "t": "trade union",
+    "kind": "name",
+    "forms": [
+      "trade union"
+    ],
+    "text": "A trade union is an organisation of workers that bargains collectively with employers over pay and conditions — Americans usually say labor union. The word official is doing heavy lifting here: China has one state-run union federation rather than independent unions, so it represents workers and answers to the party at the same time.",
+    "audio": true
+  },
+  {
+    "k": "consultancy",
+    "t": "consultancy",
+    "kind": "word",
+    "forms": [
+      "consultancy"
+    ],
+    "text": "A consultancy is a firm that sells advice and analysis — on strategy, risk, politics — to companies and governments that want an outside read. Eurasia Group being described as a consultancy is the paper telling you who pays for this expert's judgment.",
+    "audio": true
+  },
+  {
+    "k": "fintech",
+    "t": "fintech",
+    "kind": "word",
+    "forms": [
+      "fintech"
+    ],
+    "text": "Fintech is short for financial technology — companies using software to do what banks and brokers traditionally did, such as payments, lending or investing through an app. The word is worth knowing because it names a whole sector of employers that barely existed twenty years ago.",
+    "audio": true
+  },
+  {
+    "k": "deemed",
+    "t": "deemed",
+    "kind": "word",
+    "forms": [
+      "deemed"
+    ],
+    "text": "To deem something is to judge or officially declare it to be so, and the word carries the weight of authority — a judge deemed the firing illegal. It is not the same as thought: deeming makes it the official position, with consequences.",
+    "audio": true
+  },
+  {
+    "k": "demotion",
+    "t": "demotion",
+    "kind": "word",
+    "forms": [
+      "demotion"
+    ],
+    "text": "A demotion is a move down to a lower rank, usually with lower pay — the opposite of a promotion. It matters legally in this case because the worker was sacked after refusing one, so the question before the judge was whether being offered worse terms and turning them down counts as a reason to fire someone.",
+    "audio": true
+  },
+  {
+    "k": "sacked",
+    "t": "sacked",
+    "kind": "word",
+    "forms": [
+      "sacked"
+    ],
+    "text": "To be sacked is British English for being fired — dismissed from a job, usually for a stated fault. The image is old and vivid: a dismissed workman was handed the sack holding his tools and sent off.",
+    "audio": true
+  },
+  {
+    "k": "sided-with",
+    "t": "sided with",
+    "kind": "phrase",
+    "forms": [
+      "sided with"
+    ],
+    "text": "To side with someone is to take their part in a dispute. Judges siding with workers in AI-related firings means that when the case came down to employer against employee, the ruling went the employee's way — and the article notes those judges operate under party leadership, so the pattern reflects policy as much as law.",
+    "audio": true
+  },
+  {
+    "k": "held-up",
+    "t": "held up as",
+    "kind": "phrase",
+    "forms": [
+      "held up"
+    ],
+    "text": "To hold something up as an example is to display it deliberately for others to learn from — quite separate from being held up by traffic or by a robber. These court cases have been held up by the government as warnings, meaning officials are publicising them on purpose so other firms take the hint.",
+    "audio": true
+  },
+  {
+    "k": "curricula",
+    "t": "curricula",
+    "kind": "word",
+    "forms": [
+      "curricula"
+    ],
+    "text": "A curriculum is everything a school sets out to teach in a course or a year; curricula is its Latin plural, like datum and data. Schools incorporating AI lessons into their curricula means the change is built into the official programme, not left to individual teachers.",
+    "audio": true
+  },
+  {
+    "k": "funnelling",
+    "t": "funnelling",
+    "kind": "word",
+    "forms": [
+      "funnelling"
+    ],
+    "text": "A funnel channels a wide flow into a narrow opening, so to funnel people is to direct large numbers of them into a small set of destinations. Universities funnelling students into new degrees in embodied intelligence and agricultural robotics — while cutting arts and humanities courses — is the state deciding in advance what the next generation of graduates will be trained to do.",
+    "audio": true
+  },
+  {
+    "k": "obsolete",
+    "t": "obsolete",
+    "kind": "word",
+    "forms": [
+      "obsolete"
+    ],
+    "text": "Something obsolete is out of date and no longer useful, replaced by something better — obsolete technology, obsolete skills. The article puts the word in quotation marks when describing cut degrees, which is the writer declining to endorse the judgment that arts and humanities courses are obsolete.",
+    "audio": true
+  },
+  {
+    "k": "vocational",
+    "t": "vocational",
+    "kind": "word",
+    "forms": [
+      "vocational"
+    ],
+    "text": "Vocational education trains you for a specific trade or job — electrician, nurse, mechanic, drone operator — rather than teaching general academic subjects. The word comes from vocation, a calling, and the vocational-versus-academic split is one of the big live arguments in education everywhere.",
+    "audio": true
+  },
+  {
+    "k": "low-altitude-economy",
+    "t": "the low-altitude economy",
+    "kind": "name",
+    "forms": [
+      "low-altitude economy"
+    ],
+    "text": "The low-altitude economy is a Chinese policy term for all the business done in the airspace just above our heads — delivery drones, agricultural spraying, inspection flights, eventually flying taxis. Naming a whole economy after a slice of air shows how Chinese industrial policy works: officials define a sector, then fund training and firms to fill it.",
+    "audio": true
+  },
+  {
+    "k": "fall-through-the-cracks",
+    "t": "fall through the cracks",
+    "kind": "phrase",
+    "forms": [
+      "fall through the cracks"
+    ],
+    "text": "To fall through the cracks is to be missed by a system that was supposed to catch you — the image is of gaps in floorboards that small things slip through. It is the natural companion to the safety-net image, and the sentence puts both together: those who fall through the cracks land on a net that is threadbare.",
+    "audio": true
+  },
+  {
+    "k": "threadbare",
+    "t": "threadbare",
+    "kind": "word",
+    "forms": [
+      "threadbare"
+    ],
+    "text": "Cloth goes threadbare when it has been worn so long the threads show through and there is nothing left of the nap — thin, frayed, barely holding. Applied to a safety net it means the programmes technically exist but give too little to catch anyone properly, and the word also works for an excuse or an argument worn thin by overuse.",
+    "audio": true
+  },
+  {
+    "k": "meagre",
+    "t": "meagre",
+    "kind": "word",
+    "forms": [
+      "meagre"
+    ],
+    "text": "Meagre, the British spelling of meager, means small in amount and clearly not enough — a meagre portion, a meagre income. It is a judgment as much as a measurement: calling social security meagre says the payments exist and will not keep anyone afloat.",
+    "audio": true
+  },
+  {
+    "k": "legislature",
+    "t": "the legislature",
+    "kind": "name",
+    "forms": [
+      "legislature"
+    ],
+    "text": "A legislature is the body that makes a country's laws — Congress in America, Parliament in Britain, the National People's Congress in China. Knowing that Zheng gave his warning to the legislature rather than to a newspaper tells you it was made inside the formal system, as part of the process that writes the rules.",
+    "audio": true
+  },
+  {
+    "k": "floated",
+    "t": "floated",
+    "kind": "word",
+    "forms": [
+      "floated"
+    ],
+    "text": "To float an idea is to put it forward tentatively to see how people react, without committing to it — you float a proposal the way you float a boat and watch whether it stays up. Both the robot tax and the tax on AI firms excess profits are floated, not proposed, which is the writer telling you these are trial balloons rather than policy.",
+    "audio": true
+  },
+  {
+    "k": "help-wanted",
+    "t": "Help wanted",
+    "kind": "phrase",
+    "forms": [
+      "Help wanted"
+    ],
+    "text": "Help wanted is the traditional wording of a job advertisement in a shop window or newspaper. The Economist uses it as a section heading with a double edge: the article is about people wanting work, and about a state that may soon need to help them.",
+    "audio": true
+  },
+  {
+    "k": "handouts",
+    "t": "handouts",
+    "kind": "word",
+    "forms": [
+      "handouts"
+    ],
+    "text": "A handout here is money given directly by the government to people who need it, and unlike the handout a teacher gives in class, this sense is usually loaded: those against such payments use the word to suggest something unearned. Notice that the article pairs cash handouts with AI-unemployment insurance, which describes the same money in language that sounds like a right rather than a gift.",
+    "audio": true
+  },
+  {
+    "k": "creative-destruction",
+    "t": "creative destruction",
+    "kind": "name",
+    "forms": [
+      "creative destruction"
+    ],
+    "text": "Creative destruction is the economist Joseph Schumpeter's term for how new technologies build by wrecking: the car industry created millions of jobs and destroyed the trade in horses, carriages and stable work. The idea is usually cited to reassure people that the destruction is temporary and the creation lasting, but Mr Cai quotes it to make the opposite point, that the more violent the process, the less market forces alone protect the people caught in it.",
+    "audio": true
+  },
+  {
+    "k": "editorial",
+    "t": "editorial",
+    "kind": "word",
+    "forms": [
+      "editorial"
+    ],
+    "text": "An editorial is an article stating an opinion — the publication's own, or in some systems that of the authorities behind it — rather than reporting news. A front-page editorial in the central party school's paper is about as loud as an argument can be made inside the Chinese system, which is why the article bothers to say where it appeared.",
+    "audio": true
+  },
+  {
+    "k": "constituency",
+    "t": "constituency",
+    "kind": "word",
+    "forms": [
+      "constituency"
+    ],
+    "text": "A constituency is a group of people with a shared interest whose support a politician needs or fears — originally the voters of one district. Saying the constituency that might agitate for more help is getting larger means the number of people with a reason to demand it is growing, which matters even in a system without elections.",
+    "audio": true
+  },
+  {
+    "k": "agitate-for",
+    "t": "agitate for",
+    "kind": "phrase",
+    "forms": [
+      "agitate for"
+    ],
+    "text": "To agitate for something is to campaign loudly and persistently for it — to stir things up, which is exactly what the word means literally. It suggests organised pressure rather than private complaint, and that is the prospect the article says is growing as the gig workforce swells.",
+    "audio": true
+  },
+  {
+    "k": "flexible-workers",
+    "t": "flexible workers",
+    "kind": "name",
+    "forms": [
+      "flexible workers"
+    ],
+    "text": "Flexible workers is the official Chinese term for people without a standard employment contract — delivery riders, ride-share drivers, livestreamers, day labourers. The article puts it in quotation marks because the label is doing quiet work: flexible sounds like freedom, and what it means in practice is no fixed hours, no fixed employer and, usually, no social insurance.",
+    "audio": true
+  },
+  {
+    "k": "gig-economy",
+    "t": "the gig economy",
+    "kind": "name",
+    "forms": [
+      "gig economy"
+    ],
+    "text": "The gig economy is the part of the labour market where people are paid per task rather than employed — each delivery, each ride, each shift booked separately through an app. It is huge and growing, 320m people in China alone, and the reason it recurs in stories like this one is that gig workers usually sit outside the protections built for employees: no sick pay, no redundancy, often no pension.",
+    "audio": true
+  },
+  {
+    "k": "day-labourers",
+    "t": "day labourers",
+    "kind": "word",
+    "forms": [
+      "day labourers"
+    ],
+    "text": "A day labourer is hired one day at a time, paid at the end of it, with no promise of work tomorrow. It is one of the oldest and least secure ways of earning a living, and the fact that factories in a high-tech economy still run on it is part of why the safety net matters so much.",
+    "audio": true
+  },
+  {
+    "k": "swell",
+    "t": "swell",
+    "kind": "word",
+    "forms": [
+      "swell"
+    ],
+    "text": "To swell is to grow larger, usually gradually and from within — a river swells after rain, a crowd swells. Saying the number of flexible workers will swell to 320m pictures a rising level rather than a jump.",
+    "audio": true
+  },
+  {
+    "k": "lest",
+    "t": "lest",
+    "kind": "word",
+    "forms": [
+      "lest"
+    ],
+    "text": "Lest is a formal conjunction meaning for fear that or in order that something should not happen — steps are taken lest their precarity transform into unrest. It is old-fashioned but still common in serious writing, and it always introduces the bad outcome somebody is acting to prevent.",
+    "audio": true
+  },
+  {
+    "k": "precarity",
+    "t": "precarity",
+    "kind": "word",
+    "forms": [
+      "precarity"
+    ],
+    "text": "Precarity is the condition of living without security — unstable work, unpredictable income, no cushion if anything goes wrong. It comes from the same root as precarious and has become the standard term for what gig work feels like from the inside: you may be earning today and have no claim on tomorrow.",
+    "audio": true
+  },
+  {
+    "k": "unrest",
+    "t": "unrest",
+    "kind": "word",
+    "forms": [
+      "unrest"
+    ],
+    "text": "Unrest is widespread public anger expressed in action — protests, strikes, riots. It is the word governments use for the thing they are trying to prevent, and in this sentence it is the destination the article suggests precarity may lead to if nothing changes.",
+    "audio": true
+  },
+  {
+    "k": "professed",
+    "t": "professed",
+    "kind": "word",
+    "forms": [
+      "professed"
+    ],
+    "text": "To profess something is to declare it openly — a professed belief, a professed aversion. The word often keeps a faint distance, reporting what a person says about themselves without vouching for it, which is useful when the writer is describing a leader's stated dislike of welfare spending.",
+    "audio": true
+  },
+  {
+    "k": "aversion",
+    "t": "aversion",
+    "kind": "word",
+    "forms": [
+      "aversion"
+    ],
+    "text": "An aversion is a strong dislike that makes you avoid something — an aversion to spiders, to risk, to publicity. Xi Jinping's professed aversion to welfarism is the single biggest reason the article doubts any generous scheme is coming, whatever the economists propose.",
+    "audio": true
+  },
+  {
+    "k": "welfarism",
+    "t": "welfarism",
+    "kind": "name",
+    "forms": [
+      "welfarism"
+    ],
+    "text": "Welfarism is the idea that the state should provide generously for its citizens through benefits and social programmes. In official Chinese usage it is a criticism, not a description: leaders warn against the welfare trap, arguing that European-style benefits make people dependent and economies slow, which is why the word appears here in quotation marks.",
+    "audio": true
+  },
+  {
+    "k": "scrape-by",
+    "t": "scrape by",
+    "kind": "phrase",
+    "forms": [
+      "scrape by"
+    ],
+    "text": "To scrape by is to survive on barely enough — just managing, nothing spare. The image is of scraping the last of something from the bottom of a container, and the article's closing verdict on ride-share drivers facing robotaxis is exactly that: not ruin, but no room.",
+    "audio": true
+  },
+  {
+    "k": "xi-jinping",
+    "t": "Xi Jinping",
+    "kind": "name",
+    "forms": [
+      "Xi Jinping"
+    ],
+    "text": "Xi Jinping has led China since 2012 as head of the Communist Party, the state and the military, and is the most powerful Chinese leader in decades. His personal views shape policy directly, which is why his stated dislike of welfarism functions in this article as something close to a settled limit on what the government will do.",
+    "audio": true
+  },
+  {
+    "k": "choukashi",
+    "t": "choukashi",
+    "kind": "name",
+    "forms": [
+      "choukashi"
+    ],
+    "text": "Choukashi is a new Chinese word for the people who write prompts for AI video systems; it means card-drawers, after the idea of drawing a card at random and hoping for a good one. The name is a wry description of the work: you cannot control exactly what the model produces, so you ask again and again and keep the lucky result.",
+    "audio": true
+  },
+  {
+    "k": "prompts",
+    "t": "prompts",
+    "kind": "word",
+    "forms": [
+      "prompts"
+    ],
+    "text": "In AI, a prompt is the instruction you type to get a model to produce something — the more precisely it describes what you want, the closer the output. The article's example shows how technical that has become: not make a sad scene but a close-up of a character's furrowed brows, his expression full of gratitude and expectation.",
+    "audio": true
+  },
+  {
+    "k": "calls-to-mind",
+    "t": "calls to mind",
+    "kind": "phrase",
+    "forms": [
+      "calls to mind"
+    ],
+    "text": "To call something to mind is to bring it to mind, to make you think of it. The phrase is how a writer explains an image or a name without claiming the resemblance is exact — here, that choukashi calls to mind randomly drawing cards.",
+    "audio": true
+  },
+  {
+    "k": "spits-out",
+    "t": "spits out",
+    "kind": "phrase",
+    "forms": [
+      "spits out"
+    ],
+    "text": "To spit something out, said of a machine, means to produce it quickly and without ceremony — a printer spits out pages, a model spits out scenes. The phrase carries a flick of contempt, and that is doing real work in the last paragraph: what took ten film crews now emerges in seconds.",
+    "audio": true
+  },
+  {
+    "k": "in-sight",
+    "t": "not a ... in sight",
+    "kind": "phrase",
+    "forms": [
+      "in sight"
+    ],
+    "text": "Not a thing in sight means there is none to be seen anywhere — a set phrase for total absence. It is the article's last line, and the emptiness is the point: there is not a cameraman, lighting crew or actor in sight in a studio that used to run ten crews a day.",
+    "audio": true
+  }
+]

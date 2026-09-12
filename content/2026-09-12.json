@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-12",
+  "title": "China’s AI drive threatens the world’s largest workforce",
+  "articleUrl": "https://www.economist.com/briefing/2026/08/06/chinas-ai-drive-threatens-the-worlds-largest-workforce",
+  "articlePageUrl": "/articles/2026-09-12.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "assuage",
+      "partOfSpeech": "verb",
+      "pronunciation": "uh-SWAYJ",
+      "articleQuote": "it wants to assuage anxious workers but not stifle innovation",
+      "meaning": "To **assuage** is to make a painful feeling less intense — you assuage fear, guilt, anger, grief, even hunger. The important part is what it does *not* mean: assuaging a feeling is not the same as fixing the thing causing it, which is why the word so often carries a hint of managing people rather than solving their problem. That gap is exactly the point here: Beijing wants to calm workers who are frightened that AI will take their jobs, while doing nothing to slow the AI push that frightens them.",
+      "examples": [
+        "Nothing the coach said could assuage her nerves before the first serve, but the moment the match started she forgot them.",
+        "He bought his little brother ice cream to assuage the guilt of having sat on his headphones."
+      ]
+    },
+    {
+      "word": "sacrosanct",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SAK-roh-sankt",
+      "articleQuote": "The party can look to its huge public sector, where job security is sacrosanct, for ballast.",
+      "meaning": "Something **sacrosanct** is treated as too important to question, change, or touch at all. The word is built from Latin pieces meaning *sacred* and *made holy*, and it usually describes a rule or arrangement that people defend as if it were religious even when it is nothing of the kind. In the article, a job in China's state sector is sacrosanct — the understanding is that nobody takes it away — which is why the party can lean on public employment as steady weight while AI shakes up private jobs. Notice that calling something sacrosanct is often a quiet judgment: it can mean genuinely untouchable, or it can hint that people protect it out of habit rather than reason.",
+      "examples": [
+        "In our house Sunday dinner is sacrosanct — practice, homework and friends all have to fit around it.",
+        "She'll lend you any book on the shelf, but the notes she wrote in the margins are sacrosanct."
+      ]
+    },
+    {
+      "word": "palpable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "PAL-puh-buhl",
+      "articleQuote": "In Shenzhen, a southern metropolis, both techno-optimism and resignation are palpable.",
+      "meaning": "**Palpable** literally means able to be felt with the hand — a doctor still speaks of a palpable pulse. Most of the time, though, it describes a mood so strong that it seems physical, something you notice the second you walk in: palpable tension, palpable relief. The article uses it for Shenzhen, where the excitement about robots and the flat acceptance of workers who expect to be replaced are both unmistakable to a visitor. The word is a compliment to the observer as much as the feeling: it says you did not have to be told, you could sense it.",
+      "examples": [
+        "When the power cut out five minutes before the show, the panic backstage was palpable.",
+        "There was a palpable change in the room the morning the exam results went up."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The social safety net",
+      "articleQuote": "Many of those who fall through the cracks will find a threadbare safety-net, including meagre social security and minimal health insurance.",
+      "meaning": "The sting in this article's tail is arithmetic, not sentiment. When a machine does a job, no wages are paid for that job — and no wages means no contributions flowing into the fund that supports people who are out of work. That is precisely what Zheng Gongcheng, who heads China's social-security association, told the legislature: the more that AI and robots replace workers, the fewer wage-earners are left paying in. It is also why he suggested a new tax on robot-enabled productivity gains, and why another economist floated taxing the \"excess profits\" of AI firms. If the machines earn the money, somebody has to route some of it to the people the machines replaced.\n\nWhat they are all arguing about is the **social safety net** — the economics-and-public-policy term for the government programmes that catch a person when work stops. The usual pieces are *unemployment insurance* (a payment for some months after you lose a job), a *pension* for old age, and *health insurance* so that one illness doesn't wipe out a family's savings. The money mostly comes from **payroll contributions**: a slice taken out of every working person's wages, plus a matching slice paid by their employer, month after month. So the net is not a pot the government fills out of nowhere. It is a pot that people currently working fill for whoever currently isn't — on the understanding that someone will do the same for them one day.\n\nOnce you see the plumbing, the geography in this story makes sense. A laid-off lorry driver in Germany lands on months of unemployment payments and keeps his health cover; the article says a Chinese one meets a *threadbare* net of \"meagre social security and minimal health insurance\" — and the 320m \"flexible workers\" in the gig economy, the delivery riders and ride-share drivers, are barely inside it at all, which is why officials worry about \"precarity\" turning into unrest. Same robots, very different landing.\n\nSo whenever you read that some new technology will \"cost jobs,\" ask the second question the headline number never answers: what actually happens to that person on the day the job ends, and who is paying for it?"
+    },
+    {
+      "name": "Levels of driving automation",
+      "articleQuote": "The pilot permits the lorry to drive itself without human hands on the wheel, so long as a safety driver sits on board.",
+      "meaning": "Two lorries in this article would look identical from the roadside, and they are legally worlds apart. Jia Cunqi's drives itself for hours of motorway, yet China's rules make him sit there with his hands touching the wheel. JD.com's lorry on that 31km route outside Beijing is allowed to run with nobody's hands on the wheel — but only while a safety driver sits on board. Neither one is \"driverless,\" and the difference between them is not a detail.\n\nEngineers sort this out with a ladder of **automation levels**: the best-known version is a six-rung scale, 0 to 5, published by the engineering body SAE International, and regulators now write their rules against it. Every rung answers one question — *who must be watching the road?* On the low rungs the software holds the lane and keeps its distance from the vehicle ahead, while a human watches continuously and remains responsible for everything; that is Mr Jia's lorry, and it is also the adaptive cruise control in an ordinary family car. In the middle, the vehicle handles the whole driving task, but only inside a narrowly drawn situation — one mapped motorway, one fenced route, decent weather — and a human has to stay available to take over, which is the JD pilot and its safety driver. Only near the top of the ladder is nobody inside expected to intervene, and the maker carries the responsibility: a robotaxi whose passenger is asleep.\n\nThe gap between rungs is not really about steering. It is about the rare, awkward event, and Mr Jia lists them himself: a flat tyre, a leaky air pipe, a sudden engine death, a crash to navigate around. Software that handles an empty motorway perfectly can still fail at a lane closed off by cones where a police officer is waving traffic through by hand — and *that* is the distance between hands-on-the-wheel and no human at all. It is also why Mr Jia reckons he will be retired before his lorry is truly driverless.\n\nSo when a company announces a \"self-driving\" vehicle, the useful question is never whether it drove itself. It is the pair of questions the levels exist to pin down: in which situations, and who is on the hook when it goes wrong?"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Cai Fang, an economist at a top state think-tank, argues that AI's effect on jobs is \"asymmetrical.\" What does he mean?",
+      "options": [
+        "AI destroys jobs in cities but creates them in the countryside",
+        "AI both creates and destroys jobs, but the destruction tends to come first and to be larger",
+        "AI affects Chinese workers but not American ones",
+        "AI creates more jobs than it destroys, but only for university graduates"
+      ],
+      "answerIndex": 1,
+      "explanation": "He writes that job displacement \"often precedes and surpasses job creation\" — the microdrama industry, upended in weeks by ByteDance's Seedance 2.0, is the article's sharpest example."
+    },
+    {
+      "question": "In \"it wants to assuage anxious workers but not stifle innovation,\" assuage most nearly means:",
+      "options": [
+        "To ease or calm a painful feeling",
+        "To retrain someone for different work",
+        "To pay compensation to",
+        "To count or survey"
+      ],
+      "answerIndex": 0,
+      "explanation": "To assuage is to take the edge off a feeling — Beijing wants to calm workers' anxiety without slowing the AI push that causes it."
+    },
+    {
+      "question": "The article says that in China's public sector, job security is \"sacrosanct.\" What does that tell you?",
+      "options": [
+        "That public-sector jobs are held by religious officials",
+        "That public-sector pay is unusually high",
+        "That those jobs are treated as untouchable — not something to be cut",
+        "That the government is about to reduce the number of state jobs"
+      ],
+      "answerIndex": 2,
+      "explanation": "Sacrosanct means treated as too important to question or change, which is why the party can use state employment as \"ballast\" while AI disrupts private jobs."
+    },
+    {
+      "question": "Zheng Gongcheng warned China's legislature about a specific problem AI creates for the social safety net. What is it?",
+      "options": [
+        "Robots consume more electricity than the power grid can supply",
+        "Health insurance cannot cover injuries caused by robots",
+        "Robots are taxed more heavily than workers, discouraging firms from buying them",
+        "As machines replace workers, fewer wage-earners are left paying contributions into the system that supports the unemployed"
+      ],
+      "answerIndex": 3,
+      "explanation": "The net is funded mainly out of wages, so replacing wage-earners shrinks the money paying in at exactly the moment more people need help — which is why he proposed taxing robot-enabled productivity gains."
+    },
+    {
+      "question": "Jia Cunqi's lorry and JD.com's Beijing pilot lorry sit on different rungs of driving automation. What is the difference?",
+      "options": [
+        "Jia's lorry drives itself only in cities, while JD's drives itself only on motorways",
+        "Jia must keep his hands on the wheel, while JD's lorry runs with no hands on the wheel but still requires a safety driver on board",
+        "Jia's lorry has no automation at all, while JD's is fully driverless",
+        "JD's lorry carries no cargo, so no driver is needed"
+      ],
+      "answerIndex": 1,
+      "explanation": "Chinese rules still require Mr Jia's hands on the wheel, whereas the JD pilot permits hands-free driving so long as a safety driver is aboard — neither is driverless."
+    }
+  ]
+}
