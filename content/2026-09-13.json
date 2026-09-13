@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-13",
+  "title": "What AI has in common with dogs",
+  "articleUrl": "https://www.economist.com/culture/2026/08/17/what-ai-has-in-common-with-dogs",
+  "articlePageUrl": "/articles/2026-09-13.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "underpin",
+      "partOfSpeech": "verb",
+      "pronunciation": "un-der-PIN",
+      "articleQuote": "Liberal democracy has underpinned progress, he argues.",
+      "meaning": "To underpin something is to support it from underneath. The word is borrowed from construction, where builders slide new foundations — pins, props, fresh concrete — beneath a wall that is starting to sag, so that the building above can keep standing. In writing about politics and economics it is almost always used figuratively, and it points at the thing nobody notices: the hidden foundation everything visible is resting on. Acemoglu's claim is that liberal democracy has been the foundation under two centuries of rising prosperity — not the prosperity itself, but the structure holding it up — which is why he thinks weakening it would bring down far more than politics.",
+      "examples": [
+        "A season of six-day-a-week practice underpinned the team's sudden winning streak — nobody saw the work, only the trophy.",
+        "Her whole essay was underpinned by a single survey, so when the survey turned out to be flawed the argument collapsed."
+      ]
+    },
+    {
+      "word": "aggravate",
+      "partOfSpeech": "verb",
+      "pronunciation": "AG-ruh-vayt",
+      "articleQuote": "Digital technologies, in Mr Acemoglu's account, aggravated inequality by raising the demand for brains over brawn.",
+      "meaning": "To aggravate something is to make an already-bad situation worse. Be careful here, because in everyday speech people use it to mean *annoy* — \"stop aggravating me\" — and that is not the sense you will meet on the SAT or in serious journalism, where what gets aggravated is a problem, an injury, a shortage, a tension. The root is the Latin *gravis*, meaning heavy: to aggravate is to add weight to something that was already heavy. Notice what the word quietly assumes in this sentence — inequality was there first, and Acemoglu's argument is that computers piled more onto it by making thinking work pay far better than physical work.",
+      "examples": [
+        "Running on a sore ankle for another week aggravated the injury and cost him the rest of the season.",
+        "Posting the screenshot aggravated an argument that two calm texts could have settled."
+      ]
+    },
+    {
+      "word": "hapless",
+      "partOfSpeech": "adjective",
+      "pronunciation": "HAP-lis",
+      "articleQuote": "for fear of ending up like those hapless, dogless Neanderthals.",
+      "meaning": "Hapless means unlucky in a way that invites a little pity and often a little amusement. A hapless person is not wicked or even especially incompetent — they are simply outmatched by circumstances, losing to forces they never had a fair shot at. The \"hap\" buried inside it is an old English word for luck or chance, the same root that gives us *happen*, *perhaps* and *mishap*, so hapless is literally luck-less. The article's last line calls the Neanderthals hapless because they lost the long competition with our ancestors partly for want of one technology — dogs — that they never got hold of, which is precisely the fate America and China each fear with AI.",
+      "examples": [
+        "The hapless substitute teacher spent the entire period trying to get the projector to turn on.",
+        "One hapless contestant knocked the buzzer off the desk before the first question had even been read."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Liberal democracy",
+      "articleQuote": "Liberal democracy … has fostered innovation and economic growth, spread the benefits (through taxes and public services) and protected voters with regulations.",
+      "meaning": "Here is the trap. In American conversation \"liberal\" means left-of-centre, so *liberal democracy* sounds like a democracy run by liberals. It isn't, and Republicans and Democrats alike have spent their whole lives inside one. The phrase comes from political science, and the \"liberal\" in it is the older European sense — from the Latin *liber*, free — meaning a system built around individual freedoms that are deliberately held out of reach of whoever happens to be in charge.\n\nIt helps to split the phrase, because it really is two separate promises. **Democracy** is the part about who decides: people vote, the majority wins, and the losers get another go at the next election. **Liberal** is the part about what the winners are *not allowed to do* once they have won. A 51% majority cannot jail the newspaper that criticised it, cannot cancel the next election, cannot seize your house without a court, cannot assign you a religion. The machinery that enforces those limits — courts that can strike down a law, a constitution that is hard to amend, a press the government does not own, rights that still cover the people who voted the other way — is the liberal half.\n\nYou can have either one without the other, which is the entire reason the two words are kept separate. A country that holds real elections and then lets the winner arrest journalists and pack the courts is a democracy that has stopped being liberal; political scientists call that an illiberal democracy, and several exist right now. Run it the other way and you get a colonial administration or an old monarchy that enforced property and the rule of law but let nobody vote at all.\n\nBoth authors here are worried about that pairing coming apart, from opposite directions. When Lepore warns of the desertion of liberal democracy she does not mainly mean elections will stop; she means power will drain away to places nobody voted for and no court can reach — corporations owning the machines that make the decisions. When Acemoglu asks what happened to liberal democracy he is asking why a system that raised living standards for a century stopped feeling to ordinary voters like it was on their side. So whenever you meet the phrase, hear two promises rather than one: you get a vote, and your rights survive losing the vote."
+    },
+    {
+      "name": "Extractive institutions",
+      "articleQuote": "a sweeping economic history arguing that the main factor keeping poor countries poor is predatory institutions.",
+      "meaning": "Why is South Korea rich and North Korea poor? Same peninsula, same language, same people, same rocks and rivers, split in two in 1945. Geography cannot explain it and neither can culture, and that puzzle is the one Daron Acemoglu built a career on — it won him a share of the Nobel prize in economics in 2024, and it is why a development economist is qualified to write the book under review here.\n\nHis answer is **institutions**. The word sounds like it means buildings, but in economics an institution is a *rule of the game*: who may own land, whether a contract is actually enforced, whether a court will hear you when a powerful man takes your shop, who gets a licence to open a business, what happens to an inventor's patent. These rules are mostly invisible, and they decide whether it is worth anyone's while to build anything.\n\nAcemoglu sorts them into two kinds. **Extractive** institutions are arranged so that a small group at the top can take — extract — the output of everyone below: forced labour in a silver mine, a permit you only get by paying off the minister's cousin, a farm the army can empty after harvest. **Inclusive** institutions are arranged so that ordinary people keep and use what they produce: secure property, courts that will rule against the government, open entry to a trade. The article's word is \"predatory\", which is the same idea in plainer clothes.\n\nThe engine is incentive, not morality. Under extractive rules, clearing a field or opening a workshop is a bad bet, because whatever you build is worth taking and you have no way to stop the taking — so people mostly don't build, and the country stays poor even when everything else is in its favour. Under inclusive rules that same effort is worth making, so it gets made, year after year, and compounds. It is also why Acemoglu cares so much about AI in this book: he reads a technology that concentrates wealth and decision-making in a handful of firms as a force dragging a rich country's rules toward the extractive end.\n\nThe habit worth carrying out the door: when a country, a company, or even a club is failing, ask who its rules are built to benefit before you ask what is wrong with its people."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article uses the domestication of dogs as a way to think about AI. What is the optimistic version of that comparison?",
+      "options": [
+        "That AI, like dogs, will add abilities humans lack while staying obedient to its owners",
+        "That AI will be dangerous at first and then be banned, as dangerous animals were",
+        "That AI will make human work obsolete in the way dogs made hunting obsolete",
+        "That AI will improve itself so quickly that humans can stop worrying about it"
+      ],
+      "answerIndex": 0,
+      "explanation": "The hopeful case is that AI turns out like dogs — complementing human labour rather than replacing it, and remaining under human control; the article's worry is that AI, unlike dogs, can breed improved versions of itself far too fast for that comfort to hold."
+    },
+    {
+      "question": "The reviewer agrees that today's tech bosses would make poor authors of the rules for civilisation, yet still faults Jill Lepore's argument. Why?",
+      "options": [
+        "She overestimates how much individual billionaires determine a technology's effects",
+        "She relies on private interviews rather than the moguls' own published words",
+        "She ignores the possibility that AI could ever escape human control",
+        "She discusses Elon Musk without mentioning any other technology executive"
+      ],
+      "answerIndex": 0,
+      "explanation": "The review grants her point about the moguls' character but argues that AI's effects will hinge on the power of the technology and the uses people put it to, \"any more than the effects of cars depended on Henry Ford's\" opinions."
+    },
+    {
+      "question": "Acemoglu's account is that digital technologies \"aggravated\" inequality. What does aggravated mean here?",
+      "options": [
+        "Made a problem that already existed worse",
+        "Irritated people who were already angry about it",
+        "Drew public attention to something that had been hidden",
+        "Created inequality in a society that had none before"
+      ],
+      "answerIndex": 0,
+      "explanation": "In serious writing, to aggravate is to add weight to something already heavy — inequality was there first, and the claim is that computers made it worse by paying brains far better than brawn."
+    },
+    {
+      "question": "In the phrase \"liberal democracy\", what does the word liberal add to democracy?",
+      "options": [
+        "Limits on what election winners may do, enforced by courts and protected rights",
+        "A guarantee that left-of-centre parties are able to compete fairly",
+        "A requirement that the government fund public services generously",
+        "A rule that elections must be held at regular, frequent intervals"
+      ],
+      "answerIndex": 0,
+      "explanation": "Democracy settles who decides; the liberal half is the set of limits — independent courts, a free press, rights that survive losing an election — that even a 51% majority may not override."
+    },
+    {
+      "question": "Acemoglu argues that predatory, or extractive, institutions are the main thing keeping poor countries poor. What is the mechanism?",
+      "options": [
+        "If whatever you build can be taken from you, building it is not worth the effort",
+        "Poor countries lack the natural resources that would reward investment",
+        "Extractive institutions overspend on public services and eventually run out of money",
+        "They tax foreign companies so heavily that nobody is willing to trade with them"
+      ],
+      "answerIndex": 0,
+      "explanation": "Extractive rules destroy the incentive to invest — if no court will protect your shop or your harvest, the rational move is not to build one — so the effort and innovation simply never happen."
+    }
+  ]
+}
