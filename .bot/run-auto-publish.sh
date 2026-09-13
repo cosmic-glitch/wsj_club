@@ -16,11 +16,10 @@
 # lock, so the junior tally happens once the senior day has shipped (typically
 # 9:30–9:45; a junior ballot cast in that window still counts).
 #
-# The club group gets ONE message a day, from the junior run once both tracks
-# are live — "Today's articles are up." + a Regular line + a Junior line. The
-# senior run hands its title over via state/<date>-senior-live; the junior
-# wrapper folds it in, or sends the senior line alone if the junior day didn't
-# ship (see the announcement helpers below).
+# Each track announces itself to the club group the moment its day is verified
+# live — one fixed line per track (see the outcome check below) — so the group
+# gets two messages a day, senior first (the lock orders the runs), and nothing
+# else.
 #
 # Crontab entries (UTC):
 #   0  16,17 * * *  bash $HOME/wsj_club/.bot/run-auto-publish.sh                 >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
@@ -68,7 +67,8 @@ PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 cd "$PROJECT_DIR" || exit 1
 
 # Per-track knobs: the skill, the content path, the branch a dry run lands on,
-# and the URL that proves the day is serving.
+# the URL that proves the day is serving, and the group announcement's label +
+# site link.
 TODAY="${AUTOPUBLISH_DATE:-$(TZ=America/Los_Angeles date +%F)}"
 # MARK is dropped by ship.sh after a successful push — the announcement is
 # gated on it, so a day the owner published by hand while the run worked is
@@ -80,6 +80,8 @@ if [ "$TRACK" = "junior" ]; then
   READING_URL="https://dailyreadingclub.com/junior/reading/${TODAY}"
   MARK=".bot/state/${TODAY}-junior-pushed"
   TRACK_LABEL="JUNIOR "
+  ANNOUNCE_LABEL="Junior track"
+  ANNOUNCE_SITE="dailyreadingclub.com/junior"
 else
   NAME="auto-publish"
   CONTENT="content/${TODAY}.json"
@@ -87,11 +89,9 @@ else
   READING_URL="https://dailyreadingclub.com/reading/${TODAY}"
   MARK=".bot/state/${TODAY}-pushed"
   TRACK_LABEL=""
+  ANNOUNCE_LABEL="Today's article"
+  ANNOUNCE_SITE="dailyreadingclub.com"
 fi
-# The senior run's hand-off to the junior one: the senior title, written when
-# the senior day is live but a junior run is still to come. Consumed (and
-# removed) by the junior wrapper — see the announcement helpers below.
-DEFER=".bot/state/${TODAY}-senior-live"
 
 LOG_DIR="$PROJECT_DIR/.bot/logs"
 mkdir -p "$LOG_DIR" "$PROJECT_DIR/.bot/state"
@@ -103,33 +103,6 @@ notify() { # notify <owner|group> <text> — NANOCLAW_* come from .bot/.env, sou
   else
     log "WARNING notify.mjs --to=${1} failed (see above); the message was: ${2//$'\n'/ | }"
   fi
-}
-
-# --- The club-group announcement: ONE message a day --------------------------
-# Sent by the junior run once both tracks are live:
-#   Today's articles are up.
-#   Regular: "<senior title>"  dailyreadingclub.com
-#   Junior: "<junior title>"  dailyreadingclub.com/junior
-# So the senior run stays quiet when a junior run is still to come and leaves
-# its title in DEFER; the junior wrapper folds it in — or, if the junior day
-# didn't ship (failed, paused or hand-published meanwhile, dry run), sends the
-# senior line alone, so a shipped senior day is never left unannounced. When no
-# junior run will follow, the senior run announces itself. A track that shipped
-# alone gets its own one-liner. Every group message is gated on the run's MARK
-# (ship.sh pushed it in THIS run) — a hand-published day is never announced.
-junior_run_pending() { # senior only: will a junior run still ship (and announce) after us today?
-  [ "$TRACK" = "senior" ] || return 1
-  local f
-  for f in OFF-junior PAUSE PAUSE-junior DRY_RUN DRY_RUN-junior; do
-    [ -f "$PROJECT_DIR/.bot/$f" ] && return 1
-  done
-  ! git cat-file -e "origin/main:content/junior/${TODAY}.json" 2>/dev/null
-}
-announce_senior_alone() { # junior only: flush a deferred senior announcement on its own
-  [ -f "$DEFER" ] || return 0
-  log "the senior day was handed to this run and the junior day isn't live — announcing the senior line alone"
-  notify group "Today's article is up (\"$(cat "$DEFER")\").  dailyreadingclub.com"
-  rm -f "$DEFER"
 }
 
 MODE="live"
@@ -162,17 +135,14 @@ set -a
 [ -f "$PROJECT_DIR/.bot/.env" ] && source "$PROJECT_DIR/.bot/.env"
 set +a
 
-# The flag files are read here, once we hold the lock, so the junior wrapper
-# always outlives the senior one: whatever the senior run left in DEFER, this
-# run sees it — a paused or switched-off junior day still sends the senior line.
+# The flag files are read here, once we hold the lock, so a flag dropped while
+# the senior run was still going applies to the junior run queued behind it.
 if [ -f "$PROJECT_DIR/.bot/OFF-${TRACK}" ]; then
   log "OFF (.bot/OFF-${TRACK} exists) — the ${TRACK} autopilot is switched off; skipping ${TODAY}"
-  [ "$TRACK" = "junior" ] && announce_senior_alone
   exit 0
 fi
 if [ -f "$PROJECT_DIR/.bot/PAUSE" ] || [ -f "$PROJECT_DIR/.bot/PAUSE-${TRACK}" ]; then
   log "PAUSED (.bot/PAUSE or .bot/PAUSE-${TRACK} exists) — skipping ${TODAY}"
-  [ "$TRACK" = "junior" ] && announce_senior_alone
   exit 0
 fi
 
@@ -193,7 +163,6 @@ fi
 
 if [ -f "$PROJECT_DIR/$CONTENT" ]; then
   log "outcome OK — ${TRACK} reading ${TODAY} already published (by hand); nothing to do"
-  [ "$TRACK" = "junior" ] && announce_senior_alone
   exit 0
 fi
 
@@ -210,7 +179,6 @@ fi
 # Same invocation shape as run-auto-vote.sh (unattended, so no permission
 # prompts). A stale marker from an earlier attempt must not gate today's send.
 rm -f "$MARK"
-[ "$TRACK" = "senior" ] && rm -f "$DEFER"
 CLAUDE_RC=0
 "${XVFB[@]}" claude -p "Use the ${NAME} skill to publish today's Reading Club ${TRACK} reading (date ${TODAY}, mode ${MODE}). Run fully autonomously end to end — never pause for confirmation — and follow the skill's guards, quality gates, and failure handling exactly." \
   --model "$AUTOPILOT_MODEL" \
@@ -226,9 +194,9 @@ log "claude session exited (rc=$CLAUDE_RC)"
 # branch. Anything else exits 1 so the cron's healthcheck pages the owner (the
 # skill's failure path is silent).
 # The messages are sent from here, never from the skill, and only when MARK
-# exists (ship.sh pushed in THIS run): the club group gets the day's one
-# announcement (the helpers above) for a verified-live day; the owner's DM gets
-# the dry-run note or the pushed-but-not-serving warning.
+# exists (ship.sh pushed in THIS run): the club group gets this track's one
+# announcement line for a verified-live day; the owner's DM gets the dry-run
+# note or the pushed-but-not-serving warning.
 git fetch -q origin >> "$LOG_FILE" 2>&1
 title_of() { # title_of <git object, e.g. origin/main:content/2026-09-06.json>
   git show "$1" 2>/dev/null | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(String(JSON.parse(s).title||""))}catch{}})'
@@ -255,22 +223,14 @@ elif git cat-file -e "origin/main:${CONTENT}" 2>/dev/null; then
   if [ "$CODE" = "200" ]; then
     log "outcome OK — ${TRACK} reading ${TODAY} is on main and live (poll ${i})"
     RC=0
-    if [ ! -f "$MARK" ]; then
-      log "not announcing — no ${MARK}, so this run didn't push it (published by hand meanwhile)"
-    elif [ "$TRACK" = "senior" ]; then
-      if junior_run_pending; then
-        printf '%s' "$TITLE" > "$DEFER"
-        log "a junior run is still to come — leaving the announcement to it (${DEFER})"
-      else
-        notify group "Today's article is up (\"${TITLE}\").  dailyreadingclub.com"
-      fi
-    elif [ -f "$DEFER" ]; then
-      notify group "Today's articles are up.
-Regular: \"$(cat "$DEFER")\"  dailyreadingclub.com
-Junior: \"${TITLE}\"  dailyreadingclub.com/junior"
-      rm -f "$DEFER"
+    if [ -f "$MARK" ]; then
+      # The club group's one line for this track (*…* is WhatsApp bold):
+      #   Today's article: *<senior title>* (dailyreadingclub.com)
+      #   Junior track: *<junior title>* (dailyreadingclub.com/junior)
+      # Nothing else ever goes to the group — no other links, no vote stats.
+      notify group "${ANNOUNCE_LABEL}: *${TITLE}* (${ANNOUNCE_SITE})"
     else
-      notify group "Today's junior-track article is up (\"${TITLE}\").  dailyreadingclub.com/junior"
+      log "not announcing — no ${MARK}, so this run didn't push it (published by hand meanwhile)"
     fi
   else
     log "OUTCOME PARTIAL — ${TRACK} ${TODAY} is on origin/main but the site still returns HTTP ${CODE} after 12 minutes; check the Vercel deploy"
@@ -281,10 +241,6 @@ else
   log "OUTCOME FAILURE — ${TRACK} ${TODAY} is not on origin/main"
   RC=1
 fi
-# Whatever happened to the junior day, a senior day handed to this run must not
-# go unannounced (a no-op when the combined message above consumed it).
-[ "$TRACK" = "junior" ] && announce_senior_alone
-
 # Leave the tree clean on main for the next run. A failed run's half-made files
 # go to a stash (never deleted); local main is then realigned with origin.
 git checkout -q main 2>> "$LOG_FILE"
