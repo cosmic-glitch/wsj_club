@@ -5,7 +5,7 @@ description: AUTONOMOUS daily vote opener for the Reading Club, run UNATTENDED f
 
 # Reading Club — autonomous daily vote (Hetzner cron)
 
-You are running **unattended** on the Hetzner box (the `run-auto-vote.sh` cron fired at 6am Pacific). Your job: pick the day's candidates and **open the senior vote** with no human in the loop, then text the owner. There is **no approval step** — you are both the picker and the validation layer, so apply the quality gates strictly (nobody screens the ballot before the club sees it). The vote is a soft output (worst case a weak candidate just loses, and the owner still authors the winner), but a *bad* or *inappropriate* candidate reaching the ballot is the failure to avoid.
+You are running **unattended** on the Hetzner box (the `run-auto-vote.sh` cron fired at 6am Pacific and ran `vote-track.sh` for senior). Your job: pick the day's candidates and **open the senior vote** with no human in the loop, then text the owner. There is **no approval step** — you are both the picker and the validation layer, so apply the quality gates strictly (nobody screens the ballot before the club sees it). The vote is a soft output (worst case a weak candidate just loses, and the owner still authors the winner), but a *bad* or *inappropriate* candidate reaching the ballot is the failure to avoid.
 
 This is the autonomous cousin of `wsj-open-vote` + `wsj-pick-article`. It differs in four ways: **(1) no WSJ ever** (the box is IP-blocked by WSJ; Economist is the only source); **(2) news only — no enrichment picks in this flow** (enrichment stays an interactive-only affair via `wsj-pick-enrichment`); **(3) no interactive sign-off**; **(4) browsing goes through the `.bot/` node scripts, not the Playwright MCP** (that MCP isn't available on this box). The selection *criteria* are identical — read `wsj-pick-article` for the full rationale; the gates below are the load-bearing summary. (The junior track has its own sibling, `auto-vote-junior`, which the cron queues right behind this run under the same lock — nothing here touches the junior poll.)
 
@@ -63,7 +63,7 @@ All commands run from the repo root (`~/wsj_club`). The `.bot/` scripts must be 
 Text the owner your **ranked assessment** — the opinionated field the interactive picker gives, **not** a bare title list and **not** the kids' pitches. Use the rating + "why it fits" verdict you recorded per candidate in Step 2. This is the owner's whole window into your judgment (there's no interactive review), so it must explain *why*, not just *what*.
 
 Compose one WhatsApp message (one line per candidate — mind the length; concise verdicts). **Every candidate line MUST end with its article link** so the owner can open any of them straight from the text:
-- **Header:** vote is open, `${TODAY}`, the vote link, and the fixed close (9:00am Pacific, when `auto-publish` tallies and publishes the winner).
+- **Header:** vote is open, `${TODAY}`, the vote link, and the close (9:00am Pacific once both tracks' votes have a ballot — checked hourly, noon at the latest — when `auto-publish` tallies and publishes the winner).
 - **Top pick** (1–2 sentences + its link): source, title, rating, and the real case — the specific concept/vocab payload, the teen hook, the domain fit — why it's the strongest of the field.
 - **News, ranked** (7 lines): `N. [source] title — R/10 — <why it fits> — <url>`.
 - **Dropped:** one line on the notable cuts and why, so the owner sees the judgment calls.
@@ -74,7 +74,7 @@ Write the message to a temp file and send with `--file` (long, link-laden messag
 cat > /tmp/vote-notify.txt <<'MSG'
 🗳️ Reading Club vote is open — ${TODAY}
 Vote: https://dailyreadingclub.com
-Closes 9:00am PT — the winner auto-publishes then
+Closes 9:00am PT once both tracks have a vote (noon at the latest) — the winner auto-publishes then
 
 ⭐ TOP PICK [<source>] <title> (R/10)
 <1–2 sentence case: why it's the best fit — concepts, hook, domain>
@@ -93,7 +93,7 @@ node --env-file=.bot/.env .bot/notify.mjs --file /tmp/vote-notify.txt
 
 Keep the **ballot pitches** (Step 3) exactly as written — spoiler-free and non-steering, for the kids. Your ranking and opinion live **only** in this owner notification, never on the ballot.
 
-Then stop. Do **not** author the reading — the club votes until **9:00am Pacific**, when the `auto-publish` cron (`run-auto-publish.sh`, the `auto-publish` skill) tallies the poll and publishes the winner, which is what closes it. The owner can still publish by hand before then with `wsj-reading`; the 9am run then finds the day published and does nothing.
+Then stop. Do **not** author the reading — the club votes until the publish run goes — **9:00am Pacific once both tracks' polls have a ballot, checked hourly, noon at the latest** — when `run-auto-publish.sh` (the `auto-publish` skill via `publish-track.sh`) tallies the poll and publishes the winner, which is what closes it. The owner can still publish by hand before then with `wsj-reading`; the run then finds the day published and does nothing.
 
 ## Failure handling
 

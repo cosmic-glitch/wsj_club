@@ -14,7 +14,7 @@
 #   main already carries the day (the owner published by hand meanwhile) →
 #   `git push origin main`. Returns as soon as the push lands (well under a
 #   minute) — it does NOT wait for Vercel. The cron wrapper
-#   (run-auto-publish.sh) polls the live URL and sends the announcement; this
+#   (publish-track.sh) polls the live URL and sends the announcement; this
 #   split is deliberate: the agentic session must never sit on a long wait
 #   (it backgrounds it and exits, and the announcement dies with it).
 # DRY RUN: the same commit goes to branch auto/[junior/]<date> (force-pushed;

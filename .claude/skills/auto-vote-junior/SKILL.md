@@ -1,11 +1,11 @@
 ---
 name: auto-vote-junior
-description: AUTONOMOUS daily JUNIOR vote opener for the Reading Club (US grades 5–7), run UNATTENDED from the Hetzner box by cron, queued right behind the senior auto-vote at 6am Pacific — NOT the interactive picker. Scouts The Economist's story-first sections (via the saved session in .bot/), ranks candidates against the junior picker's gates (the 11-year-old prerequisite test, story first, stricter appropriateness, length, register) WITHOUT waiting for human sign-off, opens the day's junior vote (5 news picks) via .bot/open-vote.mjs --track=junior, and texts the owner over nanoclaw. Never uses WSJ. Do NOT invoke this by hand for the normal interactive flow — use wsj-open-vote ("open the junior vote") for that; this exists so the cron can run the whole junior pick→vote step with no human in the loop.
+description: AUTONOMOUS daily JUNIOR vote opener for the Reading Club (US grades 5–7), run UNATTENDED from the Hetzner box by cron, right after the senior auto-vote at 6am Pacific — NOT the interactive picker. Scouts The Economist's story-first sections (via the saved session in .bot/), ranks candidates against the junior picker's gates (the 11-year-old prerequisite test, story first, stricter appropriateness, length, register) WITHOUT waiting for human sign-off, opens the day's junior vote (5 news picks) via .bot/open-vote.mjs --track=junior, and texts the owner over nanoclaw. Never uses WSJ. Do NOT invoke this by hand for the normal interactive flow — use wsj-open-vote ("open the junior vote") for that; this exists so the cron can run the whole junior pick→vote step with no human in the loop.
 ---
 
 # Reading Club — autonomous daily JUNIOR vote (Hetzner cron)
 
-You are running **unattended** on the Hetzner box (`run-auto-vote.sh --track=junior`, queued behind the senior run at 6am Pacific). Your job: pick the day's **junior** candidates and **open the junior vote** with no human in the loop, then text the owner. There is **no approval step** — you are the picker and the validation layer, so apply the gates strictly (nobody screens the ballot before ten-year-olds see it). The vote is a soft output (a weak candidate just loses), but a **too-hard or inappropriate** candidate reaching the junior ballot is the failure to avoid — and the appropriateness bar is a 5th-grader's parent, not a 9th-grader's.
+You are running **unattended** on the Hetzner box (`vote-track.sh --track=junior`, run by the `run-auto-vote.sh` driver right after the senior run at 6am Pacific). Your job: pick the day's **junior** candidates and **open the junior vote** with no human in the loop, then text the owner. There is **no approval step** — you are the picker and the validation layer, so apply the gates strictly (nobody screens the ballot before ten-year-olds see it). The vote is a soft output (a weak candidate just loses), but a **too-hard or inappropriate** candidate reaching the junior ballot is the failure to avoid — and the appropriateness bar is a 5th-grader's parent, not a 9th-grader's.
 
 This is the junior sibling of **`auto-vote`** (identical mechanics — read it if anything below is unclear) and the autonomous cousin of **`wsj-pick-article-junior`** (the calibration — **read its "What makes a good JUNIOR pick" section before ranking**; the gates below are the load-bearing summary). What differs from the interactive junior picker: **(1) no WSJ ever** (the box is IP-blocked by WSJ; The Economist is the only source); **(2) no interactive sign-off**; **(3) browsing goes through the `.bot/` node scripts, not the Playwright MCP**; **(4) member suggestions are not read** (the box has no PostgREST keys for `scripts/suggestions.mjs`; the owner handles junior suggestions interactively).
 
@@ -66,7 +66,7 @@ All commands run from the repo root (`~/wsj_club`). `.bot/` browsing scripts tak
 Text the owner your **ranked assessment** — the opinionated field the interactive picker gives, **not** a bare title list and **not** the kids' pitches. This is the owner's whole window into your judgment, so it must explain *why*: for each candidate, the story hook, the words/concepts, and how it clears the 11-year-old gate. **Every candidate line MUST end with its article link.**
 
 Compose one WhatsApp message (mind the length; concise verdicts):
-- **Header:** the **junior** vote is open, `${TODAY}`, the junior vote link, and the fixed close (9:00am Pacific; `auto-publish-junior` tallies and publishes the winner once the senior day has shipped).
+- **Header:** the **junior** vote is open, `${TODAY}`, the junior vote link, and the close (9:00am Pacific once both tracks' votes have a ballot — checked hourly, noon at the latest; `auto-publish-junior` tallies and publishes the winner right after the senior day ships).
 - **Top pick** (1–2 sentences + its link): title, rating, and the real case.
 - **Ranked** (5 lines): `N. [Economist] title — R/10 — <why it fits> — <url>`.
 - **Dropped:** one line on the notable cuts and why (especially anything cut on the 11-year-old gate or appropriateness), so the owner sees the judgment calls.
@@ -77,7 +77,7 @@ Write the message to a temp file and send with `--file`:
 cat > /tmp/junior-vote-notify.txt <<'MSG'
 🗳️ JUNIOR Reading Club vote is open — <TODAY>
 Vote: https://dailyreadingclub.com/junior
-Closes 9:00am PT — the winner auto-publishes after the senior day
+Closes 9:00am PT once both tracks have a vote (noon at the latest) — the winner auto-publishes after the senior day
 
 ⭐ TOP PICK [Economist] <title> (R/10)
 <1–2 sentence case: story hook, words/concepts, why an 11-year-old can follow it>
@@ -96,7 +96,7 @@ node --env-file=.bot/.env .bot/notify.mjs --file /tmp/junior-vote-notify.txt
 
 Keep the **ballot pitches** (Step 3) exactly as written — spoiler-free and non-steering, for the kids. Your ranking and opinion live **only** in this owner notification.
 
-Then stop. Do **not** author the reading — the club votes until **9:00am Pacific**; `auto-publish-junior` (`run-auto-publish.sh --track=junior`) tallies the poll and publishes the winner, which is what closes it. The owner can still publish by hand before then with `wsj-reading-junior`; the 9am run then finds the day published and does nothing.
+Then stop. Do **not** author the reading — the club votes until the publish run goes — **9:00am Pacific once both tracks' polls have a ballot, checked hourly, noon at the latest**; `auto-publish-junior` (`publish-track.sh --track=junior`, run by `run-auto-publish.sh` after the senior day) tallies the poll and publishes the winner, which is what closes it. The owner can still publish by hand before then with `wsj-reading-junior`; the run then finds the day published and does nothing.
 
 ## Failure handling
 

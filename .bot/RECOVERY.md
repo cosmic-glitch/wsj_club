@@ -1,11 +1,12 @@
 # Reading Club autopilot — recovery (Hetzner-only)
 
 `.bot/` is the box-local runtime for the autopilot skills — `auto-vote` (6am
-Pacific: scout → ballot → open the vote) and `auto-publish` (9am Pacific:
-tally → capture → author → ship) for the senior track, and their junior
-siblings `auto-vote-junior` / `auto-publish-junior`, which the same two
-wrappers run with `--track=junior`, queued 10 minutes behind the senior runs
-under one lock. The **code here is committed**; the **secrets are not**. If
+Pacific: scout → ballot → open the vote) and `auto-publish` (from 9am Pacific,
+once both tracks' votes have a ballot, noon at the latest: tally → capture →
+author → ship) for the senior track, and their junior siblings
+`auto-vote-junior` / `auto-publish-junior`, which the same per-track scripts
+run with `--track=junior` right after the senior run — one cron per phase
+drives both tracks in turn under one lock. The **code here is committed**; the **secrets are not**. If
 the Hetzner box is lost, restore the working state on a fresh box as follows.
 
 Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
@@ -83,21 +84,21 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
    node --env-file=.bot/.env .bot/notify.mjs "recovery test"                    # should hit the owner's WhatsApp DM (don't smoke-test --to=group: that is the real club group)
    ```
 
-6. **Re-arm the crons.** Every wrapper fires at two UTC hours and gates on the
-   Pacific hour, so each runs exactly once a day year-round. The junior lines
-   fire 10 minutes after the senior ones and wait for the shared lock
-   (`.bot/logs/.autopilot.lock`), so senior always runs first:
+6. **Re-arm the crons.** One line per phase; each driver runs senior then
+   junior itself. The vote driver fires at two UTC hours and gates on the
+   Pacific hour (6am), so it runs once a day year-round; the publish driver
+   fires at five UTC hours and lets the Pacific 9–12 firings through — it
+   checks the ballots every hour and publishes the first hour both tracks
+   have one (noon regardless):
    ```
-   0  13,14 * * *  $HOME/bin/hc-run wsjclub-auto-vote           bash $HOME/wsj_club/.bot/run-auto-vote.sh                   >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
-   10 13,14 * * *  $HOME/bin/hc-run wsjclub-auto-vote-junior    bash $HOME/wsj_club/.bot/run-auto-vote.sh --track=junior    >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
-   0  16,17 * * *  $HOME/bin/hc-run wsjclub-auto-publish        bash $HOME/wsj_club/.bot/run-auto-publish.sh                >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
-   10 16,17 * * *  $HOME/bin/hc-run wsjclub-auto-publish-junior bash $HOME/wsj_club/.bot/run-auto-publish.sh --track=junior >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+   0 13,14          * * *  $HOME/bin/hc-run wsjclub-auto-vote    bash $HOME/wsj_club/.bot/run-auto-vote.sh    >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+   0 16,17,18,19,20 * * *  $HOME/bin/hc-run wsjclub-auto-publish bash $HOME/wsj_club/.bot/run-auto-publish.sh >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
    ```
    `hc-run` (in `~/bin`, from the foliotracker setup) pings healthchecks.io with
-   the wrapper's exit code — a non-zero exit is the alert. The four checks are
-   `wsjclub-auto-vote`, `wsjclub-auto-vote-junior`, `wsjclub-auto-publish`,
-   `wsjclub-auto-publish-junior` (period 1 day); a missing check is
-   auto-created by pinging its slug once with `?create=1`. Start a track's
+   the driver's exit code — a non-zero exit is the alert, and the ping body
+   carries the driver's `senior rc=… junior rc=…` line. The two checks are
+   `wsjclub-auto-vote` and `wsjclub-auto-publish` (period 1 day); a missing
+   check is auto-created by pinging its slug once with `?create=1`. Start a track's
    publish cron in dry-run mode (`touch ~/wsj_club/.bot/DRY_RUN-junior`, or
    plain `DRY_RUN` for every track) and remove the file once a dry-run day
    looks right.
@@ -113,10 +114,14 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
 
 ## Manual runs (test any date without waiting for the cron)
 ```bash
-AUTOVOTE_FORCE=1   AUTOVOTE_DATE=YYYY-MM-DD   bash ~/wsj_club/.bot/run-auto-vote.sh [--track=junior]
-AUTOPUBLISH_FORCE=1 AUTOPUBLISH_DATE=YYYY-MM-DD AUTOPUBLISH_DRY_RUN=1 bash ~/wsj_club/.bot/run-auto-publish.sh [--track=junior]
+AUTOVOTE_FORCE=1   AUTOVOTE_DATE=YYYY-MM-DD   bash ~/wsj_club/.bot/run-auto-vote.sh          # both tracks
+AUTOVOTE_DATE=YYYY-MM-DD                      bash ~/wsj_club/.bot/vote-track.sh --track=junior   # one track, now
+AUTOPUBLISH_FORCE=1 AUTOPUBLISH_DATE=YYYY-MM-DD AUTOPUBLISH_DRY_RUN=1 bash ~/wsj_club/.bot/run-auto-publish.sh   # both tracks, no hold
+AUTOPUBLISH_HOUR=09 AUTOPUBLISH_DATE=YYYY-MM-DD bash ~/wsj_club/.bot/run-auto-publish.sh          # exercise the 9am hold
+AUTOPUBLISH_DATE=YYYY-MM-DD AUTOPUBLISH_DRY_RUN=1 bash ~/wsj_club/.bot/publish-track.sh --track=junior   # one track, now
 ```
-Logs: `.bot/logs/auto-vote[-junior]-<date>.log`, `.bot/logs/auto-publish[-junior]-<date>.log`.
+Logs: the drivers' `.bot/logs/run-auto-vote-<date>.log` / `run-auto-publish-<date>.log`
+(the hold decisions), the tracks' `auto-vote[-junior]-<date>.log` / `auto-publish[-junior]-<date>.log`.
 A manual run queues behind a cron run in progress (the lock waits rather than
 skips). A failed publish run leaves its half-made files in a `git stash`
 (`git stash list`), and the tree back on a clean `main`.
@@ -155,14 +160,19 @@ refuses to write a teaser (exit 2) for the same reason.
   selects the junior paths and branch.
 - `notify.mjs` — drop a nanoclaw IPC message → WhatsApp: the owner's DM by
   default, `--to=group` for the club group (each track's one announcement line,
-  sent by `run-auto-publish.sh` once that track's day is verified live; never by
+  sent by `publish-track.sh` once that track's day is verified live; never by
   the skill).
-- `run-auto-vote.sh` / `run-auto-publish.sh` — the cron entrypoints (Pacific
-  gate → lock → `git pull` → `xvfb-run claude -p` → outcome check; the publish
-  wrapper's outcome check also polls the live URL for up to 12 minutes and then
-  sends the announcement / owner DM), one per phase for both tracks
-  (`--track=junior`).
+- `ballots.mjs` — how many ballots each track's poll has for a date (direct
+  Postgres, read-only); the publish driver's hold reads it.
+- `run-auto-vote.sh` / `run-auto-publish.sh` — the cron entrypoints, one per
+  phase, no arguments: Pacific gate → (publish: the hourly ballot hold + owner
+  DM) → run senior then junior via the per-track script → exit non-zero if
+  either failed.
+- `vote-track.sh` / `publish-track.sh --track=senior|junior` — one track's run
+  (lock → `git pull` → `xvfb-run claude -p` → outcome check; the publish one
+  also polls the live URL for up to 12 minutes and then sends the announcement
+  / owner DM). No time gate: a direct call runs the track now.
 - `state/` — box-local hand-off between the two runs (`<date>-field.json`,
   `<date>-tally.json`, `<date>-pushed`; junior `<date>-junior-field.json`,
   `<date>-junior-tally.json`, `<date>-junior-pushed`);
-  `logs/` — per-day logs + the lock.
+  `logs/` — per-day logs + the locks.
