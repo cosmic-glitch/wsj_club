@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-13",
+  "title": "NASA’s latest mission to map the cosmos takes off",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/02/nasas-latest-mission-to-map-the-cosmos-takes-off",
+  "articlePageUrl": "/articles/junior/2026-09-13.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "predecessor",
+      "partOfSpeech": "noun",
+      "pronunciation": "PREH-duh-sess-ur",
+      "articleQuote": "over 100 times larger than the camera of its original predecessor, the Hubble Space Telescope.",
+      "meaning": "A predecessor is whoever or whatever came before — the person who held the job before you, or the older model that a new one replaces. Hiding inside the word is *precede*, which means to come before. Here the Hubble Space Telescope is Roman's predecessor: Hubble did this job first, and Roman is the newer telescope taking over, with a field of view more than 100 times wider.",
+      "examples": [
+        "Our new coach runs practice nothing like her predecessor did.",
+        "This game console loads levels in half the time its predecessor took."
+      ]
+    },
+    {
+      "word": "arduous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "AR-joo-us",
+      "articleQuote": "While the Roman telescope’s voyage through space has only just begun, its journey to the launch pad was arduous.",
+      "meaning": "Arduous means hard, tiring and long — the kind of difficulty that grinds on for weeks or years, not one tough moment. It usually describes a journey, a climb, or a stretch of work. The article calls the telescope's journey to the launch pad arduous: not the flight into space, but the years of building it and the fight in 2025 over whether it would be paid for at all.",
+      "examples": [
+        "The last mile of the hike was arduous — steep, rocky and all uphill.",
+        "Memorising every line for the school play was arduous, but opening night made it worth it."
+      ]
+    },
+    {
+      "word": "unprecedented",
+      "partOfSpeech": "adjective",
+      "pronunciation": "un-PREH-suh-den-tid",
+      "articleQuote": "From there, it will provide astronomers with an unprecedented view of the universe.",
+      "meaning": "Unprecedented means nothing like it has happened before, so there is no earlier example to measure it against. A *precedent* is an earlier case that sets the pattern, and the *un-* strips that away. Promising astronomers an unprecedented view of the universe is a claim that no telescope before this one has shown them this much sky in this much detail.",
+      "examples": [
+        "Forty points in a single game was unprecedented for our school.",
+        "The heat wave was unprecedented; the town had never hit 110 degrees in June before."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The transit method",
+      "articleQuote": "Instead, it will look for small blips in the light emitted by distant stars, which reveal the presence of planets passing in front of them.",
+      "meaning": "Roman is expected to find about 100,000 planets around other stars, and it will hardly see any of them directly. It will watch the stars instead. Astronomers call this the **transit method**, and it works for a simple physical reason: a planet is a solid ball of rock or gas, and solid things block light.\n\nPicture a star as a lamp very far away. A planet circling that star is dark. When its orbit carries it straight between the lamp and your telescope, the planet covers a tiny piece of the lamp's face, so slightly less light reaches you. The star's brightness dips — often by less than one percent — and returns to normal once the planet moves past. That dip is a *transit*.\n\nYou can build the same thing in a dark room. A friend across the room points a flashlight at you, and someone else walks a marble slowly through the beam. Your eyes will not catch a thing, but a light meter aimed at the flashlight will: full brightness, a small dip, full brightness again — and another dip each time the marble comes back around. The gap between dips tells you how long one lap takes. The depth of each dip tells you how big the marble is next to the flashlight.\n\nSo a telescope that never photographs a planet can still prove the planet is there, measure how wide it is, and time how long its year lasts — all from a star that gets slightly dimmer on a regular schedule."
+    },
+    {
+      "name": "Light-year",
+      "articleQuote": "Dr Savransky means within 100 light-years.",
+      "meaning": "An astronomer calls a star 100 light-years away *nearby*. That only makes sense once you know what a light-year measures — and the trap is the word *year* sitting inside it. A light-year is a **distance**, not a stretch of time.\n\nLight travels about 300,000 kilometres every second, and nothing in the universe goes faster. A light-year is simply how far light gets in one year at that speed: roughly 9.5 trillion kilometres. Astronomers reach for the unit because the kilometre numbers turn silly — the closest star after our own sun sits about 40,000,000,000,000 kilometres away, which is much easier to say as 4.2 light-years.\n\nLine that up against this article. The Roman telescope parks 1.6m kilometres from Earth, and light crosses that gap in about five seconds. The stars Dr Savransky wants to photograph are up to 100 light-years out, so the light landing on Roman's mirror tonight left those stars around 1926.\n\nThat is the part worth keeping. Because light needs time to cross a distance, every telescope shows you the past. Roman's deepest pictures of far-off galaxies are pictures of how those galaxies looked long before Earth existed."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article says the Roman telescope will give astronomers \"an unprecedented view of the universe.\" What does unprecedented mean?",
+      "options": [
+        "Extremely expensive to build",
+        "Never seen or done before",
+        "Blurry around the edges",
+        "Free for anyone to use"
+      ],
+      "answerIndex": 1,
+      "explanation": "A precedent is an earlier example that sets the pattern, so unprecedented means there is no earlier example like it."
+    },
+    {
+      "question": "Roman is expected to discover around 100,000 exoplanets. How will it find most of them?",
+      "options": [
+        "By photographing each planet directly with the coronagraph",
+        "By listening for radio signals sent from their surfaces",
+        "By watching for small dips in the light of the stars they pass in front of",
+        "By measuring how much dark matter each planet contains"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says Roman will look for small blips in starlight caused by planets passing in front of their stars — the transit method."
+    },
+    {
+      "question": "The article calls the Hubble Space Telescope the Wide Field Instrument's \"original predecessor.\" A predecessor is:",
+      "options": [
+        "A partner that works alongside something at the same time",
+        "The person or thing that came before",
+        "A spare kept in case the first one breaks",
+        "A prediction about what will happen next"
+      ],
+      "answerIndex": 1,
+      "explanation": "Predecessor holds the word precede, to come before: Hubble did this job before Roman took over."
+    },
+    {
+      "question": "The article says the telescope's \"journey to the launch pad was arduous.\" What does that tell you about those years?",
+      "options": [
+        "They went faster than anyone expected",
+        "They were kept secret from the public",
+        "They were long and difficult",
+        "They cost far less than planned"
+      ],
+      "answerIndex": 2,
+      "explanation": "Arduous means hard and tiring over a long stretch — here, years of building plus a 2025 fight over funding."
+    },
+    {
+      "question": "Dr Savransky calls stars within 100 light-years \"nearby.\" What is a light-year a measurement of?",
+      "options": [
+        "How long a star's light has been travelling",
+        "How far away something is",
+        "How old a star is",
+        "How bright a star looks from Earth"
+      ],
+      "answerIndex": 1,
+      "explanation": "A light-year is a distance — how far light travels in one year — even though the word year sits inside it."
+    }
+  ]
+}
