@@ -1,0 +1,549 @@
+[
+  {
+    "k": "urban",
+    "t": "urban",
+    "kind": "word",
+    "forms": [
+      "urban"
+    ],
+    "text": "Urban means having to do with a city or town, the opposite of rural, which means the countryside. Urban life is everyday life for people living packed closely together. The article is about the hidden inventions — sewers, house numbers, windows — that make that crowded life possible.",
+    "audio": true
+  },
+  {
+    "k": "invaluable",
+    "t": "invaluable",
+    "kind": "word",
+    "forms": [
+      "invaluable"
+    ],
+    "text": "Invaluable looks like it should mean worthless, but it means the opposite: so valuable you could never put a price on it. The in- here means closer to cannot be than to not. The book is about invaluable inventions — things like sewers and windows a city simply could not do without.",
+    "audio": true
+  },
+  {
+    "k": "jonn-elledge",
+    "t": "Jonn Elledge",
+    "kind": "name",
+    "forms": [
+      "Jonn Elledge"
+    ],
+    "text": "Jonn Elledge is the British writer who wrote the book under review, 31 Inventions that Built Our World. He writes a regular column for the New Statesman, a British magazine. The reviewer calls his book informative and often funny.",
+    "audio": true
+  },
+  {
+    "k": "new-statesman",
+    "t": "the New Statesman",
+    "kind": "name",
+    "forms": [
+      "New Statesman"
+    ],
+    "text": "The New Statesman is a British weekly magazine covering politics and culture, founded in 1913. Jonn Elledge writes a column for it. Naming where a writer works is a normal way for a review to tell you who they are.",
+    "audio": true
+  },
+  {
+    "k": "pounds-25",
+    "t": "£25",
+    "kind": "name",
+    "forms": [
+      "£25"
+    ],
+    "text": "The £ symbol stands for the pound, the money used in Britain, the way $ stands for the dollar. £25 is what the book costs there, worth around 30 US dollars. The Economist is a British magazine, so it usually gives British prices.",
+    "audio": true
+  },
+  {
+    "k": "obsolete",
+    "t": "obsolete",
+    "kind": "vocab",
+    "pron": "ob-suh-LEET",
+    "forms": [
+      "obsolete"
+    ],
+    "text": "Something is obsolete when something better has replaced it and nobody needs it any more. It is not just old: an old chair still works, but a floppy disk is obsolete because no machine is left that can read one. The office workers fear AI will make them obsolete — that a machine will do their job so well that nobody will hire a person for it.",
+    "audio": true
+  },
+  {
+    "k": "cubicle-dwellers",
+    "t": "cubicle-dwellers",
+    "kind": "word",
+    "forms": [
+      "cubicle-dwellers"
+    ],
+    "text": "A cubicle is a small work space in an office, walled off by low partitions that do not reach the ceiling. Cubicle-dwellers is a slightly mocking name for the office workers who spend their days inside them. The joke is that these are exactly the people worried a machine will take their jobs.",
+    "audio": true
+  },
+  {
+    "k": "souls",
+    "t": "souls",
+    "kind": "word",
+    "forms": [
+      "souls"
+    ],
+    "text": "A soul usually means the invisible part of a person that some people believe lives on after death. But souls is also an old-fashioned way of saying people, usually with pity — these unfortunate souls means these poor people. Here it means the gong farmers, who had a miserable job.",
+    "audio": true
+  },
+  {
+    "k": "gong-farmers",
+    "t": "gong farmers",
+    "kind": "name",
+    "forms": [
+      "gong farmers"
+    ],
+    "text": "Gong farmers were the workers in old London who emptied cesspits, the pits under toilets where human waste collected; gong was an old word for that waste. They worked at night and were paid quite well, because the job was so foul and so dangerous. They sold what they carried away to farmers, who spread it on fields.",
+    "audio": true
+  },
+  {
+    "k": "receptacles",
+    "t": "receptacles",
+    "kind": "word",
+    "forms": [
+      "receptacles"
+    ],
+    "text": "A receptacle is any container that holds something — a bin, a box, a tank. It comes from the same root as receive. Human-waste receptacles is a polite way of naming the pits and containers that London's toilets emptied into.",
+    "audio": true
+  },
+  {
+    "k": "victorian",
+    "t": "the Victorian era",
+    "kind": "name",
+    "forms": [
+      "Victorian era’s",
+      "Victorian London",
+      "Victorian"
+    ],
+    "text": "The Victorian era is the stretch of British history from 1837 to 1901, when Queen Victoria sat on the throne, and it is named after her. Britain built furiously in those years: railways, bridges, factories and sewers. Two inventions in this article, London's sewers and its underground railway, are Victorian.",
+    "audio": true
+  },
+  {
+    "k": "innovations",
+    "t": "innovations",
+    "kind": "word",
+    "forms": [
+      "innovations",
+      "innovation"
+    ],
+    "text": "An innovation is a new way of doing something — an invention, method or idea that catches on and changes how things are done. It is close to invention, but leans more on the change than on the object. The article's point is that sewers and street crossings were innovations too, though nobody thinks of them that way now.",
+    "audio": true
+  },
+  {
+    "k": "sewers",
+    "t": "sewers",
+    "kind": "word",
+    "forms": [
+      "sewers"
+    ],
+    "text": "A sewer is a large pipe buried under a city that carries away dirty water and human waste from every toilet, sink and street drain. The pipes tilt downhill so gravity moves the water along, and pumping stations lift it again at the low points. Before sewers, somebody had to carry a city's waste out by hand.",
+    "audio": true
+  },
+  {
+    "k": "pumping-stations",
+    "t": "pumping stations",
+    "kind": "name",
+    "forms": [
+      "pumping stations"
+    ],
+    "text": "A pumping station is a building full of pumps that lifts water up to a higher level. Sewers run on gravity, but no city slopes downhill the whole way, so at the low spots a pumping station raises the water and it can keep flowing. Victorian London's were huge steam-powered engines, and a few still stand.",
+    "audio": true
+  },
+  {
+    "k": "pedestrian-crossings",
+    "t": "pedestrian crossings",
+    "kind": "name",
+    "forms": [
+      "pedestrian crossings"
+    ],
+    "text": "A pedestrian is a person on foot, so a pedestrian crossing is the marked stretch of road where walkers are meant to cross — what Americans usually call a crosswalk. The stripes and signals were worked out in the 20th century, as cars filled the streets. The article lists it as technology nobody notices.",
+    "audio": true
+  },
+  {
+    "k": "street-grids",
+    "t": "street grids",
+    "kind": "name",
+    "forms": [
+      "street grids"
+    ],
+    "text": "A street grid is a city laid out in straight streets crossing at right angles, making square blocks, the way most of Manhattan is. The alternative is streets that wander, as in an old European town. A grid makes finding an address far easier, which is why it counts as an invention.",
+    "audio": true
+  },
+  {
+    "k": "testifies",
+    "t": "testifies",
+    "kind": "word",
+    "forms": [
+      "testifies"
+    ],
+    "text": "To testify usually means to give evidence in a court of law. More loosely it means to be proof of something, and that is the sense here. Saying that nobody sees sewers as technology only testifies to their success means their invisibility is the proof that they worked.",
+    "audio": true
+  },
+  {
+    "k": "fabric",
+    "t": "fabric",
+    "kind": "word",
+    "forms": [
+      "fabric"
+    ],
+    "text": "Fabric normally means cloth. Used about a place or a society, it means the structure everything else is woven into — the parts so basic the whole thing would fall apart without them. Part of the fabric of urban life means these inventions are built into city living itself, not extras.",
+    "audio": true
+  },
+  {
+    "k": "compendium",
+    "t": "compendium",
+    "kind": "word",
+    "forms": [
+      "compendium"
+    ],
+    "text": "A compendium is a book that gathers many short pieces on one subject into a single volume — a collection rather than one continuous story. This book is a compendium of 31 inventions, each with its own chapter. Think of an encyclopedia, but chattier and chosen by one person.",
+    "audio": true
+  },
+  {
+    "k": "columnist",
+    "t": "columnist",
+    "kind": "word",
+    "forms": [
+      "columnist"
+    ],
+    "text": "A columnist is a writer with a regular slot in a newspaper or magazine, usually giving opinions rather than reporting news. The slot itself is called a column. Jonn Elledge is a columnist for the New Statesman.",
+    "audio": true
+  },
+  {
+    "k": "agglomeration",
+    "t": "agglomeration",
+    "kind": "word",
+    "forms": [
+      "agglomeration"
+    ],
+    "text": "An agglomeration is a large jumbled heap of things clumped together. The word traces back to a Latin word for a ball of thread. Calling modern city life an agglomeration of marvels means it rests on hundreds of wonders piled on top of one another, not one.",
+    "audio": true
+  },
+  {
+    "k": "devoted",
+    "t": "devoted",
+    "kind": "word",
+    "forms": [
+      "devoted"
+    ],
+    "text": "Devoted usually describes a person who loves something completely — a devoted fan. Said of a chapter or a page, it means given over entirely to one subject. Each chapter is devoted to a different innovation means each one is about that single thing.",
+    "audio": true
+  },
+  {
+    "k": "digressive",
+    "t": "digressive",
+    "kind": "word",
+    "forms": [
+      "digressive"
+    ],
+    "text": "To digress is to wander off the point you were making, so a digressive book keeps drifting into side stories. That is usually a complaint, but here it is praise: the reviewer calls the book pleasantly digressive, because the detours are the fun part.",
+    "audio": true
+  },
+  {
+    "k": "evolution",
+    "t": "evolution",
+    "kind": "word",
+    "forms": [
+      "evolution"
+    ],
+    "text": "In biology, evolution is how living things change across many generations. Outside biology it means any slow change over time, with no animals involved at all. Cities and their evolution means the gradual way cities turned into what they are now.",
+    "audio": true
+  },
+  {
+    "k": "executives",
+    "t": "executives",
+    "kind": "word",
+    "forms": [
+      "executives"
+    ],
+    "text": "An executive is a senior manager who runs part of a company and makes decisions for it. Railway executives were the bosses of the railway companies. They took the first underground ride in 1863 because important people usually get the first go at something new.",
+    "audio": true
+  },
+  {
+    "k": "grandees",
+    "t": "grandees",
+    "kind": "word",
+    "forms": [
+      "grandees"
+    ],
+    "text": "Grandees are important, high-ranking people. The word came from Spanish, where it meant the highest nobles, and it often carries a faint mockery, hinting that they think a great deal of themselves. Railway executives and other grandees means the bosses and the other big names.",
+    "audio": true
+  },
+  {
+    "k": "mid-19th-century",
+    "t": "the mid-19th century",
+    "kind": "name",
+    "forms": [
+      "mid-19th century"
+    ],
+    "text": "Centuries are numbered one ahead of the years inside them: the 19th century means the 1800s, because it is the 19th block of a hundred years since year one. So the mid-19th century is roughly the 1850s and 1860s. The first underground railway opened in January 1863, right in that window.",
+    "audio": true
+  },
+  {
+    "k": "underground-rail-system",
+    "t": "underground rail system",
+    "kind": "name",
+    "forms": [
+      "underground rail system",
+      "Putting trains underground"
+    ],
+    "text": "An underground rail system is a railway dug beneath a city's streets so trains run with no traffic in the way — the Tube in London, the subway in New York. The first opened in London in 1863, pulled by steam engines, which left the tunnels smoky and filthy. Budapest built the second, 33 years later.",
+    "audio": true
+  },
+  {
+    "k": "budapest",
+    "t": "Budapest",
+    "kind": "name",
+    "forms": [
+      "Budapest"
+    ],
+    "text": "Budapest is the capital of Hungary, a country in central Europe. It opened the world's second underground railway in 1896, 33 years after London's. That long gap is the article's point: even a great invention did not always spread quickly.",
+    "audio": true
+  },
+  {
+    "k": "obscure",
+    "t": "obscure",
+    "kind": "word",
+    "forms": [
+      "obscure"
+    ],
+    "text": "Obscure means little known — so far out of the way that hardly anyone has heard of it. It can also mean hard to understand, or, as a verb, to hide something from view. Obscure trivia means facts almost nobody knows, which this author collects for fun.",
+    "audio": true
+  },
+  {
+    "k": "horse-drawn",
+    "t": "horse-drawn",
+    "kind": "word",
+    "forms": [
+      "horse-drawn"
+    ],
+    "text": "Horse-drawn means pulled along by a horse. Before engines, a horse-drawn bus was a big carriage running a fixed route through the city with horses in front instead of a motor. Each one left about a third of a tonne of manure behind every day.",
+    "audio": true
+  },
+  {
+    "k": "tonne",
+    "t": "tonne",
+    "kind": "word",
+    "forms": [
+      "tonne"
+    ],
+    "text": "A tonne, spelled this way, is the metric ton: 1,000 kilograms, or about 2,200 pounds. It is a little heavier than the US ton of 2,000 pounds. A third of a tonne is over 300 kilograms — from one bus, in one day.",
+    "audio": true
+  },
+  {
+    "k": "manure",
+    "t": "manure",
+    "kind": "word",
+    "forms": [
+      "manure"
+    ],
+    "text": "Manure is animal dung, especially when it is collected and spread on fields to help crops grow. Horses produce a great deal of it. A city full of horse-drawn buses meant streets deep in the stuff, which is part of why street cleaning and sewers mattered so much.",
+    "audio": true
+  },
+  {
+    "k": "agonisingly",
+    "t": "agonisingly",
+    "kind": "word",
+    "forms": [
+      "agonisingly"
+    ],
+    "text": "Agony is severe pain, so agonisingly slow means so slow that watching it hurts. It is an exaggeration, used for comic effect. Note the British spelling with an s: Americans write agonizingly.",
+    "audio": true
+  },
+  {
+    "k": "centimetres",
+    "t": "centimetres",
+    "kind": "word",
+    "forms": [
+      "centimetres"
+    ],
+    "text": "A centimetre is one hundredth of a metre, about the width of your little fingernail; the British spell it -metre and Americans -meter. Twenty centimetres per second is roughly eight inches a second. A walking person covers about seven times that, so the first elevator really was slow.",
+    "audio": true
+  },
+  {
+    "k": "ingrained",
+    "t": "ingrained",
+    "kind": "vocab",
+    "pron": "in-GRAYND",
+    "forms": [
+      "ingrained"
+    ],
+    "text": "Something ingrained is fixed so deeply into the way things are done that it feels natural rather than chosen. The word comes from dye soaking into the grain of cloth, where washing will not get it out. House numbers are so ingrained in how cities work that we forget somebody had to invent them.",
+    "audio": true
+  },
+  {
+    "k": "urban-design",
+    "t": "urban design",
+    "kind": "name",
+    "forms": [
+      "urban design"
+    ],
+    "text": "Urban design is the work of planning how a city is laid out: where the streets, squares, crossings and buildings go, and how people move between them. It settles things most people never think about, like how wide a pavement should be. Numbering the houses on a street is an urban-design idea.",
+    "audio": true
+  },
+  {
+    "k": "postmen",
+    "t": "postmen",
+    "kind": "word",
+    "forms": [
+      "postmen"
+    ],
+    "text": "Postmen are the people who deliver letters — post is the British word for mail, so an American would say mailman or mail carrier. Before houses had numbers, a postman had to puzzle out an address from a description of the person. The article quotes one that ends with a wooden leg.",
+    "audio": true
+  },
+  {
+    "k": "close",
+    "t": "Down a Close",
+    "kind": "name",
+    "forms": [
+      "Down a Close"
+    ],
+    "text": "In Scotland a close is a narrow alleyway or passage leading off a main street, often into a courtyard between tall buildings. Edinburgh's old town is full of them. So Down a Close in that address means down one of those alleys — useful only to somebody who already knew the city.",
+    "audio": true
+  },
+  {
+    "k": "canongate",
+    "t": "the Canongate",
+    "kind": "name",
+    "forms": [
+      "Canongate"
+    ],
+    "text": "The Canongate is a famous old street in Edinburgh, the lower part of the Royal Mile that runs down towards the palace. Up the Canongate means somewhere along it. It shows how vague an address could be before houses had numbers.",
+    "audio": true
+  },
+  {
+    "k": "edinburgh",
+    "t": "Edinburgh",
+    "kind": "name",
+    "forms": [
+      "Edinburgh"
+    ],
+    "text": "Edinburgh is the capital of Scotland, which is part of the United Kingdom. Its old town is a maze of steep streets and narrow closes, which is exactly why finding an address there was once so hard. It is said EDIN-bur-uh, not -burg.",
+    "audio": true
+  },
+  {
+    "k": "comprises",
+    "t": "comprises",
+    "kind": "word",
+    "forms": [
+      "comprises"
+    ],
+    "text": "To comprise means to be made up of. A thing comprises its parts: a week comprises seven days. The second type of invention comprises those that got better slowly means that type consists of those inventions.",
+    "audio": true
+  },
+  {
+    "k": "grinding",
+    "t": "grinding",
+    "kind": "word",
+    "forms": [
+      "grinding"
+    ],
+    "text": "Grinding normally means crushing something into powder between two hard surfaces. Used about work or progress, it means slow, hard and exhausting, going on and on. Grinding, incremental progress means improvement that came only through long, dull effort, with no sudden breakthrough.",
+    "audio": true
+  },
+  {
+    "k": "incremental",
+    "t": "incremental",
+    "kind": "vocab",
+    "pron": "in-kruh-MEN-tul",
+    "forms": [
+      "incremental"
+    ],
+    "text": "Incremental means happening in small steps instead of one big leap. An increment is one small amount added on. Windows improved through incremental progress: thousands of tiny changes over centuries, from a pig's bladder stretched over a hole to modern double glazing.",
+    "audio": true
+  },
+  {
+    "k": "incarnations",
+    "t": "incarnations",
+    "kind": "word",
+    "forms": [
+      "incarnations"
+    ],
+    "text": "An incarnation is one particular version or form that something takes. The word originally meant a god or spirit appearing in a body of flesh, and it now covers any earlier version of a thing — your phone in its first incarnation. Their first incarnations means the earliest, crudest versions of these inventions.",
+    "audio": true
+  },
+  {
+    "k": "yugo",
+    "t": "the Yugo",
+    "kind": "name",
+    "forms": [
+      "Yugo"
+    ],
+    "text": "The Yugo was a small, cheap car built in Yugoslavia and sold in America in the 1980s. It broke down so often that it became a standing joke, and it is still the example people reach for when they mean a terrible car. Anyone unlucky enough to have driven a Yugo is a joke the reviewer expects you to catch.",
+    "audio": true
+  },
+  {
+    "k": "pig-bladder",
+    "t": "pig bladder",
+    "kind": "name",
+    "forms": [
+      "pig bladder"
+    ],
+    "text": "A bladder is the stretchy bag inside an animal that holds urine. Dried and stretched flat, a pig's bladder is thin and slightly see-through, so before glass was affordable people tacked one over a window hole to let a little light in and keep the wind out. It is the crude ancestor of the window pane.",
+    "audio": true
+  },
+  {
+    "k": "molten",
+    "t": "molten",
+    "kind": "word",
+    "forms": [
+      "molten"
+    ],
+    "text": "Molten means melted into a liquid by great heat — molten rock, molten metal, molten glass. It is what solid materials become at very high temperatures. Glass starts as a molten mixture of sand, limestone and sodium carbonate, shaped while it flows and hard once it cools.",
+    "audio": true
+  },
+  {
+    "k": "limestone",
+    "t": "limestone",
+    "kind": "word",
+    "forms": [
+      "limestone"
+    ],
+    "text": "Limestone is a common pale rock made mostly from the crushed shells and skeletons of ancient sea creatures. People build with it and burn it to make cement, and it is one of the three ingredients in ordinary glass. In glass it is what keeps the finished pane from slowly dissolving in water.",
+    "audio": true
+  },
+  {
+    "k": "sodium-carbonate",
+    "t": "sodium carbonate",
+    "kind": "name",
+    "forms": [
+      "sodium carbonate"
+    ],
+    "text": "Sodium carbonate, also called soda ash, is a white powder used in glassmaking, soap and detergents. It goes into glass because it brings the melting point of sand down from about 1,700°C to something a furnace can actually reach. Without it, ordinary glass would be far too costly to make.",
+    "audio": true
+  },
+  {
+    "k": "double-glazed",
+    "t": "double-glazed",
+    "kind": "name",
+    "forms": [
+      "double-glazed"
+    ],
+    "text": "A double-glazed window has two panes of glass with a sealed gap of air or gas between them, instead of a single pane. Air carries heat poorly, so the gap slows warmth escaping a room in winter and noise coming in. Glazing is an old word for fitting glass into a window frame.",
+    "audio": true
+  },
+  {
+    "k": "uniform",
+    "t": "uniform",
+    "kind": "word",
+    "forms": [
+      "uniform"
+    ],
+    "text": "A uniform is the matching outfit worn by a school or a team, but as a describing word uniform means the same all the way through, with no variation. Windows of uniform thickness are exactly as thick at the edge as in the middle, so the view through them is not wavy. Old hand-made glass was not uniform, which is why very old windows distort what you see.",
+    "audio": true
+  },
+  {
+    "k": "ubiquitous",
+    "t": "ubiquitous",
+    "kind": "word",
+    "forms": [
+      "ubiquitous"
+    ],
+    "text": "Ubiquitous means found absolutely everywhere, so common that you stop noticing it. Glass is ubiquitous now: windows, screens, bottles, spectacles. The quoted line's point is that something once available only to the very rich now surrounds everybody.",
+    "audio": true
+  },
+  {
+    "k": "godly",
+    "t": "godly",
+    "kind": "word",
+    "forms": [
+      "godly"
+    ],
+    "text": "Godly means deeply religious, devoted to God. In the quoted line, a technology available only to the richest and most godly means glass was once found only in wealthy homes and in churches and cathedrals. Stained-glass windows were a church luxury long before ordinary houses had any glass at all.",
+    "audio": true
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-14",
+  "title": "Urban life rests on invisible, extraordinary technology",
+  "articleUrl": "https://www.economist.com/culture/2026/09/10/urban-life-rests-on-invisible-extraordinary-technology",
+  "articlePageUrl": "/articles/junior/2026-09-14.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "obsolete",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ob-suh-LEET",
+      "articleQuote": "Walk into any office full of workers who fear AI is about to make them obsolete",
+      "meaning": "Something is **obsolete** when something better has replaced it and nobody needs it any more. It is not the same as old: a hundred-year-old chair still works fine, but a floppy disk is obsolete because no machine is left that can read one. In the article, office workers fear AI will make *them* obsolete — not that they will get old, but that a machine will do their job so well that nobody will hire a person to do it.",
+      "examples": [
+        "Our library still has a DVD player, but once every class switched to streaming it became obsolete.",
+        "He insisted his old console wasn't obsolete, even though no company had made a game for it in six years."
+      ]
+    },
+    {
+      "word": "ingrained",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-GRAYND",
+      "articleQuote": "The first is the sort of thing so deeply ingrained in urban design that it seems more natural than invented.",
+      "meaning": "Something **ingrained** is fixed so deeply into the way things are done that it feels natural instead of chosen. The word comes from dye soaking right into the grain of cloth, where washing will not get it out. The article's example is house numbers: putting a number on every house is so ingrained in how cities are built that we forget somebody had to think of it first, on one London street in 1708.",
+      "examples": [
+        "Checking her phone the second she wakes up is so ingrained that she does it before she remembers she meant to quit.",
+        "After three years of school photos, lining up by height was ingrained in our class — nobody had to say it any more."
+      ]
+    },
+    {
+      "word": "incremental",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-kruh-MEN-tul",
+      "articleQuote": "The second type of invention comprises those that through grinding, incremental progress have become immeasurably superior to their first incarnations.",
+      "meaning": "**Incremental** means happening in small steps instead of one big leap. An *increment* is one small amount added on, so incremental progress is change you can barely notice day to day that piles up into something huge over years. The article says some of the best inventions improve this way: a window went from a pig's bladder stretched over a hole to modern double glazing through grinding, incremental progress, not one brilliant morning.",
+      "examples": [
+        "Her free throws got better in incremental steps — one extra basket a week, until by spring she hardly missed.",
+        "The updates were incremental: a bug fixed here, a new hat there, nothing you'd notice until you compared it with last year's version."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Sewers",
+      "articleQuote": "One of the Victorian era’s greatest technological innovations, sewers with pumping stations, put them out of business.",
+      "meaning": "Before sewers, somebody had to carry a city's waste out of it by hand. The article calls those workers **gong farmers**: they emptied London's human-waste pits and sold the contents to farmers. What put them out of work was a piece of *civil engineering* — the field that designs the parts a city is built out of.\n\nHere is how a sewer actually works. Every toilet, sink and street drain connects to a pipe. All those pipes tilt slightly downhill and join bigger pipes buried under the streets, so gravity pulls the dirty water along on its own — nobody carries anything anywhere. But a city is not downhill the whole way, so where the pipes reach a low point, a **pumping station** lifts the water back up high enough to keep sliding downhill again. Victorian London buried a huge network of these in the 1860s, and cholera, a deadly disease people caught from water fouled with waste, stopped sweeping the city.\n\nThink about your school. Two hundred people use the bathrooms in one day. With no sewer, somebody would have to haul every bucket of that off the property before class the next morning — and somebody would have to be paid to do it. With a sewer, the water leaves the building the moment you flush, and no one thinks about it again.\n\nThat is the trade a sewer makes: a city can grow far bigger than the number of people willing to carry its waste away."
+    },
+    {
+      "name": "Glassmaking",
+      "articleQuote": "molten mixtures of limestone, sodium carbonate and sand to modern double-glazed windows of uniform thickness",
+      "meaning": "A window is mostly melted sand. That is not a figure of speech. The main ingredient in ordinary glass is **silica**, which is what most sand is made of, and glassmaking is the corner of *materials science* that turns it into a flat, clear sheet.\n\nSand by itself is very hard to work with, because it does not melt until about 1,700°C — hotter than most furnaces ever got. So two other ingredients go into the mix, and each one changes it in a specific way. **Sodium carbonate**, also called soda, brings the melting point down to roughly 1,000°C, which a furnace can actually reach. The problem is that glass made of just sand and soda slowly dissolves in water, which is useless for a window, so **limestone** goes in third and makes the cooled glass hard and waterproof. Melt all three together and you get a thick, glowing liquid that can be blown into a shape, rolled into a sheet, or — the modern trick — poured onto a bath of molten tin, where it spreads out perfectly flat. That last step is why the article can call modern windows panes \"of uniform thickness\": the same thickness everywhere, so the view through them is not wobbly.\n\n*Double-glazed* means two panes with a sealed gap between them. Air carries heat poorly, so the trapped gap slows the warmth leaking out of a room in winter — the same reason a puffy coat, which is mostly trapped air, beats a thin one.\n\nSo glass is not a rare material at all. It is three cheap rocks and a great deal of heat, which is how something once reserved for palaces and cathedrals ended up in every window on your street."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What happened to London's gong farmers?",
+      "options": [
+        "They were hired to dig the new sewers",
+        "Sewers with pumping stations took over their work and put them out of business",
+        "Farmers stopped buying what they collected, so they moved to Budapest",
+        "They invented the first pumping station themselves"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article opens with gong farmers, who cleaned London's human-waste receptacles, and says sewers with pumping stations \"put them out of business.\""
+    },
+    {
+      "question": "The article describes workers who fear AI is about to make them obsolete. What are they afraid of?",
+      "options": [
+        "That they will be asked to work much longer hours",
+        "That something better will replace them, so nobody will need them for the job",
+        "That they will have to learn to repair machines",
+        "That their office will be moved to another city"
+      ],
+      "answerIndex": 1,
+      "explanation": "Obsolete means replaced by something better and no longer needed — not simply old."
+    },
+    {
+      "question": "House numbering is \"so deeply ingrained in urban design that it seems more natural than invented.\" What does ingrained mean here?",
+      "options": [
+        "Added to cities only very recently",
+        "Fixed so deeply into how things are done that it feels natural rather than chosen",
+        "Carved or painted into stone so it lasts",
+        "Designed badly and hard to change"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ingrained describes something soaked so far into a system or a habit that people stop noticing anyone decided it."
+    },
+    {
+      "question": "Why does the article treat windows as a good example of its second type of invention?",
+      "options": [
+        "One inventor thought of the modern window all at once",
+        "They became vastly better through grinding, incremental progress over centuries",
+        "They were invented in London, like the underground railway",
+        "Nobody has managed to improve them since they were invented"
+      ],
+      "answerIndex": 1,
+      "explanation": "Incremental progress means many small improvements adding up — windows went from a pig's bladder over a hole to modern double glazing that way."
+    },
+    {
+      "question": "Ordinary glass is made mostly from which material?",
+      "options": [
+        "Limestone",
+        "Sand",
+        "Clay",
+        "Melted plastic"
+      ],
+      "answerIndex": 1,
+      "explanation": "Sand supplies the silica that makes up most of the glass; sodium carbonate lowers its melting point and limestone keeps the result from dissolving in water."
+    }
+  ]
+}
