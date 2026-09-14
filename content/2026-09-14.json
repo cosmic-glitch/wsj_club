@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-14",
+  "title": "The forgotten contraption that gave birth to mass media",
+  "articleUrl": "https://www.economist.com/culture/2026/09/10/the-forgotten-contraption-that-gave-birth-to-mass-media",
+  "articlePageUrl": "/articles/2026-09-14.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "provenance",
+      "partOfSpeech": "noun",
+      "pronunciation": "PROV-uh-nunss",
+      "articleQuote": "Early print media were mistrusted because their provenance was less certain than voice or written manuscript.",
+      "meaning": "Provenance is the record of where something came from and whose hands it passed through on the way to you. It is used most often about art and antiques — a painting's provenance is the documented chain of owners running back to the artist's studio — and lately about photographs and data online. It is not quite a synonym for origin: provenance is the *traceable* trail, the thing that lets you decide whether to trust the object in front of you. The article uses it to explain why print was distrusted at first — a spoken message came from someone standing in front of you and a manuscript came in a hand you might recognise, but a printed sheet arrived anonymous and identical to a thousand others, its provenance stripped off by the very machine that made it cheap.",
+      "examples": [
+        "The museum turned the vase down because its provenance had a forty-year hole in it — nobody could say where it had been between 1940 and 1980.",
+        "By the time a screenshot has been forwarded through six group chats its provenance is gone, and you have no way of knowing who made it or whether that conversation ever happened."
+      ]
+    },
+    {
+      "word": "sensationalism",
+      "partOfSpeech": "noun",
+      "pronunciation": "sen-SAY-shuh-nuh-liz-um",
+      "articleQuote": "chasing audiences also encouraged sensationalism",
+      "meaning": "Sensationalism is the practice of presenting news so as to excite or shock an audience rather than to inform it — leading with the goriest detail, the angriest quote, the most alarming number available, because that is what makes a person stop and look. The ending *-ism* marks it as a habit or tendency of a whole trade rather than a single act, and the word is nearly always an accusation: nobody describes their own work that way. In the article it names the price of the 20th-century newspaper's new arrangement. Once a paper's income depended on the size of the crowd it could gather rather than on a political party's backing, whatever gathered a crowd fastest had a permanent pull on the front page.",
+      "examples": [
+        "The school paper could have led with the budget vote, but it ran the one shoving match at the game across the entire front page — pure sensationalism.",
+        "Her video was careful and accurate; the thumbnail was sensationalism, a screaming face and the word BANNED over what turned out to be a minor rule change."
+      ]
+    },
+    {
+      "word": "indiscriminate",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-dih-SKRIM-uh-nit",
+      "articleQuote": "A contributor to the Atlantic Monthly in 1904 worried that the typewriter's “indiscriminate use [may lead] to a degeneration in literary style”.",
+      "meaning": "Indiscriminate means done without making distinctions — without picking and choosing, applied to everything alike. It sits on the older and neutral sense of *discriminate*, which simply meant to tell things apart; today that verb usually means treating people unfairly by race or sex, a narrowing of the same root that makes the two words look unrelated when they are not. The 1904 complaint quoted here is that writers would reach for the typewriter for absolutely everything, exercising no judgment about which occasions deserved the slower care of a pen, and that writing with that filter switched off would coarsen the language.",
+      "examples": [
+        "He was indiscriminate with the highlighter: three-quarters of the page ended up yellow, so nothing stood out at all.",
+        "The new spam filter was indiscriminate — it dumped her coach's emails into the junk folder alongside the actual junk."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Typesetting",
+      "articleQuote": "Each lead letter had to be manually placed, little differently from when Gutenberg invented the press four centuries earlier.",
+      "meaning": "Laying out a single page of a book took two hours, and spectators paid money to watch speed-typesetting tournaments the way they might watch a track meet. To see how a job that sounds that dull could be either of those things, you need to know what setting type physically was — the central craft of printing for four and a half centuries.\n\nA press does not draw letters; it stamps them. So before anything can be printed, a person has to build the page out of small metal blocks, one block per character, each carrying a raised mirror-image letter on its face. **Typesetting** is that building job: reaching into a wooden case, picking out the block for *t*, then *h*, then *e*, packing them into a line, wedging in blank metal spacers until that line is exactly as wide as every other, and stacking the lines into a solid page-shaped slab. Ink the raised faces, press paper down onto them, lift it off, and there is the page. Every copy after the first is then fast and nearly free — which is exactly why printing was cheap and typesetting was the expensive bottleneck. The slow part happened once, by hand, before a single sheet came off.\n\nThe blocks sat in two cases stacked in front of the compositor, capitals in the upper one and small letters in the lower, which is where **uppercase** and **lowercase** come from. So does *cliché*: a phrase wanted so often that printers had it cast as one ready-made block instead of setting it letter by letter every time. Words from a shop floor end up in ordinary speech when the craft was once everywhere.\n\nMergenthaler's move was not to arrange the letters faster but to stop arranging them: the operator typed, and the machine moulded each whole line as one fresh slug of hot metal, to be melted down again after printing. When a technology looks stuck, the useful question is which single step inside it is still being done by hand."
+    },
+    {
+      "name": "Advertising-funded media",
+      "articleQuote": "Scale led to more advertising and, with it, national brands like Kodak and Campbell's.",
+      "meaning": "The oddest claim in this article is that chasing the masses pushed newspapers toward *an air of objectivity* and, in the same breath, toward *sensationalism*. Even-handedness and shock, produced by one and the same force. It only makes sense once you look at who was actually paying.\n\nA mass-circulation newspaper has two sets of customers, not one. Readers hand over a few cents, which historically came nowhere near covering newsprint, ink, presses and wages. The real money came from the second customer, the advertiser — who is not buying the newspaper at all but buying *access to the people reading it*, and who pays roughly in proportion to how many of them there are. The product sold to the paying customer, in other words, is the audience. Economists call a business shaped like this, serving two groups that are each worth more to it because of the other, a **two-sided market**, and you are standing inside one every time you use something free.\n\nBoth of the article's opposite-looking effects fall straight out of that arithmetic. A 19th-century paper bankrolled by a political party wrote for that party's supporters, and the other half of town was never the point. A paper bankrolled by an advertiser who wants to sell soap to the whole town cannot afford to drive half the town away, so a reputation for even-handedness turns commercially useful — whether or not a single person's convictions changed. But the same arithmetic pays for audience by any route at all, and shock gathers one faster than care does. National brands appear for the same reason: a name like Kodak or Campbell's is only worth building once there is a single enormous audience you can tell about it all at once.\n\nThe habit worth keeping: when something is free, find the paying customer and work out what they are buying. That answer, rather than the mission statement, usually explains why the thing is built the way it is."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "By the 1870s steam presses, railways and cheap wood-pulp paper were all in place. According to the article, what was still missing?",
+      "options": [
+        "Cheap paper — rags were still the only source",
+        "A way to move newspapers beyond the city that printed them",
+        "A way to set type faster than a person placing one lead letter at a time",
+        "A press strong enough to print more than four pages at once"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says almost every part of publishing had been mechanised, but typesetting was as slow and expensive as ever."
+    },
+    {
+      "question": "How did Mergenthaler's Linotype get around that bottleneck?",
+      "options": [
+        "It used electricity to move the individual metal letters into place faster",
+        "It photographed a handwritten page and etched the image onto a plate",
+        "It reused pages of type that had been set for earlier editions",
+        "It moulded whole lines of type at once in hot metal, from matrices chosen at a keyboard"
+      ],
+      "answerIndex": 3,
+      "explanation": "Rather than arranging the fiddly letters more quickly, the Linotype bypassed the job by casting entire lines on the fly in molten lead, antimony and tin."
+    },
+    {
+      "question": "Early print media were mistrusted, the article says, because their provenance was less certain. What does provenance mean?",
+      "options": [
+        "How much it cost to produce something",
+        "The record of where something came from and whose hands it passed through",
+        "How quickly something can be copied and spread",
+        "Whether the facts in something have been checked"
+      ],
+      "answerIndex": 1,
+      "explanation": "Provenance is the traceable trail of origin and ownership — which is what a printed sheet, anonymous and identical to a thousand others, lacked."
+    },
+    {
+      "question": "Chasing a mass audience pushed 20th-century newspapers in two directions at once. Which pair does the article describe?",
+      "options": [
+        "Toward sharper partisanship and toward higher cover prices",
+        "Toward government ownership and toward censorship",
+        "Toward shorter papers and toward fewer advertisements",
+        "Toward at least an air of objectivity and toward sensationalism"
+      ],
+      "answerIndex": 3,
+      "explanation": "Seeking the attention of the masses meant cultivating at least an air of objectivity, though chasing audiences also encouraged sensationalism."
+    },
+    {
+      "question": "In 1904 a contributor to the Atlantic Monthly worried about the typewriter's “indiscriminate use”. Indiscriminate here means:",
+      "options": [
+        "Used without making distinctions about when it is appropriate",
+        "Used in a way that treats certain groups unfairly",
+        "Used only by people trained to use it properly",
+        "Used secretly, without the reader's knowledge"
+      ],
+      "answerIndex": 0,
+      "explanation": "Indiscriminate means without picking and choosing; option two is today's more common sense of “discriminate”, not the older root sense meant here."
+    }
+  ]
+}
