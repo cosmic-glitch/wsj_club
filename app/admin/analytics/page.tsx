@@ -24,7 +24,7 @@ export const metadata = {
 /**
  * The Activity page — who opened what, and how often (lib/analytics.ts over
  * rc_events + the quiz tables). Scoped exactly like Reports: the owner sees
- * every classroom (plus the logged-out bucket and a Parent column), a parent
+ * every classroom (plus the logged-out row and a Parent column), a parent
  * their own classroom; students don't have it. One page for both tracks: the
  * member table is combined, the per-reading tables are one per track. The
  * window (7 days by default / 30 / all) is a query param so the aggregation
@@ -191,11 +191,7 @@ export default async function AnalyticsPage({
         })}
       </div>
 
-      <ActivityReport
-        data={data}
-        showAnon={owner}
-        parentNames={owner ? parentNames : undefined}
-      />
+      <ActivityReport data={data} parentNames={owner ? parentNames : undefined} />
     </div>
   );
 }

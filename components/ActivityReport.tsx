@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import type {
-  Analytics,
-  PersonActivity,
-  ReadingActivity,
-  StudentDay,
-  StudentRow,
-  TrackReadings,
+import {
+  ANON,
+  type Analytics,
+  type PersonActivity,
+  type ReadingActivity,
+  type StudentDay,
+  type StudentRow,
+  type TrackReadings,
 } from "@/lib/analytics";
 
 /**
@@ -19,9 +20,10 @@ import type {
  * pre-aggregated from lib/analytics.ts; this component only lays them out.
  * Client only for the expand/collapse state — nothing is fetched here.
  *
- * `showAnon` (owner only) adds the logged-out bucket; `parentNames` (owner
- * only) adds the Parent column to the student table, since the owner's view
- * collapses every classroom into one list.
+ * Logged-out visitors arrive as one pseudo-person (`ANON`, owner's view
+ * only) and are laid out like any row, labelled "Logged out". `parentNames`
+ * (owner only) adds the Parent column to the student table, since the
+ * owner's view collapses every classroom into one list.
  */
 
 const th =
@@ -76,6 +78,19 @@ function Check({ on }: { on: boolean }) {
   );
 }
 
+/** A row's name cell: the member's username, or the logged-out label. */
+function Who({ username, role }: { username: string; role?: "student" | "parent" | "anon" }) {
+  if (username === ANON || role === "anon") {
+    return <span className="font-bold text-stone-500">Logged out</span>;
+  }
+  return (
+    <>
+      <span className="font-bold text-[#0a0a0a]">{username}</span>
+      {role === "parent" && <span className={`${chip} ml-2`}>parent</span>}
+    </>
+  );
+}
+
 function Toggle({ open }: { open: boolean }) {
   return (
     <span
@@ -121,7 +136,7 @@ function PeopleTable({ r }: { r: ReadingActivity }) {
   return (
     <div className="border-l-[3px] border-[#ffe600] pl-3">
       {r.people.length === 0 ? (
-        <p className={`${chip} py-2`}>No member activity on this reading.</p>
+        <p className={`${chip} py-2`}>No activity on this reading.</p>
       ) : (
         <table className="w-full border-collapse">
           <thead>
@@ -138,7 +153,9 @@ function PeopleTable({ r }: { r: ReadingActivity }) {
           <tbody>
             {r.people.map((p: PersonActivity) => (
               <tr key={p.username} className="last:[&>td]:border-b-0">
-                <td className={`${td} font-bold text-[#0a0a0a]`}>{p.username}</td>
+                <td className={`${td} whitespace-nowrap`}>
+                  <Who username={p.username} />
+                </td>
                 <td className={td}>
                   <Count n={p.articleOpens} />
                 </td>
@@ -181,13 +198,7 @@ function PeopleTable({ r }: { r: ReadingActivity }) {
 
 const TRACK_LABEL = { senior: "Regular", junior: "Junior" } as const;
 
-function ReadingsTable({
-  tr,
-  showAnon,
-}: {
-  tr: TrackReadings;
-  showAnon: boolean;
-}) {
+function ReadingsTable({ tr }: { tr: TrackReadings }) {
   const [open, setOpen] = useState<Set<string>>(new Set());
   const toggle = (k: string) =>
     setOpen((s) => {
@@ -196,12 +207,12 @@ function ReadingsTable({
       else n.add(k);
       return n;
     });
-  const cols = showAnon ? 9 : 8;
+  const cols = 8;
 
   return (
     <Section
       title={`${TRACK_LABEL[tr.track]} readings`}
-      note="The funnel per reading: article → handout → AI quiz, as the number of people who took each step. Read = median time the article page was visible. Click a row for who did what, with their opens."
+      note="The funnel per reading: article → handout → AI quiz, as the number of people who took each step (everyone logged out counts as one). Read = median time the article page was visible, members only. Click a row for who did what, with their opens; logged-out opens get their own row."
     >
       {tr.readings.length === 0 ? (
         <Empty>No readings in this window.</Empty>
@@ -218,7 +229,6 @@ function ReadingsTable({
                 <th className={th}>Handout</th>
                 <th className={th}>AI quiz</th>
                 <th className={th}>Taps</th>
-                {showAnon && <th className={th}>Logged out</th>}
               </tr>
             </thead>
             <tbody>
@@ -230,7 +240,6 @@ function ReadingsTable({
                     r={r}
                     isOpen={isOpen}
                     onToggle={() => toggle(r.date)}
-                    showAnon={showAnon}
                     cols={cols}
                   />
                 );
@@ -247,13 +256,11 @@ function ReadingRows({
   r,
   isOpen,
   onToggle,
-  showAnon,
   cols,
 }: {
   r: ReadingActivity;
   isOpen: boolean;
   onToggle: () => void;
-  showAnon: boolean;
   cols: number;
 }) {
   return (
@@ -289,13 +296,6 @@ function ReadingRows({
         <td className={td}>
           <Count n={r.glossTaps} />
         </td>
-        {showAnon && (
-          <td className={`${td} whitespace-nowrap ${muted}`}>
-            {r.anon.articleOpens + r.anon.handoutOpens + r.anon.glossTaps
-              ? `${r.anon.articleOpens} · ${r.anon.handoutOpens} · ${r.anon.glossTaps}`
-              : "—"}
-          </td>
-        )}
       </tr>
       {isOpen && (
         <tr>
@@ -386,7 +386,7 @@ function StudentsTable({
   return (
     <Section
       title="By student"
-      note={`Everyone with any activity in this window, both tracks (${published} published). Each step counts the readings that person took it on. Read = total time on article pages. Parents follow the students. Click a row for the per-reading timeline, with junior readings marked.`}
+      note={`Everyone with any activity in this window, both tracks (${published} published). Each step counts the readings that person took it on. Read = total time on article pages. Parents follow the students; opens with no login are one "Logged out" row at the end. Click a row for the per-reading timeline, with junior readings marked.`}
     >
       {data.students.length === 0 ? (
         <Empty>No activity in this window.</Empty>
@@ -417,9 +417,9 @@ function StudentsTable({
                     onToggle={() => toggle(s.username)}
                     parentName={
                       parentNames
-                        ? s.role === "parent"
-                          ? "—"
-                          : parentNames[s.parentId ?? ""] ?? s.parentId ?? "—"
+                        ? s.role === "student"
+                          ? parentNames[s.parentId ?? ""] ?? s.parentId ?? "—"
+                          : "—"
                         : undefined
                     }
                     cols={cols}
@@ -469,9 +469,8 @@ function StudentRows({
             <Toggle open={isOpen} />
           </button>
         </td>
-        <td className={`${td} font-bold text-[#0a0a0a]`}>
-          {s.username}
-          {s.role === "parent" && <span className={`${chip} ml-2`}>parent</span>}
+        <td className={`${td} whitespace-nowrap`}>
+          <Who username={s.username} role={s.role} />
         </td>
         {parentName !== undefined && (
           <td className={`${td} text-stone-600`}>{parentName}</td>
@@ -506,34 +505,17 @@ function StudentRows({
 
 export default function ActivityReport({
   data,
-  showAnon = false,
   parentNames,
 }: {
   data: Analytics;
-  showAnon?: boolean;
   parentNames?: Record<string, string>;
 }) {
-  const a = data.anon;
-  const anyAnon = a.articleOpens + a.handoutOpens + a.selfquizOpens + a.wordbankOpens + a.glossTaps;
   return (
     <div>
       <StudentsTable data={data} parentNames={parentNames} />
       {data.tracks.map((tr) => (
-        <ReadingsTable key={tr.track} tr={tr} showAnon={showAnon} />
+        <ReadingsTable key={tr.track} tr={tr} />
       ))}
-      {showAnon && (
-        <p className="mt-3 font-sans text-[13px] text-stone-500">
-          <span className={chip}>Logged out: </span>
-          {anyAnon
-            ? `${a.articleOpens} article · ${a.handoutOpens} handout · ${a.wordbankOpens} word bank · ${a.glossTaps} taps`
-            : "no logged-out opens in this window"}
-          <span className={muted}>
-            {" "}
-            — opens with no login on either track, never attributed. The
-            column reads article · handout · taps.
-          </span>
-        </p>
-      )}
     </div>
   );
 }

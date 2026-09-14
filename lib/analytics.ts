@@ -25,13 +25,21 @@ import type { WordQuizAttempt } from "@/lib/word-quiz";
  * contributes its MAX, clamped (a tab left open is not reading), summed per
  * person per reading.
  *
- * Anonymous (username null) events are counted in their own bucket, never
- * attributed — the owner's rule. Days are club-local (US Pacific).
+ * Anonymous (username null) events are never attributed — the owner's rule —
+ * but they are counted: every logged-out visitor is folded into ONE
+ * pseudo-person, `ANON` (username ""), which takes a row in the by-student
+ * table and in each reading's detail like any member, and counts as one more
+ * person in the funnel columns. Its read time is a lump across unknown
+ * readers, so it is shown on its own row but kept out of the read median.
+ * Days are club-local (US Pacific).
  */
 
 export type ActivityWindow = 7 | 30 | "all";
 
 export const TRACKS: Track[] = ["senior", "junior"];
+
+/** The logged-out pseudo-person's username (never a real login). */
+export const ANON = "";
 
 /** Clamp on one page load's visible time — beyond this it's a forgotten tab. */
 const MAX_VIEW_SECONDS = 30 * 60;
@@ -50,7 +58,7 @@ export function windowStart(w: ActivityWindow): string | null {
 }
 
 export type PersonActivity = {
-  username: string;
+  username: string; // ANON for the logged-out row
   articleOpens: number;
   articleFirst: string | null; // ISO of the first open
   readSeconds: number;
@@ -66,16 +74,15 @@ export type ReadingActivity = {
   title: string;
   articlePeople: number;
   articleOpens: number;
-  readMedianSeconds: number | null; // across people who read at all
+  readMedianSeconds: number | null; // across members who read at all (not ANON)
   handoutPeople: number;
   handoutOpens: number;
   selfquizPeople: number;
   selfquizOpens: number;
   quizPeople: number;
   glossTaps: number;
-  anon: { articleOpens: number; handoutOpens: number; selfquizOpens: number; glossTaps: number };
   topWords: { word: string; taps: number }[]; // most-tapped glossary terms (everyone, anon included)
-  people: PersonActivity[]; // by first article open, then name
+  people: PersonActivity[]; // by first article open, then name; the ANON row last
 };
 
 export type StudentDay = {
@@ -91,8 +98,8 @@ export type StudentDay = {
 };
 
 export type StudentRow = {
-  username: string;
-  role: "student" | "parent";
+  username: string; // ANON for the logged-out row
+  role: "student" | "parent" | "anon";
   parentId: string | null;
   articles: number; // distinct readings whose article page they opened (in window)
   handouts: number;
@@ -116,13 +123,6 @@ export type Analytics = {
   students: StudentRow[];
   idleMembers: number; // roster members with no row (nothing in the window)
   tracks: TrackReadings[]; // senior, then junior
-  anon: {
-    articleOpens: number;
-    handoutOpens: number;
-    selfquizOpens: number;
-    wordbankOpens: number;
-    glossTaps: number;
-  };
 };
 
 export type Member = {
@@ -201,7 +201,7 @@ function sessionTrack(s: Session): Track {
 
 /** A reading's identity across tracks (dates repeat between tracks). */
 const readingKey = (track: Track, date: string) => `${track}\0${date}`;
-/** A (reading, person) tally key; the anonymous bucket is user "". */
+/** A (reading, person) tally key; the anonymous bucket is user ANON. */
 const personKey = (rk: string, user: string) => `${rk}\0${user}`;
 
 export function buildAnalytics(input: {
@@ -244,7 +244,6 @@ export function buildAnalytics(input: {
     return t;
   };
   const wordTaps = new Map<string, Map<string, number>>(); // reading → word → taps
-  const anon = { articleOpens: 0, handoutOpens: 0, selfquizOpens: 0, wordbankOpens: 0, glossTaps: 0 };
   const wordbankOpens = new Map<string, number>(); // user → opens
   const lastActive = new Map<string, string>(); // user → ISO
   const touch = (user: string, at: string) => {
@@ -256,22 +255,18 @@ export function buildAnalytics(input: {
     (touched.get(user) ?? touched.set(user, new Set()).get(user)!).add(rk);
 
   for (const e of events) {
-    if (e.username) touch(e.username, e.at);
+    // A logged-out event belongs to the ANON pseudo-person (scoped out for
+    // non-owners upstream, so their build never sees one).
+    const user = e.username ?? ANON;
+    touch(user, e.at);
     if (e.kind === "wordbank_view") {
-      if (e.username) wordbankOpens.set(e.username, (wordbankOpens.get(e.username) ?? 0) + 1);
-      else anon.wordbankOpens++;
+      wordbankOpens.set(user, (wordbankOpens.get(user) ?? 0) + 1);
       continue;
     }
     if (!e.date) continue;
     const rk = readingKey(e.track, e.date);
-    absorb(tallyFor(rk, e.username ?? ""), e);
-    if (e.username) touchReading(e.username, rk);
-    else {
-      if (e.kind === "article_view") anon.articleOpens++;
-      else if (e.kind === "handout_view") anon.handoutOpens++;
-      else if (e.kind === "selfquiz_view") anon.selfquizOpens++;
-      else if (e.kind === "gloss_tap") anon.glossTaps++;
-    }
+    absorb(tallyFor(rk, user), e);
+    touchReading(user, rk);
     if (e.kind === "gloss_tap" && e.meta.word) {
       const m = wordTaps.get(rk) ?? wordTaps.set(rk, new Map()).get(rk)!;
       m.set(e.meta.word, (m.get(e.meta.word) ?? 0) + 1);
@@ -342,14 +337,15 @@ export function buildAnalytics(input: {
         if (p.handoutOpens) handoutPeople++;
         if (p.selfquizOpens) selfquizPeople++;
         if (p.quizDone) quizPeople++;
-        if (rs > 0) reads.push(rs);
+        // ANON's time is a lump across unknown readers — not one person's read.
+        if (rs > 0 && u !== ANON) reads.push(rs);
       }
       persons.sort((a, b) => {
+        if ((a.username === ANON) !== (b.username === ANON)) return a.username === ANON ? 1 : -1;
         const fa = a.articleFirst ?? a.quizWhen ?? "~";
         const fb = b.articleFirst ?? b.quizWhen ?? "~";
         return fa < fb ? -1 : fa > fb ? 1 : a.username.localeCompare(b.username);
       });
-      const at = tallies.get(personKey(rk, ""));
       const topWords = [...(wordTaps.get(rk) ?? new Map<string, number>())]
         .map(([word, taps]) => ({ word, taps }))
         .sort((a, b) => b.taps - a.taps || a.word.localeCompare(b.word))
@@ -366,12 +362,6 @@ export function buildAnalytics(input: {
         selfquizOpens,
         quizPeople,
         glossTaps,
-        anon: {
-          articleOpens: at?.articleOpens ?? 0,
-          handoutOpens: at?.handoutOpens ?? 0,
-          selfquizOpens: at?.selfquizOpens ?? 0,
-          glossTaps: at?.glossTaps ?? 0,
-        },
         topWords,
         people: persons,
       };
@@ -420,7 +410,7 @@ export function buildAnalytics(input: {
     }
     studentRows.push({
       username: u,
-      role: m?.role ?? "parent",
+      role: u === ANON ? "anon" : m?.role ?? "parent",
       parentId: m?.parentId ?? null,
       articles: days.filter((d) => d.articleOpens > 0).length,
       handouts: days.filter((d) => d.handoutOpens > 0).length,
@@ -434,9 +424,11 @@ export function buildAnalytics(input: {
       days,
     });
   }
-  // Students first, most recently active first, the never-active at the bottom.
+  // Students first, then parents, the logged-out row last; within a role the
+  // most recently active first.
+  const roleOrder = { student: 0, parent: 1, anon: 2 } as const;
   studentRows.sort((a, b) => {
-    if (a.role !== b.role) return a.role === "student" ? -1 : 1;
+    if (a.role !== b.role) return roleOrder[a.role] - roleOrder[b.role];
     if (a.lastActive !== b.lastActive) {
       if (!a.lastActive) return 1;
       if (!b.lastActive) return -1;
@@ -445,5 +437,5 @@ export function buildAnalytics(input: {
     return a.username.localeCompare(b.username);
   });
 
-  return { students: studentRows, idleMembers, tracks, anon };
+  return { students: studentRows, idleMembers, tracks };
 }
