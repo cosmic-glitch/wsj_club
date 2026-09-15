@@ -79,7 +79,7 @@ window.addEventListener("pagehide",flushRead);
     if(!box){box=document.createElement("div");box.id="rmBox";host().appendChild(box);}
     var medal=d&&d.medals&&d.medals[DATE];
     if(!medal){
-      box.innerHTML='<p class="rm-head">Before you mark it read</p>'+
+      box.innerHTML='<p class="rm-head">Earn a bronze medal '+ICON.bronze+'</p>'+
         '<label class="rm-pledge"><input type="checkbox" id="rmAttest"> '+
         '<span>I attest that I have read the whole article, every paragraph and every line, without skipping any of it.</span></label>'+
         '<button type="button" class="rm-btn" id="rmMark" disabled>Mark it read '+ICON.bronze+'</button>'+

@@ -71,7 +71,7 @@ export default function HandoutFinish({
   if (!medal || medal === "bronze") {
     return (
       <div className={box}>
-        <p className={head}>Before you mark it done</p>
+        <p className={head}>Earn a silver medal {MEDAL_ICON.silver}</p>
         <label className="mx-auto mt-3 flex max-w-md cursor-pointer items-start gap-3 text-left font-sans text-[15px] leading-relaxed text-[#0a0a0a]">
           <input
             type="checkbox"
