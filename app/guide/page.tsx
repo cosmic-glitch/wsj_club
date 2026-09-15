@@ -148,11 +148,11 @@ export default function GuidePage() {
             the part to actually learn. The AI quiz draws straight from it.
           </p>
           <p>
-            At the bottom, hit <strong>Mark it done</strong> once you could
-            explain the words and the concepts to someone. That earns the
-            day&rsquo;s silver medal, keeps your streak alive, and puts the
-            words in your word bank. (The self-quiz on the same page counts
-            too.)
+            At the bottom, attest that you&rsquo;ve read every word and every
+            concept and understand what they mean, then hit{" "}
+            <strong>Mark it done</strong>. That earns the day&rsquo;s silver
+            medal, keeps your streak alive, and puts the words in your word
+            bank. (The self-quiz on the same page counts too.)
           </p>
         </Step>
 
@@ -197,8 +197,9 @@ export default function GuidePage() {
         </h2>
         <div className="mt-5 grid grid-cols-1 gap-3 min-[500px]:grid-cols-2">
           <Extra title="Medals and streak">
-            Every reading ends the day with a medal: 🥉 for marking the
-            article read, 🥈 for finishing the handout, 🥇 for the AI quiz.
+            Every reading ends the day with a medal: 🥉 for attesting
+            you&rsquo;ve read the whole article, 🥈 for the handout, 🥇 for
+            the AI quiz.
             Any medal keeps your streak going. Both show on the home page when
             you&rsquo;re logged in.
           </Extra>

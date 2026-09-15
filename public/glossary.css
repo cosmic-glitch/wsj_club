@@ -34,6 +34,8 @@ h1 .gw{text-decoration-color:#c0c0c0}
    handout's yellow finish box, in the article page's own type. */
 #rmBox{margin:36px 0 0;border:3px solid #0a0a0a;background:#ffe600;padding:20px 20px 22px;text-align:center}
 .rm-head{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#0a0a0a;margin:0 0 14px}
+.rm-pledge{display:flex;align-items:flex-start;gap:10px;max-width:30rem;margin:0 auto 16px;text-align:left;font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.5;color:#0a0a0a;cursor:pointer}
+.rm-pledge input{width:20px;height:20px;margin:3px 0 0;flex:none;accent-color:#0a0a0a;cursor:pointer}
 .rm-streak{background:#0a0a0a;color:#ffe600;padding:1px 6px}
 .rm-btn{border:2px solid #0a0a0a;background:#0a0a0a;color:#ffe600;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 22px;cursor:pointer}
 .rm-btn:hover{background:#fff;color:#0a0a0a}

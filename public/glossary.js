@@ -58,8 +58,9 @@ window.addEventListener("pagehide",flushRead);
 
 /* ---- reading mark (the day's BRONZE medal; lib/medals.ts) ----
    The article page's finish line: a box appended after the article for a
-   logged-in STUDENT — "Finished the article? Mark it read 🥉" — that posts a
-   level-1 mark and flips in place to the medal + streak with a link on to
+   logged-in STUDENT — a pledge ("I attest that I have read the whole
+   article…") that must be ticked before "Mark it read 🥉" enables — that
+   posts a level-1 mark and flips in place to the medal + streak with a link on to
    the handout (silver). Already marked (or silver/gold from the handout /
    AI quiz) → straight to the done state. GET /api/medals answers 401/403
    for a logged-out visitor or a parent, and the box simply never appears.
@@ -70,7 +71,7 @@ window.addEventListener("pagehide",flushRead);
   var now=new Date();
   var TODAY=[now.getFullYear(),("0"+(now.getMonth()+1)).slice(-2),("0"+now.getDate()).slice(-2)].join("-");
   var ICON={bronze:"\uD83E\uDD49",silver:"\uD83E\uDD48",gold:"\uD83E\uDD47"};
-  var LABEL={bronze:"Marked read.",silver:"Handout done.",gold:"AI quiz done."};
+  var LABEL={bronze:"Article read.",silver:"Handout done.",gold:"AI quiz done."};
   var HANDOUT=(TRACK==="junior"?"/junior":"")+"/reading/"+DATE;
   var box=null;
   function host(){return document.querySelector("main")||document.body;}
@@ -78,10 +79,14 @@ window.addEventListener("pagehide",flushRead);
     if(!box){box=document.createElement("div");box.id="rmBox";host().appendChild(box);}
     var medal=d&&d.medals&&d.medals[DATE];
     if(!medal){
-      box.innerHTML='<p class="rm-head">Finished the article?</p>'+
-        '<button type="button" class="rm-btn" id="rmMark">Mark it read '+ICON.bronze+'</button>'+
+      box.innerHTML='<p class="rm-head">Before you mark it read</p>'+
+        '<label class="rm-pledge"><input type="checkbox" id="rmAttest"> '+
+        '<span>I attest that I have read the whole article, every paragraph and every line, without skipping any of it.</span></label>'+
+        '<button type="button" class="rm-btn" id="rmMark" disabled>Mark it read '+ICON.bronze+'</button>'+
         '<a class="rm-next" href="'+HANDOUT+'">Next: the handout \u2192</a>';
-      document.getElementById("rmMark").addEventListener("click",mark);
+      var attest=document.getElementById("rmAttest"),btn=document.getElementById("rmMark");
+      attest.addEventListener("change",function(){btn.disabled=!attest.checked;});
+      btn.addEventListener("click",mark);
       return;
     }
     var streak=d.streak&&typeof d.streak.current==="number"?' <span class="rm-streak">'+d.streak.current+'-day streak</span>':'';
