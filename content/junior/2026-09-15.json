@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-15",
+  "title": "The rise of the phone-free concert",
+  "articleUrl": "https://www.economist.com/culture/2026/09/14/the-rise-of-the-phone-free-concert",
+  "articlePageUrl": "/articles/junior/2026-09-15.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "nostalgia",
+      "partOfSpeech": "noun",
+      "pronunciation": "noss-TAL-juh",
+      "articleQuote": "For some musicians, nostalgia plays a part in their decision.",
+      "meaning": "Nostalgia is the warm, slightly achy feeling of missing a time you loved and cannot get back — not a place you could drive to, but a way things used to be. It is what people mean when they say “those were the days” about a summer, a school year, or an old video game. In the article it is part of what pulls some musicians toward phone-free shows: Sir Paul McCartney said one felt “like an old gig, like how everyone used to play,” the way concerts were before every crowd held up a screen.",
+      "examples": [
+        "Cleaning out the garage, Dad found his old skateboard and was hit by a wave of nostalgia for ninth grade.",
+        "Our class watched the video from fifth-grade camp, and by the end half of us were laughing with nostalgia."
+      ]
+    },
+    {
+      "word": "ephemeral",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ih-FEM-er-ul",
+      "articleQuote": "The idea is that it is all the more special for being ephemeral.",
+      "meaning": "Something ephemeral lasts only a short while and then is gone for good — the first snowfall that melts by lunchtime, a sandcastle before the tide, a rainbow. The word says nothing about whether the thing is good or bad, only that it will not stay. The article argues that a concert nobody can film is exactly this: it happens once, in that room, and afterwards it exists only in the memories of the people who were there.",
+      "examples": [
+        "The first snow of the year was ephemeral — it was gone from the field before recess ended.",
+        "Chalk drawings on the blacktop are ephemeral, and that is part of why drawing them is fun."
+      ]
+    },
+    {
+      "word": "heighten",
+      "partOfSpeech": "verb",
+      "pronunciation": "HY-tun",
+      "articleQuote": "that may only heighten fans’ fear of missing out",
+      "meaning": "To heighten something is to make it stronger or more intense — you can hear *height* sitting inside the word, the same way *strengthen* is built out of *strength*. You heighten a feeling, a risk, or a sense of excitement; you almost never heighten a physical object. The article points out an odd side effect of banning phones: if the only way to see the show is to stand in the room, that may heighten the fear of missing out in everybody who is not there.",
+      "examples": [
+        "Turning the lights off right before the first jump scare heightened everyone's nerves.",
+        "Losing our best defender to a sprained ankle heightened the pressure on the rest of the team."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Metaphor",
+      "articleQuote": "like Rage Against the Machine, she is using the term as a metaphor for the establishment",
+      "meaning": "Phoebe Bridgers sings “This machine is killing me.” No machine is killing anybody. So what is she actually saying?\n\nShe is using a **metaphor** — the move, taught in every English class, where you call one thing by the name of another thing in order to say something true about it. You do not say a thing is *like* the other thing. You say it *is* the other thing, and you leave the reader to work out what the two have in common.\n\nWatch it happen in slow motion. A machine is big, built out of many parts, and it keeps grinding along no matter what any single person wants. Rage Against the Machine, the band the article mentions, used *the machine* to mean governments and large companies — also big, also built out of many parts, also grinding along no matter what any one person wants. Naming the first thing gets all of that across at once, with no sentences of explanation at all.\n\nYou already do this. Call a goalkeeper *a wall* and nobody pictures bricks; everybody understands that nothing gets past him. That is a metaphor. Say your backpack *weighs a ton* and you are doing something different — exaggerating. The test for a metaphor is the swap: you put one thing's name where the other one belongs.\n\nSo when a writer calls something by a name that cannot possibly be literally true, stop and ask what the two things share. The answer is usually the real point of the sentence."
+    },
+    {
+      "name": "Magnetic locks",
+      "articleQuote": "seal their devices inside pouches that are then magnetically locked for the duration of the gig",
+      "meaning": "A fan arrives at the door with her phone in her hand. It goes into a soft pouch, she presses the pouch shut herself, and from that moment until the end of the show it will not open — even though she carries it in her own pocket all night.\n\nNothing is being done to the phone. The lock is in the pouch, and it is about the simplest piece of physics there is. Inside the lid sits a small steel pin. Inside the body sits a **magnet**. Press the lid down and the magnet grips the pin and holds it. Pull on the lid and it stays shut, because you are pulling against a magnet your fingers cannot reach.\n\nOn the way out, a staff member holds the pouch against a plastic base on the counter. That base contains a much stronger magnet. It drags the steel pin sideways, out of the small magnet's grip, and the lid comes free. No key, no code, no battery — just a bigger magnet beating a smaller one.\n\nYou have met this before. The hard plastic tag a shop clips onto a jacket works the same way: the cashier sets it on a pad, a strong magnet underneath pulls its pin loose, and the tag drops off. That is why the tag comes away in two seconds at the checkout and will not come away at all in your bedroom.\n\nThe part worth keeping: a magnetic lock does not switch anything off and does not block any signal. The phone inside the pouch is still on and still receiving texts. The only thing the lock changes is whether a hand can get to it — which, for these musicians, was the entire point."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "At Phoebe Bridgers's phone-free shows, what happens to a fan's phone?",
+      "options": [
+        "It is handed in at the door and collected again after the show",
+        "It is sealed inside a pouch that is magnetically locked for the whole gig, and stays with the fan",
+        "It is switched off by a signal blocker built into the venue",
+        "It is allowed in, but anyone caught filming pays a fine"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ticket-holders seal their devices inside pouches that are then magnetically locked for the duration of the gig, so the phone stays in the fan's pocket — just out of reach."
+    },
+    {
+      "question": "What does the magnet in one of those pouches actually do?",
+      "options": [
+        "It blocks the phone's signal so no calls or texts get through",
+        "It drains the phone's battery until the show ends",
+        "It holds a steel pin in the lid, so the pouch cannot be pulled open until a stronger magnet frees the pin",
+        "It erases any video the phone recorded earlier that day"
+      ],
+      "answerIndex": 2,
+      "explanation": "A magnetic lock only controls the clasp — the phone inside is still switched on, and a stronger magnet in a base by the door is what releases the pin."
+    },
+    {
+      "question": "Sir Paul McCartney said a phone-free concert was “like an old gig, like how everyone used to play.” Which word best names the feeling behind that?",
+      "options": [
+        "Nostalgia",
+        "Curiosity",
+        "Suspicion",
+        "Exaggeration"
+      ],
+      "answerIndex": 0,
+      "explanation": "Nostalgia is the fond, slightly sad pull toward a time you loved and cannot get back — here, concerts as they were before every crowd held up a screen."
+    },
+    {
+      "question": "“The idea is that it is all the more special for being ephemeral.” What does ephemeral mean?",
+      "options": [
+        "Extremely loud",
+        "Lasting only a short time, and then gone",
+        "Open to absolutely everybody",
+        "Repeated over and over again"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ephemeral means short-lived — the article's point is that a show nobody films afterwards exists only in the memories of the people who were in the room."
+    },
+    {
+      "question": "Rage Against the Machine used “the machine” to mean governments and big companies. What is that an example of?",
+      "options": [
+        "A metaphor — calling one thing by another thing's name so the reader sees what they share",
+        "An exaggeration, like saying a backpack weighs a ton",
+        "A quotation taken from an official government document",
+        "A translation from another language"
+      ],
+      "answerIndex": 0,
+      "explanation": "A metaphor swaps in another thing's name and leaves you to work out what the two have in common — here, big, many-parted, and grinding on no matter what one person wants."
+    }
+  ]
+}
