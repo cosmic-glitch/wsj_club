@@ -227,11 +227,13 @@ export default function LandingIndex({
         {!junior && (
           <div className="mt-[17px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] p-4 shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a] motion-reduce:animate-none">
             <p className="font-sans text-[14.5px] leading-relaxed text-[#0a0a0a]">
-              One hand-picked article a day for high schoolers. Read it, then
-              explain it to an AI tutor for 5&ndash;10 minutes straight.
-              Explaining is how it
-              sticks. Do it daily and your general knowledge, vocabulary, and
-              SAT verbal all climb.{" "}
+              One hand-picked article a day for high schoolers. What matters
+              most is reading every day, so every day you read earns a medal:
+              bronze 🥉 for reading the whole article, silver 🥈 for studying
+              the handout too, gold 🥇 for explaining it all to an AI tutor.
+              Gold is the best, but bronze and silver are real progress, and
+              any medal keeps your streak alive. Do it daily and your general
+              knowledge, vocabulary, and SAT verbal all climb.{" "}
               <Link
                 href="/guide"
                 className="ml-2 whitespace-nowrap font-mono text-[11.5px] font-bold uppercase tracking-[.08em] underline decoration-2 underline-offset-4 hover:bg-[#ffe600]"
