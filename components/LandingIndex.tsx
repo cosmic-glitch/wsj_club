@@ -228,9 +228,9 @@ export default function LandingIndex({
             <p className="font-sans text-[14.5px] leading-relaxed text-[#0a0a0a]">
               One hand-picked article a day for{" "}
               {junior ? "grades 5–7" : "high schoolers"}. Every day you read
-              earns a medal: bronze 🥉 for the article, silver 🥈 for the
-              handout too, gold 🥇 for explaining it to an AI tutor. Gold is
-              best, but any medal counts and keeps your streak alive.
+              earns a medal: bronze 🥉 for reading the article, silver 🥈 for
+              reading the handout, gold 🥇 for explaining it to an AI tutor.
+              Any medal keeps your streak alive.
               {!junior &&
                 " Do it daily and your general knowledge, vocabulary, and SAT verbal all climb."}{" "}
               <Link
