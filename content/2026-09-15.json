@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-15",
+  "title": "China’s tutoring crackdown has created a black market",
+  "articleUrl": "https://www.economist.com/china/2026/09/14/chinas-tutoring-crackdown-has-created-a-black-market",
+  "articlePageUrl": "/articles/2026-09-15.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "fathom",
+      "partOfSpeech": "verb",
+      "pronunciation": "FATH-um",
+      "articleQuote": "It does not take many extra lessons in economics to fathom one effect",
+      "meaning": "A fathom is six feet of water — the unit sailors used when they dropped a weighted line over the side to find the bottom — and to **fathom** meant to measure that depth. The word kept the idea and lost the water: to fathom something now is to get to the bottom of it in your head, to work out something puzzling by thinking it through. It almost always carries a hint of effort or bafflement, which is why you meet it most often in the negative — *I can't fathom why he did that*. Here the writer is being dry: the effect is so obvious that a couple of economics lessons would be more than enough to fathom it.",
+      "examples": [
+        "I still can't fathom how she finished the last problem on the test in under a minute.",
+        "It took us three days of arguing to fathom why the robot kept veering left."
+      ]
+    },
+    {
+      "word": "skittish",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SKIT-ish",
+      "articleQuote": "On the ninth floor of a nondescript business tower, the tutors in one office were skittish.",
+      "meaning": "**Skittish** means nervous and easily spooked — ready to jump, bolt, or clam up at the smallest hint of trouble. It started with horses, and the picture is still a horse shying at a plastic bag blowing across the path; people and even markets get the word, and financial writers use it constantly (*investors turned skittish*) for a crowd ready to sell on the first bad headline. In the article the tutors are skittish for a concrete reason: what they are doing is illegal, and the stranger who has just walked onto the ninth floor could be a parent or could be an inspection team — so they answer carefully and insist they teach only classic English plays.",
+      "examples": [
+        "Our new goalkeeper was skittish for the first ten minutes, flinching every time the ball came near.",
+        "The shelter cat is skittish around visitors and hides under the bed until they leave."
+      ]
+    },
+    {
+      "word": "bedevil",
+      "partOfSpeech": "verb",
+      "pronunciation": "bih-DEV-ul",
+      "articleQuote": "A lack of funding has bedevilled the rollout.",
+      "meaning": "To **bedevil** something is to plague it with trouble that keeps coming back, so the thing limps along and never quite works — not one clean disaster but a steady drip of problems. There is a devil sitting inside the word, and that is the image it carries: something small and persistent making mischief. Journalists reach for it for projects, policies and seasons that never come right — *delays bedevilled the stadium's construction*, *injuries bedevilled the team*. In the article the 5+2 scheme was a sensible plan that never got the money it needed, and that shortage has bedevilled it city by city, turning time meant for sports and arts into supervised homework.",
+      "examples": [
+        "Injuries bedevilled our season — someone new was on crutches every other week.",
+        "Spotty wifi bedevilled the online exam, and half the class had to start over."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "High-stakes testing",
+      "articleQuote": "Burnouts are common as students approach entrance exams for both secondary school and university.",
+      "meaning": "In China a fifteen-year-old sits an exam that decides which high school will take them, and three years later another one, the *gaokao*, that largely decides which university will. Not an application with essays and recommendations and a coach's letter — a test, scored, ranked, and a cut-off line. Education policy calls this **high-stakes testing**: a single assessment whose result, on its own, hands out something scarce and life-shaping.\n\nWhy would a country build that? Start with the arithmetic. Far more people want a place at a good university than there are places, so *some* rule has to decide who gets one. An exam, marked by someone who does not know whose paper it is, is the rule that is hardest to bribe and hardest to inherit — which is exactly why such systems were invented. Imperial China ran one for more than a thousand years to pick its officials, and that fairness argument is still the main defence of the gaokao today.\n\nThe cost sits on the other side of the same coin. When one number does all the deciding, every hour that might raise that number becomes a rational purchase. That is where the article's twelve-hour study days come from, and the cram schools, and the burnout — and it is why banning the tutoring does not touch the reason for the tutoring. The idea travels well beyond China: whenever a single measurement controls who gets something scarce, expect enormous effort to pile up around that measurement, and expect someone to start selling it."
+    },
+    {
+      "name": "Social mobility",
+      "articleQuote": "their appetite for tutoring is motivated less by dreams of upward mobility than by fears of downward slippage",
+      "meaning": "Haidian is the Beijing district where the leading universities and the big tech firms are, and the families there are already high earners. You might expect them to be the relaxed ones. They are the most frantic parents in the country, and not because they are chasing a step up — what drives them is the fear of sliding back down.\n\n**Social mobility** is what economists and sociologists call the degree to which a person's place in society can differ from their parents'. It is a measurement, not a mood: researchers line up every family in a country from poorest to richest, then look at where those families' children land twenty or thirty years later. If a child born into the poorest fifth has roughly a one-in-five shot at each rung, mobility is high — where you started tells you almost nothing about where you finish. If that child nearly always stays in the bottom fifth, mobility is low, and the country's rankings are close to hereditary.\n\nTwo things follow that are easy to miss. First, measured this way the rungs are always full, so mobility runs *both* directions: a child who climbs past someone is a child someone else slipped below. The Haidian parents have worked that out, which is why money and effort look to them like defence rather than ambition. Second, low mobility and high inequality are different complaints — a country can have big gaps between the rungs, or a sticky ladder, or both — and a tutoring race makes the ladder stickier by pricing the extra lessons out of reach of the families who would gain most from them. So when you next read that somewhere is \"the land of opportunity,\" you know what would actually settle it: not how rich the top is, but how often children finish on a different rung from the one they started on."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "China’s 2021 “double reduction” policy restricted which of the following?",
+      "options": [
+        "All after-school classes, including ballet and coding",
+        "For-profit tutoring in core subjects such as science and history",
+        "Homework only, leaving tutoring of every kind untouched",
+        "Online tutoring only, leaving in-person centres untouched"
+      ],
+      "answerIndex": 1,
+      "explanation": "The policy aimed to cut both homework and off-campus tutoring, but the tutoring ban covers for-profit teaching of core academic subjects — ballet and coding classes are still permitted."
+    },
+    {
+      "question": "“It does not take many extra lessons in economics to fathom one effect.” To fathom something is to —",
+      "options": [
+        "prove it with numbers",
+        "work it out or understand it",
+        "complain about it in public",
+        "measure how deep the water is"
+      ],
+      "answerIndex": 1,
+      "explanation": "To fathom is to get to the bottom of something mentally — here, that squeezing the supply of tutoring while demand stays high pushes prices up."
+    },
+    {
+      "question": "The tutors on the ninth floor were described as skittish. What does that tell you about them?",
+      "options": [
+        "They were openly hostile and ready to argue",
+        "They were nervous and easily spooked",
+        "They were talkative and eager to sign up a new customer",
+        "They were careless about whether they broke the rules"
+      ],
+      "answerIndex": 1,
+      "explanation": "Skittish means jumpy and easily startled — reasonable enough, since a stranger in the doorway could have been an inspection team."
+    },
+    {
+      "question": "Why does the article say wealthy families in Beijing’s Haidian district push their children so hard?",
+      "options": [
+        "They are driven more by fear of sliding down than by hopes of climbing up",
+        "Their children are barred from sitting the ordinary entrance exams",
+        "Tutoring is legal in Haidian though banned across the rest of China",
+        "Local universities reserve places for the children of tech workers"
+      ],
+      "answerIndex": 0,
+      "explanation": "Already high earners, Haidian parents are motivated by fears of downward slippage rather than dreams of upward mobility."
+    },
+    {
+      "question": "Officials know that a ban alone will not kill the demand for tutoring. Why does that demand persist?",
+      "options": [
+        "Chinese schools assign too little homework, so parents fill the gap",
+        "Tutoring is now cheaper than it was before the crackdown",
+        "Entrance exams still decide who gets the good secondary-school and university places, so extra study still pays",
+        "The government requires two extra hours of academic review every day"
+      ],
+      "answerIndex": 2,
+      "explanation": "As long as one set of exams allocates the scarce places, buying more preparation stays rational — which is why the market went underground instead of disappearing."
+    }
+  ]
+}
