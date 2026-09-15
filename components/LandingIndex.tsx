@@ -169,21 +169,21 @@ export default function LandingIndex({
           top, above the masthead, under a hairline rule), quiet by type
           (plain text, so the boxed buttons stay content-only). The My Word
           Bank link lives INSIDE HomeAuthBar (next to Reports), not here.
-          On junior a quiet cross-link back to the main club sits at the
-          left. */}
+          A quiet cross-track link sits at the left: junior → "← Main club",
+          senior → "Junior track →". */}
       {/* relative z-10: the masthead's Anton line box overflows UPWARD well
           past the <header> (leading-.95 on a 128px face), and since the header
           comes later in the DOM it would otherwise paint over this bar and eat
           clicks on whichever link sits above the "CLUB" glyphs. */}
       <div className="relative z-10 mx-auto max-w-[980px] px-[18px]">
-        <div
-          className={`flex min-h-[37px] items-center border-b-2 border-[#0a0a0a] py-1 ${
-            junior ? "justify-between gap-4" : "justify-end"
-          }`}
-        >
-          {junior && (
+        <div className="flex min-h-[37px] items-center justify-between gap-4 border-b-2 border-[#0a0a0a] py-1">
+          {junior ? (
             <Link href="/" className={topLink}>
               ← Main club
+            </Link>
+          ) : (
+            <Link href="/junior" className={topLink}>
+              Junior track →
             </Link>
           )}
           <HomeAuthBar />
@@ -223,16 +223,16 @@ export default function LandingIndex({
         {/* The deck: what this is, in the two seconds a newcomer gives us —
             boxed in the site's card language (hard yellow-black offset
             shadow, like the login popover) so it belongs to the page rather
-            than floating in it. Senior only — junior skips the SAT pitch. */}
-        {!junior && (
+            than floating in it. Both tracks; junior skips the SAT pitch. */}
           <div className="mt-[17px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] p-4 shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a] motion-reduce:animate-none">
             <p className="font-sans text-[14.5px] leading-relaxed text-[#0a0a0a]">
-              One hand-picked article a day for high schoolers. Every day you
-              read earns a medal: bronze 🥉 for the article, silver 🥈 for
-              the handout too, gold 🥇 for explaining it to an AI tutor. Gold
-              is best, but any medal counts and keeps your streak alive. Do it
-              daily and your general knowledge, vocabulary, and SAT verbal all
-              climb.{" "}
+              One hand-picked article a day for{" "}
+              {junior ? "grades 5–7" : "high schoolers"}. Every day you read
+              earns a medal: bronze 🥉 for the article, silver 🥈 for the
+              handout too, gold 🥇 for explaining it to an AI tutor. Gold is
+              best, but any medal counts and keeps your streak alive.
+              {!junior &&
+                " Do it daily and your general knowledge, vocabulary, and SAT verbal all climb."}{" "}
               <Link
                 href="/guide"
                 className="ml-2 whitespace-nowrap font-mono text-[11.5px] font-bold uppercase tracking-[.08em] underline decoration-2 underline-offset-4 hover:bg-[#ffe600]"
@@ -241,7 +241,6 @@ export default function LandingIndex({
               </Link>
             </p>
           </div>
-        )}
         {readings.length === 0 ? (
           <p className="mt-[26px] border-[3px] border-[#0a0a0a] p-8 text-center text-sm font-bold uppercase tracking-[.08em]">
             {junior
