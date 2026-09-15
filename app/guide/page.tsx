@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "How it works · Daily Reading Club",
   description:
-    "One hand-picked article a day: read it, study the handout, mark it done — or go for gold and explain the article to an AI tutor that keeps you honest.",
+    "One hand-picked article a day. Reading every day matters most: bronze for reading the whole article, silver for the handout too, gold for explaining it all to an AI tutor.",
 };
 
-// The new-joiner guide: why the club exists (explaining out loud is what
-// makes reading stick, kept honest by the AI), then the daily loop as three
-// numbered step cards (each
+// The new-joiner guide: why the club exists (reading every day matters most;
+// explaining out loud, kept honest by the AI, is what makes it stick — the
+// three medals), then the daily loop as three numbered step cards (each
 // with a slot for a short screen-recording loop), the smaller things worth
 // knowing, and a CTA back to today's reading. Static, track-agnostic — the
 // junior track works the same way, so one page serves both. Per the site
@@ -100,14 +100,15 @@ export default function GuidePage() {
             about it.
           </p>
           <p>
-            This club is built on Feynman&rsquo;s insight. You read a
-            hand-picked article every day, then explain it to an AI tutor for 5&ndash;10
-            minutes straight, recalling all the important details. Then the AI
-            quizzes you on the highlighted vocabulary and concepts from the
-            article, to solidify your understanding. Ten minutes of explaining
-            cannot be faked. Do it every day and your general knowledge, your
-            vocabulary, and your SAT verbal score all build quietly in the
-            background.
+            This club is built on Feynman&rsquo;s insight, but what matters
+            most is reading every day. So every day you read earns a medal:
+            bronze 🥉 for reading the whole article, silver 🥈 for studying
+            the handout too, gold 🥇 for explaining it all to an AI tutor for
+            5&ndash;10 minutes straight. Gold is the best, because ten
+            minutes of explaining cannot be faked, but bronze and silver are
+            real progress, and any medal keeps your streak alive. Do it every
+            day and your general knowledge, your vocabulary, and your SAT
+            verbal score all build quietly in the background.
           </p>
         </div>
       </header>
@@ -132,6 +133,12 @@ export default function GuidePage() {
             word for an instant definition, with audio so you hear how
             it&rsquo;s said.
           </p>
+          <p>
+            At the bottom, attest that you&rsquo;ve read the whole article,
+            every paragraph and every line, and hit{" "}
+            <strong>Mark it read</strong>. That&rsquo;s the day&rsquo;s bronze
+            medal 🥉, and it keeps your streak alive.
+          </p>
         </Step>
 
         <Step
@@ -150,9 +157,8 @@ export default function GuidePage() {
           <p>
             At the bottom, attest that you&rsquo;ve read every word and every
             concept and understand what they mean, then hit{" "}
-            <strong>Mark it done</strong>. That earns the day&rsquo;s silver
-            medal, keeps your streak alive, and puts the words in your word
-            bank. (The self-quiz on the same page counts too.)
+            <strong>Mark it done</strong>. That&rsquo;s the silver medal 🥈,
+            and it puts the day&rsquo;s words in your word bank.
           </p>
         </Step>
 
@@ -165,7 +171,7 @@ export default function GuidePage() {
           }}
         >
           <p>
-            The step up, and the one that makes it stick. An AI tutor
+            The gold medal 🥇, and the best of the three. An AI tutor
             interviews you about the article, out loud. Press{" "}
             <strong>Start</strong> to answer, <strong>Stop</strong>{" "}when
             you&rsquo;re done.
@@ -197,10 +203,9 @@ export default function GuidePage() {
         </h2>
         <div className="mt-5 grid grid-cols-1 gap-3 min-[500px]:grid-cols-2">
           <Extra title="Medals and streak">
-            Every reading ends the day with a medal: 🥉 for attesting
-            you&rsquo;ve read the whole article, 🥈 for the handout, 🥇 for
-            the AI quiz.
-            Any medal keeps your streak going. Both show on the home page when
+            Bronze 🥉 for the article, silver 🥈 for the handout, gold 🥇 for
+            the AI quiz. Any medal keeps your streak going, and a medal can
+            still go up later in the day. Both show on the home page when
             you&rsquo;re logged in.
           </Extra>
           <Extra title="Word bank">
@@ -233,8 +238,8 @@ export default function GuidePage() {
       {/* CTA back into the loop. */}
       <div className="mt-14 border-[3px] border-[#0a0a0a] bg-[#ffe600] p-6 text-center">
         <p className="font-sans text-[15px] font-bold text-[#0a0a0a]">
-          That&rsquo;s the whole loop. Read, explain it out loud, repeat
-          tomorrow.
+          That&rsquo;s the whole loop. Read every day, earn the day&rsquo;s
+          medal, repeat tomorrow.
         </p>
         <Link
           href="/"
