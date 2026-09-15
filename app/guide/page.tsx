@@ -216,10 +216,6 @@ export default function GuidePage() {
             Some days the club picks the article: a ballot appears at the top
             of the home page. One member, one vote.
           </Extra>
-          <Extra title="Suggest a read">
-            Found a great article? Send it with <strong>Suggest</strong> in the
-            top bar. Every suggestion gets read and answered.
-          </Extra>
           <Extra title="Junior track">
             Grades 5–7 have their own readings at{" "}
             <Link href="/junior" className="font-bold underline">

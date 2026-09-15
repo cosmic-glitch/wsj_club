@@ -20,7 +20,7 @@ import { writeAuthCache } from "./AuthProvider";
  * account in (the parent, in the family shape) — the done panel confirms the
  * created logins, and "Start reading" reloads so the whole page picks up the
  * session. The modal is portaled to document.body and top-anchored on phones
- * for the same iOS reasons as SuggestArticle's.
+ * for the usual iOS reasons (a fixed sheet + a locked body).
  */
 
 const BTN_PRIMARY =
@@ -49,7 +49,7 @@ export default function JoinClub({ className }: { className: string }) {
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState<{ username: string; kids: string[] } | null>(null);
 
-  // Esc closes; body scroll locks while open (the SuggestArticle recipe).
+  // Esc closes; body scroll locks while open.
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
