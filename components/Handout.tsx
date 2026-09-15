@@ -1,8 +1,9 @@
-import Link from "next/link";
 import { type Reading, type VocabWord, type Concept, type Track } from "@/lib/content";
 import { audioSrcFor } from "@/lib/handout-audio";
 import PronounceButton from "@/components/PronounceButton";
 import PageBeacon from "@/components/PageBeacon";
+import HandoutFinish from "@/components/HandoutFinish";
+import { MedalsProvider } from "@/components/Medals";
 import { Rich, RichParagraphs } from "@/lib/rich-text";
 
 // The handout body, shared by the senior (/reading/<date>) and junior
@@ -13,8 +14,8 @@ import { Rich, RichParagraphs } from "@/lib/rich-text";
 //
 // SERVER component (no "use client"): it resolves each term's pronunciation clip
 // via audioSrcFor, which reads the filesystem at build/prerender time. Keep it a
-// server component. The only track-dependent nav href — the "Take the self-quiz"
-// CTA — is derived from `track` so a junior handout links to the junior quiz.
+// server component. `track` reaches the finish box (HandoutFinish), which
+// derives the only track-dependent nav href — the self-quiz link.
 export default function Handout({
   reading,
   track = "senior",
@@ -22,8 +23,6 @@ export default function Handout({
   reading: Reading;
   track?: Track;
 }) {
-  const base = track === "junior" ? "/junior" : "";
-
   return (
     <article>
       {/* Activity beacon (analytics) — one handout_view per open. */}
@@ -67,19 +66,19 @@ export default function Handout({
         </Section>
       )}
 
-      {/* Self-quiz CTA. The self-quiz lives here (off the index) — once
-          you've read the handout, this is the natural place to test yourself. */}
-      <div className="mt-14 border-[3px] border-[#0a0a0a] bg-[#ffe600] p-6 text-center">
-        <p className="font-mono text-sm font-bold uppercase tracking-[.08em] text-[#0a0a0a]">
-          Read the handout? Now test yourself.
-        </p>
-        <Link
-          href={`${base}/reading/${reading.date}/quiz`}
-          className="mt-4 inline-block border-2 border-[#0a0a0a] bg-[#0a0a0a] px-6 py-3 font-mono text-sm font-bold uppercase tracking-[.1em] text-[#ffe600] no-underline transition hover:bg-white hover:text-[#0a0a0a]"
-        >
-          Take the self-quiz →
-        </Link>
-      </div>
+      {/* The finish line: a student's "Mark it done" (silver medal) with the
+          AI-quiz step-up after it, or the plain self-quiz CTA for everyone
+          else. The self-quiz lives here (off the index) — once you've read
+          the handout, this is the natural place to test yourself. The
+          provider is the one medals fetch for the page (students only). */}
+      <MedalsProvider track={track}>
+        <HandoutFinish
+          track={track}
+          date={reading.date}
+          title={reading.title}
+          voiceQuiz={Boolean(reading.voiceQuiz)}
+        />
+      </MedalsProvider>
     </article>
   );
 }

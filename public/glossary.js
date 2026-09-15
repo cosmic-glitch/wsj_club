@@ -56,6 +56,53 @@ document.addEventListener("visibilitychange",function(){
 });
 window.addEventListener("pagehide",flushRead);
 
+/* ---- reading mark (the day's BRONZE medal; lib/medals.ts) ----
+   The article page's finish line: a box appended after the article for a
+   logged-in STUDENT — "Finished the article? Mark it read 🥉" — that posts a
+   level-1 mark and flips in place to the medal + streak with a link on to
+   the handout (silver). Already marked (or silver/gold from the handout /
+   AI quiz) → straight to the done state. GET /api/medals answers 401/403
+   for a logged-out visitor or a parent, and the box simply never appears.
+   Same fetch shape as the React MedalsProvider; `today` is the viewer's
+   local date (the streak rule skips today's untaken reading). */
+(function(){
+  if(!DATE)return;
+  var now=new Date();
+  var TODAY=[now.getFullYear(),("0"+(now.getMonth()+1)).slice(-2),("0"+now.getDate()).slice(-2)].join("-");
+  var ICON={bronze:"\uD83E\uDD49",silver:"\uD83E\uDD48",gold:"\uD83E\uDD47"};
+  var LABEL={bronze:"Marked read.",silver:"Handout done.",gold:"AI quiz done."};
+  var HANDOUT=(TRACK==="junior"?"/junior":"")+"/reading/"+DATE;
+  var box=null;
+  function host(){return document.querySelector("main")||document.body;}
+  function render(d){
+    if(!box){box=document.createElement("div");box.id="rmBox";host().appendChild(box);}
+    var medal=d&&d.medals&&d.medals[DATE];
+    if(!medal){
+      box.innerHTML='<p class="rm-head">Finished the article?</p>'+
+        '<button type="button" class="rm-btn" id="rmMark">Mark it read '+ICON.bronze+'</button>'+
+        '<a class="rm-next" href="'+HANDOUT+'">Next: the handout \u2192</a>';
+      document.getElementById("rmMark").addEventListener("click",mark);
+      return;
+    }
+    var streak=d.streak&&typeof d.streak.current==="number"?' <span class="rm-streak">'+d.streak.current+'-day streak</span>':'';
+    box.innerHTML='<p class="rm-head"><span role="img">'+ICON[medal]+'</span> '+LABEL[medal]+streak+'</p>'+
+      '<a class="rm-next" href="'+HANDOUT+'">'+(medal==="bronze"?"Next: the handout \u2192":"Back to the handout \u2192")+'</a>';
+  }
+  function mark(){
+    var btn=document.getElementById("rmMark");
+    if(btn){btn.disabled=true;btn.textContent="Saving\u2026";}
+    fetch("/api/medals",{method:"POST",credentials:"same-origin",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({track:TRACK,date:DATE,level:1,today:TODAY})})
+    .then(function(r){if(!r.ok)throw new Error(String(r.status));return r.json();})
+    .then(render)
+    .catch(function(){if(btn){btn.disabled=false;btn.textContent="Mark it read "+ICON.bronze;}});
+  }
+  fetch("/api/medals?track="+TRACK+"&today="+TODAY,{credentials:"same-origin"})
+  .then(function(r){if(!r.ok)throw new Error(String(r.status));return r.json();})
+  .then(render)
+  .catch(function(){/* not a student — no box */});
+})();
+
 // Pronunciation clips live under the DATE — the trailing-anything match keeps
 // junior's junior/<date> prefix working and is harmless for a plain date.
 var AUDIO_BASE="/audio/"+m[1].replace(/^((?:junior\/)?\d{4}-\d{2}-\d{2}).*$/,"$1")+"/gloss/";

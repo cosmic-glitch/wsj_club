@@ -5,8 +5,9 @@ import type { Session } from "@/components/AdminSessions";
 
 /**
  * The word-bank quiz: multiple-choice rounds over a student's PERSONAL word
- * bank (the vocab from readings they've completed the voice quiz on — the
- * same filter as the Word Bank page), with per-word mastery tracked in
+ * bank (the vocab from readings they've finished — handout marked done or
+ * voice quiz completed; lib/marks.ts bankDates, the same filter as the Word
+ * Bank page), with per-word mastery tracked in
  * rc_word_mastery so every round is scheduled, not random.
  *
  * Scheduling is a plain Leitner ladder. Each (student, track, word) has a
@@ -104,8 +105,8 @@ export function completedQuizDates(
 }
 
 /**
- * The student's quizzable bank: every vocab word from their completed-quiz
- * dates, deduped by word (a recurring word keeps its NEWEST reading date).
+ * The student's quizzable bank: every vocab word from their finished dates
+ * (lib/marks.ts bankDates), deduped by word (a recurring word keeps its NEWEST reading date).
  */
 export function bankFor(track: Track, dates: Set<string>): BankEntry[] {
   const bank = new Map<string, BankEntry>();

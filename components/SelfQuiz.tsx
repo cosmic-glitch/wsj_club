@@ -5,7 +5,8 @@ import PageBeacon from "@/components/PageBeacon";
 // The self-quiz page body, shared by the senior (/reading/<date>/quiz) and
 // junior (/junior/reading/<date>/quiz) tracks. A black SELF-QUIZ chip + Anton
 // title matching the handout, then the interactive Quiz. No track-dependent nav
-// hrefs live inside it; `track` only labels the activity beacon.
+// hrefs live inside it; `track` labels the activity beacon and, with the date,
+// the silver mark the Quiz records on submit.
 export default function SelfQuiz({
   reading,
   track = "senior",
@@ -30,7 +31,7 @@ export default function SelfQuiz({
       </header>
 
       <div className="mt-8">
-        <Quiz questions={reading.quiz} />
+        <Quiz questions={reading.quiz} track={track} date={reading.date} />
       </div>
     </article>
   );

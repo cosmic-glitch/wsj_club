@@ -1,19 +1,35 @@
 "use client";
 
 import { useState } from "react";
-import type { QuizQuestion } from "@/lib/content";
+import type { QuizQuestion, Track } from "@/lib/content";
 import { Rich } from "@/lib/rich-text";
+import { MEDAL_ICON, localYMD, type Streak } from "@/lib/medals";
 
 // The interactive self-quiz, in the site's brutalist language: square black
 // borders, mono uppercase labels, the yellow #ffe600 accent for the picked
 // (and, after submit, correct) option. Right/wrong keep the semantic
 // emerald/red hues so the feedback stays instantly readable for kids.
-export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
+//
+// Checking the answers is also the day's SILVER attestation (finishing the
+// self-quiz is a better claim of "I could explain the words and concepts"
+// than a tick box): on submit it posts a level-2 mark for `track`/`date`
+// (lib/medals.ts) and, for a student, shows the medal + streak under the
+// score. Anyone else gets a 401/403 and simply sees the score.
+export default function Quiz({
+  questions,
+  track,
+  date,
+}: {
+  questions: QuizQuestion[];
+  track: Track;
+  date: string;
+}) {
   // answers[i] = the option index the student picked for question i (or null)
   const [answers, setAnswers] = useState<(number | null)[]>(
     () => questions.map(() => null)
   );
   const [submitted, setSubmitted] = useState(false);
+  const [streak, setStreak] = useState<Streak | null>(null);
 
   const answeredCount = answers.filter((a) => a !== null).length;
   const score = questions.reduce(
@@ -33,6 +49,22 @@ export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
   function reset() {
     setAnswers(questions.map(() => null));
     setSubmitted(false);
+  }
+
+  function submit() {
+    setSubmitted(true);
+    fetch("/api/medals", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ track, date, level: 2, today: localYMD() }),
+    })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (d?.streak) setStreak(d.streak as Streak);
+      })
+      .catch(() => {
+        // Best-effort: the score is the point; the medal is chrome.
+      });
   }
 
   return (
@@ -98,7 +130,7 @@ export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
         {!submitted ? (
           <button
             type="button"
-            onClick={() => setSubmitted(true)}
+            onClick={submit}
             disabled={answeredCount < questions.length}
             className="border-2 border-[#0a0a0a] bg-[#0a0a0a] px-5 py-2.5 font-mono text-sm font-bold uppercase tracking-[.08em] text-[#ffe600] transition enabled:hover:bg-[#ffe600] enabled:hover:text-[#0a0a0a] disabled:cursor-not-allowed disabled:opacity-40"
           >
@@ -121,6 +153,14 @@ export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
             >
               Try again
             </button>
+            {streak && (
+              <p className="basis-full font-mono text-xs font-bold uppercase tracking-[.08em] text-[#0a0a0a]">
+                <span role="img" aria-label="Finished the handout" className="mr-1.5">
+                  {MEDAL_ICON.silver}
+                </span>
+                Handout done · {streak.current}-day streak
+              </p>
+            )}
           </>
         )}
       </div>

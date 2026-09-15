@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CompletedBy, CompletionsProvider } from "@/components/CompletedBy";
 import HomeAuthBar from "@/components/HomeAuthBar";
+import { MedalsProvider, RowMedal } from "@/components/Medals";
 import MoreReadings from "@/components/MoreReadings";
 import StreakStrip from "@/components/StreakStrip";
 import TodayTag from "@/components/TodayTag";
@@ -83,6 +84,9 @@ export default function LandingIndex({
           }`}
         >
           {dateTag(r.date)}
+          {/* The student's medal for the day (🥉/🥈/🥇) — the same state the
+              streak ribbon's square shows; nothing for parents/visitors. */}
+          <RowMedal date={r.date} className="ml-2 text-[13px]" />
           {newest && <TodayTag date={r.date} />}
           {/* Mobile home of the completed-count: RIGHT-ALIGNED on
               the date line (ml-auto in the mobile-only flex row) so
@@ -207,9 +211,12 @@ export default function LandingIndex({
         </div>
       </header>
 
+      {/* ONE medals fetch for the page (students only — parents / logged-out
+          visitors skip it): the streak ribbon and every row's medal read it. */}
+      <MedalsProvider track={track}>
       {/* The logged-in student's personal streak ribbon (students only —
           renders nothing for parents / logged-out visitors). */}
-      <StreakStrip track={track} dates={readings.map((r) => r.date)} />
+      <StreakStrip dates={readings.map((r) => r.date)} />
 
       {/* ---- index ---- */}
       <div className="mx-auto max-w-[980px] px-[18px]">
@@ -264,11 +271,12 @@ export default function LandingIndex({
             the senior page's masthead deck already carries the pitch. */}
         {junior && (
           <p className="mt-5 text-center text-[11px] uppercase tracking-[.14em]">
-            Read the article → Study the handout → Take the AI quiz. Repeat
-            tomorrow.
+            Read the article → Study the handout → Mark it done or take the AI
+            quiz. Repeat tomorrow.
           </p>
         )}
       </div>
+      </MedalsProvider>
     </div>
   );
 }

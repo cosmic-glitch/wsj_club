@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { MEDAL_EVENT } from "./Medals";
 import { createPortal } from "react-dom";
 import { upload } from "@vercel/blob/client";
 import type { Track } from "@/lib/content";
@@ -1915,6 +1916,12 @@ export default function VoiceQuiz({
       logEvent("save:done", `status=${res.status}`);
       const data = await res.json().catch(() => null);
       if (!cancelled && data?.report) setReport(data.report as Report);
+      // A graded save is the day's GOLD medal (derived from the session, not
+      // written anywhere else): tell the page's MedalsProvider to refetch so
+      // the streak ribbon / row medal update without a reload.
+      if (!cancelled && res.ok) {
+        window.dispatchEvent(new CustomEvent(MEDAL_EVENT, { detail: { track, date } }));
+      }
     } catch {
       // The session still happened; saving is best-effort.
       logEvent("save:error");

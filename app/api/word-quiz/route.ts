@@ -4,10 +4,10 @@ import type { Track } from "@/lib/content";
 import {
   bankFor,
   buildRound,
-  completedQuizDates,
   recordRound,
   type AnsweredWordQuestion,
 } from "@/lib/word-quiz";
+import { bankDates, loadMarksFor } from "@/lib/marks";
 
 /**
  * The word-bank quiz API (students only — a parent has no personal bank).
@@ -40,11 +40,16 @@ async function studentAndBank(track: Track) {
       ),
     };
   }
-  const sessions = await loadSessions();
+  const [sessions, marks] = await Promise.all([
+    loadSessions(),
+    loadMarksFor(record.username, track),
+  ]);
   if (!Array.isArray(sessions)) {
     return { error: Response.json({ error: sessions.error }, { status: 500 }) };
   }
-  const dates = completedQuizDates(sessions, record.username, track);
+  // The bank = quizzed readings + handout-done (silver) readings — the same
+  // rule as /api/quiz-dates (lib/marks.ts bankDates).
+  const dates = bankDates(sessions, marks ?? [], record.username, track);
   return { record, bank: bankFor(track, dates) };
 }
 

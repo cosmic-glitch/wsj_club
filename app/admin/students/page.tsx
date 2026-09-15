@@ -1,6 +1,8 @@
 import { currentUserRecord, isOwner } from "@/lib/auth";
 import { listAllUsers, type PublicUser } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
+import { loadMarks } from "@/lib/marks";
+import { higherMedal, medalOf, type Medal } from "@/lib/medals";
 import { getAllReadings } from "@/lib/content";
 import StudentRoster, {
   type Classroom,
@@ -55,7 +57,7 @@ export default async function StudentsPage() {
 
   // The last 7 reading dates across both tracks (a junior reading usually
   // shares its date with a senior one), oldest → newest — the roster's
-  // past-week completion squares.
+  // past-week medal squares.
   const recentDates = [
     ...new Set([
       ...getAllReadings("senior").map((r) => r.date),
@@ -79,7 +81,11 @@ export default async function StudentsPage() {
       doneDates: Set<string>;
     }
   >();
-  const [result, allUsers] = await Promise.all([loadSessions(), listAllUsers()]);
+  const [result, allUsers, marks] = await Promise.all([
+    loadSessions(),
+    listAllUsers(),
+    loadMarks(),
+  ]);
   if (!("error" in result)) {
     for (const s of result) {
       // A live/paused attempt (the in-progress slot) isn't a finished attempt
@@ -96,8 +102,8 @@ export default async function StudentsPage() {
           doneDates: new Set<string>(),
         };
       cur.attempts += 1;
-      // "Completed" for the squares matches /api/quiz-dates (the streak's
-      // source): terminal and not cancelled, either track.
+      // A completed quiz is the day's GOLD (lib/medals.ts): terminal and not
+      // cancelled, either track.
       if (!s.cancelled && s.date) cur.doneDates.add(s.date);
       if (s.endedAt && (!cur.lastActiveIso || s.endedAt > cur.lastActiveIso)) {
         cur.lastActiveIso = s.endedAt;
@@ -113,6 +119,18 @@ export default async function StudentsPage() {
     }
   }
 
+  // The row's past-week medals: per date, the higher of the student's marks
+  // on either track (the roster's dates mix tracks) or gold from a quiz.
+  const recentMedalsFor = (username: string, quizzed: Set<string>) => {
+    const out: Record<string, Medal> = {};
+    for (const m of marks ?? []) {
+      if (m.username !== username || !recentDates.includes(m.date)) continue;
+      out[m.date] = higherMedal(out[m.date], medalOf(m.level, false))!;
+    }
+    for (const d of recentDates) if (quizzed.has(d)) out[d] = "gold";
+    return out;
+  };
+
   // Only active students are shown/managed for now (there's no deactivate/
   // reactivate in the UI — parents can add, rename, and reset passwords).
   const toRoster = (students: PublicUser[]): RosterEntry[] =>
@@ -127,7 +145,7 @@ export default async function StudentsPage() {
           attempts: st?.attempts ?? 0,
           lastActiveIso: st?.lastActiveIso ?? null,
           avgScore: st && st.scoreCount > 0 ? st.scoreSum / st.scoreCount : null,
-          recentDone: st ? recentDates.filter((d) => st.doneDates.has(d)) : [],
+          recentMedals: recentMedalsFor(s.username, st?.doneDates ?? new Set()),
         };
       });
 

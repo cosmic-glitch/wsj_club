@@ -1,25 +1,28 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useAuth } from "./AuthProvider";
-import type { Track } from "@/lib/content";
+import { useMedals } from "./Medals";
+import {
+  MEDAL_ICON,
+  MEDAL_LABEL,
+  MEDALS,
+  localYMD,
+  type Medal,
+} from "@/lib/medals";
 
 /**
  * The personal streak ribbon — a full-width black bar under the masthead,
- * STUDENTS ONLY (a parent/owner takes no quizzes, so they never see it):
- * "N-DAY STREAK · BEST N · N QUIZZES" over the track's last 14 readings as
- * squares (yellow = quizzed, dashed = today's still open, dark = missed).
+ * STUDENTS ONLY (a parent/owner earns no medals, so they never see it):
+ * "N-DAY STREAK · BEST N · N GOLD" over the track's last 14 readings as
+ * squares, each carrying the day's medal (🥉 read the article, 🥈 finished
+ * the handout, 🥇 did the AI quiz), dashed = today's still open, dark =
+ * missed. A legend on the right names the three rungs.
  *
- * The TodayTag/VotePoll/CompletedBy recipe: the page stays statically
- * generated and this hydrates in, ONE fetch on mount — and it reuses
- * /api/quiz-dates (identity from the cookie, "completed" = the same terminal
- * attempts the Word Bank and Reports count) rather than adding a route.
- *
- * A streak counts consecutive READINGS quizzed, not calendar days — a day
- * with no published reading can't break it, and the occasional junior track
- * gets the same semantics. Today's not-yet-taken quiz doesn't break the
- * chain either (it shows as the dashed square); only a missed PAST reading
- * resets it. "Today" is the viewer's local date, same as TodayTag.
+ * The data comes from the page's MedalsProvider (one fetch shared with the
+ * index rows); the streak itself is computed server-side by lib/medals.ts
+ * streakOf — ANY medal keeps the chain alive, a day with no published
+ * reading can't break it, today's not-yet-touched reading doesn't either;
+ * only a missed PAST reading resets it. "Today" is the viewer's local date,
+ * same as TodayTag.
  */
 
 /** "2026-07-08" → "Jul 8" — same as LandingIndex's dateTag. */
@@ -32,103 +35,71 @@ function dateTag(date: string): string {
   });
 }
 
-/** The viewer's local date as "YYYY-MM-DD" (TodayTag's computation). */
-function localYMD(): string {
-  const now = new Date();
-  return [
-    now.getFullYear(),
-    String(now.getMonth() + 1).padStart(2, "0"),
-    String(now.getDate()).padStart(2, "0"),
-  ].join("-");
-}
-
 export default function StreakStrip({
-  track,
   dates,
 }: {
-  track: Track;
   /** The track's reading dates, newest first (the index order). */
   dates: string[];
 }) {
-  const { user, role, ready } = useAuth();
-  const [done, setDone] = useState<Set<string> | null>(null);
+  const { student, state } = useMedals();
+  if (!student || !state || dates.length === 0) return null;
 
-  const student = ready && Boolean(user) && role === "student";
-
-  useEffect(() => {
-    if (!student) return;
-    let stale = false;
-    fetch(`/api/quiz-dates?track=${track}`)
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => {
-        if (!stale && Array.isArray(d?.dates)) setDone(new Set(d.dates));
-      })
-      .catch(() => {
-        // Best-effort chrome — a failed fetch just leaves the ribbon off.
-      });
-    return () => {
-      stale = true;
-    };
-  }, [student, track]);
-
-  if (!student || !done || dates.length === 0) return null;
-
+  const { medals, streak } = state;
   const today = localYMD();
-
-  // Current streak: walk newest → oldest; a pending (not-yet-past) reading is
-  // skipped, the first missed past reading ends the run.
-  let current = 0;
-  for (const d of dates) {
-    if (done.has(d)) current++;
-    else if (d >= today) continue;
-    else break;
-  }
-
-  // Best streak: the longest completed run over the whole history (a pending
-  // reading doesn't cut a run, same as above). Includes the current run.
-  let best = 0;
-  let run = 0;
-  for (let i = dates.length - 1; i >= 0; i--) {
-    const d = dates[i];
-    if (done.has(d)) best = Math.max(best, ++run);
-    else if (d < today) run = 0;
-  }
-
-  const total = done.size;
   const shown = dates.slice(0, 14).reverse(); // oldest → newest
   const newest = shown[shown.length - 1];
+
+  const square = (d: string, medal: Medal | undefined) => {
+    if (medal) {
+      return (
+        <div
+          key={d}
+          role="img"
+          aria-label={`${dateTag(d)}: ${MEDAL_LABEL[medal]}`}
+          title={`${dateTag(d)} · ${MEDAL_LABEL[medal]}`}
+          className="flex h-5 flex-1 items-center justify-center border border-[#ffe600] bg-[#ffe600]/15 text-[12px] leading-none"
+        >
+          {MEDAL_ICON[medal]}
+        </div>
+      );
+    }
+    return (
+      <div
+        key={d}
+        title={`${dateTag(d)} · ${d >= today ? "today, still open" : "missed"}`}
+        className={`h-5 flex-1 ${
+          d >= today
+            ? "border-2 border-dashed border-[#ffe600]"
+            : "border border-[#3a3a3a]"
+        }`}
+      />
+    );
+  };
 
   return (
     <div className="bg-[#0a0a0a] text-white">
       <div className="mx-auto max-w-[980px] px-[18px] pb-3 pt-2.5">
         <div className="mb-2 flex items-baseline justify-between gap-3 text-[9px] font-bold uppercase tracking-[.15em]">
           <span className="whitespace-nowrap">
-            <span className="text-[#ffe600]">{current}-day streak</span>
+            <span className="text-[#ffe600]">{streak.current}-day streak</span>
             {/* "Best" is noise when the current streak IS the best. */}
-            {best > current && <>{" · "}Best {best}</>}
+            {streak.best > streak.current && <>{" · "}Best {streak.best}</>}
             {" · "}
-            {total} {total === 1 ? "quiz" : "quizzes"}
+            {streak.gold} gold
           </span>
-          {/* Redundant with the ticks row on a narrow phone, where the head
-              line runs out of room once the streak hits two digits. */}
+          {/* The legend — hidden on a narrow phone, where the head line runs
+              out of room once the streak hits two digits. */}
           <span className="hidden whitespace-nowrap text-stone-400 min-[430px]:inline">
-            Last {shown.length} readings
+            {MEDALS.map((m, i) => (
+              <span key={m}>
+                {i > 0 && " · "}
+                <span className="mr-1 text-[10px]">{MEDAL_ICON[m]}</span>
+                {m === "bronze" ? "Article" : m === "silver" ? "Handout" : "AI quiz"}
+              </span>
+            ))}
           </span>
         </div>
-        <div className="flex gap-1">
-          {shown.map((d) => (
-            <div
-              key={d}
-              className={`h-4 flex-1 ${
-                done.has(d)
-                  ? "bg-[#ffe600]"
-                  : d >= today
-                    ? "border-2 border-dashed border-[#ffe600]"
-                    : "border border-[#3a3a3a]"
-              }`}
-            />
-          ))}
-        </div>
+        <div className="flex gap-1">{shown.map((d) => square(d, medals[d]))}</div>
         <div className="mt-[5px] flex justify-between text-[7.5px] font-bold uppercase tracking-[.12em] text-stone-400">
           <span>{dateTag(shown[0])}</span>
           <span className={newest >= today ? "text-[#ffe600]" : ""}>

@@ -2,7 +2,9 @@ import { currentUserRecord, isOwner } from "@/lib/auth";
 import { listAllUsers, type PublicUser } from "@/lib/users";
 import { loadSessions } from "@/lib/sessions";
 import { loadWordQuizAttempts, type WordQuizAttempt } from "@/lib/word-quiz";
-import { dateBig } from "@/lib/content";
+import { loadMarks, medalsOf, type ReadingMark } from "@/lib/marks";
+import { MEDAL_ICON, MEDAL_LABEL, MEDALS, type MedalMap } from "@/lib/medals";
+import { dateBig, getAllReadings, type Track } from "@/lib/content";
 import AdminSessions, {
   type Session,
   type ArticleGroup,
@@ -187,6 +189,129 @@ function WordQuizPanel({
   );
 }
 
+/** "2026-07-08" → "Jul 8" — the medals grid's column heads. */
+function dateTag(date: string): string {
+  const [y, m, d] = date.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+}
+
+/**
+ * The daily-medals grid — one row per student, one cell per reading over the
+ * track's last 14 readings, each cell the day's medal (🥉 read the article,
+ * 🥈 finished the handout, 🥇 did the AI quiz) or a blank. This is where a
+ * kid who reads every day but rarely quizzes shows as active rather than
+ * absent. Rendered only when the track has readings; rows are every student
+ * in the viewer's scope (a blank row is information too).
+ */
+function MedalsPanel({
+  track,
+  rows,
+  showParent,
+  heading = true,
+}: {
+  track: Track;
+  rows: { username: string; parentName?: string; medals: MedalMap }[];
+  showParent: boolean;
+  heading?: boolean;
+}) {
+  const dates = getAllReadings(track)
+    .slice(0, 14)
+    .map((r) => r.date)
+    .reverse();
+  if (dates.length === 0 || rows.length === 0) return null;
+  const th =
+    "border-b-[3px] border-[#0a0a0a] px-2 py-2 text-left font-mono text-[10px] font-bold uppercase tracking-[.1em] text-[#0a0a0a]";
+  const td = "border-b border-stone-300 px-2 py-2 align-middle text-sm";
+  return (
+    <section className="mt-10">
+      {heading && (
+        <h2 className="font-display text-2xl font-normal uppercase text-[#0a0a0a]">
+          Daily medals
+        </h2>
+      )}
+      <p className="mt-1 font-sans text-[13px] text-stone-500">
+        {track === "junior" ? "Junior track, " : ""}last {dates.length} readings ·{" "}
+        {MEDALS.map((m, i) => (
+          <span key={m}>
+            {i > 0 && " · "}
+            <span role="img" aria-label={MEDAL_LABEL[m]}>
+              {MEDAL_ICON[m]}
+            </span>{" "}
+            {MEDAL_LABEL[m].toLowerCase()}
+          </span>
+        ))}
+      </p>
+      <div className="mt-3 overflow-x-auto border-[3px] border-[#0a0a0a] bg-white">
+        <table className="w-full border-collapse">
+          <thead>
+            <tr>
+              <th className={`${th} px-3`}>Student</th>
+              {showParent && <th className={`${th} px-3`}>Parent</th>}
+              {dates.map((d) => (
+                <th key={d} className={`${th} whitespace-nowrap text-center`}>
+                  {dateTag(d)}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((r) => (
+              <tr key={r.username} className="last:[&>td]:border-b-0">
+                <td className={`${td} px-3 font-bold text-[#0a0a0a]`}>{r.username}</td>
+                {showParent && (
+                  <td className={`${td} px-3 text-stone-600`}>{r.parentName ?? "—"}</td>
+                )}
+                {dates.map((d) => {
+                  const m = r.medals[d];
+                  return (
+                    <td
+                      key={d}
+                      className={`${td} text-center text-[15px] leading-none`}
+                      title={`${dateBig(d)} · ${m ? MEDAL_LABEL[m] : "nothing yet"}`}
+                    >
+                      {m ? (
+                        <span role="img" aria-label={MEDAL_LABEL[m]}>
+                          {MEDAL_ICON[m]}
+                        </span>
+                      ) : (
+                        <span className="text-stone-300">·</span>
+                      )}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
+/** Medal rows for a set of students on a track (name order). */
+function medalRows(
+  usernames: string[],
+  track: Track,
+  marks: ReadingMark[],
+  sessions: Session[],
+  parentNameOf?: (username: string) => string,
+) {
+  return [...usernames].sort().map((username) => ({
+    username,
+    ...(parentNameOf ? { parentName: parentNameOf(username) } : {}),
+    medals: medalsOf(marks, sessions, username, track),
+  }));
+}
+
+/** True when any of these students holds a medal on the track. */
+function anyMedal(rows: { medals: MedalMap }[]): boolean {
+  return rows.some((r) => Object.keys(r.medals).length > 0);
+}
+
 export default async function AdminPage() {
   // One record read serves both identity and role — currentUser() followed by
   // isAdmin() would fetch the same rc_users row twice. Every DB round trip
@@ -218,13 +343,16 @@ export default async function AdminPage() {
 
   // Sessions and the roster are independent reads — overlap them. Students
   // never need the roster, so theirs stays a single read.
-  const [result, allUsers, wordAttemptsRaw] = await Promise.all([
+  const [result, allUsers, wordAttemptsRaw, marksRaw] = await Promise.all([
     loadSessions(),
     admin ? listAllUsers() : Promise.resolve<PublicUser[]>([]),
     loadWordQuizAttempts(),
+    loadMarks(),
   ]);
-  // A failed attempts read never blocks the page — the section just hides.
+  // A failed attempts/marks read never blocks the page — the section just
+  // hides (or shows quiz-only medals).
   const wordAttempts = wordAttemptsRaw ?? [];
+  const marks = marksRaw ?? [];
 
   if ("error" in result) {
     return (
@@ -266,6 +394,13 @@ export default async function AdminPage() {
             viewerUser={user}
           />
         )}
+        {(["senior", "junior"] as Track[]).map((t) => {
+          const rows = medalRows([user], t, marks, result);
+          // The senior grid always shows (it's the daily habit); junior only
+          // once the student has touched a junior reading.
+          if (t === "junior" && !anyMedal(rows)) return null;
+          return <MedalsPanel key={t} track={t} rows={rows} showParent={false} heading={t === "senior"} />;
+        })}
         <WordQuizPanel
           attempts={wordAttempts.filter((a) => a.username === user)}
           showStudent={false}
@@ -279,11 +414,10 @@ export default async function AdminPage() {
   // themselves; older sessions predate the parent stamp, so scopeToClassroom
   // falls back to roster membership by loginUser.
   if (!owner) {
-    const roster = new Set(
-      allUsers
-        .filter((u) => u.role === "student" && u.parentId === user)
-        .map((u) => u.username)
-    );
+    const students = allUsers
+      .filter((u) => u.role === "student" && u.parentId === user)
+      .map((u) => u.username);
+    const roster = new Set(students);
     roster.add(user);
     const groups = groupByArticle(scopeToClassroom(result, user, roster));
     return (
@@ -296,6 +430,11 @@ export default async function AdminPage() {
           for its full report card, recording, and transcript.
         </p>
         {classroomPanel(groups, false, user)}
+        {(["senior", "junior"] as Track[]).map((t) => {
+          const rows = medalRows(students, t, marks, result);
+          if (t === "junior" && !anyMedal(rows)) return null;
+          return <MedalsPanel key={t} track={t} rows={rows} showParent={false} heading={t === "senior"} />;
+        })}
         <WordQuizPanel
           attempts={wordAttempts.filter(
             (a) => a.parentId === user || roster.has(a.username),
@@ -336,6 +475,21 @@ export default async function AdminPage() {
   const seniorGroups = groupByArticle(enriched.filter((s) => s.track !== "junior"));
   const juniorGroups = groupByArticle(enriched.filter((s) => s.track === "junior"));
 
+  // Every classroom's students in one medals grid per track (the Parent
+  // column names whose classroom, like the sessions table above it).
+  const allStudents = allUsers.filter((u) => u.role === "student").map((u) => u.username);
+  const parentNameOf = (username: string) => {
+    const uname = studentToParent.get(username) || "";
+    return parentDisplay.get(uname) || uname || "—";
+  };
+  const medalsFor = (t: Track) => (
+    <MedalsPanel
+      track={t}
+      rows={medalRows(allStudents, t, marks, result, parentNameOf)}
+      showParent
+    />
+  );
+
   return (
     <div>
       <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
@@ -353,12 +507,22 @@ export default async function AdminPage() {
             {
               key: "senior",
               label: "Regular",
-              content: classroomPanel(seniorGroups, true, user, true),
+              content: (
+                <>
+                  {classroomPanel(seniorGroups, true, user, true)}
+                  {medalsFor("senior")}
+                </>
+              ),
             },
             {
               key: "junior",
               label: "Junior",
-              content: classroomPanel(juniorGroups, true, user, true),
+              content: (
+                <>
+                  {classroomPanel(juniorGroups, true, user, true)}
+                  {medalsFor("junior")}
+                </>
+              ),
             },
           ]}
         />

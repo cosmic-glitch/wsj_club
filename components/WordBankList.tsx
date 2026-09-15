@@ -42,11 +42,12 @@ function StatusBox({ children }: { children: React.ReactNode }) {
  * The Word Bank's interactive body. The page itself is static and carries
  * EVERY reading's words for the track (all handouts are public anyway); what's
  * personal is the FILTER — after mount this asks /api/quiz-dates for the
- * logged-in user's own completed-quiz dates (identity from the cookie) and
+ * logged-in user's own finished dates — handout marked done (silver) or
+ * quizzed (gold); identity from the cookie — and
  * shows only those days (the TodayTag/VotePoll recipe: the page stays
  * prerendered, the personal bit hydrates in). Logged out → a log-in prompt.
  *
- * Rendered as one row per quizzed reading, NEWEST FIRST — the date is the
+ * Rendered as one row per finished reading, NEWEST FIRST — the date is the
  * sort column and leads the row (the LandingIndex row grid), then the article
  * title (→ its handout) with the day's words underneath.
  */
@@ -88,8 +89,9 @@ export default function WordBankList({
       <StatusBox>
         Log in to see your word bank.
         <span className="mt-2 block text-xs font-normal normal-case tracking-normal text-stone-500">
-          Your bank collects the words from every reading you&apos;ve taken the
-          AI quiz on. Use the log-in control at the top of the page.
+          Your bank collects the words from every reading you&apos;ve finished
+          the handout for or taken the AI quiz on. Use the log-in control at
+          the top of the page.
         </span>
       </StatusBox>
     );
@@ -124,7 +126,8 @@ export default function WordBankList({
       <StatusBox>
         No words in your bank yet.
         <span className="mt-2 block text-xs font-normal normal-case tracking-normal text-stone-500">
-          Take a day&apos;s AI quiz and that reading&apos;s words appear here.
+          Mark a day&apos;s handout done (or take its AI quiz) and that
+          reading&apos;s words appear here.
         </span>
       </StatusBox>
     );
@@ -137,7 +140,7 @@ export default function WordBankList({
       <p className="mt-4 font-mono text-xs font-bold uppercase tracking-[.1em] text-stone-500">
         {`${wordCount} words from ${mine.length} ${
           mine.length === 1 ? "reading" : "readings"
-        } you've quizzed on`}
+        } you've finished`}
       </p>
 
       <ul className="mt-4 border-[3px] border-[#0a0a0a]">

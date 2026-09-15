@@ -30,3 +30,14 @@ h1 .gw{text-decoration-color:#c0c0c0}
 .gs-x:hover{background:#0a0a0a;color:#fff}
 .gs-x:focus-visible{outline:3px solid #ffe600;outline-offset:2px}
 @media (prefers-reduced-motion:reduce){#gsBackdrop,#gsSheet{transition:none}}
+/* The reading-mark box appended after the article (glossary.js): the
+   handout's yellow finish box, in the article page's own type. */
+#rmBox{margin:36px 0 0;border:3px solid #0a0a0a;background:#ffe600;padding:20px 20px 22px;text-align:center}
+.rm-head{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#0a0a0a;margin:0 0 14px}
+.rm-streak{background:#0a0a0a;color:#ffe600;padding:1px 6px}
+.rm-btn{border:2px solid #0a0a0a;background:#0a0a0a;color:#ffe600;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 22px;cursor:pointer}
+.rm-btn:hover{background:#fff;color:#0a0a0a}
+.rm-btn:disabled{opacity:.6;cursor:wait}
+.rm-btn:focus-visible{outline:3px solid #0a0a0a;outline-offset:2px}
+.rm-next{display:block;margin-top:14px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#0a0a0a}
+.rm-next:hover{background:#0a0a0a;color:#ffe600}

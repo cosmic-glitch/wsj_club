@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "How it works · Daily Reading Club",
   description:
-    "One hand-picked article a day: read it, study the handout, then explain the article to an AI tutor that keeps you honest. Explaining is how it sticks.",
+    "One hand-picked article a day: read it, study the handout, mark it done — or go for gold and explain the article to an AI tutor that keeps you honest.",
 };
 
 // The new-joiner guide: why the club exists (explaining out loud is what
@@ -147,18 +147,26 @@ export default function GuidePage() {
             sheet: the words to know and the concepts behind the story. This is
             the part to actually learn. The AI quiz draws straight from it.
           </p>
+          <p>
+            At the bottom, hit <strong>Mark it done</strong> once you could
+            explain the words and the concepts to someone. That earns the
+            day&rsquo;s silver medal, keeps your streak alive, and puts the
+            words in your word bank. (The self-quiz on the same page counts
+            too.)
+          </p>
         </Step>
 
         <Step
           n={3}
-          title="Do the AI voice quiz"
+          title="Go for gold: the AI voice quiz"
           clip={{
             src: "/guide/clip-quiz.mp4",
             label: "One voice-quiz turn: the tutor asks, you record an answer, the tutor follows up",
           }}
         >
           <p>
-            An AI tutor interviews you about the article, out loud. Press{" "}
+            The step up, and the one that makes it stick. An AI tutor
+            interviews you about the article, out loud. Press{" "}
             <strong>Start</strong> to answer, <strong>Stop</strong>{" "}when
             you&rsquo;re done.
           </p>
@@ -188,13 +196,15 @@ export default function GuidePage() {
           Also good to know
         </h2>
         <div className="mt-5 grid grid-cols-1 gap-3 min-[500px]:grid-cols-2">
-          <Extra title="Streak">
-            Finish the voice quiz on the day&rsquo;s article and your streak
-            grows. It shows right on the home page when you&rsquo;re logged in.
+          <Extra title="Medals and streak">
+            Every reading ends the day with a medal: 🥉 for marking the
+            article read, 🥈 for finishing the handout, 🥇 for the AI quiz.
+            Any medal keeps your streak going. Both show on the home page when
+            you&rsquo;re logged in.
           </Extra>
           <Extra title="Word bank">
-            Every word from every handout you&rsquo;ve quizzed on, collected in
-            one place. Yours builds automatically.
+            Every word from every handout you&rsquo;ve finished (silver or
+            gold), collected in one place. Yours builds automatically.
           </Extra>
           <Extra title="Vote days">
             Some days the club picks the article: a ballot appears at the top
@@ -213,7 +223,8 @@ export default function GuidePage() {
           </Extra>
           <Extra title="For parents">
             The <strong>Reports</strong> page shows every attempt and report
-            card from your kids, including quizzes still in progress.
+            card from your kids, including quizzes still in progress, plus a
+            grid of their daily medals.
           </Extra>
         </div>
       </section>

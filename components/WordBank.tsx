@@ -26,7 +26,7 @@ function dateTag(date: string): string {
 // the per-student filtering lives client-side in WordBankList instead: a
 // dynamic render couldn't fs-check public/audio on Vercel) and hands them to
 // the client list, which asks /api/quiz-dates which days the logged-in caller
-// has actually quizzed on.
+// has actually finished (handout marked done, or quizzed).
 export default function WordBank({ track = "senior" }: { track?: Track }) {
   const junior = track === "junior";
   const base = junior ? "/junior" : "";
@@ -58,8 +58,8 @@ export default function WordBank({ track = "senior" }: { track?: Track }) {
           My Word Bank
         </h1>
         <p className="mt-3 text-sm leading-relaxed text-stone-600">
-          Every word from the readings you&apos;ve taken the AI quiz on, newest
-          first.
+          Every word from the readings you&apos;ve finished the handout for or
+          taken the AI quiz on, newest first.
         </p>
       </header>
 
