@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
+import { useAuth } from "./AuthProvider";
 import { useMedals } from "./Medals";
 import VoiceQuiz from "./VoiceQuiz";
 import type { Track } from "@/lib/content";
@@ -14,9 +14,11 @@ import { MEDAL_ICON, MEDAL_LABEL } from "@/lib/medals";
  * what each means") that must be ticked before Mark-it-done enables; the
  * moment it's tapped the box flips
  * to the done state with the streak ticking up in place, then offers the
- * step up (the AI quiz launcher — gold) and the self-quiz. Already silver →
- * straight to the done state; gold → "AI quiz done". A parent or a
- * logged-out visitor gets the plain self-quiz CTA the box always had.
+ * step up (the AI quiz launcher — gold). Already silver → straight to the
+ * done state; gold → "AI quiz done". A logged-out visitor is told to log in
+ * as a student; a parent sees no box. (The self-quiz page still exists by
+ * URL and still records silver, but the handout no longer links to it —
+ * owner's call.)
  *
  * Marking the handout done gives silver even without a bronze (each rung
  * implies the ones below); a mark only goes up. The provider around this
@@ -34,31 +36,33 @@ export default function HandoutFinish({
   voiceQuiz: boolean;
 }) {
   const { ready, student, state, mark } = useMedals();
+  const { user } = useAuth();
   const [busy, setBusy] = useState(false);
   const [failed, setFailed] = useState(false);
   const [attested, setAttested] = useState(false);
-  const quizHref = `${track === "junior" ? "/junior" : ""}/reading/${date}/quiz`;
 
   const box = "mt-14 border-[3px] border-[#0a0a0a] bg-[#ffe600] p-6 text-center";
   const head =
     "font-mono text-sm font-bold uppercase tracking-[.08em] text-[#0a0a0a]";
   const primary =
     "mt-4 inline-block border-2 border-[#0a0a0a] bg-[#0a0a0a] px-6 py-3 font-mono text-sm font-bold uppercase tracking-[.1em] text-[#ffe600] no-underline transition hover:bg-white hover:text-[#0a0a0a]";
-  const secondary =
-    "inline-block border-2 border-[#0a0a0a] bg-white px-4 py-2 font-mono text-xs font-bold uppercase tracking-[.1em] text-[#0a0a0a] no-underline transition hover:bg-[#0a0a0a] hover:text-white";
-
-  // Not a student (or auth/medals still loading): the plain CTA.
-  const medal = state?.medals[date];
-  if (!ready || !student || !state) {
+  // Auth unknown yet, a parent (earns no medals), or a student whose medals
+  // haven't loaded: nothing. Logged out: say how to earn the medal, so a
+  // student who isn't signed in knows the box exists.
+  if (!ready) return null;
+  if (!user) {
     return (
       <div className={box}>
-        <p className={head}>Read the handout? Now test yourself.</p>
-        <Link href={quizHref} className={primary}>
-          Take the self-quiz →
-        </Link>
+        <p className={head}>Earn a silver medal {MEDAL_ICON.silver}</p>
+        <p className="mx-auto mt-3 max-w-md font-sans text-[15px] leading-relaxed text-[#0a0a0a]">
+          Log in as a student (top right) to attest you&apos;ve read this
+          handout and mark it done.
+        </p>
       </div>
     );
   }
+  if (!student || !state) return null;
+  const medal = state.medals[date];
 
   async function markDone() {
     setBusy(true);
@@ -97,11 +101,6 @@ export default function HandoutFinish({
             Couldn&apos;t save that — try again.
           </p>
         )}
-        <p className="mt-4">
-          <Link href={quizHref} className={secondary}>
-            Or take the self-quiz →
-          </Link>
-        </p>
       </div>
     );
   }
@@ -132,11 +131,6 @@ export default function HandoutFinish({
           />
         </>
       )}
-      <p className="mt-4">
-        <Link href={quizHref} className={secondary}>
-          Take the self-quiz →
-        </Link>
-      </p>
     </div>
   );
 }
