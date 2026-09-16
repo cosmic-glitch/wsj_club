@@ -55,9 +55,9 @@ export default async function StudentsPage() {
     );
   }
 
-  // The last 7 reading dates across both tracks (a junior reading usually
+  // The last 14 reading dates across both tracks (a junior reading usually
   // shares its date with a senior one), oldest → newest — the roster's
-  // past-week medal squares.
+  // past-two-weeks medal squares.
   const recentDates = [
     ...new Set([
       ...getAllReadings("senior").map((r) => r.date),
@@ -65,7 +65,7 @@ export default async function StudentsPage() {
     ]),
   ]
     .sort()
-    .slice(-7);
+    .slice(-14);
 
   // Per-student stats (attempts + last active) from the saved sessions, keyed by
   // username, so every roster shows activity at a glance. Best-effort: a load

@@ -12,7 +12,7 @@ export type RosterEntry = {
   // Mean of the student's graded "X/10" scores, null when nothing is graded yet.
   avgScore: number | null;
   lastActiveIso: string | null;
-  // Of the roster's `recentDates` (the last week of readings), this student's
+  // Of the roster's `recentDates` (the last two weeks of readings), this student's
   // medal per date (lib/medals.ts: 🥉 read, 🥈 handout, 🥇 AI quiz) — the
   // row's squares. A date with no medal is missing from the map.
   recentMedals: Record<string, Medal>;
@@ -133,8 +133,8 @@ export default function StudentRoster({
   // parent selector so a student can be added under any parent; defaults to
   // `parentUsername` (the caller's own).
   classrooms?: Classroom[];
-  // The last week of reading dates (both tracks merged), oldest → newest — the
-  // Past week column's squares, StreakStrip-style: medal = the day's rung, dashed =
+  // The last two weeks of reading dates (both tracks merged), oldest → newest — the
+  // Past 2 weeks column's squares, StreakStrip-style: medal = the day's rung, dashed =
   // today's still open, empty = missed. Omitted/empty → no column.
   recentDates?: string[];
 }) {
@@ -206,7 +206,7 @@ export default function StudentRoster({
                 )}
                 {recentDates.length > 0 && (
                   <th className="px-4 py-2.5 font-bold uppercase tracking-[.12em]">
-                    Past week
+                    Past 2 weeks
                   </th>
                 )}
                 <SortHeader
