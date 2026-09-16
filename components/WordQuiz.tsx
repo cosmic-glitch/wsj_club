@@ -8,8 +8,8 @@ import type { MasterySummary, WordQuizQuestion } from "@/lib/word-quiz";
 /**
  * The Word Bank's quiz panel — the interactive leaf on the static /words page
  * (same recipe as WordBankList below it: hydrate, fetch once with identity
- * from the cookie). Students only; parents get nothing (the list below shows
- * them the students-only notice).
+ * from the cookie). Every login has a bank — a parent who reads earns silver
+ * like a student.
  *
  * One GET builds a scheduled round server-side (due words first — Leitner);
  * the student answers one question at a time with instant feedback; the
@@ -46,7 +46,7 @@ function SummaryStrip({ summary }: { summary: MasterySummary }) {
 }
 
 export default function WordQuiz({ track = "senior" }: { track?: Track }) {
-  const { user, isAdmin, ready } = useAuth();
+  const { user, ready } = useAuth();
   const [summary, setSummary] = useState<MasterySummary | null>(null);
   const [phase, setPhase] = useState<Phase>("idle");
   const [round, setRound] = useState<WordQuizQuestion[]>([]);
@@ -56,7 +56,7 @@ export default function WordQuiz({ track = "senior" }: { track?: Track }) {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!ready || !user || isAdmin) return;
+    if (!ready || !user) return;
     let cancelled = false;
     fetch(`/api/word-quiz?track=${track}`)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`${r.status}`))))
@@ -67,7 +67,7 @@ export default function WordQuiz({ track = "senior" }: { track?: Track }) {
     return () => {
       cancelled = true;
     };
-  }, [ready, user, isAdmin, track]);
+  }, [ready, user, track]);
 
   const start = useCallback(async () => {
     setPhase("starting");
@@ -117,7 +117,7 @@ export default function WordQuiz({ track = "senior" }: { track?: Track }) {
   );
 
   // Hidden until it can be useful: needs a logged-in student with a bank.
-  if (!ready || !user || isAdmin || !summary || summary.total === 0) {
+  if (!ready || !user || !summary || summary.total === 0) {
     return null;
   }
 

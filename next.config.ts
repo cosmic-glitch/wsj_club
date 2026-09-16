@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    // The roster page was /admin/students before parents joined it.
+    return [{ source: "/admin/students", destination: "/admin/members", permanent: true }];
+  },
 };
 
 export default nextConfig;

@@ -35,6 +35,16 @@ export type User = {
 /** The shape safe to send to the browser — never includes the hash. */
 export type PublicUser = Omit<User, "passwordHash">;
 
+/**
+ * The classroom a login's own activity is stamped to (the `parent_id` column
+ * on events, reading marks and word-quiz attempts): a student's is their
+ * parent's, a parent's own is themselves — so a parent's own reading scopes
+ * to their classroom like their kids' does.
+ */
+export function classroomOf(u: Pick<User, "username" | "role" | "parentId">): string | null {
+  return u.role === "student" ? u.parentId ?? null : u.username;
+}
+
 /** A user-facing error with a machine code so routes can map it to a status. */
 export class UserError extends Error {
   code: string;

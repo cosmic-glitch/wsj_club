@@ -3,9 +3,12 @@ import { getAllReadings, getReading, type Track } from "@/lib/content";
 import { loadSessions } from "@/lib/sessions";
 import { loadMarksFor, medalsOf, recordMark } from "@/lib/marks";
 import { streakOf, type MarkLevel } from "@/lib/medals";
+import { classroomOf } from "@/lib/users";
 
 /**
- * The daily medals API (students only — a parent has no medals).
+ * The daily medals API — for EVERY active login: parents read too (the
+ * Activity page already shows them), so a parent earns medals and a streak
+ * exactly like a student; their marks are stamped to their own classroom.
  *
  *   GET  /api/medals?track=&today=  → the CALLER's per-date medal map on a
  *                                     track + their streak.
@@ -31,15 +34,10 @@ function todayOf(v: unknown): string {
   return new Date().toLocaleDateString("en-CA", { timeZone: "America/Los_Angeles" });
 }
 
-async function student() {
+async function viewer() {
   const record = await currentUserRecord();
   if (!record || record.active === false) {
     return { error: Response.json({ error: "Not logged in." }, { status: 401 }) };
-  }
-  if (record.role !== "student") {
-    return {
-      error: Response.json({ error: "Medals are for student logins." }, { status: 403 }),
-    };
   }
   return { record };
 }
@@ -58,14 +56,14 @@ async function payload(username: string, track: Track, today: string) {
 }
 
 export async function GET(request: Request) {
-  const got = await student();
+  const got = await viewer();
   if ("error" in got) return got.error;
   const params = new URL(request.url).searchParams;
   return payload(got.record.username, trackOf(params.get("track")), todayOf(params.get("today")));
 }
 
 export async function POST(request: Request) {
-  const got = await student();
+  const got = await viewer();
   if ("error" in got) return got.error;
 
   let body: Record<string, unknown>;
@@ -83,7 +81,7 @@ export async function POST(request: Request) {
 
   const { record } = got;
   const held = await recordMark(
-    { username: record.username, parentId: record.parentId ?? null },
+    { username: record.username, parentId: classroomOf(record) },
     track,
     date,
     level,

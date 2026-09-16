@@ -8,9 +8,11 @@ import {
   type AnsweredWordQuestion,
 } from "@/lib/word-quiz";
 import { bankDates, loadMarksFor } from "@/lib/marks";
+import { classroomOf } from "@/lib/users";
 
 /**
- * The word-bank quiz API (students only — a parent has no personal bank).
+ * The word-bank quiz API — for every active login (a parent who reads earns
+ * silver like a student, and silver is what fills the bank).
  *
  *   GET  /api/word-quiz?track=   → a freshly scheduled round over the CALLER's
  *                                  bank + their mastery summary (no side
@@ -27,18 +29,10 @@ import { bankDates, loadMarksFor } from "@/lib/marks";
 
 const trackOf = (v: unknown): Track => (v === "junior" ? "junior" : "senior");
 
-async function studentAndBank(track: Track) {
+async function viewerAndBank(track: Track) {
   const record = await currentUserRecord();
   if (!record || record.active === false) {
     return { error: Response.json({ error: "Not logged in." }, { status: 401 }) };
-  }
-  if (record.role !== "student") {
-    return {
-      error: Response.json(
-        { error: "The word quiz is for student logins." },
-        { status: 403 },
-      ),
-    };
   }
   const [sessions, marks] = await Promise.all([
     loadSessions(),
@@ -55,7 +49,7 @@ async function studentAndBank(track: Track) {
 
 export async function GET(request: Request) {
   const track = trackOf(new URL(request.url).searchParams.get("track"));
-  const got = await studentAndBank(track);
+  const got = await viewerAndBank(track);
   if ("error" in got) return got.error;
 
   const built = await buildRound(got.record.username, track, got.bank);
@@ -81,7 +75,7 @@ export async function POST(request: Request) {
   };
   const track = trackOf(rawTrack);
 
-  const got = await studentAndBank(track);
+  const got = await viewerAndBank(track);
   if ("error" in got) return got.error;
 
   // Validate each answered question and keep only words actually in the
@@ -127,7 +121,7 @@ export async function POST(request: Request) {
 
   const summary = await recordRound(
     got.record.username,
-    got.record.parentId,
+    classroomOf(got.record) ?? undefined,
     track,
     got.bank,
     clean,

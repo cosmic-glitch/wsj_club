@@ -41,8 +41,8 @@ export default function StreakStrip({
   /** The track's reading dates, newest first (the index order). */
   dates: string[];
 }) {
-  const { student, state } = useMedals();
-  if (!student || !state || dates.length === 0) return null;
+  const { loggedIn, state } = useMedals();
+  if (!loggedIn || !state || dates.length === 0) return null;
 
   const { medals, streak } = state;
   const today = localYMD();

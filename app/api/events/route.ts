@@ -1,4 +1,5 @@
 import { currentUserRecord } from "@/lib/auth";
+import { classroomOf } from "@/lib/users";
 import { parseEventInput, recordEvent } from "@/lib/events";
 
 /**
@@ -39,8 +40,8 @@ export async function POST(request: Request) {
     ? {
         username: user.username,
         // A student's classroom is their parent's; a parent's own activity is
-        // stamped to themselves (the rc_quiz_sessions recipe).
-        parentId: user.role === "student" ? user.parentId ?? null : user.username,
+        // stamped to themselves (lib/users classroomOf).
+        parentId: classroomOf(user),
       }
     : { username: null, parentId: null };
 

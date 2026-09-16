@@ -4,19 +4,27 @@ import { loadSessions } from "@/lib/sessions";
 import { loadMarks } from "@/lib/marks";
 import { higherMedal, medalOf, type Medal } from "@/lib/medals";
 import { getAllReadings } from "@/lib/content";
-import StudentRoster, {
+import MemberRoster, {
   type Classroom,
   type RosterEntry,
-} from "@/components/StudentRoster";
+} from "@/components/MemberRoster";
 
 // Reads cookies + Blob at request time — never static.
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Students · Daily Reading Club",
+  title: "Members · Daily Reading Club",
 };
 
-export default async function StudentsPage() {
+/**
+ * The Members page — every login in the viewer's scope, students AND parents
+ * (a parent reads and earns medals too, so they get a row like their kids;
+ * their own voice-quiz attempts count in Attempts / Avg score). A regular
+ * parent sees their own family; the owner sees every family in one list.
+ * Only student rows are manageable (Rename / Reset password — parents own
+ * their own logins).
+ */
+export default async function MembersPage() {
   // Same two-round-trip budget as the Reports page: one record read for
   // identity + role, then sessions and the full roster overlapped below.
   const record = await currentUserRecord();
@@ -26,10 +34,10 @@ export default async function StudentsPage() {
     return (
       <div>
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
-          Students
+          Members
         </h1>
         <p className="mt-4 border-[3px] border-[#0a0a0a] bg-[#ffe600] px-4 py-3 font-sans text-sm font-bold text-[#0a0a0a]">
-          Please log in (top right) to manage your students.
+          Please log in (top right) to see your family&apos;s members.
         </p>
       </div>
     );
@@ -42,7 +50,7 @@ export default async function StudentsPage() {
     return (
       <div>
         <h1 className="font-display text-4xl font-normal uppercase text-[#0a0a0a]">
-          Students
+          Members
         </h1>
         <p className="mt-4 border-[3px] border-[#0a0a0a] bg-stone-100 px-4 py-3 font-sans text-sm text-stone-600">
           This page is for parents. Your quiz results are on the{" "}
@@ -67,8 +75,9 @@ export default async function StudentsPage() {
     .sort()
     .slice(-14);
 
-  // Per-student stats (attempts + last active) from the saved sessions, keyed by
-  // username, so every roster shows activity at a glance. Best-effort: a load
+  // Per-member stats (attempts + last active) from the saved sessions, keyed by
+  // username (a parent's own attempts included), so every roster shows
+  // activity at a glance. Best-effort: a load
   // error just yields zero-stat rows rather than blanking the page. Loaded once
   // and shared across all classrooms (the owner may render several).
   const stats = new Map<
@@ -119,7 +128,7 @@ export default async function StudentsPage() {
     }
   }
 
-  // The row's past-week medals: per date, the higher of the student's marks
+  // The row's past-week medals: per date, the higher of the member's marks
   // on either track (the roster's dates mix tracks) or gold from a quiz.
   const recentMedalsFor = (username: string, quizzed: Set<string>) => {
     const out: Record<string, Medal> = {};
@@ -131,16 +140,17 @@ export default async function StudentsPage() {
     return out;
   };
 
-  // Only active students are shown/managed for now (there's no deactivate/
-  // reactivate in the UI — parents can add, rename, and reset passwords).
-  const toRoster = (students: PublicUser[]): RosterEntry[] =>
-    students
+  // Only active members are shown for now (there's no deactivate/reactivate
+  // in the UI — parents can add students, and rename / reset their passwords).
+  const toRoster = (members: PublicUser[]): RosterEntry[] =>
+    members
       .filter((s) => s.active !== false)
       .map((s) => {
         const st = stats.get(s.username);
         return {
           username: s.username,
           displayName: s.displayName,
+          role: s.role,
           active: s.active !== false,
           attempts: st?.attempts ?? 0,
           lastActiveIso: st?.lastActiveIso ?? null,
@@ -149,23 +159,24 @@ export default async function StudentsPage() {
         };
       });
 
-  // Classrooms are carved out of the one listAllUsers read; keep listStudents'
-  // display-name ordering.
+  // Families are carved out of the one listAllUsers read: the parent first,
+  // then their students in display-name order.
   const byName = (a: PublicUser, b: PublicUser) =>
     a.displayName.localeCompare(b.displayName);
-  const studentsOf = (parentId: string): PublicUser[] =>
-    allUsers
+  const familyOf = (parentId: string): PublicUser[] => [
+    ...allUsers.filter((u) => u.username === parentId),
+    ...allUsers
       .filter((u) => u.role === "student" && u.parentId === parentId)
-      .sort(byName);
+      .sort(byName),
+  ];
 
-  const ownRoster = toRoster(studentsOf(user));
+  const ownRoster = toRoster(familyOf(user));
 
-  // The owner also SEES every other parent's classroom. It may ADD a student to
-  // any of them (the /api/students POST lets the owner target a parentId), but
+  // The owner also SEES every other family. It may ADD a student to any of
+  // them (the /api/students POST lets the owner target a parentId), but
   // Rename/Reset stay own-classroom (the /api/students/[username] route still
   // ownership-checks and doesn't exempt the owner). A regular parent, and a
-  // lone owner with no other parents, manages just their own students
-  // (unchanged).
+  // lone owner with no other parents, sees just their own family.
   const parents = owner
     ? allUsers.filter((u) => u.role === "parent").sort(byName)
     : [];
@@ -174,8 +185,8 @@ export default async function StudentsPage() {
   if (others.length === 0) {
     return (
       <div>
-        <StudentRoster
-          students={ownRoster}
+        <MemberRoster
+          members={ownRoster}
           parentUsername={user}
           recentDates={recentDates}
         />
@@ -185,12 +196,13 @@ export default async function StudentsPage() {
 
   // Owner + other parents → ONE unified roster with a Parent column (the
   // Reports-page recipe — the per-classroom tabs were dropped as inefficient):
-  // own students first (fully editable), then each other parent's (visible,
-  // addable-to via the modal's classroom selector, but not Rename/Reset).
+  // own family first (students fully editable), then each other family
+  // (visible, addable-to via the modal's classroom selector, but not
+  // Rename/Reset).
   const self = parents.find((p) => p.username === user);
   const otherRosters = others.map((p) => ({
     parent: p,
-    students: toRoster(studentsOf(p.username)),
+    members: toRoster(familyOf(p.username)),
   }));
   const unified: RosterEntry[] = [
     ...ownRoster.map((s) => ({
@@ -198,8 +210,8 @@ export default async function StudentsPage() {
       parentName: self?.displayName ?? user,
       canManage: true,
     })),
-    ...otherRosters.flatMap(({ parent, students }) =>
-      students.map((s) => ({
+    ...otherRosters.flatMap(({ parent, members }) =>
+      members.map((s) => ({
         ...s,
         parentName: parent.displayName,
         canManage: false,
@@ -216,12 +228,11 @@ export default async function StudentsPage() {
 
   return (
     <div>
-      <StudentRoster
-        students={unified}
+      <MemberRoster
+        members={unified}
         parentUsername={user}
         recentDates={recentDates}
-        title="Manage students"
-        subtitle="Every family's students in one list. You can add a student under any parent; renaming and password resets stay with each student's own parent."
+        subtitle="Every family's parents and students in one list. You can add a student under any parent; renaming and password resets stay with each student's own parent."
         showParent
         classrooms={classrooms}
       />

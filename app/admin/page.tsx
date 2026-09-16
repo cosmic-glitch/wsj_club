@@ -200,11 +200,12 @@ function dateTag(date: string): string {
 }
 
 /**
- * The daily-medals grid — one row per student, one cell per reading over the
+ * The daily-medals grid — one row per member (students and parents alike —
+ * a parent who reads earns medals too), one cell per reading over the
  * track's last 14 readings, each cell the day's medal (🥉 read the article,
  * 🥈 finished the handout, 🥇 did the AI quiz) or a blank. This is where a
  * kid who reads every day but rarely quizzes shows as active rather than
- * absent. Rendered only when the track has readings; rows are every student
+ * absent. Rendered only when the track has readings; rows are every member
  * in the viewer's scope (a blank row is information too).
  */
 function MedalsPanel({
@@ -292,7 +293,7 @@ function MedalsPanel({
   );
 }
 
-/** Medal rows for a set of students on a track (name order). */
+/** Medal rows for a set of members on a track (name order). */
 function medalRows(
   usernames: string[],
   track: Track,
@@ -307,7 +308,7 @@ function medalRows(
   }));
 }
 
-/** True when any of these students holds a medal on the track. */
+/** True when any of these members holds a medal on the track. */
 function anyMedal(rows: { medals: MedalMap }[]): boolean {
   return rows.some((r) => Object.keys(r.medals).length > 0);
 }
@@ -411,8 +412,9 @@ export default async function AdminPage() {
 
   // A REGULAR parent sees only their own classroom — one table, no Parent
   // column, no Delete (Delete is owner-only). Roster = their students +
-  // themselves; older sessions predate the parent stamp, so scopeToClassroom
-  // falls back to roster membership by loginUser.
+  // themselves (the parent reads and earns medals too, so the medals grid
+  // has their own row); older sessions predate the parent stamp, so
+  // scopeToClassroom falls back to roster membership by loginUser.
   if (!owner) {
     const students = allUsers
       .filter((u) => u.role === "student" && u.parentId === user)
@@ -431,7 +433,7 @@ export default async function AdminPage() {
         </p>
         {classroomPanel(groups, false, user)}
         {(["senior", "junior"] as Track[]).map((t) => {
-          const rows = medalRows(students, t, marks, result);
+          const rows = medalRows([...roster], t, marks, result);
           if (t === "junior" && !anyMedal(rows)) return null;
           return <MedalsPanel key={t} track={t} rows={rows} showParent={false} heading={t === "senior"} />;
         })}
@@ -475,9 +477,10 @@ export default async function AdminPage() {
   const seniorGroups = groupByArticle(enriched.filter((s) => s.track !== "junior"));
   const juniorGroups = groupByArticle(enriched.filter((s) => s.track === "junior"));
 
-  // Every classroom's students in one medals grid per track (the Parent
-  // column names whose classroom, like the sessions table above it).
-  const allStudents = allUsers.filter((u) => u.role === "student").map((u) => u.username);
+  // Every classroom's members (students AND parents) in one medals grid per
+  // track (the Parent column names whose classroom, like the sessions table
+  // above it; a parent's own row maps to themselves).
+  const allMembers = allUsers.map((u) => u.username);
   const parentNameOf = (username: string) => {
     const uname = studentToParent.get(username) || "";
     return parentDisplay.get(uname) || uname || "—";
@@ -485,7 +488,7 @@ export default async function AdminPage() {
   const medalsFor = (t: Track) => (
     <MedalsPanel
       track={t}
-      rows={medalRows(allStudents, t, marks, result, parentNameOf)}
+      rows={medalRows(allMembers, t, marks, result, parentNameOf)}
       showParent
     />
   );

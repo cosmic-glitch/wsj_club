@@ -11,7 +11,7 @@ import { clearAuthCache, useAuth, writeAuthCache } from "./AuthProvider";
 // actions" in the index rows. Hovering inverts (black bg, yellow text). Used
 // in the landing page's thin topline ABOVE the masthead AND in the site-wide
 // header on every inner page (SiteHeader): inline login form when logged out,
-// word-bank/reports/students links + log out when logged in. The bar renders
+// word-bank/reports/members links + log out when logged in. The bar renders
 // IDENTICALLY everywhere — greeting + links — so navigating between pages
 // never makes it jitter (the greeting used to be header-suppressed, which
 // made "Hi <user>" vanish and the links shift on every inner page). Logged
@@ -115,31 +115,25 @@ export default function HomeAuthBar() {
             together (below the greeting / the header wordmark), so a line can
             never end or start with a stray "/". */}
         <span className="flex items-center gap-1 whitespace-nowrap">
-          {isAdmin ? (
+          {/* Everyone logged in has a word bank (silver fills it, parent or
+              student) and a Reports page; Members + Activity are the
+              parent/owner pages. */}
+          <Link href={wordBankHref} className={bar}>
+            Word Bank
+          </Link>
+          <Slash />
+          <Link href="/admin" className={bar}>
+            Reports
+          </Link>
+          <Slash />
+          {isAdmin && (
             <>
-              <Link href="/admin" className={bar}>
-                Reports
-              </Link>
-              <Slash />
-              <Link href="/admin/students" className={bar}>
-                Students
+              <Link href="/admin/members" className={bar}>
+                Members
               </Link>
               <Slash />
               <Link href="/admin/analytics" className={bar}>
                 Activity
-              </Link>
-              <Slash />
-            </>
-          ) : (
-            <>
-              {/* STUDENTS ONLY — a parent/owner has no personal word bank
-                  (the page shows them a students-only notice). */}
-              <Link href={wordBankHref} className={bar}>
-                Word Bank
-              </Link>
-              <Slash />
-              <Link href="/admin" className={bar}>
-                Reports
               </Link>
               <Slash />
             </>

@@ -57,13 +57,13 @@ document.addEventListener("visibilitychange",function(){
 window.addEventListener("pagehide",flushRead);
 
 /* ---- reading mark (the day's BRONZE medal; lib/medals.ts) ----
-   The article page's finish line: a box appended after the article for a
-   logged-in STUDENT — a pledge ("I attest that I have read the whole
+   The article page's finish line: a box appended after the article for any
+   logged-in reader (student or parent) — a pledge ("I attest that I have read the whole
    article…") that must be ticked before "Mark it read 🥉" enables — that
    posts a level-1 mark and flips in place to the medal + streak with a link on to
    the handout (silver). Already marked (or silver/gold from the handout /
-   AI quiz) → straight to the done state. GET /api/medals answers 401/403
-   for a logged-out visitor or a parent, and the box simply never appears.
+   AI quiz) → straight to the done state. GET /api/medals answers 401 for a
+   logged-out visitor, and the box simply never appears.
    Same fetch shape as the React MedalsProvider; `today` is the viewer's
    local date (the streak rule skips today's untaken reading). */
 (function(){
@@ -105,7 +105,7 @@ window.addEventListener("pagehide",flushRead);
   fetch("/api/medals?track="+TRACK+"&today="+TODAY,{credentials:"same-origin"})
   .then(function(r){if(!r.ok)throw new Error(String(r.status));return r.json();})
   .then(render)
-  .catch(function(){/* not a student — no box */});
+  .catch(function(){/* not logged in — no box */});
 })();
 
 // Pronunciation clips live under the DATE — the trailing-anything match keeps

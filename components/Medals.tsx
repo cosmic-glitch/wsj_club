@@ -20,11 +20,12 @@ import {
 } from "@/lib/medals";
 
 /**
- * The logged-in STUDENT's daily medals for one track — one fetch of
+ * The logged-in viewer's daily medals for one track — one fetch of
  * /api/medals on mount, shared by every leaf on the page that shows a medal
  * (the streak ribbon, the index rows' medal, the handout's finish box), the
- * CompletedBy/AuthProvider lesson: never a fetch per row. Parents and
- * logged-out visitors get an empty context (no fetch — the API would 401/403).
+ * CompletedBy/AuthProvider lesson: never a fetch per row. Every login earns
+ * medals (parents read too); a logged-out visitor gets an empty context (no
+ * fetch — the API would 401).
  *
  * `mark(date, level)` records an attestation and swaps in the server's fresh
  * map + streak, so the ribbon ticks up the moment the student marks a day.
@@ -40,8 +41,8 @@ export type MedalsState = { medals: MedalMap; streak: Streak };
 type MedalsContext = {
   /** True once the auth state is known. */
   ready: boolean;
-  /** The viewer is a logged-in student (the only role with medals). */
-  student: boolean;
+  /** The viewer is logged in (every login, parent or student, has medals). */
+  loggedIn: boolean;
   /** null until loaded (or when the viewer has no medals to load). */
   state: MedalsState | null;
   mark: (date: string, level: MarkLevel) => Promise<MedalsState | null>;
@@ -49,7 +50,7 @@ type MedalsContext = {
 
 const Ctx = createContext<MedalsContext>({
   ready: false,
-  student: false,
+  loggedIn: false,
   state: null,
   mark: async () => null,
 });
@@ -68,8 +69,8 @@ export function MedalsProvider({
   track: Track;
   children: React.ReactNode;
 }) {
-  const { user, role, ready } = useAuth();
-  const student = ready && Boolean(user) && role === "student";
+  const { user, ready } = useAuth();
+  const loggedIn = ready && Boolean(user);
   const [state, setState] = useState<MedalsState | null>(null);
 
   const load = useCallback(async (): Promise<MedalsState | null> => {
@@ -84,7 +85,7 @@ export function MedalsProvider({
   }, [track]);
 
   useEffect(() => {
-    if (!student) return;
+    if (!loggedIn) return;
     let stale = false;
     const refresh = () => {
       void load().then((s) => {
@@ -97,7 +98,7 @@ export function MedalsProvider({
       stale = true;
       window.removeEventListener(MEDAL_EVENT, refresh);
     };
-  }, [student, load]);
+  }, [loggedIn, load]);
 
   const mark = useCallback(
     async (date: string, level: MarkLevel) => {
@@ -119,7 +120,7 @@ export function MedalsProvider({
   );
 
   return (
-    <Ctx.Provider value={{ ready, student, state, mark }}>{children}</Ctx.Provider>
+    <Ctx.Provider value={{ ready, loggedIn, state, mark }}>{children}</Ctx.Provider>
   );
 }
 
@@ -149,7 +150,7 @@ export function MedalIcon({
 
 /**
  * The medal beside an index row's date — renders nothing until the
- * student's map is loaded, and nothing for a day with no medal.
+ * viewer's map is loaded, and nothing for a day with no medal.
  */
 export function RowMedal({
   date,

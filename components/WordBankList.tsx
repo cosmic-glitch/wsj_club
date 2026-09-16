@@ -58,14 +58,12 @@ export default function WordBankList({
   days: BankDay[];
   track?: Track;
 }) {
-  const { user, isAdmin, ready } = useAuth();
+  const { user, ready } = useAuth();
   const [dates, setDates] = useState<string[] | null>(null); // null = not loaded yet
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    // isAdmin (parent/owner) skips the fetch — they get the students-only
-    // notice below, so their quiz dates are never needed.
-    if (!ready || !user || isAdmin) return;
+    if (!ready || !user) return;
     let cancelled = false;
     fetch(`/api/quiz-dates?track=${track}`)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`${r.status}`))))
@@ -78,7 +76,7 @@ export default function WordBankList({
     return () => {
       cancelled = true;
     };
-  }, [ready, user, isAdmin, track]);
+  }, [ready, user, track]);
 
   if (!ready) {
     return <StatusBox>Loading your words…</StatusBox>;
@@ -92,19 +90,6 @@ export default function WordBankList({
           Your bank collects the words from every reading you&apos;ve finished
           the handout for or taken the AI quiz on. Use the log-in control at
           the top of the page.
-        </span>
-      </StatusBox>
-    );
-  }
-
-  // A parent (or the owner) has no personal word bank — the bank is built
-  // from a student's own quiz sessions.
-  if (isAdmin) {
-    return (
-      <StatusBox>
-        Students only.
-        <span className="mt-2 block text-xs font-normal normal-case tracking-normal text-stone-500">
-          You need to be logged in as a student to see your personal word bank.
         </span>
       </StatusBox>
     );

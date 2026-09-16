@@ -7,19 +7,22 @@ import { MEDAL_ICON, MEDAL_LABEL, type Medal } from "@/lib/medals";
 export type RosterEntry = {
   username: string;
   displayName: string;
+  // Parents are members too (they read and earn medals); a parent row carries
+  // a chip and never has Rename/Reset (parents own their own logins).
+  role: "student" | "parent";
   active: boolean;
   attempts: number;
-  // Mean of the student's graded "X/10" scores, null when nothing is graded yet.
+  // Mean of the member's graded "X/10" scores, null when nothing is graded yet.
   avgScore: number | null;
   lastActiveIso: string | null;
-  // Of the roster's `recentDates` (the last two weeks of readings), this student's
+  // Of the roster's `recentDates` (the last two weeks of readings), this member's
   // medal per date (lib/medals.ts: 🥉 read, 🥈 handout, 🥇 AI quiz) — the
   // row's squares. A date with no medal is missing from the map.
   recentMedals: Record<string, Medal>;
-  // Owner's unified all-classrooms view: the parent's display name (the Parent
+  // Owner's unified all-families view: the parent's display name (the Parent
   // column) and whether the viewer may Rename/Reset this row (only the owner's
   // own students — the PATCH route ownership-checks and doesn't exempt the
-  // owner). Absent on a single-classroom roster.
+  // owner). Absent on a single-family roster.
   parentName?: string;
   canManage?: boolean;
 };
@@ -74,6 +77,10 @@ const DEFAULT_DIR: Record<SortKey, SortDir> = {
   lastActive: "desc",
 };
 
+// Parent before students — the tiebreak inside a family.
+const byRole = (a: RosterEntry, b: RosterEntry) =>
+  (a.role === "parent" ? 0 : 1) - (b.role === "parent" ? 0 : 1);
+
 function compareBy(key: SortKey, a: RosterEntry, b: RosterEntry): number {
   switch (key) {
     case "username":
@@ -81,6 +88,7 @@ function compareBy(key: SortKey, a: RosterEntry, b: RosterEntry): number {
     case "parent":
       return (
         (a.parentName ?? "").localeCompare(b.parentName ?? "") ||
+        byRole(a, b) ||
         a.username.localeCompare(b.username)
       );
     case "attempts":
@@ -100,11 +108,11 @@ function compareBy(key: SortKey, a: RosterEntry, b: RosterEntry): number {
   }
 }
 
-export default function StudentRoster({
-  students,
+export default function MemberRoster({
+  members,
   parentUsername,
-  title = "My students",
-  subtitle = "The students you manage. Add a student to give them a login for the voice quiz.",
+  title = "Members",
+  subtitle = "Your family: you and the students you manage. Add a student to give them a login for the voice quiz.",
   readOnly = false,
   canAdd,
   showTitle = true,
@@ -112,7 +120,7 @@ export default function StudentRoster({
   classrooms,
   recentDates = [],
 }: {
-  students: RosterEntry[];
+  members: RosterEntry[];
   parentUsername: string;
   title?: string;
   subtitle?: string;
@@ -160,7 +168,7 @@ export default function StudentRoster({
     );
   }
 
-  const sorted = [...students].sort((a, b) => {
+  const sorted = [...members].sort((a, b) => {
     const c = compareBy(sort.key, a, b);
     return sort.dir === "asc" ? c : -c;
   });
@@ -189,11 +197,11 @@ export default function StudentRoster({
         )}
       </div>
 
-      {students.length === 0 ? (
+      {members.length === 0 ? (
         <p className="mt-6 border-[3px] border-dashed border-[#0a0a0a] bg-white p-8 text-center font-mono text-sm font-bold uppercase tracking-[.08em] text-stone-500">
           {showAdd
-            ? "No students yet. Add your first student to get started."
-            : "No students in this classroom yet."}
+            ? "No members yet. Add your first student to get started."
+            : "No members in this family yet."}
         </p>
       ) : (
         <div className="mt-6 overflow-hidden border-[3px] border-[#0a0a0a] bg-white">
@@ -229,9 +237,9 @@ export default function StudentRoster({
             </thead>
             <tbody className="divide-y-2 divide-[#0a0a0a]">
               {sorted.map((s) => (
-                <StudentRow
+                <MemberRow
                   key={s.username}
-                  student={s}
+                  member={s}
                   readOnly={readOnly}
                   showParent={showParent}
                   recentDates={recentDates}
@@ -311,8 +319,8 @@ function SortHeader({
 
 /* ------------------------------- one row -------------------------------- */
 
-function StudentRow({
-  student,
+function MemberRow({
+  member: student,
   readOnly,
   showParent,
   recentDates,
@@ -324,7 +332,7 @@ function StudentRow({
   onCredential,
   refresh,
 }: {
-  student: RosterEntry;
+  member: RosterEntry;
   readOnly: boolean;
   showParent: boolean;
   recentDates: string[];
@@ -337,8 +345,10 @@ function StudentRow({
   refresh: () => void;
 }) {
   // Row-level Rename/Reset: the table must allow actions AND the row must be
-  // manageable by the viewer (in the owner's unified view, only own students).
-  const editable = !readOnly && student.canManage !== false;
+  // manageable by the viewer (in the owner's unified view, only own students;
+  // a parent row is never editable — parents own their own logins).
+  const editable =
+    !readOnly && student.role === "student" && student.canManage !== false;
   const medals = student.recentMedals;
   const [mounted, setMounted] = useState(false);
   const [draftName, setDraftName] = useState(student.displayName);
@@ -435,6 +445,11 @@ function StudentRow({
         ) : (
           <span className="font-mono font-medium text-stone-900">
             {student.username}
+            {student.role === "parent" && (
+              <span className="ml-2 bg-[#ffe600] px-1.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-[#0a0a0a]">
+                parent
+              </span>
+            )}
             {!student.active && (
               <span className="ml-2 bg-stone-200 px-1.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-stone-500">
                 inactive
