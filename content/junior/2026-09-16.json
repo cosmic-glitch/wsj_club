@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-16",
+  "title": "Hyrox, the fitness craze that runs and runs",
+  "articleUrl": "https://www.economist.com/culture/2026/09/01/hyrox-the-fitness-craze-that-runs-and-runs",
+  "articlePageUrl": "/articles/junior/2026-09-16.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "cavernous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "KAV-ur-nus",
+      "articleQuote": "Inside Strawberry Arena, a cavernous stadium in Stockholm, thousands of chiselled men and women are puffing and slick with sweat.",
+      "meaning": "Cavernous means huge and hollow inside — so big and so empty that a person standing in the middle of it looks small. The word is built straight out of *cavern*, another word for a cave, and it almost always describes an indoor space. Here it tells you how large Strawberry Arena is: thousands of racers are running laps inside it, and there is still room to spare.",
+      "examples": [
+        "The new gym felt cavernous on the first morning, until four hundred students filed in for the assembly.",
+        "We whispered in the cavernous train station, and our voices came back to us a second later."
+      ]
+    },
+    {
+      "word": "concede",
+      "partOfSpeech": "verb",
+      "pronunciation": "kun-SEED",
+      "articleQuote": "He concedes that it is expensive, but that demand is still far exceeding supply.",
+      "meaning": "To concede is to admit that something is true even when it counts against you. You are not giving up the whole argument — you are handing over one point of it, usually right before you make your own. That is exactly what happens here: the co-founder of Hyrox concedes that his races cost a lot, and then argues that people keep signing up anyway.",
+      "examples": [
+        "I had to concede that my brother was faster than me, even though I hated saying it out loud.",
+        "She conceded that her plan needed another week, then explained why it was still the better one."
+      ]
+    },
+    {
+      "word": "solitary",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SOL-ih-tehr-ee",
+      "articleQuote": "Hyrox adds a social element to what is generally a solitary pursuit.",
+      "meaning": "Solitary means done alone, or standing alone with nothing else around it. It belongs to the same family as *solo* and *solitude*. In this sentence it describes working out: most people train by themselves with headphones on, so the writer calls it a solitary pursuit — and turning that alone-time into something people do side by side is much of what makes Hyrox popular.",
+      "examples": [
+        "Reading in my room is a solitary hobby, which is exactly why I want it after a loud day at school.",
+        "A solitary sneaker sat in the middle of the empty field long after everyone had gone home."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Cardio versus strength",
+      "articleQuote": "Between laps of the stadium they have also rowed, lunged, done burpees, carried kettlebells, pushed and pulled a sled and lobbed a medicine ball.",
+      "meaning": "Read that list again. Rowing and running are on it. So are kettlebells and a sled. Those are two different jobs, and the body does them in two different ways.\n\nPeople who study **exercise physiology** — what happens inside the body while it works — split training into two big kinds. **Cardio** is short for *cardiovascular*, which means heart and blood vessels. Cardio work is anything you keep doing for a long stretch: running, rowing, swimming, cycling. Your heart beats faster and your lungs pull in more air, because working muscles burn oxygen and need a steady supply of it delivered by the blood. Train that way often and the heart pumps more blood per beat, so the same effort costs you less.\n\n**Strength** work has the opposite shape: one big push lasting a few seconds, then a rest. Lifting a kettlebell, shoving a sled, dropping into a lunge. Here the muscle has to produce a lot of force at once. Pushing hard against a heavy load causes tiny tears in the muscle fibres, and while you sleep your body rebuilds them slightly thicker — which is why the same weight feels lighter a month later.\n\nPicture a school sports day. The 1,500 metres is cardio: nothing you lift is heavy, you simply have to keep going for four straight minutes. Tug-of-war is strength: twenty seconds of pulling as hard as you possibly can, and then it is over. The kid who wins the 1,500 is often not the kid who anchors the winning tug-of-war team, because the two events ask the body for different things.\n\nThat gap is the whole idea behind Hyrox. It puts both kinds into one race, so nobody wins by being good at only half of it. And now, when someone says they are \"doing cardio\" or \"lifting\", you know which of the two jobs they mean."
+    },
+    {
+      "name": "Portmanteau",
+      "articleQuote": "The name is believed to be a portmanteau of “hybrid”—a reference to its mix of cardio and strength exercises—and “rock star”, to make it seem cool.",
+      "meaning": "*Hy* from hybrid. *Rox* from rock star. Push the two together and you get Hyrox — a word that did not exist until somebody built it.\n\n**Linguists**, who study how language works, call a word made this way a **portmanteau**. They borrowed the term from an old French word for a travelling case that opens into two equal halves, with a separate compartment on each side. Two words packed into one container — that is the image. The writer Lewis Carroll gave the word this meaning in *Through the Looking-Glass*, where he explains that *slithy* holds both *lithe* and *slimy*.\n\nThe rule is simple. Take the front of one word and the back of another and join them, so the new word carries both meanings at once. *Breakfast* plus *lunch* makes **brunch**, a meal that really is both. *Smoke* plus *fog* makes **smog**, which is exactly what sits over a city on a bad air day. *Pocket* plus *monster* makes **Pokemon**. *Web* plus *log* makes **blog**.\n\nNotice what the trick buys the people naming things. The company could have called its event \"the hybrid rock-star fitness race\". Instead they spent one short word, and anybody who hears the story once remembers both halves of it. That is why brands and inventors reach for blends: a portmanteau is shorter than a phrase and it sticks.\n\nOnce you know the trick, you will start catching it everywhere — on cereal boxes, in app names, and in words you have used your whole life without noticing they were ever two."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "How has the number of people doing Hyrox changed since the first race?",
+      "options": [
+        "It has stayed at roughly 650 people per race",
+        "It grew quickly at first and then shrank back",
+        "It has gone from about 650 entrants in 2017 to more than 2m expected in the 2026-27 season",
+        "It has never been held anywhere except Hamburg"
+      ],
+      "answerIndex": 2,
+      "explanation": "The first race, in Hamburg in 2017, drew some 650 people; more than 2m are expected to compete across six continents in the 2026-27 season."
+    },
+    {
+      "question": "The article calls Strawberry Arena \"cavernous\". What does that tell you about it?",
+      "options": [
+        "It is very old and in poor repair",
+        "It is enormous and hollow inside, the way a cave is",
+        "It is built underground",
+        "It is cold and damp"
+      ],
+      "answerIndex": 1,
+      "explanation": "Cavernous comes from cavern and means so big and empty inside that the people standing in it look small."
+    },
+    {
+      "question": "\"He concedes that it is expensive, but that demand is still far exceeding supply.\" What is the co-founder of Hyrox doing when he concedes something?",
+      "options": [
+        "Admitting one point that counts against him",
+        "Refusing to answer the question",
+        "Giving up the argument altogether",
+        "Proving that his critics had their facts wrong"
+      ],
+      "answerIndex": 0,
+      "explanation": "To concede is to grant that one point is true even though it helps the other side — and he does it just before making his own argument about demand."
+    },
+    {
+      "question": "Pushing a heavy sled as hard as you can for twenty seconds is mainly which kind of work?",
+      "options": [
+        "Cardio, because it makes you breathe hard",
+        "Neither, because only lifting weights counts as exercise",
+        "Both equally, because every exercise trains the same thing",
+        "Strength, because the muscles must produce a lot of force at once"
+      ],
+      "answerIndex": 3,
+      "explanation": "Strength work is a big effort over a few seconds that makes muscles produce force, while cardio is a steady effort held for a long stretch."
+    },
+    {
+      "question": "Which of these words is a portmanteau, built the same way as \"Hyrox\"?",
+      "options": [
+        "Stadium",
+        "Athlete",
+        "Brunch",
+        "Running"
+      ],
+      "answerIndex": 2,
+      "explanation": "Brunch packs breakfast and lunch into a single word, exactly the way Hyrox packs hybrid and rock star."
+    }
+  ]
+}
