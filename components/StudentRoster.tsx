@@ -468,16 +468,21 @@ function StudentRow({
                   </span>
                 );
               }
+              // Same 16px cell as a medal so every row's squares line up.
               return (
                 <div
                   key={d}
                   title={`${dateTag(d)} — ${pending ? "today, still open" : "missed"}`}
-                  className={`mt-[1px] h-3.5 w-3.5 shrink-0 ${
-                    pending
-                      ? "border-2 border-dashed border-[#0a0a0a]"
-                      : "border border-stone-300"
-                  }`}
-                />
+                  className="flex h-4 w-4 shrink-0 items-center justify-center"
+                >
+                  <div
+                    className={`h-3.5 w-3.5 ${
+                      pending
+                        ? "border-2 border-dashed border-[#0a0a0a]"
+                        : "border border-stone-300"
+                    }`}
+                  />
+                </div>
               );
             })}
           </div>
