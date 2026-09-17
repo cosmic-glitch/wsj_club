@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-17",
+  "title": "Sea cucumbers may help protect coral reefs",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/16/sea-cucumbers-may-help-protect-coral-reefs",
+  "articlePageUrl": "/articles/junior/2026-09-17.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "stifle",
+      "partOfSpeech": "verb",
+      "pronunciation": "STY-ful",
+      "articleQuote": "Pollution is encouraging algal blooms, which stifle their growth.",
+      "meaning": "To stifle something is to smother it — to hold it down so it cannot grow, spread, or come out. You can stifle a yawn in the middle of class, and a rule can stifle an argument before it starts. In the article, algae spread in thick mats over a reef and block the light the coral needs, so the coral's growth is stifled.",
+      "examples": [
+        "Sam stifled a giggle when his friend's chair squeaked during the spelling test.",
+        "A coach who shouts at every mistake can stifle a young player's confidence."
+      ]
+    },
+    {
+      "word": "delicacy",
+      "partOfSpeech": "noun",
+      "pronunciation": "DEL-ih-kuh-see",
+      "articleQuote": "They are also, in the guise of bêche-de-mer, a delicacy in many parts of the world, particularly east Asia.",
+      "meaning": "A delicacy is a food people treat as special and expensive, usually because it is rare or hard to get. What counts as one depends entirely on where you live. In the article, dried sea cucumber — sold as *bêche-de-mer* — is a prized delicacy in parts of east Asia, which is why so many are hauled off the sea floor.",
+      "examples": [
+        "At her grandmother's house the tiny sugared plums are a delicacy that only comes out on holidays.",
+        "Fried grasshoppers sound strange to some people, but in parts of Mexico they are a delicacy."
+      ]
+    },
+    {
+      "word": "sediment",
+      "partOfSpeech": "noun",
+      "pronunciation": "SED-ih-munt",
+      "articleQuote": "They feed on sediment, digesting the organic matter therein and voiding sand.",
+      "meaning": "Sediment is the loose material — sand, mud, grit, and bits of dead plants and animals — that settles to the bottom of water and sits there. Rivers, lakes, and oceans all collect it. A sea cucumber crawls along the sea floor swallowing sediment, takes in the scraps of food mixed through it, and pushes the leftover sand back out.",
+      "examples": [
+        "After the flood went down, a layer of brown sediment covered the whole soccer field.",
+        "Shake a jar of pond water, let it sit, and the sediment sinks into a layer at the bottom."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Symbiosis",
+      "articleQuote": "These algae, in turn, provide the anthozoans with much of their nutrition.",
+      "meaning": "Coral looks like a colorful rock, but a reef is built by animals. Each one is a tiny, soft creature closely related to a sea anemone — scientists call them **anthozoans** — and each builds a hard stony case around itself. Stack billions of those cases up over hundreds of years and you have a reef.\n\nHere is the strange part: those animals cannot catch nearly enough food to live on. Packed inside their bodies are huge numbers of tiny algae, and the algae use sunlight to make sugars. Most of that food passes into the animal. In exchange the algae get a protected spot in the sunlight and the raw materials they need — ammonia, for instance, which algae use to build protein.\n\nBiologists call two different kinds of living thing living together like this **symbiosis**, from Greek pieces meaning 'living together'. When both sides gain, as here, it is called *mutualism*. You carry an example around all day: the bacteria in your gut get a warm place and leftovers from your lunch, and in return they break down food your own body cannot digest.\n\nSo a reef is not one living thing but two, locked together. That is also why reefs are so fragile — damage either partner and the whole arrangement stops working."
+    },
+    {
+      "name": "Ocean acidification",
+      "articleQuote": "The seas they live in are getting ever warmer and more acidic, taking them out of coral’s comfort zone.",
+      "meaning": "The sea is slowly turning more sour, and that is bad news for anything that builds a shell.\n\nChemists sort liquids by how acidic they are. Lemon juice and vinegar are strongly acidic, plain water sits in the middle, and dish soap is at the far other end. Seawater normally sits a little past the middle on the non-acidic side. Acid dissolves chalky material: leave a chicken eggshell in a cup of vinegar overnight and the shell fizzes and goes soft, because the acid eats away the chalk it is made of.\n\nNow the connection. Coral skeletons and clam shells are made of almost exactly that chalky stuff, **calcium carbonate**. The air today holds more carbon dioxide than it used to, and some of that gas dissolves into the sea, where it makes the water slightly more acidic. That is **ocean acidification**. The shift is small, but it makes the building material harder for coral to lay down and easier for seawater to dissolve — rather like building a sandcastle while the tide keeps washing at the base.\n\nThat is why the carbonate a sea cucumber releases matters: it nudges the water right around the coral back toward the non-acidic side, so that patch of reef has easier conditions to build in. Whenever you read about the ocean and carbon dioxide, remember there are two separate problems — the water is getting warmer, *and* it is getting more acidic."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The researchers' first experiment off Mo'orea put two sea cucumbers in ten of twenty cages. What happened?",
+      "options": [
+        "The caged corals grew 41% faster",
+        "There was no difference in growth at all",
+        "The corals with cucumbers grew more slowly",
+        "The cucumbers ate the coral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The first run found no difference, which surprised the scientists because aquarium experiments had suggested there would be one — so they ran it again with four cucumbers per cage, and that time two of the three coral species grew faster."
+    },
+    {
+      "question": "How does a sea cucumber feed?",
+      "options": [
+        "It hunts small fish among the coral",
+        "It scrapes algae off the reef with its teeth",
+        "It swallows sediment, digests the food mixed into it, and pushes the sand back out",
+        "It absorbs sugars made by algae inside its body"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says they \"feed on sediment, digesting the organic matter therein and voiding sand\" — sediment being the loose sand, mud, and dead scraps on the sea floor."
+    },
+    {
+      "question": "Why are sea cucumbers being stripped off reefs in such numbers?",
+      "options": [
+        "They damage fishing nets",
+        "Dried as bêche-de-mer they are a delicacy, in a trade worth roughly $1.5bn a year",
+        "Scientists need huge numbers of them for experiments",
+        "They are ground up to make fertiliser for farms"
+      ],
+      "answerIndex": 1,
+      "explanation": "A delicacy is a food treated as special and expensive, and demand for bêche-de-mer in east Asia drives a poorly monitored trade estimated at about $1.5bn a year."
+    },
+    {
+      "question": "The algae living inside coral animals are an example of symbiosis. What makes it symbiosis?",
+      "options": [
+        "The algae and the coral animals are the same species",
+        "The algae compete with the coral animals for the same food",
+        "Two different kinds of living thing live together, and here each one gains something",
+        "One partner slowly kills the other"
+      ],
+      "answerIndex": 2,
+      "explanation": "Symbiosis is two different kinds of living thing living together; here the algae make sugars that feed the coral animal, and the algae get a protected sunlit spot inside it plus raw materials like ammonia."
+    },
+    {
+      "question": "Sea cucumbers excrete carbonate ions, which \"reduce local acidity.\" Why would less acidic water help a coral?",
+      "options": [
+        "Acidic water makes coral lose its color",
+        "Coral skeletons are chalky calcium carbonate, which acidic water dissolves more easily",
+        "Acidic water drives away the fish that clean the reef",
+        "Carbonate ions are the coral animal's main food"
+      ],
+      "answerIndex": 1,
+      "explanation": "Coral builds its skeleton out of calcium carbonate — the same chalky material as an eggshell — so more acidic seawater makes that skeleton harder to build and easier to dissolve."
+    }
+  ]
+}
