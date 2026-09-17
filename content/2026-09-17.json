@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-17",
+  "title": "The right way to learn from Genghis Khan",
+  "articleUrl": "https://www.economist.com/culture/2026/09/17/the-right-way-to-learn-from-genghis-khan",
+  "articlePageUrl": "/articles/2026-09-17.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "apocryphal",
+      "partOfSpeech": "adjective",
+      "pronunciation": "uh-POK-rih-fuhl",
+      "articleQuote": "Alas, bar the odd (and possibly apocryphal) quote about the joy of making widows weep, the mighty Mongol’s insights are lost.",
+      "meaning": "An apocryphal story is one that gets told and retold as fact even though it probably never happened — widely believed, never verified. The word comes from the Apocrypha, a set of books left out of the official Bible because their authenticity was doubted, and it now covers everything from a famous quote nobody can trace to the tale that Einstein failed maths. Here it is doing careful work in a single word: the grisly Genghis line still turns up in leadership talks, and the writer repeats it while quietly warning that it may never have come out of his mouth.",
+      "examples": [
+        "Every school has an apocryphal story about someone who got into a top college with a one-word essay — everyone swears it is true, nobody can name the student.",
+        "The claim that goldfish have three-second memories is apocryphal; it was repeated so often that people stopped checking it."
+      ]
+    },
+    {
+      "word": "ascribe",
+      "partOfSpeech": "verb",
+      "pronunciation": "uh-SKRYBE",
+      "articleQuote": "Genghis would have ascribed his success to courage, horsemanship and strategic genius.",
+      "meaning": "To **ascribe** a result to something is to name it as the cause — to assign the credit, or the blame, to a particular source. It usually carries a hint that this is a judgement rather than a settled fact, which is why art historians ascribe an unsigned painting to a particular artist and why you can ascribe a bad grade to a bad night's sleep. The whole argument of this article lives inside that word: Genghis would have ascribed his conquests to his own courage and horsemanship, while Jared Diamond ascribes them largely to twenty unusually rainy years on the Mongolian steppe.",
+      "examples": [
+        "She ascribed her science-fair win to luck, though she had rebuilt the experiment four times before it worked.",
+        "Coaches often ascribe a losing season to a bad attitude when the real cause is that three starters were injured in October."
+      ]
+    },
+    {
+      "word": "belligerent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "buh-LIJ-uh-rent",
+      "articleQuote": "Many voters like their leaders tribal, belligerent and scornful of expertise; hence the recent surge of populist nationalism.",
+      "meaning": "Belligerent means spoiling for a fight: aggressive, hostile, looking for the argument instead of a way around it. It comes from the Latin for *waging war*, and in its strict legal sense a belligerent is a country actually at war — which is why news reports call the two sides in a conflict \"the belligerents\" — but in everyday use it has slid down from nations to describe a single person's manner. The article uses the everyday sense to land an uncomfortable point: plenty of voters *want* a leader who picks fights, even though refusing to pick fights with his neighbours is one of the things that made Seretse Khama work.",
+      "examples": [
+        "He turned belligerent the moment the referee's call went against him, and was off the field two minutes later.",
+        "There is a difference between defending your argument well and just being belligerent about it in the group chat."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Natural experiments",
+      "articleQuote": "But you can devise natural experiments, such as observing what happens when leaders die of natural causes.",
+      "meaning": "You want to know whether the person in charge actually matters. The clean way to find out would be to run America twice — once with Donald Trump, once with Kamala Harris — and compare the results. Obviously you cannot. That is the permanent frustration of the social sciences: the experiment you want is the one nobody will let you run.\n\nThe workaround that economists, political scientists and epidemiologists use is called a **natural experiment**. You go hunting for a moment when the world, by accident, did the sorting for you — when who got the \"treatment\" and who did not was settled by something unconnected to the thing you are studying. Here the accident is death. A leader having a fatal heart attack has nothing to do with whether the economy was about to boom or slump; it is about as close to a coin flip as history offers. So you line up the 183 heads of government who died or were forced out between 1875 and 2004, measure growth before and after each one, and whatever pattern shows up is hard to explain away.\n\nThe pattern was subtle and worth sitting with. *Average* growth after a leader died was no different from normal — but the **spread** blew wide open: growth became far more likely to swing sharply up or sharply down. That is exactly the fingerprint you would expect if the individual really does matter. When a hopeless leader dies, things get better; when a capable one dies, things get worse; average those two together and they cancel out, which is why the average alone would have told you the opposite of the truth.\n\nThe catch is that the accident has to be genuinely unrelated to what you are measuring — if leaders tended to die *because* of economic crises, the whole method collapses. So whenever you meet a study claiming that X causes Y out in the real world, ask what did the sorting, and whether that same something could have produced Y all on its own."
+    },
+    {
+      "name": "Mineral rights",
+      "articleQuote": "Khama kept the peace by assigning mineral rights to the state, rather than the tribe (his own) under whose land the gems were found.",
+      "meaning": "At independence in 1966 Botswana had seven miles of paved road and 22 university graduates. Then it struck diamonds under one tribe's land — and across post-colonial Africa, that sentence usually ends in a war. It did not, because of a distinction in property law that most people never think about.\n\nOwning the **surface** of a piece of land and owning the **minerals underneath it** are two separate rights, and they can sit with two different owners. Buy a house in Texas and you may own the dirt, the lawn and the building while an oil company owns everything below your feet — the right to drill and the right to the money that comes up. That split is what \"mineral rights\" means, and every country settles it differently. In most of the world, Britain and nearly all of Africa included, the valuable material underground belongs to the state by default; across much of the United States it belongs to whoever owns the surface, which is why an American farmer can sign a drilling lease and collect royalty cheques and a Nigerian villager cannot.\n\nSeretse Khama was in the rare position of getting to choose. The diamonds lay under the land of his own tribe, so he could have made his own people — and himself — extraordinarily rich and called it fair. He handed the rights to the state instead. That did two things at once: the diamond money paid for roads and schools for the whole country, and no group had a prize sitting under its feet worth fighting anyone else for.\n\nKeep this in your pocket for every story about oil, lithium, gold or deep-sea mining. The fight is almost never about who found the stuff. It is about who was already legally entitled to whatever lies underneath."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to Jared Diamond, what gave Genghis Khan a crucial advantage that had nothing to do with his own qualities?",
+      "options": [
+        "An unusually wet stretch of years on the Mongolian steppe, which meant more grass, more sheep's milk and more spare horses",
+        "A written code of leadership tips handed down by earlier Mongol warlords",
+        "Early access to gunpowder weapons that his rivals did not have",
+        "A collapse of government in China that left the whole region undefended"
+      ],
+      "answerIndex": 0,
+      "explanation": "Tree rings on the steppe show that the years of his rise were unusually rainy — more rain fed more grass, which fed more animals, which fed and carried his army."
+    },
+    {
+      "question": "The study of 183 heads of government who died or were forced out between 1875 and 2004 found that average growth afterwards was about the same as when no leader died. Why did the researchers still conclude that leaders matter?",
+      "options": [
+        "Because every case in the study moved in the same direction",
+        "Because the effect showed up only in democracies, where leaders are most closely watched",
+        "Because the average hid a much wider spread — growth became far more likely to swing sharply up or sharply down",
+        "Because the leaders who died had all been in office for more than a decade"
+      ],
+      "answerIndex": 2,
+      "explanation": "The average barely moved but the variance widened: an incompetent leader's death pushed growth up and a capable one's pushed it down, and those two cancel each other out in an average."
+    },
+    {
+      "question": "The article calls the famous Genghis quote about making widows weep \"possibly apocryphal\". What does that mean?",
+      "options": [
+        "It is too violent to be printed in full",
+        "It is widely repeated but probably not authentic",
+        "It was translated badly from the original Mongolian",
+        "He really said it, but he meant it as a joke"
+      ],
+      "answerIndex": 1,
+      "explanation": "Apocryphal describes a story or saying that circulates as fact even though its authenticity is doubtful."
+    },
+    {
+      "question": "\"Genghis would have ascribed his success to courage, horsemanship and strategic genius.\" Which replacement for \"ascribed\" keeps the meaning closest?",
+      "options": [
+        "compared his success with",
+        "described his success as",
+        "sacrificed his success for",
+        "credited his success to"
+      ],
+      "answerIndex": 3,
+      "explanation": "To ascribe a result to something is to name it as the cause — to give it the credit, or the blame, for the outcome."
+    },
+    {
+      "question": "Why did it matter so much that Seretse Khama assigned Botswana's mineral rights to the state rather than to the tribe whose land held the diamonds?",
+      "options": [
+        "It let Botswana avoid paying royalties to the mining companies that found the gems",
+        "It was a condition Britain imposed when Botswana became independent in 1966",
+        "It removed any group's reason to fight over the ground, and sent the diamond money to the whole country",
+        "It allowed South Africa to buy a share of the mines in return for protection"
+      ],
+      "answerIndex": 2,
+      "explanation": "The diamonds sat under his own tribe's land, so giving the rights to the state meant no group had a prize to fight for and the revenue funded roads and schools nationwide."
+    }
+  ]
+}
