@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-18",
+  "title": "Why children become fussy eaters",
+  "articleUrl": "https://www.economist.com/culture/2026/04/09/why-children-become-fussy-eaters",
+  "articlePageUrl": "/articles/junior/2026-09-18.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "finicky",
+      "partOfSpeech": "adjective",
+      "pronunciation": "FIN-ih-kee",
+      "articleQuote": "suggestions for fighting finicky eating at home, such as feeding the whole family the same meal",
+      "meaning": "Someone finicky is very fussy about small details and hard to please — they want a thing a particular way and turn down anything that is not quite right. You can be finicky about food, about handwriting, even about how your desk is arranged. In the article it describes children who reject most of what is put in front of them, which is why Helen Zoe Veit called her book *Picky*.",
+      "examples": [
+        "Maya is finicky about her sandwiches: crusts off, no butter, and the cheese has to sit on top of the ham.",
+        "Our cat is so finicky that she sniffs a new food twice and then walks away from the bowl."
+      ]
+    },
+    {
+      "word": "boundless",
+      "partOfSpeech": "adjective",
+      "pronunciation": "BOWND-lus",
+      "articleQuote": "Youngsters had wild, boundless appetites.",
+      "meaning": "Boundless means having no limit — no boundary where the thing stops. It gets used for anything that seems to go on and on: boundless energy, boundless curiosity, a boundless ocean. In the article, children before the 20th century had boundless appetites, meaning they would eat almost anything put in front of them and then ask for seconds.",
+      "examples": [
+        "After sitting through three classes, the second-graders hit the playground with boundless energy.",
+        "My little brother has boundless questions about space, and almost none of them have easy answers."
+      ]
+    },
+    {
+      "word": "culprit",
+      "partOfSpeech": "noun",
+      "pronunciation": "KUL-prit",
+      "articleQuote": "The rise of snacking (resulting in a lack of hunger) is one of the modern culprits for children’s finicky eating habits at the dinner table",
+      "meaning": "A culprit is whoever — or whatever — is to blame for a problem. The word started out meaning a person accused of a crime, and it still works that way in a mystery story, but people use it just as often for the *thing* causing the trouble. In the article, snacking is named as one of the culprits behind fussy eating: children who nibble all afternoon reach dinner with no hunger left.",
+      "examples": [
+        "The team hunted for the culprit behind the puddle in the backpack and found a cracked water-bottle lid.",
+        "My phone kept dying before lunchtime, and the culprit turned out to be a game still running in the background."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Federal agency",
+      "articleQuote": "The expert at the federal agency wholly dismissed that idea and suggested she take him to a doctor.",
+      "meaning": "In 1915 a mother in Maine could not get her son to eat, so she wrote a letter about it — to the government. Not to a neighbour, not to a magazine. To the United States Children's Bureau in Washington, DC. And somebody there wrote back.\n\nThat only sounds odd until you know what a **federal agency** is, a term from civics, the study of how a government is put together. *Federal* means the national government, the one covering all the states at once, rather than your town or your state. That government is far too big to run out of a single office, so it is split into departments, and departments are split into smaller offices called **agencies**. Each agency is handed one job and staffed with people who spend their whole careers on it. The Children's Bureau, set up in 1912, was given the job of studying children's health and answering parents' questions about it.\n\nYour school is built the same way, just smaller. A scraped knee goes to the nurse's office, a lost jacket to the front office, a question about a book to the librarian. Nobody expects the principal to handle all three, because splitting the work is what puts the know-how in the right room. A country does exactly that, with thousands of people per office instead of one. It is why the agencies you have heard of each stay in one lane: NASA flies spacecraft, the Food and Drug Administration checks whether medicines and foods are safe, the Centers for Disease Control and Prevention tracks illnesses.\n\nThere is a second lesson hiding in this story. The Bureau's expert told that mother her son could not simply dislike foods, so it must be stomach trouble — and that was wrong. When you read that \"the agency said\" something, it means an office of experts speaking for the government. That is worth a great deal more than one stranger's guess, and it is still not the same thing as being right."
+    },
+    {
+      "name": "Targeted advertising",
+      "articleQuote": "Advertisers began targeting children directly for the first time.",
+      "meaning": "In 1953 an advertising executive at Kellogg's, the cereal company, said something that ought to sound strange: \"In the old days children ate what their mothers bought; now the kids tell their mothers what to buy.\" Children had no jobs and no money. Why would a company spend a single cent on them?\n\nBecause in advertising — the business of paying to get a product noticed — the person an ad aims at does not have to be the person who pays. Every ad costs money, so whoever buys it picks exactly who should see it and where. That picking is the **targeting**, and the group picked is the *target*. Once companies decided children were worth targeting, the ads moved to wherever children already were: cartoons on Saturday mornings, comic books, the back of the cereal box.\n\nWalk down a supermarket cereal aisle and the same thing is still set up in front of you. The sugary cereals sit on the low shelves, at the eye level of a six-year-old, with a cartoon character printed on the front drawn facing slightly downward — toward a child's face rather than a grown-up's. The plain adult cereals are shelved higher. None of that is an accident; shelf position is arranged in advance, and companies pay for the good spots. The child spots the box, the child asks, and an adult with a wallet reaches for it. The persuading worked through somebody who could not buy anything.\n\nThe article sets this beside the other big change of the same years: by the mid-1960s the average American supermarket stocked 7,000 items, ten times as many as in the 1920s. More products meant more competition for attention, and children turned out to be a route to the money. So when an ad seems aimed squarely at you, two questions are always worth asking: who paid to put this here, and what do they want me to do next?"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "In 1915 a worried mother from Maine wrote to the United States Children's Bureau about her son. What was the Children's Bureau?",
+      "options": [
+        "A private company that made baby food",
+        "An office of the national government given one job — children's health",
+        "A hospital in Maine that treated stomach trouble",
+        "A club of mothers who wrote parenting books"
+      ],
+      "answerIndex": 1,
+      "explanation": "It was a federal agency: a small office of the national government handed one job and staffed by experts. Its expert dismissed the idea that a child could simply dislike foods and told her it must be stomach trouble."
+    },
+    {
+      "question": "The article calls the rise of snacking \"one of the modern culprits\" for fussy eating. Why does snacking matter?",
+      "options": [
+        "Snack foods contain chemicals that change how other food tastes",
+        "Children who eat between meals reach the table without much hunger",
+        "Snacking means children eat alone instead of with the family",
+        "Snacks cost more than meals, so less money is left for dinner"
+      ],
+      "answerIndex": 1,
+      "explanation": "A culprit is whoever or whatever is to blame. Children once ate only at meals and so worked up an appetite; nibbling all day removes the hunger that makes almost any dinner look good."
+    },
+    {
+      "question": "The article says children before the 20th century had \"wild, boundless appetites.\" What does boundless mean?",
+      "options": [
+        "Unhealthy",
+        "Having no limit",
+        "Changing from day to day",
+        "Carefully controlled"
+      ],
+      "answerIndex": 1,
+      "explanation": "Boundless means there is no boundary where the thing stops — an appetite with no end to it, which is how Mark Twain could remember childhood meals of \"venison just killed\" and butter beans so fondly."
+    },
+    {
+      "question": "What does Veit's book suggest parents do about finicky eating at home?",
+      "options": [
+        "Let each child pick their own separate meal",
+        "Feed the whole family the same meal, and offer a rejected food again and again",
+        "Ban snacks and sweets from the house completely",
+        "Send children to eat dinner with other families"
+      ],
+      "answerIndex": 1,
+      "explanation": "Someone finicky is very fussy and hard to please. Veit's suggestions include feeding the whole family the same meal and continuing to introduce a food repeatedly even after a child has rejected it."
+    },
+    {
+      "question": "A Kellogg's advertising executive said in 1953: \"In the old days children ate what their mothers bought; now the kids tell their mothers what to buy.\" What change was he describing?",
+      "options": [
+        "Children had started earning their own pocket money",
+        "Mothers had stopped doing the family shopping",
+        "Advertisers had begun aiming ads at children, who then asked their parents to buy",
+        "Supermarkets had begun stocking far fewer kinds of cereal"
+      ],
+      "answerIndex": 2,
+      "explanation": "This is targeted advertising: the person an ad aims at need not be the person who pays. Advertisers began targeting children directly for the first time, and the children did the persuading at home."
+    }
+  ]
+}
