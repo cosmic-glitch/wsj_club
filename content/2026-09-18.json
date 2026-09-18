@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-18",
+  "title": "Artificial intelligence now beats some of the best human forecasters",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/16/artificial-intelligence-now-beats-some-of-the-best-human-forecasters",
+  "articlePageUrl": "/articles/2026-09-18.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "parity",
+      "partOfSpeech": "noun",
+      "pronunciation": "PAIR-ih-tee",
+      "articleQuote": "AI systems have now reached parity with the superforecasters on an evolving set of forecasting questions.",
+      "meaning": "Parity is the state of being equal — same level, same standing, neither side ahead. It is the word you reach for at the moment a gap closes, which is exactly why the article uses it: on the Forecasting Research Institute's set of questions, AI systems are no longer *trailing* the very best human forecasters, they are level with them. Notice how precise that is, and how easy it would be to overstate — parity is not superiority. The machines caught up; the article is careful not to say they pulled ahead.",
+      "examples": [
+        "After three seasons of losing to the varsity team, the junior squad finally reached parity with them in the spring scrimmage.",
+        "She argued that the girls' teams deserved parity with the boys' in practice slots and travel money, not a share left over at the end."
+      ]
+    },
+    {
+      "word": "esoteric",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ess-uh-TERR-ik",
+      "articleQuote": "Mantic, a British startup, gives its AI esoteric datasets to which the publicly available AI models made by companies such as OpenAI and Anthropic do not have easy access, because they are behind paywalls.",
+      "meaning": "Something esoteric is understood by, or available to, only a small circle with special knowledge — specialist, obscure, inside-baseball. In the article it describes data rather than ideas: the numbers Mantic feeds its bot are locked behind paywalls, so the chatbots everyone else can use have never seen them. That is the whole edge being described. When every competitor is reading the same public internet, the advantage moves to whoever holds the esoteric stuff.",
+      "examples": [
+        "His taste in music is so esoteric that nobody at the lunch table has heard of a single band on his playlist.",
+        "The rules about substituting a player during overtime are esoteric enough that even some coaches get them wrong."
+      ]
+    },
+    {
+      "word": "charlatan",
+      "partOfSpeech": "noun",
+      "pronunciation": "SHAR-luh-tun",
+      "articleQuote": "The modern business of forecasting, however, has numbers attached to it, making it easier to weed out the charlatans and no-hopers.",
+      "meaning": "A charlatan is someone who falsely claims skill, knowledge or special powers in order to impress people or take their money — a fraud wearing an expert's costume. The word carries a whiff of the fairground and the fortune-teller, which is why it lands so well here, right after the article's parade of astrologers and racing tipsters. The point being made is about accountability: once a prediction gets a number and a score, a charlatan's record can be checked and found wanting, whereas vague prophecies never can be.",
+      "examples": [
+        "The memory coach who guaranteed straight As for $300 a session turned out to be a charlatan with no training at all.",
+        "Online, anyone can look like a stock-picking genius for a month; a public track record is what separates the real analysts from the charlatans."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Forecast scoring",
+      "articleQuote": "The participants were scored on the distance of their prediction from the true answer.",
+      "meaning": "Anyone can say \"I think it'll rain tomorrow.\" Say it every day for a year and at the end nobody — including you — can tell whether you were any good. Hundreds of people entered the Metaculus Cup and came out ranked in order, so something must have solved that problem. The solution comes from statistics, and it is called a **scoring rule**.\n\nThe first move is to stop asking for a yes or a no and ask for a *number*. Not \"will it rain?\" but \"what's the chance of rain?\" — 70%, say. When tomorrow arrives, reality is either a 1 (it rained) or a 0 (it didn't), so now there is a gap you can measure: that is the \"distance of their prediction from the true answer\" in the quote. The most common rule, the **Brier score**, takes that gap and squares it. Say 70% and it rains: you were off by 0.30, squared is 0.09. Say 70% and it stays dry: off by 0.70, squared is 0.49. Low is good.\n\nThe squaring is the clever part, because it is what stops you gaming the system. Being wrong after claiming 90% costs you 0.81, more than three times what being wrong after a cautious 50% costs you (0.25) — so bluffing confidence at everything is punished hard. But hedging at 50% forever is no escape either: that scores a mediocre 0.25 every single time, rain or shine, and never beats anyone. The only way to score well is to say what you actually believe, as precisely as you actually believe it. (Metaculus adds a wrinkle the article names — points for being \"closest for longest\" — which rewards getting there early, not just being right at the end.)\n\nRun this over hundreds of questions and luck averages out, leaving skill behind. That is why numbers \"weed out the charlatans\": an astrologer's prediction is worded loosely enough to fit whatever happens, while a scored forecaster's record is a column of numbers anyone can add up. So whenever somebody tells you they called it, ask the two questions a scoring rule asks: what *else* did you call, and what number did you put on it beforehand?"
+    },
+    {
+      "name": "Chaos",
+      "articleQuote": "Weather forecasts, for example, become random about 15 days out because of the chaos inherent in the atmosphere.",
+      "meaning": "The article closes on a genuinely odd thought: as forecasters get better, they may end up proving how much of the future *cannot* be forecast at all. That only makes sense if there is a hard wall out there somewhere — and in mathematics and physics there is one, with a name. It is called **chaos**.\n\nChaos here does not mean randomness, and it does not mean disorder, which is the everyday sense of the word. A chaotic system obeys exact rules with no dice in them anywhere; what makes it chaotic is that it amplifies tiny differences. The atmosphere is the textbook case. To forecast it, you load a computer with today's temperature, pressure and wind from weather stations, balloons and satellites, and let the equations of fluid physics run forward. But no thermometer is exact, and there is no weather station over most of the Pacific, so the starting picture is off by a hair in a million places at once. In the atmosphere those hair-sized errors roughly double every day or two. A fraction of a degree wrong today is a whole degree wrong within the week; a storm that should sit off the coast is placed inland; and by around two weeks the forecast has drifted so far that it beats nothing — you would do just as well looking up what the weather is normally like there in September. That is the \"15 days\" in the quote: not a shortage of computing power, and not something a bigger model fixes, but a limit sitting inside the air itself.\n\nThe formal name for the mechanism is *sensitive dependence on initial conditions*, and the pop-culture version is the butterfly whose wings supposedly change the weather a continent away. The useful part travels well beyond weather. When a prediction gets steadily worse the further out it reaches, more data and a smarter model may not be the answer: in some systems the errors in any starting measurement grow until none of the original precision survives. So before asking who can forecast a thing best, it is worth asking how far out anyone can forecast it at all."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What happened at the seasonal Metaculus Cup that the article opens with?",
+      "options": [
+        "An AI won it for the first time, with other AIs taking second and fifth place",
+        "Human forecasters swept all five of the top places",
+        "An AI tied for first with a human superforecaster",
+        "The competition was cancelled after AI entrants were banned"
+      ],
+      "answerIndex": 0,
+      "explanation": "An AI won the Cup for the first time, and other AIs came second and fifth, leaving third and fourth to humans."
+    },
+    {
+      "question": "The article says modern forecasting \"has numbers attached to it, making it easier to weed out the charlatans and no-hopers.\" What do those numbers actually make possible?",
+      "options": [
+        "They let forecasters charge much higher fees for a prediction",
+        "Each prediction can be scored against what really happened, so a track record becomes measurable",
+        "They guarantee that predictions about far-off events will be accurate",
+        "They remove any need for a forecaster to explain their reasoning"
+      ],
+      "answerIndex": 1,
+      "explanation": "Scoring a prediction by its distance from the true answer turns a forecaster's record into something anyone can check — which a vaguely worded prophecy never is."
+    },
+    {
+      "question": "An analysis suggested AI systems had \"reached parity\" with the superforecasters. What does that mean?",
+      "options": [
+        "The AI systems had overtaken them by a wide margin",
+        "The AI systems had drawn level with them",
+        "The AI systems were being trained by them",
+        "The AI systems and the superforecasters were answering different questions"
+      ],
+      "answerIndex": 1,
+      "explanation": "Parity means equality — being at the same level, with neither side ahead; the article stops short of claiming the machines had pulled in front."
+    },
+    {
+      "question": "Why does the startup Mantic feed its AI esoteric datasets?",
+      "options": [
+        "Because esoteric data can be bought more cheaply in bulk",
+        "Because such specialist data sits behind paywalls, so widely available AI models cannot easily reach it",
+        "Because esoteric data is simpler for a language model to read",
+        "Because Metaculus requires entrants to use unusual sources"
+      ],
+      "answerIndex": 1,
+      "explanation": "Esoteric means available to only a specialist few, and Mantic's edge is precisely data that public models from firms like OpenAI and Anthropic have not seen."
+    },
+    {
+      "question": "According to the article's closing point, why do weather forecasts become random about 15 days out?",
+      "options": [
+        "Weather satellites only store about 15 days of data at a time",
+        "Chaos in the atmosphere magnifies tiny errors in the starting measurements until the forecast carries no information",
+        "Forecasters stop updating their models after two weeks",
+        "The atmosphere is truly random and follows no physical rules"
+      ],
+      "answerIndex": 1,
+      "explanation": "A chaotic system follows exact rules but amplifies minute measurement errors, so past roughly two weeks the forecast is no better than a guess from seasonal averages."
+    }
+  ]
+}

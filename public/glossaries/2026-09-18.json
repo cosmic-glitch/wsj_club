@@ -1,0 +1,541 @@
+[
+  {
+    "k": "parity",
+    "t": "parity",
+    "kind": "vocab",
+    "pron": "PAIR-ih-tee",
+    "forms": [
+      "parity"
+    ],
+    "text": "Parity is the state of being equal — same level, same standing, with neither side ahead. It is the word you reach for at the exact moment a gap closes, which is why it appears here: on the Forecasting Research Institute's questions, AI systems are no longer behind the best human forecasters, they are level with them. Note how careful that is — parity is not superiority.",
+    "audio": true
+  },
+  {
+    "k": "esoteric",
+    "t": "esoteric",
+    "kind": "vocab",
+    "pron": "ess-uh-TERR-ik",
+    "forms": [
+      "esoteric"
+    ],
+    "text": "Something esoteric is understood by, or available to, only a small circle with special knowledge — specialist, obscure, inside-baseball. Here it describes data rather than ideas: the datasets Mantic feeds its bot sit behind paywalls, so the chatbots everyone else can use have never seen them. When all your rivals are reading the same public internet, the advantage shifts to whoever holds the esoteric material.",
+    "audio": true
+  },
+  {
+    "k": "charlatans",
+    "t": "charlatan",
+    "kind": "vocab",
+    "pron": "SHAR-luh-tun",
+    "forms": [
+      "charlatans"
+    ],
+    "text": "A charlatan is someone who falsely claims skill, knowledge or special powers in order to impress people or take their money — a fraud in an expert's costume. The word carries a whiff of the fairground fortune-teller, which is why it lands right after the article's parade of astrologers and racing tipsters. The point is accountability: once predictions carry numbers and scores, a charlatan's record can be checked and found wanting.",
+    "audio": true
+  },
+  {
+    "k": "domain",
+    "t": "domain",
+    "kind": "word",
+    "forms": [
+      "domain",
+      "domains"
+    ],
+    "text": "A domain is an area of activity or knowledge — a field, a territory of expertise. Nothing to do with web addresses here: \"yet another domain of human intelligence\" means yet another kind of thinking, and later \"in that domain\" means in long-range forecasting specifically. Scientists use the word constantly to carve a subject into regions.",
+    "audio": true
+  },
+  {
+    "k": "fell-to",
+    "t": "fell to",
+    "kind": "phrase",
+    "forms": [
+      "fell to"
+    ],
+    "text": "When something \"falls to\" someone, it is captured or taken over by them — the language of a city falling to an army. Saying a domain of human intelligence \"fell to the artificial variety\" frames AI progress as a conquest, one field surrendering after another, which sets the article's tone in its very first line.",
+    "audio": true
+  },
+  {
+    "k": "proving-ground",
+    "t": "a proving ground",
+    "kind": "phrase",
+    "forms": [
+      "proving ground"
+    ],
+    "text": "A proving ground is a place where something is tested to see whether it really works — originally a stretch of land for trying out weapons or vehicles. Calling the Metaculus Cup a proving ground for forecasters means it is where claims of skill get tested against reality rather than just asserted.",
+    "audio": true
+  },
+  {
+    "k": "entrants",
+    "t": "entrants",
+    "kind": "word",
+    "forms": [
+      "entrants"
+    ],
+    "text": "Entrants are the people or teams who have entered a competition — the field of contestants. It is the formal word you meet in rules, results tables and race programmes, and it covers humans and bots alike here: hundreds of entrants submitted predictions to the Cup.",
+    "audio": true
+  },
+  {
+    "k": "resolved",
+    "t": "resolved",
+    "kind": "word",
+    "forms": [
+      "resolved"
+    ],
+    "text": "To resolve a question, in forecasting, is to settle it — the real answer becomes known, so every prediction can finally be marked right or wrong. This is not the New Year's-resolution sense of the word. Questions \"that would be resolved by September\" are ones whose outcomes would definitely be known by then, which is what makes them scoreable at all.",
+    "audio": true
+  },
+  {
+    "k": "data-centre",
+    "t": "data-centre development",
+    "kind": "name",
+    "forms": [
+      "data-centre"
+    ],
+    "text": "A data centre is a building packed with computer servers, power supplies and cooling equipment — the physical machinery behind anything you use online, and the place where AI models are actually trained and run. They swallow enormous amounts of electricity and water, which is exactly why a state or country might vote to restrict building more of them. (British spelling; Americans write \"data center\".)",
+    "audio": true
+  },
+  {
+    "k": "hantavirus",
+    "t": "hantavirus",
+    "kind": "name",
+    "forms": [
+      "hantavirus"
+    ],
+    "text": "Hantaviruses are a family of viruses carried mainly by rodents and passed to people through contact with their droppings or urine; the illnesses they cause can be severe. It appears here simply as an example of the oddly specific, checkable questions a forecasting competition asks — the kind of event with a clear yes-or-no answer by a fixed date.",
+    "audio": true
+  },
+  {
+    "k": "mv-hondius",
+    "t": "MV Hondius",
+    "kind": "name",
+    "forms": [
+      "MV Hondius"
+    ],
+    "text": "MV Hondius is a real ship — an expedition cruise vessel that sails polar waters; \"MV\" is the standard prefix for a motor vessel. The competition question asked whether a hantavirus outbreak would spread beyond the ship's passengers, which shows how narrowly forecasting questions are worded so that they cannot be argued about afterwards.",
+    "audio": true
+  },
+  {
+    "k": "brent-crude",
+    "t": "Brent crude",
+    "kind": "name",
+    "forms": [
+      "Brent crude"
+    ],
+    "text": "Brent crude is a particular grade of oil, originally from the North Sea, whose price is used worldwide as the benchmark for what oil costs. When a news report says \"oil rose to $80 a barrel\", it usually means Brent. Benchmarks like this exist so buyers, sellers and forecasters can all refer to one agreed number instead of arguing about whose oil is whose.",
+    "audio": true
+  },
+  {
+    "k": "in-proportion-to",
+    "t": "in proportion to",
+    "kind": "phrase",
+    "forms": [
+      "in proportion to"
+    ],
+    "text": "To share something in proportion to a measure is to divide it by shares that match that measure, rather than equally. The $5,000 was split in proportion to points, so a forecaster with twice the points collected twice the money. It is the standard phrase for any scaled split — pay in proportion to hours, or aid in proportion to population.",
+    "audio": true
+  },
+  {
+    "k": "prediction-market",
+    "t": "prediction market",
+    "kind": "name",
+    "forms": [
+      "prediction market"
+    ],
+    "text": "A prediction market is a marketplace where people buy and sell contracts that pay out only if some future event happens. Because everyone is risking real money on what they genuinely expect, the price settles into a crowd estimate of the odds: a contract trading near 70 cents means the crowd puts the chance at roughly 70%. Kalshi, named here, is one such market.",
+    "audio": true
+  },
+  {
+    "k": "kalshi",
+    "t": "Kalshi",
+    "kind": "name",
+    "forms": [
+      "Kalshi"
+    ],
+    "text": "Kalshi is an American prediction market, regulated as a financial exchange, where people trade contracts on whether specified events will occur. It matters to this story twice over: it is where FutureSearch's bot turned its forecasts into actual profits, and where one developer turned $35 into $1.94m — proof that a forecasting edge can be cashed in, not just scored.",
+    "audio": true
+  },
+  {
+    "k": "portfolio",
+    "t": "portfolio",
+    "kind": "word",
+    "forms": [
+      "portfolio"
+    ],
+    "text": "In finance a portfolio is the whole collection of investments someone holds, counted together as one pot of money — not an artist's folder of work. FutureSearch's \"$100,000 value of its portfolio\" is the total it had staked across many bets at the start, and the 6% rise is the growth of that pot as a whole rather than of any single bet.",
+    "audio": true
+  },
+  {
+    "k": "return",
+    "t": "return",
+    "kind": "word",
+    "forms": [
+      "return"
+    ],
+    "text": "A return, in money terms, is what an investment gains (or loses) relative to what was put in, usually stated as a percentage. Turning $35 into $1.94m is the \"sixth-best return in Kalshi's history\" not because of the size of the winnings but because of their size compared with the tiny stake. Keep the two apart: a big return can come from a small amount of money.",
+    "audio": true
+  },
+  {
+    "k": "chump-change",
+    "t": "chump change",
+    "kind": "phrase",
+    "forms": [
+      "chump change"
+    ],
+    "text": "Chump change is a slangy way of saying a trivial amount of money — the sort of sum that is beneath notice. A \"chump\" is a fool, so the phrase suggests money only a fool would get excited about. Calling a 6% gain on $100,000 chump change is a deliberate jolt, setting up the far wilder figure that follows.",
+    "audio": true
+  },
+  {
+    "k": "different-breed",
+    "t": "a different breed",
+    "kind": "phrase",
+    "forms": [
+      "a different breed"
+    ],
+    "text": "To call something a different breed is to say it is fundamentally a different kind of thing, not just a better version of the usual one — borrowed from breeds of animals. The article uses it to mark a real distinction: old forecasting computers were built for one narrow job, while these bots are general language models pointed at any question at all.",
+    "audio": true
+  },
+  {
+    "k": "llm",
+    "t": "large language models (LLMs)",
+    "kind": "name",
+    "forms": [
+      "large language models",
+      "LLMs",
+      "LLMs."
+    ],
+    "text": "A large language model is an AI system trained on enormous quantities of text to predict what words come next, which turns out to be enough to let it answer questions, summarise, and reason its way through a problem in ordinary language. LLMs are the technology behind ChatGPT and its rivals. The point being made is that these forecasting bots are built on general LLMs rather than on software trained specially for each question.",
+    "audio": true
+  },
+  {
+    "k": "underpin",
+    "t": "underpin",
+    "kind": "word",
+    "forms": [
+      "underpin"
+    ],
+    "text": "To underpin something is to support it from beneath — literally, to put new foundations under a building; figuratively, to be the thing everything else rests on. Saying LLMs \"underpin the rest of the AI boom\" means they are not one product among many but the foundation the whole boom is built on.",
+    "audio": true
+  },
+  {
+    "k": "explicitly",
+    "t": "explicitly",
+    "kind": "word",
+    "forms": [
+      "explicitly"
+    ],
+    "text": "To state something explicitly is to spell it out in the open, leaving nothing to be inferred; the opposite is implicitly. The claim here is a real advantage of these bots: they do not just hand over a number, they lay out the reasoning that produced it — and a decision-maker is far likelier to act on a forecast whose logic is on the table.",
+    "audio": true
+  },
+  {
+    "k": "trait",
+    "t": "trait",
+    "kind": "word",
+    "forms": [
+      "trait"
+    ],
+    "text": "A trait is a distinguishing quality or characteristic of a person or thing — the word biologists use for inherited features and psychologists use for stable parts of personality. Here it labels a property of the software: being able to explain its own reasoning is a useful trait in a forecaster, human or machine.",
+    "audio": true
+  },
+  {
+    "k": "soothsayers",
+    "t": "soothsayer",
+    "kind": "word",
+    "forms": [
+      "Soothsayers",
+      "soothsayer"
+    ],
+    "text": "A soothsayer is someone who claims to foretell the future — \"sooth\" is an old English word for truth, so a soothsayer is literally a truth-teller. It is a deliberately antique word, and putting it beside astrologers and racing tipsters sets up the article's contrast between prophecy that cannot be checked and forecasting that can.",
+    "audio": true
+  },
+  {
+    "k": "astrologers",
+    "t": "astrologers",
+    "kind": "word",
+    "forms": [
+      "astrologers"
+    ],
+    "text": "Astrologers claim to read the future, or a person's character, from the positions of the sun, moon, planets and stars at a given moment. Astrology is not a science — its predictions are typically too vague to be proved wrong — which is the whole reason it opens a paragraph about weeding out charlatans.",
+    "audio": true
+  },
+  {
+    "k": "tipsters",
+    "t": "racing tipsters",
+    "kind": "word",
+    "forms": [
+      "tipsters"
+    ],
+    "text": "A tipster is someone who sells tips — predictions about which horse, team or stock will win. The trade is old and mostly unaccountable: a tipster who is wrong simply talks about the times they were right. Grouping them with astrologers puts them squarely on the pre-modern, unscored side of the article's divide.",
+    "audio": true
+  },
+  {
+    "k": "weed-out",
+    "t": "weed out",
+    "kind": "phrase",
+    "forms": [
+      "weed out"
+    ],
+    "text": "To weed out is to remove the unwanted items from a group one by one, as a gardener pulls weeds from a bed. It always implies sorting rather than discarding wholesale — you are separating good from bad. Numbers weed out charlatans because a score exposes which forecasters actually perform and which merely sound convincing.",
+    "audio": true
+  },
+  {
+    "k": "no-hopers",
+    "t": "no-hopers",
+    "kind": "word",
+    "forms": [
+      "no-hopers"
+    ],
+    "text": "A no-hoper is someone with no realistic chance of succeeding — a British informal term, common in sport and politics. It sits one notch below charlatan in the insult: a charlatan is a fraud, a no-hoper is simply hopeless. Both, the article says, get exposed once predictions are scored.",
+    "audio": true
+  },
+  {
+    "k": "perspectives",
+    "t": "Perspectives on Psychological Science",
+    "kind": "name",
+    "forms": [
+      "Perspectives on Psychological Science"
+    ],
+    "text": "This is an academic journal — a periodical in which researchers publish findings after other experts in the field have reviewed the work, a process called peer review. Naming the journal, the year and the authors is how writers signal that a claim comes from checked research rather than opinion, and it lets a reader go and look the study up.",
+    "audio": true
+  },
+  {
+    "k": "discriminate",
+    "t": "discriminate",
+    "kind": "word",
+    "forms": [
+      "discriminate"
+    ],
+    "text": "Here discriminate carries its older, neutral meaning: to tell two things apart, to distinguish between them. That is quite different from the everyday sense of treating people unfairly. Superforecasters could \"discriminate between events that would and would not happen\" — that is, reliably sort the things that were going to happen from the things that were not.",
+    "audio": true
+  },
+  {
+    "k": "superforecasters",
+    "t": "superforecasters",
+    "kind": "name",
+    "forms": [
+      "superforecasters",
+      "superforecaster"
+    ],
+    "text": "Superforecasters are the small minority of people identified by forecasting research — notably work by Philip Tetlock and Barbara Mellers — who predict world events far more accurately than experts or the general public, and keep doing so. They are not psychics; they simply update on new evidence, think in probabilities and keep score. The fact that such a group exists is what makes \"an AI reached parity with them\" a meaningful claim.",
+    "audio": true
+  },
+  {
+    "k": "forecasting-research-institute",
+    "t": "the Forecasting Research Institute",
+    "kind": "name",
+    "forms": [
+      "Forecasting Research Institute"
+    ],
+    "text": "A research organisation that studies how well people and machines predict the future, and how to measure it fairly. Groups like this exist because forecasting quality is surprisingly hard to test: you need a fixed set of questions, clear resolution dates and a scoring rule agreed in advance, which is precisely what their analysis of AI systems provided.",
+    "audio": true
+  },
+  {
+    "k": "scale-up",
+    "t": "scale up",
+    "kind": "phrase",
+    "forms": [
+      "scale up"
+    ],
+    "text": "To scale something up is to make it much bigger while keeping the same basic design — more of the same, not something new. In AI it has a specific meaning: more training data, more parameters, more computing power. The article's point is that most of the recent improvement came from a few rich companies simply scaling up, rather than from clever new ideas.",
+    "audio": true
+  },
+  {
+    "k": "tinkerers",
+    "t": "tinkerers",
+    "kind": "word",
+    "forms": [
+      "tinkerers"
+    ],
+    "text": "A tinkerer is someone who fiddles with and modifies things out of curiosity, often outside a formal job — the garage-inventor tradition. Pairing startups with tinkerers is doing real work in this sentence: it foreshadows Jeffrey Liang, one person with 150 hours and a couple of thousand dollars, beating firms that had raised over $15m.",
+    "audio": true
+  },
+  {
+    "k": "pundits",
+    "t": "news pundits",
+    "kind": "word",
+    "forms": [
+      "pundits"
+    ],
+    "text": "A pundit is a commentator who offers opinions to the public as an expert — on television panels, in columns, on podcasts. The word came into English from Sanskrit, where a pandit was a learned scholar, and has picked up a faintly sceptical edge on the way. Preseen's idea is to score pundits' past predictions to work out which ones are actually worth listening to.",
+    "audio": true
+  },
+  {
+    "k": "track-records",
+    "t": "track record",
+    "kind": "phrase",
+    "forms": [
+      "track records"
+    ],
+    "text": "A track record is the documented history of how someone has actually performed in the past — from the record of a racehorse's runs. It is the standard phrase for judging by results rather than credentials or confidence, and it is the whole basis of the article: a scored track record is what separates a real forecaster from a soothsayer.",
+    "audio": true
+  },
+  {
+    "k": "snapshots",
+    "t": "snapshots",
+    "kind": "word",
+    "forms": [
+      "snapshots"
+    ],
+    "text": "A snapshot here is a saved copy of exactly what some data looked like at one moment in time — a technical use, not a photograph. Feeding a bot a snapshot of what was known on a past date, with nothing from after it, lets the owners test how the bot would have predicted an event whose answer they already know.",
+    "audio": true
+  },
+  {
+    "k": "bells-and-whistles",
+    "t": "bells and whistles",
+    "kind": "phrase",
+    "forms": [
+      "bells and whistles"
+    ],
+    "text": "Bells and whistles are extra features added on top of something that already works — from the decorative noisemakers on old fairground organs. The phrase usually hints that the extras may be less important than they look, which is exactly the doubt being raised: perhaps all those clever tricks are not what gives the AIs their edge.",
+    "audio": true
+  },
+  {
+    "k": "decisive",
+    "t": "decisive",
+    "kind": "word",
+    "forms": [
+      "decisive"
+    ],
+    "text": "A decisive factor is the one that actually settles the outcome — the thing that made the difference, as opposed to merely being present. (The same word also describes a person who makes up their mind quickly.) The question posed is whether the fancy multi-model tricks are decisive, or whether the plain power of a good LLM is doing most of the work.",
+    "audio": true
+  },
+  {
+    "k": "polymath",
+    "t": "polymath",
+    "kind": "word",
+    "forms": [
+      "polymath"
+    ],
+    "text": "A polymath is someone who has expert knowledge across many different fields — the Greek roots mean \"having learned much\". Leonardo da Vinci is the stock example. Describing Liang as a \"self-described\" polymath is a small piece of dryness on the writer's part: the label is his own, though beating four funded startups rather backs it up.",
+    "audio": true
+  },
+  {
+    "k": "reckoning",
+    "t": "by his reckoning",
+    "kind": "word",
+    "forms": [
+      "reckoning",
+      "reckons"
+    ],
+    "text": "To reckon is to calculate, estimate or judge, so \"by his reckoning\" means according to his own count — flagging that the number is his estimate rather than an audited fact. The verb turns up again when Yann Riviere \"reckons\" human judgment still has an edge: he judges it so. It is standard journalistic usage for attributing a figure or an opinion to a person.",
+    "audio": true
+  },
+  {
+    "k": "time-horizon",
+    "t": "time horizon",
+    "kind": "name",
+    "forms": [
+      "time horizon"
+    ],
+    "text": "A time horizon is how far into the future a plan, forecast or investment looks. It matters enormously for judging a forecaster: predicting four months ahead is a fundamentally different task from predicting five years ahead, and doing the first brilliantly proves little about the second. That gap is the article's main caution about the AI victory.",
+    "audio": true
+  },
+  {
+    "k": "clear-cut",
+    "t": "clear-cut",
+    "kind": "word",
+    "forms": [
+      "clear-cut"
+    ],
+    "text": "Clear-cut means sharply defined, with no blurred edges or room for argument — a clear-cut case, a clear-cut distinction. Saying the divide between humans and machines is not clear-cut sets up the point that follows: human forecasters already use AI as a research assistant, so the two sides are mixed together rather than facing off.",
+    "audio": true
+  },
+  {
+    "k": "rigorously",
+    "t": "rigorously",
+    "kind": "word",
+    "forms": [
+      "rigorously"
+    ],
+    "text": "To test something rigorously is to test it strictly and thoroughly, by demanding standards that leave no easy way to pass. In science it usually means enough cases, over enough time, with the rules fixed in advance. The admission here is honest: AI forecasters simply have not existed long enough for anyone to check their long-range skill rigorously.",
+    "audio": true
+  },
+  {
+    "k": "edge",
+    "t": "an edge",
+    "kind": "word",
+    "forms": [
+      "edge"
+    ],
+    "text": "An edge is a small advantage over rivals — the extra margin that makes you win more often than you lose. It is the standard word in competition, trading and sport, and it appears twice here, once for the AIs' advantage and once for the human judgment that may still outperform them over years. An edge need not be large; it only has to be real and repeatable.",
+    "audio": true
+  },
+  {
+    "k": "synthesise",
+    "t": "synthesise",
+    "kind": "word",
+    "forms": [
+      "synthesise"
+    ],
+    "text": "To synthesise is to combine many separate pieces into a single coherent whole — chemists synthesise a compound from its ingredients, and a student synthesises six sources into one essay. The forecast being described is exactly that: machines will be able to pull far more scattered inputs together into one prediction than any person could hold in mind at once. (British spelling; Americans write \"synthesize\".)",
+    "audio": true
+  },
+  {
+    "k": "hedge-funds",
+    "t": "hedge funds",
+    "kind": "name",
+    "forms": [
+      "hedge funds"
+    ],
+    "text": "A hedge fund is a private investment firm that manages money for wealthy clients and large institutions, using riskier and more elaborate strategies than an ordinary fund is allowed. They will pay heavily for any information edge, which is why they appear in the last stretch of the article as the customers likely to be charged the most for AI forecasts.",
+    "audio": true
+  },
+  {
+    "k": "paywalls",
+    "t": "paywalls",
+    "kind": "word",
+    "forms": [
+      "paywalls"
+    ],
+    "text": "A paywall is the barrier a website puts up so that only paying subscribers can read its content — the thing standing between you and most newspaper articles. It matters technically here as well as commercially: data behind a paywall is data the big public AI models were probably never trained on, which is precisely what makes it valuable to a smaller rival.",
+    "audio": true
+  },
+  {
+    "k": "inherent",
+    "t": "inherent",
+    "kind": "word",
+    "forms": [
+      "inherent"
+    ],
+    "text": "Something inherent is built into the nature of a thing rather than added to it or caused from outside — an inherent risk, an inherent contradiction. The chaos is \"inherent in the atmosphere\", meaning it is a property of how air behaves, not a flaw in our instruments or our computers. That single word is what makes the 15-day limit a real wall rather than a temporary one.",
+    "audio": true
+  },
+  {
+    "k": "chaos",
+    "t": "chaos",
+    "kind": "name",
+    "forms": [
+      "chaos"
+    ],
+    "text": "In mathematics and physics, chaos does not mean randomness or disorder. A chaotic system follows exact rules, but it magnifies tiny differences: an error of a hair's breadth in today's measurements grows until, after enough time, the prediction is worthless. The atmosphere is the classic case, which is why weather forecasts stop being useful around two weeks out no matter how big the computer.",
+    "audio": true
+  },
+  {
+    "k": "counterintuitively",
+    "t": "counterintuitively",
+    "kind": "word",
+    "forms": [
+      "counterintuitively"
+    ],
+    "text": "Counterintuitively signals that what follows runs against what you would naturally expect — intuition points one way, the truth another. The surprise being flagged is a good one: you would assume better forecasters mean a more knowable future, but if the machines keep improving and still hit a wall, they will have mapped out how much of the future can never be known.",
+    "audio": true
+  },
+  {
+    "k": "crystal-balls",
+    "t": "crystal balls",
+    "kind": "phrase",
+    "forms": [
+      "Crystal balls"
+    ],
+    "text": "A crystal ball is the glass sphere a fortune-teller peers into, and it has become shorthand for any claim to see the future — \"I don't have a crystal ball\" means nobody can know. The subtitle sets the old image against the new one, replacing the fairground prop with large language models.",
+    "audio": true
+  },
+  {
+    "k": "give-way-to",
+    "t": "give way to",
+    "kind": "phrase",
+    "forms": [
+      "give way to"
+    ],
+    "text": "To give way to something is to yield to it and be replaced by it — traffic gives way, and so do older methods when newer ones arrive. It is the standard phrase for one thing succeeding another, and here it compresses the whole article into three words: crystal balls out, LLMs in.",
+    "audio": true
+  }
+]
