@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-19",
+  "title": "Consuming extra vitamin D is less good than it sounds",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/18/consuming-extra-vitamin-d-is-less-good-than-it-sounds",
+  "articlePageUrl": "/articles/junior/2026-09-19.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "glum",
+      "partOfSpeech": "adjective",
+      "pronunciation": "GLUM",
+      "articleQuote": "a glum milestone, at least for people in the northern hemisphere",
+      "meaning": "Glum means quietly gloomy — low, flat, disappointed, with the spark gone out. A glum person is not shouting or crying; they have just gone quiet and dull. Here the writer calls the autumn equinox a glum milestone because, for everyone north of the equator, it marks the point where the dark half of the year takes over.",
+      "examples": [
+        "The whole team was glum on the bus home after losing the final on penalties.",
+        "A rainy Saturday with the power out puts everyone in the house in a glum mood."
+      ]
+    },
+    {
+      "word": "surge",
+      "partOfSpeech": "verb",
+      "pronunciation": "SURJ",
+      "articleQuote": "why colds surge in winter",
+      "meaning": "To surge is to rise suddenly and strongly, the way a wave swells up and rushes forward. It gets used for anything that jumps in a short stretch of time — crowds, prices, electricity, illnesses. In this article colds surge in winter: the number of people catching one shoots up as soon as the cold months arrive.",
+      "examples": [
+        "Ticket sales surged in the hour after the band announced a second show.",
+        "When the final bell rang, students surged out of the door all at once."
+      ]
+    },
+    {
+      "word": "influential",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-floo-EN-shul",
+      "articleQuote": "A series of influential studies in the 1980s found that deaths in America from several kinds of cancer were significantly more common in northern states than sunny southern ones",
+      "meaning": "Something influential has the power to change what other people think or do. Notice what it does not mean: correct. The 1980s studies in this article were influential because scientists took them seriously and spent the next thirty years chasing the idea — even though the big trials eventually showed the idea was wrong.",
+      "examples": [
+        "The most influential person in our group chat is whoever decides which game everybody downloads.",
+        "One influential review can keep a small restaurant full for a month."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The equinox",
+      "articleQuote": "The days are shortening and the nights lengthening; around the equinox they cross over, and the winter gloom begins in earnest.",
+      "meaning": "Twice a year, day and night come out almost exactly the same length everywhere on Earth. Astronomers call those two dates the **equinoxes**, and the name gives the idea away: *equi* means equal, *nox* means night. Equal night.\n\nHere is what is actually going on. Earth spins on an axis that leans about 23 degrees off upright, and that lean keeps pointing the same direction all year while the planet circles the Sun. So for half the year the northern half of the planet is tilted toward the Sun: days are long and the sunlight hits the ground close to straight-on. That is summer. For the other half it is tilted away: days are short and the light arrives at a low slant, spread thin across more ground. That is winter. The equinoxes are the two dates in between, when neither half is tilted toward the Sun and both get an even share of light.\n\nYou can check the whole thing yourself with no equipment. In late June you can still be outside playing at half past eight in the evening. By December the streetlights are on before dinner. If you wrote down the time the Sun set on the first of every month, the times would slide earlier and earlier through autumn, cross the halfway mark around September 23rd — the autumn equinox — and keep sliding until the shortest day in late December, when they turn around and start climbing back.\n\nSo \"the days are getting shorter\" is not a mood, it is geometry: your half of the planet is slowly turning away from the Sun. That is what sets up this article, because bare skin needs sunlight to make vitamin D, and after the equinox there is much less of it to go around."
+    },
+    {
+      "name": "Vitamins",
+      "articleQuote": "Doctors have known for a century that vitamin D is necessary for health: lack of it causes rickets, a disease in which the bones soften and deform.",
+      "meaning": "You have seen the word on cereal boxes and gummy bottles for years, but what actually *is* a vitamin? The field is **nutrition**, the study of what a body needs to take in from outside, and the word itself was built about a hundred years ago out of *vita*, the Latin word for life, plus the name of the kind of chemical the first one turned out to be.\n\nYour body is a chemical factory. Out of ordinary food it builds nearly everything it needs — muscle, blood, bone, the stuff that runs your brain. But there is a short list of chemicals it cannot build, or cannot build enough of, and those have to arrive ready-made from outside. Those are the vitamins. You need them in tiny amounts: a day's worth of some of them would not cover the head of a pin. Vitamin D is the odd one out of the list, because bare skin can build it when ultraviolet light from the Sun lands on it — which is why sunshine and vitamins end up in the same article.\n\nThe proof that a vitamin is necessary is what goes wrong when it is missing, and each one fails in its own particular way. Take vitamin D. Bones are hard because they are packed with calcium, and calcium comes from food — but it cannot cross from your gut into your blood on its own. Vitamin D is what makes that crossing possible. Take the vitamin away and a child can eat plenty of calcium and still take up very little of it, so the new bone being built is laid down soft. Soft bone bends under the weight of a body walking around on it, and the legs slowly bow outward. That is rickets.\n\nSo a vitamin is not fuel, and it is not medicine. It is a small necessary part your body cannot make for itself — which is also why piling on extra usually does nothing at all. A bike needs two wheels to work; a third wheel in the garage does not make it go faster."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Three big trials — VITAL in America, D-Health in Australia and ViDA in New Zealand — gave vitamin-D supplements to tens of thousands of people for years. What did they find?",
+      "options": [
+        "The supplements sharply cut deaths from cancer",
+        "The supplements worked, but only during winter",
+        "No detectable benefits at all",
+        "The supplements made broken bones more likely"
+      ],
+      "answerIndex": 2,
+      "explanation": "None of the three trials found any detectable benefit — not for cancer, heart health, falls, colds or bone fractures."
+    },
+    {
+      "question": "The article says colds \"surge\" in winter. What does surge mean here?",
+      "options": [
+        "Rise suddenly and sharply",
+        "Fade away slowly",
+        "Become harder to cure",
+        "Spread only among adults"
+      ],
+      "answerIndex": 0,
+      "explanation": "To surge is to swell up and rush forward like a wave — here, the number of colds shooting up once winter arrives."
+    },
+    {
+      "question": "The 1980s cancer studies are called \"influential.\" What does that tell you about them?",
+      "options": [
+        "They were kept secret for decades",
+        "They changed what other scientists thought and did",
+        "They proved their claim beyond any doubt",
+        "They were paid for by the government"
+      ],
+      "answerIndex": 1,
+      "explanation": "Influential means others followed your lead — not that you were right, and here the later trials showed the idea was wrong."
+    },
+    {
+      "question": "What happens at an equinox?",
+      "options": [
+        "Earth stops tilting for one day",
+        "Earth reaches its closest point to the Sun",
+        "Day and night are almost exactly the same length",
+        "The Sun rises in the opposite direction"
+      ],
+      "answerIndex": 2,
+      "explanation": "Equinox means \"equal night\": neither half of the planet is tilted toward the Sun, so day and night come out about even."
+    },
+    {
+      "question": "A shortage of vitamin D causes rickets, in which bones soften and bend. How does vitamin D help bones in the first place?",
+      "options": [
+        "It lets calcium from food cross out of the gut into the blood, and bones need calcium to stay hard",
+        "It is the main material that bones are built out of",
+        "It kills the germs that attack growing bone",
+        "It makes bones grow longer and faster"
+      ],
+      "answerIndex": 0,
+      "explanation": "Without vitamin D, calcium stays stuck in the gut, so new bone is laid down soft and bends under the body's weight."
+    }
+  ]
+}
