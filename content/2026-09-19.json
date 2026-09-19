@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-19",
+  "title": "The GDP-per-person slowdown threatens global living standards",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/09/17/the-gdp-per-person-slowdown-threatens-global-living-standards",
+  "articlePageUrl": "/articles/2026-09-19.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "euphoria",
+      "partOfSpeech": "noun",
+      "pronunciation": "yoo-FOR-ee-uh",
+      "articleQuote": "The euphoria of manufacturing-led catch-up growth has given way to weak domestic demand.",
+      "meaning": "Euphoria is an intense, sweeping feeling of happiness and confidence — the high that comes when everything seems to be going right. Writers on economics and markets reach for it constantly, and usually with a hint of warning: euphoria is a mood that has run ahead of the facts, the state of investors or of a whole country convinced the good times cannot stop. Here it names the feeling of China's boom years, when factories were making people richer so quickly that each decade being better than the last felt automatic. The article's point is that when the growth fades the mood goes with it, and people who no longer expect to get richer stop spending.",
+      "examples": [
+        "The euphoria after the buzzer-beater lasted about ten seconds, until the refs reviewed the tape and waved it off.",
+        "There was a week of euphoria when the new game dropped, and then everyone quietly went back to playing the old one."
+      ]
+    },
+    {
+      "word": "susceptible",
+      "partOfSpeech": "adjective",
+      "pronunciation": "suh-SEP-tuh-bul",
+      "articleQuote": "Only those in their 50s were more susceptible than 18- to 34-year-olds to this “nostalgic deprivation”.",
+      "meaning": "To be susceptible to something is to be easily affected by it — to have less than the usual protection against it. Medicine uses the word literally (susceptible to infection), and writing about how people think borrows it for being open to a mood, a rumour or an argument. In the article it is doing the second job, measuring who most readily falls into “nostalgic deprivation”, the sense that your generation got a worse deal than the one before it. The poll's answer was people in their 50s first, and 18- to 34-year-olds close behind. Note that it takes *to*: you are susceptible **to** the thing, never susceptible *of* it.",
+      "examples": [
+        "Running on four hours of sleep leaves you more susceptible to every cold going around school.",
+        "He is susceptible to hype, so he pre-orders games he ends up never playing."
+      ]
+    },
+    {
+      "word": "notwithstanding",
+      "partOfSpeech": "preposition",
+      "pronunciation": "not-with-STAN-ding",
+      "articleQuote": "In the previous decade the figure was 1.5%—the global financial crisis of 2007-09 and the near implosion of the euro zone in the next few years notwithstanding.",
+      "meaning": "Notwithstanding means *in spite of*: it points at an obstacle and tells you the obstacle did not stop what you have just been told. The reason it trips people up is where it sits. *Despite* always comes first (“despite the storm, we played”), but notwithstanding can come **after** the whole phrase it governs, so you read a long stretch of words and only at the very end learn how to take them. That is exactly what happens in this sentence: German incomes rose 1.5% a year in 2004-14 **even though** a global financial crisis and a near-collapse of the euro zone landed in those ten years — which makes the following decade's 0.6%, achieved with no disaster to blame, look worse rather than better.",
+      "examples": [
+        "A snapped string in the second round notwithstanding, she won the tournament.",
+        "Notwithstanding two missed buses and a dead phone, he got to the interview on time."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "GDP per person",
+      "articleQuote": "Over 730m are experiencing outright declines in economists’ favourite gauge of living standards.",
+      "meaning": "Russia's output and Russia's people are moving in opposite directions. The economy produces more than it used to, and yet the article reports that per-person gains there are less than half what they were — partly because there are fewer Russians each year. Reconciling those two facts is the whole job of the measure this article is built on.\n\nGDP — gross domestic product — is the total value of everything a country produces in a year: every haircut, every tonne of steel, every app subscription. That is the top of the fraction. Divide it by the number of people living in the country and you get **GDP per person**, the number macroeconomics uses as a rough stand-in for *how well off is the typical resident*, which is why the piece calls it economists' favourite gauge of living standards.\n\nThe trick is to watch both halves of the fraction, because they move independently. Canada's total output grew, but its population grew faster, so the per-person figure sagged — and, as the article notes, unemployment rose as new arrivals expanded the labour force faster than jobs appeared. Russia is the mirror image: a shrinking population means feeble output growth still gets divided among fewer people, so the per-person figure holds up better than the total would suggest. A country's economy and its typical resident can genuinely be having different decades.\n\nOne honest limit: it is an average, and an average says nothing about how the output is shared — a country where the gains all go to a few thousand people posts the same figure as one where everybody gained a little. But the habit is worth keeping for life: whenever someone tells you a country's economy grew, ask how fast its population grew."
+    },
+    {
+      "name": "Real income",
+      "articleQuote": "The average resident of these lucky locales saw their real income grow by 38% between 2014 and 2024.",
+      "meaning": "Say your pay rises 3% this year and the price of everything you buy rises 5%. The number on your payslip is bigger and you can afford less. Economists deal with this by splitting every money figure in two: the *nominal* figure, which is just the number, and the **real** figure, which is that number after inflation has been taken back out.\n\nIn economics *real* is a technical term, not a casual word for “actual” — it means measured in what the money will actually buy. Statistical agencies price a fixed basket of goods and services year after year, work out how much prices rose overall, and strip that increase out of the raw figure. What survives is the change in purchasing power. So the 38% the article reports for residents of the fortunate countries means they could genuinely buy about 38% more in 2024 than in 2014, not that the digits on their pay stubs grew by 38%.\n\nIt also explains why Germany's 0.6% a year reads as so bleak. If prices there climbed roughly 2% a year while real incomes crept up 0.6%, the cash figure on the average payslip grew about 2.6% a year — a raise that looks like progress every single year and almost entirely isn't.\n\nSo whenever you meet a claim about money across time — wages, GDP, the cost of college, the box-office record a film just “broke” — ask whether the figure is real or nominal. Until inflation is taken out, comparisons between years are close to meaningless."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article says of China that “the euphoria of manufacturing-led catch-up growth has given way to weak domestic demand”. What does that mean?",
+      "options": [
+        "Chinese factories have largely stopped producing goods",
+        "The confident mood of the boom years has faded, and households at home are spending less",
+        "China's population is now shrinking faster than Russia's",
+        "Chinese GDP per person fell outright between 2014 and 2024"
+      ],
+      "answerIndex": 1,
+      "explanation": "Euphoria is the runaway confidence of the boom years; it has been replaced by cautious households, which is what “weak domestic demand” describes. China's per-person GDP still grew in 2014-24 — just half as fast as before."
+    },
+    {
+      "question": "In the poll of 20,000 Europeans, which group was found most susceptible to “nostalgic deprivation” — the belief that their generation was economically disadvantaged?",
+      "options": [
+        "18- to 34-year-olds",
+        "People in their 50s",
+        "People over 70",
+        "Everyone was equally susceptible"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says only those in their 50s were more susceptible than 18- to 34-year-olds — so the 50s group came first and young adults second."
+    },
+    {
+      "question": "Russia's population is shrinking. Why does that matter for its GDP per person?",
+      "options": [
+        "Total output is divided among fewer people, so the per-person figure holds up better than total growth alone would suggest",
+        "A shrinking population automatically raises a country's total GDP",
+        "Population size has no bearing on GDP per person, which counts only output",
+        "Fewer people means each person is counted twice in the average"
+      ],
+      "answerIndex": 0,
+      "explanation": "GDP per person is total output divided by the number of people, so a smaller denominator lifts the result even when output itself is barely growing."
+    },
+    {
+      "question": "The article reports that the residents of faster-growing countries saw their real income grow by 38% between 2014 and 2024. What does “real” add here?",
+      "options": [
+        "The income came from full-time jobs rather than side work",
+        "The figure is before tax",
+        "Inflation has been taken out, so the 38% is a gain in what the money can actually buy",
+        "The income was received in cash rather than promised"
+      ],
+      "answerIndex": 2,
+      "explanation": "A real figure is adjusted for rising prices, so it measures purchasing power — a nominal 38% rise alongside 38% inflation would leave people no better off at all."
+    },
+    {
+      "question": "“In the previous decade the figure was 1.5% — the global financial crisis of 2007-09 and the near implosion of the euro zone in the next few years notwithstanding.” What is the writer saying?",
+      "options": [
+        "German incomes grew 1.5% a year because of the financial crisis",
+        "German incomes grew 1.5% a year in spite of the financial crisis and the euro-zone turmoil",
+        "The 1.5% figure leaves out the years affected by the crisis",
+        "The crisis stopped German incomes from growing at all"
+      ],
+      "answerIndex": 1,
+      "explanation": "Notwithstanding means “in spite of”, and here it follows the phrase it governs: the crises happened during that decade and incomes still rose 1.5% a year."
+    }
+  ]
+}

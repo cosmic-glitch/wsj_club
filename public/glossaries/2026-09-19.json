@@ -1,0 +1,622 @@
+[
+  {
+    "k": "euphoria",
+    "t": "euphoria",
+    "kind": "vocab",
+    "pron": "yoo-FOR-ee-uh",
+    "forms": [
+      "euphoria"
+    ],
+    "text": "Euphoria is an intense, sweeping feeling of happiness and confidence, the high that comes when everything seems to be going right. In writing about economies and markets it usually carries a warning, because euphoria is a mood that has run ahead of the facts. Here it names the feeling of China's boom years, when factory-led growth made people richer so fast that a better life each decade felt guaranteed.",
+    "audio": true
+  },
+  {
+    "k": "susceptible",
+    "t": "susceptible",
+    "kind": "vocab",
+    "pron": "suh-SEP-tuh-bul",
+    "forms": [
+      "susceptible"
+    ],
+    "text": "To be susceptible to something is to be easily affected by it, to have less than the usual protection against it. Medicine uses it literally, as in susceptible to infection, and writing about how people think borrows it for being open to a mood or an argument. In this poll it measures who most readily falls into nostalgic deprivation: people in their 50s most of all, and 18- to 34-year-olds next.",
+    "audio": true
+  },
+  {
+    "k": "notwithstanding",
+    "t": "notwithstanding",
+    "kind": "vocab",
+    "pron": "not-with-STAN-ding",
+    "forms": [
+      "notwithstanding"
+    ],
+    "text": "Notwithstanding means in spite of: it names an obstacle and tells you the obstacle did not stop what was just described. Unlike despite, it can come after the whole phrase it governs, so you read a long stretch of words and only at the end learn how to take them. That is what happens here, where it says German incomes still rose 1.5% a year even though a financial crisis and a near-collapse of the euro zone happened during that decade.",
+    "audio": true
+  },
+  {
+    "k": "belligerent",
+    "t": "belligerent",
+    "kind": "word",
+    "forms": [
+      "belligerent"
+    ],
+    "text": "Belligerent means aggressive and ready to fight, and in writing about countries it specifically means waging or willing to wage war. Calling Russia the world's most belligerent economic power is a compact way of saying it is the one currently at war, not just the one with a bad temper. The related noun, a belligerent, is any party actively fighting in a conflict.",
+    "audio": true
+  },
+  {
+    "k": "gdp-per-person",
+    "t": "GDP per person",
+    "kind": "name",
+    "forms": [
+      "GDP per person",
+      "GDP"
+    ],
+    "text": "GDP, or gross domestic product, is the total value of everything a country produces in a year. Divide it by the number of people living there and you get GDP per person, which economists use as a rough stand-in for how well off the typical resident is. The whole article turns on the difference between the two: a country's total output can rise while its GDP per person stalls, if the population grows faster than the economy does.",
+    "audio": true
+  },
+  {
+    "k": "gauge",
+    "t": "gauge",
+    "kind": "word",
+    "forms": [
+      "gauge"
+    ],
+    "text": "A gauge is an instrument or measure that tells you how much of something there is, like a fuel gauge, and as a verb it means to measure or judge. Economists use it loosely for any number they read as a sign of something bigger. Calling GDP per person economists' favourite gauge of living standards signals both that they lean on it and that it is only an indicator, not the thing itself.",
+    "audio": true
+  },
+  {
+    "k": "outright",
+    "t": "outright",
+    "kind": "word",
+    "forms": [
+      "outright"
+    ],
+    "text": "Outright means complete, total, with nothing held back: an outright lie, an outright win. Attached to a number it means the figure actually fell rather than merely grew more slowly. So over 730m people are seeing outright declines, meaning their GDP per person is lower than before, not just rising less briskly.",
+    "audio": true
+  },
+  {
+    "k": "lot",
+    "t": "lot",
+    "kind": "word",
+    "forms": [
+      "lot"
+    ],
+    "text": "Here lot is not a quantity or a parking space but a person's fortune or condition in life, as in to improve your lot or to cast your lot with someone. The improving lot of 1.5bn Indians means their circumstances, and especially their incomes, are getting better. It is a slightly formal, slightly old-fashioned use that turns up often in serious journalism.",
+    "audio": true
+  },
+  {
+    "k": "locales",
+    "t": "locales",
+    "kind": "word",
+    "forms": [
+      "locales"
+    ],
+    "text": "A locale is a place, especially one considered as the setting for something, and the word carries a faint air of travel writing. These lucky locales simply means these fortunate places, chosen over repeating the word countries. Do not confuse it with local, an adjective, or locality, which is more administrative.",
+    "audio": true
+  },
+  {
+    "k": "real-income",
+    "t": "real income",
+    "kind": "name",
+    "forms": [
+      "real income"
+    ],
+    "text": "In economics, real means adjusted for inflation, so real income is income measured by what it can actually buy rather than by the number printed on the payslip. The opposite is nominal income, the raw figure. A 38% rise in real income means people could genuinely buy about 38% more, which is why economists almost never compare money across years without stripping price rises out first.",
+    "audio": true
+  },
+  {
+    "k": "outperform",
+    "t": "outperform",
+    "kind": "word",
+    "forms": [
+      "outperform"
+    ],
+    "text": "To outperform is to do better than someone or something else by a given measure. It comes from finance, where a stock outperforms the market, and has spread to comparing economies, students and teams. Saying America continues to outperform the rest of the rich world means its growth keeps beating that of comparable countries.",
+    "audio": true
+  },
+  {
+    "k": "demography",
+    "t": "demography",
+    "kind": "word",
+    "forms": [
+      "demography"
+    ],
+    "text": "Demography is the study of populations: how many people there are, their ages, birth rates, deaths and migration. When the article says these countries' problems range from demography to economic mismanagement, it means some are in trouble because of who lives there, typically too few young workers and too many retired people. The adjective is demographic.",
+    "audio": true
+  },
+  {
+    "k": "dirt-poor",
+    "t": "dirt-poor",
+    "kind": "word",
+    "forms": [
+      "dirt-poor"
+    ],
+    "text": "Dirt-poor is a blunt, informal intensifier meaning extremely poor, poor in the way subsistence farming is poor. Placing rich Canada and the dirt-poor Democratic Republic of Congo in the same sentence is the point: the slowdown club has members at both ends of the wealth range. English has a family of these dirt compounds, including dirt cheap.",
+    "audio": true
+  },
+  {
+    "k": "stagnating",
+    "t": "stagnating",
+    "kind": "word",
+    "forms": [
+      "stagnating",
+      "stagnation"
+    ],
+    "text": "To stagnate is to stop moving or developing, from the Latin for standing water, which goes stale because nothing flows through it. A stagnating standard of living is one that is not getting better, even if it is not yet falling. It is one of the most common words in economic journalism, along with its noun, stagnation.",
+    "audio": true
+  },
+  {
+    "k": "undermines",
+    "t": "undermines",
+    "kind": "word",
+    "forms": [
+      "undermines"
+    ],
+    "text": "To undermine something is to weaken it gradually from below rather than attack it head-on, originally by digging a tunnel under a wall so it collapses. A stagnating standard of living undermines the assumption that each generation will be better off: the belief is not argued away, it just quietly stops holding up. The word almost always applies to something abstract, like confidence, authority or an argument.",
+    "audio": true
+  },
+  {
+    "k": "dictated",
+    "t": "dictated",
+    "kind": "word",
+    "forms": [
+      "dictated"
+    ],
+    "text": "Besides speaking words aloud for someone to write down, to dictate means to determine or control how something must be. The assumption which has dictated how people approach work and politics is the belief that has shaped and governed their choices. Watch for this sense in phrases like circumstances dictate and the schedule dictates.",
+    "audio": true
+  },
+  {
+    "k": "social-contract",
+    "t": "social contract",
+    "kind": "name",
+    "forms": [
+      "social contract"
+    ],
+    "text": "The social contract is a long-standing idea in political philosophy: the unwritten bargain between a society and its members about what each owes the other, such as obeying laws in exchange for order and opportunity. It is not a document anyone signs, which is why writers talk of rewriting it when expectations shift. Here the bargain being rewritten is the promise that hard work will leave you better off than your parents.",
+    "audio": true
+  },
+  {
+    "k": "coming-of-age",
+    "t": "coming of age",
+    "kind": "phrase",
+    "forms": [
+      "coming of age"
+    ],
+    "text": "To come of age is to reach adulthood, and by extension to arrive at the point where you matter or take your place. Young adults coming of age in the slowdown era are the ones becoming adults during it, so it is the only economy they have ever known. The phrase also names a whole genre of novels and films about growing up.",
+    "audio": true
+  },
+  {
+    "k": "let-alone",
+    "t": "let alone",
+    "kind": "phrase",
+    "forms": [
+      "let alone"
+    ],
+    "text": "Let alone introduces something even more extreme than what was just said, and tells you the second thing is more true, or more impossible, than the first. A stagnating standard of living, let alone a declining one, means stagnation already causes the damage and decline causes more. A useful test: whatever follows let alone is always the stronger case.",
+    "audio": true
+  },
+  {
+    "k": "productivity",
+    "t": "productivity",
+    "kind": "name",
+    "forms": [
+      "productivity"
+    ],
+    "text": "Productivity is how much gets produced per unit of work, usually output per hour worked. It is the main engine of rising living standards in the long run, because a country can only pay itself more if each hour of work creates more value. When the article blames low productivity growth for the rich world's slowdown, it means people are working but not producing much more than they did a decade ago.",
+    "audio": true
+  },
+  {
+    "k": "revitalise",
+    "t": "revitalise",
+    "kind": "word",
+    "forms": [
+      "revitalise"
+    ],
+    "text": "To revitalise something is to give it new life or energy, from vital, meaning living. Saying new arrivals may in time revitalise the economy means immigrants may eventually make it more dynamic, even if the immediate effect is small. American spelling uses revitalize; the Economist is British and keeps the s.",
+    "audio": true
+  },
+  {
+    "k": "hard-done-by",
+    "t": "hard done by",
+    "kind": "phrase",
+    "forms": [
+      "hard done by"
+    ],
+    "text": "To feel hard done by is to feel unfairly treated, that you got less than you deserved. It is a set British phrase and always describes the feeling rather than a proven injustice. That is exactly the point here: budgets spread thinly across a growing population leave individuals feeling hard done by, whatever the national statistics say.",
+    "audio": true
+  },
+  {
+    "k": "budged",
+    "t": "budged",
+    "kind": "word",
+    "forms": [
+      "budged"
+    ],
+    "text": "To budge is to move, even slightly, and it almost always appears in the negative: it would not budge, the price barely budged. German productivity barely budged means it stayed essentially flat for ten years. The negative habit makes it a handy way to report a number that refused to change.",
+    "audio": true
+  },
+  {
+    "k": "implosion",
+    "t": "implosion",
+    "kind": "word",
+    "forms": [
+      "implosion"
+    ],
+    "text": "An implosion is a collapse inward, the opposite of an explosion, as when a building is demolished so it falls into its own footprint. Applied to the euro zone it means a currency union coming apart under its own internal pressures rather than being wrecked from outside. Journalists reach for it whenever an institution nearly destroys itself.",
+    "audio": true
+  },
+  {
+    "k": "euro-zone",
+    "t": "euro zone",
+    "kind": "name",
+    "forms": [
+      "euro zone"
+    ],
+    "text": "The euro zone is the group of European Union countries that use the euro as their currency, currently about twenty of them, including Germany, France and Italy. Sharing one currency means sharing one central bank and one interest rate, which is why trouble in one member can threaten all of them. The near implosion refers to the debt crisis of roughly 2010 to 2012, when several members came close to being forced out.",
+    "audio": true
+  },
+  {
+    "k": "outpacing",
+    "t": "outpacing",
+    "kind": "word",
+    "forms": [
+      "outpacing"
+    ],
+    "text": "To outpace something is to grow or move faster than it does. In Canada, where population is outpacing GDP, the number of people is rising faster than the value of what the country produces, which is precisely how GDP per person falls while the economy still grows. Pace words like this one, outstrip and outrun are staples of economic writing.",
+    "audio": true
+  },
+  {
+    "k": "percentage-point",
+    "t": "percentage point",
+    "kind": "name",
+    "forms": [
+      "percentage point",
+      "percentage points"
+    ],
+    "text": "A percentage point is the plain arithmetic gap between two percentages, and it is deliberately different from a percent. Unemployment rising by nearly a percentage point means it went from something like 6.2% to 7.1%, not that it rose by 1% of its old value. Careful journalism always uses percentage points for this, because the two ways of reporting the same change can differ enormously.",
+    "audio": true
+  },
+  {
+    "k": "labour-force",
+    "t": "labour force",
+    "kind": "name",
+    "forms": [
+      "labour force"
+    ],
+    "text": "The labour force counts everyone who is either working or actively looking for work, and it excludes people who are retired, studying or not seeking a job. The unemployment rate is measured against it, not against the whole population. That is why new arrivals expanding the labour force can push unemployment up: more people are counted as job-seekers before all of them have found jobs.",
+    "audio": true
+  },
+  {
+    "k": "resource-rich",
+    "t": "resource-rich",
+    "kind": "word",
+    "forms": [
+      "resource-rich"
+    ],
+    "text": "A resource-rich country is one with a lot of natural resources to sell, such as oil, gas, copper or farmland. Their fortunes tend to rise and fall with world prices for those goods, which is a reason economists watch them as a group. The article's examples are Angola, with oil and diamonds, and the commodity exporters of Latin America.",
+    "audio": true
+  },
+  {
+    "k": "commodities",
+    "t": "commodities",
+    "kind": "name",
+    "forms": [
+      "commodities"
+    ],
+    "text": "Commodities are raw materials traded in bulk on world markets, such as oil, copper, wheat and soyabeans, where one producer's barrel or bushel is interchangeable with another's. Because buyers cannot tell them apart, sellers compete almost entirely on price, and those prices swing hard. The commodities boom that ended in 2014 was a long stretch of unusually high prices that made exporting countries rich and then stopped.",
+    "audio": true
+  },
+  {
+    "k": "export-led",
+    "t": "export-led",
+    "kind": "word",
+    "forms": [
+      "export-led"
+    ],
+    "text": "An export-led economy is one whose growth comes mainly from selling goods abroad rather than from its own consumers buying things at home. It is a well-worn development strategy, used by Japan, South Korea, China and, in this article, Uruguay and Chile. The weakness is built in: when foreign demand or world prices fall, the engine stalls.",
+    "audio": true
+  },
+  {
+    "k": "ground-to-a-halt",
+    "t": "ground to a halt",
+    "kind": "phrase",
+    "forms": [
+      "ground to a halt"
+    ],
+    "text": "To grind to a halt is to slow down gradually until you stop completely, the way machinery seizes up rather than a car braking. Income gains that have nearly ground to a halt were not cut off suddenly, they faded away over years. The image is of friction wearing something down, which is why it suits a slowdown rather than a crash.",
+    "audio": true
+  },
+  {
+    "k": "sahel",
+    "t": "the Sahel",
+    "kind": "name",
+    "forms": [
+      "Sahel"
+    ],
+    "text": "The Sahel is the wide band of semi-arid land across Africa just south of the Sahara, running from Senegal to Sudan and taking in Mali, Niger and Chad. It is one of the poorest and most unstable regions in the world, with droughts, coups and armed conflict. South of the Sahel therefore means much of sub-Saharan Africa.",
+    "audio": true
+  },
+  {
+    "k": "fortunes",
+    "t": "fortunes",
+    "kind": "word",
+    "forms": [
+      "fortunes"
+    ],
+    "text": "Fortunes here does not mean piles of money but how things are going for someone, their run of luck or success. The fortunes of a few populous emerging economies have deteriorated means those countries' situations have got worse. You meet the same sense in a team's fortunes revived and a reversal of fortune.",
+    "audio": true
+  },
+  {
+    "k": "populous",
+    "t": "populous",
+    "kind": "word",
+    "forms": [
+      "populous"
+    ],
+    "text": "Populous simply means having a lot of people, so a populous country is a heavily populated one. Keep it separate from popular, which is about being liked, and from populist, which is about a style of politics that sets ordinary people against elites. All three turn up in this article, and the first two look almost identical.",
+    "audio": true
+  },
+  {
+    "k": "emerging-economies",
+    "t": "emerging economies",
+    "kind": "name",
+    "forms": [
+      "emerging economies",
+      "developing"
+    ],
+    "text": "Emerging economies, or emerging markets, are middle-income countries that are industrialising and growing fast enough to be catching up with rich ones, such as India, Brazil and Indonesia. The label sits between developing and developed, and investors use it to group markets that promise higher growth with higher risk. Emerging is doing optimistic work here: it assumes the catching up continues, which is exactly what the article says has stopped for several of them.",
+    "audio": true
+  },
+  {
+    "k": "deteriorated",
+    "t": "deteriorated",
+    "kind": "word",
+    "forms": [
+      "deteriorated"
+    ],
+    "text": "To deteriorate is to get worse over time, usually gradually: health, weather, relations between countries, a building left empty. Fortunes that have deteriorated have declined without any single dramatic event. The noun is deterioration, and it is a standard formal alternative to worsened.",
+    "audio": true
+  },
+  {
+    "k": "brics",
+    "t": "the BRICs",
+    "kind": "name",
+    "forms": [
+      "BRICs"
+    ],
+    "text": "BRIC was an acronym coined in 2001 by a Goldman Sachs economist for Brazil, Russia, India and China, the four large developing economies then expected to dominate future growth. The label became real politics when their foreign ministers first met in 2006, and the grouping later added South Africa and others, becoming BRICS. The article's point is that of the original four, only India is still growing the way the acronym promised.",
+    "audio": true
+  },
+  {
+    "k": "catch-up-growth",
+    "t": "catch-up growth",
+    "kind": "name",
+    "forms": [
+      "catch-up growth",
+      "catching up"
+    ],
+    "text": "Catch-up growth is the fast growth a poorer country can manage simply by adopting machines, methods and technologies that richer countries already use, instead of inventing anything new. It is usually the easiest growth a country ever gets, which is why it tends to slow once the obvious gains are used up. China's manufacturing-led catch-up growth is the classic case, and India's is the one the article says is still running.",
+    "audio": true
+  },
+  {
+    "k": "domestic-demand",
+    "t": "domestic demand",
+    "kind": "name",
+    "forms": [
+      "domestic demand"
+    ],
+    "text": "Domestic demand is the spending done inside a country by its own households, businesses and government, as opposed to demand from foreign buyers. Weak domestic demand means people at home are saving rather than spending, often because they are nervous about the future. For an economy that has run out of catch-up growth, that home spending is what has to take over, so its weakness is the problem.",
+    "audio": true
+  },
+  {
+    "k": "denominator",
+    "t": "denominator",
+    "kind": "word",
+    "forms": [
+      "denominator"
+    ],
+    "text": "In a fraction, the denominator is the number you divide by, the bottom one, while the top one is the numerator. For GDP per person the denominator is the population. Russia having a declining denominator because of a shrinking population means its per-person figure gets divided among fewer people, which props the number up even when total output grows feebly.",
+    "audio": true
+  },
+  {
+    "k": "given-way-to",
+    "t": "given way to",
+    "kind": "phrase",
+    "forms": [
+      "given way to"
+    ],
+    "text": "To give way to something is to be replaced by it, yielding as one thing collapses and another takes its place. Euphoria that has given way to weak domestic demand means the confident mood ended and caution took over. The same phrase covers a bridge giving way, where the yielding is literal.",
+    "audio": true
+  },
+  {
+    "k": "profound",
+    "t": "profound",
+    "kind": "word",
+    "forms": [
+      "profound"
+    ],
+    "text": "Profound means deep, in the sense of far-reaching rather than physically deep: a profound change reaches the roots of a thing. Consequences that will be profound are ones that reshape how a society works, not just adjust a few numbers. It is also used of thought, where a profound remark is one with real depth to it.",
+    "audio": true
+  },
+  {
+    "k": "material",
+    "t": "material",
+    "kind": "word",
+    "forms": [
+      "material"
+    ],
+    "text": "As an adjective, material means to do with physical and economic wellbeing rather than with ideas or feelings: material progress is getting better fed, better housed and better paid. It is an entirely different sense from a material such as cotton or steel. In law and finance it has yet another meaning, significant enough to matter, as in a material fact.",
+    "audio": true
+  },
+  {
+    "k": "fostered",
+    "t": "fostered",
+    "kind": "word",
+    "forms": [
+      "fostered"
+    ],
+    "text": "To foster something is to encourage it to develop, to create the conditions in which it grows, as a foster family does for a child. Saying rising living standards fostered stable politics and meritocracy means growth made those things more likely, not that it guaranteed them. It is a favourite verb for effects that are real but indirect.",
+    "audio": true
+  },
+  {
+    "k": "meritocracy",
+    "t": "meritocracy",
+    "kind": "name",
+    "forms": [
+      "meritocracy"
+    ],
+    "text": "A meritocracy is a society where positions go to people according to their ability and effort rather than their birth, wealth or connections. The word was coined in 1958 by the British sociologist Michael Young, and pointedly so, as a satire warning that such a system would create its own arrogant elite. It matters here because the survey finding that only 28% of Chinese still believe hard work is always rewarded is a measure of how meritocratic people feel their society is.",
+    "audio": true
+  },
+  {
+    "k": "nostalgic-deprivation",
+    "t": "nostalgic deprivation",
+    "kind": "name",
+    "forms": [
+      "nostalgic deprivation",
+      "nostalgia"
+    ],
+    "text": "Nostalgic deprivation is a term from political science for the feeling that your group or generation has lost ground compared with a remembered better past. What makes it powerful is that it is about perceived loss rather than measured poverty, so people who are not poor can still feel it strongly. The research quoted here links it to a 55 percentage-point jump in the likelihood of voting for populists.",
+    "audio": true
+  },
+  {
+    "k": "consultancy",
+    "t": "consultancy",
+    "kind": "word",
+    "forms": [
+      "consultancy"
+    ],
+    "text": "A consultancy is a firm that companies and governments hire for expert advice, on strategy, costs or markets. Such firms run large surveys partly as research and partly as advertising for their expertise, which is why one appears here polling young Chinese. The American term is consulting firm, and an individual doing the work is a consultant.",
+    "audio": true
+  },
+  {
+    "k": "disengagement",
+    "t": "disengagement",
+    "kind": "word",
+    "forms": [
+      "disengagement"
+    ],
+    "text": "Disengagement is pulling back from involvement, withdrawing your effort and attention from something you were part of. Nostalgia leading to disengagement means people who feel cheated stop trying: they avoid government jobs, stop believing hard work pays, drop out of university. The opposite, engagement, is the word you meet in discussions of voting, school and work.",
+    "audio": true
+  },
+  {
+    "k": "repressive",
+    "t": "repressive",
+    "kind": "word",
+    "forms": [
+      "repressive"
+    ],
+    "text": "A repressive government is one that uses force, censorship and punishment to keep its people from organising or speaking freely. The root is repress, to hold down. The article uses it as a contrast: where a state is less repressive, discontent can show up openly as protest voting rather than being kept quiet.",
+    "audio": true
+  },
+  {
+    "k": "revanchist",
+    "t": "revanchist",
+    "kind": "word",
+    "forms": [
+      "revanchist"
+    ],
+    "text": "Revanchist comes from the French revanche, meaning revenge, and describes a country driven by the wish to win back territory or status it believes it lost. It entered English describing France's designs on Alsace-Lorraine after 1871 and is now a standard, pointed label for Russian foreign policy. Calling Russia revanchist is a compact way of saying its wars are about reclaiming a lost empire.",
+    "audio": true
+  },
+  {
+    "k": "apathy",
+    "t": "apathy",
+    "kind": "word",
+    "forms": [
+      "apathy"
+    ],
+    "text": "Apathy is a lack of interest or motivation, the state of not caring enough to act. Professional apathy among young people means they are not chasing careers or promotions, not that they are incapable. The adjective is apathetic, and the word is built from the Greek for without feeling, the same root as pathos and sympathy.",
+    "audio": true
+  },
+  {
+    "k": "in-the-throes-of",
+    "t": "in the throes of",
+    "kind": "phrase",
+    "forms": [
+      "in the throes of"
+    ],
+    "text": "Throes are violent pangs or struggles, and to be in the throes of something is to be in the middle of it while it is at its most intense. Western Europeans in the throes of nostalgic deprivation are gripped by it, not mildly bothered. The phrase is fixed, most often heard as in the throes of a crisis and in its grimmest form, death throes.",
+    "audio": true
+  },
+  {
+    "k": "ague",
+    "t": "ague",
+    "kind": "word",
+    "forms": [
+      "ague"
+    ],
+    "text": "An ague is an old word for a fever with fits of shivering, especially the recurring chills of malaria, and it rhymes roughly with plague you. Political ague is the writer borrowing that image for a body politic that shakes and swings feverishly. It is a deliberately archaic, literary touch rather than an everyday word.",
+    "audio": true
+  },
+  {
+    "k": "populists",
+    "t": "populists",
+    "kind": "name",
+    "forms": [
+      "populists"
+    ],
+    "text": "Populist politics frames the world as ordinary, virtuous people against a corrupt elite, and promises to hand power back to the people. It is a style rather than a programme, which is why populists can be found on both the left and the right. Researchers track votes for them as a measure of how many people feel the existing system has failed them.",
+    "audio": true
+  },
+  {
+    "k": "volatile",
+    "t": "volatile",
+    "kind": "word",
+    "forms": [
+      "volatile"
+    ],
+    "text": "Volatile means liable to change quickly and unpredictably, and often violently. It comes from chemistry, where a volatile liquid evaporates readily, and has spread to markets, moods and politics. Volatile politics here means voters swinging sharply from one side to the other rather than moving gradually.",
+    "audio": true
+  },
+  {
+    "k": "incumbents",
+    "t": "incumbents",
+    "kind": "word",
+    "forms": [
+      "incumbents"
+    ],
+    "text": "An incumbent is whoever currently holds a job or office, most often a politician standing for re-election. Voters blaming incumbents for things getting worse means they punish whoever happens to be in power, regardless of who caused the problem. Business writers use the same word for the established firms a newcomer is attacking.",
+    "audio": true
+  },
+  {
+    "k": "vicious-cycle",
+    "t": "vicious cycle",
+    "kind": "phrase",
+    "forms": [
+      "vicious cycle"
+    ],
+    "text": "A vicious cycle is a loop in which each bad outcome makes the next one more likely, so the problem feeds itself. The article spells one out: slow growth brings unstable politics, instability discourages investment, and less investment means slower growth still. Its opposite is a virtuous circle, where each improvement makes the next one easier.",
+    "audio": true
+  },
+  {
+    "k": "hand-in-hand",
+    "t": "hand in hand with",
+    "kind": "phrase",
+    "forms": [
+      "hand in hand with",
+      "hand in hand"
+    ],
+    "text": "To go hand in hand with something is to occur together with it and be closely connected to it. Saying professional apathy can go hand in hand with political ague claims the two show up in the same people, without claiming which one causes the other. Keep that caution in mind: the phrase asserts company, not cause.",
+    "audio": true
+  },
+  {
+    "k": "little-wonder",
+    "t": "little wonder",
+    "kind": "phrase",
+    "forms": [
+      "little wonder"
+    ],
+    "text": "Little wonder means no surprise, and it is usually dropped in as its own short sentence after the explanation has been given. With youth unemployment at 18%, little wonder tells you the young man's despair is exactly what you would expect. It is a compact way of drawing a conclusion without spelling it out.",
+    "audio": true
+  },
+  {
+    "k": "pew-research",
+    "t": "Pew Research",
+    "kind": "name",
+    "forms": [
+      "Pew Research"
+    ],
+    "text": "Pew Research Centre is an American non-partisan organisation that runs large public-opinion surveys on politics, religion, technology and social attitudes. It takes no policy positions and publishes its data free, which is why journalists cite it as a neutral reference point. Its 2015 survey is the benchmark the article uses to show how much more upbeat earlier generations were.",
+    "audio": true
+  }
+]
