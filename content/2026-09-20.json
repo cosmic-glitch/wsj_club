@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-20",
+  "title": "Olympiad Man has displaced Davos Man",
+  "articleUrl": "https://www.economist.com/business/2026/09/16/olympiad-man-has-displaced-davos-man",
+  "articlePageUrl": "/articles/2026-09-20.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "mettle",
+      "partOfSpeech": "noun",
+      "pronunciation": "MET-ul",
+      "articleQuote": "have tested their mettle in international competitions called Olympiads",
+      "meaning": "Your **mettle** is your ability to hold up and perform when things get hard — nerve, grit and staying power under pressure, rather than talent in the abstract. It almost always turns up in the phrase *test someone's mettle*, and although it sounds like *metal* and shares a root with it (mettle once meant the quality of a blade's steel), it is now only ever about people. Here the Economist says the world's best teenage mathematicians have tested their mettle at the Olympiads: the claim is not just that they are clever, but that they sat down against the strongest competition on earth, on a clock, and held up.",
+      "examples": [
+        "The final went to penalties in the rain, and that was where the team really tested its mettle.",
+        "Anyone looks organised in September; a week with three tests and a group project shows your true mettle."
+      ]
+    },
+    {
+      "word": "vestige",
+      "partOfSpeech": "noun",
+      "pronunciation": "VES-tij",
+      "articleQuote": "besting banks in corporate-bond trading, perhaps the last vestige of the Wall Street jock",
+      "meaning": "A **vestige** is the small surviving trace of something that used to be far bigger — the bit left over once the rest is gone. Biologists use it for body parts whose job disappeared long ago, like a whale's hip bones, and writers use it for habits and institutions that are nearly extinct. In this article the loud, physically imposing Wall Street trader has almost vanished from finance, squeezed out by people who write trading algorithms, so corporate-bond trading is called perhaps his last vestige — the final corner where that old type still survives, and even there a firm of mathematicians is now beating the banks.",
+      "examples": [
+        "A chalk tray under the whiteboard is the last vestige of the classroom my mom sat in.",
+        "After the rebrand, the only vestige of the old logo was the faded mascot painted on the gym floor."
+      ]
+    },
+    {
+      "word": "commensurate",
+      "partOfSpeech": "adjective",
+      "pronunciation": "kuh-MEN-sur-it",
+      "articleQuote": "Until he can demonstrate virtue commensurate with his brilliance",
+      "meaning": "**Commensurate** means matching in size or degree — two things scaled to each other, so that one is as large as the other deserves. It nearly always arrives with *with*: pay commensurate with experience, a punishment commensurate with the crime. The article's closing line is a warning built on that one word: Olympiad Man's brilliance is now enormous, but his demonstrated virtue — a track record of using that power well — has not grown to match it, and until it does, the piece says, he is better off not being widely understood.",
+      "examples": [
+        "She argued that a week of detention was not commensurate with forgetting her homework once.",
+        "The coach promised playing time commensurate with how often you actually turn up to practice."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Davos",
+      "articleQuote": "Davos Man, the slick corporate executive who spent decades at home anywhere but nowadays feels welcome nowhere",
+      "meaning": "Davos is a small ski town in the Swiss Alps — about 11,000 residents — and for one week every January it holds the most powerful guest list on earth. The World Economic Forum, an organisation based near Geneva, runs an annual meeting there where a few thousand chief executives, prime ministers, central bankers, investors and celebrity campaigners fly in, pay a large fee for a badge, and spend four days in panels, dinners and corridor conversations. Nobody elected them; they come because everyone else who matters is coming.\n\nThe meeting also produced a name, and the name outlived any particular year's agenda. In 2004 the political scientist Samuel Huntington coined **Davos Man** for the type the gathering turns out: a senior executive whose loyalty runs to the global economy rather than to any one country — equally comfortable in Singapore, London and New York, fluent in the language of markets and free trade, and, as this article puts it, at home anywhere. The Forum even runs a programme called \"Young Global Leaders\", which the article points at as the giveaway: nobody can quite explain how you get selected for it.\n\nSo a headline saying Olympiad Man has displaced Davos Man is making a claim about which elite now sets the direction of things — the smooth generalist executive, or the teenager who won a maths medal. The term is worth knowing because it arrives every January, and usually as an insult: \"Davos\" has become shorthand for a global elite writing rules for people it never meets. Whenever you meet a place-name standing in for a group of people — Davos, Wall Street, Silicon Valley, Hollywood — ask who is counted inside it, who let them in, and whom they answer to. That question is usually the real argument."
+    },
+    {
+      "name": "Market making",
+      "articleQuote": "the broad shoulders of pit trading long ago gave way to the narrow ones that build algorithms to buy and sell at the speed of light",
+      "meaning": "Forty years ago a trade was done by a man in a coloured jacket shouting and gesturing in a pit on an exchange floor; today the same trade is a message sent by a computer program in a fraction of a thousandth of a second. The idea from finance that explains both the shouting and the code is **market making**.\n\nA market maker is a firm that stands ready to take either side of a trade, all day. At every moment it publishes two prices for something — say a share in a carmaker: it will buy from you at $12.48, and it will sell to you at $12.52. The four-cent gap between those two numbers is the **spread**, and the spread is how the firm gets paid. If a hundred people sell to it at $12.48 while a hundred others buy from it at $12.52, it ends the day owning nothing extra and keeping four cents a hundred times over. The shop near school that buys used games for $18 and sells them for $25 is doing the identical thing — far wider spread, far slower.\n\nThat is a maths problem, which is why these firms hire Olympiad medallists. The people at the firm have to set those two prices tight enough that customers trade with them rather than a rival, yet wide enough to cover the risk that the price moves against the firm while it is holding the thing. Be wrong by a fraction of a cent, millions of times a day, and you lose money. What the programmers at Jane Street, Two Sigma and Jump Trading build is not a forecast of any one company's future — it is pricing machinery that runs continuously.\n\nIt is also why the article can say Jane Street is besting banks in corporate-bond trading: the banks used to be the ones quoting those two prices for bonds, and a firm of a few hundred mathematicians has taken that business off them. So when you hear that somebody \"makes a market\" in something, the question is not what they think it is worth. It is how wide their spread is, and who is paying it."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Who is \"Olympiad Man\", as the article uses the term?",
+      "options": [
+        "An athlete who has won a medal at the Olympic Games",
+        "A winner of an international maths or science Olympiad who now holds great power in AI and finance",
+        "A coach who trains national teams for academic competitions",
+        "A tech executive who funds scholarships for talented teenagers"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article coins the term for a new elite drawn from teenage maths, physics and informatics champions who now run AI labs and trading firms."
+    },
+    {
+      "question": "Why does the article contrast Olympiad Man with \"Davos Man\"?",
+      "options": [
+        "Because Davos Man is the older elite type — the globe-trotting corporate executive associated with the World Economic Forum",
+        "Because Davos is the Swiss town where most international Olympiads are held",
+        "Because Davos Man refers to bankers who publicly oppose artificial intelligence",
+        "Because Davos Man is a name for politicians who have never worked in business"
+      ],
+      "answerIndex": 0,
+      "explanation": "\"Davos Man\" names the slick global executive produced by the World Economic Forum's annual meeting in the Swiss town of Davos; the article's claim is that this older elite has been displaced."
+    },
+    {
+      "question": "The article says Jane Street is \"besting banks in corporate-bond trading, perhaps the last vestige of the Wall Street jock\". What does that sentence mean?",
+      "options": [
+        "Banks have stopped trading corporate bonds altogether and now only lend money",
+        "Corporate bonds are the one market where computers are still not permitted to trade",
+        "A firm of mathematicians is taking over the last corner of trading where the old, loud, physical Wall Street type still survived",
+        "Jane Street has hired the last surviving floor traders from the old exchange pits"
+      ],
+      "answerIndex": 2,
+      "explanation": "A vestige is the last trace of something largely gone — bond trading was the final stronghold of the old-style trader, and a quantitative firm is now beating the banks even there."
+    },
+    {
+      "question": "Since 1959 the world's best teenage mathematicians \"have tested their mettle\" at the Olympiads. To test your mettle is to:",
+      "options": [
+        "Check whether a material is genuine metal",
+        "Prove you can hold up and perform under pressure",
+        "Measure how much you have improved since last year",
+        "Compete only against people from your own country"
+      ],
+      "answerIndex": 1,
+      "explanation": "Mettle is nerve and staying power under pressure; the Olympiads test whether the strongest teenagers can perform against the world's best, on the clock."
+    },
+    {
+      "question": "The article closes by saying Olympiad Man should stay poorly understood \"until he can demonstrate virtue commensurate with his brilliance\". Commensurate here means:",
+      "options": [
+        "Rewarded with money",
+        "Hidden from public view",
+        "Approved of by other experts",
+        "Matching it in scale — as large as his brilliance"
+      ],
+      "answerIndex": 3,
+      "explanation": "Commensurate means matching in size or degree; the article's point is that his demonstrated virtue has not yet grown to match his ability."
+    }
+  ]
+}
