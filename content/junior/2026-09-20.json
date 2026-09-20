@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-20",
+  "title": "Social-media curbs for kids are not working in Asia",
+  "articleUrl": "https://www.economist.com/asia/2026/09/03/social-media-curbs-for-kids-are-not-working-in-asia",
+  "articlePageUrl": "/articles/junior/2026-09-20.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "curb",
+      "partOfSpeech": "noun",
+      "pronunciation": "KURB",
+      "articleQuote": "Since Australia brought in its curbs, dozens have done the same, or are considering it.",
+      "meaning": "A curb is a limit placed on something to hold it back and keep it under control. It does not stop the thing completely — it just fences in how far it can go, which is why you hear about curbs on spending, curbs on traffic or curbs on pollution. In this article the curbs are Australia's rules banning social-media accounts for anyone under 16, and the whole point of the piece is that these particular curbs are barely holding anything back.",
+      "examples": [
+        "After the third broken window, our coach put a curb on shooting practice near the clubhouse.",
+        "Mum put a curb on snacks after six o'clock, so now the cupboard is locked until morning."
+      ]
+    },
+    {
+      "word": "unfounded",
+      "partOfSpeech": "adjective",
+      "pronunciation": "un-FOWN-did",
+      "articleQuote": "Worries that children migrate to alternative platforms, with lower safety standards, were mostly unfounded",
+      "meaning": "Something unfounded is a belief or a worry with no evidence underneath it. The word hides the verb *found*, which means to build a base under something, the same way a building is founded on concrete — so an unfounded fear is one with nothing solid holding it up. Here, experts had feared that banned teenagers would pour into shadier apps, and when researchers went looking they found that had mostly not happened.",
+      "examples": [
+        "My fear that the new coach would drop me turned out to be completely unfounded — he made me captain.",
+        "The rumour that our school was closing early was unfounded; nobody could name a single teacher who had said it."
+      ]
+    },
+    {
+      "word": "underwhelming",
+      "partOfSpeech": "adjective",
+      "pronunciation": "un-der-WEL-ming",
+      "articleQuote": "It's so underwhelming that people have forgotten there's a ban.",
+      "meaning": "Underwhelming means disappointing because something turned out far smaller or duller than you were promised. It was invented as a joke on *overwhelming*: if overwhelming floods you, underwhelming barely gets your feet wet. Ishana, a 15-year-old in Australia, uses it about her country's social-media ban — so little changed in her daily life that people around her have stopped noticing the ban exists.",
+      "examples": [
+        "The trailer promised a huge final battle, so the actual two-minute fight was pretty underwhelming.",
+        "We queued forty minutes for the new ride and came off thinking it was underwhelming."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Age verification",
+      "articleQuote": "But facial-age estimation software is not very accurate in distinguishing between, say, a 15- and 16-year-old.",
+      "meaning": "A 15-year-old named Lucina let Snapchat scan her face to prove her age. The app came back and said she looked 18.\n\nThat is **age verification** — the check a website runs to work out how old you are before it lets you in — and there are really only three ways to do it.\n\nThe first is to ask. A box appears, you type a birthday, and the site stores whatever you typed. Nothing is checked against anything, so this costs a child about four seconds to defeat. The article describes exactly that happening: many under-16s in Australia simply made new accounts with a fake age, and others typed in their parents' or their older siblings' details instead.\n\nThe second is to demand an official document — a passport, a driving licence, a government ID card. This one genuinely works, because a government already checked the birth date before printing the card. Malaysia chose this method for its own ban. The catch is what the company has to do next: to check your card it has to receive a copy of your card, and now a company's computers are holding an official ID belonging to you. If those computers are broken into, the thief walks away with your identity documents, which is precisely why the researcher Tricia Yeoh says platforms are nervous about storing them.\n\nThe third is **facial-age estimation**, and it is worth knowing what the software actually does, because it is not looking at you the way a shopkeeper would. A camera captures an image of your face. The program measures distances and patterns in that image — the spacing of features, the texture of skin — and compares those measurements against millions of stored photographs whose real ages are already known. Then it outputs a single number: its best statistical guess. A guess drawn from a photograph can be several years out, and a 15-year-old and a 16-year-old simply do not look different enough for the measurements to separate them. That is the whole problem, because 16 is exactly where Australia drew its line.\n\nSo next time a site asks your age, the useful question is which of the three it is doing: taking your word for it, checking a document, or guessing from a picture. Each one buys a different amount of certainty, and each one costs you something different in return."
+    },
+    {
+      "name": "Virtual private network (VPN)",
+      "articleQuote": "They do not even have to hide behind virtual private networks.",
+      "meaning": "The article mentions, almost in passing, that Australian teenagers do not even need a **VPN** to get around the ban. To see why that is a dig at the ban, you need to know what a VPN is — and the name explains itself once you take it apart.\n\nA **network** is a set of computers joined together so they can pass messages. **Private** means the messages travelling along it are scrambled, so anyone who intercepts them in between gets unreadable nonsense. **Virtual** means nobody laid special cables for this: the protected path is built out of the ordinary internet that everyone else is already using.\n\nHere is what physically happens when you switch one on. Normally your device sends a request straight to the website, and the request carries your **IP address** — a number that identifies your connection and roughly where in the world it is. With a VPN, your request goes first to a computer belonging to the VPN company, which might sit in Japan. *That* computer then asks the website for the page. The website receives a request carrying the Japanese computer's address, never yours, so it sends back whatever it sends to people in Japan. The page then travels back to the VPN computer, which passes it along to you.\n\nPicture a show that a streaming service is only allowed to play in Japan. From your sofa in Australia you get a grey screen saying the show is unavailable in your region. Switch on a VPN set to Japan and the request now arrives at the streaming service from a Japanese address, so the service serves the show. Nothing about you moved. The only thing that changed is which address the far end received.\n\nThat is also the limit of a VPN, and it is worth remembering: it does not make you invisible. It swaps whose address the website sees for whose address the VPN company sees — and the VPN company can see all of it."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A study in the British Medical Journal checked on Australia's under-16 social-media ban three months after it started. What did it find?",
+      "options": [
+        "Social-media use among under-16s had roughly halved",
+        "85% of under-16s said they still used banned platforms",
+        "Under-16s had almost all moved to new, unknown apps",
+        "Only 12- and 13-year-olds were still using the platforms"
+      ],
+      "answerIndex": 1,
+      "explanation": "The study found 85% of under-16s still using banned platforms, and 12- and 13-year-olds spending the same amount of time on social media as before the ban."
+    },
+    {
+      "question": "KJR, a software-testing company, opened 50 social-media accounts in Australia that all claimed the user was 16. What happened?",
+      "options": [
+        "All 50 accounts were removed within a month",
+        "Every site demanded an official ID document",
+        "Only one site did any verification, and all 50 accounts stayed active",
+        "The company was fined A$99m for the test"
+      ],
+      "answerIndex": 2,
+      "explanation": "Just one of the sites ran any check at all, and none of the 50 accounts was taken down — which is why the government is trying to toughen its rules."
+    },
+    {
+      "question": "Ishana calls the ban \"so underwhelming that people have forgotten there's a ban\". What does underwhelming mean here?",
+      "options": [
+        "So strict that it was hard to cope with",
+        "Confusing and difficult to understand",
+        "Unfair to one group of people",
+        "Far less impressive or effective than expected"
+      ],
+      "answerIndex": 3,
+      "explanation": "Underwhelming is the joke-opposite of overwhelming: it means something turned out much smaller or duller than you were led to expect."
+    },
+    {
+      "question": "Why does facial-age estimation struggle with a rule that sets the cut-off at 16?",
+      "options": [
+        "It can only be used on people who already have an ID card",
+        "It produces a statistical guess from a photo, and 15- and 16-year-olds look too similar",
+        "It refuses to work unless the person is smiling",
+        "It stores the photo, so the law does not allow it"
+      ],
+      "answerIndex": 1,
+      "explanation": "The software compares measurements from your photo against photos of known ages and outputs a best guess — and that guess cannot reliably separate a 15-year-old from a 16-year-old, which is exactly where Australia drew its line."
+    },
+    {
+      "question": "If a teenager in Australia used a VPN set to Japan, what would a website receive?",
+      "options": [
+        "The teenager's real address, but scrambled so it cannot be read",
+        "A request carrying the address of the VPN company's computer in Japan",
+        "No address at all, making the teenager invisible online",
+        "A Japanese ID document belonging to the VPN company"
+      ],
+      "answerIndex": 1,
+      "explanation": "The request travels to the VPN's computer first, so the website only ever receives that computer's address and responds as it would to anyone in Japan."
+    }
+  ]
+}
