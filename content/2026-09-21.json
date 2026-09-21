@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-21",
+  "title": "The staggering strangeness of the Labubu bubble",
+  "articleUrl": "https://www.economist.com/culture/2026/04/24/the-staggering-strangeness-of-the-labubu-bubble",
+  "articlePageUrl": "/articles/2026-09-21.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "exuberance",
+      "partOfSpeech": "noun",
+      "pronunciation": "ig-ZOO-bur-unss",
+      "articleQuote": "The Mega Labubu suggests that exuberance still reigns over the doll market.",
+      "meaning": "Exuberance is enthusiasm with the brakes off — bubbling, high-spirited excitement that makes people act bolder than a cool head would. In markets it is almost a technical term: since Alan Greenspan warned in 1996 about “irrational exuberance”, the phrase has been shorthand for buyers whose eagerness has run out ahead of the facts. Here it names the mood still propping up doll prices even as the frenzy cools — somebody paid $150,000 for a four-foot elf, and no amount of arithmetic produces that decision.",
+      "examples": [
+        "The exuberance in the gym after the buzzer-beater was so loud the coach gave up trying to talk over it.",
+        "Her first draft had plenty of exuberance but no structure, so she spent the weekend cutting it down."
+      ]
+    },
+    {
+      "word": "adage",
+      "partOfSpeech": "noun",
+      "pronunciation": "AD-ij",
+      "articleQuote": "According to the old share-traders’ adage, bull markets do not die of old age: they are murdered by central banks.",
+      "meaning": "An adage is a short saying repeated so often, for so long, that it passes for wisdom — “practice makes perfect”, “don’t put all your eggs in one basket”. The word quietly carries both of those things: age, and authority nobody ever actually tested. The article leans on that second hint, quoting the traders’ adage that bull markets are murdered by central banks only to point out that this particular bull market was murdered by a toy company instead.",
+      "examples": [
+        "Coach repeats the old adage that you play the way you practise, usually right after a sloppy warm-up.",
+        "“Measure twice, cut once” sounded like a dull adage until I ruined a shelf by ignoring it."
+      ]
+    },
+    {
+      "word": "embezzlement",
+      "partOfSpeech": "noun",
+      "pronunciation": "em-BEZ-ul-munt",
+      "articleQuote": "rather than fraud and embezzlement, it has produced the “Lafufu”, or counterfeit Labubu.",
+      "meaning": "Embezzlement is stealing money that was placed in your care — the club treasurer who moves the trip fund into their own account, as opposed to a stranger who breaks in and takes the cash box. That element of trust is what separates it from ordinary theft, and from fraud, where the trick is to talk someone into handing the money over in the first place. The article uses the word to say what this mania did *not* produce: no embezzling executives, just counterfeit dolls with sloppy paint jobs and the wrong number of teeth.",
+      "examples": [
+        "The booster club now needs two signatures on every cheque, ever since a treasurer’s embezzlement went unnoticed for a year.",
+        "He was charged with embezzlement rather than robbery, because the money he took had been handed to him to manage."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Fundamentals",
+      "articleQuote": "How can you tell whether prices are out of whack with fundamentals if there aren’t any to begin with?",
+      "meaning": "Someone paid $150,000 for a four-foot elf doll. Was that too much? The honest answer is that there is nothing to check it against, and that gap is what the writer keeps circling.\n\nIn finance, the **fundamentals** of an asset are the measurable facts about the real money it brings in and the real things it owns: a company’s annual earnings, the cash flowing through it, the dividends it pays out, the factories and patents on its books. Fundamentals are what a price is supposed to be *about*.\n\nWalk it through with a single share. Say a company earns $2 per share each year. Pay $30 for that share and you have paid 15 years of earnings — investors call that a price-to-earnings ratio of 15, and by the standards of the past century it is thoroughly ordinary. Pay $2,000 for the same share and you have paid a thousand years of earnings, which is the condition the article describes as paying “hundreds or thousands of times its underlying annual earnings”. Nothing stops you paying it. The point is that you can *measure* how far out you have gone.\n\nNot everything comes with clean fundamentals. Gold generates no earnings at all, which is why arguments about whether gold is expensive never quite settle — people fall back on history and on what other buyers appear willing to pay. A Labubu sits a rung further down again: it earns nothing, owns nothing, pays out nothing. So when its price climbs there is no anchor anywhere to say it has climbed too far.\n\nSo whenever somebody tells you a price is insane, or a steal, ask the fundamentals question: measured against what real money, arriving from where? If there is no answer, you are not looking at a valuation at all — you are looking at a guess about other people."
+    },
+    {
+      "name": "The secondary market",
+      "articleQuote": "The secondary market—of people snapping up scarce dolls to sell them on at big mark-ups—thus lost its raison d’être for all but the rarest Labubus, and has collapsed.",
+      "meaning": "Last year Pop Mart made roughly ten times as many plush toys as before — about 30m a month — and the people who had been flipping Labubus for a profit watched their business evaporate. The maker killed the resale trade by making more.\n\nTrading happens in two layers. The **primary market** is the sale from whoever made or issued the thing: Pop Mart selling a Mega Labubu in its London shop for £850, or a company selling its shares to investors for the first time when it lists on a stock exchange. Everything after that is the **secondary market** — one owner selling to another owner, at whatever price the two of them agree. The split matters because the money lands in different pockets. In a primary sale the maker is paid. In a secondary sale the previous owner is paid, and the maker gets nothing.\n\nYou have met this without the vocabulary. A concert ticket bought from the venue is the primary market; that same ticket on a resale site an hour later at three times the price is the secondary market, and the band sees none of the difference. Sneakers work the same way. And in every case the resale price can float far above the shop price for one reason only: there is not enough of the thing to go round.\n\nScarcity is exactly what Pop Mart removed. Flipping a Labubu paid while the dolls were hard to get; at 30m plush toys a month a buyer can simply walk into the shop, so the mark-up has nothing left to stand on. There is a second secondary market in this story too — Pop Mart’s own shares, trading between investors at around half their August peak. That is the one the company cares about most, because it is where investors settle what the whole business is worth.\n\nSo when a price looks unhooked from the sticker price, work out which layer you are in — the maker selling, or owners selling to each other — and then ask what is keeping the supply scarce. That scarcity is the whole foundation the mark-up rests on."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The writer says that calling this a bubble “puts a strain on the category”. Why?",
+      "options": [
+        "Because the dolls are handmade, so nobody can measure how many exist",
+        "Because a bubble means a price far above what fundamentals justify, and a doll produces no earnings or cash flows to measure it against",
+        "Because bubbles can only form in markets overseen by a central bank",
+        "Because Labubu prices never actually rose far enough to qualify"
+      ],
+      "answerIndex": 1,
+      "explanation": "A bubble is defined by the gap between price and fundamentals — and a doll, unlike a company, generates nothing that could serve as a fundamental."
+    },
+    {
+      "question": "In “exuberance still reigns over the doll market”, exuberance most nearly means:",
+      "options": [
+        "cautious, arithmetic-driven valuation",
+        "open hostility toward a product",
+        "high-spirited, unrestrained enthusiasm",
+        "slow but steady growth in demand"
+      ],
+      "answerIndex": 2,
+      "explanation": "Exuberance is bubbling, unchecked enthusiasm — the opposite of the cool arithmetic that would never arrive at $150,000 for an elf doll."
+    },
+    {
+      "question": "The article quotes “the old share-traders’ adage” that bull markets are murdered by central banks. An adage is:",
+      "options": [
+        "a binding rule issued by financial regulators",
+        "a short, long-repeated saying treated as received wisdom",
+        "a mathematical formula for pricing an asset",
+        "a court ruling that later cases have to follow"
+      ],
+      "answerIndex": 1,
+      "explanation": "An adage is a well-worn saying that passes for wisdom — which is why the writer can cheerfully point out that this bull market broke the rule."
+    },
+    {
+      "question": "The article notes that Labubumania produced counterfeits “rather than fraud and embezzlement”. Embezzlement means:",
+      "options": [
+        "buying an asset purely in the hope of reselling it higher",
+        "manufacturing an imitation of a branded product",
+        "paying far more for something than it is worth",
+        "stealing money that you had been trusted to look after"
+      ],
+      "answerIndex": 3,
+      "explanation": "Embezzlement is theft from inside a position of trust — which is precisely what this mania did not generate; it generated fake dolls instead."
+    },
+    {
+      "question": "Last year Pop Mart expanded plush-toy production roughly tenfold, to around 30m a month. Why did that collapse the secondary market in Labubus?",
+      "options": [
+        "Resale mark-ups depend on scarcity, and once dolls were easy to buy in the shop, few buyers would pay one",
+        "Pop Mart takes a cut of every resale, and it raised that cut sharply",
+        "Central banks raised interest rates, making it expensive to borrow for resale",
+        "British officials seized the counterfeit Lafufus at the border"
+      ],
+      "answerIndex": 0,
+      "explanation": "The resale trade ran entirely on dolls being hard to get; flooding the shops removed the scarcity and with it the mark-up."
+    }
+  ]
+}
