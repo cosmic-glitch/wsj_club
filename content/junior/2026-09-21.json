@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-21",
+  "title": "Is a fortune gathering dust in your attic?",
+  "articleUrl": "https://www.economist.com/culture/2026/04/30/is-a-fortune-gathering-dust-in-your-attic",
+  "articlePageUrl": "/articles/junior/2026-09-21.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "amass",
+      "partOfSpeech": "verb",
+      "pronunciation": "uh-MASS",
+      "articleQuote": "rock memorabilia that Jim Irsay, a late American sports-team owner, spent his life amassing",
+      "meaning": "To **amass** something is to gather a large amount of it, a bit at a time, over a long stretch. The word carries the idea of a pile that keeps growing, so you amass a collection rather than a single object. In the article it describes how Jim Irsay added one piece of rock memorabilia after another across his whole life, until the pile was big enough for Christie's to hold a sale of it.",
+      "examples": [
+        "By the end of fifth grade she had amassed over four hundred Pokemon cards, filling three binders.",
+        "Our class amassed enough bottle caps to win the recycling contest by bringing in a few every single day."
+      ]
+    },
+    {
+      "word": "cache",
+      "partOfSpeech": "noun",
+      "pronunciation": "KASH",
+      "articleQuote": "What was startling was a cache of brightly coloured pebbles that showed no signs of use",
+      "meaning": "A **cache** is a group of things stored away together in one spot, often hidden. You may know the word from video games, where a supply cache is a stash of gear waiting to be found, and that is the original meaning too. Here, archaeologists digging in a cave found a cache of coloured pebbles that somebody had tucked away about 300,000 years ago.",
+      "examples": [
+        "He kept a cache of snacks in the bottom of his desk for long afternoons.",
+        "The hikers found a cache of emergency supplies left in the cabin for anyone caught out in a storm."
+      ]
+    },
+    {
+      "word": "enduring",
+      "partOfSpeech": "adjective",
+      "pronunciation": "en-DOOR-ing",
+      "articleQuote": "their markets are broad, deep and enduring",
+      "meaning": "Something **enduring** lasts a long time without fading away. It comes from the verb *endure*, meaning to keep going through hard times, so an enduring thing has already proved it can last. The article uses the word for coins, comics, sports cards and entertainment memorabilia, because people have wanted those for decades, while other collecting crazes rose and then died out.",
+      "examples": [
+        "Chess has an enduring appeal: the rules have barely changed in five hundred years.",
+        "Their friendship turned out to be enduring, surviving two moves and four different schools."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Auction houses",
+      "articleQuote": "Increasingly, however, auction houses are getting in on the action.",
+      "meaning": "John Lennon's piano sold for $3.2m. Nobody printed that number on a price tag — a room full of bidders pushed it there, one offer at a time.\n\nThat is what an **auction** is. The seller does not name a price. Buyers call out offers that keep climbing, and the item goes to whoever has made the highest offer when the bidding stops. An **auction house** is a company that runs those sales for a living; Christie's, Sotheby's and Heritage Auctions are all auction houses. Economists pay close attention to auctions, because an auction is one of the few ways to find out what people will really pay for something instead of guessing.\n\nThe surprising part is that an auction house usually does not own what it sells. The article calls such items *consigned*: the owner hands the item over, the house finds the buyers and runs the sale, and then the house keeps a slice of the final price. That is why Steve Ivy says his firm does not need to \"buy low and sell high\". A shop has to guess what something is worth before it pays for it, and loses money if it guesses too high. An auction house collects its cut either way.\n\nPicture a school fundraiser. A parent lends a jersey signed by the whole team. The school never buys the jersey — it just runs the bidding. Two families keep raising each other, $30, then $45, then $60, and at $60 the offers stop. The jersey goes to the family that bid $60, the school keeps $10 for running the sale, and the parent takes home $50. Christie's ran that exact arrangement in March, with John Lennon's piano and a winning bid of $3.2m."
+    },
+    {
+      "name": "Information advantage",
+      "articleQuote": "Dealers knew what they had paid for the item, and they knew what they had sold similar items for, but the buyers were in the dark on both fronts.",
+      "meaning": "Before the internet, if you carried your grandfather's coin collection into a dealer's shop, only one person in that room had any idea what the coins were worth. It was not you.\n\nEconomists call that gap an **information advantage**: two people make a deal, one of them knows something important that the other does not, and the one who knows more can steer the price. The article spells out exactly what the dealer knew — what he had paid for coins like yours, and what he had sold coins like yours for. You knew neither number. So he could offer you a low price and sound perfectly reasonable doing it, because you had nothing to check it against.\n\nWhat ends an information advantage is not honesty. It is published prices. Once Heritage began selling online in the mid-1990s, the price of every finished sale was there for anyone to look up. A buyer could see that this exact baseball card went for $400 last month, so an offer of $90 stopped sounding reasonable. Mr Ivy thinks that is a big reason his business grew: buyers came back because they could check.\n\nThe same thing plays out at a lunch table. If one kid is the only person who knows what a card is really trading for, they can talk a classmate into a badly lopsided swap. The moment everyone pulls out a phone and looks up the going rate, that stops working. So whenever you are about to make a deal, the useful question is: *what does the other person know that I don't?*"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Archaeologists digging in a cave east of Tel Aviv found something that surprised them. What was it?",
+      "options": [
+        "Animal bones left over from cooking",
+        "A cache of brightly coloured pebbles that showed no signs of use",
+        "Primitive stone tools",
+        "Paintings covering the cave walls"
+      ],
+      "answerIndex": 1,
+      "explanation": "The bones and tools were expected; the startling find was a cache — a store of things kept together — of pretty pebbles that nobody had used for anything, meaning someone had simply collected them."
+    },
+    {
+      "question": "The article says Jim Irsay \"spent his life amassing\" rock memorabilia. What does amassing mean here?",
+      "options": [
+        "Gathering a large amount, a bit at a time, over a long period",
+        "Selling a collection off quickly",
+        "Repairing items that had been damaged",
+        "Making exact copies of famous objects"
+      ],
+      "answerIndex": 0,
+      "explanation": "To amass is to build up a large pile gradually, which is why the article pairs it with \"spent his life\"."
+    },
+    {
+      "question": "Mr Ivy calls coins, comics, sports cards and memorabilia \"the big four\" because their markets are \"broad, deep and enduring\". What does enduring mean?",
+      "options": [
+        "Painful to take part in",
+        "Growing faster than anything else right now",
+        "Lasting a long time without fading away",
+        "Open only to expert collectors"
+      ],
+      "answerIndex": 2,
+      "explanation": "Enduring means lasting; those four markets have held up for decades while fads like muscle cars rose and then faded."
+    },
+    {
+      "question": "Most of what Heritage sells is consigned. Why does that mean the firm does not need to \"buy low and sell high\"?",
+      "options": [
+        "Because the government sets a fixed price for collectibles",
+        "Because items still belong to their owners, and the house takes a cut of whatever price the bidding reaches",
+        "Because Heritage buys every item first and then resells it",
+        "Because buyers pay a yearly membership fee instead of bidding"
+      ],
+      "answerIndex": 1,
+      "explanation": "A consigned item is not the auction house's property, so the house earns its share of the final price without ever having to guess what the item was worth beforehand."
+    },
+    {
+      "question": "Before online sales, why did specialist dealers have an advantage over the people buying from them?",
+      "options": [
+        "Buyers were not allowed to inspect items before paying",
+        "Dealers were the only ones permitted to own collectibles",
+        "Dealers knew what items had cost and what similar ones had sold for, while buyers knew neither",
+        "Dealers could refuse to sell to anyone under 18"
+      ],
+      "answerIndex": 2,
+      "explanation": "That gap in knowledge is an information advantage — the buyers were \"in the dark on both fronts\", so they had no way to judge whether a price was fair."
+    }
+  ]
+}
