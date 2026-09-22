@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-22",
+  "title": "A new battery could make edible electronics safer",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/21/a-new-battery-could-make-edible-electronics-safer",
+  "articlePageUrl": "/articles/junior/2026-09-22.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "corrode",
+      "partOfSpeech": "verb",
+      "pronunciation": "kuh-ROHD",
+      "articleQuote": "the battery’s components started to corrode and dissolve",
+      "meaning": "To **corrode** is to be eaten away bit by bit by a chemical reaction — usually a metal reacting with the air, water or acid around it. Rust creeping along a bike chain that was left out in the rain is corrosion you can watch happen. In the article, stomach acid finally soaks past the battery's wax coating and reacts with the magnesium inside, so after about three days the battery's parts corrode and fall apart — which, unusually, is exactly what its designers wanted.",
+      "examples": [
+        "The old batteries left in the flashlight had corroded, leaving a crusty white powder on the springs.",
+        "Salt spread on the roads in winter slowly corrodes the metal underneath a car."
+      ]
+    },
+    {
+      "word": "excrete",
+      "partOfSpeech": "verb",
+      "pronunciation": "ik-SKREET",
+      "articleQuote": "the entire unit is eventually excreted",
+      "meaning": "To **excrete** something is for a living body to pass waste out of itself — in poop, in urine, or through sweat. It is the word biologists use, and it covers anything the body is finished with, not only leftover food. In the article it describes what normally happens to a swallowed camera-pill: it travels the whole length of the gut without being taken apart, and the body excretes it whole, battery and all.",
+      "examples": [
+        "Your kidneys filter your blood and excrete what is left over as urine.",
+        "A dog that swallows a small plastic toy will usually excrete it a day or two later, with no surgery needed."
+      ]
+    },
+    {
+      "word": "galvanise",
+      "partOfSpeech": "verb",
+      "pronunciation": "GAL-vuh-nyze",
+      "articleQuote": "The battery was able to galvanise the gut for 20 minutes.",
+      "meaning": "To **galvanise** something originally meant to jolt it with electricity, and that is the sense the article uses: the battery sent a current through the gut for 20 minutes, a trick doctors use to get a slow stomach emptying again. You will meet the word far more often in its second sense — to shock a person or a group into sudden action, as in *the coach's speech galvanised the team*. Americans usually spell it *galvanize*, with a z.",
+      "examples": [
+        "The news that the field trip might be cancelled galvanised the whole sixth grade into selling raffle tickets.",
+        "Two hundred years ago a scientist galvanised a dead frog's leg with a spark and watched the muscle twitch."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Electric current",
+      "articleQuote": "It generates a current as the magnesium reacts and releases electrons.",
+      "meaning": "A battery has no electricity sitting inside it, waiting in a tank. It *makes* the electricity while you use it, and when the chemicals are used up, the power stops.\n\nHere is what physically happens. Everything is built from atoms, and atoms have tiny particles called **electrons** around the outside. In certain chemical reactions, atoms of one material lose electrons and atoms of another material gain them. A battery is just those two materials, kept apart, with a path from one to the other. In this study the first material is magnesium. The magnesium reacts, loses electrons, and those electrons travel out of the battery, through whatever is wired to it, and back in the far side. Physicists call that flow of electrons an **electric current** — and it is the current, passing through on its way, that lights a bulb or runs a radio tag.\n\nOne more number is worth knowing: **voltage**, which is how hard a battery pushes its electrons along. A standard AA cell pushes at about 1.5 volts. The paper battery in this study pushed a little harder than an AA, which is why it could run real devices instead of barely flickering.\n\nYou can build the whole idea into a lemon. Push a strip of zinc and a strip of copper into the lemon and run a wire between them. The zinc reacts with the acid in the lemon and loses electrons; they flow along the wire to the copper. That flow is a current, and it is enough to light up a cheap digital clock. The lemon is not a tank of electricity — it is the acid that keeps the reaction going. Let it dry out and the clock goes dark.\n\nSo a battery is not a container of power. It is a chemical reaction with a wire attached, which is why every battery you own, including your phone's, eventually goes flat."
+    },
+    {
+      "name": "Animal models",
+      "articleQuote": "fed it to pigs (favoured over mice because their guts are large enough to mimic a human’s)",
+      "meaning": "Nobody's first test of a swallowable battery is a person. Before this one went anywhere near a human stomach, it went into a pig.\n\nIn medicine, an animal used to stand in for a human in an experiment is called an **animal model**. The reason is blunt. A battery that leaks or jams could badly injure whoever swallowed it, and there is no way to find that out by asking. So researchers try it first in an animal whose body — in the one part that matters — works closely enough like a human's.\n\nNotice how carefully the article explains the choice. Mice are cheap, easy to keep and used in most experiments, but a mouse's gut is tiny. A capsule sized for a person would tell you nothing useful inside one. A pig's gut is roughly a human's size and moves food along in much the same way, so a full-sized capsule travels through it the way it would travel through you. The animal is picked for the single feature the experiment depends on, not for being generally \"like a human\".\n\nAn animal model is a starting line, not a finish line. Dr Khan, who had nothing to do with the study, says the device \"still needs significant safety testing\" before anyone swallows it, because researchers still do not know where the dissolved pieces end up in the body. The pigs answered one question: does it make power, and does it break down. Whether it is safe in people is a later and separate set of tests.\n\nKeep this, because you will meet it constantly. Any headline that begins \"scientists have cured…\" is worth one question first: cured in *what*? If the answer is mice, the finding is real but early, and years of human testing still stand between it and your doctor."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The new paper battery does not hold electricity in storage. So where does its power come from?",
+      "options": [
+        "The body's own warmth heats the paper until it makes power",
+        "Magnesium reacts and releases electrons, and that flow of electrons is the current",
+        "The RFID tag beams energy into the capsule from outside",
+        "Electricity is squeezed into the wax coating before the capsule is swallowed"
+      ],
+      "answerIndex": 1,
+      "explanation": "A battery makes electricity as its chemicals react: here the magnesium reacts and releases electrons, and their flow out through the device is the electric current."
+    },
+    {
+      "question": "The researchers tested the battery in pigs rather than the mice used in most experiments. Why?",
+      "options": [
+        "Pigs will swallow almost anything, so no capsule was needed",
+        "Laws protect laboratory mice but not pigs",
+        "A pig's gut is large enough to mimic a human's, while a mouse's is far too small",
+        "Pigs live longer, which made the three-day test easier to run"
+      ],
+      "answerIndex": 2,
+      "explanation": "An animal model is chosen for the one feature the experiment depends on — here, a gut close enough to a human's in size that a full-sized capsule behaves the way it would in a person."
+    },
+    {
+      "question": "After about three days inside the pigs, \"the battery's components started to corrode and dissolve\". What does corrode mean?",
+      "options": [
+        "To be eaten away bit by bit by a chemical reaction",
+        "To harden into a protective shell",
+        "To swell up after soaking in water",
+        "To give off heat and light"
+      ],
+      "answerIndex": 0,
+      "explanation": "Corroding is chemical wearing-away, like rust on a bike chain; here stomach acid got past the wax and reacted with the metal inside."
+    },
+    {
+      "question": "The article says the battery \"was able to galvanise the gut for 20 minutes\". What was it doing?",
+      "options": [
+        "Warming the gut up to body temperature",
+        "Stimulating the gut with an electric current",
+        "Coating the gut with a layer of protective wax",
+        "Taking photographs as it travelled through the gut"
+      ],
+      "answerIndex": 1,
+      "explanation": "To galvanise is to jolt something with electricity; the battery powered a capsule that stimulates the gut electrically, an approach used to help the stomach empty. The everyday sense — galvanising a team into action — comes from the same jolt."
+    },
+    {
+      "question": "Today's pill-like cameras are built so their batteries never touch the body and \"the entire unit is eventually excreted\". What does excreted mean here?",
+      "options": [
+        "Passed out of the body as waste",
+        "Absorbed into the bloodstream",
+        "Broken down into harmless chemicals by stomach acid",
+        "Removed by a doctor in a short operation"
+      ],
+      "answerIndex": 0,
+      "explanation": "Because standard batteries contain harmful chemicals, today's design seals them away and lets the whole device leave the body in the usual way — that is what excreted means."
+    }
+  ]
+}

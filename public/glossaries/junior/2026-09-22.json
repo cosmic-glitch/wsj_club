@@ -1,0 +1,381 @@
+[
+  {
+    "k": "corrode",
+    "t": "corrode",
+    "kind": "vocab",
+    "pron": "kuh-ROHD",
+    "forms": [
+      "corrode"
+    ],
+    "text": "To corrode is to be eaten away bit by bit by a chemical reaction, usually a metal reacting with the air, water or acid around it. Rust creeping along a bike chain left out in the rain is corrosion you can watch happen. Once stomach acid reached the magnesium inside, the battery's parts began to corrode and fall apart.",
+    "audio": true
+  },
+  {
+    "k": "excrete",
+    "t": "excrete",
+    "kind": "vocab",
+    "pron": "ik-SKREET",
+    "forms": [
+      "excreted"
+    ],
+    "text": "To excrete something is for a living body to pass waste out of itself, in poop, in urine or through sweat. It is the word biologists use, and it covers anything the body is finished with, not only leftover food. A swallowed camera-pill travels the whole length of the gut and is excreted whole, battery and all.",
+    "audio": true
+  },
+  {
+    "k": "galvanise",
+    "t": "galvanise",
+    "kind": "vocab",
+    "pron": "GAL-vuh-nyze",
+    "forms": [
+      "galvanise"
+    ],
+    "text": "To galvanise something originally meant to jolt it with electricity, and that is the sense used here: the battery sent a current through the gut for twenty minutes. You will meet the word far more often in its second sense, to shock a person or a group into sudden action. It is named after Luigi Galvani, who made a dead frog's leg twitch with a spark. Americans spell it galvanize.",
+    "audio": true
+  },
+  {
+    "k": "peer",
+    "t": "peer",
+    "kind": "word",
+    "forms": [
+      "peer"
+    ],
+    "text": "To peer at something is to look hard at it, usually because it is difficult to see. This is a different word from the peer that means someone your own age. Scanners peer into the body, meaning they get a proper look inside without anyone having to cut it open.",
+    "audio": true
+  },
+  {
+    "k": "x-ray",
+    "t": "X-ray scanners",
+    "kind": "name",
+    "forms": [
+      "X-ray scanners",
+      "X-ray"
+    ],
+    "text": "X-rays are an invisible kind of ray that passes straight through soft flesh but is blocked by bone and metal. A scanner sends them through you and records what comes out the far side, which is why a broken bone shows up as a clear white shape. They were discovered in 1895 and are still the quickest way to see inside a body.",
+    "audio": true
+  },
+  {
+    "k": "mri",
+    "t": "MRI machines",
+    "kind": "name",
+    "forms": [
+      "MRI machines",
+      "MRI"
+    ],
+    "text": "MRI stands for magnetic resonance imaging. The machine is a huge, powerful magnet: it lines up the water molecules in your body, then reads the faint signal they give off and builds a picture from it. It shows soft parts like the brain that X-rays capture poorly, and it is the loud tube-shaped machine you may have seen in hospital dramas.",
+    "audio": true
+  },
+  {
+    "k": "ingestible",
+    "t": "ingestible",
+    "kind": "word",
+    "forms": [
+      "ingestible"
+    ],
+    "text": "To ingest something is to take it into your body by swallowing, so an ingestible device is one built to be swallowed. Doctors already use ingestible cameras about the size of a large pill. The whole article is about how to power such devices safely.",
+    "audio": true
+  },
+  {
+    "k": "standard",
+    "t": "standard",
+    "kind": "word",
+    "forms": [
+      "standard"
+    ],
+    "text": "Standard here means ordinary, the usual kind everybody uses, rather than a rule or a flag. Standard batteries are the ones in your TV remote. A standard AA cell is the plain cylinder battery sold in every shop.",
+    "audio": true
+  },
+  {
+    "k": "inadvisable",
+    "t": "inadvisable",
+    "kind": "word",
+    "forms": [
+      "inadvisable"
+    ],
+    "text": "If something is inadvisable, it is a bad idea, the sort of thing nobody would advise you to do. Take the word apart: advisable means worth advising, and in- flips it to the opposite. The article is being dry when it says swallowing an ordinary battery is generally inadvisable.",
+    "audio": true
+  },
+  {
+    "k": "get-around",
+    "t": "get around",
+    "kind": "phrase",
+    "forms": [
+      "get around"
+    ],
+    "text": "To get around a problem is to find a way past it without really solving it. You get around a locked front door by using the back one. Engineers got around the poison problem not by making batteries safe, but by sealing them so they never touch the body.",
+    "audio": true
+  },
+  {
+    "k": "degrade",
+    "t": "degrade",
+    "kind": "word",
+    "forms": [
+      "degrade",
+      "degradable",
+      "degraded"
+    ],
+    "text": "To degrade is to break down slowly into simpler, smaller pieces. Cardboard left out in the rain degrades; plastic barely does. A degradable battery is one the body can take apart, and its degraded components are the leftover pieces nobody has traced yet.",
+    "audio": true
+  },
+  {
+    "k": "giovanni-traverso",
+    "t": "Giovanni Traverso",
+    "kind": "name",
+    "forms": [
+      "Giovanni Traverso"
+    ],
+    "text": "Giovanni Traverso is the researcher who led this study. He is both a doctor and an engineer, and his lab is known for building devices that are swallowed rather than injected. Scientific papers name the team leader first, so readers know whose work it is.",
+    "audio": true
+  },
+  {
+    "k": "mit",
+    "t": "Massachusetts Institute of Technology",
+    "kind": "name",
+    "forms": [
+      "Massachusetts Institute of Technology"
+    ],
+    "text": "The Massachusetts Institute of Technology, usually shortened to MIT, is a university near Boston famous for science and engineering. A great deal of everyday technology started in labs like its. Naming the university is a quick way of telling you how seriously to take the work.",
+    "audio": true
+  },
+  {
+    "k": "nature-chemical-engineering",
+    "t": "Nature Chemical Engineering",
+    "kind": "name",
+    "forms": [
+      "Nature Chemical Engineering"
+    ],
+    "text": "This is a scientific journal, a magazine where researchers publish new findings. Before a paper appears in one, other scientists who had nothing to do with it read it and try to poke holes in it, which is called peer review. So saying a result was published in a journal, on a given date, means it has already passed that check.",
+    "audio": true
+  },
+  {
+    "k": "voltage",
+    "t": "voltage",
+    "kind": "word",
+    "forms": [
+      "voltage"
+    ],
+    "text": "Voltage measures how hard a battery pushes electricity along a wire, and it is counted in volts. A standard AA cell pushes at about 1.5 volts; a wall socket pushes far harder. The paper battery managed slightly more push than an AA, which is why it could run real devices.",
+    "audio": true
+  },
+  {
+    "k": "aa-cell",
+    "t": "AA cell",
+    "kind": "name",
+    "forms": [
+      "AA cell"
+    ],
+    "text": "An AA cell is the ordinary finger-sized cylinder battery used in remotes, torches and game controllers. Cell is the proper word for one single battery unit. It is mentioned as a familiar yardstick, so you can judge how strong the new battery really is.",
+    "audio": true
+  },
+  {
+    "k": "magnesium",
+    "t": "magnesium",
+    "kind": "name",
+    "forms": [
+      "magnesium"
+    ],
+    "text": "Magnesium is a light silvery metal, and also a mineral your body genuinely needs in small amounts. It reacts readily, losing electrons to whatever is next to it, which is exactly what makes it useful in a battery. Because your body already handles magnesium, a little of it dissolving inside you is far less alarming than lithium would be.",
+    "audio": true
+  },
+  {
+    "k": "gut",
+    "t": "gut",
+    "kind": "word",
+    "forms": [
+      "gut",
+      "guts"
+    ],
+    "text": "Your gut is the long tube that food travels down, from the stomach onwards. It is the everyday word doctors use for the digestive system, not the gut of a gut feeling. Everything in this article happens inside one.",
+    "audio": true
+  },
+  {
+    "k": "current",
+    "t": "current",
+    "kind": "word",
+    "forms": [
+      "current"
+    ],
+    "text": "An electric current is the flow of electrons moving along a wire, and it is the current passing through, rather than the battery itself, that makes a device work. Be careful with this word: the other current, meaning happening now, is spelled exactly the same. Rivers have currents too, and it is the same idea of something flowing.",
+    "audio": true
+  },
+  {
+    "k": "electrons",
+    "t": "electrons",
+    "kind": "word",
+    "forms": [
+      "electrons"
+    ],
+    "text": "Electrons are tiny particles that sit around the outside of every atom and carry a negative electric charge. In certain chemical reactions, atoms of one material lose electrons and atoms of another gain them. When huge numbers of electrons flow the same way along a wire, that flow is electricity.",
+    "audio": true
+  },
+  {
+    "k": "reacts",
+    "t": "reacts",
+    "kind": "word",
+    "forms": [
+      "reacts"
+    ],
+    "text": "In chemistry, when two substances react they combine or swap parts and become something different. This is not the everyday react that means to respond to some news. The magnesium reacts with the material beside it, and in doing so it loses electrons.",
+    "audio": true
+  },
+  {
+    "k": "gelatine-capsule",
+    "t": "gelatine capsule",
+    "kind": "name",
+    "forms": [
+      "gelatine capsule"
+    ],
+    "text": "A capsule is the small smooth container a medicine is packed into so it slides down easily. Gelatine is the wobbly substance made from animal collagen, the same stuff as in jelly sweets, and it melts once it is inside you. Americans spell it gelatin.",
+    "audio": true
+  },
+  {
+    "k": "payloads",
+    "t": "payloads",
+    "kind": "word",
+    "forms": [
+      "payloads"
+    ],
+    "text": "A payload is the useful cargo something carries, as opposed to the machinery doing the carrying. A rocket's payload is the satellite on top; a delivery van's payload is the parcels. In the spare room left inside the capsule, the payload could be a dose of medicine.",
+    "audio": true
+  },
+  {
+    "k": "rfid",
+    "t": "radio-frequency identification (RFID)",
+    "kind": "name",
+    "forms": [
+      "radio-frequency identification",
+      "RFID"
+    ],
+    "text": "RFID is a way of identifying something without touching it: a tiny tag holds an ID number and sends it back whenever a reader nearby beams radio waves at it. Shop security tags, bus passes, hotel key cards and the microchip in a pet all work this way. The researchers used one as a simple test, because if the tag answers, the battery must be delivering power.",
+    "audio": true
+  },
+  {
+    "k": "mimic",
+    "t": "mimic",
+    "kind": "word",
+    "forms": [
+      "mimic"
+    ],
+    "text": "To mimic something is to copy it closely, so that one thing can stand in for another. In nature a harmless fly can mimic a wasp's stripes. A pig's gut is said to mimic a human's because it is close enough in size and workings for the test to mean anything.",
+    "audio": true
+  },
+  {
+    "k": "approach",
+    "t": "approach",
+    "kind": "word",
+    "forms": [
+      "approach"
+    ],
+    "text": "An approach here is a way of doing something, a method, not the act of coming closer. Doctors have several approaches to a stomach that empties too slowly, and one of them is a nudge of electricity. Watch for this word: in serious writing it nearly always means method.",
+    "audio": true
+  },
+  {
+    "k": "gastric-juices",
+    "t": "gastric juices",
+    "kind": "name",
+    "forms": [
+      "gastric juices"
+    ],
+    "text": "Gastric means to do with the stomach. Gastric juices are the liquids your stomach makes to break food apart, and they include hydrochloric acid, strong enough to dissolve metal. They are what finally soaked past the battery's wax coating.",
+    "audio": true
+  },
+  {
+    "k": "yasser-khan",
+    "t": "Yasser Khan",
+    "kind": "name",
+    "forms": [
+      "Yasser Khan"
+    ],
+    "text": "Yasser Khan is a researcher at the University of Southern California who works on this kind of technology. The article is careful to say he was not involved in the study. Reporters ask an outside expert on purpose, because someone with nothing to gain will say plainly what is still missing.",
+    "audio": true
+  },
+  {
+    "k": "end-up",
+    "t": "end up",
+    "kind": "phrase",
+    "forms": [
+      "end up"
+    ],
+    "text": "To end up somewhere is to finish in that place, often without having planned to. You mean to tidy your room and end up reading old comics. Researchers do not yet know where the dissolved pieces of the battery end up inside the body.",
+    "audio": true
+  },
+  {
+    "k": "breaks-down",
+    "t": "breaks down",
+    "kind": "phrase",
+    "forms": [
+      "breaks down"
+    ],
+    "text": "When a substance breaks down, it comes apart into simpler pieces, the way food breaks down in your stomach. This is not the breaks down that a car does by the side of the road. What exactly the battery breaks down into is the thing nobody has measured yet.",
+    "audio": true
+  },
+  {
+    "k": "irritates",
+    "t": "irritates",
+    "kind": "word",
+    "forms": [
+      "irritates"
+    ],
+    "text": "In medicine, to irritate a part of the body is to leave it sore, red and swollen, not to annoy it. Rough wool irritates skin. Dr Khan wants to know whether the battery's leftovers irritate the lining of the gut.",
+    "audio": true
+  },
+  {
+    "k": "cells",
+    "t": "cells",
+    "kind": "word",
+    "forms": [
+      "cells"
+    ],
+    "text": "Careful here: a cell in a battery is a single unit that makes electricity, and it has nothing to do with the cells your body is built from. Experimental cells means new kinds of battery being tried out. The same word covers both because cell originally just meant a small enclosed space.",
+    "audio": true
+  },
+  {
+    "k": "riboflavin",
+    "t": "riboflavin",
+    "kind": "name",
+    "forms": [
+      "riboflavin"
+    ],
+    "text": "Riboflavin is vitamin B2, found in milk, eggs and leafy greens, and your body uses it to turn food into energy. It is bright yellow, which is why some vitamin drinks look like highlighter pen. It is used in these batteries because it passes electrons along easily and is completely safe to eat.",
+    "audio": true
+  },
+  {
+    "k": "nori",
+    "t": "nori",
+    "kind": "name",
+    "forms": [
+      "nori"
+    ],
+    "text": "Nori is the thin dark seaweed wrapped around sushi rolls, sold dried in flat sheets. It is an everyday food across east Asia. Being a food is the whole point here: a battery built from it can be swallowed without worry.",
+    "audio": true
+  },
+  {
+    "k": "juice",
+    "t": "juice",
+    "kind": "word",
+    "forms": [
+      "juice"
+    ],
+    "text": "Juice is a casual word for electrical power. Saying a battery does not yet make enough juice means it is too weak to run anything useful. The article picks the word partly as a joke, since this battery really is made of food.",
+    "audio": true
+  },
+  {
+    "k": "cleared",
+    "t": "cleared",
+    "kind": "word",
+    "forms": [
+      "cleared"
+    ],
+    "text": "To be cleared for something is to be officially approved for it by the people in charge. A plane is cleared for take-off. This food battery is cleared for human consumption, meaning safety officials agree a person may swallow it.",
+    "audio": true
+  },
+  {
+    "k": "lithium",
+    "t": "lithium",
+    "kind": "name",
+    "forms": [
+      "lithium"
+    ],
+    "text": "Lithium is the light metal inside most rechargeable batteries, including the one in your phone. It stores a lot of energy for its weight, which is why it won out, but it reacts violently with water and is harmful to swallow. Less lithium, more lunch is a joke about swapping it for food.",
+    "audio": true
+  }
+]
