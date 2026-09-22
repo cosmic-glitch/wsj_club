@@ -1,0 +1,361 @@
+[
+  {
+    "k": "oversight",
+    "t": "oversight",
+    "kind": "vocab",
+    "pron": "OH-ver-syte",
+    "forms": [
+      "oversight"
+    ],
+    "text": "Oversight is the watching-over of someone's work by people with the power to stop it — a committee, a regulator, a board whose approval you need before you may proceed. Beware the trap: the same word also means a mistake made by failing to notice something, which is nearly the opposite idea, and only context tells you which is meant. Here it is the supervision sense: experiments on human tissue must already clear an ethics review, and Pasca's team went looking for extra expert opinions on top of that.",
+    "audio": true
+  },
+  {
+    "k": "scrutiny",
+    "t": "scrutiny",
+    "kind": "vocab",
+    "pron": "SKROO-tuh-nee",
+    "forms": [
+      "scrutiny"
+    ],
+    "text": "Scrutiny is close, critical examination — not a glance but a going-over by someone hunting for what is wrong. Serious writing uses it constantly: a nominee's record comes under scrutiny, a company's accounts face renewed scrutiny. In the article's closing line it means the ethical review an experiment has to survive before anyone is permitted to run it, and the writer's verdict is that a version done in monkeys would not survive one.",
+    "audio": true
+  },
+  {
+    "k": "compensate",
+    "t": "compensate",
+    "kind": "vocab",
+    "pron": "KOM-pen-sayt",
+    "forms": [
+      "compensating"
+    ],
+    "text": "To compensate is to make up for something missing or lost, offsetting a shortfall so the total comes out closer to even. The money sense you already know — a company compensates you for your work — is that same idea narrowed to cash. The compensating human cells here are the neurons dropped into the gap where the mouse's own cortex was never allowed to grow; the comparison group has the gap with nothing filling it.",
+    "audio": true
+  },
+  {
+    "k": "xenotransplantation",
+    "t": "xenotransplantation",
+    "kind": "name",
+    "forms": [
+      "Xenotransplantation"
+    ],
+    "text": "Xenotransplantation is moving an organ or tissue from one species into another, from the Greek xeno-, meaning foreign or strange. The familiar direction is animal into human: surgeons have put pig kidneys and pig hearts into patients whose own organs were failing, because donor organs are scarce. This article is about the far rarer reverse direction, human tissue placed into an animal, which is done to study disease rather than to save the animal.",
+    "audio": true
+  },
+  {
+    "k": "the-other-way-round",
+    "t": "the other way round",
+    "kind": "phrase",
+    "forms": [
+      "the other way round"
+    ],
+    "text": "The other way round means with the order or direction reversed — Americans usually say the other way around, and British writers, including The Economist, drop the a. It is a compact way to flip a whole idea without restating it. Having just described organs going from animal into human, the writer asks about the other way round, meaning human into animal.",
+    "audio": true
+  },
+  {
+    "k": "distinction",
+    "t": "distinction",
+    "kind": "word",
+    "forms": [
+      "distinction"
+    ],
+    "text": "A distinction is a difference between two things, especially one that matters for the argument being made. It has a second, unrelated sense — an honour or award, as in graduating with distinction — so do not read praise into it here. With one crucial distinction signals that what follows is almost the thing just described, except for one difference that changes everything: not whole human organs, but organoids.",
+    "audio": true
+  },
+  {
+    "k": "organoids",
+    "t": "organoid",
+    "kind": "name",
+    "forms": [
+      "organoids",
+      "organoid"
+    ],
+    "text": "An organoid is a tiny, simplified version of an organ grown in a dish from stem cells, typically no bigger than a pinhead. It is not a working organ you could transplant to keep someone alive; it is a small clump of the right cell types, arranged in roughly the right layers, that behaves enough like the real thing to study. The ones in this story are made of brain cells, which is what lets researchers watch human brain tissue develop without experimenting on a person.",
+    "audio": true
+  },
+  {
+    "k": "stem-cells",
+    "t": "stem cells",
+    "kind": "name",
+    "forms": [
+      "stem cells"
+    ],
+    "text": "A stem cell is a cell that has not yet specialised into a particular type, so it can still become several of them depending on the chemical signals it receives. Ordinary adult cells can also be reset back into this state — a discovery that won a Nobel prize — which is how a skin cell can be turned into the starting material for brain tissue. That reset is the first step in this experiment: skin, back to stem cells, forward into neurons.",
+    "audio": true
+  },
+  {
+    "k": "in-turn",
+    "t": "in turn",
+    "kind": "phrase",
+    "forms": [
+      "in turn"
+    ],
+    "text": "In turn links a chain of steps, meaning that the thing just mentioned itself came from, or itself causes, the next thing. Writers use it to compress a sequence: rates rose, which in turn cooled the housing market. Here it marks a two-step origin — the organoids came from stem cells, and those stem cells in turn came from human skin.",
+    "audio": true
+  },
+  {
+    "k": "in-question",
+    "t": "in question",
+    "kind": "phrase",
+    "forms": [
+      "in question"
+    ],
+    "text": "In question, placed after a noun, means the particular one we are discussing right now, as opposed to any other. It is a formal pointing device: the witness in question, the year in question. Note that it does not mean doubtful here; that is the separate phrase to call something into question.",
+    "audio": true
+  },
+  {
+    "k": "xenocortication",
+    "t": "xenocortication",
+    "kind": "name",
+    "forms": [
+      "Xenocortication",
+      "Xenocortical"
+    ],
+    "text": "Xenocortication is the name Dr Pasca coined for this specific procedure: xeno- for foreign, cortic- for the cortex, the brain's outer layer. It means replacing an animal's developing cortex with cortex-like tissue from another species — here, human. A xenocortical mouse is one that has had it done, so its cortex and hippocampus are built from human neurons.",
+    "audio": true
+  },
+  {
+    "k": "sergiu-pasca",
+    "t": "Sergiu Pasca",
+    "kind": "name",
+    "forms": [
+      "Sergiu Pasca",
+      "Dr Pasca",
+      "Pasca"
+    ],
+    "text": "Sergiu Pasca is a neuroscientist at Stanford University who leads the laboratory behind this work. He is known for growing human brain organoids and for transplanting them into rodents to watch human neurons develop. The article refers to him as Dr Pasca after the first mention, in The Economist's style.",
+    "audio": true
+  },
+  {
+    "k": "nature",
+    "t": "Nature",
+    "kind": "name",
+    "forms": [
+      "Nature"
+    ],
+    "text": "Nature here is not the natural world but a journal — one of the two or three most prestigious scientific publications in the world, alongside Science. Getting a paper into it means the work survived review by other specialists and was judged important, which is why journalists mention the journal by name. Saying a result was published in Nature is shorthand for saying it should be taken seriously.",
+    "audio": true
+  },
+  {
+    "k": "neurons",
+    "t": "neurons",
+    "kind": "name",
+    "forms": [
+      "neurons",
+      "neural"
+    ],
+    "text": "Neurons are the cells that carry signals through the brain and nervous system, each one connecting to thousands of others at junctions where chemicals pass between them. Thinking, remembering and moving all come down to patterns of those signals. Neural is the matching adjective, so neural tissue simply means tissue made of nerve cells.",
+    "audio": true
+  },
+  {
+    "k": "cerebral-cortex",
+    "t": "cerebral cortex",
+    "kind": "name",
+    "forms": [
+      "cerebral cortex",
+      "cortex"
+    ],
+    "text": "The cerebral cortex is the brain's outer layer, a folded sheet of neurons a few millimetres thick wrapped around everything beneath it. It handles the slow, deliberate work — perceiving, reasoning, planning, language — and it is proportionally far larger in humans than in mice. Because it is the layer most associated with human thought, it is also the layer researchers most want to study and the one they most worry about changing.",
+    "audio": true
+  },
+  {
+    "k": "hippocampus",
+    "t": "hippocampus",
+    "kind": "name",
+    "forms": [
+      "hippocampus"
+    ],
+    "text": "The hippocampus is a curved structure deep in the brain that is essential for forming new memories and for navigating space. Its name is Greek for seahorse, which is roughly what its shape suggests. It is one of the first regions damaged in Alzheimer's disease, which is part of why an experiment aimed at dementia targets it alongside the cortex.",
+    "audio": true
+  },
+  {
+    "k": "void",
+    "t": "void",
+    "kind": "word",
+    "forms": [
+      "void"
+    ],
+    "text": "A void is an empty space where something might otherwise be, whether physical or figurative — a void in the rock, a void left by a friend moving away. As an adjective it means legally worthless, as in a contract is void, which is a different use. Here it is literal and physical: engineering stopped the mouse's own cortex cells from developing, leaving an actual gap in the skull for the human organoid to fill.",
+    "audio": true
+  },
+  {
+    "k": "tissue",
+    "t": "tissue",
+    "kind": "word",
+    "forms": [
+      "tissue"
+    ],
+    "text": "In biology, tissue means a mass of similar cells working together as a material — muscle tissue, nerve tissue, scar tissue — not the paper you blow your nose into. It sits between the single cell and the whole organ in scale. Human neural tissue here means a quantity of living human nerve cells, which is exactly why the ethical questions in the last paragraphs arise.",
+    "audio": true
+  },
+  {
+    "k": "march-to-the-beat-of-an-internal-drum",
+    "t": "march to the beat of an internal drum",
+    "kind": "phrase",
+    "forms": [
+      "march to the beat of an internal drum"
+    ],
+    "text": "This plays on the standard idiom to march to the beat of your own drum, meaning to go at your own pace regardless of what everyone around you is doing. The writer swaps in internal to make a literal biological point rather than a personality one. Human neurons keep their own developmental timetable even inside a mouse, so for months they are still behaving like cells in a fetus while the mouse around them grows up.",
+    "audio": true
+  },
+  {
+    "k": "hypoxia-induced",
+    "t": "hypoxia-induced",
+    "kind": "name",
+    "forms": [
+      "hypoxia-induced"
+    ],
+    "text": "Hypoxia means too little oxygen reaching the body's tissues, from Greek roots meaning under and oxygen. Adding -induced to any cause means brought on by it, so hypoxia-induced damage is damage caused by oxygen starvation. Brain cells are among the first to die when oxygen runs short, which is why a difficult birth that briefly cuts off a baby's supply can cause lasting harm.",
+    "audio": true
+  },
+  {
+    "k": "cerebral-palsy",
+    "t": "cerebral palsy",
+    "kind": "name",
+    "forms": [
+      "cerebral palsy"
+    ],
+    "text": "Cerebral palsy is a lifelong condition caused by damage to the developing brain, usually around the time of birth, that affects movement, muscle tone and balance. Cerebral means of the brain and palsy is an old word for weakness or loss of control. It is not a disease that spreads or worsens on its own — the injury happens once, and its effects persist.",
+    "audio": true
+  },
+  {
+    "k": "susceptible",
+    "t": "susceptible",
+    "kind": "word",
+    "forms": [
+      "susceptible"
+    ],
+    "text": "To be susceptible to something is to be unusually open to being affected or harmed by it — more vulnerable than average. You meet it in medicine, where some people are susceptible to infection, and in argument, where someone is susceptible to flattery. The point here is that human neurons are damaged by oxygen starvation more readily than mouse neurons are, which is precisely what makes a mouse with human neurons worth building.",
+    "audio": true
+  },
+  {
+    "k": "murine",
+    "t": "murine",
+    "kind": "word",
+    "forms": [
+      "murine"
+    ],
+    "text": "Murine means of or relating to mice and rats, the way canine means of dogs and bovine means of cattle. Scientists reach for these Latin-derived adjectives to be precise about which species a cell or a result belongs to. The sentence is drawing a sharp line: after oxygen deprivation the animal's human neurons were damaged while its murine ones came through unharmed.",
+    "audio": true
+  },
+  {
+    "k": "controls",
+    "t": "controls",
+    "kind": "word",
+    "forms": [
+      "controls"
+    ],
+    "text": "In an experiment, controls are the subjects left untouched or given the standard treatment, so that you have something to measure your altered group against. Without them a result is meaningless: you cannot tell whether the change came from your intervention or would have happened anyway. This study used two comparison groups — ordinary unengineered mice, and mice missing a cortex but given no human cells — so any difference can be pinned to the human tissue itself.",
+    "audio": true
+  },
+  {
+    "k": "conditions",
+    "t": "conditions",
+    "kind": "word",
+    "forms": [
+      "conditions"
+    ],
+    "text": "In a medical context a condition is an illness or disorder, especially a long-lasting one — a heart condition, a neurological condition. That is a distinct sense from the everyday ones, such as circumstances (icy conditions) or requirements (on one condition). When the article says the researchers plan to look into several conditions, it means several diseases, and it lists them: cerebral palsy, dementia, epilepsy and autism.",
+    "audio": true
+  },
+  {
+    "k": "in-their-sights",
+    "t": "in their sights",
+    "kind": "phrase",
+    "forms": [
+      "in their sights"
+    ],
+    "text": "To have something in your sights is to have it as your next target, from the sights on a rifle that you line up before shooting. In ordinary use it is about ambition rather than violence: a runner has the school record in her sights. Here it means the conditions the researchers intend to tackle next, once the cerebral-palsy work is done.",
+    "audio": true
+  },
+  {
+    "k": "test-beds",
+    "t": "test bed",
+    "kind": "name",
+    "forms": [
+      "test beds"
+    ],
+    "text": "A test bed is a controlled setting built specifically for trying something out before it is used for real — engineers run a new engine on a test bed rather than in a flying aircraft. The phrase has spread from engineering into medicine and software. Calling these mice test beds for drugs means each animal is a testing rig in which a candidate drug can be tried on human neurons.",
+    "audio": true
+  },
+  {
+    "k": "duds",
+    "t": "duds",
+    "kind": "word",
+    "forms": [
+      "duds"
+    ],
+    "text": "A dud is something that fails to work — originally a shell or firework that does not go off, now anything that flops. It is informal, and dropping it into a sentence about pharmaceuticals is a deliberate bit of bluntness. The duds here are drug molecules that looked promising in mice and then did nothing in people, after years of work and enormous expense.",
+    "audio": true
+  },
+  {
+    "k": "over-and-above",
+    "t": "over and above",
+    "kind": "phrase",
+    "forms": [
+      "over and above"
+    ],
+    "text": "Over and above means in addition to, on top of what is already required or already counted. It usually carries a note of going further than expected: she does this over and above her regular hours. So the team consulted neuroscientists, legal scholars and patient advocates on top of the ethics review the work had to pass anyway.",
+    "audio": true
+  },
+  {
+    "k": "mitigated",
+    "t": "mitigate",
+    "kind": "word",
+    "forms": [
+      "mitigated"
+    ],
+    "text": "To mitigate something is to make it less severe — not to remove it, but to soften it. You mitigate a risk, a punishment, a loss; a lawyer argues mitigating circumstances to reduce a sentence rather than to win an acquittal. The careful choice of word matters here: the risk of something recognisably human emerging is greatly mitigated, meaning made small, not declared impossible.",
+    "audio": true
+  },
+  {
+    "k": "cranium",
+    "t": "cranium",
+    "kind": "word",
+    "forms": [
+      "cranium"
+    ],
+    "text": "The cranium is the skull, specifically the domed part that encloses the brain, and cranial is its adjective. It is the formal anatomical term, used when the writer wants precision about the bony container rather than the head in general. The argument depends on its size: a mouse cranium simply has no room for more than a small number of human neurons.",
+    "audio": true
+  },
+  {
+    "k": "common-ancestor",
+    "t": "common ancestor",
+    "kind": "name",
+    "forms": [
+      "common ancestor"
+    ],
+    "text": "A common ancestor is the species from which two living species both descend — the fork in the family tree where their lines separated. Every pair of organisms on Earth has one somewhere back in time, and how long ago it lived measures how distantly related they are. Mice and humans last shared one about 70m years ago, which is why their brains, for all the shared machinery, are built to different plans.",
+    "audio": true
+  },
+  {
+    "k": "were-someone-to-try",
+    "t": "were someone to try",
+    "kind": "phrase",
+    "forms": [
+      "Were someone to try"
+    ],
+    "text": "This is a formal inversion that replaces an if: were someone to try means if someone were to try. Flipping the verb to the front and dropping the if is a standard move in careful written English, and you will meet it often — had I known, should you need help, were it not for the rain. Recognising the pattern keeps the sentence from reading as a question.",
+    "audio": true
+  },
+  {
+    "k": "calculation",
+    "t": "calculation",
+    "kind": "word",
+    "forms": [
+      "calculation"
+    ],
+    "text": "A calculation is not always arithmetic; it can be the weighing-up of risks and benefits that leads to a decision. Politicians make a calculation about when to call an election, and no numbers need be involved. That calculation would change means the balance of ethical arguments that currently makes this acceptable in mice would come out differently in a monkey, whose brain is far closer to ours.",
+    "audio": true
+  },
+  {
+    "k": "70m",
+    "t": "70m",
+    "kind": "word",
+    "forms": [
+      "70m"
+    ],
+    "text": "The Economist writes large numbers with a lowercase m for million and bn for billion, so 70m years means 70 million years. It is a house style you will meet throughout the paper — 3m viewers, $4bn in sales. Read it as million, not metres.",
+    "audio": true
+  }
+]

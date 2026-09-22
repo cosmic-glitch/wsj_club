@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-22",
+  "title": "Researchers have created a mouse with a partly human brain",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/16/researchers-have-created-a-mouse-with-a-partly-human-brain",
+  "articlePageUrl": "/articles/2026-09-22.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "oversight",
+      "partOfSpeech": "noun",
+      "pronunciation": "OH-ver-syte",
+      "articleQuote": "The team has consulted a range of experts, including neuroscientists, legal scholars and patient advocates, over and above the normal ethical oversight that would be applied to work like this.",
+      "meaning": "Oversight is the watching-over of someone's work by people with the authority to stop it — a committee, a regulator, a board that has to approve what you do before you do it. Watch out for the trap: the same word also means a mistake made by not noticing something (*\"my failure to reply was an oversight\"*), which is almost the opposite idea, and you tell them apart by context. Here it is the supervision sense — every experiment on human tissue already has to clear an ethics board, and the article's point is that Pasca's team went looking for extra opinions *on top of* that required review.",
+      "examples": [
+        "The student council can spend its own budget, but every purchase over $200 needs oversight from the principal.",
+        "After the second cheating scandal, the league added oversight: an outside referee now reviews every disputed call."
+      ]
+    },
+    {
+      "word": "scrutiny",
+      "partOfSpeech": "noun",
+      "pronunciation": "SKROO-tuh-nee",
+      "articleQuote": "Such an experiment would certainly not pass ethical scrutiny.",
+      "meaning": "Scrutiny is close, critical examination — not a glance but a going-over by someone looking hard for what is wrong. You meet it constantly in serious writing: a nominee's record comes *under scrutiny*, a company's accounts face *renewed scrutiny*. In the article's last paragraph it names the review an experiment has to survive before anyone is allowed to run it, and the writer's flat verdict is that putting human brain tissue into a monkey would not survive one.",
+      "examples": [
+        "His excuse sounded fine at first, but it fell apart under scrutiny — the movie he claimed to be at ended two hours earlier.",
+        "Every record-breaking swim is filmed from four angles, so the time is only official after it survives scrutiny."
+      ]
+    },
+    {
+      "word": "compensate",
+      "partOfSpeech": "verb",
+      "pronunciation": "KOM-pen-sayt",
+      "articleQuote": "Comparing their behaviour with that of both unengineered controls and those lacking a cortex and hippocampus, but without compensating human cells, confirms the varied effect.",
+      "meaning": "To compensate is to make up for something that is missing or lost — to offset a shortfall so the total comes out closer to even. The money sense you already know (a company compensates you for your work) is the same idea narrowed to cash; the broader sense is the one that shows up in science and argument. Here the *compensating* cells are the human neurons dropped into the gap where the mouse's own cortex was never allowed to grow, and the experiment's third group is the one that has the gap **without** anything filling it.",
+      "examples": [
+        "She sprained her ankle, so she compensated by leaning on her left leg — and by the fourth mile her left knee hurt too.",
+        "Our band lost its drummer a week before the show, and no amount of extra guitar could compensate for the missing beat."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Stem cells",
+      "articleQuote": "they have been transplanting, into mice, not actual human organs (which would be both unethical and physically impossible) but \"organoids\" grown from stem cells that derive, in turn, from human skin",
+      "meaning": "Here is the puzzle buried in that sentence: the human brain tissue in these mice started out as a piece of somebody's **skin**. How does skin become a brain?\n\nThe biology that answers it is cell development. Almost every cell in your body carries the same complete set of genes, but a skin cell has only a fraction of them switched on, and a neuron has a different fraction switched on. That is what makes them different shapes doing different jobs — the genes that are running determine which proteins the cell builds. A **stem cell** is a cell that has not yet had that narrowing happen: its options are still open, and which type it ends up as depends on the chemical signals reaching it.\n\nThe part that won a Nobel prize is that the narrowing can be *reversed*. Add the right handful of proteins to an ordinary adult skin cell and it resets into a stem cell again. From there, a different bath of chemicals switches on the genes that build nerve cells instead. Grow those in a dish and they do not stay a flat smear — they clump, layer themselves and wire up into a pinhead-sized ball of real human brain tissue. That ball is an **organoid**: a *miniature*, simplified version of an organ, grown rather than cut out of anybody.\n\nSo when you read that a lab \"grew human neurons,\" picture that chain — skin cell, reset, redirected, grown — and the reason it matters is that the tissue is genuinely human and no human had to be harmed to get it."
+    },
+    {
+      "name": "Animal models",
+      "articleQuote": "Testing neurological pharmaceuticals in unmodified animals has a notorious record of highlighting molecules that then turn out to be duds.",
+      "meaning": "A new drug cannot go straight into people, so medicine long ago settled on a stand-in: an **animal model**, usually a mouse bred or engineered to carry a version of the disease you care about. Give the mice the drug, and if their symptoms ease you have reason to try it in humans. The mouse is standing in for the patient.\n\nThe stand-in is where it breaks. A mouse given a mouse-ish imitation of Alzheimer's is not a person with Alzheimer's — its brain is built differently and its version of the illness was installed artificially. So molecules clear the mouse stage looking like winners, cost hundreds of millions of dollars and years of trials, and then do nothing in people. That is what the article means by *duds*, and in brain medicine the failure rate is spectacular: the great majority of neurological drugs that work in mice fail in humans.\n\nThis is the whole reason for the mice in this story. If the neurons being poisoned by lack of oxygen, or attacked by dementia, are *actual human neurons* rather than mouse ones, then the drug is being tested on the right tissue even though the animal around it is a mouse. It is an attempt to fix the weakest link rather than to replace the system.\n\nThe transferable lesson: whenever a result comes from a stand-in — a mouse for a patient, a practice test for the real exam, a simulation for a battlefield — the first question is not *did it work* but *how good is the stand-in*."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did Pasca's team actually transplant into the mice?",
+      "options": [
+        "Whole human brains taken from donors",
+        "Organoids — small balls of human brain tissue grown from stem cells that came from human skin",
+        "Mouse brain cells that had been genetically relabelled as human",
+        "A computer chip that simulates human neurons"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article is explicit that transplanting actual human organs would be \"both unethical and physically impossible\", so the team used organoids grown from stem cells derived from human skin."
+    },
+    {
+      "question": "How did the researchers make room in the mouse's head for the human tissue?",
+      "options": [
+        "They surgically removed part of the adult mouse's brain",
+        "They used an unusually large breed of mouse",
+        "They engineered the mouse's genes so most cells of its cerebral cortex and hippocampus never developed",
+        "They shrank the human organoid until it fit alongside a normal mouse brain"
+      ],
+      "answerIndex": 2,
+      "explanation": "The trick was genetic: the mouse's own cortex and hippocampus cells were stopped from developing, and the organoid was transplanted into the void that left, in the first few days after birth."
+    },
+    {
+      "question": "In \"the normal ethical oversight that would be applied to work like this\", what does *oversight* mean?",
+      "options": [
+        "An error made by failing to notice something",
+        "Supervision and review by people with authority over the work",
+        "A published summary of an experiment's results",
+        "The cost of running an experiment"
+      ],
+      "answerIndex": 1,
+      "explanation": "*Oversight* has two nearly opposite senses; here it is the supervision sense — the ethics review such work must already pass, which the team went beyond by consulting extra experts."
+    },
+    {
+      "question": "Why does the article say a mouse carrying human neurons is more useful for drug testing than an ordinary mouse?",
+      "options": [
+        "Because the human cells make the mouse live much longer",
+        "Because the drug can then be tested on genuinely human tissue, which ordinary animal models fail to represent",
+        "Because human neurons are cheaper to grow than mouse neurons",
+        "Because the mouse can be asked to report how it feels"
+      ],
+      "answerIndex": 1,
+      "explanation": "Testing neurological drugs in unmodified animals has \"a notorious record\" of flagging molecules that turn out to be duds, so putting real human neurons in the animal targets that weakness."
+    },
+    {
+      "question": "Which reason does the article give for thinking no \"uniquely human quality\" will emerge in these mice?",
+      "options": [
+        "The human neurons are switched off except during experiments",
+        "The organoids are grown from skin rather than from brain tissue",
+        "The mismatch in developmental pace, the small number of human neurons a mouse skull holds, and 70m years of evolutionary distance",
+        "The mice are kept isolated from humans"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article lists exactly those three mitigating factors — differing developmental speeds, how few human neurons fit in a mouse cranium, and the roughly 70m years since mice and humans shared an ancestor."
+    }
+  ]
+}
