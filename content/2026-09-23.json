@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-23",
+  "title": "How middle powers are rethinking espionage",
+  "articleUrl": "https://www.economist.com/international/2026/09/22/how-middle-powers-are-rethinking-espionage",
+  "articlePageUrl": "/articles/2026-09-23.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "wherewithal",
+      "partOfSpeech": "noun",
+      "pronunciation": "WAIR-with-awl",
+      "articleQuote": "They and others disbelieved America’s and Britain’s warnings of an impending Russian attack, but lacked the wherewithal to check for themselves.",
+      "meaning": "Wherewithal is what you need in order to actually do a thing — the money, the people, the equipment, the know-how. It is about practical means rather than desire, which is why it almost always arrives with *lacked* or *didn't have* in front of it: you can want something badly and have no wherewithal for it. In the article it names exactly what French and German spies were missing in February 2022 — they doubted the American and British warnings that Russia was about to invade Ukraine, but had no spy network of their own good enough to go and find out, so disbelieving was all they could do.",
+      "examples": [
+        "Our robotics team had the design finished in October but not the wherewithal to build it — no budget, no lathe, and nobody who could weld.",
+        "She had the wherewithal to fix the flat herself: a spare tube, tyre levers, and an older brother who had shown her twice."
+      ]
+    },
+    {
+      "word": "ambivalent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "am-BIV-uh-lunt",
+      "articleQuote": "Spy chiefs are ambivalent about whether such changes might lead to a European Five Eyes.",
+      "meaning": "To be ambivalent is to hold two opposite feelings about the same thing at the same time — genuinely pulled toward it *and* away from it. Watch the trap, because it is the most common misuse of the word: people reach for it as a fancy way of saying they don't care, but indifference is having *no* feeling and ambivalence is having too much feeling, in both directions at once. The article uses it exactly right. Europe's spy chiefs can see that a European version of Five Eyes would make them stronger, and also that every extra country you tell a secret to is one more place the secret can leak from — so they neither campaign for it nor rule it out.",
+      "examples": [
+        "I'm ambivalent about moving up to varsity: better coaching, but I'd go from starting every game to watching from the bench.",
+        "She was ambivalent about the move abroad — thrilled about living somewhere new, wrecked about leaving her friends."
+      ]
+    },
+    {
+      "word": "nominally",
+      "partOfSpeech": "adverb",
+      "pronunciation": "NOM-uh-nuh-lee",
+      "articleQuote": "The body nominally in charge of them, the Cabinet Intelligence and Research Office (CIRO), has typically been entrusted to former domestic security-police officers.",
+      "meaning": "Nominally means in name only — the way something is officially listed, when the reality is different. It comes from the Latin for *name*, and in journalism it works as a quiet warning shot: when you meet \"nominally independent\" or \"nominally in charge\", expect the next clause to undercut it. Here it does that to Japan's spy bureaucracy. On the organisation chart CIRO runs the country's intelligence effort; in practice the agencies pass each other paper copies, and the office itself usually goes to a former security-police officer rather than a spymaster.",
+      "examples": [
+        "The newspaper is nominally student-run, but the principal reads every article before it goes to print.",
+        "He is nominally the starting goalkeeper, though he has spent the season as a substitute and hasn't played a minute."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "HUMINT and SIGINT",
+      "articleQuote": "Peers admire Britain’s ability to fuse intelligence from humans (HUMINT) with signals (SIGINT) and other information from multiple agencies.",
+      "meaning": "Two of the words this article leans on hardest are never explained, and they name two completely different jobs. In intelligence work — the government business of finding out what other governments are really doing — **HUMINT** is short for *human intelligence* and **SIGINT** for *signals intelligence*.\n\nHUMINT is a person telling you something. An officer working under diplomatic cover spends two years getting to know a mid-ranking official in another country's defence ministry and eventually persuades them to pass on what was said in a closed meeting. It is slow, it puts the source in danger, and it is the only way to reach something that exists nowhere except inside somebody's head — what a leader is *planning*. SIGINT is information taken from transmitted signals: a phone call pulled out of the air, an encrypted message copied off an undersea cable, a radar pulse recorded and matched to the aircraft type that emits it. It scales in a way HUMINT never can, since one tapped cable yields more than a thousand agents could, but it only ever captures what somebody actually sent.\n\nThat is why the article treats *fusing* the two as the hard skill, and why Britain is admired for it. The intercept shows a Russian brigade moving its fuel trucks west; only a human source can say whether the general believes he is rehearsing or going to war. There is a third bucket worth knowing while you are here, OSINT — open-source intelligence, the published budget, the shipping database, the satellite photo anyone can buy — and Sweden's new agency is being built to blend all three, which is what Carl Bildt means by widening the aperture. So whenever you read that an agency \"knew\" something, ask which kind of knowing it was: a signal somebody transmitted, or a person's word."
+    },
+    {
+      "name": "The Five Eyes",
+      "articleQuote": "Britain helped to build the spy services of countries of the “Five Eyes” intelligence-sharing partnership with America, Australia, Canada and New Zealand.",
+      "meaning": "Secrets are the one thing countries guard hardest, so it is worth stopping on how odd the arrangement at the centre of this story is. The **Five Eyes** is a standing agreement — this is the territory of alliances and statecraft — under which America, Britain, Canada, Australia and New Zealand hand each other the raw take of their spy agencies as a matter of routine, instead of deciding case by case what to share. It grew out of a 1946 deal between the American and British codebreakers who had worked together during the second world war, and the three other English-speaking countries were folded in afterwards.\n\nWhat holds it together is the thing the article says cannot easily be copied: one language, decades of fighting side by side, and broadly compatible rules about what a spy agency may do. Because the five trust each other, they split the planet up rather than duplicate each other's work — each covers its own region and listens on its own share of the world's traffic — and each one gets the whole picture for the price of covering its patch.\n\nThat is also what makes two small-sounding details in the article serious. When Mr Trump's officials privately threaten to eject Canada, they are not withdrawing a courtesy; they are proposing to blind a country that never built a foreign spy service of its own, which is why a Canadian committee is now debating whether to start one. And when some in Tokyo hope Japan might become a \"Sixth Eye\", they are offering to pay the entry fee in the only currency the club accepts — intelligence on China that the others cannot easily get themselves. The lesson generalises past spying: the real measure of how much an alliance is worth to a country is what that country has stopped doing for itself, because that is exactly what it cannot quickly take back up."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why does the article open with Bruno Kahl's trip to Kyiv in February 2022?",
+      "options": [
+        "The head of Germany's foreign-intelligence service was certain Russia would not invade, and had to be smuggled out of his hotel when it did",
+        "He had warned Ukraine's leaders of the coming invasion, but they refused to meet him",
+        "He was captured by Russian forces in Kyiv and later exchanged for a Russian spy",
+        "He resigned after the date of the Russian invasion leaked from his agency to the press"
+      ],
+      "answerIndex": 0,
+      "explanation": "Kahl arrived on February 23rd 2022 sure there would be no invasion; Russian forces moved on Kyiv the next morning and allied spooks had to get him out — the article's opening image of how badly European services misread the crisis."
+    },
+    {
+      "question": "The article says French and German services \"lacked the wherewithal\" to check the American and British warnings themselves. What does that mean?",
+      "options": [
+        "They did not have the practical means — the networks and capability — to find out",
+        "They did not have the legal authority to investigate claims made by an ally",
+        "They were unwilling to believe anything that came from Washington or London",
+        "They had run out of time before the invasion began"
+      ],
+      "answerIndex": 0,
+      "explanation": "Wherewithal is the money, people and skill needed to do a thing; the point is that they doubted the warnings but had no spy network good enough to test them."
+    },
+    {
+      "question": "Which of these is the clearest example of SIGINT rather than HUMINT?",
+      "options": [
+        "Intercepting and decrypting another government's message traffic",
+        "Persuading a defence official to reveal what was said in a closed meeting",
+        "Reading a rival country's published defence budget",
+        "Sending a diplomat to a conference to gossip with foreign counterparts"
+      ],
+      "answerIndex": 0,
+      "explanation": "SIGINT is information taken from transmitted signals — intercepted calls, messages, radar — whereas the other three come from a person or from published sources."
+    },
+    {
+      "question": "According to the article, why would a European version of Five Eyes be hard to build?",
+      "options": [
+        "The more widely a secret is shared the less likely it stays secret, and Five Eyes rests on a common language and a long history of spying together that others cannot readily copy",
+        "EU law forbids member states from running foreign-intelligence agencies",
+        "No European country can afford to run a foreign-intelligence service of its own",
+        "Britain would be required to leave Five Eyes before it could join"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article makes both points — widely shared secrets leak, and the five's shared language and history of fighting and spying together cannot readily be replicated — while EU-level sharing of raw intelligence is called almost impossible."
+    },
+    {
+      "question": "Spy chiefs are described as \"ambivalent\" about a European Five Eyes. What does that tell you about them?",
+      "options": [
+        "They are pulled both ways — they can see the gains and the risks, so they neither push for it nor rule it out",
+        "They have no real opinion and think the question does not matter much",
+        "They are firmly opposed to the idea and say so publicly",
+        "They are keen on it but consider it politically impossible"
+      ],
+      "answerIndex": 0,
+      "explanation": "Ambivalence is holding two opposite feelings at once rather than indifference — Mr Lerner, for one, does not rule the idea out, even though no chief is campaigning for it."
+    }
+  ]
+}

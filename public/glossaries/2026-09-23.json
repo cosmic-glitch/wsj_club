@@ -1,0 +1,886 @@
+[
+  {
+    "k": "wherewithal",
+    "t": "wherewithal",
+    "kind": "vocab",
+    "pron": "WAIR-with-awl",
+    "forms": [
+      "wherewithal"
+    ],
+    "text": "Wherewithal is what you need in order to actually do something — the money, the people, the equipment, the know-how. It is about practical means rather than willingness, which is why it nearly always turns up after “lacked” or “didn’t have”. Here it names what French and German spies were missing in 2022: they doubted the warnings that Russia would invade, but had no spy network good enough to go and check for themselves.",
+    "audio": true
+  },
+  {
+    "k": "ambivalent",
+    "t": "ambivalent",
+    "kind": "vocab",
+    "pron": "am-BIV-uh-lunt",
+    "forms": [
+      "ambivalent"
+    ],
+    "text": "To be ambivalent is to hold two opposite feelings about the same thing at once — pulled toward it and away from it simultaneously. It does not mean indifferent, which is the usual mistake: indifference is having no feeling, ambivalence is having too much, in both directions. Europe’s spy chiefs can see that a European Five Eyes would make them stronger and that it would put their secrets in more hands, so they neither campaign for it nor rule it out.",
+    "audio": true
+  },
+  {
+    "k": "nominally",
+    "t": "nominally",
+    "kind": "vocab",
+    "pron": "NOM-uh-nuh-lee",
+    "forms": [
+      "nominally"
+    ],
+    "text": "Nominally means in name only — the way something is officially listed, when the reality is different. It comes from the Latin for “name”, and writers use it as a warning shot: after “nominally in charge” you should expect the next clause to undercut it. That is exactly what happens here, where the office supposedly running Japan’s intelligence effort is usually handed to a retired security policeman and the agencies swap paper copies.",
+    "audio": true
+  },
+  {
+    "k": "espionage",
+    "t": "espionage",
+    "kind": "word",
+    "forms": [
+      "espionage",
+      "anti-espionage",
+      "foreign-espionage"
+    ],
+    "text": "Espionage is spying: secretly obtaining information another government or company is trying to keep from you. The word is French in origin and carries a formal, legal weight that “spying” does not, which is why it appears in laws and treaties — an anti-espionage law makes it a crime to do it to us. Notice that the article uses “espionage” for the activity and “intelligence” for the product it yields.",
+    "audio": true
+  },
+  {
+    "k": "middle-power",
+    "t": "middle power",
+    "kind": "name",
+    "forms": [
+      "middle powers",
+      "Middle-power"
+    ],
+    "text": "A middle power is a country with real weight in the world but not enough to shape it alone — Japan, Canada, Germany, Sweden, Australia. The term sits between “great power” (America, China) and small states, and it usually implies a country that gets its way through alliances, trade and institutions rather than sheer force. The whole article is about what happens when middle powers stop trusting the great power that used to do their spying for them.",
+    "audio": true
+  },
+  {
+    "k": "five-eyes",
+    "t": "Five Eyes",
+    "kind": "name",
+    "forms": [
+      "Five Eyes"
+    ],
+    "text": "The Five Eyes is a standing agreement under which America, Britain, Canada, Australia and New Zealand routinely hand each other the raw product of their spy agencies instead of deciding case by case what to share. It grew out of a 1946 deal between the American and British codebreakers of the second world war. Because the five trust each other, each covers its own part of the world and still gets the whole picture — which is why being pushed out of it would leave a member suddenly blind.",
+    "audio": true
+  },
+  {
+    "k": "sixth-eye",
+    "t": "Sixth Eye",
+    "kind": "name",
+    "forms": [
+      "Sixth Eye"
+    ],
+    "text": "Calling Japan a possible “Sixth Eye” means admitting it to the Five Eyes club as a full member. The hope behind it is practical on both sides: Japan gets the alliance’s intelligence, and the others get what Japan is closest to, namely information on China. Nobody has actually been added since the 1950s, so the phrase is an ambition rather than a plan.",
+    "audio": true
+  },
+  {
+    "k": "humint",
+    "t": "HUMINT",
+    "kind": "name",
+    "forms": [
+      "HUMINT"
+    ],
+    "text": "HUMINT is short for human intelligence — information that comes from a person. It covers the classic spy business of recruiting and running agents, and it is slow and dangerous for the source, but it is the only way to learn what somebody is actually planning, since plans exist only inside heads. The article notes that Canada’s service has only limited authority to collect HUMINT abroad, which is a polite way of saying it cannot really run foreign spies.",
+    "audio": true
+  },
+  {
+    "k": "sigint",
+    "t": "SIGINT",
+    "kind": "name",
+    "forms": [
+      "SIGINT"
+    ],
+    "text": "SIGINT is signals intelligence — information taken from transmitted signals rather than people: intercepted phone calls, messages copied off a cable, radar pulses matched to the aircraft that emit them. It scales in a way human spying never can, since one tapped cable yields more than a thousand agents could, but it only captures what someone actually sent. America’s SIGINT agency is the NSA and Britain’s is GCHQ, both of which appear later in the article.",
+    "audio": true
+  },
+  {
+    "k": "grey-zone",
+    "t": "grey-zone",
+    "kind": "name",
+    "forms": [
+      "grey-zone"
+    ],
+    "text": "Grey-zone aggression is hostile action deliberately kept below the level that would count as war — sabotage, cutting undersea cables, cyber-attacks, an explosive drone left at an airport. The point of staying in the grey zone is deniability: the victim cannot prove who did it, and the damage is not big enough to justify shooting back. That is precisely what makes it a job for spies rather than soldiers.",
+    "audio": true
+  },
+  {
+    "k": "tradecraft",
+    "t": "tradecraft",
+    "kind": "name",
+    "forms": [
+      "tradecraft"
+    ],
+    "text": "Tradecraft is the practical craft of spying — how you recruit a source, pass a message without being seen, keep a cover identity intact, spot that you are being followed. It is learned skill rather than technology, which is why the article can say Japan unlearned much of its tradecraft after 1945: the people who knew it retired and nobody was trained to replace them.",
+    "audio": true
+  },
+  {
+    "k": "kinetic-means",
+    "t": "kinetic means",
+    "kind": "name",
+    "forms": [
+      "kinetic means",
+      "kinetic"
+    ],
+    "text": "“Kinetic” is borrowed from physics, where it means relating to motion, and militaries use it as a euphemism for physical force — blowing something up, as opposed to hacking it or writing a report about it. So giving the BND authority to use kinetic means abroad means letting German intelligence break and destroy things, not merely watch. The careful phrase “without deliberately harming people” tells you how sensitive that permission is.",
+    "audio": true
+  },
+  {
+    "k": "hard-targets",
+    "t": "hard targets",
+    "kind": "name",
+    "forms": [
+      "hard targets"
+    ],
+    "text": "In intelligence work a hard target is a country or organisation that is genuinely difficult to get inside — a closed society, tight internal security, ruthless counter-intelligence. Russia, China, North Korea and Iran are the standard examples. The reason European agencies pool their efforts against hard targets is that getting a single source inside one can take a decade and cost more than any one service can spare.",
+    "audio": true
+  },
+  {
+    "k": "counter-espionage",
+    "t": "counter-espionage",
+    "kind": "name",
+    "forms": [
+      "counter-espionage"
+    ],
+    "text": "Counter-espionage is the mirror image of spying: catching other countries’ spies and protecting your own secrets from them. It is why sharing sensitive intelligence is risky even between friends — if an ally has been penetrated by a Russian agent, anything you tell that ally you have effectively told Moscow. Agencies call the standard defence “need to know”: tell each person only what their job requires.",
+    "audio": true
+  },
+  {
+    "k": "uncle-sam",
+    "t": "Uncle Sam",
+    "kind": "name",
+    "forms": [
+      "Uncle Sam"
+    ],
+    "text": "Uncle Sam is the nickname-cum-cartoon-figure standing for the United States government, a white-bearded man in a star-spangled top hat from the famous First World War recruiting poster. Writers use him when they want a faintly ironic shorthand for American power. “Trusting instead in pacifism, neutrality, remoteness or Uncle Sam” means those countries let America do their defending for them.",
+    "audio": true
+  },
+  {
+    "k": "brussels",
+    "t": "Brussels",
+    "kind": "name",
+    "forms": [
+      "Brussels"
+    ],
+    "text": "Brussels is the capital of Belgium and the headquarters of both the European Union and NATO, so journalists use the city’s name to mean those institutions and their officials, the way “Washington” means the American government. “Turf battles in Brussels are a headache” is not about Belgians; it is about EU bodies competing over who gets to handle intelligence.",
+    "audio": true
+  },
+  {
+    "k": "nato",
+    "t": "NATO",
+    "kind": "name",
+    "forms": [
+      "NATO"
+    ],
+    "text": "NATO, the North Atlantic Treaty Organisation, is the military alliance of the United States, Canada and most of Europe, founded in 1949 against the Soviet Union. Its core promise is Article 5: an armed attack on one member is treated as an attack on all. That is why “Russia might turn on NATO” is such a heavy sentence — an attack on Estonia would legally be an attack on America too.",
+    "audio": true
+  },
+  {
+    "k": "mi6",
+    "t": "MI6",
+    "kind": "name",
+    "forms": [
+      "MI6"
+    ],
+    "text": "MI6 is the usual name for Britain’s Secret Intelligence Service, the agency that runs spies abroad; the name is a leftover from “Military Intelligence, Section 6” in the First World War. It is the real-world employer of the fictional James Bond and George Smiley, and it is the service this article says other Europeans still rate as the best in Europe. Britain’s domestic counterpart, which catches spies at home, is MI5.",
+    "audio": true
+  },
+  {
+    "k": "bnd",
+    "t": "BND",
+    "kind": "name",
+    "forms": [
+      "BND"
+    ],
+    "text": "The BND is Germany’s foreign-intelligence service, the agency Bruno Kahl was running when he went to Kyiv in the article’s opening scene. Because post-war Germany built deep legal limits on secret policing, the BND has been unusually restricted in what it may actually do — hence the jibe that it is little more than a glorified think-tank. The reforms under debate would let it act as well as watch.",
+    "audio": true
+  },
+  {
+    "k": "cia",
+    "t": "CIA",
+    "kind": "name",
+    "forms": [
+      "CIA"
+    ],
+    "text": "The CIA, the Central Intelligence Agency, is America’s main foreign-intelligence service: it recruits and runs agents abroad and writes assessments for the president. It is the yardstick everybody else gets measured against, which is the sting in a Japanese writer’s comparison of his country’s intelligence office to a house-cat beside the CIA tiger.",
+    "audio": true
+  },
+  {
+    "k": "nsa",
+    "t": "NSA",
+    "kind": "name",
+    "forms": [
+      "NSA"
+    ],
+    "text": "The NSA, the National Security Agency, is America’s signals-intelligence service — the one that intercepts and decrypts communications rather than running human spies. It is far larger than the CIA and was almost unknown to the public until Edward Snowden, working for it as a contractor, made its mass-surveillance programmes public in 2013.",
+    "audio": true
+  },
+  {
+    "k": "gchq",
+    "t": "GCHQ",
+    "kind": "name",
+    "forms": [
+      "GCHQ"
+    ],
+    "text": "GCHQ, the Government Communications Headquarters, is Britain’s signals-intelligence agency and the NSA’s closest partner. It is the direct descendant of Bletchley Park, where British codebreakers cracked the German Enigma cipher in the second world war. Mr Trump’s complaint that GCHQ had eavesdropped on him, which the agency denied, matters because Five Eyes members are not supposed to spy on each other.",
+    "audio": true
+  },
+  {
+    "k": "gestapo",
+    "t": "Gestapo",
+    "kind": "name",
+    "forms": [
+      "Gestapo"
+    ],
+    "text": "The Gestapo was the secret police of Nazi Germany, notorious for arresting, torturing and deporting people without trial on the strength of informers’ tips. Its memory is the reason modern Germany writes unusually tight limits into any law giving its agencies power to watch people. When the article says German spies are hamstrung by that memory, this is the memory.",
+    "audio": true
+  },
+  {
+    "k": "stasi",
+    "t": "Stasi",
+    "kind": "name",
+    "forms": [
+      "Stasi"
+    ],
+    "text": "The Stasi was the secret police of communist East Germany, which ran one of the most thorough surveillance operations in history — by the end it had files on millions of its own citizens and a network of ordinary people informing on neighbours, colleagues and spouses. Germans have lived through two such forces within one century, which is why granting spies new powers is harder politics there than almost anywhere else.",
+    "audio": true
+  },
+  {
+    "k": "snowden",
+    "t": "Edward Snowden",
+    "kind": "name",
+    "forms": [
+      "Edward Snowden",
+      "Snowden"
+    ],
+    "text": "Edward Snowden was an American contractor working for the NSA who in 2013 copied and released a huge cache of secret documents showing that the agency was collecting communications data on an enormous scale, including the phone calls of allied leaders. He fled to Russia, where he still lives, and is regarded as either a whistleblower or a traitor depending on who is talking. The revelations are why the article can state as fact that America had been listening to Angela Merkel.",
+    "audio": true
+  },
+  {
+    "k": "le-carre",
+    "t": "John le Carré",
+    "kind": "name",
+    "forms": [
+      "John le Carré",
+      "le Carré"
+    ],
+    "text": "John le Carré was the pen name of David Cornwell, a former British intelligence officer who became the great novelist of spying — “Tinker Tailor Soldier Spy”, “The Spy Who Came in from the Cold”, and the novel “The Russia House” that the nickname here nods to. His books are the opposite of James Bond: grey offices, moral compromise, betrayal by colleagues. Calling an inter-agency Russia team “Russia House” is a knowing joke among people who have read him.",
+    "audio": true
+  },
+  {
+    "k": "sikh",
+    "t": "Sikh",
+    "kind": "name",
+    "forms": [
+      "Sikh"
+    ],
+    "text": "Sikhism is a religion founded in the Punjab region of northern India in the fifteenth century, and Canada has one of the largest Sikh populations outside India. Some Canadian Sikhs campaign for an independent Sikh state, which India treats as a security threat — the background to the 2023 killing the article mentions, which Canada blamed on agents of the Indian government and which caused a diplomatic rupture between the two countries.",
+    "audio": true
+  },
+  {
+    "k": "from-scratch",
+    "t": "from scratch",
+    "kind": "phrase",
+    "forms": [
+      "from scratch"
+    ],
+    "text": "To do something from scratch is to start with nothing and build the whole thing yourself, with no existing foundation to work from — baking a cake from scratch rather than from a mix. The phrase comes from the scratched starting line in old foot races. Japan building an espionage apparatus almost from scratch means there is no agency, no trained officers and no legal framework to inherit.",
+    "audio": true
+  },
+  {
+    "k": "alarm-bells",
+    "t": "set off alarm bells",
+    "kind": "phrase",
+    "forms": [
+      "set off alarm bells",
+      "alarm bells"
+    ],
+    "text": "When something sets off alarm bells it makes people suddenly and seriously worried — the image is a fire alarm going off in a building. It is used for a warning sign rather than the disaster itself. Mr Trump’s brief suspension of intelligence for Ukraine did no lasting damage, but it told allies that the tap could be turned off at all, and that is what alarmed them.",
+    "audio": true
+  },
+  {
+    "k": "easier-said-than-done",
+    "t": "easier said than done",
+    "kind": "phrase",
+    "forms": [
+      "easier said than done"
+    ],
+    "text": "“Easier said than done” is the standard English reply to a proposal that sounds fine in principle but is hard in practice. It concedes the idea while doubting the execution. Here it introduces the two practical obstacles to a European Five Eyes: shared secrets leak, and the original alliance rests on decades of trust that cannot simply be declared into existence.",
+    "audio": true
+  },
+  {
+    "k": "reading-between-the-lines",
+    "t": "reading between the lines",
+    "kind": "phrase",
+    "forms": [
+      "Reading between the lines"
+    ],
+    "text": "To read between the lines is to work out what someone means but has not actually said — the message hidden in what they chose to leave out or phrase carefully. It is a natural heading for this part of the article, because everything in it is indirect: spy chiefs insist ties with America are strong while quietly holding information back, and nobody says out loud that the ally might become the threat.",
+    "audio": true
+  },
+  {
+    "k": "turf-battles",
+    "t": "turf battles",
+    "kind": "phrase",
+    "forms": [
+      "turf battles"
+    ],
+    "text": "A turf battle is a fight between organisations or departments over which of them controls something — whose turf, or territory, it is. It is one of the most common and least glamorous reasons big institutions work badly, since energy goes into the boundary dispute rather than the job. In Brussels the question is which EU body gets to handle intelligence, and while that is unresolved little intelligence moves.",
+    "audio": true
+  },
+  {
+    "k": "not-least",
+    "t": "not least",
+    "kind": "phrase",
+    "forms": [
+      "not least"
+    ],
+    "text": "“Not least” introduces an example that is especially important, not a minor one — it is a formal way of saying “and particularly”. The double negative fools people: “not least in providing warnings of terrorist plots” means that warning about terrorism is one of the biggest things American intelligence does for its allies, not one of the smallest.",
+    "audio": true
+  },
+  {
+    "k": "akin-to",
+    "t": "akin to",
+    "kind": "phrase",
+    "forms": [
+      "akin to"
+    ],
+    "text": "Akin to means similar to, or of the same kind as; “kin” is your family, so something akin to a thing is related to it. Writers use it when the resemblance is real but not exact. Japan’s new National Intelligence Bureau is akin to Australia’s Office of National Intelligence — built to do the same job of pulling all sources together, without being a copy of it.",
+    "audio": true
+  },
+  {
+    "k": "off-limits",
+    "t": "off limits",
+    "kind": "phrase",
+    "forms": [
+      "off limits"
+    ],
+    "text": "If something is off limits it is forbidden — you may not go there or do that. The phrase comes from military bases, where certain areas were literally outside the limits soldiers were allowed to enter. Saying that targeting the communications of priests, lawyers, doctors and journalists has been off limits means German law has treated those four professions as untouchable, because each depends on people being able to confide in them.",
+    "audio": true
+  },
+  {
+    "k": "prime-cuts",
+    "t": "prime cuts",
+    "kind": "phrase",
+    "forms": [
+      "prime cuts"
+    ],
+    "text": "Prime cuts are the best pieces of meat from a butcher — the expensive ones. The article extends its bartering image with them: a country that collects valuable intelligence of its own has something to trade, and can therefore ask for the choicest material other services hold rather than whatever they feel like passing on. No intelligence to offer means no bargaining position.",
+    "audio": true
+  },
+  {
+    "k": "ad-hoc",
+    "t": "ad hoc",
+    "kind": "phrase",
+    "forms": [
+      "ad hoc"
+    ],
+    "text": "Ad hoc is Latin for “for this” and means improvised for one particular occasion, with no standing system behind it — an ad hoc committee is assembled for one problem and then dissolves. It is usually a criticism. Japanese bodies sharing intelligence ad hoc means there is no routine channel: each exchange is arranged from nothing, which is slow and leaves gaps.",
+    "audio": true
+  },
+  {
+    "k": "fully-fledged",
+    "t": "fully-fledged",
+    "kind": "phrase",
+    "forms": [
+      "fully-fledged"
+    ],
+    "text": "A fully-fledged thing is the complete, grown-up version of it, not a partial or trial one. The image is a young bird that has finally grown its full set of flight feathers, or fledged, and can leave the nest. A fully-fledged foreign intelligence agency is one with its own officers, budget and legal powers to run operations abroad — which is exactly what Japan does not yet have.",
+    "audio": true
+  },
+  {
+    "k": "beefed-up",
+    "t": "beefed-up",
+    "kind": "phrase",
+    "forms": [
+      "beefed-up"
+    ],
+    "text": "To beef something up is to make it stronger or bigger — more staff, more money, more power. It is informal but standard in news writing, and the image is of putting muscle on. The beefed-up version of CIRO is the same office given the people and authority to do what the old one could not.",
+    "audio": true
+  },
+  {
+    "k": "a-nod-to",
+    "t": "a nod to",
+    "kind": "phrase",
+    "forms": [
+      "in a nod to",
+      "a nod to"
+    ],
+    "text": "A nod to something is a small deliberate reference that acknowledges it — the way you nod to someone across a room to show you have noticed them. It signals that the writer or namer knew exactly what they were echoing. Nicknaming an inter-agency Russia team “Russia House” is a nod to le Carré’s novel of that title.",
+    "audio": true
+  },
+  {
+    "k": "spooks",
+    "t": "spooks",
+    "kind": "word",
+    "forms": [
+      "spooks"
+    ],
+    "text": "Here “spooks” means intelligence officers — spies. It is the everyday slang of the trade in Britain and America, and it has nothing to do with the other sense of the word, a ghost or a scare, though the two are related: the idea is of someone who moves unseen. Notice the article uses it freely for allies as well as enemies, so it carries affection more than insult.",
+    "audio": true
+  },
+  {
+    "k": "premises",
+    "t": "premises",
+    "kind": "word",
+    "forms": [
+      "premises"
+    ],
+    "text": "Premises means a building and the land it sits on — a shop, an office, a house — and it is nearly always plural even for one building. Do not confuse it with a premise, an assumption an argument is built on; they look related but are used in completely different places. “German spies cannot break into premises” means the law forbids them entering a building without permission, which for a spy agency is a remarkable restriction.",
+    "audio": true
+  },
+  {
+    "k": "convention",
+    "t": "convention",
+    "kind": "word",
+    "forms": [
+      "convention"
+    ],
+    "text": "A convention is an unwritten rule that everyone follows because everyone follows it — not a law, and nobody arrests you for breaking it. The same word also means a big meeting and a formal treaty, so context does the work. “By convention, they are not supposed to snoop on each other” is doing a lot of quiet work in this article: the rule against allies spying on allies has no enforcement at all, which is why the Snowden revelations were so awkward.",
+    "audio": true
+  },
+  {
+    "k": "captures",
+    "t": "captures",
+    "kind": "word",
+    "forms": [
+      "captures",
+      "capture"
+    ],
+    "text": "Here capture means to detect and record something, the way a camera captures an image or a survey captures an opinion — not to seize a prisoner. Carl Bildt’s line that the system captures capabilities but not intent is the sharpest sentence in the article: satellites could count Russian tanks and fuel trucks, because hardware is visible, but no satellite can photograph a decision. That gap is what the new agencies are meant to close.",
+    "audio": true
+  },
+  {
+    "k": "aperture",
+    "t": "aperture",
+    "kind": "word",
+    "forms": [
+      "aperture"
+    ],
+    "text": "An aperture is an opening, most familiarly the hole in a camera lens that lets light in; widening it takes in more of the scene. Mr Bildt is using it as a deliberate metaphor for what a spy agency looks at — his new service is to build assessments from secret, commercial and public sources rather than secrets alone. Widening the aperture means letting in the information that is not classified at all.",
+    "audio": true
+  },
+  {
+    "k": "collection",
+    "t": "collection",
+    "kind": "word",
+    "forms": [
+      "collection"
+    ],
+    "text": "In intelligence work, collection is a technical term for the actual gathering of information — running a source, intercepting a signal — as distinct from analysis, which is making sense of what was gathered. Agencies are organised around that split. “Some collection efforts aimed at the United States” therefore means active operations to gather information on America, not a stamp album.",
+    "audio": true
+  },
+  {
+    "k": "turbulence",
+    "t": "turbulence",
+    "kind": "word",
+    "forms": [
+      "turbulence"
+    ],
+    "text": "Turbulence is disordered, unpredictable movement — the rough air that shakes an aeroplane, or water churning behind a boat. Used about politics it means a period when nothing can be relied on to stay as it was. The former official’s point is dry and unsettling: when relations get turbulent, allies quietly spy on America more, not less.",
+    "audio": true
+  },
+  {
+    "k": "penetrate",
+    "t": "penetrate",
+    "kind": "word",
+    "forms": [
+      "penetrate"
+    ],
+    "text": "To penetrate something is to get inside it, through a barrier meant to keep you out. In intelligence it is the specific goal of getting a source inside a foreign government or agency, which can take a decade. When the article says core groups of European agencies work jointly to penetrate Russia and China, it means they are pooling the slow, expensive work of getting people on the inside.",
+    "audio": true
+  },
+  {
+    "k": "glorified",
+    "t": "glorified",
+    "kind": "word",
+    "forms": [
+      "glorified"
+    ],
+    "text": "Calling something a glorified X means it is really just an X dressed up with a grander name — a glorified shed, a glorified errand boy. The construction is always a put-down. Saying the BND is little more than a glorified think-tank means it mostly writes analysis, like a research institute, while a real foreign-intelligence service also collects secrets and acts on them.",
+    "audio": true
+  },
+  {
+    "k": "fuse",
+    "t": "fuse",
+    "kind": "word",
+    "forms": [
+      "fuse"
+    ],
+    "text": "To fuse things is to join them into one, the way heat fuses two pieces of metal into a single piece — not the electrical fuse that blows, though both come from melting. Fusing human and signals intelligence means combining an intercepted message with what a live source says, so that the two together give a picture neither could give alone. The article treats that as the hardest skill in the business.",
+    "audio": true
+  },
+  {
+    "k": "novelty",
+    "t": "novelty",
+    "kind": "word",
+    "forms": [
+      "novelty"
+    ],
+    "text": "Novelty here means newness — the quality of being new — rather than a cheap toy or a gimmick, which is the sense the word usually carries in shops. When a spy chief says “the novelty is the concept of a common mission”, he means the genuinely new thing is that several agencies now treat one problem as a shared job with the work divided between them, instead of each doing everything alone.",
+    "audio": true
+  },
+  {
+    "k": "curb",
+    "t": "curb",
+    "kind": "word",
+    "forms": [
+      "curb"
+    ],
+    "text": "To curb something is to hold it back or keep it within limits; the noun is the strap that controls a horse. Spelled this way it means restrain — the pavement edge is a kerb in British English, which is why the two look confusable in American writing. Curbing grey-zone aggression means not stopping Russia outright but keeping the sabotage and drone incidents down to a level that can be lived with.",
+    "audio": true
+  },
+  {
+    "k": "capacity",
+    "t": "capacity",
+    "kind": "word",
+    "forms": [
+      "capacity"
+    ],
+    "text": "Capacity is the ability to do something, and how much of it you can do — not just volume, as in the capacity of a bottle. The last line of the article turns on it: the middle powers are building their own capacity to judge which threats are real, meaning the people, agencies and sources needed to reach their own verdict instead of borrowing somebody else’s.",
+    "audio": true
+  },
+  {
+    "k": "legacy",
+    "t": "legacy",
+    "kind": "word",
+    "forms": [
+      "legacy"
+    ],
+    "text": "A legacy is what an earlier time leaves behind for a later one — usually money in a will, but in history writing the habits, laws and fears inherited from the past. It can be a gift or a burden. The legacy of Japan’s imperial-era secret police is the second kind: because those police terrorised Japanese citizens before 1945, proposals to let modern agencies watch people run into deep public resistance.",
+    "audio": true
+  },
+  {
+    "k": "plots",
+    "t": "plots",
+    "kind": "word",
+    "forms": [
+      "plots",
+      "plot"
+    ],
+    "text": "A plot is a secret plan to do something harmful — the sense you want in “terrorist plots”, not the storyline of a novel or a piece of ground. All three meanings share the idea of something laid out in advance. The article’s point is that even allies furious with Washington still need American intelligence, because warnings of planned attacks save lives in their own cities.",
+    "audio": true
+  },
+  {
+    "k": "barter",
+    "t": "barter",
+    "kind": "word",
+    "forms": [
+      "barter"
+    ],
+    "text": "To barter is to trade goods directly for other goods, with no money involved — swapping two chickens for a sack of grain. Intelligence works this way: there is no price list, so a service pays for what it wants with material of its own. That is the article’s real argument for why a country collects intelligence it does not strictly need — it becomes currency.",
+    "audio": true
+  },
+  {
+    "k": "mandate",
+    "t": "mandate",
+    "kind": "word",
+    "forms": [
+      "mandate"
+    ],
+    "text": "A mandate is formal authority to act, granted by someone entitled to grant it — a government, a parliament, voters in an election. It defines both permission and limits. Giving Dutch spies a yearly mandate against “evident opponents” would mean one approval covering a whole year’s operations, instead of asking permission before each one, which is faster but much harder to supervise.",
+    "audio": true
+  },
+  {
+    "k": "art",
+    "t": "art",
+    "kind": "word",
+    "forms": [
+      "art"
+    ],
+    "text": "Here “art” means a skill or practised craft rather than painting and sculpture — the older sense that survives in “the art of conversation” and “state of the art”. Calling spying an imperfect art concedes something important after 1,500 words of reform plans: even a well-run service working with good sources gets things wrong, as America and Britain did over Iraq’s weapons in 2003.",
+    "audio": true
+  },
+  {
+    "k": "flexitarian",
+    "t": "flexitarian",
+    "kind": "word",
+    "forms": [
+      "flexitarian"
+    ],
+    "text": "A flexitarian is someone who eats mostly vegetarian food but will eat meat sometimes — a flexible vegetarian. It is a real and fairly recent word, which is what makes the former BND official’s joke land: German intelligence has been forbidden to do the aggressive things other services do, the reforms would let it do a few of them occasionally, and its rivals eat nothing but meat.",
+    "audio": true
+  },
+  {
+    "k": "exfiltrated",
+    "t": "exfiltrated",
+    "kind": "word",
+    "forms": [
+      "exfiltrated"
+    ],
+    "text": "To exfiltrate someone is to get them secretly out of a dangerous place — the opposite of infiltrate, which is to get secretly in. It is the standard term for extracting a spy or an agent before they are caught or killed. Bruno Kahl having to be exfiltrated from his hotel means allied officers smuggled the head of German intelligence out of Kyiv while Russian forces advanced on it.",
+    "audio": true
+  },
+  {
+    "k": "throng",
+    "t": "throng",
+    "kind": "word",
+    "forms": [
+      "throng"
+    ],
+    "text": "A throng is a dense crowd of people pressed together. It is a slightly literary word, and it carries the sense of being surrounded and slowed down by the mass of bodies. Weaving through the throng of refugees heading for Poland puts the spy chief inside the crowd rather than above it — no motorcade, no special treatment, just another person trying to get out.",
+    "audio": true
+  },
+  {
+    "k": "impending",
+    "t": "impending",
+    "kind": "word",
+    "forms": [
+      "impending"
+    ],
+    "text": "Impending means about to happen and usually unwelcome — an impending storm, an impending deadline. The image behind it is of something hanging over you, from the Latin for “hang”. You would not describe a birthday as impending. Warnings of an impending Russian attack were warnings that it was coming within days, which is exactly what the French and German services refused to believe.",
+    "audio": true
+  },
+  {
+    "k": "haplessness",
+    "t": "haplessness",
+    "kind": "word",
+    "forms": [
+      "haplessness",
+      "hapless"
+    ],
+    "text": "Someone hapless is unlucky and ineffective at the same time, and haplessness is that quality — the “hap” is old English for luck, the same root as happen and perhaps. It is gentler than incompetence: the hapless figure is pitied rather than blamed. Saying Kahl embodied the haplessness of European intelligence services is unkind but not damning — they were out of their depth, not corrupt.",
+    "audio": true
+  },
+  {
+    "k": "pacifism",
+    "t": "pacifism",
+    "kind": "word",
+    "forms": [
+      "pacifism"
+    ],
+    "text": "Pacifism is the belief that war and violence are always wrong and that disputes should be settled by other means. It has been official national doctrine in post-war Japan and Germany, written into Japan’s constitution, which renounces war. That history explains why both countries let their spy services wither, and why rebuilding them is politically explosive rather than merely expensive.",
+    "audio": true
+  },
+  {
+    "k": "unprecedented",
+    "t": "unprecedented",
+    "kind": "word",
+    "forms": [
+      "unprecedented"
+    ],
+    "text": "Unprecedented means it has never happened before — there is no precedent, no earlier case to point to. It is a strong claim and often overused, so notice who is making it: the head of the French foreign-intelligence service, saying that co-operation between European services has reached levels never seen. From an agency whose whole instinct is to keep things to itself, that is a real admission of how bad things look.",
+    "audio": true
+  },
+  {
+    "k": "autocratic",
+    "t": "autocratic",
+    "kind": "word",
+    "forms": [
+      "autocratic"
+    ],
+    "text": "An autocratic state is one ruled by a single person or small group whose power is not limited by elections, courts or a free press; the Greek root means self-rule, in the sense of ruling by oneself alone. Russia, China and North Korea are the autocratic foes meant here. The distinction matters in this article because democracies spy on autocracies knowing the favour is not returned by the same rules.",
+    "audio": true
+  },
+  {
+    "k": "disdain",
+    "t": "disdain",
+    "kind": "word",
+    "forms": [
+      "disdain"
+    ],
+    "text": "Disdain is contempt mixed with a refusal to take something seriously — looking down on it as beneath your attention. It is colder than anger, which is what makes it sting. Writing that Mr Trump’s disdain for allies underlies everything is the article’s central claim: nothing he has done to them frightens them as much as the sense that he does not value them at all.",
+    "audio": true
+  },
+  {
+    "k": "contingency",
+    "t": "contingency",
+    "kind": "word",
+    "forms": [
+      "contingency"
+    ],
+    "text": "A contingency is something that might happen but has not, and a contingency plan is one you prepare in advance in case it does — like a school having a plan for a snow day. The word comes from the Latin for “touch upon”, the idea of events that merely brush against reality. An ally making contingency plans in case America severs intelligence-sharing has not been cut off; it is deciding what it would do if it were.",
+    "audio": true
+  },
+  {
+    "k": "annexing",
+    "t": "annexing",
+    "kind": "word",
+    "forms": [
+      "annexing"
+    ],
+    "text": "To annex territory is to take it and declare it part of your own country, as Russia annexed Crimea in 2014. It is not the same as invading or occupying: annexation claims the land permanently and legally, which almost never gains international recognition. That is why musings about annexing Canada, Iceland and Greenland alarmed those countries rather than amusing them.",
+    "audio": true
+  },
+  {
+    "k": "musings",
+    "t": "musings",
+    "kind": "word",
+    "forms": [
+      "musings"
+    ],
+    "text": "Musings are loose thoughts said aloud without commitment — wondering rather than announcing. To muse is to ponder. The word does careful work here: Mr Trump never proposed a plan to annex Canada, he floated the idea, and the article’s point is that a great power cannot muse harmlessly, because smaller countries have to prepare for what it says.",
+    "audio": true
+  },
+  {
+    "k": "albeit",
+    "t": "albeit",
+    "kind": "word",
+    "forms": [
+      "albeit"
+    ],
+    "text": "Albeit is a compact, formal way of saying “although it was” or “even if only” — a squashed version of “all be it”. It introduces a qualification that softens what you just said. “His suspension of intelligence for Ukraine last year, albeit brief, set off alarm bells” concedes that the cut-off did not last long, and insists it frightened people anyway.",
+    "audio": true
+  },
+  {
+    "k": "disparate",
+    "t": "disparate",
+    "kind": "word",
+    "forms": [
+      "Disparate"
+    ],
+    "text": "Disparate things are fundamentally different from one another and do not fit together as a set — disparate evidence, a disparate group of allies. It is stronger than merely various: the implication is that the pieces do not match. Disparate bodies sharing intelligence ad hoc describes a Japanese system of mismatched offices with no common structure, passing paper to each other when they happen to think of it.",
+    "audio": true
+  },
+  {
+    "k": "consolidate",
+    "t": "consolidate",
+    "kind": "word",
+    "forms": [
+      "consolidate"
+    ],
+    "text": "To consolidate is to bring separate things together into one solid whole — merging several loans into one, or combining scattered offices into a single organisation. The root is the Latin for solid. A body built to consolidate information from all sources is meant to fix exactly the problem named a paragraph earlier: intelligence sitting in different agencies where nobody sees it all at once.",
+    "audio": true
+  },
+  {
+    "k": "hamstrung",
+    "t": "hamstrung",
+    "kind": "word",
+    "forms": [
+      "hamstrung"
+    ],
+    "text": "To be hamstrung is to be crippled in your ability to act. It is literal in origin and fairly brutal: cutting the hamstring tendon behind the knee of an animal or a captive stops them walking. Germany hamstrung by memories of the Gestapo and Stasi means the country’s own history, not any enemy, is what prevents its spy service from operating like others.",
+    "audio": true
+  },
+  {
+    "k": "politicisation",
+    "t": "politicisation",
+    "kind": "word",
+    "forms": [
+      "politicisation"
+    ],
+    "text": "Politicisation is what happens when something that should be decided on its own merits starts being decided by political advantage instead. In intelligence it is the profession’s deepest fear: analysts shading their assessments toward what the leader wants to hear, which is roughly what happened over Iraq in 2003. Allies worrying about the politicisation of American intelligence are worrying that what they receive is being shaped to fit a political line.",
+    "audio": true
+  },
+  {
+    "k": "exodus",
+    "t": "exodus",
+    "kind": "word",
+    "forms": [
+      "exodus"
+    ],
+    "text": "An exodus is a mass departure of people from somewhere; the word is the Greek name of the biblical book describing the Israelites leaving Egypt. It implies many people leaving at once and for a reason. An exodus of American intelligence officials means experienced officers resigning in numbers, which damages a service in a specific way: their foreign sources trusted them personally, and those relationships leave with them.",
+    "audio": true
+  },
+  {
+    "k": "putative",
+    "t": "putative",
+    "kind": "word",
+    "forms": [
+      "putative"
+    ],
+    "text": "Putative means supposed or presumed — the thing as it is reckoned to be, rather than proven or actual. It comes from the Latin for “to reckon”, and lawyers use it constantly (a putative father, a putative agreement). A putative European Eyes is an alliance that does not exist yet and is being discussed as if it might, so the word is the writer’s way of keeping it hypothetical.",
+    "audio": true
+  },
+  {
+    "k": "eavesdropped",
+    "t": "eavesdropped",
+    "kind": "word",
+    "forms": [
+      "eavesdropped"
+    ],
+    "text": "To eavesdrop is to listen secretly to other people’s private conversation. The picture inside the word is wonderfully old: the eavesdrop was the ground where rainwater fell from the eaves of a house, so an eavesdropper was someone standing right under the wall to hear what was said inside. For a signals agency it is the whole job, which is why Mr Trump’s accusation against GCHQ was serious rather than rude.",
+    "audio": true
+  },
+  {
+    "k": "missteps",
+    "t": "missteps",
+    "kind": "word",
+    "forms": [
+      "missteps"
+    ],
+    "text": "A misstep is a mistake, with the flavour of a wrong move rather than a wrong belief — the image is putting a foot down badly and stumbling. It is milder and more forgivable than blunder or disaster. Calling spying an imperfect art with a long history of missteps is a deliberately mild way of introducing one of the largest intelligence failures of modern times, the Iraq weapons assessments of 2003.",
+    "audio": true
+  },
+  {
+    "k": "ambiguous",
+    "t": "ambiguous",
+    "kind": "word",
+    "forms": [
+      "ambiguous"
+    ],
+    "text": "Something ambiguous can be read in more than one way, so you cannot tell which is meant — an ambiguous answer, an ambiguous smile. The Latin root means driving both ways. Canada’s global security reporting programme has an ambiguous status between diplomacy and espionage, and the trouble with that is practical: a diplomat gathering secrets is protected if he is a diplomat and a spy if he is not, and nobody is sure which he is.",
+    "audio": true
+  },
+  {
+    "k": "laggards",
+    "t": "laggards",
+    "kind": "word",
+    "forms": [
+      "Laggards"
+    ],
+    "text": "A laggard is whoever falls behind the rest — slower to act, to improve, or to keep up. It comes from lag, and it is faintly disdainful. After ranking the best European services the survey needs a word for the other end of the table, and “Laggards include Austria” is a single-word verdict on a country long regarded as an easy place for foreign spies to operate.",
+    "audio": true
+  },
+  {
+    "k": "aristocracy",
+    "t": "aristocracy",
+    "kind": "word",
+    "forms": [
+      "aristocracy"
+    ],
+    "text": "An aristocracy is a hereditary upper class, the dukes and counts who once ruled by birth; the Greek root means rule by the best. Used loosely, it means the acknowledged elite of any field. Calling Britain’s spooks an admired espionage aristocracy says they enjoy inherited prestige — earned at Bletchley Park and in the cold war, and still bowed to by services that may now be better funded.",
+    "audio": true
+  },
+  {
+    "k": "overhaul",
+    "t": "overhaul",
+    "kind": "word",
+    "forms": [
+      "overhaul"
+    ],
+    "text": "An overhaul is a thorough rebuilding of something that already exists — you overhaul an engine by stripping it down and replacing what is worn, not by buying a new car. The term is nautical in origin. Calling the changes to European intelligence an overhaul is precise: the agencies are not being founded, they are being taken apart and reassembled with new powers and new partners.",
+    "audio": true
+  },
+  {
+    "k": "dedicated",
+    "t": "dedicated",
+    "kind": "word",
+    "forms": [
+      "dedicated"
+    ],
+    "text": "Here dedicated means set aside for one purpose only — a dedicated server, a dedicated bus lane — rather than devoted or hard-working. A dedicated foreign-espionage agency is one whose sole job is spying abroad, which is exactly what Canada lacks: CSIS does foreign work only around the edges of its main domestic mission, and the argument is that a side-job is not enough.",
+    "audio": true
+  },
+  {
+    "k": "apparatus",
+    "t": "apparatus",
+    "kind": "word",
+    "forms": [
+      "apparatus"
+    ],
+    "text": "An apparatus is the whole set of equipment and machinery for doing a job, and by extension the whole organisational machine — the state apparatus, the party apparatus. It suggests many interlocking parts rather than one office. An espionage apparatus therefore means the lot: officers, training, cover identities, legal powers, budgets and the laws that permit them, which is why building one almost from scratch takes years.",
+    "audio": true
+  },
+  {
+    "k": "juicy",
+    "t": "juicy",
+    "kind": "word",
+    "forms": [
+      "Juicy"
+    ],
+    "text": "Juicy information is information that is valuable and interesting — the details everyone wants. It is informal, and it belongs to the same eating metaphor the sentence continues with prime cuts. Juicy intelligence is the kind another service will give up something good to get, which is the whole basis of the trade the paragraph describes.",
+    "audio": true
+  },
+  {
+    "k": "rearmament",
+    "t": "rearmament",
+    "kind": "word",
+    "forms": [
+      "rearmament"
+    ],
+    "text": "Rearmament is a country building its military back up after letting it run down — buying tanks and missiles, raising troop numbers, restarting factories. Most of Europe disarmed steadily after the cold war ended and has been rearming since Russia invaded Ukraine. The article’s comparison is the point: countries are rebuilding their spy services for the same two reasons they are rebuilding their armies, to look useful to America and to survive without it.",
+    "audio": true
+  }
+]
