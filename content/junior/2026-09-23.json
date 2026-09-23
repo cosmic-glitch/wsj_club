@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-23",
+  "title": "Heinz tomato ketchup and the sweet taste of market dominance",
+  "articleUrl": "https://www.economist.com/culture/2026/07/02/heinz-tomato-ketchup-and-the-sweet-taste-of-market-dominance",
+  "articlePageUrl": "/articles/junior/2026-09-23.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "staple",
+      "partOfSpeech": "noun",
+      "pronunciation": "STAY-pul",
+      "articleQuote": "But one food product has remained a staple since it first hit shelves in 1876: Heinz tomato ketchup.",
+      "meaning": "A **staple** is something people use or eat regularly, year after year, without thinking much about it — rice is a staple food across much of Asia, and jeans are a staple of almost every closet. (It is spelled the same as the little metal staple that holds paper together, but it is a completely different word.) Calling Heinz ketchup a staple means it has sat on kitchen tables for 150 years and never gone out of style.",
+      "examples": [
+        "Peanut butter sandwiches are a staple of my lunchbox — I have packed one almost every school day since third grade.",
+        "That crossover dribble is a staple of her game; she pulls it out every time a defender crowds her."
+      ]
+    },
+    {
+      "word": "versatile",
+      "partOfSpeech": "adjective",
+      "pronunciation": "VUR-suh-tul",
+      "articleQuote": "Cookbooks aver that it is so versatile it can be used in curries, fish dishes and breads.",
+      "meaning": "Something **versatile** can do many different jobs well instead of being good at only one. A versatile athlete plays several positions; a versatile jacket works in rain *and* in cold. The cookbooks are making a surprising claim here: ketchup is not just for fries, and cooks stir it into curries, spoon it over fish, even bake it into bread.",
+      "examples": [
+        "A paper clip is surprisingly versatile — it holds papers, fixes a broken zipper pull, and pops open a stuck drawer.",
+        "Coach calls him our most versatile player because he can pitch, catch, or cover the outfield."
+      ]
+    },
+    {
+      "word": "inhibit",
+      "partOfSpeech": "verb",
+      "pronunciation": "in-HIB-it",
+      "articleQuote": "He used ripe tomatoes for a better flavour and colour, and vinegar to inhibit microbes.",
+      "meaning": "To **inhibit** something is to hold it back or slow it down — not always to stop it completely. Scientists use the word constantly: cold inhibits the growth of mould, and a cast inhibits movement so a broken bone can knit together. Vinegar is sour, and enough of it makes ketchup too acidic for most microbes to grow in, so the sauce keeps for months instead of spoiling in days.",
+      "examples": [
+        "A heavy backpack inhibits how fast you can sprint for the bus.",
+        "Chilling the cookie dough inhibits the spread, so the cookies come out thick instead of flat."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Umami",
+      "articleQuote": "It’s the perfect balance of sweet and umami and tangy.",
+      "meaning": "Read that list again: sweet, umami, tangy. Sweet and tangy you already know. But **umami**? Most people taste it every single day and cannot name it.\n\nYour tongue is covered in taste buds, and biologists have worked out that they detect exactly five basic tastes: sweet, salty, sour, bitter, and umami. Umami is the savoury, meaty, mouth-filling one. The word is Japanese and means roughly \"deliciousness\"; a chemist named Kikunae Ikeda gave the taste that name in 1908, when he figured out what causes it. The trigger is a substance called glutamate. When a food holds a lot of glutamate, the glutamate touches receptors on your taste buds, and that is the signal your brain reads as deep savoury flavour.\n\nTomatoes are loaded with glutamate, and cooking them down into a sauce packs it in tighter still. So are parmesan cheese, soy sauce, mushrooms, anchovies and roasted meat. That is why tomato sauce on pasta feels satisfying in a way that, say, sugar water never could — there is a whole taste at work that sweetness alone cannot deliver.\n\nYou can test it at dinner tonight. Eat one potato chip plain, then eat the next one dipped in ketchup. The plain chip is salty and crunchy. The dipped one adds sweet, sour *and* umami on top of that salt, and the pile-up is why the second bite beats the first. **When a food tastes deeply savoury and you cannot say why, umami is usually the answer.**"
+    },
+    {
+      "name": "Opinion polling",
+      "articleQuote": "Heinz is among the best-known brands globally: according to YouGov, a pollster, 100% of Britons and 97% of Americans know it.",
+      "meaning": "Stop at that number for a second: **100% of Britons**. Every single person in Britain — more than 60 million people — has heard of Heinz? Nobody knocked on 60 million doors to check. So how can YouGov print a figure like that?\n\nThey ran a **poll**. A pollster picks a fairly small group of people, usually somewhere around 1,000 to 2,000, asks every one of them the same question, then uses those answers to describe the entire country. Statisticians call the small group a *sample*, and this is a whole field of maths, not a guess. The part that makes it work is *how* the sample is chosen: it has to be the country in miniature — roughly the right mix of ages, incomes, city and countryside, north and south. Get that mix right and those 1,000 answers really do match what the whole country would have said.\n\nPicture your school cafeteria. You want to know which lunch is the favourite among 600 students, and you do not have time to ask all 600. So ask 60 — but not 60 kids from your own table, because your friends all like the same things. Take 10 from each grade, some athletes and some band kids, some who bring lunch and some who buy it. That 60 will land close to what the 600 think. Ask only your table and you will walk away with a confident answer that is flat wrong.\n\nThis is also why polls come with a little wobble built in. \"97% of Americans know Heinz\" really means about 97, give or take a point or two. **So whenever a news story tells you what a whole country thinks, the useful question is who they asked.**"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Before Heinz came along, why did some sauce makers package their ketchup in coloured bottles?",
+      "options": [
+        "Coloured glass kept the sauce colder for longer",
+        "To hide evidence of bacteria or mould in the sauce",
+        "Clear glass had not been invented yet",
+        "Shoppers of the time believed coloured bottles held more"
+      ],
+      "answerIndex": 1,
+      "explanation": "Early ketchup was watery and spoiled easily, so makers used coloured bottles to hide the bacteria and mould — which is exactly why Heinz's clear glass bottle signalled that his had nothing to hide."
+    },
+    {
+      "question": "The article says Heinz ketchup \"has remained a staple\" since 1876. What does staple mean there?",
+      "options": [
+        "A small metal fastener that holds paper together",
+        "A food that is saved for holidays and special occasions",
+        "Something people use or eat regularly, year after year",
+        "A product that is unusually expensive to make"
+      ],
+      "answerIndex": 2,
+      "explanation": "A staple is something in steady, everyday use — the paper fastener is a different word that happens to be spelled the same."
+    },
+    {
+      "question": "Heinz added vinegar \"to inhibit microbes.\" What did the vinegar do?",
+      "options": [
+        "Fed the microbes so they left the tomatoes alone",
+        "Made the ketchup too acidic for most microbes to grow in",
+        "Turned the sauce a brighter red",
+        "Froze the sauce so it could be shipped further"
+      ],
+      "answerIndex": 1,
+      "explanation": "To inhibit is to hold something back or slow it down; vinegar is sour enough to make the ketchup an environment most microbes cannot grow in, so it keeps."
+    },
+    {
+      "question": "Claire Dinhut says Heinz balances \"sweet and umami and tangy.\" What is umami?",
+      "options": [
+        "Another word for the sourness that vinegar adds",
+        "A spice that Heinz adds to its secret recipe",
+        "The savoury, meaty taste found in tomatoes, cheese and soy sauce",
+        "The feeling of a sauce being thick rather than watery"
+      ],
+      "answerIndex": 2,
+      "explanation": "Umami is one of the five basic tastes — the savoury one, triggered by glutamate, which tomatoes happen to be full of."
+    },
+    {
+      "question": "YouGov reported that 97% of Americans know the Heinz brand. How does a pollster arrive at a number like that?",
+      "options": [
+        "By asking every adult in the country the question",
+        "By counting how many bottles the company sells each year",
+        "By asking a carefully chosen small group and using its answers to describe the whole country",
+        "By adding up how many people mention the brand online"
+      ],
+      "answerIndex": 2,
+      "explanation": "Pollsters survey a sample of perhaps 1,000 people, chosen to mirror the country's mix of ages, places and incomes, and use it to estimate what everyone would say."
+    }
+  ]
+}
