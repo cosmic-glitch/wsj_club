@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-24",
+  "title": "Is it still worthwhile to teach cursive in school?",
+  "articleUrl": "https://www.economist.com/culture/2026/09/17/is-it-still-worthwhile-to-teach-cursive-in-school",
+  "articlePageUrl": "/articles/junior/2026-09-24.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "decipher",
+      "partOfSpeech": "verb",
+      "pronunciation": "dih-SY-fur",
+      "articleQuote": "People fret that youngsters will not be able to decipher their ancestors’ writing or historical documents written in cursive.",
+      "meaning": "To decipher something is to work out what it says when it is hard to read — messy handwriting, faded old ink, a secret code. It comes from the same root as *cipher*, meaning a code, so the word carries the sense of cracking something rather than simply reading it. In the article, the worry is that a kid who never learns cursive will look at a letter a great-grandparent wrote and see only loops where the words should be.",
+      "examples": [
+        "Our teacher’s board writing slants so hard that we spend the first minute of class trying to decipher the homework.",
+        "It took my brother three days to decipher the map in his video game, because the clues were printed backwards."
+      ]
+    },
+    {
+      "word": "intricate",
+      "partOfSpeech": "adjective",
+      "pronunciation": "IN-trih-kut",
+      "articleQuote": "Leo Tolstoy’s handwriting was messy with a severe slant, leaving his manuscripts as dense and intricate as his epics.",
+      "meaning": "Something intricate has many small parts fitted closely together, so it takes a while to take in. You might use it for a spider’s web, a thousand-piece puzzle, or a plan with a lot of steps. Here it describes Tolstoy’s handwriting: his pages were as packed and tangled as the enormous novels he wrote on them.",
+      "examples": [
+        "The cake in the bakery window had an intricate pattern of icing flowers that must have taken hours.",
+        "Our science project looked simple from across the room, but up close the wiring was intricate."
+      ]
+    },
+    {
+      "word": "shun",
+      "partOfSpeech": "verb",
+      "pronunciation": "SHUN",
+      "articleQuote": "In 2010 the country’s “Common Core” curriculum shunned cursive in favour of keyboard skills",
+      "meaning": "To shun something is to keep away from it or leave it out **on purpose**, not by accident. People can be shunned too, when a group decides to have nothing to do with them. In 2010 the Common Core standards shunned cursive: the people writing them chose to drop it and put keyboard skills in its place.",
+      "examples": [
+        "After he kept changing the rules mid-game, the rest of us shunned him at lunch for a week.",
+        "My cousin shuns every vegetable on her plate, but somehow she will drink spinach in a smoothie."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Brain scans",
+      "articleQuote": "She found that the brain is engaged “in a completely different way” when handwriting and drawing, with scans showing activity in areas associated with learning and memory.",
+      "meaning": "A scientist says she watched children’s brains while they were writing. Nobody opened anyone’s head. So what was she actually looking at? Neuroscientists — the scientists who study the brain — use machines called scanners, and it is worth knowing exactly what those machines can and cannot see.\n\nYour brain runs on tiny electrical signals that travel between brain cells. Cells doing work also use up oxygen, so more blood flows to the busy parts. A scanner picks up one of those two things. An **EEG** uses a cap of small metal discs resting on your scalp to measure the electrical signals through the skin. An **MRI** uses a very strong magnet to track where the blood is going. Neither machine records a thought, a word or a picture. Both record *where* in the brain the activity is stronger, and *when*.\n\nThat is why a study has to compare tasks. Have someone write by hand, then type, then draw, and see which regions get busier during each one. When the article says the brain was engaged “in a completely different way”, that is what it means: different areas were busier, not that handwriting does something magic.\n\nPicture your school with all the classroom doors shut. You cannot see inside, but you can count how many kids are standing in each hallway every minute. At 12:15 the cafeteria hallway is packed; at 1:00 the gym hallway is. After a week you know which rooms fill up and when — and you still have no idea what anyone inside them is saying. A brain scan hands scientists that kind of map.\n\nSo when a news story says “scans showed” something, remember what was measured: busy places, not thoughts. That is also why a careful scientist like Professor Graham can look at the very same scans and still argue about what they prove."
+    },
+    {
+      "name": "Curriculum",
+      "articleQuote": "This school year Pennsylvania and New Jersey joined Texas, California, Florida and others in mandating the teaching of cursive in schools.",
+      "meaning": "Who decided that you would learn fractions this year and not two years ago? Mostly not your teacher. The answer is a **curriculum** — the official list of what students should learn, and in what order, at each grade. The word comes from a Latin phrase meaning *a running course*, like a race track: the course you run through, year by year, from kindergarten to graduation. Deciding what belongs on that list is a field called education policy.\n\nIn America there is no single national list. Each of the 50 states writes its own, which is why the article can name states one at a time — Pennsylvania and New Jersey adding cursive this school year, Texas, California and Florida having added it earlier. “Common Core” was an attempt to pull those lists together: a set of shared standards released in 2010 that many states agreed to use, so a 6th-grader’s math and reading would roughly line up from one state to the next. Cursive was not on it. Then states began putting it back, one by one.\n\nImagine your family moves from Texas to New Jersey in March. You walk into a new 6th-grade classroom and the teacher is halfway through a unit on ancient Rome — which your old class did in 4th grade. Meanwhile everyone around you already knows long division, and nobody has taught you that yet. Nothing is wrong with you, and nothing is wrong with either school. Two different state lists simply put the same topics in different years.\n\nSo whenever you read that a subject is being “brought back to schools” or “cut”, someone rewrote that list — and in America that someone is almost always a state, not the country."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did old-time scribes join their letters together instead of lifting the pen between them?",
+      "options": [
+        "Their quill lasted longer and they got fewer ink blots that way",
+        "A law required all official documents to be written in cursive",
+        "Joined letters were the only way to write in more than one language",
+        "Early ballpoint pens could not make separate letters"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says scribes kept the quill on the page because it lasted longer and blotted less."
+    },
+    {
+      "question": "The article says people worry that youngsters cannot “decipher” their ancestors’ writing. What does decipher mean?",
+      "options": [
+        "To copy something out neatly",
+        "To work out the meaning of something that is hard to read",
+        "To translate something into a foreign language",
+        "To throw something away because it is too old"
+      ],
+      "answerIndex": 1,
+      "explanation": "Decipher means figuring out what hard-to-read writing or a code actually says."
+    },
+    {
+      "question": "Tolstoy’s manuscripts are described as “dense and intricate”. Something intricate is:",
+      "options": [
+        "Made of many small parts fitted closely together",
+        "Extremely large",
+        "Written in a great hurry",
+        "Simple and easy to understand at a glance"
+      ],
+      "answerIndex": 0,
+      "explanation": "Intricate describes something with lots of small, closely packed parts — like a spider’s web or Tolstoy’s crowded pages."
+    },
+    {
+      "question": "In America, a 6th-grader in Texas and a 6th-grader in New Jersey can be taught different topics in the same month. Why?",
+      "options": [
+        "Each state writes its own curriculum, so the lists differ",
+        "Schools pick their subjects at random each year",
+        "The federal government assigns a different subject to each state",
+        "Teachers vote every morning on what to teach that day"
+      ],
+      "answerIndex": 0,
+      "explanation": "There is no single national list in America — all 50 states write their own curriculum, which is why cursive came back state by state."
+    },
+    {
+      "question": "What does a brain scan actually measure?",
+      "options": [
+        "The exact words a person is thinking",
+        "Which parts of the brain are busier while a person does a task",
+        "How intelligent a person is",
+        "The pictures a person is imagining"
+      ],
+      "answerIndex": 1,
+      "explanation": "Scanners pick up electrical signals or blood flow, so they show where activity is stronger — never what someone is actually thinking."
+    }
+  ]
+}
