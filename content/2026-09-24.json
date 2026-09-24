@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-24",
+  "title": "Many surgical interventions are little better than placebo",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/23/many-surgical-interventions-are-little-better-than-placebo",
+  "articlePageUrl": "/articles/2026-09-24.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "tenable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "TEN-uh-bul",
+      "articleQuote": "And when trial results reinforce each other, scepticism becomes less tenable.",
+      "meaning": "Something **tenable** is a position you can still hold onto and defend. The root is the Latin for *hold* — the same one hiding in *tenant* (a person who holds a lease) and *tenacious* — and calling a view tenable doesn't mean it has been proved right, only that it hasn't yet collapsed under the evidence against it. You will meet the negative far more often: an *untenable* position is one that has become impossible to keep defending. Here the scepticism is surgeons' doubt about trials showing their operations don't work, and the point is that a single awkward trial is easy to wave off, while a stack of trials all pointing the same way makes that doubt harder and harder to keep holding.",
+      "examples": [
+        "After the third camera angle, the coach's claim that the goal was offside was no longer tenable.",
+        "Insisting you had no time to study is not tenable when your phone reports six hours of screen time."
+      ]
+    },
+    {
+      "word": "upend",
+      "partOfSpeech": "verb",
+      "pronunciation": "up-END",
+      "articleQuote": "The results are upending the field.",
+      "meaning": "To **upend** something is literally to tip it up onto its end — what you do to a bucket to empty it. Journalists reach for it constantly in the figurative sense: to turn a whole industry, science or settled way of doing things upside down, so that what sat on top ends up underneath. It is a stronger word than *change* and a more disruptive one than *improve*; nothing about it promises the new arrangement is better, only that the old one has been overturned. The field being upended in this article is surgery itself, where trial after trial finds that operations surgeons have performed confidently for decades work no better than a faked version of the same operation.",
+      "examples": [
+        "One transfer student upended the team's entire starting lineup.",
+        "Streaming upended the music business: the album went from the thing everybody bought to the thing almost nobody buys."
+      ]
+    },
+    {
+      "word": "alleviate",
+      "partOfSpeech": "verb",
+      "pronunciation": "uh-LEE-vee-ayt",
+      "articleQuote": "The trial found that the surgery was no better in alleviating pain than the sham operation.",
+      "meaning": "To **alleviate** something is to make it less bad without necessarily making it go away — the root is the Latin *levis*, meaning *light*, so you are lightening a load rather than lifting it off. It attaches to unpleasant things you can measure: pain, poverty, traffic, symptoms, hunger. That gap between *less bad* and *gone* is the whole subject of this article, because relieving pain is the reason most of these operations are done at all, and the trials keep finding that a fake operation lightens the pain exactly as much as the real one does.",
+      "examples": [
+        "Ice alleviated the swelling in her ankle, but she still couldn't run on it.",
+        "Opening a third exit alleviated the traffic after games; it didn't eliminate it."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Sham surgery",
+      "articleQuote": "patients who had real surgery had more problems in the affected knee ten years on than those who had had sham surgery (anaesthesia followed by a superficial incision)",
+      "meaning": "In 2002 a surgical team in Houston wheeled 165 patients into an operating theatre, put them under general anaesthesia, cut their knees open — and for some of them did nothing else at all. The team even splashed water in a dish so the room would produce the right sound, the slosh of tissue debris being flushed out of a joint, on the chance that sounds reaching the ears of an anaesthetised patient still counted for something. That is a **sham operation**, and it belongs to clinical research, the part of medicine whose job is to find out whether a treatment does anything.\n\nFaking a pill is easy: press an identical pill with no drug in it, hand it out at random, and tell neither the patient nor the doctor which is which. That fake is a *placebo*. Faking an operation is much harder, because the patient walks in, gets anaesthetised, and wakes up with a wound. So a sham operation reproduces every single part of the experience except the part supposed to do the work — the real anaesthetic, a real cut through the skin, the real stitches, the real weeks of resting and being careful — and then no repair, no removal, nothing fused, nothing shaved off.\n\nWhy go to that trouble? Because people who have a sham operation very often get better, and for two physically different reasons that the trial is built to pull apart. First, tissue frequently repairs itself over months whether or not anyone operates; the article notes that the torn-looking \"abnormalities\" surgeons go in to fix turn up just as often in knees, backs and shoulders belonging to people with no pain at all. Second, there is the placebo effect: patients report less pain after being scanned, admitted, anaesthetised and looked after, even when nothing inside them was touched. Pooling 100 surgical trials in 2022, researchers found that about two-thirds of the improvement patients felt came from one of those two things, and only about a third from the procedure itself.\n\nCutting someone open to give them nothing sounds indefensible, and surgeons have said exactly that — a 2014 commentary in the journal *Arthroscopy* worried that people signed up as research subjects for such trials \"may not be of entirely sound mind\". The reply is the one the results keep making: with no sham group, the alternative is to go on operating on hundreds of thousands of people a year for a repair nobody has ever shown does anything. So here is the habit worth taking away: feeling better after a treatment is not evidence that the treatment did anything, because the whole performance around it — the attention, the anaesthetic, the recovery time — reliably makes people feel better on its own."
+    },
+    {
+      "name": "Fee-for-service",
+      "articleQuote": "Disfavoured operations decline faster in countries where surgeons are salaried, as in Britain and Scandinavia, than in countries such as America where they are paid per operation and act as small businesses.",
+      "meaning": "Shoulder operations to shave off a bone spur fell in Britain from 28,000 a year in 2016-17 to 5,720 by 2019-20, once trials showed the procedure relieved pain no better than a sham. In America the same operation stayed popular. Same evidence, same surgery, opposite response — and the thing that differs is how the surgeon gets paid.\n\nHealth economics distinguishes two basic arrangements. A **salaried** doctor is paid a fixed amount for the year to do the job, as in Britain's NHS or a Scandinavian hospital: perform ten operations this month or forty, the paycheque is identical. Under **fee-for-service**, each procedure carries its own payment — the American default, where a surgeon or their practice bills per operation and, in the article's words, runs as a small business. Unpack the name and it explains itself: a *fee* for each *service* rendered. The consequence is simple arithmetic. Where doctors are salaried, an operation that stops being performed costs the surgeon nothing. Under fee-for-service, it is income that stops arriving.\n\nThis is not an accusation that American surgeons are greedy, and that matters, because the mechanism works on people acting in complete good faith. Nobody decides to operate for the money; what the money does is make one conclusion feel like sober judgment and the other feel like an overreaction to a single study. Economists call that an **incentive** — not a bribe, just the arrangement that determines whether the honest choice and the profitable choice happen to point the same way. The article shows it running through everyone at once: surgeons in America worrying about a bad online review, and insurers still paying for procedures known not to work rather than lose customers to a competitor who does.\n\nSo when an institution keeps doing something the evidence says is useless, the question that gets you furthest is rarely what people believe. It is who gets paid when the thing happens, and who stops getting paid when it stops."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article's subtitle says a succession of clinical trials is upending the field. Which finding best shows what is being overturned?",
+      "options": [
+        "Surgery has become far cheaper than it used to be",
+        "Operations surgeons have performed confidently for years work no better than a faked version of them",
+        "Fewer people need operations now because they are healthier",
+        "Surgeons are performing more operations than ever before"
+      ],
+      "answerIndex": 1,
+      "explanation": "To upend something is to turn it upside down, and what gets overturned here is the assumption that a long-established procedure must be doing some good."
+    },
+    {
+      "question": "In the 2022 study in JAMA that pooled 100 surgical trials, roughly how much of the improvement patients felt after surgery came from the procedure itself?",
+      "options": [
+        "About one-third",
+        "About two-thirds",
+        "Almost all of it",
+        "None of it at all"
+      ],
+      "answerIndex": 0,
+      "explanation": "Researchers found about two-thirds of the improvement came from the body healing on its own or from placebo effects, leaving roughly one-third attributable to the operation."
+    },
+    {
+      "question": "What makes an operation a sham operation in a clinical trial?",
+      "options": [
+        "The patient is given a placebo pill instead of being taken to the operating theatre",
+        "The patient goes through the anaesthesia, the incision and the recovery, but the repair itself is never performed",
+        "The surgeon operates on the healthy side of the body instead",
+        "A trainee performs the operation in place of a senior surgeon"
+      ],
+      "answerIndex": 1,
+      "explanation": "A sham operation reproduces everything around the surgery — anaesthetic, a real cut, the real recovery — and leaves out only the part that is supposed to do the work."
+    },
+    {
+      "question": "Why did shoulder operations for a bone spur drop sharply in Britain but stay popular in America after trials found them ineffective?",
+      "options": [
+        "British surgeons saw the trial results years before American surgeons did",
+        "Britain banned the procedure outright",
+        "British surgeons are salaried, while American surgeons are typically paid for each operation they perform",
+        "The operation had never been common in America"
+      ],
+      "answerIndex": 2,
+      "explanation": "Under a salary an abandoned operation costs the surgeon nothing, whereas under fee-for-service it is income that stops arriving — so disfavoured procedures fade faster in salaried systems."
+    },
+    {
+      "question": "The article says that as trial results reinforce each other, \"scepticism becomes less tenable\". What does that mean?",
+      "options": [
+        "The doubt becomes harder to keep defending",
+        "The doubt spreads to more surgeons",
+        "The doubt turns out to be correct after all",
+        "The doubt stops interesting researchers"
+      ],
+      "answerIndex": 0,
+      "explanation": "Tenable means able to be held or defended, so something less tenable is a position you can no longer maintain — here, doubting one inconvenient trial is easy, doubting a pile of agreeing trials is not."
+    }
+  ]
+}

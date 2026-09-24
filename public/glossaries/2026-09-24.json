@@ -1,0 +1,731 @@
+[
+  {
+    "k": "tenable",
+    "t": "tenable",
+    "kind": "vocab",
+    "pron": "TEN-uh-bul",
+    "forms": [
+      "tenable"
+    ],
+    "text": "Something tenable is a position you can still hold onto and defend. The root is the Latin for hold, the same one inside tenant (someone who holds a lease) and tenacious, and you will more often meet the negative: an untenable argument is one that has become impossible to keep defending. Here the scepticism is surgeons doubting the trials, and the point is that brushing off one awkward study is easy while brushing off a pile of agreeing studies is not.",
+    "audio": true
+  },
+  {
+    "k": "upending",
+    "t": "upending",
+    "kind": "vocab",
+    "pron": "up-END",
+    "forms": [
+      "upending"
+    ],
+    "text": "To upend something is literally to tip it up onto its end, the way you upend a bucket to empty it. Journalists use it constantly in the figurative sense of turning a whole industry or science upside down, so that what sat on top ends up underneath. It is stronger than change and more disruptive than improve, and it promises nothing about the new arrangement being better. What is being upended here is surgery itself.",
+    "audio": true
+  },
+  {
+    "k": "alleviating",
+    "t": "alleviating",
+    "kind": "vocab",
+    "pron": "uh-LEE-vee-ayt",
+    "forms": [
+      "alleviating"
+    ],
+    "text": "To alleviate something is to make it less bad without necessarily making it go away. The root is the Latin levis, meaning light, so you are lightening a load rather than lifting it off, and the word attaches to unpleasant things you can measure: pain, poverty, traffic, hunger. That gap between less bad and gone is what this whole article turns on, because relieving pain is the reason most of these operations are performed.",
+    "audio": true
+  },
+  {
+    "k": "intervention",
+    "t": "intervention",
+    "kind": "word",
+    "forms": [
+      "interventions",
+      "intervention"
+    ],
+    "text": "In everyday speech an intervention is stepping into a situation to change it, often dramatically. In medicine it is a plain technical term for any treatment a doctor actively does to you, whether an operation, a drug or a course of physiotherapy, which is why the article can talk about surgical and non-surgical interventions side by side. The last line plays on both senses at once: surgery itself could use a major intervention.",
+    "audio": true
+  },
+  {
+    "k": "trial",
+    "t": "trial",
+    "kind": "word",
+    "forms": [
+      "trials",
+      "trial"
+    ],
+    "text": "A trial in the courtroom sense is a hearing before a judge, but in science it means something quite different: a planned test of whether a treatment works, run on real volunteers under rules fixed in advance. The shared idea is putting something on trial, that is, subjecting a claim to a test it could fail. Nearly every trial in this article is the scientific kind.",
+    "audio": true
+  },
+  {
+    "k": "rcts",
+    "t": "randomised controlled trials",
+    "kind": "name",
+    "forms": [
+      "randomised controlled trials",
+      "RCTs"
+    ],
+    "text": "A randomised controlled trial is the strongest test medicine has for whether a treatment does anything. Volunteers are split into groups by chance rather than by choice (randomised), one group gets the treatment and another gets a fake or an alternative (controlled), and then the groups are compared. Splitting by chance is the clever part, because it stops the healthier or more hopeful patients from piling into one group and flattering the result. The article's point is that drugs have been tested this way for decades while operations mostly have not.",
+    "audio": true
+  },
+  {
+    "k": "placebo",
+    "t": "placebo",
+    "kind": "word",
+    "forms": [
+      "placebo"
+    ],
+    "text": "A placebo is a fake treatment with no active ingredient, such as a sugar pill pressed to look exactly like the real drug, given to a comparison group so that everyone in a trial has the same experience apart from the medicine itself. The name comes from the Latin for I shall please. Calling a real operation no better than placebo is the sharpest criticism you can make of it: the pretend version worked just as well.",
+    "audio": true
+  },
+  {
+    "k": "placebo-effect",
+    "t": "placebo effect",
+    "kind": "word",
+    "forms": [
+      "placebo effect",
+      "placebo effects"
+    ],
+    "text": "The placebo effect is the improvement people report after a treatment that contained nothing active at all. It is not imaginary and it is not lying; being examined, reassured, admitted and cared for genuinely changes how much pain people say they feel. It is also not magic, and it does not shrink tumours or mend bones, which is why researchers work hard to separate it from a body simply healing on its own.",
+    "audio": true
+  },
+  {
+    "k": "sham",
+    "t": "sham surgery",
+    "kind": "word",
+    "forms": [
+      "sham surgery",
+      "sham operation",
+      "sham"
+    ],
+    "text": "A sham is a deliberate fake, something staged to look like the real thing. Sham surgery is the operating-theatre version of a placebo pill: the patient gets real anaesthetic, a real cut through the skin and a real recovery, but the repair itself is never performed. Faking an operation is far harder than faking a pill, which is exactly why so few operations had ever been tested this way.",
+    "audio": true
+  },
+  {
+    "k": "succession",
+    "t": "succession",
+    "kind": "word",
+    "forms": [
+      "succession"
+    ],
+    "text": "Succession most famously means the order in which one person follows another into a throne or a job. Its plainer and much commoner meaning is simply a series of things arriving one after another, which is the sense here: a succession of clinical trials is one trial after another after another. Both senses come from the Latin for follow after.",
+    "audio": true
+  },
+  {
+    "k": "field",
+    "t": "field",
+    "kind": "word",
+    "forms": [
+      "field"
+    ],
+    "text": "Beyond grass and goalposts, a field is an area of study or work along with the people in it, so medicine, economics and journalism are all fields. When the article says the results are upending the field, it means they are overturning the shared beliefs of surgeons as a profession. Dr Ring's field is the narrower one of orthopaedic surgery.",
+    "audio": true
+  },
+  {
+    "k": "go-under-the-knife",
+    "t": "go under the knife",
+    "kind": "phrase",
+    "forms": [
+      "go under the knife"
+    ],
+    "text": "To go under the knife is a standard English way of saying to have surgery, the knife standing in for the surgeon's scalpel. It is slightly informal and carries a small shiver of risk, which is why writers reach for it when they want you to feel that an operation is a real event and not a routine appointment.",
+    "audio": true
+  },
+  {
+    "k": "caesareans",
+    "t": "Caesarean",
+    "kind": "name",
+    "forms": [
+      "Caesareans"
+    ],
+    "text": "A Caesarean, or C-section, is the delivery of a baby through a surgical cut in the mother's abdomen rather than through the birth canal. It is named after Julius Caesar, who was said, probably wrongly, to have been born that way. The article lists emergency Caesareans alongside organ transplants as an example of surgery nobody disputes: without it both mother and baby can die.",
+    "audio": true
+  },
+  {
+    "k": "hard-to-come-by",
+    "t": "hard to come by",
+    "kind": "phrase",
+    "forms": [
+      "hard to come by"
+    ],
+    "text": "If something is hard to come by, it is difficult to obtain or find, not difficult to understand. The phrase suits things that exist but are scarce: tickets, honest answers, good evidence. Here the answers were hard to come by because almost nobody had run the trials that would have produced them.",
+    "audio": true
+  },
+  {
+    "k": "gold-standard",
+    "t": "gold-standard",
+    "kind": "phrase",
+    "forms": [
+      "gold-standard"
+    ],
+    "text": "The gold standard for something is the best available version of it, the one everything else is measured against. The phrase comes from the old monetary system in which a currency's value was fixed to a set weight of gold. Calling randomised controlled trials the gold-standard type of research means they are the most trustworthy method we have, not that they are perfect.",
+    "audio": true
+  },
+  {
+    "k": "conducted",
+    "t": "conducted",
+    "kind": "word",
+    "forms": [
+      "conducted"
+    ],
+    "text": "Conduct has several unrelated-looking meanings: behaviour, leading an orchestra, and carrying electricity. The one used here is to carry out or perform something organised, so operations are conducted, trials are conducted, and surveys are conducted. It is the formal register a journal or a news article uses instead of done.",
+    "audio": true
+  },
+  {
+    "k": "nihr",
+    "t": "National Institute for Health and Care Research",
+    "kind": "name",
+    "forms": [
+      "National Institute for Health and Care Research"
+    ],
+    "text": "This is the British government body that pays for medical research inside the National Health Service, deciding which studies get funded. Its budget matters here because trials are expensive and someone has to want the answer enough to pay for it. The jump it funded, from 34 surgical trials in 2011 to 188 in 2023, is why the evidence in this article exists at all.",
+    "audio": true
+  },
+  {
+    "k": "inflamed",
+    "t": "inflamed",
+    "kind": "word",
+    "forms": [
+      "inflamed"
+    ],
+    "text": "Inflamed tissue is swollen, hot, red and painful, the body's standard response to injury or infection. It is a medical description of a physical state, not a word about anger, though the two senses share the idea of something being on fire. An inflamed appendix is the condition surgeons have traditionally removed by operating.",
+    "audio": true
+  },
+  {
+    "k": "appendix",
+    "t": "appendix",
+    "kind": "word",
+    "forms": [
+      "appendix"
+    ],
+    "text": "At the back of a book, an appendix is the extra material added after the main text. In the body it is a small dead-end tube attached to the large intestine, and the two senses share the idea of something appended, or hung on, to the main structure. The article's finding is startling: for most patients, a course of antibiotics turns out to work as well as cutting it out.",
+    "audio": true
+  },
+  {
+    "k": "striking",
+    "t": "striking",
+    "kind": "word",
+    "forms": [
+      "striking"
+    ],
+    "text": "Striking means remarkable enough to stop you in your tracks, as if the fact had physically struck you. Writers use Most striking at the front of a sentence to flag the single most surprising item in a list. Here it introduces the article's hardest finding, that spinal fusions and rotator-cuff repairs perform no better than placebo.",
+    "audio": true
+  },
+  {
+    "k": "spinal-fusions",
+    "t": "spinal fusions",
+    "kind": "name",
+    "forms": [
+      "spinal fusions"
+    ],
+    "text": "A spinal fusion is an operation that permanently joins two or more vertebrae, the bones stacked up your back, using bone graft, screws or rods so they heal into one solid piece and no longer move against each other. The goal is to stop pain thought to come from that movement. It is major surgery with months of recovery, which is what makes it so awkward that trials find it no better than non-surgical care.",
+    "audio": true
+  },
+  {
+    "k": "rotator-cuff",
+    "t": "rotator-cuff",
+    "kind": "name",
+    "forms": [
+      "rotator-cuff"
+    ],
+    "text": "The rotator cuff is the group of four muscles and their tendons that hold the top of your arm bone in the shoulder socket and let you rotate and lift the arm. Tears in it are common in throwing sports and in older shoulders, and a repair stitches the torn tendon back to the bone. Athletes know the name well, which makes it a jolt to read that the repair may do no more than a sham.",
+    "audio": true
+  },
+  {
+    "k": "indistinguishable",
+    "t": "indistinguishable",
+    "kind": "word",
+    "forms": [
+      "indistinguishable"
+    ],
+    "text": "Two things are indistinguishable when you cannot tell them apart, however hard you look. Pull the word apart and it says exactly that: not (in) able to be (able) told apart (distinguish). Saying the effects of an operation are indistinguishable from placebo is more careful than saying the operation does nothing: the measurements simply cannot separate them.",
+    "audio": true
+  },
+  {
+    "k": "physiotherapy",
+    "t": "physiotherapy",
+    "kind": "name",
+    "forms": [
+      "physiotherapy"
+    ],
+    "text": "Physiotherapy, called physical therapy in America, treats injury and pain with guided exercise, stretching and hands-on techniques rather than drugs or surgery. A physiotherapist builds up the muscles around a damaged joint so it works better and hurts less. In this article it is the leading example of non-surgical care, the thing operations are increasingly being compared against.",
+    "audio": true
+  },
+  {
+    "k": "do-more-harm-than-good",
+    "t": "do more harm than good",
+    "kind": "phrase",
+    "forms": [
+      "do more harm than good"
+    ],
+    "text": "A standard English phrase for an action whose damage outweighs its benefit, so you would have been better off doing nothing. It does not claim the action helped nobody, only that the ledger comes out negative overall. The prostate-cancer and knee trials in this paragraph are the evidence: the surgery left patients with problems they would not otherwise have had.",
+    "audio": true
+  },
+  {
+    "k": "prostate-cancer",
+    "t": "prostate-cancer",
+    "kind": "name",
+    "forms": [
+      "prostate-cancer"
+    ],
+    "text": "The prostate is a small gland in men that sits below the bladder and helps make semen, and prostate cancer is among the most common cancers in men. Many prostate cancers grow so slowly that they never threaten the man's life, which is the key to this paragraph: removing the gland did not change how long patients lived, but it did leave them with lasting sexual and urinary problems.",
+    "audio": true
+  },
+  {
+    "k": "mortality",
+    "t": "mortality",
+    "kind": "word",
+    "forms": [
+      "mortality"
+    ],
+    "text": "Mortality can mean the plain fact that all living things die, as in poetry about human mortality. In medicine and statistics it is a measurement: the rate at which people in some group die. So surgery having no effect on patient mortality means the operation did not change how many patients were still alive fifteen years later.",
+    "audio": true
+  },
+  {
+    "k": "urological",
+    "t": "urological",
+    "kind": "word",
+    "forms": [
+      "urological"
+    ],
+    "text": "Urology is the branch of medicine dealing with the kidneys, bladder and the whole system that makes and carries urine, so urological problems are difficulties in that plumbing, such as leaking or being unable to empty the bladder. The root is the Greek for urine. Naming them alongside sexual problems is the article's way of saying the harm was concrete and permanent.",
+    "audio": true
+  },
+  {
+    "k": "superficial",
+    "t": "superficial",
+    "kind": "word",
+    "forms": [
+      "superficial"
+    ],
+    "text": "Superficial means on or near the surface, nothing more. Applied to a person or an argument it is an insult meaning shallow, but in medicine it is neutral and precise: a superficial incision cuts the skin without going deeper. That precision matters here, because the shallow cut is what makes the patient believe an operation happened while nothing inside was touched.",
+    "audio": true
+  },
+  {
+    "k": "incision",
+    "t": "incision",
+    "kind": "word",
+    "forms": [
+      "incision"
+    ],
+    "text": "An incision is a deliberate cut made with a blade, the surgeon's word for the opening they make in the skin. It shares a root with incisors, your front cutting teeth, and with the word concise, meaning cut short. Anaesthesia followed by a superficial incision is the entire recipe for a sham operation.",
+    "audio": true
+  },
+  {
+    "k": "orthopaedic",
+    "t": "orthopaedic",
+    "kind": "name",
+    "forms": [
+      "orthopaedic"
+    ],
+    "text": "Orthopaedics is the branch of surgery dealing with bones, joints, muscles and tendons, so an orthopaedic surgeon is the one who repairs your knee, shoulder or spine. The name comes from the Greek for straight child, from the specialty's beginnings in correcting children's bone deformities. Most of the operations questioned in this article are orthopaedic ones.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckons",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "To reckon is to work out or judge, originally by counting, which survives in the phrase to reckon up a bill. British and Economist usage keeps a shade of considered estimate: someone who reckons something has weighed it and reached a view. Saying Dr Ring reckons most operations in his field may be unnecessary marks it as his judgment rather than a proven fact.",
+    "audio": true
+  },
+  {
+    "k": "pooled",
+    "t": "pooled",
+    "kind": "word",
+    "forms": [
+      "pooled"
+    ],
+    "text": "To pool things is to combine separate contributions into one shared supply, as you pool money for a group present or pool your savings. Researchers pool data by merging the results of many small studies into one big pile so that patterns too faint to see in any single study become visible. Pooling 100 trials covering 32 interventions is what let this team put a number on how much of the benefit came from the operation itself.",
+    "audio": true
+  },
+  {
+    "k": "jama",
+    "t": "JAMA",
+    "kind": "name",
+    "forms": [
+      "JAMA"
+    ],
+    "text": "JAMA is the Journal of the American Medical Association, one of the handful of medical journals whose findings doctors worldwide take seriously. Publishing in it means the work passed review by other specialists first. The article names it because where a study appears is part of how much weight you should give it.",
+    "audio": true
+  },
+  {
+    "k": "potent",
+    "t": "potent",
+    "kind": "word",
+    "forms": [
+      "potent"
+    ],
+    "text": "Potent means powerful, with a strong effect for its size, and it is used of drugs, poisons, arguments and symbols. The same root gives potential and omnipotent. Calling surgery a potent placebo is a deliberate paradox: the fake part of the operation is doing real and powerful work on how patients feel.",
+    "audio": true
+  },
+  {
+    "k": "administering",
+    "t": "administering",
+    "kind": "word",
+    "forms": [
+      "administering"
+    ],
+    "text": "To administer can mean to run an organisation, but in medicine it means to give a treatment to a patient, as in administering a vaccine or a dose of morphine. Both senses share the idea of managing the delivery of something. Saying surgeons are administering a potent placebo casts the whole operation as a dose being given.",
+    "audio": true
+  },
+  {
+    "k": "landmark",
+    "t": "landmark",
+    "kind": "word",
+    "forms": [
+      "landmark"
+    ],
+    "text": "A landmark is literally a feature of the land you navigate by, a church tower or an odd tree. Used of an event or study it means one so important that people date the field from it and everything afterwards is measured against it. The 2002 knee trial earns the word because it was the first to show a famous operation losing to a fake one.",
+    "audio": true
+  },
+  {
+    "k": "mimic",
+    "t": "mimic",
+    "kind": "word",
+    "forms": [
+      "mimic"
+    ],
+    "text": "To mimic something is to imitate it closely, copying how it looks or sounds. It suits both harmless imitation and deliberate deception, and it is the root of mime. Splashing water in a dish to mimic the sound of debris being flushed out of a joint is the strangest detail in this article and shows just how completely the fake had to reproduce the real thing.",
+    "audio": true
+  },
+  {
+    "k": "mindful",
+    "t": "mindful",
+    "kind": "word",
+    "forms": [
+      "mindful"
+    ],
+    "text": "To be mindful of something is to be keeping it in mind, aware of it and taking it into account as you act. It is a quieter word than worried and more deliberate than aware. The team were mindful that the placebo effect might depend on stimuli registered by the unconscious brain, so they bothered with the sound effects.",
+    "audio": true
+  },
+  {
+    "k": "stimuli",
+    "t": "stimuli",
+    "kind": "word",
+    "forms": [
+      "stimuli"
+    ],
+    "text": "A stimulus is anything from outside that a body or nervous system can detect and react to: a sound, a light, a touch, a smell. Stimuli is its Latin plural, and biologists and psychologists use the pair constantly. Here the stimuli in question are the sounds in the operating theatre during an operation the patient is asleep for.",
+    "audio": true
+  },
+  {
+    "k": "registered",
+    "t": "registered",
+    "kind": "word",
+    "forms": [
+      "registered"
+    ],
+    "text": "Register usually means to sign up officially, on a register or a list. Its other everyday meaning is to detect or take notice of something, the way a thermometer registers a temperature or a remark fails to register with you. Stimuli registered by the unconscious brain are signals the brain picked up even though the patient was not aware of them.",
+    "audio": true
+  },
+  {
+    "k": "unconscious",
+    "t": "unconscious",
+    "kind": "word",
+    "forms": [
+      "unconscious"
+    ],
+    "text": "Someone unconscious is not awake and cannot be roused, as under general anaesthesia or after a hard knock to the head. Used of mental processes it means happening outside awareness: an unconscious habit is one you did not notice yourself having. The phrase the unconscious brain points at parts of brain activity that keep responding to sounds and touch while the person knows nothing about it.",
+    "audio": true
+  },
+  {
+    "k": "anaesthesia",
+    "t": "anaesthesia",
+    "kind": "name",
+    "forms": [
+      "anaesthesia"
+    ],
+    "text": "Anaesthesia is the medically induced loss of sensation that makes surgery bearable, and the name is Greek for without feeling. A local anaesthetic numbs one area while you stay awake; general anaesthesia puts you fully unconscious with your breathing monitored throughout. Because it carries real risks of its own, giving anaesthesia to someone in a sham-surgery trial is the part that makes the ethics hard.",
+    "audio": true
+  },
+  {
+    "k": "debris",
+    "t": "debris",
+    "kind": "word",
+    "forms": [
+      "debris"
+    ],
+    "text": "Debris is scattered broken fragments left over from something that has come apart: rubble after a storm, wreckage after a crash. It is French in origin and keeps a silent final s, pronounced duh-BREE. Tissue debris means loose bits of damaged cartilage and tissue inside a joint, which is what a knee washout is supposed to flush away.",
+    "audio": true
+  },
+  {
+    "k": "subset",
+    "t": "subset",
+    "kind": "word",
+    "forms": [
+      "subset"
+    ],
+    "text": "A subset is a smaller set contained entirely inside a bigger one, a term borrowed from mathematics into ordinary careful writing. Golden retrievers are a subset of dogs. Researchers examining only a subset of procedures are being upfront that their comparison covers part of the field, not all of it, because the data existed only for those.",
+    "audio": true
+  },
+  {
+    "k": "outlandish",
+    "t": "outlandish",
+    "kind": "word",
+    "forms": [
+      "outlandish"
+    ],
+    "text": "Outlandish means so strange or extreme that it is hard to take seriously, and the word originally described what came from out of the land, that is, from foreign parts. A claim called outlandish is being dismissed, not merely doubted. Ian Harris uses it for the argument that patients who consent to sham-surgery trials must be mentally unwell.",
+    "audio": true
+  },
+  {
+    "k": "commentary",
+    "t": "commentary",
+    "kind": "word",
+    "forms": [
+      "commentary"
+    ],
+    "text": "A commentary is a piece of writing or speech that comments on something else rather than reporting it: the running talk over a football match, or notes explaining a poem. In academic journals it is a short opinion article in which specialists argue about published research. The 2014 commentary in this paragraph is surgeons arguing against the very use of sham surgery in trials.",
+    "audio": true
+  },
+  {
+    "k": "arthroscopy",
+    "t": "Arthroscopy",
+    "kind": "name",
+    "forms": [
+      "Arthroscopy"
+    ],
+    "text": "Arthroscopy is keyhole surgery on a joint: a surgeon puts a narrow camera and instruments through small holes instead of opening the joint up, and the name is Greek for looking into a joint. Here the capitalised Arthroscopy is a medical journal named after the technique. Knee arthroscopy is precisely the operation the 2002 Houston trial tested and found no better than a sham.",
+    "audio": true
+  },
+  {
+    "k": "research-subjects",
+    "t": "research subjects",
+    "kind": "word",
+    "forms": [
+      "research subjects"
+    ],
+    "text": "A subject in this sense is not a school subject or a citizen of a monarch but a person or animal being studied, the one the research is done to. Researchers increasingly prefer participant, precisely because subject can sound as though the person is an object. The 2014 commentary worried about which patients end up selected as research subjects in sham-surgery trials.",
+    "audio": true
+  },
+  {
+    "k": "of-entirely-sound-mind",
+    "t": "of entirely sound mind",
+    "kind": "phrase",
+    "forms": [
+      "of entirely sound mind"
+    ],
+    "text": "Of sound mind is a set phrase, originally legal, meaning mentally competent enough for your decisions to count, which is why wills begin by declaring the writer of sound mind. Sound here has its old meaning of whole and undamaged, as in safe and sound. Suggesting that patients agreeing to sham surgery may not be of entirely sound mind is a serious charge, and the surgeon quoted next calls it outlandish.",
+    "audio": true
+  },
+  {
+    "k": "generalisable",
+    "t": "generalisable",
+    "kind": "word",
+    "forms": [
+      "generalisable"
+    ],
+    "text": "A result is generalisable when what you found in the group you studied can reasonably be expected to hold for people in general. If you test a drug only on fit young men, the finding may not be generalisable to elderly women. It is a genuine and important worry in research design, which is what makes it a clever thing to raise, honestly or otherwise, against a trial you dislike.",
+    "audio": true
+  },
+  {
+    "k": "operating-theatre",
+    "t": "operating theatre",
+    "kind": "name",
+    "forms": [
+      "operating theatre"
+    ],
+    "text": "An operating theatre is the British name for the room where surgery is performed, called an operating room in America. The theatre is not a joke: early teaching hospitals really did seat students in tiers around the table to watch. The article uses it as a section heading with a wink, since the paragraphs beneath are about surgeons performing a kind of theatre.",
+    "audio": true
+  },
+  {
+    "k": "archly",
+    "t": "archly",
+    "kind": "word",
+    "forms": [
+      "archly"
+    ],
+    "text": "To say something archly is to say it with a knowing, teasing edge, so that the listener understands you do not mean it straight. This arch has nothing to do with bridges; it is the arch of arch-enemy, meaning chief, which drifted into a sense of playful mischief. Dr Blazeby saying surgeons always know what is best is mockery of her own profession, and the one word archly is what tells you so.",
+    "audio": true
+  },
+  {
+    "k": "flipping-a-coin",
+    "t": "flipping a coin",
+    "kind": "phrase",
+    "forms": [
+      "flipping a coin"
+    ],
+    "text": "Flipping a coin is the standard English image for a pure fifty-fifty chance with no skill in it at all. Saying an expert's prediction is as good as flipping a coin is therefore devastating: it means their years of experience add exactly nothing to a guess. Here it describes surgeons predicting whether a patient will improve after a common knee operation.",
+    "audio": true
+  },
+  {
+    "k": "check-ups",
+    "t": "check-ups",
+    "kind": "word",
+    "forms": [
+      "check-ups"
+    ],
+    "text": "A check-up is a routine appointment where a doctor examines you to see how you are doing, rather than one you make because something is wrong. The detail matters enormously in this paragraph: the patients who bother coming back for check-ups are mostly the ones who got better, so a surgeon who judges by their own clinic is seeing a flattering, unrepresentative sample.",
+    "audio": true
+  },
+  {
+    "k": "scepticism",
+    "t": "scepticism",
+    "kind": "word",
+    "forms": [
+      "scepticism"
+    ],
+    "text": "Scepticism, spelled skepticism in America, is the habit of not accepting a claim until the evidence is good enough. It is a virtue in science and a defence against being fooled, but it can also be used to stall, by demanding more proof of results you dislike than of ones you already believe. That second use is the one in this sentence, which is why agreeing trials make it less tenable.",
+    "audio": true
+  },
+  {
+    "k": "disfavoured",
+    "t": "disfavoured",
+    "kind": "word",
+    "forms": [
+      "disfavoured"
+    ],
+    "text": "To favour something is to prefer it; the prefix dis- reverses that, so a disfavoured operation is one that has fallen out of favour, no longer recommended. The word is milder than banned or forbidden: nobody stopped surgeons doing these procedures, the evidence simply turned against them. Whether that is enough to change behaviour is exactly the question this paragraph answers.",
+    "audio": true
+  },
+  {
+    "k": "salaried",
+    "t": "salaried",
+    "kind": "word",
+    "forms": [
+      "salaried"
+    ],
+    "text": "A salaried worker is paid a fixed amount for the year regardless of how much work passes through their hands, as against being paid per hour, per sale or per procedure. The word traces back to the Latin for salt money, an allowance Roman soldiers received. Because a salaried surgeon earns the same whether they operate ten times or forty, dropping a useless operation costs them nothing.",
+    "audio": true
+  },
+  {
+    "k": "bone-spur",
+    "t": "bone spur",
+    "kind": "name",
+    "forms": [
+      "bone spur"
+    ],
+    "text": "A bone spur is a small extra growth of bone that forms at a joint, often where tissues have rubbed for years, and it is named for its resemblance to the spur on a rider's boot. Shoulder spurs were long blamed for pain and shaved off surgically. Britain went from 28,000 such operations a year to 5,720 in three years once the trials came in; America did not.",
+    "audio": true
+  },
+  {
+    "k": "all-too-often",
+    "t": "all too often",
+    "kind": "phrase",
+    "forms": [
+      "all too often"
+    ],
+    "text": "All too often means more frequently than it should happen, and the all too adds regret rather than counting anything. Writers use it to signal that what follows is a recurring failure, not a one-off. Here it introduces scans turning up harmless abnormalities that then get treated as the cause of a patient's pain.",
+    "audio": true
+  },
+  {
+    "k": "abnormalities",
+    "t": "abnormalities",
+    "kind": "word",
+    "forms": [
+      "abnormalities"
+    ],
+    "text": "An abnormality is anything departing from the normal pattern, which in a medical scan means a shape or texture that differs from the textbook picture. The crucial trap is that abnormal does not mean harmful: this paragraph reports that the very abnormalities surgeons operate to fix are found just as often in knees, backs and shoulders belonging to people with no pain at all.",
+    "audio": true
+  },
+  {
+    "k": "tears",
+    "t": "tears",
+    "kind": "word",
+    "forms": [
+      "tears"
+    ],
+    "text": "Spelled the same but sounding different: tears that you cry rhyme with fears, while tears meaning rips rhyme with chairs. This is the second kind, tissue tears being small splits in the fibres of a tendon or cartilage. The article's point is that finding one on a scan proves little, since such tears accumulate with age as ordinarily as grey hair.",
+    "audio": true
+  },
+  {
+    "k": "by-product",
+    "t": "by-product",
+    "kind": "word",
+    "forms": [
+      "by-product"
+    ],
+    "text": "A by-product is something produced incidentally while making or doing something else, the way sawdust is a by-product of cutting wood. It usually implies nobody set out to create it. Calling tissue tears as natural a by-product of ageing as wrinkles and grey hair says they are just what a body accumulates as it goes along, not a fault in need of fixing.",
+    "audio": true
+  },
+  {
+    "k": "whats-more",
+    "t": "What’s more",
+    "kind": "phrase",
+    "forms": [
+      "What’s more"
+    ],
+    "text": "What's more is a standard linking phrase used to add a further point that strengthens what you just said, roughly equivalent to and on top of that. It signals the next fact is not a change of subject but reinforcement. Here it adds the sharper half of Dr Ring's argument: not only are the scan findings harmless, they are probably not what is causing the pain either.",
+    "audio": true
+  },
+  {
+    "k": "inconclusive",
+    "t": "inconclusive",
+    "kind": "word",
+    "forms": [
+      "inconclusive"
+    ],
+    "text": "Something inconclusive does not settle the question, leaving you no wiser than before. A test can be inconclusive without being wrong; it simply fails to point clearly either way. Patients insisting on surgery on the basis of inconclusive tests are demanding a permanent decision from evidence that has not actually established anything.",
+    "audio": true
+  },
+  {
+    "k": "quick-fix",
+    "t": "a quick fix",
+    "kind": "phrase",
+    "forms": [
+      "a quick fix"
+    ],
+    "text": "A quick fix is a fast, easy remedy for a problem, almost always used with a hint of doubt that it will hold. It suits situations where the slow and boring solution is the one that actually works. Against months of physiotherapy, an operation looks like the quick fix, and the article says that promise is hard for both patient and surgeon to resist.",
+    "audio": true
+  },
+  {
+    "k": "cover",
+    "t": "cover",
+    "kind": "word",
+    "forms": [
+      "cover"
+    ],
+    "text": "Beyond lids and blankets, cover has a specific meaning in insurance: to agree to pay for something. If your insurer covers a procedure, it is included in what your policy pays out for, and if it does not, the bill is yours. Insurance companies covering ineffective procedures for fear of losing customers is a business decision, not a medical one.",
+    "audio": true
+  },
+  {
+    "k": "hold-their-ground",
+    "t": "hold their ground",
+    "kind": "phrase",
+    "forms": [
+      "hold their ground"
+    ],
+    "text": "To hold your ground is to refuse to give way under pressure, an image borrowed from soldiers keeping a position instead of retreating. It implies someone is actively pushing you. The pressure on a doctor here comes from patients requesting an operation, and more trials pointing the same way are what let the doctor keep saying no.",
+    "audio": true
+  },
+  {
+    "k": "chronic",
+    "t": "chronic",
+    "kind": "word",
+    "forms": [
+      "chronic"
+    ],
+    "text": "In medicine chronic means long-lasting, the opposite of acute, which means sudden and short. It says nothing about severity: chronic pain may be mild but it goes on for months or years, while acute pain can be agonising and over in a day. The root is the Greek for time, the same one inside chronology.",
+    "audio": true
+  },
+  {
+    "k": "musculo-skeletal",
+    "t": "musculo-skeletal",
+    "kind": "name",
+    "forms": [
+      "musculo-skeletal"
+    ],
+    "text": "The musculo-skeletal system is the bones, muscles, tendons, ligaments and cartilage that hold you up and move you around, so musculo-skeletal pain is pain in that machinery: backs, knees, shoulders, hips. It is one of the commonest reasons people see a doctor at all. That is why so little of it having been tested against doing nothing is such an uncomfortable finding.",
+    "audio": true
+  },
+  {
+    "k": "hippocratic",
+    "t": "Hippocratic",
+    "kind": "name",
+    "forms": [
+      "Hippocratic"
+    ],
+    "text": "Hippocrates was a Greek physician of the fifth century BC, long treated as the founder of medicine as a discipline, and the Hippocratic oath is the promise doctors have traditionally made about how they will treat patients. The line most people know, first do no harm, is the one the article is invoking. Its bite in this context is that an operation which does nothing is not neutral: it still cuts, still risks anaesthesia and still takes months of recovery.",
+    "audio": true
+  },
+  {
+    "k": "the-rich-world",
+    "t": "the rich world",
+    "kind": "name",
+    "forms": [
+      "the rich world"
+    ],
+    "text": "The rich world is standard Economist shorthand for the wealthy, industrialised countries, roughly western Europe, North America, Japan, Australia, South Korea and a few others. It is used in place of clumsier labels like the developed world. Patients there have more surgery partly because they can afford it and partly because there are more surgeons and hospitals to provide it.",
+    "audio": true
+  }
+]
