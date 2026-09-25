@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-25",
+  "title": "The world’s most common vegetable is enjoying a great year",
+  "articleUrl": "https://www.economist.com/culture/2026/02/16/the-worlds-most-common-vegetable-is-enjoying-a-great-year",
+  "articlePageUrl": "/articles/junior/2026-09-25.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "surplus",
+      "partOfSpeech": "noun",
+      "pronunciation": "SUR-plus",
+      "articleQuote": "In fact, there are so many potatoes—one farm near Leipzig had a surplus of 4,000 tonnes—that they are being given away.",
+      "meaning": "A surplus is what is left over once you have taken all you actually need — more of something than you can use. It is a useful word because it comes up far beyond food: a country can run a surplus of money, a team can have a surplus of players. In the article one farm near Leipzig finished the season with 4,000 tonnes of potatoes beyond anything it could sell, which is why those potatoes ended up being handed out for free.",
+      "examples": [
+        "We printed 200 flyers for the bake sale and handed out 60, so the surplus sat in a box by the door all week.",
+        "Our coach has a surplus of goalkeepers this season — four kids want the job and only one can play it."
+      ]
+    },
+    {
+      "word": "optimal",
+      "partOfSpeech": "adjective",
+      "pronunciation": "OP-tih-mul",
+      "articleQuote": "Germany, the largest producer of spuds in the European Union, is enjoying the biggest harvest in a generation, owing to optimal growing conditions and increased tuber cultivation.",
+      "meaning": "Optimal does not just mean good — it means *the best possible for one particular purpose*. That last part matters: weather that is optimal for potatoes would be miserable for a beach holiday. Here it means the rain and the temperatures happened to land exactly where potato plants like them, and Germany got its biggest harvest in a generation out of it.",
+      "examples": [
+        "The optimal time to leave for school is 7:40 — any later and we are stuck behind the bus queue at the corner.",
+        "She tried three different angles and found the optimal one for her paper plane: released from about shoulder height."
+      ]
+    },
+    {
+      "word": "oblige",
+      "partOfSpeech": "verb",
+      "pronunciation": "uh-BLYJE",
+      "articleQuote": "To avoid famine, in 1756 Frederick the Great of Prussia issued a “potato decree” that obliged farmers to plant potatoes on at least a tenth of their land.",
+      "meaning": "To oblige someone is to make them do something because a rule, a law or a duty leaves them no real choice. It sits between asking and forcing: nobody drags you, but saying no is not really on offer. Frederick the Great’s potato decree obliged Prussian farmers to give up a tenth of their fields to potatoes whether or not they thought it was a good crop.",
+      "examples": [
+        "The tournament rules oblige every player to shake hands after the match, even the one who just lost.",
+        "Nobody said anything out loud, but being the oldest cousin obliged me to sit at the little kids’ table."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Food banks",
+      "articleQuote": "The Berliner Tafel, a food bank, took 22 tonnes.",
+      "meaning": "Germany ended up with more potatoes than it could eat, and one organisation turned up and took 22 tonnes of them away in one go. That organisation is a **food bank**: a charity that collects food nobody is going to sell and gets it to people who cannot afford enough to eat.\n\nThink about the problem a food bank exists to solve. Food goes bad. A farm sitting on 4,000 spare tonnes cannot store them forever, and a bakery cannot sell yesterday’s bread. Meanwhile, in the same city, some families run out of money before the end of the month. So the food is there and the need is there, and the thing that is missing is anything in the middle to carry one to the other. That middle piece is the food bank. It has vans, cold storage, volunteers and a list of shelters, schools and families — which is why a farmer can hand over an entire surplus in a single afternoon instead of tracking down a thousand hungry people alone.\n\nPicture the last ten minutes of a school fair. The snack table still holds four trays of sandwiches, and the doors are about to shut. Someone has to decide: bin them, or drive them somewhere they will be eaten tonight. Doing the second thing takes a car, a fridge and knowing exactly who to phone — and doing it every single day, for a whole city, is a full-time job. The Berliner Tafel is a group of people who do that job. *Tafel* is the German word for table.\n\nSo when you read that spare food was “given away”, picture the machinery behind that phrase. Food banks are the reason a glut in a field can end up as somebody’s dinner instead of a compost heap."
+    },
+    {
+      "name": "Famine",
+      "articleQuote": "After the harvest in Ireland was blighted in 1845, 1m people died and almost 3m emigrated.",
+      "meaning": "One line in this cheerful story about spare potatoes is not cheerful at all: when Ireland’s potatoes failed, a million people died. That is a **famine** — not a hungry week, but food running short across a whole region for long enough that people starve. Historians and economists study famines closely, because they almost never come down to a bad harvest by itself.\n\nWhat struck Ireland in 1845 was a plant disease. A mould-like organism spread from field to field and rotted the potatoes in the ground, so farmers dug up black slime where dinner should have been. It came back in the years that followed. About a million people died and almost three million left the country for good, which is why so many families in America and Australia can trace a line back to Ireland.\n\nBut a ruined harvest does not have to end like that. Plenty of food existed elsewhere in the world that year. What turned the crop failure into a famine was that millions of poor families had almost nothing to eat except potatoes, no money to buy anything else, and too little help arriving in time.\n\nImagine a school where lunch comes from one vending machine, and every kid carries exactly enough coins for the cheapest thing in it. If that machine breaks, it is not a small annoyance — there is no other food and nobody has spare money. Now imagine the school next door, where some kids bring lunch from home, some buy from a canteen and some share. The same machine breaks and hardly anyone notices.\n\nThat is the idea sitting underneath today’s potato flood: the real danger is never one bad year on its own, it is having only one thing to fall back on."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A food bank called the Berliner Tafel took 22 tonnes of the spare potatoes. What does a food bank do?",
+      "options": [
+        "It collects food that would otherwise go to waste and gets it to people who cannot afford enough",
+        "It lends money to farmers who have had a bad harvest",
+        "It stores a country’s emergency food in case of war",
+        "It buys up extra crops so farmers can keep their prices high"
+      ],
+      "answerIndex": 0,
+      "explanation": "A food bank is the middle piece between food nobody will sell and people who cannot buy enough — it collects the spare food and passes it on."
+    },
+    {
+      "question": "The article says Germany’s record harvest came partly from “optimal growing conditions”. Optimal means:",
+      "options": [
+        "Unusually warm",
+        "The best possible for a particular purpose",
+        "Completely natural, with no machines involved",
+        "Barely good enough to manage"
+      ],
+      "answerIndex": 1,
+      "explanation": "Optimal means as good as it can get for one specific job — weather that is optimal for potatoes might be terrible for something else."
+    },
+    {
+      "question": "One farm near Leipzig had a surplus of 4,000 tonnes. A surplus is:",
+      "options": [
+        "The amount a farm is allowed to sell",
+        "Food that has started to go bad",
+        "The amount left over after you have used all you need",
+        "The total weight of an entire harvest"
+      ],
+      "answerIndex": 2,
+      "explanation": "A surplus is the extra beyond what you can use — those 4,000 tonnes were more potatoes than the farm could sell."
+    },
+    {
+      "question": "What did Frederick the Great’s “potato decree” of 1756 oblige farmers to do?",
+      "options": [
+        "Sell their potatoes only to the royal guards",
+        "Plant potatoes on at least a tenth of their land",
+        "Give a tenth of every harvest to the king",
+        "Stop growing potatoes until the famine ended"
+      ],
+      "answerIndex": 1,
+      "explanation": "The decree obliged farmers to put potatoes on at least a tenth of their land — obliging someone means leaving them no real choice."
+    },
+    {
+      "question": "According to the concept card, what turned Ireland’s 1845 crop failure into a famine rather than just a bad year?",
+      "options": [
+        "There was no food anywhere in the world that year",
+        "Irish farmers refused to plant anything else afterwards",
+        "The disease spread to every crop grown in Europe",
+        "Millions of poor families had almost nothing but potatoes to eat and no money for anything else"
+      ],
+      "answerIndex": 3,
+      "explanation": "Food existed elsewhere; the disaster came from millions of people depending on one crop with nothing to fall back on."
+    }
+  ]
+}
