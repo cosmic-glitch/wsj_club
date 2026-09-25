@@ -84,8 +84,18 @@ export default function StreakStrip({
             <span className="text-[#ffe600]">{streak.current}-day streak</span>
             {/* "Best" is noise when the current streak IS the best. */}
             {streak.best > streak.current && <>{" · "}Best {streak.best}</>}
-            {" · "}
-            {streak.gold} gold
+            {/* The tally of medals actually held, highest rung first — a
+                rung with none is left out, so a bronze-only reader sees
+                "3 bronze", not "0 gold". */}
+            {[...MEDALS]
+              .reverse()
+              .filter((m) => streak.counts[m] > 0)
+              .map((m) => (
+                <span key={m}>
+                  {" · "}
+                  {streak.counts[m]} {m}
+                </span>
+              ))}
           </span>
           {/* The legend — hidden on a narrow phone, where the head line runs
               out of room once the streak hits two digits. */}

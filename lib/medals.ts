@@ -48,8 +48,8 @@ export type Streak = {
   current: number;
   /** The longest such run over the whole history (includes the current run). */
   best: number;
-  /** Readings with a gold medal. */
-  gold: number;
+  /** How many readings ended on each rung (only the highest rung counts). */
+  counts: Record<Medal, number>;
   /** Readings with any medal. */
   total: number;
 };
@@ -108,15 +108,15 @@ export function streakOf(dates: string[], medals: MedalMap, today: string): Stre
     if (medals[d]) best = Math.max(best, ++run);
     else if (d < today) run = 0;
   }
-  let gold = 0;
+  const counts: Record<Medal, number> = { bronze: 0, silver: 0, gold: 0 };
   let total = 0;
   for (const d of dates) {
     const m = medals[d];
     if (!m) continue;
     total++;
-    if (m === "gold") gold++;
+    counts[m]++;
   }
-  return { current, best, gold, total };
+  return { current, best, counts, total };
 }
 
 /** The viewer's local date as "YYYY-MM-DD" (TodayTag's computation). */
