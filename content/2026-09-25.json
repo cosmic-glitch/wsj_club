@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-25",
+  "title": "Space-going mirrors could offer daylight on demand",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/23/space-going-mirrors-could-offer-daylight-on-demand",
+  "articlePageUrl": "/articles/2026-09-25.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "de rigueur",
+      "partOfSpeech": "adjective",
+      "pronunciation": "duh-ree-GUR",
+      "articleQuote": "As is now de rigueur in American tech circles, the satellite’s name is drawn from J.R.R. Tolkien’s books.",
+      "meaning": "De rigueur is French, borrowed whole into English, and it means required by fashion or custom rather than by any actual rule — the thing everyone in a particular circle is expected to do. It carries a faint edge of mockery, because what it describes is conformity dressed up as taste. Here the article is gently needling Silicon Valley: calling your test satellite Eärendil-1, after a character of Tolkien’s, is in no way a requirement of spaceflight, it is just what founders all currently do. Note that nothing is ever actually obligatory — de rigueur is about social pressure, never about law.",
+      "examples": [
+        "Ripped jeans were de rigueur at her school that year; turning up in new, unfaded ones marked you out instantly.",
+        "Nobody writes it down anywhere, but a thank-you message after the interview has become de rigueur."
+      ]
+    },
+    {
+      "word": "intermittent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-ter-MIT-uhnt",
+      "articleQuote": "As more and more intermittent solar generation is added to a grid, he says, the costs of providing enough battery backup to ensure the lights always stay on rises quickly.",
+      "meaning": "Something intermittent stops and starts instead of running steadily — intermittent rain, an intermittent rattle in a car, a fever that comes and goes. In writing about energy the word has become almost permanently welded to solar and wind, because those sources produce power when the sun is out and the wind is blowing rather than whenever you ask them to. What it does *not* mean is small or weak: a solar farm can be enormous and still be intermittent, since what makes it intermittent is that you cannot choose the hours it runs. That is precisely the gap Reflect Orbital is trying to sell into.",
+      "examples": [
+        "The wifi at the back of the bus is intermittent — three bars at the stoplight, nothing in between.",
+        "His knee pain was intermittent, which made it maddening to describe: by the time he reached the trainer’s room, it had gone."
+      ]
+    },
+    {
+      "word": "conciliatory",
+      "partOfSpeech": "adjective",
+      "pronunciation": "kun-SIL-ee-uh-tor-ee",
+      "articleQuote": "Mr Nowack is conciliatory: the satellites can be easily turned off by changing their orientations, he claims.",
+      "meaning": "To be conciliatory is to try to calm someone down and win them back rather than fight them — it shares a root with *reconcile*, and it usually involves giving something up on purpose: an apology, a concession, a softening of tone. In the article it marks a switch. Astronomers have just said Reflect’s mirrors would wipe the stars out of a patch of sky, and instead of brushing that off, Mr Nowack offers them an off switch and no-illumination zones around big telescopes. The word describes the manner, not the motive — a conciliatory gesture can be entirely sincere or purely tactical, and his own closing worry, that the firm “could be regulated out of existence”, hints at what is concentrating his mind.",
+      "examples": [
+        "After the blow-up in the group chat, she sent a conciliatory message offering to redo the slides herself.",
+        "The coach struck a conciliatory tone with the parents, admitting the schedule change had been handled badly."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Sun-synchronous orbit",
+      "articleQuote": "The firm plans to fly them in specially designed polar orbits that ensure they will always appear over a given part of Earth at the same local time each day.",
+      "meaning": "A satellite that turns up over the same place at the same local time every single day ought to sound impossible, given that the Earth is spinning and the satellite is tearing around it. It is arranged on purpose, using the shape of the Earth itself, and the field that works it out — orbital mechanics — has a name for the result: a **sun-synchronous orbit**.\n\nStart with what one of Reflect’s satellites is physically doing at its 625km altitude: falling around the Earth, completing a lap roughly every 97 minutes. Its path stays in one fixed flat plane, like a hoop with the planet sitting inside it. Tilt that hoop so it runs nearly north–south, passing close to both poles, and you have a **polar orbit**. The satellite keeps going round its hoop while the Earth rotates underneath, so a different strip of ground slides beneath it on each lap, and across a day it passes above the whole planet. That is why weather and Earth-observation satellites are flown this way.\n\nOne problem is left. The Earth also travels around the sun over a year, so sunlight reaches a fixed hoop from a steadily changing direction: an orbit crossing the equator at dawn in January would be crossing it near midnight by July. The fix exploits the fact that the Earth is not a sphere. It bulges at the equator, where its radius is about 21km greater than at the poles, and the extra gravitational pull of that bulge drags the hoop slowly round. Choose the altitude and the tilt correctly and it pivots by just under one degree per day — one complete turn per year, exactly keeping pace with the Earth’s trip around the sun. The orbit then holds the same angle to the sunlight all year, and the satellite crosses any given latitude at the same local time every day.\n\nReflect needs this because selling light into one city’s evening means having a mirror reliably overhead during that city’s evening, not wherever the geometry has happened to drift. The next time you read that some satellite photographs a place “every day at 10:30am”, that is this orbit at work — it was chosen so that the sunlight, and so the shadows, look the same in every picture."
+    },
+    {
+      "name": "Peak demand",
+      "articleQuote": "focusing extra sunlight onto their panels in the evening and early morning—the times at which demand on the grid tends to be greatest, power prices highest, and solar generation low",
+      "meaning": "Solar panels stop producing at sunset, which is close to the hour when the most electricity is being used. That mismatch is the entire reason anyone would pay to have sunlight beamed down from orbit, and making sense of it means knowing how a grid is actually run — power-systems engineering, the field behind every blackout story you will ever read.\n\nThe founding constraint is that the grid stores essentially nothing. At every instant, the power flowing out of the generators has to equal the power being drawn by every kettle, factory and phone charger on the network; when it does not, the frequency of the whole system drifts, and protective switches cut equipment off the network so it is not damaged. Nobody filled a tank overnight — the electricity in your lamp was generated a fraction of a second ago, somewhere else.\n\nBecause of that, a grid has to be built for its worst moment rather than its average one. Demand follows a daily curve, and in most places it peaks in the early evening, when people arrive home and lights, ovens and heating come on while offices have not fully shut down. That hour is **peak demand**, and it sets how much generating capacity has to exist at all. A plant that runs only in the 50 worst hours of a year still has to be built, staffed and maintained for all 8,760 of them.\n\nThat is what makes the last slice of backup so costly, and it is exactly Mr Nowack’s argument. Sceptics point out, rightly, that battery costs are falling fast. But enough batteries for an ordinary evening is not enough for a cloudy one, and enough for a cloudy evening is not enough for a run of bad days; each extra battery sits idle more of the time than the one before it, so its cost is spread across fewer kilowatt-hours ever sold. The expensive part of a solar-heavy grid is not the sunny Tuesday, it is the rare bad stretch — which is why he claims extra sunlit hours would complement batteries rather than compete with them. Whenever you meet a claim that some energy source is cheap, ask which hour it is cheap in: cheap on average and cheap at 7pm in January are different problems."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is Reflect Orbital’s main proposed business?",
+      "options": [
+        "Beaming extra sunlight onto solar farms in the evening and early morning, when power is worth most",
+        "Launching mirrors that generate electricity in orbit and beam it down as microwaves",
+        "Replacing the streetlights of every major city as its first product",
+        "Using mirrors to warm the polar regions and slow the melting of ice"
+      ],
+      "answerIndex": 0,
+      "explanation": "The firm’s main plan is to boost solar-power stations’ output at the times of day when demand and prices are highest; disaster relief and street lighting are further ambitions, not the core."
+    },
+    {
+      "question": "The test satellite is named Eärendil-1, after a Tolkien character — which the article calls “de rigueur in American tech circles”. De rigueur means:",
+      "options": [
+        "Legally required by the space agency that licenses the launch",
+        "Required by fashion or custom; the expected thing to do",
+        "Surprising and without precedent",
+        "Expensive, but generally judged worth it"
+      ],
+      "answerIndex": 1,
+      "explanation": "De rigueur is borrowed from French and means demanded by etiquette or current fashion — the article is teasing tech founders for all reaching for the same bookshelf."
+    },
+    {
+      "question": "Why does Reflect need its satellites in “specially designed polar orbits”?",
+      "options": [
+        "So each satellite hangs above one fixed point and never moves relative to the ground",
+        "So the mirrors stay in the Earth’s shadow and do not overheat",
+        "So each satellite passes over a given part of Earth at the same local time every day",
+        "So the satellites can be launched more cheaply from sites near the poles"
+      ],
+      "answerIndex": 2,
+      "explanation": "A polar orbit tuned this way keeps a fixed angle to the sunlight, so the satellite crosses a given place at the same local time daily — essential if you are selling light into one city’s evening."
+    },
+    {
+      "question": "Astronomers object that Reflect’s satellites would make it impossible to see any stars from inside a beam. The article calls Mr Nowack’s response conciliatory because he:",
+      "options": [
+        "Dismisses the objection as exaggerated and unsupported by evidence",
+        "Argues that Starlink already causes the same problem, so his satellites change nothing",
+        "Says astronomers should move their telescopes into space",
+        "Offers concessions — that the satellites can be switched off, and that big telescopes would get exclusion zones"
+      ],
+      "answerIndex": 3,
+      "explanation": "Conciliatory means trying to win the other side over rather than fight it, and he offers exactly that: reorienting the satellites turns them off, plus zones around big telescopes where illumination would be forbidden."
+    },
+    {
+      "question": "Mr Nowack argues his satellites would complement batteries rather than replace them. His reasoning is that:",
+      "options": [
+        "Batteries cannot store enough energy to run a city for even an hour",
+        "Battery costs are rising rapidly as solar generation spreads",
+        "Covering the rarest, worst gaps needs batteries that are seldom used, which makes that last slice of backup expensive",
+        "Batteries wear out within a few years, whereas satellites last indefinitely"
+      ],
+      "answerIndex": 2,
+      "explanation": "He does not dispute that battery costs are falling; his claim is that a solar-heavy grid needs rarely used — and therefore expensive — backup, and that extra sunlit hours would reduce how much of it is required."
+    }
+  ]
+}

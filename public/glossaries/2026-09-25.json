@@ -1,0 +1,524 @@
+[
+  {
+    "k": "de-rigueur",
+    "t": "de rigueur",
+    "kind": "vocab",
+    "pron": "duh-ree-GUR",
+    "forms": [
+      "de rigueur"
+    ],
+    "text": "De rigueur is French, taken whole into English, and it means required by fashion or custom rather than by any actual rule — the thing everyone in a certain circle is expected to do. It usually carries a faint sneer, since what it describes is conformity dressed up as taste. Naming a satellite Eärendil-1 after a Tolkien character is in no way a requirement of spaceflight; it is simply what American tech founders currently all do.",
+    "audio": true
+  },
+  {
+    "k": "intermittent",
+    "t": "intermittent",
+    "kind": "vocab",
+    "pron": "in-ter-MIT-uhnt",
+    "forms": [
+      "intermittent"
+    ],
+    "text": "Something intermittent stops and starts instead of running steadily — intermittent rain, an intermittent rattle in a car. In energy writing the word is almost welded to solar and wind, which produce power when the sun is out and the wind blows rather than whenever you ask. It does not mean small or weak: a solar farm can be enormous and still be intermittent, because what matters is that you cannot choose its hours.",
+    "audio": true
+  },
+  {
+    "k": "conciliatory",
+    "t": "conciliatory",
+    "kind": "vocab",
+    "pron": "kun-SIL-ee-uh-tor-ee",
+    "forms": [
+      "conciliatory"
+    ],
+    "text": "To be conciliatory is to try to calm the other side down and win them back rather than fight them; it shares a root with “reconcile”. It usually means giving something up deliberately — an apology, a concession, a softer tone. Astronomers have just accused Reflect of blotting out the stars, and instead of dismissing them Mr Nowack offers an off switch and exclusion zones, which is the conciliatory move.",
+    "audio": true
+  },
+  {
+    "k": "firm",
+    "t": "firm",
+    "kind": "word",
+    "forms": [
+      "firm"
+    ],
+    "text": "In business writing a firm is simply a company — nothing to do with being solid or strict. Newspapers use it constantly to avoid repeating “company” in every sentence, which is exactly what happens here, where Reflect Orbital is called the firm repeatedly. The related word “affirm” shares the old root meaning strong or fixed.",
+    "audio": true
+  },
+  {
+    "k": "booms",
+    "t": "booms",
+    "kind": "word",
+    "forms": [
+      "booms"
+    ],
+    "text": "A boom here is a long rigid pole or arm that extends out from something — the same word as the boom of a sailing boat or a camera crew's microphone boom. It has nothing to do with a loud bang or an economic boom. Four of them unfold from the satellite's body and the mirror sheet is stretched between their tips, like fabric over tent poles.",
+    "audio": true
+  },
+  {
+    "k": "grid",
+    "t": "grid",
+    "kind": "word",
+    "forms": [
+      "grid"
+    ],
+    "text": "The grid is the network of power stations, transformers and high-voltage wires that carries electricity to everyone connected to it — not a grid of squares. Because it stores almost nothing, generation has to match consumption at every instant. That is why the single hour of highest demand matters so much to the argument being made here.",
+    "audio": true
+  },
+  {
+    "k": "generation",
+    "t": "generation",
+    "kind": "word",
+    "forms": [
+      "generation"
+    ],
+    "text": "In electricity writing, generation means the producing of power, and a generation figure is how much is being produced — it has nothing to do with generations of people. So “solar generation low” means the panels are making little electricity at that moment, and “intermittent solar generation” means solar output that comes and goes.",
+    "audio": true
+  },
+  {
+    "k": "flock",
+    "t": "flock",
+    "kind": "word",
+    "forms": [
+      "flock"
+    ],
+    "text": "A flock normally means a group of birds or sheep, but it is used loosely for any large group moving together — here a flock of mirror satellites. The image is borrowed because such satellites really do fly as a coordinated group. The more technical word for it in spaceflight is a constellation.",
+    "audio": true
+  },
+  {
+    "k": "constellation",
+    "t": "constellation",
+    "kind": "word",
+    "forms": [
+      "constellation"
+    ],
+    "text": "Outside astronomy, a constellation of satellites means a whole group of them flown together and coordinated so their coverage adds up to something no single satellite could manage — Starlink and GPS are the familiar examples. It is a technical term, not a poetic one. Reflect needs a constellation because any one mirror is above a given place for only a few minutes at a time.",
+    "audio": true
+  },
+  {
+    "k": "sums",
+    "t": "sums",
+    "kind": "word",
+    "forms": [
+      "sums"
+    ],
+    "text": "Sums here means calculations, especially the financial ones behind a plan — British English says “doing your sums” where American English might say “running the numbers”. Saying Reflect's sums add up is saying the business case works arithmetically, not that anyone is doing addition.",
+    "audio": true
+  },
+  {
+    "k": "dismay",
+    "t": "dismay",
+    "kind": "word",
+    "forms": [
+      "dismay"
+    ],
+    "text": "Dismay is the sinking mix of disappointment and alarm you feel on discovering something has gone wrong and may not be fixable — more serious than annoyance, quieter than outrage. Astronomers feel it about Starlink because sunlight bouncing off the satellites leaves bright streaks across long-exposure telescope images.",
+    "audio": true
+  },
+  {
+    "k": "orientations",
+    "t": "orientations",
+    "kind": "word",
+    "forms": [
+      "orientations"
+    ],
+    "text": "An object's orientation is the direction it is facing or tilted in, as opposed to where it is. Changing a mirror satellite's orientation does not move it out of orbit; it turns the reflective face away, so sunlight bounces off into empty space instead of down at the ground. That is the whole of the claimed off switch.",
+    "audio": true
+  },
+  {
+    "k": "viable",
+    "t": "viable",
+    "kind": "word",
+    "forms": [
+      "viable"
+    ],
+    "text": "Viable means capable of working or surviving on its own — a viable plan can actually be carried out, a viable business can pay for itself. It comes from the French word for life. Economically viable here means the mirrors would earn more than they cost, which the 2022 study said holds only if launch prices drop by about two-thirds.",
+    "audio": true
+  },
+  {
+    "k": "convergence",
+    "t": "convergence",
+    "kind": "word",
+    "forms": [
+      "convergence"
+    ],
+    "text": "A convergence is the coming together of several separate things at one point — lines converging, or in this case three unrelated trends arriving at the same moment. The verb is converge and the opposite is divergence. Saying Reflect sits at a convergence is saying the company is possible now because cheap launches, big space structures and solar demand all happened to line up.",
+    "audio": true
+  },
+  {
+    "k": "aspires",
+    "t": "aspires",
+    "kind": "word",
+    "forms": [
+      "aspires"
+    ],
+    "text": "To aspire to something is to aim at it as an ambition, with a strong hint that you have not got there yet — people aspire to a career, a company aspires to a market. The noun is aspiration. The word does quiet work here, marking the rescue and street-lighting ideas as hopes rather than plans.",
+    "audio": true
+  },
+  {
+    "k": "sceptics",
+    "t": "sceptics",
+    "kind": "word",
+    "forms": [
+      "sceptics"
+    ],
+    "text": "Sceptics are people who doubt a claim and want evidence before believing it — this is the British spelling of the American “skeptics”, same word and same sound. Journalism uses “sceptics will point out” as a way of raising the strongest objection to an argument before answering it.",
+    "audio": true
+  },
+  {
+    "k": "complement",
+    "t": "complement",
+    "kind": "word",
+    "forms": [
+      "complement"
+    ],
+    "text": "To complement something is to go alongside it and make it more complete, each supplying what the other lacks. Do not confuse it with compliment, which means praise — the two sound identical, but the one spelled with an e is about completing. The claim here is that mirrors and batteries would work together rather than one making the other unnecessary.",
+    "audio": true
+  },
+  {
+    "k": "provided",
+    "t": "provided",
+    "kind": "word",
+    "forms": [
+      "provided"
+    ],
+    "text": "Provided here does not mean supplied; it means on condition that, and it introduces the catch. The study found the mirrors could pay off, provided launch costs fell to a third of today's — that is, only if they do. “Providing that” and “provided that” work the same way.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckons",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "To reckon something is to judge or estimate it after thinking it over, not to guess wildly. British journalism uses “reckons” where American writing would say “estimates”, and The Economist attaches it to experts constantly. Dr Kocifaj reckons about 400 satellites would be the minimum needed, meaning that is his calculated judgment.",
+    "audio": true
+  },
+  {
+    "k": "unfurled",
+    "t": "unfurled",
+    "kind": "word",
+    "forms": [
+      "unfurled"
+    ],
+    "text": "To unfurl something is to unroll or spread out something that was tightly wrapped — a flag, a sail, a banner. It implies the thing was packed away and is now opening into its full shape, which is exactly what a space mirror must do after launch, since it has to fit inside a rocket first.",
+    "audio": true
+  },
+  {
+    "k": "applications",
+    "t": "applications",
+    "kind": "word",
+    "forms": [
+      "applications"
+    ],
+    "text": "An application is a use that something can be put to — not a form you fill in and not a phone app. Scientists and engineers use it constantly: a laser has medical applications, a material has industrial applications. Saying the applications stretch from disaster relief to street lighting means those are the range of jobs the mirrors might do.",
+    "audio": true
+  },
+  {
+    "k": "opencast",
+    "t": "opencast mines",
+    "kind": "word",
+    "forms": [
+      "opencast mines",
+      "opencast"
+    ],
+    "text": "An opencast mine digs down from the surface in a huge open pit instead of tunnelling underground — Americans usually call this open-pit or strip mining. Because the whole working area is out in the open air, the work depends on being able to see, which is why extra night-time light would be worth paying for there.",
+    "audio": true
+  },
+  {
+    "k": "illuminate",
+    "t": "illuminate",
+    "kind": "word",
+    "forms": [
+      "illuminate",
+      "illumination"
+    ],
+    "text": "To illuminate is to light something up, and illumination is the light falling on it; both come from the Latin lumen, meaning light. They are the formal register for “shine light on”. The words fit here because the satellites deliver light onto a place rather than lighting themselves up.",
+    "audio": true
+  },
+  {
+    "k": "add-up",
+    "t": "add up",
+    "kind": "phrase",
+    "forms": [
+      "add up"
+    ],
+    "text": "When figures or a story add up, they make sense and hold together; when they do not add up, something is wrong or missing. It is one of the most common ways in English to say that a plan or an explanation is credible. The whole question of this paragraph is whether the economics of orbiting mirrors genuinely work out.",
+    "audio": true
+  },
+  {
+    "k": "going-over",
+    "t": "a going-over",
+    "kind": "phrase",
+    "forms": [
+      "going-over"
+    ],
+    "text": "To give something a going-over is to examine or work on it thoroughly — an informal phrase that can mean anything from a careful inspection to a beating, depending on context. Saying NASA gave the idea a more thorough going-over means the agency studied it properly rather than merely floating it.",
+    "audio": true
+  },
+  {
+    "k": "got-as-far-as",
+    "t": "got as far as",
+    "kind": "phrase",
+    "forms": [
+      "got as far as"
+    ],
+    "text": "To get as far as doing something means you reached that stage and went no further — the phrase marks a stopping point. Russia got as far as testing the idea, which is to say they really did fly a mirror, but never built the system the test was meant to lead to.",
+    "audio": true
+  },
+  {
+    "k": "normal-course-of-things",
+    "t": "in the normal course of things",
+    "kind": "phrase",
+    "forms": [
+      "in the normal course of things"
+    ],
+    "text": "In the normal course of things means ordinarily, when nothing unusual interferes — a set phrase for describing the default state of affairs. Writers reach for it to set up an exception, which is exactly its job in the opening line: night follows day, unless somebody changes that.",
+    "audio": true
+  },
+  {
+    "k": "on-demand",
+    "t": "on demand",
+    "kind": "phrase",
+    "forms": [
+      "on demand"
+    ],
+    "text": "On demand means available the moment it is asked for, rather than on a fixed schedule or whenever nature happens to supply it — on-demand video, on-demand printing. It is the heart of the whole pitch: sunlight has always arrived on its own timetable, and what is being sold here is sunlight you can order.",
+    "audio": true
+  },
+  {
+    "k": "inching-closer",
+    "t": "inching closer",
+    "kind": "phrase",
+    "forms": [
+      "inching closer"
+    ],
+    "text": "To inch closer is to move toward something very gradually, a small step at a time — the image is of advancing an inch at a go. Saying Starship is inching closer to readiness means it is not ready, but the remaining gap keeps shrinking with each test.",
+    "audio": true
+  },
+  {
+    "k": "gets-its-way",
+    "t": "gets its way",
+    "kind": "phrase",
+    "forms": [
+      "gets its way"
+    ],
+    "text": "If someone gets their way, things happen as they wanted them to despite other people's preferences; the phrase carries a faint hint of stubbornness. Opening with “if Reflect Orbital gets its way” signals immediately that this is a plan facing resistance, not a settled fact.",
+    "audio": true
+  },
+  {
+    "k": "spread-the-cost",
+    "t": "spread the cost",
+    "kind": "phrase",
+    "forms": [
+      "spread the cost"
+    ],
+    "text": "To spread a cost is to divide it among many payers, or over a long period, so no single share is large. A sunlight beam might be unaffordable for one household yet trivial per person across a city of millions — the same arithmetic that makes public transport, stadiums and street lighting itself possible.",
+    "audio": true
+  },
+  {
+    "k": "out-of-existence",
+    "t": "out of existence",
+    "kind": "phrase",
+    "forms": [
+      "out of existence"
+    ],
+    "text": "The construction “X out of existence” means X wipes something out entirely — priced out of existence, taxed out of existence, regulated out of existence. The worry being expressed is that if the objections grow loud enough, rules could make the business impossible rather than merely difficult.",
+    "audio": true
+  },
+  {
+    "k": "reflect-orbital",
+    "t": "Reflect Orbital",
+    "kind": "name",
+    "forms": [
+      "Reflect Orbital",
+      "Reflect"
+    ],
+    "text": "Reflect Orbital is the Californian startup at the centre of this article, founded in 2021 and backed by more than $28m. Its plan is to fly mirrors in orbit and sell the sunlight they bounce down to Earth. The article refers to it interchangeably as Reflect and as “the firm”.",
+    "audio": true
+  },
+  {
+    "k": "nasa",
+    "t": "NASA",
+    "kind": "name",
+    "forms": [
+      "NASA"
+    ],
+    "text": "NASA is the National Aeronautics and Space Administration, the American government's civilian space agency, established in 1958. Alongside flying missions, it funds and publishes studies of ideas nobody is building yet — which is what its 1977 examination of orbiting mirrors was.",
+    "audio": true
+  },
+  {
+    "k": "znamya",
+    "t": "Znamya-2",
+    "kind": "name",
+    "forms": [
+      "Znamya-2"
+    ],
+    "text": "Znamya-2 was a Russian experiment flown in 1993 that unfurled a 20-metre mirror in orbit and cast a faint moving spot of light on the Earth below. Znamya means “banner” in Russian. It worked briefly and then burned up on re-entry, and it remains the only time anyone has actually tested the idea in space.",
+    "audio": true
+  },
+  {
+    "k": "earendil",
+    "t": "Eärendil-1",
+    "kind": "name",
+    "forms": [
+      "Eärendil-1"
+    ],
+    "text": "Eärendil-1 is the name of Reflect's first test satellite, due to fly later this year. Eärendil is a figure in J.R.R. Tolkien's mythology who sails across the sky carrying a shining jewel, appearing to those below as the morning star — a fitting namesake for a satellite whose job is beaming light down.",
+    "audio": true
+  },
+  {
+    "k": "tolkien",
+    "t": "J.R.R. Tolkien",
+    "kind": "name",
+    "forms": [
+      "Tolkien"
+    ],
+    "text": "J.R.R. Tolkien (1892–1973) was the English author of The Hobbit and The Lord of the Rings, who invented an entire mythology and several working languages to go with it. His names have become a standing habit in Silicon Valley, borrowed for products, buildings and, here, a satellite.",
+    "audio": true
+  },
+  {
+    "k": "spacex",
+    "t": "SpaceX",
+    "kind": "name",
+    "forms": [
+      "SpaceX"
+    ],
+    "text": "SpaceX is the American rocket company founded by Elon Musk in 2002. It matters twice over in this article: its Falcon 9 rockets cut the price of reaching orbit dramatically, and its Starlink constellation proved that thousands of small satellites can be flown as a single coordinated system.",
+    "audio": true
+  },
+  {
+    "k": "falcon-9",
+    "t": "Falcon 9",
+    "kind": "name",
+    "forms": [
+      "Falcon 9"
+    ],
+    "text": "The Falcon 9 is SpaceX's workhorse rocket, notable for landing its first stage back on Earth so it can be flown again — the main reason launch prices fell. The claim that about 120 mirror satellites would fit inside one is a way of saying each satellite is small and light.",
+    "audio": true
+  },
+  {
+    "k": "starship",
+    "t": "Starship",
+    "kind": "name",
+    "forms": [
+      "Starship"
+    ],
+    "text": "Starship is SpaceX's much larger rocket, designed to be fully reusable and to carry far heavier loads than the Falcon 9. It is still in testing. The 2022 study's condition — launch costs falling to a third of today's — is essentially a bet on Starship eventually working.",
+    "audio": true
+  },
+  {
+    "k": "starlink",
+    "t": "Starlink",
+    "kind": "name",
+    "forms": [
+      "Starlink"
+    ],
+    "text": "Starlink is SpaceX's satellite-internet service, delivered by thousands of satellites in low orbit. It appears here as both precedent and warning: it showed that enormous constellations can actually be built, and it is the reason astronomers already distrust them, since its satellites streak their images.",
+    "audio": true
+  },
+  {
+    "k": "polar-orbit",
+    "t": "polar orbits",
+    "kind": "name",
+    "forms": [
+      "polar orbits",
+      "orbital altitude",
+      "orbits"
+    ],
+    "text": "A polar orbit runs roughly north to south over both poles rather than along the equator, so as the Earth rotates underneath, the satellite passes above a different strip of the planet on each lap and eventually covers everywhere. Reflect's are tuned so that each satellite crosses a given place at the same local time every day, which engineers call a sun-synchronous orbit. At the 625km orbital altitude mentioned here, one lap takes roughly 97 minutes.",
+    "audio": true
+  },
+  {
+    "k": "preprint",
+    "t": "preprint",
+    "kind": "name",
+    "forms": [
+      "preprint"
+    ],
+    "text": "A preprint is a scientific paper its authors have posted publicly before other scientists have formally reviewed and approved it. Posting one gets results out fast, which matters in a moving field, but it has not passed the checks a journal article has. Treat a preprint's numbers as a serious claim rather than a settled fact.",
+    "audio": true
+  },
+  {
+    "k": "light-pollution",
+    "t": "light pollution",
+    "kind": "name",
+    "forms": [
+      "light-pollution"
+    ],
+    "text": "Light pollution is stray artificial light that brightens the night sky, washing out the stars and disrupting animals that navigate or hunt by darkness. The measurable part of it is “skyglow”, the general haze hanging over a lit-up area. It is why you see far more stars from a desert than from a city, and it is the objection Reflect has to answer.",
+    "audio": true
+  },
+  {
+    "k": "exclusion-zones",
+    "t": "exclusion zones",
+    "kind": "name",
+    "forms": [
+      "exclusion zones"
+    ],
+    "text": "An exclusion zone is an area where some activity is banned outright — fishing exclusion zones, military exclusion zones, and here, patches of ground around major telescopes that the satellites would be forbidden to light up. It is a standard way of settling a conflict: permit the activity generally, forbid it exactly where it does the most harm.",
+    "audio": true
+  },
+  {
+    "k": "sunlight-as-a-service",
+    "t": "Sunlight-as-a-service",
+    "kind": "name",
+    "forms": [
+      "Sunlight-as-a-service"
+    ],
+    "text": "Sunlight-as-a-service is a play on “software-as-a-service”, the business model in which a company stops selling you a product outright and instead sells continuing access to it for a recurring fee. Recasting sunlight that way is the real novelty of the idea: not building a lamp, but selling deliveries of light on request.",
+    "audio": true
+  },
+  {
+    "k": "disaster-relief",
+    "t": "disaster relief",
+    "kind": "name",
+    "forms": [
+      "disaster relief"
+    ],
+    "text": "Disaster relief is the organised emergency response after a flood, earthquake or storm — search and rescue, medical care, food, water and shelter. It is a recognised field with its own agencies and funding streams. Rescue work slows or stops in darkness, which is the gap that extra hours of light are meant to fill.",
+    "audio": true
+  },
+  {
+    "k": "oberth",
+    "t": "Hermann Oberth",
+    "kind": "name",
+    "forms": [
+      "Hermann Oberth",
+      "Oberth"
+    ],
+    "text": "Hermann Oberth (1894–1989) was a Transylvanian-born physicist counted among the founders of rocketry. He worked out much of the theory of spaceflight decades before anyone could build the hardware — including, in 1923, the first published proposal for putting mirrors in orbit to light the Earth.",
+    "audio": true
+  },
+  {
+    "k": "nowack",
+    "t": "Ben Nowack",
+    "kind": "name",
+    "forms": [
+      "Ben Nowack",
+      "Nowack"
+    ],
+    "text": "Ben Nowack is one of Reflect Orbital's founders and the person quoted throughout defending the plan — on batteries, on cities as customers, and on the astronomers' objections. When the article says “he claims” or “he hopes”, it is reporting his position rather than confirming it.",
+    "audio": true
+  },
+  {
+    "k": "mcinnes",
+    "t": "Colin McInnes",
+    "kind": "name",
+    "forms": [
+      "Colin McInnes",
+      "McInnes"
+    ],
+    "text": "Colin McInnes is an engineer at the University of Glasgow who studies reflected solar energy, quoted here as an independent expert rather than as someone connected to the company. His group's 2022 study is the source of the claim that a mirror constellation could pay off if launch costs fell far enough.",
+    "audio": true
+  },
+  {
+    "k": "kocifaj",
+    "t": "Miroslav Kocifaj",
+    "kind": "name",
+    "forms": [
+      "Miroslav Kocifaj",
+      "Kocifaj"
+    ],
+    "text": "Miroslav Kocifaj is a light-pollution researcher at the Slovak Academy of Sciences, the state-funded research body of Slovakia. His preprint supplies the article's hardest number against Reflect: from inside the beam of one of the larger satellites, no stars would be visible at all.",
+    "audio": true
+  }
+]
