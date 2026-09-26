@@ -1,0 +1,626 @@
+[
+  {
+    "k": "dereliction",
+    "t": "dereliction",
+    "kind": "vocab",
+    "pron": "dair-uh-LIK-shun",
+    "forms": [
+      "dereliction"
+    ],
+    "text": "A shameful failure to do what you were responsible for, almost always in the phrase dereliction of duty. The article's verdict on the summit: two leaders with a rare chance to tackle wars and AI risks spent the days on ceremony instead.",
+    "audio": true
+  },
+  {
+    "k": "arcane",
+    "t": "arcane",
+    "kind": "vocab",
+    "pron": "ar-KAYN",
+    "forms": [
+      "arcane"
+    ],
+    "text": "Understood only by specialists, obscure to everyone else. Here it describes the gap between America saying it does not support Taiwanese independence and saying it opposes it, a distinction that sounds tiny and matters enormously.",
+    "audio": true
+  },
+  {
+    "k": "deference",
+    "t": "deference",
+    "kind": "vocab",
+    "pron": "DEF-er-unss",
+    "forms": [
+      "deference"
+    ],
+    "text": "Polite, respectful submission to someone's authority or wishes. Mr Trump praised Chinese journalists for it; the sting is that a reporter's job is to ask awkward questions, and in China's state-controlled press deference is a requirement, not a courtesy.",
+    "audio": true
+  },
+  {
+    "k": "pageantry",
+    "t": "pageantry",
+    "kind": "word",
+    "forms": [
+      "pageantry"
+    ],
+    "text": "Elaborate, colourful ceremony put on for show: parades, uniforms, flags, red carpets. The article's point is that the summit had plenty of it and little else.",
+    "audio": true
+  },
+  {
+    "k": "pomp",
+    "t": "pomp",
+    "kind": "word",
+    "forms": [
+      "pomp"
+    ],
+    "text": "Grand, dignified display meant to impress, the kind of ceremony that surrounds royalty and heads of state. Often paired with pageantry, as here.",
+    "audio": true
+  },
+  {
+    "k": "parley",
+    "t": "parley",
+    "kind": "word",
+    "forms": [
+      "parley"
+    ],
+    "text": "A formal talk between opposing sides, historically between enemies discussing terms. Calling the summit a parley between strongmen frames the two leaders as rivals negotiating rather than partners.",
+    "audio": true
+  },
+  {
+    "k": "strongmen",
+    "t": "strongman",
+    "kind": "word",
+    "forms": [
+      "strongmen"
+    ],
+    "text": "A leader who rules through personal power and force of will rather than through institutions and checks on that power. The article applies the label to both Mr Trump and Mr Xi.",
+    "audio": true
+  },
+  {
+    "k": "substantive",
+    "t": "substantive",
+    "kind": "word",
+    "forms": [
+      "substantive"
+    ],
+    "text": "Having real substance or importance, as opposed to being about appearances or procedure. The article struggled to find substantive achievements, meaning real results behind the ceremony.",
+    "audio": true
+  },
+  {
+    "k": "roiling",
+    "t": "roil",
+    "kind": "word",
+    "forms": [
+      "roiling"
+    ],
+    "text": "To stir up and throw into turmoil. Wars roiling the markets for energy and food means they are making prices swing wildly and unpredictably.",
+    "audio": true
+  },
+  {
+    "k": "feral",
+    "t": "feral",
+    "kind": "word",
+    "forms": [
+      "feral"
+    ],
+    "text": "Wild and untamed, especially of an animal that has escaped domestication. The article imagines AI agents that have broken free of their trainers roaming networks like packs of wild dogs.",
+    "audio": true
+  },
+  {
+    "k": "duty-bound",
+    "t": "duty-bound",
+    "kind": "word",
+    "forms": [
+      "duty-bound"
+    ],
+    "text": "Obliged by responsibility to do something, whether or not you want to. The article argues the two powers are duty-bound to cooperate on the worst risks.",
+    "audio": true
+  },
+  {
+    "k": "folderol",
+    "t": "folderol",
+    "kind": "word",
+    "forms": [
+      "folderol"
+    ],
+    "text": "Showy nonsense, fuss over trivial things. An old-fashioned, slightly mocking word for the flag-waving fuss of a state visit.",
+    "audio": true
+  },
+  {
+    "k": "spontaneity",
+    "t": "spontaneity",
+    "kind": "word",
+    "forms": [
+      "spontaneity"
+    ],
+    "text": "The quality of acting naturally and unplanned, on impulse. Earlier American officials trusted that unscripted, spontaneous moments would show off American freedoms.",
+    "audio": true
+  },
+  {
+    "k": "woodenly",
+    "t": "woodenly",
+    "kind": "word",
+    "forms": [
+      "woodenly"
+    ],
+    "text": "Stiffly and without expression or feeling, like a wooden puppet. The fear was a Chinese leader woodenly reciting prepared lines instead of really talking.",
+    "audio": true
+  },
+  {
+    "k": "talking-points",
+    "t": "talking points",
+    "kind": "phrase",
+    "forms": [
+      "talking points"
+    ],
+    "text": "Prepared statements a speaker sticks to in public, especially in politics. Reciting talking points means repeating the approved lines rather than answering the actual question.",
+    "audio": true
+  },
+  {
+    "k": "liberalise",
+    "t": "liberalise",
+    "kind": "word",
+    "forms": [
+      "liberalise"
+    ],
+    "text": "To loosen restrictions and allow more freedom, here in academic and business contacts between the two countries. British spelling; the American form is liberalize.",
+    "audio": true
+  },
+  {
+    "k": "protocol",
+    "t": "protocol",
+    "kind": "word",
+    "forms": [
+      "protocol"
+    ],
+    "text": "The official rules of ceremony and etiquette in diplomacy: who greets whom, where people sit, which flags fly. The article says Chinese negotiators obsessed over such questions.",
+    "audio": true
+  },
+  {
+    "k": "aping",
+    "t": "ape",
+    "kind": "word",
+    "forms": [
+      "aping"
+    ],
+    "text": "To imitate someone, usually clumsily or without understanding. The article says Mr Trump seemed bent on aping and even outdoing China's own style of state visit.",
+    "audio": true
+  },
+  {
+    "k": "bent-on",
+    "t": "bent on",
+    "kind": "phrase",
+    "forms": [
+      "bent on"
+    ],
+    "text": "Determined to do something, fixed on it. Someone bent on winning will not be talked out of it.",
+    "audio": true
+  },
+  {
+    "k": "honour-guards",
+    "t": "honour guard",
+    "kind": "name",
+    "forms": [
+      "honour guards"
+    ],
+    "text": "Soldiers in ceremonial uniform who line up to greet an important visitor. Part of the fixed ritual of a state visit, and a sign of the rank the host is granting the guest.",
+    "audio": true
+  },
+  {
+    "k": "head-of-state",
+    "t": "head of state",
+    "kind": "name",
+    "forms": [
+      "head of state"
+    ],
+    "text": "The person who formally represents a country: a president, monarch or, in China's case, Mr Xi. Not always the same as the person who runs the government day to day.",
+    "audio": true
+  },
+  {
+    "k": "esteem",
+    "t": "esteem",
+    "kind": "word",
+    "forms": [
+      "esteem"
+    ],
+    "text": "High respect and regard. A mark of esteem is a gesture that shows how highly you rate someone, here a president personally greeting a visitor at the aircraft steps.",
+    "audio": true
+  },
+  {
+    "k": "popes-aside",
+    "t": "popes aside",
+    "kind": "phrase",
+    "forms": [
+      "popes aside"
+    ],
+    "text": "With the exception of popes. The article notes that a president greeting a visitor at the plane has not been seen in decades, except when the visitor was the pope.",
+    "audio": true
+  },
+  {
+    "k": "great-hall",
+    "t": "Great Hall of the People",
+    "kind": "name",
+    "forms": [
+      "Great Hall of the People"
+    ],
+    "text": "The enormous state building on Tiananmen Square in Beijing where China's parliament meets and where visiting leaders are received with ceremony.",
+    "audio": true
+  },
+  {
+    "k": "free-ranging",
+    "t": "free-ranging",
+    "kind": "word",
+    "forms": [
+      "free-ranging"
+    ],
+    "text": "Wandering freely wherever it goes, not confined to set topics. A free-ranging press conference is one where reporters can ask anything.",
+    "audio": true
+  },
+  {
+    "k": "choreographed",
+    "t": "choreographed",
+    "kind": "word",
+    "forms": [
+      "choreographed"
+    ],
+    "text": "Planned out step by step in advance, like a dance routine. Tightly choreographed photo opportunities leave no room for anything unscripted to happen.",
+    "audio": true
+  },
+  {
+    "k": "entourage",
+    "t": "entourage",
+    "kind": "word",
+    "forms": [
+      "entourage"
+    ],
+    "text": "The group of aides, staff and hangers-on who travel with an important person.",
+    "audio": true
+  },
+  {
+    "k": "suing",
+    "t": "sue",
+    "kind": "word",
+    "forms": [
+      "suing",
+      "sue"
+    ],
+    "text": "Two different meanings in one article. American news organisations were suing the president, meaning taking him to court. Later, China might push Iran to sue for peace, an older phrase meaning to formally ask for peace terms.",
+    "audio": true
+  },
+  {
+    "k": "poker-face",
+    "t": "poker face",
+    "kind": "phrase",
+    "forms": [
+      "poker face"
+    ],
+    "text": "An expression that reveals nothing, like a card player hiding a strong or weak hand. Mr Xi's poker face gave nothing away about what he knew of Mr Trump's press troubles.",
+    "audio": true
+  },
+  {
+    "k": "gave-nothing-away",
+    "t": "gave nothing away",
+    "kind": "phrase",
+    "forms": [
+      "gave nothing away"
+    ],
+    "text": "Revealed no clue about what someone was thinking or feeling.",
+    "audio": true
+  },
+  {
+    "k": "deliverables",
+    "t": "deliverables",
+    "kind": "word",
+    "forms": [
+      "deliverables"
+    ],
+    "text": "Business and summit jargon for the concrete results a meeting is supposed to produce, as opposed to the ceremony around it. The article calls it ugly jargon and then lists what America wanted.",
+    "audio": true
+  },
+  {
+    "k": "rare-earths",
+    "t": "rare-earth elements",
+    "kind": "name",
+    "forms": [
+      "rare-earth elements"
+    ],
+    "text": "A group of seventeen metals needed for magnets, batteries, phones, wind turbines and weapons. China mines and refines most of the world's supply, which gives it leverage over American manufacturers.",
+    "audio": true
+  },
+  {
+    "k": "run-up",
+    "t": "in the run-up to",
+    "kind": "phrase",
+    "forms": [
+      "in the run-up to"
+    ],
+    "text": "In the period leading up to an event. Farm purchases matter in the run-up to the midterm elections because farming states vote.",
+    "audio": true
+  },
+  {
+    "k": "midterms",
+    "t": "midterm elections",
+    "kind": "name",
+    "forms": [
+      "midterm elections"
+    ],
+    "text": "The American elections held halfway through a president's four-year term, when every seat in the House of Representatives and a third of the Senate are decided. Often a verdict on the president.",
+    "audio": true
+  },
+  {
+    "k": "leverage",
+    "t": "leverage",
+    "kind": "word",
+    "forms": [
+      "leverage"
+    ],
+    "text": "Power to influence someone, gained from a position of advantage. As the biggest buyer of Iranian oil, China could threaten to buy less, which is leverage over Iran.",
+    "audio": true
+  },
+  {
+    "k": "undertakings",
+    "t": "undertaking",
+    "kind": "word",
+    "forms": [
+      "undertakings"
+    ],
+    "text": "Formal promises or commitments. American negotiators believe China is not keeping the undertakings it made in earlier talks.",
+    "audio": true
+  },
+  {
+    "k": "truce",
+    "t": "truce",
+    "kind": "word",
+    "forms": [
+      "truce"
+    ],
+    "text": "An agreed pause in a fight. A trade truce means both sides hold off on new tariffs and penalties for a set time; this one was extended by only two months.",
+    "audio": true
+  },
+  {
+    "k": "self-serving",
+    "t": "self-serving",
+    "kind": "word",
+    "forms": [
+      "self-serving"
+    ],
+    "text": "Done for one's own benefit while pretending to serve a larger purpose.",
+    "audio": true
+  },
+  {
+    "k": "lofty",
+    "t": "lofty",
+    "kind": "word",
+    "forms": [
+      "lofty"
+    ],
+    "text": "Grand and high-minded, sometimes in a way that sounds better than it is. Lofty rhetoric about the progress of humanity contrasts with narrow real aims.",
+    "audio": true
+  },
+  {
+    "k": "imperative",
+    "t": "imperative",
+    "kind": "word",
+    "forms": [
+      "imperative"
+    ],
+    "text": "As a noun, something absolutely essential that must be done. Being treated as an equal was an imperative for Mr Xi, not a nice-to-have.",
+    "audio": true
+  },
+  {
+    "k": "party-congress",
+    "t": "party congress",
+    "kind": "name",
+    "forms": [
+      "party congress"
+    ],
+    "text": "The Chinese Communist Party's top gathering, held every five years, where the leadership for the next term is confirmed. Mr Xi is expected to seek a fourth term at the next one.",
+    "audio": true
+  },
+  {
+    "k": "purged",
+    "t": "purge",
+    "kind": "word",
+    "forms": [
+      "purged"
+    ],
+    "text": "To remove people seen as disloyal or unwanted from an organisation, often abruptly and harshly. The article says all possible doubters in the party have been purged.",
+    "audio": true
+  },
+  {
+    "k": "stature",
+    "t": "stature",
+    "kind": "word",
+    "forms": [
+      "stature"
+    ],
+    "text": "Standing or importance in others' eyes. Global stature is how much weight a leader carries on the world stage.",
+    "audio": true
+  },
+  {
+    "k": "co-existence",
+    "t": "peaceful co-existence",
+    "kind": "name",
+    "forms": [
+      "peaceful co-existence"
+    ],
+    "text": "A diplomatic term for rivals agreeing to live side by side without fighting, even while they compete. China's stated goal for its relationship with America.",
+    "audio": true
+  },
+  {
+    "k": "enclosure",
+    "t": "enclosure",
+    "kind": "word",
+    "forms": [
+      "enclosure"
+    ],
+    "text": "A fenced-off area. The article's image: China wants to build a fence of red lines around its rivalry with America so the competition never spills into war.",
+    "audio": true
+  },
+  {
+    "k": "red-lines",
+    "t": "red lines",
+    "kind": "phrase",
+    "forms": [
+      "red lines"
+    ],
+    "text": "Limits that must not be crossed, with the threat of serious consequences if they are. For China the reddest line is Taiwan's status.",
+    "audio": true
+  },
+  {
+    "k": "nudge",
+    "t": "nudge",
+    "kind": "word",
+    "forms": [
+      "nudge"
+    ],
+    "text": "To push someone gently toward doing something, without forcing them. China has been trying to nudge Mr Trump into changing one word about Taiwan.",
+    "audio": true
+  },
+  {
+    "k": "induce",
+    "t": "induce",
+    "kind": "word",
+    "forms": [
+      "induce"
+    ],
+    "text": "To bring about or cause. A statement that would induce alarm is one that would set off alarm.",
+    "audio": true
+  },
+  {
+    "k": "readout",
+    "t": "readout",
+    "kind": "word",
+    "forms": [
+      "readout"
+    ],
+    "text": "In diplomacy, the official summary a government releases after a meeting, giving its own version of what was said and agreed. Each side's readout often differs.",
+    "audio": true
+  },
+  {
+    "k": "ceded",
+    "t": "cede",
+    "kind": "word",
+    "forms": [
+      "ceded"
+    ],
+    "text": "To give up something, usually territory or a position, often under pressure. Ceding ground means conceding part of what you had held.",
+    "audio": true
+  },
+  {
+    "k": "people-to-people",
+    "t": "people-to-people exchanges",
+    "kind": "name",
+    "forms": [
+      "people-to-people exchanges"
+    ],
+    "text": "Contact between ordinary citizens of two countries rather than their governments: students, tourists, scientists, athletes. Long seen as a way to build trust between rivals.",
+    "audio": true
+  },
+  {
+    "k": "dazzled",
+    "t": "dazzle",
+    "kind": "word",
+    "forms": [
+      "dazzled"
+    ],
+    "text": "To impress so strongly that someone is almost blinded to anything else.",
+    "audio": true
+  },
+  {
+    "k": "modernity",
+    "t": "modernity",
+    "kind": "word",
+    "forms": [
+      "modernity"
+    ],
+    "text": "The condition of being modern and up to date. High-speed trains and dancing robots as signs of modernity are meant to show China as a country of the future.",
+    "audio": true
+  },
+  {
+    "k": "jimmy-carter",
+    "t": "Jimmy Carter",
+    "kind": "name",
+    "forms": [
+      "Jimmy Carter"
+    ],
+    "text": "American president from 1977 to 1981, who established full diplomatic relations with China in 1979 and encouraged Chinese students to study in America.",
+    "audio": true
+  },
+  {
+    "k": "governance",
+    "t": "governance",
+    "kind": "word",
+    "forms": [
+      "governance"
+    ],
+    "text": "The system of rules and oversight by which something is controlled. AI governance means the rules for how artificial intelligence is developed and used.",
+    "audio": true
+  },
+  {
+    "k": "truth-social",
+    "t": "Truth Social",
+    "kind": "name",
+    "forms": [
+      "Truth Social"
+    ],
+    "text": "The social-media platform owned by Mr Trump's media company, where he posts his statements.",
+    "audio": true
+  },
+  {
+    "k": "rebranding",
+    "t": "rebrand",
+    "kind": "word",
+    "forms": [
+      "rebranding"
+    ],
+    "text": "To give something a new name or image to change how people see it, without changing the thing itself.",
+    "audio": true
+  },
+  {
+    "k": "trivially",
+    "t": "trivially",
+    "kind": "word",
+    "forms": [
+      "trivially"
+    ],
+    "text": "In an unimportant way. A bit less trivially means slightly more seriously than the previous point.",
+    "audio": true
+  },
+  {
+    "k": "treasury-secretary",
+    "t": "treasury secretary",
+    "kind": "name",
+    "forms": [
+      "treasury secretary"
+    ],
+    "text": "The member of the American cabinet in charge of the government's finances, taxes and economic policy, and often its lead negotiator on trade and money with other countries.",
+    "audio": true
+  },
+  {
+    "k": "vice-premier",
+    "t": "vice-premier",
+    "kind": "name",
+    "forms": [
+      "vice-premier"
+    ],
+    "text": "One of the deputy heads of China's government, ranking just below the premier. He Lifeng handles China's economic talks with America.",
+    "audio": true
+  },
+  {
+    "k": "primacy",
+    "t": "primacy",
+    "kind": "word",
+    "forms": [
+      "primacy"
+    ],
+    "text": "The position of being first or most important. A contest for primacy in AI is a race to be the world's leading power in that field.",
+    "audio": true
+  },
+  {
+    "k": "hurtles",
+    "t": "hurtle",
+    "kind": "word",
+    "forms": [
+      "hurtles"
+    ],
+    "text": "To move at great speed, often dangerously and out of control. The century hurtling onward without leadership is a runaway vehicle with nobody steering.",
+    "audio": true
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-26",
+  "title": "America and China’s leaders indulge in pageantry as crises mount",
+  "articleUrl": "https://www.economist.com/international/2026/09/25/america-and-chinas-leaders-indulge-in-pageantry-as-crises-mount",
+  "articlePageUrl": "/articles/2026-09-26.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "dereliction",
+      "partOfSpeech": "noun",
+      "pronunciation": "dair-uh-LIK-shun",
+      "articleQuote": "That amounts to a dereliction of duty, and leaves the rest of humanity as the losers.",
+      "meaning": "A **dereliction** is a shameful failure to do what you were responsible for doing. The word almost always travels with *of duty*: a lifeguard who scrolls their phone while a swimmer struggles, a soldier who abandons a post. The Economist uses it as a verdict on the summit. The two most powerful leaders on Earth had a rare chance to work on wars, AI risks and a possible conflict over Taiwan, and they spent the three days on ceremony instead. The article is saying that was not just a missed opportunity but a neglect of the job that comes with the office.",
+      "examples": [
+        "The referee's failure to check the replay when the whole stadium saw the foul was a dereliction of duty.",
+        "Leaving your group project partners to finish everything the night before is a dereliction, not just laziness."
+      ]
+    },
+    {
+      "word": "arcane",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ar-KAYN",
+      "articleQuote": "Though the distinction sounds arcane, such a statement from a president would induce alarm on the island, for it would seem to rule out American help…",
+      "meaning": "Something **arcane** is understood only by a small circle of specialists and looks obscure or needlessly complicated to everyone else: the rules of an old board game, the fine print of a tax code. In the article the arcane thing is the gap between America saying it *does not support* Taiwanese independence and saying it *opposes* it. To an outsider those sound identical. To diplomats in Washington, Beijing and Taipei the difference is enormous, which is exactly the point the article is making: arcane does not mean unimportant.",
+      "examples": [
+        "The scoring system for competitive diving seems arcane until a judge walks you through it.",
+        "My cousin can explain the arcane rules that decide which college football teams make the playoff."
+      ]
+    },
+    {
+      "word": "deference",
+      "partOfSpeech": "noun",
+      "pronunciation": "DEF-er-unss",
+      "articleQuote": "…was overheard by photographers praising the friendliness and deference of Chinese journalists in Mr Xi’s entourage.",
+      "meaning": "**Deference** is polite, respectful submission to someone else's wishes or authority: you let them go first, you don't challenge what they say, you soften your own view to fit theirs. A little of it is good manners. Too much of it, from the wrong people, is a warning sign. The article notes that Mr Trump praised Chinese journalists for their deference, and the sting is in the contrast: a reporter's job is to ask awkward questions, and in China the press is controlled by the state, so deference there is not a courtesy but a requirement.",
+      "examples": [
+        "Out of deference to the coach, nobody argued with the lineup even though half the team disagreed.",
+        "She spoke to the visiting principal with a deference she never showed her own teachers."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "State visit",
+      "articleQuote": "Each new display of pomp and pageantry—and there were many over the course of the three-day state visit—was crafted to flatter the dignity of the American and Chinese leaders.",
+      "meaning": "Honour guards lining a red carpet, the president himself waiting at the foot of the aircraft steps, a formal dinner at the White House: none of that is decoration that happens to surround a meeting. It is the meeting's category. In diplomacy, the practice of how countries deal with one another, visits by foreign leaders come in ranked tiers, and a **state visit** is the top one. It is a formal invitation from one head of state to another, and it comes with a fixed set of ceremonies: an arrival ceremony with a military honour guard, a state dinner, meetings in the most prestigious rooms. A step down is an *official visit* or *working visit*, where the leaders meet, talk business and skip most of the show. Granting the top tier is itself a message. It says the host regards the visitor as an equal and the relationship as one of the most important it has.\n\nThat is why the article dwells on the ceremony at all. The pageantry was not a distraction from the diplomacy; it was a large part of what China wanted from the trip, since being received as an equal in Washington strengthens Mr Xi at home. It is also why summit-watchers use the jargon the article calls ugly: **deliverables**, the concrete agreements a summit is supposed to produce, such as China buying more American farm goods or exporting more rare-earth minerals. The pageantry is guaranteed in advance; the deliverables are the test of whether the meeting achieved anything.\n\nWhen you read about any leaders' meeting, check two things: what tier of visit it was, which tells you what the host wanted to signal, and what the deliverables were, which tells you what actually changed."
+    },
+    {
+      "name": "Strategic ambiguity",
+      "articleQuote": "That would mark a change from America’s current stance, which is to say that it does not support Taiwanese independence.",
+      "meaning": "China has spent years trying to get an American president to change one word. America currently says it *does not support* Taiwan declaring independence. Beijing wants to hear that America *opposes* it. The article says a president saying that word would cause alarm across Taiwan. To see why a single word carries that much weight, you need the shape of the arrangement it sits inside.\n\nTaiwan is an island of about 23 million people with its own elected government, army and currency. China's government says it is a breakaway province that must eventually come under Beijing's rule, and it has never ruled out using force. Since 1979 America has formally recognised the government in Beijing as the government of China and has no official embassy in Taiwan. At the same time, an American law, the Taiwan Relations Act, commits the United States to sell Taiwan the weapons it needs to defend itself. What that law does *not* say is whether America would fight if China attacked. Washington has deliberately left that question unanswered for over forty years. The name for this policy, from the field of international relations, is **strategic ambiguity**.\n\nThe ambiguity is aimed in two directions at once. Beijing cannot be sure America would stay out of a war, so an invasion is a gamble it has so far not taken. Taipei cannot be sure America would come to its rescue, so declaring formal independence, the step most likely to trigger a war, is a gamble Taiwan's leaders have not taken either. \"Does not support independence\" keeps both restraints in place. \"Opposes independence\" would tell Taiwan that if it ever did cross that line, America would side with Beijing, and that removes the fear that has kept the peace. This is the mechanism behind the article's claim that the thickest and reddest of China's red lines concern Taiwan, and why the Chinese readout after the summit pressed the point again.\n\nThe transferable lesson is about how deterrence sometimes works: leaving a threat vague can restrain more people than spelling it out, because everyone has to plan for the worst case."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the article's central criticism of the Trump–Xi summit?",
+      "options": [
+        "The two leaders argued openly and the visit ended in a diplomatic rupture.",
+        "The leaders focused on ceremony and their own interests instead of working on the world's urgent crises.",
+        "America gave in to China's demands on Taiwan in exchange for a trade deal.",
+        "The visit was too short for any real discussion to take place."
+      ],
+      "answerIndex": 1,
+      "explanation": "The article calls the summit a dereliction of duty: plenty of pageantry, few substantive achievements, while wars, AI risks and Taiwan tensions went largely unaddressed."
+    },
+    {
+      "question": "According to the article, how did earlier American presidents treat the pageantry of Chinese state visits?",
+      "options": [
+        "As a necessary but annoying distraction from the real aim of understanding the Chinese leader.",
+        "As the most important part of the visit, because it impressed American voters.",
+        "As something to avoid entirely by holding meetings outside Washington.",
+        "As a way to match the grandeur of ceremonies in Beijing."
+      ],
+      "answerIndex": 0,
+      "explanation": "Previous administrations saw the flag-waving as a distraction and worked to create unscripted conversations, press conferences and meetings with ordinary Americans instead."
+    },
+    {
+      "question": "Why does the article say the difference between 'does not support' and 'opposes' Taiwanese independence matters so much?",
+      "options": [
+        "Because 'opposes' would commit America to sending troops to defend Taiwan.",
+        "Because 'opposes' would seem to rule out American help if Taiwan's government rejected rule from Beijing and a war followed.",
+        "Because Chinese and English translations of the two phrases are identical.",
+        "Because 'does not support' is the wording China prefers."
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says a president 'opposing' independence would alarm Taiwan because it would seem to remove American help in a war triggered by a Taiwanese break from Beijing."
+    },
+    {
+      "question": "The article says Mr Trump was overheard praising the 'deference' of Chinese journalists. What does deference mean here?",
+      "options": [
+        "Respectful submission to authority, not challenging or questioning it.",
+        "Skill at asking tough, well-researched questions.",
+        "Loyalty to one's own country over foreign visitors.",
+        "The habit of arriving early and staying late."
+      ],
+      "answerIndex": 0,
+      "explanation": "Deference is polite submission to someone's authority; the article contrasts it with American journalists who were suing the president even as the visit unfolded."
+    },
+    {
+      "question": "Which of these was among the 'deliverables' the American side publicly sought, according to the article?",
+      "options": [
+        "A Chinese pledge to send 100,000 students to American universities.",
+        "A two-year extension of the trade truce agreed in South Korea.",
+        "Chinese agreement to export more rare-earth elements and buy more American farm goods.",
+        "A joint statement opposing Taiwanese independence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The American aims listed were more rare-earth exports, more agricultural purchases and pressure on Iran; the truce was extended by only two months, and the student invitation came from Mr Xi."
+    }
+  ]
+}
