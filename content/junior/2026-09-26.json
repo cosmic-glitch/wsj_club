@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-26",
+  "title": "Can AI save tourists from the TikTok herd?",
+  "articleUrl": "https://www.economist.com/culture/2026/08/13/can-ai-save-tourists-from-the-tiktok-herd",
+  "articlePageUrl": "/articles/junior/2026-09-26.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "itinerary",
+      "partOfSpeech": "noun",
+      "pronunciation": "eye-TIN-uh-rair-ee",
+      "articleQuote": "The way travellers have found inspiration and itineraries has evolved over the centuries.",
+      "meaning": "An itinerary is the plan for a journey — where you go, in what order, and when. It is more than just a destination: a school trip’s itinerary says coach at 8am, museum at 10, lunch in the park, back by 4. The article uses the word for the whole shape of a holiday, and its point is that people have got their itineraries from very different places over the centuries — first a travel agent like Thomas Cook, then a guidebook, then a review site, and now a chatbot.",
+      "examples": [
+        "Our itinerary had us at the aquarium before lunch, but the coach broke down and we ended up doing the whole day backwards.",
+        "Dad printed the itinerary for the week and taped it to the fridge, right down to which night we were having pizza."
+      ]
+    },
+    {
+      "word": "clout",
+      "partOfSpeech": "noun",
+      "pronunciation": "KLOWT",
+      "articleQuote": "They hold enormous clout.",
+      "meaning": "Clout is the power to make things happen because people listen to you. It is not official power like a law or a job title — it is influence, the kind that builds up when enough people trust what you say. The “they” in this sentence is review sites like Tripadvisor, and the article puts a number on their clout: when more visitors could check reviews on their phones, Rome’s tourist restaurants took about 5% more money, and most of that went to the highest-rated ones.",
+      "examples": [
+        "She has no official job on the team, but she has enough clout that when she says warm-ups start early, everybody turns up early.",
+        "One review from that channel carries real clout — the game sold out within a day of it going up."
+      ]
+    },
+    {
+      "word": "disperse",
+      "partOfSpeech": "verb",
+      "pronunciation": "dih-SPURS",
+      "articleQuote": "Yet AI may eventually have the opposite effect, dispersing tourists to a wider range of places than they visited in days gone by.",
+      "meaning": "To disperse is to spread out from one spot into many — or to make something spread that way. You meet the word in science (seeds dispersed by the wind) and in news reports (the crowd dispersed after the match). Here it is the article’s whole hope: instead of funnelling every visitor into the same famous square, chatbots might scatter them across hundreds of smaller places.",
+      "examples": [
+        "The teacher told us to disperse around the field instead of all crowding onto the one dry patch.",
+        "Dandelions disperse their seeds on the wind, which is how one plant in the garden turns into forty by August."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Large language models",
+      "articleQuote": "The large language models powering chatbots are prediction machines primed to give the most likely answer.",
+      "meaning": "Ask a chatbot for hidden gems in Paris and it offers you the Eiffel Tower. Ask it what to see in Barcelona and, mixed in with the real places, it produces 38 that appear to be made up. Both of those are in this article, and both come from one fact about how the program works: it is not looking anything up.\n\nComputer scientists call these programs **large language models**. Take the name apart. *Language* — the stuff it handles is text, not facts about the world. *Model* — it is a huge set of numbers worked out from an enormous pile of writing: books, websites, forum posts. *Large* — that pile is gigantic, and so is the set of numbers. What those numbers record is how often words follow other words. When you type a question, the program does arithmetic and produces the word most likely to come next, then does it again for the word after that, and keeps going until it has an answer-shaped block of text.\n\nYour phone keyboard does a tiny version of the same thing. Type “Happy birth” and it offers you “birthday”, because in the text it was built from, “birthday” followed those letters far more often than anything else did. The keyboard has no idea whose birthday it is, or whether there is a birthday at all. A large language model is that trick at an enormous scale — long stretches of text instead of one word, which is why the output reads as though a person wrote it.\n\nNow the two strange results make sense. The most likely thing to say about pizza in Rome is whatever most writing about pizza in Rome already says, so the famous places win — which is exactly what researchers at the University of Westminster found when ChatGPT kept naming well-known tourist hubs. And because nothing in the process checks whether a place exists, a name that merely *looks* likely can come out sitting next to the Sagrada Família. The program also does not always take the single most likely word; it picks from among the likely ones, which is why the same question asked twice gives different answers. Evertune found that Gemini’s top two pizzerias turned up in 91% of its answers — so nearly a tenth of the people who asked never heard about them at all.\n\nSo when a chatbot answers you, read it as *this is what text about your question usually looks like* — not *this has been checked*. That one sentence explains the brilliant answers and the invented ones equally well."
+    },
+    {
+      "name": "Overtourism",
+      "articleQuote": "Photogenic places like Hallstatt, a picture-perfect lakeside town in Austria, have been overrun.",
+      "meaning": "Hallstatt is a row of wooden houses on a lake with a mountain standing behind it, and fewer than a thousand people live there. The article says it has been overrun. Not by an army — by visitors.\n\nGeographers and town planners have a word for this: **overtourism**. It does not mean a country has too many tourists. It means too many are in one small place at one time, which is a different problem with a different fix. A village’s lanes, car parks, buses, water pipes and public toilets were built for the people who live there plus a few guests, and none of that stretches. Send in several thousand day-trippers who all arrive before lunch, all walk the same hundred metres of lakefront and all photograph the same view, and the place stops working: locals cannot get down their own street, the grocer’s turns into a souvenir shop, and the thing everyone came to see is now mostly the backs of other people’s heads.\n\nThere is a version of this at your own school. Say four hundred pupils share a big field, and on one side of it stands a single tree with a bench underneath. At lunch everyone heads for the bench. There is room for six. The grass around it is worn down to bare dirt, you have to sprint out of the classroom to get near it, and nobody actually enjoys the spot any more — while nine-tenths of the field sits empty. The school does not have too many pupils. It has one good shady spot and everybody knows about the same one. Put three more benches under three more trees and the problem is gone by Monday.\n\nSo the number that decides whether a place is lovely or unbearable is not how many visitors turn up. It is how spread out they are."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article mentions Hallstatt, a small lakeside town in Austria. What is it an example of?",
+      "options": [
+        "A town that has banned tourists completely",
+        "A small place overrun by visitors after social media made it famous",
+        "A town built entirely around one guidebook recommendation",
+        "A place chatbots refuse to recommend"
+      ],
+      "answerIndex": 1,
+      "explanation": "Hallstatt is the article’s example of overtourism — social-media crazes sent so many visitors to one small photogenic spot that it was overrun."
+    },
+    {
+      "question": "The article says review platforms like Tripadvisor “hold enormous clout”. Clout means:",
+      "options": [
+        "A large amount of money",
+        "A legal right to set prices",
+        "The power to influence what people do",
+        "A reputation for always being honest"
+      ],
+      "answerIndex": 2,
+      "explanation": "Clout is influence — the power to make things happen because people listen, which is why a high Tripadvisor rating moved real money to Rome’s restaurants."
+    },
+    {
+      "question": "An itinerary is:",
+      "options": [
+        "The plan for a journey — where you go and when",
+        "A guidebook written by locals",
+        "What a holiday costs once everything is added up",
+        "A list of the places you have already visited"
+      ],
+      "answerIndex": 0,
+      "explanation": "An itinerary is the route and schedule of a trip; the article’s point is that travellers now get theirs from chatbots rather than guidebooks."
+    },
+    {
+      "question": "The article argues that AI may end up dispersing tourists. Dispersing them means:",
+      "options": [
+        "Sending them home earlier than they planned",
+        "Spreading them out across many different places",
+        "Persuading more of them to travel",
+        "Sorting them into groups by nationality"
+      ],
+      "answerIndex": 1,
+      "explanation": "To disperse is to spread out from one spot into many — the opposite of everyone piling into the same famous square."
+    },
+    {
+      "question": "Researchers found ChatGPT offering “hidden gems” such as the Eiffel Tower, and producing 38 Barcelona attractions that appeared to be made up. According to the concept card, why does this happen?",
+      "options": [
+        "Its makers are paid by the most popular attractions",
+        "It only holds information from before 2020",
+        "It produces the text most likely to follow your question, rather than looking facts up",
+        "It copies its answers straight from Instagram posts"
+      ],
+      "answerIndex": 2,
+      "explanation": "A large language model works out likely wording, so the best-known places win and a plausible-sounding name can come out even when no such place exists."
+    }
+  ]
+}

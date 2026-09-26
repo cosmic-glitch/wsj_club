@@ -1,0 +1,641 @@
+[
+  {
+    "k": "ai",
+    "t": "AI",
+    "kind": "name",
+    "forms": [
+      "AI"
+    ],
+    "text": "AI is short for artificial intelligence: computer programs that do jobs people used to think only humans could do, like writing an answer or recognising a face. In this article AI means chatbots such as ChatGPT and Gemini, which people now use to plan holidays. It is not one machine somewhere — it is software running on huge banks of computers that you reach through an app.",
+    "audio": true
+  },
+  {
+    "k": "chatbot",
+    "t": "chatbot",
+    "kind": "name",
+    "forms": [
+      "chatbots",
+      "chatbot"
+    ],
+    "text": "A chatbot is a program you talk to by typing, and it types back in ordinary sentences. ChatGPT, Gemini and Google's AI Mode are the ones named here. The whole article is about what happens when millions of travellers start asking a chatbot where to go instead of opening a guidebook.",
+    "audio": true
+  },
+  {
+    "k": "herd",
+    "t": "herd",
+    "kind": "word",
+    "forms": [
+      "herd"
+    ],
+    "text": "A herd is a big group of animals that move together, like cattle or deer. People use it about crowds too, and it is usually a bit rude: following the herd means doing what everyone else does without thinking about it. The headline asks whether AI can save travellers from all going to the same TikTok-famous spots.",
+    "audio": true
+  },
+  {
+    "k": "lonely-planet",
+    "t": "Lonely Planet",
+    "kind": "name",
+    "forms": [
+      "Lonely Planet"
+    ],
+    "text": "Lonely Planet is the best-selling series of travel guidebooks in the world — thick paperback books that tell you what to see, where to sleep and what to eat in a country. It is mentioned here because a single recommendation in one used to be powerful enough to fill a hostel or a restaurant. The article's point is that books like it are losing that power to chatbots.",
+    "audio": true
+  },
+  {
+    "k": "tripadvisor",
+    "t": "Tripadvisor",
+    "kind": "name",
+    "forms": [
+      "Tripadvisor"
+    ],
+    "text": "Tripadvisor is a website where ordinary travellers post star ratings and reviews of hotels, restaurants and attractions. Nobody is paid to write them, so the ranking comes from the crowd rather than from an expert. It matters in this article because a high Tripadvisor rating can fill a restaurant — and because chatbots are now taking away its visitors.",
+    "audio": true
+  },
+  {
+    "k": "itinerary",
+    "t": "itinerary",
+    "kind": "vocab",
+    "pron": "eye-TIN-uh-rair-ee",
+    "forms": [
+      "itineraries"
+    ],
+    "text": "An itinerary is the plan for a journey — where you go, in what order, and when. It is more than a destination: a school trip's itinerary says coach at 8am, museum at 10, lunch in the park, back by 4. The article is about where people get theirs from, which has changed from travel agents to guidebooks to review sites to chatbots.",
+    "audio": true
+  },
+  {
+    "k": "evolved",
+    "t": "evolved",
+    "kind": "word",
+    "forms": [
+      "evolved"
+    ],
+    "text": "To evolve is to change gradually into something different, step by step rather than all at once. You meet the word most often in biology, where animals evolve over millions of years, but it works for anything that changes slowly — phones, music, language. Here it means the way travellers find their plans has shifted bit by bit across the centuries.",
+    "audio": true
+  },
+  {
+    "k": "victorian",
+    "t": "Victorian",
+    "kind": "name",
+    "forms": [
+      "Victorian"
+    ],
+    "text": "Victorian means from the reign of Queen Victoria, who ruled Britain from 1837 to 1901. It is a handy label for that whole period: steam trains, top hats, factories and the first package holidays. Early Victorian travellers are the tourists of the 1840s and 1850s, right when railways made travel possible for ordinary people.",
+    "audio": true
+  },
+  {
+    "k": "shepherded",
+    "t": "shepherded",
+    "kind": "word",
+    "forms": [
+      "shepherded"
+    ],
+    "text": "A shepherd looks after sheep and keeps them moving in the right direction, so to shepherd people is to guide a group along and stop them wandering off. It is not quite the same as leading — it suggests the group would get lost or muddled without you. Victorian tourists were shepherded around Europe by travel agents who handled the tickets, the hotels and the arguing.",
+    "audio": true
+  },
+  {
+    "k": "travel-agent",
+    "t": "travel agent",
+    "kind": "name",
+    "forms": [
+      "travel agents"
+    ],
+    "text": "A travel agent is a person, or a shop, whose job is to arrange a trip for you: booking the trains, the hotel and the tours so you do not have to. They were once how almost everybody travelled abroad, and plenty still exist. The article treats them as the very first version of the thing a chatbot now does for free.",
+    "audio": true
+  },
+  {
+    "k": "thomas-cook",
+    "t": "Thomas Cook",
+    "kind": "name",
+    "forms": [
+      "Thomas Cook",
+      "Thomas Cooks"
+    ],
+    "text": "Thomas Cook was an Englishman who in the 1840s began organising group trips, and he is usually called the inventor of the package holiday. His company sold the whole journey as one bundle, which made foreign travel possible for people who had never left their own county. When the article calls chatbots modern-day Thomas Cooks, it means they put a trip together for you.",
+    "audio": true
+  },
+  {
+    "k": "continental",
+    "t": "continental",
+    "kind": "word",
+    "forms": [
+      "continental"
+    ],
+    "text": "To the British, the Continent means mainland Europe — France, Germany, Italy and the rest — because Britain is an island off the edge of it. So continental railway porters are the ones working on European stations, not British ones. Watch out for the other meaning: continental can also just mean belonging to any continent.",
+    "audio": true
+  },
+  {
+    "k": "porters",
+    "t": "porters",
+    "kind": "word",
+    "forms": [
+      "porters"
+    ],
+    "text": "A porter is someone whose job is to carry other people's luggage, usually at a station, a hotel or an airport. In the 1800s there were no wheels on suitcases, so a traveller at a foreign railway station had to hand everything over to a stranger. Thomas Cook sold his tours partly as protection from having to deal with them.",
+    "audio": true
+  },
+  {
+    "k": "have-their-hand-held",
+    "t": "have their hand held",
+    "kind": "phrase",
+    "forms": [
+      "have their hand held"
+    ],
+    "text": "To have your hand held is to be guided through something step by step, the way an adult walks a small child across a road. It is used about grown-ups doing anything new or confusing, and it can sound slightly mocking. Here it means the tourists who would rather someone else made all the decisions for them.",
+    "audio": true
+  },
+  {
+    "k": "hostel",
+    "t": "hostel",
+    "kind": "word",
+    "forms": [
+      "hostel"
+    ],
+    "text": "A hostel is cheap accommodation where travellers sleep in shared rooms with bunk beds, instead of paying for a private hotel room. They are popular with young people travelling on very little money. The article says a mention in the Lonely Planet was once enough to fill a hostel in Bangkok — that is how much sway one guidebook had.",
+    "audio": true
+  },
+  {
+    "k": "thrice",
+    "t": "thrice",
+    "kind": "word",
+    "forms": [
+      "thrice"
+    ],
+    "text": "Thrice is an old-fashioned word for three times, the way twice means two times. You will mostly meet it in older books or in writing that is being slightly playful, as here. The sentence is telling you to expect three separate changes, and the article then walks through them one by one: review sites, then social media, then chatbots.",
+    "audio": true
+  },
+  {
+    "k": "wisdom-of-crowds",
+    "t": "the wisdom of crowds",
+    "kind": "name",
+    "forms": [
+      "wisdom of crowds"
+    ],
+    "text": "The wisdom of crowds is the idea that the average of a lot of ordinary guesses beats one expert's opinion. If a thousand people each rate a restaurant, their mistakes tend to cancel out and what is left is surprisingly accurate. That is the whole bet behind sites like Tripadvisor: no food critic, just two thousand strangers with star ratings.",
+    "audio": true
+  },
+  {
+    "k": "harnessed",
+    "t": "harnessed",
+    "kind": "word",
+    "forms": [
+      "harnessed"
+    ],
+    "text": "A harness is the set of straps that ties a horse to a cart, so to harness something is to hook it up and put it to work. People use it for any power that already exists but needs channelling — harnessing the wind, harnessing sunlight. Tripadvisor did not create all those opinions; it built somewhere to collect them and turned them into rankings.",
+    "audio": true
+  },
+  {
+    "k": "clout",
+    "t": "clout",
+    "kind": "vocab",
+    "pron": "KLOWT",
+    "forms": [
+      "clout"
+    ],
+    "text": "Clout is the power to make things happen because people listen to you. It is not official power like a law or a job title — it is influence, the kind that builds up when enough people trust what you say. Review sites have it: the article says a good rating shifted real money to Rome's restaurants.",
+    "audio": true
+  },
+  {
+    "k": "european-union",
+    "t": "European Union",
+    "kind": "name",
+    "forms": [
+      "European Union"
+    ],
+    "text": "The European Union is a group of 27 European countries that agree to follow some shared rules, especially about trade and travel between them. Because they decide things together, one ruling can change life in every member country at once. That is what happened with mobile roaming charges in 2017.",
+    "audio": true
+  },
+  {
+    "k": "abolished",
+    "t": "abolished",
+    "kind": "word",
+    "forms": [
+      "abolished"
+    ],
+    "text": "To abolish something is to get rid of it completely and officially — not to reduce it or pause it, but to end it by law or by rule. It is used for big things: countries abolish slavery, schools abolish a uniform rule. Here the European Union abolished the extra fees phone companies charged for using your phone in another country.",
+    "audio": true
+  },
+  {
+    "k": "roaming-charges",
+    "t": "roaming charges",
+    "kind": "name",
+    "forms": [
+      "roaming charges"
+    ],
+    "text": "Roaming is what your phone does when it connects to another company's network, usually because you have travelled abroad. Phone companies used to add big extra fees for this, called roaming charges, so tourists kept their phones switched off to avoid a shocking bill. When the EU banned those fees in 2017, travellers suddenly used the internet while out and about — which is why more of them started checking reviews mid-holiday.",
+    "audio": true
+  },
+  {
+    "k": "uptick",
+    "t": "uptick",
+    "kind": "word",
+    "forms": [
+      "uptick"
+    ],
+    "text": "An uptick is a small rise in a number that people are tracking, like sales, temperature or visitors. It suggests a noticeable nudge upwards rather than a dramatic jump. Here the uptick is in how many tourists were checking Tripadvisor while actually out walking around.",
+    "audio": true
+  },
+  {
+    "k": "on-the-go",
+    "t": "on the go",
+    "kind": "phrase",
+    "forms": [
+      "on the go"
+    ],
+    "text": "On the go means while you are out and moving about, rather than sitting still at home or at a desk. Eating on the go is eating while walking; checking a map on the go is checking it in the street. It matters here because looking up a restaurant standing outside it changes which restaurant you walk into.",
+    "audio": true
+  },
+  {
+    "k": "revenue",
+    "t": "revenue",
+    "kind": "word",
+    "forms": [
+      "revenue"
+    ],
+    "text": "Revenue is all the money a business takes in before any costs are subtracted — everything customers hand over. It is not the same as profit, which is what is left after paying for staff, food and rent. A 5% revenue bump for Rome's tourist restaurants means 5% more money coming through the till.",
+    "audio": true
+  },
+  {
+    "k": "algorithms",
+    "t": "algorithms",
+    "kind": "name",
+    "forms": [
+      "algorithms"
+    ],
+    "text": "An algorithm is just a set of steps a computer follows to work something out, like a recipe. On an app like TikTok or Instagram, the algorithm is the part that decides which posts to put in front of you next, based on what you have watched. Because it chooses for millions of people at once, it can make an unknown village famous in a week.",
+    "audio": true
+  },
+  {
+    "k": "alight-on",
+    "t": "alight on",
+    "kind": "phrase",
+    "forms": [
+      "alight on"
+    ],
+    "text": "To alight on something is to land on it, the way a bird alights on a branch. Used about ideas or choices, it means to settle on one thing, often by chance rather than by plan. The point is that nobody decides which little Austrian town goes viral — the app's algorithm simply lands on it.",
+    "audio": true
+  },
+  {
+    "k": "photogenic",
+    "t": "photogenic",
+    "kind": "word",
+    "forms": [
+      "Photogenic"
+    ],
+    "text": "Photogenic means looking especially good in photographs. Take it apart: photo means light or picture, and the -genic ending means producing or making. A photogenic place is one that produces a great picture — which, in the age of social media, is exactly the kind of place that gets swamped with visitors.",
+    "audio": true
+  },
+  {
+    "k": "hallstatt",
+    "t": "Hallstatt",
+    "kind": "name",
+    "forms": [
+      "Hallstatt"
+    ],
+    "text": "Hallstatt is a tiny village in Austria, a row of wooden houses squeezed between a lake and a mountain, with fewer than a thousand residents. Photographs of it spread online and it now receives enormous numbers of day-trippers. It has become the standard example people reach for when they talk about too much tourism in one small place.",
+    "audio": true
+  },
+  {
+    "k": "overrun",
+    "t": "overrun",
+    "kind": "word",
+    "forms": [
+      "overrun"
+    ],
+    "text": "To be overrun is to be swamped by far more of something than you can handle, so that it takes the place over. It is often used about armies or weeds, which is why it sounds so harsh applied to tourists. Saying Hallstatt has been overrun means the visitors are not just many — they have crowded the village out of its own streets.",
+    "audio": true
+  },
+  {
+    "k": "traveltok",
+    "t": "TravelTok",
+    "kind": "name",
+    "forms": [
+      "TravelTok"
+    ],
+    "text": "TravelTok is a nickname for the travel side of TikTok — the endless videos of beaches, cafes and viewpoints. The name is made by gluing travel onto the end of TikTok, the same way people say BookTok for the book videos. A TravelTok craze is a place that suddenly appears in everyone's feed at once.",
+    "audio": true
+  },
+  {
+    "k": "unsuspecting",
+    "t": "unsuspecting",
+    "kind": "word",
+    "forms": [
+      "unsuspecting"
+    ],
+    "text": "Someone unsuspecting has no idea that something is about to happen to them. The word always carries a hint that what is coming is unwelcome or at least a shock. An unsuspecting eatery is a small restaurant that went to bed normal and woke up with two hundred people queueing outside because of a video.",
+    "audio": true
+  },
+  {
+    "k": "consultancy",
+    "t": "consultancy",
+    "kind": "word",
+    "forms": [
+      "consultancy"
+    ],
+    "text": "A consultancy is a company that other companies pay for advice and research — on what customers want, how to save money, what to do next. McKinsey is one of the biggest in the world. They are quoted in news stories a lot because they run large surveys, like the one here counting how many Americans used AI to plan a holiday.",
+    "audio": true
+  },
+  {
+    "k": "web-traffic",
+    "t": "web traffic",
+    "kind": "name",
+    "forms": [
+      "web traffic"
+    ],
+    "text": "Web traffic means the number of people visiting a website, nothing to do with cars. Websites live on it: more visitors means more advertising money. Tripadvisor says AI has taken a fifth of its traffic away, because someone who asks a chatbot never lands on the website at all.",
+    "audio": true
+  },
+  {
+    "k": "concentrated",
+    "t": "concentrated",
+    "kind": "word",
+    "forms": [
+      "concentrated"
+    ],
+    "text": "Concentrated means packed tightly into one place instead of spread out. Forget the juice meaning for a moment — this is about position, not strength. Tourism that is more concentrated means the same number of tourists all squeezing into fewer spots, which is exactly what people fear AI will cause.",
+    "audio": true
+  },
+  {
+    "k": "large-language-models",
+    "t": "large language models",
+    "kind": "name",
+    "forms": [
+      "large language models"
+    ],
+    "text": "A large language model is the kind of program a chatbot is built from. It is a huge set of numbers worked out from an enormous pile of writing, recording how often words follow other words, and it answers you by producing the words most likely to come next. That is why it is called a prediction machine: it is not looking facts up, it is working out what text usually looks like.",
+    "audio": true
+  },
+  {
+    "k": "primed",
+    "t": "primed",
+    "kind": "word",
+    "forms": [
+      "primed"
+    ],
+    "text": "To be primed is to be set up in advance and ready to go off in one particular way — a primed pump, a primed engine. It suggests the outcome is already built in before anything starts. Saying these models are primed to give the most likely answer means that is what they were made to do; it is not a fault that crept in.",
+    "audio": true
+  },
+  {
+    "k": "open-ended",
+    "t": "open-ended",
+    "kind": "word",
+    "forms": [
+      "open-ended"
+    ],
+    "text": "An open-ended question is one with no fixed set of answers — you can say anything. Ask what should I see in Rome and that is open-ended; ask is the Colosseum open on Sundays and it is not. The article's warning is that open-ended questions are exactly where a chatbot falls back on the most popular answer.",
+    "audio": true
+  },
+  {
+    "k": "marked-preference",
+    "t": "a marked preference",
+    "kind": "word",
+    "forms": [
+      "marked preference",
+      "marked"
+    ],
+    "text": "Marked here means clear and easy to notice, the way you would mark something to make it stand out. A marked preference is a strong leaning that shows up plainly in the results, not a tiny hint. The researchers found ChatGPT did not just occasionally mention famous places — it kept choosing them.",
+    "audio": true
+  },
+  {
+    "k": "hidden-gems",
+    "t": "hidden gems",
+    "kind": "phrase",
+    "forms": [
+      "hidden gems"
+    ],
+    "text": "A hidden gem is a wonderful place hardly anybody knows about — a tiny cafe down a side street, a beach with no car park. It is one of travel writing's favourite phrases. The Economist is being sarcastic: calling the Eiffel Tower and the Colosseum hidden gems is the joke, because they are the two least hidden places in Europe.",
+    "audio": true
+  },
+  {
+    "k": "hubs",
+    "t": "hubs",
+    "kind": "word",
+    "forms": [
+      "hubs"
+    ],
+    "text": "A hub is the middle of a wheel, where all the spokes meet, so a hub is any busy centre that everything else connects to. Airports are travel hubs; a city can be a tech hub. Well-established tourist hubs are the big famous destinations that everybody already routes through.",
+    "audio": true
+  },
+  {
+    "k": "horizons",
+    "t": "horizons",
+    "kind": "word",
+    "forms": [
+      "horizons"
+    ],
+    "text": "The horizon is the line far away where the ground seems to meet the sky — as far as you can see. People use it for how much of the world you know about, which is why broadening your horizons means learning about more of it. To narrow travellers' horizons is the opposite: leaving them aware of fewer places than before.",
+    "audio": true
+  },
+  {
+    "k": "harvested",
+    "t": "harvested",
+    "kind": "word",
+    "forms": [
+      "harvested"
+    ],
+    "text": "To harvest is to gather in a crop, but researchers borrow the word for collecting large amounts of data. The picture is the same: going out and bringing in a great pile of something all at once. Here the researcher harvested about ten thousand Instagram photos of Barcelona so he could compare them with the chatbot's suggestions.",
+    "audio": true
+  },
+  {
+    "k": "coded",
+    "t": "coded",
+    "kind": "word",
+    "forms": [
+      "coded"
+    ],
+    "text": "In research, to code something means to label it so it can be counted — sorting each item into a category by hand or by computer. It has nothing to do with writing computer code here. He coded the photos by location, meaning he worked out and recorded which spot in Barcelona each one was taken in.",
+    "audio": true
+  },
+  {
+    "k": "majoring-on",
+    "t": "majoring on",
+    "kind": "phrase",
+    "forms": [
+      "majoring on"
+    ],
+    "text": "To major on something is to concentrate mostly on it, giving it far more attention than everything else. It is a British way of saying it; Americans would more often say focusing on. The chatbot's 215 Barcelona suggestions were heavily weighted towards a handful of famous landmarks.",
+    "audio": true
+  },
+  {
+    "k": "sagrada-familia",
+    "t": "Sagrada Familia",
+    "kind": "name",
+    "forms": [
+      "Sagrada Família"
+    ],
+    "text": "The Sagrada Familia is an enormous, strange-looking church in Barcelona, designed by the architect Antoni Gaudi. Building began in 1882 and it is still not finished, which has made it famous all on its own. It is the single most visited thing in the city, so a chatbot suggesting it is the safest and least surprising answer possible.",
+    "audio": true
+  },
+  {
+    "k": "disperse",
+    "t": "disperse",
+    "kind": "vocab",
+    "pron": "dih-SPURS",
+    "forms": [
+      "dispersing"
+    ],
+    "text": "To disperse is to spread out from one spot into many, or to make something spread that way. You meet it in science, where seeds are dispersed by the wind, and in news, where a crowd disperses after a match. The article's hope is that chatbots will disperse tourists across hundreds of smaller places instead of funnelling them into the same square.",
+    "audio": true
+  },
+  {
+    "k": "days-gone-by",
+    "t": "days gone by",
+    "kind": "phrase",
+    "forms": [
+      "days gone by"
+    ],
+    "text": "Days gone by is a slightly old-fashioned way of saying in the past, usually with a touch of fondness. It points at no particular year — just an earlier time that has finished. Here it means the era of guidebooks and review sites, before anybody asked a chatbot where to have lunch.",
+    "audio": true
+  },
+  {
+    "k": "trained-on",
+    "t": "trained on",
+    "kind": "name",
+    "forms": [
+      "trained on"
+    ],
+    "text": "Training a model means feeding a program an enormous amount of text and having it work out the patterns in that text — which words tend to follow which. Whatever it was trained on is all it has to go on. Two chatbots trained on different piles of writing will answer the same question differently, which is the article's first reason for thinking AI might spread tourists out.",
+    "audio": true
+  },
+  {
+    "k": "evertune",
+    "t": "Evertune",
+    "kind": "name",
+    "forms": [
+      "Evertune"
+    ],
+    "text": "Evertune is a company that measures what chatbots actually say — running the same question past them again and again and counting the answers. Businesses pay for this because they want to know whether AI ever mentions them. The Economist asked Evertune to do it for pizza in Rome, and the results are the chart in this article.",
+    "audio": true
+  },
+  {
+    "k": "reddit",
+    "t": "Reddit threads",
+    "kind": "name",
+    "forms": [
+      "Reddit threads",
+      "Reddit"
+    ],
+    "text": "Reddit is a website of discussion boards where people ask questions and argue about the answers. A thread is one conversation: an opening post with all the replies hanging off it. There is a thread for almost everything, including the best pizza in Rome, which is part of what ChatGPT's answers were built from.",
+    "audio": true
+  },
+  {
+    "k": "probabilistic",
+    "t": "probabilistic",
+    "kind": "word",
+    "forms": [
+      "probabilistic"
+    ],
+    "text": "Probability is how likely something is, so probabilistic means working by chance rather than by a fixed rule. A probabilistic machine does not always give the same output for the same input — like a dice roll rather than a calculator. That is why asking a chatbot the identical question twice can get you two different restaurants.",
+    "audio": true
+  },
+  {
+    "k": "queries",
+    "t": "queries",
+    "kind": "word",
+    "forms": [
+      "queries"
+    ],
+    "text": "A query is a question, especially one put to a computer or a service. Search engines and databases have used the word for decades, which is why it turns up in writing about AI. Identical queries means the exact same question typed in word for word.",
+    "audio": true
+  },
+  {
+    "k": "gemini",
+    "t": "Gemini",
+    "kind": "name",
+    "forms": [
+      "Gemini"
+    ],
+    "text": "Gemini is Google's chatbot, its rival to ChatGPT. The article tests it alongside the others because different companies build their models from different piles of text, so they do not agree. Gemini named 24 different pizzerias across its answers, which is the article's evidence that chatbots spread people around rather than funnel them.",
+    "audio": true
+  },
+  {
+    "k": "long-tail",
+    "t": "a long tail",
+    "kind": "name",
+    "forms": [
+      "a long tail",
+      "long tail"
+    ],
+    "text": "Draw a graph of how often each thing gets picked, with the most popular on the left, and it drops steeply and then trails off to the right in a long low line. That trailing line is the long tail: the huge number of choices each picked only rarely. Gemini's long tail of 24 pizzerias means a few got named constantly and many got named once or twice.",
+    "audio": true
+  },
+  {
+    "k": "psychiatrist",
+    "t": "psychiatrist",
+    "kind": "word",
+    "forms": [
+      "psychiatrist"
+    ],
+    "text": "A psychiatrist is a doctor who treats problems with the mind. The word is a joke here: asking for pineapple on your pizza is such a famous crime in Italy that the writer pretends you need medical help. Notice the silent p at the start, and the stress on the second syllable.",
+    "audio": true
+  },
+  {
+    "k": "prompt",
+    "t": "prompt",
+    "kind": "name",
+    "forms": [
+      "prompt"
+    ],
+    "text": "A prompt is what you type into a chatbot — your question or instruction. It is the standard word for it now, borrowed from theatre, where prompting is feeding an actor their line. The article says the average prompt runs about 25 words, which is much longer than a search-engine query and suggests people are asking complicated things.",
+    "audio": true
+  },
+  {
+    "k": "calibrate",
+    "t": "calibrate",
+    "kind": "word",
+    "forms": [
+      "calibrate"
+    ],
+    "text": "To calibrate something is to adjust it carefully so it fits a particular job or measurement — you calibrate a scale so it reads zero when empty. Used about advice, it means tuning the answer to the person asking. A chatbot that has worked out you are vegan will calibrate its restaurant suggestions to leave out the steakhouses.",
+    "audio": true
+  },
+  {
+    "k": "feed",
+    "t": "feed",
+    "kind": "word",
+    "forms": [
+      "feed"
+    ],
+    "text": "On an app, your feed is the endless stream of posts, videos or songs it shows you, one after another. No two people's feeds are the same, because the app picks for each person separately. Comparing AI answers to the Spotify feed means your chatbot's advice is chosen for you, not handed to everybody alike.",
+    "audio": true
+  },
+  {
+    "k": "bubbles",
+    "t": "bubbles",
+    "kind": "word",
+    "forms": [
+      "bubbles"
+    ],
+    "text": "A bubble here is not soap — it is the idea that you are surrounded by a thin invisible wall made of things chosen for you, so you never see what is outside it. People talk about this a lot with news and music: your app keeps showing you more of what you already like. The article wonders whether travel is about to work the same way.",
+    "audio": true
+  },
+  {
+    "k": "mainstream",
+    "t": "mainstream",
+    "kind": "word",
+    "forms": [
+      "mainstream"
+    ],
+    "text": "The mainstream is what most people do, like or believe — the big middle of things, as opposed to anything unusual or niche. A mainstream recommendation is the safe, popular one that will not surprise anybody. Guidebooks make them because they are written once for every reader, so they have to suit the average traveller.",
+    "audio": true
+  },
+  {
+    "k": "tyranny",
+    "t": "tyranny",
+    "kind": "word",
+    "forms": [
+      "tyranny"
+    ],
+    "text": "A tyrant is a ruler who holds total power and uses it badly, so tyranny is that kind of crushing, unfair control. There is a well-known phrase, the tyranny of the majority, for what happens when the biggest group always gets its way and everyone else is ignored. The joke here is that the majority in question just wants plain margherita pizza.",
+    "audio": true
+  },
+  {
+    "k": "margherita",
+    "t": "margherita",
+    "kind": "name",
+    "forms": [
+      "margherita-eating",
+      "margherita"
+    ],
+    "text": "A margherita is the plainest classic pizza: tomato, mozzarella and basil, nothing else. It is said to be named after an Italian queen, with the red, white and green of the Italian flag. The margherita-eating majority means the great mass of people who all want the same ordinary thing — and who therefore decide what tops every review site.",
+    "audio": true
+  }
+]
