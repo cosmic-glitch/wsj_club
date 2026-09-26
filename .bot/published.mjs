@@ -57,3 +57,25 @@ export function isPublished(published, { url, title }) {
     (title !== undefined && published.titles.has(normalizeTitle(title)))
   );
 }
+
+// The track's most recent readings, newest first, as "YYYY-MM-DD  title" lines —
+// context the pickers print so the ranker knows what the club has read lately.
+export function recentReadings(track = "senior", n = 10) {
+  const dir = track === "junior" ? "content/junior" : "content";
+  const abs = path.join(REPO_ROOT, dir);
+  if (!fs.existsSync(abs)) return [];
+  return fs
+    .readdirSync(abs)
+    .filter((name) => /^\d{4}-\d{2}-\d{2}\.json$/.test(name))
+    .sort()
+    .reverse()
+    .slice(0, n)
+    .map((name) => {
+      try {
+        const day = JSON.parse(fs.readFileSync(path.join(abs, name), "utf8"));
+        return `${name.slice(0, 10)}  ${day.title ?? "(untitled)"}`;
+      } catch {
+        return `${name.slice(0, 10)}  (unreadable)`;
+      }
+    });
+}

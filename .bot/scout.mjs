@@ -5,7 +5,7 @@
 //   node --env-file=.bot/.env .bot/scout.mjs --track=junior   # junior sections
 // Only lists candidates (works even logged-out); reading bodies is read.mjs.
 import { ensureEconSession } from "./lib.mjs";
-import { loadPublished, isPublished } from "./published.mjs";
+import { loadPublished, isPublished, recentReadings } from "./published.mjs";
 
 const trackFlag = process.argv.find((a) => a.startsWith("--track="));
 const track = trackFlag ? trackFlag.slice("--track=".length) : "senior";
@@ -104,4 +104,8 @@ if (dropped.length) {
   console.error(`scout: dropped ${dropped.length} already-published: ${dropped.map((c) => c.url).join(", ")}`);
 }
 console.error(`scout: ${out.length} Economist candidates across ${SECTIONS.length} ${track} sections (${published.count} published readings excluded)`);
+const recent = recentReadings(track, 10);
+if (recent.length) {
+  console.error(`scout: the club's last ${recent.length} ${track} readings, newest first:\n  ${recent.join("\n  ")}`);
+}
 process.stdout.write(JSON.stringify(out, null, 2) + "\n");
