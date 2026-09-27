@@ -1,0 +1,117 @@
+{
+  "date": "2026-09-27",
+  "title": "Alternatives to GPS are around the corner",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/27/alternatives-to-gps-are-around-the-corner",
+  "articlePageUrl": "/articles/2026-09-27.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "dearth",
+      "partOfSpeech": "noun",
+      "pronunciation": "DURTH",
+      "articleQuote": "For now, the main drawback of both these approaches is a dearth of good maps of the crustal field.",
+      "meaning": "A **dearth** is a shortage of something needed — not merely a small supply, but too little to go around. It sits a notch above *few* in seriousness, and it usually points at a gap that is holding something back: a dearth of rain, a dearth of qualified nurses, a dearth of hard evidence. In this article the magnetic-navigation firms already have sensors that work; what they lack is the thing every reading has to be compared against, so the dearth of accurate maps of Earth's crustal magnetic field is the one bottleneck standing between a clever idea and a usable navigation system.",
+      "examples": [
+        "There was such a dearth of volunteers for the car wash that the six of us who showed up were still scrubbing at sunset.",
+        "Our team has no dearth of good shooters — what we lack is anyone willing to play defense."
+      ]
+    },
+    {
+      "word": "disparate",
+      "partOfSpeech": "adjective",
+      "pronunciation": "DIS-puh-rut",
+      "articleQuote": "Others, such as SandboxAQ, a Californian company, propose improving and joining up the disparate maps that already exist.",
+      "meaning": "**Disparate** things are so different in kind that they do not line up or combine easily — separate pieces that were never built to fit together. It is stronger than *various*: a disparate group of volunteers, disparate accounts of the same night, disparate data from a dozen labs. That is exactly the problem here, because the world's existing magnetic maps were surveyed by different countries with different instruments at different altitudes in different decades, so stitching them into one map an aircraft could navigate by means reconciling measurements that disagree with each other. Watch the spelling: *disparate* has nothing to do with *desperate*.",
+      "examples": [
+        "The group project pulled together disparate skills — she coded it, he filmed it, and I wrote the script.",
+        "Detectives had four disparate descriptions of the same car and no way to tell which witness to trust."
+      ]
+    },
+    {
+      "word": "ambient",
+      "partOfSpeech": "adjective",
+      "pronunciation": "AM-bee-unt",
+      "articleQuote": "The other establishes an observer's position by tapping ambient radio waves broadcast for other purposes.",
+      "meaning": "**Ambient** means surrounding — already present in the environment rather than aimed at you or supplied on purpose. You meet it in ambient temperature (the air around the thermometer, not the oven), ambient noise (the hum of a room with nothing playing) and ambient light (whatever a phone camera has to work with before the flash fires). The word carries the whole idea behind this article's second approach: nobody launched Starlink or built a mobile-phone tower to help anyone navigate, but those signals wash over every receiver anyway, so a clever enough receiver can pull a position out of radio waves that are simply *there*.",
+      "examples": [
+        "The recording was ruined by ambient noise — a leaf blower two houses down that nobody noticed until playback.",
+        "Her science-fair project measured how far a phone's brightness sensor could be fooled by ambient light from the hallway."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Satellite navigation",
+      "articleQuote": "Jamming signals from a global navigation satellite system (GNSS), such as America's GPS, is so easy it has become common when the shooting starts.",
+      "meaning": "A jammer the size of a shoebox can blind GPS receivers for miles, and that is the puzzle worth sitting with: how can something the whole world runs on be so easy to break? The answer is in what a navigation satellite actually transmits. The field to file this under is **satellite navigation** — engineers call such a system a *global navigation satellite system*, or GNSS. America's GPS is one of four; Europe's Galileo, Russia's GLONASS and China's BeiDou are the others.\n\nHere is what physically happens. Each satellite carries an extremely precise clock, and it broadcasts a radio signal encoding two numbers: the exact instant the signal left the satellite, and where the satellite was at that instant. Your phone picks up the signal a little later, subtracts the stamped departure time from its own reading of now, and multiplies that delay by the speed of light. Light covers about 300,000 kilometres a second, so a signal that took 0.07 seconds to arrive travelled roughly 21,000 kilometres — and that one number puts your phone somewhere on a vast sphere of that radius centred on the satellite. A second satellite's sphere cuts the first into a circle. A third narrows the circle to a couple of points, and a fourth settles which point it is while also correcting your phone's own cheap, drifting clock. Your position is just the place where all the spheres cross.\n\nTwo consequences follow, and between them they explain everything else in this article. First, the satellites are some 20,000 kilometres up, so the signal arriving at your phone is fainter than the background static of the sky — which is why a cheap transmitter shouting on the same frequency from the next hill over swamps it completely. Second, GNSS is a timing service before it is a map service: power grids, stock exchanges and mobile networks all set their clocks by those satellites, so losing the signal breaks far more than the directions on a dashboard. When you next hear that some system is fragile, ask what else has quietly been built on top of it."
+    },
+    {
+      "name": "The Doppler effect",
+      "articleQuote": "As a satellite approaches and then recedes, the frequency of its transmissions appear to rise and then drop, much like the whistle of a passing train.",
+      "meaning": "You have heard this one without being told its name: an ambulance siren is high and thin while it bears down on you, then drops to a lower moan the instant it goes past. The siren never changed. What changed is where you are standing relative to it, and the corner of physics that explains it is wave physics, where the phenomenon is called the **Doppler effect**.\n\nSound travels as pressure crests moving through air, and pitch is simply how often those crests reach your ear. While the ambulance drives toward you, each new crest leaves from a spot slightly closer than the one before, so the crests arrive bunched together — more of them per second, higher pitch. After it passes, each crest leaves from slightly farther away, the gaps stretch out, and the pitch falls. The siren is producing the same thing throughout; only the spacing of the crests arriving at your ear is different.\n\nRadio waves behave the same way, and that is the trick in this article. A Starlink satellite crosses the sky at roughly 27,000 kilometres an hour, so the frequency a receiver measures runs high on the approach and low on the departure — and *how fast* that shift sweeps through reveals how close the satellite passed to straight overhead. ASPIN Lab's system read the shifts from 21 broadband satellites over a cruise ship near Greenland and placed the ship 27 metres from its true position, with no GPS involved. The same measurement does heavy work elsewhere: a police radar gun reads the Doppler shift of radio waves bounced off your car, a hospital ultrasound reads it off flowing blood, and astronomers read it off distant galaxies, which is how we know they are moving away from us. Carry this out the door: anything moving relative to you writes its motion into the frequency of whatever it emits, so a frequency measurement can serve as a speedometer — and, with enough of them, as a map."
+    },
+    {
+      "name": "Magnetic anomalies",
+      "articleQuote": "Many rocks are weakly magnetic, and their distribution in Earth's crust results in irregularities in the planet's magnetic field.",
+      "meaning": "A compass points north because Earth behaves like one enormous bar magnet, its field produced by molten iron churning in the outer core. That is the smooth picture, and it is the one school teaches. The surprise that makes this whole article possible belongs to geophysics: the field you actually measure at any given spot is not smooth. Rocks in the crust contain iron-bearing minerals, and as volcanic rock cooled those minerals locked in a weak magnetism of their own. Because the rock is spread unevenly — a thick basalt formation here, soft sediment there, an old iron-rich intrusion under a valley — the field a sensor reads comes in slightly stronger over some places and slightly weaker over others. Those local departures from the smooth global field are **magnetic anomalies**.\n\nThe property that matters is that they hardly move. A river shifts course, a forest burns, cloud hides the ground — but the anomaly pattern is set by rock kilometres down, so it reads the same today as it did a decade ago, in daylight or darkness, over ocean or desert. That makes it a fixed, invisible landscape. Fly an aircraft carrying a magnetometer sensitive enough to pick out variations far weaker than the main field, record the strengths along the route, match that sequence against a stored map, and only one path across the map fits the readings — and that path is your position, worked out from the planet itself, transmitting nothing and asking nothing of any satellite.\n\nIt also explains precisely why the technology is stuck. The sensors work: Q-CTRL flew a system over New South Wales that beat a leading GPS alternative. The map is what is missing, because you cannot match a reading against a chart nobody has surveyed accurately — hence the survey missions and the proposals to stitch existing maps together. The lesson generalises past magnetism: a measuring instrument is only ever as useful as the reference you get to compare it with."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A paper posted in June by a team led by Todd Humphreys traced scores of broad GPS disruptions across Europe and elsewhere since 2019 to what source?",
+      "options": [
+        "A constellation of Russian satellites",
+        "Faulty receivers in newer consumer phones",
+        "Solar storms striking the upper atmosphere",
+        "Overcrowding in Starlink's orbital shells"
+      ],
+      "answerIndex": 0,
+      "explanation": "The paper tied the disruptions to a constellation of Russian satellites, raising the prospect that interference from space could affect an entire continent."
+    },
+    {
+      "question": "How does a satellite-navigation receiver, such as the one in your phone, work out where it is?",
+      "options": [
+        "Each satellite tracks the receiver and radios its coordinates down to it",
+        "It measures how strong the nearest satellite's signal is and converts that into a distance",
+        "It measures how long signals took to arrive from several satellites and finds the one point consistent with all those distances",
+        "It photographs the ground below and matches the image against a stored map"
+      ],
+      "answerIndex": 2,
+      "explanation": "Each satellite broadcasts its own position and the exact moment of transmission, so the travel time gives a distance to each satellite, and those distances intersect at a single place."
+    },
+    {
+      "question": "In ASPIN Lab's demonstration on a cruise ship off western Greenland, what did its Matrix system use to place the ship just 27 metres from its true position?",
+      "options": [
+        "The ship's magnetic signature matched against a map of the sea floor",
+        "Doppler shifts in transmissions from 21 Starlink and OneWeb broadband satellites",
+        "Corrections broadcast to it from a master receiver on shore",
+        "Photographs of the Greenland coastline compared with satellite imagery"
+      ],
+      "answerIndex": 1,
+      "explanation": "Matrix read the rising and falling frequencies of 21 passing broadband satellites — signals of opportunity never intended for navigation."
+    },
+    {
+      "question": "Some firms fly their own survey missions, while others propose joining up the 'disparate' maps that already exist. Calling those maps disparate means they are:",
+      "options": [
+        "Desperately out of date, though otherwise sound",
+        "Deliberately made incompatible for security reasons",
+        "So alike that keeping all of them is pointless",
+        "So different from one another in origin and quality that they do not fit together"
+      ],
+      "answerIndex": 3,
+      "explanation": "Disparate describes things different enough in kind that they do not combine easily, which is why merging the existing magnetic maps is hard work rather than simple copying."
+    },
+    {
+      "question": "The article says the main drawback of both magnetic approaches is 'a dearth of good maps of the crustal field'. What problem is that describing?",
+      "options": [
+        "The maps exist in plenty but are classified by the armed forces",
+        "There are too few accurate maps of Earth's crustal magnetic field to navigate by",
+        "The crustal field shifts too quickly for any map to stay current",
+        "The maps work well over land but are useless at sea"
+      ],
+      "answerIndex": 1,
+      "explanation": "A dearth is a shortage of something needed: the available crustal-field maps are too few, too inconsistent and too imprecise for navigation, which is why firms are surveying their own."
+    }
+  ]
+}

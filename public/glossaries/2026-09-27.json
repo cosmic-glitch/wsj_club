@@ -1,0 +1,701 @@
+[
+  {
+    "k": "dearth",
+    "t": "dearth",
+    "kind": "vocab",
+    "pron": "DURTH",
+    "forms": [
+      "dearth"
+    ],
+    "text": "A dearth is a shortage of something needed — not just a small amount, but too little to go around. It points at a gap that is holding something back: a dearth of rain, a dearth of qualified nurses, a dearth of evidence. Here the magnetic-navigation firms have sensors that work, and what they lack is the maps those sensors must be compared against, so a dearth of good crustal maps is the one thing keeping the whole idea from being usable.",
+    "audio": true
+  },
+  {
+    "k": "disparate",
+    "t": "disparate",
+    "kind": "vocab",
+    "pron": "DIS-puh-rut",
+    "forms": [
+      "disparate"
+    ],
+    "text": "Disparate things are so different in kind that they do not line up or combine easily — separate pieces never built to fit together. The existing magnetic maps are disparate because different countries surveyed them with different instruments at different altitudes in different decades, so joining them into one usable map means reconciling measurements that disagree. Note the spelling: disparate has nothing to do with desperate.",
+    "audio": true
+  },
+  {
+    "k": "ambient",
+    "t": "ambient",
+    "kind": "vocab",
+    "pron": "AM-bee-unt",
+    "forms": [
+      "ambient"
+    ],
+    "text": "Ambient means surrounding — already present in the environment rather than aimed at you or supplied on purpose. You meet it in ambient temperature, ambient noise and ambient light. The word carries the whole idea of this article's second approach: nobody launched Starlink or built a phone tower to help anyone navigate, but those radio waves are washing over every receiver anyway, so a clever receiver can read its position out of signals that are simply there.",
+    "audio": true
+  },
+  {
+    "k": "kit",
+    "t": "kit",
+    "kind": "word",
+    "forms": [
+      "kit"
+    ],
+    "text": "In British usage, which The Economist follows, “kit” means equipment or gear in general — not a boxed set of parts to assemble. “Stronger signals from newer kit” means signals from newer hardware, and “the kit to be ready for market” means the devices themselves. An American writer would more likely say “equipment.”",
+    "audio": true
+  },
+  {
+    "k": "constellation",
+    "t": "constellation",
+    "kind": "word",
+    "forms": [
+      "constellation"
+    ],
+    "text": "Outside astronomy, a constellation is a group of things working together as a set — and in spaceflight it is the standard term for a fleet of satellites operated as one system. “A constellation of Russian satellites” means a coordinated group of craft, not a pattern of stars. Starlink's 11,000-plus satellites are a constellation too.",
+    "audio": true
+  },
+  {
+    "k": "casualty",
+    "t": "casualty",
+    "kind": "word",
+    "forms": [
+      "casualty"
+    ],
+    "text": "A casualty is someone killed or injured, especially in a war or disaster. The article opens with the old saying that the first casualty of war is truth, using the word figuratively: the first thing destroyed. Calling a reliable GPS signal “a close second” extends the joke — the signal is the next thing war kills off.",
+    "audio": true
+  },
+  {
+    "k": "inadvertent",
+    "t": "inadvertent",
+    "kind": "word",
+    "forms": [
+      "inadvertent"
+    ],
+    "text": "Inadvertent means accidental — done without intending to, usually through carelessness or simply not noticing. It matters here because it separates two very different threats: jamming is deliberate sabotage, while inadvertent interference is a satellite disrupting navigation by accident. The adverb is “inadvertently,” as in inadvertently sending a text to the wrong person.",
+    "audio": true
+  },
+  {
+    "k": "interference",
+    "t": "interference",
+    "kind": "word",
+    "forms": [
+      "interference"
+    ],
+    "text": "In everyday speech interference is meddling, but in radio it is a specific physical thing: unwanted signals arriving on the same frequency as the one you want, swamping or scrambling it. Static on a radio and a picture breaking up are interference. Because satellite signals arrive very faint, even accidental interference from space can wipe out navigation across a continent.",
+    "audio": true
+  },
+  {
+    "k": "craft",
+    "t": "craft",
+    "kind": "word",
+    "forms": [
+      "craft"
+    ],
+    "text": "Here “craft” has nothing to do with skill or art projects — it means a vehicle that travels, usually through air, space or water. It is the root of aircraft, spacecraft and watercraft, and it stays the same in the plural: one craft, several craft. Mounting cameras “on a craft” means fitting them to a plane or drone.",
+    "audio": true
+  },
+  {
+    "k": "terrain",
+    "t": "terrain",
+    "kind": "word",
+    "forms": [
+      "terrain"
+    ],
+    "text": "Terrain is the physical shape and surface of a stretch of ground — its hills, valleys, rivers, roads and buildings. A camera-based system keeps track of the terrain below by matching what it sees to a stored map of those features. That is exactly why it fails at sea, where there is no terrain to recognise.",
+    "audio": true
+  },
+  {
+    "k": "stymied",
+    "t": "stymied",
+    "kind": "word",
+    "forms": [
+      "stymied",
+      "stymie"
+    ],
+    "text": "To stymie something is to block or frustrate it so that it cannot go forward. It is a useful step up from “stopped,” since it suggests an obstacle that leaves you stuck rather than defeated. Camera navigation can be stymied by cloud, haze or darkness: the equipment still works, it just cannot see the ground it needs.",
+    "audio": true
+  },
+  {
+    "k": "employs",
+    "t": "employs",
+    "kind": "word",
+    "forms": [
+      "employs"
+    ],
+    "text": "Employ has a second meaning that has nothing to do with jobs: to use something, to put it to work. A method that “employs quantum phenomena” uses them; you can employ a strategy, employ a metaphor, or employ force. The noun for this sense is “employment,” as in the employment of new tactics.",
+    "audio": true
+  },
+  {
+    "k": "spin",
+    "t": "spin",
+    "kind": "word",
+    "forms": [
+      "spin"
+    ],
+    "text": "Physicists use “spin” as the name of a fixed property that electrons and other particles carry, rather like mass or charge. It is called spin because it behaves mathematically the way a spinning object would, and it is what makes an electron respond to a magnetic field — which is exactly the property these navigation sensors read. Nothing is literally rotating.",
+    "audio": true
+  },
+  {
+    "k": "observer",
+    "t": "observer",
+    "kind": "word",
+    "forms": [
+      "observer",
+      "observer’s"
+    ],
+    "text": "In physics and engineering an observer is not a spectator but whoever or whatever is doing the measuring — the receiver whose own position or motion is in question. “An observer's position” means the position of the device taking the readings. Saying “the closer an observer is to a satellite's path” is a compact way of saying “the closer the receiver is.”",
+    "audio": true
+  },
+  {
+    "k": "anomalies",
+    "t": "anomalies",
+    "kind": "word",
+    "forms": [
+      "anomalies",
+      "anomaly"
+    ],
+    "text": "An anomaly is something that departs from the normal or expected pattern — an oddity that stands out against a smooth background. Earth's magnetic field would be smooth if the planet were uniform, so the local strong and weak patches caused by magnetic rock are called anomalies. In everyday use, one warm February week is a weather anomaly.",
+    "audio": true
+  },
+  {
+    "k": "plotted",
+    "t": "plotted",
+    "kind": "word",
+    "forms": [
+      "plotted"
+    ],
+    "text": "To plot something here is to mark its position on a map or graph — a navigator's word, not the scheming kind and not a story's plot. A position that “can be accurately plotted” is one you can pin to a precise spot on the chart. You plot points on graph paper the same way.",
+    "audio": true
+  },
+  {
+    "k": "firm",
+    "t": "firm",
+    "kind": "word",
+    "forms": [
+      "firm",
+      "firms"
+    ],
+    "text": "A firm is simply a business or company; British writers use it constantly where Americans might say “company.” Q-CTRL is called “an Australian firm” and SandboxAQ “a Californian company” in the same paragraph, meaning the same kind of thing. It has no connection to firm meaning solid or unyielding.",
+    "audio": true
+  },
+  {
+    "k": "outfit",
+    "t": "outfit",
+    "kind": "word",
+    "forms": [
+      "outfit"
+    ],
+    "text": "An outfit, in this sense, is an organisation or company — nothing to do with clothes. The article calls SBQuantum “a Canadian outfit” and ASPIN Lab “a research outfit,” a slightly informal way of saying firm or group. The clothing meaning and this one are unrelated, so context is what tells you which is meant.",
+    "audio": true
+  },
+  {
+    "k": "tuned",
+    "t": "tuned",
+    "kind": "word",
+    "forms": [
+      "tuned"
+    ],
+    "text": "To tune something is to adjust it to exactly the right frequency — the same idea as tuning a radio to a station or a guitar string to a pitch. A laser beam that is “tuned correctly” has its colour, and therefore its frequency, set precisely enough to affect the rubidium atoms in the intended way. Tuned wrong, the same laser would do nothing useful.",
+    "audio": true
+  },
+  {
+    "k": "survey",
+    "t": "survey",
+    "kind": "word",
+    "forms": [
+      "survey"
+    ],
+    "text": "A survey here is not a questionnaire but a systematic measurement of an area — the careful, grid-by-grid mapping of a piece of land, sea or sky. Firms “fly survey missions” to record the magnetic field over territory nobody has measured properly yet. The same sense gives us surveyors, who measure land before it is built on.",
+    "audio": true
+  },
+  {
+    "k": "applications",
+    "t": "applications",
+    "kind": "word",
+    "forms": [
+      "applications"
+    ],
+    "text": "An application, in this sense, is a practical use for something — not a form you fill in and not a phone app. Ordering an agency to “explore applications” means telling it to find real jobs the technology could do. Scientists talk about basic research versus its applications for exactly this reason.",
+    "audio": true
+  },
+  {
+    "k": "derive",
+    "t": "derive",
+    "kind": "word",
+    "forms": [
+      "derive"
+    ],
+    "text": "To derive something is to get or work it out from a source, usually by reasoning or calculation rather than by reading it off directly. Researchers “derive position from satellite radio signals” that contain no position information at all — the answer has to be computed out of the signals' timing and frequency. The related noun is derivation.",
+    "audio": true
+  },
+  {
+    "k": "recedes",
+    "t": "recedes",
+    "kind": "word",
+    "forms": [
+      "recedes"
+    ],
+    "text": "To recede is to move back or away, growing more distant. A satellite that “approaches and then recedes” comes toward the receiver and then travels off. The word turns up well beyond motion: floodwaters recede, a hairline recedes, and pain recedes.",
+    "audio": true
+  },
+  {
+    "k": "frequency",
+    "t": "frequency",
+    "kind": "word",
+    "forms": [
+      "frequency"
+    ],
+    "text": "In physics, frequency is how many wave crests pass a point each second, measured in hertz. For sound it is what your ear hears as pitch; for radio it is what a station is tuned to. Everything in this article's second half rests on the fact that a satellite's motion changes the frequency a receiver measures, even though the satellite is transmitting the same thing throughout.",
+    "audio": true
+  },
+  {
+    "k": "shortcoming",
+    "t": "shortcoming",
+    "kind": "word",
+    "forms": [
+      "shortcoming"
+    ],
+    "text": "A shortcoming is a specific flaw or weakness in something that otherwise works — where it falls short. Doppler positioning has “a notable shortcoming”: it assumes the satellite is where predictions say, so an unplanned course change throws the answer off. Note it is about a weakness, not a shortage.",
+    "audio": true
+  },
+  {
+    "k": "manoeuvred",
+    "t": "manoeuvred",
+    "kind": "word",
+    "forms": [
+      "manoeuvred",
+      "manoeuvres"
+    ],
+    "text": "To manoeuvre is to move something deliberately and carefully into a new position, and for a spacecraft it means firing thrusters to change orbit. Satellites “can drift off course or be manoeuvred to avoid potential collisions,” which is the difference between accidental and intentional movement. Americans spell it maneuver; the British spelling keeps the French o.",
+    "audio": true
+  },
+  {
+    "k": "receiver",
+    "t": "receiver",
+    "kind": "word",
+    "forms": [
+      "receiver",
+      "receivers"
+    ],
+    "text": "A receiver is any device that picks up radio signals and turns them into something usable — the GPS chip in a phone is one. The whole story is about receivers getting cleverer: the same faint signals arrive, and better software squeezes a position out of them. A transmitter sends; a receiver listens.",
+    "audio": true
+  },
+  {
+    "k": "trajectory",
+    "t": "trajectory",
+    "kind": "word",
+    "forms": [
+      "trajectory"
+    ],
+    "text": "A trajectory is the path something moving follows through space over time — a thrown ball's arc, a rocket's climb, a satellite's track around Earth. Comparing shifts expected from “a satellite's forecast trajectory” with the ones actually measured means checking the predicted path against reality. People also use it figuratively, as in a career trajectory.",
+    "audio": true
+  },
+  {
+    "k": "yield",
+    "t": "yield",
+    "kind": "word",
+    "forms": [
+      "yield"
+    ],
+    "text": "To yield here means to produce or give as a result — not to give way or surrender. A receiver that “will yield positioning accurate to within about ten metres” is one that produces results that good. A field yields a crop; an experiment yields data.",
+    "audio": true
+  },
+  {
+    "k": "facilitate",
+    "t": "facilitate",
+    "kind": "word",
+    "forms": [
+      "facilitate"
+    ],
+    "text": "To facilitate something is to make it easier or possible — you are not doing the thing yourself, you are clearing the way for it. The master receiver does not measure anyone's position, but it could “facilitate another way of exploiting signals of opportunity” by broadcasting the information other receivers need. A good group project facilitator makes everyone else's work go smoothly.",
+    "audio": true
+  },
+  {
+    "k": "exploiting",
+    "t": "exploiting",
+    "kind": "word",
+    "forms": [
+      "exploiting"
+    ],
+    "text": "Exploit often carries a nasty edge — exploiting workers — but the neutral, older meaning is simply to make full use of a resource. “Exploiting signals of opportunity” means taking advantage of radio waves already in the air. Engineers and scientists use the word this way constantly, with no criticism intended.",
+    "audio": true
+  },
+  {
+    "k": "recipient",
+    "t": "recipient",
+    "kind": "word",
+    "forms": [
+      "recipient"
+    ],
+    "text": "A recipient is whoever or whatever receives something. The article measures how long a signal takes “to travel from source to recipient” — that is, from the satellite that sent it to the device that picks it up. You will meet the word for people too: a scholarship recipient, a transplant recipient.",
+    "audio": true
+  },
+  {
+    "k": "licensed",
+    "t": "licensed",
+    "kind": "word",
+    "forms": [
+      "licensed"
+    ],
+    "text": "To license a technology is to sell others legal permission to use it while keeping ownership — a business arrangement, not a driver's licence. Saying Matrix “has been licensed to companies and military users” means outside customers are now paying to run a system the lab invented. Software, songs and patents are all licensed this way.",
+    "audio": true
+  },
+  {
+    "k": "around-the-corner",
+    "t": "around the corner",
+    "kind": "phrase",
+    "forms": [
+      "around the corner"
+    ],
+    "text": "If something is around the corner, it is about to happen very soon — the image is of a thing you cannot see yet but will meet in a moment. The headline promises that alternatives to GPS are nearly here, not that they have arrived. Compare “just around the corner” and “the worst is behind us.”",
+    "audio": true
+  },
+  {
+    "k": "a-close-second",
+    "t": "a close second",
+    "kind": "phrase",
+    "forms": [
+      "a close second"
+    ],
+    "text": "To come a close second is to be a near-tie for first — second place, but only barely. Saying a reliable GPS signal “comes a close second” to truth as a casualty of war means it is almost the very first thing lost. You would use it the same way about a race or a vote.",
+    "audio": true
+  },
+  {
+    "k": "scores-of",
+    "t": "scores of",
+    "kind": "phrase",
+    "forms": [
+      "scores of"
+    ],
+    "text": "A score is twenty, so “scores of” means dozens upon dozens — a lot, though vaguer than an exact count. “Scores of broad GPS disruptions” means many dozens of them. It has nothing to do with points in a game, and it is the same score in Lincoln's “four score and seven years ago.”",
+    "audio": true
+  },
+  {
+    "k": "under-investigation",
+    "t": "under investigation",
+    "kind": "phrase",
+    "forms": [
+      "under investigation"
+    ],
+    "text": "Something under investigation is currently being looked into or studied. In a crime story it means police are examining a suspect, but in science writing, as here, it simply means researchers are actively testing an idea. Two methods “under investigation” are two being seriously worked on, with the verdict not yet in.",
+    "audio": true
+  },
+  {
+    "k": "work-out",
+    "t": "work out",
+    "kind": "phrase",
+    "forms": [
+      "work out",
+      "working out"
+    ],
+    "text": "In British English, to work something out is to figure it out or calculate it. “Work out the ambient magnetic field” means compute it, and “working out how long it takes” means calculating the time — no exercise involved. Americans would usually write “figure out” or “calculate.”",
+    "audio": true
+  },
+  {
+    "k": "betting-on",
+    "t": "betting on",
+    "kind": "phrase",
+    "forms": [
+      "betting on"
+    ],
+    "text": "To bet on something is to commit money or effort to it in the hope it turns out to be the winner, with real loss if it does not. Firms “betting on a different type of sensor” are spending years and millions on a technology that might lose to a rival approach. No actual gambling is going on; the risk is the point.",
+    "audio": true
+  },
+  {
+    "k": "at-its-heart",
+    "t": "at its heart",
+    "kind": "phrase",
+    "forms": [
+      "at its heart"
+    ],
+    "text": "At its heart means at the very centre, or in the most essential part. Here it is pleasingly literal as well as idiomatic: the NV-diamond magnetometer really does have a diamond at its physical centre. Used figuratively, you might say a dispute is at its heart about money.",
+    "audio": true
+  },
+  {
+    "k": "armed-forces",
+    "t": "armed forces",
+    "kind": "phrase",
+    "forms": [
+      "armed forces"
+    ],
+    "text": "A country's armed forces are its military as a whole — army, navy, air force and the rest taken together. Listing “government agencies, armed forces and researchers” names the three groups that would have to cooperate to build one global magnetic map. It is the standard formal term, which is why you see it in official documents.",
+    "audio": true
+  },
+  {
+    "k": "pressed-for",
+    "t": "pressed for",
+    "kind": "phrase",
+    "forms": [
+      "pressed for"
+    ],
+    "text": "To press for something is to push hard and repeatedly for it — urging, not merely suggesting. A regulator that “has pressed for more work” has been actively pushing researchers in that direction. Beware the different idiom “pressed for time,” which means short of it.",
+    "audio": true
+  },
+  {
+    "k": "giving-it-a-shot",
+    "t": "giving it a shot",
+    "kind": "phrase",
+    "forms": [
+      "giving it a shot"
+    ],
+    "text": "To give something a shot is to try it, especially when success is uncertain. A few teams “giving it a shot” are attempting a hard problem without any guarantee it works. The tone is casual and hopeful — you would say it about an audition or a tricky recipe.",
+    "audio": true
+  },
+  {
+    "k": "off-course",
+    "t": "off course",
+    "kind": "phrase",
+    "forms": [
+      "off course"
+    ],
+    "text": "To go off course is to stray from the intended route. Satellites that “drift off course” end up somewhere other than where the predictions put them, which is what wrecks a position calculated from their expected path. Note the spelling: off course, two words, not the very different “of course.”",
+    "audio": true
+  },
+  {
+    "k": "in-turn",
+    "t": "in turn",
+    "kind": "phrase",
+    "forms": [
+      "in turn"
+    ],
+    "text": "In turn signals a knock-on effect: one thing happens, and that in turn causes the next. A satellite drifts, and this “in turn” spoils the position estimates built on its predicted location. It can also mean one after another, as in each student read a paragraph in turn.",
+    "audio": true
+  },
+  {
+    "k": "throw-off",
+    "t": "throw off",
+    "kind": "phrase",
+    "forms": [
+      "throw off"
+    ],
+    "text": "To throw something off is to knock it out of accuracy or disrupt it. A drifting satellite “can throw off estimates of a receiver's position,” making an answer that would otherwise be right come out wrong. A single mistyped number can throw off a whole spreadsheet the same way.",
+    "audio": true
+  },
+  {
+    "k": "take-into-account",
+    "t": "take into account",
+    "kind": "phrase",
+    "forms": [
+      "take into account"
+    ],
+    "text": "To take something into account is to include it in your calculation or judgment rather than ignore it. SpaceX's orbit predictions “take into account planned manoeuvres,” which is exactly why they beat forecasts that leave them out. A teacher might take into account that you were ill during the exam.",
+    "audio": true
+  },
+  {
+    "k": "at-hand",
+    "t": "at hand",
+    "kind": "phrase",
+    "forms": [
+      "at hand"
+    ],
+    "text": "At hand means close by and available, or about to arrive. Ending on navigation that “may already be at hand in the natural and man-made signals all around us” is a deliberate double meaning: the solution is nearly here, and it is literally all around. Watch out for “the task at hand,” which instead means the job in front of you.",
+    "audio": true
+  },
+  {
+    "k": "gnss",
+    "t": "GNSS",
+    "kind": "name",
+    "forms": [
+      "GNSS",
+      "global navigation satellite system"
+    ],
+    "text": "GNSS stands for global navigation satellite system — the general name for any satellite constellation that lets a receiver work out where it is. America's GPS is the famous one, but Europe's Galileo, Russia's GLONASS and China's BeiDou are all GNSS too. The article uses GNSS whenever it means the whole category rather than the American system specifically.",
+    "audio": true
+  },
+  {
+    "k": "quantum",
+    "t": "quantum",
+    "kind": "name",
+    "forms": [
+      "quantum"
+    ],
+    "text": "Quantum physics is the branch of science describing how matter and energy behave at the scale of atoms and particles, where properties come in fixed jumps rather than smooth amounts. Calling a device a quantum sensor means it reads one of those atomic-scale properties, which is what makes it exquisitely sensitive. Quantum sensing is the whole field of building instruments on that principle.",
+    "audio": true
+  },
+  {
+    "k": "angular-momentum",
+    "t": "angular momentum",
+    "kind": "name",
+    "forms": [
+      "angular momentum"
+    ],
+    "text": "Angular momentum is the physics measure of rotational motion — how much spinning something has, accounting for its mass, speed and shape. It explains why a figure skater speeds up when she pulls her arms in. Light particles carry a version of it too, and that is the property one of these navigation methods reads.",
+    "audio": true
+  },
+  {
+    "k": "crust",
+    "t": "crust",
+    "kind": "name",
+    "forms": [
+      "crust",
+      "crustal"
+    ],
+    "text": "Earth's crust is the planet's thin, solid outer shell of rock, roughly 5 to 70 kilometres thick, sitting on the hotter mantle below. Because crustal rock contains uneven amounts of magnetic minerals, the field measured at the surface varies from place to place. The adjective is crustal, as in the crustal field these systems navigate by.",
+    "audio": true
+  },
+  {
+    "k": "magnetometer",
+    "t": "magnetometer",
+    "kind": "name",
+    "forms": [
+      "magnetometer"
+    ],
+    "text": "A magnetometer is an instrument that measures magnetic fields — their strength, and sometimes their direction. Your phone has a simple one, which is how its compass app works. The ones in this article are vastly more sensitive, because the crustal anomalies they hunt for are far weaker than Earth's overall field.",
+    "audio": true
+  },
+  {
+    "k": "magnav",
+    "t": "MagNav",
+    "kind": "name",
+    "forms": [
+      "MagNav",
+      "magnetic navigation"
+    ],
+    "text": "MagNav is short for magnetic navigation: working out where you are by measuring the local magnetic field and matching the pattern against a map. It needs two things to work — a sensitive magnetometer and an accurate map — and the second is what is currently missing. Unlike GPS, it involves receiving nothing from anybody.",
+    "audio": true
+  },
+  {
+    "k": "optically-pumped-magnetometer",
+    "t": "optically pumped magnetometer",
+    "kind": "name",
+    "forms": [
+      "optically pumped magnetometer",
+      "OPM"
+    ],
+    "text": "An optically pumped magnetometer, or OPM, measures a magnetic field using lasers and a gas of atoms. “Optically pumped” means a laser is used to push the atoms' electrons into a special, highly sensitive state; a second laser then reads how those electrons behave, which reveals the surrounding field's strength. It is called quantum sensing because the measurement depends on atomic-scale behaviour.",
+    "audio": true
+  },
+  {
+    "k": "rubidium",
+    "t": "rubidium",
+    "kind": "name",
+    "forms": [
+      "rubidium"
+    ],
+    "text": "Rubidium is a soft, silvery metal, element 37 on the periodic table. Physicists like it because its outermost electron responds cleanly and predictably to laser light and magnetic fields, which makes a vapour of rubidium atoms an excellent sensing material. Rubidium is also used in some of the world's most accurate atomic clocks.",
+    "audio": true
+  },
+  {
+    "k": "nitrogen-vacancy",
+    "t": "nitrogen-vacancy centre",
+    "kind": "name",
+    "forms": [
+      "nitrogen-vacancy",
+      "NV-diamond"
+    ],
+    "text": "A nitrogen-vacancy centre, or NV centre, is a deliberate flaw in a diamond: two neighbouring carbon atoms in the crystal are removed, one is replaced by a nitrogen atom, and the empty space beside it is the vacancy. Electrons collect around that gap, and their behaviour changes measurably in a magnetic field — so the diamond becomes a sensor. An NV-diamond magnetometer is built around these engineered defects.",
+    "audio": true
+  },
+  {
+    "k": "lattice",
+    "t": "crystal lattice",
+    "kind": "name",
+    "forms": [
+      "lattices",
+      "lattice"
+    ],
+    "text": "A crystal lattice is the repeating three-dimensional pattern in which atoms are arranged in a solid crystal — in diamond, carbon atoms fixed in a rigid, perfectly regular grid. That regularity is what makes the diamond useful here: it provides a known 3D reference frame, so an electron's behaviour can be measured against fixed directions. Salt, quartz and ice all have their own lattices.",
+    "audio": true
+  },
+  {
+    "k": "vector",
+    "t": "vector",
+    "kind": "name",
+    "forms": [
+      "vector"
+    ],
+    "text": "In maths and physics a vector is a quantity with both a size and a direction, as opposed to a plain number that has size alone. Wind speed is a number; wind speed plus which way it blows is a vector. A vector map of the magnetic field records direction as well as strength at each point, which is why it can pin down position more tightly.",
+    "audio": true
+  },
+  {
+    "k": "department-of-war",
+    "t": "Department of War",
+    "kind": "name",
+    "forms": [
+      "Department of War"
+    ],
+    "text": "The Department of War is the American government department that runs the armed forces — long known as the Department of Defence and headquartered at the Pentagon. It is by far the biggest funder of navigation research, since jamming hits military aircraft, ships and missiles first. An order from the president to explore applications is how a technology like this gets serious money.",
+    "audio": true
+  },
+  {
+    "k": "fcc",
+    "t": "Federal Communications Commission",
+    "kind": "name",
+    "forms": [
+      "Federal Communications Commission"
+    ],
+    "text": "The Federal Communications Commission, or FCC, is the American agency that regulates radio, television, phone and internet communication, including who may broadcast on which frequencies. Because signals of opportunity means using transmissions for a purpose their owners never intended, the FCC is the body with a say in it. Its pushing for more work is a signal that the idea is being taken seriously in Washington.",
+    "audio": true
+  },
+  {
+    "k": "signals-of-opportunity",
+    "t": "signals of opportunity",
+    "kind": "name",
+    "forms": [
+      "signals of opportunity"
+    ],
+    "text": "Signals of opportunity are radio transmissions already being broadcast for some other reason — internet satellites, television, mobile-phone towers — that a receiver borrows to work out where it is. The appeal is that nothing has to be launched or built, and an enemy cannot easily switch them all off. The difficulty is that they carry no navigation information, so everything must be inferred from their timing and frequency.",
+    "audio": true
+  },
+  {
+    "k": "doppler-shift",
+    "t": "Doppler shift",
+    "kind": "name",
+    "forms": [
+      "Doppler shifts",
+      "Doppler shift",
+      "Doppler"
+    ],
+    "text": "A Doppler shift is the change in a wave's measured frequency caused by motion between the source and the observer — the reason an ambulance siren sounds higher coming toward you and lower going away. Radio waves from a passing satellite shift the same way, and how fast the shift sweeps through reveals how close the satellite came to overhead. It is named after Christian Doppler, the 19th-century Austrian physicist who worked it out.",
+    "audio": true
+  },
+  {
+    "k": "starlink",
+    "t": "Starlink",
+    "kind": "name",
+    "forms": [
+      "Starlink"
+    ],
+    "text": "Starlink is SpaceX's constellation of more than 11,000 small satellites in low orbit, built to sell internet access rather than navigation. That makes it the richest source of signals of opportunity in the sky: enormous numbers of satellites, constantly overhead, all transmitting. SpaceX publishing predictions of where they will be is what makes navigating by them practical.",
+    "audio": true
+  },
+  {
+    "k": "space-force",
+    "t": "Space Force",
+    "kind": "name",
+    "forms": [
+      "Space Force"
+    ],
+    "text": "The United States Space Force is the branch of America's armed forces responsible for military operations in space, created in 2019. Among its jobs is tracking the thousands of objects in orbit and publishing that data. Its tracking is based on observed positions, so it misses planned course changes that a satellite's own operator already knows about.",
+    "audio": true
+  },
+  {
+    "k": "master-receiver",
+    "t": "master receiver",
+    "kind": "name",
+    "forms": [
+      "master receiver"
+    ],
+    "text": "A master receiver is a reference station parked at a precisely known location, so any error it measures must come from the satellites rather than from uncertainty about where it is. It compares what the signals should look like with what they actually look like and broadcasts the difference as a correction. Ordinary GPS uses the same trick, where it is called differential correction.",
+    "audio": true
+  },
+  {
+    "k": "mobile-phone-towers",
+    "t": "mobile-phone towers",
+    "kind": "name",
+    "forms": [
+      "mobile-phone towers",
+      "cell towers"
+    ],
+    "text": "Mobile-phone towers, called cell towers in American English, are the masts that carry the radio links between phones and the network. The article uses both names for the same thing in the space of two sentences. Their signals are a promising navigation source precisely because they are everywhere near the ground, where satellite signals are weakest.",
+    "audio": true
+  },
+  {
+    "k": "new-south-wales",
+    "t": "New South Wales",
+    "kind": "name",
+    "forms": [
+      "New South Wales"
+    ],
+    "text": "New South Wales is the state on Australia's south-eastern coast, containing Sydney. Q-CTRL, being an Australian firm, tested its magnetic navigation system on a flight over it. The name is a leftover from British colonisation, as are Queensland and Victoria next door.",
+    "audio": true
+  }
+]
