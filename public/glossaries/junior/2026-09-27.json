@@ -1,0 +1,536 @@
+[
+  {
+    "k": "infestation",
+    "t": "infestation",
+    "kind": "vocab",
+    "pron": "in-fess-TAY-shun",
+    "forms": [
+      "infestations",
+      "infested"
+    ],
+    "text": "An infestation is what you have when unwanted pests have moved into a place in large numbers and will not leave on their own. It is much stronger than saying there are a few bugs about: it means enough of them, breeding fast enough, that somebody needs a plan to clear them out. Here whole countries had bed-bug infestations again in the late 1990s, after decades in which almost nobody saw one.",
+    "audio": true
+  },
+  {
+    "k": "eradicate",
+    "t": "eradicate",
+    "kind": "vocab",
+    "pron": "ih-RAD-ih-kayt",
+    "forms": [
+      "eradicate"
+    ],
+    "text": "To eradicate something is to wipe it out completely, so that none of it is left anywhere. It is a stronger word than reduce: doctors say smallpox has been eradicated, which is why nobody catches it any more. The whole article turns on this difference, because pesticides pushed bed-bug numbers right down but never quite eradicated them.",
+    "audio": true
+  },
+  {
+    "k": "potent",
+    "t": "potent",
+    "kind": "vocab",
+    "pron": "POH-tunt",
+    "forms": [
+      "potent"
+    ],
+    "text": "Potent means powerful, especially when a small amount does a lot of work. People use it about medicines, smells, flavours and arguments. Here two tiny changes in a bed bug's DNA gave it potent resistance, meaning a spray that kills ordinary bed bugs barely troubled it.",
+    "audio": true
+  },
+  {
+    "k": "pesticide",
+    "t": "pesticide",
+    "kind": "word",
+    "forms": [
+      "pesticides",
+      "pesticide-resistant"
+    ],
+    "text": "A pesticide is a chemical made to kill something people treat as a pest. The ending -cide comes from the Latin word for killer, so the name says exactly what it does. Pesticides come in branches named after their target: insecticides for insects, herbicides for weeds, fungicides for mould.",
+    "audio": true
+  },
+  {
+    "k": "insecticide",
+    "t": "insecticide",
+    "kind": "word",
+    "forms": [
+      "insecticides",
+      "insecticide",
+      "insecticide-resistant"
+    ],
+    "text": "An insecticide is a pesticide aimed at insects. It is usually sprayed as a liquid that dries into a thin film on floors, walls and mattress seams; an insect walking across the film takes the chemical in through its feet and outer shell, and dies. Most household bug sprays are insecticides.",
+    "audio": true
+  },
+  {
+    "k": "pyrethroid",
+    "t": "pyrethroid",
+    "kind": "name",
+    "forms": [
+      "pyrethroid"
+    ],
+    "text": "Pyrethroids are a family of insecticides used in most household bug sprays today. They are copies, made in a factory, of a natural insect-killing chemical found in chrysanthemum flowers. They work by sticking to a protein that carries signals along an insect's nerves, so the insect loses control of its legs and dies.",
+    "audio": true
+  },
+  {
+    "k": "resistance",
+    "t": "resistance",
+    "kind": "word",
+    "forms": [
+      "resistance"
+    ],
+    "text": "Resistance here means being able to survive something that would normally kill you. A bed bug with resistance to a spray can walk across a treated floor and keep going. The same word is used for bacteria that survive antibiotics, and it always comes from a change in the body, not from practice or effort.",
+    "audio": true
+  },
+  {
+    "k": "mutation",
+    "t": "mutation",
+    "kind": "word",
+    "forms": [
+      "mutation",
+      "mutations"
+    ],
+    "text": "A mutation is a change in the DNA instructions inside a living thing, usually a mistake made when a cell copies its DNA. It is unplanned, and it is not aimed at anything useful; most mutations change nothing you would notice. Once in a long while one changes a protein in a handy way, which is what happened to the bed bugs that survived spraying.",
+    "audio": true
+  },
+  {
+    "k": "dna",
+    "t": "DNA",
+    "kind": "name",
+    "forms": [
+      "DNA"
+    ],
+    "text": "DNA is the long chemical thread inside almost every living cell that holds the instructions for building that creature. The instructions are written as a sequence of four chemical letters, and the order of those letters decides which proteins the body makes. Scientists can now read DNA cheaply, which is what let this team compare 971 bed bugs.",
+    "audio": true
+  },
+  {
+    "k": "gene",
+    "t": "gene",
+    "kind": "word",
+    "forms": [
+      "genes"
+    ],
+    "text": "A gene is one section of the DNA thread, the stretch that holds the instructions for one particular job, such as building one protein. Creatures pass copies of their genes to their young. The theory being tested here was that bed bugs from different continents had been sharing resistance genes.",
+    "audio": true
+  },
+  {
+    "k": "gene-pool",
+    "t": "gene pool",
+    "kind": "name",
+    "forms": [
+      "gene pool"
+    ],
+    "text": "The gene pool is all the genes carried by every member of a group of animals that breed with each other. If two separate groups start mixing, their gene pools blend and useful genes spread to both. The article says that if transatlantic travel really had been shuffling the gene pool, the American resistance gene should have turned up in Europe.",
+    "audio": true
+  },
+  {
+    "k": "genetic",
+    "t": "genetic",
+    "kind": "word",
+    "forms": [
+      "genetic",
+      "genetically"
+    ],
+    "text": "Genetic means to do with genes and DNA. Genetic methods are laboratory ways of reading DNA, and a genetic signature is the particular pattern of DNA differences that marks out one group of animals from another. Two groups that breed with each other become more genetically similar over time; two groups kept apart do not.",
+    "audio": true
+  },
+  {
+    "k": "super-gene",
+    "t": "super-gene",
+    "kind": "word",
+    "forms": [
+      "super-gene"
+    ],
+    "text": "Super-gene is the writer's shorthand for the unusually effective resistance gene found in American bed bugs. It is not an official term; the super- just signals that this version worked far better than the others. The point is that it stayed in America instead of spreading.",
+    "audio": true
+  },
+  {
+    "k": "super-pest",
+    "t": "super-pest",
+    "kind": "word",
+    "forms": [
+      "super-pest"
+    ],
+    "text": "A super-pest, in this article, would be a pest that survives everything we throw at it. The fear was that bed bugs from all over the world were pooling their resistance genes into one unbeatable global insect. The DNA showed that never happened.",
+    "audio": true
+  },
+  {
+    "k": "hypothesis",
+    "t": "hypothesis",
+    "kind": "word",
+    "forms": [
+      "hypothesis"
+    ],
+    "text": "A hypothesis is a specific idea you can test, phrased so that you know in advance what you would see if it were true. This one was: if bed bugs had been swapping resistance genes worldwide, bugs from everywhere should look genetically alike by the late 2000s. They did not, so the hypothesis failed.",
+    "audio": true
+  },
+  {
+    "k": "entomologist",
+    "t": "entomologist",
+    "kind": "name",
+    "forms": [
+      "entomologist"
+    ],
+    "text": "An entomologist is a scientist who studies insects. The word comes from the Greek for insect. Warren Booth is an entomologist, which is why bed bugs are his working life rather than just a nuisance.",
+    "audio": true
+  },
+  {
+    "k": "journal-of-pest-science",
+    "t": "Journal of Pest Science",
+    "kind": "name",
+    "forms": [
+      "Journal of Pest Science"
+    ],
+    "text": "This is a scientific journal: a magazine where researchers publish their results so other scientists can check the work and build on it. Before a paper appears, other experts in the field read it and argue with it, which is meant to catch mistakes. Saying a finding was reported in a journal is a signal that it has been through that check, not just announced.",
+    "audio": true
+  },
+  {
+    "k": "virginia-polytechnic",
+    "t": "Virginia Polytechnic Institute",
+    "kind": "name",
+    "forms": [
+      "Virginia Polytechnic Institute"
+    ],
+    "text": "Virginia Polytechnic Institute, usually called Virginia Tech, is a large American university in the state of Virginia. Polytechnic means it was founded to teach many practical and technical subjects, such as engineering and agriculture. Universities like it are where most research of this kind gets done.",
+    "audio": true
+  },
+  {
+    "k": "charles-darwin",
+    "t": "Charles Darwin",
+    "kind": "name",
+    "forms": [
+      "Charles Darwin"
+    ],
+    "text": "Charles Darwin was the English naturalist who, in the 1800s, worked out that species change over time because the individuals that survive best pass on more of their traits. He is the most famous name in biology. He is mentioned here because the bed bugs illustrate exactly the process he described.",
+    "audio": true
+  },
+  {
+    "k": "galapagos-finches",
+    "t": "Galapagos finches",
+    "kind": "name",
+    "forms": [
+      "Galapagos finches"
+    ],
+    "text": "The Galapagos are volcanic islands in the Pacific Ocean, far off the coast of South America. Darwin noticed that the small birds called finches there differed from island to island, especially in the shape of their beaks, because each island's birds had been cut off from the others for a very long time. They are the standard example of separated groups changing in different directions.",
+    "audio": true
+  },
+  {
+    "k": "evolution",
+    "t": "evolution",
+    "kind": "word",
+    "forms": [
+      "evolution",
+      "evolved"
+    ],
+    "text": "Evolution is the way living things change across generations, as some individuals survive and breed more than others and their traits become common. It happens to groups over many generations, never to one animal during its life. The bed bugs evolved resistance in the sense that sprayed buildings left only the survivors to breed.",
+    "audio": true
+  },
+  {
+    "k": "population",
+    "t": "population",
+    "kind": "word",
+    "forms": [
+      "populations",
+      "population"
+    ],
+    "text": "In biology a population is not people but one group of a single kind of creature living in one place and breeding among themselves. The 109 populations here are 109 separate infested buildings or areas. Keeping populations apart is the whole reason different mutations built up in different places.",
+    "audio": true
+  },
+  {
+    "k": "isolated",
+    "t": "isolated",
+    "kind": "word",
+    "forms": [
+      "isolated",
+      "isolation"
+    ],
+    "text": "Isolated means cut off and separated from others. An isolated population of bed bugs is one whose members only breed with each other, because no bugs travel between it and the next one. Islands isolate animals with water, but a city block of buildings can isolate insects almost as well.",
+    "audio": true
+  },
+  {
+    "k": "collapsed",
+    "t": "collapsed",
+    "kind": "word",
+    "forms": [
+      "collapsed"
+    ],
+    "text": "Collapsed usually makes you picture a building falling down, but numbers collapse too: it means they dropped suddenly and very steeply. Bed-bug populations collapsing means almost all the bugs died off in a short time. The word tells you the fall was fast and huge, not gradual.",
+    "audio": true
+  },
+  {
+    "k": "myth",
+    "t": "myth",
+    "kind": "word",
+    "forms": [
+      "myth"
+    ],
+    "text": "A myth is usually an old story about gods and heroes, but it also means something people talk about that is not really there any more, or never was. Going from scourge to myth means bed bugs stopped being a real problem and became just a line in a bedtime rhyme. Kids in the 1980s said the words without ever having seen one.",
+    "audio": true
+  },
+  {
+    "k": "scourge",
+    "t": "scourge",
+    "kind": "word",
+    "forms": [
+      "scourge"
+    ],
+    "text": "A scourge is something that causes widespread suffering, like a disease, a plague of insects, or a war. It is a heavy, old-fashioned word, and writers use it when they want the harm to sound serious. For centuries bed bugs really were a scourge in ordinary homes.",
+    "audio": true
+  },
+  {
+    "k": "patient",
+    "t": "patient",
+    "kind": "word",
+    "forms": [
+      "patient"
+    ],
+    "text": "At the doctor's, a patient is a sick person, but as a describing word patient means able to wait a long time without giving up. Calling the bugs patient home-grown horrors is a joke: they waited quietly in local buildings for decades before their numbers climbed again. The bugs were not actually waiting on purpose, of course.",
+    "audio": true
+  },
+  {
+    "k": "absent",
+    "t": "absent",
+    "kind": "word",
+    "forms": [
+      "absent"
+    ],
+    "text": "At school absent means someone is away, but in general it means simply not present, not there at all. Saying the American mutation was almost absent in Canada and Europe means researchers hardly ever found it in bugs from those places. That absence is the article's key evidence.",
+    "audio": true
+  },
+  {
+    "k": "exposure",
+    "t": "exposure",
+    "kind": "word",
+    "forms": [
+      "exposure"
+    ],
+    "text": "Exposure means being left open to something, with nothing in between to protect you. Bugs that survived exposure to a pesticide are ones that came into contact with the chemical and lived. You will meet the same word for exposure to cold, to sunlight, or to a disease.",
+    "audio": true
+  },
+  {
+    "k": "decline",
+    "t": "decline",
+    "kind": "word",
+    "forms": [
+      "decline"
+    ],
+    "text": "A decline is a fall or a steady drop in an amount. Drastic decline means the numbers went down a very long way. The verb can also mean to say no politely, which is a completely separate use of the same word.",
+    "audio": true
+  },
+  {
+    "k": "drastic",
+    "t": "drastic",
+    "kind": "word",
+    "forms": [
+      "drastic"
+    ],
+    "text": "Drastic means extreme and severe, going much further than usual. A drastic decline is not a small dip but a plunge. People also talk about drastic action, meaning a harsh step taken because nothing gentler will work.",
+    "audio": true
+  },
+  {
+    "k": "eliminate",
+    "t": "eliminate",
+    "kind": "word",
+    "forms": [
+      "eliminate"
+    ],
+    "text": "To eliminate something is to get rid of it entirely. It is close to eradicate, and the standfirst uses it about clearing bed bugs out of a building. In sport the same word means knocking a team out of a competition.",
+    "audio": true
+  },
+  {
+    "k": "transatlantic",
+    "t": "transatlantic",
+    "kind": "word",
+    "forms": [
+      "transatlantic"
+    ],
+    "text": "Transatlantic means crossing the Atlantic Ocean, the ocean between Europe and the Americas. Trans- is a prefix meaning across, and you will see it again in transport, transfer and transcontinental. Transatlantic travel here means flights between Europe and North America, the very thing supposed to be carrying bed bugs about.",
+    "audio": true
+  },
+  {
+    "k": "shuttling",
+    "t": "shuttling",
+    "kind": "word",
+    "forms": [
+      "shuttling"
+    ],
+    "text": "To shuttle something is to carry it back and forth between the same two places over and over, the way a bus shuttles between a car park and a stadium. The theory was that aeroplanes were shuttling bed bugs between countries in luggage. Nothing about the word suggests speed, only the repeated to and fro.",
+    "audio": true
+  },
+  {
+    "k": "shuffling",
+    "t": "shuffling",
+    "kind": "word",
+    "forms": [
+      "shuffling"
+    ],
+    "text": "Shuffling means mixing things up so they end up in a new order, as you do with a pack of cards before dealing. Shuffling the gene pool means genes from different places getting mixed together as animals from those places breed. If that had been happening, the same resistance genes should have shown up everywhere.",
+    "audio": true
+  },
+  {
+    "k": "fuelling",
+    "t": "fuelling",
+    "kind": "word",
+    "forms": [
+      "fuelling",
+      "fuels"
+    ],
+    "text": "Fuelling something means feeding it and making it grow bigger, the way petrol keeps an engine running. Nothing is actually burning here; it is a way of saying air travel was helping the rise of a resistant pest along. Island isolation fuels rapid evolution in the same sense.",
+    "audio": true
+  },
+  {
+    "k": "surged",
+    "t": "surged",
+    "kind": "word",
+    "forms": [
+      "surged"
+    ],
+    "text": "To surge is to rise suddenly and powerfully, like a wave swelling up the beach. Infestations surged means the number of them shot up quickly across many countries at once. The word always suggests a fast, strong increase rather than a slow climb.",
+    "audio": true
+  },
+  {
+    "k": "bouncing-back",
+    "t": "bouncing back",
+    "kind": "phrase",
+    "forms": [
+      "bouncing back"
+    ],
+    "text": "Bouncing back means recovering after a knock, the way a ball comes up off the ground. It is used about health, sports teams, businesses and, here, animal numbers. Bouncing back stronger than ever means the bed bugs did not just recover their numbers but returned harder to kill.",
+    "audio": true
+  },
+  {
+    "k": "got-around-to",
+    "t": "got around to",
+    "kind": "phrase",
+    "forms": [
+      "got around to"
+    ],
+    "text": "To get around to doing something is to finally do it after putting it off. Saying nobody got around to checking the theory means the job was never actually done, not that it was impossible. It is one of the article's jokes: everyone believed an idea that nobody had bothered to test.",
+    "audio": true
+  },
+  {
+    "k": "established-itself",
+    "t": "established itself",
+    "kind": "phrase",
+    "forms": [
+      "established itself"
+    ],
+    "text": "When something establishes itself, it settles into a place and becomes a permanent part of it. A gene establishing itself in European bedrooms would mean it had spread through those bed bugs and stayed. The same phrase works for a shop, a habit, or a plant in a garden.",
+    "audio": true
+  },
+  {
+    "k": "home-grown",
+    "t": "home-grown",
+    "kind": "word",
+    "forms": [
+      "home-grown"
+    ],
+    "text": "Home-grown means produced locally rather than brought in from somewhere else, as with home-grown tomatoes. Calling the bed bugs home-grown horrors rather than foreign invaders is the article's whole conclusion in two words. The resistant bugs in an American hotel came from that region, not from abroad.",
+    "audio": true
+  },
+  {
+    "k": "invaders",
+    "t": "invaders",
+    "kind": "word",
+    "forms": [
+      "invaders"
+    ],
+    "text": "Invaders are outsiders who come into a place uninvited, usually an army. Biologists borrow the word for animals and plants arriving somewhere they did not live before. The joke is that these bugs were never invaders at all; they had been there the whole time.",
+    "audio": true
+  },
+  {
+    "k": "millennia",
+    "t": "millennia",
+    "kind": "word",
+    "forms": [
+      "millennia"
+    ],
+    "text": "A millennium is a thousand years, and millennia is its plural, so for millennia means for thousands of years. Bed bugs have been feeding on sleeping humans that long, since well before there were cities. The same root gives us millennium and the word millipede, meaning a thousand feet.",
+    "audio": true
+  },
+  {
+    "k": "supping",
+    "t": "supping",
+    "kind": "word",
+    "forms": [
+      "supping"
+    ],
+    "text": "To sup is an old word for eating or drinking, related to supper and to sipping. Supping on sleeping humans is a deliberately old-fashioned way of saying the bugs drank people's blood while they slept. You would not use it about your own dinner today.",
+    "audio": true
+  },
+  {
+    "k": "mere",
+    "t": "mere",
+    "kind": "word",
+    "forms": [
+      "mere"
+    ],
+    "text": "Mere means nothing more than, and it is used to make an amount sound small or surprising. In mere decades signals that a few decades is a short time for such a big change. A mere child, a mere two dollars, and in mere seconds all work the same way.",
+    "audio": true
+  },
+  {
+    "k": "blessing",
+    "t": "blessing",
+    "kind": "word",
+    "forms": [
+      "blessing"
+    ],
+    "text": "A blessing is a short set of words wishing someone well or safe, often said at a fixed moment such as bedtime or before a meal. The bedtime blessing here is the rhyme about not letting the bed bugs bite. The same word also means a piece of good fortune, as in a blessing in disguise.",
+    "audio": true
+  },
+  {
+    "k": "reasoned",
+    "t": "reasoned",
+    "kind": "word",
+    "forms": [
+      "reasoned"
+    ],
+    "text": "To reason something out is to work it out by thinking step by step from what you already know. He reasoned that means he did not guess; he followed a chain of logic to a prediction he could test. The related noun is reasoning.",
+    "audio": true
+  },
+  {
+    "k": "contrariwise",
+    "t": "Contrariwise",
+    "kind": "word",
+    "forms": [
+      "Contrariwise"
+    ],
+    "text": "Contrariwise is a rather old-fashioned word meaning the opposite way round, or on the other hand. It signals that the next fact points in the reverse direction from the one just given: the American mutation was missing in Europe, and a European one was missing in America. Today most writers would just say the other way round.",
+    "audio": true
+  },
+  {
+    "k": "demonstrate",
+    "t": "demonstrate",
+    "kind": "word",
+    "forms": [
+      "demonstrate"
+    ],
+    "text": "To demonstrate something is to show clearly that it is true. It is not about marching in a protest, which is the other meaning of the word. Darwin's finches demonstrate island isolation, meaning they are the clearest proof of how it works.",
+    "audio": true
+  },
+  {
+    "k": "analysing",
+    "t": "analysing",
+    "kind": "word",
+    "forms": [
+      "analysing"
+    ],
+    "text": "To analyse something is to examine it closely, piece by piece, to find out what it is made of or what it means. Analysing the DNA of 971 bugs means reading each one's genetic letters and comparing them. British writers spell it analysing; Americans write analyzing.",
+    "audio": true
+  },
+  {
+    "k": "colleagues",
+    "t": "colleagues",
+    "kind": "word",
+    "forms": [
+      "colleagues"
+    ],
+    "text": "Your colleagues are the people you work with. Research almost never has a single author: he and his colleagues means a team of scientists shared the work. The word is used for jobs rather than for school friends or teammates.",
+    "audio": true
+  },
+  {
+    "k": "individual",
+    "t": "individual",
+    "kind": "word",
+    "forms": [
+      "individual",
+      "individuals"
+    ],
+    "text": "As a describing word individual means single, considered one at a time. Scientists also use it as a noun for one single creature, which is why 971 individual bugs means 971 separate insects that were each tested. Individual populations, in the standfirst, means each infested place taken on its own.",
+    "audio": true
+  }
+]

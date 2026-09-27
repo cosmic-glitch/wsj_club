@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-27",
+  "title": "Should you fear pesticide-resistant super-bed bugs?",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/23/should-you-fear-pesticide-resistant-super-bed-bugs",
+  "articlePageUrl": "/articles/junior/2026-09-27.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "infestation",
+      "partOfSpeech": "noun",
+      "pronunciation": "in-fess-TAY-shun",
+      "articleQuote": "During the late 1990s bed-bug infestations surged in Australia, Europe, North America and parts of Asia.",
+      "meaning": "An infestation is what you have when unwanted pests — insects, rats, weeds — have moved into a place in large numbers and will not leave on their own. The word is much stronger than \"a few bugs\": it means enough of them, breeding fast enough, that somebody needs a plan to get rid of them. Here it describes hotels and apartments across whole countries filling up with bed bugs again in the 1990s, after decades in which almost nobody had seen one.",
+      "examples": [
+        "The school shut the greenhouse for a week because of an aphid infestation on the tomato plants.",
+        "Our camp counsellor checked every cabin after one group reported a lice infestation."
+      ]
+    },
+    {
+      "word": "eradicate",
+      "partOfSpeech": "verb",
+      "pronunciation": "ih-RAD-ih-kayt",
+      "articleQuote": "the failure to eradicate them completely created isolated “island” populations",
+      "meaning": "To eradicate something is to wipe it out completely, so that none of it is left anywhere — not merely to make it rarer. Doctors use the word for diseases: smallpox has been eradicated, which is why nobody catches it any more. The article turns on this difference. Pesticides knocked bed-bug numbers down hard but never eradicated them, and the survivors are what came back.",
+      "examples": [
+        "Once one mint plant escapes into a garden bed it is almost impossible to eradicate, because the roots keep sending up new shoots.",
+        "The town spent three summers trying to eradicate an invasive weed from the lake before the swimming area could reopen."
+      ]
+    },
+    {
+      "word": "potent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "POH-tunt",
+      "articleQuote": "provided potent resistance against pyrethroid insecticides",
+      "meaning": "Potent means powerful — a small amount of it does a lot of work. You will meet the word used about medicines, smells, arguments and flavours, anywhere a little goes a long way. In the article, one pair of changes in the DNA of American bed bugs gave them potent resistance: those two tiny changes were enough to make a spray that kills ordinary bed bugs barely work at all.",
+      "examples": [
+        "One drop of that chilli sauce was so potent that my brother drank a whole glass of milk.",
+        "Her most potent argument for a later bedtime was the reading log she had filled in every single night."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Pesticides",
+      "articleQuote": "bed-bug populations had collapsed in rich countries in the face of modern pesticides",
+      "meaning": "By the 1950s a grown-up could spray a liquid around a bedroom and nearly every bed bug in that room would be dead by morning. Chemicals that do this are called **pesticides** — \"pest\" plus the ending *-cide*, from the Latin word for *killer*. So a pesticide is a chemical made to kill something people have decided is a pest.\n\nPesticides come in branches named after what they kill. An **insecticide** kills insects. A *herbicide* kills weeds. A *fungicide* kills mould and mildew. This story is about insecticides, and it names one family of them: pyrethroids, the kind in most household bug sprays today.\n\nHere is what physically happens. The spray dries into a thin, almost invisible film on the floorboards, the mattress seam, the edge of the skirting board. An insect walks across that film, and molecules of the chemical pass through its feet and its outer shell into its body. Inside, those molecules stick to a protein that helps carry signals along the insect's nerves. With the pesticide stuck to it, the protein cannot pass clean signals any more. The insect twitches, cannot control its legs, and dies. A dog crossing the same floor is thousands of times heavier and its body breaks these particular chemicals down quickly, so the tiny amount it picks up does it no harm.\n\nThat is the bargain in every pesticide: it is a poison chosen because it is far deadlier to the pest than to us. And because it is a chemical film rather than a trap, it keeps killing for days or weeks after the spraying stops. So when you read that a field, a mosquito net or a bedroom was \"treated\", picture a thin layer of a chosen poison left behind, waiting for something small to walk through it."
+    },
+    {
+      "name": "Mutation",
+      "articleQuote": "a double mutation found in American bed bugs, which provided potent resistance against pyrethroid insecticides, was almost absent in Canada and Europe",
+      "meaning": "Most people get this story backwards. The bed bugs that lived through a spraying did not toughen up *because* they were sprayed. They were already different before the can came out.\n\nEvery living thing carries a set of building instructions inside its cells, written in DNA as a very long sequence of four chemical letters. Those instructions decide which proteins the body builds and what shape each protein ends up. Whenever a cell copies its DNA to make a new cell it copies almost perfectly — but every so often one letter gets copied wrong, or dropped, or doubled. Biologists call that error a **mutation**. Sunlight and some chemicals can change a letter too. Either way it is unplanned and it is not aimed at anything useful. It is a typo.\n\nMost typos change nothing you would ever notice. Some wreck an important protein and the animal dies young. Once in a long while, a typo changes a protein's shape in a way that turns out to be handy. That is what happened in these bugs: two letters in the instructions for a nerve protein came out different, the protein's shape changed, and a pyrethroid molecule can no longer stick to it properly. Those bed bugs walked across a sprayed floor and kept walking.\n\nNow spray a building. Almost every bug dies. The few carrying that typo are the ones still alive, and every bed bug hatched afterwards is descended from them. The mutation did not appear because of the pesticide; the pesticide killed everything that did not already have it. The part worth keeping: a mutation is not good or bad on its own. The very same typo is worth nothing in a clean bedroom and is the most valuable thing a bed bug can own in a sprayed one."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For years the popular explanation for the bed-bug infestations of the late 1990s was that air travel was mixing bugs from different countries into one resistant global super-pest. What did Dr Booth's team find when they finally checked the DNA?",
+      "options": [
+        "Bed bugs from America, Canada and Europe all carried the same mix of anti-pesticide mutations.",
+        "Bed bugs from different places carried different genetic signatures, so their genes had not been mixing.",
+        "The bed bugs they tested had no anti-pesticide mutations at all.",
+        "European bed bugs carried the strong American double mutation as well."
+      ],
+      "answerIndex": 1,
+      "explanation": "The powerful American double mutation was almost absent in Canada and Europe — the opposite of what worldwide mixing would have produced."
+    },
+    {
+      "question": "The article says the global super-pest idea was “a great theory. So great, in fact, that nobody got around to checking it.” What finally made the check possible?",
+      "options": [
+        "Bed-bug numbers dropped far enough that scientists could count every population.",
+        "Airlines started recording which flights had carried bed bugs.",
+        "Modern genetic methods had made a job that was tricky and expensive in the 1990s much simpler.",
+        "A new pesticide was invented that only worked on resistant bugs."
+      ],
+      "answerIndex": 2,
+      "explanation": "Warren Booth realised that cheap modern DNA analysis could answer a question that had been too hard and costly to test when the theory was first proposed."
+    },
+    {
+      "question": "Dr Booth's explanation depends on the fact that decades of spraying never managed to eradicate bed bugs. What does eradicate mean?",
+      "options": [
+        "To move something to a different place",
+        "To wipe something out completely, leaving none of it behind",
+        "To make something a little weaker than before",
+        "To study something very closely"
+      ],
+      "answerIndex": 1,
+      "explanation": "Numbers fell hard but small groups survived, and it is those leftover survivors that later came back."
+    },
+    {
+      "question": "According to the Mutation card, why did some bed bugs survive a spraying that killed almost all the others?",
+      "options": [
+        "Being sprayed caused their bodies to build a tougher outer shell.",
+        "They learned which parts of the floor had been sprayed and avoided them.",
+        "They were larger than the other bugs, so the dose was too small to hurt them.",
+        "They already carried a DNA typo that changed the shape of a nerve protein, so the pesticide could not stick to it."
+      ],
+      "answerIndex": 3,
+      "explanation": "A mutation is an unplanned copying error that was present before the spraying; the spray simply killed every bug that did not happen to have it."
+    },
+    {
+      "question": "Why does the article compare surviving bed-bug populations to Charles Darwin's Galapagos finches?",
+      "options": [
+        "Both were nearly wiped out by potent modern pesticides.",
+        "Both were studied by analysing the DNA of 971 individuals.",
+        "Both ended up in groups cut off from each other, and separated groups pile up different changes over time.",
+        "Both turned out to be far more dangerous than scientists had expected."
+      ],
+      "answerIndex": 2,
+      "explanation": "Once survivors were stranded in separate buildings and separate countries, each isolated group evolved its own mutations — which is why the American and European bugs differ."
+    }
+  ]
+}
