@@ -1,12 +1,11 @@
 # Reading Club autopilot — recovery (Hetzner-only)
 
 `.bot/` is the box-local runtime for the autopilot skills — `auto-vote` (6am
-Pacific: scout → ballot → open the vote) and `auto-publish` (from 9am Pacific,
-once both tracks' votes have a ballot, noon at the latest: tally → capture →
-author → ship) for the senior track, and their junior siblings
-`auto-vote-junior` / `auto-publish-junior`, which the same per-track scripts
-run with `--track=junior` right after the senior run — one cron per phase
-drives both tracks in turn under one lock. The **code here is committed**; the **secrets are not**. If
+Pacific, ONE session for both tracks: scout once → rate for both audiences →
+split into two disjoint ballots → open both votes) and `auto-publish` /
+`auto-publish-junior` (from 9am Pacific, once both tracks' votes have a
+ballot, noon at the latest: tally → capture → author → ship, one per-track
+script run senior then junior under one lock). The **code here is committed**; the **secrets are not**. If
 the Hetzner box is lost, restore the working state on a fresh box as follows.
 
 Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
@@ -75,8 +74,7 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
 
 5. **Smoke-test** the pieces:
    ```bash
-   xvfb-run -a node --env-file=.bot/.env .bot/scout.mjs | head                  # Economist candidates (senior sections)
-   xvfb-run -a node --env-file=.bot/.env .bot/scout.mjs --track=junior | head   # the junior sections
+   xvfb-run -a node --env-file=.bot/.env .bot/scout.mjs | head                  # Economist candidates, both tracks, editors' order
    xvfb-run -a node --env-file=.bot/.env .bot/read.mjs <article-url>            # must be >400 words
    xvfb-run -a node --env-file=.bot/.env .bot/capture.mjs <article-url> 1999-01-01   # writes public/articles/1999-01-01.html + article-text/1999-01-01.txt — then delete both
    node --env-file=.env.local .bot/tally.mjs                                    # newest senior poll, read-only
@@ -84,8 +82,9 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
    node --env-file=.bot/.env .bot/notify.mjs "recovery test"                    # should hit the owner's WhatsApp DM (don't smoke-test --to=group: that is the real club group)
    ```
 
-6. **Re-arm the crons.** One line per phase; each driver runs senior then
-   junior itself. The vote driver fires at two UTC hours and gates on the
+6. **Re-arm the crons.** One line per phase. The vote driver runs one session
+   for both tracks; the publish driver runs senior then junior itself. The vote
+   driver fires at two UTC hours and gates on the
    Pacific hour (6am), so it runs once a day year-round; the publish driver
    fires at five UTC hours and lets the Pacific 9–12 firings through — it
    checks the ballots every hour and publishes the first hour both tracks
@@ -114,14 +113,15 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
 
 ## Manual runs (test any date without waiting for the cron)
 ```bash
-AUTOVOTE_FORCE=1   AUTOVOTE_DATE=YYYY-MM-DD   bash ~/wsj_club/.bot/run-auto-vote.sh          # both tracks
-AUTOVOTE_DATE=YYYY-MM-DD                      bash ~/wsj_club/.bot/vote-track.sh --track=junior   # one track, now
+AUTOVOTE_FORCE=1   AUTOVOTE_DATE=YYYY-MM-DD   bash ~/wsj_club/.bot/run-auto-vote.sh          # both tracks, now
+AUTOVOTE_FORCE=1   AUTOVOTE_TRACKS=junior AUTOVOTE_DATE=YYYY-MM-DD bash ~/wsj_club/.bot/run-auto-vote.sh   # one track (the other's live ballot stays excluded)
 AUTOPUBLISH_FORCE=1 AUTOPUBLISH_DATE=YYYY-MM-DD AUTOPUBLISH_DRY_RUN=1 bash ~/wsj_club/.bot/run-auto-publish.sh   # both tracks, no hold
 AUTOPUBLISH_HOUR=09 AUTOPUBLISH_DATE=YYYY-MM-DD bash ~/wsj_club/.bot/run-auto-publish.sh          # exercise the 9am hold
 AUTOPUBLISH_DATE=YYYY-MM-DD AUTOPUBLISH_DRY_RUN=1 bash ~/wsj_club/.bot/publish-track.sh --track=junior   # one track, now
 ```
-Logs: the drivers' `.bot/logs/run-auto-vote-<date>.log` / `run-auto-publish-<date>.log`
-(the hold decisions), the tracks' `auto-vote[-junior]-<date>.log` / `auto-publish[-junior]-<date>.log`.
+Logs: the vote run's `.bot/logs/auto-vote-<date>.log` (both tracks), the publish
+driver's `run-auto-publish-<date>.log` (the hold decisions) and the tracks'
+`auto-publish[-junior]-<date>.log`.
 A manual run queues behind a cron run in progress (the lock waits rather than
 skips). A failed publish run leaves its half-made files in a `git stash`
 (`git stash list`), and the tree back on a clean `main`.
@@ -138,9 +138,11 @@ refuses to write a teaser (exit 2) for the same reason.
 - `lib.mjs` — browser + session helpers; login check = "can I read a full article"
   (across several, so one challenged page can't fake a failure), auto-refresh via
   `.env`. Goes headed whenever `DISPLAY` is set.
-- `scout.mjs` — sweep the Economist for candidate news articles; `--track=junior`
-  sweeps the story-first sections (science, culture, the regional hubs) instead
-  of Leaders/Briefing/Finance.
+- `scout.mjs` — one sweep of the Economist for both tracks' candidate news
+  articles, homepage first: each candidate carries the editors' placement
+  (`homepageRank`, `homepageZone`, `hubs`, `published`) and its track
+  eligibility (`tracks`); output is in the editors' order. Leaders, Briefing,
+  Finance, By Invitation, 1843 and Obituary are senior-only.
 - `read.mjs` — full article text + word count.
 - `capture.mjs` — the day's article page + plain text, by running the shared
   `scripts/capture-article.js` snippet in the saved session (`--track=junior`
@@ -164,14 +166,18 @@ refuses to write a teaser (exit 2) for the same reason.
   the skill).
 - `ballots.mjs` — how many ballots each track's poll has for a date (direct
   Postgres, read-only); the publish driver's hold reads it.
-- `run-auto-vote.sh` / `run-auto-publish.sh` — the cron entrypoints, one per
-  phase, no arguments: Pacific gate → (publish: the hourly ballot hold + owner
-  DM) → run senior then junior via the per-track script → exit non-zero if
-  either failed.
-- `vote-track.sh` / `publish-track.sh --track=senior|junior` — one track's run
-  (lock → `git pull` → `xvfb-run claude -p` → outcome check; the publish one
-  also polls the live URL for up to 12 minutes and then sends the announcement
-  / owner DM). No time gate: a direct call runs the track now.
+- `run-auto-vote.sh` — the vote cron entry, no arguments: Pacific gate → OFF
+  flags → lock → `git pull` → one `xvfb-run claude -p` session (the auto-vote
+  skill, both tracks) → per-track outcome check → exit non-zero if any track
+  has neither a live vote nor a published reading. `AUTOVOTE_TRACKS` limits it
+  to one track.
+- `run-auto-publish.sh` — the publish cron entry, no arguments: Pacific gate →
+  the hourly ballot hold + owner DM → run senior then junior via
+  `publish-track.sh` → exit non-zero if either failed.
+- `publish-track.sh --track=senior|junior` — one track's publish run (lock →
+  `git pull` → `xvfb-run claude -p` → outcome check → polls the live URL for up
+  to 12 minutes → the announcement / owner DM). No time gate: a direct call
+  runs the track now.
 - `state/` — box-local hand-off between the two runs (`<date>-field.json`,
   `<date>-tally.json`, `<date>-pushed`; junior `<date>-junior-field.json`,
   `<date>-junior-tally.json`, `<date>-junior-pushed`);

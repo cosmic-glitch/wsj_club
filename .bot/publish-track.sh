@@ -162,7 +162,7 @@ else
 fi
 
 # One agentic session runs tally → capture → author → ship (the push only).
-# Same invocation shape as vote-track.sh (unattended, so no permission
+# Same invocation shape as run-auto-vote.sh (unattended, so no permission
 # prompts). A stale marker from an earlier attempt must not gate today's send.
 rm -f "$MARK"
 CLAUDE_RC=0

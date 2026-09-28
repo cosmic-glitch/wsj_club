@@ -5,7 +5,7 @@ description: Recommend JUNIOR-track (US grades 5–7) article candidates for the
 
 # WSJ Reading Club — pick a JUNIOR article (grades 5–7)
 
-You are scouting the day's **Wall Street Journal** and **The Economist** for the Junior Reading Club. This is the junior sibling of `wsj-pick-article`: same two sources, same workflow, same "you only recommend" contract; the calibration is the whole difference. The user picks one of your recommendations and invokes **`wsj-reading-junior`** with the link, or on a vote day `wsj-open-vote` takes this skill's top 5 as the junior ballot. The unattended `auto-vote-junior` skill applies the same calibration on The Economist every morning.
+You are scouting the day's **Wall Street Journal** and **The Economist** for the Junior Reading Club. This is the junior sibling of `wsj-pick-article`: same two sources, same workflow, same "you only recommend" contract; the calibration is the whole difference. The user picks one of your recommendations and invokes **`wsj-reading-junior`** with the link, or on a vote day `wsj-open-vote` takes this skill's top 5 as the junior ballot. The unattended `auto-vote` skill applies the same calibration on The Economist every morning, splitting one scouted field between the two tracks.
 
 ## Who this is for
 
@@ -25,7 +25,7 @@ Mirror the senior skill's workflow with these deltas:
 
 1. **Build the published-URL exclude list** exactly as the senior skill does: `grep -h '"articleUrl"' content/*.json content/junior/*.json`, a hit on either track disqualifies before ranking.
 
-2. **Browse both homepages** with the senior skill's login checks, sweeping with junior eyes. Collect a raw pool of 12–16 candidates; if the homepages are thin on junior stories, go to the sections where they live (Economist `/science-and-technology`, `/culture`, the regional sections; WSJ `/science`, `/sports`, `/lifestyle`). Shortlist exactly 8 on headlines and blurbs.
+2. **Browse both homepages** with the senior skill's login checks, sweeping with junior eyes and weighing placement as the senior skill does (the editors' homepage order is a ranking; a fronted piece outranks a hub-buried one of equal merit). Collect a raw pool of 12–16 candidates; if the homepages are thin on junior stories, go to the sections where they live (Economist `/science-and-technology`, `/culture`, the regional sections; WSJ `/science`, `/sports`, `/lifestyle`). Shortlist exactly 8 on headlines and blurbs.
 
 3. **Read all 8 in full** (`browser_evaluate` on `article p`) and judge from the actual text: the story, the three junior-register words, the two concepts, whether an 11-year-old can follow it, length, register, and appropriateness. Jot a one-line verdict and a rough 1–10 score per article. A dud gets dropped and replaced from the raw pool; finish having genuinely read 8.
 

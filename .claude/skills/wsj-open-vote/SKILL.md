@@ -24,6 +24,8 @@ The sections are **presentation only** — the voting modal shows light "The day
 
 The user can override the counts on either track (2–12 total is supported end-to-end).
 
+**The two tracks never share an article.** When both votes open on the same day, build them from one scouted field and put each piece on one ballot only (the same top pick on both is the failure to avoid); a piece that fits both goes to the track where it is the stronger candidate relative to that track's field, a toss-up to junior, whose fit pieces are scarcer. If one track's vote is already live, keep its candidates off the other's ballot.
+
 ## Workflow
 
 1. **Get the candidate field(s).**

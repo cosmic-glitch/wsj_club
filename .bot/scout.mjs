@@ -1,22 +1,43 @@
-// Scout The Economist for the day's candidate news articles.
-// Sweeps the homepage + a handful of section hubs, returns a deduped JSON array
-// of { url, headline, section } on stdout for the auto-vote skills to rank.
-//   node --env-file=.bot/.env .bot/scout.mjs                  # senior sections
-//   node --env-file=.bot/.env .bot/scout.mjs --track=junior   # junior sections
+// Scout The Economist for the day's candidate news articles — ONE sweep for
+// both tracks. Walks the homepage first (the editors' own ranking of the day),
+// then every section hub either track draws from, and prints a deduped JSON
+// array on stdout for the auto-vote skill to read, rate and split into the
+// two ballots:
+//   { url, headline, section, published, tracks, homepageRank, homepageZone, hubs }
+//
+//   node --env-file=.bot/.env .bot/scout.mjs
+//
+// Editorial placement (what the skill weighs):
+//   homepageRank  1-based position on the homepage in the order the editors laid
+//                 the page out (1 = the lead); null when the piece is only on a
+//                 hub. Sorted output follows it, so the top of the file is the
+//                 top of the paper.
+//   homepageZone  the homepage block the piece sits in — "front" for the
+//                 editors' lead spread and the news blocks, otherwise the
+//                 block's own heading lowercased ("stories most read by
+//                 subscribers", "discover more", "in brief").
+//   hubs          which hubs also list it ("" = the homepage). Hubs are
+//                 reverse-chronological, so a hub-only piece is one the editors
+//                 did not front today; `published` (from the URL) says how old.
+//   tracks        which ballots the piece is eligible for by section:
+//                 ["senior"] or ["senior","junior"]. Leaders, Briefing, Finance,
+//                 By Invitation, 1843 and Obituary are senior-only (argument
+//                 pieces, 3,000-word briefings and markets coverage — see the
+//                 junior picker's length and register gates).
 // Only lists candidates (works even logged-out); reading bodies is read.mjs.
 import { ensureEconSession } from "./lib.mjs";
 import { loadPublished, isPublished, recentReadings } from "./published.mjs";
 
-const trackFlag = process.argv.find((a) => a.startsWith("--track="));
-const track = trackFlag ? trackFlag.slice("--track=".length) : "senior";
-if (track !== "senior" && track !== "junior") {
-  console.error(`scout: unknown track "${track}" (senior|junior)`);
+if (process.argv.slice(2).some((a) => a.startsWith("--track="))) {
+  console.error("scout: --track is gone — one sweep now covers both tracks (each candidate carries `tracks`)");
   process.exit(1);
 }
 
-// Senior: where the argument-driven, payload-rich pieces live.
-const SENIOR_SECTIONS = [
-  "", // homepage — surfaces most of the day's spread
+// Homepage first (it sets homepageRank), then the union of both tracks' hubs:
+// the argument-driven, payload-rich sections senior draws from and the
+// story-first sections (science, culture, the regional hubs) junior draws from.
+const SECTIONS = [
+  "", // homepage — the editors' ranking of the day
   "leaders",
   "briefing",
   "finance-and-economics",
@@ -25,36 +46,20 @@ const SENIOR_SECTIONS = [
   "international",
   "culture",
   "united-states",
-];
-// Junior (grades 5–7): story-first pieces — science, culture, and the regional
-// sections' human-interest features. Leaders, Briefing and Finance are left
-// out on purpose: argument pieces, 3,000-word briefings and markets coverage
-// are senior material (see wsj-pick-article-junior's length and register gates).
-const JUNIOR_SECTIONS = [
-  "",
-  "science-and-technology",
-  "culture",
-  "international",
-  "united-states",
   "europe",
   "britain",
   "asia",
   "china",
   "the-americas",
   "middle-east-and-africa",
-  "business",
 ];
-const SECTIONS = track === "junior" ? JUNIOR_SECTIONS : SENIOR_SECTIONS;
 // Dated article path: /section/YYYY/MM/DD/slug. Skip non-text formats.
-const ARTICLE_RE = /economist\.com\/([a-z0-9-]+)\/(20\d\d)\/\d{2}\/\d{2}\/[a-z0-9-]+/i;
+const ARTICLE_RE = /economist\.com\/([a-z0-9-]+)\/(20\d\d)\/(\d{2})\/(\d{2})\/[a-z0-9-]+/i;
 // Never handout material on either track: non-text formats, chart-only stubs,
-// letters, the daily digest. Junior additionally skips the argument-driven and
-// long-form sections the homepage links to (they are senior material — see the
-// junior picker's length and register gates).
-const SKIP_SECTIONS = new Set([
-  "podcasts", "films", "interactive", "newsletters", "graphic-detail", "letters", "the-world-in-brief",
-  ...(track === "junior" ? ["leaders", "briefing", "finance-and-economics", "by-invitation", "1843", "obituary"] : []),
-]);
+// letters, the daily digest.
+const SKIP_SECTIONS = new Set(["podcasts", "films", "interactive", "newsletters", "graphic-detail", "letters", "the-world-in-brief"]);
+// Senior-only sections (see the header).
+const SENIOR_ONLY = new Set(["leaders", "briefing", "finance-and-economics", "by-invitation", "1843", "obituary"]);
 
 const { browser, ctx } = await ensureEconSession();
 const page = await ctx.newPage();
@@ -65,21 +70,51 @@ for (const s of SECTIONS) {
   try {
     await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
     await page.waitForTimeout(2500);
+    // Links in document order — on the homepage that IS the editors' order.
+    // `zone` is the heading of the enclosing <section>, if any: the homepage's
+    // lead spread and news blocks are plain divs (→ ""), while "most read",
+    // "discover more" and "in brief" are labelled sections.
     const found = await page.evaluate(() =>
-      Array.from(document.querySelectorAll("a[href]")).map((a) => ({
-        href: a.href,
-        text: (a.innerText || a.getAttribute("aria-label") || "").replace(/\s+/g, " ").trim(),
-      })),
+      Array.from(document.querySelectorAll("a[href]")).map((a) => {
+        const sec = a.closest("section");
+        const h = sec && sec.querySelector("h1,h2,h3");
+        return {
+          href: a.href,
+          text: (a.innerText || a.getAttribute("aria-label") || "").replace(/\s+/g, " ").trim(),
+          zone: h ? h.innerText.replace(/\s+/g, " ").trim().toLowerCase() : "",
+        };
+      }),
     );
-    for (const { href, text } of found) {
+    let pos = 0;
+    for (const { href, text, zone } of found) {
       const m = href.match(ARTICLE_RE);
       if (!m) continue;
       const section = m[1];
       if (SKIP_SECTIONS.has(section)) continue;
       const clean = href.split("?")[0].split("#")[0];
       const headline = text && text.length > 8 ? text : slugToTitle(clean);
-      if (!byUrl.has(clean) || (byUrl.get(clean).headline.length < 8 && headline.length > 8)) {
-        byUrl.set(clean, { url: clean, headline, section });
+      let c = byUrl.get(clean);
+      if (!c) {
+        c = {
+          url: clean,
+          headline,
+          section,
+          published: `${m[2]}-${m[3]}-${m[4]}`,
+          tracks: SENIOR_ONLY.has(section) ? ["senior"] : ["senior", "junior"],
+          homepageRank: null,
+          homepageZone: null,
+          hubs: [],
+        };
+        byUrl.set(clean, c);
+      } else if (c.headline.length < 8 && headline.length > 8) {
+        c.headline = headline;
+      }
+      if (c.hubs.includes(s)) continue; // the same link repeated on one page
+      pos++;
+      c.hubs.push(s);
+      if (s === "") {
+        c.homepageRank = pos;
+        c.homepageZone = zone || "front";
       }
     }
   } catch (e) {
@@ -98,14 +133,23 @@ function slugToTitle(url) {
 // articles, so past picks reliably resurface here looking fresh.
 const published = loadPublished();
 const all = [...byUrl.values()];
-const out = all.filter((c) => !isPublished(published, { url: c.url, title: c.headline }));
+const out = all
+  .filter((c) => !isPublished(published, { url: c.url, title: c.headline }))
+  // The editors' order: homepage pieces by rank, then hub-only pieces newest first.
+  .sort((a, b) => (a.homepageRank ?? Infinity) - (b.homepageRank ?? Infinity) || b.published.localeCompare(a.published));
 const dropped = all.filter((c) => !out.includes(c));
 if (dropped.length) {
   console.error(`scout: dropped ${dropped.length} already-published: ${dropped.map((c) => c.url).join(", ")}`);
 }
-console.error(`scout: ${out.length} Economist candidates across ${SECTIONS.length} ${track} sections (${published.count} published readings excluded)`);
-const recent = recentReadings(track, 10);
-if (recent.length) {
-  console.error(`scout: the club's last ${recent.length} ${track} readings, newest first:\n  ${recent.join("\n  ")}`);
+const onHome = out.filter((c) => c.homepageRank !== null).length;
+const juniorOk = out.filter((c) => c.tracks.includes("junior")).length;
+console.error(
+  `scout: ${out.length} Economist candidates across the homepage + ${SECTIONS.length - 1} hubs — ${onHome} on the homepage, ${juniorOk} junior-eligible (${published.count} published readings excluded)`,
+);
+for (const track of ["senior", "junior"]) {
+  const recent = recentReadings(track, 10);
+  if (recent.length) {
+    console.error(`scout: the club's last ${recent.length} ${track} readings, newest first:\n  ${recent.join("\n  ")}`);
+  }
 }
 process.stdout.write(JSON.stringify(out, null, 2) + "\n");
