@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-28",
+  "title": "China’s kids rank near the top in global school tests",
+  "articleUrl": "https://www.economist.com/china/2026/09/24/chinas-kids-rank-near-the-top-in-global-school-tests",
+  "articlePageUrl": "/articles/2026-09-28.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "devotee",
+      "partOfSpeech": "noun",
+      "pronunciation": "dev-uh-TEE",
+      "articleQuote": "Real devotees of the programme have also become familiar with another four-letter abbreviation: BSJZ.",
+      "meaning": "A devotee is someone whose interest in a thing has gone well past liking it — the person who follows it closely enough to know its history, its rules and its jargon, not just the headline result. The word comes from *devotion*, and it keeps that flavour of loyal, sustained attention rather than a passing enthusiasm. In the article the devotees are the readers who track PISA so closely that they have learned what the four letters BSJZ stand for, which is not something anyone who merely glances at the rankings would ever pick up.",
+      "examples": [
+        "Casual fans know the team’s star player; devotees can tell you who was sitting on the bench in 2019.",
+        "She’s a devotee of the series — she has read every book twice and can date any event on the timeline."
+      ]
+    },
+    {
+      "word": "yardstick",
+      "partOfSpeech": "noun",
+      "pronunciation": "YARD-stik",
+      "articleQuote": "By that yardstick China as a whole would have scored 536 on maths.",
+      "meaning": "A yardstick really was a stick a yard long, kept in a shop to measure cloth against; the word now means any agreed standard you hold something up to in order to judge it. What matters about a yardstick is that it is fixed and shared — swap the yardstick and the very same thing scores differently without having changed at all. That is exactly what happens here: measured against the raw trendline, China’s estimated maths score is 579; measured against the corrected, dragged-down trendline — **that** yardstick — it is 536.",
+      "examples": [
+        "By the yardstick of goals scored it was a poor season; by the yardstick of assists, his best ever.",
+        "Test scores are one yardstick for a school, but nobody thinks they are the only one worth using."
+      ]
+    },
+    {
+      "word": "infer",
+      "partOfSpeech": "verb",
+      "pronunciation": "in-FUR",
+      "articleQuote": "Since China’s nationwide income is known, the researchers could use this relationship to infer PISA scores for the whole country.",
+      "meaning": "To infer is to work out something nobody actually told you, using evidence you do have — it is the verb for a conclusion you *build* rather than receive. Keep it apart from **imply**, its mirror image: the speaker or the evidence implies, the listener or the researcher infers. In the article no child in China’s poorer provinces sat the test, so the researchers infer their scores instead — they know the country’s income, they know how income and scores have moved together elsewhere in China, and from those two known things they reach a number that nobody ever sat an exam to produce.",
+      "examples": [
+        "From the flour on his hands and the smell in the kitchen, I inferred he had been baking.",
+        "You can usually infer a word’s meaning from the rest of the sentence without ever looking it up."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Representative samples",
+      "articleQuote": "But they are sadly not representative of China as a whole.",
+      "meaning": "Almost 200m people live in the four places that sat the test — more people than live in Russia — and the sample is still no good. That is the thing worth getting straight, because size is the first thing everyone reaches for and it is the wrong thing.\n\nThe idea belongs to statistics and it is called a **representative sample**: a small group may stand in for a big one only if it resembles the big one in the ways that matter to whatever you are measuring. Not identical — alike. Beijing, Shanghai, Jiangsu and Zhejiang fail that test in the two ways most likely to move a school score. More of their teenagers are in academic high schools and universities than the national rate, and disposable income per person runs about 60% above the mainland average. So the 12,385 students who sat PISA are, on average, richer and further along in school than a Chinese 15-year-old picked at random. Their average is perfectly real; it just isn’t China’s.\n\nPicture it in your own school. Give a maths test to the top set only, then report the result as “our school’s average”. You could test two hundred of them and it would still be wrong — not slightly wrong, and not wrong in a direction you can’t predict. Adding more students from the same tilted pool makes the number *steadier*, not *truer*. The fix was never more students; it was students drawn from every set.\n\nWhen a sample is tilted like this, statisticians call it **selection bias**, and the tell is always the same: the rule that decided who got in is connected to the thing you are trying to measure. Here the places entered for the test are the rich, heavily-schooled ones, and wealth and schooling are exactly what lift a PISA score. So when someone quotes you an average drawn from a sample, don’t ask first how big it was — ask who was left out, and whether being left out has anything to do with what is being measured."
+    },
+    {
+      "name": "Trendlines",
+      "articleQuote": "The raw trendline between income and results suggests China would have scored highly even if every province had taken part.",
+      "meaning": "Nobody in China’s poorer provinces sat PISA, and yet the article prints a maths score for China as a whole. Where does a number like that even come from?\n\nIt comes from a **trendline**, the workhorse of statistics and economics. You start with the cases you *do* have measurements for. Different bits of China have taken PISA at different times, and at those times they sat at different levels of wealth — so each one hands you a pair of numbers: this much disposable income, that many points. Plot each pair as a dot, income along the bottom and score up the side, and the dots don’t scatter at random; they trail upward. Draw the one straight line that passes closest to all of them and you have squeezed the whole cloud into a single sentence: *around here, each extra slice of income has gone with roughly so many more points.*\n\nThe line earns its keep on the cases you never measured. China’s nationwide income **is** known. Find that income along the bottom, go up to the line, read across: 579 on maths. Nobody took that test — the line produced the number. Reading a value off a line beyond the dots you actually have is called *extrapolating*, and it is a real claim, not a free lunch: it holds only if the unmeasured case obeys the same relationship as the measured ones.\n\nWhich is why the article then does something worth stealing. Scores fell almost everywhere in 2025, and even the four rich places did worse than their income gains would have led you to expect — so the old line was sitting too high. Instead of trusting it, the writers drag the whole line down until it passes through the 2025 results they can actually see, and read China’s income off the corrected line: 536 rather than 579, still fourth in the world. That is the habit to carry away. A trendline is a summary of what has happened, never a law about what must — so before you take a prediction off one, check whether it still runs through the newest dots you have."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which parts of mainland China actually sat the 2025 PISA tests?",
+      "options": [
+        "Every province in the country",
+        "Beijing, Shanghai, Jiangsu and Zhejiang",
+        "Only the poorer inland provinces",
+        "A random sample of schools drawn from across the whole country"
+      ],
+      "answerIndex": 1,
+      "explanation": "Those four places — two mega-cities and two eastern provinces, abbreviated BSJZ — were the only mainland participants."
+    },
+    {
+      "question": "Why does the article say the BSJZ result is not a fair stand-in for China as a whole?",
+      "options": [
+        "Far too few students sat the tests there",
+        "Those places are richer and keep more teenagers in academic high schools and universities than the national rate",
+        "Students there sat an easier version of the tests",
+        "Their results were collected in 2018 rather than 2025"
+      ],
+      "answerIndex": 1,
+      "explanation": "The sample is tilted on the very things that lift a score — income and school enrolment — so its average sits above the country’s."
+    },
+    {
+      "question": "How did the researchers produce a PISA score for parts of China that never took the test?",
+      "options": [
+        "They surveyed teachers in those provinces about their students",
+        "They used the relationship between disposable income and past test scores, then read China’s nationwide income off that line",
+        "They averaged the scores of China’s neighbouring countries",
+        "They asked each provincial government to supply an estimate"
+      ],
+      "answerIndex": 1,
+      "explanation": "Past results from various bits of China gave a link between income and scores; the raw version of that line puts China at 579 on maths."
+    },
+    {
+      "question": "“By that yardstick China as a whole would have scored 536 on maths.” A yardstick is the standard you measure something against — so which standard gives 536?",
+      "options": [
+        "The raw trendline, before any adjustment",
+        "The trendline after it has been dragged down to match the actual 2025 results",
+        "BSJZ’s own maths result of 612",
+        "The average maths score across all countries that sat the test"
+      ],
+      "answerIndex": 1,
+      "explanation": "Corrected for 2025’s worse-than-expected results, the line gives China 536 rather than 579 — still fourth in the world."
+    },
+    {
+      "question": "“Since China’s nationwide income is known, the researchers could use this relationship to infer PISA scores for the whole country.” To infer something is to —",
+      "options": [
+        "hint at it without ever saying it outright",
+        "measure it directly and write down the result",
+        "work it out from evidence, without having been told it",
+        "guess at it with no evidence at all"
+      ],
+      "answerIndex": 2,
+      "explanation": "Inferring is building a conclusion out of evidence you already hold; hinting is implying, the mirror-image word."
+    }
+  ]
+}

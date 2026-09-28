@@ -1,0 +1,321 @@
+[
+  {
+    "k": "devotee",
+    "t": "devotee",
+    "kind": "vocab",
+    "pron": "dev-uh-TEE",
+    "forms": [
+      "devotees"
+    ],
+    "text": "A devotee is someone whose interest has gone past liking a thing into following it closely — the person who knows its history, its rules and its jargon rather than just the headline. The word comes from devotion and keeps that sense of loyal, sustained attention rather than passing enthusiasm. Here the devotees are readers who follow the PISA tests closely enough to have learned what the letters BSJZ stand for.",
+    "audio": true
+  },
+  {
+    "k": "yardstick",
+    "t": "yardstick",
+    "kind": "vocab",
+    "pron": "YARD-stik",
+    "forms": [
+      "yardstick"
+    ],
+    "text": "A yardstick was once literally a stick a yard long, kept in a shop for measuring cloth; it now means any agreed standard you hold something up against in order to judge it. The point of a yardstick is that it is fixed and shared, so swapping it changes the verdict even though the thing being judged has not changed at all. Measured against the raw trendline China's estimated maths score is 579; measured against the corrected one it is 536.",
+    "audio": true
+  },
+  {
+    "k": "infer",
+    "t": "infer",
+    "kind": "vocab",
+    "pron": "in-FUR",
+    "forms": [
+      "infer"
+    ],
+    "text": "To infer is to work out something nobody actually told you, using evidence you already have. Keep it apart from imply, its mirror image: evidence or a speaker implies, while a listener or a researcher infers. Nobody tested children across most of China, so the researchers infer their scores from the country's income and from the way income and scores have moved together elsewhere.",
+    "audio": true
+  },
+  {
+    "k": "pisa",
+    "t": "PISA",
+    "kind": "name",
+    "forms": [
+      "PISA"
+    ],
+    "text": "PISA is the Programme for International Student Assessment, run by the OECD, a club of mostly rich countries that gathers statistics so its members can compare themselves. Every three years it gives 15-year-olds in dozens of countries the same tests in maths, reading and science. That is what makes school systems comparable at all, since an A in one country means something quite different from an A in another.",
+    "audio": true
+  },
+  {
+    "k": "bsjz",
+    "t": "BSJZ",
+    "kind": "name",
+    "forms": [
+      "BSJZ"
+    ],
+    "text": "BSJZ is shorthand for Beijing, Shanghai, Jiangsu and Zhejiang, the only four parts of mainland China that entered students for PISA. Between them they hold almost 200m people, but they are among the richest and most heavily schooled parts of the country. That is why the article argues their score cannot stand in for China as a whole.",
+    "audio": true
+  },
+  {
+    "k": "world-bank",
+    "t": "the World Bank",
+    "kind": "name",
+    "forms": [
+      "World Bank"
+    ],
+    "text": "The World Bank is an international organisation, owned by its member countries, that lends money to poorer nations for things like roads, schools and power supplies. It is also one of the world's largest collectors of economic statistics, and that is the role it plays here. Its researchers worked out the link between income and test scores that the whole article builds on.",
+    "audio": true
+  },
+  {
+    "k": "jiangsu-zhejiang",
+    "t": "Jiangsu and Zhejiang",
+    "kind": "name",
+    "forms": [
+      "Jiangsu and Zhejiang",
+      "Jiangsu",
+      "Zhejiang"
+    ],
+    "text": "Jiangsu and Zhejiang are two provinces on China's east coast, either side of Shanghai, and both are among the country's wealthiest. Beijing and Shanghai, the other two members of BSJZ, are not provinces at all but enormous cities that report straight to the central government. Grouping the four together gives a picture of rich, coastal, urban China rather than of the country as a whole.",
+    "audio": true
+  },
+  {
+    "k": "mainland",
+    "t": "the mainland",
+    "kind": "name",
+    "forms": [
+      "mainland"
+    ],
+    "text": "The mainland means China as governed from Beijing, as distinct from Hong Kong, Macau and Taiwan, which run their own school systems and enter PISA under their own names. So a phrase like the 12,385 mainland Chinese who sat the tests deliberately leaves those places out. Keeping the distinction straight matters in almost any article about China.",
+    "audio": true
+  },
+  {
+    "k": "kurdish-region",
+    "t": "Kurdish region",
+    "kind": "name",
+    "forms": [
+      "Kurdish region"
+    ],
+    "text": "The Kurds are a people spread across Iraq, Turkey, Iran and Syria; in northern Iraq they govern a largely self-ruling region with its own parliament and its own schools. Because only that region enters students for PISA, Iraq's published score describes one corner of the country rather than the whole of it. It is the same problem the article raises about China, on a smaller scale.",
+    "audio": true
+  },
+  {
+    "k": "provinces",
+    "t": "provinces",
+    "kind": "name",
+    "forms": [
+      "provinces",
+      "province"
+    ],
+    "text": "A province is China's main administrative division, roughly what a state is in America, and there are more than twenty of them, several with more people than a large European country. They differ enormously in wealth, with the coastal provinces far richer than the inland ones. That gap is precisely why it matters which provinces sat the test.",
+    "audio": true
+  },
+  {
+    "k": "yuan",
+    "t": "yuan",
+    "kind": "name",
+    "forms": [
+      "yuan"
+    ],
+    "text": "The yuan is China's currency. Almost 70,000 yuan a year works out at about $9,700, which is why the article prints both figures side by side. Converting into dollars is what lets a reader set a Chinese income beside incomes elsewhere, and comparing incomes is the entire basis of the estimate that follows.",
+    "audio": true
+  },
+  {
+    "k": "academic-high-schools",
+    "t": "academic high schools",
+    "kind": "name",
+    "forms": [
+      "academic high schools"
+    ],
+    "text": "Chinese teenagers are sorted after middle school into academic high schools, which prepare students for the fiercely competitive university entrance exam, and vocational schools, which train them for a trade. Winning a place on the academic track is far from automatic. So a place where more teenagers are in academic high schools is a place whose 15-year-olds are, on average, further along in exactly the kind of work PISA tests.",
+    "audio": true
+  },
+  {
+    "k": "disposable-income",
+    "t": "disposable income",
+    "kind": "name",
+    "forms": [
+      "disposable income"
+    ],
+    "text": "Disposable income is what a household actually has available to spend or save — what is left after taxes and compulsory deductions come out, rather than the headline salary. Statisticians prefer it to wages because it tracks real spending power. Here it is the measurement used to rank places by wealth and then to predict their test scores.",
+    "audio": true
+  },
+  {
+    "k": "per-person",
+    "t": "per person",
+    "kind": "name",
+    "forms": [
+      "per person"
+    ],
+    "text": "Adding per person turns a total into an average by dividing it by the population; economists more often say per capita, which is Latin for by head. It is what makes places of wildly different sizes comparable. The four BSJZ locations hold some 200m people, so only a per-person figure can show that they are richer than the rest of China rather than merely bigger.",
+    "audio": true
+  },
+  {
+    "k": "levels-of-development",
+    "t": "levels of development",
+    "kind": "name",
+    "forms": [
+      "levels of development"
+    ],
+    "text": "A country's level of development is shorthand for how rich and industrialised it is, taking income per person, schooling, health and infrastructure together. The article leans on the fact that different parts of China sat PISA at different times and therefore at different levels of development. That is what supplies several income-and-score pairs to draw a line through.",
+    "audio": true
+  },
+  {
+    "k": "contingent",
+    "t": "contingent",
+    "kind": "word",
+    "forms": [
+      "contingent"
+    ],
+    "text": "A contingent is a group that forms one part of a larger gathering — the American contingent at a conference, a contingent of troops sent to join an army. Do not confuse it with the adjective in contingent on, which means dependent on something else happening. Here it means the body of students each country sent to sit the tests.",
+    "audio": true
+  },
+  {
+    "k": "sat",
+    "t": "sat (the tests)",
+    "kind": "word",
+    "forms": [
+      "sat"
+    ],
+    "text": "In British English you sit an exam, meaning you take it, so the students who sat the tests are the ones who turned up and wrote them. An American would say took the tests. It is a quiet trap, because the everyday meaning of sat makes the sentence look as though it is describing where somebody was sitting.",
+    "audio": true
+  },
+  {
+    "k": "representative",
+    "t": "representative",
+    "kind": "word",
+    "forms": [
+      "representative",
+      "represented"
+    ],
+    "text": "Representative here has nothing to do with a person who represents other people; it means typical of a larger group, resembling it closely enough to stand in for it. A sample that is not representative still gives a perfectly real number about itself — it just gives a misleading one about the whole. That is exactly the article's complaint: BSJZ's students are richer and better schooled than Chinese teenagers in general.",
+    "audio": true
+  },
+  {
+    "k": "raw",
+    "t": "raw",
+    "kind": "word",
+    "forms": [
+      "raw"
+    ],
+    "text": "Raw means not yet processed or corrected; raw data is what comes straight out of the measurement, before anyone adjusts it. The raw trendline is the line drawn through the original figures, before the writers drag it down to allow for the worldwide slump in 2025. Raw numbers are not wrong, but they have not yet been asked the awkward questions.",
+    "audio": true
+  },
+  {
+    "k": "break",
+    "t": "break (in the trend)",
+    "kind": "word",
+    "forms": [
+      "break"
+    ],
+    "text": "A break here is not a rest but a sudden discontinuity — the point where a pattern that had been holding steady stops holding. Statisticians speak of a break in a trend when figures jump or sag for some reason outside the usual relationship, as scores did almost everywhere in 2025. Spotting a break matters because every prediction built on the old pattern is now off.",
+    "audio": true
+  },
+  {
+    "k": "relationship",
+    "t": "relationship",
+    "kind": "word",
+    "forms": [
+      "relationship"
+    ],
+    "text": "A relationship in statistics is a regular link between two measurable quantities: as one rises, the other tends to rise or fall with it. Nothing personal is meant — the relationship here is between disposable income and test scores. Once such a link has been measured, you can feed in a known value of one quantity and read out an estimate of the other.",
+    "audio": true
+  },
+  {
+    "k": "programme",
+    "t": "programme",
+    "kind": "word",
+    "forms": [
+      "programme"
+    ],
+    "text": "Programme is the British spelling of program when the word means a planned scheme or a broadcast; American English uses program for everything. The programme in this sentence is PISA itself, named by the first word of its title. British spelling runs right through the piece, which is why you also meet maths and enrolment.",
+    "audio": true
+  },
+  {
+    "k": "maths",
+    "t": "maths",
+    "kind": "word",
+    "forms": [
+      "maths"
+    ],
+    "text": "Maths is the British short form of mathematics; Americans clip the same word to math. Nothing about the subject differs, only the abbreviation, which keeps the s from the end of mathematics. It is worth recognising on sight, since British publications use it constantly.",
+    "audio": true
+  },
+  {
+    "k": "enrolment",
+    "t": "enrolment",
+    "kind": "word",
+    "forms": [
+      "Enrolment",
+      "enrolls"
+    ],
+    "text": "Enrolment means signing up for something, or the number of people signed up — here, the share of teenagers registered in academic high schools and universities. British English spells it with one l, American English with two, which is why the same article later says China enrolls only some of its kids. Education statistics lean on enrolment rates constantly, because who is in school shapes every other figure.",
+    "audio": true
+  },
+  {
+    "k": "extrapolated",
+    "t": "extrapolated",
+    "kind": "word",
+    "forms": [
+      "extrapolated"
+    ],
+    "text": "To extrapolate is to extend a known pattern beyond the range you actually measured and read off a value for a case you never observed. The extrapolated maths score of 579 is not a result anybody in China achieved; it is what the income-and-score line predicts for the country's average income. Extrapolation is useful and risky in equal measure, because it assumes the pattern still holds where you cannot check it.",
+    "audio": true
+  },
+  {
+    "k": "trendline",
+    "t": "trendline",
+    "kind": "word",
+    "forms": [
+      "trendline"
+    ],
+    "text": "A trendline is the single straight line drawn through a scatter of plotted points so that it passes as close to all of them as it can, summarising the relationship in one stroke. Each point here is one part of China at one moment: its disposable income along the bottom, its PISA score up the side. Once the line exists you can enter any income and read off the score it implies.",
+    "audio": true
+  },
+  {
+    "k": "took-part",
+    "t": "took part",
+    "kind": "phrase",
+    "forms": [
+      "took part",
+      "taken part"
+    ],
+    "text": "To take part in something is to participate in it — a plain set phrase, nothing to do with taking a piece of anything. British writing uses it where an American might say participate. Which places took part is the question this entire article turns on.",
+    "audio": true
+  },
+  {
+    "k": "as-a-whole",
+    "t": "as a whole",
+    "kind": "phrase",
+    "forms": [
+      "as a whole"
+    ],
+    "text": "As a whole means taken all together, the entire thing rather than any piece of it. The phrase almost always signals a contrast with a part that has just been mentioned. Here it sets China as a whole against the four rich places that actually sat the test.",
+    "audio": true
+  },
+  {
+    "k": "second-only-to",
+    "t": "second only to",
+    "kind": "phrase",
+    "forms": [
+      "second only to"
+    ],
+    "text": "To be second only to someone is to be beaten by them and by nobody else. The phrase is praise for a runner-up, not a complaint. Chinese students came second only to Singaporeans in reading, which means every other country in the test finished below them.",
+    "audio": true
+  },
+  {
+    "k": "the-bigger-picture",
+    "t": "the bigger picture",
+    "kind": "phrase",
+    "forms": [
+      "the bigger picture"
+    ],
+    "text": "The bigger picture is the whole situation seen from a distance, rather than the single detail in front of you. Someone who tells you to look at the bigger picture is asking you to stop staring at one part and ask how it fits the whole. The World Bank researchers wanted it almost literally: not four rich places, but China entire.",
+    "audio": true
+  },
+  {
+    "k": "adjust-for",
+    "t": "adjust for",
+    "kind": "phrase",
+    "forms": [
+      "adjust for"
+    ],
+    "text": "To adjust for something is to change a figure deliberately so that a known distortion stops misleading you — you adjust wages for inflation, or test scores for a year in which everyone did badly. It is one of the most useful habits there is in handling numbers. Adjusting for the 2025 slump is what turns China's estimated 579 into 536.",
+    "audio": true
+  }
+]
