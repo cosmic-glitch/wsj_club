@@ -75,17 +75,21 @@ for (const s of SECTIONS) {
     // news", "stories most read by subscribers", "weekly edition | …"; the lead
     // spread has none (its first heading is the lead story's own linked
     // headline, which is skipped), so it comes out as "front" below.
-    const found = await page.evaluate(() =>
-      Array.from(document.querySelectorAll("a[href]")).map((a) => {
+    const found = await page.evaluate((articleRe) => {
+      const isArticleLink = (el) => el && new RegExp(articleRe, "i").test(el.href || "");
+      // A block heading is a heading that neither wraps nor sits inside an
+      // article link (a story's own headline does one or the other).
+      const isBlockHeading = (el) => !isArticleLink(el.closest("a[href]")) && !isArticleLink(el.querySelector("a[href]"));
+      return Array.from(document.querySelectorAll("a[href]")).map((a) => {
         const sec = a.closest("section");
-        const h = sec && Array.from(sec.querySelectorAll("h1,h2,h3")).find((el) => !el.closest("a[href]"));
+        const h = sec && Array.from(sec.querySelectorAll("h1,h2,h3")).find(isBlockHeading);
         return {
           href: a.href,
           text: (a.innerText || a.getAttribute("aria-label") || "").replace(/\s+/g, " ").trim(),
           zone: h ? h.innerText.replace(/\s+/g, " ").trim().toLowerCase() : "",
         };
-      }),
-    );
+      });
+    }, ARTICLE_RE.source);
     let pos = 0;
     for (const { href, text, zone } of found) {
       const m = href.match(ARTICLE_RE);
