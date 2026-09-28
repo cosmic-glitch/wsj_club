@@ -26,7 +26,7 @@
 //                 junior picker's length and register gates).
 // Only lists candidates (works even logged-out); reading bodies is read.mjs.
 import { ensureEconSession } from "./lib.mjs";
-import { loadPublished, isPublished, recentReadings } from "./published.mjs";
+import { loadPublished, publishedMatch, recentReadings } from "./published.mjs";
 
 if (process.argv.slice(2).some((a) => a.startsWith("--track="))) {
   console.error("scout: --track is gone — one sweep now covers both tracks (each candidate carries `tracks`)");
@@ -71,13 +71,14 @@ for (const s of SECTIONS) {
     await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
     await page.waitForTimeout(2500);
     // Links in document order — on the homepage that IS the editors' order.
-    // `zone` is the heading of the enclosing <section>, if any: the homepage's
-    // lead spread and news blocks are plain divs (→ ""), while "most read",
-    // "discover more" and "in brief" are labelled sections.
+    // `zone` is the enclosing <section>'s own heading, if it has one — "world
+    // news", "stories most read by subscribers", "weekly edition | …"; the lead
+    // spread has none (its first heading is the lead story's own linked
+    // headline, which is skipped), so it comes out as "front" below.
     const found = await page.evaluate(() =>
       Array.from(document.querySelectorAll("a[href]")).map((a) => {
         const sec = a.closest("section");
-        const h = sec && sec.querySelector("h1,h2,h3");
+        const h = sec && Array.from(sec.querySelectorAll("h1,h2,h3")).find((el) => !el.closest("a[href]"));
         return {
           href: a.href,
           text: (a.innerText || a.getAttribute("aria-label") || "").replace(/\s+/g, " ").trim(),
@@ -133,13 +134,20 @@ function slugToTitle(url) {
 // articles, so past picks reliably resurface here looking fresh.
 const published = loadPublished();
 const all = [...byUrl.values()];
+const dropped = [];
 const out = all
-  .filter((c) => !isPublished(published, { url: c.url, title: c.headline }))
+  .filter((c) => {
+    const hit = publishedMatch(published, { url: c.url, title: c.headline });
+    if (hit) dropped.push({ c, hit });
+    return !hit;
+  })
   // The editors' order: homepage pieces by rank, then hub-only pieces newest first.
   .sort((a, b) => (a.homepageRank ?? Infinity) - (b.homepageRank ?? Infinity) || b.published.localeCompare(a.published));
-const dropped = all.filter((c) => !out.includes(c));
 if (dropped.length) {
-  console.error(`scout: dropped ${dropped.length} already-published: ${dropped.map((c) => c.url).join(", ")}`);
+  console.error(`scout: dropped ${dropped.length} already-published: ${dropped.filter((d) => d.hit.exact).map((d) => d.c.url).join(", ")}`);
+  for (const d of dropped.filter((d) => !d.hit.exact)) {
+    console.error(`scout: dropped as a re-slugged/re-headlined repeat of "${d.hit.title}": ${d.c.url}`);
+  }
 }
 const onHome = out.filter((c) => c.homepageRank !== null).length;
 const juniorOk = out.filter((c) => c.tracks.includes("junior")).length;
