@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-28",
+  "title": "How TikTok Shop is helping create young British entrepreneurs",
+  "articleUrl": "https://www.economist.com/britain/2026/09/27/how-tiktok-shop-is-helping-create-young-british-entrepreneurs",
+  "articlePageUrl": "/articles/junior/2026-09-28.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "brisk",
+      "partOfSpeech": "adjective",
+      "pronunciation": "BRISK",
+      "articleQuote": "But business inside Funky Fidgets, a sensory-toy shop, is brisk.",
+      "meaning": "Brisk means quick and full of energy. When people say business is brisk, they mean sales are coming in fast — customers keep walking in and orders keep going out. In the article the little toy shop is busy enough that postmen come through the door three times a day just to collect parcels.",
+      "examples": [
+        "We took a brisk walk to school because we had eight minutes to get there.",
+        "The bake sale did brisk business and sold out before lunch was over."
+      ]
+    },
+    {
+      "word": "fertile",
+      "partOfSpeech": "adjective",
+      "pronunciation": "FUR-tul",
+      "articleQuote": "Outside Asia, Britain has proved unusually fertile ground for this new kind of shopping.",
+      "meaning": "Fertile soil is soil where plants grow easily and well. People borrow the word for any place or situation where something spreads fast — fertile ground for an idea, a fertile imagination. The article calls Britain fertile ground because this new way of selling caught on there faster than almost anywhere outside Asia.",
+      "examples": [
+        "Our teacher said the dark soil in the school garden was fertile, so the beans came up in a week.",
+        "A long car ride with nothing to do is fertile ground for silly arguments."
+      ]
+    },
+    {
+      "word": "ailing",
+      "partOfSpeech": "adjective",
+      "pronunciation": "AY-ling",
+      "articleQuote": "It is an early sign that this sort of commerce could give Britain’s ailing high street a lift.",
+      "meaning": "Someone who is ailing is sick and not getting better. News writers use the word for businesses, teams and whole towns that are weak and struggling, like an ailing company that loses money year after year. Here the ailing thing is Britain's town shopping streets, where shops have been closing for a long time.",
+      "examples": [
+        "My aunt flew home for a month to look after her ailing mother.",
+        "The ailing lunchtime chess club was down to three players before a new teacher took it over."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The high street",
+      "articleQuote": "Its high streets have declined faster than those of its European neighbours, and British consumers have embraced Chinese-style live commerce more readily.",
+      "meaning": "In Britain, the **high street** is not a street that sits up on a hill. It is the name for the main shopping street in the middle of a town — the row with the bakery, the bank, the shoe shop and the chemist, which is what Britain calls a pharmacy. Americans call the same thing Main Street. And when a news story says *the high street*, it usually means all of a country's town-centre shops at once, not one particular street.\n\nHere is why those shops are fragile. Picture the main street in your own town. Every shop on it pays rent for its building each month, pays the people behind the counter, and heats the place all winter. It only earns that money back if enough people walk past and come inside. When shoppers buy online instead, fewer people walk past. One shop closes, so the street looks emptier, so fewer people bother going, so the next shop has an even worse month. That is the slide Britain's high streets have been in — faster, the article says, than the shopping streets of its European neighbours.\n\nThat is why a four-hour queue outside a toy shop in Darlington counts as news. If people who found a seller on TikTok will travel up from London to stand in that line, the other shops on the street get customers walking past their windows again. So when someone says the high street is struggling, they mean the shops you can walk into are losing to the ones you tap on a screen."
+    },
+    {
+      "name": "Generations",
+      "articleQuote": "Around 57% of Gen Z and Millennials watch shopping streams such as TikTok Shop live",
+      "meaning": "Somebody has probably called you Gen Z. There is a good chance they were wrong, because these labels have nothing to do with how old you are right now. They are fixed ranges of *birth years*, and you keep yours for life.\n\nThe bands researchers usually use go like this: baby boomers, born roughly 1946 to 1964; Generation X, roughly 1965 to 1980; Millennials, roughly 1981 to 1996; Generation Z, roughly 1997 to 2012; and Generation Alpha after that. So a Millennial in 2026 is somewhere between about 30 and 45 years old — a parent, not a teenager. Most kids in middle school today are Generation Alpha, one step past Gen Z.\n\nWhy group people this way at all? Because children who grew up at the same moment met the same machines at the same age. Millennials got their first phone in high school or later; Gen Z has never lived in a house without wi-fi. Think about your own class: everyone there met a tablet at about the same age, so you all expect roughly the same things from one. Companies and researchers use the bands as a rough shortcut for that shared experience — rough being the key word, since nobody changed overnight on 1 January 1997.\n\nSo when you meet a statistic like the article's 57%, the label is not the useful part. The useful part is what it adds up to: more than half of everyone under about 45 is now comfortable buying things from a live video."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "How old was Alex when she founded Funky Fidgets, the sensory-toy shop in Darlington?",
+      "options": ["Eight", "Eleven", "Sixteen", "Twenty-one"],
+      "answerIndex": 1,
+      "explanation": "The article says it is hard to believe the firm was founded by an 11-year-old; Alex is 16 now and still runs part of the business."
+    },
+    {
+      "question": "The article says business inside the shop is “brisk.” What does brisk mean there?",
+      "options": ["Cold and unfriendly", "Careful and slow", "Quick and busy", "Barely moving at all"],
+      "answerIndex": 2,
+      "explanation": "Brisk means quick and full of energy, so brisk business means sales are coming in fast — the shop needs three postal collections a day."
+    },
+    {
+      "question": "The article calls Britain “unusually fertile ground” for this new kind of shopping. What does that mean?",
+      "options": [
+        "Britain has very good soil for farming",
+        "British shoppers were unusually slow to try it",
+        "Britain passed new laws to allow it",
+        "Britain turned out to be a place where this kind of shopping grew especially fast"
+      ],
+      "answerIndex": 3,
+      "explanation": "Fertile ground literally grows plants well; used this way it means a place where something spreads and grows quickly."
+    },
+    {
+      "question": "The article hopes this kind of selling could give Britain’s “ailing high street a lift.” Which restatement is closest?",
+      "options": [
+        "Britain should build taller shops in its town centres",
+        "Britain’s struggling town-centre shopping streets could win back customers",
+        "Britain’s busiest shops could get even busier",
+        "British shoppers should stop buying things online"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ailing means weak and struggling, and the high street is Britain’s main town-centre shopping street — so the hope is that shops losing customers get some back."
+    },
+    {
+      "question": "What do labels like “Gen Z” and “Millennials” actually describe?",
+      "options": [
+        "How old someone is right now",
+        "How much someone uses social media",
+        "The country someone grew up in",
+        "The range of years in which someone was born"
+      ],
+      "answerIndex": 3,
+      "explanation": "Generations are fixed bands of birth years — Millennials roughly 1981 to 1996, Gen Z roughly 1997 to 2012 — so a person keeps the same label as they get older."
+    }
+  ]
+}
