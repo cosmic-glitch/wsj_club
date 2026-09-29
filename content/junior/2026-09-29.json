@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-29",
+  "title": "Are weighted blankets really beneficial?",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/25/are-weighted-blankets-really-beneficial",
+  "articlePageUrl": "/articles/junior/2026-09-29.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "modest",
+      "partOfSpeech": "adjective",
+      "pronunciation": "MOD-ist",
+      "articleQuote": "Measurable gains are modest, but many users report feeling better",
+      "meaning": "Most people first meet modest as a word for someone who does not brag about how good they are. But in news writing it far more often means small in size or amount — not impressive. A modest raise, a modest crowd, a modest improvement: each one is real, but nothing to get excited about. The line under this article's headline uses it that way, warning you up front that the gains scientists could actually measure from weighted blankets turned out to be small ones.",
+      "examples": [
+        "I got a modest bump in my mile time — four seconds faster, not four minutes.",
+        "The bake sale made a modest profit, enough for new nets but nowhere near new uniforms."
+      ]
+    },
+    {
+      "word": "restrain",
+      "partOfSpeech": "verb",
+      "pronunciation": "rih-STRAYN",
+      "articleQuote": "they were inspired in part by padded “squeeze chutes” that restrain and often calm cattle during handling.",
+      "meaning": "To restrain something is to hold it back so it cannot move freely — with your arms, a strap, a collar or a gate. The same word works for holding back a feeling you would rather not show, like restraining a laugh in the middle of a test. In the article a squeeze chute is a padded pen that restrains a cow by pressing in on it from both sides while a farm worker checks it over, and the odd discovery was that the pressure often calms the animal down.",
+      "examples": [
+        "My brother had to restrain the dog by its collar while the delivery driver came up the path.",
+        "She restrained a laugh when her friend's chair squeaked loudly in the silent gym."
+      ]
+    },
+    {
+      "word": "chronic",
+      "partOfSpeech": "adjective",
+      "pronunciation": "KRON-ik",
+      "articleQuote": "In a trial involving 94 American adults with chronic pain, published in 2022, a heavier blanket did not reduce participants’ daily ratings of pain intensity.",
+      "meaning": "Chronic means lasting a long time and coming back again and again, instead of hitting once and then clearing up. Doctors sort health problems this way — a broken arm or the flu passes, while asthma and chronic pain stay for years — and outside medicine people borrow the word for any problem that never really goes away, like a chronic shortage of referees. The 94 adults in that 2022 study had pain that had been with them a long time, which is why researchers wanted to know whether a heavier blanket could change anything for them.",
+      "examples": [
+        "Our school has a chronic shortage of lockers, so all the sixth-graders share.",
+        "Grandpa has chronic back pain, so he stands up and stretches every twenty minutes."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Blinding",
+      "articleQuote": "Participants were told only that they would receive a blanket containing chains, to preserve some blinding.",
+      "meaning": "Here is the trouble with testing a blanket. You can feel how heavy your blanket is the second you climb under it. So everyone in the heavy-blanket group knows they got the thing being tested — and people who know they are getting the real treatment tend to expect it to work. That expectation then shapes what they write down on the questionnaire the next morning. The blanket may have done nothing; the expecting did the work.\n\nMedical researchers have a fix for this, and they call it **blinding**. You keep people from knowing which group they are in, so that the expectation is the same on both sides. The word is literal — you are kept in the dark about one particular fact. With pills it is easy: the control group swallows something that looks and tastes identical but has no medicine in it, and nobody can tell which they got. When the researchers handing out the pills are kept in the dark too, that is called **double-blind**.\n\nYou could run it in your own class. Say you want to know whether chewing gum helps kids concentrate on a test. If you hand gum to half the class in front of everyone, that half sits down already expecting to do well, and the other half sits down expecting to lose. So instead you give every single kid an identical sealed wrapper — some with gum inside, some with a mint that looks the same — and nobody knows which group they are in until after the test is graded. Now whatever difference shows up is the gum, not the expecting.\n\nA weighted blanket cannot be hidden like a pill. The Swedish researchers got as close as they could: every participant was told they would get a blanket with chains inside, and only the weight was different — 1.5kg of plastic chains for one group, 6kg or 8kg of metal for the other. That is why the article says *some* blinding rather than real blinding. Keep that in mind next to the result: nearly 60% of the heavy-blanket group saw their insomnia score fall by at least half, against 5% of the control group — but every one of those people could feel that theirs was the heavy blanket."
+    },
+    {
+      "name": "Hormones",
+      "articleQuote": "the rise in salivary levels of melatonin, a hormone that promotes sleep, was on average 32% greater",
+      "meaning": "This study measured sleep by having people spit into a tube. Twenty-six volunteers gave saliva samples for an hour every night before lights-out, and what the lab searched that spit for was **melatonin** — one of the body's hormones.\n\nBiologists use the word hormone for a chemical the body builds in one place and then releases into the blood. Your blood travels everywhere, so the chemical ends up everywhere, and wherever it reaches a cell with a matching socket on its surface, the chemical sticks to that socket and the cell starts behaving differently. That is the whole arrangement: a chemical made in one spot, carried by the blood, changing what happens in a completely different spot. Melatonin is built in a pea-sized gland deep in your brain called the pineal gland, and it gets built when your eyes stop seeing light. As it spreads through the blood your body temperature drops a little and you start to feel drowsy. Nothing is giving an order and nothing is deciding anything — a molecule is arriving and locking on.\n\nTwo things follow from riding around in blood. It is slow: minutes, not the instant zap of a nerve signal. And it is broad, reaching most of the body at once. That is why a hormone can shift your whole mood or your whole energy level, while a nerve moves one finger.\n\nThe article names a second hormone too — **oxytocin**, whose levels rise in people who are hugged, stroked or held, which is exactly why the researchers guessed a heavy blanket might raise it. And now you can see why scientists go to the trouble of collecting spit. Asking someone \"did you sleep well?\" gets you an opinion. Measuring the melatonin in their saliva gets you a number nobody can argue with. In the Swedish trial that number came out 32% higher under the weighted blanket — even though those same people did not end up sleeping any longer."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "In the 2023 Swedish sleep-laboratory trial, what happened to the 26 volunteers on the night they slept under a weighted blanket?",
+      "options": [
+        "They slept about an hour longer than under a normal blanket",
+        "Their melatonin rose noticeably more, but they did not sleep any longer",
+        "Their melatonin dropped and they slept worse than usual",
+        "Nothing measurable changed at all"
+      ],
+      "answerIndex": 1,
+      "explanation": "The rise in salivary melatonin — the hormone that promotes sleep — was on average 32% greater under the weighted blanket, yet those same participants did not sleep for longer."
+    },
+    {
+      "question": "The line under the headline says “Measurable gains are modest.” What does modest mean there?",
+      "options": [
+        "Kept secret from the participants",
+        "Shy about talking themselves up",
+        "Small, and not very impressive",
+        "Impossible to measure at all"
+      ],
+      "answerIndex": 2,
+      "explanation": "Besides describing a person who does not brag, modest commonly means small in amount — here, gains that are real but nothing to get excited about."
+    },
+    {
+      "question": "Weighted blankets were inspired partly by padded “squeeze chutes” that restrain cattle. What does restrain mean?",
+      "options": [
+        "Hold something back so it cannot move freely",
+        "Feed something on a careful schedule",
+        "Move something quickly from place to place",
+        "Wash and brush something clean"
+      ],
+      "answerIndex": 0,
+      "explanation": "To restrain is to hold something back from moving — the chute presses in on a cow from both sides to keep it still, and often calms it in the process."
+    },
+    {
+      "question": "A 2022 trial followed 94 American adults with chronic pain. Chronic pain is pain that…",
+      "options": [
+        "comes on suddenly right after an injury",
+        "has lasted a long time and keeps coming back",
+        "doctors can find no cause for",
+        "only shows up while a person is asleep"
+      ],
+      "answerIndex": 1,
+      "explanation": "Chronic means long-lasting and recurring rather than short and one-off, which is why doctors separate chronic conditions from a passing illness like the flu."
+    },
+    {
+      "question": "Why were all the Swedish participants told only that they would receive “a blanket containing chains”?",
+      "options": [
+        "Because the chains, not the weight, were the thing being tested",
+        "To make the blankets cheaper for the researchers to build",
+        "To guarantee that every participant received the same weight",
+        "So that the description alone would not tell anyone which group they were in"
+      ],
+      "answerIndex": 3,
+      "explanation": "That is blinding — keeping participants from knowing which group they are in, so expectation does not shape what they report; here it could only be partial, since anyone can feel how heavy their blanket is."
+    }
+  ]
+}
