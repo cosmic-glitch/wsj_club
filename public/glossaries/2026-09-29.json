@@ -1,0 +1,572 @@
+[
+  {
+    "k": "presage",
+    "t": "presage",
+    "kind": "vocab",
+    "pron": "prih-SAYJ",
+    "forms": [
+      "presage"
+    ],
+    "text": "To presage something is to be a sign that it is coming — not to cause it and not to announce it, but to be the early evidence a careful watcher reads. The word leans ominous: you presage a storm or a collapse far more often than a celebration. The subtitle says a wave of poaching may presage a transformation of the law-firm business model, and that “may” matters — partners changing firms is not the transformation itself, it is the clue from which you guess what is coming.",
+    "audio": true
+  },
+  {
+    "k": "defections",
+    "t": "defection",
+    "kind": "vocab",
+    "pron": "dih-FEK-shun",
+    "forms": [
+      "defections"
+    ],
+    "text": "A defection is a departure that counts as a desertion: someone leaves the side they belonged to, joins a rival, and the leaving itself becomes news. The word got its modern charge in the Cold War, when a scientist or a dancer who left the Soviet Union for the West was said to defect, and it keeps that sense of loyalty abandoned. Weil Gotshal suffering several defections means star partners walked out to competing firms and took their clients with them.",
+    "audio": true
+  },
+  {
+    "k": "consolidated",
+    "t": "consolidate",
+    "kind": "vocab",
+    "pron": "kun-SOL-ih-dayt",
+    "forms": [
+      "consolidated"
+    ],
+    "text": "To consolidate is to pull scattered things together into one firmer whole — you consolidate four sets of notes, or several loans into one payment. Business writing uses the same verb for a whole industry doing it: firms merge or buy each other until a crowd of competitors becomes a handful of big ones. Investment banking consolidated long ago means the many mid-sized banks of the past were absorbed into a few giants, and the article expects law firms to go the same way.",
+    "audio": true
+  },
+  {
+    "k": "affairs",
+    "t": "affairs",
+    "kind": "word",
+    "forms": [
+      "affairs"
+    ],
+    "text": "Here “affairs” does not mean events in the news or a romance. It is the old, plain sense of a business or an operation — law firms were once small affairs, meaning small concerns employing a handful of people. You still meet this sense in phrases like “a family affair” or “a modest affair”.",
+    "audio": true
+  },
+  {
+    "k": "advocate",
+    "t": "advocate",
+    "kind": "word",
+    "forms": [
+      "advocate"
+    ],
+    "text": "In everyday English an advocate is someone who argues publicly for a cause. In law it is simply an older word for a lawyer, especially one who argues cases in court, and that is the sense used of Paul Cravath. The related noun advocacy, later in the article, means the practice of arguing cases, not campaigning.",
+    "audio": true
+  },
+  {
+    "k": "shop",
+    "t": "shop",
+    "kind": "word",
+    "forms": [
+      "shop"
+    ],
+    "text": "A shop here is not a place that sells things. In business slang a shop is a firm or an office — Cravath decided his shop would grow larger, and a litigator speaks from a leading shop. You will meet the same slang in “a small design shop” or “a trading shop”.",
+    "audio": true
+  },
+  {
+    "k": "outfits",
+    "t": "outfit",
+    "kind": "word",
+    "forms": [
+      "outfits"
+    ],
+    "text": "An outfit in this sense is a company or organisation, not a set of clothes. Switching used to be confined to second-tier outfits means partners used to change jobs only between less prestigious firms. It is informal but very common in business journalism.",
+    "audio": true
+  },
+  {
+    "k": "buckling",
+    "t": "buckle",
+    "kind": "word",
+    "forms": [
+      "buckling"
+    ],
+    "text": "To buckle is to bend or give way under a load, the way a metal beam or a bicycle wheel does before it collapses outright. Saying the Cravath system is buckling pictures a structure under strain that has started to deform but has not yet fallen. Note it is the opposite of the other “buckle”, which means to fasten.",
+    "audio": true
+  },
+  {
+    "k": "command",
+    "t": "command",
+    "kind": "word",
+    "forms": [
+      "command"
+    ],
+    "text": "Besides giving orders, to command means to be able to obtain something because of your value — a price, a fee, a salary. Rainmakers jumping ship can command $20m means the market will pay them that much, so they can ask for it and get it. You see the same use in “that painting would command a high price”.",
+    "audio": true
+  },
+  {
+    "k": "anchor",
+    "t": "anchor",
+    "kind": "word",
+    "forms": [
+      "anchor"
+    ],
+    "text": "To anchor something is to give it a fixed, stable base, from the heavy hook that keeps a ship in place. Hires meant to anchor a new office are senior people brought in to be the solid centre the office is built around, bringing clients with them. The same figure of speech gives us an “anchor tenant” in a shopping centre.",
+    "audio": true
+  },
+  {
+    "k": "confined",
+    "t": "confine",
+    "kind": "word",
+    "forms": [
+      "confined"
+    ],
+    "text": "Confined here means limited or restricted to, not shut up in a room. Switching used to be confined to second-tier outfits means it happened only there and nowhere else. The heart of the word is a boundary: whatever is confined cannot get past it.",
+    "audio": true
+  },
+  {
+    "k": "speculated",
+    "t": "speculate",
+    "kind": "word",
+    "forms": [
+      "speculated"
+    ],
+    "text": "To speculate is to guess at something you cannot yet know — people in the industry have speculated that firms may one day take outside investors. Careful: in finance the same verb means to make risky bets with money, which is a different sense entirely. Here it is only talk and theory, not trading.",
+    "audio": true
+  },
+  {
+    "k": "cynical",
+    "t": "cynical",
+    "kind": "word",
+    "forms": [
+      "cynical"
+    ],
+    "text": "To be cynical is to assume that people act from self-interest rather than the noble reasons they give. When the article says fellow lawyers are more cynical, it means they do not believe the partners who say they moved for a better culture — they think it was about money. A cynic is not merely gloomy; the specific suspicion is about motives.",
+    "audio": true
+  },
+  {
+    "k": "poaching",
+    "t": "poaching",
+    "kind": "word",
+    "forms": [
+      "poaching",
+      "poach"
+    ],
+    "text": "Poaching originally meant hunting on someone else's land without permission. In business it means hiring away a rival's valuable people, and the whiff of theft is the point — the firm that trained them loses them to a competitor. The whole article is about a wave of poaching between American law firms.",
+    "audio": true
+  },
+  {
+    "k": "upstart",
+    "t": "upstart",
+    "kind": "word",
+    "forms": [
+      "upstart"
+    ],
+    "text": "An upstart is a newcomer that rises suddenly to importance, used with a hint of disapproval — the sense that it has not earned its place. Finley Kumble was an upstart that became America's second-largest firm in a few years by buying up star partners, and then collapsed. The word usually carries a warning, as it does here.",
+    "audio": true
+  },
+  {
+    "k": "droves",
+    "t": "droves",
+    "kind": "word",
+    "forms": [
+      "droves"
+    ],
+    "text": "A drove was a herd of animals being driven along a road, and in droves now means in large numbers, all moving the same way. The Cravath system produced droves of anonymous organisation men — not a few, but crowds of near-identical young lawyers. You will almost always meet the word in that phrase, “in droves”.",
+    "audio": true
+  },
+  {
+    "k": "infighting",
+    "t": "infighting",
+    "kind": "word",
+    "forms": [
+      "infighting"
+    ],
+    "text": "Infighting is fighting inside a group rather than against an outside rival — arguments between colleagues, factions or family members. Finley Kumble collapsed under the strain of huge pay packages and infighting, and the article's example is one partner smashing another's coffee table. It is the standard word for quarrels within a party, a company or a team.",
+    "audio": true
+  },
+  {
+    "k": "lucrative",
+    "t": "lucrative",
+    "kind": "word",
+    "forms": [
+      "lucrative"
+    ],
+    "text": "Lucrative means highly profitable, producing a lot of money. Kirkland's dominance of the lucrative business of advising private-equity firms is the first of its advantages, because that particular kind of work pays extremely well. The word describes the activity, not the person: a lucrative job, a lucrative contract.",
+    "audio": true
+  },
+  {
+    "k": "harbinger",
+    "t": "harbinger",
+    "kind": "word",
+    "forms": [
+      "harbinger"
+    ],
+    "text": "A harbinger is a person or event that signals something bigger coming after it — very close in meaning to presage, the verb in the article's subtitle. A harbinger once meant the servant sent ahead to arrange lodgings for a travelling household, which is exactly the image: the thing that arrives first. Scott Barshay's move in 2016 was a harbinger of the free-agent era because everything that followed looked like it.",
+    "audio": true
+  },
+  {
+    "k": "commensurate",
+    "t": "commensurate",
+    "kind": "word",
+    "forms": [
+      "commensurate"
+    ],
+    "text": "Commensurate means matching in size or importance, properly in proportion to something else. Weil Gotshal suffered defections and failed to make commensurate hires — it lost stars and did not bring in replacements of equal weight. You often meet it in job adverts: “salary commensurate with experience”.",
+    "audio": true
+  },
+  {
+    "k": "clubby",
+    "t": "clubby",
+    "kind": "word",
+    "forms": [
+      "clubby"
+    ],
+    "text": "Clubby describes a place that feels like a private members' club: friendly and comfortable for those inside, closed and a bit exclusive to everyone else. The clubby comfort of the past means the old law firm where partners knew each other for decades and outsiders rarely joined. It is mildly critical — the comfort comes with a closed door.",
+    "audio": true
+  },
+  {
+    "k": "boutiques",
+    "t": "boutique",
+    "kind": "word",
+    "forms": [
+      "boutiques"
+    ],
+    "text": "A boutique is normally a small fashion shop, but in business it means a small firm that does one specialised thing extremely well, as opposed to a giant that does everything. Litigators leaving to found tiny boutiques are setting up little firms handling court cases only. You will meet boutique investment banks and boutique consultancies the same way.",
+    "audio": true
+  },
+  {
+    "k": "specialities",
+    "t": "speciality",
+    "kind": "word",
+    "forms": [
+      "specialities"
+    ],
+    "text": "A speciality is a field someone has made their particular expertise — here, areas of law such as tax, bankruptcy or patents. Clients expecting coverage in a vast range of specialities want one firm able to handle every kind of legal problem they might have. Americans usually spell it “specialty”; the Economist is British.",
+    "audio": true
+  },
+  {
+    "k": "revenue",
+    "t": "revenue",
+    "kind": "word",
+    "forms": [
+      "revenue"
+    ],
+    "text": "Revenue is all the money coming into a business before any costs are taken out — what it billed, not what it kept. Kirkland's $10.6bn of revenue is not its profit; salaries, rent and everything else come out of that first. Keeping revenue and profit apart is one of the most useful habits when reading business news.",
+    "audio": true
+  },
+  {
+    "k": "guarantees",
+    "t": "guarantee",
+    "kind": "word",
+    "forms": [
+      "guarantees"
+    ],
+    "text": "A guarantee here is not a promise that a product will work. It is a promise of pay: a firm guarantees a new partner a certain amount for one to three years no matter what business they bring in. When the guarantee runs out, a hire who has not delivered can be let go, which is why the article mentions them.",
+    "audio": true
+  },
+  {
+    "k": "partners",
+    "t": "partner",
+    "kind": "word",
+    "forms": [
+      "partners",
+      "partner"
+    ],
+    "text": "In a law firm a partner is not just a colleague — it is an owner. Partners jointly own the firm and are paid out of whatever is left after its costs, while everyone below them draws a salary as an employee. This is why moving a partner between firms is such a big deal, and why the article calls the whole arrangement the partnership model.",
+    "audio": true
+  },
+  {
+    "k": "bottom-line",
+    "t": "the bottom line",
+    "kind": "phrase",
+    "forms": [
+      "bottom line"
+    ],
+    "text": "The bottom line is the profit figure — literally the last line of a financial statement, after all the costs have been subtracted. Saying individuals can change more than the bottom line means a star partner alters more than just how much money the firm makes. In general use it has drifted to mean “the thing that finally matters”.",
+    "audio": true
+  },
+  {
+    "k": "jumping-ship",
+    "t": "jumping ship",
+    "kind": "phrase",
+    "forms": [
+      "jumping ship"
+    ],
+    "text": "To jump ship is to leave an organisation, usually for a rival and often when things are going badly — from a sailor abandoning a vessel before the end of the voyage. Rainmakers jumping ship are the firm's biggest earners walking out to a competitor. The phrase always carries a hint of disloyalty.",
+    "audio": true
+  },
+  {
+    "k": "part-ways",
+    "t": "part ways",
+    "kind": "phrase",
+    "forms": [
+      "part ways"
+    ],
+    "text": "To part ways with someone is to end the relationship and go separate directions. In business writing it is the polite way of saying a person was dismissed — firms part ways with underperforming stars once their pay guarantee runs out. Outside work, two friends can simply part ways after years.",
+    "audio": true
+  },
+  {
+    "k": "cautionary-tale",
+    "t": "a cautionary tale",
+    "kind": "phrase",
+    "forms": [
+      "cautionary tale"
+    ],
+    "text": "A cautionary tale is a story told about something that went wrong, in order to warn people not to repeat it. Older lawyers recall the cautionary tale of Finley Kumble, the firm that poached its way to the top and then collapsed. The phrase is common in journalism whenever an old disaster is held up as a warning.",
+    "audio": true
+  },
+  {
+    "k": "by-all-accounts",
+    "t": "by all accounts",
+    "kind": "phrase",
+    "forms": [
+      "By all accounts"
+    ],
+    "text": "By all accounts means according to everyone who has spoken about it — the reports all agree, even though the writer has not confirmed it personally. By all accounts Mr Barshay has kept raking in profits signals that this is the general view rather than a verified figure. It is a useful hedge to notice in news writing.",
+    "audio": true
+  },
+  {
+    "k": "raking-in",
+    "t": "raking in",
+    "kind": "phrase",
+    "forms": [
+      "raking in"
+    ],
+    "text": "To rake in money is to collect it in large quantities and with apparent ease, from raking leaves or chips into a pile. Barshay has kept raking in profits means he continues to bring in a great deal of money for his firm. It is informal and slightly envious in tone.",
+    "audio": true
+  },
+  {
+    "k": "on-the-verge-of",
+    "t": "on the verge of",
+    "kind": "phrase",
+    "forms": [
+      "on the verge of"
+    ],
+    "text": "On the verge of something means right at the edge of it, about to reach it. A lawyer on the verge of partnership is a senior associate who is nearly good enough to be made an owner of the firm — which is the standard the AI software is being compared with. A verge was originally the grassy edge of a road.",
+    "audio": true
+  },
+  {
+    "k": "gobble-up",
+    "t": "gobble up",
+    "kind": "phrase",
+    "forms": [
+      "gobble up"
+    ],
+    "text": "To gobble up is to swallow something quickly and greedily, and in business it means to buy up other companies fast. Firms seeking outside investors in order to gobble up smaller competitors would be using the new money to take over rival firms. The word choice makes the buyer sound hungry rather than strategic.",
+    "audio": true
+  },
+  {
+    "k": "lean-and-mean",
+    "t": "lean and mean",
+    "kind": "phrase",
+    "forms": [
+      "lean and mean"
+    ],
+    "text": "Lean and mean describes an organisation kept deliberately small, efficient and tough — no spare staff, no waste. Wachtell's lean and mean operation is a firm with far fewer lawyers than its rivals that still earns enormous sums per person. The article puts it in quotation marks because it is the industry's own phrase for that strategy.",
+    "audio": true
+  },
+  {
+    "k": "equity-partners",
+    "t": "equity partners",
+    "kind": "name",
+    "forms": [
+      "equity partners",
+      "equity partner"
+    ],
+    "text": "An equity partner owns a slice of the law firm. Instead of a salary, they take a share of whatever is left at the end of the year after the firm's costs, which is why a good year can pay a partner millions and why every new equity partner makes the existing shares smaller. Equity means ownership — the same word used for shares in a company.",
+    "audio": true
+  },
+  {
+    "k": "salaried-partners",
+    "t": "salaried partners",
+    "kind": "name",
+    "forms": [
+      "salaried partners"
+    ],
+    "text": "A salaried partner carries the title of partner and the standing it gives with clients, but owns none of the firm and is paid a fixed salary like any employee. Kirkland's use of them is one of its advantages, because the firm can promote people without dividing its profits further. The distinction between salaried and equity partners is now central to how big firms are run.",
+    "audio": true
+  },
+  {
+    "k": "white-shoe",
+    "t": "white-shoe",
+    "kind": "name",
+    "forms": [
+      "white-shoe"
+    ],
+    "text": "White-shoe describes the oldest and most socially prestigious American law and banking firms, the kind long associated with wealthy east-coast graduates. The name comes from the white buckskin shoes fashionable at Ivy League universities a century ago. Calling it the world of white-shoe law signals tradition, exclusivity and money rather than any particular kind of legal work.",
+    "audio": true
+  },
+  {
+    "k": "big-law",
+    "t": "Big Law",
+    "kind": "name",
+    "forms": [
+      "Big Law"
+    ],
+    "text": "Big Law is the standard industry name for the largest American corporate law firms — the few hundred firms that advise big companies, employ thousands of lawyers and pay the highest salaries. It is not a legal term but a shorthand, like Big Tech or Big Pharma. The article's headline and its last line both use it.",
+    "audio": true
+  },
+  {
+    "k": "cravath-system",
+    "t": "the Cravath system",
+    "kind": "name",
+    "forms": [
+      "Cravath system"
+    ],
+    "text": "The Cravath system is the way of running a law firm that Paul Cravath invented around 1903 and almost every American firm copied: hire the best graduates straight out of law school, train them hard as salaried associates for years, promote the strongest to partner, and never hire senior people from outside. Everything in the article — poaching, lateral hiring, salaried partners — is a departure from it. It is named after the firm Cravath, Swaine & Moore, which still exists.",
+    "audio": true
+  },
+  {
+    "k": "kirkland-ellis",
+    "t": "Kirkland & Ellis",
+    "kind": "name",
+    "forms": [
+      "Kirkland & Ellis",
+      "Kirkland"
+    ],
+    "text": "Kirkland & Ellis is a Chicago-founded law firm that has grown into the highest-earning in the world, taking in $10.6bn of revenue in 2025. It got there by hiring partners away from rivals and by dominating legal work for private-equity firms, and it uses salaried partners rather than making every partner an owner. The article treats it as the model other firms are being pulled towards.",
+    "audio": true
+  },
+  {
+    "k": "kirklandisation",
+    "t": "Kirklandisation",
+    "kind": "name",
+    "forms": [
+      "Kirklandisation"
+    ],
+    "text": "Kirklandisation is the article's own coinage for other law firms remaking themselves in Kirkland & Ellis's image — hiring aggressively from rivals, paying stars enormous sums and using salaried partners. Turning a company's name into a process like this is a common journalistic move. Because it is invented, you will not find it in a dictionary.",
+    "audio": true
+  },
+  {
+    "k": "mergers-and-acquisitions",
+    "t": "mergers-and-acquisitions",
+    "kind": "name",
+    "forms": [
+      "mergers-and-acquisitions"
+    ],
+    "text": "Mergers and acquisitions, usually shortened to M&A, is the business of companies combining with or buying one another. An M&A lawyer negotiates and writes the agreements that make those deals work, and because the deals are huge the fees are too. Michael Aiello being a star mergers-and-acquisitions lawyer is why poaching him was news.",
+    "audio": true
+  },
+  {
+    "k": "private-equity",
+    "t": "private equity",
+    "kind": "name",
+    "forms": [
+      "private-equity"
+    ],
+    "text": "A private-equity firm raises money from large investors, uses it to buy whole companies, tries to make them more valuable over a few years and then sells them. Those deals need constant legal work, which is why advising private-equity titans is so lucrative for Kirkland. Private means the companies are bought outright rather than traded on a stock exchange.",
+    "audio": true
+  },
+  {
+    "k": "litigation",
+    "t": "litigation",
+    "kind": "name",
+    "forms": [
+      "litigation",
+      "litigators",
+      "litigator"
+    ],
+    "text": "Litigation is the part of law that deals with disputes fought out in court, as opposed to work like writing contracts or arranging deals. A litigator is a lawyer who does it. Big firms are organised into departments along these lines, which is why William Savitt is described as co-head of the litigation department.",
+    "audio": true
+  },
+  {
+    "k": "rainmakers",
+    "t": "rainmakers",
+    "kind": "name",
+    "forms": [
+      "rainmakers"
+    ],
+    "text": "A rainmaker is the person in a professional firm who brings in the clients and therefore the money, as opposed to the people who do the work once it arrives. The term borrows from figures said to be able to summon rain for a community. Rainmakers can command $20m or $30m because their clients would follow them out of the door.",
+    "audio": true
+  },
+  {
+    "k": "headhunters",
+    "t": "headhunters",
+    "kind": "name",
+    "forms": [
+      "Headhunters"
+    ],
+    "text": "A headhunter is a recruiter paid to find senior people for an employer, usually by approaching those who already have good jobs elsewhere rather than advertising. They are the professionals who make the poaching in this article happen. The name comes from the idea of going out to hunt for particular heads rather than waiting for applications.",
+    "audio": true
+  },
+  {
+    "k": "rolodexes",
+    "t": "Rolodexes",
+    "kind": "name",
+    "forms": [
+      "Rolodexes"
+    ],
+    "text": "A Rolodex was a spinning desktop wheel of cards, one per contact, that office workers used before phones and computers stored numbers. Taking your Rolodex to a new job is now a set expression meaning taking your list of clients and contacts with you. That is exactly what departing law-firm partners do, and what makes them worth so much.",
+    "audio": true
+  },
+  {
+    "k": "non-compete-agreements",
+    "t": "non-compete agreements",
+    "kind": "name",
+    "forms": [
+      "non-compete agreements"
+    ],
+    "text": "A non-compete agreement is a clause in an employment contract in which you promise that after leaving you will not work for a competitor for a set period, often a year or two. It is common in many industries and hotly argued about, because it can stop a person doing the only work they know. American lawyers are unusual in not being bound by them, which is why they can move freely and take clients along.",
+    "audio": true
+  },
+  {
+    "k": "american-bar-association",
+    "t": "the American Bar Association",
+    "kind": "name",
+    "forms": [
+      "American Bar Association"
+    ],
+    "text": "The American Bar Association is the legal profession's own national body in the United States — lawyers collectively setting standards for lawyers, rather than a government agency. Its rules are why non-compete agreements are not used in American law, on the principle that clients must be free to keep the lawyer they trust. A bar, in this sense, is the body of qualified lawyers.",
+    "audio": true
+  },
+  {
+    "k": "pro-bono",
+    "t": "pro bono",
+    "kind": "name",
+    "forms": [
+      "pro bono"
+    ],
+    "text": "Pro bono is legal work done free of charge for people or causes that could not otherwise afford it, from the Latin pro bono publico, “for the public good”. Large firms normally choose their own pro bono causes, so Paul Weiss agreeing to do such work for causes approved by the administration is the striking detail. It is the standard term across the profession.",
+    "audio": true
+  },
+  {
+    "k": "executive-order",
+    "t": "an executive order",
+    "kind": "name",
+    "forms": [
+      "executive order"
+    ],
+    "text": "An executive order is an instruction issued by the American president to the federal government, which has legal force without needing a vote in Congress. It can direct agencies how to act but cannot override a law they have passed. Mr Trump signing one targeting Paul Weiss meant the firm suddenly faced official action from the government it also argues cases against.",
+    "audio": true
+  },
+  {
+    "k": "free-agent",
+    "t": "the free-agent era",
+    "kind": "name",
+    "forms": [
+      "free-agent"
+    ],
+    "text": "In American professional sport a free agent is a player whose contract has ended and who may sign with any team, usually for the highest offer. Calling this the free-agent era in law says partners now behave the same way — loyal to no firm, available to whoever pays most. It is the same comparison as the article's line about white-shoe law looking like a sports league.",
+    "audio": true
+  },
+  {
+    "k": "lateral-hiring",
+    "t": "lateral hiring",
+    "kind": "name",
+    "forms": [
+      "lateral hiring",
+      "lateral hires"
+    ],
+    "text": "A lateral hire is someone brought in from outside at the same senior level, rather than promoted up through the firm — moving sideways instead of upwards. It is the exact opposite of the Cravath system, which filled its senior ranks only from within. More than 60% of lateral hires fail to bring in the business they promised, which is why the strategy is risky.",
+    "audio": true
+  },
+  {
+    "k": "weil-gotshal",
+    "t": "Weil Gotshal",
+    "kind": "name",
+    "forms": [
+      "Weil Gotshal"
+    ],
+    "text": "Weil Gotshal, short for Weil, Gotshal & Manges, is a large New York law firm. Like Cravath, Swaine & Moore and Wachtell, Lipton, Rosen & Katz, the string of surnames is simply the firm's name, made from the partners who founded it. In the article it is the firm losing people, and it is now reported to be looking for a merger.",
+    "audio": true
+  },
+  {
+    "k": "finley-kumble",
+    "t": "Finley Kumble",
+    "kind": "name",
+    "forms": [
+      "Finley Kumble"
+    ],
+    "text": "Finley Kumble was a New York law firm that grew in the 1970s and 1980s into America's second-largest by hiring star partners away from rivals, then collapsed in 1988 under the weight of their pay packages and the quarrelling that followed. It is the standard warning story in the profession about growth by poaching. The article raises it to ask whether today's wave will end the same way.",
+    "audio": true
+  }
+]

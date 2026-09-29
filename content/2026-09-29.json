@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-29",
+  "title": "Big law is being shaken up—and not by AI",
+  "articleUrl": "https://www.economist.com/business/2026/09/28/big-law-is-being-shaken-up-and-not-by-ai",
+  "articlePageUrl": "/articles/2026-09-29.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "presage",
+      "partOfSpeech": "verb",
+      "pronunciation": "prih-SAYJ",
+      "articleQuote": "A wave of poaching may presage a transformation of American law firms’ business model",
+      "meaning": "To presage something is to be a sign that it is coming — not to cause it, and not to announce it, but to be the early evidence a careful watcher reads. It carries a faint weight of the ominous: you presage a storm or a collapse far more often than a party. The article’s subtitle says a wave of poaching *may* presage a transformation of the law-firm business model, and that hedge is doing real work — partners jumping between firms is not itself the transformation, it is the thing you notice first and from which you guess what is coming.",
+      "examples": [
+        "The queue already stretching round the block at 7am presaged a chaotic first day of ticket sales.",
+        "Losing three straight home games in September presaged a season the coach would rather forget."
+      ]
+    },
+    {
+      "word": "defection",
+      "partOfSpeech": "noun",
+      "pronunciation": "dih-FEK-shun",
+      "articleQuote": "After suffering several defections and failing to make commensurate hires, Weil Gotshal is reportedly shopping around for a merger.",
+      "meaning": "A defection is a departure that reads as a desertion: someone leaves the side they belonged to, joins a rival, and the leaving itself becomes the news. The word got its modern charge in the Cold War, when a scientist or a dancer who left the Soviet Union for the West was said to **defect**, and it keeps that sense of abandoned loyalty — a politician who crosses to the other party defects, while an employee who simply retires does not. In the article Weil Gotshal has suffered several defections, meaning star partners walked out to competing firms and took their clients with them.",
+      "examples": [
+        "Two of the team’s best players announced defections to the school across town, and the coach found out from Instagram.",
+        "The party kept its majority through the election but not through the defections that followed it."
+      ]
+    },
+    {
+      "word": "consolidate",
+      "partOfSpeech": "verb",
+      "pronunciation": "kun-SOL-ih-dayt",
+      "articleQuote": "Investment banking ditched large-scale equity partnership and consolidated long ago.",
+      "meaning": "In everyday use, to consolidate is to pull scattered things together into one firmer whole — you consolidate four sets of notes before an exam, or consolidate several loans into a single monthly payment. Business writing uses the same verb for a whole industry doing that: firms merge or buy one another until what was once a crowd of competitors is a handful of large ones. That is the sense in the article’s last lines — investment banking consolidated long ago, meaning the many mid-sized banks of the past were absorbed into a few giants, and the piece expects law firms to follow.",
+      "examples": [
+        "She consolidated her four half-finished essays into one that was actually worth handing in.",
+        "Streaming has consolidated: the dozens of services people signed up for a few years ago are now mostly owned by a few companies."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Equity partners",
+      "articleQuote": "Another is its use of “salaried partners”, who unlike traditional equity partners have no ownership stake.",
+      "meaning": "Kirkland & Ellis took in $10.6bn in 2025, and the article is careful never to call that profit or to say where it went. That gap is worth closing first, because a big law firm is not owned the way a company you can buy shares in is owned.\n\nThe field here is business organisation — how a firm is *owned*, which is a separate question from what it sells. Most large businesses are companies: shareholders own them, and everyone who works there, from the newest hire to the chief executive, is an employee drawing a salary. A **partnership** works the other way round. The firm is owned by a group of the senior people working inside it — the **partners** — and there are no outside shareholders at all. A young lawyer joins as an **associate**, an ordinary salaried employee. If they are good enough for long enough they are made partner, which is not merely a title: they buy in, own a slice of the firm, and from then on are paid out of whatever is left at the end of the year rather than out of a payroll. That is why the industry measures itself in *profit per equity partner* — take the money left after the bills and divide it by the number of owners.\n\nDividing a fixed pot is the whole tension in this article. Every new equity partner makes every existing share smaller, which is why firms guarded the title — and why Kirkland’s answer was the **salaried partner**, who gets the business card and the client-facing title but no ownership stake and no share of the pot. It also explains pay packages of $20m and $30m: to pull a rainmaker out of a partnership you have to beat what their ownership stake already pays them, and that figure has no ceiling written into a salary band the way an employee’s does.\n\nPartnerships are everywhere once you know to look — the big accounting firms, consultancies, medical practices, architecture studios. So whenever you read that a firm’s “partners” did something, read it as *the owners did something*, and then ask the question this article ends on: what changes if the owners ever decide to sell to outsiders instead?"
+    },
+    {
+      "name": "Non-compete agreements",
+      "articleQuote": "Because the American Bar Association, a professional body, prevents non-compete agreements, lawyers are free to take their Rolodexes to a new job.",
+      "meaning": "One clause in that sentence is holding up the entire story, and it is easy to read straight past: lawyers are free to take their contacts to a new job. In most industries they would not be.\n\nA **non-compete agreement** is a term buried in an employment contract — the field is employment law — in which you agree that after you leave you will not work for a competitor, usually for a stated period and within a stated area. Twelve months, say, anywhere in the country. Sign it and handing in your notice does not set you free; it starts a clock. The employer’s case for it is not unreasonable: they trained you, introduced you to their customers and showed you how the business runs, and they would rather none of that walked over to a rival on Monday. The case against is that it can stop a person doing the only work they know how to do. Which is why courts in different states enforce these clauses very differently, and why in 2024 America’s Federal Trade Commission tried to ban most of them outright.\n\nPut the same rule on a summer job and you can feel it. You spend three months learning the espresso machine and getting to know the regulars; a non-compete would mean you cannot take a better-paid job at any café within ten miles until next spring. The skill is real and the customers do like you — but none of it is yours to sell.\n\nLaw is the rare industry that opted out. The American Bar Association — the profession’s own rule-making body, not the government — bars these clauses, on the reasoning that a client must be free to keep the lawyer they trust. The article then shows you exactly what that does to a market: when no contract holds anyone in place, every good partner is permanently for sale, clients attach themselves to individuals rather than to letterheads, and pay climbs towards $20m or $30m because nothing stops a rival from bidding. That is the transferable part — when you wonder why people in one industry move around freely and in another they seem stuck, look first at what they signed on the way in."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What was the “Cravath system” that nearly every American law firm went on to adopt?",
+      "options": [
+        "Hiring the brightest graduates straight from law school, pushing them hard for years, and making the best of them partners",
+        "Recruiting experienced partners away from rival firms with large pay guarantees",
+        "Paying every lawyer in the firm the same amount regardless of the business they brought in",
+        "Selling shares in the firm to outside investors in order to fund expansion"
+      ],
+      "answerIndex": 0,
+      "explanation": "Paul Cravath’s idea, from 1903, was to grow a firm from within — hire the best out of law school, work them hard, and promote the strongest to partner."
+    },
+    {
+      "question": "What makes a “salaried partner” at Kirkland & Ellis different from a traditional equity partner?",
+      "options": [
+        "A salaried partner is allowed to work only for private-equity clients",
+        "A salaried partner has no ownership stake in the firm",
+        "A salaried partner is paid less than a first-year associate",
+        "A salaried partner is hired on a one- to three-year guarantee"
+      ],
+      "answerIndex": 1,
+      "explanation": "Equity partners own a slice of the firm and are paid out of what it has left at the end of the year; salaried partners hold the title and draw a salary but own nothing."
+    },
+    {
+      "question": "According to the article, why are American lawyers free to take their client contacts with them to a rival firm?",
+      "options": [
+        "Client lists are public records that any firm is entitled to use",
+        "Federal law has banned non-compete agreements in every American industry",
+        "The American Bar Association prevents non-compete agreements",
+        "Law firms cannot afford the lawsuits it would take to enforce their contracts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The ABA — the profession’s own body — bars non-competes, so nothing in a departing lawyer’s contract stops them carrying their contacts elsewhere."
+    },
+    {
+      "question": "The article’s subtitle says a wave of poaching may *presage* a transformation of law firms’ business model. What does presage mean?",
+      "options": [
+        "To be an early sign of something that is coming",
+        "To delay something that would otherwise happen quickly",
+        "To announce a decision formally and in advance",
+        "To prevent a change by removing what causes it"
+      ],
+      "answerIndex": 0,
+      "explanation": "To presage is to be the early evidence that something is on its way — a sign, not a cause and not an announcement."
+    },
+    {
+      "question": "The article ends by comparing law firms with investment banking. What does it expect big law to become?",
+      "options": [
+        "Thousands of tiny boutiques, each with a handful of lawyers",
+        "Firms run by artificial-intelligence software rather than by lawyers",
+        "An industry of fewer, bigger firms that may one day take outside investors",
+        "A return to the seniority-based pay structure that Wachtell has used"
+      ],
+      "answerIndex": 2,
+      "explanation": "Investment banking gave up large-scale equity partnership and consolidated into a few giants long ago, and the article expects law to follow the same path."
+    }
+  ]
+}
