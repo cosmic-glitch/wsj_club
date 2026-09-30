@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-30",
+  "title": "A new device helps severely paralysed patients communicate",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/14/a-new-device-helps-severely-paralysed-patients-communicate",
+  "articlePageUrl": "/articles/junior/2026-09-30.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "incision",
+      "partOfSpeech": "noun",
+      "pronunciation": "in-SIZH-un",
+      "articleQuote": "through a small incision in the skull of each patient",
+      "meaning": "An incision is a cut made on purpose with a sharp blade, almost always by a surgeon during an operation. The word carries the idea of care and control: not a scrape or a tear, but a planned opening of exactly the size the job needs. Here the surgeons made a small incision in the skull so they could slide the sensors in without opening more of the head than they had to.",
+      "examples": [
+        "My cousin's appendix operation left a two-inch incision that is now just a thin white line.",
+        "The vet made a tiny incision to get the splinter out of our dog's paw, and it healed in a week."
+      ]
+    },
+    {
+      "word": "array",
+      "partOfSpeech": "noun",
+      "pronunciation": "uh-RAY",
+      "articleQuote": "an array of sensors that covered a large part of the motor cortex",
+      "meaning": "An array is a set of similar things laid out in a regular pattern and working together as one unit. You have probably met arrays in math class as rows and columns of dots, and the everyday word covers the same idea, from the solar array on a roof to a display of tools on a wall. In this story the team did not implant one detector but many, spread across a wide patch of brain so that signals from different places could be picked up at once.",
+      "examples": [
+        "The school put an array of solar panels on the gym roof, eight rows of twelve.",
+        "She laid out an array of markers on her desk, every color lined up in order."
+      ]
+    },
+    {
+      "word": "auspicious",
+      "partOfSpeech": "adjective",
+      "pronunciation": "aw-SPISH-us",
+      "articleQuote": "That is an auspicious result for the several million individuals around the world paralysed by strokes, traumatic injuries and degenerative illnesses such as motor-neuron disease.",
+      "meaning": "Auspicious means promising — a sign that what comes next is likely to go well. The word goes back to ancient Rome, where officials watched which way the birds flew before a big decision, and a good sighting was called an *auspice*. Calling this result auspicious is careful praise: two patients is a small start, but it points toward something much bigger for the millions of people who cannot speak or move.",
+      "examples": [
+        "Winning our first three games was an auspicious start to the season.",
+        "Clear skies on the morning of the hike felt auspicious, and we reached the summit by noon."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Motor cortex",
+      "articleQuote": "the motor cortex—the brain region responsible for controlling bodily motion",
+      "meaning": "The two patients in this story cannot speak and cannot move. So how did sensors resting on their brains pick up *hello* and *nice to meet you*? Because the place where movement begins was never the broken part.\n\nNeuroscientists — the scientists who study the brain — divide the wrinkled outer layer of the brain into regions, and each region has a different job. One strip of it is the **motor cortex**. Take the name apart: *motor* means movement, *cortex* means the outer layer. Every time you move on purpose — curling a finger, pushing off to run, shaping your lips around a word — cells in that strip fire tiny electrical signals. The signals travel down nerves into your spinal cord and out to your muscles, and the muscle fibers pull.\n\nThe strip is laid out like a map of the body. The patch that fires for your hand sits in one spot, the patch for your tongue and lips in another, the patch for your foot in another. That map is why a team can lay a grid of sensors across a wide area and tell a trying-to-speak signal apart from a trying-to-clap one.\n\nParalysis can begin at different points along that chain. Often the break is below the brain — the nerve path out is cut, or the muscles no longer respond — while the motor cortex keeps firing exactly as it always did. Picture a doorbell with the wire snipped inside the wall: pressing the button still does its part, the chime just never rings. This device puts its sensors at the button end, where the signals are still there to detect.\n\nSo when you read that someone is paralysed, it does not mean the part of the brain that starts movement is gone. Often the instructions are still being sent. They just have nowhere to go."
+    },
+    {
+      "name": "Peer review",
+      "articleQuote": "A new paper by Dr Chang’s group, published in Nature Neuroscience, describes the passing of another milestone.",
+      "meaning": "Look at what the article does *not* say. It does not say Dr Chang announced this, or posted it, or told a reporter. It says the work was **published in Nature Neuroscience** — and in science that phrase is doing a lot of quiet work.\n\nWhen a research team finishes a piece of work, they write it up as a **paper**: the question they asked, exactly what they did, what the numbers came out as, and what they think it means. They send the paper to a **journal**, a magazine that prints nothing but research in one field. *Nature Neuroscience* is one of the well-known journals for brain research.\n\nBefore the journal prints anything, an editor sends the paper to two or three other scientists who study the same subject and had nothing to do with the work. Those strangers are the **peers**, and their job is to try to knock the paper down. Were enough patients tested? Could the result be luck? Does the method really measure what the team says it measures? They send back their objections, the team has to answer them and usually run more checks, and plenty of papers get turned down at this stage. That whole process is **peer review**.\n\nThink about the difference between a classmate telling you the answer to a homework problem and a classmate who has already shown their work to three other people, each of whom tried hard to find the mistake. The second answer is not guaranteed right. It is just much harder for it to be wrong in a silly way.\n\nSo peer review is not a stamp of truth — reviewed papers do sometimes turn out to be wrong. It is a filter. When you read that a finding was published in a journal, you know it survived being attacked by experts first, and that is a very different thing from somebody simply saying it on the internet."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did Dr Chang's team achieve for the first time with these two patients?",
+      "options": [
+        "They let a paralysed person walk again using an exoskeleton",
+        "They decoded words and gestures at the same time, shown through an avatar",
+        "They cured the illness that caused the paralysis",
+        "They let patients type on a keyboard by moving their eyes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The milestone was simultaneous decoding — two machine-learning models per patient, one for words and one for gestures, running together at about two-thirds accuracy."
+    },
+    {
+      "question": "The sensors were placed \"through a small incision in the skull\". An incision is:",
+      "options": [
+        "A crack caused by an accident",
+        "A natural gap between two bones",
+        "A cut made on purpose with a sharp blade",
+        "A hole worn away slowly over time"
+      ],
+      "answerIndex": 2,
+      "explanation": "An incision is a deliberate, controlled cut, which is why it is the word used for surgery rather than for injuries."
+    },
+    {
+      "question": "The article calls the result \"auspicious\". That means it is:",
+      "options": [
+        "Surprising and hard to explain",
+        "Expensive but worth the money",
+        "Officially approved for use in hospitals",
+        "A promising sign that better things are coming"
+      ],
+      "answerIndex": 3,
+      "explanation": "Auspicious means promising — a good omen — which fits a small first result that points toward much more."
+    },
+    {
+      "question": "Why can sensors over the motor cortex still pick up movement signals from someone who cannot move?",
+      "options": [
+        "The motor cortex grows back after an injury",
+        "The motor cortex still fires signals; the break is usually further along the path to the muscles",
+        "The sensors create the signals themselves and feed them to the brain",
+        "Paralysed muscles send signals back up to the brain instead"
+      ],
+      "answerIndex": 1,
+      "explanation": "Movement starts as electrical signals in the motor cortex, and paralysis often cuts the path below that, so the signals are still there to be detected."
+    },
+    {
+      "question": "The article says the work was \"published in Nature Neuroscience\". What does publishing in a journal tell you?",
+      "options": [
+        "A government agency has approved the device for patients",
+        "The team was paid for doing the research",
+        "Independent scientists in the field checked the work before it was printed",
+        "The result has been proved true beyond any doubt"
+      ],
+      "answerIndex": 2,
+      "explanation": "Journals send a paper to outside experts who try to find its flaws first — that is peer review, and it is a filter rather than a guarantee."
+    }
+  ]
+}

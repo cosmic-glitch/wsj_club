@@ -1,0 +1,351 @@
+[
+  {
+    "k": "incision",
+    "t": "incision",
+    "kind": "vocab",
+    "pron": "in-SIZH-un",
+    "forms": [
+      "incision"
+    ],
+    "text": "An incision is a cut made on purpose with a sharp blade, almost always by a surgeon during an operation. The word carries the idea of care and control: not a scrape or a tear, but a planned opening exactly the size the job needs. Here the surgeons made a small incision in the skull so the sensors could go in without opening more of the head than they had to.",
+    "audio": true
+  },
+  {
+    "k": "array",
+    "t": "array",
+    "kind": "vocab",
+    "pron": "uh-RAY",
+    "forms": [
+      "array",
+      "array's"
+    ],
+    "text": "An array is a set of similar things laid out in a regular pattern and working together as one unit. You have probably met arrays in math class as rows and columns of dots, and the everyday word means the same sort of thing, from a solar array on a roof to a display of tools on a wall. The team did not implant one detector but many, spread over a wide patch of brain so signals from different places could be picked up at once.",
+    "audio": true
+  },
+  {
+    "k": "auspicious",
+    "t": "auspicious",
+    "kind": "vocab",
+    "pron": "aw-SPISH-us",
+    "forms": [
+      "auspicious"
+    ],
+    "text": "Auspicious means promising: a sign that what comes next is likely to go well. The word goes back to ancient Rome, where officials watched which way the birds flew before a big decision, and a good sighting was called an auspice. Calling this result auspicious is careful praise, because two patients is a small start that still points toward something much bigger.",
+    "audio": true
+  },
+  {
+    "k": "strokes",
+    "t": "strokes",
+    "kind": "word",
+    "forms": [
+      "strokes"
+    ],
+    "text": "Not a swimming stroke or the stroke of a pen. A stroke is a sudden medical emergency in which the blood supply to part of the brain is cut off or a blood vessel there bursts, so brain cells in that patch die within minutes. Strokes are one of the commonest reasons people end up paralysed, which is why the article lists them first.",
+    "audio": true
+  },
+  {
+    "k": "procedure",
+    "t": "procedure",
+    "kind": "word",
+    "forms": [
+      "procedure"
+    ],
+    "text": "In everyday use a procedure is just the set of steps for doing something. In hospitals it has a narrower meaning: an operation, or any medical task done on a patient's body. When the article says this procedure took over two hours, it means the surgery itself.",
+    "audio": true
+  },
+  {
+    "k": "initial",
+    "t": "initial",
+    "kind": "word",
+    "forms": [
+      "initial"
+    ],
+    "text": "Nothing to do with the initials in your name. Initial means first, or at the beginning. The two initial individuals are simply the first two patients, with more expected to follow.",
+    "audio": true
+  },
+  {
+    "k": "vocabulary",
+    "t": "vocabulary",
+    "kind": "word",
+    "forms": [
+      "vocabulary"
+    ],
+    "text": "Usually a vocabulary is all the words a person knows. Here it means all the words a machine can handle, which is a much smaller list. These patients had a vocabulary of about ten words and phrases, so anything outside those ten could not be produced at all.",
+    "audio": true
+  },
+  {
+    "k": "permit",
+    "t": "permit",
+    "kind": "word",
+    "forms": [
+      "permit"
+    ],
+    "text": "A permit can be a piece of paper that lets you do something, like a parking permit. But as a verb, said per-MIT, it simply means to allow or make possible. That might permit paralysed individuals to operate robots means it might let them do it.",
+    "audio": true
+  },
+  {
+    "k": "monitor",
+    "t": "monitor",
+    "kind": "word",
+    "forms": [
+      "monitor"
+    ],
+    "text": "A monitor can be a screen, but as a verb it means to keep track of something over time, checking it again and again. The team hope the sensors can monitor signals for whole-body movement, not just for speech. That means recording those signals steadily and following how they change.",
+    "audio": true
+  },
+  {
+    "k": "decoding",
+    "t": "decode",
+    "kind": "word",
+    "forms": [
+      "decoding",
+      "decoded",
+      "decode"
+    ],
+    "text": "A code turns a message into a form other people cannot read; decoding turns it back. Brain signals are not really a secret code, but they look like meaningless electrical noise until you work out which pattern goes with which word. That translating work is what the scientists mean by decoding.",
+    "audio": true
+  },
+  {
+    "k": "implant",
+    "t": "implant",
+    "kind": "word",
+    "forms": [
+      "implanting",
+      "implants"
+    ],
+    "text": "To implant something is to place it inside a living body and leave it there. The object itself is then called an implant, like a metal pin in a broken bone. In this study the implants are small sensors resting on the surface of the brain.",
+    "audio": true
+  },
+  {
+    "k": "sensors",
+    "t": "sensor",
+    "kind": "word",
+    "forms": [
+      "sensors",
+      "sensor"
+    ],
+    "text": "A sensor is a device that detects something physical and turns it into a signal a machine can use, the way a thermometer detects heat. These sensors detect the tiny electrical voltages that brain cells make when they fire. On their own they explain nothing; a computer has to work out what the patterns mean.",
+    "audio": true
+  },
+  {
+    "k": "paralysed",
+    "t": "paralysed",
+    "kind": "word",
+    "forms": [
+      "paralysed"
+    ],
+    "text": "Someone who is paralysed cannot move part or all of their body on purpose. The muscles are often still there and still healthy; what has failed is the path that carries the movement signal from the brain to them. Paralysed is the British spelling, and American writing uses paralyzed.",
+    "audio": true
+  },
+  {
+    "k": "degenerative",
+    "t": "degenerative",
+    "kind": "word",
+    "forms": [
+      "degenerative"
+    ],
+    "text": "A degenerative illness is one that slowly gets worse as cells in the body break down and are not replaced. That is different from an injury, which happens all at once. The article separates the two: strokes and traumatic injuries strike suddenly, while degenerative illnesses take away movement over months or years.",
+    "audio": true
+  },
+  {
+    "k": "traumatic",
+    "t": "traumatic",
+    "kind": "word",
+    "forms": [
+      "traumatic"
+    ],
+    "text": "In medicine a traumatic injury means physical damage from a sudden force, such as a car crash or a bad fall. It is not about feeling upset, which is the other, newer meaning of the word. Traumatic injuries to the spine are a common cause of paralysis.",
+    "audio": true
+  },
+  {
+    "k": "milestone",
+    "t": "milestone",
+    "kind": "word",
+    "forms": [
+      "milestone"
+    ],
+    "text": "Roman roads had stones set a mile apart so travellers could tell how far they had come. A milestone now means a marker of progress on a long journey of any kind. Passing another milestone means this research has reached a point clearly beyond where it stood before.",
+    "audio": true
+  },
+  {
+    "k": "fiddly",
+    "t": "fiddly",
+    "kind": "word",
+    "forms": [
+      "fiddly"
+    ],
+    "text": "Something fiddly is awkward to do because the parts are small and need careful handling with the fingers. Threading a needle is fiddly. Joining the sensor array to its cable is fiddly, and that is a good part of why the operation takes over two hours.",
+    "audio": true
+  },
+  {
+    "k": "concurrently",
+    "t": "concurrently",
+    "kind": "word",
+    "forms": [
+      "concurrently"
+    ],
+    "text": "Concurrently means at the same time, side by side. Two things running concurrently are both happening now, rather than one after the other. Reconstructing words and gestures concurrently is the whole point here, because people really do speak and move together.",
+    "audio": true
+  },
+  {
+    "k": "simultaneous",
+    "t": "simultaneous",
+    "kind": "word",
+    "forms": [
+      "simultaneous"
+    ],
+    "text": "Simultaneous means happening at exactly the same moment. It is the close cousin of concurrently used a sentence earlier. Simultaneous decoding means both the words and the gestures were worked out together, which nobody had managed before.",
+    "audio": true
+  },
+  {
+    "k": "gestures",
+    "t": "gesture",
+    "kind": "word",
+    "forms": [
+      "gestures"
+    ],
+    "text": "A gesture is a movement of the hands, arms, head or shoulders that carries meaning on its own, like waving, pointing or giving a thumbs-up. Speech and gestures normally travel together, so a system that produced only words would sound flat. That is why this team tried to capture both.",
+    "audio": true
+  },
+  {
+    "k": "shrug",
+    "t": "shrug",
+    "kind": "word",
+    "forms": [
+      "shrug"
+    ],
+    "text": "A shrug is lifting your shoulders briefly to say you do not know or do not mind. It is used here as an example of a gesture simple enough for the system to recognise. Along with a clap, it was one of about ten movements these patients could produce.",
+    "audio": true
+  },
+  {
+    "k": "avatar",
+    "t": "avatar",
+    "kind": "word",
+    "forms": [
+      "avatar"
+    ],
+    "text": "In games an avatar is the on-screen figure that stands in for you. The word is used the same way here: a figure on a screen that speaks the decoded words and makes the decoded gestures, so the patient has a face and a body other people can watch. The avatar does nothing by itself; every move it makes comes from the signals read off the patient's brain.",
+    "audio": true
+  },
+  {
+    "k": "come-a-long-way",
+    "t": "come a long way",
+    "kind": "phrase",
+    "forms": [
+      "come a long way"
+    ],
+    "text": "To have come a long way means to have improved or developed a great deal since the start. It is a standard English phrase about progress, not about distance travelled. Saying brain-computer interfaces have come a long way quickly sets up the dates that follow: 2009, then 2021, then now.",
+    "audio": true
+  },
+  {
+    "k": "by-means-of",
+    "t": "by means of",
+    "kind": "phrase",
+    "forms": [
+      "by means of"
+    ],
+    "text": "By means of is a formal way of saying using, or with the help of. It names the tool or method that made something possible. The patients communicated by means of an avatar, so the avatar is how the message got out.",
+    "audio": true
+  },
+  {
+    "k": "brain-computer-interface",
+    "t": "brain-computer interface",
+    "kind": "name",
+    "forms": [
+      "Brain-computer interfaces"
+    ],
+    "text": "A brain-computer interface is any system that picks up electrical activity from a person's brain and turns it into commands for a machine. An interface is simply the meeting point between two different things. These systems are the reason a person who cannot move or speak can still get a message out.",
+    "audio": true
+  },
+  {
+    "k": "neural-implant",
+    "t": "neural implant",
+    "kind": "name",
+    "forms": [
+      "neural implant"
+    ],
+    "text": "Neural means to do with nerves or the brain. A neural implant is a device placed inside the head that sits against brain tissue and records the electrical signals there. Because it is right up against the source, it gets a far clearer signal than a cap of electrodes on the scalp can.",
+    "audio": true
+  },
+  {
+    "k": "edward-chang",
+    "t": "Edward Chang",
+    "kind": "name",
+    "forms": [
+      "Edward Chang",
+      "Dr Chang"
+    ],
+    "text": "Edward Chang is a brain surgeon and researcher at the University of California, San Francisco whose laboratory works on restoring speech to people who have lost it. His group did the 2021 work that decoded a patient's words and sentences, and this new study as well. The article calls him Dr Chang after the first mention.",
+    "audio": true
+  },
+  {
+    "k": "ucsf",
+    "t": "University of California, San Francisco",
+    "kind": "name",
+    "forms": [
+      "University of California, San Francisco"
+    ],
+    "text": "A public university in San Francisco that teaches only medicine and health sciences, with no undergraduate students at all. It is one of the leading medical research centres in the United States. Dr Chang's laboratory is based there.",
+    "audio": true
+  },
+  {
+    "k": "nature-neuroscience",
+    "t": "Nature Neuroscience",
+    "kind": "name",
+    "forms": [
+      "Nature Neuroscience"
+    ],
+    "text": "A scientific journal, which is a magazine that prints nothing but new research in one field. This one publishes work on the brain and nervous system, and it is among the most respected in that field. Before it prints a paper, other scientists are asked to look for mistakes in it.",
+    "audio": true
+  },
+  {
+    "k": "motor-cortex",
+    "t": "motor cortex",
+    "kind": "name",
+    "forms": [
+      "motor cortex"
+    ],
+    "text": "The motor cortex is the strip of the brain's outer layer where voluntary movement begins. Motor means movement and cortex means outer layer. Cells there fire electrical signals that travel down nerves to the muscles, and the strip is laid out like a map of the body, with one patch for the hand, another for the lips, another for the foot.",
+    "audio": true
+  },
+  {
+    "k": "cortex",
+    "t": "cortex",
+    "kind": "name",
+    "forms": [
+      "cortex"
+    ],
+    "text": "The cortex is the wrinkled outer layer of the brain, only a few millimetres thick, where most conscious thought and voluntary movement are handled. The folds pack a large sheet into a small skull. Different areas of it do different jobs, which is why the article can talk about the motor cortex as one particular region.",
+    "audio": true
+  },
+  {
+    "k": "motor-neuron-disease",
+    "t": "motor-neuron disease",
+    "kind": "name",
+    "forms": [
+      "motor-neuron disease"
+    ],
+    "text": "A motor neuron is a nerve cell that carries movement commands from the brain and spinal cord out to a muscle. In motor-neuron disease those cells gradually die, so the muscles stop receiving signals and waste away, while the person's thinking usually stays sharp. It is the illness the physicist Stephen Hawking lived with.",
+    "audio": true
+  },
+  {
+    "k": "machine-learning",
+    "t": "machine learning",
+    "kind": "name",
+    "forms": [
+      "machine-learning"
+    ],
+    "text": "Machine learning is a way of getting a computer to do a job without anyone writing out the rules for it. You give it thousands of worked examples, here brain signals paired with the word the patient was trying to say, and the program adjusts its own numbers until its guesses match. Afterwards it can make a guess about a signal it has never seen.",
+    "audio": true
+  },
+  {
+    "k": "exoskeletons",
+    "t": "exoskeleton",
+    "kind": "name",
+    "forms": [
+      "exoskeletons"
+    ],
+    "text": "An exoskeleton is a hard supporting frame on the outside of a body rather than inside it, like the shell of a beetle. Engineers now build powered exoskeletons: metal frames strapped around a person's legs or arms with motors at the joints. If a paralysed person's brain signals could drive one, the frame could move limbs their own muscles cannot.",
+    "audio": true
+  }
+]
