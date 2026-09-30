@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-30",
+  "title": "Democracy is stronger than it looks",
+  "articleUrl": "https://www.economist.com/international/2026/09/29/democracy-is-stronger-than-it-looks",
+  "articlePageUrl": "/articles/2026-09-30.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "complacency",
+      "partOfSpeech": "noun",
+      "pronunciation": "kum-PLAY-sun-see",
+      "articleQuote": "This is not a call for complacency now.",
+      "meaning": "Complacency is the comfortable, untroubled feeling that a problem is already handled — and the lowering of your guard that follows. The word always carries a criticism built into it: nobody praises complacency, they warn about it, because the danger is not the good mood itself but the effort you stop making while you enjoy it. The writer needs this sentence because he has just spent the whole article arguing that democracies came through far worse violence in the 1970s and 80s, and he can see the wrong lesson a reader might draw. Surviving the past is not evidence that today is safe.",
+      "examples": [
+        "Winning the first three games bred a complacency that cost them the semifinal.",
+        "Acing the practice test can turn into complacency about the real exam a week later."
+      ]
+    },
+    {
+      "word": "tawdry",
+      "partOfSpeech": "adjective",
+      "pronunciation": "TAW-dree",
+      "articleQuote": "If that process can be tawdry, so be it.",
+      "meaning": "Tawdry means cheap and showy in a way that leaves a slightly grubby impression — it began as a word for flashy junk jewellery, and it kept that flavour of glitter that doesn't survive a close look. Applied to people and their dealings, it means sordid and undignified: a tawdry scandal, a tawdry deal. The \"process\" the writer is talking about here is ordinary democratic politics, the horse-trading and the handing out of public money, and the sentence is a deliberate concession: yes, admit that it looks grubby, because the point he is about to make is that grubby beats the alternative of extremists killing for a cause.",
+      "examples": [
+        "The finale was a tawdry attempt to squeeze in one more twist before the credits.",
+        "She won the class election with a tawdry campaign of leaked group chats and nicknames."
+      ]
+    },
+    {
+      "word": "zealot",
+      "partOfSpeech": "noun",
+      "pronunciation": "ZEL-ut",
+      "articleQuote": "An alarming number of European trade unions were controlled by Stalinists, Trotskyites and other zealots.",
+      "meaning": "A zealot is someone whose devotion to a cause has gone past the point of reason — they will not weigh evidence, will not compromise, and cannot entertain being wrong, because the cause has become the lens they see everything through. The name comes from the Zealots, a Jewish faction that fought Roman rule in the first century, and it keeps that edge of dangerous commitment, which is why *zealot* is always an accusation while *zealous* can simply mean eager. In the article it describes the hard-line communists who had captured European labour unions: people running an organisation in the service of a coming revolution rather than of its members' wages.",
+      "examples": [
+        "One zealot in the club insisted nobody could join unless they gave up their phone entirely.",
+        "He is zealous about recycling; his brother is a zealot who lectures strangers about their trash."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The state's monopoly on violence",
+      "articleQuote": "No other rich democracy shows the same tolerance towards armed protesters and militias, forgoing the legal monopoly over violence that other states enjoy.",
+      "meaning": "Ask what actually makes a government a government and the answer is narrower than you would guess. Political scientists point to one thing: the state is the only body in the country allowed to use force. That is the **monopoly on violence** — only the state may arrest you, lock you in a building you cannot leave, take your property, or send armed people somewhere. Everyone else is banned from doing those things, which is exactly why a private citizen who does them is a kidnapper, a thief, or a murderer.\n\nNotice that this is not a claim about the state being violent *often*. In a well-run country the power is barely used, and most people go years without seeing it. It is a claim about **who is permitted to** — and it exists because the alternative is worse. If several armed groups in one place each claim the right to enforce their own rules, nothing gets settled by argument; it gets settled by whoever can hit harder, and everyone else has to arm themselves or pick a protector. Giving that right to a single body, and then putting *that* body under laws, courts and elections, is the arrangement that lets everybody else walk around unarmed.\n\nThat is why the article's line about America bites. When armed protesters and militias are tolerated rather than disarmed, a state is *forgoing* — giving up — a piece of the monopoly, and the right to use force drifts back to whoever decides to carry a weapon. Whenever you read about a country with cartels, warlords or paramilitaries running a province, you are reading about a state whose monopoly on violence has holes in it."
+    },
+    {
+      "name": "Coalition government",
+      "articleQuote": "The Brigades hated him for thwarting their dreams of revolution by bringing the (less fanatical, Soviet-backed) Communist Party of Italy into a coalition government.",
+      "meaning": "Aldo Moro was kidnapped and shot dead for building one of these, so it is worth knowing what one is. In most democracies — comparative politics is the field that studies this — a parliament fills up with many parties at once, and the party that finishes first usually lands well short of half the seats. Since laws pass by majority vote, a first-place party holding 30% of the seats cannot govern on its own. So it bargains, and two or more parties agree to govern together: they vote as one bloc and split the ministries between them. That deal is a **coalition government**.\n\nThe bargaining is the whole story. The smaller party's price is policy — drop this tax, fund that region, give us the interior ministry — so a party with a tenth of the seats can extract things far out of proportion to its size, and the government collapses the day it walks out. Americans rarely watch this happen because two enormous parties do their bargaining *before* the election, inside themselves, instead of afterwards in parliament.\n\nMoro's murder shows how high the stakes on that machinery can run. By drawing Italy's Communists toward a governing coalition, he was offering them a real share of power *through elections* — which was the one thing the Red Brigades could not survive, because a revolution needs people convinced the system will never give them anything. So when a news story says a country \"formed a government\" weeks or months after the votes were counted, that gap is the coalition being haggled out."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What were Italy's \"Years of Lead\"?",
+      "options": [
+        "A stretch of the 1950s when Italy's factories switched over to heavy industry",
+        "An era of roughly 1969 to 1988 when far-left and far-right groups tried to overthrow the Italian state with bombings, shootings and kidnappings",
+        "The years after 1988 in which Italy outlawed its Communist Party",
+        "A wave of attacks on Italy carried out entirely by foreign terrorist groups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article dates them to about 1969–1988 and notes that domestic political violence, not foreign terrorism, killed the most Italians — 530 deaths across 1,802 bombings, 716 arson attacks and 98 knee-cappings."
+    },
+    {
+      "question": "Why did the Red Brigades hate Aldo Moro enough to kidnap and kill him?",
+      "options": [
+        "He had ordered a police crackdown that killed several of their members",
+        "He was a fascist radical leading the far right",
+        "He was bringing Italy's Communist Party into a coalition government, offering the left real power through elections",
+        "He refused to negotiate with any party to his left"
+      ],
+      "answerIndex": 2,
+      "explanation": "Moro thwarted their dreams of revolution by drawing the Communists toward a governing coalition — a revolution needs people convinced the system will never give them anything."
+    },
+    {
+      "question": "The article says America, unlike other rich democracies, is \"forgoing the legal monopoly over violence that other states enjoy.\" What does that monopoly actually mean?",
+      "options": [
+        "That the government spends more on weapons than its citizens do",
+        "That the state has promised never to use force against its own citizens",
+        "That only the state is legally permitted to use force — to arrest, imprison, seize property or deploy armed men",
+        "That courts, rather than elected politicians, decide when force may be used"
+      ],
+      "answerIndex": 2,
+      "explanation": "A state's monopoly on violence is about who is *permitted* to use force, not how much gets used; tolerating armed militias hands part of that permission back to private groups."
+    },
+    {
+      "question": "In \"If that process can be tawdry, so be it,\" what is the writer conceding about democratic politics?",
+      "options": [
+        "That it can look cheap, grubby and undignified",
+        "That it is slow and buried in technical detail",
+        "That it is frighteningly violent",
+        "That it is calm to the point of being dull"
+      ],
+      "answerIndex": 0,
+      "explanation": "Tawdry means cheap and showy in a sordid way; he admits that horse-trading and handing out public money look grubby, then argues that grubby politics beats extremists killing for a cause."
+    },
+    {
+      "question": "The writer argues that history should give voters more confidence, yet insists \"This is not a call for complacency now.\" Taken together, what is his position?",
+      "options": [
+        "Democracies survived far worse, so today's political violence is not worth worrying about",
+        "Today's dangers are real and must be fought, but open societies should have more confidence that ballot boxes can beat bullets",
+        "Political violence has already been wiped out in every rich democracy except America",
+        "Voters should be frightened, because the 1970s show how quickly a democracy collapses"
+      ],
+      "answerIndex": 1,
+      "explanation": "Complacency means lowering your guard because you think a problem is handled — he rejects that, while still arguing that democracies should fight back and that elections, not bans and censorship, are what contain rage."
+    }
+  ]
+}
