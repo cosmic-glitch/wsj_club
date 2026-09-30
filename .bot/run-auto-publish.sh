@@ -1,14 +1,15 @@
 #!/bin/bash
 # Autonomous daily PUBLISH for the Reading Club — the cron entry, one run for
-# BOTH tracks. From 9am Pacific it checks, once an hour, whether every track's
-# vote has at least one ballot; the first hour that holds it publishes the day
-# — senior then junior, each via publish-track.sh — and at noon it publishes
+# BOTH tracks. From 9am Pacific it checks, every half hour, whether every
+# track's vote has at least one ballot; the first check that finds it publishes
+# the day — senior then junior, each via publish-track.sh — and at noon it publishes
 # regardless (a track with no ballots gets the morning's top-rated pick,
 # tally.mjs's own fallback). Every hold texts the owner.
 #   bash .bot/run-auto-publish.sh
 #
-# Cron fires at 16:00–20:00 UTC; the Pacific gate lets the 09–12 firings
-# through year-round (DST shifts which UTC hours those are). So the club's
+# Cron fires on the hour and half hour, 16:00–20:30 UTC; the Pacific gate lets
+# the 09:00–12:00 firings through year-round (DST shifts which UTC hours those
+# are; 12:30 is outside, so a failed noon run isn't retried). So the club's
 # vote deadline on both tracks is 9am Pacific once everyone has voted, and
 # noon at the latest. Publishing the reading is what closes the vote.
 #
@@ -19,7 +20,7 @@
 # by waiting, its publish run then fails at the tally and the healthcheck pages.
 #
 # Crontab entry (UTC):
-#   0 16,17,18,19,20 * * *  $HOME/bin/hc-run wsjclub-auto-publish bash $HOME/wsj_club/.bot/run-auto-publish.sh >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+#   0,30 16-20 * * *  $HOME/bin/hc-run wsjclub-auto-publish bash $HOME/wsj_club/.bot/run-auto-publish.sh >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
 #
 # Controls (flag files in .bot/, box-local, never committed):
 #   .bot/PAUSE            → skip today's publish run on every track (the vote still opens)
@@ -29,8 +30,8 @@
 #   .bot/DRY_RUN-<track>  → the same for one track only (roll a track out alone)
 #   .bot/OFF-<track>      → that track's autopilot is switched off entirely (vote + publish)
 # Env overrides for a supervised manual run:
-#   AUTOPUBLISH_FORCE=1      publish NOW: bypass the hour gate AND the vote hold
-#   AUTOPUBLISH_HOUR=09      pretend it is this Pacific hour (exercise the gate and the hold)
+#   AUTOPUBLISH_FORCE=1      publish NOW: bypass the time gate AND the vote hold
+#   AUTOPUBLISH_TIME=09:30   pretend it is this Pacific time (exercise the gate and the hold)
 #   AUTOPUBLISH_DATE=…       publish a specific poll date (default: today Pacific)
 #   AUTOPILOT_MODEL=…        run the sessions on another model (default claude-opus-5[1m])
 #   AUTOPUBLISH_DRY_RUN=1    same as the DRY_RUN flag file
@@ -44,10 +45,15 @@ if [ $# -ne 0 ]; then
 fi
 
 FORCE="${AUTOPUBLISH_FORCE:-0}"
-HOUR="${AUTOPUBLISH_HOUR:-$(TZ=America/Los_Angeles date +%H)}"
+# The half-hour slot this firing belongs to, as HH:MM (cron can start a few
+# seconds late, so the minute is rounded down to :00 or :30).
+NOW="${AUTOPUBLISH_TIME:-$(TZ=America/Los_Angeles date +%H:%M)}"
+HOUR="${NOW%%:*}"; MIN="${NOW##*:}"
+if [ "$((10#$MIN))" -lt 30 ]; then MIN=00; else MIN=30; fi
+SLOT="${HOUR}:${MIN}"
 if [ "$FORCE" != "1" ]; then
-  case "$HOUR" in
-    09|10|11|12) ;;
+  case "$SLOT" in
+    09:00|09:30|10:00|10:30|11:00|11:30|12:00) ;;
     *) exit 0 ;;
   esac
 fi
@@ -78,16 +84,16 @@ set -a
 [ -f "$PROJECT_DIR/.bot/.env" ] && source "$PROJECT_DIR/.bot/.env"
 set +a
 
-# One day-run at a time: the hourly firings must not pile up behind a run
+# One day-run at a time: the half-hourly firings must not pile up behind a run
 # still authoring (the children take the shared autopilot lock and would just
 # queue). Non-blocking — a firing that finds a run in progress is done.
 exec 8>"$LOG_DIR/.publish-day.lock"
 if ! flock -n 8; then
-  log "a publish run is already in progress (Pacific hour ${HOUR}); nothing to do"
+  log "a publish run is already in progress (Pacific ${SLOT}); nothing to do"
   exit 0
 fi
 
-log "starting (Pacific $(TZ=America/Los_Angeles date +%FT%T), hour=${HOUR}, date=${TODAY}, force=${FORCE})"
+log "starting (Pacific $(TZ=America/Los_Angeles date +%FT%T), slot=${SLOT}, date=${TODAY}, force=${FORCE})"
 
 # --- The vote hold ----------------------------------------------------------
 # Per track: off / paused / published / no poll / N ballot(s). "published" is
@@ -133,15 +139,19 @@ done
 SUMMARY="${STATUS[0]}, ${STATUS[1]}"
 log "tracks — ${SUMMARY}"
 
-case "$HOUR" in 09) NEXT="10:00am" ;; 10) NEXT="11:00am" ;; *) NEXT="12:00pm" ;; esac
+case "$SLOT" in
+  09:00) NEXT="9:30am" ;;  09:30) NEXT="10:00am" ;;
+  10:00) NEXT="10:30am" ;; 10:30) NEXT="11:00am" ;;
+  11:00) NEXT="11:30am" ;; *) NEXT="12:00pm" ;;
+esac
 BEFORE_NOON=0; [ "$((10#$HOUR))" -lt 12 ] && BEFORE_NOON=1
 
 if [ "$FORCE" = "1" ]; then
   log "FORCE — publishing now regardless of the ballots"
 elif [ "$CHECK_OK" != "1" ] && [ "$BEFORE_NOON" = "1" ]; then
-  # Can't tell whether the votes are in: don't publish on a guess, retry next
-  # hour, and page (a broken DB check is a real failure).
-  notify "⚠️ Reading Club ${TODAY} — the ballot check failed (${SUMMARY}); not publishing this hour, retrying at ${NEXT} Pacific. See .bot/logs/run-auto-publish-${TODAY}.log on the box."
+  # Can't tell whether the votes are in: don't publish on a guess, retry at
+  # the next check, and page (a broken DB check is a real failure).
+  notify "⚠️ Reading Club ${TODAY} — the ballot check failed (${SUMMARY}); not publishing now, retrying at ${NEXT} Pacific. See .bot/logs/run-auto-publish-${TODAY}.log on the box."
   exit 1
 elif [ "$CHECK_OK" != "1" ]; then
   notify "⚠️ Reading Club ${TODAY} — the ballot check failed at noon (${SUMMARY}); publishing anyway, the tally decides."

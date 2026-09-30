@@ -86,12 +86,12 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
    for both tracks; the publish driver runs senior then junior itself. The vote
    driver fires at two UTC hours and gates on the
    Pacific hour (6am), so it runs once a day year-round; the publish driver
-   fires at five UTC hours and lets the Pacific 9–12 firings through — it
-   checks the ballots every hour and publishes the first hour both tracks
-   have one (noon regardless):
+   fires on the hour and half hour across five UTC hours and lets the Pacific
+   9:00–12:00 firings through — it checks the ballots every half hour and
+   publishes at the first check where both tracks have one (noon regardless):
    ```
    0 13,14          * * *  $HOME/bin/hc-run wsjclub-auto-vote    bash $HOME/wsj_club/.bot/run-auto-vote.sh    >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
-   0 16,17,18,19,20 * * *  $HOME/bin/hc-run wsjclub-auto-publish bash $HOME/wsj_club/.bot/run-auto-publish.sh >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
+   0,30 16-20       * * *  $HOME/bin/hc-run wsjclub-auto-publish bash $HOME/wsj_club/.bot/run-auto-publish.sh >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
    ```
    `hc-run` (in `~/bin`, from the foliotracker setup) pings healthchecks.io with
    the driver's exit code — a non-zero exit is the alert, and the ping body
@@ -116,7 +116,7 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
 AUTOVOTE_FORCE=1   AUTOVOTE_DATE=YYYY-MM-DD   bash ~/wsj_club/.bot/run-auto-vote.sh          # both tracks, now
 AUTOVOTE_FORCE=1   AUTOVOTE_TRACKS=junior AUTOVOTE_DATE=YYYY-MM-DD bash ~/wsj_club/.bot/run-auto-vote.sh   # one track (the other's live ballot stays excluded)
 AUTOPUBLISH_FORCE=1 AUTOPUBLISH_DATE=YYYY-MM-DD AUTOPUBLISH_DRY_RUN=1 bash ~/wsj_club/.bot/run-auto-publish.sh   # both tracks, no hold
-AUTOPUBLISH_HOUR=09 AUTOPUBLISH_DATE=YYYY-MM-DD bash ~/wsj_club/.bot/run-auto-publish.sh          # exercise the 9am hold
+AUTOPUBLISH_TIME=09:00 AUTOPUBLISH_DATE=YYYY-MM-DD bash ~/wsj_club/.bot/run-auto-publish.sh          # exercise the 9am hold
 AUTOPUBLISH_DATE=YYYY-MM-DD AUTOPUBLISH_DRY_RUN=1 bash ~/wsj_club/.bot/publish-track.sh --track=junior   # one track, now
 ```
 Logs: the vote run's `.bot/logs/auto-vote-<date>.log` (both tracks), the publish
@@ -172,7 +172,7 @@ refuses to write a teaser (exit 2) for the same reason.
   has neither a live vote nor a published reading. `AUTOVOTE_TRACKS` limits it
   to one track.
 - `run-auto-publish.sh` — the publish cron entry, no arguments: Pacific gate →
-  the hourly ballot hold + owner DM → run senior then junior via
+  the half-hourly ballot hold + owner DM → run senior then junior via
   `publish-track.sh` → exit non-zero if either failed.
 - `publish-track.sh --track=senior|junior` — one track's publish run (lock →
   `git pull` → `xvfb-run claude -p` → outcome check → polls the live URL for up
