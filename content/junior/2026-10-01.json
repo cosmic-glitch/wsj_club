@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-01",
+  "title": "A huge increase in tourists visiting Komodo brings new dangers",
+  "articleUrl": "https://www.economist.com/asia/2026/10/01/a-huge-increase-in-tourists-visiting-komodo-bring-new-dangers",
+  "articlePageUrl": "/articles/junior/2026-10-01.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "throng",
+      "partOfSpeech": "verb (also a noun)",
+      "pronunciation": "THRAWNG",
+      "articleQuote": "Labuan Bajo now throngs with diving shops, restaurants, hotels and coffee spots.",
+      "meaning": "To throng with something is to be crowded with it — packed, not merely busy. As a noun, a throng is a dense crowd. The article says Labuan Bajo now throngs with diving shops, restaurants, hotels and coffee spots, which tells you the town has filled up tightly with tourist businesses where there used to be far fewer.",
+      "examples": [
+        "By 7:55 the hallway throngs with students trying to reach their lockers before the bell.",
+        "A throng of parents pressed against the fence to watch the last two minutes of the game."
+      ]
+    },
+    {
+      "word": "dismay",
+      "partOfSpeech": "noun",
+      "pronunciation": "dis-MAY",
+      "articleQuote": "The deaths in December caused widespread dismay.",
+      "meaning": "Dismay is the shaken, discouraged feeling that bad and unexpected news leaves behind — part shock, part sadness. In the article the four deaths caused widespread dismay, meaning people across the whole region were upset by something nobody had seen coming. It is heavier than disappointment but quieter than anger.",
+      "examples": [
+        "There was dismay in the locker room when the coach announced the tournament was cancelled.",
+        "To her dismay, the three hours of work she had not saved were gone."
+      ]
+    },
+    {
+      "word": "implement",
+      "partOfSpeech": "verb",
+      "pronunciation": "IM-pluh-ment",
+      "articleQuote": "a body set up to implement the ex-president’s ideas",
+      "meaning": "To implement a plan is to carry it out — to do the real work that turns an announced idea into something that actually exists. The article calls the Labuan Bajo Flores Tourism Authority a body set up to implement the ex-president's ideas: he named the goal, and this organisation had to arrange the flights, hotels, roads and permits that would make it real. Watch out for the other *implement*, a noun meaning a tool; the verb is the one you will meet far more often in writing like this.",
+      "examples": [
+        "Our student council voted for a recycling plan in October but did not implement it until spring.",
+        "The teacher implemented a new rule: phones go in the basket before the bell rings."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "National parks",
+      "articleQuote": "Earlier this year Komodo introduced an initial cap of 1,000 tourists a day.",
+      "meaning": "Komodo can legally turn the 1,001st visitor away at the dock. Almost no ordinary town or beach can do that, and the reason Komodo can is what a national park actually is.\n\nA national park is land — sometimes water too — that a country's government has set aside by law and then runs itself. Nobody can buy Komodo island and build hotels on it, because the law does not allow it. In exchange for holding the land, the government takes on the running of it: it hires rangers, decides who may enter, sets the price of a ticket, and can shut the gate. Indonesia does this through a **national park authority**, a government office whose entire job is the park. Biologists and geographers call land like this *protected*.\n\nThe gate is the part that matters. The owners of a shopping mall want as many customers as possible, so they never count them at the door. The park authority is given a different job: keep the thing inside the park alive. Inside Komodo that thing is about 1,300 adult dragons. More visitors bring more money and more jobs, but also more boats, more rubbish and more people walking right up to a venomous lizard. Because the authority controls the only way in — the island has no airport, so everyone arrives by boat — it can choose a number and hold it.\n\nYou have already met this mechanism in your school gym. A fire marshal sets the maximum number of people allowed inside, and that number has nothing to do with how many want in; it is set by what the room can safely hold. A national park is the same rule stretched across an island, with a limit chosen for the animals rather than for the exits.\n\nSo when you read that a famous place is \"limiting visitors\", ask who has the legal power to limit them. Almost always the answer is that the land is a park, and a government office holds the key."
+    },
+    {
+      "name": "The wet season",
+      "articleQuote": "Ms Jemana’s organisation had long urged the maritime authorities and national park authority to limit access, particularly in the dangerous wet season, she says.",
+      "meaning": "Four people died in December when their tour boat sank in rough seas. If you pictured December as cold and quiet, that is the wrong picture — Komodo sits close to the equator, and near the equator the year is not divided into four seasons at all.\n\nGeographers divide it into a **wet season** and a **dry season**. Here is why. The sun's strongest light lands near the equator all year, so the land and sea there stay hot in January and hot in July; the temperature barely moves. What changes is the rain. Hot air above warm ocean rises and carries water vapour up with it; high up the vapour turns back into droplets and falls. The winds that push all that wet air around reverse twice a year, so for roughly half the year they drive it over the islands and for the other half they drive it away. In Indonesia the wet months run about November to March. December sits in the middle of them.\n\nWet season does not just mean bring an umbrella. The same rising air builds storm clouds kilometres tall, storms produce strong wind, and wind piles up waves. A small wooden tour boat that is completely safe in July can meet rough seas in January. That is the weather Ms Jemana has in mind when she says that if the weather is not right, boats should not be given permission to sail.\n\nThink of it the way you think about an outdoor ice rink: there is a stretch of the calendar when it works and a stretch when it does not, and the dates are not a matter of opinion. People who live near the equator plan harvests, ferries and festivals around the wet months in exactly that way.\n\nSo the next time an article about Indonesia, India, Brazil or West Africa mentions \"the rainy season\", read it as a real chunk of the calendar — months when travel by small boat or dirt road turns genuinely dangerous — not as a rainy week."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Earlier this year Komodo set a cap of 1,000 tourists a day. Why can Komodo legally do that when an ordinary beach town cannot?",
+      "options": [
+        "A tour company bought the island and limits its own customers",
+        "It is a national park, so a government park authority controls who may enter",
+        "Only 1,000 people are allowed to live on the island",
+        "The United Nations sends rangers to count visitors at the dock"
+      ],
+      "answerIndex": 1,
+      "explanation": "A national park is land the government has set aside by law and runs through a park authority, which controls the entrance and can therefore put a number on it."
+    },
+    {
+      "question": "The article says Labuan Bajo “now throngs with diving shops, restaurants, hotels and coffee spots”. That tells you the town is:",
+      "options": [
+        "quiet, with almost nothing open",
+        "packed — crowded with far more of these businesses than before",
+        "losing its shops one by one",
+        "limited to exactly one shop of each kind"
+      ],
+      "answerIndex": 1,
+      "explanation": "To throng with something is to be crowded with it, so the word shows how densely the town has filled up with tourist businesses."
+    },
+    {
+      "question": "The Labuan Bajo Flores Tourism Authority was “set up to implement the ex-president’s ideas”. To implement an idea means to:",
+      "options": [
+        "argue against it in public",
+        "carry it out and do the work that makes it real",
+        "write it down so it is not forgotten",
+        "hand it to someone else to decide"
+      ],
+      "answerIndex": 1,
+      "explanation": "Implementing a plan is doing the real work that turns an announced idea into something that actually exists."
+    },
+    {
+      "question": "“The deaths in December caused widespread dismay.” Dismay is closest to:",
+      "options": [
+        "a shaken, discouraged feeling after bad and unexpected news",
+        "quiet pride in a job well done",
+        "sudden excitement about a surprise",
+        "mild boredom with a familiar story"
+      ],
+      "answerIndex": 0,
+      "explanation": "Dismay mixes shock and sadness at something unwelcome that nobody saw coming — heavier than disappointment, quieter than anger."
+    },
+    {
+      "question": "Officials want access limited “particularly in the dangerous wet season”. Based on the concept card, why is a December boat trip near Komodo risky?",
+      "options": [
+        "December is the coldest month there, so ice forms along the shore",
+        "Komodo's year splits into wet and dry months rather than four seasons, and December falls in the stormy, rough-sea wet half",
+        "The wet season brings only light drizzle, so the weather had nothing to do with it",
+        "Sitting on the equator means Komodo has no seasons at all"
+      ],
+      "answerIndex": 1,
+      "explanation": "Near the equator the temperature barely changes, so the year divides into wet and dry seasons — and Indonesia's wet months, roughly November to March, bring the storms and rough seas that make small boats dangerous."
+    }
+  ]
+}
