@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-01",
+  "title": "Effective altruism is this century’s biggest idea",
+  "articleUrl": "https://www.economist.com/leaders/2026/10/01/effective-altruism-is-this-centurys-biggest-idea",
+  "articlePageUrl": "/articles/2026-10-01.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "adherent",
+      "partOfSpeech": "noun",
+      "pronunciation": "ad-HEER-unt",
+      "articleQuote": "For many of its adherents, the urgent ethical requirement for people who want to do good is to stop artificial intelligence from wiping out humanity.",
+      "meaning": "An **adherent** is someone who has signed up to a set of beliefs and sticks to them — a follower of a doctrine, a movement or a party. The word is cooler and more formal than *fan* or *member*, and it points at the ideas a person holds rather than the club they joined, which is why journalists reach for it when writing about religions, political philosophies and causes. Here it marks out the people who genuinely believe in effective altruism, as opposed to those merely arguing about it, and the article's point is that for many of them the belief now cashes out as one specific mission: keeping AI from destroying humanity.",
+      "examples": [
+        "The coach is an adherent of the slow-build approach, so nobody on the team touches a weight until their form is perfect.",
+        "By the end of the debate she had won three new adherents, while the rest of the club had not budged an inch."
+      ]
+    },
+    {
+      "word": "empiricism",
+      "partOfSpeech": "noun",
+      "pronunciation": "em-PEER-ih-sih-zum",
+      "articleQuote": "Like The Economist, EAs are committed to empiricism",
+      "meaning": "**Empiricism** is the position — it comes from philosophy, and it is the ground rule of modern science — that you settle a question by going and looking, rather than by reasoning it out from first principles or taking an authority's word for it. An empiricist wants the measurement, the data, the experiment; the sibling word *empirical* means exactly \"based on observed evidence\". That is what the article is crediting effective altruists with, since the movement began by asking which donations measurably did the most good instead of which causes felt worthiest. The sting in the piece is that empiricism about the future is far harder than empiricism about the present, because there is nothing there yet to observe.",
+      "examples": [
+        "She settled the argument by empiricism rather than opinion: she timed both routes to school every day for a week and compared the averages.",
+        "The whole point of a science-fair project is empiricism — you cannot simply claim the plant grew faster, you have to measure it."
+      ]
+    },
+    {
+      "word": "grandiose",
+      "partOfSpeech": "adjective",
+      "pronunciation": "GRAN-dee-ohs",
+      "articleQuote": "Anyone wielding a spreadsheet and grandiose claims about the future of humanity is one step away from anointing themself as a central planner.",
+      "meaning": "Something **grandiose** is pitched far grander than it has any right to be: a plan, a claim or a style so sweeping and self-important that the scale itself is the problem. It is almost always an insult, and a precise one — it does not mean *large*, it means inflated, with a hint that the person making the claim is enjoying their own importance. The article uses it to needle effective altruists who pair a spreadsheet with pronouncements about the fate of humanity, the worry being that once you believe you are calculating on behalf of trillions of people, the actual neighbour in front of you starts to look like a rounding error.",
+      "examples": [
+        "His grandiose plan for the group project involved a documentary, a website and a live performance; we had four days and no camera.",
+        "There is a grandiose streak to the speech, which promises to end hunger, fix the schools and rename the stadium, all by June."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The moral circle",
+      "articleQuote": "That leads them to factor a very wide circle of concerns into their moral calculations.",
+      "meaning": "Ask who you actually owe something to, and most people's honest answer is a set of rings: family first, then friends, then neighbours, then fellow citizens, and finally a thin duty to strangers on the other side of the world. Moral philosophy has a name for the outermost ring — the **moral circle**, meaning every being whose suffering you count when you work out what to do — and much of the history of ethics is the story of that circle widening to take in people it used to leave outside.\n\nThe effective altruists in this article take the widening and refuse to stop. Start with the easy case: being good means helping your neighbour. Then ask, as they do, why you should not work just as hard for someone far away, since nothing about distance makes their pain hurt any less. Then ask what *made* the pain count in the first place. If the answer is simply that suffering is bad, animals are inside the circle too, because animals suffer — which is how factory farming and the welfare of shrimp become serious causes rather than jokes. And if being distant in space is no excuse, why should being distant in *time*? People not yet born get weighed in the balance, and there could be trillions of them. A movement that began in the 2000s by working out which charity did the most good per dollar ends up concluding that the most urgent task on earth is stopping AI from killing everyone.\n\nWidening the circle is not free, and that is where the trouble starts. The same attention, money and effort has to stretch across everyone inside it, so each step outward thins the share of whoever was already there. That is why the article can report effective altruists who think insect life matters more in total than human life, on the grounds that there are so many insects — and why *longtermists* will starve today's good causes, such as helping the desperately poor, to shave a risk in the distant future. Nothing in the instruction \"count everyone equally\" tells you where the counting stops.\n\nSo whenever you meet an argument about animal welfare, foreign aid, or what we owe people who will be alive in 2200, the question underneath it is the same one: who is inside the circle, and does being far away in space or time really make someone's claim on you weaker?"
+    },
+    {
+      "name": "Expected value",
+      "articleQuote": "Another is that extinction is so dire that in a crude moral arithmetic even a small chance of it overpowers today’s flesh-and-blood concerns.",
+      "meaning": "How can a disaster that probably will not happen outrank a child who is definitely sick right now? The tool that makes that trade look reasonable comes from probability and decision theory, and it is called **expected value**: you take each possible outcome, multiply what it is worth by the chance of it happening, and add the results up. *Expected* is a slightly misleading label — it does not mean the outcome you should expect, it means the long-run average if the same gamble were run over and over.\n\nWork it on something small. A raffle sells 100 tickets at $1 each, with a single $50 prize. Your chance of winning is 1 in 100, so your ticket's expected value is 0.01 × $50 = 50 cents, against the dollar you paid — a bad bet, and you can see that it is bad without ever running the raffle. Now flip the shape of it and you have insurance: the chance your house burns down this year is tiny, but the loss is so enormous that a small probability times a huge number still comes out big enough to make paying a premium sensible. Both sums are perfectly respectable arithmetic, and together they show the asymmetry that matters: a small probability can safely be ignored when the stakes are small, and cannot be when the stakes are vast.\n\nNow put human extinction in the slot where the burning house was. The loss is not a house, it is everybody — including, if you count the unborn, trillions of people who would never get to exist at all. Multiply that against even a one-in-a-thousand chance and the product dwarfs almost anything you could do for anyone alive today. That is how a movement that started out making charitable giving more cost-effective arrives at the view that the most urgent ethical job is stopping AI from wiping out humanity.\n\nThe article's objection is not that the multiplication is wrong, but that the inputs are guesses: nobody can honestly put a number on the probability of extinction, or on how much a person born in 2300 is worth today, and a made-up probability times an almost unlimited stake will produce whatever answer you were hoping for. So whenever someone justifies a big sacrifice by pairing a small probability with an enormous payoff, the useful question is not whether the arithmetic checks out — it is where those two numbers came from."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is The Economist's overall verdict on effective altruism in this leader?",
+      "options": [
+        "A fringe curiosity with almost no influence on the real world",
+        "Admirable in its roots and its record, but dangerous in where its logic leads",
+        "A dangerous cult whose charitable work is only a cover story",
+        "Entirely correct, apart from its enthusiasm for animal welfare"
+      ],
+      "answerIndex": 1,
+      "explanation": "The piece calls EA's charitable roots praiseworthy and its AI predictions impressive, then warns that its moral arithmetic reaches repugnant conclusions and that EAs may end up with worrying power over AI."
+    },
+    {
+      "question": "The article credits effective altruists with a commitment to **empiricism**. What does that commit them to?",
+      "options": [
+        "Settling questions by observation, measurement and evidence",
+        "Deciding moral questions by appeal to tradition and long-standing norms",
+        "Trusting the judgement of the most respected philosopher in the field",
+        "Preferring whichever argument is most logically elegant, whatever the data say"
+      ],
+      "answerIndex": 0,
+      "explanation": "Empiricism settles a question by going and looking — which is how EA began, by asking which donations measurably did the most good; the article notes that EAs rate reason above tradition or norms."
+    },
+    {
+      "question": "According to the article, which two leading AI labs did effective altruists help start?",
+      "options": [
+        "Google DeepMind and Meta AI",
+        "Nvidia and Palantir",
+        "OpenAI and Anthropic",
+        "IBM Research and the Pentagon's own lab"
+      ],
+      "answerIndex": 2,
+      "explanation": "EAs helped start OpenAI and Anthropic in the belief that those who understood AI's dangers should control its development — though the article notes this probably accelerated progress by creating more competition."
+    },
+    {
+      "question": "Many effective altruists argue that even a small chance of human extinction should outrank urgent suffering today. Which piece of reasoning is that argument built on?",
+      "options": [
+        "Events in the distant future can be predicted more reliably than present ones",
+        "A very small probability multiplied by a vast enough loss can still produce an enormous number",
+        "Rare events become more likely the longer you wait for them",
+        "Suffering today has already been dealt with by existing charities"
+      ],
+      "answerIndex": 1,
+      "explanation": "That is expected value — probability times magnitude — and the article's objection is not to the multiplication but to the fact that both numbers are guesses."
+    },
+    {
+      "question": "Which sentence uses its italicised word correctly?",
+      "options": [
+        "Her *grandiose* proposal was deliberately small, cheap and easy to approve.",
+        "As an *adherent* of the method, he keeps to it even when it costs him.",
+        "The budget committee was *grandiose* about costs, trimming every line it could.",
+        "She was an *adherent* of the theory right up until the moment she first heard of it."
+      ],
+      "answerIndex": 1,
+      "explanation": "An *adherent* sticks to a doctrine they have signed up to, so sticking with it at a cost is exactly right; *grandiose* means inflated and self-important, which is the opposite of deliberately modest."
+    }
+  ]
+}
