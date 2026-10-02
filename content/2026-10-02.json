@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-02",
+  "title": "It may soon be possible to create “mirror life”",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/09/30/it-may-soon-be-possible-to-create-mirror-life",
+  "articlePageUrl": "/articles/2026-10-02.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "conclave",
+      "partOfSpeech": "noun",
+      "pronunciation": "KON-klayv",
+      "articleQuote": "The answer, discussed this week by a conclave of concerned biologists meeting at the Singapore Conference on Mirror Life, is potentially terrifying.",
+      "meaning": "A **conclave** is a private meeting of a small group of people who have the standing to decide something. The word comes from the Latin for *with a key*, because the cardinals who elect a pope are locked in until they agree, and the papal conclave is still the most famous one — but journalists borrow it for any closed, serious gathering where a field's senior figures work out a position behind a door, with a faint suggestion that everyone else is waiting outside for the verdict. Here it is the biologists who gathered in Singapore: not a conference anyone could wander into, but the handful of people who actually work on this, sitting down to agree what the world should do about mirror life.",
+      "examples": [
+        "The three team captains disappeared into a conclave in the equipment room and came out twenty minutes later with a completely new batting order.",
+        "Our parents held a conclave about the sleepover and we were not invited, which told us everything about how it was going."
+      ]
+    },
+    {
+      "word": "promulgate",
+      "partOfSpeech": "verb",
+      "pronunciation": "PROM-ul-gayt",
+      "articleQuote": "These will be promulgated in a report to be issued in a few months’ time.",
+      "meaning": "To **promulgate** something is to put it out officially and publicly, so that from that moment it counts: a government promulgates a law, a committee promulgates its findings, a church promulgates a doctrine. It is stronger than *announce* and different from *publish* — the force of the word is that a body with the authority to take a position is formally handing that position to the world. The Singapore recommendations will be promulgated in a report a few months from now, which is the moment they stop being the private views of a few dozen biologists and become the field's stated line, the thing governments can be asked to act on.",
+      "examples": [
+        "The new phone rules were promulgated in an all-school email on Monday, and by Tuesday three people had already lost their phones to a drawer in the office.",
+        "Student council can argue about the budget for weeks, but nothing is real until the decision is promulgated in the minutes."
+      ]
+    },
+    {
+      "word": "disabuse",
+      "partOfSpeech": "verb",
+      "pronunciation": "dis-uh-BYOOZ",
+      "articleQuote": "was there to disabuse them",
+      "meaning": "To **disabuse** someone is to free them of a belief that is wrong — you take away the comfortable idea they were holding and leave them with the uncomfortable truth instead. It nearly always arrives in the frame *disabuse someone of* a notion, and the word hiding inside it is *abuse* in its older sense of misuse: a person misled by a false idea has been ill-used by it, and disabusing them undoes that. The article reaches for it at the sharpest moment of the meeting, where some people still doubted mirror life was genuinely dangerous and Deepa Agashe arrived with measurements of soil, blood and gut contents — not to argue the point politely, but to take the doubt away.",
+      "examples": [
+        "I spent the whole bus ride trying to disabuse him of the idea that you can cram a semester of biology into one night.",
+        "One look at the scoreboard disabused us of the notion that this was going to be an easy game."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Chirality",
+      "articleQuote": "Life’s handedness—or chirality, to use the technical term—arises in part from molecules called amino acids, the building blocks of proteins (themselves the building blocks of bodies).",
+      "meaning": "Put both hands flat on the table, palms down, and look at them. They are built from the same parts in the same arrangement, and they are still not the same object: no matter how you turn your left hand, it will never sit on top of your right. Chemistry has a name for that property — **chirality**, from the Greek *kheir*, hand — and single molecules can have it too.\n\nHere is how a molecule gets it. Take one carbon atom, which can hold four things at once, and attach four *different* things to it. The four stick out towards the corners of a pyramid, and there are exactly two ways to do the attaching: swap any two of the four and the result is a mirror image of the first, not a rotated copy of it. If two of the four happen to be identical — in one amino acid the variable part is just a hydrogen atom, duplicating one of the others — the two versions collapse into the same shape and the handedness vanishes. Chemists label the two versions left-handed and right-handed by a convention the article itself calls arbitrary, so don't look for meaning in which is which; the fact that there are two is the point.\n\nNow the strange fact. Life on Earth uses one hand and almost never the other. Every amino acid your cells string together into protein is the left-handed one; the sugars forming the backbone of your DNA are right-handed. That matters because shape is how molecules act on each other — an enzyme grips a molecule only when the bumps on one fit the pockets on the other — so handedness decides whether a reaction happens at all. It is not an academic point. Thalidomide, sold in the late 1950s for morning sickness, was a mixture of both hands, and only one of them caused the birth defects that followed; drug makers now go to enormous lengths to sell a single hand.\n\nSo when two substances have identical chemical formulas and behave completely differently inside a body, chirality is the first thing to suspect: the same parts, assembled the other way round, fitting nothing."
+    },
+    {
+      "name": "Bacteriophages",
+      "articleQuote": "Mirror bacteria could also, they noted, be indigestible to single-celled creatures, such as amoebae, that are the principal predators of bacteria, and resistant to the viruses, called bacteriophages, which also keep bacterial populations under control.",
+      "meaning": "One *E. coli* cell, given food and warmth, splits in two roughly every twenty minutes. Keep that doubling up for two days and the arithmetic hands you a mass of bacteria heavier than the Earth. The world is plainly not knee-deep in bacteria, so something is removing them almost exactly as fast as they are made, and microbiology's answer is blunt: bacteria are eaten, and bacteria get infected.\n\nThree things do most of that removing. Single-celled predators such as amoebae engulf bacteria whole and dissolve them with digestive enzymes. Inside an animal, immune cells carry proteins on their surface that bind to molecules on the bacterial coat, and it is that binding — shapes fitting together — which sets off the attack. And then there are **bacteriophages**, a name that means *bacteria-eaters*: viruses that infect bacteria and nothing else. A phage is a small protein shell holding a loop of DNA. It drifts into a bacterium, docks onto one specific molecule on the cell wall, pushes its DNA through into the cell, and the bacterium's own protein-building machinery is then used to assemble a hundred or so new phages until the cell splits open and they spill out. Phages are the most numerous biological objects on the planet — a single teaspoon of seawater holds tens of millions of them.\n\nNow notice what all three brakes have in common: each one needs a molecule on the attacker's side to fit a molecule on the bacterium. That is exactly why the Singapore meeting is alarmed. On a mirror bacterium every one of those surface molecules would be the opposite hand, so the amoeba's enzymes, the immune cell's binding proteins and the phage's docking site would all meet shapes they cannot grip. Nothing eating it and nothing infecting it means nothing to stop the doubling.\n\nThe lesson travels well beyond mirror life: when a population in nature holds steady, it is almost never because it ran out of ambition. Something is eating it, and the useful question is always what."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why do the biologists meeting in Singapore think a mirror bacterium could be so dangerous?",
+      "options": [
+        "It would be able to digest the left-handed amino acids of normal life, starving other organisms",
+        "Its surface molecules would be the opposite hand, so immune cells, amoeba predators and bacteriophages would all meet shapes they cannot grip",
+        "It would reproduce faster than any bacterium known today",
+        "It would produce a toxin that no existing medicine can block"
+      ],
+      "answerIndex": 1,
+      "explanation": "Everything that normally holds a bacterial population down depends on one molecule fitting another, and a mirror bacterium's molecules would be the wrong handedness for all of them."
+    },
+    {
+      "question": "What does it mean to say that an amino acid is \"handed\"?",
+      "options": [
+        "It can bend in two directions, the way a finger does",
+        "It carries either a positive or a negative electric charge",
+        "It comes in two forms built from identical parts that are mirror images of each other and cannot be laid on top of one another",
+        "It functions only on one side of the body"
+      ],
+      "answerIndex": 2,
+      "explanation": "Chirality means two arrangements of the very same parts that relate like a left and a right hand — no amount of turning makes one sit on the other."
+    },
+    {
+      "question": "The article describes the Singapore meeting as \"a conclave of concerned biologists\". What does conclave tell you about it?",
+      "options": [
+        "It was a published collection of their research papers",
+        "It was a public protest against the research",
+        "It was a government agency set up to regulate laboratories",
+        "It was a closed meeting of the small group of people with the standing to decide something"
+      ],
+      "answerIndex": 3,
+      "explanation": "A conclave is a private gathering of the people who actually decide — the cardinals locked in to elect a pope are the original one."
+    },
+    {
+      "question": "The meeting's recommendations \"will be promulgated in a report\" in a few months. What will that report do?",
+      "options": [
+        "Issue the recommendations officially and publicly, as the group's formal position",
+        "Keep them private while the scientists argue the details out",
+        "Test them in the laboratory before anyone sees them",
+        "Water them down so that governments will accept them"
+      ],
+      "answerIndex": 0,
+      "explanation": "To promulgate something is to put it out officially, which is the moment private views become a stated position others can be asked to act on."
+    },
+    {
+      "question": "Deepa Agashe presented data on how much achiral — unhanded — nutrition sits in soil, blood and the gut. Which belief was she there to disabuse people of?",
+      "options": [
+        "That mirror life is already being built in secret somewhere",
+        "That E. coli is a harmless bacterium",
+        "That chirality is a chemical curiosity with no real role in biology",
+        "That a mirror bacterium would struggle to find anything it could eat, and so could not spread far"
+      ],
+      "answerIndex": 3,
+      "explanation": "To disabuse someone is to remove a mistaken belief, and her measurements showed there is enough unhanded food in soil, blood and the gut to support a mirror organism, so hunger would not contain it."
+    }
+  ]
+}
