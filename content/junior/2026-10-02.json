@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-02",
+  "title": "The Swiss watch industry is shrinking—but getting swankier",
+  "articleUrl": "https://www.economist.com/business/2026/10/01/the-swiss-watch-industry-is-shrinking-but-getting-swankier",
+  "articlePageUrl": "/articles/junior/2026-10-02.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "sophisticated",
+      "partOfSpeech": "adjective",
+      "pronunciation": "suh-FIS-tih-kay-tid",
+      "articleQuote": "Many brands invested in new materials and more sophisticated movements to differentiate themselves.",
+      "meaning": "Something sophisticated is advanced and cleverly complicated — many carefully designed parts working together instead of one simple part doing one simple job. (Used of a person it means worldly and refined, which is the meaning you may already know.) In the article the brands built more sophisticated movements: watch mechanisms with more pieces, doing more than just showing the hours and minutes.",
+      "examples": [
+        "The sequel's graphics are more sophisticated than the first game's — the water actually ripples where you walk through it.",
+        "Our science-fair volcano was simple; the eighth-graders' earthquake table was far more sophisticated."
+      ]
+    },
+    {
+      "word": "subsequent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SUB-sih-kwent",
+      "articleQuote": "The pandemic and the subsequent years have made the industry more adventurous,",
+      "meaning": "Subsequent means coming after — later in time than the thing just mentioned. It is the word writers reach for when they do not want to name the years, games or chapters one by one. Ben Küffer of Norqain speaks of the pandemic and the subsequent years, meaning the pandemic itself plus the stretch of years that followed it.",
+      "examples": [
+        "We lost the opener, but we won every subsequent game and still made the playoffs.",
+        "The first chapter is slow; every subsequent chapter is hard to put down."
+      ]
+    },
+    {
+      "word": "deliberate",
+      "partOfSpeech": "adjective (also a verb)",
+      "pronunciation": "dih-LIB-ur-it",
+      "articleQuote": "Rolex says the scarcity of its wares is not deliberate policy, but the result of its focus on craftsmanship.",
+      "meaning": "Something deliberate is done on purpose — planned and intended, not an accident or a side effect. Rolex insists the shortage of its watches is not deliberate policy: it says it is not holding watches back to build up waiting lists on purpose, it simply makes them slowly and carefully. Watch the pronunciation: the adjective ends *-it* (dih-LIB-ur-it), while the verb *deliberate*, meaning to think something over, ends *-ate* (dih-LIB-ur-ate).",
+      "examples": [
+        "Stepping on my foot was an accident; hiding my shoes was deliberate.",
+        "She made a deliberate choice to sit with the new kid at lunch."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Watch movements",
+      "articleQuote": "quartz timepieces, which use electronic rather than mechanical movements",
+      "meaning": "The article sorts every Swiss watch into two kinds — quartz and mechanical — and never stops to say what is actually inside them. The difference is the engine, and watchmakers call that engine the **movement**: the parts that keep the hands turning at exactly the right speed. This is engineering, and the two engines work on completely different ideas.\n\nA **mechanical** movement runs on a tightly coiled metal spring. You wind the spring up (or your wrist winds it for you as you walk), and as it slowly uncoils it pushes a train of tiny toothed gears. One more part stops the whole thing from unwinding at once: a small wheel rocks back and forth, blocking and releasing the gears several times a second. That rocking is the ticking you hear. There is no battery anywhere in it. A mechanical watch is a machine in the same way a wind-up toy is a machine.\n\nA **quartz** movement uses a trick from physics instead. Quartz is a hard, clear crystal, and when electricity runs through a thin sliver of it, the sliver vibrates — always at the same rate. In a watch that rate is 32,768 shakes per second. A battery feeds the sliver, a tiny circuit counts the shakes, and every time the count reaches 32,768 the circuit moves the second hand one step. That is why a quartz watch steps once a second while a mechanical one sweeps smoothly, and why it keeps better time: counting a crystal's shakes is steadier than a spring uncoiling through gears.\n\nNow the part that explains the article. Hundreds of spring-and-gear pieces have to be fitted together by a person, so a mechanical movement is slow and expensive to build. A quartz movement is a battery, a crystal and a printed circuit — cheap, and a factory can stamp out thousands of them. So when smart watches arrived, already carrying a battery and a circuit and a screen besides, the watch they undercut was the cheap quartz one, which is why the article says quartz sales were hit particularly hard. The hand-built mechanical watch was never really in that fight: nobody pays SFr14,000 for a Rolex because it is the most accurate way to find out what time it is.\n\nSo whenever a story mentions a watch movement, read it as the engine — and ask which kind it is: a wound spring, or a shaking crystal."
+    },
+    {
+      "name": "Market share",
+      "articleQuote": "just five of the poshest—Rolex, Cartier, Patek Philippe, Omega and Audemars Piguet—captured 60% of revenue",
+      "meaning": "Switzerland is home to about 450 watch brands. Five of them take 60% of the money. That 60% is a **market share**, and it is one of the most useful numbers in any business story.\n\nStart with the market. Economists use that word for all the buying and selling of one kind of thing in one place — here, every Swiss watch sold anywhere in the world in a year. Add up what buyers paid for all of them and you have the size of the market. A company's market share is its slice of that total, written as a percentage.\n\nPicture the snack stalls at your school fair. Six stalls sell food, and by closing time the six of them have taken $400 between them. Your stall took $200. Your market share is 50% — half the market — even though you are only one stall out of six. The percentage tells you something the plain $200 does not: not just how much you sold, but how much of everything sold was yours.\n\nHere is the catch that explains the headline. Market share is usually counted in money, not in items. Rolex sold almost 1.2m watches last year, a small slice of all the watches Switzerland sends out. But at an average retail price of SFr14,000, its slice of the *money* is huge — revenue of more than SFr11bn. That is how an industry can shrink and get richer at the same time: the number of watches leaving Switzerland has fallen by half in ten years, while a smaller and smaller group of brands collects more and more of what is paid for them.\n\nOne phrase to watch for: *gaining share*. It does not mean selling more. It means taking a bigger slice than before — and a brand can gain share in a year when its own sales shrink, as long as its rivals' sales shrink faster. The article says all five leaders except Omega have been gaining share, which is how five companies out of 450 end up with most of the industry.\n\nSo when you read that some company is \"number one\", ask two questions: how big is the whole market, and is the share counted in money or in things? A 60% share of a giant market and a 60% share of a tiny one are completely different news."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Last year five brands — Rolex, Cartier, Patek Philippe, Omega and Audemars Piguet — captured 60% of revenue out of Switzerland's roughly 450 watch brands. What does that 60% measure?",
+      "options": [
+        "The share of all Swiss watches those five brands physically made",
+        "Their share of the money paid for Swiss watches — their market share, counted in revenue",
+        "The share of Swiss watch factories those five brands own",
+        "How much their prices rose compared with the other 445 brands"
+      ],
+      "answerIndex": 1,
+      "explanation": "Market share is a company's slice of everything spent in a market, and here it is counted in revenue — which is why five brands can hold 60% of the money without making 60% of the watches."
+    },
+    {
+      "question": "According to the concept card, what is inside a quartz movement that makes it cheap to build compared with a mechanical one?",
+      "options": [
+        "A tightly coiled spring and hundreds of tiny gears fitted together by hand",
+        "A battery, a sliver of vibrating quartz crystal and a small printed circuit",
+        "A miniature electric motor turning the hands at one rotation per minute",
+        "A radio receiver that picks up the time from a government clock"
+      ],
+      "answerIndex": 1,
+      "explanation": "A quartz movement is a battery, a crystal that vibrates 32,768 times a second and a circuit that counts the shakes — parts a factory can stamp out, unlike the hundreds of hand-fitted pieces in a spring-and-gear movement."
+    },
+    {
+      "question": "Brands \"invested in new materials and more sophisticated movements to differentiate themselves\". Sophisticated here means:",
+      "options": [
+        "cheaper to produce in large numbers",
+        "advanced and cleverly complicated, with more parts doing more",
+        "old-fashioned and traditional",
+        "polite and well-mannered"
+      ],
+      "answerIndex": 1,
+      "explanation": "Sophisticated describes something advanced and intricately designed — here, watch mechanisms with more pieces doing more than simply showing the time."
+    },
+    {
+      "question": "Rolex says the scarcity of its watches \"is not deliberate policy, but the result of its focus on craftsmanship\". What is Rolex claiming?",
+      "options": [
+        "That it creates the shortage on purpose to make people want its watches more",
+        "That the shortage is not on purpose — it simply builds watches slowly and carefully",
+        "That its watches are not actually scarce at all",
+        "That its dealers have been hiding watches without permission"
+      ],
+      "answerIndex": 1,
+      "explanation": "Deliberate means done on purpose, so saying the scarcity is not deliberate policy is Rolex's way of insisting the waiting lists are a side effect of careful making, not a plan."
+    },
+    {
+      "question": "Ben Küffer of Norqain says \"the pandemic and the subsequent years have made the industry more adventurous\". The subsequent years are:",
+      "options": [
+        "the years that came before the pandemic",
+        "the years that followed the pandemic",
+        "the worst years of the pandemic itself",
+        "the years still to come, which nobody has seen yet"
+      ],
+      "answerIndex": 1,
+      "explanation": "Subsequent means coming after, so the subsequent years are the stretch of years following the pandemic."
+    }
+  ]
+}
