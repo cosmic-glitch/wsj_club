@@ -1,0 +1,481 @@
+[
+  {
+    "k": "perverse",
+    "t": "perverse",
+    "kind": "vocab",
+    "pron": "pur-VURSS",
+    "forms": [
+      "perverse"
+    ],
+    "text": "Something is perverse when it produces the opposite of what it was meant to produce. In everyday speech it can just mean stubbornly contrary, but in writing about law, economics and policy it is the exact word for a rule that rewards the behaviour it was built to discourage. The article calls tax systems perverse and then proves it: a British parent who earns one pound more than £99,999 loses free child care worth thousands, so a system meant to reward work makes earning more a mistake.",
+    "audio": true
+  },
+  {
+    "k": "coax",
+    "t": "coax",
+    "kind": "vocab",
+    "pron": "KOHKS",
+    "forms": [
+      "coax"
+    ],
+    "text": "To coax is to get something out of someone, or something, by patience and gentle pressure rather than force — you coax a frightened cat out from under a bed. The word implies the thing is reluctant and that pushing harder would backfire. No government can order an economy to grow, so it cuts rates, loosens rules and offers incentives, coaxing growth out; the article's complaint is that across the rich world even that is barely working.",
+    "audio": true
+  },
+  {
+    "k": "hedge",
+    "t": "hedge",
+    "kind": "vocab",
+    "pron": "HEJ",
+    "forms": [
+      "hedge"
+    ],
+    "text": "A hedge is something you do now to limit the damage if things go the way you hope they won't. The original hedge is the row of bushes around a field, a boundary keeping trouble out, and finance borrowed the image: hedging a bet means placing a second, smaller bet on the other outcome so being wrong costs less. Hedging is not predicting — the whole point is that you don't know. Shifting tax off wages today is the article's hedge: if AI really does swallow jobs, less of the state's income was resting on wages to begin with.",
+    "audio": true
+  },
+  {
+    "k": "yield",
+    "t": "yield",
+    "kind": "word",
+    "forms": [
+      "yield"
+    ],
+    "text": "The yield here has nothing to do with yielding to traffic or a crop's yield. On a bond it is the annual return a lender actually earns, as a percentage of what they paid: a bond bought for $800 that pays $50 a year yields 6.25%. Because the payment is fixed, a falling bond price means a rising yield — so a yield charging through 5% on US government debt means lenders are now demanding more to lend, not that anyone announced a new rate.",
+    "audio": true
+  },
+  {
+    "k": "spread",
+    "t": "spread",
+    "kind": "word",
+    "forms": [
+      "spread"
+    ],
+    "text": "A spread in finance is simply the gap between two numbers, usually two interest rates — nothing to do with spreading butter or a disease spreading. France and Germany both borrow in euros, so subtracting the German yield from the French one strips out everything the two share and leaves a fairly clean measure of how much extra doubt lenders have about France. The article's alarm is that this gap is as wide as it was during the euro-zone crisis of 2012.",
+    "audio": true
+  },
+  {
+    "k": "charged",
+    "t": "charged",
+    "kind": "word",
+    "forms": [
+      "charged"
+    ],
+    "text": "Charged here means moved fast and forcefully, the way a bull charges — not charging money or charging a phone. Saying the yield has charged through the 5% barrier makes the number sound like something breaking loose rather than drifting upward. Journalists reach for charging verbs when a figure crosses a level people had been treating as a limit.",
+    "audio": true
+  },
+  {
+    "k": "fare",
+    "t": "fare",
+    "kind": "word",
+    "forms": [
+      "fare"
+    ],
+    "text": "This fare is not a bus fare or a word for food. To fare is to get on, to turn out, to end up in a certain condition — you fare well or badly. When the article says Germany and France would not fare much better than Italy, it means their public finances would end up in nearly as bad a state. The related everyday words are farewell and the question how did you fare.",
+    "audio": true
+  },
+  {
+    "k": "prompt",
+    "t": "prompt",
+    "kind": "word",
+    "forms": [
+      "prompt"
+    ],
+    "text": "Not a writing prompt and not a prompt you type into a chatbot, and not the adjective meaning punctual. As a verb, to prompt is to cause someone to act — the nudge that makes a person do a thing they weren't going to do. The strange tax cliff at £100,000 can prompt Britain's most productive workers to cut their hours, meaning the rule itself is what pushes them into it.",
+    "audio": true
+  },
+  {
+    "k": "mint",
+    "t": "mint",
+    "kind": "word",
+    "forms": [
+      "mint"
+    ],
+    "text": "A mint is the place where a government makes coins, and to mint money is to manufacture it — which is why mint has come to mean creating wealth suddenly and in quantity. Nothing to do with the herb or the sweet. Saying AI is likely to mint vast fortunes for a select few pictures new fortunes being stamped out, fast, for a small group of people.",
+    "audio": true
+  },
+  {
+    "k": "club",
+    "t": "club",
+    "kind": "word",
+    "forms": [
+      "club"
+    ],
+    "text": "Not a nightclub and not something you hit a ball with. A club in this sense is a group that you have to qualify to join and whose members share rules and obligations — and journalists use it for groups of countries, as in the article's description of the OECD as a club of mostly rich countries. The word carries a hint that getting in is the point, and that the members look after one another.",
+    "audio": true
+  },
+  {
+    "k": "cut",
+    "t": "cut",
+    "kind": "word",
+    "forms": [
+      "cut"
+    ],
+    "text": "Cut does double duty in this article. Workers cut their hours and AI could cut wages, both meaning reduce — but when the state gets a bigger cut when Elon Musk buys another plane, a cut is a share of the money, the slice you take off the top. That second sense is everywhere in business writing: a cut of the profits, the agent's cut.",
+    "audio": true
+  },
+  {
+    "k": "returns",
+    "t": "returns",
+    "kind": "word",
+    "forms": [
+      "returns"
+    ],
+    "text": "Returns here are not items taken back to a shop. A return is what an investment earns you — the profit on money you put in, usually stated as a percentage per year. The article's complaint about capital-gains tax is that it currently overpenalises normal returns, the ordinary gains anyone saving money would expect, while undertaxing the spectacular ones.",
+    "audio": true
+  },
+  {
+    "k": "share",
+    "t": "share",
+    "kind": "word",
+    "forms": [
+      "share"
+    ],
+    "text": "A share here is a portion of a whole, not a share of stock in a company and not something you post. Everything a country produces in a year gets divided up, and labour's share of GDP is the fraction of it that reaches people as pay rather than as profit to owners. The worry running through the article is that this share falls while the total stays the same.",
+    "audio": true
+  },
+  {
+    "k": "points",
+    "t": "points",
+    "kind": "word",
+    "forms": [
+      "points"
+    ],
+    "text": "When a percentage itself moves, the movement is measured in percentage points, usually shortened to points — so labour's share of national income falling by ten points means falling from, say, 58% to 48%. This matters because points and percent are easily confused: a fall of ten points from 58% is not the same as a fall of ten percent, which would only take it to about 52%. Points are the cleaner way to talk about a gap between two percentages.",
+    "audio": true
+  },
+  {
+    "k": "allowances",
+    "t": "allowances",
+    "kind": "word",
+    "forms": [
+      "allowances"
+    ],
+    "text": "Not pocket money from a parent. In tax law an allowance is a slice of income or gain the government agrees not to tax at all, so you only pay on what is left above it. The article's proposal pairs a higher headline rate with allowances that exempt normal returns — tax the extraordinary gains hard, but let ordinary ones through untouched.",
+    "audio": true
+  },
+  {
+    "k": "constitute",
+    "t": "constitute",
+    "kind": "word",
+    "forms": [
+      "constitute"
+    ],
+    "text": "To constitute something is to make it up, to amount to it — not to establish or found it, which is the other sense you meet in constitution. Saying labour taxes constitute 52% of the cost of employing a person in Belgium means that is how much of the total they account for. The useful habit is to read constitute as add up to.",
+    "audio": true
+  },
+  {
+    "k": "median",
+    "t": "median",
+    "kind": "word",
+    "forms": [
+      "median"
+    ],
+    "text": "The median is the middle value when you line every case up in order, so half are above it and half below — not the average, which adds everything up and divides. Statisticians prefer it when a few extreme values would drag the average somewhere misleading; the median salary is not pulled upward by a handful of billionaires the way the mean is. The median employee in the article is therefore the typical worker, not the typical amount of tax.",
+    "audio": true
+  },
+  {
+    "k": "ubiquitous",
+    "t": "ubiquitous",
+    "kind": "word",
+    "forms": [
+      "ubiquitous"
+    ],
+    "text": "Ubiquitous means found absolutely everywhere, present at every turn. It comes from the Latin for everywhere, and it carries a faint suggestion that the thing has become so common you have stopped noticing it. That is precisely the article's point: the flaws in modern tax systems are so ubiquitous that people treat them as part of the economic backdrop rather than as problems.",
+    "audio": true
+  },
+  {
+    "k": "litany",
+    "t": "litany",
+    "kind": "word",
+    "forms": [
+      "litany"
+    ],
+    "text": "A litany is a long, repetitive list, and it is nearly always used wearily — a litany of complaints, a litany of excuses. The word began as a church prayer in which a priest reads out line after line and the congregation answers each one, which is where the sense of dreary repetition comes from. The litany of exemptions is the article's way of saying the carve-outs in consumption tax are not a handful but an endless recital.",
+    "audio": true
+  },
+  {
+    "k": "levy",
+    "t": "levy",
+    "kind": "word",
+    "forms": [
+      "levy"
+    ],
+    "text": "A levy is a charge imposed by a government, and to levy is to impose one — the word also covers conscripting soldiers, which gives you the flavour: something the state demands rather than asks for. California's ballot proposal would levy a one-off 5% charge on residents worth more than a billion dollars. Levy tends to appear when the charge is new, specific, or aimed at a particular group.",
+    "audio": true
+  },
+  {
+    "k": "fiscal",
+    "t": "fiscal",
+    "kind": "word",
+    "forms": [
+      "fiscal"
+    ],
+    "text": "Fiscal means having to do with government money — what the state taxes, what it spends, and what it borrows to cover the gap. It comes from the Latin for a money basket, and it is the standard adjective in this corner of economics: fiscal policy, fiscal year, fiscal deficit. The article uses it three times, and its fiscal weather is the overall state of a government's finances, which is why the hurricane image works.",
+    "audio": true
+  },
+  {
+    "k": "ingenuity",
+    "t": "ingenuity",
+    "kind": "word",
+    "forms": [
+      "ingenuity"
+    ],
+    "text": "Ingenuity is cleverness at inventing or working things out, especially under constraints — the knack for finding a way. Note that it does not mean the same as ingenuous, which means innocently frank. The line about tax avoidance no longer being limited by human ingenuity is a genuinely unsettling one: until now there were only so many accountants thinking up schemes, and AI removes that ceiling.",
+    "audio": true
+  },
+  {
+    "k": "upended",
+    "t": "upended",
+    "kind": "word",
+    "forms": [
+      "upended"
+    ],
+    "text": "To upend something is to turn it upside down, and figuratively to overturn it so completely that the old arrangement no longer works. It is stronger than change or disrupt — upended things do not get back on their feet in the old position. The claim that the tax base may be upended by artificial intelligence is the article's whole thesis compressed into one word.",
+    "audio": true
+  },
+  {
+    "k": "bolstered",
+    "t": "bolstered",
+    "kind": "word",
+    "forms": [
+      "bolstered"
+    ],
+    "text": "A bolster is a long firm cushion used to prop something up, and to bolster is to support or strengthen — usually with the sense of shoring up something that might otherwise sag. A spending plan bolstered by a promise to curb pension increases is one propped up by that promise, because the saving is what makes the sums work. You will meet it constantly in news writing: bolster confidence, bolster defences, bolster a claim.",
+    "audio": true
+  },
+  {
+    "k": "curb",
+    "t": "curb",
+    "kind": "word",
+    "forms": [
+      "curb"
+    ],
+    "text": "To curb something is to hold it back or keep it within limits. The image is literal: a curb was the chain under a horse's jaw that a rider pulled to check it, and the kerb at the roadside is the same idea of a restraining edge. The article uses it twice — curbing state-pension increases, and curbing the influence Elon Musk can buy — and in both cases the thing is not stopped, just reined in.",
+    "audio": true
+  },
+  {
+    "k": "taboo-busting",
+    "t": "taboo-busting",
+    "kind": "word",
+    "forms": [
+      "taboo-busting"
+    ],
+    "text": "A taboo is something a society treats as unmentionable, so strongly that people avoid even raising it; the word came into English from Tongan. A taboo-busting promise is one that says out loud what politicians have agreed not to say. Cutting the yearly rise in state pensions is a classic example — pensioners vote in large numbers, so the subject is normally untouchable.",
+    "audio": true
+  },
+  {
+    "k": "carve-outs",
+    "t": "carve-outs",
+    "kind": "word",
+    "forms": [
+      "carve-outs"
+    ],
+    "text": "A carve-out is a piece deliberately cut out of a rule so that the rule does not apply to it — the lobbying prize of tax policy. Germany's lower tax rate on cow's milk than on oat milk is a carve-out; so is every zero-rated category in a sales or value-added tax. The article's figure is the cost of them all added up: consumption taxes across the OECD raise only 58% of what they could without carve-outs and evasion.",
+    "audio": true
+  },
+  {
+    "k": "evasion",
+    "t": "evasion",
+    "kind": "word",
+    "forms": [
+      "evasion"
+    ],
+    "text": "Evasion is getting out of something you owe, and in tax it specifically means doing so illegally — hiding income, faking expenses, not declaring an account. It is the twin of tax avoidance, which uses the law's own loopholes and is legal; keeping the two apart is one of the genuinely useful distinctions in this subject. Evasion lands people in court, avoidance only in the newspapers.",
+    "audio": true
+  },
+  {
+    "k": "exemptions",
+    "t": "exemptions",
+    "kind": "word",
+    "forms": [
+      "exemptions",
+      "exempt"
+    ],
+    "text": "To exempt something is to free it from a rule that otherwise applies, and an exemption is that free pass written into law. Tax codes are thick with them, which is exactly the article's objection: ending the litany of exemptions would let consumption taxes raise far more without the rate changing at all. Elsewhere it argues for a deliberate exemption, allowances that exempt normal investment returns while taxing exceptional ones.",
+    "audio": true
+  },
+  {
+    "k": "pickle",
+    "t": "pickle",
+    "kind": "word",
+    "forms": [
+      "pickle"
+    ],
+    "text": "To be in a pickle is to be in an awkward, difficult spot with no easy way out — the idiom is centuries old and probably comes from being stuck in the salty brine used to preserve food. Calling Britain's position a fiscal pickle is pointed understatement: the government has just made a politically painful promise and still cannot make its budget add up.",
+    "audio": true
+  },
+  {
+    "k": "makes-landfall",
+    "t": "makes landfall",
+    "kind": "phrase",
+    "forms": [
+      "makes landfall"
+    ],
+    "text": "Makes landfall is the standard meteorological phrase for the moment a storm that formed over the ocean reaches the coast — the point at which forecasts stop and damage starts. The article runs the image all the way through: a hurricane is coming to tax systems, governments should strengthen things before it makes landfall, and the country that gets ahead of the hurricane will be glad it did.",
+    "audio": true
+  },
+  {
+    "k": "do-their-bit",
+    "t": "doing their bit",
+    "kind": "phrase",
+    "forms": [
+      "doing their bit"
+    ],
+    "text": "To do your bit is to contribute the share of some shared effort that is fairly yours. It carries a strong whiff of wartime Britain, when the phrase was used of rationing and volunteering, and it survives in ordinary speech about chores, teamwork and fundraising. Saying many people feel the rich aren't doing their bit frames tax not as a bill but as an obligation to everyone else.",
+    "audio": true
+  },
+  {
+    "k": "government-bonds",
+    "t": "government bonds",
+    "kind": "name",
+    "forms": [
+      "government bonds"
+    ],
+    "text": "A government bond is an IOU a state sells to raise money: give the government $1,000 now, receive a fixed payment every year, and get the $1,000 back on a set date. Because they can be resold afterwards, their prices move constantly, and those prices are how lenders register their opinion of a government. Nearly every rich country spends more than it taxes, so this is how the shortfall gets funded.",
+    "audio": true
+  },
+  {
+    "k": "treasuries",
+    "t": "Treasuries",
+    "kind": "name",
+    "forms": [
+      "Treasuries",
+      "Treasury"
+    ],
+    "text": "Treasuries are bonds issued by the United States government, named after the Treasury department that sells them, and the ten-year Treasury is the single most watched interest rate in the world — the benchmark almost every other loan is priced against. Confusingly, the article also uses Treasury for Britain's finance ministry, when it says don't bet on the Treasury to keep up with AI-designed tax avoidance. Same word, two things: the American bonds, and the British department.",
+    "audio": true
+  },
+  {
+    "k": "bunds",
+    "t": "Bunds",
+    "kind": "name",
+    "forms": [
+      "Bunds"
+    ],
+    "text": "Bunds are German government bonds, short for Bundesanleihen, federal bonds. They matter beyond Germany because lenders treat them as the safest thing you can hold in euros, so every other euro-area government's borrowing cost is quoted as a gap above the Bund. That is why the article compares France to Germany rather than to anywhere else.",
+    "audio": true
+  },
+  {
+    "k": "euro-zone-crisis",
+    "t": "euro-zone crisis",
+    "kind": "name",
+    "forms": [
+      "euro-zone crisis",
+      "euro-zone"
+    ],
+    "text": "The euro zone is the group of EU countries that gave up their own currencies for the euro. Between roughly 2010 and 2012 several of them — Greece most severely, with Ireland, Portugal, Spain and Italy under pressure — came close to being unable to repay their debts, and because they shared a currency none could simply print its way out. Lenders began demanding far more to lend to the shakier members, which is the gap the article is pointing at when it says French and German yields are back at 2012 levels.",
+    "audio": true
+  },
+  {
+    "k": "oecd",
+    "t": "OECD",
+    "kind": "name",
+    "forms": [
+      "OECD"
+    ],
+    "text": "The OECD, the Organisation for Economic Co-operation and Development, is a Paris-based group of 38 mostly rich democracies. It makes no laws; its real power is statistical, because it collects its members' economic data on a common basis, which is the only reason you can compare tax revenue across Germany, Japan and Mexico in a single sentence. Every OECD-wide figure in this article comes out of that machinery.",
+    "audio": true
+  },
+  {
+    "k": "vat",
+    "t": "value-added tax",
+    "kind": "name",
+    "forms": [
+      "value-added tax",
+      "VAT"
+    ],
+    "text": "Value-added tax, or VAT, is a tax on spending used in some 170 countries — not in America, which uses state sales taxes instead. It is collected in slices at every stage of production rather than once at the till, which makes it hard to dodge but also easy to riddle with special rates, as Germany does by taxing oat milk at more than double the rate on cow's milk. It is usually a government's single biggest consumption tax.",
+    "audio": true
+  },
+  {
+    "k": "consumption-taxes",
+    "t": "consumption taxes",
+    "kind": "name",
+    "forms": [
+      "consumption taxes"
+    ],
+    "text": "A consumption tax is charged on money as it is spent rather than as it is earned — sales tax, VAT, duties on fuel and alcohol. Economists tend to like them because they do not punish working or saving, and critics point out that poorer people spend a larger fraction of their income, so the burden lands harder on them. The article wants more tax raised this way, noting the side-effect that it would also catch the spending of the very rich.",
+    "audio": true
+  },
+  {
+    "k": "capital-gains-taxes",
+    "t": "capital-gains taxes",
+    "kind": "name",
+    "forms": [
+      "capital-gains taxes"
+    ],
+    "text": "A capital gain is the profit you make by selling something for more than you paid — shares, a business, a second house — and capital-gains tax is charged on that profit when the sale happens, not while you simply own the thing. It is usually taxed more lightly than wages, which is a large part of why the very rich can pay a smaller share of their income than people who work for a living. The article wants the headline rate raised while ordinary gains are exempted.",
+    "audio": true
+  },
+  {
+    "k": "wealth-taxes",
+    "t": "wealth taxes",
+    "kind": "name",
+    "forms": [
+      "wealth taxes"
+    ],
+    "text": "A wealth tax charges a small percentage of everything a person owns, every year, rather than taxing their income or their profits when they sell. The appeal is obvious and so is the difficulty: somebody has to value private companies, art and land annually, and the very rich can move themselves or their assets abroad. The article's evidence is blunt — twelve rich countries taxed fortunes in 1990, and only four still do.",
+    "audio": true
+  },
+  {
+    "k": "tax-base",
+    "t": "tax base",
+    "kind": "name",
+    "forms": [
+      "tax base"
+    ],
+    "text": "A tax base is not a rate but the pile of money a tax is charged against — all the wages in a country, all the spending, all the profits. It is the half of the equation politicians rarely argue about, even though revenue is the rate multiplied by the base, so a shrinking base cuts revenue just as surely as a rate cut does. The article's fear is exactly that: AI leaves the economy intact but moves income from wages to profits, hollowing out the labour base that raises about half of all OECD revenue.",
+    "audio": true
+  },
+  {
+    "k": "tax-code",
+    "t": "tax code",
+    "kind": "name",
+    "forms": [
+      "tax code",
+      "codes"
+    ],
+    "text": "A tax code is the entire body of law setting out who owes what — Britain's runs to about 23,000 pages, and America's is longer. Length is not a neutral fact about it: every extra page is usually an exception someone lobbied for, and complexity is what makes avoidance possible in the first place. Hence the article's last recommendation, that codes should be radically simplified, and its warning about pointing AI agents at all 23,000 pages.",
+    "audio": true
+  },
+  {
+    "k": "tax-avoidance",
+    "t": "tax avoidance",
+    "kind": "name",
+    "forms": [
+      "tax avoidance",
+      "tax-avoidance"
+    ],
+    "text": "Tax avoidance is arranging your affairs to owe less tax while staying inside the law — routing income through a company, timing a sale, using a loophole nobody intended. It is legal, which is what separates it from evasion, and it is a profession: accountants and lawyers are paid to find the gaps. The article's worry is that this work has always been limited by how many clever humans were doing it, and AI agents reading the whole tax code remove that limit.",
+    "audio": true
+  },
+  {
+    "k": "labour",
+    "t": "labour",
+    "kind": "name",
+    "forms": [
+      "labour"
+    ],
+    "text": "Labour, spelled the British way throughout this article, is the economist's word for all human work and the people who do it, treated as one of the inputs an economy runs on alongside capital. It is not the political party, and in this context it is not physical toil either — a surgeon and a shelf-stacker are both labour. Taxes on labour means income tax and social-security contributions, the workhorse that raises around half of all revenue in the OECD.",
+    "audio": true
+  },
+  {
+    "k": "net-income",
+    "t": "net income",
+    "kind": "name",
+    "forms": [
+      "net income"
+    ],
+    "text": "Net means what is left after the subtractions have been made, as opposed to gross, which is the figure before them — so net income is take-home pay, after tax and deductions. The distinction is doing real work in the article's example: the parent crosses £100,000 of net income and loses free child care, so the cliff is measured on what they actually keep. Net and gross are worth getting straight, because headlines about pay routinely mix them up.",
+    "audio": true
+  },
+  {
+    "k": "self-employed",
+    "t": "self-employed",
+    "kind": "name",
+    "forms": [
+      "self-employed"
+    ],
+    "text": "Someone self-employed works for themselves — a freelancer, a plumber, a contractor — rather than drawing a salary from an employer. The tax consequences are large, because employees have tax deducted automatically and their employers pay extra contributions on top, while the self-employed declare their own income and can set expenses against it. That gap is the article's example of unfairness: Britain's median employee pays 55% more tax than a comparable self-employed person.",
+    "audio": true
+  }
+]

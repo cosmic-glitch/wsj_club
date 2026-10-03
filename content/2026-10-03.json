@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-03",
+  "title": "A hurricane is coming to tax systems",
+  "articleUrl": "https://www.economist.com/leaders/2026/10/01/a-hurricane-is-coming-to-tax-systems",
+  "articlePageUrl": "/articles/2026-10-03.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "perverse",
+      "partOfSpeech": "adjective",
+      "pronunciation": "pur-VURSS",
+      "articleQuote": "Tax systems also create perverse incentives.",
+      "meaning": "Something is **perverse** when it produces the opposite of what it was meant to produce. In ordinary use the word can simply mean stubbornly contrary — a person who takes the long way home purely because you told them not to — but in writing about law, economics and policy it is the precise term for a rule that ends up rewarding the very behaviour it was built to discourage. The article's example is a British parent whose income rises from £99,999 to £100,000 and who instantly loses free child care worth thousands of pounds: a system meant to reward work has quietly made earning more a mistake, and some of the country's most productive people respond by cutting their hours on purpose.",
+      "examples": [
+        "Our school started docking points for late homework, which had the perverse effect of making people hand in nothing at all rather than something a day late.",
+        "Paying my brother a dollar for every spider he caught in the garage turned out to be perverse — within a week he had started breeding them."
+      ]
+    },
+    {
+      "word": "coax",
+      "partOfSpeech": "verb",
+      "pronunciation": "KOHKS",
+      "articleQuote": "Across the rich world, countries are struggling to coax more growth out of their economies.",
+      "meaning": "To **coax** is to get something out of someone, or something, by patience and gentle pressure rather than by force — you coax a frightened cat out from under the bed, or coax one more song out of a dying speaker. The word carries the sense that the thing is reluctant and that pushing harder would only make it worse, which is why writers reach for it when a result has to be *drawn* out instead of simply ordered up. Governments are in exactly that position with economic growth: no one can command an economy to expand, so they cut interest rates, loosen rules and dangle incentives — coaxing — and the article's point is that across the rich world even this is barely working.",
+      "examples": [
+        "It took twenty minutes of bargaining to coax my little sister down from the top of the climbing frame.",
+        "He coaxed one more lap out of a bike with no brakes and a flat tyre, which the rest of us thought was a spectacularly bad idea."
+      ]
+    },
+    {
+      "word": "hedge",
+      "partOfSpeech": "noun",
+      "pronunciation": "HEJ",
+      "articleQuote": "That would be a hedge against disruption from AI",
+      "meaning": "A **hedge** is something you do now to limit the damage if things go the way you hope they won't. The literal hedge is the row of bushes around a field, a boundary that keeps trouble out, and finance borrowed the image: to hedge a bet is to place a second, smaller bet on the other outcome so that being wrong costs you less, and a *hedge fund* is in principle a fund built to make money whichever way prices move. The key thing is that hedging is not predicting — the whole reason to do it is that you genuinely don't know. The article's hedge is a policy one: if a government shifts tax off wages today, then should AI really swallow jobs tomorrow, less of the state's income was resting on wages in the first place.",
+      "examples": [
+        "I applied to two summer programmes I only half wanted as a hedge, in case the one I actually cared about turned me down.",
+        "Packing a jacket for a July game is a cheap hedge against sitting in the rain for three hours."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The tax base",
+      "articleQuote": "the tax base in all countries, which depends heavily on taxing labour, may be upended by artificial intelligence",
+      "meaning": "Roughly half of all the money rich-world governments collect comes, one way or another, out of wages. Now imagine the wages shrink.\n\nThe idea that makes sense of that worry comes from public finance, and it is the **tax base**: not the *rate* a tax charges, but the pile of money it is charging against. A 20% tax on a £50,000 salary and a 20% tax on a £25,000 salary are the same rate and nowhere near the same revenue, because the base underneath moved. Every tax therefore has two numbers that matter, and politicians argue loudly about the rate while the base is what actually determines how much comes in.\n\nThere are only a few bases big enough to run a country on, and they are worth knowing by name, because almost every tax you will ever read about sits on one of them. **Labour** is what people earn for working — income tax, payroll and social-security contributions. **Consumption** is what people spend — sales tax in America, VAT across Europe. **Capital** is the return on owning things — company profits, dividends, rent, and the gain when you sell an asset for more than you paid. A fourth, **wealth**, taxes the stock of what someone owns rather than the flow it produces; the article notes that twelve rich countries taxed fortunes in 1990 and just four do today, because it turns out to be hard to administer and easy to leave.\n\nNow the arithmetic that alarms the article. Everything a country produces in a year ends up divided between the people who worked and the people who owned, and economists call the first slice *labour's share of national income*; in rich countries it has long run somewhere around 55 to 60%. The fear is that AI pushes that slice down — the work still gets done, the output still exists, but more of the resulting money arrives as corporate profit and less of it as pay. The economy has not shrunk. The labour base has. The Economist ran the numbers for a ten-point fall and found Italy's budget deficit would double as a share of GDP, with Germany and France not far behind, and the squeeze arrives from both ends at once, because the same people who stop paying wage taxes start claiming benefits.\n\nSo when a government promises that some tax rise will raise £10bn, the sharpest question is not whether the rate is fair. It is whether the base will still be there once the tax exists."
+    },
+    {
+      "name": "Bond yields",
+      "articleQuote": "The spread between French government bonds and German Bunds is at levels not seen since the euro-zone crisis in 2012.",
+      "meaning": "Governments spend more than they collect, so they borrow — and a government borrows by selling a piece of paper that says: hand me $1,000 today, I will pay you a fixed sum every year, and in ten years you get your $1,000 back. That piece of paper is a **bond**, the basic instrument of government finance. Britain's are called gilts, Germany's **Bunds**, America's **Treasuries**. The names change; the deal does not.\n\nOnce sold, a bond can be sold on to someone else, and that is where the number in the news comes from. Say a $1,000 bond promises $50 a year. That $50 is fixed forever — but if lenders have turned nervous and will now only pay $800 for the thing, the new buyer collects $50 on an outlay of $800, which is 6.25%. That percentage is the **yield**: what you actually earn each year for the money you actually put in. Notice the seesaw. The promised payment cannot change, so when a bond's price falls its yield rises, and those are two ways of describing one event — lenders have decided this borrower must pay them more.\n\nWhy would they decide that? Two reasons, worth keeping separate. Either they see a real chance of not being repaid in full, or they expect inflation to erode the value of those fixed payments before they arrive. Either way, the yield is the price of the doubt. So when the article reports that the yield on ten-year US Treasuries has \"charged through the 5% barrier\", no government set that number and no one announced it; it is what lenders are now demanding from the safest borrower on earth.\n\nA **spread** is then just a subtraction. France and Germany both borrow in euros, so expectations about inflation are nearly the same for both — which means whatever is left when you subtract the German yield from the French one is a fairly clean measure of how much extra doubt there is about France in particular. In 2012 that gap tore open because lenders seriously wondered whether the euro zone would survive. The article's point in mentioning it again is that the gap is back at those levels.\n\nThe habit to carry out of this: a yield or a spread is never a statement of a government's intentions. It is a measurement of what strangers with money are charging that government for their doubt — and it moves long before the politicians do."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article says countries across the rich world are “struggling to coax more growth out of their economies.” What does coax mean here?",
+      "options": [
+        "To force or compel something to happen",
+        "To measure something precisely",
+        "To draw something out gradually, by patience and gentle pressure rather than force",
+        "To borrow against future earnings"
+      ],
+      "answerIndex": 2,
+      "explanation": "To coax is to get a reluctant thing to give way — no government can order an economy to grow, so it nudges and tempts growth out instead."
+    },
+    {
+      "question": "In Britain, a parent whose income rises from £99,999 to £100,000 automatically loses free child care worth thousands of pounds. Why is that a perverse incentive?",
+      "options": [
+        "Because it is unusually complicated to calculate",
+        "Because it applies only to self-employed workers",
+        "Because it pushes some of the most productive workers to earn less — the opposite of what the system was meant to encourage",
+        "Because it was introduced without a vote in Parliament"
+      ],
+      "answerIndex": 2,
+      "explanation": "Perverse means producing the opposite of the intended effect: a rule meant to support working parents ends up making extra earnings a bad deal."
+    },
+    {
+      "question": "Taxes on labour raise around half of all revenue across the OECD. Why does the article think AI puts that revenue at risk?",
+      "options": [
+        "AI will make workers so productive that wages rise faster than governments can tax them",
+        "AI could displace workers or cut their wages even as corporate profits rise, shrinking the share of national income that arrives as pay",
+        "AI systems cannot legally be taxed, so any work they do goes untaxed",
+        "AI will persuade governments to abolish income tax altogether"
+      ],
+      "answerIndex": 1,
+      "explanation": "An economy can keep growing while labour's share of it falls — and it is that share, not total output, that the biggest tax base rests on."
+    },
+    {
+      "question": "The article notes that the spread between French government bonds and German Bunds is at levels not seen since 2012. What does a wide spread like that tell you?",
+      "options": [
+        "Germany has agreed to lend money directly to France",
+        "France has raised the interest payments it makes on bonds it already sold",
+        "French bonds have become more expensive to buy than German ones",
+        "Lenders are demanding a noticeably higher return to lend to France than to Germany, which signals more doubt about France"
+      ],
+      "answerIndex": 3,
+      "explanation": "Both countries borrow in euros, so the gap between their yields is read as the extra return lenders require for the extra doubt about France."
+    },
+    {
+      "question": "The article argues that lightening the tax burden on labour “would be a hedge against disruption from AI.” Used this way, a hedge is:",
+      "options": [
+        "A confident prediction that AI will disrupt the labour market",
+        "A step taken now that limits the damage if a bad outcome does arrive",
+        "A legal barrier stopping companies from replacing workers with software",
+        "A tax designed to slow the adoption of new technology"
+      ],
+      "answerIndex": 1,
+      "explanation": "Hedging is not forecasting — it is arranging things so that being wrong, or being unlucky, costs you less."
+    }
+  ]
+}
