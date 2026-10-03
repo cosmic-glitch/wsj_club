@@ -1,0 +1,483 @@
+[
+  {
+    "k": "susceptible",
+    "t": "susceptible",
+    "kind": "vocab",
+    "pron": "suh-SEP-tuh-bul",
+    "forms": [
+      "susceptible"
+    ],
+    "text": "If something is susceptible to a thing, it can easily be affected or harmed by it, because it has little defense against it. The surprise here is that tongues, not just teeth, are susceptible to biofilms. You meet the word most often in health writing, where some people are susceptible to a disease and others never catch it.",
+    "audio": true
+  },
+  {
+    "k": "teem",
+    "t": "teem with",
+    "kind": "vocab",
+    "pron": "TEEM",
+    "forms": [
+      "teem with",
+      "teem"
+    ],
+    "text": "To teem with something is to be completely full of it, so packed that the things are crowded on top of each other. It is used for living things in huge numbers, and it almost always comes in this form, teem with. The tiny gaps on the surface of a tongue teem with bacteria: there are enormous numbers of them down there.",
+    "audio": true
+  },
+  {
+    "k": "virtue",
+    "t": "virtue",
+    "kind": "vocab",
+    "pron": "VUR-choo",
+    "forms": [
+      "virtues",
+      "virtue"
+    ],
+    "text": "A virtue is a good quality in a person or a thing. When writers mention the virtues of something, they mean its advantages, the points in its favor, and that is the meaning here: has anyone actually shown that tongue-cleaning is worth the trouble? The older meaning, about a person behaving well, comes from the same idea of being good.",
+    "audio": true
+  },
+  {
+    "k": "tongue-scraper",
+    "t": "tongue-scraper",
+    "kind": "name",
+    "forms": [
+      "tongue-scrapers",
+      "tongue-scraper",
+      "tongue-scraping",
+      "scraper"
+    ],
+    "text": "A tongue-scraper is a small tool, usually a plastic or metal loop on a handle, that you pull across the top of your tongue to drag off the coating that builds up there. It does not clean teeth, so it is used in addition to a toothbrush rather than instead of one. The whole article is about whether that extra tool is really needed.",
+    "audio": true
+  },
+  {
+    "k": "roman-era",
+    "t": "the Roman era",
+    "kind": "name",
+    "forms": [
+      "Roman era"
+    ],
+    "text": "The Roman era means the centuries when Rome ruled much of Europe, North Africa and the Middle East, roughly 2,000 years ago. Saying people have scraped their tongues since at least the Roman era is a way of saying the habit is ancient rather than a modern fashion.",
+    "audio": true
+  },
+  {
+    "k": "napoleon-bonaparte",
+    "t": "Napoleon Bonaparte",
+    "kind": "name",
+    "forms": [
+      "Napoleon Bonaparte"
+    ],
+    "text": "Napoleon Bonaparte was a French general who made himself emperor of France in the early 1800s and fought wars across most of Europe. He appears here only as a famous example, because his tongue-scraper was made of silver. The point is that important people have owned these tools for a very long time.",
+    "audio": true
+  },
+  {
+    "k": "microbiome",
+    "t": "microbiome",
+    "kind": "name",
+    "forms": [
+      "oral microbiome",
+      "microbiome"
+    ],
+    "text": "A microbiome is the whole crowd of tiny living things, mostly bacteria, that lives in one place on or inside a body. Your oral microbiome is the one in your mouth, and a healthy one holds around 700 different kinds of bacteria. You will also see the phrase gut microbiome, which means the same sort of crowd further down in the body.",
+    "audio": true
+  },
+  {
+    "k": "biofilms",
+    "t": "biofilm",
+    "kind": "name",
+    "forms": [
+      "biofilms",
+      "biofilm"
+    ],
+    "text": "A biofilm is a mat of bacteria stuck to a surface and wrapped in slime that the bacteria themselves give off. The slime glues them down, and water or mouthwash slides across the top instead of reaching them, which is why rinsing does not shift a biofilm but scrubbing does. The slippery film inside a water bottle you forgot about for a week is one.",
+    "audio": true
+  },
+  {
+    "k": "dental-plaque",
+    "t": "dental plaque",
+    "kind": "name",
+    "forms": [
+      "dental plaque",
+      "plaque"
+    ],
+    "text": "Plaque is the soft, slightly furry layer of bacteria that builds up on teeth between brushings, and dental just means to do with teeth. It is the most familiar example of a biofilm. Left alone, the bacteria in it damage the teeth and the gums around them.",
+    "audio": true
+  },
+  {
+    "k": "halitosis",
+    "t": "halitosis",
+    "kind": "name",
+    "forms": [
+      "halitosis"
+    ],
+    "text": "Halitosis is the medical name for long-lasting bad breath. Doctors use the word when they mean a condition with a cause that can be treated, not the ordinary morning breath everybody has. Most of the smell comes from gases given off by bacteria living in the mouth.",
+    "audio": true
+  },
+  {
+    "k": "gum-disease",
+    "t": "gum disease",
+    "kind": "name",
+    "forms": [
+      "gum disease"
+    ],
+    "text": "Your gums are the firm pink flesh that holds your teeth in place, nothing to do with chewing gum. Gum disease is what happens when bacteria build up along the edge of the gums and leave them red, sore and swollen, and in bad cases teeth come loose. It is one of the main things dentists are trying to prevent.",
+    "audio": true
+  },
+  {
+    "k": "anaerobic",
+    "t": "anaerobic",
+    "kind": "word",
+    "forms": [
+      "anaerobic"
+    ],
+    "text": "Anaerobic describes living things that do not need oxygen, and anything happening without oxygen. Take the word apart: aer means air, and an- in front of it means without. The deep gaps in a tongue hold almost no oxygen, so anaerobic bacteria do well there, and the gases they give off smell bad.",
+    "audio": true
+  },
+  {
+    "k": "trial",
+    "t": "trial",
+    "kind": "name",
+    "forms": [
+      "trial",
+      "trials"
+    ],
+    "text": "In science a trial has nothing to do with a courtroom. It is a planned test on real people: some of them do the new thing, others do not, and afterwards the researchers measure something countable to see whether it made a difference. The trials here measured bad breath and bacteria counts, and the first question to ask about any of them is how many people took part.",
+    "audio": true
+  },
+  {
+    "k": "streptococcus-mutans",
+    "t": "Streptococcus mutans",
+    "kind": "name",
+    "forms": [
+      "Streptococcus mutans",
+      "S. mutans"
+    ],
+    "text": "Streptococcus mutans is a kind of bacterium that lives in the mouth and is one of the main causes of tooth decay. It turns sugar from food into acid, and the acid eats into the hard outer layer of a tooth. Scientists write a species name in two parts like this and shorten the first part to a letter after the first mention, which is why it turns up later as S. mutans.",
+    "audio": true
+  },
+  {
+    "k": "oral-probiotic",
+    "t": "oral probiotic",
+    "kind": "name",
+    "forms": [
+      "oral probiotic",
+      "probiotic"
+    ],
+    "text": "A probiotic is a dose of harmless live bacteria that you swallow or hold in your mouth on purpose, to change the mix of microbes already living there. An oral probiotic is one aimed at the mouth. The idea in this trial is that if harmless bacteria take up the surfaces and the sugar, less is left for the harmful kinds.",
+    "audio": true
+  },
+  {
+    "k": "zoe-brookes",
+    "t": "Zoe Brookes",
+    "kind": "name",
+    "forms": [
+      "Zoe Brookes"
+    ],
+    "text": "Zoe Brookes is a professor of dentistry at the University of Plymouth, in England, which means she teaches and researches the science of teeth and mouths. She is the expert the article brings in at the end to push back. Her warning is that the trials are too small to settle anything, and that stripping too many bacteria out of a healthy mouth could cause problems of its own.",
+    "audio": true
+  },
+  {
+    "k": "hygiene",
+    "t": "hygiene",
+    "kind": "word",
+    "forms": [
+      "hygiene",
+      "dental hygiene",
+      "oral hygiene",
+      "lingual hygiene"
+    ],
+    "text": "Hygiene means keeping yourself and your surroundings clean so that you stay healthy, and it covers the habits as much as the result. Dental hygiene is the teeth-and-mouth version: brushing, flossing and the rest. Further down the article says lingual hygiene, which is the same idea applied to the tongue.",
+    "audio": true
+  },
+  {
+    "k": "lingual",
+    "t": "lingual",
+    "kind": "word",
+    "forms": [
+      "lingual"
+    ],
+    "text": "Lingual means to do with the tongue. It comes from lingua, the Latin word for tongue, which is also where language and linguist come from, since you talk with your tongue. Good lingual hygiene is a formal way of saying a clean tongue.",
+    "audio": true
+  },
+  {
+    "k": "oral",
+    "t": "oral",
+    "kind": "word",
+    "forms": [
+      "oral"
+    ],
+    "text": "Oral means to do with the mouth. A doctor who says oral medicine means medicine you swallow, and an oral report at school is one you say out loud. Oral hygiene and oral microbiome are simply the mouth versions of those things.",
+    "audio": true
+  },
+  {
+    "k": "gut",
+    "t": "the gut",
+    "kind": "word",
+    "forms": [
+      "gut"
+    ],
+    "text": "Here the gut means the stomach and intestines, the long tube food travels through, not the belly you see from outside and not a feeling you get in it. Scientists talk about the gut constantly because the bacteria living in it affect digestion and health. The article's point is that the mouth is crowded with microbes in the same way the gut is.",
+    "audio": true
+  },
+  {
+    "k": "microbes",
+    "t": "microbes",
+    "kind": "word",
+    "forms": [
+      "microbes"
+    ],
+    "text": "Microbes are living things too small to see without a microscope: bacteria, some fungi, and other single-celled creatures. Micro means very small. Most microbes are harmless and many are useful, which is why a mouth full of them is normal rather than alarming.",
+    "audio": true
+  },
+  {
+    "k": "protozoa",
+    "t": "protozoa",
+    "kind": "word",
+    "forms": [
+      "protozoa"
+    ],
+    "text": "Protozoa are living things made of a single cell that move about and feed, which makes them more like minute animals than like bacteria. They turn up in pond water, in soil and in mouths. They are listed here just to show how mixed the crowd in a healthy mouth really is.",
+    "audio": true
+  },
+  {
+    "k": "colonies",
+    "t": "colonies",
+    "kind": "word",
+    "forms": [
+      "bacterial colonies",
+      "colonies"
+    ],
+    "text": "A colony of bacteria is a clump of them growing together in one spot, all descended from the few that landed there first. This is not the political meaning of colony, a country ruled by another country. What links the two is an older sense of the word: a group that settles in a new place.",
+    "audio": true
+  },
+  {
+    "k": "chronic",
+    "t": "chronic",
+    "kind": "word",
+    "forms": [
+      "chronic"
+    ],
+    "text": "Chronic describes a problem that goes on and on, or keeps coming back, instead of clearing up quickly. Chronic bad breath means breath that smells every day, not breath that smells after onions. Its opposite in medicine is acute, meaning short and sharp.",
+    "audio": true
+  },
+  {
+    "k": "thrive",
+    "t": "thrive",
+    "kind": "word",
+    "forms": [
+      "thrive"
+    ],
+    "text": "To thrive is to grow strongly and do well, and it is used for anything alive, from plants to businesses. Bacteria thrive inside a biofilm because the slime keeps them from being washed away. If something thrives in a place, that place is giving it exactly what it needs.",
+    "audio": true
+  },
+  {
+    "k": "tissues",
+    "t": "tissues",
+    "kind": "word",
+    "forms": [
+      "tissues"
+    ],
+    "text": "In biology a tissue is a sheet or mass of similar cells doing one job in a body, such as muscle tissue or the soft lining of your cheek. It has nothing to do with the paper kind. The article's point is that most tissues in your mouth keep dropping their old surface cells, so anything stuck to them goes too, but teeth do not.",
+    "audio": true
+  },
+  {
+    "k": "host",
+    "t": "host",
+    "kind": "word",
+    "forms": [
+      "host"
+    ],
+    "text": "To host something is to provide the place where it lives or happens, the way a town hosts a tournament. Saying tongues host two-thirds of the oral microbiome means most of the mouth's bacteria live on the tongue rather than on the teeth or cheeks. In biology a host is also the animal or plant that something else lives on.",
+    "audio": true
+  },
+  {
+    "k": "protuberances",
+    "t": "protuberances",
+    "kind": "word",
+    "forms": [
+      "protuberances"
+    ],
+    "text": "A protuberance is a bump that sticks out from a surface. The tiny protuberances on your tongue are the little points you can feel with a fingertip, and this article cares about the narrow gaps between them. The word is built from a Latin root meaning to swell outwards.",
+    "audio": true
+  },
+  {
+    "k": "hospitable",
+    "t": "hospitable",
+    "kind": "word",
+    "forms": [
+      "hospitable"
+    ],
+    "text": "A hospitable person is warm and welcoming to guests. Used about a place, hospitable means well suited to something living there, which is the sense here: the airless gaps on a tongue are hospitable to bacteria that need no oxygen. Science writing uses it this way often, as in a planet hospitable to life.",
+    "audio": true
+  },
+  {
+    "k": "respiration",
+    "t": "respiration",
+    "kind": "word",
+    "forms": [
+      "respiration"
+    ],
+    "text": "Respiration is the chemical process a living thing uses to get energy out of food. Most creatures, including you, need oxygen to do it and give off carbon dioxide afterwards. Some bacteria manage without oxygen, and their kind of respiration produces smelly waste gases instead.",
+    "audio": true
+  },
+  {
+    "k": "sulphurous",
+    "t": "sulphurous",
+    "kind": "word",
+    "forms": [
+      "sulphurous",
+      "sulphur"
+    ],
+    "text": "Sulphur is a yellow chemical element, and sulphurous means containing it or smelling of it. Sulphur gases are behind the smell of rotten eggs, struck matches and bad breath, which is why that smell is so easy to recognize. Americans spell the element sulfur; this is a British magazine, so it spells it sulphur.",
+    "audio": true
+  },
+  {
+    "k": "compounds",
+    "t": "compounds",
+    "kind": "word",
+    "forms": [
+      "compounds"
+    ],
+    "text": "In chemistry a compound is a substance made of two or more different elements joined together, like water, which is hydrogen joined to oxygen. Sulphurous compounds are smelly substances with sulphur in them. The word has a separate everyday meaning, to make something worse, which is not the one used here.",
+    "audio": true
+  },
+  {
+    "k": "odiferous",
+    "t": "odiferous",
+    "kind": "word",
+    "forms": [
+      "odiferous"
+    ],
+    "text": "Odiferous means giving off a smell, and in practice the smell is always a bad one. It comes from odour, an older spelling of odor, meaning a smell. It is a rare and slightly old-fashioned word, so smelly or foul-smelling would be the usual choice.",
+    "audio": true
+  },
+  {
+    "k": "abundant",
+    "t": "abundant",
+    "kind": "word",
+    "forms": [
+      "abundant"
+    ],
+    "text": "Something abundant exists in large amounts, more than enough of it. The article says the evidence for tongue-cleaning is not as abundant as the evidence for brushing teeth: there is some, but not much. The matching noun is abundance.",
+    "audio": true
+  },
+  {
+    "k": "instrument",
+    "t": "instrument",
+    "kind": "word",
+    "forms": [
+      "instrument"
+    ],
+    "text": "An instrument is a tool made for a particular job, which here means an actual tongue-scraper rather than something you already own. Musical instruments are only one kind, and doctors and scientists use the word for their equipment all the time. The surprise in this trial was that no special instrument was needed.",
+    "audio": true
+  },
+  {
+    "k": "principal",
+    "t": "principal",
+    "kind": "word",
+    "forms": [
+      "principal"
+    ],
+    "text": "Principal means main or most important, so a principal cause of tooth decay is one of the biggest causes of it. Watch the spelling, because principle, ending in -le, is a different word meaning a rule or belief. A school principal has that title because it once meant the main teacher.",
+    "audio": true
+  },
+  {
+    "k": "review",
+    "t": "review",
+    "kind": "word",
+    "forms": [
+      "review"
+    ],
+    "text": "In science a review is not somebody's opinion of a film. It is a study of other studies: researchers gather every trial done on a question, put the results side by side and work out what they add up to. Pooling four small trials this way covers more people, so the answer is more trustworthy than any one trial alone.",
+    "audio": true
+  },
+  {
+    "k": "participants",
+    "t": "participants",
+    "kind": "word",
+    "forms": [
+      "participants"
+    ],
+    "text": "Participants are the people taking part in something, and in a study it means the volunteers being tested. Saying a result held for 60% of participants means it worked for 60 out of every 100 people in that trial, not for all of them. The matching verb is participate.",
+    "audio": true
+  },
+  {
+    "k": "perception",
+    "t": "perception",
+    "kind": "word",
+    "forms": [
+      "salt perception",
+      "perception"
+    ],
+    "text": "Perception is how you sense something and how strong it seems to you, rather than how much of it is actually there. Increased salt perception means the food tasted saltier to the person, even though the amount of salt had not changed. The verb is perceive.",
+    "audio": true
+  },
+  {
+    "k": "wellness",
+    "t": "wellness",
+    "kind": "word",
+    "forms": [
+      "wellness"
+    ],
+    "text": "Wellness simply means being healthy, but it has grown into the name for a whole industry of routines, drinks, powders and gadgets that promise to make you healthier. The article puts the word in quotation marks to keep its distance, because some of what wellness sells has been properly tested and some has not. That is exactly the question being asked about tongue-scrapers.",
+    "audio": true
+  },
+  {
+    "k": "upset-the-balance",
+    "t": "upset the balance",
+    "kind": "phrase",
+    "forms": [
+      "upset the balance"
+    ],
+    "text": "To upset a balance is to disturb it, tipping something that was steady into a worse state. Upset here means disturbed, not sad. The balance in question is the mix of species in your mouth: smoking or a poor diet can let a few kinds grow too much and crowd the rest.",
+    "audio": true
+  },
+  {
+    "k": "cast-doubt-on",
+    "t": "cast doubt on",
+    "kind": "phrase",
+    "forms": [
+      "cast doubt on"
+    ],
+    "text": "To cast doubt on an idea is to produce something that makes people less sure the idea is true, without quite disproving it. You will meet this phrase in news stories constantly. Here one trial's result casts doubt on the belief that a special scraper is needed.",
+    "audio": true
+  },
+  {
+    "k": "crowds-out",
+    "t": "crowds out",
+    "kind": "phrase",
+    "forms": [
+      "crowds out",
+      "crowd out"
+    ],
+    "text": "To crowd something out is to take up so much of the space, time or food available that the other thing cannot get any. Harmless bacteria crowd out harmful ones by sitting on the same surfaces and eating the same sugars. The phrase works the same way about ideas, shops and plants.",
+    "audio": true
+  },
+  {
+    "k": "do-the-biz",
+    "t": "do the biz",
+    "kind": "phrase",
+    "forms": [
+      "do the biz"
+    ],
+    "text": "Do the biz is relaxed British slang for do the job, meaning the thing works. Biz is short for business, in the sense of the business that needs doing. A British magazine will drop a casual phrase like this into an otherwise serious article.",
+    "audio": true
+  },
+  {
+    "k": "urges-caution",
+    "t": "urges caution",
+    "kind": "phrase",
+    "forms": [
+      "urges caution"
+    ],
+    "text": "To urge caution is to tell people to be careful and not rush ahead, which is a polite way of saying slow down. Journalists reach for the phrase whenever an expert disagrees with the general excitement. Here the professor urges caution because the studies are so small.",
+    "audio": true
+  },
+  {
+    "k": "draw-strong-conclusions",
+    "t": "draw strong conclusions",
+    "kind": "phrase",
+    "forms": [
+      "draw strong conclusions"
+    ],
+    "text": "To draw a conclusion is to work out what the evidence adds up to and then say it. A strong conclusion is one you can be confident about. Saying the studies are too small to draw strong conclusions means the results hint at an answer but cannot prove it.",
+    "audio": true
+  }
+]

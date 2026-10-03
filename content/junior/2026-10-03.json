@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-03",
+  "title": "Should you be using a tongue-scraper?",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/02/should-you-be-using-a-tongue-scraper",
+  "articlePageUrl": "/articles/junior/2026-10-03.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "susceptible",
+      "partOfSpeech": "adjective",
+      "pronunciation": "suh-SEP-tuh-bul",
+      "articleQuote": "But tongues, which host about two-thirds of the oral microbiome, are also susceptible to biofilms",
+      "meaning": "If something is susceptible to a thing, it can easily be affected or harmed by it, because it has no real defense against it. The article uses the word to make a surprising point: teeth are not the only part of the mouth that is susceptible to biofilms, because sticky layers of bacteria build up on tongues too and can turn them white or yellow. You will meet this word most often in writing about health, where some people are susceptible to a disease and others never catch it.",
+      "examples": [
+        "Mateo is susceptible to colds every winter, so he keeps hand sanitizer in his backpack.",
+        "Cheap phone screens are susceptible to scratches, which is why almost everyone buys a case."
+      ]
+    },
+    {
+      "word": "teem",
+      "partOfSpeech": "verb",
+      "pronunciation": "TEEM",
+      "articleQuote": "The gaps between the tiny protuberances covering a tongue’s upper surface teem with bacteria",
+      "meaning": "To teem with something is to be completely full of it, so packed that the things are crowded on top of each other. It is nearly always used about living things in huge numbers, and it nearly always comes in the form teem with. Here the tiny bumps that cover your tongue teem with bacteria: the narrow gaps between them hold enormous numbers of microbes.",
+      "examples": [
+        "By the time the last bell rang, the hallway teemed with kids pushing toward the buses.",
+        "In April the shallow end of the pond teems with tadpoles."
+      ]
+    },
+    {
+      "word": "virtue",
+      "partOfSpeech": "noun",
+      "pronunciation": "VUR-choo",
+      "articleQuote": "evidence for the virtues of regular tongue-cleaning would be as abundant as that for cleaning teeth",
+      "meaning": "A virtue is a good quality in a person or a thing. When writers mention the virtues of something, they mean its advantages, the points in its favor, which is the meaning here: the article asks whether the virtues of tongue-cleaning have actually been proved, or whether people just assume them. The older meaning you may already know is about people behaving well, and both meanings come from the same idea of being good.",
+      "examples": [
+        "Dad listed the virtues of our old car: it was cheap, it was easy to park, and nothing on it could break.",
+        "Patience is a virtue my piano teacher brings up about once a lesson."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Biofilms",
+      "articleQuote": "Biofilms are the basis of dental plaque",
+      "meaning": "Run your tongue across your teeth before you brush in the morning and they feel slightly furry. That fur is alive, and microbiologists, the scientists who study bacteria, call it a **biofilm**.\n\nOne bacterium floating in your spit is loose and easy to wash away. But when bacteria land on a hard surface that stays put, they stick to it and divide, and they give off a slimy, gluey substance that cements the whole pile in place. Layer on layer, that becomes a biofilm: a mat of bacteria stuck to a surface and wrapped in its own slime. On teeth, the mat has its own familiar name, plaque.\n\nThe slime is what makes a biofilm so stubborn. Water, spit and mouthwash slide across the top of the mat without ever reaching the bacteria buried underneath. Think of a water bottle you forgot in your backpack for a week. Tip the old water out and the inside feels slippery. Rinse it under the tap and it is still slippery. The only thing that takes that film off is a brush dragged along the plastic.\n\nTeeth and tongues work the same way, which is why dentists talk about brushing and scraping instead of rinsing, and why this whole article is a contest between two scraping tools. Anywhere water sits against a surface long enough, a biofilm is forming: a rock in a creek, a dog's water bowl, the inside of a pipe."
+    },
+    {
+      "name": "Clinical trials",
+      "articleQuote": "A trial published in 2018, involving 36 people suffering from gum disease, for example, found that adding tongue scraping to a normal dental-cleaning routine did, indeed, reduce halitosis.",
+      "meaning": "Every study in this article points the same way, and a professor of dentistry still says you cannot draw strong conclusions from them. That sounds like a contradiction until you notice how many people were in each one: 36 in the first, 45 in the second, 56 in the third.\n\nIn medicine, a **clinical trial** is a planned test on real people. Researchers gather a group, have some of them do the new thing while the others do not, and then measure something countable afterward, like how strongly a person's breath smells or how many decay-causing bacteria are on their teeth. All that trouble has one purpose: to replace \"my cousin swears it works\" with a number somebody else can go and check.\n\nThe catch is the *sample size*, which just means how many people were in the group. Flip a coin ten times and seven heads would not surprise you at all, and it would not mean the coin was bent. Flip it five hundred times and get 350 heads, and something real is going on. Small numbers wobble, so plain luck can fake a result. Big numbers leave luck much less room.\n\nA trial of 36 people is far closer to ten flips than to five hundred. Tongue-scraping may well work, which is why one of the studies here is a review that pools four separate trials together to reach more people. But each small trial on its own cannot settle it. So whenever you read that a study found something, the first question worth asking is how many people were in it."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the article's overall answer to the question in its own headline?",
+      "options": [
+        "A tongue-scraper is the only tool that cleans a tongue properly",
+        "Tongue-scraping seems to help, but an ordinary toothbrush does the job just as well",
+        "Tongue-scraping has no measurable effect on bad breath",
+        "Tongue-scraping damages the tongue and should be avoided"
+      ],
+      "answerIndex": 1,
+      "explanation": "The trials suggest tongue-scrapers do work, but tongue-brushing and even a salt-water rinse worked just as well, so no special instrument is needed."
+    },
+    {
+      "question": "The article says tongues are \"susceptible to biofilms.\" What does susceptible mean?",
+      "options": [
+        "Easily affected or harmed by something",
+        "Completely protected against something",
+        "Responsible for creating something",
+        "Too small to see without a microscope"
+      ],
+      "answerIndex": 0,
+      "explanation": "Susceptible means having little defense against something, so tongues, like teeth, can easily end up coated in biofilms."
+    },
+    {
+      "question": "The gaps on a tongue's surface \"teem with bacteria.\" What does that tell you?",
+      "options": [
+        "The bacteria there are unusually large",
+        "The bacteria there are dying off",
+        "There are enormous numbers of bacteria packed into them",
+        "The bacteria there are harmless"
+      ],
+      "answerIndex": 2,
+      "explanation": "To teem with something is to be completely full of it, so the gaps are crowded with bacteria."
+    },
+    {
+      "question": "Why is a biofilm harder to get rid of than loose bacteria floating in saliva?",
+      "options": [
+        "A biofilm is harder than the enamel on a tooth",
+        "The bacteria sit under a layer of slime that rinsing just slides over",
+        "A biofilm moves to a new surface as soon as water touches it",
+        "A biofilm only ever grows where a toothbrush cannot reach"
+      ],
+      "answerIndex": 1,
+      "explanation": "Bacteria in a biofilm are cemented to the surface under slime they give off, so water passes over the top and physical scrubbing is what removes the mat."
+    },
+    {
+      "question": "Professor Zoe Brookes says the studies are \"too small to draw strong conclusions.\" What problem is she pointing at?",
+      "options": [
+        "The studies were carried out too long ago to count",
+        "The studies measured bad breath instead of tooth decay",
+        "With only a few dozen people in each trial, plain chance could explain the results",
+        "The studies were all paid for by companies that sell scrapers"
+      ],
+      "answerIndex": 2,
+      "explanation": "With samples of 36, 45 or 56 people, luck can easily produce a result; a larger group is what makes a finding trustworthy."
+    }
+  ]
+}
