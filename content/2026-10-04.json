@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-04",
+  "title": "The coming fight over free speech",
+  "articleUrl": "https://www.economist.com/united-states/2026/10/01/the-coming-fight-over-free-speech",
+  "articlePageUrl": "/articles/2026-10-04.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "surfeit",
+      "partOfSpeech": "noun",
+      "pronunciation": "SUR-fit",
+      "articleQuote": "The justices face a surfeit of divisive issues",
+      "meaning": "A **surfeit** is an uncomfortable oversupply — not merely plenty of something, but more of it than you can take; the word's older sense was literally overeating and the queasiness that followed. Here it tells you the Supreme Court's new term is overloaded rather than merely busy: proof-of-citizenship for voters, a city suing energy companies, AR-15 bans and the free-speech cases all arrive at once, more genuine controversy than nine justices can comfortably absorb in one term. Because of that note of *too much of a good thing*, you will usually meet the word where abundance has itself become the problem — a surfeit of options, a surfeit of oil on the market.",
+      "examples": [
+        "Three people brought cupcakes to the same party, so we ended up with a surfeit of frosting and nobody wanted dessert.",
+        "The team's problem isn't a shortage of guards, it's a surfeit of them — four good players are stuck on the bench every game."
+      ]
+    },
+    {
+      "word": "commandeer",
+      "partOfSpeech": "verb",
+      "pronunciation": "kah-mun-DEER",
+      "articleQuote": "which would have let the president commandeer mail-in voting ahead of November's midterm elections",
+      "meaning": "To **commandeer** something is to take control of it by force of authority rather than by asking. The word started out military — an officer could seize a civilian's truck, horse or house for the army's use — and it still carries that whiff of *I am in charge now, hand it over*. In the article it describes an executive order that would have pulled mail-in voting, which individual states normally run, under the president's own control; choosing “commandeer” signals a takeover of someone else's machinery rather than a negotiation over it. Outside government you will see it wherever one party simply helps itself to what belongs to another: commandeering a vehicle, a budget, or a meeting.",
+      "examples": [
+        "My brother commandeered the TV the moment the game started, and the remote never came back.",
+        "A teacher commandeered the gym for rehearsals, so basketball practice moved outside for a week."
+      ]
+    },
+    {
+      "word": "imperative",
+      "partOfSpeech": "noun",
+      "pronunciation": "im-PAIR-uh-tiv",
+      "articleQuote": "These two imperatives—to assert executive authority and to uphold the First Amendment—are now at odds.",
+      "meaning": "As a noun, an **imperative** is a demand that something *must* be done — a goal treated as non-negotiable rather than merely desirable. You probably know the adjective already (“it's imperative that you call her”); the noun takes that same urgency and makes it a thing you can count, weigh and set against another one. The article's whole argument depends on being able to do that: the court under Chief Justice John Roberts carries two of them at once — give the presidency wide room to act, and defend First Amendment rights fiercely — and this term's cases force a choice between them. (In grammar the imperative is also the command form of a verb: “Sit down.”)",
+      "examples": [
+        "For a goalkeeper the first imperative is simple: keep the ball out of the net, even if the save looks ugly.",
+        "Her two imperatives that semester — keep her grades up and keep her job — collided every time a shift ran late."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The federal court system",
+      "articleQuote": "In May the Third Circuit Court of Appeals voted 6-5 not to reconsider an earlier ruling against Mr Khalil; a petition to the Supreme Court is on its way.",
+      "meaning": "Look at what happens to Mahmoud Khalil's case in that sentence: eleven judges vote on it, 6-5, and that still isn't the end — the next stop is the Supreme Court. The reason is that “the courts” are not one thing. Constitutional law, the branch of law dealing with how government power is arranged, runs federal cases up a ladder with three rungs.\n\nAt the bottom are the **district courts**: 94 of them, one trial judge each, where a lawsuit begins, witnesses testify and the facts of the dispute get settled. Above them sit the 13 **circuit courts of appeals**, each covering a region — the Third Circuit handles Pennsylvania, New Jersey and Delaware. A circuit court does not rerun the trial; a panel of three of its judges reviews whether the trial judge applied the law correctly. Sometimes all of a circuit's judges vote on whether to rehear a case together as a full court, and that is the 6-5 in the quote: the Third Circuit's judges declining, by a single vote, to take another look. At the top is the **Supreme Court**, which hears only the small number of cases it chooses to.\n\nTwo consequences fall out of this, and between them they explain most of the article. First, a ruling binds only the ground beneath it: a district judge's order can be undone on appeal, and a circuit's decision governs its own region and nowhere else — which is how the president can lose more than 70 First Amendment cases in lower courts while the national answer stays unsettled. Second, the losing side nearly always has one more rung to climb, which is why Mr Khalil's defeat reads as a petition on its way rather than a verdict.\n\nSo whenever the news says a court struck something down, the question worth asking is: *which* court, and who can still appeal it?"
+    },
+    {
+      "name": "The emergency docket",
+      "articleQuote": "giving him satisfaction in more than two-thirds of 40 emergency applications",
+      "meaning": "The article opens with something that looks impossible. Federal judges have ruled against the president in more than 70 First Amendment cases. The Supreme Court has already answered 40 emergency requests from him, siding with him in over two-thirds. And yet on free speech, we are told, the court “has yet to weigh in”. All three statements are true, because there are two different doors into that building.\n\nThe front door takes years. A case is tried in a district court, appealed, and if the justices agree to hear it they order written briefs, hold an oral argument where lawyers answer questions in person, and months later publish a signed opinion laying out their reasoning. That opinion settles the law for the whole country, and it is what “weighing in” means.\n\nThe side door is the **emergency docket** — informally, the shadow docket. When a lower court blocks a policy, the government can ask the justices to let it take effect *right now*, while the case grinds on below. There is no oral argument, often barely any briefing, and frequently no signature and no explanation: just a short order saying the policy may proceed, or may not, for the time being. It was built for true emergencies, such as an execution scheduled for next week. Over the past few years it has become the ordinary route for sweeping national policies instead, which is why 40 applications in 20 months is a striking number, and why winning two-thirds of them matters enormously even though, formally, nothing has been decided.\n\nThe lesson travels. When tomorrow's news says a court let something go ahead, check whether you are reading a final ruling or a temporary order. In practice the difference can be small — a policy that operates for three years before a final judgment has effectively won — but legally it is everything, because an emergency order sets almost no precedent and the same justices can reverse it later."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, why are this term's First Amendment cases especially awkward for the Supreme Court?",
+      "options": [
+        "The justices have never decided a free-speech case before",
+        "The court holds two imperatives that now conflict: giving the presidency broad leeway on separation-of-powers questions, and vigorously defending First Amendment rights",
+        "The Constitution says nothing about freedom of the press",
+        "Congress has repealed the laws the cases depend on"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article's hinge is that the Roberts court has both asserted wide executive authority and zealously upheld the First Amendment — and these cases force the two instincts into collision."
+    },
+    {
+      "question": "\"The justices face a surfeit of divisive issues.\" What does surfeit mean here?",
+      "options": [
+        "A shortage, leaving the term unusually quiet",
+        "An even, manageable spread of work",
+        "An oversupply — more contentious cases than can comfortably be handled",
+        "A formal list of cases the court has refused"
+      ],
+      "answerIndex": 2,
+      "explanation": "A surfeit is too much of something, so the word says the term is overloaded rather than merely busy."
+    },
+    {
+      "question": "What makes the Supreme Court's emergency docket different from its regular one?",
+      "options": [
+        "It issues fast, often unsigned temporary orders with no oral argument, while the case continues in the lower courts",
+        "It handles only criminal cases",
+        "It is where the justices confirm appointments to lower courts",
+        "Each application is decided by one justice picked at random"
+      ],
+      "answerIndex": 0,
+      "explanation": "The emergency (or shadow) docket is the court's fast lane — short orders letting a policy run or not for now, which is how the justices could answer 40 applications while still not having 'weighed in' on free speech."
+    },
+    {
+      "question": "The Third Circuit Court of Appeals voted 6-5 \"not to reconsider an earlier ruling against Mr Khalil\". What does that tell you about where his case stands?",
+      "options": [
+        "Six Supreme Court justices have already ruled against him",
+        "The case is over, because appeals courts have the last word",
+        "A regional appeals court declined by one vote to rehear the case as a full court, leaving a request to the Supreme Court as the next step",
+        "The case must start again as a fresh trial before a district judge"
+      ],
+      "answerIndex": 2,
+      "explanation": "Circuit courts sit above the district trial courts but below the Supreme Court, so losing that full-court vote leaves exactly one rung left — the petition the article says is on its way."
+    },
+    {
+      "question": "Which sentence uses commandeer correctly?",
+      "options": [
+        "She commandeered for the position of class treasurer.",
+        "The coach commandeered the only working projector for film study, so the science club had to cancel its slideshow.",
+        "They commandeered quietly about the decision for several weeks.",
+        "He commandeered the rules until everybody finally agreed."
+      ],
+      "answerIndex": 1,
+      "explanation": "To commandeer is to seize something and take control of it by authority rather than by asking, so it needs a thing taken over as its object."
+    }
+  ]
+}

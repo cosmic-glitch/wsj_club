@@ -1,0 +1,600 @@
+[
+  {
+    "k": "surfeit",
+    "t": "surfeit",
+    "kind": "vocab",
+    "pron": "SUR-fit",
+    "forms": [
+      "surfeit"
+    ],
+    "text": "A surfeit is an uncomfortable oversupply — more of something than you can really handle, with a hint of the queasiness of overeating, which is where the word came from. Saying the justices face a surfeit of divisive issues means the term is overloaded rather than merely busy: voting rules, climate lawsuits, gun bans and free-speech cases all land at once. You will meet the word wherever abundance has itself become the problem, as in a surfeit of choices.",
+    "audio": true
+  },
+  {
+    "k": "commandeer",
+    "t": "commandeer",
+    "kind": "vocab",
+    "pron": "kah-mun-DEER",
+    "forms": [
+      "commandeer"
+    ],
+    "text": "To commandeer something is to take control of it by force of authority rather than by asking. The word began in the military, where an officer could seize a civilian's truck or house for the army's use, and it still carries that sense of someone announcing they are in charge now. Here it describes an executive order that would have pulled mail-in voting, which individual states normally run, under the president's own control.",
+    "audio": true
+  },
+  {
+    "k": "imperative",
+    "t": "imperative",
+    "kind": "vocab",
+    "pron": "im-PAIR-uh-tiv",
+    "forms": [
+      "imperatives"
+    ],
+    "text": "As a noun an imperative is a demand that something must be done, a goal treated as non-negotiable rather than merely desirable; you probably know the adjective, as in it is imperative that you call her. Turning it into a noun lets you count them and set one against another, which is exactly the point here: the court holds two imperatives at once, asserting presidential power and protecting free speech, and this term forces a choice. In grammar the imperative is also the command form of a verb, as in Sit down.",
+    "audio": true
+  },
+  {
+    "k": "first-amendment",
+    "t": "First Amendment",
+    "kind": "name",
+    "forms": [
+      "First Amendment"
+    ],
+    "text": "The First Amendment is the opening amendment to the US constitution, and it guarantees freedom of religion, speech, the press, assembly and petition. Because it limits what the government may do, almost every dispute in this article is someone arguing that an official action punished them for what they said or published. It is the most heavily litigated provision of the constitution.",
+    "audio": true
+  },
+  {
+    "k": "supreme-court",
+    "t": "the Supreme Court",
+    "kind": "name",
+    "forms": [
+      "Supreme Court"
+    ],
+    "text": "The Supreme Court is the highest court in the United States: nine justices, appointed for life, who choose a small number of cases each year and whose rulings bind every other court. A case normally reaches it only after a trial court and an appeals court have already ruled. When the article says the court has yet to weigh in, it means no full, reasoned decision has come down yet.",
+    "audio": true
+  },
+  {
+    "k": "chief-justice",
+    "t": "the chief justice",
+    "kind": "name",
+    "forms": [
+      "chief justice"
+    ],
+    "text": "The chief justice is the head of the Supreme Court, currently John Roberts, and presides over its arguments and its private conferences. The role carries no extra vote: it is one of the nine, and its influence comes mainly from deciding who writes the opinion when the chief is in the majority. Eras of the court are usually labelled by the chief's name, hence the Roberts court.",
+    "audio": true
+  },
+  {
+    "k": "court-term",
+    "t": "the court's term",
+    "kind": "name",
+    "forms": [
+      "its term on October 5th",
+      "this term"
+    ],
+    "text": "The Supreme Court's term is its working year: it opens on the first Monday in October and runs into late June or early July, which is why a clash can be expected late in the term. Cases argued in the autumn are normally decided within that same term, and the hardest ones tend to land at the very end. The same word also means a president's four years in office, as in Trump's second term.",
+    "audio": true
+  },
+  {
+    "k": "antonin-scalia",
+    "t": "Justice Antonin Scalia",
+    "kind": "name",
+    "forms": [
+      "Antonin Scalia"
+    ],
+    "text": "Antonin Scalia was a conservative Supreme Court justice from 1986 until his death in 2016, and the most forceful advocate of reading the constitution according to its original meaning. He is quoted here for a position he took in the 1990s: that when the government hands out its own money, it may set whatever conditions it likes. Justices cite long-dead colleagues this way because an old opinion can be revived as a present-day argument.",
+    "audio": true
+  },
+  {
+    "k": "case-names",
+    "t": "Trump v Barbara",
+    "kind": "name",
+    "forms": [
+      "Trump v Barbara",
+      "Trump v Thakur"
+    ],
+    "text": "American court cases are named for the two opposing sides with a v, short for versus, between them, so Trump v Barbara is the birthright-citizenship case and Trump v Thakur the research-grants one. The side that brought the appeal is usually listed first, which is why the president's name leads even in cases he lost below. In conversation lawyers shorten a case to a single name, as in Thakur.",
+    "audio": true
+  },
+  {
+    "k": "emergency-docket",
+    "t": "the emergency docket",
+    "kind": "name",
+    "forms": [
+      "emergency docket",
+      "emergency applications",
+      "emergency orders"
+    ],
+    "text": "A docket is a court's list of pending business, and the emergency docket, often called the shadow docket, is the Supreme Court's fast lane. A party that has just lost below can ask the justices to let a policy take effect right away while the full case grinds on, and the answer arrives as a short order, usually with no oral argument and often with no reasoning or signature. It was built for genuine emergencies such as a scheduled execution, but has become the ordinary route for sweeping national policies.",
+    "audio": true
+  },
+  {
+    "k": "third-circuit",
+    "t": "the Third Circuit Court of Appeals",
+    "kind": "name",
+    "forms": [
+      "Third Circuit Court of Appeals"
+    ],
+    "text": "The federal appeals courts are split into 13 regional circuits, and the Third Circuit covers Pennsylvania, New Jersey and Delaware. An appeals court does not retry the facts: a panel of three of its judges decides whether the trial judge applied the law correctly, and occasionally all of the circuit's judges vote on whether to rehear a case together as a full court. That is the 6-5 vote here, in which they declined by one vote.",
+    "audio": true
+  },
+  {
+    "k": "federal-district-court",
+    "t": "federal district court",
+    "kind": "name",
+    "forms": [
+      "federal district court"
+    ],
+    "text": "District courts are the trial level of the federal system — 94 districts, one judge per case — where a federal lawsuit begins, witnesses testify and the facts get established. Everything above them reviews their work rather than redoing it. The point here is that making Mr Khalil argue before immigration judges first would keep him out of this court, where he would face a judge with life tenure and genuine independence.",
+    "audio": true
+  },
+  {
+    "k": "immigration-judges",
+    "t": "immigration judges",
+    "kind": "name",
+    "forms": [
+      "immigration judges",
+      "Immigration judges"
+    ],
+    "text": "Despite the title, immigration judges are not part of the judicial branch: they are Justice Department employees inside the executive branch, and the attorney general can review and overrule their decisions. That is what Steve Vladeck means by calling them increasingly un-independent. Sending a case to them first therefore keeps it inside the very branch of government being challenged.",
+    "audio": true
+  },
+  {
+    "k": "executive-order",
+    "t": "executive order",
+    "kind": "name",
+    "forms": [
+      "executive order"
+    ],
+    "text": "An executive order is a written instruction from the president to the federal government, telling agencies how to act. It needs no vote in Congress, which makes it fast, but it cannot override a statute or the constitution, which is why courts can and do strike orders down. The one discussed here would have put mail-in voting under the president's control.",
+    "audio": true
+  },
+  {
+    "k": "executive-branch",
+    "t": "the executive branch",
+    "kind": "name",
+    "forms": [
+      "executive branch"
+    ],
+    "text": "The constitution divides the federal government into three branches: Congress writes the laws, the courts interpret them, and the executive branch, headed by the president, carries them out. The executive is by far the largest, taking in every federal department and agency, from the armed forces to the National Science Foundation. Most of this article is a contest over how much the president may do inside that branch before the other two step in.",
+    "audio": true
+  },
+  {
+    "k": "separation-of-powers",
+    "t": "the separation of powers",
+    "kind": "name",
+    "forms": [
+      "separation of powers"
+    ],
+    "text": "Separation of powers is the constitutional design that hands law-making, law-executing and law-interpreting to three different branches so that none of them can do everything alone. Cases about it ask who is allowed to decide something, not whether the decision was a good one. The article notes that on such questions the court has usually given the presidency broad room, which is why free-speech challengers may do worse than they hope.",
+    "audio": true
+  },
+  {
+    "k": "unitary-executive",
+    "t": "unitary executive theory",
+    "kind": "name",
+    "forms": [
+      "unitary executive"
+    ],
+    "text": "The unitary executive theory holds that the constitution places the whole executive branch under the president's personal control, so he may direct or dismiss any official who carries out federal law. Its strong version implies that agencies meant to be independent, such as the Federal Reserve, cannot really be shielded from him. It is a live constitutional argument rather than settled law, and several current justices find it persuasive.",
+    "audio": true
+  },
+  {
+    "k": "constitutional-crisis",
+    "t": "a constitutional crisis",
+    "kind": "name",
+    "forms": [
+      "constitutional crisis"
+    ],
+    "text": "A constitutional crisis is a standoff the constitution offers no clear way out of, the classic example being a president who simply ignores a court order. Courts worry about provoking one because their power rests on being obeyed, not on any police force of their own. The article suggests that this fear is part of why the justices tread carefully around presidential authority.",
+    "audio": true
+  },
+  {
+    "k": "temporary-restraining-order",
+    "t": "a temporary restraining order",
+    "kind": "name",
+    "forms": [
+      "temporary restraining order"
+    ],
+    "text": "A temporary restraining order, or TRO, is a judge's emergency instruction to freeze things for a short stretch — a fortnight, in this case — so that a dispute can be examined properly before anyone is harmed. It is deliberately brief and usually cannot be appealed. Judge Kelly used one to stop the White House from stripping journalists of their press passes.",
+    "audio": true
+  },
+  {
+    "k": "preliminary-injunction",
+    "t": "a preliminary injunction",
+    "kind": "name",
+    "forms": [
+      "preliminary injunction"
+    ],
+    "text": "A preliminary injunction is the longer-lasting version of a restraining order: after both sides have been heard, a judge blocks the challenged action for as long as the lawsuit takes. Because it can last years and can be appealed immediately, converting a TRO into one is usually the moment a dispute starts climbing. That is precisely the step the president said he would appeal.",
+    "audio": true
+  },
+  {
+    "k": "defamation",
+    "t": "defamation",
+    "kind": "name",
+    "forms": [
+      "defamation"
+    ],
+    "text": "Defamation is the legal wrong of damaging someone's reputation with a false statement of fact, called libel when written and slander when spoken. American law makes it very hard for a public figure to win: he must show the publisher knew the claim was false or seriously doubted it. Those are the formidable obstacles standing between the president and his suit against CNN.",
+    "audio": true
+  },
+  {
+    "k": "litigant",
+    "t": "litigant",
+    "kind": "name",
+    "forms": [
+      "litigant"
+    ],
+    "text": "A litigant is a person or organisation taking part in a lawsuit. Calling Mr Trump a private litigant flags that in the CNN case he sues as an individual protecting his own reputation, not as the president wielding government power. The distinction matters because the constitutional limits on the presidency do not apply to him when he is just another plaintiff.",
+    "audio": true
+  },
+  {
+    "k": "plaintiff",
+    "t": "plaintiff",
+    "kind": "name",
+    "forms": [
+      "plaintiffs"
+    ],
+    "text": "The plaintiff is the side that starts a lawsuit, as opposed to the defendant who has to answer it. In these cases the plaintiffs are mostly people and institutions suing the government: researchers whose grants were cancelled, news organisations stripped of credentials. Saying the pattern may not bode well for plaintiffs means the people bringing free-speech claims are likely to lose.",
+    "audio": true
+  },
+  {
+    "k": "congressional-statutes",
+    "t": "congressional statutes",
+    "kind": "name",
+    "forms": [
+      "congressional statutes"
+    ],
+    "text": "A statute is a law passed by a legislature, so congressional statutes are the laws enacted by Congress and signed by a president. They rank below the constitution but above any executive order or agency rule, and that ranking is the key to the article's argument: the president lost most of his big cases because his actions collided with a statute, not because of a constitutional limit on his own power. Statutory arguments are much easier wins for a challenger.",
+    "audio": true
+  },
+  {
+    "k": "precedent",
+    "t": "precedent",
+    "kind": "name",
+    "forms": [
+      "precedent"
+    ],
+    "text": "A precedent is an earlier court decision that later courts are expected to follow when the facts are similar, the habit that keeps law predictable. The Supreme Court can overrule its own precedents, so describing one as messy, as Genevieve Lakier does about a 1990s ruling on government funding, hints that it may be reopened. Reopening a precedent is how large legal change usually happens.",
+    "audio": true
+  },
+  {
+    "k": "supermajority",
+    "t": "supermajority",
+    "kind": "name",
+    "forms": [
+      "supermajority"
+    ],
+    "text": "A supermajority is a share of a group well beyond a bare half, used here for the six of nine justices appointed by Republican presidents. Six out of nine means that side can lose one vote and still win the case, so its views set the direction of the law. The word also describes voting thresholds, such as the two-thirds of Congress needed to override a presidential veto.",
+    "audio": true
+  },
+  {
+    "k": "green-card",
+    "t": "green-card holder",
+    "kind": "name",
+    "forms": [
+      "green-card"
+    ],
+    "text": "A green card makes someone a lawful permanent resident of the United States: they may live and work there indefinitely and may apply for citizenship after some years, but they are not citizens and can still be deported. Mahmoud Khalil's case turns on that gap, since he holds a green card and the government is trying to remove him anyway. First Amendment protection generally covers everyone present in the country, not only citizens.",
+    "audio": true
+  },
+  {
+    "k": "birthright-citizenship",
+    "t": "birthright citizenship",
+    "kind": "name",
+    "forms": [
+      "birthright citizenship"
+    ],
+    "text": "Birthright citizenship is the rule that nearly anyone born on American soil is a citizen from birth, which comes from the opening words of the 14th Amendment. The administration tried to end it for the children of some non-citizens and lost at the Supreme Court in Trump v Barbara. The article singles that case out because it was the president's one prominent defeat that rested on the constitution rather than on a statute.",
+    "audio": true
+  },
+  {
+    "k": "big-lie",
+    "t": "the Big Lie",
+    "kind": "name",
+    "forms": [
+      "Big Lie"
+    ],
+    "text": "The Big Lie is the label critics use for the claim that the 2020 presidential election was stolen from Donald Trump, a claim rejected by courts and election officials in every state where it was tested. CNN's use of the phrase is what the president's defamation suit is about. The expression is much older, originally describing propaganda so large that people assume nobody would dare invent it.",
+    "audio": true
+  },
+  {
+    "k": "dei",
+    "t": "diversity, equity, and inclusion",
+    "kind": "name",
+    "forms": [
+      "diversity, equity, and inclusion"
+    ],
+    "text": "Diversity, equity and inclusion, usually shortened to DEI, covers policies meant to broaden who gets hired, admitted or funded and to address disadvantages between groups. It became a central political fight in the 2020s, with critics calling it discrimination under another name. Here the government used the label as its reason for cancelling research grants, which is what turned a funding decision into a free-speech case.",
+    "audio": true
+  },
+  {
+    "k": "public-interest",
+    "t": "the public interest",
+    "kind": "name",
+    "forms": [
+      "public interest"
+    ],
+    "text": "The public interest is the general good of the community as against any one person's advantage, and it is the standard a government is meant to serve when it spends money or writes rules. Officials invoke it constantly, which makes it a phrase worth examining rather than accepting. Declaring that grants are no longer in the public interest is a way of presenting a political choice as a neutral judgment.",
+    "audio": true
+  },
+  {
+    "k": "satisfaction",
+    "t": "satisfaction",
+    "kind": "word",
+    "forms": [
+      "satisfaction"
+    ],
+    "text": "In everyday use satisfaction is a feeling of contentment, but in law it means actually getting what you asked for. Giving him satisfaction in more than two-thirds of 40 emergency applications therefore means the court granted his requests in most of them, not that it made him happy. The same legal sense appears when a debt is said to be satisfied, meaning paid in full.",
+    "audio": true
+  },
+  {
+    "k": "plea",
+    "t": "plea",
+    "kind": "word",
+    "forms": [
+      "pleas"
+    ],
+    "text": "A plea here is not begging but a formal request put to a court, the sense preserved in pleadings and in pleading guilty. Calling the Supreme Court friendly to Mr Trump's pleas means it granted his legal requests. The everyday meaning of an emotional appeal is the same word loosened up.",
+    "audio": true
+  },
+  {
+    "k": "sack",
+    "t": "sack",
+    "kind": "word",
+    "forms": [
+      "sack"
+    ],
+    "text": "To sack someone is to dismiss them from their job, a chiefly British usage that The Economist prefers to fire. The example here is an attempt to sack a Federal Reserve governor, which matters because those officials are supposed to be removable only for specific cause. In American sports the same word means tackling a quarterback behind the line, an unrelated sense.",
+    "audio": true
+  },
+  {
+    "k": "split",
+    "t": "split",
+    "kind": "word",
+    "forms": [
+      "split"
+    ],
+    "text": "When a court splits over something, its judges divide and no clear answer emerges; nothing breaks apart. Having twice split over grant cancellations means the justices came out differently on two similar emergency requests, leaving the law unsettled. A split among the lower courts is one of the strongest reasons the Supreme Court agrees to take a case at all.",
+    "audio": true
+  },
+  {
+    "k": "embrace",
+    "t": "embrace",
+    "kind": "word",
+    "forms": [
+      "embrace"
+    ],
+    "text": "Beyond hugging, to embrace an idea is to adopt it willingly and openly, with a suggestion of enthusiasm rather than reluctant acceptance. Saying the court might embrace Justice Scalia's position means it may take that view as its own. The word is a useful signal of attitude: a court that embraces an argument is doing more than tolerating it.",
+    "audio": true
+  },
+  {
+    "k": "deem",
+    "t": "deem",
+    "kind": "word",
+    "forms": [
+      "deemed"
+    ],
+    "text": "To deem something is to judge or officially declare it to be the case, a formal word that almost always has authority behind it. Two courts deemed this to be discrimination means they ruled that it was, not merely that they privately thought so. You will meet it throughout legal and bureaucratic writing, as in a deadline deemed met.",
+    "audio": true
+  },
+  {
+    "k": "reckon",
+    "t": "reckon",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "To reckon is to judge or estimate, and in British usage it simply means to think or believe, which is how it works when the article says Ms Lakier reckons the court might embrace a position. The older arithmetic sense survives in reckoning a bill and in a day of reckoning. In American English it sounds informal or regional; in British papers it is ordinary.",
+    "audio": true
+  },
+  {
+    "k": "fortnight",
+    "t": "fortnight",
+    "kind": "word",
+    "forms": [
+      "fortnight"
+    ],
+    "text": "A fortnight is two weeks, from an old English phrase meaning fourteen nights, and it is standard in British and Commonwealth English while rare in America. Putting the move on hold for a fortnight means the judge froze it for 14 days. Expect it, alongside sack and reckon, in any British publication.",
+    "audio": true
+  },
+  {
+    "k": "nab",
+    "t": "nab",
+    "kind": "word",
+    "forms": [
+      "nabbed"
+    ],
+    "text": "To nab someone is to grab or arrest them, an informal word carrying a sense of suddenness and a certain roughness. Writing that Mr Khalil was nabbed by federal immigration officers in the lobby of his home conveys an abrupt seizure in a way that arrested would not. Because it is informal, using it in a news story is a small editorial judgment about how the event felt.",
+    "audio": true
+  },
+  {
+    "k": "zealously",
+    "t": "zealously",
+    "kind": "word",
+    "forms": [
+      "zealously"
+    ],
+    "text": "To do something zealously is to do it with intense, committed energy, from zeal, meaning passionate devotion to a cause. Saying the court has zealously defended First Amendment rights means it has protected them eagerly and consistently rather than grudgingly. The related noun zealot is usually an insult, so the adjective carries a faint warning about excess.",
+    "audio": true
+  },
+  {
+    "k": "leeway",
+    "t": "leeway",
+    "kind": "word",
+    "forms": [
+      "leeway"
+    ],
+    "text": "Leeway is room to manoeuvre, the freedom to act without being held to a strict line, and it started as a sailing term for how far a ship drifts sideways. Giving the presidency broad leeway means the court lets the president pick among many courses of action without second-guessing him. Setting it against free rein in the same article marks the difference between some room and unlimited room.",
+    "audio": true
+  },
+  {
+    "k": "revoke",
+    "t": "revoke",
+    "kind": "word",
+    "forms": [
+      "revoke"
+    ],
+    "text": "To revoke something is to cancel a permission or privilege that was already granted, which is why it applies to licences, visas and the White House press credentials at issue here. It differs from refusing a request: what gets revoked was previously given. The matching noun is revocation.",
+    "audio": true
+  },
+  {
+    "k": "preclude",
+    "t": "preclude",
+    "kind": "word",
+    "forms": [
+      "precludes"
+    ],
+    "text": "To preclude something is to rule it out in advance, making it impossible before it can happen. Asking whether the Second Amendment precludes bans on AR-15-style weapons is asking whether the constitution takes such bans off the table entirely. It is a favourite of legal and academic writing, often in the form this does not preclude.",
+    "audio": true
+  },
+  {
+    "k": "formidable",
+    "t": "formidable",
+    "kind": "word",
+    "forms": [
+      "Formidable"
+    ],
+    "text": "Something formidable is so strong or difficult that it commands respect and a little fear, from a Latin root meaning to be feared. Formidable obstacles to defamation suits means the barriers are genuinely hard to get past, which is why the article predicts the president will lose. The word serves for opponents and difficulties alike: a formidable rival, a formidable task.",
+    "audio": true
+  },
+  {
+    "k": "credentials",
+    "t": "credentials",
+    "kind": "word",
+    "forms": [
+      "credentials"
+    ],
+    "text": "Credentials are documents proving you are entitled to something, and White House credentials are the press passes that let named journalists into the building to cover the president. In everyday use the word means qualifications, as in academic credentials. Revoking a reporter's credentials does not forbid their reporting, which is why the legal question is whether the government may pick and choose who gets in.",
+    "audio": true
+  },
+  {
+    "k": "petition",
+    "t": "petition",
+    "kind": "word",
+    "forms": [
+      "petition"
+    ],
+    "text": "In court a petition is a formal written request asking a judge to act, so a petition to the Supreme Court is a request that the justices take the case at all. It is not the signature-gathering kind, though both come from the same idea of asking a higher power. The great majority of such petitions are refused, which is itself a decision with consequences.",
+    "audio": true
+  },
+  {
+    "k": "weigh-in",
+    "t": "weigh in",
+    "kind": "phrase",
+    "forms": [
+      "weigh in"
+    ],
+    "text": "To weigh in on something is to add your judgment to a discussion, usually with some authority behind it; the image is of stepping onto the scales. Saying the Supreme Court has yet to weigh in means it has not yet delivered a real ruling on these free-speech disputes. The phrase also literally means being weighed before a boxing match or a flight.",
+    "audio": true
+  },
+  {
+    "k": "bode-well",
+    "t": "bode well",
+    "kind": "phrase",
+    "forms": [
+      "bode well"
+    ],
+    "text": "If something bodes well it is a sign the future will turn out favourably; bode is an old verb meaning to foretell, and the negative form used here is far more common. Saying the president's defeats may not bode well for plaintiffs means the pattern behind those defeats is a bad omen for the next set of challengers. You will nearly always meet it as bodes well, bodes ill, or does not bode well.",
+    "audio": true
+  },
+  {
+    "k": "at-odds",
+    "t": "at odds",
+    "kind": "phrase",
+    "forms": [
+      "at odds"
+    ],
+    "text": "Two things are at odds when they conflict and cannot both be fully satisfied, from the sense of odds as a difference between sides. The article's central claim is that the court's two imperatives, presidential power and free speech, are now at odds. People can also be at odds with each other, meaning in disagreement.",
+    "audio": true
+  },
+  {
+    "k": "free-rein",
+    "t": "free rein",
+    "kind": "phrase",
+    "forms": [
+      "free rein"
+    ],
+    "text": "To have free rein is to be allowed to do whatever you judge best, the image being a rider loosening the reins and letting the horse set its own pace. The article contrasts it with leeway: a 1990s precedent gave the government some room in deciding what to fund, but not free rein. It is often misspelled free reign, which swaps the horses for kings.",
+    "audio": true
+  },
+  {
+    "k": "laugh-test",
+    "t": "the laugh test",
+    "kind": "phrase",
+    "forms": [
+      "laugh test"
+    ],
+    "text": "An argument that does not pass the laugh test is so weak a knowledgeable listener would laugh at it, and the phrase is a deliberately informal way of calling a claim unserious. A law professor saying the government's national-security claims do not pass the laugh test is dismissing them as transparently invented. The related straight-face test works the same way.",
+    "audio": true
+  },
+  {
+    "k": "loom-large",
+    "t": "loom large",
+    "kind": "phrase",
+    "forms": [
+      "loom particularly large"
+    ],
+    "text": "When something looms large it dominates the view ahead, the way a dark shape looms out of fog, so it is used for events and problems that feel unavoidably important. Saying First Amendment cases will loom particularly large in this term means they will overshadow the court's other business. Loom by itself keeps that sense of approaching and threatening.",
+    "audio": true
+  },
+  {
+    "k": "run-up-against",
+    "t": "run up against",
+    "kind": "phrase",
+    "forms": [
+      "runs up against"
+    ],
+    "text": "To run up against something is to collide with an obstacle you did not choose, often a rule or a limit. The right to free expression running up against claims of presidential power is this article's whole subject: two legitimate things meeting head-on. A close cousin is come up against.",
+    "audio": true
+  },
+  {
+    "k": "turn-on",
+    "t": "turn on",
+    "kind": "phrase",
+    "forms": [
+      "turned on"
+    ],
+    "text": "When a legal case turns on something, that thing is the hinge the whole outcome depends on, the way a door turns on its hinge. Saying the president's defeats turned on whether his actions violated congressional statutes means the statutes, not the constitution, decided those cases. This is a standard sense in argument and analysis, quite separate from turning on a light.",
+    "audio": true
+  },
+  {
+    "k": "press-an-argument",
+    "t": "press an argument",
+    "kind": "phrase",
+    "forms": [
+      "press their arguments"
+    ],
+    "text": "To press an argument or a case is to push it forward and insist on it, from the physical sense of applying pressure. Requiring people to press their arguments before immigration judges first means they must make their case there before any federal court will hear them. You will also see press a claim, press a point, and press for something.",
+    "audio": true
+  },
+  {
+    "k": "style-oneself",
+    "t": "style oneself",
+    "kind": "phrase",
+    "forms": [
+      "styles himself"
+    ],
+    "text": "To style yourself something is to present yourself as it, and the phrase almost always hints that the label is self-awarded rather than earned. Writing that Mr Trump styles himself a champion of free speech sets up the closing question of whether the record matches the claim. Watch for that quiet scepticism whenever a writer reaches for this phrase.",
+    "audio": true
+  },
+  {
+    "k": "attach-strings",
+    "t": "attach strings",
+    "kind": "phrase",
+    "forms": [
+      "attach whatever strings it likes"
+    ],
+    "text": "Strings in this sense are conditions quietly bundled with an offer, which is why a gift with no conditions comes with no strings attached. Saying that when the government opens its purse it can attach whatever strings it likes means it may set any terms it wishes on money it hands out. The image behind it is a puppeteer keeping hold of the strings.",
+    "audio": true
+  },
+  {
+    "k": "cross-someone",
+    "t": "cross someone",
+    "kind": "phrase",
+    "forms": [
+      "cross him"
+    ],
+    "text": "To cross someone is to oppose or defy them, usually at some risk to yourself, the idea being that you have gone against their path. Justices showing a willingness to cross him means they ruled against the president who appointed them. It is a different sense from crossing a street, and from being cross, meaning annoyed.",
+    "audio": true
+  }
+]
