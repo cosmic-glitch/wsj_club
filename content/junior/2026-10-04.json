@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-04",
+  "title": "Why singing is note-worthy, even if you’re bad at it",
+  "articleUrl": "https://www.economist.com/culture/2026/10/01/why-singing-is-note-worthy-even-if-youre-bad-at-it",
+  "articlePageUrl": "/articles/junior/2026-10-04.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "abound",
+      "partOfSpeech": "verb",
+      "pronunciation": "uh-BOWND",
+      "articleQuote": "Social difficulties abound too.",
+      "meaning": "If something abounds, there is a great deal of it — it turns up everywhere you look. You use it for things that pile up or spread, like rumors, mistakes, or chances, not usually for one single object. The reviewer has just finished listing the physical problems that hold singers back, and then says social difficulties abound too: there are plenty of those as well, from auditions to the fear of being judged.",
+      "examples": [
+        "Rumors abound at school the week before the class trip, and most of them turn out to be wrong.",
+        "Chances to score abound in a game against a weak defense, so missing one stings even more."
+      ]
+    },
+    {
+      "word": "derive",
+      "partOfSpeech": "verb",
+      "pronunciation": "dih-RYVE",
+      "articleQuote": "Many people derive pleasure from singing in choirs and other groups.",
+      "meaning": "To derive something is to get it from a particular source, and you almost always say where it came from: you derive pleasure *from* a hobby, or a word derives *from* Latin. It is a quieter, more exact way of saying \"gets\" — it points at the origin. The article says many people derive pleasure from singing in choirs, meaning the good feeling comes out of the singing itself, not out of the applause at the end.",
+      "examples": [
+        "She derives most of her confidence from the hours she puts in at practice.",
+        "The team's name derives from the creek that runs behind the school."
+      ]
+    },
+    {
+      "word": "gratifying",
+      "partOfSpeech": "adjective",
+      "pronunciation": "GRAT-uh-fy-ing",
+      "articleQuote": "“Sing” insists that group singing is gratifying regardless of talent, and that it brings people together.",
+      "meaning": "Something gratifying gives you a real sense of satisfaction, the feeling of a want being met or of effort finally paying off. It is warmer than \"fun\" and steadier than \"exciting\" — the pleasure sinks in rather than flashing past. The book's claim is that group singing is gratifying *regardless of talent*: the satisfaction comes from the singing, so you still get it even when your notes are wrong.",
+      "examples": [
+        "Finishing a hard puzzle on your own is gratifying in a way that looking up the answer never is.",
+        "It was gratifying to hear the coach admit that the extra passing drills had paid off."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Vocal cords",
+      "articleQuote": "Many things can set a singer back: germs, nodules, the hormone progesterone (which dries the vocal cords)—and, above all, ageing.",
+      "meaning": "A teacher once told the book's author that her voice had been “strangled” by years of singing in a college choir. That sounds like a figure of speech, but your voice really is a piece of equipment inside your body, and it can be worn out. Anatomy — the study of how bodies are built — says exactly where.\n\nAt the top of your windpipe, behind your Adam's apple, sit two small folds of muscle covered in a thin wet skin: the **vocal cords** (doctors call them vocal folds). Breathe quietly and they rest apart, so air slides through in silence. Speak or sing, and muscles pull them together across the pipe. Air pushed up from your lungs then forces its way through the narrow slit, and the two folds slap open and shut over a hundred times every second. Each slap lets out a tiny puff of air, and that fast stream of puffs *is* the sound of your voice. Pull the folds tighter and they flap faster, which your ear hears as a higher note.\n\nYou can feel the same physics in a balloon. Blow one up, pinch the neck almost shut, and let the air out: the rubber edges flutter and the balloon squeals. Stretch the neck tighter and the squeal climbs higher; let it go slack and the pitch drops. Air forced through a narrow gap with flexible edges makes a note, and how tight the edges are sets how high the note is. Your throat does it with muscle instead of rubber, and your mouth and nose shape the buzz into words.\n\nNow the article's list of setbacks makes sense. A cold swells the folds so they no longer meet evenly, and the sound comes out rough. Nodules are small bumps that grow on them from overuse, like a blister from a shoe that rubs. The hormone progesterone dries the wet layer on their surface, and dry folds scrape instead of sliding. Age stiffens them. So when you hear that a singer lost their voice, something physical happened to two little flaps of muscle in their throat — and like any other part of the body, those flaps can get sick, get injured, or get old."
+    },
+    {
+      "name": "Epic poetry",
+      "articleQuote": "Ancient epics, which placed societies in mythic time, were sung or chanted.",
+      "meaning": "The Roman poet Virgil opened the “Aeneid” with “I sing of arms and the man” — not “I speak.” He meant that almost literally.\n\nAn **epic** is a very long poem telling one enormous story, usually about heroes, gods, war, and where a whole people came from. Literature class will hand you several: the “Iliad” and the “Odyssey” from Greece, the “Aeneid” from Rome, the “Mahabharata” from India, “Beowulf” from England. They all come from a world where hardly anyone could read and books had to be copied by hand, so a poem could not survive on paper. It survived inside people. Performers memorized thousands of lines and delivered them out loud to a crowd, singing or chanting, often with a stringed instrument keeping the beat.\n\nHere is the part worth keeping: the singing was not decoration, it was the storage system. A tune, a steady rhythm, and lines that repeat make words far easier to hold on to and far harder to get wrong — if you drop a word, the rhythm stumbles and you notice.\n\nThink about how you learned the alphabet. Nobody handed you a list of 26 letters to memorize; you got a tune, and the tune carried the order for you. Years later it still works, and if you try saying the letters without singing it you may fumble around L-M-N-O-P — the spot where the song crams five letters into one beat. That is the whole trick, just small. An epic is the same trick at enormous scale: rhythm and repeated phrases are what kept ten thousand lines of story accurate for generations before anyone wrote them down.\n\nThe article's phrase “placed societies in mythic time” means these poems set their story in a legendary past — not last year, but the age of heroes — so a whole people could point at the poem and say *that is where we come from*. So when an old poem in class keeps saying “sing” and repeating itself, that is not clumsy writing. It is a story built to be performed out loud and remembered."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does Sacha Langton-Gilks argue in her book “Sing”?",
+      "options": [
+        "That only people with natural talent should join choirs",
+        "That almost everyone can, and should, sing",
+        "That singing is dying out and cannot be saved",
+        "That choirs should be replaced by solo lessons"
+      ],
+      "answerIndex": 1,
+      "explanation": "The review says Langton-Gilks, a teacher who trained as a choral scholar, argues that almost everyone can and should sing."
+    },
+    {
+      "question": "The reviewer writes, “Social difficulties abound too.” What is the point of that sentence?",
+      "options": [
+        "Social problems are rare compared with physical ones",
+        "There are plenty of social obstacles as well, such as the fear of being judged",
+        "Singers get along better in groups than alone",
+        "Choirs have become more welcoming over time"
+      ],
+      "answerIndex": 1,
+      "explanation": "To abound is to exist in large numbers, so the reviewer is saying the social obstacles — auditions, exposure, judgment — are plentiful too."
+    },
+    {
+      "question": "In “Many people derive pleasure from singing in choirs,” what does derive mean?",
+      "options": [
+        "Get it from that source",
+        "Expect it later",
+        "Pretend to feel it",
+        "Share it with others"
+      ],
+      "answerIndex": 0,
+      "explanation": "To derive something is to get it from a particular source — here, the pleasure comes out of the singing itself."
+    },
+    {
+      "question": "Physically, what produces the sound of your voice?",
+      "options": [
+        "Air from the lungs forced through two folds of muscle that slap open and shut very fast",
+        "The tongue tapping the roof of the mouth",
+        "Vibrations travelling up the bones of the neck",
+        "Air rushing down the windpipe toward the lungs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The vocal cords are pulled together across the top of the windpipe, and air pushed up from the lungs makes them flap, which is what you hear."
+    },
+    {
+      "question": "Why were ancient epics like the “Aeneid” sung or chanted rather than simply read?",
+      "options": [
+        "Singing made the poems sound more impressive to kings",
+        "Reading aloud was banned in ancient cities",
+        "Hardly anyone could read, and a tune and rhythm made thousands of lines easier to remember accurately",
+        "The poems were written as songs for temple musicians only"
+      ],
+      "answerIndex": 2,
+      "explanation": "Epics came from a world where few people could read, so performers memorized them, and tune, rhythm and repeated lines were what kept the long story intact."
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+[
+  {
+    "k": "abound",
+    "t": "abound",
+    "kind": "vocab",
+    "pron": "uh-BOWND",
+    "forms": [
+      "abound"
+    ],
+    "text": "If something abounds, there is a great deal of it — it turns up everywhere you look. You use it for things that pile up or spread, like rumors, mistakes or chances, rather than for one single object. The reviewer has just listed the physical problems that hold singers back, and now says social difficulties abound too: there are plenty of those as well.",
+    "audio": true
+  },
+  {
+    "k": "derive",
+    "t": "derive",
+    "kind": "vocab",
+    "pron": "dih-RYVE",
+    "forms": [
+      "derive"
+    ],
+    "text": "To derive something is to get it from a particular source, and you almost always say where it came from: you derive pleasure from a hobby, or a word derives from Latin. It is a more exact way of saying \"gets\", because it points at the origin. Here the pleasure comes out of the singing itself.",
+    "audio": true
+  },
+  {
+    "k": "gratifying",
+    "t": "gratifying",
+    "kind": "vocab",
+    "pron": "GRAT-uh-fy-ing",
+    "forms": [
+      "gratifying"
+    ],
+    "text": "Something gratifying gives you a real sense of satisfaction — the feeling of a want being met, or of effort finally paying off. It is warmer than \"fun\" and steadier than \"exciting\". The book claims singing in a group is gratifying even if you have no talent, because the satisfaction comes from the singing and not from sounding good.",
+    "audio": true
+  },
+  {
+    "k": "carry-a-tune",
+    "t": "carry a tune",
+    "kind": "phrase",
+    "forms": [
+      "carry a tune"
+    ],
+    "text": "To carry a tune is to sing a melody so that the notes come out roughly right and the song is recognisable. People say \"she can't carry a tune\" as a gentle way of saying someone sings badly. The book's argument is that more people should try anyway.",
+    "audio": true
+  },
+  {
+    "k": "soundtrack",
+    "t": "soundtrack",
+    "kind": "word",
+    "forms": [
+      "soundtrack"
+    ],
+    "text": "A soundtrack is the music that plays along with a film, show or game. Saying singing has provided a soundtrack to human history stretches the word on purpose: the music has been playing alongside everything people have done, for thousands of years.",
+    "audio": true
+  },
+  {
+    "k": "values",
+    "t": "values",
+    "kind": "word",
+    "forms": [
+      "values"
+    ],
+    "text": "In maths a value is a number, but here values means something else entirely: the beliefs a person or a group thinks matter most, like fairness, courage or loyalty. Songs tell people about their values because what a group chooses to sing about shows what it cares about.",
+    "audio": true
+  },
+  {
+    "k": "epics",
+    "t": "epics",
+    "kind": "word",
+    "forms": [
+      "epics"
+    ],
+    "text": "Watch out for this one: \"epic\" in everyday talk just means huge or awesome, but an epic is also a specific thing — a very long poem telling one enormous story about heroes, gods and war. The Iliad, the Odyssey and the Aeneid are epics. The point here is that ancient ones were performed out loud rather than read.",
+    "audio": true
+  },
+  {
+    "k": "mythic-time",
+    "t": "mythic time",
+    "kind": "name",
+    "forms": [
+      "mythic time"
+    ],
+    "text": "Mythic time means a legendary past that is not really dated — not last year or 1776, but the age of heroes and gods. Placing a society in mythic time means telling its story as if it began back in that age. That gave a whole people something to point at and say: this is where we come from.",
+    "audio": true
+  },
+  {
+    "k": "chanted",
+    "t": "chanted",
+    "kind": "word",
+    "forms": [
+      "chanted"
+    ],
+    "text": "To chant is to say words out loud in a steady rhythm on just one or two notes — more than speaking, less than singing. Crowds chant at football matches and monks chant prayers. Ancient poems were sung or chanted because the rhythm made thousands of lines easier to remember.",
+    "audio": true
+  },
+  {
+    "k": "virgil",
+    "t": "Virgil",
+    "kind": "name",
+    "forms": [
+      "Virgil"
+    ],
+    "text": "Virgil was a Roman poet who lived about 2,000 years ago and wrote the Aeneid, Rome's great national epic. School and library lists still treat him as one of the most important poets who ever lived. The article quotes his famous opening line.",
+    "audio": true
+  },
+  {
+    "k": "aeneid",
+    "t": "Aeneid",
+    "kind": "name",
+    "forms": [
+      "Aeneid"
+    ],
+    "text": "The Aeneid (say it uh-NEE-id) is Virgil's long poem about Aeneas, a survivor of the fall of Troy who sails across the Mediterranean and whose descendants go on to found Rome. It was written to give Romans a grand story of where they came from. Its first line begins \"I sing\", not \"I speak\".",
+    "audio": true
+  },
+  {
+    "k": "arms",
+    "t": "arms",
+    "kind": "word",
+    "forms": [
+      "arms"
+    ],
+    "text": "Not the arms on your body. In this old sense arms means weapons, and by extension war itself — the same sense you hear in \"armed\" and \"army\". \"I sing of arms and the man\" means this poem is about warfare and about one particular hero.",
+    "audio": true
+  },
+  {
+    "k": "ideological",
+    "t": "ideological",
+    "kind": "word",
+    "forms": [
+      "ideological"
+    ],
+    "text": "An ideology is a connected set of beliefs about how the world should be run, like a religion or a political cause. Ideological describes anything to do with such beliefs. An ideological community is a group held together by shared ideas rather than by family or place — and singing together is one way those groups bind themselves.",
+    "audio": true
+  },
+  {
+    "k": "hymn-singing",
+    "t": "hymn-singing",
+    "kind": "word",
+    "forms": [
+      "hymn-singing"
+    ],
+    "text": "A hymn is a song of praise sung in worship, usually by the whole congregation rather than a trained choir. Early Protestants made hymn-singing central to their services, so ordinary people sang together every week. That is why the article uses them as its first example of singing building a community.",
+    "audio": true
+  },
+  {
+    "k": "protestants",
+    "t": "Protestants",
+    "kind": "name",
+    "forms": [
+      "Protestants"
+    ],
+    "text": "Protestants are Christians from the churches that broke away from the Roman Catholic Church in Europe in the 1500s, in a split called the Reformation. Lutherans, Methodists, Baptists and Anglicans are Protestant churches. Singing in the local language was one of the changes they pushed hardest.",
+    "audio": true
+  },
+  {
+    "k": "pro-democracy-demonstrators",
+    "t": "pro-democracy demonstrators",
+    "kind": "name",
+    "forms": [
+      "pro-democracy demonstrators"
+    ],
+    "text": "Demonstrators are people who gather in public to show what they want, usually by marching or standing together with signs. \"Pro-\" means in favour of, so pro-democracy demonstrators are protesting for the right to choose their own government. In Belarus in 2020 huge crowds did this partly by singing.",
+    "audio": true
+  },
+  {
+    "k": "belarus",
+    "t": "Belarus",
+    "kind": "name",
+    "forms": [
+      "Belarus"
+    ],
+    "text": "Belarus is a country in eastern Europe, between Poland and Russia, with about nine million people. It has been run by the same leader since 1994, and in 2020 enormous crowds protested against an election most observers said was rigged. The protests were known for their singing.",
+    "audio": true
+  },
+  {
+    "k": "british-journal-of-psychiatry",
+    "t": "British Journal of Psychiatry",
+    "kind": "name",
+    "forms": [
+      "British Journal of Psychiatry"
+    ],
+    "text": "A journal is a magazine where scientists and doctors publish their studies so other experts can check them. The British Journal of Psychiatry is a respected one covering mental health. Naming the journal is a way of saying this finding was properly reviewed, not just somebody's opinion.",
+    "audio": true
+  },
+  {
+    "k": "alleviating",
+    "t": "alleviating",
+    "kind": "word",
+    "forms": [
+      "alleviating"
+    ],
+    "text": "To alleviate something bad is to make it less bad — to ease it rather than cure it completely. You alleviate pain, hunger, traffic or boredom. The study found singing groups did more to alleviate severe depression in new mothers than ordinary playgroups did.",
+    "audio": true
+  },
+  {
+    "k": "postnatal-depression",
+    "t": "postnatal depression",
+    "kind": "name",
+    "forms": [
+      "postnatal depression"
+    ],
+    "text": "Depression is a medical illness, not just a bad mood: it drains energy and interest for weeks or months at a time. Postnatal means after birth, so postnatal depression is depression that hits a parent in the months after a baby arrives. It is common and it is treatable.",
+    "audio": true
+  },
+  {
+    "k": "rehabilitate",
+    "t": "rehabilitate",
+    "kind": "word",
+    "forms": [
+      "rehabilitate"
+    ],
+    "text": "To rehabilitate someone is to help them get back an ability they have lost, usually after an injury or illness, through steady practice. Hospitals do it with walking, with hands and with speech. Singing can help rehabilitate people whose injuries damaged their speech.",
+    "audio": true
+  },
+  {
+    "k": "congresswoman",
+    "t": "congresswoman",
+    "kind": "word",
+    "forms": [
+      "congresswoman"
+    ],
+    "text": "Congress is the part of the United States government that writes laws, and it is split into the House of Representatives and the Senate. A congresswoman is an elected member of the House, representing one district of one state. Gabrielle Giffords was Arizona's.",
+    "audio": true
+  },
+  {
+    "k": "gabrielle-giffords",
+    "t": "Gabrielle Giffords",
+    "kind": "name",
+    "forms": [
+      "Gabrielle Giffords"
+    ],
+    "text": "Gabrielle Giffords is an American politician who was shot in the head at a meeting with voters in Arizona in 2011. She survived but had to relearn how to speak. Her recovery, helped by music, is one of the best-known examples of what the article is describing.",
+    "audio": true
+  },
+  {
+    "k": "music-therapy",
+    "t": "Music therapy",
+    "kind": "name",
+    "forms": [
+      "Music therapy"
+    ],
+    "text": "Music therapy is a real medical job: trained therapists use singing, playing and rhythm to help patients recover or cope. It works partly because music and speech use overlapping parts of the brain, so a patient who cannot say a sentence may still be able to sing one. Practising that can help speech come back.",
+    "audio": true
+  },
+  {
+    "k": "verbal-fluency",
+    "t": "verbal fluency",
+    "kind": "name",
+    "forms": [
+      "verbal fluency"
+    ],
+    "text": "Verbal means to do with words, and fluency is the ability to produce them smoothly without hunting for each one. Verbal fluency is what you lose after a brain injury when the words are still in there but will not come out easily. Recovering it means being able to talk at a normal pace again.",
+    "audio": true
+  },
+  {
+    "k": "choirs",
+    "t": "choirs",
+    "kind": "word",
+    "forms": [
+      "choirs",
+      "choir"
+    ],
+    "text": "A choir is an organised group that sings together, usually split into sections singing different notes at the same time so the parts stack up into harmony. A conductor keeps everyone together, and most choirs rehearse weekly and perform a few times a year. The article says 1.5m Germans belong to one.",
+    "audio": true
+  },
+  {
+    "k": "affiliated",
+    "t": "affiliated",
+    "kind": "word",
+    "forms": [
+      "affiliated"
+    ],
+    "text": "To be affiliated with an organisation is to be officially connected to it — signed up, counted as a member, playing by its rules — while still running yourself. Your school sports team is probably affiliated with a league. Those German choirs are affiliated with national singing associations, which is how anyone can count them.",
+    "audio": true
+  },
+  {
+    "k": "casual",
+    "t": "casual",
+    "kind": "word",
+    "forms": [
+      "casual"
+    ],
+    "text": "Casual usually makes you think of clothes, but its real meaning is relaxed and unofficial. A casual singing group is one with no membership list, no auditions and no fixed schedule — people just turn up and sing. Millions more sing in groups like that, so the official count of choir members is too low.",
+    "audio": true
+  },
+  {
+    "k": "choral-scholar",
+    "t": "choral scholar",
+    "kind": "name",
+    "forms": [
+      "choral scholar"
+    ],
+    "text": "Choral means written for or sung by a choir. At British universities and cathedrals, a choral scholar is a student given a place, and often money, in exchange for singing in the choir and training seriously. Saying the author trained as one tells you she is a properly schooled singer, not a hobbyist.",
+    "audio": true
+  },
+  {
+    "k": "strangled",
+    "t": "strangled",
+    "kind": "word",
+    "forms": [
+      "strangled"
+    ],
+    "text": "To strangle is to squeeze a throat so tightly that air cannot pass. The teacher who said the author's voice had been \"strangled\" did not mean anyone attacked her — she meant years of singing the wrong way had left the muscles around her voice so tight and tense that the sound came out squeezed.",
+    "audio": true
+  },
+  {
+    "k": "nodules",
+    "t": "nodules",
+    "kind": "word",
+    "forms": [
+      "nodules"
+    ],
+    "text": "A nodule is a small hard lump that grows in or on body tissue. Singers and teachers get them on their vocal cords from using the voice too hard for too long, rather like a blister from a shoe that rubs. Lumpy cords cannot close smoothly, so the voice turns hoarse.",
+    "audio": true
+  },
+  {
+    "k": "hormone",
+    "t": "hormone",
+    "kind": "word",
+    "forms": [
+      "hormone"
+    ],
+    "text": "A hormone is a chemical your body makes in one place and sends through the blood to change how things work somewhere else — a slow chemical message. Growth, hunger, sleep and puberty are all run by hormones. One of them can change the surface of the vocal cords.",
+    "audio": true
+  },
+  {
+    "k": "progesterone",
+    "t": "progesterone",
+    "kind": "word",
+    "forms": [
+      "progesterone"
+    ],
+    "text": "Progesterone (say it proh-JES-tuh-rohn) is a hormone involved in the menstrual cycle and in pregnancy. One of its side effects is drying out moist surfaces, including the thin wet layer on the vocal cords. Dry cords scrape instead of sliding, so the voice gets harder to control.",
+    "audio": true
+  },
+  {
+    "k": "vocal-cords",
+    "t": "vocal cords",
+    "kind": "name",
+    "forms": [
+      "vocal cords"
+    ],
+    "text": "Your vocal cords are two small folds of muscle sitting across the top of your windpipe, behind your Adam's apple. When you speak or sing, muscles pull them together and air from your lungs forces through the narrow gap, making them flap open and shut over a hundred times a second — and that flapping is the sound of your voice. Pull them tighter and the note goes higher.",
+    "audio": true
+  },
+  {
+    "k": "exposure",
+    "t": "exposure",
+    "kind": "word",
+    "forms": [
+      "exposure"
+    ],
+    "text": "To expose something is to leave it uncovered, so exposure here is not about sunshine or publicity — it is the feeling of being seen with nothing to hide behind. Singing alone in front of people exposes you. That is why the article compares it to being asked to take your clothes off.",
+    "audio": true
+  },
+  {
+    "k": "entails",
+    "t": "entails",
+    "kind": "word",
+    "forms": [
+      "entails"
+    ],
+    "text": "If one thing entails another, the second comes with it automatically — it is part of the deal, not an optional extra. Joining the team entails showing up to practice. Auditioning entails being judged, which is exactly what makes children and adults dread it.",
+    "audio": true
+  },
+  {
+    "k": "caroline-polachek",
+    "t": "Caroline Polachek",
+    "kind": "name",
+    "forms": [
+      "Caroline Polachek"
+    ],
+    "text": "Caroline Polachek is an American pop singer known for an unusually wide, acrobatic voice. She is named alongside Adele as an example of a singer whose recordings anyone can call up on a phone in seconds. Next to voices like those, ordinary singing can sound disappointing.",
+    "audio": true
+  },
+  {
+    "k": "regardless-of",
+    "t": "regardless of",
+    "kind": "phrase",
+    "forms": [
+      "regardless of"
+    ],
+    "text": "Regardless of something means without paying attention to it, whatever it turns out to be: the rule holds either way. The match goes ahead regardless of the weather. Here the book insists group singing is enjoyable regardless of talent — your level of skill simply does not change it.",
+    "audio": true
+  },
+  {
+    "k": "disheartening",
+    "t": "disheartening",
+    "kind": "word",
+    "forms": [
+      "disheartening"
+    ],
+    "text": "Take the word apart: to hearten someone is to give them heart, meaning courage and hope, and dis- undoes it. Something disheartening drains your confidence and makes you want to give up. Being sung at by people who turn away from you is disheartening.",
+    "audio": true
+  },
+  {
+    "k": "your-correspondent",
+    "t": "Your correspondent",
+    "kind": "name",
+    "forms": [
+      "Your correspondent"
+    ],
+    "text": "A correspondent is a journalist who reports for a newspaper, often from a particular place or on a particular subject. The Economist does not print its writers' names, so when a writer needs to say \"I\" they write \"your correspondent\" instead. So this sentence means: I have sung in choirs like that myself.",
+    "audio": true
+  },
+  {
+    "k": "ostentatiously",
+    "t": "ostentatiously",
+    "kind": "word",
+    "forms": [
+      "ostentatiously"
+    ],
+    "text": "To do something ostentatiously is to do it in a showy way, making sure everyone notices. The showing off is the point. These choir members do not quietly cover an ear — they turn away so obviously that the bad singer next to them cannot miss it.",
+    "audio": true
+  },
+  {
+    "k": "muffle",
+    "t": "muffle",
+    "kind": "word",
+    "forms": [
+      "muffle"
+    ],
+    "text": "To muffle a sound is to block or soften it by putting something in the way, like a pillow over a phone alarm. You still hear it, just dulled. These singers cover an ear to muffle the wrong notes coming from the person beside them.",
+    "audio": true
+  },
+  {
+    "k": "amateur",
+    "t": "amateur",
+    "kind": "word",
+    "forms": [
+      "amateur",
+      "amateurs"
+    ],
+    "text": "An amateur does something for love rather than for money, and a professional is paid for it. Amateur does not have to mean bad, though people often use it that way. This study is about an amateur choir, and its members were insulted when paid singers were brought in to cover for them.",
+    "audio": true
+  },
+  {
+    "k": "stiffen",
+    "t": "stiffen",
+    "kind": "word",
+    "forms": [
+      "stiffen"
+    ],
+    "text": "To stiffen something is to make it firmer and stronger — you stiffen cardboard with tape or stiffen a defence with extra players. Stiffening the sound means adding professional singers so the choir's notes come out solid and confident. The amateurs heard it as being told they were not good enough.",
+    "audio": true
+  },
+  {
+    "k": "disharmony",
+    "t": "disharmony",
+    "kind": "word",
+    "forms": [
+      "disharmony"
+    ],
+    "text": "Harmony is different notes sounding good together, and dis- flips it, so disharmony is clashing sound. It also means people not getting along. The word is doing both jobs here: tired, stressed singers quarrel with each other and sound rough at the same time.",
+    "audio": true
+  },
+  {
+    "k": "digressions",
+    "t": "digressions",
+    "kind": "word",
+    "forms": [
+      "digressions"
+    ],
+    "text": "A digression is a stretch where a writer or speaker wanders off the main point before coming back to it. Saying a better book would have fewer digressions is a polite complaint: this one strays too often. Reviewers use the word a lot.",
+    "audio": true
+  },
+  {
+    "k": "bum-notes",
+    "t": "bum notes",
+    "kind": "phrase",
+    "forms": [
+      "bum notes"
+    ],
+    "text": "A bum note is a wrong note — British slang, where bum means useless or bad rather than anything to do with bodies. The reviewer uses it twice over: he wants the book to say more about wrong notes in singing, and about what goes wrong in singing groups generally.",
+    "audio": true
+  }
+]
