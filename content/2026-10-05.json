@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-05",
+  "title": "Record labels are in a spin over AI music",
+  "articleUrl": "https://www.economist.com/business/2026/10/05/record-labels-are-in-a-spin-over-ai-music",
+  "articlePageUrl": "/articles/2026-10-05.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "expediency",
+      "partOfSpeech": "noun",
+      "pronunciation": "ek-SPEE-dee-un-see",
+      "articleQuote": "The firm's decision to settle with Suno was based on expediency: it might take years for the courts to rule on fair use.",
+      "meaning": "Expediency is picking the course that is quickest or most convenient right now instead of the one that is most principled or most correct. The word almost always carries a faint sniff of disapproval, as if the chooser took a shortcut — which is why it is striking that Warner Music's boss uses it about himself here, and proudly. He thinks his company might well have *won* its piracy case against Suno, but winning could have taken years, so he dropped the argument and started taking the money instead. That is the shape of the word every time you meet it: \"political expediency\" means a politician did the thing that worked, not the thing they said they believed.",
+      "examples": [
+        "She knew the group project deserved another week of work, but out of sheer expediency they handed in the half-finished version that was due Friday.",
+        "Letting the loudest kid pick the team captain was expediency, not fairness — it just ended the argument fastest."
+      ]
+    },
+    {
+      "word": "qualms",
+      "partOfSpeech": "noun",
+      "pronunciation": "KWAHMZ",
+      "articleQuote": "But so far UMG, WMG, Spotify and Suno have named no big stars who have signed up, suggesting that qualms related to artistic integrity remain high.",
+      "meaning": "A qualm is an uneasy feeling that something you are about to do might be wrong — not a full objection you could defend in a debate, more a twinge that makes you hesitate. It shows up almost always in the plural, and very often in the negative: \"she had no qualms about telling him\". In the article it is the word for why famous musicians have not signed up to let AI remix their songs. Nobody has announced a principled refusal; they are just quietly uncomfortable about what it would do to their own work, and their silence is the only evidence we get.",
+      "examples": [
+        "He had no qualms about eating the last slice, which annoyed everyone else at the table.",
+        "I had a few qualms about posting the video, so I watched it one more time and then decided not to."
+      ]
+    },
+    {
+      "word": "herald",
+      "partOfSpeech": "verb",
+      "pronunciation": "HAIR-uld",
+      "articleQuote": "The settlement itself may also herald big changes.",
+      "meaning": "To herald something is to be a sign that it is coming. The word is old and the picture behind it is literal: a herald was a messenger who rode ahead of a king to announce his arrival, and the verb kept that job — the thing that heralds is the early signal, not the event itself. Plenty of readers know only the noun, from newspaper names like the Boston Herald, which is exactly why the verb trips them up. Here the Warner-Suno settlement is tiny in itself, a single deal between two companies, but the article suspects it is the first visible sign of a much larger rearrangement of the music business.",
+      "examples": [
+        "A few yellow leaves on the maple heralded the end of summer long before the weather changed.",
+        "The coach pulling two starters off the field in the first half heralded a long, ugly afternoon."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Fair use",
+      "articleQuote": "it argues that it is \"fair use\" in law to transform it into something unprotected, such as a musical style",
+      "meaning": "Suno does not deny the thing it is accused of. It admits that the tens of millions of recordings fed into its models included copyrighted songs — and then argues it broke no law anyway. That only makes sense once you know about **fair use**, an exception written into American copyright law.\n\nCopyright gives whoever made something — a song, a photo, a novel — the exclusive right to copy it and sell copies. But that right was never absolute, because an absolute version would be absurd: a reviewer could not quote the book, a teacher could not put a poem on the board, a comedian could not parody a hit song. So the law carves out fair use. A court deciding whether one particular copy is fair use weighs several questions, and the heaviest is whether the new thing *transforms* the original into something different rather than simply substituting for it. Quoting two lines of a novel in your essay is transformative — nobody reads your essay instead of buying the novel. Photocopying the whole novel for your class is not.\n\nThat is precisely the argument Suno is making, and you can see why it is worth fighting for when damages can reach $150,000 per recording and more than 60,000 recordings are named. Suno says it did copy the songs, but only to pull out something copyright does not protect in the first place: a *style*. Nobody owns \"sounds like gospel\" or \"sounds like punk\", and Suno's founder made the point by playing a reporter a gospel version of a Green Day song. The labels call that a dodge — a machine that can produce an endless supply of Avril-Lavigne-ish tracks substitutes for Avril Lavigne rather than transforming her.\n\nNobody knows yet who is right. More than 100 similar suits are grinding through American courts against AI companies, Anthropic and OpenAI among them, and most turn on this single question. So when you next hear that a model was \"trained on\" somebody's work, the useful question is not whether copying happened — it did — but whether what came out the other end is different enough to count as something new."
+    },
+    {
+      "name": "Royalties",
+      "articleQuote": "Much of the slop is uploaded illegally by bot farms hoping to harvest fraudulent royalties.",
+      "meaning": "Why would anyone upload 90,000 machine-made tunes a day to a single streaming service, as Deezer's boss says happens to his? Nobody is going to listen to them. The answer is that streaming pays out automatically, per play, to whoever registered the track — so if you can fake enough plays, real money arrives whether or not a human ever heard the song.\n\nA **royalty** is a payment you receive each time something you made gets used, as opposed to a wage, which pays you once for the hours you worked. This is the standard way creative and inventive work earns a living: songwriters, novelists, screenwriters and the holder of a patent on a drug are all paid this way. In music the per-use amount is minute. A streaming service pools the subscription and advertising money it collected, then splits it among rights-holders roughly in proportion to their share of total plays, which works out to a fraction of a cent a stream — a few hundred plays to earn a dollar. That arithmetic is why a hit has to be streamed hundreds of millions of times, and why a thousand junk tracks played by a thousand fake accounts is a business plan for a fraudster.\n\nRoyalties explain almost every number in this article. They are why industry revenue took more than twenty years to climb back to its 1990s level after Napster: when people copy files instead of buying music, no use is ever recorded, so no royalty is ever paid. They are what Spotify is defending when it deletes 75m spammy tracks, because each fraudulent payment comes out of the same pool real artists are paid from. And they are the shape of the new AI deals — an artist who opts in to Suno's licensed model takes a cut whenever a fan's AI remix of their work is played, a royalty on a song they did not quite write.\n\nThe habit worth keeping: when you want to know who profits from a creative business, don't ask who made the thing — ask who gets paid every time it is used."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article describes the big labels' dealings with Suno as \"an intriguing natural experiment\". What makes it one?",
+      "options": [
+        "Universal and Sony are suing Suno, while Warner — once part of the same suit — has settled and expects AI revenue this year",
+        "All three big labels sued Suno together and are waiting on a single ruling",
+        "Suno is being sued in several countries at once, so different courts will reach different verdicts",
+        "Universal and Warner have both refused to deal with any AI-music company"
+      ],
+      "answerIndex": 0,
+      "explanation": "The same company, Suno, is being handled two opposite ways at the same time: UMG and Sony doubled down with a fresh September case, while WMG settled and says the money starts flowing this financial year."
+    },
+    {
+      "question": "Suno concedes that copyrighted recordings were used to train its models. What is its legal defence?",
+      "options": [
+        "That it transformed the recordings into something copyright does not protect, such as a musical style",
+        "That the recordings were already out of copyright and in the public domain",
+        "That American copyright law does not apply to software",
+        "That it paid a licence fee for every recording before using it"
+      ],
+      "answerIndex": 0,
+      "explanation": "That is the fair-use argument: copying can be lawful when the result is genuinely transformative rather than a substitute for the original."
+    },
+    {
+      "question": "Why do bot farms upload huge numbers of machine-generated tracks to streaming services?",
+      "options": [
+        "Because streaming pays royalties automatically per play, so faked plays collect real money",
+        "Because streaming services pay a fee for each new track that is uploaded",
+        "Because the uploads push the bot farms' own human artists up the charts",
+        "Because record labels scout the uploads and buy the promising ones"
+      ],
+      "answerIndex": 0,
+      "explanation": "Royalties are paid per use out of a shared pool, so fake plays on junk tracks siphon off money real artists would have been paid — which is why Spotify removed 75m spammy tracks in a year."
+    },
+    {
+      "question": "Robert Kyncl says Warner's decision to settle was \"based on expediency\". What does that tell you about the decision?",
+      "options": [
+        "He chose the course that would pay off soonest rather than holding out for the principle",
+        "He was convinced Warner would have lost the case in court",
+        "He was legally obliged to settle once the other labels sued",
+        "He judged settling to be the most ethical option available"
+      ],
+      "answerIndex": 0,
+      "explanation": "Expediency means taking the quickest, most convenient route rather than the most principled one — his point was that a fair-use ruling could take years while payments could start immediately."
+    },
+    {
+      "question": "The article says \"qualms related to artistic integrity remain high\" among leading performers. What is the evidence for that?",
+      "options": [
+        "No big stars have been named as having signed up to the AI remix deals",
+        "Several stars have filed their own lawsuits against Suno",
+        "Taylor Swift left Universal Music Group over the deals",
+        "Artists voted down Spotify's licensing agreement"
+      ],
+      "answerIndex": 0,
+      "explanation": "Qualms are uneasy hesitations rather than stated objections, so the only sign is a silence: UMG, WMG, Spotify and Suno have announced no big names who have opted in."
+    }
+  ]
+}

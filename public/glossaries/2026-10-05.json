@@ -1,0 +1,689 @@
+[
+  {
+    "k": "expediency",
+    "t": "expediency",
+    "kind": "vocab",
+    "pron": "ek-SPEE-dee-un-see",
+    "forms": [
+      "expediency"
+    ],
+    "text": "Expediency is choosing whatever is quickest or most convenient right now rather than whatever is most principled or correct, and the word usually carries a faint note of disapproval. Warner's boss uses it about his own decision here: he may well have won the piracy case eventually, but winning could have taken years, so he dropped the argument and took the money. You meet the word most often as \"political expediency\" — a politician doing the thing that works rather than the thing they said they believed.",
+    "audio": true
+  },
+  {
+    "k": "qualms",
+    "t": "qualms",
+    "kind": "vocab",
+    "pron": "KWAHMZ",
+    "forms": [
+      "qualms"
+    ],
+    "text": "A qualm is an uneasy feeling that what you are about to do might be wrong — not a full objection you could argue in a debate, more a twinge that makes you hesitate. It appears almost always in the plural and very often in the negative: \"she had no qualms about telling him\". Here it describes why famous musicians have not signed up to let AI remix their songs: nobody has announced a principled refusal, they are just quietly uncomfortable.",
+    "audio": true
+  },
+  {
+    "k": "herald",
+    "t": "herald",
+    "kind": "vocab",
+    "pron": "HAIR-uld",
+    "forms": [
+      "herald"
+    ],
+    "text": "To herald something is to be a sign that it is coming. A herald was once a messenger who rode ahead of a king to announce his arrival, and the verb kept that job: the thing that heralds is the early signal, not the event itself. Many readers know only the noun, from newspaper names like the Boston Herald, so the verb catches them out — the article means the Warner settlement is small in itself but may be the first visible sign of much bigger change.",
+    "audio": true
+  },
+  {
+    "k": "upstart",
+    "t": "upstart",
+    "kind": "word",
+    "forms": [
+      "upstart"
+    ],
+    "text": "An upstart is a newcomer who has risen fast and behaves as though it already belongs among the established players — and the word is faintly rude, implying the newcomer has not earned its place. The subtitle calls the AI-music labs upstarts because companies four years old are squaring up to record labels nearly a century old. It works for people too: the upstart freshman who makes varsity ahead of the seniors.",
+    "audio": true
+  },
+  {
+    "k": "no-stranger-to",
+    "t": "no stranger to",
+    "kind": "phrase",
+    "forms": [
+      "no stranger to"
+    ],
+    "text": "To be no stranger to something means to have plenty of experience of it already. It is a standard English understatement — saying you are \"no stranger to losing\" is a dry way of saying you lose often. The article opens with it to make a point: the music business has been turned upside down by new technology so many times that this latest upheaval is not unfamiliar territory.",
+    "audio": true
+  },
+  {
+    "k": "upheaval",
+    "t": "upheaval",
+    "kind": "word",
+    "forms": [
+      "upheaval"
+    ],
+    "text": "An upheaval is a large, disruptive change that throws the existing order into disarray. The word is literally geological — rock being heaved upward — and it keeps that sense of something being lifted and overturned from below rather than tidily rearranged. Here it names the series of shocks that repeatedly remade how music is recorded and sold.",
+    "audio": true
+  },
+  {
+    "k": "formats",
+    "t": "vinyl",
+    "kind": "name",
+    "forms": [
+      "vinyl",
+      "cassettes",
+      "CDs"
+    ],
+    "text": "These are the physical formats music was sold on before streaming, in order: vinyl records (large grooved discs played with a needle), cassettes (magnetic tape in a small plastic shell), then CDs (compact discs read by a laser). Each switch forced the industry to re-sell the same songs in a new form, which is why the article lists them as a run of revolutions. Streaming broke the pattern by selling access rather than objects.",
+    "audio": true
+  },
+  {
+    "k": "illicit",
+    "t": "illicit",
+    "kind": "word",
+    "forms": [
+      "illicit"
+    ],
+    "text": "Illicit means not allowed — either outright illegal or against the accepted rules. It is a notch broader than \"illegal\": an illicit romance breaks no law, it just breaks the rules everyone understood. The file-sharing of the Napster era was illicit because people were copying songs they had not bought.",
+    "audio": true
+  },
+  {
+    "k": "napster",
+    "t": "Napster",
+    "kind": "name",
+    "forms": [
+      "Napster"
+    ],
+    "text": "Napster was a service launched in 1999 that let people copy music files straight from each other's computers, free and without permission. It spread explosively, was sued by the record industry and shut down by 2001, but it had already taught a generation that music could be had for nothing — which is why industry revenue took over twenty years to recover. \"The Napster era\" is shorthand for that whole period of free file-copying.",
+    "audio": true
+  },
+  {
+    "k": "gave-way-to",
+    "t": "gave way to",
+    "kind": "phrase",
+    "forms": [
+      "gave way to"
+    ],
+    "text": "When one thing gives way to another, it yields its place and the second thing replaces it. The phrase suggests gradual surrender rather than a sudden switch — winter gives way to spring. Illegal file-sharing gave way to legal streaming: the free copying did not vanish overnight, it slowly lost ground to paid services.",
+    "audio": true
+  },
+  {
+    "k": "nominal-terms",
+    "t": "nominal terms",
+    "kind": "name",
+    "forms": [
+      "nominal terms"
+    ],
+    "text": "In economics, a figure in nominal terms is the raw amount of money, not adjusted for inflation; the adjusted version is called \"real\". Careful writers say which they mean because the gap is huge over decades. The detail matters here: revenue only crawled back to 1990s levels in nominal terms, so measured in real purchasing power the industry is still well below where it was. Beware the everyday sense of nominal — \"in name only\", or \"tiny\" — which is a different meaning entirely.",
+    "audio": true
+  },
+  {
+    "k": "generative-ai",
+    "t": "Generative artificial intelligence",
+    "kind": "name",
+    "forms": [
+      "Generative artificial intelligence"
+    ],
+    "text": "Generative AI is the kind of artificial intelligence that produces new material — text, images, audio — rather than just sorting or labelling existing material. It works by being trained on enormous quantities of examples and then predicting plausible continuations of a prompt. Applied to music, that means a model given millions of recordings can output a complete new track on request, which is the technology this whole article is about.",
+    "audio": true
+  },
+  {
+    "k": "disruption",
+    "t": "disruption",
+    "kind": "word",
+    "forms": [
+      "disruption"
+    ],
+    "text": "In everyday speech a disruption is an annoying interruption, but in business writing it has a specific and almost admiring sense: a new technology or company that overturns how an established industry works, often by serving customers the incumbents ignored. Streaming was a disruption of CD sales; AI music may be the next one. When a business writer calls something disruptive they usually mean it as a compliment.",
+    "audio": true
+  },
+  {
+    "k": "zeitgeist",
+    "t": "zeitgeist",
+    "kind": "word",
+    "forms": [
+      "zeitgeist"
+    ],
+    "text": "The zeitgeist is the general mood and set of preoccupations of a particular moment — literally \"time-spirit\" in German, and English borrowed it whole. To say something is in the zeitgeist is to say it is in the air, part of what everyone is currently talking about. AI music has entered the zeitgeist under the unflattering label \"slop\".",
+    "audio": true
+  },
+  {
+    "k": "slop",
+    "t": "slop",
+    "kind": "word",
+    "forms": [
+      "slop"
+    ],
+    "text": "Slop normally means watery food waste fed to pigs, and that contempt carries straight into the new internet sense the article uses: slop is the flood of cheap machine-generated content — text, images, songs — produced in bulk because it costs almost nothing to make. The word became common around 2024 and is always an insult. Deezer's boss says half of everything uploaded to his service is now fully machine-made.",
+    "audio": true
+  },
+  {
+    "k": "dross",
+    "t": "dross",
+    "kind": "word",
+    "forms": [
+      "dross"
+    ],
+    "text": "Dross is worthless rubbish left over from something valuable — originally the scum of impurities that floats to the top when metal is melted. Used figuratively, as here, it means the junk you have to wade through to find anything good. \"There is more dross than ever\" says the share of released music that is not worth hearing has risen.",
+    "audio": true
+  },
+  {
+    "k": "deezer",
+    "t": "Deezer",
+    "kind": "name",
+    "forms": [
+      "Deezer"
+    ],
+    "text": "Deezer is a music-streaming service based in Paris, a smaller rival to Spotify and Apple Music. It matters to the article because it has been unusually open about how much machine-generated music it receives — about 90,000 tracks a day, roughly half its total uploads.",
+    "audio": true
+  },
+  {
+    "k": "the-charts",
+    "t": "the charts",
+    "kind": "name",
+    "forms": [
+      "the charts"
+    ],
+    "text": "The charts are the weekly published rankings of the most popular songs, now compiled mainly from streaming counts. Getting \"into the charts\" is the standard public measure of a hit. The article's point is that AI-made music is no longer just background clutter: some of it is now charting.",
+    "audio": true
+  },
+  {
+    "k": "bot-farms",
+    "t": "bot farms",
+    "kind": "name",
+    "forms": [
+      "bot farms"
+    ],
+    "text": "A bot is a program that pretends to be a person online; a bot farm is an operation running thousands of them at once, often across banks of phones or cheap servers. Here the bots exist to stream tracks over and over so the uploader collects the per-play payments. The same machinery is used elsewhere to fake followers, reviews and votes.",
+    "audio": true
+  },
+  {
+    "k": "harvest",
+    "t": "harvest",
+    "kind": "word",
+    "forms": [
+      "harvest"
+    ],
+    "text": "Harvest literally means to gather in a crop, but it is used figuratively for collecting anything that accumulates quietly in large quantities — harvesting data, harvesting email addresses. The metaphor implies patient gathering of many small amounts rather than one big theft. Bot farms harvest royalties: each fake play earns a fraction of a cent, and the money only adds up in bulk.",
+    "audio": true
+  },
+  {
+    "k": "fraudulent",
+    "t": "fraudulent",
+    "kind": "word",
+    "forms": [
+      "fraudulent",
+      "fraudsters"
+    ],
+    "text": "Fraud is deliberate deception carried out to gain money or an advantage, so something fraudulent is dishonest by design rather than merely mistaken. A fraudster is a person who does it. The royalties the bot farms collect are fraudulent because the plays they are paid for never happened in any meaningful sense — no one listened.",
+    "audio": true
+  },
+  {
+    "k": "royalties",
+    "t": "royalties",
+    "kind": "word",
+    "forms": [
+      "royalties"
+    ],
+    "text": "A royalty is a payment made to whoever created something each time it gets used — per stream for a song, per copy for a book, per unit for a patented invention. It is the opposite of a wage: you are paid for uses of the work, potentially forever, rather than for the hours you spent making it. In streaming the amount per play is a fraction of a cent, which is why fraud at scale is worth attempting and why real artists lose when the pool is drained.",
+    "audio": true
+  },
+  {
+    "k": "ozempic",
+    "t": "Ozempic",
+    "kind": "name",
+    "forms": [
+      "Ozempic"
+    ],
+    "text": "Ozempic is the brand name of a diabetes drug that became famous because it causes dramatic weight loss, and widely used quietly for that purpose by people who would rather not admit it. That is the whole point of the comparison: Deezer's boss means artists use AI the way people use Ozempic — everybody is doing it, nobody wants to say so.",
+    "audio": true
+  },
+  {
+    "k": "record-labels",
+    "t": "record labels",
+    "kind": "name",
+    "forms": [
+      "record labels",
+      "record labels and",
+      "label"
+    ],
+    "text": "A record label is a company that signs musicians, pays the up-front costs of recording and promoting them, and in exchange takes ownership or control of the resulting recordings and a share of the earnings. Three giants — Universal, Sony and Warner — between them control most of the recorded music ever released, which is why their decisions about AI matter so much. The word comes from the paper label glued to the middle of a vinyl record.",
+    "audio": true
+  },
+  {
+    "k": "piracy",
+    "t": "piracy",
+    "kind": "word",
+    "forms": [
+      "piracy"
+    ],
+    "text": "Piracy here has nothing to do with ships: it is the standard term for copying and distributing someone's creative work without permission. Rights-holders chose the word deliberately, because it sounds like theft at sea rather than a technical infringement. The labels accuse the AI labs of piracy on the grounds that millions of recordings were copied into their training sets without a licence.",
+    "audio": true
+  },
+  {
+    "k": "settled",
+    "t": "settled",
+    "kind": "word",
+    "forms": [
+      "settled",
+      "settle",
+      "settlement"
+    ],
+    "text": "To settle a lawsuit is to end it by agreement before a court rules — usually one side pays, both sides drop the case, and no judge ever decides who was right. That is why Warner's settlement is interesting: the company gave up the chance of a vindicating verdict in exchange for money starting to arrive now. A settlement also sets no legal precedent, so it leaves the underlying question unanswered for everyone else.",
+    "audio": true
+  },
+  {
+    "k": "licensing",
+    "t": "licensing",
+    "kind": "name",
+    "forms": [
+      "licensing",
+      "licensed",
+      "unlicensed"
+    ],
+    "text": "A licence is permission to use something you do not own, usually for a fee and under stated conditions; licensing is the business of granting it. It is the alternative to suing: instead of trying to stop the AI labs from using their songs, the labels can charge them for the right. Suno's v6 models are described as trained exclusively on licensed music, meaning permission was bought first.",
+    "audio": true
+  },
+  {
+    "k": "grappling-with",
+    "t": "grappling with",
+    "kind": "phrase",
+    "forms": [
+      "grappling with"
+    ],
+    "text": "To grapple with a problem is to struggle with it seriously and without an easy answer — the word comes from hand-to-hand wrestling. It implies real effort and an unresolved outcome, not confusion. The labels are grappling with how to keep control of an industry whose barriers to entry are falling.",
+    "audio": true
+  },
+  {
+    "k": "barriers-to-entry",
+    "t": "barriers to entry",
+    "kind": "name",
+    "forms": [
+      "barriers to entry"
+    ],
+    "text": "In economics, barriers to entry are whatever makes it hard for a newcomer to start competing in a market — the cost of equipment, the need for a licence, or the years of expertise required. High barriers protect whoever is already inside. Making music used to need a studio, an engineer and a label's money; if AI lets anyone produce a finished track, that barrier drops and the incumbents lose their shelter.",
+    "audio": true
+  },
+  {
+    "k": "cut-their-teeth",
+    "t": "cut their teeth",
+    "kind": "phrase",
+    "forms": [
+      "cut their teeth"
+    ],
+    "text": "To cut your teeth on something is to get your first real experience doing it — the image is of a baby teething. It implies the experience was formative and probably difficult. Today's music executives cut their teeth during Napster, so the fear of being overtaken by a new technology is personal for them.",
+    "audio": true
+  },
+  {
+    "k": "caught-napping",
+    "t": "caught napping",
+    "kind": "phrase",
+    "forms": [
+      "caught napping"
+    ],
+    "text": "To be caught napping is to be taken by surprise because you were not paying attention — the sporting commentator's phrase for a defender who lets an attacker run past. Here it is also a pun: the executives who were caught out by Napster do not want to get caught napping again.",
+    "audio": true
+  },
+  {
+    "k": "share-prices",
+    "t": "share prices",
+    "kind": "name",
+    "forms": [
+      "share prices"
+    ],
+    "text": "A share is a unit of ownership in a company, and its price is whatever buyers and sellers will trade it for today. Because the price reflects what investors collectively expect the company to earn in future, a falling or lagging share price is read as a verdict on the company's prospects. Universal's and Warner's shares have trailed the overall market, which the article takes as evidence investors are nervous about AI.",
+    "audio": true
+  },
+  {
+    "k": "listed",
+    "t": "listed",
+    "kind": "word",
+    "forms": [
+      "listed",
+      "unlisted"
+    ],
+    "text": "A listed company is one whose shares are traded on a public stock exchange, so anyone can buy a piece of it and its price and accounts are public. An unlisted company is privately held, which is why the article can quote Universal's and Warner's share prices but says nothing about Sony Music's — it is unlisted, so there is no price to quote. Being listed brings easier access to money and far more obligation to explain yourself.",
+    "audio": true
+  },
+  {
+    "k": "umg-wmg",
+    "t": "UMG",
+    "kind": "name",
+    "forms": [
+      "UMG",
+      "WMG"
+    ],
+    "text": "UMG is Universal Music Group and WMG is Warner Music Group, the two largest record labels whose shares trade publicly. They matter to the article because they chose opposite strategies toward the same AI company: UMG sued Suno and sued again in September, while WMG settled and is taking payments. Sony Music, the third giant, is privately held.",
+    "audio": true
+  },
+  {
+    "k": "suno",
+    "t": "Suno",
+    "kind": "name",
+    "forms": [
+      "Suno"
+    ],
+    "text": "Suno is an American company, founded around 2022, whose service writes and performs complete songs from a short text prompt. It was valued at $5.4bn in its latest funding round — more than a third of Warner Music's entire market value — and it is the defendant in the copyright cases at the centre of this article. It admits training on copyrighted recordings and argues that doing so was fair use.",
+    "audio": true
+  },
+  {
+    "k": "market-capitalisation",
+    "t": "market capitalisation",
+    "kind": "name",
+    "forms": [
+      "market capitalisation"
+    ],
+    "text": "A company's market capitalisation, or market cap, is the total value the stock market puts on it: the price of one share multiplied by the number of shares in existence. It is the standard way to compare company sizes. The comparison here is startling — a four-year-old AI startup is valued at more than a third of Warner Music, a company with a century of recordings behind it.",
+    "audio": true
+  },
+  {
+    "k": "doubling-down",
+    "t": "doubling down",
+    "kind": "phrase",
+    "forms": [
+      "doubling down"
+    ],
+    "text": "Doubling down comes from blackjack, where a player who likes their hand doubles the bet. In ordinary use it means committing harder to a course of action rather than backing off, often when others are hedging. UMG and Sony doubled down by filing a second case in September instead of settling as Warner did.",
+    "audio": true
+  },
+  {
+    "k": "natural-experiment",
+    "t": "natural experiment",
+    "kind": "name",
+    "forms": [
+      "natural experiment"
+    ],
+    "text": "A natural experiment is a situation in which circumstances, rather than a researcher, split people or firms into groups that can be compared — you get the shape of an experiment without anyone designing one. The labels have handed us one here: faced with the same company, Warner settled while Universal and Sony sued, so in a few years we will be able to compare which strategy paid. Economists hunt for these because deliberately experimenting on whole industries is impossible.",
+    "audio": true
+  },
+  {
+    "k": "ripping-off",
+    "t": "ripping off",
+    "kind": "phrase",
+    "forms": [
+      "ripping off"
+    ],
+    "text": "To rip something off is to steal it or copy it without permission; to rip a person off is to cheat them, usually on price. It is informal and accusatory, which is why the article uses it to report what the labels allege rather than as a neutral description. Their claim is that Suno copied more than 60,000 protected recordings.",
+    "audio": true
+  },
+  {
+    "k": "copyright",
+    "t": "copyrighted",
+    "kind": "name",
+    "forms": [
+      "copyrighted",
+      "copyright"
+    ],
+    "text": "Copyright is the legal right of whoever created a song, book, photo or film to control who copies it, sells it or adapts it, lasting for decades after the work is made. It exists so that creative work can be sold at all, since anything freely copyable is hard to charge for. A copyrighted recording is one still covered by that protection, so copying it needs permission — the premise of every claim in this article.",
+    "audio": true
+  },
+  {
+    "k": "ingesting",
+    "t": "ingesting",
+    "kind": "word",
+    "forms": [
+      "ingesting"
+    ],
+    "text": "To ingest is to take something in — normally food or drink into a body. Computing borrowed the word for feeding large quantities of data into a system, and it has become the standard term for loading material into an AI model's training set. Calling it ingesting is doing quiet work in the labels' complaint: it makes the recordings sound consumed and absorbed rather than merely read.",
+    "audio": true
+  },
+  {
+    "k": "damages",
+    "t": "damages",
+    "kind": "word",
+    "forms": [
+      "damages"
+    ],
+    "text": "In law, damages are the money a court orders a losing defendant to pay the winner as compensation — a plural noun that means a sum of money, not physical harm. American copyright law sets a maximum of $150,000 per infringed work, and multiplying that by 60,000 recordings is how you get to the enormous figures hinted at here. Sums that large are often less about collecting than about forcing a settlement.",
+    "audio": true
+  },
+  {
+    "k": "plaintiffs",
+    "t": "plaintiffs",
+    "kind": "name",
+    "forms": [
+      "plaintiffs"
+    ],
+    "text": "In a civil lawsuit the plaintiff is the side that brings the case, and the defendant is the side being sued. Here the plaintiffs are the record labels and the defendant is Suno. Knowing which word is which is the quickest way to follow any report of a court case.",
+    "audio": true
+  },
+  {
+    "k": "juicy",
+    "t": "juicy",
+    "kind": "word",
+    "forms": [
+      "juicy"
+    ],
+    "text": "Juicy literally describes fruit full of juice, but applied to money, gossip or a part in a film it means richly rewarding or deliciously interesting. A juicy licensing deal is a very profitable one. The word hints at appetite, which is the article's suggestion: the lawsuit may be less about justice than about making the deal fatter.",
+    "audio": true
+  },
+  {
+    "k": "fair-use",
+    "t": "fair use",
+    "kind": "name",
+    "forms": [
+      "fair use",
+      "fair-use"
+    ],
+    "text": "Fair use is the exception written into American copyright law that allows copying without permission in certain circumstances — quoting a book in a review, parodying a song, using a clip for teaching. Courts weigh several factors, the heaviest being whether the new work transforms the original into something different rather than simply replacing it. Suno's defence is that it copied songs only to extract an unprotected musical style, and more than 100 American lawsuits against AI companies now turn on this single question.",
+    "audio": true
+  },
+  {
+    "k": "your-correspondent",
+    "t": "your correspondent",
+    "kind": "phrase",
+    "forms": [
+      "your correspondent"
+    ],
+    "text": "The Economist publishes its articles without bylines, so when a writer needs to mention being present at something they call themselves \"your correspondent\" rather than \"I\". A correspondent is a journalist who reports from a particular place or beat. Twice in this piece the phrase signals a first-hand demonstration: the writer was in the room while Suno's founder played AI-made songs.",
+    "audio": true
+  },
+  {
+    "k": "gospel",
+    "t": "gospel",
+    "kind": "name",
+    "forms": [
+      "gospel"
+    ],
+    "text": "Gospel is a genre of Christian religious music that grew out of Black American churches, built on powerful solo singing, call-and-response and choirs — and it shaped soul, R&B and much of modern pop. It is the example chosen for a reason: rendering a Green Day punk song as gospel shows the model reproducing a style rather than a particular recording, which is exactly the legal distinction Suno is relying on.",
+    "audio": true
+  },
+  {
+    "k": "unsettled",
+    "t": "unsettled",
+    "kind": "word",
+    "forms": [
+      "unsettled"
+    ],
+    "text": "Something unsettled has not been decided or resolved. Applied to law, it is a precise term: an unsettled question is one the courts have not yet answered, so nobody can say with confidence what the rule is. Note how it plays against the other sense of settle in this article — a case can be settled while the question it raised remains unsettled.",
+    "audio": true
+  },
+  {
+    "k": "turn-on",
+    "t": "turn on",
+    "kind": "phrase",
+    "forms": [
+      "turn on"
+    ],
+    "text": "To turn on something, in this sense, is to depend entirely on it — the case turns on whether fair use applies, meaning that one question decides the whole thing. The image is of a door turning on its hinge: everything swings from that point. Nothing is being switched on, which is what trips readers up.",
+    "audio": true
+  },
+  {
+    "k": "train-a-model",
+    "t": "train",
+    "kind": "name",
+    "forms": [
+      "train",
+      "trained"
+    ],
+    "text": "Training a model means feeding it a very large number of examples and letting it adjust its internal numbers until it can predict patterns like the ones it was shown. The examples are not stored as copies, which is the heart of the legal dispute: the labels say copying millions of recordings to train on them infringes copyright, while the AI labs say what comes out is a new thing. Suno says its v6 models were trained only on music it had licensed.",
+    "audio": true
+  },
+  {
+    "k": "financial-year",
+    "t": "financial year",
+    "kind": "name",
+    "forms": [
+      "financial year"
+    ],
+    "text": "A financial year, or fiscal year, is the twelve-month period a company uses for its accounts, which often does not match the calendar year. Companies report results and make promises against it. Warner telling investors the AI money starts flowing \"this financial year\" is a dated commitment — a promise shareholders can check.",
+    "audio": true
+  },
+  {
+    "k": "opt-in",
+    "t": "opt in",
+    "kind": "phrase",
+    "forms": [
+      "opt in"
+    ],
+    "text": "To opt in is to choose actively to take part, as opposed to opting out, where you are included unless you say no. Which default applies matters enormously, because most people never change the setting they were given. Suno's licensed scheme is opt-in, so an artist's songs stay out of it until they personally agree — which is why so much here depends on whether big stars sign up.",
+    "audio": true
+  },
+  {
+    "k": "revenue-streams",
+    "t": "revenue streams",
+    "kind": "name",
+    "forms": [
+      "revenue streams"
+    ],
+    "text": "Revenue is the money a business takes in, and a revenue stream is one distinct source of it, so a company with several streams is less exposed if one dries up. Labels currently earn from streaming, licensing to films and advertisements, and physical sales. The hope being sold to artists is that fan-made AI remixes become a new stream alongside those.",
+    "audio": true
+  },
+  {
+    "k": "repertoires",
+    "t": "repertoires",
+    "kind": "word",
+    "forms": [
+      "repertoires"
+    ],
+    "text": "A repertoire is the full body of work a performer or company can draw on — the songs a band can play, the roles a dancer has learned, the dishes a cook can make. In the music business an artist's repertoire means their whole catalogue of recordings. Fans would be remixing from those catalogues.",
+    "audio": true
+  },
+  {
+    "k": "renders",
+    "t": "renders",
+    "kind": "word",
+    "forms": [
+      "renders"
+    ],
+    "text": "To render something is to produce or deliver it in a particular form — a translator renders a poem in English, a singer renders a song. In computing it is the standard word for generating a finished image, video or sound file from instructions. Here Suno's prototype renders a Doors song with new lyrics, meaning it produces a full performance of it.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckons",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "To reckon is to calculate, and by extension to judge or estimate. British writers use it where Americans would say \"figures\" or \"thinks\" — The Economist reaches for it constantly to flag that a number is somebody's estimate rather than a measured fact. Spotify's marketing head reckons unlicensed remixes number a billion a month: a guess, carefully labelled as one.",
+    "audio": true
+  },
+  {
+    "k": "covers",
+    "t": "covers",
+    "kind": "word",
+    "forms": [
+      "covers"
+    ],
+    "text": "In music a cover is a new performance of a song by someone other than the original artist. The ordinary meanings of cover — a lid, a blanket, to pay for — are no help here, so this is an easy sentence to misread. Covers and remixes are the two main things fans make from other people's songs, and the article says a billion unlicensed ones circulate each month.",
+    "audio": true
+  },
+  {
+    "k": "regularise",
+    "t": "regularise",
+    "kind": "word",
+    "forms": [
+      "regularise"
+    ],
+    "text": "To regularise something is to bring it under proper rules so that what was previously unofficial becomes recognised and legitimate — the word is used of immigration status, informal housing and untaxed trades. Spotify wants to regularise fan remixes: not to stop the billion unofficial covers, but to license them so money flows and the practice becomes legal.",
+    "audio": true
+  },
+  {
+    "k": "demand",
+    "t": "demand",
+    "kind": "name",
+    "forms": [
+      "demand"
+    ],
+    "text": "In economics demand is not a request but a quantity: how much of something people are actually willing to buy at a given price. Saying \"there is demand\" for AI remix tools is a claim that customers would pay, not that they are asking. The evidence offered is a survey figure — 20 to 30% of streaming subscribers might pay up to double their current price.",
+    "audio": true
+  },
+  {
+    "k": "status-quo",
+    "t": "status quo",
+    "kind": "name",
+    "forms": [
+      "status quo"
+    ],
+    "text": "The status quo is the existing state of affairs, the way things currently are; the phrase is Latin for \"the state in which\". It usually appears alongside someone who wants to defend or overturn it. The analyst's point is that the giants' AI partnerships are defensive: labels and streaming platforms are using the new technology to keep the industry arranged as it already suits them.",
+    "audio": true
+  },
+  {
+    "k": "make-a-splash",
+    "t": "make a splash",
+    "kind": "phrase",
+    "forms": [
+      "make a splash"
+    ],
+    "text": "To make a splash is to attract a lot of attention quickly, the way a diver hitting water is impossible to ignore. It usually describes a newcomer's arrival. The prediction is that AI will let unknown artists make a splash without a record deal, which would weaken the labels' role as gatekeepers.",
+    "audio": true
+  },
+  {
+    "k": "scarcity",
+    "t": "scarcity",
+    "kind": "name",
+    "forms": [
+      "scarcity"
+    ],
+    "text": "Scarcity is economics' most basic idea: there is not enough of something to go round, and that shortage is what gives it a price. Anything genuinely unlimited is hard to charge for. The labels are betting that stars remain scarce — that even in a world of unlimited machine-made songs, there will still be only one Taylor Swift and people will still pay for her.",
+    "audio": true
+  },
+  {
+    "k": "hallmark",
+    "t": "hallmark",
+    "kind": "word",
+    "forms": [
+      "hallmark"
+    ],
+    "text": "A hallmark is the distinguishing feature by which you recognise something — originally a tiny official stamp punched into gold and silver at Goldsmiths' Hall in London to certify its purity. Figuratively it means the defining characteristic: carelessness was the hallmark of his work. Scarcity, the article says, is the hallmark of the superstar era.",
+    "audio": true
+  },
+  {
+    "k": "prevail",
+    "t": "prevail",
+    "kind": "word",
+    "forms": [
+      "prevail"
+    ],
+    "text": "To prevail is to win out, or to be the condition that generally holds — a side prevails in a dispute, and calm weather prevails in summer. Both senses are close here: the executives bet that scarcity will continue to prevail, meaning it will remain the rule that governs the business. The related \"prevailing wind\" or \"prevailing view\" means the usual, dominant one.",
+    "audio": true
+  },
+  {
+    "k": "beneficiaries",
+    "t": "beneficiaries",
+    "kind": "word",
+    "forms": [
+      "beneficiaries"
+    ],
+    "text": "A beneficiary is whoever gains from something — a change in the law, a will, an insurance policy. The word is neutral about whether the gain was deserved, which is what makes the sentence sting: Universal's man says the main beneficiaries of easier music-making will not be new artists but fraudsters.",
+    "audio": true
+  },
+  {
+    "k": "carpet-bomb",
+    "t": "carpet-bomb",
+    "kind": "word",
+    "forms": [
+      "carpet-bomb"
+    ],
+    "text": "Carpet bombing is a military tactic of dropping bombs across a whole area rather than aiming at particular targets. Used figuratively it means flooding something indiscriminately — carpet-bombing an inbox with applications. The accusation is that fraudsters upload content in bulk across streaming services, aiming at no audience at all, because volume alone collects royalties.",
+    "audio": true
+  },
+  {
+    "k": "replicate",
+    "t": "replicate",
+    "kind": "word",
+    "forms": [
+      "replicate"
+    ],
+    "text": "To replicate something is to reproduce it exactly, or to do again what someone else did and get the same result — scientists replicate an experiment to check it holds up. The article's closing worry is specific: machines can already replicate a musical style, but if AI can also replicate the marketing and audience-building that manufactures a star, then the one thing the labels still sell is no longer scarce.",
+    "audio": true
+  }
+]
