@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-05",
+  "title": "Japan’s tea farmers enjoy a matcha boom",
+  "articleUrl": "https://www.economist.com/asia/2026/10/01/japans-tea-farmers-enjoy-a-matcha-boom",
+  "articlePageUrl": "/articles/junior/2026-10-05.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "beset",
+      "partOfSpeech": "verb",
+      "pronunciation": "bih-SET",
+      "articleQuote": "Its tea industry is in surprisingly poor shape, beset by ageing farmers, labour shortages and competition from China.",
+      "meaning": "To be **beset** by something is to be surrounded and troubled by it from several sides at once — not one problem, but problems arriving from every direction. The word almost always goes with difficulties, and it suggests you are struggling under them rather than brushing them off. Here Japan’s tea industry is beset by three troubles at the same time: farmers growing old, too few workers to hire, and Chinese rivals selling matcha more cheaply.",
+      "examples": [
+        "Our science fair project was beset by bad luck: the batteries died, the glue never set, and then the poster tore.",
+        "The team was beset by injuries, and by the last game only nine players could take the field."
+      ]
+    },
+    {
+      "word": "dwarf",
+      "partOfSpeech": "verb",
+      "pronunciation": "DWORF",
+      "articleQuote": "China, which produces 70% of the world’s matcha, may dwarf it in quantity",
+      "meaning": "You probably know a *dwarf* as a short character in a story, but as a verb **dwarf** means to be so much bigger than something else that it makes that thing look tiny. It is purely about comparison: nothing actually shrinks, it just looks small sitting next to something enormous. Here China grows so much more matcha than Japan does — 70% of the whole world’s supply — that Japan’s harvest looks small beside it.",
+      "examples": [
+        "The new eighth-grade center dwarfed everyone else on the court; he stood a full head taller than our tallest player.",
+        "My little pile of allowance money was dwarfed by the price of the skateboard I wanted."
+      ]
+    },
+    {
+      "word": "cultivation",
+      "partOfSpeech": "noun",
+      "pronunciation": "kul-tih-VAY-shun",
+      "articleQuote": "Producing tencha requires different cultivation methods, including shading bushes before harvest, and costly processing facilities.",
+      "meaning": "**Cultivation** is the work of growing plants on purpose — preparing the soil, planting, watering, feeding, pruning and harvesting. The word also covers *how* you grow something, so two farms can use completely different cultivation methods on the very same plant. That is the trouble in this article: the tea bushes grown for matcha have to be kept in shade before picking, so a farmer set up for ordinary tea cannot simply switch over.",
+      "examples": [
+        "Rice cultivation needs flooded fields, which is why you see paddies instead of dry farmland.",
+        "Our science unit on bean cultivation ended with every cup on the windowsill sprouting except mine."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Aging population",
+      "articleQuote": "Farmers have left the business or retired without successors; between 2005 and 2025 the area devoted to tea cultivation shrank by 31%.",
+      "meaning": "Japan’s matcha is selling better than it has in decades, and its tea industry is *still* shrinking. That sounds impossible until you look at who is actually doing the farming.\n\nJapan has an **aging population**: the share of its people who are old is large and growing, while the share who are young is small and shrinking. Demographers — the people who study populations — measure this by counting how many people fall into each age group. Japan got here first, with more than one in four Japanese people now over 65, but South Korea, China, Italy and Germany are all heading the same way.\n\nHere is why that empties a farm. Tea farming is work somebody has to physically do: prune the bushes, shade them, pick the leaves, grind them. When the farmer doing that work turns 75 and stops, the farm continues only if a younger person takes it over. In Japan there are fewer young people to begin with, and many of them have moved to cities for other jobs. So the bushes get pulled out and the field becomes something else — which is exactly how Japan lost 31% of its tea-growing land in twenty years.\n\nPicture your school if every teacher were over 60 and no new teachers graduated for twenty years. The building would still stand and kids would still want classes, but one by one the rooms would close as teachers retired — not because anybody stopped wanting school, but because nobody was left to do the job.\n\nThat is the idea worth keeping: demand for something can be climbing while the industry that makes it shrinks, if the people who do the work are retiring faster than they are replaced."
+    },
+    {
+      "name": "Geographical indication",
+      "articleQuote": "Mr Nishi thinks Japan should establish itself as the Champagne region of matcha.",
+      "meaning": "Sparkling wine is made in dozens of countries, but only wine made in one particular region of France may be sold as **Champagne**. Bottle the identical drink in California and you have to call it something else — sparkling wine. That is not politeness. It is the law in the European Union and in many of the countries that trade with it.\n\nA protected place-name like that is called a **geographical indication**. Take the phrase apart: *geographical* means having to do with a place on the map, and an *indication* is something that tells you a fact. So the name itself tells a shopper where the food came from, and only producers actually inside that place are allowed to print it on a label. In law the name belongs to the region, much as a logo belongs to a company.\n\nThe point of all this is money. Darjeeling tea, Parmigiano-Reggiano cheese, Kona coffee and Idaho potatoes all sell for more than nearly identical products with plain names, because shoppers trust that the place promises a particular quality.\n\nNow read Mr Nishi’s wish again. China already grows 70% of the world’s matcha, so Japan cannot win a contest over who grows the most. What he wants is for “Japanese matcha” to work the way “Champagne” does: a name no Chinese producer is permitted to use, which buyers will pay extra for. He is not asking to grow more tea. He is asking for a protected name.\n\nWatch for that move, because you will find it all over a supermarket: when you cannot win on quantity or on price, you try to win with a name nobody else may use."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article says Japan’s tea industry is “beset by ageing farmers, labour shortages and competition from China.” What does beset mean?",
+      "options": [
+        "Helped from several directions at once",
+        "Troubled by several problems at the same time",
+        "Divided up into separate growing regions",
+        "Famous for a very long tradition"
+      ],
+      "answerIndex": 1,
+      "explanation": "To be beset by something is to be surrounded and troubled by it from several sides at once — here, three problems hitting the industry together."
+    },
+    {
+      "question": "Why can’t every Japanese tea farmer simply switch to growing matcha during the boom?",
+      "options": [
+        "Matcha bushes will only grow in Kyoto",
+        "Tencha needs different cultivation methods, such as shading the bushes, plus costly processing facilities",
+        "The government limits how much matcha each farm is allowed to grow",
+        "Matcha plants take a hundred years to reach full size"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says producing tencha requires different cultivation methods, including shading bushes before harvest, and expensive processing equipment."
+    },
+    {
+      "question": "China “may dwarf it in quantity,” the article says. What does dwarf mean here?",
+      "options": [
+        "Cause something to shrink to a smaller size",
+        "Be so much larger that the other thing looks small by comparison",
+        "Sell something at a far lower price",
+        "Copy something very closely"
+      ],
+      "answerIndex": 1,
+      "explanation": "To dwarf something is to be so much bigger that it looks tiny next to you — Japan’s harvest does not shrink, it just looks small beside China’s."
+    },
+    {
+      "question": "How can an aging population shrink a country’s farmland even while demand for the crop is rising?",
+      "options": [
+        "Older tea plants stop producing leaves",
+        "Older farmers retire and too few young people take over their farms",
+        "Older people drink far more tea than young people do",
+        "Governments pay elderly farmers to destroy their fields"
+      ],
+      "answerIndex": 1,
+      "explanation": "A farm needs somebody to do the physical work, so when farmers retire without successors the land goes out of tea — which is how Japan lost 31% of its tea-growing area."
+    },
+    {
+      "question": "Mr Nishi wants Japan to become “the Champagne region of matcha.” What is he actually asking for?",
+      "options": [
+        "Permission to grow more tea than China does",
+        "A protected place-name only Japanese producers may use, so buyers will pay more",
+        "A French company to buy up Japan’s tea farms",
+        "Cheaper shipping for matcha sent to Europe"
+      ],
+      "answerIndex": 1,
+      "explanation": "Champagne is a geographical indication — a legally protected place-name — and Nishi wants Japanese matcha to earn a premium the same way, since Japan cannot win on quantity."
+    }
+  ]
+}
