@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-06",
+  "title": "The Nobel for medicine goes to lighting up the brain",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/05/the-nobel-for-medicine-goes-to-lighting-up-the-brain",
+  "articlePageUrl": "/articles/2026-10-06.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "convoluted",
+      "partOfSpeech": "adjective",
+      "pronunciation": "KON-vuh-loo-tid",
+      "articleQuote": "Dr Hegemann hypothesised that in his alga that convoluted process was being compressed.",
+      "meaning": "Something **convoluted** is twisted and folded back on itself, so following it from one end to the other is hard work — it is the word for a tax form, a movie plot, or instructions with far too many steps. It comes from a Latin verb meaning *to roll together*, and it started out describing literal folds, which is why the wrinkled surface of a brain is still said to be convoluted. Here it labels the long relay inside a human eye: light strikes one protein, which alters a second molecule, which alters a third, and only several steps later does an electrical signal appear. Calling that process convoluted is the setup for Dr Hegemann's guess — that his pond alga had somehow skipped most of the steps.",
+      "examples": [
+        "The instructions for setting up the new printer were so convoluted that we gave up and watched a video instead.",
+        "His excuse for missing practice was a convoluted story involving a dead phone, the wrong bus and his cousin's dog."
+      ]
+    },
+    {
+      "word": "subsist",
+      "partOfSpeech": "verb",
+      "pronunciation": "sub-SIST",
+      "articleQuote": "a photosynthetic organism, which subsists by converting visible light into chemical energy",
+      "meaning": "To **subsist** is to stay alive on whatever you can get — to keep going on the bare minimum rather than to thrive. The word carries that sense of just enough: a *subsistence* farmer grows food to eat rather than to sell, and soldiers cut off from supply lines subsist on rations. In the article it describes how the alga Chlamydomonas makes its living: it has no mouth and eats nothing, so it survives entirely by turning sunlight into chemical energy through photosynthesis. Notice what the word does that *lives* would not — it points at the means of survival, the thing an organism gets by on.",
+      "examples": [
+        "During exam week my brother seemed to subsist entirely on instant noodles and iced coffee.",
+        "The first settlers subsisted on fish and whatever they could grow in a short summer."
+      ]
+    },
+    {
+      "word": "laureate",
+      "partOfSpeech": "noun",
+      "pronunciation": "LOR-ee-ut",
+      "articleQuote": "This bit of story was then completed by the third of this year’s laureates, Karl Deisseroth, then at Stanford University.",
+      "meaning": "A **laureate** is someone who has been awarded a major honour — most often a Nobel prize, as here, where Hegemann, Nagel and Deisseroth are the three laureates in physiology or medicine. The word is a fossil of the ancient Mediterranean custom of crowning victors and poets with a wreath of laurel leaves, so a laureate was literally the person wearing the laurels. It survives in a handful of titles you will meet again: a *Nobel laureate*, and a country's *poet laureate*, the poet appointed to write for national occasions. Worth knowing that the Nobel in each science can be split among at most three people — which is exactly why the article says Gero Miesenböck, who did similar work earlier, might have reason to be miffed.",
+      "examples": [
+        "Our school invited a Nobel laureate in chemistry to speak at the science fair, and she spent most of her talk on the experiments that failed.",
+        "The poet laureate was asked to write something for the opening ceremony."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Ion channels",
+      "articleQuote": "In a human retina, one protein molecule detects light and then, via a chain of molecular interactions, triggers another, known as an ion channel, to create an electrical signal.",
+      "meaning": "Dr Hegemann's clue was a speed difference: his pond alga reacted to light about 20 times faster than a human eye does. Explaining a gap like that means picking up one piece of cell biology — the **ion channel**.\n\nUnpack the name. *Ions* are atoms carrying an electric charge, because they have gained or lost an electron; sodium, potassium and calcium ions are the ones that matter most in living cells. A *channel* is a hole. So an ion channel is a protein shaped roughly like a tube, sitting in the oily membrane that wraps a cell, with a passage through the middle just wide enough for particular ions to cross. That membrane is otherwise a barrier to charged atoms — nothing gets through except by way of these protein tubes.\n\nHere is the part that makes a nervous system possible. A cell holds different amounts of those charged atoms inside than sit outside, so there is a voltage across its membrane, the same kind of difference you get across the two ends of a battery. Open the channels and ions move through; the balance of charge shifts, and the voltage swings. That swing *is* the electrical signal — no wires anywhere, just charged atoms crossing a membrane through pores. In a human retina the sequence is long, which is what the quote describes: one protein absorbs the light, a chain of molecules change shape in turn, and only at the end of the chain does a channel open. Dr Hegemann guessed that in his alga a single protein did both jobs at once — absorb the light and open the pore — and that is why it was so much quicker. He was right, and that two-jobs-in-one protein, channelrhodopsin-2, is the whole basis of optogenetics: put it into a neuron and a flash of light opens the pore directly.\n\nSo whenever you read that a nerve, a heartbeat, an anaesthetic or a poison works \"electrically\" in the body, this is the machinery underneath: pores opening and shutting in a membrane, and charge moving through them."
+    },
+    {
+      "name": "Model organisms",
+      "articleQuote": "Dr Nagel, who shared the prize, inserted the DNA of the two newly identified genes into some frogs’ eggs, which then turned out the desired proteins in quantities large enough to test.",
+      "meaning": "The road to this prize ran through pond algae, some frogs' eggs, hamster kidney cells, cultured rat neurons and finally a living mouse. That is not a random tour of the animal kingdom. It is how experimental biology is done, and the idea behind it is the **model organism**.\n\nThe logic rests on a fact about life: the basic machinery is shared. The genes, proteins and membranes doing the work in a mouse are close relatives of the ones doing it in you, because both were inherited from a common ancestor. So a researcher who cannot experiment on a human brain works instead on a creature whose version of the same machinery is easier to reach — and chooses it for frankly practical reasons: cheap, fast-breeding, simple enough to make sense of, and ideally with its DNA already mapped. Chlamydomonas qualified on that last count, which is the hinge of this story: a Japanese team had already published the alga's DNA, so Dr Hegemann had somewhere to go looking for his two genes.\n\nThe frogs' eggs are the same thinking applied to a single cell rather than a whole creature. A frog's egg is enormous by cell standards and easy to inject, and once a gene is inside, the egg builds that protein in quantities big enough to work with. Nobody involved cared about frogs; they needed a reliable factory that would turn two stretches of algal DNA into real protein they could put on a bench and test.\n\nRead the chain again and it is a ladder, each rung closer to the real target: does this gene yield a working protein at all (frog eggs), does it work inside a mammal's cells (hamster and human kidney cells), does it work in a nerve cell (cultured rat neurons), does it work in a living brain (mice). That ladder is why \"it worked in mice\" is a real result and not yet a treatment. Next time an article tells you something worked in mice or in fruit flies, you know the exact claim being made — it worked in a chosen stand-in, and the rungs between that and a person are still to be climbed."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Peter Hegemann, Georg Nagel and Karl Deisseroth are described as this year's laureates in physiology or medicine. A laureate is:",
+      "options": [
+        "A scientist who was the first to publish on a subject",
+        "Someone who has been awarded a major prize or honour",
+        "A researcher who leads a university laboratory",
+        "A member of the committee that chooses the prizewinners"
+      ],
+      "answerIndex": 1,
+      "explanation": "A laureate is the recipient of a major honour — the name recalls the laurel wreath once used to crown victors."
+    },
+    {
+      "question": "Dr Hegemann thought of the human retina's response to light as convoluted. What does that mean about it?",
+      "options": [
+        "It is twisted through many steps and so hard to follow",
+        "It is unusually fast",
+        "It is still poorly understood by scientists",
+        "It wastes a great deal of energy"
+      ],
+      "answerIndex": 0,
+      "explanation": "Convoluted means folded and twisted, so hard to follow — in the retina, light sets off a long chain of molecular steps before any electrical signal appears."
+    },
+    {
+      "question": "The article calls Chlamydomonas \"a photosynthetic organism, which subsists by converting visible light into chemical energy\". Here, subsists most nearly means:",
+      "options": [
+        "Reproduces",
+        "Swims",
+        "Stays alive",
+        "Grows rapidly"
+      ],
+      "answerIndex": 2,
+      "explanation": "To subsist is to keep yourself alive on whatever you can get — the alga eats nothing, so photosynthesis is how it survives."
+    },
+    {
+      "question": "Why did the alga's electrical response to light turn out to be about 20 times faster than a human eye's?",
+      "options": [
+        "Its eyespot is far larger than a human retina, so it catches more light",
+        "In the alga, a single protein both absorbs the light and opens the ion channel, instead of the retina's long relay of molecules",
+        "The alga has no cell membrane to slow the signal down",
+        "The alga turns light straight into chemical energy by photosynthesis"
+      ],
+      "answerIndex": 1,
+      "explanation": "Hegemann correctly guessed that his alga compressed the retina's multi-step chain into one protein that absorbs light and opens the pore itself."
+    },
+    {
+      "question": "Why did Dr Nagel put the two newly identified algal genes into frogs' eggs?",
+      "options": [
+        "Frogs' eyes are unusually sensitive to light",
+        "Frogs are more closely related to algae than mammals are",
+        "He wanted to see whether the tadpoles would swim towards light",
+        "A frog's egg is a large, easily injected cell that would build the proteins in amounts big enough to test"
+      ],
+      "answerIndex": 3,
+      "explanation": "The frog's egg was simply a convenient protein factory — big, easy to inject, and productive enough to give the researchers material to test."
+    }
+  ]
+}
