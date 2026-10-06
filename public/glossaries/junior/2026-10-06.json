@@ -1,0 +1,280 @@
+[
+  {
+    "k": "hazardous",
+    "t": "hazardous",
+    "kind": "vocab",
+    "pron": "HAZ-ur-dus",
+    "forms": [
+      "hazardous"
+    ],
+    "text": "Hazardous means dangerous, likely to cause harm or injury if you are careless with it. It usually describes a thing or a place rather than a person, which is why you meet it on warning labels and road signs. Here it tells you the 6,500 tonnes going into the Finnish tunnel are nothing like ordinary rubbish: they give off radiation that can damage living cells.",
+    "audio": true
+  },
+  {
+    "k": "vulnerable",
+    "t": "vulnerable",
+    "kind": "vocab",
+    "pron": "VUL-nur-uh-bul",
+    "forms": [
+      "vulnerable"
+    ],
+    "text": "Something vulnerable can easily be hurt or damaged because nothing is protecting it. You are often vulnerable to a particular danger: vulnerable to cold, vulnerable to attack. Here it describes the pools and casks holding waste above ground, where rust and storms can get at them.",
+    "audio": true
+  },
+  {
+    "k": "infancy",
+    "t": "infancy",
+    "kind": "vocab",
+    "pron": "IN-fun-see",
+    "forms": [
+      "infancy"
+    ],
+    "text": "Infancy means babyhood, the first stage of a person's life. Writers stretch it to cover the first stage of anything that grows: a sport, a company, a technology. \"The infancy of nuclear power\" means its very beginning, back in the 1950s, so the argument about waste is about seventy years old.",
+    "audio": true
+  },
+  {
+    "k": "onkalo",
+    "t": "Onkalo",
+    "kind": "name",
+    "forms": [
+      "Onkalo",
+      "Onkalo’s"
+    ],
+    "text": "Onkalo is the name of the Finnish waste tunnel the whole article is about, dug into rock on the island of Olkiluoto. The word is Finnish for \"cavity\" or \"hollow\". It is designed to hold 6,500 tonnes of waste 400 metres underground and will be the first facility of its kind anywhere on Earth.",
+    "audio": true
+  },
+  {
+    "k": "gdf",
+    "t": "geological disposal facility (GDF)",
+    "kind": "name",
+    "forms": [
+      "geological disposal facility (GDF)",
+      "GDFs",
+      "GDF"
+    ],
+    "text": "A geological disposal facility is a dump built deep inside solid rock, meant to keep dangerous waste sealed away for far longer than any building above ground would last. \"Geological\" means it relies on the rock itself, which has not shifted in billions of years, to do the containing. Writers shorten it to GDF, and the article says GDFs are the best method anyone has for nuclear waste.",
+    "audio": true
+  },
+  {
+    "k": "nuclear-power",
+    "t": "nuclear power",
+    "kind": "name",
+    "forms": [
+      "nuclear power"
+    ],
+    "text": "Nuclear power is electricity made by splitting atoms of uranium inside a reactor. The splitting releases heat, the heat boils water into steam, and the steam spins a turbine that generates electricity. It burns no fuel and puts out no carbon dioxide, which is why countries want it again, but the used uranium that comes out is radioactive for thousands of years.",
+    "audio": true
+  },
+  {
+    "k": "reactor",
+    "t": "reactors",
+    "kind": "name",
+    "forms": [
+      "reactors",
+      "reactor"
+    ],
+    "text": "A reactor is the core of a nuclear power station, the sealed vessel where uranium atoms are split in a controlled way to make heat. A typical one produces 25 to 30 tonnes of used fuel a year. When the article says France, Sweden and Slovakia are building reactors, it means they are building new nuclear power stations.",
+    "audio": true
+  },
+  {
+    "k": "spent-fuel",
+    "t": "spent fuel",
+    "kind": "name",
+    "forms": [
+      "spent fuel"
+    ],
+    "text": "Spent fuel is the uranium that has already been used in a reactor and can no longer make useful heat. \"Spent\" here means used up, the way pocket money is spent. It is not harmless, though: it is intensely radioactive when it comes out and stays dangerous for a very long time, which is the waste problem the article describes.",
+    "audio": true
+  },
+  {
+    "k": "radiation",
+    "t": "radiation",
+    "kind": "word",
+    "forms": [
+      "radiation"
+    ],
+    "text": "Radiation is energy and tiny particles flying out of unstable atoms as they break apart. You cannot see, smell or feel it, and it passes straight through most materials, which is why thick rock or metal is used to block it. When it passes through a living body it can break the molecules inside cells, and that is what makes nuclear waste dangerous.",
+    "audio": true
+  },
+  {
+    "k": "bedrock",
+    "t": "bedrock",
+    "kind": "word",
+    "forms": [
+      "bedrock"
+    ],
+    "text": "Bedrock is the layer of solid, unbroken rock that sits underneath the soil and loose stones everywhere on land. In Finland it is granite that formed 1.9 billion years ago and has barely moved since, which is exactly why engineers chose to drill into it. People also use the word for the firm base of an idea, as in \"trust is the bedrock of a friendship\".",
+    "audio": true
+  },
+  {
+    "k": "cooling-pools",
+    "t": "cooling pools",
+    "kind": "name",
+    "forms": [
+      "cooling pools"
+    ],
+    "text": "Cooling pools are deep tanks of water at a power station where spent fuel is lowered as soon as it leaves the reactor. The fuel is still hot and the water carries the heat away while also blocking the radiation. It is meant to be a temporary stop, but with nowhere permanent to put the waste, most of the world's spent fuel is still sitting in these pools.",
+    "audio": true
+  },
+  {
+    "k": "dry-storage",
+    "t": "dry storage",
+    "kind": "name",
+    "forms": [
+      "dry storage"
+    ],
+    "text": "Dry storage means parking spent fuel in thick sealed casks of steel and concrete above ground, cooled by nothing but the surrounding air. It is used once the fuel has spent years in a pool and cooled down enough. Like the pools, it is a holding pattern rather than a solution, and the casks sit out in the weather.",
+    "audio": true
+  },
+  {
+    "k": "plants",
+    "t": "plants",
+    "kind": "word",
+    "forms": [
+      "plants"
+    ],
+    "text": "Here plants has nothing to do with anything green. A plant is an industrial site full of machinery, so a nuclear plant is a nuclear power station. \"Waste from plants outside Finland\" means waste from power stations in other countries.",
+    "audio": true
+  },
+  {
+    "k": "volume",
+    "t": "volume",
+    "kind": "word",
+    "forms": [
+      "volume"
+    ],
+    "text": "Volume here does not mean loudness. It means the amount of space something takes up, or just the quantity of it. \"The volume of waste created is small\" means there is not very much of it, which is the article's point: the danger is high but the pile is surprisingly little.",
+    "audio": true
+  },
+  {
+    "k": "firm",
+    "t": "firm",
+    "kind": "word",
+    "forms": [
+      "firm"
+    ],
+    "text": "A firm, used as a noun, is a business or company. It has nothing to do with firm meaning solid or steady. Posiva, \"the firm that runs it\", is the company in charge of building and operating Onkalo.",
+    "audio": true
+  },
+  {
+    "k": "bars",
+    "t": "bars",
+    "kind": "word",
+    "forms": [
+      "bars"
+    ],
+    "text": "To bar something is to forbid it or block it from happening, as if you had put a bar across a door. These are not metal bars. \"Finnish legislation bars Onkalo from taking waste from plants outside Finland\" means Finnish law does not allow it.",
+    "audio": true
+  },
+  {
+    "k": "shipped",
+    "t": "shipped",
+    "kind": "word",
+    "forms": [
+      "shipped"
+    ],
+    "text": "To ship something is to send it somewhere as cargo, by any means at all. No boat is needed, which is clear here from \"shipped by road and rail\". The article's point is that nuclear waste already travels this way routinely, on trucks and trains.",
+    "audio": true
+  },
+  {
+    "k": "pooling",
+    "t": "pooling",
+    "kind": "word",
+    "forms": [
+      "pooling"
+    ],
+    "text": "To pool things is to combine what several people or countries have into one shared supply, instead of each keeping its own. It comes from the pool in a card game, the pile everyone's money goes into. \"Pooling waste in a handful of shared GDFs\" means several countries putting their waste into a few sites together, which the article says would be cheaper for everyone.",
+    "audio": true
+  },
+  {
+    "k": "decay",
+    "t": "decay",
+    "kind": "word",
+    "forms": [
+      "decay"
+    ],
+    "text": "Decay normally means slowly rotting or falling apart, which is what it means in \"vulnerable to decay\": the tanks and casks rust and crumble over time. In nuclear science the same word means something different, with no rotting involved at all. There, radioactive decay is unstable atoms breaking apart on their own and flinging out radiation.",
+    "audio": true
+  },
+  {
+    "k": "concentrate",
+    "t": "concentrate",
+    "kind": "word",
+    "forms": [
+      "concentrate"
+    ],
+    "text": "Here concentrate does not mean paying close attention. It means gathering something into one place instead of letting it spread out, the way orange juice concentrate has had its water taken out. \"Better and cheaper to concentrate the risk than to spread it around\" is the article's whole argument: keep all the waste in a few well-built sites rather than scattering it across fourteen countries.",
+    "audio": true
+  },
+  {
+    "k": "glacial-period",
+    "t": "glacial period",
+    "kind": "name",
+    "forms": [
+      "glacial period"
+    ],
+    "text": "A glacial period is one of the long cold stretches, usually tens of thousands of years, when sheets of ice build up over the far north and spread south. People loosely call these ice ages. They come and go in a repeating cycle, so there will be another one, and Finland's regulator estimates the next begins in roughly 60,000 years, while ice is sitting on top of Onkalo.",
+    "audio": true
+  },
+  {
+    "k": "gold-standard",
+    "t": "gold standard",
+    "kind": "phrase",
+    "forms": [
+      "gold standard"
+    ],
+    "text": "Calling something the gold standard means it is the best version there is, the one everything else gets measured against. The phrase comes from a time when countries backed their money with actual gold. \"GDFs are the gold standard\" means burying waste in deep rock is the best disposal method known.",
+    "audio": true
+  },
+  {
+    "k": "a-handful-of",
+    "t": "a handful of",
+    "kind": "phrase",
+    "forms": [
+      "a handful of"
+    ],
+    "text": "A handful of something means a small number of them, roughly as many as you could hold in one hand. It is a rough count, not an exact one. \"A handful of shared GDFs\" means a few sites for the whole of Europe rather than one per country.",
+    "audio": true
+  },
+  {
+    "k": "tonnes",
+    "t": "tonnes",
+    "kind": "word",
+    "forms": [
+      "tonnes"
+    ],
+    "text": "A tonne is a metric unit of mass, 1,000 kilograms, which is about 2,200 pounds or roughly the weight of a small car. It is spelled this way, with the -ne, to mark it as the metric version rather than the US ton of 2,000 pounds. The 6,500 tonnes bound for Onkalo weigh about as much as 5,000 cars.",
+    "audio": true
+  },
+  {
+    "k": "bn",
+    "t": "1.9bn-year-old",
+    "kind": "word",
+    "forms": [
+      "1.9bn-year-old",
+      "$6bn"
+    ],
+    "text": "In British writing bn is the short way to write billion, a thousand million. So the bedrock is 1.9 billion years old, nearly half the age of the Earth, and $6bn means six billion dollars, the cost of Onkalo.",
+    "audio": true
+  },
+  {
+    "k": "constraints",
+    "t": "constraints",
+    "kind": "word",
+    "forms": [
+      "constraints"
+    ],
+    "text": "A constraint is something that limits what you are allowed or able to do, like a rule, a budget, or a deadline. The article draws a sharp line between two kinds: \"political constraints, not technical ones\" means nothing about the engineering stops countries sharing a waste site, only their own laws and politics do.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckons",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "To reckon something is to work it out or judge it, so \"reckons\" here means estimates or calculates. British writers also use it casually to mean thinks, as in \"I reckon it will rain\". When the article says the UN's agency \"reckons\" nuclear output will double by 2050, it means that is the agency's calculation, not a certainty.",
+    "audio": true
+  }
+]

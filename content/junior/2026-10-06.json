@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-06",
+  "title": "Finland has a fix for nuclear waste",
+  "articleUrl": "https://www.economist.com/europe/2026/10/01/finland-has-a-fix-for-nuclear-waste",
+  "articlePageUrl": "/articles/junior/2026-10-06.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "hazardous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "HAZ-ur-dus",
+      "articleQuote": "It will be the resting place for 6,500 tonnes of hazardous nuclear waste.",
+      "meaning": "Hazardous means dangerous — likely to cause harm or injury if you are careless with it. It usually describes a thing or a place rather than a person, which is why you meet it on warning labels and road signs. Here it tells you the 6,500 tonnes going into the Finnish tunnel are nothing like ordinary rubbish: they give off radiation that can damage living cells, so they have to be sealed away from people.",
+      "examples": [
+        "The science teacher kept the hazardous chemicals in a locked cabinet at the back of the room.",
+        "After the ice storm the roads were so hazardous that the school cancelled the bus route."
+      ]
+    },
+    {
+      "word": "vulnerable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "VUL-nur-uh-bul",
+      "articleQuote": "These are vulnerable to decay and unstable weather.",
+      "meaning": "Something vulnerable can easily be hurt or damaged because nothing is protecting it. You are often vulnerable *to* a particular danger — vulnerable to cold, vulnerable to attack. In the article it describes the cooling pools and storage casks that hold most of the world's nuclear waste above ground: rust and storms can get at them up there, and that is the whole argument for burying the waste deep in rock instead.",
+      "examples": [
+        "A goalkeeper who rushes too far out of the net leaves the goal vulnerable.",
+        "The seedlings were still vulnerable, so we covered them whenever the temperature dropped."
+      ]
+    },
+    {
+      "word": "infancy",
+      "partOfSpeech": "noun",
+      "pronunciation": "IN-fun-see",
+      "articleQuote": "Since the infancy of nuclear power, scientists have debated how to safely dispose of its waste.",
+      "meaning": "Infancy means babyhood — the first stage of a person's life, when they are an infant. Writers stretch it to cover the first stage of anything that grows: a sport, a company, a technology. The article uses it that way for the very beginning of nuclear power in the 1950s, which quietly tells you this argument about waste is about seventy years old and still not settled.",
+      "examples": [
+        "In the infancy of video games a whole character was just a few squares of light.",
+        "Our chess club is still in its infancy — four members and one borrowed clock."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Radioactive decay",
+      "articleQuote": "Sealed 400 metres beneath the earth, its radiation will remain contained for over 100,000 years.",
+      "meaning": "A hundred thousand years is a strange promise to make about a rubbish dump. Nobody guarantees anything else for that long. So why does this waste need it? The answer is a piece of physics called **radioactive decay**.\n\nEverything around you is built from atoms. Most atoms sit there and stay exactly as they are, forever. But some kinds are unstable, and sooner or later each one of those breaks apart on its own. When it does, it flings out a tiny piece of itself along with a burst of invisible energy. That flying debris and energy is what we call radiation. Nothing aims it — it shoots off in whatever direction it happens to go. When it passes through a living body it can break the molecules inside a cell, and a broken cell can stop working or grow wrongly. That is why people stay away from it. (The word *decay* here has nothing to do with rotting. Nothing is going mouldy; atoms are coming apart.)\n\nHere is the part that explains the number. Each kind of unstable atom comes apart at its own fixed pace, and scientists measure that pace with something called a *half-life*: the time it takes for half the atoms in a pile to break apart. Say you had 1,000 atoms of something with a half-life of one year. After one year about 500 are left. After two years, about 250. After three, about 125. The pile keeps getting safer, but it never drops to nothing quickly — and some of the atoms inside spent reactor fuel have half-lives of tens of thousands of years. Stack a few of those on top of each other and you are already past 100,000 years.\n\nSo the number in the article is not a guess about politics or concrete. It comes from the atoms themselves. The waste is dangerous for as long as they take to finish breaking apart, and there is no way to hurry them up — which is why the only real option is to put it somewhere it can be left alone."
+    },
+    {
+      "name": "Ice ages",
+      "articleQuote": "during the next glacial period, estimated to begin in approximately 60,000 years",
+      "meaning": "Finland's nuclear regulator says the sealed tunnel should hold until *the next* ice age. The next one? Most of us picture ice ages as a single thing that happened once, long ago, with woolly mammoths in it. Earth science says otherwise: they come back.\n\nFor the last couple of million years the planet's climate has swung back and forth on a long cycle. For roughly 100,000 years at a stretch it runs cold. Sheets of ice up to a few kilometres thick pile up in the far north and spread south across what is now Canada, the northern United States, Scandinavia and northern Europe. Then it warms for 10,000 or 20,000 years and the ice melts back toward the poles. Those long cold stretches are the **glacial periods** — what people loosely call ice ages. The warm gap we happen to live in started about 11,700 years ago.\n\nAn ice sheet that size is not just cold, it is heavy. As it creeps forward it drags rock and grit along its underside and scrapes the ground beneath it, and its sheer weight presses the whole land surface down. You can still see the evidence. If you have ever found long parallel scratches gouged into a boulder in a park in the northern United States, moving ice cut them. The Great Lakes sit in basins that ice dug out. Scandinavia is *still* slowly rising back up, centimetres per century, now that the weight of the last ice sheet is gone.\n\nThat is why Finnish engineers talk about a glacial period at all. In 60,000 years ice may well be sitting on top of Onkalo, pressing down on it and shifting the ground around it — so they have to show that 400 metres of ancient granite will still hold even then. When you read \"until the next ice age\", that is a real engineering deadline, not a joke."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is Onkalo?",
+      "options": [
+        "A set of tunnels 400 metres underground in Finland, built to hold nuclear waste",
+        "A new nuclear reactor Finland is building",
+        "A cooling pool that stores spent fuel above ground",
+        "The European agency that writes nuclear safety rules"
+      ],
+      "answerIndex": 0,
+      "explanation": "Onkalo is a geological disposal facility — waste sealed 400 metres down in Finnish bedrock, and the first of its kind on Earth."
+    },
+    {
+      "question": "The article calls it \"foolish\" that 14 European countries are each planning their own disposal site. Why?",
+      "options": [
+        "Because moving nuclear waste between countries is far too dangerous",
+        "Because a few shared sites would be more efficient, and what blocks sharing is politics rather than engineering",
+        "Because Onkalo already has room for all of Europe's waste",
+        "Because burying waste deep in rock has never actually worked"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says waste is already shipped safely by road and rail, so the obstacle is \"political constraints, not technical ones\" — and pooling waste in a handful of sites would cost less."
+    },
+    {
+      "question": "\"These are vulnerable to decay and unstable weather.\" What does vulnerable mean here?",
+      "options": [
+        "Easily damaged, because nothing is protecting them",
+        "Extremely expensive to build",
+        "Hidden away from the public",
+        "Tightly sealed against any leak"
+      ],
+      "answerIndex": 0,
+      "explanation": "Vulnerable means open to being harmed — the above-ground pools and casks can be got at by rust and storms."
+    },
+    {
+      "question": "Why does nuclear waste stay dangerous for tens of thousands of years?",
+      "options": [
+        "Because its metal containers slowly rust away",
+        "Because unstable atoms break apart at their own fixed pace, and some of them take tens of thousands of years to finish",
+        "Because the waste grows hotter the longer it sits still",
+        "Because a reactor keeps adding fresh radiation to it each year"
+      ],
+      "answerIndex": 1,
+      "explanation": "Radioactive decay runs at a fixed pace set by the atoms themselves — measured as a half-life — and nothing can speed it up."
+    },
+    {
+      "question": "Why do Finland's engineers have to think about the next glacial period at all?",
+      "options": [
+        "Because a glacial period would make the waste decay much faster",
+        "Because ice ages happen in a repeating cycle, so a heavy ice sheet may one day sit on and grind over the ground above the tunnel",
+        "Because Finland plans to dig the waste up and move it before the ice arrives",
+        "Because the cold would crack the canisters within a few years"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ice ages return on a long cycle, and a kilometres-thick sheet presses down on the land and scrapes it — so the tunnel has to survive one."
+    }
+  ]
+}
