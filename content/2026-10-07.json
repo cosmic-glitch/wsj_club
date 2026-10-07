@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-07",
+  "title": "A Nobel for the strangest telescope ever built",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/06/a-nobel-for-the-strangest-telescope-ever-built",
+  "articlePageUrl": "/articles/2026-10-07.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "postulate",
+      "partOfSpeech": "verb",
+      "pronunciation": "PAHS-chuh-layt",
+      "articleQuote": "“I have postulated a particle that cannot be detected.”",
+      "meaning": "To **postulate** something is to put it forward as true, or as existing, so you can reason from it, before you have the proof. That is exactly what Wolfgang Pauli did in 1930: energy seemed to go missing in a certain kind of radioactive decay, so he proposed an invisible particle that carried it away, and then worried that nobody could ever check his idea because no instrument of the time could catch such a thing. The word is at home in science and mathematics; as a noun, a *postulate* (PAHS-chuh-lit) is a starting assumption you build on, like the postulates of geometry.",
+      "examples": [
+        "When the cookies vanished overnight, my sister postulated a midnight raid by our brother and then went looking for crumbs to prove it.",
+        "The coach postulated that the team was losing late in games because of fitness, not skill, and added extra sprints to test the theory."
+      ]
+    },
+    {
+      "word": "elucidation",
+      "partOfSpeech": "noun",
+      "pronunciation": "ih-loo-suh-DAY-shun",
+      "articleQuote": "the subsequent elucidation of their properties has won physicists a string of Nobel prizes",
+      "meaning": "An **elucidation** is the act of making something clear that was murky before: explaining it, working it out, shedding light on it. The root is the Latin for light, the same one inside *lucid*. In the article it names decades of patient work: once neutrinos were finally detected in 1956, physicists still had to figure out what these particles were actually like, and that slow clearing-up earned several Nobel prizes. It is a formal word, more at home in a textbook, a review or a court ruling than in conversation.",
+      "examples": [
+        "After three confusing lectures on fractions, the teacher's elucidation with a pizza cut into eighths finally made it click for the whole class.",
+        "The game's patch notes offered no elucidation of why my favorite character suddenly got weaker."
+      ]
+    },
+    {
+      "word": "diminutive",
+      "partOfSpeech": "adjective",
+      "pronunciation": "dih-MIN-yuh-tiv",
+      "articleQuote": "they are electrically neutral (hence the “neutr-”) and physically diminutive (hence the “-ino”)",
+      "meaning": "**Diminutive** means strikingly small, often smaller than you would expect. The article plays on a second meaning from grammar: a diminutive is a word ending that marks something as little, like the *-let* in piglet. The Italian physicist Enrico Fermi named the particle with Italian's diminutive ending *-ino*, so *neutrino* means roughly \"little neutral one\", and the name itself announces the two facts that make the particle so hard to catch.",
+      "examples": [
+        "The diminutive point guard was the shortest player on the court, but nobody could keep up with her crossover.",
+        "My grandmother keeps her pills in a diminutive silver box that is barely bigger than a postage stamp."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The four fundamental forces",
+      "articleQuote": "That renders them, in effect, immune to both the electromagnetic force and gravity, allowing them to pass through most particle detectors unobserved.",
+      "meaning": "According to the article, about 65 billion neutrinos from the Sun pass through an area the size of your fingernail every second, and you feel nothing. They go through your body, through the floor and through the whole Earth as if none of it were there. The explanation comes from physics: every push or pull in the universe comes down to just **four fundamental forces**, and a neutrino interacts through almost none of them.\n\nHere are the four. **Gravity** pulls any two things with mass toward each other; it is by far the weakest, but it adds up over huge amounts of matter, which is why it holds planets in orbit. **Electromagnetism** acts between electrically charged particles; it holds electrons to atoms and atoms to each other, and it is why your hand stops at a desk: the electrons in your skin push against the electrons in the wood. The **strong force** binds the protons and neutrons in an atom's nucleus together, and only works over distances about the width of a nucleus. The **weak force** is responsible for some kinds of radioactive decay and for part of the fusion that powers the Sun, and it works only over distances even smaller than that.\n\nNow check the neutrino against the list. It has no electric charge, so electromagnetism does not act on it, and nothing can push back on it the way the desk pushes back on your hand. It is not made of the particles the strong force binds. Gravity does pull on it, but its mass is so tiny that the pull doesn't matter; that is what the article means by \"in effect, immune\". That leaves the weak force, and the weak force only does anything when a neutrino passes almost exactly onto a nucleus or an electron. Since an atom is mostly empty space, that almost never happens, so nearly all of those 65 billion neutrinos go straight through you and keep going.\n\nThis is why IceCube needed a cubic kilometre of ice: with so many trillions of atoms in the way, a few of the neutrinos passing through will hit one. Whenever something passes through matter, or gets stopped by it, ask which of the four forces it interacts through. The answer explains why a magnet can hold a fridge door shut through a sheet of paper, why your hand can't pass through a desk, and why a neutrino can cross the whole planet."
+    },
+    {
+      "name": "Cosmic rays",
+      "articleQuote": "Protons are charged and are thus deflected by magnetic fields on their journey to Earth, making their point of origin hard to reconstruct.",
+      "meaning": "Protons hit Earth from space with energies many millions of times greater than any the Sun produces, and nobody knows for sure what fires them. That puzzle is the reason anyone wanted to build a telescope out of ice. In astrophysics, these high-speed particles from space are called **cosmic rays**. The name is a leftover from 1912, when the physicist Victor Hess carried detectors up in a balloon and found radiation getting stronger the higher he went; it turned out they are not rays at all but particles, mostly protons, plus some heavier atomic nuclei.\n\nThe problem is in the article's quote. A proton carries an electric charge, and a magnetic field pushes sideways on any charged particle moving through it, curving its path. Space is full of weak magnetic fields: our galaxy has one, and so does the Earth. A proton that set out from some distant galaxy gets bent again and again on the way, so by the time it hits our atmosphere, the direction it arrives from points nowhere near its source. Its arrival direction tells you about the last magnetic field it crossed, not about where it was launched.\n\nThat is the job neutrinos can do and protons can't. The article explains that whatever speeds up those protons should also produce high-energy neutrinos. Neutrinos have no charge, so magnetic fields don't bend them, and almost nothing stops them, so they arrive in a straight line from their source. When IceCube's sensors record the flash from one neutrino hitting an atom in the ice, the direction of that flash points back toward where the neutrino started. That is how a pile of buried sensors becomes a telescope.\n\nCosmic rays matter on Earth too: they add to the radiation dose astronauts and airline crews receive, they occasionally flip a bit in a computer chip, and when they hit nitrogen in the air they make the carbon-14 that archaeologists use to date bones and wood. And the lesson carries beyond physics: a signal that gets bent along the way can prove something is out there, but to find where it came from you need a messenger that travels straight."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "When Wolfgang Pauli said in 1930, “I have postulated a particle that cannot be detected,” what had he done?",
+      "options": [
+        "He had detected a new particle but could not prove what it was",
+        "He had proposed that a particle existed before anyone could check it with an experiment",
+        "He had disproved a rival physicist's theory about a missing particle",
+        "He had built a detector that failed to find the particle he was looking for"
+      ],
+      "answerIndex": 1,
+      "explanation": "To postulate is to put an idea forward as true so you can reason from it, and Pauli feared no device of his day could ever confirm the particle he proposed."
+    },
+    {
+      "question": "Why do almost all neutrinos pass straight through detectors, people and even the whole Earth?",
+      "options": [
+        "They travel faster than light, so matter has no time to stop them",
+        "They have no electric charge and a tiny mass, so they interact only through the weak force, which acts over extremely short distances",
+        "They are absorbed by the Sun's magnetic field before they can reach anything solid",
+        "They are much heavier than atoms, so they smash through matter without slowing down"
+      ],
+      "answerIndex": 1,
+      "explanation": "With no charge, electromagnetism does not act on them and gravity barely does, so only the weak force is left, and it works only when a neutrino passes almost exactly onto a particle."
+    },
+    {
+      "question": "Why are neutrinos more useful than high-energy protons for finding where powerful cosmic particles come from?",
+      "options": [
+        "Neutrinos are easier to catch than protons",
+        "Protons are charged, so magnetic fields bend their paths, while neutrinos travel in a straight line from their source",
+        "Protons only come from the Sun, while neutrinos only come from distant galaxies",
+        "Neutrinos carry more energy than protons, so they show up brighter on telescopes"
+      ],
+      "answerIndex": 1,
+      "explanation": "A proton's arrival direction gets scrambled by magnetic fields along the way, but a neutrino's direction still points back to where it started."
+    },
+    {
+      "question": "What is the IceCube Observatory that Francis Halzen championed?",
+      "options": [
+        "A satellite that photographs the ice sheets of Antarctica from orbit",
+        "A vat of dry-cleaning fluid buried under an Antarctic research station",
+        "About 5,160 light sensors spread through a cubic kilometre of ice roughly 2km below Antarctica's surface",
+        "A mirror telescope built on top of a glacier to reduce interference from city lights"
+      ],
+      "answerIndex": 2,
+      "explanation": "The sensors pick up the faint radiation given off on the rare occasions when a neutrino hits an atomic nucleus in the ice."
+    },
+    {
+      "question": "The article notes that a Nobel prize can go to at most three researchers. Why does that rule cause trouble in a field like astrophysics?",
+      "options": [
+        "Astrophysics discoveries usually take less than a year, which is too fast for the Nobel committee",
+        "Big experiments are run by large teams, like the roughly 450 researchers in 14 countries working on IceCube",
+        "Astrophysicists are not allowed to win the physics prize",
+        "The Nobel committee only rewards theories, never experiments"
+      ],
+      "answerIndex": 1,
+      "explanation": "The prize went to Halzen alone because the committee judged IceCube would not exist without his vision, even though hundreds of scientists made it work."
+    }
+  ]
+}
