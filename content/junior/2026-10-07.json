@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-07",
+  "title": "China lavishes attention on a little-known competition",
+  "articleUrl": "https://www.economist.com/china/2026/10/01/china-lavishes-attention-on-a-little-known-competition",
+  "articlePageUrl": "/articles/junior/2026-10-07.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "elaborate",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ih-LAB-ur-ut",
+      "articleQuote": "Promising young people are filtered through local, provincial and national contests before entering an elaborate training system.",
+      "meaning": "Something elaborate is built out of many carefully arranged parts instead of being simple — an elaborate plan, an elaborate costume, an elaborate machine. The word hints at effort and detail, not just size. In the article it describes how China trains its skills competitors: not one coach in one workshop, but contests at three levels to sort out who gets in, then hundreds of special bases with expert coaches. (Careful — the verb *elaborate*, as in \"could you elaborate?\", is a different use of the word: it means to explain something in more detail.)",
+      "examples": [
+        "Her birthday plan was so elaborate that it needed three group chats and a map of the park.",
+        "We built an elaborate marble run down the stairs, with tunnels, a jump and a cardboard loop."
+      ]
+    },
+    {
+      "word": "shortfall",
+      "partOfSpeech": "noun",
+      "pronunciation": "SHORT-fawl",
+      "articleQuote": "Last year the government warned of a 10m shortfall in skilled workers.",
+      "meaning": "A shortfall is the gap between how much of something you have and how much you need. It is usually something you can count, which is why the word often arrives with a number in front of it. Here China's government says the country is 10m skilled workers short of what its factories need — and that shortfall is the real reason it pours money into a contest about bricklaying and welding.",
+      "examples": [
+        "The team raised $400 for new jerseys, which left a shortfall of $150.",
+        "After a dry spring the town faced a water shortfall and switched off the sprinklers."
+      ]
+    },
+    {
+      "word": "attributed",
+      "partOfSpeech": "verb",
+      "pronunciation": "uh-TRIB-yoo-tid",
+      "articleQuote": "attributed her success to “countless nights spent alone at the training base”",
+      "meaning": "When you attribute something to a cause, you say that is what made it happen. The word almost always needs *to* after it: she attributed the win to practice. In the article, the coach of a 20-year-old gold medallist attributes her success to all those nights she spent training alone, rather than to luck or natural talent. You will meet this verb constantly in science and history writing, where the writer has to say what caused what.",
+      "examples": [
+        "She attributed her better free throws to shooting fifty of them every evening.",
+        "The coach attributed the loss to our slow start, not to the referee."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Vocational training",
+      "articleQuote": "China has another goal: getting more of its people into vocational training.",
+      "meaning": "A country just won 41 gold medals for bricklaying, machining and landscape gardening, and put the winners on national television wrapped in its flag. To see why that is a big deal, you need to know about a branch of education that barely comes up in American classrooms.\n\nThink about the road you have probably been told to picture: middle school, then high school, then college, where you study a subject like biology or history and come out with a degree. Education systems almost everywhere run a second road alongside that one, called **vocational training**. *Vocation* is an old word for the work you do with your life, so vocational training means schooling that teaches you one specific skilled job, directly. You go to a vocational college — some countries say trade school or technical college — and you spend your days doing the actual work: wiring a house, welding steel, fixing train brakes, cutting hair, cooking in a restaurant kitchen. A close relative is an **apprenticeship**, where instead of sitting in a classroom you learn on the job beside an expert and get paid while you learn. That is what Spain was trying to encourage when it started this competition back in 1950.\n\nHere is the part worth keeping. Both roads end in real jobs, and the second road ends in jobs that somebody has to do. Your school building needed electricians to wire it and plumbers to run its pipes. When the elevator stops between floors, the only person in the world who can get it moving is a technician who trained for exactly that. Those are years of hard training too; they just do not finish with an essay exam.\n\nNow the article makes sense. China says it is 10m skilled workers short, and its own young people look down on vocational colleges, which are often underfunded. Putting a 20-year-old train-repair champion on the evening news is an advertisement for the second road. So the next time you hear \"trade school\", you will know it is not the leftover option for people who could not manage college. It is the other one."
+    },
+    {
+      "name": "State-run media",
+      "articleQuote": "State-run media broadcast daily coverage of the competition in Shanghai, the first ever in China.",
+      "meaning": "A six-day contest about welding and bricklaying got daily coverage across a whole country, with the cameras on the events China is proudest of and on winners draped in the national flag. That was not a lucky break for the organisers. The reason sits in two words the article uses without stopping to explain: **state-run media**.\n\n*State* here does not mean a state like Texas or Ohio. In writing about countries and governments, **the state** means the government of a country — the whole official machinery of it. So state-run media are the newspapers, television channels and websites that the government owns and runs. The editors work for the government. Which stories lead the evening news, and which stories never get made at all, is decided inside the government.\n\nCompare that with how news works where you live. Your local paper and the big TV networks are private companies. They stay alive by selling subscriptions and advertisements, and they will gladly run a story that makes the mayor or the president look terrible — that kind of story sells especially well. No official can order them to drop it. The small version is a student newspaper: if your principal picked every headline and could delete any article before it printed, you would read that paper very differently, even when everything in it was true.\n\nThat is why this matters to you as a reader, not only to people in China. State-run outlets report plenty of true facts; those 41 gold medals really happened. What they also do is *choose* — show the drone-making, show the flags, leave out the underfunded colleges. So when a sentence starts \"Chinese state media reported\", treat it as information about who picked the story, and ask yourself what else happened that day that nobody pointed a camera at."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What actually happens at the WorldSkills Competition?",
+      "options": [
+        "Teenage athletes from 60-odd countries compete in Olympic sports",
+        "Young people compete at practical skills like bricklaying, machining and landscape gardening",
+        "Companies show off new factory robots to buyers",
+        "Countries race to build the tallest structure in six days"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says plainly it was \"no sporting jamboree\" — competitors were tested on skills such as bricklaying, machining and landscape gardening."
+    },
+    {
+      "question": "\"Last year the government warned of a 10m shortfall in skilled workers.\" What is a shortfall?",
+      "options": [
+        "A sudden drop in wages",
+        "The gap between how much of something you have and how much you need",
+        "A payment that arrives later than promised",
+        "A rule limiting how many workers a factory may hire"
+      ],
+      "answerIndex": 1,
+      "explanation": "A shortfall is what is missing between what you have and what you need — here, 10m fewer skilled workers than China's factories require."
+    },
+    {
+      "question": "The article calls China's training set-up \"elaborate\". What does that tell you about it?",
+      "options": [
+        "It is made of many carefully arranged parts — layers of contests, hundreds of bases, specialist coaches",
+        "It is expensive but badly organised",
+        "It is kept secret from other countries",
+        "It was explained to reporters in great detail"
+      ],
+      "answerIndex": 0,
+      "explanation": "Elaborate means having many carefully arranged parts; the \"explained in detail\" option is the meaning of the different verb elaborate."
+    },
+    {
+      "question": "What is vocational training?",
+      "options": [
+        "Extra classes that help students get into a good university",
+        "Schooling that teaches you one specific skilled job, such as welding or repairing trains",
+        "Physical and psychological preparation for Olympic athletes",
+        "A government programme that pays factories to hire young people"
+      ],
+      "answerIndex": 1,
+      "explanation": "Vocational training is the second road through education — you learn a particular skilled trade directly, at a vocational or trade college, or through a paid apprenticeship."
+    },
+    {
+      "question": "Why does it matter that the daily coverage of the competition came from state-run media?",
+      "options": [
+        "Because state-run outlets are not allowed to report on sport or contests",
+        "Because the government owns and runs those outlets, so it decides which stories get shown and which do not",
+        "Because nothing state-run media report can be true",
+        "Because the coverage was paid for entirely by advertisers"
+      ],
+      "answerIndex": 1,
+      "explanation": "In state-run media the editors work for the government, so the choice of what to broadcast — flags and drone-making, not underfunded colleges — is a government decision."
+    }
+  ]
+}
