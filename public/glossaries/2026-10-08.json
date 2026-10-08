@@ -1,0 +1,410 @@
+[
+  {
+    "k": "glut",
+    "t": "glut",
+    "kind": "vocab",
+    "pron": "GLUT",
+    "forms": [
+      "glut"
+    ],
+    "text": "A glut is far more of something than can be used or absorbed, so much that the surplus itself becomes the problem. The word is most at home in economics, where an oil glut or a glut of unsold flats drives prices down, but it fits anything arriving in overwhelming quantity. Here the glut is mathematical: 372 solved problems and more than 700 papers landing within weeks, more than mathematicians can read, check or digest.",
+    "audio": true
+  },
+  {
+    "k": "conducive",
+    "t": "conducive",
+    "kind": "vocab",
+    "pron": "kun-DOO-siv",
+    "forms": [
+      "conducive"
+    ],
+    "text": "If something is conducive to a result, it creates the conditions in which that result can happen — a quiet room is conducive to studying. It almost always travels with “to”, and it usually describes conditions rather than people: a setup, a climate, a habit, a method. The complaint here is not that OpenAI's answers are wrong but that the method is not conducive to progress, because it produces solutions without the new techniques and questions that would let others build further.",
+    "audio": true
+  },
+  {
+    "k": "consequential",
+    "t": "consequential",
+    "kind": "vocab",
+    "pron": "kahn-suh-KWEN-shul",
+    "forms": [
+      "consequential"
+    ],
+    "text": "Consequential does not mean “resulting from something” — that is the trap. It means important: having effects big enough to keep mattering long after the moment has passed. Journalists use it constantly for days, rulings and elections (“the most consequential election in a generation”), and calling October 6th 2026 one of the most consequential days in the history of mathematics is a deliberately large claim. The opposite, inconsequential, is the commoner word and means too small to matter.",
+    "audio": true
+  },
+  {
+    "k": "judgment-day",
+    "t": "judgment day",
+    "kind": "phrase",
+    "forms": [
+      "judgment day"
+    ],
+    "text": "Judgment day comes from religion: the final day on which everyone's life is weighed up and settled once and for all. In everyday English it means the moment of reckoning, when something you have been building or avoiding is finally tested. The subtitle calls this judgment day for mathematics because the field is suddenly being forced to decide what it actually values — answers, or understanding.",
+    "audio": true
+  },
+  {
+    "k": "go-down-as",
+    "t": "go down as",
+    "kind": "phrase",
+    "forms": [
+      "go down as"
+    ],
+    "text": "To go down as something is to be remembered that way by history. It is the language of records and legacies: a match goes down as the greatest ever played, a president goes down as the one who signed a treaty. Saying a date may go down as one of the most consequential in the history of mathematics is a prediction about how the future will file it away.",
+    "audio": true
+  },
+  {
+    "k": "openai",
+    "t": "OpenAI",
+    "kind": "name",
+    "forms": [
+      "OpenAI"
+    ],
+    "text": "OpenAI is an American artificial-intelligence company, founded in 2015 and best known for ChatGPT and the GPT family of models. It is one of a handful of labs — alongside Google DeepMind and Anthropic — racing to build the most capable systems, and it both sells access to its models and publishes claims about what they can do. Those claims are what this article is weighing.",
+    "audio": true
+  },
+  {
+    "k": "model",
+    "t": "model",
+    "kind": "word",
+    "forms": [
+      "model",
+      "models"
+    ],
+    "text": "In artificial intelligence a model is the trained system itself: a vast set of numbers, learned from enormous amounts of text and data, that turns an input into an output. ChatGPT is a product; the model is the thing underneath it doing the work. The article's key detail is that these results came from an unreleased internal model — one the public cannot test — while the comparison figures come from models the firm makes publicly available.",
+    "audio": true
+  },
+  {
+    "k": "ai-agents",
+    "t": "AI agents",
+    "kind": "name",
+    "forms": [
+      "AI agents",
+      "agents"
+    ],
+    "text": "An AI agent is a model set up to work on its own over many steps rather than answering a single question: it plans, tries something, checks the result and goes again, often for hours, without a person prompting each move. That autonomy is the point here — the agents were handed open mathematical problems and left to attack them. The word is borrowed from economics and law, where an agent is someone acting on another's behalf.",
+    "audio": true
+  },
+  {
+    "k": "unprecedented",
+    "t": "unprecedented",
+    "kind": "word",
+    "forms": [
+      "unprecedented"
+    ],
+    "text": "A precedent is an earlier case that sets the pattern, so something unprecedented has no earlier case to compare it with — it has never happened before. The word is common in law and in news about records being broken. Calling this research at an unprecedented scale and speed means nothing in the history of mathematics has come close to hundreds of solved problems in a matter of weeks.",
+    "audio": true
+  },
+  {
+    "k": "freighted",
+    "t": "freighted",
+    "kind": "word",
+    "forms": [
+      "freighted"
+    ],
+    "text": "Freight is cargo, the heavy load a ship or train carries, so to be freighted with something is to be weighed down by it. The word almost always appears in this figurative form, usually with difficult feelings: a reunion freighted with regret, a word freighted with history. Here the excitement about new mathematical truths is freighted with concern — the good news arrives carrying a worry attached to it.",
+    "audio": true
+  },
+  {
+    "k": "navier-stokes",
+    "t": "the Navier-Stokes problem",
+    "kind": "name",
+    "forms": [
+      "Navier-Stokes problem",
+      "Navier-Stokes"
+    ],
+    "text": "The Navier-Stokes equations describe how fluids move — water down a pipe, air over a wing — and engineers use them every day. The problem, one of the seven Millennium Prize problems, asks whether those equations always have sensible solutions or whether they can blow up into nonsense. OpenAI claimed last month that its internal model had settled it in 88 hours, which is why the announcement in this article was read as part of a pattern rather than a one-off.",
+    "audio": true
+  },
+  {
+    "k": "millennium-prize",
+    "t": "the Millennium Prize problems",
+    "kind": "name",
+    "forms": [
+      "Millennium Prize problems"
+    ],
+    "text": "In 2000 the Clay Mathematics Institute, a private American foundation, named seven unsolved problems it judged the most important in mathematics and attached $1m to each. They act as the field's public yardstick of difficulty: a problem is on the list because the best mathematicians alive had tried and failed. In the 26 years since, only one has been solved — the Poincaré conjecture, by Grigori Perelman, who turned down both the money and the Fields Medal.",
+    "audio": true
+  },
+  {
+    "k": "corpus",
+    "t": "corpus",
+    "kind": "word",
+    "forms": [
+      "corpus"
+    ],
+    "text": "Corpus is Latin for body, and in scholarship it means a whole body of material taken together: the corpus of Shakespeare's plays, a corpus of recorded speech that linguists search. The mathematical corpus is therefore the entire accumulated body of the subject. In AI the same word names the collection of text a model is trained on, which makes its appearance here quietly fitting.",
+    "audio": true
+  },
+  {
+    "k": "autonomous",
+    "t": "autonomous",
+    "kind": "word",
+    "forms": [
+      "autonomous"
+    ],
+    "text": "Autonomous means self-governing: operating under its own direction rather than being steered step by step from outside. It is the standard word for self-driving cars, for drones that fly a route alone, and for a region that runs its own affairs within a larger country. The autonomous mathematicians of the article are the AI agents, called that because they worked through the problems without a person guiding each move.",
+    "audio": true
+  },
+  {
+    "k": "riemann-hypothesis",
+    "t": "the Riemann hypothesis",
+    "kind": "name",
+    "forms": [
+      "Riemann hypothesis"
+    ],
+    "text": "Proposed by Bernhard Riemann in 1859, the Riemann hypothesis is a precise claim about how the prime numbers are spread out among the ordinary numbers. It is on the Millennium Prize list and is the problem most mathematicians would most like settled, because hundreds of other results have already been proved on the assumption that it is true. If it ever fails, a great deal of mathematics has to be rebuilt.",
+    "audio": true
+  },
+  {
+    "k": "distribution",
+    "t": "distribution",
+    "kind": "word",
+    "forms": [
+      "distribution"
+    ],
+    "text": "Distribution here has nothing to do with delivering goods. In mathematics and statistics a distribution is the pattern of how things are spread out across a range — where they cluster, where they thin out, how the gaps behave. The distribution of prime numbers is the question of where the primes fall as you count upwards: they get rarer, but not in an obvious or regular way, and describing that pattern exactly is what the Riemann hypothesis attempts.",
+    "audio": true
+  },
+  {
+    "k": "deluge",
+    "t": "deluge",
+    "kind": "word",
+    "forms": [
+      "deluge"
+    ],
+    "text": "A deluge is a flood — originally the Flood, the biblical one — and figuratively any overwhelming rush of things arriving at once: a deluge of emails, a deluge of applications. Something buried in the deluge has been lost in the sheer volume. The point is sharp here: a claimed proof of a famous conjecture is important enough to lead the news, yet it was simply swallowed by the pile.",
+    "audio": true
+  },
+  {
+    "k": "conundrum",
+    "t": "conundrum",
+    "kind": "word",
+    "forms": [
+      "conundrum"
+    ],
+    "text": "A conundrum is a puzzle that is hard to solve, often one that seems to trap you whichever way you turn. It can mean a riddle with a clever answer or, more often, a genuine dilemma with no easy resolution. Here it is used straightforwardly for a famously difficult open problem in mathematics.",
+    "audio": true
+  },
+  {
+    "k": "conjecture",
+    "t": "conjecture",
+    "kind": "word",
+    "forms": [
+      "conjecture"
+    ],
+    "text": "In ordinary English conjecture means guesswork, an opinion formed without enough evidence. In mathematics it is a technical term with real dignity: a conjecture is a precise statement that is believed true, usually supported by a mountain of evidence, but not yet proved. Named conjectures like the Kakeya conjecture are the open frontier of the field, and a conjecture stays a conjecture until someone produces a proof, at which point it becomes a theorem.",
+    "audio": true
+  },
+  {
+    "k": "kakeya",
+    "t": "the 3D Kakeya maximal conjecture",
+    "kind": "name",
+    "forms": [
+      "3D Kakeya maximal conjecture",
+      "Kakeya"
+    ],
+    "text": "The Kakeya problems start from a simple-sounding question posed by the Japanese mathematician Soichi Kakeya in 1917: how small an area do you need in order to turn a needle all the way round? The answers turn out to be strange and deep, and the three-dimensional versions connect to several other branches of mathematics. Hong Wang's Fields Medal, mentioned in the next sentence, was for work on a closely related problem.",
+    "audio": true
+  },
+  {
+    "k": "fields-medal",
+    "t": "the Fields Medal",
+    "kind": "name",
+    "forms": [
+      "Fields Medal",
+      "Fields-medallists"
+    ],
+    "text": "The Fields Medal is the most famous prize in mathematics, awarded every four years to between two and four mathematicians, and only to those under 40. There is no Nobel prize for mathematics, which is why it is routinely described as the maths equivalent. The age limit is why a Fields medallist is always someone the field expects to go on shaping it — and why an open letter signed by 28 of them carries weight.",
+    "audio": true
+  },
+  {
+    "k": "run-to",
+    "t": "run to",
+    "kind": "phrase",
+    "forms": [
+      "run to"
+    ],
+    "text": "When a document runs to a certain length, it extends to that much — the phrase is the standard way to report size: a report running to 400 pages, a bill running to millions. It is not about speed or motion. Papers that run to over 100 pages are the reason checking the new proofs will take mathematicians years.",
+    "audio": true
+  },
+  {
+    "k": "logical-consistency",
+    "t": "logical consistency",
+    "kind": "name",
+    "forms": [
+      "logical consistency"
+    ],
+    "text": "A set of statements is logically consistent when none of them contradicts any other, so no step in an argument can be both required and forbidden. In mathematics it is the minimum a proof must have: one contradiction anywhere and the whole chain is worthless. The code mentioned here is a machine-checkable version of a proof, written so a program can confirm every step follows — which is why only having it for 127 of 372 results matters so much.",
+    "audio": true
+  },
+  {
+    "k": "proof",
+    "t": "proof",
+    "kind": "word",
+    "forms": [
+      "proof"
+    ],
+    "text": "A mathematical proof is not evidence and not an experiment. It is a chain of steps in which each one follows from the ones before by rules nobody disputes, so that accepting the starting assumptions forces you to accept the conclusion. A claimed proof is therefore an argument offered but not yet checked — and in research mathematics checking means other mathematicians, or a verification program, going through it step by step.",
+    "audio": true
+  },
+  {
+    "k": "norm",
+    "t": "norm",
+    "kind": "word",
+    "forms": [
+      "norm"
+    ],
+    "text": "A norm is what is normally done in a group: the standard practice everyone is expected to follow, even when no rule written anywhere requires it. Sociologists use the word constantly, and it is the root of “normal”. Saying the verification code is a norm in the field means mathematicians ordinarily supply one, so the 245 results without it fall short of the discipline's own habits rather than breaking any law.",
+    "audio": true
+  },
+  {
+    "k": "internal-reasoning",
+    "t": "internal reasoning",
+    "kind": "name",
+    "forms": [
+      "internal reasoning"
+    ],
+    "text": "Modern AI models work through a problem in intermediate steps before giving a final answer, and that working-out is called their internal reasoning or chain of thought. Labs often keep it hidden, partly to protect how the model works. It matters here because the reasoning is where a mathematician would look to learn the new technique: with it published for only ten of the 372 results, the field gets the answers without the methods.",
+    "audio": true
+  },
+  {
+    "k": "posed",
+    "t": "posed",
+    "kind": "word",
+    "forms": [
+      "posed"
+    ],
+    "text": "To pose a question or a problem is to put it forward for someone to answer — not to pose for a photograph. The word is standard in mathematics and philosophy: a problem posed in 1917, a question posed to the witness. OpenAI posed 4,000 problems to its agents, meaning it set them that list as a task.",
+    "audio": true
+  },
+  {
+    "k": "transparency",
+    "t": "transparency",
+    "kind": "word",
+    "forms": [
+      "transparency"
+    ],
+    "text": "Transparent glass is the kind you can see straight through, and transparency used about institutions means the same thing applied to information: making public how you work, what you tried and what went wrong, so outsiders can judge for themselves. It is a key word in politics, business and science. The call for transparency here is specific — OpenAI has not released which of the 4,000 problems its agents failed, and the failures are what would show the technology's real limits.",
+    "audio": true
+  },
+  {
+    "k": "at-odds-with",
+    "t": "at odds with",
+    "kind": "phrase",
+    "forms": [
+      "at odds with"
+    ],
+    "text": "To be at odds with something is to be in conflict or disagreement with it — pulling in a different direction. The phrase comes from betting odds, where two sides are set against each other. The open letter's charge is that the AI labs' approach is at odds with the field's goals: both sides want mathematics to advance, but what the labs are optimising for and what the field is trying to build do not line up.",
+    "audio": true
+  },
+  {
+    "k": "open-letter",
+    "t": "an open letter",
+    "kind": "name",
+    "forms": [
+      "open letter"
+    ],
+    "text": "An open letter is addressed to someone but published for everyone to read, so its real purpose is public pressure rather than private communication. Scientists, writers and employees use the form when they want a position on the record and signatures attached to it. The one here was signed by 28 Fields medallists and then by more than 8,000 other mathematicians, which turns a private unease into a visible stand by the profession.",
+    "audio": true
+  },
+  {
+    "k": "open-maths-problems",
+    "t": "open maths problems",
+    "kind": "name",
+    "forms": [
+      "open maths problems"
+    ],
+    "text": "In mathematics an open problem is one nobody has solved yet — open in the sense of still unsettled, like an open question or an open case, not freely available. The named open problems are the field's public to-do list, which is exactly why they make a tempting test of a new model. The letter's objection is to treating that list as a scoreboard.",
+    "audio": true
+  },
+  {
+    "k": "benchmark",
+    "t": "benchmark",
+    "kind": "word",
+    "forms": [
+      "benchmark"
+    ],
+    "text": "A benchmark was originally a mark cut into stone that surveyors measured heights from; now it means any fixed standard you measure performance against. In AI it has a precise sense: a shared set of test questions every lab runs its models on, so progress can be compared. The worry in the letter is what happens when the test becomes the target — once open maths problems are the benchmark, labs chase whatever scores well rather than whatever advances mathematics.",
+    "audio": true
+  },
+  {
+    "k": "lines-of-inquiry",
+    "t": "lines of inquiry",
+    "kind": "phrase",
+    "forms": [
+      "lines of inquiry"
+    ],
+    "text": "A line of inquiry is a single direction of investigation followed to see where it leads — the phrase is used by detectives, journalists and scientists alike. The image is of a path you walk rather than a point you stand on. In research, a problem that stays open keeps its lines of inquiry alive: people invent tools trying to crack it, and those tools often turn out to matter more than the answer.",
+    "audio": true
+  },
+  {
+    "k": "signed-on",
+    "t": "signed on",
+    "kind": "phrase",
+    "forms": [
+      "signed on"
+    ],
+    "text": "To sign on is to add your name and formally join something — a campaign, a contract, a letter. It carries a hint of commitment rather than mere agreement. More than 8,000 colleagues signing on after the original 28 is what converted the Fields medallists' letter from an elite statement into a mass one.",
+    "audio": true
+  },
+  {
+    "k": "in-hindsight",
+    "t": "in hindsight",
+    "kind": "phrase",
+    "forms": [
+      "in hindsight"
+    ],
+    "text": "Hindsight is understanding something only after it has happened, when the outcome is finally visible — as against foresight, seeing it coming. In hindsight is the standard phrase for judgments only time makes possible. Saying the true impact will be clear only in hindsight is a warning against today's confident verdicts in either direction.",
+    "audio": true
+  },
+  {
+    "k": "avenues",
+    "t": "avenues",
+    "kind": "word",
+    "forms": [
+      "avenues"
+    ],
+    "text": "An avenue is a wide street, and figuratively a route towards something: avenues of research, every avenue explored. The plural almost always means possibilities rather than roads. The quoted claim is that a problem's real worth lies in the new avenues its solution opens up — the further questions it makes askable — not in the answer being ticked off.",
+    "audio": true
+  },
+  {
+    "k": "sheds",
+    "t": "sheds",
+    "kind": "word",
+    "forms": [
+      "sheds"
+    ],
+    "text": "To shed light on something is to make it clearer, as a lamp makes a dark room visible; the verb shed on its own means to cast off or let fall. It is one of the most common metaphors in English for explanation, so much so that it barely registers as one. A proof that sheds light on other problems is one whose method explains things beyond the problem it solved.",
+    "audio": true
+  },
+  {
+    "k": "signatory",
+    "t": "signatory",
+    "kind": "word",
+    "forms": [
+      "signatory"
+    ],
+    "text": "A signatory is someone who has signed a document, and the word carries the weight of having formally committed to it — the signatories to a treaty, the signatories of a petition. It is the standard term in law and diplomacy. The detail matters here: Martin Hairer sits on OpenAI's advisory group and is also a signatory of the letter criticising the approach, so he is on both sides at once.",
+    "audio": true
+  },
+  {
+    "k": "epfl",
+    "t": "EPFL",
+    "kind": "name",
+    "forms": [
+      "EPFL"
+    ],
+    "text": "EPFL is the Ecole Polytechnique Federale de Lausanne, a Swiss federal institute of technology and one of Europe's leading science and engineering universities. Martin Hairer, quoted at the end, is a mathematician there and himself a Fields medallist, which is why his view of what makes a problem important carries weight.",
+    "audio": true
+  },
+  {
+    "k": "existential",
+    "t": "existential",
+    "kind": "word",
+    "forms": [
+      "existential"
+    ],
+    "text": "Existential means having to do with existence itself — whether something survives, or what the point of it is. It covers both an existential threat, which could wipe a thing out, and an existential question, about why you are doing what you are doing. The closing line turns on it: the problems AI is creating for mathematics are more existential than numerical, meaning they are not about getting sums right but about what the subject is for and who it is done by.",
+    "audio": true
+  }
+]

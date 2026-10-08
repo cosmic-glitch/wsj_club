@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-08",
+  "title": "OpenAI claims to have solved hundreds of long-standing maths problems",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/07/openai-claims-to-have-solved-hundreds-of-long-standing-maths-problems",
+  "articlePageUrl": "/articles/2026-10-08.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "glut",
+      "partOfSpeech": "noun",
+      "pronunciation": "GLUT",
+      "articleQuote": "Such a glut has left some queasy.",
+      "meaning": "A **glut** is far more of something than can be used or absorbed — so much that the surplus itself becomes the problem. The word is most at home in economics, where an oil glut or a glut of unsold flats pushes prices down, but it works for anything that arrives in overwhelming quantity. Here it names 372 solved problems and more than 700 papers landing within weeks: more new mathematics than mathematicians can read, check or digest. That is why the next word in the sentence is *queasy* — the trouble is not that the results are bad, it is that there are too many of them to absorb.",
+      "examples": [
+        "The bake sale ended in a glut of brownies: eleven trays for a club of nine people, and nobody wanted another bite.",
+        "After everyone got a new phone for the holidays there was such a glut of used ones on the school resale page that the price fell to almost nothing."
+      ]
+    },
+    {
+      "word": "conducive",
+      "partOfSpeech": "adjective",
+      "pronunciation": "kun-DOO-siv",
+      "articleQuote": "such an approach is not conducive to long-term progress in mathematics",
+      "meaning": "If something is **conducive** to a result, it helps bring that result about — it creates the conditions in which the result can happen, the way a quiet room is conducive to studying. It almost always travels with *to*, and it usually describes conditions rather than people: a setup, a climate, a habit, a method. The mathematicians in the article are not saying OpenAI's answers are wrong; they are saying the method — racing through famous open problems to show off what a model can do — does not build the conditions mathematics actually grows in, because it delivers answers without the new techniques and questions that would let anyone build further.",
+      "examples": [
+        "My bedroom is not conducive to homework: the TV is three feet from the desk and my brother practises drums on the other side of the wall.",
+        "Eight hours of sleep turned out to be far more conducive to a good test score than another late night with the flashcards."
+      ]
+    },
+    {
+      "word": "consequential",
+      "partOfSpeech": "adjective",
+      "pronunciation": "kahn-suh-KWEN-shul",
+      "articleQuote": "may go down as one of the most consequential days in the history of mathematics",
+      "meaning": "**Consequential** does not mean \"resulting from something\" — that is the trap, and it catches a lot of readers. It means *important*: having effects large enough to keep mattering long after the moment has passed. Serious journalism leans on it constantly for days, rulings, decisions and elections (\"the most consequential election in a generation\"), and the article is using it to make a deliberately big claim: that October 6th 2026 may end up among the handful of days that changed mathematics. The opposite, *inconsequential*, is the more common word and means too small to matter.",
+      "examples": [
+        "Picking which classes to take junior year felt routine at the time, but it turned out to be the most consequential decision of high school.",
+        "Her block with ten seconds left was the most consequential play of the game — it cost the other team the championship."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Formal verification",
+      "articleQuote": "Only 127 of the solved problems are accompanied by a code guaranteeing logical consistency",
+      "meaning": "OpenAI says its agents solved 372 problems. Only 127 of them arrived with what the article calls \"a code guaranteeing logical consistency\". That gap is the most important number in the story, and it only makes sense once you know what mathematicians count as a finished proof.\n\nIn mathematics a **proof** is not evidence and it is not an experiment. It is a chain of steps in which each step follows from the ones before it by rules nobody disputes, so that anyone who accepts the starting assumptions has no way to reject the conclusion. For the geometry proofs you write in school the chain is a few lines long and a teacher checks it by eye. In research mathematics the chain is an argument in words and symbols that can run, as the article says, to over 100 pages, and it is checked by other mathematicians reading it line by line — which takes months, sometimes years. One broken link anywhere and the whole thing collapses.\n\n**Formal verification** is the other way to check. Instead of writing the argument in prose aimed at humans, you write it in a strict artificial language — Lean and Coq are the two mathematicians mostly use — in which every step has to name the exact earlier result it rests on, with nothing left to the reader's judgment. A program then works through the steps one at a time and either confirms all of them or reports the first step that does not follow. The idea sits on the border between mathematical logic and computer science, and the same technique is used on software that cannot be allowed to fail, such as the flight-control code on an airliner.\n\nSo the 127 is a precise statement: for those proofs a machine has confirmed there is no broken link, and that much is settled regardless of who or what wrote them. The remaining 245 are arguments in prose that no human has yet read closely. That is exactly the pile-up the article is worried about — checking is the slow half of mathematics, and a model can generate far faster than people can verify.\n\nThe habit worth taking away: whenever someone tells you a thing has been *proved*, ask who or what checked it, and how. \"A machine confirmed every step\" and \"nobody has spotted a mistake yet\" are two very different kinds of confidence."
+    },
+    {
+      "name": "The Millennium Prize problems",
+      "articleQuote": "the Navier-Stokes problem—one of the landmark Millennium Prize problems—in just 88 hours",
+      "meaning": "Mathematics has no Nobel prize, but it does have a list. In 2000 the Clay Mathematics Institute, a private foundation in Massachusetts, named seven unsolved problems it judged the most important in the field and attached $1m to each. These are the **Millennium Prize problems**, and they serve as the discipline's public yardstick of difficulty: a problem is on the list precisely because the best mathematicians alive had already tried it and failed.\n\nTwo of the seven run through this article. The **Navier-Stokes problem** asks whether the equations describing how fluids move — water through a pipe, air over a wing — always have sensible solutions, or whether they can instead blow up into nonsense; engineers use those equations every day, and nobody has proved they always behave. The **Riemann hypothesis** is a claim about how the prime numbers are spaced out among the ordinary numbers, and it is the one most mathematicians would most like settled, because hundreds of other results have been proved on the assumption that it is true.\n\nIn the 26 years since the list went up, exactly one of the seven has been solved: the Poincaré conjecture, settled by the Russian mathematician Grigori Perelman, who then turned down both the $1m and the Fields Medal. That pace — one in 26 years — is the background you need in order to feel what the article is reporting. When OpenAI said last month that a model had done Navier-Stokes in 88 hours, it was claiming to clear in under four days a bar the field had not cleared in a generation; the article notes that the rest of the list is still standing, with \"progress towards one or two\" at most.\n\nA list like this is worth recognising wherever you meet one, in any field. It is a discipline writing down in public the questions it cannot yet answer — so the list tells you what the experts themselves consider hard, and the rate at which items come off it tells you how fast that field is really moving."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article says the flood of new results \"has left some queasy\". What is a glut, and why does this one worry mathematicians?",
+      "options": [
+        "A glut is a shortage; they fear there are too few new results to build on.",
+        "A glut is an overwhelming surplus; more new mathematics has arrived at once than mathematicians can read, check and understand.",
+        "A glut is an error in a proof; they fear the new proofs are full of them.",
+        "A glut is a cash prize; they disapprove of paying people for proofs."
+      ],
+      "answerIndex": 1,
+      "explanation": "A glut is far more of something than can be absorbed — here 372 solutions and over 700 papers landing within weeks."
+    },
+    {
+      "question": "\"TUESDAY OCTOBER 6th 2026 may go down as one of the most consequential days in the history of mathematics.\" Calling a day consequential means it —",
+      "options": [
+        "had important effects that will keep mattering well beyond the day itself",
+        "happened as a result of earlier events",
+        "was reported on by a great many newspapers",
+        "ended in disagreement among the people involved"
+      ],
+      "answerIndex": 0,
+      "explanation": "Consequential means important and far-reaching; the trap is reading it as \"resulting from something\", which is exactly what it does not mean."
+    },
+    {
+      "question": "Of the 372 problems OpenAI says were solved, only 127 came with \"a code guaranteeing logical consistency\". What does that imply about the other 245?",
+      "options": [
+        "Their proofs run to more than 100 pages each.",
+        "They were solved by a publicly available model rather than the unreleased one.",
+        "No machine has checked their proofs step by step, so the arguments remain unverified claims.",
+        "A program has confirmed every step, but no human has read them yet."
+      ],
+      "answerIndex": 2,
+      "explanation": "Formal verification means a program has confirmed each step; without it a proof is still prose that people have to read and check."
+    },
+    {
+      "question": "Why was OpenAI's earlier claim about the Navier-Stokes problem treated as such a big deal?",
+      "options": [
+        "It is one of the seven Millennium Prize problems, the list of questions the field itself considers hardest and most important.",
+        "It was the first mathematical problem ever solved with the help of a computer.",
+        "Solving it earned OpenAI a Fields Medal.",
+        "It was the last unsolved problem remaining in mathematics."
+      ],
+      "answerIndex": 0,
+      "explanation": "Navier-Stokes sits on the Millennium Prize list, and in the 26 years since that list appeared only one of its seven problems had been solved."
+    },
+    {
+      "question": "The article reports that some mathematicians think OpenAI's approach \"is not conducive to long-term progress in mathematics\". What are they objecting to?",
+      "options": [
+        "That every one of the AI-generated solutions is incorrect.",
+        "That AI should be barred from mathematics altogether.",
+        "That the prize money ought to be shared with the labs.",
+        "That the method does not create the conditions mathematics needs in order to grow, because it yields answers without new techniques, questions or understanding."
+      ],
+      "answerIndex": 3,
+      "explanation": "Conducive means helping to bring something about, so the objection is to the method's effect on the field, not to the correctness of the answers."
+    }
+  ]
+}
