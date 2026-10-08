@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-08",
+  "title": "Burglars could be identified from airborne DNA",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/07/burglars-could-be-identified-from-airborne-dna",
+  "articlePageUrl": "/articles/junior/2026-10-08.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "elusive",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ih-LOO-siv",
+      "articleQuote": "The technique has been used to track elusive Burmese pythons in the Florida Everglades and to audit the inhabitants of Loch Ness.",
+      "meaning": "Something elusive is hard to find, hard to catch, or hard to pin down — it keeps staying just out of reach. It works for things as well as for animals: an elusive answer, an elusive first win. In the article it describes Burmese pythons in the Florida Everglades, snakes so good at hiding in the swamp that scientists stopped trying to spot them and started testing the water for their DNA instead.",
+      "examples": [
+        "The last piece of the puzzle was elusive — it turned up three weeks later under the couch.",
+        "A win against that team has been elusive all season, even though we have come close twice."
+      ]
+    },
+    {
+      "word": "simulate",
+      "partOfSpeech": "verb",
+      "pronunciation": "SIM-yuh-layt",
+      "articleQuote": "the scientists waited 30 minutes, to simulate the delay before investigators might arrive",
+      "meaning": "To simulate something is to set up a stand-in for a real situation on purpose, so you can study it or practise for it without waiting for the real thing. The stand-in only has to match in the one way that matters. In the article the scientists could not wait around for an actual burglary, so they sent in a pretend burglar and then sat on their hands for 30 minutes — the same gap real investigators would face before reaching a crime scene. A flight simulator and a fire drill run on the same idea.",
+      "examples": [
+        "We taped a rectangle on the gym floor to simulate the stage, so we could practise the dance before Friday.",
+        "The game simulates real weather, so the track turns slippery when it rains."
+      ]
+    },
+    {
+      "word": "sift",
+      "partOfSpeech": "verb",
+      "pronunciation": "SIFT",
+      "articleQuote": "They sifted the material collected for DNA and analysed it in the usual way.",
+      "meaning": "To sift is to shake a mixture through a fine mesh so the small bits drop through and the lumps stay behind — bakers sift flour that way. From there it grew into the meaning you will meet most often: going through a big pile of anything to pull out the few parts you actually want, as in sifting through evidence, or data, or hundreds of applications. In the article the researchers had vacuumed up a load of ordinary household dust, and had to sift it for the tiny fragments of DNA buried inside.",
+      "examples": [
+        "I sifted through the lost-and-found bin for twenty minutes before my water bottle turned up.",
+        "Sift the cocoa powder first, or the frosting comes out lumpy."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "DNA profiling",
+      "articleQuote": "In 2022 the Oslo group showed that enough eDNA could be collected from indoor air to construct genetic profiles of its occupants.",
+      "meaning": "A vacuum cleaner ran in someone's kitchen for a couple of hours. From the dust it sucked up, scientists could say which stranger had walked through the house half an hour earlier. Dust does not know anybody's name, so how does that work?\n\nThe answer is **DNA profiling**, and it belongs to *forensic science* — science used to answer questions in criminal cases. Start with the DNA itself. Inside almost every cell of your body sits a molecule shaped like a long twisted ladder, and along it runs a sequence of four chemicals that chemists shorten to the letters A, C, G and T. Your sequence is about three billion letters long, and it is the same in a cell from your cheek as in a cell from your scalp.\n\nNow the part that makes identification possible. Line your sequence up against a classmate's and about 99.9% of the letters match, because you are both human. But at a few dozen particular spots, a short run of letters repeats over and over, and the number of repeats is different from person to person. At one spot you might have 11 repeats where your classmate has 14. A lab measures around 20 of those spots and writes the numbers down. That list of numbers is your **DNA profile**. Any single number is unremarkable; twenty of them in a row is a combination almost nobody else on Earth shares.\n\nYou can see why stacking works with facts you already have. Maybe twelve people in your school are exactly 5 foot 2. Forty were born in March. Thirty wear a size 8 shoe. None of those is rare on its own — but 5 foot 2 *and* born in March *and* size 8 *and* left-handed, all at once, and you are probably down to one person. The trick is not that any one measurement is special. It is that common things, piled up, stop overlapping.\n\nMatching is then just comparison. The lab builds a profile from the crime-scene sample and a profile from a suspect, and checks whether the numbers line up. That is exactly what the Oslo team did with air: vacuum the kitchen, pull DNA out of the dust, build profiles, compare them with the mock burglars' — the numbers lined up in 82% of the Oslo homes and 36% of the Adelaide ones. So the next time you read that DNA *matched* somebody, remember that no scientist recognised anyone. Two lists of numbers were the same."
+    },
+    {
+      "name": "Contamination",
+      "articleQuote": "Despite the efforts they put in to prevent their own DNA leaking into the crime scenes, some was vacuumed up and identified anyway.",
+      "meaning": "A forensics team walked into these 22 houses in full protective gear — suits, masks, gloves — to run what was basically a vacuum cleaner for two hours. They were not protecting themselves from anything in there. They were protecting the dust from *themselves*. It did not entirely work: their own DNA got sucked up too, and the article says the researchers were surprised by it.\n\nThe word for that problem is **contamination** — unwanted material getting into a sample, or into a place, where it does not belong. To contaminate something is to spoil it by mixing something else in. Scientists in every field worry about it, from lab chemistry to medicine to food and water safety, and a great deal of how a lab is built and run exists to keep it out.\n\nContamination matters because of what it does to your answer. A measurement is only worth something if what you measured came from where you think it came from. Say your class wants to find out whether the drinking fountain has more bacteria in it than the bathroom tap. You fill two cups, leave them open on the windowsill overnight, and the fountain cup grows more. Did the fountain lose? You cannot say. Something off the windowsill, or your fingers on the rim, or whatever was in that cup before you rinsed it, could have landed in either one. The result is now about your cups, not about the fountain. The experiment did not give you a wrong answer so much as no answer at all.\n\nIn a house the stakes are higher than a science fair, and the article lists two more ways the air can mislead. Walking around can stir settled dust back up, so DNA in the air today may be from a visit weeks ago. And DNA from someone who has never set foot inside can ride in on another person's clothes. Both are contamination, and both mean the sample can hold a person who did nothing.\n\nSo the question to ask about any sample — air, water, blood, a swab — is never only what was found in it. It is what else could have got in."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did the new study actually show?",
+      "options": [
+        "Volunteers who pretended to burgle houses could be identified from DNA pulled out of the air 30 minutes after they left",
+        "Burglars always leave fingerprints behind on drawers and cupboards",
+        "Air inside a house holds no usable DNA once a person has gone",
+        "Airborne DNA is now reliable enough to prove on its own who committed a crime"
+      ],
+      "answerIndex": 0,
+      "explanation": "Mock burglars spent 15 minutes opening drawers, and half an hour later the air in the kitchen still held enough of their DNA to identify them — though the article stresses that alone is not proof of wrongdoing."
+    },
+    {
+      "question": "The scientists waited 30 minutes \"to simulate the delay before investigators might arrive\". To simulate something is to —",
+      "options": [
+        "measure it far more precisely than usual",
+        "set up a stand-in for a real situation so you can study or practise for it",
+        "speed it up so the test finishes sooner",
+        "describe it to someone in careful detail"
+      ],
+      "answerIndex": 1,
+      "explanation": "Simulating means building a stand-in for the real thing — here a 30-minute wait standing in for the gap before real investigators would reach a crime scene."
+    },
+    {
+      "question": "Scientists have used eDNA to track \"elusive Burmese pythons\" in the Everglades. Elusive means —",
+      "options": [
+        "dangerous to touch",
+        "arriving in enormous numbers",
+        "hard to find, catch or pin down",
+        "brought in from another country"
+      ],
+      "answerIndex": 2,
+      "explanation": "Elusive means it keeps staying out of reach — the pythons hide so well in the swamp that testing the water for their DNA works better than looking for the snakes."
+    },
+    {
+      "question": "Why can a list of numbers from someone's DNA pick out one person, when each number on its own is common?",
+      "options": [
+        "Because every person's DNA is completely different from everyone else's",
+        "Because the lab also records the person's height and birthday",
+        "Because the numbers are kept secret by the police",
+        "Because common measurements stop overlapping once you stack about twenty of them together"
+      ],
+      "answerIndex": 3,
+      "explanation": "About 99.9% of your sequence matches anyone else's; profiling works by counting repeats at around 20 known spots, and that whole combination is what almost nobody else shares."
+    },
+    {
+      "question": "The forensics team wore full protective suits, masks and gloves while sampling the air. Why?",
+      "options": [
+        "To keep their own DNA from getting into the sample",
+        "Because DNA floating in household air can make people ill",
+        "So the homeowners would not recognise them later",
+        "Because the air-sampling device gets dangerously hot"
+      ],
+      "answerIndex": 0,
+      "explanation": "They were protecting the sample from themselves — unwanted material getting into a sample is contamination, and some of their DNA was vacuumed up regardless."
+    }
+  ]
+}
