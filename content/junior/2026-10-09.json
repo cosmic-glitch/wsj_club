@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-09",
+  "title": "Why your snacks are chunkier and chewier than before",
+  "articleUrl": "https://www.economist.com/business/2026/10/08/why-your-snacks-are-chunkier-and-chewier-than-before",
+  "articlePageUrl": "/articles/junior/2026-10-09.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "rival",
+      "partOfSpeech": "noun",
+      "pronunciation": "RYE-vul",
+      "articleQuote": "From Mars, a rival, there are Skittles Gummy Crystals, which add tiny crackly pieces to chewy sweets",
+      "meaning": "A rival is someone you are competing against for the same thing — the same prize, the same customers, the same place on the team. It can be a person, a team or a whole company, and the word carries a hint that the competition is long-running and close. In the article Mars is Mondelez's rival: two giant food companies going after the same shoppers in the same snack aisle, which is why one of them answering the other's crunchy chocolate bar with crackly Skittles is worth writing about at all.",
+      "examples": [
+        "Our school's biggest rival is three miles down the road, and the game against them sells out every year.",
+        "She and I are rivals in the spelling bee and teammates in everything else."
+      ]
+    },
+    {
+      "word": "migrate",
+      "partOfSpeech": "verb",
+      "pronunciation": "MY-grayt",
+      "articleQuote": "Water migrates from moist to dry, turning crisp things soggy.",
+      "meaning": "To migrate is to move from one place to another. You have most likely met it with birds flying south for the winter, or with families migrating to a new country, but scientists use it for anything at all that shifts position — including water. In the article it is doing that plain physical job: inside a chocolate bar, water spreads out of the damp parts and into the dry ones, and once enough of it reaches the biscuit, the crunch is gone. Nothing is deciding to travel; water simply keeps spreading until everything is equally damp.",
+      "examples": [
+        "Monarch butterflies migrate thousands of miles to the same few forests in Mexico every autumn.",
+        "Heat migrates from the hot side of a pan to the cool handle, which is why you still need an oven mitt."
+      ]
+    },
+    {
+      "word": "amplify",
+      "partOfSpeech": "verb",
+      "pronunciation": "AM-pluh-fye",
+      "articleQuote": "Everything has become about amplifying an experience",
+      "meaning": "To amplify something is to make it bigger, louder or stronger. It shares a root with ample, meaning plenty, and you meet it most often with sound: an amplifier takes the tiny electrical signal from an electric guitar and pushes it out loud enough to fill a hall. In the article a nutritionist at Mondelez says snacks are now about amplifying an experience — the chocolate already tasted good, so companies pile on crunch, crackle and the feel of it in your mouth to make eating it register as more.",
+      "examples": [
+        "Cupping your hands around your mouth amplifies your voice just enough to reach the far end of the field.",
+        "One person snickering was nothing, but the back row amplified it until the teacher paused the video."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Research and development",
+      "articleQuote": "Norberto Chaclin, head of research and development at Mondelez, points out that mixing crunchy and soft ingredients is tricky.",
+      "meaning": "A chocolate bar with a biscuit in it sounds like something you could put together in a kitchen on a free afternoon. The article says this one needed a shell of milk chocolate to keep moisture out, a layer of fat-based Biscoff spread set between that shell and the biscuit crumb, and lengthy testing before anybody was allowed to sell it. Somebody's whole job was that.\n\nThe job has a name. Companies call it **research and development**, almost always shortened to **R&D**: the department whose work is figuring out new products and improving existing ones, as opposed to the people who manufacture them, ship them or sell them. The two halves of the name are the two halves of the work. *Research* is finding out how something behaves — Mr Chaclin's team had to establish that water moves out of damp ingredients and into dry ones. *Development* is turning what you found out into a real product that works and can be built the same way a million times over.\n\nPicture your class entering an egg-drop contest. You could tape an egg into a shoebox and hope. Or you could spend a week dropping *empty* boxes off the bleachers with different padding inside, writing down which padding cracked a test egg and which did not, and only then build the box you actually hand in. That week is R&D. It produces nothing you can enter in the contest — and it is the reason the thing you do enter survives the fall.\n\nAlmost every company of any size runs an R&D department, and so do governments and universities. Drug companies have one, car companies have one, video-game studios have one. So when a product turns out to be oddly clever, or oddly expensive, the explanation is usually the same: a great deal of work happened before the first one was ever sold."
+    },
+    {
+      "name": "Shelf life",
+      "articleQuote": "The bar went through lengthy testing to ensure its texture held over its shelf life.",
+      "meaning": "Here is the strange part of building that Biscoff bar. Making it crunchy on the day it left the factory was not the hard problem. The hard problem was it still being crunchy when somebody unwraps it in a shop four months later.\n\nThe stretch of time a food is meant to stay good is its **shelf life** — literally, how long it can sit on a shelf. That is what the date stamped on nearly every package in your kitchen is about, and it is worth knowing the date is usually not a safety line. *Best before* is a promise about quality: after it, the crackers are almost certainly safe and probably a bit stale. *Use by*, the one you see on milk, meat and fish, is the promise about safety, because bacteria have been multiplying in there the whole time.\n\nFood keeps changing while it sits perfectly still, and texture is normally the first thing to go. Think about a bowl of cereal with milk poured over it. At minute one the flakes crack under the spoon. At minute ten they are mush. Nothing was added and nothing got warmer — water from the milk spread into the dry flakes until they were soft all the way through. Now stretch that same process from ten minutes out to four months and you have the problem inside the chocolate bar: the Biscoff spread is damp, the biscuit crumb is dry, water keeps spreading from the damp side to the dry side, and a bar that was perfect in the factory would reach the shop soggy. The chocolate shell and the layer of fat are in there to block the water.\n\nSo shelf life is the reason making food in a factory is harder than cooking. A cook has to make something good now. A factory has to make something that is still good after months in the dark, slowly turning into something else."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What trend is the article describing?",
+      "options": [
+        "Snack companies are competing on texture — how food crunches, chews and feels in your mouth — not just on flavour",
+        "Snack companies are cutting sugar to make their products healthier",
+        "Shoppers are buying far fewer snacks than they used to",
+        "Chocolate has become too expensive for most families to buy"
+      ],
+      "answerIndex": 0,
+      "explanation": "Mintel found the share of snacks making claims about texture rose from 31% in 2023 to 41% last year, and the industry now treats texture as its main way to stand out."
+    },
+    {
+      "question": "\"Water migrates from moist to dry, turning crisp things soggy.\" To migrate is to —",
+      "options": [
+        "disappear completely",
+        "freeze into a solid",
+        "move from one place to another",
+        "become heavier"
+      ],
+      "answerIndex": 2,
+      "explanation": "Migrate means to shift from one place to another — here, water spreading out of the damp parts of a snack and into the dry ones."
+    },
+    {
+      "question": "A Mondelez nutritionist says, \"Everything has become about amplifying an experience.\" To amplify something is to —",
+      "options": [
+        "make it cheaper to produce",
+        "make it bigger, louder or stronger",
+        "explain it very clearly",
+        "make it last much longer"
+      ],
+      "answerIndex": 1,
+      "explanation": "Amplify means to make something bigger or stronger — the snack already tasted fine, so companies add crunch and crackle to make the whole experience register as more."
+    },
+    {
+      "question": "Mondelez has a head of research and development. What does an R&D department do?",
+      "options": [
+        "Delivers finished products to supermarkets",
+        "Runs the company's advertising campaigns",
+        "Works out new products and improves existing ones, before they go on sale",
+        "Looks after the company's money and pays its staff"
+      ],
+      "answerIndex": 2,
+      "explanation": "R&D is the part of a company that researches how things behave and then develops that knowledge into a product that works — which is why the Biscoff bar took lengthy testing rather than one afternoon."
+    },
+    {
+      "question": "Why did the Dairy Milk Biscoff bar need testing \"to ensure its texture held over its shelf life\"?",
+      "options": [
+        "Because water keeps spreading from the damp spread into the dry biscuit, so a bar that is crunchy in the factory could be soggy by the time anyone buys it",
+        "Because chocolate always melts if it is stored for more than a few weeks",
+        "Because the biscuit crumb slowly turns itself into sugar",
+        "Because the law requires every new snack to be tested for a full year"
+      ],
+      "answerIndex": 0,
+      "explanation": "Shelf life is how long a food has to stay good on the shelf, and texture goes first — water moving from the moist layer into the dry crumb is exactly what the chocolate shell and fat layer are there to block."
+    }
+  ]
+}
