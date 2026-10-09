@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-09",
+  "title": "Will bonds blow up?",
+  "articleUrl": "https://www.economist.com/leaders/2026/10/08/will-bonds-blow-up",
+  "articlePageUrl": "/articles/2026-10-09.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "hubris",
+      "partOfSpeech": "noun",
+      "pronunciation": "HYOO-bris",
+      "articleQuote": "Might a similar shock soon puncture the rich world’s hubris?",
+      "meaning": "Hubris is overconfidence of a particular flavour — the arrogance of someone so sure of their own strength that they stop believing the usual rules apply to them. The word comes from Greek tragedy, where a hero's hubris is precisely what sets up his downfall, and it still carries that sense of a comeuppance waiting to happen. Here the rich world's hubris is the comfortable assumption that wealthy countries, unlike the Latin American ones that defaulted in the 1980s, simply do not go bust — and the article's whole question is whether a bond crisis is about to puncture it.",
+      "examples": [
+        "After winning every game by thirty points, the team showed up to the final with real hubris and lost to a school nobody had bothered to scout.",
+        "There was a certain hubris in skipping revision for the retake just because he had aced the practice test cold."
+      ]
+    },
+    {
+      "word": "perennial",
+      "partOfSpeech": "adjective",
+      "pronunciation": "puh-REN-ee-ul",
+      "articleQuote": "Japan, another perennial source of worry, is so far coping, too.",
+      "meaning": "Something perennial comes back year after year and never quite goes away. Gardeners use the word literally — a perennial is a plant that returns each spring instead of dying off after one season like an annual — and the everyday sense keeps that rhythm of reliable recurrence. Calling Japan a perennial source of worry is a piece of dry wit: forecasters have been predicting a Japanese debt blow-up for decades and it keeps not arriving, so the *worry* has become the thing that recurs.",
+      "examples": [
+        "Parking is a perennial argument at our school — same petition, same meeting, every single September.",
+        "Her perennial excuse was that the bus had been late, which stopped working on about the fourth telling."
+      ]
+    },
+    {
+      "word": "chastened",
+      "partOfSpeech": "adjective",
+      "pronunciation": "CHAY-sund",
+      "articleQuote": "Chastened, it corrected course, but its debt-to-GDP ratio is still rising",
+      "meaning": "To be chastened is to come away from a telling-off or a bruising failure subdued and more careful — not merely punished, but genuinely humbled into changing your behaviour. The verb **chasten** once meant to discipline someone for their own good, and the adjective keeps that aftertaste of a lesson that actually landed. Britain is chastened because the bond market humiliated it in 2022 and it duly reversed course; the article's sting is that the humility faded, since the debt ratio is climbing again.",
+      "examples": [
+        "Chastened by that first-round loss, she started turning up to practice twenty minutes early.",
+        "He came back from the meeting chastened, and never brought the idea up again."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Rolling over debt",
+      "articleQuote": "Now they must pay still more to refinance their past debts, while many continue to borrow with little restraint.",
+      "meaning": "Here is the puzzle underneath this whole leader: most of the rich world's debt was borrowed years ago, back when interest was almost free. So why does a jump in *today's* interest rates squeeze *this year's* budget?\n\nBecause governments almost never actually pay their debts off. In public finance this is called **rolling over** debt, or refinancing it. A bond reaches the end of its term, the government owes the full sum back that day, and it does not have the cash sitting there — so it sells a fresh bond to raise the money and passes that straight to the departing lender. The debt does not shrink. It simply acquires a new lender and, crucially, **a new interest rate: today's rate.**\n\nPicture a country owing $100, borrowed as ten $10 bonds at 1%, with one bond coming due each year. Year one, a $10 bond matures and is replaced. If rates have since climbed to 5%, that replacement $10 now costs 50 cents a year instead of 10 cents — trivial. But run it ten years and every one of those bonds has been swapped, the entire $100 is paying 5%, and the annual interest bill has gone from $1 to $5, out of the same tax revenue, without the country borrowing a single extra dollar. That slow leak is what the article means when it says governments must pay more to refinance past debts, and it is why France's arithmetic is so brutal: refinance everything at current five-year yields and it would need to cut over 4% of GDP just to stop its debt growing.\n\nThe lesson travels: a borrower who never repays but only replaces has not locked in a cheap rate, they are renting it. Whenever you hear that interest rates have risen, ask how quickly the borrower's existing debt matures — that is the speed at which the new rate reaches them."
+    },
+    {
+      "name": "Inflating away debt",
+      "articleQuote": "Bond investors, gazing far into the future, perceive the growing danger that governments will use inflation to pick their pockets.",
+      "meaning": "A heavily indebted government has an escape route available to it that no household has, and the most quietly alarming line in this article is President Trump musing out loud that inflation can reduce debts \"very rapidly\". He is not wrong. That is exactly the problem.\n\nThe idea sits in monetary economics, and it works because a bond is a promise to repay **a fixed number of dollars** — not a fixed amount of buying power. Suppose a government owes $100 and collects $100 a year in tax: a crushing debt. Now let every price and every wage in the country double. Tax revenue roughly doubles too, to $200, because income and sales taxes are charged on incomes and prices that have doubled. But the bond still says $100. A debt that once swallowed a full year of tax now takes six months of it. Nobody defaulted, no law was broken, and half the burden has quietly been shifted onto whoever was holding those bonds, who gets back dollars that buy half as much as the ones they lent.\n\nWhich is why lenders watch inflation so intently, and why the politics in this article is not a side issue. The people who decide whether inflation happens are central bankers, and politicians across the rich world are leaning on them — Trump attacking the Federal Reserve for not cutting rates, a French presidential candidate accusing the governor of the Bank of France of treason. A lender who suspects that inflation will be used on them demands a higher interest rate today as compensation, and that demand is itself part of the bond sell-off the article is describing.\n\nSo the transferable point: inflation is never neutral. It moves wealth from everyone owed a fixed sum to everyone who owes one. Whenever you meet a promise of fixed dollars stretching years into the future, ask who stands to gain if money loses value."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article says some of this year's bond-market sell-off is actually good news. Why?",
+      "options": [
+        "Governments have begun paying down their debts, so fewer new bonds are needed.",
+        "Inflation has returned to target, allowing central banks to cut interest rates.",
+        "America's economy is booming, and AI firms racing to build data centres compete with governments for capital, which pushes rates up.",
+        "Investors are shifting money out of shares and into safer government bonds."
+      ],
+      "answerIndex": 2,
+      "explanation": "Part of the rise in yields reflects genuine American strength — low jobless claims, growth above 3%, and heavy investment demand from AI firms bidding for the same capital — rather than distress."
+    },
+    {
+      "question": "Why does the article treat Europe, and France above all, as the place where a debt crisis looms largest?",
+      "options": [
+        "Europe's debt-to-GDP ratios are the highest in the world, well above Japan's.",
+        "Europe gets the AI boom's higher cost of capital with far less of the growth, and France must close a deficit of 5.4% of GDP while its parliament can barely pass cuts worth a tenth of what is needed.",
+        "The euro zone has no central bank with the power to buy member governments' debt.",
+        "France's debts are owed almost entirely to foreign lenders who can demand immediate repayment."
+      ],
+      "answerIndex": 1,
+      "explanation": "Europe pays the higher borrowing costs without the American growth that partly justifies them, and France's political paralysis leaves its large deficit unaddressed."
+    },
+    {
+      "question": "A country borrowed heavily when interest rates were near zero. Rates are now far higher. What does the idea of rolling over debt tell you about its interest bill?",
+      "options": [
+        "Nothing changes, because the interest rate on each bond was fixed when that bond was issued.",
+        "It falls, because higher rates attract more lenders and so increase competition to lend.",
+        "It jumps at once, because all outstanding bonds reprice to the new rate.",
+        "It climbs gradually, as each maturing bond is repaid by issuing a new one at today's higher rate."
+      ],
+      "answerIndex": 3,
+      "explanation": "Old bonds do keep their fixed rate, but governments repay them by selling new bonds, so the higher rate reaches the budget at the speed the existing debt matures."
+    },
+    {
+      "question": "Why do bond investors demand a higher interest rate from a government whose commitment to low inflation they doubt?",
+      "options": [
+        "A bond repays a fixed number of dollars, so inflation shrinks what that repayment can buy — and lenders want paying for taking that risk.",
+        "Rising inflation legally entitles bondholders to a larger repayment, which costs the government more.",
+        "Inflation forces governments to issue many more bonds, flooding the market with them.",
+        "Central banks oblige lenders to charge more whenever inflation rises above target."
+      ],
+      "answerIndex": 0,
+      "explanation": "Inflation erodes the buying power of a fixed repayment, shifting value from lender to borrower, so lenders price that danger in up front."
+    },
+    {
+      "question": "Bankers long repeated that countries, unlike companies, cannot go bust — until a wave of Latin American defaults in the 1980s. The article presents that confidence as an example of what?",
+      "options": [
+        "Prudence — sensible caution about risk.",
+        "A perennial — something that returns year after year.",
+        "Being chastened — humbled by a hard lesson into changing course.",
+        "Hubris — overconfidence that invites a fall."
+      ],
+      "answerIndex": 3,
+      "explanation": "Hubris is exactly the arrogance of assuming the usual rules do not apply to you, which is why the article asks whether a debt crisis is about to puncture it."
+    }
+  ]
+}

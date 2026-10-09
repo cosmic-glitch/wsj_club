@@ -1,0 +1,595 @@
+[
+  {
+    "k": "hubris",
+    "t": "hubris",
+    "kind": "vocab",
+    "pron": "HYOO-bris",
+    "forms": [
+      "hubris"
+    ],
+    "text": "Hubris is overconfidence so complete that you stop believing the usual rules apply to you — the arrogance that, in Greek tragedy, is exactly what sets up the hero's downfall. The rich world's hubris here is the comfortable belief that wealthy countries simply do not go bust, however much they borrow. The article's opening question is whether a debt crisis is about to puncture it.",
+    "audio": true
+  },
+  {
+    "k": "perennial",
+    "t": "perennial",
+    "kind": "vocab",
+    "pron": "puh-REN-ee-ul",
+    "forms": [
+      "perennial"
+    ],
+    "text": "Something perennial comes back year after year and never quite goes away; gardeners use it literally, for a plant that returns each spring instead of dying off after one season. Calling Japan a perennial source of worry is dry wit — forecasters have predicted a Japanese debt blow-up for decades and it keeps not happening, so the worry itself has become the thing that recurs.",
+    "audio": true
+  },
+  {
+    "k": "chastened",
+    "t": "chastened",
+    "kind": "vocab",
+    "pron": "CHAY-sund",
+    "forms": [
+      "Chastened"
+    ],
+    "text": "To be chastened is to come away from a bruising failure subdued and more careful — humbled into changing your behaviour, not merely punished. The verb chasten once meant to discipline someone for their own good. Britain is chastened because the bond market humiliated it in 2022 and it duly reversed course; the sting is that the lesson faded, since its debt ratio is climbing again.",
+    "audio": true
+  },
+  {
+    "k": "go-bust",
+    "t": "go bust",
+    "kind": "phrase",
+    "forms": [
+      "go bust"
+    ],
+    "text": "To go bust is to run out of money so completely that you cannot pay your debts and the business ends — the everyday phrase for bankruptcy. The article opens on bankers' old slogan that countries, unlike companies, cannot go bust: a country can always tax or print money, so it never simply shuts down. The Latin American defaults of the 1980s showed how thin that comfort was.",
+    "audio": true
+  },
+  {
+    "k": "defaulted",
+    "t": "defaulted",
+    "kind": "word",
+    "forms": [
+      "defaulted"
+    ],
+    "text": "Nothing to do with a default setting on a phone. In finance, to default is to fail to make a payment you legally promised — a borrower who stops repaying has defaulted on the loan. When a wave of Latin American countries defaulted in the 1980s, lenders who had been assured that countries cannot go bust discovered otherwise.",
+    "audio": true
+  },
+  {
+    "k": "dumping",
+    "t": "dumping",
+    "kind": "word",
+    "forms": [
+      "dumping"
+    ],
+    "text": "Here dumping has nothing to do with rubbish: to dump an investment is to sell it off fast and in bulk, usually because you have lost confidence in it. Investors dumping their bonds is what pushes bond prices down and therefore yields up, which is the mechanism driving this entire article.",
+    "audio": true
+  },
+  {
+    "k": "capital",
+    "t": "capital",
+    "kind": "word",
+    "forms": [
+      "capital"
+    ],
+    "text": "Not a capital city and not a capital letter. In finance, capital means money available to be invested — the pool that savers, pension funds and banks are willing to put to work. The article's point is that AI firms building data centres and governments issuing bonds are bidding for the same finite pool, and when demand for capital rises, so does its price: the interest rate.",
+    "audio": true
+  },
+  {
+    "k": "revolt",
+    "t": "revolt",
+    "kind": "word",
+    "forms": [
+      "revolt"
+    ],
+    "text": "A revolt is a rebellion, and markets have a bloodless version of their own. When the article says investors will revolt, it means they will refuse to keep lending at low rates — selling bonds, demanding far higher interest, and forcing a government to change course. Britain's bond-market revolt in 2022 is the example it returns to.",
+    "audio": true
+  },
+  {
+    "k": "bond-yields",
+    "t": "bond yields",
+    "kind": "name",
+    "forms": [
+      "bond yields",
+      "bond yield"
+    ],
+    "text": "A bond's yield is the annual return a lender actually earns on it, as a percentage of what they paid for it. Because the cash a bond pays out is fixed, the yield moves opposite to the bond's price: if nervous investors will only pay 800 dollars for a bond promising 50 dollars a year, the yield rises. So rising yields in this article mean falling bond prices and dearer government borrowing.",
+    "audio": true
+  },
+  {
+    "k": "sell-off",
+    "t": "sell-off",
+    "kind": "name",
+    "forms": [
+      "sell-off"
+    ],
+    "text": "A sell-off is a broad, rapid wave of selling across a market that pushes prices down. The bond-market sell-off described here is investors collectively deciding they want less government debt, or will hold it only at a higher yield. The article's twist is that part of this one is good news, reflecting a booming American economy rather than panic.",
+    "audio": true
+  },
+  {
+    "k": "refinance",
+    "t": "refinance",
+    "kind": "name",
+    "forms": [
+      "refinance"
+    ],
+    "text": "To refinance a debt is to pay off an old loan by taking out a new one — the debt does not disappear, it simply acquires a new lender and a new interest rate. Governments do this constantly, repaying maturing bonds by selling fresh bonds rather than out of tax revenue. That is why higher rates reach a budget gradually: each time cheap old debt is refinanced, it starts costing today's price.",
+    "audio": true
+  },
+  {
+    "k": "budget-deficit",
+    "t": "budget deficit",
+    "kind": "name",
+    "forms": [
+      "budget deficit",
+      "deficit"
+    ],
+    "text": "A budget deficit is the gap, in one year, between what a government spends and what it collects in tax — the amount it must borrow to cover the difference. It is not the same thing as the debt, which is every past deficit piled up and not yet repaid. America's deficit of about 6 percent of GDP means it borrows roughly six dollars for every hundred its economy produces, every year.",
+    "audio": true
+  },
+  {
+    "k": "debt-to-gdp-ratio",
+    "t": "debt-to-GDP ratio",
+    "kind": "name",
+    "forms": [
+      "debt-to-GDP ratio"
+    ],
+    "text": "Comparing a country's debt with the size of its economy, rather than looking at the raw sum, is how economists judge whether that debt is manageable. A million-dollar mortgage is crushing on a 40,000-dollar salary and trivial on a ten-million-dollar one, and the ratio captures exactly that. Italy's net debts at 129 percent of GDP mean it owes rather more than its whole economy produces in a year.",
+    "audio": true
+  },
+  {
+    "k": "gdp",
+    "t": "GDP",
+    "kind": "name",
+    "forms": [
+      "GDP"
+    ],
+    "text": "GDP, or gross domestic product, is the total value of everything a country produces in a year — the standard single measure of the size of an economy. It is the denominator under almost every figure in this article: deficits, debts and proposed spending cuts are all quoted as a percentage of GDP, so that countries of very different sizes can be compared directly.",
+    "audio": true
+  },
+  {
+    "k": "spread",
+    "t": "spread",
+    "kind": "name",
+    "forms": [
+      "spread"
+    ],
+    "text": "In bond markets a spread is the gap between the interest rates two borrowers must pay — here, the 1.5 percentage points extra France pays compared with Germany to borrow for ten years. Since both borrow in euros, that gap is almost pure judgement about risk: the market's price for the chance that France, unlike Germany, runs into trouble. A widening spread is a warning signal.",
+    "audio": true
+  },
+  {
+    "k": "points",
+    "t": "points",
+    "kind": "word",
+    "forms": [
+      "points"
+    ],
+    "text": "When a rate rises from 4 percent to 5.5 percent, that is a rise of 1.5 percentage points, not 1.5 percent — and in finance, points nearly always means percentage points. France paying 1.5 points more than Germany therefore means an extra 1.5 percent a year on every euro it borrows, which on a debt that size is enormous. Confusing points with percent is one of the commonest errors in reading financial news.",
+    "audio": true
+  },
+  {
+    "k": "run-on-bonds",
+    "t": "a run",
+    "kind": "name",
+    "forms": [
+      "run on French bonds",
+      "run on its bonds"
+    ],
+    "text": "A run is what happens when everyone holding a claim tries to get out at once — classically a bank run, with depositors queueing to withdraw money the bank cannot all produce. A run on a government's bonds is that panic applied to debt: investors sell and refuse to buy new bonds, so the government cannot refinance and yields spike beyond what it can afford. The fear is self-fulfilling, which is why the article calls Italy fragile.",
+    "audio": true
+  },
+  {
+    "k": "bail-out",
+    "t": "bail-out",
+    "kind": "name",
+    "forms": [
+      "bail-out",
+      "bail-outs",
+      "bail out"
+    ],
+    "text": "A bail-out is a rescue of someone in financial trouble by a party with deeper pockets, on terms the rescued side could never get in the market. Here it means the European Central Bank buying French bonds when private investors will not, holding France's borrowing costs down. The article's objection is that rescuing a government which refuses to balance its books teaches every other government that it need not either.",
+    "audio": true
+  },
+  {
+    "k": "ecb",
+    "t": "European Central Bank (ECB)",
+    "kind": "name",
+    "forms": [
+      "European Central Bank",
+      "ECB"
+    ],
+    "text": "The European Central Bank sets interest rates for the countries that use the euro, in place of each keeping its own central bank. Because it can create euros, it can buy a member country's bonds and so cap that country's borrowing costs — the power France might lean on. In principle it does this only for countries that have put their budgets in order, and the article argues that condition has quietly weakened.",
+    "audio": true
+  },
+  {
+    "k": "federal-reserve",
+    "t": "Federal Reserve",
+    "kind": "name",
+    "forms": [
+      "Federal Reserve"
+    ],
+    "text": "The Federal Reserve, usually just the Fed, is America's central bank: it sets the interest rate that ripples through every other American rate, and is charged with keeping inflation low. It is deliberately insulated from the president so that it can refuse to cut rates for political convenience. Trump attacking it for not cutting is the kind of pressure that makes bond investors demand extra interest as insurance against future inflation.",
+    "audio": true
+  },
+  {
+    "k": "populism",
+    "t": "populism",
+    "kind": "name",
+    "forms": [
+      "populism",
+      "populist-left",
+      "populist-right",
+      "populist"
+    ],
+    "text": "Populism is a style of politics that sets a virtuous ordinary people against a self-serving elite, and it tends to treat expert institutions — courts, statistical agencies, central banks — as part of that elite, to be overridden rather than respected. That is why it turns up in an article about bonds: investors fear a populist government pressuring its central bank into inflating debts away. Melenchon on the left and Le Pen on the right are both labelled populist here.",
+    "audio": true
+  },
+  {
+    "k": "governor",
+    "t": "governor",
+    "kind": "word",
+    "forms": [
+      "governor"
+    ],
+    "text": "Not a state governor. The governor of a central bank is the official who runs it, so the governor of the Bank of France is that institution's chief, the counterpart of the Federal Reserve's chair. Accusing him of treason, as Melenchon did, attacks the principle that the bank should act independently of whoever holds power — which is why the article inserts the word absurdly.",
+    "audio": true
+  },
+  {
+    "k": "treason",
+    "t": "treason",
+    "kind": "word",
+    "forms": [
+      "treason"
+    ],
+    "text": "Treason is the gravest political crime there is: betraying your own country, classically by aiding an enemy in wartime. Levelling it at a central banker over interest-rate policy is wild overstatement, and the article flags that by calling the accusation absurd. The charge shows how far populist politicians will go in attacking institutions they cannot control.",
+    "audio": true
+  },
+  {
+    "k": "inflation",
+    "t": "inflation",
+    "kind": "name",
+    "forms": [
+      "inflation"
+    ],
+    "text": "Inflation is a general rise in prices across an economy, which means each unit of money buys less than it used to. For a borrower who owes a fixed number of dollars, inflation is quietly helpful: the debt stays the same size while wages, prices and tax revenues all rise around it. That asymmetry is the danger bond investors are watching throughout this article.",
+    "audio": true
+  },
+  {
+    "k": "inflation-adjusted",
+    "t": "inflation-adjusted",
+    "kind": "name",
+    "forms": [
+      "inflation-adjusted"
+    ],
+    "text": "An inflation-adjusted interest rate, also called a real rate, is the stated rate minus inflation — what a lender earns once money losing value is allowed for. A bond paying 3 percent while inflation runs at 3 percent gives a real return of zero. This is how Japan can breach a 3 percent yield and still cope: with inflation up too, its inflation-adjusted cost of borrowing stays low.",
+    "audio": true
+  },
+  {
+    "k": "overheating",
+    "t": "Overheating",
+    "kind": "name",
+    "forms": [
+      "Overheating"
+    ],
+    "text": "An economy overheats when demand outruns what it can actually produce, so the extra spending shows up as rising prices rather than as more goods — the word pictures an engine driven too hard. Standing as a heading over the article's warning about central banks turning into cash machines for governments, it points at the inflation that funding deficits with new money would cause.",
+    "audio": true
+  },
+  {
+    "k": "jobless-claims",
+    "t": "jobless claims",
+    "kind": "name",
+    "forms": [
+      "Jobless claims"
+    ],
+    "text": "Jobless claims count how many people filed for unemployment benefits in a given week, which makes them one of the fastest available signals of whether an economy is shedding jobs. Low claims mean few people are losing work, so the labour market is strong. The article cites them as evidence that America's boom is real rather than a statistical illusion.",
+    "audio": true
+  },
+  {
+    "k": "productivity",
+    "t": "productivity",
+    "kind": "name",
+    "forms": [
+      "productivity"
+    ],
+    "text": "Productivity is how much output a worker produces per hour, and it is the only route to lasting rises in living standards: working longer hours raises output, but working more productively raises income. Strong productivity growth also lets an economy grow without generating inflation. That is why the article counts it among the genuinely encouraging forces behind higher American interest rates.",
+    "audio": true
+  },
+  {
+    "k": "net-debt-interest",
+    "t": "net debt interest",
+    "kind": "name",
+    "forms": [
+      "net debt interest"
+    ],
+    "text": "Net debt interest is what a government pays its lenders in interest, less any interest it receives — the pure cost of carrying its existing debt. Quoting it as 8 percent of tax revenues makes the squeeze vivid: eight cents in every tax dollar goes to past borrowing before a single school or soldier is paid for. Unlike most spending, it cannot be cut by a vote.",
+    "audio": true
+  },
+  {
+    "k": "advanced-economies",
+    "t": "advanced economies",
+    "kind": "name",
+    "forms": [
+      "advanced economies"
+    ],
+    "text": "Advanced economies is the standard term for the rich, industrialised countries — America, Japan, western Europe and the like — as against emerging or developing ones. The grouping matters to the argument here: these are precisely the borrowers everyone assumed were safe, which is what would make a debt crisis among them a shock rather than a routine event.",
+    "audio": true
+  },
+  {
+    "k": "uncle-sam",
+    "t": "Uncle Sam",
+    "kind": "name",
+    "forms": [
+      "Uncle Sam"
+    ],
+    "text": "Uncle Sam is the long-standing nickname and cartoon personification of the United States government, usually drawn as a stern old man in a star-spangled top hat. Here it simply means the American federal government in its role as a borrower. Saying Uncle Sam issues the world's reserve currency is a compact way of noting that America enjoys a privilege no other borrower has.",
+    "audio": true
+  },
+  {
+    "k": "reserve-currency",
+    "t": "reserve currency",
+    "kind": "name",
+    "forms": [
+      "reserve currency"
+    ],
+    "text": "The world's reserve currency is the money other countries' central banks hold as savings and that global trade and borrowing are priced in — today, overwhelmingly, the dollar. Because everybody wants dollars, America can always find buyers for its debt and borrows more cheaply than its own finances would justify. That cushion is why the article says America's fiscal reckoning must come eventually, but not yet.",
+    "audio": true
+  },
+  {
+    "k": "euro-zone-debt-crisis",
+    "t": "euro-zone debt crisis",
+    "kind": "name",
+    "forms": [
+      "euro-zone debt crisis"
+    ],
+    "text": "Between roughly 2010 and 2012 investors lost confidence in several euro-zone governments — Greece, Ireland, Portugal, Spain and Italy — whose borrowing costs shot far above Germany's, forcing bail-outs and deep spending cuts. Sharing a currency, none could devalue its way out. France's spread over Germany reaching its highest level since then is the article's way of saying markets have not been this worried in over a decade.",
+    "audio": true
+  },
+  {
+    "k": "liquefied-natural-gas",
+    "t": "liquefied natural gas",
+    "kind": "name",
+    "forms": [
+      "liquefied natural gas"
+    ],
+    "text": "Natural gas chilled to about minus 160 degrees Celsius turns liquid and shrinks to roughly one six-hundredth of its volume, which is what lets it travel across oceans in tankers instead of down a pipeline. That turned gas into a globally traded commodity, so a shortage anywhere raises prices everywhere. Europe, having swapped Russian pipeline gas for seaborne imports, is now exposed to exactly that.",
+    "audio": true
+  },
+  {
+    "k": "cost-of-capital",
+    "t": "cost of capital",
+    "kind": "name",
+    "forms": [
+      "cost of capital"
+    ],
+    "text": "A borrower's cost of capital is simply what it costs them to obtain money to invest — the interest on a loan or bond, or the return shareholders demand. When the AI boom raises the cost of capital, everyone, governments included, must promise lenders more to attract the same money. Europe's complaint in this article is that it pays that higher price without getting the growth America is getting.",
+    "audio": true
+  },
+  {
+    "k": "finance-ministries",
+    "t": "finance ministries",
+    "kind": "name",
+    "forms": [
+      "finance ministries"
+    ],
+    "text": "A finance ministry is the government department that taxes, spends and borrows — Britain's Treasury, America's Treasury Department, France's ministry of finance. The warning that central banks must not become cash machines for finance ministries describes a central bank creating money to fund whatever the spending side wants. Keeping the two apart is what stops a government from simply printing its bills away.",
+    "audio": true
+  },
+  {
+    "k": "guarantors",
+    "t": "guarantors",
+    "kind": "word",
+    "forms": [
+      "guarantors"
+    ],
+    "text": "A guarantor is whoever stands behind a promise and makes sure it holds — the adult who co-signs a lease, for example. Calling central banks guarantors of stable prices names their core job: keeping money's value predictable, so that wages, savings and bonds still mean something years from now. The article's fear is that they end up guaranteeing governments' debts instead.",
+    "audio": true
+  },
+  {
+    "k": "underwrite",
+    "t": "underwrite",
+    "kind": "word",
+    "forms": [
+      "underwrite"
+    ],
+    "text": "To underwrite something is to agree to absorb the loss if it goes wrong; the word comes from insurers signing their name under a risk they had accepted. Saying central banks should not underwrite decades of reckless borrowing means they should not quietly stand behind governments' debts, because a borrower who knows somebody else will cover the losses borrows more freely. It has nothing to do with writing underneath anything.",
+    "audio": true
+  },
+  {
+    "k": "guardrail",
+    "t": "guardrail",
+    "kind": "word",
+    "forms": [
+      "guardrail"
+    ],
+    "text": "A guardrail is literally the barrier at the edge of a road that stops a car going over; figuratively it is any rule built to prevent a predictable disaster. The guardrail here is the requirement that a euro-zone country fix its budget before the ECB will buy its debt. Saying it is weaker than a decade ago means the rule still exists on paper but fewer people believe it would actually hold.",
+    "audio": true
+  },
+  {
+    "k": "game-of-chicken",
+    "t": "game of chicken",
+    "kind": "phrase",
+    "forms": [
+      "game of chicken"
+    ],
+    "text": "A game of chicken is a standoff in which two sides race towards a crash and whoever swerves first loses, so the winner is whoever seems more genuinely willing to accept disaster. The article applies it to France against the ECB: the bank insists it will not fund a profligate government, France bets it will blink. France probably wins, because the euro could not survive France leaving, which makes the bank's threat the less believable one.",
+    "audio": true
+  },
+  {
+    "k": "belt-tightening",
+    "t": "belt-tightening",
+    "kind": "phrase",
+    "forms": [
+      "belt-tightening"
+    ],
+    "text": "Belt-tightening means cutting your spending to live within your means, from the image of needing a tighter belt after losing weight. Applied to a government it is the polite word for austerity: higher taxes, smaller budgets, fewer services. The scale here is startling — France would need belt-tightening worth more than 4 percent of its entire economy merely to stop its debt from growing.",
+    "audio": true
+  },
+  {
+    "k": "balance-the-books",
+    "t": "balance the books",
+    "kind": "phrase",
+    "forms": [
+      "balance the books"
+    ],
+    "text": "To balance the books is to make what you spend match what you take in, leaving no gap to borrow. The phrase comes from bookkeeping, where the two sides of a ledger must come to the same total. Governments that refuse point-blank to balance the books are the ones the article argues central banks should not rescue.",
+    "audio": true
+  },
+  {
+    "k": "point-blank",
+    "t": "point-blank",
+    "kind": "phrase",
+    "forms": [
+      "point-blank"
+    ],
+    "text": "Point-blank originally described firing a gun from so close that aim hardly mattered, and it now means doing something flatly, with no softening — a point-blank refusal leaves no room for discussion. Governments refusing point-blank to balance the books are not negotiating or stalling; they simply will not do it. You will also meet the phrase in asking someone point-blank.",
+    "audio": true
+  },
+  {
+    "k": "in-tandem",
+    "t": "in tandem",
+    "kind": "phrase",
+    "forms": [
+      "in tandem"
+    ],
+    "text": "In tandem means two things moving together, from a tandem bicycle on which both riders pedal the same machine. The point here is sharp: America's interest costs rise in tandem with its growth, so growing faster does not help it escape its debts the way you might assume. The faster growth brings higher interest rates, and the two largely cancel out.",
+    "audio": true
+  },
+  {
+    "k": "pick-their-pockets",
+    "t": "pick their pockets",
+    "kind": "phrase",
+    "forms": [
+      "pick their pockets"
+    ],
+    "text": "To pick someone's pocket is to steal from them quietly enough that they notice nothing at the time. Governments using inflation to pick bondholders' pockets take real value from lenders without ever breaking a promise: the bond repays exactly the dollars it said it would, but those dollars buy far less. The phrase captures why investors treat inflation as a softer form of default.",
+    "audio": true
+  },
+  {
+    "k": "turn-of-the-century",
+    "t": "turn of the century",
+    "kind": "phrase",
+    "forms": [
+      "turn of the century"
+    ],
+    "text": "The turn of the century means the years right around the point where one century becomes the next — here, about the year 2000. It is a common way of dating a comparison without naming an exact year. Saying rich-world debts are double what they were at the turn of the century measures roughly a quarter-century of borrowing.",
+    "audio": true
+  },
+  {
+    "k": "whatever-it-takes",
+    "t": "whatever it takes",
+    "kind": "phrase",
+    "forms": [
+      "whatever it takes"
+    ],
+    "text": "Whatever it takes means committing to an outcome without putting any limit on what you will do to reach it. The phrase carries an echo in this setting: in 2012 the ECB's president promised to do whatever it takes to preserve the euro, and merely saying so calmed the crisis. The article turns it around, asking politicians to make that same open-ended commitment to controlling debt.",
+    "audio": true
+  },
+  {
+    "k": "exact",
+    "t": "exact",
+    "kind": "word",
+    "forms": [
+      "exact"
+    ],
+    "text": "Here exact is a verb, not the adjective meaning precise: to exact something is to demand and extract it, usually by force or as a penalty. Voters will exact revenge means they will inflict it, punishing the politicians responsible. Notice the stress shifts between the two words — the adjective is EX-act, the verb ig-ZAKT.",
+    "audio": true
+  },
+  {
+    "k": "breached",
+    "t": "breached",
+    "kind": "word",
+    "forms": [
+      "breached"
+    ],
+    "text": "A breach is a break or a gap, so to breach a level is to push through a barrier that had been holding. Japan's ten-year yield breaching 3 percent means it crossed above a line it had stayed under since 1996. The same word covers breaching a wall, a contract or a rule.",
+    "audio": true
+  },
+  {
+    "k": "prudent",
+    "t": "prudent",
+    "kind": "word",
+    "forms": [
+      "prudent"
+    ],
+    "text": "Prudent means carefully sensible about the future — avoiding risks you would later regret rather than taking the easy option now. The prudent governments in this article are those that kept their budgets in order while borrowing was cheap, such as Germany, Scandinavia and Switzerland. The noun is prudence, and its opposite here is the reckless borrowing the article condemns.",
+    "audio": true
+  },
+  {
+    "k": "reckless",
+    "t": "reckless",
+    "kind": "word",
+    "forms": [
+      "reckless"
+    ],
+    "text": "Reckless means acting without regard for the risks — not merely careless, but pressing on when the danger is obvious. Decades of reckless borrowing describes governments that kept piling on debt while knowing rates could rise. The word assigns blame, which is why the article reaches for it when arguing that such governments should not be rescued.",
+    "audio": true
+  },
+  {
+    "k": "clamour",
+    "t": "clamour",
+    "kind": "word",
+    "forms": [
+      "clamour"
+    ],
+    "text": "To clamour is to demand something loudly and insistently, usually as a crowd; as a noun it means a din of voices. AI firms clamouring to build data centres pictures them all pressing for the same scarce resources at once, which is how they drive up the price of capital. Americans spell it clamor.",
+    "audio": true
+  },
+  {
+    "k": "mused",
+    "t": "mused",
+    "kind": "word",
+    "forms": [
+      "mused"
+    ],
+    "text": "To muse is to think aloud, turning an idea over without quite committing to it. Saying Trump mused that inflation can reduce debts is pointed: it was a stray remark rather than a policy, yet bond investors still have to price in the possibility that he means it. Musing from a president is never entirely casual.",
+    "audio": true
+  },
+  {
+    "k": "looms",
+    "t": "looms",
+    "kind": "word",
+    "forms": [
+      "looms",
+      "looming"
+    ],
+    "text": "Something that looms appears large and threatening ahead, the way a cliff looms out of fog — the word is reserved for things you would rather avoid. A debt crisis looming means it is visibly approaching, not that it has arrived. The article's subtitle leans on the same word to set the whole piece up.",
+    "audio": true
+  },
+  {
+    "k": "electorates",
+    "t": "electorates",
+    "kind": "word",
+    "forms": [
+      "electorates"
+    ],
+    "text": "An electorate is the entire body of people entitled to vote in a country or district. Politicians explaining to their electorates that debt must be brought under control means telling voters an unwelcome truth instead of promising them more. The article's closing argument is that this persuasion, not a central-bank rescue, is the only durable fix.",
+    "audio": true
+  },
+  {
+    "k": "panic",
+    "t": "panic",
+    "kind": "word",
+    "forms": [
+      "panic"
+    ],
+    "text": "In markets a panic is a specific event, not just a feeling: a sudden collapse of confidence in which everyone sells at once and prices fall well below what the underlying facts justify. Italy being fragile and able to break in a panic means its debt is bearable in calm conditions but not if sentiment turns. Panics feed on themselves, which is what makes them so dangerous.",
+    "audio": true
+  },
+  {
+    "k": "stock",
+    "t": "stock",
+    "kind": "word",
+    "forms": [
+      "stock"
+    ],
+    "text": "Stock here does not mean shares in a company. It means an accumulated quantity of something held, so the Japanese government's enormous stock of overseas assets is the pile it has built up over decades. Economists routinely contrast a stock, a quantity at one moment, with a flow, a quantity per year: the debt is a stock, the deficit is a flow.",
+    "audio": true
+  },
+  {
+    "k": "puncture",
+    "t": "puncture",
+    "kind": "word",
+    "forms": [
+      "puncture"
+    ],
+    "text": "To puncture something is to pierce it so that whatever was holding it up escapes, like a tyre going flat. Puncturing the rich world's hubris means deflating a confidence that was never as solid as it looked. The verb is well chosen: nothing gets destroyed, the illusion simply collapses.",
+    "audio": true
+  }
+]
