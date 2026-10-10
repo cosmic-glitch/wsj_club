@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-10",
+  "title": "Big Tobacco’s lessons for Big Oil",
+  "articleUrl": "https://www.economist.com/united-states/2026/10/08/big-tobaccos-lessons-for-big-oil",
+  "articlePageUrl": "/articles/2026-10-10.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "capitulate",
+      "partOfSpeech": "verb",
+      "pronunciation": "kuh-PITCH-uh-late",
+      "articleQuote": "did Big Tobacco capitulate, agreeing in 1998 to pay states more than $200bn over 25 years",
+      "meaning": "To capitulate is to stop resisting and accept the other side's terms. It is a stronger word than *agreeing*, and it carries its origin with it: capitulation was the formal surrender of an army, set out in chapters of conditions the loser had to accept. So it describes someone who held out as long as they could and finally ran out of room, not someone who was persuaded. That is exactly the distinction the article is drawing here — after decades of winning almost every smoker's lawsuit, the tobacco firms did not come round to their critics' view, they simply lost the ground they had been defending, and the $200bn settlement is what that collapse looked like.",
+      "examples": [
+        "My parents held out against a later curfew for a year, then capitulated the week I turned sixteen.",
+        "Down two sets and cramping badly, she refused to capitulate and dragged the match into a third."
+      ]
+    },
+    {
+      "word": "obfuscation",
+      "partOfSpeech": "noun",
+      "pronunciation": "ob-fuh-SKAY-shun",
+      "articleQuote": "The effect of continued obfuscation, Boulder alleges, was to limit action on climate.",
+      "meaning": "Obfuscation is deliberately making something hard to understand — muddying a subject so people cannot see it clearly. It is a more slippery accusation than lying, and that is what makes the word useful: an obfuscator need not state a single falsehood, only pile up doubt, jargon and beside-the-point detail until the plain fact disappears into the fog. The whole shape of Boulder's case sits on that difference. The city is not claiming the oil firms denied their own scientists' findings outright; it is claiming they clouded the picture for decades, so the public never saw it sharply enough to demand anything be done.",
+      "examples": [
+        "The app's privacy policy is forty pages of obfuscation; nowhere does it simply say which data it sells.",
+        "Asked who broke the window, my brother produced such a cloud of obfuscation that my mother gave up asking."
+      ]
+    },
+    {
+      "word": "recuse",
+      "partOfSpeech": "verb",
+      "pronunciation": "rih-KYOOZ",
+      "articleQuote": "Justice Samuel Alito, who owns shares in oil companies, recused himself from the case before the Supreme Court.",
+      "meaning": "To recuse yourself is to step aside from a decision because you have a stake in how it turns out. The word lives in law and ethics, where the test is deliberately not whether you *would* actually be swayed — it is whether a reasonable onlooker could doubt that you were neutral. That is why a judge who owns shares in one of the companies in front of him withdraws rather than simply promising to be fair: the point is to protect trust in the ruling, not just the ruling itself. Alito's oil shares make him precisely that case, and since the Supreme Court has nine justices, his stepping out leaves eight to decide Boulder's appeal.",
+      "examples": [
+        "The teacher recused herself from judging the science fair because her own son had an entry.",
+        "Two council members recused themselves from the vote on funding a club they both belonged to."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Public nuisance",
+      "articleQuote": "warns of allowing Boulder to sue “me on a nuisance claim for refilling my car”",
+      "meaning": "Notice what Boulder is *not* claiming. It does not say Exxon broke a contract with the city, and it does not point to one resident Suncor injured. The claim runs through an old category in **tort law** — the law covering harms one party does to another outside of any agreement — called **nuisance**.\n\nIn ordinary speech a nuisance is a mild annoyance. In law it is narrower and much heavier: an unreasonable interference with someone's use of their own property. The classic private nuisance is the neighbour whose bonfire smoke pours through your windows every evening. You can sue him even though he never set foot on your land and never promised you anything — the harm came across the boundary rather than through a broken agreement.\n\n**Public nuisance** stretches that same idea to the things nobody owns privately but everybody uses: the air, a river, a road, a harbour. Here the machinery has to change, because if no one owns the air, no one has their own property to sue over. So the right to sue sits with the government instead, acting on the public's behalf. That single move is why the plaintiff in this case is a city rather than a flood victim, and it is the same door states walked through against tobacco firms in the 1990s and opioid manufacturers after that — which is what Justice Kagan means by calling Big Oil \"chapter three\".\n\nThe doctrine's reach is also its soft spot, and that is what Shanmugam is prodding when he asks whether he can be sued for refilling his car. If fouling shared air is a nuisance, every driver fouls it a little. Nuisance law answers with the word *unreasonable*: a court weighs how much harm was done, how useful the conduct was, and what the defendant knew. Boulder's case leans almost entirely on that last item — the concealment — because that is what separates the firms from their customers.\n\nSo when a lawsuit is brought by a government rather than by the person who got hurt, ask what shared thing is alleged to have been spoiled. That is usually public nuisance doing the work."
+    },
+    {
+      "name": "Federal preemption",
+      "articleQuote": "Justice Brett Kavanaugh seemed to agree, declaring that “this kind of pollution is a federal-law matter unless Congress speaks otherwise.”",
+      "meaning": "Boulder has already won once: Colorado's own supreme court said its case could go ahead. That victory may turn out to be worth nothing, and the reason is the question Kavanaugh is answering. It is not *which court* hears the case — it is *whose law* decides it.\n\nAmerica runs two systems of law at the same time. Every state writes its own and has its own courts; above that sits federal law, written by Congress and interpreted by the federal courts. The Constitution's **supremacy clause** settles what happens when the two genuinely conflict: federal law wins, and the state rule is **preempted** — pushed aside. In constitutional law, preemption is the name for that displacement, and it is why a case can be perfectly good under state law and still die.\n\nInterstate pollution is one of the places preemption bites hardest, and the reason is physical rather than legal. Carbon dioxide released in Colorado does not stay in Colorado; it mixes into the same atmosphere every state and every country breathes. If Colorado's courts could set the price of emitting it, Colorado would in practice be writing the rules for what happens in Texas and in China — which is what Shanmugam is reaching for with the word \"unprecedented\", and why the Supreme Court has long held that interstate pollution claims belong to federal law. Justice Barrett's word \"enclave\" describes the shape of that result neatly: a fenced-off patch of law where only federal rules operate, however much room states are given everywhere else.\n\nAnd see what this does to the tobacco comparison the article opens with. Cigarette harm happened inside one state, to that state's own residents, so state law could reach it comfortably. Smoke that circulates globally will not hold still long enough for one state's law to grip it.\n\nThe transferable habit: when a dispute crosses state lines, the first question is never who is right. It is which government's law applies at all."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The article says Big Tobacco finally \"capitulated\" in 1998. What does that word tell you about how the settlement came about?",
+      "options": [
+        "The companies were persuaded by the medical evidence and offered to pay",
+        "The companies gave in after losing the legal ground they had defended for decades",
+        "Congress forced the companies to pay by passing a new tax on cigarettes",
+        "The companies paid in exchange for an official finding that cigarettes were safe"
+      ],
+      "answerIndex": 1,
+      "explanation": "To capitulate is to stop resisting and accept the other side's terms — the firms ran out of room to keep winning, rather than changing their minds."
+    },
+    {
+      "question": "Why is the plaintiff in this case the city of Boulder rather than an individual Boulder resident harmed by a flood or wildfire?",
+      "options": [
+        "Individuals are not allowed to sue corporations over environmental damage",
+        "A resident would have to prove a far larger dollar amount of damage first",
+        "The claim is about harm to shared resources like the air, which nobody owns privately, so the government sues for the public",
+        "Colorado law requires every climate lawsuit to be filed by a city or county"
+      ],
+      "answerIndex": 2,
+      "explanation": "Public nuisance covers interference with things everybody uses and no one privately owns, so the right to sue belongs to the government acting on the public's behalf."
+    },
+    {
+      "question": "Kavanaugh said \"this kind of pollution is a federal-law matter unless Congress speaks otherwise.\" If the Supreme Court agrees, why would that sink Boulder's suit even though Boulder won in Colorado's supreme court?",
+      "options": [
+        "The case would have to be retried in front of a jury instead of a judge",
+        "Boulder's suit rests on Colorado state law, which federal law would push aside for interstate pollution",
+        "Alito's recusal leaves too few justices to uphold a state court's ruling",
+        "Congress has already passed a law granting oil companies immunity from such claims"
+      ],
+      "answerIndex": 1,
+      "explanation": "Preemption means federal law displaces conflicting state law, so a win built on state law collapses if the subject turns out to belong to federal law."
+    },
+    {
+      "question": "Boulder alleges \"continued obfuscation\" by the oil companies. What is it accusing them of doing?",
+      "options": [
+        "Refusing to answer any questions from journalists or regulators",
+        "Deliberately clouding the subject so the public could not see the risks clearly",
+        "Destroying the only copies of their own internal research",
+        "Admitting the danger publicly while quietly expanding production"
+      ],
+      "answerIndex": 1,
+      "explanation": "Obfuscation is deliberately making something hard to understand — not necessarily stating a falsehood, but muddying the picture until the plain fact is lost."
+    },
+    {
+      "question": "The article closes by contrasting smoking with climate change. What difference does it draw?",
+      "options": [
+        "Smoking harms only the smoker, while climate change harms people who never used fossil fuels",
+        "Tobacco firms hid what they knew, whereas oil firms published their findings openly",
+        "Smoking looked like a matter of individual choice, which states got around by suing for public costs; climate change is a collective-action problem",
+        "Tobacco cases were heard in state courts while climate cases must begin in federal court"
+      ],
+      "answerIndex": 2,
+      "explanation": "The last paragraph separates a problem of individual choice from one of collective action, which governments decline to solve even when fully informed of the harms."
+    }
+  ]
+}
