@@ -27,7 +27,7 @@
 # junior run behind it.
 # Env:
 #   AUTOPUBLISH_DATE=…       publish a specific poll date (default: today Pacific)
-#   AUTOPILOT_MODEL=…        run the session on another model (default claude-opus-5[1m])
+#   AUTOPILOT_MODEL=…        run the session on another model (default claude-sonnet-5-5[1m])
 #   AUTOPUBLISH_DRY_RUN=1    same as the DRY_RUN flag file
 set -uo pipefail
 
@@ -38,7 +38,7 @@ export PATH="$HOME/.local/bin:$PATH"   # `claude`, `node` under cron's minimal P
 # ambient default silently kills every run of the day (the session exits
 # immediately with "You've reached your … limit"). Override for one run with
 # AUTOPILOT_MODEL=… to fall back to another model when this one is capped.
-AUTOPILOT_MODEL="${AUTOPILOT_MODEL:-claude-opus-5[1m]}"
+AUTOPILOT_MODEL="${AUTOPILOT_MODEL:-claude-sonnet-5-5[1m]}"
 
 TRACK="senior"
 for a in "$@"; do

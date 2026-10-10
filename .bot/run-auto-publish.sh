@@ -33,7 +33,7 @@
 #   AUTOPUBLISH_FORCE=1      publish NOW: bypass the time gate AND the vote hold
 #   AUTOPUBLISH_TIME=09:30   pretend it is this Pacific time (exercise the gate and the hold)
 #   AUTOPUBLISH_DATE=…       publish a specific poll date (default: today Pacific)
-#   AUTOPILOT_MODEL=…        run the sessions on another model (default claude-opus-5[1m])
+#   AUTOPILOT_MODEL=…        run the sessions on another model (default claude-sonnet-5-5[1m])
 #   AUTOPUBLISH_DRY_RUN=1    same as the DRY_RUN flag file
 set -uo pipefail
 

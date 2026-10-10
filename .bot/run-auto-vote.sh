@@ -27,7 +27,7 @@
 #   AUTOVOTE_DATE=…   open the votes for a specific date (default: today Pacific)
 #   AUTOVOTE_TRACKS=… limit the run to "senior" or "junior" (default: every
 #                     track without an OFF flag) — for re-opening one poll
-#   AUTOPILOT_MODEL=… run the session on another model (default claude-opus-5[1m])
+#   AUTOPILOT_MODEL=… run the session on another model (default claude-sonnet-5-5[1m])
 set -uo pipefail
 
 export PATH="$HOME/.local/bin:$PATH"   # find `claude`, `node` under cron's minimal PATH
@@ -37,7 +37,7 @@ export PATH="$HOME/.local/bin:$PATH"   # find `claude`, `node` under cron's mini
 # ambient default silently kills every run of the day (the session exits
 # immediately with "You've reached your … limit"). Override for one run with
 # AUTOPILOT_MODEL=… to fall back to another model when this one is capped.
-AUTOPILOT_MODEL="${AUTOPILOT_MODEL:-claude-opus-5[1m]}"
+AUTOPILOT_MODEL="${AUTOPILOT_MODEL:-claude-sonnet-5-5[1m]}"
 
 if [ $# -ne 0 ]; then
   echo "usage: $0   (no arguments; AUTOVOTE_TRACKS=senior|junior limits it to one track)" >&2
