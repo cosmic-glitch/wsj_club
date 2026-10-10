@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-10",
+  "title": "Do you need to walk 10,000 steps a day?",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/09/do-you-need-to-walk-10000-steps-a-day",
+  "articlePageUrl": "/articles/junior/2026-10-10.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "incorporate",
+      "partOfSpeech": "verb",
+      "pronunciation": "in-KOR-puh-rayt",
+      "articleQuote": "Walking is a form of exercise that is free, requires no equipment and is easy for most people to incorporate into their days.",
+      "meaning": "To incorporate something is to make it part of a bigger whole, so that it stops being a separate item and just belongs. You can incorporate an idea into an essay, a new player into a team, or an ingredient into a batter. In the article that is exactly why walking gets praised: most people can incorporate it into their days instead of setting aside a special hour for it — the walk to school or to the shop is already there, and the exercise rides along inside a day you were having anyway.",
+      "examples": [
+        "Our coach incorporated a two-minute plank into warm-ups, and after a week nobody could remember practice without it.",
+        "Instead of starting the poster over, I incorporated my sister's drawing into the corner of it."
+      ]
+    },
+    {
+      "word": "premature",
+      "partOfSpeech": "adjective",
+      "pronunciation": "pree-muh-CHOOR",
+      "articleQuote": "Taking 7,000 steps a day, in contrast to 2,000, brought about a 47% lower risk of premature death",
+      "meaning": "Something premature happens before the proper or usual time. The word comes apart neatly: *pre-* means before and *mature* means fully grown or fully ready, so premature is literally before-ready. You have probably met it in a premature baby, born weeks ahead of the due date. In the article, premature death means dying earlier than you otherwise would have, which matters for reading the numbers: walking is not being sold as a way out of dying, only as a way of not dying young.",
+      "examples": [
+        "Calling the game a win at half-time turned out to be premature, because we lost by six.",
+        "My cousin was born premature and spent her first three weeks in hospital."
+      ]
+    },
+    {
+      "word": "taper",
+      "partOfSpeech": "verb",
+      "pronunciation": "TAY-pur",
+      "articleQuote": "But the benefits eventually taper off.",
+      "meaning": "To taper is to get narrower toward one end. A carrot tapers to a point, and so does a candle, and so do jeans cut close at the ankle. From that shape the word also came to describe amounts: when something tapers off, it keeps getting smaller until there is barely any of it left. In the article the benefits of walking taper off — every extra thousand steps still helps you, but it helps less than the thousand before it did, and past about 7,000 the next thousand adds almost nothing.",
+      "examples": [
+        "The line for tickets tapered off after the first hour, and by noon we walked straight in.",
+        "My handwriting is neat for one page and then tapers into a scrawl by the end of the test."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Relative risk",
+      "articleQuote": "a 47% lower risk of premature death, a 25% lower chance of developing cardiovascular disease and a 14% reduction in the risk of diabetes",
+      "meaning": "A 47% lower risk of premature death sounds enormous. Before anything else, it is worth being clear on what it does **not** say: not that 47 out of every 100 walkers were saved, and not that any one walker has a 47% chance of something.\n\nA number like that is a **relative risk**, and the word relative is the whole point — it only exists next to something else. Building one takes two groups and one thing you count. Here the researchers took people walking about 2,000 steps a day and people walking about 7,000, waited years, and counted the early deaths in each group. Then they compared the two counts. The 7,000-step group had 47% fewer early deaths **than the 2,000-step group**. That is all the 47% is: fewer than the other group.\n\nPicture two sixth-grade classes learning to juggle, 100 kids in each. In Mrs Alvarez's class nobody warms up first, and 20 kids end up with a sore wrist. In Mr Kim's class everyone stretches, and 10 kids end up sore. Ten is half of twenty, so stretching came with a 50% lower risk of a sore wrist. Look at what that 50% is doing. It compares the two classes. It does not mean half of Mr Kim's class got hurt — only 10 of his 100 did, which is one kid in ten.\n\nNow change one number and keep the same 50%. If 2 kids out of 100 had got sore wrists without stretching and 1 kid with, that is still a 50% lower risk, but it is one kid spared instead of ten. Same impressive percentage, a tenth of the actual difference.\n\nSo whenever you meet a headline saying something cuts your risk in half, the useful second question is always the same: half of what? The percentage tells you how much the two groups differed. Only the plain count tells you how much that is worth."
+    },
+    {
+      "name": "Meta-analysis",
+      "articleQuote": "A study published in Lancet Public Health in 2025 considered 57 perambulation papers published between 2014 and 2025",
+      "meaning": "Look closely at what the big 2025 walking study actually did. It did not follow a single walker or count a single step. What it examined was 57 *other* studies — papers published by other scientists between 2014 and 2025, each of which had already done its own walking research.\n\nA study whose subject is other studies has a name: a **meta-analysis**. The prefix *meta-* means about-itself, so a meta-analysis is an analysis of analyses, the way a film about how films get made is a meta-film. The method is simple to describe: track down every study anyone has published on one question, line up their results, and combine them into a single answer.\n\nWhy go to that trouble? Because one study on its own can point the wrong way for dull reasons. It might have followed only 40 people. It might have run in one city, in one year, among people who happened to be unusually healthy already. And some results turn up by sheer luck — flip a coin five times and five heads is not rare, even though the coin is fine.\n\nThink about picking a video game. One friend tells you it is the best thing ever made. That is your single study, and your friend may well love every game he touches. Now read all 300 reviews on the store page instead. A few are raves, a few are furious, most sit somewhere in the middle, and the pile of 300 tells you something no single review could — not because any one reviewer got smarter, but because the flukes cancel out and what is left is the pattern they share.\n\nScientists treat a careful meta-analysis as about the strongest evidence available, which is why one is usually sitting behind a headline that begins \"scientists now say\". It is also why the 7,000-step figure in this article deserves more of your trust than the famous 10,000 does. One of those numbers came out of 57 studies. The other came out of an advertising campaign for a pedometer."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does the research in the article suggest about the 10,000-step target?",
+      "options": [
+        "Walking 10,000 steps a day is the least you can do before walking helps at all",
+        "Most of the health benefit is already there by about 7,000 steps a day",
+        "Walking has no measurable effect on health",
+        "Only steps taken faster than 100 steps a minute count toward the total"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Lancet Public Health review found a diminishing return after about 7,000 steps — going from 7,000 to 10,000 lowered the risk of early death by only a further 2%."
+    },
+    {
+      "question": "Where did the famous 10,000-step target actually come from?",
+      "options": [
+        "A clinical trial run in Australia",
+        "Hippocrates, the ancient Greek physician",
+        "A Japanese advertising campaign for a pedometer before the 1964 Tokyo Olympics",
+        "The British Journal of Sports Medicine"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says the number's origins lie not in a clinical trial but in a Japanese advertising campaign for a pedometer launched ahead of the 1964 Tokyo Olympics."
+    },
+    {
+      "question": "\"But the benefits eventually taper off.\" When something tapers off, it —",
+      "options": [
+        "stops suddenly and completely",
+        "becomes harmful",
+        "gets smaller and smaller",
+        "spreads to more people"
+      ],
+      "answerIndex": 2,
+      "explanation": "To taper is to narrow toward one end, so benefits that taper off keep shrinking — each extra thousand steps helps, but less than the thousand before it."
+    },
+    {
+      "question": "The 2025 paper \"considered 57 perambulation papers published between 2014 and 2025\" rather than studying walkers itself. A study that pools together many other studies like this is called —",
+      "options": [
+        "a meta-analysis",
+        "a clinical trial",
+        "a control group",
+        "an opinion poll"
+      ],
+      "answerIndex": 0,
+      "explanation": "A meta-analysis gathers every study published on one question and combines their results, which is why its answer is trusted more than any single study's."
+    },
+    {
+      "question": "Walking 7,000 steps instead of 2,000 came with \"a 47% lower risk of premature death\". What does that 47% mean?",
+      "options": [
+        "47 out of every 100 walkers avoided dying early",
+        "Each walker had a 47% chance of living longer",
+        "47% of the people in the study walked 7,000 steps a day",
+        "The 7,000-step group had 47% fewer early deaths than the 2,000-step group"
+      ],
+      "answerIndex": 3,
+      "explanation": "A relative risk exists only as a comparison between two groups: it says how much less often something happened in one group than in the other, not what share of people it happened to."
+    }
+  ]
+}
