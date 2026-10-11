@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-11",
+  "title": "Why your favourite bakery and coffee shop now sell tote bags",
+  "articleUrl": "https://www.economist.com/culture/2026/10/08/why-your-favourite-bakery-and-coffee-shop-now-sell-tote-bags",
+  "articlePageUrl": "/articles/junior/2026-10-11.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "exuberant",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ig-ZOO-bur-unt",
+      "articleQuote": "all the better to withstand showers of beer from fellow exuberant fans",
+      "meaning": "Exuberant describes someone who is bursting with joyful energy and shows it. Think of a team piling onto each other after a winning goal, or a puppy sprinting circles when you get home. It is more than just happy: an exuberant person is loud, bouncy, and hard to hold still. In the article, the exuberant fans are so wildly excited at a football match that they end up throwing beer around, which is why the jersey needed a special fabric.",
+      "examples": [
+        "The exuberant crowd leaped out of their seats when the band walked on stage.",
+        "My exuberant little brother hugged every single guest at the door."
+      ]
+    },
+    {
+      "word": "obscure",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ub-SKYOOR",
+      "articleQuote": "particularly for something obscure",
+      "meaning": "Something obscure is hard to notice or known by very few people. A tiny band nobody has heard of is obscure, and so is a rule buried on page 40 of a handbook. The word started out meaning dark or hidden, which still fits. In the article, wearing merch for an obscure shop or band is the point: only people who also know it will spot your shirt and smile, so it works like a secret handshake.",
+      "examples": [
+        "She loves obscure board games that only a few hundred people in the world own.",
+        "The answer was hidden in an obscure corner of the library's website."
+      ]
+    },
+    {
+      "word": "bespoke",
+      "partOfSpeech": "adjective",
+      "pronunciation": "bih-SPOHK",
+      "articleQuote": "produce bespoke items such as cups, matches and t-shirts",
+      "meaning": "Bespoke means made specially for one particular person or purpose, instead of being bought ready-made off a shelf. A tailor can make a bespoke suit cut exactly to your measurements. The word is old: it comes from an older way of saying a thing was spoken for, meaning ordered in advance by someone. In the article, bespoke cups and t-shirts are ones that people design themselves for their own party, with their own names or jokes on them.",
+      "examples": [
+        "Dad had a bespoke bookshelf built to fit exactly into the odd corner of our room.",
+        "The bakery made a bespoke cake shaped like my dog."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Branding",
+      "articleQuote": "Merch also enables companies to present a fun image.",
+      "meaning": "When you see a swoosh on a shoe or golden arches on a sign, you know the company before reading a single word. That feeling is a **brand**: the picture a company puts in your head, made of its name, its logo, its colours, and the way it talks and acts. A brand is not the product itself. It is the idea of the product.\n\nWhy does that matter? Because a company that looks the same everywhere becomes easy to recognise, and things we recognise feel safe and familiar. We pick the cereal box we have seen a hundred times over the unfamiliar one.\n\nNow picture a small bakery on your street. It makes great bread, but only people who walk past know it. The owner prints the bakery's cute logo on a cotton tote bag and sells it for a few dollars. A customer carries it to school, to the park, to the grocery store. Every person who sees that bag sees the logo too, and the bakery never paid for a single ad. Each bag is a tiny walking billboard, and the customer is happy to be the one carrying it.\n\nThat is branding at work: the bag is not really selling cloth, it is spreading the bakery's name and its personality. And when the logo is funny or friendly, people carry it proudly, because it also tells others something about **them**."
+    },
+    {
+      "name": "Scarcity",
+      "articleQuote": "the limited-time Halloween bags",
+      "meaning": "Scarcity means there is less of something than people want. Anything that is rare, or only around for a short time, becomes more valuable in people's minds, even if it is not better than a common thing.\n\nImagine your school cafeteria bakes cookies every day, and nobody cares. Then one Friday it announces a special pumpkin cookie, made for **one day only**, a hundred of them. By lunch the line wraps around the room. The cookie is not tastier than the usual ones. What changed is that it can run out, and nobody wants to be the kid who missed it.\n\nCompanies know this and use it on purpose. A \"limited edition\" label, a countdown clock, or a rule like \"two per customer\" all make a thing feel scarce. The article shows the result: a $2.99 mini tote bag that sells out and then appears on resale websites at many times its price, because buyers who missed out will pay extra.\n\nThe lesson is a useful one to carry around. When you suddenly feel you **must** have something right now, ask yourself: do I want it, or does it just feel rare?"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did the mini Halloween totes from Trader Joe's cause long queues?",
+      "options": [
+        "They were very large and useful",
+        "They were limited-time bags that people were eager to get, even though they were small",
+        "They were given away for free",
+        "They were required for shopping there"
+      ],
+      "answerIndex": 1,
+      "explanation": "The bags cost $2.99, were only around for a limited time, and were too small to be very useful — yet crowds lined up and resale prices soared."
+    },
+    {
+      "question": "According to the article, which of these is one of the long-standing areas where merch is common?",
+      "options": [
+        "Hardware shops only",
+        "Sports teams",
+        "Banks",
+        "Car repair"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article lists children's products, music, and sports teams as the long-standing areas for merch, such as Arsenal's kit and merchandise sales."
+    },
+    {
+      "question": "\"All the better to withstand showers of beer from fellow exuberant fans.\" What does exuberant mean here?",
+      "options": [
+        "Sleepy and quiet",
+        "Angry and rude",
+        "Full of joyful, bouncy energy",
+        "Very rich"
+      ],
+      "answerIndex": 2,
+      "explanation": "Exuberant means bursting with joyful energy, like fans celebrating wildly at a match."
+    },
+    {
+      "question": "Why is a tote bag a cheap and effective way for a bookshop or bakery to get noticed?",
+      "options": [
+        "It costs a lot, so it feels special",
+        "It is cheap to make and thousands of people may see it as it gets carried around",
+        "It forces customers to buy more books",
+        "Stores are required to sell them"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says a tote might cost under $1 to make in bulk but be seen by thousands of people, so it works as walking advertising — the idea behind branding."
+    },
+    {
+      "question": "Which idea best explains why the $2.99 tote bags were listed on resale websites for $20 or more?",
+      "options": [
+        "Scarcity: there was less of the bags than people wanted",
+        "Bespoke: each bag was custom made",
+        "Obscure: nobody had heard of the store",
+        "Branding: the bags were free"
+      ],
+      "answerIndex": 0,
+      "explanation": "When something is limited and demand is high, people will pay far more for it. That is scarcity at work."
+    }
+  ]
+}
