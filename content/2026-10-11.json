@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-11",
+  "title": "This year’s Nobel science prizes are real-life sci-fi",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/08/this-years-nobel-science-prizes-are-real-life-sci-fi",
+  "articlePageUrl": "/articles/2026-10-11.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "unimpeded",
+      "partOfSpeech": "adjective",
+      "pronunciation": "un-im-PEE-did",
+      "articleQuote": "neutrinos’ reluctance to interact with matter allowed them to travel unimpeded for vast distances",
+      "meaning": "Unimpeded means with nothing getting in the way. It comes from *impede*, to slow something down or block it, and the *un-* flips it: a runner on an empty track is unimpeded, and so is a river with no dam. The word does a lot of work in this article, because a neutrino's whole usefulness comes from being unimpeded: since almost nothing stops it, it can cross billions of light-years and still point back to where it started.",
+      "examples": [
+        "With the hallway empty, she ran unimpeded to the bus and caught it with seconds to spare.",
+        "The new bike lane gave cyclists an unimpeded route to school, away from the traffic."
+      ]
+    },
+    {
+      "word": "refute",
+      "partOfSpeech": "verb",
+      "pronunciation": "rih-FYOOT",
+      "articleQuote": "In 1986 Dr Kagan refuted this assumption by finding that chiral catalysts could outperform this benchmark.",
+      "meaning": "To refute a claim is to prove it wrong, with evidence or a solid argument. It is stronger than *deny* or *dispute*: anyone can deny something, but you only refute it by showing it fails. Scientists use it constantly, because progress often means knocking down an assumption everyone relied on. That is what Kagan did here: the accepted belief was that a reaction could never beat the imbalance of its catalyst, and his experiment showed that it could.",
+      "examples": [
+        "My friend claimed the store closed at five, but the sign on the door refuted that.",
+        "The video evidence refuted the rumour that our team had broken the rules."
+      ]
+    },
+    {
+      "word": "bullish",
+      "partOfSpeech": "adjective",
+      "pronunciation": "BUL-ish",
+      "articleQuote": "could be permitted more bullishness in outlining the potential benefits of their research",
+      "meaning": "Bullish means confidently optimistic about how something will turn out. It began in finance, where a *bull market* is one in which prices are rising and investors expect more of the same, and it has spread to any situation where someone is upbeat about the future. Its opposite is *bearish*. In the article, the physicist can only say he cannot yet answer what his detector will reveal, while the medicine laureates can point to concrete uses, from studying depression to restoring sight, so they are allowed to sound more bullish.",
+      "examples": [
+        "Coach was bullish about our chances after we beat the league leaders.",
+        "I'm bullish on the new school app, since it fixed three problems in its first week."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The Nobel Prizes",
+      "articleQuote": "Most physics laureates must share the stage with a collaborator or rival.",
+      "meaning": "Why was it news that Francis Halzen will receive the physics prize alone? Because the Nobel rules make that rare. The prizes are paid for by the will of **Alfred Nobel**, a Swedish inventor and industrialist who made his fortune from dynamite, and they have been given since 1901 in physics, chemistry, physiology or medicine, literature and peace (economics was added later, by a bank). The three science prizes are decided in Stockholm: the Royal Swedish Academy of Sciences picks physics and chemistry, and a committee at the Karolinska Institute picks medicine. Announcements come in the first week of October, and the medals are handed over on 10 December, the anniversary of Nobel's death.\n\nTwo rules shape every story about them. First, a prize can be split among **at most three people**. Modern science is done by huge teams, such as the 450 researchers on IceCube, so the committee has to decide whom to credit, and someone often gets left out. That is the point of the article's remark that Gero Miesenböck and Edward Boyden may feel they were passed over for optogenetics. Second, the prizes are normally awarded to living people, and often decades after the discovery: the algae work behind this year's medicine prize began in the 1990s, and the chemistry breakthroughs date from 1986 and 2003. A Nobel is a verdict from history, not a prediction.\n\nSo when you read that someone \"won the Nobel\", ask two questions: who shared it, and who didn't?"
+    },
+    {
+      "name": "Genes and proteins",
+      "articleQuote": "Dr Nagel inserted the DNA of the two newly identified genes into some frogs’ eggs, which then turned out the desired proteins in quantities large enough to test.",
+      "meaning": "The biology that makes optogenetics possible is the link between genes and proteins. **Proteins** are the molecules that do most of the work in a living cell: they build structures, speed up chemical reactions, and sit in the cell's outer surface as channels, detectors and switches. A **gene** is a stretch of DNA that holds the instructions for making one particular protein. Inside a cell, molecular machinery copies the gene into a temporary strand called RNA, and a second machine reads that strand and links amino acids together in the listed order. The chain then folds into the finished protein.\n\nThe key discovery is that this machinery mostly doesn't care where a gene came from. Hand a frog's egg the DNA for an algal protein, and the egg's own machinery will build that algal protein. That is exactly what Nagel did: the algae's two light-sensitive genes went into frogs' eggs, which then produced the proteins in amounts big enough to test, and they turned out to be ion channels that open when light hits them. Later the same gene was put into hamster and human kidney cells, and then into neurons, which is how a neuron ended up with a light switch it never had before.\n\nThe takeaway: to give a cell a new ability, you don't have to rebuild the cell; you can often just add the gene and let its machinery make the protein."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why is the physics prize unusual this year, according to the article?",
+      "options": [
+        "It was awarded for work on something that cannot be detected",
+        "Francis Halzen will receive it alone, the first sole physics winner since 1992",
+        "It went to a team of 450 researchers",
+        "It was announced after the chemistry prize"
+      ],
+      "answerIndex": 1,
+      "explanation": "Most physics laureates share the prize; Halzen is the first since 1992 to be the only winner."
+    },
+    {
+      "question": "Why are neutrinos described as \"ideal messengers\" from distant, powerful sources?",
+      "options": [
+        "They are charged, so magnetic fields guide them straight to Earth",
+        "They are heavier than protons, so they carry more energy",
+        "They barely interact with matter and are not deflected by magnetic fields, so they arrive in a straight line from their source",
+        "They are only produced by the Sun, so they are easy to track"
+      ],
+      "answerIndex": 2,
+      "explanation": "Protons are charged and get bent by magnetic fields, hiding their origin, while neutral neutrinos travel unimpeded and point back to the source."
+    },
+    {
+      "question": "What did Peter Hegemann and Georg Nagel show about the two genes from the Chlamydomonas algae?",
+      "options": [
+        "They produced light-stimulated ion channels when put into other cells",
+        "They made frogs’ eggs grow into algae",
+        "They allowed neurons to make their own light",
+        "They stopped hamster cells from responding to light"
+      ],
+      "answerIndex": 0,
+      "explanation": "The genes made proteins that act as ion channels triggered by light, and these worked in frog eggs and in mammal cells."
+    },
+    {
+      "question": "The article says Henri Kagan \"refuted\" an assumption in 1986. What did he do?",
+      "options": [
+        "He agreed with it and repeated the experiment",
+        "He proved it wrong by showing a reaction could produce a bigger imbalance than its catalyst had",
+        "He found a way to ignore it",
+        "He pointed out it had not been tested"
+      ],
+      "answerIndex": 1,
+      "explanation": "To refute is to prove wrong; Kagan showed that a catalyst with a three-to-one imbalance could give a six-to-one imbalance in the products."
+    },
+    {
+      "question": "Why does the article say the Soai reaction is NOT how life’s chirality emerged?",
+      "options": [
+        "It produced no imbalance at all",
+        "It works only on sugars, not amino acids",
+        "The chemicals Dr Soai used could not have existed 4bn years ago",
+        "It was discovered after life began"
+      ],
+      "answerIndex": 2,
+      "explanation": "The reagents Soai used did not exist billions of years ago, but the work still showed that chirality could be created from non-chiral ingredients through self-amplification."
+    }
+  ]
+}
