@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-12",
+  "title": "America’s blockade is breaking Iran’s economy",
+  "articleUrl": "https://www.economist.com/middle-east-and-africa/2026/10/08/americas-blockade-is-breaking-irans-economy",
+  "articlePageUrl": "/articles/2026-10-12.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "porous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "POR-us",
+      "articleQuote": "America has imposed tight sanctions on Iran before, but they were always porous.",
+      "meaning": "Porous means full of tiny holes, so that liquid or air can seep through. A sponge and a coffee filter are porous; a plastic bottle is not. Writers use it figuratively for anything that is supposed to keep things out or in but leaks: a porous border lets people slip across, and porous sanctions let a country keep selling the goods the rules were meant to stop. In this article the point is that earlier American sanctions on Iran leaked, since Iran still found buyers for its oil, while the new blockade of its ports plugs the holes with warships.",
+      "examples": [
+        "The old tent was so porous that rain soaked our sleeping bags by midnight.",
+        "Because the school's rule about phones was porous, plenty of students still used them in class."
+      ]
+    },
+    {
+      "word": "galloping",
+      "partOfSpeech": "adjective",
+      "pronunciation": "GAL-up-ing",
+      "articleQuote": "Currency collapse has spurred galloping year-on-year inflation, which hit 90% in September.",
+      "meaning": "Galloping comes from the fastest gait of a horse, and as an adjective it means racing ahead at a speed that is hard to stop. Economists pair it with inflation to describe prices rising very fast, much faster than the gentle 2% a year that central banks aim for. It is a vivid warning: a galloping rider is close to losing control. Here, Iran's prices are up by roughly 90% in a year, so a basket of groceries that cost 100 a year ago now costs about 190.",
+      "examples": [
+        "The town's galloping growth meant a new house seemed to appear every week.",
+        "With galloping prices, the price of her favourite snack doubled in a year."
+      ]
+    },
+    {
+      "word": "inter alia",
+      "partOfSpeech": "adverb (Latin phrase)",
+      "pronunciation": "IN-ter AL-ee-uh",
+      "articleQuote": "Drug supplies, inter alia, will suffer.",
+      "meaning": "Inter alia is Latin for \"among other things\". A writer drops it in the middle of a sentence to say that the item just named is one of several, without listing the rest. It is common in formal writing, especially law, diplomacy and newspapers like The Economist. Here, drug supplies are named as one thing that will suffer from the ban on servicing Iranian airliners, while other suffering is left unsaid. Note that it points to a list, so it is not the same as the similar-looking *et cetera*, which comes at the end.",
+      "examples": [
+        "The mayor's plan will, inter alia, add bike lanes and plant a hundred trees.",
+        "The report criticised the company, inter alia, for hiding its losses."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Sanctions and blockades",
+      "articleQuote": "America now enforces sanctions at gunpoint: warships are blockading Iran’s ports, and they disabled or sank at least eight Iranian oil tankers last month.",
+      "meaning": "Why does the article say America's pressure on Iran is different this time? Because there are two very different tools here. **Sanctions** are economic penalties: a government forbids its own companies, banks and citizens from trading with a target country, and threatens to punish foreign firms that do. They work through the fear of being cut off from the American financial system, and that fear is strong but not total, since a determined buyer such as China can look for ways around it. That is why the article calls earlier sanctions \"porous\": even in 2020, at the height of \"maximum pressure\", Iran still sold more than 440,000 barrels of oil a day.\n\nA **blockade** is military. Warships sit outside a country's ports and stop ships from going in or out, which is an act that international law treats as close to war. It does not rely on anyone obeying a rule; it physically prevents the trade. That is what the article means by enforcing sanctions \"at gunpoint\": oil loadings in Iran fell to zero last month for the first time since 1979. Iran's ways around it, such as lorries at land borders, ships across the Caspian Sea or oil on trains, are slow and small. The article notes that matching one big tanker would take 2,800 rail tank cars.\n\nThe takeaway: sanctions make trade costly, while a blockade makes it nearly impossible, which is why the second one hurts so much faster. Whether it changes a government's behaviour is a separate question, and the article's subtitle says as much: it is breaking the economy, \"but not yet its regime\"."
+    },
+    {
+      "name": "Inflation and a falling currency",
+      "articleQuote": "The rial has crashed through one record low after another. It trades at around 2.7m to the dollar.",
+      "meaning": "Why would a country's money losing value make bread, eggs and medicine cost far more? Start with the **exchange rate**, the price of one currency in another. Iran's rial trades at about 2.7 million to a single dollar, and it has lost half its value this year. A weak currency makes anything bought from abroad cost more rials: if Iran must pay in dollars for imported medicine, wheat or machine parts, every dollar now takes twice as many rials as before.\n\nThat is how a falling currency becomes **inflation**, a general rise in prices across the economy. Importers raise their prices at once, and local producers who rely on imported inputs follow, and then everybody raises prices because they expect more rises to come. Iran's inflation hit 90% in September, with staples like cooking oil, eggs and rice up more than 200%. The victims are people whose incomes do not rise as quickly, such as the pensioners and nurses the article mentions: a salary worth $100 a month cannot buy what it once did.\n\nWhy not just fix it? A central bank can sell its stock of foreign currency to prop up its own money, as Iran's did with $2bn last month. But that stock is limited, and with oil sales falling to zero, almost no new dollars are coming in. Without them, the cushion runs out.\n\nThe takeaway: when a country earns fewer dollars, its currency weakens, imports get dearer, and ordinary prices climb."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, why is the current American pressure on Iran different from earlier sanctions?",
+      "options": [
+        "It bans only Iranian oil sold to China",
+        "Warships now blockade Iran’s ports, so sanctions are enforced physically",
+        "Iran agreed to end the sanctions in June",
+        "It affects only Iran’s airlines"
+      ],
+      "answerIndex": 1,
+      "explanation": "Earlier sanctions were porous, but now warships blockade Iran's ports and have disabled or sunk Iranian tankers."
+    },
+    {
+      "question": "What does the word \"porous\" suggest about America's earlier sanctions on Iran?",
+      "options": [
+        "They were strictly enforced",
+        "They leaked, since Iran could still sell large amounts of oil",
+        "They applied only to food and medicine",
+        "They had been written by Iran"
+      ],
+      "answerIndex": 1,
+      "explanation": "Porous means full of holes; even in 2020 Iran still sold more than 440,000 barrels a day."
+    },
+    {
+      "question": "How does the article show that Iran is still selling some oil to China despite no new shipments loading in September?",
+      "options": [
+        "It is drawing down oil already held in storage outside the blockade line",
+        "It is sending oil through the Strait of Hormuz",
+        "It is pumping oil from the Caspian Sea",
+        "It is buying oil from America"
+      ],
+      "answerIndex": 0,
+      "explanation": "Iran draws on a stockpile in seaborne storage, perhaps 10m barrels, which will probably run dry within weeks."
+    },
+    {
+      "question": "Why does a falling rial lead to higher prices in Iran?",
+      "options": [
+        "Imports cost more rials, and the rise spreads through the economy as inflation",
+        "The government prints fewer rials",
+        "Workers are paid more in dollars",
+        "China charges higher taxes"
+      ],
+      "answerIndex": 0,
+      "explanation": "A weaker currency makes imported goods dearer, and the price rises spread; inflation hit 90% in September."
+    },
+    {
+      "question": "What did Iran offer in the talks at the UN General Assembly, and what happened?",
+      "options": [
+        "To reopen the Strait of Hormuz within a week if America met conditions; Mr Trump refused",
+        "To end the war immediately without conditions; America accepted",
+        "To sell oil only to America; China objected",
+        "To let in weapons inspectors; Mr Trump delayed"
+      ],
+      "answerIndex": 0,
+      "explanation": "Mr Araghchi proposed an accelerated return to the June MOU, reopening Hormuz in seven days instead of 30, and Mr Trump refused."
+    }
+  ]
+}

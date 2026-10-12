@@ -1,0 +1,559 @@
+[
+  {
+    "k": "porous",
+    "t": "porous",
+    "kind": "vocab",
+    "pron": "POR-us",
+    "forms": [
+      "porous"
+    ],
+    "text": "Porous means full of tiny holes, so that things can leak through, like a sponge. Here it says earlier American sanctions leaked: Iran still found buyers for its oil despite the rules.",
+    "audio": true
+  },
+  {
+    "k": "galloping",
+    "t": "galloping",
+    "kind": "vocab",
+    "pron": "GAL-up-ing",
+    "forms": [
+      "galloping"
+    ],
+    "text": "Galloping comes from a horse's fastest run and describes something racing ahead, here prices rising so fast they are hard to stop. Inflation of 90% in a year is galloping indeed.",
+    "audio": true
+  },
+  {
+    "k": "inter-alia",
+    "t": "inter alia",
+    "kind": "vocab",
+    "pron": "IN-ter AL-ee-uh",
+    "forms": [
+      "inter alia"
+    ],
+    "text": "Inter alia is Latin for among other things. The writer names drug supplies as one thing that will suffer, while hinting that other things will too.",
+    "audio": true
+  },
+  {
+    "k": "blockade",
+    "t": "blockading",
+    "kind": "word",
+    "forms": [
+      "blockading",
+      "blockade"
+    ],
+    "text": "A blockade is when warships sit outside a country's ports to stop ships going in or out. Unlike sanctions, which rely on rules, it physically stops trade.",
+    "audio": true
+  },
+  {
+    "k": "sanctions",
+    "t": "sanctions",
+    "kind": "word",
+    "forms": [
+      "sanctions"
+    ],
+    "text": "Sanctions are penalties one government places on another country, usually by banning trade or banking with it. Here the plural noun covers the American campaign against Iran's economy.",
+    "audio": true
+  },
+  {
+    "k": "regime",
+    "t": "regime",
+    "kind": "word",
+    "forms": [
+      "regime"
+    ],
+    "text": "A regime is a government, especially one seen as authoritarian or not freely elected. The subtitle says the economy is breaking but the ruling system is not, at least yet.",
+    "audio": true
+  },
+  {
+    "k": "proverb",
+    "t": "proverb",
+    "kind": "word",
+    "forms": [
+      "proverb"
+    ],
+    "text": "A proverb is a short, well-known saying that states a piece of common wisdom. The central banker's chickens-and-autumn proverb means you should judge outcomes only at the end.",
+    "audio": true
+  },
+  {
+    "k": "chickens-are-counted",
+    "t": "chickens are counted at the end of autumn",
+    "kind": "phrase",
+    "forms": [
+      "chickens are counted at the end of autumn"
+    ],
+    "text": "This Persian proverb is much like the English saying don't count your chickens before they hatch. It means don't judge how things will turn out until they are over, and the official uses it to dismiss predictions of collapse.",
+    "audio": true
+  },
+  {
+    "k": "bombastic",
+    "t": "bombastic",
+    "kind": "word",
+    "forms": [
+      "bombastic"
+    ],
+    "text": "Bombastic describes speech that is grand, loud and full of big words, often with little behind it. Calling the security chief bombastic makes his gloomy warning more striking.",
+    "audio": true
+  },
+  {
+    "k": "imminent",
+    "t": "imminent",
+    "kind": "word",
+    "forms": [
+      "imminent"
+    ],
+    "text": "Imminent means about to happen very soon. The predictions said Iran's economy was on the brink of collapse.",
+    "audio": true
+  },
+  {
+    "k": "rial",
+    "t": "rial",
+    "kind": "name",
+    "forms": [
+      "rial"
+    ],
+    "text": "The rial is Iran's currency. At roughly 2.7 million to a dollar it is worth very little, which is why prices in rials are enormous.",
+    "audio": true
+  },
+  {
+    "k": "record-low",
+    "t": "record low",
+    "kind": "phrase",
+    "forms": [
+      "record low"
+    ],
+    "text": "A record low is the lowest level ever measured. The rial keeps breaking its own previous worst value.",
+    "audio": true
+  },
+  {
+    "k": "currency",
+    "t": "currency",
+    "kind": "word",
+    "forms": [
+      "currency"
+    ],
+    "text": "A currency is a country's money. Its value against other currencies, the exchange rate, sets what imports cost.",
+    "audio": true
+  },
+  {
+    "k": "inflation",
+    "t": "inflation",
+    "kind": "word",
+    "forms": [
+      "inflation"
+    ],
+    "text": "Inflation is a general rise in prices across an economy, which makes each unit of money buy less. In Iran it has reached 90% a year.",
+    "audio": true
+  },
+  {
+    "k": "highest-since-the-second-world-war",
+    "t": "highest since the second world war",
+    "kind": "phrase",
+    "forms": [
+      "highest since the second world war"
+    ],
+    "text": "This is a comparison with a long record: nothing in Iran's modern history has been worse for inflation in about eighty years.",
+    "audio": true
+  },
+  {
+    "k": "loadings",
+    "t": "loadings",
+    "kind": "word",
+    "forms": [
+      "loadings"
+    ],
+    "text": "Loadings are the amounts of oil put onto tankers for export. Zero loadings means no new oil left the country by sea.",
+    "audio": true
+  },
+  {
+    "k": "no-stranger",
+    "t": "no stranger to",
+    "kind": "phrase",
+    "forms": [
+      "no stranger to"
+    ],
+    "text": "To be no stranger to something means to be well used to it. Iran has seen economic crises before, but this one is worse.",
+    "audio": true
+  },
+  {
+    "k": "central-bank",
+    "t": "central bank",
+    "kind": "word",
+    "forms": [
+      "central bank",
+      "central-bank"
+    ],
+    "text": "A central bank is the institution that manages a country's money, interest rates and foreign currency reserves. Its governor is its top official.",
+    "audio": true
+  },
+  {
+    "k": "injected",
+    "t": "injected",
+    "kind": "word",
+    "forms": [
+      "injected"
+    ],
+    "text": "Injected here means put money into a market, as if with a syringe. The central bank sold dollars to prop up the rial.",
+    "audio": true
+  },
+  {
+    "k": "foreign-currency",
+    "t": "foreign currency",
+    "kind": "phrase",
+    "forms": [
+      "foreign currency"
+    ],
+    "text": "Foreign currency means other countries' money, such as dollars. A government that holds a stock of it can sell some to support its own currency.",
+    "audio": true
+  },
+  {
+    "k": "spurred",
+    "t": "spurred",
+    "kind": "word",
+    "forms": [
+      "spurred"
+    ],
+    "text": "To spur is to push something along, like a rider's spurs on a horse. The currency's collapse pushed inflation higher.",
+    "audio": true
+  },
+  {
+    "k": "staple",
+    "t": "staple",
+    "kind": "word",
+    "forms": [
+      "staple"
+    ],
+    "text": "A staple is a basic food or good that people buy all the time, like rice or cooking oil. Staples rising 200% hurts everyone.",
+    "audio": true
+  },
+  {
+    "k": "eroded",
+    "t": "eroded",
+    "kind": "word",
+    "forms": [
+      "eroded"
+    ],
+    "text": "Eroded means worn away gradually, as rock is by water. Rising prices have worn away the buying power of pensions.",
+    "audio": true
+  },
+  {
+    "k": "allowances",
+    "t": "allowances",
+    "kind": "word",
+    "forms": [
+      "allowances"
+    ],
+    "text": "Allowances are fixed payments given regularly, here pension payments. Inflation cut what they can buy.",
+    "audio": true
+  },
+  {
+    "k": "maximum-pressure",
+    "t": "maximum pressure",
+    "kind": "phrase",
+    "forms": [
+      "maximum pressure"
+    ],
+    "text": "Maximum pressure was the name of Mr Trump's first-term policy of very strict sanctions on Iran. The article uses it as a benchmark for how strict things used to be.",
+    "audio": true
+  },
+  {
+    "k": "at-gunpoint",
+    "t": "at gunpoint",
+    "kind": "phrase",
+    "forms": [
+      "at gunpoint"
+    ],
+    "text": "At gunpoint literally means with a gun pointed at you. Used figuratively, it means enforcing the rules by threat of force, here warships.",
+    "audio": true
+  },
+  {
+    "k": "tankers",
+    "t": "tankers",
+    "kind": "word",
+    "forms": [
+      "tankers",
+      "tanker"
+    ],
+    "text": "Tankers are large ships that carry oil. Disabling or sinking them stops the oil from reaching buyers.",
+    "audio": true
+  },
+  {
+    "k": "crude",
+    "t": "crude",
+    "kind": "word",
+    "forms": [
+      "crude"
+    ],
+    "text": "Crude is oil as it comes out of the ground, before refining into petrol and other fuels. Sense trap: crude can also mean rude.",
+    "audio": true
+  },
+  {
+    "k": "seaborne-storage",
+    "t": "seaborne storage",
+    "kind": "phrase",
+    "forms": [
+      "seaborne storage"
+    ],
+    "text": "Seaborne storage means oil kept on ships at sea instead of in tanks on land. Iran's remaining stock sits on tankers outside the blockade.",
+    "audio": true
+  },
+  {
+    "k": "stockpile",
+    "t": "stockpile",
+    "kind": "word",
+    "forms": [
+      "stockpile"
+    ],
+    "text": "A stockpile is a large reserve saved for later use. Iran's oil stockpile is shrinking fast.",
+    "audio": true
+  },
+  {
+    "k": "dwindling",
+    "t": "dwindling",
+    "kind": "word",
+    "forms": [
+      "dwindling"
+    ],
+    "text": "Dwindling means getting steadily smaller. The oil in storage is running down toward zero.",
+    "audio": true
+  },
+  {
+    "k": "kpler",
+    "t": "Kpler",
+    "kind": "name",
+    "forms": [
+      "Kpler"
+    ],
+    "text": "Kpler is a data firm that tracks ships and cargoes, so it can estimate how much oil is at sea.",
+    "audio": true
+  },
+  {
+    "k": "run-dry",
+    "t": "run dry",
+    "kind": "phrase",
+    "forms": [
+      "run dry"
+    ],
+    "text": "To run dry means to be used up completely, as a well does. Iran's storage oil will soon be gone.",
+    "audio": true
+  },
+  {
+    "k": "dive",
+    "t": "dived",
+    "kind": "word",
+    "forms": [
+      "dived"
+    ],
+    "text": "Dived here means fell sharply, like a diver dropping into water. Chinese purchases of Iranian goods fell dramatically.",
+    "audio": true
+  },
+  {
+    "k": "plastics-pistachios",
+    "t": "pistachios",
+    "kind": "word",
+    "forms": [
+      "pistachios"
+    ],
+    "text": "Pistachios are green nuts, and Iran is a major grower. Even this traditional export has collapsed.",
+    "audio": true
+  },
+  {
+    "k": "redirect",
+    "t": "redirect",
+    "kind": "word",
+    "forms": [
+      "redirect"
+    ],
+    "text": "To redirect is to send something along a different route. Iran tries to move trade overland and across the Caspian Sea.",
+    "audio": true
+  },
+  {
+    "k": "caspian-sea",
+    "t": "Caspian Sea",
+    "kind": "name",
+    "forms": [
+      "Caspian Sea"
+    ],
+    "text": "The Caspian Sea is a huge inland sea north of Iran, bordered by Russia and Central Asian countries. It offers Iran a link that avoids the Gulf.",
+    "audio": true
+  },
+  {
+    "k": "trickle",
+    "t": "trickle",
+    "kind": "word",
+    "forms": [
+      "trickle"
+    ],
+    "text": "A trickle is a very small, slow flow, like water from a nearly closed tap. Rail oil exports will be tiny next to ship exports.",
+    "audio": true
+  },
+  {
+    "k": "rail-tank-cars",
+    "t": "rail tank cars",
+    "kind": "phrase",
+    "forms": [
+      "rail tank cars"
+    ],
+    "text": "Rail tank cars are train wagons built to carry liquids such as oil. Thousands would be needed to match one big ship.",
+    "audio": true
+  },
+  {
+    "k": "airliners",
+    "t": "airliners",
+    "kind": "word",
+    "forms": [
+      "airliners"
+    ],
+    "text": "Airliners are large passenger planes. Sanctions on firms that refuel or service them make it hard for Iranian planes to fly.",
+    "audio": true
+  },
+  {
+    "k": "inter-alia-suffer",
+    "t": "suffer",
+    "kind": "word",
+    "forms": [
+      "suffer"
+    ],
+    "text": "To suffer here means to be harmed or run short. Medicines are one of the things that will be hit.",
+    "audio": true
+  },
+  {
+    "k": "think-tank",
+    "t": "think-tank",
+    "kind": "word",
+    "forms": [
+      "think-tank"
+    ],
+    "text": "A think-tank is an organisation of researchers who study and advise on public issues.",
+    "audio": true
+  },
+  {
+    "k": "pharmacists-union",
+    "t": "pharmacists’ union",
+    "kind": "phrase",
+    "forms": [
+      "pharmacists’ union"
+    ],
+    "text": "A pharmacists' union is an association that represents people who dispense medicines. It reports drug prices rising 150%.",
+    "audio": true
+  },
+  {
+    "k": "on-their-own-terms",
+    "t": "on their own terms",
+    "kind": "phrase",
+    "forms": [
+      "on their own terms"
+    ],
+    "text": "On your own terms means under conditions you choose. Iran wants to end the pressure without giving up its key demands.",
+    "audio": true
+  },
+  {
+    "k": "indirect-talks",
+    "t": "indirect talks",
+    "kind": "phrase",
+    "forms": [
+      "indirect talks"
+    ],
+    "text": "Indirect talks are negotiations where the sides do not meet face to face but pass messages through others.",
+    "audio": true
+  },
+  {
+    "k": "memorandum-of-understanding",
+    "t": "memorandum of understanding",
+    "kind": "phrase",
+    "forms": [
+      "memorandum of understanding"
+    ],
+    "text": "A memorandum of understanding, or MOU, is a written agreement that is less formal than a treaty. This one, signed in June, lasted only briefly.",
+    "audio": true
+  },
+  {
+    "k": "strait-of-hormuz",
+    "t": "Strait of Hormuz",
+    "kind": "name",
+    "forms": [
+      "Strait of Hormuz",
+      "Hormuz"
+    ],
+    "text": "The Strait of Hormuz is the narrow waterway between Iran and Oman through which a large share of the world's oil ships pass. Whoever controls it can squeeze world energy supplies.",
+    "audio": true
+  },
+  {
+    "k": "compressed",
+    "t": "compressed",
+    "kind": "word",
+    "forms": [
+      "compressed"
+    ],
+    "text": "Compressed means squeezed into less space or time. The offer shortened the 30-day timetable to seven days.",
+    "audio": true
+  },
+  {
+    "k": "going-through-the-motions",
+    "t": "going through the motions",
+    "kind": "phrase",
+    "forms": [
+      "going through the motions"
+    ],
+    "text": "To go through the motions means to do something without sincerely meaning it. Some diplomats thought Iran's offer was only for show.",
+    "audio": true
+  },
+  {
+    "k": "envoy",
+    "t": "envoy",
+    "kind": "word",
+    "forms": [
+      "envoy"
+    ],
+    "text": "An envoy is a diplomat sent to represent a government. The Arab envoy here is speaking for his own country.",
+    "audio": true
+  },
+  {
+    "k": "cover",
+    "t": "cover",
+    "kind": "word",
+    "forms": [
+      "cover"
+    ],
+    "text": "Cover here means an excuse or protection that lets someone act without being blamed. Offering a deal that is refused gives Iran cover to escalate.",
+    "audio": true
+  },
+  {
+    "k": "escalate",
+    "t": "escalate",
+    "kind": "word",
+    "forms": [
+      "escalate"
+    ],
+    "text": "To escalate is to make a conflict bigger or more intense.",
+    "audio": true
+  },
+  {
+    "k": "stalemate",
+    "t": "stalemate",
+    "kind": "word",
+    "forms": [
+      "stalemate"
+    ],
+    "text": "A stalemate is a deadlock in which neither side can win or move forward. The word comes from chess.",
+    "audio": true
+  },
+  {
+    "k": "midterms",
+    "t": "midterms",
+    "kind": "name",
+    "forms": [
+      "midterms"
+    ],
+    "text": "The midterms are American elections held halfway through a president's four-year term, in which Congress is chosen. They shape what a president can risk until they are over.",
+    "audio": true
+  },
+  {
+    "k": "apt",
+    "t": "apt",
+    "kind": "word",
+    "forms": [
+      "apt"
+    ],
+    "text": "Apt means fitting or well suited to the situation. The writer suggests the proverb about counting chickens may turn out to suit events.",
+    "audio": true
+  }
+]
