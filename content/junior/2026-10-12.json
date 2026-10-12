@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-12",
+  "title": "Professional sumo-wrestling comes to America",
+  "articleUrl": "https://www.economist.com/united-states/2026/10/09/professional-sumo-wrestling-comes-to-america",
+  "articlePageUrl": "/articles/junior/2026-10-12.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "giddy",
+      "partOfSpeech": "adjective",
+      "pronunciation": "GID-ee",
+      "articleQuote": "“It’s going to catch a wave,” he predicts, almost giddy.",
+      "meaning": "Giddy means so excited or happy that you feel light-headed and silly. Think of how you feel the night before a big trip, or when your team scores in the last second. A giddy person might laugh too much, talk too fast, or bounce around. The word can also mean dizzy, like after spinning in circles. In the article, the man behind the new sumo league is giddy because he is so sure his big idea will be a hit.",
+      "examples": [
+        "My sister was giddy the whole morning before her birthday party.",
+        "The giddy kids could not stop giggling when the snow day was announced."
+      ]
+    },
+    {
+      "word": "solace",
+      "partOfSpeech": "noun",
+      "pronunciation": "SOL-iss",
+      "articleQuote": "he found solace in American football",
+      "meaning": "Solace is comfort you find when you are sad, lonely, or stressed. A hug from a friend, a favourite song, or a long walk with your dog can all give you solace. It does not fix the problem, but it makes the hurt feel lighter. In the article, a wrestler who kept moving from city to city as a child found solace in football: the game was the same everywhere, so it felt like a steady, familiar place.",
+      "examples": [
+        "After losing the game, Mia found solace in a bowl of ice cream and her brother's jokes.",
+        "The new student found solace in the library, where it was quiet and calm."
+      ]
+    },
+    {
+      "word": "prowess",
+      "partOfSpeech": "noun",
+      "pronunciation": "PROW-iss",
+      "articleQuote": "Contestants were chosen not just for their grappling prowess",
+      "meaning": "Prowess means great skill at something, usually earned by lots of practice. A soccer player with amazing footwork shows prowess on the field, and a chess champion shows prowess at the board. The word is a bit formal, so you will often meet it in news stories and books. In the article, the sumo wrestlers were picked partly for their prowess at grappling, which means gripping and wrestling an opponent, but also for how fun they are on camera.",
+      "examples": [
+        "Everyone admired her prowess on the basketball court.",
+        "The chef's prowess in the kitchen meant every dinner was delicious."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Round-robin",
+      "articleQuote": "Fifty-seven wrestlers will compete in round-robin bouts until a winner is crowned",
+      "meaning": "Imagine your class holds a four-square or ping-pong tournament. There are two common ways to run it. In a **knockout** tournament, you lose once and you are out. In a **round-robin** tournament, everyone plays everyone else, and nobody is sent home after one loss. At the end, you count up the wins, and the player with the most wins is the champion.\n\nSuppose four friends, Ana, Ben, Cy and Dee, play a round-robin. Ana plays Ben, Cy and Dee. Ben plays Cy and Dee. Cy plays Dee. That is six games in all, and every player gets three games. Even if Ana loses her first game, she can still win the whole thing by winning her next two.\n\nWhy choose this format? It is fairer, because one unlucky match cannot wreck your whole day, and every player gets to compete more. The price is time: the more players you add, the more games you need, and the number grows very fast. That is why big events often use a round-robin first and then switch to knockout rounds. In the article, the new sumo league uses round-robin bouts so all the wrestlers get to fight before a winner is crowned."
+    },
+    {
+      "name": "Going viral",
+      "articleQuote": "After Mr Snyder saw cornhole and pillow-fighting go viral online",
+      "meaning": "A virus spreads from one person to the next, and soon lots of people have it. When a video, photo or joke **goes viral**, it spreads the same way: one person shares it with friends, those friends share it with theirs, and within days millions of people have seen it. Nobody has to pay for an ad. The sharing does the work.\n\nPicture a kid who films a funny trick shot with a paper ball and a trash can. A few classmates laugh and send it on. Then their cousins send it on, and strangers on the other side of the country send it to their friends. A week later, the kid's trick shot is on the news.\n\nThings go viral because they are quick to understand, surprising or funny, and easy to share with one tap. Companies love it, because a viral hit can make a product famous overnight. But it is hard to plan: lots of people try to make something viral, and most things never do. In the article, a businessman noticed that odd games like cornhole and pillow-fighting had become popular online, and he bet that sumo could be the next one."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the Sumo Championship League doing on October 10th?",
+      "options": [
+        "Closing its last gym in Georgia",
+        "Holding its first match in America, in Austin, Texas",
+        "Moving sumo to the Olympics",
+        "Teaching children to wrestle"
+      ],
+      "answerIndex": 1,
+      "explanation": "The league's debut match is in Austin, Texas, the first of its kind on this side of the Pacific."
+    },
+    {
+      "question": "In a round-robin tournament, how are the wrestlers matched up?",
+      "options": [
+        "You are out after your first loss",
+        "Only the heaviest wrestlers compete",
+        "Every wrestler faces the others, and the most wins takes the title",
+        "The crowd votes on who fights"
+      ],
+      "answerIndex": 2,
+      "explanation": "In a round-robin, everyone plays everyone, nobody is knocked out by one loss, and wins are counted at the end."
+    },
+    {
+      "question": "“It’s going to catch a wave,” he predicts, almost giddy. What does giddy mean here?",
+      "options": [
+        "Bored and sleepy",
+        "Angry and tense",
+        "So excited that he feels light-headed and silly",
+        "Afraid and nervous"
+      ],
+      "answerIndex": 2,
+      "explanation": "Giddy means very excited and a little silly with it. Stuart Snyder is thrilled about his plan."
+    },
+    {
+      "question": "Why did Stuart Snyder think American sumo would be a hit?",
+      "options": [
+        "He saw cornhole and pillow-fighting go viral and thought fringe sports were having a moment",
+        "Sumo is already the most popular sport in America",
+        "Schools were asking for it",
+        "It is cheaper than football"
+      ],
+      "answerIndex": 0,
+      "explanation": "He noticed that unusual games were spreading online, which is going viral, and bet that sumo could be next."
+    },
+    {
+      "question": "Dominus Davis-Williams moved from city to city as a child. What does it mean that he “found solace” in American football?",
+      "options": [
+        "He earned money from it",
+        "He found comfort in something familiar and steady",
+        "He grew bored of it",
+        "He wanted to beat his friends"
+      ],
+      "answerIndex": 1,
+      "explanation": "Solace is comfort. Football felt the same everywhere, which helped him feel at home."
+    }
+  ]
+}
