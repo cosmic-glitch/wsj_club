@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-13",
+  "title": "Conservationists are building highways for bugs",
+  "articleUrl": "https://www.economist.com/britain/2026/10/08/conservationists-are-building-highways-for-bugs",
+  "articlePageUrl": "/articles/junior/2026-10-13.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "scarce",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SKAIRSS",
+      "articleQuote": "Meadows like Cowslip are scarce.",
+      "meaning": "Scarce means hard to find because there is not much of something. Think of the last cookie on the plate, or a parking spot near the school on a rainy morning. When something is scarce, people notice it and often try to protect it. In the article, flower-filled meadows are scarce because most of them in Britain have been turned into other kinds of fields, so the few left are very precious.",
+      "examples": [
+        "Water was scarce on the long hike, so we sipped it slowly.",
+        "Good seats were scarce at the packed game."
+      ]
+    },
+    {
+      "word": "parched",
+      "partOfSpeech": "adjective",
+      "pronunciation": "PARCHT",
+      "articleQuote": "the patch of yellowish grass could be any other parched field in Surrey",
+      "meaning": "Parched means very dry, usually because there has been no rain. A field can be parched, and so can your throat after a hard soccer game. A parched field often turns yellow or brown, and the ground may crack. In the article, the meadow looks like an ordinary parched field, with dry yellowish grass, even though it is actually full of rare life.",
+      "examples": [
+        "The parched grass crunched under our shoes.",
+        "After running laps, I was so parched that I drank a whole bottle of water."
+      ]
+    },
+    {
+      "word": "fragmented",
+      "partOfSpeech": "adjective",
+      "pronunciation": "FRAG-men-tid",
+      "articleQuote": "When habitats are fragmented",
+      "meaning": "Fragmented means broken into small pieces that are separated from each other. If you drop a plate, it becomes fragmented. A big forest cut up by roads and farms is fragmented too: instead of one large home for animals, there are small islands of trees with gaps between them. In the article, fragmented habitats trap insects in small patches, because they cannot get across the gaps to find food and mates.",
+      "examples": [
+        "The puzzle was fragmented across the floor after the box tipped over.",
+        "Her memory of the dream was fragmented, just a few pieces here and there."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Pollination",
+      "articleQuote": "Insects pollinate plants, break down dung and keep pests at bay.",
+      "meaning": "Most plants with flowers need a little help to make seeds and fruit. Inside a flower is a fine yellow dust called **pollen**. To make a seed, pollen from one flower has to travel to another flower of the same kind. That trip is called **pollination**.\n\nPlants cannot walk, so they hire helpers. A bee lands on a flower to drink sweet nectar, and some pollen sticks to its furry body. When the bee flies to the next flower, the pollen rubs off, and a seed can start to grow. The bee gets a meal and the plant gets its delivery. Butterflies, moths, beetles and flies do the same job.\n\nThis matters for your lunch. Apples, strawberries, pumpkins, almonds and many other foods only grow well when insects visit the flowers. If there are fewer insects, there is less fruit. In the article, farmers suffer when insects disappear because the crops lose their pollinators."
+    },
+    {
+      "name": "Monoculture",
+      "articleQuote": "Most has been turned into a protein-rich grass monoculture",
+      "meaning": "**Mono** means one, and **culture** here means growing. A monoculture is a field where only one kind of plant grows, over and over, across a huge area.\n\nImagine two gardens. In the first, there are tomatoes, sunflowers, herbs, clover and wildflowers. In the second, there are only rows of one kind of grass. The first garden gives bees nectar from spring to autumn, gives beetles places to hide, and gives birds lots to eat. The second garden might be very useful for feeding cows, but for most insects it is like a huge table with only one dish, and not one they can eat.\n\nFarmers like monocultures because one crop is easy to plant, care for and harvest with big machines. The cost is that the land supports far fewer kinds of living things. In the article, most of Britain's flowery meadows were turned into one kind of grass for fattening livestock, and that is a big reason insects lost their homes."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What are \"B-lines\" in the article?",
+      "options": [
+        "Lines of bees waiting at a flower shop",
+        "Imaginary paths across the country filled with flowers, like highways for insects",
+        "Fences built around meadows to keep insects out",
+        "Roads built for farm trucks"
+      ],
+      "answerIndex": 1,
+      "explanation": "B-lines are planned routes of flowers and grasses that let pollinating insects travel between habitats."
+    },
+    {
+      "question": "Why has Britain lost so much of its species-rich grassland?",
+      "options": [
+        "Most was turned into a monoculture of grass for fattening livestock",
+        "It was covered by new lakes",
+        "Kestrels ate all the flowers",
+        "Visitors picked all the flowers"
+      ],
+      "answerIndex": 0,
+      "explanation": "More than 97% has vanished since the 1930s, mostly replaced by one kind of grass that is good for livestock but bad for insects."
+    },
+    {
+      "question": "\"Meadows like Cowslip are scarce.\" What does scarce mean here?",
+      "options": [
+        "Frightening",
+        "Very large",
+        "Hard to find because there are few of them",
+        "Noisy"
+      ],
+      "answerIndex": 2,
+      "explanation": "Scarce means there is not much of something. Few of these meadows are left."
+    },
+    {
+      "question": "Why does the article say the loss of insects is bad for farmers?",
+      "options": [
+        "Insects pay farmers to keep them",
+        "Insects pollinate plants and help keep pests under control",
+        "Insects make tractors run better",
+        "Farmers need insects to sell"
+      ],
+      "answerIndex": 1,
+      "explanation": "Insects carry pollen between flowers, break down dung and keep pests away, so fewer insects make growing food harder."
+    },
+    {
+      "question": "Why is it a problem when habitats are fragmented?",
+      "options": [
+        "Insects get too many places to live",
+        "Plants grow too fast",
+        "Insects cannot move between small patches to escape bad conditions and survive",
+        "Satellites cannot take pictures"
+      ],
+      "answerIndex": 2,
+      "explanation": "Small separated patches trap insects. If conditions get bad, they cannot leave, which the charity calls a spiral of doom."
+    }
+  ]
+}
