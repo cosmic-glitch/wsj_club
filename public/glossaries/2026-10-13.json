@@ -1,0 +1,590 @@
+[
+  {
+    "k": "detractors",
+    "t": "detractors",
+    "kind": "vocab",
+    "pron": "dih-TRAK-turz",
+    "forms": [
+      "detractors"
+    ],
+    "text": "A detractor is someone who criticises a person or idea, trying to take away some of its credit. Here the article has praised the Nobel winners and now turns to economists who see real flaws in their theories.",
+    "audio": true
+  },
+  {
+    "k": "assailed",
+    "t": "assailed",
+    "kind": "vocab",
+    "pron": "uh-SAYLD",
+    "forms": [
+      "assailed"
+    ],
+    "text": "To assail is to attack forcefully, whether with blows, words, or a flood of problems. Here the central-banking approach is battered by events like wars and a pandemic that it was not built for.",
+    "audio": true
+  },
+  {
+    "k": "lucrative",
+    "t": "lucrative",
+    "kind": "vocab",
+    "pron": "LOO-kruh-tiv",
+    "forms": [
+      "lucrative"
+    ],
+    "text": "Lucrative means bringing in a lot of money. The joke is that winning a Nobel hints the winner will soon be well paid to give talks.",
+    "audio": true
+  },
+  {
+    "k": "keel",
+    "t": "even keel",
+    "kind": "phrase",
+    "forms": [
+      "even keel"
+    ],
+    "text": "A keel is the beam along the bottom of a ship that keeps it upright, so to be on an even keel is to be steady and balanced. The headline uses it for an economy kept steady instead of lurching between boom and bust.",
+    "audio": true
+  },
+  {
+    "k": "keynesians",
+    "t": "Keynesians",
+    "kind": "name",
+    "forms": [
+      "Keynesians",
+      "Keynesian"
+    ],
+    "text": "Followers of the British economist John Maynard Keynes, who argued that governments can manage the overall level of demand to prevent mass unemployment.",
+    "audio": true
+  },
+  {
+    "k": "monetarists",
+    "t": "monetarists",
+    "kind": "name",
+    "forms": [
+      "monetarists"
+    ],
+    "text": "Economists led by Milton Friedman who believed the best way to keep the economy stable is to control the amount of money in circulation.",
+    "audio": true
+  },
+  {
+    "k": "new-keynesians",
+    "t": "New Keynesians",
+    "kind": "name",
+    "forms": [
+      "New Keynesians",
+      "New Keynesian"
+    ],
+    "text": "A modern school that keeps Keynes' idea that the economy can get stuck, but builds its models from the choices of individual people and firms. Most central bankers belong to this camp today.",
+    "audio": true
+  },
+  {
+    "k": "demand",
+    "t": "demand",
+    "kind": "word",
+    "forms": [
+      "demand"
+    ],
+    "text": "In economics, demand is the total amount of goods and services people and firms want to buy. Keynesians thought governments could steer it to avoid slumps.",
+    "audio": true
+  },
+  {
+    "k": "slump",
+    "t": "slump",
+    "kind": "word",
+    "forms": [
+      "slump"
+    ],
+    "text": "A slump is a long period when the economy shrinks and many people lose jobs. The Great Depression of the 1930s was the worst example.",
+    "audio": true
+  },
+  {
+    "k": "money-supply",
+    "t": "money supply",
+    "kind": "name",
+    "forms": [
+      "money supply"
+    ],
+    "text": "The total amount of money circulating in an economy. Monetarists believed that fixing its growth would keep prices stable.",
+    "audio": true
+  },
+  {
+    "k": "boost",
+    "t": "boost",
+    "kind": "word",
+    "forms": [
+      "boost"
+    ],
+    "text": "To boost something is to push it up. Here it means trying to raise employment, which monetarists said would end up causing rising prices.",
+    "audio": true
+  },
+  {
+    "k": "great-inflation",
+    "t": "Great Inflation",
+    "kind": "name",
+    "forms": [
+      "Great Inflation"
+    ],
+    "text": "The period in the 1970s when prices rose year after year, which economists blame partly on governments pushing too hard to keep jobs growing.",
+    "audio": true
+  },
+  {
+    "k": "central-bankers",
+    "t": "central bankers",
+    "kind": "word",
+    "forms": [
+      "central bankers"
+    ],
+    "text": "The officials who run a country's central bank, such as the US Federal Reserve. Their main tool is setting interest rates to keep prices and jobs steady.",
+    "audio": true
+  },
+  {
+    "k": "top-gong",
+    "t": "top gong",
+    "kind": "word",
+    "forms": [
+      "top gong"
+    ],
+    "text": "Gong is British slang for a medal or award, so the top gong in economics is its highest honour.",
+    "audio": true
+  },
+  {
+    "k": "skr",
+    "t": "SKr12m",
+    "kind": "name",
+    "forms": [
+      "SKr12m"
+    ],
+    "text": "SKr stands for Swedish kronor, the currency of Sweden, where the Nobel prizes are decided. 12m means 12 million, worth about $1.2 million.",
+    "audio": true
+  },
+  {
+    "k": "shared",
+    "t": "shared",
+    "kind": "word",
+    "forms": [
+      "shared"
+    ],
+    "text": "Nobel economics prizes are often split. Here the money and glory go to both Hall and Woodford.",
+    "audio": true
+  },
+  {
+    "k": "microfoundations",
+    "t": "microfoundations",
+    "kind": "name",
+    "forms": [
+      "microfoundations"
+    ],
+    "text": "Building models of the whole economy from the choices of individual consumers and firms, rather than from big statistics alone.",
+    "audio": true
+  },
+  {
+    "k": "macroeconomics",
+    "t": "macroeconomics",
+    "kind": "word",
+    "forms": [
+      "macroeconomics"
+    ],
+    "text": "The study of the economy as a whole, including total spending, inflation and unemployment, as opposed to single households or firms.",
+    "audio": true
+  },
+  {
+    "k": "aggregates",
+    "t": "aggregates",
+    "kind": "word",
+    "forms": [
+      "aggregates"
+    ],
+    "text": "Aggregates are totals formed by adding up many small parts, such as total spending or total money. Older models linked these big totals directly to each other.",
+    "audio": true
+  },
+  {
+    "k": "top-down",
+    "t": "top-down",
+    "kind": "word",
+    "forms": [
+      "top-down"
+    ],
+    "text": "Starting from the big picture and working toward the details. The older models looked at economy-wide statistics first, the opposite of bottom-up.",
+    "audio": true
+  },
+  {
+    "k": "bottom-up",
+    "t": "bottom-up",
+    "kind": "word",
+    "forms": [
+      "bottom-up"
+    ],
+    "text": "Starting from the smallest parts, here individual decisions, and adding them up. This is how the Nobel winners built their models.",
+    "audio": true
+  },
+  {
+    "k": "critique",
+    "t": "critique",
+    "kind": "word",
+    "forms": [
+      "critique"
+    ],
+    "text": "A careful criticism. Robert Lucas argued that models not based on the deep features of an economy would mislead policymakers.",
+    "audio": true
+  },
+  {
+    "k": "policymakers",
+    "t": "policymakers",
+    "kind": "word",
+    "forms": [
+      "policymakers"
+    ],
+    "text": "The officials, such as central bankers and government ministers, who decide economic policy.",
+    "audio": true
+  },
+  {
+    "k": "windfall",
+    "t": "windfall",
+    "kind": "word",
+    "forms": [
+      "windfall"
+    ],
+    "text": "Money that arrives suddenly and unexpectedly, such as a prize or an inheritance. The word first meant fruit blown off a tree by wind.",
+    "audio": true
+  },
+  {
+    "k": "lifetime-spending-power",
+    "t": "lifetime spending power",
+    "kind": "phrase",
+    "forms": [
+      "lifetime spending power"
+    ],
+    "text": "The total amount a person can expect to spend over their whole life, based on all their future earnings. Hall's consumers adjust their spending only when this changes.",
+    "audio": true
+  },
+  {
+    "k": "smooth",
+    "t": "smooth",
+    "kind": "word",
+    "forms": [
+      "smooth"
+    ],
+    "text": "Here, to smooth spending is to keep it steady over time instead of splurging when money arrives and cutting back when it does not.",
+    "audio": true
+  },
+  {
+    "k": "drunk",
+    "t": "drunk walking home",
+    "kind": "phrase",
+    "forms": [
+      "a drunk walking home"
+    ],
+    "text": "A vivid picture of a random walk: the person stumbles left and right unpredictably but still heads in one general direction, just like a sensible person's spending.",
+    "audio": true
+  },
+  {
+    "k": "hither-and-thither",
+    "t": "hither and thither",
+    "kind": "phrase",
+    "forms": [
+      "hither and thither"
+    ],
+    "text": "An old-fashioned phrase meaning here and there, in all directions without a plan.",
+    "audio": true
+  },
+  {
+    "k": "shocks",
+    "t": "shocks",
+    "kind": "word",
+    "forms": [
+      "shocks",
+      "shock"
+    ],
+    "text": "In economics, a shock is a sudden unexpected event, such as a war or pandemic, that knocks the economy off course.",
+    "audio": true
+  },
+  {
+    "k": "wicksell",
+    "t": "Knut Wicksell",
+    "kind": "name",
+    "forms": [
+      "Knut Wicksell",
+      "Wicksell"
+    ],
+    "text": "A Swedish economist around 1900 who argued that interest rates should match a natural rate of return on investment.",
+    "audio": true
+  },
+  {
+    "k": "neo-wicksellian",
+    "t": "neo-Wicksellian",
+    "kind": "name",
+    "forms": [
+      "neo-Wicksellian"
+    ],
+    "text": "Neo means new, so a new version of Wicksell's ideas. It is the name Michael Woodford preferred for his theories.",
+    "audio": true
+  },
+  {
+    "k": "pure-credit-economy",
+    "t": "pure credit economy",
+    "kind": "name",
+    "forms": [
+      "pure credit economy"
+    ],
+    "text": "A model in which all money is created when banks make loans, with no cash or gold behind it.",
+    "audio": true
+  },
+  {
+    "k": "natural-rate",
+    "t": "natural rate",
+    "kind": "name",
+    "forms": [
+      "natural rate",
+      "neutral rate"
+    ],
+    "text": "The interest rate at which the economy neither overheats nor sinks, set by things like technology and how patient savers are rather than by central banks.",
+    "audio": true
+  },
+  {
+    "k": "fine-tune",
+    "t": "fine-tune",
+    "kind": "word",
+    "forms": [
+      "fine-tune"
+    ],
+    "text": "To make small adjustments to get something exactly right, like tuning a radio. The article says central banks should not try to do this with the economy.",
+    "audio": true
+  },
+  {
+    "k": "technological-progress",
+    "t": "technological progress",
+    "kind": "word",
+    "forms": [
+      "technological progress"
+    ],
+    "text": "New inventions and methods that make businesses more productive and investment more rewarding, which pushes the natural rate up.",
+    "audio": true
+  },
+  {
+    "k": "bible",
+    "t": "bible",
+    "kind": "word",
+    "forms": [
+      "bible"
+    ],
+    "text": "Used figuratively, a bible is the book everyone in a field treats as the authority.",
+    "audio": true
+  },
+  {
+    "k": "sticky-prices",
+    "t": "sticky prices",
+    "kind": "name",
+    "forms": [
+      "sticky prices"
+    ],
+    "text": "The idea that businesses do not change their prices often, so prices adjust slowly and the economy can get out of balance.",
+    "audio": true
+  },
+  {
+    "k": "imperfect-competition",
+    "t": "imperfect competition",
+    "kind": "name",
+    "forms": [
+      "imperfect competition"
+    ],
+    "text": "A market where firms have some power to choose their prices rather than taking the going price. It is what makes sticky prices possible.",
+    "audio": true
+  },
+  {
+    "k": "great-moderation",
+    "t": "Great Moderation",
+    "kind": "name",
+    "forms": [
+      "Great Moderation"
+    ],
+    "text": "The stretch from the mid-1980s to 2008 when inflation was low, growth steady, and the economy less jumpy.",
+    "audio": true
+  },
+  {
+    "k": "volatility",
+    "t": "volatility",
+    "kind": "word",
+    "forms": [
+      "volatility"
+    ],
+    "text": "How much something jumps up and down. A volatile economy has big swings in growth and prices.",
+    "audio": true
+  },
+  {
+    "k": "quipped",
+    "t": "quipped",
+    "kind": "word",
+    "forms": [
+      "quipped"
+    ],
+    "text": "Made a short, clever remark. Jerome Powell joked that central bankers can only know the neutral rate by its effects.",
+    "audio": true
+  },
+  {
+    "k": "works",
+    "t": "know it by its works",
+    "kind": "phrase",
+    "forms": [
+      "know it by its works"
+    ],
+    "text": "A saying meaning you recognise something by what it does, not by seeing it directly, like knowing the wind by the moving trees.",
+    "audio": true
+  },
+  {
+    "k": "risky-bets",
+    "t": "risky bets",
+    "kind": "word",
+    "forms": [
+      "risky bets"
+    ],
+    "text": "Investments that could lose money. The article says the Nobel winners' models leave out how interest rates change investors' appetite for these.",
+    "audio": true
+  },
+  {
+    "k": "financial-crisis",
+    "t": "2008 financial crisis",
+    "kind": "name",
+    "forms": [
+      "2008 financial crisis"
+    ],
+    "text": "The collapse of major banks and markets that began in 2008 and caused a deep global recession, ending the Great Moderation.",
+    "audio": true
+  },
+  {
+    "k": "squirrelled-away",
+    "t": "squirrelled away",
+    "kind": "phrase",
+    "forms": [
+      "squirrelled away"
+    ],
+    "text": "Saved and hidden for later, like a squirrel storing nuts for winter.",
+    "audio": true
+  },
+  {
+    "k": "rainy-day",
+    "t": "rainy day",
+    "kind": "phrase",
+    "forms": [
+      "rainy day"
+    ],
+    "text": "Saving for a rainy day means putting money aside for a future time of need.",
+    "audio": true
+  },
+  {
+    "k": "stimulus",
+    "t": "stimulus cheques",
+    "kind": "name",
+    "forms": [
+      "stimulus cheques"
+    ],
+    "text": "Payments sent by the government to households during the Covid pandemic to keep spending going. Cheque is the British spelling of check.",
+    "audio": true
+  },
+  {
+    "k": "presage",
+    "t": "presage",
+    "kind": "word",
+    "forms": [
+      "presage"
+    ],
+    "text": "To be a sign of something that is going to happen, a warning or promise of the future.",
+    "audio": true
+  },
+  {
+    "k": "gigs",
+    "t": "gigs",
+    "kind": "word",
+    "forms": [
+      "gigs"
+    ],
+    "text": "Short jobs or one-off engagements, originally for musicians but now used for any temporary paid work.",
+    "audio": true
+  },
+  {
+    "k": "signal-noise",
+    "t": "signal from the noise",
+    "kind": "phrase",
+    "forms": [
+      "signal from the noise"
+    ],
+    "text": "Signal is useful information; noise is random clutter. Telling real trends from chance events is hard, even for Nobel winners.",
+    "audio": true
+  },
+  {
+    "k": "reaction-function",
+    "t": "reaction function",
+    "kind": "name",
+    "forms": [
+      "reaction function"
+    ],
+    "text": "A central bank's rule of thumb for how it will change interest rates in response to events such as a boom or a recession.",
+    "audio": true
+  },
+  {
+    "k": "hall-of-mirrors",
+    "t": "hall of mirrors",
+    "kind": "phrase",
+    "forms": [
+      "hall of mirrors"
+    ],
+    "text": "A funfair room where reflections bounce back and forth endlessly. Kevin Warsh uses it to describe markets watching the central bank while the central bank watches markets.",
+    "audio": true
+  },
+  {
+    "k": "in-real-time",
+    "t": "in real-time",
+    "kind": "word",
+    "forms": [
+      "in real-time"
+    ],
+    "text": "Happening as events unfold rather than later.",
+    "audio": true
+  },
+  {
+    "k": "spectre",
+    "t": "spectre",
+    "kind": "word",
+    "forms": [
+      "spectre"
+    ],
+    "text": "A ghost, and figuratively a frightening possibility looming ahead. Here it is the worry that central banks might be pushed to hold down borrowing costs for governments instead of fighting inflation.",
+    "audio": true
+  },
+  {
+    "k": "supply-side",
+    "t": "supply side",
+    "kind": "name",
+    "forms": [
+      "supply side"
+    ],
+    "text": "The part of the economy about producing goods and services. Supply shocks, like wars cutting oil, make things scarcer and pricier, which is hard for central banks to fix with interest rates.",
+    "audio": true
+  },
+  {
+    "k": "debt-burdens",
+    "t": "debt burdens",
+    "kind": "word",
+    "forms": [
+      "debt burdens"
+    ],
+    "text": "The weight of money owed. When governments owe a lot, higher interest rates make their payments heavier.",
+    "audio": true
+  },
+  {
+    "k": "rate-setters",
+    "t": "Rate-setters",
+    "kind": "word",
+    "forms": [
+      "Rate-setters"
+    ],
+    "text": "A name for the central bank officials who decide interest rates.",
+    "audio": true
+  },
+  {
+    "k": "political-economy",
+    "t": "political-economy",
+    "kind": "name",
+    "forms": [
+      "political-economy"
+    ],
+    "text": "The study of how politics and economics interact, meaning real-world choices where tradeoffs and pressures matter, not just neat theory.",
+    "audio": true
+  }
+]

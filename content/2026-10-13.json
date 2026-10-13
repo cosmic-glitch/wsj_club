@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-13",
+  "title": "A Nobel prize for how to keep economies on an even keel",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/10/12/a-nobel-prize-for-how-to-keep-economies-on-an-even-keel",
+  "articlePageUrl": "/articles/2026-10-13.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "detractors",
+      "partOfSpeech": "noun",
+      "pronunciation": "dih-TRAK-turz",
+      "articleQuote": "The New Keynesians have their detractors.",
+      "meaning": "A detractor is someone who criticises a person, idea or achievement, often by trying to make it look less impressive. The word comes from Latin for \"pulling away\": detractors pull some of the credit off the thing they attack. It is the opposite of a supporter or champion, and it is a handy word for any debate. Here, the article has just praised the Nobel winners, then turns to economists who think their theories have real flaws.",
+      "examples": [
+        "Even the best-selling game has detractors who say the story is too short.",
+        "The mayor's detractors claimed the new park was a waste of money."
+      ]
+    },
+    {
+      "word": "assailed",
+      "partOfSpeech": "verb (past participle)",
+      "pronunciation": "uh-SAYLD",
+      "articleQuote": "Besides facing this theoretical challenge, the framework is also assailed by a new economic reality.",
+      "meaning": "To assail something is to attack it forcefully, whether with fists, with words, or with a flood of problems. It can describe a literal attack, such as a storm assailing a coast, but newspapers often use it for pressure or criticism coming from many sides. Here, the central-banking approach is not being punched by anyone; it is being battered by events, such as wars and a pandemic, that it was not built to handle.",
+      "examples": [
+        "The hikers were assailed by wind and sleet as they neared the summit.",
+        "The new coach was assailed by questions about why the team kept losing."
+      ]
+    },
+    {
+      "word": "lucrative",
+      "partOfSpeech": "adjective",
+      "pronunciation": "LOO-kruh-tiv",
+      "articleQuote": "a one-off prize, like the Nobel, might presage a future of lucrative speaking gigs, for instance.",
+      "meaning": "Lucrative describes a job, deal or business that brings in a lot of money. It comes from the Latin word for profit, and it is not about whether the work is enjoyable, only about the pay. Something can be lucrative and still be boring or risky. In this article, the joke is that winning a Nobel prize is a surprise that carries information, since it hints that the winner will soon be paid well to give talks.",
+      "examples": [
+        "Selling lemonade on the hottest week of summer turned into a lucrative business.",
+        "Her uncle left a quiet job for a more lucrative one in another city."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Microfoundations: building the economy bottom-up",
+      "articleQuote": "The prize committee credited the two men with rebuilding macroeconomics on “microfoundations”: in other words, representing economic outcomes as the result of the behaviour of individual consumers and businesses.",
+      "meaning": "Economics has two big layers. **Macroeconomics** studies the whole economy at once: total spending, total unemployment, the overall price level. **Microeconomics** studies single decisions by one family or one firm. The question behind this Nobel is how the two connect.\n\nOlder economists, whether Keynesians or monetarists, worked **top-down**. They looked for patterns between big statistics, such as \"when the total money supply grows by this much, inflation rises by that much\", and treated those patterns as rules. The trouble, argued the economist Robert Lucas, is that a rule found in past data may stop working the moment the government changes policy, because people change how they behave. A pattern is only a safe guide if you know the deeper reason behind it.\n\n**Microfoundations** is the fix: start from how individual people and businesses make choices, then add them up to get the whole economy. Imagine predicting traffic. A top-down model says \"on Fridays there are 20% more cars\". A bottom-up model asks why each driver leaves when they do, and so can predict what happens if a new bridge opens. Robert Hall's model of how a person spends over a lifetime, and Michael Woodford's model of how firms set prices and respond to interest rates, are both built this way.\n\nThe takeaway: modern macroeconomics tries to explain the whole economy as the sum of many sensible individual choices, so its predictions still hold when the rules change."
+    },
+    {
+      "name": "The natural rate of interest",
+      "articleQuote": "If interest rates were below a “natural” rate of return on investment then businesses would keep borrowing. That would lead to an inflationary boom.",
+      "meaning": "An **interest rate** is the price of borrowing money. The Swedish economist Knut Wicksell asked whether there is a \"right\" price, and his answer was the **natural rate**: the rate at which the amount people want to save exactly matches the amount businesses want to invest, so the economy runs steadily with stable prices.\n\nThink of a lemonade stand that earns a 6% profit on money spent on lemons and cups. If a bank charges only 2% to borrow, every business can borrow, expand and make a profit, so everyone borrows at once. Demand for workers and goods outruns supply, and prices climb: a boom with inflation. If the bank charges 10%, no investment pays off, so firms stop borrowing and hiring, and the economy sinks into a slump with falling prices.\n\nSo the job of a central bank, such as the US Federal Reserve, is to set its policy rate close to the natural rate. The catch, noted in the article, is that nobody can see the natural rate. It depends on things like new technology, which can raise the return on investment overnight, and on how willing savers are to wait. Jerome Powell's quip was that central bankers could only \"know it by its works\", meaning they adjust rates and watch what happens to prices and jobs.\n\nThe takeaway: steady economies need borrowing costs that match the real returns on investment, but that matching point keeps moving and cannot be directly measured."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does it mean to build macroeconomics on “microfoundations”?",
+      "options": [
+        "Studying only very small countries",
+        "Explaining the whole economy as the result of individual consumers’ and businesses’ choices",
+        "Ignoring statistics such as inflation and unemployment",
+        "Letting central banks fix the supply of money"
+      ],
+      "answerIndex": 1,
+      "explanation": "The prize committee credited Hall and Woodford with representing economic outcomes as the result of the behaviour of individual consumers and businesses, bottom-up rather than top-down."
+    },
+    {
+      "question": "In Robert Hall’s model, why do consumers “smooth” their spending?",
+      "options": [
+        "Because banks forbid large purchases",
+        "Because they care about tomorrow as well as today and react to changes in lifetime spending power",
+        "Because prices never change",
+        "Because they copy what their neighbours buy"
+      ],
+      "answerIndex": 1,
+      "explanation": "Consumers have views about their future income, so they do not overreact to a passing windfall; the article compares their spending to a drunk walking home, wandering but heading the same general way."
+    },
+    {
+      "question": "According to Wicksell’s idea, what happens if interest rates are set below the natural rate?",
+      "options": [
+        "Businesses keep borrowing, leading to an inflationary boom",
+        "Savers stop saving and banks close",
+        "A deflationary cycle begins",
+        "Nothing, because rates never matter"
+      ],
+      "answerIndex": 0,
+      "explanation": "With borrowing cheap relative to returns on investment, businesses keep borrowing, which leads to an inflationary boom; rates above the natural rate cause a deflationary cycle."
+    },
+    {
+      "question": "Why does the article say the natural rate is hard for central banks to use?",
+      "options": [
+        "It is illegal to calculate",
+        "It cannot be observed and can shift quickly, for example with a boom in investment in a new technology",
+        "It is always exactly 2%",
+        "Only Sweden’s central bank knows it"
+      ],
+      "answerIndex": 1,
+      "explanation": "Jerome Powell quipped that central bankers can only “know it by its works”, and a surge of investment such as in artificial intelligence can raise it suddenly."
+    },
+    {
+      "question": "Why has Kevin Warsh pushed back against Mr Woodford’s advice that central banks should say in advance how they will respond?",
+      "options": [
+        "He thinks it creates a “hall of mirrors” in which markets watch the central bank and the central bank watches markets",
+        "He wants the Fed to stop setting interest rates altogether",
+        "He believes the natural rate is always zero",
+        "He says Nobel winners should not advise central banks"
+      ],
+      "answerIndex": 0,
+      "explanation": "Mr Warsh argues that a bit of uncertainty in how interest rates change is a good thing, because too much advance signalling creates a hall of mirrors."
+    }
+  ]
+}
