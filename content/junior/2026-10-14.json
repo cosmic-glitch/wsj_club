@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-14",
+  "title": "What’s behind the big interest in miniatures?",
+  "articleUrl": "https://www.economist.com/culture/2026/10/13/whats-behind-the-big-interest-in-miniatures",
+  "articlePageUrl": "/articles/junior/2026-10-14.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "whimsical",
+      "partOfSpeech": "adjective",
+      "pronunciation": "WIM-zih-kul",
+      "articleQuote": "The resurgence of this whimsical pastime",
+      "meaning": "Whimsical means playful and a little bit silly, in a charming way. A whimsical idea is one that is fun and unusual rather than practical, like wearing mismatched socks on purpose or drawing a cat in a top hat. In the article, building tiny houses is called a whimsical pastime because it is a playful hobby that makes people smile.",
+      "examples": [
+        "My uncle’s whimsical birthday cake was shaped like a giant sneaker.",
+        "The whimsical cartoon showed a snail racing a sports car."
+      ]
+    },
+    {
+      "word": "escapism",
+      "partOfSpeech": "noun",
+      "pronunciation": "ih-SKAY-piz-um",
+      "articleQuote": "The tiny trend offers a “kind of escapism”",
+      "meaning": "Escapism means losing yourself in something fun so you can take a break from real life and its worries. Reading a fantasy novel, playing a video game, or building a model rocket can all be escapism. It does not mean you run away for good, just that your mind gets a holiday. In the article, building a tiny world gives people a calm place to go when real life feels busy or stressful.",
+      "examples": [
+        "For him, drawing comics after a hard test was pure escapism.",
+        "Her favorite escapism is getting lost in a long book on a rainy day."
+      ]
+    },
+    {
+      "word": "bemoan",
+      "partOfSpeech": "verb",
+      "pronunciation": "bih-MOHN",
+      "articleQuote": "Though traditionalists sometimes bemoan these tools",
+      "meaning": "To bemoan something is to complain about it in a sad way, because you wish it were different. Your grandpa might bemoan how kids spend so much time on screens, or you might bemoan the end of summer vacation. In the article, traditional miniature makers bemoan new machines like 3D printers because they feel the machines make the craft too easy.",
+      "examples": [
+        "Fans bemoan the rain that ruined the picnic.",
+        "My coach likes to bemoan how few kids practice every day."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Scale",
+      "articleQuote": "a replica of the city made from balsa wood, cardboard and glue, which stretched 50 by 27 feet",
+      "meaning": "A **scale** tells you how much smaller (or bigger) a model is than the real thing. If a toy car is built at a scale of 1 to 20, then every 20 inches of the real car becomes just 1 inch on the toy. Everything is shrunk by the same amount, so the model keeps the right shape.\n\nImagine you want a model of your school. The real gym is 100 feet long. At a scale of 1 to 100, your model gym is 1 foot long. The doors, windows and hallways shrink by the same amount, so the little school still looks like your school, just tiny.\n\nMap makers, toy makers and builders all use scale. Miniature makers care about it a lot, because one piece that is too big makes the whole little world look wrong. In the article, the model of New York City was made by shrinking a huge city until it fit in one room, and it still took one artist 21 years."
+    },
+    {
+      "name": "Net sales",
+      "articleQuote": "has seen more than a tripling of net sales over the past two years",
+      "meaning": "**Sales** is the money a store collects from customers. **Net sales** is that money after you take out the things that were returned or refunded. It is the money the store really gets to keep from selling.\n\nImagine you run a lemonade stand and collect 50 dollars in a day. Then one customer says the lemonade was too sour and you give back 5 dollars. Your net sales are 45 dollars, not 50.\n\nNet sales is not the same as profit. Profit also subtracts what the lemons, sugar and cups cost you. Net sales just tells you how much real business the store did, so news stories use it to show whether a product is getting more popular. In the article, a store whose net sales tripled is a sign that many more people are buying miniatures."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what is happening with miniatures?",
+      "options": [
+        "Fewer people are collecting them every year",
+        "They are becoming very popular with collectors and makers",
+        "They are only sold in museums",
+        "They are banned at conventions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says miniatures are having a huge moment, with booming convention crowds and rising sales."
+    },
+    {
+      "question": "Which is one reason the article gives for the boom?",
+      "options": [
+        "People want a hands-on hobby they can control and touch",
+        "Miniatures are free",
+        "Schools now require them",
+        "Real houses have become smaller"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says people want escapism, control in uncertain times, and things they can touch and make themselves."
+    },
+    {
+      "question": "\"The tiny trend offers a ‘kind of escapism’.\" What does escapism mean here?",
+      "options": [
+        "Running away from home",
+        "Losing yourself in something fun to take a break from real life",
+        "Winning a race",
+        "Fixing a broken toy"
+      ],
+      "answerIndex": 1,
+      "explanation": "Escapism is a mental break from everyday worries through something enjoyable."
+    },
+    {
+      "question": "How long did it take Joe Macken to build his model of New York City by hand?",
+      "options": [
+        "21 days",
+        "2 years",
+        "21 years",
+        "50 years"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says the replica took Joe Macken 21 years to craft."
+    },
+    {
+      "question": "Why do some traditionalists bemoan 3D printers and laser-cutters?",
+      "options": [
+        "They think the tools cut corners and make lower-quality work",
+        "They think the tools are too expensive",
+        "They think the tools are too old",
+        "They have never heard of them"
+      ],
+      "answerIndex": 0,
+      "explanation": "Traditionalists complain the tools take shortcuts, though most people say the tools help speed and lower prices."
+    }
+  ]
+}
