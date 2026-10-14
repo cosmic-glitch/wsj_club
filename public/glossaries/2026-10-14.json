@@ -1,0 +1,487 @@
+[
+  {
+    "k": "intractable",
+    "t": "intractable",
+    "kind": "vocab",
+    "pron": "in-TRAK-tuh-bul",
+    "forms": [
+      "intractable"
+    ],
+    "text": "Intractable means extremely hard to solve or manage, like something that resists every grip. Here it describes seven maths puzzles that have stumped experts for generations.",
+    "audio": true
+  },
+  {
+    "k": "opacity",
+    "t": "opacity",
+    "kind": "vocab",
+    "pron": "oh-PASS-ih-tee",
+    "forms": [
+      "opacity"
+    ],
+    "text": "Opacity is the quality of not letting light through, and by extension, of being impossible to see into or understand. The AI gives answers without a clear explanation, so humans must do lots of checking.",
+    "audio": true
+  },
+  {
+    "k": "legible",
+    "t": "legible",
+    "kind": "vocab",
+    "pron": "LEJ-ih-bul",
+    "forms": [
+      "legible"
+    ],
+    "text": "Legible means clear enough to read, and figuratively, clear enough for people to understand. The worry is that machine-run science might stop making sense to human scientists.",
+    "audio": true
+  },
+  {
+    "k": "conundrums",
+    "t": "conundrums",
+    "kind": "word",
+    "forms": [
+      "conundrums"
+    ],
+    "text": "A conundrum is a confusing, difficult problem or puzzle with no obvious answer. The seven prize questions are the most famous unsolved puzzles in maths.",
+    "audio": true
+  },
+  {
+    "k": "millennium",
+    "t": "Millennium Prize problems",
+    "kind": "name",
+    "forms": [
+      "Millennium Prize problems"
+    ],
+    "text": "Seven famous unsolved maths problems announced in 2000, each carrying a $1m reward from a research institute. Before this year only one had ever been solved.",
+    "audio": true
+  },
+  {
+    "k": "navier",
+    "t": "Navier-Stokes",
+    "kind": "name",
+    "forms": [
+      "Navier-Stokes"
+    ],
+    "text": "Navier-Stokes is the name of the equations describing how fluids such as water and air move. The open question is whether their solutions always stay smooth and well behaved.",
+    "audio": true
+  },
+  {
+    "k": "openai",
+    "t": "OpenAI",
+    "kind": "name",
+    "forms": [
+      "OpenAI"
+    ],
+    "text": "An American company that builds AI systems, including ChatGPT. Here it claims its internal model solved major maths problems.",
+    "audio": true
+  },
+  {
+    "k": "anthropic",
+    "t": "Anthropic",
+    "kind": "name",
+    "forms": [
+      "Anthropic"
+    ],
+    "text": "Another American AI company, the maker of the Claude assistant.",
+    "audio": true
+  },
+  {
+    "k": "claude",
+    "t": "Claude",
+    "kind": "name",
+    "forms": [
+      "Claude"
+    ],
+    "text": "Claude is the AI model made by Anthropic.",
+    "audio": true
+  },
+  {
+    "k": "fields",
+    "t": "Fields Medal",
+    "kind": "name",
+    "forms": [
+      "Fields Medal",
+      "Fields medallists"
+    ],
+    "text": "The most prestigious prize in mathematics, awarded every four years to outstanding mathematicians under 40. Often described as maths' version of a Nobel prize.",
+    "audio": true
+  },
+  {
+    "k": "conquered",
+    "t": "conquered",
+    "kind": "word",
+    "forms": [
+      "conquered"
+    ],
+    "text": "To conquer is to defeat an enemy by force. Here the writer uses it playfully for finally defeating a problem that had beaten everyone else.",
+    "audio": true
+  },
+  {
+    "k": "fall",
+    "t": "fall to a machine",
+    "kind": "phrase",
+    "forms": [
+      "fall to a machine"
+    ],
+    "text": "When a problem falls, it is finally solved or defeated, as if it were a castle under siege. Here the problem fell to a machine rather than a human.",
+    "audio": true
+  },
+  {
+    "k": "wrestling",
+    "t": "wrestling",
+    "kind": "word",
+    "forms": [
+      "wrestling"
+    ],
+    "text": "Here wrestling does not mean the sport. To wrestle with a problem is to struggle with it for a long time.",
+    "audio": true
+  },
+  {
+    "k": "torrent",
+    "t": "torrent",
+    "kind": "word",
+    "forms": [
+      "torrent"
+    ],
+    "text": "A torrent is a fast, powerful rush of water, and figuratively an overwhelming flood of something. Here it describes 719 papers released at once.",
+    "audio": true
+  },
+  {
+    "k": "detailing",
+    "t": "detailing",
+    "kind": "word",
+    "forms": [
+      "detailing"
+    ],
+    "text": "To detail something is to describe it fully, point by point.",
+    "audio": true
+  },
+  {
+    "k": "paralysed",
+    "t": "paralysed",
+    "kind": "word",
+    "forms": [
+      "paralysed"
+    ],
+    "text": "Paralysed means unable to move, and figuratively so shocked or overwhelmed that you cannot act or think. It shows how stunned the mathematician is.",
+    "audio": true
+  },
+  {
+    "k": "endorsed",
+    "t": "endorsed",
+    "kind": "word",
+    "forms": [
+      "endorsed"
+    ],
+    "text": "To endorse something is to publicly say you support it. Over 8,000 researchers have signed on to the statement.",
+    "audio": true
+  },
+  {
+    "k": "misalignment",
+    "t": "misalignment",
+    "kind": "word",
+    "forms": [
+      "misalignment"
+    ],
+    "text": "Misalignment means things not lined up as they should be. In AI talk it means a system's goals or behaviour not matching what humans want or need.",
+    "audio": true
+  },
+  {
+    "k": "divorced",
+    "t": "divorced",
+    "kind": "word",
+    "forms": [
+      "divorced"
+    ],
+    "text": "Beyond marriage, divorced from means completely separated from. Solutions divorced from human understanding are answers with no human grasp of why they are true.",
+    "audio": true
+  },
+  {
+    "k": "unchecked",
+    "t": "Left unchecked",
+    "kind": "phrase",
+    "forms": [
+      "Left unchecked"
+    ],
+    "text": "If something is left unchecked, nobody stops or controls it, so it may grow worse. It introduces a warning about what could happen.",
+    "audio": true
+  },
+  {
+    "k": "sterilise",
+    "t": "sterilise",
+    "kind": "word",
+    "pron": "STAIR-uh-lize",
+    "forms": [
+      "sterilise"
+    ],
+    "text": "To sterilise is to kill germs, but also to make something unable to produce anything new, like a barren field. Hairer fears AI would drain the life and creativity out of maths.",
+    "audio": true
+  },
+  {
+    "k": "onitsface",
+    "t": "on its face",
+    "kind": "phrase",
+    "forms": [
+      "on its face"
+    ],
+    "text": "On its face means judging by first appearances. Looking only at the surface, the reaction seems strange, though the article then digs deeper.",
+    "audio": true
+  },
+  {
+    "k": "vested",
+    "t": "vested interest",
+    "kind": "phrase",
+    "forms": [
+      "vested interest"
+    ],
+    "text": "A vested interest is a personal stake in how something turns out, usually because you benefit or lose. It hints that mathematicians may be protecting their jobs.",
+    "audio": true
+  },
+  {
+    "k": "pleading",
+    "t": "special pleading",
+    "kind": "phrase",
+    "forms": [
+      "special pleading"
+    ],
+    "text": "Special pleading means arguing that rules should not apply to your own case, an argument made out of self-interest. The writer says the mathematicians' case is more than that.",
+    "audio": true
+  },
+  {
+    "k": "uproar",
+    "t": "uproar",
+    "kind": "word",
+    "forms": [
+      "uproar"
+    ],
+    "text": "An uproar is a loud outburst of public anger or protest.",
+    "audio": true
+  },
+  {
+    "k": "questing",
+    "t": "questing",
+    "kind": "word",
+    "forms": [
+      "questing"
+    ],
+    "text": "A quest is a long search for something difficult, as in old tales of knights. Here it means the long hunt for a solution.",
+    "audio": true
+  },
+  {
+    "k": "spurs",
+    "t": "spurs on",
+    "kind": "phrase",
+    "forms": [
+      "spurs on"
+    ],
+    "text": "To spur someone on is to push them forward, as a rider uses spurs on a horse. Hard problems drive people to invent new methods.",
+    "audio": true
+  },
+  {
+    "k": "imaginary",
+    "t": "imaginary numbers",
+    "kind": "name",
+    "forms": [
+      "imaginary numbers"
+    ],
+    "text": "Numbers that give a negative result when multiplied by themselves, which seems impossible. Once dismissed as useless, they are now essential in electronics and physics.",
+    "audio": true
+  },
+  {
+    "k": "underpin",
+    "t": "underpin",
+    "kind": "word",
+    "forms": [
+      "underpin"
+    ],
+    "text": "To underpin is to support from underneath, like the foundations of a building. Imaginary numbers form the base of much modern technology.",
+    "audio": true
+  },
+  {
+    "k": "subtle",
+    "t": "subtle",
+    "kind": "word",
+    "forms": [
+      "subtle"
+    ],
+    "text": "Subtle means delicate and clever, hard to notice or grasp. Here the old quote jokes that imaginary numbers were all cleverness and no use.",
+    "audio": true
+  },
+  {
+    "k": "allege",
+    "t": "allege",
+    "kind": "word",
+    "forms": [
+      "allege"
+    ],
+    "text": "To allege is to claim something is true without having proved it.",
+    "audio": true
+  },
+  {
+    "k": "frankenstein",
+    "t": "a bit of a Frankenstein",
+    "kind": "phrase",
+    "forms": [
+      "a bit of a Frankenstein"
+    ],
+    "text": "Frankenstein is the novel in which a scientist stitches together body parts to make a creature. Calling a paper a Frankenstein means it is a messy patchwork of parts that do not fit together neatly.",
+    "audio": true
+  },
+  {
+    "k": "frontier",
+    "t": "frontier",
+    "kind": "word",
+    "forms": [
+      "frontier"
+    ],
+    "text": "A frontier is the edge of what is settled or known. To push the frontier is to make a discovery beyond current knowledge.",
+    "audio": true
+  },
+  {
+    "k": "llm",
+    "t": "LLM",
+    "kind": "name",
+    "forms": [
+      "LLM"
+    ],
+    "text": "A large language model: an AI trained on vast amounts of text, such as ChatGPT or Claude, that can write and answer questions.",
+    "audio": true
+  },
+  {
+    "k": "theoretical",
+    "t": "theoretical physicists",
+    "kind": "name",
+    "forms": [
+      "theoretical physicists"
+    ],
+    "text": "Scientists who use maths and ideas, rather than lab experiments, to explain how the universe works.",
+    "audio": true
+  },
+  {
+    "k": "boon",
+    "t": "boon",
+    "kind": "word",
+    "forms": [
+      "boon"
+    ],
+    "text": "A boon is a great benefit or blessing.",
+    "audio": true
+  },
+  {
+    "k": "citations",
+    "t": "citations",
+    "kind": "word",
+    "forms": [
+      "citations"
+    ],
+    "text": "A citation is when one research paper mentions another as a source. More citations means more researchers found the work important.",
+    "audio": true
+  },
+  {
+    "k": "incremental",
+    "t": "incremental",
+    "kind": "word",
+    "forms": [
+      "incremental"
+    ],
+    "text": "Incremental means happening in small steps. Incremental research adds a little to what is known instead of making a giant leap.",
+    "audio": true
+  },
+  {
+    "k": "speculative",
+    "t": "speculative",
+    "kind": "word",
+    "forms": [
+      "speculative"
+    ],
+    "text": "Speculative means based on guesses and bold ideas rather than solid evidence. Such work is risky and may fail.",
+    "audio": true
+  },
+  {
+    "k": "profound",
+    "t": "profound",
+    "kind": "word",
+    "forms": [
+      "profound"
+    ],
+    "text": "Profound means very deep and important, with far-reaching effects.",
+    "audio": true
+  },
+  {
+    "k": "closeloop",
+    "t": "close the scientific loop",
+    "kind": "phrase",
+    "forms": [
+      "close the scientific loop"
+    ],
+    "text": "A loop closes when a process feeds back into itself with no outside help. Here AI would handle every step of the research cycle without a human.",
+    "audio": true
+  },
+  {
+    "k": "hypotheses",
+    "t": "hypotheses",
+    "kind": "word",
+    "forms": [
+      "hypotheses"
+    ],
+    "text": "A hypothesis is a proposed explanation that can be tested. Scientists form one, test it, then judge the result.",
+    "audio": true
+  },
+  {
+    "k": "autonomously",
+    "t": "autonomously",
+    "kind": "word",
+    "forms": [
+      "autonomously"
+    ],
+    "text": "Autonomously means acting independently, without being controlled by others.",
+    "audio": true
+  },
+  {
+    "k": "archaeologists",
+    "t": "archaeologists",
+    "kind": "word",
+    "forms": [
+      "archaeologists"
+    ],
+    "text": "Archaeologists study the past by digging up what earlier people left behind. The comparison suggests scientists might puzzle over AI's finished work to see how it was made.",
+    "audio": true
+  },
+  {
+    "k": "ripe",
+    "t": "ripe",
+    "kind": "word",
+    "forms": [
+      "ripe"
+    ],
+    "text": "Ripe usually describes fruit ready to pick. Figuratively, it means ready for something to happen.",
+    "audio": true
+  },
+  {
+    "k": "jobless",
+    "t": "jobless",
+    "kind": "word",
+    "forms": [
+      "jobless"
+    ],
+    "text": "Jobless means without a job. The writer notes that mathematicians still have work.",
+    "audio": true
+  },
+  {
+    "k": "fruitful",
+    "t": "fruitful",
+    "kind": "word",
+    "forms": [
+      "fruitful"
+    ],
+    "text": "Fruitful means productive, producing good results.",
+    "audio": true
+  },
+  {
+    "k": "peril",
+    "t": "at their peril",
+    "kind": "phrase",
+    "forms": [
+      "at their peril"
+    ],
+    "text": "To do something at your peril is to do it while risking serious trouble. Underestimating AI could backfire on scientists, as it did on Alain Connes.",
+    "audio": true
+  }
+]

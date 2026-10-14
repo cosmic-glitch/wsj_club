@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-14",
+  "title": "AI’s mathematics blitz pushes science into strange new territory",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/12/ais-mathematics-blitz-pushes-science-into-strange-new-territory",
+  "articlePageUrl": "/articles/2026-10-14.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "intractable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-TRAK-tuh-bul",
+      "articleQuote": "offering $1m rewards for solutions to seven intractable mathematical conundrums",
+      "meaning": "Intractable describes a problem, conflict or person that is extremely hard to manage, solve or bend to your will. It comes from the Latin for \"not able to be handled\", and you can picture something slippery or stubborn that resists every grip. Writers use it for stubborn problems such as an intractable war, intractable pain or intractable traffic. In this article the seven Millennium Prize problems are intractable because the best mathematicians in the world have failed to crack them for a century or more, which is why a $1m prize was offered for each.",
+      "examples": [
+        "After three weeks of arguing, the two friends' disagreement over the group project seemed intractable.",
+        "Scientists call the housing shortage an intractable problem because every easy fix makes another part of it worse."
+      ]
+    },
+    {
+      "word": "opacity",
+      "partOfSpeech": "noun",
+      "pronunciation": "oh-PASS-ih-tee",
+      "articleQuote": "The very opacity of OpenAI’s results promises plenty of work verifying AI’s methods",
+      "meaning": "Opacity is the quality of being opaque, which literally means that light cannot pass through, like a painted window. Figuratively it means being impossible to see into or understand: a company with opacity hides how it makes decisions, and a confusing contract has opacity too. Its opposite is transparency. Here the AI hands over answers but cannot clearly explain how it reached them, so humans cannot look inside the reasoning, and that opacity creates a lot of checking work for mathematicians.",
+      "examples": [
+        "The opacity of the school's grading system left students unsure why they had lost points.",
+        "Because of the fog's opacity, the ferry captain could not see the dock until it was a few metres away."
+      ]
+    },
+    {
+      "word": "legible",
+      "partOfSpeech": "adjective",
+      "pronunciation": "LEJ-ih-bul",
+      "articleQuote": "machine-driven science ceases to be legible to humans",
+      "meaning": "Legible literally means clear enough to be read, as in legible handwriting versus a messy scrawl. Writers stretch it to mean understandable by people: a legible argument is one a reader can follow step by step. In this article the worry is that if AI does science on its own, its methods and discoveries might be written in a form no human can follow, so science would stop being legible to the very people it is meant to serve, even if the answers turn out to be correct.",
+      "examples": [
+        "The doctor's note was barely legible, so the pharmacist had to call to check the dose.",
+        "A good map is legible at a glance, with no need to puzzle over its symbols."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Open problems and the value of proof",
+      "articleQuote": "These Millennium Prize problems, said Dr Connes, “are totally inaccessible to computers”.",
+      "meaning": "Why would mathematicians be upset that a machine solved problems they could not? The answer lies in what mathematics is. Unlike most sciences, mathematics does not rely on experiments. It relies on **proof**: a chain of logical steps, each one justified, that shows a statement must be true in every case. An **open problem** is a question that nobody has been able to prove or disprove. The Millennium Prize problems are seven famous ones, chosen in 2000 by a group of mathematicians, with $1m offered for each. The Navier-Stokes problem asks, roughly, whether the equations describing flowing water and air always have smooth, well-behaved solutions, or whether they can sometimes break down.\n\nThe key point is that the proof matters as much as the verdict. Working on a hard problem forces mathematicians to invent new tools, and those tools often turn out useful elsewhere. The article's example is imaginary numbers, once called \"as subtle as they are useless\" and now central to electrical engineering and quantum physics. So when an AI produces a 166-page proof that humans cannot easily follow, the answer may be right but the learning is missing. It is like getting the answer key without ever doing the homework.\n\nThe takeaway: in mathematics the journey is part of the product, because understanding is what lets people build the next idea. That is why many mathematicians say they feel something has been lost, even as the problems fall."
+    },
+    {
+      "name": "Safe versus risky research",
+      "articleQuote": "AI pushes them towards safer, more incremental projects that are guaranteed to produce publishable results in short order.",
+      "meaning": "Imagine two ways to spend a Saturday: one is going to your favourite restaurant for a meal you know you will enjoy, and the other is trying a new place that might be wonderful or terrible. Researchers face the same choice. **Incremental** research makes a small, reliable step forward on a known topic, so success is nearly certain. **Speculative** (or risky) research chases a wild idea that will probably fail but might change a whole field if it works.\n\nScience needs both. Most big breakthroughs, from vaccines to the internet, began as risky bets, but careers and funding reward steady publication, so safe projects are tempting. The article reports that scientists using AI publish more and get more citations, which are mentions of their work by other researchers. Yet the range of topics they study shrank by almost 5%, and almost half of those surveyed said AI nudges them toward safer work, while only 28% felt it helped them try bolder ideas. AI is easiest to use where lots of data and clear methods already exist, which is exactly where the safe projects are.\n\nThe takeaway: a tool can make every individual more productive and still make a whole field narrower, because what is easy to do with the tool is not always what is most worth doing."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did Alain Connes think the Millennium Prize problems were safe from computers?",
+      "options": [
+        "He believed they were too intractable for computers to solve",
+        "He thought computers could not do arithmetic",
+        "The prizes were only open to humans",
+        "He had already solved most of them"
+      ],
+      "answerIndex": 0,
+      "explanation": "In 2000 he said the problems were \"totally inaccessible to computers\", a view the article says later proved wrong."
+    },
+    {
+      "question": "What happened on October 6th, according to the article?",
+      "options": [
+        "Mathematicians won the Fields Medal",
+        "OpenAI released 719 papers with solutions to at least 372 long-standing open problems",
+        "Anthropic solved the Navier-Stokes problem",
+        "The Nature study was published"
+      ],
+      "answerIndex": 1,
+      "explanation": "OpenAI released a torrent of 719 papers detailing solutions its model had found to many open problems."
+    },
+    {
+      "question": "Why do the objecting mathematicians say that focusing only on solutions is a mistake?",
+      "options": [
+        "Solutions are always wrong",
+        "Hunting for solutions spurs the invention of new tools and techniques, which may prove useful later",
+        "Open problems are too easy",
+        "Prizes make mathematicians lazy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article cites imaginary numbers, once called useless, which now underpin electrical engineering and quantum physics."
+    },
+    {
+      "question": "What did the Nature analysis find about scientists who use AI?",
+      "options": [
+        "They publish more and are cited more, but study a narrower range of topics",
+        "They publish less but study more topics",
+        "They are cited less and collaborate more",
+        "They stop publishing altogether"
+      ],
+      "answerIndex": 0,
+      "explanation": "AI users published more and attracted more citations, yet the range of topics shrank by almost 5% and engagement with others' work fell 22%."
+    },
+    {
+      "question": "What does Hector Zenil suggest scientists might one day resemble?",
+      "options": [
+        "Archaeologists, following up AI discoveries and working out how they were achieved",
+        "Pilots who fly with autopilot",
+        "Librarians who sort old papers",
+        "Judges who rule on disputes"
+      ],
+      "answerIndex": 0,
+      "explanation": "If AI closes the scientific loop, humans might be left trying to understand discoveries after the fact."
+    }
+  ]
+}
