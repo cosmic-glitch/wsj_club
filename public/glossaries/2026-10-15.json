@@ -1,0 +1,446 @@
+[
+  {
+    "k": "vertiginous",
+    "t": "vertiginous",
+    "kind": "vocab",
+    "pron": "vur-TIJ-ih-nus",
+    "forms": [
+      "vertiginous"
+    ],
+    "text": "Vertiginous means so steep or high that it makes you dizzy, from the same root as vertigo. Here it describes how dizzyingly fast chip sales rose, and how far a bust might drop.",
+    "audio": true
+  },
+  {
+    "k": "insatiable",
+    "t": "insatiable",
+    "kind": "vocab",
+    "pron": "in-SAY-shuh-bul",
+    "forms": [
+      "insatiable"
+    ],
+    "text": "Insatiable means impossible to satisfy, because no amount is ever enough. Here it describes demand for AI chips, which keeps growing however many are made.",
+    "audio": true
+  },
+  {
+    "k": "stratospheric",
+    "t": "stratospheric",
+    "kind": "vocab",
+    "pron": "strat-uh-SFEER-ik",
+    "forms": [
+      "stratospheric"
+    ],
+    "text": "Stratospheric comes from the stratosphere, the high layer of air where airliners fly, and means extremely high. Here it describes chip company share prices that have climbed far above normal levels.",
+    "audio": true
+  },
+  {
+    "k": "transistor",
+    "t": "transistors",
+    "kind": "word",
+    "forms": [
+      "transistors"
+    ],
+    "text": "A transistor is a tiny electronic switch that is either on or off, and chips pack billions of them. More transistors on a chip generally means more computing power.",
+    "audio": true
+  },
+  {
+    "k": "semiconductor",
+    "t": "semiconductor",
+    "kind": "word",
+    "forms": [
+      "semiconductor"
+    ],
+    "text": "A semiconductor is a material, usually silicon, that conducts electricity only under certain conditions, which makes it ideal for making switches. The word is also used for the chips built from it and for the industry that makes them.",
+    "audio": true
+  },
+  {
+    "k": "etched",
+    "t": "etched",
+    "kind": "word",
+    "forms": [
+      "etched"
+    ],
+    "text": "To etch is to cut a pattern into a surface, originally with acid. Chipmakers etch circuits into silicon using light and chemicals, so the switches are carved into the material rather than attached.",
+    "audio": true
+  },
+  {
+    "k": "cram-in",
+    "t": "cram in",
+    "kind": "phrase",
+    "forms": [
+      "cram in"
+    ],
+    "text": "To cram in is to force a lot of things into a small space. Here it means fitting a trillion transistors onto a single chip.",
+    "audio": true
+  },
+  {
+    "k": "in-rude-health",
+    "t": "in rude health",
+    "kind": "phrase",
+    "forms": [
+      "in rude health"
+    ],
+    "text": "In rude health is a British expression meaning in excellent, vigorous condition. The article uses it to say that the trend of chips gaining more transistors is going strongly.",
+    "audio": true
+  },
+  {
+    "k": "jittery",
+    "t": "jittery",
+    "kind": "word",
+    "forms": [
+      "jittery"
+    ],
+    "text": "Jittery means nervous and unable to settle. Investors are jittery here because they worry the AI boom could end, even though companies are reporting great results.",
+    "audio": true
+  },
+  {
+    "k": "blowout",
+    "t": "blowout",
+    "kind": "word",
+    "forms": [
+      "blowout"
+    ],
+    "text": "A blowout result is one that is far stronger than expected. Here it means chip firms reported excellent earnings, which makes the share price fall more surprising.",
+    "audio": true
+  },
+  {
+    "k": "rosy",
+    "t": "rosy",
+    "kind": "word",
+    "forms": [
+      "rosy"
+    ],
+    "text": "Rosy literally means pink, but it also means hopeful and optimistic. A rosy forecast predicts good things ahead.",
+    "audio": true
+  },
+  {
+    "k": "supercycle",
+    "t": "supercycle",
+    "kind": "name",
+    "forms": [
+      "supercycle"
+    ],
+    "text": "A supercycle is an unusually long and strong period of growth in an industry, lasting well beyond the normal ups and downs. Some people call the AI chip boom one, while sceptics suspect it will end like earlier booms.",
+    "audio": true
+  },
+  {
+    "k": "hinges-on",
+    "t": "hinges on",
+    "kind": "phrase",
+    "forms": [
+      "hinges on"
+    ],
+    "text": "To hinge on something is to depend entirely on it, the way a door swings on its hinge. Here the industry's growth depends almost entirely on AI chips.",
+    "audio": true
+  },
+  {
+    "k": "sours",
+    "t": "sours",
+    "kind": "word",
+    "forms": [
+      "sours"
+    ],
+    "text": "To sour means to turn bad, like milk going off. If the bet on AI sours, it stops paying off and investors lose faith.",
+    "audio": true
+  },
+  {
+    "k": "foundry",
+    "t": "foundries",
+    "kind": "name",
+    "forms": [
+      "foundries",
+      "foundry"
+    ],
+    "text": "A foundry is a factory that manufactures chips designed by other companies. TSMC is the biggest, and because so few foundries can make the most advanced chips, designers like Nvidia all depend on them.",
+    "audio": true
+  },
+  {
+    "k": "fabless-designer",
+    "t": "chip designers",
+    "kind": "name",
+    "forms": [
+      "chip designers"
+    ],
+    "text": "Chip designers create the blueprints for chips but pay a foundry to build them. Nvidia is the best-known example here.",
+    "audio": true
+  },
+  {
+    "k": "silicon",
+    "t": "silicon",
+    "kind": "word",
+    "forms": [
+      "silicon"
+    ],
+    "text": "Silicon is the element that most chips are made from, taken originally from sand. Here the word stands for the chip itself, so making your own silicon means manufacturing your own chips.",
+    "audio": true
+  },
+  {
+    "k": "graphics-processing-units",
+    "t": "graphics-processing units",
+    "kind": "name",
+    "forms": [
+      "graphics-processing units"
+    ],
+    "text": "Graphics-processing units, or GPUs, are chips originally built to draw video-game images that turned out to be excellent at the huge parallel calculations AI needs. Nvidia's GPUs have powered the AI boom.",
+    "audio": true
+  },
+  {
+    "k": "tsmc",
+    "t": "TSMC",
+    "kind": "name",
+    "forms": [
+      "TSMC"
+    ],
+    "text": "TSMC, the Taiwan Semiconductor Manufacturing Company, is the world's biggest contract chipmaker and builds nearly all of the most advanced chips for other companies.",
+    "audio": true
+  },
+  {
+    "k": "nvidia",
+    "t": "Nvidia",
+    "kind": "name",
+    "forms": [
+      "Nvidia"
+    ],
+    "text": "Nvidia is a US company that designs the graphics processors most widely used to train and run AI models. It does not manufacture chips itself.",
+    "audio": true
+  },
+  {
+    "k": "consolidation",
+    "t": "Consolidation",
+    "kind": "word",
+    "forms": [
+      "Consolidation"
+    ],
+    "text": "Consolidation means many small things combining into a few big ones. Here it means the chip industry shrank from dozens of manufacturers to a handful, which gives the survivors more power over prices.",
+    "audio": true
+  },
+  {
+    "k": "frontier",
+    "t": "frontier",
+    "kind": "word",
+    "forms": [
+      "frontier"
+    ],
+    "text": "A frontier is the edge of what is known or possible. Here the technology frontier means the most advanced chips, which Chinese firms cannot yet match.",
+    "audio": true
+  },
+  {
+    "k": "dictate",
+    "t": "dictate",
+    "kind": "word",
+    "forms": [
+      "dictate"
+    ],
+    "text": "To dictate is to impose terms that others must accept. Here a few dominant chipmakers can dictate prices and conditions because buyers have few other suppliers.",
+    "audio": true
+  },
+  {
+    "k": "capital-expenditure",
+    "t": "capital expenditure",
+    "kind": "name",
+    "forms": [
+      "capital expenditure"
+    ],
+    "text": "Capital expenditure is money a company spends on lasting assets like factories and machines, rather than on running costs. TSMC's is rising sharply as it builds more capacity.",
+    "audio": true
+  },
+  {
+    "k": "outlays",
+    "t": "outlays",
+    "kind": "word",
+    "forms": [
+      "outlays"
+    ],
+    "text": "Outlays are amounts of money spent. Here chipmakers' outlays on new factories are small compared with the extra money flowing in.",
+    "audio": true
+  },
+  {
+    "k": "windfall",
+    "t": "windfall",
+    "kind": "word",
+    "forms": [
+      "windfall"
+    ],
+    "text": "A windfall is an unexpected or very large gain, originally fruit blown off a tree by the wind. Here it is the huge extra revenue that AI demand has brought chipmakers.",
+    "audio": true
+  },
+  {
+    "k": "operating-cashflow",
+    "t": "operating cashflow",
+    "kind": "name",
+    "forms": [
+      "operating cashflow"
+    ],
+    "text": "Operating cashflow is the cash a company's normal business brings in after paying its running costs. TSMC uses just over half of it to expand, which shows it is not borrowing heavily.",
+    "audio": true
+  },
+  {
+    "k": "swelling",
+    "t": "swelling",
+    "kind": "word",
+    "forms": [
+      "swelling"
+    ],
+    "text": "Swelling means growing bigger, like a bruise or a river after rain. Chipmakers' cash piles are swelling because profits are so high.",
+    "audio": true
+  },
+  {
+    "k": "pacing",
+    "t": "pace",
+    "kind": "word",
+    "forms": [
+      "pace"
+    ],
+    "text": "To pace something is to control how fast it goes. Here chipmakers can choose the speed at which they build new capacity, and keeping it slow keeps prices high.",
+    "audio": true
+  },
+  {
+    "k": "consultancy",
+    "t": "consultancy",
+    "kind": "word",
+    "forms": [
+      "consultancy"
+    ],
+    "text": "A consultancy is a firm that sells expert advice to businesses. McKinsey is a famous one.",
+    "audio": true
+  },
+  {
+    "k": "dram",
+    "t": "DRAM",
+    "kind": "name",
+    "forms": [
+      "DRAM"
+    ],
+    "text": "DRAM is dynamic random-access memory, the fast working memory in nearly every computer and phone. Its price has risen about six-fold since early 2023.",
+    "audio": true
+  },
+  {
+    "k": "three-nanometre",
+    "t": "three-nanometre",
+    "kind": "name",
+    "forms": [
+      "three-nanometre"
+    ],
+    "text": "A nanometre is a billionth of a metre, and a process's nanometre label loosely describes how small its transistors are, with smaller generally meaning more advanced. Three-nanometre is one of the most advanced manufacturing processes.",
+    "audio": true
+  },
+  {
+    "k": "impeded",
+    "t": "impeded",
+    "kind": "word",
+    "forms": [
+      "impeded"
+    ],
+    "text": "To impede is to slow down or get in the way of something. Here the building of new factories has been held back by how long construction takes.",
+    "audio": true
+  },
+  {
+    "k": "bargaining-power",
+    "t": "bargaining power",
+    "kind": "phrase",
+    "forms": [
+      "bargaining power"
+    ],
+    "text": "Bargaining power is the ability to get better terms in a deal because the other side has fewer alternatives. Chipmakers gained it because buyers have few other suppliers.",
+    "audio": true
+  },
+  {
+    "k": "slackened",
+    "t": "slackened",
+    "kind": "word",
+    "forms": [
+      "slackened"
+    ],
+    "text": "To slacken is to become weaker or slower, like a rope losing tension. When demand slackened, customers bought less and prices fell.",
+    "audio": true
+  },
+  {
+    "k": "spot-market",
+    "t": "spot market",
+    "kind": "name",
+    "forms": [
+      "spot market"
+    ],
+    "text": "A spot market is where goods are bought and sold for immediate delivery at the current price, with no long-term promise. Prices there can swing wildly.",
+    "audio": true
+  },
+  {
+    "k": "take-or-pay",
+    "t": "take-or-pay",
+    "kind": "name",
+    "forms": [
+      "take-or-pay"
+    ],
+    "text": "A take-or-pay agreement obliges a customer to buy an agreed amount or pay for it anyway. It protects the seller when demand falls, because the buyer carries the risk.",
+    "audio": true
+  },
+  {
+    "k": "locked-in",
+    "t": "locked in",
+    "kind": "phrase",
+    "forms": [
+      "locked in"
+    ],
+    "text": "To lock in something is to secure it in advance so it cannot change. Micron has locked in a third of its revenue through long contracts.",
+    "audio": true
+  },
+  {
+    "k": "prepayments",
+    "t": "prepayments",
+    "kind": "word",
+    "forms": [
+      "prepayments"
+    ],
+    "text": "Prepayments are payments made before receiving the goods. Here customers' cash deposits help chipmakers pay to build new factories.",
+    "audio": true
+  },
+  {
+    "k": "stalls",
+    "t": "stalls",
+    "kind": "word",
+    "forms": [
+      "stalls"
+    ],
+    "text": "To stall is to stop making progress, like an engine cutting out. If AI spending stalls, orders for chips slow down.",
+    "audio": true
+  },
+  {
+    "k": "stratospheric-prices",
+    "t": "come back down to earth",
+    "kind": "phrase",
+    "forms": [
+      "come back down to earth"
+    ],
+    "text": "To come back down to earth means to return to normal levels after being unrealistically high. The article expects high chip share prices to do this if the boom ends.",
+    "audio": true
+  },
+  {
+    "k": "renegotiate",
+    "t": "renegotiate",
+    "kind": "word",
+    "forms": [
+      "renegotiate"
+    ],
+    "text": "To renegotiate is to reopen a deal and seek new terms. Customers may try this if they signed contracts at prices that now look too high.",
+    "audio": true
+  },
+  {
+    "k": "hangover",
+    "t": "hangover",
+    "kind": "word",
+    "forms": [
+      "hangover"
+    ],
+    "text": "A hangover is the sick feeling after too much drinking, and it is used figuratively for the painful aftermath of excess. Here it means the pain after the boom, which customers will share with the chipmakers.",
+    "audio": true
+  },
+  {
+    "k": "vertigo-bust",
+    "t": "bust",
+    "kind": "word",
+    "forms": [
+      "bust"
+    ],
+    "text": "A bust is a sudden collapse after a period of growth, the opposite of a boom. The article says every boom in the chip industry has ended in one.",
+    "audio": true
+  }
+]

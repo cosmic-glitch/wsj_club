@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-15",
+  "title": "Is the semiconductor industry headed for an almighty crash?",
+  "articleUrl": "https://www.economist.com/business/2026/10/15/is-the-semiconductor-industry-headed-for-an-almighty-crash",
+  "articlePageUrl": "/articles/2026-10-15.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "vertiginous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "vur-TIJ-ih-nus",
+      "articleQuote": "will chipmakers suffer a bust as vertiginous as the boom?",
+      "meaning": "Vertiginous describes something so steep or high that looking at it makes you dizzy, from the Latin for a spinning or turning motion, the same root as vertigo. It started out describing cliffs and tall buildings, and writers now use it for anything that rises or falls dizzyingly fast, like prices or test scores. Here it describes the boom in chip sales, which climbed so fast that a crash back down could feel just as stomach-dropping.",
+      "examples": [
+        "Standing on the glass floor of the skyscraper, Maya felt a vertiginous lurch in her stomach.",
+        "The team's vertiginous drop from first place to ninth in a single month shocked the whole school."
+      ]
+    },
+    {
+      "word": "insatiable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-SAY-shuh-bul",
+      "articleQuote": "AI has created an insatiable appetite for the chips used to train and run AI models.",
+      "meaning": "Insatiable means impossible to satisfy, because no amount is ever enough. It combines in-, meaning not, with the old word satiate, to fill up completely, so an insatiable person can eat or want or ask for more without ever feeling full. It is often used for hunger, curiosity or greed. In this article it describes demand: AI companies want so many chips that the factories cannot make enough, which is why the whole industry has been booming.",
+      "examples": [
+        "Leo has an insatiable curiosity about space and checks out a new astronomy book every week.",
+        "After the long hike, the whole team had an insatiable hunger and ordered three extra pizzas."
+      ]
+    },
+    {
+      "word": "stratospheric",
+      "partOfSpeech": "adjective",
+      "pronunciation": "strat-uh-SFEER-ik",
+      "articleQuote": "profits will shrink and stratospheric stock prices will come back down to earth.",
+      "meaning": "The stratosphere is the layer of the atmosphere high above the clouds where airliners cruise, so stratospheric literally means in that layer. Used figuratively it describes amounts that are extremely high, especially prices, costs or rankings that seem to have left normal levels far behind. Here it describes chip company share prices that have climbed so high that, if the boom ends, the article expects them to fall back, to come back down to earth.",
+      "examples": [
+        "Concert tickets for her favourite band were at stratospheric prices, so Dana decided to wait for a cheaper show.",
+        "After the video went viral, the singer's popularity reached stratospheric levels almost overnight."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Foundries",
+      "articleQuote": "Most chip designers, such as Nvidia, whose graphics-processing units have powered the AI boom, do not make their own silicon.",
+      "meaning": "The article leans on a split in how chips get made, and it explains why so few companies matter. Making a modern chip involves two very different jobs. **Designing** it means deciding where billions of tiny switches called transistors go and how they connect, which is mostly software and engineering talent. **Manufacturing** it means etching those switches onto a slice of silicon in a factory, which needs machines costing hundreds of millions of dollars and a building cleaner than a hospital operating room. A company that only designs is called **fabless**, and a company that builds chips for others is a **foundry**. Nvidia designs; TSMC, a foundry, builds.\n\nWhy does this matter? Because a foundry is extremely expensive to build and extremely hard to run well, firms that cannot keep up drop out. In the early 2000s about 25 companies could make the most advanced chips; today four can, and TSMC makes nearly all of the very best. So every designer, from Nvidia to Google, ends up queueing at the same few doors. That gives the foundries power over prices and timing, which is part of why the article thinks a bust may hurt them less.\n\nThe takeaway: when a product needs a costly, hard-to-copy factory, ask who owns the factory, because whoever does tends to hold the power."
+    },
+    {
+      "name": "Take-or-pay contracts",
+      "articleQuote": "“take-or-pay” agreements, under which customers must buy the agreed volumes or pay anyway",
+      "meaning": "This is a business-law and economics idea about who carries the risk when demand changes. Imagine you order 100 pizzas from a shop for a party. If the party is cancelled, a normal order lets you walk away and the shop is stuck with 100 pizzas it cooked for no one. In a **take-or-pay** contract, you promise to either take the 100 pizzas or pay for them anyway, so the shop's money is safe even if your plans change.\n\nThe article describes the chip version. Memory used to be sold on the **spot market**, where you buy what you need today at today's price, or through short contracts. When demand slackened, buyers simply stopped buying and prices collapsed, so makers carried the whole loss. Now, with only a few suppliers, customers sign up years ahead: Micron says such agreements lock in 35% of its revenue through 2030, with cash deposits that even help pay for new factories. If AI spending crashes, the customers are still obliged to pay, so part of the pain moves from the chipmaker to its buyers.\n\nThe takeaway: whenever you read about a long-term contract, ask who gets stuck if demand disappears, because the contract decides who bears the risk."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What are the \"two laws\" of the semiconductor industry the article describes?",
+      "options": [
+        "Transistor counts keep rising, and every boom ends in a bust",
+        "Chips get cheaper every year, and demand always rises",
+        "Only Asian firms can make chips, and prices never change",
+        "Chips double in size, and profits always fall"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says the first law is that transistor numbers keep climbing and the second is that every boom is followed by a bust."
+    },
+    {
+      "question": "Why does the article argue a bust may be less vertiginous than the boom?",
+      "options": [
+        "AI chips will soon stop being useful",
+        "Few dominant makers are pacing expansion, paying from cash, and customers share the risk",
+        "Governments will pay for any chip losses",
+        "Chip prices have already fallen sharply"
+      ],
+      "answerIndex": 1,
+      "explanation": "Consolidation, cash-funded investment and long-term contracts all soften the fall for chipmakers."
+    },
+    {
+      "question": "What is a foundry?",
+      "options": [
+        "A company that designs chips but does not build them",
+        "A company that makes chips designed by others",
+        "A company that sells finished AI software",
+        "A government lab that tests chips"
+      ],
+      "answerIndex": 1,
+      "explanation": "Foundries such as TSMC manufacture chips for designers like Nvidia that do not make their own silicon."
+    },
+    {
+      "question": "Under a take-or-pay agreement, what must a customer do if it no longer needs the chips?",
+      "options": [
+        "Return them for a full refund",
+        "Cancel the deal for free",
+        "Pay for the agreed volume anyway",
+        "Resell them to the government"
+      ],
+      "answerIndex": 2,
+      "explanation": "The customer must buy the agreed volumes or pay anyway, which shifts some bust risk onto buyers."
+    },
+    {
+      "question": "What does \"insatiable appetite\" mean in describing demand for AI chips?",
+      "options": [
+        "Demand that is slowly fading",
+        "Demand that no amount of supply seems to satisfy",
+        "Demand limited to a few small firms",
+        "Demand that only exists in Asia"
+      ],
+      "answerIndex": 1,
+      "explanation": "Insatiable means impossible to satisfy, so demand keeps growing however many chips are made."
+    }
+  ]
+}
