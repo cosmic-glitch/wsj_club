@@ -1,0 +1,619 @@
+[
+  {
+    "k": "transferable",
+    "t": "transferable",
+    "kind": "vocab",
+    "pron": "trans-FUR-uh-bul",
+    "forms": [
+      "transferable"
+    ],
+    "text": "Transferable means able to be moved from one job or place to another and still be useful. Here, skills from clay-pigeon shooting could help soldiers with a different job: stopping drones.",
+    "audio": true
+  },
+  {
+    "k": "proficiency",
+    "t": "proficiency",
+    "kind": "vocab",
+    "pron": "pruh-FISH-un-see",
+    "forms": [
+      "proficiency"
+    ],
+    "text": "Proficiency is being really good at something because you have practiced it a lot. Here, the army wants soldiers to get better and better at shotguns.",
+    "audio": true
+  },
+  {
+    "k": "mimic",
+    "t": "mimic",
+    "kind": "vocab",
+    "pron": "MIM-ik",
+    "forms": [
+      "mimic"
+    ],
+    "text": "To mimic is to copy how something looks, sounds or moves. Here, launchers copy the way birds fly.",
+    "audio": true
+  },
+  {
+    "k": "clay-pigeon",
+    "t": "clay pigeon",
+    "kind": "word",
+    "forms": [
+      "clay pigeon",
+      "clay-pigeon",
+      "Clay-pigeon",
+      "clay-pigeons",
+      "clay pigeons"
+    ],
+    "text": "A clay pigeon is a flat clay disc that is flung into the air as a moving target for shooting practice. It is called a pigeon because it flies a bit like a bird.",
+    "audio": true
+  },
+  {
+    "k": "clays",
+    "t": "clays",
+    "kind": "word",
+    "forms": [
+      "clays"
+    ],
+    "text": "Clays is short for clay pigeons, the clay discs that shooters aim at.",
+    "audio": true
+  },
+  {
+    "k": "massacre",
+    "t": "massacre",
+    "kind": "word",
+    "forms": [
+      "massacre"
+    ],
+    "text": "A massacre is the killing of many people or animals. Here the writer jokes: the clay discs were not alive, but so many were smashed that it felt like one.",
+    "audio": true
+  },
+  {
+    "k": "wiltshire",
+    "t": "Wiltshire",
+    "kind": "name",
+    "forms": [
+      "Wiltshire"
+    ],
+    "text": "Wiltshire is a county in the south-west of England, where the army's shooting championship was held.",
+    "audio": true
+  },
+  {
+    "k": "championship",
+    "t": "championship",
+    "kind": "word",
+    "forms": [
+      "championship"
+    ],
+    "text": "A championship is a contest to find the best player or team in a sport.",
+    "audio": true
+  },
+  {
+    "k": "quadcopter",
+    "t": "quadcopter",
+    "kind": "word",
+    "forms": [
+      "quadcopter",
+      "quadcopter’s"
+    ],
+    "text": "A quadcopter is a small flying machine with four spinning propellers. Many drones are quadcopters.",
+    "audio": true
+  },
+  {
+    "k": "drone",
+    "t": "drone",
+    "kind": "word",
+    "forms": [
+      "drone",
+      "drones",
+      "drone-like",
+      "drone’s"
+    ],
+    "text": "A drone is a flying machine with no pilot inside. It is flown by someone on the ground or by a computer.",
+    "audio": true
+  },
+  {
+    "k": "warfare",
+    "t": "warfare",
+    "kind": "word",
+    "forms": [
+      "warfare"
+    ],
+    "text": "Warfare means the way wars are fought, including the weapons and tactics used.",
+    "audio": true
+  },
+  {
+    "k": "defence-investment-plan",
+    "t": "Defence Investment Plan",
+    "kind": "name",
+    "forms": [
+      "Defence Investment Plan"
+    ],
+    "text": "The Defence Investment Plan is the British government's plan for what to spend on the army, navy and air force. In June it set aside £750m for protection against drones.",
+    "audio": true
+  },
+  {
+    "k": "committed",
+    "t": "committed",
+    "kind": "word",
+    "forms": [
+      "committed"
+    ],
+    "text": "Committed can mean promised to spend or do something. Here the government promised £750m, which is about 950 million dollars. It can also mean being devoted to a cause.",
+    "audio": true
+  },
+  {
+    "k": "counter-drone",
+    "t": "counter-drone",
+    "kind": "word",
+    "forms": [
+      "counter-drone"
+    ],
+    "text": "Counter-drone means used against drones. Counter-drone protection means ways to spot, stop or destroy enemy drones.",
+    "audio": true
+  },
+  {
+    "k": "acoustic-radar",
+    "t": "acoustic radar",
+    "kind": "word",
+    "forms": [
+      "acoustic radars"
+    ],
+    "text": "An acoustic radar finds things by the sounds they make. A drone's buzzing propellers can give it away.",
+    "audio": true
+  },
+  {
+    "k": "direct-energy-weapons",
+    "t": "direct-energy weapons",
+    "kind": "word",
+    "forms": [
+      "direct-energy weapons"
+    ],
+    "text": "Direct-energy weapons, such as lasers, destroy targets with a beam of energy instead of a bullet.",
+    "audio": true
+  },
+  {
+    "k": "futuristic",
+    "t": "futuristic",
+    "kind": "word",
+    "forms": [
+      "Futuristic"
+    ],
+    "text": "Futuristic means like something from the future, very modern and high-tech.",
+    "audio": true
+  },
+  {
+    "k": "victorian",
+    "t": "Victorian",
+    "kind": "name",
+    "forms": [
+      "Victorian"
+    ],
+    "text": "Victorian means from the time of Queen Victoria, who ruled Britain from 1837 to 1901. Here it means old-fashioned, because shotguns are old technology.",
+    "audio": true
+  },
+  {
+    "k": "aerial",
+    "t": "aerial",
+    "kind": "word",
+    "forms": [
+      "aerial"
+    ],
+    "text": "Aerial means in the air.",
+    "audio": true
+  },
+  {
+    "k": "shells",
+    "t": "shells",
+    "kind": "word",
+    "forms": [
+      "shells"
+    ],
+    "text": "Shells here are shotgun cartridges, the tubes that hold the charge and the metal balls. They have nothing to do with seashells or egg shells.",
+    "audio": true
+  },
+  {
+    "k": "projectiles",
+    "t": "projectiles",
+    "kind": "word",
+    "forms": [
+      "projectiles"
+    ],
+    "text": "Projectiles are things that are shot or thrown through the air, such as bullets or pellets.",
+    "audio": true
+  },
+  {
+    "k": "propeller",
+    "t": "propeller",
+    "kind": "word",
+    "forms": [
+      "propeller"
+    ],
+    "text": "A propeller is a set of spinning blades that pushes a drone, plane or boat along. If you damage one, the drone cannot fly well.",
+    "audio": true
+  },
+  {
+    "k": "crack-shots",
+    "t": "crack shots",
+    "kind": "phrase",
+    "forms": [
+      "crack shots",
+      "crack"
+    ],
+    "text": "A crack shot is someone who is extremely good at shooting. Here, crack also describes the shooters in the title: top-quality, expert.",
+    "audio": true
+  },
+  {
+    "k": "tutoring",
+    "t": "tutoring",
+    "kind": "word",
+    "forms": [
+      "tutoring"
+    ],
+    "text": "Tutoring means teaching one person or a small group, one-on-one.",
+    "audio": true
+  },
+  {
+    "k": "retrain",
+    "t": "retrain",
+    "kind": "word",
+    "forms": [
+      "retrain"
+    ],
+    "text": "To retrain is to teach someone again, from the start, a new way of doing something they already do differently.",
+    "audio": true
+  },
+  {
+    "k": "doomed",
+    "t": "doomed",
+    "kind": "word",
+    "forms": [
+      "doomed"
+    ],
+    "text": "Doomed means certain to fail or have a bad ending. Here, shooting a shotgun while standing stiff and still will make you miss.",
+    "audio": true
+  },
+  {
+    "k": "airborne",
+    "t": "airborne",
+    "kind": "word",
+    "forms": [
+      "airborne"
+    ],
+    "text": "Airborne means flying or in the air.",
+    "audio": true
+  },
+  {
+    "k": "feasibly",
+    "t": "feasibly",
+    "kind": "word",
+    "forms": [
+      "feasibly"
+    ],
+    "text": "Feasibly means in a way that could really work. Here, launchers can realistically act like drones.",
+    "audio": true
+  },
+  {
+    "k": "mph",
+    "t": "mph",
+    "kind": "word",
+    "forms": [
+      "50mph",
+      "100mph"
+    ],
+    "text": "Mph means miles per hour, a measure of speed. 50mph is about 80 kilometres an hour.",
+    "audio": true
+  },
+  {
+    "k": "front-line",
+    "t": "front line",
+    "kind": "word",
+    "forms": [
+      "front line"
+    ],
+    "text": "The front line is the place where the fighting happens in a war.",
+    "audio": true
+  },
+  {
+    "k": "last-resort",
+    "t": "last resort",
+    "kind": "phrase",
+    "forms": [
+      "last resort"
+    ],
+    "text": "A last resort is the thing you only do when everything else has failed. Here, a shotgun is the final defence if a drone gets very close.",
+    "audio": true
+  },
+  {
+    "k": "range",
+    "t": "range",
+    "kind": "word",
+    "forms": [
+      "range"
+    ],
+    "text": "Range here means the distance a weapon can reach. A drone within range is close enough to be hit.",
+    "audio": true
+  },
+  {
+    "k": "downing",
+    "t": "downing",
+    "kind": "word",
+    "forms": [
+      "down"
+    ],
+    "text": "To down a drone means to bring it down out of the sky.",
+    "audio": true
+  },
+  {
+    "k": "armoured",
+    "t": "armoured",
+    "kind": "word",
+    "forms": [
+      "armoured"
+    ],
+    "text": "Armoured means covered in strong protective metal to stop damage. An armoured drone is harder to shoot down.",
+    "audio": true
+  },
+  {
+    "k": "lead-shells",
+    "t": "lead shells",
+    "kind": "word",
+    "forms": [
+      "lead shells"
+    ],
+    "text": "Lead shells are shotgun shells filled with balls of lead, a heavy, soft metal.",
+    "audio": true
+  },
+  {
+    "k": "tinted-goggles",
+    "t": "tinted goggles",
+    "kind": "word",
+    "forms": [
+      "tinted goggles"
+    ],
+    "text": "Tinted goggles are eye protection with coloured lenses. Here the colour makes the orange discs stand out against the grey sky.",
+    "audio": true
+  },
+  {
+    "k": "don",
+    "t": "don",
+    "kind": "word",
+    "forms": [
+      "don"
+    ],
+    "text": "Don here is a verb meaning to put on clothing or gear. It is not the name Don.",
+    "audio": true
+  },
+  {
+    "k": "pop",
+    "t": "pop",
+    "kind": "phrase",
+    "forms": [
+      "pop"
+    ],
+    "text": "To make something pop means to make it stand out clearly so it is easy to see.",
+    "audio": true
+  },
+  {
+    "k": "whizzier",
+    "t": "whizzier",
+    "kind": "word",
+    "forms": [
+      "whizzier"
+    ],
+    "text": "Whizzier means faster and zippier. Whizz is the sound of something rushing by.",
+    "audio": true
+  },
+  {
+    "k": "identify",
+    "t": "identify",
+    "kind": "word",
+    "forms": [
+      "identify"
+    ],
+    "text": "To identify something is to work out what it is or to spot it.",
+    "audio": true
+  },
+  {
+    "k": "nerds",
+    "t": "nerds",
+    "kind": "word",
+    "forms": [
+      "nerds"
+    ],
+    "text": "Nerds here means people who love going deep into technical details. The writer is saying the fine details are for experts.",
+    "audio": true
+  },
+  {
+    "k": "technique",
+    "t": "technique",
+    "kind": "word",
+    "forms": [
+      "technique"
+    ],
+    "text": "Technique is the way you do something skillfully, such as how you stand and move when shooting.",
+    "audio": true
+  },
+  {
+    "k": "correspondent",
+    "t": "correspondent",
+    "kind": "word",
+    "forms": [
+      "correspondent"
+    ],
+    "text": "A correspondent is a journalist who reports on a topic. Here, the writer is talking about themself.",
+    "audio": true
+  },
+  {
+    "k": "a-natural",
+    "t": "a natural",
+    "kind": "phrase",
+    "forms": [
+      "a natural"
+    ],
+    "text": "A natural is someone who seems to be good at something without having to work at it.",
+    "audio": true
+  },
+  {
+    "k": "spirits-were-high",
+    "t": "spirits were high",
+    "kind": "phrase",
+    "forms": [
+      "Spirits were high"
+    ],
+    "text": "If spirits are high, people are in a happy and cheerful mood.",
+    "audio": true
+  },
+  {
+    "k": "cloud-hanging-over",
+    "t": "cloud hanging over",
+    "kind": "phrase",
+    "forms": [
+      "cloud hanging over the day"
+    ],
+    "text": "A cloud hanging over something means a worry that spoils the good mood. The joke is that it was a misty, rainy day, but the real cloud was not the weather.",
+    "audio": true
+  },
+  {
+    "k": "troops",
+    "t": "troops",
+    "kind": "word",
+    "forms": [
+      "troops"
+    ],
+    "text": "Troops are soldiers.",
+    "audio": true
+  },
+  {
+    "k": "sighs",
+    "t": "sighs",
+    "kind": "word",
+    "forms": [
+      "sighs"
+    ],
+    "text": "To sigh is to let out a long breath, often because you are tired, sad or annoyed.",
+    "audio": true
+  },
+  {
+    "k": "embarrassing",
+    "t": "embarrassing",
+    "kind": "word",
+    "forms": [
+      "embarrassing"
+    ],
+    "text": "Embarrassing yourself means doing something that makes you feel silly in front of others.",
+    "audio": true
+  },
+  {
+    "k": "hobby",
+    "t": "hobby",
+    "kind": "word",
+    "forms": [
+      "hobby"
+    ],
+    "text": "A hobby is an activity you do for fun in your spare time.",
+    "audio": true
+  },
+  {
+    "k": "improve-their-aim",
+    "t": "improve their aim",
+    "kind": "phrase",
+    "forms": [
+      "aim"
+    ],
+    "text": "Aim is how well you point something at a target. To improve your aim is to hit what you are trying to hit more often.",
+    "audio": true
+  },
+  {
+    "k": "fighter-pilots",
+    "t": "fighter pilots",
+    "kind": "word",
+    "forms": [
+      "fighter pilots"
+    ],
+    "text": "Fighter pilots fly fast military planes that fight other aircraft.",
+    "audio": true
+  },
+  {
+    "k": "enemy-targets",
+    "t": "enemy targets",
+    "kind": "word",
+    "forms": [
+      "enemy targets"
+    ],
+    "text": "Targets here are the things a soldier tries to hit or destroy. Drones are behind 80% of those destroyed by Ukraine.",
+    "audio": true
+  },
+  {
+    "k": "ukraine",
+    "t": "Ukraine",
+    "kind": "name",
+    "forms": [
+      "Ukraine",
+      "Ukrainians"
+    ],
+    "text": "Ukraine is a country in eastern Europe that has been fighting a war with Russia since 2022. Its army uses lots of drones.",
+    "audio": true
+  },
+  {
+    "k": "instructors",
+    "t": "instructors",
+    "kind": "word",
+    "forms": [
+      "instructors"
+    ],
+    "text": "Instructors are teachers who show people how to do something.",
+    "audio": true
+  },
+  {
+    "k": "shot",
+    "t": "shot",
+    "kind": "word",
+    "forms": [
+      "shot"
+    ],
+    "text": "Shot here means the tiny metal balls inside a shotgun shell. In sports, a shot is a single attempt. And to shoot is to fire.",
+    "audio": true
+  },
+  {
+    "k": "rifle",
+    "t": "rifle",
+    "kind": "word",
+    "forms": [
+      "rifle",
+      "rifles"
+    ],
+    "text": "A rifle is a long gun that fires a single bullet very accurately over long distances.",
+    "audio": true
+  },
+  {
+    "k": "shotgun",
+    "t": "shotgun",
+    "kind": "word",
+    "forms": [
+      "shotgun",
+      "shotguns",
+      "shotguns’"
+    ],
+    "text": "A shotgun is a gun that fires many tiny metal balls at once, which spread out.",
+    "audio": true
+  },
+  {
+    "k": "launchers",
+    "t": "launchers",
+    "kind": "word",
+    "forms": [
+      "Launchers"
+    ],
+    "text": "Launchers are machines that fling the clay discs into the air at set speeds and angles.",
+    "audio": true
+  },
+  {
+    "k": "simulate",
+    "t": "simulate",
+    "kind": "word",
+    "forms": [
+      "simulate"
+    ],
+    "text": "To simulate something is to copy it closely for practice or testing.",
+    "audio": true
+  }
+]

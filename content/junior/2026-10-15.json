@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-15",
+  "title": "Attack drones, meet Britain’s crack clay-pigeon shooters",
+  "articleUrl": "https://www.economist.com/britain/2026/10/15/attack-drones-meet-britains-crack-clay-pigeon-shooters",
+  "articlePageUrl": "/articles/junior/2026-10-15.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "transferable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "trans-FUR-uh-bul",
+      "articleQuote": "I think there are huge transferable skills",
+      "meaning": "Something transferable can be moved from one place or job to another and still be useful. A transferable skill is one you learn doing one thing that also helps you do something else. Learning to balance on a skateboard can help you balance on a snowboard. In the article, the army team boss says the skills from clay-pigeon shooting are transferable to shooting down drones.",
+      "examples": [
+        "Learning piano gave her transferable skills that helped her learn the guitar.",
+        "Keeping a team organized is a transferable skill, whether you play soccer or run a club."
+      ]
+    },
+    {
+      "word": "proficiency",
+      "partOfSpeech": "noun",
+      "pronunciation": "pruh-FISH-un-see",
+      "articleQuote": "the army started using clays to develop soldiers’ proficiency with them",
+      "meaning": "Proficiency is being really good at something because you have practiced it a lot. It is more than just knowing how to do a thing; it means you can do it well. A kid with proficiency in swimming can cross the pool easily. In the article, the army wants soldiers to build proficiency with shotguns by practicing on clay targets.",
+      "examples": [
+        "After a year of lessons, Mia had real proficiency on the violin.",
+        "The coach tested each player’s proficiency at passing the ball."
+      ]
+    },
+    {
+      "word": "mimic",
+      "partOfSpeech": "verb",
+      "pronunciation": "MIM-ik",
+      "articleQuote": "Launchers built to mimic the flight patterns of different birds",
+      "meaning": "To mimic something is to copy how it looks, sounds, or moves. A parrot can mimic your voice, and an actor can mimic a famous person. In the article, clay-target launchers are built to mimic how birds fly, so shooters get practice with targets that move like the real thing.",
+      "examples": [
+        "My little brother likes to mimic the way our dog howls.",
+        "The video game was made to mimic what it feels like to drive a race car."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Shotgun spread",
+      "articleQuote": "shells contain many projectiles, which spread out in the air",
+      "meaning": "A **shotgun** works differently from a rifle. A rifle shoots one bullet. A shotgun shell is full of lots of tiny metal balls, called **shot**. When they leave the barrel, they start close together, then **spread out** in the air like a fan, getting wider the farther they travel.\n\nImagine throwing one tennis ball at a paper cup across the room. You have to aim perfectly. Now imagine tossing a handful of dried beans at the cup instead. The beans scatter, so even if your aim is a little off, one is likely to hit. That is why a shotgun is good against small things that move fast and unpredictably, like a bird or a flying drone: you do not need a perfect shot.\n\nThe trade-off is distance. The farther the shot travels, the wider and thinner the spread becomes, so fewer pieces hit and each one is weaker. A shotgun works best up close. In the article, that is why a drone close enough for a shotgun is already too close, and why shooters ask how widely the shot should spread."
+    },
+    {
+      "name": "Leading a target",
+      "articleQuote": "judging how far ahead of it to aim",
+      "meaning": "**Leading a target** means aiming at the spot where a moving thing is going to be, not where it is right now. Anything you send toward a moving target needs time to get there, and during that time the target keeps moving.\n\nThink about throwing a football to a friend who is running. If you throw right at your friend, the ball lands behind them, because they have already run on. A good quarterback throws to the empty space in front of the runner so the ball and the runner arrive together. That throw is leading the target.\n\nThe faster the target moves, the farther ahead you must aim. Hunters, soccer players passing to a teammate, and pilots all do this. In the article, rifle shooters learn to stay perfectly still, but a shotgun shooter must move with the target and judge how far ahead to aim, so the army has to retrain them."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why is the British army looking at clay-pigeon shooting?",
+      "options": [
+        "To help soldiers prepare to shoot down drones",
+        "To teach soldiers to hunt birds",
+        "To raise money for new uniforms",
+        "To replace its rifles with clay discs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The army team boss hopes the skills of clay-pigeon shooting can help soldiers get ready for drone warfare."
+    },
+    {
+      "question": "Why is a shotgun good for hitting small, fast, flying targets?",
+      "options": [
+        "It shoots a single, very heavy bullet",
+        "Its shells hold many small pieces that spread out",
+        "It never needs to be aimed",
+        "It makes no noise"
+      ],
+      "answerIndex": 1,
+      "explanation": "A shotgun shell holds many projectiles that spread out in the air, making it easier to hit a bird’s wing or a drone’s propeller."
+    },
+    {
+      "question": "\"Launchers built to mimic the flight patterns of different birds.\" What does mimic mean here?",
+      "options": [
+        "To copy",
+        "To break",
+        "To hide",
+        "To count"
+      ],
+      "answerIndex": 0,
+      "explanation": "To mimic is to copy how something moves, so the launchers copy how birds fly."
+    },
+    {
+      "question": "Why does the shooting expert say rifle shooters must be retrained to use a shotgun?",
+      "options": [
+        "Rifles are much louder than shotguns",
+        "Rifle shooting means staying very still, but a shotgun shooter must move with the target",
+        "Shotguns are only used in the rain",
+        "Rifle shooters are not allowed to use clays"
+      ],
+      "answerIndex": 1,
+      "explanation": "Rifle shooting is about being as still as possible, while hitting a flying target means moving with it and judging how far ahead to aim."
+    },
+    {
+      "question": "According to the army team boss, how should a shotgun be used against drones?",
+      "options": [
+        "As the first choice, always",
+        "Only on rainy days",
+        "As a last resort, because a drone in range is already too close",
+        "Never, under any conditions"
+      ],
+      "answerIndex": 2,
+      "explanation": "He says a shotgun should only be a last resort, since a drone within range is already too close and it is much better to down it earlier."
+    }
+  ]
+}
