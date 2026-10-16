@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-16",
+  "title": "Europe has lots of pleasant cities but too few that matter",
+  "articleUrl": "https://www.economist.com/europe/2026/10/15/europe-has-lots-of-pleasant-cities-but-too-few-that-matter",
+  "articlePageUrl": "/articles/2026-10-16.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "conurbation",
+      "partOfSpeech": "noun",
+      "pronunciation": "kon-ur-BAY-shun",
+      "articleQuote": "In time European conurbations settled into the shape and size that made sense given their respective countries",
+      "meaning": "A conurbation is a large urban area formed when several towns or cities grow outward until they merge into one continuous built-up region. It comes from the Latin con-, meaning together, plus urbs, meaning city. Greater Manchester in England and the Ruhr region in Germany are classic examples. Here the Economist uses it as a general word for Europe's big city areas, which grew until they fit their countries rather than the world stage.",
+      "examples": [
+        "The railway line links a conurbation of six towns that now feels like a single sprawling city.",
+        "Over fifty years, the farmland between the two cities vanished and a vast conurbation took its place."
+      ]
+    },
+    {
+      "word": "middling",
+      "partOfSpeech": "adjective",
+      "pronunciation": "MID-ling",
+      "articleQuote": "Having lots of middling cities means none is likely to disconnect from its home polities.",
+      "meaning": "Middling means medium or average in size, quality or importance, neither impressive nor terrible. It grew out of the word middle, and it often carries a slightly unexcited tone, as in a middling performance. In this article it describes cities that are neither tiny nor giant, which is exactly Europe's pattern: many mid-sized cities and no true megacity.",
+      "examples": [
+        "The restaurant had middling reviews, so we expected a decent but forgettable dinner.",
+        "Despite a middling start to the season, the team rallied and reached the final."
+      ]
+    },
+    {
+      "word": "sprawl",
+      "partOfSpeech": "noun",
+      "pronunciation": "SPRAWL",
+      "articleQuote": "sometimes despite planning laws designed to protect against unsightly sprawl",
+      "meaning": "Sprawl is the uncontrolled spreading of a city outward into the countryside, usually as scattered houses, shopping centres and roads that eat up open land. The word also works as a verb meaning to spread out awkwardly, like a cat sprawled on a sofa. Here the article notes that European cities have often pushed past their old medieval boundaries even though planning laws tried to stop ugly sprawl, which is why many have grown to the size they are today.",
+      "examples": [
+        "The new suburbs were part of the sprawl that slowly swallowed the farms outside town.",
+        "Many cities now limit sprawl by building taller apartment blocks near train stations."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Agglomeration economies",
+      "articleQuote": "Cramming more humans near each other creates more opportunities to match productive workers with innovative firms.",
+      "meaning": "This is an economics idea explaining why people and companies cluster in cities even though cities are crowded and expensive. Think of a school cafeteria versus a lunch table of three: with hundreds of people in one room, you are far more likely to find someone who shares your hobby, can fix your project, or knows a good idea. Cities work the same way. When many workers and firms sit close together, three things get easier: **matching** (a specialised worker finds the firm that needs exactly her skill), **sharing** (companies split the cost of airports, universities and suppliers) and **learning** (ideas spread by chatting at lunch or switching jobs).\n\nThe article gives a number: according to the OECD, doubling a city's population is associated with a double-digit rise in productivity, meaning output per worker. That is why economists say bigger usually means better, and why the Economist worries that Europe's largest city, Paris, has under half the economic output of New York. Congestion and high rents are the price, but the extra riches usually outweigh it.\n\nThe takeaway: when many people crowd together, the gains come from easier connections between them, so distance, even between nearby cities in different countries, quickly weakens the effect."
+    },
+    {
+      "name": "Winner-takes-most markets",
+      "articleQuote": "In a world of winner-takes-most globalised industries such as artificial intelligence, this is a sizeable disadvantage.",
+      "meaning": "Some industries reward the top few players with most of the money, while everyone else shares crumbs. Think of video games: millions play the one or two hits their friends play, because the fun is in playing together. When customers, talent and investors all want the same place or product, the leader grows even stronger, which draws in even more. Economists call this a **winner-takes-most** market.\n\nThe article applies it to places. In AI, the best engineers and the money flow to one spot, Silicon Valley, and a talented graduate from Charleston, South Carolina, simply heads to San Francisco. A graduate from Graz in Austria faces a scattered choice, such as Berlin, Dublin or Paris, so no single European hub pulls ahead. The article calls this dispersion a drag on European competitiveness, because in a winner-takes-most race, being one of many second-best centres does not win.\n\nThe takeaway: when a market rewards being number one, a spread-out set of good-but-smaller players can lose to one concentrated giant."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why does the article say Paris is an underwhelming flagship for the European Union?",
+      "options": [
+        "It has a smaller population than Madrid",
+        "It has about one-third of Shanghai's population and under half of New York's economic output",
+        "It is not a national capital",
+        "It has no tourist attractions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article notes Paris has one-third of Shanghai's population and less than half of New York's economic output."
+    },
+    {
+      "question": "According to the article, why do economists tend to think bigger cities are better?",
+      "options": [
+        "Big cities have lower rents",
+        "Packing people close together helps match workers with firms and spreads ideas and skills",
+        "Big cities have fewer traffic problems",
+        "Governments give them more money"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says more people nearby means more chances to match productive workers with innovative firms and to circulate ideas."
+    },
+    {
+      "question": "What does \"middling\" mean in the phrase \"lots of middling cities\"?",
+      "options": [
+        "Medium-sized or average",
+        "Very ancient",
+        "Extremely wealthy",
+        "Located in the middle of a country"
+      ],
+      "answerIndex": 0,
+      "explanation": "Middling means medium or average, describing cities neither tiny nor giant."
+    },
+    {
+      "question": "Why does the article suggest linking Amsterdam, Antwerp, Cologne and Brussels will not create a global mega-hub?",
+      "options": [
+        "The trains between them are too slow",
+        "The benefits of being in the same place fade sharply over even short distances",
+        "They are all too small to be cities",
+        "Their governments have banned cooperation"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says the advantages of being together decay sharply over even short distances, especially across countries."
+    },
+    {
+      "question": "What upside does the article offer for Europe's many mid-sized cities?",
+      "options": [
+        "They make Europe the fastest-growing region",
+        "No single city dominates, so there is less of a gulf between elites and a left-behind \"flyover country\"",
+        "They attract more AI companies than America",
+        "They are cheaper to govern"
+      ],
+      "answerIndex": 1,
+      "explanation": "Without a dominant metropolis, Europe has no vast flyover country for urban elites to sneer at."
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+[
+  {
+    "k": "conurbation",
+    "t": "conurbations",
+    "kind": "vocab",
+    "pron": "kon-ur-BAY-shun",
+    "forms": [
+      "conurbations"
+    ],
+    "text": "A conurbation is a big urban area formed when neighbouring towns and cities grow until they join together. Here it means Europe's major city areas, which grew until they fit their own countries.",
+    "audio": true
+  },
+  {
+    "k": "middling",
+    "t": "middling",
+    "kind": "vocab",
+    "pron": "MID-ling",
+    "forms": [
+      "middling"
+    ],
+    "text": "Middling means medium or average, neither great nor terrible. The article uses it for cities that are mid-sized: Europe has many of them but no giant.",
+    "audio": true
+  },
+  {
+    "k": "sprawl",
+    "t": "sprawl",
+    "kind": "vocab",
+    "pron": "SPRAWL",
+    "forms": [
+      "sprawl"
+    ],
+    "text": "Sprawl is the uncontrolled spread of a city outward into open land. European cities sometimes grew past their old medieval edges even though planning laws tried to stop it.",
+    "audio": true
+  },
+  {
+    "k": "metropolis",
+    "t": "metropolises",
+    "kind": "word",
+    "forms": [
+      "metropolises"
+    ],
+    "text": "A metropolis is a very large, important city, usually the main economic centre of a region. Here the writer asks whether Europe's cities can match the advantages of true metropolises like New York.",
+    "audio": true
+  },
+  {
+    "k": "standard-bearer",
+    "t": "standard-bearer",
+    "kind": "phrase",
+    "forms": [
+      "standard-bearer"
+    ],
+    "text": "A standard-bearer was the soldier who carried the flag in battle. Now it means the leading example of a group, here Paris as the biggest city of the European Union.",
+    "audio": true
+  },
+  {
+    "k": "underwhelming",
+    "t": "underwhelming",
+    "kind": "word",
+    "forms": [
+      "underwhelming"
+    ],
+    "text": "Underwhelming is the opposite of overwhelming: it means disappointing or less impressive than expected. Paris looks small next to Shanghai and New York.",
+    "audio": true
+  },
+  {
+    "k": "flagship",
+    "t": "flagship",
+    "kind": "word",
+    "forms": [
+      "flagship"
+    ],
+    "text": "A flagship was the main ship of a fleet. Today it means the best or most important example of something, such as a company's top product or, here, a union's leading city.",
+    "audio": true
+  },
+  {
+    "k": "ville-lumiere",
+    "t": "Ville Lumière",
+    "kind": "name",
+    "forms": [
+      "Ville Lumière"
+    ],
+    "text": "Ville Lumière is French for City of Light, a nickname for Paris. It reflects the city's early streetlights and its role in the Age of Enlightenment.",
+    "audio": true
+  },
+  {
+    "k": "dauntingly",
+    "t": "dauntingly",
+    "kind": "word",
+    "forms": [
+      "dauntingly"
+    ],
+    "text": "Dauntingly means in a way that makes you feel nervous or overwhelmed. To a tourist with only a few days, Paris can seem too large to see.",
+    "audio": true
+  },
+  {
+    "k": "smothering",
+    "t": "smothering",
+    "kind": "word",
+    "forms": [
+      "smothering"
+    ],
+    "text": "Smothering literally means blocking someone's air, and figuratively means controlling or overwhelming in a suffocating way. The French sometimes feel Paris's power over the country is smothering.",
+    "audio": true
+  },
+  {
+    "k": "bloated",
+    "t": "bloated",
+    "kind": "word",
+    "forms": [
+      "bloated"
+    ],
+    "text": "Bloated means swollen, too big for its purpose. Here it describes Paris as an administrative headquarters that has grown oversized.",
+    "audio": true
+  },
+  {
+    "k": "over-centralised",
+    "t": "over-centralised",
+    "kind": "word",
+    "forms": [
+      "over-centralised"
+    ],
+    "text": "Over-centralised means too much power and activity sit in one place. France is the classic case, with most government and business decisions made in Paris.",
+    "audio": true
+  },
+  {
+    "k": "eu",
+    "t": "EU",
+    "kind": "name",
+    "forms": [
+      "EU"
+    ],
+    "text": "The EU, or European Union, is a group of 27 European countries that share a single market, many laws and, for many members, one currency.",
+    "audio": true
+  },
+  {
+    "k": "urbanised",
+    "t": "urbanised",
+    "kind": "word",
+    "forms": [
+      "urbanised"
+    ],
+    "text": "Urbanised means that most people live in cities and towns rather than the countryside. Europe is a largely urbanised continent.",
+    "audio": true
+  },
+  {
+    "k": "dynamism",
+    "t": "dynamism",
+    "kind": "word",
+    "forms": [
+      "dynamism"
+    ],
+    "text": "Dynamism is energy and constant change, especially in an economy full of new businesses and ideas. The article argues Europe needs more of it.",
+    "audio": true
+  },
+  {
+    "k": "economist-intelligence-unit",
+    "t": "Economist Intelligence Unit",
+    "kind": "name",
+    "forms": [
+      "Economist Intelligence Unit"
+    ],
+    "text": "The Economist Intelligence Unit is the research and analysis arm of The Economist's parent group, which is why the article calls it a sister company. Its yearly liveability ranking scores cities on things like safety, health care and culture.",
+    "audio": true
+  },
+  {
+    "k": "commercial-heft",
+    "t": "heft",
+    "kind": "phrase",
+    "forms": [
+      "heft"
+    ],
+    "text": "Heft means weight, and commercial heft means real economic weight and influence. The article says Europe's charming cities often lack it.",
+    "audio": true
+  },
+  {
+    "k": "hinterland",
+    "t": "hinterlands",
+    "kind": "word",
+    "forms": [
+      "hinterlands"
+    ],
+    "text": "A hinterland is the land behind a coast or a city, usually rural. China and India have vast rural hinterlands, yet their biggest cities still produce a larger share of national output.",
+    "audio": true
+  },
+  {
+    "k": "output",
+    "t": "output",
+    "kind": "word",
+    "forms": [
+      "output"
+    ],
+    "text": "Economic output is the total value of the goods and services an area produces. It is the main way the article compares cities.",
+    "audio": true
+  },
+  {
+    "k": "et-alors",
+    "t": "Et alors?",
+    "kind": "phrase",
+    "forms": [
+      "Et alors?"
+    ],
+    "text": "Et alors? is French for So what? The writer imagines a sceptic who asks why Europe needs bigger cities at all.",
+    "audio": true
+  },
+  {
+    "k": "jakarta-sur-seine",
+    "t": "Jakarta-sur-Seine",
+    "kind": "phrase",
+    "forms": [
+      "Jakarta-sur-Seine"
+    ],
+    "text": "This is a joke place name: sur-Seine means on the Seine, the river through Paris. The writer imagines Paris becoming as huge as Jakarta. Tokyo am Rhein, a Tokyo on the Rhine, plays the same trick in German.",
+    "audio": true
+  },
+  {
+    "k": "cram",
+    "t": "Cramming",
+    "kind": "word",
+    "forms": [
+      "Cramming"
+    ],
+    "text": "To cram is to squeeze many things into a small space. The economists' idea is that packing more people close together makes the city richer.",
+    "audio": true
+  },
+  {
+    "k": "productivity",
+    "t": "productivity",
+    "kind": "word",
+    "forms": [
+      "productivity"
+    ],
+    "text": "Productivity is how much output a worker or firm produces in an hour or with a given set of resources. Higher productivity is the main source of rising living standards.",
+    "audio": true
+  },
+  {
+    "k": "oecd",
+    "t": "OECD",
+    "kind": "name",
+    "forms": [
+      "OECD"
+    ],
+    "text": "The OECD, the Organisation for Economic Co-operation and Development, is a club of mostly rich countries that collects data and gives advice on economic policy.",
+    "audio": true
+  },
+  {
+    "k": "congestion",
+    "t": "congestion",
+    "kind": "word",
+    "forms": [
+      "congestion"
+    ],
+    "text": "Congestion means overcrowding, especially traffic jams and packed public transport. It is a cost of big cities.",
+    "audio": true
+  },
+  {
+    "k": "amenity",
+    "t": "amenities",
+    "kind": "word",
+    "forms": [
+      "amenities"
+    ],
+    "text": "Amenities are features that make a place pleasant to live in, such as parks, theatres and sports stadiums. The article says they help make up for crowds and high rents.",
+    "audio": true
+  },
+  {
+    "k": "seep",
+    "t": "seeped",
+    "kind": "word",
+    "forms": [
+      "seeped"
+    ],
+    "text": "To seep is to flow slowly through a small gap, like water through soil. The article uses it for cities gradually leaking out past their medieval walls.",
+    "audio": true
+  },
+  {
+    "k": "medieval",
+    "t": "medieval",
+    "kind": "word",
+    "forms": [
+      "medieval"
+    ],
+    "text": "Medieval refers to the Middle Ages, roughly the years 500 to 1500. Many European cities began then, with tight boundaries.",
+    "audio": true
+  },
+  {
+    "k": "polity",
+    "t": "polities",
+    "kind": "word",
+    "forms": [
+      "polities"
+    ],
+    "text": "A polity is an organised political community such as a country or region. The article means that no European city is likely to drift away from the nation it belongs to.",
+    "audio": true
+  },
+  {
+    "k": "integration",
+    "t": "integration",
+    "kind": "word",
+    "forms": [
+      "integration"
+    ],
+    "text": "European integration means the process by which European countries joined their economies and laws through the EU. In theory it should make the whole EU feel like one home market.",
+    "audio": true
+  },
+  {
+    "k": "megalopolis",
+    "t": "megalopolises",
+    "kind": "word",
+    "forms": [
+      "megalopolises"
+    ],
+    "text": "A megalopolis is a huge region of connected cities, even larger than a metropolis. The article says integration should have created a handful of these.",
+    "audio": true
+  },
+  {
+    "k": "oomph",
+    "t": "oomph",
+    "kind": "word",
+    "forms": [
+      "oomph"
+    ],
+    "text": "Oomph is informal for power, energy or impact. No European city has the oomph of New York in finance.",
+    "audio": true
+  },
+  {
+    "k": "global-snuff",
+    "t": "snuff",
+    "kind": "phrase",
+    "forms": [
+      "snuff"
+    ],
+    "text": "Up to snuff is an idiom meaning meeting the required standard. Here the writer says Europe's mid-sized capitals are not quite good enough to compete globally, with a quick sorry to Prague.",
+    "audio": true
+  },
+  {
+    "k": "winner-takes-most",
+    "t": "winner-takes-most",
+    "kind": "phrase",
+    "forms": [
+      "winner-takes-most"
+    ],
+    "text": "A winner-takes-most market is one where the top few firms or places capture most of the rewards. AI is the article's example, which is why scattered European hubs struggle.",
+    "audio": true
+  },
+  {
+    "k": "silicon-valley",
+    "t": "Silicon Valley",
+    "kind": "name",
+    "forms": [
+      "Silicon Valley"
+    ],
+    "text": "Silicon Valley is the area around San Francisco that is home to many of the world's biggest technology companies and start-ups.",
+    "audio": true
+  },
+  {
+    "k": "gnaw",
+    "t": "gnaws",
+    "kind": "word",
+    "forms": [
+      "gnaws"
+    ],
+    "text": "To gnaw is to bite at something steadily, wearing it down. Here it means that the spread-out nature of Europe's cities slowly harms its competitiveness.",
+    "audio": true
+  },
+  {
+    "k": "console",
+    "t": "console",
+    "kind": "word",
+    "forms": [
+      "console"
+    ],
+    "text": "To console yourself means to find comfort after a disappointment. The article offers two comforting thoughts to Europeans.",
+    "audio": true
+  },
+  {
+    "k": "mega-hub",
+    "t": "mega-hub",
+    "kind": "word",
+    "forms": [
+      "mega-hub"
+    ],
+    "text": "A hub is a central point where lots of activity meets, and a mega-hub is a very large one. The question is whether linked cities could act as one.",
+    "audio": true
+  },
+  {
+    "k": "decay",
+    "t": "decay",
+    "kind": "word",
+    "forms": [
+      "decay"
+    ],
+    "text": "To decay means to gradually weaken. The benefits of sharing a place shrink fast as distance grows, even across short train rides.",
+    "audio": true
+  },
+  {
+    "k": "left-behind",
+    "t": "left behind",
+    "kind": "phrase",
+    "forms": [
+      "left behind"
+    ],
+    "text": "Feeling left behind means believing that the economy and politicians have ignored your community while others, usually in big cities, prosper.",
+    "audio": true
+  },
+  {
+    "k": "flyover-country",
+    "t": "flyover country",
+    "kind": "phrase",
+    "forms": [
+      "flyover country"
+    ],
+    "text": "Flyover country is an American phrase for the middle of the country that people on the coasts only see from a plane window. It is used mockingly by some urban elites.",
+    "audio": true
+  },
+  {
+    "k": "sneer",
+    "t": "sneer",
+    "kind": "word",
+    "forms": [
+      "sneer"
+    ],
+    "text": "To sneer is to show contempt with a mocking tone or expression. Europe, the writer says, lacks a big gap between sneering elites and the places they look down on.",
+    "audio": true
+  },
+  {
+    "k": "wee",
+    "t": "wee",
+    "kind": "word",
+    "forms": [
+      "wee"
+    ],
+    "text": "Wee is Scottish and informal for very small. It adds a gentle humour to the article's closing description of Europe's many small cities.",
+    "audio": true
+  }
+]
