@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-16",
+  "title": "China has captured the market for hobbyist 3D printers",
+  "articleUrl": "https://www.economist.com/china/2026/10/15/china-has-captured-the-market-for-hobbyist-3d-printers",
+  "articlePageUrl": "/articles/junior/2026-10-16.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "wary",
+      "partOfSpeech": "adjective",
+      "pronunciation": "WAIR-ee",
+      "articleQuote": "Firms are wary of relying on Chinese products",
+      "meaning": "Being wary means being careful because you are not sure something is safe or a good idea. A wary person watches closely and does not trust too fast. You might be wary of a dog you have never met. In the article, companies are wary of using Chinese industrial printers, because they would have to share secret designs with them.",
+      "examples": [
+        "I was wary of the ice on the pond, so I tested it with my foot first.",
+        "The cat was wary of the new puppy and stayed on top of the shelf."
+      ]
+    },
+    {
+      "word": "undeterred",
+      "partOfSpeech": "adjective",
+      "pronunciation": "un-dih-TURD",
+      "articleQuote": "Undeterred, Chinese suppliers are creating a new form of manufacturing",
+      "meaning": "If you are undeterred, you keep going even though something is making it harder. A problem or a warning does not scare you off. A runner who trips but gets up and finishes the race is undeterred. In the article, Chinese printer makers have trouble selling to factories abroad, but they are undeterred and invent a new way to use their printers.",
+      "examples": [
+        "Undeterred by the rain, the team kept playing soccer.",
+        "She missed the shot three times, but undeterred, she kept practicing."
+      ]
+    },
+    {
+      "word": "infringe",
+      "partOfSpeech": "verb",
+      "pronunciation": "in-FRINJ",
+      "articleQuote": "Bambu Lab had infringed on four patents held by an American company",
+      "meaning": "To infringe on something is to break a rule or a right that belongs to someone else, often by using what is theirs without permission. If you copy a friend's drawing and say it is yours, you infringe on their work. In the article, a court decided that a printer company used inventions that belonged to another company.",
+      "examples": [
+        "Copying a song and selling it infringes on the singer's rights.",
+        "The club said that walking on the new grass would infringe the rules."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Patent",
+      "articleQuote": "infringed on four patents held by an American company",
+      "meaning": "A **patent** is a promise from the government to an inventor. It says: for a number of years, nobody else may make or sell your invention unless you allow it. It is like a lock on a new idea.\n\nImagine you invent a clip that keeps a backpack zipper from sticking. Without a patent, a big company could copy it tomorrow, sell millions, and you would get nothing. With a patent, the company must ask you first, and usually pay you.\n\nWhy have patents? They reward people for the hard work of inventing. The trade-off is that after a number of years the patent ends, and then everyone may use the idea. If someone uses a patented invention without permission, the owner can go to court. That is what happened in the article: a court said a printer company had broken four patents and ordered it to pay money."
+    },
+    {
+      "name": "Price war",
+      "articleQuote": "Price wars have eaten into the printer dragons’ profits",
+      "meaning": "A **price war** happens when companies selling the same kind of thing keep cutting their prices to win customers from each other.\n\nPicture two lemonade stands on one street. One charges $2 a cup. The other charges $1.50 and gets all the customers. So the first drops to $1. Then the second goes to 75 cents. Everyone who buys is happy, because the lemonade is cheap. But each stand now makes less money on every cup, and if the price gets too low, they may lose money.\n\nPrice wars are good for buyers in the short run, but they squeeze the sellers' profits. Some sellers may give up, and that leaves fewer choices. In the article, Chinese 3D printer makers sell more and more printers, but price wars mean they earn less on each one."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "About how much of the world's hobbyist 3D printer market do Chinese companies have now?",
+      "options": [
+        "About 19%",
+        "About half",
+        "About 96%",
+        "Less than 5%"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says China's global market share has risen from 19% to 96% in ten years."
+    },
+    {
+      "question": "Why is it hard for Chinese companies to sell industrial 3D printers abroad?",
+      "options": [
+        "The printers are too cheap",
+        "Firms are wary of giving sensitive designs to Chinese products",
+        "Industrial printers are not allowed to be sold",
+        "Nobody wants printers anymore"
+      ],
+      "answerIndex": 1,
+      "explanation": "Firms worry about feeding secret designs into Chinese products, so most top machines still come from American and European makers."
+    },
+    {
+      "question": "\"Bambu Lab had infringed on four patents.\" What does infringed mean here?",
+      "options": [
+        "Improved",
+        "Broke someone's rights",
+        "Paid for",
+        "Hid"
+      ],
+      "answerIndex": 1,
+      "explanation": "To infringe is to use something that belongs to someone else, like a patent, without permission."
+    },
+    {
+      "question": "What is a patent?",
+      "options": [
+        "A tax on factories",
+        "A kind of plastic used in printers",
+        "A rule that all prices must be the same",
+        "A government promise that only the inventor can make or sell an invention for a time"
+      ],
+      "answerIndex": 3,
+      "explanation": "A patent protects an inventor for a number of years so others cannot copy the invention without permission."
+    },
+    {
+      "question": "What are \"3D-printing farms\"?",
+      "options": [
+        "Fields where plastic is grown",
+        "Places that sell printers to hobbyists",
+        "Factories with thousands of desktop printers working together",
+        "Schools that teach printing"
+      ],
+      "answerIndex": 2,
+      "explanation": "Printing farms have as many as 5,000 desktop printers that operate like factories, making things quickly and cheaply."
+    }
+  ]
+}

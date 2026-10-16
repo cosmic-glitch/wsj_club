@@ -1,0 +1,493 @@
+[
+  {
+    "k": "wary",
+    "t": "wary",
+    "kind": "vocab",
+    "pron": "WAIR-ee",
+    "forms": [
+      "wary"
+    ],
+    "text": "Wary means careful because you are not sure something is safe. Here, companies are careful about using Chinese machines, since they would have to share secret designs.",
+    "audio": true
+  },
+  {
+    "k": "undeterred",
+    "t": "undeterred",
+    "kind": "vocab",
+    "pron": "un-dih-TURD",
+    "forms": [
+      "Undeterred",
+      "undeterred"
+    ],
+    "text": "Undeterred means you keep going even when something makes it harder. Here, Chinese makers did not give up after hitting problems selling to factories abroad.",
+    "audio": true
+  },
+  {
+    "k": "infringe",
+    "t": "infringe",
+    "kind": "vocab",
+    "pron": "in-FRINJ",
+    "forms": [
+      "infringed"
+    ],
+    "text": "To infringe is to break someone's rights by using what belongs to them without permission. Here, a court said a printer company used inventions owned by another company.",
+    "audio": true
+  },
+  {
+    "k": "hobbyist",
+    "t": "hobbyist",
+    "kind": "word",
+    "forms": [
+      "hobbyist",
+      "hobbyists"
+    ],
+    "text": "A hobbyist is a person who does something for fun in their free time, not as a job. Here, these are printers sold to regular people to use at home.",
+    "audio": true
+  },
+  {
+    "k": "3d-printer",
+    "t": "3D printer",
+    "kind": "word",
+    "forms": [
+      "3D printer",
+      "3D printers",
+      "3D-printing",
+      "3D-printer"
+    ],
+    "text": "A 3D printer builds a real object, such as a toy or a tool, by laying down thin layers of melted plastic one on top of another until the shape is done.",
+    "audio": true
+  },
+  {
+    "k": "humble",
+    "t": "humble",
+    "kind": "word",
+    "forms": [
+      "humble"
+    ],
+    "text": "Humble means simple and not fancy or proud. Here, the writer means the printer seems like an ordinary gadget, yet it is doing something big.",
+    "audio": true
+  },
+  {
+    "k": "geeky",
+    "t": "geeky",
+    "kind": "word",
+    "forms": [
+      "geeky"
+    ],
+    "text": "Geeky describes something that only people who love technology or science were excited about. Here, 3D printers used to be a nerdy hobby.",
+    "audio": true
+  },
+  {
+    "k": "curios",
+    "t": "curios",
+    "kind": "word",
+    "forms": [
+      "curios"
+    ],
+    "text": "Curios are small, unusual objects that are interesting to look at but not very useful. Here, 3D printers used to seem like fun toys, not real products.",
+    "audio": true
+  },
+  {
+    "k": "export",
+    "t": "exports",
+    "kind": "word",
+    "forms": [
+      "Exports",
+      "export"
+    ],
+    "text": "To export is to sell goods to other countries. Exports are the goods that get sent abroad. Here, Chinese printers sold overseas grew by 90%.",
+    "audio": true
+  },
+  {
+    "k": "market-share",
+    "t": "market share",
+    "kind": "phrase",
+    "forms": [
+      "market share"
+    ],
+    "text": "Market share is the part of all the sales in an area that one company or country gets. If it is 96%, almost every printer sold comes from there.",
+    "audio": true
+  },
+  {
+    "k": "dominance",
+    "t": "dominance",
+    "kind": "word",
+    "forms": [
+      "dominance"
+    ],
+    "text": "Dominance means being the strongest or in charge. Here, Western companies used to be the top printer makers, but not anymore.",
+    "audio": true
+  },
+  {
+    "k": "market-intelligence",
+    "t": "market-intelligence",
+    "kind": "phrase",
+    "forms": [
+      "market-intelligence"
+    ],
+    "text": "A market-intelligence firm collects facts about what is selling and who is winning, and sells that information to businesses.",
+    "audio": true
+  },
+  {
+    "k": "reign-supreme",
+    "t": "reign supreme",
+    "kind": "phrase",
+    "forms": [
+      "reign supreme"
+    ],
+    "text": "To reign supreme means to be the very best and in charge, like a king or queen. Here, four companies are on top of the world market.",
+    "audio": true
+  },
+  {
+    "k": "fierce",
+    "t": "fierce",
+    "kind": "word",
+    "forms": [
+      "fierce"
+    ],
+    "text": "Fierce means very strong and intense. Here, fierce competition means many companies are trying very hard to beat each other.",
+    "audio": true
+  },
+  {
+    "k": "competition",
+    "t": "competition",
+    "kind": "word",
+    "forms": [
+      "competition"
+    ],
+    "text": "Competition is when companies try to win the same customers. It pushes them to make better products and charge less.",
+    "audio": true
+  },
+  {
+    "k": "generous",
+    "t": "generous",
+    "kind": "word",
+    "forms": [
+      "generous"
+    ],
+    "text": "Generous means giving a lot. Here, the government gives a lot of help, such as money and support, to printer makers.",
+    "audio": true
+  },
+  {
+    "k": "export-prices",
+    "t": "export prices",
+    "kind": "phrase",
+    "forms": [
+      "export prices"
+    ],
+    "text": "Export prices are what customers abroad have to pay. When they go down, the products are easier to buy in other countries.",
+    "audio": true
+  },
+  {
+    "k": "extruding",
+    "t": "extruding",
+    "kind": "word",
+    "forms": [
+      "extruding"
+    ],
+    "text": "To extrude is to push a soft material through a small opening, like squeezing toothpaste out of a tube. Here, the printer pushes out hot, melted plastic.",
+    "audio": true
+  },
+  {
+    "k": "molten",
+    "t": "molten",
+    "kind": "word",
+    "forms": [
+      "molten"
+    ],
+    "text": "Molten means melted by great heat into a liquid. Here, the plastic is melted so it can be shaped layer by layer.",
+    "audio": true
+  },
+  {
+    "k": "unreliable",
+    "t": "unreliable",
+    "kind": "word",
+    "forms": [
+      "unreliable"
+    ],
+    "text": "Unreliable means you cannot count on it to work every time. Early 3D printers often failed or broke.",
+    "audio": true
+  },
+  {
+    "k": "sleek",
+    "t": "sleek",
+    "kind": "word",
+    "forms": [
+      "sleek"
+    ],
+    "text": "Sleek means smooth, shiny and stylish. Here, the printers look as polished as an Apple computer.",
+    "audio": true
+  },
+  {
+    "k": "aluminium",
+    "t": "aluminium",
+    "kind": "word",
+    "forms": [
+      "aluminium"
+    ],
+    "text": "Aluminium is a light, silver-colored metal. It is spelled this way in British English; Americans write aluminum.",
+    "audio": true
+  },
+  {
+    "k": "entry-level",
+    "t": "entry-level",
+    "kind": "phrase",
+    "forms": [
+      "Entry-level",
+      "entry-level"
+    ],
+    "text": "An entry-level product is the basic, cheaper model that a new buyer starts with.",
+    "audio": true
+  },
+  {
+    "k": "artificial-intelligence",
+    "t": "artificial intelligence",
+    "kind": "phrase",
+    "forms": [
+      "Artificial intelligence"
+    ],
+    "text": "Artificial intelligence, or AI, is computer software that can do things that seem smart, like understanding what people write or say.",
+    "audio": true
+  },
+  {
+    "k": "natural-language",
+    "t": "natural language",
+    "kind": "phrase",
+    "forms": [
+      "natural language"
+    ],
+    "text": "Natural language is the way people normally talk or write, such as English, as opposed to computer code.",
+    "audio": true
+  },
+  {
+    "k": "recreational",
+    "t": "recreational",
+    "kind": "word",
+    "forms": [
+      "recreational"
+    ],
+    "text": "Recreational means done for fun and relaxing, not for work. Here, drones became toys and hobby gadgets, not just machines for work.",
+    "audio": true
+  },
+  {
+    "k": "large-scale",
+    "t": "large-scale",
+    "kind": "phrase",
+    "forms": [
+      "large-scale"
+    ],
+    "text": "Large-scale means done in very big amounts. Making things in huge numbers usually makes each one cheaper.",
+    "audio": true
+  },
+  {
+    "k": "price-wars",
+    "t": "price wars",
+    "kind": "phrase",
+    "forms": [
+      "Price wars"
+    ],
+    "text": "A price war is when companies keep cutting prices to win customers. Buyers save money, but sellers earn less on each sale.",
+    "audio": true
+  },
+  {
+    "k": "profits",
+    "t": "profits",
+    "kind": "word",
+    "forms": [
+      "profits"
+    ],
+    "text": "Profit is the money a company has left after paying all its costs. Here, low prices mean the printer makers keep less money.",
+    "audio": true
+  },
+  {
+    "k": "investors",
+    "t": "investors",
+    "kind": "word",
+    "forms": [
+      "investors"
+    ],
+    "text": "Investors are people or firms that put money into a company, hoping it grows and they get back more.",
+    "audio": true
+  },
+  {
+    "k": "valuation",
+    "t": "valuation",
+    "kind": "phrase",
+    "forms": [
+      "valuation"
+    ],
+    "text": "A valuation is how much a company is thought to be worth. Here, Bambu Lab is thought to be worth about $10 billion.",
+    "audio": true
+  },
+  {
+    "k": "market-capitalisation",
+    "t": "market capitalisation",
+    "kind": "phrase",
+    "forms": [
+      "market capitalisation"
+    ],
+    "text": "Market capitalisation is the total value of all a company's shares on the stock market. It shows how big the market thinks the company is.",
+    "audio": true
+  },
+  {
+    "k": "stock-exchange",
+    "t": "Stock Exchange",
+    "kind": "phrase",
+    "forms": [
+      "Stock Exchange"
+    ],
+    "text": "A stock exchange is a place where people buy and sell small pieces of companies, called shares. Creality sold its shares to the public this way.",
+    "audio": true
+  },
+  {
+    "k": "cherishes",
+    "t": "cherishes",
+    "kind": "word",
+    "forms": [
+      "cherishes"
+    ],
+    "text": "To cherish something is to care about it very much and protect it. Here, the government really values and supports these firms.",
+    "audio": true
+  },
+  {
+    "k": "self-reliance",
+    "t": "self-reliance",
+    "kind": "phrase",
+    "forms": [
+      "self-reliance"
+    ],
+    "text": "Self-reliance means depending on yourself rather than on others. Here, China wants to make important things at home, not buy them from abroad.",
+    "audio": true
+  },
+  {
+    "k": "aerospace",
+    "t": "aerospace",
+    "kind": "word",
+    "forms": [
+      "aerospace"
+    ],
+    "text": "Aerospace is the industry that builds aircraft and spacecraft.",
+    "audio": true
+  },
+  {
+    "k": "suppliers",
+    "t": "suppliers",
+    "kind": "word",
+    "forms": [
+      "suppliers"
+    ],
+    "text": "Suppliers are companies that make and sell goods to others. Here, they sell machines or parts.",
+    "audio": true
+  },
+  {
+    "k": "patents",
+    "t": "patents",
+    "kind": "phrase",
+    "forms": [
+      "patents"
+    ],
+    "text": "A patent is a government promise that only the inventor may make or sell an invention for a number of years.",
+    "audio": true
+  },
+  {
+    "k": "damages",
+    "t": "damages",
+    "kind": "phrase",
+    "forms": [
+      "damages"
+    ],
+    "text": "In a court case, damages are money the losing side must pay to make up for harm it caused.",
+    "audio": true
+  },
+  {
+    "k": "industrial",
+    "t": "industrial",
+    "kind": "word",
+    "forms": [
+      "industrial"
+    ],
+    "text": "Industrial describes big machines used in factories, not small ones used at home.",
+    "audio": true
+  },
+  {
+    "k": "sensitive",
+    "t": "sensitive",
+    "kind": "word",
+    "forms": [
+      "sensitive"
+    ],
+    "text": "Sensitive information is private or secret, so it could cause trouble if the wrong people saw it. Here, it means secret designs.",
+    "audio": true
+  },
+  {
+    "k": "defence-ministry",
+    "t": "defence ministry",
+    "kind": "phrase",
+    "forms": [
+      "defence ministry"
+    ],
+    "text": "A defence ministry is the part of a government in charge of the army and other armed forces.",
+    "audio": true
+  },
+  {
+    "k": "outfits",
+    "t": "outfits",
+    "kind": "word",
+    "forms": [
+      "outfits"
+    ],
+    "text": "Outfits is a casual word for groups or companies. Here, it means firms.",
+    "audio": true
+  },
+  {
+    "k": "pioneering",
+    "t": "pioneering",
+    "kind": "word",
+    "forms": [
+      "pioneering"
+    ],
+    "text": "To pioneer is to be the first to try a new way of doing something. Here, Chinese firms are first to build printing farms.",
+    "audio": true
+  },
+  {
+    "k": "printing-farms",
+    "t": "3D-printing farms",
+    "kind": "phrase",
+    "forms": [
+      "3D-printing farms",
+      "printing farms"
+    ],
+    "text": "A printing farm is a big room full of many 3D printers working at once, like a factory. One has up to 5,000 machines.",
+    "audio": true
+  },
+  {
+    "k": "trinkets",
+    "t": "trinkets",
+    "kind": "word",
+    "forms": [
+      "trinkets"
+    ],
+    "text": "Trinkets are small, cheap decorations or toys, such as keychains.",
+    "audio": true
+  },
+  {
+    "k": "zany",
+    "t": "zany",
+    "kind": "word",
+    "forms": [
+      "zany"
+    ],
+    "text": "Zany means silly, odd and funny. Here, it means strange fads that suddenly become popular.",
+    "audio": true
+  },
+  {
+    "k": "injection-moulding",
+    "t": "injection-moulding",
+    "kind": "phrase",
+    "forms": [
+      "injection-moulding"
+    ],
+    "text": "Injection moulding is making plastic items by squirting melted plastic into a metal mould. It is fast but needs costly moulds.",
+    "audio": true
+  }
+]
