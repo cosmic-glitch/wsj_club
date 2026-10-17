@@ -1,0 +1,436 @@
+[
+  {
+    "k": "brazen",
+    "t": "brazen",
+    "kind": "vocab",
+    "pron": "BRAY-zun",
+    "forms": [
+      "brazen"
+    ],
+    "text": "Brazen means bold and open, with no shame and no hiding. Here, the thieves just walked in and smashed the case while visitors were watching.",
+    "audio": true
+  },
+  {
+    "k": "lax",
+    "t": "lax",
+    "kind": "vocab",
+    "pron": "LAKS",
+    "forms": [
+      "lax"
+    ],
+    "text": "Lax means not careful or strict enough. Here, people said the museum should have had stronger security.",
+    "audio": true
+  },
+  {
+    "k": "notorious",
+    "t": "notorious",
+    "kind": "vocab",
+    "pron": "noh-TOR-ee-us",
+    "forms": [
+      "notorious"
+    ],
+    "text": "Notorious means famous for something bad. Here, a robbery in Boston in 1990 is still talked about as a terrible, famous crime.",
+    "audio": true
+  },
+  {
+    "k": "ransom",
+    "t": "ransom",
+    "kind": "word",
+    "pron": "RAN-sum",
+    "forms": [
+      "ransom"
+    ],
+    "text": "A ransom is money paid to get back something that was taken. Here, famous paintings are hard to sell, so thieves hope someone will pay to get them back.",
+    "audio": true
+  },
+  {
+    "k": "black-market",
+    "t": "black market",
+    "kind": "word",
+    "forms": [
+      "sale"
+    ],
+    "text": "The black market is the secret, illegal place where stolen things get sold. Here, thieves choose gold and jewels because they are easier to turn into cash.",
+    "audio": true
+  },
+  {
+    "k": "armoured",
+    "t": "armoured",
+    "kind": "word",
+    "forms": [
+      "armoured"
+    ],
+    "text": "Armoured means covered with strong, hard protection, like a knight's armor. Here, the glass case was built to resist hits.",
+    "audio": true
+  },
+  {
+    "k": "neo-renaissance",
+    "t": "neo-Renaissance",
+    "kind": "word",
+    "forms": [
+      "neo-Renaissance"
+    ],
+    "text": "Neo-Renaissance describes a building made in a new copy of the grand style used in Italy about 500 years ago.",
+    "audio": true
+  },
+  {
+    "k": "bedecked",
+    "t": "bedecked",
+    "kind": "word",
+    "forms": [
+      "bedecked"
+    ],
+    "text": "Bedecked means decorated with lots of fancy things. Here, the necklace was covered with 673 diamonds.",
+    "audio": true
+  },
+  {
+    "k": "platinum",
+    "t": "platinum",
+    "kind": "word",
+    "forms": [
+      "platinum"
+    ],
+    "text": "Platinum is a rare, shiny, silvery metal that is worth more than gold by weight.",
+    "audio": true
+  },
+  {
+    "k": "valued",
+    "t": "valued",
+    "kind": "word",
+    "forms": [
+      "valued"
+    ],
+    "text": "Valued at means judged to be worth that much money.",
+    "audio": true
+  },
+  {
+    "k": "adjacent",
+    "t": "adjacent",
+    "kind": "word",
+    "forms": [
+      "adjacent"
+    ],
+    "text": "Adjacent means right next to something. Here, the park was beside the museum.",
+    "audio": true
+  },
+  {
+    "k": "belatedly",
+    "t": "belatedly",
+    "kind": "word",
+    "forms": [
+      "belatedly"
+    ],
+    "text": "Belatedly means later than it should have been. Here, the museum added metal detectors only after the theft.",
+    "audio": true
+  },
+  {
+    "k": "crooks",
+    "t": "crooks",
+    "kind": "word",
+    "forms": [
+      "crooks"
+    ],
+    "text": "Crooks are people who break the law, such as thieves.",
+    "audio": true
+  },
+  {
+    "k": "had-bolted",
+    "t": "bolted",
+    "kind": "phrase",
+    "forms": [
+      "bolted"
+    ],
+    "text": "Securing the doors after the crooks had bolted is like the saying about shutting the barn door after the horse runs away. It is too late to help. Bolted here means ran off quickly.",
+    "audio": true
+  },
+  {
+    "k": "tenure",
+    "t": "tenure",
+    "kind": "word",
+    "forms": [
+      "tenure"
+    ],
+    "text": "Tenure is the time a person holds a job. Here, it is how long the director has been in charge.",
+    "audio": true
+  },
+  {
+    "k": "came-under-fire",
+    "t": "came under fire",
+    "kind": "phrase",
+    "forms": [
+      "came under fire"
+    ],
+    "text": "To come under fire means to be strongly criticized. Here, the director was blamed for weak security.",
+    "audio": true
+  },
+  {
+    "k": "deployed",
+    "t": "deployed",
+    "kind": "word",
+    "forms": [
+      "deployed"
+    ],
+    "text": "Deployed means put in place to be used. Here, the museum had many cameras and alarms set up.",
+    "audio": true
+  },
+  {
+    "k": "professionals",
+    "t": "professionals",
+    "kind": "word",
+    "forms": [
+      "professionals"
+    ],
+    "text": "Professionals here means skilled thieves who do it for a living and plan carefully.",
+    "audio": true
+  },
+  {
+    "k": "bizarre",
+    "t": "bizarre",
+    "kind": "word",
+    "forms": [
+      "bizarre"
+    ],
+    "text": "Bizarre means very strange or hard to believe.",
+    "audio": true
+  },
+  {
+    "k": "hoods",
+    "t": "hoods",
+    "kind": "word",
+    "forms": [
+      "hoods"
+    ],
+    "text": "Hoods is slang for criminals, especially rough ones.",
+    "audio": true
+  },
+  {
+    "k": "nicking",
+    "t": "nicking",
+    "kind": "word",
+    "forms": [
+      "nicking"
+    ],
+    "text": "Nicking is a British word for stealing.",
+    "audio": true
+  },
+  {
+    "k": "confronted",
+    "t": "confronted",
+    "kind": "word",
+    "forms": [
+      "confronted"
+    ],
+    "text": "Confronted with something means having to face it. Here, museum directors face a new kind of crime.",
+    "audio": true
+  },
+  {
+    "k": "smash-and-grab",
+    "t": "smash-and-grab",
+    "kind": "phrase",
+    "forms": [
+      "smash-and-grab"
+    ],
+    "text": "A smash-and-grab is a quick robbery where thieves break glass, grab things, and run away.",
+    "audio": true
+  },
+  {
+    "k": "annually",
+    "t": "annually",
+    "kind": "word",
+    "forms": [
+      "annually"
+    ],
+    "text": "Annually means every year.",
+    "audio": true
+  },
+  {
+    "k": "masterpieces",
+    "t": "masterpieces",
+    "kind": "word",
+    "forms": [
+      "masterpieces"
+    ],
+    "text": "Masterpieces are the greatest works of an artist, such as the best paintings.",
+    "audio": true
+  },
+  {
+    "k": "provincial",
+    "t": "provincial",
+    "kind": "word",
+    "forms": [
+      "provincial"
+    ],
+    "text": "Provincial means in a smaller town far from the big capital cities.",
+    "audio": true
+  },
+  {
+    "k": "tricky",
+    "t": "tricky",
+    "kind": "word",
+    "forms": [
+      "tricky"
+    ],
+    "text": "Tricky means hard to deal with. Here, old buildings are hard to make safe.",
+    "audio": true
+  },
+  {
+    "k": "masterworks",
+    "t": "masterworks",
+    "kind": "word",
+    "forms": [
+      "masterworks"
+    ],
+    "text": "Masterworks are great works of art, the best that an artist made.",
+    "audio": true
+  },
+  {
+    "k": "burglars",
+    "t": "burglars",
+    "kind": "word",
+    "forms": [
+      "burglars"
+    ],
+    "text": "Burglars are thieves who break into a building to steal.",
+    "audio": true
+  },
+  {
+    "k": "vicious-circle",
+    "t": "vicious circle",
+    "kind": "phrase",
+    "forms": [
+      "vicious circle"
+    ],
+    "text": "A vicious circle is a bad situation that makes itself worse again and again. Here, one big robbery inspires more robberies.",
+    "audio": true
+  },
+  {
+    "k": "cat-burglars",
+    "t": "cat burglars",
+    "kind": "phrase",
+    "forms": [
+      "cat burglars"
+    ],
+    "text": "A cat burglar is a thief who quietly sneaks in and out, often climbing, like a cat. Today's thieves are loud and quick instead.",
+    "audio": true
+  },
+  {
+    "k": "copycats",
+    "t": "copycats",
+    "kind": "word",
+    "forms": [
+      "copycats"
+    ],
+    "text": "Copycats are people who copy what someone else did.",
+    "audio": true
+  },
+  {
+    "k": "dismantled",
+    "t": "dismantled",
+    "kind": "word",
+    "forms": [
+      "dismantled"
+    ],
+    "text": "Dismantled means taken apart into pieces.",
+    "audio": true
+  },
+  {
+    "k": "melted-down",
+    "t": "melted down",
+    "kind": "phrase",
+    "forms": [
+      "melted down"
+    ],
+    "text": "Melted down means heated until solid metal becomes liquid, so the old shape is gone.",
+    "audio": true
+  },
+  {
+    "k": "clan",
+    "t": "clan",
+    "kind": "word",
+    "forms": [
+      "clan"
+    ],
+    "text": "A clan is a large family group. Here, it means a family linked to crime.",
+    "audio": true
+  },
+  {
+    "k": "recovered",
+    "t": "recovered",
+    "kind": "word",
+    "forms": [
+      "recovered"
+    ],
+    "text": "Recovered means found and gotten back.",
+    "audio": true
+  },
+  {
+    "k": "suspects",
+    "t": "suspects",
+    "kind": "word",
+    "forms": [
+      "suspects"
+    ],
+    "text": "Suspects are people the police think may have committed a crime.",
+    "audio": true
+  },
+  {
+    "k": "assaulted",
+    "t": "assaulted",
+    "kind": "word",
+    "forms": [
+      "assaulted"
+    ],
+    "text": "Assaulted here means attacked or hit. The cases are built to react when someone hits them.",
+    "audio": true
+  },
+  {
+    "k": "curators",
+    "t": "curators",
+    "kind": "word",
+    "forms": [
+      "curators"
+    ],
+    "text": "Curators are the people who take care of a museum's collection and plan its shows.",
+    "audio": true
+  },
+  {
+    "k": "fund-raising",
+    "t": "fund-raising",
+    "kind": "word",
+    "forms": [
+      "fund-raising"
+    ],
+    "text": "Fund-raising means collecting money for a cause, such as a museum.",
+    "audio": true
+  },
+  {
+    "k": "protective-measures",
+    "t": "protective measures",
+    "kind": "phrase",
+    "forms": [
+      "protective measures"
+    ],
+    "text": "Protective measures are steps taken to keep something safe.",
+    "audio": true
+  },
+  {
+    "k": "render",
+    "t": "render",
+    "kind": "word",
+    "forms": [
+      "render"
+    ],
+    "text": "Render here means make. To render museums safe means to make them safe.",
+    "audio": true
+  },
+  {
+    "k": "equip",
+    "t": "equip",
+    "kind": "word",
+    "forms": [
+      "equip"
+    ],
+    "text": "Equip means to give someone the tools they need.",
+    "audio": true
+  }
+]

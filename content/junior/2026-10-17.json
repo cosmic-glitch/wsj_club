@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-17",
+  "title": "European museums are seeing a spike in high-value art theft",
+  "articleUrl": "https://www.economist.com/europe/2026/10/14/european-museums-are-seeing-a-spike-in-high-value-art-theft",
+  "articlePageUrl": "/articles/junior/2026-10-17.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "brazen",
+      "partOfSpeech": "adjective",
+      "pronunciation": "BRAY-zun",
+      "articleQuote": "a new type of violent and brazen theft",
+      "meaning": "Something brazen is done openly and boldly, with no shame and no attempt to hide it. A brazen person does not care who is watching. If a kid walked up to the snack table and took the whole plate while the teacher stood there, that would be brazen. In the article, the thieves walked into a museum with no masks on and smashed a glass case in front of visitors.",
+      "examples": [
+        "It was a brazen move to cut in line right in front of the principal.",
+        "The brazen seagull grabbed a sandwich out of my hand."
+      ]
+    },
+    {
+      "word": "lax",
+      "partOfSpeech": "adjective",
+      "pronunciation": "LAKS",
+      "articleQuote": "came under fire for lax security",
+      "meaning": "If a rule or a job is done in a lax way, it is done without much care or strictness. A lax lifeguard who looks at his phone is not watching the pool closely. Lax is the opposite of strict. In the article, people said the museum's security was lax, meaning it was not careful enough to stop the thieves.",
+      "examples": [
+        "Our school was lax about the rule on running in the halls, so kids ran everywhere.",
+        "Because he was lax about locking his bike, it got stolen."
+      ]
+    },
+    {
+      "word": "notorious",
+      "partOfSpeech": "adjective",
+      "pronunciation": "noh-TOR-ee-us",
+      "articleQuote": "the most notorious art theft since the second world war",
+      "meaning": "Something notorious is famous for being bad. Many people know about it, but not for a good reason. A pirate who robbed hundreds of ships could be a notorious pirate. Notorious is different from famous, because famous can be good or bad. In the article, a theft from a Boston museum in 1990 is still talked about today as a notorious crime.",
+      "examples": [
+        "The notorious bully of the playground was known by every kid.",
+        "That road is notorious for traffic jams on Friday afternoons."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Ransom",
+      "articleQuote": "are taken chiefly for ransom",
+      "meaning": "A **ransom** is money paid to get back something that was taken. Kidnappers once demanded ransom for a person, and thieves can demand it for a stolen object too.\n\nImagine someone grabs your favorite backpack at the park and says, \"Give me $50 and you can have it back.\" That $50 is a ransom. The backpack is worth a lot to you, but it is hard for the thief to sell, because everybody knows whose it is.\n\nFamous paintings work the same way. A stolen Renoir is so well known that no honest buyer would take it, so the thief cannot easily sell it. Instead, the thief may hope the museum, or the owner, will pay to get it back. That is why the article says such paintings are taken chiefly for ransom. Paying ransom is risky, because it can encourage more thieves."
+    },
+    {
+      "name": "Black market",
+      "articleQuote": "which can be dismantled or melted down for sale",
+      "meaning": "The **black market** is the secret, illegal place where stolen or banned things are bought and sold. Sellers there stay hidden, and buyers do not ask where things came from.\n\nImagine a kid steals a rare trading card from a classmate. He cannot sell it at school, because everyone would know it was taken. To get money, he has to find a buyer who does not ask questions. That secret sale is a tiny black market.\n\nThieves face the same problem with art. A famous painting is easy to recognize, so it is hard to sell. Gold coins and jewels are easier, because a thief can break the jewelry apart or melt gold into plain lumps that no one can trace. That is why the article says today's thieves increasingly go for jewelry and gold. The lesson: thieves choose what they can turn into cash."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "How did the thieves get into the Vienna museum in August?",
+      "options": [
+        "They dug a tunnel under the building",
+        "They bought tickets and walked in, then smashed a display case with a hammer",
+        "They climbed in through the roof at night",
+        "They pretended to be guards"
+      ],
+      "answerIndex": 1,
+      "explanation": "The thieves wore no masks, bought tickets, and hit the armoured case 41 times with a hammer hidden in their clothes."
+    },
+    {
+      "question": "Why do thieves increasingly go after jewelry and gold coins instead of famous paintings?",
+      "options": [
+        "Paintings are too heavy to carry",
+        "Jewelry and gold can be broken up or melted down and sold, but famous paintings are almost impossible to sell",
+        "Museums do not protect jewelry",
+        "Paintings are worth much less money"
+      ],
+      "answerIndex": 1,
+      "explanation": "Famous paintings are easy to recognize, so they are mostly taken for ransom, while gold and jewels can be dismantled or melted."
+    },
+    {
+      "question": "\"The museum was criticized for lax security.\" What does lax mean?",
+      "options": [
+        "Very expensive",
+        "Not careful or strict enough",
+        "Brand new",
+        "Extra loud"
+      ],
+      "answerIndex": 1,
+      "explanation": "Lax means not strict or careful. People thought the museum should have had better protection."
+    },
+    {
+      "question": "What is a ransom?",
+      "options": [
+        "A prize for finding a thief",
+        "A kind of museum ticket",
+        "Money paid to get back something that was taken",
+        "A fine paid by a thief"
+      ],
+      "answerIndex": 2,
+      "explanation": "A ransom is paid to get something back. Stolen paintings are often taken in the hope that someone will pay a ransom."
+    },
+    {
+      "question": "What does the article say about how much stolen art is ever found?",
+      "options": [
+        "Only about 10%",
+        "About half",
+        "Nearly all of it",
+        "None of it"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says only around 10% of stolen art is ever found, though some recent cases ended with the police recovering the items."
+    }
+  ]
+}
