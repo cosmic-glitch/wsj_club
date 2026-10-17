@@ -1,0 +1,565 @@
+[
+  {
+    "k": "impenetrable",
+    "t": "impenetrable",
+    "kind": "vocab",
+    "pron": "im-PEN-uh-truh-bul",
+    "forms": [
+      "impenetrable"
+    ],
+    "text": "Impenetrable means impossible to get through or to understand. Here it describes AI systems so complex that no human mind could follow their reasoning.",
+    "audio": true
+  },
+  {
+    "k": "fetishise",
+    "t": "fetishised",
+    "kind": "vocab",
+    "pron": "FET-ish-eyez",
+    "forms": [
+      "fetishised"
+    ],
+    "text": "To fetishise something is to worship it far more than it deserves. The writer says scientists should not prize understanding so highly that they reject useful results.",
+    "audio": true
+  },
+  {
+    "k": "giddying",
+    "t": "giddying",
+    "kind": "vocab",
+    "pron": "GID-ee-ing",
+    "forms": [
+      "giddying"
+    ],
+    "text": "Giddying means dizzying and thrilling at once. The prospect of AI mastering biology is both exciting and frightening.",
+    "audio": true
+  },
+  {
+    "k": "baffle",
+    "t": "baffled",
+    "kind": "word",
+    "forms": [
+      "baffled"
+    ],
+    "text": "To baffle is to confuse completely. The 372 problems had puzzled scholars for decades.",
+    "audio": true
+  },
+  {
+    "k": "discipline",
+    "t": "discipline",
+    "kind": "word",
+    "forms": [
+      "discipline"
+    ],
+    "text": "A discipline is a field of study, such as mathematics or biology. It can also mean self-control, but here it means a branch of knowledge.",
+    "audio": true
+  },
+  {
+    "k": "disciplines",
+    "t": "disciplines",
+    "kind": "word",
+    "forms": [
+      "disciplines"
+    ],
+    "text": "Disciplines are fields of study. Scholars will need to rethink how their fields work once AI does much of the proving.",
+    "audio": true
+  },
+  {
+    "k": "digest",
+    "t": "digest",
+    "kind": "word",
+    "forms": [
+      "digest"
+    ],
+    "text": "To digest an idea is to take it in and fully understand it, like food. Mathematicians are still working out what the results mean.",
+    "audio": true
+  },
+  {
+    "k": "grapple",
+    "t": "grapple",
+    "kind": "word",
+    "forms": [
+      "grapple"
+    ],
+    "text": "To grapple with a problem is to struggle hard to deal with it. The article says it is time to grapple with AI's effect on science.",
+    "audio": true
+  },
+  {
+    "k": "axiom",
+    "t": "axioms",
+    "kind": "word",
+    "forms": [
+      "axioms"
+    ],
+    "text": "An axiom is a basic statement in mathematics accepted as true without proof. All proofs are built by logic from axioms.",
+    "audio": true
+  },
+  {
+    "k": "empirical",
+    "t": "empirical",
+    "kind": "word",
+    "forms": [
+      "empirical"
+    ],
+    "text": "Empirical means based on observation and experiment rather than pure logic. Biology and physics are empirical sciences; maths is not.",
+    "audio": true
+  },
+  {
+    "k": "protein",
+    "t": "protein",
+    "kind": "word",
+    "forms": [
+      "protein"
+    ],
+    "text": "Proteins are large molecules that do most of the work in living cells. Their shape decides what they do, so predicting shapes is very valuable.",
+    "audio": true
+  },
+  {
+    "k": "amino-acids",
+    "t": "amino acids",
+    "kind": "word",
+    "forms": [
+      "amino acids"
+    ],
+    "text": "Amino acids are the small building blocks that link up in chains to form proteins. AI can predict a protein's shape from its chain.",
+    "audio": true
+  },
+  {
+    "k": "nobel-prize",
+    "t": "Nobel prize",
+    "kind": "word",
+    "forms": [
+      "Nobel prize"
+    ],
+    "text": "The Nobel prize is the most famous award in science. The protein-shape advance mentioned here won one.",
+    "audio": true
+  },
+  {
+    "k": "nuclear-fusion",
+    "t": "nuclear fusion",
+    "kind": "word",
+    "forms": [
+      "nuclear fusion"
+    ],
+    "text": "Nuclear fusion is the process that powers the sun, where light atoms merge and release energy. Scientists hope to harness it for clean power.",
+    "audio": true
+  },
+  {
+    "k": "in-silico",
+    "t": "in silico",
+    "kind": "phrase",
+    "forms": [
+      "in silico"
+    ],
+    "text": "In silico is Latin-style slang for done inside a computer, since chips are made of silicon. It contrasts with in vivo, in a living thing.",
+    "audio": true
+  },
+  {
+    "k": "tokens",
+    "t": "tokens",
+    "kind": "word",
+    "forms": [
+      "tokens"
+    ],
+    "text": "In an AI model, tokens are the small pieces of text, such as words or word parts, that it reads and writes. The article imagines DNA treated like such a string.",
+    "audio": true
+  },
+  {
+    "k": "dna",
+    "t": "DNA",
+    "kind": "word",
+    "forms": [
+      "DNA"
+    ],
+    "text": "DNA is the molecule that carries the instructions for building living things, written in a four-letter code. The article compares it to computer code.",
+    "audio": true
+  },
+  {
+    "k": "drought-resistant",
+    "t": "drought-resistant",
+    "kind": "word",
+    "forms": [
+      "drought-resistant"
+    ],
+    "text": "Drought-resistant crops can survive with little water. AI is being used to design them.",
+    "audio": true
+  },
+  {
+    "k": "organisms",
+    "t": "organisms",
+    "kind": "word",
+    "forms": [
+      "organisms"
+    ],
+    "text": "An organism is any living thing, from a bacterium to a whale. Scientists might one day design new ones from scratch.",
+    "audio": true
+  },
+  {
+    "k": "terrifying",
+    "t": "terrifying",
+    "kind": "word",
+    "forms": [
+      "terrifying"
+    ],
+    "text": "Terrifying means causing great fear. The writer says AI's prospects are both exciting and terrifying.",
+    "audio": true
+  },
+  {
+    "k": "up-in-arms",
+    "t": "up in arms",
+    "kind": "phrase",
+    "forms": [
+      "up in arms"
+    ],
+    "text": "To be up in arms is to be angrily protesting. Mathematicians are furious at the lab's entry into their field.",
+    "audio": true
+  },
+  {
+    "k": "encroachment",
+    "t": "encroachment",
+    "kind": "word",
+    "forms": [
+      "encroachment"
+    ],
+    "text": "Encroachment is gradually moving into someone else's territory. Mathematicians see the AI lab as intruding on their discipline.",
+    "audio": true
+  },
+  {
+    "k": "special-pleading",
+    "t": "special pleading",
+    "kind": "phrase",
+    "forms": [
+      "special pleading"
+    ],
+    "text": "Special pleading means arguing that the normal rules should not apply to your own case. The writer says academics have no special right to control knowledge.",
+    "audio": true
+  },
+  {
+    "k": "pay-off",
+    "t": "pay-off",
+    "kind": "word",
+    "forms": [
+      "pay-off"
+    ],
+    "text": "A pay-off is the reward you get for effort. Mathematicians say theirs comes from the toil of doing the work, not just the answer.",
+    "audio": true
+  },
+  {
+    "k": "toil",
+    "t": "toil",
+    "kind": "word",
+    "forms": [
+      "toil"
+    ],
+    "text": "Toil is long, hard work. The mathematicians argue the toil is how human understanding grows.",
+    "audio": true
+  },
+  {
+    "k": "churn-out",
+    "t": "churn",
+    "kind": "phrase",
+    "forms": [
+      "churn"
+    ],
+    "text": "To churn out something is to produce a lot of it quickly, often without much care. Here AIs churn out proofs.",
+    "audio": true
+  },
+  {
+    "k": "guild",
+    "t": "guild",
+    "kind": "word",
+    "forms": [
+      "guild"
+    ],
+    "text": "A guild was a medieval association of craftspeople protecting their trade. The writer says scholars should not be a guild controlling truth-seeking.",
+    "audio": true
+  },
+  {
+    "k": "sacred",
+    "t": "sacred",
+    "kind": "word",
+    "forms": [
+      "sacred"
+    ],
+    "text": "Sacred means so special it must not be questioned or changed. The writer says academic hierarchies are not sacred.",
+    "audio": true
+  },
+  {
+    "k": "hierarchies",
+    "t": "hierarchies",
+    "kind": "word",
+    "forms": [
+      "hierarchies"
+    ],
+    "text": "A hierarchy is a ranking from top to bottom. Academic hierarchies are climbed by proving things.",
+    "audio": true
+  },
+  {
+    "k": "remade",
+    "t": "remade",
+    "kind": "word",
+    "forms": [
+      "remade"
+    ],
+    "text": "Remade means rebuilt in a new form. Academic status systems must be rebuilt for a world where AI makes the proofs.",
+    "audio": true
+  },
+  {
+    "k": "paracetamol",
+    "t": "paracetamol",
+    "kind": "word",
+    "forms": [
+      "paracetamol"
+    ],
+    "text": "Paracetamol is a common painkiller, called acetaminophen in the United States. Its exact workings were long unclear, yet it helps.",
+    "audio": true
+  },
+  {
+    "k": "mechanism",
+    "t": "mechanism",
+    "kind": "word",
+    "forms": [
+      "mechanism"
+    ],
+    "text": "A mechanism is how something works inside. A drug can work without scientists fully knowing its mechanism.",
+    "audio": true
+  },
+  {
+    "k": "idle",
+    "t": "idle",
+    "kind": "word",
+    "forms": [
+      "idle"
+    ],
+    "text": "Idle here means pointless or without good reason. The fear of handing science to machines is not idle, meaning it is a serious worry.",
+    "audio": true
+  },
+  {
+    "k": "altruism",
+    "t": "altruism",
+    "kind": "word",
+    "forms": [
+      "altruism"
+    ],
+    "text": "Altruism is acting to help others without expecting a reward. The article says AI firms invest in science for their own benefit.",
+    "audio": true
+  },
+  {
+    "k": "ploughing",
+    "t": "ploughing",
+    "kind": "phrase",
+    "forms": [
+      "ploughing"
+    ],
+    "text": "Ploughing resources into something means investing large amounts. It comes from a farmer ploughing a field.",
+    "audio": true
+  },
+  {
+    "k": "compete",
+    "t": "compete",
+    "kind": "word",
+    "forms": [
+      "compete"
+    ],
+    "text": "To compete is to try to win against rivals. If AI labs control the best science models, nobody else can.",
+    "audio": true
+  },
+  {
+    "k": "by-some-definitions",
+    "t": "by some definitions",
+    "kind": "phrase",
+    "forms": [
+      "by some definitions"
+    ],
+    "text": "This phrase signals that a claim is true only if you define the word a certain way. Here it hedges how 'incomprehensibly intelligent' AI would be.",
+    "audio": true
+  },
+  {
+    "k": "humanoid-robots",
+    "t": "humanoid robots",
+    "kind": "word",
+    "forms": [
+      "humanoid robots"
+    ],
+    "text": "Humanoid robots are machines shaped roughly like people, with arms, legs and a head. They could carry out experiments in the real world.",
+    "audio": true
+  },
+  {
+    "k": "hooking-up",
+    "t": "hooking up",
+    "kind": "phrase",
+    "forms": [
+      "hooking up"
+    ],
+    "text": "Hooking up means connecting one thing to another. Models can be connected to lab equipment so they can run experiments.",
+    "audio": true
+  },
+  {
+    "k": "anthropic",
+    "t": "Anthropic",
+    "kind": "word",
+    "forms": [
+      "Anthropic"
+    ],
+    "text": "Anthropic is an American AI company that makes the Claude models. The article notes it has already linked models to lab equipment.",
+    "audio": true
+  },
+  {
+    "k": "openai",
+    "t": "OpenAI",
+    "kind": "word",
+    "forms": [
+      "OpenAI"
+    ],
+    "text": "OpenAI is the American AI lab behind ChatGPT. It released the hundreds of maths papers at the center of the story.",
+    "audio": true
+  },
+  {
+    "k": "frontier-lab",
+    "t": "frontier lab",
+    "kind": "word",
+    "forms": [
+      "frontier lab"
+    ],
+    "text": "A frontier lab is a company building the most advanced AI systems. The term suggests it works at the edge of what is possible.",
+    "audio": true
+  },
+  {
+    "k": "writing-the-cheques",
+    "t": "writing the cheques",
+    "kind": "phrase",
+    "forms": [
+      "writing the cheques"
+    ],
+    "text": "Writing the cheques means paying for something. If nobody understands what AI does, funding it blindly would be reckless.",
+    "audio": true
+  },
+  {
+    "k": "reckless",
+    "t": "reckless",
+    "kind": "word",
+    "forms": [
+      "reckless"
+    ],
+    "text": "Reckless means taking risks without thinking about the consequences. Funding AI nobody understands would be reckless.",
+    "audio": true
+  },
+  {
+    "k": "align",
+    "t": "align",
+    "kind": "word",
+    "forms": [
+      "align"
+    ],
+    "text": "To align an AI is to make its goals match human values. Alignment is considered unsolved, so trusting AI fully is premature.",
+    "audio": true
+  },
+  {
+    "k": "pets",
+    "t": "pets",
+    "kind": "word",
+    "forms": [
+      "pets"
+    ],
+    "text": "Here pets are animals kept and looked after by their owners. The writer warns that humans relying wholly on AI could become the machines' pets.",
+    "audio": true
+  },
+  {
+    "k": "in-the-loop",
+    "t": "in the loop",
+    "kind": "phrase",
+    "forms": [
+      "in the loop"
+    ],
+    "text": "Having a human in the loop means a person stays involved to check and approve decisions. The writer says science needs one.",
+    "audio": true
+  },
+  {
+    "k": "unshakeable",
+    "t": "unshakeable",
+    "kind": "word",
+    "forms": [
+      "unshakeable"
+    ],
+    "text": "Unshakeable means impossible to doubt or weaken. Alignment would need to be certain before we hand over control.",
+    "audio": true
+  },
+  {
+    "k": "informed-judgment",
+    "t": "informed judgment",
+    "kind": "phrase",
+    "forms": [
+      "informed judgment"
+    ],
+    "text": "An informed judgment is a decision based on knowing the facts. Only people who understand what AIs do can make one.",
+    "audio": true
+  },
+  {
+    "k": "citizens",
+    "t": "citizens",
+    "kind": "word",
+    "forms": [
+      "citizens"
+    ],
+    "text": "A citizen is a member of a community. Good scientific citizens follow the community's rules, such as peer review.",
+    "audio": true
+  },
+  {
+    "k": "peer-review",
+    "t": "peer review",
+    "kind": "word",
+    "forms": [
+      "peer review"
+    ],
+    "text": "Peer review is when other experts check a study before publication. The article urges AI labs to submit to it.",
+    "audio": true
+  },
+  {
+    "k": "scepticism",
+    "t": "scepticism",
+    "kind": "word",
+    "forms": [
+      "scepticism"
+    ],
+    "text": "Scepticism is a habit of doubting claims until there is good evidence. It is the heart of good science.",
+    "audio": true
+  },
+  {
+    "k": "verification",
+    "t": "verification",
+    "kind": "word",
+    "forms": [
+      "verification"
+    ],
+    "text": "Verification means checking that something is true. The article says science needs more of it as AI makes results.",
+    "audio": true
+  },
+  {
+    "k": "royal-society",
+    "t": "Royal Society",
+    "kind": "word",
+    "forms": [
+      "Royal Society"
+    ],
+    "text": "The Royal Society is a famous British scientific academy founded in the 1660s. Its motto urges taking nobody's word for it.",
+    "audio": true
+  },
+  {
+    "k": "nullius-in-verba",
+    "t": "Nullius in verba",
+    "kind": "phrase",
+    "forms": [
+      "Nullius in verba"
+    ],
+    "text": "Nullius in verba is Latin for 'take nobody's word for it'. It means claims must be checked against evidence.",
+    "audio": true
+  },
+  {
+    "k": "baby-and-the-bathtub",
+    "t": "baby and the bathtub",
+    "kind": "phrase",
+    "forms": [
+      "baby and the bathtub"
+    ],
+    "text": "From the saying 'don't throw the baby out with the bathwater', meaning do not lose something valuable while discarding the bad. Here the valuable part is human understanding.",
+    "audio": true
+  }
+]

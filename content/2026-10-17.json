@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-17",
+  "title": "What if the machines take over science?",
+  "articleUrl": "https://www.economist.com/leaders/2026/10/15/what-if-the-machines-take-over-science",
+  "articlePageUrl": "/articles/2026-10-17.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "impenetrable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "im-PEN-uh-truh-bul",
+      "articleQuote": "understanding of the universe could belong to machines that are impenetrable to human minds",
+      "meaning": "Impenetrable describes something that cannot be passed through or entered, like a dense jungle or a thick wall. People also use it for ideas, writing or code that is so complicated it cannot be understood. Here the Economist warns of AI systems whose reasoning is so complex that no human could follow it, so they stay a locked box even when their answers are correct.",
+      "examples": [
+        "The fog was so thick that the forest looked impenetrable from the road.",
+        "Her older brother's explanation of the video game's rules was completely impenetrable to me."
+      ]
+    },
+    {
+      "word": "fetishise",
+      "partOfSpeech": "verb",
+      "pronunciation": "FET-ish-eyez",
+      "articleQuote": "In science, understanding should not be fetishised over results.",
+      "meaning": "To fetishise something is to treat it with excessive reverence, as if it were more important or magical than it really deserves. It comes from the word fetish, an object believed to hold special power. In this article the writer argues that scientists should not worship the feeling of understanding so much that they refuse useful results they cannot fully explain, just as we happily take a medicine that works before knowing exactly how.",
+      "examples": [
+        "Some fans fetishise old vinyl records, insisting that nothing digital could ever sound as good.",
+        "If we fetishise perfect grades, we may forget that the point of school is to learn."
+      ]
+    },
+    {
+      "word": "giddying",
+      "partOfSpeech": "adjective",
+      "pronunciation": "GID-ee-ing",
+      "articleQuote": "that prospect is giddying and terrifying in equal measure",
+      "meaning": "Giddying means so dizzying or exhilarating that it makes you feel light-headed, like looking down from a very tall building or racing around on a fast ride. It can describe thrilling speed, height or possibility. The article calls the prospect of AI mastering biology giddying because the potential benefits are enormous, but the speed and scale of the change are frightening too.",
+      "examples": [
+        "From the top of the skyscraper, the drop to the street was giddying.",
+        "The giddying speed of the roller coaster left everyone laughing and clutching the bar."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Mathematical proof and axioms",
+      "articleQuote": "its proofs are derived from axioms, not evidence, and are therefore, in principle, verifiable mechanically",
+      "meaning": "Mathematics works differently from sciences like biology or physics. Think of a board game: you start with a few rules everyone agrees on, and every legal move must follow from those rules. In maths the starting rules are called axioms, such as the idea that you can always add one to a number and get a bigger one. A proof is a chain of steps, each following strictly from the axioms or from earlier steps, ending in a conclusion that must be true. No experiment or measurement is needed, because the answer is locked in by the logic. That is why a computer can check a proof step by step, like a referee checking each move against the rulebook, even if no human can follow the whole thing. A biologist, by contrast, must test claims against messy evidence from the real world. This is why the article says maths is where AI's scientific power shows most vividly: its results can be verified by machine, while answers about the physical world are harder to check."
+    },
+    {
+      "name": "Peer review and verification in science",
+      "articleQuote": "Nullius in verba, or “Take nobody’s word for it”",
+      "meaning": "Science is not just having ideas; it is a system for catching mistakes. When a scientist finishes a study, they send it to a journal, which asks other experts in the field to look for errors, weak evidence or hidden assumptions before it is published. This is called peer review, and 'peer' just means an equal in the same field. After publication, other scientists try to repeat the experiment, and a result that cannot be repeated loses trust. The Royal Society, one of the world's oldest scientific groups, chose the motto 'Nullius in verba', Latin for 'take nobody's word for it', to say that claims must be checked, whoever makes them. The article argues this matters even more now: if an AI lab announces hundreds of discoveries, they should be published with their methods and code so humans can verify them, instead of simply being trusted because a clever machine said so."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, why has AI shown its scientific potential so vividly in mathematics?",
+      "options": [
+        "Mathematicians are the only scientists willing to use AI",
+        "Mathematical proofs come from axioms rather than evidence, so they can in principle be checked mechanically",
+        "Maths does not need any human review at all",
+        "OpenAI hired more mathematicians than other scientists"
+      ],
+      "answerIndex": 1,
+      "explanation": "Proofs derive from axioms, not evidence, so in principle a machine can verify them."
+    },
+    {
+      "question": "What objection does the Association for Human Mathematics raise to AI's maths results?",
+      "options": [
+        "The proofs are all wrong",
+        "AI is too expensive to use",
+        "The real pay-off of maths is the toil that builds human understanding, which AI answers skip",
+        "AI cannot solve problems that have baffled scholars"
+      ],
+      "answerIndex": 2,
+      "explanation": "They compare it to giving students the homework answers: without effort, there is no learning."
+    },
+    {
+      "question": "Why does the writer use the example of a paracetamol pill?",
+      "options": [
+        "To show that medicines are dangerous",
+        "To argue that we already rely on things that work without being fully understood",
+        "To prove that AI can design new drugs",
+        "To explain how headaches are caused"
+      ],
+      "answerIndex": 1,
+      "explanation": "The pill works though its mechanism is not fully understood, showing understanding need not be prized over results."
+    },
+    {
+      "question": "Why does the article say AI companies are investing in science?",
+      "options": [
+        "Out of pure altruism",
+        "Because governments order them to",
+        "Because solving problems may help make their models more intelligent in general",
+        "Because they want to replace peer-reviewed journals"
+      ],
+      "answerIndex": 2,
+      "explanation": "As with humans, solving problems can help make models smarter, so the labs are not acting from altruism."
+    },
+    {
+      "question": "What does the Economist recommend for the future of machine-made science?",
+      "options": [
+        "Let AI run labs on its own to move as fast as possible",
+        "Ban AI from science entirely",
+        "Keep humans in the loop directing and monitoring resources, and verify AI results with peer review and open methods",
+        "Stop teaching mathematics"
+      ],
+      "answerIndex": 2,
+      "explanation": "It says science needs a human in the loop, even if that slows progress, plus verification and publishing methods and code."
+    }
+  ]
+}
