@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-18",
+  "title": "AI neolabs are raising huge sums. Most have little to show for it",
+  "articleUrl": "https://www.economist.com/business/2026/10/15/ai-neolabs-are-raising-huge-sums-most-have-little-to-show-for-it",
+  "articlePageUrl": "/articles/2026-10-18.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "decamp",
+      "partOfSpeech": "verb",
+      "pronunciation": "dee-KAMP",
+      "articleQuote": "decamp from established model-makers",
+      "meaning": "To decamp is to leave a place suddenly or secretly, often to go somewhere else for good. The word began with armies: to break camp and march away. Today people use it for anyone who packs up and departs, such as a star player leaving one team for another or staff leaving a company together. In this article, famous AI researchers decamp from big companies like OpenAI to start their own labs.",
+      "examples": [
+        "When the rain started, the whole crowd decamped to the nearest café.",
+        "Several of the bakery's best chefs decamped to a rival shop across town."
+      ]
+    },
+    {
+      "word": "trifling",
+      "partOfSpeech": "adjective",
+      "pronunciation": "TRY-fling",
+      "articleQuote": "still a trifling figure compared with the roughly $40bn valuation",
+      "meaning": "Trifling means very small and not worth much attention. It comes from trifle, a thing of little value. Writers often use it to make a number or problem look tiny next to something bigger. Here, the $200m in yearly revenue sounds like a lot to most of us, but the Economist calls it trifling next to the $40bn price tag investors are putting on the company, which shows how far the hopes run ahead of the sales.",
+      "examples": [
+        "Spending a few dollars on a snack is a trifling cost compared with buying a new bike.",
+        "He brushed off the scratch on his car as a trifling matter."
+      ]
+    },
+    {
+      "word": "colossus",
+      "partOfSpeech": "noun",
+      "pronunciation": "kuh-LOSS-us",
+      "articleQuote": "Nvidia, a chip colossus",
+      "meaning": "A colossus is something enormous in size or power. The word comes from the Colossus of Rhodes, a giant statue in ancient Greece. Today it describes a person, company or country that towers over the others in its field. Calling Nvidia a chip colossus tells you it is a giant of the computer-chip business, big enough that startups need its chips and its money.",
+      "examples": [
+        "The retail colossus has stores in nearly every town in the country.",
+        "In the 1990s, the team was a colossus of basketball, winning title after title."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Venture capital and valuations",
+      "articleQuote": "Georges Doriot, a founding father of venture capital (VC), described his job as judging “a man and an idea”",
+      "meaning": "Imagine you have a great idea for a lemonade stand but no money for a stand. A rich neighbour gives you $100 and, in return, gets a small slice of your future profits, say 10%. That, in miniature, is venture capital: investors (called VCs) hand money to young companies, called startups, in exchange for a share of ownership. Most startups fail, so VCs expect many of their bets to lose everything, and hope that one or two become so valuable that they pay for all the losses. The valuation is the price tag put on the whole company. If a neighbour pays $100 for 10%, the stand is valued at $1,000, even though it has sold no lemonade yet. That is why you read about AI labs worth $32bn or $40bn that have barely released a product: the valuation measures investors' hopes about the future, not sales today. The article's point is that VCs usually want milestones, like a biotech company passing a trial, before giving more money. AI neolabs have not yet developed that habit, so a lot of money is riding on trust in famous researchers."
+    },
+    {
+      "name": "Open-weight AI models",
+      "articleQuote": "Reflection AI, whose open-weight Beam model, announced on October 5th",
+      "meaning": "An AI model like ChatGPT is a giant collection of numbers, called weights, that the computer learned during training. Think of the weights as the model's brain after it has finished school. A closed model keeps those numbers locked up: you can only use it through the company's website or app. An open-weight model publishes the numbers, so anyone with enough computers can download it, run it, and adjust it for their own purpose, like downloading a recipe instead of ordering the dish. (Open-weight is not quite the same as open-source, since the training data and full code are often kept private.) This matters in the article for two reasons. Open models let other engineers build on someone's work: the neolab Thinking Machines sells a service that customises models developed by others. And they are a way to compete with cheap Chinese models, which spread quickly because anyone can use them. So when the article calls Reflection's Beam America's answer to those models, it means a freely downloadable American model that can match them."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is a 'neolab', as the article uses the word?",
+      "options": [
+        "A university laboratory that studies chemistry",
+        "A startup founded by AI researchers who left established model-makers to build their own",
+        "A government agency that regulates AI",
+        "A factory that makes computer chips"
+      ],
+      "answerIndex": 1,
+      "explanation": "Neolabs are new startups, often started by AI superstars who left labs like OpenAI."
+    },
+    {
+      "question": "How much have the 29 neolabs in Radical Ventures' cohort raised together, according to PitchBook?",
+      "options": ["$2bn", "$8bn", "$23bn", "$40bn"],
+      "answerIndex": 2,
+      "explanation": "The cohort has raised a combined $23bn."
+    },
+    {
+      "question": "Why does Safe Superintelligence (SSI) stand out as 'the least hurried' of the neolabs?",
+      "options": [
+        "It sold itself to AMD",
+        "Its founder says it won't release a product until it reaches 'superintelligence'",
+        "It released a model every month",
+        "It refuses to take money from Nvidia"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ilya Sutskever has said SSI does not plan to release a product until it reaches superintelligence, and it has not yet."
+    },
+    {
+      "question": "Why have many neolabs ended up 'in the arms of Nvidia'?",
+      "options": [
+        "Nvidia can grant access to the computing power (chips) they need to compete with established labs",
+        "Nvidia owns all of the neolabs",
+        "Nvidia writes their research papers",
+        "Nvidia is the only company allowed to invest in AI"
+      ],
+      "answerIndex": 0,
+      "explanation": "Neolabs compete with big labs for computing power, and Nvidia, which can grant access to its chips, has made 32 investments in startup model-makers."
+    },
+    {
+      "question": "According to the article, why are VCs comfortable taking long-term risks in biotech but find neolabs harder to judge?",
+      "options": [
+        "Biotech companies never fail",
+        "Neolabs are much older than biotech companies",
+        "Biotechs have pre-defined milestones, like trial phases, that measure progress; neolabs have no such process yet",
+        "Biotech firms release products faster"
+      ],
+      "answerIndex": 2,
+      "explanation": "If early human trials go well, a biotech can raise more money; neolabs have not yet developed a similar way to measure progress."
+    }
+  ]
+}

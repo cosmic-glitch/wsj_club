@@ -1,0 +1,605 @@
+[
+  {
+    "k": "decamp",
+    "t": "decamp",
+    "kind": "vocab",
+    "pron": "dee-KAMP",
+    "forms": [
+      "decamp"
+    ],
+    "text": "To decamp is to leave a place, often suddenly, and set up somewhere else. Here, AI stars decamp from big model-makers to found their own labs.",
+    "audio": true
+  },
+  {
+    "k": "trifling",
+    "t": "trifling",
+    "kind": "vocab",
+    "pron": "TRY-fling",
+    "forms": [
+      "trifling"
+    ],
+    "text": "Trifling means tiny and not worth much notice. Next to a $40bn valuation, even $200m in yearly revenue looks small.",
+    "audio": true
+  },
+  {
+    "k": "colossus",
+    "t": "colossus",
+    "kind": "vocab",
+    "pron": "kuh-LOSS-us",
+    "forms": [
+      "colossus"
+    ],
+    "text": "A colossus is a giant, named for an enormous ancient Greek statue. Calling Nvidia a chip colossus says it towers over the computer-chip business.",
+    "audio": true
+  },
+  {
+    "k": "neolab",
+    "t": "neolabs",
+    "kind": "word",
+    "forms": [
+      "neolab",
+      "neolabs",
+      "neolab era"
+    ],
+    "text": "A neolab is a new AI startup, usually founded by famous researchers who left an established lab. The word joins neo, meaning new, with lab.",
+    "audio": true
+  },
+  {
+    "k": "venture-capital",
+    "t": "venture capital",
+    "kind": "word",
+    "forms": [
+      "venture capital",
+      "VC",
+      "VCs"
+    ],
+    "text": "Venture capital is money that investors give to young, risky companies in exchange for a share of ownership. Most bets fail, so investors hope a few win big.",
+    "audio": true
+  },
+  {
+    "k": "superstar",
+    "t": "superstars",
+    "kind": "word",
+    "forms": [
+      "superstar",
+      "superstars"
+    ],
+    "text": "A superstar is someone far more famous or skilled than their peers. Here it means top AI researchers whose names alone attract money.",
+    "audio": true
+  },
+  {
+    "k": "minimalist",
+    "t": "minimalist",
+    "kind": "word",
+    "forms": [
+      "minimalist"
+    ],
+    "text": "Minimalist means using as little as possible. The investors' philosophy is minimalist because they back a person and an idea with almost nothing else to go on.",
+    "audio": true
+  },
+  {
+    "k": "a-man-and-an-idea",
+    "t": "a man and an idea",
+    "kind": "phrase",
+    "forms": [
+      "a man and an idea"
+    ],
+    "text": "This quote from an early investor says his job was to judge the founder and the concept, not a detailed plan or product.",
+    "audio": true
+  },
+  {
+    "k": "mega-bucks",
+    "t": "mega-bucks",
+    "kind": "phrase",
+    "forms": [
+      "mega-bucks"
+    ],
+    "text": "Mega-bucks is informal slang for a huge amount of money.",
+    "audio": true
+  },
+  {
+    "k": "boom",
+    "t": "boom",
+    "kind": "word",
+    "forms": [
+      "boom"
+    ],
+    "text": "A boom is a period of fast growth and heavy spending in an industry. The AI boom has pulled in vast amounts of investment.",
+    "audio": true
+  },
+  {
+    "k": "vague",
+    "t": "vague",
+    "kind": "word",
+    "forms": [
+      "vague"
+    ],
+    "text": "Vague means unclear or lacking detail. A vague ambition is a goal with no specific plan behind it.",
+    "audio": true
+  },
+  {
+    "k": "model-makers",
+    "t": "model-makers",
+    "kind": "word",
+    "forms": [
+      "model-makers",
+      "model-maker"
+    ],
+    "text": "Model-makers are companies that build AI models, the software trained to write, reason and answer questions, such as OpenAI and Anthropic.",
+    "audio": true
+  },
+  {
+    "k": "safe-superintelligence",
+    "t": "Safe Superintelligence",
+    "kind": "name",
+    "forms": [
+      "Safe Superintelligence",
+      "SSI"
+    ],
+    "text": "Safe Superintelligence (SSI) is the neolab launched by Ilya Sutskever, an OpenAI co-founder. It says it won't ship a product until it reaches superintelligence.",
+    "audio": true
+  },
+  {
+    "k": "superintelligence",
+    "t": "superintelligence",
+    "kind": "word",
+    "forms": [
+      "superintelligence"
+    ],
+    "text": "Superintelligence means AI that is far smarter than humans. It is the goal SSI is aiming for, and has not been reached.",
+    "audio": true
+  },
+  {
+    "k": "co-founder",
+    "t": "co-founder",
+    "kind": "word",
+    "forms": [
+      "co-founder"
+    ],
+    "text": "A co-founder is one of the people who started a company together.",
+    "audio": true
+  },
+  {
+    "k": "radical-ventures",
+    "t": "Radical Ventures",
+    "kind": "name",
+    "forms": [
+      "Radical Ventures"
+    ],
+    "text": "Radical Ventures is a venture capital firm that counted 29 neolabs and tracks who invests in them.",
+    "audio": true
+  },
+  {
+    "k": "pitchbook",
+    "t": "PitchBook",
+    "kind": "name",
+    "forms": [
+      "PitchBook"
+    ],
+    "text": "PitchBook is a company that sells data on startups and the money invested in them.",
+    "audio": true
+  },
+  {
+    "k": "cohort",
+    "t": "cohort",
+    "kind": "word",
+    "forms": [
+      "cohort"
+    ],
+    "text": "A cohort is a group of people or things sharing a trait, studied together. Here it is the group of 29 neolabs.",
+    "audio": true
+  },
+  {
+    "k": "open-weight",
+    "t": "open-weight",
+    "kind": "word",
+    "forms": [
+      "open-weight"
+    ],
+    "text": "An open-weight model has its learned numbers (weights) published, so anyone can download and run it. That differs from a closed model, which you can only use through the company's service.",
+    "audio": true
+  },
+  {
+    "k": "reflection-ai",
+    "t": "Reflection AI",
+    "kind": "name",
+    "forms": [
+      "Reflection AI",
+      "Reflection"
+    ],
+    "text": "Reflection AI is a neolab that has raised money from Nvidia and released an open-weight model called Beam.",
+    "audio": true
+  },
+  {
+    "k": "hailed",
+    "t": "hailed",
+    "kind": "word",
+    "forms": [
+      "hailed"
+    ],
+    "text": "To be hailed as something means to be praised publicly as that thing. Beam was hailed as America's answer to cheap Chinese models.",
+    "audio": true
+  },
+  {
+    "k": "gained-ground",
+    "t": "gained ground",
+    "kind": "phrase",
+    "forms": [
+      "gained ground"
+    ],
+    "text": "To gain ground means to make progress or become more popular, as if advancing across a battlefield.",
+    "audio": true
+  },
+  {
+    "k": "commercial-offerings",
+    "t": "commercial offerings",
+    "kind": "word",
+    "forms": [
+      "commercial offerings"
+    ],
+    "text": "Commercial offerings are products or services a company actually sells, as opposed to research experiments.",
+    "audio": true
+  },
+  {
+    "k": "code",
+    "t": "code",
+    "kind": "word",
+    "forms": [
+      "code"
+    ],
+    "text": "Code is the written instructions that tell a computer what to do. Developers can build released code into their own products.",
+    "audio": true
+  },
+  {
+    "k": "developers",
+    "t": "developers",
+    "kind": "word",
+    "forms": [
+      "developers"
+    ],
+    "text": "Developers are the programmers who build apps and software.",
+    "audio": true
+  },
+  {
+    "k": "demos",
+    "t": "demos",
+    "kind": "word",
+    "forms": [
+      "demos"
+    ],
+    "text": "A demo is a short showing of how something works, not a finished product. Research demos show an approach rather than serve customers.",
+    "audio": true
+  },
+  {
+    "k": "billed",
+    "t": "billed",
+    "kind": "word",
+    "forms": [
+      "billed"
+    ],
+    "text": "Billed as means described or advertised as. Here the code is billed as research demos, not products.",
+    "audio": true
+  },
+  {
+    "k": "valued",
+    "t": "valued",
+    "kind": "word",
+    "forms": [
+      "valued",
+      "valuation"
+    ],
+    "text": "When a startup is valued at an amount, investors have agreed on a price tag for the whole company, based on hopes for its future.",
+    "audio": true
+  },
+  {
+    "k": "scaling-up",
+    "t": "scaling up",
+    "kind": "phrase",
+    "forms": [
+      "scaling up"
+    ],
+    "text": "To scale up is to make something much bigger, for AI usually by using more data and computing power.",
+    "audio": true
+  },
+  {
+    "k": "nvidia",
+    "t": "Nvidia",
+    "kind": "name",
+    "forms": [
+      "Nvidia"
+    ],
+    "text": "Nvidia is the company whose chips power most AI training. It also invests in many AI startups, including neolabs.",
+    "audio": true
+  },
+  {
+    "k": "handed",
+    "t": "handed",
+    "kind": "word",
+    "forms": [
+      "handed"
+    ],
+    "text": "Here handed the startup funding means gave it money. It is a casual way to describe a big payment.",
+    "audio": true
+  },
+  {
+    "k": "mira-murati",
+    "t": "Mira Murati",
+    "kind": "name",
+    "forms": [
+      "Mira Murati"
+    ],
+    "text": "Mira Murati is a former OpenAI executive who founded the neolab Thinking Machines Lab.",
+    "audio": true
+  },
+  {
+    "k": "thinking-machines-lab",
+    "t": "Thinking Machines Lab",
+    "kind": "name",
+    "forms": [
+      "Thinking Machines Lab",
+      "TML"
+    ],
+    "text": "Thinking Machines Lab (TML) is Mira Murati's neolab. It has released a service called Tinker and its own model, Inkling.",
+    "audio": true
+  },
+  {
+    "k": "valuation",
+    "t": "valuation",
+    "kind": "word",
+    "forms": [
+      "valuation"
+    ],
+    "text": "A valuation is the price tag put on a whole company, set by what investors will pay for a share of it.",
+    "audio": true
+  },
+  {
+    "k": "customise",
+    "t": "customise",
+    "kind": "word",
+    "forms": [
+      "customise"
+    ],
+    "text": "To customise is to adjust something to fit a particular need. Engineers customise open-weight models for their own tasks.",
+    "audio": true
+  },
+  {
+    "k": "annualised-revenue",
+    "t": "annualised revenue",
+    "kind": "word",
+    "forms": [
+      "annualised revenue"
+    ],
+    "text": "Annualised revenue takes recent sales and multiplies them to a full year. It estimates yearly income if the pace holds.",
+    "audio": true
+  },
+  {
+    "k": "fundraising-round",
+    "t": "fundraising round",
+    "kind": "word",
+    "forms": [
+      "fundraising round"
+    ],
+    "text": "A fundraising round is one batch of new investment, with the startup selling shares to investors in return for money.",
+    "audio": true
+  },
+  {
+    "k": "openrouter",
+    "t": "OpenRouter",
+    "kind": "name",
+    "forms": [
+      "OpenRouter"
+    ],
+    "text": "OpenRouter is an online marketplace where developers can use many different AI models.",
+    "audio": true
+  },
+  {
+    "k": "cut-off",
+    "t": "cut-off",
+    "kind": "phrase",
+    "forms": [
+      "cut-off"
+    ],
+    "text": "The cut-off is the line that decides who is in or out. Inkling falls just below it on the list of top models.",
+    "audio": true
+  },
+  {
+    "k": "traffic-cop",
+    "t": "traffic cop",
+    "kind": "phrase",
+    "forms": [
+      "traffic cop"
+    ],
+    "text": "A traffic cop directs cars. Here it is a metaphor for a model that sends each task to whichever other model suits it best.",
+    "audio": true
+  },
+  {
+    "k": "ultra-cheap",
+    "t": "ultra-cheap",
+    "kind": "word",
+    "forms": [
+      "ultra-cheap"
+    ],
+    "text": "Ultra-cheap means extremely low in price, a big reason a model becomes popular.",
+    "audio": true
+  },
+  {
+    "k": "typesafe",
+    "t": "Typesafe",
+    "kind": "name",
+    "forms": [
+      "Typesafe"
+    ],
+    "text": "Typesafe is the neolab behind Jev. It raised $40m, then $870m more this month.",
+    "audio": true
+  },
+  {
+    "k": "modest",
+    "t": "modest",
+    "kind": "word",
+    "forms": [
+      "modest"
+    ],
+    "text": "Modest means fairly small. Compared with other neolab sums, $40m is modest.",
+    "audio": true
+  },
+  {
+    "k": "copycat",
+    "t": "copycat",
+    "kind": "word",
+    "forms": [
+      "copycat"
+    ],
+    "text": "A copycat copies someone else's idea or product. Copycat offerings are rivals that quickly imitate a successful model.",
+    "audio": true
+  },
+  {
+    "k": "surfaced",
+    "t": "surfaced",
+    "kind": "word",
+    "forms": [
+      "surfaced"
+    ],
+    "text": "Here surfaced means appeared. Rivals have surfaced since Jev was released.",
+    "audio": true
+  },
+  {
+    "k": "breakthroughs",
+    "t": "breakthroughs",
+    "kind": "word",
+    "forms": [
+      "breakthroughs"
+    ],
+    "text": "A breakthrough is a major discovery that makes real progress possible.",
+    "audio": true
+  },
+  {
+    "k": "computing-power",
+    "t": "computing power",
+    "kind": "word",
+    "forms": [
+      "computing power"
+    ],
+    "text": "Computing power is the amount of processing a computer system can do. Training AI takes enormous amounts, supplied by chips.",
+    "audio": true
+  },
+  {
+    "k": "into-the-arms-of",
+    "t": "into the arms of",
+    "kind": "phrase",
+    "forms": [
+      "into the arms of"
+    ],
+    "text": "To push someone into the arms of another means to leave them depending on that other party, for lack of other options.",
+    "audio": true
+  },
+  {
+    "k": "chips",
+    "t": "chips",
+    "kind": "word",
+    "forms": [
+      "chips"
+    ],
+    "text": "Chips are the tiny processors that run computers. AI training needs powerful ones, mostly made by Nvidia.",
+    "audio": true
+  },
+  {
+    "k": "amd",
+    "t": "AMD",
+    "kind": "name",
+    "forms": [
+      "AMD"
+    ],
+    "text": "AMD is a chip company that competes with Nvidia.",
+    "audio": true
+  },
+  {
+    "k": "world-labs",
+    "t": "World Labs",
+    "kind": "name",
+    "forms": [
+      "World Labs"
+    ],
+    "text": "World Labs is a neolab founded by Fei-Fei Li, bought by AMD for $8bn in September.",
+    "audio": true
+  },
+  {
+    "k": "fei-fei-li",
+    "t": "Fei-Fei Li",
+    "kind": "name",
+    "forms": [
+      "Fei-Fei Li"
+    ],
+    "text": "Fei-Fei Li is a renowned AI researcher, founder of World Labs.",
+    "audio": true
+  },
+  {
+    "k": "acquisition",
+    "t": "acquisition",
+    "kind": "word",
+    "forms": [
+      "acquisition"
+    ],
+    "text": "An acquisition is when one company buys another.",
+    "audio": true
+  },
+  {
+    "k": "patient",
+    "t": "patient",
+    "kind": "word",
+    "forms": [
+      "patient"
+    ],
+    "text": "Here patient means willing to wait a long time for results before getting money back.",
+    "audio": true
+  },
+  {
+    "k": "returns",
+    "t": "returns",
+    "kind": "word",
+    "forms": [
+      "returns"
+    ],
+    "text": "Returns are the profit an investor earns on money put in.",
+    "audio": true
+  },
+  {
+    "k": "backers",
+    "t": "backers",
+    "kind": "word",
+    "forms": [
+      "backers"
+    ],
+    "text": "Backers are the people or firms who give money to support a venture.",
+    "audio": true
+  },
+  {
+    "k": "biotech",
+    "t": "biotech",
+    "kind": "word",
+    "forms": [
+      "biotech"
+    ],
+    "text": "Biotech is short for biotechnology, companies using biology to make medicines and treatments.",
+    "audio": true
+  },
+  {
+    "k": "milestones",
+    "t": "milestones",
+    "kind": "word",
+    "forms": [
+      "milestones"
+    ],
+    "text": "Milestones are checkpoints that show how far a project has come, like passing a stage of a trial.",
+    "audio": true
+  },
+  {
+    "k": "human-trials",
+    "t": "human trials",
+    "kind": "word",
+    "forms": [
+      "human trials"
+    ],
+    "text": "Human trials are tests of a new medicine on people, run in phases. Passing early phases lets a biotech raise more funds.",
+    "audio": true
+  }
+]
