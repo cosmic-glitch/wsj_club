@@ -1,0 +1,419 @@
+[
+  {
+    "k": "prevalent",
+    "t": "prevalent",
+    "kind": "vocab",
+    "pron": "PREV-uh-lent",
+    "forms": [
+      "prevalent"
+    ],
+    "text": "Prevalent means very common. Here, knee pain is so common among runners that it has its own name.",
+    "audio": true
+  },
+  {
+    "k": "resilient",
+    "t": "resilient",
+    "kind": "vocab",
+    "pron": "rih-ZIL-yent",
+    "forms": [
+      "resilient",
+      "resilience"
+    ],
+    "text": "Resilient means able to take stress and bounce back. Here, slow training makes tendons and bones tougher so they handle running.",
+    "audio": true
+  },
+  {
+    "k": "novice",
+    "t": "novice",
+    "kind": "vocab",
+    "pron": "NOV-iss",
+    "forms": [
+      "Novices",
+      "novice"
+    ],
+    "text": "A novice is a beginner who is still learning. Here, new runners report injuries more often than experienced ones.",
+    "audio": true
+  },
+  {
+    "k": "arthritis",
+    "t": "arthritis",
+    "kind": "word",
+    "pron": "AR-THRY-tis",
+    "forms": [
+      "arthritis"
+    ],
+    "text": "Arthritis is a sickness that makes joints swollen, stiff, and sore. Here, people worry that running for years will cause it, but the study found no link.",
+    "audio": true
+  },
+  {
+    "k": "tendons",
+    "t": "tendon",
+    "kind": "word",
+    "forms": [
+      "tendons"
+    ],
+    "text": "A tendon is a tough cord that joins a muscle to a bone. Here, using tendons a little more each week makes them thicker and stronger.",
+    "audio": true
+  },
+  {
+    "k": "term-of-art",
+    "t": "term of art",
+    "kind": "phrase",
+    "forms": [
+      "term of art"
+    ],
+    "text": "A term of art is a special phrase that people in one field all know and use. Here, runner's knee is such a common problem that it became one.",
+    "audio": true
+  },
+  {
+    "k": "runners-knee",
+    "t": "runner's knee",
+    "kind": "word",
+    "forms": [
+      "Runner’s knee"
+    ],
+    "text": "Runner's knee is an ache around the kneecap that many joggers get.",
+    "audio": true
+  },
+  {
+    "k": "kneecap",
+    "t": "kneecap",
+    "kind": "word",
+    "forms": [
+      "kneecap"
+    ],
+    "text": "The kneecap is the small, round bone at the front of your knee.",
+    "audio": true
+  },
+  {
+    "k": "assortment",
+    "t": "assortment",
+    "kind": "word",
+    "forms": [
+      "assortment"
+    ],
+    "text": "An assortment is a mix of different kinds of things. Here, runner's knee is just one of many kinds of injury.",
+    "audio": true
+  },
+  {
+    "k": "overuse",
+    "t": "overuse injury",
+    "kind": "word",
+    "forms": [
+      "overuse"
+    ],
+    "text": "An overuse injury happens when you do too much of an activity without enough rest, so the body cannot heal in time.",
+    "audio": true
+  },
+  {
+    "k": "tolerable",
+    "t": "tolerable",
+    "kind": "word",
+    "forms": [
+      "tolerable"
+    ],
+    "text": "Tolerable means possible to put up with. Here, a little training at a time is fine, but the total can add up to too much.",
+    "audio": true
+  },
+  {
+    "k": "cumulatively",
+    "t": "cumulatively",
+    "kind": "word",
+    "forms": [
+      "cumulatively",
+      "cumulative"
+    ],
+    "text": "Cumulatively means adding up bit by bit over time. Here, small amounts of running pile up into a load that is too heavy.",
+    "audio": true
+  },
+  {
+    "k": "compound",
+    "t": "compound",
+    "kind": "word",
+    "forms": [
+      "compound"
+    ],
+    "text": "To compound means to make something get worse by piling more on top. Here, one injury can lead to another.",
+    "audio": true
+  },
+  {
+    "k": "odds",
+    "t": "odds",
+    "kind": "word",
+    "forms": [
+      "odds"
+    ],
+    "text": "Odds are how likely something is to happen. Here, an earlier injury made another one 62% more likely.",
+    "audio": true
+  },
+  {
+    "k": "wear-down",
+    "t": "wear down",
+    "kind": "phrase",
+    "forms": [
+      "wear down"
+    ],
+    "text": "To wear down means to slowly use something up until it is thin or weak.",
+    "audio": true
+  },
+  {
+    "k": "keep-at-bay",
+    "t": "keep at bay",
+    "kind": "phrase",
+    "forms": [
+      "at bay"
+    ],
+    "text": "To keep something at bay means to hold it off so it cannot reach you. Here, runners want to keep injuries away.",
+    "audio": true
+  },
+  {
+    "k": "review",
+    "t": "review",
+    "kind": "word",
+    "forms": [
+      "review"
+    ],
+    "text": "A review is a study that gathers and compares the results of many other studies.",
+    "audio": true
+  },
+  {
+    "k": "susceptibility",
+    "t": "susceptibility",
+    "kind": "word",
+    "forms": [
+      "susceptibility"
+    ],
+    "text": "Susceptibility means how easily something can be harmed. Here, it is how likely a runner is to get hurt.",
+    "audio": true
+  },
+  {
+    "k": "adage",
+    "t": "adage",
+    "kind": "word",
+    "forms": [
+      "adage"
+    ],
+    "text": "An adage is an old saying that people say is wise. Here, it is \"slow and steady.\"",
+    "audio": true
+  },
+  {
+    "k": "slow-and-steady",
+    "t": "slow and steady",
+    "kind": "phrase",
+    "forms": [
+      "slow and steady"
+    ],
+    "text": "Slow and steady means going carefully at an even pace. It comes from the idea that the tortoise beats the hare.",
+    "audio": true
+  },
+  {
+    "k": "epidemiologist",
+    "t": "epidemiologist",
+    "kind": "word",
+    "forms": [
+      "epidemiologist"
+    ],
+    "text": "An epidemiologist is a scientist who studies how health problems spread and who gets them.",
+    "audio": true
+  },
+  {
+    "k": "twinge",
+    "t": "twinge",
+    "kind": "word",
+    "forms": [
+      "twinge"
+    ],
+    "text": "A twinge is a quick, small pain that comes and goes.",
+    "audio": true
+  },
+  {
+    "k": "seasoned",
+    "t": "seasoned",
+    "kind": "word",
+    "forms": [
+      "seasoned"
+    ],
+    "text": "Seasoned means experienced. Here, a seasoned runner has been running for a long time.",
+    "audio": true
+  },
+  {
+    "k": "sprinters",
+    "t": "sprinters",
+    "kind": "word",
+    "forms": [
+      "sprinters"
+    ],
+    "text": "Sprinters are runners who race at top speed over short distances. Here, it just means runners.",
+    "audio": true
+  },
+  {
+    "k": "associated",
+    "t": "associated with",
+    "kind": "phrase",
+    "forms": [
+      "associated"
+    ],
+    "text": "Associated with means linked to. It shows two things go together but does not prove one causes the other.",
+    "audio": true
+  },
+  {
+    "k": "adapt",
+    "t": "adapt",
+    "kind": "word",
+    "forms": [
+      "adapt"
+    ],
+    "text": "To adapt means to change so you fit new conditions. Here, the body slowly grows stronger when the load rises gently.",
+    "audio": true
+  },
+  {
+    "k": "collagen",
+    "t": "collagen",
+    "kind": "word",
+    "forms": [
+      "collagen"
+    ],
+    "text": "Collagen is a stringy material in your body that makes skin, tendons, and bones strong.",
+    "audio": true
+  },
+  {
+    "k": "stiffen",
+    "t": "stiffen",
+    "kind": "word",
+    "forms": [
+      "stiffen"
+    ],
+    "text": "To stiffen means to become harder and less bendy. Here, it makes tendons stronger.",
+    "audio": true
+  },
+  {
+    "k": "strain",
+    "t": "strain",
+    "kind": "word",
+    "forms": [
+      "strain"
+    ],
+    "text": "Strain is a pushing or pulling force on something. Too much strain can hurt it.",
+    "audio": true
+  },
+  {
+    "k": "osteoblasts",
+    "t": "osteoblasts",
+    "kind": "word",
+    "forms": [
+      "osteoblasts"
+    ],
+    "text": "Osteoblasts are tiny cells that build new bone.",
+    "audio": true
+  },
+  {
+    "k": "stress-fractures",
+    "t": "stress fracture",
+    "kind": "word",
+    "forms": [
+      "stress fractures"
+    ],
+    "text": "A stress fracture is a tiny crack in a bone caused by being hit again and again.",
+    "audio": true
+  },
+  {
+    "k": "cartilage",
+    "t": "cartilage",
+    "kind": "word",
+    "forms": [
+      "cartilage"
+    ],
+    "text": "Cartilage is the smooth, rubbery cushion between bones at a joint.",
+    "audio": true
+  },
+  {
+    "k": "shinbone",
+    "t": "shinbone",
+    "kind": "word",
+    "forms": [
+      "shinbone"
+    ],
+    "text": "The shinbone is the long bone in the front of your lower leg.",
+    "audio": true
+  },
+  {
+    "k": "bone-density",
+    "t": "bone mineral density",
+    "kind": "word",
+    "forms": [
+      "bone mineral density"
+    ],
+    "text": "Bone mineral density tells how packed and strong your bones are. Higher is stronger.",
+    "audio": true
+  },
+  {
+    "k": "resistance-training",
+    "t": "resistance training",
+    "kind": "word",
+    "forms": [
+      "resistance"
+    ],
+    "text": "Resistance training is exercise that makes muscles work against a weight, like lifting.",
+    "audio": true
+  },
+  {
+    "k": "cumulative-walking",
+    "t": "cumulative",
+    "kind": "word",
+    "forms": [
+      "cumulative"
+    ],
+    "text": "Cumulative means the total of everything added together.",
+    "audio": true
+  },
+  {
+    "k": "body-mass-index",
+    "t": "body-mass index",
+    "kind": "word",
+    "forms": [
+      "body-mass indices"
+    ],
+    "text": "Body-mass index is a number doctors figure from weight and height to estimate body size.",
+    "audio": true
+  },
+  {
+    "k": "persistent",
+    "t": "persistent",
+    "kind": "word",
+    "forms": [
+      "persistent"
+    ],
+    "text": "Persistent means lasting a long time and not going away.",
+    "audio": true
+  },
+  {
+    "k": "marathon",
+    "t": "marathon",
+    "kind": "word",
+    "forms": [
+      "marathon"
+    ],
+    "text": "A marathon is a very long running race of about 26 miles (42 kilometers).",
+    "audio": true
+  },
+  {
+    "k": "long-run",
+    "t": "in the long run",
+    "kind": "phrase",
+    "forms": [
+      "long run"
+    ],
+    "text": "The long run is a pun here. It means both a long-distance run and a long stretch of time.",
+    "audio": true
+  },
+  {
+    "k": "evidence-based",
+    "t": "evidence-based",
+    "kind": "word",
+    "forms": [
+      "evidence-based"
+    ],
+    "text": "Evidence-based means built on facts and test results rather than guesses.",
+    "audio": true
+  }
+]

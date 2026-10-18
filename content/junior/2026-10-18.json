@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-18",
+  "title": "Can joggers outrun injury?",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/16/can-joggers-outrun-injury",
+  "articlePageUrl": "/articles/junior/2026-10-18.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "prevalent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "PREV-uh-lent",
+      "articleQuote": "is prevalent enough to be a term of art",
+      "meaning": "Something prevalent is very common and found in many places or among many people. If a lot of kids in your school have colds in winter, colds are prevalent. In the article, knee pain is so prevalent among runners that it even has its own name, \"runner's knee.\"",
+      "examples": [
+        "Soccer is prevalent in our town, so almost every kid plays it.",
+        "Sneakers are prevalent at my school; hardly anyone wears dress shoes."
+      ]
+    },
+    {
+      "word": "resilient",
+      "partOfSpeech": "adjective",
+      "pronunciation": "rih-ZIL-yent",
+      "articleQuote": "more resilient to strain",
+      "meaning": "Something resilient can take a hit, stretch, or hard times and then bounce back. A rubber ball is resilient. So is a kid who loses a game, feels sad for a minute, and tries again. In the article, training slowly makes tendons and bones more resilient, so they can handle the strain of running.",
+      "examples": [
+        "The resilient little tree stood up again after the storm bent it over.",
+        "She was resilient and kept practicing after missing the shot."
+      ]
+    },
+    {
+      "word": "novice",
+      "partOfSpeech": "noun",
+      "pronunciation": "NOV-iss",
+      "articleQuote": "Novices report injuries more than twice",
+      "meaning": "A novice is someone who is brand new at an activity and still learning. Everyone is a novice at first. A kid on the first day of swim lessons is a novice swimmer. The opposite is an expert. In the article, beginner runners are novices, and they report injuries more often than experienced runners.",
+      "examples": [
+        "As a novice chess player, I still forget how the knight moves.",
+        "The coach put the novices in one group and the experts in another."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Arthritis",
+      "articleQuote": "eventually lead to arthritis",
+      "meaning": "**Arthritis** is a sickness of the joints. Joints are the places where bones meet, like your knees, elbows, and knuckles. With arthritis, a joint becomes swollen, stiff, and sore, so moving it hurts.\n\nThink of a door hinge. When it is smooth, the door swings easily. When the hinge gets rusty and stiff, the door sticks and squeaks. A joint with arthritis is a bit like that rusty hinge. Between the bones is a slippery cushion called cartilage, and in some kinds of arthritis that cushion wears thin.\n\nMany people believe running wears out your knees and causes arthritis. That is why the article checks the idea. Scientists studied thousands of marathon runners and found no link between running and arthritis. Arthritis is also more common as people get older, which is one reason it is easy to blame the wrong thing."
+    },
+    {
+      "name": "Tendons",
+      "articleQuote": "Using tendons stimulates collagen production",
+      "meaning": "A **tendon** is a tough, stretchy rope that joins a muscle to a bone. When a muscle pulls, the tendon pulls the bone, and that is how you move.\n\nFeel the back of your ankle. The thick cord there is the Achilles tendon. It links your calf muscle to your heel bone. Every time you jump or run, that cord stretches and snaps back, like a strong rubber band.\n\nTendons are made partly of a stringy material called collagen. The article explains that when you use your tendons a little more each week, your body makes more collagen, and the tendons get thicker and stiffer, which makes them stronger. But if you suddenly ask them to do far too much, they can get sore and hurt. That is why slow, steady training protects them."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, which of these did NOT help runners avoid injuries?",
+      "options": [
+        "Increasing running distance slowly",
+        "Stretching before a jog",
+        "Keeping each run only a little longer than the month's longest",
+        "Building up weekly totals gradually"
+      ],
+      "answerIndex": 1,
+      "explanation": "One study found stretching before a jog did not help, and expensive shoe designs did not seem to matter either."
+    },
+    {
+      "question": "Why does increasing training slowly help the body?",
+      "options": [
+        "It gives tendons and bones time to adapt and get stronger",
+        "It makes runners faster right away",
+        "It stops runners from getting tired",
+        "It makes the shoes last longer"
+      ],
+      "answerIndex": 0,
+      "explanation": "Slow increases give the body a chance to adapt: tendons stiffen and thicken, and bones get stronger."
+    },
+    {
+      "question": "\"Novices report injuries more than twice as often as experienced runners.\" What is a novice?",
+      "options": [
+        "A very fast runner",
+        "A doctor who studies running",
+        "Someone who is new at an activity",
+        "A person who owns many shoes"
+      ],
+      "answerIndex": 2,
+      "explanation": "A novice is a beginner who is still learning."
+    },
+    {
+      "question": "What did the study of 3,804 marathon runners find about arthritis?",
+      "options": [
+        "Running caused it in most runners",
+        "Running cured it",
+        "Only young runners got it",
+        "It found no link between running history and arthritis"
+      ],
+      "answerIndex": 3,
+      "explanation": "The study found no association between running history and the risk of arthritis."
+    },
+    {
+      "question": "What is a tendon?",
+      "options": [
+        "A tough cord that joins a muscle to a bone",
+        "A soft cushion between two bones",
+        "A cell that builds bone",
+        "A kind of running shoe"
+      ],
+      "answerIndex": 0,
+      "explanation": "Tendons connect muscles to bones, and they get stronger when they are used a bit more each week."
+    }
+  ]
+}
