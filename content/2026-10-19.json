@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-19",
+  "title": "The AI industry’s gigantic debts are making investors nervous",
+  "articleUrl": "https://www.economist.com/business/2026/10/18/the-ai-industrys-gigantic-debts-are-making-investors-nervous",
+  "articlePageUrl": "/articles/2026-10-19.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "stagnate",
+      "partOfSpeech": "verb",
+      "pronunciation": "STAG-nayt",
+      "articleQuote": "The bigger threat would be if demand for AI were to stagnate.",
+      "meaning": "To stagnate is to stop growing or developing and just sit still, like a pond with no stream flowing through it. It is often used for economies, sales, careers or skills that were once moving upward. Here the Economist warns that if businesses stop spending more on AI, the companies that borrowed heavily to build for ever-growing demand could be left unable to pay their debts.",
+      "examples": [
+        "My video-game ranking began to stagnate when I stopped practising new strategies.",
+        "If a town's population stagnates for years, its schools and shops often start to close."
+      ]
+    },
+    {
+      "word": "spearhead",
+      "partOfSpeech": "verb",
+      "pronunciation": "SPEER-hed",
+      "articleQuote": "Private-credit providers, including Apollo and Blackstone, are spearheading many of the more creative deals.",
+      "meaning": "To spearhead something is to lead it and push it forward, the way the sharp tip of a spear goes first into the target. It is used for campaigns, projects and movements, and the leader is usually the one taking the early risk. In this article, lenders such as Apollo and Blackstone are the ones inventing and driving the new ways of financing AI data centres.",
+      "examples": [
+        "She agreed to spearhead the school's recycling drive and recruited ten volunteers.",
+        "The team's fastest runner spearheaded the attack down the field."
+      ]
+    },
+    {
+      "word": "lurk",
+      "partOfSpeech": "verb",
+      "pronunciation": "LURK",
+      "articleQuote": "Even so, dangers lurk ahead.",
+      "meaning": "To lurk is to wait out of sight, usually because something bad is about to happen. A shark can lurk beneath a calm surface, and a problem can lurk behind a situation that looks fine. The Economist uses it to say that although investors are not panicking yet, hidden risks such as rising borrowing costs are waiting further down the road.",
+      "examples": [
+        "A tricky question lurked at the end of the test, just when I thought I was finished.",
+        "Be careful online, because scams can lurk behind messages that look friendly."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Credit-default swaps",
+      "articleQuote": "The price of credit-default swaps offering insurance against a CoreWeave default implies that the probability of the company being unable to service its debts in the next five years has risen above 60%",
+      "meaning": "Finance has a way to bet on whether a borrower will fail to repay, and it works like insurance. A credit-default swap (CDS) is a contract in which one side pays a regular fee, and the other side promises to pay out a large sum if a named company defaults, meaning it stops paying what it owes on its bonds. A bank that lent money to a company can buy one to protect itself, and an investor who only suspects trouble can buy one as a bet.\n\nThe price is the clue. Think of insuring a car: a careless driver in a crash-prone city pays more than a careful one. In the same way, when buyers rush to insure against a company's default, the fee rises, so the price reveals how likely the market thinks the failure is. That is how the article can say the market implies a probability above 60% for CoreWeave: the swap prices are so high that only a very likely default would justify them.\n\nWhenever you see the cost of insuring against a failure jump, ask what the people paying it know or fear.\n"
+    },
+    {
+      "name": "Junk bonds and credit ratings",
+      "articleQuote": "Only about 15% of the value of AI-related bonds issued this year have junk status.",
+      "meaning": "A bond is a loan that you can trade: you hand a company money today, and it promises regular interest plus your money back later. Because some companies are far more likely to miss payments than others, firms called credit-rating agencies, such as Fitch, grade borrowers with letter scores, rather like a report card for repaying debts. Borrowers with high grades are called investment grade. Those below a cut-off line are called high-yield, or junk, bonds.\n\nJunk is not a sign the company is doomed, but lenders know the risk of non-payment is higher, so they demand a higher interest rate, called the yield, as compensation. That is why the article treats CoreWeave's bond yield rising from 10% to 15% as a level linked to companies in financial distress, while noting that only about 15% of AI-related bonds this year are rated junk, which suggests most borrowers are still seen as safe.\n\nWhen a loan pays a very high interest rate, the extra interest is the price of the risk the lender is taking."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What has happened to CoreWeave's five-year bond since July, according to the article?",
+      "options": [
+        "Its price has fallen and its yield has risen",
+        "Its price has risen and its yield has fallen",
+        "Both its price and its yield have risen",
+        "It has been repaid early by the company"
+      ],
+      "answerIndex": 0,
+      "explanation": "The bond's price fell by 16% and its yield climbed from 10% to 15%, a sign investors see it as riskier."
+    },
+    {
+      "question": "Why does the article say assessing risk in chip-backed financing is so hard?",
+      "options": [
+        "Chips are illegal to use as collateral",
+        "A data centre's building, chips and power source can each be financed by a separate layer of debt",
+        "Only the government is allowed to see the contracts",
+        "The chips lose all value as soon as they are installed"
+      ],
+      "answerIndex": 1,
+      "explanation": "Separate layers of debt on different parts of one site make it difficult to see who is owed what and where losses would land."
+    },
+    {
+      "question": "Why do structures like the Meta–BlackRock SPV appeal to both sides?",
+      "options": [
+        "They let Meta avoid paying rent on the data centres",
+        "BlackRock gets steady income guaranteed by Meta, and Meta keeps the debt off its balance-sheet",
+        "They remove all risk for everyone involved",
+        "They are required by credit-rating agencies"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says the SPV gives BlackRock a stream of steady income guaranteed by Meta, while Meta keeps the debt off its own balance-sheet."
+    },
+    {
+      "question": "Which of these does the article name as a danger lurking ahead for AI borrowers?",
+      "options": [
+        "Governments banning data centres",
+        "Falling electricity prices",
+        "Rising borrowing costs and a stagnation in demand for AI",
+        "Too many people wanting to buy AI bonds"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article names rising borrowing costs as one threat and stagnating AI demand, shown by flat spending since July, as the bigger one."
+    },
+    {
+      "question": "A credit-default swap works most like which everyday product?",
+      "options": [
+        "A savings account",
+        "A gift card",
+        "Insurance that pays out if a borrower fails to repay",
+        "A coupon for a discount"
+      ],
+      "answerIndex": 2,
+      "explanation": "The buyer pays a fee and receives a payout if the named company defaults, just as with insurance."
+    }
+  ]
+}

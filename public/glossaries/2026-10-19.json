@@ -1,0 +1,695 @@
+[
+  {
+    "k": "stagnate",
+    "t": "stagnate",
+    "kind": "vocab",
+    "pron": "STAG-nayt",
+    "forms": [
+      "stagnate"
+    ],
+    "text": "To stagnate is to stop growing and sit still, like a pond with no stream running through it. Here the Economist warns that if spending on AI stops rising, companies that borrowed heavily to build for ever-growing demand could struggle to pay their debts.",
+    "audio": true
+  },
+  {
+    "k": "spearhead",
+    "t": "spearheading",
+    "kind": "vocab",
+    "pron": "SPEER-hed",
+    "forms": [
+      "spearheading"
+    ],
+    "text": "To spearhead something is to lead it and push it forward, like the tip of a spear going in first. In this article lenders such as Apollo and Blackstone are the ones inventing and driving the creative new ways of financing AI data centres.",
+    "audio": true
+  },
+  {
+    "k": "lurk",
+    "t": "lurk",
+    "kind": "vocab",
+    "pron": "LURK",
+    "forms": [
+      "lurk"
+    ],
+    "text": "To lurk is to wait out of sight, usually before something bad happens. The Economist says that although investors are not panicking yet, hidden dangers such as rising borrowing costs are waiting further down the road.",
+    "audio": true
+  },
+  {
+    "k": "coreweave",
+    "t": "CoreWeave",
+    "kind": "name",
+    "forms": [
+      "CoreWeave"
+    ],
+    "text": "CoreWeave is a company that rents out data-centre computing power to AI developers. It lives on borrowed money, so its falling bond price and rising yield are the article's main sign of nerves in credit markets.",
+    "audio": true
+  },
+  {
+    "k": "neocloud",
+    "t": "neocloud",
+    "kind": "word",
+    "forms": [
+      "neocloud",
+      "neoclouds"
+    ],
+    "text": "A neocloud is a newer company that rents out data-centre capacity for AI models, in competition with giants like Amazon and Microsoft. The prefix neo means new. These firms mostly run on debt, and most of the listed ones are not yet profitable.",
+    "audio": true
+  },
+  {
+    "k": "bond",
+    "t": "bond",
+    "kind": "word",
+    "forms": [
+      "bond",
+      "bonds"
+    ],
+    "text": "A bond is a loan that can be traded: you give a company money now, and it promises regular interest and your money back later. Bond prices and yields move in opposite directions, so a falling price means investors want more compensation for risk.",
+    "audio": true
+  },
+  {
+    "k": "yield",
+    "t": "yield",
+    "kind": "word",
+    "forms": [
+      "yield",
+      "yields"
+    ],
+    "text": "A bond's yield is the return an investor earns on it, expressed as a yearly percentage of what the bond costs. When the price of a bond falls, its yield rises. A 15% yield, like CoreWeave's, signals that investors think the borrower is risky.",
+    "audio": true
+  },
+  {
+    "k": "credit-default-swap",
+    "t": "credit-default swaps",
+    "kind": "phrase",
+    "forms": [
+      "credit-default swaps"
+    ],
+    "text": "A credit-default swap is a contract that works like insurance on a loan: the buyer pays a fee and receives a payout if the named company defaults. High prices for these contracts show the market thinks default is likely.",
+    "audio": true
+  },
+  {
+    "k": "default",
+    "t": "default",
+    "kind": "word",
+    "forms": [
+      "default"
+    ],
+    "text": "To default is to fail to make the payments owed on a debt. Here a CoreWeave default would mean the company could not pay its bondholders what it promised.",
+    "audio": true
+  },
+  {
+    "k": "service-debts",
+    "t": "service its debts",
+    "kind": "phrase",
+    "forms": [
+      "service its debts",
+      "service their vast debts",
+      "service their"
+    ],
+    "text": "To service a debt means to keep up the regular interest payments and repayments that it requires. It is a standard finance phrase, nothing to do with customer service.",
+    "audio": true
+  },
+  {
+    "k": "junk",
+    "t": "junk",
+    "kind": "word",
+    "forms": [
+      "junk"
+    ],
+    "text": "In finance, junk describes bonds from borrowers with low credit ratings, who are more likely to miss payments. They must pay higher interest to attract lenders. Junk status here is a rating label, not a statement that the bond is worthless.",
+    "audio": true
+  },
+  {
+    "k": "distress",
+    "t": "distress",
+    "kind": "word",
+    "forms": [
+      "distress"
+    ],
+    "text": "Financial distress means a company is in serious trouble paying its bills. Bond yields as high as 15% are the sort of level lenders demand from firms that might be heading there.",
+    "audio": true
+  },
+  {
+    "k": "cashflows",
+    "t": "cashflows",
+    "kind": "word",
+    "forms": [
+      "cashflows"
+    ],
+    "text": "Cashflow is the money actually coming into and going out of a business over a period. A company can look big on paper but still fail if its incoming cash is not enough to cover the debt payments due.",
+    "audio": true
+  },
+  {
+    "k": "nasdaq",
+    "t": "NASDAQ",
+    "kind": "name",
+    "forms": [
+      "NASDAQ"
+    ],
+    "text": "The NASDAQ is a US stock exchange known for its many technology companies. Its index tracks their combined share prices, so it is a quick way to see how the market is feeling about tech.",
+    "audio": true
+  },
+  {
+    "k": "wobble",
+    "t": "wobble",
+    "kind": "word",
+    "forms": [
+      "wobble"
+    ],
+    "text": "A wobble is a small, shaky drop or loss of steadiness, as when a bike wobbles before it recovers. In markets it describes a dip that is worrying but not a crash.",
+    "audio": true
+  },
+  {
+    "k": "pricing-in",
+    "t": "pricing in",
+    "kind": "phrase",
+    "forms": [
+      "pricing in"
+    ],
+    "text": "To price something in means that investors have already built an expected future event into today's prices. Here investors are already reflecting a bigger, murkier and riskier pile of debt in what they will pay.",
+    "audio": true
+  },
+  {
+    "k": "opaque",
+    "t": "opaque",
+    "kind": "word",
+    "forms": [
+      "opaque"
+    ],
+    "text": "Opaque means impossible to see through, like frosted glass. In finance it means a structure is so complicated or hidden that outsiders cannot tell where the risks sit.",
+    "audio": true
+  },
+  {
+    "k": "profitable",
+    "t": "profitable",
+    "kind": "word",
+    "forms": [
+      "profitable"
+    ],
+    "text": "A profitable company earns more than it spends. Only two of the ten listed neoclouds are, meaning most are losing money while borrowing heavily.",
+    "audio": true
+  },
+  {
+    "k": "borrowings",
+    "t": "borrowings",
+    "kind": "word",
+    "forms": [
+      "borrowings"
+    ],
+    "text": "Borrowings is the total amount of money a company owes to lenders. It is another word for its debt.",
+    "audio": true
+  },
+  {
+    "k": "triple",
+    "t": "triple",
+    "kind": "word",
+    "forms": [
+      "triple"
+    ],
+    "text": "Triple means three times as much. The neoclouds' $100bn of borrowings is triple their annual revenues, so they owe three years of sales.",
+    "audio": true
+  },
+  {
+    "k": "oracle",
+    "t": "Oracle",
+    "kind": "name",
+    "forms": [
+      "Oracle"
+    ],
+    "text": "Oracle is an American software company that has grown into a major cloud provider. The article says it has racked up $169bn of borrowings to build computing capacity for AI.",
+    "audio": true
+  },
+  {
+    "k": "pedlar",
+    "t": "pedlar",
+    "kind": "word",
+    "forms": [
+      "pedlar"
+    ],
+    "text": "A pedlar is a person who sells goods, traditionally from door to door; the British spelling of peddler. Calling Oracle a software pedlar turned cloud provider means it started by selling software and now rents out computing power.",
+    "audio": true
+  },
+  {
+    "k": "racked-up",
+    "t": "racked up",
+    "kind": "phrase",
+    "forms": [
+      "racked up"
+    ],
+    "text": "To rack up something is to accumulate it, usually in large amounts and often something unwelcome like debts or bills.",
+    "audio": true
+  },
+  {
+    "k": "hyperscalers",
+    "t": "hyperscalers",
+    "kind": "word",
+    "forms": [
+      "hyperscalers"
+    ],
+    "text": "Hyperscalers are the very largest cloud-computing companies, here Alphabet, Amazon, Microsoft and Meta. They run huge data centres and have the biggest cash piles to fund the AI build-out.",
+    "audio": true
+  },
+  {
+    "k": "spv",
+    "t": "special-purpose vehicles",
+    "kind": "phrase",
+    "forms": [
+      "special-purpose vehicles",
+      "SPVs",
+      "SPV"
+    ],
+    "text": "A special-purpose vehicle is a separate company created to own one project, such as a data centre. Putting the debt in this separate company can keep it off the balance-sheet of the firm that uses it.",
+    "audio": true
+  },
+  {
+    "k": "joint-venture",
+    "t": "joint ventures",
+    "kind": "phrase",
+    "forms": [
+      "joint ventures"
+    ],
+    "text": "A joint venture is a business that two or more companies set up and own together, sharing the risks and the profits.",
+    "audio": true
+  },
+  {
+    "k": "data-centre",
+    "t": "data-centre",
+    "kind": "word",
+    "forms": [
+      "data-centre",
+      "data centres",
+      "data-centres",
+      "data centre",
+      "data-centre’s"
+    ],
+    "text": "A data centre is a large building full of computers that store data and run software, including AI models. They need huge amounts of electricity and expensive chips.",
+    "audio": true
+  },
+  {
+    "k": "chipmakers",
+    "t": "chipmakers",
+    "kind": "word",
+    "forms": [
+      "chipmakers"
+    ],
+    "text": "Chipmakers are companies that design or manufacture semiconductor chips. Nvidia is the best-known supplier of the chips that power AI.",
+    "audio": true
+  },
+  {
+    "k": "semiconductor",
+    "t": "semiconductor",
+    "kind": "word",
+    "forms": [
+      "semiconductor"
+    ],
+    "text": "A semiconductor is a material used to make the tiny electronic switches in computer chips. People often use the word as a synonym for the chips themselves.",
+    "audio": true
+  },
+  {
+    "k": "balance-sheet",
+    "t": "balance-sheets",
+    "kind": "word",
+    "forms": [
+      "balance-sheets",
+      "balance-sheet"
+    ],
+    "text": "A balance-sheet is a company's financial snapshot listing what it owns and what it owes. Keeping debt off it makes a company look less indebted than it is.",
+    "audio": true
+  },
+  {
+    "k": "trn",
+    "t": "$3trn",
+    "kind": "phrase",
+    "forms": [
+      "$3trn"
+    ],
+    "text": "Trn is the Economist's abbreviation for trillion, a thousand billion. So $3trn is three thousand billion dollars.",
+    "audio": true
+  },
+  {
+    "k": "jpmorgan",
+    "t": "JPMorgan Chase",
+    "kind": "name",
+    "forms": [
+      "JPMorgan Chase"
+    ],
+    "text": "JPMorgan Chase is one of the largest banks in the United States. The article cites its forecast of the capital spending the AI boom will need.",
+    "audio": true
+  },
+  {
+    "k": "capital-spending",
+    "t": "capital spending",
+    "kind": "phrase",
+    "forms": [
+      "capital spending"
+    ],
+    "text": "Capital spending is money spent on long-lasting assets such as buildings, machines and data centres, rather than on day-to-day running costs.",
+    "audio": true
+  },
+  {
+    "k": "imaginative-financing",
+    "t": "imaginative financing",
+    "kind": "phrase",
+    "forms": [
+      "imaginative financing"
+    ],
+    "text": "Imaginative financing means unusual or inventive ways of raising money. In finance the word imaginative can be a gentle warning that a structure is complicated and untested.",
+    "audio": true
+  },
+  {
+    "k": "whoppers",
+    "t": "whoppers",
+    "kind": "word",
+    "forms": [
+      "whoppers"
+    ],
+    "text": "A whopper is something unusually big. Here it describes enormous bond sales such as Alphabet's $32bn offering.",
+    "audio": true
+  },
+  {
+    "k": "offering",
+    "t": "offering",
+    "kind": "word",
+    "forms": [
+      "offering"
+    ],
+    "text": "An offering is a sale of new bonds or shares to investors to raise money.",
+    "audio": true
+  },
+  {
+    "k": "issuers",
+    "t": "issuers",
+    "kind": "word",
+    "forms": [
+      "issuers"
+    ],
+    "text": "An issuer is the company or government that sells new bonds or shares. Here the issuers are the tech firms borrowing money.",
+    "audio": true
+  },
+  {
+    "k": "blackrock",
+    "t": "BlackRock",
+    "kind": "name",
+    "forms": [
+      "BlackRock"
+    ],
+    "text": "BlackRock is the world's largest asset manager, handling trillions of dollars for clients such as pension funds. Here it owns 80% of the SPV that Meta leases from.",
+    "audio": true
+  },
+  {
+    "k": "asset-manager",
+    "t": "asset-management",
+    "kind": "phrase",
+    "forms": [
+      "asset-management",
+      "asset managers"
+    ],
+    "text": "Asset managers invest money on behalf of others, such as pension funds and ordinary savers, and charge fees for it.",
+    "audio": true
+  },
+  {
+    "k": "notch",
+    "t": "notch",
+    "kind": "word",
+    "forms": [
+      "notch"
+    ],
+    "text": "A notch is one small step on a scale. Credit-rating agencies grade borrowers on a ladder, so one notch below Meta is a very slightly lower grade.",
+    "audio": true
+  },
+  {
+    "k": "credit-rating-agencies",
+    "t": "credit-rating agencies",
+    "kind": "phrase",
+    "forms": [
+      "Credit-rating agencies",
+      "credit-rating agency"
+    ],
+    "text": "Credit-rating agencies such as Fitch grade borrowers by how likely they are to repay, with letter scores. Investment-grade scores are high; scores below the line are called junk.",
+    "audio": true
+  },
+  {
+    "k": "collateral",
+    "t": "collateral",
+    "kind": "word",
+    "forms": [
+      "collateral"
+    ],
+    "text": "Collateral is something valuable a borrower pledges so the lender can take it if the loan is not repaid, like a house for a mortgage. In chip-backed financing, the chips themselves are the collateral.",
+    "audio": true
+  },
+  {
+    "k": "chip-backed",
+    "t": "Chip-backed financing",
+    "kind": "phrase",
+    "forms": [
+      "Chip-backed financing",
+      "chip-backed financing"
+    ],
+    "text": "Chip-backed financing means borrowing money while using the chips inside a data centre as security. If the borrower cannot repay, lenders could take the chips.",
+    "audio": true
+  },
+  {
+    "k": "nvidia",
+    "t": "Nvidia",
+    "kind": "name",
+    "forms": [
+      "Nvidia",
+      "Nvidia’s"
+    ],
+    "text": "Nvidia is the American company that makes most of the high-end chips used to train and run AI. It is so profitable that it can back other firms' debts.",
+    "audio": true
+  },
+  {
+    "k": "anthropic-openai",
+    "t": "OpenAI",
+    "kind": "name",
+    "forms": [
+      "OpenAI",
+      "Anthropic"
+    ],
+    "text": "Anthropic and OpenAI are two leading AI model-makers, the companies that build chatbots such as Claude and ChatGPT. The article says both are reportedly negotiating chip financing and may list on the stock market.",
+    "audio": true
+  },
+  {
+    "k": "fitch",
+    "t": "Fitch",
+    "kind": "name",
+    "forms": [
+      "Fitch"
+    ],
+    "text": "Fitch is a credit-rating agency, one of the companies that grades how risky borrowers are.",
+    "audio": true
+  },
+  {
+    "k": "infinitely-more-complicated",
+    "t": "infinitely more complicated",
+    "kind": "phrase",
+    "forms": [
+      "infinitely more complicated"
+    ],
+    "text": "Infinitely is an exaggeration used for emphasis, here meaning far harder. The quoted Fitch analyst is saying the layered structures are very difficult to assess.",
+    "audio": true
+  },
+  {
+    "k": "lease",
+    "t": "leases",
+    "kind": "word",
+    "forms": [
+      "leases",
+      "lease"
+    ],
+    "text": "A lease is a contract to rent something for a set time. Cloud providers lease data centres rather than own them, creating obligations that are not quite debt but must still be paid.",
+    "audio": true
+  },
+  {
+    "k": "liabilities",
+    "t": "liabilities",
+    "kind": "word",
+    "forms": [
+      "liabilities"
+    ],
+    "text": "Liabilities are the amounts a company owes or is committed to pay. Lease liabilities are rent commitments counted among them.",
+    "audio": true
+  },
+  {
+    "k": "backstop",
+    "t": "backstops",
+    "kind": "word",
+    "forms": [
+      "backstops",
+      "backstop"
+    ],
+    "text": "A backstop is a safety net: a promise to step in and cover losses if something goes wrong. Nvidia offers backstops by promising to pay a customer's debts if the customer cannot.",
+    "audio": true
+  },
+  {
+    "k": "on-the-line",
+    "t": "on the line",
+    "kind": "phrase",
+    "forms": [
+      "on the line"
+    ],
+    "text": "To place yourself on the line means to put your own money or reputation at risk.",
+    "audio": true
+  },
+  {
+    "k": "interrogate",
+    "t": "interrogate",
+    "kind": "word",
+    "forms": [
+      "interrogate"
+    ],
+    "text": "To interrogate means to question closely. Here it means that analysts find it harder to examine the debt and see who is really on the hook.",
+    "audio": true
+  },
+  {
+    "k": "tranches",
+    "t": "Tranches",
+    "kind": "word",
+    "forms": [
+      "Tranches"
+    ],
+    "text": "A tranche is one slice of a bigger bond or loan, sold separately. Slices can be sold to different buyers with different appetites for risk.",
+    "audio": true
+  },
+  {
+    "k": "institutional-investors",
+    "t": "institutional investors",
+    "kind": "phrase",
+    "forms": [
+      "institutional investors"
+    ],
+    "text": "Institutional investors are big organisations that invest large sums, such as pension funds and insurance companies, as opposed to individual savers.",
+    "audio": true
+  },
+  {
+    "k": "pension-funds",
+    "t": "pension funds",
+    "kind": "phrase",
+    "forms": [
+      "pension funds"
+    ],
+    "text": "A pension fund is a pot of money collected to pay people's retirement incomes. It invests in bonds and shares, so losses on AI debt could reach retirees.",
+    "audio": true
+  },
+  {
+    "k": "private-credit",
+    "t": "Private-credit providers",
+    "kind": "phrase",
+    "forms": [
+      "Private-credit providers",
+      "private-credit"
+    ],
+    "text": "Private credit means loans made by investment firms rather than by banks or through public bond markets. Firms such as Apollo and Blackstone have become big lenders this way.",
+    "audio": true
+  },
+  {
+    "k": "syndicated",
+    "t": "syndicated",
+    "kind": "word",
+    "forms": [
+      "syndicated"
+    ],
+    "text": "A syndicated loan is one that a lender arranges and then shares out among several other investors so no one holds all of the risk.",
+    "audio": true
+  },
+  {
+    "k": "hedge-funds",
+    "t": "Hedge funds",
+    "kind": "phrase",
+    "forms": [
+      "Hedge funds"
+    ],
+    "text": "Hedge funds are private investment partnerships that use aggressive strategies, often with borrowed money, to try to make high returns.",
+    "audio": true
+  },
+  {
+    "k": "piled-in",
+    "t": "piled in",
+    "kind": "phrase",
+    "forms": [
+      "piled in"
+    ],
+    "text": "To pile in means to join something in large numbers and enthusiastically, as a crowd piling onto a bus.",
+    "audio": true
+  },
+  {
+    "k": "binge",
+    "t": "binge",
+    "kind": "word",
+    "forms": [
+      "binge"
+    ],
+    "text": "A binge is doing too much of something all at once. A debt binge is a rapid pile-up of borrowing.",
+    "audio": true
+  },
+  {
+    "k": "borrowing-costs",
+    "t": "borrowing costs",
+    "kind": "phrase",
+    "forms": [
+      "borrowing costs"
+    ],
+    "text": "Borrowing costs are the interest a borrower has to pay. When government bond yields climb, companies usually have to pay more too.",
+    "audio": true
+  },
+  {
+    "k": "soaks-up",
+    "t": "soaks up",
+    "kind": "phrase",
+    "forms": [
+      "soaks up"
+    ],
+    "text": "To soak up means to absorb, as a sponge does. CoreWeave's interest bill soaking up a quarter of revenue means a quarter of what it earns goes just to paying interest.",
+    "audio": true
+  },
+  {
+    "k": "flatlined",
+    "t": "flatlined",
+    "kind": "word",
+    "forms": [
+      "flatlined"
+    ],
+    "text": "To flatline is to stop changing and stay level, like a flat line on a heart monitor. Ramp's data show business AI spending stopped growing in July.",
+    "audio": true
+  },
+  {
+    "k": "spiralling",
+    "t": "spiralling",
+    "kind": "word",
+    "forms": [
+      "spiralling"
+    ],
+    "text": "Spiralling describes something, usually costs, rising faster and faster out of control.",
+    "audio": true
+  },
+  {
+    "k": "public-listings",
+    "t": "public listings",
+    "kind": "phrase",
+    "forms": [
+      "public listings"
+    ],
+    "text": "A public listing, or IPO, is when a private company sells shares to the public on a stock exchange for the first time.",
+    "audio": true
+  },
+  {
+    "k": "exposure",
+    "t": "exposure",
+    "kind": "word",
+    "forms": [
+      "exposure"
+    ],
+    "text": "Exposure is how much you stand to lose if something goes wrong. Investors rethinking their exposure to AI may decide to hold less of it.",
+    "audio": true
+  },
+  {
+    "k": "junk-bonds-share",
+    "t": "15%",
+    "kind": "phrase",
+    "forms": [
+      "15%"
+    ],
+    "text": "The article says only about 15% of the value of AI-related bonds this year carry junk status, so most borrowers are still seen as fairly safe.",
+    "audio": true
+  }
+]
