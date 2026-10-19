@@ -1,0 +1,476 @@
+[
+  {
+    "k": "congested",
+    "t": "congested",
+    "kind": "vocab",
+    "pron": "kun-JES-tid",
+    "forms": [
+      "congested"
+    ],
+    "text": "Congested means so crowded or blocked up that it can barely move. Here, big cities are packed with traffic.",
+    "audio": true
+  },
+  {
+    "k": "dispersed",
+    "t": "dispersed",
+    "kind": "vocab",
+    "pron": "dis-PURSD",
+    "forms": [
+      "dispersed"
+    ],
+    "text": "Dispersed means spread out over a wide area. Here, many jobs are scattered around the edges of a city.",
+    "audio": true
+  },
+  {
+    "k": "periphery",
+    "t": "periphery",
+    "kind": "vocab",
+    "pron": "puh-RIF-uh-ree",
+    "forms": [
+      "periphery"
+    ],
+    "text": "The periphery is the outer edge of something. Here, it means the outskirts of a city, far from the center.",
+    "audio": true
+  },
+  {
+    "k": "rampant",
+    "t": "rampant",
+    "kind": "word",
+    "forms": [
+      "RAMPANT"
+    ],
+    "text": "Rampant means spreading fast and out of control. The writer jokes that motorcycles are like a rampant animal species taking over.",
+    "audio": true
+  },
+  {
+    "k": "species",
+    "t": "species",
+    "kind": "word",
+    "forms": [
+      "species"
+    ],
+    "text": "A species is one kind of living thing, like lions or daisies. Here, the writer pretends motorcycles are a species living in the city.",
+    "audio": true
+  },
+  {
+    "k": "urban-jungles",
+    "t": "urban jungle",
+    "kind": "phrase",
+    "forms": [
+      "urban jungles"
+    ],
+    "text": "An urban jungle is a big, crowded city that feels wild like a jungle. Here, the writer keeps the animal joke going.",
+    "audio": true
+  },
+  {
+    "k": "nimble",
+    "t": "nimble",
+    "kind": "word",
+    "forms": [
+      "nimble"
+    ],
+    "text": "Nimble means quick and light, able to move and turn easily. Motorcycles are nimble because they are small.",
+    "audio": true
+  },
+  {
+    "k": "accommodating",
+    "t": "accommodating",
+    "kind": "word",
+    "forms": [
+      "accommodating"
+    ],
+    "text": "Accommodating means welcoming and easy to fit into. Here, the busy streets are a good home for motorcycles.",
+    "audio": true
+  },
+  {
+    "k": "habitat",
+    "t": "habitat",
+    "kind": "word",
+    "forms": [
+      "habitat"
+    ],
+    "text": "A habitat is the place where an animal naturally lives. Here, the streets are the motorcycles' habitat in the joke.",
+    "audio": true
+  },
+  {
+    "k": "swarm",
+    "t": "swarm",
+    "kind": "word",
+    "forms": [
+      "swarm"
+    ],
+    "text": "To swarm is to move in a big, buzzing crowd, like bees. Here, motorcycles zip around cars in large groups.",
+    "audio": true
+  },
+  {
+    "k": "trusty-steeds",
+    "t": "trusty steed",
+    "kind": "phrase",
+    "forms": [
+      "trusty steeds"
+    ],
+    "text": "A steed is a horse, and trusty means you can count on it. Here, delivery riders depend on their motorcycles like knights on horses.",
+    "audio": true
+  },
+  {
+    "k": "delivery-riders",
+    "t": "courier",
+    "kind": "word",
+    "forms": [
+      "delivery riders",
+      "couriers"
+    ],
+    "text": "A courier carries packages or food to people. Here, many riders deliver meals on their motorcycles.",
+    "audio": true
+  },
+  {
+    "k": "registered",
+    "t": "registered",
+    "kind": "word",
+    "forms": [
+      "registered"
+    ],
+    "text": "Registered means officially listed with the government. A registered motorcycle has its owner and number on record.",
+    "audio": true
+  },
+  {
+    "k": "fleet",
+    "t": "fleet",
+    "kind": "word",
+    "forms": [
+      "fleet"
+    ],
+    "text": "A fleet is a whole group of vehicles. Here, it means all the motorcycles in Mexico.",
+    "audio": true
+  },
+  {
+    "k": "quadrupled",
+    "t": "quadrupled",
+    "kind": "word",
+    "forms": [
+      "quadrupled"
+    ],
+    "text": "Quadrupled means became four times as big. Mexico went from 2.6 million motorcycles to 10.5 million.",
+    "audio": true
+  },
+  {
+    "k": "weave",
+    "t": "weave",
+    "kind": "word",
+    "forms": [
+      "weave"
+    ],
+    "text": "To weave is to wind in and out between things. Riders weave through slow traffic.",
+    "audio": true
+  },
+  {
+    "k": "public-transport",
+    "t": "public transport",
+    "kind": "word",
+    "forms": [
+      "public transport"
+    ],
+    "text": "Public transport means buses, trains, and subways that anyone can ride. Here, it has not kept up as cities grew.",
+    "audio": true
+  },
+  {
+    "k": "informal",
+    "t": "informal",
+    "kind": "word",
+    "forms": [
+      "informal"
+    ],
+    "text": "Informal means not planned or officially organized. Here, the cities grew in messy ways without a plan.",
+    "audio": true
+  },
+  {
+    "k": "sprawl",
+    "t": "sprawl",
+    "kind": "word",
+    "forms": [
+      "sprawl"
+    ],
+    "text": "Sprawl is a city spreading out in all directions without much planning. Here, it makes trips long.",
+    "audio": true
+  },
+  {
+    "k": "disproportionately",
+    "t": "disproportionately",
+    "kind": "word",
+    "forms": [
+      "disproportionately"
+    ],
+    "text": "Disproportionately means far more than a fair share. Here, motorcycle buyers are mostly young, poor, and male.",
+    "audio": true
+  },
+  {
+    "k": "gig-workers",
+    "t": "gig worker",
+    "kind": "word",
+    "forms": [
+      "gig workers"
+    ],
+    "text": "Gig workers do short jobs paid one at a time, often through phone apps. Here, many ride motorcycles for deliveries.",
+    "audio": true
+  },
+  {
+    "k": "subsidised",
+    "t": "subsidised",
+    "kind": "word",
+    "forms": [
+      "subsidised"
+    ],
+    "text": "Subsidised means helped with money from the government so the price is lower. Here, the loans cost delivery workers less.",
+    "audio": true
+  },
+  {
+    "k": "exempt",
+    "t": "exempt",
+    "kind": "word",
+    "forms": [
+      "exempt"
+    ],
+    "text": "Exempt means excused from a rule or payment. Here, small motorbikes do not have to pay a vehicle tax.",
+    "audio": true
+  },
+  {
+    "k": "tolls",
+    "t": "tolls",
+    "kind": "word",
+    "forms": [
+      "tolls"
+    ],
+    "text": "A toll is a fee you pay to use a road or bridge. Here, motorcycles in Colombia pay none.",
+    "audio": true
+  },
+  {
+    "k": "domestic",
+    "t": "domestic",
+    "kind": "word",
+    "forms": [
+      "domestic"
+    ],
+    "text": "Domestic means inside your own country. Here, domestic industries are the local factories that make bikes.",
+    "audio": true
+  },
+  {
+    "k": "labour-markets",
+    "t": "labour market",
+    "kind": "word",
+    "forms": [
+      "labour markets"
+    ],
+    "text": "A labour market is the place, in a way, where workers and employers find each other. When it works well, people can find jobs easily.",
+    "audio": true
+  },
+  {
+    "k": "commute",
+    "t": "commute",
+    "kind": "word",
+    "forms": [
+      "commutes"
+    ],
+    "text": "A commute is the trip between home and work or school. Shorter, cheaper commutes help people take more jobs.",
+    "audio": true
+  },
+  {
+    "k": "unskilled",
+    "t": "unskilled",
+    "kind": "word",
+    "forms": [
+      "unskilled"
+    ],
+    "text": "Unskilled jobs do not need special training. Here, many of them are far from where poor families live.",
+    "audio": true
+  },
+  {
+    "k": "capital",
+    "t": "capital",
+    "kind": "word",
+    "forms": [
+      "capital"
+    ],
+    "text": "A capital is the city where a country's government sits. Montevideo is the capital of Uruguay.",
+    "audio": true
+  },
+  {
+    "k": "montevideo",
+    "t": "Montevideo",
+    "kind": "name",
+    "forms": [
+      "Montevideo"
+    ],
+    "text": "Montevideo is the capital city of Uruguay, a country in South America.",
+    "audio": true
+  },
+  {
+    "k": "uruguay",
+    "t": "Uruguay",
+    "kind": "name",
+    "forms": [
+      "Uruguay"
+    ],
+    "text": "Uruguay is a small country in South America, between Brazil and Argentina.",
+    "audio": true
+  },
+  {
+    "k": "bogota",
+    "t": "Bogotá",
+    "kind": "name",
+    "forms": [
+      "Bogotá"
+    ],
+    "text": "Bogotá is the capital city of Colombia.",
+    "audio": true
+  },
+  {
+    "k": "sao-paulo",
+    "t": "São Paulo",
+    "kind": "name",
+    "forms": [
+      "São Paulo"
+    ],
+    "text": "São Paulo is the biggest city in Brazil.",
+    "audio": true
+  },
+  {
+    "k": "mexico-city",
+    "t": "Mexico City",
+    "kind": "name",
+    "forms": [
+      "Mexico City"
+    ],
+    "text": "Mexico City is the capital of Mexico and one of the largest cities in the world.",
+    "audio": true
+  },
+  {
+    "k": "risk-management",
+    "t": "risk management",
+    "kind": "phrase",
+    "forms": [
+      "Risk management"
+    ],
+    "text": "Risk management means finding ways to lower the chance of harm. The heading hints that the next part is about danger.",
+    "audio": true
+  },
+  {
+    "k": "carnage",
+    "t": "carnage",
+    "kind": "word",
+    "forms": [
+      "carnage"
+    ],
+    "text": "Carnage means terrible loss of life. Here, it describes the huge number of road deaths.",
+    "audio": true
+  },
+  {
+    "k": "inevitable",
+    "t": "inevitable",
+    "kind": "word",
+    "forms": [
+      "inevitable"
+    ],
+    "text": "Inevitable means certain to happen and impossible to avoid. The expert says these deaths are not inevitable.",
+    "audio": true
+  },
+  {
+    "k": "fatalities",
+    "t": "fatalities",
+    "kind": "word",
+    "forms": [
+      "fatalities"
+    ],
+    "text": "Fatalities are deaths, here from accidents.",
+    "audio": true
+  },
+  {
+    "k": "divergence",
+    "t": "divergence",
+    "kind": "word",
+    "forms": [
+      "divergence"
+    ],
+    "text": "Divergence means going in different directions. Here, deaths fell in other regions but rose in Latin America.",
+    "audio": true
+  },
+  {
+    "k": "regulation",
+    "t": "regulation",
+    "kind": "word",
+    "forms": [
+      "regulation"
+    ],
+    "text": "A regulation is a rule made by the government. Here, helmet and speed rules are often weak or ignored.",
+    "audio": true
+  },
+  {
+    "k": "licences",
+    "t": "licence",
+    "kind": "word",
+    "forms": [
+      "licences"
+    ],
+    "text": "A licence is official permission to do something, like drive. Many riders ignore the rules about them.",
+    "audio": true
+  },
+  {
+    "k": "with-one-eye",
+    "t": "with one eye on",
+    "kind": "phrase",
+    "forms": [
+      "with one eye on their phones"
+    ],
+    "text": "With one eye on something means only half paying attention. Here, riders look at their phones while riding.",
+    "audio": true
+  },
+  {
+    "k": "appetite",
+    "t": "appetite",
+    "kind": "word",
+    "forms": [
+      "appetite"
+    ],
+    "text": "Here, appetite means desire or willingness. Politicians do not really want to pass tougher rules.",
+    "audio": true
+  },
+  {
+    "k": "constituency",
+    "t": "constituency",
+    "kind": "word",
+    "forms": [
+      "constituency"
+    ],
+    "text": "A constituency is a group of voters a politician wants support from. Here, riders are such a group.",
+    "audio": true
+  },
+  {
+    "k": "courted",
+    "t": "courted",
+    "kind": "word",
+    "forms": [
+      "courted"
+    ],
+    "text": "To court a group is to try to win its favor. Here, politicians try to win riders' votes.",
+    "audio": true
+  },
+  {
+    "k": "moteros",
+    "t": "motero",
+    "kind": "word",
+    "forms": [
+      "moteros"
+    ],
+    "text": "Moteros is Spanish for motorcycle riders.",
+    "audio": true
+  },
+  {
+    "k": "blockades",
+    "t": "blockades",
+    "kind": "word",
+    "forms": [
+      "blockades"
+    ],
+    "text": "A blockade is something that blocks a road so nothing can pass. Here, protesters blocked roads.",
+    "audio": true
+  }
+]

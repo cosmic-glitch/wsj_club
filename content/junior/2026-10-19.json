@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-19",
+  "title": "Latin America has caught motorcycle fever",
+  "articleUrl": "https://www.economist.com/the-americas/2026/10/08/latin-america-has-caught-motorcycle-fever",
+  "articlePageUrl": "/articles/junior/2026-10-19.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "congested",
+      "partOfSpeech": "adjective",
+      "pronunciation": "kun-JES-tid",
+      "articleQuote": "horribly congested cities",
+      "meaning": "Something congested is so crowded or blocked up that it can barely move. A hallway right after the bell rings is congested. So is your nose when you have a cold. In the article, big Latin American cities are congested because so many cars and buses are stuck in traffic.",
+      "examples": [
+        "The road to the stadium was congested, so we walked the last mile.",
+        "The cafeteria was congested at lunchtime, and the line barely moved."
+      ]
+    },
+    {
+      "word": "dispersed",
+      "partOfSpeech": "adjective",
+      "pronunciation": "dis-PURSD",
+      "articleQuote": "widely dispersed around the periphery",
+      "meaning": "Something dispersed is spread out over a wide area instead of bunched together. Seeds blown by the wind end up dispersed across a field. In the article, many unskilled jobs are dispersed around the edges of a city, so they are hard to reach without your own vehicle.",
+      "examples": [
+        "After the game, the crowd dispersed in every direction.",
+        "The farm's cows were dispersed across the whole hillside."
+      ]
+    },
+    {
+      "word": "periphery",
+      "partOfSpeech": "noun",
+      "pronunciation": "puh-RIF-uh-ree",
+      "articleQuote": "widely dispersed around the periphery",
+      "meaning": "The periphery is the outer edge of something, the part far from the middle. On a soccer field, a winger plays on the periphery. In the article, the periphery of a city is the outskirts, far from the busy center where many good jobs are.",
+      "examples": [
+        "We live on the periphery of town, far from the main square.",
+        "She stayed on the periphery of the crowd so she could leave early."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Gig work",
+      "articleQuote": "motorcycle gig workers",
+      "meaning": "Picture a teen who walks dogs for neighbors. Nobody gives them a boss or a weekly paycheck. Each walk is one small job, and they get paid only for the walks they do. That is **gig work**: short, one-off jobs paid job by job instead of a steady salary. A \"gig\" is just a job that lasts a short time.\n\nToday, phone apps connect people to gigs. A delivery app sends a rider a message, and the rider brings food from a restaurant to a home. Most gig workers are not employees of the app. They work for themselves, so they pick their own hours, but the company usually does not give them sick days or health insurance.\n\nThe article says Brazil had 351,000 motorcycle gig workers in 2024. Because riders are paid per job, more deliveries means more money, which pushes them to ride fast and long. Gig work offers freedom and quick income, but it comes with less safety and less security."
+    },
+    {
+      "name": "Subsidy",
+      "articleQuote": "subsidised loans for delivery workers",
+      "meaning": "A **subsidy** is help with the cost of something, paid by the government to make it cheaper. Think of a school that pays half the price of a field trip so more kids can go. The trip costs the same, but each family pays less, so more families sign up.\n\nGovernments use subsidies to encourage things they want more of, like buying electric cars, growing crops, or building local factories. The money comes from taxes, so every subsidy is a trade: the public pays so that a certain choice becomes cheaper.\n\nThe article gives two examples. Brazil offers cheaper loans to delivery workers who buy locally made bikes. Colombia skips the vehicle tax on small motorbikes. Both make bikes cheaper to own, so more people buy them. A subsidy changes what people choose, and sometimes it has side effects nobody planned."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why have motorcycles become so popular in Latin American cities?",
+      "options": [
+        "They are cheap and good at getting through crowded streets",
+        "Cars have been banned from city centers",
+        "Motorcycles are safer than buses",
+        "Gas is free in most countries"
+      ],
+      "answerIndex": 0,
+      "explanation": "Bikes are a cheap, easy way to move through congested cities, especially where public transport has not kept up."
+    },
+    {
+      "question": "What does \"congested\" mean in \"horribly congested cities\"?",
+      "options": [
+        "Very quiet",
+        "Very clean",
+        "Very old",
+        "Very crowded and blocked up"
+      ],
+      "answerIndex": 3,
+      "explanation": "A congested place is so crowded that movement slows or stops."
+    },
+    {
+      "question": "How can motorcycles help poorer workers, according to the article?",
+      "options": [
+        "They let people reach jobs that are farther from home",
+        "They make everyone's pay double",
+        "They remove the need to work",
+        "They help people skip school"
+      ],
+      "answerIndex": 0,
+      "explanation": "Cheaper, quicker commutes can lower unemployment and raise wages, especially for jobs spread around the edges of cities."
+    },
+    {
+      "question": "What is gig work?",
+      "options": [
+        "A job with a steady yearly salary",
+        "Short jobs paid one at a time",
+        "Work done only by robots",
+        "Volunteering at a school"
+      ],
+      "answerIndex": 1,
+      "explanation": "Gig workers, like delivery riders, are paid per job rather than a regular salary."
+    },
+    {
+      "question": "Why does the article say delivery work makes riding more dangerous?",
+      "options": [
+        "Delivery bikes have no brakes",
+        "Riders are paid per job, which pushes them to ride fast and for long hours",
+        "Restaurants forbid helmets",
+        "Delivery roads are always wet"
+      ],
+      "answerIndex": 1,
+      "explanation": "Being paid per job encourages riders to hurry and work long hours, often while looking at their phones."
+    }
+  ]
+}
