@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-20",
+  "title": "Everything is going wrong for Muhammad bin Salman",
+  "articleUrl": "https://www.economist.com/middle-east-and-africa/2026/10/19/everything-is-going-wrong-for-muhammad-bin-salman",
+  "articlePageUrl": "/articles/2026-10-20.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "quagmire",
+      "partOfSpeech": "noun",
+      "pronunciation": "KWAG-myre",
+      "articleQuote": "The war in Yemen was already a quagmire",
+      "meaning": "A quagmire is literally soft, boggy ground that swallows your feet when you try to walk across it. Used figuratively, it is a messy situation that is hard to escape and gets worse the harder you struggle, especially a war or a project. Here the Economist says Saudi Arabia's war in Yemen had already become one: the kingdom could neither win nor easily leave.",
+      "examples": [
+        "Our group project became a quagmire once five people were editing the same slides and nobody agreed on the plan.",
+        "Soldiers who marched into the swamp found it a quagmire, and the heavy wagons sank to their axles."
+      ]
+    },
+    {
+      "word": "putsch",
+      "partOfSpeech": "noun",
+      "pronunciation": "PUCH",
+      "articleQuote": "none could plausibly organise a putsch",
+      "meaning": "A putsch is a sudden, planned attempt to overthrow a government or ruler by force, usually carried out by a small group such as army officers. The word is German; it first became famous through failed uprisings in 1920s Germany. The Economist uses it to say that although the crown prince has critics, none of them has the power to remove him.",
+      "examples": [
+        "The generals staged a putsch at dawn and took over the radio station.",
+        "Nobody at school could organise a putsch against the principal, because every club leader liked the new schedule."
+      ]
+    },
+    {
+      "word": "façade",
+      "partOfSpeech": "noun",
+      "pronunciation": "fuh-SAHD",
+      "articleQuote": "change the foundations, not just the façade",
+      "meaning": "A façade is the front face of a building, the part people see from the street. Figuratively it means an outward appearance that may hide a different reality behind it. The Economist's point is that Saudi Arabia has changed what shows on the outside, such as concerts and women driving, but the core of the state, its oil economy, its army and its reliance on America, has barely changed.",
+      "examples": [
+        "His cheerful façade slipped when he saw his test score, and he looked really upset.",
+        "The old theatre kept its handsome façade, but behind it the building was an empty shell."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Foreign direct investment",
+      "articleQuote": "Annual foreign direct investment is only about one-third of the crown prince’s $100bn target.",
+      "meaning": "Saudi Arabia wants to stop depending on oil, and the economics idea it is counting on is foreign direct investment, or FDI. FDI is money from abroad used to build or buy something lasting inside a country: a foreign carmaker building a factory, or a foreign firm opening an office tower or buying a local company. The word *direct* matters: the investor takes real ownership and control, which is different from buying a country's shares or bonds, where money can leave again in a day.\n\nThat is why governments chase it. A factory built with foreign money hires local workers, trains them, and pays taxes for decades. Suppose a foreign chipmaker spends $5bn on a plant in a country; the jobs and skills stay even if the company's mood changes. But investors only commit billions when a country feels safe and predictable. This is why the article matters: Saudi Arabia is getting about $33bn a year against a $100bn target, and missiles hitting Riyadh's airport make executives even less willing to build there.\n\nWhenever a country wants growth from abroad, ask whether it feels safe enough for someone to build something they cannot easily carry away."
+    },
+    {
+      "name": "Proxy militias",
+      "articleQuote": "The Houthis, an Iran-backed militia in Yemen",
+      "meaning": "A militia is an armed group that is not part of a country's official army. A proxy militia is one that a stronger state funds, arms and trains so that it can fight its rivals without sending its own soldiers. The article names three: the Houthis in Yemen, Iraqi militias, and Iran itself as the sponsor behind them. This is a topic from international relations, and it shapes much of the Middle East.\n\nThe arrangement works for the sponsor in a concrete way. Iran supplies missiles and drones, and the Houthis, who control much of northern Yemen, aim them at Saudi Arabia, hundreds of kilometres away. Iran can deny it fired anything, so it avoids a direct war with Saudi Arabia, yet it still forces the Saudis to spend on air defence. And because the militia has its own local goals, ending a fight with the sponsor does not automatically end it with the militia, which is why a truce with the Houthis unravelled during America's war with Iran.\n\nWhenever a conflict spreads, ask which armed groups are fighting for themselves and which are fighting for someone else."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why was the Future Investment Initiative postponed until next year?",
+      "options": [
+        "Houthi attacks on Riyadh made travel and venues look unsafe",
+        "The crown prince was ill and could not attend",
+        "Foreign governments had banned the event",
+        "Organisers ran out of money"
+      ],
+      "answerIndex": 0,
+      "explanation": "Missile and drone attacks, a mostly shut airport and Western travel warnings made executives nervous, so organisers postponed the summit."
+    },
+    {
+      "question": "Which of the crown prince's three early bets does the article say has gone wrong?",
+      "options": [
+        "Defeating the Houthis, reshaping the economy and trusting Donald Trump",
+        "Banning cinemas, closing the airport and ending oil sales",
+        "Joining the Mecca pact, leaving the IMF and blockading Qatar",
+        "Raising wages, cutting oil output and building a navy"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says he wagered he could defeat the Houthis, reshape the Saudi economy and rely on Mr Trump, and all three have gone awry at once."
+    },
+    {
+      "question": "What does the article suggest about the idea that the crown prince's rule is under existential threat?",
+      "options": [
+        "Diplomats think it is overblown, since he has sidelined rivals and centralised power",
+        "Diplomats expect a putsch within weeks",
+        "Allies in Washington are demanding he step down",
+        "Most Saudis have told pollsters they distrust him"
+      ],
+      "answerIndex": 0,
+      "explanation": "Diplomats in Riyadh say he was in a tougher place years ago and that no rival could plausibly organise a putsch."
+    },
+    {
+      "question": "In the article, what does calling the Saudi liberalisation a 'façade' imply?",
+      "options": [
+        "The visible social changes have not yet changed the core of the state",
+        "The reforms were entirely fake and have been reversed",
+        "The reforms only apply to foreign visitors",
+        "The buildings in Riyadh were damaged by missiles"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says concerts and women driving are real, but the economy, army and reliance on America have changed little."
+    },
+    {
+      "question": "Why is the biggest decision 'out of Prince Muhammad's hands'?",
+      "options": [
+        "Whether bombing of Iran resumes depends on Mr Trump, despite the prince urging him not to escalate",
+        "The IMF controls Saudi oil output",
+        "The Houthis are deciding whether to join the Mecca pact",
+        "Parliament must vote on any war"
+      ],
+      "answerIndex": 0,
+      "explanation": "Saudi officials fear Mr Trump may resume bombing Iran after the November midterms, exposing the kingdom to attacks from several directions."
+    }
+  ]
+}
