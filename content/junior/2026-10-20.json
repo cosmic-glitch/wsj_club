@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-20",
+  "title": "The latest must-have movie memorabilia? Popcorn buckets",
+  "articleUrl": "https://www.economist.com/culture/2026/10/19/the-latest-must-have-movie-memorabilia-popcorn-buckets",
+  "articlePageUrl": "/articles/junior/2026-10-20.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "lure",
+      "partOfSpeech": "verb",
+      "pronunciation": "LOOR",
+      "articleQuote": "which need to lure customers",
+      "meaning": "To lure someone is to attract them by offering something tempting. A fisher lures a fish with bait. A store lures shoppers with a big sale sign. In the article, movie theaters lure people in with collectible popcorn buckets.",
+      "examples": [
+        "The smell of fresh cookies lured us into the bakery.",
+        "The park lured families with a free concert."
+      ]
+    },
+    {
+      "word": "lampooned",
+      "partOfSpeech": "verb",
+      "pronunciation": "lam-POONED",
+      "articleQuote": "it was lampooned on “Saturday Night Live”",
+      "meaning": "To lampoon something is to make fun of it in a funny, joking way, often with a silly skit or cartoon. Comedians lampoon famous people and strange products. In the article, TV shows lampooned a popcorn bucket whose design looked odd.",
+      "examples": [
+        "The school play lampooned the principal's famous long speeches.",
+        "A cartoon lampooned the team's very strange new mascot."
+      ]
+    },
+    {
+      "word": "tangible",
+      "partOfSpeech": "adjective",
+      "pronunciation": "TAN-juh-bul",
+      "articleQuote": "the tangible experience with the movie",
+      "meaning": "Something tangible is real enough to touch and hold. A trophy is tangible, but pride is not. In the article, a popcorn bucket is a tangible piece of a movie: you can hold it in your hands long after the film ends.",
+      "examples": [
+        "The medal was a tangible reward for months of practice.",
+        "A photo of the trip gave her a tangible memory to keep."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Profit margin",
+      "articleQuote": "turn fans’ enthusiasm into high-margin sales",
+      "meaning": "Imagine you sell lemonade at a stand. Each cup costs you 10 cents in lemons, sugar, and a paper cup, and you sell it for $1. You keep 90 cents. That leftover is your **profit**, and how big it is compared with the price is your **profit margin**. A cup with a big gap between cost and price is a *high-margin* sale.\n\nSome things have small margins and others have big ones. A store that sells a $1,000 laptop might keep only a little after paying for it. But popcorn, made from cheap kernels, is sold for many times what it costs.\n\nThat is why the article says cinemas love snacks and collectibles. Much of the ticket money goes to the movie studio, but the theater keeps more of what it earns from food and drinks. A fancy bucket sells for a much higher price than the plastic and popcorn inside cost to make. Businesses chase high margins because each sale leaves more money to keep."
+    },
+    {
+      "name": "Scarcity",
+      "articleQuote": "Often there is a limited supply",
+      "meaning": "**Scarcity** means there is not enough of something for everyone who wants it. Think of a school book fair that has only ten copies of the newest book in a series and thirty kids who want one. The ten copies are scarce.\n\nWhen something is scarce, people value it more and often pay more. Hard-to-get items feel special, so people hurry to be first in line. Sellers know this, so they sometimes make only a few on purpose, called a *limited edition*.\n\nThe article shows this with popcorn buckets. Theaters often stock only a few, so fans who come on opening weekend are more likely to get one. Some old buckets even sell for $40 to $800 on resale sites. Scarcity makes owning one a way to show you are a true fan, and it makes the price climb."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why do movie theaters like selling collectible popcorn buckets?",
+      "options": [
+        "They turn fans' excitement into sales that earn a lot of profit",
+        "They make the movies shorter",
+        "They replace the need for tickets",
+        "They are given away for free"
+      ],
+      "answerIndex": 0,
+      "explanation": "Cinemas need to lure customers, and the buckets are a high-margin way to turn enthusiasm into money."
+    },
+    {
+      "question": "What does \"lampooned\" mean in \"it was lampooned on Saturday Night Live\"?",
+      "options": [
+        "Praised loudly",
+        "Made fun of in a joking way",
+        "Quietly ignored",
+        "Sold for a high price"
+      ],
+      "answerIndex": 1,
+      "explanation": "To lampoon something is to mock it humorously, as the shows did with the odd-looking Dune: Part Two bucket."
+    },
+    {
+      "question": "Which popcorn bucket went viral in 2024?",
+      "options": [
+        "A red handbag",
+        "A Trojan horse",
+        "A sandworm from Dune: Part Two",
+        "A film camera"
+      ],
+      "answerIndex": 2,
+      "explanation": "The toothy sandworm bucket for Dune: Part Two started the craze and later became a cult item."
+    },
+    {
+      "question": "Why might a limited supply make a popcorn bucket feel like a status symbol?",
+      "options": [
+        "Because only a few fans can get one, so owning it shows you are a real fan",
+        "Because limited buckets are always cheaper",
+        "Because the movie is not very good",
+        "Because buckets are required to enter the theater"
+      ],
+      "answerIndex": 0,
+      "explanation": "Scarcity makes a limited-edition item special, and owning one signals you rushed to the cinema on opening weekend."
+    },
+    {
+      "question": "What does \"tangible\" mean?",
+      "options": [
+        "Too large to carry",
+        "Impossible to see",
+        "Real enough to touch and hold",
+        "Very old"
+      ],
+      "answerIndex": 2,
+      "explanation": "A tangible thing, like a popcorn bucket, can be touched and kept as a memory of the movie."
+    }
+  ]
+}
