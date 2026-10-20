@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import TodayTag from "@/components/TodayTag";
 import type { Track } from "@/lib/content";
+import type { PublicPoll } from "@/lib/polls";
 
 /**
  * The daily article vote — the "TODAY'S READ — YOU DECIDE" row at the top of
@@ -22,12 +23,14 @@ import type { Track } from "@/lib/content";
  * iOS — and it scrolls internally (max-h + overflow-y-auto) so a long ballot
  * stays usable on a phone.
  *
- * Rendered as the FIRST <li> of the (statically generated) readings list; it
- * fetches `/api/vote` after mount and renders nothing when no poll is live, so
- * the page stays static and hydration always matches (same recipe as the TODAY
- * chip). To hide that fetch's latency, the last live poll paints immediately
- * from a localStorage copy while the real answer is in flight — see the cache
- * helpers below. While a poll is live the previous newest row keeps its server-rendered
+ * Rendered as the FIRST <li> of the readings list, SERVER-RENDERED from
+ * `initial` — the poll's public fields as of the index page's ISR render
+ * (lib/polls.ts publicPoll, refreshed at most once a minute). It used to
+ * appear only after a client fetch, which pushed every reading row down just
+ * as people went to click them. After mount it still fetches `/api/vote` for
+ * the viewer's own state (Voted ✓, the tally) and a fresh count; that only
+ * changes text in place, unless the poll opened or closed since the render.
+ * Renders nothing when no poll is live. While a poll is live the previous newest row keeps its server-rendered
  * yellow — the `vote-live` class on this row is what demotes it, via sibling-
  * selector variants in LandingIndex (`[.vote-live~&]:…`), so the poll takes
  * over as THE highlighted "today" entry.
@@ -63,41 +66,6 @@ type PollState = {
   totalVotes?: number; // ballots cast so far — public (participation, not preference)
 };
 
-// Optimistic first paint: the last-known live poll re-renders instantly from
-// localStorage while the real /api/vote answer is in flight, killing the
-// visible pop-in for repeat visitors (the first-ever visit still waits for
-// the network). Only PUBLIC fields are cached — never user/yourVote/tally,
-// since a shared device can switch accounts between visits — so the row may
-// briefly show "Vote" before the fetch upgrades it to "Voted ✓".
-const CACHE_PREFIX = "vote-poll:";
-
-function readCache(track: Track): PollState | null {
-  try {
-    const raw = localStorage.getItem(CACHE_PREFIX + track);
-    if (!raw) return null;
-    const p = JSON.parse(raw) as PollState;
-    return p?.active && p.date && p.candidates?.length ? p : null;
-  } catch {
-    return null;
-  }
-}
-
-function writeCache(track: Track, d: PollState) {
-  try {
-    if (d.active && d.date && d.candidates?.length) {
-      const { active, date, candidates, totalVotes } = d;
-      localStorage.setItem(
-        CACHE_PREFIX + track,
-        JSON.stringify({ active, date, candidates, totalVotes })
-      );
-    } else {
-      localStorage.removeItem(CACHE_PREFIX + track);
-    }
-  } catch {
-    // storage full/blocked — the cache is only an optimization
-  }
-}
-
 /** "2026-07-16" → "Jul 16" (rendered uppercase — same as the row date tags). */
 function dateTag(date: string): string {
   const [y, m, d] = date.split("-").map(Number);
@@ -122,24 +90,25 @@ const MODAL_H2 = "font-display text-xl font-normal uppercase text-[#0a0a0a]";
 
 export default function VotePoll({
   track = "senior",
+  initial,
 }: {
   track?: Track;
+  /** The live poll as of the page render (null = none was live then). */
+  initial: PublicPoll | null;
 }) {
-  const [poll, setPoll] = useState<PollState | null>(null);
+  const [poll, setPoll] = useState<PollState | null>(
+    initial ? { active: true, ...initial } : null
+  );
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // `synced` = the real /api/vote answer has landed; before that `poll` may be
-  // the localStorage copy, which never carries login/vote state.
+  // `synced` = the real /api/vote answer has landed; before that `poll` is the
+  // server render, which never carries login/vote state.
   const [synced, setSynced] = useState(false);
 
   useEffect(() => {
-    // Cache first (post-mount, so server and first client paint still match —
-    // the hydration recipe in the header comment), then reconcile with the API.
-    setSynced(false);
-    setPoll(readCache(track));
     let alive = true;
     fetch(`/api/vote?track=${track}`, { cache: "no-store" })
       .then((r) => r.json())
@@ -147,10 +116,10 @@ export default function VotePoll({
         if (!alive) return;
         setPoll(d);
         setSynced(true);
-        writeCache(track, d);
       })
       .catch(() => {
-        if (alive) setPoll({ active: false });
+        // Keep the server-rendered row: dropping it on a network hiccup
+        // would shift the list for nothing.
       });
     return () => {
       alive = false;
@@ -240,7 +209,7 @@ export default function VotePoll({
             onClick={(e) => e.stopPropagation()}
           >
             {!poll.user && !synced ? (
-              // Opened from the cached copy before the API answered — login
+              // Opened from the server render before the API answered — login
               // state is unknown for a beat, so don't flash the log-in gate.
               <div className="p-6 font-mono text-xs font-bold uppercase tracking-[.08em] text-stone-500">
                 Loading…

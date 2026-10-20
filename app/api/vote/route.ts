@@ -1,6 +1,7 @@
 import { currentUser } from "@/lib/auth";
-import { dbSelect, dbUpsert } from "@/lib/db";
-import { getReading, type Track } from "@/lib/content";
+import { dbUpsert } from "@/lib/db";
+import { type Track } from "@/lib/content";
+import { activePoll, readBallots, tallyOf, totalOf } from "@/lib/polls";
 
 /**
  * The daily article vote — the TODAY'S READ — YOU DECIDE row
@@ -25,71 +26,13 @@ import { getReading, type Track } from "@/lib/content";
  *  vote in anyway. The two tracks' polls are fully independent: each track's
  *  index shows only its own poll, and each closes on its own reading.
  *
- * "Active" is derived, never a flag: the track's NEWEST poll is live iff no
- * reading ON THAT TRACK is published for its date. Publishing the day's
- * reading (a push → deploy) is what closes the vote — there is no close step
- * to forget. A poll for a day that never got published is simply superseded by
- * the next one. (The senior folded list is blind to junior polls: they live a
- * level deeper, so folding `votes/` shows them only as one `votes/junior/`
- * folder, which the date regex ignores.)
+ * Which poll is live (derived, never a flag) lives in lib/polls.ts, shared
+ * with the index pages' server render of the vote row.
  */
-
-type VoteCandidate = {
-  id: string;
-  title: string;
-  source: string; // "WSJ" | "Economist" | an enrichment source name — a display label, not an enum
-  pitch: string;
-  articleUrl: string;
-  kind?: "news" | "enrichment"; // ballot section (absent = news); the modal groups by it but the poll stays ONE unified vote
-};
-
-type VotePoll = { date: string; openedAt?: string; candidates: VoteCandidate[] };
-
-type Ballot = { user: string; candidateId: string; votedAt?: string };
 
 /** "senior" | "junior" from an untrusted request value (default senior — the same boundary rule as the quiz routes). */
 function parseTrack(v: unknown): Track {
   return v === "junior" ? "junior" : "senior";
-}
-
-/** The track's newest poll, with its DB row id. */
-type DbPoll = VotePoll & { id: string };
-
-async function readBallots(pollId: string): Promise<Ballot[]> {
-  const rows = await dbSelect(
-    "rc_ballots",
-    `?poll_id=eq.${encodeURIComponent(pollId)}&select=username,candidate_id`
-  );
-  if (rows === null) throw new Error("ballot DB read failed");
-  return rows.map((r) => ({
-    user: String(r.username),
-    candidateId: String(r.candidate_id),
-  }));
-}
-
-/** Per-candidate counts (every candidate present, so the UI needn't null-check). Ballots for removed candidate ids are ignored. */
-function tallyOf(poll: VotePoll, ballots: Ballot[]): Record<string, number> {
-  const tally = Object.fromEntries(poll.candidates.map((c) => [c.id, 0]));
-  for (const b of ballots) {
-    if (b.candidateId in tally) tally[b.candidateId] += 1;
-  }
-  return tally;
-}
-
-/** The track's newest poll if it's live (no published reading on that track for its date). */
-async function activePoll(track: Track): Promise<DbPoll | null> {
-  const rows = await dbSelect(
-    "rc_polls",
-    `?track=eq.${track}&select=id,date,candidates&order=date.desc&limit=1`
-  );
-  if (rows === null) throw new Error("poll DB read failed");
-  const r = rows[0];
-  if (!r) return null;
-  const date = String(r.date);
-  if (getReading(date, track)) return null;
-  const candidates = r.candidates as VoteCandidate[];
-  if (!Array.isArray(candidates) || candidates.length === 0) return null;
-  return { id: String(r.id), date, candidates };
 }
 
 export async function GET(request: Request) {
@@ -105,7 +48,7 @@ export async function GET(request: Request) {
     // herd anyone toward a candidate.
     const ballots = await readBallots(poll.id);
     const tally = tallyOf(poll, ballots);
-    const totalVotes = Object.values(tally).reduce((a, b) => a + b, 0);
+    const totalVotes = totalOf(tally);
     const yourVote = user
       ? (ballots.find((b) => b.user === user)?.candidateId ?? null)
       : null;
@@ -186,7 +129,7 @@ export async function POST(request: Request) {
       ok: true,
       yourVote: candidateId,
       tally,
-      totalVotes: Object.values(tally).reduce((a, b) => a + b, 0),
+      totalVotes: totalOf(tally),
     });
   } catch (err) {
     console.error("Casting a vote failed:", err, "user:", user);

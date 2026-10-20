@@ -41,13 +41,34 @@ export default function StreakStrip({
   /** The track's reading dates, newest first (the index order). */
   dates: string[];
 }) {
-  const { loggedIn, state } = useMedals();
-  if (!loggedIn || !state || dates.length === 0) return null;
+  const { loggedIn, state, failed } = useMedals();
+  if (!loggedIn || dates.length === 0 || (!state && failed)) return null;
 
-  const { medals, streak } = state;
   const today = localYMD();
   const shown = dates.slice(0, 14).reverse(); // oldest → newest
   const newest = shown[shown.length - 1];
+
+  // Medals not loaded yet (first visit for this login; after that the
+  // provider's cache paints the real bar at once): an empty bar with the same
+  // structure, so the full one fills in place instead of pushing the deck
+  // and the readings down when it lands.
+  if (!state) {
+    return (
+      <div className="bg-[#0a0a0a] text-white" aria-hidden="true">
+        <div className="mx-auto max-w-[980px] px-[18px] pb-3 pt-2.5">
+          <div className="mb-2 h-[15px]" />
+          <div className="flex gap-1">
+            {shown.map((d) => (
+              <div key={d} className="h-5 flex-1 border border-[#3a3a3a]" />
+            ))}
+          </div>
+          <div className="mt-[5px] text-[7.5px] font-bold">&nbsp;</div>
+        </div>
+      </div>
+    );
+  }
+
+  const { medals, streak } = state;
 
   const square = (d: string, medal: Medal | undefined) => {
     if (medal) {
@@ -79,7 +100,7 @@ export default function StreakStrip({
   return (
     <div className="bg-[#0a0a0a] text-white">
       <div className="mx-auto max-w-[980px] px-[18px] pb-3 pt-2.5">
-        <div className="mb-2 flex items-baseline justify-between gap-3 text-[9px] font-bold uppercase tracking-[.15em]">
+        <div className="mb-2 flex h-[15px] items-baseline justify-between gap-3 text-[9px] font-bold uppercase tracking-[.15em]">
           <span className="whitespace-nowrap">
             <span className="text-[#ffe600]">{streak.current}-day streak</span>
             {/* "Best" is noise when the current streak IS the best. */}

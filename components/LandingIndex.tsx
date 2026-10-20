@@ -8,6 +8,7 @@ import TodayTag from "@/components/TodayTag";
 import VoiceQuizStep from "@/components/VoiceQuizStep";
 import VotePoll from "@/components/VotePoll";
 import { type Reading, type Track } from "@/lib/content";
+import type { PublicPoll } from "@/lib/polls";
 
 // How many rows the index shows up front; everything older collapses behind
 // the MoreReadings "show more" row at the bottom of the list.
@@ -52,9 +53,12 @@ const topLink =
 export default function LandingIndex({
   readings,
   track = "senior",
+  poll,
 }: {
   readings: Reading[];
   track?: Track;
+  /** The live vote poll as of the page's (ISR) render, or null. */
+  poll: PublicPoll | null;
 }) {
   const junior = track === "junior";
   const base = junior ? "/junior" : "";
@@ -250,12 +254,12 @@ export default function LandingIndex({
         ) : (
           <CompletionsProvider track={track}>
           <ul className="mt-[26px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] motion-reduce:animate-none">
-            {/* The daily article vote (each track shows its own poll): a
-                client row that pops in as the FIRST entry while a poll is live
-                and renders nothing otherwise. Its `vote-live` class is what
-                the [.vote-live~&] variants below key off to demote the
-                previous newest row. */}
-            <VotePoll track={track} />
+            {/* The daily article vote (each track shows its own poll): the
+                FIRST entry while a poll is live, nothing otherwise. It is
+                server-rendered from `poll` so it never pops in above the
+                readings. Its `vote-live` class is what the [.vote-live~&]
+                variants below key off to demote the previous newest row. */}
+            <VotePoll track={track} initial={poll} />
             {upfront.map(renderRow)}
             {older.length > 0 && (
               <MoreReadings count={older.length}>

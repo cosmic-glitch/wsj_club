@@ -5,6 +5,7 @@ import {
   useCallback,
   useContext,
   useEffect,
+  useLayoutEffect,
   useState,
 } from "react";
 import { useAuth } from "./AuthProvider";
@@ -32,6 +33,12 @@ import {
  * Gold arrives from the voice quiz, which is saved elsewhere: VoiceQuiz
  * dispatches MEDAL_EVENT on the window after a graded save and the provider
  * refetches, so the row and ribbon update without a reload.
+ *
+ * The last answer is cached in localStorage per (user, track), the
+ * AuthProvider recipe: restored before the first paint, so the streak
+ * ribbon (a tall bar above the readings) and the row medals paint in place
+ * instead of pushing the page down when the fetch lands. The fetch then
+ * corrects the copy.
  */
 
 export const MEDAL_EVENT = "rc:medal";
@@ -45,6 +52,8 @@ type MedalsContext = {
   loggedIn: boolean;
   /** null until loaded (or when the viewer has no medals to load). */
   state: MedalsState | null;
+  /** The last fetch failed (with nothing cached, the medals stay off). */
+  failed: boolean;
   mark: (date: string, level: MarkLevel) => Promise<MedalsState | null>;
 };
 
@@ -52,8 +61,28 @@ const Ctx = createContext<MedalsContext>({
   ready: false,
   loggedIn: false,
   state: null,
+  failed: false,
   mark: async () => null,
 });
+
+const CACHE_PREFIX = "rc-medals:";
+
+function readCache(user: string, track: Track): MedalsState | null {
+  try {
+    const raw = localStorage.getItem(`${CACHE_PREFIX}${user}:${track}`);
+    return raw ? parseState(JSON.parse(raw)) : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeCache(user: string, track: Track, s: MedalsState) {
+  try {
+    localStorage.setItem(`${CACHE_PREFIX}${user}:${track}`, JSON.stringify(s));
+  } catch {
+    // Storage unavailable — the medals just wait for the fetch.
+  }
+}
 
 function parseState(d: unknown): MedalsState | null {
   if (!d || typeof d !== "object") return null;
@@ -72,6 +101,16 @@ export function MedalsProvider({
   const { user, ready } = useAuth();
   const loggedIn = ready && Boolean(user);
   const [state, setState] = useState<MedalsState | null>(null);
+  const [failed, setFailed] = useState(false);
+
+  // Before the first paint (the auth cache restores `user` in a layout
+  // effect too, so this runs in the same pre-paint pass).
+  useLayoutEffect(() => {
+    // Deliberate: localStorage can't be read during render without a
+    // hydration mismatch, and a layout effect still lands before paint.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (user) setState(readCache(user, track));
+  }, [user, track]);
 
   const load = useCallback(async (): Promise<MedalsState | null> => {
     try {
@@ -85,11 +124,17 @@ export function MedalsProvider({
   }, [track]);
 
   useEffect(() => {
-    if (!loggedIn) return;
+    if (!loggedIn || !user) return;
     let stale = false;
     const refresh = () => {
       void load().then((s) => {
-        if (!stale && s) setState(s);
+        if (stale) return;
+        if (s) {
+          setState(s);
+          writeCache(user, track, s);
+        } else {
+          setFailed(true);
+        }
       });
     };
     refresh();
@@ -98,7 +143,7 @@ export function MedalsProvider({
       stale = true;
       window.removeEventListener(MEDAL_EVENT, refresh);
     };
-  }, [loggedIn, load]);
+  }, [loggedIn, user, track, load]);
 
   const mark = useCallback(
     async (date: string, level: MarkLevel) => {
@@ -110,17 +155,22 @@ export function MedalsProvider({
         });
         if (!r.ok) return null;
         const s = parseState(await r.json());
-        if (s) setState(s);
+        if (s) {
+          setState(s);
+          if (user) writeCache(user, track, s);
+        }
         return s;
       } catch {
         return null;
       }
     },
-    [track],
+    [track, user],
   );
 
   return (
-    <Ctx.Provider value={{ ready, loggedIn, state, mark }}>{children}</Ctx.Provider>
+    <Ctx.Provider value={{ ready, loggedIn, state, failed, mark }}>
+      {children}
+    </Ctx.Provider>
   );
 }
 

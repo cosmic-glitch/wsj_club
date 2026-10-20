@@ -43,17 +43,24 @@ export function dbConfigured(): boolean {
  * SELECT. `query` is a raw PostgREST query string starting with "?"
  * (e.g. `?username=eq.${encodeURIComponent(name)}&select=*`).
  * Returns the rows, or null on any failure (logged) — including unconfigured.
+ *
+ * `revalidate` (seconds) is ONLY for reads made while rendering an ISR page:
+ * a `no-store` fetch there would turn the whole page dynamic. API routes
+ * leave it unset and always read fresh.
  */
 export async function dbSelect(
   table: string,
-  query: string
+  query: string,
+  opts: { revalidate?: number } = {}
 ): Promise<Record<string, unknown>[] | null> {
   const cfg = config();
   if (!cfg) return null;
   try {
     const res = await fetch(`${cfg.base}${table}${query}`, {
       headers: cfg.headers,
-      cache: "no-store",
+      ...(opts.revalidate
+        ? { next: { revalidate: opts.revalidate } }
+        : { cache: "no-store" as const }),
     });
     if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
     return (await res.json()) as Record<string, unknown>[];
