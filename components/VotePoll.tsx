@@ -367,7 +367,7 @@ export default function VotePoll({
         {dateTag(date)}
         <TodayTag date={date} />
         {/* Mobile home of the votes-in count: right-aligned on the date
-            line, same as CompletedBy on the reading rows. */}
+            line (the action bar has no slack on a phone). */}
         {typeof poll.totalVotes === "number" && (
           <span className="ml-auto whitespace-nowrap pl-2 text-[10px] font-bold tracking-[.08em] text-[#0a0a0a]/60 group-hover:text-white/70 min-[681px]:hidden">
             {poll.totalVotes} vote{poll.totalVotes === 1 ? "" : "s"} in

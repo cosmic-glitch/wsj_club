@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { CompletedBy, CompletionsProvider } from "@/components/CompletedBy";
 import HomeAuthBar from "@/components/HomeAuthBar";
 import { MedalsProvider, RowMedal } from "@/components/Medals";
 import MoreReadings from "@/components/MoreReadings";
@@ -92,14 +91,6 @@ export default function LandingIndex({
               streak ribbon's square shows; nothing for parents/visitors. */}
           <RowMedal date={r.date} className="ml-2 text-[13px]" />
           {newest && <TodayTag date={r.date} />}
-          {/* Mobile home of the completed-count: RIGHT-ALIGNED on
-              the date line (ml-auto in the mobile-only flex row) so
-              it doesn't crowd the date + TODAY chip; the action bar
-              has no slack at all (see CompletedBy). */}
-          <CompletedBy
-            date={r.date}
-            className="ml-auto pl-2 min-[681px]:hidden"
-          />
         </span>
 
         {/* Title in the readable sans — sentence-length text reads
@@ -144,13 +135,6 @@ export default function LandingIndex({
               />
             </>
           )}
-          {/* Desktop home of the completed-count: the slack right
-              of the AI QUIZ button (kept off the title, which it
-              polluted; see CompletedBy). */}
-          <CompletedBy
-            date={r.date}
-            className="hidden self-center min-[681px]:inline"
-          />
         </span>
       </li>
     );
@@ -252,7 +236,6 @@ export default function LandingIndex({
               : "No readings yet. The first one will appear here."}
           </p>
         ) : (
-          <CompletionsProvider track={track}>
           <ul className="mt-[26px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] motion-reduce:animate-none">
             {/* The daily article vote (each track shows its own poll): the
                 FIRST entry while a poll is live, nothing otherwise. It is
@@ -267,7 +250,6 @@ export default function LandingIndex({
               </MoreReadings>
             )}
           </ul>
-          </CompletionsProvider>
         )}
 
         {/* Spells out the same three steps the row's arrows imply — the row

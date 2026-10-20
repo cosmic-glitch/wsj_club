@@ -24,7 +24,7 @@ import {
  * The logged-in viewer's daily medals for one track — one fetch of
  * /api/medals on mount, shared by every leaf on the page that shows a medal
  * (the streak ribbon, the index rows' medal, the handout's finish box), the
- * CompletedBy/AuthProvider lesson: never a fetch per row. Every login earns
+ * AuthProvider lesson: never a fetch per row. Every login earns
  * medals (parents read too); a logged-out visitor gets an empty context (no
  * fetch — the API would 401).
  *
