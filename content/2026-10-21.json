@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-21",
+  "title": "Europe’s dependence on America in space is hard to escape",
+  "articleUrl": "https://www.economist.com/europe/2026/10/20/europes-dependence-on-america-in-space-is-hard-to-escape",
+  "articlePageUrl": "/articles/2026-10-21.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "foreboding",
+      "partOfSpeech": "noun",
+      "pronunciation": "for-BOH-ding",
+      "articleQuote": "Ukraine’s European allies reacted with deep foreboding.",
+      "meaning": "Foreboding is a strong feeling that something bad is about to happen, even before there is proof. It is the uneasy knot in your stomach when the sky turns green before a storm. Here, European governments watched Starlink and American satellite help get restricted for Ukraine and felt dread about what it might mean for their own security.",
+      "examples": [
+        "She felt a sense of foreboding when the lights went out and the dog began to growl.",
+        "The team waited for the test results with foreboding, sure the news would be bad."
+      ]
+    },
+    {
+      "word": "freeload",
+      "partOfSpeech": "verb",
+      "pronunciation": "FREE-lohd",
+      "articleQuote": "America kept Europe dependent in part by letting its allies freeload on programmes such as SBIRS",
+      "meaning": "To freeload is to enjoy the benefits of something without paying your share of the cost. It is the classic complaint about the friend who eats the pizza but never chips in. In the article, European countries benefited from America's expensive missile-warning satellites without building or funding their own, which left them dependent on Washington.",
+      "examples": [
+        "Two of the four teammates did none of the work and just freeloaded on the group's grade.",
+        "Neighbours who use the shared garden but never help weed it are freeloading on everyone else."
+      ]
+    },
+    {
+      "word": "incumbent",
+      "partOfSpeech": "noun",
+      "pronunciation": "in-KUM-bent",
+      "articleQuote": "they will need to commit to long-term spending plans to allow incumbents to invest",
+      "meaning": "An incumbent is the person or company that already holds a position, such as the sitting mayor or the biggest firm in an industry. Incumbents have a head start, but may also grow slow and comfortable. Here, the incumbents are Europe's established rocket makers like Arianespace, which need guaranteed orders before they will spend money on cheaper rockets.",
+      "examples": [
+        "The incumbent champion trained hard, knowing the newcomer was getting faster every week.",
+        "Small phone makers struggled to win customers away from the incumbents."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Satellite orbits and constellations",
+      "articleQuote": "because its satellites are in a much higher orbit, users need bigger terminals",
+      "meaning": "A satellite stays up because it moves sideways so fast that it keeps falling around the Earth instead of into it. How high it flies, its orbit, changes what it can do. Low satellites are close to the ground, so signals arrive quickly and a small dish can hear them, but each one sees only a small patch of Earth and sweeps past in minutes. That is why Starlink needs more than 10,000 satellites working together as a constellation, so that one is always overhead.\n\nHigher satellites cover more ground, so fewer are needed: OneWeb has about 600. But the signal travels farther and is weaker on arrival, which is why users need bigger terminals that cost around $9,000, roughly 45 times a basic Starlink one. The same logic explains the article's good news on spying: Iceye's small radar satellites are cheap enough to launch in dozens, so losing a few to jamming or attack does not blind the whole network.\n\nWhenever you hear about a satellite system, ask how high it flies and how many satellites it needs to cover the places that matter."
+    },
+    {
+      "name": "Economies of scale",
+      "articleQuote": "If demand remains small, he says, the industry will never achieve economies of scale.",
+      "meaning": "Economies of scale means that the more of something you make, the cheaper each one gets. A bakery that bakes 1,000 loaves a day can use a big oven, buy flour in bulk and train workers to be fast, so each loaf costs less than at a bakery making 20. The savings come from spreading fixed costs, such as factories and tools, over many units, and from learning by repetition.\n\nRockets work the same way. Arianespace launches far fewer rockets than SpaceX and at much higher cost per launch. A Eurospace official in the article says that to make a rocket cheap, you must launch it very regularly. But a company will only build a bigger factory if it expects steady orders, which is why the article says European governments must commit to long-term spending plans. Without that promise, high prices keep demand low, and low demand keeps prices high.\n\nWhenever one producer is far cheaper than another, ask whether it simply makes far more of the thing."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What are the three crucial areas in which the article says Europe depends on America in space?",
+      "options": [
+        "Satellite internet, space-based intelligence and early warning, and launch capacity",
+        "Weather forecasting, GPS navigation and moon missions",
+        "Space tourism, asteroid mining and satellite television",
+        "Rocket fuel, astronaut training and space stations"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article lists satellite-internet service, space-based ISR and early warning, and the launch capacity to put satellites in orbit."
+    },
+    {
+      "question": "Why is OneWeb not a direct replacement for Starlink?",
+      "options": [
+        "It has far fewer satellites, carries less data, and needs bigger, pricier terminals",
+        "It is banned in Ukraine",
+        "It only works at night",
+        "It is owned by SpaceX"
+      ],
+      "answerIndex": 0,
+      "explanation": "OneWeb has about 600 satellites to Starlink's more than 10,000, and its higher orbit means terminals costing around $9,000."
+    },
+    {
+      "question": "According to the article, why is the news on space-based intelligence (ISR) more encouraging?",
+      "options": [
+        "Private European newcomers like Iceye make small surveillance satellites much faster than legacy firms",
+        "America agreed to share all its satellites",
+        "Europe has already built a missile-warning system",
+        "Russia has stopped attacking satellites"
+      ],
+      "answerIndex": 0,
+      "explanation": "Startups such as Iceye shrank radar satellites to the size of a washing machine and are scaling up production, and Sweden launched its first spy satellite this year."
+    },
+    {
+      "question": "Why does the article call Europe’s dependence on American launches worrying even apart from geopolitics?",
+      "options": [
+        "SpaceX is gradually retiring the Falcon 9, so there is a looming shortage of launch capacity",
+        "Arianespace has been shut down",
+        "American rockets are too small to carry satellites",
+        "Launches are now illegal in Europe"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article notes a looming capacity shortage as SpaceX retires its workhorse Falcon 9."
+    },
+    {
+      "question": "What does the Eurospace official say Europe must do to make its rockets cheaper?",
+      "options": [
+        "Launch them very regularly, which needs steady orders",
+        "Build only one giant rocket",
+        "Stop competing with SpaceX entirely",
+        "Cut the size of all satellites in half"
+      ],
+      "answerIndex": 0,
+      "explanation": "He says a cheap launcher needs regular launches, and without sufficient demand the industry will never achieve economies of scale."
+    }
+  ]
+}

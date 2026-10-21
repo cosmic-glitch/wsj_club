@@ -1,0 +1,610 @@
+[
+  {
+    "k": "foreboding",
+    "t": "foreboding",
+    "kind": "vocab",
+    "pron": "for-BOH-ding",
+    "forms": [
+      "foreboding"
+    ],
+    "text": "Foreboding is a strong feeling that something bad is about to happen. Here European governments felt dread after seeing American satellite help to Ukraine restricted, and wondered what that meant for their own security.",
+    "audio": true
+  },
+  {
+    "k": "freeload",
+    "t": "freeload",
+    "kind": "vocab",
+    "pron": "FREE-lohd",
+    "forms": [
+      "freeload"
+    ],
+    "text": "To freeload is to enjoy the benefits of something without paying your share. Here European allies relied on expensive American missile-warning satellites without building their own.",
+    "audio": true
+  },
+  {
+    "k": "incumbents",
+    "t": "incumbents",
+    "kind": "vocab",
+    "pron": "in-KUM-bents",
+    "forms": [
+      "incumbents",
+      "incumbent"
+    ],
+    "text": "An incumbent is whoever already holds a position, such as the sitting mayor or the biggest firm in an industry. Here it means Europe's established rocket makers, who need guaranteed orders before they invest.",
+    "audio": true
+  },
+  {
+    "k": "signals",
+    "t": "signals",
+    "kind": "word",
+    "forms": [
+      "signals"
+    ],
+    "text": "Here signals means clues that reveal what someone is thinking or planning. The article says the clearest hints that America is turning away from Ukraine have come from space.",
+    "audio": true
+  },
+  {
+    "k": "starlink",
+    "t": "Starlink",
+    "kind": "name",
+    "forms": [
+      "Starlink"
+    ],
+    "text": "Starlink is SpaceX's satellite-internet service, built from more than 10,000 small satellites. Ukraine's army has relied on it for communications and to guide drones.",
+    "audio": true
+  },
+  {
+    "k": "elon-musk",
+    "t": "Elon Musk",
+    "kind": "name",
+    "forms": [
+      "Mr Musk",
+      "Elon Musk"
+    ],
+    "text": "Elon Musk is the billionaire who runs SpaceX, which owns Starlink. The Economist calls it a world-beating rocket company.",
+    "audio": true
+  },
+  {
+    "k": "ballistic-missiles",
+    "t": "ballistic missiles",
+    "kind": "word",
+    "forms": [
+      "ballistic missiles",
+      "ballistic-missile"
+    ],
+    "text": "A ballistic missile is launched high into the sky and then falls toward its target under gravity. Because it flies so fast, early warning from satellites that spot the launch heat is valuable.",
+    "audio": true
+  },
+  {
+    "k": "smacked-into",
+    "t": "smacked into",
+    "kind": "phrase",
+    "forms": [
+      "smacked into"
+    ],
+    "text": "To smack into something is to hit it hard and suddenly. The word gives a sense of how unexpected and violent the strikes on Kyiv were.",
+    "audio": true
+  },
+  {
+    "k": "spy-satellites",
+    "t": "spy satellites",
+    "kind": "word",
+    "forms": [
+      "spy satellites",
+      "spy satellite"
+    ],
+    "text": "Spy satellites take pictures or collect radio and radar data from orbit to watch what armies are doing. Ukraine relies on allies for this kind of intelligence.",
+    "audio": true
+  },
+  {
+    "k": "substitutes",
+    "t": "substitutes",
+    "kind": "word",
+    "forms": [
+      "substitutes"
+    ],
+    "text": "A substitute is something used in place of another. Here European defence chiefs can offer only partial ones, meaning they can replace some but not all of what America supplied.",
+    "audio": true
+  },
+  {
+    "k": "hastening",
+    "t": "hastening",
+    "kind": "word",
+    "forms": [
+      "hastening"
+    ],
+    "text": "To hasten something is to make it happen sooner. The Starlink restrictions are pushing Europe to build its own alternatives faster.",
+    "audio": true
+  },
+  {
+    "k": "eutelsat",
+    "t": "Eutelsat",
+    "kind": "name",
+    "forms": [
+      "Eutelsat"
+    ],
+    "text": "Eutelsat is a European satellite company and the parent of OneWeb, partly owned by the French and British governments. Its shares jumped 23% after the Starlink restrictions.",
+    "audio": true
+  },
+  {
+    "k": "surged",
+    "t": "surged",
+    "kind": "word",
+    "forms": [
+      "surged"
+    ],
+    "text": "To surge is to rise suddenly and strongly, like a wave. Eutelsat's share price jumped because investors expected more demand for a European rival to Starlink.",
+    "audio": true
+  },
+  {
+    "k": "glacial",
+    "t": "glacial",
+    "kind": "word",
+    "forms": [
+      "glacial"
+    ],
+    "text": "Glacial literally means to do with glaciers, which move extremely slowly. Used figuratively it means painfully slow. Here it describes the EU's regulatory approval process.",
+    "audio": true
+  },
+  {
+    "k": "regulatory-approval",
+    "t": "regulatory approval",
+    "kind": "phrase",
+    "forms": [
+      "regulatory approval"
+    ],
+    "text": "Regulatory approval is official permission from a government body, needed here before three aerospace firms can merge their satellite-making businesses.",
+    "audio": true
+  },
+  {
+    "k": "aerospace",
+    "t": "aerospace",
+    "kind": "word",
+    "forms": [
+      "aerospace"
+    ],
+    "text": "Aerospace is the industry that designs and builds aircraft, rockets and satellites.",
+    "audio": true
+  },
+  {
+    "k": "spacex",
+    "t": "SpaceX",
+    "kind": "name",
+    "forms": [
+      "SpaceX"
+    ],
+    "text": "SpaceX is Elon Musk's rocket and satellite company. It launches most of the world's satellites and also runs Starlink.",
+    "audio": true
+  },
+  {
+    "k": "telecommunications",
+    "t": "telecommunications",
+    "kind": "word",
+    "forms": [
+      "telecommunications"
+    ],
+    "text": "Telecommunications means sending messages and data over distance, through phone, internet and satellite networks. Telecom firms are companies that run those networks.",
+    "audio": true
+  },
+  {
+    "k": "jargon",
+    "t": "jargon",
+    "kind": "word",
+    "forms": [
+      "jargon"
+    ],
+    "text": "Jargon is specialist language used by a particular profession. By saying 'as the jargon has it', the writer admits that 'autonomy in space' is insider talk.",
+    "audio": true
+  },
+  {
+    "k": "autonomy",
+    "t": "autonomy",
+    "kind": "word",
+    "forms": [
+      "autonomy"
+    ],
+    "text": "Autonomy means the ability to govern or act for yourself without relying on others. Here it means Europe being able to do space things without American help.",
+    "audio": true
+  },
+  {
+    "k": "isr",
+    "t": "ISR",
+    "kind": "name",
+    "forms": [
+      "ISR"
+    ],
+    "text": "ISR stands for intelligence, surveillance and reconnaissance: gathering information about what an opponent is doing, often with satellites.",
+    "audio": true
+  },
+  {
+    "k": "reconnaissance",
+    "t": "reconnaissance",
+    "kind": "word",
+    "forms": [
+      "reconnaissance"
+    ],
+    "text": "Reconnaissance is a mission to observe and collect information about an enemy or area, often from the air or space.",
+    "audio": true
+  },
+  {
+    "k": "early-warning",
+    "t": "early warning",
+    "kind": "phrase",
+    "forms": [
+      "early warning"
+    ],
+    "text": "Early warning means detecting an attack, such as a missile launch, soon enough to react. Satellites that sense missile heat are the main tool.",
+    "audio": true
+  },
+  {
+    "k": "launch-capacity",
+    "t": "launch capacity",
+    "kind": "phrase",
+    "forms": [
+      "launch capacity"
+    ],
+    "text": "Launch capacity is how many rockets, and how much weight, a country or company can send into orbit in a given period.",
+    "audio": true
+  },
+  {
+    "k": "spaceports",
+    "t": "spaceports",
+    "kind": "word",
+    "forms": [
+      "spaceports"
+    ],
+    "text": "A spaceport is a site built to launch rockets, like an airport for space.",
+    "audio": true
+  },
+  {
+    "k": "constellation",
+    "t": "constellation",
+    "kind": "word",
+    "forms": [
+      "constellation"
+    ],
+    "text": "Usually a pattern of stars. In space technology it means a large group of satellites working together as one system, like Starlink or SBIRS.",
+    "audio": true
+  },
+  {
+    "k": "sbirs",
+    "t": "SBIRS",
+    "kind": "name",
+    "forms": [
+      "SBIRS"
+    ],
+    "text": "SBIRS is the Space-Based Infrared System, America's $18bn satellite network that detects missile launches by their heat.",
+    "audio": true
+  },
+  {
+    "k": "galileo",
+    "t": "Galileo",
+    "kind": "name",
+    "forms": [
+      "Galileo"
+    ],
+    "text": "Galileo is Europe's own satellite-navigation system, a rival to America's GPS. America at first tried to block it.",
+    "audio": true
+  },
+  {
+    "k": "gps",
+    "t": "GPS",
+    "kind": "name",
+    "forms": [
+      "GPS"
+    ],
+    "text": "GPS, the Global Positioning System, is America's satellite navigation network used by phones, cars and militaries around the world.",
+    "audio": true
+  },
+  {
+    "k": "rocketed-ahead",
+    "t": "rocketed ahead",
+    "kind": "phrase",
+    "forms": [
+      "rocketed ahead"
+    ],
+    "text": "To rocket ahead is to move far in front, very fast. It is a pun here: America's space companies literally launch rockets and also pulled far ahead.",
+    "audio": true
+  },
+  {
+    "k": "oneweb",
+    "t": "OneWeb",
+    "kind": "name",
+    "forms": [
+      "OneWeb"
+    ],
+    "text": "OneWeb is a satellite-internet company owned by Eutelsat. It has about 600 satellites, compared with Starlink's more than 10,000.",
+    "audio": true
+  },
+  {
+    "k": "bailed-out",
+    "t": "bailed the firm out",
+    "kind": "phrase",
+    "forms": [
+      "bailed the firm out"
+    ],
+    "text": "To bail someone out is to rescue them from financial trouble with money. Britain did this for OneWeb after it collapsed in 2020.",
+    "audio": true
+  },
+  {
+    "k": "injected",
+    "t": "injected",
+    "kind": "word",
+    "forms": [
+      "injected"
+    ],
+    "text": "To inject money into something is to put in new funds to keep it going, like a medical injection. Both governments added capital to Eutelsat.",
+    "audio": true
+  },
+  {
+    "k": "eclipsed",
+    "t": "eclipsed",
+    "kind": "word",
+    "forms": [
+      "eclipsed"
+    ],
+    "text": "To eclipse something is to outshine it so completely that it is hardly noticed, as the moon blocks the sun. Starlink quickly overshadowed OneWeb.",
+    "audio": true
+  },
+  {
+    "k": "fuel",
+    "t": "fuel",
+    "kind": "word",
+    "forms": [
+      "fuel"
+    ],
+    "text": "Literally what powers an engine. Here it is figurative: Starlink's parent had cash that powered its fast growth.",
+    "audio": true
+  },
+  {
+    "k": "terminals",
+    "t": "terminals",
+    "kind": "word",
+    "forms": [
+      "terminals",
+      "terminal"
+    ],
+    "text": "A terminal is the ground equipment, a dish and receiver, that talks to a satellite. OneWeb's cost around $9,000 compared with a basic Starlink one.",
+    "audio": true
+  },
+  {
+    "k": "orbit",
+    "t": "orbit",
+    "kind": "word",
+    "forms": [
+      "orbit"
+    ],
+    "text": "An orbit is the curved path a satellite follows around the Earth. Higher orbits see more ground but need stronger, bigger equipment to hear the signal.",
+    "audio": true
+  },
+  {
+    "k": "kaja-kallas",
+    "t": "Kaja Kallas",
+    "kind": "name",
+    "forms": [
+      "Kaja Kallas"
+    ],
+    "text": "Kaja Kallas is the European Union's top diplomat, the High Representative for foreign affairs.",
+    "audio": true
+  },
+  {
+    "k": "zelensky",
+    "t": "Zelensky",
+    "kind": "name",
+    "forms": [
+      "Zelensky"
+    ],
+    "text": "Volodymyr Zelensky is the president of Ukraine.",
+    "audio": true
+  },
+  {
+    "k": "iris2",
+    "t": "IRIS2",
+    "kind": "name",
+    "forms": [
+      "IRIS2"
+    ],
+    "text": "IRIS2 is the EU's planned €15bn network of 348 communications satellites for governments and armed forces, with the first launch only in 2029.",
+    "audio": true
+  },
+  {
+    "k": "duplication",
+    "t": "duplication",
+    "kind": "word",
+    "forms": [
+      "duplication"
+    ],
+    "text": "Duplication is doing the same thing twice. Here the worry is that the EU and Germany are paying for separate, overlapping satellite networks.",
+    "audio": true
+  },
+  {
+    "k": "fragmentation",
+    "t": "fragmentation",
+    "kind": "word",
+    "forms": [
+      "fragmentation"
+    ],
+    "text": "Fragmentation is splitting into many separate pieces. In defence it means many countries running incompatible systems instead of one strong one.",
+    "audio": true
+  },
+  {
+    "k": "newcomers",
+    "t": "newcomers",
+    "kind": "word",
+    "forms": [
+      "newcomers"
+    ],
+    "text": "Newcomers are new entrants to an industry, here startups building small satellites faster than older firms.",
+    "audio": true
+  },
+  {
+    "k": "legacy-firms",
+    "t": "legacy firms",
+    "kind": "phrase",
+    "forms": [
+      "legacy firms"
+    ],
+    "text": "Legacy firms are long-established companies with old methods and products, as opposed to nimble startups.",
+    "audio": true
+  },
+  {
+    "k": "airbus",
+    "t": "Airbus",
+    "kind": "name",
+    "forms": [
+      "Airbus"
+    ],
+    "text": "Airbus is the big European aerospace company that builds airliners and satellites, and part-owns Arianespace.",
+    "audio": true
+  },
+  {
+    "k": "iceye",
+    "t": "Iceye",
+    "kind": "name",
+    "forms": [
+      "Iceye"
+    ],
+    "text": "Iceye is a Finnish startup that makes small radar-imaging satellites, which can see through clouds and at night.",
+    "audio": true
+  },
+  {
+    "k": "ride-share",
+    "t": "ride-share",
+    "kind": "phrase",
+    "forms": [
+      "ride-share"
+    ],
+    "text": "A ride-share launch carries several customers' satellites on one rocket to split the cost.",
+    "audio": true
+  },
+  {
+    "k": "jamming",
+    "t": "jamming",
+    "kind": "word",
+    "forms": [
+      "jamming"
+    ],
+    "text": "Jamming means blocking or drowning out radio signals so a satellite or drone cannot communicate.",
+    "audio": true
+  },
+  {
+    "k": "maneuvered",
+    "t": "manoeuvred",
+    "kind": "word",
+    "forms": [
+      "manoeuvred"
+    ],
+    "text": "To manoeuvre is to move carefully to a position. A Russian satellite moved very close to an Iceye one, which is seen as a threatening act.",
+    "audio": true
+  },
+  {
+    "k": "early-2030s",
+    "t": "early 2030s",
+    "kind": "phrase",
+    "forms": [
+      "early 2030s"
+    ],
+    "text": "The years around 2030 to 2033. It shows how long European missile-warning satellites will take to arrive.",
+    "audio": true
+  },
+  {
+    "k": "arianespace",
+    "t": "Arianespace",
+    "kind": "name",
+    "forms": [
+      "Arianespace"
+    ],
+    "text": "Arianespace is the European company that launches the Ariane rockets. It is owned mainly by Airbus and Safran.",
+    "audio": true
+  },
+  {
+    "k": "safran",
+    "t": "Safran",
+    "kind": "name",
+    "forms": [
+      "Safran"
+    ],
+    "text": "Safran is a large French aerospace and defence company.",
+    "audio": true
+  },
+  {
+    "k": "payloads",
+    "t": "payloads",
+    "kind": "word",
+    "forms": [
+      "payloads"
+    ],
+    "text": "A payload is what a rocket carries, such as satellites. Heavy payloads need powerful rockets.",
+    "audio": true
+  },
+  {
+    "k": "workhorse",
+    "t": "workhorse",
+    "kind": "word",
+    "forms": [
+      "workhorse"
+    ],
+    "text": "A workhorse is a reliable machine or person that does most of the everyday work. The Falcon 9 is SpaceX's.",
+    "audio": true
+  },
+  {
+    "k": "falcon-9",
+    "t": "Falcon 9",
+    "kind": "name",
+    "forms": [
+      "Falcon 9"
+    ],
+    "text": "Falcon 9 is SpaceX's partly reusable rocket, which carries most of the world's commercial satellites.",
+    "audio": true
+  },
+  {
+    "k": "launcher-challenge",
+    "t": "launcher challenge",
+    "kind": "phrase",
+    "forms": [
+      "launcher challenge"
+    ],
+    "text": "A €900m programme from the European Space Agency that pays rocket startups when they hit milestones, such as a first orbital launch.",
+    "audio": true
+  },
+  {
+    "k": "milestones",
+    "t": "milestones",
+    "kind": "word",
+    "forms": [
+      "milestones"
+    ],
+    "text": "A milestone is a key checkpoint in a project. Here companies get paid when they reach them.",
+    "audio": true
+  },
+  {
+    "k": "eurospace",
+    "t": "Eurospace",
+    "kind": "name",
+    "forms": [
+      "Eurospace"
+    ],
+    "text": "Eurospace is a European trade body, an association that represents the space industry.",
+    "audio": true
+  },
+  {
+    "k": "economies-of-scale",
+    "t": "economies of scale",
+    "kind": "phrase",
+    "forms": [
+      "economies of scale"
+    ],
+    "text": "The savings a producer gets by making a lot of something: each unit gets cheaper as fixed costs are spread over more of them.",
+    "audio": true
+  },
+  {
+    "k": "countdown",
+    "t": "countdown",
+    "kind": "word",
+    "forms": [
+      "countdown"
+    ],
+    "text": "A countdown is the backward count before a rocket launch. The closing line plays on it: Europe's time to catch up is running out.",
+    "audio": true
+  }
+]
