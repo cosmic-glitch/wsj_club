@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-21",
+  "title": "Two Japanese towns offer lessons for shrinking countries",
+  "articleUrl": "https://www.economist.com/asia/2026/10/15/two-japanese-towns-offer-lessons-for-shrinking-countries",
+  "articlePageUrl": "/articles/junior/2026-10-21.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "diverged",
+      "partOfSpeech": "verb",
+      "pronunciation": "dih-VURJD",
+      "articleQuote": "their fates could hardly have diverged further",
+      "meaning": "When things diverge, they start out close together and then move apart in different directions. Two paths in the woods can diverge at a fork. In the article, two towns only 40 kilometers apart ended up with very different futures.",
+      "examples": [
+        "The twins grew up together, but their interests diverged in middle school.",
+        "The two hiking trails diverged at the big rock."
+      ]
+    },
+    {
+      "word": "tranquil",
+      "partOfSpeech": "adjective",
+      "pronunciation": "TRANG-kwil",
+      "articleQuote": "a tranquil commuter town",
+      "meaning": "Something tranquil is calm, quiet, and peaceful. A lake with no wind is tranquil. A library at closing time is tranquil. In the article, Nanporo is a quiet town where families can live away from the noise of the big city.",
+      "examples": [
+        "After the noisy game, the tranquil evening felt like a relief.",
+        "She loved the tranquil beach early in the morning."
+      ]
+    },
+    {
+      "word": "palpable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "PAL-puh-bul",
+      "articleQuote": "A sense of optimism is palpable",
+      "meaning": "Something palpable is so strong that you can almost feel it, even though you cannot touch it. Nervousness before a big test can be palpable in a classroom. In the article, the happy hope in Nanporo is so strong that a visitor can sense it.",
+      "examples": [
+        "The excitement in the gym was palpable before the final game.",
+        "There was a palpable silence when the teacher walked in."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Bankruptcy",
+      "articleQuote": "went bankrupt in 2007",
+      "meaning": "Imagine you borrow money from friends to start a cookie stand, but the cookies don't sell. Soon you owe more than you can ever pay back. You are out of money, and you cannot keep your promises to the people you borrowed from.\n\nWhen a person, a company, or even a town is in that situation, it can be declared **bankrupt**. That is called **bankruptcy**. A court or a government steps in and helps sort out who gets paid what. The one in trouble usually has to cut spending hard and may lose things it owns.\n\nThat is what happened to Yubari. After its coal mines closed, it borrowed money to build tourism, but the plan failed and it could not pay its debts. The national government ran a restructuring plan, so the town closed schools, stopped bus routes, and shut its museum. Bankruptcy is a fresh start, but a painful one, because the cuts can make a place less pleasant to live in."
+    },
+    {
+      "name": "Municipality",
+      "articleQuote": "179 municipalities in Hokkaido",
+      "meaning": "A **municipality** is a town, a city, or a village that has its own local government. Think of your school: it has a principal who makes rules for the school, but the school is part of a bigger district. A municipality is like that. It has a mayor or council that runs the local parts of life, such as schools, buses, trash pickup, and parks.\n\nA country is split into many municipalities, and bigger regions, like states in the United States or Hokkaido in Japan, hold many of them together. Each municipality collects some money and decides how to spend it, so each can try different ideas.\n\nThe article compares two municipalities. Nanporo used its own money to give families help building homes and free rice. Yubari had to cut services. Because they are separate, one town can grow while another shrinks, even when they are only a short drive apart."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why has Nanporo's population started to grow again?",
+      "options": [
+        "Many more babies are being born than people dying",
+        "Families moved in, drawn by its location near Sapporo and help for young families",
+        "A coal mine opened nearby",
+        "Japan closed its borders"
+      ],
+      "answerIndex": 1,
+      "explanation": "The town has twice as many deaths as births, so its growth comes from newcomers attracted by location and incentives."
+    },
+    {
+      "question": "What does \"diverged\" mean in \"their fates could hardly have diverged further\"?",
+      "options": [
+        "Became very different from each other",
+        "Became exactly the same",
+        "Were forgotten",
+        "Moved closer together"
+      ],
+      "answerIndex": 0,
+      "explanation": "To diverge is to move apart; the two towns' futures became very different."
+    },
+    {
+      "question": "What happened to Yubari after it went bankrupt?",
+      "options": [
+        "It built many new schools",
+        "It closed schools, halted bus routes, and shut its museum",
+        "It gave out free rice",
+        "It became the capital of Hokkaido"
+      ],
+      "answerIndex": 1,
+      "explanation": "A national restructuring plan forced cuts to services, which the mayor says sped up the decline."
+    },
+    {
+      "question": "What is a municipality?",
+      "options": [
+        "A kind of coal mine",
+        "A type of bank loan",
+        "A town or city with its own local government",
+        "A national government office"
+      ],
+      "answerIndex": 2,
+      "explanation": "Hokkaido has 179 municipalities, each running its own local services."
+    },
+    {
+      "question": "What does \"tranquil\" mean?",
+      "options": [
+        "Crowded and loud",
+        "Calm and peaceful",
+        "Very expensive",
+        "Brand new"
+      ],
+      "answerIndex": 1,
+      "explanation": "Nanporo is described as a tranquil commuter town: quiet and calm."
+    }
+  ]
+}

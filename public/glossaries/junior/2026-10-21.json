@@ -1,0 +1,535 @@
+[
+  {
+    "k": "diverged",
+    "t": "diverged",
+    "kind": "vocab",
+    "pron": "dih-VURJD",
+    "forms": [
+      "diverged"
+    ],
+    "text": "Diverged means moved apart in different directions. Here, two towns that are close together ended up with very different futures.",
+    "audio": true
+  },
+  {
+    "k": "tranquil",
+    "t": "tranquil",
+    "kind": "vocab",
+    "pron": "TRANG-kwil",
+    "forms": [
+      "tranquil"
+    ],
+    "text": "Tranquil means calm, quiet, and peaceful. Here, Nanporo is a quiet town away from the big city.",
+    "audio": true
+  },
+  {
+    "k": "palpable",
+    "t": "palpable",
+    "kind": "vocab",
+    "pron": "PAL-puh-bul",
+    "forms": [
+      "palpable"
+    ],
+    "text": "Palpable means so strong you can almost feel it. Here, the happy hope in Nanporo is easy to sense.",
+    "audio": true
+  },
+  {
+    "k": "fates",
+    "t": "fates",
+    "kind": "word",
+    "forms": [
+      "fates"
+    ],
+    "text": "A fate is what finally happens to someone or something. Here, it means what became of each town.",
+    "audio": true
+  },
+  {
+    "k": "hokkaido",
+    "t": "Hokkaido",
+    "kind": "name",
+    "forms": [
+      "Hokkaido"
+    ],
+    "text": "Hokkaido is the northernmost of Japan's four main islands, known for cold, snowy winters.",
+    "audio": true
+  },
+  {
+    "k": "nanporo",
+    "t": "Nanporo",
+    "kind": "name",
+    "forms": [
+      "Nanporo"
+    ],
+    "text": "Nanporo is a small town in Hokkaido whose population is growing again.",
+    "audio": true
+  },
+  {
+    "k": "yubari",
+    "t": "Yubari",
+    "kind": "name",
+    "forms": [
+      "Yubari"
+    ],
+    "text": "Yubari is a town in Hokkaido that used to mine coal and has lost most of its people.",
+    "audio": true
+  },
+  {
+    "k": "sapporo",
+    "t": "Sapporo",
+    "kind": "name",
+    "forms": [
+      "Sapporo"
+    ],
+    "text": "Sapporo is the biggest city on Hokkaido and its regional capital.",
+    "audio": true
+  },
+  {
+    "k": "commuter-town",
+    "t": "commuter town",
+    "kind": "phrase",
+    "forms": [
+      "commuter town"
+    ],
+    "text": "A commuter town is a place where many people live but travel to a bigger nearby city for work.",
+    "audio": true
+  },
+  {
+    "k": "native-population",
+    "t": "native population",
+    "kind": "phrase",
+    "forms": [
+      "native population"
+    ],
+    "text": "The native population means people who were born in a place, not those who moved in from somewhere else.",
+    "audio": true
+  },
+  {
+    "k": "coal-mining",
+    "t": "coal-mining",
+    "kind": "word",
+    "forms": [
+      "coal-mining"
+    ],
+    "text": "Coal mining is digging coal out of the ground, which people burn for energy.",
+    "audio": true
+  },
+  {
+    "k": "hub",
+    "t": "hub",
+    "kind": "word",
+    "forms": [
+      "hub"
+    ],
+    "text": "A hub is a central place where a lot of activity or travel meets. Here, the old mining center.",
+    "audio": true
+  },
+  {
+    "k": "bankrupt",
+    "t": "bankrupt",
+    "kind": "word",
+    "forms": [
+      "bankrupt"
+    ],
+    "text": "Bankrupt means a person, company, or town has run out of money and cannot pay what it owes.",
+    "audio": true
+  },
+  {
+    "k": "peak",
+    "t": "peak",
+    "kind": "word",
+    "forms": [
+      "peak"
+    ],
+    "text": "A peak is the highest point. Here, it is the time when the town had the most people.",
+    "audio": true
+  },
+  {
+    "k": "contrasting",
+    "t": "contrasting",
+    "kind": "word",
+    "forms": [
+      "contrasting"
+    ],
+    "text": "Contrasting means very different from each other when compared.",
+    "audio": true
+  },
+  {
+    "k": "trajectories",
+    "t": "trajectories",
+    "kind": "word",
+    "forms": [
+      "trajectories"
+    ],
+    "text": "A trajectory is the path something follows over time. Here, how each town's story is heading.",
+    "audio": true
+  },
+  {
+    "k": "demographic",
+    "t": "demographic",
+    "kind": "word",
+    "forms": [
+      "demographic"
+    ],
+    "text": "Demographic means about the makeup of a population, such as how many people there are and how old they are.",
+    "audio": true
+  },
+  {
+    "k": "shrinkage",
+    "t": "shrinkage",
+    "kind": "word",
+    "forms": [
+      "shrinkage"
+    ],
+    "text": "Shrinkage means getting smaller. Here, fewer and fewer people living in a place.",
+    "audio": true
+  },
+  {
+    "k": "ticked-back-up",
+    "t": "ticked back up",
+    "kind": "phrase",
+    "forms": [
+      "ticked back up"
+    ],
+    "text": "To tick up means to rise by a small amount. Here, the population went up a little again.",
+    "audio": true
+  },
+  {
+    "k": "municipalities",
+    "t": "municipalities",
+    "kind": "word",
+    "forms": [
+      "municipalities"
+    ],
+    "text": "A municipality is a town or city with its own local government.",
+    "audio": true
+  },
+  {
+    "k": "immigration",
+    "t": "immigration",
+    "kind": "word",
+    "forms": [
+      "immigration"
+    ],
+    "text": "Immigration means people moving into a country from another country to live.",
+    "audio": true
+  },
+  {
+    "k": "substantial",
+    "t": "substantial",
+    "kind": "word",
+    "forms": [
+      "substantial"
+    ],
+    "text": "Substantial means large enough to matter.",
+    "audio": true
+  },
+  {
+    "k": "gaggle",
+    "t": "gaggle",
+    "kind": "word",
+    "forms": [
+      "gaggle"
+    ],
+    "text": "A gaggle is a loud, loose group, like geese. Here, a bunch of children.",
+    "audio": true
+  },
+  {
+    "k": "clambering",
+    "t": "clambering",
+    "kind": "word",
+    "forms": [
+      "clambering"
+    ],
+    "text": "Clambering means climbing in a clumsy, eager way using hands and feet.",
+    "audio": true
+  },
+  {
+    "k": "vaulted-ceiling",
+    "t": "vaulted ceiling",
+    "kind": "phrase",
+    "forms": [
+      "vaulted ceiling"
+    ],
+    "text": "A vaulted ceiling is a high, arched ceiling that makes a room feel tall and open.",
+    "audio": true
+  },
+  {
+    "k": "adjoining",
+    "t": "adjoining",
+    "kind": "word",
+    "forms": [
+      "adjoining"
+    ],
+    "text": "Adjoining means right next to and connected with.",
+    "audio": true
+  },
+  {
+    "k": "peruse",
+    "t": "peruse",
+    "kind": "word",
+    "forms": [
+      "peruse"
+    ],
+    "text": "To peruse is to look through something, such as books, slowly and with interest.",
+    "audio": true
+  },
+  {
+    "k": "structural-advantages",
+    "t": "structural advantages",
+    "kind": "phrase",
+    "forms": [
+      "structural advantages"
+    ],
+    "text": "Structural advantages are built-in strengths, like a good location, that do not depend on one plan.",
+    "audio": true
+  },
+  {
+    "k": "initiatives",
+    "t": "initiatives",
+    "kind": "word",
+    "forms": [
+      "initiatives"
+    ],
+    "text": "An initiative is a new plan or program started to solve a problem.",
+    "audio": true
+  },
+  {
+    "k": "capaciousness",
+    "t": "capaciousness",
+    "kind": "word",
+    "forms": [
+      "capaciousness"
+    ],
+    "text": "Capaciousness means having lots of room. Here, the wide open space of the countryside.",
+    "audio": true
+  },
+  {
+    "k": "orbit",
+    "t": "orbit",
+    "kind": "word",
+    "forms": [
+      "orbit"
+    ],
+    "text": "An orbit is a path around something. Here, it means being close enough to be pulled into the big city's economy.",
+    "audio": true
+  },
+  {
+    "k": "incentives",
+    "t": "incentives",
+    "kind": "word",
+    "forms": [
+      "incentives"
+    ],
+    "text": "An incentive is a reward that encourages people to do something, such as move to a town.",
+    "audio": true
+  },
+  {
+    "k": "sustained",
+    "t": "sustained",
+    "kind": "word",
+    "forms": [
+      "sustained"
+    ],
+    "text": "Sustained means kept up for a long time without stopping.",
+    "audio": true
+  },
+  {
+    "k": "prefectural",
+    "t": "prefectural",
+    "kind": "word",
+    "forms": [
+      "prefectural"
+    ],
+    "text": "Prefectural means belonging to a prefecture, a large region of Japan like a state.",
+    "audio": true
+  },
+  {
+    "k": "land-bank",
+    "t": "land bank",
+    "kind": "phrase",
+    "forms": [
+      "land bank"
+    ],
+    "text": "A land bank is a collection of unused land held by the government so it can be sold or used later.",
+    "audio": true
+  },
+  {
+    "k": "plots",
+    "t": "plots",
+    "kind": "word",
+    "forms": [
+      "plots"
+    ],
+    "text": "A plot is a small piece of land, often meant for building a house.",
+    "audio": true
+  },
+  {
+    "k": "at-a-steep-discount",
+    "t": "at a steep discount",
+    "kind": "phrase",
+    "forms": [
+      "steep discount"
+    ],
+    "text": "A steep discount means a price lowered by a lot.",
+    "audio": true
+  },
+  {
+    "k": "anxiety",
+    "t": "anxiety",
+    "kind": "word",
+    "forms": [
+      "anxiety"
+    ],
+    "text": "Anxiety is a worried, nervous feeling. Here, many people in Japan were worried about high rice prices.",
+    "audio": true
+  },
+  {
+    "k": "ground-floor",
+    "t": "ground floor",
+    "kind": "phrase",
+    "forms": [
+      "ground floor"
+    ],
+    "text": "The ground floor is the floor at street level.",
+    "audio": true
+  },
+  {
+    "k": "brisk",
+    "t": "brisk",
+    "kind": "word",
+    "forms": [
+      "brisk"
+    ],
+    "text": "Brisk means quick and lively. Brisk business means many customers.",
+    "audio": true
+  },
+  {
+    "k": "baby-boom",
+    "t": "baby boom",
+    "kind": "phrase",
+    "forms": [
+      "baby boom"
+    ],
+    "text": "A baby boom is a time when many more babies than usual are born.",
+    "audio": true
+  },
+  {
+    "k": "competitive-dynamic",
+    "t": "competitive dynamic",
+    "kind": "phrase",
+    "forms": [
+      "competitive dynamic"
+    ],
+    "text": "A competitive dynamic means places are in a contest for the same people, so one wins when another loses.",
+    "audio": true
+  },
+  {
+    "k": "relic",
+    "t": "relic",
+    "kind": "word",
+    "forms": [
+      "relic"
+    ],
+    "text": "A relic is something left over from an earlier time.",
+    "audio": true
+  },
+  {
+    "k": "restructuring",
+    "t": "restructuring",
+    "kind": "word",
+    "forms": [
+      "restructuring"
+    ],
+    "text": "Restructuring means changing how something is organized, often to save money.",
+    "audio": true
+  },
+  {
+    "k": "halted",
+    "t": "halted",
+    "kind": "word",
+    "forms": [
+      "halted"
+    ],
+    "text": "Halted means stopped.",
+    "audio": true
+  },
+  {
+    "k": "laments",
+    "t": "laments",
+    "kind": "word",
+    "forms": [
+      "laments"
+    ],
+    "text": "To lament is to say you are sad or sorry about something.",
+    "audio": true
+  },
+  {
+    "k": "entrepreneur",
+    "t": "entrepreneur",
+    "kind": "word",
+    "forms": [
+      "entrepreneur"
+    ],
+    "text": "An entrepreneur is a person who starts a business.",
+    "audio": true
+  },
+  {
+    "k": "outflow",
+    "t": "outflow",
+    "kind": "word",
+    "forms": [
+      "outflow"
+    ],
+    "text": "An outflow is people or things moving out. Here, young people leaving.",
+    "audio": true
+  },
+  {
+    "k": "prospect",
+    "t": "prospect",
+    "kind": "word",
+    "forms": [
+      "prospect"
+    ],
+    "text": "A prospect is a chance that something will happen.",
+    "audio": true
+  },
+  {
+    "k": "revitalisation",
+    "t": "revitalisation",
+    "kind": "word",
+    "forms": [
+      "revitalisation"
+    ],
+    "text": "Revitalisation means bringing new life and energy back to a place.",
+    "audio": true
+  },
+  {
+    "k": "compact",
+    "t": "compact",
+    "kind": "word",
+    "forms": [
+      "compact"
+    ],
+    "text": "Compact means packed closely into a small space. Here, a town where people live closer together.",
+    "audio": true
+  },
+  {
+    "k": "inevitable",
+    "t": "inevitable",
+    "kind": "word",
+    "forms": [
+      "inevitable"
+    ],
+    "text": "Inevitable means certain to happen and impossible to avoid.",
+    "audio": true
+  },
+  {
+    "k": "decline",
+    "t": "decline",
+    "kind": "word",
+    "forms": [
+      "decline"
+    ],
+    "text": "A decline is a slow fall, such as fewer people over time.",
+    "audio": true
+  }
+]
