@@ -1,0 +1,575 @@
+[
+  {
+    "k": "vaunt",
+    "t": "vaunt",
+    "kind": "vocab",
+    "pron": "VAWNT",
+    "forms": [
+      "vaunt"
+    ],
+    "text": "To vaunt something is to show it off or brag about it. The Economist is being sarcastic: burning your capital is a strange way to advertise your economic model.",
+    "audio": true
+  },
+  {
+    "k": "dirigiste",
+    "t": "dirigiste",
+    "kind": "vocab",
+    "pron": "deer-ih-ZHEEST",
+    "forms": [
+      "dirigiste"
+    ],
+    "text": "A dirigiste approach is one where the government steers the economy from the top, picking industries to back instead of leaving it to markets. It is a French word, from diriger, to direct.",
+    "audio": true
+  },
+  {
+    "k": "orthodoxy",
+    "t": "orthodoxy",
+    "kind": "vocab",
+    "pron": "OR-thuh-dok-see",
+    "forms": [
+      "orthodoxy"
+    ],
+    "text": "An orthodoxy is the set of beliefs most people in a group accept as correct and rarely question. Distrust of free markets has become that standard view in Brussels.",
+    "audio": true
+  },
+  {
+    "k": "setting-fire-to-your-capital",
+    "t": "setting fire to your capital",
+    "kind": "phrase",
+    "forms": [
+      "setting fire to your capital"
+    ],
+    "text": "A literal image of the violent protests in Paris, used sarcastically: it is hardly a good advertisement for the French way of running things.",
+    "audio": true
+  },
+  {
+    "k": "perennial",
+    "t": "perennial",
+    "kind": "word",
+    "forms": [
+      "perennial"
+    ],
+    "text": "Perennial means lasting a very long time or returning again and again, like plants that come back each spring. Here the French seem to be in a permanent bad mood.",
+    "audio": true
+  },
+  {
+    "k": "huff",
+    "t": "huff",
+    "kind": "word",
+    "forms": [
+      "huff"
+    ],
+    "text": "A huff is a short fit of annoyance or sulking. To walk about in a perennial huff is to be constantly irritated.",
+    "audio": true
+  },
+  {
+    "k": "manifestations",
+    "t": "manifestations",
+    "kind": "word",
+    "forms": [
+      "manifestations"
+    ],
+    "text": "Here manifestations means demonstrations, from the French word manifestation. In English it can also mean a visible sign of something.",
+    "audio": true
+  },
+  {
+    "k": "rabble-rouser",
+    "t": "rabble-rouser",
+    "kind": "word",
+    "forms": [
+      "rabble-rouser"
+    ],
+    "text": "A rabble-rouser is a speaker who stirs up crowds by playing on their anger. The word is usually an insult.",
+    "audio": true
+  },
+  {
+    "k": "populist",
+    "t": "populist",
+    "kind": "word",
+    "forms": [
+      "populist"
+    ],
+    "text": "A populist is a politician who claims to speak for ordinary people against elites. The label says nothing about left or right.",
+    "audio": true
+  },
+  {
+    "k": "bond-vigilantes",
+    "t": "bond vigilantes",
+    "kind": "phrase",
+    "forms": [
+      "Bond vigilantes"
+    ],
+    "text": "Bond vigilantes are investors who punish a government they think is borrowing too much by selling its bonds, which pushes up the interest rate it must pay. They act like unofficial police of government budgets.",
+    "audio": true
+  },
+  {
+    "k": "yields",
+    "t": "yields",
+    "kind": "word",
+    "forms": [
+      "yields"
+    ],
+    "text": "A bond's yield is the return an investor earns, effectively the interest rate the government pays. When lenders worry, they demand higher yields.",
+    "audio": true
+  },
+  {
+    "k": "giving-a-bloody-nose",
+    "t": "giving a bloody nose",
+    "kind": "phrase",
+    "forms": [
+      "giving a bloody nose"
+    ],
+    "text": "To give someone a bloody nose is to deal them a painful setback. Here, nervous bond investors are hurting the French government's finances.",
+    "audio": true
+  },
+  {
+    "k": "over-indebted",
+    "t": "over-indebted",
+    "kind": "word",
+    "forms": [
+      "over-indebted"
+    ],
+    "text": "Over-indebted means owing more than is comfortable or sustainable, so that paying the loans back becomes a worry.",
+    "audio": true
+  },
+  {
+    "k": "runaway",
+    "t": "runaway",
+    "kind": "word",
+    "forms": [
+      "runaway"
+    ],
+    "text": "Runaway describes something growing out of control, like a runaway train. Runaway budgets keep spending far more than the government takes in.",
+    "audio": true
+  },
+  {
+    "k": "bloated",
+    "t": "bloated",
+    "kind": "word",
+    "forms": [
+      "bloated"
+    ],
+    "text": "Bloated means swollen and too big. A bloated state has grown larger than it can use well.",
+    "audio": true
+  },
+  {
+    "k": "overmatched",
+    "t": "overmatched",
+    "kind": "word",
+    "forms": [
+      "overmatched"
+    ],
+    "text": "Overmatched means facing a challenge too big for your strength. The picture is of a state that is both huge and unable to cope.",
+    "audio": true
+  },
+  {
+    "k": "on-the-skids",
+    "t": "on the skids",
+    "kind": "phrase",
+    "forms": [
+      "on the skids"
+    ],
+    "text": "To be on the skids is to be heading downhill fast, toward failure.",
+    "audio": true
+  },
+  {
+    "k": "moi",
+    "t": "Moi",
+    "kind": "phrase",
+    "forms": [
+      "Moi! Moi! Moi!"
+    ],
+    "text": "Moi is French for me. The joke is that the other EU countries are all shouting \"Me! Pick me!\" to copy French ideas.",
+    "audio": true
+  },
+  {
+    "k": "refrain",
+    "t": "refrain",
+    "kind": "word",
+    "forms": [
+      "refrain"
+    ],
+    "text": "A refrain is a line repeated over and over, like a chorus in a song. Here it means a phrase everyone keeps saying.",
+    "audio": true
+  },
+  {
+    "k": "reeks",
+    "t": "reeks",
+    "kind": "phrase",
+    "forms": [
+      "reeks of tear gas"
+    ],
+    "text": "To reek is to smell strongly and unpleasantly. Police use tear gas on rioters, so Paris literally stinks of it during protests.",
+    "audio": true
+  },
+  {
+    "k": "ascendant",
+    "t": "ascendant",
+    "kind": "word",
+    "forms": [
+      "ascendant"
+    ],
+    "text": "Ascendant means rising in power or influence. French ideas are gaining ground in Brussels.",
+    "audio": true
+  },
+  {
+    "k": "blueprint",
+    "t": "blueprint",
+    "kind": "word",
+    "forms": [
+      "blueprint"
+    ],
+    "text": "A blueprint is a detailed plan for building something. A country treated as a blueprint is one that others copy.",
+    "audio": true
+  },
+  {
+    "k": "cautionary-tale",
+    "t": "cautionary tale",
+    "kind": "phrase",
+    "forms": [
+      "cautionary tale"
+    ],
+    "text": "A cautionary tale is a story that warns you what not to do, by showing the bad results of someone's behaviour.",
+    "audio": true
+  },
+  {
+    "k": "meddling",
+    "t": "meddling",
+    "kind": "word",
+    "forms": [
+      "meddling"
+    ],
+    "text": "Meddling means interfering in something that is not your business, or that you should leave alone.",
+    "audio": true
+  },
+  {
+    "k": "doling-out",
+    "t": "doling out",
+    "kind": "phrase",
+    "forms": [
+      "doling out"
+    ],
+    "text": "To dole out is to hand out something in portions, often money or supplies.",
+    "audio": true
+  },
+  {
+    "k": "national-champions",
+    "t": "national champions",
+    "kind": "phrase",
+    "forms": [
+      "national champions"
+    ],
+    "text": "National champions are companies a government backs, with money or protection, to help them beat foreign rivals.",
+    "audio": true
+  },
+  {
+    "k": "fumed",
+    "t": "fumed",
+    "kind": "word",
+    "forms": [
+      "fumed"
+    ],
+    "text": "To fume is to be furious, often silently, like smoke rising. French policymakers were angry at limits on what the state could do.",
+    "audio": true
+  },
+  {
+    "k": "hemming-in",
+    "t": "hemming-in",
+    "kind": "word",
+    "forms": [
+      "hemming-in"
+    ],
+    "text": "To hem in is to surround and restrict, as sewing a hem edges a cloth. It means limiting what the state may do.",
+    "audio": true
+  },
+  {
+    "k": "strategic-autonomy",
+    "t": "strategic autonomy",
+    "kind": "phrase",
+    "forms": [
+      "strategic autonomy"
+    ],
+    "text": "Strategic autonomy is a bloc's ability to act in its own interest without relying on a stronger power. Mr Macron has pushed the idea for years.",
+    "audio": true
+  },
+  {
+    "k": "macron",
+    "t": "Macron",
+    "kind": "name",
+    "forms": [
+      "Macron"
+    ],
+    "text": "Emmanuel Macron has been France's president since 2017. He is described as unloved at home but influential in Europe.",
+    "audio": true
+  },
+  {
+    "k": "gallic",
+    "t": "Gallic",
+    "kind": "word",
+    "forms": [
+      "Gallic"
+    ],
+    "text": "Gallic means French, from Gaul, the Roman name for the land that became France. The title's pun, \"The Gaul of it all\", plays on the phrase \"the gall of it all\".",
+    "audio": true
+  },
+  {
+    "k": "eccentricity",
+    "t": "eccentricity",
+    "kind": "word",
+    "forms": [
+      "eccentricity"
+    ],
+    "text": "Eccentricity means unusual or odd behaviour. Other EU members used to see French ideas as quirks.",
+    "audio": true
+  },
+  {
+    "k": "penchant",
+    "t": "penchant",
+    "kind": "word",
+    "forms": [
+      "penchant"
+    ],
+    "text": "A penchant is a strong liking or habit for something.",
+    "audio": true
+  },
+  {
+    "k": "unfettered",
+    "t": "unfettered",
+    "kind": "phrase",
+    "forms": [
+      "unfettered"
+    ],
+    "text": "Unfettered means free of restraints; a fetter is a chain on the feet. Unfettered markets have little government control.",
+    "audio": true
+  },
+  {
+    "k": "showered-onto",
+    "t": "showered onto",
+    "kind": "phrase",
+    "forms": [
+      "showered onto"
+    ],
+    "text": "To shower money onto someone is to give it in great quantity, as if raining it down.",
+    "audio": true
+  },
+  {
+    "k": "taboo",
+    "t": "taboo",
+    "kind": "word",
+    "forms": [
+      "taboo"
+    ],
+    "text": "A taboo is something society forbids or avoids talking about. Industrial policy used to be one in the EU.",
+    "audio": true
+  },
+  {
+    "k": "industrial-policy",
+    "t": "industrial policy",
+    "kind": "phrase",
+    "forms": [
+      "Industrial policy"
+    ],
+    "text": "Industrial policy is a government's deliberate effort to build up chosen industries, for example with subsidies.",
+    "audio": true
+  },
+  {
+    "k": "naive",
+    "t": "naive",
+    "kind": "word",
+    "forms": [
+      "naive"
+    ],
+    "text": "Naive means too trusting and inexperienced about how the world works. The French view is that Europe played by rules others ignored.",
+    "audio": true
+  },
+  {
+    "k": "brazenly",
+    "t": "brazenly",
+    "kind": "word",
+    "forms": [
+      "brazenly"
+    ],
+    "text": "Brazenly means boldly and without shame.",
+    "audio": true
+  },
+  {
+    "k": "recouping",
+    "t": "recouping",
+    "kind": "word",
+    "forms": [
+      "recouping"
+    ],
+    "text": "To recoup is to get back something lost. Europe wants to win back some economic independence.",
+    "audio": true
+  },
+  {
+    "k": "sovereignty",
+    "t": "sovereignty",
+    "kind": "word",
+    "forms": [
+      "sovereignty"
+    ],
+    "text": "Sovereignty is a country's right to govern itself and make its own decisions without outside control.",
+    "audio": true
+  },
+  {
+    "k": "off-the-rails",
+    "t": "off the rails",
+    "kind": "phrase",
+    "forms": [
+      "off the rails"
+    ],
+    "text": "To go off the rails is to stop behaving normally or sensibly, like a train leaving its tracks.",
+    "audio": true
+  },
+  {
+    "k": "paranoia",
+    "t": "paranoia",
+    "kind": "word",
+    "forms": [
+      "paranoia"
+    ],
+    "text": "Paranoia is a fear that others are out to get you, often without good reason. Here it was how French warnings once looked.",
+    "audio": true
+  },
+  {
+    "k": "sniggered",
+    "t": "sniggered",
+    "kind": "word",
+    "forms": [
+      "sniggered"
+    ],
+    "text": "To snigger is to laugh in a quiet, mocking way.",
+    "audio": true
+  },
+  {
+    "k": "raison-detre",
+    "t": "raison d’être",
+    "kind": "phrase",
+    "forms": [
+      "raison d’être"
+    ],
+    "text": "Raison d'être is French for reason for being, the main purpose that explains why something exists.",
+    "audio": true
+  },
+  {
+    "k": "supply-chains",
+    "t": "supply chains",
+    "kind": "phrase",
+    "forms": [
+      "globe-spanning supply chains"
+    ],
+    "text": "A supply chain is the series of firms that make and ship a product. Globe-spanning ones stretch across many countries, so a shock in one place can stop everything.",
+    "audio": true
+  },
+  {
+    "k": "evangelists",
+    "t": "evangelists",
+    "kind": "word",
+    "forms": [
+      "evangelists"
+    ],
+    "text": "An evangelist spreads a belief with religious enthusiasm. Free-trade evangelists preached open trade everywhere.",
+    "audio": true
+  },
+  {
+    "k": "dependencies",
+    "t": "dependencies",
+    "kind": "phrase",
+    "forms": [
+      "dependencies"
+    ],
+    "text": "A dependency here means relying on another country for something vital, such as natural gas from Russia.",
+    "audio": true
+  },
+  {
+    "k": "niche-raw-materials",
+    "t": "niche raw materials",
+    "kind": "phrase",
+    "forms": [
+      "niche raw materials"
+    ],
+    "text": "Niche raw materials are minerals needed in small amounts but vital for particular products, and often controlled by a few countries such as China.",
+    "audio": true
+  },
+  {
+    "k": "guarantor",
+    "t": "guarantor",
+    "kind": "phrase",
+    "forms": [
+      "guarantor"
+    ],
+    "text": "A guarantor promises to make good on a commitment. America has guaranteed European security through NATO, and some doubt it always will.",
+    "audio": true
+  },
+  {
+    "k": "brexit",
+    "t": "Brexit",
+    "kind": "name",
+    "forms": [
+      "Brexit"
+    ],
+    "text": "Brexit is Britain's exit from the EU, completed in 2020. Britain had often sided with free-market views.",
+    "audio": true
+  },
+  {
+    "k": "stephane-sejourne",
+    "t": "Stéphane Séjourné",
+    "kind": "name",
+    "forms": [
+      "Stéphane Séjourné"
+    ],
+    "text": "Stéphane Séjourné is a French politician close to Mr Macron who serves as the EU's industry commissioner.",
+    "audio": true
+  },
+  {
+    "k": "protectionism",
+    "t": "protectionism",
+    "kind": "word",
+    "forms": [
+      "protectionism"
+    ],
+    "text": "Protectionism means shielding home industries from foreign competition, using tariffs, subsidies or buy-local rules.",
+    "audio": true
+  },
+  {
+    "k": "colbertist",
+    "t": "Colbertist",
+    "kind": "word",
+    "forms": [
+      "Colbertist"
+    ],
+    "text": "Colbertism is state-led economics, named for Jean-Baptiste Colbert, finance minister to Louis XIV in the 1600s, who used government power to build French industry.",
+    "audio": true
+  },
+  {
+    "k": "marine-le-pen",
+    "t": "Marine Le Pen",
+    "kind": "name",
+    "forms": [
+      "Marine Le Pen"
+    ],
+    "text": "Marine Le Pen is a French nationalist politician who leads the far-right National Rally party.",
+    "audio": true
+  },
+  {
+    "k": "hobbling",
+    "t": "hobbling",
+    "kind": "word",
+    "forms": [
+      "hobbling"
+    ],
+    "text": "To hobble is to walk with difficulty, or to hinder. Here it means weakening Europe.",
+    "audio": true
+  },
+  {
+    "k": "indiscriminately",
+    "t": "indiscriminately",
+    "kind": "word",
+    "forms": [
+      "indiscriminately"
+    ],
+    "text": "Indiscriminately means without careful choice, doing something to everyone or everything.",
+    "audio": true
+  }
+]

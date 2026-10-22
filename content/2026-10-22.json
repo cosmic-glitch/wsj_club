@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-22",
+  "title": "How France became ungovernable at home yet unstoppable in Brussels",
+  "articleUrl": "https://www.economist.com/europe/2026/10/21/how-france-became-ungovernable-at-home-yet-unstoppable-in-brussels",
+  "articlePageUrl": "/articles/2026-10-22.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "vaunt",
+      "partOfSpeech": "verb",
+      "pronunciation": "VAWNT",
+      "articleQuote": "There are better ways to vaunt the merits of your economic model than setting fire to your capital.",
+      "meaning": "To vaunt something is to show it off or brag about it, usually loudly and with a lot of pride. It is a more old-fashioned, newspaper-style cousin of \"boast\", and you often see it in the phrase \"much-vaunted\", meaning praised again and again. Here the Economist is being sarcastic: French protesters who burn things in Paris are hardly advertising their country's way of running its economy.",
+      "examples": [
+        "The school liked to vaunt its championship team on every poster in the hallway.",
+        "Instead of vaunting his new bike, he quietly let his friends discover how fast it was."
+      ]
+    },
+    {
+      "word": "dirigiste",
+      "partOfSpeech": "adjective",
+      "pronunciation": "deer-ih-ZHEEST",
+      "articleQuote": "the EU's institutions have long had a liberal bent that blunted France's big-state, dirigiste preferences.",
+      "meaning": "A dirigiste approach to the economy is one where the government steers and directs things from the top, choosing which industries to back and telling companies what to do, rather than leaving it to markets. The word is French, from diriger, \"to direct\". In this article it describes France's long habit of wanting the state to run big parts of the economy, which clashed for decades with the EU's free-market rules.",
+      "examples": [
+        "The mayor's dirigiste style meant every shop had to get approval before changing its sign.",
+        "A dirigiste government might build a national railway itself instead of waiting for private firms to do it."
+      ]
+    },
+    {
+      "word": "orthodoxy",
+      "partOfSpeech": "noun",
+      "pronunciation": "OR-thuh-dok-see",
+      "articleQuote": "These days French-infused scepticism of globalisation and unfettered markets is close to being orthodoxy.",
+      "meaning": "An orthodoxy is the set of beliefs that most people in a group accept as correct, so widely held that they are rarely questioned. Challenging the orthodoxy takes some nerve. The article's point is that an idea once treated as a French eccentricity, distrust of free markets and free trade, has become the standard view in Brussels.",
+      "examples": [
+        "In the old orthodoxy, scientists believed the continents never moved.",
+        "Our club's orthodoxy is that nobody touches the last slice of pizza until everyone has had one."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Industrial policy and national champions",
+      "articleQuote": "Those EU rules preventing public money from being showered onto national champions are all but forgotten",
+      "meaning": "Economics and government. Industrial policy means a government deliberately helping chosen industries or companies grow, instead of letting the market alone decide who wins. Think of a school that quietly gives the soccer team the best field, new uniforms and extra practice time, while every other club shares what is left. The helped firm is often called a national champion, a company the state hopes will beat foreign rivals.\n\nThe tools are simple: handing out subsidies (public money), giving government orders to local firms, or taxing foreign competitors. Supporters say it is how countries build vital industries such as chips, batteries or steel, and how they avoid depending on rivals. Critics say governments are bad at picking winners, and that subsidies waste taxpayers' money and shield firms from the competition that makes them improve.\n\nThe EU was built to limit exactly this. Its single market has rules against member governments showering favoured firms with cash, because one country's subsidies would let it undercut its neighbours. The article's surprise is that, after pressure from France, \"industrial policy\" has gone from taboo to mainstream, with plans to reserve public spending for firms that are \"Made in Europe\".\n\nNext time you read about a government subsidy, ask two questions: who is helped, and who pays?"
+    },
+    {
+      "name": "Strategic autonomy and economic dependence",
+      "articleQuote": "Europe losing its “strategic autonomy”—broadly, the ability for the continent to act independently",
+      "meaning": "International relations and economics. Strategic autonomy is a country's or bloc's ability to act on its own interests without needing permission from, or being pressured by, a stronger power. The everyday version: if you rely on one friend for rides to every practice, that friend has some say over your life, and you are in trouble if they stop answering texts.\n\nTrade creates this kind of reliance. Buying from the cheapest supplier is efficient, but it can leave you with a single point of failure. The article gives two cases. Russia's invasion of Ukraine showed that Europe's imported natural gas was a weakness, because Moscow could cut it off. And China has used its hold on niche raw materials, the minerals needed to make magnets and electronics, as leverage over others.\n\nThe trade-off is real. Making things at home or from friendly countries gives security, but usually costs more and gives up some benefits of free trade. The article ends on a twist: a country with out-of-control finances, like France, has \"precious little autonomy\" either, since lenders then have power over it.\n\nWhenever a country worries about \"dependence\", ask what exactly it is depending on, and who could switch it off."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the \"paradox of Parisian power\" that the article describes?",
+      "options": [
+        "France's government is struggling at home, yet French economic ideas are winning in the EU",
+        "France has the strongest economy in Europe but little influence in Brussels",
+        "France wants to leave the EU, but other members refuse to let it go",
+        "French protests have forced Brussels to move the EU's offices to Paris"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says French politicians are losing the ability to govern at home even as they tighten their ideological grip on Europe."
+    },
+    {
+      "question": "Why did the EU's rules long keep France's preferences in check?",
+      "options": [
+        "They banned governments from holding any shares in companies",
+        "They stopped governments from handing money to favoured firms and let companies face competition",
+        "They required every country to copy France's farming policy",
+        "They gave Germany the final say on all French laws"
+      ],
+      "answerIndex": 1,
+      "explanation": "The club's rules prevented governments from meddling in industry by giving money to favoured firms, and let domestic firms face competition."
+    },
+    {
+      "question": "Which event does the article NOT cite as making French warnings look like foresight?",
+      "options": [
+        "Covid-19 disrupting global supply chains",
+        "Russia's invasion of Ukraine and the gas dependence it exposed",
+        "Doubts that America would always guarantee European security",
+        "A collapse of the euro currency"
+      ],
+      "answerIndex": 3,
+      "explanation": "The article cites Covid-19, Russia's 2022 invasion and doubts about America as security guarantor, but never a euro collapse."
+    },
+    {
+      "question": "How have Brexit and Germany helped France's cause in the EU?",
+      "options": [
+        "Britain's exit removed a power that resisted French thinking, and Germany shifted toward interventionism as Chinese carmakers competed with its own",
+        "Britain's exit gave France extra votes, and Germany agreed to pay France's debts",
+        "Both made France richer, which let it lobby harder",
+        "Germany left the EU, and Britain rejoined it"
+      ],
+      "answerIndex": 0,
+      "explanation": "Brexit deprived the EU of a country that resisted Gallic-infused thinking, and Germany pivoted as Chinese firms challenged its carmakers."
+    },
+    {
+      "question": "What is the article's overall verdict on adopting French ideas?",
+      "options": [
+        "France is entirely wrong about the world, and Europe should ignore it",
+        "France's diagnosis, that Europe needs more autonomy, is right, but its treatment was a mess, so Europe should intervene strategically rather than spend indiscriminately",
+        "France's policies work perfectly and every country should copy them",
+        "The article makes no judgment either way"
+      ],
+      "answerIndex": 1,
+      "explanation": "It concludes France got the diagnosis right but made a mess of the treatment, and distinguishes strategic intervention from indiscriminate spending."
+    }
+  ]
+}
