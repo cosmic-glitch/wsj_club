@@ -1,0 +1,415 @@
+[
+  {
+    "k": "convened",
+    "t": "convened",
+    "kind": "vocab",
+    "pron": "kun-VEENd",
+    "forms": [
+      "convened"
+    ],
+    "text": "Convened means came together for a meeting. Here, the world's top measurement experts met in France.",
+    "audio": true
+  },
+  {
+    "k": "fluctuations",
+    "t": "fluctuations",
+    "kind": "vocab",
+    "pron": "fluk-choo-AY-shunz",
+    "forms": [
+      "fluctuations"
+    ],
+    "text": "Fluctuations are small changes up and down. Here, each clock wobbles a tiny bit, so many clocks are combined.",
+    "audio": true
+  },
+  {
+    "k": "consensus",
+    "t": "consensus",
+    "kind": "vocab",
+    "pron": "kun-SEN-sus",
+    "forms": [
+      "consensus"
+    ],
+    "text": "A consensus is an agreement that everyone in a group reaches. Here, the experts must all agree on a new definition.",
+    "audio": true
+  },
+  {
+    "k": "atomic-clocks",
+    "t": "atomic clock",
+    "kind": "word",
+    "forms": [
+      "atomic clocks"
+    ],
+    "text": "An atomic clock keeps time by counting the steady jumps of atoms. It is far more exact than a wall clock.",
+    "audio": true
+  },
+  {
+    "k": "caesium",
+    "t": "caesium",
+    "kind": "word",
+    "forms": [
+      "caesium",
+      "caesium-133"
+    ],
+    "text": "Caesium is a soft, silvery metal. Its atoms jump between two energy states at a very steady speed, so they are used to define the second.",
+    "audio": true
+  },
+  {
+    "k": "isotope",
+    "t": "isotope",
+    "kind": "word",
+    "forms": [
+      "isotope"
+    ],
+    "text": "An isotope is one version of an element. Atoms of the same element can have slightly different weights.",
+    "audio": true
+  },
+  {
+    "k": "energy-states",
+    "t": "energy states",
+    "kind": "word",
+    "forms": [
+      "energy states",
+      "energy"
+    ],
+    "text": "An atom can hold more or less energy, like a ball on a low or high step. These levels are its energy states.",
+    "audio": true
+  },
+  {
+    "k": "microwave-radiation",
+    "t": "microwave radiation",
+    "kind": "word",
+    "forms": [
+      "microwave radiation",
+      "microwave"
+    ],
+    "text": "Microwave radiation is a kind of invisible wave, the same kind that heats food in a microwave oven.",
+    "audio": true
+  },
+  {
+    "k": "cycles",
+    "t": "cycles",
+    "kind": "word",
+    "forms": [
+      "cycles"
+    ],
+    "text": "A cycle is one full repeat of something. Here, it is one full jump back and forth of the atom.",
+    "audio": true
+  },
+  {
+    "k": "metrologists",
+    "t": "metrologists",
+    "kind": "word",
+    "forms": [
+      "metrologists"
+    ],
+    "text": "Metrologists are scientists who study measurement and make sure units like the second are exact.",
+    "audio": true
+  },
+  {
+    "k": "versailles",
+    "t": "Versailles",
+    "kind": "name",
+    "forms": [
+      "Versailles"
+    ],
+    "text": "Versailles is a city near Paris, France, famous for its giant royal palace.",
+    "audio": true
+  },
+  {
+    "k": "general-conference-on-weights-and-measures",
+    "t": "General Conference on Weights and Measures",
+    "kind": "name",
+    "forms": [
+      "General Conference on Weights and Measures",
+      "CGPM"
+    ],
+    "text": "This is a meeting of countries that agree on the units used to measure things, like seconds and meters. It happens about every four years.",
+    "audio": true
+  },
+  {
+    "k": "international-bureau-of-weights-and-measures",
+    "t": "International Bureau of Weights and Measures",
+    "kind": "name",
+    "forms": [
+      "International Bureau of Weights and Measures",
+      "BIPM"
+    ],
+    "text": "This office near Paris looks after the world's official measurements, including the exact time.",
+    "audio": true
+  },
+  {
+    "k": "international-system-of-units",
+    "t": "International System of Units",
+    "kind": "name",
+    "forms": [
+      "International System of Units"
+    ],
+    "text": "This is the shared set of units most of the world uses, like the meter, kilogram, and second.",
+    "audio": true
+  },
+  {
+    "k": "redefined",
+    "t": "redefined",
+    "kind": "word",
+    "forms": [
+      "redefined",
+      "redefine"
+    ],
+    "text": "To redefine something is to give it a new official meaning. Here, the second would get a new definition.",
+    "audio": true
+  },
+  {
+    "k": "standardised",
+    "t": "standardised",
+    "kind": "word",
+    "forms": [
+      "standardised",
+      "standard"
+    ],
+    "text": "Standardised means made the same everywhere. A standardised time is one time everyone follows.",
+    "audio": true
+  },
+  {
+    "k": "co-ordinates",
+    "t": "co-ordinates",
+    "kind": "word",
+    "forms": [
+      "co-ordinates"
+    ],
+    "text": "To co-ordinate is to help many things work together at the right time. Here, one shared time keeps banks and satellites in step.",
+    "audio": true
+  },
+  {
+    "k": "financial-transactions",
+    "t": "financial transactions",
+    "kind": "word",
+    "forms": [
+      "financial transactions"
+    ],
+    "text": "A financial transaction is a payment or money transfer, like buying something online. It needs an exact time stamp.",
+    "audio": true
+  },
+  {
+    "k": "satellite-navigation",
+    "t": "satellite navigation",
+    "kind": "word",
+    "forms": [
+      "satellite navigation"
+    ],
+    "text": "Satellite navigation, like GPS, uses signals from satellites in space to find where you are. It depends on super-exact clocks.",
+    "audio": true
+  },
+  {
+    "k": "ruler",
+    "t": "ruler",
+    "kind": "word",
+    "forms": [
+      "ruler"
+    ],
+    "text": "A ruler measures length with marks. If its marks are too far apart, you cannot measure tiny things well.",
+    "audio": true
+  },
+  {
+    "k": "clockwork",
+    "t": "clockwork",
+    "kind": "phrase",
+    "forms": [
+      "clockwork"
+    ],
+    "text": "Like clockwork means smoothly and exactly on time. The writer plays with the word clock.",
+    "audio": true
+  },
+  {
+    "k": "untie",
+    "t": "untie",
+    "kind": "word",
+    "forms": [
+      "untie"
+    ],
+    "text": "To untie the second from caesium means to stop depending on caesium for its definition, like undoing a knot.",
+    "audio": true
+  },
+  {
+    "k": "optical-clocks",
+    "t": "optical clocks",
+    "kind": "word",
+    "forms": [
+      "optical clocks",
+      "optical"
+    ],
+    "text": "Optical clocks use light, such as lasers, instead of microwaves. Light waves wiggle much faster, so they tick faster.",
+    "audio": true
+  },
+  {
+    "k": "lutetium",
+    "t": "lutetium",
+    "kind": "word",
+    "forms": [
+      "lutetium"
+    ],
+    "text": "Lutetium is a rare silvery metal. Here, its charged atoms power a super-exact experimental clock.",
+    "audio": true
+  },
+  {
+    "k": "ions",
+    "t": "ions",
+    "kind": "word",
+    "forms": [
+      "ions"
+    ],
+    "text": "An ion is an atom with an electric charge because it has gained or lost a tiny particle.",
+    "audio": true
+  },
+  {
+    "k": "lasers",
+    "t": "lasers",
+    "kind": "word",
+    "forms": [
+      "lasers"
+    ],
+    "text": "A laser is a very narrow, pure beam of light. Here, lasers make the atoms jump.",
+    "audio": true
+  },
+  {
+    "k": "nature",
+    "t": "Nature",
+    "kind": "name",
+    "forms": [
+      "Nature"
+    ],
+    "text": "Nature is a famous science magazine where researchers publish their discoveries.",
+    "audio": true
+  },
+  {
+    "k": "tick",
+    "t": "tick",
+    "kind": "word",
+    "forms": [
+      "tick"
+    ],
+    "text": "A tick is one small, regular step of a clock. Faster ticks let a clock measure smaller bits of time.",
+    "audio": true
+  },
+  {
+    "k": "regular",
+    "t": "regular",
+    "kind": "word",
+    "forms": [
+      "regular"
+    ],
+    "text": "Regular here means very even and steady, with no change in speed.",
+    "audio": true
+  },
+  {
+    "k": "portable",
+    "t": "portable",
+    "kind": "word",
+    "forms": [
+      "portable"
+    ],
+    "text": "Portable means easy to carry and move. A room-sized clock is not portable.",
+    "audio": true
+  },
+  {
+    "k": "contenders",
+    "t": "contenders",
+    "kind": "word",
+    "forms": [
+      "contenders"
+    ],
+    "text": "Contenders are the ones competing to win. Here, they are the different clock types competing to be the standard.",
+    "audio": true
+  },
+  {
+    "k": "ytterbium",
+    "t": "ytterbium",
+    "kind": "word",
+    "forms": [
+      "ytterbium"
+    ],
+    "text": "Ytterbium is a rare metal. Its atoms are held by lasers in one kind of portable optical clock.",
+    "audio": true
+  },
+  {
+    "k": "strontium",
+    "t": "strontium",
+    "kind": "word",
+    "forms": [
+      "strontium"
+    ],
+    "text": "Strontium is a soft metal. Its atoms are used in another kind of optical clock.",
+    "audio": true
+  },
+  {
+    "k": "suspended",
+    "t": "suspended",
+    "kind": "word",
+    "forms": [
+      "suspended"
+    ],
+    "text": "Suspended means hanging or held in place. Here, lasers hold the atoms in place.",
+    "audio": true
+  },
+  {
+    "k": "uncertainties",
+    "t": "uncertainties",
+    "kind": "word",
+    "forms": [
+      "uncertainties"
+    ],
+    "text": "An uncertainty is how much a measurement might be off. Scientists state it so people know how far to trust a number.",
+    "audio": true
+  },
+  {
+    "k": "physical-review-letters",
+    "t": "Physical Review Letters",
+    "kind": "name",
+    "forms": [
+      "Physical Review Letters"
+    ],
+    "text": "This is a respected physics journal where scientists report new results.",
+    "audio": true
+  },
+  {
+    "k": "atomic-transition",
+    "t": "atomic transition",
+    "kind": "word",
+    "forms": [
+      "atomic transition",
+      "transition"
+    ],
+    "text": "A transition is the jump of an atom from one energy level to another. The new second would be based on one such jump.",
+    "audio": true
+  },
+  {
+    "k": "time-lords",
+    "t": "time lords",
+    "kind": "phrase",
+    "forms": [
+      "time lords"
+    ],
+    "text": "Time lords is a joke, like a title from a fantasy story. It means the experts in charge of deciding what time is.",
+    "audio": true
+  },
+  {
+    "k": "consultative-committee-for-time-and-frequency",
+    "t": "Consultative Committee for Time and Frequency",
+    "kind": "name",
+    "forms": [
+      "Consultative Committee for Time and Frequency"
+    ],
+    "text": "This is the expert group that advises the world's measurement bodies on time and on how fast things tick.",
+    "audio": true
+  },
+  {
+    "k": "100m-seconds",
+    "t": "100m seconds",
+    "kind": "word",
+    "forms": [
+      "100m seconds",
+      "100m"
+    ],
+    "text": "100m means 100 million. A hundred million seconds is about three years, which is the time left until 2030.",
+    "audio": true
+  }
+]

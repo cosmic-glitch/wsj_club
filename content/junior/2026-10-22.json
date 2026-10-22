@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-22",
+  "title": "The second may soon be redefined",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/21/the-second-may-soon-be-redefined",
+  "articlePageUrl": "/articles/junior/2026-10-22.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "convened",
+      "partOfSpeech": "verb",
+      "pronunciation": "kun-VEENd",
+      "articleQuote": "the world’s top metrologists convened in Versailles",
+      "meaning": "When people convene, they come together in one place for a meeting. A student council can convene in the library to plan a school dance. In the article, the world's top measurement experts gathered in France to talk about how to define a second.",
+      "examples": [
+        "The class convened on the rug for story time.",
+        "The team convened after the game to talk about what went wrong."
+      ]
+    },
+    {
+      "word": "fluctuations",
+      "partOfSpeech": "noun",
+      "pronunciation": "fluk-choo-AY-shunz",
+      "articleQuote": "small fluctuations which can cause errors",
+      "meaning": "Fluctuations are small changes that go up and down again and again. The temperature outside can fluctuate a few degrees from morning to afternoon. In the article, each clock wobbles a tiny bit, so the experts combine many clocks to cancel out the wobbles.",
+      "examples": [
+        "The fluctuations in the Wi-Fi signal made the video keep freezing.",
+        "Her mood had big fluctuations during the long road trip."
+      ]
+    },
+    {
+      "word": "consensus",
+      "partOfSpeech": "noun",
+      "pronunciation": "kun-SEN-sus",
+      "articleQuote": "That requires consensus among yet another team of time lords",
+      "meaning": "A consensus is an agreement that a whole group reaches together. If your friends all talk until everyone agrees on which movie to watch, that is a consensus. In the article, the experts must all agree on one new way to define the second.",
+      "examples": [
+        "The class reached a consensus to hold the bake sale on Friday.",
+        "There was no consensus about which game to play, so we voted."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Atomic clock",
+      "articleQuote": "atomic clocks use this steady rhythm to measure time",
+      "meaning": "Every clock needs something that repeats at a steady speed. A grandfather clock uses a swinging pendulum: swing, swing, swing. Each swing is one tick, and the clock counts the ticks. If the swings are very even, the clock is very accurate.\n\nAn **atomic clock** does the same job, but its pendulum is an atom. Atoms are far too small to see, but they can be nudged by waves, like radio-style microwaves or laser light. At exactly the right wave speed, the atom jumps between two energy levels. That jump happens at the same speed every time, in every atom of the same kind. The clock counts the jumps instead of swings.\n\nThat is why one second is defined as 9,192,631,770 jumps of a caesium atom. Lasers wave much faster than microwaves, so a laser clock ticks faster and can slice a second into thinner pieces, like a ruler with more tiny lines. That is why scientists want a new definition."
+    },
+    {
+      "name": "Standard unit",
+      "articleQuote": "According to the International System of Units, a second is 9,192,631,770 cycles.",
+      "meaning": "Imagine you and a friend each measure a table using your own shoes. You get 12 shoes and your friend gets 15, because your shoes are different sizes. You would argue forever! To avoid that, people agree on a **standard unit**, a measure everyone defines the same way, like a meter, a kilogram, or a second.\n\nMost of the world uses one shared set called the International System of Units. Because everyone follows it, a scientist in Singapore and a scientist in France can compare results, and a package can be tracked, a phone can find its place on a map, and a bank can record exactly when you paid.\n\nThe definition of a unit has to be something that never changes and that anyone can check. That is why the second is tied to atoms, which behave the same everywhere. When better tools come along, the experts meet to improve the definition so it stays as precise as the tools."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What do atomic clocks use to keep time?",
+      "options": [
+        "A swinging pendulum",
+        "The steady rhythm of an atom switching between energy states",
+        "The position of the Sun",
+        "A spring that unwinds"
+      ],
+      "answerIndex": 1,
+      "explanation": "Atoms such as caesium jump between two energy states at a very regular rate, and the clock counts those jumps."
+    },
+    {
+      "question": "Why do scientists want to stop defining the second with caesium?",
+      "options": [
+        "Caesium is too expensive",
+        "Newer clocks are more precise than caesium clocks, so caesium is like a ruler too coarse to measure with",
+        "Caesium atoms are disappearing",
+        "Caesium clocks are too large"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article compares it to measuring a hair with a ruler whose marks are wider than the hair."
+    },
+    {
+      "question": "What does \"convened\" mean in \"the world's top metrologists convened in Versailles\"?",
+      "options": [
+        "Argued loudly",
+        "Came together for a meeting",
+        "Went on vacation",
+        "Left early"
+      ],
+      "answerIndex": 1,
+      "explanation": "To convene is to gather in one place for a meeting."
+    },
+    {
+      "question": "What is a \"consensus\"?",
+      "options": [
+        "A count of people",
+        "A secret plan",
+        "An agreement reached by the whole group",
+        "A disagreement"
+      ],
+      "answerIndex": 2,
+      "explanation": "The committee must reach consensus, meaning everyone agrees on the new standard."
+    },
+    {
+      "question": "Why is a standard unit like the second useful?",
+      "options": [
+        "It lets people everywhere measure the same way and compare results",
+        "It makes time go faster",
+        "It means clocks never need fixing",
+        "It is only used by scientists in labs"
+      ],
+      "answerIndex": 0,
+      "explanation": "Shared definitions let science, banks, and satellite navigation all agree."
+    }
+  ]
+}
