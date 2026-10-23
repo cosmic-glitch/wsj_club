@@ -1,0 +1,461 @@
+[
+  {
+    "k": "proximity",
+    "t": "proximity",
+    "kind": "vocab",
+    "pron": "prok-SIM-ih-tee",
+    "forms": [
+      "proximity"
+    ],
+    "text": "Proximity means nearness. Here, Phobos orbits so close to Mars that it catches rock thrown off the planet.",
+    "audio": true
+  },
+  {
+    "k": "stray",
+    "t": "stray",
+    "kind": "vocab",
+    "pron": "STRAY",
+    "forms": [
+      "straying"
+    ],
+    "text": "To stray is to wander off the right path. Here, an asteroid drifts too near Mars and gets pulled in.",
+    "audio": true
+  },
+  {
+    "k": "haul",
+    "t": "haul",
+    "kind": "vocab",
+    "pron": "HAWL",
+    "forms": [
+      "haul"
+    ],
+    "text": "A haul is the amount you gather and carry away. Here, it is the rock and dust the probe brings home.",
+    "audio": true
+  },
+  {
+    "k": "orbiters",
+    "t": "orbiter",
+    "kind": "word",
+    "forms": [
+      "ORBITERS",
+      "orbiters"
+    ],
+    "text": "An orbiter is a spacecraft that circles a planet without landing. It studies the planet from above.",
+    "audio": true
+  },
+  {
+    "k": "landers",
+    "t": "lander",
+    "kind": "word",
+    "forms": [
+      "landers"
+    ],
+    "text": "A lander is a spacecraft built to touch down and sit on the surface of another world.",
+    "audio": true
+  },
+  {
+    "k": "rovers",
+    "t": "rover",
+    "kind": "word",
+    "forms": [
+      "rovers"
+    ],
+    "text": "A rover is a robot vehicle with wheels that drives around on another world to explore it.",
+    "audio": true
+  },
+  {
+    "k": "jaxa",
+    "t": "JAXA",
+    "kind": "word",
+    "forms": [
+      "JAXA",
+      "Japan Aerospace Exploration Agency"
+    ],
+    "text": "JAXA is the Japan Aerospace Exploration Agency, Japan's version of NASA.",
+    "audio": true
+  },
+  {
+    "k": "lifted-off",
+    "t": "lifted off",
+    "kind": "word",
+    "forms": [
+      "lifted off"
+    ],
+    "text": "When a rocket lifts off, it leaves the ground and starts to fly. This is the start of its trip.",
+    "audio": true
+  },
+  {
+    "k": "probe",
+    "t": "probe",
+    "kind": "word",
+    "forms": [
+      "probe"
+    ],
+    "text": "A probe is an uncrewed spacecraft sent to study something far away and send back information.",
+    "audio": true
+  },
+  {
+    "k": "phobos",
+    "t": "Phobos",
+    "kind": "word",
+    "forms": [
+      "Phobos",
+      "Phobos’s"
+    ],
+    "text": "Phobos is the bigger of Mars's two moons. It is small and lumpy, and it circles very close to Mars.",
+    "audio": true
+  },
+  {
+    "k": "deimos",
+    "t": "Deimos",
+    "kind": "word",
+    "forms": [
+      "Deimos"
+    ],
+    "text": "Deimos is the smaller of Mars's two moons, about 12 kilometers across.",
+    "audio": true
+  },
+  {
+    "k": "planetary-scientists",
+    "t": "planetary scientist",
+    "kind": "word",
+    "forms": [
+      "planetary scientists",
+      "planetary scientist"
+    ],
+    "text": "A planetary scientist studies planets, moons and asteroids: what they are made of and how they formed.",
+    "audio": true
+  },
+  {
+    "k": "puzzle",
+    "t": "long-standing puzzle",
+    "kind": "word",
+    "forms": [
+      "long-standing puzzle"
+    ],
+    "text": "A long-standing puzzle is a question people have wondered about for many years without an answer.",
+    "audio": true
+  },
+  {
+    "k": "lumpy-potatoes",
+    "t": "lumpy potatoes",
+    "kind": "word",
+    "forms": [
+      "lumpy potatoes"
+    ],
+    "text": "The moons are not round like our Moon. They are bumpy and uneven, a bit like potatoes.",
+    "audio": true
+  },
+  {
+    "k": "asteroids",
+    "t": "asteroid",
+    "kind": "word",
+    "forms": [
+      "asteroids",
+      "asteroid"
+    ],
+    "text": "An asteroid is a rocky chunk left over from when the planets formed. Most circle the Sun.",
+    "audio": true
+  },
+  {
+    "k": "gravitational-field",
+    "t": "gravitational field",
+    "kind": "word",
+    "forms": [
+      "gravitational field"
+    ],
+    "text": "Gravity is the pull between objects. A planet's gravitational field is the space around it where its pull can grab things.",
+    "audio": true
+  },
+  {
+    "k": "elliptical",
+    "t": "elliptical",
+    "kind": "word",
+    "forms": [
+      "elliptical"
+    ],
+    "text": "Elliptical means shaped like a stretched circle, an oval. An elliptical orbit swings close to a planet and then far away.",
+    "audio": true
+  },
+  {
+    "k": "equator",
+    "t": "equator",
+    "kind": "word",
+    "forms": [
+      "equator"
+    ],
+    "text": "The equator is the imaginary line around the middle of a planet, halfway between its top and bottom.",
+    "audio": true
+  },
+  {
+    "k": "giant-collision",
+    "t": "giant collision",
+    "kind": "word",
+    "forms": [
+      "giant collision"
+    ],
+    "text": "A giant collision is a huge crash between space objects. It can throw rock into space, and the rock can clump together.",
+    "audio": true
+  },
+  {
+    "k": "debris",
+    "t": "debris",
+    "kind": "word",
+    "forms": [
+      "debris"
+    ],
+    "text": "Debris is scattered broken pieces left after something is smashed.",
+    "audio": true
+  },
+  {
+    "k": "gathered",
+    "t": "gathered",
+    "kind": "word",
+    "forms": [
+      "gathered"
+    ],
+    "text": "Here, gathered means pulled together into one clump, as bits of rubble slowly joined to make moons.",
+    "audio": true
+  },
+  {
+    "k": "hayabusa",
+    "t": "Hayabusa",
+    "kind": "word",
+    "forms": [
+      "Hayabusa",
+      "Hayabusa2"
+    ],
+    "text": "Hayabusa is the name of Japan's earlier spacecraft that brought back bits of an asteroid. The name means falcon.",
+    "audio": true
+  },
+  {
+    "k": "near-earth",
+    "t": "near-Earth asteroid",
+    "kind": "word",
+    "forms": [
+      "near-Earth"
+    ],
+    "text": "A near-Earth asteroid has an orbit that brings it fairly close to our planet.",
+    "audio": true
+  },
+  {
+    "k": "organic-compounds",
+    "t": "organic compounds",
+    "kind": "word",
+    "forms": [
+      "organic compounds"
+    ],
+    "text": "Organic compounds are chemicals built around carbon. They are the building blocks of living things.",
+    "audio": true
+  },
+  {
+    "k": "water-bearing",
+    "t": "water-bearing",
+    "kind": "word",
+    "forms": [
+      "water-bearing"
+    ],
+    "text": "Water-bearing means holding water inside. The asteroid's grains had water locked in their molecules.",
+    "audio": true
+  },
+  {
+    "k": "surface-gravity",
+    "t": "surface gravity",
+    "kind": "word",
+    "forms": [
+      "surface gravity"
+    ],
+    "text": "Surface gravity is how strongly a world pulls on things standing on its surface. Small worlds pull only weakly.",
+    "audio": true
+  },
+  {
+    "k": "delicate",
+    "t": "delicate",
+    "kind": "word",
+    "forms": [
+      "delicate"
+    ],
+    "text": "Delicate means easy to damage. A spacecraft is delicate, so a hard landing could break it.",
+    "audio": true
+  },
+  {
+    "k": "touch-and-go",
+    "t": "touch-and-go",
+    "kind": "word",
+    "forms": [
+      "touch-and-go"
+    ],
+    "text": "Touch-and-go is a quick landing: the spacecraft touches the surface for a moment and then flies away at once.",
+    "audio": true
+  },
+  {
+    "k": "kissed",
+    "t": "kissed",
+    "kind": "word",
+    "forms": [
+      "kissed"
+    ],
+    "text": "Here, kissed means touched lightly and briefly. It is a figure of speech.",
+    "audio": true
+  },
+  {
+    "k": "extract",
+    "t": "extract",
+    "kind": "word",
+    "forms": [
+      "extract"
+    ],
+    "text": "To extract is to take something out. Here, the probe pulls out rock from below the surface.",
+    "audio": true
+  },
+  {
+    "k": "demanding",
+    "t": "demanding",
+    "kind": "word",
+    "forms": [
+      "demanding"
+    ],
+    "text": "Demanding means needing a lot of skill and effort. This mission is harder than earlier ones.",
+    "audio": true
+  },
+  {
+    "k": "megane",
+    "t": "MEGANE",
+    "kind": "word",
+    "forms": [
+      "MEGANE"
+    ],
+    "text": "MEGANE is an instrument built by NASA. The name matches the Japanese word for eyeglasses.",
+    "audio": true
+  },
+  {
+    "k": "gamma-rays",
+    "t": "gamma rays",
+    "kind": "word",
+    "forms": [
+      "gamma rays"
+    ],
+    "text": "Gamma rays are a very strong kind of light that we cannot see. Rocks can give them off when space rays hit them.",
+    "audio": true
+  },
+  {
+    "k": "cosmic-rays",
+    "t": "cosmic rays",
+    "kind": "word",
+    "forms": [
+      "cosmic rays"
+    ],
+    "text": "Cosmic rays are tiny fast particles from space that hit planets and moons all the time.",
+    "audio": true
+  },
+  {
+    "k": "fly-bys",
+    "t": "fly-bys",
+    "kind": "word",
+    "forms": [
+      "fly-bys"
+    ],
+    "text": "A fly-by is when a spacecraft zooms past something to look at it without stopping or landing.",
+    "audio": true
+  },
+  {
+    "k": "origin-stories",
+    "t": "origin stories",
+    "kind": "word",
+    "forms": [
+      "origin stories"
+    ],
+    "text": "Here, the two origin stories are the two ideas about how the moons began: captured asteroids or a giant crash.",
+    "audio": true
+  },
+  {
+    "k": "meteorites",
+    "t": "meteorites",
+    "kind": "word",
+    "forms": [
+      "meteorites"
+    ],
+    "text": "Meteorites are pieces of rock from space that land on the ground after falling through the air.",
+    "audio": true
+  },
+  {
+    "k": "melt-fragments",
+    "t": "melt fragments",
+    "kind": "word",
+    "forms": [
+      "melt fragments"
+    ],
+    "text": "Melt fragments are bits of rock that melted from great heat and then hardened again.",
+    "audio": true
+  },
+  {
+    "k": "volcanic",
+    "t": "volcanic",
+    "kind": "word",
+    "forms": [
+      "volcanic"
+    ],
+    "text": "Volcanic rock forms when hot melted rock from a volcano cools and hardens.",
+    "audio": true
+  },
+  {
+    "k": "sedimentary",
+    "t": "sedimentary",
+    "kind": "word",
+    "forms": [
+      "sedimentary"
+    ],
+    "text": "Sedimentary rock is made when tiny bits of mud and sand pile up and press together over time, often under water.",
+    "audio": true
+  },
+  {
+    "k": "biosignatures",
+    "t": "biosignatures",
+    "kind": "word",
+    "forms": [
+      "biosignatures"
+    ],
+    "text": "A biosignature is a sign that life was once there, such as a chemical that living things make.",
+    "audio": true
+  },
+  {
+    "k": "habitable",
+    "t": "habitable",
+    "kind": "word",
+    "forms": [
+      "habitable"
+    ],
+    "text": "Habitable means a place where living things could survive.",
+    "audio": true
+  },
+  {
+    "k": "geological",
+    "t": "geological",
+    "kind": "word",
+    "forms": [
+      "geological"
+    ],
+    "text": "Geological means about rocks and how land changes over time.",
+    "audio": true
+  },
+  {
+    "k": "time-capsule",
+    "t": "time capsule",
+    "kind": "word",
+    "forms": [
+      "time capsule"
+    ],
+    "text": "A time capsule is a box saved to show later people what the past was like. Here, the moons may hold old rock unchanged.",
+    "audio": true
+  },
+  {
+    "k": "astrophysicist",
+    "t": "astrophysicist",
+    "kind": "word",
+    "forms": [
+      "astrophysicist"
+    ],
+    "text": "An astrophysicist is a scientist who studies how stars, planets and space work, using physics.",
+    "audio": true
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-23",
+  "title": "Japan’s mission to Mars’s moons takes off",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/21/japans-mission-to-marss-moons-takes-off",
+  "articlePageUrl": "/articles/junior/2026-10-23.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "proximity",
+      "partOfSpeech": "noun",
+      "pronunciation": "prok-SIM-ih-tee",
+      "articleQuote": "Whatever Phobos’s history, its proximity to Mars means it should also have collected material blasted off the planet by asteroid impacts.",
+      "meaning": "Proximity means nearness: how close one thing is to another, in distance or in time. In the article, Phobos orbits very close to Mars, so when asteroids smash into Mars and throw rock into space, some of it can land on the little moon. Being close made it easy for Phobos to catch the pieces.",
+      "examples": [
+        "Our house is in close proximity to the school, so I can walk there in five minutes.",
+        "The campers kept their food far from the tents, because the proximity of bears worried the guide."
+      ]
+    },
+    {
+      "word": "stray",
+      "partOfSpeech": "verb",
+      "pronunciation": "STRAY",
+      "articleQuote": "That might suggest they are asteroids that were captured by Mars’s gravitational field after straying too close.",
+      "meaning": "To stray is to wander away from the place or path you should be on. A stray dog has wandered off from home, and a stray thought wanders into your head when you should be focused. In the article, an asteroid that strays too close to Mars drifts off its own path and gets pulled in by the planet’s gravity.",
+      "examples": [
+        "My soccer ball strayed into the neighbor’s yard, so I had to knock on their door to get it back.",
+        "Whenever the class strays from the topic, our teacher gently steers us back."
+      ]
+    },
+    {
+      "word": "haul",
+      "partOfSpeech": "noun",
+      "pronunciation": "HAWL",
+      "articleQuote": "collect at least ten grams of rock and dust, and return the haul to Earth in 2031",
+      "meaning": "A haul is the amount of something you gather or carry away, especially after effort. Fishers talk about a big haul of fish, and kids talk about a haul of candy after trick-or-treating. In the article, the haul is the rock and dust the probe collects on Phobos and carries home.",
+      "examples": [
+        "After a long walk around the neighborhood, my sister came home with a huge haul of candy.",
+        "The fishing crew was happy with its haul: three full buckets before lunch."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Orbits",
+      "articleQuote": "Captured asteroids, however, usually have tilted, elliptical orbits, whereas both moons follow nearly circular paths around the planet’s equator.",
+      "meaning": "Why would scientists argue about where two small moons came from? Because the shape of a moon’s path can work like a clue. In astronomy, an **orbit** is the curved path an object follows around a bigger object, held on that path by the bigger object’s gravity.\n\nOrbits come in different shapes. A **circular** orbit stays about the same distance from the planet the whole way around, like a runner on a round track. An **elliptical** orbit is a stretched-out circle, an oval, so the object swings close to the planet, then far away, then close again. Orbits can also be **tilted**: instead of running along the planet’s equator (the line around its middle), the path leans over, like a hula hoop held at a slant.\n\nNow picture a ball rolling past a bowl. If the ball rolls in from far away and gets caught, it usually ends up circling on a lopsided, slanted path, because it arrived from a random direction. That is why a captured asteroid would be expected to have a tilted, elliptical orbit. Mars’s moons have nearly circular orbits along the equator, which does not match a capture. That mismatch is the clue that points scientists toward the other idea, a giant collision that threw out rubble which settled into a neat ring and then clumped into moons.\n\nSo the takeaway: the shape and tilt of an orbit record how the object got there, and astronomers read those shapes to work out a moon’s history."
+    },
+    {
+      "name": "Meteorites",
+      "articleQuote": "Scientists already have Martian meteorites, but these are mostly hard volcanic rocks that survived the journey through space and Earth’s atmosphere.",
+      "meaning": "Here is a surprise: scientists can already hold pieces of Mars in their hands. They are called **meteorites**. A meteorite is a piece of rock from space that falls through Earth’s atmosphere and lands on the ground. While it is still in the air, glowing as it burns, it is called a meteor, which is the streak people call a shooting star. The rock that survives and reaches the ground is the meteorite. Most come from asteroids. A few come from the Moon or Mars, after a huge impact there knocked rock loose and sent it flying through space.\n\nBut the trip is rough. A rock falling through the atmosphere gets extremely hot and is slammed by air. Soft, crumbly rock tends to break up, and hard rock tends to survive. That is why the Martian meteorites on Earth are mostly hard volcanic rock, which formed from cooled lava. Layers of softer rock made by water, such as mud settling at the bottom of an ancient lake, almost never make it.\n\nThink of mailing a package with no padding: the sturdy things arrive, and the fragile things arrive in pieces. Meteorites are a biased sample in the same way. They only show scientists the toughest rocks. That is why a mission that lands on a moon and gathers rock without any fiery fall is so valuable: it could bring back the soft rock that meteorites lose along the way."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the main goal of the MMX mission?",
+      "options": [
+        "To put a person on Mars",
+        "To land on Phobos, collect rock and dust, and bring it back to Earth",
+        "To build a base on Deimos",
+        "To take pictures of Earth from Mars"
+      ],
+      "answerIndex": 1,
+      "explanation": "The probe is meant to land on Phobos, collect at least ten grams of rock and dust, and return it to Earth in 2031."
+    },
+    {
+      "question": "Why does the shape of the moons’ orbits make scientists doubt that they are captured asteroids?",
+      "options": [
+        "Captured asteroids usually have tilted, elliptical orbits, but the moons’ orbits are nearly circular and along Mars’s equator",
+        "Asteroids never orbit planets at all",
+        "The moons orbit too far from Mars",
+        "The moons orbit faster than any asteroid could"
+      ],
+      "answerIndex": 0,
+      "explanation": "Captured asteroids would be expected to have tilted, stretched-out orbits, which is not what Phobos and Deimos have."
+    },
+    {
+      "question": "In the article, what does “proximity” describe?",
+      "options": [
+        "How heavy Phobos is",
+        "How old Mars is",
+        "How close Phobos is to Mars",
+        "How fast the probe travels"
+      ],
+      "answerIndex": 2,
+      "explanation": "Proximity means nearness, and Phobos’s nearness to Mars helps it collect pieces blasted off the planet."
+    },
+    {
+      "question": "Why might samples from Phobos include Martian rock that meteorites rarely provide?",
+      "options": [
+        "Because Phobos is made of gold",
+        "Because Phobos is close enough to Mars to have collected softer rock blasted off the planet, which rarely survives as meteorites",
+        "Because rocks on Phobos are always newer than Earth rocks",
+        "Because Phobos has liquid water"
+      ],
+      "answerIndex": 1,
+      "explanation": "Martian meteorites are mostly hard volcanic rock, but Phobos may have collected softer rock that could hold clues about past life."
+    },
+    {
+      "question": "Why do Martian meteorites found on Earth tend to be hard volcanic rock?",
+      "options": [
+        "Mars has only volcanic rock",
+        "Soft rock is less likely to survive the trip through space and Earth’s atmosphere",
+        "Volcanic rock is easier to spot on the ground",
+        "Scientists throw away the softer rocks"
+      ],
+      "answerIndex": 1,
+      "explanation": "Hard rock survives the rough journey, while softer sedimentary rock tends to break up before it lands."
+    }
+  ]
+}
