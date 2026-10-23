@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-23",
+  "title": "Donald Trump should love the new documentary about Elizabeth Holmes",
+  "articleUrl": "https://www.economist.com/united-states/2026/10/22/donald-trump-should-love-the-new-documentary-about-elizabeth-holmes",
+  "articlePageUrl": "/articles/2026-10-23.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "bilk",
+      "partOfSpeech": "verb",
+      "pronunciation": "BILK",
+      "articleQuote": "for bilking the likes of Rupert Murdoch and the heirs to the Walmart fortune",
+      "meaning": "To bilk someone is to cheat them out of money, usually by tricking them with a false promise. It is a punchy newspaper word for a con: the victim hands over cash believing one thing, and the trickster keeps it. In this article it describes what Elizabeth Holmes was convicted of doing to wealthy investors in her blood-testing company.",
+      "examples": [
+        "The fake charity bilked hundreds of kind people out of their savings.",
+        "He tried to bilk the tourists by selling them a \"genuine antique\" that was made last week."
+      ]
+    },
+    {
+      "word": "blithely",
+      "partOfSpeech": "adverb",
+      "pronunciation": "BLYTHE-lee",
+      "articleQuote": "Yet the jury in Ms Holmes’s case does not seem to have decided blithely.",
+      "meaning": "To do something blithely is to do it casually and cheerfully, without giving it the thought or worry it deserves. It often carries a mild criticism: the person is carefree when they should be careful. The article says the jury spent nearly four months on the evidence, so it did not reach its verdict in a careless, light-hearted way.",
+      "examples": [
+        "She blithely walked into the exam without having opened the textbook.",
+        "Don't blithely agree to a contract you haven't read."
+      ]
+    },
+    {
+      "word": "nihilism",
+      "partOfSpeech": "noun",
+      "pronunciation": "NY-ih-liz-um",
+      "articleQuote": "an act not of idealistic struggle but of surrender, if not nihilism.",
+      "meaning": "Nihilism is the belief that nothing really matters: that there is no real truth, meaning or value to anything. A nihilist shrugs at questions that others fight over. The writer uses it as a sharp charge. If you decide nobody can ever know what is true, you have not become wise, you have simply given up.",
+      "examples": [
+        "After losing every game, the team slid into nihilism and stopped caring about the score.",
+        "Her essay argued that saying \"everything is just opinion\" leads to nihilism."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Postmodernism and the idea that truth is constructed",
+      "articleQuote": "Power does shape the perception of truth and narrative can mould reality.",
+      "meaning": "Philosophy and ideas. Postmodernism is a family of ideas, popular among some thinkers since the 1960s, which say that we never see reality directly. We see it through stories, language and the media, and the people with power often decide which story wins. Picture a school where the principal's version of a playground fight is the one written in the record, even if the kids who were there remember it differently. The thinkers the article names, Michel Foucault and Jean Baudrillard, pushed this view: Foucault argued that power shapes what counts as true, and Baudrillard that modern media blur the line between the real and the staged.\n\nThere is a real insight here. Stories do shape what people believe, and Elizabeth Holmes herself was celebrated by the press before she was condemned by it. The danger comes when the insight is stretched into \"nothing can be known\". Then a liar can wave away any evidence by saying \"that's just your narrative\".\n\nThe article's argument is that this is exactly what happened in politics. If courts, scientists, pollsters and journalists can all be dismissed as just another story, a leader who says whatever he likes cannot be proved wrong. The writer's answer is that a jury weighing months of testimony and documents is not just telling a story. Some claims really are better supported than others.\n\nNext time someone says \"it's all just narrative\", ask what evidence would change their mind."
+    },
+    {
+      "name": "Fraud, intent and what a jury decides",
+      "articleQuote": "the jury acquitted her on four counts and deadlocked on three, while convicting her on four.",
+      "meaning": "Law and civics. Fraud is lying to get money or advantage, and what turns a mistake into a crime is intent: did the person mean to deceive? If you tell a friend a rumor you honestly believed, you were wrong. If you made it up to get their lunch money, that is fraud. Elizabeth Holmes claimed her company's \"Edison\" blood-testing machine could run many tests. The film plays with the idea that she meant it \"could\" work one day, so she never intended to deceive anyone.\n\nIn an American criminal trial, the prosecution must convince every juror beyond a reasonable doubt, one charge (called a count) at a time. Each count ends in one of three ways: acquitted (found not guilty), convicted (found guilty), or deadlocked, also called a hung jury, where the jurors cannot agree. Holmes's jury produced all three, which shows they weighed the charges one by one instead of simply deciding she was a villain.\n\nThe article stresses the evidence that sank her: she admitted she put the logos of drug companies on reports that those companies had never written. Intent is judged from facts like that, not from how sincere someone looks on camera.\n\nWhen you hear \"I never meant to mislead anyone\", ask what the person actually did, and what the documents show."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the film \"You Can See Everything\" about, according to the article?",
+      "options": [
+        "The 34 days Nathan Fielder spent with Elizabeth Holmes before she reported to prison",
+        "A court case in which Nathan Fielder is accused of fraud",
+        "How Theranos built its blood-testing machine",
+        "Donald Trump's years as a reality-television star"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article describes it as a documentary about the 34 days Mr Fielder spent with Ms Holmes before she began her prison sentence in 2023."
+    },
+    {
+      "question": "What does the writer say is the downside of the post-modern idea that truth is elusive?",
+      "options": [
+        "It makes news reporters too cautious",
+        "It lets leaders dismiss facts, and leaves people unsure what is true",
+        "It has been proved false by scientists",
+        "It only affects the movie business"
+      ],
+      "answerIndex": 1,
+      "explanation": "The writer argues that radical scepticism helped Mr Trump dismiss facts, and that it leaves Americans throwing up their hands about what is true."
+    },
+    {
+      "question": "What does \"bilk\" mean in the article?",
+      "options": [
+        "To interview",
+        "To cheat out of money",
+        "To arrest",
+        "To praise publicly"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ms Holmes was sentenced for bilking investors, meaning cheating them out of their money."
+    },
+    {
+      "question": "What was the outcome of Elizabeth Holmes's jury trial?",
+      "options": [
+        "Acquitted on all counts",
+        "Convicted on all counts",
+        "Acquitted on four counts, deadlocked on three and convicted on four",
+        "The trial ended before the jury decided"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says that after almost four months the jury acquitted her on four counts, deadlocked on three and convicted her on four."
+    },
+    {
+      "question": "Why does the writer think the jury did not decide \"blithely\"?",
+      "options": [
+        "The jury was chosen by Mr Trump",
+        "The jury sifted through a mountain of testimony and documents over almost four months",
+        "The jury watched the documentary first",
+        "The jury was not asked to reach a verdict"
+      ],
+      "answerIndex": 1,
+      "explanation": "The jury's long, careful look at witness testimony and documents, including logos Ms Holmes admitted attaching to reports, shows a considered decision."
+    }
+  ]
+}

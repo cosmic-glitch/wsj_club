@@ -1,0 +1,515 @@
+[
+  {
+    "k": "bilk",
+    "t": "bilk",
+    "kind": "vocab",
+    "pron": "BILK",
+    "forms": [
+      "bilking"
+    ],
+    "text": "To bilk someone is to cheat them out of money, usually by tricking them with a false promise. It is a punchy newspaper word for a con: the victim hands over cash believing one thing, and the trickster keeps it.",
+    "audio": true
+  },
+  {
+    "k": "blithely",
+    "t": "blithely",
+    "kind": "vocab",
+    "pron": "BLYTHE-lee",
+    "forms": [
+      "blithely"
+    ],
+    "text": "To do something blithely is to do it casually and cheerfully, without giving it the thought or worry it deserves. It often carries a mild criticism: the person is carefree when they should be careful.",
+    "audio": true
+  },
+  {
+    "k": "nihilism",
+    "t": "nihilism",
+    "kind": "vocab",
+    "pron": "NY-ih-liz-um",
+    "forms": [
+      "nihilism"
+    ],
+    "text": "Nihilism is the belief that nothing really matters: that there is no real truth, meaning or value to anything. A nihilist shrugs at questions that others fight over.",
+    "audio": true
+  },
+  {
+    "k": "disgraced",
+    "t": "disgraced",
+    "kind": "word",
+    "forms": [
+      "disgraced"
+    ],
+    "text": "Someone disgraced has lost the respect of others because of a scandal or wrongdoing. Elizabeth Holmes was once a celebrated founder and is now known as a convicted fraudster.",
+    "audio": true
+  },
+  {
+    "k": "fraud",
+    "t": "fraud",
+    "kind": "word",
+    "forms": [
+      "fraud"
+    ],
+    "text": "Fraud is lying to get money or advantage that you are not entitled to. In the article it is the crime Ms Holmes was convicted of.",
+    "audio": true
+  },
+  {
+    "k": "post-modern",
+    "t": "post-modern",
+    "kind": "word",
+    "forms": [
+      "post-modern"
+    ],
+    "text": "Post-modern describes ideas that doubt there is one objective truth and say that reality is shaped by stories and power. The writer is tired of hearing it.",
+    "audio": true
+  },
+  {
+    "k": "elusive",
+    "t": "elusive",
+    "kind": "word",
+    "forms": [
+      "elusive"
+    ],
+    "text": "Something elusive is hard to find, catch or pin down. The film keeps saying objective truth is elusive, meaning always slipping out of reach.",
+    "audio": true
+  },
+  {
+    "k": "purchase",
+    "t": "purchase",
+    "kind": "word",
+    "forms": [
+      "purchase"
+    ],
+    "text": "Here purchase does not mean buying. It means a grip or foothold, as in getting a purchase on a rock face. A weak purchase on reality means a shaky grip on what is real.",
+    "audio": true
+  },
+  {
+    "k": "narrative",
+    "t": "narrative",
+    "kind": "word",
+    "forms": [
+      "narrative"
+    ],
+    "text": "A narrative is a story, especially one used to explain events. The article's worry is that people pick whichever narrative suits them rather than checking facts.",
+    "audio": true
+  },
+  {
+    "k": "theranos",
+    "t": "Theranos",
+    "kind": "word",
+    "forms": [
+      "Theranos"
+    ],
+    "text": "Theranos was the blood-testing start-up Ms Holmes founded. It promised to run dozens of tests from a few drops of blood, but the technology did not work as claimed.",
+    "audio": true
+  },
+  {
+    "k": "revolutionised",
+    "t": "revolutionised",
+    "kind": "word",
+    "forms": [
+      "revolutionised"
+    ],
+    "text": "To revolutionise something is to change it completely. Ms Holmes claimed her company would revolutionise how illnesses are detected.",
+    "audio": true
+  },
+  {
+    "k": "integrity",
+    "t": "integrity",
+    "kind": "word",
+    "forms": [
+      "integrity"
+    ],
+    "text": "Integrity is honesty and sticking to your principles. The film raises doubts about the integrity of the New York Times, meaning whether it can be fully trusted.",
+    "audio": true
+  },
+  {
+    "k": "michel-foucault",
+    "t": "Michel Foucault",
+    "kind": "word",
+    "forms": [
+      "Michel Foucault"
+    ],
+    "text": "Michel Foucault was a French philosopher who argued that those with power shape what society treats as true and normal.",
+    "audio": true
+  },
+  {
+    "k": "jean-baudrillard",
+    "t": "Jean Baudrillard",
+    "kind": "word",
+    "forms": [
+      "Jean Baudrillard"
+    ],
+    "text": "Jean Baudrillard was a French thinker who argued that modern media and images blur the line between what is real and what is a copy or performance.",
+    "audio": true
+  },
+  {
+    "k": "authenticity",
+    "t": "authenticity",
+    "kind": "word",
+    "forms": [
+      "authenticity"
+    ],
+    "text": "Authenticity means being genuine and real rather than fake. Baudrillard's worry is that media make it hard to tell authenticity from imitation.",
+    "audio": true
+  },
+  {
+    "k": "artifice",
+    "t": "artifice",
+    "kind": "word",
+    "forms": [
+      "artifice"
+    ],
+    "text": "Artifice is cleverness used to deceive, or something artificial and staged. It is the opposite of authenticity in the article.",
+    "audio": true
+  },
+  {
+    "k": "plasticity",
+    "t": "plasticity",
+    "kind": "word",
+    "forms": [
+      "plasticity"
+    ],
+    "text": "Plasticity is the quality of being easily shaped or moulded, like plastic. The plasticity of truth means truth can be bent to suit whoever tells the story.",
+    "audio": true
+  },
+  {
+    "k": "sophisticated",
+    "t": "sophisticated",
+    "kind": "word",
+    "forms": [
+      "sophisticated"
+    ],
+    "text": "Here sophisticated means worldly and clever enough to see through things. The writer says Americans are sophisticated enough to doubt what is real.",
+    "audio": true
+  },
+  {
+    "k": "or-is-it-three-times",
+    "t": "Or is it three times?",
+    "kind": "phrase",
+    "forms": [
+      "Or is it three times?"
+    ],
+    "text": "This is a joke. Mr Trump was elected in 2016 and 2024, and some of his supporters say he really won in 2020 too. The writer adds Narratives differ to poke fun at how people see the same facts differently.",
+    "audio": true
+  },
+  {
+    "k": "paradoxical",
+    "t": "paradoxical",
+    "kind": "word",
+    "forms": [
+      "paradoxical"
+    ],
+    "text": "Paradoxical means seeming to contradict itself yet still true. It is odd that ideas meant to challenge power helped a president gain power.",
+    "audio": true
+  },
+  {
+    "k": "subvert",
+    "t": "subvert",
+    "kind": "word",
+    "forms": [
+      "subvert"
+    ],
+    "text": "To subvert is to undermine an established system or authority from within. Post-modern thinkers meant to subvert traditional power structures.",
+    "audio": true
+  },
+  {
+    "k": "self-sabotaging",
+    "t": "self-sabotaging",
+    "kind": "word",
+    "forms": [
+      "self-sabotaging"
+    ],
+    "text": "Self-sabotaging means doing something that harms your own goals. The writer jokes that universities, by spreading these ideas, damaged their own cause.",
+    "audio": true
+  },
+  {
+    "k": "the-academy",
+    "t": "the academy",
+    "kind": "word",
+    "forms": [
+      "academy"
+    ],
+    "text": "The academy is a shorthand for universities and the scholars who work in them.",
+    "audio": true
+  },
+  {
+    "k": "magnify",
+    "t": "magnify",
+    "kind": "word",
+    "forms": [
+      "magnify"
+    ],
+    "text": "To magnify is to make something bigger or stronger. Here it means increasing how powerful the presidency seems.",
+    "audio": true
+  },
+  {
+    "k": "corrosive",
+    "t": "corrosive",
+    "kind": "word",
+    "forms": [
+      "corrosive"
+    ],
+    "text": "Corrosive describes something that slowly eats away at a thing, as rust eats metal. Reflexive distrust slowly eats away at shared trust in facts.",
+    "audio": true
+  },
+  {
+    "k": "post-enlightenment",
+    "t": "post-Enlightenment",
+    "kind": "word",
+    "forms": [
+      "post-Enlightenment"
+    ],
+    "text": "The Enlightenment was an era of the 1700s that prized reason and evidence. Post-Enlightenment here means the modern period that has grown doubtful of those ideals.",
+    "audio": true
+  },
+  {
+    "k": "radical-scepticism",
+    "t": "radical scepticism",
+    "kind": "word",
+    "forms": [
+      "radical scepticism"
+    ],
+    "text": "Scepticism is doubting claims until proved. Radical scepticism pushes it to the extreme of doubting nearly everything, even solid facts.",
+    "audio": true
+  },
+  {
+    "k": "reflexive",
+    "t": "reflexive",
+    "kind": "word",
+    "forms": [
+      "reflexive"
+    ],
+    "text": "Reflexive means done automatically, without thinking, like a knee jerk. Reflexive cynicism is distrusting everything out of habit.",
+    "audio": true
+  },
+  {
+    "k": "cynicism",
+    "t": "cynicism",
+    "kind": "word",
+    "forms": [
+      "cynicism"
+    ],
+    "text": "Cynicism is the belief that people are mostly selfish or dishonest. The writer sees it as only half of a pair, the other half being gullibility.",
+    "audio": true
+  },
+  {
+    "k": "idiot-twin",
+    "t": "idiot twin",
+    "kind": "word",
+    "forms": [
+      "idiot twin"
+    ],
+    "text": "This is a joke figure of speech. Cynicism and gullibility look like opposites but come together: someone who trusts no real source often swallows wild claims instead.",
+    "audio": true
+  },
+  {
+    "k": "gullibility",
+    "t": "gullibility",
+    "kind": "word",
+    "forms": [
+      "gullibility"
+    ],
+    "text": "Gullibility is being too ready to believe things, easy to fool. The article says it flourishes alongside cynicism.",
+    "audio": true
+  },
+  {
+    "k": "epistemic-crisis",
+    "t": "epistemic crisis",
+    "kind": "word",
+    "forms": [
+      "epistemic crisis"
+    ],
+    "text": "Epistemic means about knowledge and how we know things. An epistemic crisis is a time when people disagree about even basic ways of deciding what is true.",
+    "audio": true
+  },
+  {
+    "k": "flat-earthers",
+    "t": "flat-earthers",
+    "kind": "word",
+    "forms": [
+      "flat-earthers"
+    ],
+    "text": "Flat-earthers are people who believe the Earth is flat, against all evidence. The writer jokes that even they are having a moment.",
+    "audio": true
+  },
+  {
+    "k": "if-the-polls-are-to-be-believed-which-of-course-they-re-not",
+    "t": "if the polls are to be believed, which of course they’re not",
+    "kind": "word",
+    "forms": [
+      "if the polls are to be believed, which of course they’re not"
+    ],
+    "text": "This is a joke built from the article's theme: the poll result says people distrust polls, so we should not trust the poll that says so. It shows how distrust loops back on itself.",
+    "audio": true
+  },
+  {
+    "k": "jaded",
+    "t": "jaded",
+    "kind": "word",
+    "forms": [
+      "jaded"
+    ],
+    "text": "Jaded means worn out and cynical after too much experience of something. Ms Holmes has reason to feel jaded about how the media tells stories.",
+    "audio": true
+  },
+  {
+    "k": "demonised",
+    "t": "demonised",
+    "kind": "word",
+    "forms": [
+      "demonised"
+    ],
+    "text": "To demonise is to portray someone as wholly evil. Ms Holmes was celebrated first, then demonised.",
+    "audio": true
+  },
+  {
+    "k": "head-snapping",
+    "t": "head-snapping",
+    "kind": "word",
+    "forms": [
+      "head-snapping"
+    ],
+    "text": "A head-snapping change is so sudden it makes you jerk your head, as if from whiplash.",
+    "audio": true
+  },
+  {
+    "k": "wall-street-journal",
+    "t": "Wall Street Journal",
+    "kind": "word",
+    "forms": [
+      "Wall Street Journal"
+    ],
+    "text": "The Wall Street Journal is the newspaper whose investigative reporting revealed that Theranos's Edison device could not do what Ms Holmes claimed.",
+    "audio": true
+  },
+  {
+    "k": "edison",
+    "t": "Edison",
+    "kind": "word",
+    "forms": [
+      "Edison"
+    ],
+    "text": "Edison was the name of the Theranos blood-testing machine. It was supposed to run many tests on tiny samples but could not.",
+    "audio": true
+  },
+  {
+    "k": "guileless",
+    "t": "guileless",
+    "kind": "word",
+    "forms": [
+      "guileless"
+    ],
+    "text": "Guileless means innocent and without trickery. Ms Holmes's wide, guileless blue eyes are described as seeming honest, though the writer hints that looks can mislead.",
+    "audio": true
+  },
+  {
+    "k": "awkward-silence",
+    "t": "awkward silence",
+    "kind": "word",
+    "forms": [
+      "awkward silence"
+    ],
+    "text": "Mr Fielder is known for letting uncomfortable pauses stretch on, so the person he is interviewing fills the gap by saying more.",
+    "audio": true
+  },
+  {
+    "k": "hinged-on",
+    "t": "hinged on",
+    "kind": "word",
+    "forms": [
+      "hinged on"
+    ],
+    "text": "If something hinged on a point, it depended entirely on it, the way a door swings on its hinge.",
+    "audio": true
+  },
+  {
+    "k": "epic-miscommunication",
+    "t": "epic miscommunication",
+    "kind": "word",
+    "forms": [
+      "epic miscommunication"
+    ],
+    "text": "The film suggests the fraud case turned on a misunderstanding: when she said the device can work, she might have meant it could one day work.",
+    "audio": true
+  },
+  {
+    "k": "hyperreality",
+    "t": "hyperreality",
+    "kind": "word",
+    "forms": [
+      "Hyperreality"
+    ],
+    "text": "Hyperreality is Baudrillard's idea of a world where staged images feel more real than reality. The heading Hyperreality bites plays on the phrase reality bites, meaning real life is harsh.",
+    "audio": true
+  },
+  {
+    "k": "acquitted",
+    "t": "acquitted",
+    "kind": "word",
+    "forms": [
+      "acquitted"
+    ],
+    "text": "To acquit is to find a defendant not guilty. The jury acquitted Ms Holmes on four counts.",
+    "audio": true
+  },
+  {
+    "k": "deadlocked",
+    "t": "deadlocked",
+    "kind": "word",
+    "forms": [
+      "deadlocked"
+    ],
+    "text": "A deadlocked jury cannot reach an agreement. It happened on three counts.",
+    "audio": true
+  },
+  {
+    "k": "counts",
+    "t": "counts",
+    "kind": "word",
+    "forms": [
+      "counts"
+    ],
+    "text": "In a trial, each separate charge is a count. Ms Holmes faced eleven counts in all.",
+    "audio": true
+  },
+  {
+    "k": "affixed",
+    "t": "affixed",
+    "kind": "word",
+    "forms": [
+      "affixed"
+    ],
+    "text": "To affix is to attach or stick on. She affixed company logos to reports, making them look approved.",
+    "audio": true
+  },
+  {
+    "k": "word-games",
+    "t": "word games",
+    "kind": "word",
+    "forms": [
+      "word games"
+    ],
+    "text": "Wordplay used to blur meaning, like arguing that can really meant could. The writer says this does not make the jury wrong.",
+    "audio": true
+  },
+  {
+    "k": "shrug",
+    "t": "shrug",
+    "kind": "word",
+    "forms": [
+      "shrug"
+    ],
+    "text": "Here a shrug means a refusal to take a question seriously. The writer says such wordplay is a shrug at the impossibility of knowing truth.",
+    "audio": true
+  },
+  {
+    "k": "surrender",
+    "t": "surrender",
+    "kind": "word",
+    "forms": [
+      "surrender"
+    ],
+    "text": "To surrender is to give up. The writer says denying we can know the truth is giving up, not a brave quest.",
+    "audio": true
+  }
+]
