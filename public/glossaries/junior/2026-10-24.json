@@ -1,0 +1,255 @@
+[
+  {
+    "k": "scourge",
+    "t": "scourge",
+    "kind": "vocab",
+    "pron": "SKURJ",
+    "forms": [
+      "scourge"
+    ],
+    "text": "A scourge is something that causes great suffering over a wide area. Here, rabies has hurt people in many countries for ages.",
+    "audio": true
+  },
+  {
+    "k": "grapple",
+    "t": "grapple",
+    "kind": "vocab",
+    "pron": "GRAP-ul",
+    "forms": [
+      "grappled"
+    ],
+    "text": "To grapple with a problem is to struggle with it and keep trying to solve it. The word comes from wrestling, where you grip your opponent.",
+    "audio": true
+  },
+  {
+    "k": "daunting",
+    "t": "daunting",
+    "kind": "vocab",
+    "pron": "DAWN-ting",
+    "forms": [
+      "daunting"
+    ],
+    "text": "Daunting means so big or hard that it makes you feel nervous. Millions of stray dogs make the job look daunting.",
+    "audio": true
+  },
+  {
+    "k": "sterilisation",
+    "t": "sterilisation",
+    "kind": "word",
+    "forms": [
+      "sterilisation"
+    ],
+    "text": "Sterilisation here means an operation on an animal so it cannot have babies. That keeps the number of dogs from growing.",
+    "audio": true
+  },
+  {
+    "k": "neutered",
+    "t": "neuter",
+    "kind": "word",
+    "forms": [
+      "neutered"
+    ],
+    "text": "To neuter an animal is to do a small operation so it cannot have puppies.",
+    "audio": true
+  },
+  {
+    "k": "rabies",
+    "t": "rabies",
+    "kind": "word",
+    "forms": [
+      "rabies"
+    ],
+    "text": "Rabies is a deadly disease caused by a virus. Dogs can pass it to people through a bite.",
+    "audio": true
+  },
+  {
+    "k": "vaccination",
+    "t": "vaccination",
+    "kind": "word",
+    "forms": [
+      "vaccination"
+    ],
+    "text": "Vaccination means giving a shot that teaches the body to fight a germ, so it cannot catch the disease.",
+    "audio": true
+  },
+  {
+    "k": "stray",
+    "t": "stray",
+    "kind": "word",
+    "forms": [
+      "stray"
+    ],
+    "text": "A stray dog has no home or owner and wanders the streets.",
+    "audio": true
+  },
+  {
+    "k": "mutts",
+    "t": "mutt",
+    "kind": "word",
+    "forms": [
+      "mutts"
+    ],
+    "text": "A mutt is a dog that is a mix of different breeds, not one special kind.",
+    "audio": true
+  },
+  {
+    "k": "notched",
+    "t": "notched",
+    "kind": "word",
+    "forms": [
+      "notched"
+    ],
+    "text": "Notched means having a small cut or nick taken out of the edge. Here, a little piece is cut from a dog's ear as a mark.",
+    "audio": true
+  },
+  {
+    "k": "laced",
+    "t": "lace",
+    "kind": "word",
+    "forms": [
+      "laced"
+    ],
+    "text": "Laced with means mixed with something secretly, usually something harmful. Here, the meat had poison hidden in it.",
+    "audio": true
+  },
+  {
+    "k": "strychnine",
+    "t": "strychnine",
+    "kind": "word",
+    "forms": [
+      "strychnine"
+    ],
+    "text": "Strychnine is a deadly poison. People once used it to kill animals.",
+    "audio": true
+  },
+  {
+    "k": "marksmen",
+    "t": "marksman",
+    "kind": "word",
+    "forms": [
+      "marksmen"
+    ],
+    "text": "Marksmen are people who are very good at shooting. They aim carefully.",
+    "audio": true
+  },
+  {
+    "k": "appalled",
+    "t": "appalled",
+    "kind": "word",
+    "forms": [
+      "appalled"
+    ],
+    "text": "Appalled means shocked and upset by something wrong or cruel.",
+    "audio": true
+  },
+  {
+    "k": "patchy",
+    "t": "patchy",
+    "kind": "word",
+    "forms": [
+      "patchy"
+    ],
+    "text": "Patchy means uneven, good in some places and missing in others. The program worked in some areas but not others.",
+    "audio": true
+  },
+  {
+    "k": "implementation",
+    "t": "implementation",
+    "kind": "word",
+    "forms": [
+      "implementation"
+    ],
+    "text": "Implementation is the act of carrying out a plan. A good plan still fails if it is carried out badly.",
+    "audio": true
+  },
+  {
+    "k": "transmission",
+    "t": "transmission",
+    "kind": "word",
+    "forms": [
+      "transmission"
+    ],
+    "text": "Transmission is how a disease passes from one animal or person to another.",
+    "audio": true
+  },
+  {
+    "k": "decree",
+    "t": "decree",
+    "kind": "word",
+    "forms": [
+      "decree"
+    ],
+    "text": "A decree is an official order from a ruler. Here, the king ordered the whole country to act.",
+    "audio": true
+  },
+  {
+    "k": "humane",
+    "t": "humane",
+    "kind": "word",
+    "forms": [
+      "humane"
+    ],
+    "text": "Humane means kind and caring, without needless pain. A humane plan treats animals gently.",
+    "audio": true
+  },
+  {
+    "k": "compassionate",
+    "t": "compassionate",
+    "kind": "word",
+    "forms": [
+      "compassionate"
+    ],
+    "text": "Compassionate means feeling sorry for someone's suffering and wanting to help.",
+    "audio": true
+  },
+  {
+    "k": "free-roaming",
+    "t": "free-roaming",
+    "kind": "word",
+    "forms": [
+      "free-roaming"
+    ],
+    "text": "Free-roaming means wandering around without an owner or fence.",
+    "audio": true
+  },
+  {
+    "k": "volunteer-corps",
+    "t": "volunteer corps",
+    "kind": "word",
+    "forms": [
+      "volunteer corps"
+    ],
+    "text": "A corps is an organized group of people working together. These volunteers worked without pay.",
+    "audio": true
+  },
+  {
+    "k": "rabid",
+    "t": "rabid",
+    "kind": "word",
+    "forms": [
+      "rabid"
+    ],
+    "text": "A rabid animal is sick with rabies, so its bite can pass on the disease.",
+    "audio": true
+  },
+  {
+    "k": "bite-as-well-as-bark",
+    "t": "give the campaign bite as well as bark",
+    "kind": "phrase",
+    "forms": [
+      "bite as well as bark"
+    ],
+    "text": "This plays on the saying \"his bark is worse than his bite.\" The campaign had plenty of talk, and the decree gave it real power to act.",
+    "audio": true
+  },
+  {
+    "k": "himalayan",
+    "t": "Himalayan",
+    "kind": "word",
+    "forms": [
+      "Himalayan"
+    ],
+    "text": "Himalayan means from the Himalayas, the tallest mountain range in the world, north of India.",
+    "audio": true
+  }
+]

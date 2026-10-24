@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-24",
+  "title": "Tackling stray dogs in Bhutan",
+  "articleUrl": "https://www.economist.com/asia/2026/10/22/tackling-stray-dogs-in-bhutan",
+  "articlePageUrl": "/articles/junior/2026-10-24.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "scourge",
+      "partOfSpeech": "noun",
+      "pronunciation": "SKURJ",
+      "articleQuote": "The disease, a global scourge, is especially deadly in South Asia.",
+      "meaning": "A scourge is something that causes great suffering or trouble over a wide area, often for a long time. In the article, rabies is called a global scourge because it has hurt people in many countries for ages, and in South Asia it kills thousands every year.",
+      "examples": [
+        "Head lice are the scourge of every school in the fall, because they spread from kid to kid so quickly.",
+        "For farmers in the old days, locusts were a scourge that could eat a whole field in an afternoon."
+      ]
+    },
+    {
+      "word": "grapple",
+      "partOfSpeech": "verb",
+      "pronunciation": "GRAP-ul",
+      "articleQuote": "Like its much bigger neighbours, Bhutan has long grappled with stray mutts.",
+      "meaning": "To grapple with a problem is to struggle with it, trying hard to find an answer. The word comes from wrestling, where grappling means gripping your opponent. In the article, Bhutan struggled for many years to deal with its stray dogs before it found a plan that worked.",
+      "examples": [
+        "My brother has been grappling with his math homework all evening, and he still hasn't solved the last problem.",
+        "The team grappled with how to share one soccer field among three practices."
+      ]
+    },
+    {
+      "word": "daunting",
+      "partOfSpeech": "adjective",
+      "pronunciation": "DAWN-ting",
+      "articleQuote": "The scale of the problem in places like Bangladesh and India, which host millions of stray dogs, many of them rabid, may seem daunting.",
+      "meaning": "Daunting describes a job that looks so big or so hard that it makes you feel nervous or unsure you can do it. In the article, millions of stray dogs in India and Bangladesh make the task look daunting, but the writer says it can be done a little at a time.",
+      "examples": [
+        "Cleaning the whole garage in one afternoon felt daunting until we split it into small jobs.",
+        "The tall climbing wall looked daunting to the new kids, but the first few steps were easy."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Rabies",
+      "articleQuote": "Those marks signify sterilisation and vaccination against rabies.",
+      "meaning": "Why would a country care so much about dogs' ears? Because of a deadly disease called **rabies**. Rabies is an illness caused by a virus. It attacks the brain and nerves. Animals that have it, such as dogs, can pass it to people through a bite, because the virus lives in the animal's spit.\n\nHere is the scary part. Once the signs of rabies show up in a person, it almost always kills them. But here is the good part: it can be stopped. If a person is treated soon after a bite, with shots, the virus can be stopped before it reaches the brain. And a dog that has had a **vaccine**, a shot that teaches the body to fight a germ, cannot catch rabies and cannot pass it on.\n\nThat is why the plan in Bhutan targets the dogs. Think of the dogs as the delivery trucks for the virus. If no truck carries it, nobody gets the package. Vaccinate the dogs, and the virus has nowhere to travel, so people stay safe. Notching the ears is like a sticker saying, \"This one is done.\"\n\nSo the takeaway: rabies is deadly once it starts but easy to prevent, and the best way to protect people is to vaccinate the animals that spread it."
+    },
+    {
+      "name": "Herd immunity",
+      "articleQuote": "Over nine years some 92,000 animals were treated, but vaccination rates never got close to the 70% needed to break transmission.",
+      "meaning": "Why did treating 92,000 dogs not end the problem? The answer is an idea called **herd immunity**. A group has herd immunity when enough of its members are protected by a vaccine that a disease can no longer spread through the whole group, even though a few animals are still unprotected.\n\nPicture a classroom where you are passing a note. If most kids refuse to pass it on, the note stops moving quickly, and it never reaches the far side of the room. A germ is like that note. It needs a chain of new victims to keep going. If enough dogs are vaccinated, most of the chain is broken, and the virus keeps running into dogs it cannot infect. It fizzles out.\n\nBut \"enough\" matters a lot. For the rabies virus in dogs, the article says about 70 out of every 100 dogs need protection. If only 40 or 50 are vaccinated, there are still plenty of paths, and the virus keeps traveling. That is why the early, patchy effort in Bhutan did not work, and why the later push, which reached 90%, did.\n\nSo the takeaway: protecting most of a group, not just some of it, is what makes a disease stop spreading, and that protects even the ones who were missed."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "How can a visitor tell that a dog in Bhutan has been sterilised and vaccinated?",
+      "options": [
+        "It wears a collar",
+        "It has notched ears",
+        "It has a painted tail",
+        "It stays inside a shelter"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says the dogs on Bhutan's side of the border have notched ears, which marks sterilisation and vaccination."
+    },
+    {
+      "question": "Why did Bhutan's first approach in the 1980s fail?",
+      "options": [
+        "It appalled the people, and dog numbers kept rising anyway",
+        "It cost too little money",
+        "The dogs left the country",
+        "Nobody knew about rabies"
+      ],
+      "answerIndex": 0,
+      "explanation": "Shooting and poisoning dogs appalled Bhutan's mostly Buddhist people, and it did not work: dog numbers kept rising."
+    },
+    {
+      "question": "What does \"scourge\" mean in the article?",
+      "options": [
+        "A helpful tool",
+        "A rare gift",
+        "Something that causes great suffering over a wide area",
+        "A kind of dog"
+      ],
+      "answerIndex": 2,
+      "explanation": "Calling rabies a global scourge means it has caused great suffering in many places."
+    },
+    {
+      "question": "Why did the gentler program from 2009 not break the spread of rabies at first?",
+      "options": [
+        "The dogs were too hard to catch",
+        "Vaccination rates never got close to the 70% needed",
+        "The program treated too many dogs",
+        "People refused to take part"
+      ],
+      "answerIndex": 1,
+      "explanation": "Even with 92,000 animals treated, too few dogs were protected to reach the level needed to stop the virus from spreading."
+    },
+    {
+      "question": "What does the writer suggest other Asian countries do?",
+      "options": [
+        "Wait for a royal decree",
+        "Copy Bhutan's example, working one area at a time and pooling resources",
+        "Stop vaccinating dogs",
+        "Close their borders"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article ends by saying local governments could follow Bhutan's example and tackle the problem one area at a time."
+    }
+  ]
+}
