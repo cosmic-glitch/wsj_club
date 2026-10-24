@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-24",
+  "title": "Leadership lessons from Napoleon",
+  "articleUrl": "https://www.economist.com/culture/2026/10/22/leadership-lessons-from-napoleon",
+  "articlePageUrl": "/articles/2026-10-24.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "venerated",
+      "partOfSpeech": "adjective",
+      "pronunciation": "VEN-er-ay-tid",
+      "articleQuote": "the army’s most venerated figures and the pinnacle of French society",
+      "meaning": "Someone or something venerated is treated with deep respect, often close to reverence, because of age, achievement or holiness. You might venerate a saint, an ancestor or a national hero. The article says Napoleon's marshals were meant to be the army's most venerated figures, so the title came with honor and ceremony as well as power.",
+      "examples": [
+        "The venerated old teacher was greeted with a standing ovation at every reunion.",
+        "In some cultures grandparents are venerated, and their advice is rarely questioned."
+      ]
+    },
+    {
+      "word": "galvanise",
+      "partOfSpeech": "verb",
+      "pronunciation": "GAL-vuh-nize",
+      "articleQuote": "personalised advice on how to galvanise the troops",
+      "meaning": "To galvanise people is to shock or excite them into action, as if giving them a jolt of electricity (the word comes from the 18th-century scientist Luigi Galvani, who made frog legs twitch with current). A speech, a crisis or a leader can galvanise a crowd. Napoleon coached his marshals on how to galvanise their soldiers, meaning stir them up so they would fight harder.",
+      "examples": [
+        "The unfair ruling galvanised the students, and hundreds signed the petition in one day.",
+        "A strong opening goal galvanised the home team."
+      ]
+    },
+    {
+      "word": "bereft",
+      "partOfSpeech": "adjective",
+      "pronunciation": "bih-REFT",
+      "articleQuote": "ultimately left him almost completely bereft of the support he so desperately needed",
+      "meaning": "To be bereft of something is to be left without it, especially something you badly need or love. It often suggests loss: a bereft person has had something taken away. The article says Napoleon's own habits left him bereft of support at Waterloo, with only two marshals at his side.",
+      "examples": [
+        "After the storm the village was bereft of power and clean water for a week.",
+        "She felt bereft when her best friend moved to another country."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Delegation versus micromanagement",
+      "articleQuote": "Napoleon insisted on total control, cramped his marshals’ autonomy and undermined their effectiveness.",
+      "meaning": "Management. Delegation means handing a task to someone and trusting them to do it their way, while micromanagement means watching and directing every small step yourself. Imagine a group project where one student insists on rewriting everyone's paragraph and approving every comma. The work slows down, the others stop trying, and nothing happens when that student is absent.\n\nNapoleon began with a brilliant version of organization. His chief of staff Berthier split the army staff into four branches, collected twice-daily reports on every soldier, and sent them to Napoleon as huge volumes of information, like early spreadsheets. That system let one man steer a huge army. But as the empire grew, Napoleon wanted to decide everything himself. Marshals who could have made quick decisions on the spot learned to wait for orders, and the army became less effective.\n\nThe lesson is that good leaders build systems that work without them, and trust capable people to use their judgment. A leader who must control everything becomes the bottleneck.\n\nNext time you lead a team, ask which decisions you could hand to someone else."
+    },
+    {
+      "name": "Incentives: rewards, praise and rivalry",
+      "articleQuote": "Rather than generating creative tension, he fostered destructive rivalry.",
+      "meaning": "Management and psychology. An incentive is anything that pushes people to act in a certain way, such as pay, praise, a promotion or the fear of being blamed. Good incentives are fair and predictable, so people know that hard work will be noticed. Think of a class where the teacher gives gold stars for effort: students try harder. If the stars are handed out randomly, or the teacher blames one student for a group's mistake, students stop trusting the system.\n\nNapoleon was a master of incentives at first. He gave his marshals titles, land, uniforms and even crowns, and praised or criticized them in public bulletins. A little competition can push people to do their best, which is the creative tension the article mentions. But Napoleon later overlooked deserving marshals and used others as scapegoats, and he even boasted of keeping his generals jealous of each other. The marshals began to fight one another, and by Waterloo most had abandoned him.\n\nIncentives that reward teamwork build loyalty. Incentives that pit teammates against each other can wreck the team.\n\nWhen you see a team reward system, ask whether it makes people help each other or compete against each other."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What was the job of the 18 (later 26) \"marshals of the empire\" Napoleon appointed?",
+      "options": [
+        "To act as judges in the French courts",
+        "To be the army's elite leadership team, carrying out his orders and his new way of warfare",
+        "To collect taxes from conquered lands",
+        "To write the history of his campaigns"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article calls them the swords around Napoleon's throne, an elite leadership team built to carry out his orders and his new theory of warfare."
+    },
+    {
+      "question": "What did Louis-Alexandre Berthier, Napoleon's chief of staff, do?",
+      "options": [
+        "He led the cavalry charge at Austerlitz",
+        "He ran the army's information system, with staff branches and detailed regular reports",
+        "He designed the marshals' uniforms",
+        "He negotiated peace treaties with Russia"
+      ],
+      "answerIndex": 1,
+      "explanation": "Berthier divided the staff into four branches and demanded twice-daily updates on every soldier, giving Napoleon a flow of detail like a proto-spreadsheet."
+    },
+    {
+      "question": "According to the article, why did Napoleon's management system eventually fail?",
+      "options": [
+        "He ran out of money to pay his marshals",
+        "The marshals refused to wear their uniforms",
+        "He insisted on total control, rewarded people capriciously and stoked rivalry among his marshals",
+        "Berthier retired and no one replaced him"
+      ],
+      "answerIndex": 2,
+      "explanation": "Napoleon cramped his marshals' autonomy, overlooked deserving people, used some as scapegoats and fostered destructive rivalry."
+    },
+    {
+      "question": "What does \"galvanise\" mean in \"how to galvanise the troops\"?",
+      "options": [
+        "To stir people up and spur them into action",
+        "To send them home",
+        "To count them carefully",
+        "To feed them well"
+      ],
+      "answerIndex": 0,
+      "explanation": "To galvanise is to jolt people into action, as Napoleon urged his marshals to electrify the imagination of their soldiers."
+    },
+    {
+      "question": "What does the article say about Napoleon's support when he faced Waterloo in 1815?",
+      "options": [
+        "He had all 26 marshals beside him",
+        "He was left almost bereft of support, with only two marshals accompanying him",
+        "He had refused all help from the marshals",
+        "He was supported by Caesar's old legions"
+      ],
+      "answerIndex": 1,
+      "explanation": "By his last battle only two marshals accompanied the emperor, leaving him bereft of the support he needed."
+    }
+  ]
+}
