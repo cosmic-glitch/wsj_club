@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-25",
+  "title": "How the 2010s remade business",
+  "articleUrl": "https://www.economist.com/business/2026/10/21/how-the-2010s-remade-business",
+  "articlePageUrl": "/articles/2026-10-25.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "revisionism",
+      "partOfSpeech": "noun",
+      "pronunciation": "rih-VIZH-uh-niz-um",
+      "articleQuote": "Silicon Valley is ripest for 2010s-revisionism.",
+      "meaning": "Revisionism is the practice of taking a second look at how a period or event is usually remembered and arguing that the standard story is wrong or incomplete. A revisionist historian might claim a famous villain had a point, or that a celebrated victory mattered less than people think. Here the Economist says the 2010s are remembered as an embarrassing decade, and a revisionist look shows they quietly shaped the businesses of today.",
+      "examples": [
+        "Some historians practise revisionism, arguing that the old textbook account of the war leaves out important facts.",
+        "Her essay was a bit of revisionism: it claimed the \"boring\" decade had actually changed everything."
+      ]
+    },
+    {
+      "word": "artefact",
+      "partOfSpeech": "noun",
+      "pronunciation": "AR-tuh-fact",
+      "articleQuote": "Today it reads like an artefact from the high point of corporate high-mindedness.",
+      "meaning": "An artefact (American spelling: artifact) is an object made by people that survives from an earlier time, like a pot dug up by archaeologists or a letter in a museum. It can also describe an idea or document that feels like a relic of its era. The article says the 2019 Business Roundtable pledge to put stakeholders ahead of shareholders now reads like a museum piece from a more idealistic time.",
+      "examples": [
+        "The museum displayed an ancient clay artefact that was almost three thousand years old.",
+        "My grandfather's flip phone feels like an artefact from another era."
+      ]
+    },
+    {
+      "word": "exacting",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ig-ZAK-ting",
+      "articleQuote": "Effective altruism is a philosophy whose exacting ethical calculus grasps at the universal",
+      "meaning": "Something exacting demands great care, precision or effort. An exacting coach accepts nothing sloppy, and an exacting test leaves no room for guesses. The article calls effective altruism's ethical calculus exacting because it tries to measure, very precisely, how much good each action does and then to pick the best one.",
+      "examples": [
+        "The chef was so exacting that he sent back a plate because one carrot was cut unevenly.",
+        "Landing a rocket needs exacting calculations, because a tiny error can ruin the mission."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Public-benefit corporation",
+      "articleQuote": "Anthropic and OpenAI are both structured as public-benefit corporations, a form that, in theory, makes it easier to balance the interests of society and shareholders.",
+      "meaning": "Law and business. A corporation is a company that the law treats as its own legal person, owned by shareholders who put money in. Normally, company leaders in the US are expected to run it mainly to make money for those shareholders, and a shareholder can complain if they put something else first. That makes it risky for a company to say \"we will also care about the planet, or about safe technology, even when it costs profit.\"\n\nA **public-benefit corporation** (PBC) changes that rule in the company's founding documents. It is still a for-profit business with shareholders, but it must name a public goal it is also pursuing, and its leaders are legally allowed (and expected) to weigh that goal against profit. Think of a sneaker company that promises to give a pair to a kid in need for every pair sold: as a PBC, the promise is part of its legal purpose, not just advertising.\n\nCompanies pick the state where they register, and Delaware is the favorite in the US because its business laws are well tested; the article notes that the PBC form there dates from 2013. It is a way of writing \"we are more than profit\" into the rules, though critics say the promise is weak, since the company still mostly judges itself.\n\nWhen a company claims to serve society, ask what its legal form actually requires of it."
+    },
+    {
+      "name": "Special-purpose vehicle",
+      "articleQuote": "Many of the capital-markets tricks used today, from special-purpose vehicles to offshore insurance capital, were tried and tested in the 2010s.",
+      "meaning": "Finance. Building a giant data centre costs tens of billions of dollars, far more than most companies want to put on their own books. One solution is a **special-purpose vehicle** (SPV): a separate, small company set up for one job, such as owning one project. Special-purpose means it exists only for that job, and vehicle means it is a container for money and risk.\n\nHere is how it works. A tech firm creates an SPV to own a data centre. The SPV borrows money from investors and banks, using the data centre itself, and the rent the tech firm pays to use it, as the promise of repayment. If the project fails, the lenders can claim what is in the SPV, but usually not the parent company's other assets. That separation lets the parent borrow without that debt showing up on its main balance sheet, and lets investors choose exactly which risk they want.\n\nSPVs are useful, but the same hiding of debt in separate boxes helped make the 2008 financial crisis hard to see coming, which is why rules on banks were tightened afterwards.\n\nWhen a huge project is funded, ask which company actually owes the money, and who is left holding the loss if it goes wrong."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "How does the Economist describe the 2010s in its opening?",
+      "options": [
+        "As a cringeworthy decade that was nonetheless revolutionary for business",
+        "As a boring decade with no lasting changes",
+        "As a decade that was better than the 1990s in every way",
+        "As a decade of constant economic growth with no problems"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article admits the 2010s were an embarrassment in many ways, but calls them a revolutionary decade that explains business today."
+    },
+    {
+      "question": "According to the article, how did the 2010s help make America's current construction boom possible?",
+      "options": [
+        "Through the shale revolution, which made America a net energy exporter, and new ways of raising capital",
+        "By banning all foreign investment",
+        "By ending all rules on banks",
+        "By moving all factories to Europe"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article credits shale and a transformed lending system, including capital-markets tricks like special-purpose vehicles, for funding the data-centre boom."
+    },
+    {
+      "question": "What does \"artefact\" mean in \"Today it reads like an artefact from the high point of corporate high-mindedness\"?",
+      "options": [
+        "A relic from an earlier time",
+        "A legal contract that is still being negotiated",
+        "A mistake in a document",
+        "A very expensive product"
+      ],
+      "answerIndex": 0,
+      "explanation": "An artefact is something left over from an earlier time; the 2019 Business Roundtable pledge now looks like a relic of an idealistic moment."
+    },
+    {
+      "question": "What is true of a public-benefit corporation such as Anthropic or OpenAI?",
+      "options": [
+        "It is a for-profit company that must also pursue a stated public goal",
+        "It is a government agency",
+        "It cannot have any shareholders",
+        "It is not allowed to make a profit"
+      ],
+      "answerIndex": 0,
+      "explanation": "A PBC is still a business with shareholders, but its legal purpose includes a public benefit that leaders can weigh against profit."
+    },
+    {
+      "question": "Which 2010s idea does the article say has become mainstream policy talk in the AI-obsessed 2020s?",
+      "options": [
+        "Universal basic income",
+        "Keeping interest rates at zero forever",
+        "Banning gig work",
+        "Abolishing all taxes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says universal basic income was a fringe idea in the 2010s but is now discussed as serious policy."
+    }
+  ]
+}
