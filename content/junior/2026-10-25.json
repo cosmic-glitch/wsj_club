@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-25",
+  "title": "Are some protein powders better than others?",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/23/are-some-protein-powders-better-than-others",
+  "articlePageUrl": "/articles/junior/2026-10-25.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "touted",
+      "partOfSpeech": "verb",
+      "pronunciation": "TOWT-ed",
+      "articleQuote": "Such concoctions are often touted as offering greater benefits owing to their more refined nature.",
+      "meaning": "To tout something is to praise it loudly and often, usually to get people to buy it or believe in it. In the article, the makers of fancier protein powders keep touting them as better, but the research found little proof.",
+      "examples": [
+        "The cereal box touted its new flavor as \"the best breakfast ever,\" but my sister thought it tasted like cardboard.",
+        "The coach touted the new player as a star before anyone had seen her play."
+      ]
+    },
+    {
+      "word": "prolonged",
+      "partOfSpeech": "adjective",
+      "pronunciation": "pruh-LAWNGD",
+      "articleQuote": "those who had received a full dose of whey enjoyed the most prolonged period of muscle synthesis.",
+      "meaning": "Prolonged describes something that goes on for longer than usual or longer than expected. In the article, the men who took a full dose of whey had muscles that kept building for a longer stretch of time than the others.",
+      "examples": [
+        "After a prolonged wait at the doctor's office, I had read every magazine in the room.",
+        "The team's prolonged winning streak lasted the whole season."
+      ]
+    },
+    {
+      "word": "unadulterated",
+      "partOfSpeech": "adjective",
+      "pronunciation": "un-uh-DUL-tuh-ray-ted",
+      "articleQuote": "a full dose of unadulterated whey is the best bet.",
+      "meaning": "Unadulterated means pure, with nothing else mixed in or added. In the article, unadulterated whey is plain whey powder without extra fillers, and the writer says it works as well as the fancier versions.",
+      "examples": [
+        "My grandpa drinks unadulterated orange juice, with no sugar or water added.",
+        "The kids' laughter at the funny movie was unadulterated joy."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Amino acids",
+      "articleQuote": "one of the 20 amino acids from which proteins are composed.",
+      "meaning": "Why does a protein powder talk so much about leucine? Because leucine is an **amino acid**, and amino acids are what proteins are made of.\n\nThink of a protein as a long necklace, and each amino acid as one bead. There are 20 kinds of beads. Your body strings them together in different orders to build different proteins, such as the ones in your muscles, skin, and hair.\n\nYour body can make some of the beads itself. But nine of them, called **essential** amino acids, it cannot make. They have to come from food, like milk, eggs, meat, beans, or peas. Leucine is one of those nine. When you eat protein, your body breaks the necklaces back into loose beads, then uses them to build new necklaces where it needs them, such as in muscles that got tired from sports.\n\nSo the takeaway: protein is a chain of amino acids, and the essential ones must come from what you eat, because your body cannot build them from scratch."
+    },
+    {
+      "name": "Whey and casein",
+      "articleQuote": "Casein, the protein of the solid curds from which whey is separated during cheesemaking, is less leucine-heavy",
+      "meaning": "Where does protein powder come from? Often from milk, and milk has two main kinds of protein: **whey** and **casein**.\n\nHere is how it works. When a cheesemaker adds something to warm milk, the milk splits in two. The thick, solid part is called curds. It holds the casein, and it becomes cheese. The thin, watery liquid left over is whey, and it holds whey protein. For a long time, whey was thrown away as waste. Then, in 1936, a pharmacist figured out how to dry it into a powder.\n\nThe two proteins act differently. Whey is the quick one. Your body uses it fast, and it has more leucine, so it works well right after exercise. Casein is the slow one. It breaks down gradually, like a thick sludge instead of a thin soup.\n\nSo the takeaway: whey and casein are the two proteins in milk, split apart by cheesemaking, and whey is the fast one that suits the time just after a workout."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What was whey before it became a protein powder?",
+      "options": [
+        "A kind of bean",
+        "The liquid waste left over from making cheese",
+        "A plant used for medicine",
+        "A type of egg"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says that in 1936 a pharmacist turned whey, the liquid waste from cheesemaking, into a protein powder."
+    },
+    {
+      "question": "Why is leucine called \"both brick and bricklayer\"?",
+      "options": [
+        "It gives the signal to build muscle and also supplies the raw material",
+        "It is heavy and hard like a brick",
+        "It only works in older people",
+        "It is found only in bricks of cheese"
+      ],
+      "answerIndex": 0,
+      "explanation": "Leucine switches on muscle building and is also one of the materials used to build the muscle."
+    },
+    {
+      "question": "What does \"touted\" mean in the article?",
+      "options": [
+        "Hidden from the public",
+        "Praised loudly to make people believe or buy",
+        "Tested in a lab",
+        "Thrown away"
+      ],
+      "answerIndex": 1,
+      "explanation": "Fancier powders are often touted as better, meaning their makers keep praising them."
+    },
+    {
+      "question": "In the 2012 study, which group had the longest period of muscle building?",
+      "options": [
+        "Those who took no powder",
+        "Those who took only extra leucine",
+        "Those who took a full dose of whey",
+        "Those who took casein"
+      ],
+      "answerIndex": 2,
+      "explanation": "Although leucine triggered the muscles' response in all groups, the full-whey group had the most prolonged muscle building."
+    },
+    {
+      "question": "What does the writer advise about ingredients like glycine and taurine?",
+      "options": [
+        "They are the best part of the powder",
+        "They make a powder's amino-acid count look bigger while doing little for muscle",
+        "They replace leucine",
+        "They are only found in pea powder"
+      ],
+      "answerIndex": 1,
+      "explanation": "These cheap amino acids inflate the label's count but do little to stimulate muscle growth, so they are best avoided."
+    }
+  ]
+}
