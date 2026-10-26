@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-26",
+  "title": "How Ella Langley two-stepped to the top of the charts",
+  "articleUrl": "https://www.economist.com/culture/2026/10/22/how-ella-langley-two-stepped-to-the-top-of-the-charts",
+  "articlePageUrl": "/articles/junior/2026-10-26.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "astute",
+      "partOfSpeech": "adjective",
+      "pronunciation": "uh-STOOT",
+      "articleQuote": "an astute use of social media.",
+      "meaning": "Astute describes someone who is quick to notice things and uses what they notice to make smart choices. In the article, Ella Langley is astute because she saw how to use social media to get her songs heard.",
+      "examples": [
+        "The astute shopper noticed the sale ended Friday, so she bought her sneakers on Thursday.",
+        "My astute little brother figured out where we hid his birthday present."
+      ]
+    },
+    {
+      "word": "hallowed",
+      "partOfSpeech": "adjective",
+      "pronunciation": "HAL-ohd",
+      "articleQuote": "a hallowed venue in the city that made stars of Loretta Lynn and Dolly Parton.",
+      "meaning": "Hallowed describes a place or thing that people treat as very special and deserving of great respect, often because of its long history. In the article, the Grand Ole Opry is hallowed because famous singers have played there for decades.",
+      "examples": [
+        "Fenway Park is a hallowed ground for baseball fans.",
+        "Our school's trophy case is hallowed; nobody is allowed to touch it."
+      ]
+    },
+    {
+      "word": "grating",
+      "partOfSpeech": "adjective",
+      "pronunciation": "GRAY-ting",
+      "articleQuote": "without its hooks becoming grating.",
+      "meaning": "Grating describes a sound or a way of acting that irritates you, like something scraping on your nerves. In the article, the song can be played again and again without its catchy parts starting to feel annoying.",
+      "examples": [
+        "The squeak of the chalk on the board was grating.",
+        "My cousin's loud laugh gets grating after an hour in the car."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Billboard Hot 100",
+      "articleQuote": "the longest stint atop the Billboard Hot 100, a chart of America’s most popular songs",
+      "meaning": "When people say a song is \"number one,\" what does that actually mean? Most of the time they mean it is number one on the **Billboard Hot 100**.\n\nThe Hot 100 is a list of the 100 most popular songs in America. A company called Billboard makes a new list every week. Think of it like a scoreboard for songs. To decide who is on top, Billboard adds up how often a song is streamed online, how often it plays on the radio, and how many people buy it.\n\nBecause a new list comes out each week, a song has to keep winning to stay on top. Many songs reach number one for one week and then fall. Staying there for 24 weeks in a row, as Ella Langley's song did, is like a team winning the league for half a year.\n\nSo the takeaway: the Hot 100 is a weekly scoreboard of America's most popular songs, and a long time at number one means people keep choosing the song week after week."
+    },
+    {
+      "name": "Record deal",
+      "articleQuote": "She signed a record deal in 2023",
+      "meaning": "Why did Ella Langley have to \"sign a record deal\" before she became a big star? Because most singers need a company to help them.\n\nA **record deal** is a contract between a singer and a **record label**, which is a company that helps make and sell music. The label pays for things like studio time, advertising, and tours. In return, the label gets to keep a share of the money the music earns.\n\nImagine you are a great baker but have no shop. A label is like a business partner who gives you the shop and puts up the signs, and then takes a slice of every sale. Singers who sign are often glad for the help, but they also give up part of their earnings.\n\nSo the takeaway: a record deal is a contract in which a label pays to launch a singer's music and then shares in the profits.\n\nThe article adds a twist: Ella Langley got a publishing deal after a video of her went viral, so the internet can now open the door to these deals."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What record did Ella Langley's song \"Choosin' Texas\" break?",
+      "options": [
+        "The most songs sold in one day",
+        "The longest time at number one on the Billboard Hot 100",
+        "The loudest concert ever",
+        "The youngest singer to win an award"
+      ],
+      "answerIndex": 1,
+      "explanation": "The song spent 24 weeks at number one, longer than Mariah Carey's Christmas song."
+    },
+    {
+      "question": "What does \"astute\" mean in the article?",
+      "options": [
+        "Careless and slow",
+        "Quick to notice things and use them well",
+        "Very loud",
+        "Old-fashioned"
+      ],
+      "answerIndex": 1,
+      "explanation": "Astute means smart at noticing and using useful things, like how Ella Langley used social media."
+    },
+    {
+      "question": "How did social media help Ella Langley's career?",
+      "options": [
+        "A video of her singing in her car went viral, and a publishing deal followed",
+        "She was never on social media",
+        "She bought followers",
+        "Social media only hurt her career"
+      ],
+      "answerIndex": 0,
+      "explanation": "Her 2021 car video went viral, and a publishing deal followed soon after."
+    },
+    {
+      "question": "What does a record label usually do for a singer?",
+      "options": [
+        "It writes all the songs for free",
+        "It pays to make and promote the music, then shares in the profits",
+        "It stops the singer from performing",
+        "It only sells tickets"
+      ],
+      "answerIndex": 1,
+      "explanation": "A label pays for studio time, advertising and tours, and in return keeps a share of the money."
+    },
+    {
+      "question": "Why does the article say people can listen to \"Choosin' Texas\" again and again?",
+      "options": [
+        "Its hooks do not become grating",
+        "It is only thirty seconds long",
+        "It is free to download",
+        "It has no words"
+      ],
+      "answerIndex": 0,
+      "explanation": "The mellow song can be replayed without its catchy parts becoming annoying, which helps it stay in the charts."
+    }
+  ]
+}
