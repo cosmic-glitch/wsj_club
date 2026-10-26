@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-26",
+  "title": "Lula, the great survivor, makes history",
+  "articleUrl": "https://www.economist.com/the-americas/2026/10/26/lula-the-great-survivor-makes-history",
+  "articlePageUrl": "/articles/2026-10-26.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "bellwether",
+      "partOfSpeech": "noun",
+      "pronunciation": "BELL-weth-er",
+      "articleQuote": "a 42-year old evangelical congressman from Minas Gerais, Brazil’s bellwether state",
+      "meaning": "A bellwether is something whose behaviour is a good early sign of what will happen more widely. The word comes from shepherds, who hung a bell on the lead sheep (a wether) so the flock would follow it. In politics, a bellwether state or town is one whose voters tend to land on the winning side, so watching it tells you how the whole country may vote. The article calls Minas Gerais Brazil's bellwether state for exactly that reason.",
+      "examples": [
+        "Ohio was long treated as a bellwether in American presidential races, since it usually backed the eventual winner.",
+        "The sneaker store's sales are a bellwether for what teenagers will be wearing next season."
+      ]
+    },
+    {
+      "word": "annul",
+      "partOfSpeech": "verb",
+      "pronunciation": "uh-NUL",
+      "articleQuote": "said he would try to get the election result annulled",
+      "meaning": "To annul something is to declare officially that it was never valid, wiping it out as if it had never happened. Courts annul marriages and contracts, and in politics a result can be annulled if a body with the power finds it was unfair or illegal. Here Mr Bolsonaro, having lost, says he will try to get the whole election result thrown out, even though the article notes that he himself had asked for the longer voting hours he now complains about.",
+      "examples": [
+        "The judge agreed to annul the contract because one side had been tricked into signing it.",
+        "The school threatened to annul the race results if anyone was found to have cheated."
+      ]
+    },
+    {
+      "word": "lavish",
+      "partOfSpeech": "adjective",
+      "pronunciation": "LAV-ish",
+      "articleQuote": "Incumbents in Brazil often make lavish giveaways before elections",
+      "meaning": "Lavish describes something given or spent in very generous, even extravagant amounts: a lavish party, a lavish gift. It often hints that the generosity goes beyond what is sensible. In the article, Brazil's leaders routinely hand out big benefits before a vote to win favour, and the Economist says Lula's giveaways were generous even by that standard, which could cost the government dearly later.",
+      "examples": [
+        "For her birthday, her uncle threw a lavish party with a live band and three cakes.",
+        "The mayor was criticised for lavish spending on a new stadium while the roads fell apart."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The run-off election",
+      "articleQuote": "No presidential hopeful since the return of democracy in 1985 had lost the first round and won the run-off.",
+      "meaning": "Civics. In the US, the candidate with the most electoral votes wins, so a crowded field rarely matters. Brazil does it differently. In the **first round** many candidates compete. If nobody gets more than half the votes, the top two face each other in a **run-off** a few weeks later, so the winner always has a majority.\n\nThat changes the game. Voters whose favourite was knocked out must pick between the finalists or stay home. In this election, the candidates eliminated in round one together held 8% of votes and backed Flávio Bolsonaro, who was already ahead, so Lula looked in trouble. But a run-off is a brand-new contest: Lula had three weeks to change his campaign and win over people who had not voted or had spoiled their ballots (cast them invalidly) the first time. He gained about 10m votes and won 52% to 48%.\n\nA second round rewards the candidate who can persuade the other side's doubters, not just excite their own fans.\n\nWhen a country holds a run-off, remember that the first-round leader is only the favourite, not the winner."
+    },
+    {
+      "name": "Real interest rates and government debt",
+      "articleQuote": "the central bank has hiked real interest rates to vertigo-inducing heights. The ratio of government debt to GDP rose by over ten percentage points in Lula’s last four years in office.",
+      "meaning": "Economics. When you borrow, you pay interest. A **real interest rate** is the interest rate after subtracting inflation (the rise in prices), so it shows the true cost of borrowing. If a loan charges 15% and prices rise 5%, the real rate is about 10%, which is very high.\n\nA central bank (the institution that sets a country's key interest rate) raises rates to cool prices when spending runs hot. A government that spends more than it collects has to borrow, and the **debt-to-GDP ratio** compares what it owes to the size of the whole economy, like comparing a family's debts to its yearly income. When rates are high, the interest on that debt grows heavier, so spending and borrowing feed each other.\n\nThat is why the article says Lula should pick a respected finance minister and a credible plan to cut spending: investors lending to Brazil want proof the debt will not balloon. Free-spending promises before the election suggest he might do the opposite, which could keep borrowing costs high.\n\nWhen you hear that a country's borrowing costs are high, ask how much it owes compared with what its economy earns."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What made Lula's win unusual in Brazilian history?",
+      "options": [
+        "He lost the first round but won the run-off, which no candidate had done since 1985",
+        "He won every state in the first round",
+        "He was the youngest president ever elected",
+        "He won without a run-off because he got 90% of votes"
+      ],
+      "answerIndex": 0,
+      "explanation": "No presidential hopeful since the return of democracy in 1985 had lost the first round and then won the run-off, which Lula did."
+    },
+    {
+      "question": "Which of these helped Lula's turnaround between the two rounds, according to the article?",
+      "options": [
+        "A pivot to online campaigning, including a WhatsApp channel called \"Lula's Army\"",
+        "Cutting welfare payments to save money",
+        "Banning Mr Bolsonaro from the second debate",
+        "Moving the election to a later date"
+      ],
+      "answerIndex": 0,
+      "explanation": "Lula embraced the internet and posted selfie videos, and an ally's WhatsApp channel gathered over 10m members in two weeks."
+    },
+    {
+      "question": "What does \"bellwether\" mean in \"Brazil’s bellwether state\"?",
+      "options": [
+        "A place whose results hint at how the whole country will go",
+        "A state with the most people",
+        "A state that always votes for the same party",
+        "A state far from the capital"
+      ],
+      "answerIndex": 0,
+      "explanation": "A bellwether is an early indicator of a wider trend, like the lead sheep wearing a bell."
+    },
+    {
+      "question": "Why does the article say Lula may struggle to govern?",
+      "options": [
+        "Right-wing parties hold the largest group in both houses of Congress, and he cannot run again",
+        "He has no support from any voters",
+        "The Supreme Court has removed him from office",
+        "He is unwilling to work with the central bank"
+      ],
+      "answerIndex": 0,
+      "explanation": "Right-wingers are the largest caucus in both houses, and constitutional limits plus his age mean he could be a lame duck."
+    },
+    {
+      "question": "Why does the article say Lula should appoint a heavyweight finance minister and offer a credible spending plan?",
+      "options": [
+        "To calm markets worried about Brazil's high debt and interest rates",
+        "To win votes from women in Rio",
+        "To please the Supreme Court",
+        "To pay for free public transport on weekdays"
+      ],
+      "answerIndex": 0,
+      "explanation": "Real interest rates are very high and debt has risen, so investors need to see a believable plan to reduce spending."
+    }
+  ]
+}

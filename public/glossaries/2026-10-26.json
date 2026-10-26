@@ -1,0 +1,505 @@
+[
+  {
+    "k": "bellwether",
+    "t": "bellwether",
+    "kind": "vocab",
+    "pron": "BELL-weth-er",
+    "forms": [
+      "bellwether"
+    ],
+    "text": "A bellwether is something whose behaviour is an early sign of what will happen more widely; the word comes from the lead sheep that wore a bell so the flock would follow. Minas Gerais is Brazil's bellwether state because its voters tend to tell you how the whole country will go.",
+    "audio": true
+  },
+  {
+    "k": "annul",
+    "t": "annul",
+    "kind": "vocab",
+    "pron": "uh-NUL",
+    "forms": [
+      "annulled"
+    ],
+    "text": "To annul something is to declare it officially invalid, as if it never happened. Mr Bolsonaro says he will try to get the whole election result thrown out after losing.",
+    "audio": true
+  },
+  {
+    "k": "lavish",
+    "t": "lavish",
+    "kind": "vocab",
+    "pron": "LAV-ish",
+    "forms": [
+      "lavish"
+    ],
+    "text": "Lavish means given or spent in very generous, even extravagant amounts. Brazilian leaders often hand out big benefits before an election, and Lula was generous even by that standard.",
+    "audio": true
+  },
+  {
+    "k": "run-off",
+    "t": "run-off",
+    "kind": "word",
+    "forms": [
+      "run-off"
+    ],
+    "text": "A run-off is a second election between the top two finishers when nobody wins more than half the votes in the first round. It is a fresh contest, which is how Lula could trail in round one and still win.",
+    "audio": true
+  },
+  {
+    "k": "comeback",
+    "t": "comeback",
+    "kind": "word",
+    "forms": [
+      "comeback"
+    ],
+    "text": "A comeback is a return to success after a period of failure or decline. Lula looked beaten after the first round and then won.",
+    "audio": true
+  },
+  {
+    "k": "pundits",
+    "t": "pundits",
+    "kind": "word",
+    "forms": [
+      "pundits"
+    ],
+    "text": "Pundits are commentators who are regarded as experts and give opinions on politics or other topics in the media. Most of them thought Lula was finished.",
+    "audio": true
+  },
+  {
+    "k": "dead-and-buried",
+    "t": "dead and buried",
+    "kind": "phrase",
+    "forms": [
+      "dead and buried"
+    ],
+    "text": "If something is dead and buried, it is completely finished and no one expects it to return. Here it means Lula's campaign was thought to be over.",
+    "audio": true
+  },
+  {
+    "k": "hard-right",
+    "t": "hard-right",
+    "kind": "word",
+    "forms": [
+      "hard-right"
+    ],
+    "text": "Hard-right describes politics at the far, uncompromising end of the right wing. Jair Bolsonaro is described this way.",
+    "audio": true
+  },
+  {
+    "k": "house-arrest",
+    "t": "house arrest",
+    "kind": "phrase",
+    "forms": [
+      "house arrest"
+    ],
+    "text": "House arrest is a punishment or restriction in which a person must stay at home instead of being in prison. Jair Bolsonaro is under it for trying to stay in power by force.",
+    "audio": true
+  },
+  {
+    "k": "coup",
+    "t": "coup",
+    "kind": "word",
+    "forms": [
+      "coup"
+    ],
+    "text": "A coup is a sudden, illegal seizure of power from a government, often by the military or other powerful people. Jair Bolsonaro faces consequences for attempting one.",
+    "audio": true
+  },
+  {
+    "k": "spoiled",
+    "t": "spoiled",
+    "kind": "word",
+    "forms": [
+      "spoiled"
+    ],
+    "text": "Spoiled here has a voting meaning: a spoiled ballot is one that is filled in wrongly or marked on purpose so that it does not count. Many such voters switched to Lula in the second round.",
+    "audio": true
+  },
+  {
+    "k": "tactical-overhaul",
+    "t": "tactical overhaul",
+    "kind": "name",
+    "forms": [
+      "tactical overhaul"
+    ],
+    "text": "A tactical overhaul is a complete rethinking of how a campaign is run, such as its methods and messages, rather than its goals. Lula changed from old-fashioned to online methods.",
+    "audio": true
+  },
+  {
+    "k": "analogue",
+    "t": "analogue",
+    "kind": "word",
+    "forms": [
+      "analogue"
+    ],
+    "text": "Analogue means old-fashioned and not digital. Lula's early campaign relied on stickers and rallies instead of online content.",
+    "audio": true
+  },
+  {
+    "k": "mojo",
+    "t": "mojo",
+    "kind": "word",
+    "forms": [
+      "mojo"
+    ],
+    "text": "Mojo is informal slang for a magic quality of confidence and appeal. Saying Lula discovered his mojo means he found his energy again.",
+    "audio": true
+  },
+  {
+    "k": "technophobe",
+    "t": "technophobe",
+    "kind": "word",
+    "forms": [
+      "technophobe"
+    ],
+    "text": "A technophobe is someone who dislikes or fears modern technology. It is a surprise that Lula, once a technophobe, ended up winning online.",
+    "audio": true
+  },
+  {
+    "k": "go-viral",
+    "t": "go viral",
+    "kind": "phrase",
+    "forms": [
+      "go viral"
+    ],
+    "text": "To go viral is to spread very quickly and widely across the internet as people share it. Lula's image did this thanks to the \"missions\" given to supporters.",
+    "audio": true
+  },
+  {
+    "k": "bellwether-state",
+    "t": "Minas Gerais",
+    "kind": "name",
+    "forms": [
+      "Minas Gerais"
+    ],
+    "text": "Minas Gerais is a large, populous state in southeastern Brazil, often seen as a mirror of the country as a whole.",
+    "audio": true
+  },
+  {
+    "k": "evangelical",
+    "t": "evangelical",
+    "kind": "word",
+    "forms": [
+      "evangelical"
+    ],
+    "text": "Evangelical refers to a branch of Protestant Christianity that stresses personal faith and spreading its message. It is a large political force in Brazil.",
+    "audio": true
+  },
+  {
+    "k": "spigots",
+    "t": "spigots",
+    "kind": "word",
+    "forms": [
+      "spigots"
+    ],
+    "text": "A spigot is a tap. Saying the government opened the spigots is a metaphor for it suddenly letting money flow out in handouts.",
+    "audio": true
+  },
+  {
+    "k": "handouts",
+    "t": "handouts",
+    "kind": "word",
+    "forms": [
+      "handouts"
+    ],
+    "text": "Handouts are money or goods given freely, often by a government to people who need them. Here they are payments from Brazil's welfare programme.",
+    "audio": true
+  },
+  {
+    "k": "flagship",
+    "t": "flagship",
+    "kind": "word",
+    "forms": [
+      "flagship"
+    ],
+    "text": "A flagship is the most important or best-known item in a group, like the lead ship of a fleet. Here it is the main welfare programme.",
+    "audio": true
+  },
+  {
+    "k": "incumbents",
+    "t": "incumbents",
+    "kind": "word",
+    "forms": [
+      "Incumbents"
+    ],
+    "text": "An incumbent is someone who currently holds an office, such as a sitting president. Incumbents often try to please voters before elections.",
+    "audio": true
+  },
+  {
+    "k": "sole-traders",
+    "t": "sole traders",
+    "kind": "name",
+    "forms": [
+      "sole traders"
+    ],
+    "text": "A sole trader is a person who runs a small business alone, with no partners or company. The plan offered them debt forgiveness and cash.",
+    "audio": true
+  },
+  {
+    "k": "beyond-the-pale",
+    "t": "beyond the pale",
+    "kind": "phrase",
+    "forms": [
+      "beyond the pale"
+    ],
+    "text": "If something is beyond the pale, it is so shocking that it falls outside acceptable behaviour. Most Brazilians decided Mr Bolsonaro's conduct qualified.",
+    "audio": true
+  },
+  {
+    "k": "rehash",
+    "t": "rehash",
+    "kind": "word",
+    "forms": [
+      "rehash"
+    ],
+    "text": "To rehash something is to go over it again, often with little new. The debates brought Mr Bolsonaro's past back into the spotlight.",
+    "audio": true
+  },
+  {
+    "k": "dodgy",
+    "t": "dodgy",
+    "kind": "word",
+    "forms": [
+      "dodgy"
+    ],
+    "text": "Dodgy is a British informal word for suspicious, dishonest, or unreliable. It describes Mr Bolsonaro's past connections.",
+    "audio": true
+  },
+  {
+    "k": "militias",
+    "t": "militias",
+    "kind": "word",
+    "forms": [
+      "militias"
+    ],
+    "text": "Militias are armed groups that are not part of the official army. In Rio they are made up of corrupt police who act as hitmen and extortionists.",
+    "audio": true
+  },
+  {
+    "k": "hitmen",
+    "t": "hitmen",
+    "kind": "word",
+    "forms": [
+      "hitmen"
+    ],
+    "text": "A hitman is someone paid to kill another person. The article uses it for members of the militias.",
+    "audio": true
+  },
+  {
+    "k": "extortionists",
+    "t": "extortionists",
+    "kind": "word",
+    "forms": [
+      "extortionists"
+    ],
+    "text": "Extortionists get money by threatening people. They make shopkeepers and residents pay for supposed protection.",
+    "audio": true
+  },
+  {
+    "k": "death-squad",
+    "t": "death squad",
+    "kind": "phrase",
+    "forms": [
+      "death squad"
+    ],
+    "text": "A death squad is an armed group that carries out killings, often for a government or powerful people, outside the law.",
+    "audio": true
+  },
+  {
+    "k": "payroll",
+    "t": "payroll",
+    "kind": "word",
+    "forms": [
+      "payroll"
+    ],
+    "text": "A payroll is the list of people a person or organisation pays. Being on someone's payroll means they pay your salary.",
+    "audio": true
+  },
+  {
+    "k": "taxpayer-money",
+    "t": "taxpayer money",
+    "kind": "name",
+    "forms": [
+      "taxpayer money"
+    ],
+    "text": "Taxpayer money is public funds collected from citizens through taxes. Sending it to a criminal is a serious accusation.",
+    "audio": true
+  },
+  {
+    "k": "turned-off",
+    "t": "turned off",
+    "kind": "phrase",
+    "forms": [
+      "turned off"
+    ],
+    "text": "To turn someone off means to make them lose interest or feel disgust. These ties made many women stop supporting him.",
+    "audio": true
+  },
+  {
+    "k": "plumped",
+    "t": "plumped",
+    "kind": "word",
+    "forms": [
+      "plumped"
+    ],
+    "text": "To plump for something is to choose it decisively, especially from a set of options. Silvânia had plumped for Mr Bolsonaro before changing her mind.",
+    "audio": true
+  },
+  {
+    "k": "final-straw",
+    "t": "final straw",
+    "kind": "phrase",
+    "forms": [
+      "final straw"
+    ],
+    "text": "The final straw is the last in a series of problems that makes someone give up, from the saying about the straw that broke the camel's back.",
+    "audio": true
+  },
+  {
+    "k": "on-the-eve",
+    "t": "on the eve",
+    "kind": "phrase",
+    "forms": [
+      "on the eve"
+    ],
+    "text": "On the eve of something means the day or evening just before it. The scandal broke just before voting day.",
+    "audio": true
+  },
+  {
+    "k": "lobbyists",
+    "t": "lobbyists",
+    "kind": "word",
+    "forms": [
+      "lobbyists"
+    ],
+    "text": "Lobbyists are people paid to persuade officials and politicians to act in the interest of a business or group.",
+    "audio": true
+  },
+  {
+    "k": "unappetising",
+    "t": "unappetising",
+    "kind": "word",
+    "forms": [
+      "unappetising"
+    ],
+    "text": "Unappetising literally means not appealing to eat, and here it means unattractive. The choice between candidates was a poor one.",
+    "audio": true
+  },
+  {
+    "k": "baggage",
+    "t": "baggage",
+    "kind": "word",
+    "forms": [
+      "baggage"
+    ],
+    "text": "Baggage here means unwelcome past problems or associations that follow someone around, not suitcases.",
+    "audio": true
+  },
+  {
+    "k": "caucus",
+    "t": "caucus",
+    "kind": "word",
+    "forms": [
+      "caucus"
+    ],
+    "text": "A caucus is a group of politicians who share an aim or party and work together in a legislature.",
+    "audio": true
+  },
+  {
+    "k": "lame-duck",
+    "t": "lame duck",
+    "kind": "phrase",
+    "forms": [
+      "lame duck"
+    ],
+    "text": "A lame duck is an official who is about to leave office or cannot run again, and so has less power to get things done.",
+    "audio": true
+  },
+  {
+    "k": "creaking",
+    "t": "creaking",
+    "kind": "word",
+    "forms": [
+      "creaking"
+    ],
+    "text": "Creaking means old and in poor condition, like a creaking door. A creaking economy is weak and straining.",
+    "audio": true
+  },
+  {
+    "k": "spendthrift",
+    "t": "spendthrift",
+    "kind": "word",
+    "forms": [
+      "spendthrift"
+    ],
+    "text": "A spendthrift is a person who spends money carelessly. Lula's spendthrift policies raised the debt.",
+    "audio": true
+  },
+  {
+    "k": "vertigo-inducing",
+    "t": "vertigo-inducing",
+    "kind": "word",
+    "forms": [
+      "vertigo-inducing"
+    ],
+    "text": "Vertigo is the dizzy feeling you get from great heights. Vertigo-inducing rates are so high they make you dizzy.",
+    "audio": true
+  },
+  {
+    "k": "real-interest-rates",
+    "t": "real interest rates",
+    "kind": "name",
+    "forms": [
+      "real interest rates"
+    ],
+    "text": "A real interest rate is the interest rate after taking away inflation, so it shows what borrowing truly costs.",
+    "audio": true
+  },
+  {
+    "k": "cadre",
+    "t": "cadre",
+    "kind": "word",
+    "forms": [
+      "cadre"
+    ],
+    "text": "A cadre is a trusted, committed member of a party or organisation. A party cadre as finance minister would be a loyalist, not an outside expert.",
+    "audio": true
+  },
+  {
+    "k": "heavyweight",
+    "t": "heavyweight",
+    "kind": "word",
+    "forms": [
+      "heavyweight"
+    ],
+    "text": "A heavyweight is a powerful, important person, borrowed from boxing. Markets want a respected expert.",
+    "audio": true
+  },
+  {
+    "k": "giveaways",
+    "t": "giveaways",
+    "kind": "word",
+    "forms": [
+      "giveaways"
+    ],
+    "text": "Giveaways are free benefits handed out, often to win favour. Here they are the pre-election perks Lula promised.",
+    "audio": true
+  },
+  {
+    "k": "annulled-note",
+    "t": "Supreme Court",
+    "kind": "name",
+    "forms": [
+      "Supreme Court"
+    ],
+    "text": "Brazil's Supreme Court is the country's highest court, which handles major constitutional questions, including election disputes.",
+    "audio": true
+  },
+  {
+    "k": "beat-the-odds",
+    "t": "beat the odds",
+    "kind": "phrase",
+    "forms": [
+      "beat the odds"
+    ],
+    "text": "To beat the odds is to succeed even though success seemed unlikely.",
+    "audio": true
+  }
+]
