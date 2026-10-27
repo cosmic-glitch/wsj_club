@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-27",
+  "title": "China’s most successful Astroturf operation: grassroots football",
+  "articleUrl": "https://www.economist.com/china/2026/10/26/chinas-most-successful-astroturf-operation-grassroots-football",
+  "articlePageUrl": "/articles/junior/2026-10-27.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "excruciating",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ek-SKROO-shee-ay-ting",
+      "articleQuote": "a goal review that took 11 excruciating minutes.",
+      "meaning": "Excruciating describes something so painful or stressful that it is very hard to bear. It can be about pain in your body, or about waiting for something while you feel nervous. In the article, the fans had to wait 11 long minutes for a referee decision, and the waiting felt almost unbearable.",
+      "examples": [
+        "The last minute of the tied game was excruciating to watch.",
+        "Waiting for my test grade was excruciating."
+      ]
+    },
+    {
+      "word": "languish",
+      "partOfSpeech": "verb",
+      "pronunciation": "LANG-gwish",
+      "articleQuote": "Languishing at the bottom of the table could reflect poorly on a city’s organisational abilities",
+      "meaning": "To languish is to stay stuck in a bad or weak spot for a long time without getting better. In the article, a team that languishes at the bottom of the standings keeps losing and cannot climb up.",
+      "examples": [
+        "Our team languished in last place all season.",
+        "My science project languished in the corner of my room for weeks."
+      ]
+    },
+    {
+      "word": "inept",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-EPT",
+      "articleQuote": "China’s perennially inept national team.",
+      "meaning": "Inept describes someone who is not skilled at something and keeps doing it badly. In the article, China’s national football team is called inept because it has not done well for many years.",
+      "examples": [
+        "I was inept at skateboarding on my first day, and I fell six times.",
+        "The inept goalie let every shot slip past him."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Hukou",
+      "articleQuote": "All players must have ties to their city, such as a hukou (household registration).",
+      "meaning": "Why can’t a great player from far away just join any team in these leagues? One reason is a paper called a **hukou**.\n\nA hukou is a household registration. It is an official record in China that says which place a family belongs to. Each family’s hukou is tied to a city or village, a bit like being on the class list of one school and not another.\n\nImagine your school had a rule that only kids who live in your town could play on the town’s soccer team. The school would check your address before you could join. The Chinese leagues do something similar: a player needs a link to the city, such as a hukou there, to play for it.\n\nSo the takeaway: a hukou is a family’s official registration to one place, and it helps decide who counts as a true local."
+    },
+    {
+      "name": "Sponsor",
+      "articleQuote": "sponsors now include Heineken, Coca-Cola and Adidas.",
+      "meaning": "Why would a company hand money to a football team? Because it wants to be a **sponsor**.\n\nA sponsor is a business that pays money to support a team or an event. In return, the business gets its name or logo shown to fans, on shirts, signs and ads. Fans see the name again and again and may buy the company’s products.\n\nThink of a school fair. A local pizza shop pays for the banner, and its name is printed in big letters at the top. Kids see it all day, and some of them ask their parents for pizza that night. The shop paid, and the fair got its banner.\n\nSo the takeaway: a sponsor pays to support a team, and in return gets its name in front of the fans.\n\nIn the article, one sponsor was a hometown maker of spicy dried fish, so even a small local business can be a sponsor."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why were fans and players in Yiyang so emotional at the match?",
+      "options": [
+        "They cared deeply about their hometown team, which lost 1-0",
+        "The match was a World Cup final",
+        "The tickets were free for everyone",
+        "The team won the national title"
+      ],
+      "answerIndex": 0,
+      "explanation": "Yiyang lost 1-0 to Changsha, and the players cried, which shows how much the hometown passion matters."
+    },
+    {
+      "question": "What does \"inept\" mean in the article?",
+      "options": [
+        "Very famous",
+        "Not skilled and often doing badly",
+        "Extremely rich",
+        "Full of energy"
+      ],
+      "answerIndex": 1,
+      "explanation": "Inept means lacking skill. The article calls China’s national team inept."
+    },
+    {
+      "question": "Why do officials like these provincial leagues?",
+      "options": [
+        "They want to replace the national team",
+        "They help bring visitors and activity back to local towns",
+        "They make tickets very expensive",
+        "They stop young people from playing"
+      ],
+      "answerIndex": 1,
+      "explanation": "Officials see the leagues as a way to boost the local economy, because matches draw crowds that spend money."
+    },
+    {
+      "question": "What is a hukou?",
+      "options": [
+        "A type of football jersey",
+        "A prize for the champion",
+        "A household registration linking a family to a place",
+        "A kind of ticket lottery"
+      ],
+      "answerIndex": 2,
+      "explanation": "A hukou is an official registration. Players need ties to their city, such as a hukou there."
+    },
+    {
+      "question": "What did authorities do to stop scalpers from reselling Yiyang tickets?",
+      "options": [
+        "They raised the ticket price to 100 yuan",
+        "They used facial-recognition turnstiles",
+        "They closed the stadium",
+        "They banned fans from the stands"
+      ],
+      "answerIndex": 1,
+      "explanation": "Facial-recognition turnstiles made sure the person who got the ticket was the one who used it."
+    }
+  ]
+}
