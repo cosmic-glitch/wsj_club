@@ -1,0 +1,465 @@
+[
+  {
+    "k": "breakneck",
+    "t": "breakneck",
+    "kind": "vocab",
+    "pron": "BRAKE-nek",
+    "forms": [
+      "Breakneck"
+    ],
+    "text": "Breakneck means dangerously fast, fast enough to break your neck. The Economist says fast growth is common in Silicon Valley, but Anthropic's is something else.",
+    "audio": true
+  },
+  {
+    "k": "eke",
+    "t": "eke",
+    "kind": "vocab",
+    "pron": "EEK",
+    "forms": [
+      "eked"
+    ],
+    "text": "To eke out something is to get it barely or with great effort. Anthropic made an operating profit of just under $1bn, but only after losing $1.7bn the quarter before.",
+    "audio": true
+  },
+  {
+    "k": "mainstay",
+    "t": "mainstay",
+    "kind": "vocab",
+    "pron": "MAYN-stay",
+    "forms": [
+      "mainstays"
+    ],
+    "text": "A mainstay is a dependable, long-established part of something. McDonald's is a corporate mainstay, and Anthropic's revenue has now passed it.",
+    "audio": true
+  },
+  {
+    "k": "revenue",
+    "t": "revenue",
+    "kind": "word",
+    "forms": [
+      "revenue"
+    ],
+    "text": "Revenue is the total money a company takes in from selling its products, before any costs are subtracted. Anthropic's quarterly revenue rose from $376m to $11.6bn.",
+    "audio": true
+  },
+  {
+    "k": "prospectus",
+    "t": "prospectus",
+    "kind": "word",
+    "forms": [
+      "prospectus"
+    ],
+    "text": "A prospectus is the document a company must publish before selling shares to the public, laying out its finances and risks. The Economist mines Anthropic's for warnings.",
+    "audio": true
+  },
+  {
+    "k": "ipo",
+    "t": "IPO",
+    "kind": "word",
+    "forms": [
+      "IPO"
+    ],
+    "text": "IPO stands for initial public offering, the first time a company sells its shares to ordinary investors on a stock exchange. Anthropic's is a few weeks away and may be among the largest ever.",
+    "audio": true
+  },
+  {
+    "k": "initial-public-offering",
+    "t": "initial public offering",
+    "kind": "phrase",
+    "forms": [
+      "initial public offering"
+    ],
+    "text": "An initial public offering, or IPO, is when a private company first sells shares to the public. It raises money and lets early backers cash out some of their stake.",
+    "audio": true
+  },
+  {
+    "k": "darling",
+    "t": "darling",
+    "kind": "word",
+    "forms": [
+      "darling"
+    ],
+    "text": "A darling is someone or something that is especially loved or favored. Calling Anthropic the darling of the AI revolution means investors and the press adore it.",
+    "audio": true
+  },
+  {
+    "k": "lurking",
+    "t": "lurking",
+    "kind": "word",
+    "forms": [
+      "Lurking"
+    ],
+    "text": "Lurking means hiding quietly, ready to appear. Here the warnings are tucked inside the long filing, easy to miss until someone reads closely.",
+    "audio": true
+  },
+  {
+    "k": "lab",
+    "t": "lab",
+    "kind": "word",
+    "forms": [
+      "lab"
+    ],
+    "text": "In tech, an AI lab is a company whose main work is researching and building artificial-intelligence models. Anthropic and OpenAI are two of the best-known.",
+    "audio": true
+  },
+  {
+    "k": "pulled-in",
+    "t": "pulled in",
+    "kind": "phrase",
+    "forms": [
+      "pulled in"
+    ],
+    "text": "To pull in money means to earn it. Anthropic pulled in $376m of revenue in one quarter, then far more later.",
+    "audio": true
+  },
+  {
+    "k": "profitability",
+    "t": "profitability",
+    "kind": "word",
+    "forms": [
+      "profitability"
+    ],
+    "text": "Profitability means making more money than you spend. Unlike many startups, Anthropic has already reached it.",
+    "audio": true
+  },
+  {
+    "k": "operating-profit",
+    "t": "operating profit",
+    "kind": "phrase",
+    "forms": [
+      "operating profit"
+    ],
+    "text": "Operating profit is what is left from sales after paying the everyday costs of running the business, such as staff and computing power. It ignores things like taxes and interest.",
+    "audio": true
+  },
+  {
+    "k": "computing-power",
+    "t": "computing power",
+    "kind": "word",
+    "forms": [
+      "computing power"
+    ],
+    "text": "Computing power is the processing capacity of chips and servers. Training and running AI models needs enormous amounts, and it is scarce and costly.",
+    "audio": true
+  },
+  {
+    "k": "efficient",
+    "t": "efficient",
+    "kind": "word",
+    "forms": [
+      "efficient"
+    ],
+    "text": "Efficient means getting more done with less waste. Anthropic says better AI models let it spend a smaller share of sales on computing power.",
+    "audio": true
+  },
+  {
+    "k": "caution",
+    "t": "caution",
+    "kind": "word",
+    "forms": [
+      "caution"
+    ],
+    "text": "Caution means being careful about risks. The Economist says a close look at the filing suggests investors should be careful.",
+    "audio": true
+  },
+  {
+    "k": "cashflow",
+    "t": "cashflow",
+    "kind": "word",
+    "forms": [
+      "cashflow"
+    ],
+    "text": "Cashflow is the cash actually moving in and out of a business. Free cashflow is what is left after paying for the equipment the business needs. Buying chips directly will eat much of Anthropic's.",
+    "audio": true
+  },
+  {
+    "k": "valuation",
+    "t": "valuation",
+    "kind": "word",
+    "forms": [
+      "valuation"
+    ],
+    "text": "A valuation is an estimate of how much a company is worth. Some earlier investors hoped for $2trn, but slower growth might lower the number.",
+    "audio": true
+  },
+  {
+    "k": "disappointed",
+    "t": "disappointed",
+    "kind": "word",
+    "forms": [
+      "disappointed"
+    ],
+    "text": "Disappointed means let down because things turned out worse than hoped. Investors expecting a $2trn value may be.",
+    "audio": true
+  },
+  {
+    "k": "scorching",
+    "t": "scorching",
+    "kind": "word",
+    "forms": [
+      "scorching"
+    ],
+    "text": "Scorching means burning hot. Applied to growth, it means extremely fast, which is why Anthropic became a target for rivals.",
+    "audio": true
+  },
+  {
+    "k": "put-a-target-on-its-back",
+    "t": "put a target on its back",
+    "kind": "phrase",
+    "forms": [
+      "has put a target on its back"
+    ],
+    "text": "To put a target on someone's back means to make them the thing rivals aim at. Anthropic's rapid growth drew competitors and customers who built alternatives.",
+    "audio": true
+  },
+  {
+    "k": "arch-rival",
+    "t": "arch-rival",
+    "kind": "word",
+    "forms": [
+      "arch-rival"
+    ],
+    "text": "An arch-rival is a main, bitter competitor. OpenAI is Anthropic's, and its coding tool Codex is gaining ground.",
+    "audio": true
+  },
+  {
+    "k": "codex",
+    "t": "Codex",
+    "kind": "name",
+    "forms": [
+      "Codex"
+    ],
+    "text": "Codex is OpenAI's AI tool for writing computer code, a direct competitor to Anthropic's Claude Code.",
+    "audio": true
+  },
+  {
+    "k": "claude-code",
+    "t": "Claude Code",
+    "kind": "name",
+    "forms": [
+      "Claude Code"
+    ],
+    "text": "Claude Code is Anthropic's AI programming tool, a hit product that helped drive its rapid growth.",
+    "audio": true
+  },
+  {
+    "k": "craze",
+    "t": "craze",
+    "kind": "word",
+    "forms": [
+      "craze"
+    ],
+    "text": "A craze is a short-lived burst of enthusiasm for something. The article calls 'tokenmaxxing' a short-lived one.",
+    "audio": true
+  },
+  {
+    "k": "tokenmaxxing",
+    "t": "tokenmaxxing",
+    "kind": "word",
+    "forms": [
+      "tokenmaxxing"
+    ],
+    "text": "Tokens are the small chunks of text an AI model reads and writes, and usage is billed by them. Tokenmaxxing was a craze of using as many as possible, which companies then began to limit because of the cost.",
+    "audio": true
+  },
+  {
+    "k": "imposing-limits",
+    "t": "imposing limits",
+    "kind": "phrase",
+    "forms": [
+      "imposing limits"
+    ],
+    "text": "To impose limits is to set rules that cap something. Companies are doing this with how much their engineers can spend on AI.",
+    "audio": true
+  },
+  {
+    "k": "shareholders",
+    "t": "shareholders",
+    "kind": "word",
+    "forms": [
+      "shareholders"
+    ],
+    "text": "Shareholders are the people or firms who own shares of a company, and so own a piece of it.",
+    "audio": true
+  },
+  {
+    "k": "warns",
+    "t": "warns",
+    "kind": "word",
+    "forms": [
+      "warns"
+    ],
+    "text": "To warn means to tell someone about a danger ahead. The prospectus warns that growth could slow faster than expected, which companies are required to disclose honestly.",
+    "audio": true
+  },
+  {
+    "k": "margins",
+    "t": "margins",
+    "kind": "word",
+    "forms": [
+      "margins"
+    ],
+    "text": "Margins are the share of sales a company keeps as profit after costs. Paying more for computing power squeezes margins.",
+    "audio": true
+  },
+  {
+    "k": "compute",
+    "t": "compute",
+    "kind": "word",
+    "forms": [
+      "compute"
+    ],
+    "text": "In AI, compute is short for computing power. Short-term compute means renting it on brief, flexible terms, which usually costs more.",
+    "audio": true
+  },
+  {
+    "k": "cloud-businesses",
+    "t": "cloud businesses",
+    "kind": "phrase",
+    "forms": [
+      "cloud businesses"
+    ],
+    "text": "A cloud business rents out computing power and software over the internet. Alphabet, Amazon and Microsoft run big ones that also sell Anthropic's products to their customers.",
+    "audio": true
+  },
+  {
+    "k": "distribution",
+    "t": "distribution",
+    "kind": "word",
+    "forms": [
+      "distribution"
+    ],
+    "text": "Distribution is how a product gets to buyers. Anthropic increasingly depends on partners for it and pays them for the help.",
+    "audio": true
+  },
+  {
+    "k": "nvidia",
+    "t": "Nvidia",
+    "kind": "name",
+    "forms": [
+      "Nvidia"
+    ],
+    "text": "Nvidia is the company that makes the most sought-after chips for training and running AI.",
+    "audio": true
+  },
+  {
+    "k": "spacex",
+    "t": "SpaceX",
+    "kind": "name",
+    "forms": [
+      "SpaceX"
+    ],
+    "text": "SpaceX is the rocket and space company. Anthropic has agreed to pay it about $3.1bn a month for access to Nvidia chips.",
+    "audio": true
+  },
+  {
+    "k": "back-out",
+    "t": "back out",
+    "kind": "phrase",
+    "forms": [
+      "back out"
+    ],
+    "text": "To back out of a deal is to withdraw from it. Anthropic can leave the SpaceX arrangement with 90 days' notice.",
+    "audio": true
+  },
+  {
+    "k": "broadcom",
+    "t": "Broadcom",
+    "kind": "name",
+    "forms": [
+      "Broadcom"
+    ],
+    "text": "Broadcom is a chip company that designs custom chips for large customers.",
+    "audio": true
+  },
+  {
+    "k": "custom-silicon",
+    "t": "custom silicon",
+    "kind": "phrase",
+    "forms": [
+      "custom silicon"
+    ],
+    "text": "Silicon is the material chips are made from, so custom silicon means chips designed for one customer's special needs rather than sold off the shelf.",
+    "audio": true
+  },
+  {
+    "k": "capital-intensive",
+    "t": "capital-intensive",
+    "kind": "phrase",
+    "forms": [
+      "capital-intensive"
+    ],
+    "text": "A capital-intensive business has to spend huge sums on equipment or buildings to operate. Buying chips and data centres makes Anthropic more so.",
+    "audio": true
+  },
+  {
+    "k": "data-centres",
+    "t": "data centres",
+    "kind": "word",
+    "forms": [
+      "data centres"
+    ],
+    "text": "A data centre is a large building full of computers that store and process data. AI models run in them.",
+    "audio": true
+  },
+  {
+    "k": "infrastructure",
+    "t": "infrastructure",
+    "kind": "word",
+    "forms": [
+      "infrastructure"
+    ],
+    "text": "Infrastructure means the basic physical systems something depends on. For AI, that means chips, power and data centres.",
+    "audio": true
+  },
+  {
+    "k": "irresponsibly",
+    "t": "irresponsibly",
+    "kind": "word",
+    "forms": [
+      "irresponsibly"
+    ],
+    "text": "Irresponsibly means in a careless way that ignores risk. Anthropic's founders admit its plans may seem so at first glance.",
+    "audio": true
+  },
+  {
+    "k": "exponential",
+    "t": "exponential",
+    "kind": "word",
+    "forms": [
+      "exponential"
+    ],
+    "text": "Exponential growth keeps multiplying: each step is bigger than the last, like doubling again and again. The founders argue that AI is on this path.",
+    "audio": true
+  },
+  {
+    "k": "trajectory",
+    "t": "trajectory",
+    "kind": "word",
+    "forms": [
+      "trajectory"
+    ],
+    "text": "A trajectory is the path something follows over time. The founders say AI's upward trajectory justifies the big spending.",
+    "audio": true
+  },
+  {
+    "k": "bold-but-sane",
+    "t": "bold but sane",
+    "kind": "phrase",
+    "forms": [
+      "bold but sane"
+    ],
+    "text": "The founders pledge to take big risks without losing their good sense. The Economist doubts that balance will be easy.",
+    "audio": true
+  },
+  {
+    "k": "mind-bending",
+    "t": "mind-bending",
+    "kind": "word",
+    "forms": [
+      "mind-bending"
+    ],
+    "text": "Mind-bending describes something so strange or complex it is hard to wrap your head around.",
+    "audio": true
+  }
+]

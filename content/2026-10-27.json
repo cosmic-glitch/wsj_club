@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-27",
+  "title": "Don’t expect supersize profits from Anthropic soon",
+  "articleUrl": "https://www.economist.com/business/2026/10/26/dont-expect-supersize-profits-from-anthropic-soon",
+  "articlePageUrl": "/articles/2026-10-27.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "breakneck",
+      "partOfSpeech": "adjective",
+      "pronunciation": "BRAKE-nek",
+      "articleQuote": "Breakneck growth is commonplace in Silicon Valley.",
+      "meaning": "Breakneck describes something happening at a dangerously fast speed, so fast that you could break your neck. It is most often used for pace: breakneck speed, a breakneck schedule. The Economist uses it for growth in Silicon Valley, where young companies often double or triple their sales in a short time, before saying that Anthropic's growth is faster still.",
+      "examples": [
+        "The team sprinted down the hallway at breakneck speed to make it to the bus before it left.",
+        "With three tests and a project due in one week, she kept up a breakneck study schedule."
+      ]
+    },
+    {
+      "word": "eke",
+      "partOfSpeech": "verb",
+      "pronunciation": "EEK",
+      "articleQuote": "In the second quarter it eked out an operating profit of just under $1bn",
+      "meaning": "To eke out something is to get it with great effort or only just barely, as if squeezing it from a very small supply. You can eke out a win in the final seconds, or eke out a living on very little pay. The article says Anthropic eked out a profit, hinting that although the number is big, it is a thin and fragile gain after a quarter of heavy losses.",
+      "examples": [
+        "Our team eked out a one-point win when the last shot rolled around the rim and dropped in.",
+        "He eked out enough money from his weekend job to buy a used bike."
+      ]
+    },
+    {
+      "word": "mainstay",
+      "partOfSpeech": "noun",
+      "pronunciation": "MAYN-stay",
+      "articleQuote": "exceeding corporate mainstays such as McDonald’s",
+      "meaning": "A mainstay is a person, thing, or business that is a long-lasting, dependable part of something, the support that everything else rests on. The word began as a ship's heavy rope that held up the main mast. Calling McDonald's a corporate mainstay means it is one of the big, established companies that has been part of the economy for decades, which makes it striking that a young AI lab has already out-sold it.",
+      "examples": [
+        "Pizza is a mainstay of every school dance, so nobody was surprised to see it on the table.",
+        "She has been a mainstay of the basketball team for three seasons, so the coach counts on her in close games."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Initial public offering (IPO)",
+      "articleQuote": "In a few weeks this darling of the AI revolution will undergo an initial public offering (IPO)",
+      "meaning": "Finance. Anthropic is only a few weeks from a moment that decides who owns it: until now a small group of investors has owned its shares, and at an IPO the company sells shares to anyone, on a stock exchange, for the first time. Think of a private company as a bakery owned by a few partners; an IPO is the day the bakery cuts itself into millions of tiny slices and lets the public buy them.\n\nWhy do companies do it? To raise a big pile of money for growth, and to let early investors and employees finally sell some of their slices. The catch is that strangers will be buying, so the law makes the company publish its financial details first. That paperwork is the **prospectus**, a long document telling buyers the company's sales, profits, spending and, importantly, its risks. The Economist reads Anthropic's prospectus for exactly this reason: it is the first time the outside world sees the real numbers, including warnings the company would rather not shout about.\n\nThe price per share depends on what buyers believe the company is worth, called its valuation. If the prospectus shows growth slowing, buyers may pay less than the hoped-for $2trn. When you read about a company going public, ask what the prospectus reveals that the headlines do not."
+    },
+    {
+      "name": "Free cash flow",
+      "articleQuote": "That could make it harder to start throwing off the kind of free cashflow investors might hope for",
+      "meaning": "Finance. A company can report a profit and still have an empty bank account, and that puzzle is why investors watch free cash flow. Profit is an accounting number: sales minus costs. **Free cash flow** is simpler and harder to fudge: the actual cash that came in from running the business, minus the cash spent on big equipment the business needs to keep running and growing.\n\nHere is a lemonade stand. You sell $100 of lemonade and spend $40 on lemons, so you made a profit. But if you also had to spend $50 on a new freezer, only $10 is left in your pocket. That $10 is the free cash flow, and it is the money you could actually hand to the people who own the stand, or save for later.\n\nThe article's point is that Anthropic is shifting from renting computing power to buying its own chips and installing them in data centres. Chips are like the freezer: a huge up-front cash cost. So even if its profit keeps growing, the cash left over for owners may stay small, and the company may need to raise more money. Companies that must keep buying expensive equipment are called **capital-intensive**. When a company brags about profit, ask how much cash it is left with after buying the equipment it needs."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, how fast did Anthropic's quarterly revenue grow between early last year and the second quarter of this year?",
+      "options": [
+        "It doubled, from $5.8bn to $11.6bn",
+        "It rose about 3-fold, from $3.8bn to $11.6bn",
+        "It rose about 30-fold, from $376m to $11.6bn",
+        "It stayed about the same but profits rose"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says revenue went from $376m to $11.6bn, a 30-fold rise, exceeding corporate mainstays such as McDonald's."
+    },
+    {
+      "question": "Which of these is a reason the article gives for caution about Anthropic's future growth?",
+      "options": [
+        "Revenue growth in the third quarter was about a third of the rate in the second quarter",
+        "Anthropic has never earned an operating profit",
+        "Meta and Microsoft stopped using computers altogether",
+        "OpenAI's Codex has lost most of its daily users"
+      ],
+      "answerIndex": 0,
+      "explanation": "Third-quarter revenue was up about 45% from the previous quarter, a third of the second quarter's rate, so growth is slowing."
+    },
+    {
+      "question": "What does the phrase 'Anthropic eked out an operating profit' suggest?",
+      "options": [
+        "It made a huge, record-breaking profit",
+        "It lost money again",
+        "It refused to share its profit with investors",
+        "It made a profit, but only a narrow one after losing money the quarter before"
+      ],
+      "answerIndex": 3,
+      "explanation": "To eke out something is to get it barely or with effort; the company made just under $1bn after losing $1.7bn in the prior quarter."
+    },
+    {
+      "question": "Why might Anthropic's plan to buy its own chips ('Anthropic Direct') reduce its free cash flow?",
+      "options": [
+        "Chips make its products stop working",
+        "Buying chips takes a lot of cash up front, which leaves less money left over",
+        "The plan means it will have no more customers",
+        "It will have to pay the tech giants a commission on every chip"
+      ],
+      "answerIndex": 1,
+      "explanation": "Directly buying chips is a big cash cost, making the business more capital-intensive and harder to produce spare cash."
+    },
+    {
+      "question": "What is the purpose of an IPO prospectus?",
+      "options": [
+        "To announce the company's new products to customers",
+        "To set the price of the company's chips",
+        "To give would-be buyers a detailed look at the company's finances and risks before it sells shares to the public",
+        "To prove that the company has no competitors"
+      ],
+      "answerIndex": 2,
+      "explanation": "Before selling shares to the public, a company must publish its finances and warnings so buyers know what they are getting."
+    }
+  ]
+}
