@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-28",
+  "title": "After its Odyssey, IMAX hits the big time",
+  "articleUrl": "https://www.economist.com/business/2026/10/27/after-its-odyssey-imax-hits-the-big-time",
+  "articlePageUrl": "/articles/junior/2026-10-28.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "prestige",
+      "partOfSpeech": "noun",
+      "pronunciation": "preh-STEEZH",
+      "articleQuote": "Less fanatical directors still value the prestige that comes from their films being shown on IMAX screens.",
+      "meaning": "Prestige is the respect and admiration people give to something because it seems special or important. A famous school, an award, or a well-known brand can all have prestige. In the article, movie directors want their films on IMAX screens because that name makes a movie feel important.",
+      "examples": [
+        "Winning the state spelling bee brought a lot of prestige to our school.",
+        "Some people pay extra for a brand because of its prestige, even when a cheaper one works just as well."
+      ]
+    },
+    {
+      "word": "scarcity",
+      "partOfSpeech": "noun",
+      "pronunciation": "SKAIR-sih-tee",
+      "articleQuote": "They have a scarcity value as well as a visual richness that cinephiles love",
+      "meaning": "Scarcity means there is only a small amount of something, so it is hard to get. Things that are scarce are often worth more to people. In the article, only 41 IMAX screens use the giant 70mm film, so tickets for them are rare and sell out very fast.",
+      "examples": [
+        "The scarcity of rainy days in the desert makes every storm exciting.",
+        "Because the game console was in scarcity at the store, kids lined up before it opened."
+      ]
+    },
+    {
+      "word": "premium",
+      "partOfSpeech": "adjective",
+      "pronunciation": "PREE-mee-um",
+      "articleQuote": "That, in turn, results in premium prices—though still far cheaper than a live concert or sports match.",
+      "meaning": "Premium describes something of higher quality that costs more than the regular kind. A premium ticket or product gives you something extra, and you pay extra for it. In the article, an IMAX ticket costs more than a normal movie ticket because the experience is bigger and richer.",
+      "examples": [
+        "My dad paid a premium price for the front-row seats at the game.",
+        "The premium headphones cost twice as much as the basic ones, but they sounded much clearer."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Shares",
+      "articleQuote": "Nolanomics has underpinned a tripling of IMAX’s share price over the past three years.",
+      "meaning": "How can a company's value go up three times in three years, and who even decides that? The answer starts with **shares**.\n\nA share is a small slice of ownership in a company. When a big company wants money, it can cut its ownership into millions of tiny slices and sell them. People who buy a slice are called shareholders, and they own a very small part of the company. Shares are bought and sold on a stock market, and the **share price** is simply what one slice costs right now.\n\nThe price moves because of what buyers and sellers think. If many people want a company's shares, the price goes up. If many people want to sell, it falls. Good news, like a hit movie, makes more people want shares.\n\nImagine a rare trading card that your class is trading. If everyone hears it was just used by a famous player, more kids want it, and its price in snacks goes up. A share price works the same way, with a company's slice instead of a card.\n\nSo the takeaway: a share is a slice of a company, and its price rises when more people want to own it.\n\nIn the article, IMAX's share price tripled because its movies sold so many tickets."
+    },
+    {
+      "name": "Leasing",
+      "articleQuote": "It does not own or operate theatres. Instead it sells or leases its projection and sound technology to cinemas, then takes a cut of their revenue.",
+      "meaning": "Why would a company that does not own any movie theatres make money from them? One way is **leasing**.\n\nTo lease something means to let someone else use it for a fee while you still own it. The owner is the lessor, and the person paying to use it is the lessee. You see this with apartments and with a rented bike. The one who owns it gets paid over time instead of selling it once.\n\nA company can also take a **cut** of the money the other side earns. That means it gets a share of each ticket sold, as well as or instead of a set fee.\n\nImagine you own a great pair of soccer goals. You do not run a team. You lend the goals to your school, and in return you get a small part of the snack money from every game. The more games happen, the more you earn, and you never ran a single match.\n\nSo the takeaway: leasing lets an owner earn money from something others use, and a cut means the owner does better when the users do.\n\nIn the article, IMAX leases its screens and sound systems to cinemas and takes a cut of their ticket money."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What makes IMAX's business model different from a normal movie theater company?",
+      "options": [
+        "It owns every theater in the world",
+        "It only makes movies and never shows them",
+        "It does not own theaters; it sells or leases its technology to cinemas and takes a cut",
+        "It sells popcorn at all of its locations"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says IMAX sells or leases its projection and sound technology to cinemas and takes a share of their revenue."
+    },
+    {
+      "question": "Why do tickets for some 70mm IMAX screens sell out a year ahead?",
+      "options": [
+        "Those screens are scarce, and film fans love their rich picture",
+        "They are the cheapest tickets",
+        "Every movie theater has one",
+        "They only show old movies"
+      ],
+      "answerIndex": 0,
+      "explanation": "Only 41 of IMAX's 1,800 screens are the 70mm kind, so they are rare and loved by film fans."
+    },
+    {
+      "question": "What does the word \"premium\" mean in \"premium prices\"?",
+      "options": [
+        "Free",
+        "Lower than normal",
+        "Prices that change every day",
+        "Higher than the regular price for something of higher quality"
+      ],
+      "answerIndex": 3,
+      "explanation": "Premium describes a better product that costs more than the regular one."
+    },
+    {
+      "question": "According to the article, what does a rising share price tell you?",
+      "options": [
+        "The company has fewer customers",
+        "More people want to own a slice of the company",
+        "The company has closed",
+        "The company gave away all its shares"
+      ],
+      "answerIndex": 1,
+      "explanation": "A share price goes up when more people want to buy shares, as with IMAX after its hit movies."
+    },
+    {
+      "question": "What does Disney's Infinity Vision aim to do?",
+      "options": [
+        "Replace Disney's movies with video games",
+        "Buy IMAX",
+        "Give a stamp of approval to other big-screen brands as an alternative to IMAX",
+        "Build brand-new film cameras"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says Infinity Vision is a certification programme, not a new technology."
+    }
+  ]
+}

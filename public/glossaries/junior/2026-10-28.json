@@ -1,0 +1,557 @@
+[
+  {
+    "k": "prestige",
+    "t": "prestige",
+    "kind": "vocab",
+    "pron": "preh-STEEZH",
+    "forms": [
+      "prestige"
+    ],
+    "text": "Prestige is the respect people give to something that seems special. Directors want their films on IMAX screens because the name makes a movie feel important.",
+    "audio": true
+  },
+  {
+    "k": "scarcity",
+    "t": "scarcity",
+    "kind": "vocab",
+    "pron": "SKAIR-sih-tee",
+    "forms": [
+      "scarcity"
+    ],
+    "text": "Scarcity means there is only a little of something, so it is hard to get. Only 41 IMAX screens use giant 70mm film, which makes them rare and special.",
+    "audio": true
+  },
+  {
+    "k": "premium",
+    "t": "premium",
+    "kind": "vocab",
+    "pron": "PREE-mee-um",
+    "forms": [
+      "premium"
+    ],
+    "text": "Premium means better than the regular kind and costing more. IMAX tickets cost extra because the experience is bigger and richer.",
+    "audio": true
+  },
+  {
+    "k": "imax",
+    "t": "IMAX",
+    "kind": "name",
+    "forms": [
+      "IMAX",
+      "IMAXed"
+    ],
+    "text": "IMAX is a company known for giant movie screens and booming sound. It does not run theatres itself; it supplies the equipment.",
+    "audio": true
+  },
+  {
+    "k": "richard-gelfond",
+    "t": "Gelfond",
+    "kind": "name",
+    "forms": [
+      "Gelfond"
+    ],
+    "text": "Richard Gelfond is the boss of IMAX. He bought the company 32 years ago from its Canadian founders.",
+    "audio": true
+  },
+  {
+    "k": "supersize",
+    "t": "supersize-screen",
+    "kind": "word",
+    "forms": [
+      "supersize-screen"
+    ],
+    "text": "Supersize means much bigger than normal. A supersize screen is far larger than the one in an ordinary theatre.",
+    "audio": true
+  },
+  {
+    "k": "near-death",
+    "t": "near-death experiences",
+    "kind": "phrase",
+    "forms": [
+      "near-death experiences"
+    ],
+    "text": "A near-death experience here means the company almost went out of business, though nobody was hurt.",
+    "audio": true
+  },
+  {
+    "k": "wilderness-years",
+    "t": "wilderness years",
+    "kind": "phrase",
+    "forms": [
+      "wilderness years"
+    ],
+    "text": "Wilderness years are a long, hard stretch when things are going badly and success seems far away.",
+    "audio": true
+  },
+  {
+    "k": "pandemic",
+    "t": "covid-19 pandemic",
+    "kind": "word",
+    "forms": [
+      "covid-19 pandemic"
+    ],
+    "text": "A pandemic is an illness that spreads across the whole world. During covid-19 many cinemas closed, so IMAX earned much less.",
+    "audio": true
+  },
+  {
+    "k": "nolanomics",
+    "t": "Nolanomics",
+    "kind": "word",
+    "forms": [
+      "Nolanomics"
+    ],
+    "text": "Nolanomics is a made-up word that mixes Christopher Nolan, the director, with economics. It means the money IMAX earns from his films.",
+    "audio": true
+  },
+  {
+    "k": "christopher-nolan",
+    "t": "Nolan",
+    "kind": "name",
+    "forms": [
+      "Nolan"
+    ],
+    "text": "Christopher Nolan is a film director who likes IMAX cameras. He made Oppenheimer and The Odyssey.",
+    "audio": true
+  },
+  {
+    "k": "tour-de-force",
+    "t": "tour de force",
+    "kind": "phrase",
+    "forms": [
+      "tour de force"
+    ],
+    "text": "A tour de force is an amazing performance or work that shows great skill. It comes from French.",
+    "audio": true
+  },
+  {
+    "k": "highest-grossing",
+    "t": "highest-grossing",
+    "kind": "phrase",
+    "forms": [
+      "highest-grossing"
+    ],
+    "text": "Grossing means earning money before costs are taken out. The highest-grossing film earned the most ticket money.",
+    "audio": true
+  },
+  {
+    "k": "box-office",
+    "t": "box-office",
+    "kind": "phrase",
+    "forms": [
+      "box-office"
+    ],
+    "text": "The box office is where tickets are sold. Box-office revenue means the total money a film or cinema earns from ticket sales.",
+    "audio": true
+  },
+  {
+    "k": "revenue",
+    "t": "revenues",
+    "kind": "word",
+    "forms": [
+      "revenues",
+      "revenue"
+    ],
+    "text": "Revenue is the money a business takes in from selling things, before it pays its bills.",
+    "audio": true
+  },
+  {
+    "k": "homeric",
+    "t": "Homeric",
+    "kind": "word",
+    "forms": [
+      "Homeric"
+    ],
+    "text": "Homeric means like the ancient Greek poet Homer, who wrote the story of Odysseus. The Odyssey movie is based on his poem, so the boss jokes in that style.",
+    "audio": true
+  },
+  {
+    "k": "share-price",
+    "t": "share price",
+    "kind": "phrase",
+    "forms": [
+      "share price"
+    ],
+    "text": "A share price is what one small slice of a company costs on the stock market. It rises when more people want to own it.",
+    "audio": true
+  },
+  {
+    "k": "analysts",
+    "t": "Analysts",
+    "kind": "word",
+    "forms": [
+      "Analysts"
+    ],
+    "text": "Analysts are experts who study companies and predict how they will do.",
+    "audio": true
+  },
+  {
+    "k": "earnings",
+    "t": "earnings",
+    "kind": "word",
+    "forms": [
+      "earnings"
+    ],
+    "text": "Earnings are a company's profit, the money left after paying all its costs.",
+    "audio": true
+  },
+  {
+    "k": "wall-street",
+    "t": "Wall Street",
+    "kind": "name",
+    "forms": [
+      "Wall Street"
+    ],
+    "text": "Wall Street is a street in New York where the biggest stock market sits. People also use the name for the whole world of investors.",
+    "audio": true
+  },
+  {
+    "k": "fret",
+    "t": "fret",
+    "kind": "word",
+    "forms": [
+      "fret"
+    ],
+    "text": "To fret is to worry about something. Some investors fret that IMAX depends too much on a few hit movies.",
+    "audio": true
+  },
+  {
+    "k": "one-hit-wonder",
+    "t": "one-hitmaker wonder",
+    "kind": "phrase",
+    "forms": [
+      "one-hitmaker wonder"
+    ],
+    "text": "A one-hit wonder is a singer or group with only one big success. Here it means IMAX might only do well when one star director makes a hit.",
+    "audio": true
+  },
+  {
+    "k": "takeover",
+    "t": "takeover",
+    "kind": "word",
+    "forms": [
+      "takeover"
+    ],
+    "text": "A takeover is when one company buys another and becomes its owner.",
+    "audio": true
+  },
+  {
+    "k": "surging",
+    "t": "surging",
+    "kind": "word",
+    "forms": [
+      "surging"
+    ],
+    "text": "Surging means rising quickly and strongly, like a wave.",
+    "audio": true
+  },
+  {
+    "k": "slate",
+    "t": "slate",
+    "kind": "word",
+    "forms": [
+      "slate"
+    ],
+    "text": "A slate is the list of films a studio plans to release.",
+    "audio": true
+  },
+  {
+    "k": "blockbuster",
+    "t": "blockbuster",
+    "kind": "word",
+    "forms": [
+      "blockbuster"
+    ],
+    "text": "A blockbuster is a very popular, expensive movie that makes huge amounts of money.",
+    "audio": true
+  },
+  {
+    "k": "buoyed",
+    "t": "buoyed",
+    "kind": "word",
+    "forms": [
+      "buoyed"
+    ],
+    "text": "Buoyed means lifted up, like a boat floating. Here the boss says good movies will lift IMAX's growth.",
+    "audio": true
+  },
+  {
+    "k": "gen-z",
+    "t": "Gen Z",
+    "kind": "name",
+    "forms": [
+      "Gen Z"
+    ],
+    "text": "Gen Z is the generation born roughly between the late 1990s and early 2010s, today's teens and young adults.",
+    "audio": true
+  },
+  {
+    "k": "overdosing",
+    "t": "overdosing",
+    "kind": "word",
+    "forms": [
+      "overdosing"
+    ],
+    "text": "Overdosing means taking far too much of something. Here it is a joke about young people having far too much phone entertainment.",
+    "audio": true
+  },
+  {
+    "k": "communal",
+    "t": "communal",
+    "kind": "word",
+    "forms": [
+      "communal"
+    ],
+    "text": "Communal means shared by a group. A communal experience is one you enjoy together with other people.",
+    "audio": true
+  },
+  {
+    "k": "craving",
+    "t": "craving",
+    "kind": "word",
+    "forms": [
+      "craving"
+    ],
+    "text": "A craving is a very strong wish for something.",
+    "audio": true
+  },
+  {
+    "k": "cash-in",
+    "t": "cash in",
+    "kind": "phrase",
+    "forms": [
+      "cash in"
+    ],
+    "text": "To cash in on something means to make money from it.",
+    "audio": true
+  },
+  {
+    "k": "70mm",
+    "t": "70mm",
+    "kind": "word",
+    "forms": [
+      "70mm"
+    ],
+    "text": "70mm is the width of a special kind of film. It is twice as wide as normal 35mm film, so the picture is much larger and sharper.",
+    "audio": true
+  },
+  {
+    "k": "cinephiles",
+    "t": "cinephiles",
+    "kind": "word",
+    "forms": [
+      "cinephiles"
+    ],
+    "text": "Cinephiles are people who love movies and the cinema.",
+    "audio": true
+  },
+  {
+    "k": "digital-projection",
+    "t": "digital projection",
+    "kind": "phrase",
+    "forms": [
+      "digital projection"
+    ],
+    "text": "Digital projection shows a movie from computer files instead of from a strip of film.",
+    "audio": true
+  },
+  {
+    "k": "fanatical",
+    "t": "fanatical",
+    "kind": "word",
+    "forms": [
+      "fanatical"
+    ],
+    "text": "Fanatical means extremely eager about something. Less fanatical directors like IMAX but do not insist on it.",
+    "audio": true
+  },
+  {
+    "k": "devotees",
+    "t": "devotees",
+    "kind": "word",
+    "forms": [
+      "devotees"
+    ],
+    "text": "Devotees are people who are very loyal fans of something.",
+    "audio": true
+  },
+  {
+    "k": "streaming-platform",
+    "t": "streaming platform",
+    "kind": "phrase",
+    "forms": [
+      "streaming platform"
+    ],
+    "text": "A streaming platform, like Netflix, lets you watch movies over the internet instead of in a theatre.",
+    "audio": true
+  },
+  {
+    "k": "business-model",
+    "t": "business model",
+    "kind": "phrase",
+    "forms": [
+      "business model"
+    ],
+    "text": "A business model is how a company makes its money. IMAX earns by leasing its technology rather than running theatres.",
+    "audio": true
+  },
+  {
+    "k": "leases",
+    "t": "leases",
+    "kind": "word",
+    "forms": [
+      "leases"
+    ],
+    "text": "To lease is to let someone use something for a fee while you still own it.",
+    "audio": true
+  },
+  {
+    "k": "a-cut",
+    "t": "a cut",
+    "kind": "phrase",
+    "forms": [
+      "a cut"
+    ],
+    "text": "A cut is a share of the money earned. IMAX takes a cut of what the cinemas earn.",
+    "audio": true
+  },
+  {
+    "k": "fiddly",
+    "t": "fiddly",
+    "kind": "word",
+    "forms": [
+      "fiddly"
+    ],
+    "text": "Fiddly means tricky and slow because it needs many small careful steps.",
+    "audio": true
+  },
+  {
+    "k": "kit-out",
+    "t": "kit out",
+    "kind": "phrase",
+    "forms": [
+      "kit out"
+    ],
+    "text": "To kit out a place means to equip it with everything it needs.",
+    "audio": true
+  },
+  {
+    "k": "snap-your-fingers",
+    "t": "snap your fingers",
+    "kind": "phrase",
+    "forms": [
+      "snap your fingers"
+    ],
+    "text": "To snap your fingers and make something happen means it is quick and easy. The boss says IMAX theatres are not that easy.",
+    "audio": true
+  },
+  {
+    "k": "barriers-to-entry",
+    "t": "barriers to entry",
+    "kind": "phrase",
+    "forms": [
+      "barriers to entry"
+    ],
+    "text": "Barriers to entry are things that make it hard for new companies to join a market, such as cost and trust. IMAX has a head start.",
+    "audio": true
+  },
+  {
+    "k": "broker",
+    "t": "broker",
+    "kind": "word",
+    "forms": [
+      "broker"
+    ],
+    "text": "A broker is a person or firm that buys and sells shares for clients.",
+    "audio": true
+  },
+  {
+    "k": "credibility",
+    "t": "credibility",
+    "kind": "word",
+    "forms": [
+      "credibility"
+    ],
+    "text": "Credibility means being trusted and believable.",
+    "audio": true
+  },
+  {
+    "k": "umbrella-brand",
+    "t": "umbrella brand",
+    "kind": "phrase",
+    "forms": [
+      "umbrella brand"
+    ],
+    "text": "An umbrella brand is one name that covers many different products or partners.",
+    "audio": true
+  },
+  {
+    "k": "certification",
+    "t": "certification",
+    "kind": "word",
+    "forms": [
+      "certification"
+    ],
+    "text": "A certification is an official stamp saying something meets a standard.",
+    "audio": true
+  },
+  {
+    "k": "head-to-head",
+    "t": "head to head",
+    "kind": "phrase",
+    "forms": [
+      "head to head"
+    ],
+    "text": "Going head to head means competing directly against each other.",
+    "audio": true
+  },
+  {
+    "k": "reprise",
+    "t": "reprise",
+    "kind": "word",
+    "forms": [
+      "reprise"
+    ],
+    "text": "A reprise is a repeat of something from before.",
+    "audio": true
+  },
+  {
+    "k": "barbenheimer",
+    "t": "Barbenheimer",
+    "kind": "word",
+    "forms": [
+      "Barbenheimer"
+    ],
+    "text": "Barbenheimer was a 2023 mix of Barbie and Oppenheimer, two very different movies released the same day. Many people saw both.",
+    "audio": true
+  },
+  {
+    "k": "dunesday",
+    "t": "Dunesday",
+    "kind": "word",
+    "forms": [
+      "Dunesday"
+    ],
+    "text": "Dunesday is a joke name mixing Dune and Doomsday, two big movies coming out on one day.",
+    "audio": true
+  },
+  {
+    "k": "pandemic-box",
+    "t": "since the pandemic",
+    "kind": "phrase",
+    "forms": [
+      "since the pandemic"
+    ],
+    "text": "Since the pandemic means in the time after covid-19, when cinemas reopened.",
+    "audio": true
+  },
+  {
+    "k": "ticket-prices",
+    "t": "ticket prices",
+    "kind": "phrase",
+    "forms": [
+      "ticket prices"
+    ],
+    "text": "Ticket prices are what you pay to get in. Higher prices, not more people, are why the box office is up.",
+    "audio": true
+  }
+]
