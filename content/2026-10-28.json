@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-28",
+  "title": "American bosses are desperately trying to de-MAGAfy",
+  "articleUrl": "https://www.economist.com/business/2026/10/27/american-bosses-are-desperately-trying-to-de-magafy",
+  "articlePageUrl": "/articles/2026-10-28.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "garish",
+      "partOfSpeech": "adjective",
+      "pronunciation": "GAIR-ish",
+      "articleQuote": "the many corporate donations to Mr Trump’s garish new ballroom",
+      "meaning": "Garish describes something so bright, flashy, or over-decorated that it is unpleasant to look at, like a neon-orange jacket covered in sequins. It usually carries a note of bad taste: the thing is not just colourful, it is showy in a loud, tasteless way. The Economist calls the president's new ballroom garish to suggest that companies were willing to pay for something flashy, and a little embarrassing, to win his favour.",
+      "examples": [
+        "The motel's garish pink-and-green sign could be seen from a mile down the highway.",
+        "Her aunt's garish holiday sweater, covered in blinking lights, made the whole family laugh."
+      ]
+    },
+    {
+      "word": "overtures",
+      "partOfSpeech": "noun",
+      "pronunciation": "OH-ver-churz",
+      "articleQuote": "even moderate Democrats have become unreceptive to their overtures",
+      "meaning": "Overtures, in the plural, are first moves made to start a relationship, win someone over, or open a negotiation: an offer of friendship, a peace proposal, a business approach. The word also names the instrumental piece that opens an opera, which fits, since an overture is an opening. Here, business leaders are making friendly overtures to Democrats after years of leaning toward Republicans, and the article warns that the Democrats may not welcome them.",
+      "examples": [
+        "After the argument, Maya made overtures to her old friend by sending her a funny note.",
+        "The two countries made peace overtures before the talks began."
+      ]
+    },
+    {
+      "word": "indiscretions",
+      "partOfSpeech": "noun",
+      "pronunciation": "in-dis-KRESH-unz",
+      "articleQuote": "parse employees’ actions and communications for indiscretions that could become public",
+      "meaning": "An indiscretion is a careless act or remark that shows poor judgment, especially one that is embarrassing if other people find out: a foolish email, a loose comment, a secret shared at the wrong time. It is milder than a crime but can still do real damage to a reputation. The article describes lawyers combing through workers' emails and messages in advance, hunting for indiscretions that a congressional committee could someday read out in public.",
+      "examples": [
+        "The politician's youthful indiscretions came back to haunt her when an old video appeared online.",
+        "He deleted the group chat after worrying that one silly indiscretion might get him in trouble."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Political action committees (PACs) and corporate political giving",
+      "articleQuote": "Companies are barred from giving candidates money from their own coffers. But they can co-ordinate donations by setting up political action committees (PACs)",
+      "meaning": "Politics and law. In the United States, federal law says a company cannot simply write a cheque from its own bank account to a candidate for Congress or the presidency. That rule exists because a giant firm with billions of dollars could otherwise buy huge influence over who wins. But companies still want a say, so they use workarounds that the law allows.\n\nThe main one is the **political action committee (PAC)**: a separate fund that a company or an industry group sets up. The PAC asks people connected to the company, mostly its executives, to contribute voluntarily, pools their money, and then gives it to candidates or spends it on ads. Executives can also give straight from their own pockets, and wealthy ones do so through trusts. Think of a PAC as a shared piggy bank: the company runs it, but the coins are supposedly from the people.\n\nThe Economist used these filings, which are public, to measure a shift. Business leaders gave 33% of their money to Democrats in the second quarter of 2026, up from 31% in 2025. But a handful of mega-donors, including Elon Musk, give so heavily to Republicans that they hide the trend; remove the ten biggest and Democrats get 51%. The Ohio crypto fight shows the other side: Fairshake, a PAC network, is spending $55m against a Democrat who criticises its industry. When you read about politics and business, ask who is giving, through which channel, and what they hope to get back."
+    },
+    {
+      "name": "Congressional oversight and subpoenas",
+      "articleQuote": "Control of the lower chamber would give Democratic committee chairs the power to subpoena company files and call executives to testify.",
+      "meaning": "Government. The Constitution splits power so that Congress, as well as the president, can check how things are run. One of Congress's strongest tools is **oversight**: investigating the government, and sometimes private companies, through hearings and demands for documents. Almost all of that work happens in committees, small groups of lawmakers who specialise in an area such as energy or finance. Each committee is led by a chair, and the chair belongs to whichever party holds the majority in that chamber.\n\nThat is why the midterm elections matter so much to businesses. If Democrats win the House of Representatives (the lower chamber), they take every committee chair. A chair can issue a **subpoena**, a legal order forcing someone to hand over documents or to appear and answer questions under oath. Ignoring one can lead to penalties. Executives called to a hearing, often televised, face tough questions, and anything awkward they say or write can end up in the news.\n\nThat explains the details in the article's final section: lawyers hunting for embarrassing emails, training executives to be good on camera, and meeting key members of Congress early. It also explains the title: while Republicans run both chambers, companies had little to fear in investigations and every reason to befriend the president. A change in who holds the chairs changes who needs to be befriended."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, how did many American companies act during the first two years of Mr Trump's return to power?",
+      "options": [
+        "They gave equally to both parties, as they always had",
+        "They abandoned even-handedness and leaned toward the president to advance their agendas",
+        "They refused to talk to either party",
+        "They moved their headquarters out of Washington"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says many bosses abandoned bipartisanship to take a window of opportunity for mergers and regulatory changes."
+    },
+    {
+      "question": "Why does the article say that looking at all executive donations 'vastly understates the shift' toward Democrats?",
+      "options": [
+        "Executives stopped donating altogether",
+        "Most donations are secret and not reported",
+        "A few mega-donors give so heavily to Republicans that they mask the change; without the ten biggest, Democrats got 51%",
+        "Democrats refuse money from executives"
+      ],
+      "answerIndex": 2,
+      "explanation": "With the ten biggest donors removed, the Democratic share was 51% in the second quarter, up from 36% in 2025."
+    },
+    {
+      "question": "What is a political action committee (PAC), as used in the article?",
+      "options": [
+        "A fund through which a company can organise voluntary contributions, mostly from executives, to support candidates",
+        "A government office that counts votes",
+        "A rule that bans all political giving",
+        "A group of lawmakers who write the federal budget"
+      ],
+      "answerIndex": 0,
+      "explanation": "Companies cannot give candidates money directly, but they can co-ordinate donations through PACs, which collect voluntary contributions."
+    },
+    {
+      "question": "Why would a Democratic win in the House worry businesses even if Republicans keep the Senate?",
+      "options": [
+        "Democratic committee chairs could subpoena company files and call executives to testify",
+        "Democrats would automatically raise every company's taxes",
+        "The president would have to resign",
+        "Companies would no longer be allowed to hire lawyers"
+      ],
+      "answerIndex": 0,
+      "explanation": "Control of the lower chamber gives Democrats the committee chairs and with them the power to subpoena documents and require testimony."
+    },
+    {
+      "question": "What does the article mean by saying that businesses' 'overtures' may be unwelcome to even moderate Democrats?",
+      "options": [
+        "The Democrats do not understand business",
+        "The Democrats may not respond warmly to companies' attempts to win back their friendship",
+        "The Democrats have asked companies for money",
+        "Companies have already stopped trying"
+      ],
+      "answerIndex": 1,
+      "explanation": "Overtures are first moves to win someone over. The article notes anti-corporate feeling in the party, summed up as 'We demand blood.'"
+    }
+  ]
+}
