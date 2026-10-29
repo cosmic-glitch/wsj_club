@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-29",
+  "title": "Why dogs catch yawns from their owners but not other dogs",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/28/why-dogs-catch-yawns-from-their-owners-but-not-other-dogs",
+  "articlePageUrl": "/articles/junior/2026-10-29.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "cohesion",
+      "partOfSpeech": "noun",
+      "pronunciation": "koh-HEE-zhun",
+      "articleQuote": "Many suspect it is a form of behavioural mirroring that helps animals strengthen social bonds and enhance group cohesion.",
+      "meaning": "Cohesion is the way the members of a group stick together and work as one team. A group with strong cohesion looks out for each other and does not fall apart. In the article, scientists think yawning may help animals feel close, which keeps their group tightly bound.",
+      "examples": [
+        "Our soccer team had great cohesion, so we passed the ball well and cheered for each other.",
+        "The class lost its cohesion when everyone started arguing about the project."
+      ]
+    },
+    {
+      "word": "diminish",
+      "partOfSpeech": "verb",
+      "pronunciation": "dih-MIN-ish",
+      "articleQuote": "Along the way, this process seems to have diminished their awareness of their own kind too.",
+      "meaning": "To diminish something is to make it smaller, weaker, or less. Something that is diminished is still there, but there is less of it than before. In the article, living with people seems to have made dogs notice other dogs a little less.",
+      "examples": [
+        "The bright lights of the city diminish how many stars we can see at night.",
+        "Practicing every day will diminish my fear of playing in front of a crowd."
+      ]
+    },
+    {
+      "word": "trifling",
+      "partOfSpeech": "adjective",
+      "pronunciation": "TRY-fling",
+      "articleQuote": "The loss of the contagious yawn in wild populations, as a result of interbreeding between dogs and wolves, may seem trifling.",
+      "meaning": "Trifling means very small and not important. A trifling problem is one you barely need to worry about. In the article, losing a catchy yawn sounds like a trifling thing, but the scientist fears it could be a sign of bigger changes.",
+      "examples": [
+        "Spilling one drop of juice on the table is a trifling mistake.",
+        "The price difference between the two pencils was trifling, so I just picked my favorite color."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Domestication",
+      "articleQuote": "Researchers suspect that over the course of 30,000-40,000 years living with (and being bred by) people, dogs have developed traits which made them more aware of human behaviours.",
+      "meaning": "Your pet dog loves to cuddle, but a wolf, its cousin, would never act that way. What changed? The answer is **domestication**.\n\nDomestication happens when people live with a kind of animal for a very long time and choose which ones have babies. If people only let the calmest, friendliest animals have puppies, then over many generations the whole group becomes calmer and friendlier. This is called **breeding**. It does not happen in one lifetime. It takes thousands of years.\n\nThe animals change in body and in behavior. Dogs, for example, learned to pay close attention to the faces and moods of people, because the dogs that did this best were the ones people kept.\n\nImagine a class pet hamster. Every year, the teacher picks only the gentlest hamsters to have babies. After many, many years, the hamsters would be much gentler than wild ones. Domestication is that same idea stretched over a huge amount of time.\n\nSo the takeaway: domestication is when people shape an animal, over many generations, by choosing which ones have young.\n\nIn the article, 30,000 to 40,000 years of living with people made dogs better at reading humans and, it seems, less tuned in to other dogs."
+    },
+    {
+      "name": "Crossbreeding",
+      "articleQuote": "teamed up to investigate by comparing the yawning behaviour of purebred wolves with that of wolf crossbreeds carrying dog DNA.",
+      "meaning": "If a wolf and a dog have puppies together, what are those puppies? They are **crossbreeds**.\n\nA crossbreed has parents from two different kinds, so it carries a mix of both parents' **DNA**. DNA is the set of instructions inside every living thing that helps decide how its body and behavior turn out. An animal with parents of the same kind is **purebred**.\n\nWhen the two kinds mix and have young, the mixing can spread. Their puppies can later have their own puppies with other animals, and pieces of the first parents' DNA keep traveling through the group.\n\nThink of mixing paint. Blue and yellow make green. If you keep adding a little green to a pot of yellow, the yellow slowly turns greenish too. A group of wolves with a little dog DNA mixed in works a bit like that pot.\n\nSo the takeaway: crossbreeding mixes the DNA of two kinds, and the mix can slowly spread through a population.\n\nIn the article, scientists compared purebred wolves with wolf-dog crossbreeds and found the crossbreeds caught fewer yawns."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which yawns do dogs usually catch?",
+      "options": [
+        "Only the yawns of other dogs",
+        "Yawns from their owners",
+        "No yawns at all",
+        "Only the yawns of cats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says dogs often yawn after their owners, but yawning after other dogs is rare."
+    },
+    {
+      "question": "What did the scientists compare in their study?",
+      "options": [
+        "Dogs and cats living in homes",
+        "Wolves in zoos and wolves in cities",
+        "Purebred wolves and wolf-dog crossbreeds",
+        "Young wolves and old wolves"
+      ],
+      "answerIndex": 2,
+      "explanation": "They watched 20 purebred wolves and 13 crossbreeds that carry dog DNA."
+    },
+    {
+      "question": "What did the researchers find about catching yawns?",
+      "options": [
+        "Purebred wolves caught yawns 41% of the time and crossbreeds only 24%",
+        "Crossbreeds caught more yawns than purebreds",
+        "No wolves ever caught a yawn",
+        "All wolves caught a yawn every time"
+      ],
+      "answerIndex": 0,
+      "explanation": "Purebred wolves followed a yawn 41% of the time, which fits the idea that dog DNA changes yawn-catching."
+    },
+    {
+      "question": "Which wolves were most likely to start a contagious yawn?",
+      "options": [
+        "The strongest leaders of the pack",
+        "The oldest wolves",
+        "The wolves that spent time with the widest range of packmates",
+        "The wolves that slept the most"
+      ],
+      "answerIndex": 2,
+      "explanation": "Rank in the pack did not matter. The well-connected socialites got others yawning."
+    },
+    {
+      "question": "What does the word \"trifling\" mean in the article?",
+      "options": [
+        "Very small and not important",
+        "Very dangerous",
+        "Very loud",
+        "Very old"
+      ],
+      "answerIndex": 0,
+      "explanation": "Trifling means tiny or unimportant, though the scientist worries that this change may lead to bigger ones."
+    }
+  ]
+}
