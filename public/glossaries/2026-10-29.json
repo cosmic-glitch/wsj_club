@@ -1,0 +1,593 @@
+[
+  {
+    "k": "phlegmatic",
+    "t": "phlegmatic",
+    "kind": "vocab",
+    "pron": "fleg-MAT-ik",
+    "forms": [
+      "phlegmatic"
+    ],
+    "text": "Phlegmatic means calm and hard to rattle. The Economist jokes that a blunt, phlegmatic Dutch central banker would be the best messenger to scold France about its debts.",
+    "audio": true
+  },
+  {
+    "k": "transitory",
+    "t": "transitory",
+    "kind": "vocab",
+    "pron": "TRAN-sih-tor-ee",
+    "forms": [
+      "transitory"
+    ],
+    "text": "Transitory means lasting only a short while. The ECB hoped the surge in prices would be transitory, which is partly why it was slow to raise rates.",
+    "audio": true
+  },
+  {
+    "k": "jeopardy",
+    "t": "jeopardy",
+    "kind": "vocab",
+    "pron": "JEP-er-dee",
+    "forms": [
+      "jeopardy"
+    ],
+    "text": "Jeopardy is danger of loss or harm. Ms Lagarde is leaving just as France's money troubles put Europe's stability at risk.",
+    "audio": true
+  },
+  {
+    "k": "ecb",
+    "t": "European Central Bank (ECB)",
+    "kind": "word",
+    "forms": [
+      "ECB",
+      "European Central Bank"
+    ],
+    "text": "The ECB is the central bank for the countries that use the euro. It sets interest rates for all of them at once, which is why one country's debt trouble can become everyone's problem.",
+    "audio": true
+  },
+  {
+    "k": "lagarde",
+    "t": "Christine Lagarde",
+    "kind": "name",
+    "forms": [
+      "Christine Lagarde",
+      "Ms Lagarde",
+      "Madame la présidente"
+    ],
+    "text": "Christine Lagarde is a French lawyer and politician who ran the IMF before becoming president of the ECB in 2019. Madame la présidente is French for Madam President.",
+    "audio": true
+  },
+  {
+    "k": "wef",
+    "t": "World Economic Forum",
+    "kind": "word",
+    "forms": [
+      "World Economic Forum"
+    ],
+    "text": "The World Economic Forum is a Swiss organisation best known for its yearly meeting of business leaders and politicians in the resort town of Davos.",
+    "audio": true
+  },
+  {
+    "k": "gabfest",
+    "t": "gabfest",
+    "kind": "word",
+    "forms": [
+      "gabfest"
+    ],
+    "text": "A gabfest is a long event with lots of talking and not much action. Calling Davos a gabfest is a gentle jab at how much chatter it produces.",
+    "audio": true
+  },
+  {
+    "k": "imf",
+    "t": "IMF",
+    "kind": "word",
+    "forms": [
+      "IMF"
+    ],
+    "text": "The IMF, or International Monetary Fund, is a global lender that helps countries in financial trouble and monitors the world economy.",
+    "audio": true
+  },
+  {
+    "k": "inflationary-shocks",
+    "t": "inflationary shocks",
+    "kind": "word",
+    "forms": [
+      "inflationary shocks"
+    ],
+    "text": "An inflationary shock is a sudden event that pushes prices up fast, such as a war that makes energy more expensive. Inflation means prices rising across the economy.",
+    "audio": true
+  },
+  {
+    "k": "fiscally-rogue",
+    "t": "fiscally rogue",
+    "kind": "phrase",
+    "forms": [
+      "fiscally rogue"
+    ],
+    "text": "Fiscal means to do with government taxes and spending. A rogue is someone who ignores the rules, so a fiscally rogue country is one that spends without a credible plan to pay for it.",
+    "audio": true
+  },
+  {
+    "k": "bond-yields",
+    "t": "bond yields",
+    "kind": "word",
+    "forms": [
+      "bond yields"
+    ],
+    "text": "A bond is an IOU a government sells to borrow money, and its yield is the yearly interest rate investors earn. Soaring yields mean investors want more pay to cover the risk.",
+    "audio": true
+  },
+  {
+    "k": "soaring",
+    "t": "soaring",
+    "kind": "word",
+    "forms": [
+      "soaring",
+      "Soaring"
+    ],
+    "text": "Soaring means rising very fast and very high, like a bird climbing in the sky. Here it describes borrowing costs and the gap between them.",
+    "audio": true
+  },
+  {
+    "k": "spread",
+    "t": "spread",
+    "kind": "word",
+    "forms": [
+      "spread",
+      "spreads"
+    ],
+    "text": "Normally a spread is something you put on bread, but in finance it is the gap between two interest rates. Here it is how much more investors demand from France than from Germany. A wider gap signals more worry.",
+    "audio": true
+  },
+  {
+    "k": "benchmark",
+    "t": "benchmark",
+    "kind": "word",
+    "forms": [
+      "benchmark"
+    ],
+    "text": "A benchmark is a standard that other things are compared with. German debt is Europe's benchmark because it is seen as the safest.",
+    "audio": true
+  },
+  {
+    "k": "euro-crisis",
+    "t": "euro-zone crisis",
+    "kind": "word",
+    "forms": [
+      "euro-zone crisis",
+      "euro crisis"
+    ],
+    "text": "In the early 2010s several euro countries, including Greece, Italy and Spain, struggled to pay their debts, and people feared the euro itself might break up.",
+    "audio": true
+  },
+  {
+    "k": "elysee",
+    "t": "Élysée Palace",
+    "kind": "name",
+    "forms": [
+      "Élysée Palace"
+    ],
+    "text": "The Élysée Palace in Paris is the official residence and office of the French president. Saying someone may enter it means they may win the presidency.",
+    "audio": true
+  },
+  {
+    "k": "le-pen",
+    "t": "Marine Le Pen",
+    "kind": "name",
+    "forms": [
+      "Marine Le Pen",
+      "Ms Le Pen"
+    ],
+    "text": "Marine Le Pen is a French politician who leads a right-wing populist party. She once wanted France to give up the euro.",
+    "audio": true
+  },
+  {
+    "k": "populist",
+    "t": "populist",
+    "kind": "word",
+    "forms": [
+      "populist"
+    ],
+    "text": "A populist politician claims to speak for ordinary people against elites, and often makes bold promises that are hard to pay for.",
+    "audio": true
+  },
+  {
+    "k": "single-currency",
+    "t": "single currency",
+    "kind": "word",
+    "forms": [
+      "single currency"
+    ],
+    "text": "The single currency is the euro, which many European countries share instead of each having its own money.",
+    "audio": true
+  },
+  {
+    "k": "unenviable",
+    "t": "unenviable",
+    "kind": "word",
+    "forms": [
+      "unenviable"
+    ],
+    "text": "Unenviable means so difficult or unpleasant that nobody would want it. The next ECB boss faces the unenviable task of telling France to cut spending.",
+    "audio": true
+  },
+  {
+    "k": "tenure",
+    "t": "tenure",
+    "kind": "word",
+    "forms": [
+      "tenure"
+    ],
+    "text": "A person's tenure is the time they hold a job or office. Ms Lagarde's tenure began in 2019.",
+    "audio": true
+  },
+  {
+    "k": "idyll",
+    "t": "idyll",
+    "kind": "word",
+    "forms": [
+      "idyll"
+    ],
+    "text": "An idyll is a peaceful, happy period, like a perfect holiday. The article says the calm early years of her term did not last.",
+    "audio": true
+  },
+  {
+    "k": "hardly-a-crisis",
+    "t": "hardly a crisis",
+    "kind": "phrase",
+    "forms": [
+      "hardly a crisis"
+    ],
+    "text": "Hardly means barely, so this phrase says things were far from a crisis. Low inflation was a worry, but a mild one.",
+    "audio": true
+  },
+  {
+    "k": "battered",
+    "t": "battered",
+    "kind": "word",
+    "forms": [
+      "battered"
+    ],
+    "text": "To batter is to hit again and again. Three tests battered the ECB means they kept striking it one after another.",
+    "audio": true
+  },
+  {
+    "k": "periphery",
+    "t": "periphery",
+    "kind": "word",
+    "forms": [
+      "periphery"
+    ],
+    "text": "A periphery is the outer edge of something. In the euro zone, the periphery means the poorer, more indebted countries on the edges, such as Italy and Spain, as opposed to the core around Germany.",
+    "audio": true
+  },
+  {
+    "k": "not-here-to-close-spreads",
+    "t": "not here to close spreads",
+    "kind": "phrase",
+    "forms": [
+      "not here to close spreads"
+    ],
+    "text": "This was Ms Lagarde's remark that the ECB's job is not to shrink the gaps between countries' borrowing costs. Markets heard it as a signal of no help, and spreads widened.",
+    "audio": true
+  },
+  {
+    "k": "vice",
+    "t": "vice",
+    "kind": "word",
+    "forms": [
+      "vice"
+    ],
+    "text": "A vice here is the clamp, a tool that squeezes something from both sides. Being in a vice means being pressed by two opposite demands.",
+    "audio": true
+  },
+  {
+    "k": "perennial",
+    "t": "perennial",
+    "kind": "word",
+    "forms": [
+      "perennial"
+    ],
+    "text": "Perennial means coming back year after year, like plants that regrow each spring. A perennial problem never really goes away.",
+    "audio": true
+  },
+  {
+    "k": "monetary-policy",
+    "t": "monetary policy",
+    "kind": "word",
+    "forms": [
+      "monetary policy"
+    ],
+    "text": "Monetary policy is how a central bank steers the economy, mainly by moving interest rates up or down to cool or boost spending.",
+    "audio": true
+  },
+  {
+    "k": "policy-rate",
+    "t": "policy rate",
+    "kind": "word",
+    "forms": [
+      "policy rate"
+    ],
+    "text": "The policy rate is the main interest rate set by a central bank. It influences the rates on loans across the whole economy.",
+    "audio": true
+  },
+  {
+    "k": "market-discipline",
+    "t": "market discipline",
+    "kind": "word",
+    "forms": [
+      "market discipline"
+    ],
+    "text": "Market discipline is the pressure investors apply to governments by demanding higher interest when they borrow too much, which pushes them to behave.",
+    "audio": true
+  },
+  {
+    "k": "heedlessly",
+    "t": "heedlessly",
+    "kind": "word",
+    "forms": [
+      "heedlessly"
+    ],
+    "text": "Heedlessly means without paying attention to the consequences. Politicians who borrow heedlessly spend first and worry later.",
+    "audio": true
+  },
+  {
+    "k": "last-resort",
+    "t": "not-quite-last resort",
+    "kind": "phrase",
+    "forms": [
+      "not-quite-last resort"
+    ],
+    "text": "A lender of last resort rescues banks or governments when nobody else will. The writer says the ECB was a not-quite version, since it helped but only with conditions.",
+    "audio": true
+  },
+  {
+    "k": "bond-buying",
+    "t": "bond-buying programme",
+    "kind": "word",
+    "forms": [
+      "bond-buying programme"
+    ],
+    "text": "When a central bank buys bonds it pushes their prices up and yields down, making borrowing cheaper. The ECB did this to calm markets during the pandemic.",
+    "audio": true
+  },
+  {
+    "k": "bloc",
+    "t": "bloc",
+    "kind": "word",
+    "forms": [
+      "bloc"
+    ],
+    "text": "A bloc is a group of countries acting together, such as the European Union or the euro zone.",
+    "audio": true
+  },
+  {
+    "k": "supply-disruptions",
+    "t": "supply disruptions",
+    "kind": "word",
+    "forms": [
+      "supply disruptions"
+    ],
+    "text": "Supply disruptions are breakdowns in the making and shipping of goods, like jammed ports. They make products scarcer and prices higher.",
+    "audio": true
+  },
+  {
+    "k": "energy-shock",
+    "t": "energy shock",
+    "kind": "word",
+    "forms": [
+      "energy shock"
+    ],
+    "text": "An energy shock is a sudden jump in the price of oil or gas. After Russia invaded Ukraine, European energy costs soared.",
+    "audio": true
+  },
+  {
+    "k": "transitory-hope",
+    "t": "hoped the surge might prove transitory",
+    "kind": "phrase",
+    "forms": [
+      "hoped the surge might prove transitory",
+      "might prove transitory"
+    ],
+    "text": "To prove something means to turn out to be. Here the ECB hoped the price jump would turn out to be short-lived, but it lasted.",
+    "audio": true
+  },
+  {
+    "k": "percentage-points",
+    "t": "percentage points",
+    "kind": "word",
+    "forms": [
+      "percentage points"
+    ],
+    "text": "A percentage point is one step on a percentage scale. Raising a rate from 0% to 4.5% is a rise of 4.5 percentage points, which is different from a 4.5% increase.",
+    "audio": true
+  },
+  {
+    "k": "transmission-protection",
+    "t": "transmission-protection instrument",
+    "kind": "word",
+    "forms": [
+      "transmission-protection instrument"
+    ],
+    "text": "This is an ECB tool for buying a country's bonds if its borrowing costs jump for no good reason. Transmission means how a rate change passes through to the real economy.",
+    "audio": true
+  },
+  {
+    "k": "repricing",
+    "t": "repricing",
+    "kind": "word",
+    "forms": [
+      "repricing"
+    ],
+    "text": "Repricing is a change in the price investors will pay, here for bonds. Disorderly repricing means a chaotic, panicky move.",
+    "audio": true
+  },
+  {
+    "k": "prudent",
+    "t": "prudent",
+    "kind": "word",
+    "forms": [
+      "prudent"
+    ],
+    "text": "Prudent means careful and sensible, especially with money. Prudent macroeconomic management means keeping debt and deficits under control.",
+    "audio": true
+  },
+  {
+    "k": "bedevil",
+    "t": "bedevil",
+    "kind": "word",
+    "forms": [
+      "bedevil"
+    ],
+    "text": "To bedevil is to cause constant trouble, as if a devil were tormenting you. The question of what to do about reckless spenders will bedevil the next boss.",
+    "audio": true
+  },
+  {
+    "k": "minority-government",
+    "t": "minority government",
+    "kind": "word",
+    "forms": [
+      "minority government"
+    ],
+    "text": "A minority government is one whose party lacks a majority of seats, so it needs help from others to pass laws. That makes big reforms hard.",
+    "audio": true
+  },
+  {
+    "k": "stand-off",
+    "t": "stand-off",
+    "kind": "word",
+    "forms": [
+      "stand-off"
+    ],
+    "text": "A stand-off is a tense situation where neither side will back down. The ECB may face one with France.",
+    "audio": true
+  },
+  {
+    "k": "going-dutch",
+    "t": "Going Dutch",
+    "kind": "phrase",
+    "forms": [
+      "Going Dutch"
+    ],
+    "text": "Going Dutch usually means each person pays their own share of a bill. Here it is a pun, because the contenders include a Dutchman, and it hints that a Dutch boss could take over.",
+    "audio": true
+  },
+  {
+    "k": "haggling",
+    "t": "haggling",
+    "kind": "word",
+    "forms": [
+      "haggling"
+    ],
+    "text": "Haggling is arguing over a price or deal until each side gives something up. EU jobs are haggled over as a bundle.",
+    "audio": true
+  },
+  {
+    "k": "quintessential",
+    "t": "quintessential",
+    "kind": "word",
+    "forms": [
+      "quintessential"
+    ],
+    "text": "Quintessential means the most typical example of something. A quintessential European fashion means the classic way the EU does things: bargaining over many jobs at once.",
+    "audio": true
+  },
+  {
+    "k": "von-der-leyen",
+    "t": "Ursula von der Leyen",
+    "kind": "name",
+    "forms": [
+      "Ursula von der Leyen"
+    ],
+    "text": "Ursula von der Leyen is the German head of the European Commission, the EU's executive body. Because she is German, Germany is less likely to get the ECB job too.",
+    "audio": true
+  },
+  {
+    "k": "bis",
+    "t": "Bank for International Settlements",
+    "kind": "word",
+    "forms": [
+      "Bank for International Settlements"
+    ],
+    "text": "The BIS, in Switzerland, is often called the central bankers' bank. It is where central banks meet, share research and coordinate.",
+    "audio": true
+  },
+  {
+    "k": "dove",
+    "t": "dove",
+    "kind": "word",
+    "forms": [
+      "dove"
+    ],
+    "text": "In central banking, a dove prefers low interest rates and tolerates higher inflation to protect jobs and growth. The opposite is a hawk.",
+    "audio": true
+  },
+  {
+    "k": "soft-money",
+    "t": "soft-money",
+    "kind": "word",
+    "forms": [
+      "soft-money"
+    ],
+    "text": "Soft money means easy, cheap credit with low interest rates, which tends to allow higher inflation. Hard money is the strict opposite.",
+    "audio": true
+  },
+  {
+    "k": "chief-economist",
+    "t": "chief economist",
+    "kind": "word",
+    "forms": [
+      "chief economist"
+    ],
+    "text": "The ECB's chief economist is a board member who guides its economic analysis and shapes the rate decisions.",
+    "audio": true
+  },
+  {
+    "k": "teutonic",
+    "t": "teutonic",
+    "kind": "word",
+    "forms": [
+      "teutonic"
+    ],
+    "text": "Teutonic means German, from an ancient Germanic tribe. Teutonic firmness is the stereotype of strict, rule-following Germans.",
+    "audio": true
+  },
+  {
+    "k": "mould",
+    "t": "mould",
+    "kind": "word",
+    "forms": [
+      "mould"
+    ],
+    "text": "Here a mould is a shape or type that a person fits. A more German mould means someone strict about inflation and budgets.",
+    "audio": true
+  },
+  {
+    "k": "embarrassingly",
+    "t": "embarrassingly",
+    "kind": "word",
+    "forms": [
+      "embarrassingly"
+    ],
+    "text": "Embarrassingly signals that a fact looks bad. The writer notes that all 21 national central-bank governors are men.",
+    "audio": true
+  },
+  {
+    "k": "remit",
+    "t": "remit",
+    "kind": "word",
+    "forms": [
+      "remit"
+    ],
+    "text": "A remit is the area of responsibility given to a person or organisation. The new ECB boss's remit begins with getting France to cut spending.",
+    "audio": true
+  },
+  {
+    "k": "phlegm-dutch",
+    "t": "phlegmatic Dutch",
+    "kind": "phrase",
+    "forms": [
+      "phlegmatic Dutch"
+    ],
+    "text": "The joke is that Dutch people are stereotyped as direct and unflappable, so the Dutch language is the ideal way to deliver tough news to Paris.",
+    "audio": true
+  }
+]

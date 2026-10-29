@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-29",
+  "title": "Christine Lagarde departs at a moment of peril",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/10/29/christine-lagarde-departs-at-a-moment-of-peril",
+  "articlePageUrl": "/articles/2026-10-29.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "phlegmatic",
+      "partOfSpeech": "adjective",
+      "pronunciation": "fleg-MAT-ik",
+      "articleQuote": "would sound best in blunt, phlegmatic Dutch",
+      "meaning": "Phlegmatic describes a person who stays calm and unexcited, even when things get tense; someone who shrugs instead of panics. It can be a compliment (steady, hard to rattle) or a mild complaint (a bit slow to show feeling). The Economist ends with a joke built on a stereotype: a stern message to France about its debts would land best if delivered by a blunt, unflappable Dutch central banker.",
+      "examples": [
+        "While everyone else screamed on the roller coaster, my phlegmatic uncle just yawned.",
+        "The goalkeeper stayed phlegmatic after the missed save and calmly waited for the next shot."
+      ]
+    },
+    {
+      "word": "transitory",
+      "partOfSpeech": "adjective",
+      "pronunciation": "TRAN-sih-tor-ee",
+      "articleQuote": "the ECB hoped the surge might prove transitory",
+      "meaning": "Transitory means lasting only a short time and then passing away, like a summer thunderstorm or a fad. It is a favourite word of central bankers, who often call a jump in prices transitory when they expect it to fade on its own. Here, the ECB hoped rising inflation would be temporary, so it was slow to raise interest rates; the surge turned out to be longer-lasting than hoped.",
+      "examples": [
+        "The pain from the scraped knee was transitory and gone by dinner.",
+        "Some people think a viral dance craze is transitory, while others think it will last for years."
+      ]
+    },
+    {
+      "word": "jeopardy",
+      "partOfSpeech": "noun",
+      "pronunciation": "JEP-er-dee",
+      "articleQuote": "She will depart in February, nine months ahead of schedule, at a moment of jeopardy.",
+      "meaning": "Jeopardy is danger of loss, harm, or failure; a situation where something valuable could be damaged. If your place on a team is in jeopardy, you might lose it. The article uses it to say Ms Lagarde is leaving just as Europe faces real risk, since France's soaring borrowing costs threaten the stability that the central bank is meant to protect.",
+      "examples": [
+        "Missing three practices put her spot on the starting lineup in jeopardy.",
+        "The long drought put the farmers' whole harvest in jeopardy."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Bond yields and \"spreads\"",
+      "articleQuote": "The spread over the German benchmark is now as high as it was during the worst of the euro-zone crisis in the early 2010s",
+      "meaning": "Finance. When a government wants money, it sells **bonds**: IOUs that promise to pay the buyer back later, with interest. The yearly interest rate on a bond is its **yield**. If investors trust the government, they accept a low yield. If they worry it might not repay, they demand a higher yield as payment for the risk. A higher yield means the government's borrowing is more expensive.\n\nA **spread** is simply the gap between two yields. In Europe, Germany is the safe benchmark, so people compare each country's yield with Germany's. If German bonds pay 2.5% and French bonds pay 3.5%, the spread is one percentage point. Think of it as a fear gauge: the wider the gap, the more nervous investors are about that country.\n\nThis matters for the euro. The euro-zone countries share the European Central Bank, but each borrows separately. Lowering the ECB's main interest rate does little good if a country's own spread jumps and its borrowing costs rise anyway. That is why the ECB stepped in, buying bonds during the pandemic and creating a special tool in 2022, but only for countries that follow sensible budget rules. Now France's spread is back at crisis levels, and the question is whether the ECB should help a country that will not fix its budget."
+    },
+    {
+      "name": "Inflation targeting and interest rates",
+      "articleQuote": "the bank was forced to raise rates by 4.5 percentage points between July 2022 and September 2023",
+      "meaning": "Economics. **Inflation** means prices rising across the economy, so each euro or dollar buys less. A little is considered healthy, so most central banks, including the ECB, aim for about 2% a year. That goal is called an **inflation target**.\n\nThe central bank's main lever is its **policy interest rate**, the rate at which banks borrow from it. When inflation runs hot, it raises the rate. Loans for homes, cars, and businesses get pricier, people and companies spend less, demand cools, and price rises slow. When inflation is too low, it cuts rates to make borrowing cheap and encourage spending. It is like a thermostat for the whole economy, except that the effects arrive slowly, which makes timing hard.\n\nThe article shows both sides. In 2019, inflation was just over 1%, below the 2% target. After the pandemic and Russia's invasion of Ukraine, it passed 10% in 2022. The ECB hoped the jump was temporary and waited longer than most banks to act, then raised rates by 4.5 percentage points, and inflation was back near 2% by late 2024. Higher rates, though, also made government debt costlier, which links this idea to the spreads problem."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why is Christine Lagarde's departure described as coming at 'a moment of peril'?",
+      "options": [
+        "The ECB has run out of money",
+        "France's fiscal troubles have pushed its borrowing costs sharply higher relative to Germany's",
+        "Germany has left the euro",
+        "Inflation has risen above 10% again"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says France is going fiscally rogue and its bond spread over Germany is as high as in the early-2010s euro crisis."
+    },
+    {
+      "question": "What is a bond 'spread', as used in the article?",
+      "options": [
+        "The gap between the yield on one country's bonds and the yield on a benchmark such as Germany's",
+        "The number of bonds a country sells in a year",
+        "The fee the ECB charges for buying bonds",
+        "The time until a bond is repaid"
+      ],
+      "answerIndex": 0,
+      "explanation": "A spread is the difference between yields; a wider gap shows investors fear more risk in that country's debt."
+    },
+    {
+      "question": "How did the ECB respond to inflation above 10% in 2022?",
+      "options": [
+        "It cut interest rates to zero",
+        "It ignored it until 2025",
+        "It raised rates by 4.5 percentage points between July 2022 and September 2023, after first hoping the surge was transitory",
+        "It handed the problem to national governments"
+      ],
+      "answerIndex": 2,
+      "explanation": "The ECB waited longer than most banks, then raised rates sharply, and inflation returned to around 2% by late 2024."
+    },
+    {
+      "question": "Why is a spread problem hard for a central bank that sets one interest rate for many countries?",
+      "options": [
+        "Cutting the policy rate helps little if a country's own borrowing costs rise by far more",
+        "Every country uses a different currency",
+        "Bonds cannot be bought by central banks",
+        "Spreads only matter in Germany"
+      ],
+      "answerIndex": 0,
+      "explanation": "Soaring spreads can mess with the ECB's ability to run monetary policy, yet market discipline also restrains reckless borrowing."
+    },
+    {
+      "question": "What does the article say makes the choice of Ms Lagarde's successor 'highly political'?",
+      "options": [
+        "Only French citizens may apply",
+        "Several top jobs are haggled over together, and countries want balance between nationalities, policy leanings and gender",
+        "The new boss will be chosen by public vote",
+        "The job has no real power"
+      ],
+      "answerIndex": 1,
+      "explanation": "The ECB needs three new board members, and Germany, France, Spain and the Netherlands each have interests in who gets what."
+    }
+  ]
+}
