@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-30",
+  "title": "Humans will never again create a project quite like Wikipedia",
+  "articleUrl": "https://www.economist.com/culture/2026/10/29/humans-will-never-again-create-a-project-quite-like-wikipedia",
+  "articlePageUrl": "/articles/2026-10-30.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "oracle",
+      "partOfSpeech": "noun",
+      "pronunciation": "OR-uh-kul",
+      "articleQuote": "Wikipedia serves as both an oracle and a mirror",
+      "meaning": "An oracle is a source people trust to give wise, authoritative answers. In ancient Greece it was a priestess or shrine believed to speak for the gods; today it describes anything people consult for answers as if it simply knows. The Economist calls Wikipedia an oracle because the world turns to it first for facts, and a mirror because it also reflects who writes it.",
+      "examples": [
+        "Before every trip, my aunt treats her weather app like an oracle and plans around it.",
+        "The old librarian was the town's oracle: ask her any question and she somehow knew the answer."
+      ]
+    },
+    {
+      "word": "febrile",
+      "partOfSpeech": "adjective",
+      "pronunciation": "FEB-ryle",
+      "articleQuote": "One is the febrile political climate.",
+      "meaning": "Febrile literally means feverish, relating to a fever. Writers use it for a mood or atmosphere that is overheated, tense and jittery, where tempers flare easily. A febrile climate is one where people are quick to argue. Here it describes today's politics, which turns even editing an encyclopedia into a fight over bias and censorship.",
+      "examples": [
+        "The febrile atmosphere in the stadium made every close call feel explosive.",
+        "The night before the big exam, the dorm was febrile with nervous energy."
+      ]
+    },
+    {
+      "word": "exacerbate",
+      "partOfSpeech": "verb",
+      "pronunciation": "ig-ZASS-er-bate",
+      "articleQuote": "The charged political atmosphere has exacerbated a second problem: a lack of editors.",
+      "meaning": "To exacerbate something is to make a bad situation worse, like pouring fuel on a fire. It is used for problems, never for good things: scratching exacerbates an itch, and a drought exacerbates food shortages. In the article, the angry political mood made Wikipedia's shortage of volunteer editors even harder to fix.",
+      "examples": [
+        "Skipping breakfast only exacerbated my headache.",
+        "Heavy rain exacerbated the flooding that had already closed the road."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Crowdsourcing: how a free encyclopedia gets written",
+      "articleQuote": "So to speed things up, they changed tack, launching a crowd-sourced encyclopedia in 2001.",
+      "meaning": "Technology. **Crowdsourcing** means getting a big job done by letting many ordinary people each contribute a small piece, usually for free, instead of paying a few experts. Wikipedia's first try, Nupedia, used the expert way: a seven-step process of editing and fact-checking that approved just one article in five months. The 2001 crowd version let anyone add or fix a page, and it grew fast.\n\nThe trade-off is that quality comes from many people correcting each other rather than from one gatekeeper. The early site was \"dreadful\", but anyone who spotted a mistake could repair it, so it improved. The crowd also reflects its members: most editors are men, so some topics (a cartoon dog's page versus a whole country's) get lopsided attention.\n\nIt also needs the crowd to keep showing up. Wikipedia is run as a **non-profit**, an organisation that does not pay out profits and relies on donations. When the founders considered selling ads, volunteers threatened to quit, because they did not want to work for free for a company. Today the number of active English editors has fallen by a third since 2007, which is why a crowd project can fade if its crowd loses interest."
+    },
+    {
+      "name": "Large language models and training data",
+      "articleQuote": "Wikipedia played a crucial role in training large language models (LLMs) with its vast, free, multilingual dataset.",
+      "meaning": "AI. A **large language model (LLM)**, like ChatGPT, is a program that learns to write by reading enormous amounts of text and spotting patterns in which words follow which. The text it learns from is its **training data**, and the quality of the data shapes the quality of the answers. Wikipedia is ideal: huge, free to copy, and written in more than 300 languages.\n\nThat creates two problems. First, a model soaks up mistakes along with facts. A prankster once wrote on Wikipedia that he invented the electric toaster, and chatbots may still repeat it years later. Second, a feedback loop: people now ask the chatbot instead of visiting Wikipedia. Only 0.33% of people click through when an LLM cites it, versus nearly a tenth from a search engine, so Wikipedia has lost about a quarter of its readers since 2022.\n\nFewer readers means fewer donations and fewer new editors, which weakens the very source the AI learned from. The Economist's worry is that AI could starve the thing that taught it."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did Nupedia, Wikipedia's predecessor, fail to take off?",
+      "options": [
+        "It was blocked by governments",
+        "Its seven-step expert editing process approved only one article in five months",
+        "It filled with ads that drove readers away",
+        "It was written only in Latin"
+      ],
+      "answerIndex": 1,
+      "explanation": "Nupedia's slow, expert-driven process meant almost nothing got published, so the founders switched to a crowd-sourced model in 2001."
+    },
+    {
+      "question": "According to the article, why was Wikipedia's early weakness also the secret of its growth?",
+      "options": [
+        "Nobody could edit it, so it stayed accurate",
+        "It was so poor that visitors thought they could improve it and joined in",
+        "It paid editors well",
+        "It copied Britannica"
+      ],
+      "answerIndex": 1,
+      "explanation": "Newcomers thought they could do better than the 'dreadful' young site, which drew in contributors."
+    },
+    {
+      "question": "What does the article say about Wikipedia's editors?",
+      "options": [
+        "They are evenly spread across all continents",
+        "Most are men, and half of early edits came from five countries",
+        "They are all paid professionals",
+        "Most live in Africa"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article notes most editors are men, and for ten years half of edits came from five countries, which skews its content."
+    },
+    {
+      "question": "How does AI threaten Wikipedia, according to the article?",
+      "options": [
+        "It deletes Wikipedia pages",
+        "Chatbots use its content but send few readers to the site, cutting donations and new editors",
+        "It makes Wikipedia pages longer",
+        "It bans human editors"
+      ],
+      "answerIndex": 1,
+      "explanation": "Only 0.33% of users click through from an LLM citation, and Wikipedia has lost almost a quarter of its readership since 2022."
+    },
+    {
+      "question": "What does 'febrile political climate' suggest?",
+      "options": [
+        "A calm, quiet mood",
+        "An overheated, tense mood where arguments flare",
+        "A mood of celebration",
+        "A cold winter"
+      ],
+      "answerIndex": 1,
+      "explanation": "Febrile means feverish; applied to politics it means tense and overheated."
+    }
+  ]
+}

@@ -1,0 +1,628 @@
+[
+  {
+    "k": "oracle",
+    "t": "oracle",
+    "kind": "vocab",
+    "pron": "OR-uh-kul",
+    "forms": [
+      "oracle"
+    ],
+    "text": "An oracle is a source people trust to give wise, authoritative answers; in ancient Greece it was a shrine or priestess thought to speak for the gods. The Economist says Wikipedia is the world's go-to oracle, and also a mirror of the people who write it.",
+    "audio": true
+  },
+  {
+    "k": "febrile",
+    "t": "febrile",
+    "kind": "vocab",
+    "pron": "FEB-ryle",
+    "forms": [
+      "febrile"
+    ],
+    "text": "Febrile means feverish. Applied to politics it means overheated and tense, with tempers flaring. That mood makes even editing an encyclopedia into a fight.",
+    "audio": true
+  },
+  {
+    "k": "exacerbate",
+    "t": "exacerbated",
+    "kind": "vocab",
+    "pron": "ig-ZASS-er-bate",
+    "forms": [
+      "exacerbated"
+    ],
+    "text": "To exacerbate a problem is to make it worse. The angry political mood made Wikipedia's shortage of editors harder to fix.",
+    "audio": true
+  },
+  {
+    "k": "yongle",
+    "t": "Yongle encyclopedia",
+    "kind": "word",
+    "forms": [
+      "Yongle encyclopedia"
+    ],
+    "text": "A huge Chinese encyclopedia ordered by a Ming emperor in the 1400s and copied out by hand. It was the largest reference work ever for about 600 years, until Wikipedia passed it.",
+    "audio": true
+  },
+  {
+    "k": "ming",
+    "t": "Ming",
+    "kind": "word",
+    "forms": [
+      "Ming"
+    ],
+    "text": "The Ming dynasty ruled China from 1368 to 1644. Its emperors commissioned grand projects, including this giant encyclopedia.",
+    "audio": true
+  },
+  {
+    "k": "manuscript",
+    "t": "manuscript",
+    "kind": "word",
+    "forms": [
+      "manuscript"
+    ],
+    "text": "A manuscript is a document written by hand (or typed) rather than printed. Here, nearly 23,000 rolls of it were needed to hold the Yongle encyclopedia.",
+    "audio": true
+  },
+  {
+    "k": "commissioned",
+    "t": "commissioned",
+    "kind": "word",
+    "forms": [
+      "commissioned"
+    ],
+    "text": "To commission something is to officially order and pay for it to be made. The emperor commissioned the encyclopedia; he did not write it himself.",
+    "audio": true
+  },
+  {
+    "k": "startup",
+    "t": "startup",
+    "kind": "word",
+    "forms": [
+      "startup"
+    ],
+    "text": "A startup is a young, small company trying to grow a new idea fast. Wikipedia began that way, run from a chaotic office in Florida.",
+    "audio": true
+  },
+  {
+    "k": "collaborative",
+    "t": "collaborative",
+    "kind": "word",
+    "forms": [
+      "collaborative"
+    ],
+    "text": "Collaborative means made by many people working together. Wikipedia is collaborative because anyone can add or fix pages.",
+    "audio": true
+  },
+  {
+    "k": "britannica",
+    "t": "Encyclopedia Britannica",
+    "kind": "word",
+    "forms": [
+      "Encyclopedia Britannica",
+      "Britannica"
+    ],
+    "text": "A famous printed encyclopedia written by paid experts for over 250 years. Wikipedia's Latin edition alone now has more articles than it.",
+    "audio": true
+  },
+  {
+    "k": "existential-threat",
+    "t": "existential threat",
+    "kind": "phrase",
+    "forms": [
+      "existential threat"
+    ],
+    "text": "An existential threat is a danger to something's very existence, not just a setback. The Economist says AI could threaten Wikipedia's survival.",
+    "audio": true
+  },
+  {
+    "k": "culture-war",
+    "t": "culture war",
+    "kind": "phrase",
+    "forms": [
+      "culture war"
+    ],
+    "text": "A culture war is a bitter public fight over values such as religion, identity or free speech. Wikipedia has become a battleground because it shapes what people believe is true.",
+    "audio": true
+  },
+  {
+    "k": "thought-provoking",
+    "t": "thought-provoking",
+    "kind": "phrase",
+    "forms": [
+      "thought-provoking"
+    ],
+    "text": "Thought-provoking describes something that makes you think hard about an idea. It is the reviewer's way of praising the book.",
+    "audio": true
+  },
+  {
+    "k": "oracle-mirror",
+    "t": "oracle and a mirror",
+    "kind": "phrase",
+    "forms": [
+      "oracle and a mirror"
+    ],
+    "text": "A figure of speech: Wikipedia answers questions like an oracle, but like a mirror it also shows back the biases and interests of the people who made it.",
+    "audio": true
+  },
+  {
+    "k": "crowd-written",
+    "t": "crowd-written",
+    "kind": "word",
+    "forms": [
+      "crowd-written"
+    ],
+    "text": "Written by a large crowd of volunteers rather than a small team of professionals. This is the idea of crowdsourcing.",
+    "audio": true
+  },
+  {
+    "k": "go-to",
+    "t": "go-to",
+    "kind": "phrase",
+    "forms": [
+      "go-to"
+    ],
+    "text": "The go-to source is the one people turn to first, automatically.",
+    "audio": true
+  },
+  {
+    "k": "world-book",
+    "t": "World Book Encyclopedia",
+    "kind": "word",
+    "forms": [
+      "World Book Encyclopedia"
+    ],
+    "text": "A popular printed encyclopedia sold to families. Since print goes out of date, owners got yearly stickers in the mail to paste over old facts, which gave young Jimmy Wales the idea of a never-outdated online version.",
+    "audio": true
+  },
+  {
+    "k": "nupedia",
+    "t": "Nupedia",
+    "kind": "word",
+    "forms": [
+      "Nupedia"
+    ],
+    "text": "Wikipedia's slow, expert-written predecessor, started in 2000. Its seven-step review process produced almost nothing, so its founders tried a crowd-sourced version instead.",
+    "audio": true
+  },
+  {
+    "k": "atonality",
+    "t": "atonality",
+    "kind": "word",
+    "forms": [
+      "atonality"
+    ],
+    "text": "Atonality is music written without a home key, so it can sound jarring to ears used to ordinary tunes. It was the subject of Nupedia's single approved article.",
+    "audio": true
+  },
+  {
+    "k": "changed-tack",
+    "t": "changed tack",
+    "kind": "phrase",
+    "forms": [
+      "changed tack"
+    ],
+    "text": "To change tack is to switch to a different approach, a sailing term for turning the boat to catch the wind another way.",
+    "audio": true
+  },
+  {
+    "k": "crowd-sourced",
+    "t": "crowd-sourced",
+    "kind": "word",
+    "forms": [
+      "crowd-sourced"
+    ],
+    "text": "Crowd-sourced means built from the contributions of many ordinary people, often for free, instead of from paid experts.",
+    "audio": true
+  },
+  {
+    "k": "dreadful",
+    "t": "dreadful",
+    "kind": "word",
+    "forms": [
+      "dreadful"
+    ],
+    "text": "Dreadful means very bad. The surprising point is that Wikipedia's poor early quality encouraged readers to jump in and fix it.",
+    "audio": true
+  },
+  {
+    "k": "came-into-its-own",
+    "t": "came into its own",
+    "kind": "phrase",
+    "forms": [
+      "came into its own"
+    ],
+    "text": "To come into its own means to finally show its real strength. Wikipedia did so after 9/11, when volunteers wrote over 100 articles about it in a month.",
+    "audio": true
+  },
+  {
+    "k": "september-11",
+    "t": "September 11th terrorist attacks",
+    "kind": "word",
+    "forms": [
+      "September 11th terrorist attacks"
+    ],
+    "text": "The 2001 attacks on the United States. A fast-moving news event showed how quickly a crowd could build an encyclopedia entry.",
+    "audio": true
+  },
+  {
+    "k": "commercial-potential",
+    "t": "commercial potential",
+    "kind": "phrase",
+    "forms": [
+      "commercial potential"
+    ],
+    "text": "The chance to make money. The bosses saw that a site this popular could earn from advertising.",
+    "audio": true
+  },
+  {
+    "k": "defections",
+    "t": "defections",
+    "kind": "word",
+    "forms": [
+      "defections"
+    ],
+    "text": "A defection is leaving a group or side, often to join or protest against it. Here, volunteer editors threatened to leave if the site sold ads.",
+    "audio": true
+  },
+  {
+    "k": "wikipaidia",
+    "t": "WikiPAIDia",
+    "kind": "word",
+    "forms": [
+      "WikiPAIDia"
+    ],
+    "text": "A mocking nickname the volunteers used for an ad-supported Wikipedia, playing on the word paid. They did not want to work for free for a company.",
+    "audio": true
+  },
+  {
+    "k": "non-profit",
+    "t": "non-profit",
+    "kind": "word",
+    "forms": [
+      "non-profit"
+    ],
+    "text": "A non-profit organisation does not pay profits to owners; any money goes back into its mission. Wikipedia is funded mostly by donations.",
+    "audio": true
+  },
+  {
+    "k": "smartest-or-dumbest",
+    "t": "either the smartest or the dumbest thing that I ever did",
+    "kind": "phrase",
+    "forms": [
+      "either the smartest or the dumbest thing that I ever did"
+    ],
+    "text": "Jimmy Wales is joking that giving away a hugely valuable site was either genius or a blunder: it made the site beloved but made him little money.",
+    "audio": true
+  },
+  {
+    "k": "rabbit-hole",
+    "t": "rabbit hole",
+    "kind": "phrase",
+    "forms": [
+      "rabbit hole"
+    ],
+    "text": "A rabbit hole is a topic that pulls you in deeper and deeper, like Alice falling in the story. Wikipedia is famous for it: one link leads to another for hours.",
+    "audio": true
+  },
+  {
+    "k": "oddballs",
+    "t": "oddballs and misfits",
+    "kind": "phrase",
+    "forms": [
+      "oddballs and misfits"
+    ],
+    "text": "Oddballs and misfits are unusual people who do not fit in. The book affectionately celebrates these quirky volunteers.",
+    "audio": true
+  },
+  {
+    "k": "cebuano",
+    "t": "Cebuano",
+    "kind": "word",
+    "forms": [
+      "Cebuano"
+    ],
+    "text": "A language spoken by millions in the Philippines. Its Wikipedia is huge only because a bot, a program, uploaded millions of mostly automatic articles.",
+    "audio": true
+  },
+  {
+    "k": "bot",
+    "t": "bot",
+    "kind": "word",
+    "forms": [
+      "bot"
+    ],
+    "text": "A bot is a program that does repetitive tasks automatically. Here one generated six million articles about insects, which is why Cebuano ranks second.",
+    "audio": true
+  },
+  {
+    "k": "comprised-of",
+    "t": "comprised of",
+    "kind": "phrase",
+    "forms": [
+      "comprised of"
+    ],
+    "text": "Many grammar fans dislike 'comprised of' and prefer 'composed of' or just 'comprises'. One editor spent 15 years removing it, showing how obsessive some volunteers are.",
+    "audio": true
+  },
+  {
+    "k": "scrappy-doo",
+    "t": "Scrappy Doo",
+    "kind": "word",
+    "forms": [
+      "Scrappy Doo"
+    ],
+    "text": "A small, brave puppy in the Scooby-Doo cartoons. His page was longer than the one on Poland, a sign that editors' interests skew the site.",
+    "audio": true
+  },
+  {
+    "k": "wikimania",
+    "t": "Wikimania",
+    "kind": "word",
+    "forms": [
+      "Wikimania"
+    ],
+    "text": "The yearly conference where Wikipedia volunteers from around the world meet.",
+    "audio": true
+  },
+  {
+    "k": "diversity",
+    "t": "diversity",
+    "kind": "word",
+    "forms": [
+      "diversity"
+    ],
+    "text": "Diversity means a mix of different kinds of people. The Economist says the editors are not very diverse: mostly men, from a few countries.",
+    "audio": true
+  },
+  {
+    "k": "edit-wars",
+    "t": "edit wars",
+    "kind": "phrase",
+    "forms": [
+      "edit wars"
+    ],
+    "text": "An edit war is when editors keep undoing each other's changes to a page because they disagree. Pages like Israel, Jesus and Donald Trump are the most contested.",
+    "audio": true
+  },
+  {
+    "k": "scientology",
+    "t": "Church of Scientology",
+    "kind": "word",
+    "forms": [
+      "Church of Scientology"
+    ],
+    "text": "A controversial religious organisation. In 2009 it became the first group banned from editing Wikipedia, after its members were found trying to shape their own pages.",
+    "audio": true
+  },
+  {
+    "k": "misinformation",
+    "t": "misinformation",
+    "kind": "word",
+    "forms": [
+      "misinformation"
+    ],
+    "text": "Misinformation is false or misleading information, spread by mistake or on purpose. Policing it on Wikipedia is hard, and arguments about it overlap with arguments about censorship.",
+    "audio": true
+  },
+  {
+    "k": "censorship",
+    "t": "censorship",
+    "kind": "word",
+    "forms": [
+      "censorship"
+    ],
+    "text": "Censorship is suppressing words or ideas considered unacceptable. Critics accuse Wikipedia of it when pages are removed or rewritten.",
+    "audio": true
+  },
+  {
+    "k": "larry-sanger",
+    "t": "Mr Sanger",
+    "kind": "word",
+    "forms": [
+      "Mr Sanger"
+    ],
+    "text": "Larry Sanger co-founded Wikipedia with Jimmy Wales but later fell out with it and now criticises its bias.",
+    "audio": true
+  },
+  {
+    "k": "soured",
+    "t": "soured",
+    "kind": "word",
+    "forms": [
+      "soured"
+    ],
+    "text": "When a relationship sours it turns unfriendly or bitter, like milk going off.",
+    "audio": true
+  },
+  {
+    "k": "globalist",
+    "t": "globalist",
+    "kind": "word",
+    "forms": [
+      "globalist"
+    ],
+    "text": "A word critics use for people who favour international cooperation over national interests. Sanger uses it as an insult, claiming Wikipedia leans that way.",
+    "audio": true
+  },
+  {
+    "k": "grokipedia",
+    "t": "Grokipedia",
+    "kind": "word",
+    "forms": [
+      "Grokipedia"
+    ],
+    "text": "A rival online encyclopedia announced by Elon Musk, written with his AI Grok. 'Wokepedia' was his jab at Wikipedia.",
+    "audio": true
+  },
+  {
+    "k": "exacerbate-political",
+    "t": "charged political atmosphere",
+    "kind": "phrase",
+    "forms": [
+      "charged political atmosphere"
+    ],
+    "text": "A charged atmosphere is one full of emotion and tension, so that people are quick to take offence.",
+    "audio": true
+  },
+  {
+    "k": "newbie",
+    "t": "newbie",
+    "kind": "word",
+    "forms": [
+      "newbie"
+    ],
+    "text": "Slang for a beginner. Early Wikipedia welcomed newbies; today's editors can seem hostile to them.",
+    "audio": true
+  },
+  {
+    "k": "defamation",
+    "t": "defamation",
+    "kind": "word",
+    "forms": [
+      "defamation"
+    ],
+    "text": "Defamation is harming someone's reputation with false statements, which can lead to a lawsuit. Cases involving articles on living people made Wikipedia tighten its rules.",
+    "audio": true
+  },
+  {
+    "k": "trigger-happy",
+    "t": "trigger-happy",
+    "kind": "word",
+    "forms": [
+      "Trigger-happy"
+    ],
+    "text": "Trigger-happy means too ready to act, like someone quick to fire a gun. Here, editors who delete pages too eagerly.",
+    "audio": true
+  },
+  {
+    "k": "notability",
+    "t": "notability test",
+    "kind": "phrase",
+    "forms": [
+      "notability test"
+    ],
+    "text": "Wikipedia only keeps pages on subjects that are notable, meaning covered by reliable sources. Even the founder's page on a barbecue restaurant failed it.",
+    "audio": true
+  },
+  {
+    "k": "in-theory",
+    "t": "in theory",
+    "kind": "phrase",
+    "forms": [
+      "in theory"
+    ],
+    "text": "In theory means 'as the rules say, though not always in practice.' Anyone can edit Wikipedia, and anyone can represent themselves in court, but both are hard for amateurs.",
+    "audio": true
+  },
+  {
+    "k": "ominous",
+    "t": "ominous",
+    "kind": "word",
+    "forms": [
+      "ominous"
+    ],
+    "text": "Ominous means giving a sign that something bad is coming.",
+    "audio": true
+  },
+  {
+    "k": "llm",
+    "t": "large language models (LLMs)",
+    "kind": "word",
+    "forms": [
+      "large language models (LLMs)",
+      "LLM",
+      "LLMs"
+    ],
+    "text": "A large language model is an AI trained on huge amounts of text to predict and write language. ChatGPT is one. Wikipedia was a major source of its training text.",
+    "audio": true
+  },
+  {
+    "k": "training-corpus",
+    "t": "training corpus",
+    "kind": "phrase",
+    "forms": [
+      "training corpus"
+    ],
+    "text": "A corpus is a large collection of texts. A training corpus is the pile of writing an AI learns from.",
+    "audio": true
+  },
+  {
+    "k": "multilingual",
+    "t": "multilingual",
+    "kind": "word",
+    "forms": [
+      "multilingual"
+    ],
+    "text": "Multilingual means in many languages. Wikipedia's 300-plus languages helped AI learn to work across them.",
+    "audio": true
+  },
+  {
+    "k": "immortalising",
+    "t": "immortalising",
+    "kind": "word",
+    "forms": [
+      "immortalising"
+    ],
+    "text": "Immortalising means making something live forever. Errors and hoaxes copied into AI can linger long after being fixed.",
+    "audio": true
+  },
+  {
+    "k": "hoaxes",
+    "t": "hoaxes",
+    "kind": "word",
+    "forms": [
+      "hoaxes"
+    ],
+    "text": "A hoax is a deliberate trick or false story, such as the toaster inventor prank.",
+    "audio": true
+  },
+  {
+    "k": "prankster",
+    "t": "prankster",
+    "kind": "word",
+    "forms": [
+      "prankster"
+    ],
+    "text": "A prankster plays jokes on people. Alan MacMasters listed himself as the toaster's inventor as a joke, and chatbots repeated it.",
+    "audio": true
+  },
+  {
+    "k": "clickthrough",
+    "t": "clickthrough rate",
+    "kind": "phrase",
+    "forms": [
+      "clickthrough rate"
+    ],
+    "text": "The share of people who click a link after seeing it. Only 0.33% click when an AI cites Wikipedia, versus nearly a tenth from search engines.",
+    "audio": true
+  },
+  {
+    "k": "solicit",
+    "t": "solicit",
+    "kind": "word",
+    "forms": [
+      "solicit"
+    ],
+    "text": "To solicit is to ask for something, such as donations or help. Wikipedia asks readers to donate and join as editors, and fewer visitors mean fewer chances to ask.",
+    "audio": true
+  },
+  {
+    "k": "laments",
+    "t": "laments",
+    "kind": "word",
+    "forms": [
+      "laments"
+    ],
+    "text": "To lament is to express sadness or regret about something.",
+    "audio": true
+  },
+  {
+    "k": "suffocate",
+    "t": "suffocate",
+    "kind": "word",
+    "forms": [
+      "suffocate"
+    ],
+    "text": "To suffocate is to cut off the air supply. Used as a metaphor: AI taking Wikipedia's readers could starve it of the donations and new editors it needs to live.",
+    "audio": true
+  }
+]
