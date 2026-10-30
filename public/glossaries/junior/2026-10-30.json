@@ -1,0 +1,545 @@
+[
+  {
+    "k": "awry",
+    "t": "awry",
+    "kind": "vocab",
+    "pron": "uh-RYE",
+    "forms": [
+      "awry"
+    ],
+    "text": "When something goes awry, it does not turn out the way it was planned. Houdini's beer-can escape went awry when the smell made him faint.",
+    "audio": true
+  },
+  {
+    "k": "refine",
+    "t": "refine",
+    "kind": "vocab",
+    "pron": "rih-FINE",
+    "forms": [
+      "refine"
+    ],
+    "text": "To refine something is to make it better by fixing small things, little by little. Houdini read about magic so he could refine his tricks.",
+    "audio": true
+  },
+  {
+    "k": "bolster",
+    "t": "bolstered",
+    "kind": "vocab",
+    "pron": "BOLE-ster",
+    "forms": [
+      "bolstered"
+    ],
+    "text": "To bolster something is to make it stronger or give it extra support. Newspapers, radio and movies helped make magic shows more popular.",
+    "audio": true
+  },
+  {
+    "k": "illusionist",
+    "t": "illusionist",
+    "kind": "word",
+    "forms": [
+      "illusionist"
+    ],
+    "text": "An illusionist is a magician who makes people believe they see something impossible, like a person floating or an elephant vanishing.",
+    "audio": true
+  },
+  {
+    "k": "spirit",
+    "t": "spirit",
+    "kind": "word",
+    "forms": [
+      "spirit"
+    ],
+    "text": "A spirit is the part of a person that some people believe lives on after death, like a ghost. Houdini's fans tried to call his spirit back.",
+    "audio": true
+  },
+  {
+    "k": "spectre",
+    "t": "spectre",
+    "kind": "word",
+    "forms": [
+      "spectre"
+    ],
+    "text": "A spectre is a ghost, something scary and see-through that people think they see. People said Houdini's spectre escaped from handcuffs.",
+    "audio": true
+  },
+  {
+    "k": "seance",
+    "t": "séance",
+    "kind": "word",
+    "forms": [
+      "séance"
+    ],
+    "text": "A séance is a meeting where people sit in the dark and try to talk to the dead. Some people said Houdini's spirit showed up at one.",
+    "audio": true
+  },
+  {
+    "k": "widow",
+    "t": "widow",
+    "kind": "word",
+    "forms": [
+      "widow"
+    ],
+    "text": "A widow is a woman whose husband has died. Houdini's widow, Bess, waited ten years to hear from him.",
+    "audio": true
+  },
+  {
+    "k": "centenary",
+    "t": "centenary",
+    "kind": "word",
+    "forms": [
+      "centenary"
+    ],
+    "text": "A centenary is the 100th anniversary of something. This year is the centenary of Houdini's death.",
+    "audio": true
+  },
+  {
+    "k": "conjuring-up",
+    "t": "conjuring up",
+    "kind": "phrase",
+    "forms": [
+      "conjuring up"
+    ],
+    "text": "To conjure up something is to make it appear, as if by magic. Here, fans are bringing Houdini back to people's minds.",
+    "audio": true
+  },
+  {
+    "k": "summon",
+    "t": "summon",
+    "kind": "word",
+    "forms": [
+      "summon"
+    ],
+    "text": "To summon someone is to call them to come. Fans gather to summon Houdini's spirit.",
+    "audio": true
+  },
+  {
+    "k": "daring",
+    "t": "daring",
+    "kind": "word",
+    "forms": [
+      "daring"
+    ],
+    "text": "Daring means brave enough to do something risky. Houdini was known for his daring tricks.",
+    "audio": true
+  },
+  {
+    "k": "recreate",
+    "t": "recreate",
+    "kind": "word",
+    "forms": [
+      "recreate"
+    ],
+    "text": "To recreate something is to make it again the way it was before. Magic shows will recreate Houdini's tricks.",
+    "audio": true
+  },
+  {
+    "k": "exhibitions",
+    "t": "exhibitions",
+    "kind": "word",
+    "forms": [
+      "exhibitions"
+    ],
+    "text": "Exhibitions are public displays of art or objects for people to look at, like in a museum.",
+    "audio": true
+  },
+  {
+    "k": "bibliophile",
+    "t": "bibliophile",
+    "kind": "word",
+    "forms": [
+      "bibliophile"
+    ],
+    "text": "A bibliophile is a person who loves books and collects them. Houdini owned a big library of magic books.",
+    "audio": true
+  },
+  {
+    "k": "showman",
+    "t": "showman",
+    "kind": "word",
+    "forms": [
+      "showman"
+    ],
+    "text": "A showman is a performer who is great at entertaining a crowd and getting attention.",
+    "audio": true
+  },
+  {
+    "k": "docuseries",
+    "t": "docuseries",
+    "kind": "word",
+    "forms": [
+      "docuseries"
+    ],
+    "text": "A docuseries is a TV show in several parts that tells a true story, like a documentary.",
+    "audio": true
+  },
+  {
+    "k": "render",
+    "t": "render",
+    "kind": "word",
+    "forms": [
+      "render"
+    ],
+    "text": "Here, to render someone means to show them on a screen, created by a computer. The show uses AI to make Houdini appear and speak.",
+    "audio": true
+  },
+  {
+    "k": "narrate",
+    "t": "narrate",
+    "kind": "word",
+    "forms": [
+      "narrate"
+    ],
+    "text": "To narrate is to tell a story out loud. The show has an AI Houdini narrate his own life.",
+    "audio": true
+  },
+  {
+    "k": "commemoration",
+    "t": "commemoration",
+    "kind": "word",
+    "forms": [
+      "commemoration"
+    ],
+    "text": "A commemoration is an event that helps people remember something important from the past.",
+    "audio": true
+  },
+  {
+    "k": "celebrity",
+    "t": "celebrity",
+    "kind": "word",
+    "forms": [
+      "celebrity"
+    ],
+    "text": "A celebrity is a very famous person. The article jokes that Budapest has a celebrity rabbit.",
+    "audio": true
+  },
+  {
+    "k": "fanfare",
+    "t": "fanfare",
+    "kind": "word",
+    "forms": [
+      "fanfare"
+    ],
+    "text": "Fanfare is loud, excited attention or celebration around something.",
+    "audio": true
+  },
+  {
+    "k": "celebrated",
+    "t": "celebrated",
+    "kind": "word",
+    "forms": [
+      "celebrated"
+    ],
+    "text": "Celebrated means famous and admired by many people. Houdini is probably the most celebrated illusionist of all time.",
+    "audio": true
+  },
+  {
+    "k": "haunts",
+    "t": "haunts",
+    "kind": "word",
+    "forms": [
+      "haunts"
+    ],
+    "text": "To haunt a place is to keep showing up there like a ghost. Houdini's name haunts dictionaries, which means it keeps appearing in them.",
+    "audio": true
+  },
+  {
+    "k": "trills",
+    "t": "trills",
+    "kind": "word",
+    "forms": [
+      "trills"
+    ],
+    "text": "To trill is to sing or say something in a high, quick, cheerful voice.",
+    "audio": true
+  },
+  {
+    "k": "master-of-mystery",
+    "t": "master of mystery",
+    "kind": "phrase",
+    "forms": [
+      "master of mystery"
+    ],
+    "text": "A master of mystery is someone who is very skilled at keeping secrets and surprising people.",
+    "audio": true
+  },
+  {
+    "k": "promote",
+    "t": "promote",
+    "kind": "word",
+    "forms": [
+      "promote"
+    ],
+    "text": "To promote something is to tell people about it so they will want to buy it or see it. Houdini was very good at promoting himself.",
+    "audio": true
+  },
+  {
+    "k": "fame",
+    "t": "fame",
+    "kind": "word",
+    "forms": [
+      "fame"
+    ],
+    "text": "Fame is being known by many, many people.",
+    "audio": true
+  },
+  {
+    "k": "polish",
+    "t": "polish",
+    "kind": "word",
+    "forms": [
+      "polish"
+    ],
+    "text": "Here, to polish something is to keep improving it until it is as good as it can be, the way you would polish a shiny stone.",
+    "audio": true
+  },
+  {
+    "k": "straitjackets",
+    "t": "straitjackets",
+    "kind": "word",
+    "forms": [
+      "straitjackets"
+    ],
+    "text": "A straitjacket is a special coat with long sleeves that tie behind the back, so the wearer cannot use their arms. Houdini escaped from them.",
+    "audio": true
+  },
+  {
+    "k": "scholarship",
+    "t": "scholarship",
+    "kind": "word",
+    "forms": [
+      "scholarship"
+    ],
+    "text": "Here, scholarship means careful study and research about a subject. Houdini studied magic seriously.",
+    "audio": true
+  },
+  {
+    "k": "biographies",
+    "t": "biographies",
+    "kind": "word",
+    "forms": [
+      "biographies"
+    ],
+    "text": "Biographies are books that tell the true story of a person's life.",
+    "audio": true
+  },
+  {
+    "k": "sorcery",
+    "t": "sorcery",
+    "kind": "word",
+    "forms": [
+      "sorcery"
+    ],
+    "text": "Sorcery is magic done with spells, like in fairy tales.",
+    "audio": true
+  },
+  {
+    "k": "buried-alive",
+    "t": "buried alive",
+    "kind": "phrase",
+    "forms": [
+      "buried alive"
+    ],
+    "text": "To be buried alive is to be put under the ground while still living. Houdini made this into an escape trick.",
+    "audio": true
+  },
+  {
+    "k": "golden-age",
+    "t": "golden age",
+    "kind": "phrase",
+    "forms": [
+      "golden age"
+    ],
+    "text": "A golden age is the best period for something, when it is at its most popular and successful.",
+    "audio": true
+  },
+  {
+    "k": "mass-media",
+    "t": "mass media",
+    "kind": "phrase",
+    "forms": [
+      "mass media"
+    ],
+    "text": "Mass media means newspapers, radio, TV and other ways of reaching many people at once.",
+    "audio": true
+  },
+  {
+    "k": "advert",
+    "t": "advert",
+    "kind": "word",
+    "forms": [
+      "advert"
+    ],
+    "text": "An advert is an ad, a notice that tells people to buy something. This word is more common in British English.",
+    "audio": true
+  },
+  {
+    "k": "quipped",
+    "t": "quipped",
+    "kind": "word",
+    "forms": [
+      "quipped"
+    ],
+    "text": "To quip is to say something quick, clever and funny.",
+    "audio": true
+  },
+  {
+    "k": "dared",
+    "t": "dared",
+    "kind": "word",
+    "forms": [
+      "dared"
+    ],
+    "text": "To dare someone is to challenge them to do something hard or risky.",
+    "audio": true
+  },
+  {
+    "k": "cranes",
+    "t": "cranes",
+    "kind": "word",
+    "forms": [
+      "cranes"
+    ],
+    "text": "Here, cranes are tall machines with long arms that lift heavy things. They are not the birds.",
+    "audio": true
+  },
+  {
+    "k": "corporate-partnerships",
+    "t": "corporate partnerships",
+    "kind": "phrase",
+    "forms": [
+      "corporate partnerships"
+    ],
+    "text": "A corporate partnership is when a performer and a company work together, like a star advertising a drink.",
+    "audio": true
+  },
+  {
+    "k": "brand-deal",
+    "t": "brand deal",
+    "kind": "phrase",
+    "forms": [
+      "brand deal"
+    ],
+    "text": "A brand deal is an agreement where a company pays a famous person to be linked with its product.",
+    "audio": true
+  },
+  {
+    "k": "brewer",
+    "t": "brewer",
+    "kind": "word",
+    "forms": [
+      "brewer"
+    ],
+    "text": "A brewer is a person or company that makes beer.",
+    "audio": true
+  },
+  {
+    "k": "stench",
+    "t": "stench",
+    "kind": "word",
+    "forms": [
+      "stench"
+    ],
+    "text": "A stench is a very strong, bad smell.",
+    "audio": true
+  },
+  {
+    "k": "passed-out",
+    "t": "passed out",
+    "kind": "phrase",
+    "forms": [
+      "passed out"
+    ],
+    "text": "To pass out is to faint, to suddenly lose consciousness.",
+    "audio": true
+  },
+  {
+    "k": "headline-worthy",
+    "t": "headline-worthy",
+    "kind": "word",
+    "forms": [
+      "headline-worthy"
+    ],
+    "text": "Headline-worthy means exciting enough to make the front-page news.",
+    "audio": true
+  },
+  {
+    "k": "trademark",
+    "t": "™",
+    "kind": "word",
+    "forms": [
+      "™"
+    ],
+    "text": "The ™ sign means trademark. A trademark is a name or symbol that a business owns, so no one else may use it without permission.",
+    "audio": true
+  },
+  {
+    "k": "patent",
+    "t": "patent",
+    "kind": "word",
+    "forms": [
+      "patent"
+    ],
+    "text": "A patent is a government paper that says an invention belongs to its inventor. To get one, you must explain exactly how it works.",
+    "audio": true
+  },
+  {
+    "k": "imitators",
+    "t": "imitators",
+    "kind": "word",
+    "forms": [
+      "imitators"
+    ],
+    "text": "Imitators are people who copy someone else.",
+    "audio": true
+  },
+  {
+    "k": "copycats",
+    "t": "copycats",
+    "kind": "word",
+    "forms": [
+      "copycats"
+    ],
+    "text": "Copycats are people who copy what someone else does.",
+    "audio": true
+  },
+  {
+    "k": "expose",
+    "t": "expose",
+    "kind": "word",
+    "forms": [
+      "expose"
+    ],
+    "text": "To expose a secret is to tell everyone what was hidden.",
+    "audio": true
+  },
+  {
+    "k": "playlets",
+    "t": "playlets",
+    "kind": "word",
+    "forms": [
+      "playlets"
+    ],
+    "text": "A playlet is a very short play.",
+    "audio": true
+  },
+  {
+    "k": "sue",
+    "t": "sue",
+    "kind": "word",
+    "forms": [
+      "sue"
+    ],
+    "text": "To sue someone is to ask a court to make them pay or stop doing something that hurts you.",
+    "audio": true
+  },
+  {
+    "k": "enjoin",
+    "t": "enjoin",
+    "kind": "word",
+    "forms": [
+      "enjoin"
+    ],
+    "text": "To enjoin someone is to have a court order them to stop doing something. The last line is a joke on 'if you can't beat them, join them'.",
+    "audio": true
+  }
+]

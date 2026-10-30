@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-30",
+  "title": "What the world’s most famous magician has to teach you",
+  "articleUrl": "https://www.economist.com/culture/2026/10/29/what-the-worlds-most-famous-magician-has-to-teach-you",
+  "articlePageUrl": "/articles/junior/2026-10-30.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "awry",
+      "partOfSpeech": "adverb",
+      "pronunciation": "uh-RYE",
+      "articleQuote": "But the stunt went awry: Houdini, who didn’t drink beer, apparently passed out from the stench in the container and had to be rescued.",
+      "meaning": "When something goes awry, it does not turn out the way it was planned. The plan was fine, but something went wrong along the way. In the article, Houdini’s beer-can escape went awry when the smell made him faint.",
+      "examples": [
+        "Our science experiment went awry when the cup tipped over and spilled everywhere.",
+        "The birthday party plans went awry when it started to pour rain."
+      ]
+    },
+    {
+      "word": "refine",
+      "partOfSpeech": "verb",
+      "pronunciation": "rih-FINE",
+      "articleQuote": "He collected biographies of magicians and histories of sorcery; his research helped him refine his craft and invent new tricks, such as being buried alive or making an elephant disappear.",
+      "meaning": "To refine something is to make it better by fixing small things, little by little. You start with something good and keep improving it. In the article, Houdini read about magic so he could refine his tricks.",
+      "examples": [
+        "I practice my free throws every day to refine my shot.",
+        "She read her story again to refine the ending and fix the small mistakes."
+      ]
+    },
+    {
+      "word": "bolster",
+      "partOfSpeech": "verb",
+      "pronunciation": "BOLE-ster",
+      "articleQuote": "The “golden age” of magic in the 19th century was bolstered by mass media.",
+      "meaning": "To bolster something is to make it stronger or give it extra support. Something that is bolstered is helped to grow or stay up. In the article, newspapers, radio and movies helped make magic shows more popular.",
+      "examples": [
+        "A good breakfast will bolster your energy before the big game.",
+        "The new players helped bolster our team, so we started winning more games."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Copyright",
+      "articleQuote": "He also copyrighted illusions as “playlets”, that he performed to just one person, and then tried to sue anyone who copied him.",
+      "meaning": "Suppose you write a funny comic and a classmate copies it and says it is theirs. That does not feel fair. **Copyright** is a law made for this.\n\nCopyright gives the person who made something (a story, a song, a drawing, a play) the right to say who may copy it. If someone copies it without permission, the maker can **sue** them. That means asking a court to make them stop or pay.\n\nCopyright protects the finished work, not an idea. Nobody owns the idea of a comic about a talking dog, but your exact comic belongs to you.\n\nImagine you draw a poster for the school fair. With copyright, other kids can’t print your poster and sell it. They have to ask you first.\n\nSo the takeaway: copyright lets the maker of something decide who can copy it.\n\nIn the article, Houdini could not patent his tricks, because a patent would reveal how they work. So he registered them as little plays, and then tried to sue copycats."
+    },
+    {
+      "name": "Publicity stunt",
+      "articleQuote": "Rather than buying an advert near the back of a newspaper, Houdini would pull off a stunt to get on the front page.",
+      "meaning": "How do you get everyone talking about something? You can pay for an ad. Or you can do something so surprising that people talk about it for free. That is a **publicity stunt**.\n\nA publicity stunt is a dramatic act planned to get attention from newspapers, TV and now the internet. **Publicity** just means attention from the public. The stunt is the exciting thing you do to get it.\n\nIt works because people share surprising stories. A reporter writes about it, and suddenly many people know your name without you paying anything.\n\nImagine a new pizza shop that builds the world’s tallest pizza in front of the school. Kids take photos, post them, and the local news comes. The shop never bought an ad.\n\nSo the takeaway: a publicity stunt is a surprising act planned to win attention for free.\n\nIn the article, Houdini dared police to lock him up and escaped, or hung upside down from cranes in a straitjacket, so newspapers would put him on the front page."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why are fans remembering Houdini this year?",
+      "options": [
+        "It is 100 years since he died",
+        "He was born exactly 200 years ago",
+        "A new magic law was passed",
+        "His widow wrote a book"
+      ],
+      "answerIndex": 0,
+      "explanation": "Houdini died on Halloween in 1926, so October 31st this year marks the centenary of his death."
+    },
+    {
+      "question": "How did Houdini prepare for his escapes?",
+      "options": [
+        "He avoided practice to stay fresh",
+        "He trained like an athlete and learned to hold his breath for minutes",
+        "He only used tricks other magicians taught him",
+        "He hired assistants to do the escapes for him"
+      ],
+      "answerIndex": 1,
+      "explanation": "The first lesson is to work hard to polish your product, and Houdini trained like an athlete."
+    },
+    {
+      "question": "What did Houdini do instead of buying a newspaper advert?",
+      "options": [
+        "He sent letters to every home",
+        "He gave free shows only",
+        "He did stunts that put him on the front page",
+        "He stopped talking to reporters"
+      ],
+      "answerIndex": 2,
+      "explanation": "He said, “I’m not an advertiser, I’m news,” and dared police to lock him up so he could escape."
+    },
+    {
+      "question": "What happened in Houdini’s 1911 stunt with the brewer?",
+      "options": [
+        "He escaped from a can of beer easily",
+        "He refused to take part",
+        "He drank all the beer",
+        "He passed out from the smell and had to be rescued"
+      ],
+      "answerIndex": 3,
+      "explanation": "Houdini didn’t drink beer, and the stench made him pass out, but the story still made headlines."
+    },
+    {
+      "question": "What does the word “awry” mean in the article?",
+      "options": [
+        "Not turning out as planned",
+        "Going very smoothly",
+        "Happening very early",
+        "Being very loud"
+      ],
+      "answerIndex": 0,
+      "explanation": "When the stunt went awry, it did not go the way it was planned."
+    }
+  ]
+}
