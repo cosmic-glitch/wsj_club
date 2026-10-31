@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-31",
+  "title": "The Kremlin is shutting down Russia’s last free newspaper",
+  "articleUrl": "https://www.economist.com/europe/2026/10/29/the-kremlin-is-shutting-down-russias-last-free-newspaper",
+  "articlePageUrl": "/articles/2026-10-31.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "crestfallen",
+      "partOfSpeech": "adjective",
+      "pronunciation": "KREST-faw-len",
+      "articleQuote": "A crestfallen camerawoman records the final days",
+      "meaning": "Crestfallen describes someone who is sad and disappointed, especially after hoping for something that did not happen. The word comes from a proud bird whose crest, or head feathers, droops when it is beaten. In the article, the camerawoman filming the newsroom's last days is crestfallen because the paper she loves is being closed down.",
+      "examples": [
+        "She looked crestfallen when she saw that her name was not on the team list.",
+        "The crestfallen fans walked out of the stadium after the last-minute goal."
+      ]
+    },
+    {
+      "word": "commemorate",
+      "partOfSpeech": "verb",
+      "pronunciation": "kuh-MEM-uh-rate",
+      "articleQuote": "to commemorate Politkovskaya’s murder",
+      "meaning": "To commemorate something is to honour the memory of a person or event with a ceremony, a statue, or a special day. It is used for things worth remembering, often sad or important ones. Here, the paper's publisher was travelling to Paris to mark twenty years since the killing of the reporter Anna Politkovskaya.",
+      "examples": [
+        "Our town built a small park to commemorate the firefighters who died in the blaze.",
+        "Every November the school holds a quiet assembly to commemorate veterans."
+      ]
+    },
+    {
+      "word": "escalation",
+      "partOfSpeech": "noun",
+      "pronunciation": "ess-kuh-LAY-shun",
+      "articleQuote": "It was a sign of escalation, Mr Muratov explained.",
+      "meaning": "Escalation is a step-by-step increase in how serious, intense, or dangerous something becomes, like climbing an escalator. It is often used for conflicts: each side does something harsher than before. In the article, a break-in and a threat of arrests showed the pressure on the newspaper was getting much more dangerous, so the staff decided to close.",
+      "examples": [
+        "The argument over the video game was an escalation of a feud that began weeks earlier.",
+        "Leaders met to prevent any escalation of the border dispute."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "“Foreign agent” and “extremist” labels",
+      "articleQuote": "Its financial channels would be blocked, thanks to being branded a “foreign agent”.",
+      "meaning": "Law and politics. Some governments do not need to ban a newspaper outright. Instead they attach a **legal label** that makes it nearly impossible to work. In Russia, a **“foreign agent”** is a person or group the state says is under foreign influence. The label brings heavy paperwork, special warnings that must appear on everything published, and a stigma that scares away advertisers and donors. In this story it also meant the paper's money channels would be blocked.\n\nThe next rung is **“extremist organisation”**. This is the label Novaya Gazeta's staff feared. Once a group is declared extremist, merely belonging to it, or even sharing its work, can become a crime, so its “members” can be arrested. That is why the editor told staff to leave their phones outside the meeting: the paper was about to move from being a nuisance to being treated like an enemy.\n\nThe pattern is useful beyond Russia: labels let a government say it is just applying the law while it squeezes a critic out of existence, step by step, as in the eviction, the blocked money, the detention and the break-in."
+    },
+    {
+      "name": "Press freedom and censorship",
+      "articleQuote": "You can only laugh at Article 29 of the constitution: ‘Censorship is prohibited’.",
+      "meaning": "Civics. **Censorship** means a government (or another powerful group) controlling what people may publish or read. **Press freedom** is the opposite: reporters can investigate and print the truth, including facts that embarrass those in power. Many constitutions promise it, as Russia's does in Article 29, but a promise on paper means little if the state can ignore it.\n\nWhy does it matter? A free press is a country's early-warning system. Novaya Gazeta reported the war in Chechnya, showed that regular Russian soldiers were fighting in Donbas in 2014, and traced the Wagner group to its owner. When a press is silenced, citizens lose the facts they need to judge their leaders.\n\nCensorship can be loud or clever. After the invasion of Ukraine, Russia criminalised the word “war”, so the paper printed a front page with the headline “No Words” followed by blank sheets, a protest made out of absence. Readers bought up the entire run. The paper's closing shows what the Economist calls the demolishing of the few remaining free public spaces."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did Novaya Gazeta’s staff decide to close the newspaper?",
+      "options": [
+        "It ran out of readers",
+        "Pressure escalated: eviction, blocked finances, a detained editor and a break-in, with arrests possible",
+        "Its owners sold it to a foreign company",
+        "The staff all moved to Latvia"
+      ],
+      "answerIndex": 1,
+      "explanation": "After the eviction, the “foreign agent” label, the editor’s detention and a break-in, the staff feared being declared extremists and arrested."
+    },
+    {
+      "question": "What did the paper do with its front page days after Russia criminalised the word “war”?",
+      "options": [
+        "It printed the headline “No Words” followed by blank sheets",
+        "It stopped printing for a month",
+        "It printed only in English",
+        "It praised the government"
+      ],
+      "answerIndex": 0,
+      "explanation": "The “No Words” edition protested the censorship, and readers bought up the entire run."
+    },
+    {
+      "question": "What effect does a “foreign agent” label have, according to the article?",
+      "options": [
+        "It blocks the organisation’s financial channels",
+        "It gives the paper free printing",
+        "It makes the paper more popular abroad",
+        "It protects journalists from arrest"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says the paper’s financial channels would be blocked because it was branded a foreign agent."
+    },
+    {
+      "question": "Which story did Novaya Gazeta report first, according to the article?",
+      "options": [
+        "That Wagner was controlled by Evgeny Prigozhin",
+        "That Russia had won in Ukraine",
+        "That Latvia had joined Russia",
+        "That Article 29 had been repealed"
+      ],
+      "answerIndex": 0,
+      "explanation": "The paper was first to report that the Wagner mercenary group was controlled by Prigozhin."
+    },
+    {
+      "question": "What does “commemorate” mean in “to commemorate Politkovskaya’s murder”?",
+      "options": [
+        "To investigate it",
+        "To honour its memory",
+        "To deny it happened",
+        "To celebrate with a party"
+      ],
+      "answerIndex": 1,
+      "explanation": "To commemorate is to honour the memory of a person or event."
+    }
+  ]
+}

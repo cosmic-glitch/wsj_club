@@ -1,0 +1,595 @@
+[
+  {
+    "k": "crestfallen",
+    "t": "crestfallen",
+    "kind": "vocab",
+    "pron": "KREST-faw-len",
+    "forms": [
+      "crestfallen"
+    ],
+    "text": "Crestfallen means sad and disappointed, like a bird whose head feathers droop after losing a fight. The camerawoman filming the newsroom's last days is crestfallen because the paper she loves is being closed.",
+    "audio": true
+  },
+  {
+    "k": "commemorate",
+    "t": "commemorate",
+    "kind": "vocab",
+    "pron": "kuh-MEM-uh-rate",
+    "forms": [
+      "commemorate"
+    ],
+    "text": "To commemorate is to honour the memory of a person or event with a ceremony or a special day. The publisher was travelling to Paris to mark twenty years since the murder of the reporter Anna Politkovskaya.",
+    "audio": true
+  },
+  {
+    "k": "escalation",
+    "t": "escalation",
+    "kind": "vocab",
+    "pron": "ess-kuh-LAY-shun",
+    "forms": [
+      "escalation"
+    ],
+    "text": "Escalation is a step-by-step rise in how serious or dangerous something gets. The break-in and the threat of arrests showed the pressure on the paper was growing, so the staff chose to close.",
+    "audio": true
+  },
+  {
+    "k": "modernist",
+    "t": "modernist",
+    "kind": "word",
+    "forms": [
+      "modernist"
+    ],
+    "text": "Modernist describes a style of building from the 20th century with plain shapes, big windows and little decoration.",
+    "audio": true
+  },
+  {
+    "k": "printing-press",
+    "t": "printing press",
+    "kind": "word",
+    "forms": [
+      "printing press"
+    ],
+    "text": "A printing press is a machine that prints newspapers and books in large numbers. The paper's building was once a place where such machines ran.",
+    "audio": true
+  },
+  {
+    "k": "renowned",
+    "t": "renowned",
+    "kind": "word",
+    "forms": [
+      "renowned"
+    ],
+    "text": "Renowned means famous and respected for something, here for being an excellent reporter.",
+    "audio": true
+  },
+  {
+    "k": "laureate",
+    "t": "laureate",
+    "kind": "word",
+    "forms": [
+      "laureate"
+    ],
+    "text": "A laureate is someone honoured with a major prize. Dmitry Muratov won the Nobel Peace Prize, so he is a Nobel laureate.",
+    "audio": true
+  },
+  {
+    "k": "nobel-peace-prize-laureate",
+    "t": "Nobel peace-prize laureate",
+    "kind": "word",
+    "forms": [
+      "Nobel peace-prize laureate"
+    ],
+    "text": "The Nobel Peace Prize is one of the world's most famous awards. Mr Muratov shared it in 2021 for defending freedom of expression.",
+    "audio": true
+  },
+  {
+    "k": "evicted",
+    "t": "evicted",
+    "kind": "word",
+    "forms": [
+      "evicted"
+    ],
+    "text": "To evict someone is to force them to leave a building they live or work in, usually by order of an owner or authority.",
+    "audio": true
+  },
+  {
+    "k": "foreign-agent",
+    "t": "foreign agent",
+    "kind": "word",
+    "forms": [
+      "foreign agent"
+    ],
+    "text": "In Russia, \"foreign agent\" is an official label for people or groups the state says are influenced from abroad. It brings paperwork, warnings and blocked money, and scares off donors and advertisers.",
+    "audio": true
+  },
+  {
+    "k": "detained",
+    "t": "detained",
+    "kind": "word",
+    "forms": [
+      "detained"
+    ],
+    "text": "To detain someone is to hold them under authority, such as the police, without letting them go freely. The editor was detained and questioned.",
+    "audio": true
+  },
+  {
+    "k": "extremist-organisation",
+    "t": "extremist organisation",
+    "kind": "word",
+    "forms": [
+      "extremist organisation"
+    ],
+    "text": "In Russia, a group declared \"extremist\" can see its members arrested simply for belonging. The staff feared the paper would be given this label.",
+    "audio": true
+  },
+  {
+    "k": "broken-into",
+    "t": "broken into",
+    "kind": "word",
+    "forms": [
+      "broken into"
+    ],
+    "text": "To break into a place is to enter it illegally by force. Someone did this to the paper's offices the night before the meeting.",
+    "audio": true
+  },
+  {
+    "k": "constitution",
+    "t": "constitution",
+    "kind": "word",
+    "forms": [
+      "constitution"
+    ],
+    "text": "A constitution is a country's basic set of rules about how it is governed and what rights people have.",
+    "audio": true
+  },
+  {
+    "k": "article-29",
+    "t": "Article 29",
+    "kind": "word",
+    "forms": [
+      "Article 29"
+    ],
+    "text": "Article 29 of Russia's constitution promises free speech and says censorship is banned. Mr Muratov mocks it because the state ignores it.",
+    "audio": true
+  },
+  {
+    "k": "censorship",
+    "t": "Censorship",
+    "kind": "word",
+    "forms": [
+      "Censorship"
+    ],
+    "text": "Censorship is when a government or other powerful group controls what can be published or said. Russia's constitution bans it on paper.",
+    "audio": true
+  },
+  {
+    "k": "militaristic",
+    "t": "militaristic",
+    "kind": "word",
+    "forms": [
+      "militaristic"
+    ],
+    "text": "Militaristic describes a country that puts armed force and war at the centre of its politics.",
+    "audio": true
+  },
+  {
+    "k": "dictatorship",
+    "t": "dictatorship",
+    "kind": "word",
+    "forms": [
+      "dictatorship"
+    ],
+    "text": "A dictatorship is a country ruled by one person or a small group with no real free elections or free press.",
+    "audio": true
+  },
+  {
+    "k": "isolated",
+    "t": "isolated",
+    "kind": "word",
+    "forms": [
+      "isolated"
+    ],
+    "text": "To isolate a country is to cut it off from others, here through the sanctions and diplomatic break with the West after the invasion.",
+    "audio": true
+  },
+  {
+    "k": "licence",
+    "t": "licence",
+    "kind": "word",
+    "forms": [
+      "licence"
+    ],
+    "text": "A licence is official permission to do something. Russia revoked the paper's licence to publish.",
+    "audio": true
+  },
+  {
+    "k": "revoked",
+    "t": "revoked",
+    "kind": "word",
+    "forms": [
+      "revoked"
+    ],
+    "text": "To revoke something is to cancel it officially. The state took back the paper's permission to publish.",
+    "audio": true
+  },
+  {
+    "k": "ingenious",
+    "t": "ingenious",
+    "kind": "word",
+    "forms": [
+      "ingenious"
+    ],
+    "text": "Ingenious means clever and inventive. The paper found clever ways to reach readers even after being blocked.",
+    "audio": true
+  },
+  {
+    "k": "exposing",
+    "t": "exposing",
+    "kind": "word",
+    "forms": [
+      "exposing"
+    ],
+    "text": "To expose something is to reveal a hidden truth, especially wrongdoing, to the public.",
+    "audio": true
+  },
+  {
+    "k": "chechnya",
+    "t": "Chechnya",
+    "kind": "word",
+    "forms": [
+      "Chechnya"
+    ],
+    "text": "Chechnya is a mostly Muslim region in southern Russia where Russia fought brutal wars in the 1990s and 2000s. Novaya Gazeta's reporting on the violence made it famous.",
+    "audio": true
+  },
+  {
+    "k": "secured",
+    "t": "secured",
+    "kind": "word",
+    "forms": [
+      "secured"
+    ],
+    "text": "To secure something is to make it firm or safe. The Chechen war helped Mr Putin make his hold on power firm.",
+    "audio": true
+  },
+  {
+    "k": "cynicism",
+    "t": "cynicism",
+    "kind": "word",
+    "forms": [
+      "cynicism"
+    ],
+    "text": "Cynicism is the belief that people act only out of selfishness, and the open disregard for honesty that can follow.",
+    "audio": true
+  },
+  {
+    "k": "fascism",
+    "t": "fascism",
+    "kind": "word",
+    "forms": [
+      "fascism"
+    ],
+    "text": "Fascism is a harsh form of government with a powerful dictator, no opposition, and aggressive nationalism.",
+    "audio": true
+  },
+  {
+    "k": "gunned-down",
+    "t": "gunned down",
+    "kind": "word",
+    "forms": [
+      "gunned down"
+    ],
+    "text": "To be gunned down is to be shot dead, usually in a sudden and violent way.",
+    "audio": true
+  },
+  {
+    "k": "treated-like-dust",
+    "t": "treated like dust",
+    "kind": "word",
+    "forms": [
+      "treated like dust"
+    ],
+    "text": "To treat people like dust means to show no respect for their lives or worth. Mr Muratov says such treatment leads to violence.",
+    "audio": true
+  },
+  {
+    "k": "spills-beyond",
+    "t": "spills beyond",
+    "kind": "word",
+    "forms": [
+      "spills beyond"
+    ],
+    "text": "To spill beyond a border is to spread outward. His warning is that a government's violence at home often becomes violence abroad.",
+    "audio": true
+  },
+  {
+    "k": "donbas",
+    "t": "Donbas",
+    "kind": "word",
+    "forms": [
+      "Donbas"
+    ],
+    "text": "Donbas is an industrial region in eastern Ukraine where Russia-backed fighting began in 2014.",
+    "audio": true
+  },
+  {
+    "k": "rogue-separatists",
+    "t": "rogue separatists",
+    "kind": "word",
+    "forms": [
+      "rogue separatists"
+    ],
+    "text": "Separatists want a region to break away from its country. Russia claimed that local rebels, not its army, were fighting in Donbas.",
+    "audio": true
+  },
+  {
+    "k": "wagner",
+    "t": "Wagner",
+    "kind": "word",
+    "forms": [
+      "Wagner"
+    ],
+    "text": "The Wagner group was a private army of mercenaries used by Russia, including in Ukraine and Africa.",
+    "audio": true
+  },
+  {
+    "k": "mercenary",
+    "t": "mercenary",
+    "kind": "word",
+    "forms": [
+      "mercenary"
+    ],
+    "text": "A mercenary is a soldier who fights for money rather than for a country.",
+    "audio": true
+  },
+  {
+    "k": "mutiny",
+    "t": "mutiny",
+    "kind": "word",
+    "forms": [
+      "mutiny"
+    ],
+    "text": "A mutiny is a rebellion by soldiers against their commanders. Prigozhin led one against Mr Putin in 2023.",
+    "audio": true
+  },
+  {
+    "k": "prigozhin",
+    "t": "Prigozhin",
+    "kind": "word",
+    "forms": [
+      "Prigozhin"
+    ],
+    "text": "Evgeny Prigozhin founded the Wagner group. He led a revolt against Mr Putin and died soon after in a plane crash.",
+    "audio": true
+  },
+  {
+    "k": "funeral-wreaths",
+    "t": "funeral wreaths",
+    "kind": "word",
+    "forms": [
+      "funeral wreaths"
+    ],
+    "text": "A wreath is a ring of flowers, usually laid at funerals. Sending them to a living person is a threat to say \"you will die\".",
+    "audio": true
+  },
+  {
+    "k": "rams-heads",
+    "t": "rams’ heads",
+    "kind": "word",
+    "forms": [
+      "rams’ heads"
+    ],
+    "text": "A ram is a male sheep. Sending severed rams' heads to the offices was another frightening threat.",
+    "audio": true
+  },
+  {
+    "k": "invasion",
+    "t": "invasion",
+    "kind": "word",
+    "forms": [
+      "invasion"
+    ],
+    "text": "An invasion is when an army enters another country by force. Russia invaded Ukraine in February 2022.",
+    "audio": true
+  },
+  {
+    "k": "criminalised",
+    "t": "criminalised",
+    "kind": "word",
+    "forms": [
+      "criminalised"
+    ],
+    "text": "To criminalise something is to make it a crime. Russia made it illegal to call the war a \"war\".",
+    "audio": true
+  },
+  {
+    "k": "de-facto",
+    "t": "de facto",
+    "kind": "word",
+    "forms": [
+      "de facto"
+    ],
+    "text": "De facto is Latin for \"in fact\". It describes something that is true in practice even if it is not officially declared.",
+    "audio": true
+  },
+  {
+    "k": "newsstands",
+    "t": "newsstands",
+    "kind": "word",
+    "forms": [
+      "newsstands"
+    ],
+    "text": "A newsstand is a small kiosk on the street that sells newspapers and magazines.",
+    "audio": true
+  },
+  {
+    "k": "editorial-staff",
+    "t": "editorial staff",
+    "kind": "word",
+    "forms": [
+      "editorial staff"
+    ],
+    "text": "The editorial staff of a paper are the people who write and edit its stories.",
+    "audio": true
+  },
+  {
+    "k": "latvia",
+    "t": "Latvia",
+    "kind": "word",
+    "forms": [
+      "Latvia"
+    ],
+    "text": "Latvia is a small European country on the Baltic Sea next to Russia, where many exiled Russian journalists have settled.",
+    "audio": true
+  },
+  {
+    "k": "economic-deterioration",
+    "t": "economic deterioration",
+    "kind": "word",
+    "forms": [
+      "economic deterioration"
+    ],
+    "text": "Deterioration means getting worse. The paper reported on Russia's worsening economy as a result of the war.",
+    "audio": true
+  },
+  {
+    "k": "psychological-trauma",
+    "t": "psychological trauma",
+    "kind": "word",
+    "forms": [
+      "psychological trauma"
+    ],
+    "text": "Trauma is lasting emotional damage after a terrible experience such as war or violence.",
+    "audio": true
+  },
+  {
+    "k": "comfort-and-dignity",
+    "t": "comfort and dignity",
+    "kind": "word",
+    "forms": [
+      "comfort and dignity"
+    ],
+    "text": "Dignity means being treated with respect. The paper gave opponents of the war a place where they felt respected, not alone.",
+    "audio": true
+  },
+  {
+    "k": "hailed-as-heroes",
+    "t": "hailed as heroes",
+    "kind": "word",
+    "forms": [
+      "hailed as heroes"
+    ],
+    "text": "To be hailed as a hero means to be praised publicly. The reporter means a normal world would not do this for people who commit crimes.",
+    "audio": true
+  },
+  {
+    "k": "escalates",
+    "t": "escalates",
+    "kind": "word",
+    "forms": [
+      "escalates"
+    ],
+    "text": "To escalate is to make something more intense or severe, like attacks on cities.",
+    "audio": true
+  },
+  {
+    "k": "demolishing",
+    "t": "demolishing",
+    "kind": "word",
+    "forms": [
+      "demolishing"
+    ],
+    "text": "To demolish something is to knock it down completely. Here it is used figuratively for destroying free public spaces.",
+    "audio": true
+  },
+  {
+    "k": "artefacts",
+    "t": "artefacts",
+    "kind": "word",
+    "forms": [
+      "artefacts"
+    ],
+    "text": "Artefacts are objects made by people that have historical or personal importance, like items from the newsroom.",
+    "audio": true
+  },
+  {
+    "k": "accomplices",
+    "t": "accomplices",
+    "kind": "word",
+    "forms": [
+      "accomplices"
+    ],
+    "text": "An accomplice is someone who helps another to commit a crime. Mr Muratov jokingly uses it for readers who helped the paper.",
+    "audio": true
+  },
+  {
+    "k": "stalinist-repression",
+    "t": "Stalinist repression",
+    "kind": "word",
+    "forms": [
+      "Stalinist repression"
+    ],
+    "text": "Under Joseph Stalin, who led the Soviet Union until 1953, millions were imprisoned, sent to camps, or killed for political reasons.",
+    "audio": true
+  },
+  {
+    "k": "political-prisoners",
+    "t": "political prisoners",
+    "kind": "word",
+    "forms": [
+      "political prisoners"
+    ],
+    "text": "Political prisoners are people jailed for their beliefs or opposition to the government rather than for real crimes.",
+    "audio": true
+  },
+  {
+    "k": "solovetsky-island",
+    "t": "Solovetsky island",
+    "kind": "word",
+    "forms": [
+      "Solovetsky island"
+    ],
+    "text": "Solovetsky is an island in northern Russia that held one of the first Soviet prison camps.",
+    "audio": true
+  },
+  {
+    "k": "gulag",
+    "t": "gulag",
+    "kind": "word",
+    "forms": [
+      "gulag"
+    ],
+    "text": "The gulag was the Soviet system of forced-labour prison camps.",
+    "audio": true
+  },
+  {
+    "k": "politkovskaya",
+    "t": "Politkovskaya",
+    "kind": "word",
+    "forms": [
+      "Politkovskaya"
+    ],
+    "text": "Anna Politkovskaya was a Novaya Gazeta reporter who exposed abuses in Chechnya. She was shot dead in 2006.",
+    "audio": true
+  },
+  {
+    "k": "muratov",
+    "t": "Mr Muratov",
+    "kind": "word",
+    "forms": [
+      "Mr Muratov"
+    ],
+    "text": "Dmitry Muratov is the paper's publisher and a Nobel Peace Prize winner who stayed in Moscow to keep it going.",
+    "audio": true
+  },
+  {
+    "k": "novaya-gazeta",
+    "t": "Novaya Gazeta",
+    "kind": "word",
+    "forms": [
+      "Novaya Gazeta"
+    ],
+    "text": "Novaya Gazeta means \"New Newspaper\" in Russian. It was Russia's best-known independent paper, founded in 1993.",
+    "audio": true
+  }
+]
