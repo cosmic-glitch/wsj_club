@@ -1,0 +1,345 @@
+[
+  {
+    "k": "regulate",
+    "t": "regulate",
+    "kind": "vocab",
+    "pron": "REG-yuh-late",
+    "forms": [
+      "regulate"
+    ],
+    "text": "To regulate something is to control it so it stays at the right level. The body has to regulate blood sugar, and when it can't, a disease called diabetes can develop.",
+    "audio": true
+  },
+  {
+    "k": "skewed",
+    "t": "skewed",
+    "kind": "vocab",
+    "pron": "SKYOOD",
+    "forms": [
+      "skewed"
+    ],
+    "text": "When results are skewed, they are pushed off to one side, so they are not fully fair or accurate. The scientists admitted that people's different lifestyles might have tilted their findings.",
+    "audio": true
+  },
+  {
+    "k": "acknowledge",
+    "t": "acknowledged",
+    "kind": "vocab",
+    "pron": "ak-NOL-ij",
+    "forms": [
+      "acknowledged"
+    ],
+    "text": "To acknowledge something is to admit that it is true. The scientists acknowledged that their results might not be perfect.",
+    "audio": true
+  },
+  {
+    "k": "supply",
+    "t": "supplies",
+    "kind": "word",
+    "forms": [
+      "supplies"
+    ],
+    "text": "To supply something is to provide it. Rice supplies nearly a fifth of the world's calories, so it feeds a huge number of people.",
+    "audio": true
+  },
+  {
+    "k": "calorie",
+    "t": "calories",
+    "kind": "word",
+    "forms": [
+      "calories"
+    ],
+    "text": "A calorie is a unit that measures the energy in food. Your body burns calories to run, think and grow.",
+    "audio": true
+  },
+  {
+    "k": "milling",
+    "t": "milling",
+    "kind": "word",
+    "forms": [
+      "milling"
+    ],
+    "text": "Milling is grinding or scraping grain in a machine. Milling removes the outer layer of brown rice and turns it white.",
+    "audio": true
+  },
+  {
+    "k": "bran",
+    "t": "bran",
+    "kind": "word",
+    "forms": [
+      "bran"
+    ],
+    "text": "Bran is the hard, fibre-rich outer layer of a grain, like the skin of a seed.",
+    "audio": true
+  },
+  {
+    "k": "fibrous",
+    "t": "fibrous",
+    "kind": "word",
+    "forms": [
+      "fibrous"
+    ],
+    "text": "Fibrous means made of tough, stringy fibres, like celery or the outer layer of brown rice.",
+    "audio": true
+  },
+  {
+    "k": "germ",
+    "t": "germ",
+    "kind": "word",
+    "forms": [
+      "germ"
+    ],
+    "text": "Here, the germ is the tiny seed embryo inside a grain, the part that could grow into a new plant. It is not the kind of germ that makes you sick.",
+    "audio": true
+  },
+  {
+    "k": "nutrient",
+    "t": "nutrient-rich",
+    "kind": "word",
+    "forms": [
+      "nutrient-rich"
+    ],
+    "text": "A nutrient is something in food that your body needs to stay healthy, like vitamins. Nutrient-rich means packed with them.",
+    "audio": true
+  },
+  {
+    "k": "lore",
+    "t": "lore",
+    "kind": "word",
+    "forms": [
+      "lore"
+    ],
+    "text": "Lore is knowledge or beliefs that people pass along over the years, even if no one has tested them. Nutritional lore says brown rice is healthier.",
+    "audio": true
+  },
+  {
+    "k": "starch",
+    "t": "starch",
+    "kind": "word",
+    "forms": [
+      "starch"
+    ],
+    "text": "Starch is a substance in foods like rice, bread and potatoes. Your body breaks it down into sugar for energy.",
+    "audio": true
+  },
+  {
+    "k": "glucose",
+    "t": "glucose",
+    "kind": "word",
+    "forms": [
+      "glucose"
+    ],
+    "text": "Glucose is a simple sugar your body uses for energy. It is the same thing as blood sugar.",
+    "audio": true
+  },
+  {
+    "k": "diabetes",
+    "t": "type-2 diabetes",
+    "kind": "word",
+    "forms": [
+      "type-2 diabetes"
+    ],
+    "text": "Type-2 diabetes is an illness where the body has trouble keeping blood sugar at a healthy level.",
+    "audio": true
+  },
+  {
+    "k": "observational",
+    "t": "observational",
+    "kind": "word",
+    "forms": [
+      "observational"
+    ],
+    "text": "An observational study just watches what people do and what happens to them. Scientists don't tell anyone what to eat.",
+    "audio": true
+  },
+  {
+    "k": "consumption",
+    "t": "consumption",
+    "kind": "word",
+    "forms": [
+      "consumption"
+    ],
+    "text": "Consumption is how much of something is eaten or used.",
+    "audio": true
+  },
+  {
+    "k": "exceed",
+    "t": "exceeded",
+    "kind": "word",
+    "forms": [
+      "exceeded"
+    ],
+    "text": "To exceed a number is to go past it. Once daily rice exceeded two servings, the risk rose.",
+    "audio": true
+  },
+  {
+    "k": "serving",
+    "t": "servings",
+    "kind": "word",
+    "forms": [
+      "servings"
+    ],
+    "text": "A serving is the amount of food you eat at one time, like one bowl of rice.",
+    "audio": true
+  },
+  {
+    "k": "bloodstream",
+    "t": "bloodstream",
+    "kind": "word",
+    "forms": [
+      "bloodstream"
+    ],
+    "text": "The bloodstream is the flow of blood through your body, carrying sugar and nutrients to where they are needed.",
+    "audio": true
+  },
+  {
+    "k": "gradually",
+    "t": "gradually",
+    "kind": "word",
+    "forms": [
+      "gradually"
+    ],
+    "text": "Gradually means slowly, a little at a time. Fibre makes glucose enter the blood more gradually.",
+    "audio": true
+  },
+  {
+    "k": "modelling",
+    "t": "Modelling",
+    "kind": "word",
+    "forms": [
+      "Modelling"
+    ],
+    "text": "Modelling means using math on real data to estimate what would happen in a different situation.",
+    "audio": true
+  },
+  {
+    "k": "confounding",
+    "t": "confounding",
+    "kind": "word",
+    "forms": [
+      "confounding"
+    ],
+    "text": "Confounding describes something that mixes up a result by getting in the way. A confounding difference, like exercise, can make a link look stronger than it is.",
+    "audio": true
+  },
+  {
+    "k": "lifestyle",
+    "t": "lifestyle",
+    "kind": "word",
+    "forms": [
+      "lifestyle"
+    ],
+    "text": "Your lifestyle is the way you live: what you eat, how you move and how you sleep.",
+    "audio": true
+  },
+  {
+    "k": "randomised",
+    "t": "randomised",
+    "kind": "word",
+    "forms": [
+      "randomised"
+    ],
+    "text": "Randomised means people were put into groups by chance, like drawing names from a hat. (The Economist spells it with an s.)",
+    "audio": true
+  },
+  {
+    "k": "participant",
+    "t": "participants",
+    "kind": "word",
+    "forms": [
+      "participants"
+    ],
+    "text": "A participant is someone who takes part in a study.",
+    "audio": true
+  },
+  {
+    "k": "statistically-significant",
+    "t": "statistically significant",
+    "kind": "phrase",
+    "forms": [
+      "statistically significant"
+    ],
+    "text": "Statistically significant means a difference was big enough that it probably isn't just luck. If it isn't, the result could be chance.",
+    "audio": true
+  },
+  {
+    "k": "insulin",
+    "t": "insulin",
+    "kind": "word",
+    "forms": [
+      "insulin"
+    ],
+    "text": "Insulin is a chemical your body makes that helps your cells absorb sugar from the blood.",
+    "audio": true
+  },
+  {
+    "k": "sensitivity",
+    "t": "sensitivity",
+    "kind": "word",
+    "forms": [
+      "sensitivity"
+    ],
+    "text": "Sensitivity is how strongly something reacts. Better sensitivity to insulin means cells respond to it well.",
+    "audio": true
+  },
+  {
+    "k": "amylose",
+    "t": "amylose",
+    "kind": "word",
+    "forms": [
+      "amylose"
+    ],
+    "text": "Amylose is a type of starch that digests slowly, which keeps blood sugar from jumping up fast.",
+    "audio": true
+  },
+  {
+    "k": "determinant",
+    "t": "determinant",
+    "kind": "word",
+    "forms": [
+      "determinant"
+    ],
+    "text": "A determinant is something that decides how an outcome turns out. Amylose is a big determinant of how sharply rice raises blood sugar.",
+    "audio": true
+  },
+  {
+    "k": "parboiling",
+    "t": "Parboiling",
+    "kind": "word",
+    "forms": [
+      "Parboiling"
+    ],
+    "text": "Parboiling is soaking and steaming rice before its outer layer is milled off. It pushes vitamins into the grain.",
+    "audio": true
+  },
+  {
+    "k": "cumulative",
+    "t": "cumulative",
+    "kind": "word",
+    "forms": [
+      "cumulative"
+    ],
+    "text": "Cumulative means added up over time. The cumulative rise is the total rise over two hours.",
+    "audio": true
+  },
+  {
+    "k": "bacterial",
+    "t": "bacterial",
+    "kind": "word",
+    "forms": [
+      "bacterial"
+    ],
+    "text": "Bacterial means having to do with bacteria, tiny living things. Some bacteria can make you sick if they grow in leftover rice.",
+    "audio": true
+  },
+  {
+    "k": "edge",
+    "t": "edge",
+    "kind": "word",
+    "forms": [
+      "edge"
+    ],
+    "text": "Here, an edge is a small advantage. The parboiled rice seemed to have an edge over ordinary brown rice.",
+    "audio": true
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-31",
+  "title": "Is brown rice really healthier than white rice?",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/30/is-brown-rice-really-healthier-than-white-rice",
+  "articlePageUrl": "/articles/junior/2026-10-31.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "regulate",
+      "partOfSpeech": "verb",
+      "pronunciation": "REG-yuh-late",
+      "articleQuote": "If the body struggles to regulate it, type-2 diabetes can eventually develop.",
+      "meaning": "To regulate something is to control it so it stays at the right level. Not too high, not too low. In the article, the body has to regulate blood sugar, and when it can’t, a disease called diabetes can develop.",
+      "examples": [
+        "A thermostat helps regulate the temperature in our house.",
+        "Your body can regulate its own heat by sweating when you run hard."
+      ]
+    },
+    {
+      "word": "skewed",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SKYOOD",
+      "articleQuote": "Although the authors of the papers from 2022 and 2010 attempted to account for such confounding lifestyle differences, they acknowledged that their findings could still be skewed.",
+      "meaning": "When results are skewed, they are pushed off to one side, so they are not completely fair or accurate. Something got in the way and tilted the answer. In the article, the scientists admitted that people’s different lifestyles might have tilted their findings.",
+      "examples": [
+        "The poll was skewed because we only asked kids on the soccer team.",
+        "My score was skewed by one bad game, so it did not show how well I usually play."
+      ]
+    },
+    {
+      "word": "acknowledge",
+      "partOfSpeech": "verb",
+      "pronunciation": "ak-NOL-ij",
+      "articleQuote": "Although the authors of the papers from 2022 and 2010 attempted to account for such confounding lifestyle differences, they acknowledged that their findings could still be skewed.",
+      "meaning": "To acknowledge something is to admit that it is true, especially something you would rather not say. You face the fact instead of hiding it. In the article, the scientists acknowledged that their results might not be perfect.",
+      "examples": [
+        "He had to acknowledge that he forgot to do his homework.",
+        "The coach will acknowledge when a call was wrong and say sorry."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Correlation vs. causation",
+      "articleQuote": "Correlation, though, is not causation.",
+      "meaning": "Say kids who wear sneakers to school get better grades. Do the sneakers make them smarter? Of course not. Two things happening together is called a **correlation**. One thing making the other happen is called **causation**.\n\nMany correlations have a hidden reason behind them. Maybe the kids with sneakers also sleep more, or read more at home. Those hidden extra reasons are what scientists call **confounders**.\n\nSo when you hear that A goes with B, ask one question: could something else be causing both?\n\nImagine ice cream sales and sunburns both go up in July. Ice cream does not burn skin. Hot, sunny weather causes both.\n\nSo the takeaway: two things happening together does not prove one causes the other.\n\nIn the article, people who eat brown rice also smoke less, exercise more and eat healthier food overall. So their lower diabetes risk might come from those habits, not the rice."
+    },
+    {
+      "name": "Randomized controlled trial",
+      "articleQuote": "So what happens when researchers actually instruct people to eat brown rather than white rice?",
+      "meaning": "How can scientists tell whether something really causes a result? They run an experiment where they decide who gets what. That is a **randomized controlled trial**.\n\nHere is how it works. Scientists split people into groups by chance, like drawing names from a hat. One group gets the new thing. The other group gets the usual thing. Then they compare the results. Because chance made the groups, the groups are alike in habits, so habits can’t explain a difference.\n\nImagine testing whether a new study trick helps spelling. You randomly give half your class the trick and half the old way. If the trick group scores higher, the trick probably did it.\n\nSo the takeaway: a randomized trial is the fair test that can show cause and effect.\n\nIn the article, 11 such trials told people to eat brown or white rice. The brown rice eaters did not clearly control their blood sugar better, which went against what the earlier studies suggested."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the difference between brown rice and white rice?",
+      "options": [
+        "White rice has had its bran and germ removed by milling",
+        "Brown rice is grown in a different country",
+        "White rice is always cooked longer",
+        "Brown rice has had extra sugar added"
+      ],
+      "answerIndex": 0,
+      "explanation": "Brown rice becomes white when milling removes its fibrous outer layer, the bran, and the germ."
+    },
+    {
+      "question": "What did the randomized controlled trials find about brown rice?",
+      "options": [
+        "It cut diabetes risk in half",
+        "It made blood sugar much worse",
+        "It showed no clear improvement in blood sugar control",
+        "It was only tested on children"
+      ],
+      "answerIndex": 2,
+      "explanation": "People assigned to eat brown rice showed no statistically significant improvements in blood sugar control."
+    },
+    {
+      "question": "Why might people who eat brown rice seem healthier in observational studies?",
+      "options": [
+        "Brown rice is always bigger in a serving",
+        "They tend to smoke less, exercise more and eat healthier food",
+        "They never eat any white rice",
+        "Scientists chose only healthy people"
+      ],
+      "answerIndex": 1,
+      "explanation": "Correlation is not causation: other healthy habits could explain the lower risk."
+    },
+    {
+      "question": "According to the article, what matters more for blood sugar than rice’s colour?",
+      "options": [
+        "How salty the rice is",
+        "How much water is used",
+        "How big the grains are",
+        "How much of a starch called amylose it has"
+      ],
+      "answerIndex": 3,
+      "explanation": "Amylose resists rapid digestion, so it limits spikes in blood sugar."
+    },
+    {
+      "question": "What does the word “skewed” mean in the article?",
+      "options": [
+        "Pushed off to one side so it is not fully accurate",
+        "Perfectly correct",
+        "Very old",
+        "Easy to read"
+      ],
+      "answerIndex": 0,
+      "explanation": "The scientists admitted their findings could still be skewed, meaning tilted by other differences."
+    }
+  ]
+}
