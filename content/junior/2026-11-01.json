@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-01",
+  "title": "A tiny Pacific country rolls out universal basic income",
+  "articleUrl": "https://www.economist.com/asia/2026/10/29/a-tiny-pacific-country-rolls-out-universal-basic-income",
+  "articlePageUrl": "/articles/junior/2026-11-01.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "windfall",
+      "partOfSpeech": "noun",
+      "pronunciation": "WIND-fawl",
+      "articleQuote": "The Marshall Islands uses an American windfall to pay every citizen",
+      "meaning": "A windfall is a large amount of money you did not expect or work for. The word comes from fruit blown off a tree by the wind: it just lands in your lap. In the article, the money America pays the Marshall Islands is the windfall.",
+      "examples": [
+        "Grandma's surprise birthday check was a windfall, and I spent it on a new bike.",
+        "The team got a windfall when a local store gave them free uniforms."
+      ]
+    },
+    {
+      "word": "supplement",
+      "partOfSpeech": "noun",
+      "pronunciation": "SUP-luh-munt",
+      "articleQuote": "unconditional government payment given to all citizens as a supplement to or replacement for wages",
+      "meaning": "A supplement is something added to what you already have, to make it more complete. It adds to the main thing and does not replace it. In the article, the payment would be extra money on top of a person's wages.",
+      "examples": [
+        "My allowance is a supplement to the money I earn walking the neighbor's dog.",
+        "The teacher gave us a supplement to the textbook with extra practice problems."
+      ]
+    },
+    {
+      "word": "cumbersome",
+      "partOfSpeech": "adjective",
+      "pronunciation": "KUM-bur-sum",
+      "articleQuote": "The Marshallese government argues that deciding who should qualify would be costly and cumbersome.",
+      "meaning": "Something cumbersome is slow, clumsy, and awkward to deal with because it is big or has too many steps. In the article, checking every person to decide who qualifies would take so much work that the government says it is not worth it.",
+      "examples": [
+        "Carrying a huge cardboard box up three flights of stairs was cumbersome.",
+        "The game's rules were so cumbersome that we gave up before the first turn."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "GDP",
+      "articleQuote": "The cost of it amounts to a whopping 8% or so of GDP, but is paid from an American trust fund",
+      "meaning": "How do you say whether a country's money plan is big or small? A bag of $800 sounds small. But for a tiny country, it can be huge. To compare fairly, economists measure the size of a whole economy with **GDP**, short for *gross domestic product*. It is the total value of everything made and sold inside a country in one year: every haircut, burger, phone and bus ride.\n\nSay your school holds a bake sale and every class sells cookies, cupcakes and lemonade. Add up all the money from all the stands, and you have the sale's \"GDP\".\n\nNow imagine the principal says, \"We will spend $50 on prizes.\" If the whole sale made $100, that is half of everything. If it made $10,000, that is tiny. Saying a cost is a **percent of GDP** tells you how heavy it is for that country.\n\nSo the takeaway: when you hear a big number, ask what share of the country's GDP it is."
+    },
+    {
+      "name": "Inflation",
+      "articleQuote": "Inflation, another common concern with cash transfers, has risen",
+      "meaning": "Why might handing out money make everything cost more? That is the worry about **inflation**, a word from economics for prices across a whole economy rising over time. The word comes from *inflate*, to blow up like a balloon: the same dollar buys less.\n\nImagine your class has 10 slices of pizza at a party and each kid has $1, so a slice costs $1. Now the teacher secretly gives every kid another $1, but there are still only 10 slices. Everyone wants to pay more to get one, so the price drifts up to $2. Nothing about the pizza changed. There was just more money chasing the same amount of stuff.\n\nPrices can also rise for other reasons, like a war that makes oil or food harder to get. In the article, officials say that is mostly what happened here.\n\nSo the takeaway: when prices go up, ask whether people got more money, or whether there is less stuff to buy."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What makes the Marshall Islands' basic income the first of its kind, according to the article?",
+      "options": [
+        "It is paid by a whole country to all citizens, including children",
+        "It is paid only to people who lose their jobs",
+        "It is paid only to people living on the capital island",
+        "It is paid in goods rather than money"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says it is believed to be the world's first national scheme paying every citizen, children included."
+    },
+    {
+      "question": "Where does the money for the payments come from?",
+      "options": [
+        "A tax on tourists",
+        "An American trust fund tied to an agreement with the United States",
+        "A loan from the IMF",
+        "Fees paid by fishing boats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The cost is paid from an American trust fund, part of the compact with America."
+    },
+    {
+      "question": "Why does the article say the payment is not meant to replace work?",
+      "options": [
+        "Everyone on the islands already has a job",
+        "Workers are not allowed to receive it",
+        "It is only about a tenth of income per person, so it is not nearly big enough",
+        "It is paid only once"
+      ],
+      "answerIndex": 2,
+      "explanation": "At around $800 a year, it is only about a tenth of the country's income per person."
+    },
+    {
+      "question": "Why does the Marshallese government say it pays everyone instead of only those in need?",
+      "options": [
+        "Deciding who qualifies would be costly and cumbersome",
+        "The law forbids choosing people",
+        "Rich people asked for it",
+        "The payments are too small to matter"
+      ],
+      "answerIndex": 0,
+      "explanation": "The government argues that working out who should qualify would be costly and cumbersome."
+    },
+    {
+      "question": "If a cost is \"8% of GDP,\" what does that tell you?",
+      "options": [
+        "It will happen in 8 years",
+        "It equals 8 percent of everything the country makes in a year",
+        "Prices rose by 8 percent",
+        "8 percent of people receive it"
+      ],
+      "answerIndex": 1,
+      "explanation": "GDP measures the value of everything a country produces in a year, so a percent of GDP shows the size of a cost."
+    }
+  ]
+}

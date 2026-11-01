@@ -1,0 +1,510 @@
+[
+  {
+    "k": "windfall",
+    "t": "windfall",
+    "kind": "vocab",
+    "pron": "WIND-fawl",
+    "forms": [
+      "windfall"
+    ],
+    "text": "A windfall is a large amount of money you did not expect or work for, like fruit blown off a tree by the wind. Here it is the money America pays the Marshall Islands.",
+    "audio": true
+  },
+  {
+    "k": "supplement",
+    "t": "supplement",
+    "kind": "vocab",
+    "pron": "SUP-luh-munt",
+    "forms": [
+      "supplement"
+    ],
+    "text": "A supplement is something added to what you already have. Here the payment would be extra money on top of wages.",
+    "audio": true
+  },
+  {
+    "k": "cumbersome",
+    "t": "cumbersome",
+    "kind": "vocab",
+    "pron": "KUM-bur-sum",
+    "forms": [
+      "cumbersome"
+    ],
+    "text": "Cumbersome means slow, clumsy and awkward because there is too much to do. Checking who qualifies would take a lot of work.",
+    "audio": true
+  },
+  {
+    "k": "nuclear-arsenal",
+    "t": "nuclear arsenal",
+    "kind": "phrase",
+    "forms": [
+      "nuclear arsenal"
+    ],
+    "text": "An arsenal is a country's stock of weapons. A nuclear arsenal is its collection of nuclear bombs.",
+    "audio": true
+  },
+  {
+    "k": "atoll",
+    "t": "atolls",
+    "kind": "word",
+    "forms": [
+      "atolls"
+    ],
+    "text": "An atoll is a ring-shaped coral island that surrounds a calm lagoon of water.",
+    "audio": true
+  },
+  {
+    "k": "administered",
+    "t": "American-administered",
+    "kind": "word",
+    "forms": [
+      "American-administered"
+    ],
+    "text": "Administered means run or managed. The islands were once managed by America.",
+    "audio": true
+  },
+  {
+    "k": "scattered",
+    "t": "scattered",
+    "kind": "word",
+    "forms": [
+      "scattered"
+    ],
+    "text": "Scattered means spread out over a wide area, not close together.",
+    "audio": true
+  },
+  {
+    "k": "radiation",
+    "t": "radiation",
+    "kind": "word",
+    "forms": [
+      "radiation"
+    ],
+    "text": "Radiation is invisible energy given off by nuclear material. A lot of it can seriously harm the body.",
+    "audio": true
+  },
+  {
+    "k": "lasting",
+    "t": "lasting",
+    "kind": "word",
+    "forms": [
+      "lasting"
+    ],
+    "text": "Lasting means continuing for a very long time.",
+    "audio": true
+  },
+  {
+    "k": "marshallese",
+    "t": "Marshallese",
+    "kind": "name",
+    "forms": [
+      "Marshallese"
+    ],
+    "text": "Marshallese means the people of the Marshall Islands, or relating to them.",
+    "audio": true
+  },
+  {
+    "k": "compact-of-free-association",
+    "t": "compact of free association",
+    "kind": "phrase",
+    "forms": [
+      "compact of free association",
+      "compact"
+    ],
+    "text": "A compact is a formal agreement. Under this one, America gives money and the islands allow American military access.",
+    "audio": true
+  },
+  {
+    "k": "in-exchange-for",
+    "t": "in exchange for",
+    "kind": "phrase",
+    "forms": [
+      "in exchange for"
+    ],
+    "text": "In exchange for means giving one thing to get another, like a trade.",
+    "audio": true
+  },
+  {
+    "k": "enrolled",
+    "t": "enrolled",
+    "kind": "word",
+    "forms": [
+      "enrolled",
+      "enrol"
+    ],
+    "text": "To be enrolled is to be signed up on an official list.",
+    "audio": true
+  },
+  {
+    "k": "quarterly",
+    "t": "quarterly",
+    "kind": "word",
+    "forms": [
+      "quarterly"
+    ],
+    "text": "Quarterly means once every three months, so four times a year.",
+    "audio": true
+  },
+  {
+    "k": "citizen",
+    "t": "citizens",
+    "kind": "word",
+    "forms": [
+      "citizens",
+      "citizen"
+    ],
+    "text": "A citizen is a person who officially belongs to a country and has its rights.",
+    "audio": true
+  },
+  {
+    "k": "universal-basic-income",
+    "t": "universal basic income",
+    "kind": "phrase",
+    "forms": [
+      "universal basic income",
+      "UBI"
+    ],
+    "text": "Universal basic income, or UBI, means the government gives every person the same regular payment, with no conditions. Universal means for everyone.",
+    "audio": true
+  },
+  {
+    "k": "unconditional",
+    "t": "unconditional",
+    "kind": "word",
+    "forms": [
+      "unconditional"
+    ],
+    "text": "Unconditional means with no rules or strings attached. You do not have to do anything to get it.",
+    "audio": true
+  },
+  {
+    "k": "wages",
+    "t": "wages",
+    "kind": "word",
+    "forms": [
+      "wages"
+    ],
+    "text": "Wages are the money people are paid for their work.",
+    "audio": true
+  },
+  {
+    "k": "architect",
+    "t": "architect",
+    "kind": "word",
+    "forms": [
+      "architect"
+    ],
+    "text": "An architect designs buildings. Here it means the person who came up with the plan.",
+    "audio": true
+  },
+  {
+    "k": "peace-of-mind",
+    "t": "peace of mind",
+    "kind": "phrase",
+    "forms": [
+      "peace of mind"
+    ],
+    "text": "Peace of mind means feeling calm because you are not worried.",
+    "audio": true
+  },
+  {
+    "k": "cost-of-living",
+    "t": "cost of living",
+    "kind": "phrase",
+    "forms": [
+      "cost of living"
+    ],
+    "text": "The cost of living is how much money people need for basics like food, housing and clothes.",
+    "audio": true
+  },
+  {
+    "k": "insist",
+    "t": "insist",
+    "kind": "word",
+    "forms": [
+      "insist"
+    ],
+    "text": "To insist is to say something very firmly and refuse to change your mind.",
+    "audio": true
+  },
+  {
+    "k": "labour-supply",
+    "t": "labour supply",
+    "kind": "phrase",
+    "forms": [
+      "labour supply"
+    ],
+    "text": "Labour supply is how many people are willing to work. People might work less if they get free money.",
+    "audio": true
+  },
+  {
+    "k": "economist",
+    "t": "economist",
+    "kind": "word",
+    "forms": [
+      "economist"
+    ],
+    "text": "An economist is an expert who studies how money, jobs and prices work.",
+    "audio": true
+  },
+  {
+    "k": "consumption",
+    "t": "consumption",
+    "kind": "word",
+    "forms": [
+      "consumption"
+    ],
+    "text": "Consumption means how much people buy and use. When they spend more, consumption goes up.",
+    "audio": true
+  },
+  {
+    "k": "labour-force",
+    "t": "labour force",
+    "kind": "phrase",
+    "forms": [
+      "labour force"
+    ],
+    "text": "The labour force is all the people who have jobs or are looking for one.",
+    "audio": true
+  },
+  {
+    "k": "cheque",
+    "t": "cheques",
+    "kind": "word",
+    "forms": [
+      "cheques",
+      "cheque"
+    ],
+    "text": "A cheque is a printed paper that tells a bank to pay money to the person named on it.",
+    "audio": true
+  },
+  {
+    "k": "inflation",
+    "t": "Inflation",
+    "kind": "word",
+    "forms": [
+      "Inflation"
+    ],
+    "text": "Inflation is when prices across a whole economy rise over time, so the same money buys less.",
+    "audio": true
+  },
+  {
+    "k": "cash-transfer",
+    "t": "cash transfers",
+    "kind": "phrase",
+    "forms": [
+      "cash transfers"
+    ],
+    "text": "A cash transfer is money the government gives straight to people.",
+    "audio": true
+  },
+  {
+    "k": "attribute",
+    "t": "attribute",
+    "kind": "word",
+    "forms": [
+      "attribute"
+    ],
+    "text": "To attribute something to a cause means to say that cause made it happen.",
+    "audio": true
+  },
+  {
+    "k": "remote",
+    "t": "remote",
+    "kind": "word",
+    "forms": [
+      "remote"
+    ],
+    "text": "Remote means far away from other places and hard to reach.",
+    "audio": true
+  },
+  {
+    "k": "obstacle",
+    "t": "obstacle",
+    "kind": "word",
+    "forms": [
+      "obstacle"
+    ],
+    "text": "An obstacle is something that blocks your way or makes a goal harder.",
+    "audio": true
+  },
+  {
+    "k": "whopping",
+    "t": "whopping",
+    "kind": "word",
+    "forms": [
+      "whopping"
+    ],
+    "text": "Whopping is an informal word for very large.",
+    "audio": true
+  },
+  {
+    "k": "gdp",
+    "t": "GDP",
+    "kind": "name",
+    "forms": [
+      "GDP"
+    ],
+    "text": "GDP, gross domestic product, is the total value of everything made and sold in a country in one year. Percent of GDP shows how big a cost is for that country.",
+    "audio": true
+  },
+  {
+    "k": "trust-fund",
+    "t": "trust fund",
+    "kind": "phrase",
+    "forms": [
+      "trust fund"
+    ],
+    "text": "A trust fund is a pile of money set aside and managed for a special purpose.",
+    "audio": true
+  },
+  {
+    "k": "imf",
+    "t": "IMF",
+    "kind": "name",
+    "forms": [
+      "IMF"
+    ],
+    "text": "The IMF, or International Monetary Fund, is a group of countries that lends money and gives economic advice.",
+    "audio": true
+  },
+  {
+    "k": "infrastructure",
+    "t": "infrastructure",
+    "kind": "word",
+    "forms": [
+      "infrastructure"
+    ],
+    "text": "Infrastructure means the basic things a place needs to work, like roads, bridges, ports and power lines.",
+    "audio": true
+  },
+  {
+    "k": "climate-adaptation",
+    "t": "climate adaptation",
+    "kind": "phrase",
+    "forms": [
+      "climate adaptation"
+    ],
+    "text": "Climate adaptation means changing how we live to cope with a changing climate, like building sea walls.",
+    "audio": true
+  },
+  {
+    "k": "targeted",
+    "t": "targeted",
+    "kind": "word",
+    "forms": [
+      "targeted"
+    ],
+    "text": "A targeted scheme gives help only to some chosen people, not everyone.",
+    "audio": true
+  },
+  {
+    "k": "feasible",
+    "t": "feasible",
+    "kind": "word",
+    "forms": [
+      "feasible"
+    ],
+    "text": "Feasible means possible to do.",
+    "audio": true
+  },
+  {
+    "k": "qualify",
+    "t": "qualify",
+    "kind": "word",
+    "forms": [
+      "qualify"
+    ],
+    "text": "To qualify is to meet the rules needed to get something.",
+    "audio": true
+  },
+  {
+    "k": "remittances",
+    "t": "remittances",
+    "kind": "word",
+    "forms": [
+      "remittances"
+    ],
+    "text": "Remittances are money that people working in another country send home to their families.",
+    "audio": true
+  },
+  {
+    "k": "vulnerable",
+    "t": "vulnerable",
+    "kind": "word",
+    "forms": [
+      "vulnerable"
+    ],
+    "text": "Vulnerable means easy to hurt or damage.",
+    "audio": true
+  },
+  {
+    "k": "economic-shocks",
+    "t": "economic shocks",
+    "kind": "phrase",
+    "forms": [
+      "economic shocks"
+    ],
+    "text": "An economic shock is a sudden event, like a war or disaster, that hurts the economy.",
+    "audio": true
+  },
+  {
+    "k": "social-protection",
+    "t": "social-protection",
+    "kind": "word",
+    "forms": [
+      "social-protection"
+    ],
+    "text": "Social protection means programs that help people in need, like food help or unemployment money.",
+    "audio": true
+  },
+  {
+    "k": "evaluation",
+    "t": "evaluation",
+    "kind": "word",
+    "forms": [
+      "evaluation"
+    ],
+    "text": "An evaluation is a careful study that checks whether something worked.",
+    "audio": true
+  },
+  {
+    "k": "displacement",
+    "t": "displacement",
+    "kind": "word",
+    "forms": [
+      "displacement"
+    ],
+    "text": "Job displacement is when people lose jobs because something else, like a machine, takes their place.",
+    "audio": true
+  },
+  {
+    "k": "artificial-intelligence",
+    "t": "artificial intelligence",
+    "kind": "phrase",
+    "forms": [
+      "artificial intelligence"
+    ],
+    "text": "Artificial intelligence, or AI, is computer technology that can do tasks that normally need human thinking.",
+    "audio": true
+  },
+  {
+    "k": "centrist",
+    "t": "centrist",
+    "kind": "word",
+    "forms": [
+      "centrist"
+    ],
+    "text": "A centrist group has political views in the middle, not strongly left or right.",
+    "audio": true
+  },
+  {
+    "k": "lessons",
+    "t": "lessons",
+    "kind": "word",
+    "forms": [
+      "lessons"
+    ],
+    "text": "Lessons here means useful things other people can learn from the experiment.",
+    "audio": true
+  }
+]
