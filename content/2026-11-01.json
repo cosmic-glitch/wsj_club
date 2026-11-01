@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-01",
+  "title": "Treatments for age-related infertility are being developed at last",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/10/26/treatments-for-age-related-infertility-are-being-developed-at-last",
+  "articlePageUrl": "/articles/2026-11-01.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "viability",
+      "partOfSpeech": "noun",
+      "pronunciation": "vy-uh-BIL-ih-tee",
+      "articleQuote": "improve the viability of human eggs",
+      "meaning": "Viability is the ability of something to survive, develop, or work successfully. The word comes from the French for “life”, and it is used for embryos, seeds, businesses, and plans alike. In the article, an egg's viability means whether it is healthy enough to be fertilised and grow into a baby, which is exactly what the two startups are trying to improve.",
+      "examples": [
+        "Doctors tested the seeds to check their viability before planting season.",
+        "Investors doubted the viability of a restaurant with no customers."
+      ]
+    },
+    {
+      "word": "plummeted",
+      "partOfSpeech": "verb",
+      "pronunciation": "PLUM-it-id",
+      "articleQuote": "By puberty, the stock has plummeted to 300,000-400,000.",
+      "meaning": "To plummet is to fall suddenly and steeply, the way a stone drops. It is stronger than “decline” and suggests a big, fast drop, in numbers, prices, or temperatures. Here the article describes a woman's supply of immature eggs: millions before birth, but only a few hundred thousand by puberty, a dramatic fall long before middle age.",
+      "examples": [
+        "The temperature plummeted overnight, and the puddles froze solid.",
+        "After the scandal, the company's share price plummeted."
+      ]
+    },
+    {
+      "word": "unprecedented",
+      "partOfSpeech": "adjective",
+      "pronunciation": "un-PRESS-ih-den-tid",
+      "articleQuote": "an unprecedented potential for treatment-efficiency gains",
+      "meaning": "Unprecedented describes something that has never happened or existed before, so there is no earlier example to compare it with. It is common in news about records, crises, and breakthroughs. In the article, a fertility specialist says that fixing egg errors at their source could bring benefits no earlier IVF technique has offered.",
+      "examples": [
+        "The storm caused unprecedented flooding in a town that had never flooded before.",
+        "The band's sudden fame was unprecedented for a group from such a small school."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Aneuploidy: when an egg has the wrong number of chromosomes",
+      "articleQuote": "an “aneuploid” egg can be formed: one that has either too few or too many chromosomes",
+      "meaning": "Biology. Almost every cell in your body carries **46 chromosomes**, long packages of DNA that come in 23 matching pairs. Eggs and sperm are special: each should end up with just **23**, one from every pair, so that when they join, the baby gets 46 again.\n\nTo make an egg, the cell must line up each pair and then split it cleanly, throwing one half of each pair away. A molecule called **cohesin** acts like glue holding each pair together until the right moment, and a protein called **Shugoshin 1** protects that glue. If the glue weakens, the pairs split wrongly and the egg ends up with too many or too few chromosomes. That is **aneuploidy**.\n\nWhy does it matter? An aneuploid egg often cannot become a healthy baby, so it leads to failed pregnancies and miscarriages. A woman's eggs are formed before she is born and wait for decades, so the cohesin glue wears down with age: over 20% of eggs are aneuploid for women in their 20s, and about 50% after 40. That is why the startups in the article are trying to replace or protect the glue.\n\nThe pattern to remember: many age-related problems are not mysterious, just a part that slowly wears out, and once scientists find the part, they can try to fix it."
+    },
+    {
+      "name": "Preclinical results and peer review: how much to trust early science",
+      "articleQuote": "will need to prove their short- and long-term safety and efficacy",
+      "meaning": "Science and medicine. New treatments go through stages. First comes **preclinical** work: experiments in lab dishes and animals such as mice. Only if that looks good do **clinical trials** begin, testing the treatment on people in carefully controlled steps, first for safety and then for whether it works (**efficacy**). Most treatments that look promising in mice fail somewhere along the way.\n\nThe article shows this ladder. Ovo Labs treated mouse eggs and more than 100 donated human eggs, but not a single woman has yet been treated. The researchers also note that their results are **“not yet peer reviewed”**. Peer review means independent experts check a study's methods and conclusions before a journal publishes it, which catches mistakes and exaggeration. Presenting findings at a conference comes before that check.\n\nSo how should you read a headline like this? “Encouraging” is not “proven”. Look for how far along the evidence is (mice, human cells, or patients?), how big the study was, and whether outsiders have checked it. The cautious expert in the article is doing exactly that, which is why her “encouraging, but prove safety” comment is a good model of scientific thinking."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why does the article say older women are more likely to have trouble conceiving?",
+      "options": [
+        "Their eggs more often carry the wrong number of chromosomes",
+        "They produce more eggs than they can use",
+        "IVF clinics refuse to treat them",
+        "Their eggs grow too many cohesin molecules"
+      ],
+      "answerIndex": 0,
+      "explanation": "Genetic errors in eggs, called aneuploidy, increase with age, leading to fewer pregnancies and more miscarriages."
+    },
+    {
+      "question": "What is the job of cohesin in a developing egg?",
+      "options": [
+        "It holds chromosome pairs together until they split properly",
+        "It injects Shugoshin 1 into the egg",
+        "It makes the egg larger",
+        "It destroys damaged chromosomes"
+      ],
+      "answerIndex": 0,
+      "explanation": "Cohesin holds chromosome pairs together; its levels fall with age, which disrupts the process and can produce aneuploid eggs."
+    },
+    {
+      "question": "How do the approaches of Ovo Labs and U-Ploid differ?",
+      "options": [
+        "Ovo Labs supplies Shugoshin 1, while U-Ploid slows the enzyme that cleaves it",
+        "Ovo Labs treats sperm, while U-Ploid treats eggs",
+        "Ovo Labs works on mice only, while U-Ploid works on cows",
+        "They use the same molecule from different suppliers"
+      ],
+      "answerIndex": 0,
+      "explanation": "Ovo Labs' EmbryoProtect 1 is based on Shugoshin 1; U-Ploid's Lyvanta slows separase, the enzyme that cleaves Shugoshin 1."
+    },
+    {
+      "question": "Why does the article stress that the results are “not yet peer reviewed”?",
+      "options": [
+        "Independent experts have not yet checked the studies",
+        "The studies were done on people without permission",
+        "The data were collected by journalists",
+        "The results have already been proven wrong"
+      ],
+      "answerIndex": 0,
+      "explanation": "Findings presented at a conference have not yet been vetted by independent experts, and the treatments still need human safety and efficacy testing."
+    },
+    {
+      "question": "What does the article say about demand for these treatments if they pass clinical testing?",
+      "options": [
+        "It will be high, as many patients are over 38 or 40",
+        "It will be low because IVF is cheap",
+        "It will be limited to women in their 20s",
+        "It cannot be estimated at all"
+      ],
+      "answerIndex": 0,
+      "explanation": "More than 40% of US women seeking fertility treatment in 2018 were over 38, and one in six UK IVF patients in 2023 was 40 or older."
+    }
+  ]
+}
