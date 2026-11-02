@@ -1,0 +1,543 @@
+[
+  {
+    "k": "populist",
+    "t": "populist",
+    "kind": "vocab",
+    "pron": "POP-yuh-list",
+    "forms": [
+      "populist"
+    ],
+    "text": "Populist describes politics that sides with “ordinary people” against a powerful elite, often by stirring up anger. Here, attacking billionaires channels voters’ resentment of the very rich.",
+    "audio": true
+  },
+  {
+    "k": "vanguard",
+    "t": "vanguard",
+    "kind": "vocab",
+    "pron": "VAN-gard",
+    "forms": [
+      "vanguard"
+    ],
+    "text": "The vanguard is the front of a moving army, and so the leading group of any movement. Supporters of Prop 40 hope California leads the nation; opponents fear exactly that.",
+    "audio": true
+  },
+  {
+    "k": "nullify",
+    "t": "nullify",
+    "kind": "vocab",
+    "pron": "NUL-ih-fy",
+    "forms": [
+      "nullify"
+    ],
+    "text": "To nullify is to cancel the legal force of something, as if it never existed. Billionaires are funding ballot measures meant to wipe out Prop 40 if it passes.",
+    "audio": true
+  },
+  {
+    "k": "villain",
+    "t": "villain",
+    "kind": "word",
+    "forms": [
+      "villain"
+    ],
+    "text": "A villain is the bad guy in a story. The writer means that every party finds it useful to point at an enemy to rally supporters.",
+    "audio": true
+  },
+  {
+    "k": "socialists",
+    "t": "socialists",
+    "kind": "word",
+    "forms": [
+      "socialists"
+    ],
+    "text": "Socialists want the government to own more of the economy or to redistribute wealth more heavily. Republicans use the word as an insult for Democrats on the left.",
+    "audio": true
+  },
+  {
+    "k": "billionaires",
+    "t": "billionaires",
+    "kind": "word",
+    "forms": [
+      "billionaires",
+      "billionaire"
+    ],
+    "text": "A billionaire owns assets worth at least a thousand million dollars. About 260 of them live in California and would pay Prop 40.",
+    "audio": true
+  },
+  {
+    "k": "flank",
+    "t": "left flank",
+    "kind": "word",
+    "forms": [
+      "flank"
+    ],
+    "text": "A flank is the side of an army or group. The party’s left flank means its most left-wing members.",
+    "audio": true
+  },
+  {
+    "k": "late-stage-capitalism",
+    "t": "late-stage capitalism",
+    "kind": "word",
+    "forms": [
+      "late-stage capitalism"
+    ],
+    "text": "A phrase critics use to say capitalism has grown extreme, with great inequality and corporate power. The “hopefully” hints they expect it to end.",
+    "audio": true
+  },
+  {
+    "k": "angst",
+    "t": "angst",
+    "kind": "word",
+    "forms": [
+      "angst"
+    ],
+    "text": "Angst is a deep, anxious unease about the state of things.",
+    "audio": true
+  },
+  {
+    "k": "proposition",
+    "t": "Proposition",
+    "kind": "word",
+    "forms": [
+      "Proposition",
+      "Prop"
+    ],
+    "text": "In California, a proposition is a measure placed on the ballot for voters to decide directly, shortened to “Prop”.",
+    "audio": true
+  },
+  {
+    "k": "wealth-tax",
+    "t": "wealth tax",
+    "kind": "word",
+    "forms": [
+      "wealth tax"
+    ],
+    "text": "A wealth tax takes a percentage of everything a person owns, not of what they earn in a year. Prop 40 would take 5% of each billionaire’s fortune, once.",
+    "audio": true
+  },
+  {
+    "k": "ballot-measure",
+    "t": "ballot measure",
+    "kind": "word",
+    "forms": [
+      "ballot measure",
+      "ballot-measure"
+    ],
+    "text": "A ballot measure is a law or tax that voters approve or reject directly on election day rather than through legislators.",
+    "audio": true
+  },
+  {
+    "k": "coherent",
+    "t": "coherent",
+    "kind": "word",
+    "forms": [
+      "coherent"
+    ],
+    "text": "Coherent means logical and well put together, so the parts fit. The writer says anger at billionaires is easier than designing a policy that makes sense.",
+    "audio": true
+  },
+  {
+    "k": "sympathy",
+    "t": "sympathy",
+    "kind": "word",
+    "forms": [
+      "sympathy"
+    ],
+    "text": "Sympathy is feeling sorry for someone. Few Californians feel sorry for tech billionaires.",
+    "audio": true
+  },
+  {
+    "k": "barons",
+    "t": "tech barons",
+    "kind": "word",
+    "forms": [
+      "barons"
+    ],
+    "text": "Barons were medieval lords with great land and power. Calling rich tech founders “barons” hints at how much power they hold.",
+    "audio": true
+  },
+  {
+    "k": "musing",
+    "t": "musing",
+    "kind": "word",
+    "forms": [
+      "musing"
+    ],
+    "text": "Musing means thinking aloud in a thoughtful, wandering way, here about whether humanity will or should survive AI.",
+    "audio": true
+  },
+  {
+    "k": "levy",
+    "t": "levy",
+    "kind": "word",
+    "forms": [
+      "levy"
+    ],
+    "text": "As a noun, a levy is a tax or charge imposed by authority. Fear that it would push the rich away is why it is controversial.",
+    "audio": true
+  },
+  {
+    "k": "tax-base",
+    "t": "tax base",
+    "kind": "word",
+    "forms": [
+      "tax base"
+    ],
+    "text": "A state’s tax base is the people, firms and wealth it can collect taxes from. If rich people leave, the base shrinks.",
+    "audio": true
+  },
+  {
+    "k": "controversial",
+    "t": "controversial",
+    "kind": "word",
+    "forms": [
+      "controversial"
+    ],
+    "text": "Controversial means causing strong public disagreement.",
+    "audio": true
+  },
+  {
+    "k": "populist-anger",
+    "t": "populist anger",
+    "kind": "word",
+    "forms": [
+      "populist anger"
+    ],
+    "text": "Anger at elites that politicians tap into to win votes.",
+    "audio": true
+  },
+  {
+    "k": "cautionary-tale",
+    "t": "cautionary tale",
+    "kind": "word",
+    "forms": [
+      "cautionary tale"
+    ],
+    "text": "A story whose purpose is to warn others of what can go wrong. California’s fight may warn Democrats elsewhere.",
+    "audio": true
+  },
+  {
+    "k": "term-limited",
+    "t": "term-limited",
+    "kind": "word",
+    "forms": [
+      "term-limited"
+    ],
+    "text": "A term-limited official may not run again after serving the maximum number of terms, so Mr Newsom must leave office.",
+    "audio": true
+  },
+  {
+    "k": "headache",
+    "t": "headache",
+    "kind": "word",
+    "forms": [
+      "headache"
+    ],
+    "text": "Used figuratively, a headache is a persistent annoying problem.",
+    "audio": true
+  },
+  {
+    "k": "supermajority",
+    "t": "supermajority",
+    "kind": "word",
+    "forms": [
+      "supermajority"
+    ],
+    "text": "A supermajority is far more than half of seats in a legislature, enough to pass laws without the other party’s help.",
+    "audio": true
+  },
+  {
+    "k": "scepticism",
+    "t": "scepticism",
+    "kind": "word",
+    "forms": [
+      "scepticism"
+    ],
+    "text": "British spelling of skepticism: doubt about whether something is true or wise.",
+    "audio": true
+  },
+  {
+    "k": "sop",
+    "t": "not wanting to look a sop",
+    "kind": "word",
+    "forms": [
+      "a sop"
+    ],
+    "text": "A sop is something given to appease. Here the idea is that Mr Newsom does not want to seem like a pushover who does favours for the rich.",
+    "audio": true
+  },
+  {
+    "k": "tinkering",
+    "t": "tinkering",
+    "kind": "word",
+    "forms": [
+      "tinkering"
+    ],
+    "text": "Tinkering means making small adjustments, often in a way that falls short of real change.",
+    "audio": true
+  },
+  {
+    "k": "federal-tax-code",
+    "t": "federal tax code",
+    "kind": "word",
+    "forms": [
+      "federal tax code"
+    ],
+    "text": "The nationwide rulebook for taxes written by Congress, as opposed to taxes set by a single state.",
+    "audio": true
+  },
+  {
+    "k": "conspicuous",
+    "t": "conspicuous",
+    "kind": "word",
+    "forms": [
+      "conspicuous"
+    ],
+    "text": "Conspicuous means easy to see and meant to be noticed, like visits made to be seen by early-primary voters.",
+    "audio": true
+  },
+  {
+    "k": "primaries",
+    "t": "primaries",
+    "kind": "word",
+    "forms": [
+      "primaries"
+    ],
+    "text": "Primaries are elections in which a party’s voters choose their candidate for the main election. States with early primaries matter to presidential hopefuls.",
+    "audio": true
+  },
+  {
+    "k": "in-the-pocket",
+    "t": "in the pocket of",
+    "kind": "word",
+    "forms": [
+      "in the pocket of"
+    ],
+    "text": "An idiom meaning secretly controlled or heavily influenced by someone, usually because of money.",
+    "audio": true
+  },
+  {
+    "k": "donors",
+    "t": "donors",
+    "kind": "word",
+    "forms": [
+      "donors"
+    ],
+    "text": "Donors give money to a campaign or cause, often large sums.",
+    "audio": true
+  },
+  {
+    "k": "infighting",
+    "t": "infighting",
+    "kind": "word",
+    "forms": [
+      "infighting"
+    ],
+    "text": "Infighting is quarrelling inside a group that should be united.",
+    "audio": true
+  },
+  {
+    "k": "degrades",
+    "t": "degrades",
+    "kind": "word",
+    "forms": [
+      "degrades"
+    ],
+    "text": "To degrade is to lower in quality or standing.",
+    "audio": true
+  },
+  {
+    "k": "bickering",
+    "t": "bickering",
+    "kind": "word",
+    "forms": [
+      "Bickering"
+    ],
+    "text": "Bickering is petty, repeated arguing.",
+    "audio": true
+  },
+  {
+    "k": "cooked-up",
+    "t": "cooked up",
+    "kind": "word",
+    "forms": [
+      "cooked up"
+    ],
+    "text": "To cook up a plan is to invent it, often cleverly or slyly.",
+    "audio": true
+  },
+  {
+    "k": "bullying",
+    "t": "bullying",
+    "kind": "word",
+    "forms": [
+      "bullying"
+    ],
+    "text": "Bullying is using power or threats to push others around.",
+    "audio": true
+  },
+  {
+    "k": "smear-campaign",
+    "t": "smear campaign",
+    "kind": "word",
+    "forms": [
+      "smear campaign"
+    ],
+    "text": "A deliberate effort to damage someone’s reputation with unfair accusations.",
+    "audio": true
+  },
+  {
+    "k": "carry-water",
+    "t": "carry water for",
+    "kind": "word",
+    "forms": [
+      "carry water"
+    ],
+    "text": "An idiom meaning to do someone else’s work or defend their interests, usually without being rewarded.",
+    "audio": true
+  },
+  {
+    "k": "simple-majority",
+    "t": "simple majority",
+    "kind": "word",
+    "forms": [
+      "simple majority"
+    ],
+    "text": "A simple majority is more than half the votes cast, so 50% plus one.",
+    "audio": true
+  },
+  {
+    "k": "toxicity",
+    "t": "toxicity",
+    "kind": "word",
+    "forms": [
+      "toxicity"
+    ],
+    "text": "Used figuratively, toxicity means a poisonous, hostile atmosphere.",
+    "audio": true
+  },
+  {
+    "k": "fatigue",
+    "t": "fatigue",
+    "kind": "word",
+    "forms": [
+      "fatigue"
+    ],
+    "text": "Here, fatigue means weariness. Voters tired of constant ballot measures may disengage.",
+    "audio": true
+  },
+  {
+    "k": "tediously",
+    "t": "tediously",
+    "kind": "word",
+    "forms": [
+      "tediously"
+    ],
+    "text": "Tediously means in a boring, tiring way.",
+    "audio": true
+  },
+  {
+    "k": "proposition-13",
+    "t": "Proposition 13",
+    "kind": "word",
+    "forms": [
+      "Proposition 13"
+    ],
+    "text": "A 1978 California measure capping property taxes. It is remembered for sparking a nationwide tax revolt and for distorting the housing market.",
+    "audio": true
+  },
+  {
+    "k": "tax-revolt",
+    "t": "tax revolt",
+    "kind": "word",
+    "forms": [
+      "tax revolt"
+    ],
+    "text": "A popular movement of voters demanding lower taxes.",
+    "audio": true
+  },
+  {
+    "k": "distorted",
+    "t": "distorted",
+    "kind": "word",
+    "forms": [
+      "distorted"
+    ],
+    "text": "Distorted means twisted away from its normal shape. Prop 13 pushed housing prices and sales into odd patterns.",
+    "audio": true
+  },
+  {
+    "k": "bernie-sanders",
+    "t": "Bernie Sanders",
+    "kind": "name",
+    "forms": [
+      "Mr Sanders",
+      "Bernie Sanders"
+    ],
+    "text": "Senator from Vermont and leading voice of the Democratic left, a champion of taxing the rich.",
+    "audio": true
+  },
+  {
+    "k": "ro-khanna",
+    "t": "Ro Khanna",
+    "kind": "name",
+    "forms": [
+      "Mr Khanna",
+      "Ro Khanna"
+    ],
+    "text": "Congressman for part of Silicon Valley, a progressive Democrat who backs Prop 40.",
+    "audio": true
+  },
+  {
+    "k": "sergey-brin",
+    "t": "Sergey Brin",
+    "kind": "name",
+    "forms": [
+      "Sergey Brin",
+      "Mr Brin"
+    ],
+    "text": "Co-founder of Google and one of the world’s richest people; he gave $102m to oppose the tax.",
+    "audio": true
+  },
+  {
+    "k": "gavin-newsom",
+    "t": "Gavin Newsom",
+    "kind": "name",
+    "forms": [
+      "Gavin Newsom",
+      "Mr Newsom"
+    ],
+    "text": "California’s Democratic governor, who opposes Prop 40 and is seen as a possible presidential candidate.",
+    "audio": true
+  },
+  {
+    "k": "dave-regan",
+    "t": "Dave Regan",
+    "kind": "name",
+    "forms": [
+      "Dave Regan",
+      "Mr Regan"
+    ],
+    "text": "Head of the health-care workers’ union SEIU-UHW and the architect of Prop 40.",
+    "audio": true
+  },
+  {
+    "k": "xavier-becerra",
+    "t": "Xavier Becerra",
+    "kind": "name",
+    "forms": [
+      "Xavier Becerra"
+    ],
+    "text": "A Democrat expected to become California’s next governor, who is considering an income tax on the wealthy.",
+    "audio": true
+  },
+  {
+    "k": "one-big-beautiful-bill",
+    "t": "One Big Beautiful Bill Act",
+    "kind": "word",
+    "forms": [
+      "One Big Beautiful Bill Act"
+    ],
+    "text": "The 2025 federal law pushed by Donald Trump that cut taxes and, critics say, cut health-care funding.",
+    "audio": true
+  }
+]

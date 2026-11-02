@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-02",
+  "title": "California’s billionaire tax is dividing Democrats",
+  "articleUrl": "https://www.economist.com/united-states/2026/10/31/californias-billionaire-tax-is-dividing-democrats",
+  "articlePageUrl": "/articles/2026-11-02.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "populist",
+      "partOfSpeech": "adjective",
+      "pronunciation": "POP-yuh-list",
+      "articleQuote": "Democratic politicians have tapped into voters’ populist anger.",
+      "meaning": "Populist describes politics that claims to side with “ordinary people” against a small, powerful elite, often by stirring up anger at that elite. Populism can come from the left or the right; what matters is the us-versus-them story. In the article, attacking billionaires is a populist move because it channels voters’ resentment of the very rich.",
+      "examples": [
+        "The candidate gave a populist speech blaming big banks for everyone’s troubles.",
+        "Cheap promises can be popular, but populist policies do not always work in practice."
+      ]
+    },
+    {
+      "word": "vanguard",
+      "partOfSpeech": "noun",
+      "pronunciation": "VAN-gard",
+      "articleQuote": "California is again at the vanguard.",
+      "meaning": "The vanguard is the front of an army moving forward, and by extension the leading group in any movement, the ones who go first and show the way for others. Being “at the vanguard” can be a compliment or a warning, depending on whether you like where they are heading. Here, supporters hope California’s tax will lead the nation, and opponents fear exactly that.",
+      "examples": [
+        "Scientists at the vanguard of the field announced a new discovery.",
+        "Our school was at the vanguard of the recycling movement in the city."
+      ]
+    },
+    {
+      "word": "nullify",
+      "partOfSpeech": "verb",
+      "pronunciation": "NUL-ih-fy",
+      "articleQuote": "two other statewide initiatives that would nullify Prop 40",
+      "meaning": "To nullify something is to cancel its legal force, so that it counts as if it were never there. It comes from the Latin for “nothing”. Courts can nullify a contract and voters can nullify a law. In the article, billionaires are backing ballot measures designed to wipe out Prop 40 if it passes.",
+      "examples": [
+        "The referee’s mistake seemed to nullify the team’s winning goal.",
+        "A single missing signature can nullify an otherwise valid contract."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Wealth taxes",
+      "articleQuote": "a one-time, 5% wealth tax on roughly 260 billionaires",
+      "meaning": "Economics. Most taxes hit **flows**: an **income tax** takes a share of what you earn this year, a **sales tax** a share of what you spend. A **wealth tax** is different: it hits the **stock**, the total value of what you already own (shares, companies, property), whether or not you earned anything this year. Prop 40 would take 5% of each billionaire’s net worth, once.\n\nThe case for: the very richest hold most of their fortunes in shares that rise in value, and unsold gains are not taxed as income, so some billionaires pay a low rate compared with their wealth. Supporters say a wealth tax reaches money income taxes miss; Prop 40 would pay for public health care.\n\nThe case against: wealth is hard to value (what is a private company worth?), and the rich can move. A state that taxes them may lose them, and with them their future income-tax payments and their investment in local firms. That is why Governor Newsom says it should be done federally, where leaving is much harder than crossing a state line. Many countries have tried wealth taxes and later dropped them for these reasons."
+    },
+    {
+      "name": "Ballot initiatives",
+      "articleQuote": "Prop 40 needs just a simple majority to pass.",
+      "meaning": "Civics. In most of the US, laws are made by elected legislators. But California and about half the states also allow **direct democracy**: citizens who collect enough signatures can put a **ballot initiative** (a “proposition”, or “Prop”) straight to voters, who decide yes or no on election day. Prop 40 was one of these, which is why the governor and legislature could not simply block it.\n\nThe rules matter. Some measures need only a **simple majority**, more than half of votes cast, while others need a supermajority. Because ballots hold many propositions, campaigns can be expensive and confusing, and rival measures can be pitted against each other, as billionaires have done by funding initiatives to cancel Prop 40.\n\nInitiatives can reshape a state for decades. In 1978 California’s **Proposition 13** capped property taxes. It was popular, but it also changed how local governments raise money and inspired tax revolts elsewhere. That is the history Mr Sanders and Mr Brin each see repeating."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What would Proposition 40 do?",
+      "options": [
+        "Impose a one-time 5% wealth tax on roughly 260 billionaires to pay for public health care",
+        "Cap property taxes across California",
+        "Ban billionaires from owning companies in the state",
+        "Raise the state sales tax by 5%"
+      ],
+      "answerIndex": 0,
+      "explanation": "Prop 40 is a one-time, 5% wealth tax on roughly 260 billionaires, to fund public health care."
+    },
+    {
+      "question": "Why does Governor Gavin Newsom oppose Prop 40?",
+      "options": [
+        "He thinks wealth should never be taxed",
+        "He calls it badly written and thinks a state-level tax is the wrong approach",
+        "He wants a larger tax on the middle class",
+        "He is a billionaire himself"
+      ],
+      "answerIndex": 1,
+      "explanation": "Mr Newsom called it “a badly written initiative” and said a state-level tax is not a good idea, suggesting federal tax changes instead."
+    },
+    {
+      "question": "What does the Public Policy Institute of California poll suggest?",
+      "options": [
+        "Support has risen to 52%",
+        "Support has fallen to 46%, from 52% in September",
+        "Almost nobody has heard of Prop 40",
+        "Opposition has vanished"
+      ],
+      "answerIndex": 1,
+      "explanation": "The poll found 46% support, down from 52% in September, and the measure needs a simple majority."
+    },
+    {
+      "question": "What does the article mean by Democrats’ “bickering” spreading to labour groups?",
+      "options": [
+        "Several unions oppose the tax and have accused its architect, Dave Regan, of bullying",
+        "All unions have united behind Mr Newsom",
+        "Unions have refused to vote",
+        "Unions are demanding a billionaire ban"
+      ],
+      "answerIndex": 0,
+      "explanation": "Prop 40 was cooked up by Mr Regan of SEIU-UHW, but several unions oppose it and accuse him of bullying."
+    },
+    {
+      "question": "What does “nullify” mean in “initiatives that would nullify Prop 40”?",
+      "options": [
+        "Strengthen",
+        "Cancel the legal force of",
+        "Rename",
+        "Delay"
+      ],
+      "answerIndex": 1,
+      "explanation": "To nullify is to make something legally void, as if it did not exist."
+    }
+  ]
+}
