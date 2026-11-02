@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-02",
+  "title": "Intensive parenting is no longer the preserve of the rich",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/11/01/intensive-parenting-is-no-longer-the-preserve-of-the-rich",
+  "articlePageUrl": "/articles/junior/2026-11-02.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "intensive",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-TEN-siv",
+      "articleQuote": "intensive parenting is on the rise across socioeconomic divides",
+      "meaning": "Something intensive takes a very large amount of effort, time, or attention packed into a short space. It is the opposite of casual. In the article, intensive parenting means parents who put huge amounts of time and money into their children's lessons and activities.",
+      "examples": [
+        "Before the spelling bee, Maya did an intensive week of practice, studying two hours every night.",
+        "The coach ran an intensive training camp where we practiced from morning until dinner."
+      ]
+    },
+    {
+      "word": "bankroll",
+      "partOfSpeech": "verb",
+      "pronunciation": "BANK-rohl",
+      "articleQuote": "parents across income levels are bankrolling their children’s futures earlier and more aggressively",
+      "meaning": "To bankroll something is to pay for it, usually all of the cost. A bankroll is a roll of money, so bankrolling means supplying the cash. In the article, parents pay for lessons, camps, and tutors to help their children get ahead.",
+      "examples": [
+        "My uncle agreed to bankroll our school's robotics team by paying for all the parts.",
+        "Her parents bankroll her violin lessons, so she never has to pay a cent."
+      ]
+    },
+    {
+      "word": "stagnate",
+      "partOfSpeech": "verb",
+      "pronunciation": "STAG-nayt",
+      "articleQuote": "has stagnated over the past decade in France and Spain",
+      "meaning": "To stagnate is to stop growing or improving and just stay the same. The word comes from stagnant water, a pond that sits still and never flows. In the article, the chance that children do better than their parents has stopped getting bigger in some countries.",
+      "examples": [
+        "My score in the video game stagnated for weeks until I learned a new trick.",
+        "The town's population stagnated because no new families moved in."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Social mobility",
+      "articleQuote": "these investments are not necessarily translating into social mobility",
+      "meaning": "Can a kid from a family with little money grow up to do well? **Social mobility** is how easily people can move up (or down) the ladder of money and success compared with the family they grew up in. When mobility is high, where you start does not decide where you end up.\n\nImagine a race where some runners start at the starting line and others start 20 steps ahead. If the runners behind can catch up, mobility is high. If the ones in front almost always win, mobility is low.\n\nThe article says families everywhere are spending more on tutors, lessons, and coaches, hoping their children will climb. But the rich are spending more too, so the runners in front keep their lead. The race feels harder, yet the gap between starting places stays.\n\nSo the takeaway: when you hear about \"mobility,\" ask whether kids from poorer families really can catch up to kids who started ahead."
+    },
+    {
+      "name": "Income quintiles",
+      "articleQuote": "57% in the lowest income quintile",
+      "meaning": "How do you talk about \"the poorest families\" or \"the richest\" without using vague words? Researchers line up everyone from the lowest income to the highest, then cut the line into equal groups. Cutting it into five equal groups gives **quintiles**. Cutting it into four gives *quartiles*. The \"lowest quintile\" is the poorest fifth of families, and the \"top fifth\" is the richest fifth.\n\nPicture your school lined up from the shortest student to the tallest. If there are 100 kids, the first 20 are the \"shortest quintile\" and the last 20 are the \"tallest quintile.\" Every group has the same number of kids, so you can fairly compare them.\n\nThat is how the article can say that 57% of South Koreans in the lowest quintile took paid lessons. It means more than half of the poorest fifth of families paid for them.\n\nSo the takeaway: a quintile is one fifth of a group, which lets us compare the poorest and richest fairly."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the main trend the article describes?",
+      "options": [
+        "Only rich parents are spending more on their children's activities and lessons",
+        "Parents at all income levels are spending more on their children's futures",
+        "Parents are spending less on sports and tutoring",
+        "Schools are banning private tutoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says intensive parenting is rising across income levels, not only among the rich."
+    },
+    {
+      "question": "About how many hours a week do American parents spend on their children's sports, according to the article?",
+      "options": [
+        "About 2 hours",
+        "About 5 hours",
+        "More than 15 hours",
+        "More than 40 hours"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says parents give more than 15 hours a week, about as much as a part-time job."
+    },
+    {
+      "question": "In Britain, what has happened to the gap in access to tutoring between poorer and richer state-school families?",
+      "options": [
+        "It has almost closed, partly because of state-funded tutoring",
+        "It has grown much wider",
+        "It has stayed exactly the same",
+        "Only rich families can get tutors"
+      ],
+      "answerIndex": 0,
+      "explanation": "37% of the lowest quartile have tutoring, nearly level with 39% of the richest, helped by state-funded schemes."
+    },
+    {
+      "question": "Why does the article say the extra spending is not leading to more social mobility?",
+      "options": [
+        "Tutors are not good teachers",
+        "Universities have stopped admitting students",
+        "Although poorer families spend more, richer families have not stopped spending",
+        "Children do not want to take lessons"
+      ],
+      "answerIndex": 2,
+      "explanation": "The rich are not letting up, so they keep their edge even as others spend more."
+    },
+    {
+      "question": "If a group is the \"lowest income quintile,\" which families does that mean?",
+      "options": [
+        "The poorest fifth of families",
+        "The poorest half of families",
+        "The five richest families",
+        "Families with five children"
+      ],
+      "answerIndex": 0,
+      "explanation": "Quintiles split everyone into five equal groups, so the lowest quintile is the poorest fifth."
+    }
+  ]
+}

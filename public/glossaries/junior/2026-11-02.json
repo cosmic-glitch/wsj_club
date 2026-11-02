@@ -1,0 +1,517 @@
+[
+  {
+    "k": "intensive",
+    "t": "intensive",
+    "kind": "vocab",
+    "pron": "in-TEN-siv",
+    "forms": [
+      "intensive"
+    ],
+    "text": "Intensive means packed with a huge amount of effort and attention. Here it describes parents who put lots of time and money into their children's lessons and activities.",
+    "audio": true
+  },
+  {
+    "k": "bankroll",
+    "t": "bankroll",
+    "kind": "vocab",
+    "pron": "BANK-rohl",
+    "forms": [
+      "bankrolling"
+    ],
+    "text": "To bankroll something is to pay for it, usually all of it. Here parents are paying for lessons, camps, and tutors so their children can get ahead.",
+    "audio": true
+  },
+  {
+    "k": "stagnate",
+    "t": "stagnate",
+    "kind": "vocab",
+    "pron": "STAG-nayt",
+    "forms": [
+      "stagnated"
+    ],
+    "text": "To stagnate is to stop growing or improving and just stay the same, like a pond with no moving water. Here the chance that kids do better than their parents has stopped rising.",
+    "audio": true
+  },
+  {
+    "k": "preserve",
+    "t": "preserve",
+    "kind": "word",
+    "forms": [
+      "preserve"
+    ],
+    "text": "A preserve is something that belongs to only one group, like a private club. The title says intensive parenting is no longer only for the rich.",
+    "audio": true
+  },
+  {
+    "k": "wealthy",
+    "t": "wealthy",
+    "kind": "word",
+    "forms": [
+      "wealthy"
+    ],
+    "text": "Wealthy means having a lot of money. It is another word for rich.",
+    "audio": true
+  },
+  {
+    "k": "offspring",
+    "t": "offspring",
+    "kind": "word",
+    "forms": [
+      "offspring"
+    ],
+    "text": "Offspring means a person's children. The word is often used for the young of animals too.",
+    "audio": true
+  },
+  {
+    "k": "edification",
+    "t": "edification",
+    "kind": "word",
+    "forms": [
+      "edification"
+    ],
+    "text": "Edification means teaching someone so that their mind or character improves. Here it means paying for lessons that help kids learn and grow.",
+    "audio": true
+  },
+  {
+    "k": "competition",
+    "t": "competition",
+    "kind": "word",
+    "forms": [
+      "competition"
+    ],
+    "text": "A competition is a contest where people try to do better than each other. Here families compete for limited spots at schools and good jobs.",
+    "audio": true
+  },
+  {
+    "k": "bankrolling-extra",
+    "t": "splashing out",
+    "kind": "phrase",
+    "forms": [
+      "splashing out"
+    ],
+    "text": "To splash out means to spend a lot of money, often more than you normally would. Here parents in Asia are spending freely on their children's schooling.",
+    "audio": true
+  },
+  {
+    "k": "socioeconomic",
+    "t": "socioeconomic",
+    "kind": "word",
+    "forms": [
+      "socioeconomic"
+    ],
+    "text": "Socioeconomic describes a person's place in society based on money, education, and job. Socioeconomic divides are the gaps between richer and poorer groups.",
+    "audio": true
+  },
+  {
+    "k": "divides",
+    "t": "divides",
+    "kind": "word",
+    "forms": [
+      "divides"
+    ],
+    "text": "A divide is a gap that separates groups. Here the divides are the differences between rich and poor families.",
+    "audio": true
+  },
+  {
+    "k": "tykes",
+    "t": "tykes",
+    "kind": "word",
+    "forms": [
+      "tykes"
+    ],
+    "text": "Tykes is a playful word for small children.",
+    "audio": true
+  },
+  {
+    "k": "toddlers",
+    "t": "toddlers",
+    "kind": "word",
+    "forms": [
+      "toddlers"
+    ],
+    "text": "Toddlers are very young children, around one to three years old, who are just learning to walk and talk.",
+    "audio": true
+  },
+  {
+    "k": "chauffeuring",
+    "t": "chauffeuring",
+    "kind": "word",
+    "forms": [
+      "chauffeuring"
+    ],
+    "text": "A chauffeur is a driver. To chauffeur children means to drive them from place to place, like parents taking kids to practices.",
+    "audio": true
+  },
+  {
+    "k": "conferring",
+    "t": "conferring",
+    "kind": "word",
+    "forms": [
+      "conferring"
+    ],
+    "text": "To confer is to talk with someone to share ideas or make a decision. Here parents talk with coaches.",
+    "audio": true
+  },
+  {
+    "k": "cumulative",
+    "t": "cumulative",
+    "kind": "word",
+    "forms": [
+      "cumulative"
+    ],
+    "text": "Cumulative means added up over time. A cumulative rate is the total change over several years, not just one.",
+    "audio": true
+  },
+  {
+    "k": "inflation",
+    "t": "inflation",
+    "kind": "word",
+    "forms": [
+      "inflation"
+    ],
+    "text": "Inflation is when prices across a whole economy rise over time, so the same money buys less. Here sports costs grew twice as fast as normal price rises.",
+    "audio": true
+  },
+  {
+    "k": "quintile",
+    "t": "quintile",
+    "kind": "word",
+    "forms": [
+      "quintile"
+    ],
+    "text": "A quintile is one fifth of a group. The lowest income quintile means the poorest fifth of families.",
+    "audio": true
+  },
+  {
+    "k": "quartile",
+    "t": "quartile",
+    "kind": "word",
+    "forms": [
+      "quartile"
+    ],
+    "text": "A quartile is one quarter of a group. The lowest quartile means the poorest quarter of families.",
+    "audio": true
+  },
+  {
+    "k": "tutoring",
+    "t": "tutoring",
+    "kind": "word",
+    "forms": [
+      "tutoring",
+      "tuition"
+    ],
+    "text": "Tutoring is extra one-on-one or small-group teaching, often paid for, outside regular school. In some countries it is called tuition.",
+    "audio": true
+  },
+  {
+    "k": "obsession",
+    "t": "obsession",
+    "kind": "word",
+    "forms": [
+      "obsession"
+    ],
+    "text": "An obsession is something you think about or focus on all the time. Here tutoring has been the thing many parents in Asia care most about.",
+    "audio": true
+  },
+  {
+    "k": "oecd",
+    "t": "OECD",
+    "kind": "name",
+    "forms": [
+      "OECD"
+    ],
+    "text": "The OECD is a club of mostly rich countries that collects facts and figures about their economies and schools.",
+    "audio": true
+  },
+  {
+    "k": "disposable-income",
+    "t": "disposable-income",
+    "kind": "phrase",
+    "forms": [
+      "disposable income"
+    ],
+    "text": "Disposable income is the money a family has left to spend or save after taxes are paid.",
+    "audio": true
+  },
+  {
+    "k": "household",
+    "t": "household",
+    "kind": "word",
+    "forms": [
+      "household"
+    ],
+    "text": "A household is all the people who live together in one home. Household spending is what that family spends.",
+    "audio": true
+  },
+  {
+    "k": "urban",
+    "t": "urban",
+    "kind": "word",
+    "forms": [
+      "urban"
+    ],
+    "text": "Urban means having to do with cities and towns, the opposite of rural.",
+    "audio": true
+  },
+  {
+    "k": "pupils",
+    "t": "pupils",
+    "kind": "word",
+    "forms": [
+      "pupils"
+    ],
+    "text": "Pupils are students who go to school. The word is common in British writing.",
+    "audio": true
+  },
+  {
+    "k": "sutton-trust",
+    "t": "sutton-trust",
+    "kind": "name",
+    "forms": [
+      "Sutton Trust"
+    ],
+    "text": "The Sutton Trust is a British charity that works to help children from poorer families do well at school.",
+    "audio": true
+  },
+  {
+    "k": "charity",
+    "t": "charity",
+    "kind": "word",
+    "forms": [
+      "charity"
+    ],
+    "text": "A charity is a group that works to help people or a cause, rather than to make a profit.",
+    "audio": true
+  },
+  {
+    "k": "quoted-state",
+    "t": "state-educated",
+    "kind": "phrase",
+    "forms": [
+      "state-educated"
+    ],
+    "text": "State-educated means taught in a public school paid for by the government, not a private school.",
+    "audio": true
+  },
+  {
+    "k": "narrowed",
+    "t": "narrowed",
+    "kind": "word",
+    "forms": [
+      "narrowed"
+    ],
+    "text": "If a gap has narrowed, it has gotten smaller. Here the difference between poor and rich students who get tutoring is shrinking.",
+    "audio": true
+  },
+  {
+    "k": "state-funded",
+    "t": "state-funded",
+    "kind": "phrase",
+    "forms": [
+      "state-funded"
+    ],
+    "text": "State-funded means paid for by the government with public money.",
+    "audio": true
+  },
+  {
+    "k": "youngsters",
+    "t": "youngsters",
+    "kind": "word",
+    "forms": [
+      "youngsters"
+    ],
+    "text": "Youngsters are young people, such as children and teenagers.",
+    "audio": true
+  },
+  {
+    "k": "soft-virtues",
+    "t": "soft-virtues",
+    "kind": "phrase",
+    "forms": [
+      "soft virtues"
+    ],
+    "text": "Soft virtues are gentle good qualities like independence and imagination. They are the opposite of hard skills you can test, such as exam scores.",
+    "audio": true
+  },
+  {
+    "k": "independence",
+    "t": "independence",
+    "kind": "word",
+    "forms": [
+      "independence"
+    ],
+    "text": "Independence is being able to think and act on your own without constant help from others.",
+    "audio": true
+  },
+  {
+    "k": "perceived",
+    "t": "perceived",
+    "kind": "word",
+    "forms": [
+      "perceived"
+    ],
+    "text": "If something is perceived a certain way, that is how people see it, even if it is not exactly true.",
+    "audio": true
+  },
+  {
+    "k": "instil",
+    "t": "instil",
+    "kind": "word",
+    "forms": [
+      "instil"
+    ],
+    "text": "To instil a quality is to slowly teach it so it becomes part of a person, like teaching hard work from a young age.",
+    "audio": true
+  },
+  {
+    "k": "toll",
+    "t": "toll",
+    "kind": "word",
+    "forms": [
+      "toll"
+    ],
+    "text": "A toll is a cost or harm that builds up. The financial toll is the money that families have to give up.",
+    "audio": true
+  },
+  {
+    "k": "eye-watering",
+    "t": "eye-watering",
+    "kind": "phrase",
+    "forms": [
+      "eye-watering"
+    ],
+    "text": "Eye-watering describes something, often a price, that is so big it shocks you.",
+    "audio": true
+  },
+  {
+    "k": "lifetime",
+    "t": "lifetime",
+    "kind": "word",
+    "forms": [
+      "lifetime"
+    ],
+    "text": "A lifetime is the whole time a person lives. Lifetime educational investment is all the money spent on a person's learning.",
+    "audio": true
+  },
+  {
+    "k": "social-mobility",
+    "t": "social-mobility",
+    "kind": "phrase",
+    "forms": [
+      "social mobility"
+    ],
+    "text": "Social mobility is how easily people can move up or down in money and success compared with their parents. Here the extra spending has not made that easier.",
+    "audio": true
+  },
+  {
+    "k": "translating",
+    "t": "translating",
+    "kind": "word",
+    "forms": [
+      "translating"
+    ],
+    "text": "Translating usually means changing words into another language. Here it means turning one thing into another: money spent into better chances in life.",
+    "audio": true
+  },
+  {
+    "k": "collapsed",
+    "t": "collapsed",
+    "kind": "word",
+    "forms": [
+      "collapsed"
+    ],
+    "text": "To collapse is to fall down suddenly. Here the chance of kids doing better than their parents dropped sharply in Singapore and South Korea.",
+    "audio": true
+  },
+  {
+    "k": "admits",
+    "t": "admits",
+    "kind": "word",
+    "forms": [
+      "admits"
+    ],
+    "text": "When a school admits students, it lets them in. Harvard admits only a small share of those who apply.",
+    "audio": true
+  },
+  {
+    "k": "applicants",
+    "t": "applicants",
+    "kind": "word",
+    "forms": [
+      "applicants"
+    ],
+    "text": "Applicants are people who ask for a place at a school or job.",
+    "audio": true
+  },
+  {
+    "k": "rural",
+    "t": "rural",
+    "kind": "word",
+    "forms": [
+      "rural"
+    ],
+    "text": "Rural means having to do with the countryside and farms, not cities.",
+    "audio": true
+  },
+  {
+    "k": "graduate",
+    "t": "graduate",
+    "kind": "word",
+    "forms": [
+      "non-graduate",
+      "graduates"
+    ],
+    "text": "A graduate is someone who has finished a university degree. A non-graduate family is one where the parents did not finish university.",
+    "audio": true
+  },
+  {
+    "k": "earnings-premium",
+    "t": "earnings-premium",
+    "kind": "phrase",
+    "forms": [
+      "earnings premium"
+    ],
+    "text": "The college earnings premium is the extra pay a person with a degree gets compared with someone without one.",
+    "audio": true
+  },
+  {
+    "k": "percentage-points",
+    "t": "percentage-points",
+    "kind": "phrase",
+    "forms": [
+      "percentage points"
+    ],
+    "text": "Percentage points measure the gap between two percentages. Going from 20% to 30% is a rise of ten percentage points.",
+    "audio": true
+  },
+  {
+    "k": "think-tank",
+    "t": "think-tank",
+    "kind": "phrase",
+    "forms": [
+      "think-tank"
+    ],
+    "text": "A think-tank is a group of experts who study problems and suggest ideas.",
+    "audio": true
+  },
+  {
+    "k": "free-school-meals",
+    "t": "free-school-meals",
+    "kind": "phrase",
+    "forms": [
+      "free school meals"
+    ],
+    "text": "Free school meals are lunches that schools give for free to children from low-income families. In Britain they are used to tell who is poor.",
+    "audio": true
+  },
+  {
+    "k": "edge",
+    "t": "the edge",
+    "kind": "phrase",
+    "forms": [
+      "the edge"
+    ],
+    "text": "To have the edge is to have a small advantage over others. Rich parents still have the edge in the competition for good futures.",
+    "audio": true
+  }
+]
