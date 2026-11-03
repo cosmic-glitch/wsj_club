@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-03",
+  "title": "Plot Twist newsletter: Winston Churchill and the power of hobbies",
+  "articleUrl": "https://www.economist.com/culture/2026/11/03/plot-twist-newsletter-winston-churchill-and-the-power-of-hobbies",
+  "articlePageUrl": "/articles/junior/2026-11-03.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "retrospective",
+      "partOfSpeech": "noun",
+      "pronunciation": "ret-roh-SPEK-tiv",
+      "articleQuote": "the biggest retrospective of his art since 1958",
+      "meaning": "A retrospective is a show that looks back over an artist's whole career, gathering work from many years in one place. The word starts with \"retro,\" which means backward. In the article, a London museum is showing more than 50 of Winston Churchill's paintings from across his life.",
+      "examples": [
+        "The museum held a retrospective of the cartoonist's work, from her first sketches to her latest comics.",
+        "After the band's last concert, the school put on a retrospective of its photos from ten years of shows."
+      ]
+    },
+    {
+      "word": "poignant",
+      "partOfSpeech": "adjective",
+      "pronunciation": "POIN-yunt",
+      "articleQuote": "Time has made some of the images feel more poignant",
+      "meaning": "Something poignant makes you feel a gentle, deep sadness mixed with tenderness. It touches your heart. In the article, a painting of a happy family at the beach feels poignant now, because we know a big war was about to begin.",
+      "examples": [
+        "Finding my old baby blanket in the attic was a poignant moment, because I remembered how small I used to be.",
+        "The last day of school felt poignant, since we knew we would not all be in the same class again."
+      ]
+    },
+    {
+      "word": "audacity",
+      "partOfSpeech": "noun",
+      "pronunciation": "aw-DASS-ih-tee",
+      "articleQuote": "just sheer “audacity”",
+      "meaning": "Audacity is the boldness to try something even when it might not go well. Sometimes it also means daring to do something others think is too much. In the article, Churchill says you do not need special talent to paint, only the nerve to start.",
+      "examples": [
+        "It took audacity for Sam to try out for the lead role when he had never acted before.",
+        "She had the audacity to ask the chess champion for a game, and she almost won."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Prime minister",
+      "articleQuote": "Britain’s then prime minister, Winston Churchill",
+      "meaning": "Who is in charge of a country like Britain? Many countries have a **prime minister**, the leader who runs the government day to day. Britain also has a king or queen, but the monarch mostly handles ceremonies. The prime minister makes the big decisions about laws, money, and war.\n\nThink of a school. The principal's name is on the door, but the person who actually decides the daily schedule and rules might be someone else. In Britain, the monarch is a bit like the name on the door, and the prime minister is the one making the schedule.\n\nIn the United States, the president does this job. A prime minister is different: they are usually the leader of the party that wins the most seats in the lawmaking group called Parliament, instead of being voted for directly by everyone.\n\nSo the takeaway: a prime minister is the head of the government in countries like Britain, and Churchill held that job during the second world war."
+    },
+    {
+      "name": "Biological age",
+      "articleQuote": "about a year younger biologically",
+      "meaning": "Can two people who are both 40 be different ages? Yes! Your **calendar age** is how many birthdays you have had. Your **biological age** is how old your body is acting, based on things doctors can measure, like how well your heart and cells are working.\n\nImagine two cars built the same year. One was driven hard and never fixed. The other was gently used and cared for. They have the same birthday, but one looks and runs much older.\n\nThe article says people who did something artistic once a week, like visiting a museum, were about a year younger biologically than people who rarely did. Their birthdays were the same, but their bodies seemed to be aging a little more slowly.\n\nSo the takeaway: biological age measures how old your body acts, and healthy habits can make it lower than your calendar age."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did Churchill start painting in 1915?",
+      "options": [
+        "A teacher told him he had great talent",
+        "To distract himself after a professional downfall",
+        "He wanted to earn a living as a painter",
+        "He was asked to by the king"
+      ],
+      "answerIndex": 1,
+      "explanation": "He began at age 40 to take his mind off the failed Gallipoli campaign."
+    },
+    {
+      "question": "What does Churchill say you need most to paint as a hobby?",
+      "options": [
+        "Years of lessons",
+        "Expensive supplies",
+        "A natural gift for art",
+        "Audacity, or boldness"
+      ],
+      "answerIndex": 3,
+      "explanation": "He said you do not need an innate gift, just sheer audacity."
+    },
+    {
+      "question": "According to Churchill, how many hobbies should a person have to be really happy and safe?",
+      "options": [
+        "Exactly one",
+        "At least two or three",
+        "At least ten",
+        "None, because hobbies waste time"
+      ],
+      "answerIndex": 1,
+      "explanation": "He argued that one ought to have at least two or three hobbies, and they must all be real."
+    },
+    {
+      "question": "What did the University College London study find?",
+      "options": [
+        "People who did art or cultural visits weekly were about a year younger biologically",
+        "Painting makes people live ten years longer",
+        "Museums make people feel more stressed",
+        "Only experts get health benefits from art"
+      ],
+      "answerIndex": 0,
+      "explanation": "Those who took part in an artistic pursuit once a week were about a year younger biologically."
+    },
+    {
+      "question": "What is a \"retrospective\" exhibit?",
+      "options": [
+        "A show of only brand-new artwork",
+        "A show that looks back over an artist's career",
+        "A show where visitors paint too",
+        "A show that travels to many countries"
+      ],
+      "answerIndex": 1,
+      "explanation": "A retrospective gathers work from across an artist's life, like the Churchill show in London."
+    }
+  ]
+}

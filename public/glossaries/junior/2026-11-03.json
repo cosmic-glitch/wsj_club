@@ -1,0 +1,439 @@
+[
+  {
+    "k": "retrospective",
+    "t": "retrospective",
+    "kind": "vocab",
+    "pron": "ret-roh-SPEK-tiv",
+    "forms": [
+      "retrospective"
+    ],
+    "text": "A retrospective is a show that looks back over an artist's whole career. Here a London museum is showing many of Churchill's paintings from across his life.",
+    "audio": true
+  },
+  {
+    "k": "poignant",
+    "t": "poignant",
+    "kind": "vocab",
+    "pron": "POIN-yunt",
+    "forms": [
+      "poignant"
+    ],
+    "text": "Poignant describes something that makes you feel a gentle, deep sadness mixed with tenderness. A painting of a happy family feels poignant now because we know a war was coming.",
+    "audio": true
+  },
+  {
+    "k": "audacity",
+    "t": "audacity",
+    "kind": "vocab",
+    "pron": "aw-DASS-ih-tee",
+    "forms": [
+      "“audacity”",
+      "audacity"
+    ],
+    "text": "Audacity is the boldness to try something even if it might not turn out well. Churchill says painting needs nerve, not special talent.",
+    "audio": true
+  },
+  {
+    "k": "pastime",
+    "t": "pastime",
+    "kind": "word",
+    "forms": [
+      "pastimes",
+      "Pastime"
+    ],
+    "text": "A pastime is something you do for fun in your free time, like a hobby. Churchill wrote an essay called Painting as a Pastime.",
+    "audio": true
+  },
+  {
+    "k": "pleasurable",
+    "t": "pleasurable",
+    "kind": "word",
+    "forms": [
+      "pleasurable"
+    ],
+    "text": "Pleasurable means giving you enjoyment and good feelings.",
+    "audio": true
+  },
+  {
+    "k": "celebrated",
+    "t": "celebrated",
+    "kind": "word",
+    "forms": [
+      "celebrated"
+    ],
+    "text": "Celebrated means famous and admired by many people. Here Picasso is called a celebrated artist.",
+    "audio": true
+  },
+  {
+    "k": "by-profession",
+    "t": "by profession",
+    "kind": "phrase",
+    "forms": [
+      "by profession"
+    ],
+    "text": "By profession means as your job. Picasso is saying Churchill is not a painter as a job, but paints well anyway.",
+    "audio": true
+  },
+  {
+    "k": "earn-a-living",
+    "t": "earn a living",
+    "kind": "phrase",
+    "forms": [
+      "earning a good living"
+    ],
+    "text": "To earn a living is to make enough money from your work to pay for your life.",
+    "audio": true
+  },
+  {
+    "k": "on-view",
+    "t": "on view",
+    "kind": "phrase",
+    "forms": [
+      "on view"
+    ],
+    "text": "On view means put out where people can come and look, like paintings in a museum.",
+    "audio": true
+  },
+  {
+    "k": "wallace-collection",
+    "t": "Wallace Collection",
+    "kind": "name",
+    "forms": [
+      "Wallace Collection"
+    ],
+    "text": "The Wallace Collection is a museum in London that is showing Churchill's paintings until November 29th.",
+    "audio": true
+  },
+  {
+    "k": "picasso",
+    "t": "Picasso",
+    "kind": "name",
+    "forms": [
+      "Pablo Picasso",
+      "Picasso"
+    ],
+    "text": "Pablo Picasso was a famous Spanish artist of the 1900s, known for bold, strange-looking paintings. Even he praised Churchill's art.",
+    "audio": true
+  },
+  {
+    "k": "churchill",
+    "t": "Churchill",
+    "kind": "name",
+    "forms": [
+      "Winston Churchill",
+      "Churchill"
+    ],
+    "text": "Winston Churchill was Britain's prime minister during the second world war. He also loved painting as a hobby.",
+    "audio": true
+  },
+  {
+    "k": "eisenhower",
+    "t": "Eisenhower",
+    "kind": "name",
+    "forms": [
+      "Dwight Eisenhower"
+    ],
+    "text": "Dwight Eisenhower was the American president in the 1950s. In 1958 he helped organise an earlier show of Churchill's art.",
+    "audio": true
+  },
+  {
+    "k": "roosevelt",
+    "t": "Roosevelt",
+    "kind": "name",
+    "forms": [
+      "Franklin Roosevelt"
+    ],
+    "text": "Franklin Roosevelt was the American president during most of the second world war and a friend to Churchill. Churchill gave him a painting as a gift.",
+    "audio": true
+  },
+  {
+    "k": "blenheim-palace",
+    "t": "Blenheim Palace",
+    "kind": "name",
+    "forms": [
+      "Blenheim Palace"
+    ],
+    "text": "Blenheim Palace is a huge, grand house in England where Churchill's family came from, and where he was born.",
+    "audio": true
+  },
+  {
+    "k": "chartwell",
+    "t": "Chartwell",
+    "kind": "name",
+    "forms": [
+      "Chartwell"
+    ],
+    "text": "Chartwell was Churchill's country house in England, where he painted often.",
+    "audio": true
+  },
+  {
+    "k": "normandy",
+    "t": "Normandy",
+    "kind": "name",
+    "forms": [
+      "Normandy"
+    ],
+    "text": "Normandy is a region on the northern coast of France.",
+    "audio": true
+  },
+  {
+    "k": "kent",
+    "t": "Kent",
+    "kind": "name",
+    "forms": [
+      "Kent"
+    ],
+    "text": "Kent is a county in the southeast corner of England, close to France across the sea.",
+    "audio": true
+  },
+  {
+    "k": "gallipoli",
+    "t": "Gallipoli",
+    "kind": "name",
+    "forms": [
+      "Gallipoli"
+    ],
+    "text": "Gallipoli was a battle campaign in the first world war that went badly for Britain. Churchill was blamed, and he lost his important job.",
+    "audio": true
+  },
+  {
+    "k": "revelatory",
+    "t": "revelatory",
+    "kind": "word",
+    "forms": [
+      "revelatory"
+    ],
+    "text": "Revelatory means showing you something new and surprising that you did not know before.",
+    "audio": true
+  },
+  {
+    "k": "canvas",
+    "t": "canvas",
+    "kind": "word",
+    "forms": [
+      "canvases"
+    ],
+    "text": "A canvas is the thick cloth that artists paint on. Here it means the paintings themselves.",
+    "audio": true
+  },
+  {
+    "k": "ancestral",
+    "t": "ancestral",
+    "kind": "word",
+    "forms": [
+      "ancestral"
+    ],
+    "text": "Ancestral means belonging to your family going back many generations.",
+    "audio": true
+  },
+  {
+    "k": "foreshadow",
+    "t": "foreshadow",
+    "kind": "word",
+    "forms": [
+      "foreshadows"
+    ],
+    "text": "To foreshadow is to give a hint of something bad or important that will happen later.",
+    "audio": true
+  },
+  {
+    "k": "impending",
+    "t": "impending",
+    "kind": "word",
+    "forms": [
+      "impending"
+    ],
+    "text": "Impending means about to happen soon, often something serious.",
+    "audio": true
+  },
+  {
+    "k": "soulful",
+    "t": "soulful",
+    "kind": "word",
+    "forms": [
+      "soulful"
+    ],
+    "text": "Soulful describes something full of deep feeling.",
+    "audio": true
+  },
+  {
+    "k": "takeaway",
+    "t": "takeaway",
+    "kind": "word",
+    "forms": [
+      "takeaway"
+    ],
+    "text": "A takeaway is the main idea you remember after seeing or reading something.",
+    "audio": true
+  },
+  {
+    "k": "mulling",
+    "t": "mulling",
+    "kind": "word",
+    "forms": [
+      "mulling"
+    ],
+    "text": "Mulling means thinking about something slowly and carefully.",
+    "audio": true
+  },
+  {
+    "k": "downfall",
+    "t": "downfall",
+    "kind": "word",
+    "forms": [
+      "downfall"
+    ],
+    "text": "A downfall is a sudden loss of power, success, or a high position.",
+    "audio": true
+  },
+  {
+    "k": "professional",
+    "t": "professional",
+    "kind": "word",
+    "forms": [
+      "professional"
+    ],
+    "text": "Professional means connected to your job or career.",
+    "audio": true
+  },
+  {
+    "k": "distract",
+    "t": "distract",
+    "kind": "word",
+    "forms": [
+      "distract"
+    ],
+    "text": "To distract someone is to pull their attention away from a worry or task.",
+    "audio": true
+  },
+  {
+    "k": "innate",
+    "t": "innate",
+    "kind": "word",
+    "forms": [
+      "innate"
+    ],
+    "text": "Innate means you were born with it, instead of learning it. An innate gift is a natural talent.",
+    "audio": true
+  },
+  {
+    "k": "aspire",
+    "t": "aspire",
+    "kind": "word",
+    "forms": [
+      "aspire"
+    ],
+    "text": "To aspire to something is to hope and work toward reaching it.",
+    "audio": true
+  },
+  {
+    "k": "masterpieces",
+    "t": "masterpieces",
+    "kind": "word",
+    "forms": [
+      "masterpieces"
+    ],
+    "text": "A masterpiece is a work of art of the very highest quality.",
+    "audio": true
+  },
+  {
+    "k": "content-ourselves",
+    "t": "content ourselves",
+    "kind": "phrase",
+    "forms": [
+      "content ourselves"
+    ],
+    "text": "To content yourself with something is to be happy with it even if it is less than you wanted.",
+    "audio": true
+  },
+  {
+    "k": "joy-ride",
+    "t": "joy ride",
+    "kind": "phrase",
+    "forms": [
+      "joy ride"
+    ],
+    "text": "A joy ride is a fun trip taken just for the pleasure of it. Churchill means painting can be a cheerful adventure and need not be perfect.",
+    "audio": true
+  },
+  {
+    "k": "bricklaying",
+    "t": "bricklaying",
+    "kind": "word",
+    "forms": [
+      "bricklaying"
+    ],
+    "text": "Bricklaying is building walls by stacking bricks with mortar. Churchill did this for fun too.",
+    "audio": true
+  },
+  {
+    "k": "diverting",
+    "t": "diverting",
+    "kind": "word",
+    "forms": [
+      "diverting"
+    ],
+    "text": "Diverting means entertaining and able to take your mind off other things.",
+    "audio": true
+  },
+  {
+    "k": "reinvigorate",
+    "t": "reinvigorate",
+    "kind": "word",
+    "forms": [
+      "reinvigorate"
+    ],
+    "text": "To reinvigorate is to give fresh energy to something.",
+    "audio": true
+  },
+  {
+    "k": "cognitive-decline",
+    "t": "cognitive decline",
+    "kind": "phrase",
+    "forms": [
+      "cognitive decline"
+    ],
+    "text": "Cognitive decline is the slow weakening of thinking and memory that can happen as people get older.",
+    "audio": true
+  },
+  {
+    "k": "biologically",
+    "t": "biologically",
+    "kind": "word",
+    "forms": [
+      "biologically"
+    ],
+    "text": "Biologically means in terms of how the body works. Being a year younger biologically means your body acts a bit younger than your birthday says.",
+    "audio": true
+  },
+  {
+    "k": "pursuit",
+    "t": "pursuit",
+    "kind": "word",
+    "forms": [
+      "pursuit"
+    ],
+    "text": "A pursuit is an activity you spend time on, like a hobby.",
+    "audio": true
+  },
+  {
+    "k": "polemicist",
+    "t": "polemicist",
+    "kind": "word",
+    "forms": [
+      "polemicist"
+    ],
+    "text": "A polemicist is a writer who argues strongly for or against something.",
+    "audio": true
+  },
+  {
+    "k": "outspoken",
+    "t": "outspoken",
+    "kind": "word",
+    "forms": [
+      "outspoken"
+    ],
+    "text": "Outspoken means saying what you think boldly, even when others might disagree.",
+    "audio": true
+  }
+]
