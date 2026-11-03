@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-03",
+  "title": "The quest for immortality has become serious business",
+  "articleUrl": "https://www.economist.com/business/2026/11/02/the-quest-for-immortality-has-become-serious-business",
+  "articlePageUrl": "/articles/2026-11-03.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "peddle",
+      "partOfSpeech": "verb",
+      "pronunciation": "PED-ul",
+      "articleQuote": "a growing number of influencers peddle elixirs",
+      "meaning": "To peddle something is to sell it, especially by going around promoting it, and the word often hints that the goods are cheap, dubious, or oversold. A peddler used to carry wares from door to door. In the article, influencers who peddle “elixirs” are pushing supplements and potions whose benefits are not proven.",
+      "examples": [
+        "Online scammers peddle fake cures to worried people.",
+        "She refused to peddle rumours about her classmates."
+      ]
+    },
+    {
+      "word": "evangelist",
+      "partOfSpeech": "noun",
+      "pronunciation": "ih-VAN-juh-list",
+      "articleQuote": "One of the loudest evangelists is Bryan Johnson",
+      "meaning": "An evangelist is someone who spreads a belief with burning enthusiasm, hoping to convert others. The word began in religion, for those who preached the Gospel, but now describes anyone who eagerly champions a cause, product, or idea. Here, Bryan Johnson is a longevity evangelist because he loudly urges people to adopt his anti-ageing routine.",
+      "examples": [
+        "My uncle is a cycling evangelist who thinks everyone should ditch their car.",
+        "Early evangelists for the new app convinced their whole school to join."
+      ]
+    },
+    {
+      "word": "arduous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "AR-joo-us",
+      "articleQuote": "scientifically proven ways to add healthy years—a far more arduous process",
+      "meaning": "Arduous means demanding a lot of effort, endurance, and time, like climbing a steep mountain. It is stronger than “hard”: an arduous task wears you out and cannot be rushed. Proving that a drug really slows ageing takes years of trials, which is why the article calls the process arduous compared with simply selling supplements.",
+      "examples": [
+        "The explorers made an arduous trek across the frozen plateau.",
+        "Writing a book is an arduous job that takes patience."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Biological age and ageing clocks",
+      "articleQuote": "which estimate how old a body really is (as opposed to how many birthdays it has had)",
+      "meaning": "Biology. Your **chronological age** is simply the number of birthdays you have had. Your **biological age** is how worn-out your body is, and two people born on the same day can differ by years: one may have the arteries and energy of someone much younger, the other of someone older. Doctors cannot read biological age off a birthday, so scientists build **ageing clocks**: tests that measure chemical marks on DNA, or the mix of proteins in the blood, and compare them with patterns found in many people of known age. A body whose marks look like those of an average 50-year-old is said to be biologically 50, whatever its birth certificate says.\n\nWhy it matters here: testing whether a drug slows ageing by waiting to see who lives longest could take decades. A clock offers a quick stand-in. Novo's data put the heart's biological age up to four years younger in patients on its drug than in those on a **placebo** (a dummy treatment used for comparison).\n\nThe catch: a clock is a **proxy**, a measurement standing in for the thing we really care about, living longer and healthier. A proxy can move without the real outcome following, and the studied patients were overweight or diabetic, so it is unknown whether healthy people would see the same change."
+    },
+    {
+      "name": "Why ageing isn't a “disease” for drug approval",
+      "articleQuote": "does not treat ageing as a disease, so there is no route to approving a medicine that slows it",
+      "meaning": "Regulation. Before a medicine can be sold in America, the **FDA** (Food and Drug Administration) must approve it, and approval is granted for a specific **indication**: a named medical condition the drug is shown, in trials, to treat safely. A drug is not simply “approved”; it is approved *for something*, such as diabetes. Ageing is not on the FDA's list of diseases, so a company cannot run a trial, show that its pill slows ageing, and get a licence.\n\nThat shapes the whole business. Companies pick a recognised condition linked to ageing, win approval for it, and then try to widen the drug's use. GLP-1s followed this path: first approved for diabetes, then obesity, and later shown to help hearts, kidneys and sleep apnoea, conditions that grow more common with age. Insilico's “dual-purpose” drug treats a lung-scarring disease while also being studied for ageing.\n\nThe unregulated side is the opposite: clinics and online sellers face no such test, so supplements and injections can be sold on hope and anecdotes. Regulators' rules create a gap between what is proven and what is for sale."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what are the two very different industries chasing longevity?",
+      "options": [
+        "Lightly regulated clinics and online sellers, and biotechs working with big drugmakers on medicines that might slow ageing",
+        "Insurance companies and hospitals",
+        "Gyms and restaurants",
+        "Governments and universities"
+      ],
+      "answerIndex": 0,
+      "explanation": "The first is a colourful, lightly regulated group selling supplements, scans and treatments; the second is slower-moving biotechs developing real medicines in concert with drugmakers."
+    },
+    {
+      "question": "Why does the article say the FDA's stance makes longevity drugs hard to develop?",
+      "options": [
+        "It bans all anti-ageing research",
+        "It does not treat ageing as a disease, so drugs must win approval for a specific condition first",
+        "It only approves drugs made in America",
+        "It requires every drug to cost less than $1,000"
+      ],
+      "answerIndex": 1,
+      "explanation": "With no route to approve a medicine that slows ageing itself, would-be longevity drugs must treat a specific condition, often linked to ageing, and then expand."
+    },
+    {
+      "question": "What are “ageing clocks”?",
+      "options": [
+        "Wristwatches that count your birthdays",
+        "Tests that estimate how old a body really is from chemical marks on DNA or proteins in the blood",
+        "Machines that slow down time in a clinic",
+        "Government records of life expectancy"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ageing clocks estimate biological age, as opposed to how many birthdays someone has had."
+    },
+    {
+      "question": "Why does the article suggest GLP-1 results should be treated cautiously?",
+      "options": [
+        "The drugs were never tested on humans",
+        "All the patients studied were overweight or diabetic, so it is unknown whether healthy, slim people would benefit the same way",
+        "Novo and Lilly refused to share any data",
+        "The drugs make the heart older"
+      ],
+      "answerIndex": 1,
+      "explanation": "The ageing-clock results came only from overweight or diabetic patients, and Lilly calls its own results preliminary."
+    },
+    {
+      "question": "What does “peddle” suggest in “influencers peddle elixirs”?",
+      "options": [
+        "Carefully test",
+        "Sell or push, often goods of doubtful value",
+        "Give away for free",
+        "Ban"
+      ],
+      "answerIndex": 1,
+      "explanation": "To peddle is to sell by promoting, often with a hint that the goods are dubious or oversold."
+    }
+  ]
+}

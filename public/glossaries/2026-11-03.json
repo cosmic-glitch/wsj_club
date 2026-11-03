@@ -1,0 +1,766 @@
+[
+  {
+    "k": "peddle",
+    "t": "peddle",
+    "kind": "vocab",
+    "pron": "PED-ul",
+    "forms": [
+      "peddle"
+    ],
+    "text": "To peddle is to sell by promoting, often goods of doubtful value. Influencers peddle elixirs whose benefits are not proven.",
+    "audio": true
+  },
+  {
+    "k": "evangelist",
+    "t": "evangelist",
+    "kind": "vocab",
+    "pron": "ih-VAN-juh-list",
+    "forms": [
+      "evangelists"
+    ],
+    "text": "An evangelist eagerly spreads a belief, hoping to convert others. Bryan Johnson loudly urges people to adopt his anti-ageing routine.",
+    "audio": true
+  },
+  {
+    "k": "arduous",
+    "t": "arduous",
+    "kind": "vocab",
+    "pron": "AR-joo-us",
+    "forms": [
+      "arduous"
+    ],
+    "text": "Arduous means demanding great effort and time, like climbing a steep mountain. Proving a drug slows ageing takes years of trials.",
+    "audio": true
+  },
+  {
+    "k": "longevity",
+    "t": "longevity",
+    "kind": "word",
+    "forms": [
+      "longevity"
+    ],
+    "text": "Longevity means a long life. A longevity clinic sells treatments that promise more years, or healthier ones.",
+    "audio": true
+  },
+  {
+    "k": "posh",
+    "t": "posh",
+    "kind": "word",
+    "forms": [
+      "posh"
+    ],
+    "text": "Posh means rich and fashionable. Chelsea is an expensive area of London.",
+    "audio": true
+  },
+  {
+    "k": "resides",
+    "t": "resides",
+    "kind": "word",
+    "forms": [
+      "resides"
+    ],
+    "text": "To reside is to live in a place. The clinic is based on a quiet street in Chelsea.",
+    "audio": true
+  },
+  {
+    "k": "cryotherapy",
+    "t": "cryotherapy",
+    "kind": "word",
+    "forms": [
+      "cryotherapy"
+    ],
+    "text": "Cryotherapy means exposing the body to extreme cold, here -110°C, for a few minutes. Fans say it invigorates; strong evidence is thin.",
+    "audio": true
+  },
+  {
+    "k": "invigorated",
+    "t": "invigorated",
+    "kind": "word",
+    "forms": [
+      "invigorated"
+    ],
+    "text": "Invigorated means filled with energy and freshness. The man says so himself, which is not the same as proof.",
+    "audio": true
+  },
+  {
+    "k": "hyperbaric-chamber",
+    "t": "hyperbaric chamber",
+    "kind": "phrase",
+    "forms": [
+      "hyperbaric chamber"
+    ],
+    "text": "A hyperbaric chamber is a sealed capsule with air pressure above normal, in which people breathe pure oxygen. Doctors use it for conditions like diving sickness.",
+    "audio": true
+  },
+  {
+    "k": "intravenous",
+    "t": "intravenous",
+    "kind": "word",
+    "forms": [
+      "intravenous"
+    ],
+    "text": "Intravenous means given directly into a vein, usually through a drip.",
+    "audio": true
+  },
+  {
+    "k": "nad",
+    "t": "NAD+",
+    "kind": "word",
+    "forms": [
+      "NAD+"
+    ],
+    "text": "NAD+ is a molecule cells use to turn food into energy. Its levels fall with age, which is why it is sold as a supplement, though studies are inconclusive.",
+    "audio": true
+  },
+  {
+    "k": "ozone",
+    "t": "ozone",
+    "kind": "word",
+    "forms": [
+      "ozone"
+    ],
+    "text": "Ozone is a form of oxygen with three atoms. Mixing it into blood is an unproven treatment.",
+    "audio": true
+  },
+  {
+    "k": "garnered",
+    "t": "garnered",
+    "kind": "word",
+    "forms": [
+      "garnered"
+    ],
+    "text": "To garner is to gather or earn. The quest to live forever has gathered fresh interest.",
+    "audio": true
+  },
+  {
+    "k": "lifespan",
+    "t": "lifespan",
+    "kind": "word",
+    "forms": [
+      "lifespan"
+    ],
+    "text": "Lifespan is how long a person or creature lives.",
+    "audio": true
+  },
+  {
+    "k": "counterpart",
+    "t": "counterpart",
+    "kind": "word",
+    "forms": [
+      "counterpart"
+    ],
+    "text": "A counterpart holds an equivalent role elsewhere. Sam Altman runs OpenAI, a rival to Mr Amodei's Anthropic.",
+    "audio": true
+  },
+  {
+    "k": "overheard",
+    "t": "overheard",
+    "kind": "word",
+    "forms": [
+      "overheard"
+    ],
+    "text": "Overheard means heard by chance. Two leaders were caught on a microphone discussing immortality.",
+    "audio": true
+  },
+  {
+    "k": "organ-transplants",
+    "t": "organ transplants",
+    "kind": "phrase",
+    "forms": [
+      "organ transplants"
+    ],
+    "text": "An organ transplant replaces a failing organ with a healthy donor's. The leaders mused that swapping organs repeatedly might extend life.",
+    "audio": true
+  },
+  {
+    "k": "musing",
+    "t": "musing",
+    "kind": "word",
+    "forms": [
+      "musing",
+      "muses"
+    ],
+    "text": "To muse is to think or speak thoughtfully, often idly, about a possibility.",
+    "audio": true
+  },
+  {
+    "k": "chronic",
+    "t": "chronic",
+    "kind": "word",
+    "forms": [
+      "chronic"
+    ],
+    "text": "Chronic means lasting a long time or constantly returning, as with long-term diseases.",
+    "audio": true
+  },
+  {
+    "k": "seeping",
+    "t": "seeping",
+    "kind": "word",
+    "forms": [
+      "seeping"
+    ],
+    "text": "To seep is to flow slowly through small gaps. Interest in living longer is slowly spreading into ordinary life.",
+    "audio": true
+  },
+  {
+    "k": "mainstream",
+    "t": "mainstream",
+    "kind": "word",
+    "forms": [
+      "mainstream"
+    ],
+    "text": "The mainstream is what ordinary people accept, as opposed to fringe ideas.",
+    "audio": true
+  },
+  {
+    "k": "oecd",
+    "t": "OECD",
+    "kind": "word",
+    "forms": [
+      "OECD"
+    ],
+    "text": "The OECD is a club of mostly rich countries that shares economic data and policy. Its members have ageing populations.",
+    "audio": true
+  },
+  {
+    "k": "regimen",
+    "t": "regimen",
+    "kind": "word",
+    "forms": [
+      "regime"
+    ],
+    "text": "A regime here means a strict routine, like a diet or exercise plan. Mr Johnson follows a famously extreme one.",
+    "audio": true
+  },
+  {
+    "k": "seize-on",
+    "t": "seize on",
+    "kind": "phrase",
+    "forms": [
+      "seize on"
+    ],
+    "text": "To seize on something is to grab it eagerly. Two industries want to profit from the longevity trend.",
+    "audio": true
+  },
+  {
+    "k": "dubious",
+    "t": "dubious",
+    "kind": "word",
+    "forms": [
+      "dubious"
+    ],
+    "text": "Dubious means doubtful or not to be trusted. These treatments have little proof behind them.",
+    "audio": true
+  },
+  {
+    "k": "efficacy",
+    "t": "efficacy",
+    "kind": "word",
+    "forms": [
+      "efficacy"
+    ],
+    "text": "Efficacy is how well something works at doing what it claims.",
+    "audio": true
+  },
+  {
+    "k": "drugmakers",
+    "t": "drugmakers",
+    "kind": "word",
+    "forms": [
+      "drugmakers"
+    ],
+    "text": "Drugmakers are pharmaceutical companies.",
+    "audio": true
+  },
+  {
+    "k": "biotechs",
+    "t": "biotechs",
+    "kind": "word",
+    "forms": [
+      "biotechs"
+    ],
+    "text": "Biotechs are small companies using biology to develop medicines. Big drugmakers often partner with them.",
+    "audio": true
+  },
+  {
+    "k": "ageing-itself",
+    "t": "ageing itself",
+    "kind": "phrase",
+    "forms": [
+      "ageing itself"
+    ],
+    "text": "The point is to treat the process of getting old, not just single diseases that come with it.",
+    "audio": true
+  },
+  {
+    "k": "niche-market",
+    "t": "niche market",
+    "kind": "phrase",
+    "forms": [
+      "niche market"
+    ],
+    "text": "A niche market is a small, specialised group of customers. Pharma bosses once thought obesity was one.",
+    "audio": true
+  },
+  {
+    "k": "glp-1s",
+    "t": "GLP-1s",
+    "kind": "word",
+    "forms": [
+      "GLP-1s"
+    ],
+    "text": "GLP-1s are a class of drugs, first for diabetes, then weight loss. Their huge sales changed what drugmakers think is possible.",
+    "audio": true
+  },
+  {
+    "k": "trillion",
+    "t": "trillion",
+    "kind": "word",
+    "forms": [
+      "$1trn"
+    ],
+    "text": "$1trn means one trillion dollars, a thousand billion. Eli Lilly was the first drugmaker worth that much.",
+    "audio": true
+  },
+  {
+    "k": "bloom-of-youth",
+    "t": "bloom of youth",
+    "kind": "phrase",
+    "forms": [
+      "bloom of youth"
+    ],
+    "text": "The bloom of youth is the fresh, healthy look of being young. It is the section title's playful nod to what customers want.",
+    "audio": true
+  },
+  {
+    "k": "impatient",
+    "t": "impatient",
+    "kind": "word",
+    "forms": [
+      "impatient"
+    ],
+    "text": "Impatient people will not wait. Here, customers want results before real medicines exist.",
+    "audio": true
+  },
+  {
+    "k": "catering-to",
+    "t": "catering to",
+    "kind": "phrase",
+    "forms": [
+      "catering to"
+    ],
+    "text": "To cater to someone is to supply what they want.",
+    "audio": true
+  },
+  {
+    "k": "genome-sequencing",
+    "t": "genome sequencing",
+    "kind": "phrase",
+    "forms": [
+      "genome sequencing"
+    ],
+    "text": "Genome sequencing reads a person's complete set of DNA to look for risks.",
+    "audio": true
+  },
+  {
+    "k": "autoimmune",
+    "t": "autoimmune",
+    "kind": "word",
+    "forms": [
+      "autoimmune"
+    ],
+    "text": "An autoimmune disorder is one where the immune system attacks the body's own healthy cells.",
+    "audio": true
+  },
+  {
+    "k": "symptoms",
+    "t": "symptoms",
+    "kind": "word",
+    "forms": [
+      "symptoms"
+    ],
+    "text": "Symptoms are signs of illness a patient can notice, like pain or fever.",
+    "audio": true
+  },
+  {
+    "k": "mri",
+    "t": "MRI",
+    "kind": "word",
+    "forms": [
+      "MRI"
+    ],
+    "text": "An MRI scan uses magnets and radio waves to make detailed images of the inside of the body.",
+    "audio": true
+  },
+  {
+    "k": "subscriptions",
+    "t": "subscriptions",
+    "kind": "word",
+    "forms": [
+      "subscriptions"
+    ],
+    "text": "A subscription is a regular payment for ongoing service, here repeated health tests.",
+    "audio": true
+  },
+  {
+    "k": "backed-by",
+    "t": "backed by",
+    "kind": "phrase",
+    "forms": [
+      "backed by"
+    ],
+    "text": "To be backed by someone is to be funded and supported by them.",
+    "audio": true
+  },
+  {
+    "k": "loosely-defined",
+    "t": "loosely defined",
+    "kind": "phrase",
+    "forms": [
+      "loosely defined"
+    ],
+    "text": "Loosely defined means no firm rules say what counts, so any clinic can use the label.",
+    "audio": true
+  },
+  {
+    "k": "as-though-ordering-pizza",
+    "t": "as though ordering pizza",
+    "kind": "phrase",
+    "forms": [
+      "as though ordering pizza"
+    ],
+    "text": "This simile says patients choose medical treatments casually, like picking a pizza topping, instead of being guided by a doctor.",
+    "audio": true
+  },
+  {
+    "k": "adventurous",
+    "t": "adventurous",
+    "kind": "word",
+    "forms": [
+      "adventurous"
+    ],
+    "text": "Adventurous means willing to take risks.",
+    "audio": true
+  },
+  {
+    "k": "experimental",
+    "t": "experimental",
+    "kind": "word",
+    "forms": [
+      "experimental"
+    ],
+    "text": "Experimental treatments are not yet proven safe or effective.",
+    "audio": true
+  },
+  {
+    "k": "stem-cell",
+    "t": "stem-cell",
+    "kind": "phrase",
+    "forms": [
+      "stem-cell"
+    ],
+    "text": "Stem cells can grow into many types of cell. Clinics inject them hoping to repair tissue; most such uses are unproven.",
+    "audio": true
+  },
+  {
+    "k": "elixirs",
+    "t": "elixirs",
+    "kind": "word",
+    "forms": [
+      "elixirs"
+    ],
+    "text": "An elixir is a magical-sounding potion said to cure or prolong life.",
+    "audio": true
+  },
+  {
+    "k": "peptides",
+    "t": "peptides",
+    "kind": "word",
+    "forms": [
+      "peptides"
+    ],
+    "text": "Peptides are short chains of amino acids, the building blocks of proteins. Some are sold as injections with big claims.",
+    "audio": true
+  },
+  {
+    "k": "tendons",
+    "t": "tendons",
+    "kind": "word",
+    "forms": [
+      "tendons"
+    ],
+    "text": "Tendons are tough cords connecting muscle to bone.",
+    "audio": true
+  },
+  {
+    "k": "cost-effective",
+    "t": "cost-effective",
+    "kind": "phrase",
+    "forms": [
+      "cost-effective"
+    ],
+    "text": "Cost-effective means worth the money because benefits outweigh costs.",
+    "audio": true
+  },
+  {
+    "k": "over-diagnosis",
+    "t": "over-diagnosis",
+    "kind": "word",
+    "forms": [
+      "over-diagnosis"
+    ],
+    "text": "Over-diagnosis means finding conditions that would never have caused harm, leading to needless worry and tests.",
+    "audio": true
+  },
+  {
+    "k": "anomalies",
+    "t": "anomalies",
+    "kind": "word",
+    "forms": [
+      "anomalies"
+    ],
+    "text": "An anomaly is something unusual. Most are harmless.",
+    "audio": true
+  },
+  {
+    "k": "inconclusive",
+    "t": "inconclusive",
+    "kind": "word",
+    "forms": [
+      "inconclusive"
+    ],
+    "text": "Inconclusive means the evidence does not settle the question either way.",
+    "audio": true
+  },
+  {
+    "k": "wild-west",
+    "t": "wild west",
+    "kind": "phrase",
+    "forms": [
+      "wild west"
+    ],
+    "text": "A wild west is a place with few rules, like the old American frontier.",
+    "audio": true
+  },
+  {
+    "k": "anecdotes",
+    "t": "anecdotes",
+    "kind": "word",
+    "forms": [
+      "anecdotes"
+    ],
+    "text": "An anecdote is a personal story, weaker evidence than a controlled study.",
+    "audio": true
+  },
+  {
+    "k": "dodge",
+    "t": "dodge",
+    "kind": "word",
+    "forms": [
+      "dodge"
+    ],
+    "text": "To dodge is to avoid. Sellers label peptides 'for research use only' to escape regulation.",
+    "audio": true
+  },
+  {
+    "k": "approval",
+    "t": "approval",
+    "kind": "word",
+    "forms": [
+      "approval"
+    ],
+    "text": "Approval is official permission to sell a medicine, given after trials show it is safe and works.",
+    "audio": true
+  },
+  {
+    "k": "placebo",
+    "t": "placebo",
+    "kind": "word",
+    "forms": [
+      "placebo"
+    ],
+    "text": "A placebo is a dummy treatment given to a comparison group, so scientists can tell what the real drug adds.",
+    "audio": true
+  },
+  {
+    "k": "preliminary",
+    "t": "preliminary",
+    "kind": "word",
+    "forms": [
+      "preliminary"
+    ],
+    "text": "Preliminary means early and subject to change.",
+    "audio": true
+  },
+  {
+    "k": "yardstick",
+    "t": "yardstick",
+    "kind": "word",
+    "forms": [
+      "yardstick"
+    ],
+    "text": "A yardstick is a standard used to measure or judge something.",
+    "audio": true
+  },
+  {
+    "k": "re-established",
+    "t": "re-established",
+    "kind": "word",
+    "forms": [
+      "re-established"
+    ],
+    "text": "To re-establish is to bring something back. GLP-1s showed big profits in mass-market drugs again.",
+    "audio": true
+  },
+  {
+    "k": "risk-appetite",
+    "t": "risk appetite",
+    "kind": "phrase",
+    "forms": [
+      "risk appetite"
+    ],
+    "text": "Risk appetite is how much uncertainty a company will accept. Pharma firms like large markets they understand.",
+    "audio": true
+  },
+  {
+    "k": "consultancy",
+    "t": "consultancy",
+    "kind": "word",
+    "forms": [
+      "consultancy"
+    ],
+    "text": "A consultancy is a firm that sells expert advice to companies.",
+    "audio": true
+  },
+  {
+    "k": "buy-options",
+    "t": "buy options",
+    "kind": "phrase",
+    "forms": [
+      "buy options"
+    ],
+    "text": "Buying an option is paying for the right, but not the duty, to acquire something later. Drugmakers can pick up a biotech's drug if it works.",
+    "audio": true
+  },
+  {
+    "k": "startups",
+    "t": "startups",
+    "kind": "word",
+    "forms": [
+      "startups"
+    ],
+    "text": "A startup is a young company, often betting on a new idea.",
+    "audio": true
+  },
+  {
+    "k": "therapeutics",
+    "t": "therapeutics",
+    "kind": "word",
+    "forms": [
+      "therapeutics"
+    ],
+    "text": "Therapeutics are treatments or medicines for disease.",
+    "audio": true
+  },
+  {
+    "k": "idiopathic",
+    "t": "idiopathic",
+    "kind": "word",
+    "forms": [
+      "idiopathic"
+    ],
+    "text": "Idiopathic means with no known cause.",
+    "audio": true
+  },
+  {
+    "k": "pulmonary-fibrosis",
+    "t": "pulmonary fibrosis",
+    "kind": "word",
+    "forms": [
+      "pulmonary fibrosis"
+    ],
+    "text": "Pulmonary fibrosis is a disease where lung tissue becomes scarred and stiff, making breathing hard.",
+    "audio": true
+  },
+  {
+    "k": "late-stage-trial",
+    "t": "late-stage trial",
+    "kind": "phrase",
+    "forms": [
+      "late-stage trial"
+    ],
+    "text": "A late-stage trial tests a drug on many patients, the last step before approval.",
+    "audio": true
+  },
+  {
+    "k": "epigenetic-reprogramming",
+    "t": "epigenetic reprogramming",
+    "kind": "word",
+    "forms": [
+      "epigenetic reprogramming"
+    ],
+    "text": "Epigenetic reprogramming means resetting the chemical switches on DNA that control which genes are on, aiming to make old cells act young.",
+    "audio": true
+  },
+  {
+    "k": "reverse",
+    "t": "reverse",
+    "kind": "word",
+    "forms": [
+      "reverse"
+    ],
+    "text": "To reverse is to make something go backwards, here, undoing ageing instead of just slowing it.",
+    "audio": true
+  },
+  {
+    "k": "muddled",
+    "t": "muddled",
+    "kind": "word",
+    "forms": [
+      "muddled"
+    ],
+    "text": "Muddled means confused or mixed up.",
+    "audio": true
+  },
+  {
+    "k": "disappointment",
+    "t": "disappointment",
+    "kind": "word",
+    "forms": [
+      "disappointment"
+    ],
+    "text": "Here it means early longevity ventures failed to deliver.",
+    "audio": true
+  },
+  {
+    "k": "resveratrol",
+    "t": "resveratrol",
+    "kind": "word",
+    "forms": [
+      "resveratrol"
+    ],
+    "text": "Resveratrol is a compound in red wine once hoped to slow ageing.",
+    "audio": true
+  },
+  {
+    "k": "laid-off",
+    "t": "laid off",
+    "kind": "phrase",
+    "forms": [
+      "laid off"
+    ],
+    "text": "To lay off workers is to dismiss them, usually because the company cannot afford them.",
+    "audio": true
+  },
+  {
+    "k": "accelerate",
+    "t": "accelerate",
+    "kind": "word",
+    "forms": [
+      "accelerate"
+    ],
+    "text": "To accelerate is to speed up.",
+    "audio": true
+  }
+]
