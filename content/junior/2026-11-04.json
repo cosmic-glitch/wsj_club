@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-04",
+  "title": "Why it’s a bad time to be a rat-killer",
+  "articleUrl": "https://www.economist.com/business/2026/10/29/why-its-a-bad-time-to-be-a-rat-killer",
+  "articlePageUrl": "/articles/junior/2026-11-04.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "bungled",
+      "partOfSpeech": "adjective",
+      "pronunciation": "BUNG-guld",
+      "articleQuote": "so badly bungled",
+      "meaning": "To bungle something is to do a job clumsily and mess it up. Something bungled was handled so poorly that it went wrong. In the article, Rentokil's takeover of another company was so badly bungled that investors sued.",
+      "examples": [
+        "Our bungled science experiment spilled all over the lab table.",
+        "He bungled the relay race when he dropped the baton."
+      ]
+    },
+    {
+      "word": "recurring",
+      "partOfSpeech": "adjective",
+      "pronunciation": "rih-KUR-ing",
+      "articleQuote": "80% of pest-control revenue is recurring",
+      "meaning": "Recurring means happening again and again, often on a schedule. The word starts with \"re,\" meaning again. In the article, most pest-control money is recurring because customers pay for regular visits, not just one.",
+      "examples": [
+        "I have a recurring dentist visit every six months.",
+        "A recurring dream kept bringing her back to the same funny house."
+      ]
+    },
+    {
+      "word": "purge",
+      "partOfSpeech": "verb",
+      "pronunciation": "PURJ",
+      "articleQuote": "will pay to purge them",
+      "meaning": "To purge something is to get rid of it completely. You usually purge things that are unwanted or harmful. In the article, people will pay to purge bed bugs from their homes, no matter how the economy is doing.",
+      "examples": [
+        "We purged the old, broken toys from the closet.",
+        "She purged her phone of games she never played."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Private equity",
+      "articleQuote": "First is private equity.",
+      "meaning": "Who owns the companies you buy things from? Some companies are owned by regular people who buy small pieces called **shares** on the stock market. But others are owned by a **private equity** firm, a group that collects lots of money from rich investors and uses it to buy whole companies.\n\nImagine a kid who gathers money from friends and buys three lemonade stands. She merges them into one big business, then hopes to sell it later for more than she paid. Private equity firms do the same thing with real companies, just far bigger.\n\nThe article says private equity firms have bought many small pest-control companies and merged them. Their share of the biggest firms' sales has quadrupled since 2020, so the old giants face more competition.\n\nSo the takeaway: private equity means a firm uses investors' money to buy whole companies, often joining them together to grow and sell for a profit."
+    },
+    {
+      "name": "Share price",
+      "articleQuote": "Rollins’s share price has fallen by 44% this year",
+      "meaning": "How do you own a tiny piece of a company? You buy a **share**. A share price is what one share costs right now, and it changes every day as people decide what the company is worth.\n\nThink of a trading card. If everyone wants it, the price goes up. If people think it is less special, the price drops. Share prices work the same way, based on what people expect the company to earn in the future.\n\nIn the article, Rollins's share price fell 44% this year. That means investors expect it to do worse than before, even though people still need pest control.\n\nSo the takeaway: a share price shows how much people think a company is worth, and a falling price means they are growing less hopeful."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why is it described as a good time to be a rat?",
+      "options": [
+        "Cities have more rubbish to eat and a warmer climate helps breeding",
+        "Rats are now protected by law",
+        "Pest-control companies are giving up",
+        "Winters have become much colder"
+      ],
+      "answerIndex": 0,
+      "explanation": "Warmer weather and busier cities with more rubbish help rats thrive."
+    },
+    {
+      "question": "How did Orkin get started in 1901?",
+      "options": [
+        "A scientist invented a robot trap",
+        "A 14-year-old sold rat poison door-to-door",
+        "A king ordered a pest army",
+        "A farmer opened a large factory"
+      ],
+      "answerIndex": 1,
+      "explanation": "Otto Orkin, a 14-year-old immigrant, sold rat poison door-to-door in Pennsylvania."
+    },
+    {
+      "question": "What is one new threat to the big pest-control companies?",
+      "options": [
+        "A shortage of bed bugs",
+        "Laws banning all pesticides",
+        "Private equity firms buying and merging small competitors",
+        "Customers refusing to pay anything"
+      ],
+      "answerIndex": 2,
+      "explanation": "Private-equity-owned firms have quadrupled their share by buying smaller providers."
+    },
+    {
+      "question": "Why might AI chatbots send customers to smaller firms?",
+      "options": [
+        "Chatbots only like small companies",
+        "They scrape sites like Reddit, which has friendlier reviews of local firms",
+        "Big firms block all chatbots",
+        "Small firms pay chatbots"
+      ],
+      "answerIndex": 1,
+      "explanation": "Bots draw on sites like Reddit, where local firms get more and rosier reviews."
+    },
+    {
+      "question": "What does it mean if a company's share price falls 44%?",
+      "options": [
+        "The company gave away shares",
+        "The company has no customers",
+        "Investors now think the company is worth less",
+        "The company changed its name"
+      ],
+      "answerIndex": 2,
+      "explanation": "A falling share price shows investors are less hopeful about the company's future."
+    }
+  ]
+}
