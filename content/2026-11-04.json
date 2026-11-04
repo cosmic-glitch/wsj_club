@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-04",
+  "title": "A landslide for Democrats. A rebuke to Donald Trump",
+  "articleUrl": "https://www.economist.com/united-states/2026/11/04/a-landslide-for-democrats-a-rebuke-to-donald-trump",
+  "articlePageUrl": "/articles/2026-11-04.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "inauspicious",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-aw-SPISH-us",
+      "articleQuote": "Add to that inauspicious sign the fact that the out-of-power party almost always gains seats",
+      "meaning": "Inauspicious describes something that seems to point toward a bad outcome, like dark clouds before a picnic. Its opposite, auspicious, means a sign of good luck. The word comes from an old Roman practice of reading birds for omens. Here, Mr Trump's record-low approval rating is an inauspicious sign for his party because it hints that Republicans are heading for a loss.",
+      "examples": [
+        "The team's first game was an inauspicious start to the season, a 10-0 defeat.",
+        "Heavy rain on opening day was an inauspicious beginning for the new theme park."
+      ]
+    },
+    {
+      "word": "drubbing",
+      "partOfSpeech": "noun",
+      "pronunciation": "DRUB-ing",
+      "articleQuote": "Mr Trump’s drubbing recalls that suffered by George W. Bush in 2006",
+      "meaning": "A drubbing is a crushing, one-sided defeat, as if the loser had been beaten with a stick (the verb to drub originally meant to thrash). It is used for sports, elections, and arguments where one side is simply overwhelmed. In the article, Mr Trump's drubbing means Republicans lost badly across the Senate, House and governorships, much as they did under George W. Bush in 2006.",
+      "examples": [
+        "Our school team took a 70-12 drubbing from the league champions.",
+        "The debate club suffered a drubbing when the other side answered every argument."
+      ]
+    },
+    {
+      "word": "fealty",
+      "partOfSpeech": "noun",
+      "pronunciation": "FEE-ul-tee",
+      "articleQuote": "Politicians who have, willingly and reluctantly, pledged their fealty to him",
+      "meaning": "Fealty is a promise of loyalty and faithful service to a leader. In medieval times a knight swore fealty to his lord, kneeling and vowing to serve him. Today the word is used, often with a hint of irony, for deep political loyalty. Here, Republicans who pledged fealty to Mr Trump promised to stay behind him, and now must decide whether that loyalty still pays.",
+      "examples": [
+        "The knight swore fealty to the king before the whole court.",
+        "Members of the gang owed fealty to their leader, whatever he asked."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Midterm elections and the “wave”",
+      "articleQuote": "the out-of-power party almost always gains seats in the midterms",
+      "meaning": "Civics. America elects its president every four years, and **midterm elections** happen halfway through that term, two years in. Voters choose the entire **House of Representatives** (435 seats, all re-elected every two years), about a third of the **Senate** (100 seats, six-year terms), and many state governors. The president is not on the ballot, so the vote works like a report card on how he is doing.\n\nHistory shows a pattern: the president's party usually loses seats, because unhappy voters turn out to punish the party in charge. When the swing is unusually large, it is called a **wave**. This article describes a giant one: Democrats won the national popular vote for the House by about 13 percentage points and gained control of the Senate, which needs 51 of 100 seats for a majority.\n\nWhat control changes: Congress writes laws and holds the budget. A party that controls both chambers can block the president's plans, and investigate his administration. But the article notes Democrats still lack a **veto-proof majority**: overriding a presidential veto takes two-thirds of each chamber, so the president can still stop their bills."
+    },
+    {
+      "name": "Gerrymandering and redistricting",
+      "articleQuote": "Republicans embarked on a mid-decade gerrymandering spree across the South",
+      "meaning": "Civics. Each member of the House represents a **district**, a geographic area with roughly equal numbers of people. The lines are redrawn (**redistricting**) after each census, usually by state politicians. **Gerrymandering** is drawing those lines to help your own party win: pack the other side's voters into a few districts they win by huge margins, and spread your own voters so you win many districts narrowly.\n\nA simple example: a state has 100 voters in 5 districts, 60 for Party A and 40 for Party B. Fair lines could give A three seats and B two. But if the line-drawers, from Party A, cram B voters into two districts and spread A voters out, A can win all five seats by thin margins.\n\nThe catch, and the story here: a gerrymander is a bet that voters will keep voting the way they did last time. Republicans redrew maps mid-decade, gambling that Hispanic voters would stay with them. When those voters swung back to Democrats, the maps backfired: Democrats still won districts drawn to favour Mr Trump, three in Florida and at least three in Texas."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did the article say a Republican loss was expected even before election day?",
+      "options": [
+        "Mr Trump had the lowest net approval of any president at this stage in 80 years, and the out-of-power party almost always gains seats in midterms",
+        "Republicans had fewer candidates than Democrats",
+        "Midterm elections are only open to Democratic voters",
+        "The Senate map strongly favoured Democrats"
+      ],
+      "answerIndex": 0,
+      "explanation": "Low presidential approval plus the usual midterm pattern pointed to a Republican loss; the surprise was its size."
+    },
+    {
+      "question": "What does “drubbing” mean in “Mr Trump’s drubbing recalls that suffered by George W. Bush in 2006”?",
+      "options": [
+        "A narrow, disputed win",
+        "A crushing, one-sided defeat",
+        "A public apology",
+        "A peaceful handover of power"
+      ],
+      "answerIndex": 1,
+      "explanation": "A drubbing is a thorough beating; both Bush in 2006 and Trump this year saw their party lose badly."
+    },
+    {
+      "question": "What happened to Republicans' gerrymandering bet, according to the article?",
+      "options": [
+        "It worked perfectly and won them extra seats",
+        "It was struck down by the Senate",
+        "Hispanic voters swung heavily to Democrats, so Democrats still won several districts drawn to favour Mr Trump",
+        "It was ignored because no one voted in those districts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The maps assumed Hispanic voters' gains for Republicans would hold; they did not, nearly nullifying the effort in Florida and Texas."
+    },
+    {
+      "question": "Why does the article say the election will not herald “a new era of policymaking” for Democrats?",
+      "options": [
+        "Democrats lost the House",
+        "They still lack a veto-proof majority, so Mr Trump can block their bills",
+        "Midterm results do not count until the next presidential election",
+        "Democrats refused to take office"
+      ],
+      "answerIndex": 1,
+      "explanation": "Overriding a veto takes two-thirds of each chamber, which Democrats do not have, even in a landslide."
+    },
+    {
+      "question": "What choice does the article say Republicans now face, using the idea of “fealty”?",
+      "options": [
+        "Whether to switch parties to avoid paying taxes",
+        "Whether to criticise Mr Trump and risk a primary challenge, or stay loyal and risk losing the general election",
+        "Whether to resign from the Senate immediately",
+        "Whether to join the Democrats' governing coalition"
+      ],
+      "answerIndex": 1,
+      "explanation": "Politicians who pledged loyalty face a dilemma: criticise him and he may end their career in a primary, cling to him and he could end it in the general."
+    }
+  ]
+}

@@ -1,0 +1,619 @@
+[
+  {
+    "k": "inauspicious",
+    "t": "inauspicious",
+    "kind": "vocab",
+    "pron": "in-aw-SPISH-us",
+    "forms": [
+      "inauspicious"
+    ],
+    "text": "Inauspicious means pointing toward a bad outcome, the opposite of auspicious, which signals good luck. The word goes back to Roman priests who read the flight of birds for omens. Mr Trump's record-low approval was an inauspicious sign for Republicans.",
+    "audio": true
+  },
+  {
+    "k": "drubbing",
+    "t": "drubbing",
+    "kind": "vocab",
+    "pron": "DRUB-ing",
+    "forms": [
+      "drubbing"
+    ],
+    "text": "A drubbing is a crushing, one-sided defeat, as if the loser had been thrashed with a stick. Here it describes how badly Republicans lost, much as under George W. Bush in 2006.",
+    "audio": true
+  },
+  {
+    "k": "fealty",
+    "t": "fealty",
+    "kind": "vocab",
+    "pron": "FEE-ul-tee",
+    "forms": [
+      "fealty"
+    ],
+    "text": "Fealty is a pledge of loyalty to a leader, originally a knight's vow to his lord. Republicans who swore fealty to Mr Trump now must decide whether that loyalty is still worth it.",
+    "audio": true
+  },
+  {
+    "k": "midterms",
+    "t": "midterms",
+    "kind": "word",
+    "forms": [
+      "midterms",
+      "midterm"
+    ],
+    "text": "Midterm elections take place halfway through a president's four-year term. The president is not on the ballot, so they work like a report card on his performance, and his party usually loses seats.",
+    "audio": true
+  },
+  {
+    "k": "net-approval-rating",
+    "t": "net approval rating",
+    "kind": "word",
+    "forms": [
+      "net approval rating"
+    ],
+    "text": "Net approval is the share of people who approve of a leader minus the share who disapprove. A negative number means more people disapprove than approve.",
+    "audio": true
+  },
+  {
+    "k": "out-of-power-party",
+    "t": "out-of-power party",
+    "kind": "phrase",
+    "forms": [
+      "out-of-power party"
+    ],
+    "text": "The out-of-power party is the one that does not hold the presidency. Its voters are often more eager to turn out in a midterm, which is why it tends to gain seats.",
+    "audio": true
+  },
+  {
+    "k": "wipeout",
+    "t": "wipeout",
+    "kind": "word",
+    "forms": [
+      "wipeout"
+    ],
+    "text": "A wipeout is a total defeat, borrowed from surfing, where a wave knocks a rider off the board. Here it means Republicans did far worse than expected.",
+    "audio": true
+  },
+  {
+    "k": "popular-vote",
+    "t": "popular vote",
+    "kind": "word",
+    "forms": [
+      "popular vote"
+    ],
+    "text": "The popular vote is the total number of votes cast across the whole country, regardless of how they are split among districts or states. A party can win the popular vote yet still win fewer seats.",
+    "audio": true
+  },
+  {
+    "k": "house-of-representatives",
+    "t": "House of Representatives",
+    "kind": "word",
+    "forms": [
+      "House of Representatives",
+      "House"
+    ],
+    "text": "The House of Representatives is the larger chamber of Congress, with 435 members, each representing one district. All of them face election every two years.",
+    "audio": true
+  },
+  {
+    "k": "percentage-points",
+    "t": "percentage points",
+    "kind": "word",
+    "forms": [
+      "percentage points",
+      "percentage point"
+    ],
+    "text": "A percentage point is the gap between two percentages. If one party gets 53% and the other 40%, the lead is 13 percentage points, which is not the same as a 13% lead.",
+    "audio": true
+  },
+  {
+    "k": "polling-averages",
+    "t": "polling averages",
+    "kind": "word",
+    "forms": [
+      "polling averages"
+    ],
+    "text": "A polling average combines many opinion polls into one number, which smooths out the errors of any single poll. Democrats did about four points better than that average predicted.",
+    "audio": true
+  },
+  {
+    "k": "landslide",
+    "t": "landslide",
+    "kind": "word",
+    "forms": [
+      "landslide"
+    ],
+    "text": "A landslide is literally a mass of earth sliding down a hill. In politics it means a victory by an overwhelming margin.",
+    "audio": true
+  },
+  {
+    "k": "senate",
+    "t": "Senate",
+    "kind": "word",
+    "forms": [
+      "Senate",
+      "upper chamber"
+    ],
+    "text": "The Senate has 100 members, two per state, serving six-year terms. A majority of 51 lets a party control which bills and appointments move forward. It is called the upper chamber.",
+    "audio": true
+  },
+  {
+    "k": "strongholds",
+    "t": "strongholds",
+    "kind": "word",
+    "forms": [
+      "strongholds"
+    ],
+    "text": "A stronghold is a place where one side is overwhelmingly strong. Republican strongholds are states, like Texas or Ohio, where Republicans normally win easily.",
+    "audio": true
+  },
+  {
+    "k": "eye-popping",
+    "t": "eye-popping",
+    "kind": "phrase",
+    "forms": [
+      "eye-popping"
+    ],
+    "text": "Eye-popping describes something so large or surprising that it makes you stare. Here it describes huge winning margins.",
+    "audio": true
+  },
+  {
+    "k": "blue-tsunami",
+    "t": "blue tsunami",
+    "kind": "phrase",
+    "forms": [
+      "blue tsunami"
+    ],
+    "text": "Blue is the colour American media uses for Democrats, red for Republicans. A tsunami is a giant wave, so a blue tsunami is a huge Democratic surge.",
+    "audio": true
+  },
+  {
+    "k": "drenched",
+    "t": "drenched",
+    "kind": "word",
+    "forms": [
+      "drenched"
+    ],
+    "text": "Drenched means soaked through. Continuing the water image of a tsunami, it says Democratic gains reached House and governor races, not just the Senate.",
+    "audio": true
+  },
+  {
+    "k": "gubernatorial",
+    "t": "gubernatorial",
+    "kind": "word",
+    "forms": [
+      "gubernatorial"
+    ],
+    "text": "Gubernatorial means having to do with a governor, the elected head of a US state.",
+    "audio": true
+  },
+  {
+    "k": "flipped",
+    "t": "flipped",
+    "kind": "word",
+    "forms": [
+      "flipped"
+    ],
+    "text": "To flip a seat is to win it from the other party. A flipped governor's mansion means the office changed party.",
+    "audio": true
+  },
+  {
+    "k": "governors-mansions",
+    "t": "governors’ mansions",
+    "kind": "phrase",
+    "forms": [
+      "governors’ mansions"
+    ],
+    "text": "Each state's governor lives in an official residence called the governor's mansion. The phrase stands for the governorship itself.",
+    "audio": true
+  },
+  {
+    "k": "forbidding",
+    "t": "forbidding",
+    "kind": "word",
+    "forms": [
+      "forbidding"
+    ],
+    "text": "Forbidding usually describes something that looks unfriendly or threatening. Here the Senate map looked tough, meaning few Democratic pickups seemed possible.",
+    "audio": true
+  },
+  {
+    "k": "favourable-electoral-map",
+    "t": "favourable electoral map",
+    "kind": "phrase",
+    "forms": [
+      "electoral map"
+    ],
+    "text": "The electoral map is the set of states and districts up for election and which party leans where. In 2026 it favoured Republicans, but the national mood outweighed it.",
+    "audio": true
+  },
+  {
+    "k": "double-digits",
+    "t": "double digits",
+    "kind": "phrase",
+    "forms": [
+      "double digits"
+    ],
+    "text": "Double digits means a margin of ten or more points. A state Mr Trump won by double digits was not close.",
+    "audio": true
+  },
+  {
+    "k": "barrelled-into",
+    "t": "barrelled into",
+    "kind": "word",
+    "forms": [
+      "barrelled"
+    ],
+    "text": "To barrel into something is to rush into it recklessly, like a heavy barrel rolling downhill. The article says Mr Trump plunged into a conflict with Iran.",
+    "audio": true
+  },
+  {
+    "k": "trade-war",
+    "t": "trade war",
+    "kind": "word",
+    "forms": [
+      "trade war"
+    ],
+    "text": "A trade war is a fight between countries in which each raises taxes (tariffs) on the other's goods. It tends to raise prices for shoppers.",
+    "audio": true
+  },
+  {
+    "k": "recalls",
+    "t": "recalls",
+    "kind": "word",
+    "forms": [
+      "recalls"
+    ],
+    "text": "Recall can mean remember, but when a thing recalls another, it reminds you of it. Mr Trump's defeat resembles Bush's in 2006.",
+    "audio": true
+  },
+  {
+    "k": "iraq-war",
+    "t": "Iraq war",
+    "kind": "name",
+    "forms": [
+      "Iraq war"
+    ],
+    "text": "The Iraq war began in 2003 under George W. Bush and grew unpopular, helping Democrats win both chambers of Congress in 2006.",
+    "audio": true
+  },
+  {
+    "k": "fired-up",
+    "t": "fired up",
+    "kind": "phrase",
+    "forms": [
+      "fired up"
+    ],
+    "text": "To be fired up is to be full of energy and eager to act. Fired-up voters turn out in larger numbers.",
+    "audio": true
+  },
+  {
+    "k": "independents",
+    "t": "independents",
+    "kind": "word",
+    "forms": [
+      "independents"
+    ],
+    "text": "Independents are voters who do not belong to either major party. They often decide close elections, so losing them hurts.",
+    "audio": true
+  },
+  {
+    "k": "incumbent",
+    "t": "incumbent",
+    "kind": "word",
+    "forms": [
+      "incumbent"
+    ],
+    "text": "An incumbent is the person currently holding an office. Incumbents usually have an advantage, so losing the party's backing is unusual.",
+    "audio": true
+  },
+  {
+    "k": "concocted",
+    "t": "concocted",
+    "kind": "word",
+    "forms": [
+      "concocted"
+    ],
+    "text": "To concoct is to put together, often something unlikely. Candidates concocted from Democrats' fever dreams means they seemed made to order for the other side.",
+    "audio": true
+  },
+  {
+    "k": "fever-dreams",
+    "t": "fever dreams",
+    "kind": "phrase",
+    "forms": [
+      "fever dreams"
+    ],
+    "text": "A fever dream is a strange, vivid dream had when ill. Here it means a wild wish or imagining, in this case Democratic strategists' ideal opponents.",
+    "audio": true
+  },
+  {
+    "k": "sued",
+    "t": "sued",
+    "kind": "word",
+    "forms": [
+      "sued"
+    ],
+    "text": "To sue is to take someone to court to demand compensation or justice.",
+    "audio": true
+  },
+  {
+    "k": "swing",
+    "t": "swing",
+    "kind": "word",
+    "forms": [
+      "swing"
+    ],
+    "text": "A swing is a shift in votes from one party to another between elections. A heavy swing towards Democrats means many voters changed sides.",
+    "audio": true
+  },
+  {
+    "k": "shore-up",
+    "t": "shore up",
+    "kind": "phrase",
+    "forms": [
+      "shore up"
+    ],
+    "text": "To shore up is to strengthen something that is weak, like propping up a sagging wall.",
+    "audio": true
+  },
+  {
+    "k": "mid-decade-gerrymandering",
+    "t": "mid-decade gerrymandering",
+    "kind": "word",
+    "forms": [
+      "gerrymandering"
+    ],
+    "text": "Gerrymandering is drawing district boundaries to favour one party. Mid-decade means doing it between the usual once-every-ten-years redraws.",
+    "audio": true
+  },
+  {
+    "k": "spree",
+    "t": "spree",
+    "kind": "word",
+    "forms": [
+      "spree"
+    ],
+    "text": "A spree is a short burst of doing one thing without restraint, like a shopping spree.",
+    "audio": true
+  },
+  {
+    "k": "hold",
+    "t": "hold",
+    "kind": "word",
+    "forms": [
+      "hold"
+    ],
+    "text": "To hold means to continue. Republicans bet that their gains among Hispanic voters would hold, meaning last.",
+    "audio": true
+  },
+  {
+    "k": "counties",
+    "t": "counties",
+    "kind": "word",
+    "forms": [
+      "counties"
+    ],
+    "text": "A county is a subdivision of a US state. Election results are often compared county by county.",
+    "audio": true
+  },
+  {
+    "k": "staggering",
+    "t": "staggering",
+    "kind": "word",
+    "forms": [
+      "staggering"
+    ],
+    "text": "Staggering means so large it almost knocks you off balance. A 47-point win is astonishingly big.",
+    "audio": true
+  },
+  {
+    "k": "reversion",
+    "t": "reversion",
+    "kind": "word",
+    "forms": [
+      "reversion"
+    ],
+    "text": "Reversion is a return to an earlier state. The Hispanic vote reverting means it went back to its earlier Democratic lean.",
+    "audio": true
+  },
+  {
+    "k": "nullified",
+    "t": "nullified",
+    "kind": "word",
+    "forms": [
+      "nullified"
+    ],
+    "text": "To nullify is to cancel the effect of something. The redistricting plan barely achieved what it was designed to do.",
+    "audio": true
+  },
+  {
+    "k": "gerrymandered-districts",
+    "t": "gerrymandered districts",
+    "kind": "phrase",
+    "forms": [
+      "gerrymandered"
+    ],
+    "text": "A gerrymandered district has boundaries drawn to favour one party, so a Democratic win there is a sign of how large the swing was.",
+    "audio": true
+  },
+  {
+    "k": "turnout",
+    "t": "turnout",
+    "kind": "word",
+    "forms": [
+      "turnout"
+    ],
+    "text": "Turnout is the share of eligible people who actually vote.",
+    "audio": true
+  },
+  {
+    "k": "tout",
+    "t": "tout",
+    "kind": "word",
+    "forms": [
+      "tout"
+    ],
+    "text": "To tout is to promote something loudly. Republicans had little good news to tout.",
+    "audio": true
+  },
+  {
+    "k": "diesel",
+    "t": "diesel",
+    "kind": "word",
+    "forms": [
+      "diesel"
+    ],
+    "text": "Diesel is a fuel used by trucks, tractors and trains. Its price affects the cost of moving food and goods.",
+    "audio": true
+  },
+  {
+    "k": "mortgage-rates",
+    "t": "mortgage rates",
+    "kind": "word",
+    "forms": [
+      "Mortgage rates"
+    ],
+    "text": "A mortgage is a loan to buy a home, and the mortgage rate is its interest. Higher rates make homes more expensive each month.",
+    "audio": true
+  },
+  {
+    "k": "inflation-has-outrun-wage-growth",
+    "t": "inflation has outrun wage growth",
+    "kind": "phrase",
+    "forms": [
+      "inflation has outrun wage growth"
+    ],
+    "text": "When prices rise faster than pay, people can buy less than before, even though their paychecks are bigger.",
+    "audio": true
+  },
+  {
+    "k": "tariffs",
+    "t": "tariffs",
+    "kind": "word",
+    "forms": [
+      "tariffs"
+    ],
+    "text": "Tariffs are taxes on imported goods. They can raise prices and prompt other countries to retaliate, which hurt farmers who sell abroad.",
+    "audio": true
+  },
+  {
+    "k": "social-safety-net",
+    "t": "social-safety net",
+    "kind": "word",
+    "forms": [
+      "social-safety net"
+    ],
+    "text": "The social safety net is the set of programmes, like food aid and health insurance, that help people in hardship.",
+    "audio": true
+  },
+  {
+    "k": "mass-deportation-campaign",
+    "t": "mass-deportation campaign",
+    "kind": "phrase",
+    "forms": [
+      "mass-deportation"
+    ],
+    "text": "Deportation is forcing non-citizens to leave the country. A mass-deportation campaign does this on a large scale.",
+    "audio": true
+  },
+  {
+    "k": "fear-mongering",
+    "t": "fear-mongering",
+    "kind": "word",
+    "forms": [
+      "fear-mongering"
+    ],
+    "text": "Fear-mongering is deliberately stirring up fear to win support.",
+    "audio": true
+  },
+  {
+    "k": "wokery",
+    "t": "wokery",
+    "kind": "word",
+    "forms": [
+      "wokery"
+    ],
+    "text": "Wokery is a mocking term used by critics for progressive attitudes on social issues. It shows what some Republican candidates campaigned against.",
+    "audio": true
+  },
+  {
+    "k": "jihadist",
+    "t": "jihadist",
+    "kind": "word",
+    "forms": [
+      "jihadist"
+    ],
+    "text": "A jihadist is a violent Islamist extremist. Calling a political opponent one is a very serious, inflammatory charge.",
+    "audio": true
+  },
+  {
+    "k": "veto-proof-majority",
+    "t": "veto-proof majority",
+    "kind": "word",
+    "forms": [
+      "veto-proof majority"
+    ],
+    "text": "A president can veto a bill, but Congress can override that with two-thirds of both chambers. A party with such a majority is veto-proof. Democrats lack it.",
+    "audio": true
+  },
+  {
+    "k": "herald",
+    "t": "herald",
+    "kind": "word",
+    "forms": [
+      "herald"
+    ],
+    "text": "To herald is to announce or signal the arrival of something. The election does not herald a new era of lawmaking.",
+    "audio": true
+  },
+  {
+    "k": "unequivocal",
+    "t": "unequivocal",
+    "kind": "word",
+    "forms": [
+      "unequivocal"
+    ],
+    "text": "Unequivocal means clear, with no room for doubt.",
+    "audio": true
+  },
+  {
+    "k": "headlock",
+    "t": "headlock",
+    "kind": "word",
+    "forms": [
+      "headlock"
+    ],
+    "text": "A headlock is a wrestling hold gripping someone's head. To have a party in a headlock means controlling it tightly.",
+    "audio": true
+  },
+  {
+    "k": "primary",
+    "t": "primary",
+    "kind": "word",
+    "forms": [
+      "primary"
+    ],
+    "text": "A primary is an election within a party to choose its candidate for the main election. A president who is angry at a politician can back a rival in that primary.",
+    "audio": true
+  },
+  {
+    "k": "cling",
+    "t": "cling",
+    "kind": "word",
+    "forms": [
+      "Cling"
+    ],
+    "text": "To cling is to hold on tightly. Republicans who cling to Mr Trump could lose in the general election.",
+    "audio": true
+  },
+  {
+    "k": "general",
+    "t": "general",
+    "kind": "word",
+    "forms": [
+      "general"
+    ],
+    "text": "The general election is the contest between the parties' nominees, held after the primaries.",
+    "audio": true
+  }
+]
