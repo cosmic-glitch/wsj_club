@@ -1,0 +1,718 @@
+[
+  {
+    "k": "ubiquity",
+    "t": "ubiquity",
+    "kind": "vocab",
+    "pron": "yoo-BIK-wih-tee",
+    "forms": [
+      "ubiquity"
+    ],
+    "text": "Ubiquity is being everywhere at once. Richter's music shows up in movies, TV shows, and on phones, so it is hard to avoid.",
+    "audio": true
+  },
+  {
+    "k": "medley",
+    "t": "medley",
+    "kind": "vocab",
+    "pron": "MED-lee",
+    "forms": [
+      "medley"
+    ],
+    "text": "A medley is a mix of different things put together. Richter's style blends classical, electronic, and other influences.",
+    "audio": true
+  },
+  {
+    "k": "consoled",
+    "t": "consoled",
+    "kind": "vocab",
+    "pron": "kun-SOHLD",
+    "forms": [
+      "consoled"
+    ],
+    "text": "To console someone is to comfort them. A listener may feel scared at first by the dark theme, then leave feeling comforted.",
+    "audio": true
+  },
+  {
+    "k": "composer",
+    "t": "composer",
+    "kind": "word",
+    "forms": [
+      "composer",
+      "composers"
+    ],
+    "text": "A composer is a person who writes music. Others play it.",
+    "audio": true
+  },
+  {
+    "k": "composition",
+    "t": "composition",
+    "kind": "word",
+    "forms": [
+      "composition",
+      "compositions"
+    ],
+    "text": "A composition is a piece of music that someone wrote. \"Sleep\" is one very long composition.",
+    "audio": true
+  },
+  {
+    "k": "musical-direction",
+    "t": "musical direction",
+    "kind": "phrase",
+    "forms": [
+      "musical direction"
+    ],
+    "text": "Musical direction means being in charge of how the music in a show sounds, such as picking and guiding what is played.",
+    "audio": true
+  },
+  {
+    "k": "immersive",
+    "t": "immersive",
+    "kind": "word",
+    "forms": [
+      "immersive"
+    ],
+    "text": "An immersive show surrounds you so that you feel like you are inside it, not just watching.",
+    "audio": true
+  },
+  {
+    "k": "symphony",
+    "t": "symphony",
+    "kind": "word",
+    "forms": [
+      "symphony"
+    ],
+    "text": "A symphony is a long piece of music played by a big group of musicians called an orchestra.",
+    "audio": true
+  },
+  {
+    "k": "sphere",
+    "t": "Sphere",
+    "kind": "name",
+    "forms": [
+      "Sphere"
+    ],
+    "text": "The Sphere is a huge ball-shaped arena in Las Vegas with giant screens inside and outside.",
+    "audio": true
+  },
+  {
+    "k": "soundtrack",
+    "t": "soundtrack",
+    "kind": "word",
+    "forms": [
+      "soundtrack"
+    ],
+    "text": "A soundtrack is the music made for a movie or show.",
+    "audio": true
+  },
+  {
+    "k": "nominated",
+    "t": "nominated",
+    "kind": "word",
+    "forms": [
+      "nominated"
+    ],
+    "text": "To be nominated is to be named as one of the possible winners of a prize.",
+    "audio": true
+  },
+  {
+    "k": "academy-award",
+    "t": "Academy Award",
+    "kind": "name",
+    "forms": [
+      "Academy Award"
+    ],
+    "text": "An Academy Award, or Oscar, is a top prize given each year for movies.",
+    "audio": true
+  },
+  {
+    "k": "streamed",
+    "t": "streamed",
+    "kind": "word",
+    "forms": [
+      "streamed"
+    ],
+    "text": "Music that is streamed is played over the internet instead of from a disc or a file you own.",
+    "audio": true
+  },
+  {
+    "k": "soulful",
+    "t": "soulful",
+    "kind": "word",
+    "forms": [
+      "soulful"
+    ],
+    "text": "Soulful music feels deep and full of feeling.",
+    "audio": true
+  },
+  {
+    "k": "string-quintet",
+    "t": "string quintet",
+    "kind": "name",
+    "forms": [
+      "string quintet"
+    ],
+    "text": "A string quintet is a group of five players who play string instruments such as violins and cellos.",
+    "audio": true
+  },
+  {
+    "k": "colonised",
+    "t": "colonised",
+    "kind": "word",
+    "forms": [
+      "colonised"
+    ],
+    "text": "To colonise a place is to move in and take it over. Here it is a joke: the music has spread into listeners' minds like a settler moving in.",
+    "audio": true
+  },
+  {
+    "k": "consciousness",
+    "t": "consciousness",
+    "kind": "word",
+    "forms": [
+      "consciousness"
+    ],
+    "text": "Your consciousness is your awareness, everything you notice and think about.",
+    "audio": true
+  },
+  {
+    "k": "heightens",
+    "t": "heightens",
+    "kind": "word",
+    "forms": [
+      "heightens"
+    ],
+    "text": "To heighten something is to make it stronger. The music makes emotions in a scene feel bigger.",
+    "audio": true
+  },
+  {
+    "k": "commutes",
+    "t": "commutes",
+    "kind": "word",
+    "forms": [
+      "commutes"
+    ],
+    "text": "A commute is the trip you make to get to work or school and back.",
+    "audio": true
+  },
+  {
+    "k": "reverie",
+    "t": "reverie",
+    "kind": "word",
+    "forms": [
+      "reverie"
+    ],
+    "text": "A reverie is a dreamy state where you drift into thought and forget what is around you.",
+    "audio": true
+  },
+  {
+    "k": "echoes",
+    "t": "echoes",
+    "kind": "word",
+    "forms": [
+      "echoes"
+    ],
+    "text": "Echoes are things that sound or feel like something from before. Here, parts of the new album remind you of an older piece.",
+    "audio": true
+  },
+  {
+    "k": "feat",
+    "t": "feat",
+    "kind": "word",
+    "forms": [
+      "feat"
+    ],
+    "text": "A feat is something hard that takes great skill to do.",
+    "audio": true
+  },
+  {
+    "k": "classical",
+    "t": "classical",
+    "kind": "word",
+    "forms": [
+      "classical"
+    ],
+    "text": "Classical music is written-down music from a long tradition, played with instruments like violins and pianos.",
+    "audio": true
+  },
+  {
+    "k": "pedigree",
+    "t": "pedigree",
+    "kind": "word",
+    "forms": [
+      "pedigree"
+    ],
+    "text": "A pedigree is a person's or thing's background, such as where they trained or came from. A good classical pedigree means a strong classical education.",
+    "audio": true
+  },
+  {
+    "k": "modernist",
+    "t": "modernist",
+    "kind": "word",
+    "forms": [
+      "modernist"
+    ],
+    "text": "A modernist breaks from old traditions and tries new styles.",
+    "audio": true
+  },
+  {
+    "k": "reminiscent",
+    "t": "reminiscent",
+    "kind": "word",
+    "forms": [
+      "reminiscent"
+    ],
+    "text": "If one thing is reminiscent of another, it reminds you of it.",
+    "audio": true
+  },
+  {
+    "k": "storied",
+    "t": "storied",
+    "kind": "word",
+    "forms": [
+      "storied"
+    ],
+    "text": "A storied company or place has a long, famous history.",
+    "audio": true
+  },
+  {
+    "k": "genre",
+    "t": "genre",
+    "kind": "word",
+    "forms": [
+      "genre"
+    ],
+    "text": "A genre is a type of music, movie, or book, such as pop, jazz, or classical.",
+    "audio": true
+  },
+  {
+    "k": "confine",
+    "t": "confine",
+    "kind": "word",
+    "forms": [
+      "confine"
+    ],
+    "text": "To confine something is to keep it inside limits. Richter says the classical label would box him in if he did not stretch it.",
+    "audio": true
+  },
+  {
+    "k": "bend",
+    "t": "bend",
+    "kind": "word",
+    "forms": [
+      "bend"
+    ],
+    "text": "Here, to bend a genre means to stretch its rules a bit instead of following them exactly.",
+    "audio": true
+  },
+  {
+    "k": "influence",
+    "t": "influence",
+    "kind": "word",
+    "forms": [
+      "influence",
+      "influences"
+    ],
+    "text": "An influence is a person or thing that shapes how someone creates. Kraftwerk shaped Richter's sound.",
+    "audio": true
+  },
+  {
+    "k": "minimalists",
+    "t": "minimalists",
+    "kind": "word",
+    "forms": [
+      "minimalists"
+    ],
+    "text": "Minimalists make music from a few simple pieces that repeat and change slowly.",
+    "audio": true
+  },
+  {
+    "k": "synthesisers",
+    "t": "synthesisers",
+    "kind": "word",
+    "forms": [
+      "synthesisers"
+    ],
+    "text": "A synthesiser is an electronic instrument that makes sounds with circuits instead of strings or pipes.",
+    "audio": true
+  },
+  {
+    "k": "vintage",
+    "t": "vintage",
+    "kind": "word",
+    "forms": [
+      "vintage"
+    ],
+    "text": "Vintage means old but valued, from an earlier time.",
+    "audio": true
+  },
+  {
+    "k": "mission-control",
+    "t": "mission control",
+    "kind": "phrase",
+    "forms": [
+      "mission control"
+    ],
+    "text": "Mission control is the room full of screens and switches where people guide a space flight. Richter jokes his studio looks like one.",
+    "audio": true
+  },
+  {
+    "k": "deems",
+    "t": "deems",
+    "kind": "word",
+    "forms": [
+      "deems"
+    ],
+    "text": "To deem something is to judge it to be a certain way.",
+    "audio": true
+  },
+  {
+    "k": "bizarre",
+    "t": "bizarre",
+    "kind": "word",
+    "forms": [
+      "bizarre"
+    ],
+    "text": "Bizarre means very strange.",
+    "audio": true
+  },
+  {
+    "k": "instincts",
+    "t": "instincts",
+    "kind": "word",
+    "forms": [
+      "instincts"
+    ],
+    "text": "Instincts are natural feelings about what to do without having to think hard.",
+    "audio": true
+  },
+  {
+    "k": "sweet-spot",
+    "t": "sweet spot",
+    "kind": "phrase",
+    "forms": [
+      "sweet spot"
+    ],
+    "text": "A sweet spot is the perfect middle place where things work best.",
+    "audio": true
+  },
+  {
+    "k": "choreographers",
+    "t": "choreographers",
+    "kind": "word",
+    "forms": [
+      "choreographers"
+    ],
+    "text": "A choreographer plans the dance moves for a performance.",
+    "audio": true
+  },
+  {
+    "k": "ballet",
+    "t": "ballet",
+    "kind": "word",
+    "forms": [
+      "ballet"
+    ],
+    "text": "A ballet is a story or show told with dance.",
+    "audio": true
+  },
+  {
+    "k": "post-apocalyptic",
+    "t": "post-apocalyptic",
+    "kind": "word",
+    "forms": [
+      "post-apocalyptic"
+    ],
+    "text": "Post-apocalyptic stories take place after a huge disaster has ended the world as we know it.",
+    "audio": true
+  },
+  {
+    "k": "trilogy",
+    "t": "trilogy",
+    "kind": "word",
+    "forms": [
+      "trilogy"
+    ],
+    "text": "A trilogy is a set of three books or movies that go together.",
+    "audio": true
+  },
+  {
+    "k": "premiere",
+    "t": "premiere",
+    "kind": "word",
+    "forms": [
+      "premiere"
+    ],
+    "text": "A premiere is the first public showing or performance of something.",
+    "audio": true
+  },
+  {
+    "k": "cello",
+    "t": "cello",
+    "kind": "word",
+    "forms": [
+      "cello"
+    ],
+    "text": "A cello is a large string instrument played sitting down, with a bow. It sounds deep and warm.",
+    "audio": true
+  },
+  {
+    "k": "concerto",
+    "t": "concerto",
+    "kind": "word",
+    "forms": [
+      "concerto"
+    ],
+    "text": "A concerto is a piece of music where one solo instrument, like a cello, plays with an orchestra.",
+    "audio": true
+  },
+  {
+    "k": "meditative",
+    "t": "meditative",
+    "kind": "word",
+    "forms": [
+      "meditative"
+    ],
+    "text": "Meditative music is calm and makes you quiet and thoughtful.",
+    "audio": true
+  },
+  {
+    "k": "cleansing",
+    "t": "cleansing",
+    "kind": "word",
+    "forms": [
+      "cleansing"
+    ],
+    "text": "Here, cleansing means it makes you feel refreshed, as if worries were washed away.",
+    "audio": true
+  },
+  {
+    "k": "habitat",
+    "t": "habitat",
+    "kind": "word",
+    "forms": [
+      "habitat"
+    ],
+    "text": "A habitat is the natural place an animal lives. Here it is a joke: phones and films are where the music feels most at home.",
+    "audio": true
+  },
+  {
+    "k": "lulls",
+    "t": "lulls",
+    "kind": "word",
+    "forms": [
+      "lulls"
+    ],
+    "text": "To lull someone is to calm them, sometimes so much that they stop paying attention.",
+    "audio": true
+  },
+  {
+    "k": "challenges",
+    "t": "challenges",
+    "kind": "word",
+    "forms": [
+      "challenges"
+    ],
+    "text": "Here, art that challenges makes you think hard or feel uncomfortable instead of just relaxing.",
+    "audio": true
+  },
+  {
+    "k": "prominent",
+    "t": "prominent",
+    "kind": "word",
+    "forms": [
+      "prominent"
+    ],
+    "text": "A prominent person is well known and important in their field.",
+    "audio": true
+  },
+  {
+    "k": "fatalism",
+    "t": "fatalism",
+    "kind": "word",
+    "forms": [
+      "fatalism"
+    ],
+    "text": "Fatalism is the feeling that bad things will happen and nothing can be done. The critic says Richter's music has a gentle bit of it.",
+    "audio": true
+  },
+  {
+    "k": "acquiescence",
+    "t": "acquiescence",
+    "kind": "word",
+    "forms": [
+      "acquiescence"
+    ],
+    "text": "Acquiescence is giving in quietly without a fight.",
+    "audio": true
+  },
+  {
+    "k": "incorporates",
+    "t": "incorporates",
+    "kind": "word",
+    "forms": [
+      "incorporates"
+    ],
+    "text": "To incorporate something is to include it as a part.",
+    "audio": true
+  },
+  {
+    "k": "protest",
+    "t": "protest",
+    "kind": "word",
+    "forms": [
+      "protest"
+    ],
+    "text": "A protest is a way of showing you strongly disagree with something.",
+    "audio": true
+  },
+  {
+    "k": "mechanised",
+    "t": "mechanised",
+    "kind": "word",
+    "forms": [
+      "mechanised"
+    ],
+    "text": "Mechanised means done by machines.",
+    "audio": true
+  },
+  {
+    "k": "apocalypse",
+    "t": "apocalypse",
+    "kind": "word",
+    "forms": [
+      "apocalypse"
+    ],
+    "text": "An apocalypse is the end of the world, or a huge disaster.",
+    "audio": true
+  },
+  {
+    "k": "vandalism",
+    "t": "vandalism",
+    "kind": "word",
+    "forms": [
+      "vandalism"
+    ],
+    "text": "Vandalism is deliberately damaging something. Environmental vandalism means harming nature on purpose or carelessly.",
+    "audio": true
+  },
+  {
+    "k": "greed",
+    "t": "greed",
+    "kind": "word",
+    "forms": [
+      "greed"
+    ],
+    "text": "Greed is wanting much more money or stuff than you need.",
+    "audio": true
+  },
+  {
+    "k": "omnivorousness",
+    "t": "omnivorousness",
+    "kind": "word",
+    "forms": [
+      "omnivorousness"
+    ],
+    "text": "Omnivorous means eating everything. Here, stylistic omnivorousness means borrowing from every style of writing or music.",
+    "audio": true
+  },
+  {
+    "k": "dystopian",
+    "t": "dystopian",
+    "kind": "word",
+    "forms": [
+      "dystopian"
+    ],
+    "text": "A dystopian world is a frightening, unfair imagined future.",
+    "audio": true
+  },
+  {
+    "k": "counterpoint",
+    "t": "counterpoint",
+    "kind": "word",
+    "forms": [
+      "counterpoint"
+    ],
+    "text": "Counterpoint is when two or more different melodies play at once and fit together.",
+    "audio": true
+  },
+  {
+    "k": "eerier",
+    "t": "eerier",
+    "kind": "word",
+    "forms": [
+      "eerier"
+    ],
+    "text": "Eerie means strange and a little spooky.",
+    "audio": true
+  },
+  {
+    "k": "prevail",
+    "t": "prevail",
+    "kind": "word",
+    "forms": [
+      "prevail"
+    ],
+    "text": "To prevail is to win out in the end.",
+    "audio": true
+  },
+  {
+    "k": "unsettled",
+    "t": "unsettled",
+    "kind": "word",
+    "forms": [
+      "unsettled"
+    ],
+    "text": "To be unsettled is to feel uneasy or disturbed.",
+    "audio": true
+  },
+  {
+    "k": "depict",
+    "t": "depict",
+    "kind": "word",
+    "forms": [
+      "depict"
+    ],
+    "text": "To depict is to show something in a picture, story, or music.",
+    "audio": true
+  },
+  {
+    "k": "elevate",
+    "t": "elevate",
+    "kind": "word",
+    "forms": [
+      "elevate"
+    ],
+    "text": "To elevate something is to lift it up and give it more attention or respect.",
+    "audio": true
+  },
+  {
+    "k": "life-raft",
+    "t": "life raft",
+    "kind": "phrase",
+    "forms": [
+      "life raft"
+    ],
+    "text": "A life raft is a small boat that saves people from sinking. Here, the music is a comfort in a flood of bad news.",
+    "audio": true
+  },
+  {
+    "k": "in-demand",
+    "t": "in demand",
+    "kind": "phrase",
+    "forms": [
+      "in demand"
+    ],
+    "text": "If someone is in demand, lots of people want their work.",
+    "audio": true
+  },
+  {
+    "k": "get-around",
+    "t": "get around",
+    "kind": "phrase",
+    "forms": [
+      "get around"
+    ],
+    "text": "In the first line, to get around means to be busy in many places.",
+    "audio": true
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-05",
+  "title": "Explaining the popularity of Max Richter’s compositions",
+  "articleUrl": "https://www.economist.com/culture/2026/11/04/explaining-the-popularity-of-max-richters-compositions",
+  "articlePageUrl": "/articles/junior/2026-11-05.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "ubiquity",
+      "partOfSpeech": "noun",
+      "pronunciation": "yoo-BIK-wih-tee",
+      "articleQuote": "Achieving such ubiquity would be a feat for any composer.",
+      "meaning": "Ubiquity is being everywhere at once, or seeming to be. Something with ubiquity shows up so often that you can hardly avoid it. In the article, Max Richter's music is in movies, TV shows, and on millions of phones, so it has ubiquity.",
+      "examples": [
+        "The ubiquity of smartphones means almost every kid at school has one.",
+        "Pizza has such ubiquity that you can find it in nearly every town."
+      ]
+    },
+    {
+      "word": "medley",
+      "partOfSpeech": "noun",
+      "pronunciation": "MED-lee",
+      "articleQuote": "Mr Richter’s medley of influences and instincts",
+      "meaning": "A medley is a mix of different things put together. In music, it can be several songs played as one piece. In the article, Richter's style is a medley of classical, electronic, and other influences.",
+      "examples": [
+        "Our choir sang a medley of songs from different movies.",
+        "She made a fruit salad that was a medley of berries, grapes, and melon."
+      ]
+    },
+    {
+      "word": "consoled",
+      "partOfSpeech": "adjective",
+      "pronunciation": "kun-SOHLD",
+      "articleQuote": "may come away consoled",
+      "meaning": "To console someone is to comfort them when they feel sad or upset. If you are consoled, you feel better and calmer. In the article, a listener may feel scared by the album's dark theme but leave the music feeling comforted.",
+      "examples": [
+        "He felt consoled when his friend sat beside him after the loss.",
+        "The puppy's wagging tail consoled her after a hard day."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Classical music",
+      "articleQuote": "the conventional distinction between classical music and other sorts",
+      "meaning": "What makes music \"classical\"? Classical music is music written down by a **composer** in a long tradition that goes back hundreds of years, played by instruments like violins, cellos, and pianos. Famous names include Bach and Mozart.\n\nThink of a recipe. A composer writes the notes on paper like a recipe, and musicians play it, sometimes years or even centuries later. Pop songs are often made by recording a band in a studio, but classical pieces start as written music that anyone with the skills can perform.\n\nIn the article, Max Richter studied at a famous music school and writes classical pieces, such as one for a string quintet (five string players). But he also mixes in electronic sounds, so he bends the old tradition.\n\nSo the takeaway: classical music is written-down music from a long tradition, and today's composers can mix it with other styles."
+    },
+    {
+      "name": "Minimalism",
+      "articleQuote": "American minimalists such as Philip Glass",
+      "meaning": "Can music be powerful if it is simple? In **minimalism**, composers use only a few notes or patterns and repeat them, changing them very slowly. The simplicity is the whole point.\n\nImagine a drum beat that repeats over and over, and every so often one beat shifts. At first it seems like nothing is happening, but after a minute you notice the pattern has slowly changed, and it feels hypnotic. Minimalist music works like that.\n\nThe article says Richter was influenced by American minimalists like Philip Glass. That helps explain why his music feels calm and simple, and why people play it to relax or even to sleep.\n\nSo the takeaway: minimalism builds music from a few simple pieces repeated and slowly changed, which often makes it calm."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which of Max Richter's works has been streamed more than 2 billion times?",
+      "options": [
+        "While the Flood Rages",
+        "Voices",
+        "Sleep",
+        "MaddAddam"
+      ],
+      "answerIndex": 2,
+      "explanation": "\"Sleep\", an eight-and-a-half-hour composition, has been streamed more than 2bn times."
+    },
+    {
+      "question": "Why is it remarkable that a classical composer is so popular?",
+      "options": [
+        "Classical music is usually less well known than other kinds",
+        "Classical music is always free",
+        "Classical composers rarely write for films",
+        "Classical music is only played in Las Vegas"
+      ],
+      "answerIndex": 0,
+      "explanation": "Being everywhere would be a feat for any composer, and it is more remarkable for one who writes classical music."
+    },
+    {
+      "question": "What does Richter think about the line between classical music and other kinds?",
+      "options": [
+        "It is very important",
+        "It is getting stronger",
+        "It should be a law",
+        "It is bizarre"
+      ],
+      "answerIndex": 3,
+      "explanation": "He calls the conventional distinction between classical and other music \"bizarre\"."
+    },
+    {
+      "question": "What do some critics say about Richter's music?",
+      "options": [
+        "It is too loud for concert halls",
+        "It is too sweet and lulls listeners rather than challenging them",
+        "It is too hard for young people",
+        "It only works in silent films"
+      ],
+      "answerIndex": 1,
+      "explanation": "Some listeners think the sweet spot is too sweet, and that partnerships with brands show his art lulls rather than challenges."
+    },
+    {
+      "question": "What does Richter say he wants his music to celebrate?",
+      "options": [
+        "Famous kings and queens",
+        "The latest technology",
+        "Ordinary human qualities that are easy to overlook",
+        "Winning contests"
+      ],
+      "answerIndex": 2,
+      "explanation": "He wants to celebrate and elevate ordinary human qualities that are easy to overlook, instead of adding to negativity."
+    }
+  ]
+}
