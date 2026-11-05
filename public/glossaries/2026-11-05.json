@@ -1,0 +1,614 @@
+[
+  {
+    "k": "tenure",
+    "t": "tenure",
+    "kind": "vocab",
+    "pron": "TEN-yur",
+    "forms": [
+      "tenure"
+    ],
+    "text": "Tenure is the length of time someone holds an office or job. Mr Abbott's long tenure as governor gave Democrats many years of his decisions to attack.",
+    "audio": true
+  },
+  {
+    "k": "abysmal",
+    "t": "abysmal",
+    "kind": "vocab",
+    "pron": "uh-BIZ-mul",
+    "forms": [
+      "abysmal"
+    ],
+    "text": "Abysmal means extremely bad, as if without a bottom, from the word abyss. The Economist calls Ken Paxton an abysmal candidate, meaning a very weak one.",
+    "audio": true
+  },
+  {
+    "k": "tempered",
+    "t": "tempered",
+    "kind": "vocab",
+    "pron": "TEM-purd",
+    "forms": [
+      "tempered"
+    ],
+    "text": "Tempered means softened or held in check by something else, a word borrowed from toughening steel with heat. Democrats' thrill is tempered by the knowledge that this year was unusual.",
+    "audio": true
+  },
+  {
+    "k": "everything-is-bigger-in-texas",
+    "t": "everything is bigger in Texas",
+    "kind": "phrase",
+    "forms": [
+      "Everything is bigger in Texas"
+    ],
+    "text": "A popular saying that Texas, a huge state, does everything on a grand scale. Ms Hinojosa uses it to joke about how big the surprise of her win was.",
+    "audio": true
+  },
+  {
+    "k": "victory-speech",
+    "t": "victory speech",
+    "kind": "phrase",
+    "forms": [
+      "victory speech"
+    ],
+    "text": "A speech a winning candidate gives on election night to thank supporters. Ms Hinojosa gave hers after beating the long-serving governor.",
+    "audio": true
+  },
+  {
+    "k": "governorship",
+    "t": "governorship",
+    "kind": "phrase",
+    "forms": [
+      "governorship"
+    ],
+    "text": "The office of governor, the top elected official of a US state. Democrats won it in Texas for the first time in decades.",
+    "audio": true
+  },
+  {
+    "k": "watch-party",
+    "t": "watch party",
+    "kind": "phrase",
+    "forms": [
+      "watch party"
+    ],
+    "text": "A gathering where supporters follow election results together on screens. Staffers at Mr Talarico's refreshed results pages in disbelief.",
+    "audio": true
+  },
+  {
+    "k": "glitch",
+    "t": "glitch",
+    "kind": "word",
+    "forms": [
+      "glitch"
+    ],
+    "text": "A glitch is a small technical fault. The staffers thought the strong early-voting numbers must be a glitch because they seemed too good to be true.",
+    "audio": true
+  },
+  {
+    "k": "pundits",
+    "t": "pundits",
+    "kind": "word",
+    "forms": [
+      "pundits"
+    ],
+    "text": "Pundits are commentators who give opinions on politics in the news. They had expected Mr Talarico to win only narrowly.",
+    "audio": true
+  },
+  {
+    "k": "bleary-eyed",
+    "t": "bleary-eyed",
+    "kind": "word",
+    "forms": [
+      "bleary-eyed"
+    ],
+    "text": "Bleary-eyed means with tired, unfocused eyes, usually from lack of sleep. These Texans stayed up past midnight celebrating.",
+    "audio": true
+  },
+  {
+    "k": "swept",
+    "t": "swept",
+    "kind": "word",
+    "forms": [
+      "swept",
+      "swept Texas"
+    ],
+    "text": "To sweep an election means to win nearly every contest. Here Democrats won most offices on the ballot, not just one or two.",
+    "audio": true
+  },
+  {
+    "k": "statewide-official",
+    "t": "statewide official",
+    "kind": "phrase",
+    "forms": [
+      "statewide official",
+      "statewide officials"
+    ],
+    "text": "Elected leaders chosen by voters across a whole state, such as the governor, attorney-general and comptroller, rather than by one district.",
+    "audio": true
+  },
+  {
+    "k": "flipping",
+    "t": "flipping",
+    "kind": "word",
+    "forms": [
+      "flipping",
+      "flipped"
+    ],
+    "text": "In politics, to flip a seat or county means to take it from the other party. Democrats flipped the Texas House and three suburban counties.",
+    "audio": true
+  },
+  {
+    "k": "outspent",
+    "t": "outspent",
+    "kind": "word",
+    "forms": [
+      "outspent"
+    ],
+    "text": "To outspend someone is to spend more money than they do. Republicans spent over twice as much as Democrats and still lost.",
+    "audio": true
+  },
+  {
+    "k": "upset",
+    "t": "upset",
+    "kind": "word",
+    "forms": [
+      "upset"
+    ],
+    "text": "An upset is an unexpected win by the side expected to lose. Calling this a stunning upset means few predicted it.",
+    "audio": true
+  },
+  {
+    "k": "red-state",
+    "t": "red state",
+    "kind": "phrase",
+    "forms": [
+      "red state",
+      "red"
+    ],
+    "text": "A red state is one that reliably votes Republican, since red is the Republican color on maps. Its counterpart, a blue state, leans Democratic.",
+    "audio": true
+  },
+  {
+    "k": "margin-of-victory",
+    "t": "margin of victory",
+    "kind": "phrase",
+    "forms": [
+      "margins of victory",
+      "margin"
+    ],
+    "text": "The margin is the gap between the winner's votes and the loser's. A margin over 20 points means a landslide.",
+    "audio": true
+  },
+  {
+    "k": "immigration-enforcement",
+    "t": "immigration-enforcement",
+    "kind": "phrase",
+    "forms": [
+      "immigration-enforcement"
+    ],
+    "text": "The government's efforts to find, detain and deport people in the country illegally. Some voters were dismayed by the tactics used.",
+    "audio": true
+  },
+  {
+    "k": "dismay",
+    "t": "dismay",
+    "kind": "word",
+    "forms": [
+      "dismay"
+    ],
+    "text": "Dismay is a feeling of distress or disappointment. Voters' dismay with the economy and enforcement tactics sent them back to Democrats.",
+    "audio": true
+  },
+  {
+    "k": "suburbs",
+    "t": "suburbs",
+    "kind": "word",
+    "forms": [
+      "suburbs"
+    ],
+    "text": "Suburbs are residential areas just outside a big city. Collin, Denton and Tarrant counties are suburbs north of Dallas that long leaned Republican.",
+    "audio": true
+  },
+  {
+    "k": "gerrymandered",
+    "t": "gerrymandered",
+    "kind": "phrase",
+    "forms": [
+      "gerrymandered"
+    ],
+    "text": "To gerrymander is to redraw district borders so your party wins more seats. Texas Republicans did it last year, yet Democrats won four of those five seats anyway.",
+    "audio": true
+  },
+  {
+    "k": "ostensibly",
+    "t": "ostensibly",
+    "kind": "word",
+    "forms": [
+      "ostensibly"
+    ],
+    "text": "Ostensibly means apparently or supposedly, hinting the real reason may differ. The new map was supposed to help Republicans, but it didn't.",
+    "audio": true
+  },
+  {
+    "k": "democratic-party-chairman",
+    "t": "Democratic Party chairman",
+    "kind": "phrase",
+    "forms": [
+      "state Democratic Party chairman",
+      "Democratic Party chairman"
+    ],
+    "text": "The chairman runs a party's organization, raising money and helping candidates, though he is not a government official. Kendall Scudder leads the Texas one.",
+    "audio": true
+  },
+  {
+    "k": "tax-and-spend-liberals",
+    "t": "tax-and-spend liberals",
+    "kind": "phrase",
+    "forms": [
+      "tax-and-spend liberals"
+    ],
+    "text": "A stock insult for politicians who supposedly raise taxes to fund big government. Mr Scudder says Texas Democrats are not like that.",
+    "audio": true
+  },
+  {
+    "k": "perpetuate",
+    "t": "perpetuate",
+    "kind": "word",
+    "forms": [
+      "perpetuate"
+    ],
+    "text": "To perpetuate something is to keep it going. Mr Scudder says Fox News keeps spreading myths about Democrats.",
+    "audio": true
+  },
+  {
+    "k": "stewards",
+    "t": "stewards",
+    "kind": "word",
+    "forms": [
+      "stewards"
+    ],
+    "text": "A steward looks after something that belongs to others. Responsible stewards of public money means spending it carefully.",
+    "audio": true
+  },
+  {
+    "k": "dispelling",
+    "t": "dispelling",
+    "kind": "word",
+    "forms": [
+      "dispelling"
+    ],
+    "text": "To dispel is to make something, like a false belief, disappear. Mr Scudder wants to dispel myths about Democrats.",
+    "audio": true
+  },
+  {
+    "k": "abortion-ban",
+    "t": "abortion ban",
+    "kind": "phrase",
+    "forms": [
+      "abortion ban"
+    ],
+    "text": "Texas law strictly limits abortion. Democrats were asked whether they'd roll it back, and the chairman did not directly answer.",
+    "audio": true
+  },
+  {
+    "k": "one-big-beautiful-bill-act",
+    "t": "One Big Beautiful Bill Act",
+    "kind": "phrase",
+    "forms": [
+      "One Big Beautiful Bill Act"
+    ],
+    "text": "A major law passed under President Trump that included spending cuts, notably to health care. Democrats hope to reverse the cuts.",
+    "audio": true
+  },
+  {
+    "k": "uninsured",
+    "t": "uninsured",
+    "kind": "word",
+    "forms": [
+      "uninsured"
+    ],
+    "text": "Uninsured people have no health insurance and may struggle to pay for care. Texas has the highest rate in the country.",
+    "audio": true
+  },
+  {
+    "k": "greg-abbott",
+    "t": "Greg Abbott",
+    "kind": "name",
+    "forms": [
+      "Greg Abbott",
+      "Mr Abbott"
+    ],
+    "text": "The Republican governor of Texas for three terms, defeated by Ms Hinojosa.",
+    "audio": true
+  },
+  {
+    "k": "constraints",
+    "t": "constraints",
+    "kind": "word",
+    "forms": [
+      "Constraints"
+    ],
+    "text": "Constraints are limits on what someone can do. A Texas governor's power is limited by the legislature and by officials she can't fire.",
+    "audio": true
+  },
+  {
+    "k": "trumpian",
+    "t": "Trumpian",
+    "kind": "word",
+    "forms": [
+      "Trumpian"
+    ],
+    "text": "Resembling the style of Donald Trump, such as bold, headline-grabbing promises. Here it describes a promise to send cash to every household.",
+    "audio": true
+  },
+  {
+    "k": "corruption-tax-refund",
+    "t": "corruption tax refund",
+    "kind": "phrase",
+    "forms": [
+      "corruption tax refund"
+    ],
+    "text": "Ms Hinojosa's name for her plan to send households $1,500, suggesting it returns money lost to corruption. It could cost $17bn.",
+    "audio": true
+  },
+  {
+    "k": "sack",
+    "t": "sack",
+    "kind": "word",
+    "forms": [
+      "sack"
+    ],
+    "text": "To sack someone means to fire them. The governor can't sack the roughly 2,500 officials who run state agencies.",
+    "audio": true
+  },
+  {
+    "k": "supreme-court-justices",
+    "t": "Supreme Court justices",
+    "kind": "phrase",
+    "forms": [
+      "Supreme Court justices"
+    ],
+    "text": "Texas's top civil court has nine justices. Seven were appointed by Mr Abbott, so the courts lean toward his views.",
+    "audio": true
+  },
+  {
+    "k": "dismantling",
+    "t": "dismantling",
+    "kind": "word",
+    "forms": [
+      "dismantling"
+    ],
+    "text": "To dismantle means to take something apart piece by piece. Ms Hinojosa plans to undo many of Mr Abbott's policies.",
+    "audio": true
+  },
+  {
+    "k": "data-centres",
+    "t": "data centres",
+    "kind": "phrase",
+    "forms": [
+      "data centres"
+    ],
+    "text": "Huge buildings full of computers that store and process online information. They use lots of electricity and water, so some voters resist them.",
+    "audio": true
+  },
+  {
+    "k": "corporate-welfare",
+    "t": "corporate welfare",
+    "kind": "phrase",
+    "forms": [
+      "corporate welfare"
+    ],
+    "text": "A critics' term for government help to businesses, like tax breaks. Businesses fear Ms Hinojosa will end them.",
+    "audio": true
+  },
+  {
+    "k": "tax-breaks",
+    "t": "tax breaks",
+    "kind": "phrase",
+    "forms": [
+      "tax breaks"
+    ],
+    "text": "Reductions in taxes offered to encourage something, such as a company building in a state.",
+    "audio": true
+  },
+  {
+    "k": "school-voucher-scheme",
+    "t": "school-voucher scheme",
+    "kind": "phrase",
+    "forms": [
+      "school-voucher scheme"
+    ],
+    "text": "A voucher is public money families can spend on private school tuition. Texas launched a $1bn program this autumn, which Democrats fought bitterly.",
+    "audio": true
+  },
+  {
+    "k": "comptroller",
+    "t": "comptroller",
+    "kind": "phrase",
+    "pron": "kuhn-TROH-lur",
+    "forms": [
+      "comptroller"
+    ],
+    "text": "The state's chief financial officer, who tracks and reports on money coming in and going out. Sarah Eckhardt will examine funding for private schools.",
+    "audio": true
+  },
+  {
+    "k": "scrutinising",
+    "t": "scrutinising",
+    "kind": "word",
+    "forms": [
+      "scrutinising"
+    ],
+    "text": "To scrutinise is to examine very closely, looking for problems.",
+    "audio": true
+  },
+  {
+    "k": "anti-corruption-legislation",
+    "t": "anti-corruption legislation",
+    "kind": "phrase",
+    "forms": [
+      "anti-corruption legislation"
+    ],
+    "text": "Laws designed to stop officials from misusing power or taking bribes.",
+    "audio": true
+  },
+  {
+    "k": "property-taxes",
+    "t": "property taxes",
+    "kind": "phrase",
+    "forms": [
+      "property taxes",
+      "levies"
+    ],
+    "text": "Taxes paid by owners of homes and land, mostly funding schools and local services. They rose 86% under Mr Abbott.",
+    "audio": true
+  },
+  {
+    "k": "attorney-general",
+    "t": "attorney-general",
+    "kind": "phrase",
+    "forms": [
+      "attorney-general"
+    ],
+    "text": "The state's top lawyer, who can sue on its behalf. Nathan Johnson may join other states suing the Trump administration.",
+    "audio": true
+  },
+  {
+    "k": "blue-states",
+    "t": "blue states",
+    "kind": "phrase",
+    "forms": [
+      "blue states"
+    ],
+    "text": "States that lean Democratic. The Economist calls it surreal to include Texas.",
+    "audio": true
+  },
+  {
+    "k": "surreal",
+    "t": "surreal",
+    "kind": "word",
+    "forms": [
+      "surreal"
+    ],
+    "text": "Surreal describes something so strange it feels like a dream.",
+    "audio": true
+  },
+  {
+    "k": "lobbyist",
+    "t": "lobbyist",
+    "kind": "word",
+    "forms": [
+      "lobbyist"
+    ],
+    "text": "A lobbyist is paid to persuade lawmakers on behalf of a group or company. Jason Sabo is a Democratic one in Austin.",
+    "audio": true
+  },
+  {
+    "k": "getting-punched-in-the-face",
+    "t": "getting punched in the face",
+    "kind": "phrase",
+    "forms": [
+      "getting punched in the face"
+    ],
+    "text": "A figurative way of saying suffering repeated defeats. Mr Sabo means Democrats lost for 30 years.",
+    "audio": true
+  },
+  {
+    "k": "staffing-up",
+    "t": "staffing up",
+    "kind": "phrase",
+    "forms": [
+      "staffing up"
+    ],
+    "text": "Hiring more workers. The new officials must quickly build teams to run their offices.",
+    "audio": true
+  },
+  {
+    "k": "muscle",
+    "t": "muscle",
+    "kind": "word",
+    "forms": [
+      "muscle"
+    ],
+    "text": "Here muscle means strength in people and organization needed to get things done.",
+    "audio": true
+  },
+  {
+    "k": "inauguration",
+    "t": "inauguration",
+    "kind": "word",
+    "forms": [
+      "inauguration"
+    ],
+    "text": "The ceremony where an elected leader formally takes office. Mr Scudder joked he must plan one.",
+    "audio": true
+  },
+  {
+    "k": "tempered-by",
+    "t": "tempered by",
+    "kind": "phrase",
+    "forms": [
+      "tempered by"
+    ],
+    "text": "Held in check by something else, as joy can be cooled by worry.",
+    "audio": true
+  },
+  {
+    "k": "angst",
+    "t": "angst",
+    "kind": "word",
+    "forms": [
+      "angst"
+    ],
+    "text": "Angst is a feeling of anxiety or frustration, often about the future. Voters' angst made them want change.",
+    "audio": true
+  },
+  {
+    "k": "deep-pocketed-donors",
+    "t": "deep-pocketed donors",
+    "kind": "phrase",
+    "forms": [
+      "deep-pocketed donors"
+    ],
+    "text": "Rich people who give large sums to campaigns.",
+    "audio": true
+  },
+  {
+    "k": "comeback",
+    "t": "comeback",
+    "kind": "word",
+    "forms": [
+      "comeback"
+    ],
+    "text": "A comeback is a return to strength after a defeat.",
+    "audio": true
+  },
+  {
+    "k": "political-realignment",
+    "t": "political realignment",
+    "kind": "phrase",
+    "forms": [
+      "political realignment"
+    ],
+    "text": "A lasting shift in which groups of voters support which party. One year's wave doesn't prove it.",
+    "audio": true
+  },
+  {
+    "k": "lone-star-state",
+    "t": "Lone Star State",
+    "kind": "name",
+    "forms": [
+      "Lone Star State"
+    ],
+    "text": "A nickname for Texas, from the single star on its flag.",
+    "audio": true
+  },
+  {
+    "k": "cal-jillson",
+    "t": "Cal Jillson",
+    "kind": "name",
+    "forms": [
+      "Cal Jillson"
+    ],
+    "text": "A political scientist at Southern Methodist University in Dallas whom the Economist quotes about Texas politics.",
+    "audio": true
+  }
+]

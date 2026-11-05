@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-05",
+  "title": "A political revolution in Texas",
+  "articleUrl": "https://www.economist.com/united-states/2026/11/04/a-political-revolution-in-texas",
+  "articlePageUrl": "/articles/2026-11-05.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "tenure",
+      "partOfSpeech": "noun",
+      "pronunciation": "TEN-yur",
+      "articleQuote": "Mr Abbott’s long tenure provided Democrats with an easy target",
+      "meaning": "Tenure is the length of time someone holds a job, office or position, and sometimes the right to keep it. A president's tenure is their years in the White House; a professor with tenure can't easily be fired. In the article, Mr Abbott's long tenure as governor means voters had many years of his decisions to blame, which made him easy for Democrats to attack.",
+      "examples": [
+        "During her tenure as class president, the school added a recycling program.",
+        "The coach's ten-year tenure ended with a championship."
+      ]
+    },
+    {
+      "word": "abysmal",
+      "partOfSpeech": "adjective",
+      "pronunciation": "uh-BIZ-mul",
+      "articleQuote": "Ken Paxton, the Republican Senate nominee, was an abysmal candidate",
+      "meaning": "Abysmal means extremely bad, so poor it seems to have no bottom. It comes from abyss, a bottomless pit. People use it for results, performances or behavior that is shockingly awful. Here the Economist is saying Mr Paxton was such a weak candidate that he helped Democrats win.",
+      "examples": [
+        "After an abysmal score on the first test, she started studying every night.",
+        "The restaurant's service was abysmal; we waited an hour for water."
+      ]
+    },
+    {
+      "word": "tempered",
+      "partOfSpeech": "adjective",
+      "pronunciation": "TEM-purd",
+      "articleQuote": "Democrats’ thrill at winning in Texas is tempered by the knowledge that this year was unusual",
+      "meaning": "To temper something is to soften or balance it, and tempered means held in check by something else. The word began with metalworking: heating and cooling steel makes it tougher and less brittle. Today you can say joy is tempered by worry, or a harsh rule tempered by kindness. Here, Democrats' excitement is cooled by the fact that this year's win may not repeat.",
+      "examples": [
+        "Her excitement about the trip was tempered by a fear of flying.",
+        "The teacher's strict rules were tempered by a sense of humor."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "School vouchers",
+      "articleQuote": "the state’s $1bn school-voucher scheme, which launched this autumn",
+      "meaning": "Public policy and education. Normally, tax money pays for public schools, and a child goes to the one assigned to their neighborhood. A voucher works like a gift card for school: the government gives a family a set amount of public money to spend on tuition at a private school instead. Supporters say it gives parents choice, especially if local schools are poor. Critics say it drains money from public schools and mostly helps families already in private school. In Texas, the new $1bn program is a big political fight, which is why Democrats plan to scrutinise how public money goes to private schools."
+    },
+    {
+      "name": "Political realignment",
+      "articleQuote": "political realignment doesn’t happen overnight",
+      "meaning": "Political science. Think of each party as a team whose fans come from certain groups: city dwellers, rural voters, suburbanites, and so on. A realignment is when large groups of voters switch teams and stay switched for years, so the map changes for a generation. It differs from a single upset, where voters swing because of one bad year or one bad candidate. Texas shows the difference: Democrats flipped suburbs north of Dallas and some South Texas districts, but experts warn that one wave doesn't prove a lasting shift. A true realignment shows up over several elections, not one."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What was the most surprising result of the Texas election, according to the article?",
+      "options": ["Democrats swept the statewide offices, flipped the Texas House and won the Senate seat", "Republicans outspent Democrats by a small margin", "Texas voters rejected every candidate", "The governor won a fourth term"],
+      "answerIndex": 0,
+      "explanation": "Democrats swept Texas, including the Senate seat, the governorship and the Texas House, in a stunning upset."
+    },
+    {
+      "question": "Why can't the new governor, Ms Hinojosa, easily reshape state government?",
+      "options": ["Texas governors have no power at all", "Thousands of bureaucrats serve long terms and she can't sack them, and the state Senate is Republican-controlled", "The courts have banned her policies", "She hasn't been sworn in as a citizen"],
+      "answerIndex": 1,
+      "explanation": "Around 2,500 officials serve fixed terms the governor cannot fire, and the Republican state Senate can block her plans."
+    },
+    {
+      "question": "Which campaign promise could cost about $17bn and is unlikely to pass?",
+      "options": ["Banning data centres", "Cutting property taxes", "Sending every household a $1,500 cheque", "Ending the abortion ban"],
+      "answerIndex": 2,
+      "explanation": "The “corruption tax refund” of $1,500 per household would be costly and the Republican Senate is unlikely to back it."
+    },
+    {
+      "question": "What does a school voucher do?",
+      "options": ["Lets families use public money for private school tuition", "Gives teachers a raise", "Closes all public schools", "Pays for school lunches"],
+      "answerIndex": 0,
+      "explanation": "A voucher gives families public funds to spend on private schooling."
+    },
+    {
+      "question": "Why does Cal Jillson say “Texas is not a blue state now”?",
+      "options": ["Because Republicans won every office", "Because one unusual year doesn't prove a lasting shift in voter loyalty", "Because Texas has no elections", "Because Democrats lost the suburbs"],
+      "answerIndex": 1,
+      "explanation": "Realignment is slow; this year's anger at Republicans may not last, and Republicans plan a comeback."
+    }
+  ]
+}
