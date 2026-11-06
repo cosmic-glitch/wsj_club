@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { AuthProvider } from "@/components/AuthProvider";
-import SiteHeader from "@/components/SiteHeader";
 import { anton, spaceMono } from "./fonts";
 import "./globals.css";
 
@@ -51,12 +50,10 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col">
         <AuthProvider>
-          {/* Hidden entirely on the home page, which brings its own masthead
-              and login controls (see SiteHeader). */}
-          <SiteHeader />
-          <main className="mx-auto w-full max-w-3xl flex-1 px-5 py-10">
-            {children}
-          </main>
+          {/* The page chrome lives in the route groups: (site) adds the
+              SiteHeader bar, (landing) — the two indexes, which bring their
+              own masthead and login controls — doesn't. */}
+          {children}
         </AuthProvider>
         <Analytics />
       </body>

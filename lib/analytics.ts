@@ -4,7 +4,7 @@ import type { Session } from "@/components/AdminSessions";
 import type { WordQuizAttempt } from "@/lib/word-quiz";
 
 /**
- * The Activity page's aggregation (app/admin/analytics) — pure functions over
+ * The Activity page's aggregation (app/(site)/admin/analytics) — pure functions over
  * the rows the page has already loaded and SCOPED (the page decides whose
  * events/sessions a viewer may see; this module only counts). One build
  * covers BOTH tracks and yields two views:

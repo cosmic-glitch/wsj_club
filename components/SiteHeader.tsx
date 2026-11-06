@@ -14,15 +14,12 @@ import HomeAuthBar from "./HomeAuthBar";
 // and the links shift on every inner page). The monogram IS the way back to
 // the index (no separate "← All readings" link). Should a screen be too
 // narrow, the auth-link group wraps below the monogram as one tidy unit
-// (and the greeting may wrap on its own — see HomeAuthBar). The home page
-// hides this header entirely: its landing design brings its own masthead
-// ("READING CLUB") and its own topline auth controls, so it would duplicate
-// both.
+// (and the greeting may wrap on its own — see HomeAuthBar). The two indexes
+// never mount this header (they live in the app/(landing) route group, which
+// has no SiteHeader): their landing design brings its own masthead ("READING
+// CLUB") and its own topline auth controls, so it would duplicate both.
 export default function SiteHeader() {
   const pathname = usePathname();
-  // Hidden on BOTH indexes — each landing (/ and /junior) brings its own
-  // masthead + topline auth controls, so the header would duplicate them.
-  if (pathname === "/" || pathname === "/junior") return null;
 
   // The monogram links back to the index of whichever track you're in, so a
   // junior handout's "RC" returns to /junior (not the main club).

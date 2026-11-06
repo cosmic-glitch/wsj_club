@@ -12,7 +12,7 @@ import {
 } from "@/lib/analytics";
 
 /**
- * The Activity page's body (app/admin/analytics): the by-student table,
+ * The Activity page's body (app/(site)/admin/analytics): the by-student table,
  * combined across both tracks, then one by-reading funnel table per track
  * (Regular, then Junior) — each row expands in place to its detail (that
  * student's per-reading timeline / who did which step and when). All numbers

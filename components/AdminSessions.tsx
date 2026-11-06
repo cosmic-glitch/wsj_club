@@ -250,7 +250,7 @@ export default function AdminSessions({
                   Data columns are right-aligned to match the values; Details holds
                   a single link that opens the combined detail modal, then a final
                   Delete column (owner only). The sub-columns are kept tight and
-                  the admin route widens the page (app/admin/layout.tsx) so the
+                  the admin route widens the page (app/(site)/admin/layout.tsx) so the
                   whole line — through the last Delete column — fits without
                   clipping on desktop. */}
               <th className="px-3 py-2.5 font-semibold">

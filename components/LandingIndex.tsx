@@ -147,7 +147,7 @@ export default function LandingIndex({
 
   return (
     // Full-bleed breakout of the site-wide max-w-3xl column (the same
-    // mx-[calc(50%-50vw)] trick as app/admin/layout.tsx), re-centered at the
+    // mx-[calc(50%-50vw)] trick as app/(site)/admin/layout.tsx), re-centered at the
     // mockup's 980px. -my-10 reclaims <main>'s vertical padding so the white
     // canvas runs from the global header to the site footer.
     <div className="mx-[calc(50%_-_50vw)] -my-10 w-screen bg-white pb-[90px] font-mono text-[#0a0a0a]">

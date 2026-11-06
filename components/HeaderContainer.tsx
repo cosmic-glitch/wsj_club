@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
  * `max-w-3xl` column as the page content, so its "Reading Club" logo lines up
  * with whatever is below it. The admin routes (Reports + Members) are the
  * exception: their data tables break out to a wider `max-w-4xl` column (see
- * `app/admin/layout.tsx`), so a `max-w-3xl` header left the logo ~84px to the
+ * `app/(site)/admin/layout.tsx`), so a `max-w-3xl` header left the logo ~84px to the
  * right of the table's left edge.
  *
  * On `/admin*` we widen the header to match that column. The admin content is a

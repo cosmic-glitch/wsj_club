@@ -147,7 +147,7 @@ Field notes:
 - All `articleQuote` fields are short (one sentence/phrase) and taken from the actual article.
 - Keep 4 options per quiz question.
 
-The TypeScript types backing this live in `lib/content.ts` — if you change the schema, update that file and the page components too (`app/reading/[date]/page.tsx` for words/concepts, `app/reading/[date]/quiz/page.tsx` for the quiz).
+The TypeScript types backing this live in `lib/content.ts` — if you change the schema, update that file and the page components too (`app/(site)/reading/[date]/page.tsx` for words/concepts, `app/(site)/reading/[date]/quiz/page.tsx` for the quiz).
 
 ## Deployment
 
