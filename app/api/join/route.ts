@@ -1,5 +1,6 @@
 import { getOwnerUsers, setSessionCookie } from "@/lib/auth";
 import { createUser, getUser, UserError } from "@/lib/users";
+import { recordLogin } from "@/lib/logins";
 
 /**
  * Self-serve signup — the topline "Join" button (no login required).
@@ -125,6 +126,7 @@ export async function POST(request: Request) {
       return Response.json({ error: "Could not create your account." }, { status: 500 });
     }
     await setSessionCookie(self.username);
+    await recordLogin(request, self.username, "join");
     return Response.json({ ok: true, username: self.username, role });
   }
 
@@ -182,6 +184,7 @@ export async function POST(request: Request) {
   // The parent exists — log them in now, so even a failed child below leaves
   // them able to finish from the Students page.
   await setSessionCookie(self.username);
+  await recordLogin(request, self.username, "join");
 
   const created: string[] = [];
   for (const child of children) {

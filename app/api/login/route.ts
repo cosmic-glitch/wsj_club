@@ -1,4 +1,5 @@
 import { verifyCredentials, setSessionCookie } from "@/lib/auth";
+import { recordLogin } from "@/lib/logins";
 
 export async function POST(request: Request) {
   let body: { username?: string; password?: string };
@@ -16,5 +17,6 @@ export async function POST(request: Request) {
   }
 
   await setSessionCookie(username);
+  await recordLogin(request, username, "login");
   return Response.json({ ok: true, username });
 }
