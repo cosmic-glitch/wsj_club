@@ -1,6 +1,6 @@
 import { getOwnerUsers, setSessionCookie } from "@/lib/auth";
 import { createUser, getUser, UserError } from "@/lib/users";
-import { recordLogin } from "@/lib/logins";
+import { recordLogin } from "@/lib/access";
 
 /**
  * Self-serve signup — the topline "Join" button (no login required).

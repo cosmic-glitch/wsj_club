@@ -1,6 +1,7 @@
 import { currentUserRecord } from "@/lib/auth";
 import { classroomOf } from "@/lib/users";
 import { parseEventInput, recordEvent } from "@/lib/events";
+import { touchAccess } from "@/lib/access";
 
 /**
  * POST /api/events — the page-activity beacon (lib/events.ts).
@@ -45,6 +46,7 @@ export async function POST(request: Request) {
       }
     : { username: null, parentId: null };
 
+  if (user) touchAccess(request, user);
   const ok = await recordEvent(input, who);
   if (!ok) console.error("events: insert failed", { kind: input.kind, user: who.username });
   return new Response(null, { status: 204 });

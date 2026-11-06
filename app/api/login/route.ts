@@ -1,5 +1,5 @@
 import { verifyCredentials, setSessionCookie } from "@/lib/auth";
-import { recordLogin } from "@/lib/logins";
+import { recordLogin } from "@/lib/access";
 
 export async function POST(request: Request) {
   let body: { username?: string; password?: string };

@@ -152,3 +152,24 @@ export async function dbDelete(table: string, query: string): Promise<boolean> {
     return false;
   }
 }
+
+/**
+ * Call a Postgres function through PostgREST (`/rpc/<fn>`) with a JSON body
+ * of named arguments. Only for rc_-prefixed functions. Returns success.
+ */
+export async function dbRpc(fn: string, args: Record<string, unknown>): Promise<boolean> {
+  const cfg = config();
+  if (!cfg) return false;
+  try {
+    const res = await fetch(`${cfg.base}rpc/${fn}`, {
+      method: "POST",
+      headers: { ...cfg.headers, Prefer: "return=minimal" },
+      body: JSON.stringify(args),
+    });
+    if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
+    return true;
+  } catch (err) {
+    console.error(`DB rpc ${fn} failed:`, err);
+    return false;
+  }
+}
