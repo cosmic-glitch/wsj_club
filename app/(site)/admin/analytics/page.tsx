@@ -5,6 +5,7 @@ import { loadSessions } from "@/lib/sessions";
 import { loadWordQuizAttempts } from "@/lib/word-quiz";
 import { loadEvents, type ActivityEvent } from "@/lib/events";
 import { getAllReadings } from "@/lib/content";
+import { loadAccessPlaces } from "@/lib/access";
 import {
   buildAnalytics,
   windowStart,
@@ -87,14 +88,16 @@ export default async function AnalyticsPage({
   const w = parseWindow((await searchParams).days);
   const since = windowStart(w);
 
-  // Five independent reads — overlap them (each is a ~300ms round trip).
-  const [seniorEvents, juniorEvents, sessionsResult, allUsers, wordAttemptsRaw] =
+  // Independent reads — overlap them (each is a ~300ms round trip).
+  // Locations (rc_access) are owner-only — a parent's page never loads them.
+  const [seniorEvents, juniorEvents, sessionsResult, allUsers, wordAttemptsRaw, places] =
     await Promise.all([
       loadEvents("senior", since ?? undefined),
       loadEvents("junior", since ?? undefined),
       loadSessions(),
       listAllUsers(),
       loadWordQuizAttempts(),
+      owner ? loadAccessPlaces(since) : Promise.resolve(null),
     ]);
 
   if (seniorEvents === null || juniorEvents === null || "error" in sessionsResult) {
@@ -191,7 +194,11 @@ export default async function AnalyticsPage({
         })}
       </div>
 
-      <ActivityReport data={data} parentNames={owner ? parentNames : undefined} />
+      <ActivityReport
+        data={data}
+        parentNames={owner ? parentNames : undefined}
+        places={owner ? places ?? {} : undefined}
+      />
     </div>
   );
 }

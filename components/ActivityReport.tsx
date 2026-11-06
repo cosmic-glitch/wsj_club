@@ -10,6 +10,7 @@ import {
   type StudentRow,
   type TrackReadings,
 } from "@/lib/analytics";
+import type { AccessPlace } from "@/lib/access";
 
 /**
  * The Activity page's body (app/(site)/admin/analytics): the by-student table,
@@ -23,7 +24,9 @@ import {
  * Logged-out visitors arrive as one pseudo-person (`ANON`, owner's view
  * only) and are laid out like any row, labelled "Logged out". `parentNames`
  * (owner only) adds the Parent column to the student table, since the
- * owner's view collapses every classroom into one list.
+ * owner's view collapses every classroom into one list. `places` (owner only,
+ * from rc_access) adds the Last location column and a "Seen from" line in
+ * the expanded row.
  */
 
 const th =
@@ -366,9 +369,11 @@ function DaysTable({ days }: { days: StudentDay[] }) {
 function StudentsTable({
   data,
   parentNames,
+  places,
 }: {
   data: Analytics;
   parentNames?: Record<string, string>;
+  places?: Record<string, AccessPlace[]>;
 }) {
   const [open, setOpen] = useState<Set<string>>(new Set());
   const toggle = (k: string) =>
@@ -378,7 +383,7 @@ function StudentsTable({
       else n.add(k);
       return n;
     });
-  const cols = parentNames ? 9 : 8;
+  const cols = 8 + (parentNames ? 1 : 0) + (places ? 1 : 0);
   const published = data.tracks
     .map((t) => `${t.readingsInWindow} ${TRACK_LABEL[t.track]}`)
     .join(", ");
@@ -404,6 +409,7 @@ function StudentsTable({
                 <th className={th}>Read</th>
                 <th className={th}>Taps</th>
                 <th className={th}>Last active</th>
+                {places && <th className={th}>Last location</th>}
               </tr>
             </thead>
             <tbody>
@@ -422,6 +428,7 @@ function StudentsTable({
                           : "—"
                         : undefined
                     }
+                    places={places ? places[s.username] ?? [] : undefined}
                     cols={cols}
                   />
                 );
@@ -445,12 +452,14 @@ function StudentRows({
   isOpen,
   onToggle,
   parentName,
+  places,
   cols,
 }: {
   s: StudentRow;
   isOpen: boolean;
   onToggle: () => void;
   parentName?: string;
+  places?: AccessPlace[];
   cols: number;
 }) {
   return (
@@ -489,10 +498,35 @@ function StudentRows({
           <Count n={s.glossTaps} />
         </td>
         <td className={`${td} whitespace-nowrap text-stone-600`}>{when(s.lastActive)}</td>
+        {places !== undefined && (
+          <td className={`${td} whitespace-nowrap text-stone-600`}>
+            {places.length === 0 ? (
+              <span className={muted}>—</span>
+            ) : (
+              <>
+                {places[0].label}
+                {places.length > 1 && (
+                  <span className={`${chip} ml-1.5`}>+{places.length - 1}</span>
+                )}
+              </>
+            )}
+          </td>
+        )}
       </tr>
       {isOpen && (
         <tr>
           <td colSpan={cols} className="border-b border-stone-300 bg-stone-50 px-3 py-3">
+            {places && places.length > 0 && (
+              <p className="mb-3 border-l-[3px] border-[#ffe600] pl-3 font-sans text-[13px] text-stone-600">
+                <span className={`${chip} mr-2`}>Seen from</span>
+                {places.map((p, i) => (
+                  <span key={p.label}>
+                    {i > 0 && " · "}
+                    {p.label} <span className="text-stone-400">(last {when(p.lastAt)})</span>
+                  </span>
+                ))}
+              </p>
+            )}
             <DaysTable days={s.days} />
           </td>
         </tr>
@@ -506,13 +540,15 @@ function StudentRows({
 export default function ActivityReport({
   data,
   parentNames,
+  places,
 }: {
   data: Analytics;
   parentNames?: Record<string, string>;
+  places?: Record<string, AccessPlace[]>;
 }) {
   return (
     <div>
-      <StudentsTable data={data} parentNames={parentNames} />
+      <StudentsTable data={data} parentNames={parentNames} places={places} />
       {data.tracks.map((tr) => (
         <ReadingsTable key={tr.track} tr={tr} />
       ))}

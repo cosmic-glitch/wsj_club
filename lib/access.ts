@@ -1,5 +1,5 @@
 import { after } from "next/server";
-import { dbInsert, dbRpc } from "@/lib/db";
+import { dbInsert, dbRpc, dbSelect } from "@/lib/db";
 import { classroomOf, getUser, type User } from "@/lib/users";
 
 /**
@@ -101,4 +101,50 @@ export function touchAccess(
       console.error("access: touch failed", { user: user.username }, err);
     }
   });
+}
+
+/* ---------------------------------------------------------- owner's report */
+
+/** One place a member was seen from in the window (IPs and days merged). */
+export type AccessPlace = {
+  label: string; // "Duvall, WA" / "Toronto, CA" / "Unknown"
+  lastAt: string; // ISO
+};
+
+type AccessRow = {
+  username: string;
+  last_at: string;
+  city: string | null;
+  region: string | null;
+  country: string | null;
+};
+
+function placeLabel(r: AccessRow): string {
+  const area = r.country === "US" ? r.region : r.country;
+  const parts = [r.city, area ?? (r.city ? null : r.region)].filter(Boolean);
+  return parts.length ? parts.join(", ") : "Unknown";
+}
+
+/**
+ * Where each member was seen from since `since` (null = all time), as
+ * username → places, most recent first. For the owner's Activity page only.
+ * Null when the DB read fails (the page just omits the column's data).
+ */
+export async function loadAccessPlaces(
+  since: string | null
+): Promise<Record<string, AccessPlace[]> | null> {
+  const filter = since ? `&last_at=gte.${encodeURIComponent(since)}` : "";
+  const rows = (await dbSelect(
+    "rc_access",
+    `?select=username,last_at,city,region,country${filter}&order=last_at.desc&limit=10000`
+  )) as AccessRow[] | null;
+  if (!rows) return null;
+  const out: Record<string, AccessPlace[]> = {};
+  for (const r of rows) {
+    const label = placeLabel(r);
+    const places = (out[r.username] ??= []);
+    // Rows arrive newest first, so the first sighting of a place is its latest.
+    if (!places.some((p) => p.label === label)) places.push({ label, lastAt: r.last_at });
+  }
+  return out;
 }
