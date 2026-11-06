@@ -16,7 +16,7 @@ import type { WordQuizAttempt } from "@/lib/word-quiz";
  *              newest first) for the expanded row.
  *   tracks   — per track, one row per reading dated in the window, with the
  *              funnel (article → handout → self-quiz → AI quiz) as people +
- *              opens, the median read time, glossary taps, and the per-person
+ *              opens, the total read time, glossary taps, and the per-person
  *              detail.
  *
  * `date` is NOT unique across tracks, so every per-reading key carries the
@@ -30,7 +30,9 @@ import type { WordQuizAttempt } from "@/lib/word-quiz";
  * pseudo-person, `ANON` (username ""), which takes a row in the by-student
  * table and in each reading's detail like any member, and counts as one more
  * person in the funnel columns. Its read time is a lump across unknown
- * readers, so it is shown on its own row but kept out of the read median.
+ * readers, shown on its own row and added to the reading's total read time
+ * like anyone's. (The total, not a median: with a handful of readers a
+ * median was set by whoever just glanced, and hid the one real read.)
  * Days are club-local (US Pacific).
  */
 
@@ -74,7 +76,7 @@ export type ReadingActivity = {
   title: string;
   articlePeople: number;
   articleOpens: number;
-  readMedianSeconds: number | null; // across members who read at all (not ANON)
+  readTotalSeconds: number; // everyone's visible time on the article page, ANON included
   handoutPeople: number;
   handoutOpens: number;
   selfquizPeople: number;
@@ -154,13 +156,6 @@ function readSeconds(t: Tally): number {
   let s = 0;
   for (const v of t.views.values()) s += Math.min(v, MAX_VIEW_SECONDS);
   return s;
-}
-
-function median(xs: number[]): number | null {
-  if (xs.length === 0) return null;
-  const s = [...xs].sort((a, b) => a - b);
-  const mid = s.length >> 1;
-  return s.length % 2 ? s[mid] : Math.round((s[mid - 1] + s[mid]) / 2);
 }
 
 /** Apply one event to a tally. */
@@ -311,7 +306,7 @@ export function buildAnalytics(input: {
         handoutPeople = 0,
         selfquizPeople = 0,
         quizPeople = 0;
-      const reads: number[] = [];
+      let readTotal = 0;
       for (const u of people) {
         const t = tallies.get(personKey(rk, u));
         const qw = quizDone.get(personKey(rk, u)) ?? null;
@@ -337,8 +332,7 @@ export function buildAnalytics(input: {
         if (p.handoutOpens) handoutPeople++;
         if (p.selfquizOpens) selfquizPeople++;
         if (p.quizDone) quizPeople++;
-        // ANON's time is a lump across unknown readers — not one person's read.
-        if (rs > 0 && u !== ANON) reads.push(rs);
+        readTotal += rs;
       }
       persons.sort((a, b) => {
         if ((a.username === ANON) !== (b.username === ANON)) return a.username === ANON ? 1 : -1;
@@ -355,7 +349,7 @@ export function buildAnalytics(input: {
         title: r.title,
         articlePeople,
         articleOpens,
-        readMedianSeconds: median(reads),
+        readTotalSeconds: readTotal,
         handoutPeople,
         handoutOpens,
         selfquizPeople,

@@ -215,7 +215,7 @@ function ReadingsTable({ tr }: { tr: TrackReadings }) {
   return (
     <Section
       title={`${TRACK_LABEL[tr.track]} readings`}
-      note="The funnel per reading: article → handout → AI quiz, as the number of people who took each step (everyone logged out counts as one). Read = median time the article page was visible, members only. Click a row for who did what, with their opens; logged-out opens get their own row."
+      note="The funnel per reading: article → handout → AI quiz, as the number of people who took each step (everyone logged out counts as one). Read = total time the article page was visible, everyone together (logged out included). Click a row for who did what, with their opens; logged-out opens get their own row."
     >
       {tr.readings.length === 0 ? (
         <Empty>No readings in this window.</Empty>
@@ -289,7 +289,7 @@ function ReadingRows({
         <td className={td}>
           <Count n={r.articlePeople} />
         </td>
-        <td className={`${td} whitespace-nowrap`}>{dur(r.readMedianSeconds)}</td>
+        <td className={`${td} whitespace-nowrap`}>{dur(r.readTotalSeconds)}</td>
         <td className={td}>
           <Count n={r.handoutPeople} />
         </td>
