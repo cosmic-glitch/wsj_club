@@ -1,0 +1,801 @@
+[
+  {
+    "k": "eclectic",
+    "t": "eclectic",
+    "kind": "vocab",
+    "pron": "eh-KLEK-tik",
+    "forms": [
+      "eclectic"
+    ],
+    "text": "Eclectic means made up of many different kinds of things. Astronomers expected a mixed group of stars, galaxies, and clouds, but not these dots.",
+    "audio": true
+  },
+  {
+    "k": "envelop",
+    "t": "envelops",
+    "kind": "vocab",
+    "pron": "en-VEL-up",
+    "forms": [
+      "envelops"
+    ],
+    "text": "To envelop something is to wrap all the way around it. Here, a thick cloud of gas envelops the black hole like a cocoon.",
+    "audio": true
+  },
+  {
+    "k": "contend",
+    "t": "contends",
+    "kind": "vocab",
+    "pron": "kun-TEND",
+    "forms": [
+      "contends",
+      "contend"
+    ],
+    "text": "To contend is to argue that something is true. Here, a scientist contends that another team's way of measuring does not work.",
+    "audio": true
+  },
+  {
+    "k": "james-webb-space-telescope",
+    "t": "James Webb Space Telescope",
+    "kind": "name",
+    "forms": [
+      "James Webb Space Telescope",
+      "JWST"
+    ],
+    "text": "The JWST is a huge space camera that orbits the Sun, far from Earth. It sees faint, very old light from the early universe.",
+    "audio": true
+  },
+  {
+    "k": "telescope",
+    "t": "telescope",
+    "kind": "word",
+    "forms": [
+      "telescope"
+    ],
+    "text": "A telescope is a tool that makes faraway things look closer and clearer.",
+    "audio": true
+  },
+  {
+    "k": "astronomer",
+    "t": "astronomers",
+    "kind": "word",
+    "forms": [
+      "astronomers",
+      "astronomer"
+    ],
+    "text": "An astronomer is a scientist who studies stars, planets, and space.",
+    "audio": true
+  },
+  {
+    "k": "orbiting",
+    "t": "orbiting",
+    "kind": "word",
+    "forms": [
+      "orbiting"
+    ],
+    "text": "To orbit is to travel around something in a curved path, the way Earth goes around the Sun.",
+    "audio": true
+  },
+  {
+    "k": "high-resolution",
+    "t": "high-resolution",
+    "kind": "word",
+    "forms": [
+      "high-resolution"
+    ],
+    "text": "A high-resolution camera takes very sharp pictures with lots of tiny details.",
+    "audio": true
+  },
+  {
+    "k": "nebulae",
+    "t": "nebulae",
+    "kind": "word",
+    "forms": [
+      "nebulae"
+    ],
+    "text": "Nebulae are giant clouds of gas and dust in space. Some of them are where new stars are born.",
+    "audio": true
+  },
+  {
+    "k": "galaxy",
+    "t": "galaxies",
+    "kind": "word",
+    "forms": [
+      "galaxies",
+      "galaxy"
+    ],
+    "text": "A galaxy is a huge group of billions of stars, gas, and dust held together by gravity.",
+    "audio": true
+  },
+  {
+    "k": "milky-way",
+    "t": "Milky Way",
+    "kind": "name",
+    "forms": [
+      "Milky Way"
+    ],
+    "text": "The Milky Way is our home galaxy. Earth and the Sun are inside it.",
+    "audio": true
+  },
+  {
+    "k": "tinted",
+    "t": "red-tinted",
+    "kind": "word",
+    "forms": [
+      "red-tinted",
+      "tinge"
+    ],
+    "text": "Tinted means having a light touch of color. A red tinge is a slight reddish look.",
+    "audio": true
+  },
+  {
+    "k": "jargon",
+    "t": "jargon",
+    "kind": "word",
+    "forms": [
+      "jargon"
+    ],
+    "text": "Jargon is special words that people in one job or hobby use, which outsiders may not know.",
+    "audio": true
+  },
+  {
+    "k": "technical",
+    "t": "technical",
+    "kind": "word",
+    "forms": [
+      "technical"
+    ],
+    "text": "Technical means about the special details of a science, machine, or skill.",
+    "audio": true
+  },
+  {
+    "k": "black-hole",
+    "t": "black holes",
+    "kind": "word",
+    "forms": [
+      "black holes",
+      "black hole"
+    ],
+    "text": "A black hole is a place in space where so much mass is squeezed together that its gravity pulls in everything nearby, even light.",
+    "audio": true
+  },
+  {
+    "k": "supermassive",
+    "t": "supermassive",
+    "kind": "word",
+    "forms": [
+      "supermassive"
+    ],
+    "text": "Supermassive means super heavy. Supermassive black holes weigh as much as millions or billions of Suns.",
+    "audio": true
+  },
+  {
+    "k": "unprecedented",
+    "t": "unprecedentedly",
+    "kind": "word",
+    "forms": [
+      "unprecedentedly"
+    ],
+    "text": "Unprecedented means never happening before. These black holes are growing faster than anything seen before.",
+    "audio": true
+  },
+  {
+    "k": "violent",
+    "t": "violent",
+    "kind": "word",
+    "forms": [
+      "violent"
+    ],
+    "text": "Violent means extremely forceful and wild. Here it describes very fast, powerful growth.",
+    "audio": true
+  },
+  {
+    "k": "growth-spurts",
+    "t": "growth spurts",
+    "kind": "phrase",
+    "forms": [
+      "growth spurts"
+    ],
+    "text": "A growth spurt is a short time of very fast growing, like when a kid suddenly shoots up a few inches.",
+    "audio": true
+  },
+  {
+    "k": "bizarre",
+    "t": "bizarre",
+    "kind": "word",
+    "forms": [
+      "bizarre"
+    ],
+    "text": "Bizarre means very strange and hard to explain.",
+    "audio": true
+  },
+  {
+    "k": "fierce",
+    "t": "fierce",
+    "kind": "word",
+    "forms": [
+      "fierce"
+    ],
+    "text": "Fierce means very strong and intense. A fierce debate is one where people argue hard.",
+    "audio": true
+  },
+  {
+    "k": "debate",
+    "t": "debate",
+    "kind": "word",
+    "forms": [
+      "debate"
+    ],
+    "text": "A debate is a discussion where people with different ideas argue their sides.",
+    "audio": true
+  },
+  {
+    "k": "origins",
+    "t": "origins",
+    "kind": "word",
+    "forms": [
+      "origins"
+    ],
+    "text": "The origins of something are where and how it began.",
+    "audio": true
+  },
+  {
+    "k": "emitting",
+    "t": "emitting",
+    "kind": "word",
+    "forms": [
+      "emitting",
+      "emits",
+      "emit"
+    ],
+    "text": "To emit is to send out, like a lamp emitting light.",
+    "audio": true
+  },
+  {
+    "k": "wavelengths",
+    "t": "wavelengths",
+    "kind": "word",
+    "forms": [
+      "wavelengths"
+    ],
+    "text": "A wavelength is the distance from the top of one wave to the top of the next. For light, it decides the color.",
+    "audio": true
+  },
+  {
+    "k": "cosmic-dawn",
+    "t": "cosmic dawn",
+    "kind": "phrase",
+    "forms": [
+      "cosmic dawn"
+    ],
+    "text": "The cosmic dawn is the early time when the first stars and galaxies were lighting up the young universe.",
+    "audio": true
+  },
+  {
+    "k": "bn",
+    "t": "13.4bn",
+    "kind": "word",
+    "forms": [
+      "13.4bn",
+      "bn"
+    ],
+    "text": "The letters bn mean billion, and 500m means 500 million. So 13.4bn years is 13.4 billion years.",
+    "audio": true
+  },
+  {
+    "k": "big-bang",
+    "t": "Big Bang",
+    "kind": "name",
+    "forms": [
+      "Big Bang"
+    ],
+    "text": "The Big Bang is the huge explosion of space and energy that scientists think started the universe about 13.8 billion years ago.",
+    "audio": true
+  },
+  {
+    "k": "stare-right-back",
+    "t": "stare right back",
+    "kind": "phrase",
+    "forms": [
+      "stare right back"
+    ],
+    "text": "This is a playful way to say the dots seem to look at you from every picture.",
+    "audio": true
+  },
+  {
+    "k": "coined",
+    "t": "coined",
+    "kind": "word",
+    "forms": [
+      "coined"
+    ],
+    "text": "To coin a word is to invent it or use it for the first time.",
+    "audio": true
+  },
+  {
+    "k": "populous",
+    "t": "populous",
+    "kind": "word",
+    "forms": [
+      "populous"
+    ],
+    "text": "Populous means having lots of members. A populous galaxy has a huge number of stars.",
+    "audio": true
+  },
+  {
+    "k": "mature",
+    "t": "mature",
+    "kind": "word",
+    "forms": [
+      "mature"
+    ],
+    "text": "Mature means fully grown and developed.",
+    "audio": true
+  },
+  {
+    "k": "dub",
+    "t": "dub",
+    "kind": "word",
+    "forms": [
+      "dub"
+    ],
+    "text": "To dub something is to give it a nickname.",
+    "audio": true
+  },
+  {
+    "k": "universe-breakers",
+    "t": "universe breakers",
+    "kind": "phrase",
+    "forms": [
+      "universe breakers"
+    ],
+    "text": "This nickname means the dots seemed to break scientists' ideas about how old the universe is.",
+    "audio": true
+  },
+  {
+    "k": "implied",
+    "t": "implied",
+    "kind": "word",
+    "forms": [
+      "implied"
+    ],
+    "text": "To imply is to suggest something without saying it directly.",
+    "audio": true
+  },
+  {
+    "k": "spectrum",
+    "t": "spectrum",
+    "kind": "word",
+    "forms": [
+      "spectrum"
+    ],
+    "text": "A spectrum is light spread out into its separate colors, like in a rainbow. Scientists can read patterns in it.",
+    "audio": true
+  },
+  {
+    "k": "hydrogen",
+    "t": "hydrogen",
+    "kind": "word",
+    "forms": [
+      "hydrogen"
+    ],
+    "text": "Hydrogen is the lightest and most common element in the universe. Stars are mostly made of it.",
+    "audio": true
+  },
+  {
+    "k": "gravitational",
+    "t": "gravitational",
+    "kind": "word",
+    "forms": [
+      "gravitational",
+      "gravity"
+    ],
+    "text": "Gravity is the pull that objects with mass have on each other. It keeps you on the ground.",
+    "audio": true
+  },
+  {
+    "k": "disfavoured",
+    "t": "disfavoured",
+    "kind": "word",
+    "forms": [
+      "disfavoured"
+    ],
+    "text": "To disfavour an idea is to make it look less likely to be true.",
+    "audio": true
+  },
+  {
+    "k": "concentrated",
+    "t": "concentrated",
+    "kind": "word",
+    "forms": [
+      "concentrated"
+    ],
+    "text": "Concentrated means packed closely into a small space.",
+    "audio": true
+  },
+  {
+    "k": "paradoxical",
+    "t": "paradoxical",
+    "kind": "word",
+    "forms": [
+      "paradoxical"
+    ],
+    "text": "Paradoxical means seeming to contradict itself, like a black hole that glows.",
+    "audio": true
+  },
+  {
+    "k": "accretion",
+    "t": "accretion",
+    "kind": "word",
+    "forms": [
+      "accretion",
+      "accreting"
+    ],
+    "text": "Accretion is when a black hole pulls in matter, like gas, and it piles up around the hole. It heats up and glows.",
+    "audio": true
+  },
+  {
+    "k": "radiation",
+    "t": "radiation",
+    "kind": "word",
+    "forms": [
+      "radiation"
+    ],
+    "text": "Radiation is energy that travels through space, such as light and X-rays.",
+    "audio": true
+  },
+  {
+    "k": "intense",
+    "t": "intense",
+    "kind": "word",
+    "forms": [
+      "intense"
+    ],
+    "text": "Intense means very strong.",
+    "audio": true
+  },
+  {
+    "k": "active-galactic-nuclei",
+    "t": "active galactic nuclei",
+    "kind": "phrase",
+    "forms": [
+      "active galactic nuclei",
+      "AGNs",
+      "AGN",
+      "ordinary AGNs"
+    ],
+    "text": "An active galactic nucleus, or AGN, is the glowing center of a galaxy where a supermassive black hole is feeding on gas.",
+    "audio": true
+  },
+  {
+    "k": "doughnuts",
+    "t": "doughnuts",
+    "kind": "word",
+    "forms": [
+      "doughnuts"
+    ],
+    "text": "Here the doughnut is a ring of gas and dust circling a black hole, shaped like a doughnut.",
+    "audio": true
+  },
+  {
+    "k": "dust",
+    "t": "dust",
+    "kind": "word",
+    "forms": [
+      "dust"
+    ],
+    "text": "In space, dust is tiny bits of solid stuff, made of heavier elements.",
+    "audio": true
+  },
+  {
+    "k": "heavy-elements",
+    "t": "heavy elements",
+    "kind": "phrase",
+    "forms": [
+      "heavy elements"
+    ],
+    "text": "Heavy elements are materials such as carbon and iron. They are made inside stars, so the very early universe had few.",
+    "audio": true
+  },
+  {
+    "k": "cocoon",
+    "t": "cocoon",
+    "kind": "word",
+    "forms": [
+      "cocoon",
+      "cocoons"
+    ],
+    "text": "A cocoon is a wrapping, like the one a caterpillar makes. Here it is a thick gas cloud around the black hole.",
+    "audio": true
+  },
+  {
+    "k": "reddened",
+    "t": "reddened",
+    "kind": "word",
+    "forms": [
+      "reddened"
+    ],
+    "text": "Reddened means turned redder. Light passing through gas can lose its blue and look redder.",
+    "audio": true
+  },
+  {
+    "k": "x-rays",
+    "t": "X-rays",
+    "kind": "word",
+    "forms": [
+      "X-rays"
+    ],
+    "text": "X-rays are a kind of light with very short wavelengths that our eyes cannot see.",
+    "audio": true
+  },
+  {
+    "k": "advocates",
+    "t": "advocates",
+    "kind": "word",
+    "forms": [
+      "advocates"
+    ],
+    "text": "An advocate is someone who speaks up for an idea.",
+    "audio": true
+  },
+  {
+    "k": "infalling",
+    "t": "infalling",
+    "kind": "word",
+    "forms": [
+      "infalling"
+    ],
+    "text": "Infalling means falling inward, toward the center.",
+    "audio": true
+  },
+  {
+    "k": "scrambling",
+    "t": "scrambling",
+    "kind": "word",
+    "forms": [
+      "scrambling"
+    ],
+    "text": "To scramble is to move fast and a bit clumsily in a hurry.",
+    "audio": true
+  },
+  {
+    "k": "occams-razor",
+    "t": "Occam’s razor",
+    "kind": "phrase",
+    "forms": [
+      "Occam’s razor"
+    ],
+    "text": "Occam's razor is a rule of thumb that says the simpler explanation, with fewer guesses, is the one to try first.",
+    "audio": true
+  },
+  {
+    "k": "appeal",
+    "t": "appeal",
+    "kind": "word",
+    "forms": [
+      "appeal"
+    ],
+    "text": "The appeal of something is what makes people like it.",
+    "audio": true
+  },
+  {
+    "k": "imaginative",
+    "t": "imaginative",
+    "kind": "word",
+    "forms": [
+      "imaginative"
+    ],
+    "text": "Imaginative means full of creative new ideas.",
+    "audio": true
+  },
+  {
+    "k": "concede",
+    "t": "concede",
+    "kind": "word",
+    "forms": [
+      "concede"
+    ],
+    "text": "To concede is to admit that something is true, even if you did not want to.",
+    "audio": true
+  },
+  {
+    "k": "nomenclature",
+    "t": "nomenclature",
+    "kind": "word",
+    "forms": [
+      "nomenclature"
+    ],
+    "text": "Nomenclature is the system of names used in a subject, like names for new objects.",
+    "audio": true
+  },
+  {
+    "k": "novelties",
+    "t": "novelties",
+    "kind": "word",
+    "forms": [
+      "novelties"
+    ],
+    "text": "A novelty is something new and unusual.",
+    "audio": true
+  },
+  {
+    "k": "nuclear-fusion",
+    "t": "nuclear fusion",
+    "kind": "phrase",
+    "forms": [
+      "nuclear fusion"
+    ],
+    "text": "Nuclear fusion is when tiny atoms smash together and make lots of energy. It is what powers the Sun.",
+    "audio": true
+  },
+  {
+    "k": "proponents",
+    "t": "proponents",
+    "kind": "word",
+    "forms": [
+      "proponents"
+    ],
+    "text": "A proponent is a person who supports an idea.",
+    "audio": true
+  },
+  {
+    "k": "distinctive",
+    "t": "distinctive",
+    "kind": "word",
+    "forms": [
+      "distinctive"
+    ],
+    "text": "Distinctive means easy to recognize because it is different from others.",
+    "audio": true
+  },
+  {
+    "k": "satisfactorily",
+    "t": "satisfactorily",
+    "kind": "word",
+    "forms": [
+      "satisfactorily"
+    ],
+    "text": "Satisfactorily means in a way that is good enough. Neither idea explains everything satisfactorily.",
+    "audio": true
+  },
+  {
+    "k": "critics",
+    "t": "critics",
+    "kind": "word",
+    "forms": [
+      "critics"
+    ],
+    "text": "A critic is someone who points out what is wrong with an idea.",
+    "audio": true
+  },
+  {
+    "k": "assumptions",
+    "t": "assumptions",
+    "kind": "word",
+    "forms": [
+      "assumptions"
+    ],
+    "text": "An assumption is something you accept as true without proof.",
+    "audio": true
+  },
+  {
+    "k": "forbids",
+    "t": "forbids",
+    "kind": "word",
+    "forms": [
+      "forbids"
+    ],
+    "text": "To forbid is to not allow. Here, the model says a thing can't happen.",
+    "audio": true
+  },
+  {
+    "k": "settle-the-matter",
+    "t": "settle the matter",
+    "kind": "phrase",
+    "forms": [
+      "settle the matter"
+    ],
+    "text": "To settle a matter is to end the argument by finding the answer.",
+    "audio": true
+  },
+  {
+    "k": "orders-of-magnitude",
+    "t": "orders of magnitude",
+    "kind": "phrase",
+    "forms": [
+      "orders of magnitude"
+    ],
+    "text": "One order of magnitude means about ten times bigger. Several orders means thousands of times or more.",
+    "audio": true
+  },
+  {
+    "k": "solar-masses",
+    "t": "solar masses",
+    "kind": "phrase",
+    "forms": [
+      "solar masses"
+    ],
+    "text": "A solar mass is the weight of our Sun. So 50m solar masses means 50 million Suns.",
+    "audio": true
+  },
+  {
+    "k": "infer",
+    "t": "infer",
+    "kind": "word",
+    "forms": [
+      "infer"
+    ],
+    "text": "To infer is to figure something out from clues instead of seeing it directly.",
+    "audio": true
+  },
+  {
+    "k": "controversial",
+    "t": "controversial",
+    "kind": "word",
+    "forms": [
+      "controversial"
+    ],
+    "text": "Controversial means that people disagree about it.",
+    "audio": true
+  },
+  {
+    "k": "data-point",
+    "t": "data point",
+    "kind": "phrase",
+    "forms": [
+      "data point"
+    ],
+    "text": "A data point is one measurement. One alone cannot prove much.",
+    "audio": true
+  },
+  {
+    "k": "academic-vindication",
+    "t": "academic vindication",
+    "kind": "phrase",
+    "forms": [
+      "academic vindication",
+      "vindication"
+    ],
+    "text": "Vindication means being proved right. Scientists want that for their idea.",
+    "audio": true
+  },
+  {
+    "k": "at-stake",
+    "t": "at stake",
+    "kind": "phrase",
+    "forms": [
+      "at stake"
+    ],
+    "text": "If something is at stake, it could be won or lost depending on the outcome.",
+    "audio": true
+  },
+  {
+    "k": "put-on-weight",
+    "t": "put on their weight",
+    "kind": "phrase",
+    "forms": [
+      "put on their weight"
+    ],
+    "text": "To put on weight is to gain mass. Here it asks how the first black holes got so heavy.",
+    "audio": true
+  },
+  {
+    "k": "punch-above-their-weight",
+    "t": "punch far above their weight",
+    "kind": "phrase",
+    "forms": [
+      "punch far above their weight"
+    ],
+    "text": "To punch above your weight is to matter more than your small size suggests, like a small boxer who beats bigger ones.",
+    "audio": true
+  },
+  {
+    "k": "people-see-what-they-want",
+    "t": "People see what they want to see",
+    "kind": "phrase",
+    "forms": [
+      "People see what they want to see"
+    ],
+    "text": "This means people often read the same facts in a way that supports what they already believe.",
+    "audio": true
+  }
+]

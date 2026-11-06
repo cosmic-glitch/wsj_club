@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-06",
+  "title": "Astronomers are mystified by little red dots in the sky",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/11/04/astronomers-are-mystified-by-little-red-dots-in-the-sky",
+  "articlePageUrl": "/articles/junior/2026-11-06.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "eclectic",
+      "partOfSpeech": "adjective",
+      "pronunciation": "eh-KLEK-tik",
+      "articleQuote": "the eclectic cast of cosmic characters they had been expecting",
+      "meaning": "Eclectic means made up of many different kinds of things, picked from lots of places. An eclectic collection is not all the same. In the article, astronomers already expected to see a mixed group of things in space, like stars, galaxies, and clouds of gas.",
+      "examples": [
+        "Her eclectic playlist has rock, jazz, and songs from old movies.",
+        "The school fair had an eclectic mix of games, food, and art."
+      ]
+    },
+    {
+      "word": "envelop",
+      "partOfSpeech": "verb",
+      "pronunciation": "en-VEL-up",
+      "articleQuote": "It completely envelops the thing.",
+      "meaning": "To envelop something is to wrap all the way around it and cover it completely. A blanket can envelop you, and fog can envelop a town. In the article, a thick cloud of gas envelops the glowing center of a little red dot, like a cocoon.",
+      "examples": [
+        "Thick fog began to envelop the soccer field before the game.",
+        "She used a big towel to envelop her little brother after his swim."
+      ]
+    },
+    {
+      "word": "contend",
+      "partOfSpeech": "verb",
+      "pronunciation": "kun-TEND",
+      "articleQuote": "She contends that the authors’ technique works only when measuring the speeds of clearly defined objects",
+      "meaning": "To contend is to argue that something is true, usually when you think other people might disagree. You are making your case. In the article, a scientist contends that another team's way of measuring does not work for these dots.",
+      "examples": [
+        "My friend contends that the school should start later in the morning.",
+        "The coach contends that our team lost because we stopped passing the ball."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Wavelength",
+      "articleQuote": "emitting bright light that is rich in longer, redder wavelengths",
+      "meaning": "How can light be \"red\" at all? Light travels in waves, a bit like waves in a pool, and the **wavelength** is the distance from the top of one wave to the top of the next. Different wavelengths look like different colors to our eyes.\n\nThink of a jump rope that you shake up and down. If you shake it slowly, you get long, lazy waves. If you shake it fast, you get short, tight waves. Light works the same way: red light has the longest waves we can see, and blue and violet light have the shortest.\n\nIn the article, the little red dots give off light with lots of long, red wavelengths. That is why they look red in the telescope's pictures, and it helps astronomers guess what is happening around them, such as light passing through a thick cloud of gas.\n\nSo the takeaway: the color of light depends on its wavelength, with red being long and blue being short, and a color can be a clue about where the light has been."
+    },
+    {
+      "name": "Occam's razor",
+      "articleQuote": "the appeal of this explanation comes down to Occam’s razor",
+      "meaning": "When there are two ways to explain something, which one should you trust first? **Occam's razor** is a rule of thumb that says the simpler explanation, the one that needs fewer new ideas or guesses, is usually the better place to start.\n\nImagine your homework is missing from your backpack. One explanation: you left it on the kitchen table. Another: a stranger sneaked into your house, took only your homework, and then left without a trace. Both could be true, but the first needs far fewer made-up pieces, so you check the kitchen first.\n\nIn the article, one group of astronomers says the little red dots are things we already know about, just slightly changed. Another group says they are a brand-new kind of object. The first group likes the simpler idea, and that is Occam's razor at work. It is not proof, though, only a good way to decide where to look first.\n\nSo the takeaway: Occam's razor tells you to prefer the explanation with fewer extra assumptions, but the evidence still has the final say."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What are the \"little red dots\" that the James Webb Space Telescope found?",
+      "options": [
+        "Small, red-tinted points of light that astronomers cannot yet fully explain",
+        "Red stars that are very close to Earth",
+        "Dust on the telescope's camera",
+        "Red planets circling the Sun"
+      ],
+      "answerIndex": 0,
+      "explanation": "The telescope saw small, red-tinted points of light, and astronomers had no idea what they were."
+    },
+    {
+      "question": "Why did astronomers decide the dots were probably not huge, fully grown galaxies?",
+      "options": [
+        "Galaxies are never red",
+        "The gas around the dots moved too fast for the weak gravity of a galaxy's spread-out stars",
+        "The dots were too close to Earth",
+        "Galaxies cannot be photographed"
+      ],
+      "answerIndex": 1,
+      "explanation": "Gas moving so quickly needs huge gravitational forces, and the large gaps between a galaxy's stars would keep the forces small. A lot of mass squeezed into a tiny space, like a black hole, fits better."
+    },
+    {
+      "question": "How can a black hole glow if not even light can escape from it?",
+      "options": [
+        "Black holes are really stars in disguise",
+        "The glow comes from the telescope",
+        "Matter falling in heats up and gives off radiation before it is swallowed",
+        "Black holes are painted red by dust"
+      ],
+      "answerIndex": 2,
+      "explanation": "As matter falls into a black hole, a process called accretion, it heats up and gives off radiation."
+    },
+    {
+      "question": "What is a \"black-hole star,\" as proposed by Dr Naidu and his colleagues?",
+      "options": [
+        "A star that has turned into a planet",
+        "A very old galaxy that is nearly empty",
+        "A black hole with no gas at all around it",
+        "A black hole inside a very thick gas cocoon that makes it look like a star from the outside"
+      ],
+      "answerIndex": 3,
+      "explanation": "The cocoon is so dense that no radiation escapes directly. The outer layer glows like a star's surface, but it is powered by a growing black hole."
+    },
+    {
+      "question": "What might help settle the debate between the two ideas?",
+      "options": [
+        "Measuring the mass of the dots",
+        "Counting how many dots there are",
+        "Painting the dots a different color",
+        "Waiting for the universe to get older"
+      ],
+      "answerIndex": 0,
+      "explanation": "The two ideas predict very different masses for the dots. The first measurement, about 50m solar masses, was a point for the AGN side, but it is only one data point and is disputed."
+    }
+  ]
+}
