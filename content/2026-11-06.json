@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-06",
+  "title": "A generational upset in Los Angeles",
+  "articleUrl": "https://www.economist.com/united-states/2026/11/06/a-generational-upset-in-los-angeles",
+  "articlePageUrl": "/articles/2026-11-06.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "erstwhile",
+      "partOfSpeech": "adjective",
+      "pronunciation": "URST-wile",
+      "articleQuote": "Ms Bass called her erstwhile ally to concede",
+      "meaning": "Erstwhile means former, used for a person or thing that once held a role or relationship but no longer does. It sounds formal and often hints that things have changed, as with an erstwhile friend or an erstwhile champion. In the article, Nithya Raman and Karen Bass were allies before the election, but running against each other ended that, so Ms Raman is Ms Bass's erstwhile ally.",
+      "examples": [
+        "The erstwhile rivals shook hands and agreed to work together on the project.",
+        "He visited his erstwhile school, now a museum, and found his old classroom."
+      ]
+    },
+    {
+      "word": "torpid",
+      "partOfSpeech": "adjective",
+      "pronunciation": "TOR-pid",
+      "articleQuote": "years on city council have familiarised her with the torpid nature of municipal government",
+      "meaning": "Torpid means sluggish and slow, as if inactive or half asleep. It was first used for animals that go dormant in winter, and now describes anything that moves with little energy, from a hot afternoon to a bureaucracy. Here the Economist says city government is torpid: it can take a year just to replace a streetlight.",
+      "examples": [
+        "After the huge holiday meal, the whole family felt torpid on the couch.",
+        "The torpid response from the office meant our request sat unanswered for weeks."
+      ]
+    },
+    {
+      "word": "triage",
+      "partOfSpeech": "verb",
+      "pronunciation": "TREE-ahzh",
+      "articleQuote": "Initially, at least, she will have to triage mounting problems",
+      "meaning": "Triage began in hospitals, where staff sort patients by how urgent their needs are so the sickest are treated first. As a verb it now means to sort many problems by urgency and deal with the most pressing ones first, since you can't fix everything at once. In the article, Ms Raman inherits many city problems, so she must decide which to tackle first.",
+      "examples": [
+        "With ten assignments due, he had to triage and finish the most urgent one first.",
+        "Emergency nurses triage patients as they arrive, treating the most serious cases first."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Democratic socialism",
+      "articleQuote": "a win for the DSA, which can now count the mayors of America’s two largest cities",
+      "meaning": "Political ideas. Socialism is the idea that society, not just private owners, should control big parts of the economy, such as housing, health care or utilities. Democratic socialists want to reach that goal through ordinary elections and laws, rather than a revolution or a one-party state. In the US, the Democratic Socialists of America (DSA) is an organisation that runs and backs candidates, usually inside the Democratic Party, with ideas like publicly funded child care or government-built housing. This is different from the Soviet-style system many people picture when they hear the word. It also differs from most Democrats, who generally favour more private markets. Yet the article shows labels can mislead: Ms Raman belongs to the DSA's local chapter but is described as more of a wonk than an ideologue, with immediate plans that are practical, like speeding up permits."
+    },
+    {
+      "name": "Hosting the Olympics: who pays for overruns",
+      "articleQuote": "Los Angeles taxpayers are on the hook for any cost overruns",
+      "meaning": "Economics and public finance. Hosting the Games means building stadiums, housing and transport, which costs billions, and the money from tickets and TV rights may not cover it. Cities have often lost money: Athens in 2004 spent so much that it helped trigger Greece's debt crisis. Los Angeles in 1984 did the opposite and turned a profit, largely by using existing venues and private sponsors. The key question is who absorbs a shortfall. For 2028, the private committee, LA28, runs the Games, but if it fails to make money, the city's taxpayers must cover the gap. That is why the mayor's job matters: she must keep spending under control, while also using the deadline to speed up projects such as a $10bn subway expansion."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what was the biggest factor behind Nithya Raman's win?",
+      "options": ["Her opponent's unpopularity", "A huge advertising budget", "Support from the Democratic establishment", "A change in the election rules"],
+      "answerIndex": 0,
+      "explanation": "The Economist says the biggest factor was Karen Bass's unpopularity, worsened by her being abroad when fires hit Pacific Palisades."
+    },
+    {
+      "question": "Why is Ms Raman's victory called a once-in-a-generation upset?",
+      "options": ["She is the youngest mayor ever elected", "Not since 2005 has a challenger ousted an incumbent mayor in Los Angeles", "She won every neighbourhood in the city", "Ms Bass had never lost an election before"],
+      "answerIndex": 1,
+      "explanation": "A challenger had not beaten a sitting mayor of Los Angeles since 2005, and almost the whole Democratic establishment backed Ms Bass."
+    },
+    {
+      "question": "How does the article describe Ms Raman's relationship with the DSA and her likely approach?",
+      "options": ["She is a firebrand who plans to remake the city overnight", "She is rejecting the DSA entirely", "Her ties to the DSA are rocky, and she is more wonk than ideologue, favouring incremental progress", "She plans to hand city government to the DSA"],
+      "answerIndex": 2,
+      "explanation": "Despite being a DSA member, she has a rocky relationship with it and focuses on practical steps like speeding up permits."
+    },
+    {
+      "question": "What risk do Los Angeles taxpayers face from the 2028 Olympics?",
+      "options": ["They must pay a ticket tax", "They are on the hook for any cost overruns if LA28 fails to make money", "They will lose the subway expansion", "The Games must be moved to Athens"],
+      "answerIndex": 1,
+      "explanation": "Unlike in the 1980s, taxpayers must cover shortfalls if the private organising committee, LA28, does not make money."
+    },
+    {
+      "question": "What does it mean that Ms Raman will have to triage mounting problems?",
+      "options": ["Ignore all of them", "Sort them by urgency and tackle the most pressing first", "Hand them to the state government", "Ask voters to solve them"],
+      "answerIndex": 1,
+      "explanation": "To triage is to prioritise by urgency, which fits a mayor facing deficits, slow services and rebuilding at once."
+    }
+  ]
+}
