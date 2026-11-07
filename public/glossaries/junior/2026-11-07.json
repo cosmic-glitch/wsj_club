@@ -1,0 +1,457 @@
+[
+  {
+    "k": "falter",
+    "t": "falters",
+    "kind": "vocab",
+    "pron": "FOL-ter",
+    "forms": [
+      "falters",
+      "falter"
+    ],
+    "text": "To falter is to become weak or unsteady. Here, if any part of the chain from brain to muscle falters, your grip gets weaker.",
+    "audio": true
+  },
+  {
+    "k": "taxing",
+    "t": "taxing",
+    "kind": "vocab",
+    "pron": "TAK-sing",
+    "forms": [
+      "taxing"
+    ],
+    "text": "Taxing means very tiring and hard work. Getting 39 muscles to team up is hard work for the brain.",
+    "audio": true
+  },
+  {
+    "k": "foreshadow",
+    "t": "foreshadow",
+    "kind": "vocab",
+    "pron": "for-SHAD-oh",
+    "forms": [
+      "foreshadow"
+    ],
+    "text": "To foreshadow is to give an early hint of something coming. A weak grip may hint at memory and thinking trouble later.",
+    "audio": true
+  },
+  {
+    "k": "get-a-grip",
+    "t": "Get a grip",
+    "kind": "phrase",
+    "forms": [
+      "Get a grip"
+    ],
+    "text": "\"Get a grip\" is a saying that means calm down and take control of yourself. The article plays with it, because people are now literally working on their grip.",
+    "audio": true
+  },
+  {
+    "k": "idiom",
+    "t": "idiom",
+    "kind": "word",
+    "forms": [
+      "idiom"
+    ],
+    "text": "An idiom is a saying whose meaning is different from its separate words, like \"break a leg.\"",
+    "audio": true
+  },
+  {
+    "k": "dead-hang",
+    "t": "dead hangs",
+    "kind": "word",
+    "forms": [
+      "dead hangs"
+    ],
+    "text": "A dead hang is an exercise where you hold onto a bar and dangle with your arms straight, as long as you can.",
+    "audio": true
+  },
+  {
+    "k": "farmers-carry",
+    "t": "farmer’s carries",
+    "kind": "word",
+    "forms": [
+      "farmer’s carries"
+    ],
+    "text": "A farmer's carry is an exercise where you walk while holding something heavy in each hand, like buckets of water.",
+    "audio": true
+  },
+  {
+    "k": "gripper",
+    "t": "grippers",
+    "kind": "word",
+    "forms": [
+      "grippers"
+    ],
+    "text": "A hand gripper is a small spring tool that you squeeze to make your hand stronger.",
+    "audio": true
+  },
+  {
+    "k": "trigger",
+    "t": "trigger",
+    "kind": "word",
+    "forms": [
+      "trigger"
+    ],
+    "text": "A trigger is something that sets off a chain of events, like a spark. Here, one famous study set off the trend.",
+    "audio": true
+  },
+  {
+    "k": "headline-grabbing",
+    "t": "headline-grabbing",
+    "kind": "word",
+    "forms": [
+      "headline-grabbing"
+    ],
+    "text": "Headline-grabbing means so surprising or exciting that newspapers print it in big letters.",
+    "audio": true
+  },
+  {
+    "k": "lancet",
+    "t": "Lancet",
+    "kind": "name",
+    "forms": [
+      "Lancet"
+    ],
+    "text": "The Lancet is a famous medical journal, a magazine where doctors and scientists publish their studies.",
+    "audio": true
+  },
+  {
+    "k": "associated",
+    "t": "associated",
+    "kind": "word",
+    "forms": [
+      "associated"
+    ],
+    "text": "Associated means connected or linked. When a study says two things are associated, they tend to show up together.",
+    "audio": true
+  },
+  {
+    "k": "cardiovascular",
+    "t": "cardiovascular",
+    "kind": "word",
+    "forms": [
+      "cardiovascular"
+    ],
+    "text": "Cardiovascular means having to do with the heart and the blood vessels that carry blood around the body.",
+    "audio": true
+  },
+  {
+    "k": "systolic-blood-pressure",
+    "t": "systolic blood pressure",
+    "kind": "word",
+    "forms": [
+      "systolic blood pressure"
+    ],
+    "text": "Systolic blood pressure is the pressure of blood pushing on your artery walls each time your heart beats. Doctors measure it to check your health.",
+    "audio": true
+  },
+  {
+    "k": "predictor",
+    "t": "predictor",
+    "kind": "word",
+    "forms": [
+      "predictor"
+    ],
+    "text": "A predictor is a clue that helps you guess what will happen next, like dark clouds predicting rain.",
+    "audio": true
+  },
+  {
+    "k": "alas",
+    "t": "Alas",
+    "kind": "word",
+    "forms": [
+      "Alas"
+    ],
+    "text": "Alas is an old-fashioned word that means unfortunately. It shows the writer is a little sad about what comes next.",
+    "audio": true
+  },
+  {
+    "k": "puppets",
+    "t": "puppets",
+    "kind": "word",
+    "forms": [
+      "puppets"
+    ],
+    "text": "A puppet is a toy that moves only when someone pulls its strings. The scientist means muscles move only when the brain tells them to.",
+    "audio": true
+  },
+  {
+    "k": "physiologist",
+    "t": "physiologist",
+    "kind": "word",
+    "forms": [
+      "physiologist"
+    ],
+    "text": "A physiologist is a scientist who studies how living bodies work, such as how muscles and hearts do their jobs.",
+    "audio": true
+  },
+  {
+    "k": "neurological",
+    "t": "neurological",
+    "kind": "word",
+    "forms": [
+      "neurological",
+      "neurologically"
+    ],
+    "text": "Neurological means having to do with nerves and the brain, the body's wiring and control center.",
+    "audio": true
+  },
+  {
+    "k": "chain-of-command",
+    "t": "chain of command",
+    "kind": "phrase",
+    "forms": [
+      "chain of command"
+    ],
+    "text": "A chain of command is the order in which orders are passed down, like from a coach to the captain to the team. Here, orders pass from the brain through nerves to muscles.",
+    "audio": true
+  },
+  {
+    "k": "electrical-signals",
+    "t": "electrical signals",
+    "kind": "word",
+    "forms": [
+      "electrical signals"
+    ],
+    "text": "Electrical signals are tiny zaps of electricity that carry messages along your nerves between your brain and body.",
+    "audio": true
+  },
+  {
+    "k": "nerves",
+    "t": "nerves",
+    "kind": "word",
+    "forms": [
+      "nerves"
+    ],
+    "text": "Nerves are thin, wire-like parts of your body that carry messages between your brain and the rest of you.",
+    "audio": true
+  },
+  {
+    "k": "orchestration",
+    "t": "orchestration",
+    "kind": "word",
+    "forms": [
+      "orchestration"
+    ],
+    "text": "Orchestration means organizing many parts so they work together, like a conductor leading an orchestra. Here, the brain leads the hand muscles.",
+    "audio": true
+  },
+  {
+    "k": "muster",
+    "t": "muster",
+    "kind": "word",
+    "forms": [
+      "muster"
+    ],
+    "text": "To muster something is to gather it up, like courage or strength. Here, it is the force each finger can gather.",
+    "audio": true
+  },
+  {
+    "k": "cognitive-test",
+    "t": "cognitive test",
+    "kind": "word",
+    "forms": [
+      "cognitive test"
+    ],
+    "text": "A cognitive test checks how well your brain thinks, remembers, and solves problems.",
+    "audio": true
+  },
+  {
+    "k": "cognitive-decline",
+    "t": "cognitive decline",
+    "kind": "word",
+    "forms": [
+      "cognitive decline"
+    ],
+    "text": "Cognitive decline means thinking and memory slowly getting worse, which can happen as people get very old.",
+    "audio": true
+  },
+  {
+    "k": "intriguing",
+    "t": "intriguing",
+    "kind": "word",
+    "forms": [
+      "intriguing"
+    ],
+    "text": "Intriguing means so interesting that it makes you want to know more.",
+    "audio": true
+  },
+  {
+    "k": "early-warning",
+    "t": "early warning",
+    "kind": "phrase",
+    "forms": [
+      "early warning"
+    ],
+    "text": "An early warning is a sign that tells you about a problem before it gets big, like a smoke alarm.",
+    "audio": true
+  },
+  {
+    "k": "meta-analysis",
+    "t": "meta-analysis",
+    "kind": "word",
+    "forms": [
+      "meta-analysis"
+    ],
+    "text": "A meta-analysis is a study of studies. Researchers combine the results of many earlier studies to find a clearer answer.",
+    "audio": true
+  },
+  {
+    "k": "observational-studies",
+    "t": "observational studies",
+    "kind": "word",
+    "forms": [
+      "observational studies"
+    ],
+    "text": "An observational study watches what happens to people without telling them what to do. It cannot prove one thing causes another.",
+    "audio": true
+  },
+  {
+    "k": "follow-up",
+    "t": "follow-up",
+    "kind": "word",
+    "forms": [
+      "follow-up"
+    ],
+    "text": "A follow-up period is how long researchers keep checking on the same people after a study starts.",
+    "audio": true
+  },
+  {
+    "k": "asymmetry",
+    "t": "asymmetry",
+    "kind": "word",
+    "forms": [
+      "asymmetry"
+    ],
+    "text": "Asymmetry means two sides that are not equal. Grip asymmetry means one hand is stronger than the other.",
+    "audio": true
+  },
+  {
+    "k": "dominant-hand",
+    "t": "dominant hand",
+    "kind": "word",
+    "forms": [
+      "dominant hand"
+    ],
+    "text": "Your dominant hand is the one you use most and are best with, such as your right hand if you are right-handed.",
+    "audio": true
+  },
+  {
+    "k": "telling",
+    "t": "telling",
+    "kind": "word",
+    "forms": [
+      "telling"
+    ],
+    "text": "Telling here means revealing or showing something important, not talking. A telling gap is one that gives a clue.",
+    "audio": true
+  },
+  {
+    "k": "cohort-studies",
+    "t": "cohort studies",
+    "kind": "word",
+    "forms": [
+      "cohort studies"
+    ],
+    "text": "A cohort study follows a group of people over many years to see who gets sick and who stays healthy.",
+    "audio": true
+  },
+  {
+    "k": "pooled",
+    "t": "pooled",
+    "kind": "word",
+    "forms": [
+      "pooled"
+    ],
+    "text": "To pool things is to put them together into one big group, like pooling money. Here, nine studies were combined.",
+    "audio": true
+  },
+  {
+    "k": "neuromuscular",
+    "t": "neuromuscular",
+    "kind": "word",
+    "forms": [
+      "neuromuscular"
+    ],
+    "text": "Neuromuscular means having to do with nerves and muscles working together.",
+    "audio": true
+  },
+  {
+    "k": "hemisphere",
+    "t": "hemisphere",
+    "kind": "word",
+    "forms": [
+      "hemisphere"
+    ],
+    "text": "A hemisphere is one half of something round. Your brain has a left and a right hemisphere.",
+    "audio": true
+  },
+  {
+    "k": "division-of-labour",
+    "t": "division of labour",
+    "kind": "phrase",
+    "forms": [
+      "division of labour"
+    ],
+    "text": "Division of labour means splitting up jobs so different parts do different tasks. Here, each side of the brain handles one hand.",
+    "audio": true
+  },
+  {
+    "k": "deterioration",
+    "t": "deterioration",
+    "kind": "word",
+    "forms": [
+      "deterioration"
+    ],
+    "text": "Deterioration means slowly getting worse over time.",
+    "audio": true
+  },
+  {
+    "k": "a-word-of-caution",
+    "t": "A word of caution",
+    "kind": "phrase",
+    "forms": [
+      "A word of caution"
+    ],
+    "text": "A word of caution is a warning not to take something too far. The writer says not to read too much into grip strength.",
+    "audio": true
+  },
+  {
+    "k": "diagnosis",
+    "t": "diagnosis",
+    "kind": "word",
+    "forms": [
+      "diagnosis"
+    ],
+    "text": "A diagnosis is a doctor's decision about what illness a person has.",
+    "audio": true
+  },
+  {
+    "k": "warranted",
+    "t": "warranted",
+    "kind": "word",
+    "forms": [
+      "warranted"
+    ],
+    "text": "Warranted means deserved or called for. Here, more checks are a good idea.",
+    "audio": true
+  },
+  {
+    "k": "resistance-training",
+    "t": "resistance training",
+    "kind": "word",
+    "forms": [
+      "resistance training"
+    ],
+    "text": "Resistance training is exercise that makes muscles push against weight or force, like lifting weights or doing push-ups.",
+    "audio": true
+  },
+  {
+    "k": "hang-in-there",
+    "t": "Hang in there",
+    "kind": "phrase",
+    "forms": [
+      "Hang in there"
+    ],
+    "text": "\"Hang in there\" means keep going and do not give up. It is also a joke here, because hanging is a grip exercise.",
+    "audio": true
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-07",
+  "title": "Is grip strength a useful indicator of health?",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/11/06/is-grip-strength-a-useful-indicator-of-health",
+  "articlePageUrl": "/articles/junior/2026-11-07.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "falter",
+      "partOfSpeech": "verb",
+      "pronunciation": "FOL-ter",
+      "articleQuote": "If any part falters, strength suffers.",
+      "meaning": "To falter is to become weak, unsteady, or less sure, often just when you need to keep going. A runner can falter near the finish line, and a voice can falter when someone is nervous. In the article, if any part of the chain from brain to muscle falters, the grip gets weaker.",
+      "examples": [
+        "The team began to falter in the last quarter and lost its lead.",
+        "Her voice started to falter as she stood up to read her speech."
+      ]
+    },
+    {
+      "word": "taxing",
+      "partOfSpeech": "adjective",
+      "pronunciation": "TAK-sing",
+      "articleQuote": "Such orchestration is neurologically taxing",
+      "meaning": "Something taxing uses up a lot of your energy or effort, so it feels tiring and hard. A long math test can be taxing, and so can a day of hiking. In the article, getting 39 muscles to work together for a firm grip is taxing for the brain.",
+      "examples": [
+        "Studying for three tests in one week was taxing.",
+        "The steep hike up the mountain was too taxing for the little dog."
+      ]
+    },
+    {
+      "word": "foreshadow",
+      "partOfSpeech": "verb",
+      "pronunciation": "for-SHAD-oh",
+      "articleQuote": "can also foreshadow cognitive decline",
+      "meaning": "To foreshadow something is to give an early hint that it is coming later. Dark clouds can foreshadow a storm, and a writer can foreshadow a twist in a story. In the article, a weakening grip may foreshadow trouble with thinking and memory years later.",
+      "examples": [
+        "The strange noise from the engine seemed to foreshadow a breakdown.",
+        "The first chapter foreshadows that the quiet new kid will become the hero."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Meta-analysis",
+      "articleQuote": "A meta-analysis published in April pooled nine cohort studies",
+      "meaning": "Why do scientists trust some findings more than others? One reason is a **meta-analysis**, which is a study of studies. Instead of running one new experiment, researchers collect many earlier studies on the same question and combine their results into one big answer.\n\nImagine you want to know whether a new basketball shoe helps people jump higher. One team tests ten kids, and the shoes seem to help. Another team tests twelve kids, and the shoes seem to do nothing. Ten kids is not many, so luck could be playing a big part. But if you gather sixty teams and add up everyone they tested, the small flukes cancel out and a clearer pattern shows.\n\nIn the article, one meta-analysis pooled nine studies with around 900,000 people, and another combined 60 studies with around 380,000. That is a lot more evidence than any single small experiment can give. A meta-analysis is only as good as the studies put into it, though.\n\nSo the takeaway: a meta-analysis combines many studies into one, which makes a result more trustworthy than a single small study."
+    },
+    {
+      "name": "Correlation",
+      "articleQuote": "Alas, regular grip exercises alone are unlikely to lengthen your life.",
+      "meaning": "If two things tend to go together, does one cause the other? Not always. When two things rise and fall together, scientists call that a **correlation**, and it is only a clue, not proof that one thing causes the other.\n\nThink about ice cream sales and sunburns. On days when more ice cream is sold, more people get sunburned. But ice cream does not cause sunburn. The sunny weather causes both. The two are correlated, yet neither one is the cause of the other.\n\nIn the article, people with strong grips tend to live longer. That is a correlation. It does not mean squeezing a hand gripper will add years to your life. A strong grip is more likely a sign of a healthy body and brain overall, so it works like a thermometer: it shows how healthy you are but does not make you healthy.\n\nSo the takeaway: when two things go together, ask whether one causes the other, or whether something else is behind both."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, why can grip strength tell doctors about your overall health?",
+      "options": [
+        "Squeezing hard makes your heart stronger right away",
+        "Gripping needs the brain, nerves, and many muscles to work together, so a problem anywhere can weaken it",
+        "Only people with big hands can have a strong grip",
+        "Grip strength is controlled only by the fingers"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article compares muscles to puppets at the end of a chain of command: the brain, nerves, and muscles must all work, and if any part falters, strength suffers."
+    },
+    {
+      "question": "What did the 2015 Lancet study find about grip strength?",
+      "options": [
+        "Each 5kg drop in grip strength went with a 16% higher risk of death from any cause",
+        "Grip exercises added ten years to people's lives",
+        "Grip strength mattered less than blood pressure",
+        "Only older people had weaker grips"
+      ],
+      "answerIndex": 0,
+      "explanation": "The study followed 139,691 people and linked every 5kg decrease in grip strength with a 16% higher risk of death from any cause."
+    },
+    {
+      "question": "Why is gripping described as 'neurologically taxing'?",
+      "options": [
+        "Gripping takes a lot of money",
+        "The hand has only one muscle that does all the work",
+        "The brain must coordinate a system of 39 muscles in the hand and wrist",
+        "Grip tests are very painful"
+      ],
+      "answerIndex": 2,
+      "explanation": "A firm grip needs the brain to orchestrate 39 muscles, which is hard work for the nervous system."
+    },
+    {
+      "question": "What might it mean if one hand is much weaker than the other?",
+      "options": [
+        "The person should only use the stronger hand",
+        "Nothing, because all hands are the same",
+        "The person is left-handed",
+        "It may signal subtle nerve or muscle problems, and was linked to a higher risk of heart disease death"
+      ],
+      "answerIndex": 3,
+      "explanation": "A usual gap is around 10%, but a much larger gap was linked to a 29% higher risk of cardiovascular death."
+    },
+    {
+      "question": "What does the article say about a weak grip and diagnosis?",
+      "options": [
+        "A weak grip is not a diagnosis, but it can suggest that more checks are a good idea",
+        "A weak grip proves a person is sick",
+        "A strong grip means you never need a doctor",
+        "Grip tests should replace all other health checks"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article cautions that a weak or lopsided grip is no diagnosis, but it can suggest further checks are warranted."
+    }
+  ]
+}
