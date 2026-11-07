@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-07",
+  "title": "The world must act to stop a cyber-disaster",
+  "articleUrl": "https://www.economist.com/leaders/2026/11/05/the-world-must-act-to-stop-a-cyber-disaster",
+  "articlePageUrl": "/articles/2026-11-07.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "malfeasance",
+      "partOfSpeech": "noun",
+      "pronunciation": "mal-FEE-zunss",
+      "articleQuote": "which has turbocharged cyber malfeasance",
+      "meaning": "Malfeasance is wrongdoing, especially an unlawful act carried out by someone who is supposed to behave properly, such as an official, an executive or a professional. It is a formal word, common in news about corruption and crime. Here the Economist stretches it to cover hacking: criminals and attackers are doing illegal harm, and AI is making them faster at it.",
+      "examples": [
+        "The mayor was removed from office after an audit uncovered years of financial malfeasance.",
+        "The school board promised an investigation into the malfeasance behind the rigged election for class president."
+      ]
+    },
+    {
+      "word": "laxity",
+      "partOfSpeech": "noun",
+      "pronunciation": "LAK-sih-tee",
+      "articleQuote": "avoiding laxity in practice",
+      "meaning": "Laxity is carelessness or looseness about rules and standards: not checking, not enforcing, not bothering. It comes from the same root as relax, and it is almost always used as a criticism. In this article it means sloppy habits like leaving a default password on a device, which a strong security system cannot make up for.",
+      "examples": [
+        "The coach blamed the team's laxity in practice for the embarrassing loss.",
+        "Because of the laxity of the lifeguards, nobody noticed the swimmer was in trouble until it was nearly too late."
+      ]
+    },
+    {
+      "word": "benignly",
+      "partOfSpeech": "adverb",
+      "pronunciation": "bih-NINE-lee",
+      "articleQuote": "when AI is used benignly it creates a friendly-fire problem",
+      "meaning": "Benignly means in a harmless or kindly way, with no intent to hurt. Its root, benign, is the opposite of malignant: a benign tumour is not cancerous, and a benign smile is a friendly one. Here it describes defenders who use AI for good, to find and fix weak spots, yet whose work can still be turned against them.",
+      "examples": [
+        "The old dog watched the toddler benignly as she pulled on its ears.",
+        "She meant her joke benignly, but it still hurt his feelings."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Vulnerabilities and patches",
+      "articleQuote": "The moment that a “patch” for a newly identified vulnerability is released, hackers’ AI models can examine it.",
+      "meaning": "Here is the odd part of the article's story: the act of fixing a security hole can show attackers where the hole was. The field is computer security, and it rests on two plain ideas.\n\nA **vulnerability** is a mistake in software, a bug that lets someone make a program do something its makers never intended, such as letting a stranger take over a computer. All large programs contain such mistakes, because people write them and people err. A **patch** is the update that corrects the mistake. Fixing happens in two steps: the software maker writes the patch, and then every owner of the software has to install it. Many owners are slow, so for days, weeks or even years some computers stay unfixed.\n\nThat gap is the danger. Compare the old version of the code with the patched version and the difference points straight at the flaw. The article says attackers' AI models can now do that comparison within moments of a patch's release, then hunt for every computer that has not yet installed it. Suppose a school's website runs a program with a patch released on Monday. A hacker's tool can read Monday's patch and be attacking unpatched sites by Monday afternoon.\n\nThe lesson to carry away is that a security fix is a race: the moment it is public, the clock starts, so installing updates promptly matters as much as writing them."
+    },
+    {
+      "name": "Private keys and certificates",
+      "articleQuote": "a crucial internet security certificate was revealed to have a private key of “4”, when it should have been a hundred digits long",
+      "meaning": "The secret behind this story is the mathematical field of cryptography, the science of keeping messages private, and it is why a private key of “4” sounds so ridiculous.\n\nWhen your browser shows a padlock, it is using a pair of linked numbers. The **public key** is shared with everyone and can lock a message. The **private key** is kept secret by the website and is the only thing that can unlock it. The two are mathematically tied together, but working out the private key from the public one is supposed to take longer than the age of the universe, as long as the private key is a huge, random number.\n\nA **certificate** is a digital ID card. A trusted organisation signs it to vouch that a particular public key really belongs to a particular website, such as your bank. If the private key behind it is “4”, anyone can guess it on the first try. Imagine a combination lock with a single dial and ten positions: a thief opens it in seconds. A hundred digits gives a number of possibilities no computer could ever try.\n\nThe takeaway: encryption is only as strong as the secrecy and size of the key, so a single sloppy key can undo the safety of everything built on it."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what has caused the recent torrent of computer hacks and bugs?",
+      "options": [
+        "A shortage of engineers willing to fix software",
+        "Artificial intelligence, especially open-source models that attackers can use",
+        "A new law that forced companies to publish their code",
+        "Governments switching off the internet in several countries"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says AI has turbocharged cyber malfeasance, with open-source models helping attackers work with inhuman efficiency."
+    },
+    {
+      "question": "What is the “friendly-fire problem” of using AI benignly?",
+      "options": [
+        "Defenders accidentally delete their own files",
+        "Attackers' AI can study a newly released patch and learn how to exploit systems not yet fixed",
+        "Two defending companies attack each other by mistake",
+        "AI tools refuse to work for security teams"
+      ],
+      "answerIndex": 1,
+      "explanation": "A patch shows what the weakness was, so hackers' models can use it against computers that have not been updated."
+    },
+    {
+      "question": "Why does the article say defenders normally hold a “narrow natural advantage”?",
+      "options": [
+        "They only need to fix single vulnerabilities, while attackers usually need a whole chain of them",
+        "They always have more money than attackers",
+        "Their software is never connected to the internet",
+        "Attackers are legally forbidden from using AI"
+      ],
+      "answerIndex": 0,
+      "explanation": "Defenders need to patch only isolated flaws, but a breach typically needs several vulnerabilities linked together."
+    },
+    {
+      "question": "Which situation best shows “laxity”?",
+      "options": [
+        "A company hires a team to test its own defences",
+        "A fridge connected to the internet still uses its factory default password",
+        "A lab limits what its newly released AI can do",
+        "A programmer proves her code cannot be hacked"
+      ],
+      "answerIndex": 1,
+      "explanation": "Laxity is carelessness, and leaving a default password on an internet-connected device is the article's example of it."
+    },
+    {
+      "question": "Why was a private key of “4” so alarming?",
+      "options": [
+        "It was too long to store safely",
+        "Anyone could guess it almost instantly, so the security it was meant to provide was worthless",
+        "It proved the website was run by a government",
+        "It meant the public key had been shared too widely"
+      ],
+      "answerIndex": 1,
+      "explanation": "A private key should be a huge random number; a tiny one like 4 can be guessed at once, which breaks the encryption."
+    }
+  ]
+}

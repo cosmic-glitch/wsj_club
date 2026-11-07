@@ -1,0 +1,497 @@
+[
+  {
+    "k": "malfeasance",
+    "t": "malfeasance",
+    "kind": "vocab",
+    "pron": "mal-FEE-zunss",
+    "forms": [
+      "malfeasance"
+    ],
+    "text": "Malfeasance is wrongdoing, especially unlawful acts by someone who should know better. Here it stretches to cover hacking: attackers doing illegal harm, with AI making them faster at it.",
+    "audio": true
+  },
+  {
+    "k": "laxity",
+    "t": "laxity",
+    "kind": "vocab",
+    "pron": "LAK-sih-tee",
+    "forms": [
+      "laxity"
+    ],
+    "text": "Laxity is carelessness or looseness about rules and standards, from the same root as relax. Here it means sloppy habits, like leaving a default password in place, that strong systems cannot make up for.",
+    "audio": true
+  },
+  {
+    "k": "benignly",
+    "t": "benignly",
+    "kind": "vocab",
+    "pron": "bih-NINE-lee",
+    "forms": [
+      "benignly"
+    ],
+    "text": "Benignly means in a harmless, kindly way. Here it describes defenders using AI for good, to find and fix weak spots, whose work can still be turned against them.",
+    "audio": true
+  },
+  {
+    "k": "turbocharged",
+    "t": "turbocharged",
+    "kind": "word",
+    "forms": [
+      "turbocharged"
+    ],
+    "text": "A turbocharger forces extra air into a car engine to make it much more powerful. Used figuratively, it means something was made far faster or stronger. Here AI has made hacking dramatically more efficient.",
+    "audio": true
+  },
+  {
+    "k": "torrent",
+    "t": "torrent",
+    "kind": "word",
+    "forms": [
+      "torrent"
+    ],
+    "text": "A torrent is a violent rush of water, and figuratively an overwhelming flood of anything. Here the usual trickle of hacks and bugs has become a flood.",
+    "audio": true
+  },
+  {
+    "k": "stem",
+    "t": "stem",
+    "kind": "word",
+    "forms": [
+      "stem"
+    ],
+    "text": "To stem something is to stop or hold back its flow, like pressing on a leaking pipe. Engineers constantly work to stop a steady stream of hacks and bugs.",
+    "audio": true
+  },
+  {
+    "k": "empowered",
+    "t": "empowered",
+    "kind": "word",
+    "forms": [
+      "empowered"
+    ],
+    "text": "To empower is to give someone more ability or power to do something. Here open-source AI models have given attackers new strength, and not for good purposes.",
+    "audio": true
+  },
+  {
+    "k": "open-source",
+    "t": "open-source",
+    "kind": "name",
+    "forms": [
+      "Open-source",
+      "open-source"
+    ],
+    "text": "Open-source software or AI models are released for anyone to download, inspect and change. That helps honest builders, but it also gives attackers the same powerful tools, with no one able to control who uses them.",
+    "audio": true
+  },
+  {
+    "k": "inhuman",
+    "t": "inhuman",
+    "kind": "word",
+    "forms": [
+      "inhuman"
+    ],
+    "text": "Here inhuman does not mean cruel but beyond what a person could do: attackers' AI works faster and longer than any human, without tiring.",
+    "audio": true
+  },
+  {
+    "k": "persistence",
+    "t": "persistence",
+    "kind": "word",
+    "forms": [
+      "persistence"
+    ],
+    "text": "Persistence is refusing to give up and continuing to try. An AI attacker can keep probing a system all day and night, without getting bored or tired.",
+    "audio": true
+  },
+  {
+    "k": "flaws",
+    "t": "flaws",
+    "kind": "word",
+    "forms": [
+      "flaws"
+    ],
+    "text": "A flaw is a mistake or weakness. In software, a flaw is a bug that attackers can use to break in or take control.",
+    "audio": true
+  },
+  {
+    "k": "php",
+    "t": "PHP",
+    "kind": "name",
+    "forms": [
+      "PHP",
+      "php"
+    ],
+    "text": "PHP is a popular programming language that runs a huge number of websites. A flaw in it matters because so many computers use it.",
+    "audio": true
+  },
+  {
+    "k": "take-over",
+    "t": "take over any computer",
+    "kind": "phrase",
+    "forms": [
+      "take over"
+    ],
+    "text": "To take over a computer is to seize control of it, so that the attacker, not the owner, gives it orders.",
+    "audio": true
+  },
+  {
+    "k": "supermarket-freezers",
+    "t": "powered down",
+    "kind": "phrase",
+    "forms": [
+      "powered down"
+    ],
+    "text": "To power down is to shut off. Criminals instructed supermarket freezers to turn off, which could spoil food across many shops.",
+    "audio": true
+  },
+  {
+    "k": "private-key",
+    "t": "private key",
+    "kind": "name",
+    "forms": [
+      "private key"
+    ],
+    "text": "A private key is a secret number that unlocks messages locked with its matching public key. It should be a huge random number, so a key of just 4 is as good as no lock at all.",
+    "audio": true
+  },
+  {
+    "k": "certificate",
+    "t": "security certificate",
+    "kind": "name",
+    "forms": [
+      "certificate"
+    ],
+    "text": "A security certificate is a digital ID card that vouches a public key really belongs to a given website, so your browser can trust the connection.",
+    "audio": true
+  },
+  {
+    "k": "sobering",
+    "t": "sobering",
+    "kind": "word",
+    "forms": [
+      "sobering"
+    ],
+    "text": "Sobering describes news that makes you serious and realistic after hopeful or careless thinking. The recent events are a reality check.",
+    "audio": true
+  },
+  {
+    "k": "commentators",
+    "t": "commentators",
+    "kind": "word",
+    "forms": [
+      "commentators"
+    ],
+    "text": "Commentators are people who publicly explain and give opinions on the news, such as columnists and analysts.",
+    "audio": true
+  },
+  {
+    "k": "disruption",
+    "t": "disruption",
+    "kind": "word",
+    "forms": [
+      "disruption"
+    ],
+    "text": "Disruption is a serious interruption or upheaval of how something normally works. Here AI is upsetting the normal balance of cyber-security.",
+    "audio": true
+  },
+  {
+    "k": "crooks",
+    "t": "crooks",
+    "kind": "word",
+    "forms": [
+      "crooks"
+    ],
+    "text": "Crooks are criminals. The word is informal and slightly old-fashioned.",
+    "audio": true
+  },
+  {
+    "k": "dashed",
+    "t": "dashed",
+    "kind": "word",
+    "forms": [
+      "dashed"
+    ],
+    "text": "When hopes are dashed, they are destroyed or crushed suddenly. The hope that AI would help defenders more than attackers is failing.",
+    "audio": true
+  },
+  {
+    "k": "infrastructure",
+    "t": "infrastructure",
+    "kind": "word",
+    "forms": [
+      "infrastructure"
+    ],
+    "text": "Infrastructure is the basic systems a society runs on, such as power grids, water, roads and communications networks. Here it covers the digital systems behind modern life.",
+    "audio": true
+  },
+  {
+    "k": "vulnerable",
+    "t": "vulnerable",
+    "kind": "word",
+    "forms": [
+      "vulnerable"
+    ],
+    "text": "Vulnerable means open to being harmed or attacked. A vulnerable computer system has weaknesses that attackers can use.",
+    "audio": true
+  },
+  {
+    "k": "frontier",
+    "t": "frontier",
+    "kind": "word",
+    "forms": [
+      "frontier"
+    ],
+    "text": "In AI, the frontier means the most advanced, cutting-edge systems that exist. Frontier models are the leading ones built by top labs.",
+    "audio": true
+  },
+  {
+    "k": "project-glasswing",
+    "t": "Project Glasswing",
+    "kind": "name",
+    "forms": [
+      "Project Glasswing"
+    ],
+    "text": "Project Glasswing is Anthropic's invitation-only programme giving selected organisations access to its most powerful cyber-security capabilities, meant to help defenders.",
+    "audio": true
+  },
+  {
+    "k": "invitation-only",
+    "t": "invitation-only",
+    "kind": "word",
+    "forms": [
+      "invitation-only"
+    ],
+    "text": "An invitation-only club admits only those who are asked to join. Because membership is limited, many defenders are left without the best tools.",
+    "audio": true
+  },
+  {
+    "k": "democratise",
+    "t": "democratise",
+    "kind": "word",
+    "forms": [
+      "democratise"
+    ],
+    "text": "To democratise something is to make it available to everyone, not just a privileged few. The promise was to widen access to powerful tools.",
+    "audio": true
+  },
+  {
+    "k": "sign-off",
+    "t": "sign-off",
+    "kind": "word",
+    "forms": [
+      "sign-off"
+    ],
+    "text": "A sign-off is official approval. The model-makers now need the American government's approval before adding members, which slows things down.",
+    "audio": true
+  },
+  {
+    "k": "no-mans-land",
+    "t": "no-man's land",
+    "kind": "phrase",
+    "forms": [
+      "no-man’s land"
+    ],
+    "text": "No-man's land originally meant the empty ground between two armies. Here it means a stuck position between two options, where a country can use neither American nor Chinese technology comfortably.",
+    "audio": true
+  },
+  {
+    "k": "patch",
+    "t": "patch",
+    "kind": "word",
+    "forms": [
+      "patch"
+    ],
+    "text": "In software, a patch is an update that fixes a flaw, like a patch on a hole in a tyre. Once released, it can also reveal where the flaw was.",
+    "audio": true
+  },
+  {
+    "k": "vulnerability",
+    "t": "vulnerability",
+    "kind": "word",
+    "forms": [
+      "vulnerability"
+    ],
+    "text": "A vulnerability is a weakness in software that attackers could use to break in. Finding and fixing them is the core of cyber-security.",
+    "audio": true
+  },
+  {
+    "k": "friendly-fire",
+    "t": "friendly-fire",
+    "kind": "phrase",
+    "forms": [
+      "friendly-fire"
+    ],
+    "text": "Friendly fire is when soldiers are hit by their own side's weapons. Here, defenders' own fixes end up helping attackers.",
+    "audio": true
+  },
+  {
+    "k": "leak",
+    "t": "leak",
+    "kind": "word",
+    "forms": [
+      "leak"
+    ],
+    "text": "To leak is to let secret information get out early. Here a patch became public before defenders could install it, helping attackers.",
+    "audio": true
+  },
+  {
+    "k": "prosaic",
+    "t": "prosaic",
+    "kind": "word",
+    "forms": [
+      "prosaic"
+    ],
+    "text": "Prosaic means ordinary and unexciting, like plain prose rather than poetry. Here it means everyday weaknesses such as old software or weak passwords.",
+    "audio": true
+  },
+  {
+    "k": "outdated",
+    "t": "outdated",
+    "kind": "word",
+    "forms": [
+      "outdated"
+    ],
+    "text": "Outdated software is an old version that has not been updated, so it still has known flaws that attackers can exploit.",
+    "audio": true
+  },
+  {
+    "k": "default-password",
+    "t": "default password",
+    "kind": "name",
+    "forms": [
+      "default password"
+    ],
+    "text": "A default password is the one a device ships with, often something like admin and the same for every unit. Attackers know them, so leaving one unchanged is an open door.",
+    "audio": true
+  },
+  {
+    "k": "hazard",
+    "t": "hazard",
+    "kind": "word",
+    "forms": [
+      "hazard"
+    ],
+    "text": "A hazard is something that could cause harm or danger.",
+    "audio": true
+  },
+  {
+    "k": "in-parallel",
+    "t": "in parallel",
+    "kind": "phrase",
+    "forms": [
+      "in parallel"
+    ],
+    "text": "Doing things in parallel means all at the same time. An AI can attack thousands of targets at once instead of one after another.",
+    "audio": true
+  },
+  {
+    "k": "imbalance",
+    "t": "imbalance",
+    "kind": "word",
+    "forms": [
+      "imbalance"
+    ],
+    "text": "An imbalance is an unequal situation. The article wants defenders to have clearly stronger tools than attackers.",
+    "audio": true
+  },
+  {
+    "k": "armoury",
+    "t": "armoury",
+    "kind": "word",
+    "forms": [
+      "armoury"
+    ],
+    "text": "An armoury is a store of weapons and equipment. Here defenders need a bigger collection of cyber tools to defend with.",
+    "audio": true
+  },
+  {
+    "k": "permissive",
+    "t": "permissive",
+    "kind": "word",
+    "forms": [
+      "permissive"
+    ],
+    "text": "A permissive attitude allows things freely rather than restricting them. The article wants America to let more defenders into its programmes.",
+    "audio": true
+  },
+  {
+    "k": "folly",
+    "t": "folly",
+    "kind": "word",
+    "forms": [
+      "folly"
+    ],
+    "text": "Folly is foolishness, a decision that is unwise. China sees handing powerful cyber-weapons to everyone as a mistake.",
+    "audio": true
+  },
+  {
+    "k": "potent",
+    "t": "potent",
+    "kind": "word",
+    "forms": [
+      "potent"
+    ],
+    "text": "Potent means powerful and effective. Potent cyber-weapons can do great damage.",
+    "audio": true
+  },
+  {
+    "k": "behind-the-curve",
+    "t": "fallen behind the curve",
+    "kind": "phrase",
+    "forms": [
+      "behind the curve"
+    ],
+    "text": "To be behind the curve is to lag those who adapt faster. Organisations not yet using AI to find flaws are falling behind.",
+    "audio": true
+  },
+  {
+    "k": "funnelling",
+    "t": "funnelling",
+    "kind": "word",
+    "forms": [
+      "funnelling"
+    ],
+    "text": "To funnel is to channel something from a wide source into a narrow target. Here money and help are directed towards providers of infrastructure.",
+    "audio": true
+  },
+  {
+    "k": "project-watershed",
+    "t": "Project Watershed 250",
+    "kind": "name",
+    "forms": [
+      "Project Watershed 250"
+    ],
+    "text": "Project Watershed 250 is a Texas effort to direct resources to infrastructure providers, such as utilities, to help them with basic cyber-security.",
+    "audio": true
+  },
+  {
+    "k": "verify-formally",
+    "t": "verify some code formally",
+    "kind": "phrase",
+    "forms": [
+      "verify some code formally"
+    ],
+    "text": "To verify code formally is to prove mathematically that it behaves exactly as intended, as a mathematician proves a theorem. That could make code unhackable.",
+    "audio": true
+  },
+  {
+    "k": "theorem",
+    "t": "theorem",
+    "kind": "word",
+    "forms": [
+      "theorem"
+    ],
+    "text": "A theorem is a mathematical statement proved true by logic, so it is certain rather than merely likely.",
+    "audio": true
+  },
+  {
+    "k": "grave",
+    "t": "grave",
+    "kind": "word",
+    "forms": [
+      "grave"
+    ],
+    "text": "Grave means very serious and worrying. A grave threat is a danger that could cause great harm.",
+    "audio": true
+  }
+]
