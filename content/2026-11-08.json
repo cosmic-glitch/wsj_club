@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-08",
+  "title": "Is childlessness contagious?",
+  "articleUrl": "https://www.economist.com/culture/2026/11/05/is-childlessness-contagious",
+  "articlePageUrl": "/articles/2026-11-08.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "vitiate",
+      "partOfSpeech": "verb",
+      "pronunciation": "VISH-ee-ayt",
+      "articleQuote": "Campaigns are more likely to vitiate than titillate.",
+      "meaning": "To vitiate something is to spoil it or weaken it so that it no longer works properly, as when a mistake vitiates an experiment or a broken rule vitiates a contract. It is a formal word, often used for things like arguments, agreements and results. The Economist is being wry: government campaigns to make babies are so cringe-inducing that they spoil the mood instead of exciting anyone.",
+      "examples": [
+        "If the referee admits she made the wrong call, that mistake could vitiate the whole result of the match.",
+        "Copying answers from a friend would vitiate the point of the practice test."
+      ]
+    },
+    {
+      "word": "prophylactic",
+      "partOfSpeech": "noun",
+      "pronunciation": "proh-fuh-LAK-tik",
+      "articleQuote": "A growing body of “misery memoirs”, which complain about how hard parenthood and marriage are, acts as a prophylactic, too.",
+      "meaning": "A prophylactic is anything that prevents something unwelcome before it happens. In medicine it means a treatment or measure that guards against disease, such as a vaccine or a daily dose of malaria pills. The word can also be used loosely, as here: gloomy books about parenthood work like a protection against wanting children, because they put readers off before they ever try.",
+      "examples": [
+        "Brushing your teeth every night is a prophylactic against cavities.",
+        "The coach made stretching mandatory as a prophylactic against pulled muscles."
+      ]
+    },
+    {
+      "word": "precipitously",
+      "partOfSpeech": "adverb",
+      "pronunciation": "prih-SIP-ih-tus-lee",
+      "articleQuote": "men’s sperm count having fallen precipitously in many countries",
+      "meaning": "Precipitously means very steeply and suddenly, like a cliff rather than a slope. It comes from the same root as precipice, a sheer drop. People use it for sharp falls in numbers such as prices, temperatures or populations, and the fall is usually alarming. In the article it describes a sharp decline in sperm counts across many countries.",
+      "examples": [
+        "After the star player got hurt, ticket sales dropped precipitously.",
+        "The path ran precipitously down the side of the mountain, so we held the rope tightly."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Replacement rate",
+      "articleQuote": "The largest 15 countries by GDP are now all below the population replacement rate, including America, China and India.",
+      "meaning": "Every one of the world's 15 biggest economies is now below the replacement rate, which is the demography idea behind the article's worry about a shrinking planet.\n\nDemographers measure how many children a typical woman has over her lifetime. That number is the **total fertility rate**. The **replacement rate** is the fertility rate at which each generation exactly replaces itself, so the population stays the same size once you ignore immigration. In rich countries it is about **2.1 children per woman**. Two of those children replace the two parents. The extra 0.1 covers children who die young and the fact that slightly more boys than girls are born, so not every child grows up to become a parent.\n\nHere is a country of 1,000 couples. If they have 2,100 children between them, the next generation is the same size as theirs. If they average 1.5 children each, that is only 1,500 children replacing 2,000 parents, and every generation is about a quarter smaller than the one before. A population does not shrink right away, because many people are still alive from earlier generations. But the shrinking is built in.\n\nThe lesson to carry away is that a fertility rate only means something when you compare it with 2.1: just above it, a country holds steady, and below it, the population will fall unless immigration fills the gap."
+    },
+    {
+      "name": "Pay-as-you-go pensions",
+      "articleQuote": "ageing societies will have to rely on a smaller group of youngsters to fuel growth and fund pensions and public services",
+      "meaning": "The article says a smaller group of young people will have to \"fund pensions\", and that sentence only makes sense once you know where pension money comes from. The field is public finance, and in most rich countries the answer surprises people.\n\nYou might picture a government saving each worker's taxes in a personal account and handing the money back at retirement. Mostly it does not work that way. In a **pay-as-you-go** system, the taxes that workers pay this year are used to pay the pensions of retirees this year. America's Social Security works like this, and so do the state pensions of Britain, Germany and Japan. Your payments are not set aside for you. They are a promise that the next generation of workers will pay for you in turn.\n\nNow try some numbers. Suppose each retiree's pension costs 1,000 dollars a month. If there are four workers for every retiree, each worker pays 250 dollars. If falling birth rates mean only two workers for every retiree, each worker must pay 500 dollars, or else pensions must be cut, or people must retire later. The ratio of workers to retirees is what matters, and fewer babies today means fewer workers in about twenty years.\n\nThe lesson to carry away is that a pay-as-you-go pension is a deal between generations, so whenever you hear that a country is ageing, ask how many workers stand behind each retiree."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What name does Camilla Cavendish give to people who are delaying or forgoing having children?",
+      "options": [
+        "Generation Maybe",
+        "Generation Alpha",
+        "The Baby Bust Boomers",
+        "Generation Kin"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says she calls those delaying or forgoing children \"Generation Maybe\", which gives her book its title."
+    },
+    {
+      "question": "What is a \"kin crash\", as the article uses the term?",
+      "options": [
+        "A sudden fall in the number of marriages",
+        "A drop in the number of siblings, cousins and other relatives people have",
+        "A fight between relatives over money",
+        "A decline in the number of people who live with their parents"
+      ],
+      "answerIndex": 1,
+      "explanation": "As people have fewer children, each person has fewer siblings and relatives; the average 35-year-old Canadian had about 20 cousins fifty years ago and has about ten today."
+    },
+    {
+      "question": "Which cause of falling birth rates does the article say may matter even more than housing costs?",
+      "options": [
+        "Opportunity costs: the time children take compared with other uses of that time",
+        "The rising price of pet food",
+        "Governments banning large families",
+        "A lack of schools"
+      ],
+      "answerIndex": 0,
+      "explanation": "Housing explains about half the American decline in one study, but the article notes that fertility fell sharply even in Japan, where housing is not especially expensive, so opportunity costs may be a bigger factor."
+    },
+    {
+      "question": "Why does the author say the \"Do it for Denmark\" adverts and the Singapore rap are examples of campaigns that \"vitiate\" rather than \"titillate\"?",
+      "options": [
+        "They were banned by the government",
+        "They spoil the mood rather than excite people, so they do little to raise births",
+        "They cost too much to produce",
+        "They were aimed only at older couples"
+      ],
+      "answerIndex": 1,
+      "explanation": "To vitiate is to spoil, and the article says such campaigns are cringe-inducing and that efforts to persuade people to have more babies have met little or no success."
+    },
+    {
+      "question": "What does Paul Demeny's proxy-vote proposal suggest?",
+      "options": [
+        "Children under 18 should vote for their own teachers",
+        "Parents should get an extra vote for each of their children",
+        "People without children should lose their vote",
+        "Voting should be moved to a younger age for everyone"
+      ],
+      "answerIndex": 1,
+      "explanation": "Demeny proposed that parents be given a proxy vote for each child, which could balance older voters' self-interest in spending more on health care and less on education."
+    }
+  ]
+}
