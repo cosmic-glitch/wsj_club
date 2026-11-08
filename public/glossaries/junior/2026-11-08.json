@@ -1,0 +1,638 @@
+[
+  {
+    "k": "calamity",
+    "t": "calamities",
+    "kind": "vocab",
+    "pron": "kuh-LAM-ih-tee",
+    "forms": [
+      "calamities",
+      "calamity"
+    ],
+    "text": "A calamity is a terrible event that causes huge damage or suffering. Japan's minister wants the country ready for the worst ones.",
+    "audio": true
+  },
+  {
+    "k": "vigilance",
+    "t": "vigilance",
+    "kind": "vocab",
+    "pron": "VIJ-ih-lunts",
+    "forms": [
+      "vigilance"
+    ],
+    "text": "Vigilance means watching carefully for danger, even when things seem fine. With stranger weather, people must stay alert for new kinds of threats.",
+    "audio": true
+  },
+  {
+    "k": "streamline",
+    "t": "streamline",
+    "kind": "vocab",
+    "pron": "STREEM-line",
+    "forms": [
+      "streamline"
+    ],
+    "text": "To streamline is to make something simpler and smoother by cutting extra steps. The agency should make disaster planning less tangled.",
+    "audio": true
+  },
+  {
+    "k": "tectonic-plates",
+    "t": "tectonic plates",
+    "kind": "word",
+    "forms": [
+      "tectonic plates"
+    ],
+    "text": "Tectonic plates are giant slabs of rock that make up Earth's outer layer. They move very slowly, and earthquakes happen where their edges push and slip.",
+    "audio": true
+  },
+  {
+    "k": "bureaucracy",
+    "t": "bureaucracy",
+    "kind": "word",
+    "forms": [
+      "bureaucracy"
+    ],
+    "text": "A bureaucracy is the many offices and workers of a government, each with its own job. Here, those offices had trouble working together.",
+    "audio": true
+  },
+  {
+    "k": "bureaucracies",
+    "t": "bureaucracies",
+    "kind": "word",
+    "forms": [
+      "bureaucracies"
+    ],
+    "text": "Bureaucracies are government offices and agencies. Japan keeps creating new ones for new problems.",
+    "audio": true
+  },
+  {
+    "k": "prone",
+    "t": "prone",
+    "kind": "word",
+    "forms": [
+      "prone"
+    ],
+    "text": "Prone to something means likely to suffer it. A country prone to disasters gets hit often.",
+    "audio": true
+  },
+  {
+    "k": "spawn",
+    "t": "spawning",
+    "kind": "word",
+    "forms": [
+      "spawning"
+    ],
+    "text": "To spawn is to produce or create something, often a lot of it. Japan keeps spawning new government agencies.",
+    "audio": true
+  },
+  {
+    "k": "agency",
+    "t": "agency",
+    "kind": "word",
+    "forms": [
+      "agency",
+      "agencies"
+    ],
+    "text": "An agency is an organization in the government set up to handle one kind of job. This one handles disasters.",
+    "audio": true
+  },
+  {
+    "k": "batted-away",
+    "t": "batted away",
+    "kind": "phrase",
+    "forms": [
+      "batted away"
+    ],
+    "text": "To bat away an idea means to push it aside without really thinking about it, like swatting a fly. Governments kept rejecting a disaster agency.",
+    "audio": true
+  },
+  {
+    "k": "minister",
+    "t": "minister",
+    "kind": "word",
+    "forms": [
+      "minister"
+    ],
+    "text": "A minister is a high government official in charge of one area, like disasters. Hosono Goshi is the new one.",
+    "audio": true
+  },
+  {
+    "k": "freshly",
+    "t": "freshly",
+    "kind": "word",
+    "forms": [
+      "freshly"
+    ],
+    "text": "Freshly means just now or very recently. A freshly appointed minister has only just got the job.",
+    "audio": true
+  },
+  {
+    "k": "appointed",
+    "t": "appointed",
+    "kind": "word",
+    "forms": [
+      "appointed"
+    ],
+    "text": "Appointed means chosen for a job by someone in charge, instead of being voted in.",
+    "audio": true
+  },
+  {
+    "k": "vowed",
+    "t": "vowed",
+    "kind": "word",
+    "forms": [
+      "vowed"
+    ],
+    "text": "To vow is to make a very serious promise. The minister promised to make Japan the most prepared nation.",
+    "audio": true
+  },
+  {
+    "k": "calamities-scale",
+    "t": "on the scale of",
+    "kind": "phrase",
+    "forms": [
+      "on the scale of"
+    ],
+    "text": "On the scale of means as big as. A disaster on the scale of a national crisis would hurt the whole country.",
+    "audio": true
+  },
+  {
+    "k": "junction",
+    "t": "junction",
+    "kind": "word",
+    "forms": [
+      "junction"
+    ],
+    "text": "A junction is a place where things meet, like roads crossing. Four plates meet under Japan.",
+    "audio": true
+  },
+  {
+    "k": "magnitude",
+    "t": "magnitude",
+    "kind": "word",
+    "forms": [
+      "magnitude"
+    ],
+    "text": "Magnitude is a number that tells how strong an earthquake is. A magnitude 7 quake is very powerful.",
+    "audio": true
+  },
+  {
+    "k": "tsunami",
+    "t": "tsunami",
+    "kind": "word",
+    "forms": [
+      "tsunami"
+    ],
+    "text": "A tsunami is a giant sea wave, usually caused by an earthquake under the ocean floor.",
+    "audio": true
+  },
+  {
+    "k": "nuclear-meltdown",
+    "t": "nuclear meltdown",
+    "kind": "word",
+    "forms": [
+      "nuclear meltdown"
+    ],
+    "text": "A nuclear meltdown is a serious accident at a nuclear power plant, when the reactor overheats and is damaged. It followed the 2011 tsunami.",
+    "audio": true
+  },
+  {
+    "k": "peninsula",
+    "t": "peninsula",
+    "kind": "word",
+    "forms": [
+      "peninsula"
+    ],
+    "text": "A peninsula is land with water on three sides, like a finger sticking out into the sea.",
+    "audio": true
+  },
+  {
+    "k": "devastated",
+    "t": "devastated",
+    "kind": "word",
+    "forms": [
+      "devastated"
+    ],
+    "text": "Devastated means badly damaged or destroyed. The Noto peninsula was wrecked by an earthquake in 2024.",
+    "audio": true
+  },
+  {
+    "k": "torrential",
+    "t": "torrential",
+    "kind": "word",
+    "forms": [
+      "Torrential"
+    ],
+    "text": "Torrential rain is rain that pours down very hard and fast, like a river from the sky.",
+    "audio": true
+  },
+  {
+    "k": "intensified",
+    "t": "intensified",
+    "kind": "word",
+    "forms": [
+      "intensified"
+    ],
+    "text": "Intensified means made stronger. Climate change has made heavy rain stronger.",
+    "audio": true
+  },
+  {
+    "k": "pose",
+    "t": "pose",
+    "kind": "word",
+    "forms": [
+      "pose"
+    ],
+    "text": "To pose a threat means to be a threat. Floods pose a growing danger.",
+    "audio": true
+  },
+  {
+    "k": "dwarfed",
+    "t": "dwarfed",
+    "kind": "word",
+    "forms": [
+      "dwarfed"
+    ],
+    "text": "To be dwarfed means to be made to look small next to something much bigger. Past disasters may look small next to future ones.",
+    "audio": true
+  },
+  {
+    "k": "seismologists",
+    "t": "seismologists",
+    "kind": "word",
+    "forms": [
+      "Seismologists"
+    ],
+    "text": "Seismologists are scientists who study earthquakes.",
+    "audio": true
+  },
+  {
+    "k": "catastrophic",
+    "t": "catastrophic",
+    "kind": "word",
+    "forms": [
+      "catastrophic"
+    ],
+    "text": "Catastrophic means causing huge damage and suffering, like a disaster.",
+    "audio": true
+  },
+  {
+    "k": "statistical-model",
+    "t": "statistical model",
+    "kind": "word",
+    "forms": [
+      "statistical model"
+    ],
+    "text": "A statistical model uses numbers from the past to guess how likely something is in the future, like a weather forecast.",
+    "audio": true
+  },
+  {
+    "k": "probability",
+    "t": "probability",
+    "kind": "word",
+    "forms": [
+      "probability"
+    ],
+    "text": "Probability is how likely something is to happen. A 70% probability means it is quite likely.",
+    "audio": true
+  },
+  {
+    "k": "megaquake",
+    "t": "megaquake",
+    "kind": "word",
+    "forms": [
+      "megaquake"
+    ],
+    "text": "A megaquake is an extremely powerful earthquake.",
+    "audio": true
+  },
+  {
+    "k": "nankai-trough",
+    "t": "Nankai Trough",
+    "kind": "name",
+    "forms": [
+      "Nankai Trough"
+    ],
+    "text": "The Nankai Trough is a deep valley in the sea floor off Japan's Pacific coast, where two plates meet. Scientists fear a huge quake there.",
+    "audio": true
+  },
+  {
+    "k": "evacuate",
+    "t": "evacuate",
+    "kind": "word",
+    "forms": [
+      "evacuate",
+      "evacuation"
+    ],
+    "text": "To evacuate is to leave a dangerous place to get to safety. 12.3m is 12.3 million people.",
+    "audio": true
+  },
+  {
+    "k": "gdp",
+    "t": "GDP",
+    "kind": "word",
+    "forms": [
+      "GDP"
+    ],
+    "text": "GDP is the total value of everything a country makes and sells in a year. It measures how big its economy is.",
+    "audio": true
+  },
+  {
+    "k": "blackouts",
+    "t": "blackouts",
+    "kind": "word",
+    "forms": [
+      "blackouts"
+    ],
+    "text": "A blackout is when the electricity goes off over a large area.",
+    "audio": true
+  },
+  {
+    "k": "supply-chains",
+    "t": "supply chains",
+    "kind": "word",
+    "forms": [
+      "supply chains"
+    ],
+    "text": "A supply chain is the path food and goods take from where they are made to the shops. If it breaks, shelves go empty.",
+    "audio": true
+  },
+  {
+    "k": "hardware",
+    "t": "hardware",
+    "kind": "word",
+    "forms": [
+      "hardware"
+    ],
+    "text": "Hardware means physical things, like strong buildings. The article contrasts it with software, which means plans and ways of working.",
+    "audio": true
+  },
+  {
+    "k": "software",
+    "t": "software",
+    "kind": "word",
+    "forms": [
+      "software"
+    ],
+    "text": "Here, software does not mean computer programs. It means plans, rules and training, as opposed to physical things.",
+    "audio": true
+  },
+  {
+    "k": "seconded",
+    "t": "seconded",
+    "kind": "word",
+    "forms": [
+      "seconded"
+    ],
+    "text": "Seconded means lent for a while to work somewhere else. Officials were lent by other ministries.",
+    "audio": true
+  },
+  {
+    "k": "rotate-out",
+    "t": "rotate out",
+    "kind": "phrase",
+    "forms": [
+      "rotate out"
+    ],
+    "text": "To rotate out means to leave a job after your turn so someone else can take over.",
+    "audio": true
+  },
+  {
+    "k": "band-aid",
+    "t": "Band-Aid",
+    "kind": "phrase",
+    "forms": [
+      "Band-Aid"
+    ],
+    "text": "A Band-Aid fix covers up a problem without solving its cause, like a bandage on a deep wound.",
+    "audio": true
+  },
+  {
+    "k": "institutional-knowledge",
+    "t": "institutional knowledge",
+    "kind": "phrase",
+    "forms": [
+      "institutional knowledge"
+    ],
+    "text": "Institutional knowledge is what an organization has learned over the years. It is lost if experts keep leaving.",
+    "audio": true
+  },
+  {
+    "k": "siloed",
+    "t": "siloed",
+    "kind": "word",
+    "forms": [
+      "siloed"
+    ],
+    "text": "Siloed means kept apart, like grain in separate towers. Offices that do not share information are siloed.",
+    "audio": true
+  },
+  {
+    "k": "notoriously",
+    "t": "notoriously",
+    "kind": "word",
+    "forms": [
+      "notoriously"
+    ],
+    "text": "Notoriously means in a way that is widely known, usually for something bad.",
+    "audio": true
+  },
+  {
+    "k": "co-ordinate",
+    "t": "co-ordinate",
+    "kind": "word",
+    "forms": [
+      "co-ordinate"
+    ],
+    "text": "To co-ordinate is to get different people or groups to work together smoothly.",
+    "audio": true
+  },
+  {
+    "k": "sweltering",
+    "t": "sweltering",
+    "kind": "word",
+    "forms": [
+      "sweltering"
+    ],
+    "text": "Sweltering means extremely hot and sticky.",
+    "audio": true
+  },
+  {
+    "k": "demography",
+    "t": "demography",
+    "kind": "word",
+    "forms": [
+      "demography"
+    ],
+    "text": "Demography is the makeup of a country's people, such as how many are old or young. Japan has many older people.",
+    "audio": true
+  },
+  {
+    "k": "sanitation",
+    "t": "sanitation",
+    "kind": "word",
+    "forms": [
+      "sanitation"
+    ],
+    "text": "Sanitation means clean toilets, clean water and ways to stay germ-free. Without it, people get sick.",
+    "audio": true
+  },
+  {
+    "k": "nutritious",
+    "t": "nutritious",
+    "kind": "word",
+    "forms": [
+      "nutritious"
+    ],
+    "text": "Nutritious food is healthy food that gives your body what it needs.",
+    "audio": true
+  },
+  {
+    "k": "perseverance",
+    "t": "perseverance",
+    "kind": "word",
+    "forms": [
+      "perseverance"
+    ],
+    "text": "Perseverance means keeping going through hard times without giving up.",
+    "audio": true
+  },
+  {
+    "k": "idealises",
+    "t": "idealises",
+    "kind": "word",
+    "forms": [
+      "idealises"
+    ],
+    "text": "To idealise something is to treat it as perfect. Here, people praise survivors who just put up with hardship, even when that hurts them.",
+    "audio": true
+  },
+  {
+    "k": "endure",
+    "t": "endure",
+    "kind": "word",
+    "forms": [
+      "endure"
+    ],
+    "text": "To endure is to suffer through something hard without giving up.",
+    "audio": true
+  },
+  {
+    "k": "municipalities",
+    "t": "municipalities",
+    "kind": "word",
+    "forms": [
+      "municipalities"
+    ],
+    "text": "Municipalities are towns and cities with their own local governments.",
+    "audio": true
+  },
+  {
+    "k": "clambered",
+    "t": "clambered",
+    "kind": "word",
+    "forms": [
+      "clambered"
+    ],
+    "text": "To clamber is to climb using hands and feet, in a clumsy way.",
+    "audio": true
+  },
+  {
+    "k": "kawara",
+    "t": "kawara",
+    "kind": "name",
+    "forms": [
+      "kawara"
+    ],
+    "text": "Kawara are traditional Japanese roof tiles. They are heavy, so they can fall in a quake and hurt people.",
+    "audio": true
+  },
+  {
+    "k": "rubble",
+    "t": "rubble",
+    "kind": "word",
+    "forms": [
+      "rubble"
+    ],
+    "text": "Rubble is the broken pieces of bricks, wood and concrete left after a building falls.",
+    "audio": true
+  },
+  {
+    "k": "lorry",
+    "t": "lorry",
+    "kind": "word",
+    "forms": [
+      "lorry"
+    ],
+    "text": "Lorry is the British word for a truck.",
+    "audio": true
+  },
+  {
+    "k": "makeshift",
+    "t": "makeshift",
+    "kind": "word",
+    "forms": [
+      "makeshift"
+    ],
+    "text": "Makeshift means built quickly from whatever is around, for temporary use.",
+    "audio": true
+  },
+  {
+    "k": "stockpile",
+    "t": "stockpile",
+    "kind": "word",
+    "forms": [
+      "stockpile"
+    ],
+    "text": "To stockpile is to save up a big supply of something, like food and water, for emergencies.",
+    "audio": true
+  },
+  {
+    "k": "kojo",
+    "t": "kojo",
+    "kind": "name",
+    "forms": [
+      "kojo"
+    ],
+    "text": "Kojo is the Japanese word for help from the government.",
+    "audio": true
+  },
+  {
+    "k": "kyojo",
+    "t": "kyojo",
+    "kind": "name",
+    "forms": [
+      "kyojo"
+    ],
+    "text": "Kyojo means mutual help, neighbors helping each other.",
+    "audio": true
+  },
+  {
+    "k": "jijo",
+    "t": "jijo",
+    "kind": "name",
+    "forms": [
+      "jijo"
+    ],
+    "text": "Jijo means self-help, preparing and protecting yourself. Hosono says it stays essential.",
+    "audio": true
+  },
+  {
+    "k": "saigai-kanrenshi",
+    "t": "saigai kanrenshi",
+    "kind": "name",
+    "forms": [
+      "saigai kanrenshi"
+    ],
+    "text": "Saigai kanrenshi is Japanese for disaster-related deaths, when survivors later die from stress or poor health.",
+    "audio": true
+  },
+  {
+    "k": "bosai",
+    "t": "bosai",
+    "kind": "name",
+    "forms": [
+      "bosai"
+    ],
+    "text": "Bosai is the Japanese word for disaster prevention.",
+    "audio": true
+  }
+]

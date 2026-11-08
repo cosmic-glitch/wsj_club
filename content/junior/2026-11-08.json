@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-08",
+  "title": "Japan prepares for its next natural disaster",
+  "articleUrl": "https://www.economist.com/asia/2026/11/05/japan-prepares-for-its-next-natural-disaster",
+  "articlePageUrl": "/articles/junior/2026-11-08.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "calamity",
+      "partOfSpeech": "noun",
+      "pronunciation": "kuh-LAM-ih-tee",
+      "articleQuote": "ready for calamities",
+      "meaning": "A calamity is a terrible event that causes great damage or suffering. A huge earthquake, a flood that wrecks a town, or a big fire can each be a calamity. In the article, Japan's new minister promises the country will be ready for calamities, meaning the worst disasters nature can send.",
+      "examples": [
+        "The flood was a calamity for the small village, and many families lost their homes.",
+        "Dropping the cake on the floor was a small calamity, but the party went on."
+      ]
+    },
+    {
+      "word": "vigilance",
+      "partOfSpeech": "noun",
+      "pronunciation": "VIJ-ih-lunts",
+      "articleQuote": "demanding vigilance towards less familiar threats",
+      "meaning": "Vigilance means watching carefully for danger or trouble, and staying alert even when nothing seems wrong. A lifeguard needs vigilance, and so does a driver on a busy road. In the article, more extreme weather means people in Japan must keep watch for dangers they have never faced before.",
+      "examples": [
+        "The lifeguard's vigilance helped her spot the swimmer in trouble right away.",
+        "Crossing the busy street takes vigilance, so look both ways every time."
+      ]
+    },
+    {
+      "word": "streamline",
+      "partOfSpeech": "verb",
+      "pronunciation": "STREEM-line",
+      "articleQuote": "the government hopes to streamline its software",
+      "meaning": "To streamline something is to change it so it works in a simpler, smoother, faster way, usually by cutting out extra steps. A school might streamline the lunch line so students do not wait so long. In the article, Japan hopes one new agency will streamline how disasters are handled, instead of having the job split among many offices.",
+      "examples": [
+        "Our class streamlined cleanup time by giving every person one small job.",
+        "The coach streamlined the practice so we spent less time waiting in lines."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Tectonic plates",
+      "articleQuote": "Sitting at the junction of four tectonic plates",
+      "meaning": "Why does Japan have so many earthquakes? The answer is under our feet. The outer layer of the Earth is not one solid piece. It is broken into huge slabs of rock called **tectonic plates**, and they very slowly move, only a few centimeters a year, about as fast as your fingernails grow.\n\nImagine a cracked eggshell sitting on a boiled egg. The pieces of shell are the plates. Now imagine pushing two of the pieces against each other. For a long time they stick, and the push builds up. Then suddenly they slip, and the jolt shakes everything nearby. That sudden slip is an earthquake.\n\nIn the article, Japan sits where four plates meet. That means lots of pushing and sticking and slipping, so the country gets around a fifth of the world's biggest earthquakes. Plates also cause tsunamis, because when the sea floor jerks, it can shove the water above it.\n\nSo the takeaway: Earth's surface is made of moving plates, and earthquakes happen most where their edges meet."
+    },
+    {
+      "name": "Bureaucracy",
+      "articleQuote": "a notoriously siloed bureaucracy that struggles to co-ordinate across institutions",
+      "meaning": "Who is in charge when something big goes wrong? In a country, the answer is a **bureaucracy**: the many offices and workers of the government, each with its own job. One office handles health, another handles fishing, another handles roads.\n\nThink of a school. The nurse handles sickness, the bus office handles rides, and the cafeteria handles food. Now imagine a fire drill where each of them has a different plan and nobody talks to the others. Everyone is doing their own job, but the whole thing is a mess.\n\nIn the article, Japan's government had split the work of preparing for disasters across many offices. Each office was a silo, like a tall tower of grain with no doors to the next tower, so they struggled to work together. The new disaster agency is meant to pull the pieces together under one roof.\n\nSo the takeaway: a bureaucracy is the many offices of a government, and big problems get solved faster when those offices work together."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did Japan create a new disaster agency?",
+      "options": [
+        "Because Japan had never had an earthquake before",
+        "To bring together disaster planning that was spread across many ministries and prepare for even bigger disasters",
+        "To replace the country's early-warning systems",
+        "Because the prime minister wanted to stop all rain"
+      ],
+      "answerIndex": 1,
+      "explanation": "Responsibility had been split among different ministries. The agency gathers it in one place and builds knowledge for the bigger, more complex disasters that may come."
+    },
+    {
+      "question": "Why does Japan have so many earthquakes?",
+      "options": [
+        "It sits at the junction of four tectonic plates",
+        "It is the largest country in the world",
+        "It has too many tall buildings",
+        "It has more rain than any other place"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says Japan sits where four tectonic plates meet, and it suffers around a fifth of the world's earthquakes of magnitude 6 or greater."
+    },
+    {
+      "question": "What are 'disaster-related deaths' (saigai kanrenshi)?",
+      "options": [
+        "People who are hurt when buildings fall in the first moments of a quake",
+        "People who die in plane crashes while escaping",
+        "People who survive the disaster but later die from stress or poor health during evacuation",
+        "People who refuse to leave their homes"
+      ],
+      "answerIndex": 2,
+      "explanation": "These are people who live through the first catastrophe but die later, for example because of crowded, poor conditions in evacuation centres. They made up more than 80% of the toll in Kumamoto in 2016."
+    },
+    {
+      "question": "What surprising weather record did Tokyo set this year?",
+      "options": [
+        "The hottest day ever recorded",
+        "The most snow in a single day",
+        "A tornado that lasted a week",
+        "37 days of rain in a row, the longest stretch since records began in 1886"
+      ],
+      "answerIndex": 3,
+      "explanation": "Tokyo had 37 consecutive days of rain until early October, the longest since records began in 1886. The article uses it to show climate change brings less familiar threats."
+    },
+    {
+      "question": "What are the three principles of Japan's approach to disasters?",
+      "options": [
+        "Government assistance, mutual help, and self-help",
+        "Early warning, evacuation, and rebuilding",
+        "Schools, hospitals, and fire stations",
+        "Money, maps, and machines"
+      ],
+      "answerIndex": 0,
+      "explanation": "They are kojo (government assistance), kyojo (mutual help) and jijo (self-help). The minister stressed that jijo, taking precautions yourself, stays essential."
+    }
+  ]
+}
