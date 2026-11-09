@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-09",
+  "title": "YouTube’s dominance has Hollywood running scared",
+  "articleUrl": "https://www.economist.com/business/2026/11/08/youtubes-dominance-has-hollywood-running-scared",
+  "articlePageUrl": "/articles/2026-11-09.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "attrition",
+      "partOfSpeech": "noun",
+      "pronunciation": "uh-TRISH-un",
+      "articleQuote": "it is likely to be a tale of attrition and job cuts",
+      "meaning": "Attrition is a gradual wearing down or shrinking through steady losses rather than one big blow. Armies suffer attrition when they lose soldiers a few at a time, and companies talk about attrition when staff leave and are not replaced. The word comes from a Latin root meaning to rub away. Here the Economist says the old Hollywood studios are slowly shrinking, shedding jobs and money bit by bit instead of collapsing all at once.",
+      "examples": [
+        "The long hike turned into a war of attrition, with one tired hiker after another dropping out.",
+        "The school's chess club suffered attrition all year as members quit for other activities."
+      ]
+    },
+    {
+      "word": "malaise",
+      "partOfSpeech": "noun",
+      "pronunciation": "muh-LAYZ",
+      "articleQuote": "Its scruffy creators are not big enough to offset the malaise of old Hollywood.",
+      "meaning": "Malaise is a vague, lingering feeling that something is wrong, with no single obvious cause. It can describe a person who feels run-down and unwell, but it is also used for whole groups, industries or economies that seem stuck and gloomy. It comes from French, meaning bad ease. In the article it describes the general gloom hanging over the traditional movie and TV business, with its layoffs and shrinking profits.",
+      "examples": [
+        "A malaise settled over the team after its fifth straight loss, and nobody could say exactly why.",
+        "Economists blamed the town's malaise on years of factory closures and fading hope."
+      ]
+    },
+    {
+      "word": "impregnable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "im-PREG-nuh-bul",
+      "articleQuote": "YouTube is not impregnable.",
+      "meaning": "Something impregnable cannot be broken into or defeated, no matter how hard enemies attack. It was first used for castles and fortresses with walls too strong to storm, and it is now used for any position that seems unbeatable, such as a champion team or a dominant company. The root means not able to be taken. The article says YouTube is far ahead of its rivals but still has weak spots, so it is not an impregnable fortress.",
+      "examples": [
+        "The medieval castle looked impregnable, perched on a cliff behind three thick walls.",
+        "Our school's chess champion seemed impregnable until a first-year beat her in the final."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Paying upfront vs. paying for performance",
+      "articleQuote": "YouTube usually pays nothing in advance. Instead it takes a 45-55% cut of ad revenue and channel subscriptions.",
+      "meaning": "The article says YouTube is \"less of a hostage to fortune\" than Hollywood, and the reason is a basic idea in business: who carries the risk when a creative project might flop? The field is business strategy, and the answer decides who wins and who loses when things go wrong.\n\nThere are two ways to get a show made. In the **upfront model**, a studio or streamer like Netflix pays the full cost before anyone has seen the result. It hires the writers, actors and crew, and it owns the finished work. If the show is a hit, the company profits. If it flops, the company has still spent the money. In the **pay-for-performance model**, the platform pays nothing at the start. Creators film and edit at their own expense, and the platform takes a **revenue share**, a fixed percentage of whatever money the video later earns. YouTube keeps roughly half of the ad money.\n\nHere are some numbers. Suppose a show costs 50 million dollars to make and earns 20 million. The upfront studio loses 30 million dollars. Under the revenue-share model, the platform loses nothing, because it paid nothing and takes its half of the 20 million, while the creator bears the cost. The trade is that the platform gives up owning the work and the huge winnings from a blockbuster. It earns a steady slice from thousands of channels instead of betting big on a few.\n\nThe lesson to carry away is that a business model is really a decision about who absorbs the risk, and a company that makes others carry the downside can grow without the big flops that sink its rivals."
+    },
+    {
+      "name": "The data flywheel",
+      "articleQuote": "The more content YouTube streams, the more data it has to improve its algorithm, further boosting viewer engagement—and revenue.",
+      "meaning": "The article says YouTube's lead can feed on itself: more content means more data, which means a better algorithm, which means more viewing. That loop is called a **flywheel**, an idea from technology strategy, and it explains why the biggest platforms tend to pull further ahead.\n\nStart with the machine behind the name. A flywheel is a heavy wheel that is hard to get spinning, but once it is moving, each push adds to its speed and it keeps going on its own momentum. A business flywheel works the same way. Each turn of the loop makes the next turn easier. On YouTube, an **algorithm** is the recommendation program that decides which videos to show you next. Every video watched, skipped or liked is a piece of **data** that teaches it what people enjoy. Better recommendations keep viewers watching longer, which brings in more ad money, which YouTube pays to creators, who then make more and better videos to attract still more viewers.\n\nImagine two video sites. One has a billion viewing sessions a day to learn from, and the other has ten million. The big one learns what each viewer likes far more accurately, so its suggestions are better, so people stay, so it gets even more data. The small site would have to be dramatically better to win anyone away, because it is learning from a hundred times less information.\n\nThe lesson to carry away is that when a product gets better the more people use it, an early lead can snowball into a dominant position, which is why rivals like Netflix feel they must act now."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "How does the article describe the contrast between \"old Hollywood\" and \"new Hollywood\"?",
+      "options": [
+        "Old Hollywood is made on YouTube and new Hollywood is made in big studios",
+        "Old Hollywood is a tale of attrition and job cuts, while new Hollywood is more upbeat and made on YouTube",
+        "Both are growing quickly because of streaming",
+        "Old Hollywood makes films and new Hollywood makes only sports"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article opens with two storylines: the darker old Hollywood of attrition and job cuts, and the less well known, more upbeat new Hollywood made on YouTube."
+    },
+    {
+      "question": "What did YouTube report for the first time this year?",
+      "options": [
+        "Its total number of viewers",
+        "Its annual revenue, $60bn from ads and subscriptions in 2025",
+        "The names of its top creators",
+        "The salaries it pays its executives"
+      ],
+      "answerIndex": 1,
+      "explanation": "For the first time this year it disclosed annual revenue, $60bn in 2025, more than Netflix's $45bn."
+    },
+    {
+      "question": "Why is YouTube's business model described as less risky than that of studios and streamers?",
+      "options": [
+        "It charges viewers much more than rivals do",
+        "It usually pays nothing upfront and instead takes a cut of ad revenue and subscriptions",
+        "It only shows videos that are already famous",
+        "It makes all of its videos itself"
+      ],
+      "answerIndex": 1,
+      "explanation": "Studios pay upfront and can waste huge sums on flops, while YouTube takes a 45-55% cut after the money comes in."
+    },
+    {
+      "question": "How has Netflix responded to YouTube's growing clout, according to the article?",
+      "options": [
+        "It has shut down its streaming service",
+        "It has pledged $1bn over three years for deals with creators, and in some cases pays lavish sums upfront",
+        "It has stopped making original shows",
+        "It has sold itself to YouTube"
+      ],
+      "answerIndex": 1,
+      "explanation": "After once dismissing creators as a place for \"killing time\", Netflix pledged $1bn over three years for creator deals, per LightShed Partners."
+    },
+    {
+      "question": "What analogy does Reed Hastings draw about YouTube and Netflix?",
+      "options": [
+        "YouTube is to Netflix as a newspaper is to a magazine",
+        "YouTube is like television in the 1950s and 60s, and Netflix is like the movies back then",
+        "YouTube is like radio and Netflix is like the telephone",
+        "YouTube is like the movies and Netflix is like television"
+      ],
+      "answerIndex": 1,
+      "explanation": "Hastings compared the rise of TV, which pushed the movie industry into a funk until new film-makers broke through in the 1970s, to YouTube's effect on Netflix today."
+    }
+  ]
+}
