@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-09",
+  "title": "Senegal tries to teach more children in their first language",
+  "articleUrl": "https://www.economist.com/middle-east-and-africa/2026/10/29/senegal-tries-to-teach-more-children-in-their-first-language",
+  "articlePageUrl": "/articles/junior/2026-11-09.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "assuage",
+      "partOfSpeech": "verb",
+      "pronunciation": "uh-SWAYJ",
+      "articleQuote": "To assuage such concerns",
+      "meaning": "To assuage a worry or a pain is to make it smaller and easier to bear. A hug can assuage a scared little brother, and a cold pack can assuage a sore knee. In the article, officials choose each school's language one school at a time to assuage the fears people have about favoring one language over the others.",
+      "examples": [
+        "The teacher's kind words helped assuage my nerves before the big test.",
+        "A cold drink did little to assuage his thirst after the long race."
+      ]
+    },
+    {
+      "word": "foster",
+      "partOfSpeech": "verb",
+      "pronunciation": "FAW-ster",
+      "articleQuote": "foster teaching in Senegalese languages",
+      "meaning": "To foster something is to help it grow and get stronger over time. A good coach fosters teamwork, and a library can foster a love of reading. In the article, Senegal's plan aims to foster teaching in the languages children already speak at home.",
+      "examples": [
+        "Our teacher tries to foster kindness by having us help each other with homework.",
+        "Planting a garden at school can foster a love of nature."
+      ]
+    },
+    {
+      "word": "indigenous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-DIJ-uh-nus",
+      "articleQuote": "indigenous languages",
+      "meaning": "Indigenous means belonging naturally to a place because it began or has lived there for a very long time. Kangaroos are indigenous to Australia, and indigenous peoples are the first peoples of a land. In the article, Africa's indigenous languages are the ones that come from Africa itself, not ones brought from Europe.",
+      "examples": [
+        "The bison is indigenous to North America.",
+        "Our museum trip showed us art made by indigenous people who lived here long ago."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Lingua franca",
+      "articleQuote": "status as a lingua franca",
+      "meaning": "Imagine a group of kids who each speak a different home language, all on one soccer team. How do they talk to each other? They pick one language that most of them can use. That shared go-between language is called a **lingua franca**, a Latin-sounding phrase that means a common language.\n\nA lingua franca is not always anyone's first language. It is the one people use to get along when they come from different places. Long ago, traders at busy ports used one to buy and sell, and today English works this way for many people around the world.\n\nIn the article, Wolof is a lingua franca in Dakar, Senegal's capital. About 90% of people there can speak it, even though it is the first language of only about 40%. That helps people understand each other, but it also worries some groups, who fear their own language might fade.\n\nSo the takeaway: a lingua franca is a shared language that lets people with different home languages talk to each other."
+    },
+    {
+      "name": "Official language",
+      "articleQuote": "French, the country’s only official language",
+      "meaning": "Why does a school in Senegal teach in French when most children do not speak it well? The answer is that French is Senegal's **official language**: the language a government chooses for its laws, courts, offices and, often, schools.\n\nThink of a class with a rule that all notes to the office must be written in one style. Everyone may talk however they like at recess, but the paperwork follows the rule. An official language works like that for a whole country.\n\nA country can have one official language or several, and the choice is often a leftover from history. In the article, French became Senegal's official language because of its past under French rule. The article also says the languages of former colonial powers still dominate law, politics and business, so children need them even if they start learning in their home language.\n\nSo the takeaway: an official language is the one a country's government uses for its work, and it is not always the one people speak at home."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "How did Senegal's government find out which languages to teach in?",
+      "options": [
+        "It sent officials into schools to listen to children playing",
+        "It sent a survey to every parent by mail",
+        "It asked children to vote in class",
+        "It copied the plan from another country"
+      ],
+      "answerIndex": 0,
+      "explanation": "Officials listened to children in school playgrounds and found them speaking Wolof, Pulaar, Safi and some French."
+    },
+    {
+      "question": "Why do many children in Senegal struggle in school?",
+      "options": [
+        "They do not go to school at all",
+        "Most schools teach in French, which many children do not understand well",
+        "Their teachers speak only Wolof",
+        "Schools have no textbooks"
+      ],
+      "answerIndex": 1,
+      "explanation": "French is the official language of schools, but in places like Fatick about 87% of children do not speak it."
+    },
+    {
+      "question": "Why did some people worry about using Wolof as the main local language?",
+      "options": [
+        "Wolof is too hard to write",
+        "Nobody in Senegal speaks it",
+        "Its spread raised fears of 'Wolofisation', with people feeling it could push aside other languages",
+        "It is banned in schools"
+      ],
+      "answerIndex": 2,
+      "explanation": "Wolof is spoken by about 90% of Senegalese, so some groups, especially in the south, fear their own languages could be overshadowed."
+    },
+    {
+      "question": "How does Senegal choose which local language to use?",
+      "options": [
+        "One language for the whole country",
+        "A lottery each year",
+        "Only the language of the capital",
+        "School by school, depending on what the community speaks"
+      ],
+      "answerIndex": 3,
+      "explanation": "Villages that mostly speak Soninke learn in Soninke, and one school even split a class so both Wolof and Pulaar could be taught."
+    },
+    {
+      "question": "How does Senegal's plan help parents worry less about their children learning French?",
+      "options": [
+        "It starts mostly in a local language and gradually shifts toward French by about age 12",
+        "It stops teaching French completely",
+        "It teaches only in French for the first year",
+        "It lets children pick any subject"
+      ],
+      "answerIndex": 0,
+      "explanation": "Children begin with 80% local language and 20% French, and by age 12 the ratio reverses."
+    }
+  ]
+}
