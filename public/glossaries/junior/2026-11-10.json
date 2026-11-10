@@ -1,0 +1,470 @@
+[
+  {
+    "k": "brace",
+    "t": "brace",
+    "kind": "vocab",
+    "pron": "BRAYSS",
+    "forms": [
+      "bracing"
+    ],
+    "text": "To brace for something is to get ready for something hard that you know is coming. Peru and Ecuador are bracing for the strongest El Niño in modern times.",
+    "audio": true
+  },
+  {
+    "k": "anomaly",
+    "t": "anomaly",
+    "kind": "vocab",
+    "pron": "uh-NOM-uh-lee",
+    "forms": [
+      "anomaly"
+    ],
+    "text": "An anomaly is something different from what is normal. Here it means how many degrees the ocean is above its usual temperature.",
+    "audio": true
+  },
+  {
+    "k": "staggering",
+    "t": "staggering",
+    "kind": "vocab",
+    "pron": "STAG-er-ing",
+    "forms": [
+      "staggering"
+    ],
+    "text": "Staggering means so big or surprising that it is hard to believe. The scientist says this El Niño grew that fast and got that warm.",
+    "audio": true
+  },
+  {
+    "k": "state-of-emergency",
+    "t": "state of emergency",
+    "kind": "word",
+    "forms": [
+      "states of emergency"
+    ],
+    "text": "A state of emergency is an official announcement by a government that a danger is serious enough to need special actions and help.",
+    "audio": true
+  },
+  {
+    "k": "strategic-reserve",
+    "t": "strategic reserve",
+    "kind": "word",
+    "forms": [
+      "strategic oil reserves",
+      "reserves"
+    ],
+    "text": "A strategic reserve is a stockpile saved in advance for a time of shortage. Many countries store oil this way, but almost none store fertiliser.",
+    "audio": true
+  },
+  {
+    "k": "el-nino",
+    "t": "El Niño",
+    "kind": "word",
+    "forms": [
+      "El Niño",
+      "El Niños"
+    ],
+    "text": "El Niño is a warm phase of the Pacific Ocean in which the hottest water spreads from west to east. It changes weather around the tropics and beyond.",
+    "audio": true
+  },
+  {
+    "k": "enso",
+    "t": "ENSO",
+    "kind": "word",
+    "forms": [
+      "ENSO"
+    ],
+    "text": "ENSO is the name for the whole seesaw of Pacific Ocean temperatures. El Niño is its warm swing.",
+    "audio": true
+  },
+  {
+    "k": "climatic",
+    "t": "climatic",
+    "kind": "word",
+    "forms": [
+      "climatic"
+    ],
+    "text": "Climatic means having to do with climate, the usual weather of a place over many years.",
+    "audio": true
+  },
+  {
+    "k": "seesaw",
+    "t": "seesaw",
+    "kind": "word",
+    "forms": [
+      "seesaw"
+    ],
+    "text": "A seesaw is a playground board that goes up on one end while the other goes down. Here it means the climate swings back and forth between two states.",
+    "audio": true
+  },
+  {
+    "k": "phenomenon",
+    "t": "phenomenon",
+    "kind": "word",
+    "forms": [
+      "phenomenon"
+    ],
+    "text": "A phenomenon is something that happens in nature and can be observed. El Niño is a natural one.",
+    "audio": true
+  },
+  {
+    "k": "waxed-and-waned",
+    "t": "waxed and waned",
+    "kind": "phrase",
+    "forms": [
+      "waxed and waned"
+    ],
+    "text": "To wax is to grow bigger and to wane is to shrink. Waxing and waning means rising and falling again and again, like the moon.",
+    "audio": true
+  },
+  {
+    "k": "proxy-records",
+    "t": "proxy records",
+    "kind": "word",
+    "forms": [
+      "proxy records"
+    ],
+    "text": "Proxy records are clues like tree rings that show what the weather was long ago, before people had thermometers.",
+    "audio": true
+  },
+  {
+    "k": "tree-rings",
+    "t": "tree rings",
+    "kind": "word",
+    "forms": [
+      "Tree rings"
+    ],
+    "text": "A tree grows one ring each year, and wetter years make wider rings. Scientists read the rings to learn about old weather.",
+    "audio": true
+  },
+  {
+    "k": "forecaster",
+    "t": "forecasters",
+    "kind": "word",
+    "forms": [
+      "forecasters",
+      "forecaster"
+    ],
+    "text": "A forecaster is a person who predicts the weather before it happens.",
+    "audio": true
+  },
+  {
+    "k": "peak",
+    "t": "peak",
+    "kind": "word",
+    "forms": [
+      "peak",
+      "peaks",
+      "peaked"
+    ],
+    "text": "A peak is the highest point. The El Niño is expected to peak, or reach its strongest, around December.",
+    "audio": true
+  },
+  {
+    "k": "lag",
+    "t": "lag behind",
+    "kind": "phrase",
+    "forms": [
+      "lag behind"
+    ],
+    "text": "To lag behind is to come later than something else. Many effects of El Niño arrive weeks after the ocean heats up.",
+    "audio": true
+  },
+  {
+    "k": "drought",
+    "t": "drought",
+    "kind": "word",
+    "forms": [
+      "drought"
+    ],
+    "text": "A drought is a long time with too little rain, which leaves land and crops dry.",
+    "audio": true
+  },
+  {
+    "k": "wildfires",
+    "t": "wildfires",
+    "kind": "word",
+    "forms": [
+      "wildfires"
+    ],
+    "text": "Wildfires are large fires that spread quickly through forests or dry grass.",
+    "audio": true
+  },
+  {
+    "k": "surveillance",
+    "t": "surveillance",
+    "kind": "word",
+    "forms": [
+      "surveillance"
+    ],
+    "text": "Surveillance means watching closely. Health officials use it to spot a disease early.",
+    "audio": true
+  },
+  {
+    "k": "outbreak",
+    "t": "outbreak",
+    "kind": "word",
+    "forms": [
+      "outbreak"
+    ],
+    "text": "An outbreak is a sudden rise in cases of a disease in one area.",
+    "audio": true
+  },
+  {
+    "k": "rift-valley-fever",
+    "t": "Rift Valley Fever",
+    "kind": "word",
+    "forms": [
+      "Rift Valley Fever"
+    ],
+    "text": "Rift Valley Fever is an illness spread by mosquitoes that can sicken animals and people. Heavy rains help mosquitoes multiply.",
+    "audio": true
+  },
+  {
+    "k": "trade-bloc",
+    "t": "trade bloc",
+    "kind": "word",
+    "forms": [
+      "trade bloc"
+    ],
+    "text": "A trade bloc is a group of countries that work together to make trading with each other easier.",
+    "audio": true
+  },
+  {
+    "k": "water-intensive",
+    "t": "water-intensive",
+    "kind": "word",
+    "forms": [
+      "water-intensive"
+    ],
+    "text": "A water-intensive crop needs a great deal of water to grow. Rice is one.",
+    "audio": true
+  },
+  {
+    "k": "cultivate",
+    "t": "cultivate",
+    "kind": "word",
+    "forms": [
+      "cultivate"
+    ],
+    "text": "To cultivate land is to prepare it and grow crops on it.",
+    "audio": true
+  },
+  {
+    "k": "whopper",
+    "t": "whopper",
+    "kind": "word",
+    "forms": [
+      "whopper"
+    ],
+    "text": "A whopper is something very big. The writer uses it playfully for the huge El Niño.",
+    "audio": true
+  },
+  {
+    "k": "mother-of-all",
+    "t": "the mother of all",
+    "kind": "phrase",
+    "forms": [
+      "the mother of all"
+    ],
+    "text": "The mother of all something means the biggest, most extreme example of it.",
+    "audio": true
+  },
+  {
+    "k": "meteorologist",
+    "t": "meteorologist",
+    "kind": "word",
+    "forms": [
+      "meteorologist"
+    ],
+    "text": "A meteorologist is a scientist who studies weather.",
+    "audio": true
+  },
+  {
+    "k": "equator",
+    "t": "equator",
+    "kind": "word",
+    "forms": [
+      "equator"
+    ],
+    "text": "The equator is the imaginary line around the middle of Earth, halfway between the poles.",
+    "audio": true
+  },
+  {
+    "k": "tropics",
+    "t": "tropics",
+    "kind": "word",
+    "forms": [
+      "tropics"
+    ],
+    "text": "The tropics are the warm regions on both sides of the equator.",
+    "audio": true
+  },
+  {
+    "k": "counterparts",
+    "t": "counterparts",
+    "kind": "word",
+    "forms": [
+      "counterparts"
+    ],
+    "text": "A counterpart is someone or something that matches another in a different place. Here, coastal towns in the south match those in California.",
+    "audio": true
+  },
+  {
+    "k": "guayaquil",
+    "t": "Guayaquil",
+    "kind": "name",
+    "forms": [
+      "Guayaquil"
+    ],
+    "text": "Guayaquil is the largest city in Ecuador, a port on the Pacific coast of South America.",
+    "audio": true
+  },
+  {
+    "k": "norm",
+    "t": "norm",
+    "kind": "word",
+    "forms": [
+      "norm"
+    ],
+    "text": "The norm is what is normal or usual. About 100 times the norm means 100 times the usual amount.",
+    "audio": true
+  },
+  {
+    "k": "sea-surface",
+    "t": "sea-surface temperatures",
+    "kind": "word",
+    "forms": [
+      "sea-surface temperatures"
+    ],
+    "text": "Sea-surface temperature is how warm the top layer of the ocean is.",
+    "audio": true
+  },
+  {
+    "k": "red-alert",
+    "t": "red alerts",
+    "kind": "word",
+    "forms": [
+      "red alerts"
+    ],
+    "text": "A red alert is the highest warning level, telling people serious danger is near.",
+    "audio": true
+  },
+  {
+    "k": "world-food-programme",
+    "t": "World Food Programme",
+    "kind": "name",
+    "forms": [
+      "World Food Programme"
+    ],
+    "text": "The World Food Programme is a United Nations group that delivers food to people facing hunger.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckons",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "To reckon is to think or estimate. The agency reckons 49 million more people could go hungry.",
+    "audio": true
+  },
+  {
+    "k": "y-axis",
+    "t": "y-axis",
+    "kind": "word",
+    "forms": [
+      "y-axis"
+    ],
+    "text": "The y-axis is the up-and-down line on a chart that shows the numbers. It had to be stretched to fit this record.",
+    "audio": true
+  },
+  {
+    "k": "millennium",
+    "t": "millennium",
+    "kind": "word",
+    "forms": [
+      "millennium"
+    ],
+    "text": "A millennium is a thousand years.",
+    "audio": true
+  },
+  {
+    "k": "human-driven",
+    "t": "human-driven",
+    "kind": "word",
+    "forms": [
+      "human-driven"
+    ],
+    "text": "Human-driven means caused by what people do, such as burning fuels that warm the planet.",
+    "audio": true
+  },
+  {
+    "k": "absorbed",
+    "t": "absorbed",
+    "kind": "word",
+    "forms": [
+      "absorbed"
+    ],
+    "text": "To absorb is to soak up. The ocean absorbs heat from the air like a sponge soaks up water.",
+    "audio": true
+  },
+  {
+    "k": "downstream",
+    "t": "downstream",
+    "kind": "word",
+    "forms": [
+      "downstream"
+    ],
+    "text": "Downstream means further along a chain, like people who feel the effects of a forecast after it is made.",
+    "audio": true
+  },
+  {
+    "k": "fertiliser",
+    "t": "fertiliser",
+    "kind": "word",
+    "forms": [
+      "fertiliser"
+    ],
+    "text": "Fertiliser is plant food that farmers spread on fields to help crops grow.",
+    "audio": true
+  },
+  {
+    "k": "strait-of-hormuz",
+    "t": "Strait of Hormuz",
+    "kind": "name",
+    "forms": [
+      "Strait of Hormuz"
+    ],
+    "text": "The Strait of Hormuz is a narrow stretch of sea by the Persian Gulf. Much oil and fertiliser ships through it.",
+    "audio": true
+  },
+  {
+    "k": "adapting",
+    "t": "adapting",
+    "kind": "word",
+    "forms": [
+      "adapting"
+    ],
+    "text": "To adapt is to change so you can cope with new conditions.",
+    "audio": true
+  },
+  {
+    "k": "anomaly-forms",
+    "t": "temperature anomaly",
+    "kind": "word",
+    "forms": [
+      "temperature anomaly"
+    ],
+    "text": "A temperature anomaly measures how far a temperature is above or below its usual level.",
+    "audio": true
+  },
+  {
+    "k": "campaigner",
+    "t": "campaigner",
+    "kind": "word",
+    "forms": [
+      "campaigner"
+    ],
+    "text": "A campaigner is someone who works to persuade people to support a cause.",
+    "audio": true
+  }
+]

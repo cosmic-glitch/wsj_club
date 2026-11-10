@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-10",
+  "title": "The Climate Issue newsletter: The world braces for an almighty El Niño",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/11/06/the-climate-issue-newsletter-the-world-braces-for-an-almighty-el-nino",
+  "articlePageUrl": "/articles/junior/2026-11-10.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "brace",
+      "partOfSpeech": "verb",
+      "pronunciation": "BRAYSS",
+      "articleQuote": "are bracing for the mother of all modern",
+      "meaning": "To brace for something is to get ready for something hard that you know is coming. A runner braces for the cold before a winter race, and a family braces for a big storm by bringing in the porch chairs. In the article, Peru and Ecuador are bracing for the strongest El Niño in modern times.",
+      "examples": [
+        "I took a deep breath and braced for the cold water of the pool.",
+        "The town braced for the storm by filling sandbags."
+      ]
+    },
+    {
+      "word": "anomaly",
+      "partOfSpeech": "noun",
+      "pronunciation": "uh-NOM-uh-lee",
+      "articleQuote": "the Niño 3.4 temperature anomaly peaked at 3.02°C",
+      "meaning": "An anomaly is something that is different from what is normal or expected. A snowy day in July would be a weather anomaly, and one huge score in a team of low scorers is an anomaly. In the article, a temperature anomaly is how many degrees the ocean is above its usual temperature.",
+      "examples": [
+        "Our class was quiet all week, so the noisy Friday was an anomaly.",
+        "A warm day in the middle of winter is an anomaly."
+      ]
+    },
+    {
+      "word": "staggering",
+      "partOfSpeech": "adjective",
+      "pronunciation": "STAG-er-ing",
+      "articleQuote": "it’s simply staggering",
+      "meaning": "Staggering means so big or so surprising that it is hard to believe. A staggering pile of homework makes you gasp, and a staggering jump in your height over summer makes your pants too short. In the article, a scientist calls this El Niño staggering because it grew so fast and got so warm.",
+      "examples": [
+        "The staggering number of stars in the night sky amazed us.",
+        "She made a staggering comeback and won the race in the last lap."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "State of emergency",
+      "articleQuote": "have declared states of emergency",
+      "meaning": "What happens when a flood or a drought is too big for a town to handle with its normal rules and money? A government can declare a **state of emergency**: an official announcement that a serious danger has arrived and special actions are allowed.\n\nThink of a school fire drill that turns real. The principal stops regular classes and everyone follows special rules so people stay safe. A state of emergency works like that for a region or a country.\n\nOnce it is declared, leaders can move money quickly, call in extra help like soldiers or aid groups, and ask people to follow new rules. It is meant to last only while the danger lasts.\n\nIn the article, the governments of Bolivia, Panama and Peru declared states of emergency because of the extreme weather the El Niño is causing.\n\nSo the takeaway: a state of emergency is a government's official way of saying a danger is serious enough to need special powers and help."
+    },
+    {
+      "name": "Strategic reserve",
+      "articleQuote": "many countries keep strategic oil reserves",
+      "meaning": "Why do some countries store huge amounts of oil in underground tanks, even when there is plenty to buy? They are keeping a **strategic reserve**: a stockpile of something important, saved in advance for a time of shortage.\n\nThink of a family that keeps extra bottled water and canned food in the closet. Most days it just sits there. But if a storm cuts off the stores, that supply keeps everyone going.\n\nA strategic reserve works the same way for a country. It only helps if the stockpile is built before the trouble starts, because during a crisis it is too late, and too expensive, to buy.\n\nIn the article, a philosopher points out that many countries hold oil reserves but almost none hold reserves of fertiliser, the plant food farmers need to grow crops. If a drought or a shipping problem cut off fertiliser, there would be no cushion.\n\nSo the takeaway: a strategic reserve is a saved-up stockpile that protects a country when something important suddenly becomes scarce."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is El Niño?",
+      "options": [
+        "A hurricane that starts in the Atlantic",
+        "A warm phase in which the hottest Pacific waters spread from west to east and change weather around the tropics",
+        "A type of rain that falls only in Peru",
+        "A machine that measures ocean heat"
+      ],
+      "answerIndex": 1,
+      "explanation": "El Niños are the warm phase of the climate seesaw called ENSO, and they come two to four times a decade."
+    },
+    {
+      "question": "Which effect is typical of an El Niño, according to the article?",
+      "options": [
+        "Record hurricane activity in the eastern Pacific and almost none in the North Atlantic",
+        "No rain anywhere on Earth",
+        "Colder oceans everywhere",
+        "More hurricanes in the North Atlantic than ever"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says the eastern Pacific has seen record hurricane activity and the North Atlantic almost none."
+    },
+    {
+      "question": "Why does the article say the worst is still to come?",
+      "options": [
+        "The El Niño has already ended",
+        "Forecasters were wrong about everything",
+        "The peak is not expected until around the end of November or early December, and many effects lag behind",
+        "The ocean is getting colder"
+      ],
+      "answerIndex": 2,
+      "explanation": "El Niños reach their highest point late in the year, and many effects, like drought and hunger, arrive later."
+    },
+    {
+      "question": "What makes this El Niño especially worrying?",
+      "options": [
+        "It is the smallest one ever recorded",
+        "It is the largest on record and is hitting a planet already warmer than it is used to",
+        "It happens every year",
+        "It affects only one country"
+      ],
+      "answerIndex": 1,
+      "explanation": "This year's anomaly passed the 2015 record in September, and forecasts put it near 4°C."
+    },
+    {
+      "question": "What gap does Rupert Read point out?",
+      "options": [
+        "Countries keep oil reserves but almost none keep reserves of fertiliser",
+        "Countries have too much oil",
+        "Farmers refuse to use fertiliser",
+        "Countries keep fertiliser reserves but no oil"
+      ],
+      "answerIndex": 0,
+      "explanation": "Much fertiliser came through the Strait of Hormuz, and almost no country stores a reserve of it."
+    }
+  ]
+}
