@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-10",
+  "title": "The future of Trumponomics: compromise or failure",
+  "articleUrl": "https://www.economist.com/finance-and-economics/2026/11/09/the-future-of-trumponomics-compromise-or-failure",
+  "articlePageUrl": "/articles/2026-11-10.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "gridlock",
+      "partOfSpeech": "noun",
+      "pronunciation": "GRID-lok",
+      "articleQuote": "With Democrats set to control both chambers of Congress, gridlock might seem inevitable.",
+      "meaning": "Gridlock is a standstill in which nothing can move forward because everyone is blocking everyone else. It began as a traffic term for a city intersection so jammed with cars that none of them can move, and it is now the standard word in politics for a government unable to pass laws because its parties or branches are at odds. Here the Economist says that with Democrats running Congress and Mr Trump in the White House, each side can stop the other, so a legislative freeze looks likely, even though the article goes on to argue that deals are still possible.",
+      "examples": [
+        "Road work and a broken traffic light caused total gridlock downtown at rush hour.",
+        "Legislative gridlock meant the budget bill sat unvoted for weeks while both parties dug in."
+      ]
+    },
+    {
+      "word": "concession",
+      "partOfSpeech": "noun",
+      "pronunciation": "kun-SESH-un",
+      "articleQuote": "with some Democrats now hoping to extract further concessions after their electoral victories",
+      "meaning": "A concession is something you give up or grant in a negotiation, usually to get an agreement or something else in return. In bargaining, each side makes concessions, giving ground on some demands so a deal can close. The word also appears in 'concession speech', when a losing candidate admits defeat, but the sense here is the bargaining one. The article says some Democrats feel strengthened by their election wins and want Mr Trump to give up more before they will back a bill on speeding up power-plant construction.",
+      "examples": [
+        "The union won a concession on vacation days but had to accept a smaller raise.",
+        "Neither country was willing to make a concession, so the trade talks collapsed."
+      ]
+    },
+    {
+      "word": "loyalist",
+      "partOfSpeech": "noun",
+      "pronunciation": "LOY-uh-list",
+      "articleQuote": "Now a Democratic Senate could block his attempts to install another loyalist on its board",
+      "meaning": "A loyalist is a person who stays faithful to a leader, party or cause, especially one who can be counted on to side with them. The word has a long history: in the American Revolution, colonists who stayed loyal to the British Crown were called Loyalists. In politics today it often describes an appointee chosen mainly for personal allegiance rather than independent expertise. Here the Economist says Mr Trump wants to put another ally on the Federal Reserve's board, and a Democratic Senate, which must approve such picks, might refuse.",
+      "examples": [
+        "The new coach brought in a loyalist from his old team to run the defence.",
+        "Even when the scandal broke, a few party loyalists kept defending the mayor."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The veto and divided government",
+      "articleQuote": "These efforts may achieve little without enough Republican support to override a presidential veto.",
+      "meaning": "The article's big question is what a president can still do after his party loses control of Congress. The answer rests on how American government splits power, a basic idea in civics: laws, vetoes and what happens when different parties hold different branches.\n\nStart with how a law is made. Congress has two chambers, the House of Representatives and the Senate, and a bill must pass **both**. Then it goes to the president, who can sign it or **veto** it, which means rejecting it so it does not become law. Congress can still win by an **override**, a second vote in which **two-thirds** of each chamber must agree. That is a very high bar, because it needs many members of the president's own party to turn against him. When one party holds the White House and the other controls Congress, the situation is called **divided government**.\n\nHere are some numbers. Suppose the Senate has 100 members. To pass an ordinary bill, 51 votes will do. To override a veto, it takes 67. If the opposition party holds 53 seats, it can pass bills all day, but it cannot beat a veto without at least 14 members of the president's party. That is why the article says Democratic efforts to curb tariffs 'may achieve little': the president can veto, and they can't reach two-thirds.\n\nNotice what the president keeps. Tariffs and deportations rest on powers the president already holds, so Congress can't easily undo them. But new spending, taxes or permits need both sides to agree. That is exactly why the article expects bargaining, not just fighting.\n\nThe lesson to carry away is that under divided government the veto lets a president block laws, but the party running Congress holds the pen on money, so each side has something the other needs."
+    },
+    {
+      "name": "Government funding deadlines and the debt ceiling",
+      "articleQuote": "Government funding expires on December 11th, but a temporary extension could leave the next budget deal to the incoming Democratic Congress.",
+      "meaning": "The article says two deadlines will give Democrats a chance to bargain. Both come from how the US government pays its bills, a basic idea in public finance, and they work very differently.\n\nThe first is the **government funding deadline**. Congress must pass spending bills each year to authorise the government's budget. If a bill is not passed by the deadline, money for many agencies runs out and parts of the government may shut down. A **temporary extension**, often called a stopgap, simply keeps the old spending levels going for a few weeks or months, which pushes the fight to later.\n\nThe second is the **debt ceiling**, a legal cap on the total amount the Treasury may borrow. This confuses people, because the ceiling is not about new spending. Congress has already approved the spending and the taxes, and the government borrows to cover the gap. Hitting the ceiling means it can't borrow more to pay bills it has already committed to, like interest to bondholders. If the cap isn't raised in time, the US could **default**, failing to pay what it owes, which would unsettle financial markets worldwide.\n\nImagine a family that agreed to buy a car and then their parents refuse to raise the credit-card limit needed to pay for it. The purchase is already made; refusing now only risks missing the payment. A party that is willing to threaten that gets enormous **leverage**, the power to demand something in return.\n\nThe lesson to carry away is that these deadlines are pressure points where a party that controls only one part of the government can still force the other side to the table."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What new slogan did Mr Trump post on a baseball cap after the midterm elections?",
+      "options": ["MAGA", "VETO", "TACO", "DEAL"],
+      "answerIndex": 1,
+      "explanation": "He posted the familiar cap with the new slogan VETO, signalling he would reject Democratic bills."
+    },
+    {
+      "question": "According to the article, which deadline falls on December 11th?",
+      "options": [
+        "The expiry of government funding",
+        "The end of the tariff court case",
+        "The deadline to appoint a Fed governor",
+        "The start of data-centre construction limits"
+      ],
+      "answerIndex": 0,
+      "explanation": "Government funding expires on December 11th, though a temporary extension could leave the next budget deal to the incoming Democratic Congress."
+    },
+    {
+      "question": "Why does the article say the debt ceiling could give Democrats greater leverage later next year?",
+      "options": [
+        "It would let them cancel the tariffs directly",
+        "Failure to reach an agreement would risk a default",
+        "It lets them remove the president from office",
+        "It automatically raises taxes on the rich"
+      ],
+      "answerIndex": 1,
+      "explanation": "If the ceiling is not resolved early, failing to agree later would risk a default, which gives the side with votes to spare strong bargaining power."
+    },
+    {
+      "question": "What do most governors who won on data-centre limits actually want, according to Gabe Horwitz?",
+      "options": [
+        "Permanent bans on all data centres",
+        "For data centres to pay more for their electricity",
+        "To move data centres to other countries",
+        "To give data centres free power"
+      ],
+      "answerIndex": 1,
+      "explanation": "Mr Horwitz says most merely want data centres to pay more for their electricity, not to ban them."
+    },
+    {
+      "question": "What sign does the article give that Mr Trump's willingness to compromise is 'far from certain'?",
+      "options": [
+        "He cancelled his CBS interview",
+        "He appointed Stephen Miller, an architect of the deportation campaign, as White House chief of staff",
+        "He raised tariffs the same day",
+        "He resigned from the Republican Party"
+      ],
+      "answerIndex": 1,
+      "explanation": "Hours after saying his deportation policy 'might be too tough', he appointed Stephen Miller, an architect of it, as chief of staff."
+    }
+  ]
+}

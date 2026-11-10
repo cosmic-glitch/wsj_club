@@ -1,0 +1,489 @@
+[
+  {
+    "k": "gridlock",
+    "t": "gridlock",
+    "kind": "vocab",
+    "pron": "GRID-lok",
+    "forms": [
+      "gridlock"
+    ],
+    "text": "Gridlock is a standstill where nothing moves because everyone blocks everyone else. It began as a traffic term and now describes a government unable to pass laws. Here, split control of Washington makes a freeze look likely.",
+    "audio": true
+  },
+  {
+    "k": "concession",
+    "t": "concession",
+    "kind": "vocab",
+    "pron": "kun-SESH-un",
+    "forms": [
+      "concessions"
+    ],
+    "text": "A concession is something you give up in a negotiation to reach a deal. Here, some Democrats want Mr Trump to give more ground before they back a bill on building power plants.",
+    "audio": true
+  },
+  {
+    "k": "loyalist",
+    "t": "loyalist",
+    "kind": "vocab",
+    "pron": "LOY-uh-list",
+    "forms": [
+      "loyalist"
+    ],
+    "text": "A loyalist is someone who stays faithful to a leader or cause. Here it means an ally Mr Trump would like to place on the Federal Reserve's board, which a Democratic Senate could block.",
+    "audio": true
+  },
+  {
+    "k": "knack",
+    "t": "knack",
+    "kind": "word",
+    "forms": [
+      "knack"
+    ],
+    "text": "A knack is a natural talent or clever skill for doing something. Here Mr Trump is good at squeezing his politics into catchy four-letter slogans.",
+    "audio": true
+  },
+  {
+    "k": "emblazoned",
+    "t": "emblazoned",
+    "kind": "word",
+    "forms": [
+      "emblazoned"
+    ],
+    "text": "Emblazoned means displayed boldly and prominently, as on a banner or shirt. Here the red caps carry the MAGA slogan in big letters.",
+    "audio": true
+  },
+  {
+    "k": "thumped",
+    "t": "thumped",
+    "kind": "word",
+    "forms": [
+      "thumped"
+    ],
+    "text": "To thump someone in sport or politics means to beat them heavily. Here the Republicans lost badly in the midterm elections.",
+    "audio": true
+  },
+  {
+    "k": "mid-term-elections",
+    "t": "mid-term elections",
+    "kind": "name",
+    "forms": [
+      "mid-term elections"
+    ],
+    "text": "Elections held halfway through a president's four-year term, in which all House seats and about a third of Senate seats are contested. The president's party often loses ground.",
+    "audio": true
+  },
+  {
+    "k": "maga",
+    "t": "MAGA",
+    "kind": "name",
+    "forms": [
+      "MAGA"
+    ],
+    "text": "Short for 'Make America Great Again', Mr Trump's campaign slogan. Supporters wear red caps with the letters.",
+    "audio": true
+  },
+  {
+    "k": "veto",
+    "t": "VETO",
+    "kind": "name",
+    "forms": [
+      "VETO",
+      "vetoes",
+      "veto"
+    ],
+    "text": "Latin for 'I forbid'. A veto is a president's power to reject a bill so that it cannot become law unless Congress overrides it by a two-thirds vote in each chamber.",
+    "audio": true
+  },
+  {
+    "k": "chambers",
+    "t": "chambers",
+    "kind": "word",
+    "forms": [
+      "chambers"
+    ],
+    "text": "A chamber is one of the two houses of Congress: the House of Representatives and the Senate. A bill must pass both.",
+    "audio": true
+  },
+  {
+    "k": "sweeping",
+    "t": "sweeping",
+    "kind": "word",
+    "forms": [
+      "sweeping"
+    ],
+    "text": "Sweeping means broad and far-reaching, covering a great deal. Here the tax-and-spending law changed many things at once.",
+    "audio": true
+  },
+  {
+    "k": "disproportionately",
+    "t": "disproportionately",
+    "kind": "word",
+    "forms": [
+      "disproportionately"
+    ],
+    "text": "Disproportionately means to a much larger degree than would be fair or expected. Here the law gave far more benefit to rich people than to others.",
+    "audio": true
+  },
+  {
+    "k": "swelled",
+    "t": "swelled",
+    "kind": "word",
+    "forms": [
+      "swelled"
+    ],
+    "text": "To swell is to grow bigger. Here the law enlarged the forecast gaps between what the government spends and what it collects.",
+    "audio": true
+  },
+  {
+    "k": "deficits",
+    "t": "deficits",
+    "kind": "word",
+    "forms": [
+      "deficits",
+      "deficit"
+    ],
+    "text": "A deficit is the gap in a year when a government spends more than it collects in taxes. It covers the gap by borrowing.",
+    "audio": true
+  },
+  {
+    "k": "presidential-powers",
+    "t": "presidential powers",
+    "kind": "phrase",
+    "forms": [
+      "presidential powers"
+    ],
+    "text": "Actions a president can take alone, without a new law from Congress, such as setting tariffs or directing immigration enforcement.",
+    "audio": true
+  },
+  {
+    "k": "deportations",
+    "t": "deportations",
+    "kind": "word",
+    "forms": [
+      "deportations"
+    ],
+    "text": "Deportation is the legal removal of a person from a country, usually someone who lacks permission to stay.",
+    "audio": true
+  },
+  {
+    "k": "deadlines",
+    "t": "deadlines",
+    "kind": "word",
+    "forms": [
+      "deadlines"
+    ],
+    "text": "A deadline is a date by which something must be done. Here two budget dates force Congress and the president to negotiate.",
+    "audio": true
+  },
+  {
+    "k": "temporary-extension",
+    "t": "temporary extension",
+    "kind": "phrase",
+    "forms": [
+      "temporary extension"
+    ],
+    "text": "A short-term stopgap that keeps government funding at current levels for a few weeks or months, pushing the real fight to later.",
+    "audio": true
+  },
+  {
+    "k": "debt-ceiling",
+    "t": "debt ceiling",
+    "kind": "name",
+    "forms": [
+      "debt ceiling"
+    ],
+    "text": "A legal cap on how much the US Treasury may borrow in total. Hitting it without a fix risks a default on bills already owed, so it is a potent bargaining chip.",
+    "audio": true
+  },
+  {
+    "k": "default",
+    "t": "default",
+    "kind": "word",
+    "forms": [
+      "default"
+    ],
+    "text": "In finance, to default is to fail to pay a debt on time. A US default would shake markets around the world. Not to be confused with a computer's default setting.",
+    "audio": true
+  },
+  {
+    "k": "guns-versus-butter",
+    "t": "guns-versus-butter",
+    "kind": "phrase",
+    "forms": [
+      "guns-versus-butter"
+    ],
+    "text": "A classic economics trade-off between spending on the military ('guns') and on civilian needs ('butter'). The article says America's usual answer is both.",
+    "audio": true
+  },
+  {
+    "k": "earned-income-tax-credit",
+    "t": "earned-income tax credit",
+    "kind": "name",
+    "forms": [
+      "earned-income tax credit"
+    ],
+    "text": "A US tax benefit that tops up the pay of low-income workers. The article calls it a 'top-up for low earners'.",
+    "audio": true
+  },
+  {
+    "k": "child-tax-credit",
+    "t": "child tax credit",
+    "kind": "name",
+    "forms": [
+      "child tax credit"
+    ],
+    "text": "A US tax break that reduces what a family owes for each child. Democrats want to expand it.",
+    "audio": true
+  },
+  {
+    "k": "red-ink",
+    "t": "red ink",
+    "kind": "phrase",
+    "forms": [
+      "red ink"
+    ],
+    "text": "An idiom for losses or deficit spending, from the old habit of recording losses in red. Here it means how much more the government will borrow.",
+    "audio": true
+  },
+  {
+    "k": "fiscal",
+    "t": "fiscal",
+    "kind": "word",
+    "forms": [
+      "fiscal"
+    ],
+    "text": "Fiscal means relating to government spending and taxes, as opposed to monetary policy, which is about interest rates and the money supply.",
+    "audio": true
+  },
+  {
+    "k": "loosening",
+    "t": "loosening",
+    "kind": "word",
+    "forms": [
+      "loosening"
+    ],
+    "text": "Fiscal loosening means the government spends more or taxes less, adding to the economy. Here it is estimated at 0.2% of GDP.",
+    "audio": true
+  },
+  {
+    "k": "gdp",
+    "t": "GDP",
+    "kind": "name",
+    "forms": [
+      "GDP"
+    ],
+    "text": "Gross domestic product, the total value of everything a country produces in a year. It is the standard yardstick of an economy's size.",
+    "audio": true
+  },
+  {
+    "k": "medicaid",
+    "t": "Medicaid",
+    "kind": "name",
+    "forms": [
+      "Medicaid"
+    ],
+    "text": "The US government health-insurance programme for people with low incomes, funded jointly by the federal government and the states.",
+    "audio": true
+  },
+  {
+    "k": "food-stamps",
+    "t": "food stamps",
+    "kind": "name",
+    "forms": [
+      "food stamps"
+    ],
+    "text": "The common name for the US food-assistance programme that helps low-income families buy groceries.",
+    "audio": true
+  },
+  {
+    "k": "offsetting",
+    "t": "offsetting",
+    "kind": "word",
+    "forms": [
+      "offsetting"
+    ],
+    "text": "To offset is to balance out one thing with an opposite one. Here, tax or spending changes elsewhere would cancel part of the new cost.",
+    "audio": true
+  },
+  {
+    "k": "levy",
+    "t": "levy",
+    "kind": "word",
+    "forms": [
+      "levy"
+    ],
+    "text": "A levy is a tax or charge imposed by a government. Here Democrats might put a new charge on the AI industry.",
+    "audio": true
+  },
+  {
+    "k": "data-centres",
+    "t": "data centres",
+    "kind": "word",
+    "forms": [
+      "data-centre",
+      "data centres"
+    ],
+    "text": "Giant buildings full of computers that store data and run AI systems. They use enormous amounts of electricity.",
+    "audio": true
+  },
+  {
+    "k": "let-it-rip",
+    "t": "let-it-rip",
+    "kind": "phrase",
+    "forms": [
+      "let-it-rip"
+    ],
+    "text": "An informal phrase for going full speed with no restraint. Here it describes Mr Trump's hands-off approach to regulating data centres.",
+    "audio": true
+  },
+  {
+    "k": "capacity",
+    "t": "capacity",
+    "kind": "word",
+    "forms": [
+      "capacity"
+    ],
+    "text": "Capacity is the maximum amount something can produce or hold. Here it means the data-centre capacity planned across states.",
+    "audio": true
+  },
+  {
+    "k": "think-tank",
+    "t": "think-tank",
+    "kind": "name",
+    "forms": [
+      "think-tank"
+    ],
+    "text": "A research group that studies policy and advises politicians. Third Way is described as centre-left.",
+    "audio": true
+  },
+  {
+    "k": "permitting-reform",
+    "t": "permitting reform",
+    "kind": "phrase",
+    "forms": [
+      "permitting reform"
+    ],
+    "text": "Changing the approvals process for building things like power plants and power lines so projects get approved faster.",
+    "audio": true
+  },
+  {
+    "k": "transmission-lines",
+    "t": "transmission lines",
+    "kind": "phrase",
+    "forms": [
+      "transmission lines"
+    ],
+    "text": "The high-voltage cables that carry electricity from power plants to cities and towns.",
+    "audio": true
+  },
+  {
+    "k": "shoulder",
+    "t": "shoulder",
+    "kind": "word",
+    "forms": [
+      "shoulder"
+    ],
+    "text": "To shoulder a cost is to take on responsibility for paying it. Here large data centres would pay more of what they cost the power grid.",
+    "audio": true
+  },
+  {
+    "k": "grid",
+    "t": "grid",
+    "kind": "word",
+    "forms": [
+      "grid"
+    ],
+    "text": "The grid is the connected network of power plants and lines that supplies a region's electricity.",
+    "audio": true
+  },
+  {
+    "k": "tariffs",
+    "t": "tariffs",
+    "kind": "word",
+    "forms": [
+      "tariffs"
+    ],
+    "text": "Tariffs are taxes on imported goods. They raise prices for buyers and are a central part of Mr Trump's economic policy.",
+    "audio": true
+  },
+  {
+    "k": "off-ramp",
+    "t": "off-ramp",
+    "kind": "phrase",
+    "forms": [
+      "off-ramp"
+    ],
+    "text": "Literally an exit from a highway. Figuratively, a face-saving way out of a policy or conflict. Here a court ruling could let Mr Trump ease tariffs without seeming to back down.",
+    "audio": true
+  },
+  {
+    "k": "section-301",
+    "t": "Section 301",
+    "kind": "name",
+    "forms": [
+      "Section 301"
+    ],
+    "text": "A US trade law letting the government punish other countries for unfair trade practices with tariffs. A pending court case could limit such duties.",
+    "audio": true
+  },
+  {
+    "k": "room-for-manoeuvre",
+    "t": "room for manoeuvre",
+    "kind": "phrase",
+    "forms": [
+      "room for manoeuvre"
+    ],
+    "text": "The freedom to choose between options. Here Mr Trump's freedom of action may shrink as Democrats gain power.",
+    "audio": true
+  },
+  {
+    "k": "federal-reserve",
+    "t": "Federal Reserve",
+    "kind": "name",
+    "forms": [
+      "Federal Reserve"
+    ],
+    "text": "America's central bank, which sets interest rates. Its independence from politics is seen as important for stable prices.",
+    "audio": true
+  },
+  {
+    "k": "immigration-crackdown",
+    "t": "immigration crackdown",
+    "kind": "phrase",
+    "forms": [
+      "immigration crackdown"
+    ],
+    "text": "A strict campaign of enforcement against people living in the country without permission.",
+    "audio": true
+  },
+  {
+    "k": "undocumented",
+    "t": "undocumented",
+    "kind": "word",
+    "forms": [
+      "undocumented"
+    ],
+    "text": "Undocumented describes a person living in a country without legal papers or permission. Here, long-term workers who have been in America many years.",
+    "audio": true
+  },
+  {
+    "k": "stephen-miller",
+    "t": "Stephen Miller",
+    "kind": "name",
+    "forms": [
+      "Stephen Miller"
+    ],
+    "text": "A senior Trump adviser known as a main architect of the hardline deportation campaign, now named White House chief of staff.",
+    "audio": true
+  },
+  {
+    "k": "taco",
+    "t": "TACO",
+    "kind": "name",
+    "forms": [
+      "TACO"
+    ],
+    "text": "Short for 'Trump Always Chickens Out', a market-trader joke that he backs down from threats such as tariffs. Here it is set against VETO as the likelier path.",
+    "audio": true
+  }
+]
