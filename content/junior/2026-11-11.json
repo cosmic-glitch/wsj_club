@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-11",
+  "title": "Inside America’s first new submarine base abroad for 53 years",
+  "articleUrl": "https://www.economist.com/asia/2026/11/10/inside-americas-first-new-submarine-base-abroad-for-53-years",
+  "articlePageUrl": "/articles/junior/2026-11-11.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "deterrent",
+      "partOfSpeech": "noun",
+      "pronunciation": "dih-TUR-unt",
+      "articleQuote": "giving Australia a more potent deterrent",
+      "meaning": "A deterrent is something that makes people afraid to do a bad thing, so they decide not to. A big, loud guard dog is a deterrent to a burglar, and a strict teacher is a deterrent to passing notes. In the article, Australia's new submarines would be a deterrent: other countries would think twice before attacking.",
+      "examples": [
+        "The bright porch light is a deterrent to people sneaking around our yard.",
+        "A big fine is a deterrent to dropping trash in the park."
+      ]
+    },
+    {
+      "word": "sceptical",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SKEP-tih-kul",
+      "articleQuote": "particularly those who have always been sceptical of its alliance",
+      "meaning": "Sceptical means not sure that something is true or a good idea, and wanting more proof first. If a friend says he can eat twenty tacos, you might be sceptical until you see it. In the article, some Australians are sceptical of their country's close alliance with America. (Americans usually spell it skeptical.)",
+      "examples": [
+        "I was sceptical that the old bike could still go fast, so I tested it.",
+        "My mom was sceptical of my plan to clean my room in five minutes."
+      ]
+    },
+    {
+      "word": "revamp",
+      "partOfSpeech": "verb",
+      "pronunciation": "ree-VAMP",
+      "articleQuote": "America and Britain have both had to revamp a slew of laws",
+      "meaning": "To revamp something is to change it a lot so it is newer or works better. A team might revamp its practice plan after a losing season, and a family might revamp a messy garage into a play space. In the article, America and Britain had to revamp many laws so they could share secret technology.",
+      "examples": [
+        "We revamped our club's website to make it easier to use.",
+        "The cafeteria was revamped over the summer with new tables and a new menu."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Alliance",
+      "articleQuote": "the innermost sanctum of American alliances",
+      "meaning": "Why would one country let another country's navy live on its land? Because the two have an **alliance**: a formal agreement between countries to help and protect each other.\n\nThink of a group of kids who promise, \"If anyone bothers one of us, all of us stand up for them.\" Each kid is safer, and each one also owes something back.\n\nCountries do the same thing, but with written promises. Allies share information, train together, and sometimes let each other use bases. The price is that an ally can get pulled into the other's problems, and some people at home may not like that.\n\nIn the article, Australia is a close ally of America, so American submarines will be based at Australia's Stirling base. Some Australians are sceptical of the deal because they worry it ties their country too closely to America.\n\nSo the takeaway: an alliance is a promise to help each other, and it brings both safety and obligations."
+    },
+    {
+      "name": "Nuclear power vs. nuclear weapons",
+      "articleQuote": "no nuclear weapons are involved, only nuclear power",
+      "meaning": "Does a nuclear-powered submarine carry nuclear bombs? No. **Nuclear power** and **nuclear weapons** are two different things that both come from splitting atoms.\n\nThink of fire. A campfire heats your hands and cooks your food, but a fire out of control burns the forest. Same basic fire, very different use.\n\nIn a nuclear power plant, the splitting is slow and controlled, and the heat it makes turns into energy. A submarine can use this to make electricity and push itself through the water for years without refuelling. A nuclear weapon is built to release all the energy at once in a giant explosion.\n\nIn the article, the submarines at Stirling run on nuclear power, so they can travel much farther than diesel boats without coming up to the surface. The article says no nuclear weapons are involved.\n\nSo the takeaway: nuclear power is controlled energy for running things, and it is not the same as a nuclear weapon."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did workers have to build seahorse hotels at the Stirling base?",
+      "options": [
+        "Seahorses are bad swimmers, so they were moved to safe grids before the construction",
+        "The navy wanted to keep seahorses as pets",
+        "Seahorses can fix submarines",
+        "Tourists asked for them"
+      ],
+      "answerIndex": 0,
+      "explanation": "Seahorses hook onto rocks and piers, so divers moved 263 of them before the base was upgraded."
+    },
+    {
+      "question": "What is AUKUS?",
+      "options": [
+        "A type of submarine",
+        "A deal between America, Australia and Britain to design and build nuclear-powered submarines together",
+        "A city in Western Australia",
+        "A Chinese navy plan"
+      ],
+      "answerIndex": 1,
+      "explanation": "AUKUS was announced in 2021 by the three countries."
+    },
+    {
+      "question": "Why is Stirling a useful place for American submarines?",
+      "options": [
+        "It is next to China",
+        "It is out of range of all but the most advanced Chinese missiles, yet closer to Asian waters than other American submarine bases",
+        "It has the biggest cricket field in the world",
+        "It is the only place with a pier"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says this is its big advantage over existing bases, including the one at Guam."
+    },
+    {
+      "question": "What is the big worry about AUKUS?",
+      "options": [
+        "Shipyards in America and Britain may not be able to build submarines fast enough",
+        "Australia has too many submarines",
+        "Nobody wants to be a sailor",
+        "The submarines carry nuclear weapons"
+      ],
+      "answerIndex": 0,
+      "explanation": "American and British shipyards would need to build faster, or Australia could end up with a base but no submarines of its own."
+    },
+    {
+      "question": "How do the nuclear-powered subs help Australia, compared with its diesel-powered boats?",
+      "options": [
+        "They are cheaper to buy",
+        "They are quieter on land",
+        "They can travel much farther without coming to the surface",
+        "They carry nuclear bombs"
+      ],
+      "answerIndex": 2,
+      "explanation": "Nuclear power lets subs range farther, which gives Australia a stronger deterrent."
+    }
+  ]
+}
