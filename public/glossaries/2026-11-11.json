@@ -1,0 +1,368 @@
+[
+  {
+    "k": "jeopardise",
+    "t": "jeopardise",
+    "kind": "vocab",
+    "pron": "JEP-er-dyz",
+    "forms": [
+      "jeopardises"
+    ],
+    "text": "To jeopardise something is to put it at risk of being lost or destroyed. Here the scandal threatens Mr Huang's three decades running Nvidia. The spelling is British; Americans write jeopardize.",
+    "audio": true
+  },
+  {
+    "k": "backstop",
+    "t": "backstop",
+    "kind": "vocab",
+    "pron": "BAK-stop",
+    "forms": [
+      "backstops"
+    ],
+    "text": "A backstop is a safety net that catches a problem if everything else fails; the word comes from the fence behind home plate in baseball. Here Nvidia has promised to cover customers' losses as well as selling them chips, which ties its fortunes to theirs.",
+    "audio": true
+  },
+  {
+    "k": "scepticism",
+    "t": "scepticism",
+    "kind": "vocab",
+    "pron": "SKEP-tih-siz-um",
+    "forms": [
+      "scepticism"
+    ],
+    "text": "Scepticism is an attitude of doubt: you want good evidence before believing a claim. Here officials will doubt Mr Huang's motives whenever he lobbies for chip sales to China. Americans spell it skepticism.",
+    "audio": true
+  },
+  {
+    "k": "fall-from-grace",
+    "t": "fall from grace",
+    "kind": "phrase",
+    "forms": [
+      "fall from grace"
+    ],
+    "text": "A fall from grace is a sudden loss of respect or status, especially for someone who was admired. Here Mr Huang goes from AI hero to scandal.",
+    "audio": true
+  },
+  {
+    "k": "caught-with-pants-down",
+    "t": "caught with his pants down",
+    "kind": "phrase",
+    "forms": [
+      "caught with his pants down"
+    ],
+    "text": "To be caught with your pants down is to be embarrassingly exposed in the middle of something you wanted hidden or were unprepared for. Here it hints at the awkward revelation of the affair.",
+    "audio": true
+  },
+  {
+    "k": "reign",
+    "t": "reign",
+    "kind": "word",
+    "forms": [
+      "reign"
+    ],
+    "text": "A reign is the period a king or queen rules. Calling a CEO's time in charge a reign suggests very long, nearly unchallenged power. Mr Huang has led Nvidia for 33 years.",
+    "audio": true
+  },
+  {
+    "k": "confessed",
+    "t": "confessed",
+    "kind": "word",
+    "forms": [
+      "confessed"
+    ],
+    "text": "To confess is to admit something wrong or embarrassing that you had kept hidden or denied. Here Mr Huang first said nothing was unusual, then admitted the affair.",
+    "audio": true
+  },
+  {
+    "k": "missives",
+    "t": "missives",
+    "kind": "word",
+    "forms": [
+      "missives"
+    ],
+    "text": "A missive is a written message or letter, often a formal one. Here it means Mr Huang's memo and the board's statement.",
+    "audio": true
+  },
+  {
+    "k": "hang-in-the-balance",
+    "t": "hang in the balance",
+    "kind": "phrase",
+    "forms": [
+      "hang in the balance"
+    ],
+    "text": "When something hangs in the balance, its outcome is undecided and could go either way. Here Mr Huang's job depends on what the board's investigation finds.",
+    "audio": true
+  },
+  {
+    "k": "spectacular",
+    "t": "spectacular",
+    "kind": "word",
+    "forms": [
+      "spectacular"
+    ],
+    "text": "Spectacular usually praises something amazing, but it can describe dramatic failures too. Here it stresses how large and public Mr Huang's drop from success is.",
+    "audio": true
+  },
+  {
+    "k": "hectobillionaire",
+    "t": "hectobillionaire",
+    "kind": "word",
+    "forms": [
+      "hectobillionaire"
+    ],
+    "text": "A hectobillionaire is someone worth $100 billion or more; hecto- means one hundred. It is a rare term for the very richest people on the planet.",
+    "audio": true
+  },
+  {
+    "k": "market-value",
+    "t": "market value",
+    "kind": "name",
+    "forms": [
+      "market value"
+    ],
+    "text": "A company's market value, or market capitalisation, is its share price times the number of shares. It is what investors collectively think the whole company is worth. Nvidia's has risen more than tenfold since 2022.",
+    "audio": true
+  },
+  {
+    "k": "gpu",
+    "t": "GPU",
+    "kind": "name",
+    "forms": [
+      "GPUs",
+      "graphics processing units"
+    ],
+    "text": "A GPU, or graphics processing unit, is a chip that does huge numbers of calculations at the same time. That makes GPUs ideal for training AI systems, which is why Nvidia's are so prized.",
+    "audio": true
+  },
+  {
+    "k": "data-centre",
+    "t": "data centre",
+    "kind": "name",
+    "forms": [
+      "data-centre",
+      "data centres"
+    ],
+    "text": "A data centre is a huge building full of computers that store information and run AI systems. They use enormous amounts of electricity, which is why some voters have protested against them.",
+    "audio": true
+  },
+  {
+    "k": "key-man-risk",
+    "t": "key-man risk",
+    "kind": "name",
+    "forms": [
+      "key-man risk"
+    ],
+    "text": "Key-man risk is the danger that a business is badly hurt if one irreplaceable person leaves. Here analysts worry because Nvidia has no obvious successor to Mr Huang.",
+    "audio": true
+  },
+  {
+    "k": "broker",
+    "t": "broker",
+    "kind": "word",
+    "forms": [
+      "broker"
+    ],
+    "text": "A broker is a firm or person who buys and sells investments for clients. Here it describes Bernstein, a financial company whose analyst comments on Nvidia.",
+    "audio": true
+  },
+  {
+    "k": "exacerbate",
+    "t": "exacerbate",
+    "kind": "word",
+    "forms": [
+      "exacerbate"
+    ],
+    "text": "To exacerbate something is to make a bad situation worse. Here the scandal may deepen investors' existing fears that the AI boom will not last.",
+    "audio": true
+  },
+  {
+    "k": "durability",
+    "t": "durability",
+    "kind": "word",
+    "forms": [
+      "durability"
+    ],
+    "text": "Durability is the ability to last a long time without breaking down. Here investors wonder whether the AI boom can keep going.",
+    "audio": true
+  },
+  {
+    "k": "midterm-elections",
+    "t": "midterm elections",
+    "kind": "name",
+    "forms": [
+      "midterm elections"
+    ],
+    "text": "Midterm elections happen halfway through a president's four-year term, when Americans choose members of Congress and many state officials. Here voters in some places pushed back on data centres.",
+    "audio": true
+  },
+  {
+    "k": "trademark",
+    "t": "trademark",
+    "kind": "word",
+    "forms": [
+      "trademark"
+    ],
+    "text": "As an adjective, trademark means a feature everyone strongly links to a particular person, like Mr Huang's leather jacket. It comes from the legal term for a company's registered brand.",
+    "audio": true
+  },
+  {
+    "k": "cheerleader-in-chief",
+    "t": "cheerleader-in-chief",
+    "kind": "word",
+    "forms": [
+      "cheerleader-in-chief"
+    ],
+    "text": "This playful title copies 'commander-in-chief'. It means the most enthusiastic public supporter of something, here the AI boom.",
+    "audio": true
+  },
+  {
+    "k": "gung-ho",
+    "t": "gung-ho",
+    "kind": "word",
+    "forms": [
+      "gung-ho"
+    ],
+    "text": "Gung-ho means extremely eager and enthusiastic, sometimes recklessly so. Here it describes Mr Huang's all-in approach to AI investment.",
+    "audio": true
+  },
+  {
+    "k": "orchestrated",
+    "t": "orchestrated",
+    "kind": "word",
+    "forms": [
+      "orchestrated"
+    ],
+    "text": "To orchestrate something is to organise a complicated plan with many parts, the way a conductor leads an orchestra. Here Mr Huang pulled together a $500 billion financing effort.",
+    "audio": true
+  },
+  {
+    "k": "spotlight",
+    "t": "spotlight",
+    "kind": "word",
+    "forms": [
+      "spotlight"
+    ],
+    "text": "To bring something into the spotlight is to draw public attention to it, like a theatre light on a stage. Here the affair puts Mr Huang's closeness to Mr Trump under scrutiny.",
+    "audio": true
+  },
+  {
+    "k": "surveillance",
+    "t": "surveillance",
+    "kind": "word",
+    "forms": [
+      "surveillance"
+    ],
+    "text": "Surveillance is close watching of a person or group, usually in secret and by officials such as police or spy agencies. Here American authorities were watching Ms Huang.",
+    "audio": true
+  },
+  {
+    "k": "smuggling",
+    "t": "smuggling",
+    "kind": "word",
+    "forms": [
+      "smuggling"
+    ],
+    "text": "To smuggle is to move goods secretly and illegally across a border. Here the suspicion is that chips banned from China were being sent there anyway.",
+    "audio": true
+  },
+  {
+    "k": "megaspeed",
+    "t": "Megaspeed",
+    "kind": "name",
+    "forms": [
+      "Megaspeed"
+    ],
+    "text": "Megaspeed is the Singapore-based data-centre company run by Alice Huang. It is a client of Nvidia, and the US suspected it of sending Nvidia's chips to China.",
+    "audio": true
+  },
+  {
+    "k": "secretary-of-state",
+    "t": "secretary of state",
+    "kind": "name",
+    "forms": [
+      "secretary of state"
+    ],
+    "text": "The secretary of state is the cabinet member who leads American foreign policy and the State Department. Marco Rubio holds the job here.",
+    "audio": true
+  },
+  {
+    "k": "confidential",
+    "t": "confidential",
+    "kind": "word",
+    "forms": [
+      "confidential"
+    ],
+    "text": "Confidential means meant to be kept secret and shared only with certain people. Here it describes a private warning memo.",
+    "audio": true
+  },
+  {
+    "k": "layover",
+    "t": "layover",
+    "kind": "word",
+    "forms": [
+      "layover"
+    ],
+    "text": "A layover is a stop during a long trip, such as a plane landing in between flights. Here Air Force One paused in Alaska on the way to China.",
+    "audio": true
+  },
+  {
+    "k": "honourable",
+    "t": "honourable",
+    "kind": "word",
+    "forms": [
+      "honourable"
+    ],
+    "text": "Honourable means deserving respect because of honesty and good character. Mr Trump uses it to defend Mr Huang. Americans spell it honorable.",
+    "audio": true
+  },
+  {
+    "k": "lobbied",
+    "t": "lobbied",
+    "kind": "word",
+    "forms": [
+      "lobbied",
+      "lobbying"
+    ],
+    "text": "To lobby is to try to persuade lawmakers or officials to favour a certain policy. Here Mr Huang has argued for selling advanced chips to China.",
+    "audio": true
+  },
+  {
+    "k": "gutted",
+    "t": "gutted",
+    "kind": "word",
+    "forms": [
+      "gutted"
+    ],
+    "text": "To gut something is to destroy its most important parts, as when you remove the insides of a fish. Here export limits wrecked most of Nvidia's China business.",
+    "audio": true
+  },
+  {
+    "k": "export-restrictions",
+    "t": "chip export restrictions",
+    "kind": "name",
+    "forms": [
+      "restrictions on chip exports"
+    ],
+    "text": "These are US rules limiting which advanced chips American companies may sell abroad, mainly to China, on national-security grounds.",
+    "audio": true
+  },
+  {
+    "k": "closed-door",
+    "t": "closed-door",
+    "kind": "phrase",
+    "forms": [
+      "closed-door"
+    ],
+    "text": "A closed-door meeting is held in private, away from reporters and the public. Here lawmakers questioned Mr Huang in secret.",
+    "audio": true
+  },
+  {
+    "k": "perilous",
+    "t": "perilous",
+    "kind": "word",
+    "forms": [
+      "perilous"
+    ],
+    "text": "Perilous means full of danger or risk, like a perilous mountain path. Here it warns that Mr Huang's future is uncertain.",
+    "audio": true
+  }
+]

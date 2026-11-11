@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-11",
+  "title": "Can Nvidia’s boss survive a Chinese-spy controversy?",
+  "articleUrl": "https://www.economist.com/business/2026/11/09/can-nvidias-boss-survive-a-chinese-spy-controversy",
+  "articlePageUrl": "/articles/2026-11-11.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "jeopardise",
+      "partOfSpeech": "verb",
+      "pronunciation": "JEP-er-dyz",
+      "articleQuote": "The storm jeopardises Mr Huang’s 33-year reign over the company.",
+      "meaning": "To jeopardise something is to put it at risk of being lost, damaged or destroyed. The noun is jeopardy, and the phrase 'in jeopardy' means in danger. The word is common in news about careers, deals, health and safety, wherever something valuable could slip away. The spelling with an s is British; Americans write 'jeopardize'. Here the Economist says the scandal over Mr Huang's affair puts his three decades running Nvidia at risk, because the board is now investigating and he could be forced out.",
+      "examples": [
+        "Skipping practice all week could jeopardise your place on the team.",
+        "The leaked emails jeopardised the delicate peace talks."
+      ]
+    },
+    {
+      "word": "backstop",
+      "partOfSpeech": "noun",
+      "pronunciation": "BAK-stop",
+      "articleQuote": "His gung-ho approach has led Nvidia to provide cash and backstops to AI labs and infrastructure providers",
+      "meaning": "A backstop is a safety net: something that catches a problem if everything else fails. It began in baseball, as the fence behind home plate that stops balls the catcher misses. In finance and politics it means a promise to step in and cover losses if a plan goes wrong, such as a guarantee to buy what others can't sell. Here the Economist says Nvidia has not just sold chips but handed cash and promises of rescue to its customers, which ties the chipmaker's fortunes to theirs.",
+      "examples": [
+        "The school kept an emergency fund as a backstop in case donations dried up.",
+        "Her parents' guarantee was the backstop that let her sign the lease."
+      ]
+    },
+    {
+      "word": "scepticism",
+      "partOfSpeech": "noun",
+      "pronunciation": "SKEP-tih-siz-um",
+      "articleQuote": "any future lobbying by Nvidia’s boss will be met with heavy scepticism",
+      "meaning": "Scepticism is an attitude of doubt: you don't accept a claim until you've seen good evidence. It is not the same as cynicism, which assumes the worst; a sceptic simply asks 'prove it'. A healthy dose is a virtue in science and journalism. The spelling is British; Americans write 'skepticism'. Here the Economist predicts that after the scandal, officials hearing Mr Huang argue for selling chips to China will doubt his motives, however sincere his views have long been.",
+      "examples": [
+        "Her scepticism about the miracle diet vanished only after she saw the lab results.",
+        "The coach greeted the team's sudden winning streak with scepticism."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Key-man risk and the board's job",
+      "articleQuote": "Nvidia would face “considerable key-man risk” if its chief executive were to step down.",
+      "meaning": "The article is about a company whose fate seems tied to one person. Finance has a name for that danger, **key-man risk**: the chance that a business is badly hurt if one irreplaceable person leaves. It is a basic idea in how companies are run and how investors judge them.\n\nStart with who is who. Shareholders own a company, but they don't run it day to day. They elect a **board of directors**, whose main job is to watch over the **chief executive** (the CEO, the boss) and to hire, guide or fire them. When something goes wrong at the top, it is the board that investigates, which is exactly what Nvidia's board announced here.\n\nNow the risk. Some CEOs are so central that investors treat the person and the firm as almost the same thing. Mr Huang has led Nvidia for 33 years, personally won deals for chip manufacturing, and acts as the public face of AI. Two of his children also hold senior jobs, which the article says makes it resemble a **family firm**. If he left, there is no obvious successor, and that gap could scare investors into selling the shares, so the company's value could drop.\n\nCompare a school sports team built around one star. If she is injured, a team with strong backups shrugs it off. A team with none loses everything. Good boards plan for this with a **succession plan**, a named group of people ready to take over.\n\nThe lesson to carry away is that a company that depends heavily on one person is riskier, and the board exists to judge when that person must go."
+    },
+    {
+      "name": "Chip export controls and smuggling",
+      "articleQuote": "when it first suspected that Megaspeed was illegally smuggling Nvidia’s GPUs into China",
+      "meaning": "Behind the scandal is a bigger fight over who is allowed to buy the world's best AI chips. The idea is **export controls**, laws that limit what a country's companies may sell abroad, usually for national security. It is a basic piece of how governments compete in technology.\n\nFirst, what is being controlled. A **GPU** (graphics processing unit) is a chip that does huge numbers of calculations at the same time. That is exactly what training an AI system needs, so a pile of advanced GPUs is a pile of AI power. Nvidia designs the most powerful ones. The article says its chips provide two-thirds of the world's AI computing power.\n\nNow the rule. The US government restricts sales of the most advanced chips to China, on the worry that they could help China's military and spy agencies. The article says these limits have **gutted** (badly damaged) Nvidia's business in China. Mr Huang has lobbied against the limits, arguing that the world's AI should run on American technology.\n\nThat creates a loophole to worry about. If chips can't be sold to China directly, a company elsewhere, such as in Singapore, could buy them and **smuggle** them (move them illegally) onward. The article says American officials first started watching Ms Huang because they suspected her company, Megaspeed, of doing just that.\n\nThink of a store that won't sell certain items to minors. A rule is only as strong as the checks on who really ends up with the goods.\n\nThe lesson to carry away is that chips have become a tool of national power, which is why a personal scandal at a chipmaker quickly turns into a question of national security and politics."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did Nvidia's board say it was investigating?",
+      "options": [
+        "A drop in the company's share price",
+        "Reports that Mr Huang had been the target of a foreign-intelligence effort",
+        "A leak of Nvidia's chip designs to a rival",
+        "Whether Mr Huang had broken Taiwan's export laws"
+      ],
+      "answerIndex": 1,
+      "explanation": "The board launched an investigation into reports that Mr Huang had “been the target of a foreign-intelligence effort”, following allegations of his affair with a suspected Chinese spy."
+    },
+    {
+      "question": "What does 'key-man risk' mean in the article?",
+      "options": [
+        "The danger that a company's secret keys are stolen",
+        "The risk that a business suffers badly if one irreplaceable leader departs",
+        "The chance that a CEO will take too many risks with investors' money",
+        "The risk that a company's board has too many members"
+      ],
+      "answerIndex": 1,
+      "explanation": "Analyst Stacy Rasgon warned of “considerable key-man risk” because it is unclear who could replace Mr Huang if he stepped down."
+    },
+    {
+      "question": "Why did American officials first start watching Ms Huang, according to the article?",
+      "options": [
+        "They suspected her of stealing Nvidia's designs",
+        "They suspected her company, Megaspeed, of illegally smuggling Nvidia's GPUs into China",
+        "She had donated money to a political campaign",
+        "She was seen meeting Chinese officials in Alaska"
+      ],
+      "answerIndex": 1,
+      "explanation": "The government is said to have begun surveillance more than a year ago, when it first suspected that Megaspeed was illegally smuggling Nvidia’s GPUs into China."
+    },
+    {
+      "question": "How did Mr Trump react when asked about the news?",
+      "options": [
+        "He demanded that Mr Huang resign immediately",
+        "He ordered a ban on Nvidia's chip sales",
+        "He appeared to stand by Mr Huang, calling him “an honourable guy”",
+        "He refused to comment at all"
+      ],
+      "answerIndex": 2,
+      "explanation": "Mr Trump appeared to stand by Mr Huang, saying “I think he’s an honourable guy.”"
+    },
+    {
+      "question": "Why does the article say Mr Huang's lobbying for chip sales to China is unlikely to have been shaped by his relationship with Ms Huang?",
+      "options": [
+        "Because he has held the same stance for many years",
+        "Because Congress has already approved the sales",
+        "Because Nvidia's board ordered him to take that position",
+        "Because Ms Huang opposed selling chips to China"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says his stance has been clear for many years, making it less likely that it was shaped by the relationship, though his future lobbying will face heavy scepticism."
+    }
+  ]
+}
