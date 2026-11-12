@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-12",
+  "title": "Despite recent misses, political polling is more accurate than ever",
+  "articleUrl": "https://www.economist.com/international/2026/11/12/despite-recent-misses-political-polling-is-more-accurate-than-ever",
+  "articlePageUrl": "/articles/2026-11-12.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "besetting",
+      "partOfSpeech": "verb (participle)",
+      "pronunciation": "bih-SET-ing",
+      "articleQuote": "That result is all the more remarkable given the methodological challenges besetting pollsters.",
+      "meaning": "To beset someone is to attack or trouble them from every side, so that problems keep coming and there is no easy escape. It started as a word for enemies surrounding a place, and today it is used for difficulties that hem a person or an industry in. Here the Economist is saying that pollsters face a whole crowd of problems at once, from people refusing to answer to paid online panels, and yet their averages still land close to the real result.",
+      "examples": [
+        "She was beset by a bad cold and a pile of unfinished homework all week before the science fair.",
+        "The team was beset by injuries all season, so the coach never got to use the lineup he planned."
+      ]
+    },
+    {
+      "word": "plumped",
+      "partOfSpeech": "verb",
+      "pronunciation": "PLUMPT",
+      "articleQuote": "Respondents who said they had voted for Kamala Harris in 2024 outweighed those who had plumped for Donald Trump by two percentage points.",
+      "meaning": "To plump for something is to choose it decisively, often after weighing a few options. It is an informal, mostly British expression, and it has nothing to do with becoming round or chubby, which is the sense most people know. In this article it simply means that these respondents had picked Trump when they voted, so the surveys were comparing two groups of past voters.",
+      "examples": [
+        "After looking at six menus, my dad plumped for the pizza place again.",
+        "Most of the class plumped for a pool party over a movie night."
+      ]
+    },
+    {
+      "word": "vaunted",
+      "partOfSpeech": "adjective",
+      "pronunciation": "VAWN-tid",
+      "articleQuote": "Some vaunted alternatives, such as social-media monitoring, have never taken off.",
+      "meaning": "Something vaunted is praised and boasted about loudly, often more than it has earned. The word usually carries a hint of doubt, as if the hype might be bigger than the reality. Here the Economist lists methods that people said could replace polls, such as watching social media, and points out that they never caught on, so the praise turned out to be hollow.",
+      "examples": [
+        "The vaunted new video game turned out to be buggy and boring.",
+        "Our school's vaunted lunch menu was just the same pasta with a fancier name."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Random sampling",
+      "articleQuote": "Providing the soup is well-mixed, you need only one spoonful to know how it tastes.",
+      "meaning": "The article starts with a puzzle: how can a poll of about a thousand people tell you what millions think? The answer comes from statistics, and the key is the word **random**. A **sample** is the small group you actually ask. A **population** is the whole group you care about, such as every voter in a country. A **random sample** means every person in the population has an equal chance of being picked, so no kind of person is more likely to end up in the group than another. When that holds, the sample tends to look like the population in miniature, and the more people you ask, the smaller the likely error.\n\nPicture a school of 1,000 students and a question: should lunch be longer? If you pull 100 names out of a hat, the answers will probably land close to what the whole school thinks. If you only ask the 100 students waiting in the cafeteria line, you will get a very different answer, because those students are not typical. That is exactly what went wrong in 1936, when the Literary Digest magazine collected 2.4 million postcards from its own readers and still wrongly predicted that Alf Landon would beat Franklin Roosevelt. The sample was huge, but readers of that magazine were not a random slice of the country.\n\nThe takeaway: how a sample is chosen matters far more than how big it is, so whenever you see a survey result, ask who got asked and who didn't."
+    },
+    {
+      "name": "Survey weighting",
+      "articleQuote": "Rather than randomness, pollsters rely on quotas of different types of respondents and post facto “weights”, which adjust a sample to make it representative of the whole population.",
+      "meaning": "Today only 1 or 2 in 100 people contacted by a pollster agree to answer, so true random samples are nearly impossible. Pollsters patch the gap with **weighting**, a statistics technique that counts some answers for more than others after the data is in. The population's makeup is known from sources such as the census: for example, what share of adults are over 55. If the people who answered include too many older adults, each older respondent's answers are made to count a little less, and each younger respondent's a little more, until the sample's makeup matches the population's.\n\nTry a class of 20 where 10 students are polled about a school dance, but 6 of the 10 who answered are seniors, although seniors are only a quarter of the school. Weighting would shrink the seniors' share of the final result from 60% to 25%, and lift the other students' share to 75%. The article gives a real case: a Léger poll had 60% of its respondents aged 55 or older, and after weighting they made up only 41%.\n\nWeighting only works when you pick the right traits to weight by. In 2016 the New York Times gave four pollsters the same raw Florida data and got four different answers, from Trump ahead by one point to behind by four. The takeaway: a poll's number is partly the data and partly the pollster's choices about how to adjust it, so the method note matters as much as the headline."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did The Economist's analysis of 469 elections in 49 countries find about polling accuracy since 1946?",
+      "options": [
+        "Polls have become much less accurate",
+        "Polls have become slightly more accurate",
+        "Polls have been exactly as accurate every year",
+        "Polls were only accurate before telephones"
+      ],
+      "answerIndex": 1,
+      "explanation": "The analysis found polls have become slightly more accurate, with polling averages within ten days of an election missing by about two points."
+    },
+    {
+      "question": "Why was the Literary Digest's 1936 poll of 2.4 million postcards wrong?",
+      "options": [
+        "The sample was too small",
+        "It asked people after the election",
+        "Its sample was huge but not random",
+        "Nobody returned the postcards"
+      ],
+      "answerIndex": 2,
+      "explanation": "A big sample drawn from the magazine's own readers was not a random slice of the country, so size could not fix the bias."
+    },
+    {
+      "question": "What is the purpose of survey weighting?",
+      "options": [
+        "To make a poll cheaper to run",
+        "To adjust a sample so its makeup matches the whole population",
+        "To remove respondents who vote for the wrong party",
+        "To make the sample larger"
+      ],
+      "answerIndex": 1,
+      "explanation": "Weights count some respondents for more and others for less so the sample looks like the population."
+    },
+    {
+      "question": "According to the article, what helped explain the misses in Brazil's run-off and America's midterms?",
+      "options": [
+        "Pollsters stopped doing surveys",
+        "Voters lied about their favorite colors",
+        "Turnout among one side's voters was higher than pollsters assumed",
+        "Online polls were banned"
+      ],
+      "answerIndex": 2,
+      "explanation": "Lula's supporters in Brazil and Democrats in America turned out in larger numbers than the polls had assumed."
+    },
+    {
+      "question": "In the article, what does it mean that some \"vaunted alternatives\" to polls have never taken off?",
+      "options": [
+        "The alternatives were boasted about but never caught on",
+        "The alternatives were illegal",
+        "The alternatives were more accurate but too expensive",
+        "The alternatives were invented by pollsters"
+      ],
+      "answerIndex": 0,
+      "explanation": "Vaunted means praised or boasted about, so the alternatives got a lot of hype but have not been widely adopted."
+    }
+  ]
+}

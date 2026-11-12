@@ -1,0 +1,1038 @@
+[
+  {
+    "k": "besetting",
+    "t": "besetting",
+    "kind": "vocab",
+    "pron": "bih-SET-ing",
+    "forms": [
+      "besetting"
+    ],
+    "text": "To beset someone is to attack or trouble them from every side, so that problems keep coming and there is no easy escape. It started as a word for enemies surrounding a place. Here it means that pollsters face a crowd of methodological problems at once, yet their averages still land close to the real result.",
+    "audio": true
+  },
+  {
+    "k": "plumped",
+    "t": "plumped",
+    "kind": "vocab",
+    "pron": "PLUMPT",
+    "forms": [
+      "plumped"
+    ],
+    "text": "To plump for something is to choose it decisively, often after weighing a few options. It is an informal, mostly British expression with nothing to do with becoming round. Here it means the respondents had picked Trump when they voted.",
+    "audio": true
+  },
+  {
+    "k": "vaunted",
+    "t": "vaunted",
+    "kind": "vocab",
+    "pron": "VAWN-tid",
+    "forms": [
+      "vaunted"
+    ],
+    "text": "Something vaunted is praised and boasted about loudly, often more than it has earned, and the word hints that the hype may be bigger than the reality. Here the alternatives to polls were hyped as replacements but never caught on.",
+    "audio": true
+  },
+  {
+    "k": "polling",
+    "t": "polling",
+    "kind": "word",
+    "forms": [
+      "polling",
+      "pollsters",
+      "pollster",
+      "polls",
+      "poll"
+    ],
+    "text": "Polling means asking a sample of people their opinion in order to estimate what a whole group thinks. A pollster is the person or firm that runs the surveys. In this article the polls are the election surveys whose accuracy is being judged.",
+    "audio": true
+  },
+  {
+    "k": "soundings",
+    "t": "soundings",
+    "kind": "word",
+    "forms": [
+      "soundings"
+    ],
+    "text": "A sounding was originally a measurement of how deep water is, taken by lowering a weighted line from a ship. It came to mean any test of opinion or conditions. Here it means AtlasIntel's polls of American voters.",
+    "audio": true
+  },
+  {
+    "k": "muses",
+    "t": "muses",
+    "kind": "word",
+    "forms": [
+      "muses"
+    ],
+    "text": "To muse is to say something thoughtfully, half to yourself, while thinking it over. It suggests a quiet, reflective remark rather than a firm statement.",
+    "audio": true
+  },
+  {
+    "k": "gloom",
+    "t": "gloom",
+    "kind": "word",
+    "forms": [
+      "gloom"
+    ],
+    "text": "Gloom is a mood of sadness and pessimism, like a dark, dim room. Here Mr Roman is pessimistic about how hard election polling has become.",
+    "audio": true
+  },
+  {
+    "k": "endeavours",
+    "t": "endeavours",
+    "kind": "word",
+    "forms": [
+      "endeavours"
+    ],
+    "text": "An endeavour is a serious attempt or an activity someone works hard at. The word is the British spelling of endeavor. Here election polling is called one of humanity's less celebrated endeavours.",
+    "audio": true
+  },
+  {
+    "k": "spot-on",
+    "t": "spot on",
+    "kind": "phrase",
+    "forms": [
+      "spot on"
+    ],
+    "text": "Spot on is an informal British phrase meaning exactly right. AtlasIntel's American polls hit the real result precisely.",
+    "audio": true
+  },
+  {
+    "k": "underestimated",
+    "t": "underestimated",
+    "kind": "word",
+    "forms": [
+      "underestimated"
+    ],
+    "text": "To underestimate is to guess something is smaller or weaker than it really is. Here most pollsters thought Democratic support was lower than it turned out to be.",
+    "audio": true
+  },
+  {
+    "k": "incumbent",
+    "t": "incumbent",
+    "kind": "word",
+    "forms": [
+      "incumbent"
+    ],
+    "text": "An incumbent is someone who already holds an office and is trying to keep it. Here Lula was Brazil's sitting president running again.",
+    "audio": true
+  },
+  {
+    "k": "run-off",
+    "t": "run-off",
+    "kind": "name",
+    "forms": [
+      "run-off"
+    ],
+    "text": "A run-off is a second round of voting between the top two candidates when nobody wins a majority the first time. Brazil's presidential election works this way.",
+    "audio": true
+  },
+  {
+    "k": "methodological",
+    "t": "methodological",
+    "kind": "word",
+    "forms": [
+      "methodological",
+      "methodologically"
+    ],
+    "text": "Methodological means having to do with the methods used to do a study or an experiment. Here it is about how pollsters pick and adjust their samples.",
+    "audio": true
+  },
+  {
+    "k": "mean-error",
+    "t": "mean error",
+    "kind": "name",
+    "forms": [
+      "mean error"
+    ],
+    "text": "Mean error is the average size of the mistakes. A mean error of two percentage points means that, on average, the poll's number was two points away from the real vote share.",
+    "audio": true
+  },
+  {
+    "k": "percentage-points",
+    "t": "percentage points",
+    "kind": "name",
+    "forms": [
+      "percentage points",
+      "percentage point"
+    ],
+    "text": "A percentage point is one unit on a percent scale, so going from 40% to 42% is a rise of two percentage points. It is not the same as a 2% change, which would be relative to the starting number.",
+    "audio": true
+  },
+  {
+    "k": "celestial",
+    "t": "celestial",
+    "kind": "word",
+    "forms": [
+      "Celestial"
+    ],
+    "text": "Celestial means having to do with the sky, stars, or heaven. It is used here in a headline pun on the idea of polls reading the stars.",
+    "audio": true
+  },
+  {
+    "k": "alternatives",
+    "t": "alternatives",
+    "kind": "word",
+    "forms": [
+      "alternatives"
+    ],
+    "text": "Alternatives are other options you could choose instead. Here they are other ways to predict elections besides polling, such as watching social media.",
+    "audio": true
+  },
+  {
+    "k": "sample",
+    "t": "sample",
+    "kind": "word",
+    "forms": [
+      "sample",
+      "samples"
+    ],
+    "text": "A sample is the small group you actually ask, chosen to stand in for a bigger group. A good poll depends on the sample resembling the whole population.",
+    "audio": true
+  },
+  {
+    "k": "random",
+    "t": "random",
+    "kind": "word",
+    "forms": [
+      "random",
+      "randomness"
+    ],
+    "text": "In statistics, random means that every person in the population has an equal chance of being picked, with no pattern in who ends up in the sample. It does not mean careless.",
+    "audio": true
+  },
+  {
+    "k": "population",
+    "t": "population",
+    "kind": "word",
+    "forms": [
+      "population"
+    ],
+    "text": "In statistics a population is the whole group you care about, such as every voter in a country, as opposed to the sample drawn from it.",
+    "audio": true
+  },
+  {
+    "k": "likened",
+    "t": "likened",
+    "kind": "word",
+    "forms": [
+      "likened"
+    ],
+    "text": "To liken one thing to another is to compare them. Gallup compared polling to tasting soup.",
+    "audio": true
+  },
+  {
+    "k": "well-mixed",
+    "t": "well-mixed",
+    "kind": "word",
+    "forms": [
+      "well-mixed"
+    ],
+    "text": "A well-mixed soup tastes the same in every spoonful. The comparison says a random sample works the same way: a small piece represents the whole.",
+    "audio": true
+  },
+  {
+    "k": "inferred",
+    "t": "inferred",
+    "kind": "word",
+    "forms": [
+      "inferred"
+    ],
+    "text": "To infer is to reach a conclusion from evidence rather than being told it directly. The magazine concluded Landon would win from the postcards.",
+    "audio": true
+  },
+  {
+    "k": "landslide",
+    "t": "landslide",
+    "kind": "word",
+    "forms": [
+      "landslide"
+    ],
+    "text": "A landslide is literally a mass of earth sliding down a hill. In politics it means winning an election by a very large margin.",
+    "audio": true
+  },
+  {
+    "k": "reinventions",
+    "t": "reinventions",
+    "kind": "word",
+    "forms": [
+      "reinventions"
+    ],
+    "text": "A reinvention is a complete remake of how something is done. Polling has changed its methods several times to keep up.",
+    "audio": true
+  },
+  {
+    "k": "waned",
+    "t": "waned",
+    "kind": "word",
+    "forms": [
+      "waned"
+    ],
+    "text": "To wane is to gradually become weaker or smaller, as the moon does after it is full. Here voters have become less willing to talk to pollsters.",
+    "audio": true
+  },
+  {
+    "k": "response-rate",
+    "t": "response rate",
+    "kind": "name",
+    "forms": [
+      "response rate"
+    ],
+    "text": "The response rate is the share of people contacted for a survey who actually answer. It has fallen from about 50% to 1-2%, which makes random sampling very hard.",
+    "audio": true
+  },
+  {
+    "k": "recalls",
+    "t": "recalls",
+    "kind": "word",
+    "forms": [
+      "recalls"
+    ],
+    "text": "To recall is to remember. Mr Rivers is remembering how things were when he started his career.",
+    "audio": true
+  },
+  {
+    "k": "self-selected",
+    "t": "self-selected",
+    "kind": "word",
+    "forms": [
+      "self-selected"
+    ],
+    "text": "Self-selected means the people chose to join on their own rather than being picked at random. That makes them different from the general public, since only certain kinds of people volunteer.",
+    "audio": true
+  },
+  {
+    "k": "panels",
+    "t": "panels",
+    "kind": "word",
+    "forms": [
+      "panels"
+    ],
+    "text": "A panel is a standing group of people who have agreed to answer surveys again and again, often for a small payment. Most online polls use them.",
+    "audio": true
+  },
+  {
+    "k": "quotas",
+    "t": "quotas",
+    "kind": "word",
+    "forms": [
+      "quotas"
+    ],
+    "text": "A quota is a fixed number or share that must be filled. In polling it means making sure the sample contains set numbers of each type of person, such as young and old.",
+    "audio": true
+  },
+  {
+    "k": "weights",
+    "t": "weights",
+    "kind": "word",
+    "forms": [
+      "weights",
+      "weighting"
+    ],
+    "text": "Weights are numbers that make some respondents' answers count for more or less so the sample matches the whole population. Weighting is the process of applying them.",
+    "audio": true
+  },
+  {
+    "k": "post-facto",
+    "t": "post facto",
+    "kind": "phrase",
+    "forms": [
+      "post facto"
+    ],
+    "text": "Post facto is Latin for after the fact. Here the adjustments are made after the survey data is collected, not before.",
+    "audio": true
+  },
+  {
+    "k": "representative",
+    "t": "representative",
+    "kind": "word",
+    "forms": [
+      "representative"
+    ],
+    "text": "A representative sample has the same mix of people as the whole population, so what it says applies to everyone.",
+    "audio": true
+  },
+  {
+    "k": "far-cry",
+    "t": "a far cry from",
+    "kind": "phrase",
+    "forms": [
+      "a far cry from"
+    ],
+    "text": "A far cry from is a set phrase meaning very different from something. Here the weighted sample is very different from the ideal of random sampling.",
+    "audio": true
+  },
+  {
+    "k": "conspiracy-theories",
+    "t": "conspiracy theories",
+    "kind": "name",
+    "forms": [
+      "conspiracy theories"
+    ],
+    "text": "A conspiracy theory is a belief that a secret group is behind events. Some people claim pollsters rig results on purpose, which the article says makes no sense.",
+    "audio": true
+  },
+  {
+    "k": "fumble",
+    "t": "fumble",
+    "kind": "word",
+    "forms": [
+      "fumble"
+    ],
+    "text": "To fumble is to handle something clumsily and drop it, as with a football. Here it means getting an election prediction badly wrong.",
+    "audio": true
+  },
+  {
+    "k": "publicity",
+    "t": "publicity",
+    "kind": "word",
+    "forms": [
+      "publicity"
+    ],
+    "text": "Publicity is public attention and visibility. Election polls give pollsters free publicity that helps them sell other research.",
+    "audio": true
+  },
+  {
+    "k": "revenue",
+    "t": "revenue",
+    "kind": "word",
+    "forms": [
+      "revenue"
+    ],
+    "text": "Revenue is the money a business takes in from selling its goods or services before costs are subtracted.",
+    "audio": true
+  },
+  {
+    "k": "raw-data",
+    "t": "raw data",
+    "kind": "name",
+    "forms": [
+      "raw data"
+    ],
+    "text": "Raw data is information as it was first collected, before anyone has cleaned or adjusted it.",
+    "audio": true
+  },
+  {
+    "k": "whack-a-mole",
+    "t": "whack-a-mole",
+    "kind": "phrase",
+    "forms": [
+      "whack-a-mole"
+    ],
+    "text": "Whack-a-mole is an arcade game where you hit moles that pop up from holes, and as soon as you hit one another appears. It describes a problem that keeps reappearing in a new place after you fix it. Here polling firms fix last election's mistakes only to face new ones.",
+    "audio": true
+  },
+  {
+    "k": "non-response-bias",
+    "t": "non-response bias",
+    "kind": "name",
+    "forms": [
+      "non-response bias"
+    ],
+    "text": "Non-response bias is a distortion that arises when the people who refuse to answer a survey differ in their views from those who do answer, so the results lean one way.",
+    "audio": true
+  },
+  {
+    "k": "lean",
+    "t": "lean",
+    "kind": "word",
+    "forms": [
+      "lean"
+    ],
+    "text": "To lean in a direction means to tend toward it. Here people who skip polls tend toward one side of politics.",
+    "audio": true
+  },
+  {
+    "k": "centre-left",
+    "t": "centre-left",
+    "kind": "name",
+    "forms": [
+      "centre-left"
+    ],
+    "text": "Centre-left describes politics somewhat left of the middle, such as moderate Democrats in America or social democrats in Europe.",
+    "audio": true
+  },
+  {
+    "k": "overestimate",
+    "t": "overestimate",
+    "kind": "word",
+    "forms": [
+      "overestimate"
+    ],
+    "text": "To overestimate is to judge something to be bigger or stronger than it really is. Here polls made left-wing parties look stronger than they were.",
+    "audio": true
+  },
+  {
+    "k": "compounded",
+    "t": "compounded",
+    "kind": "word",
+    "forms": [
+      "compounded"
+    ],
+    "text": "To compound a problem is to make it worse by adding to it. Here Republican scepticism added to an existing bias in polls.",
+    "audio": true
+  },
+  {
+    "k": "scepticism",
+    "t": "scepticism",
+    "kind": "word",
+    "forms": [
+      "scepticism",
+      "sceptical"
+    ],
+    "text": "Scepticism is a habit of doubting claims until there is good evidence for them. Here it describes Republican distrust of universities and the media.",
+    "audio": true
+  },
+  {
+    "k": "commission",
+    "t": "commission",
+    "kind": "word",
+    "forms": [
+      "commission"
+    ],
+    "text": "To commission something is to pay someone to produce it for you. Universities and news outlets commission polls from survey firms.",
+    "audio": true
+  },
+  {
+    "k": "representative-of",
+    "t": "underrepresented",
+    "kind": "word",
+    "forms": [
+      "underrepresented"
+    ],
+    "text": "Underrepresented means present in smaller numbers than in the real population. Republicans were too few among respondents.",
+    "audio": true
+  },
+  {
+    "k": "bagging",
+    "t": "bagging",
+    "kind": "word",
+    "forms": [
+      "bagging"
+    ],
+    "text": "To bag something is to grab or win it, usually a reward. Some online respondents click through surveys only to collect the payment.",
+    "audio": true
+  },
+  {
+    "k": "weed-out",
+    "t": "weed out",
+    "kind": "phrase",
+    "forms": [
+      "weed out"
+    ],
+    "text": "To weed out is to find and remove what does not belong, like pulling weeds from a garden. Here it means removing careless survey-takers.",
+    "audio": true
+  },
+  {
+    "k": "innovating",
+    "t": "innovating",
+    "kind": "word",
+    "forms": [
+      "innovating"
+    ],
+    "text": "To innovate is to come up with new methods. Both the pollsters and the fake respondents keep inventing new tricks.",
+    "audio": true
+  },
+  {
+    "k": "modelling",
+    "t": "modelling",
+    "kind": "word",
+    "forms": [
+      "modelling"
+    ],
+    "text": "Statistical modelling means building a mathematical description of how things relate, so you can estimate numbers you could not measure directly.",
+    "audio": true
+  },
+  {
+    "k": "collaboration",
+    "t": "collaboration",
+    "kind": "word",
+    "forms": [
+      "collaboration"
+    ],
+    "text": "A collaboration is work done jointly by two or more groups, here a newspaper and a college.",
+    "audio": true
+  },
+  {
+    "k": "demographic",
+    "t": "demographic",
+    "kind": "word",
+    "forms": [
+      "demographic"
+    ],
+    "text": "A demographic is a group of people defined by traits such as age, race, income, or education.",
+    "audio": true
+  },
+  {
+    "k": "ideologically",
+    "t": "ideologically",
+    "kind": "word",
+    "forms": [
+      "ideologically"
+    ],
+    "text": "Ideologically means in terms of a person's political beliefs, such as how far left or right they sit.",
+    "audio": true
+  },
+  {
+    "k": "energy-balancing",
+    "t": "energy balancing",
+    "kind": "name",
+    "forms": [
+      "energy balancing"
+    ],
+    "text": "Energy balancing is a statistical method that adjusts a sample by how unusual each person's whole combination of traits is, instead of correcting one trait at a time.",
+    "audio": true
+  },
+  {
+    "k": "bias",
+    "t": "bias",
+    "kind": "word",
+    "forms": [
+      "bias"
+    ],
+    "text": "Bias is a consistent tilt in one direction. In polling it means the errors lean the same way every time instead of canceling out.",
+    "audio": true
+  },
+  {
+    "k": "mobilisation",
+    "t": "mobilisation",
+    "kind": "word",
+    "forms": [
+      "Mobilisation"
+    ],
+    "text": "Mobilisation means getting supporters organised and energised to actually act, here by showing up to vote.",
+    "audio": true
+  },
+  {
+    "k": "energised",
+    "t": "energised",
+    "kind": "word",
+    "forms": [
+      "energised"
+    ],
+    "text": "To be energised is to feel motivated and excited to act. Lula's supporters became eager to vote after the first round.",
+    "audio": true
+  },
+  {
+    "k": "turnout",
+    "t": "turnout",
+    "kind": "word",
+    "forms": [
+      "turnout"
+    ],
+    "text": "Turnout is the share of eligible people who actually vote. Polls often get it wrong, because intentions differ from actions.",
+    "audio": true
+  },
+  {
+    "k": "municipalities",
+    "t": "municipalities",
+    "kind": "word",
+    "forms": [
+      "municipalities"
+    ],
+    "text": "A municipality is a local government area such as a city or town.",
+    "audio": true
+  },
+  {
+    "k": "plumped-for",
+    "t": "outweighed",
+    "kind": "word",
+    "forms": [
+      "outweighed"
+    ],
+    "text": "To outweigh something is to be greater in size or importance. Here Harris voters outnumbered Trump voters in the polls' samples.",
+    "audio": true
+  },
+  {
+    "k": "adjustment",
+    "t": "adjustment",
+    "kind": "word",
+    "forms": [
+      "adjustment"
+    ],
+    "text": "An adjustment is a small change made to improve a result. Here pollsters tweak their numbers to reflect who will probably vote.",
+    "audio": true
+  },
+  {
+    "k": "retrospectively",
+    "t": "retrospectively",
+    "kind": "word",
+    "forms": [
+      "retrospectively"
+    ],
+    "text": "Retrospectively means looking back at something after it has happened and applying what is now known.",
+    "audio": true
+  },
+  {
+    "k": "exit-polls",
+    "t": "exit polls",
+    "kind": "name",
+    "forms": [
+      "exit polls"
+    ],
+    "text": "Exit polls are surveys of voters taken as they leave polling stations on election day, used to estimate who voted and how.",
+    "audio": true
+  },
+  {
+    "k": "electorate",
+    "t": "electorate",
+    "kind": "word",
+    "forms": [
+      "electorate"
+    ],
+    "text": "The electorate is everyone who is eligible to vote in an election, or those who actually did.",
+    "audio": true
+  },
+  {
+    "k": "bluer",
+    "t": "bluer",
+    "kind": "word",
+    "forms": [
+      "bluer"
+    ],
+    "text": "In American politics blue stands for the Democratic Party and red for Republicans, so a bluer electorate leaned more Democratic.",
+    "audio": true
+  },
+  {
+    "k": "blue-wave",
+    "t": "blue wave",
+    "kind": "phrase",
+    "forms": [
+      "blue wave"
+    ],
+    "text": "A blue wave is an election in which the Democratic Party gains a lot of seats, since blue is the Democrats' color.",
+    "audio": true
+  },
+  {
+    "k": "deep-red",
+    "t": "deep-red",
+    "kind": "phrase",
+    "forms": [
+      "deep-red"
+    ],
+    "text": "A deep-red state is one that very reliably votes Republican, since red is the Republican color.",
+    "audio": true
+  },
+  {
+    "k": "galvanise",
+    "t": "galvanise",
+    "kind": "word",
+    "forms": [
+      "galvanise"
+    ],
+    "text": "To galvanise people is to shock them into action, as if with a jolt. Here it means a right-wing candidate would stir up centre-left voters to turn out.",
+    "audio": true
+  },
+  {
+    "k": "polarising",
+    "t": "polarising",
+    "kind": "word",
+    "forms": [
+      "polarising",
+      "polarising"
+    ],
+    "text": "A polarising figure is someone who splits opinion sharply, with people either loving or hating them.",
+    "audio": true
+  },
+  {
+    "k": "populist",
+    "t": "populist",
+    "kind": "word",
+    "forms": [
+      "populist-right",
+      "populist"
+    ],
+    "text": "A populist politician claims to speak for ordinary people against the elite. Populist-right parties pair this with nationalist, anti-immigration views.",
+    "audio": true
+  },
+  {
+    "k": "national-rally",
+    "t": "National Rally",
+    "kind": "name",
+    "forms": [
+      "National Rally"
+    ],
+    "text": "The National Rally is a French populist-right party led by Marine Le Pen.",
+    "audio": true
+  },
+  {
+    "k": "hypothetical",
+    "t": "hypothetical",
+    "kind": "word",
+    "forms": [
+      "hypothetical"
+    ],
+    "text": "Hypothetical means imagined rather than real. A hypothetical poll asks what people would do in a matchup that has not happened.",
+    "audio": true
+  },
+  {
+    "k": "soundly",
+    "t": "soundly",
+    "kind": "word",
+    "forms": [
+      "soundly"
+    ],
+    "text": "To defeat someone soundly is to beat them clearly and by a wide margin.",
+    "audio": true
+  },
+  {
+    "k": "firebrand",
+    "t": "firebrand",
+    "kind": "word",
+    "forms": [
+      "firebrand"
+    ],
+    "text": "A firebrand is a passionate politician who stirs up strong emotions, like a burning stick that starts fires.",
+    "audio": true
+  },
+  {
+    "k": "foil",
+    "t": "foil",
+    "kind": "word",
+    "forms": [
+      "foil"
+    ],
+    "text": "To foil someone is to stop their plan from succeeding. Here voters would turn out to block Le Pen.",
+    "audio": true
+  },
+  {
+    "k": "overcorrected",
+    "t": "overcorrected",
+    "kind": "word",
+    "forms": [
+      "overcorrected"
+    ],
+    "text": "To overcorrect is to fix a mistake so strongly that you create a new error in the opposite direction.",
+    "audio": true
+  },
+  {
+    "k": "escape-artist",
+    "t": "escape-artist",
+    "kind": "phrase",
+    "forms": [
+      "escape-artist"
+    ],
+    "text": "An escape artist is a performer who gets out of locked chains and boxes. Here it describes a politician who keeps winning when it seems he will lose.",
+    "audio": true
+  },
+  {
+    "k": "poll-defying",
+    "t": "poll-defying",
+    "kind": "word",
+    "forms": [
+      "poll-defying"
+    ],
+    "text": "Poll-defying means doing better than the polls predicted.",
+    "audio": true
+  },
+  {
+    "k": "cling-to-power",
+    "t": "cling to power",
+    "kind": "phrase",
+    "forms": [
+      "cling to power"
+    ],
+    "text": "To cling to power is to hold onto office with difficulty, when it looks like you are about to lose it.",
+    "audio": true
+  },
+  {
+    "k": "cobble-together",
+    "t": "cobble together",
+    "kind": "phrase",
+    "forms": [
+      "cobble together"
+    ],
+    "text": "To cobble something together is to put it together quickly and roughly from whatever pieces are available.",
+    "audio": true
+  },
+  {
+    "k": "coalition",
+    "t": "coalition",
+    "kind": "word",
+    "forms": [
+      "coalition"
+    ],
+    "text": "A coalition is an alliance of several political parties that join forces to form a government when none wins a majority alone.",
+    "audio": true
+  },
+  {
+    "k": "regionalist",
+    "t": "regionalist",
+    "kind": "word",
+    "forms": [
+      "regionalist"
+    ],
+    "text": "Regionalist parties put the interests of one region, such as Catalonia or the Basque Country, ahead of national politics.",
+    "audio": true
+  },
+  {
+    "k": "take-a-tumble",
+    "t": "taken a tumble",
+    "kind": "phrase",
+    "forms": [
+      "taken a tumble"
+    ],
+    "text": "To take a tumble is to fall suddenly, here meaning the parties lost support.",
+    "audio": true
+  },
+  {
+    "k": "gained-ground",
+    "t": "gained ground",
+    "kind": "phrase",
+    "forms": [
+      "gained ground"
+    ],
+    "text": "To gain ground is to make progress or become more popular.",
+    "audio": true
+  },
+  {
+    "k": "preclude",
+    "t": "preclude",
+    "kind": "word",
+    "forms": [
+      "preclude"
+    ],
+    "text": "To preclude something is to make it impossible or prevent it from happening.",
+    "audio": true
+  },
+  {
+    "k": "pitfalls",
+    "t": "pitfalls",
+    "kind": "word",
+    "forms": [
+      "pitfalls"
+    ],
+    "text": "A pitfall is a hidden danger or difficulty. It comes from a trap pit dug in the ground.",
+    "audio": true
+  },
+  {
+    "k": "forgivable",
+    "t": "forgivable",
+    "kind": "word",
+    "forms": [
+      "forgivable"
+    ],
+    "text": "Forgivable means able to be excused. The Economist argues that missing a big wave rather than two is understandable.",
+    "audio": true
+  },
+  {
+    "k": "pundits",
+    "t": "pundits",
+    "kind": "word",
+    "forms": [
+      "pundits"
+    ],
+    "text": "A pundit is an expert or commentator who gives opinions in the media, especially about politics.",
+    "audio": true
+  },
+  {
+    "k": "infamous",
+    "t": "infamous",
+    "kind": "word",
+    "forms": [
+      "infamous"
+    ],
+    "text": "Infamous means famous for something bad. It is different from famous, which is neutral or good.",
+    "audio": true
+  },
+  {
+    "k": "referendum",
+    "t": "referendum",
+    "kind": "name",
+    "forms": [
+      "referendum"
+    ],
+    "text": "A referendum is a direct public vote on one question, such as whether Britain should leave the European Union.",
+    "audio": true
+  },
+  {
+    "k": "prediction-markets",
+    "t": "prediction markets",
+    "kind": "name",
+    "forms": [
+      "prediction markets",
+      "prediction-market"
+    ],
+    "text": "A prediction market is a site where people bet money on the outcome of future events, and the prices are read as probabilities.",
+    "audio": true
+  },
+  {
+    "k": "whale",
+    "t": "whale",
+    "kind": "word",
+    "forms": [
+      "whale"
+    ],
+    "text": "In betting and trading, a whale is a single person with so much money that their bets can move the market.",
+    "audio": true
+  },
+  {
+    "k": "contextualise",
+    "t": "contextualise",
+    "kind": "word",
+    "forms": [
+      "contextualise"
+    ],
+    "text": "To contextualise something is to explain the background around it so people understand it better.",
+    "audio": true
+  },
+  {
+    "k": "scrutiny",
+    "t": "scrutiny",
+    "kind": "word",
+    "forms": [
+      "scrutiny"
+    ],
+    "text": "Scrutiny is careful, critical examination. More published detail lets outsiders check whether a poll is trustworthy.",
+    "audio": true
+  },
+  {
+    "k": "cowboy",
+    "t": "cowboy pollsters",
+    "kind": "phrase",
+    "forms": [
+      "cowboy pollsters"
+    ],
+    "text": "A cowboy is slang for a careless or unqualified operator who cuts corners, so cowboy pollsters are sloppy and unreliable.",
+    "audio": true
+  },
+  {
+    "k": "herding",
+    "t": "herding",
+    "kind": "word",
+    "forms": [
+      "herding"
+    ],
+    "text": "In polling, herding is when firms quietly nudge their results toward what other polls show, out of fear of standing alone and being wrong. It makes polls look more alike than the real data would.",
+    "audio": true
+  },
+  {
+    "k": "out-on-a-limb",
+    "t": "go out on a limb",
+    "kind": "phrase",
+    "forms": [
+      "go out on a limb"
+    ],
+    "text": "To go out on a limb is to take a risk by holding a position that few others share, like crawling onto a thin tree branch.",
+    "audio": true
+  },
+  {
+    "k": "infallible",
+    "t": "infallible",
+    "kind": "word",
+    "forms": [
+      "infallible"
+    ],
+    "text": "Infallible means incapable of making mistakes. The article ends by saying polls are good but not perfect.",
+    "audio": true
+  },
+  {
+    "k": "imperfections",
+    "t": "imperfections",
+    "kind": "word",
+    "forms": [
+      "imperfections"
+    ],
+    "text": "An imperfection is a flaw or weakness.",
+    "audio": true
+  }
+]
