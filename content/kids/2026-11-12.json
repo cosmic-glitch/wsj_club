@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-12",
+  "title": "A robot finds 57 new sea animals",
+  "articleUrl": "https://www.timeforkids.com/g34/canyon-creatures-g3/",
+  "articlePageUrl": "/articles/kids/2026-11-12.html",
+  "voiceQuiz": true,
+  "source": "TIME for Kids",
+  "vocab": [
+    {
+      "word": "expedition",
+      "partOfSpeech": "noun",
+      "pronunciation": "ek-spuh-DISH-un",
+      "articleQuote": "He led the expedition’s science team, which was run by the Schmidt Ocean Institute.",
+      "meaning": "An expedition is a trip with a goal. People go on one to explore a place or to find something out. In the article, the expedition is the trip the scientists took on their ship, to send a robot down to the bottom of an ocean canyon.",
+      "examples": [
+        "Our class went on an expedition to the creek to look for frogs.",
+        "The team packed food, maps, and warm coats for their expedition up the mountain."
+      ]
+    },
+    {
+      "word": "examine",
+      "partOfSpeech": "verb",
+      "pronunciation": "ig-ZAM-in",
+      "articleQuote": "About a year later, a team of scientists examined the mission’s findings.",
+      "meaning": "To examine something means to look at it very carefully so you can learn about it. You check every part, one by one. In the article, scientists examined the animals the robot brought back, to find out if any of them were new.",
+      "examples": [
+        "The doctor examined my sore arm to see if it was hurt.",
+        "I examined the leaf with a magnifying glass and saw tiny lines all over it."
+      ]
+    },
+    {
+      "word": "transparent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "trans-PAIR-unt",
+      "articleQuote": "It’s almost transparent.",
+      "meaning": "Something transparent is clear, so you can see through it, like a window or a glass of water. In the article, one of the new sea cucumbers is almost transparent, so you can nearly see right through its body.",
+      "examples": [
+        "We keep our crayons in a transparent box so we can see which colors are inside.",
+        "The jellyfish was so transparent that it was hard to spot in the water."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Species",
+      "articleQuote": "To learn whether an animal is a new discovery, he compares its shape and body parts to those of every known species.",
+      "meaning": "The robot found 57 kinds of animals that no person had ever seen before. Scientists call each kind of living thing a species. Sorting living things into species is a big part of biology, the science of living things.\n\nAnimals of the same species look alike and can have babies together. All house cats are one species. All lions are another species. A house cat and a lion are both cats, but they are two different species.\n\nHow do scientists know a species is new? They look closely at an animal's shape, its color, and each of its body parts. Then they compare it to every species that people already know about. If it does not match any of them, it is a new species. The scientists write a report about it and give it an official name.\n\nSo when you hear that scientists found a new species, it means a kind of living thing that nobody had ever described before."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What was SuBastian?",
+      "options": [
+        "A robot that went down to the bottom of the ocean",
+        "The captain of the research ship",
+        "A new kind of sea star",
+        "A cartoon character"
+      ],
+      "answerIndex": 0,
+      "explanation": "SuBastian was a robot that carried cameras down to the bottom of an ocean canyon."
+    },
+    {
+      "question": "Why did the orange sea star become famous?",
+      "options": [
+        "It was the biggest animal the robot found",
+        "People watching online thought it looked like Patrick Star from SpongeBob",
+        "It was a brand-new species",
+        "It could glow in the dark"
+      ],
+      "answerIndex": 1,
+      "explanation": "Viewers watching the live video said it looked just like Patrick Star, even though it was not a new species."
+    },
+    {
+      "question": "One new sea cucumber is \"almost transparent.\" What does that mean?",
+      "options": [
+        "It is very heavy",
+        "It can swim very fast",
+        "You can almost see right through it",
+        "It is bright orange"
+      ],
+      "answerIndex": 2,
+      "explanation": "Transparent means clear, so you can see through it, like a window."
+    },
+    {
+      "question": "How do scientists find out if an animal is a new species?",
+      "options": [
+        "They ask people online to vote",
+        "They check if it lives deeper than the Grand Canyon",
+        "They only count how many legs it has",
+        "They compare its shape and body parts to every species people already know"
+      ],
+      "answerIndex": 3,
+      "explanation": "If an animal does not match any species people already know, it is a new species."
+    },
+    {
+      "question": "Why is \"Loki\" not the sea cucumber's official name yet?",
+      "options": [
+        "Scientists must first write a report about it, and that can take months or years",
+        "Sea cucumbers are not allowed to have names",
+        "Nobody liked the name Loki",
+        "The robot forgot to name it"
+      ],
+      "answerIndex": 0,
+      "explanation": "Every new species needs an official name, and scientists choose it only after they finish their report."
+    }
+  ]
+}

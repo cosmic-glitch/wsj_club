@@ -1,0 +1,455 @@
+[
+  {
+    "k": "expedition",
+    "t": "expedition",
+    "kind": "vocab",
+    "pron": "ek-spuh-DISH-un",
+    "forms": [
+      "expedition"
+    ],
+    "text": "An expedition is a trip with a goal, like exploring a place or finding something out. This expedition was a trip on a ship to send a robot to the bottom of the ocean.",
+    "audio": true
+  },
+  {
+    "k": "examine",
+    "t": "examined",
+    "kind": "vocab",
+    "pron": "ig-ZAM-in",
+    "forms": [
+      "examined"
+    ],
+    "text": "To examine something is to look at it very carefully to learn about it. The scientists examined the animals to see if any were new.",
+    "audio": true
+  },
+  {
+    "k": "transparent",
+    "t": "transparent",
+    "kind": "vocab",
+    "pron": "trans-PAIR-unt",
+    "forms": [
+      "transparent"
+    ],
+    "text": "Transparent means clear, so you can see through it, like a window. This sea cucumber is almost clear, so you can nearly see through its body.",
+    "audio": true
+  },
+  {
+    "k": "research-ship",
+    "t": "research ship",
+    "kind": "phrase",
+    "forms": [
+      "research ship"
+    ],
+    "text": "A research ship is a boat built for science. Scientists live and work on it while they study the ocean.",
+    "audio": true
+  },
+  {
+    "k": "remotely-operated-vehicle",
+    "t": "remotely operated vehicle",
+    "kind": "name",
+    "forms": [
+      "remotely operated vehicle"
+    ],
+    "text": "A remotely operated vehicle is a machine that people drive from far away. Nobody rides inside it. People on the ship steered SuBastian with controls connected to it by a long cable.",
+    "audio": true
+  },
+  {
+    "k": "subastian",
+    "t": "SuBastian",
+    "kind": "name",
+    "forms": [
+      "SuBastian"
+    ],
+    "text": "SuBastian is the name of the underwater robot. It carried cameras and arms down to the seafloor.",
+    "audio": true
+  },
+  {
+    "k": "canyon",
+    "t": "canyon",
+    "kind": "word",
+    "forms": [
+      "Canyon",
+      "canyon"
+    ],
+    "text": "A canyon is a deep valley with steep sides, like a giant crack in the ground. This canyon is under the ocean.",
+    "audio": true
+  },
+  {
+    "k": "grand-canyon",
+    "t": "Grand Canyon",
+    "kind": "name",
+    "forms": [
+      "Grand Canyon"
+    ],
+    "text": "The Grand Canyon is a famous, very deep canyon in Arizona, in the United States. The canyon under the ocean is more than twice as deep.",
+    "audio": true
+  },
+  {
+    "k": "argentina",
+    "t": "Argentina",
+    "kind": "name",
+    "forms": [
+      "Argentina",
+      "Argentine"
+    ],
+    "text": "Argentina is a country in South America. Its coast is on the Atlantic Ocean.",
+    "audio": true
+  },
+  {
+    "k": "atlantic-ocean",
+    "t": "Atlantic Ocean",
+    "kind": "name",
+    "forms": [
+      "Atlantic Ocean"
+    ],
+    "text": "The Atlantic Ocean is the big ocean between the Americas on one side and Europe and Africa on the other.",
+    "audio": true
+  },
+  {
+    "k": "underwater-valley",
+    "t": "underwater valley",
+    "kind": "phrase",
+    "forms": [
+      "underwater valley"
+    ],
+    "text": "A valley is low land between hills or mountains. An underwater valley is the same shape, but it is on the ocean floor.",
+    "audio": true
+  },
+  {
+    "k": "seafloor",
+    "t": "seafloor",
+    "kind": "word",
+    "forms": [
+      "seafloor"
+    ],
+    "text": "The seafloor is the bottom of the ocean, the ground under all the water.",
+    "audio": true
+  },
+  {
+    "k": "sediment",
+    "t": "sediment",
+    "kind": "word",
+    "forms": [
+      "sediment"
+    ],
+    "text": "Sediment is sand, mud, and tiny bits of rock that settle at the bottom of water. Lauretta first saw only soft mud on the seafloor.",
+    "audio": true
+  },
+  {
+    "k": "dove",
+    "t": "dove",
+    "kind": "word",
+    "forms": [
+      "dove"
+    ],
+    "text": "Here dove means went down under the water. It is not the bird called a dove. The robot went down to the bottom 17 times.",
+    "audio": true
+  },
+  {
+    "k": "coral-reef",
+    "t": "coral reefs",
+    "kind": "name",
+    "forms": [
+      "coral reefs"
+    ],
+    "text": "A coral reef is a big structure under the sea built by tiny animals called corals. Many fish and other animals live around it.",
+    "audio": true
+  },
+  {
+    "k": "sea-star",
+    "t": "sea stars",
+    "kind": "name",
+    "forms": [
+      "sea stars",
+      "sea star"
+    ],
+    "text": "A sea star, also called a starfish, is a sea animal shaped like a star, usually with five arms. It is not a fish.",
+    "audio": true
+  },
+  {
+    "k": "findings",
+    "t": "findings",
+    "kind": "word",
+    "forms": [
+      "findings"
+    ],
+    "text": "Findings are the things people find out or discover. The findings of this trip were all the animals and pictures the robot brought back.",
+    "audio": true
+  },
+  {
+    "k": "announce",
+    "t": "announced",
+    "kind": "word",
+    "forms": [
+      "announced"
+    ],
+    "text": "To announce something is to tell everyone about it. The team told the world they had found new animals.",
+    "audio": true
+  },
+  {
+    "k": "identify",
+    "t": "identified",
+    "kind": "word",
+    "forms": [
+      "identified"
+    ],
+    "text": "To identify something is to figure out what it is. The team figured out that 57 of the animals were new.",
+    "audio": true
+  },
+  {
+    "k": "marine",
+    "t": "marine",
+    "kind": "word",
+    "forms": [
+      "marine"
+    ],
+    "text": "Marine means living in the sea or having to do with the sea. Marine species are kinds of sea animals and plants.",
+    "audio": true
+  },
+  {
+    "k": "species",
+    "t": "species",
+    "kind": "word",
+    "forms": [
+      "species"
+    ],
+    "text": "A species is one kind of living thing. All house cats are one species, and all lions are another. A new species is a kind nobody had described before.",
+    "audio": true
+  },
+  {
+    "k": "researcher",
+    "t": "researcher",
+    "kind": "word",
+    "forms": [
+      "researcher",
+      "Researchers",
+      "researchers"
+    ],
+    "text": "A researcher is a person whose job is to study something carefully to learn new facts about it.",
+    "audio": true
+  },
+  {
+    "k": "museum-of-natural-sciences",
+    "t": "Argentine Museum of Natural Sciences",
+    "kind": "name",
+    "forms": [
+      "Argentine Museum of Natural Sciences"
+    ],
+    "text": "This is a science museum in Argentina. Scientists there study animals, plants, and rocks, not only show them to visitors.",
+    "audio": true
+  },
+  {
+    "k": "buenos-aires",
+    "t": "Buenos Aires",
+    "kind": "name",
+    "forms": [
+      "Buenos Aires"
+    ],
+    "text": "Buenos Aires is the capital and biggest city of Argentina.",
+    "audio": true
+  },
+  {
+    "k": "schmidt-ocean-institute",
+    "t": "Schmidt Ocean Institute",
+    "kind": "name",
+    "forms": [
+      "Schmidt Ocean Institute"
+    ],
+    "text": "The Schmidt Ocean Institute is a group that runs science trips to explore the ocean. It owns the ship and the robot.",
+    "audio": true
+  },
+  {
+    "k": "streamed",
+    "t": "streamed",
+    "kind": "word",
+    "forms": [
+      "streamed"
+    ],
+    "text": "Streamed means sent over the internet so people can watch it right away. Anyone online could watch what the robot's cameras saw.",
+    "audio": true
+  },
+  {
+    "k": "tuned-in",
+    "t": "tuned in",
+    "kind": "phrase",
+    "forms": [
+      "tuned in"
+    ],
+    "text": "To tune in means to start watching or listening to a show. Millions of people watched the robot's video.",
+    "audio": true
+  },
+  {
+    "k": "chat-exploded",
+    "t": "The chat exploded",
+    "kind": "phrase",
+    "forms": [
+      "The chat exploded"
+    ],
+    "text": "Nothing really blew up. The chat is where viewers type messages, and it exploded means a huge number of messages showed up very fast.",
+    "audio": true
+  },
+  {
+    "k": "resemblance",
+    "t": "resemblance",
+    "kind": "word",
+    "forms": [
+      "resemblance"
+    ],
+    "text": "A resemblance is how much one thing looks like another. People said the sea star looked a lot like Patrick Star.",
+    "audio": true
+  },
+  {
+    "k": "patrick-star",
+    "t": "Patrick Star",
+    "kind": "name",
+    "forms": [
+      "Patrick Star"
+    ],
+    "text": "Patrick Star is the pink starfish who is SpongeBob's best friend in the cartoon SpongeBob SquarePants.",
+    "audio": true
+  },
+  {
+    "k": "taxonomist",
+    "t": "taxonomists",
+    "kind": "word",
+    "forms": [
+      "taxonomists"
+    ],
+    "text": "A taxonomist is a scientist who sorts living things into groups and gives them names. They are the ones who decide if an animal is a new species.",
+    "audio": true
+  },
+  {
+    "k": "detective",
+    "t": "detective",
+    "kind": "word",
+    "forms": [
+      "detective"
+    ],
+    "text": "A detective is a person who looks for clues to solve a mystery. Scientists look for clues in an animal's body to learn if it is new.",
+    "audio": true
+  },
+  {
+    "k": "sea-cucumber",
+    "t": "sea cucumber",
+    "kind": "name",
+    "forms": [
+      "sea cucumber",
+      "sea cucumbers",
+      "Sea cucumbers"
+    ],
+    "text": "A sea cucumber is a soft sea animal with a long body shaped a bit like a cucumber. It lives on the seafloor. It is an animal, not a plant.",
+    "audio": true
+  },
+  {
+    "k": "expert",
+    "t": "expert",
+    "kind": "word",
+    "forms": [
+      "expert"
+    ],
+    "text": "An expert is someone who knows a lot about one subject. Solís-Marín knows a lot about sea cucumbers.",
+    "audio": true
+  },
+  {
+    "k": "loki",
+    "t": "Loki",
+    "kind": "name",
+    "forms": [
+      "Loki"
+    ],
+    "text": "Loki is a character in Marvel movies and comics who wears a helmet with horns. The bumpy sea cucumber got his name as a nickname.",
+    "audio": true
+  },
+  {
+    "k": "copepod",
+    "t": "Copepods",
+    "kind": "word",
+    "forms": [
+      "Copepods",
+      "copepod"
+    ],
+    "text": "Copepods are tiny sea animals, smaller than a grain of rice. Many fish and whales eat them.",
+    "audio": true
+  },
+  {
+    "k": "crustacean",
+    "t": "crustaceans",
+    "kind": "word",
+    "forms": [
+      "crustaceans",
+      "crustacean"
+    ],
+    "text": "A crustacean is an animal with a hard shell on the outside of its body, like a crab, a shrimp, or a lobster.",
+    "audio": true
+  },
+  {
+    "k": "samples",
+    "t": "samples",
+    "kind": "word",
+    "forms": [
+      "samples"
+    ],
+    "text": "Samples are small amounts taken to study. The robot scooped up mud and animals so scientists could look at them in the lab.",
+    "audio": true
+  },
+  {
+    "k": "a-tenth",
+    "t": "a 10th",
+    "kind": "phrase",
+    "forms": [
+      "a 10th"
+    ],
+    "text": "A tenth is one part out of ten equal parts. The scientists have looked at only 1 out of every 10 of their copepod samples so far.",
+    "audio": true
+  },
+  {
+    "k": "official",
+    "t": "official",
+    "kind": "word",
+    "forms": [
+      "official",
+      "officially"
+    ],
+    "text": "Official means real and approved, the way it is supposed to be. A nickname like Loki is just for fun, and the official name is the one scientists agree on.",
+    "audio": true
+  },
+  {
+    "k": "scientific-name",
+    "t": "scientific name",
+    "kind": "phrase",
+    "forms": [
+      "scientific name"
+    ],
+    "text": "A scientific name is the name scientists everywhere use for one species, written in Latin words. For example, a house cat's scientific name is Felis catus.",
+    "audio": true
+  },
+  {
+    "k": "nickname",
+    "t": "nickname",
+    "kind": "word",
+    "forms": [
+      "nickname"
+    ],
+    "text": "A nickname is an extra, friendly name, not the real one. Loki is the sea cucumber's nickname.",
+    "audio": true
+  },
+  {
+    "k": "reward",
+    "t": "reward",
+    "kind": "word",
+    "forms": [
+      "reward"
+    ],
+    "text": "A reward is something good you get for doing hard work. The scientists' reward is getting to choose the new animal's name.",
+    "audio": true
+  },
+  {
+    "k": "peniagone-sp",
+    "t": "Peniagone sp.",
+    "kind": "name",
+    "forms": [
+      "Peniagone sp."
+    ],
+    "text": "Peniagone is the name of the group of sea cucumbers that Loki belongs to. The sp. means its own species name has not been chosen yet.",
+    "audio": true
+  }
+]
