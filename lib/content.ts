@@ -1,19 +1,14 @@
 import fs from "fs";
 import path from "path";
 
-/**
- * A reading track. `senior` (US grades 8–10) is the original club and keeps
- * every date-keyed path exactly as it was; `junior` (US grades 5–7) is a second,
- * occasional track that lives under a `junior/` path segment everywhere (content
- * files, article pages, audio, article text, Blob session keys, and the /junior routes).
- * A day is identified by (track, date) — a junior article usually lands on a date
- * that already has a senior one, so `date` alone is no longer a unique key.
- */
-export type Track = "senior" | "junior";
+import { trackDir, type Track } from "./track";
 
-/** The content directory for a track: senior = content/, junior = content/junior/. */
+// The track list and its path rules live in lib/track.ts (client-safe).
+export type { Track };
+
+/** The content directory for a track: senior = content/, others = content/<track>/. */
 function contentDirFor(track: Track): string {
-  return track === "junior" ? path.join(CONTENT_DIR, "junior") : CONTENT_DIR;
+  return path.join(CONTENT_DIR, trackDir(track));
 }
 
 /**

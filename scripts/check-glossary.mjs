@@ -53,8 +53,10 @@ let names;
 if (arg === "--all") {
   const dir = path.join(ROOT, "public/glossaries");
   names = fs.readdirSync(dir).filter(f => f.endsWith(".json")).map(f => f.replace(/\.json$/, ""));
-  const jr = path.join(dir, "junior");
-  if (fs.existsSync(jr)) names.push(...fs.readdirSync(jr).filter(f => f.endsWith(".json")).map(f => "junior/" + f.replace(/\.json$/, "")));
+  for (const t of ["junior", "kids"]) {
+    const sub = path.join(dir, t);
+    if (fs.existsSync(sub)) names.push(...fs.readdirSync(sub).filter(f => f.endsWith(".json")).map(f => `${t}/` + f.replace(/\.json$/, "")));
+  }
 } else if (process.argv.includes("--dump-text")) {
   console.log(extractText(arg));
   process.exit(0);

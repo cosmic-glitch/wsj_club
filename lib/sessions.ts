@@ -1,5 +1,6 @@
 import { dbSelect } from "@/lib/db";
 import type { Session } from "@/components/AdminSessions";
+import { parseTrack, subTrackOf } from "@/lib/track";
 
 /**
  * Load every voice-quiz session for the Reports page / Students roster /
@@ -45,7 +46,7 @@ export async function loadSessions(): Promise<Session[] | { error: string }> {
   const sessions: Session[] = rows.map((r) => ({
     id: String(r.id),
     date: str(r.date) ?? "",
-    ...(r.track === "junior" ? { track: "junior" as const } : {}),
+    ...(subTrackOf(r.track) ? { track: subTrackOf(r.track) } : {}),
     title: str(r.title) ?? "",
     studentName: str(r.student_name) ?? "",
     ...(str(r.login_user) ? { loginUser: str(r.login_user) } : {}),
@@ -63,12 +64,12 @@ export async function loadSessions(): Promise<Session[] | { error: string }> {
 
   for (const r of slots) {
     const login = str(r.login_user) ?? "";
-    const track = r.track === "junior" ? "junior" : "senior";
+    const track = parseTrack(r.track);
     const date = str(r.date) ?? "";
     sessions.push({
       id: slotId(login, track, date),
       date,
-      ...(track === "junior" ? { track: "junior" as const } : {}),
+      ...(track !== "senior" ? { track } : {}),
       title: str(r.title) ?? "",
       studentName: str(r.student_name) ?? login,
       loginUser: login,

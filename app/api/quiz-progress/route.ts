@@ -1,3 +1,4 @@
+import { parseTrack } from "@/lib/track";
 import { copy } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 import { getUser } from "@/lib/users";
@@ -47,8 +48,7 @@ async function callerAndDate(
   }
   const params = new URL(request.url).searchParams;
   const date = (fromBody?.date ?? params.get("date") ?? "").trim();
-  const track: Track =
-    (fromBody?.track ?? params.get("track")) === "junior" ? "junior" : "senior";
+  const track: Track = parseTrack(fromBody?.track ?? params.get("track"));
   if (!getReading(date, track)) {
     return Response.json({ error: "Unknown reading." }, { status: 404 });
   }
@@ -118,7 +118,7 @@ export async function POST(request: Request) {
     // Junior slots carry track: "junior" so the Reports page shows the junior
     // badge and its Continue points at /junior?resume=. Senior omits it (absent
     // means senior — no backfill of the existing records).
-    ...(track === "junior" ? { track } : {}),
+    ...(track !== "senior" ? { track } : {}),
     title: reading.title,
     studentName: user,
     loginUser: user,

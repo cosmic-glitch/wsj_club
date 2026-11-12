@@ -1,4 +1,5 @@
 import type { Reading, Track } from "@/lib/content";
+import { TRACKS as ALL_TRACKS, parseTrack } from "@/lib/track";
 import type { ActivityEvent } from "@/lib/events";
 import type { Session } from "@/components/AdminSessions";
 import type { WordQuizAttempt } from "@/lib/word-quiz";
@@ -38,7 +39,7 @@ import type { WordQuizAttempt } from "@/lib/word-quiz";
 
 export type ActivityWindow = 7 | 30 | "all";
 
-export const TRACKS: Track[] = ["senior", "junior"];
+export const TRACKS: readonly Track[] = ALL_TRACKS;
 
 /** The logged-out pseudo-person's username (never a real login). */
 export const ANON = "";
@@ -124,7 +125,7 @@ export type TrackReadings = {
 export type Analytics = {
   students: StudentRow[];
   idleMembers: number; // roster members with no row (nothing in the window)
-  tracks: TrackReadings[]; // senior, then junior
+  tracks: TrackReadings[]; // senior, junior, then kids only when it has a reading in the window
 };
 
 export type Member = {
@@ -191,7 +192,7 @@ function sessionAccount(s: Session): string | null {
 }
 
 function sessionTrack(s: Session): Track {
-  return s.track === "junior" ? "junior" : "senior";
+  return parseTrack(s.track);
 }
 
 /** A reading's identity across tracks (dates repeat between tracks). */
@@ -222,7 +223,7 @@ export function buildAnalytics(input: {
   const wordAttempts = input.wordAttempts.filter((a) => inWindow(a.createdAt));
 
   const titleOf = new Map<string, string>();
-  const readingsInWindow: Record<Track, Reading[]> = { senior: [], junior: [] };
+  const readingsInWindow: Record<Track, Reading[]> = { senior: [], junior: [], kids: [] };
   for (const track of TRACKS) {
     for (const r of input.readings[track]) titleOf.set(readingKey(track, r.date), r.title);
     readingsInWindow[track] = input.readings[track].filter(
@@ -292,7 +293,10 @@ export function buildAnalytics(input: {
   for (const u of wordbankOpens.keys()) people.add(u);
 
   // ---- by reading, per track -------------------------------------------------
-  const tracks: TrackReadings[] = TRACKS.map((track) => ({
+  // The experimental kids track gets a table only once it has a reading in the window.
+  const tracks: TrackReadings[] = TRACKS.filter(
+    (t) => t !== "kids" || readingsInWindow.kids.length > 0
+  ).map((track) => ({
     track,
     readingsInWindow: readingsInWindow[track].length,
     readings: readingsInWindow[track].map((r) => {

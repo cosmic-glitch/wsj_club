@@ -14,8 +14,10 @@ const ARTICLES = path.join(ROOT, "public/articles");
 let files = process.argv.slice(2);
 if (files[0] === "--all") {
   files = fs.readdirSync(ARTICLES).filter(f => f.endsWith(".html")).map(f => path.join(ARTICLES, f));
-  const jr = path.join(ARTICLES, "junior");
-  if (fs.existsSync(jr)) files.push(...fs.readdirSync(jr).filter(f => f.endsWith(".html")).map(f => path.join(jr, f)));
+  for (const t of ["junior", "kids"]) {
+    const sub = path.join(ARTICLES, t);
+    if (fs.existsSync(sub)) files.push(...fs.readdirSync(sub).filter(f => f.endsWith(".html")).map(f => path.join(sub, f)));
+  }
 }
 if (!files.length) {
   console.error("usage: add-glossary-tags.mjs <page.html ...> | --all");

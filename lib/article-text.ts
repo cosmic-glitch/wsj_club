@@ -1,5 +1,6 @@
 import { get } from "@vercel/blob";
 import type { Track } from "@/lib/content";
+import { trackDir } from "@/lib/track";
 
 /**
  * The voice tutor works best when it can see the *full* article, not just the
@@ -20,7 +21,7 @@ import type { Track } from "@/lib/content";
 // Junior text lives under an extra `junior/` segment, mirroring the content /
 // article-page / audio / session key convention (see lib/session-io.ts sessionPrefix).
 const articleTextPath = (date: string, track: Track) =>
-  track === "junior" ? `article-text/junior/${date}.txt` : `article-text/${date}.txt`;
+  `article-text/${trackDir(track)}${date}.txt`;
 
 // Small per-instance cache — a warm function reuses the text across sessions
 // instead of re-fetching from Blob every time. Keyed by track+date so the two

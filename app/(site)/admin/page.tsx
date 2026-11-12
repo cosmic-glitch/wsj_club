@@ -10,6 +10,7 @@ import AdminSessions, {
   type ArticleGroup,
 } from "@/components/AdminSessions";
 import ClassroomTabs from "@/components/ClassroomTabs";
+import { TRACKS, TRACK_LABEL } from "@/lib/track";
 
 // Reads cookies + Blob at request time — never static.
 export const dynamic = "force-dynamic";
@@ -165,7 +166,7 @@ function WordQuizPanel({
                 )}
                 <td className={td}>
                   <span className="font-mono text-[11px] font-bold uppercase tracking-[.08em] text-stone-500">
-                    {a.track === "junior" ? "Junior" : "Regular"}
+                    {TRACK_LABEL[a.track]}
                   </span>
                 </td>
                 <td className={`${td} whitespace-nowrap font-bold text-[#0a0a0a]`}>
@@ -235,7 +236,7 @@ function MedalsPanel({
         </h2>
       )}
       <p className="mt-1 font-sans text-[13px] text-stone-500">
-        {track === "junior" ? "Junior track, " : ""}last {dates.length} readings ·{" "}
+        {track !== "senior" ? `${TRACK_LABEL[track]} track, ` : ""}last {dates.length} readings ·{" "}
         {MEDALS.map((m, i) => (
           <span key={m}>
             {i > 0 && " · "}
@@ -395,11 +396,11 @@ export default async function AdminPage() {
             viewerUser={user}
           />
         )}
-        {(["senior", "junior"] as Track[]).map((t) => {
+        {TRACKS.map((t) => {
           const rows = medalRows([user], t, marks, result);
-          // The senior grid always shows (it's the daily habit); junior only
-          // once the student has touched a junior reading.
-          if (t === "junior" && !anyMedal(rows)) return null;
+          // The senior grid always shows (it's the daily habit); another
+          // track's only once the student has touched one of its readings.
+          if (t !== "senior" && !anyMedal(rows)) return null;
           return <MedalsPanel key={t} track={t} rows={rows} showParent={false} heading={t === "senior"} />;
         })}
         <WordQuizPanel
@@ -432,9 +433,9 @@ export default async function AdminPage() {
           for its full report card, recording, and transcript.
         </p>
         {classroomPanel(groups, false, user)}
-        {(["senior", "junior"] as Track[]).map((t) => {
+        {TRACKS.map((t) => {
           const rows = medalRows([...roster], t, marks, result);
-          if (t === "junior" && !anyMedal(rows)) return null;
+          if (t !== "senior" && !anyMedal(rows)) return null;
           return <MedalsPanel key={t} track={t} rows={rows} showParent={false} heading={t === "senior"} />;
         })}
         <WordQuizPanel
@@ -474,8 +475,9 @@ export default async function AdminPage() {
   };
   const enriched = result.map((s) => ({ ...s, parentName: parentNameFor(s) }));
 
-  const seniorGroups = groupByArticle(enriched.filter((s) => s.track !== "junior"));
+  const seniorGroups = groupByArticle(enriched.filter((s) => !s.track));
   const juniorGroups = groupByArticle(enriched.filter((s) => s.track === "junior"));
+  const kidsGroups = groupByArticle(enriched.filter((s) => s.track === "kids"));
 
   // Every classroom's members (students AND parents) in one medals grid per
   // track (the Parent column names whose classroom, like the sessions table
@@ -485,6 +487,10 @@ export default async function AdminPage() {
     const uname = studentToParent.get(username) || "";
     return parentDisplay.get(uname) || uname || "—";
   };
+  // The experimental kids track gets a tab only once someone has used it.
+  const showKids =
+    kidsGroups.length > 0 ||
+    anyMedal(medalRows(allMembers, "kids", marks, result, parentNameOf));
   const medalsFor = (t: Track) => (
     <MedalsPanel
       track={t}
@@ -527,6 +533,20 @@ export default async function AdminPage() {
                 </>
               ),
             },
+            ...(showKids
+              ? [
+                  {
+                    key: "kids",
+                    label: "Kids",
+                    content: (
+                      <>
+                        {classroomPanel(kidsGroups, true, user, true)}
+                        {medalsFor("kids")}
+                      </>
+                    ),
+                  },
+                ]
+              : []),
           ]}
         />
       </div>

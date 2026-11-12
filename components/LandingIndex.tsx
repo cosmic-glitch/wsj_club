@@ -8,6 +8,14 @@ import VoiceQuizStep from "@/components/VoiceQuizStep";
 import VotePoll from "@/components/VotePoll";
 import { type Reading, type Track } from "@/lib/content";
 import type { PublicPoll } from "@/lib/polls";
+import { TRACK_BAND, TRACK_LABEL, trackBase } from "@/lib/track";
+
+// Who the deck says the day's article is for.
+const AUDIENCE_LINE: Record<Track, string> = {
+  senior: "high schoolers",
+  junior: "grades 5–7",
+  kids: "young readers",
+};
 
 // How many rows the index shows up front; everything older collapses behind
 // the MoreReadings "show more" row at the bottom of the list.
@@ -59,8 +67,10 @@ export default function LandingIndex({
   /** The live vote poll as of the page's (ISR) render, or null. */
   poll: PublicPoll | null;
 }) {
-  const junior = track === "junior";
-  const base = junior ? "/junior" : "";
+  // Every non-senior track (junior, the experimental kids) shares the same
+  // variant: a masthead label, a "← Main club" link, no SAT pitch.
+  const sub = track !== "senior";
+  const base = trackBase(track);
 
   // One index row. `index` is the reading's absolute position in the full
   // newest-first list (so the newest-row styling can never land on a row
@@ -165,7 +175,7 @@ export default function LandingIndex({
           clicks on whichever link sits above the "CLUB" glyphs. */}
       <div className="relative z-10 mx-auto max-w-[980px] px-[18px]">
         <div className="flex min-h-[37px] items-center justify-between gap-4 border-b-2 border-[#0a0a0a] py-1">
-          {junior ? (
+          {sub ? (
             <Link href="/" className={topLink}>
               ← Main club
             </Link>
@@ -181,14 +191,14 @@ export default function LandingIndex({
       {/* ---- masthead ---- */}
       <header className="animate-brutal-stamp border-b-[5px] border-[#0a0a0a] motion-reduce:animate-none">
         <div className="mx-auto max-w-[980px] px-[18px]">
-          {junior && (
+          {sub && (
             <p className="pt-4 font-mono text-[11px] font-bold uppercase tracking-[.2em] text-stone-500">
-              Junior · Grades 5–7
+              {TRACK_LABEL[track]} · {TRACK_BAND[track]}
             </p>
           )}
           <h1
             className={`${
-              junior ? "pt-1" : "pt-4"
+              sub ? "pt-1" : "pt-4"
             } pb-2 font-display text-[clamp(56px,12.5vw,128px)] font-normal uppercase leading-[.95] tracking-[.01em]`}
           >
             READING{" "}
@@ -215,11 +225,11 @@ export default function LandingIndex({
           <div className="mt-[17px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] p-4 shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a] motion-reduce:animate-none">
             <p className="font-sans text-[14.5px] leading-relaxed text-[#0a0a0a]">
               One hand-picked article a day for{" "}
-              {junior ? "grades 5–7" : "high schoolers"}. Every day you read
+              {AUDIENCE_LINE[track]}. Every day you read
               earns a medal: bronze 🥉 for reading the article, silver 🥈 for
               reading the handout, gold 🥇 for explaining it to an AI tutor.
               Any medal keeps your streak alive.
-              {!junior &&
+              {!sub &&
                 " Do it daily and your general knowledge, vocabulary, and SAT verbal all climb."}{" "}
               <Link
                 href="/guide"
@@ -231,8 +241,8 @@ export default function LandingIndex({
           </div>
         {readings.length === 0 ? (
           <p className="mt-[26px] border-[3px] border-[#0a0a0a] p-8 text-center text-sm font-bold uppercase tracking-[.08em]">
-            {junior
-              ? "No junior readings yet. The first one will appear here."
+            {sub
+              ? `No ${track} readings yet. The first one will appear here.`
               : "No readings yet. The first one will appear here."}
           </p>
         ) : (
@@ -242,7 +252,7 @@ export default function LandingIndex({
                 server-rendered from `poll` so it never pops in above the
                 readings. Its `vote-live` class is what the [.vote-live~&]
                 variants below key off to demote the previous newest row. */}
-            <VotePoll track={track} initial={poll} />
+            {track !== "kids" && <VotePoll track={track} initial={poll} />}
             {upfront.map(renderRow)}
             {older.length > 0 && (
               <MoreReadings count={older.length}>
@@ -255,7 +265,7 @@ export default function LandingIndex({
         {/* Spells out the same three steps the row's arrows imply — the row
             has only room for the nouns, so the verbs live here. Junior only:
             the senior page's masthead deck already carries the pitch. */}
-        {junior && (
+        {sub && (
           <p className="mt-5 text-center text-[11px] uppercase tracking-[.14em]">
             Read the article → Study the handout → Mark it done or take the AI
             quiz. Repeat tomorrow.

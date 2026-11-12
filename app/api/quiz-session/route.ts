@@ -23,7 +23,7 @@ import type { Track } from "@/lib/content";
  * (isAdmin), as before.
  */
 
-const SLOT_ID_RE = /^slot:([^:]+):(senior|junior):(\d{4}-\d{2}-\d{2})$/;
+const SLOT_ID_RE = /^slot:([^:]+):(senior|junior|kids):(\d{4}-\d{2}-\d{2})$/;
 const UUID_RE =
   /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 

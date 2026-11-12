@@ -30,7 +30,11 @@ if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
   console.error("usage: node scripts/check-content.mjs <YYYY-MM-DD> [--track=junior] [--no-audio]");
   process.exit(1);
 }
-const sub = track === "junior" ? "junior/" : "";
+if (!["senior", "junior", "kids"].includes(track)) {
+  console.error(`unknown --track=${track} (senior | junior | kids)`);
+  process.exit(1);
+}
+const sub = track === "senior" ? "" : `${track}/`;
 const contentFile = path.join(ROOT, "content", sub, `${date}.json`);
 const textFile = path.join(ROOT, "article-text", sub, `${date}.txt`);
 const audioDir = path.join(ROOT, "public", "audio", sub, date);
@@ -158,7 +162,7 @@ if (checkAudio) {
   ];
   for (const term of need) {
     const clip = path.join(audioDir, `${slug(term)}.mp3`);
-    if (!fs.existsSync(clip)) err(`no pronunciation clip for "${term}" (${path.relative(ROOT, clip)}) — run scripts/gen-pronunciation.mjs ${date}${track === "junior" ? " --track=junior" : ""}`);
+    if (!fs.existsSync(clip)) err(`no pronunciation clip for "${term}" (${path.relative(ROOT, clip)}) — run scripts/gen-pronunciation.mjs ${date}${track !== "senior" ? ` --track=${track}` : ""}`);
   }
   if (!fs.existsSync(path.join(audioDir, "quiz-intro.mp3"))) err(`quiz-intro.mp3 missing in ${path.relative(ROOT, audioDir)}`);
   const glossary = path.join(ROOT, "public", "glossaries", sub, `${date}.json`);

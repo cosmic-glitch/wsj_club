@@ -11,6 +11,7 @@ import {
   type TrackReadings,
 } from "@/lib/analytics";
 import type { AccessPlace } from "@/lib/access";
+import { TRACK_LABEL } from "@/lib/track";
 
 /**
  * The Activity page's body (app/(site)/admin/analytics): the by-student table,
@@ -199,7 +200,6 @@ function PeopleTable({ r }: { r: ReadingActivity }) {
   );
 }
 
-const TRACK_LABEL = { senior: "Regular", junior: "Junior" } as const;
 
 function ReadingsTable({ tr }: { tr: TrackReadings }) {
   const [open, setOpen] = useState<Set<string>>(new Set());
@@ -343,7 +343,7 @@ function DaysTable({ days }: { days: StudentDay[] }) {
               </td>
               <td className={`${td} font-sans text-[#0a0a0a]`}>
                 {d.title || d.date}
-                {d.track === "junior" && <span className={`${chip} ml-2`}>junior</span>}
+                {d.track !== "senior" && <span className={`${chip} ml-2`}>{d.track}</span>}
               </td>
               <td className={td}>
                 <Count n={d.articleOpens} />

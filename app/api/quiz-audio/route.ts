@@ -2,6 +2,7 @@ import { handleUpload, type HandleUploadBody } from "@vercel/blob/client";
 import { currentUser } from "@/lib/auth";
 import { getReading, type Track } from "@/lib/content";
 import { safeNameOf, sessionPrefix, slotAudioPathname } from "@/lib/session-io";
+import { parseTrack } from "@/lib/track";
 
 /**
  * Issues a short-lived, auth-gated token so the browser can upload a finished
@@ -39,7 +40,7 @@ export async function POST(request: Request): Promise<Response> {
         try {
           const payload = JSON.parse(clientPayload ?? "{}");
           date = (payload.date ?? "").trim();
-          if (payload.track === "junior") track = "junior";
+          track = parseTrack(payload.track);
         } catch {
           // no / invalid payload → date stays empty → rejected below
         }

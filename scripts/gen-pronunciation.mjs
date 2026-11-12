@@ -46,14 +46,14 @@ const force = args.includes("--force");
 // positional date/all target below, which excludes anything starting with --).
 const trackArg = args.find((a) => a.startsWith("--track="));
 const track = trackArg ? trackArg.split("=")[1] : "senior";
-const CONTENT =
-  track === "junior"
-    ? path.join(process.cwd(), "content", "junior")
-    : path.join(process.cwd(), "content");
-const AUDIO =
-  track === "junior"
-    ? path.join(process.cwd(), "public", "audio", "junior")
-    : path.join(process.cwd(), "public", "audio");
+if (!["senior", "junior", "kids"].includes(track)) {
+  console.error(`unknown --track=${track} (senior | junior | kids)`);
+  process.exit(1);
+}
+// A non-senior track reads/writes under its own segment (content/kids/, …).
+const sub = track === "senior" ? "" : track;
+const CONTENT = path.join(process.cwd(), "content", sub);
+const AUDIO = path.join(process.cwd(), "public", "audio", sub);
 
 const target = args.find((a) => !a.startsWith("--")) || "all";
 
@@ -129,7 +129,9 @@ function trimLeadingSilence(buf) {
      "-c:a", "libmp3lame", "-q:a", "4", "-f", "mp3", "pipe:1"],
     { input: buf, maxBuffer: 64 * 1024 * 1024 },
   );
-  return r.status === 0 && r.stdout?.length ? r.stdout : buf;
+  // A quiet clip (a soft "s" opening) can sit entirely under the threshold and
+  // trim down to a bare MP3 header; keep the raw clip rather than ship silence.
+  return r.status === 0 && r.stdout?.length > 1024 ? r.stdout : buf;
 }
 
 async function mapLimit(items, limit, fn) {

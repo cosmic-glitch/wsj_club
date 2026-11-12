@@ -4,6 +4,7 @@ import { loadSessions } from "@/lib/sessions";
 import { loadMarksFor, medalsOf, recordMark } from "@/lib/marks";
 import { streakOf, type MarkLevel } from "@/lib/medals";
 import { classroomOf } from "@/lib/users";
+import { parseTrack } from "@/lib/track";
 
 /**
  * The daily medals API — for EVERY active login: parents read too (the
@@ -25,7 +26,7 @@ import { classroomOf } from "@/lib/users";
  * completed voice-quiz session, joined in by lib/marks.
  */
 
-const trackOf = (v: unknown): Track => (v === "junior" ? "junior" : "senior");
+const trackOf = (v: unknown): Track => parseTrack(v);
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 function todayOf(v: unknown): string {

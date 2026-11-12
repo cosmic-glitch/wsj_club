@@ -14,6 +14,7 @@ export type Audience = { ageRange: string; gradeBand: string };
 export const AUDIENCE: Record<Track, Audience> = {
   senior: { ageRange: "13–16 year old", gradeBand: "grade 8–10" },
   junior: { ageRange: "10–13 year old", gradeBand: "grade 5–7" },
+  kids: { ageRange: "6–9 year old", gradeBand: "grade 2–4" },
 };
 
 /**

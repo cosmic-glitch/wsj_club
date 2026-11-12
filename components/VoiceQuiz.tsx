@@ -6,6 +6,7 @@ import { createPortal } from "react-dom";
 import { upload } from "@vercel/blob/client";
 import type { Track } from "@/lib/content";
 import { useAuth } from "./AuthProvider";
+import { trackDir } from "@/lib/track";
 
 type Turn = { role: "student" | "tutor"; text: string };
 
@@ -337,8 +338,8 @@ export default function VoiceQuiz({
   launcherLabel?: string;
 }) {
   // The Blob key directory for this (track, date) — mirrors sessionPrefix() in
-  // lib/session-io.ts (keep the two in lockstep). Junior takes an extra segment.
-  const blobDir = track === "junior" ? `junior/${date}` : date;
+  // lib/session-io.ts (keep the two in lockstep). A non-senior track takes an extra segment.
+  const blobDir = `${trackDir(track)}${date}`;
   // Login state comes from the shared AuthProvider (one /api/me fetch for the
   // whole page); login/logout both reload the page, so it stays fresh.
   const { user, ready } = useAuth();

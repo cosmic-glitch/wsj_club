@@ -47,7 +47,7 @@ const ROOT = process.cwd();
 const glossaryFile = path.join(ROOT, "public/glossaries", `${name}.json`);
 // Audio lives under the DATE (multi-article pages share it): strip a -N page
 // suffix, keep the junior/ segment. Must match the derivation in glossary.js.
-const dateDir = name.replace(/^((?:junior\/)?\d{4}-\d{2}-\d{2}).*$/, "$1");
+const dateDir = name.replace(/^((?:junior\/|kids\/)?\d{4}-\d{2}-\d{2}).*$/, "$1");
 const outDir = path.join(ROOT, "public/audio", dateDir, "gloss");
 
 const entries = JSON.parse(fs.readFileSync(glossaryFile, "utf8"));
@@ -87,7 +87,9 @@ function trimLeadingSilence(buf) {
      "-c:a", "libmp3lame", "-q:a", "4", "-f", "mp3", "pipe:1"],
     { input: buf, maxBuffer: 64 * 1024 * 1024 },
   );
-  return r.status === 0 && r.stdout?.length ? r.stdout : buf;
+  // A quiet clip (a soft "s" opening) can sit entirely under the threshold and
+  // trim down to a bare MP3 header; keep the raw clip rather than ship silence.
+  return r.status === 0 && r.stdout?.length > 1024 ? r.stdout : buf;
 }
 
 async function mapLimit(items, limit, fn) {

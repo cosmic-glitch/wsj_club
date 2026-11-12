@@ -23,6 +23,12 @@
 //   txtOut     → article-text/<date>.txt              (junior: article-text/junior/<date>.txt)
 //   sourceName → 'The Economist' | 'WSJ'  (the short WSJ form — the full name wraps the top bar on phones)
 //   back       → '/' (senior) | '/junior'  (the page's "← Reading Club" link)
+//   container  → OPTIONAL CSS selector of the article body, for a site with no
+//                <article>/<main> around just the story (TIME for Kids:
+//                '.article-show__content-article'). Absent → auto-detect, as before.
+//   strip      → OPTIONAL CSS selector of elements to delete before the walk
+//                (TIME for Kids hides its pop-up word definitions inside the
+//                prose: '.powerword .definition'). Absent → nothing removed.
 // The original URL is auto-derived from the open page (it IS the original) and
 // renders as the top bar's "Source: <publication>" link.
 //
@@ -54,10 +60,13 @@ async (page) => {
   //    fall through to the plain-HTML branch below.
   await page.waitForFunction(() => document.querySelectorAll('article p').length > 8, { timeout: 20000 }).catch(() => {});
   const data = await page.evaluate(() => {
-    // CONTAINER: <article>/<main> on any modern page; otherwise (legacy table
-    // layouts) pick the SMALLEST element that still holds the bulk of the text,
-    // which lands on the essay cell rather than <body> and its nav chrome.
-    let art = document.querySelector('article') || document.querySelector('main');
+    const O = window.__captureOpts || {};
+    if (O.strip) document.querySelectorAll(O.strip).forEach(e => e.remove());
+    // CONTAINER: the caller's selector when given; else <article>/<main> on any
+    // modern page; otherwise (legacy table layouts) pick the SMALLEST element
+    // that still holds the bulk of the text, which lands on the essay cell
+    // rather than <body> and its nav chrome.
+    let art = (O.container && document.querySelector(O.container)) || document.querySelector('article') || document.querySelector('main');
     if (!art || (art.innerText || '').trim().length < 400) {
       let best = null, bestLen = 0;
       for (const el of document.querySelectorAll('td, div, font, body')) {

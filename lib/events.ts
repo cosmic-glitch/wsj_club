@@ -1,5 +1,6 @@
 import { dbInsert, dbSelect } from "@/lib/db";
 import type { Track } from "@/lib/content";
+import { parseTrack } from "@/lib/track";
 
 /**
  * Page-activity events — the rc_events table (supabase/migrations/0005).
@@ -74,7 +75,7 @@ export function parseEventInput(body: unknown): EventInput | null {
   if (!body || typeof body !== "object") return null;
   const b = body as Record<string, unknown>;
   if (!isKind(b.kind)) return null;
-  const track: Track = b.track === "junior" ? "junior" : "senior";
+  const track: Track = parseTrack(b.track);
   let date: string | null = null;
   if (typeof b.date === "string" && DATE_RE.test(b.date)) date = b.date;
   // Every kind but the word bank belongs to a reading.
@@ -146,7 +147,7 @@ export async function loadEvents(
         at: at.toISOString(),
         username: typeof r.username === "string" && r.username ? r.username : null,
         parentId: typeof r.parent_id === "string" && r.parent_id ? r.parent_id : null,
-        track: r.track === "junior" ? "junior" : "senior",
+        track: parseTrack(r.track),
         date: typeof r.date === "string" && r.date ? r.date : null,
         kind: r.kind,
         meta: r.meta && typeof r.meta === "object" ? (r.meta as EventMeta) : {},

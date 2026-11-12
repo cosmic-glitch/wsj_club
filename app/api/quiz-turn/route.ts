@@ -2,6 +2,7 @@ import { currentUser } from "@/lib/auth";
 import { getReading, type Track } from "@/lib/content";
 import { getArticleText } from "@/lib/article-text";
 import { buildInstructions } from "@/lib/quiz-prompt";
+import { parseTrack } from "@/lib/track";
 
 // The chat model that plays the tutor, turn by turn — same model as the grader
 // (REPORT_MODEL). Env-overridable, but do NOT drop this to a mini/nano tier to
@@ -107,7 +108,7 @@ export async function POST(request: Request) {
   // `track` is a label the page knows (senior vs junior), not an identity claim —
   // safe to take from the client (a forged track only reaches the caller's own
   // junior path; identity still comes from the cookie). Default senior.
-  const track: Track = body.track === "junior" ? "junior" : "senior";
+  const track: Track = parseTrack(body.track);
   const studentName = (body.studentName ?? "").trim() || user;
   const transcript = Array.isArray(body.transcript) ? body.transcript : [];
   const reading = getReading(date, track);

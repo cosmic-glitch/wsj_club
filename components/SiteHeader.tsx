@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import HeaderContainer from "./HeaderContainer";
 import HomeAuthBar from "./HomeAuthBar";
+import { trackBase, trackOfPath } from "@/lib/track";
 
 // The site-wide header bar, in the brutalist language of the landing page:
 // white, a thick black rule, an "RC" monogram in the Anton display face (R
@@ -23,7 +24,7 @@ export default function SiteHeader() {
 
   // The monogram links back to the index of whichever track you're in, so a
   // junior handout's "RC" returns to /junior (not the main club).
-  const homeHref = pathname?.startsWith("/junior") ? "/junior" : "/";
+  const homeHref = trackBase(trackOfPath(pathname)) || "/";
 
   return (
     <header className="border-b-2 border-[#0a0a0a] bg-white">

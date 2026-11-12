@@ -32,7 +32,7 @@ if(!m)return;
    Fire-and-forget: sendBeacon survives the unload, a failure changes
    nothing for the reader. The body is a plain-text string carrying JSON
    (what sendBeacon sends for a string; the route parses it). */
-var TRACK=/^junior\//.test(m[1])?"junior":"senior";
+var TRACK=(m[1].match(/^(junior|kids)\//)||[])[1]||"senior";
 var DATE=(m[1].match(/(\d{4}-\d{2}-\d{2})/)||[])[1]||null;
 var VIEW=Math.random().toString(36).slice(2,10)+Date.now().toString(36);
 function beacon(kind,meta){
@@ -72,7 +72,7 @@ window.addEventListener("pagehide",flushRead);
   var TODAY=[now.getFullYear(),("0"+(now.getMonth()+1)).slice(-2),("0"+now.getDate()).slice(-2)].join("-");
   var ICON={bronze:"\uD83E\uDD49",silver:"\uD83E\uDD48",gold:"\uD83E\uDD47"};
   var LABEL={bronze:"Article read.",silver:"Handout done.",gold:"AI quiz done."};
-  var HANDOUT=(TRACK==="junior"?"/junior":"")+"/reading/"+DATE;
+  var HANDOUT=(TRACK==="senior"?"":"/"+TRACK)+"/reading/"+DATE;
   var box=null;
   function host(){return document.querySelector("main")||document.body;}
   function render(d){
@@ -109,8 +109,8 @@ window.addEventListener("pagehide",flushRead);
 })();
 
 // Pronunciation clips live under the DATE — the trailing-anything match keeps
-// junior's junior/<date> prefix working and is harmless for a plain date.
-var AUDIO_BASE="/audio/"+m[1].replace(/^((?:junior\/)?\d{4}-\d{2}-\d{2}).*$/,"$1")+"/gloss/";
+// a track's <track>/<date> prefix working and is harmless for a plain date.
+var AUDIO_BASE="/audio/"+m[1].replace(/^((?:junior\/|kids\/)?\d{4}-\d{2}-\d{2}).*$/,"$1")+"/gloss/";
 fetch("/glossaries/"+m[1]+".json").then(function(r){
   if(!r.ok)throw new Error("no glossary");
   return r.json();

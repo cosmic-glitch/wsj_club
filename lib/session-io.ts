@@ -1,6 +1,7 @@
 import { del, list } from "@vercel/blob";
 import { dbDelete, dbInsert, dbSelect, dbUpsert } from "@/lib/db";
 import type { Track } from "@/lib/content";
+import { parseTrack, trackDir } from "@/lib/track";
 
 /**
  * Shared server-side helpers for the voice-quiz session records — the
@@ -43,7 +44,7 @@ export function safeNameOf(name: string): string {
  * `track` out of the request once.
  */
 export function sessionPrefix(track: Track, date: string): string {
-  return track === "junior" ? `junior/${date}` : date;
+  return `${trackDir(track)}${date}`;
 }
 
 /**
@@ -160,7 +161,7 @@ export async function getSlotRecord(
     typeof v === "number" && Number.isFinite(v) ? v : undefined;
   return {
     date,
-    ...(track === "junior" ? { track } : {}),
+    ...(track !== "senior" ? { track } : {}),
     title: typeof r.title === "string" ? r.title : "",
     studentName: typeof r.student_name === "string" ? r.student_name : loginUser,
     loginUser,
@@ -239,7 +240,7 @@ export async function saveSessionRow(
   const report = session.report as { score?: unknown } | null | undefined;
   const status = await dbInsert("rc_quiz_sessions", {
     date: strOf(session.date) ?? "",
-    track: session.track === "junior" ? "junior" : "senior",
+    track: parseTrack(session.track),
     title: strOf(session.title) ?? "",
     student_name: strOf(session.studentName) ?? strOf(session.loginUser) ?? "",
     login_user: strOf(session.loginUser),

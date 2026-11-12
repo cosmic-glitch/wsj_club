@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import DeleteSessionButton from "@/components/DeleteSessionButton";
 import SessionAudio from "@/components/SessionAudio";
+import { trackBase, type SubTrack } from "@/lib/track";
 
 export type Turn = { role: "student" | "tutor"; text: string };
 export type Report = {
@@ -27,7 +28,7 @@ export type Session = {
   // records); junior attempts are stamped "junior" at save time. Drives the
   // junior badge + the track prefix on this attempt's links, so a junior 8/10 is
   // never silently compared against a senior 8/10.
-  track?: "junior";
+  track?: SubTrack;
   title: string;
   studentName: string;
   loginUser?: string;
@@ -82,7 +83,7 @@ export type Session = {
 // identifies which one this is (absent = senior).
 export type ArticleGroup = {
   date: string;
-  track?: "junior";
+  track?: SubTrack;
   dateLabel: string;
   title: string;
   attempts: Session[];
@@ -97,11 +98,11 @@ type SessionDetail = {
   report?: Report | null;
 };
 
-// Track-aware hrefs — junior lives under a /junior prefix (senior unchanged).
-const readingHref = (track: string | undefined, date: string) =>
-  track === "junior" ? `/junior/reading/${date}` : `/reading/${date}`;
-const resumeHref = (track: string | undefined, date: string) =>
-  track === "junior" ? `/junior?resume=${date}` : `/?resume=${date}`;
+// Track-aware hrefs — a non-senior track lives under its prefix (senior unchanged).
+const readingHref = (track: SubTrack | undefined, date: string) =>
+  `${trackBase(track ?? "senior")}/reading/${date}`;
+const resumeHref = (track: SubTrack | undefined, date: string) =>
+  `${trackBase(track ?? "senior") || "/"}?resume=${date}`;
 
 /**
  * Format an ISO timestamp in the *viewer's* local timezone. Done client-side
@@ -341,9 +342,9 @@ export default function AdminSessions({
                                 orthogonal to the status badges — a junior attempt
                                 can also be in-progress/partial/cancelled. */}
                             <span className="mr-auto flex items-center gap-1.5">
-                              {s.track === "junior" && (
+                              {s.track && (
                                 <span className="shrink-0 bg-violet-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-violet-700">
-                                  junior
+                                  {s.track}
                                 </span>
                               )}
                               {s.inProgress && (
@@ -428,9 +429,9 @@ export default function AdminSessions({
                       {session.report.score}
                     </span>
                   )}
-                  {session.track === "junior" && (
+                  {session.track && (
                     <span className="bg-violet-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-violet-700">
-                      junior
+                      {session.track}
                     </span>
                   )}
                   {session.inProgress && (

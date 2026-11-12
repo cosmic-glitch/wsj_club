@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { Track } from "@/lib/content";
+import { trackDir } from "@/lib/track";
 
 /**
  * Resolves the pre-generated pronunciation clip for a vocab word / concept name
@@ -28,8 +29,8 @@ export function audioSrcFor(
   track: Track = "senior",
 ): string | undefined {
   const slug = slugify(term);
-  // Junior clips live under an extra `junior/` segment; senior keeps today's path.
-  const rel = track === "junior" ? `junior/${date}` : date;
+  // Non-senior clips live under their track's segment; senior keeps today's path.
+  const rel = `${trackDir(track)}${date}`;
   const file = path.join(process.cwd(), "public", "audio", rel, `${slug}.mp3`);
   return fs.existsSync(file) ? `/audio/${rel}/${slug}.mp3` : undefined;
 }

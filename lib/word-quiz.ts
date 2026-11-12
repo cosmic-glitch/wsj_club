@@ -1,4 +1,5 @@
 import { getAllReadings, type Track } from "@/lib/content";
+import { parseTrack } from "@/lib/track";
 import { stripMarkdown } from "@/lib/rich-text";
 import { dbInsert, dbSelect, dbUpsert } from "@/lib/db";
 import type { Session } from "@/components/AdminSessions";
@@ -98,7 +99,7 @@ export function completedQuizDates(
           (s.loginUser ?? s.studentName) === user &&
           !s.cancelled &&
           !s.inProgress &&
-          (s.track === "junior") === (track === "junior"),
+          parseTrack(s.track) === track,
       )
       .map((s) => s.date),
   );
@@ -280,7 +281,9 @@ function distractorPool(track: Track): { word: string; pos: string }[] {
     }
   };
   collect(track);
-  if (track === "junior" && pool.length < 12) collect("senior");
+  // A young track borrows from the next one up until it can fill options.
+  if (track === "kids" && pool.length < 12) collect("junior");
+  if (track !== "senior" && pool.length < 12) collect("senior");
   return pool;
 }
 
@@ -450,7 +453,7 @@ export async function loadWordQuizAttempts(): Promise<WordQuizAttempt[] | null> 
         ...(typeof r.parent_id === "string" && r.parent_id
           ? { parentId: r.parent_id }
           : {}),
-        track: r.track === "junior" ? ("junior" as const) : ("senior" as const),
+        track: parseTrack(r.track),
         score: typeof r.score === "number" ? r.score : 0,
         total: typeof r.total === "number" ? r.total : questions.length,
         missed,

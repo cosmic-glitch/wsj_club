@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import JoinClub from "./JoinClub";
 import { clearAuthCache, useAuth, writeAuthCache } from "./AuthProvider";
+import { trackBase, trackOfPath } from "@/lib/track";
 
 // The site's login/reports controls: small uppercase mono TEXT links —
 // deliberately not boxed, so the boxed buttons stay exclusively "content
@@ -35,7 +36,7 @@ export default function HomeAuthBar() {
   // The Word Bank is per-track (the SiteHeader monogram recipe): from a junior
   // page it links to the junior bank, everywhere else the senior one.
   const pathname = usePathname();
-  const wordBankHref = pathname?.startsWith("/junior") ? "/junior/words" : "/words";
+  const wordBankHref = `${trackBase(trackOfPath(pathname))}/words`;
   const [open, setOpen] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");

@@ -3,6 +3,7 @@ import { audioSrcFor } from "@/lib/handout-audio";
 import WordBankList, { type BankDay } from "@/components/WordBankList";
 import WordQuiz from "@/components/WordQuiz";
 import PageBeacon from "@/components/PageBeacon";
+import { TRACK_BAND, TRACK_LABEL, trackBase } from "@/lib/track";
 
 /** "2026-07-08" → "Jul 8" (rendered uppercase in the date column). */
 function dateTag(date: string): string {
@@ -28,8 +29,8 @@ function dateTag(date: string): string {
 // the client list, which asks /api/quiz-dates which days the logged-in caller
 // has actually finished (handout marked done, or quizzed).
 export default function WordBank({ track = "senior" }: { track?: Track }) {
-  const junior = track === "junior";
-  const base = junior ? "/junior" : "";
+  const sub = track !== "senior";
+  const base = trackBase(track);
 
   // getAllReadings is already newest-first — the bank's display order.
   const days: BankDay[] = getAllReadings(track).map((r) => ({
@@ -52,7 +53,7 @@ export default function WordBank({ track = "senior" }: { track?: Track }) {
       <PageBeacon kind="wordbank_view" track={track} />
       <header className="border-b-[5px] border-[#0a0a0a] pb-5">
         <p className="font-mono text-[11px] font-bold uppercase tracking-[.18em] text-stone-500">
-          {junior ? "Junior · Grades 5–7" : "Your review list"}
+          {sub ? `${TRACK_LABEL[track]} · ${TRACK_BAND[track]}` : "Your review list"}
         </p>
         <h1 className="mt-2 font-display text-[clamp(30px,6.5vw,48px)] font-normal uppercase leading-[1.05] tracking-[.01em] text-[#0a0a0a]">
           My Word Bank
@@ -67,8 +68,8 @@ export default function WordBank({ track = "senior" }: { track?: Track }) {
 
       {days.length === 0 ? (
         <p className="mt-10 border-[3px] border-[#0a0a0a] p-8 text-center font-mono text-sm font-bold uppercase tracking-[.08em] text-[#0a0a0a]">
-          {junior
-            ? "No junior readings yet. The first one's words will appear here."
+          {sub
+            ? `No ${track} readings yet. The first one's words will appear here.`
             : "No readings yet. The first one's words will appear here."}
         </p>
       ) : (

@@ -9,6 +9,7 @@ import {
 } from "@/lib/word-quiz";
 import { bankDates, loadMarksFor } from "@/lib/marks";
 import { classroomOf } from "@/lib/users";
+import { parseTrack } from "@/lib/track";
 
 /**
  * The word-bank quiz API — for every active login (a parent who reads earns
@@ -27,7 +28,7 @@ import { classroomOf } from "@/lib/users";
  * never trusted for either.
  */
 
-const trackOf = (v: unknown): Track => (v === "junior" ? "junior" : "senior");
+const trackOf = (v: unknown): Track => parseTrack(v);
 
 async function viewerAndBank(track: Track) {
   const record = await currentUserRecord();

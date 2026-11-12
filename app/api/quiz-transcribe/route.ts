@@ -1,6 +1,7 @@
 import { del } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 import { getReading, type Track } from "@/lib/content";
+import { parseTrack } from "@/lib/track";
 
 // The speech-to-text model for the student's spoken answers. `gpt-transcribe`
 // beat whisper-1 on an A/B over two real session recordings (no repetition
@@ -99,7 +100,7 @@ export async function POST(request: Request) {
     // `date`/`track`/`question` are labels the page knows, not identity claims
     // (same rationale as /api/quiz-turn) — they only pick which public handout's
     // terms prime the transcription. Unknown reading → no prompt, old behavior.
-    const track: Track = body?.track === "junior" ? "junior" : "senior";
+    const track: Track = parseTrack(body?.track);
     sttPrompt = buildSttPrompt((body?.date ?? "").trim(), track, body?.question ?? "");
   } catch {
     return Response.json({ error: "Invalid request" }, { status: 400 });
@@ -122,7 +123,7 @@ export async function POST(request: Request) {
   }
   if (
     !parsed.hostname.endsWith(".blob.vercel-storage.com") ||
-    !/\/quiz-sessions\/(junior\/)?[^/]+\/turns\//.test(parsed.pathname)
+    !/\/quiz-sessions\/(junior\/|kids\/)?[^/]+\/turns\//.test(parsed.pathname)
   ) {
     return Response.json({ error: "Unexpected audio location." }, { status: 400 });
   }

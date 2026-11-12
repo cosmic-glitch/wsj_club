@@ -1,3 +1,4 @@
+import { parseTrack } from "@/lib/track";
 import { copy } from "@vercel/blob";
 import { currentUser } from "@/lib/auth";
 import { getUser } from "@/lib/users";
@@ -74,7 +75,7 @@ export async function POST(request: Request) {
 
   const date = (body.date ?? "").trim();
   // Track is a client label (default senior); identity stays cookie-derived.
-  const track: Track = body.track === "junior" ? "junior" : "senior";
+  const track: Track = parseTrack(body.track);
   const studentName = (body.studentName ?? "").trim() || user;
   const transcript = Array.isArray(body.transcript) ? body.transcript : [];
   const audioUrl = (body.audioUrl ?? "").trim() || undefined;
@@ -215,7 +216,7 @@ export async function POST(request: Request) {
     // Stamp track only for junior (absent means senior — no backfill of the
     // existing senior records). This is what shows the junior badge on Reports
     // and never silently compares a junior 8/10 against a senior 8/10.
-    ...(track === "junior" ? { track } : {}),
+    ...(track !== "senior" ? { track } : {}),
     title: reading.title,
     studentName,
     loginUser: user,

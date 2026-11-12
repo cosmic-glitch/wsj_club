@@ -2,6 +2,7 @@ import { currentUser } from "@/lib/auth";
 import { loadSessions } from "@/lib/sessions";
 import { loadMarksFor, bankDates } from "@/lib/marks";
 import type { Track } from "@/lib/content";
+import { parseTrack } from "@/lib/track";
 
 /**
  * GET /api/quiz-dates?track= — the dates whose words are in the CALLER's
@@ -22,10 +23,7 @@ export async function GET(request: Request) {
   if (!user) {
     return Response.json({ error: "Not logged in." }, { status: 401 });
   }
-  const track: Track =
-    new URL(request.url).searchParams.get("track") === "junior"
-      ? "junior"
-      : "senior";
+  const track: Track = parseTrack(new URL(request.url).searchParams.get("track"));
 
   const [sessions, marks] = await Promise.all([loadSessions(), loadMarksFor(user, track)]);
   if (!Array.isArray(sessions)) {

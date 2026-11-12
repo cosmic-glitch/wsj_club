@@ -38,8 +38,12 @@ if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
   process.exit(1);
 }
 
-// Junior text lives under an extra `junior/` segment (Blob key + local default).
-const textDir = track === "junior" ? "article-text/junior" : "article-text";
+if (!["senior", "junior", "kids"].includes(track)) {
+  console.error(`unknown --track=${track} (senior | junior | kids)`);
+  process.exit(1);
+}
+// A non-senior track's text lives under its own segment (Blob key + local default).
+const textDir = track === "senior" ? "article-text" : `article-text/${track}`;
 const blobKey = `${textDir}/${date}.txt`;
 
 if (!process.env.BLOB_READ_WRITE_TOKEN) {

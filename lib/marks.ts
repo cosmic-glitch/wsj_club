@@ -1,5 +1,6 @@
 import { dbSelect, dbUpsert } from "@/lib/db";
 import type { Track } from "@/lib/content";
+import { parseTrack } from "@/lib/track";
 import type { Session } from "@/components/AdminSessions";
 import { completedQuizDates } from "@/lib/word-quiz";
 import { medalsFor, type MarkLevel, type MedalMap } from "@/lib/medals";
@@ -36,7 +37,7 @@ function rowToMark(r: Record<string, unknown>): ReadingMark | null {
     ...(typeof r.parent_id === "string" && r.parent_id
       ? { parentId: r.parent_id }
       : {}),
-    track: r.track === "junior" ? "junior" : "senior",
+    track: parseTrack(r.track),
     date: r.date,
     level,
     updatedAt: r.updated_at ? new Date(String(r.updated_at)).toISOString() : "",

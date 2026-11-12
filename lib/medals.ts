@@ -1,4 +1,5 @@
 import type { Track } from "@/lib/content";
+import { trackBase } from "@/lib/track";
 
 /**
  * Daily medals — the CLIENT-SAFE half (no DB imports; the server-side store
@@ -131,5 +132,5 @@ export function localYMD(): string {
 
 /** The handout URL for a reading on a track. */
 export function handoutHref(track: Track, date: string): string {
-  return `${track === "junior" ? "/junior" : ""}/reading/${date}`;
+  return `${trackBase(track)}/reading/${date}`;
 }

@@ -90,17 +90,18 @@ export default async function AnalyticsPage({
 
   // Independent reads — overlap them (each is a ~300ms round trip).
   // Locations (rc_access) are owner-only — a parent's page never loads them.
-  const [seniorEvents, juniorEvents, sessionsResult, allUsers, wordAttemptsRaw, places] =
+  const [seniorEvents, juniorEvents, kidsEvents, sessionsResult, allUsers, wordAttemptsRaw, places] =
     await Promise.all([
       loadEvents("senior", since ?? undefined),
       loadEvents("junior", since ?? undefined),
+      loadEvents("kids", since ?? undefined),
       loadSessions(),
       listAllUsers(),
       loadWordQuizAttempts(),
       owner ? loadAccessPlaces(since) : Promise.resolve(null),
     ]);
 
-  if (seniorEvents === null || juniorEvents === null || "error" in sessionsResult) {
+  if (seniorEvents === null || juniorEvents === null || kidsEvents === null || "error" in sessionsResult) {
     return (
       <div>
         <Title>Activity</Title>
@@ -149,8 +150,12 @@ export default async function AnalyticsPage({
   for (const u of active) if (u.role === "parent") parentNames[u.username] = u.displayName;
 
   const data = buildAnalytics({
-    readings: { senior: getAllReadings("senior"), junior: getAllReadings("junior") },
-    events: seniorEvents.concat(juniorEvents).filter(inScopeEvent),
+    readings: {
+      senior: getAllReadings("senior"),
+      junior: getAllReadings("junior"),
+      kids: getAllReadings("kids"),
+    },
+    events: seniorEvents.concat(juniorEvents, kidsEvents).filter(inScopeEvent),
     sessions: terminal.filter(inScopeSession),
     wordAttempts: wordAttempts.filter(inScopeAttempt),
     members,
