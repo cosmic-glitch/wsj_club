@@ -1,0 +1,259 @@
+[
+  {
+    "k": "depleted",
+    "t": "depleted",
+    "kind": "vocab",
+    "pron": "dih-PLEE-tid",
+    "forms": [
+      "depleted"
+    ],
+    "text": "Depleted means used up, with very little left. Quebec's barrels of stored syrup are almost empty.",
+    "audio": true
+  },
+  {
+    "k": "stymie",
+    "t": "stymie",
+    "kind": "vocab",
+    "pron": "STY-mee",
+    "forms": [
+      "stymied"
+    ],
+    "text": "To stymie something is to block it or get in its way so it cannot go forward. Here, strict rules stopped Quebec's farmers from making more syrup.",
+    "audio": true
+  },
+  {
+    "k": "stabilise",
+    "t": "stabilise",
+    "kind": "vocab",
+    "pron": "STAY-buh-lyze",
+    "forms": [
+      "stabilise"
+    ],
+    "text": "To stabilise something is to keep it steady so it does not jump up and down. Here, the goal was prices that do not leap up or crash. Americans spell it stabilize.",
+    "audio": true
+  },
+  {
+    "k": "strategic-reserve",
+    "t": "strategic reserve",
+    "kind": "phrase",
+    "forms": [
+      "strategic maple-syrup reserve",
+      "reserve"
+    ],
+    "text": "A strategic reserve is a big stored supply kept for times when there is not enough. Quebec keeps barrels of syrup so it can be sold after a bad harvest.",
+    "audio": true
+  },
+  {
+    "k": "cartel",
+    "t": "cartel",
+    "kind": "word",
+    "forms": [
+      "cartel"
+    ],
+    "text": "A cartel is a group of sellers who work together to control how much is sold and at what price, instead of competing.",
+    "audio": true
+  },
+  {
+    "k": "sticky-situation",
+    "t": "in a sticky situation",
+    "kind": "phrase",
+    "forms": [
+      "sticky situation"
+    ],
+    "text": "A sticky situation is a tricky problem. It is also a joke here, because syrup is sticky.",
+    "audio": true
+  },
+  {
+    "k": "calamity",
+    "t": "calamity",
+    "kind": "word",
+    "forms": [
+      "calamity"
+    ],
+    "text": "A calamity is a sudden, very bad event that causes a lot of trouble, like a disaster.",
+    "audio": true
+  },
+  {
+    "k": "heist",
+    "t": "heist",
+    "kind": "word",
+    "forms": [
+      "heist"
+    ],
+    "text": "A heist is a big, planned robbery. Thieves really did steal millions of dollars of maple syrup from the reserve.",
+    "audio": true
+  },
+  {
+    "k": "skimmed",
+    "t": "skimmed",
+    "kind": "word",
+    "forms": [
+      "skimmed"
+    ],
+    "text": "To skim usually means to take something off the top. Here it means the thieves slowly took syrup out of the barrels.",
+    "audio": true
+  },
+  {
+    "k": "harvest",
+    "t": "harvest",
+    "kind": "word",
+    "forms": [
+      "harvests",
+      "harvest"
+    ],
+    "text": "A harvest is the amount of a crop gathered in a season. For syrup, farmers collect sap from maple trees each spring.",
+    "audio": true
+  },
+  {
+    "k": "upswing",
+    "t": "upswing",
+    "kind": "word",
+    "forms": [
+      "upswing"
+    ],
+    "text": "An upswing is a rise or increase. Here, more and more people want to buy syrup.",
+    "audio": true
+  },
+  {
+    "k": "tariffs",
+    "t": "tariffs",
+    "kind": "word",
+    "forms": [
+      "tariffs"
+    ],
+    "text": "Tariffs are taxes a country puts on goods that come in from another country. They make those goods cost more.",
+    "audio": true
+  },
+  {
+    "k": "bring-forward",
+    "t": "bring forward",
+    "kind": "phrase",
+    "forms": [
+      "bring forward"
+    ],
+    "text": "To bring something forward is to do it earlier than planned. Some buyers bought syrup sooner, worried about tariffs.",
+    "audio": true
+  },
+  {
+    "k": "refined-sugars",
+    "t": "refined sugars",
+    "kind": "word",
+    "forms": [
+      "refined sugars"
+    ],
+    "text": "Refined sugars are sugars that factories have processed to be pure white, like table sugar. Maple syrup is seen as more natural.",
+    "audio": true
+  },
+  {
+    "k": "wholesale",
+    "t": "wholesale",
+    "kind": "word",
+    "forms": [
+      "wholesale"
+    ],
+    "text": "Wholesale means selling in large amounts to businesses, not to shoppers one jar at a time.",
+    "audio": true
+  },
+  {
+    "k": "bulk",
+    "t": "bulk",
+    "kind": "word",
+    "forms": [
+      "bulk"
+    ],
+    "text": "Bulk means in large amounts. Bulk syrup comes in big barrels, not little bottles.",
+    "audio": true
+  },
+  {
+    "k": "quotas",
+    "t": "quotas",
+    "kind": "vocab",
+    "pron": "KWOH-tuz",
+    "forms": [
+      "quotas"
+    ],
+    "text": "A quota is a limit on how much of something a person or group may make, sell, or take.",
+    "audio": true
+  },
+  {
+    "k": "marketing-restrictions",
+    "t": "marketing restrictions",
+    "kind": "phrase",
+    "forms": [
+      "marketing restrictions"
+    ],
+    "text": "Marketing restrictions are rules about how, where, and when farmers may sell their product.",
+    "audio": true
+  },
+  {
+    "k": "output",
+    "t": "output",
+    "kind": "word",
+    "forms": [
+      "output"
+    ],
+    "text": "Output is the amount of something that is made. Here it is how much syrup farmers produce.",
+    "audio": true
+  },
+  {
+    "k": "quebec",
+    "t": "Quebec",
+    "kind": "name",
+    "forms": [
+      "Quebec",
+      "Quebec’s"
+    ],
+    "text": "Quebec is a large province in eastern Canada. It makes most of the world's maple syrup.",
+    "audio": true
+  },
+  {
+    "k": "new-brunswick",
+    "t": "New Brunswick",
+    "kind": "name",
+    "forms": [
+      "New Brunswick"
+    ],
+    "text": "New Brunswick is a Canadian province next to Quebec. Its syrup production is growing quickly.",
+    "audio": true
+  },
+  {
+    "k": "vermont",
+    "t": "Vermont",
+    "kind": "name",
+    "forms": [
+      "Vermont"
+    ],
+    "text": "Vermont is a US state just south of Canada, known for its maple syrup.",
+    "audio": true
+  },
+  {
+    "k": "spurted",
+    "t": "spurted",
+    "kind": "word",
+    "forms": [
+      "spurted"
+    ],
+    "text": "To spurt is to suddenly shoot up or grow fast, like water squirting out. Here, New Brunswick's syrup output jumped.",
+    "audio": true
+  },
+  {
+    "k": "blend",
+    "t": "blend",
+    "kind": "word",
+    "forms": [
+      "blend"
+    ],
+    "text": "To blend is to mix things together. Buyers mix syrups from different places, then package them.",
+    "audio": true
+  },
+  {
+    "k": "sweet-deal",
+    "t": "sweet deal",
+    "kind": "phrase",
+    "forms": [
+      "sweet deal"
+    ],
+    "text": "A sweet deal is a very good arrangement. It is a pun here, since syrup is sweet.",
+    "audio": true
+  }
+]

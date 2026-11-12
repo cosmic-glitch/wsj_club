@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-12",
+  "title": "Quebec’s strategic maple-syrup reserve is running dry",
+  "articleUrl": "https://www.economist.com/business/2026/11/12/quebecs-strategic-maple-syrup-reserve-is-running-dry",
+  "articlePageUrl": "/articles/junior/2026-11-12.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "depleted",
+      "partOfSpeech": "adjective",
+      "pronunciation": "dih-PLEE-tid",
+      "articleQuote": "has left its barrels depleted",
+      "meaning": "Depleted means used up, with very little left. A phone battery at 2% is depleted, and so is a snack bowl after a sleepover. In the article, Quebec's barrels of stored maple syrup are depleted, and the reserve will be empty by February.",
+      "examples": [
+        "After the big game, the team's water bottles were depleted.",
+        "Our class art supplies were depleted by the end of the project."
+      ]
+    },
+    {
+      "word": "stymie",
+      "partOfSpeech": "verb",
+      "pronunciation": "STY-mee",
+      "articleQuote": "they had stymied the ability of Quebec’s producers to expand their output",
+      "meaning": "To stymie something is to block it or get in its way so it cannot go forward. A locked gate can stymie a runner trying to reach the field, and a bad internet connection can stymie your homework. In the article, strict rules stymied Quebec's farmers from making more syrup.",
+      "examples": [
+        "The heavy rain stymied our plan to have a picnic.",
+        "A missing piece stymied our attempt to finish the puzzle."
+      ]
+    },
+    {
+      "word": "stabilise",
+      "partOfSpeech": "verb",
+      "pronunciation": "STAY-buh-lyze",
+      "articleQuote": "these measures had helped to stabilise prices",
+      "meaning": "To stabilise something is to keep it steady so it does not jump up and down. Putting a folded paper under a wobbly table leg stabilises the table. In the article, rules and a stored supply of syrup helped stabilise prices, so they did not leap up or crash. (Americans usually spell it stabilize.)",
+      "examples": [
+        "The coach tried to stabilise the team by keeping the same lineup all season.",
+        "A heavy base helps stabilise a tall lamp."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Cartel",
+      "articleQuote": "The province’s cartel is losing its grip",
+      "meaning": "Why can one group set the rules for almost all the maple syrup sold in a place? Because it acts as a **cartel**: a group of sellers that work together to control how much is sold and at what price, instead of competing.\n\nImagine every lemonade stand on your street agreeing, \"We will all charge $2, and we will each make only ten cups.\" Nobody undercuts anybody, so prices stay steady and every stand earns a bit.\n\nThe catch is that customers have less choice, and if people suddenly want more lemonade, the stands are not allowed to make it. Also, a stand outside the group may start selling more, and take customers away.\n\nIn the article, the industry group PPAQ controls the wholesale market for Quebec's syrup. That kept prices steady, but Quebec's share of North American syrup fell from 80% to 65% as farmers elsewhere grew.\n\nSo the takeaway: a cartel trades competition for control, which can bring steady prices but also slow growth."
+    },
+    {
+      "name": "Quota",
+      "articleQuote": "introduced strict marketing restrictions and output quotas",
+      "meaning": "What does it mean when farmers are given \"output quotas\"? A **quota** is a limit on how much of something a person or group is allowed to make, sell, or take.\n\nThink of a class pizza party where each kid is allowed two slices. The quota makes sure everyone gets a share and the pizza lasts.\n\nQuotas can be fair and protect against waste or oversupply. But they can also be a problem when more is needed, because even a kid who is still hungry cannot take a third slice.\n\nIn the article, Quebec's syrup producers were given quotas on how much they could make. That helped keep prices steady, but when demand for syrup shot up, the farmers could not simply make more.\n\nSo the takeaway: a quota is a cap that shares things out and keeps supply steady, but it can leave people short when demand grows."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why is Quebec's strategic maple-syrup reserve in trouble?",
+      "options": [
+        "It is running out of syrup, and will be empty by February",
+        "Too many barrels were made",
+        "The barrels leaked in a flood",
+        "Nobody wants to buy syrup"
+      ],
+      "answerIndex": 0,
+      "explanation": "Poor harvests and growing demand have left the barrels depleted."
+    },
+    {
+      "question": "What was the reserve set up in 2000 to do?",
+      "options": [
+        "Give syrup away to schools",
+        "Help keep prices and supply steady",
+        "Sell syrup only to Americans",
+        "Teach farmers new methods"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says it was established to stabilise prices and supply."
+    },
+    {
+      "question": "Which of these is given as a reason demand for syrup has gone up?",
+      "options": [
+        "Syrup has become much cheaper",
+        "Fewer people eat pancakes",
+        "Some buyers bought early because of uncertainty over American tariffs",
+        "Quebec made much less than before"
+      ],
+      "answerIndex": 2,
+      "explanation": "Tariff uncertainty led some buyers to bring forward purchases, and people are also moving away from refined sugar."
+    },
+    {
+      "question": "What did the Vermont researchers find about Quebec's rules and quotas?",
+      "options": [
+        "They helped keep prices steady but held back Quebec's farmers from making more",
+        "They made syrup taste better",
+        "They had no effect at all",
+        "They let farmers sell to anyone"
+      ],
+      "answerIndex": 0,
+      "explanation": "The rules steadied prices but stymied the ability of producers to expand output."
+    },
+    {
+      "question": "What has happened to Quebec's share of North American syrup production?",
+      "options": [
+        "It grew from 65% to 80%",
+        "It stayed exactly the same",
+        "It fell from about 80% to 65%",
+        "It dropped to zero"
+      ],
+      "answerIndex": 2,
+      "explanation": "Between 1999 and 2005 Quebec made 80%; by 2023 it was 65%, as New Brunswick and Vermont grew."
+    }
+  ]
+}
