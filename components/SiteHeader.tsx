@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import HeaderContainer from "./HeaderContainer";
 import HomeAuthBar from "./HomeAuthBar";
-import { TRACKS, TRACK_LABEL, trackBase, trackOfPath, type Track } from "@/lib/track";
+import { TRACKS, TRACK_LABEL, levelHash, trackOfPath, type Track } from "@/lib/track";
 
 /** The level a page belongs to, or null for level-less pages (Guide, admin). */
 function levelOfPath(pathname: string | null): Track | null {
@@ -31,10 +31,10 @@ function levelOfPath(pathname: string | null): Track | null {
 export default function SiteHeader() {
   const pathname = usePathname();
 
-  // The monogram links back to the index of whichever track you're in, so a
-  // middle-school handout's "RC" opens the home page on its own tab.
-  const homeHref = trackBase(trackOfPath(pathname)) || "/";
+  // The monogram links back to the home page, opened on the tab of whichever
+  // level you're in (a middle-school handout's "RC" opens Middle School).
   const level = levelOfPath(pathname);
+  const homeHref = level ? `/${levelHash(level)}` : "/";
 
   return (
     <header className="border-b-2 border-[#0a0a0a] bg-white">
@@ -59,7 +59,7 @@ export default function SiteHeader() {
             {TRACKS.map((t) => (
               <Link
                 key={t}
-                href={trackBase(t) || "/"}
+                href={`/${levelHash(t)}`}
                 aria-current={level === t ? "page" : undefined}
                 className={`px-1.5 py-0.5 font-mono text-[11px] font-bold uppercase tracking-[.12em] no-underline ${
                   level === t

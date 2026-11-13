@@ -1,10 +1,10 @@
 import { currentUserRecord } from "@/lib/auth";
 import { getAllReadings, getReading, type Track } from "@/lib/content";
 import { loadSessions } from "@/lib/sessions";
-import { loadMarksFor, medalsOf, recordMark } from "@/lib/marks";
-import { streakOf, type MarkLevel } from "@/lib/medals";
+import { loadAllMarksFor, medalsOf, recordMark } from "@/lib/marks";
+import { clubStreak, type MarkLevel } from "@/lib/medals";
 import { classroomOf } from "@/lib/users";
-import { parseTrack } from "@/lib/track";
+import { TRACKS, parseTrack } from "@/lib/track";
 
 /**
  * The daily medals API — for EVERY active login: parents read too (the
@@ -12,7 +12,9 @@ import { parseTrack } from "@/lib/track";
  * exactly like a student; their marks are stamped to their own classroom.
  *
  *   GET  /api/medals?track=&today=  → the CALLER's per-date medal map on a
- *                                     track + their streak.
+ *                                     track, plus their ONE streak across
+ *                                     every level (`streak`) and the best
+ *                                     medal per day (`days`) for the ribbon.
  *   POST /api/medals                → record an attestation {track, date,
  *                                     level: 1 (read the article) | 2 (read
  *                                     the handout), today}; replies with the
@@ -44,16 +46,23 @@ async function viewer() {
 }
 
 async function payload(username: string, track: Track, today: string) {
-  const [sessions, marks] = await Promise.all([loadSessions(), loadMarksFor(username, track)]);
+  const [sessions, marks] = await Promise.all([loadSessions(), loadAllMarksFor(username)]);
   if (!Array.isArray(sessions)) {
     return Response.json({ error: sessions.error }, { status: 500 });
   }
   if (!marks) {
     return Response.json({ error: "Couldn't load your medals." }, { status: 500 });
   }
-  const medals = medalsOf(marks, sessions, username, track);
-  const dates = getAllReadings(track).map((r) => r.date);
-  return Response.json({ medals, streak: streakOf(dates, medals, today) });
+  // The streak is the member's one chain across every level (lib/medals.ts
+  // clubStreak); `medals` stays the requested track's per-reading map.
+  const perTrack = TRACKS.map((t) => ({
+    track: t,
+    dates: getAllReadings(t).map((r) => r.date),
+    medals: medalsOf(marks, sessions, username, t),
+  }));
+  const medals = perTrack.find((p) => p.track === track)!.medals;
+  const { streak, days } = clubStreak(perTrack, today);
+  return Response.json({ medals, streak, days });
 }
 
 export async function GET(request: Request) {

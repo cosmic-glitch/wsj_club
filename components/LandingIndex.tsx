@@ -5,10 +5,8 @@ import MoreReadings from "@/components/MoreReadings";
 import StreakStrip from "@/components/StreakStrip";
 import TodayTag from "@/components/TodayTag";
 import VoiceQuizStep from "@/components/VoiceQuizStep";
-import VotePoll from "@/components/VotePoll";
 import LevelTabs from "@/components/LevelTabs";
 import { type Reading, type Track } from "@/lib/content";
-import type { PublicPoll } from "@/lib/polls";
 import { TRACKS, TRACK_LABEL, trackBase } from "@/lib/track";
 
 // How many rows the index shows up front; everything older collapses behind
@@ -41,23 +39,44 @@ const btn =
 const stepArrow =
   "self-center text-[11px] font-bold leading-none text-stone-500 group-hover:text-stone-400";
 
-/** The level's newest reading as a "today" card body: date + medal, title, the three steps. */
-function LaneReading({ r, track, highlight }: { r: Reading; track: Track; highlight: boolean }) {
+/**
+ * One level's card in the newest-readings row: the level as its black head
+ * (with the viewer's medal for the reading), the title, the three steps. The
+ * date lives ONCE, in the section heading above the cards; a card carries its
+ * own date only when its reading is older than that (a level that hasn't
+ * published the newest day yet), and then it drops the yellow.
+ */
+function LevelCard({ r, track, latest }: { r: Reading | undefined; track: Track; latest: string }) {
+  const current = r?.date === latest;
   return (
-    <div
-      className={`group px-3.5 py-3 hover:bg-[#0a0a0a] hover:text-white ${highlight ? "bg-[#ffe600]" : ""}`}
+    <section
+      aria-label={TRACK_LABEL[track]}
+      className={`group flex flex-col border-[3px] border-[#0a0a0a] ${current ? "bg-[#ffe600]" : "bg-white"} hover:bg-[#0a0a0a] hover:text-white`}
     >
-      <div className="flex items-center text-xs font-bold uppercase tracking-[.06em] group-hover:text-[#ffe600]">
-        {highlight ? "" : "Latest · "}
-        {dateTag(r.date)}
-        <RowMedal date={r.date} className="ml-2 text-[13px]" />
-        <TodayTag date={r.date} />
-      </div>
-      <p className="mt-1.5 font-sans text-[17px] font-bold leading-[1.3] tracking-[-.01em] group-hover:text-[#ffe600]">
-        {r.title}
-      </p>
-      <ReadingSteps r={r} track={track} className="mt-2.5" />
-    </div>
+      <h3 className="flex items-center bg-[#0a0a0a] px-3 py-1.5 font-mono text-[11px] font-bold uppercase tracking-[.14em] text-[#ffe600]">
+        {TRACK_LABEL[track]}
+        {r && <RowMedal date={r.date} className="ml-auto text-[13px]" />}
+      </h3>
+      {r ? (
+        <div className="flex flex-1 flex-col px-3 pb-3 pt-2">
+          {!current && (
+            <p className="mb-1 text-[10.5px] font-bold uppercase tracking-[.08em] text-stone-500 group-hover:text-stone-400">
+              {dateTag(r.date)}
+            </p>
+          )}
+          <p className="font-sans text-[16px] font-bold leading-[1.3] tracking-[-.01em] group-hover:text-[#ffe600]">
+            {r.title}
+          </p>
+          {/* mt-auto: the steps sit on the card's bottom edge, so the three
+              cards' buttons line up however long each title runs. */}
+          <ReadingSteps r={r} track={track} className="mt-auto pt-2.5" />
+        </div>
+      ) : (
+        <p className="px-3 py-2.5 font-sans text-[14px] text-stone-500">
+          The first reading will appear here.
+        </p>
+      )}
+    </section>
   );
 }
 
@@ -113,65 +132,37 @@ function ArchiveRow({ r, track }: { r: Reading; track: Track }) {
 
 /**
  * The home page — ONE page for all three levels (High School, Middle School,
- * Elementary), served at "/", "/middle-school" and "/elementary"; `initial` is
- * only which archive tab opens. Top to bottom: the topline (auth links), the
- * Anton masthead, the deck, then TODAY — a card per level with its live vote
- * and its newest reading — then ALL READINGS, the per-level archive behind
- * LevelTabs (each panel with that level's streak ribbon).
+ * Elementary), at "/" (the old per-level URLs redirect here). Top to bottom:
+ * the topline (auth links), the Anton masthead, the viewer's ONE streak
+ * ribbon (logged in), the deck, then the newest day — its date said once,
+ * then a compact card per level — then OLDER READINGS, the per-level archive
+ * behind LevelTabs (each level's newest reading lives only in its card).
  *
- * Every level's medals come from its own MedalsProvider; the card and the
- * archive panel each mount one, and Medals.tsx shares the in-flight request,
- * so it is one /api/medals fetch per level.
+ * Medals: every MedalsProvider of a level shares one /api/medals request
+ * (Medals.tsx), and the streak ribbon rides the High School one (the streak
+ * is the same in every level's response).
  */
 export default function LandingIndex({
   readings,
-  polls,
-  initial = "senior",
 }: {
   readings: Record<Track, Reading[]>;
-  /** Each level's live vote poll as of the page's (ISR) render, or null. */
-  polls: Record<Track, PublicPoll | null>;
-  initial?: Track;
 }) {
-  const lane = (t: Track) => {
-    const newest = readings[t][0];
-    const poll = polls[t];
-    return (
-      <MedalsProvider key={t} track={t}>
-        <section
-          aria-label={TRACK_LABEL[t]}
-          className="flex flex-col border-[3px] border-[#0a0a0a] bg-white"
-        >
-          <h2 className="bg-[#0a0a0a] px-3.5 py-2 font-mono text-[12px] font-bold uppercase tracking-[.14em] text-[#ffe600]">
-            {TRACK_LABEL[t]}
-          </h2>
-          {/* The live vote heads the card; it renders nothing once the poll
-              closes (the day's reading is published). */}
-          <VotePoll track={t} initial={poll} layout="lane" />
-          {newest ? (
-            <LaneReading r={newest} track={t} highlight={!poll} />
-          ) : (
-            <p className="px-3.5 py-3 font-sans text-[14px] text-stone-500">
-              The first reading will appear here.
-            </p>
-          )}
-        </section>
-      </MedalsProvider>
-    );
-  };
+  // The newest date any level has published — the one date the cards share.
+  const latest = TRACKS.map((t) => readings[t][0]?.date ?? "").sort().reverse()[0] ?? "";
+  // The club days, newest first: the streak ribbon's squares.
+  const clubDays = [...new Set(TRACKS.flatMap((t) => readings[t].map((r) => r.date)))]
+    .sort()
+    .reverse();
 
   const panel = (t: Track) => {
-    const list = readings[t];
+    const list = readings[t].slice(1); // the newest is in its card above
     const upfront = list.slice(0, VISIBLE_COUNT);
     const older = list.slice(VISIBLE_COUNT);
     return (
       <MedalsProvider track={t}>
-        {/* The viewer's streak ribbon for this level (renders nothing for
-            logged-out visitors). */}
-        <StreakStrip dates={list.map((r) => r.date)} />
         {list.length === 0 ? (
           <p className="border-[3px] border-[#0a0a0a] p-8 text-center text-sm font-bold uppercase tracking-[.08em]">
-            No {TRACK_LABEL[t].toLowerCase()} readings yet.
+            No older {TRACK_LABEL[t].toLowerCase()} readings yet.
           </p>
         ) : (
           <ul className="border-[3px] border-[#0a0a0a]">
@@ -192,7 +183,7 @@ export default function LandingIndex({
   };
 
   const sectionLabel =
-    "mt-[30px] mb-2.5 font-mono text-[12px] font-bold uppercase tracking-[.2em] text-[#0a0a0a]";
+    "mt-[30px] mb-2.5 flex items-center font-mono text-[12px] font-bold uppercase tracking-[.2em] text-[#0a0a0a]";
 
   return (
     // Full-bleed breakout of the site-wide max-w-3xl column (the same
@@ -223,6 +214,11 @@ export default function LandingIndex({
         </div>
       </header>
 
+      {/* ---- the viewer's one streak, across every level (nothing logged out) ---- */}
+      <MedalsProvider track="senior">
+        <StreakStrip dates={clubDays} />
+      </MedalsProvider>
+
       <div className="mx-auto max-w-[980px] px-[18px]">
         {/* The deck: what this is, in the two seconds a newcomer gives us. */}
         <div className="mt-[17px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] p-4 shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a] motion-reduce:animate-none">
@@ -230,8 +226,8 @@ export default function LandingIndex({
             One hand-picked article a day for high schoolers, middle schoolers
             and elementary schoolers. Every day you read earns a medal: bronze
             🥉 for reading the article, silver 🥈 for reading the handout, gold
-            🥇 for explaining it to an AI tutor. Any medal keeps your streak
-            alive.{" "}
+            🥇 for explaining it to an AI tutor. A medal on any level keeps
+            your streak alive.{" "}
             <Link
               href="/guide"
               className="ml-2 whitespace-nowrap font-mono text-[11.5px] font-bold uppercase tracking-[.08em] underline decoration-2 underline-offset-4 hover:bg-[#ffe600]"
@@ -241,16 +237,24 @@ export default function LandingIndex({
           </p>
         </div>
 
-        {/* ---- today, every level ---- */}
-        <h2 className={sectionLabel}>Today</h2>
-        <div className="grid animate-brutal-stamp-delayed grid-cols-1 gap-4 motion-reduce:animate-none min-[820px]:grid-cols-3">
-          {TRACKS.map(lane)}
+        {/* ---- the newest day, every level: the date said once ---- */}
+        {latest && (
+          <h2 className={sectionLabel}>
+            {dateTag(latest)}
+            <TodayTag date={latest} />
+          </h2>
+        )}
+        <div className="grid animate-brutal-stamp-delayed grid-cols-1 gap-3 motion-reduce:animate-none min-[820px]:grid-cols-3 min-[820px]:gap-4">
+          {TRACKS.map((t) => (
+            <MedalsProvider key={t} track={t}>
+              <LevelCard r={readings[t][0]} track={t} latest={latest} />
+            </MedalsProvider>
+          ))}
         </div>
 
         {/* ---- the archive, by level ---- */}
-        <h2 className={sectionLabel}>All readings</h2>
+        <h2 className={sectionLabel}>Older readings</h2>
         <LevelTabs
-          initial={initial}
           panels={{ senior: panel("senior"), junior: panel("junior"), kids: panel("kids") }}
         />
 

@@ -119,7 +119,7 @@ try {
     );
     console.log(`Vote for ${date} (${track}) is LIVE with ${candidates.length} candidates:`);
     for (const c of candidates) console.log(`  [${c.source}${c.kind === "enrichment" ? " · enrichment" : ""}] ${c.title}  (id: ${c.id})`);
-    console.log(`\nShows at the top of https://dailyreadingclub.com${{ senior: "", junior: "/middle-school", kids: "/elementary" }[track]} until the day's ${track} reading is published.`);
+    console.log(`\nVote at https://dailyreadingclub.com/vote (owner only) until the day's ${track} reading is published.`);
   }
 } finally {
   await client.end();

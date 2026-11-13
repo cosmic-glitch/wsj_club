@@ -10,19 +10,19 @@ import {
 } from "@/lib/medals";
 
 /**
- * The personal streak ribbon — a full-width black bar under the masthead,
- * STUDENTS ONLY (a parent/owner earns no medals, so they never see it):
- * "N-DAY STREAK · BEST N · N GOLD" over the track's last 14 readings as
- * squares, each carrying the day's medal (🥉 read the article, 🥈 finished
- * the handout, 🥇 did the AI quiz), dashed = today's still open, dark =
- * missed. A legend on the right names the three rungs.
+ * The personal streak ribbon — a full-width black bar under the home page's
+ * masthead, for every login (parents earn medals too); nothing logged out.
+ * ONE streak across all three levels (owner's rule): a day counts if the
+ * member earned a medal on any level's reading of that date. "N-DAY STREAK ·
+ * BEST N · N GOLD …" over the last 14 club days as squares, each carrying the
+ * day's best medal (🥉 read the article, 🥈 finished the handout, 🥇 did the
+ * AI quiz), dashed = today's still open, dark = missed. The medal counts
+ * count every reading on every level.
  *
- * The data comes from the page's MedalsProvider (one fetch shared with the
- * index rows); the streak itself is computed server-side by lib/medals.ts
- * streakOf — ANY medal keeps the chain alive, a day with no published
- * reading can't break it, today's not-yet-touched reading doesn't either;
- * only a missed PAST reading resets it. "Today" is the viewer's local date,
- * same as TodayTag.
+ * The data comes from the page's MedalsProvider (any track's — the streak and
+ * the per-day map are the same in each); the streak itself is computed
+ * server-side by lib/medals.ts clubStreak. "Today" is the viewer's local
+ * date, same as TodayTag.
  */
 
 /** "2026-07-08" → "Jul 8" — same as LandingIndex's dateTag. */
@@ -38,7 +38,7 @@ function dateTag(date: string): string {
 export default function StreakStrip({
   dates,
 }: {
-  /** The track's reading dates, newest first (the index order). */
+  /** The club days (every date any level published), newest first. */
   dates: string[];
 }) {
   const { loggedIn, state, failed } = useMedals();
@@ -56,7 +56,7 @@ export default function StreakStrip({
     return (
       <div className="bg-[#0a0a0a] text-white" aria-hidden="true">
         <div className="mx-auto max-w-[980px] px-[18px] pb-3 pt-2.5">
-          <div className="mb-2 h-[15px]" />
+          <div className="mb-2 min-h-[15px]" />
           <div className="flex gap-1">
             {shown.map((d) => (
               <div key={d} className="h-5 flex-1 border border-[#3a3a3a]" />
@@ -68,7 +68,7 @@ export default function StreakStrip({
     );
   }
 
-  const { medals, streak } = state;
+  const { days, streak } = state;
 
   const square = (d: string, medal: Medal | undefined) => {
     if (medal) {
@@ -100,11 +100,15 @@ export default function StreakStrip({
   return (
     <div className="bg-[#0a0a0a] text-white">
       <div className="mx-auto max-w-[980px] px-[18px] pb-3 pt-2.5">
-        <div className="mb-2 flex h-[15px] items-baseline justify-between gap-3 text-[9px] font-bold uppercase tracking-[.15em]">
-          <span className="whitespace-nowrap">
-            <span className="text-[#ffe600]">{streak.current}-day streak</span>
+        {/* The head line may wrap on a phone (the medal tally runs long) —
+            it used to be one nowrap line and ran off the screen's edge. */}
+        <div className="mb-2 flex min-h-[15px] items-baseline justify-between gap-3 text-[9px] font-bold uppercase leading-[15px] tracking-[.15em]">
+          <span className="flex flex-wrap gap-x-[.6em]">
+            <span className="whitespace-nowrap text-[#ffe600]">{streak.current}-day streak</span>
             {/* "Best" is noise when the current streak IS the best. */}
-            {streak.best > streak.current && <>{" · "}Best {streak.best}</>}
+            {streak.best > streak.current && (
+              <span className="whitespace-nowrap">· Best {streak.best}</span>
+            )}
             {/* The tally of medals actually held, highest rung first — a
                 rung with none is left out, so a bronze-only reader sees
                 "3 bronze", not "0 gold". */}
@@ -112,9 +116,8 @@ export default function StreakStrip({
               .reverse()
               .filter((m) => streak.counts[m] > 0)
               .map((m) => (
-                <span key={m}>
-                  {" · "}
-                  {streak.counts[m]} {m}
+                <span key={m} className="whitespace-nowrap">
+                  · {streak.counts[m]} {m}
                 </span>
               ))}
           </span>
@@ -130,7 +133,7 @@ export default function StreakStrip({
             ))}
           </span>
         </div>
-        <div className="flex gap-1">{shown.map((d) => square(d, medals[d]))}</div>
+        <div className="flex gap-1">{shown.map((d) => square(d, days[d]))}</div>
         <div className="mt-[5px] flex justify-between text-[7.5px] font-bold uppercase tracking-[.12em] text-stone-400">
           <span>{dateTag(shown[0])}</span>
           <span className={newest >= today ? "text-[#ffe600]" : ""}>

@@ -43,7 +43,9 @@ import {
 
 export const MEDAL_EVENT = "rc:medal";
 
-export type MedalsState = { medals: MedalMap; streak: Streak };
+/** `medals` = this track's per-reading map; `streak` + `days` (best medal per
+ *  day) are the member's ONE cross-level streak, the same in every track's state. */
+export type MedalsState = { medals: MedalMap; streak: Streak; days: MedalMap };
 
 type MedalsContext = {
   /** True once the auth state is known. */
@@ -65,7 +67,9 @@ const Ctx = createContext<MedalsContext>({
   mark: async () => null,
 });
 
-const CACHE_PREFIX = "rc-medals:";
+// v2: the streak became cross-level — a new prefix so nobody's first paint
+// shows their old per-level number from the v1 cache.
+const CACHE_PREFIX = "rc-medals2:";
 
 /** Medal fetches in flight, by track + day — see MedalsProvider's load(). */
 const inflight = new Map<string, Promise<MedalsState | null>>();
@@ -89,9 +93,10 @@ function writeCache(user: string, track: Track, s: MedalsState) {
 
 function parseState(d: unknown): MedalsState | null {
   if (!d || typeof d !== "object") return null;
-  const o = d as { medals?: unknown; streak?: unknown };
+  const o = d as { medals?: unknown; streak?: unknown; days?: unknown };
   if (!o.medals || typeof o.medals !== "object" || !o.streak) return null;
-  return { medals: o.medals as MedalMap, streak: o.streak as Streak };
+  const days = o.days && typeof o.days === "object" ? (o.days as MedalMap) : {};
+  return { medals: o.medals as MedalMap, streak: o.streak as Streak, days };
 }
 
 export function MedalsProvider({

@@ -44,7 +44,7 @@ function StatusBox({ children }: { children: React.ReactNode }) {
  * personal is the FILTER — after mount this asks /api/quiz-dates for the
  * logged-in user's own finished dates — handout marked done (silver) or
  * quizzed (gold); identity from the cookie — and
- * shows only those days (the TodayTag/VotePoll recipe: the page stays
+ * shows only those days (the TodayTag recipe: the page stays
  * prerendered, the personal bit hydrates in). Logged out → a log-in prompt.
  *
  * Rendered as one row per finished reading, NEWEST FIRST — the date is the

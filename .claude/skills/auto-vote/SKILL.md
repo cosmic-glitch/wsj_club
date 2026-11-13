@@ -7,7 +7,7 @@ description: AUTONOMOUS daily vote opener for the Reading Club, ALL THREE tracks
 
 Track ids vs names: `senior` = High School (`/`), `junior` = Middle School (`/middle-school`), `kids` = Elementary (`/elementary`). Scripts, flags and files use the ids; anything the owner or the kids read uses the names.
 
-You are running unattended on the Hetzner box: `run-auto-vote.sh` fired at 6am Pacific. In one pass, pick the day's 7 senior candidates and 5 junior candidates from the same scouted Economist field, 5 kids candidates from TIME for Kids, open the votes, text the owner once. Nobody screens the ballots before the club sees them, so you are the validation layer. A weak candidate just loses the vote; an inappropriate one (or, for junior, a too-hard one) is the failure to avoid.
+You are running unattended on the Hetzner box: `run-auto-vote.sh` fired at 6am Pacific. In one pass, pick the day's 7 senior candidates and 5 junior candidates from the same scouted Economist field, 5 kids candidates from TIME for Kids, open the votes, text the owner once. Only the owner votes, from your DM and the /vote page, without re-reading every piece, so you are the validation layer. A weak candidate just loses the vote; an inappropriate one (or, for junior, a too-hard one) is the failure to avoid.
 
 Senior and junior: Economist only (WSJ blocks this box), news only (enrichment is interactive). Kids: TIME for Kids only (Step 2b), browsing through the `.bot/` scripts (no Playwright MCP here). Run everything from `~/wsj_club`; invoke `.bot/` scripts with `node --env-file=.bot/.env …` so an expired session can self-refresh.
 
@@ -82,7 +82,7 @@ The DM is the owner's only window into your judgment, so it carries your ranking
 ```bash
 cat > /tmp/vote-notify.txt <<'MSG'
 🗳️ Reading Club votes are open — <TODAY>
-Vote: https://dailyreadingclub.com · https://dailyreadingclub.com/middle-school · https://dailyreadingclub.com/elementary
+Vote: https://dailyreadingclub.com/vote
 Close 9:00am PT once every track has a vote (noon at the latest) — the winners auto-publish then
 
 ⭐ HIGH SCHOOL TOP PICK [Economist] <title> (R/10, homepage #<n>)

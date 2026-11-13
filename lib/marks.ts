@@ -64,6 +64,16 @@ export async function loadMarksFor(
   return rows.flatMap((r) => rowToMark(r) ?? []);
 }
 
+/** One member's marks on every track (the cross-level streak needs them all). */
+export async function loadAllMarksFor(username: string): Promise<ReadingMark[] | null> {
+  const rows = await dbSelect(
+    "rc_reading_marks",
+    `?username=eq.${encodeURIComponent(username)}&${SELECT}`,
+  );
+  if (!rows) return null;
+  return rows.flatMap((r) => rowToMark(r) ?? []);
+}
+
 /**
  * Record an attestation. A mark only goes UP: an existing row at the same or
  * a higher level is left alone (the response still reports the level held).

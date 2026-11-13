@@ -2,10 +2,13 @@
  * The reading tracks, client-safe (no fs). The ids are INTERNAL names, never
  * shown: people see TRACK_LABEL and the URL prefix from trackBase.
  *
- * - `senior` = High School, the original club, at `/`. It keeps every
- *   date-keyed path bare.
- * - `junior` = Middle School (PLAN-junior.md), at `/middle-school`.
- * - `kids`   = Elementary (articles from kids' news sites), at `/elementary`.
+ * - `senior` = High School, the original club. It keeps every date-keyed
+ *   path bare.
+ * - `junior` = Middle School (PLAN-junior.md), routes under `/middle-school`.
+ * - `kids`   = Elementary (articles from kids' news sites), under `/elementary`.
+ *
+ * All three share ONE home page at "/"; the bare `/middle-school` and
+ * `/elementary` redirect there, onto their tab (next.config.ts, levelHash).
  *
  * The site names school levels only, never grade numbers (owner's rule); the
  * grade calibration lives in the authoring skills.
@@ -47,6 +50,15 @@ export const TRACK_SLUG: Record<Track, string> = {
   junior: "middle-school",
   kids: "elementary",
 };
+
+/**
+ * The home page's link to a level's archive tab: "/#middle-school",
+ * "/#elementary", "/#high-school". The site has ONE home URL; the hash only
+ * picks the tab (components/LevelTabs.tsx).
+ */
+export function levelHash(track: Track): string {
+  return `#${TRACK_SLUG[track] || "high-school"}`;
+}
 
 /** The URL prefix of a track's routes: "" or "/middle-school" / "/elementary". */
 export function trackBase(track: Track): string {

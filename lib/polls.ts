@@ -2,10 +2,7 @@ import { dbSelect } from "@/lib/db";
 import { getReading, type Track } from "@/lib/content";
 
 /**
- * The daily vote's read side, shared by /api/vote (fresh, per request) and the
- * track index pages (ISR — `publicPoll` renders the live poll into the static
- * page so the vote row is there from the first paint instead of popping in
- * above the readings after a client fetch).
+ * The daily vote's read side, for /api/vote (the owner's /vote page).
  *
  * "Active" is derived, never a flag: the track's NEWEST poll is live iff no
  * reading ON THAT TRACK is published for its date. Publishing the day's
@@ -27,13 +24,6 @@ export type VoteCandidate = {
 export type DbPoll = { id: string; date: string; candidates: VoteCandidate[] };
 
 export type Ballot = { user: string; candidateId: string };
-
-/** The public face of a live poll — what anyone, logged in or not, may see. */
-export type PublicPoll = {
-  date: string;
-  candidates: VoteCandidate[];
-  totalVotes: number;
-};
 
 type ReadOpts = { revalidate?: number };
 
@@ -87,29 +77,4 @@ export async function activePoll(
   const candidates = r.candidates as VoteCandidate[];
   if (!Array.isArray(candidates) || candidates.length === 0) return null;
   return { id: String(r.id), date, candidates };
-}
-
-/**
- * The live poll's public fields for an ISR render (cached `revalidate`
- * seconds, matching the page's own window). Never throws: a failed read
- * renders the page without the row, and VotePoll's client fetch still
- * brings it in.
- */
-export async function publicPoll(
-  track: Track,
-  revalidate: number
-): Promise<PublicPoll | null> {
-  try {
-    const poll = await activePoll(track, { revalidate });
-    if (!poll) return null;
-    const ballots = await readBallots(poll.id, { revalidate });
-    return {
-      date: poll.date,
-      candidates: poll.candidates,
-      totalVotes: totalOf(tallyOf(poll, ballots)),
-    };
-  } catch (err) {
-    console.error("Rendering the vote row failed:", err);
-    return null;
-  }
 }

@@ -101,8 +101,10 @@ type SessionDetail = {
 // Track-aware hrefs — a non-senior track lives under its prefix (senior unchanged).
 const readingHref = (track: SubTrack | undefined, date: string) =>
   `${trackBase(track ?? "senior")}/reading/${date}`;
+// The ONE home page hosts every level's launchers and dates repeat across
+// levels, so the link names the track too (VoiceQuiz matches both).
 const resumeHref = (track: SubTrack | undefined, date: string) =>
-  `${trackBase(track ?? "senior") || "/"}?resume=${date}`;
+  `/?resume=${date}&track=${track ?? "senior"}`;
 
 /**
  * Format an ISO timestamp in the *viewer's* local timezone. Done client-side

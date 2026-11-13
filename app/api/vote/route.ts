@@ -1,33 +1,27 @@
-import { currentUser } from "@/lib/auth";
+import { currentUser, isOwner } from "@/lib/auth";
 import { dbUpsert } from "@/lib/db";
 import { parseTrack } from "@/lib/track";
 import { activePoll, readBallots, tallyOf, totalOf } from "@/lib/polls";
 
 /**
- * The daily article vote — the TODAY'S READ — YOU DECIDE row
- * (components/VotePoll.tsx) on every track index ("/", "/middle-school", "/elementary").
+ * The daily article vote — OWNER ONLY (owner's rule: nobody else voted, so
+ * the vote left the home page). The owner votes on /vote
+ * (components/OwnerVote.tsx), linked from the 6am autopilot DM.
  *
- *   GET  — the active poll (public) with the TOTAL ballots-cast count (public
- *          to everyone — participation, not preference), plus — for a
- *          logged-in caller — their own ballot and, once they've voted, the
- *          per-candidate tally. Counts only, never voter names (names are
- *          owner-side, via scripts/check-vote.mjs).
- *   POST — cast or change the caller's vote (login-gated; one login = one
- *          ballot, overwritten in place to change).
+ *   GET  — the track's live poll: `active`, `date`, `candidates` for anyone
+ *          (the autopilot's outcome check and the vote skills read it to
+ *          confirm a poll opened; the site shows it to nobody). The owner
+ *          also gets their own ballot and the tally.
+ *   POST — cast or change the owner's vote (one ballot per poll, overwritten
+ *          in place). Anyone else gets 403.
  *
  * Storage (Postgres): rc_polls holds the poll definition (written by
- * scripts/open-vote.mjs, never by this route); rc_ballots holds one row per
- * (poll, voter) — the PK, so one login = one vote and a change is an upsert.
- * Identity ALWAYS comes from the cookie, never the body.
+ * scripts/open-vote.mjs / .bot/open-vote.mjs, never by this route); rc_ballots
+ * one row per (poll, voter) — the PK. The tally scripts count every ballot;
+ * the owner's is the only one this route accepts now. Identity ALWAYS comes
+ * from the cookie, never the body; `track` is only a label.
  *
- * `track` is a LABEL from the request (GET `?track=`, POST body; default
- *  senior at this API boundary, like the quiz routes) — never identity. A
- *  forged track only points the caller at another track's poll, which any
- *  login may vote in anyway. The tracks' polls are fully independent: each track's
- *  index shows only its own poll, and each closes on its own reading.
- *
- * Which poll is live (derived, never a flag) lives in lib/polls.ts, shared
- * with the index pages' server render of the vote row.
+ * Which poll is live (derived, never a flag) lives in lib/polls.ts.
  */
 
 export async function GET(request: Request) {
@@ -37,29 +31,22 @@ export async function GET(request: Request) {
     if (!poll) return Response.json({ active: false });
 
     const user = await currentUser();
-    // The TOTAL ballots-cast count is public — everyone (logged in or not)
-    // sees participation. The PER-CANDIDATE tally stays hidden until the
-    // caller has voted (keeps the first vote un-herded): a bare total can't
-    // herd anyone toward a candidate.
+    if (!isOwner(user)) {
+      return Response.json({ active: true, date: poll.date, candidates: poll.candidates });
+    }
     const ballots = await readBallots(poll.id);
     const tally = tallyOf(poll, ballots);
-    const totalVotes = totalOf(tally);
-    const yourVote = user
-      ? (ballots.find((b) => b.user === user)?.candidateId ?? null)
-      : null;
-
     return Response.json({
       active: true,
       date: poll.date,
       candidates: poll.candidates,
       user,
-      yourVote,
-      totalVotes,
-      ...(yourVote ? { tally } : {}),
+      yourVote: ballots.find((b) => b.user === user)?.candidateId ?? null,
+      tally,
+      totalVotes: totalOf(tally),
     });
   } catch (err) {
-    // The vote row is progressive enhancement on a static page — degrade to
-    // "no poll" rather than erroring the home page's fetch.
+    // Degrade to "no poll" rather than erroring.
     console.error("Loading the vote failed:", err);
     return Response.json({ active: false });
   }
@@ -69,6 +56,9 @@ export async function POST(request: Request) {
   const user = await currentUser();
   if (!user) {
     return Response.json({ error: "Not logged in." }, { status: 401 });
+  }
+  if (!isOwner(user)) {
+    return Response.json({ error: "Only the club owner votes." }, { status: 403 });
   }
 
   let body: { date?: unknown; candidateId?: unknown; track?: unknown };

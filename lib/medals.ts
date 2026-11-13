@@ -89,7 +89,8 @@ export function medalsFor(
 }
 
 /**
- * The streak over a track's reading dates (NEWEST FIRST — the index order).
+ * A streak over a list of dates (NEWEST FIRST). clubStreak feeds it the club
+ * days across every level — the one streak the site shows.
  * `today` is the viewer's local date: today's (or a future) reading with no
  * medal doesn't break the chain, only a missed PAST reading does. A day with
  * no published reading can't break it either — the chain counts readings,
@@ -118,6 +119,38 @@ export function streakOf(dates: string[], medals: MedalMap, today: string): Stre
     counts[m]++;
   }
   return { current, best, counts, total };
+}
+
+/**
+ * The member's ONE streak, across every level (owner's rule: a day counts if
+ * the member earned a medal on ANY level's reading of that date). The chain
+ * runs over club days — every date any level published, newest first — with
+ * streakOf's rules (today's untouched day is skipped, a missed past day ends
+ * it). `days` is the best medal per day (the streak ribbon's squares); the
+ * medal counts and total count EVERY reading's medal on every level, so a
+ * member who reads two levels on a day sees both.
+ */
+export function clubStreak(
+  tracks: { dates: string[]; medals: MedalMap }[],
+  today: string,
+): { streak: Streak; days: MedalMap } {
+  const days: MedalMap = {};
+  const all = new Set<string>();
+  const counts: Record<Medal, number> = { bronze: 0, silver: 0, gold: 0 };
+  let total = 0;
+  for (const t of tracks) {
+    for (const d of t.dates) {
+      all.add(d);
+      const m = t.medals[d];
+      if (!m) continue;
+      days[d] = higherMedal(days[d], m)!;
+      counts[m]++;
+      total++;
+    }
+  }
+  const dates = [...all].sort().reverse();
+  const { current, best } = streakOf(dates, days, today);
+  return { streak: { current, best, counts, total }, days };
 }
 
 /** The viewer's local date as "YYYY-MM-DD" (TodayTag's computation). */

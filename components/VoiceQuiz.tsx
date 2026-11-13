@@ -6,7 +6,7 @@ import { createPortal } from "react-dom";
 import { upload } from "@vercel/blob/client";
 import type { Track } from "@/lib/content";
 import { useAuth } from "./AuthProvider";
-import { trackDir } from "@/lib/track";
+import { parseTrack, trackDir } from "@/lib/track";
 
 type Turn = { role: "student" | "tutor"; text: string };
 
@@ -2053,7 +2053,9 @@ export default function VoiceQuiz({
     if (!ready || autoResumeTriedRef.current) return;
     autoResumeTriedRef.current = true;
     const params = new URLSearchParams(window.location.search);
-    if (params.get("resume") !== date) return;
+    // Dates repeat across levels on the one home page: match the track too
+    // (a link without one is a High School link, as they all were before).
+    if (params.get("resume") !== date || parseTrack(params.get("track")) !== track) return;
     window.history.replaceState(null, "", window.location.pathname);
     if (!user) {
       setPhase("needLogin");

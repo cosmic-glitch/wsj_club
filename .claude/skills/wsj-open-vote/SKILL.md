@@ -1,11 +1,11 @@
 ---
 name: wsj-open-vote
-description: Open the day's article vote on the Reading Club home page. Use when the user says "open the vote", "start today's vote", "put up the vote", "publish the vote choices", or wants the club to choose today's article — including the JUNIOR track ("open the junior vote"). Senior ballot = 7 news picks (via the wsj-pick-article workflow) + 3 enrichment picks (via wsj-pick-enrichment); junior ballot = 5 news picks (via wsj-pick-article-junior). Gets the user's sign-off on the candidates and their kid-friendly pitches, then publishes the poll to the database; it appears at the top of the track's index immediately, no deploy.
+description: Open the day's article vote for the Reading Club (the owner votes on the owner-only /vote page). Use when the user says "open the vote", "start today's vote", "put up the vote", "publish the vote choices", or wants the club to choose today's article — including the JUNIOR track ("open the junior vote"). Senior ballot = 7 news picks (via the wsj-pick-article workflow) + 3 enrichment picks (via wsj-pick-enrichment); junior ballot = 5 news picks (via wsj-pick-article-junior). Gets the user's sign-off on the candidates and their kid-friendly pitches, then publishes the poll to the database; the owner votes on /vote immediately, no deploy.
 ---
 
 # WSJ Reading Club — open the day's vote
 
-You are opening the **daily article vote**: instead of the owner picking today's article alone, the club (kids + parents, each with a site login) votes among the day's candidates on the home page. The poll shows as the **"TODAY'S READ — YOU DECIDE"** row at the top of the track's index — `https://dailyreadingclub.com` (senior = High School), `/middle-school` (junior) or `/elementary` (kids) — a compact row whose VOTE button opens the ballot modal; it closes by itself when that track's reading for the date is published (no close step). See "The daily vote" in CLAUDE.md for the architecture.
+You are opening the **daily article vote**: the owner picks among the day's candidates instead of from a chat thread. **Only the owner votes** (owner's rule), on the owner-only page `https://dailyreadingclub.com/vote`, which lists every level's live ballot; nothing about the vote shows on the home page. A poll closes by itself when that track's reading for the date is published (no close step). See "The daily vote" in CLAUDE.md for the architecture.
 
 **The vote is per-track.** Default is **senior** (High School); "open the junior / middle school vote" selects **junior**, "open the kids / elementary vote" selects **kids**. Each changes three things: the candidate source (the junior picker / `wsj-pick-article-elementary`), the ballot composition (5 picks, no enrichment), and `--track=junior` / `--track=kids` on the script. The tracks' polls are fully independent — one of each can be live at once.
 
@@ -18,7 +18,7 @@ This skill only opens the poll. The companion flow is: **wsj-check-vote** later 
 - **7 news picks** — from the day's WSJ + Economist scouting (`wsj-pick-article`'s workflow).
 - **3 enrichment picks** — timeless-wisdom reads from the broader free pool (`wsj-pick-enrichment`'s workflow).
 
-The sections are **presentation only** — the voting modal shows light "The day's news" / "Enrichment — timeless reads" labels, but it is ONE poll with ONE vote across all 10. The `kind` field on each candidate (`"news"` / `"enrichment"`) is what drives the grouping.
+The sections are **bookkeeping only** — it is ONE poll with ONE vote across all 10. The `kind` field on each candidate (`"news"` / `"enrichment"`) records which is which; the /vote page lists them in ballot order.
 
 **Kids: 5 picks from `wsj-pick-article-elementary`** (TIME for Kids), `source: "TIME for Kids"`, no `kind`; pitches in very short sentences a 7-year-old can read alone. Kids candidates never overlap the Economist ballots.
 

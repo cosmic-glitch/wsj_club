@@ -203,10 +203,11 @@ fi
 # holds the title). Otherwise — a track failed, went to a dry-run branch, or
 # was published by hand — the owner's DM gets the ready-to-forward text and
 # the reason, and nothing reaches the group. A dry-run day sends nothing.
-#   Today's readings:
-#   High school: *<title>* (dailyreadingclub.com)
-#   Middle school: *<title>* (dailyreadingclub.com/middle-school)
-#   Elementary: *<title>* (dailyreadingclub.com/elementary)
+#   Today's readings, all at dailyreadingclub.com:
+#   High school: *<title>*
+#   Middle school: *<title>*
+#   Elementary: *<title>*
+# (one home page for every level — owner's rule: one link, no per-level URLs)
 # (*…* is WhatsApp bold.) Nothing else ever goes to the group.
 ANNOUNCED=".bot/state/${TODAY}-announced"
 git fetch -q origin >> "$LOG_FILE" 2>&1
@@ -226,13 +227,13 @@ else
     EXPECTED=$((EXPECTED + 1))
     { [ -f "$PROJECT_DIR/.bot/DRY_RUN" ] || [ -f "$PROJECT_DIR/.bot/DRY_RUN-${T}" ] || [ "${AUTOPUBLISH_DRY_RUN:-}" = "1" ]; } && DRY=1
     case "$T" in
-      junior) LABEL="Middle school"; SITE="dailyreadingclub.com/middle-school"; LIVE=".bot/state/${TODAY}-junior-live" ;;
-      kids)   LABEL="Elementary";    SITE="dailyreadingclub.com/elementary";    LIVE=".bot/state/${TODAY}-kids-live" ;;
-      *)      LABEL="High school";   SITE="dailyreadingclub.com";               LIVE=".bot/state/${TODAY}-live" ;;
+      junior) LABEL="Middle school"; LIVE=".bot/state/${TODAY}-junior-live" ;;
+      kids)   LABEL="Elementary";    LIVE=".bot/state/${TODAY}-kids-live" ;;
+      *)      LABEL="High school";   LIVE=".bot/state/${TODAY}-live" ;;
     esac
     CONTENT="$(content_of "$T")"
     if git cat-file -e "origin/main:${CONTENT}" 2>/dev/null; then
-      LINES+=("${LABEL}: *$(title_of "origin/main:${CONTENT}")* (${SITE})")
+      LINES+=("${LABEL}: *$(title_of "origin/main:${CONTENT}")*")
       [ -f "$LIVE" ] || HELD+=("${T} was published by hand")
     else
       HELD+=("${T} is not live")
@@ -241,7 +242,7 @@ else
   if [ "$EXPECTED" -eq 0 ] || [ "$DRY" = "1" ]; then
     log "no group message (every track off/paused, or a dry run)"
   elif [ ${#HELD[@]} -eq 0 ]; then
-    MSG="Today's readings:"$'\n'"$(printf '%s\n' "${LINES[@]}")"
+    MSG="Today's readings, all at dailyreadingclub.com:"$'\n'"$(printf '%s\n' "${LINES[@]}")"
     if printf '%s' "$MSG" | node .bot/notify.mjs --to=group --stdin >> "$LOG_FILE" 2>&1; then
       log "announced to the group: ${MSG//$'\n'/ | }"
       echo "group $(date -u +%FT%TZ)" > "$ANNOUNCED"
@@ -254,7 +255,7 @@ else
     log "group message held — ${HELD[*]}; re-checking at the next firing"
   else
     REASON="$(IFS=';'; echo "${HELD[*]}" | sed 's/;/; /g')"
-    BODY="Today's readings:"$'\n'"$(printf '%s\n' "${LINES[@]}")"
+    BODY="Today's readings, all at dailyreadingclub.com:"$'\n'"$(printf '%s\n' "${LINES[@]}")"
     notify "📣 Reading Club ${TODAY} — the group message was NOT sent (${REASON}). Ready to forward:"$'\n\n'"${BODY}"
     echo "owner $(date -u +%FT%TZ) (${REASON})" > "$ANNOUNCED"
   fi

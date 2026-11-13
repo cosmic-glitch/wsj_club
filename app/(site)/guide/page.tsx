@@ -124,7 +124,7 @@ export default function GuidePage() {
           }}
         >
           <p>
-            Start from the day&rsquo;s row on the home page and hit{" "}
+            Start from your level&rsquo;s card on the home page and hit{" "}
             <strong>Article</strong>. Read it like you&rsquo;ll have to explain
             it, because you will. Tap any{" "}
             <span className="underline decoration-dotted decoration-2 underline-offset-2">
@@ -204,32 +204,23 @@ export default function GuidePage() {
         <div className="mt-5 grid grid-cols-1 gap-3 min-[500px]:grid-cols-2">
           <Extra title="Medals and streak">
             Bronze 🥉 for the article, silver 🥈 for the handout, gold 🥇 for
-            the AI quiz. Any medal keeps your streak going, and a medal can
-            still go up later in the day. Both show on the home page when
+            the AI quiz. You have one streak across all three levels: a medal
+            on any level&rsquo;s reading keeps it going, and a medal can still
+            go up later in the day. Both show on the home page when
             you&rsquo;re logged in.
           </Extra>
           <Extra title="Word bank">
             Every word from every handout you&rsquo;ve finished (silver or
             gold), collected in one place. Yours builds automatically.
           </Extra>
-          <Extra title="Vote days">
-            Some days the club picks the article: a ballot appears at the top
-            of the home page. One member, one vote.
-          </Extra>
-          <Extra title="Three tracks">
-            High school is the{" "}
+          <Extra title="Three levels">
+            High school, middle school and elementary each get their own
+            reading every day, all on the{" "}
             <Link href="/" className="font-bold underline">
               home page
             </Link>
-            . Middle school and elementary have their own readings at{" "}
-            <Link href="/middle-school" className="font-bold underline">
-              /middle-school
-            </Link>{" "}
-            and{" "}
-            <Link href="/elementary" className="font-bold underline">
-              /elementary
-            </Link>
-            . Same loop, pitched for each school level.
+            . Same loop, pitched for each school level, and anyone can read
+            any level.
           </Extra>
           <Extra title="For parents">
             The <strong>Reports</strong> page shows every attempt and report
