@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-13",
+  "title": "Why small dogs are so easy to love—and hate",
+  "articleUrl": "https://www.economist.com/culture/2026/11/12/why-small-dogs-are-so-easy-to-love-and-hate",
+  "articlePageUrl": "/articles/junior/2026-11-13.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "pampered",
+      "partOfSpeech": "adjective",
+      "pronunciation": "PAM-perd",
+      "articleQuote": "Lapdogs, pampered by royals",
+      "meaning": "Pampered means treated with extra care and given every comfort, sometimes more than is needed. A cat with a heated bed and special snacks is pampered, and so is a kid who gets breakfast brought to their room. In the article, royals pampered their little lapdogs.",
+      "examples": [
+        "The pampered puppy had three beds and a closet full of sweaters.",
+        "After the long trip, we felt pampered by the hotel's warm towels and snacks."
+      ]
+    },
+    {
+      "word": "indolent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "IN-duh-lunt",
+      "articleQuote": "the indolent Lady Bertram",
+      "meaning": "Indolent means lazy, someone who likes to lounge around and avoids work. A person who spends a whole Saturday on the couch and will not even carry a plate to the sink is indolent. In the article, Lady Bertram is an indolent character who lets the pug take up her attention.",
+      "examples": [
+        "The indolent cat slept in the sun all afternoon.",
+        "My indolent cousin waited for someone else to clean up."
+      ]
+    },
+    {
+      "word": "doted",
+      "partOfSpeech": "verb",
+      "pronunciation": "DOH-tid",
+      "articleQuote": "Dogs are more doted on than before, too.",
+      "meaning": "To dote on someone is to love them so much that you give them lots of attention, treats, and care. A grandparent who bakes your favorite cookies and cheers at every game dotes on you. In the article, people today dote on their dogs more than before.",
+      "examples": [
+        "Our neighbor dotes on her tiny dog and carries it everywhere.",
+        "The whole family doted on the new baby."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Epitaph",
+      "articleQuote": "The Romans wrote epitaphs to their little pets.",
+      "meaning": "What is an \"epitaph\" that the Romans wrote for their dogs? An **epitaph** is a short message carved or written to remember someone who has died, often on a gravestone.\n\nImagine a small stone in a backyard that says, \"Biscuit, the best digger in town.\" That one sentence tells everyone who stops by what Biscuit was like and that someone loved him.\n\nEpitaphs are usually short, because they have to fit on a stone. They often name the person or pet, and then say what made them special, like being kind, funny, or brave.\n\nIn the article, one Roman owner wrote about \"sweet Patrice\" and her \"kisses\", \"wagging tail\" and \"greedy tongue\". Those few words show that people loved their pets thousands of years ago, much like we do now.\n\nSo the takeaway: an epitaph is a few words left behind to remember someone, and it can tell us what people valued."
+    },
+    {
+      "name": "Stock character",
+      "articleQuote": "The careless, canine-obsessed mother became a stock character in 18th- and 19th-century novels.",
+      "meaning": "What does it mean when the article says someone became a \"stock character\"? A **stock character** is a type of person that shows up again and again in stories, with the same few traits every time.\n\nThink of cartoons and movies. The clumsy sidekick, the grumpy neighbor, and the bossy older sister all appear in many different stories. You know what they are like the moment they walk in.\n\nStock characters are quick for a writer to use, because readers already know them. But they can feel flat, since real people are more mixed than a single label.\n\nIn the article, writers in the 1700s and 1800s kept using the same figure: a mother who cared more about her small dog than her children. Jane Austen's Lady Bertram, who thinks \"more of her pug than her children\", is one example.\n\nSo the takeaway: a stock character is a familiar type that stories reuse, and it can show what people of a time liked to joke about or worry over."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What happened on Napoleon's wedding night, according to the article?",
+      "options": [
+        "A pug named Fortuné was already in the bedroom, and stayed",
+        "His bride refused to marry him",
+        "He bought a pug as a gift",
+        "A pug ran away from the palace"
+      ],
+      "answerIndex": 0,
+      "explanation": "Joséphine insisted that her pug Fortuné stay, even after it bit Napoleon on the leg."
+    },
+    {
+      "question": "What does the new book by Stephanie Howard-Smith argue about small dogs?",
+      "options": [
+        "They were kept outside in barns",
+        "They became the blueprint for the modern pet",
+        "They were first kept only in America",
+        "They were never popular with royals"
+      ],
+      "answerIndex": 1,
+      "explanation": "For centuries small dogs sat on laps and furniture, shaping how we care for pets today."
+    },
+    {
+      "question": "What odd idea did Pliny the Elder have about small dogs?",
+      "options": [
+        "A small dog could guard a house from thieves",
+        "A small dog could predict the weather",
+        "A small dog on your stomach could cure a stomachache",
+        "A small dog could bring good luck at sea"
+      ],
+      "answerIndex": 2,
+      "explanation": "He thought the illness would pass from the human to the dog."
+    },
+    {
+      "question": "Why were lapdogs sometimes criticized in the past?",
+      "options": [
+        "They were seen as useless distractions and symbols of excess",
+        "They bit too many people",
+        "They cost too little",
+        "They were thought to be too quiet"
+      ],
+      "answerIndex": 0,
+      "explanation": "The book shows small dogs have long been condemned as \"useless\" distractions."
+    },
+    {
+      "question": "What has happened to the number of small dogs in America since 1999?",
+      "options": [
+        "It has been cut in half",
+        "It has stayed the same",
+        "It has doubled",
+        "It has dropped to zero"
+      ],
+      "answerIndex": 2,
+      "explanation": "Pocket-size pooches are more popular than ever, and the French bulldog became the top dog in 2022."
+    }
+  ]
+}

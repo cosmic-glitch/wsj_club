@@ -1,0 +1,429 @@
+[
+  {
+    "k": "pampered",
+    "t": "pampered",
+    "kind": "vocab",
+    "pron": "PAM-perd",
+    "forms": [
+      "pampered"
+    ],
+    "text": "Pampered means treated with extra care and given every comfort. Here, royals gave their little dogs the best of everything.",
+    "audio": true
+  },
+  {
+    "k": "indolent",
+    "t": "indolent",
+    "kind": "vocab",
+    "pron": "IN-duh-lunt",
+    "forms": [
+      "indolent"
+    ],
+    "text": "Indolent means lazy, someone who likes to lounge around and avoids work. Here, Lady Bertram is a character who does very little.",
+    "audio": true
+  },
+  {
+    "k": "doted",
+    "t": "doted on",
+    "kind": "vocab",
+    "pron": "DOH-tid",
+    "forms": [
+      "doted"
+    ],
+    "text": "To dote on someone is to love them so much that you give them lots of attention and care. Here, people spoil their dogs more than before.",
+    "audio": true
+  },
+  {
+    "k": "epitaph",
+    "t": "epitaph",
+    "kind": "word",
+    "forms": [
+      "epitaphs"
+    ],
+    "text": "An epitaph is a short message written or carved to remember someone who has died, often on a gravestone. The Romans wrote them for pets too.",
+    "audio": true
+  },
+  {
+    "k": "stock-character",
+    "t": "stock character",
+    "kind": "phrase",
+    "forms": [
+      "stock character"
+    ],
+    "text": "A stock character is a type of person that shows up again and again in stories, with the same few traits. Here, it is the mother who cares more about her dog than her children.",
+    "audio": true
+  },
+  {
+    "k": "bonaparte",
+    "t": "Napoleon Bonaparte",
+    "kind": "name",
+    "forms": [
+      "Napoleon Bonaparte",
+      "Napoleon"
+    ],
+    "text": "Napoleon Bonaparte was a famous French general who later became emperor of France. He lived from 1769 to 1821.",
+    "audio": true
+  },
+  {
+    "k": "plucky",
+    "t": "plucky",
+    "kind": "word",
+    "forms": [
+      "plucky"
+    ],
+    "text": "Plucky means brave and determined, even when a task looks hard or you are small. Here, it describes the young general.",
+    "audio": true
+  },
+  {
+    "k": "bedchamber",
+    "t": "bedchamber",
+    "kind": "word",
+    "forms": [
+      "bedchamber"
+    ],
+    "text": "A bedchamber is an old-fashioned word for a bedroom, especially in a palace or a big house.",
+    "audio": true
+  },
+  {
+    "k": "pug",
+    "t": "pug",
+    "kind": "word",
+    "forms": [
+      "pug",
+      "pugs"
+    ],
+    "text": "A pug is a small dog with a flat, wrinkly face and a curly tail.",
+    "audio": true
+  },
+  {
+    "k": "dictated",
+    "t": "dictated",
+    "kind": "word",
+    "forms": [
+      "dictated"
+    ],
+    "text": "To dictate is to give orders that others must follow. Here, the quote jokes that a man who ruled Europe could not even order a dog out of his room.",
+    "audio": true
+  },
+  {
+    "k": "biographer",
+    "t": "biographer",
+    "kind": "word",
+    "forms": [
+      "biographer"
+    ],
+    "text": "A biographer is a writer who tells the story of a real person's life.",
+    "audio": true
+  },
+  {
+    "k": "historian",
+    "t": "historian",
+    "kind": "word",
+    "forms": [
+      "historian"
+    ],
+    "text": "A historian is a person who studies the past and writes about it.",
+    "audio": true
+  },
+  {
+    "k": "outsize-pawprint",
+    "t": "outsize pawprint",
+    "kind": "phrase",
+    "forms": [
+      "outsize pawprint"
+    ],
+    "text": "This is a joke. A pawprint is a dog's footprint, and outsize means bigger than expected. It means small dogs left a big mark on history.",
+    "audio": true
+  },
+  {
+    "k": "blueprint",
+    "t": "blueprint",
+    "kind": "word",
+    "forms": [
+      "blueprint"
+    ],
+    "text": "A blueprint is a detailed plan that shows how to build something. Here, it means small dogs were the model for how we treat pets today.",
+    "audio": true
+  },
+  {
+    "k": "sprawled",
+    "t": "sprawled",
+    "kind": "word",
+    "forms": [
+      "sprawled"
+    ],
+    "text": "To sprawl is to sit or lie with your arms and legs spread out in a lazy way.",
+    "audio": true
+  },
+  {
+    "k": "pomeranian",
+    "t": "pomeranian",
+    "kind": "word",
+    "forms": [
+      "pomeranian",
+      "pomeranian-like"
+    ],
+    "text": "A pomeranian is a very small, fluffy dog with a thick coat.",
+    "audio": true
+  },
+  {
+    "k": "epitaph-greedy",
+    "t": "greedy tongue",
+    "kind": "phrase",
+    "forms": [
+      "greedy tongue"
+    ],
+    "text": "Greedy here means always wanting more food. It is a loving way to describe a dog that licks and begs for treats.",
+    "audio": true
+  },
+  {
+    "k": "pliny",
+    "t": "Pliny the Elder",
+    "kind": "name",
+    "forms": [
+      "Pliny the Elder"
+    ],
+    "text": "Pliny the Elder was a Roman writer who lived about 2,000 years ago and wrote about nature, including many ideas that turned out to be wrong.",
+    "audio": true
+  },
+  {
+    "k": "reckoned",
+    "t": "reckoned",
+    "kind": "word",
+    "forms": [
+      "reckoned"
+    ],
+    "text": "To reckon is to think or believe something. Here, Pliny believed a dog could take away a stomachache.",
+    "audio": true
+  },
+  {
+    "k": "mary-queen",
+    "t": "Mary Queen of Scots",
+    "kind": "name",
+    "forms": [
+      "Mary Queen of Scots"
+    ],
+    "text": "Mary Queen of Scots was a queen of Scotland who was put to death in 1587 by order of her cousin, Queen Elizabeth I of England.",
+    "audio": true
+  },
+  {
+    "k": "executioner",
+    "t": "executioner",
+    "kind": "word",
+    "forms": [
+      "executioner"
+    ],
+    "text": "An executioner is a person whose job was to carry out a death sentence.",
+    "audio": true
+  },
+  {
+    "k": "henri",
+    "t": "Henri III",
+    "kind": "name",
+    "forms": [
+      "Henri III"
+    ],
+    "text": "Henri III was a king of France in the 1500s. He was killed in 1589.",
+    "audio": true
+  },
+  {
+    "k": "friar",
+    "t": "friar",
+    "kind": "word",
+    "forms": [
+      "friar"
+    ],
+    "text": "A friar is a man in a religious group who lives simply and travels to help people. Here, one of them attacked the king.",
+    "audio": true
+  },
+  {
+    "k": "front-lines",
+    "t": "front lines",
+    "kind": "phrase",
+    "forms": [
+      "front lines"
+    ],
+    "text": "The front lines are the places in a war where the fighting happens, closest to the enemy.",
+    "audio": true
+  },
+  {
+    "k": "opium-war",
+    "t": "opium war",
+    "kind": "name",
+    "forms": [
+      "opium war"
+    ],
+    "text": "The two Opium Wars were fought in the 1800s between Britain and China, partly over Britain selling a drug called opium there.",
+    "audio": true
+  },
+  {
+    "k": "pekingese",
+    "t": "pekingese",
+    "kind": "word",
+    "forms": [
+      "pekingese"
+    ],
+    "text": "A pekingese is a small dog from China with long, silky fur and a flat face. Chinese emperors once kept them in palaces.",
+    "audio": true
+  },
+  {
+    "k": "looty",
+    "t": "Looty",
+    "kind": "name",
+    "forms": [
+      "Looty"
+    ],
+    "text": "Looty is a name based on loot, which means things taken by force. The dog was taken from a palace by soldiers.",
+    "audio": true
+  },
+  {
+    "k": "condemned",
+    "t": "condemned",
+    "kind": "word",
+    "forms": [
+      "condemned"
+    ],
+    "text": "To condemn is to say that something is very bad or wrong. Here, writers called small dogs useless.",
+    "audio": true
+  },
+  {
+    "k": "lapdogs",
+    "t": "lapdogs",
+    "kind": "word",
+    "forms": [
+      "lapdogs"
+    ],
+    "text": "A lapdog is a small, gentle dog that is kept to sit on its owner's lap.",
+    "audio": true
+  },
+  {
+    "k": "frivolity",
+    "t": "frivolity",
+    "kind": "word",
+    "forms": [
+      "frivolity"
+    ],
+    "text": "Frivolity means silly behavior about things that do not matter much.",
+    "audio": true
+  },
+  {
+    "k": "excess",
+    "t": "excess",
+    "kind": "word",
+    "forms": [
+      "excess"
+    ],
+    "text": "Excess means more than is needed. Here, people saw tiny pampered dogs as a sign of wasting money.",
+    "audio": true
+  },
+  {
+    "k": "canine",
+    "t": "canine",
+    "kind": "word",
+    "forms": [
+      "canine-obsessed"
+    ],
+    "text": "Canine means to do with dogs. The word also names a dog's sharp pointed tooth.",
+    "audio": true
+  },
+  {
+    "k": "jane-austen",
+    "t": "Jane Austen",
+    "kind": "name",
+    "forms": [
+      "Jane Austen"
+    ],
+    "text": "Jane Austen was an English writer who lived from 1775 to 1817. She wrote novels such as Pride and Prejudice and Mansfield Park.",
+    "audio": true
+  },
+  {
+    "k": "pugmania",
+    "t": "pugmania",
+    "kind": "word",
+    "forms": [
+      "pugmania"
+    ],
+    "text": "Pugmania is a made-up word for a craze for pugs, when everyone wanted one.",
+    "audio": true
+  },
+  {
+    "k": "poodle",
+    "t": "poodle",
+    "kind": "word",
+    "forms": [
+      "poodle"
+    ],
+    "text": "A poodle is a dog with thick, curly fur, often trimmed in fancy shapes.",
+    "audio": true
+  },
+  {
+    "k": "labrador",
+    "t": "Labrador retriever",
+    "kind": "name",
+    "forms": [
+      "Labrador retriever",
+      "Labrador"
+    ],
+    "text": "A Labrador retriever is a large, friendly dog that is often used to fetch things and help people.",
+    "audio": true
+  },
+  {
+    "k": "pooches",
+    "t": "pooches",
+    "kind": "word",
+    "forms": [
+      "pooches"
+    ],
+    "text": "Pooch is a casual word for a dog.",
+    "audio": true
+  },
+  {
+    "k": "pram",
+    "t": "pram",
+    "kind": "word",
+    "forms": [
+      "pram"
+    ],
+    "text": "A pram is a baby carriage. It is a British word. Americans say stroller.",
+    "audio": true
+  },
+  {
+    "k": "gen-z",
+    "t": "Gen Z",
+    "kind": "name",
+    "forms": [
+      "Gen Z"
+    ],
+    "text": "Gen Z is the group of people born from about the late 1990s to the early 2010s.",
+    "audio": true
+  },
+  {
+    "k": "pollster",
+    "t": "pollster",
+    "kind": "word",
+    "forms": [
+      "pollster"
+    ],
+    "text": "A pollster is a person or company that asks many people questions to find out what they think.",
+    "audio": true
+  },
+  {
+    "k": "ipsos",
+    "t": "Ipsos",
+    "kind": "name",
+    "forms": [
+      "Ipsos"
+    ],
+    "text": "Ipsos is a company that does polls and surveys.",
+    "audio": true
+  },
+  {
+    "k": "forking-out",
+    "t": "forking out",
+    "kind": "phrase",
+    "forms": [
+      "forking out"
+    ],
+    "text": "To fork out is to spend money, often a lot of it and without being very happy about it.",
+    "audio": true
+  }
+]
