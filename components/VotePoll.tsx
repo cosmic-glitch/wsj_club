@@ -91,10 +91,13 @@ const MODAL_H2 = "font-display text-xl font-normal uppercase text-[#0a0a0a]";
 export default function VotePoll({
   track = "senior",
   initial,
+  layout = "row",
 }: {
   track?: Track;
   /** The live poll as of the page render (null = none was live then). */
   initial: PublicPoll | null;
+  /** "row" = an index-list <li>; "lane" = a block inside a home-page level card. */
+  layout?: "row" | "lane";
 }) {
   const [poll, setPoll] = useState<PollState | null>(
     initial ? { active: true, ...initial } : null
@@ -360,6 +363,31 @@ export default function VotePoll({
         </div>,
         document.body
       );
+
+  if (layout === "lane") {
+    return (
+      <div className="vote-live group border-b-[3px] border-[#0a0a0a] bg-[#ffe600] px-3.5 py-3 hover:bg-[#0a0a0a] hover:text-white">
+        <div className="flex items-center text-xs font-bold uppercase tracking-[.06em] group-hover:text-[#ffe600]">
+          {dateTag(date)}
+          <TodayTag date={date} />
+          {typeof poll.totalVotes === "number" && (
+            <span className="ml-auto whitespace-nowrap pl-2 text-[10px] font-bold tracking-[.08em] text-[#0a0a0a]/60 group-hover:text-white/70">
+              {poll.totalVotes} vote{poll.totalVotes === 1 ? "" : "s"} in
+            </span>
+          )}
+        </div>
+        <p className="mt-1.5 font-sans text-[17px] font-bold leading-[1.3] group-hover:text-[#ffe600]">
+          The next read: you decide
+        </p>
+        <div className="mt-2.5">
+          <button type="button" onClick={openModal} className={ROW_BTN}>
+            {voted ? "Voted ✓" : "Vote"}
+          </button>
+        </div>
+        {modal}
+      </div>
+    );
+  }
 
   return (
     <li className="vote-live group grid grid-cols-1 gap-y-[6px] border-b-2 border-[#0a0a0a] bg-[#ffe600] px-3.5 py-3 hover:bg-[#0a0a0a] hover:text-white min-[681px]:grid-cols-[112px_1fr_max-content] min-[681px]:items-center min-[681px]:gap-4 min-[681px]:px-4">

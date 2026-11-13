@@ -1,4 +1,4 @@
-// The two indexes (/ and /junior). No SiteHeader: LandingIndex brings its own
+// The home page (/, /middle-school, /elementary). No SiteHeader: LandingIndex brings its own
 // topline auth controls and masthead. The group decides this on the server —
 // a usePathname() check broke once the root index went ISR, because its
 // regeneration renders with the path "/index", not "/".

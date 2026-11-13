@@ -67,6 +67,9 @@ const Ctx = createContext<MedalsContext>({
 
 const CACHE_PREFIX = "rc-medals:";
 
+/** Medal fetches in flight, by track + day — see MedalsProvider's load(). */
+const inflight = new Map<string, Promise<MedalsState | null>>();
+
 function readCache(user: string, track: Track): MedalsState | null {
   try {
     const raw = localStorage.getItem(`${CACHE_PREFIX}${user}:${track}`);
@@ -112,15 +115,25 @@ export function MedalsProvider({
     if (user) setState(readCache(user, track));
   }, [user, track]);
 
-  const load = useCallback(async (): Promise<MedalsState | null> => {
-    try {
-      const r = await fetch(`/api/medals?track=${track}&today=${localYMD()}`);
-      if (!r.ok) return null;
-      return parseState(await r.json());
-    } catch {
-      // Best-effort chrome — a failed fetch just leaves the medals off.
-      return null;
-    }
+  const load = useCallback((): Promise<MedalsState | null> => {
+    // The home page mounts two providers per track (its "today" card and its
+    // archive tab); they share one in-flight request so each track is still
+    // ONE fetch per page.
+    const key = `${track}:${localYMD()}`;
+    const pending = inflight.get(key);
+    if (pending) return pending;
+    const p = (async () => {
+      try {
+        const r = await fetch(`/api/medals?track=${track}&today=${localYMD()}`);
+        if (!r.ok) return null;
+        return parseState(await r.json());
+      } catch {
+        // Best-effort chrome — a failed fetch just leaves the medals off.
+        return null;
+      }
+    })().finally(() => inflight.delete(key));
+    inflight.set(key, p);
+    return p;
   }, [track]);
 
   useEffect(() => {

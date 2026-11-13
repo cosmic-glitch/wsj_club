@@ -1,8 +1,7 @@
 import LandingIndex from "@/components/LandingIndex";
-import { getAllReadings } from "@/lib/content";
-import { publicPoll } from "@/lib/polls";
+import { homeData } from "@/lib/home";
 
-// ISR for the server-rendered vote row — the same window as the senior index.
+// ISR for the server-rendered vote rows — the same window as "/".
 export const revalidate = 60;
 
 export const metadata = {
@@ -11,15 +10,7 @@ export const metadata = {
     "The Daily Reading Club for middle schoolers — a daily news handout with vocabulary, concepts, and a self-quiz.",
 };
 
-// The middle-school index (track id "junior", lib/track.ts). Thin wrapper over
-// the shared LandingIndex, which supplies the masthead label, the cross-link,
-// and the /middle-school prefix on each row's actions.
+// The home page (every level), opened on the Middle School archive tab.
 export default async function MiddleSchoolHome() {
-  return (
-    <LandingIndex
-      readings={getAllReadings("junior")}
-      track="junior"
-      poll={await publicPoll("junior", revalidate)}
-    />
-  );
+  return <LandingIndex {...await homeData(revalidate)} initial="junior" />;
 }
