@@ -196,20 +196,26 @@ else
   done
 fi
 
-# --- The one group message ----------------------------------------------------
-# Sent ONCE per day (.bot/state/<date>-announced), and only when every track
+# --- The group announcement ----------------------------------------------------
+# FOUR separate messages (owner's rule: one per level, after a header):
+#   Today's readings (dailyreadingclub.com):
+#   High school: *<title>*
+#   Middle school: *<title>*
+#   Elementary: *<title>*
+# (*…* is WhatsApp bold; one home page for every level, so the URL is only in
+# the header.) A track off or paused has no message. Nothing else ever goes to
+# the group. Sent ONCE per day (.bot/state/<date>-announced), and only when every track
 # that should publish today (not off, not paused) is on origin/main AND this
 # autopilot pushed it and saw it serve (publish-track.sh's -live marker, which
 # holds the title). Otherwise — a track failed, went to a dry-run branch, or
 # was published by hand — the owner's DM gets the ready-to-forward text and
-# the reason, and nothing reaches the group. A dry-run day sends nothing.
-#   Today's readings, all at dailyreadingclub.com:
-#   High school: *<title>*
-#   Middle school: *<title>*
-#   Elementary: *<title>*
-# (one home page for every level — owner's rule: one link, no per-level URLs)
-# (*…* is WhatsApp bold.) Nothing else ever goes to the group.
+# the reason (as ONE message, easy to forward), and nothing reaches the group.
+# A dry-run day sends nothing. A send that fails partway records how many
+# messages went out (<date>-announced-sent), and the next firing resumes from
+# the next one, so nothing reaches the group twice.
 ANNOUNCED=".bot/state/${TODAY}-announced"
+ANNOUNCE_SENT="${ANNOUNCED}-sent"
+HEADER="Today's readings (dailyreadingclub.com):"
 git fetch -q origin >> "$LOG_FILE" 2>&1
 title_of() { # title_of <git object>
   git show "$1" 2>/dev/null | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(String(JSON.parse(s).title||""))}catch{}})'
@@ -242,12 +248,23 @@ else
   if [ "$EXPECTED" -eq 0 ] || [ "$DRY" = "1" ]; then
     log "no group message (every track off/paused, or a dry run)"
   elif [ ${#HELD[@]} -eq 0 ]; then
-    MSG="Today's readings, all at dailyreadingclub.com:"$'\n'"$(printf '%s\n' "${LINES[@]}")"
-    if printf '%s' "$MSG" | node .bot/notify.mjs --to=group --stdin >> "$LOG_FILE" 2>&1; then
-      log "announced to the group: ${MSG//$'\n'/ | }"
+    MSGS=("$HEADER" "${LINES[@]}")
+    SENT="$(cat "$ANNOUNCE_SENT" 2>/dev/null || echo 0)"
+    case "$SENT" in ''|*[!0-9]*) SENT=0 ;; esac
+    while [ "$SENT" -lt ${#MSGS[@]} ]; do
+      if printf '%s' "${MSGS[$SENT]}" | node .bot/notify.mjs --to=group --stdin >> "$LOG_FILE" 2>&1; then
+        log "group message $((SENT + 1))/${#MSGS[@]}: ${MSGS[$SENT]}"
+        SENT=$((SENT + 1))
+        echo "$SENT" > "$ANNOUNCE_SENT"
+        [ "$SENT" -lt ${#MSGS[@]} ] && sleep 2  # keep them in order on the phone
+      else
+        log "WARNING notify.mjs --to=group failed at message $((SENT + 1))/${#MSGS[@]}; the next firing resumes there"
+        break
+      fi
+    done
+    if [ "$SENT" -ge ${#MSGS[@]} ]; then
       echo "group $(date -u +%FT%TZ)" > "$ANNOUNCED"
-    else
-      log "WARNING notify.mjs --to=group failed; will retry at the next firing"
+      rm -f "$ANNOUNCE_SENT"
     fi
   elif [ "$BEFORE_NOON" = "1" ] && [ "$FORCE" != "1" ] && printf '%s\n' "${HELD[@]}" | grep -q "is not live"; then
     # A track still missing before noon may yet publish at a later firing (or
@@ -255,7 +272,7 @@ else
     log "group message held — ${HELD[*]}; re-checking at the next firing"
   else
     REASON="$(IFS=';'; echo "${HELD[*]}" | sed 's/;/; /g')"
-    BODY="Today's readings, all at dailyreadingclub.com:"$'\n'"$(printf '%s\n' "${LINES[@]}")"
+    BODY="${HEADER}"$'\n'"$(printf '%s\n' "${LINES[@]}")"
     notify "📣 Reading Club ${TODAY} — the group message was NOT sent (${REASON}). Ready to forward:"$'\n\n'"${BODY}"
     echo "owner $(date -u +%FT%TZ) (${REASON})" > "$ANNOUNCED"
   fi
