@@ -7,7 +7,7 @@ description: Check the day's article vote for the Reading Club. Use when the use
 
 You are reading back the **daily article vote** that `wsj-open-vote` opened (see "The daily vote" in CLAUDE.md). This is the owner-side view: unlike the website (which shows counts only), the tally here includes **who voted for what**, so the user can see participation.
 
-**The vote is per-track:** default senior; "check the junior vote" means the **junior** poll (`--track=junior`). The two tracks' polls are independent — check the one the user asked about.
+**The vote is per-track:** default senior (High School); "check the junior / middle school vote" means `--track=junior`, "check the kids / elementary vote" means `--track=kids`. The polls are independent — check the one the user asked about.
 
 ## Workflow
 
@@ -16,12 +16,13 @@ You are reading back the **daily article vote** that `wsj-open-vote` opened (see
    ```bash
    node --env-file=.env.local scripts/check-vote.mjs                  # senior
    node --env-file=.env.local scripts/check-vote.mjs --track=junior   # junior
+   node --env-file=.env.local scripts/check-vote.mjs --track=kids     # kids
    ```
 
    (It defaults to the track's newest poll; pass `<YYYY-MM-DD>` to check a specific one.)
 
 2. **Present the result:** per-candidate counts with voter names, total ballots, and the winner with its article link. On a **tie** (or zero votes), say so plainly — the user breaks it by just picking; the vote is advisory and the site never claims "the winner was X".
 
-3. **Hand off, don't proceed.** The next step is the user invoking **wsj-reading** (senior) / **wsj-reading-junior** (junior) with the winning (or chosen) link — wait for them to say so (they may just say "go with the winner", in which case run the track's reading skill with that URL). Publishing the reading is what closes that track's poll — the poll row disappears on its own.
+3. **Hand off, don't proceed.** The next step is the user invoking **wsj-reading** (senior) / **wsj-reading-junior** (junior) / the `wsj-pick-article-elementary` skill's Publishing section (kids) with the winning (or chosen) link — wait for them to say so (they may just say "go with the winner", in which case run the track's reading skill with that URL). Publishing the reading is what closes that track's poll — the poll row disappears on its own.
 
 Checking the tally does NOT close the poll — people can keep voting until the reading is published, so it's fine to peek mid-window.

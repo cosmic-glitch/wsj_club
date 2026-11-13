@@ -8,7 +8,7 @@ import type { PublicPoll } from "@/lib/polls";
 
 /**
  * The daily article vote — the "TODAY'S READ — YOU DECIDE" row at the top of
- * BOTH track indexes (see the daily vote in CLAUDE.md). The `track` prop
+ * every track index (see the daily vote in CLAUDE.md). The `track` prop
  * (default senior, like VoiceQuiz's) selects which track's poll this row shows:
  * it's sent on the GET (`?track=`) and in the POST body, so each index sees
  * only its own poll and the two can be live at once, independently.

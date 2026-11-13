@@ -1,25 +1,29 @@
 ---
 name: auto-vote
-description: AUTONOMOUS daily vote opener for the Reading Club, BOTH tracks in one run, executed UNATTENDED from the Hetzner box by cron at 6am Pacific — NOT the interactive picker. Scouts The Economist once via the saved session in .bot/, rates every candidate for the senior (grades 8–10) and junior (grades 5–7) tracks together, splits them into two disjoint ballots (7 senior, 5 junior — no article on both), opens both votes via .bot/open-vote.mjs, and texts the owner one summary over nanoclaw. Never uses WSJ. Do NOT invoke this by hand for the normal interactive flow — use wsj-open-vote for that.
+description: AUTONOMOUS daily vote opener for the Reading Club, ALL THREE tracks in one run, executed UNATTENDED from the Hetzner box by cron at 6am Pacific — NOT the interactive picker. Scouts The Economist once via the saved session in .bot/, rates every candidate for the high-school (senior, grades 8–10) and middle-school (junior, grades 5–7) tracks together, splits them into two disjoint ballots (7 senior, 5 junior — no article on both); builds the elementary (kids, about grade 3) ballot of 5 from TIME for Kids; opens all three votes via .bot/open-vote.mjs, and texts the owner one summary over nanoclaw. Never uses WSJ. Do NOT invoke this by hand for the normal interactive flow — use wsj-open-vote for that.
 ---
 
-# Reading Club — autonomous daily vote, both tracks (Hetzner cron)
+# Reading Club — autonomous daily vote, all three tracks (Hetzner cron)
 
-You are running unattended on the Hetzner box: `run-auto-vote.sh` fired at 6am Pacific. In one pass, pick the day's 7 senior candidates and 5 junior candidates from the same scouted field, open both votes, text the owner once. Nobody screens the ballots before the club sees them, so you are the validation layer. A weak candidate just loses the vote; an inappropriate one (or, for junior, a too-hard one) is the failure to avoid.
+Track ids vs names: `senior` = High School (`/`), `junior` = Middle School (`/middle-school`), `kids` = Elementary (`/elementary`). Scripts, flags and files use the ids; anything the owner or the kids read uses the names.
 
-Economist only (WSJ blocks this box), news only (enrichment is interactive), browsing through the `.bot/` scripts (no Playwright MCP here). Run everything from `~/wsj_club`; invoke `.bot/` scripts with `node --env-file=.bot/.env …` so an expired session can self-refresh.
+You are running unattended on the Hetzner box: `run-auto-vote.sh` fired at 6am Pacific. In one pass, pick the day's 7 senior candidates and 5 junior candidates from the same scouted Economist field, 5 kids candidates from TIME for Kids, open the votes, text the owner once. Nobody screens the ballots before the club sees them, so you are the validation layer. A weak candidate just loses the vote; an inappropriate one (or, for junior, a too-hard one) is the failure to avoid.
+
+Senior and junior: Economist only (WSJ blocks this box), news only (enrichment is interactive). Kids: TIME for Kids only (Step 2b), browsing through the `.bot/` scripts (no Playwright MCP here). Run everything from `~/wsj_club`; invoke `.bot/` scripts with `node --env-file=.bot/.env …` so an expired session can self-refresh.
 
 ## Step 0 — Date, tracks, idempotency
 
-`TODAY="${AUTOVOTE_DATE:-$(TZ=America/Los_Angeles date +%F)}"` (the override is for supervised test runs only). `AUTOVOTE_TRACKS` (set by the wrapper; default `senior junior`) lists the tracks this run may touch — a track not in it is switched off and you leave its poll alone.
+`TODAY="${AUTOVOTE_DATE:-$(TZ=America/Los_Angeles date +%F)}"` (the override is for supervised test runs only). `AUTOVOTE_TRACKS` (set by the wrapper; default `senior junior kids`) lists the tracks this run may touch — a track not in it is switched off and you leave its poll alone.
 
-A track is **done** (skip opening it, never notify about it) if its reading is published — `content/${TODAY}.json` (senior) / `content/junior/${TODAY}.json` — or its vote is already live: `curl -s https://dailyreadingclub.com/api/vote` (senior) / `curl -s "https://dailyreadingclub.com/api/vote?track=junior"` shows `"active": true` for `${TODAY}`. Remove done tracks from the set. If no track is left, exit quietly. Otherwise proceed for the remaining track(s) — but **read the live ballot of a done track** (from that `/api/vote` response) so you don't put one of its articles on the other track's ballot.
+A track is **done** (skip opening it, never notify about it) if its reading is published — `content/${TODAY}.json` (senior) / `content/<track>/${TODAY}.json` — or its vote is already live: `curl -s https://dailyreadingclub.com/api/vote` (senior) / `curl -s "https://dailyreadingclub.com/api/vote?track=<track>"` shows `"active": true` for `${TODAY}`. Remove done tracks from the set. If no track is left, exit quietly. Otherwise proceed for the remaining track(s) — but **read the live ballot of a done track** (from that `/api/vote` response) so you don't put one of its articles on the other Economist track's ballot.
 
 ## Who this is for
 
-**Senior (`/`, US grades 8–10).** The handout will teach three vocabulary words and about three concepts from scratch; everything else the article assumes, the reader must already hold. Pick what a good teacher would hand this class today: a well-written, full-text article that a curious 14-year-old with no background in the topic can follow, and that is fit to hand a 13-year-old (war and politics are fine, gore and sexual content are not).
+**Senior = High School (`/`, US grades 8–10).** The handout will teach three vocabulary words and about three concepts from scratch; everything else the article assumes, the reader must already hold. Pick what a good teacher would hand this class today: a well-written, full-text article that a curious 14-year-old with no background in the topic can follow, and that is fit to hand a 13-year-old (war and politics are fine, gore and sexual content are not).
 
-**Junior (`/junior`, US grades 5–7, ages 10 to 13).** The handout will teach three words one band below SAT tier (the *reluctant / abundant / deliberate / fragile* register) and at most two concepts from scratch; everything else the article assumes, the reader must already hold. Pick what a good teacher would hand this class today: a full-text article a curious 11-year-old with no background can follow, told as a story rather than an argument. Things a 10-year-old cannot do: lean on abstraction, read irony or satire literally, catch a columnist's allusions, or hold an article much past 1,200 words (`read.mjs` reports `words`; over 1,500 is a pass unless exceptional, and Briefings, 1843 long-reads and multi-part essays are out). Appropriateness is a 5th-grader's parent's call: nothing centred on violence, sexual content, drugs, self-harm, abuse, or bleak-without-payoff subjects; hard news and geopolitics are fine when the value is understanding, and when in doubt leave it off.
+**Junior = Middle School (`/middle-school`, US grades 5–7, ages 10 to 13).** The handout will teach three words one band below SAT tier (the *reluctant / abundant / deliberate / fragile* register) and at most two concepts from scratch; everything else the article assumes, the reader must already hold. Pick what a good teacher would hand this class today: a full-text article a curious 11-year-old with no background can follow, told as a story rather than an argument. Things a 10-year-old cannot do: lean on abstraction, read irony or satire literally, catch a columnist's allusions, or hold an article much past 1,200 words (`read.mjs` reports `words`; over 1,500 is a pass unless exceptional, and Briefings, 1843 long-reads and multi-part essays are out). Appropriateness is a 5th-grader's parent's call: nothing centred on violence, sexual content, drugs, self-harm, abuse, or bleak-without-payoff subjects; hard news and geopolitics are fine when the value is understanding, and when in doubt leave it off.
+
+**Kids = Elementary (`/elementary`, a precocious early reader at about a US grade 3 level, ages 6 to 8).** Source text already written at their level (TIME for Kids), with the handout's 3 words and at most 1 concept on top. The full calibration (length, reading level, topics, appropriateness) is in Step 2b.
 
 The scout prints each track's last ten readings so you know what they have seen lately; overlap in topic between the tracks is not a strike, but the same article is never on both ballots (see Step 2).
 
@@ -41,44 +45,68 @@ The scout prints each track's last ten readings so you know what they have seen 
    ```
    The publish run's tally uses them to break ties and to pick when nobody voted; its capture cross-checks `words` against its own count. Don't skip them.
 
+## Step 2b — The elementary (kids) ballot
+
+Skip if `kids` is not in your track set. The kids field never overlaps the Economist ballots (different source), so it is built on its own.
+
+1. `node .bot/scout-kids.mjs > /tmp/kids-candidates.json` → TIME for Kids Grades 3–4 (`edition: "g34"`) and Grade 2 (`"g2"`) articles not yet published on any track, newest first, briefs under 120 words already dropped. Each: `{url, edition, title, published, words, wordsPerSentence, fkGrade, hardWordPct, powerWords, paywallHint, opening, text}`; `text` is the full body, so read it — judge on the text, not the title. Its stderr lists the last ten elementary readings.
+2. **Calibration** (the `wsj-pick-article-elementary` skill's, in short):
+   - **Level:** `fkGrade` runs about one grade high on kids' text. ≤ 5.5 is on level (preferred); 5.5–6.5 is fine when the sentences are short and the hard words are names or the words the handout would teach; > 6.5 is a stretch, at most one on the ballot.
+   - **Length:** 150–600 words is the sweet spot, 800 the hard ceiling.
+   - **Story over argument:** an animal, a kid who did something, a discovery, how a thing works, a place, a record. No opinion/debate pieces, policy, money, or anything needing a backdrop a 7-year-old can't have (elections only when the article itself explains voting).
+   - **Appropriateness is a 6-year-old's parent's call** (stricter than junior): no violence, war, crime, disasters with casualties, death as the focus, scary health topics, bleak news. When in doubt, leave it out.
+   - **Handout fit:** it must support 3 grade-3 "stretch" words (*curious, enormous, protect, rare, journey*; TFK's `powerWords` are a good start) and at most 1 concept. Note them for each pick.
+   - Skip anything with `paywallHint: true`, and pieces that are mostly a list of links or a contest/promo.
+3. Rate the ones that fit (1–10, one-line verdict naming the 3 words and the concept), and pick **5**: favour the newest pieces, mix topics (not five animal stories, and not the same topic as the last few readings), and mix editions when Grades 3–4 is thin. A piece that lost an earlier kids vote may come back (TFK publishes only a few pieces a week); a published one never. If only 2–4 genuinely fit, ballot those; fewer than 2 means no kids poll today.
+4. Write `.bot/state/${TODAY}-kids-field.json` in rank order, same shape as the Economist field files with `"track": "kids"`, `"source": "TIME for Kids"`, `articleUrl` = the scout's clean `url`, and `words` = the scout's `words` (the publish run's capture cross-checks against it).
+
 ## Step 3 — Open the vote(s)
 
 For each track you are opening:
 
-1. Write a pitch per candidate: 1–2 sentences for the kids (senior: grades 8–10; junior: short, plain sentences for grades 5–7), spoiler-free, equally enthusiastic across the ballot, no visible ranking.
-2. Write the ballot as a JSON array of `{title, source, pitch, articleUrl, kind}` — senior gets `kind: "news"`, junior omits `kind` — to `/tmp/ballot.json` (senior) / `/tmp/junior-ballot.json`.
+1. Write a pitch per candidate: 1–2 sentences for the readers (senior: grades 8–10; junior: short, plain sentences for grades 5–7; kids: very short, simple sentences a 7-year-old can read alone, no em dashes), spoiler-free, equally enthusiastic across the ballot, no visible ranking.
+2. Write the ballot as a JSON array of `{title, source, pitch, articleUrl, kind}` — senior gets `kind: "news"`, junior and kids omit `kind`; kids use `source: "TIME for Kids"` — to `/tmp/ballot.json` (senior) / `/tmp/junior-ballot.json` / `/tmp/kids-ballot.json`.
 3. Open it (the box-local opener over `SUPABASE_DB_URL`; `--dry-run` validates without writing). It refuses a published day or a duplicate candidate on either track and upserts idempotently on `(track,date)`:
    ```bash
    node --env-file=.env.local .bot/open-vote.mjs "${TODAY}" /tmp/ballot.json
    node --env-file=.env.local .bot/open-vote.mjs "${TODAY}" /tmp/junior-ballot.json --track=junior
+   node --env-file=.env.local .bot/open-vote.mjs "${TODAY}" /tmp/kids-ballot.json --track=kids
    ```
-   **Never omit `--track=junior` on the junior ballot**: without it the ballot overwrites the senior poll.
-4. Verify: that track's `/api/vote` (Step 0's URLs) shows `"active": true` with your candidates. If not, log it and do not mention that track in the DM; if neither track verified, stop without notifying.
+   **Never omit `--track=` on the junior or kids ballot**: without it the ballot overwrites the senior poll.
+4. Verify: that track's `/api/vote` (Step 0's URLs) shows `"active": true` with your candidates. If not, log it and do not mention that track in the DM; if no track verified, stop without notifying.
 
 ## Step 4 — Notify the owner, once
 
-The DM is the owner's only window into your judgment, so it carries your rankings and reasons — never the kids' pitches — for both tracks in one message; leave out a track you did not open. Every candidate line ends with its link. Write it to a file and send with `--file`, with the real date filled in:
+The DM is the owner's only window into your judgment, so it carries your rankings and reasons — never the kids' pitches — for every track in one message; leave out a track you did not open. Every candidate line ends with its link. Write it to a file and send with `--file`, with the real date filled in:
 
 ```bash
 cat > /tmp/vote-notify.txt <<'MSG'
 🗳️ Reading Club votes are open — <TODAY>
-Vote: https://dailyreadingclub.com · junior: https://dailyreadingclub.com/junior
-Close 9:00am PT once both tracks have a vote (noon at the latest) — the winners auto-publish then
+Vote: https://dailyreadingclub.com · https://dailyreadingclub.com/middle-school · https://dailyreadingclub.com/elementary
+Close 9:00am PT once every track has a vote (noon at the latest) — the winners auto-publish then
 
-⭐ SENIOR TOP PICK [Economist] <title> (R/10, homepage #<n>)
+⭐ HIGH SCHOOL TOP PICK [Economist] <title> (R/10, homepage #<n>)
 <1–2 sentence case: concepts, hook, why it leads the field>
 <url>
 
-SENIOR BALLOT
+HIGH SCHOOL BALLOT
 1. [Economist] <title> — R/10 — <why it fits> — <url>
 2. …(through 7)
 
-⭐ JUNIOR TOP PICK [Economist] <title> (R/10, homepage #<n>)
+⭐ MIDDLE SCHOOL TOP PICK [Economist] <title> (R/10, homepage #<n>)
 <1–2 sentence case: the story, the words and concepts, why an 11-year-old can follow it>
 <url>
 
-JUNIOR BALLOT
+MIDDLE SCHOOL BALLOT
 1. [Economist] <title> — R/10 — <why it fits> — <url>
+2. …(through 5)
+
+⭐ ELEMENTARY TOP PICK [TIME for Kids] <title> (R/10, <words> words, grade <fkGrade>)
+<1–2 sentence case: the story, the 3 words and the concept, why a 7-year-old can follow it>
+<url>
+
+ELEMENTARY BALLOT
+1. [TIME for Kids] <title> — R/10 — <why it fits> — <url>
 2. …(through 5)
 
 Split: <any piece that fit both tracks and where it went, in a line>
@@ -91,4 +119,4 @@ Then stop. Do not author the readings; the publish run tallies and publishes eac
 
 ## Failure handling
 
-A hard failure before a poll is open (scout throws, nothing readable, opener errors): do not notify, write the reason to the log, exit non-zero. A thin junior field is not a reason to lower the bar: if only 2–4 articles genuinely fit junior, ballot those (the opener accepts 2–12) rather than padding; fewer than 2 means no junior poll today. One track failing never stops you from opening the other. Never open a poll built from articles you did not read; no placeholder candidates.
+A hard failure before a poll is open (scout throws, nothing readable, opener errors): do not notify, write the reason to the log, exit non-zero. A thin junior or kids field is not a reason to lower the bar: if only 2–4 articles genuinely fit junior, ballot those (the opener accepts 2–12) rather than padding; fewer than 2 means no junior poll today. One track failing never stops you from opening the other. Never open a poll built from articles you did not read; no placeholder candidates.

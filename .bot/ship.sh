@@ -4,11 +4,11 @@
 # the handout. The git sequence is deterministic on purpose — the auto-publish
 # skills call this instead of driving git themselves.
 #
-#   .bot/ship.sh <YYYY-MM-DD> [--track=junior] [--dry-run]
+#   .bot/ship.sh <YYYY-MM-DD> [--track=junior|kids] [--dry-run]
 #
 # The track picks the paths: senior = content/<date>.json + public/articles/,
-# public/glossaries/, public/audio/ under the bare date; junior = the same four
-# under a junior/ segment, with /junior/reading/<date> as the live URL.
+# public/glossaries/, public/audio/ under the bare date; junior and kids = the same four
+# under a junior/ or kids/ segment.
 #
 # LIVE (default): commit on main → `git pull --rebase origin main` → refuse if
 #   main already carries the day (the owner published by hand meanwhile) →
@@ -17,10 +17,10 @@
 #   (publish-track.sh) polls the live URL and sends the announcement; this
 #   split is deliberate: the agentic session must never sit on a long wait
 #   (it backgrounds it and exits, and the announcement dies with it).
-# DRY RUN: the same commit goes to branch auto/[junior/]<date> (force-pushed;
+# DRY RUN: the same commit goes to branch auto/[<track>/]<date> (force-pushed;
 #   Vercel builds a preview of it, main is untouched) and the tree returns to main.
 #
-# A successful push (either mode) drops `.bot/state/<date>[-junior]-pushed`
+# A successful push (either mode) drops `.bot/state/<date>[-<track>]-pushed`
 # holding the SHA — the wrapper announces only when that marker exists, so a
 # day the owner published by hand while the run worked is never announced.
 #
@@ -35,13 +35,13 @@ TRACK="senior"
 for a in "$@"; do
   case "$a" in
     --dry-run) MODE="dry-run" ;;
-    --track=senior|--track=junior) TRACK="${a#--track=}" ;;
-    --*) echo "usage: .bot/ship.sh <YYYY-MM-DD> [--track=junior] [--dry-run]" >&2; exit 2 ;;
+    --track=senior|--track=junior|--track=kids) TRACK="${a#--track=}" ;;
+    --*) echo "usage: .bot/ship.sh <YYYY-MM-DD> [--track=junior|kids] [--dry-run]" >&2; exit 2 ;;
     *) DATE="$a" ;;
   esac
 done
 if ! [[ "$DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
-  echo "usage: .bot/ship.sh <YYYY-MM-DD> [--track=junior] [--dry-run]" >&2
+  echo "usage: .bot/ship.sh <YYYY-MM-DD> [--track=junior|kids] [--dry-run]" >&2
   exit 2
 fi
 
@@ -50,7 +50,7 @@ cd "$(dirname "$SCRIPT_DIR")" || exit 2
 
 SUB=""
 SUFFIX=""
-if [ "$TRACK" = "junior" ]; then SUB="junior/"; SUFFIX="-junior"; fi
+if [ "$TRACK" != "senior" ]; then SUB="${TRACK}/"; SUFFIX="-${TRACK}"; fi
 MARK=".bot/state/${DATE}${SUFFIX}-pushed"
 CONTENT="content/${SUB}${DATE}.json"
 PAGE="public/articles/${SUB}${DATE}.html"
@@ -116,5 +116,5 @@ if ! "${GIT[@]}" push -q origin main; then
   exit 4
 fi
 mkdir -p .bot/state && echo "live main $(git rev-parse --short HEAD)" > "$MARK"
-echo "ship: pushed $(git rev-parse --short HEAD) to main — Vercel is deploying; the wrapper waits for https://dailyreadingclub.com/${SUB}reading/${DATE} and announces"
+echo "ship: pushed $(git rev-parse --short HEAD) to main — Vercel is deploying; the wrapper waits for the live reading page"
 exit 0

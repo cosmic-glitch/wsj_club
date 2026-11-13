@@ -515,7 +515,7 @@ export default async function AdminPage() {
           tabs={[
             {
               key: "senior",
-              label: "Regular",
+              label: TRACK_LABEL.senior,
               content: (
                 <>
                   {classroomPanel(seniorGroups, true, user, true)}
@@ -525,7 +525,7 @@ export default async function AdminPage() {
             },
             {
               key: "junior",
-              label: "Junior",
+              label: TRACK_LABEL.junior,
               content: (
                 <>
                   {classroomPanel(juniorGroups, true, user, true)}
@@ -537,7 +537,7 @@ export default async function AdminPage() {
               ? [
                   {
                     key: "kids",
-                    label: "Kids",
+                    label: TRACK_LABEL.kids,
                     content: (
                       <>
                         {classroomPanel(kidsGroups, true, user, true)}

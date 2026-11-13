@@ -216,10 +216,10 @@ export default function GuidePage() {
             Some days the club picks the article: a ballot appears at the top
             of the home page. One member, one vote.
           </Extra>
-          <Extra title="Junior track">
+          <Extra title="Middle school track">
             Grades 5–7 have their own readings at{" "}
-            <Link href="/junior" className="font-bold underline">
-              /junior
+            <Link href="/middle-school" className="font-bold underline">
+              /middle-school
             </Link>
             . Same loop, calibrated younger.
           </Extra>

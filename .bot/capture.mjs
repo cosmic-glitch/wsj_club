@@ -78,7 +78,7 @@ try {
     process.exit(2);
   }
 
-  await page.evaluate((o) => { window.__captureOpts = o; }, { out, txtOut, sourceName, back: track === "junior" ? "/junior" : "/" });
+  await page.evaluate((o) => { window.__captureOpts = o; }, { out, txtOut, sourceName, back: track === "junior" ? "/middle-school" : "/" });
   const summary = await captureArticle(page);
   console.error(`capture: ${summary}`);
 

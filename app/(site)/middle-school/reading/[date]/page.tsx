@@ -15,7 +15,7 @@ export async function generateMetadata({
   const reading = getReading(date, "junior");
   if (!reading) return { title: "Reading not found" };
   return {
-    title: `${reading.title} · Junior · Daily Reading Club`,
+    title: `${reading.title} · Middle School · Daily Reading Club`,
     description: `Words and concepts from "${reading.title}".`,
   };
 }

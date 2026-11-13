@@ -47,15 +47,15 @@ const btn =
 const stepArrow =
   "self-center text-[11px] font-bold leading-none text-stone-500 group-hover:text-stone-400";
 
-// A quiet topline text link (the "← Main club" / "Word bank" chrome links).
+// A quiet topline text link (the cross-track / "Word bank" chrome links).
 const topLink =
   "px-1.5 py-1 font-mono text-[11px] font-bold uppercase tracking-[.12em] text-stone-500 no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]";
 
-// The landing / index body, shared by the senior ("/") and junior ("/junior")
+// The landing / index body, shared by every track index ("/", "/middle-school", "/elementary")
 // tracks: a thin topline (auth links), the big Anton masthead, then the readings
 // as rows in one thick-bordered list. The newest row is yellow; rows invert to
 // black on hover. `track` selects which track this index belongs to — it drives
-// the track prefix on the per-row Handout / Voice quiz actions and (junior only)
+// the track prefix on the per-row Handout / Voice quiz actions and (every track)
 // the masthead label + the cross-track link.
 export default function LandingIndex({
   readings,
@@ -67,8 +67,8 @@ export default function LandingIndex({
   /** The live vote poll as of the page's (ISR) render, or null. */
   poll: PublicPoll | null;
 }) {
-  // Every non-senior track (junior, the experimental kids) shares the same
-  // variant: a masthead label, a "← Main club" link, no SAT pitch.
+  // Every non-senior track (Middle School, Elementary) shares the same
+  // variant: a "← High School" link, no SAT pitch.
   const sub = track !== "senior";
   const base = trackBase(track);
 
@@ -167,8 +167,8 @@ export default function LandingIndex({
           top, above the masthead, under a hairline rule), quiet by type
           (plain text, so the boxed buttons stay content-only). The My Word
           Bank link lives INSIDE HomeAuthBar (next to Reports), not here.
-          A quiet cross-track link sits at the left: junior → "← Main club",
-          senior → "Junior track →". */}
+          A quiet cross-track link sits at the left: a sub-track → "← High School",
+          senior → "Middle School →" (Elementary is not linked from here yet). */}
       {/* relative z-10: the masthead's Anton line box overflows UPWARD well
           past the <header> (leading-.95 on a 128px face), and since the header
           comes later in the DOM it would otherwise paint over this bar and eat
@@ -177,11 +177,11 @@ export default function LandingIndex({
         <div className="flex min-h-[37px] items-center justify-between gap-4 border-b-2 border-[#0a0a0a] py-1">
           {sub ? (
             <Link href="/" className={topLink}>
-              ← Main club
+              ← {TRACK_LABEL.senior}
             </Link>
           ) : (
-            <Link href="/junior" className={topLink}>
-              Junior track →
+            <Link href={trackBase("junior")} className={topLink}>
+              {TRACK_LABEL.junior} →
             </Link>
           )}
           <HomeAuthBar />
@@ -191,15 +191,11 @@ export default function LandingIndex({
       {/* ---- masthead ---- */}
       <header className="animate-brutal-stamp border-b-[5px] border-[#0a0a0a] motion-reduce:animate-none">
         <div className="mx-auto max-w-[980px] px-[18px]">
-          {sub && (
-            <p className="pt-4 font-mono text-[11px] font-bold uppercase tracking-[.2em] text-stone-500">
-              {TRACK_LABEL[track]} · {TRACK_BAND[track]}
-            </p>
-          )}
+          <p className="pt-4 font-mono text-[11px] font-bold uppercase tracking-[.2em] text-stone-500">
+            {TRACK_LABEL[track]} · {TRACK_BAND[track]}
+          </p>
           <h1
-            className={`${
-              sub ? "pt-1" : "pt-4"
-            } pb-2 font-display text-[clamp(56px,12.5vw,128px)] font-normal uppercase leading-[.95] tracking-[.01em]`}
+            className={`pt-1 pb-2 font-display text-[clamp(56px,12.5vw,128px)] font-normal uppercase leading-[.95] tracking-[.01em]`}
           >
             READING{" "}
             <span className="text-transparent [-webkit-text-stroke:2px_#0a0a0a]">
@@ -221,7 +217,7 @@ export default function LandingIndex({
         {/* The deck: what this is, in the two seconds a newcomer gives us —
             boxed in the site's card language (hard yellow-black offset
             shadow, like the login popover) so it belongs to the page rather
-            than floating in it. Both tracks; junior skips the SAT pitch. */}
+            than floating in it. Every track; only senior gets the SAT pitch. */}
           <div className="mt-[17px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] p-4 shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a] motion-reduce:animate-none">
             <p className="font-sans text-[14.5px] leading-relaxed text-[#0a0a0a]">
               One hand-picked article a day for{" "}
@@ -242,7 +238,7 @@ export default function LandingIndex({
         {readings.length === 0 ? (
           <p className="mt-[26px] border-[3px] border-[#0a0a0a] p-8 text-center text-sm font-bold uppercase tracking-[.08em]">
             {sub
-              ? `No ${track} readings yet. The first one will appear here.`
+              ? `No ${TRACK_LABEL[track].toLowerCase()} readings yet. The first one will appear here.`
               : "No readings yet. The first one will appear here."}
           </p>
         ) : (
@@ -252,7 +248,7 @@ export default function LandingIndex({
                 server-rendered from `poll` so it never pops in above the
                 readings. Its `vote-live` class is what the [.vote-live~&]
                 variants below key off to demote the previous newest row. */}
-            {track !== "kids" && <VotePoll track={track} initial={poll} />}
+            <VotePoll track={track} initial={poll} />
             {upfront.map(renderRow)}
             {older.length > 0 && (
               <MoreReadings count={older.length}>

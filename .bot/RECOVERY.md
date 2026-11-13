@@ -1,11 +1,12 @@
 # Reading Club autopilot — recovery (Hetzner-only)
 
 `.bot/` is the box-local runtime for the autopilot skills — `auto-vote` (6am
-Pacific, ONE session for both tracks: scout once → rate for both audiences →
-split into two disjoint ballots → open both votes) and `auto-publish` /
-`auto-publish-junior` (from 9am Pacific, once both tracks' votes have a
-ballot, noon at the latest: tally → capture → author → ship, one per-track
-script run senior then junior under one lock). The **code here is committed**; the **secrets are not**. If
+Pacific, ONE session for all three tracks: the Economist scouted once → two
+disjoint senior/junior ballots, TIME for Kids → the kids ballot → open the
+votes) and `auto-publish` / `auto-publish-junior` / `auto-publish-kids` (from
+9am Pacific, once every track's vote has a ballot, noon at the latest: tally →
+capture → author → ship, one per-track script run senior, junior, kids under
+one lock, then ONE combined message to the club group). The **code here is committed**; the **secrets are not**. If
 the Hetzner box is lost, restore the working state on a fresh box as follows.
 
 Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
@@ -79,23 +80,24 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
    xvfb-run -a node --env-file=.bot/.env .bot/capture.mjs <article-url> 1999-01-01   # writes public/articles/1999-01-01.html + article-text/1999-01-01.txt — then delete both
    node --env-file=.env.local .bot/tally.mjs                                    # newest senior poll, read-only
    node --env-file=.env.local .bot/tally.mjs --track=junior                     # newest junior poll, read-only
+   node .bot/scout-kids.mjs > /dev/null                                         # TIME for Kids reachable (no login needed)
    node --env-file=.bot/.env .bot/notify.mjs "recovery test"                    # should hit the owner's WhatsApp DM (don't smoke-test --to=group: that is the real club group)
    ```
 
 6. **Re-arm the crons.** One line per phase. The vote driver runs one session
-   for both tracks; the publish driver runs senior then junior itself. The vote
+   for every track; the publish driver runs senior, junior, kids itself. The vote
    driver fires at two UTC hours and gates on the
    Pacific hour (6am), so it runs once a day year-round; the publish driver
    fires on the hour and half hour across five UTC hours and lets the Pacific
    9:00–12:00 firings through — it checks the ballots every half hour and
-   publishes at the first check where both tracks have one (noon regardless):
+   publishes at the first check where every track has one (noon regardless):
    ```
    0 13,14          * * *  $HOME/bin/hc-run wsjclub-auto-vote    bash $HOME/wsj_club/.bot/run-auto-vote.sh    >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
    0,30 16-20       * * *  $HOME/bin/hc-run wsjclub-auto-publish bash $HOME/wsj_club/.bot/run-auto-publish.sh >> $HOME/wsj_club/.bot/logs/cron.log 2>&1
    ```
    `hc-run` (in `~/bin`, from the foliotracker setup) pings healthchecks.io with
    the driver's exit code — a non-zero exit is the alert, and the ping body
-   carries the driver's `senior rc=… junior rc=…` line. The two checks are
+   carries the driver's `senior rc=… junior rc=… kids rc=…` line. The two checks are
    `wsjclub-auto-vote` and `wsjclub-auto-publish` (period 1 day); a missing
    check is auto-created by pinging its slug once with `?create=1`. Start a track's
    publish cron in dry-run mode (`touch ~/wsj_club/.bot/DRY_RUN-junior`, or

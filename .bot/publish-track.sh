@@ -1,13 +1,14 @@
 #!/bin/bash
 # One track's autonomous PUBLISH run for the Reading Club — the child that
-# run-auto-publish.sh (the cron entry) runs for senior, then for junior, once
+# run-auto-publish.sh (the cron entry) runs for senior, junior, then kids, once
 # its ballot check says go. The agentic session inside it tallies, captures,
 # authors and pushes (via ship.sh); THIS script then waits for Vercel to serve
-# the day and sends the WhatsApp messages — the model never sits on a long
-# wait or messages anyone (a `claude -p` session ends the moment the model
-# ends its turn, and anything it left in the background dies with it).
-#   bash .bot/publish-track.sh                 # senior (default): the auto-publish skill
-#   bash .bot/publish-track.sh --track=junior  # junior: the auto-publish-junior skill
+# the day — the model never sits on a long wait or messages anyone (a
+# `claude -p` session ends the moment the model ends its turn, and anything it
+# left in the background dies with it).
+#   bash .bot/publish-track.sh                 # senior = High School: the auto-publish skill
+#   bash .bot/publish-track.sh --track=junior  # junior = Middle School: auto-publish-junior
+#   bash .bot/publish-track.sh --track=kids    # kids = Elementary: auto-publish-kids
 #
 # No time gate here — the hour gate and the vote hold live in the driver — so
 # a direct call publishes the track NOW (a supervised manual run; set
@@ -15,16 +16,16 @@
 # so a manual run queues behind a cron run instead of colliding with it.
 # Publishing the reading is what closes the vote — this IS the close.
 #
-# Each track announces itself to the club group the moment its day is verified
-# live — one fixed line per track (see the outcome check below) — so the group
-# gets two messages a day, senior first (the driver's order), and nothing else.
+# This script never messages the club group. A day verified live that THIS run
+# pushed drops `.bot/state/<date>[-<track>]-live` (holding the title); the
+# driver sends the group ONE combined message once every track is live.
 #
 # Controls (flag files in .bot/, box-local, never committed) — the full list is
 # in run-auto-publish.sh: PAUSE / PAUSE-<track> skip the run, DRY_RUN /
-# DRY_RUN-<track> ship to branch auto/[junior/]<date> instead of main,
+# DRY_RUN-<track> ship to branch auto/[<track>/]<date> instead of main,
 # OFF-<track> switches the track off. This run reads them once it holds the
-# lock, so a flag dropped while the senior run was still going applies to the
-# junior run behind it.
+# lock, so a flag dropped while an earlier track was still running applies to
+# the runs behind it.
 # Env:
 #   AUTOPUBLISH_DATE=…       publish a specific poll date (default: today Pacific)
 #   AUTOPILOT_MODEL=…        run the session on another model (default claude-sonnet-5-5[1m])
@@ -43,8 +44,8 @@ AUTOPILOT_MODEL="${AUTOPILOT_MODEL:-claude-sonnet-5-5[1m]}"
 TRACK="senior"
 for a in "$@"; do
   case "$a" in
-    --track=senior|--track=junior) TRACK="${a#--track=}" ;;
-    *) echo "usage: $0 [--track=senior|junior]" >&2; exit 2 ;;
+    --track=senior|--track=junior|--track=kids) TRACK="${a#--track=}" ;;
+    *) echo "usage: $0 [--track=senior|junior|kids]" >&2; exit 2 ;;
   esac
 done
 
@@ -53,37 +54,46 @@ PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 cd "$PROJECT_DIR" || exit 1
 
 # Per-track knobs: the skill, the content path, the branch a dry run lands on,
-# the URL that proves the day is serving, and the group announcement's label +
-# site link.
+# and the URL that proves the day is serving.
 TODAY="${AUTOPUBLISH_DATE:-$(TZ=America/Los_Angeles date +%F)}"
-# MARK is dropped by ship.sh after a successful push — the announcement is
-# gated on it, so a day the owner published by hand while the run worked is
-# never announced by us.
-if [ "$TRACK" = "junior" ]; then
-  NAME="auto-publish-junior"
-  CONTENT="content/junior/${TODAY}.json"
-  DRY_BRANCH="auto/junior/${TODAY}"
-  READING_URL="https://dailyreadingclub.com/junior/reading/${TODAY}"
-  MARK=".bot/state/${TODAY}-junior-pushed"
-  TRACK_LABEL="JUNIOR "
-  ANNOUNCE_LABEL="Junior track"
-  ANNOUNCE_SITE="dailyreadingclub.com/junior"
-else
-  NAME="auto-publish"
-  CONTENT="content/${TODAY}.json"
-  DRY_BRANCH="auto/${TODAY}"
-  READING_URL="https://dailyreadingclub.com/reading/${TODAY}"
-  MARK=".bot/state/${TODAY}-pushed"
-  TRACK_LABEL=""
-  ANNOUNCE_LABEL="Today's article"
-  ANNOUNCE_SITE="dailyreadingclub.com"
-fi
+# MARK is dropped by ship.sh after a successful push; LIVE is dropped here once
+# the pushed day serves — the driver's group message is gated on LIVE, so a day
+# the owner published by hand while the run worked is never announced by us.
+case "$TRACK" in
+  junior)
+    NAME="auto-publish-junior"
+    CONTENT="content/junior/${TODAY}.json"
+    DRY_BRANCH="auto/junior/${TODAY}"
+    READING_URL="https://dailyreadingclub.com/middle-school/reading/${TODAY}"
+    MARK=".bot/state/${TODAY}-junior-pushed"
+    LIVE=".bot/state/${TODAY}-junior-live"
+    TRACK_LABEL="MIDDLE SCHOOL "
+    ;;
+  kids)
+    NAME="auto-publish-kids"
+    CONTENT="content/kids/${TODAY}.json"
+    DRY_BRANCH="auto/kids/${TODAY}"
+    READING_URL="https://dailyreadingclub.com/elementary/reading/${TODAY}"
+    MARK=".bot/state/${TODAY}-kids-pushed"
+    LIVE=".bot/state/${TODAY}-kids-live"
+    TRACK_LABEL="ELEMENTARY "
+    ;;
+  *)
+    NAME="auto-publish"
+    CONTENT="content/${TODAY}.json"
+    DRY_BRANCH="auto/${TODAY}"
+    READING_URL="https://dailyreadingclub.com/reading/${TODAY}"
+    MARK=".bot/state/${TODAY}-pushed"
+    LIVE=".bot/state/${TODAY}-live"
+    TRACK_LABEL="HIGH SCHOOL "
+    ;;
+esac
 
 LOG_DIR="$PROJECT_DIR/.bot/logs"
 mkdir -p "$LOG_DIR" "$PROJECT_DIR/.bot/state"
 LOG_FILE="$LOG_DIR/${NAME}-${TODAY}.log"
 log() { echo "[$(date -u +%FT%TZ)] ${NAME}: $*" >> "$LOG_FILE"; }
-notify() { # notify <owner|group> <text> — NANOCLAW_* come from .bot/.env, sourced below
+notify() { # notify owner <text> — NANOCLAW_* come from .bot/.env, sourced below
   if printf '%s' "$2" | node .bot/notify.mjs --to="$1" --stdin >> "$LOG_FILE" 2>&1; then
     log "notified ${1}: ${2//$'\n'/ | }"
   else
@@ -112,8 +122,8 @@ if ! flock -w 7200 9; then
 fi
 
 # Secrets for every command in the session: SUPABASE_DB_URL, BLOB_READ_WRITE_TOKEN,
-# OPENAI_API_KEY from .env.local; ECON_* + NANOCLAW_CHATJID (owner DM) +
-# NANOCLAW_GROUP_JID (the club group, for the announcement) from .bot/.env.
+# OPENAI_API_KEY from .env.local; ECON_* + NANOCLAW_CHATJID (owner DM) from
+# .bot/.env.
 set -a
 # shellcheck source=/dev/null
 [ -f "$PROJECT_DIR/.env.local" ] && source "$PROJECT_DIR/.env.local"
@@ -122,7 +132,7 @@ set -a
 set +a
 
 # The flag files are read here, once we hold the lock, so a flag dropped while
-# the senior run was still going applies to the junior run behind it.
+# an earlier track was still running applies to the runs behind it.
 if [ -f "$PROJECT_DIR/.bot/OFF-${TRACK}" ]; then
   log "OFF (.bot/OFF-${TRACK} exists) — the ${TRACK} autopilot is switched off; skipping ${TODAY}"
   exit 0
@@ -154,6 +164,7 @@ fi
 
 # Headed browser under a virtual display — the Economist's bot challenge is
 # only solved headed (see lib.mjs); the capture runs inside this session.
+# (TIME for Kids needs none of that, but headed works there too.)
 XVFB=()
 if command -v xvfb-run >/dev/null 2>&1; then
   XVFB=(xvfb-run -a --server-args="-screen 0 1440x900x24")
@@ -164,7 +175,7 @@ fi
 # One agentic session runs tally → capture → author → ship (the push only).
 # Same invocation shape as run-auto-vote.sh (unattended, so no permission
 # prompts). A stale marker from an earlier attempt must not gate today's send.
-rm -f "$MARK"
+rm -f "$MARK" "$LIVE"
 CLAUDE_RC=0
 "${XVFB[@]}" claude -p "Use the ${NAME} skill to publish today's Reading Club ${TRACK} reading (date ${TODAY}, mode ${MODE}). Run fully autonomously end to end — never pause for confirmation — and follow the skill's guards, quality gates, and failure handling exactly." \
   --model "$AUTOPILOT_MODEL" \
@@ -179,10 +190,10 @@ log "claude session exited (rc=$CLAUDE_RC)"
 # the push and Vercel builds it afterwards; DRY RUN = origin has the dry-run
 # branch. Anything else exits 1 so the cron's healthcheck pages the owner (the
 # skill's failure path is silent).
-# The messages are sent from here, never from the skill, and only when MARK
-# exists (ship.sh pushed in THIS run): the club group gets this track's one
-# announcement line for a verified-live day; the owner's DM gets the dry-run
-# note or the pushed-but-not-serving warning.
+# Only owner DMs are sent from here (the dry-run note, the pushed-but-not-
+# serving warning), and only when MARK exists (ship.sh pushed in THIS run). A
+# verified-live day this run pushed drops LIVE (the title) for the driver's one
+# combined group message.
 git fetch -q origin >> "$LOG_FILE" 2>&1
 title_of() { # title_of <git object, e.g. origin/main:content/2026-09-06.json>
   git show "$1" 2>/dev/null | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(String(JSON.parse(s).title||""))}catch{}})'
@@ -210,18 +221,15 @@ elif git cat-file -e "origin/main:${CONTENT}" 2>/dev/null; then
     log "outcome OK — ${TRACK} reading ${TODAY} is on main and live (poll ${i})"
     RC=0
     if [ -f "$MARK" ]; then
-      # The club group's one line for this track (*…* is WhatsApp bold):
-      #   Today's article: *<senior title>* (dailyreadingclub.com)
-      #   Junior track: *<junior title>* (dailyreadingclub.com/junior)
-      # Nothing else ever goes to the group — no other links, no vote stats.
-      notify group "${ANNOUNCE_LABEL}: *${TITLE}* (${ANNOUNCE_SITE})"
+      printf '%s' "$TITLE" > "$LIVE"
+      log "dropped ${LIVE} for the driver's combined group message"
     else
       log "not announcing — no ${MARK}, so this run didn't push it (published by hand meanwhile)"
     fi
   else
     log "OUTCOME PARTIAL — ${TRACK} ${TODAY} is on origin/main but the site still returns HTTP ${CODE} after 12 minutes; check the Vercel deploy"
     RC=1
-    [ -f "$MARK" ] && notify owner "⚠️ ${TRACK_LABEL}Reading Club — ${TODAY} \"${TITLE}\" is on main but the site hadn't served it after 12 min — check Vercel. The group was NOT told; announce by hand once it's live."
+    [ -f "$MARK" ] && notify owner "⚠️ ${TRACK_LABEL}Reading Club — ${TODAY} \"${TITLE}\" is on main but the site hadn't served it after 12 min — check Vercel. The group message is held until every track is live; announce by hand once it is."
   fi
 else
   log "OUTCOME FAILURE — ${TRACK} ${TODAY} is not on origin/main"

@@ -22,7 +22,7 @@
 //   out        → public/articles/<date>.html          (junior: public/articles/junior/<date>.html)
 //   txtOut     → article-text/<date>.txt              (junior: article-text/junior/<date>.txt)
 //   sourceName → 'The Economist' | 'WSJ'  (the short WSJ form — the full name wraps the top bar on phones)
-//   back       → '/' (senior) | '/junior'  (the page's "← Reading Club" link)
+//   back       → '/' (senior) | '/middle-school' | '/elementary'  (the page's "← Reading Club" link)
 //   container  → OPTIONAL CSS selector of the article body, for a site with no
 //                <article>/<main> around just the story (TIME for Kids:
 //                '.article-show__content-article'). Absent → auto-detect, as before.

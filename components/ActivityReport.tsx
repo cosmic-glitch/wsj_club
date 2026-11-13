@@ -16,7 +16,7 @@ import { TRACK_LABEL } from "@/lib/track";
 /**
  * The Activity page's body (app/(site)/admin/analytics): the by-student table,
  * combined across both tracks, then one by-reading funnel table per track
- * (Regular, then Junior) — each row expands in place to its detail (that
+ * (High School, then Middle School, then Elementary) — each row expands in place to its detail (that
  * student's per-reading timeline / who did which step and when). All numbers
  * arrive
  * pre-aggregated from lib/analytics.ts; this component only lays them out.
@@ -343,7 +343,7 @@ function DaysTable({ days }: { days: StudentDay[] }) {
               </td>
               <td className={`${td} font-sans text-[#0a0a0a]`}>
                 {d.title || d.date}
-                {d.track !== "senior" && <span className={`${chip} ml-2`}>{d.track}</span>}
+                {d.track !== "senior" && <span className={`${chip} ml-2`}>{TRACK_LABEL[d.track]}</span>}
               </td>
               <td className={td}>
                 <Count n={d.articleOpens} />
@@ -391,7 +391,7 @@ function StudentsTable({
   return (
     <Section
       title="By student"
-      note={`Everyone with any activity in this window, both tracks (${published} published). Each step counts the readings that person took it on. Read = total time on article pages. Parents follow the students; opens with no login are one "Logged out" row at the end. Click a row for the per-reading timeline, with junior readings marked.`}
+      note={`Everyone with any activity in this window, both tracks (${published} published). Each step counts the readings that person took it on. Read = total time on article pages. Parents follow the students; opens with no login are one "Logged out" row at the end. Click a row for the per-reading timeline, with each non-high-school reading marked by its track.`}
     >
       {data.students.length === 0 ? (
         <Empty>No activity in this window.</Empty>

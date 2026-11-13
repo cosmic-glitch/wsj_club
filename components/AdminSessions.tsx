@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import DeleteSessionButton from "@/components/DeleteSessionButton";
 import SessionAudio from "@/components/SessionAudio";
-import { trackBase, type SubTrack } from "@/lib/track";
+import { TRACK_LABEL, trackBase, type SubTrack } from "@/lib/track";
 
 export type Turn = { role: "student" | "tutor"; text: string };
 export type Report = {
@@ -344,7 +344,7 @@ export default function AdminSessions({
                             <span className="mr-auto flex items-center gap-1.5">
                               {s.track && (
                                 <span className="shrink-0 bg-violet-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-violet-700">
-                                  {s.track}
+                                  {TRACK_LABEL[s.track]}
                                 </span>
                               )}
                               {s.inProgress && (
@@ -431,7 +431,7 @@ export default function AdminSessions({
                   )}
                   {session.track && (
                     <span className="bg-violet-100 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-violet-700">
-                      {session.track}
+                      {TRACK_LABEL[session.track]}
                     </span>
                   )}
                   {session.inProgress && (

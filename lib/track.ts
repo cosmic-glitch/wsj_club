@@ -1,13 +1,17 @@
 /**
- * The reading tracks, client-safe (no fs). `senior` (US grades 8–10) is the
- * original club and keeps every date-keyed path bare; every other track lives
- * under its own path segment everywhere: content files, article pages, audio,
- * article text, Blob session keys, and its routes (`/junior`, `/kids`).
+ * The reading tracks, client-safe (no fs). The ids are INTERNAL names, never
+ * shown: people see TRACK_LABEL and the URL prefix from trackBase.
  *
- * - `junior`: US grades 5–7 (PLAN-junior.md).
- * - `kids`: an EXPERIMENTAL early-elementary track (reading at about a grade 3
- *   level), sourced from kids' news sites. Unlinked from the rest of the site;
- *   reachable only at /kids.
+ * - `senior` = High School (US grades 8–10), the original club, at `/`. It
+ *   keeps every date-keyed path bare.
+ * - `junior` = Middle School (grades 5–7, PLAN-junior.md), at `/middle-school`.
+ * - `kids`   = Elementary (reading at about a grade 3 level, articles from
+ *   kids' news sites), at `/elementary`. Not linked from the other indexes.
+ *
+ * Every non-senior track keeps its id as the path segment of its stored
+ * things (content files, article pages, audio, article text, glossaries, Blob
+ * session keys: `trackDir`), while its public routes use the display slug
+ * (`trackBase`). The old `/junior` and `/kids` URLs redirect (next.config.ts).
  *
  * A day is identified by (track, date): dates repeat across tracks.
  */
@@ -35,27 +39,34 @@ export function trackDir(track: Track): string {
   return track === "senior" ? "" : `${track}/`;
 }
 
-/** The URL prefix of a track's routes: "" or "/junior" / "/kids". */
+/** The public URL segment of each track's routes (senior has none). */
+export const TRACK_SLUG: Record<Track, string> = {
+  senior: "",
+  junior: "middle-school",
+  kids: "elementary",
+};
+
+/** The URL prefix of a track's routes: "" or "/middle-school" / "/elementary". */
 export function trackBase(track: Track): string {
-  return track === "senior" ? "" : `/${track}`;
+  return track === "senior" ? "" : `/${TRACK_SLUG[track]}`;
 }
 
-/** The track a site path belongs to (by its first segment). */
+/** The track a site path belongs to (by its first segment; old slugs too). */
 export function trackOfPath(pathname: string | null | undefined): Track {
-  if (!pathname) return "senior";
-  if (pathname === "/junior" || pathname.startsWith("/junior/")) return "junior";
-  if (pathname === "/kids" || pathname.startsWith("/kids/")) return "kids";
+  const seg = (pathname ?? "").split("/")[1] ?? "";
+  if (seg === "middle-school" || seg === "junior") return "junior";
+  if (seg === "elementary" || seg === "kids") return "kids";
   return "senior";
 }
 
-/** Owner-facing track names (Reports tabs, Activity tables). */
+/** The display name of each track, everywhere people see one. */
 export const TRACK_LABEL: Record<Track, string> = {
-  senior: "Regular",
-  junior: "Junior",
-  kids: "Kids",
+  senior: "High School",
+  junior: "Middle School",
+  kids: "Elementary",
 };
 
-/** The index masthead's grade label (none on the senior index). */
+/** The index masthead's grade label. */
 export const TRACK_BAND: Record<Track, string> = {
   senior: "Grades 8–10",
   junior: "Grades 5–7",

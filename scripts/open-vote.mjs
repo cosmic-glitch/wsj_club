@@ -11,8 +11,8 @@
  * independent — both can be live at once.
  *
  * Usage:
- *   node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD> [candidates.json] [--track=junior]
- *   ... | node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD> [--track=junior]
+ *   node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD> [candidates.json] [--track=junior|kids]
+ *   ... | node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD> [--track=junior|kids]
  *
  * The candidates file (or stdin) is a JSON array of 2–12 entries (typical
  * senior ballot: 7 news + 3 enrichment; typical junior ballot: 5 news):
@@ -37,15 +37,15 @@ const trackFlag = argv.find((a) => a.startsWith("--track="));
 const track = trackFlag ? trackFlag.slice("--track=".length) : "senior";
 
 if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
-  console.error("Usage: node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD> [candidates.json] [--track=junior]");
+  console.error("Usage: node --env-file=.env.local scripts/open-vote.mjs <YYYY-MM-DD> [candidates.json] [--track=junior|kids]");
   process.exit(1);
 }
-if (track !== "senior" && track !== "junior") {
-  console.error(`Unknown track "${track}" — use --track=junior (or omit for senior).`);
+if (track !== "senior" && track !== "junior" && track !== "kids") {
+  console.error(`Unknown track "${track}" — use --track=junior or --track=kids (or omit for senior).`);
   process.exit(1);
 }
-const junior = track === "junior";
-const contentPath = junior ? `content/junior/${date}.json` : `content/${date}.json`;
+const sub = track !== "senior";
+const contentPath = sub ? `content/${track}/${date}.json` : `content/${date}.json`;
 
 // A poll for a date whose reading is already published would be born closed.
 if (fs.existsSync(contentPath)) {
@@ -121,10 +121,10 @@ if (existing.length > 0) {
 // across a re-open.
 await dbUpsert("rc_polls", { track, date, candidates }, "track,date");
 
-const trackTag = junior ? " (junior)" : "";
+const trackTag = sub ? ` (${track})` : "";
 console.log(`Vote for ${date}${trackTag} is LIVE with ${candidates.length} candidates:`);
 for (const c of candidates)
   console.log(`  [${c.source}${c.kind === "enrichment" ? " · enrichment" : ""}] ${c.title}  (id: ${c.id})`);
-console.log(`\nThe poll shows at the top of https://dailyreadingclub.com${junior ? "/junior" : ""} until the day's ${track} reading is published.`);
+console.log(`\nThe poll shows at the top of https://dailyreadingclub.com${{ senior: "", junior: "/middle-school", kids: "/elementary" }[track]} until the day's ${track} reading is published.`);
 console.log("Announce the voting window in the group chat (the site shows no deadline).");
-console.log(`Tally later with: node --env-file=.env.local scripts/check-vote.mjs ${date}${junior ? " --track=junior" : ""}`);
+console.log(`Tally later with: node --env-file=.env.local scripts/check-vote.mjs ${date}${sub ? ` --track=${track}` : ""}`);

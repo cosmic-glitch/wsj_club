@@ -49,8 +49,8 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
 | Pronunciation audio | `public/audio/junior/YYYY-MM-DD/<slug>.mp3` (via `gen-pronunciation.mjs … --track=junior`) |
 | Article-page glossary | `public/glossaries/junior/YYYY-MM-DD.json` (check with `check-glossary.mjs junior/YYYY-MM-DD`) |
 | Article text (Blob) | `article-text/junior/YYYY-MM-DD.txt` (via `upload-article-text.mjs … --track=junior`) |
-| Handout URL | `/junior/reading/YYYY-MM-DD` |
-| Self-quiz URL | `/junior/reading/YYYY-MM-DD/quiz` |
+| Handout URL | `/middle-school/reading/YYYY-MM-DD` |
+| Self-quiz URL | `/middle-school/reading/YYYY-MM-DD/quiz` |
 
 `articlePageUrl` in the JSON is `"/articles/junior/YYYY-MM-DD.html"` (the served path). The `voiceQuiz`, `articleUrl`, and content-shape fields are exactly as in the senior schema. (don't set them on new days.)
 
@@ -60,11 +60,11 @@ Everything the senior `wsj-reading` skill writes to a bare path, the junior trac
 
 2. **Read the article in the browser.** Identical to the senior skill — use the **Playwright** browser tools (`mcp__plugin_playwright_playwright__browser_*`), **never the `claude-in-chrome` extension** (its safety classifier blocks `wsj.com`/`economist.com`). Navigate, have the **user log in themselves** (never ask for or store a password), then read the full article: the real headline, the deck/standfirst, and the substance (main argument, key facts, jargon a middle-schooler would trip on). See `wsj-reading`'s SKILL.md step 2 for the full detail.
 
-3. **Capture the day's ARTICLE PAGE (paywalled/sign-in articles) → the JUNIOR paths, and upload the article text.** **Open/free articles need no page of our own** — omit `articlePageUrl`; the /junior index's ARTICLE button then links straight to the original (`articleUrl`). You still need the article text for the voice quiz (run the snippet anyway and `rm` the unused page file, or save the text by hand with headline + deck at the top).
+3. **Capture the day's ARTICLE PAGE (paywalled/sign-in articles) → the JUNIOR paths, and upload the article text.** **Open/free articles need no page of our own** — omit `articlePageUrl`; the /middle-school index's ARTICLE button then links straight to the original (`articleUrl`). You still need the article text for the voice quiz (run the snippet anyway and `rm` the unused page file, or save the text by hand with headline + deck at the top).
    - `mkdir -p public/articles/junior article-text/junior`.
    - Run the **shared capture snippet exactly as the senior `wsj-reading` skill's step 3 does** — `browser_evaluate` to set `window.__captureOpts` on the open article page, then `browser_run_code_unsafe` with `filename: "/Users/anuragved/code/wsj_club/scripts/capture-article.js"` (the ONE implementation, also used by the autonomous senior run). It rebuilds a clean responsive page from the article's own paragraphs and real content images — reflows on phones, preserves charts, small-caps acronyms, italics, and the drop cap — and writes the plain article text in the same pass. **The only changes for junior are the output paths and the back-link:**
      ```js
-     () => { window.__captureOpts = { out: '/Users/anuragved/code/wsj_club/public/articles/junior/YYYY-MM-DD.html', txtOut: '/Users/anuragved/code/wsj_club/article-text/junior/YYYY-MM-DD.txt', sourceName: 'The Economist' /* or the short 'WSJ' */, back: '/junior' }; return 'set'; }
+     () => { window.__captureOpts = { out: '/Users/anuragved/code/wsj_club/public/articles/junior/YYYY-MM-DD.html', txtOut: '/Users/anuragved/code/wsj_club/article-text/junior/YYYY-MM-DD.txt', sourceName: 'The Economist' /* or the short 'WSJ' */, back: '/middle-school' }; return 'set'; }
      ```
      (`ORIG_URL` is auto-derived from the open page — it becomes the top bar's right-aligned "Source: <publication>" link, beside the "← Reading Club" link.)
      Never re-derive or paste the snippet here — the one file is what keeps the two tracks in lockstep (fix it there if it needs fixing; the senior skill also documents the standalone fallback for when the MCP drops the connection). Verify it the same way (the returned `deck=/text=/small-caps=/images=/infographics=` counts; check the text file's tail for footer junk; serve `public/` locally and eyeball the page at a 390px viewport; expect ~50KB–1MB).

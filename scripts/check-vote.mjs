@@ -8,7 +8,7 @@
  * scripts/open-vote.mjs opens the poll.
  *
  * Usage:
- *   node --env-file=.env.local scripts/check-vote.mjs [YYYY-MM-DD] [--track=junior]
+ *   node --env-file=.env.local scripts/check-vote.mjs [YYYY-MM-DD] [--track=junior|kids]
  *
  * With no date it checks the track's newest poll. Ties are listed for the
  * owner to break by just picking one (the vote is advisory by construction).
@@ -22,15 +22,15 @@ const track = trackFlag ? trackFlag.slice("--track=".length) : "senior";
 const arg = argv.find((a) => !a.startsWith("--"));
 
 if (arg && !/^\d{4}-\d{2}-\d{2}$/.test(arg)) {
-  console.error("Usage: node --env-file=.env.local scripts/check-vote.mjs [YYYY-MM-DD] [--track=junior]");
+  console.error("Usage: node --env-file=.env.local scripts/check-vote.mjs [YYYY-MM-DD] [--track=junior|kids]");
   process.exit(1);
 }
-if (track !== "senior" && track !== "junior") {
-  console.error(`Unknown track "${track}" — use --track=junior (or omit for senior).`);
+if (track !== "senior" && track !== "junior" && track !== "kids") {
+  console.error(`Unknown track "${track}" — use --track=junior or --track=kids (or omit for senior).`);
   process.exit(1);
 }
 
-const junior = track === "junior";
+const sub = track !== "senior";
 
 const filter = arg ? `&date=eq.${arg}` : "";
 const polls = await dbSelect(
@@ -56,9 +56,9 @@ const ballots = (
 ).map((r) => ({ user: r.username, candidateId: r.candidate_id }));
 
 const published = fs.existsSync(
-  junior ? `content/junior/${date}.json` : `content/${date}.json`
+  sub ? `content/${track}/${date}.json` : `content/${date}.json`
 );
-console.log(`Vote for ${date}${junior ? " (junior)" : ""} — ${published ? "CLOSED (reading published)" : "still live"}`);
+console.log(`Vote for ${date}${sub ? ` (${track})` : ""} — ${published ? "CLOSED (reading published)" : "still live"}`);
 console.log(`${ballots.length} ballot(s) cast\n`);
 
 const byCandidate = new Map(poll.candidates.map((c) => [c.id, []]));
@@ -82,7 +82,7 @@ if (orphans.length) {
 
 const top = ranked[0]?.voters.length ?? 0;
 const winners = ranked.filter((c) => c.voters.length === top && top > 0);
-const readingSkill = junior ? "wsj-reading-junior" : "wsj-reading";
+const readingSkill = { senior: "wsj-reading", junior: "wsj-reading-junior", kids: "wsj-pick-article-elementary (its Publishing section)" }[track];
 if (winners.length === 1) {
   console.log(`WINNER: [${winners[0].source}${winners[0].kind === "enrichment" ? " · enrichment" : ""}] ${winners[0].title}`);
   console.log(`  ${winners[0].articleUrl}`);

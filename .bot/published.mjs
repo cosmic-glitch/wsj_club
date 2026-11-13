@@ -58,13 +58,13 @@ function datedParts(url) {
 }
 
 // Returns { urls: Set, titles: Set, readings: [{title, url, dated, titleTokens}], count }
-// across content/ and content/junior/.
+// across every track's content dir (content/, content/junior/, content/kids/).
 export function loadPublished() {
   const urls = new Set();
   const titles = new Set();
   const readings = [];
   let count = 0;
-  for (const dir of ["content", "content/junior"]) {
+  for (const dir of ["content", "content/junior", "content/kids"]) {
     const abs = path.join(REPO_ROOT, dir);
     if (!fs.existsSync(abs)) continue;
     for (const name of fs.readdirSync(abs)) {
@@ -112,7 +112,7 @@ export function isPublished(published, { url, title }) {
 // The track's most recent readings, newest first, as "YYYY-MM-DD  title" lines —
 // context the pickers print so the ranker knows what the club has read lately.
 export function recentReadings(track = "senior", n = 10) {
-  const dir = track === "junior" ? "content/junior" : "content";
+  const dir = track === "senior" ? "content" : `content/${track}`;
   const abs = path.join(REPO_ROOT, dir);
   if (!fs.existsSync(abs)) return [];
   return fs

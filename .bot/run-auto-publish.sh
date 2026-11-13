@@ -1,10 +1,16 @@
 #!/bin/bash
 # Autonomous daily PUBLISH for the Reading Club — the cron entry, one run for
-# BOTH tracks. From 9am Pacific it checks, every half hour, whether every
+# ALL THREE tracks (senior = High School, junior = Middle School, kids =
+# Elementary). From 9am Pacific it checks, every half hour, whether every
 # track's vote has at least one ballot; the first check that finds it publishes
-# the day — senior then junior, each via publish-track.sh — and at noon it publishes
-# regardless (a track with no ballots gets the morning's top-rated pick,
-# tally.mjs's own fallback). Every hold texts the owner.
+# the day — senior, junior, then kids, each via publish-track.sh — and at noon
+# it publishes regardless (a track with no ballots gets the morning's top-rated
+# pick, tally.mjs's own fallback). Every hold texts the owner.
+#
+# Then ONE message to the club's WhatsApp group, sent only once every track
+# that should publish today is live AND was pushed by the autopilot (see the
+# announcement block at the end); anything less goes to the owner's DM as a
+# ready-to-forward text instead. The owner controls what reaches the club.
 #   bash .bot/run-auto-publish.sh
 #
 # Cron fires on the hour and half hour, 16:00–20:30 UTC; the Pacific gate lets
@@ -13,8 +19,9 @@
 # vote deadline on both tracks is 9am Pacific once everyone has voted, and
 # noon at the latest. Publishing the reading is what closes the vote.
 #
-# The hold is JOINT: if either track still has no ballot, neither publishes
-# (the club votes on both at once, and the group hears about the day as one).
+# The hold is JOINT: if any track still has no ballot, none publishes (the
+# owner votes on every track every day, and the group hears about the day as
+# one message).
 # Not waited on: a track already published (by hand), paused, or switched off;
 # and a track with no poll at all (the vote run failed) — nothing can change
 # by waiting, its publish run then fails at the tally and the healthcheck pages.
@@ -28,6 +35,7 @@
 #   .bot/DRY_RUN          → do everything but ship to branch auto/[junior/]<date>
 #                           instead of main — the rollout mode; delete the file to go live
 #   .bot/DRY_RUN-<track>  → the same for one track only (roll a track out alone)
+#                           (dry-run branches: auto/<date>, auto/junior/<date>, auto/kids/<date>)
 #   .bot/OFF-<track>      → that track's autopilot is switched off entirely (vote + publish)
 # Env overrides for a supervised manual run:
 #   AUTOPUBLISH_FORCE=1      publish NOW: bypass the time gate AND the vote hold
@@ -99,7 +107,7 @@ log "starting (Pacific $(TZ=America/Los_Angeles date +%FT%T), slot=${SLOT}, date
 # Per track: off / paused / published / no poll / N ballot(s). "published" is
 # read off origin/main (a fetch, not a pull — the children own the tree).
 git fetch -q origin >> "$LOG_FILE" 2>&1 || log "WARNING git fetch failed; reading 'published' from the local tree"
-SENIOR_POLL=0; SENIOR_BALLOTS=0; JUNIOR_POLL=0; JUNIOR_BALLOTS=0
+SENIOR_POLL=0; SENIOR_BALLOTS=0; JUNIOR_POLL=0; JUNIOR_BALLOTS=0; KIDS_POLL=0; KIDS_BALLOTS=0
 CHECK_OK=1
 if BALLOT_LINE="$(node .bot/ballots.mjs "$TODAY" 2>> "$LOG_FILE")" && [ -n "$BALLOT_LINE" ]; then
   eval "$BALLOT_LINE"   # numbers only, by construction (see ballots.mjs)
@@ -109,14 +117,18 @@ else
   log "WARNING the ballot check failed (see above)"
 fi
 
+TRACKS=(senior junior kids)
+content_of() { [ "$1" = "senior" ] && echo "content/${TODAY}.json" || echo "content/$1/${TODAY}.json"; }
 WAITING=()
 STATUS=()
-for T in senior junior; do
-  if [ "$T" = "junior" ]; then
-    CONTENT="content/junior/${TODAY}.json"; POLL="$JUNIOR_POLL"; BALLOTS="$JUNIOR_BALLOTS"
-  else
-    CONTENT="content/${TODAY}.json"; POLL="$SENIOR_POLL"; BALLOTS="$SENIOR_BALLOTS"
-  fi
+PENDING=0   # tracks that still have something to publish
+for T in "${TRACKS[@]}"; do
+  CONTENT="$(content_of "$T")"
+  case "$T" in
+    junior) POLL="$JUNIOR_POLL"; BALLOTS="$JUNIOR_BALLOTS" ;;
+    kids)   POLL="$KIDS_POLL";   BALLOTS="$KIDS_BALLOTS" ;;
+    *)      POLL="$SENIOR_POLL"; BALLOTS="$SENIOR_BALLOTS" ;;
+  esac
   if [ -f "$PROJECT_DIR/.bot/OFF-${T}" ]; then
     S="off"
   elif [ -f "$PROJECT_DIR/.bot/PAUSE" ] || [ -f "$PROJECT_DIR/.bot/PAUSE-${T}" ]; then
@@ -135,8 +147,9 @@ for T in senior junior; do
     S="${BALLOTS} ballots"
   fi
   STATUS+=("${T}: ${S}")
+  case "$S" in off|paused|published) ;; *) PENDING=$((PENDING + 1)) ;; esac
 done
-SUMMARY="${STATUS[0]}, ${STATUS[1]}"
+SUMMARY="$(IFS=,; echo "${STATUS[*]}" | sed 's/,/, /g')"
 log "tracks — ${SUMMARY}"
 
 case "$SLOT" in
@@ -163,19 +176,91 @@ elif [ ${#WAITING[@]} -gt 0 ]; then
   notify "⏳ Reading Club ${TODAY} — still no votes at noon (${SUMMARY}). Publishing anyway; a track with no ballots gets the morning's top-rated pick."
 fi
 
-# --- Publish: senior, then junior ------------------------------------------
+# --- Publish: senior, junior, then kids ---------------------------------------
 # Each child takes the autopilot lock, runs its skill, verifies its outcome and
-# sends its own messages; its exit code is its verdict (0 = the day is live,
-# already published, paused, or off). A failed senior run never skips junior.
+# sends its own owner DMs; its exit code is its verdict (0 = the day is live,
+# already published, paused, or off). A failed run never skips the next track.
+# A firing after the day is done (every track published, paused or off) skips
+# straight to the announcement check, which is once-only.
 RESULT=()
 RC_ALL=0
-for T in senior junior; do
-  log "running publish-track.sh --track=${T}"
-  rc=0
-  bash "$SCRIPT_DIR/publish-track.sh" "--track=${T}" || rc=$?
-  RESULT+=("${T} rc=${rc}")
-  [ "$rc" -ne 0 ] && RC_ALL=1
-done
+if [ "$PENDING" -eq 0 ] && [ "$FORCE" != "1" ]; then
+  log "every track is published, paused or off — nothing to publish"
+else
+  for T in "${TRACKS[@]}"; do
+    log "running publish-track.sh --track=${T}"
+    rc=0
+    bash "$SCRIPT_DIR/publish-track.sh" "--track=${T}" || rc=$?
+    RESULT+=("${T} rc=${rc}")
+    [ "$rc" -ne 0 ] && RC_ALL=1
+  done
+fi
+
+# --- The one group message ----------------------------------------------------
+# Sent ONCE per day (.bot/state/<date>-announced), and only when every track
+# that should publish today (not off, not paused) is on origin/main AND this
+# autopilot pushed it and saw it serve (publish-track.sh's -live marker, which
+# holds the title). Otherwise — a track failed, went to a dry-run branch, or
+# was published by hand — the owner's DM gets the ready-to-forward text and
+# the reason, and nothing reaches the group. A dry-run day sends nothing.
+#   Today's readings:
+#   High school: *<title>* (dailyreadingclub.com)
+#   Middle school: *<title>* (dailyreadingclub.com/middle-school)
+#   Elementary: *<title>* (dailyreadingclub.com/elementary)
+# (*…* is WhatsApp bold.) Nothing else ever goes to the group.
+ANNOUNCED=".bot/state/${TODAY}-announced"
+git fetch -q origin >> "$LOG_FILE" 2>&1
+title_of() { # title_of <git object>
+  git show "$1" 2>/dev/null | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(String(JSON.parse(s).title||""))}catch{}})'
+}
+if [ -f "$ANNOUNCED" ]; then
+  log "group message already handled today ($(cat "$ANNOUNCED"))"
+else
+  LINES=()
+  HELD=()
+  EXPECTED=0
+  DRY=0
+  for T in "${TRACKS[@]}"; do
+    [ -f "$PROJECT_DIR/.bot/OFF-${T}" ] && continue
+    { [ -f "$PROJECT_DIR/.bot/PAUSE" ] || [ -f "$PROJECT_DIR/.bot/PAUSE-${T}" ]; } && continue
+    EXPECTED=$((EXPECTED + 1))
+    { [ -f "$PROJECT_DIR/.bot/DRY_RUN" ] || [ -f "$PROJECT_DIR/.bot/DRY_RUN-${T}" ] || [ "${AUTOPUBLISH_DRY_RUN:-}" = "1" ]; } && DRY=1
+    case "$T" in
+      junior) LABEL="Middle school"; SITE="dailyreadingclub.com/middle-school"; LIVE=".bot/state/${TODAY}-junior-live" ;;
+      kids)   LABEL="Elementary";    SITE="dailyreadingclub.com/elementary";    LIVE=".bot/state/${TODAY}-kids-live" ;;
+      *)      LABEL="High school";   SITE="dailyreadingclub.com";               LIVE=".bot/state/${TODAY}-live" ;;
+    esac
+    CONTENT="$(content_of "$T")"
+    if git cat-file -e "origin/main:${CONTENT}" 2>/dev/null; then
+      LINES+=("${LABEL}: *$(title_of "origin/main:${CONTENT}")* (${SITE})")
+      [ -f "$LIVE" ] || HELD+=("${T} was published by hand")
+    else
+      HELD+=("${T} is not live")
+    fi
+  done
+  if [ "$EXPECTED" -eq 0 ] || [ "$DRY" = "1" ]; then
+    log "no group message (every track off/paused, or a dry run)"
+  elif [ ${#HELD[@]} -eq 0 ]; then
+    MSG="Today's readings:"$'\n'"$(printf '%s\n' "${LINES[@]}")"
+    if printf '%s' "$MSG" | node .bot/notify.mjs --to=group --stdin >> "$LOG_FILE" 2>&1; then
+      log "announced to the group: ${MSG//$'\n'/ | }"
+      echo "group $(date -u +%FT%TZ)" > "$ANNOUNCED"
+    else
+      log "WARNING notify.mjs --to=group failed; will retry at the next firing"
+    fi
+  elif [ "$BEFORE_NOON" = "1" ] && [ "$FORCE" != "1" ] && printf '%s\n' "${HELD[@]}" | grep -q "is not live"; then
+    # A track still missing before noon may yet publish at a later firing (or
+    # by hand): hold quietly, the next firing re-checks.
+    log "group message held — ${HELD[*]}; re-checking at the next firing"
+  else
+    REASON="$(IFS=';'; echo "${HELD[*]}" | sed 's/;/; /g')"
+    BODY="Today's readings:"$'\n'"$(printf '%s\n' "${LINES[@]}")"
+    notify "📣 Reading Club ${TODAY} — the group message was NOT sent (${REASON}). Ready to forward:"$'\n\n'"${BODY}"
+    echo "owner $(date -u +%FT%TZ) (${REASON})" > "$ANNOUNCED"
+  fi
+fi
+
+[ ${#RESULT[@]} -eq 0 ] && RESULT=("nothing to publish")
 log "done — ${RESULT[*]} (exit ${RC_ALL})"
 # One line to stdout → cron.log and the healthcheck ping body, so a page says
 # which track failed without opening the logs.

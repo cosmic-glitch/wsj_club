@@ -72,7 +72,7 @@ window.addEventListener("pagehide",flushRead);
   var TODAY=[now.getFullYear(),("0"+(now.getMonth()+1)).slice(-2),("0"+now.getDate()).slice(-2)].join("-");
   var ICON={bronze:"\uD83E\uDD49",silver:"\uD83E\uDD48",gold:"\uD83E\uDD47"};
   var LABEL={bronze:"Article read.",silver:"Handout done.",gold:"AI quiz done."};
-  var HANDOUT=(TRACK==="senior"?"":"/"+TRACK)+"/reading/"+DATE;
+  var HANDOUT=({senior:"",junior:"/middle-school",kids:"/elementary"})[TRACK]+"/reading/"+DATE;
   var box=null;
   function host(){return document.querySelector("main")||document.body;}
   function render(d){

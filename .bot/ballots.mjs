@@ -44,7 +44,7 @@ try {
 }
 
 const out = [];
-for (const track of ["senior", "junior"]) {
+for (const track of ["senior", "junior", "kids"]) {
   const hit = rows.find((r) => r.track === track);
   const key = track.toUpperCase();
   out.push(`${key}_POLL=${hit ? 1 : 0}`, `${key}_BALLOTS=${hit ? hit.ballots : 0}`);

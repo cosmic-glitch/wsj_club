@@ -1,8 +1,10 @@
 #!/bin/bash
 # Autonomous daily vote opener for the Reading Club — the cron entry. ONE
 # claude session (the auto-vote skill) scouts The Economist once, rates every
-# candidate for both tracks, splits them into two disjoint ballots and opens
-# both votes; this wrapper then checks each track's outcome.
+# candidate for the high-school (senior) and middle-school (junior) tracks,
+# splits them into two disjoint ballots, builds the elementary (kids) ballot
+# from TIME for Kids, and opens all three votes; this wrapper then checks each
+# track's outcome.
 #   bash .bot/run-auto-vote.sh
 #
 # Cron fires at BOTH 13:xx and 14:xx UTC; the Pacific-time gate below lets
@@ -19,14 +21,14 @@
 #
 # Controls (flag files in .bot/, box-local, never committed):
 #   .bot/OFF-<track>  → that track's autopilot is switched off: the skill leaves
-#                       its poll alone (the other track still runs); both off →
+#                       its poll alone (the others still run); all off →
 #                       exit 0 without a session
 # Env overrides for a supervised manual run:
 #   AUTOVOTE_FORCE=1  bypass the 6am gate (a direct call with it opens the
 #                     votes NOW)
 #   AUTOVOTE_DATE=…   open the votes for a specific date (default: today Pacific)
-#   AUTOVOTE_TRACKS=… limit the run to "senior" or "junior" (default: every
-#                     track without an OFF flag) — for re-opening one poll
+#   AUTOVOTE_TRACKS=… limit the run to some of "senior junior kids" (default:
+#                     every track without an OFF flag) — for re-opening one poll
 #   AUTOPILOT_MODEL=… run the session on another model (default claude-sonnet-5-5[1m])
 set -uo pipefail
 
@@ -40,7 +42,7 @@ export PATH="$HOME/.local/bin:$PATH"   # find `claude`, `node` under cron's mini
 AUTOPILOT_MODEL="${AUTOPILOT_MODEL:-claude-sonnet-5-5[1m]}"
 
 if [ $# -ne 0 ]; then
-  echo "usage: $0   (no arguments; AUTOVOTE_TRACKS=senior|junior limits it to one track)" >&2
+  echo "usage: $0   (no arguments; AUTOVOTE_TRACKS="senior junior kids" picks the tracks)" >&2
   exit 2
 fi
 
@@ -60,10 +62,10 @@ log() { echo "[$(date -u +%FT%TZ)] auto-vote: $*" >> "$LOG_FILE"; }
 
 # Which tracks this run opens: the requested set minus the OFF flags.
 TRACKS=()
-for T in ${AUTOVOTE_TRACKS:-senior junior}; do
+for T in ${AUTOVOTE_TRACKS:-senior junior kids}; do
   case "$T" in
-    senior|junior) ;;
-    *) echo "AUTOVOTE_TRACKS: unknown track \"$T\" (senior|junior)" >&2; exit 2 ;;
+    senior|junior|kids) ;;
+    *) echo "AUTOVOTE_TRACKS: unknown track \"$T\" (senior|junior|kids)" >&2; exit 2 ;;
   esac
   if [ -f "$PROJECT_DIR/.bot/OFF-${T}" ]; then
     log "OFF (.bot/OFF-${T} exists) — the ${T} autopilot is switched off; not opening its vote"
@@ -133,17 +135,17 @@ log "claude session exited (rc=$CLAUDE_RC)"
 # itself: the track's reading is published (vote closed / not needed), or its
 # poll is live. Anything else exits non-zero so hc-run pages the owner — the
 # skill's failure path is deliberately silent (no WhatsApp), making this the
-# only alarm. One `senior rc=… junior rc=…` line goes to stdout → cron.log and
+# only alarm. One `senior rc=… junior rc=… kids rc=…` line goes to stdout → cron.log and
 # the healthcheck ping body, so a page names the track.
 RESULT=()
 RC_ALL=0
 for T in "${TRACKS[@]}"; do
-  if [ "$T" = "junior" ]; then
-    CONTENT_DIR="content/junior"
-    VOTE_API="https://dailyreadingclub.com/api/vote?track=junior"
-  else
+  if [ "$T" = "senior" ]; then
     CONTENT_DIR="content"
     VOTE_API="https://dailyreadingclub.com/api/vote"
+  else
+    CONTENT_DIR="content/${T}"
+    VOTE_API="https://dailyreadingclub.com/api/vote?track=${T}"
   fi
   rc=0
   VOTE_JSON="$(curl -fsS -m 15 "$VOTE_API" || true)"

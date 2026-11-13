@@ -14,14 +14,14 @@ const trackFlag = argv.find((a) => a.startsWith("--track="));
 const track = trackFlag ? trackFlag.slice("--track=".length) : "senior";
 
 if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
-  console.error("Usage: node --env-file=.env.local .bot/open-vote.mjs <YYYY-MM-DD> <candidates.json> [--track=junior] [--dry-run]");
+  console.error("Usage: node --env-file=.env.local .bot/open-vote.mjs <YYYY-MM-DD> <candidates.json> [--track=junior|kids] [--dry-run]");
   process.exit(1);
 }
-if (track !== "senior" && track !== "junior") {
+if (track !== "senior" && track !== "junior" && track !== "kids") {
   console.error(`Unknown track "${track}".`);
   process.exit(1);
 }
-const contentPath = track === "junior" ? `content/junior/${date}.json` : `content/${date}.json`;
+const contentPath = track === "senior" ? `content/${date}.json` : `content/${track}/${date}.json`;
 if (fs.existsSync(contentPath)) {
   console.error(`${contentPath} already exists — the ${date} ${track} reading is published, so this poll would never show. Refusing.`);
   process.exit(1);
@@ -119,7 +119,7 @@ try {
     );
     console.log(`Vote for ${date} (${track}) is LIVE with ${candidates.length} candidates:`);
     for (const c of candidates) console.log(`  [${c.source}${c.kind === "enrichment" ? " · enrichment" : ""}] ${c.title}  (id: ${c.id})`);
-    console.log(`\nShows at the top of https://dailyreadingclub.com${track === "junior" ? "/junior" : ""} until the day's ${track} reading is published.`);
+    console.log(`\nShows at the top of https://dailyreadingclub.com${{ senior: "", junior: "/middle-school", kids: "/elementary" }[track]} until the day's ${track} reading is published.`);
   }
 } finally {
   await client.end();

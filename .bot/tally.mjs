@@ -37,10 +37,10 @@ const track = trackFlag ? trackFlag.slice("--track=".length) : "senior";
 const fieldFlag = argv.find((a) => a.startsWith("--field="));
 
 if (dateArg && !/^\d{4}-\d{2}-\d{2}$/.test(dateArg)) {
-  console.error("Usage: node --env-file=.env.local .bot/tally.mjs [YYYY-MM-DD] [--track=junior] [--field=<ranked-field.json>]");
+  console.error("Usage: node --env-file=.env.local .bot/tally.mjs [YYYY-MM-DD] [--track=junior|kids] [--field=<ranked-field.json>]");
   process.exit(1);
 }
-if (track !== "senior" && track !== "junior") {
+if (track !== "senior" && track !== "junior" && track !== "kids") {
   console.error(`Unknown track "${track}".`);
   process.exit(1);
 }
@@ -72,7 +72,7 @@ try {
 }
 
 const date = poll.date;
-const contentPath = path.join(REPO_ROOT, track === "junior" ? `content/junior/${date}.json` : `content/${date}.json`);
+const contentPath = path.join(REPO_ROOT, track === "senior" ? `content/${date}.json` : `content/${track}/${date}.json`);
 const published = fs.existsSync(contentPath);
 
 const byCandidate = new Map(poll.candidates.map((c) => [c.id, []]));
@@ -80,7 +80,7 @@ const orphans = [];
 for (const b of ballots) (byCandidate.get(b.candidate_id) ?? orphans).push(b.username);
 
 // The morning run's ranked field (ratings), matched by URL then title.
-const fieldPath = fieldFlag ? fieldFlag.slice("--field=".length) : path.join(HERE, "state", `${date}-${track === "junior" ? "junior-" : ""}field.json`);
+const fieldPath = fieldFlag ? fieldFlag.slice("--field=".length) : path.join(HERE, "state", `${date}-${track === "senior" ? "" : `${track}-`}field.json`);
 let field = null;
 if (fs.existsSync(fieldPath)) {
   try {
@@ -128,7 +128,7 @@ if (ballots.length === 0) {
 }
 
 // --- Human tally → stderr (voter names: owner-side only) -------------------
-console.error(`Vote for ${date}${track === "junior" ? " (junior)" : ""} — ${published ? "CLOSED (reading published)" : "still live"}`);
+console.error(`Vote for ${date}${track === "senior" ? "" : ` (${track})`} — ${published ? "CLOSED (reading published)" : "still live"}`);
 console.error(`${ballots.length} ballot(s) cast${field ? "" : " · no ranked-field file (" + path.relative(REPO_ROOT, fieldPath) + ")"}\n`);
 for (const c of ranked) {
   console.error(`  ${String(c.votes).padStart(2)}  [${c.source}] ${c.title}${c.rating !== null ? `  (bot ${c.rating}/10)` : ""}`);

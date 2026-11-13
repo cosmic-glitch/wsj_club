@@ -1,11 +1,11 @@
 import { currentUser } from "@/lib/auth";
 import { dbUpsert } from "@/lib/db";
-import { type Track } from "@/lib/content";
+import { parseTrack } from "@/lib/track";
 import { activePoll, readBallots, tallyOf, totalOf } from "@/lib/polls";
 
 /**
  * The daily article vote — the TODAY'S READ — YOU DECIDE row
- * (components/VotePoll.tsx) on BOTH track indexes ("/" and "/junior").
+ * (components/VotePoll.tsx) on every track index ("/", "/middle-school", "/elementary").
  *
  *   GET  — the active poll (public) with the TOTAL ballots-cast count (public
  *          to everyone — participation, not preference), plus — for a
@@ -22,18 +22,13 @@ import { activePoll, readBallots, tallyOf, totalOf } from "@/lib/polls";
  *
  * `track` is a LABEL from the request (GET `?track=`, POST body; default
  *  senior at this API boundary, like the quiz routes) — never identity. A
- *  forged track only points the caller at the junior poll, which any login may
- *  vote in anyway. The two tracks' polls are fully independent: each track's
+ *  forged track only points the caller at another track's poll, which any
+ *  login may vote in anyway. The tracks' polls are fully independent: each track's
  *  index shows only its own poll, and each closes on its own reading.
  *
  * Which poll is live (derived, never a flag) lives in lib/polls.ts, shared
  * with the index pages' server render of the vote row.
  */
-
-/** "senior" | "junior" from an untrusted request value (default senior — the same boundary rule as the quiz routes). */
-function parseTrack(v: unknown): Track {
-  return v === "junior" ? "junior" : "senior";
-}
 
 export async function GET(request: Request) {
   try {
