@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-13",
+  "title": "Plague, gruel and bad teeth: why do people idealise the olden days?",
+  "articleUrl": "https://www.economist.com/culture/2026/11/12/plague-gruel-and-bad-teeth-why-do-people-idealise-the-olden-days",
+  "articlePageUrl": "/articles/2026-11-13.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "paeans",
+      "partOfSpeech": "noun (plural)",
+      "pronunciation": "PEE-unz",
+      "articleQuote": "P.J. O’Rourke, an American satirist, once offered a one-word rebuttal of paeans to the pre-industrial past: “dentistry”.",
+      "meaning": "A paean is a song, speech, or piece of writing that praises something with great enthusiasm. The word comes from ancient Greece, where a paean was a joyful hymn of thanks to the gods, and today it is used for any gushing tribute. Here the Economist means the glowing speeches people give about how wonderful life was before factories, which O'Rourke answered with a single word about the state of people's teeth.",
+      "examples": [
+        "The newspaper printed a paean to the retiring coach, calling him the heart of the school.",
+        "Her speech was a paean to libraries, full of praise for quiet rooms and endless shelves."
+      ]
+    },
+    {
+      "word": "drudgery",
+      "partOfSpeech": "noun",
+      "pronunciation": "DRUJ-uh-ree",
+      "articleQuote": "And even that fails to account for the domestic drudgery that occupied nearly every waking hour.",
+      "meaning": "Drudgery is hard, dull, repetitive work that wears you out and gives little joy or reward. It is not just effort, since training for a race is hard but exciting; drudgery is the grinding kind of chore that you would never choose. Here it describes the endless household tasks of pre-industrial life, such as hauling wood and water, which filled the hours even when the farm work was done.",
+      "examples": [
+        "Scrubbing the same pots every night felt like pure drudgery to him.",
+        "Copying out pages by hand was drudgery before the printing press was invented."
+      ]
+    },
+    {
+      "word": "spartan",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SPAR-tun",
+      "articleQuote": "Pre-industrial homes were tiny and spartan.",
+      "meaning": "Something spartan is extremely simple and plain, with no comfort, decoration, or luxury. It comes from Sparta, the ancient Greek city whose citizens were famous for a tough, bare-bones way of life. It is usually lowercase when it means this. Here it tells us that old homes had hardly any furniture or comforts, so even a sofa was a surprise to people.",
+      "examples": [
+        "The camp's spartan cabins had a bunk, a hook for a coat, and nothing else.",
+        "She kept her room spartan, with just a bed, a desk, and a lamp."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Declinism",
+      "articleQuote": "Many people yearn for the good old days.",
+      "meaning": "Declinism is the belief that things used to be better and that the world, or a country, is getting worse. The article opens with proof of how common it is: when a global poll asked people whether they would rather be born 50 years ago or now, nearly two to one picked the past. In a British poll, 40% were not sure life was worse in the 1600s.\n\nWhy does the mind do this? One reason is that we remember the highlights of the past and forget the details. Think of how you recall a holiday: the beach and the ice cream stay in memory, while the long wait at the airport fades. Another is that bad news travels faster than good news, so today's problems feel loud while problems that were solved, like smallpox, are silent. History is also edited by what survives: we picture the castle and the feast, not the peasant's gruel and rotten teeth.\n\nThe article's author answers with specifics, like the fact that in 1764 most London newborns did not reach age five. The takeaway: when you feel the pull of the good old days, ask which parts you are remembering and which parts you have left out."
+    },
+    {
+      "name": "The Industrial Revolution",
+      "articleQuote": "In “The Grim Old Days”, Ms Follett lays out in gruesome detail how life was before the Industrial Revolution, thus offering a rip-roaring reminder of why material progress matters.",
+      "meaning": "The Industrial Revolution was the great change, starting in Britain in the 1700s and spreading across the world in the 1800s, when people began making goods with machines and engines instead of by hand and muscle. Factories, steam power, railways, and later electricity let a worker produce far more in an hour than before. That is why economists call it the start of **material progress**: ordinary people gradually got more food, cleaner water, warmer homes, and goods that used to be luxuries.\n\nHere is a concrete example from the article. Before it, a family's home was one smoky room, a sofa was so rare that a letter about one was news, and most newborns in London died young. Machines made cloth, glass, bricks, and pipes cheap, so more people could afford windows, clean plumbing, and soap. Later medicine, such as the antibiotics that saved the author's daughter, built on the same wealth and science.\n\nIt was not painless. Early factories were harsh and cities were crowded. But the article's point is that the \"pre-industrial\" world people feel nostalgic for was far harsher. The takeaway: \"before the Industrial Revolution\" is a useful dividing line, because it marks when human life began to get steadily better for ordinary people."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did P.J. O'Rourke say in one word to rebut praise of the pre-industrial past?",
+      "options": [
+        "Plague",
+        "Dentistry",
+        "Gruel",
+        "Sanitation"
+      ],
+      "answerIndex": 1,
+      "explanation": "O'Rourke's one-word rebuttal was \"dentistry\", a nod to how awful dental care was before modern medicine."
+    },
+    {
+      "question": "What did historian Gregory Clark later conclude about how much medieval English workers toiled?",
+      "options": [
+        "About 150 days a year, as first estimated",
+        "About 300 days a year, double the first estimate",
+        "Fewer than 100 days a year",
+        "Only during the winter"
+      ],
+      "answerIndex": 1,
+      "explanation": "Clark's early 150-day estimate fed the myth of leisurely peasants, but he later revised it to about 300 days, not counting household chores."
+    },
+    {
+      "question": "Why does the article say even babies were fed bread soaked in beer?",
+      "options": [
+        "Beer was cheaper than bread",
+        "The water was foul",
+        "Doctors recommended it for teething",
+        "Milk was banned"
+      ],
+      "answerIndex": 1,
+      "explanation": "Water was unsafe to drink, so beer was used instead, though the article notes it damaged babies' brains."
+    },
+    {
+      "question": "What does \"declinism\" describe?",
+      "options": [
+        "The belief that things used to be better and are getting worse",
+        "The study of falling birth rates",
+        "A method of counting days in a year",
+        "A refusal to accept invitations"
+      ],
+      "answerIndex": 0,
+      "explanation": "Declinism is the belief in decline, as shown by the poll in which most people would choose to be born 50 years ago."
+    },
+    {
+      "question": "In the article, what does it mean that pre-industrial homes were \"spartan\"?",
+      "options": [
+        "They were large and fancy",
+        "They were very plain, with few comforts",
+        "They were built in Greece",
+        "They were owned by soldiers"
+      ],
+      "answerIndex": 1,
+      "explanation": "Spartan means extremely simple and bare, like the tiny homes with almost no furniture that the article describes."
+    }
+  ]
+}

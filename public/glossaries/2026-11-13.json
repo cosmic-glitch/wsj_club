@@ -1,0 +1,669 @@
+[
+  {
+    "k": "paeans",
+    "t": "paeans",
+    "kind": "vocab",
+    "pron": "PEE-unz",
+    "forms": [
+      "paeans"
+    ],
+    "text": "A paean is a song, speech, or piece of writing that praises something with great enthusiasm. It began as a joyful hymn of thanks in ancient Greece. Here it means the glowing tributes people pay to life before factories, which O'Rourke answered with one word about teeth.",
+    "audio": true
+  },
+  {
+    "k": "drudgery",
+    "t": "drudgery",
+    "kind": "vocab",
+    "pron": "DRUJ-uh-ree",
+    "forms": [
+      "drudgery"
+    ],
+    "text": "Drudgery is hard, dull, repetitive work that wears you out and brings little joy. Here it describes the endless household chores of pre-industrial life, such as hauling wood and water, which filled the hours even after the farm work was done.",
+    "audio": true
+  },
+  {
+    "k": "spartan",
+    "t": "spartan",
+    "kind": "vocab",
+    "pron": "SPAR-tun",
+    "forms": [
+      "spartan"
+    ],
+    "text": "Something spartan is extremely simple and plain, with no comfort or luxury. The word comes from Sparta, the ancient Greek city famous for its tough, bare-bones way of life. Here it tells us old homes had almost no furniture or comforts.",
+    "audio": true
+  },
+  {
+    "k": "idealise",
+    "t": "idealise",
+    "kind": "word",
+    "forms": [
+      "idealise"
+    ],
+    "text": "To idealise something is to picture it as better and more perfect than it really was. The headline asks why people do this to the past. The spelling is British; Americans write idealize.",
+    "audio": true
+  },
+  {
+    "k": "olden-days",
+    "t": "olden days",
+    "kind": "phrase",
+    "forms": [
+      "olden days",
+      "old days"
+    ],
+    "text": "The olden days and the good old days are casual phrases for the past, usually pictured warmly. The article asks whether that warm picture is accurate.",
+    "audio": true
+  },
+  {
+    "k": "yearn",
+    "t": "yearn",
+    "kind": "word",
+    "forms": [
+      "yearn"
+    ],
+    "text": "To yearn for something is to want it deeply and with longing, often something out of reach. Here many people yearn for a past they imagine as happier.",
+    "audio": true
+  },
+  {
+    "k": "rip-roaring",
+    "t": "rip-roaring",
+    "kind": "phrase",
+    "forms": [
+      "rip-roaring"
+    ],
+    "text": "Rip-roaring describes something lively, noisy, and exciting. A rip-roaring read is a thrilling one. Here the reviewer says the book is a gripping, energetic reminder of how hard the past was.",
+    "audio": true
+  },
+  {
+    "k": "rebuttal",
+    "t": "rebuttal",
+    "kind": "word",
+    "forms": [
+      "rebuttal",
+      "rebuttal"
+    ],
+    "text": "A rebuttal is an argument or piece of evidence that shows a claim is wrong. The headline calls the book a rebuttal of the idea that progress is a myth.",
+    "audio": true
+  },
+  {
+    "k": "myth",
+    "t": "myth",
+    "kind": "word",
+    "forms": [
+      "myth"
+    ],
+    "text": "A myth is a widely held belief that is not true. Here the myth is that human progress has not really happened.",
+    "audio": true
+  },
+  {
+    "k": "grouch",
+    "t": "grouch",
+    "kind": "word",
+    "forms": [
+      "grouch"
+    ],
+    "text": "To grouch is to complain in a grumpy way. The social-media users in the article grouch about Amazon warehouses being worse than feudal farms.",
+    "audio": true
+  },
+  {
+    "k": "feudal",
+    "t": "feudal",
+    "kind": "word",
+    "forms": [
+      "feudal"
+    ],
+    "text": "Feudal refers to feudalism, the medieval system in which peasants farmed land owned by lords and owed them work and loyalty. Here it stands for the oppressed farm labour of the Middle Ages.",
+    "audio": true
+  },
+  {
+    "k": "peasant",
+    "t": "peasant",
+    "kind": "word",
+    "forms": [
+      "peasant",
+      "peasants"
+    ],
+    "text": "A peasant was a poor farm worker or small farmer in pre-industrial times, usually with little land or freedom. The article compares modern workers with them.",
+    "audio": true
+  },
+  {
+    "k": "medieval",
+    "t": "medieval",
+    "kind": "word",
+    "forms": [
+      "medieval"
+    ],
+    "text": "Medieval means belonging to the Middle Ages, roughly the years 500 to 1500 in Europe. People also use it loosely to mean backward or harsh.",
+    "audio": true
+  },
+  {
+    "k": "outrageous",
+    "t": "outrageous",
+    "kind": "word",
+    "forms": [
+      "outrageous"
+    ],
+    "text": "Outrageous means shocking and completely unacceptable. The complaint in the article is quoted to show how strongly some people feel the modern worker has it worse.",
+    "audio": true
+  },
+  {
+    "k": "satirist",
+    "t": "satirist",
+    "kind": "word",
+    "forms": [
+      "satirist"
+    ],
+    "text": "A satirist is a writer or comedian who uses humour and exaggeration to mock people or ideas. P.J. O'Rourke was known for witty, sharp essays.",
+    "audio": true
+  },
+  {
+    "k": "think-tank",
+    "t": "think-tank",
+    "kind": "word",
+    "forms": [
+      "think-tank"
+    ],
+    "text": "A think-tank is an organisation of researchers who study public issues and publish ideas to influence policy. The Cato Institute is described as a free-market one.",
+    "audio": true
+  },
+  {
+    "k": "quip",
+    "t": "quip",
+    "kind": "word",
+    "forms": [
+      "quip"
+    ],
+    "text": "A quip is a short, clever, witty remark. O'Rourke's one-word answer, dentistry, is the quip the author calls incisive.",
+    "audio": true
+  },
+  {
+    "k": "incisive",
+    "t": "incisive",
+    "kind": "word",
+    "forms": [
+      "incisive"
+    ],
+    "text": "Incisive describes thinking or speech that cuts straight to the heart of a matter, clearly and sharply. It comes from the same root as incisor, a cutting tooth, which makes it a neat pun beside a quip about dentistry.",
+    "audio": true
+  },
+  {
+    "k": "crooked",
+    "t": "crooked",
+    "kind": "word",
+    "forms": [
+      "crooked"
+    ],
+    "text": "Crooked can mean bent, but here it means dishonest. Crooked bakers cheated customers by mixing grit and chalk into bread.",
+    "audio": true
+  },
+  {
+    "k": "grit",
+    "t": "grit",
+    "kind": "word",
+    "forms": [
+      "grit"
+    ],
+    "text": "Grit is tiny hard particles of sand or stone. In bread, it chipped teeth. The word also means courage and toughness in another sense, but not here.",
+    "audio": true
+  },
+  {
+    "k": "quacks",
+    "t": "quacks",
+    "kind": "word",
+    "forms": [
+      "quacks"
+    ],
+    "text": "A quack is a person who falsely claims to have medical skill. Dentists of the era were often quacks, such as the one who recommended partridge brains.",
+    "audio": true
+  },
+  {
+    "k": "grog",
+    "t": "grog",
+    "kind": "word",
+    "forms": [
+      "grog"
+    ],
+    "text": "Grog is a strong alcoholic drink, originally watered-down rum drunk by sailors. Here it was the only painkiller a barber-dentist had.",
+    "audio": true
+  },
+  {
+    "k": "anaesthetic",
+    "t": "anaesthetic",
+    "kind": "word",
+    "forms": [
+      "anaesthetic"
+    ],
+    "text": "An anaesthetic is a drug that blocks pain during an operation. The British spelling has an extra a; Americans write anesthetic.",
+    "audio": true
+  },
+  {
+    "k": "agonising",
+    "t": "agonising",
+    "kind": "word",
+    "forms": [
+      "agonising"
+    ],
+    "text": "Agonising means causing intense pain or suffering. Extracting a tooth with no real anaesthetic was exactly that.",
+    "audio": true
+  },
+  {
+    "k": "flush-toilets",
+    "t": "flush toilets",
+    "kind": "word",
+    "forms": [
+      "flush toilets"
+    ],
+    "text": "A flush toilet uses a rush of water to wash waste away through pipes. The article stresses that before them, even palaces smelled foul.",
+    "audio": true
+  },
+  {
+    "k": "chamber-pots",
+    "t": "chamber pots",
+    "kind": "word",
+    "forms": [
+      "Chamber pots"
+    ],
+    "text": "A chamber pot is a bowl kept in the bedroom and used as a toilet at night. Its contents were then dumped, as the article explains, into cesspits or out of windows.",
+    "audio": true
+  },
+  {
+    "k": "cesspits",
+    "t": "cesspits",
+    "kind": "word",
+    "forms": [
+      "cesspits",
+      "cesspit"
+    ],
+    "text": "A cesspit is a hole or tank dug in the ground to collect sewage. It is a disgusting but common feature of cities before sewers.",
+    "audio": true
+  },
+  {
+    "k": "night-soil",
+    "t": "night soil",
+    "kind": "phrase",
+    "forms": [
+      "night soil"
+    ],
+    "text": "Night soil is an old polite term for human waste that was collected at night and carried away. The Dutch rules compensating people whose clothes it ruined show how common the problem was.",
+    "audio": true
+  },
+  {
+    "k": "passersby",
+    "t": "passersby",
+    "kind": "word",
+    "forms": [
+      "passersby"
+    ],
+    "text": "Passersby are people who happen to be walking past. Here they are the unlucky ones who got hit by what was thrown from above.",
+    "audio": true
+  },
+  {
+    "k": "latrine",
+    "t": "latrine",
+    "kind": "word",
+    "forms": [
+      "latrine"
+    ],
+    "text": "A latrine is a simple toilet, often just a pit or trench. The nobles who fell into one in Erfurt drowned.",
+    "audio": true
+  },
+  {
+    "k": "bunk",
+    "t": "bunk",
+    "kind": "word",
+    "forms": [
+      "bunk"
+    ],
+    "text": "Bunk means nonsense, an idea that is false. Calling the leisurely-peasant idea bunk is a blunt way of rejecting it.",
+    "audio": true
+  },
+  {
+    "k": "toiled",
+    "t": "toiled",
+    "kind": "word",
+    "forms": [
+      "toiled"
+    ],
+    "text": "To toil is to work very hard for a long time. The historian first thought medieval workers toiled 150 days a year.",
+    "audio": true
+  },
+  {
+    "k": "gripe",
+    "t": "gripe",
+    "kind": "word",
+    "forms": [
+      "gripe"
+    ],
+    "text": "To gripe is to complain, usually about small annoyances. The author says people today gripe about fuel prices while peasants risked freezing.",
+    "audio": true
+  },
+  {
+    "k": "gruel",
+    "t": "gruel",
+    "kind": "word",
+    "forms": [
+      "gruel"
+    ],
+    "text": "Gruel is a thin, watery porridge made from grain boiled in water or milk. It was a basic meal for the poor, and it sits in the headline as a symbol of bleak food.",
+    "audio": true
+  },
+  {
+    "k": "pre-industrial",
+    "t": "pre-industrial",
+    "kind": "word",
+    "forms": [
+      "pre-industrial"
+    ],
+    "text": "Pre-industrial describes the time before the Industrial Revolution, when most work was done by hand, animals, wind, or water instead of machines.",
+    "audio": true
+  },
+  {
+    "k": "processed",
+    "t": "processed",
+    "kind": "word",
+    "forms": [
+      "processed"
+    ],
+    "text": "Processed food has been changed in a factory, for example by adding preservatives or flavour. Some people think it is worse than old-style food.",
+    "audio": true
+  },
+  {
+    "k": "cramped",
+    "t": "cramped",
+    "kind": "word",
+    "forms": [
+      "cramped"
+    ],
+    "text": "Cramped means too small and crowded to be comfortable. A whole family cooking, eating, and sleeping in one room is cramped.",
+    "audio": true
+  },
+  {
+    "k": "porridge",
+    "t": "porridge",
+    "kind": "word",
+    "forms": [
+      "porridge"
+    ],
+    "text": "Porridge is a soft food made by boiling oats or other grains in water or milk. The article calls the old diet bland porridge and hard bread.",
+    "audio": true
+  },
+  {
+    "k": "bland",
+    "t": "bland",
+    "kind": "word",
+    "forms": [
+      "bland"
+    ],
+    "text": "Bland means mild and boring in flavour. Spices were so precious that ordinary people had mostly bland food.",
+    "audio": true
+  },
+  {
+    "k": "foul",
+    "t": "foul",
+    "kind": "word",
+    "forms": [
+      "foul"
+    ],
+    "text": "Foul means dirty, rotten, or disgusting. Foul water was unsafe to drink, which is why babies were given beer-soaked bread.",
+    "audio": true
+  },
+  {
+    "k": "refrigeration",
+    "t": "refrigeration",
+    "kind": "word",
+    "forms": [
+      "refrigeration"
+    ],
+    "text": "Refrigeration is keeping food cold so it lasts longer and does not spoil. Without it, milk and meat went bad quickly.",
+    "audio": true
+  },
+  {
+    "k": "roguish",
+    "t": "roguish",
+    "kind": "word",
+    "forms": [
+      "roguish"
+    ],
+    "text": "Roguish means playfully mischievous, like a rogue, who is a cheeky troublemaker. Here it describes boys throwing trash into the milk.",
+    "audio": true
+  },
+  {
+    "k": "samuel-pepys",
+    "t": "Samuel Pepys",
+    "kind": "name",
+    "forms": [
+      "Samuel Pepys"
+    ],
+    "text": "Samuel Pepys was an English official who kept a famous diary in the 1660s describing daily life, including the Great Fire of London. It gives us many details of how people lived.",
+    "audio": true
+  },
+  {
+    "k": "diarist",
+    "t": "diarist",
+    "kind": "word",
+    "forms": [
+      "diarist"
+    ],
+    "text": "A diarist is someone who keeps a diary. Pepys is called a diarist because the diary is what he is remembered for.",
+    "audio": true
+  },
+  {
+    "k": "sturgeon",
+    "t": "sturgeon",
+    "kind": "word",
+    "forms": [
+      "sturgeon"
+    ],
+    "text": "A sturgeon is a large fish whose eggs are made into caviar. In Pepys's diary, the dish of it was full of worms.",
+    "audio": true
+  },
+  {
+    "k": "bread-riots",
+    "t": "bread riots",
+    "kind": "phrase",
+    "forms": [
+      "bread riots"
+    ],
+    "text": "A bread riot was an angry protest by hungry people when bread was scarce or too expensive. The article says thousands took place in Europe and that one helped spark the French Revolution.",
+    "audio": true
+  },
+  {
+    "k": "french-revolution",
+    "t": "French revolution",
+    "kind": "name",
+    "forms": [
+      "French revolution"
+    ],
+    "text": "The French Revolution (1789 onward) overthrew the king of France and changed the country's government. Food shortages and anger over bread prices helped set it off.",
+    "audio": true
+  },
+  {
+    "k": "squeezed",
+    "t": "squeezed",
+    "kind": "word",
+    "forms": [
+      "squeezed"
+    ],
+    "text": "To squeeze is to press tightly into a small space. Many families squeezed into a space smaller than one modern bedroom.",
+    "audio": true
+  },
+  {
+    "k": "duke",
+    "t": "duke",
+    "kind": "word",
+    "forms": [
+      "duke"
+    ],
+    "text": "A duke is a very high-ranking noble, just below a prince. The point is that a modern bedroom would have looked fit for a duke.",
+    "audio": true
+  },
+  {
+    "k": "horace-walpole",
+    "t": "Horace Walpole",
+    "kind": "name",
+    "forms": [
+      "Horace Walpole"
+    ],
+    "text": "Horace Walpole was an 18th-century English writer and collector, the son of a prime minister and an earl. His letters about his life give historians vivid details.",
+    "audio": true
+  },
+  {
+    "k": "earl",
+    "t": "earl",
+    "kind": "word",
+    "forms": [
+      "earl"
+    ],
+    "text": "An earl is a noble in Britain, ranking above a viscount and below a marquess. Even an earl was thrilled by a sofa.",
+    "audio": true
+  },
+  {
+    "k": "pundits",
+    "t": "pundits",
+    "kind": "word",
+    "forms": [
+      "pundits"
+    ],
+    "text": "A pundit is an expert who is often asked to give opinions in the media. Here some pundits say that old sleeping habits were healthier.",
+    "audio": true
+  },
+  {
+    "k": "retorts",
+    "t": "retorts",
+    "kind": "word",
+    "forms": [
+      "retorts"
+    ],
+    "text": "To retort is to answer back sharply, often to defend yourself. Follett retorts that stress made it hard to sleep in the past.",
+    "audio": true
+  },
+  {
+    "k": "ward-off",
+    "t": "ward off",
+    "kind": "phrase",
+    "forms": [
+      "ward off"
+    ],
+    "text": "To ward something off is to keep it away or protect yourself from it. People kept weapons to ward off thieves.",
+    "audio": true
+  },
+  {
+    "k": "forebears",
+    "t": "forebears",
+    "kind": "word",
+    "forms": [
+      "forebears"
+    ],
+    "text": "Forebears are ancestors, the people in your family or society who lived long before you.",
+    "audio": true
+  },
+  {
+    "k": "sporadic",
+    "t": "sporadic",
+    "kind": "word",
+    "forms": [
+      "sporadic"
+    ],
+    "text": "Sporadic means happening only now and then, at irregular times. Public executions were a sporadic entertainment, not an everyday one.",
+    "audio": true
+  },
+  {
+    "k": "heretic",
+    "t": "heretic",
+    "kind": "word",
+    "forms": [
+      "heretic"
+    ],
+    "text": "A heretic is someone whose religious beliefs differ from the official teaching of the church. In the past heretics were sometimes burned.",
+    "audio": true
+  },
+  {
+    "k": "gawp",
+    "t": "gawp",
+    "kind": "word",
+    "forms": [
+      "gawp"
+    ],
+    "text": "To gawp is to stare openly with your mouth a little open, usually rudely. It is informal and mostly British.",
+    "audio": true
+  },
+  {
+    "k": "asylum",
+    "t": "asylum",
+    "kind": "word",
+    "forms": [
+      "asylum"
+    ],
+    "text": "Here an asylum is an old-fashioned institution where mentally ill people were locked away. Another sense of the word, protection for refugees, is not meant.",
+    "audio": true
+  },
+  {
+    "k": "bedlam",
+    "t": "Bedlam",
+    "kind": "name",
+    "forms": [
+      "Bedlam"
+    ],
+    "text": "Bedlam was a famous London hospital for the mentally ill. The word later came to mean chaos and uproar.",
+    "audio": true
+  },
+  {
+    "k": "rife",
+    "t": "rife",
+    "kind": "word",
+    "forms": [
+      "rife"
+    ],
+    "text": "If something bad is rife, it is very widespread. Birth defects were rife in tiny villages where couples were often cousins.",
+    "audio": true
+  },
+  {
+    "k": "forever-grateful",
+    "t": "forever grateful",
+    "kind": "phrase",
+    "forms": [
+      "forever grateful"
+    ],
+    "text": "Forever grateful means thankful for all time. The author says it about modern antibiotics saving her daughter.",
+    "audio": true
+  },
+  {
+    "k": "corrective",
+    "t": "corrective",
+    "kind": "word",
+    "forms": [
+      "corrective"
+    ],
+    "text": "A corrective is something that fixes a mistake or imbalance. The reviewer says the book corrects a rosy view of the past.",
+    "audio": true
+  },
+  {
+    "k": "scarlet-fever",
+    "t": "scarlet fever",
+    "kind": "word",
+    "forms": [
+      "scarlet fever"
+    ],
+    "text": "Scarlet fever is a bacterial illness with a red rash and sore throat. Before antibiotics it could be deadly, but now it is usually cured quickly.",
+    "audio": true
+  },
+  {
+    "k": "antibiotics",
+    "t": "antibiotics",
+    "kind": "word",
+    "forms": [
+      "antibiotics"
+    ],
+    "text": "Antibiotics are medicines that kill bacteria. Penicillin, discovered in 1928, was the first. They turned many deadly infections into minor ones.",
+    "audio": true
+  },
+  {
+    "k": "cato-institute",
+    "t": "Cato Institute",
+    "kind": "name",
+    "forms": [
+      "Cato Institute"
+    ],
+    "text": "The Cato Institute is a think-tank in Washington that supports free markets and limited government. It published the book under review.",
+    "audio": true
+  }
+]
