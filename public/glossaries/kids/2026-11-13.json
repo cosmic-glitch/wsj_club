@@ -1,0 +1,278 @@
+[
+  {
+    "k": "beloved",
+    "t": "beloved",
+    "kind": "vocab",
+    "pron": "bih-LUV-id",
+    "forms": [
+      "beloved"
+    ],
+    "text": "Beloved means loved very, very much. Kids have loved this bear for 100 years.",
+    "audio": true
+  },
+  {
+    "k": "illustrate",
+    "t": "illustrated",
+    "kind": "vocab",
+    "pron": "IL-uh-stray-tid",
+    "forms": [
+      "illustrated"
+    ],
+    "text": "To illustrate a book is to draw its pictures. Ernest H. Shepard drew the pictures of Pooh.",
+    "audio": true
+  },
+  {
+    "k": "charm",
+    "t": "charm",
+    "kind": "vocab",
+    "pron": "CHARM",
+    "forms": [
+      "charm"
+    ],
+    "text": "To charm someone is to make them smile and like you very much. The Pooh stories charm readers.",
+    "audio": true
+  },
+  {
+    "k": "winnie-the-pooh",
+    "t": "Winnie-the-Pooh",
+    "kind": "name",
+    "forms": [
+      "Winnie-the-Pooh"
+    ],
+    "text": "Winnie-the-Pooh is a kind, silly bear in a famous children's book. He loves honey.",
+    "audio": true
+  },
+  {
+    "k": "turns-100",
+    "t": "turns 100",
+    "kind": "phrase",
+    "forms": [
+      "turns 100"
+    ],
+    "text": "Turns 100 means will be 100 years old. The book came out in 1926.",
+    "audio": true
+  },
+  {
+    "k": "willy-nilly",
+    "t": "willy-nilly",
+    "kind": "phrase",
+    "forms": [
+      "willy-nilly"
+    ],
+    "text": "Willy-nilly means in a mixed-up, silly way, with no plan.",
+    "audio": true
+  },
+  {
+    "k": "hunny",
+    "t": "hunny",
+    "kind": "phrase",
+    "forms": [
+      "hunny"
+    ],
+    "text": "Hunny is how Pooh spells honey. It is a funny spelling on purpose.",
+    "audio": true
+  },
+  {
+    "k": "published",
+    "t": "published",
+    "kind": "phrase",
+    "forms": [
+      "published"
+    ],
+    "text": "Published means a book was printed and shared so people could read it.",
+    "audio": true
+  },
+  {
+    "k": "milne",
+    "t": "A.A. Milne",
+    "kind": "name",
+    "forms": [
+      "A.A. Milne",
+      "Milne"
+    ],
+    "text": "A.A. Milne was the author who wrote the Pooh stories.",
+    "audio": true
+  },
+  {
+    "k": "shepard",
+    "t": "Ernest H. Shepard",
+    "kind": "name",
+    "forms": [
+      "Ernest H. Shepard"
+    ],
+    "text": "Ernest H. Shepard was the artist who drew the pictures of Pooh.",
+    "audio": true
+  },
+  {
+    "k": "christopher-robin",
+    "t": "Christopher Robin",
+    "kind": "name",
+    "forms": [
+      "Christopher Robin"
+    ],
+    "text": "Christopher Robin is the boy in the stories. He is Pooh's best friend.",
+    "audio": true
+  },
+  {
+    "k": "based-on",
+    "t": "based on",
+    "kind": "phrase",
+    "forms": [
+      "based on"
+    ],
+    "text": "Based on means made from something real. The character came from a real boy.",
+    "audio": true
+  },
+  {
+    "k": "stuffed-animal",
+    "t": "stuffed animals",
+    "kind": "phrase",
+    "forms": [
+      "stuffed animals",
+      "stuffed animal"
+    ],
+    "text": "A stuffed animal is a soft toy that looks like an animal.",
+    "audio": true
+  },
+  {
+    "k": "london-zoo",
+    "t": "London Zoo",
+    "kind": "name",
+    "forms": [
+      "London Zoo"
+    ],
+    "text": "The London Zoo is a zoo in London, a big city in England.",
+    "audio": true
+  },
+  {
+    "k": "winnipeg",
+    "t": "Winnipeg",
+    "kind": "name",
+    "forms": [
+      "Winnipeg"
+    ],
+    "text": "Winnipeg was a real bear at the zoo. Christopher named his toy Winnie after her.",
+    "audio": true
+  },
+  {
+    "k": "renamed",
+    "t": "renamed",
+    "kind": "phrase",
+    "forms": [
+      "renamed"
+    ],
+    "text": "Renamed means gave a new name.",
+    "audio": true
+  },
+  {
+    "k": "swan",
+    "t": "swan",
+    "kind": "phrase",
+    "forms": [
+      "swan"
+    ],
+    "text": "A swan is a big white bird with a long neck. It swims on ponds.",
+    "audio": true
+  },
+  {
+    "k": "hundred-acre-wood",
+    "t": "Hundred Acre Wood",
+    "kind": "name",
+    "forms": [
+      "Hundred Acre Wood"
+    ],
+    "text": "The Hundred Acre Wood is the forest where Pooh and his friends live in the stories.",
+    "audio": true
+  },
+  {
+    "k": "ashdown-forest",
+    "t": "Ashdown Forest",
+    "kind": "name",
+    "forms": [
+      "Ashdown Forest"
+    ],
+    "text": "Ashdown Forest is a real forest in England. It gave the author the idea for the Hundred Acre Wood.",
+    "audio": true
+  },
+  {
+    "k": "england",
+    "t": "England",
+    "kind": "name",
+    "forms": [
+      "England"
+    ],
+    "text": "England is a country. It is part of the United Kingdom.",
+    "audio": true
+  },
+  {
+    "k": "walt-disney",
+    "t": "Walt Disney",
+    "kind": "name",
+    "forms": [
+      "Walt Disney"
+    ],
+    "text": "Walt Disney started a company that makes cartoons and movies.",
+    "audio": true
+  },
+  {
+    "k": "animated",
+    "t": "animated",
+    "kind": "phrase",
+    "forms": [
+      "animated"
+    ],
+    "text": "Animated means made into a cartoon, with drawings that seem to move.",
+    "audio": true
+  },
+  {
+    "k": "short",
+    "t": "short",
+    "kind": "phrase",
+    "forms": [
+      "short"
+    ],
+    "text": "Here, a short is a very short movie.",
+    "audio": true
+  },
+  {
+    "k": "nypl",
+    "t": "New York Public Library",
+    "kind": "name",
+    "forms": [
+      "New York Public Library",
+      "NYPL"
+    ],
+    "text": "The New York Public Library is a big library in New York City. People can borrow books there.",
+    "audio": true
+  },
+  {
+    "k": "director",
+    "t": "director",
+    "kind": "phrase",
+    "forms": [
+      "director"
+    ],
+    "text": "A director is a person in charge of a group of workers.",
+    "audio": true
+  },
+  {
+    "k": "celebrates",
+    "t": "celebrates",
+    "kind": "phrase",
+    "forms": [
+      "celebrates"
+    ],
+    "text": "To celebrate is to show that something is special and fun.",
+    "audio": true
+  },
+  {
+    "k": "display",
+    "t": "display",
+    "kind": "phrase",
+    "forms": [
+      "display"
+    ],
+    "text": "A display is a show of things set out so people can look at them.",
+    "audio": true
+  }
+]

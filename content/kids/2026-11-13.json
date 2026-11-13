@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-13",
+  "title": "Winnie-the-Pooh turns 100",
+  "articleUrl": "https://www.timeforkids.com/g2/bear-story-g2/",
+  "articlePageUrl": "/articles/kids/2026-11-13.html",
+  "voiceQuiz": true,
+  "source": "TIME for Kids",
+  "vocab": [
+    {
+      "word": "beloved",
+      "partOfSpeech": "adjective",
+      "pronunciation": "bih-LUV-id",
+      "articleQuote": "Learn how this beloved bear came to be.",
+      "meaning": "Beloved means loved very, very much. You can say it about a person, a pet, or a toy. In the article, Winnie-the-Pooh is a beloved bear because kids have loved him for 100 years.",
+      "examples": [
+        "My beloved teddy bear goes to bed with me every night.",
+        "Our beloved dog gets a big hug when we come home."
+      ]
+    },
+    {
+      "word": "illustrated",
+      "partOfSpeech": "verb",
+      "pronunciation": "IL-uh-stray-tid",
+      "articleQuote": "It was illustrated by Ernest H. Shepard.",
+      "meaning": "When someone illustrated a book, they drew the pictures for it. You can see their art on the pages. In the article, Ernest H. Shepard drew the pictures of Pooh for the book.",
+      "examples": [
+        "My big sister illustrated her story with colorful drawings of a dragon.",
+        "The picture book was illustrated with pictures of farm animals."
+      ]
+    },
+    {
+      "word": "charm",
+      "partOfSpeech": "verb",
+      "pronunciation": "CHARM",
+      "articleQuote": "They have had the “ability to charm readers for 100 years,” he says, “and counting.”",
+      "meaning": "To charm someone is to make them smile and like you very much. Something charming is lovely and a little bit magical. In the article, the Pooh stories charm readers, so people keep loving them.",
+      "examples": [
+        "The baby giggled and charmed everyone at the party.",
+        "The puppy's wiggly tail charmed the whole class."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Author and illustrator",
+      "articleQuote": "The book was written by A.A. Milne. It was illustrated by Ernest H. Shepard.",
+      "meaning": "The Pooh book had two makers. A.A. Milne wrote it, and Ernest H. Shepard drew the pictures.\n\nThe person who writes the words of a book is the author. The person who draws the pictures is the illustrator. Sometimes one person does both jobs. Often there are two people.\n\nThink of a picture book you love. The author picked every word in the story. The illustrator decided what the animals and the places look like. The words and pictures work together, like a team.\n\nSo when you read a book, look for two names. One is the author. The other may be the illustrator."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "How old is Winnie-the-Pooh this year?",
+      "options": [
+        "10 years old",
+        "50 years old",
+        "100 years old",
+        "1,000 years old"
+      ],
+      "answerIndex": 2,
+      "explanation": "The book was published in 1926, so Winnie-the-Pooh turns 100."
+    },
+    {
+      "question": "Who is Christopher Robin based on?",
+      "options": [
+        "A zoo worker in London",
+        "A. A. Milne's son, Christopher",
+        "A pet swan",
+        "A librarian in New York"
+      ],
+      "answerIndex": 1,
+      "explanation": "Milne based the character on his own son, Christopher."
+    },
+    {
+      "question": "Where did the name Pooh come from?",
+      "options": [
+        "A jar of honey",
+        "A cartoon",
+        "A pet swan",
+        "A bear named Winnipeg"
+      ],
+      "answerIndex": 2,
+      "explanation": "The name Pooh came from a pet swan. The name Winnie came from a bear named Winnipeg."
+    },
+    {
+      "question": "Ernest H. Shepard illustrated the book. What did he do?",
+      "options": [
+        "He wrote the words",
+        "He drew the pictures",
+        "He read the book out loud",
+        "He sold the book"
+      ],
+      "answerIndex": 1,
+      "explanation": "An illustrator draws the pictures for a book."
+    },
+    {
+      "question": "Where can people see Christopher's original stuffed animals?",
+      "options": [
+        "At the London Zoo",
+        "In Ashdown Forest",
+        "At the New York Public Library",
+        "At a Disney movie"
+      ],
+      "answerIndex": 2,
+      "explanation": "The original stuffed animals live at the New York Public Library."
+    }
+  ]
+}
