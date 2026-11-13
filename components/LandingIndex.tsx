@@ -41,10 +41,6 @@ const btn =
 const stepArrow =
   "self-center text-[11px] font-bold leading-none text-stone-500 group-hover:text-stone-400";
 
-// A quiet topline text link (the cross-track / "Word bank" chrome links).
-const topLink =
-  "px-1.5 py-1 font-mono text-[11px] font-bold uppercase tracking-[.12em] text-stone-500 no-underline hover:bg-[#0a0a0a] hover:text-[#ffe600]";
-
 /** The level's newest reading as a "today" card body: date + medal, title, the three steps. */
 function LaneReading({ r, track, highlight }: { r: Reading; track: Track; highlight: boolean }) {
   return (
@@ -210,10 +206,7 @@ export default function LandingIndex({
           box overflows upward past the <header> and would otherwise paint
           over this bar and eat clicks. */}
       <div className="relative z-10 mx-auto max-w-[980px] px-[18px]">
-        <div className="flex min-h-[37px] items-center justify-between gap-4 border-b-2 border-[#0a0a0a] py-1">
-          <Link href="/guide" className={topLink}>
-            How it works
-          </Link>
+        <div className="flex min-h-[37px] items-center justify-end gap-4 border-b-2 border-[#0a0a0a] py-1">
           <HomeAuthBar />
         </div>
       </div>
