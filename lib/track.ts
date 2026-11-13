@@ -2,11 +2,13 @@
  * The reading tracks, client-safe (no fs). The ids are INTERNAL names, never
  * shown: people see TRACK_LABEL and the URL prefix from trackBase.
  *
- * - `senior` = High School (US grades 8–10), the original club, at `/`. It
- *   keeps every date-keyed path bare.
- * - `junior` = Middle School (grades 5–7, PLAN-junior.md), at `/middle-school`.
- * - `kids`   = Elementary (reading at about a grade 3 level, articles from
- *   kids' news sites), at `/elementary`. Not linked from the other indexes.
+ * - `senior` = High School, the original club, at `/`. It keeps every
+ *   date-keyed path bare.
+ * - `junior` = Middle School (PLAN-junior.md), at `/middle-school`.
+ * - `kids`   = Elementary (articles from kids' news sites), at `/elementary`.
+ *
+ * The site names school levels only, never grade numbers (owner's rule); the
+ * grade calibration lives in the authoring skills.
  *
  * Every non-senior track keeps its id as the path segment of its stored
  * things (content files, article pages, audio, article text, glossaries, Blob
@@ -64,11 +66,4 @@ export const TRACK_LABEL: Record<Track, string> = {
   senior: "High School",
   junior: "Middle School",
   kids: "Elementary",
-};
-
-/** The index masthead's grade label. */
-export const TRACK_BAND: Record<Track, string> = {
-  senior: "Grades 8–10",
-  junior: "Grades 5–7",
-  kids: "Grades 2–4",
 };

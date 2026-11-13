@@ -8,13 +8,13 @@ import VoiceQuizStep from "@/components/VoiceQuizStep";
 import VotePoll from "@/components/VotePoll";
 import { type Reading, type Track } from "@/lib/content";
 import type { PublicPoll } from "@/lib/polls";
-import { TRACK_BAND, TRACK_LABEL, trackBase } from "@/lib/track";
+import { TRACK_LABEL, trackBase } from "@/lib/track";
 
 // Who the deck says the day's article is for.
 const AUDIENCE_LINE: Record<Track, string> = {
   senior: "high schoolers",
-  junior: "grades 5–7",
-  kids: "young readers",
+  junior: "middle schoolers",
+  kids: "elementary schoolers",
 };
 
 // How many rows the index shows up front; everything older collapses behind
@@ -192,7 +192,7 @@ export default function LandingIndex({
       <header className="animate-brutal-stamp border-b-[5px] border-[#0a0a0a] motion-reduce:animate-none">
         <div className="mx-auto max-w-[980px] px-[18px]">
           <p className="pt-4 font-mono text-[11px] font-bold uppercase tracking-[.2em] text-stone-500">
-            {TRACK_LABEL[track]} · {TRACK_BAND[track]}
+            {TRACK_LABEL[track]}
           </p>
           <h1
             className={`pt-1 pb-2 font-display text-[clamp(56px,12.5vw,128px)] font-normal uppercase leading-[.95] tracking-[.01em]`}

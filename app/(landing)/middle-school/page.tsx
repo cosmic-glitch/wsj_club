@@ -8,7 +8,7 @@ export const revalidate = 60;
 export const metadata = {
   title: "Middle School · Daily Reading Club",
   description:
-    "The Daily Reading Club for middle schoolers (US grades 5–7) — a daily-ish news handout with vocabulary, concepts, and a self-quiz.",
+    "The Daily Reading Club for middle schoolers — a daily news handout with vocabulary, concepts, and a self-quiz.",
 };
 
 // The middle-school index (track id "junior", lib/track.ts). Thin wrapper over

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 // three medals), then the daily loop as three numbered step cards (each
 // with a slot for a short screen-recording loop), the smaller things worth
 // knowing, and a CTA back to today's reading. Static, track-agnostic — the
-// junior track works the same way, so one page serves both. Per the site
+// other tracks work the same way, so one page serves all three. Per the site
 // rule, mono is the label layer only — every sentence here is in the sans.
 
 /** A step's screen-recording loop: recorded against the real site (960x540),
@@ -216,12 +216,20 @@ export default function GuidePage() {
             Some days the club picks the article: a ballot appears at the top
             of the home page. One member, one vote.
           </Extra>
-          <Extra title="Middle school track">
-            Grades 5–7 have their own readings at{" "}
+          <Extra title="Three tracks">
+            High school is the{" "}
+            <Link href="/" className="font-bold underline">
+              home page
+            </Link>
+            . Middle school and elementary have their own readings at{" "}
             <Link href="/middle-school" className="font-bold underline">
               /middle-school
+            </Link>{" "}
+            and{" "}
+            <Link href="/elementary" className="font-bold underline">
+              /elementary
             </Link>
-            . Same loop, calibrated younger.
+            . Same loop, pitched for each school level.
           </Extra>
           <Extra title="For parents">
             The <strong>Reports</strong> page shows every attempt and report

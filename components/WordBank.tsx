@@ -3,7 +3,7 @@ import { audioSrcFor } from "@/lib/handout-audio";
 import WordBankList, { type BankDay } from "@/components/WordBankList";
 import WordQuiz from "@/components/WordQuiz";
 import PageBeacon from "@/components/PageBeacon";
-import { TRACK_BAND, TRACK_LABEL, trackBase } from "@/lib/track";
+import { TRACK_LABEL, trackBase } from "@/lib/track";
 
 /** "2026-07-08" → "Jul 8" (rendered uppercase in the date column). */
 function dateTag(date: string): string {
@@ -53,7 +53,7 @@ export default function WordBank({ track = "senior" }: { track?: Track }) {
       <PageBeacon kind="wordbank_view" track={track} />
       <header className="border-b-[5px] border-[#0a0a0a] pb-5">
         <p className="font-mono text-[11px] font-bold uppercase tracking-[.18em] text-stone-500">
-          {sub ? `${TRACK_LABEL[track]} · ${TRACK_BAND[track]}` : "Your review list"}
+          {sub ? TRACK_LABEL[track] : "Your review list"}
         </p>
         <h1 className="mt-2 font-display text-[clamp(30px,6.5vw,48px)] font-normal uppercase leading-[1.05] tracking-[.01em] text-[#0a0a0a]">
           My Word Bank

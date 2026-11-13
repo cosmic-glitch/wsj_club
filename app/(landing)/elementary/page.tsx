@@ -8,7 +8,7 @@ export const revalidate = 60;
 export const metadata = {
   title: "Elementary · Daily Reading Club",
   description:
-    "The Daily Reading Club for elementary readers (about a grade 3 reading level): an article from a kids' news site with vocabulary, a concept, and a self-quiz.",
+    "The Daily Reading Club for elementary schoolers: an article from a kids' news site with vocabulary, a concept, and a self-quiz.",
   // Not linked from the other indexes yet: keep it out of search.
   robots: { index: false },
 };
