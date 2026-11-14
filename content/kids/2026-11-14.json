@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-14",
+  "title": "A 13-year-old gives away thousands of free books",
+  "articleUrl": "https://www.timeforkids.com/g34/service-stars-sophias-shelves-g3/",
+  "articlePageUrl": "/articles/kids/2026-11-14.html",
+  "voiceQuiz": true,
+  "source": "TIME for Kids",
+  "vocab": [
+    {
+      "word": "grateful",
+      "partOfSpeech": "adjective",
+      "pronunciation": "GRAYT-ful",
+      "articleQuote": "“I’m very, very grateful to Sophia for the opportunity that she has given to my students,” teacher Elizabeth Nardone says.",
+      "meaning": "Grateful means thankful. You feel it when someone does something kind for you. In the article, a teacher feels grateful because Sophia gave books to her students.",
+      "examples": [
+        "I was grateful when my friend shared her snack with me.",
+        "The family was grateful to the neighbor who found their lost cat."
+      ]
+    },
+    {
+      "word": "donation",
+      "partOfSpeech": "noun",
+      "pronunciation": "doh-NAY-shun",
+      "articleQuote": "Donations come from friends, too.",
+      "meaning": "A donation is a gift that you give for free to help someone. It can be money, food, toys, or books. In the article, people give books to Sophia, and she passes them on as donations to kids.",
+      "examples": [
+        "I made a donation of three old toys to the school sale.",
+        "The class collected a donation of coats for kids who were cold."
+      ]
+    },
+    {
+      "word": "expand",
+      "partOfSpeech": "verb",
+      "pronunciation": "ik-SPAND",
+      "articleQuote": "“I definitely want to expand,” Sophia says.",
+      "meaning": "To expand means to get bigger or to grow. A balloon expands when you blow air into it. In the article, Sophia wants her book program to expand, so it can reach more kids.",
+      "examples": [
+        "Our garden will expand next spring, and we will plant more flowers.",
+        "The bakery wanted to expand so it could make more bread."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Publisher",
+      "articleQuote": "Many of the books Sophia gives away come from people in the publishing business.",
+      "meaning": "Sophia gets many of her books from people in the publishing business. A publisher is a company that makes books and sends them out into the world.\n\nAn author writes the words of a book. An illustrator draws the pictures. The publisher is like the team leader. It picks the stories, prints the pages, and sends the books to stores and libraries.\n\nThink of a bakery. The baker makes the bread, but the bakery sells it to many families. In the same way, an author writes a book, but a publisher helps it reach many readers.\n\nA publisher often has extra copies of its books. That is why one can give copies to someone like Sophia, who passes them on to kids."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does Sophia Parekh do with the books in her basement?",
+      "options": [
+        "She gives them away for free to kids",
+        "She sells them at a store",
+        "She hides them in a secret room",
+        "She reads them all herself"
+      ],
+      "answerIndex": 0,
+      "explanation": "Sophia runs a program called Sophia’s Book Stand that gives books to kids for free."
+    },
+    {
+      "question": "How do teachers and families ask for books?",
+      "options": [
+        "They call Sophia on the phone",
+        "They fill out an online form",
+        "They visit her basement",
+        "They write her a song"
+      ],
+      "answerIndex": 1,
+      "explanation": "The form asks for the child’s age and interests, so Sophia can find a good match."
+    },
+    {
+      "question": "Sophia says she wants to “expand.” What does expand mean?",
+      "options": [
+        "To stop",
+        "To read quietly",
+        "To get bigger or grow",
+        "To go to sleep"
+      ],
+      "answerIndex": 2,
+      "explanation": "To expand means to grow. Sophia wants her book program to reach more kids."
+    },
+    {
+      "question": "What is a publisher?",
+      "options": [
+        "A person who draws the pictures in a book",
+        "A person who reads books out loud",
+        "A shelf that holds books",
+        "A company that makes books and sends them out to readers"
+      ],
+      "answerIndex": 3,
+      "explanation": "A publisher makes books and sends them to stores and libraries. Some publishers give extra copies to Sophia."
+    },
+    {
+      "question": "How many books did Sophia hope to send each year at first?",
+      "options": [
+        "About 1,000",
+        "About 8,000",
+        "About 288",
+        "About 36"
+      ],
+      "answerIndex": 0,
+      "explanation": "Sophia hoped to send about 1,000 books a year. She has now given away more than 8,000."
+    }
+  ]
+}

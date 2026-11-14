@@ -1,0 +1,457 @@
+[
+  {
+    "k": "grateful",
+    "t": "grateful",
+    "kind": "vocab",
+    "pron": "GRAYT-ful",
+    "forms": [
+      "grateful"
+    ],
+    "text": "Grateful means thankful. You feel it when someone is kind to you. The teacher is thankful that Sophia gave books to her students.",
+    "audio": true
+  },
+  {
+    "k": "donation",
+    "t": "Donations",
+    "kind": "vocab",
+    "pron": "doh-NAY-shun",
+    "forms": [
+      "Donations",
+      "donations"
+    ],
+    "text": "A donation is a gift you give for free to help someone. Here, friends give books to Sophia.",
+    "audio": true
+  },
+  {
+    "k": "expand",
+    "t": "expand",
+    "kind": "vocab",
+    "pron": "ik-SPAND",
+    "forms": [
+      "expand"
+    ],
+    "text": "To expand means to grow bigger. Sophia wants her book program to reach more kids.",
+    "audio": true
+  },
+  {
+    "k": "sophia-parekh",
+    "t": "Sophia Parekh",
+    "kind": "name",
+    "forms": [
+      "Sophia Parekh"
+    ],
+    "text": "Sophia is a 13-year-old girl from New Jersey. She loves books and shares them with other kids.",
+    "audio": true
+  },
+  {
+    "k": "new-jersey",
+    "t": "New Jersey",
+    "kind": "name",
+    "forms": [
+      "New Jersey"
+    ],
+    "text": "New Jersey is a state on the east coast of the United States.",
+    "audio": true
+  },
+  {
+    "k": "basement",
+    "t": "basement",
+    "kind": "phrase",
+    "forms": [
+      "basement"
+    ],
+    "text": "A basement is a room in a house that is under the ground floor.",
+    "audio": true
+  },
+  {
+    "k": "neatly-organized",
+    "t": "neatly organized",
+    "kind": "phrase",
+    "forms": [
+      "neatly organized"
+    ],
+    "text": "This means in tidy order, so things are easy to find.",
+    "audio": true
+  },
+  {
+    "k": "secret-library",
+    "t": "secret library",
+    "kind": "phrase",
+    "forms": [
+      "secret library"
+    ],
+    "text": "A library is a place full of books. This one is in a basement at home, so it feels hidden.",
+    "audio": true
+  },
+  {
+    "k": "sophias-book-stand",
+    "t": "Sophia’s Book Stand",
+    "kind": "name",
+    "forms": [
+      "Sophia’s Book Stand"
+    ],
+    "text": "This is the name of the program Sophia started. It gives books to kids for free.",
+    "audio": true
+  },
+  {
+    "k": "program",
+    "t": "program",
+    "kind": "phrase",
+    "forms": [
+      "program"
+    ],
+    "text": "A program is a plan or project that does a special job over time.",
+    "audio": true
+  },
+  {
+    "k": "initial-goal",
+    "t": "initial goal",
+    "kind": "phrase",
+    "forms": [
+      "initial goal"
+    ],
+    "text": "Initial means first. Her first goal was what she hoped to do at the start.",
+    "audio": true
+  },
+  {
+    "k": "in-need",
+    "t": "in need",
+    "kind": "phrase",
+    "forms": [
+      "in need"
+    ],
+    "text": "Kids in need are kids who do not have enough of something they need or want, like books.",
+    "audio": true
+  },
+  {
+    "k": "time-for-kids",
+    "t": "TIME for Kids",
+    "kind": "name",
+    "forms": [
+      "TIME for Kids"
+    ],
+    "text": "TIME for Kids is a magazine and website with news stories for kids.",
+    "audio": true
+  },
+  {
+    "k": "seventh-grader",
+    "t": "seventh grader",
+    "kind": "phrase",
+    "forms": [
+      "seventh grader"
+    ],
+    "text": "A seventh grader is a student in the seventh year of school, about age 12 or 13.",
+    "audio": true
+  },
+  {
+    "k": "gloria-barron-prize-for-young-heroes",
+    "t": "Gloria Barron Prize for Young Heroes",
+    "kind": "name",
+    "forms": [
+      "Gloria Barron Prize for Young Heroes"
+    ],
+    "text": "This is a big award. It goes to young people who help others or the world.",
+    "audio": true
+  },
+  {
+    "k": "awarded",
+    "t": "awarded",
+    "kind": "phrase",
+    "forms": [
+      "awarded"
+    ],
+    "text": "Awarded means given as a prize.",
+    "audio": true
+  },
+  {
+    "k": "positive-impact",
+    "t": "positive impact",
+    "kind": "phrase",
+    "forms": [
+      "positive impact"
+    ],
+    "text": "This means doing something that makes things better for other people.",
+    "audio": true
+  },
+  {
+    "k": "request",
+    "t": "request",
+    "kind": "phrase",
+    "forms": [
+      "request"
+    ],
+    "text": "To request means to ask for something politely.",
+    "audio": true
+  },
+  {
+    "k": "scans",
+    "t": "scans",
+    "kind": "phrase",
+    "forms": [
+      "scans"
+    ],
+    "text": "To scan means to look over something carefully, from one end to the other.",
+    "audio": true
+  },
+  {
+    "k": "perfect-match",
+    "t": "perfect match",
+    "kind": "phrase",
+    "forms": [
+      "perfect match"
+    ],
+    "text": "A perfect match is the right book for the right child.",
+    "audio": true
+  },
+  {
+    "k": "interests",
+    "t": "interests",
+    "kind": "phrase",
+    "forms": [
+      "interests"
+    ],
+    "text": "Your interests are the things you like to do or learn about.",
+    "audio": true
+  },
+  {
+    "k": "into",
+    "t": "into",
+    "kind": "phrase",
+    "forms": [
+      "into"
+    ],
+    "text": "Here, being into something means liking it a lot.",
+    "audio": true
+  },
+  {
+    "k": "connect-to",
+    "t": "connect to",
+    "kind": "phrase",
+    "forms": [
+      "connect to"
+    ],
+    "text": "To connect to a book means to feel it is about you or things you care about.",
+    "audio": true
+  },
+  {
+    "k": "pennsylvania",
+    "t": "Pennsylvania",
+    "kind": "name",
+    "forms": [
+      "Pennsylvania"
+    ],
+    "text": "Pennsylvania is a state in the United States.",
+    "audio": true
+  },
+  {
+    "k": "arizona",
+    "t": "Arizona",
+    "kind": "name",
+    "forms": [
+      "Arizona"
+    ],
+    "text": "Arizona is a hot, dry state in the southwest of the United States.",
+    "audio": true
+  },
+  {
+    "k": "new-york",
+    "t": "New York",
+    "kind": "name",
+    "forms": [
+      "New York"
+    ],
+    "text": "New York is a state in the northeast of the United States.",
+    "audio": true
+  },
+  {
+    "k": "siblings",
+    "t": "siblings",
+    "kind": "phrase",
+    "forms": [
+      "siblings"
+    ],
+    "text": "Siblings are brothers and sisters.",
+    "audio": true
+  },
+  {
+    "k": "obsessed",
+    "t": "obsessed",
+    "kind": "phrase",
+    "forms": [
+      "obsessed"
+    ],
+    "text": "Obsessed means you love something so much that you think about it all the time.",
+    "audio": true
+  },
+  {
+    "k": "mailed",
+    "t": "mailed",
+    "kind": "phrase",
+    "forms": [
+      "mailed"
+    ],
+    "text": "To mail something means to send it through the post office.",
+    "audio": true
+  },
+  {
+    "k": "linden-new-jersey",
+    "t": "Linden, New Jersey",
+    "kind": "name",
+    "forms": [
+      "Linden, New Jersey"
+    ],
+    "text": "Linden is a city in New Jersey.",
+    "audio": true
+  },
+  {
+    "k": "elizabeth-nardone",
+    "t": "Elizabeth Nardone",
+    "kind": "name",
+    "forms": [
+      "Elizabeth Nardone"
+    ],
+    "text": "She is a teacher whose students got books from Sophia.",
+    "audio": true
+  },
+  {
+    "k": "opportunity",
+    "t": "opportunity",
+    "kind": "phrase",
+    "forms": [
+      "opportunity"
+    ],
+    "text": "An opportunity is a chance to do something good.",
+    "audio": true
+  },
+  {
+    "k": "publishing-business",
+    "t": "publishing business",
+    "kind": "phrase",
+    "forms": [
+      "publishing business"
+    ],
+    "text": "This is the work of making books and sending them to readers.",
+    "audio": true
+  },
+  {
+    "k": "mary-pope-osborne",
+    "t": "Mary Pope Osborne",
+    "kind": "name",
+    "forms": [
+      "Mary Pope Osborne"
+    ],
+    "text": "She is a writer who wrote the Magic Tree House books.",
+    "audio": true
+  },
+  {
+    "k": "magic-tree-house",
+    "t": "Magic Tree House",
+    "kind": "name",
+    "forms": [
+      "Magic Tree House"
+    ],
+    "text": "This is a series of adventure books about a brother and sister who travel in a magic tree house.",
+    "audio": true
+  },
+  {
+    "k": "series",
+    "t": "series",
+    "kind": "phrase",
+    "forms": [
+      "series"
+    ],
+    "text": "A series is a group of books that go together, like a story told in many parts.",
+    "audio": true
+  },
+  {
+    "k": "publisher",
+    "t": "publisher",
+    "kind": "phrase",
+    "forms": [
+      "publisher"
+    ],
+    "text": "A publisher is a company that makes books and sends them to readers.",
+    "audio": true
+  },
+  {
+    "k": "multiple-copies",
+    "t": "multiple copies",
+    "kind": "phrase",
+    "forms": [
+      "multiple copies"
+    ],
+    "text": "Multiple means more than one. Copies are books that are exactly the same.",
+    "audio": true
+  },
+  {
+    "k": "lindsay-gordon-bezalel",
+    "t": "Lindsay Gordon Bezalel",
+    "kind": "name",
+    "forms": [
+      "Lindsay Gordon Bezalel"
+    ],
+    "text": "She lives across the street from Sophia and helps by giving books.",
+    "audio": true
+  },
+  {
+    "k": "bilingual",
+    "t": "bilingual",
+    "kind": "phrase",
+    "forms": [
+      "bilingual"
+    ],
+    "text": "A bilingual book is written in two languages.",
+    "audio": true
+  },
+  {
+    "k": "diverse-characters",
+    "t": "diverse characters",
+    "kind": "phrase",
+    "forms": [
+      "diverse characters"
+    ],
+    "text": "Diverse means different. These are story people who come from many kinds of backgrounds.",
+    "audio": true
+  },
+  {
+    "k": "ship",
+    "t": "ship",
+    "kind": "phrase",
+    "forms": [
+      "ship"
+    ],
+    "text": "Here, to ship means to send by mail or truck.",
+    "audio": true
+  },
+  {
+    "k": "literacy",
+    "t": "literacy",
+    "kind": "phrase",
+    "forms": [
+      "literacy"
+    ],
+    "text": "Literacy is being able to read and write.",
+    "audio": true
+  },
+  {
+    "k": "community",
+    "t": "community",
+    "kind": "phrase",
+    "forms": [
+      "community"
+    ],
+    "text": "Your community is the people and places around where you live.",
+    "audio": true
+  },
+  {
+    "k": "inspire",
+    "t": "inspire",
+    "kind": "phrase",
+    "forms": [
+      "inspire",
+      "Inspired"
+    ],
+    "text": "To inspire means to give someone the wish to do something good.",
+    "audio": true
+  }
+]
