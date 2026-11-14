@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-14",
+  "title": "China’s carbon-dioxide emissions have begun to fall",
+  "articleUrl": "https://www.economist.com/china/2026/11/12/chinas-carbon-dioxide-emissions-have-begun-to-fall",
+  "articlePageUrl": "/articles/2026-11-14.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "sliver",
+      "partOfSpeech": "noun",
+      "pronunciation": "SLIV-er",
+      "articleQuote": "Still, that was a sliver less than the year before.",
+      "meaning": "A sliver is a very thin, small piece cut or broken off something bigger, like a sliver of cake or a sliver of glass. It is also used for any tiny amount, such as a sliver of hope. Here the Economist uses it to say that China's emissions fell only a tiny bit last year, so the drop was real but very small, which is why the new, faster fall is news.",
+      "examples": [
+        "She asked for just a sliver of pie because she was nearly full.",
+        "A sliver of light came under the door and showed him where the hallway was."
+      ]
+    },
+    {
+      "word": "overcapacity",
+      "partOfSpeech": "noun",
+      "pronunciation": "OH-ver-kuh-PASS-ih-tee",
+      "articleQuote": "Officials believe the industry is mature enough to withstand market forces and want uncompetitive firms to fold in order to reduce overcapacity.",
+      "meaning": "Overcapacity is when an industry can make more goods than customers want to buy. Imagine fifty bakeries in a town that only needs twenty: prices fall, profits vanish, and many bakeries lose money. Economists use the word for steel, solar panels, and cars when factories keep expanding past demand. Here it describes China's many electric-car makers, and officials are letting weaker firms fail so that the strongest ones survive.",
+      "examples": [
+        "Overcapacity in the steel industry meant factories sat half-empty and prices dropped.",
+        "Too many new hotels led to overcapacity, so rooms were rented at bargain rates."
+      ]
+    },
+    {
+      "word": "decarbonise",
+      "partOfSpeech": "verb",
+      "pronunciation": "dee-KAR-bun-ize",
+      "articleQuote": "They might also boast that China’s exports of clean technologies are helping others to decarbonise.",
+      "meaning": "To decarbonise is to cut the amount of carbon dioxide that an economy, company, or machine releases, mostly by replacing coal, oil, and gas with cleaner energy such as solar, wind, nuclear, and electricity. The prefix de- means to remove or reverse, so the word means to take the carbon out. Here it means that Chinese solar panels, batteries, and electric vehicles are sold abroad and help other countries cut their own emissions. The spelling is British; Americans write decarbonize.",
+      "examples": [
+        "The city plans to decarbonise its buses by switching them to electric power.",
+        "Steelmakers face a hard task if they want to decarbonise, since making steel burns so much coal."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "How a country's emissions actually fall",
+      "articleQuote": "In the first half of this year the proportion of power supplied by coal plants dropped below 50% for the first time on record.",
+      "meaning": "Carbon-dioxide emissions come mostly from burning fossil fuels: coal in power plants and in factories that make steel and cement, oil in cars and lorries, and gas for heat. So a country's emissions fall only when it burns less of those fuels, and the article shows the three levers at work in China.\n\nThe first is **a cleaner power mix**. China has added 1,000 gigawatts of solar capacity since 2022 and over 300 gigawatts of wind, so coal supplied under half of its electricity for the first time. The second is **electrifying transport**. Two-thirds of passenger cars sold in September were electric or plug-in hybrids, and half the heavy lorries too, which cuts oil use. The third is **less demand for dirty industry**: a property bust meant fewer buildings, so less steel and cement.\n\nNot every cause is permanent, which is the article's warning. Mild weather and high coal prices helped this year, but they can reverse. A fall caused by clean investment lasts; a fall caused by a weak economy or lucky weather may not. The takeaway: when you see emissions drop, ask which lever moved, because that tells you whether it will last."
+    },
+    {
+      "name": "Why a grid can waste clean power",
+      "articleQuote": "The grid also wastes much of the clean energy that is plugged into it because it cannot store or move enough of the excess power that is sometimes generated, such as on very sunny days.",
+      "meaning": "The electricity grid is the network of power lines that carries electricity from where it is made to where it is used. Unlike water in a tank, electricity must be used almost the instant it is made, so supply and demand have to match every second. Solar and wind make power only when the sun shines or the wind blows, not when people need it.\n\nHere is the problem the article describes. On a very sunny day, solar farms in the west may produce more than the local area can use. If the lines are too small to carry it to distant cities, and there are too few big batteries to save it for the evening, the extra power is simply thrown away. Engineers call this **curtailment**. Building more panels does not help if the clean power cannot reach anyone.\n\nChina's fixes in the article match the problem: long-distance power lines to move power, prices that rise and fall with the wind and sun so people use electricity when it is plentiful, and solar towers that can generate around the clock. There is also a money problem: since new solar farms must now sell at market rates, builders worry about profit, so fewer are being built. The takeaway: clean energy needs wires, storage, and fair prices, not just panels."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "By how much did China's carbon-dioxide emissions fall in the third quarter, compared with a year earlier?",
+      "options": [
+        "0.3%",
+        "3.1%",
+        "13%",
+        "31%"
+      ],
+      "answerIndex": 1,
+      "explanation": "The CREA think-tank found a 3.1% year-on-year drop, the fastest since 2022, and this time the economy was growing a little."
+    },
+    {
+      "question": "Which of these does the article name as a temporary factor that helped lower emissions?",
+      "options": [
+        "A ban on all coal power plants",
+        "A new carbon tax on factories",
+        "Unusually mild weather that reduced demand for power",
+        "A sharp rise in the number of petrol cars sold"
+      ],
+      "answerIndex": 2,
+      "explanation": "Mild weather, higher coal prices after a mine-safety campaign, and higher oil prices all helped this year but will not last for ever."
+    },
+    {
+      "question": "How did CATL help make electric lorries practical?",
+      "options": [
+        "It built stations where lorries swap batteries for new ones in minutes",
+        "It made lorries lighter than cars",
+        "It built solar panels on every lorry roof",
+        "It ran lorries only on short city routes"
+      ],
+      "answerIndex": 0,
+      "explanation": "Battery-swap stations avoid long mid-journey charging, and half the heavy-duty lorries sold in September were electric."
+    },
+    {
+      "question": "Why are power firms building less solar than last year, according to the article?",
+      "options": [
+        "Solar panels became illegal to import",
+        "They must now sell power at market rates and worry about making money",
+        "The sun shines less in China",
+        "The government banned new wind farms"
+      ],
+      "answerIndex": 1,
+      "explanation": "China used to guarantee generous prices for new solar farms, but since June last year they sell at market rates, and the grid also wastes much of the clean power."
+    },
+    {
+      "question": "What does \"overcapacity\" mean in the article's discussion of electric vehicles?",
+      "options": [
+        "Cars that can carry too many passengers",
+        "Batteries that hold too much charge",
+        "An industry able to make more than customers want to buy",
+        "A road network with too many lanes"
+      ],
+      "answerIndex": 2,
+      "explanation": "Officials want weak, uncompetitive carmakers to fold so the industry's output better matches what people actually buy."
+    }
+  ]
+}

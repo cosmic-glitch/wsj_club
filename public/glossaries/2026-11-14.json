@@ -1,0 +1,576 @@
+[
+  {
+    "k": "sliver",
+    "t": "sliver",
+    "kind": "vocab",
+    "pron": "SLIV-er",
+    "forms": [
+      "sliver"
+    ],
+    "text": "A sliver is a very thin, small piece cut or broken off something bigger, and it also means any tiny amount. Here it says China's emissions fell only a tiny bit last year, so the faster fall now is news.",
+    "audio": true
+  },
+  {
+    "k": "overcapacity",
+    "t": "overcapacity",
+    "kind": "vocab",
+    "pron": "OH-ver-kuh-PASS-ih-tee",
+    "forms": [
+      "overcapacity"
+    ],
+    "text": "Overcapacity is when an industry can make more goods than customers want to buy, which drives down prices and profits. Here it describes China's crowded field of electric-car makers, where officials want the weakest firms to fail.",
+    "audio": true
+  },
+  {
+    "k": "decarbonise",
+    "t": "decarbonise",
+    "kind": "vocab",
+    "pron": "dee-KAR-bun-ize",
+    "forms": [
+      "decarbonise"
+    ],
+    "text": "To decarbonise is to cut the carbon dioxide an economy or machine releases, mostly by replacing coal, oil, and gas with cleaner energy. Here Chinese solar panels, batteries, and electric vehicles help other countries do the same. The spelling is British; Americans write decarbonize.",
+    "audio": true
+  },
+  {
+    "k": "carbon-dioxide",
+    "t": "carbon dioxide",
+    "kind": "word",
+    "forms": [
+      "carbon-dioxide",
+      "carbon dioxide"
+    ],
+    "text": "Carbon dioxide is the invisible gas released when coal, oil, and gas are burned. It traps heat in the atmosphere, which is why it is the main target of efforts to slow global warming.",
+    "audio": true
+  },
+  {
+    "k": "emitter",
+    "t": "emitter",
+    "kind": "word",
+    "forms": [
+      "emitter"
+    ],
+    "text": "An emitter is someone or something that releases a substance into the air. A country that is the biggest emitter of carbon dioxide puts more of it into the atmosphere than any other.",
+    "audio": true
+  },
+  {
+    "k": "tonnes",
+    "t": "tonnes",
+    "kind": "word",
+    "forms": [
+      "tonnes"
+    ],
+    "text": "A tonne is a metric ton, 1,000 kilograms, a little more than an American ton. Twelve billion tonnes of gas is a staggering weight, and the British spelling is used here.",
+    "audio": true
+  },
+  {
+    "k": "12bn",
+    "t": "12bn",
+    "kind": "word",
+    "forms": [
+      "12bn"
+    ],
+    "text": "The abbreviation bn means billion, so 12bn is twelve billion. The Economist uses it in place of spelling out the number.",
+    "audio": true
+  },
+  {
+    "k": "think-tank",
+    "t": "think-tank",
+    "kind": "word",
+    "forms": [
+      "think-tank"
+    ],
+    "text": "A think-tank is an organisation of researchers who study a topic such as energy or the economy and publish findings to inform public debate. CREA, based in Finland, is the one here.",
+    "audio": true
+  },
+  {
+    "k": "cream-crea",
+    "t": "CREA",
+    "kind": "name",
+    "forms": [
+      "CREA"
+    ],
+    "text": "CREA is short for the Centre for Research on Energy and Clean Air, a Finnish think-tank that tracks air pollution and emissions. Its estimates of China's emissions are what the article relies on.",
+    "audio": true
+  },
+  {
+    "k": "year-on-year",
+    "t": "year-on-year",
+    "kind": "phrase",
+    "forms": [
+      "year-on-year"
+    ],
+    "text": "Year-on-year compares a period with the same period one year earlier, such as this summer against last summer. It removes seasonal effects, so the change is a fair comparison.",
+    "audio": true
+  },
+  {
+    "k": "stalled",
+    "t": "stalled",
+    "kind": "word",
+    "forms": [
+      "stalled"
+    ],
+    "text": "To stall is to stop moving forward, like a car engine that cuts out. Here the covid lockdowns stopped China's economy in its tracks, which is why emissions fell then.",
+    "audio": true
+  },
+  {
+    "k": "covid-19",
+    "t": "covid-19 pandemic",
+    "kind": "name",
+    "forms": [
+      "covid-19 pandemic"
+    ],
+    "text": "The covid-19 pandemic was the global outbreak of disease that began in 2019 and led to lockdowns around the world. In China the lockdowns in 2022 shut factories and cut emissions.",
+    "audio": true
+  },
+  {
+    "k": "cop31",
+    "t": "COP31",
+    "kind": "name",
+    "forms": [
+      "COP31"
+    ],
+    "text": "COP31 is the 31st annual United Nations climate summit, where countries negotiate how to cut greenhouse gases. COP stands for Conference of the Parties, and each year is hosted by a different country.",
+    "audio": true
+  },
+  {
+    "k": "boast",
+    "t": "boast",
+    "kind": "word",
+    "forms": [
+      "boast"
+    ],
+    "text": "To boast is to talk proudly about what you have achieved, often a bit too eagerly. Here Chinese officials might use the emissions fall to show off at the summit.",
+    "audio": true
+  },
+  {
+    "k": "to-be-sure",
+    "t": "to be sure",
+    "kind": "phrase",
+    "forms": [
+      "To be sure"
+    ],
+    "text": "To be sure is a phrase that admits a point against your own argument before moving on. It signals that a limit or exception is coming, as here: the fall is real, but still small.",
+    "audio": true
+  },
+  {
+    "k": "decline",
+    "t": "decline",
+    "kind": "word",
+    "forms": [
+      "decline"
+    ],
+    "text": "A decline is a gradual fall in amount or quality. The article uses it for the drop in emissions, and later the verb form, declines, for coal use.",
+    "audio": true
+  },
+  {
+    "k": "mine-safety",
+    "t": "enforce safety standards",
+    "kind": "phrase",
+    "forms": [
+      "enforce safety standards"
+    ],
+    "text": "To enforce safety standards is to make sure rules meant to protect workers are actually followed. After a deadly accident, many coal mines were shut for checks, which cut supply and pushed up coal prices.",
+    "audio": true
+  },
+  {
+    "k": "coal",
+    "t": "coal",
+    "kind": "word",
+    "forms": [
+      "coal"
+    ],
+    "text": "Coal is a black rock dug from the ground and burned for heat and electricity. It releases more carbon dioxide per unit of energy than oil or gas, so cutting coal does the most for emissions.",
+    "audio": true
+  },
+  {
+    "k": "iran-war",
+    "t": "Iran war",
+    "kind": "name",
+    "forms": [
+      "Iran war"
+    ],
+    "text": "The Iran war refers to the recent conflict involving Iran. War in a major oil-producing region pushes up oil prices, and higher prices make people burn less of it.",
+    "audio": true
+  },
+  {
+    "k": "property-bust",
+    "t": "property bust",
+    "kind": "phrase",
+    "forms": [
+      "property bust"
+    ],
+    "text": "A property bust is a crash in the housing and construction market, when prices fall and few new buildings are started. Fewer buildings means less demand for steel and cement.",
+    "audio": true
+  },
+  {
+    "k": "slashed",
+    "t": "slashed",
+    "kind": "word",
+    "forms": [
+      "slashed"
+    ],
+    "text": "To slash something is to cut it sharply, as with a knife. Here the property bust sharply reduced demand for steel and cement.",
+    "audio": true
+  },
+  {
+    "k": "cement",
+    "t": "cement",
+    "kind": "word",
+    "forms": [
+      "cement"
+    ],
+    "text": "Cement is the grey powder that is mixed with water, sand, and gravel to make concrete. Making it needs very hot kilns, usually heated by burning coal, so it releases a lot of carbon dioxide.",
+    "audio": true
+  },
+  {
+    "k": "record",
+    "t": "on record",
+    "kind": "phrase",
+    "forms": [
+      "on record"
+    ],
+    "text": "On record means among everything that has been measured and written down. Coal dropping below half of power for the first time on record means it never happened in the data before.",
+    "audio": true
+  },
+  {
+    "k": "hydro",
+    "t": "hydro-",
+    "kind": "word",
+    "forms": [
+      "hydro-"
+    ],
+    "text": "Hydro- comes from the Greek word for water. Hydropower is electricity made by water flowing through turbines, often at a dam.",
+    "audio": true
+  },
+  {
+    "k": "breakneck",
+    "t": "breakneck",
+    "kind": "word",
+    "forms": [
+      "breakneck"
+    ],
+    "text": "Breakneck means dangerously fast, as if you might break your neck. It describes China's very rapid investment in clean energy.",
+    "audio": true
+  },
+  {
+    "k": "gigawatts",
+    "t": "gigawatts (GW)",
+    "kind": "word",
+    "forms": [
+      "gigawatts"
+    ],
+    "text": "A gigawatt is a billion watts, enough to power roughly several hundred thousand homes. It is the usual unit for measuring a country's power-generating capacity.",
+    "audio": true
+  },
+  {
+    "k": "capacity",
+    "t": "capacity",
+    "kind": "word",
+    "forms": [
+      "capacity"
+    ],
+    "text": "Capacity is the most something can produce or hold. Solar capacity is the maximum power all the installed panels could make under ideal sun, not what they make on a cloudy day.",
+    "audio": true
+  },
+  {
+    "k": "solar",
+    "t": "solar",
+    "kind": "word",
+    "forms": [
+      "solar"
+    ],
+    "text": "Solar means from the sun. Solar power is electricity made from sunlight, usually with panels.",
+    "audio": true
+  },
+  {
+    "k": "plug-in-hybrids",
+    "t": "plug-in hybrids",
+    "kind": "phrase",
+    "forms": [
+      "plug-in hybrids"
+    ],
+    "text": "A plug-in hybrid is a car with both a battery that can be charged from an outlet and a petrol engine as backup. It burns less fuel than a regular car but is not fully electric.",
+    "audio": true
+  },
+  {
+    "k": "evs",
+    "t": "EVs",
+    "kind": "word",
+    "forms": [
+      "EVs"
+    ],
+    "text": "EVs is short for electric vehicles, cars that run on a battery instead of petrol. Fewer petrol cars on the road means less oil burned.",
+    "audio": true
+  },
+  {
+    "k": "sinopec",
+    "t": "Sinopec",
+    "kind": "name",
+    "forms": [
+      "Sinopec"
+    ],
+    "text": "Sinopec is a huge Chinese state-owned oil and chemicals company. When it predicts falling oil use, that signals a real shift in China's fuel demand.",
+    "audio": true
+  },
+  {
+    "k": "consecutive",
+    "t": "consecutive",
+    "kind": "word",
+    "forms": [
+      "consecutive"
+    ],
+    "text": "Consecutive means one after another with no break. A third consecutive year of falling oil use means three years in a row.",
+    "audio": true
+  },
+  {
+    "k": "lorries",
+    "t": "lorries",
+    "kind": "word",
+    "forms": [
+      "lorries"
+    ],
+    "text": "A lorry is the British word for a truck. Heavy lorries burn large amounts of diesel, so they matter a lot for emissions.",
+    "audio": true
+  },
+  {
+    "k": "heavy-duty",
+    "t": "heavy-duty",
+    "kind": "word",
+    "forms": [
+      "heavy-duty"
+    ],
+    "text": "Heavy-duty describes vehicles or tools built to carry big loads or last through hard use. Heavy-duty lorries need much stronger batteries than a small car.",
+    "audio": true
+  },
+  {
+    "k": "catl",
+    "t": "CATL",
+    "kind": "name",
+    "forms": [
+      "CATL"
+    ],
+    "text": "CATL is a Chinese company that is the world's biggest maker of batteries for electric vehicles. It has also built stations where drivers swap a used battery for a charged one.",
+    "audio": true
+  },
+  {
+    "k": "swap",
+    "t": "swap",
+    "kind": "word",
+    "forms": [
+      "swap"
+    ],
+    "text": "To swap is to trade one thing for another. Lorry drivers swap an empty battery for a full one in minutes instead of waiting hours for a charge.",
+    "audio": true
+  },
+  {
+    "k": "carbon-neutral",
+    "t": "carbon neutral",
+    "kind": "phrase",
+    "forms": [
+      "carbon neutral"
+    ],
+    "text": "Carbon neutral means releasing no more carbon dioxide than is removed or absorbed, so the net amount added to the air is zero. China has promised to reach this by 2060.",
+    "audio": true
+  },
+  {
+    "k": "taper",
+    "t": "taper",
+    "kind": "word",
+    "forms": [
+      "taper"
+    ],
+    "text": "To taper is to get gradually narrower or smaller toward an end, like a candle's tip. Here China's pace of adding clean energy is slowing down.",
+    "audio": true
+  },
+  {
+    "k": "blistering",
+    "t": "blistering",
+    "kind": "word",
+    "forms": [
+      "blistering"
+    ],
+    "text": "Blistering usually describes burning heat, but with speed or pace it means extremely fast. China's roll-out of clean technology has been blistering.",
+    "audio": true
+  },
+  {
+    "k": "withdrawn",
+    "t": "withdrawn",
+    "kind": "word",
+    "forms": [
+      "withdrawn"
+    ],
+    "text": "To withdraw is to take something back or away. Once the government withdrew its subsidies, buying an electric car got more expensive.",
+    "audio": true
+  },
+  {
+    "k": "subsidies",
+    "t": "Subsidies",
+    "kind": "word",
+    "forms": [
+      "Subsidies"
+    ],
+    "text": "A subsidy is money a government gives to make something cheaper, such as help to buyers of electric cars. Ending subsidies raises prices and slows sales.",
+    "audio": true
+  },
+  {
+    "k": "mature-enough",
+    "t": "withstand market forces",
+    "kind": "phrase",
+    "forms": [
+      "withstand market forces"
+    ],
+    "text": "To withstand market forces is to survive competition and changing prices without government help. Officials think the car industry is strong enough that it no longer needs subsidies.",
+    "audio": true
+  },
+  {
+    "k": "fold",
+    "t": "fold",
+    "kind": "word",
+    "forms": [
+      "fold"
+    ],
+    "text": "Here, a firm that folds goes out of business, like a card player who gives up the hand. It is a sense of the word that trips up readers who only know it as bending paper.",
+    "audio": true
+  },
+  {
+    "k": "legacy-contracts",
+    "t": "legacy contracts",
+    "kind": "phrase",
+    "forms": [
+      "legacy contracts"
+    ],
+    "text": "A legacy contract is an old agreement that still runs, even though conditions have changed. Because these long-term deals tended to favour coal, much clean power cannot easily be sold.",
+    "audio": true
+  },
+  {
+    "k": "grid",
+    "t": "grid",
+    "kind": "word",
+    "forms": [
+      "grid"
+    ],
+    "text": "The grid is the network of power lines and equipment that carries electricity from where it is made to where it is used. It cannot easily store power, so supply and demand must match.",
+    "audio": true
+  },
+  {
+    "k": "excess",
+    "t": "excess",
+    "kind": "word",
+    "forms": [
+      "excess"
+    ],
+    "text": "Excess means more than is needed. Excess power on a sunny day is electricity nobody can use at that moment.",
+    "audio": true
+  },
+  {
+    "k": "power-towers",
+    "t": "power-towers",
+    "kind": "phrase",
+    "forms": [
+      "power-towers"
+    ],
+    "text": "A solar power-tower uses a ring of mirrors to focus sunlight on the top of a tall tower, producing heat that makes electricity. Because heat can be stored, it can generate around the clock.",
+    "audio": true
+  },
+  {
+    "k": "proliferating",
+    "t": "proliferating",
+    "kind": "word",
+    "forms": [
+      "proliferating"
+    ],
+    "text": "To proliferate is to multiply and spread quickly. It describes the rapid growth in the number of data centres.",
+    "audio": true
+  },
+  {
+    "k": "guzzle",
+    "t": "guzzle",
+    "kind": "word",
+    "forms": [
+      "guzzle"
+    ],
+    "text": "To guzzle is to drink or use up greedily and in large amounts. Data centres, which run thousands of computers, guzzle huge quantities of electricity.",
+    "audio": true
+  },
+  {
+    "k": "haunt",
+    "t": "haunt",
+    "kind": "word",
+    "forms": [
+      "haunt"
+    ],
+    "text": "To haunt is to keep returning to trouble the mind, like a ghost. Here local governments cannot forget the 2022 power cuts, and the memory shapes their cautious choices.",
+    "audio": true
+  },
+  {
+    "k": "overzealous",
+    "t": "overzealous",
+    "kind": "word",
+    "forms": [
+      "overzealous"
+    ],
+    "text": "Overzealous means too eager, going further than is sensible. The claim is that some environmental policies were enforced so hard that they caused the blackouts.",
+    "audio": true
+  },
+  {
+    "k": "just-in-case",
+    "t": "just in case",
+    "kind": "phrase",
+    "forms": [
+      "just in case"
+    ],
+    "text": "Just in case means as a safety measure against something that might happen. Local officials build coal plants as a backup, even while coal use is falling.",
+    "audio": true
+  },
+  {
+    "k": "peaked",
+    "t": "peaked",
+    "kind": "word",
+    "forms": [
+      "peaked"
+    ],
+    "text": "To peak is to reach the highest point before turning down. Saying emissions have peaked means they have stopped rising and the next direction is down.",
+    "audio": true
+  },
+  {
+    "k": "underpromise",
+    "t": "underpromise and overdeliver",
+    "kind": "phrase",
+    "forms": [
+      "underpromise and overdeliver"
+    ],
+    "text": "To underpromise and overdeliver is to set a modest goal and then beat it, so you look good. China's climate pledges follow this habit, so its real results usually exceed its targets.",
+    "audio": true
+  },
+  {
+    "k": "last-hurrah",
+    "t": "last hurrah",
+    "kind": "phrase",
+    "forms": [
+      "last hurrah"
+    ],
+    "text": "A last hurrah is a final burst of activity before something ends. The fear is that officials will rush through dirty projects while they still can.",
+    "audio": true
+  },
+  {
+    "k": "climactic",
+    "t": "climactic",
+    "kind": "word",
+    "forms": [
+      "climactic"
+    ],
+    "text": "Climactic means forming the high point of a story or process, not to be confused with climatic, which concerns weather. The writer is playing on the two words.",
+    "audio": true
+  },
+  {
+    "k": "drum-tower",
+    "t": "Drum Tower",
+    "kind": "name",
+    "forms": [
+      "Drum Tower"
+    ],
+    "text": "Drum Tower is the Economist's new weekly newsletter about China. It is named after a historic tower in Beijing.",
+    "audio": true
+  }
+]
