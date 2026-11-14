@@ -55,7 +55,7 @@ export default function StreakStrip({
   if (!state) {
     return (
       <div className="bg-[#0a0a0a] text-white" aria-hidden="true">
-        <div className="mx-auto max-w-[980px] px-[18px] pb-3 pt-2.5">
+        <div className="mx-auto max-w-[980px] px-[18px] pb-2.5 pt-2 min-[681px]:pb-3 min-[681px]:pt-2.5">
           <div className="mb-2 min-h-[15px]" />
           <div className="flex gap-1">
             {shown.map((d) => (
@@ -99,7 +99,7 @@ export default function StreakStrip({
 
   return (
     <div className="bg-[#0a0a0a] text-white">
-      <div className="mx-auto max-w-[980px] px-[18px] pb-3 pt-2.5">
+      <div className="mx-auto max-w-[980px] px-[18px] pb-2.5 pt-2 min-[681px]:pb-3 min-[681px]:pt-2.5">
         {/* The head line may wrap on a phone (the medal tally runs long) —
             it used to be one nowrap line and ran off the screen's edge. */}
         <div className="mb-2 flex min-h-[15px] items-baseline justify-between gap-3 text-[9px] font-bold uppercase leading-[15px] tracking-[.15em]">

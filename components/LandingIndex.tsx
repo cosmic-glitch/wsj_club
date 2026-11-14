@@ -53,12 +53,12 @@ function LevelCard({ r, track, latest }: { r: Reading | undefined; track: Track;
       aria-label={TRACK_LABEL[track]}
       className={`group flex flex-col border-[3px] border-[#0a0a0a] ${current ? "bg-[#ffe600]" : "bg-white"} hover:bg-[#0a0a0a] hover:text-white`}
     >
-      <h3 className="flex items-center bg-[#0a0a0a] px-3 py-1.5 font-mono text-[11px] font-bold uppercase tracking-[.14em] text-[#ffe600]">
+      <h3 className="flex items-center bg-[#0a0a0a] px-3 py-1 font-mono min-[681px]:py-1.5 text-[11px] font-bold uppercase tracking-[.14em] text-[#ffe600]">
         {TRACK_LABEL[track]}
         {r && <RowMedal date={r.date} className="ml-auto text-[13px]" />}
       </h3>
       {r ? (
-        <div className="flex flex-1 flex-col px-3 pb-3 pt-2">
+        <div className="flex flex-1 flex-col px-3 pb-2.5 pt-1.5 min-[681px]:pb-3 min-[681px]:pt-2">
           {!current && (
             <p className="mb-1 text-[10.5px] font-bold uppercase tracking-[.08em] text-stone-500 group-hover:text-stone-400">
               {dateTag(r.date)}
@@ -69,7 +69,7 @@ function LevelCard({ r, track, latest }: { r: Reading | undefined; track: Track;
           </p>
           {/* mt-auto: the steps sit on the card's bottom edge, so the three
               cards' buttons line up however long each title runs. */}
-          <ReadingSteps r={r} track={track} className="mt-auto pt-2.5" />
+          <ReadingSteps r={r} track={track} className="mt-auto pt-2 min-[681px]:pt-2.5" />
         </div>
       ) : (
         <p className="px-3 py-2.5 font-sans text-[14px] text-stone-500">
@@ -182,8 +182,9 @@ export default function LandingIndex({
     );
   };
 
+  // Tighter on phones, where every pixel above the day's cards counts.
   const sectionLabel =
-    "mt-[30px] mb-2.5 flex items-center font-mono text-[12px] font-bold uppercase tracking-[.2em] text-[#0a0a0a]";
+    "mt-4 mb-2 min-[681px]:mt-[30px] min-[681px]:mb-2.5 flex items-center font-mono text-[12px] font-bold uppercase tracking-[.2em] text-[#0a0a0a]";
 
   return (
     // Full-bleed breakout of the site-wide max-w-3xl column (the same
@@ -205,7 +206,7 @@ export default function LandingIndex({
       {/* ---- masthead ---- */}
       <header className="animate-brutal-stamp border-b-[5px] border-[#0a0a0a] motion-reduce:animate-none">
         <div className="mx-auto max-w-[980px] px-[18px]">
-          <h1 className="pt-4 pb-2 font-display text-[clamp(56px,12.5vw,128px)] font-normal uppercase leading-[.95] tracking-[.01em]">
+          <h1 className="pt-2 pb-1 font-display text-[clamp(44px,12.5vw,128px)] min-[681px]:pt-4 min-[681px]:pb-2 font-normal uppercase leading-[.95] tracking-[.01em]">
             READING{" "}
             <span className="text-transparent [-webkit-text-stroke:2px_#0a0a0a]">
               CLUB
@@ -220,9 +221,25 @@ export default function LandingIndex({
       </MedalsProvider>
 
       <div className="mx-auto max-w-[980px] px-[18px]">
-        {/* The deck: what this is, in the two seconds a newcomer gives us. */}
-        <div className="mt-[17px] animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] p-4 shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a] motion-reduce:animate-none">
-          <p className="font-sans text-[14.5px] leading-relaxed text-[#0a0a0a]">
+        {/* The deck: what this is — ONE line, closed by default (owner's
+            rule: on a phone the day's three cards must show on launch, and
+            the open paragraph pushed them below the fold). A native
+            <details>, so the page stays static and needs no JS; closed it
+            drops the yellow offset shadow and reads as a quiet strip. */}
+        <details className="group/deck mt-3 animate-brutal-stamp-delayed border-[3px] border-[#0a0a0a] open:shadow-[6px_6px_0_#ffe600,6px_6px_0_3px_#0a0a0a] motion-reduce:animate-none min-[681px]:mt-[17px]">
+          <summary className="flex cursor-pointer list-none items-center gap-3 px-3 py-2 hover:bg-[#ffe600] [&::-webkit-details-marker]:hidden">
+            <span className="min-w-0 flex-1 font-sans text-[14px] font-bold leading-snug text-[#0a0a0a]">
+              One article a day, three levels
+            </span>
+            <span className="flex-none font-mono text-[10.5px] font-bold uppercase tracking-[.1em] text-[#0a0a0a]">
+              <span className="group-open/deck:hidden">More</span>
+              <span className="hidden group-open/deck:inline">Less</span>
+              <span aria-hidden className="ml-1 inline-block transition-transform group-open/deck:rotate-180">
+                ▾
+              </span>
+            </span>
+          </summary>
+          <p className="border-t-2 border-[#0a0a0a] px-4 pb-4 pt-3 font-sans text-[14.5px] leading-relaxed text-[#0a0a0a]">
             One hand-picked article a day for high schoolers, middle schoolers
             and elementary schoolers. Every day you read earns a medal: bronze
             🥉 for reading the article, silver 🥈 for reading the handout, gold
@@ -235,7 +252,7 @@ export default function LandingIndex({
               How it works →
             </Link>
           </p>
-        </div>
+        </details>
 
         {/* ---- the newest day, every level: the date said once ---- */}
         {latest && (
@@ -244,7 +261,7 @@ export default function LandingIndex({
             <TodayTag date={latest} />
           </h2>
         )}
-        <div className="grid animate-brutal-stamp-delayed grid-cols-1 gap-3 motion-reduce:animate-none min-[820px]:grid-cols-3 min-[820px]:gap-4">
+        <div className="grid animate-brutal-stamp-delayed grid-cols-1 gap-2 motion-reduce:animate-none min-[820px]:grid-cols-3 min-[820px]:gap-4">
           {TRACKS.map((t) => (
             <MedalsProvider key={t} track={t}>
               <LevelCard r={readings[t][0]} track={t} latest={latest} />
