@@ -36,7 +36,7 @@ import {
  *
  * The last answer is cached in localStorage per (user, track), the
  * AuthProvider recipe: restored before the first paint, so the streak
- * ribbon (a tall bar above the readings) and the row medals paint in place
+ * ribbon (a bar under the masthead) and the row medals paint in place
  * instead of pushing the page down when the fetch lands. The fetch then
  * corrects the copy.
  */
