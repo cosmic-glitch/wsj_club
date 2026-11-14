@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-14",
+  "title": "Machu Picchu’s “mafias” are costing Peru real cash",
+  "articleUrl": "https://www.economist.com/the-americas/2026/11/12/machu-picchus-mafias-are-costing-peru-real-cash",
+  "articlePageUrl": "/articles/junior/2026-11-14.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "logjam",
+      "partOfSpeech": "noun",
+      "pronunciation": "LOG-jam",
+      "articleQuote": "The monument’s fame is not the sole cause of this logjam",
+      "meaning": "A logjam is a pile-up that blocks things from moving forward. It comes from real logs floating down a river and getting stuck in a heap. A crowded school hallway at the final bell is a logjam, and so is a line of cars at a broken traffic light. In the article, the ticket website was so jammed that visitors could not get in.",
+      "examples": [
+        "There was a logjam at the cafeteria door when everyone arrived at once.",
+        "The two teams could not agree, which created a logjam in the tournament plans."
+      ]
+    },
+    {
+      "word": "tarnish",
+      "partOfSpeech": "verb",
+      "pronunciation": "TAR-nish",
+      "articleQuote": "They’re tarnishing the image of Machu Picchu.",
+      "meaning": "To tarnish something is to make it lose its shine or good name. Silver turns dull and dark when it tarnishes, and a person's reputation can tarnish too. If you cheat at a game, it can tarnish how your friends see you. In the article, an official says the ticket scams are tarnishing Machu Picchu's image.",
+      "examples": [
+        "One rude comment can tarnish a team's good name.",
+        "The old silver spoon had tarnished and needed polishing."
+      ]
+    },
+    {
+      "word": "exploit",
+      "partOfSpeech": "verb",
+      "pronunciation": "ek-SPLOYT",
+      "articleQuote": "tourism agencies exploited weaknesses in the official ticketing website",
+      "meaning": "To exploit something is to take unfair advantage of it for your own gain. Someone who finds a glitch in a video game and uses it to win every match is exploiting the glitch. In the article, tour agencies used gaps in the ticket website to grab far more tickets than they should have.",
+      "examples": [
+        "The player exploited a bug in the game to get free points.",
+        "Some companies exploit kids' love of snacks with sneaky ads."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Audit",
+      "articleQuote": "according to an audit by the Peruvian comptroller’s office",
+      "meaning": "How did Peru find out that agencies had made more than 200,000 ticket reservations they never bought? Someone checked the records. A careful check of records, money or rules, done to see whether everything was handled honestly and correctly, is called an **audit**.\n\nThe checkers are usually people who do not run the thing being checked. In the article, it is the comptroller's office, a government body whose job is to check how public money and public systems are used. It looked at the ticket website's records from August 2024 to December 2025.\n\nPicture a class that keeps a jar of money for a field trip. If a parent volunteer counts the money and compares it to the list of who paid, that is an audit. If the numbers do not match, someone can ask why.\n\nAn audit does not always say who did something wrong or why. The Peruvian report did not guess at the agencies' motives. It showed what the records said, and others drew conclusions.\n\nSo the takeaway: an audit is an outside check of the records, and it turns a hunch that something is off into facts people can point to."
+    },
+    {
+      "name": "Privatisation",
+      "articleQuote": "the “systematic privatisation of Machu Picchu”",
+      "meaning": "Why did people block trains when the government wanted a company to sell Machu Picchu tickets? Because that plan was **privatisation**: handing a job that the government does over to a private company that runs it to make money.\n\nThe word has a clear structure. \"Private\" means owned or run by a person or company, not by the public. Add \"-isation\" and it means the act of making something that way.\n\nThink of a school cafeteria. Say the school runs it itself. If the school hires an outside food company to take it over, that is privatisation. The company might run it faster, but it also wants to earn a profit, and some families may worry about prices or who is in charge.\n\nThat is exactly the worry in the article. In 2023 Peru said a company might sell tickets better, but protesters objected, and the government took the job back.\n\nSo the takeaway: privatisation moves a public job to a private business, and people argue about it because they disagree on who will serve the public best."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did the audit by Peru's comptroller's office find?",
+      "options": [
+        "Agencies used weak spots in the ticket website to make over 200,000 reservations, most never bought",
+        "The website had been shut down for a year",
+        "Visitors were buying too many tickets at the gate",
+        "The tickets were priced much too low"
+      ],
+      "answerIndex": 0,
+      "explanation": "Between August 2024 and December 2025, agencies made more than 200,000 reservations, and most were for tickets they never ultimately bought."
+    },
+    {
+      "question": "What does it mean that the ticket website had a logjam?",
+      "options": [
+        "It was easy to use",
+        "It was blocked up so people could not get tickets",
+        "It was built from wood",
+        "It was only open at night"
+      ],
+      "answerIndex": 1,
+      "explanation": "A logjam is a pile-up that stops things from moving, like the site often showing the ruins booked for nearly six months."
+    },
+    {
+      "question": "Why did some tourists end up paying about $300 for entry?",
+      "options": [
+        "The official price had gone up five times",
+        "They bought a special guided tour",
+        "Blocked from regular tickets, they paid third parties who got access through corrupt officials",
+        "They paid extra for a train ride"
+      ],
+      "answerIndex": 2,
+      "explanation": "That is more than five times what entry should cost, and the article says tourists who are blocked are more likely to pay for access secured through corrupt officials."
+    },
+    {
+      "question": "What happened in 2023 when Peru's government planned to hire a company to handle ticketing?",
+      "options": [
+        "Everyone cheered and the company took over for good",
+        "The government sold Machu Picchu",
+        "The site was closed forever",
+        "There were angry protests, trains were blocked, and the government took back control"
+      ],
+      "answerIndex": 3,
+      "explanation": "Protesters objected to the privatisation, blocked the trains that carry tourists, and eventually the government took control back."
+    },
+    {
+      "question": "What does \"tarnish\" mean in \"They’re tarnishing the image of Machu Picchu\"?",
+      "options": [
+        "To make its good name worse",
+        "To make it famous",
+        "To build it bigger",
+        "To paint it"
+      ],
+      "answerIndex": 0,
+      "explanation": "To tarnish is to take away shine or good reputation, which is what the ticket scams are doing to Machu Picchu."
+    }
+  ]
+}

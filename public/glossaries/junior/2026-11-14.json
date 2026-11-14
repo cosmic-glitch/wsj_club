@@ -1,0 +1,416 @@
+[
+  {
+    "k": "logjam",
+    "t": "logjam",
+    "kind": "vocab",
+    "pron": "LOG-jam",
+    "forms": [
+      "logjam"
+    ],
+    "text": "A logjam is a pile-up that blocks things from moving, like logs stuck together in a river. Here, the ticket website was so jammed that visitors could not get in.",
+    "audio": true
+  },
+  {
+    "k": "tarnishing",
+    "t": "tarnishing",
+    "kind": "vocab",
+    "pron": "TAR-nish",
+    "forms": [
+      "tarnishing"
+    ],
+    "text": "To tarnish something is to make it lose its shine or good name. Here, an official says the ticket scams are hurting how the world sees Machu Picchu.",
+    "audio": true
+  },
+  {
+    "k": "exploited",
+    "t": "exploited",
+    "kind": "vocab",
+    "pron": "ek-SPLOYT",
+    "forms": [
+      "exploited"
+    ],
+    "text": "To exploit something is to take unfair advantage of it for your own gain. Here, tour agencies used gaps in the ticket website to grab far more tickets than they should have.",
+    "audio": true
+  },
+  {
+    "k": "audit",
+    "t": "audit",
+    "kind": "word",
+    "forms": [
+      "audit"
+    ],
+    "text": "An audit is a careful check of records to see whether things were handled honestly and correctly. Here, Peru's government office checked the ticket website's records.",
+    "audio": true
+  },
+  {
+    "k": "privatisation",
+    "t": "privatisation",
+    "kind": "word",
+    "forms": [
+      "privatisation"
+    ],
+    "text": "Privatisation means handing a job the government does over to a private company. Here, Peru planned this for ticket sales, and people protested.",
+    "audio": true
+  },
+  {
+    "k": "comptroller",
+    "t": "comptroller",
+    "kind": "word",
+    "forms": [
+      "comptroller’s"
+    ],
+    "text": "A comptroller is an official who checks how a government spends money and runs its systems. Here, that office wrote the report on the tickets.",
+    "audio": true
+  },
+  {
+    "k": "mafia",
+    "t": "mafia",
+    "kind": "word",
+    "forms": [
+      "mafia",
+      "mafias"
+    ],
+    "text": "A mafia is a secret group of criminals who work together and use bribes and threats to get what they want. Here, Peruvians use the word for people who sell tickets in shady ways.",
+    "audio": true
+  },
+  {
+    "k": "ruins",
+    "t": "ruins",
+    "kind": "word",
+    "forms": [
+      "ruins"
+    ],
+    "text": "Ruins are the broken-down remains of old buildings. Here, they are the ancient Inca city of Machu Picchu.",
+    "audio": true
+  },
+  {
+    "k": "inca",
+    "t": "Inca",
+    "kind": "name",
+    "forms": [
+      "Inca"
+    ],
+    "text": "The Inca were a powerful people who ruled a huge empire in the Andes mountains of South America about 500 years ago. They built Machu Picchu.",
+    "audio": true
+  },
+  {
+    "k": "taj-mahal",
+    "t": "Taj Mahal",
+    "kind": "name",
+    "forms": [
+      "Taj Mahal"
+    ],
+    "text": "The Taj Mahal is a famous white marble tomb in India, visited by millions of tourists each year.",
+    "audio": true
+  },
+  {
+    "k": "great-wall",
+    "t": "Great Wall of China",
+    "kind": "name",
+    "forms": [
+      "Great Wall of China"
+    ],
+    "text": "The Great Wall of China is a very long wall built across northern China long ago. It is a top spot for tourists.",
+    "audio": true
+  },
+  {
+    "k": "casa-andina",
+    "t": "Casa Andina",
+    "kind": "name",
+    "forms": [
+      "Casa Andina"
+    ],
+    "text": "Casa Andina is a Peruvian hotel chain. Its guests kept cancelling trips because they could not get tickets.",
+    "audio": true
+  },
+  {
+    "k": "secure",
+    "t": "secure",
+    "kind": "word",
+    "forms": [
+      "secure"
+    ],
+    "text": "Here, secure means to get something you were trying hard to obtain, like a ticket that sells out fast.",
+    "audio": true
+  },
+  {
+    "k": "booked",
+    "t": "fully booked",
+    "kind": "phrase",
+    "forms": [
+      "booked"
+    ],
+    "text": "Fully booked means every spot is already taken, so no more reservations are possible.",
+    "audio": true
+  },
+  {
+    "k": "cahoots",
+    "t": "in cahoots",
+    "kind": "phrase",
+    "forms": [
+      "cahoots"
+    ],
+    "text": "To be in cahoots means to secretly work together, usually to do something wrong. Here, outside sellers are said to work with corrupt officials.",
+    "audio": true
+  },
+  {
+    "k": "corrupt",
+    "t": "corrupt",
+    "kind": "word",
+    "forms": [
+      "corrupt"
+    ],
+    "text": "A corrupt official is someone in power who breaks the rules for money, like taking bribes.",
+    "audio": true
+  },
+  {
+    "k": "fork-out",
+    "t": "fork out",
+    "kind": "phrase",
+    "forms": [
+      "fork out"
+    ],
+    "text": "To fork out is a casual way to say pay money, often a lot of it, when you would rather not.",
+    "audio": true
+  },
+  {
+    "k": "speculate",
+    "t": "speculate",
+    "kind": "word",
+    "forms": [
+      "speculate"
+    ],
+    "text": "To speculate is to guess about something without knowing for sure. Here, the report only showed facts and did not guess why agencies did it.",
+    "audio": true
+  },
+  {
+    "k": "motives",
+    "t": "motives",
+    "kind": "word",
+    "forms": [
+      "motives"
+    ],
+    "text": "A motive is the reason someone does something. Here, the report did not say why the agencies did it.",
+    "audio": true
+  },
+  {
+    "k": "vowed",
+    "t": "vowed",
+    "kind": "word",
+    "forms": [
+      "vowed"
+    ],
+    "text": "To vow is to make a serious promise. Here, the government promised to hand ticketing to a company.",
+    "audio": true
+  },
+  {
+    "k": "outsource",
+    "t": "outsource",
+    "kind": "word",
+    "forms": [
+      "outsource"
+    ],
+    "text": "To outsource a job is to pay an outside company to do it instead of doing it yourself.",
+    "audio": true
+  },
+  {
+    "k": "outraged",
+    "t": "outraged",
+    "kind": "word",
+    "forms": [
+      "outraged"
+    ],
+    "text": "Outraged means extremely angry because something seems very unfair. Here, protesters were furious about the privatisation plan.",
+    "audio": true
+  },
+  {
+    "k": "demonstrators",
+    "t": "demonstrators",
+    "kind": "word",
+    "forms": [
+      "Demonstrators"
+    ],
+    "text": "Demonstrators are people who gather in public to show they disagree with something. Here, they blocked the trains.",
+    "audio": true
+  },
+  {
+    "k": "haul",
+    "t": "haul",
+    "kind": "word",
+    "forms": [
+      "haul"
+    ],
+    "text": "To haul is to carry or drag something heavy from one place to another. Here, trains carry tourists to the ruins.",
+    "audio": true
+  },
+  {
+    "k": "bring-to-heel",
+    "t": "bring to heel",
+    "kind": "phrase",
+    "forms": [
+      "bring the wider problem of corruption at Machu Picchu to heel"
+    ],
+    "text": "To bring something to heel means to get it under control, the way a dog comes to your heel when called. Here, it means stopping the corruption.",
+    "audio": true
+  },
+  {
+    "k": "bribe",
+    "t": "bribe",
+    "kind": "word",
+    "forms": [
+      "bribe"
+    ],
+    "text": "A bribe is money or a gift given to someone to get them to do something dishonest. Here, a guard took one to sneak a person into the site.",
+    "audio": true
+  },
+  {
+    "k": "ringleaders",
+    "t": "ringleaders",
+    "kind": "word",
+    "forms": [
+      "ringleaders"
+    ],
+    "text": "A ringleader is the person who leads a group doing something wrong. Here, they are the bosses behind the ticket scams.",
+    "audio": true
+  },
+  {
+    "k": "prosecuted",
+    "t": "prosecuted",
+    "kind": "word",
+    "forms": [
+      "prosecuted"
+    ],
+    "text": "To prosecute someone is to take them to court for a crime. Here, officials want the bosses brought to court.",
+    "audio": true
+  },
+  {
+    "k": "probe",
+    "t": "probe",
+    "kind": "word",
+    "forms": [
+      "probe"
+    ],
+    "text": "A probe is a careful investigation to find out what really happened.",
+    "audio": true
+  },
+  {
+    "k": "bureaucrats",
+    "t": "bureaucrats",
+    "kind": "word",
+    "forms": [
+      "bureaucrats"
+    ],
+    "text": "Bureaucrats are government workers who handle rules and paperwork. Here, they oversee Machu Picchu's ticket sales.",
+    "audio": true
+  },
+  {
+    "k": "rotated",
+    "t": "rotated",
+    "kind": "word",
+    "forms": [
+      "rotated"
+    ],
+    "text": "To rotate workers is to move them to new jobs in turns. Here, it would stop anyone from staying in a spot where they could cheat for years.",
+    "audio": true
+  },
+  {
+    "k": "crown-jewel",
+    "t": "crown jewel",
+    "kind": "phrase",
+    "forms": [
+      "crown jewel"
+    ],
+    "text": "A crown jewel is the best and most valuable thing in a collection. Here, Machu Picchu is the star of Peru's tourism.",
+    "audio": true
+  },
+  {
+    "k": "getaway",
+    "t": "getaway",
+    "kind": "word",
+    "forms": [
+      "getaway"
+    ],
+    "text": "A getaway is a place you go to rest and escape from daily life. Here, Machu Picchu was a retreat for Inca kings and queens.",
+    "audio": true
+  },
+  {
+    "k": "royalty",
+    "t": "royalty",
+    "kind": "word",
+    "forms": [
+      "royalty"
+    ],
+    "text": "Royalty means kings, queens and their families.",
+    "audio": true
+  },
+  {
+    "k": "under-developed",
+    "t": "under-developed",
+    "kind": "word",
+    "forms": [
+      "under-developed"
+    ],
+    "text": "An under-developed region has few roads, jobs or businesses compared with other places and is often poorer.",
+    "audio": true
+  },
+  {
+    "k": "indigenous",
+    "t": "indigenous",
+    "kind": "word",
+    "forms": [
+      "indigenous"
+    ],
+    "text": "Indigenous people are the first people who lived in a place, long before others arrived.",
+    "audio": true
+  },
+  {
+    "k": "pre-pandemic",
+    "t": "pre-pandemic",
+    "kind": "word",
+    "forms": [
+      "pre-pandemic"
+    ],
+    "text": "Pre-pandemic means before the COVID pandemic, when a disease spread around the world and travel stopped. Here, visits are still just below that earlier high.",
+    "audio": true
+  },
+  {
+    "k": "peak",
+    "t": "peak",
+    "kind": "word",
+    "forms": [
+      "peak"
+    ],
+    "text": "A peak is the highest point, like the most visitors ever in one year.",
+    "audio": true
+  },
+  {
+    "k": "grievances",
+    "t": "grievances",
+    "kind": "word",
+    "forms": [
+      "grievances"
+    ],
+    "text": "A grievance is a complaint about something you think is unfair.",
+    "audio": true
+  },
+  {
+    "k": "taken-a-toll",
+    "t": "taken a toll",
+    "kind": "phrase",
+    "forms": [
+      "taken a toll"
+    ],
+    "text": "To take a toll means to cause damage or loss over time. Here, blocked roads and rails have cost the site visitors.",
+    "audio": true
+  },
+  {
+    "k": "shameful",
+    "t": "shameful",
+    "kind": "word",
+    "forms": [
+      "shameful"
+    ],
+    "text": "Shameful means so bad that people should feel embarrassed about it.",
+    "audio": true
+  }
+]
