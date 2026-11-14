@@ -18,10 +18,40 @@ export type VoteCandidate = {
   pitch: string;
   articleUrl: string;
   kind?: "news" | "enrichment"; // ballot section (absent = news); the modal groups by it but the poll stays ONE unified vote
+  review?: CandidateReview; // OWNER ONLY — /api/vote strips it for anyone else
+};
+
+/**
+ * The autopilot's reasoning for one candidate (written by .bot/open-vote.mjs;
+ * absent on hand-opened polls). Shown only on the owner's /vote page — it
+ * replaced the long 6am DM. The ballot is stored in the vote skill's rank
+ * order, so the first candidate is its top pick.
+ */
+export type CandidateReview = {
+  rating?: number; // 1–10
+  why?: string;
+  homepageRank?: number; // Economist homepage position (1 = the lead)
+  words?: number;
+  fkGrade?: number; // kids: measured reading grade
+  ballotNotes?: string; // ballot-wide remarks, stored on the first candidate only (rc_polls has no notes column)
 };
 
 /** The track's newest poll, with its DB row id. */
 export type DbPoll = { id: string; date: string; candidates: VoteCandidate[] };
+
+/** The poll as anyone but the owner may see it: no reviews, no notes. */
+export function publicCandidates(candidates: VoteCandidate[]): VoteCandidate[] {
+  return candidates.map((c) => {
+    const pub = { ...c };
+    delete pub.review;
+    return pub;
+  });
+}
+
+/** The ballot-wide notes (kept on the first candidate's review). */
+export function ballotNotesOf(candidates: VoteCandidate[]): string | null {
+  return candidates[0]?.review?.ballotNotes ?? null;
+}
 
 export type Ballot = { user: string; candidateId: string };
 

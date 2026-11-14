@@ -1,13 +1,13 @@
 ---
 name: auto-vote
-description: AUTONOMOUS daily vote opener for the Reading Club, ALL THREE tracks in one run, executed UNATTENDED from the Hetzner box by cron at 6am Pacific — NOT the interactive picker. Scouts The Economist once via the saved session in .bot/, rates every candidate for the high-school (senior, grades 8–10) and middle-school (junior, grades 5–7) tracks together, splits them into two disjoint ballots (7 senior, 5 junior — no article on both); builds the elementary (kids, about grade 3) ballot of 5 from TIME for Kids; opens all three votes via .bot/open-vote.mjs, and texts the owner one summary over nanoclaw. Never uses WSJ. Do NOT invoke this by hand for the normal interactive flow — use wsj-open-vote for that.
+description: AUTONOMOUS daily vote opener for the Reading Club, ALL THREE tracks in one run, executed UNATTENDED from the Hetzner box by cron at 6am Pacific — NOT the interactive picker. Scouts The Economist once via the saved session in .bot/, rates every candidate for the high-school (senior, grades 8–10) and middle-school (junior, grades 5–7) tracks together, splits them into two disjoint ballots (7 senior, 5 junior — no article on both); builds the elementary (kids, about grade 3) ballot of 5 from TIME for Kids; opens all three votes via .bot/open-vote.mjs (its rankings and reasons shown on the owner-only /vote page), and texts the owner a one-line votes-are-open link over nanoclaw. Never uses WSJ. Do NOT invoke this by hand for the normal interactive flow — use wsj-open-vote for that.
 ---
 
 # Reading Club — autonomous daily vote, all three tracks (Hetzner cron)
 
 Track ids vs names: `senior` = High School (`/`), `junior` = Middle School (`/middle-school`), `kids` = Elementary (`/elementary`). Scripts, flags and files use the ids; anything the owner or the kids read uses the names.
 
-You are running unattended on the Hetzner box: `run-auto-vote.sh` fired at 6am Pacific. In one pass, pick the day's 7 senior candidates and 5 junior candidates from the same scouted Economist field, 5 kids candidates from TIME for Kids, open the votes, text the owner once. Only the owner votes, from your DM and the /vote page, without re-reading every piece, so you are the validation layer. A weak candidate just loses the vote; an inappropriate one (or, for junior, a too-hard one) is the failure to avoid.
+You are running unattended on the Hetzner box: `run-auto-vote.sh` fired at 6am Pacific. In one pass, pick the day's 7 senior candidates and 5 junior candidates from the same scouted Economist field, 5 kids candidates from TIME for Kids, open the votes, text the owner once. Only the owner votes, on the /vote page (which shows your ranking and reasons), without re-reading every piece, so you are the validation layer. A weak candidate just loses the vote; an inappropriate one (or, for junior, a too-hard one) is the failure to avoid.
 
 Senior and junior: Economist only (WSJ blocks this box), news only (enrichment is interactive). Kids: TIME for Kids only (Step 2b), browsing through the `.bot/` scripts (no Playwright MCP here). Run everything from `~/wsj_club`; invoke `.bot/` scripts with `node --env-file=.bot/.env …` so an expired session can self-refresh.
 
@@ -64,55 +64,24 @@ Skip if `kids` is not in your track set. The kids field never overlaps the Econo
 
 For each track you are opening:
 
-1. Write a pitch per candidate: 1–2 sentences for the readers (senior: grades 8–10; junior: short, plain sentences for grades 5–7; kids: very short, simple sentences a 7-year-old can read alone, no em dashes), spoiler-free, equally enthusiastic across the ballot, no visible ranking.
-2. Write the ballot as a JSON array of `{title, source, pitch, articleUrl, kind}` — senior gets `kind: "news"`, junior and kids omit `kind`; kids use `source: "TIME for Kids"` — to `/tmp/ballot.json` (senior) / `/tmp/junior-ballot.json` / `/tmp/kids-ballot.json`.
-3. Open it (the box-local opener over `SUPABASE_DB_URL`; `--dry-run` validates without writing). It refuses a published day or a duplicate candidate on either track and upserts idempotently on `(track,date)`:
+1. Write a pitch per candidate: 1–2 sentences for the readers (senior: grades 8–10; junior: short, plain sentences for grades 5–7; kids: very short, simple sentences a 7-year-old can read alone, no em dashes), spoiler-free, equally enthusiastic across the ballot.
+2. Write the ballot as a JSON array **in that track's rank order** (the field file's order; the first entry is your top pick) of `{title, source, pitch, articleUrl, kind, review}` — senior gets `kind: "news"`, junior and kids omit `kind`; kids use `source: "TIME for Kids"` — to `/tmp/ballot.json` (senior) / `/tmp/junior-ballot.json` / `/tmp/kids-ballot.json`. `review` is your reasoning for the owner, shown only on the owner's `/vote` page (the API strips it for everyone else), never to readers: `{ "rating": R, "why": "<why it fits; for the top pick, the 1–2 sentence case: concepts, hook, why it leads the field (junior/kids: why an 11- / 7-year-old can follow it, and the words and concept)>", "homepageRank": <n or omit>, "words": <count>, "fkGrade": <kids only> }`.
+3. Write that track's ballot-wide notes, plain text, to `/tmp/notes.txt` / `/tmp/junior-notes.txt` / `/tmp/kids-notes.txt`: `Split:` any piece that fit both Economist tracks and where it went, and `Dropped:` notable cuts and why, including any homepage lead left off. Skip the file (and the flag) when there is nothing to say.
+4. Open it (the box-local opener over `SUPABASE_DB_URL`; `--dry-run` validates without writing). It refuses a published day or a duplicate candidate on either track and upserts idempotently on `(track,date)`:
    ```bash
-   node --env-file=.env.local .bot/open-vote.mjs "${TODAY}" /tmp/ballot.json
-   node --env-file=.env.local .bot/open-vote.mjs "${TODAY}" /tmp/junior-ballot.json --track=junior
-   node --env-file=.env.local .bot/open-vote.mjs "${TODAY}" /tmp/kids-ballot.json --track=kids
+   node --env-file=.env.local .bot/open-vote.mjs "${TODAY}" /tmp/ballot.json --notes=/tmp/notes.txt
+   node --env-file=.env.local .bot/open-vote.mjs "${TODAY}" /tmp/junior-ballot.json --track=junior --notes=/tmp/junior-notes.txt
+   node --env-file=.env.local .bot/open-vote.mjs "${TODAY}" /tmp/kids-ballot.json --track=kids --notes=/tmp/kids-notes.txt
    ```
    **Never omit `--track=` on the junior or kids ballot**: without it the ballot overwrites the senior poll.
-4. Verify: that track's `/api/vote` (Step 0's URLs) shows `"active": true` with your candidates. If not, log it and do not mention that track in the DM; if no track verified, stop without notifying.
+5. Verify: that track's `/api/vote` (Step 0's URLs) shows `"active": true` with your candidates. If not, log it; if no track verified, stop without notifying.
 
 ## Step 4 — Notify the owner, once
 
-The DM is the owner's only window into your judgment, so it carries your rankings and reasons — never the kids' pitches — for every track in one message; leave out a track you did not open. Every candidate line ends with its link. Write it to a file and send with `--file`, with the real date filled in:
+Keep it to one line: the votes are open, and the link (owner's rule). The rankings, ratings and reasons live on the `/vote` page (Step 3's `review` and notes), never in the DM. With the real date filled in:
 
 ```bash
-cat > /tmp/vote-notify.txt <<'MSG'
-🗳️ Reading Club votes are open — <TODAY>
-Vote: https://dailyreadingclub.com/vote
-Close 9:00am PT once every track has a vote (noon at the latest) — the winners auto-publish then
-
-⭐ HIGH SCHOOL TOP PICK [Economist] <title> (R/10, homepage #<n>)
-<1–2 sentence case: concepts, hook, why it leads the field>
-<url>
-
-HIGH SCHOOL BALLOT
-1. [Economist] <title> — R/10 — <why it fits> — <url>
-2. …(through 7)
-
-⭐ MIDDLE SCHOOL TOP PICK [Economist] <title> (R/10, homepage #<n>)
-<1–2 sentence case: the story, the words and concepts, why an 11-year-old can follow it>
-<url>
-
-MIDDLE SCHOOL BALLOT
-1. [Economist] <title> — R/10 — <why it fits> — <url>
-2. …(through 5)
-
-⭐ ELEMENTARY TOP PICK [TIME for Kids] <title> (R/10, <words> words, grade <fkGrade>)
-<1–2 sentence case: the story, the 3 words and the concept, why a 7-year-old can follow it>
-<url>
-
-ELEMENTARY BALLOT
-1. [TIME for Kids] <title> — R/10 — <why it fits> — <url>
-2. …(through 5)
-
-Split: <any piece that fit both tracks and where it went, in a line>
-Dropped: <notable cuts + why, including any homepage lead left off>
-MSG
-node --env-file=.bot/.env .bot/notify.mjs --file /tmp/vote-notify.txt
+node --env-file=.bot/.env .bot/notify.mjs "🗳️ Reading Club votes are open for <TODAY>: https://dailyreadingclub.com/vote"
 ```
 
 Then stop. Do not author the readings; the publish run tallies and publishes each winner, which closes that track's vote. If the owner publishes a track by hand first, that run finds the day published and does nothing.

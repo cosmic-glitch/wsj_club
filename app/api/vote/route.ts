@@ -1,7 +1,7 @@
 import { currentUser, isOwner } from "@/lib/auth";
 import { dbUpsert } from "@/lib/db";
 import { parseTrack } from "@/lib/track";
-import { activePoll, readBallots, tallyOf, totalOf } from "@/lib/polls";
+import { activePoll, ballotNotesOf, publicCandidates, readBallots, tallyOf, totalOf } from "@/lib/polls";
 
 /**
  * The daily article vote — OWNER ONLY (owner's rule: nobody else voted, so
@@ -10,8 +10,9 @@ import { activePoll, readBallots, tallyOf, totalOf } from "@/lib/polls";
  *
  *   GET  — the track's live poll: `active`, `date`, `candidates` for anyone
  *          (the autopilot's outcome check and the vote skills read it to
- *          confirm a poll opened; the site shows it to nobody). The owner
- *          also gets their own ballot and the tally.
+ *          confirm a poll opened; the site shows it to nobody), with each
+ *          candidate's `review` stripped. The owner also gets the reviews,
+ *          the ballot notes, their own ballot and the tally.
  *   POST — cast or change the owner's vote (one ballot per poll, overwritten
  *          in place). Anyone else gets 403.
  *
@@ -32,7 +33,7 @@ export async function GET(request: Request) {
 
     const user = await currentUser();
     if (!isOwner(user)) {
-      return Response.json({ active: true, date: poll.date, candidates: poll.candidates });
+      return Response.json({ active: true, date: poll.date, candidates: publicCandidates(poll.candidates) });
     }
     const ballots = await readBallots(poll.id);
     const tally = tallyOf(poll, ballots);
@@ -40,6 +41,7 @@ export async function GET(request: Request) {
       active: true,
       date: poll.date,
       candidates: poll.candidates,
+      notes: ballotNotesOf(poll.candidates),
       user,
       yourVote: ballots.find((b) => b.user === user)?.candidateId ?? null,
       tally,

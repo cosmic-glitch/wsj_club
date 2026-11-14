@@ -1,8 +1,15 @@
 // Open (or re-open) the day's senior vote from the Hetzner box, writing to
 // Postgres directly via SUPABASE_DB_URL — the box's minimal ops env has no
 // PostgREST keys, so the canonical scripts/open-vote.mjs can't run here. This
-// mirrors that script's validation, slugify, and upsert semantics exactly.
-//   node --env-file=.env.local .bot/open-vote.mjs <YYYY-MM-DD> <candidates.json> [--dry-run]
+// mirrors that script's validation, slugify, and upsert semantics exactly, and
+// adds the autopilot's owner-only reasoning, shown on /vote (never in a DM):
+//   - an optional `review` per candidate: {rating (1–10), why, homepageRank?,
+//     words?, fkGrade?}. The ballot file is in rank order; the order is kept.
+//   - --notes=<file>: ballot-wide remarks (top-pick case, the split between
+//     tracks, notable cuts), stored as the first candidate's review.ballotNotes
+//     (rc_polls has no notes column; lib/polls.ts lifts it back out).
+// /api/vote strips every `review` for anyone but the owner.
+//   node --env-file=.env.local .bot/open-vote.mjs <YYYY-MM-DD> <candidates.json> [--track=junior|kids] [--notes=<file>] [--dry-run]
 import fs from "node:fs";
 import pg from "pg";
 import { loadPublished, isPublished } from "./published.mjs";
@@ -10,6 +17,30 @@ import { loadPublished, isPublished } from "./published.mjs";
 const argv = process.argv.slice(2);
 const [date, file] = argv.filter((a) => !a.startsWith("--"));
 const dryRun = argv.includes("--dry-run");
+const notesFlag = argv.find((a) => a.startsWith("--notes="));
+const notes = notesFlag ? fs.readFileSync(notesFlag.slice("--notes=".length), "utf8").trim() : "";
+
+// The owner-only review: keep known fields only, typed, trimmed.
+function readReview(r, i) {
+  if (r === undefined || r === null) return undefined;
+  if (typeof r !== "object" || Array.isArray(r)) {
+    console.error(`Candidate ${i + 1} has a malformed "review" (expected an object).`);
+    process.exit(1);
+  }
+  const out = {};
+  if (r.rating !== undefined) {
+    if (typeof r.rating !== "number" || r.rating < 0 || r.rating > 10) {
+      console.error(`Candidate ${i + 1} has an invalid review.rating "${r.rating}".`);
+      process.exit(1);
+    }
+    out.rating = r.rating;
+  }
+  if (typeof r.why === "string" && r.why.trim()) out.why = r.why.trim();
+  for (const k of ["homepageRank", "words", "fkGrade"]) {
+    if (typeof r[k] === "number" && Number.isFinite(r[k])) out[k] = r[k];
+  }
+  return Object.keys(out).length ? out : undefined;
+}
 const trackFlag = argv.find((a) => a.startsWith("--track="));
 const track = trackFlag ? trackFlag.slice("--track=".length) : "senior";
 
@@ -62,6 +93,7 @@ function readCandidates() {
       console.error(`Candidate ${i + 1} has an invalid kind "${c.kind}".`);
       process.exit(1);
     }
+    const review = readReview(c.review, i);
     return {
       id: slugify(c.title) || `candidate-${i + 1}`,
       title: c.title.trim(),
@@ -69,11 +101,13 @@ function readCandidates() {
       pitch: c.pitch.trim(),
       articleUrl: c.articleUrl.trim(),
       ...(c.kind ? { kind: c.kind } : {}),
+      ...(review ? { review } : {}),
     };
   });
 }
 
 const candidates = readCandidates();
+if (notes) candidates[0].review = { ...(candidates[0].review ?? {}), ballotNotes: notes };
 if (new Set(candidates.map((c) => c.id)).size !== candidates.length) {
   console.error("Two candidates slugified to the same id — give them more distinct titles.");
   process.exit(1);
@@ -109,7 +143,8 @@ try {
 
   if (dryRun) {
     console.log(`[dry-run] would upsert ${track} poll for ${date} with ${candidates.length} candidates:`);
-    for (const c of candidates) console.log(`  [${c.source}${c.kind === "enrichment" ? " · enrichment" : ""}] ${c.title}  (id: ${c.id})`);
+    for (const c of candidates) console.log(`  [${c.source}${c.kind === "enrichment" ? " · enrichment" : ""}] ${c.title}  (id: ${c.id})${c.review?.rating !== undefined ? `  ${c.review.rating}/10` : ""}`);
+    if (notes) console.log(`[dry-run] ballot notes: ${notes.length} chars`);
     console.log("[dry-run] no write performed.");
   } else {
     // Upsert on (track,date) keeps the row id — and its ballots — across a re-open.

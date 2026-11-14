@@ -7,7 +7,9 @@ import { TRACKS, TRACK_LABEL, type Track } from "@/lib/track";
 /**
  * The owner's daily vote (/vote) — every level's live ballot on one page.
  * Owner's rule: only the owner votes, and the vote is shown to nobody else
- * (the home page carries no vote). The 6am autopilot DM links here. A tap on
+ * (the home page carries no vote). The 6am autopilot DM links here, and this
+ * page carries what that DM used to: the autopilot's ranking, ratings and
+ * reasons (each candidate's `review`, owner-only) and its ballot notes. A tap on
  * a candidate casts (or changes) the vote at once; publishing a level's
  * reading closes its poll, and the publish run tallies what's here.
  */
@@ -19,14 +21,34 @@ type Candidate = {
   pitch: string;
   articleUrl: string;
   kind?: "news" | "enrichment";
+  review?: {
+    rating?: number;
+    why?: string;
+    homepageRank?: number;
+    words?: number;
+    fkGrade?: number;
+  };
 };
 
 type Poll = {
   active: boolean;
   date?: string;
   candidates?: Candidate[];
+  notes?: string | null;
   yourVote?: string | null;
 };
+
+/** The autopilot's facts about a pick, as one label line: "8/10 · homepage #3 · 640 words". */
+function reviewMeta(r: NonNullable<Candidate["review"]>): string {
+  return [
+    r.rating !== undefined && `${r.rating}/10`,
+    r.homepageRank !== undefined && `homepage #${r.homepageRank}`,
+    r.words !== undefined && `${r.words} words`,
+    r.fkGrade !== undefined && `grade ${r.fkGrade}`,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+}
 
 function dateTag(date: string): string {
   const [y, m, d] = date.split("-").map(Number);
@@ -104,6 +126,8 @@ function Ballot({ track }: { track: Track }) {
       <div role="radiogroup" aria-label={`${TRACK_LABEL[track]} candidates`}>
         {poll.candidates.map((c, i) => {
           const mine = poll.yourVote === c.id;
+          const meta = c.review ? reviewMeta(c.review) : "";
+          const top = i === 0 && c.review?.rating !== undefined;
           return (
             <div
               key={c.id}
@@ -133,7 +157,17 @@ function Ballot({ track }: { track: Track }) {
                   {saving === c.id ? "…" : mine ? "✓" : ""}
                 </span>
               </p>
+              {(top || meta) && (
+                <p className="mt-1 pl-7 font-mono text-[10.5px] font-bold uppercase tracking-[.08em] text-stone-600">
+                  {top && <span className="mr-2 bg-[#0a0a0a] px-[5px] py-[1px] text-[#ffe600]">Top pick</span>}
+                  {meta}
+                </p>
+              )}
+              {c.review?.why && (
+                <p className="mt-1 pl-7 font-sans text-[13px] leading-snug text-[#0a0a0a]">{c.review.why}</p>
+              )}
               <p className="mt-1 pl-7 font-sans text-[13px] leading-snug text-stone-700">
+                {c.review?.why && <span className="text-stone-500">Pitch: </span>}
                 {c.pitch}{" "}
                 <a
                   href={c.articleUrl}
@@ -149,6 +183,12 @@ function Ballot({ track }: { track: Track }) {
           );
         })}
       </div>
+      {poll.notes && (
+        <div className="border-t-2 border-[#0a0a0a] bg-stone-50 px-3 py-2.5">
+          <p className="font-mono text-[10.5px] font-bold uppercase tracking-[.08em] text-stone-600">Notes</p>
+          <p className="mt-1 whitespace-pre-line font-sans text-[13px] leading-snug text-[#0a0a0a]">{poll.notes}</p>
+        </div>
+      )}
       {error && <p className="px-3 py-2 font-sans text-[13px] font-bold text-red-700">{error}</p>}
     </section>
   );

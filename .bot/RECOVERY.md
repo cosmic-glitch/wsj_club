@@ -39,7 +39,7 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
      ```
      ECON_EMAIL='...'                          # Economist login (owner has the password)
      ECON_PASS='...'
-     NANOCLAW_CHATJID='<number>@s.whatsapp.net' # owner's WhatsApp DM: the 6am ranked fields, dry-run + warning notes
+     NANOCLAW_CHATJID='<number>@s.whatsapp.net' # owner's WhatsApp DM: the 6am votes-open link, dry-run + warning notes
      NANOCLAW_GROUP_JID='<id>@g.us'             # the club's WhatsApp group: each track's one "Today's article: …" / "Junior track: …" line
      ```
      To find a group's JID (the bot's number must be a member): force nanoclaw to
