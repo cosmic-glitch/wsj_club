@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-15",
+  "title": "At 50, “Rocky” isn’t as good as you remember. It’s better",
+  "articleUrl": "https://www.economist.com/culture/2026/11/09/at-50-rocky-isnt-as-good-as-you-remember-its-better",
+  "articlePageUrl": "/articles/2026-11-15.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "chimerical",
+      "partOfSpeech": "adjective",
+      "pronunciation": "kye-MEER-ih-kul",
+      "articleQuote": "It is a great American movie because it honours dreams like Rocky’s yet sees that they can be chimerical.",
+      "meaning": "Chimerical describes something imagined, wished for, or hoped for that is not realistic and probably will never come true. It comes from the Chimera, a fire-breathing monster of Greek myth made of parts of a lion, a goat, and a snake, which never existed. Here the Economist says the film respects big dreams but also knows some of them may be impossible fantasies.",
+      "examples": [
+        "Her chimerical plan to become a famous singer by next month ignored how hard music is.",
+        "Investors chased chimerical profits that vanished when the company failed."
+      ]
+    },
+    {
+      "word": "quixotic",
+      "partOfSpeech": "adjective",
+      "pronunciation": "kwik-SOT-ik",
+      "articleQuote": "Still, in a quixotic negotiation that is the entertaining heart of “I Play Rocky”, he turned down astronomical offers for it, insisting that he—rather than, say, Burt Reynolds—must play the lead.",
+      "meaning": "Quixotic means pursuing noble or idealistic goals in a way that is impractical and ignores how the world really works. It comes from Don Quixote, the hero of a Spanish novel who charged at windmills thinking they were giants. Here it describes Stallone, a broke writer who refused huge sums of money because he insisted on starring in his own script.",
+      "examples": [
+        "It was a quixotic quest to clean the whole beach with one small bucket.",
+        "His quixotic campaign for class president had no posters, no friends helping, and big promises."
+      ]
+    },
+    {
+      "word": "avowedly",
+      "partOfSpeech": "adverb",
+      "pronunciation": "uh-VOW-id-lee",
+      "articleQuote": "When Mr Stallone wrote the screenplay for “Rocky”, avowedly in three days, his wife was pregnant and he was broke.",
+      "meaning": "Avowedly means openly and by the person's own admission, as something they have declared themselves. It comes from the verb avow, to state or confess something openly. It often carries a small hint that we are taking their word for it. Here the three days of writing is the story Stallone himself tells, part of the legend that has grown up around the film.",
+      "examples": [
+        "The senator was avowedly against the new tax and said so in every speech.",
+        "She was avowedly a shy person, and she told the class so before her talk."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Cultural memory",
+      "articleQuote": "Cultural memory is unreliable.",
+      "meaning": "Cultural memory is the shared version of the past that a whole society carries around: the stories, images, and \"facts\" everyone seems to know. It is not the same as the record of what really happened. Over time, people keep the most striking moments and drop the rest, and the story gets simpler and more dramatic with each retelling.\n\nThe article gives a clean example. Many people picture \"Rocky\" as a movie full of boxing and a triumphant win. In fact the hero fights only twice, both fights are ugly, and his real dream is not to be world champion but to prove he is not \"just another bum from the neighbourhood\". The sequels, in which Rocky beats Mr T and the Soviets, and Stallone's later action-hero career, painted over the original, so the memory shifted to match them. The film's own *making* became a legend too: the three-day screenplay, the crowd of extras, the Oscar.\n\nThe takeaway: when everyone \"knows\" what a famous story says, it is worth going back to the source. Often the original is quieter, stranger, and better than the legend."
+    },
+    {
+      "name": "The American Dream",
+      "articleQuote": "“Do you believe that America is the land of opportunity?” the bigshot asks the bruised man in fingerless gloves. Rocky hesitates, just for a second, and says, “Yeah.”",
+      "meaning": "The American Dream is the idea that in the United States anyone, however poor, can rise through hard work and determination. The phrase was popularised in the 1930s, and it is one of the country's most powerful stories about itself. It promises that your starting point does not decide where you end up.\n\nThe article argues that \"Rocky\" is a film about the dream *and* its limits. Rocky is poor, working as a loan shark's enforcer in rough Philadelphia, and Stallone himself lived this life: broke, taking odd jobs, living in a cheap rented room. Rocky does get his one shot, handed to him by luck in the form of the champion Creed. But the film also shows Paulie, Adrian's brother, who chases several dreams and never gets a break. Rocky's hesitation before he says \"Yeah\" is the point: the dream is real for some people, and out of reach for others.\n\nThe takeaway: a good story about the American Dream asks both whether it is worth chasing and who actually gets the chance."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what is Rocky’s real dream in the film?",
+      "options": [
+        "To become world heavyweight champion",
+        "To prove to himself he isn’t “just another bum from the neighbourhood”",
+        "To become an actor in Hollywood",
+        "To get rich enough to leave Philadelphia"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article stresses that Rocky’s dream is not to be world champion but to prove his own worth, and to win the love of Adrian."
+    },
+    {
+      "question": "How many times does Rocky actually fight in the first film?",
+      "options": [
+        "Only twice, briefly at the opening and again at the end",
+        "Five times, once in every act",
+        "Once, in the final bout",
+        "Ten times across the story"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says he fights only twice, at the opening and in the finale, and both bouts are ugly, which is why the film is not mainly about boxing."
+    },
+    {
+      "question": "Why does the article say people remember “Rocky” as more violent than it is?",
+      "options": [
+        "The original cut included more fight scenes",
+        "Increasingly silly sequels and Stallone’s action-hero career skewed perceptions",
+        "Critics at the time called it a boxing film",
+        "The Oscar ceremony showed only the fights"
+      ],
+      "answerIndex": 1,
+      "explanation": "Sequels in which Rocky pummels Mr T and the Soviets, and Stallone’s later action roles, made the franchise seem much more wallopy than the original."
+    },
+    {
+      "question": "What does the word “quixotic” suggest about Stallone’s negotiation over the screenplay?",
+      "options": [
+        "It was sneaky and dishonest",
+        "It was idealistic but impractical, turning down huge offers to star himself",
+        "It was quick and easy",
+        "It was led by his lawyers"
+      ],
+      "answerIndex": 1,
+      "explanation": "Quixotic means idealistic in a way that ignores practicality; Stallone was broke yet refused astronomical offers unless he could play the lead."
+    },
+    {
+      "question": "What role does Paulie play in the article’s argument?",
+      "options": [
+        "He is the champion Rocky fights at the end",
+        "He is the film’s shadow story: a man with dreams who never gets a shot",
+        "He is the promoter who offers Rocky the fight",
+        "He is the director of the film"
+      ],
+      "answerIndex": 1,
+      "explanation": "Paulie, Adrian’s brother, has several dreams but never gets a break, showing that the film knows not everyone gets the chance Rocky does."
+    }
+  ]
+}
