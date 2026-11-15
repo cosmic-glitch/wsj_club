@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-15",
+  "title": "NASA wants four people to pretend to live on Mars",
+  "articleUrl": "https://www.timeforkids.com/g34/practice-mission-g3/",
+  "articlePageUrl": "/articles/kids/2026-11-15.html",
+  "voiceQuiz": true,
+  "source": "TIME for Kids",
+  "vocab": [
+    {
+      "word": "simulate",
+      "partOfSpeech": "verb",
+      "pronunciation": "SIM-yuh-layt",
+      "articleQuote": "this mission will simulate",
+      "meaning": "To simulate something is to copy it so it feels real, but it is only practice. You can do it to learn how something works. In the article, NASA will simulate a trip to Mars here on Earth.",
+      "examples": [
+        "We simulate a fire drill at school so we know how to get out safely.",
+        "My brother used a toy kitchen to simulate cooking dinner."
+      ]
+    },
+    {
+      "word": "participant",
+      "partOfSpeech": "noun",
+      "pronunciation": "par-TIS-uh-punt",
+      "articleQuote": "NASA is seeking four participants.",
+      "meaning": "A participant is a person who takes part in something. They join in and do the activity. In the article, the participants are the four people who will live in the practice Mars home.",
+      "examples": [
+        "Every participant in the race got a ribbon.",
+        "I was a participant in the school play."
+      ]
+    },
+    {
+      "word": "habitat",
+      "partOfSpeech": "noun",
+      "pronunciation": "HAB-ih-tat",
+      "articleQuote": "The other is modeled after a Mars habitat.",
+      "meaning": "A habitat is a place where someone or something lives. It gives them what they need, like air, food, and shelter. In the article, a Mars habitat is a building where people could live on Mars.",
+      "examples": [
+        "A pond is a habitat for frogs and ducks.",
+        "The zoo built a new habitat with trees and a pool for the otters."
+      ]
+    }
+  ],
+  "concepts": [],
+  "quiz": [
+    {
+      "question": "What is NASA looking for?",
+      "options": [
+        "Four people to join a pretend trip to Mars",
+        "A new rocket",
+        "Four dogs to go to space",
+        "A teacher for astronauts"
+      ],
+      "answerIndex": 0,
+      "explanation": "NASA wants four participants for a yearlong practice mission."
+    },
+    {
+      "question": "How long will the practice mission last?",
+      "options": [
+        "One day",
+        "One week",
+        "One year",
+        "Ten years"
+      ],
+      "answerIndex": 2,
+      "explanation": "The four people will live in the practice homes for a year."
+    },
+    {
+      "question": "Where will the people really be during the mission?",
+      "options": [
+        "On Mars",
+        "On the moon",
+        "On a ship in the ocean",
+        "At the Johnson Space Center in Houston, Texas"
+      ],
+      "answerIndex": 3,
+      "explanation": "They will not go to space. They will live in special buildings in Texas."
+    },
+    {
+      "question": "What does \"simulate\" mean?",
+      "options": [
+        "To fly very fast",
+        "To copy something so it feels real, as practice",
+        "To build a house",
+        "To win a race"
+      ],
+      "answerIndex": 1,
+      "explanation": "To simulate is to copy something as practice. NASA will simulate a Mars trip on Earth."
+    },
+    {
+      "question": "Why is the practice mission a good idea?",
+      "options": [
+        "It is a fun game",
+        "Astronauts need more food",
+        "It helps NASA learn what astronauts might face, in a safe way",
+        "It makes the moon bigger"
+      ],
+      "answerIndex": 2,
+      "explanation": "No one has been to Mars, so the practice mission is a safe test run."
+    }
+  ]
+}

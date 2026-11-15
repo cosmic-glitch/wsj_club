@@ -1,0 +1,277 @@
+[
+  {
+    "k": "simulate",
+    "t": "simulate",
+    "kind": "vocab",
+    "pron": "SIM-yuh-layt",
+    "forms": [
+      "simulate"
+    ],
+    "text": "To simulate something is to copy it as practice. NASA will simulate a trip to Mars here on Earth.",
+    "audio": true
+  },
+  {
+    "k": "participant",
+    "t": "participants",
+    "kind": "vocab",
+    "pron": "par-TIS-uh-punt",
+    "forms": [
+      "participants"
+    ],
+    "text": "A participant is a person who takes part in something. These four people will join the practice mission.",
+    "audio": true
+  },
+  {
+    "k": "habitat",
+    "t": "habitat",
+    "kind": "vocab",
+    "pron": "HAB-ih-tat",
+    "forms": [
+      "habitat"
+    ],
+    "text": "A habitat is a place where someone lives. A Mars habitat is a building where people could live on Mars.",
+    "audio": true
+  },
+  {
+    "k": "nasa",
+    "t": "NASA",
+    "kind": "name",
+    "forms": [
+      "NASA",
+      "NASA’s"
+    ],
+    "text": "NASA is the group in the United States that sends rockets and astronauts into space.",
+    "audio": true
+  },
+  {
+    "k": "mars",
+    "t": "Mars",
+    "kind": "name",
+    "forms": [
+      "Mars"
+    ],
+    "text": "Mars is a red planet. It is far away from Earth.",
+    "audio": true
+  },
+  {
+    "k": "mission",
+    "t": "mission",
+    "kind": "word",
+    "forms": [
+      "mission",
+      "missions"
+    ],
+    "text": "A mission is a special job or trip with a goal.",
+    "audio": true
+  },
+  {
+    "k": "simulated",
+    "t": "simulated",
+    "kind": "word",
+    "forms": [
+      "simulated"
+    ],
+    "text": "Simulated means copied as practice. It is not the real thing.",
+    "audio": true
+  },
+  {
+    "k": "seeking",
+    "t": "seeking",
+    "kind": "word",
+    "forms": [
+      "seeking"
+    ],
+    "text": "Seeking means looking for something.",
+    "audio": true
+  },
+  {
+    "k": "moon-and-mars-exploration-analog",
+    "t": "Moon and Mars Exploration Analog",
+    "kind": "name",
+    "forms": [
+      "Moon and Mars Exploration Analog"
+    ],
+    "text": "This is the name of the practice mission. An analog is a copy of something real, used for practice.",
+    "audio": true
+  },
+  {
+    "k": "press-release",
+    "t": "press release",
+    "kind": "phrase",
+    "forms": [
+      "press release"
+    ],
+    "text": "A press release is a short note that tells news writers about something new.",
+    "audio": true
+  },
+  {
+    "k": "astronauts",
+    "t": "astronauts",
+    "kind": "word",
+    "forms": [
+      "astronauts"
+    ],
+    "text": "Astronauts are people who travel into space.",
+    "audio": true
+  },
+  {
+    "k": "deep-space",
+    "t": "deep-space",
+    "kind": "phrase",
+    "forms": [
+      "deep-space"
+    ],
+    "text": "Deep space means very far away from Earth, past the moon.",
+    "audio": true
+  },
+  {
+    "k": "johnson-space-center",
+    "t": "Johnson Space Center",
+    "kind": "name",
+    "forms": [
+      "Johnson Space Center"
+    ],
+    "text": "This is a NASA place in Texas. Astronauts train and get help from people there.",
+    "audio": true
+  },
+  {
+    "k": "houston",
+    "t": "Houston",
+    "kind": "name",
+    "forms": [
+      "Houston"
+    ],
+    "text": "Houston is a big city in the state of Texas.",
+    "audio": true
+  },
+  {
+    "k": "facilities",
+    "t": "facilities",
+    "kind": "word",
+    "forms": [
+      "facilities"
+    ],
+    "text": "Facilities are buildings made for a special use.",
+    "audio": true
+  },
+  {
+    "k": "interior",
+    "t": "interior",
+    "kind": "word",
+    "forms": [
+      "interior"
+    ],
+    "text": "The interior is the inside of something.",
+    "audio": true
+  },
+  {
+    "k": "spacecraft",
+    "t": "spacecraft",
+    "kind": "word",
+    "forms": [
+      "spacecraft"
+    ],
+    "text": "A spacecraft is a vehicle that travels in space.",
+    "audio": true
+  },
+  {
+    "k": "virtual-spacewalks",
+    "t": "virtual spacewalks",
+    "kind": "phrase",
+    "forms": [
+      "virtual spacewalks"
+    ],
+    "text": "A real spacewalk is when an astronaut floats outside a spacecraft. A virtual one is pretend, done with computers.",
+    "audio": true
+  },
+  {
+    "k": "communication-delays",
+    "t": "communication delays",
+    "kind": "phrase",
+    "forms": [
+      "communication delays"
+    ],
+    "text": "A delay is waiting. Far away in space, messages take a long time to get home.",
+    "audio": true
+  },
+  {
+    "k": "human-research-program",
+    "t": "Human Research Program",
+    "kind": "name",
+    "forms": [
+      "Human Research Program"
+    ],
+    "text": "This is a NASA team. It studies how space travel changes people’s bodies and minds.",
+    "audio": true
+  },
+  {
+    "k": "tfk",
+    "t": "TFK",
+    "kind": "name",
+    "forms": [
+      "TFK"
+    ],
+    "text": "TFK is short for TIME for Kids, the magazine that wrote this article.",
+    "audio": true
+  },
+  {
+    "k": "habitation",
+    "t": "habitation",
+    "kind": "word",
+    "forms": [
+      "habitation"
+    ],
+    "text": "Habitation means living in a place.",
+    "audio": true
+  },
+  {
+    "k": "translate",
+    "t": "translate",
+    "kind": "word",
+    "forms": [
+      "translate"
+    ],
+    "text": "Here, translate means to take what you learned in one place and use it in another.",
+    "audio": true
+  },
+  {
+    "k": "emergency",
+    "t": "emergency",
+    "kind": "word",
+    "forms": [
+      "emergency"
+    ],
+    "text": "An emergency is a sudden problem that needs help right away.",
+    "audio": true
+  },
+  {
+    "k": "supplies",
+    "t": "supplies",
+    "kind": "word",
+    "forms": [
+      "supplies"
+    ],
+    "text": "Supplies are things people need, like food and water.",
+    "audio": true
+  },
+  {
+    "k": "data",
+    "t": "data",
+    "kind": "word",
+    "forms": [
+      "data"
+    ],
+    "text": "Data is information that people collect to learn something.",
+    "audio": true
+  },
+  {
+    "k": "recruits",
+    "t": "Recruits",
+    "kind": "word",
+    "forms": [
+      "Recruits"
+    ],
+    "text": "Recruits are people who are chosen to join a group.",
+    "audio": true
+  }
+]
