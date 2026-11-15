@@ -1,0 +1,755 @@
+[
+  {
+    "k": "glean",
+    "t": "glean",
+    "kind": "vocab",
+    "pron": "GLEEN",
+    "forms": [
+      "glean"
+    ],
+    "text": "To glean is to pick up facts bit by bit from small clues. Here, Bell could tell things about patients just by looking at them.",
+    "audio": true
+  },
+  {
+    "k": "imploring",
+    "t": "implore",
+    "kind": "vocab",
+    "pron": "im-PLOR",
+    "forms": [
+      "imploring"
+    ],
+    "text": "To implore is to beg someone very seriously. Here, fans begged Doyle to pass their letters to Holmes.",
+    "audio": true
+  },
+  {
+    "k": "scrutinising",
+    "t": "scrutinise",
+    "kind": "vocab",
+    "pron": "SKROO-tin-ize",
+    "forms": [
+      "scrutinising"
+    ],
+    "text": "To scrutinise is to look at something very closely, hunting for details. Here, Holmes and Bell studied tiny things like a scratch or some ash.",
+    "audio": true
+  },
+  {
+    "k": "deduction",
+    "t": "deduction",
+    "kind": "word",
+    "forms": [
+      "deduction"
+    ],
+    "text": "Deduction means reasoning from clues you can see to a conclusion you cannot see. Here, it was Holmes's main method.",
+    "audio": true
+  },
+  {
+    "k": "forensics",
+    "t": "forensics",
+    "kind": "word",
+    "forms": [
+      "forensics"
+    ],
+    "text": "Forensics is using science to examine evidence about a crime or accident. Here, the book is of interest to people who like that subject.",
+    "audio": true
+  },
+  {
+    "k": "imploring-him",
+    "t": "imploring him to",
+    "kind": "phrase",
+    "forms": [
+      "imploring him to forward"
+    ],
+    "text": "Here the writers were begging Doyle to send their letters on to Holmes, as if he were a real person.",
+    "audio": true
+  },
+  {
+    "k": "forward",
+    "t": "forward",
+    "kind": "word",
+    "forms": [
+      "forward"
+    ],
+    "text": "To forward a letter means to send it on to someone else. Here, fans wanted Doyle to pass their letters to the detective.",
+    "audio": true
+  },
+  {
+    "k": "investigate",
+    "t": "investigate",
+    "kind": "word",
+    "forms": [
+      "investigate"
+    ],
+    "text": "To investigate is to look into something carefully to find out the facts. Here, some fans wanted Holmes to look into their neighbours.",
+    "audio": true
+  },
+  {
+    "k": "pleaded",
+    "t": "plead",
+    "kind": "word",
+    "forms": [
+      "pleaded"
+    ],
+    "text": "To plead is to ask in a desperate, emotional way. Here, some people begged for help finding a missing person.",
+    "audio": true
+  },
+  {
+    "k": "obituaries",
+    "t": "obituary",
+    "kind": "word",
+    "forms": [
+      "obituaries"
+    ],
+    "text": "An obituary is a short article telling about a person's life after they have died. Here, newspapers wrote them for Holmes, a made-up man.",
+    "audio": true
+  },
+  {
+    "k": "mourning-bands",
+    "t": "mourning band",
+    "kind": "phrase",
+    "forms": [
+      "mourning bands"
+    ],
+    "text": "Mourning bands are black cloth strips worn on an arm to show sadness about a death. Here, some people wore them for Holmes.",
+    "audio": true
+  },
+  {
+    "k": "actual",
+    "t": "actual",
+    "kind": "word",
+    "forms": [
+      "actual"
+    ],
+    "text": "Actual means real, not imagined. Here, Holmes was not an actual person.",
+    "audio": true
+  },
+  {
+    "k": "portrayed",
+    "t": "portray",
+    "kind": "word",
+    "forms": [
+      "portrayed"
+    ],
+    "text": "To portray a character is to play or show them, such as an actor does. Here, Holmes has been shown on screen about 250 times.",
+    "audio": true
+  },
+  {
+    "k": "guinness-world-records",
+    "t": "Guinness World Records",
+    "kind": "name",
+    "forms": [
+      "Guinness World Records"
+    ],
+    "text": "This is a famous organization that keeps track of record-setting things, such as the tallest person or the most-filmed character.",
+    "audio": true
+  },
+  {
+    "k": "based-on",
+    "t": "based on",
+    "kind": "phrase",
+    "forms": [
+      "based on"
+    ],
+    "text": "Based on means built from something real. Here, Holmes was made up using a real man, Joseph Bell.",
+    "audio": true
+  },
+  {
+    "k": "surgeon",
+    "t": "surgeon",
+    "kind": "word",
+    "forms": [
+      "surgeon"
+    ],
+    "text": "A surgeon is a doctor who treats people by operating on their bodies. Here, Bell was a Scottish surgeon.",
+    "audio": true
+  },
+  {
+    "k": "clerk",
+    "t": "clerk",
+    "kind": "word",
+    "forms": [
+      "clerk"
+    ],
+    "text": "A clerk is someone who does office jobs like keeping notes and records. Here, young Doyle worked as Bell's helper.",
+    "audio": true
+  },
+  {
+    "k": "medical-historian",
+    "t": "medical historian",
+    "kind": "name",
+    "forms": [
+      "medical historian"
+    ],
+    "text": "A medical historian studies how doctors and medicine worked in the past. Here, that is Lindsey Fitzharris's job.",
+    "audio": true
+  },
+  {
+    "k": "forgotten",
+    "t": "forgotten",
+    "kind": "word",
+    "forms": [
+      "forgotten"
+    ],
+    "text": "Forgotten means no longer remembered. Here, Bell's story had been mostly lost until the new book.",
+    "audio": true
+  },
+  {
+    "k": "exceptional",
+    "t": "exceptional",
+    "kind": "word",
+    "forms": [
+      "exceptional"
+    ],
+    "text": "Exceptional means unusually good. Here, Bell was an exceptional man.",
+    "audio": true
+  },
+  {
+    "k": "diagnosis",
+    "t": "diagnosis",
+    "kind": "word",
+    "forms": [
+      "diagnosis"
+    ],
+    "text": "A diagnosis is a doctor's decision about what illness a patient has. Here, Bell was famous for his.",
+    "audio": true
+  },
+  {
+    "k": "preternaturally",
+    "t": "preternaturally",
+    "kind": "word",
+    "forms": [
+      "preternaturally"
+    ],
+    "text": "Preternaturally means to a degree that seems beyond normal. Here, Bell noticed more than most people could.",
+    "audio": true
+  },
+  {
+    "k": "observant",
+    "t": "observant",
+    "kind": "word",
+    "forms": [
+      "observant"
+    ],
+    "text": "Observant means good at noticing things. Here, Bell noticed small details on people.",
+    "audio": true
+  },
+  {
+    "k": "patients",
+    "t": "patient",
+    "kind": "word",
+    "forms": [
+      "patients"
+    ],
+    "text": "Patients are people being treated by a doctor. Here, Bell studied them before they spoke.",
+    "audio": true
+  },
+  {
+    "k": "calluses",
+    "t": "callus",
+    "kind": "word",
+    "forms": [
+      "calluses"
+    ],
+    "text": "A callus is a thick, hard patch of skin from rubbing or hard work. Here, they showed which job a person did.",
+    "audio": true
+  },
+  {
+    "k": "carpenter",
+    "t": "carpenter",
+    "kind": "word",
+    "forms": [
+      "carpenter"
+    ],
+    "text": "A carpenter is a person who builds things from wood.",
+    "audio": true
+  },
+  {
+    "k": "mason",
+    "t": "mason",
+    "kind": "word",
+    "forms": [
+      "mason"
+    ],
+    "text": "A mason is a worker who builds with stone or brick.",
+    "audio": true
+  },
+  {
+    "k": "gait",
+    "t": "gait",
+    "kind": "word",
+    "forms": [
+      "gait"
+    ],
+    "text": "Gait is the way a person walks. Here, it helped tell a soldier from a sailor.",
+    "audio": true
+  },
+  {
+    "k": "ailment",
+    "t": "ailment",
+    "kind": "word",
+    "forms": [
+      "ailment"
+    ],
+    "text": "An ailment is an illness, usually a small one. Here, shoes could hint at one.",
+    "audio": true
+  },
+  {
+    "k": "clay-pipe",
+    "t": "clay pipe",
+    "kind": "name",
+    "forms": [
+      "clay pipe"
+    ],
+    "text": "A clay pipe is a small pipe made of baked clay that people once used to smoke tobacco.",
+    "audio": true
+  },
+  {
+    "k": "amphitheatre",
+    "t": "amphitheatre",
+    "kind": "word",
+    "forms": [
+      "amphitheatre"
+    ],
+    "text": "An amphitheatre is a round room with rising rows of seats around a stage. Here, students watched Bell work like a show.",
+    "audio": true
+  },
+  {
+    "k": "royal-infirmary",
+    "t": "Royal Infirmary",
+    "kind": "name",
+    "forms": [
+      "Royal Infirmary"
+    ],
+    "text": "An infirmary is a hospital. Here, it is the big hospital in Edinburgh where Bell taught.",
+    "audio": true
+  },
+  {
+    "k": "electrifying",
+    "t": "electrifying",
+    "kind": "word",
+    "forms": [
+      "electrifying"
+    ],
+    "text": "Electrifying means very exciting. Here, Bell's lessons felt like thrilling theatre.",
+    "audio": true
+  },
+  {
+    "k": "police-surgeon",
+    "t": "police surgeon",
+    "kind": "name",
+    "forms": [
+      "police surgeon"
+    ],
+    "text": "A police surgeon is a doctor who helps police understand injuries and deaths in crime cases.",
+    "audio": true
+  },
+  {
+    "k": "criminal-investigations",
+    "t": "criminal investigation",
+    "kind": "name",
+    "forms": [
+      "criminal investigations"
+    ],
+    "text": "A criminal investigation is the police work of finding out who committed a crime and how.",
+    "audio": true
+  },
+  {
+    "k": "painstakingly",
+    "t": "painstakingly",
+    "kind": "word",
+    "forms": [
+      "painstakingly"
+    ],
+    "text": "Painstakingly means with great care, step by slow step.",
+    "audio": true
+  },
+  {
+    "k": "post-mortem-examinations",
+    "t": "post-mortem examination",
+    "kind": "name",
+    "forms": [
+      "post-mortem examinations"
+    ],
+    "text": "A post-mortem examination, also called an autopsy, is a doctor's careful check of a body after death to learn what caused it.",
+    "audio": true
+  },
+  {
+    "k": "discharged",
+    "t": "discharge",
+    "kind": "word",
+    "forms": [
+      "discharged"
+    ],
+    "text": "To discharge a gun means to fire it. Here, the question was whether a gun went off by accident.",
+    "audio": true
+  },
+  {
+    "k": "cadavers",
+    "t": "cadaver",
+    "kind": "word",
+    "forms": [
+      "cadavers"
+    ],
+    "text": "A cadaver is a dead human body, used for study.",
+    "audio": true
+  },
+  {
+    "k": "powder",
+    "t": "powder",
+    "kind": "word",
+    "forms": [
+      "powder"
+    ],
+    "text": "Here, powder means gunpowder, the material inside a bullet that makes it shoot out.",
+    "audio": true
+  },
+  {
+    "k": "protagonist",
+    "t": "protagonist",
+    "kind": "word",
+    "forms": [
+      "protagonist"
+    ],
+    "text": "A protagonist is the main character of a story.",
+    "audio": true
+  },
+  {
+    "k": "investigator",
+    "t": "investigator",
+    "kind": "word",
+    "forms": [
+      "investigator"
+    ],
+    "text": "An investigator is a person who looks into a crime or mystery to find the facts.",
+    "audio": true
+  },
+  {
+    "k": "rely-on-chance",
+    "t": "rely on chance",
+    "kind": "phrase",
+    "forms": [
+      "rely on chance"
+    ],
+    "text": "To rely on chance is to count on luck instead of skill. Here, Holmes solved cases using his brain.",
+    "audio": true
+  },
+  {
+    "k": "blunders",
+    "t": "blunder",
+    "kind": "word",
+    "forms": [
+      "blunders"
+    ],
+    "text": "A blunder is a silly or careless mistake. Here, many old detective stories needed criminals to make them.",
+    "audio": true
+  },
+  {
+    "k": "coincidences",
+    "t": "coincidence",
+    "kind": "word",
+    "forms": [
+      "coincidences"
+    ],
+    "text": "A coincidence is when two things happen together by luck, with no reason. Here, Doyle found them annoying in mysteries.",
+    "audio": true
+  },
+  {
+    "k": "trope",
+    "t": "trope",
+    "kind": "word",
+    "forms": [
+      "trope"
+    ],
+    "text": "A trope is a common idea that shows up again and again in stories.",
+    "audio": true
+  },
+  {
+    "k": "genre",
+    "t": "genre",
+    "kind": "word",
+    "forms": [
+      "genre"
+    ],
+    "text": "A genre is a kind of book or film, such as mystery or fantasy.",
+    "audio": true
+  },
+  {
+    "k": "analysis",
+    "t": "analysis",
+    "kind": "word",
+    "forms": [
+      "analysis"
+    ],
+    "text": "Analysis means studying something by breaking it into parts.",
+    "audio": true
+  },
+  {
+    "k": "seemingly",
+    "t": "seemingly",
+    "kind": "word",
+    "forms": [
+      "seemingly"
+    ],
+    "text": "Seemingly means in a way that looks true but may not be. Here, the details looked minor but were not.",
+    "audio": true
+  },
+  {
+    "k": "minor",
+    "t": "minor",
+    "kind": "word",
+    "forms": [
+      "minor"
+    ],
+    "text": "Minor means small or not very important.",
+    "audio": true
+  },
+  {
+    "k": "tallow-candle",
+    "t": "tallow candle",
+    "kind": "name",
+    "forms": [
+      "tallow candle"
+    ],
+    "text": "A tallow candle is an old-fashioned candle made from animal fat.",
+    "audio": true
+  },
+  {
+    "k": "guttering",
+    "t": "gutter",
+    "kind": "word",
+    "forms": [
+      "guttering"
+    ],
+    "text": "A candle that is guttering burns weakly and flickers before going out.",
+    "audio": true
+  },
+  {
+    "k": "trivialities",
+    "t": "triviality",
+    "kind": "word",
+    "forms": [
+      "trivialities"
+    ],
+    "text": "Trivialities are small things that seem unimportant.",
+    "audio": true
+  },
+  {
+    "k": "genius",
+    "t": "genius",
+    "kind": "word",
+    "forms": [
+      "genius"
+    ],
+    "text": "Genius is unusual, brilliant ability.",
+    "audio": true
+  },
+  {
+    "k": "uncovering",
+    "t": "uncover",
+    "kind": "word",
+    "forms": [
+      "uncovering"
+    ],
+    "text": "To uncover something is to find or reveal what was hidden.",
+    "audio": true
+  },
+  {
+    "k": "fascinate",
+    "t": "fascinate",
+    "kind": "word",
+    "forms": [
+      "fascinate"
+    ],
+    "text": "To fascinate is to hold someone's interest strongly.",
+    "audio": true
+  },
+  {
+    "k": "true-crime",
+    "t": "true crime",
+    "kind": "name",
+    "forms": [
+      "true crime"
+    ],
+    "text": "True crime is a kind of story about real crimes and how they were solved.",
+    "audio": true
+  },
+  {
+    "k": "strong-stomach",
+    "t": "strong stomach",
+    "kind": "phrase",
+    "forms": [
+      "strong stomach"
+    ],
+    "text": "Having a strong stomach means being able to read or see gross things without feeling sick.",
+    "audio": true
+  },
+  {
+    "k": "creative-process",
+    "t": "creative process",
+    "kind": "name",
+    "forms": [
+      "creative process"
+    ],
+    "text": "The creative process is the way a person comes up with and builds a new idea or work of art.",
+    "audio": true
+  },
+  {
+    "k": "drew-on",
+    "t": "draw on",
+    "kind": "phrase",
+    "forms": [
+      "drew on"
+    ],
+    "text": "To draw on something is to use it as a source. Here, Doyle used real people for his stories.",
+    "audio": true
+  },
+  {
+    "k": "transmuted",
+    "t": "transmute",
+    "kind": "word",
+    "forms": [
+      "transmuted"
+    ],
+    "text": "To transmute is to change one thing completely into another. Here, Doyle turned real people into something new.",
+    "audio": true
+  },
+  {
+    "k": "the-bones-on-which-to-put-the-flesh",
+    "t": "bones and flesh",
+    "kind": "phrase",
+    "forms": [
+      "the bones on which to put the flesh"
+    ],
+    "text": "This means real people were the basic frame, and Doyle added the details to make full characters.",
+    "audio": true
+  },
+  {
+    "k": "idiosyncrasies",
+    "t": "idiosyncrasy",
+    "kind": "word",
+    "forms": [
+      "idiosyncrasies"
+    ],
+    "text": "An idiosyncrasy is an odd habit or trait that belongs to one person.",
+    "audio": true
+  },
+  {
+    "k": "inverness-cape",
+    "t": "Inverness cape",
+    "kind": "name",
+    "forms": [
+      "Inverness cape"
+    ],
+    "text": "An Inverness cape is a long coat with a cape over the shoulders, once worn in Scotland.",
+    "audio": true
+  },
+  {
+    "k": "magnifying-glass",
+    "t": "magnifying glass",
+    "kind": "name",
+    "forms": [
+      "magnifying glass"
+    ],
+    "text": "A magnifying glass is a lens that makes small things look bigger.",
+    "audio": true
+  },
+  {
+    "k": "traits",
+    "t": "trait",
+    "kind": "word",
+    "forms": [
+      "traits"
+    ],
+    "text": "A trait is a quality that makes up part of someone's character.",
+    "audio": true
+  },
+  {
+    "k": "enduring",
+    "t": "enduring",
+    "kind": "word",
+    "forms": [
+      "enduring"
+    ],
+    "text": "Enduring means lasting a long time.",
+    "audio": true
+  },
+  {
+    "k": "dedicated",
+    "t": "dedicate",
+    "kind": "word",
+    "forms": [
+      "dedicated"
+    ],
+    "text": "To dedicate a book to someone is to put their name in it as an honor.",
+    "audio": true
+  },
+  {
+    "k": "association",
+    "t": "association",
+    "kind": "word",
+    "forms": [
+      "association"
+    ],
+    "text": "An association is a link in people's minds between two things.",
+    "audio": true
+  },
+  {
+    "k": "a-curse",
+    "t": "curse",
+    "kind": "phrase",
+    "forms": [
+      "a curse"
+    ],
+    "text": "Here, a curse means something that brings trouble even though it seems like good luck.",
+    "audio": true
+  },
+  {
+    "k": "pestered",
+    "t": "pester",
+    "kind": "word",
+    "forms": [
+      "pestered"
+    ],
+    "text": "To pester is to bother someone again and again.",
+    "audio": true
+  },
+  {
+    "k": "emotionally-detached",
+    "t": "emotionally detached",
+    "kind": "phrase",
+    "forms": [
+      "emotionally detached"
+    ],
+    "text": "Emotionally detached means cool and not showing feelings. People wrongly thought Bell was this way.",
+    "audio": true
+  },
+  {
+    "k": "confessed",
+    "t": "confess",
+    "kind": "word",
+    "forms": [
+      "confessed"
+    ],
+    "text": "To confess is to admit something, often something hard to say.",
+    "audio": true
+  },
+  {
+    "k": "haunted",
+    "t": "haunted",
+    "kind": "word",
+    "forms": [
+      "haunted"
+    ],
+    "text": "To be haunted by something is to be followed by it and unable to escape it.",
+    "audio": true
+  },
+  {
+    "k": "nuisance",
+    "t": "nuisance",
+    "kind": "word",
+    "forms": [
+      "nuisance"
+    ],
+    "text": "A nuisance is something or someone that keeps annoying you.",
+    "audio": true
+  }
+]

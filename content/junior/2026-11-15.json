@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-15",
+  "title": "The curious case of the surgeon who inspired Sherlock Holmes",
+  "articleUrl": "https://www.economist.com/culture/2026/11/12/the-curious-case-of-the-surgeon-who-inspired-sherlock-holmes",
+  "articlePageUrl": "/articles/junior/2026-11-15.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "glean",
+      "partOfSpeech": "verb",
+      "pronunciation": "GLEEN",
+      "articleQuote": "able to glean information about patients before they opened their mouths",
+      "meaning": "To glean something is to pick up information or facts bit by bit, from small clues. The word first meant gathering leftover grain from a field after the harvest, one little piece at a time. If you glance at a classmate's lunchbox and glean that they like pizza, you have gleaned a fact without asking. In the article, Joseph Bell gleaned facts about patients just by looking at them.",
+      "examples": [
+        "I gleaned from her smile that the test went well.",
+        "The detective gleaned a few facts from the muddy footprints."
+      ]
+    },
+    {
+      "word": "implore",
+      "partOfSpeech": "verb",
+      "pronunciation": "im-PLOR",
+      "articleQuote": "imploring him to forward their letters to the famous detective",
+      "meaning": "To implore someone is to beg them, very seriously, to do something. It is stronger than just asking. A kid might implore a parent to let the family keep a stray puppy. In the article, fans wrote to Arthur Conan Doyle and implored him to pass their letters to Sherlock Holmes, as if the detective were a real person.",
+      "examples": [
+        "She implored her brother not to tell their secret.",
+        "The fans implored the band to play one more song."
+      ]
+    },
+    {
+      "word": "scrutinise",
+      "partOfSpeech": "verb",
+      "pronunciation": "SKROO-tin-ize",
+      "articleQuote": "By scrutinising a scratch on a desk, a trace of cigar ash",
+      "meaning": "To scrutinise something is to look at it very closely and carefully, hunting for details. It is much more than a quick glance. If you scrutinise a spot-the-difference puzzle, you check every tiny corner. In the article, Holmes and Bell scrutinised small things, like a scratch or some ash, to solve mysteries. (You may also see it spelled scrutinize.)",
+      "examples": [
+        "The judge scrutinised the painting for signs that it was fake.",
+        "I scrutinised my math homework to find my mistake."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Deduction",
+      "articleQuote": "the science of deduction and analysis",
+      "meaning": "How could Joseph Bell tell a carpenter from a mason just by looking at someone's hands? He used **deduction**: starting from small clues you can see and reasoning, step by step, to a conclusion you can't see.\n\nThe key is that each clue is a piece of evidence, and the reasoning connects the pieces. Calluses on the hands are a clue. Knowing which jobs cause which calluses is the knowledge. Putting them together gives the answer.\n\nPicture coming home and finding muddy shoes by the door, a wet umbrella missing, and the dog asleep and tired. You might deduce that someone took the dog for a long walk in the rain. Nobody told you. You worked it out from the clues.\n\nDeduction is only as good as its clues and its knowledge. A single clue can mislead, so good detectives, and good doctors, check whether other facts fit the same answer.\n\nSo the takeaway: deduction is reasoning from small, noticed details to a conclusion, and it starts with paying attention to things others overlook."
+    },
+    {
+      "name": "Forensics",
+      "articleQuote": "forensics or true crime",
+      "meaning": "How did Bell and the police surgeon prove a man did not accidentally shoot himself? They used **forensics**: using science to examine evidence so that it can help settle a question about a crime or an accident.\n\nThe word comes from a Latin word for a public place where matters were argued. Today it means the science is used for questions that courts and police need answered.\n\nImagine someone spills paint in the art room and nobody admits it. A forensic approach would not guess. It would check the paint color, the shape of the footprints, and which brushes are wet, and let the evidence speak.\n\nIn the article, Bell and Dr Henry Littlejohn fired shotguns at dead bodies from different distances to learn what a shot leaves behind. Then they compared that to the real case. That is forensic science: testing, measuring, and comparing.\n\nSo the takeaway: forensics is science used as evidence, so that a decision about what happened rests on facts and tests instead of guesses."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did many people in the 1890s think Sherlock Holmes was real?",
+      "options": [
+        "He was a famous doctor in Edinburgh",
+        "They wrote to him, and newspapers printed obituaries when he died in the stories",
+        "Doyle said he was a real man",
+        "He appeared on television"
+      ],
+      "answerIndex": 1,
+      "explanation": "Readers sent letters to Holmes and newspapers published obituaries when news of his death reached the public in December 1893."
+    },
+    {
+      "question": "Who was the real person who inspired Sherlock Holmes?",
+      "options": [
+        "Henry Duncan Littlejohn",
+        "Lindsey Fitzharris",
+        "Joseph Bell",
+        "Dr Watson"
+      ],
+      "answerIndex": 2,
+      "explanation": "Joseph Bell, a Scottish surgeon who taught Doyle in Edinburgh, was the main model for Holmes."
+    },
+    {
+      "question": "What does \"glean\" mean in \"able to glean information about patients\"?",
+      "options": [
+        "To hide it",
+        "To pick it up bit by bit from small clues",
+        "To write it down in a book",
+        "To forget it"
+      ],
+      "answerIndex": 1,
+      "explanation": "To glean is to gather facts a little at a time, which is what Bell did by noticing small details."
+    },
+    {
+      "question": "What did Bell show that Doyle gave to Holmes?",
+      "options": [
+        "Big clues can hide in small details",
+        "Criminals always make big mistakes",
+        "Luck solves most mysteries",
+        "A detective should never use science"
+      ],
+      "answerIndex": 0,
+      "explanation": "Doyle did not want Holmes to rely on luck or on criminals' blunders. He used Bell's idea that tiny details can reveal major clues."
+    },
+    {
+      "question": "How did being linked to Holmes affect Bell later in life?",
+      "options": [
+        "He became rich and happy",
+        "He stopped being a doctor",
+        "Nobody ever mentioned it",
+        "Journalists and fans pestered him, and he felt haunted by his double"
+      ],
+      "answerIndex": 3,
+      "explanation": "Bell was constantly pestered, and people wrongly assumed he was as emotionally detached as the character."
+    }
+  ]
+}
