@@ -1,0 +1,301 @@
+[
+  {
+    "k": "identified",
+    "t": "identified",
+    "kind": "vocab",
+    "pron": "eye-DEN-tuh-fyde",
+    "forms": [
+      "identified"
+    ],
+    "text": "To identify something is to figure out exactly what it is. Scientists identified the tilcayo as a new kind of cat.",
+    "audio": true
+  },
+  {
+    "k": "compared",
+    "t": "compared",
+    "kind": "vocab",
+    "pron": "kum-PAIRD",
+    "forms": [
+      "compared"
+    ],
+    "text": "To compare is to look at things side by side to see how they are alike and different. The scientists compared Tigrino with other wild cats.",
+    "audio": true
+  },
+  {
+    "k": "protect",
+    "t": "protect",
+    "kind": "vocab",
+    "pron": "pruh-TEKT",
+    "forms": [
+      "protect"
+    ],
+    "text": "To protect something is to keep it safe from harm. People want to keep wild cats safe.",
+    "audio": true
+  },
+  {
+    "k": "andes",
+    "t": "Andes",
+    "kind": "name",
+    "forms": [
+      "Andes"
+    ],
+    "text": "The Andes are a very long chain of tall mountains in South America.",
+    "audio": true
+  },
+  {
+    "k": "mountains",
+    "t": "mountains",
+    "kind": "word",
+    "forms": [
+      "mountains"
+    ],
+    "text": "Mountains are very high lands that rise far above the ground around them.",
+    "audio": true
+  },
+  {
+    "k": "tilcayo",
+    "t": "tilcayo",
+    "kind": "name",
+    "forms": [
+      "tilcayo"
+    ],
+    "text": "A tilcayo is a tiny wild cat. Say it TIL-ky-oh. It is a newly found kind of cat.",
+    "audio": true
+  },
+  {
+    "k": "scientists",
+    "t": "Scientists",
+    "kind": "word",
+    "forms": [
+      "Scientists",
+      "scientists",
+      "scientist"
+    ],
+    "text": "Scientists are people who study the world to learn how things work.",
+    "audio": true
+  },
+  {
+    "k": "study",
+    "t": "study",
+    "kind": "word",
+    "forms": [
+      "study",
+      "studying"
+    ],
+    "text": "A study is a careful project to learn something new. Scientists write down what they find.",
+    "audio": true
+  },
+  {
+    "k": "current-biology",
+    "t": "Current Biology",
+    "kind": "name",
+    "forms": [
+      "Current Biology"
+    ],
+    "text": "Current Biology is a magazine where scientists share what they have learned about living things.",
+    "audio": true
+  },
+  {
+    "k": "species",
+    "t": "species",
+    "kind": "word",
+    "forms": [
+      "species"
+    ],
+    "text": "A species is one kind of living thing. All house cats are one species.",
+    "audio": true
+  },
+  {
+    "k": "wild",
+    "t": "wild",
+    "kind": "word",
+    "forms": [
+      "wild"
+    ],
+    "text": "Wild animals live in nature on their own. They are not pets.",
+    "audio": true
+  },
+  {
+    "k": "senda-verde",
+    "t": "Senda Verde Wildlife Sanctuary",
+    "kind": "name",
+    "forms": [
+      "Senda Verde Wildlife Sanctuary",
+      "Senda Verde"
+    ],
+    "text": "Senda Verde is a place where hurt or lost wild animals are cared for.",
+    "audio": true
+  },
+  {
+    "k": "sanctuary",
+    "t": "sanctuary",
+    "kind": "word",
+    "forms": [
+      "sanctuary"
+    ],
+    "text": "A sanctuary is a safe place for animals. People there take care of them.",
+    "audio": true
+  },
+  {
+    "k": "bolivia",
+    "t": "Bolivia",
+    "kind": "name",
+    "forms": [
+      "Bolivia"
+    ],
+    "text": "Bolivia is a country in South America. The Andes mountains run through it.",
+    "audio": true
+  },
+  {
+    "k": "tigrino",
+    "t": "Tigrino",
+    "kind": "name",
+    "forms": [
+      "Tigrino",
+      "Tigrino’s"
+    ],
+    "text": "Tigrino is the name of the tilcayo that lives at the sanctuary.",
+    "audio": true
+  },
+  {
+    "k": "keepers",
+    "t": "keepers",
+    "kind": "word",
+    "forms": [
+      "keepers"
+    ],
+    "text": "Keepers are the people who feed and care for animals.",
+    "audio": true
+  },
+  {
+    "k": "oncilla",
+    "t": "oncilla",
+    "kind": "name",
+    "forms": [
+      "oncilla"
+    ],
+    "text": "An oncilla is a small wild cat with spots. It lives in Central and South America.",
+    "audio": true
+  },
+  {
+    "k": "paola",
+    "t": "Paola Nogales-Ascarrunz",
+    "kind": "name",
+    "forms": [
+      "Paola Nogales-Ascarrunz",
+      "Nogales-Ascarrunz"
+    ],
+    "text": "Paola Nogales-Ascarrunz is the scientist who first noticed that Tigrino was different.",
+    "audio": true
+  },
+  {
+    "k": "weighs",
+    "t": "weighs",
+    "kind": "word",
+    "forms": [
+      "weighs"
+    ],
+    "text": "What something weighs is how heavy it is. A pound is a way to measure weight.",
+    "audio": true
+  },
+  {
+    "k": "spots",
+    "t": "spots",
+    "kind": "word",
+    "forms": [
+      "spots"
+    ],
+    "text": "Spots are small round marks on an animal's fur.",
+    "audio": true
+  },
+  {
+    "k": "dna",
+    "t": "DNA",
+    "kind": "word",
+    "forms": [
+      "DNA"
+    ],
+    "text": "DNA is like a tiny instruction book inside every living thing. It helps decide how a body looks and grows.",
+    "audio": true
+  },
+  {
+    "k": "realized",
+    "t": "realized",
+    "kind": "word",
+    "forms": [
+      "realized"
+    ],
+    "text": "To realize something is to suddenly understand it.",
+    "audio": true
+  },
+  {
+    "k": "cofounded",
+    "t": "cofounded",
+    "kind": "word",
+    "forms": [
+      "cofounded"
+    ],
+    "text": "To cofound something is to start it together with another person.",
+    "audio": true
+  },
+  {
+    "k": "associated-press",
+    "t": "Associated Press",
+    "kind": "name",
+    "forms": [
+      "Associated Press"
+    ],
+    "text": "The Associated Press is a company whose reporters write news stories.",
+    "audio": true
+  },
+  {
+    "k": "ambassador",
+    "t": "ambassador",
+    "kind": "word",
+    "forms": [
+      "ambassador"
+    ],
+    "text": "An ambassador is someone who speaks up for a cause. Tigrino helps people learn about wild cats.",
+    "audio": true
+  },
+  {
+    "k": "conservation",
+    "t": "conservation",
+    "kind": "word",
+    "forms": [
+      "conservation"
+    ],
+    "text": "Conservation means taking care of nature so animals and plants stay safe.",
+    "audio": true
+  },
+  {
+    "k": "awareness",
+    "t": "awareness",
+    "kind": "word",
+    "forms": [
+      "awareness"
+    ],
+    "text": "Awareness is knowing about something. Raising awareness means helping more people learn about it.",
+    "audio": true
+  },
+  {
+    "k": "author",
+    "t": "author",
+    "kind": "word",
+    "forms": [
+      "author"
+    ],
+    "text": "The author is the person who wrote the story.",
+    "audio": true
+  },
+  {
+    "k": "quote",
+    "t": "quote",
+    "kind": "word",
+    "forms": [
+      "quote"
+    ],
+    "text": "To quote someone is to repeat the exact words that person said.",
+    "audio": true
+  }
+]

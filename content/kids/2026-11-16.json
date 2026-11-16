@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-16",
+  "title": "Scientists find a new tiny wild cat",
+  "articleUrl": "https://www.timeforkids.com/g34/small-but-fierce-g3/",
+  "articlePageUrl": "/articles/kids/2026-11-16.html",
+  "voiceQuiz": true,
+  "source": "TIME for Kids",
+  "vocab": [
+    {
+      "word": "identified",
+      "partOfSpeech": "verb",
+      "pronunciation": "eye-DEN-tuh-fyde",
+      "articleQuote": "In the Andes mountains, a tiny cat called a tilcayo has been identified.",
+      "meaning": "To identify something means to figure out exactly what it is. You look at the clues and then you can name it. In the article, scientists identified the tilcayo as a kind of cat that nobody had named before.",
+      "examples": [
+        "I identified the bird in our yard by looking at its red feathers.",
+        "My teacher identified my coat by the patch on its sleeve."
+      ]
+    },
+    {
+      "word": "compared",
+      "partOfSpeech": "verb",
+      "pronunciation": "kum-PAIRD",
+      "articleQuote": "They compared Tigrino’s DNA with DNA from other wild cats.",
+      "meaning": "To compare two things means to look at them side by side. You find out how they are the same and how they are different. In the article, scientists compared Tigrino with other wild cats to see if he was like them.",
+      "examples": [
+        "I compared my shoes with my brother's shoes, and mine were smaller.",
+        "We compared two apples to see which one was redder."
+      ]
+    },
+    {
+      "word": "protect",
+      "partOfSpeech": "verb",
+      "pronunciation": "pruh-TEKT",
+      "articleQuote": "He hopes the tilcayo will raise awareness about the need to protect wild cats and the places where they live.",
+      "meaning": "To protect something means to keep it safe from harm. A helmet protects your head when you ride a bike. In the article, people want to protect wild cats and the places where they live.",
+      "examples": [
+        "I wear a raincoat to protect me from the rain.",
+        "A fence protects the garden so the rabbits cannot get in."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "DNA",
+      "articleQuote": "They compared Tigrino’s DNA with DNA from other wild cats.",
+      "meaning": "Tigrino looked a lot like another cat called an oncilla. So how did scientists know he was different? They looked at his DNA.\n\nDNA is like a tiny instruction book inside every living thing. It tells a body how to grow. It helps decide things like fur color, spots, and size. You got your DNA from your parents, so you look a bit like your family.\n\nEvery kind of animal has its own kind of DNA. Cats of the same kind have DNA that is very much alike. When scientists compared Tigrino's DNA to other cats, it did not match. That showed he was a new kind of cat.\n\nSo DNA is a body's instruction book, and scientists can read it to tell animals apart."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is a tilcayo?",
+      "options": [
+        "A tiny wild cat",
+        "A kind of mountain",
+        "A scientist",
+        "A type of bird"
+      ],
+      "answerIndex": 0,
+      "explanation": "The tilcayo is a tiny wild cat found in the Andes mountains."
+    },
+    {
+      "question": "How much does Tigrino weigh?",
+      "options": [
+        "Thirty pounds",
+        "Three pounds",
+        "One hundred pounds",
+        "Three hundred pounds"
+      ],
+      "answerIndex": 1,
+      "explanation": "Tigrino weighs only three pounds, which is smaller than an oncilla."
+    },
+    {
+      "question": "Why did scientists study Tigrino's DNA?",
+      "options": [
+        "To teach him a trick",
+        "To find his home",
+        "To see if he was different from other wild cats",
+        "To make him bigger"
+      ],
+      "answerIndex": 2,
+      "explanation": "They compared his DNA with the DNA of other wild cats and found he was different."
+    },
+    {
+      "question": "What does \"protect\" mean?",
+      "options": [
+        "To make something louder",
+        "To take something away",
+        "To paint something",
+        "To keep something safe from harm"
+      ],
+      "answerIndex": 3,
+      "explanation": "To protect something means to keep it safe from harm."
+    },
+    {
+      "question": "What does Marcelo Levy hope the tilcayo will do?",
+      "options": [
+        "Help people care about protecting wild cats",
+        "Become a pet for children",
+        "Move to a zoo far away",
+        "Win a race"
+      ],
+      "answerIndex": 0,
+      "explanation": "He hopes the tilcayo will raise awareness about protecting wild cats and where they live."
+    }
+  ]
+}
