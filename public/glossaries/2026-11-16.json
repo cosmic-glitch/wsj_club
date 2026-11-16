@@ -1,0 +1,626 @@
+[
+  {
+    "k": "trounced",
+    "t": "trounced",
+    "kind": "vocab",
+    "pron": "TROWNSS",
+    "forms": [
+      "trounced"
+    ],
+    "text": "To trounce someone is to beat them completely, by a wide margin. Here it says Anthropic did not just edge past OpenAI in coding agents but pulled far ahead after OpenAI had led the chatbot phase.",
+    "audio": true
+  },
+  {
+    "k": "secessionists",
+    "t": "secessionists",
+    "kind": "vocab",
+    "pron": "sih-SESH-uh-nist",
+    "forms": [
+      "secessionists"
+    ],
+    "text": "A secessionist is someone who breaks away from a larger group to form a separate one. Here it playfully describes the people who left OpenAI to start Anthropic, which makes the rivalry feel like a family quarrel.",
+    "audio": true
+  },
+  {
+    "k": "beguiled",
+    "t": "beguiled",
+    "kind": "vocab",
+    "pron": "bih-GYLE",
+    "forms": [
+      "beguiled"
+    ],
+    "text": "To beguile is to charm or captivate someone, sometimes to the point of fooling them a little. Here it describes users being won over by personal AI agents that can take on real chores for them.",
+    "audio": true
+  },
+  {
+    "k": "puts-the-heat-on",
+    "t": "puts the heat on",
+    "kind": "phrase",
+    "forms": [
+      "puts the heat on"
+    ],
+    "text": "To put the heat on someone means to increase the pressure on them. The headline says Anthropic's huge stock sale makes life harder for OpenAI, which will now feel pushed to move faster.",
+    "audio": true
+  },
+  {
+    "k": "miffed",
+    "t": "miffed",
+    "kind": "word",
+    "forms": [
+      "miffed"
+    ],
+    "text": "Miffed means mildly annoyed or offended, usually because you feel you have not been treated fairly. The article says OpenAI's bosses could be forgiven for feeling it, since they started the AI boom and now watch a rival overtake them.",
+    "audio": true
+  },
+  {
+    "k": "set-in-motion",
+    "t": "set the artificial-intelligence boom in motion",
+    "kind": "phrase",
+    "forms": [
+      "set the artificial-intelligence boom in motion"
+    ],
+    "text": "To set something in motion means to start a process that then keeps going on its own. Here it says ChatGPT's release began the wave of investment and excitement in AI.",
+    "audio": true
+  },
+  {
+    "k": "imitators",
+    "t": "imitators",
+    "kind": "word",
+    "forms": [
+      "imitators"
+    ],
+    "text": "Imitators are people or companies that copy something successful. Here they are the many rival chatbots that appeared after ChatGPT, none of which has beaten it in popularity.",
+    "audio": true
+  },
+  {
+    "k": "arch-rival",
+    "t": "arch-rival",
+    "kind": "word",
+    "forms": [
+      "arch-rival"
+    ],
+    "text": "An arch-rival is a main enemy or competitor, the one you most want to beat. Here it is OpenAI's closest competitor, Anthropic.",
+    "audio": true
+  },
+  {
+    "k": "annual-revenue",
+    "t": "annual revenue",
+    "kind": "name",
+    "forms": [
+      "annual revenue"
+    ],
+    "text": "Revenue is the total money a company takes in from sales before subtracting costs, so it is not the same as profit. Annual revenue is that figure for one year.",
+    "audio": true
+  },
+  {
+    "k": "soared",
+    "t": "soared",
+    "kind": "word",
+    "forms": [
+      "soared"
+    ],
+    "text": "To soar is to rise very high and very fast, like a bird. Here it says OpenAI's yearly sales shot upward, reaching $13bn.",
+    "audio": true
+  },
+  {
+    "k": "initial-public-offering",
+    "t": "initial public offering",
+    "kind": "name",
+    "forms": [
+      "initial public offering"
+    ],
+    "text": "An initial public offering, or IPO, is when a company sells its shares to the general public for the first time and starts trading on a stock exchange. It lets the company raise a large sum of cash, here a reported $90bn.",
+    "audio": true
+  },
+  {
+    "k": "haul",
+    "t": "haul",
+    "kind": "word",
+    "forms": [
+      "haul"
+    ],
+    "text": "A haul is a large catch or take, like fishermen's haul of fish. Here it means the big pile of money Anthropic is expected to collect by selling shares.",
+    "audio": true
+  },
+  {
+    "k": "market-value",
+    "t": "market value",
+    "kind": "name",
+    "forms": [
+      "market value"
+    ],
+    "text": "Market value is what a company is worth according to the stock market: the price of one share times the number of shares. Here Anthropic aims for $1.5trn, above OpenAI's $1.3trn.",
+    "audio": true
+  },
+  {
+    "k": "trn",
+    "t": "trn",
+    "kind": "word",
+    "forms": [
+      "$1.5trn",
+      "$1.3trn"
+    ],
+    "text": "The Economist writes trn for trillion, a thousand billion, and bn for billion. So $1.5trn is one and a half trillion dollars, an almost unimaginably large company value.",
+    "audio": true
+  },
+  {
+    "k": "unlisted",
+    "t": "unlisted",
+    "kind": "word",
+    "forms": [
+      "unlisted"
+    ],
+    "text": "An unlisted company is one whose shares are not traded on a public stock exchange, so ordinary people cannot buy them. OpenAI is still private in this way.",
+    "audio": true
+  },
+  {
+    "k": "private-fundraising-round",
+    "t": "private fundraising round",
+    "kind": "name",
+    "forms": [
+      "private fundraising round"
+    ],
+    "text": "A fundraising round is when a private company sells shares to a limited group of investors at an agreed price. That price sets the company's valuation without any public trading.",
+    "audio": true
+  },
+  {
+    "k": "model-makers",
+    "t": "model-makers",
+    "kind": "name",
+    "forms": [
+      "model-makers"
+    ],
+    "text": "Model-makers are the companies that build large AI models, the software brains behind chatbots. Here they are chiefly OpenAI and Anthropic.",
+    "audio": true
+  },
+  {
+    "k": "coding-agents",
+    "t": "coding agents",
+    "kind": "name",
+    "forms": [
+      "coding agents"
+    ],
+    "text": "A coding agent is an AI program that does not just suggest code but carries out programming tasks on its own, such as writing, testing, and fixing software. They have become the biggest source of AI business.",
+    "audio": true
+  },
+  {
+    "k": "claude-code",
+    "t": "Claude Code",
+    "kind": "name",
+    "forms": [
+      "Claude Code"
+    ],
+    "text": "Claude Code is Anthropic's AI tool for writing software. The article says it launched in early 2025 and has grown explosively this year.",
+    "audio": true
+  },
+  {
+    "k": "explosive-growth",
+    "t": "explosive growth",
+    "kind": "word",
+    "forms": [
+      "explosive growth"
+    ],
+    "text": "Explosive growth is very rapid expansion, as if something were blowing up in size. Here Claude Code's sales grew more than tenfold in a year.",
+    "audio": true
+  },
+  {
+    "k": "goldman-sachs",
+    "t": "Goldman Sachs",
+    "kind": "name",
+    "forms": [
+      "Goldman Sachs"
+    ],
+    "text": "Goldman Sachs is a large Wall Street investment bank. Here it is the lead bank on Anthropic's IPO, meaning it organises the sale of shares and helps set the price.",
+    "audio": true
+  },
+  {
+    "k": "lead-investment-bank",
+    "t": "lead investment bank",
+    "kind": "name",
+    "forms": [
+      "lead investment bank"
+    ],
+    "text": "An investment bank helps companies raise money by selling shares or bonds. The lead bank on an IPO is the one in charge of organising it and finding buyers.",
+    "audio": true
+  },
+  {
+    "k": "pull-in",
+    "t": "pull in",
+    "kind": "phrase",
+    "forms": [
+      "pull in"
+    ],
+    "text": "To pull in money is to earn or bring in a lot of it. Here it says Anthropic expects to take in $53bn of revenue this year.",
+    "audio": true
+  },
+  {
+    "k": "strips-out",
+    "t": "strips out",
+    "kind": "word",
+    "forms": [
+      "strips out"
+    ],
+    "text": "To strip out something is to remove it from a total. Here OpenAI subtracts the share it pays its cloud partners before counting revenue, while Anthropic counts it all, so the two numbers are not directly comparable.",
+    "audio": true
+  },
+  {
+    "k": "cloud-partners",
+    "t": "cloud partners",
+    "kind": "name",
+    "forms": [
+      "cloud partners"
+    ],
+    "text": "Cloud partners are the big computing companies, such as those that rent out servers over the internet, that also resell AI models to their own customers and keep a share of the money.",
+    "audio": true
+  },
+  {
+    "k": "direct-comparisons-are-tricky",
+    "t": "direct comparisons are tricky",
+    "kind": "word",
+    "forms": [
+      "direct comparisons are tricky"
+    ],
+    "text": "Tricky here means hard to get right. The Economist warns that the two firms count revenue in different ways, so putting the numbers side by side can mislead.",
+    "audio": true
+  },
+  {
+    "k": "codex",
+    "t": "Codex",
+    "kind": "name",
+    "forms": [
+      "Codex"
+    ],
+    "text": "Codex is OpenAI's own programming tool, a rival to Anthropic's Claude Code. Its use has grown rapidly in recent months.",
+    "audio": true
+  },
+  {
+    "k": "monetising",
+    "t": "monetising",
+    "kind": "word",
+    "forms": [
+      "monetising"
+    ],
+    "text": "To monetise something is to find a way to earn money from it. Here OpenAI is betting on several ways to make money from its AI beyond selling to companies. The spelling is British; Americans write monetizing.",
+    "audio": true
+  },
+  {
+    "k": "valuations",
+    "t": "valuations",
+    "kind": "word",
+    "forms": [
+      "valuations"
+    ],
+    "text": "A valuation is an estimate of what a company is worth. High valuations mean investors expect big future profits, so the company must grow fast to live up to them.",
+    "audio": true
+  },
+  {
+    "k": "forecasts",
+    "t": "forecasts",
+    "kind": "word",
+    "forms": [
+      "forecasts"
+    ],
+    "text": "To forecast is to predict what will happen, usually using data. Here William Blair predicts Anthropic's 2030 revenue at $414bn, lower than Goldman's $636bn.",
+    "audio": true
+  },
+  {
+    "k": "william-blair",
+    "t": "William Blair",
+    "kind": "name",
+    "forms": [
+      "William Blair"
+    ],
+    "text": "William Blair is an investment bank. The article notes it is not working on the IPO, which makes its forecast an outside view.",
+    "audio": true
+  },
+  {
+    "k": "shooting-for",
+    "t": "shooting for",
+    "kind": "phrase",
+    "forms": [
+      "shooting for"
+    ],
+    "text": "To shoot for something is to aim to reach it. Here OpenAI told investors its target is $446bn of revenue in 2030.",
+    "audio": true
+  },
+  {
+    "k": "picking-up-the-pace",
+    "t": "picking up the pace",
+    "kind": "phrase",
+    "forms": [
+      "picking up the pace"
+    ],
+    "text": "To pick up the pace means to speed up. Here OpenAI, after falling behind, is growing faster again.",
+    "audio": true
+  },
+  {
+    "k": "enterprise-sales",
+    "t": "enterprise sales",
+    "kind": "name",
+    "forms": [
+      "enterprise sales"
+    ],
+    "text": "Enterprise sales are sales to businesses and other organisations, not to individual consumers. OpenAI says its enterprise revenue doubled from one quarter to the next.",
+    "audio": true
+  },
+  {
+    "k": "price-discounts",
+    "t": "price discounts",
+    "kind": "word",
+    "forms": [
+      "price discounts"
+    ],
+    "text": "A price discount is a reduction in the normal price. Here OpenAI cut prices to undercut Anthropic, meaning to charge less than a rival to win its customers.",
+    "audio": true
+  },
+  {
+    "k": "undercut",
+    "t": "undercut",
+    "kind": "word",
+    "forms": [
+      "undercut"
+    ],
+    "text": "To undercut a competitor is to sell at a lower price than they do in order to win customers from them.",
+    "audio": true
+  },
+  {
+    "k": "adheres-to",
+    "t": "adheres to",
+    "kind": "word",
+    "forms": [
+      "adheres to"
+    ],
+    "text": "To adhere to something usually means to stick to it, like glue or a rule. Here it says revenue follows the pattern of a power law.",
+    "audio": true
+  },
+  {
+    "k": "extreme-power-law",
+    "t": "extreme power law",
+    "kind": "name",
+    "forms": [
+      "extreme power law"
+    ],
+    "text": "A power law is a pattern where a few items are huge and most are tiny. Here a few giant customers and heavy users provide most of the revenue.",
+    "audio": true
+  },
+  {
+    "k": "software-engineers",
+    "t": "software engineers",
+    "kind": "word",
+    "forms": [
+      "software engineers"
+    ],
+    "text": "Software engineers are the people who design and write computer programs. They are the heaviest users of coding agents, so they drive much of the spending.",
+    "audio": true
+  },
+  {
+    "k": "rolled-out",
+    "t": "rolled out",
+    "kind": "phrase",
+    "forms": [
+      "rolled out"
+    ],
+    "text": "To roll out a product is to release it gradually to users. Both companies have launched general-purpose agents this year.",
+    "audio": true
+  },
+  {
+    "k": "non-coders",
+    "t": "non-coders",
+    "kind": "word",
+    "forms": [
+      "non-coders"
+    ],
+    "text": "Non-coders are people who do not write computer code, such as lawyers or marketers. General-purpose agents aim to let them do tasks by simply describing what they want.",
+    "audio": true
+  },
+  {
+    "k": "consulting-giants",
+    "t": "consulting giants",
+    "kind": "word",
+    "forms": [
+      "consulting giants"
+    ],
+    "text": "Consulting giants are the huge firms that advise companies on how to change how they work. The AI labs partner with them to help customers adopt their technology.",
+    "audio": true
+  },
+  {
+    "k": "private-equity",
+    "t": "private-equity",
+    "kind": "name",
+    "forms": [
+      "private-equity"
+    ],
+    "text": "Private equity firms raise money from investors to buy stakes in companies, often to reshape and later sell them for a profit. Blackstone and Hellman & Friedman are two such firms.",
+    "audio": true
+  },
+  {
+    "k": "redesign-their-processes",
+    "t": "redesign their processes",
+    "kind": "word",
+    "forms": [
+      "redesign their processes"
+    ],
+    "text": "A process is the set of steps a company follows to do its work. Redesigning processes means rebuilding those steps around new technology, such as AI agents.",
+    "audio": true
+  },
+  {
+    "k": "aaron-levie",
+    "t": "Aaron Levie",
+    "kind": "name",
+    "forms": [
+      "Aaron Levie"
+    ],
+    "text": "Aaron Levie is the chief executive of Box, a cloud-storage company that works with both AI labs, so he sees both from the customer side.",
+    "audio": true
+  },
+  {
+    "k": "frontier-labs",
+    "t": "frontier labs",
+    "kind": "name",
+    "forms": [
+      "frontier labs"
+    ],
+    "text": "Frontier labs are the handful of companies building the most advanced AI models, the ones at the edge of what is possible.",
+    "audio": true
+  },
+  {
+    "k": "long-horizon",
+    "t": "long-horizon",
+    "kind": "name",
+    "forms": [
+      "long-horizon"
+    ],
+    "text": "A long-horizon task takes many steps over hours or even days, like building an app from scratch. These tasks are a harder test of an AI than a quick question.",
+    "audio": true
+  },
+  {
+    "k": "benchmark",
+    "t": "benchmark",
+    "kind": "word",
+    "forms": [
+      "benchmark"
+    ],
+    "text": "A benchmark is a standard test used to compare performance. Here MirrorCode scores how well AI models handle long coding tasks.",
+    "audio": true
+  },
+  {
+    "k": "regain-ground",
+    "t": "regain ground",
+    "kind": "phrase",
+    "forms": [
+      "regain ground"
+    ],
+    "text": "To regain ground is to win back a position you had lost. OpenAI is trying to recover lost business among companies.",
+    "audio": true
+  },
+  {
+    "k": "addressable-market",
+    "t": "addressable market",
+    "kind": "name",
+    "forms": [
+      "addressable market"
+    ],
+    "text": "The addressable market is the total pool of customers a company could in theory sell to. By serving consumers as well as firms, OpenAI can reach more people than Anthropic.",
+    "audio": true
+  },
+  {
+    "k": "sworn-off",
+    "t": "sworn off",
+    "kind": "phrase",
+    "forms": [
+      "sworn off"
+    ],
+    "text": "To swear off something is to promise to give it up. Anthropic has promised never to use advertising.",
+    "audio": true
+  },
+  {
+    "k": "muddy",
+    "t": "muddy",
+    "kind": "word",
+    "forms": [
+      "muddy"
+    ],
+    "text": "To muddy something is to make it less clear, like stirring mud into water. Anthropic fears ads could make its AI's answers less trustworthy.",
+    "audio": true
+  },
+  {
+    "k": "incentivise",
+    "t": "incentivise",
+    "kind": "word",
+    "forms": [
+      "incentivise"
+    ],
+    "text": "To incentivise is to give someone a reason to do something. Here ads could push the company to build addictive products to keep people looking. The spelling is British.",
+    "audio": true
+  },
+  {
+    "k": "addictive",
+    "t": "addictive",
+    "kind": "word",
+    "forms": [
+      "addictive"
+    ],
+    "text": "Addictive means so compelling that people find it hard to stop using it. Anthropic worries advertising would reward apps that hook users.",
+    "audio": true
+  },
+  {
+    "k": "deprioritised",
+    "t": "deprioritised",
+    "kind": "word",
+    "forms": [
+      "deprioritised"
+    ],
+    "text": "To deprioritise something is to treat it as less important and give it less effort. OpenAI has done this with some projects, such as its video tool.",
+    "audio": true
+  },
+  {
+    "k": "sora",
+    "t": "Sora",
+    "kind": "name",
+    "forms": [
+      "Sora"
+    ],
+    "text": "Sora is OpenAI's video-generation tool, which makes video clips from text descriptions. The article says OpenAI shut it down in March.",
+    "audio": true
+  },
+  {
+    "k": "spreads-too-thinly",
+    "t": "spreads its focus and resources too thinly",
+    "kind": "phrase",
+    "forms": [
+      "spreads its focus and resources too thinly"
+    ],
+    "text": "To spread yourself too thin is to try to do so many things that none gets enough attention. The article's warning is that OpenAI's many projects may leave it weaker at each.",
+    "audio": true
+  },
+  {
+    "k": "humanoid-robot",
+    "t": "humanoid robot",
+    "kind": "name",
+    "forms": [
+      "humanoid robot"
+    ],
+    "text": "A humanoid robot has a human-like shape, with a body, arms, and legs. OpenAI is reportedly developing one.",
+    "audio": true
+  },
+  {
+    "k": "for-good-measure",
+    "t": "for good measure",
+    "kind": "phrase",
+    "forms": [
+      "for good measure"
+    ],
+    "text": "For good measure means as an extra, beyond what was needed. The Economist notes with dry humour that OpenAI is also building a robot on top of everything else.",
+    "audio": true
+  },
+  {
+    "k": "deep-in-the-red",
+    "t": "deep in the red",
+    "kind": "phrase",
+    "forms": [
+      "deep in the red"
+    ],
+    "text": "To be in the red means to be losing money, from the red ink once used for losses. Deep in the red means losing a great deal.",
+    "audio": true
+  },
+  {
+    "k": "operating-profit",
+    "t": "operating profit",
+    "kind": "name",
+    "forms": [
+      "operating profit"
+    ],
+    "text": "Operating profit is what is left after paying the costs of running the business. Anthropic recorded its first positive one this year.",
+    "audio": true
+  },
+  {
+    "k": "public-markets",
+    "t": "public markets",
+    "kind": "name",
+    "forms": [
+      "public markets"
+    ],
+    "text": "The public markets are the stock exchanges where ordinary investors can buy shares. Going there raises money, which OpenAI needs because it is losing money.",
+    "audio": true
+  }
+]

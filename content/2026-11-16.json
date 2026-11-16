@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-16",
+  "title": "Anthropic’s giant IPO puts the heat on OpenAI",
+  "articleUrl": "https://www.economist.com/business/2026/11/15/anthropics-giant-ipo-puts-the-heat-on-openai",
+  "articlePageUrl": "/articles/2026-11-16.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "trounce",
+      "partOfSpeech": "verb",
+      "pronunciation": "TROWNSS",
+      "articleQuote": "Anthropic trounced it in the second phase, where coding agents became the biggest source of business.",
+      "meaning": "To trounce someone is to defeat them completely and by a wide margin, the way a team that wins 50 to 3 has trounced its opponent. It is stronger than simply beating someone, and it is common in sports, elections, and business. Here the Economist uses it to say that Anthropic did not just edge past OpenAI in coding agents but pulled far ahead, even though OpenAI had led the earlier chatbot phase.",
+      "examples": [
+        "Our school's debate team trounced the visitors, winning every round.",
+        "The incumbent was trounced in the election and lost by thirty points."
+      ]
+    },
+    {
+      "word": "secessionist",
+      "partOfSpeech": "noun",
+      "pronunciation": "sih-SESH-uh-nist",
+      "articleQuote": "Anthropic, founded by a team of OpenAI secessionists",
+      "meaning": "A secessionist is someone who breaks away from a larger group, organisation, or country to form a separate one of their own. The word comes from secession, and it is most famous from the American Civil War, when Southern states seceded from the Union. Here it is used playfully: Anthropic was started by people who left OpenAI, so they are described as having broken away from it, which makes their rivalry feel like a family quarrel.",
+      "examples": [
+        "The secessionists left the club after the argument and started their own team across town.",
+        "Catalonia has a vocal secessionist movement that wants independence from Spain."
+      ]
+    },
+    {
+      "word": "beguile",
+      "partOfSpeech": "verb",
+      "pronunciation": "bih-GYLE",
+      "articleQuote": "personal agents such as Instinct and Meta’s Muse, which have lately beguiled users with their ability to take on tasks",
+      "meaning": "To beguile is to charm or captivate someone so strongly that they are delighted, and sometimes a little fooled. It can mean enchanting, as a story beguiles a child, or tricking someone with charm. Here it describes users being won over by personal AI agents that can do real chores for them, such as arranging a dinner or finding sold-out concert tickets, which is why these agents are a new threat to the chatbot makers.",
+      "examples": [
+        "The magician beguiled the audience with a trick nobody could explain.",
+        "She was beguiled by the old town's winding streets and candlelit cafes."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "How an IPO works",
+      "articleQuote": "Anthropic, founded by a team of OpenAI secessionists, that this week is expected to raise the largest sum of all time in an initial public offering, with a haul of $90bn.",
+      "meaning": "Finance: a company is owned by its shareholders, and until it \"goes public\" only a few people, such as founders, employees, and private investors, hold its shares. An initial public offering, or IPO, is the day the company sells new shares to the general public for the first time and starts trading on a stock exchange. Think of a family restaurant that decides to sell small slices of ownership to anyone who wants one.\n\nTwo numbers in the article show how it works. The first is the **haul**: the company sells shares and keeps the cash, here a record $90bn, which it can spend on computers, researchers, and growth. The second is the **market value**, or valuation: the price of one share times the number of all shares. Anthropic is reportedly aiming for $1.5trn, above the $1.3trn at which investors privately valued still-unlisted OpenAI. A bank, here Goldman Sachs as the lead, helps set the price and find buyers.\n\nWhy does it matter? Going public gives a company a huge pile of money to compete with, which is why the article says OpenAI \"will need to follow its rival into the public markets as soon as it can.\" The cost is more scrutiny: public companies must publish detailed documents, like the prospectus the article mentions. The takeaway: an IPO trades part of the company for cash and publicity."
+    },
+    {
+      "name": "The “extreme power law” of customer revenue",
+      "articleQuote": "Revenue from agents currently adheres to an “extreme power law,” says one Anthropic investor.",
+      "meaning": "Statistics and business: a power law describes a lopsided world where a few things are enormous and most are tiny, instead of everything clustering around an average. Heights are not like this, since nobody is a thousand times taller than you. Money often is: a handful of bestselling books earn most of the industry's income, and a few video-game players spend most of a game's revenue.\n\nThe article says AI agents work this way. The biggest customers provide an unusually high share of sales, and inside those companies the heaviest users, nearly always software engineers, drive much of the spending. So if you picture a thousand customers paying equally, you are picturing the wrong thing; a few dozen may pay for almost everything.\n\nThis cuts both ways, and the article names both. It is a **risk**: if those few heavy users switch to cheaper models, as many have begun to do, revenue could fall fast. It is also an **opportunity**: because use is so concentrated, there is plenty of room to grow by getting non-coders to use agents too. The takeaway: when revenue comes from a few big spenders, look at who they are and whether they could leave."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, in which phase of the AI competition did Anthropic overtake OpenAI?",
+      "options": [
+        "The first phase, built around chatbots",
+        "The second phase, built around coding agents",
+        "The phase of consumer advertising",
+        "The phase of humanoid robots"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says OpenAI led the chatbot phase but Anthropic trounced it once coding agents became the biggest source of business."
+    },
+    {
+      "question": "What does an initial public offering (IPO) do for a company like Anthropic?",
+      "options": [
+        "It lets the company sell shares to the public for the first time and raise cash",
+        "It forces the company to merge with a rival",
+        "It gives the government control of the company",
+        "It cancels the company's private investors' shares"
+      ],
+      "answerIndex": 0,
+      "explanation": "An IPO is the first sale of shares to the general public, which brings the company cash, here an expected $90bn."
+    },
+    {
+      "question": "Why does the article say it is hard to compare Anthropic's and OpenAI's revenue directly?",
+      "options": [
+        "Anthropic does not report revenue",
+        "OpenAI counts only subscriptions",
+        "Anthropic counts all sales through cloud partners as revenue, while OpenAI subtracts the share it pays them",
+        "The two firms use different currencies"
+      ],
+      "answerIndex": 2,
+      "explanation": "Anthropic registers all cloud-partner sales as revenue, whereas OpenAI strips out the share it pays over to those partners."
+    },
+    {
+      "question": "What does an “extreme power law” in agent revenue mean here?",
+      "options": [
+        "Revenue is spread evenly across all customers",
+        "A few of the biggest customers and heaviest users provide most of the sales",
+        "Prices rise every month",
+        "Only consumers, not companies, pay for agents"
+      ],
+      "answerIndex": 1,
+      "explanation": "The biggest customers, and the heaviest users in them, mostly software engineers, contribute an unusually large share of revenue."
+    },
+    {
+      "question": "Why does the article suggest OpenAI has a bigger addressable market than Anthropic?",
+      "options": [
+        "Anthropic has no customers",
+        "OpenAI also pursues consumers, with 1.2bn weekly users and an advertising business, while Anthropic has sworn off advertising",
+        "OpenAI's models are cheaper than any rival's",
+        "Anthropic is not allowed to sell to companies"
+      ],
+      "answerIndex": 1,
+      "explanation": "OpenAI serves consumers as well as businesses, including ads, while Anthropic's prospectus barely mentions consumers and it has sworn off advertising."
+    }
+  ]
+}
