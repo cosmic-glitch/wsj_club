@@ -1,0 +1,555 @@
+[
+  {
+    "k": "venerated",
+    "t": "venerated",
+    "kind": "vocab",
+    "pron": "VEN-er-ay-ted",
+    "forms": [
+      "venerated"
+    ],
+    "text": "To be venerated is to be treated with deep respect, almost like something holy. Here, many people see Ram as the perfect son, husband, brother and king.",
+    "audio": true
+  },
+  {
+    "k": "stilted",
+    "t": "stilted",
+    "kind": "vocab",
+    "pron": "STIL-ted",
+    "forms": [
+      "stilted"
+    ],
+    "text": "Stilted speech sounds stiff and unnatural, as if nobody would really talk that way. Here, the film's dialogue makes the characters feel less real.",
+    "audio": true
+  },
+  {
+    "k": "flamboyant",
+    "t": "flamboyant",
+    "kind": "vocab",
+    "pron": "flam-BOY-ent",
+    "forms": [
+      "flamboyant"
+    ],
+    "text": "Flamboyant means bold, showy and full of style. Here, the demon Ravana is more eye-catching than the perfect hero.",
+    "audio": true
+  },
+  {
+    "k": "box-office",
+    "t": "box office",
+    "kind": "word",
+    "forms": [
+      "box office"
+    ],
+    "text": "The box office is the money a movie earns from ticket sales, and also the ranking of movies by that money. Here, the film is number one in India.",
+    "audio": true
+  },
+  {
+    "k": "cinematic-universe",
+    "t": "cinematic universe",
+    "kind": "phrase",
+    "forms": [
+      "cinematic universe"
+    ],
+    "text": "A cinematic universe is a group of movies and other stories set in one shared world, like Marvel's superhero films. Here, the producers hope to build one from the Ramayana.",
+    "audio": true
+  },
+  {
+    "k": "epic",
+    "t": "epic",
+    "kind": "word",
+    "forms": [
+      "epic"
+    ],
+    "text": "An epic is a very long story, often a poem, about heroes and great battles. Here, the Ramayana is one that is about 3,000 years old.",
+    "audio": true
+  },
+  {
+    "k": "triumphs",
+    "t": "triumphs",
+    "kind": "word",
+    "forms": [
+      "triumphs"
+    ],
+    "text": "To triumph is to win a big victory. Here, good beats evil in the story.",
+    "audio": true
+  },
+  {
+    "k": "cosmic-order",
+    "t": "cosmic order",
+    "kind": "phrase",
+    "forms": [
+      "cosmic order"
+    ],
+    "text": "Cosmic order means the way the universe is meant to be, balanced and fair. Here, it is the peace that returns when the demon loses.",
+    "audio": true
+  },
+  {
+    "k": "splashiest",
+    "t": "splashiest",
+    "kind": "word",
+    "forms": [
+      "splashiest"
+    ],
+    "text": "Splashy means flashy and designed to get lots of attention. Splashiest means the most of that. Here, this is the most dazzling retelling yet.",
+    "audio": true
+  },
+  {
+    "k": "instalment",
+    "t": "instalment",
+    "kind": "word",
+    "forms": [
+      "instalment"
+    ],
+    "text": "An instalment is one part of something that comes out in pieces, such as one movie in a two-part story.",
+    "audio": true
+  },
+  {
+    "k": "adaptation",
+    "t": "adaptation",
+    "kind": "word",
+    "forms": [
+      "adaptation"
+    ],
+    "text": "An adaptation is a story changed into a new form, such as a poem turned into a movie.",
+    "audio": true
+  },
+  {
+    "k": "diwali",
+    "t": "Diwali",
+    "kind": "name",
+    "forms": [
+      "Diwali"
+    ],
+    "text": "Diwali is the Hindu festival of lights, celebrated in autumn with lamps, sweets and family. The second film is planned for around then in 2028.",
+    "audio": true
+  },
+  {
+    "k": "spin-offs",
+    "t": "spin-offs",
+    "kind": "word",
+    "forms": [
+      "spin-offs"
+    ],
+    "text": "A spin-off is a new story that grows out of an older one, often following a side character.",
+    "audio": true
+  },
+  {
+    "k": "merchandise",
+    "t": "merchandise",
+    "kind": "word",
+    "forms": [
+      "merchandise"
+    ],
+    "text": "Merchandise means things sold to fans, like toys, shirts and posters, based on a movie or show.",
+    "audio": true
+  },
+  {
+    "k": "hans-zimmer",
+    "t": "Hans Zimmer",
+    "kind": "name",
+    "forms": [
+      "Hans Zimmer"
+    ],
+    "text": "Hans Zimmer is a famous composer who writes music for movies. He helped write the film's score.",
+    "audio": true
+  },
+  {
+    "k": "oscar-winning",
+    "t": "Oscar-winning",
+    "kind": "phrase",
+    "forms": [
+      "Oscar-winning"
+    ],
+    "text": "Oscar-winning means having won an Academy Award, the biggest prize in American film.",
+    "audio": true
+  },
+  {
+    "k": "composer",
+    "t": "composer",
+    "kind": "word",
+    "forms": [
+      "composer"
+    ],
+    "text": "A composer is a person who writes music.",
+    "audio": true
+  },
+  {
+    "k": "dneg",
+    "t": "DNEG",
+    "kind": "name",
+    "forms": [
+      "DNEG"
+    ],
+    "text": "DNEG is a company that makes visual effects, the computer-made images in big movies.",
+    "audio": true
+  },
+  {
+    "k": "visual-effects",
+    "t": "visual-effects",
+    "kind": "phrase",
+    "forms": [
+      "visual-effects"
+    ],
+    "text": "Visual effects are images made or changed by computers, like flying creatures or giant explosions.",
+    "audio": true
+  },
+  {
+    "k": "mythological",
+    "t": "mythological",
+    "kind": "word",
+    "forms": [
+      "mythological"
+    ],
+    "text": "Mythological means about myths, the ancient stories of gods and heroes.",
+    "audio": true
+  },
+  {
+    "k": "divine-dividends",
+    "t": "divine dividends",
+    "kind": "phrase",
+    "forms": [
+      "divine dividends"
+    ],
+    "text": "A dividend is a payoff from an investment. Here the writer is making a pun: the money spent has paid off, and the story is about gods.",
+    "audio": true
+  },
+  {
+    "k": "sumptuous",
+    "t": "sumptuous",
+    "kind": "word",
+    "forms": [
+      "sumptuous"
+    ],
+    "text": "Sumptuous means rich, grand and lovely to look at. Here, the film's pictures are gorgeous and clearly expensive.",
+    "audio": true
+  },
+  {
+    "k": "visual-feast",
+    "t": "visual feast",
+    "kind": "phrase",
+    "forms": [
+      "visual feast"
+    ],
+    "text": "A feast is a big meal. A visual feast is something so full of beautiful images that your eyes feel well fed.",
+    "audio": true
+  },
+  {
+    "k": "demi-god",
+    "t": "demi-god",
+    "kind": "word",
+    "forms": [
+      "demi-god"
+    ],
+    "text": "A demi-god is a being who is partly a god. Here, a great vulture with godlike powers attacks a chariot.",
+    "audio": true
+  },
+  {
+    "k": "staple",
+    "t": "staple",
+    "kind": "word",
+    "forms": [
+      "staple"
+    ],
+    "text": "A staple is something that is always there, a usual main part. Here, slow-motion hero shots are a regular part of Indian movies.",
+    "audio": true
+  },
+  {
+    "k": "mesmerised",
+    "t": "mesmerised",
+    "kind": "word",
+    "forms": [
+      "mesmerised"
+    ],
+    "text": "To be mesmerised is to be so fascinated that you cannot look away.",
+    "audio": true
+  },
+  {
+    "k": "spectacle",
+    "t": "spectacle",
+    "kind": "word",
+    "forms": [
+      "spectacle"
+    ],
+    "text": "A spectacle is a dazzling show with lots to see. Here, the film puts big visuals ahead of a good story.",
+    "audio": true
+  },
+  {
+    "k": "neglected",
+    "t": "neglected",
+    "kind": "word",
+    "forms": [
+      "neglected"
+    ],
+    "text": "To neglect something is to not give it enough care or attention. Here, the director paid too little attention to story and characters.",
+    "audio": true
+  },
+  {
+    "k": "craft",
+    "t": "craft",
+    "kind": "word",
+    "forms": [
+      "craft"
+    ],
+    "text": "Craft means the skill and technique needed to make something well, like writing or filming.",
+    "audio": true
+  },
+  {
+    "k": "character-development",
+    "t": "character development",
+    "kind": "phrase",
+    "forms": [
+      "character development"
+    ],
+    "text": "Character development is how a story shows a person growing and changing, so we get to know them.",
+    "audio": true
+  },
+  {
+    "k": "ticks-off",
+    "t": "ticks off",
+    "kind": "phrase",
+    "forms": [
+      "ticks off"
+    ],
+    "text": "To tick off a list is to mark each item as done. Here, the plot rushes through famous scenes one by one, like a checklist.",
+    "audio": true
+  },
+  {
+    "k": "dharma",
+    "t": "dharma",
+    "kind": "word",
+    "forms": [
+      "dharma"
+    ],
+    "text": "Dharma is a Hindu idea meaning doing what is right and living by your duty. The article glosses it as righteousness.",
+    "audio": true
+  },
+  {
+    "k": "righteousness",
+    "t": "righteousness",
+    "kind": "word",
+    "forms": [
+      "righteousness"
+    ],
+    "text": "Righteousness means being morally good and doing the right thing.",
+    "audio": true
+  },
+  {
+    "k": "flawless",
+    "t": "flawless",
+    "kind": "word",
+    "forms": [
+      "flawless"
+    ],
+    "text": "Flawless means having no flaws or faults at all.",
+    "audio": true
+  },
+  {
+    "k": "compelling",
+    "t": "compelling",
+    "kind": "word",
+    "forms": [
+      "compelling"
+    ],
+    "text": "Compelling means so interesting that you can't stop watching or reading.",
+    "audio": true
+  },
+  {
+    "k": "listless",
+    "t": "listless",
+    "kind": "word",
+    "forms": [
+      "listless"
+    ],
+    "text": "Listless means without energy or interest. Here, the actor seems tired and dull as Ram.",
+    "audio": true
+  },
+  {
+    "k": "portrayal",
+    "t": "portrayal",
+    "kind": "word",
+    "forms": [
+      "portrayal"
+    ],
+    "text": "A portrayal is the way an actor or artist shows a character.",
+    "audio": true
+  },
+  {
+    "k": "dramatises",
+    "t": "dramatises",
+    "kind": "word",
+    "forms": [
+      "dramatises"
+    ],
+    "text": "To dramatise a true or old story is to turn it into a play, show or film.",
+    "audio": true
+  },
+  {
+    "k": "creative-liberties",
+    "t": "creative liberties",
+    "kind": "phrase",
+    "forms": [
+      "creative liberties"
+    ],
+    "text": "Taking creative liberties means changing parts of a story to make it work better, instead of copying it exactly.",
+    "audio": true
+  },
+  {
+    "k": "humanise",
+    "t": "humanise",
+    "kind": "word",
+    "forms": [
+      "humanise"
+    ],
+    "text": "To humanise someone is to make them feel more like a real person, with feelings and flaws.",
+    "audio": true
+  },
+  {
+    "k": "sacred",
+    "t": "sacred",
+    "kind": "word",
+    "forms": [
+      "sacred"
+    ],
+    "text": "Sacred means holy, or deserving great respect because of religion.",
+    "audio": true
+  },
+  {
+    "k": "glorifying",
+    "t": "glorifying",
+    "kind": "word",
+    "forms": [
+      "glorifying"
+    ],
+    "text": "To glorify something is to make it seem wonderful or admirable. Here, critics say the film makes the villain look too cool.",
+    "audio": true
+  },
+  {
+    "k": "milton",
+    "t": "John Milton",
+    "kind": "name",
+    "forms": [
+      "John Milton"
+    ],
+    "text": "John Milton was an English poet who wrote Paradise Lost, a long poem about Satan and the fall of humans.",
+    "audio": true
+  },
+  {
+    "k": "paradise-lost",
+    "t": "Paradise Lost",
+    "kind": "name",
+    "forms": [
+      "Paradise Lost"
+    ],
+    "text": "Paradise Lost is a famous long poem from the 1600s. Many readers found its Satan more interesting than the heroes.",
+    "audio": true
+  },
+  {
+    "k": "sympathetic",
+    "t": "sympathetic",
+    "kind": "word",
+    "forms": [
+      "sympathetic"
+    ],
+    "text": "Sympathetic here means likeable enough that you feel for the person, even a bad one.",
+    "audio": true
+  },
+  {
+    "k": "adipurush",
+    "t": "Adipurush",
+    "kind": "name",
+    "forms": [
+      "Adipurush"
+    ],
+    "text": "Adipurush is a 2023 Indian film of the same story. People were so angry about it that some wanted it banned.",
+    "audio": true
+  },
+  {
+    "k": "provoked",
+    "t": "provoked",
+    "kind": "word",
+    "forms": [
+      "provoked"
+    ],
+    "text": "To provoke a reaction is to cause it, often an angry one.",
+    "audio": true
+  },
+  {
+    "k": "fury",
+    "t": "fury",
+    "kind": "word",
+    "forms": [
+      "fury"
+    ],
+    "text": "Fury is very strong anger.",
+    "audio": true
+  },
+  {
+    "k": "cartoonish",
+    "t": "cartoonish",
+    "kind": "word",
+    "forms": [
+      "cartoonish"
+    ],
+    "text": "Cartoonish means looking silly or unreal, like a cartoon.",
+    "audio": true
+  },
+  {
+    "k": "public-interest-lawsuits",
+    "t": "public-interest lawsuits",
+    "kind": "phrase",
+    "forms": [
+      "public-interest lawsuits"
+    ],
+    "text": "A public-interest lawsuit is a court case brought, not for personal gain, but because someone thinks it protects the public.",
+    "audio": true
+  },
+  {
+    "k": "distribution",
+    "t": "distribution",
+    "kind": "word",
+    "forms": [
+      "distribution"
+    ],
+    "text": "Distribution is getting a film out to theaters and streaming services so people can see it.",
+    "audio": true
+  },
+  {
+    "k": "streaming-platforms",
+    "t": "streaming platforms",
+    "kind": "phrase",
+    "forms": [
+      "streaming platforms"
+    ],
+    "text": "Streaming platforms are services like Netflix that let you watch movies over the internet.",
+    "audio": true
+  },
+  {
+    "k": "largely-faithful",
+    "t": "largely faithful",
+    "kind": "phrase",
+    "forms": [
+      "largely faithful"
+    ],
+    "text": "A faithful retelling sticks closely to the original story.",
+    "audio": true
+  },
+  {
+    "k": "conquer",
+    "t": "conquer",
+    "kind": "word",
+    "forms": [
+      "conquer"
+    ],
+    "text": "To conquer is to defeat or overcome. Here is the joke: Ram can beat a demon, but not a weak script.",
+    "audio": true
+  },
+  {
+    "k": "script",
+    "t": "script",
+    "kind": "word",
+    "forms": [
+      "script"
+    ],
+    "text": "A script is the written text of a movie, with its story and every line the actors say.",
+    "audio": true
+  }
+]

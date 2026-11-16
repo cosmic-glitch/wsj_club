@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-16",
+  "title": "“Ramayana”, India’s biggest film, turns a Hindu god into a star",
+  "articleUrl": "https://www.economist.com/culture/2026/11/12/ramayana-indias-biggest-film-turns-a-hindu-god-into-a-star",
+  "articlePageUrl": "/articles/junior/2026-11-16.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "venerated",
+      "partOfSpeech": "adjective",
+      "pronunciation": "VEN-er-ay-ted",
+      "articleQuote": "He is venerated for embodying dharma",
+      "meaning": "To be venerated is to be treated with deep respect, almost like something holy. People venerate a person or thing they admire very much. A town might venerate a hero who saved it from a flood. In the article, Ram is venerated by many Hindus because he is seen as the perfect son, husband, brother and king-in-waiting.",
+      "examples": [
+        "The team venerated their old coach and kept his jersey on the wall.",
+        "In many cultures, grandparents are venerated for their wisdom."
+      ]
+    },
+    {
+      "word": "stilted",
+      "partOfSpeech": "adjective",
+      "pronunciation": "STIL-ted",
+      "articleQuote": "The dialogue is stilted and clumsy.",
+      "meaning": "Speech or writing that is stilted sounds stiff and unnatural, as if nobody would really talk that way. Think of an actor reading lines from a page without feeling them. If your friend answers a question in the voice of a robot, you could say the answer was stilted. In the article, the film's dialogue sounds stilted, so the characters don't feel like real people.",
+      "examples": [
+        "His speech was stilted because he had memorized every word.",
+        "The characters in the old play sounded stilted to modern ears."
+      ]
+    },
+    {
+      "word": "flamboyant",
+      "partOfSpeech": "adjective",
+      "pronunciation": "flam-BOY-ent",
+      "articleQuote": "emerges as flamboyant and charismatic",
+      "meaning": "Someone flamboyant is bold, showy and full of style, and they love being noticed. Picture a magician in a sparkly cape who bows after every trick. A flamboyant person or thing grabs attention on purpose. In the article, the demon Ravana is flamboyant, so he is more fun to watch than the perfect hero.",
+      "examples": [
+        "The singer wore a flamboyant red coat covered in sequins.",
+        "My uncle has a flamboyant laugh that fills the whole room."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Box office",
+      "articleQuote": "ruling the box office",
+      "meaning": "When a movie is “ruling the box office,” what does that mean? **Box office** is the money a movie earns from selling tickets, and the word also means the list that ranks movies by how much they earned.\n\nThe name comes from the little booth at a theater where tickets are sold. Today, most tickets are bought online, but people still say box office for ticket sales.\n\nImagine two movies open on the same weekend. One sells a million dollars of tickets and the other sells half a million. The first one is number one at the box office. Newspapers report it, and studios pay close attention.\n\nBox office matters because movies cost a lot to make. A film that cost $430m, like the one in the article, has to earn a huge amount just to break even. A movie can also win in one country and flop in another, which is why the article asks about the *global* box office.\n\nSo the takeaway: box office is the ticket money a movie earns, and it is how the film business keeps score."
+    },
+    {
+      "name": "Cinematic universe",
+      "articleQuote": "Marvel-style cinematic universe",
+      "meaning": "Why would a film company plan spin-offs, video games and theme parks all at once? Because it wants to build a **cinematic universe**: a set of movies and other stories that share the same world and characters, so each one makes people want the next.\n\nThe idea is like a school sports league. You don't just watch one game. You follow your team all season, you know the players, and you come back for the next match.\n\nIn a cinematic universe, a side character from one movie can get their own movie. Fans who loved the first film buy tickets, toys and games for the rest. Marvel, with its superheroes, is the most famous example.\n\nThe risk is that if the first movie is weak, fewer people care about everything that follows. That is why the article says the producers have big plans, but a bad script could hold them back.\n\nSo the takeaway: a cinematic universe is many stories in one shared world, built so that fans keep coming back."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the “Ramayana” about, according to the article?",
+      "options": [
+        "A modern spy who saves a city",
+        "Ram, a Hindu god-king, who battles the demon Ravana",
+        "A group of friends who start a band",
+        "A scientist who builds a flying elephant"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says the epic poem is about Ram battling Ravana, where good triumphs over evil."
+    },
+    {
+      "question": "Why is this version of the “Ramayana” unusual?",
+      "options": [
+        "It is a silent film",
+        "It cost very little to make",
+        "It is the most expensive Indian film ever and has global ambitions",
+        "It was made only for television"
+      ],
+      "answerIndex": 2,
+      "explanation": "With a budget of $430m and Western talent like Hans Zimmer, it is the first adaptation with explicitly global ambitions."
+    },
+    {
+      "question": "What does “stilted” mean in “The dialogue is stilted and clumsy”?",
+      "options": [
+        "Stiff and unnatural",
+        "Very funny",
+        "Loud and fast",
+        "Full of rhymes"
+      ],
+      "answerIndex": 0,
+      "explanation": "Stilted speech sounds stiff, as though no real person would talk that way."
+    },
+    {
+      "question": "Why is it hard to make Ram an exciting hero?",
+      "options": [
+        "He never appears in the story",
+        "He is flawless, and flawless people are rarely compelling",
+        "He is a villain",
+        "Nobody in India knows his story"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says Ram is venerated as the ideal man, but flawless men rarely make for compelling heroes."
+    },
+    {
+      "question": "Why might the film struggle to become a global hit?",
+      "options": [
+        "It focuses on spectacle and neglects story and character",
+        "It is too short",
+        "Audiences in India disliked it",
+        "It has no music"
+      ],
+      "answerIndex": 0,
+      "explanation": "Audiences in India love it, but the writer says it neglects story and character development, which may stop it from winning over viewers abroad."
+    }
+  ]
+}
