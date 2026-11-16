@@ -12,7 +12,7 @@ The track runs on autopilot daily (the `auto-vote` skill builds a kids ballot fr
 ## Who this is for (the calibration)
 
 - **Reading level:** roughly grade 2–4 text. Short sentences (aim under ~13 words on average), mostly one- and two-syllable words, one idea per paragraph, concrete nouns. A few new words are the point (the handout teaches three), but a paragraph that stacks several unknown words is a pass.
-- **Length:** **150–600 words** is the sweet spot; **800 is the hard ceiling**. Under ~120 words is usually too thin to support three vocab words and a concept.
+- **Length:** prefer **400+ words**: **400–700** is the sweet spot; **800 is the hard ceiling**. A piece under 400 makes the five only when nothing at length fits, at most one of them. Under ~120 words is too thin to support three vocab words and a concept.
 - **Story over argument:** an animal, a kid who did something, a discovery, how a thing works, a holiday's origin, a record broken. Avoid opinion/debate pieces, policy, money/markets, and anything that needs a backdrop the reader can't have (elections are fine *only* when the article itself explains what voting is).
 - **Appropriateness is a 6-year-old's parent's call.** Stricter than junior: no violence, war, crime, disasters with casualties, death as the focus, scary health topics, or bleak news. A storm piece about how storms work is fine; one about a town's losses is not. When in doubt, leave it out.
 - **Handout fit:** the eventual handout needs **3 words** in a grade-3 "stretch" register (*curious, cramped, unique, gather, enormous, protect, rare, journey*; not *sight*-level words, not middle-school ones) and **at most 1 concept** (a durable piece of the world the article leans on: what a national park is, what gravity does, what a habitat is). Name both for every pick.
@@ -21,7 +21,7 @@ The track runs on autopilot daily (the `auto-vote` skill builds a kids ballot fr
 
 ### Tier 1: native level, scout these first
 - **TIME for Kids, Grades 3–4 edition**: `https://www.timeforkids.com/g34/` (index, paginated `/g34/page/2/`…; topic hubs at `/g34/topics/<animals|science|space|history|…>/`). Current news written for this band. Article URLs look like `/g34/<slug>/`. Body container: `.article-show__content-article`.
-- **TIME for Kids, Grade 2 edition**: `https://www.timeforkids.com/g2/`. Easier and shorter (often ~100–200 words). Good when the G3–4 field is thin or too hard this week; check it isn't too short to build a handout on.
+- **TIME for Kids, Grade 2 edition**: `https://www.timeforkids.com/g2/`. Easier and shorter (often ~100–300 words), so usually under the 400-word preference: a fallback for when the G3–4 field is thin or too hard this week, and never over a G3–4 twin of the same story.
 - **Twin editions:** TFK often runs the same story in both editions (e.g. Route 66: `/g34/miles-of-history-g3/` at ~520 words and `/g2/historic-route-g2/` at ~280). When a pick has a twin, list both with their measurements so the owner can choose the level.
 - **Power words:** TFK marks its own glossary words inline (`.powerword`, definition hidden in a `.definition` span). They're the editors' signal for what a reader at this level won't know: a good starting list for the three handout words, though not binding.
 - TFK also has a K–1 edition (`/k1/`); below this reader, don't use it. Some TFK pieces may be subscriber-only: if the body is truncated or shows a subscribe/log-in prompt, skip the piece (never try to log in). Many short pieces (news briefs under ~120 words) are too thin; skip them.
