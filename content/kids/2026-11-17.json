@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-17",
+  "title": "A giant bridge for wild animals",
+  "articleUrl": "https://www.timeforkids.com/g34/wildlife-crossing-g3/",
+  "articlePageUrl": "/articles/kids/2026-11-17.html",
+  "voiceQuiz": true,
+  "source": "TIME for Kids",
+  "vocab": [
+    {
+      "word": "barrier",
+      "partOfSpeech": "noun",
+      "pronunciation": "BAIR-ee-er",
+      "articleQuote": "Sikich told TIME for Kids that the 101 freeway “is a major barrier” for the lions.",
+      "meaning": "A barrier is something that blocks the way. It stops you from getting to the other side. In the article, the busy freeway is a barrier for the mountain lions, because they cannot cross it safely.",
+      "examples": [
+        "The baby gate is a barrier that keeps our puppy out of the kitchen.",
+        "A tall fence was a barrier between the playground and the street."
+      ]
+    },
+    {
+      "word": "curious",
+      "partOfSpeech": "adjective",
+      "pronunciation": "KYOOR-ee-us",
+      "articleQuote": "“Wildlife is often more curious and adaptable than we expect,” Riley says.",
+      "meaning": "When you are curious, you want to know more about something. You look closely and ask questions. In the article, a small lizard was curious about the bridge and climbed up to look at it, even before it was finished.",
+      "examples": [
+        "My cat was curious about the new box, so she hopped right in.",
+        "I was curious about the bug, so I watched it for a long time."
+      ]
+    },
+    {
+      "word": "gather",
+      "partOfSpeech": "verb",
+      "pronunciation": "GATH-er",
+      "articleQuote": "People gathered for a memorial (above) in his honor in 2023.",
+      "meaning": "To gather means to come together in one place. A group of people or animals can gather. In the article, many people gathered to remember a famous mountain lion named P-22.",
+      "examples": [
+        "We gather around the table for dinner every night.",
+        "The kids gathered at the park to fly kites."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Habitat",
+      "articleQuote": "They split habitats.",
+      "meaning": "Freeways are a problem for wild animals. The article says they split habitats. What is a habitat?\n\nA habitat is the natural place where an animal lives. It has the food, water, and shelter that the animal needs. A fish's habitat is a pond. A bear's habitat is a forest. Think of it like an animal's home and neighborhood.\n\nAnimals need to move around in their habitat to find food, water, and friends. A big road cuts a habitat in two. Animals on one side cannot safely reach the other side. A wildlife bridge fixes this. It lets animals walk over the road and use the whole habitat again.\n\nA habitat is the place in nature where an animal lives and finds what it needs."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the Wallis Annenberg Wildlife Crossing?",
+      "options": [
+        "A bridge for animals to cross over a busy freeway",
+        "A new zoo in Los Angeles",
+        "A tunnel for trains",
+        "A park for dogs"
+      ],
+      "answerIndex": 0,
+      "explanation": "It is a bridge over a freeway so wild animals can cross safely."
+    },
+    {
+      "question": "Why is the freeway a problem for mountain lions?",
+      "options": [
+        "It is too quiet",
+        "It has no water",
+        "It keeps them from meeting mountain lions on the other side",
+        "It is covered with plants"
+      ],
+      "answerIndex": 2,
+      "explanation": "The freeway separates groups of lions, so they have fewer chances to find mates."
+    },
+    {
+      "question": "The freeway is a \"barrier\" for the lions. What does barrier mean?",
+      "options": [
+        "A snack",
+        "Something that blocks the way",
+        "A kind of bridge",
+        "A loud noise"
+      ],
+      "answerIndex": 1,
+      "explanation": "A barrier blocks the way so you cannot get to the other side."
+    },
+    {
+      "question": "What will the bridge be covered with so it feels natural?",
+      "options": [
+        "Cars and signs",
+        "Snow and ice",
+        "Soil and plants",
+        "Sand and shells"
+      ],
+      "answerIndex": 2,
+      "explanation": "Soil, plants, and small rock piles will make it feel like a natural part of the land."
+    },
+    {
+      "question": "What is a habitat?",
+      "options": [
+        "A kind of camera",
+        "A name for a mountain lion",
+        "A busy road",
+        "The natural place where an animal lives"
+      ],
+      "answerIndex": 3,
+      "explanation": "A habitat has the food, water, and shelter an animal needs."
+    }
+  ]
+}

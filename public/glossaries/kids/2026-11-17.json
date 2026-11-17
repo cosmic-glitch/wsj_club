@@ -1,0 +1,503 @@
+[
+  {
+    "k": "barrier",
+    "t": "barrier",
+    "kind": "vocab",
+    "pron": "BAIR-ee-er",
+    "forms": [
+      "barrier"
+    ],
+    "text": "A barrier is something that blocks the way. The freeway is a barrier for the mountain lions.",
+    "audio": true
+  },
+  {
+    "k": "curious",
+    "t": "curious",
+    "kind": "vocab",
+    "pron": "KYOOR-ee-us",
+    "forms": [
+      "curious"
+    ],
+    "text": "When you are curious, you want to know more about something. The lizard was curious about the bridge.",
+    "audio": true
+  },
+  {
+    "k": "gather",
+    "t": "gathered",
+    "kind": "vocab",
+    "pron": "GATH-er",
+    "forms": [
+      "gathered"
+    ],
+    "text": "To gather means to come together in one place. Many people gathered to remember P-22.",
+    "audio": true
+  },
+  {
+    "k": "wildlife-crossing",
+    "t": "wildlife crossing",
+    "kind": "phrase",
+    "forms": [
+      "wildlife crossing"
+    ],
+    "text": "A wildlife crossing is a bridge or tunnel that helps animals cross a road safely.",
+    "audio": true
+  },
+  {
+    "k": "wallis-annenberg-wildlife-crossing",
+    "t": "Wallis Annenberg Wildlife Crossing",
+    "kind": "name",
+    "forms": [
+      "Wallis Annenberg Wildlife Crossing"
+    ],
+    "text": "This is the name of the new animal bridge. It is named after a person who helped pay for it.",
+    "audio": true
+  },
+  {
+    "k": "december",
+    "t": "December",
+    "kind": "word",
+    "forms": [
+      "December"
+    ],
+    "text": "December is the last month of the year.",
+    "audio": true
+  },
+  {
+    "k": "freeway",
+    "t": "freeway",
+    "kind": "word",
+    "forms": [
+      "freeway",
+      "Freeways",
+      "freeways"
+    ],
+    "text": "A freeway is a very wide road where cars drive fast.",
+    "audio": true
+  },
+  {
+    "k": "lane",
+    "t": "10-lane",
+    "kind": "word",
+    "forms": [
+      "10-lane"
+    ],
+    "text": "A lane is one strip of a road for one line of cars. This road has ten lanes.",
+    "audio": true
+  },
+  {
+    "k": "u-s-101",
+    "t": "U.S. 101",
+    "kind": "name",
+    "forms": [
+      "U.S. 101",
+      "101"
+    ],
+    "text": "U.S. 101 is the name of a big highway. It is also called the 101.",
+    "audio": true
+  },
+  {
+    "k": "los-angeles-county",
+    "t": "Los Angeles County",
+    "kind": "name",
+    "forms": [
+      "Los Angeles County"
+    ],
+    "text": "Los Angeles County is a big area in California. Millions of people live there.",
+    "audio": true
+  },
+  {
+    "k": "california",
+    "t": "California",
+    "kind": "name",
+    "forms": [
+      "California"
+    ],
+    "text": "California is a state on the west coast of the United States.",
+    "audio": true
+  },
+  {
+    "k": "highways",
+    "t": "highways",
+    "kind": "word",
+    "forms": [
+      "highways"
+    ],
+    "text": "A highway is a big road for cars and trucks.",
+    "audio": true
+  },
+  {
+    "k": "construction",
+    "t": "Construction",
+    "kind": "word",
+    "forms": [
+      "Construction"
+    ],
+    "text": "Construction means building something, like a bridge or a house.",
+    "audio": true
+  },
+  {
+    "k": "project",
+    "t": "project",
+    "kind": "word",
+    "forms": [
+      "project"
+    ],
+    "text": "A project is a big job that people plan and work on.",
+    "audio": true
+  },
+  {
+    "k": "coyotes",
+    "t": "Coyotes",
+    "kind": "word",
+    "forms": [
+      "Coyotes"
+    ],
+    "text": "Coyotes are wild animals that look like thin dogs. They howl at night.",
+    "audio": true
+  },
+  {
+    "k": "foxes",
+    "t": "foxes",
+    "kind": "word",
+    "forms": [
+      "foxes"
+    ],
+    "text": "Foxes are wild animals with pointy ears and fluffy tails.",
+    "audio": true
+  },
+  {
+    "k": "habitats",
+    "t": "habitats",
+    "kind": "word",
+    "forms": [
+      "habitats",
+      "habitat"
+    ],
+    "text": "A habitat is the natural place where an animal lives.",
+    "audio": true
+  },
+  {
+    "k": "sustainable",
+    "t": "sustainable",
+    "kind": "word",
+    "forms": [
+      "sustainable"
+    ],
+    "text": "Sustainable means something that can last a long time without harm.",
+    "audio": true
+  },
+  {
+    "k": "restricted",
+    "t": "restricted",
+    "kind": "word",
+    "forms": [
+      "restricted"
+    ],
+    "text": "Restricted means held back or limited. The animals cannot move around freely.",
+    "audio": true
+  },
+  {
+    "k": "natural-habitat",
+    "t": "natural habitat",
+    "kind": "phrase",
+    "forms": [
+      "natural habitat"
+    ],
+    "text": "A natural habitat is wild land where animals live, not a city.",
+    "audio": true
+  },
+  {
+    "k": "santa-monica-mountains",
+    "t": "Santa Monica Mountains",
+    "kind": "name",
+    "forms": [
+      "Santa Monica Mountains"
+    ],
+    "text": "The Santa Monica Mountains are hills and wild land near Los Angeles.",
+    "audio": true
+  },
+  {
+    "k": "essentially",
+    "t": "essentially",
+    "kind": "word",
+    "forms": [
+      "essentially"
+    ],
+    "text": "Essentially means in a basic way. It means almost.",
+    "audio": true
+  },
+  {
+    "k": "trapped",
+    "t": "trapped",
+    "kind": "word",
+    "forms": [
+      "trapped"
+    ],
+    "text": "Trapped means stuck in a place and not able to leave.",
+    "audio": true
+  },
+  {
+    "k": "wildlife-biologist",
+    "t": "wildlife biologist",
+    "kind": "phrase",
+    "forms": [
+      "wildlife biologist"
+    ],
+    "text": "A wildlife biologist is a scientist who studies wild animals.",
+    "audio": true
+  },
+  {
+    "k": "jeff-sikich",
+    "t": "Jeff Sikich",
+    "kind": "name",
+    "forms": [
+      "Jeff Sikich",
+      "Sikich"
+    ],
+    "text": "Jeff Sikich is a scientist who studies mountain lions.",
+    "audio": true
+  },
+  {
+    "k": "national-recreation-area",
+    "t": "National Recreation Area",
+    "kind": "name",
+    "forms": [
+      "National Recreation Area"
+    ],
+    "text": "A National Recreation Area is a protected place where people can enjoy nature.",
+    "audio": true
+  },
+  {
+    "k": "mountain-lion",
+    "t": "mountain lion",
+    "kind": "word",
+    "forms": [
+      "mountain lion",
+      "mountain lions"
+    ],
+    "text": "A mountain lion is a big wild cat. It is also called a cougar.",
+    "audio": true
+  },
+  {
+    "k": "mates",
+    "t": "mates",
+    "kind": "word",
+    "forms": [
+      "mates"
+    ],
+    "text": "A mate is an animal partner that it has babies with.",
+    "audio": true
+  },
+  {
+    "k": "population",
+    "t": "population",
+    "kind": "word",
+    "forms": [
+      "population"
+    ],
+    "text": "A population is all the animals of one kind living in a place.",
+    "audio": true
+  },
+  {
+    "k": "species",
+    "t": "species",
+    "kind": "word",
+    "forms": [
+      "species"
+    ],
+    "text": "A species is one kind of living thing, like lions or foxes.",
+    "audio": true
+  },
+  {
+    "k": "seth-riley",
+    "t": "Seth Riley",
+    "kind": "name",
+    "forms": [
+      "Seth Riley",
+      "Riley"
+    ],
+    "text": "Seth Riley is a scientist who leads the wildlife team.",
+    "audio": true
+  },
+  {
+    "k": "mammals",
+    "t": "mammals",
+    "kind": "word",
+    "forms": [
+      "mammals"
+    ],
+    "text": "Mammals are animals with fur or hair that feed milk to their babies.",
+    "audio": true
+  },
+  {
+    "k": "native-plants",
+    "t": "native plants",
+    "kind": "phrase",
+    "forms": [
+      "native plants"
+    ],
+    "text": "Native plants are plants that grow naturally in a place.",
+    "audio": true
+  },
+  {
+    "k": "soil",
+    "t": "soil",
+    "kind": "word",
+    "forms": [
+      "soil"
+    ],
+    "text": "Soil is the dirt that plants grow in.",
+    "audio": true
+  },
+  {
+    "k": "tracking-collars",
+    "t": "tracking collars",
+    "kind": "phrase",
+    "forms": [
+      "tracking collars"
+    ],
+    "text": "A tracking collar is a band an animal wears. It shows scientists where the animal goes.",
+    "audio": true
+  },
+  {
+    "k": "remote-cameras",
+    "t": "remote cameras",
+    "kind": "phrase",
+    "forms": [
+      "remote cameras"
+    ],
+    "text": "Remote cameras take pictures on their own, with nobody there.",
+    "audio": true
+  },
+  {
+    "k": "fence-lizard",
+    "t": "fence lizard",
+    "kind": "phrase",
+    "forms": [
+      "fence lizard"
+    ],
+    "text": "A fence lizard is a small lizard that likes to sit on fences and rocks.",
+    "audio": true
+  },
+  {
+    "k": "investigating",
+    "t": "investigating",
+    "kind": "word",
+    "forms": [
+      "investigating"
+    ],
+    "text": "Investigating means looking closely to find out about something.",
+    "audio": true
+  },
+  {
+    "k": "adaptable",
+    "t": "adaptable",
+    "kind": "word",
+    "forms": [
+      "adaptable"
+    ],
+    "text": "Adaptable means able to change to fit new places.",
+    "audio": true
+  },
+  {
+    "k": "beth-pratt",
+    "t": "Beth Pratt",
+    "kind": "name",
+    "forms": [
+      "Beth Pratt",
+      "Pratt"
+    ],
+    "text": "Beth Pratt helped lead the campaign to build the bridge.",
+    "audio": true
+  },
+  {
+    "k": "national-wildlife-federation",
+    "t": "National Wildlife Federation",
+    "kind": "name",
+    "forms": [
+      "National Wildlife Federation"
+    ],
+    "text": "This is a group that works to protect wild animals.",
+    "audio": true
+  },
+  {
+    "k": "campaign",
+    "t": "campaign",
+    "kind": "word",
+    "forms": [
+      "campaign"
+    ],
+    "text": "A campaign is a plan to get something done, with many people helping.",
+    "audio": true
+  },
+  {
+    "k": "los-angeles-times",
+    "t": "Los Angeles Times",
+    "kind": "name",
+    "forms": [
+      "Los Angeles Times"
+    ],
+    "text": "The Los Angeles Times is a newspaper.",
+    "audio": true
+  },
+  {
+    "k": "p-22",
+    "t": "P-22",
+    "kind": "name",
+    "forms": [
+      "P-22"
+    ],
+    "text": "P-22 was a famous mountain lion who lived in a city park in Los Angeles.",
+    "audio": true
+  },
+  {
+    "k": "griffith-park",
+    "t": "Griffith Park",
+    "kind": "name",
+    "forms": [
+      "Griffith Park"
+    ],
+    "text": "Griffith Park is a big park in Los Angeles with trails and wild animals.",
+    "audio": true
+  },
+  {
+    "k": "memorial",
+    "t": "memorial",
+    "kind": "word",
+    "forms": [
+      "memorial"
+    ],
+    "text": "A memorial is an event to remember someone who has died.",
+    "audio": true
+  },
+  {
+    "k": "ambassador",
+    "t": "ambassador",
+    "kind": "word",
+    "forms": [
+      "ambassador"
+    ],
+    "text": "An ambassador is someone who speaks up for a group. P-22 showed people about city wildlife.",
+    "audio": true
+  },
+  {
+    "k": "urban-wildlife",
+    "t": "urban wildlife",
+    "kind": "phrase",
+    "forms": [
+      "urban wildlife"
+    ],
+    "text": "Urban wildlife means wild animals that live in or near cities.",
+    "audio": true
+  },
+  {
+    "k": "legacy",
+    "t": "legacy",
+    "kind": "word",
+    "forms": [
+      "legacy"
+    ],
+    "text": "A legacy is something good that stays after someone is gone.",
+    "audio": true
+  }
+]
