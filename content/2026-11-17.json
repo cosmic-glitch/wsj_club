@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-17",
+  "title": "The next stop for Europe’s failed asylum-seekers: Rwanda",
+  "articleUrl": "https://www.economist.com/europe/2026/11/17/the-next-stop-for-europes-failed-asylum-seekers-rwanda",
+  "articlePageUrl": "/articles/2026-11-17.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "assiduously",
+      "partOfSpeech": "adverb",
+      "pronunciation": "uh-SID-yoo-us-lee",
+      "articleQuote": "the European ministers whom his government had assiduously courted",
+      "meaning": "To do something assiduously is to do it with steady, careful, never-give-up effort, the way a student who studies a little every single night works assiduously. It suggests patience and persistence rather than a burst of energy. Here it tells us that Rwanda did not stumble into this deal: its government spent a long time patiently winning over the European ministers, which shows how much Rwanda wanted it.",
+      "examples": [
+        "She assiduously practised the piano every morning before school.",
+        "The mayor assiduously avoided answering the reporter's question."
+      ]
+    },
+    {
+      "word": "burnished",
+      "partOfSpeech": "adjective",
+      "pronunciation": "BUR-nisht",
+      "articleQuote": "a burnished reputation as a reliable partner",
+      "meaning": "To burnish metal is to rub it until it shines. Used about a person or country, a burnished reputation is one that has been polished until it looks better than before. The word often hints that the shine is deliberate effort, not just luck. Here it describes what Rwanda hopes to gain: by helping Europe, it wants to be seen as a trustworthy partner, which might make people pay less attention to its critics.",
+      "examples": [
+        "The company ran a big charity campaign to burnish its image.",
+        "The knight's burnished armour gleamed in the sun."
+      ]
+    },
+    {
+      "word": "reticence",
+      "partOfSpeech": "noun",
+      "pronunciation": "RET-ih-sunss",
+      "articleQuote": "some envoys in the region say they already detect signs of diplomatic reticence from Europeans",
+      "meaning": "Reticence is a reluctance to speak openly or to commit, a holding back, often because a subject is awkward. A reticent person keeps their thoughts to themselves. It is not the same as shyness, since a confident person can be reticent on purpose. Here it means that European governments, though they signed a deal with Rwanda, seem to be quietly holding back from being too closely associated with it, because of Rwanda's human-rights record.",
+      "examples": [
+        "His reticence about his past made his new classmates curious.",
+        "Despite the scandal, the senator's reticence frustrated reporters."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Asylum, return orders and “refoulement”",
+      "articleQuote": "it is still proving difficult to deport asylum-seekers whose bids have failed.",
+      "meaning": "Law and migration: an asylum-seeker is a person who arrives in a country and asks for protection because they say they would be in danger at home. The country then decides the claim. If it accepts, the person becomes a recognised refugee; if it rejects the claim, the person gets a **return order**, a legal instruction to leave. The article's puzzle is that orders and departures are very different numbers: the EU issues far more return orders than it carries out.\n\nWhy? A country can only send someone back if another country will take them, and that is hard. People may have thrown away or lost their documents, so no one can prove where they come from, and some home countries refuse to co-operate. Many rejected migrants simply stay and \"fall into the shadows\". That is the gap the Rwanda \"return hub\" tries to fill: a third country that takes people who cannot be sent home.\n\nThe second idea sits behind the human-rights worries. Under international law, a country must not return a person to a place where they would face danger. That ban is called **refoulement**. Critics fear migrants in Rwanda could be sent on again into danger, which is why the plan includes monitoring and a role for UN agencies. The takeaway: deciding a claim is easy compared with actually moving the person afterwards."
+    },
+    {
+      "name": "Deterrence",
+      "articleQuote": "“Evidence of a deterrent effect is highly uncertain,” said a British official of his country’s scheme",
+      "meaning": "Policy and behaviour: deterrence means trying to stop people from doing something by making the consequences look unpleasant, before they act. A speed camera works this way: its job is less to catch one driver than to make thousands of drivers slow down. Governments use it in many areas, from crime to migration.\n\nThe article shows why deterrence is the heart of the Rwanda debate. Only a few hundred people at most could be sent next year, which will not shrink the 250,000 people in Germany alone with return orders. So Denmark's prime minister argues the \"bigger number\" would be people who hear of the scheme and decide not to travel to Europe at all. The plan, in other words, is judged by what people who are *not* sent choose to do.\n\nThat makes it hard to prove. A deterrent works only if people notice it, believe it will happen to them, and care more than they care about the reasons for leaving, such as war or poverty. A one-in-a-thousand chance of being sent to Rwanda may not frighten someone fleeing danger. Even a British official admitted the evidence was highly uncertain. The takeaway: a deterrent is a bet on how people think, and it is hard to measure what did not happen."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does the new deal let the five European governments do?",
+      "options": [
+        "Send migrants whose asylum bids were rejected to a “return hub” in Rwanda",
+        "Process all new asylum claims inside Rwanda",
+        "Send Rwandan citizens back home",
+        "Close their borders to all migrants"
+      ],
+      "answerIndex": 0,
+      "explanation": "Rejected asylum-seekers in Austria, Denmark, Germany, Greece and the Netherlands will be eligible for transfer to a return hub in Rwanda."
+    },
+    {
+      "question": "How does the article say the new European scheme differs from Britain’s abandoned 2022 deal?",
+      "options": [
+        "It would send migrants whose claims have already failed, whereas Britain's would have sent people to have their claims processed",
+        "It is much cheaper",
+        "It does not involve Rwanda",
+        "It has no legal basis"
+      ],
+      "answerIndex": 0,
+      "explanation": "Britain’s plan would have sent migrants to Rwanda to have their asylum claims processed; the European plan is for those already rejected."
+    },
+    {
+      "question": "Why is it hard to deport many asylum-seekers whose claims have failed?",
+      "options": [
+        "Deportation is illegal everywhere",
+        "They may lack documents or come from countries that refuse to co-operate",
+        "Rwanda refuses to accept anyone",
+        "They have all become citizens"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says many lack documentation or come from countries that won't co-operate, so they fall into the shadows."
+    },
+    {
+      "question": "Why does Denmark's prime minister say the “bigger number” matters?",
+      "options": [
+        "Because most migrants will volunteer to go to Rwanda",
+        "Because it means Rwanda will receive more aid",
+        "Because the scheme could stop people from travelling to Europe in the first place",
+        "Because Germany will cancel its return orders"
+      ],
+      "answerIndex": 2,
+      "explanation": "Only a few hundred could be sent, so she points to the people who might decide not to come at all, which is deterrence."
+    },
+    {
+      "question": "What does Rwanda’s government hope to get from the deal, according to the article?",
+      "options": [
+        "Cash, aid projects and a burnished reputation as a reliable partner",
+        "Control over European borders",
+        "The end of its dispute with Britain",
+        "A seat on the UN Security Council"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says Rwanda hopes for cash, aid projects and a burnished reputation, and wants to select who comes."
+    }
+  ]
+}
