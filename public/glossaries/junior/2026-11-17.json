@@ -1,0 +1,638 @@
+[
+  {
+    "k": "gallant",
+    "t": "gal-ent",
+    "kind": "vocab",
+    "pron": "GAL-ent",
+    "forms": [
+      "gallant"
+    ],
+    "text": "Gallant means brave and noble, and polite too. Here, a prefect in a Harry Potter film is a hero with good manners.",
+    "audio": true
+  },
+  {
+    "k": "beguiling",
+    "t": "beguiling",
+    "kind": "vocab",
+    "pron": "bih-GY-ling",
+    "forms": [
+      "beguiling"
+    ],
+    "text": "Beguiling means so charming that it pulls you in, almost like a spell. Here, the wartime years are called beguiling because the spies were such colorful people.",
+    "audio": true
+  },
+  {
+    "k": "eccentric",
+    "t": "eccentric",
+    "kind": "vocab",
+    "pron": "ek-SEN-trik",
+    "forms": [
+      "eccentrics"
+    ],
+    "text": "An eccentric is someone with odd habits that are harmless and interesting, like a neighbor who walks a goose on a leash. Here, the spies of wartime Britain were full of them.",
+    "audio": true
+  },
+  {
+    "k": "cast",
+    "t": "cast",
+    "kind": "word",
+    "forms": [
+      "cast"
+    ],
+    "text": "To cast an actor means to choose them for a part in a movie. Here, a new James Bond has been chosen.",
+    "audio": true
+  },
+  {
+    "k": "role",
+    "t": "role",
+    "kind": "word",
+    "forms": [
+      "role"
+    ],
+    "text": "A role is a part an actor plays in a movie or show. Here, the role is James Bond.",
+    "audio": true
+  },
+  {
+    "k": "spy",
+    "t": "spy",
+    "kind": "word",
+    "forms": [
+      "spy",
+      "spies"
+    ],
+    "text": "A spy is a person who secretly gathers information about other countries or groups. Bond is a made-up spy.",
+    "audio": true
+  },
+  {
+    "k": "undistinguished",
+    "t": "undistinguished",
+    "kind": "word",
+    "forms": [
+      "undistinguished"
+    ],
+    "text": "Undistinguished means ordinary, not famous or special. Here, Ian Fleming is described as a not very famous journalist before he wrote Bond.",
+    "audio": true
+  },
+  {
+    "k": "enthusiast",
+    "t": "enthusiast",
+    "kind": "word",
+    "forms": [
+      "enthusiast"
+    ],
+    "text": "An enthusiast is someone who loves a hobby very much. Here, Fleming was a bird-watching enthusiast.",
+    "audio": true
+  },
+  {
+    "k": "comely",
+    "t": "comely",
+    "kind": "word",
+    "forms": [
+      "comely"
+    ],
+    "text": "Comely is an old-fashioned word for good-looking. Fleming wanted pretty heroines in his book.",
+    "audio": true
+  },
+  {
+    "k": "vast",
+    "t": "vast",
+    "kind": "word",
+    "forms": [
+      "vast"
+    ],
+    "text": "Vast means extremely large. Here, Fleming hoped to earn a huge amount of money.",
+    "audio": true
+  },
+  {
+    "k": "dull",
+    "t": "dull",
+    "kind": "word",
+    "forms": [
+      "dull",
+      "duller",
+      "dullest"
+    ],
+    "text": "Dull means boring, with nothing exciting about it. Dull, duller, dullest are the three steps of comparing. Here, Fleming found the bird book and its author's name very boring.",
+    "audio": true
+  },
+  {
+    "k": "grebe",
+    "t": "Pied-billed grebe",
+    "kind": "word",
+    "forms": [
+      "Pied-billed grebe"
+    ],
+    "text": "A grebe is a small swimming bird that lives near lakes and ponds. Here, the bird book had pages about one kind.",
+    "audio": true
+  },
+  {
+    "k": "unromantic",
+    "t": "unromantic",
+    "kind": "word",
+    "forms": [
+      "unromantic"
+    ],
+    "text": "Unromantic means plain, with no dreamy or fancy feeling. Here, the name Bond sounds short and plain.",
+    "audio": true
+  },
+  {
+    "k": "masculine",
+    "t": "masculine",
+    "kind": "word",
+    "forms": [
+      "masculine"
+    ],
+    "text": "Masculine means having qualities traditionally linked with men, like strength. Here, the name sounded tough and manly to Fleming.",
+    "audio": true
+  },
+  {
+    "k": "anglo-saxon",
+    "t": "Anglo-Saxon",
+    "kind": "word",
+    "forms": [
+      "Anglo-Saxon"
+    ],
+    "text": "Anglo-Saxon here means plain and English-sounding, from the old peoples who lived in England long ago. Fleming meant the name Bond sounded simple and very English.",
+    "audio": true
+  },
+  {
+    "k": "franchise",
+    "t": "franchise",
+    "kind": "word",
+    "forms": [
+      "franchise"
+    ],
+    "text": "A franchise is a group of books, films or games that share the same hero or world and keep being made. Here, Bond is a huge one.",
+    "audio": true
+  },
+  {
+    "k": "purists",
+    "t": "Purists",
+    "kind": "word",
+    "forms": [
+      "Purists"
+    ],
+    "text": "Purists are people who want something kept exactly the way it always was. Here, some Bond fans are worried about the change.",
+    "audio": true
+  },
+  {
+    "k": "martinis",
+    "t": "martinis",
+    "kind": "word",
+    "forms": [
+      "martinis"
+    ],
+    "text": "A martini is a kind of mixed drink for adults. Bond is famous for ordering one in the movies.",
+    "audio": true
+  },
+  {
+    "k": "sultry",
+    "t": "sultry",
+    "kind": "word",
+    "forms": [
+      "sultry"
+    ],
+    "text": "Sultry here means mysterious and moody in an attractive way. It can also describe hot, sticky weather.",
+    "audio": true
+  },
+  {
+    "k": "box-office",
+    "t": "box-office",
+    "kind": "word",
+    "forms": [
+      "box-office"
+    ],
+    "text": "Box office means ticket sales for movies. Someone who is a box-office draw is an actor whose name brings in lots of ticket buyers.",
+    "audio": true
+  },
+  {
+    "k": "draw",
+    "t": "draw",
+    "kind": "word",
+    "forms": [
+      "draw"
+    ],
+    "text": "A draw here is a person or thing that attracts a crowd. It is not about pictures with a pencil.",
+    "audio": true
+  },
+  {
+    "k": "suck-the-life-out",
+    "t": "suck the life out of",
+    "kind": "phrase",
+    "forms": [
+      "suck the life out of"
+    ],
+    "text": "To suck the life out of something means to drain away what makes it fun or special. Here, it is a joke about the vampire role, as fans fear the actor will ruin Bond.",
+    "audio": true
+  },
+  {
+    "k": "prefect",
+    "t": "prefect",
+    "kind": "word",
+    "forms": [
+      "prefect"
+    ],
+    "text": "A prefect is an older student chosen to help keep order at some British schools. Here, it is a character in Harry Potter.",
+    "audio": true
+  },
+  {
+    "k": "adaptation",
+    "t": "adaptation",
+    "kind": "word",
+    "forms": [
+      "adaptation"
+    ],
+    "text": "An adaptation is a book, play or story changed into a movie or show. Here, the Odyssey film is one.",
+    "audio": true
+  },
+  {
+    "k": "subtle",
+    "t": "subtle",
+    "kind": "word",
+    "forms": [
+      "subtle"
+    ],
+    "text": "Subtle means gentle and not obvious. A subtle actor shows feelings in small ways, not big ones.",
+    "audio": true
+  },
+  {
+    "k": "lunk",
+    "t": "lunk",
+    "kind": "word",
+    "forms": [
+      "lunk"
+    ],
+    "text": "A lunk is a slow, clumsy person who is not very clever. Here, the writer jokes that Bond is a bit of one.",
+    "audio": true
+  },
+  {
+    "k": "cardboard-booby",
+    "t": "cardboard booby",
+    "kind": "phrase",
+    "forms": [
+      "cardboard booby"
+    ],
+    "text": "A cardboard booby is Fleming's joke for a flat, dull person with no depth, like a cutout made of cardboard.",
+    "audio": true
+  },
+  {
+    "k": "grossed",
+    "t": "grossed",
+    "kind": "word",
+    "forms": [
+      "grossed"
+    ],
+    "text": "To gross money means to earn it in total, before subtracting costs. Here, the films earned over $23 billion.",
+    "audio": true
+  },
+  {
+    "k": "inflation",
+    "t": "inflation",
+    "kind": "word",
+    "forms": [
+      "inflation"
+    ],
+    "text": "Inflation is when prices slowly rise over time, so a dollar buys less. Adjusting for it lets you compare old money fairly with new money.",
+    "audio": true
+  },
+  {
+    "k": "psychologically",
+    "t": "psychologically",
+    "kind": "word",
+    "forms": [
+      "psychologically"
+    ],
+    "text": "Psychologically means to do with the mind and feelings. Here, Bond matters to how Britain feels about itself.",
+    "audio": true
+  },
+  {
+    "k": "has-been",
+    "t": "has-been",
+    "kind": "word",
+    "forms": [
+      "has-been"
+    ],
+    "text": "A has-been is someone or something that used to be important but is not anymore. Here, Britain feels like one among world powers.",
+    "audio": true
+  },
+  {
+    "k": "succour",
+    "t": "succour",
+    "kind": "word",
+    "forms": [
+      "succour"
+    ],
+    "text": "Succour is help and comfort when times are hard. Here, Bond comforts Britain by being a hero.",
+    "audio": true
+  },
+  {
+    "k": "puny",
+    "t": "puny",
+    "kind": "word",
+    "forms": [
+      "puny"
+    ],
+    "text": "Puny means small and weak. Here, the writer says Britain's army is small compared with the past.",
+    "audio": true
+  },
+  {
+    "k": "shaky",
+    "t": "shaky",
+    "kind": "word",
+    "forms": [
+      "shaky"
+    ],
+    "text": "Shaky means not steady or strong. Here, Britain's economy is not doing well.",
+    "audio": true
+  },
+  {
+    "k": "baddy",
+    "t": "baddy",
+    "kind": "word",
+    "forms": [
+      "baddy"
+    ],
+    "text": "A baddy is the bad guy, the villain, in a story.",
+    "audio": true
+  },
+  {
+    "k": "national-import",
+    "t": "national import",
+    "kind": "phrase",
+    "forms": [
+      "national import"
+    ],
+    "text": "National import means something important to a whole country. Here, choosing Bond is treated like big news for Britain.",
+    "audio": true
+  },
+  {
+    "k": "britannia",
+    "t": "Britannia",
+    "kind": "word",
+    "forms": [
+      "Britannia"
+    ],
+    "text": "Britannia is the old name for Britain, shown in art as a woman with a shield and helmet. She stands for the country itself.",
+    "audio": true
+  },
+  {
+    "k": "loaded",
+    "t": "loaded",
+    "kind": "word",
+    "forms": [
+      "loaded"
+    ],
+    "text": "Loaded here means carrying extra feelings or hidden meaning. A loaded choice makes people argue.",
+    "audio": true
+  },
+  {
+    "k": "creative-control",
+    "t": "creative control",
+    "kind": "phrase",
+    "forms": [
+      "creative control"
+    ],
+    "text": "Creative control means the power to decide how a movie or show is made. Here, an American studio now has it.",
+    "audio": true
+  },
+  {
+    "k": "betraying",
+    "t": "betraying",
+    "kind": "word",
+    "forms": [
+      "betraying"
+    ],
+    "text": "To betray means to be disloyal to someone or something. Here, a good adaptation should stay true to both eras of a story.",
+    "audio": true
+  },
+  {
+    "k": "smoulder",
+    "t": "smoulder",
+    "kind": "word",
+    "forms": [
+      "smoulder"
+    ],
+    "text": "Smoulder means to burn slowly. Here, it is a way of saying a romantic, intense look.",
+    "audio": true
+  },
+  {
+    "k": "derring-do",
+    "t": "derring-do",
+    "kind": "word",
+    "forms": [
+      "derring-do"
+    ],
+    "text": "Derring-do is old-fashioned for daring, brave action. Here, wartime spies were full of it.",
+    "audio": true
+  },
+  {
+    "k": "commando",
+    "t": "commando",
+    "kind": "word",
+    "forms": [
+      "commando"
+    ],
+    "text": "A commando is a soldier trained for quick, dangerous missions. Fleming met many in the wartime navy.",
+    "audio": true
+  },
+  {
+    "k": "naval-intelligence",
+    "t": "naval intelligence",
+    "kind": "phrase",
+    "forms": [
+      "naval intelligence"
+    ],
+    "text": "Naval intelligence is the part of the navy that collects secret information. Fleming worked there in wartime.",
+    "audio": true
+  },
+  {
+    "k": "surrender",
+    "t": "surrender",
+    "kind": "word",
+    "forms": [
+      "surrender"
+    ],
+    "text": "To surrender is to give up in a fight or war. Here, an officer accepted a city's surrender.",
+    "audio": true
+  },
+  {
+    "k": "mi6",
+    "t": "MI6",
+    "kind": "word",
+    "forms": [
+      "MI6"
+    ],
+    "text": "MI6 is Britain's agency that gathers secret information abroad. James Bond is said to work for it.",
+    "audio": true
+  },
+  {
+    "k": "intelligence-service",
+    "t": "intelligence service",
+    "kind": "phrase",
+    "forms": [
+      "intelligence service"
+    ],
+    "text": "An intelligence service is a government group that gathers secret information about other countries.",
+    "audio": true
+  },
+  {
+    "k": "spymaster",
+    "t": "spymaster",
+    "kind": "word",
+    "forms": [
+      "spymaster"
+    ],
+    "text": "A spymaster is the person in charge of spies.",
+    "audio": true
+  },
+  {
+    "k": "precursor",
+    "t": "precursor",
+    "kind": "word",
+    "forms": [
+      "precursor"
+    ],
+    "text": "A precursor is something that came before and led to something later. Here, one bureau was the earlier version of MI6.",
+    "audio": true
+  },
+  {
+    "k": "notorious",
+    "t": "notorious",
+    "kind": "word",
+    "forms": [
+      "notorious"
+    ],
+    "text": "Notorious means famous for something bad.",
+    "audio": true
+  },
+  {
+    "k": "perfunctory",
+    "t": "perfunctory",
+    "kind": "word",
+    "forms": [
+      "perfunctory"
+    ],
+    "text": "Perfunctory means done quickly without much care or interest.",
+    "audio": true
+  },
+  {
+    "k": "mystique",
+    "t": "mystique",
+    "kind": "word",
+    "forms": [
+      "mystique"
+    ],
+    "text": "Mystique is a special, mysterious feeling that makes something seem exciting.",
+    "audio": true
+  },
+  {
+    "k": "adolescent",
+    "t": "adolescent",
+    "kind": "word",
+    "forms": [
+      "adolescent"
+    ],
+    "text": "Adolescent means to do with the teenage years, and it can also mean childish. Here, Fleming joked about his own books.",
+    "audio": true
+  },
+  {
+    "k": "workmanlike",
+    "t": "workmanlike",
+    "kind": "word",
+    "forms": [
+      "workmanlike"
+    ],
+    "text": "Workmanlike means done in a plain, competent way, without anything fancy.",
+    "audio": true
+  },
+  {
+    "k": "repetitions",
+    "t": "repetitions",
+    "kind": "word",
+    "forms": [
+      "repetitions"
+    ],
+    "text": "A repetition is something said or done again. Here, Fleming used the same words often in his books.",
+    "audio": true
+  },
+  {
+    "k": "savours",
+    "t": "savours",
+    "kind": "word",
+    "forms": [
+      "savours"
+    ],
+    "text": "To savour is to enjoy something slowly and fully.",
+    "audio": true
+  },
+  {
+    "k": "villain",
+    "t": "villain",
+    "kind": "word",
+    "forms": [
+      "villain"
+    ],
+    "text": "A villain is the bad character in a story.",
+    "audio": true
+  },
+  {
+    "k": "misogynist",
+    "t": "misogynist",
+    "kind": "word",
+    "forms": [
+      "misogynist"
+    ],
+    "text": "A misogynist is someone who dislikes or looks down on women. Here, a character calls old Bond one.",
+    "audio": true
+  },
+  {
+    "k": "dinosaur",
+    "t": "dinosaur",
+    "kind": "word",
+    "forms": [
+      "dinosaur"
+    ],
+    "text": "Here dinosaur is a joke for a person or idea that is badly out of date.",
+    "audio": true
+  },
+  {
+    "k": "reinvention",
+    "t": "Reinvention",
+    "kind": "word",
+    "forms": [
+      "Reinvention"
+    ],
+    "text": "Reinvention means changing something so much it feels new again.",
+    "audio": true
+  },
+  {
+    "k": "mores",
+    "t": "mores",
+    "kind": "word",
+    "forms": [
+      "mores"
+    ],
+    "text": "Mores are the habits and rules a society believes in. Modern mores means what people today think is right.",
+    "audio": true
+  },
+  {
+    "k": "traditionalists",
+    "t": "traditionalists",
+    "kind": "word",
+    "forms": [
+      "traditionalists"
+    ],
+    "text": "Traditionalists are people who want to keep old ways. Here, they are the fans who dislike changes to Bond.",
+    "audio": true
+  },
+  {
+    "k": "hands-tied",
+    "t": "hands are tied",
+    "kind": "phrase",
+    "forms": [
+      "hands are tied"
+    ],
+    "text": "If your hands are tied, you cannot act freely. Here, the writers face a hard problem, just like Bond tied to a chair.",
+    "audio": true
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-17",
+  "title": "Good evening, Mr Bond. We’ve been expecting you",
+  "articleUrl": "https://www.economist.com/culture/2026/11/16/good-evening-mr-bond-weve-been-expecting-you",
+  "articlePageUrl": "/articles/junior/2026-11-17.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "gallant",
+      "partOfSpeech": "adjective",
+      "pronunciation": "GAL-ent",
+      "articleQuote": "he played a gallant prefect",
+      "meaning": "A gallant person is brave and noble, and also polite and kind to others. Think of a knight who protects someone and holds the door open afterward. A gallant act takes courage and good manners together. In the article, Robert Pattinson played a gallant prefect in a Harry Potter film, a student who is a hero in a polite way.",
+      "examples": [
+        "The gallant boy gave up his seat on the bus to an older woman.",
+        "She made a gallant effort to finish the race even with a sore ankle."
+      ]
+    },
+    {
+      "word": "beguiling",
+      "partOfSpeech": "adjective",
+      "pronunciation": "bih-GY-ling",
+      "articleQuote": "It was a beguiling age of heroes and eccentrics.",
+      "meaning": "Something beguiling is so charming or interesting that it pulls you in and holds your attention. It can feel a little like a spell. A beguiling smell from the kitchen can make you drop everything and follow it. In the article, the wartime years are called a beguiling age, because the spies of that time were such colorful, exciting people.",
+      "examples": [
+        "The street musician had such a beguiling voice that everyone stopped to listen.",
+        "The old map was beguiling, with sea monsters drawn in the corners."
+      ]
+    },
+    {
+      "word": "eccentric",
+      "partOfSpeech": "noun",
+      "pronunciation": "ek-SEN-trik",
+      "articleQuote": "It was a beguiling age of heroes and eccentrics.",
+      "meaning": "An eccentric is a person whose habits are odd and different from what most people do, but usually in a harmless, interesting way. Imagine a neighbor who walks a pet goose on a leash. As an adjective, eccentric describes the odd behavior itself. In the article, one spymaster kept snakes in his bath, which makes him a true eccentric.",
+      "examples": [
+        "Our science teacher is an eccentric who wears a different silly hat every day.",
+        "The town thought the old inventor was an eccentric because he built a boat in his attic."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Franchise",
+      "articleQuote": "The Bond franchise is huge",
+      "meaning": "Why does the article say the Bond **franchise** is huge, when there are lots of different stories? A franchise is a group of books, films or games that all share the same main character or world, and that keep being made again and again.\n\nThink of a video game series. There is one game, then a sequel, then another, and the same hero appears each time. Fans already know the hero, so they line up for the next one.\n\nBond is a franchise: 14 original books, many more by other writers, and 25 films. Different actors have played Bond over the years, but the character stays the same. That is why picking a new actor is such big news.\n\nA franchise is valuable because it comes with a ready-made crowd of fans. The risk is that fans are picky. If a new version changes too much, people complain, and if it changes too little, it feels old.\n\nSo the takeaway: a franchise is a story world that keeps coming back, and its fans care a lot about how it is handled."
+    },
+    {
+      "name": "Intelligence agency",
+      "articleQuote": "MI6, Britain’s foreign intelligence service",
+      "meaning": "What is **MI6**, the place where James Bond is said to work? It is an intelligence agency: a government organization whose job is to collect secret information about other countries, so its leaders can make smart decisions.\n\nHere is a school example. Imagine a team captain who sends a friend to quietly watch the other team practice and report back on their plays. That friend is doing a tiny version of what an intelligence agency does.\n\nReal agencies mostly do careful, quiet work like reading, listening and analyzing, not car chases. Their workers are often called spies or agents. Britain's foreign agency is MI6, and the United States has the CIA.\n\nIn stories like Bond, the agency is where the hero gets his missions and his boss, called M. In real life, the head of MI6 today is a woman, as the article points out.\n\nSo the takeaway: an intelligence agency is a government's secret information-gatherer, far less flashy than the movies make it look."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, where did Ian Fleming find the name “James Bond”?",
+      "options": [
+        "On a book about birds on his shelf",
+        "In a newspaper headline",
+        "From a soldier he met in the navy",
+        "On a movie poster"
+      ],
+      "answerIndex": 0,
+      "explanation": "Fleming saw a dull book called “Field Guide to Birds of the West Indies” and took its author's short, plain name."
+    },
+    {
+      "question": "Why is Robert Pattinson a surprising choice for Bond?",
+      "options": [
+        "He is too short for the part",
+        "He has never acted in a movie before",
+        "He is already a famous star, while Bond actors are usually fairly unknown",
+        "He is not British"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says Bond actors are usually little known, but Mr Pattinson has been a box-office draw since 2008."
+    },
+    {
+      "question": "What does “eccentric” most nearly mean in “a beguiling age of heroes and eccentrics”?",
+      "options": [
+        "A person who is odd in an interesting way",
+        "A person who is very rich",
+        "A person who is always late",
+        "A person who is afraid of heights"
+      ],
+      "answerIndex": 0,
+      "explanation": "An eccentric has unusual habits, like the spymaster who kept snakes in his bath."
+    },
+    {
+      "question": "Why does the writer say a new Bond is hard to get right?",
+      "options": [
+        "Because nobody watches Bond films anymore",
+        "Because Bond belongs to three eras, and changing him too much or too little upsets people",
+        "Because the books were never popular",
+        "Because Bond has only ever been played by one actor"
+      ],
+      "answerIndex": 1,
+      "explanation": "Bond comes from the wartime age, the age of the books and today, and fans complain if he changes too much or too little."
+    },
+    {
+      "question": "Why does the choice of Bond matter so much to Britain, says the article?",
+      "options": [
+        "Because the actor will become prime minister",
+        "Because the films are only shown in Britain",
+        "Because Britain feels less powerful, and Bond is a hero who still wins for it",
+        "Because the army is paying for the film"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says Britain feels like an international has-been, and Bond offers comfort as a spy who still gets the bad guy."
+    }
+  ]
+}
