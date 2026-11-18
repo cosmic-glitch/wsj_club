@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-18",
+  "title": "Climate change is making some African deserts greener",
+  "articleUrl": "https://www.economist.com/middle-east-and-africa/2026/11/17/climate-change-is-making-some-african-deserts-greener",
+  "articlePageUrl": "/articles/2026-11-18.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "portent",
+      "partOfSpeech": "noun",
+      "pronunciation": "POR-tent",
+      "articleQuote": "For decades Lake Chad seemed to be a terrifying portent of climate collapse.",
+      "meaning": "A portent is a sign that something important, usually something bad, is about to happen, like dark clouds that warn of a storm. It is a warning about the future, not the event itself. Here it means that people looked at the shrinking Lake Chad and read it as an early warning of where the whole planet's climate was heading. The twist in the article is that the warning turned out to be wrong.",
+      "examples": [
+        "Many people saw the sudden drop in birds as a portent of a harsh winter.",
+        "The company's first big loss was a portent of the troubles to come."
+      ]
+    },
+    {
+      "word": "inexorable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-EK-sor-uh-bul",
+      "articleQuote": "getting drier and drier in some kind of inexorable process",
+      "meaning": "Something inexorable cannot be stopped or talked out of its course, no matter what anyone does, like a glacier grinding forward or the tide coming in. It usually describes a slow, steady force. Here it describes the old belief that the Sahel was drying out in a process nobody could halt. The article shows how risky it is to assume a trend is inexorable, because the rains came back.",
+      "examples": [
+        "The inexorable rise of the tide soon covered the sandcastle.",
+        "Many feared the inexorable spread of the disease across the country."
+      ]
+    },
+    {
+      "word": "compounded",
+      "partOfSpeech": "verb",
+      "pronunciation": "kum-POUND-ed",
+      "articleQuote": "punishing droughts, compounded by diversion for irrigation",
+      "meaning": "To compound a problem is to make it worse by adding something else on top of it, the way interest compounds when it is added to a bank balance that is already growing. The extra thing piles onto what was already there. Here Lake Chad was hurt twice over: the droughts shrank it, and then people drawing off its water for farming made the shrinking worse. Compounded can also mean 'mixed together' in chemistry, but in news stories it nearly always means made worse.",
+      "examples": [
+        "Her cold was compounded by a lack of sleep.",
+        "The delay was compounded when the replacement part also arrived broken."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The Sahel and “desertification”",
+      "articleQuote": "All this challenges a long and widely held belief in Africa’s relentless “desertification”.",
+      "meaning": "Geography and climate: the **Sahel** is a wide belt of dry grassland and scrub stretching across Africa from Senegal to Sudan. It sits between the Sahara desert to the north and wetter savanna to the south, and it gets most of its rain from seasonal storms, the west African monsoon. A monsoon is a seasonal wind that carries moist air in from the ocean and drops it as rain.\n\n**Desertification** is the idea that a desert like the Sahara is steadily spreading into land beside it, turning grassland into sand. In the 1970s and 1980s, severe droughts and famines in the Sahel made this look obviously true, a UN-commissioned study claimed the Sahara was creeping south by kilometres a year, and the African Union even launched a \"Great Green Wall\" of trees to push back.\n\nThen the rains returned. Lake Chad, which the article calls a \"giant rain gauge\" because its size tracks how much rain falls, has more than doubled its open water since 2012, and satellites show the Sahel turning greener. Rain can bring better harvests but also deadly floods, as in 2024 and 2025. The takeaway: a scary trend can reverse, and a place can be getting wetter and more dangerous at the same time."
+    },
+    {
+      "name": "Why climate predictions for rainfall are so uncertain",
+      "articleQuote": "“It’s not just that we don’t know the magnitude of the future change; the direction of change is also uncertain.”",
+      "meaning": "Science and uncertainty: a **climate model** is a computer simulation of the atmosphere and oceans, run to see how the climate might change as the planet warms. Models are good at some things (heat: more greenhouse gases, higher temperatures) and much worse at others, and rain is one of the hardest. Tropical weather is driven by fast, small, messy storms that models struggle to simulate, much more than the broad weather patterns of mid-latitude places like Europe or the US.\n\nModels also need **observations** to be tested: scientists check whether a model can correctly reproduce the past before trusting its forecast. Africa has about a fifth of the world's land but only about a tenth of its weather stations, and perhaps half of those give unreliable data. Less data means worse tests and worse models, and cuts to aid budgets could make it worse.\n\nThe result is the \"eastern African paradox\": for years the models said east Africa would get wetter while the long rains actually dwindled. So scientists are unsure not only how big the changes will be but whether rain will go up or down. The takeaway: uncertainty is itself a finding, and it means countries must prepare for several futures at once."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What had happened to Lake Chad between the 1960s and 1990s, and what has happened since?",
+      "options": [
+        "It shrank by as much as 90%, but its open water has more than doubled since 2012",
+        "It grew steadily the whole time",
+        "It dried up completely and has not returned",
+        "It split into four separate lakes"
+      ],
+      "answerIndex": 0,
+      "explanation": "Droughts and irrigation diversion shrank it by up to 90%, but a new study finds its open-water area more than doubled in little more than a decade after 2012."
+    },
+    {
+      "question": "Why does the article say Lake Chad acts like a “giant rain gauge”?",
+      "options": [
+        "Because it is used to measure rain at a weather station",
+        "Because its size is a clear sign of how much rain is falling in the Sahel",
+        "Because it is shaped like a measuring cup",
+        "Because it freezes in winter"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lake's rise is the clearest sign that rainfall in the Sahel has been increasing for years."
+    },
+    {
+      "question": "What downside comes with the Sahel getting more rain?",
+      "options": [
+        "Crops can no longer grow",
+        "The Sahara grows larger",
+        "More frequent and deadly floods",
+        "Satellites cannot see the region"
+      ],
+      "answerIndex": 2,
+      "explanation": "Rain in the Sahel in 2024 was far above average, sweeping away villages, and in 2025 more than 230 people died in flash floods in Nigeria."
+    },
+    {
+      "question": "What was the old belief in “desertification” that the new evidence challenges?",
+      "options": [
+        "That Africa's lakes would turn into oceans",
+        "That the Sahara was steadily pushing south and the region was drying inexorably",
+        "That the Sahel gets no rain at all",
+        "That planting trees makes deserts bigger"
+      ],
+      "answerIndex": 1,
+      "explanation": "Since the colonial era and the 1970s UN-commissioned study, many believed the Sahara was relentlessly expanding into the Sahel."
+    },
+    {
+      "question": "Why is it hard to predict how rainfall in Africa will change?",
+      "options": [
+        "Tropical rain is hard to simulate, and Africa has few reliable weather stations to test models",
+        "Climate scientists refuse to study Africa",
+        "Rain in Africa follows no physical laws",
+        "There is no rain at all in east Africa"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says tropical weather is harder to simulate than mid-latitude weather, and Africa hosts only about a tenth of the world's weather stations, many unreliable."
+    }
+  ]
+}

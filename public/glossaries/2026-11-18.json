@@ -1,0 +1,699 @@
+[
+  {
+    "k": "portent",
+    "t": "portent",
+    "kind": "vocab",
+    "pron": "POR-tent",
+    "forms": [
+      "portent"
+    ],
+    "text": "A portent is a sign that something important, usually bad, is coming. Here Lake Chad's shrinking was read as an early warning of climate collapse, a warning that proved wrong.",
+    "audio": true
+  },
+  {
+    "k": "inexorable",
+    "t": "inexorable",
+    "kind": "vocab",
+    "pron": "in-EK-sor-uh-bul",
+    "forms": [
+      "inexorable"
+    ],
+    "text": "Inexorable means impossible to stop, like a slow tide. Here it describes the old belief that the Sahel was drying out in a way nobody could halt.",
+    "audio": true
+  },
+  {
+    "k": "compounded",
+    "t": "compounded",
+    "kind": "vocab",
+    "pron": "kum-POUND-ed",
+    "forms": [
+      "compounded"
+    ],
+    "text": "To compound a problem is to make it worse by piling something on top of it. Here droughts shrank Lake Chad and farm irrigation drained it further.",
+    "audio": true
+  },
+  {
+    "k": "lake-chad",
+    "t": "Lake Chad",
+    "kind": "name",
+    "forms": [
+      "Lake Chad"
+    ],
+    "text": "Lake Chad is a large shallow lake on the edge of the Sahara, shared by Chad, Cameroon, Niger and Nigeria. It shrank dramatically and is now growing again.",
+    "audio": true
+  },
+  {
+    "k": "sahel",
+    "t": "Sahel",
+    "kind": "name",
+    "forms": [
+      "Sahel",
+      "Sahelian"
+    ],
+    "text": "The Sahel is the dry belt of land south of the Sahara, running from Senegal to Sudan. It is semi-arid: too wet to be desert, too dry for lush farmland.",
+    "audio": true
+  },
+  {
+    "k": "sahara",
+    "t": "Sahara",
+    "kind": "name",
+    "forms": [
+      "Sahara"
+    ],
+    "text": "The Sahara in north Africa is the world's largest hot desert. People long feared it was creeping south into the Sahel.",
+    "audio": true
+  },
+  {
+    "k": "sudd",
+    "t": "Sudd marshes",
+    "kind": "name",
+    "forms": [
+      "Sudd marshes"
+    ],
+    "text": "The Sudd is a vast wetland in South Sudan, Africa's biggest. It has swollen so much since 2020 that the landscape may be permanently changed.",
+    "audio": true
+  },
+  {
+    "k": "turkana",
+    "t": "Turkana",
+    "kind": "name",
+    "forms": [
+      "Turkana"
+    ],
+    "text": "Lake Turkana, in Kenya, is the world's largest permanent desert lake, meaning a lake that never dries up even though it sits in a desert.",
+    "audio": true
+  },
+  {
+    "k": "portent-climate-collapse",
+    "t": "climate collapse",
+    "kind": "phrase",
+    "forms": [
+      "climate collapse"
+    ],
+    "text": "A dramatic phrase for the climate changing so badly that societies and nature break down. Here it shows how scary Lake Chad's shrinking looked.",
+    "audio": true
+  },
+  {
+    "k": "tens-of-millions",
+    "t": "tens of millions",
+    "kind": "phrase",
+    "forms": [
+      "tens of millions"
+    ],
+    "text": "A number between 20 million and 99 million. It shows how many people relied on the lake for water, food and work.",
+    "audio": true
+  },
+  {
+    "k": "punishing",
+    "t": "punishing",
+    "kind": "word",
+    "forms": [
+      "punishing"
+    ],
+    "text": "Punishing means harsh and exhausting, causing great hardship. Punishing droughts are severe ones that hurt people and land badly.",
+    "audio": true
+  },
+  {
+    "k": "droughts",
+    "t": "droughts",
+    "kind": "word",
+    "forms": [
+      "droughts"
+    ],
+    "text": "A drought is a long period with much less rain than normal, leaving rivers, lakes and soil dry.",
+    "audio": true
+  },
+  {
+    "k": "diversion",
+    "t": "diversion",
+    "kind": "word",
+    "forms": [
+      "diversion"
+    ],
+    "text": "Diversion means sending something, here water, in a different direction. Farmers channelled the lake's water into fields, leaving less in the lake.",
+    "audio": true
+  },
+  {
+    "k": "irrigation",
+    "t": "irrigation",
+    "kind": "word",
+    "forms": [
+      "irrigation",
+      "irrigated"
+    ],
+    "text": "Irrigation is supplying water to crops through channels or pipes instead of waiting for rain.",
+    "audio": true
+  },
+  {
+    "k": "destined",
+    "t": "destined",
+    "kind": "word",
+    "forms": [
+      "destined"
+    ],
+    "text": "Destined means seeming certain to end up a particular way, as if fate had decided. People thought the lake was destined to vanish.",
+    "audio": true
+  },
+  {
+    "k": "ravaged",
+    "t": "ravaged",
+    "kind": "word",
+    "forms": [
+      "ravaged"
+    ],
+    "text": "To ravage is to damage something very badly, like a fire or storm. Famines ravaged the Sahel in the 1980s.",
+    "audio": true
+  },
+  {
+    "k": "famines",
+    "t": "famines",
+    "kind": "word",
+    "forms": [
+      "famines"
+    ],
+    "text": "A famine is an extreme shortage of food that leaves many people starving across a region.",
+    "audio": true
+  },
+  {
+    "k": "grim-preview",
+    "t": "grim preview",
+    "kind": "phrase",
+    "forms": [
+      "grim preview"
+    ],
+    "text": "A preview is an early glimpse of what is coming. A grim one is a gloomy glimpse, here of a hotter, drier Africa that never fully arrived.",
+    "audio": true
+  },
+  {
+    "k": "open-water",
+    "t": "open-water area",
+    "kind": "phrase",
+    "forms": [
+      "open-water area"
+    ],
+    "text": "The part of a lake's surface that is clear water, not marsh, reeds or land. Scientists measure it from satellite pictures.",
+    "audio": true
+  },
+  {
+    "k": "water-bodies",
+    "t": "water bodies",
+    "kind": "phrase",
+    "forms": [
+      "water bodies"
+    ],
+    "text": "A general term for lakes, rivers, ponds and other collections of water.",
+    "audio": true
+  },
+  {
+    "k": "wetland",
+    "t": "wetland",
+    "kind": "word",
+    "forms": [
+      "wetland"
+    ],
+    "text": "A wetland is land soaked with water for much of the year, such as a marsh. Wetlands shelter wildlife and soak up floods.",
+    "audio": true
+  },
+  {
+    "k": "swollen",
+    "t": "swollen",
+    "kind": "word",
+    "forms": [
+      "swollen"
+    ],
+    "text": "Swollen means grown larger than usual, like a river after heavy rain. The Sudd marshes have expanded a lot.",
+    "audio": true
+  },
+  {
+    "k": "altered-for-good",
+    "t": "altered for good",
+    "kind": "phrase",
+    "forms": [
+      "altered for good"
+    ],
+    "text": "For good means permanently. The idea is that the changed landscape may never go back to how it was.",
+    "audio": true
+  },
+  {
+    "k": "hint",
+    "t": "hint",
+    "kind": "word",
+    "forms": [
+      "hint"
+    ],
+    "text": "To hint at something is to suggest it without saying it outright. Rising lakes hint at how Africa's climate may change.",
+    "audio": true
+  },
+  {
+    "k": "deeply-uncertain",
+    "t": "deeply uncertain",
+    "kind": "phrase",
+    "forms": [
+      "deeply uncertain"
+    ],
+    "text": "Very hard to know. Scientists are saying they cannot say confidently how the climate will play out.",
+    "audio": true
+  },
+  {
+    "k": "adapt",
+    "t": "adapt",
+    "kind": "word",
+    "forms": [
+      "adapt",
+      "adaptation"
+    ],
+    "text": "To adapt is to change how you live or work to suit new conditions. Climate adaptation means preparing for a changed climate, for example with flood defences.",
+    "audio": true
+  },
+  {
+    "k": "cop31",
+    "t": "COP31",
+    "kind": "name",
+    "forms": [
+      "COP31"
+    ],
+    "text": "COP31 is the 31st annual UN climate summit, where countries negotiate how to tackle climate change. COP stands for Conference of the Parties.",
+    "audio": true
+  },
+  {
+    "k": "clear-cut",
+    "t": "clear-cut",
+    "kind": "word",
+    "forms": [
+      "clear-cut"
+    ],
+    "text": "Clear-cut means obvious and certain, with no doubt. The article contrasts clear-cut changes like heat with uncertain ones like rain.",
+    "audio": true
+  },
+  {
+    "k": "glaciers",
+    "t": "glaciers",
+    "kind": "word",
+    "forms": [
+      "glaciers"
+    ],
+    "text": "Glaciers are huge, slow-moving rivers of ice. Africa has only a few, on its highest mountains, and they are disappearing.",
+    "audio": true
+  },
+  {
+    "k": "heatwaves",
+    "t": "heatwaves",
+    "kind": "word",
+    "forms": [
+      "Heatwaves"
+    ],
+    "text": "A heatwave is a spell of unusually hot weather lasting several days or more.",
+    "audio": true
+  },
+  {
+    "k": "hot-spells",
+    "t": "hot spells",
+    "kind": "phrase",
+    "forms": [
+      "hot spells"
+    ],
+    "text": "Periods of unusually hot weather, another word for heatwaves.",
+    "audio": true
+  },
+  {
+    "k": "extreme-measure",
+    "t": "extreme",
+    "kind": "word",
+    "forms": [
+      "extreme",
+      "Extreme"
+    ],
+    "text": "Here extreme has a technical meaning: a measure combining how long a hot spell lasts, how hot it gets, and how big an area it covers.",
+    "audio": true
+  },
+  {
+    "k": "world-meteorological-organisation",
+    "t": "World Meteorological Organisation",
+    "kind": "name",
+    "forms": [
+      "World Meteorological Organisation"
+    ],
+    "text": "The WMO is the UN agency that coordinates weather and climate science around the world.",
+    "audio": true
+  },
+  {
+    "k": "sub-region",
+    "t": "sub-region",
+    "kind": "word",
+    "forms": [
+      "sub-region"
+    ],
+    "text": "A smaller part of a larger region. Africa is often divided into sub-regions such as west, east and southern Africa.",
+    "audio": true
+  },
+  {
+    "k": "semi-arid",
+    "t": "semi-arid",
+    "kind": "word",
+    "forms": [
+      "semi-arid"
+    ],
+    "text": "Semi-arid land is quite dry, with some rain but not enough for lush forests or easy farming.",
+    "audio": true
+  },
+  {
+    "k": "rain-gauge",
+    "t": "giant rain gauge",
+    "kind": "phrase",
+    "forms": [
+      "giant rain gauge"
+    ],
+    "text": "A rain gauge is a simple tool that measures how much rain falls. Calling the lake a giant one means its size shows how rainy the region is.",
+    "audio": true
+  },
+  {
+    "k": "monsoon",
+    "t": "monsoon",
+    "kind": "word",
+    "forms": [
+      "monsoon"
+    ],
+    "text": "A monsoon is a seasonal wind that brings moist air from the ocean and heavy rain to land. The west African monsoon feeds the Sahel's rain.",
+    "audio": true
+  },
+  {
+    "k": "fuels",
+    "t": "fuels",
+    "kind": "word",
+    "forms": [
+      "fuels"
+    ],
+    "text": "To fuel something is to feed it and make it stronger. Warming seas and desert fuel the monsoon.",
+    "audio": true
+  },
+  {
+    "k": "moisture",
+    "t": "moisture",
+    "kind": "word",
+    "forms": [
+      "moisture"
+    ],
+    "text": "Moisture is water in the air or soil, in tiny amounts.",
+    "audio": true
+  },
+  {
+    "k": "revive",
+    "t": "revive",
+    "kind": "word",
+    "forms": [
+      "revive"
+    ],
+    "text": "To revive is to come back to life or strength. Dry land reviving means plants growing again.",
+    "audio": true
+  },
+  {
+    "k": "groundwater",
+    "t": "groundwater",
+    "kind": "word",
+    "forms": [
+      "groundwater"
+    ],
+    "text": "Groundwater is water stored underground in soil and rock, which people reach with wells.",
+    "audio": true
+  },
+  {
+    "k": "sweeping-away",
+    "t": "sweeping away",
+    "kind": "phrase",
+    "forms": [
+      "sweeping away"
+    ],
+    "text": "Carrying off with great force. Floodwater sweeps away homes and villages.",
+    "audio": true
+  },
+  {
+    "k": "flash-floods",
+    "t": "flash floods",
+    "kind": "phrase",
+    "forms": [
+      "flash floods"
+    ],
+    "text": "Flash floods are sudden floods, often from very heavy rain, that give people little warning.",
+    "audio": true
+  },
+  {
+    "k": "niamey",
+    "t": "Niamey",
+    "kind": "name",
+    "forms": [
+      "Niamey"
+    ],
+    "text": "Niamey is the capital of Niger, a Sahel country, and sits beside the Niger River.",
+    "audio": true
+  },
+  {
+    "k": "desertification",
+    "t": "desertification",
+    "kind": "word",
+    "forms": [
+      "desertification"
+    ],
+    "text": "Desertification is the process of fertile land turning into desert. The article says the belief that it was relentless is now challenged.",
+    "audio": true
+  },
+  {
+    "k": "relentless",
+    "t": "relentless",
+    "kind": "word",
+    "forms": [
+      "relentless"
+    ],
+    "text": "Relentless means never easing or stopping.",
+    "audio": true
+  },
+  {
+    "k": "colonial-era",
+    "t": "colonial era",
+    "kind": "phrase",
+    "forms": [
+      "colonial era"
+    ],
+    "text": "The period when European powers ruled much of Africa, mostly the 1800s to the mid-1900s. Some ideas about Africa's environment began then.",
+    "audio": true
+  },
+  {
+    "k": "savannah",
+    "t": "savannah",
+    "kind": "word",
+    "forms": [
+      "savannah"
+    ],
+    "text": "A savannah is a warm grassland with scattered trees.",
+    "audio": true
+  },
+  {
+    "k": "premise",
+    "t": "premise",
+    "kind": "word",
+    "forms": [
+      "premise"
+    ],
+    "text": "A premise is an idea you accept as true and build an argument or plan on. If the premise is wrong, the plan may be too.",
+    "audio": true
+  },
+  {
+    "k": "great-green-wall",
+    "t": "Great Green Wall",
+    "kind": "name",
+    "forms": [
+      "Great Green Wall"
+    ],
+    "text": "An African Union project to plant trees and restore land across the Sahel to hold back the desert.",
+    "audio": true
+  },
+  {
+    "k": "soil-degradation",
+    "t": "soil degradation",
+    "kind": "phrase",
+    "forms": [
+      "soil degradation"
+    ],
+    "text": "Soil losing its fertility or being blown or washed away, making it harder to grow crops.",
+    "audio": true
+  },
+  {
+    "k": "local-expressions",
+    "t": "local expressions",
+    "kind": "phrase",
+    "forms": [
+      "local expressions"
+    ],
+    "text": "The scientist means that climate change looks different in each place: wetter here, drier there, so plans must fit local conditions.",
+    "audio": true
+  },
+  {
+    "k": "data-gathering",
+    "t": "data",
+    "kind": "word",
+    "forms": [
+      "data"
+    ],
+    "text": "Data means measurements and records. Without enough reliable data, scientists cannot say what is really changing.",
+    "audio": true
+  },
+  {
+    "k": "dwindled",
+    "t": "dwindled",
+    "kind": "word",
+    "forms": [
+      "dwindled"
+    ],
+    "text": "Dwindled means gradually got smaller or fewer. The long rains weakened over about 25 years.",
+    "audio": true
+  },
+  {
+    "k": "long-rains",
+    "t": "long rains",
+    "kind": "phrase",
+    "forms": [
+      "long rains"
+    ],
+    "text": "East Africa's main rainy season, March to May, which farmers depend on to plant crops. The short rains come October to December.",
+    "audio": true
+  },
+  {
+    "k": "climate-models",
+    "t": "climate models",
+    "kind": "phrase",
+    "forms": [
+      "climate models"
+    ],
+    "text": "Computer simulations of the atmosphere and oceans that scientists use to project how the climate may change.",
+    "audio": true
+  },
+  {
+    "k": "eastern-african-paradox",
+    "t": "eastern African paradox",
+    "kind": "phrase",
+    "forms": [
+      "eastern African paradox"
+    ],
+    "text": "A paradox is something that seems to contradict itself. Models predicted a wetter east Africa while the long rains actually dried up.",
+    "audio": true
+  },
+  {
+    "k": "dubbed",
+    "t": "dubbed",
+    "kind": "word",
+    "forms": [
+      "dubbed"
+    ],
+    "text": "To dub something is to give it a nickname or name, as scientists did with this puzzle.",
+    "audio": true
+  },
+  {
+    "k": "rift-valley",
+    "t": "Rift Valley",
+    "kind": "name",
+    "forms": [
+      "Rift Valley"
+    ],
+    "text": "The Great Rift Valley is a long trench in east Africa where the earth's crust is slowly pulling apart. Many lakes fill it.",
+    "audio": true
+  },
+  {
+    "k": "projections",
+    "t": "projections",
+    "kind": "word",
+    "forms": [
+      "projections"
+    ],
+    "text": "A projection is a forecast of what will likely happen based on current information and models, usually looking years ahead.",
+    "audio": true
+  },
+  {
+    "k": "unsettled",
+    "t": "unsettled",
+    "kind": "word",
+    "forms": [
+      "unsettled"
+    ],
+    "text": "Here unsettled means not yet decided or agreed, with no clear answer. Scientists cannot yet say what will happen.",
+    "audio": true
+  },
+  {
+    "k": "magnitude",
+    "t": "magnitude",
+    "kind": "word",
+    "forms": [
+      "magnitude"
+    ],
+    "text": "Magnitude means size or scale. Not knowing the magnitude means not knowing how big the change will be.",
+    "audio": true
+  },
+  {
+    "k": "mid-latitude",
+    "t": "mid-latitude",
+    "kind": "word",
+    "forms": [
+      "mid-latitude"
+    ],
+    "text": "The mid-latitudes are the regions between the tropics and the poles, such as Europe and most of the US. Their weather is easier to model.",
+    "audio": true
+  },
+  {
+    "k": "dearth",
+    "t": "dearth",
+    "kind": "word",
+    "forms": [
+      "dearth"
+    ],
+    "text": "A dearth is a serious lack of something. Here there are too few weather observations in Africa.",
+    "audio": true
+  },
+  {
+    "k": "weather-stations",
+    "t": "weather-monitoring stations",
+    "kind": "phrase",
+    "forms": [
+      "weather-monitoring stations"
+    ],
+    "text": "Places with instruments that record rain, temperature and wind. Africa has few, and many do not work well.",
+    "audio": true
+  },
+  {
+    "k": "hasten",
+    "t": "hasten",
+    "kind": "word",
+    "forms": [
+      "hasten"
+    ],
+    "text": "To hasten something is to make it happen sooner or faster.",
+    "audio": true
+  },
+  {
+    "k": "el-nino",
+    "t": "El Niño",
+    "kind": "name",
+    "forms": [
+      "El Niño"
+    ],
+    "text": "El Niño is a climate pattern in which the Pacific Ocean warms unusually, changing weather worldwide. In east Africa it often brings heavy rain and floods.",
+    "audio": true
+  },
+  {
+    "k": "engulfing",
+    "t": "engulfing",
+    "kind": "word",
+    "forms": [
+      "engulfing"
+    ],
+    "text": "To engulf is to surround and cover completely. The lake's rising water has swallowed buildings.",
+    "audio": true
+  },
+  {
+    "k": "lake-baringo",
+    "t": "Lake Baringo",
+    "kind": "name",
+    "forms": [
+      "Lake Baringo"
+    ],
+    "text": "Lake Baringo is a freshwater lake in Kenya's Rift Valley whose waters have been rising since 2010.",
+    "audio": true
+  }
+]
