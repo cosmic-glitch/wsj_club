@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-18",
+  "title": "New long-haul flights will connect unlikely cities in 2027",
+  "articleUrl": "https://www.economist.com/the-world-ahead/2026/11/18/new-long-haul-flights-will-connect-unlikely-cities-in-2027",
+  "articlePageUrl": "/articles/junior/2026-11-18.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "culmination",
+      "partOfSpeech": "noun",
+      "pronunciation": "kul-mih-NAY-shun",
+      "articleQuote": "the Sydney-London and Sydney-New York services will mark their culmination.",
+      "meaning": "A culmination is the highest point or final result of a long process. It is the moment when years of effort or change finally reach their peak. Here, the writer says the super-long Qantas flights are the peak of the ultra-long-haul era, and that no longer routes will come after them.",
+      "examples": [
+        "Winning the state spelling bee was the culmination of a whole year of practice.",
+        "The class play was the culmination of weeks of rehearsals, painting scenery, and learning lines."
+      ]
+    },
+    {
+      "word": "sustain",
+      "partOfSpeech": "verb",
+      "pronunciation": "suh-STAYN",
+      "articleQuote": "The airline reckons there is enough demand to sustain daily nonstop flights between Sydney and London.",
+      "meaning": "To sustain something is to keep it going over time, without it running out or stopping. Here, Qantas believes enough people will buy tickets to keep a flight running every single day.",
+      "examples": [
+        "A healthy breakfast helps sustain your energy until lunchtime.",
+        "The team could not sustain its fast start, and the other side caught up in the second half."
+      ]
+    },
+    {
+      "word": "spur",
+      "partOfSpeech": "verb",
+      "pronunciation": "SPUR",
+      "articleQuote": "Yet the Qantas service is unlikely to spur a spate of new routes from Tokyo to Tulum, or Panama to Manama.",
+      "meaning": "To spur something is to push it to happen or to speed it up. The word comes from the pointed metal spur a rider wears on a boot to urge a horse forward. Here, the writer says the new Qantas flight probably will not push airlines to start lots of other very long routes.",
+      "examples": [
+        "The class's friendly contest to read the most books spurred everyone to visit the library more often.",
+        "Seeing his rival score a goal spurred him to run even harder."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Flag carrier",
+      "articleQuote": "Qantas, Australia’s flag-carrier and the operator of the marathon flight, has ordered a fleet of 12 specially customised, “ultra-long-range” versions of the A350-1000.",
+      "meaning": "The article calls Qantas Australia's \"flag-carrier\" and Iberia \"Spain's flag-carrier.\" A **flag carrier** is the main airline that a country is most closely linked with. It usually carries the country's name or colours around the world, a bit like a flag does. Qantas is Australia's, Iberia is Spain's, and British Airways is the United Kingdom's.\n\nWhy does a country have one? Long ago, flying between countries needed permission from both governments, and many countries started or backed one airline to represent them. Today most flag carriers are ordinary companies, and many are owned by shareholders rather than the government. They still often get special treatment, such as a home base at the country's busiest airports.\n\nPicture a school with many clubs, but one team that wears the school's name on its jersey at every big tournament. A flag carrier is like that team: it is not the only airline in the country, but it is the one people think of as the country's own. So when you read that an airline is \"the flag carrier,\" you know it is the country's best-known airline, not just any company with planes."
+    },
+    {
+      "name": "Hub-and-spoke",
+      "articleQuote": "And a third is composed of connections between hubs, such as Doha-Los Angeles or Hong Kong-New York.",
+      "meaning": "Airlines do not usually run a flight between every pair of cities. That would take far too many planes. Instead, many airlines use a system called **hub-and-spoke**. Look at a bicycle wheel: the hub is the middle, and the spokes are the rods that run out from it. An airline picks a big airport as its hub and flies short routes (the spokes) from many smaller cities into it. Passengers then switch planes there to reach faraway places. Doha, Hong Kong and Singapore are famous hubs.\n\nHere is a kid-sized example. Say five friends live in five different towns and want to meet each other. If every friend drove to every other friend's house, that would be ten separate trips. If they all meet at one park in the middle, it takes only five trips. The park is the hub. Everyone gets to see everyone, with far fewer trips.\n\nThat is why a flight between two hubs is special. The article says such flights carry people who are really heading to or from other cities, and who will change planes at the hub. The system saves airlines money, but it costs travellers time. A \"long and thin\" nonstop route skips the hub, so passengers can fly straight from one city to the other without a change."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What record will the Qantas flight from Sydney to London set when it begins in 2027?",
+      "options": [
+        "The cheapest long-haul ticket",
+        "The world's longest scheduled commercial flight",
+        "The first flight with only premium seats",
+        "The first flight to use a single-aisle plane"
+      ],
+      "answerIndex": 1,
+      "explanation": "The flight may last as many as 22 hours, longer than the current record holder from Singapore to New York, which takes 19."
+    },
+    {
+      "question": "Why does a very long flight need so much extra fuel, according to the article?",
+      "options": [
+        "The engines work badly at high altitude",
+        "Planes must fly in a zigzag pattern over oceans",
+        "The plane must also burn fuel to carry the weight of all the fuel it is carrying",
+        "Passengers on long flights bring heavier bags"
+      ],
+      "answerIndex": 2,
+      "explanation": "The more fuel a plane carries, the heavier it gets, so it needs even more fuel just to carry that fuel, and a 20-hour flight needs more than two ten-hour trips."
+    },
+    {
+      "question": "In the article, what does a \"long and thin\" route mean?",
+      "options": [
+        "A long distance with relatively few passengers",
+        "A short distance on a narrow plane",
+        "A route that is cheap and crowded",
+        "A flight with only first-class seats"
+      ],
+      "answerIndex": 0,
+      "explanation": "\"Long\" refers to distance and \"thin\" refers to demand, meaning fewer people want to make the trip."
+    },
+    {
+      "question": "Which sentence best shows the meaning of the word \"sustain\"?",
+      "options": [
+        "The plane will sustain a quick stop in Doha to swap its crew.",
+        "She could not sustain her fast pace for the whole race, and she slowed down.",
+        "The teacher will sustain the new rule tomorrow morning.",
+        "He decided to sustain his old shoes in the closet."
+      ],
+      "answerIndex": 1,
+      "explanation": "To sustain something is to keep it going over time, and the runner could not keep her fast pace going."
+    },
+    {
+      "question": "Why is the Airbus A321XLR good for \"long and thin\" routes?",
+      "options": [
+        "It is the biggest plane in the sky and holds the most passengers",
+        "It can fly long distances without the high costs of a very big plane",
+        "It never needs to stop for fuel",
+        "It flies faster than any other airliner"
+      ],
+      "answerIndex": 1,
+      "explanation": "A smaller single-aisle plane can fly up to 11 hours at lower cost, so airlines can profit on routes that could not fill a big plane."
+    }
+  ]
+}

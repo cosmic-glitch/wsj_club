@@ -1,0 +1,496 @@
+[
+  {
+    "k": "culmination",
+    "t": "culmination",
+    "kind": "vocab",
+    "pron": "kul-mih-NAY-shun",
+    "forms": [
+      "culmination"
+    ],
+    "text": "A culmination is the high point or final result of a long process. Here, the super-long Sydney flights are the peak of the ultra-long-haul era.",
+    "audio": true
+  },
+  {
+    "k": "sustain",
+    "t": "sustain",
+    "kind": "vocab",
+    "pron": "suh-STAYN",
+    "forms": [
+      "sustain"
+    ],
+    "text": "To sustain something is to keep it going over time. Here, Qantas thinks enough people will buy tickets to keep a flight running every day.",
+    "audio": true
+  },
+  {
+    "k": "spur",
+    "t": "spur",
+    "kind": "vocab",
+    "pron": "SPUR",
+    "forms": [
+      "spur"
+    ],
+    "text": "To spur something is to push it to happen or to speed it up. Here, the new flight probably will not push airlines to start lots of other very long routes.",
+    "audio": true
+  },
+  {
+    "k": "flag-carrier",
+    "t": "flag-carrier",
+    "kind": "word",
+    "forms": [
+      "flag-carrier"
+    ],
+    "text": "A flag carrier is the main airline that a country is most closely linked with. Qantas is Australia's and Iberia is Spain's.",
+    "audio": true
+  },
+  {
+    "k": "hubs",
+    "t": "hubs",
+    "kind": "word",
+    "forms": [
+      "hubs"
+    ],
+    "text": "A hub is a big, busy airport where an airline brings many flights together so passengers can switch planes. Doha and Hong Kong are hubs.",
+    "audio": true
+  },
+  {
+    "k": "nonstop",
+    "t": "nonstop",
+    "kind": "word",
+    "forms": [
+      "nonstop"
+    ],
+    "text": "A nonstop flight goes from start to finish without landing anywhere in between.",
+    "audio": true
+  },
+  {
+    "k": "record",
+    "t": "record",
+    "kind": "word",
+    "forms": [
+      "record",
+      "records"
+    ],
+    "text": "A record is the best result ever reached, like the longest flight or the fastest run.",
+    "audio": true
+  },
+  {
+    "k": "scheduled",
+    "t": "scheduled",
+    "kind": "word",
+    "forms": [
+      "scheduled"
+    ],
+    "text": "A scheduled flight is one that runs at planned times, like a bus, and is not a special one-time trip.",
+    "audio": true
+  },
+  {
+    "k": "commercial",
+    "t": "commercial",
+    "kind": "word",
+    "forms": [
+      "commercial"
+    ],
+    "text": "Commercial means for business and for paying customers. A commercial flight carries ordinary passengers who buy tickets.",
+    "audio": true
+  },
+  {
+    "k": "measly",
+    "t": "measly",
+    "kind": "word",
+    "forms": [
+      "measly"
+    ],
+    "text": "Measly means very small or disappointing. Here, the writer jokes that 19 hours is a tiny amount compared with 22.",
+    "audio": true
+  },
+  {
+    "k": "marathon",
+    "t": "marathon",
+    "kind": "word",
+    "forms": [
+      "marathon"
+    ],
+    "text": "A marathon is a very long race, over 26 miles. Here, it means a flight that goes on for a very long time.",
+    "audio": true
+  },
+  {
+    "k": "fleet",
+    "t": "fleet",
+    "kind": "word",
+    "forms": [
+      "fleet"
+    ],
+    "text": "A fleet is a group of vehicles owned by one company. Qantas has ordered a fleet of 12 planes.",
+    "audio": true
+  },
+  {
+    "k": "customised",
+    "t": "customised",
+    "kind": "word",
+    "forms": [
+      "customised"
+    ],
+    "text": "Customised means changed to fit a special need. These planes are built differently from the regular ones.",
+    "audio": true
+  },
+  {
+    "k": "ultra-long-range",
+    "t": "ultra-long-range",
+    "kind": "phrase",
+    "forms": [
+      "ultra-long-range"
+    ],
+    "text": "Ultra-long-range describes a plane that can fly an extremely long way without stopping to refuel.",
+    "audio": true
+  },
+  {
+    "k": "reckons",
+    "t": "reckons",
+    "kind": "word",
+    "forms": [
+      "reckons"
+    ],
+    "text": "To reckon means to think or believe something after weighing it up. Here, Qantas believes there are enough passengers.",
+    "audio": true
+  },
+  {
+    "k": "demand",
+    "t": "demand",
+    "kind": "word",
+    "forms": [
+      "demand"
+    ],
+    "text": "Demand is how many people want to buy something. If lots of people want a flight, demand is high.",
+    "audio": true
+  },
+  {
+    "k": "configured",
+    "t": "configured",
+    "kind": "word",
+    "forms": [
+      "configured"
+    ],
+    "text": "Configured means set up in a certain way. A cabin configured with premium seats has only fancy seats.",
+    "audio": true
+  },
+  {
+    "k": "premium",
+    "t": "premium",
+    "kind": "word",
+    "forms": [
+      "premium"
+    ],
+    "text": "Premium means higher quality and costing more. Premium seats are roomier and cost far more than economy seats.",
+    "audio": true
+  },
+  {
+    "k": "economy",
+    "t": "economy",
+    "kind": "word",
+    "forms": [
+      "economy"
+    ],
+    "text": "Economy is the cheapest class of airplane seat, with the least space.",
+    "audio": true
+  },
+  {
+    "k": "blurs",
+    "t": "blurs",
+    "kind": "word",
+    "forms": [
+      "blurs"
+    ],
+    "text": "To blur something is to make the line between two things hard to see. Here, a first-class seat feels almost like a hotel room.",
+    "audio": true
+  },
+  {
+    "k": "boutique",
+    "t": "boutique",
+    "kind": "word",
+    "forms": [
+      "boutique"
+    ],
+    "text": "Boutique describes something small, stylish and fancy, like a little hotel with only a few special rooms.",
+    "audio": true
+  },
+  {
+    "k": "accommodation",
+    "t": "accommodation",
+    "kind": "word",
+    "forms": [
+      "accommodation"
+    ],
+    "text": "Accommodation is a place to stay, such as a hotel room.",
+    "audio": true
+  },
+  {
+    "k": "hydration",
+    "t": "hydration",
+    "kind": "word",
+    "forms": [
+      "hydration"
+    ],
+    "text": "Hydration means getting enough water into your body. A hydration station is a place to get a drink.",
+    "audio": true
+  },
+  {
+    "k": "aka",
+    "t": "aka",
+    "kind": "phrase",
+    "forms": [
+      "aka"
+    ],
+    "text": "Aka means \"also known as.\" It introduces another name for the same thing.",
+    "audio": true
+  },
+  {
+    "k": "in-effect",
+    "t": "in effect",
+    "kind": "phrase",
+    "forms": [
+      "in effect"
+    ],
+    "text": "In effect means \"in reality, even if not said directly.\"",
+    "audio": true
+  },
+  {
+    "k": "spate",
+    "t": "spate",
+    "kind": "word",
+    "forms": [
+      "spate"
+    ],
+    "text": "A spate is a sudden rush of many things at once, such as a spate of new routes.",
+    "audio": true
+  },
+  {
+    "k": "ultra-long-haul",
+    "t": "ultra-long-haul",
+    "kind": "phrase",
+    "forms": [
+      "ultra-long-haul"
+    ],
+    "text": "Long-haul means a flight of many hours. Ultra-long-haul means the very longest of these.",
+    "audio": true
+  },
+  {
+    "k": "fuel",
+    "t": "fuel",
+    "kind": "word",
+    "forms": [
+      "fuel"
+    ],
+    "text": "Fuel is what an engine burns to make power. Planes burn jet fuel.",
+    "audio": true
+  },
+  {
+    "k": "well-to-do",
+    "t": "well-to-do",
+    "kind": "phrase",
+    "forms": [
+      "well-to-do"
+    ],
+    "text": "Well-to-do means rich enough to buy nice things easily.",
+    "audio": true
+  },
+  {
+    "k": "shell-out",
+    "t": "shell out",
+    "kind": "phrase",
+    "forms": [
+      "shell out"
+    ],
+    "text": "To shell out means to spend a lot of money, often unwillingly.",
+    "audio": true
+  },
+  {
+    "k": "migrants",
+    "t": "migrants",
+    "kind": "word",
+    "forms": [
+      "migrants"
+    ],
+    "text": "Migrants are people who move from one country to live in another.",
+    "audio": true
+  },
+  {
+    "k": "corridors",
+    "t": "corridors",
+    "kind": "word",
+    "forms": [
+      "corridors"
+    ],
+    "text": "A corridor here means a busy path between two places that many people travel along.",
+    "audio": true
+  },
+  {
+    "k": "composed",
+    "t": "composed",
+    "kind": "word",
+    "forms": [
+      "composed"
+    ],
+    "text": "Composed of means made up of. A group composed of three types has three parts.",
+    "audio": true
+  },
+  {
+    "k": "variant",
+    "t": "variant",
+    "kind": "word",
+    "forms": [
+      "variant"
+    ],
+    "text": "A variant is a slightly different version of something. The XLR is a variant of a short-hop plane.",
+    "audio": true
+  },
+  {
+    "k": "single-aisle",
+    "t": "single-aisle",
+    "kind": "phrase",
+    "forms": [
+      "single-aisle"
+    ],
+    "text": "A single-aisle plane has one walkway down the middle, so it is narrower and smaller than a jumbo jet.",
+    "audio": true
+  },
+  {
+    "k": "unprofitable",
+    "t": "unprofitable",
+    "kind": "word",
+    "forms": [
+      "unprofitable"
+    ],
+    "text": "Unprofitable means losing money instead of making it.",
+    "audio": true
+  },
+  {
+    "k": "supply-chain",
+    "t": "supply-chain",
+    "kind": "phrase",
+    "forms": [
+      "supply-chain"
+    ],
+    "text": "A supply chain is the path that parts and goods take from the factories that make them to the company that needs them.",
+    "audio": true
+  },
+  {
+    "k": "disruptions",
+    "t": "disruptions",
+    "kind": "word",
+    "forms": [
+      "disruptions"
+    ],
+    "text": "A disruption is something that breaks up the normal flow and causes delays.",
+    "audio": true
+  },
+  {
+    "k": "accelerate",
+    "t": "accelerate",
+    "kind": "word",
+    "forms": [
+      "accelerate"
+    ],
+    "text": "To accelerate means to speed up. Here, plane deliveries will happen faster.",
+    "audio": true
+  },
+  {
+    "k": "point-to-point",
+    "t": "point-to-point",
+    "kind": "phrase",
+    "forms": [
+      "point-to-point"
+    ],
+    "text": "Point-to-point means going straight between two places without a stop at a hub in the middle.",
+    "audio": true
+  },
+  {
+    "k": "peaked",
+    "t": "peaked",
+    "kind": "word",
+    "forms": [
+      "peaked"
+    ],
+    "text": "To peak means to reach the highest point. After that, things usually go down.",
+    "audio": true
+  },
+  {
+    "k": "qantas",
+    "t": "Qantas",
+    "kind": "name",
+    "forms": [
+      "Qantas"
+    ],
+    "text": "Qantas is the biggest airline in Australia.",
+    "audio": true
+  },
+  {
+    "k": "airbus",
+    "t": "Airbus",
+    "kind": "name",
+    "forms": [
+      "Airbus"
+    ],
+    "text": "Airbus is a European company that builds passenger jets.",
+    "audio": true
+  },
+  {
+    "k": "boeing",
+    "t": "Boeing",
+    "kind": "name",
+    "forms": [
+      "Boeing"
+    ],
+    "text": "Boeing is an American company that builds passenger jets. The 777 is one of its big planes.",
+    "audio": true
+  },
+  {
+    "k": "iberia",
+    "t": "Iberia",
+    "kind": "name",
+    "forms": [
+      "Iberia"
+    ],
+    "text": "Iberia is the main airline of Spain.",
+    "audio": true
+  },
+  {
+    "k": "indigo",
+    "t": "IndiGo",
+    "kind": "name",
+    "forms": [
+      "IndiGo"
+    ],
+    "text": "IndiGo is India's biggest airline.",
+    "audio": true
+  },
+  {
+    "k": "ryanair",
+    "t": "Ryanair",
+    "kind": "name",
+    "forms": [
+      "Ryanair"
+    ],
+    "text": "Ryanair is a low-cost European airline known for cheap short flights between cities.",
+    "audio": true
+  },
+  {
+    "k": "singapore-airlines",
+    "t": "Singapore Airlines",
+    "kind": "name",
+    "forms": [
+      "Singapore Airlines"
+    ],
+    "text": "Singapore Airlines is the national airline of Singapore, a small island country in Asia.",
+    "audio": true
+  },
+  {
+    "k": "porto",
+    "t": "Porto",
+    "kind": "name",
+    "forms": [
+      "Porto"
+    ],
+    "text": "Porto is a city on the coast of Portugal.",
+    "audio": true
+  }
+]
