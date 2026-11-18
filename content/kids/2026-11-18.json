@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-18",
+  "title": "A kid reporter meets his favorite authors",
+  "articleUrl": "https://www.timeforkids.com/g34/tfk-at-new-york-comic-con/",
+  "articlePageUrl": "/articles/kids/2026-11-18.html",
+  "voiceQuiz": true,
+  "source": "TIME for Kids",
+  "vocab": [
+    {
+      "word": "approachable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "uh-PROH-chuh-bul",
+      "articleQuote": "Rick has such a conversational and approachable voice for readers.",
+      "meaning": "Someone or something approachable is easy to talk to or easy to be around. You do not feel shy or nervous. In the article, an author's writing is approachable because it feels like a friend telling you a fun story.",
+      "examples": [
+        "Our new teacher is very approachable, so I asked her my question right away.",
+        "The big dog looked scary, but he was friendly and approachable."
+      ]
+    },
+    {
+      "word": "intimidating",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-TIM-ih-day-ting",
+      "articleQuote": "But it was also intimidating, because I know how beloved that world and those characters are.",
+      "meaning": "Something intimidating makes you feel small or a little scared. It seems very big or very hard. In the article, an author felt it was intimidating to write about a world that so many fans love.",
+      "examples": [
+        "The tall slide at the park felt intimidating on my first try.",
+        "Singing in front of the whole school can be intimidating."
+      ]
+    },
+    {
+      "word": "brainstorm",
+      "partOfSpeech": "verb",
+      "pronunciation": "BRAYN-storm",
+      "articleQuote": "I started brainstorming, and I came up with this idea: What if we had four new heroes?",
+      "meaning": "To brainstorm is to think up lots of ideas, one after another. You do not stop to say which ones are good yet. In the article, the author brainstormed until he found an idea for a new book series.",
+      "examples": [
+        "My family brainstormed ideas for a name for our new puppy.",
+        "We brainstormed ways to make our class garden grow."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Greek myths",
+      "articleQuote": "main character Katie Kim is “a daughter of Aries, and she’s an underwhelming daughter of Aries. . . . She’s kind of in everyone’s shadow.”",
+      "meaning": "The kid reporter met the author of the Percy Jackson books. In those books, the heroes are the children of gods. These gods come from Greek myths.\n\nA myth is a very old story. Long ago, people in Greece told stories about gods and goddesses. They used the stories to explain things, like thunder and the seasons. Each god had a job. Zeus ruled the sky. Ares, the god the article spells Aries, was the god of war.\n\nThe stories were told out loud for hundreds of years. Then people wrote them down. Today, authors still use them to write new books and movies. That is why you might meet a hero who is a child of a Greek god.\n\nSo a Greek myth is an old story about gods and heroes that people still love to read."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Where did the kid reporter go in October?",
+      "options": [
+        "A zoo in New York",
+        "New York Comic Con",
+        "A school in Greece",
+        "A movie set"
+      ],
+      "answerIndex": 1,
+      "explanation": "Shaiyar went to New York Comic Con, a big event for comics, books, and shows."
+    },
+    {
+      "question": "Which author did Shaiyar talk to on the last day of Comic Con?",
+      "options": [
+        "Randy Ribay",
+        "Kami Garcia",
+        "Zeno Robinson",
+        "Rick Riordan"
+      ],
+      "answerIndex": 3,
+      "explanation": "On Sunday, Shaiyar spoke with Rick Riordan, who made the Percy Jackson books."
+    },
+    {
+      "question": "Annabelle Oh said it was intimidating to write about Percy Jackson. What does intimidating mean?",
+      "options": [
+        "Very funny",
+        "Very quiet",
+        "Makes you feel small or a little scared",
+        "Very easy"
+      ],
+      "answerIndex": 2,
+      "explanation": "Something intimidating seems big or hard. Oh knew how much fans love that world."
+    },
+    {
+      "question": "How did Randy Ribay get to write the Avatar books?",
+      "options": [
+        "He was a writer and a fan who shared his thoughts about the show online",
+        "He won a drawing contest",
+        "He was a cartoon voice actor",
+        "He met Rick Riordan"
+      ],
+      "answerIndex": 0,
+      "explanation": "Ribay watched the whole series and wrote about each episode online. Someone saw it and asked him to write the books."
+    },
+    {
+      "question": "Where do the gods in the Percy Jackson books come from?",
+      "options": [
+        "Old Greek myths",
+        "A video game",
+        "A TV show about space",
+        "A book about dinosaurs"
+      ],
+      "answerIndex": 0,
+      "explanation": "Greek myths are very old stories about gods and heroes. The Percy Jackson books use them."
+    }
+  ]
+}

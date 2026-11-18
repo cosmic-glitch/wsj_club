@@ -1,0 +1,441 @@
+[
+  {
+    "k": "approachable",
+    "t": "approachable",
+    "kind": "vocab",
+    "pron": "uh-PROH-chuh-bul",
+    "forms": [
+      "approachable"
+    ],
+    "text": "Approachable means easy to talk to. You do not feel shy. This author writes like a friend telling a fun story.",
+    "audio": true
+  },
+  {
+    "k": "intimidating",
+    "t": "intimidating",
+    "kind": "vocab",
+    "pron": "in-TIM-ih-day-ting",
+    "forms": [
+      "intimidating"
+    ],
+    "text": "Intimidating means it makes you feel small or a little scared. It seems big or hard. The author felt this because so many fans love the books.",
+    "audio": true
+  },
+  {
+    "k": "brainstorm",
+    "t": "brainstorming",
+    "kind": "vocab",
+    "pron": "BRAYN-storm",
+    "forms": [
+      "brainstorming"
+    ],
+    "text": "To brainstorm is to think up lots of ideas. You do not stop to pick the best one yet.",
+    "audio": true
+  },
+  {
+    "k": "kid-reporter",
+    "t": "Kid Reporter",
+    "kind": "name",
+    "forms": [
+      "Kid Reporter"
+    ],
+    "text": "A kid reporter is a young person who writes news stories for a magazine. Shaiyar is one for TIME for Kids.",
+    "audio": true
+  },
+  {
+    "k": "new-york-comic-con",
+    "t": "New York Comic Con",
+    "kind": "name",
+    "forms": [
+      "New York Comic Con",
+      "NYCC",
+      "Comic Con"
+    ],
+    "text": "Comic Con is a big yearly show in New York City. Fans meet authors and artists. They dress up and talk about comics, books, and movies.",
+    "audio": true
+  },
+  {
+    "k": "javits-center",
+    "t": "Javits Center",
+    "kind": "name",
+    "forms": [
+      "Javits Center"
+    ],
+    "text": "The Javits Center is a huge building in New York City. Big shows are held there.",
+    "audio": true
+  },
+  {
+    "k": "pop-culture",
+    "t": "pop culture",
+    "kind": "phrase",
+    "forms": [
+      "pop culture"
+    ],
+    "text": "Pop culture means the movies, shows, books, and games that lots of people love.",
+    "audio": true
+  },
+  {
+    "k": "cosplay",
+    "t": "cosplay",
+    "kind": "word",
+    "forms": [
+      "cosplay",
+      "cosplayed"
+    ],
+    "text": "To cosplay is to dress up as a character from a book, show, or movie.",
+    "audio": true
+  },
+  {
+    "k": "onesie",
+    "t": "onesie",
+    "kind": "word",
+    "forms": [
+      "onesie"
+    ],
+    "text": "A onesie is a one-piece outfit for a baby.",
+    "audio": true
+  },
+  {
+    "k": "superman",
+    "t": "Superman",
+    "kind": "name",
+    "forms": [
+      "Superman"
+    ],
+    "text": "Superman is a comic book hero. He can fly and he is very strong.",
+    "audio": true
+  },
+  {
+    "k": "celebration",
+    "t": "celebration",
+    "kind": "word",
+    "forms": [
+      "celebration"
+    ],
+    "text": "A celebration is a happy time to enjoy something special, like a party.",
+    "audio": true
+  },
+  {
+    "k": "dipper",
+    "t": "Dipper",
+    "kind": "name",
+    "forms": [
+      "Dipper"
+    ],
+    "text": "Dipper is a boy who solves mysteries in the cartoon Gravity Falls.",
+    "audio": true
+  },
+  {
+    "k": "gravity-falls",
+    "t": "Gravity Falls",
+    "kind": "name",
+    "forms": [
+      "Gravity Falls"
+    ],
+    "text": "Gravity Falls is a cartoon about twins who spend a summer in a strange town.",
+    "audio": true
+  },
+  {
+    "k": "hunter",
+    "t": "Hunter",
+    "kind": "name",
+    "forms": [
+      "Hunter"
+    ],
+    "text": "Hunter is a character in the cartoon The Owl House.",
+    "audio": true
+  },
+  {
+    "k": "the-owl-house",
+    "t": "The Owl House",
+    "kind": "name",
+    "forms": [
+      "The Owl House"
+    ],
+    "text": "The Owl House is a cartoon about a girl who finds a magic world.",
+    "audio": true
+  },
+  {
+    "k": "miles-morales",
+    "t": "Miles Morales",
+    "kind": "name",
+    "forms": [
+      "Miles Morales"
+    ],
+    "text": "Miles Morales is a kid who becomes Spider-Man in comics and movies.",
+    "audio": true
+  },
+  {
+    "k": "percy-jackson",
+    "t": "Percy Jackson",
+    "kind": "name",
+    "forms": [
+      "Percy Jackson"
+    ],
+    "text": "Percy Jackson is a boy hero in a book series. He is the son of a Greek god.",
+    "audio": true
+  },
+  {
+    "k": "rick-riordan",
+    "t": "Riordan",
+    "kind": "name",
+    "forms": [
+      "Riordan",
+      "Rick Riordan"
+    ],
+    "text": "Rick Riordan is the author who wrote the Percy Jackson books.",
+    "audio": true
+  },
+  {
+    "k": "best-selling",
+    "t": "best-selling",
+    "kind": "word",
+    "forms": [
+      "best-selling"
+    ],
+    "text": "A best-selling book is one that lots and lots of people buy.",
+    "audio": true
+  },
+  {
+    "k": "authors-abound",
+    "t": "abound",
+    "kind": "word",
+    "forms": [
+      "Abound"
+    ],
+    "text": "Abound means there are lots of something. Authors abound means many authors were there.",
+    "audio": true
+  },
+  {
+    "k": "national-book-award",
+    "t": "National Book Award",
+    "kind": "name",
+    "forms": [
+      "National Book Award"
+    ],
+    "text": "The National Book Award is a famous prize for writers. A finalist is one of the last few writers who could win.",
+    "audio": true
+  },
+  {
+    "k": "avatar-the-last-airbender",
+    "t": "Avatar: Last Airbender",
+    "kind": "name",
+    "forms": [
+      "Avatar: Last Airbender",
+      "Avatar"
+    ],
+    "text": "Avatar: Last Airbender is a TV show about a boy who can control the wind and other parts of nature.",
+    "audio": true
+  },
+  {
+    "k": "gig",
+    "t": "gig",
+    "kind": "word",
+    "forms": [
+      "gig"
+    ],
+    "text": "A gig is a job. Here, it means the job of writing the books.",
+    "audio": true
+  },
+  {
+    "k": "analysis",
+    "t": "analysis",
+    "kind": "word",
+    "forms": [
+      "analysis"
+    ],
+    "text": "An analysis is a close look at something to understand it. He wrote down his thoughts about each episode.",
+    "audio": true
+  },
+  {
+    "k": "twitter-thread",
+    "t": "Twitter threads",
+    "kind": "phrase",
+    "forms": [
+      "Twitter threads"
+    ],
+    "text": "A thread is a string of short posts online, one after another.",
+    "audio": true
+  },
+  {
+    "k": "stroll",
+    "t": "strolling",
+    "kind": "word",
+    "forms": [
+      "strolling"
+    ],
+    "text": "Strolling means walking slowly and happily.",
+    "audio": true
+  },
+  {
+    "k": "artist-alley",
+    "t": "Artist Alley",
+    "kind": "name",
+    "forms": [
+      "Artist Alley"
+    ],
+    "text": "Artist Alley is a part of Comic Con. Artists sit at tables and sell and sign their art.",
+    "audio": true
+  },
+  {
+    "k": "teen-titans",
+    "t": "Teen Titans",
+    "kind": "name",
+    "forms": [
+      "Teen Titans"
+    ],
+    "text": "Teen Titans is a series about young superheroes who work as a team.",
+    "audio": true
+  },
+  {
+    "k": "voices",
+    "t": "voices",
+    "kind": "word",
+    "forms": [
+      "voices"
+    ],
+    "text": "To voice a character means to speak as that character in a cartoon.",
+    "audio": true
+  },
+  {
+    "k": "graphic-novel",
+    "t": "graphic novel",
+    "kind": "phrase",
+    "forms": [
+      "graphic novel"
+    ],
+    "text": "A graphic novel is a long story told with pictures and words, like a comic book.",
+    "audio": true
+  },
+  {
+    "k": "panel",
+    "t": "panel",
+    "kind": "word",
+    "forms": [
+      "panel"
+    ],
+    "text": "A panel is a group of people who sit on a stage and talk to an audience.",
+    "audio": true
+  },
+  {
+    "k": "coauthors",
+    "t": "coauthors",
+    "kind": "word",
+    "forms": [
+      "coauthors",
+      "cowrote"
+    ],
+    "text": "A coauthor writes a book together with someone else.",
+    "audio": true
+  },
+  {
+    "k": "daughter-of-aries",
+    "t": "Aries",
+    "kind": "name",
+    "forms": [
+      "Aries"
+    ],
+    "text": "Aries is how the article spells Ares. Ares is the Greek god of war.",
+    "audio": true
+  },
+  {
+    "k": "underwhelming",
+    "t": "underwhelming",
+    "kind": "word",
+    "forms": [
+      "underwhelming"
+    ],
+    "text": "Underwhelming means not very exciting or not very special.",
+    "audio": true
+  },
+  {
+    "k": "in-everyones-shadow",
+    "t": "in everyone’s shadow",
+    "kind": "phrase",
+    "forms": [
+      "in everyone’s shadow"
+    ],
+    "text": "To be in someone's shadow means people notice the other person more than you.",
+    "audio": true
+  },
+  {
+    "k": "prove-herself",
+    "t": "prove herself",
+    "kind": "phrase",
+    "forms": [
+      "prove herself"
+    ],
+    "text": "To prove yourself means to show everyone you can do something well.",
+    "audio": true
+  },
+  {
+    "k": "origins",
+    "t": "origins",
+    "kind": "word",
+    "forms": [
+      "origins"
+    ],
+    "text": "Origins means how something first began.",
+    "audio": true
+  },
+  {
+    "k": "collaborators",
+    "t": "collaborators",
+    "kind": "word",
+    "forms": [
+      "collaborators"
+    ],
+    "text": "Collaborators are people who work together on something.",
+    "audio": true
+  },
+  {
+    "k": "lightning-thief",
+    "t": "The Lightning Thief",
+    "kind": "name",
+    "forms": [
+      "The Lightning Thief"
+    ],
+    "text": "The Lightning Thief is the first Percy Jackson book.",
+    "audio": true
+  },
+  {
+    "k": "conversational",
+    "t": "conversational",
+    "kind": "word",
+    "forms": [
+      "conversational"
+    ],
+    "text": "Conversational means like a friendly chat.",
+    "audio": true
+  },
+  {
+    "k": "beloved",
+    "t": "beloved",
+    "kind": "word",
+    "forms": [
+      "beloved"
+    ],
+    "text": "Beloved means loved very much by many people.",
+    "audio": true
+  },
+  {
+    "k": "novelist",
+    "t": "novelist",
+    "kind": "word",
+    "forms": [
+      "novelist"
+    ],
+    "text": "A novelist is a person who writes long made-up stories.",
+    "audio": true
+  },
+  {
+    "k": "scoop",
+    "t": "scoop",
+    "kind": "word",
+    "forms": [
+      "scoop"
+    ],
+    "text": "A scoop is a secret bit of news you get before other people.",
+    "audio": true
+  }
+]
