@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-19",
+  "title": "Route 66, the famous road, turns 100",
+  "articleUrl": "https://www.timeforkids.com/g34/miles-of-history-g3/",
+  "articlePageUrl": "/articles/kids/2026-11-19.html",
+  "voiceQuiz": true,
+  "source": "TIME for Kids",
+  "vocab": [
+    {
+      "word": "established",
+      "partOfSpeech": "verb",
+      "pronunciation": "ih-STAB-lisht",
+      "articleQuote": "It was established in 1926.",
+      "meaning": "To establish something means to start it or set it up so that it lasts. People often do this with a school, a town, or a club. In the article, Route 66 was established in 1926, which is when the road was first made official.",
+      "examples": [
+        "Our town established a new park next to the school.",
+        "My grandpa's family established a bakery long ago, and it is still open."
+      ]
+    },
+    {
+      "word": "centennial",
+      "partOfSpeech": "noun",
+      "pronunciation": "sen-TEN-ee-ul",
+      "articleQuote": "This year marks its centennial, or 100th anniversary.",
+      "meaning": "A centennial is a birthday that comes after 100 years. You celebrate it with parties and parades. In the article, Route 66 is having its centennial, so towns along the road are celebrating all year.",
+      "examples": [
+        "The old library had a centennial party because it was 100 years old.",
+        "Our city planted a tree at its centennial, and the tree is still growing."
+      ]
+    },
+    {
+      "word": "quirky",
+      "partOfSpeech": "adjective",
+      "pronunciation": "KWER-kee",
+      "articleQuote": "This quirky Route 66 landmark is located in Catoosa, Oklahoma.",
+      "meaning": "Something quirky is odd or unusual in a fun way. You might look twice when you see it. In the article, a giant blue whale beside the road is quirky, because you do not expect to find a whale in a park.",
+      "examples": [
+        "My uncle has a quirky hat with a feather and a bell on it.",
+        "The quirky mailbox looked just like a big red fish."
+      ]
+    }
+  ],
+  "concepts": [],
+  "quiz": [
+    {
+      "question": "How long is Route 66?",
+      "options": [
+        "About 24 miles",
+        "About 240 miles",
+        "About 2,400 miles",
+        "About 24,000 miles"
+      ],
+      "answerIndex": 2,
+      "explanation": "Route 66 runs about 2,400 miles, from Chicago to Santa Monica."
+    },
+    {
+      "question": "Why was it hard to drive long distances before Route 66?",
+      "options": [
+        "There were no cars at all",
+        "Many roads were made of dirt and were not connected",
+        "All the roads were closed",
+        "Roads only went to the ocean"
+      ],
+      "answerIndex": 1,
+      "explanation": "Many roads were dirt, and they did not connect. Route 66 joined a lot of them."
+    },
+    {
+      "question": "What does \"centennial\" mean?",
+      "options": [
+        "A 10th birthday",
+        "A very fast car",
+        "A road trip",
+        "A 100th birthday"
+      ],
+      "answerIndex": 3,
+      "explanation": "A centennial is a 100th anniversary. Route 66 turned 100 this year."
+    },
+    {
+      "question": "What happened in Tulsa, Oklahoma?",
+      "options": [
+        "The biggest classic car parade in history",
+        "A race of blue whales",
+        "A parade of trains",
+        "A bike race"
+      ],
+      "answerIndex": 0,
+      "explanation": "More than 3,500 drivers joined the classic car parade in Tulsa."
+    },
+    {
+      "question": "What can visitors do at the Blue Whale of Catoosa?",
+      "options": [
+        "Ride it across the ocean",
+        "Feed it fish",
+        "Walk into its head and have a picnic nearby",
+        "Watch it swim"
+      ],
+      "answerIndex": 2,
+      "explanation": "The Blue Whale is a giant sculpture. Visitors can take photos, picnic, and walk into its head."
+    }
+  ]
+}

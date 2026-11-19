@@ -1,0 +1,435 @@
+[
+  {
+    "k": "established",
+    "t": "established",
+    "kind": "vocab",
+    "pron": "ih-STAB-lisht",
+    "forms": [
+      "established"
+    ],
+    "text": "To establish something is to start it so that it lasts. Route 66 was established in 1926, when it was made an official road.",
+    "audio": true
+  },
+  {
+    "k": "centennial",
+    "t": "centennial",
+    "kind": "vocab",
+    "pron": "sen-TEN-ee-ul",
+    "forms": [
+      "centennial"
+    ],
+    "text": "A centennial is a 100th birthday. Route 66 turned 100 this year.",
+    "audio": true
+  },
+  {
+    "k": "quirky",
+    "t": "quirky",
+    "kind": "vocab",
+    "pron": "KWER-kee",
+    "forms": [
+      "quirky"
+    ],
+    "text": "Quirky means odd or unusual in a fun way. A giant blue whale by the road is quirky.",
+    "audio": true
+  },
+  {
+    "k": "route-66",
+    "t": "Route 66",
+    "kind": "name",
+    "forms": [
+      "Route 66"
+    ],
+    "text": "Route 66 is a famous road in the United States. It is 2,400 miles long.",
+    "audio": true
+  },
+  {
+    "k": "road-trippers",
+    "t": "Road-trippers",
+    "kind": "phrase",
+    "forms": [
+      "Road-trippers"
+    ],
+    "text": "Road-trippers are people on a long trip in a car. They stop to see things along the way.",
+    "audio": true
+  },
+  {
+    "k": "deserts",
+    "t": "deserts",
+    "kind": "word",
+    "forms": [
+      "deserts"
+    ],
+    "text": "A desert is a very dry place with little rain. Many deserts are hot and sandy.",
+    "audio": true
+  },
+  {
+    "k": "chicago",
+    "t": "Chicago",
+    "kind": "name",
+    "forms": [
+      "Chicago"
+    ],
+    "text": "Chicago is a big city in the state of Illinois.",
+    "audio": true
+  },
+  {
+    "k": "illinois",
+    "t": "Illinois",
+    "kind": "name",
+    "forms": [
+      "Illinois"
+    ],
+    "text": "Illinois is a state in the middle of the United States.",
+    "audio": true
+  },
+  {
+    "k": "santa-monica",
+    "t": "Santa Monica",
+    "kind": "name",
+    "forms": [
+      "Santa Monica"
+    ],
+    "text": "Santa Monica is a city in California, right by the Pacific Ocean.",
+    "audio": true
+  },
+  {
+    "k": "california",
+    "t": "California",
+    "kind": "name",
+    "forms": [
+      "California"
+    ],
+    "text": "California is a state on the west coast of the United States.",
+    "audio": true
+  },
+  {
+    "k": "anniversary",
+    "t": "anniversary",
+    "kind": "word",
+    "forms": [
+      "anniversary"
+    ],
+    "text": "An anniversary is a day each year that marks something that happened before. A 100th anniversary is 100 years later.",
+    "audio": true
+  },
+  {
+    "k": "communities",
+    "t": "communities",
+    "kind": "word",
+    "forms": [
+      "communities"
+    ],
+    "text": "A community is a group of people who live in the same place, like a town.",
+    "audio": true
+  },
+  {
+    "k": "native-american",
+    "t": "Native American",
+    "kind": "name",
+    "forms": [
+      "Native American"
+    ],
+    "text": "Native Americans are the first peoples who lived in North America, long before cars or this country's cities.",
+    "audio": true
+  },
+  {
+    "k": "trails",
+    "t": "trails",
+    "kind": "word",
+    "forms": [
+      "trails"
+    ],
+    "text": "A trail is a narrow path made by people or animals walking.",
+    "audio": true
+  },
+  {
+    "k": "dirt",
+    "t": "dirt",
+    "kind": "word",
+    "forms": [
+      "dirt"
+    ],
+    "text": "Dirt is the soil on the ground. A dirt road is not covered in hard pavement.",
+    "audio": true
+  },
+  {
+    "k": "paved",
+    "t": "paved",
+    "kind": "word",
+    "forms": [
+      "paved"
+    ],
+    "text": "Paved means covered with a hard, smooth surface so cars can drive easily.",
+    "audio": true
+  },
+  {
+    "k": "tourists",
+    "t": "tourists",
+    "kind": "word",
+    "forms": [
+      "tourists"
+    ],
+    "text": "Tourists are people who travel to visit interesting places.",
+    "audio": true
+  },
+  {
+    "k": "sightseeing",
+    "t": "sightseeing",
+    "kind": "word",
+    "forms": [
+      "sightseeing"
+    ],
+    "text": "Sightseeing is traveling to look at interesting places.",
+    "audio": true
+  },
+  {
+    "k": "motels",
+    "t": "motels",
+    "kind": "word",
+    "forms": [
+      "motels"
+    ],
+    "text": "A motel is a place along a road where travelers sleep for the night.",
+    "audio": true
+  },
+  {
+    "k": "attractions",
+    "t": "attractions",
+    "kind": "word",
+    "forms": [
+      "attractions"
+    ],
+    "text": "An attraction is a place people like to visit, like a zoo or a giant statue.",
+    "audio": true
+  },
+  {
+    "k": "historic",
+    "t": "historic",
+    "kind": "word",
+    "forms": [
+      "historic"
+    ],
+    "text": "Historic means important in history, from a long time ago.",
+    "audio": true
+  },
+  {
+    "k": "interstate-highways",
+    "t": "interstate highways",
+    "kind": "phrase",
+    "forms": [
+      "interstate highways"
+    ],
+    "text": "Interstate highways are big, fast roads that cross many states. Route 66 is older than most of them.",
+    "audio": true
+  },
+  {
+    "k": "rambling",
+    "t": "rambling",
+    "kind": "word",
+    "forms": [
+      "rambling"
+    ],
+    "text": "Rambling means wandering along without hurrying. A rambling ride is a slow, winding trip.",
+    "audio": true
+  },
+  {
+    "k": "festivals",
+    "t": "festivals",
+    "kind": "word",
+    "forms": [
+      "festivals"
+    ],
+    "text": "A festival is a big party with fun events that a town holds to celebrate something.",
+    "audio": true
+  },
+  {
+    "k": "springfield",
+    "t": "Springfield",
+    "kind": "name",
+    "forms": [
+      "Springfield"
+    ],
+    "text": "Springfield is a city in the state of Missouri.",
+    "audio": true
+  },
+  {
+    "k": "missouri",
+    "t": "Missouri",
+    "kind": "name",
+    "forms": [
+      "Missouri"
+    ],
+    "text": "Missouri is a state in the middle of the United States.",
+    "audio": true
+  },
+  {
+    "k": "kickoff",
+    "t": "Kickoff",
+    "kind": "word",
+    "forms": [
+      "Kickoff"
+    ],
+    "text": "A kickoff is the start of something, like a big event.",
+    "audio": true
+  },
+  {
+    "k": "celebration",
+    "t": "Celebration",
+    "kind": "word",
+    "forms": [
+      "Celebration"
+    ],
+    "text": "A celebration is a party or event to show you are happy about something.",
+    "audio": true
+  },
+  {
+    "k": "promotes",
+    "t": "promotes",
+    "kind": "word",
+    "forms": [
+      "promotes"
+    ],
+    "text": "To promote something is to tell people about it so they will want to come.",
+    "audio": true
+  },
+  {
+    "k": "tourism",
+    "t": "tourism",
+    "kind": "word",
+    "forms": [
+      "tourism"
+    ],
+    "text": "Tourism is the business of visitors who travel to see places.",
+    "audio": true
+  },
+  {
+    "k": "tulsa",
+    "t": "Tulsa",
+    "kind": "name",
+    "forms": [
+      "Tulsa"
+    ],
+    "text": "Tulsa is a city in the state of Oklahoma.",
+    "audio": true
+  },
+  {
+    "k": "oklahoma",
+    "t": "Oklahoma",
+    "kind": "name",
+    "forms": [
+      "Oklahoma"
+    ],
+    "text": "Oklahoma is a state in the middle of the United States.",
+    "audio": true
+  },
+  {
+    "k": "classic-car",
+    "t": "classic car",
+    "kind": "phrase",
+    "forms": [
+      "classic car"
+    ],
+    "text": "A classic car is a very old car that people take care of because they love it.",
+    "audio": true
+  },
+  {
+    "k": "parade",
+    "t": "parade",
+    "kind": "word",
+    "forms": [
+      "parade"
+    ],
+    "text": "A parade is a line of people, cars, or bands moving down a street so everyone can watch.",
+    "audio": true
+  },
+  {
+    "k": "identity",
+    "t": "identity",
+    "kind": "word",
+    "forms": [
+      "identity"
+    ],
+    "text": "Identity is what makes a person or place special and different from others.",
+    "audio": true
+  },
+  {
+    "k": "prairie",
+    "t": "prairie",
+    "kind": "word",
+    "forms": [
+      "prairie"
+    ],
+    "text": "A prairie is a large flat area covered in grass.",
+    "audio": true
+  },
+  {
+    "k": "rugged",
+    "t": "rugged",
+    "kind": "word",
+    "forms": [
+      "rugged"
+    ],
+    "text": "Rugged means rough and wild, not smooth.",
+    "audio": true
+  },
+  {
+    "k": "landscapes",
+    "t": "landscapes",
+    "kind": "word",
+    "forms": [
+      "landscapes"
+    ],
+    "text": "A landscape is what the land looks like, such as hills, deserts, or fields.",
+    "audio": true
+  },
+  {
+    "k": "commission",
+    "t": "Commission",
+    "kind": "word",
+    "forms": [
+      "Commission"
+    ],
+    "text": "A commission is a group of people chosen to do a special job.",
+    "audio": true
+  },
+  {
+    "k": "roadside",
+    "t": "Roadside",
+    "kind": "word",
+    "forms": [
+      "Roadside"
+    ],
+    "text": "Roadside means beside the road.",
+    "audio": true
+  },
+  {
+    "k": "landmark",
+    "t": "landmark",
+    "kind": "word",
+    "forms": [
+      "landmark"
+    ],
+    "text": "A landmark is a famous place or thing that is easy to spot and know.",
+    "audio": true
+  },
+  {
+    "k": "catoosa",
+    "t": "Catoosa",
+    "kind": "name",
+    "forms": [
+      "Catoosa"
+    ],
+    "text": "Catoosa is a small town in Oklahoma.",
+    "audio": true
+  },
+  {
+    "k": "blue-whale",
+    "t": "Blue Whale",
+    "kind": "name",
+    "forms": [
+      "Blue Whale"
+    ],
+    "text": "The Blue Whale of Catoosa is a giant whale statue. It is a pretend whale, not a real one.",
+    "audio": true
+  }
+]
