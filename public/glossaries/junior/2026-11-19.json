@@ -1,0 +1,408 @@
+[
+  {
+    "k": "evasive",
+    "t": "evasive",
+    "kind": "vocab",
+    "pron": "ih-VAY-siv",
+    "forms": [
+      "evasive"
+    ],
+    "text": "Evasive means good at slipping away and avoiding being caught. Here, the butterfly twists and dodges so well that birds struggle to catch it.",
+    "audio": true
+  },
+  {
+    "k": "feeble",
+    "t": "feeble",
+    "kind": "vocab",
+    "pron": "FEE-bul",
+    "forms": [
+      "feebler"
+    ],
+    "text": "Feeble means weak. Feebler means weaker. Here, the grasshopper's color match to the butterfly is weaker than its movement match.",
+    "audio": true
+  },
+  {
+    "k": "pursuit",
+    "t": "pursuit",
+    "kind": "vocab",
+    "pron": "per-SOOT",
+    "forms": [
+      "pursuit"
+    ],
+    "text": "A pursuit is a chase. Here, a bird would have to chase the butterfly so long that the small meal is not worth the effort.",
+    "audio": true
+  },
+  {
+    "k": "mimicry",
+    "t": "mimicry",
+    "kind": "word",
+    "forms": [
+      "mimicry",
+      "mimics",
+      "mimic"
+    ],
+    "text": "Mimicry is when one living thing looks or acts like another to gain an advantage. A harmless animal that looks like a dangerous one is a mimic.",
+    "audio": true
+  },
+  {
+    "k": "batesian",
+    "t": "batesian",
+    "kind": "word",
+    "forms": [
+      "Batesian"
+    ],
+    "text": "Batesian mimicry is named after Henry Bates. It means a harmless animal copies the look of a harmful or yucky one so predators leave it alone.",
+    "audio": true
+  },
+  {
+    "k": "predators",
+    "t": "predators",
+    "kind": "word",
+    "forms": [
+      "predators",
+      "predator"
+    ],
+    "text": "Predators are animals that hunt and eat other animals. Birds are predators of grasshoppers.",
+    "audio": true
+  },
+  {
+    "k": "prey",
+    "t": "prey",
+    "kind": "word",
+    "forms": [
+      "prey"
+    ],
+    "text": "Prey is an animal that is hunted and eaten by another animal. Here, the bird may think its prey got away.",
+    "audio": true
+  },
+  {
+    "k": "fatal",
+    "t": "fatal",
+    "kind": "word",
+    "forms": [
+      "fatal"
+    ],
+    "text": "Fatal means causing death. Looking tasty is a fatal mistake for a small animal because it will get eaten.",
+    "audio": true
+  },
+  {
+    "k": "naturalist",
+    "t": "naturalist",
+    "kind": "word",
+    "forms": [
+      "naturalist"
+    ],
+    "text": "A naturalist is a person who studies plants and animals in nature. Henry Bates was one.",
+    "audio": true
+  },
+  {
+    "k": "entomologist",
+    "t": "entomologist",
+    "kind": "word",
+    "forms": [
+      "entomologist"
+    ],
+    "text": "An entomologist is a scientist who studies insects, like grasshoppers and butterflies.",
+    "audio": true
+  },
+  {
+    "k": "unpalatable",
+    "t": "unpalatable",
+    "kind": "word",
+    "forms": [
+      "unpalatable"
+    ],
+    "text": "Unpalatable means tasting so bad that an animal will not want to eat it. The mourning cloak is not unpalatable.",
+    "audio": true
+  },
+  {
+    "k": "venomous",
+    "t": "venomous",
+    "kind": "word",
+    "forms": [
+      "venomous"
+    ],
+    "text": "A venomous animal injects poison with a bite or sting, like some snakes and wasps.",
+    "audio": true
+  },
+  {
+    "k": "toxic",
+    "t": "toxic",
+    "kind": "word",
+    "forms": [
+      "toxic"
+    ],
+    "text": "Toxic means poisonous. Birds avoid toxic caterpillars because eating one would make them sick.",
+    "audio": true
+  },
+  {
+    "k": "nab",
+    "t": "nab",
+    "kind": "word",
+    "forms": [
+      "nab"
+    ],
+    "text": "To nab something is to catch or grab it quickly. Collectors nab grasshoppers by mistake.",
+    "audio": true
+  },
+  {
+    "k": "pin-down",
+    "t": "pin down",
+    "kind": "phrase",
+    "forms": [
+      "pin down"
+    ],
+    "text": "To pin something down is to figure out exactly what it is. The scientists found the benefit hard to pin down.",
+    "audio": true
+  },
+  {
+    "k": "lazy-flaps",
+    "t": "lazy flaps",
+    "kind": "phrase",
+    "forms": [
+      "lazy flaps"
+    ],
+    "text": "Lazy flaps are slow, relaxed wing beats, as if the insect were not trying hard.",
+    "audio": true
+  },
+  {
+    "k": "high-speed-videos",
+    "t": "high-speed videos",
+    "kind": "phrase",
+    "forms": [
+      "high-speed videos"
+    ],
+    "text": "High-speed videos record a huge number of pictures every second, so fast motion like wing flaps can be watched in slow motion.",
+    "audio": true
+  },
+  {
+    "k": "modest",
+    "t": "modest",
+    "kind": "word",
+    "forms": [
+      "modest"
+    ],
+    "text": "Modest means small or not very big. The color similarities were modest, meaning only a little alike.",
+    "audio": true
+  },
+  {
+    "k": "hue",
+    "t": "hue",
+    "kind": "word",
+    "forms": [
+      "hue"
+    ],
+    "text": "A hue is a color or a shade of a color. Here, the grasshopper's yellow is a different shade from the butterfly's.",
+    "audio": true
+  },
+  {
+    "k": "distinctive",
+    "t": "distinctive",
+    "kind": "word",
+    "forms": [
+      "distinctive"
+    ],
+    "text": "Distinctive means easy to recognize because it stands out. The butterfly's blue spots are distinctive.",
+    "audio": true
+  },
+  {
+    "k": "a-wing-and-a-prayer",
+    "t": "a wing and a prayer",
+    "kind": "phrase",
+    "forms": [
+      "A wing and a prayer"
+    ],
+    "text": "A wing and a prayer is a play on the phrase 'a wing and a prayer,' which means trying something with little hope. Here it is a joke about wings.",
+    "audio": true
+  },
+  {
+    "k": "wingbeat-frequency",
+    "t": "wingbeat frequency",
+    "kind": "phrase",
+    "forms": [
+      "wingbeat frequency"
+    ],
+    "text": "Wingbeat frequency is how many times a wing flaps each second.",
+    "audio": true
+  },
+  {
+    "k": "hertz",
+    "t": "hertz",
+    "kind": "word",
+    "forms": [
+      "hertz"
+    ],
+    "text": "Hertz is a unit that counts how many times something repeats each second. Twenty hertz means twenty flaps every second.",
+    "audio": true
+  },
+  {
+    "k": "gliding",
+    "t": "gliding",
+    "kind": "word",
+    "forms": [
+      "gliding"
+    ],
+    "text": "Gliding means moving smoothly through the air without flapping. The grasshoppers glide with wings out.",
+    "audio": true
+  },
+  {
+    "k": "peers",
+    "t": "peers",
+    "kind": "word",
+    "forms": [
+      "peers"
+    ],
+    "text": "Peers are others of the same kind or group. Here, the grasshopper's peers are the other grasshopper species.",
+    "audio": true
+  },
+  {
+    "k": "deceptive",
+    "t": "deceptive",
+    "kind": "word",
+    "forms": [
+      "deceptive"
+    ],
+    "text": "Deceptive means tricking someone into believing something false. The grasshopper's movement tricks birds.",
+    "audio": true
+  },
+  {
+    "k": "compensates",
+    "t": "compensates",
+    "kind": "word",
+    "forms": [
+      "compensates"
+    ],
+    "text": "To compensate for something is to make up for a weakness. Good movement makes up for the weaker color match.",
+    "audio": true
+  },
+  {
+    "k": "evolution",
+    "t": "evolution",
+    "kind": "word",
+    "forms": [
+      "evolution"
+    ],
+    "text": "Evolution is the slow change in living things over many generations, as helpful traits become more common.",
+    "audio": true
+  },
+  {
+    "k": "staple",
+    "t": "staple",
+    "kind": "word",
+    "forms": [
+      "staple"
+    ],
+    "text": "A staple is something that is eaten or used all the time. Grasshoppers are a regular food for many birds.",
+    "audio": true
+  },
+  {
+    "k": "resemblance",
+    "t": "resemblance",
+    "kind": "word",
+    "forms": [
+      "resemblance"
+    ],
+    "text": "A resemblance is a likeness. The grasshopper looks like a yellow butterfly in flight.",
+    "audio": true
+  },
+  {
+    "k": "abruptly",
+    "t": "abruptly",
+    "kind": "word",
+    "forms": [
+      "abruptly"
+    ],
+    "text": "Abruptly means suddenly, without warning. The grasshopper folds its wings abruptly when it lands.",
+    "audio": true
+  },
+  {
+    "k": "hypothesis",
+    "t": "hypothesis",
+    "kind": "word",
+    "forms": [
+      "hypothesis"
+    ],
+    "text": "A hypothesis is a scientist's best guess about why something happens, which still needs testing.",
+    "audio": true
+  },
+  {
+    "k": "lacklustre",
+    "t": "lacklustre",
+    "kind": "word",
+    "forms": [
+      "lacklustre"
+    ],
+    "text": "Lacklustre means dull and not exciting. Here it describes a plain costume.",
+    "audio": true
+  },
+  {
+    "k": "impresarios",
+    "t": "impresarios",
+    "kind": "word",
+    "forms": [
+      "impresarios"
+    ],
+    "text": "An impresario is a person who organizes shows, like plays or concerts.",
+    "audio": true
+  },
+  {
+    "k": "choreography",
+    "t": "choreography",
+    "kind": "word",
+    "forms": [
+      "choreography"
+    ],
+    "text": "Choreography is the planned set of moves in a dance or performance. The joke is that the grasshopper's moves make up for a plain costume.",
+    "audio": true
+  },
+  {
+    "k": "mourning-cloak",
+    "t": "mourning cloak",
+    "kind": "name",
+    "forms": [
+      "mourning cloak"
+    ],
+    "text": "The mourning cloak is a butterfly with dark wings edged in yellow. It is common in North America.",
+    "audio": true
+  },
+  {
+    "k": "carolina-grasshopper",
+    "t": "Carolina grasshopper",
+    "kind": "name",
+    "forms": [
+      "Carolina grasshopper"
+    ],
+    "text": "The Carolina grasshopper is a large grasshopper with black-and-yellow hind wings that looks like the mourning cloak in flight.",
+    "audio": true
+  },
+  {
+    "k": "henry-bates",
+    "t": "Henry Bates",
+    "kind": "name",
+    "forms": [
+      "Henry Bates"
+    ],
+    "text": "Henry Bates was a British naturalist who described this kind of mimicry in 1862 after studying butterflies.",
+    "audio": true
+  },
+  {
+    "k": "dr-sherratt",
+    "t": "Dr Sherratt",
+    "kind": "name",
+    "forms": [
+      "Dr Sherratt"
+    ],
+    "text": "Tom Sherratt is the scientist at Carleton University who led the study of the grasshoppers.",
+    "audio": true
+  },
+  {
+    "k": "carleton-university",
+    "t": "Carleton University",
+    "kind": "name",
+    "forms": [
+      "Carleton University"
+    ],
+    "text": "Carleton University is a university in Ottawa, the capital of Canada.",
+    "audio": true
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-19",
+  "title": "Some grasshoppers fly like butterflies to mislead predators",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/11/18/some-grasshoppers-fly-like-butterflies-to-mislead-predators",
+  "articlePageUrl": "/articles/junior/2026-11-19.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "evasive",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ih-VAY-siv",
+      "articleQuote": "It is evasive in the air and birds often ignore it because the meal is not worth the pursuit.",
+      "meaning": "Something that is evasive is good at slipping away and avoiding being caught or pinned down. Here, the writer says the mourning cloak butterfly twists and dodges so well in the air that birds find it hard to catch. People can be evasive too, when they dodge a question instead of answering it.",
+      "examples": [
+        "The evasive rabbit zigzagged across the yard, and the puppy could not catch it.",
+        "When Mom asked who ate the last cookie, my brother gave an evasive answer and changed the subject."
+      ]
+    },
+    {
+      "word": "feeble",
+      "partOfSpeech": "adjective",
+      "pronunciation": "FEE-bul",
+      "articleQuote": "The grasshopper’s deceptive movement probably compensates for its feebler colour match, notes Dr Sherratt.",
+      "meaning": "Something that is feeble is weak and not very strong or effective. Here, the writer says the grasshopper's colours match the butterfly's only a little, so that part of its disguise is weaker than its movement. The article uses the form feebler, which means weaker.",
+      "examples": [
+        "After a week of rain, the feeble flashlight gave off only a dim glow.",
+        "His feeble excuse about the dog eating his homework did not fool the teacher."
+      ]
+    },
+    {
+      "word": "pursuit",
+      "partOfSpeech": "noun",
+      "pronunciation": "per-SOOT",
+      "articleQuote": "It is evasive in the air and birds often ignore it because the meal is not worth the pursuit.",
+      "meaning": "A pursuit is the act of chasing something to catch it. Here, a bird would have to chase the butterfly for a long time, so the small snack is not worth the effort. The word can also mean something you spend time trying to get or do, like a hobby.",
+      "examples": [
+        "The cat's pursuit of the red dot ended when the flashlight clicked off.",
+        "The police car joined the pursuit of the runaway truck."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Adaptation",
+      "articleQuote": "There are two reasons, suspects Dr Sherratt, why the grasshopper has been driven by evolution to adapt in these ways.",
+      "meaning": "The article says the grasshopper was \"driven by evolution to adapt.\" An **adaptation** is a trait, like a color, a shape or a behavior, that helps a kind of living thing survive and have babies. Animals do not choose their adaptations. They build up slowly, over many, many generations.\n\nHere is how it works. In any group of animals, each one is a little different. Say some grasshoppers happen to flap their wings a bit slower than the others. Birds mistake those for butterflies and skip them, so those grasshoppers live longer and have more babies. Their babies often flap slowly too. Over thousands of years, slow flapping becomes normal for the whole group. This slow sorting is called **natural selection**.\n\nPicture a school where only the kids who bring umbrellas stay dry. Each year the umbrella-carriers feel better, and more kids copy them. No one planned it, but the group slowly changes. Adaptations work like that, and the Carolina grasshopper's slow, butterfly-like flight is one."
+    },
+    {
+      "name": "Hertz",
+      "articleQuote": "This brought its wingbeat frequency down from 40-50 hertz to around 20 hertz; not far off the mourning cloak butterfly’s average frequency of 10 hertz.",
+      "meaning": "How do you measure how fast a wing flaps? Scientists count how many times it repeats every second. That count is called **frequency**, and its unit is the **hertz**, written Hz. One hertz means one flap every second. Twenty hertz means twenty flaps every second.\n\nTry it yourself. Clap your hands once a second. That is 1 hertz. Now clap as fast as you can. Maybe you reach 5 or 6 claps every second. That is 5 or 6 hertz. A butterfly at 10 hertz flaps almost twice as fast as your fastest clapping, and the grasshopper's 40 to 50 hertz is too fast to see.\n\nHertz is not only for wings. It measures anything that repeats, like a sound wave. A high-pitched whistle has a higher frequency than a deep drum. So when the article says the grasshopper slowed from 40-50 hertz to about 20, you can picture it flapping about half as often. That is much closer to the butterfly's 10, and it is why the two look alike in the air."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What do the scientists think the Carolina grasshopper copies?",
+      "options": [
+        "The mourning cloak butterfly",
+        "A wasp",
+        "A snake",
+        "A toxic caterpillar"
+      ],
+      "answerIndex": 0,
+      "explanation": "The grasshopper shares black-and-yellow wings with the mourning cloak and copies how it flies."
+    },
+    {
+      "question": "Why is it surprising that the grasshopper copies this butterfly?",
+      "options": [
+        "The butterfly is poisonous, so copying it is dangerous",
+        "The butterfly is not poisonous or dangerous, so the benefit is harder to see",
+        "The butterfly lives on another continent",
+        "The two animals look exactly alike"
+      ],
+      "answerIndex": 1,
+      "explanation": "Most mimics copy something disgusting or dangerous, but the butterfly is neither. Its benefit is that it is hard to catch."
+    },
+    {
+      "question": "Which part of the disguise is closest to the butterfly's?",
+      "options": [
+        "The spots on its wings",
+        "The exact yellow shade",
+        "The way it moves in the air",
+        "The size of its body"
+      ],
+      "answerIndex": 2,
+      "explanation": "The colors match only modestly, but the wingbeat speed and gliding are remarkably similar."
+    },
+    {
+      "question": "Which sentence uses the word \"evasive\" correctly?",
+      "options": [
+        "The evasive fox slipped past the farmer and ran into the woods.",
+        "The evasive soup was warm and tasty.",
+        "She was evasive about the huge pile of snow.",
+        "The evasive book sat on the shelf."
+      ],
+      "answerIndex": 0,
+      "explanation": "Evasive means good at slipping away, and the fox did just that."
+    },
+    {
+      "question": "According to Dr Sherratt, what might the grasshopper's sudden landing do to a bird?",
+      "options": [
+        "Make it fly faster",
+        "Make it think it lost its prey and give up the hunt",
+        "Make it want to eat butterflies instead",
+        "Scare it with a loud noise"
+      ],
+      "answerIndex": 1,
+      "explanation": "When it lands, the grasshopper folds its wings and shows a dirt-colored body, which may trick the bird into stopping the chase."
+    }
+  ]
+}
