@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-19",
+  "title": "“Grand Theft Auto VI” may mark the end of an era in gaming",
+  "articleUrl": "https://www.economist.com/culture/2026/11/18/grand-theft-auto-vi-may-mark-the-end-of-an-era-in-gaming",
+  "articlePageUrl": "/articles/2026-11-19.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "ossified",
+      "partOfSpeech": "adjective",
+      "pronunciation": "OSS-ih-fyde",
+      "articleQuote": "It is not only on consoles that gaming culture has ossified.",
+      "meaning": "Something that has ossified has become hard, rigid and unable to change, like soft tissue slowly turning into bone (the word comes from the Latin for bone). People use it for habits, institutions or industries that have stopped adapting. Here it describes a gaming world where the same few franchises top the charts year after year and fresh newcomers rarely break through.",
+      "examples": [
+        "After forty years of doing things the same way, the company's rules had ossified and no one dared suggest a change.",
+        "Critics say the city's planning process has ossified into a maze of forms that blocks new ideas."
+      ]
+    },
+    {
+      "word": "jettisoned",
+      "partOfSpeech": "verb",
+      "pronunciation": "JET-ih-sund",
+      "articleQuote": "Xbox, Microsoft’s gaming division, has jettisoned some of its smaller studios to focus on reliable performers",
+      "meaning": "To jettison something is to throw it away or drop it on purpose, usually to lighten a load or get out of trouble. It began with sailors tossing cargo overboard to keep a sinking ship afloat. Today it covers any deliberate dumping of something that has become a burden. Here Xbox dropped its smaller game studios so it could put its money behind its biggest, safest hits.",
+      "examples": [
+        "The team jettisoned its complicated plan and went with a simple one instead.",
+        "To save fuel, the pilot jettisoned part of the cargo."
+      ]
+    },
+    {
+      "word": "irreverent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ih-REV-er-ent",
+      "articleQuote": "“GTA VI” combines the action and irreverent humour of previous titles in the series",
+      "meaning": "Irreverent means showing a lack of respect for things people usually treat seriously, such as authority, tradition or famous people, often in a joking way. It is not always an insult: an irreverent comedian can be sharp and fun. The opposite is reverent, meaning full of respect. Here it describes the Grand Theft Auto series' habit of mocking everything in sight, from politicians to celebrity culture.",
+      "examples": [
+        "The magazine is known for its irreverent cartoons that poke fun at the president.",
+        "Her irreverent speech made the crowd laugh, though a few teachers frowned."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Live-service games",
+      "articleQuote": "Rather than gamble on new titles, publishers are turning existing hits into constantly evolving “live service” games",
+      "meaning": "Business models: a traditional video game is a product, like a book or a DVD. You pay once, play it, and eventually finish it. A **live-service game** is more like a subscription to a place: the game never really ends, and the company keeps adding new maps, events and items for years, usually earning money through in-game purchases such as costumes and upgrades, rather than one big sale.\n\nThe article shows the difference with two entries in the same series. \"GTA IV\" (2008) was mainly a single-player story and sold 25 million copies in five years. \"GTA V\" (2013) grew into an open-ended online world and has sold 230 million copies over more than a decade, still making over $800 million last year. Fortnite works the same way.\n\nWhy it matters: a live-service hit is a steady money machine, which makes publishers love it, so they pour money into keeping old hits alive instead of risking new games. The risk is that a flop is expensive: Sony's live-service shooter \"Concord\" was shut down after two weeks. The takeaway: when the money comes from a game that never ends, the industry makes fewer and bigger bets."
+    },
+    {
+      "name": "Switching costs and winner-takes-most markets",
+      "articleQuote": "moving to another game represents a steep cost",
+      "meaning": "Economics: a **switching cost** is everything you give up when you move from one product to another, such as money, time, skills or friends. If you have spent years getting good at a game and buying costumes for your character, a new game means starting over at zero, so many players simply stay put.\n\nThe article describes top games as \"black-hole games\" that players cannot be dragged away from. Add the fact that making a top-tier game now costs over a billion dollars and thousands of workers (the latest \"Call of Duty\" credits 7,060 people), and you get a **winner-takes-most market**: a handful of giants collect almost all the attention. In the article, the top ten PC franchises rack up nearly as much play time as the next 100,000 games combined.\n\nThe same logic is behind why you stay on the same phone brand or messaging app as your friends. The takeaway: a market can look crowded with choices while a few products quietly dominate, and a newcomer must be not just a little better but good enough to make people pay the cost of leaving."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what problem lies behind the huge success of “GTA VI”?",
+      "options": [
+        "Developers now have shrinking incentives to make top-tier games like it",
+        "Players no longer enjoy action games",
+        "The game was too short to be popular",
+        "Governments are banning video games"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says the hype is deserved but conceals a problem: huge costs and a few dominant franchises leave studios little reason to attempt another game on this scale."
+    },
+    {
+      "question": "What evidence does the article give that gaming has “ossified”?",
+      "options": [
+        "Prices of games have fallen sharply",
+        "Since 2020 the five most popular PlayStation games in America each year have come from only eight franchises",
+        "Most new games are released only on mobile phones",
+        "Fewer people play games than ten years ago"
+      ],
+      "answerIndex": 1,
+      "explanation": "A handful of franchises such as Fortnite, Call of Duty and GTA keep topping the charts, and only 14% of PC play time in 2025 went to games released that year."
+    },
+    {
+      "question": "What is a “live-service” game?",
+      "options": [
+        "A game that can only be played in a cinema",
+        "A game sold once with no updates",
+        "A game that is broadcast on television",
+        "A game that keeps evolving with new content and earns money over many years"
+      ],
+      "answerIndex": 3,
+      "explanation": "Live-service games, like GTA V online, keep adding content and selling in-game items, so they earn money far longer than a single-purchase game."
+    },
+    {
+      "question": "Why does the article say it is hard for a new game to break into the top tier?",
+      "options": [
+        "Players have invested so much time and money in existing games that switching is costly, and top games are very expensive to build",
+        "The law limits how many games can be sold",
+        "New games are always worse than old ones",
+        "Stores refuse to sell games from new companies"
+      ],
+      "answerIndex": 0,
+      "explanation": "Switching costs keep players loyal to hits like Fortnite, while billion-dollar budgets mean even Sony's Concord and Fairgames failed to break through."
+    },
+    {
+      "question": "Why might the future of gaming look “more like the past”, according to the article?",
+      "options": [
+        "Because AI will make games more expensive",
+        "Because the next consoles may cost over $1,000, so players may shift to cheaper, lower-powered devices and simpler games",
+        "Because Nintendo has stopped making consoles",
+        "Because Roblox plans to shut down"
+      ],
+      "answerIndex": 1,
+      "explanation": "Rising memory prices are pushing console costs up, so many people may turn to cheap PCs, phones, the Switch and Roblox, whose games look like those from 20 years ago."
+    }
+  ]
+}
