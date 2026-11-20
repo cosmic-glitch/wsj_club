@@ -1,0 +1,428 @@
+[
+  {
+    "k": "sensitive",
+    "t": "sensitive",
+    "kind": "vocab",
+    "pron": "SEN-suh-tiv",
+    "forms": [
+      "sensitive"
+    ],
+    "text": "Sensitive means something bothers you more than it bothers most people. Some kids are sensitive to loud noises.",
+    "audio": true
+  },
+  {
+    "k": "donate",
+    "t": "donated",
+    "kind": "vocab",
+    "pron": "DOH-nay-tid",
+    "forms": [
+      "donated"
+    ],
+    "text": "To donate is to give something away for free to help others. Neighbors donated items for the bags.",
+    "audio": true
+  },
+  {
+    "k": "inspiring",
+    "t": "inspiring",
+    "kind": "vocab",
+    "pron": "in-SPY-ring",
+    "forms": [
+      "inspiring"
+    ],
+    "text": "Something inspiring makes you want to do something good too.",
+    "audio": true
+  },
+  {
+    "k": "fidget-spinner",
+    "t": "Fidget spinners",
+    "kind": "word",
+    "forms": [
+      "Fidget spinners"
+    ],
+    "text": "A fidget spinner is a small toy that spins in your fingers. It can help a person feel calm.",
+    "audio": true
+  },
+  {
+    "k": "lgm",
+    "t": "LGM",
+    "kind": "name",
+    "forms": [
+      "LGM"
+    ],
+    "text": "LGM stands for Ledger Greyson Mann. It is the name of Ledger's bags.",
+    "audio": true
+  },
+  {
+    "k": "virginia",
+    "t": "Virginia",
+    "kind": "name",
+    "forms": [
+      "Virginia"
+    ],
+    "text": "Virginia is a state on the east side of the United States.",
+    "audio": true
+  },
+  {
+    "k": "autism",
+    "t": "autism",
+    "kind": "word",
+    "forms": [
+      "autism",
+      "autistic"
+    ],
+    "text": "Autism is a way some people's brains work. It can change how a person learns, plays, and talks.",
+    "audio": true
+  },
+  {
+    "k": "first-responder",
+    "t": "first responders",
+    "kind": "word",
+    "forms": [
+      "first responders"
+    ],
+    "text": "First responders are people who rush to help in an emergency. Police officers and firefighters are first responders.",
+    "audio": true
+  },
+  {
+    "k": "sergeant",
+    "t": "sergeant",
+    "kind": "word",
+    "forms": [
+      "sergeant",
+      "Sergeant"
+    ],
+    "text": "A sergeant is a police officer with a higher rank, who helps lead other officers.",
+    "audio": true
+  },
+  {
+    "k": "police-department",
+    "t": "Police Department",
+    "kind": "name",
+    "forms": [
+      "Police Department"
+    ],
+    "text": "A police department is the group of police officers who keep a town or county safe.",
+    "audio": true
+  },
+  {
+    "k": "prince-george-county",
+    "t": "Prince George County",
+    "kind": "name",
+    "forms": [
+      "Prince George County"
+    ],
+    "text": "Prince George County is a place in Virginia. Ledger lives there.",
+    "audio": true
+  },
+  {
+    "k": "missing",
+    "t": "missing",
+    "kind": "word",
+    "forms": [
+      "missing"
+    ],
+    "text": "Missing means lost, and nobody knows where the person is.",
+    "audio": true
+  },
+  {
+    "k": "distributed",
+    "t": "distributed",
+    "kind": "word",
+    "forms": [
+      "distributed"
+    ],
+    "text": "To distribute means to hand things out to many people.",
+    "audio": true
+  },
+  {
+    "k": "florida",
+    "t": "Florida",
+    "kind": "name",
+    "forms": [
+      "Florida"
+    ],
+    "text": "Florida is a warm state in the southeast of the United States.",
+    "audio": true
+  },
+  {
+    "k": "maryland",
+    "t": "Maryland",
+    "kind": "name",
+    "forms": [
+      "Maryland"
+    ],
+    "text": "Maryland is a state on the east coast of the United States.",
+    "audio": true
+  },
+  {
+    "k": "west-virginia",
+    "t": "West Virginia",
+    "kind": "name",
+    "forms": [
+      "West Virginia"
+    ],
+    "text": "West Virginia is a state in the eastern United States, with many hills.",
+    "audio": true
+  },
+  {
+    "k": "firefighters",
+    "t": "firefighters",
+    "kind": "word",
+    "forms": [
+      "firefighters"
+    ],
+    "text": "Firefighters are people whose job is to put out fires and help in emergencies.",
+    "audio": true
+  },
+  {
+    "k": "paramedics",
+    "t": "paramedics",
+    "kind": "word",
+    "forms": [
+      "paramedics"
+    ],
+    "text": "Paramedics are medical workers who ride in ambulances and help people who are hurt or sick.",
+    "audio": true
+  },
+  {
+    "k": "motivation",
+    "t": "motivation",
+    "kind": "word",
+    "forms": [
+      "motivation"
+    ],
+    "text": "Motivation is the reason you want to do something.",
+    "audio": true
+  },
+  {
+    "k": "diagnosed",
+    "t": "diagnosed",
+    "kind": "word",
+    "forms": [
+      "diagnosed"
+    ],
+    "text": "When a doctor diagnoses something, the doctor figures out what a person has.",
+    "audio": true
+  },
+  {
+    "k": "asd",
+    "t": "ASD",
+    "kind": "name",
+    "forms": [
+      "ASD",
+      "autism spectrum disorder"
+    ],
+    "text": "ASD means autism spectrum disorder. It is the full name for autism.",
+    "audio": true
+  },
+  {
+    "k": "condition",
+    "t": "condition",
+    "kind": "word",
+    "forms": [
+      "condition"
+    ],
+    "text": "A condition is a health matter that a person lives with.",
+    "audio": true
+  },
+  {
+    "k": "communicates",
+    "t": "communicates",
+    "kind": "word",
+    "forms": [
+      "communicates"
+    ],
+    "text": "To communicate is to share your thoughts with others, by talking or in other ways.",
+    "audio": true
+  },
+  {
+    "k": "nonverbal",
+    "t": "nonverbal",
+    "kind": "word",
+    "forms": [
+      "nonverbal"
+    ],
+    "text": "Nonverbal means not using spoken words. Some people use boards or pictures to share their thoughts.",
+    "audio": true
+  },
+  {
+    "k": "dry-erase-board",
+    "t": "Dry erase boards",
+    "kind": "word",
+    "forms": [
+      "Dry erase boards"
+    ],
+    "text": "A dry erase board is a white board you can write on and then wipe clean.",
+    "audio": true
+  },
+  {
+    "k": "comforting",
+    "t": "comforting",
+    "kind": "word",
+    "forms": [
+      "comforting"
+    ],
+    "text": "Comforting means making you feel safe and calm.",
+    "audio": true
+  },
+  {
+    "k": "ginormous",
+    "t": "ginormous",
+    "kind": "word",
+    "forms": [
+      "ginormous"
+    ],
+    "text": "Ginormous is a silly word. It means giant and enormous at once.",
+    "audio": true
+  },
+  {
+    "k": "piggy-bank",
+    "t": "piggy bank",
+    "kind": "word",
+    "forms": [
+      "piggy bank"
+    ],
+    "text": "A piggy bank is a small container, often shaped like a pig, where you save coins.",
+    "audio": true
+  },
+  {
+    "k": "organizations",
+    "t": "Organizations",
+    "kind": "word",
+    "forms": [
+      "Organizations"
+    ],
+    "text": "An organization is a group of people who work together for a goal.",
+    "audio": true
+  },
+  {
+    "k": "stepped-up",
+    "t": "stepped up",
+    "kind": "phrase",
+    "forms": [
+      "stepped up"
+    ],
+    "text": "Stepped up means came forward to help when help was needed.",
+    "audio": true
+  },
+  {
+    "k": "community",
+    "t": "community",
+    "kind": "word",
+    "forms": [
+      "community"
+    ],
+    "text": "A community is the people who live near one another, like your neighbors.",
+    "audio": true
+  },
+  {
+    "k": "jiujitsu",
+    "t": "jiujitsu",
+    "kind": "word",
+    "forms": [
+      "jiujitsu"
+    ],
+    "text": "Jiujitsu is a sport where people learn moves to wrestle and stay safe.",
+    "audio": true
+  },
+  {
+    "k": "quality-control",
+    "t": "quality control",
+    "kind": "phrase",
+    "forms": [
+      "quality control"
+    ],
+    "text": "Quality control means checking that things are made well. Ledger checks each bag.",
+    "audio": true
+  },
+  {
+    "k": "ulster-county",
+    "t": "Ulster County",
+    "kind": "name",
+    "forms": [
+      "Ulster County"
+    ],
+    "text": "Ulster County is a place in New York State.",
+    "audio": true
+  },
+  {
+    "k": "new-york",
+    "t": "New York",
+    "kind": "name",
+    "forms": [
+      "New York"
+    ],
+    "text": "New York is a state in the northeast of the United States.",
+    "audio": true
+  },
+  {
+    "k": "ambulance",
+    "t": "ambulance",
+    "kind": "word",
+    "forms": [
+      "ambulance"
+    ],
+    "text": "An ambulance is a truck that takes hurt or sick people to the hospital.",
+    "audio": true
+  },
+  {
+    "k": "leadership",
+    "t": "leadership",
+    "kind": "word",
+    "forms": [
+      "leadership"
+    ],
+    "text": "Leadership means showing others the way and helping them follow.",
+    "audio": true
+  },
+  {
+    "k": "county-executive",
+    "t": "County Executive",
+    "kind": "name",
+    "forms": [
+      "County Executive"
+    ],
+    "text": "The County Executive is the leader who runs a county.",
+    "audio": true
+  },
+  {
+    "k": "service",
+    "t": "service",
+    "kind": "word",
+    "forms": [
+      "service"
+    ],
+    "text": "Service means helping other people.",
+    "audio": true
+  },
+  {
+    "k": "crystal-clear",
+    "t": "crystal clear",
+    "kind": "phrase",
+    "forms": [
+      "crystal clear"
+    ],
+    "text": "Crystal clear means very easy to see or understand.",
+    "audio": true
+  },
+  {
+    "k": "promote",
+    "t": "promote",
+    "kind": "word",
+    "forms": [
+      "promote"
+    ],
+    "text": "To promote something is to help more people know about it and want it.",
+    "audio": true
+  },
+  {
+    "k": "wellness",
+    "t": "wellness",
+    "kind": "word",
+    "forms": [
+      "wellness"
+    ],
+    "text": "Wellness means being healthy in your body and mind.",
+    "audio": true
+  }
+]

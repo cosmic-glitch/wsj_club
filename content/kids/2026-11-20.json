@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-20",
+  "title": "A 9-year-old packs bags to calm kids",
+  "articleUrl": "https://www.timeforkids.com/g34/service-stars-packed-with-care-g3/",
+  "articlePageUrl": "/articles/kids/2026-11-20.html",
+  "voiceQuiz": true,
+  "source": "TIME for Kids",
+  "vocab": [
+    {
+      "word": "sensitive",
+      "partOfSpeech": "adjective",
+      "pronunciation": "SEN-suh-tiv",
+      "articleQuote": "Some kids are sensitive to loud noises.",
+      "meaning": "If you are sensitive to something, it bothers you more than it bothers most people. You might cover your ears or squint. In the article, some kids are sensitive to loud noises, bright lights, or touch.",
+      "examples": [
+        "My little brother is sensitive to loud noises, so he covers his ears at parades.",
+        "My eyes are sensitive to bright sun, so I wear a hat at the park."
+      ]
+    },
+    {
+      "word": "donated",
+      "partOfSpeech": "verb",
+      "pronunciation": "DOH-nay-tid",
+      "articleQuote": "Today, the Mann family’s garage is filled with items donated by community members.",
+      "meaning": "To donate something is to give it away for free to help others. Nobody pays for it. In the article, neighbors donated stuffed animals and other items so Ledger could fill more bags.",
+      "examples": [
+        "We donated our old toys to children who did not have any.",
+        "My class donated books to the school library."
+      ]
+    },
+    {
+      "word": "inspiring",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-SPY-ring",
+      "articleQuote": "His leadership at such a young age is truly inspiring",
+      "meaning": "Something inspiring makes you want to do something good too. It gives you a spark of energy. In the article, a leader called Ledger inspiring because he helps so many kids at such a young age.",
+      "examples": [
+        "The story of the girl who built a library was inspiring, so I gave away my books.",
+        "Our coach gave an inspiring talk, and the whole team wanted to try harder."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "First responders",
+      "articleQuote": "Ledger gives these bags to police officers and other first responders.",
+      "meaning": "Ledger gives his bags to first responders. Who are they?\n\nFirst responders are the people who rush to help when there is an emergency. They are the first ones to arrive. Police officers, firefighters, and paramedics are all first responders.\n\nThink about what happens when someone is lost or hurt. A grown-up calls for help. Police officers search for the lost person. Paramedics drive an ambulance to care for someone who is hurt. Firefighters come in a big truck when there is a fire.\n\nSo first responders are helpers who show up fast. That is why Ledger puts his bags in their hands. They can use the bags right away to help a scared child feel calm."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What are the LGM bags?",
+      "options": [
+        "Clear backpacks with items to calm a child",
+        "Lunch bags for football players",
+        "Bags for carrying library books",
+        "Suitcases for trips to Florida"
+      ],
+      "answerIndex": 0,
+      "explanation": "The clear backpacks hold things like stuffed animals and headphones to calm a child with autism."
+    },
+    {
+      "question": "Why did Ledger start making the bags?",
+      "options": [
+        "He won a contest",
+        "His dad told him about a missing child, and Ledger wanted to help other kids",
+        "His teacher asked him to",
+        "He wanted to sell them"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ledger's dad told him about a missing child, and Ledger had an idea. He also has autism himself."
+    },
+    {
+      "question": "Some kids are \"sensitive\" to loud noises. What does that mean?",
+      "options": [
+        "They love loud noises",
+        "They cannot hear at all",
+        "Loud noises bother them more than they bother most people",
+        "They make loud noises"
+      ],
+      "answerIndex": 2,
+      "explanation": "Sensitive means something bothers you more than it bothers most people. That is why the bags have headphones."
+    },
+    {
+      "question": "Who are first responders?",
+      "options": [
+        "Kids who run races",
+        "Teachers at school",
+        "People who sell backpacks",
+        "People like police officers, firefighters, and paramedics who rush to help in an emergency"
+      ],
+      "answerIndex": 3,
+      "explanation": "First responders are the first helpers to arrive when there is an emergency."
+    },
+    {
+      "question": "How did Ledger pay for the first bags?",
+      "options": [
+        "He used $100 from his piggy bank",
+        "His school paid for them",
+        "The police paid for them",
+        "He sold his stuffed animals"
+      ],
+      "answerIndex": 0,
+      "explanation": "Ledger used $100 from his piggy bank. Later, other people donated money and items."
+    }
+  ]
+}
