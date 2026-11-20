@@ -1,0 +1,589 @@
+[
+  {
+    "k": "bedlam",
+    "t": "bedlam",
+    "kind": "vocab",
+    "pron": "BED-lum",
+    "forms": [
+      "bedlam"
+    ],
+    "text": "Bedlam means wild, noisy chaos. It comes from Bethlem, a London hospital known for its disorder. Here it describes the confusion of banks, flights and government networks failing in the same week.",
+    "audio": true
+  },
+  {
+    "k": "frenetic",
+    "t": "frenetic",
+    "kind": "vocab",
+    "pron": "freh-NET-ik",
+    "forms": [
+      "frenetic"
+    ],
+    "text": "Frenetic means frantic and wildly fast. Here it describes companies rushing to patch software flaws all at once, a rush that can itself cause problems.",
+    "audio": true
+  },
+  {
+    "k": "wayward",
+    "t": "wayward",
+    "kind": "vocab",
+    "pron": "WAY-werd",
+    "forms": [
+      "wayward"
+    ],
+    "text": "Wayward means straying off in an uncontrolled direction. Here it pictures an AI that has slipped out of human control, which the article says there is little evidence of.",
+    "audio": true
+  },
+  {
+    "k": "happenstance",
+    "t": "happenstance",
+    "kind": "word",
+    "forms": [
+      "happenstance"
+    ],
+    "text": "Happenstance is chance, something that happens by accident rather than by plan. In Goldfinger's saying, one odd event is happenstance, but a pattern means someone is behind it.",
+    "audio": true
+  },
+  {
+    "k": "eponymous",
+    "t": "eponymous",
+    "kind": "word",
+    "forms": [
+      "eponymous"
+    ],
+    "text": "Eponymous describes the person a thing is named after. Goldfinger is the eponymous villain because the novel is called Goldfinger.",
+    "audio": true
+  },
+  {
+    "k": "goldfinger",
+    "t": "Goldfinger",
+    "kind": "name",
+    "forms": [
+      "Goldfinger"
+    ],
+    "text": "Goldfinger is the villain of Ian Fleming's 1959 James Bond novel, later a famous film. His line about 'enemy action' is quoted here to capture the suspicion that the outages were no accident.",
+    "audio": true
+  },
+  {
+    "k": "adrift",
+    "t": "adrift",
+    "kind": "word",
+    "forms": [
+      "adrift"
+    ],
+    "text": "Adrift means drifting without direction, like a boat with no anchor or oars. Here office workers were left with no way to do their jobs.",
+    "audio": true
+  },
+  {
+    "k": "glitch",
+    "t": "glitch",
+    "kind": "word",
+    "forms": [
+      "glitch"
+    ],
+    "text": "A glitch is a small, sudden fault in a machine or program. Here a glitch in radio communications stopped flights across the country.",
+    "audio": true
+  },
+  {
+    "k": "signals-intelligence",
+    "t": "signals-intelligence",
+    "kind": "phrase",
+    "forms": [
+      "signals-intelligence"
+    ],
+    "text": "Signals intelligence means spying by intercepting electronic messages, such as phone calls and emails. It is the NSA's main job.",
+    "audio": true
+  },
+  {
+    "k": "nsa",
+    "t": "National Security Agency",
+    "kind": "name",
+    "forms": [
+      "National Security Agency",
+      "NSA"
+    ],
+    "text": "The NSA is the American government agency that collects foreign electronic communications and protects government networks. Its own secret communication system was disrupted.",
+    "audio": true
+  },
+  {
+    "k": "classified",
+    "t": "classified",
+    "kind": "word",
+    "forms": [
+      "classified"
+    ],
+    "text": "Classified means officially secret, shared only with people who have clearance. A classified system holds government secrets.",
+    "audio": true
+  },
+  {
+    "k": "homeland-security",
+    "t": "homeland security",
+    "kind": "phrase",
+    "forms": [
+      "homeland security"
+    ],
+    "text": "The homeland security secretary leads the department that guards the US against terrorism, cyber-attacks and border threats.",
+    "audio": true
+  },
+  {
+    "k": "spate",
+    "t": "spate",
+    "kind": "word",
+    "forms": [
+      "spate"
+    ],
+    "text": "A spate is a sudden run of similar events, such as a spate of break-ins. Here it means several outages in a few days.",
+    "audio": true
+  },
+  {
+    "k": "self-fixing",
+    "t": "self-fixing",
+    "kind": "word",
+    "forms": [
+      "self-fixing"
+    ],
+    "text": "Self-fixing describes software that repairs itself without people. The article's quote marks show the claim comes from a secondhand theory, not an expert.",
+    "audio": true
+  },
+  {
+    "k": "faa",
+    "t": "Federal Aviation Administration",
+    "kind": "name",
+    "forms": [
+      "Federal Aviation Administration",
+      "FAA"
+    ],
+    "text": "The FAA is the US agency that regulates flying and runs air-traffic control.",
+    "audio": true
+  },
+  {
+    "k": "router",
+    "t": "router",
+    "kind": "word",
+    "forms": [
+      "router"
+    ],
+    "text": "A router is a device that directs data between computers or networks, like a traffic cop for internet messages. A new one caused the air-traffic problem.",
+    "audio": true
+  },
+  {
+    "k": "hawley",
+    "t": "Josh Hawley",
+    "kind": "name",
+    "forms": [
+      "Josh Hawley"
+    ],
+    "text": "Josh Hawley is a Republican senator from Missouri who often criticises big institutions. Here he demands a briefing for the whole Senate.",
+    "audio": true
+  },
+  {
+    "k": "buy-it",
+    "t": "don’t buy it",
+    "kind": "phrase",
+    "forms": [
+      "don’t buy it"
+    ],
+    "text": "To 'buy' an explanation is slang for believing it. Senator Hawley does not believe the officials' story.",
+    "audio": true
+  },
+  {
+    "k": "mayhem",
+    "t": "mayhem",
+    "kind": "word",
+    "forms": [
+      "mayhem"
+    ],
+    "text": "Mayhem is violent or chaotic disorder. Here it describes a week of digital breakdowns.",
+    "audio": true
+  },
+  {
+    "k": "malicious",
+    "t": "malicious",
+    "kind": "word",
+    "forms": [
+      "malicious"
+    ],
+    "text": "Malicious means done on purpose to harm. Malicious hackers break into systems to cause damage or steal.",
+    "audio": true
+  },
+  {
+    "k": "tinkering",
+    "t": "tinkering",
+    "kind": "word",
+    "forms": [
+      "Tinkering"
+    ],
+    "text": "Tinkering means fiddling with something, making small changes. Even careful tinkering with old systems can break them.",
+    "audio": true
+  },
+  {
+    "k": "fraught",
+    "t": "fraught",
+    "kind": "word",
+    "forms": [
+      "fraught"
+    ],
+    "text": "Fraught means full of risk or trouble. Changing old, complex computer systems is fraught because a small change can cause surprising failures.",
+    "audio": true
+  },
+  {
+    "k": "vulnerabilities",
+    "t": "vulnerabilities",
+    "kind": "word",
+    "forms": [
+      "vulnerabilities",
+      "vulnerability"
+    ],
+    "text": "Vulnerabilities are weak spots in software that attackers could use to break in. Finding and fixing them is called patching.",
+    "audio": true
+  },
+  {
+    "k": "paradoxically",
+    "t": "paradoxically",
+    "kind": "word",
+    "forms": [
+      "Paradoxically"
+    ],
+    "text": "Paradoxically means in a way that seems to contradict itself. Here, work meant to make systems safer is creating new risks.",
+    "audio": true
+  },
+  {
+    "k": "prosaic",
+    "t": "prosaic",
+    "kind": "word",
+    "forms": [
+      "prosaic"
+    ],
+    "text": "Prosaic means ordinary and unexciting. A prosaic explanation, like a faulty router, is dull rather than dramatic.",
+    "audio": true
+  },
+  {
+    "k": "el-dorado",
+    "t": "El Dorado",
+    "kind": "name",
+    "forms": [
+      "El Dorado"
+    ],
+    "text": "El Dorado is a small city in Arkansas. Its name is Spanish for 'the golden one', after a legendary city of gold.",
+    "audio": true
+  },
+  {
+    "k": "amarillo",
+    "t": "Amarillo",
+    "kind": "name",
+    "forms": [
+      "Amarillo"
+    ],
+    "text": "Amarillo is a city in the Texas Panhandle, where a radar site is located.",
+    "audio": true
+  },
+  {
+    "k": "fibre-optic",
+    "t": "fibre-optic",
+    "kind": "word",
+    "forms": [
+      "fibre-optic"
+    ],
+    "text": "Fibre-optic cables carry data as pulses of light through thin glass strands. They are much faster than old copper wires.",
+    "audio": true
+  },
+  {
+    "k": "newfangled",
+    "t": "newfangled",
+    "kind": "word",
+    "forms": [
+      "newfangled"
+    ],
+    "text": "Newfangled means new and unfamiliar, often said a little doubtfully. Here it refers to AI systems.",
+    "audio": true
+  },
+  {
+    "k": "pony-up",
+    "t": "pony up",
+    "kind": "phrase",
+    "forms": [
+      "pony up"
+    ],
+    "text": "To pony up is slang for paying money that is owed or demanded. The secretary wanted Congress to hand over $50bn.",
+    "audio": true
+  },
+  {
+    "k": "patch",
+    "t": "patch",
+    "kind": "word",
+    "forms": [
+      "patch"
+    ],
+    "text": "A patch is a small update that fixes a flaw in software. Here a July patch hid a bug that appeared months later.",
+    "audio": true
+  },
+  {
+    "k": "rolled-out",
+    "t": "rolled out",
+    "kind": "phrase",
+    "forms": [
+      "rolled out"
+    ],
+    "text": "Rolled out means released to users step by step, as in a new feature being rolled out.",
+    "audio": true
+  },
+  {
+    "k": "cropped-up",
+    "t": "cropped up",
+    "kind": "phrase",
+    "forms": [
+      "cropped up"
+    ],
+    "text": "To crop up means to appear unexpectedly. The bug cropped up only months after the patch.",
+    "audio": true
+  },
+  {
+    "k": "inadvertently",
+    "t": "inadvertently",
+    "kind": "word",
+    "forms": [
+      "inadvertently"
+    ],
+    "text": "Inadvertently means by accident, without meaning to. Data from two systems landed on one network by accident.",
+    "audio": true
+  },
+  {
+    "k": "keel-over",
+    "t": "keel over",
+    "kind": "phrase",
+    "forms": [
+      "keel over"
+    ],
+    "text": "To keel over means to fall or tip over suddenly, like a boat capsizing. Here servers collapsed.",
+    "audio": true
+  },
+  {
+    "k": "cascading",
+    "t": "cascading",
+    "kind": "word",
+    "forms": [
+      "cascading"
+    ],
+    "text": "Cascading means spreading step by step like a waterfall or dominoes. A cascading failure is one small fault that triggers many others.",
+    "audio": true
+  },
+  {
+    "k": "jpmorganchase",
+    "t": "JPMorganChase",
+    "kind": "name",
+    "forms": [
+      "JPMorganChase"
+    ],
+    "text": "JPMorganChase is the largest bank in the United States.",
+    "audio": true
+  },
+  {
+    "k": "krebs",
+    "t": "Chris Krebs",
+    "kind": "name",
+    "forms": [
+      "Chris Krebs",
+      "Krebs"
+    ],
+    "text": "Chris Krebs was the first head of CISA, the US cyber-security agency, and is a respected voice on digital safety.",
+    "audio": true
+  },
+  {
+    "k": "commonalities",
+    "t": "commonalities",
+    "kind": "word",
+    "forms": [
+      "commonalities"
+    ],
+    "text": "Commonalities are shared features. The events differ but have things in common, like efforts to be safer.",
+    "audio": true
+  },
+  {
+    "k": "warner",
+    "t": "Mark Warner",
+    "kind": "name",
+    "forms": [
+      "Mark Warner"
+    ],
+    "text": "Mark Warner is a Democratic senator from Virginia who helps lead the Senate Intelligence Committee.",
+    "audio": true
+  },
+  {
+    "k": "unprecedented",
+    "t": "unprecedented",
+    "kind": "word",
+    "forms": [
+      "unprecedented"
+    ],
+    "text": "Unprecedented means never seen before. AI can find flaws at a speed with no earlier match.",
+    "audio": true
+  },
+  {
+    "k": "anthropic",
+    "t": "Anthropic",
+    "kind": "name",
+    "forms": [
+      "Anthropic"
+    ],
+    "text": "Anthropic is an AI company that makes the Claude models and also built Mythos.",
+    "audio": true
+  },
+  {
+    "k": "mythos",
+    "t": "Mythos",
+    "kind": "name",
+    "forms": [
+      "Mythos"
+    ],
+    "text": "Mythos is an Anthropic AI model that is very good at finding and exploiting software flaws, so it is both useful for defence and risky.",
+    "audio": true
+  },
+  {
+    "k": "glasswing",
+    "t": "Glasswing",
+    "kind": "name",
+    "forms": [
+      "Glasswing"
+    ],
+    "text": "Glasswing is the programme that gives chosen firms special access to Mythos to fix their code first.",
+    "audio": true
+  },
+  {
+    "k": "exploiting",
+    "t": "exploiting",
+    "kind": "word",
+    "forms": [
+      "exploiting"
+    ],
+    "text": "To exploit a flaw means to use it to attack. Exploiting a vulnerability can let a hacker take control.",
+    "audio": true
+  },
+  {
+    "k": "bad-guys",
+    "t": "bad guys",
+    "kind": "phrase",
+    "forms": [
+      "bad guys"
+    ],
+    "text": "Bad guys is casual speech for criminals or enemies, here hackers.",
+    "audio": true
+  },
+  {
+    "k": "volume-velocity",
+    "t": "volume and velocity",
+    "kind": "phrase",
+    "forms": [
+      "volume and velocity"
+    ],
+    "text": "Volume is how much and velocity is how fast. Together they describe a flood of fixes arriving quickly.",
+    "audio": true
+  },
+  {
+    "k": "cves",
+    "t": "CVEs",
+    "kind": "word",
+    "forms": [
+      "CVEs"
+    ],
+    "text": "A CVE is a public catalogue number for a known software flaw. Counting CVEs shows how many flaws are found.",
+    "audio": true
+  },
+  {
+    "k": "staggering",
+    "t": "staggering",
+    "kind": "word",
+    "forms": [
+      "staggering"
+    ],
+    "text": "Staggering means shockingly large. Over 5,000 fixes in a year is staggering next to about 4,000 in three years.",
+    "audio": true
+  },
+  {
+    "k": "stripped-bare",
+    "t": "stripped bare",
+    "kind": "phrase",
+    "forms": [
+      "stripped organisations bare"
+    ],
+    "text": "To strip something bare means to remove everything useful. Layoffs might leave firms without staff who understand their systems.",
+    "audio": true
+  },
+  {
+    "k": "layoffs",
+    "t": "layoffs",
+    "kind": "word",
+    "forms": [
+      "layoffs"
+    ],
+    "text": "Layoffs are job cuts by an employer, usually to save money.",
+    "audio": true
+  },
+  {
+    "k": "conjures",
+    "t": "conjures",
+    "kind": "word",
+    "forms": [
+      "conjures"
+    ],
+    "text": "To conjure is to call something up, as a magician does. Each incident conjures fears of an attack.",
+    "audio": true
+  },
+  {
+    "k": "soufan",
+    "t": "Soufan Centre",
+    "kind": "name",
+    "forms": [
+      "Soufan Centre"
+    ],
+    "text": "The Soufan Centre is a research group on security and terrorism.",
+    "audio": true
+  },
+  {
+    "k": "rent-free",
+    "t": "live in heads rent-free",
+    "kind": "phrase",
+    "forms": [
+      "rent-free"
+    ],
+    "text": "Living in someone's head rent-free means being on their mind constantly without earning it. Americans think about foreign enemies all the time.",
+    "audio": true
+  },
+  {
+    "k": "whopping",
+    "t": "whopping",
+    "kind": "word",
+    "forms": [
+      "whopping"
+    ],
+    "text": "Whopping is informal for very large. A $6.3bn theft is whopping.",
+    "audio": true
+  },
+  {
+    "k": "binance",
+    "t": "Binance",
+    "kind": "name",
+    "forms": [
+      "Binance"
+    ],
+    "text": "Binance is one of the world's largest cryptocurrency exchanges.",
+    "audio": true
+  },
+  {
+    "k": "swept-out",
+    "t": "swept out",
+    "kind": "phrase",
+    "forms": [
+      "swept out"
+    ],
+    "text": "Swept out means cleared away entirely, like dust from a room. Flaws would be removed.",
+    "audio": true
+  },
+  {
+    "k": "scant",
+    "t": "scant",
+    "kind": "word",
+    "forms": [
+      "scant"
+    ],
+    "text": "Scant means barely any. Scant comfort means almost none.",
+    "audio": true
+  }
+]

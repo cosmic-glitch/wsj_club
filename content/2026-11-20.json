@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-20",
+  "title": "What is causing America’s recent outages",
+  "articleUrl": "https://www.economist.com/united-states/2026/11/19/what-is-causing-americas-recent-outages",
+  "articlePageUrl": "/articles/2026-11-20.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "bedlam",
+      "partOfSpeech": "noun",
+      "pronunciation": "BED-lum",
+      "articleQuote": "In the short term, the result looks like digital bedlam.",
+      "meaning": "Bedlam is a scene of noisy, confused chaos where nobody seems to be in charge. The word comes from Bethlem, a London hospital that cared for people with mental illness in the Middle Ages and was famously loud and disorderly. Today it describes any uproar, from a stampede in a shop to a crowded airport. Here it describes a week in which banks, airlines and government networks all seemed to break down at once.",
+      "examples": [
+        "When the fire alarm went off during lunch, the cafeteria dissolved into bedlam.",
+        "Bedlam broke out at the concert when the power failed and thousands tried to leave at once."
+      ]
+    },
+    {
+      "word": "frenetic",
+      "partOfSpeech": "adjective",
+      "pronunciation": "freh-NET-ik",
+      "articleQuote": "the process of frenetic AI-driven patching is good news",
+      "meaning": "Frenetic describes activity that is fast, wild and a little frantic, as if everyone is rushing without time to think. It is a stronger word than busy or quick: it suggests energy that is close to out of control. Here it describes companies racing to find and fix security flaws all at once, a rush that the article says can itself cause trouble.",
+      "examples": [
+        "The kitchen was frenetic in the last hour before the restaurant opened.",
+        "After the announcement, the stock market had a frenetic day of buying and selling."
+      ]
+    },
+    {
+      "word": "wayward",
+      "partOfSpeech": "adjective",
+      "pronunciation": "WAY-werd",
+      "articleQuote": "There is little evidence that malicious hackers or wayward AI are to blame.",
+      "meaning": "Wayward means going off in an unexpected, uncontrolled or disobedient direction, like a toddler who keeps wandering away or a ball that bounces into the street. It is a short form of 'away-ward', meaning turned away from the proper path. Here it pictures an AI system that has slipped out of human control and is causing damage on its own, an idea the article says the evidence does not support.",
+      "examples": [
+        "A wayward shopping cart rolled across the parking lot and dented a car.",
+        "The coach scolded the wayward player who kept ignoring the plan."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Software vulnerabilities and patches",
+      "articleQuote": "companies are now using AI to discover vulnerabilities and moving more quickly to repair them",
+      "meaning": "Cyber-security: a **vulnerability** is a mistake or weak spot in a program's code that an attacker could use to break in, like an unlocked window in a house. Almost all big programs have thousands of them, because they are built from millions of lines of code written over many years. When a flaw is found, the company writes a fix called a **patch** and sends it to every user. Flaws are catalogued with a unique number called a CVE (\"common vulnerabilities and exposures\"), so everyone can talk about the same one.\n\nThe article's twist is speed. A new AI model, Anthropic's Mythos, is extremely good at finding flaws, so firms are using it to find their own holes before criminals do. Microsoft fixed about 4,000 CVEs between 2022 and 2025, but published more than 5,000 in 2026 alone. Each patch changes live systems that millions rely on, so a flood of patches strains the teams applying them.\n\nWhy it matters: fixing a flaw is not free. Every patch is also a change, and changes can break things. The takeaway: making a system safer in the long run can make it shakier in the short run, which is why a burst of outages need not mean an attack."
+    },
+    {
+      "name": "Cascading failure",
+      "articleQuote": "The result was a cascading failure, causing more than 80% of servers to keel over.",
+      "meaning": "Systems: a **cascading failure** happens when one small problem triggers a second, which triggers a third, like a row of dominoes. In a connected system, parts depend on each other, so when one part is overloaded it passes its work or its errors to its neighbours, and they get overloaded too. The whole thing can collapse even though the first fault was tiny.\n\nThe article's example is Microsoft's outage. A patch released in July worked for four months, but hid a bug. Then data from two different systems piled onto one network at the same moment that server capacity was down. That combination set off a chain reaction, and more than 80% of servers keeled over. Likewise, the air-traffic problem began with one new router in Arkansas that flooded a radar site in Texas with \"excessive data\".\n\nWhy it matters: it explains why distant events can look connected, and why officials suspect sabotage, when the cause is just ordinary parts tangled together. The takeaway: the more tightly linked a system is, the further one small slip can travel."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what is the most likely explanation for much of the recent chaos?",
+      "options": [
+        "Efforts to make systems more secure, such as fast AI-driven patching, created new short-term risks",
+        "A coordinated attack by Russia, China and Iran",
+        "Self-fixing AI that rewrote its own code too quickly",
+        "Companies refusing to update their software"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says there is little evidence of hackers or wayward AI; rather, the rush to find and fix vulnerabilities strains old, complex systems."
+    },
+    {
+      "question": "What caused the air-traffic control communications problem, according to the FAA?",
+      "options": [
+        "A hacker at a radar site",
+        "A faulty new router that flooded the system with excessive data",
+        "A storm in Texas",
+        "A software patch from Microsoft"
+      ],
+      "answerIndex": 1,
+      "explanation": "The FAA said a new router in El Dorado, Arkansas caused problems at a radar site in Amarillo, Texas, during routine upgrades from copper wires to fibre-optic cables."
+    },
+    {
+      "question": "What is a software \"vulnerability\"?",
+      "options": [
+        "A program that has been deleted",
+        "A fee paid to a security company",
+        "A weak spot in code that an attacker could exploit",
+        "A backup copy of a network"
+      ],
+      "answerIndex": 2,
+      "explanation": "A vulnerability is a flaw in software that could be used to break in; a patch is the fix, and CVEs are the catalogue numbers for known flaws."
+    },
+    {
+      "question": "Why might a flood of security patches cause outages?",
+      "options": [
+        "Patches always contain viruses",
+        "Patches make computers run slower on purpose",
+        "Patches are only installed by hackers",
+        "Every patch changes live systems, and teams can be overwhelmed by the volume and velocity of changes"
+      ],
+      "answerIndex": 3,
+      "explanation": "Chris Krebs says the sheer volume and velocity of fixes can overwhelm the teams handling them, and Microsoft's CVE count shows how fast the pace has grown."
+    },
+    {
+      "question": "What is the article's view of the long term?",
+      "options": [
+        "Frenetic AI-driven patching should leave code safer and more secure",
+        "Outages will end immediately",
+        "AI will be banned from security work",
+        "Americans will soon trust their government again"
+      ],
+      "answerIndex": 0,
+      "explanation": "Mr Krebs argues many vulnerabilities will be swept out in the coming months and years, though Americans may take little comfort in more outages now and sophisticated attacks later."
+    }
+  ]
+}
