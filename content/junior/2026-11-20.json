@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-20",
+  "title": "The oddball who founded UPS—and changed the world",
+  "articleUrl": "https://www.economist.com/culture/2026/11/19/the-oddball-who-founded-ups-and-changed-the-world",
+  "articlePageUrl": "/articles/junior/2026-11-20.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "relentless",
+      "partOfSpeech": "adjective",
+      "pronunciation": "rih-LENT-less",
+      "articleQuote": "He was relentless in seeking better ways to work.",
+      "meaning": "Someone who is relentless never eases up and never gives up. Here, the writer says James Casey kept hunting for faster, smarter ways to deliver packages, year after year. The word can describe people, but also things like rain or heat that just keep going.",
+      "examples": [
+        "The relentless rain kept falling all weekend, so the soccer game was canceled.",
+        "She was relentless at practice, shooting free throws until she made ten in a row."
+      ]
+    },
+    {
+      "word": "fledgling",
+      "partOfSpeech": "adjective",
+      "pronunciation": "FLEJ-ling",
+      "articleQuote": "Casey built a fledgling messenger service into a Fortune 500 firm, and changed how people shop.",
+      "meaning": "Something that is fledgling is new and just starting out, not yet grown or strong. Here, Casey's small messenger business was only a beginning when he started it. The word comes from a fledgling, a young bird that has just grown its feathers.",
+      "examples": [
+        "Our fledgling chess club had only four members, but it grew every month.",
+        "The fledgling band played its first show in a garage."
+      ]
+    },
+    {
+      "word": "poach",
+      "partOfSpeech": "verb",
+      "pronunciation": "POHCH",
+      "articleQuote": "He offered retailers long-term contracts, which saved them from having to spend money on operations (which, in the early 20th century, meant horses and wagons). For Casey, it guaranteed volume and financial surety; and made it harder for rivals to poach his customers.",
+      "meaning": "To poach is to sneakily take something that belongs to someone else, like a customer or a worker. Here, Casey's rivals wanted to lure away his customers, and his long contracts made that hard. The word can also mean hunting animals illegally, or cooking food gently in hot water.",
+      "examples": [
+        "The new pizza shop tried to poach customers by offering free garlic bread.",
+        "The rival team tried to poach our best player before the season started."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Antitrust laws",
+      "articleQuote": "It flouted antitrust laws by secretly buying up rivals, locking retailers into exclusive contracts and striking deals to carve up markets with competitors.",
+      "meaning": "The article says UPS \"flouted\" (broke the rules of) **antitrust laws**. These are laws that stop companies from cheating so that they can stay the only big player. They exist to keep **competition** alive.\n\nWhy does that matter? Imagine your school has two snack stands. They fight to be the best, so one lowers its prices and the other adds tastier food. Now say the two owners secretly agree to charge the same high price. Or one owner buys the other stand and shuts it down. Now kids have nowhere else to go, so prices go up and the snacks get worse. Antitrust laws say the owners cannot do that.\n\nThe government can punish companies that break these laws, with big fines or by forcing them to split up. In the article, UPS secretly bought rivals and divided up places to sell with competitors. That is like the two snack-stand owners agreeing, \"You take the north side of the school, and I'll take the south.\" That kind of deal is the thing antitrust laws are meant to stop."
+    },
+    {
+      "name": "Benchmark",
+      "articleQuote": "That benchmark was then used to award bonuses to drivers who made more deliveries than expected.",
+      "meaning": "A **benchmark** is a standard number you measure something against. It tells you what \"good\" looks like, so you can tell whether you are ahead or behind.\n\nSay you want to get faster at running the mile. Your coach times you and finds that the fastest kid on the team runs it in 7 minutes. That 7 minutes is your benchmark. If you run it in 9 minutes, you know you are two minutes behind and have something to aim for. If you run it in 6:45, you beat the benchmark.\n\nIn the article, UPS sent observers with stopwatches to time drivers on their routes. From those times, the company worked out an \"ideal performance\" for each trip. That ideal time was the benchmark. Drivers who beat it earned bonuses. Benchmarks are everywhere, from test scores to a company's sales. They are useful, but they can also push people to hurry, so a good benchmark has to be fair."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did James Casey spend his Sundays doing?",
+      "options": [
+        "Writing his memoirs",
+        "Driving delivery routes and comparing his times with expected times",
+        "Visiting rival companies",
+        "Resting at home"
+      ],
+      "answerIndex": 1,
+      "explanation": "He seems to have had no interests besides his work, so he drove delivery routes in his Packard and timed himself."
+    },
+    {
+      "question": "How did Casey make delivery routes more efficient in his first business?",
+      "options": [
+        "He had stores send all their items to a central place to be sorted by destination",
+        "He hired more messengers to carry one item each",
+        "He raised the price of every trip",
+        "He stopped delivering to far-away houses"
+      ],
+      "answerIndex": 0,
+      "explanation": "Sorting everything in one place meant fewer, better-planned trips."
+    },
+    {
+      "question": "Why did UPS load its trucks in reverse order of delivery?",
+      "options": [
+        "So the heaviest boxes were at the back",
+        "So drivers would not waste time searching for the right item",
+        "So customers could pick their own packages",
+        "So the trucks would be easier to clean"
+      ],
+      "answerIndex": 1,
+      "explanation": "The last package delivered goes in first, so each stop's package is easy to grab."
+    },
+    {
+      "question": "Which sentence uses the word \"fledgling\" correctly?",
+      "options": [
+        "The fledgling company had just opened and had only two workers.",
+        "The fledgling mountain had stood for a million years.",
+        "He ate a fledgling sandwich for lunch.",
+        "The fledgling sun was the oldest star in the sky."
+      ],
+      "answerIndex": 0,
+      "explanation": "Fledgling means new and just starting out, like a brand-new company."
+    },
+    {
+      "question": "According to the article, what did UPS do that broke antitrust laws?",
+      "options": [
+        "It delivered packages too slowly",
+        "It paid its drivers too much",
+        "It secretly bought up rivals and made deals with competitors to carve up markets",
+        "It refused to sell packages to retailers"
+      ],
+      "answerIndex": 2,
+      "explanation": "These moves reduced competition, which antitrust laws are meant to protect."
+    }
+  ]
+}

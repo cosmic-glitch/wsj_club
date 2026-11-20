@@ -1,0 +1,417 @@
+[
+  {
+    "k": "relentless",
+    "t": "relentless",
+    "kind": "vocab",
+    "pron": "rih-LENT-less",
+    "forms": [
+      "relentless"
+    ],
+    "text": "Relentless means never easing up or giving up. Here, Casey kept looking for better ways to deliver packages, again and again.",
+    "audio": true
+  },
+  {
+    "k": "fledgling",
+    "t": "fledgling",
+    "kind": "vocab",
+    "pron": "FLEJ-ling",
+    "forms": [
+      "fledgling"
+    ],
+    "text": "Fledgling means new and just starting out. A fledgling is also a young bird that has just grown its feathers. Here, Casey's little messenger service was only a beginning.",
+    "audio": true
+  },
+  {
+    "k": "poach",
+    "t": "poach",
+    "kind": "vocab",
+    "pron": "POHCH",
+    "forms": [
+      "poach"
+    ],
+    "text": "To poach is to sneakily lure away something that belongs to someone else, like a customer. Casey's long contracts made it hard for rivals to do that.",
+    "audio": true
+  },
+  {
+    "k": "biographer",
+    "t": "biographer",
+    "kind": "word",
+    "forms": [
+      "biographer"
+    ],
+    "text": "A biographer is a writer who tells the story of a real person's life.",
+    "audio": true
+  },
+  {
+    "k": "reclusive",
+    "t": "reclusive",
+    "kind": "word",
+    "forms": [
+      "reclusive"
+    ],
+    "text": "Reclusive means preferring to be alone and staying out of public view. Casey rarely talked to reporters.",
+    "audio": true
+  },
+  {
+    "k": "memoirs",
+    "t": "memoirs",
+    "kind": "word",
+    "forms": [
+      "memoirs"
+    ],
+    "text": "Memoirs are a book where someone writes about their own life. Casey wrote none.",
+    "audio": true
+  },
+  {
+    "k": "doggedly",
+    "t": "doggedly",
+    "kind": "word",
+    "forms": [
+      "doggedly"
+    ],
+    "text": "Doggedly means in a stubborn way that does not quit, like a dog that will not let go of a stick. The biographer had to keep searching for facts.",
+    "audio": true
+  },
+  {
+    "k": "globalisation",
+    "t": "globalisation",
+    "kind": "word",
+    "forms": [
+      "globalisation"
+    ],
+    "text": "Globalisation is the way countries around the world become more connected by trading goods, sharing ideas and traveling. Shipping makes it possible.",
+    "audio": true
+  },
+  {
+    "k": "fortune-500",
+    "t": "Fortune 500",
+    "kind": "name",
+    "forms": [
+      "Fortune 500"
+    ],
+    "text": "The Fortune 500 is a yearly list of the 500 biggest companies in the United States, ranked by how much money they bring in.",
+    "audio": true
+  },
+  {
+    "k": "messenger-service",
+    "t": "messenger service",
+    "kind": "phrase",
+    "forms": [
+      "messenger service"
+    ],
+    "text": "A messenger service is a business that carries packages and notes from one place to another.",
+    "audio": true
+  },
+  {
+    "k": "retailers",
+    "t": "retailers",
+    "kind": "word",
+    "forms": [
+      "retailers"
+    ],
+    "text": "Retailers are businesses that sell things to the public, like stores. Casey delivered what department stores sold.",
+    "audio": true
+  },
+  {
+    "k": "turn-a-profit",
+    "t": "turn a profit",
+    "kind": "phrase",
+    "forms": [
+      "turn a profit"
+    ],
+    "text": "To turn a profit means to earn more money than you spend. With each trip paying only a few cents, that was hard.",
+    "audio": true
+  },
+  {
+    "k": "consolidate",
+    "t": "consolidate",
+    "kind": "word",
+    "forms": [
+      "consolidate"
+    ],
+    "text": "To consolidate is to combine many small things into one bigger one. Casey gathered all the packages in one place instead of making many separate trips.",
+    "audio": true
+  },
+  {
+    "k": "premium",
+    "t": "premium",
+    "kind": "word",
+    "forms": [
+      "premium"
+    ],
+    "text": "A premium is an extra amount of money paid for something special. Customers paid more for same-day delivery.",
+    "audio": true
+  },
+  {
+    "k": "volume",
+    "t": "volume",
+    "kind": "word",
+    "forms": [
+      "volume"
+    ],
+    "text": "Here, volume means the amount of work, or how many packages there are to deliver. It does not mean loudness.",
+    "audio": true
+  },
+  {
+    "k": "surety",
+    "t": "surety",
+    "kind": "word",
+    "forms": [
+      "surety"
+    ],
+    "text": "Surety is certainty or safety. Long contracts gave Casey the sure knowledge that money would keep coming in.",
+    "audio": true
+  },
+  {
+    "k": "rivals",
+    "t": "rivals",
+    "kind": "word",
+    "forms": [
+      "rivals",
+      "rival"
+    ],
+    "text": "Rivals are people or companies that compete with you for the same customers or prizes.",
+    "audio": true
+  },
+  {
+    "k": "scrabbling",
+    "t": "scrabbling",
+    "kind": "word",
+    "forms": [
+      "scrabbling"
+    ],
+    "text": "Scrabbling means hunting around in a hurry and clumsily, like looking through a messy bag for your keys.",
+    "audio": true
+  },
+  {
+    "k": "benchmark",
+    "t": "benchmark",
+    "kind": "word",
+    "forms": [
+      "benchmark"
+    ],
+    "text": "A benchmark is a standard number you compare against to see whether you are ahead or behind.",
+    "audio": true
+  },
+  {
+    "k": "bonuses",
+    "t": "bonuses",
+    "kind": "word",
+    "forms": [
+      "bonuses"
+    ],
+    "text": "A bonus is extra pay as a reward for good work.",
+    "audio": true
+  },
+  {
+    "k": "commonplace",
+    "t": "commonplace",
+    "kind": "word",
+    "forms": [
+      "commonplace"
+    ],
+    "text": "Commonplace means usual and seen everywhere. Timing workers is now commonplace at many companies.",
+    "audio": true
+  },
+  {
+    "k": "automation",
+    "t": "automation",
+    "kind": "word",
+    "forms": [
+      "automation"
+    ],
+    "text": "Automation means using machines to do work that people used to do by hand, like sorting packages.",
+    "audio": true
+  },
+  {
+    "k": "unapologetic",
+    "t": "unapologetic",
+    "kind": "word",
+    "forms": [
+      "unapologetic"
+    ],
+    "text": "Unapologetic means not feeling sorry or ashamed. Casey made no excuses for wanting efficient ways of working.",
+    "audio": true
+  },
+  {
+    "k": "eradicated",
+    "t": "eradicated",
+    "kind": "word",
+    "forms": [
+      "eradicated"
+    ],
+    "text": "Eradicated means completely wiped out, destroyed so nothing is left.",
+    "audio": true
+  },
+  {
+    "k": "hounded",
+    "t": "hounded",
+    "kind": "word",
+    "forms": [
+      "hounded"
+    ],
+    "text": "To hound someone is to chase and bother them without stopping, like a hunting hound. UPS kept bothering its challengers.",
+    "audio": true
+  },
+  {
+    "k": "umpteen",
+    "t": "umpteen",
+    "kind": "word",
+    "forms": [
+      "umpteen"
+    ],
+    "text": "Umpteen means too many to count, a very large number.",
+    "audio": true
+  },
+  {
+    "k": "flouted",
+    "t": "flouted",
+    "kind": "word",
+    "forms": [
+      "flouted"
+    ],
+    "text": "To flout a rule is to openly ignore or break it. Here, UPS broke the rules of fair competition.",
+    "audio": true
+  },
+  {
+    "k": "antitrust",
+    "t": "antitrust laws",
+    "kind": "phrase",
+    "forms": [
+      "antitrust laws",
+      "antitrust"
+    ],
+    "text": "Antitrust laws stop companies from cheating to wipe out all their competition, so shoppers keep having choices.",
+    "audio": true
+  },
+  {
+    "k": "exclusive-contracts",
+    "t": "exclusive contracts",
+    "kind": "phrase",
+    "forms": [
+      "exclusive contracts"
+    ],
+    "text": "An exclusive contract is a deal where a customer promises to use only one company. That locks out the company's rivals.",
+    "audio": true
+  },
+  {
+    "k": "carve-up",
+    "t": "carve up",
+    "kind": "phrase",
+    "forms": [
+      "carve up"
+    ],
+    "text": "To carve up markets means to divide them up, like slicing a cake, so each company gets its own area and they do not compete.",
+    "audio": true
+  },
+  {
+    "k": "exemptions",
+    "t": "exemptions",
+    "kind": "word",
+    "forms": [
+      "exemptions"
+    ],
+    "text": "An exemption is a special permission to skip a rule that others must follow.",
+    "audio": true
+  },
+  {
+    "k": "ahead-of-his-time",
+    "t": "ahead of his time",
+    "kind": "phrase",
+    "forms": [
+      "ahead of his time"
+    ],
+    "text": "Ahead of his time means having ideas or methods that other people would only use much later.",
+    "audio": true
+  },
+  {
+    "k": "taskmaster",
+    "t": "taskmaster",
+    "kind": "word",
+    "forms": [
+      "taskmaster"
+    ],
+    "text": "A taskmaster is a boss who demands a lot of hard work.",
+    "audio": true
+  },
+  {
+    "k": "ruthless",
+    "t": "ruthless",
+    "kind": "word",
+    "forms": [
+      "ruthless"
+    ],
+    "text": "Ruthless means harsh and without pity, willing to hurt others to win.",
+    "audio": true
+  },
+  {
+    "k": "de-rigueur",
+    "t": "de rigueur",
+    "kind": "phrase",
+    "forms": [
+      "de rigueur"
+    ],
+    "text": "De rigueur is French for expected and required by current fashion or custom. Here, it means a ruthless attitude had become the normal thing in business.",
+    "audio": true
+  },
+  {
+    "k": "entrepreneurs",
+    "t": "entrepreneurs",
+    "kind": "word",
+    "forms": [
+      "entrepreneurs"
+    ],
+    "text": "Entrepreneurs are people who start their own businesses.",
+    "audio": true
+  },
+  {
+    "k": "silicon-valley",
+    "t": "Silicon Valley",
+    "kind": "name",
+    "forms": [
+      "Silicon Valley"
+    ],
+    "text": "Silicon Valley is the area in California where many famous technology companies began.",
+    "audio": true
+  },
+  {
+    "k": "packard",
+    "t": "Packard",
+    "kind": "name",
+    "forms": [
+      "Packard"
+    ],
+    "text": "Packard was a company that made fancy cars in the early 1900s.",
+    "audio": true
+  },
+  {
+    "k": "amazon",
+    "t": "Amazon",
+    "kind": "name",
+    "forms": [
+      "Amazon"
+    ],
+    "text": "Amazon is a huge company that sells almost everything online and delivers it to homes.",
+    "audio": true
+  },
+  {
+    "k": "new-yorker",
+    "t": "The New Yorker",
+    "kind": "name",
+    "forms": [
+      "New Yorker"
+    ],
+    "text": "The New Yorker is a well-known American magazine.",
+    "audio": true
+  },
+  {
+    "k": "ups",
+    "t": "UPS",
+    "kind": "name",
+    "forms": [
+      "UPS"
+    ],
+    "text": "UPS stands for United Parcel Service, a company famous for its brown trucks that deliver packages.",
+    "audio": true
+  }
+]
