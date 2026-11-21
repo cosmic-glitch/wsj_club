@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-21",
+  "title": "Why there are so many bizarre national days",
+  "articleUrl": "https://www.economist.com/culture/2026/11/19/why-there-are-so-many-bizarre-national-days",
+  "articlePageUrl": "/articles/junior/2026-11-21.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "frivolous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "FRIV-uh-luss",
+      "articleQuote": "When Father’s Day emerged in the early 20th century people complained it was a frivolous gimmick.",
+      "meaning": "Something frivolous is silly and not serious or important. Here, people long ago thought Father's Day was a waste of time, just a fun trick. The word can also describe spending money on things you don't need.",
+      "examples": [
+        "She thought a third pair of sparkly sneakers was a frivolous purchase.",
+        "The teacher said the class should not waste time on frivolous arguments about who sat where."
+      ]
+    },
+    {
+      "word": "niche",
+      "partOfSpeech": "adjective",
+      "pronunciation": "NEESH",
+      "articleQuote": "They certainly seem easier to celebrate than some of the more niche occasions.",
+      "meaning": "Something niche is meant for a small, special group of people, not for everyone. Here, the writer means holidays so unusual that only a few people would care about them. Niche can also be a noun, meaning a small spot or role that fits something just right.",
+      "examples": [
+        "Our school's juggling club is pretty niche, since only five kids joined.",
+        "The store sells niche books about rare birds that most people never read."
+      ]
+    },
+    {
+      "word": "anoint",
+      "partOfSpeech": "verb",
+      "pronunciation": "uh-NOYNT",
+      "articleQuote": "Who is anointing all these days—and why?",
+      "meaning": "To anoint someone or something is to choose it and give it a special title or honor. Here, the writer asks who gets to pick and name all these holidays. The word also has an old meaning: to pour oil on a person in a ceremony.",
+      "examples": [
+        "The class chose to anoint Maya as team captain after she won the vote.",
+        "Fans were quick to anoint the new player as the next big star."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Federal holiday",
+      "articleQuote": "The last time a federal holiday was made in America was in 2021, when Joe Biden formalised Juneteenth to commemorate the end of slavery.",
+      "meaning": "A **federal holiday** is an official day off created by the national government. In the United States, Congress passes a law and the president signs it. Federal workers get the day off, and so do many schools and banks.\n\nThink about the rules at your school. If the principal says there is no school on Friday, that is official. Everyone follows it. But if a kid announces at lunch that Friday is \"National Pizza Day,\" nothing changes. Nobody gets a day off.\n\nThe article shows both kinds. Juneteenth is a federal holiday, because the government made it official in 2021. Silly days like National Button Day are not. A company or a person simply made them up, and no law backs them. Real holidays are rare and take a lot of work to create. That is why there are only a few federal holidays but hundreds of made-up ones."
+    },
+    {
+      "name": "Marketing",
+      "articleQuote": "National Day Calendar helps brands advertise relevant days through their website, social channels and media such as television and newspapers.",
+      "meaning": "**Marketing** is everything a company does to get people to notice and want what it sells. Ads, posts, and special events are all marketing.\n\nImagine you run a lemonade stand. You could just wait for customers. Or you could make a sign that says \"Today is National Lemonade Day! Half price!\" Now people walking by have a reason to stop, and you sell more lemonade. You marketed your drink.\n\nThat is why the article says companies suggest new days to boost sales. A pizza company that gets \"National Pizza Day\" on the calendar gets free attention every year, as people post about pizza. The day looks like a fun celebration, but it can also be an ad. When you see a surprising holiday online, it helps to ask who benefits from it."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Who approves a proper national holiday in America?",
+      "options": [
+        "A company that sells calendars",
+        "The government",
+        "Any person who posts online",
+        "The students at a school"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says proper national celebrations are approved by governments, while goofy days are easier to create."
+    },
+    {
+      "question": "What is National Day Calendar, according to its founder?",
+      "options": [
+        "A part of the United Nations",
+        "A federal office that makes holidays",
+        "Something like a Wikipedia for national days",
+        "A charity that helps farmers"
+      ],
+      "answerIndex": 2,
+      "explanation": "Marlo Anderson says it acts like a Wikipedia for national days, and anyone can submit a day for free."
+    },
+    {
+      "question": "Why do companies often suggest new days?",
+      "options": [
+        "To get extra days off for workers",
+        "To boost their sales",
+        "To change the real calendar",
+        "To stop people from posting online"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says new days are often suggested by charities or by companies seeking to boost sales."
+    },
+    {
+      "question": "Which sentence uses the word \"frivolous\" correctly?",
+      "options": [
+        "The frivolous storm knocked down three trees.",
+        "He thought a hat with a tiny propeller was a frivolous thing to buy.",
+        "The frivolous math test was very long and hard.",
+        "She was frivolous at running for eight hours straight."
+      ],
+      "answerIndex": 1,
+      "explanation": "Frivolous means silly and not important, like a hat with a propeller."
+    },
+    {
+      "question": "What did Dan Brotzel do on National Cabbage Day?",
+      "options": [
+        "He cooked a big cabbage soup",
+        "He interviewed a hermit",
+        "He stared very intently at cabbage for a while",
+        "He planted cabbages in a garden"
+      ],
+      "answerIndex": 2,
+      "explanation": "He tried observing a silly holiday every day for a year; the hermit interview was for National Hermit Day."
+    }
+  ]
+}
