@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-21",
+  "title": "Eight amazing places to visit around the world",
+  "articleUrl": "https://www.timeforkids.com/g2/worlds-greatest-places-2026-g2/",
+  "articlePageUrl": "/articles/kids/2026-11-21.html",
+  "voiceQuiz": true,
+  "source": "TIME for Kids",
+  "vocab": [
+    {
+      "word": "ancient",
+      "partOfSpeech": "adjective",
+      "pronunciation": "AYN-shunt",
+      "articleQuote": "See 7,000 years of ancient history, all in one place.",
+      "meaning": "Ancient means very, very old. It is used for things from a super long time ago, long before your grandparents were born. In the article, ancient history means the story of people who lived thousands of years ago.",
+      "examples": [
+        "We saw an ancient tree that is older than our whole town.",
+        "The museum has ancient pots that people made a very long time ago."
+      ]
+    },
+    {
+      "word": "extinct",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ik-STINGKT",
+      "articleQuote": "They depict animals that are extinct, or no longer exist.",
+      "meaning": "When a kind of animal is extinct, there are none left alive anywhere. They are gone for good. In the article, the rock carvings show animals that are extinct, so nobody can see them alive today.",
+      "examples": [
+        "Dinosaurs are extinct, so we can only see their bones in a museum.",
+        "My book has a picture of a big, hairy elephant that is now extinct."
+      ]
+    },
+    {
+      "word": "preserved",
+      "partOfSpeech": "verb",
+      "pronunciation": "pri-ZURVD",
+      "articleQuote": "They’ve been preserved, so you can get up close.",
+      "meaning": "If something is preserved, it has been kept safe so it does not change or fall apart. People can look at it for a very long time. In the article, the animals at the museum have been preserved, so visitors can see them up close.",
+      "examples": [
+        "Grandma preserved my baby shoes in a box, and they still look new.",
+        "We preserved a pretty leaf by pressing it flat inside a heavy book."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Pharaoh",
+      "articleQuote": "It has every item found in King Tut’s tomb.",
+      "meaning": "The article tells about King Tut. He was a pharaoh. A pharaoh was the king of ancient Egypt. That was a land beside the Nile River, more than 3,000 years ago.\n\nA pharaoh was a bit like a king in a storybook. He was the leader of the whole land. People thought he was very special. When a pharaoh died, his family put him in a tomb, which is a special place made just for him. They filled it with treasures, like gold and fancy furniture.\n\nThe pharaohs also had the giant pyramids built. The Pyramids of Giza, near the museum in the article, are some of them. Each pyramid was built to hold a pharaoh.\n\nSo a pharaoh was the king of ancient Egypt, and his treasures help us learn how people lived long ago."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What can you see at the Grand Egyptian Museum?",
+      "options": [
+        "Every item found in King Tut’s tomb",
+        "Real live lions and giraffes",
+        "A giant wave pool",
+        "A glass bridge"
+      ],
+      "answerIndex": 0,
+      "explanation": "The museum has every item found in King Tut’s tomb. The Pyramids of Giza are nearby."
+    },
+    {
+      "question": "Who makes the waves at Surf Abu Dhabi?",
+      "options": [
+        "The wind",
+        "A machine",
+        "The ocean tide",
+        "Sea creatures"
+      ],
+      "answerIndex": 1,
+      "explanation": "The waves at Surf Abu Dhabi are made by a machine. It is the world’s biggest wave pool."
+    },
+    {
+      "question": "What is special about the Art Zoo Museum in Amsterdam?",
+      "options": [
+        "It has a glass floor high in the sky",
+        "It has a pool for surfers",
+        "It is full of animals that died long ago and were preserved",
+        "It lets you swim with fish"
+      ],
+      "answerIndex": 2,
+      "explanation": "The Art Zoo Museum is not a real zoo. It is full of creatures that have been preserved, so you can see them up close."
+    },
+    {
+      "question": "The rock carvings in Australia show animals that are extinct. What does extinct mean?",
+      "options": [
+        "Very small",
+        "Very loud",
+        "Living in the water",
+        "None are left alive anywhere"
+      ],
+      "answerIndex": 3,
+      "explanation": "Extinct means there are no more of that kind of animal alive anywhere."
+    },
+    {
+      "question": "What was a pharaoh?",
+      "options": [
+        "The king of ancient Egypt",
+        "A kind of mountain bike",
+        "A famous surfer",
+        "A sea creature"
+      ],
+      "answerIndex": 0,
+      "explanation": "A pharaoh was the king of ancient Egypt. King Tut was one."
+    }
+  ]
+}

@@ -1,0 +1,476 @@
+[
+  {
+    "k": "ancient",
+    "t": "ancient",
+    "kind": "vocab",
+    "pron": "AYN-shunt",
+    "forms": [
+      "ancient"
+    ],
+    "text": "Ancient means very, very old. It is from a super long time ago.",
+    "audio": true
+  },
+  {
+    "k": "extinct",
+    "t": "extinct",
+    "kind": "vocab",
+    "pron": "ik-STINGKT",
+    "forms": [
+      "extinct"
+    ],
+    "text": "Extinct means none are left alive anywhere. They are gone for good.",
+    "audio": true
+  },
+  {
+    "k": "preserved",
+    "t": "preserved",
+    "kind": "vocab",
+    "pron": "pri-ZURVD",
+    "forms": [
+      "preserved"
+    ],
+    "text": "Preserved means kept safe so it does not change or fall apart.",
+    "audio": true
+  },
+  {
+    "k": "time",
+    "t": "TIME",
+    "kind": "name",
+    "forms": [
+      "TIME"
+    ],
+    "text": "TIME is a magazine and website with news stories. TIME for Kids is the kids’ version.",
+    "audio": true
+  },
+  {
+    "k": "adventure",
+    "t": "adventure",
+    "kind": "word",
+    "forms": [
+      "adventure"
+    ],
+    "text": "An adventure is an exciting trip where you try new things.",
+    "audio": true
+  },
+  {
+    "k": "explore",
+    "t": "explore",
+    "kind": "word",
+    "forms": [
+      "explore"
+    ],
+    "text": "To explore is to travel around a place to find out what is there.",
+    "audio": true
+  },
+  {
+    "k": "grand-egyptian-museum",
+    "t": "Grand Egyptian Museum",
+    "kind": "name",
+    "forms": [
+      "Grand Egyptian Museum"
+    ],
+    "text": "This is a huge new museum in Egypt. It shows treasures from ancient Egypt.",
+    "audio": true
+  },
+  {
+    "k": "cairo",
+    "t": "Cairo",
+    "kind": "name",
+    "forms": [
+      "Cairo"
+    ],
+    "text": "Cairo is the biggest city in Egypt.",
+    "audio": true
+  },
+  {
+    "k": "egypt",
+    "t": "Egypt",
+    "kind": "name",
+    "forms": [
+      "Egypt"
+    ],
+    "text": "Egypt is a country in Africa. It is very hot and has the Nile River.",
+    "audio": true
+  },
+  {
+    "k": "treasures",
+    "t": "treasures",
+    "kind": "word",
+    "forms": [
+      "treasures"
+    ],
+    "text": "Treasures are special things that are worth a lot or are very old.",
+    "audio": true
+  },
+  {
+    "k": "king-tut",
+    "t": "King Tut",
+    "kind": "name",
+    "forms": [
+      "King Tut’s",
+      "King Tut"
+    ],
+    "text": "King Tut was a young king of ancient Egypt, a very long time ago.",
+    "audio": true
+  },
+  {
+    "k": "tomb",
+    "t": "tomb",
+    "kind": "word",
+    "forms": [
+      "tomb"
+    ],
+    "text": "A tomb is a special place where a person is laid to rest. Kings in Egypt had grand ones.",
+    "audio": true
+  },
+  {
+    "k": "pyramids-of-giza",
+    "t": "Pyramids of Giza",
+    "kind": "name",
+    "forms": [
+      "Pyramids of Giza"
+    ],
+    "text": "These are giant stone buildings in Egypt shaped like triangles. They are thousands of years old.",
+    "audio": true
+  },
+  {
+    "k": "surf-abu-dhabi",
+    "t": "Surf Abu Dhabi",
+    "kind": "name",
+    "forms": [
+      "Surf Abu Dhabi"
+    ],
+    "text": "This is a place where people surf in a giant pool with waves made by a machine.",
+    "audio": true
+  },
+  {
+    "k": "united-arab-emirates",
+    "t": "United Arab Emirates",
+    "kind": "name",
+    "forms": [
+      "United Arab Emirates"
+    ],
+    "text": "The United Arab Emirates is a hot country in Asia. Abu Dhabi is a city there.",
+    "audio": true
+  },
+  {
+    "k": "wave-pool",
+    "t": "wave pool",
+    "kind": "phrase",
+    "forms": [
+      "wave pool"
+    ],
+    "text": "A wave pool is a big pool where a machine makes waves, like at the beach.",
+    "audio": true
+  },
+  {
+    "k": "kelly-slater",
+    "t": "Kelly Slater",
+    "kind": "name",
+    "forms": [
+      "Kelly Slater"
+    ],
+    "text": "Kelly Slater is a famous surfer. He won many contests.",
+    "audio": true
+  },
+  {
+    "k": "pro",
+    "t": "pro",
+    "kind": "word",
+    "forms": [
+      "Pro"
+    ],
+    "text": "Pro is short for professional. A pro does something as a job, and is very good at it.",
+    "audio": true
+  },
+  {
+    "k": "experienced",
+    "t": "experienced",
+    "kind": "word",
+    "forms": [
+      "Experienced"
+    ],
+    "text": "Experienced means has done something many times and is good at it.",
+    "audio": true
+  },
+  {
+    "k": "beginners",
+    "t": "beginners",
+    "kind": "word",
+    "forms": [
+      "Beginners"
+    ],
+    "text": "Beginners are people just starting to learn something new.",
+    "audio": true
+  },
+  {
+    "k": "art-zoo-museum",
+    "t": "Art Zoo Museum",
+    "kind": "name",
+    "forms": [
+      "Art Zoo Museum"
+    ],
+    "text": "This is a museum in Amsterdam that shows animals instead of paintings.",
+    "audio": true
+  },
+  {
+    "k": "amsterdam",
+    "t": "Amsterdam",
+    "kind": "name",
+    "forms": [
+      "Amsterdam"
+    ],
+    "text": "Amsterdam is the biggest city in the Netherlands.",
+    "audio": true
+  },
+  {
+    "k": "netherlands",
+    "t": "Netherlands",
+    "kind": "name",
+    "forms": [
+      "Netherlands"
+    ],
+    "text": "The Netherlands is a small country in Europe.",
+    "audio": true
+  },
+  {
+    "k": "t-rex",
+    "t": "T. Rex",
+    "kind": "name",
+    "forms": [
+      "T. Rex"
+    ],
+    "text": "T. Rex was a huge, meat-eating dinosaur. It lived long ago.",
+    "audio": true
+  },
+  {
+    "k": "huajiang-canyon-bridge",
+    "t": "Huajiang Canyon Bridge",
+    "kind": "name",
+    "forms": [
+      "Huajiang Canyon Bridge"
+    ],
+    "text": "This is a very tall bridge in China. It goes across a deep canyon.",
+    "audio": true
+  },
+  {
+    "k": "china",
+    "t": "China",
+    "kind": "name",
+    "forms": [
+      "China"
+    ],
+    "text": "China is a very big country in Asia.",
+    "audio": true
+  },
+  {
+    "k": "bridge-deck",
+    "t": "bridge deck",
+    "kind": "phrase",
+    "forms": [
+      "bridge deck"
+    ],
+    "text": "The deck is the flat part of a bridge that you walk or drive on.",
+    "audio": true
+  },
+  {
+    "k": "canyon",
+    "t": "canyon",
+    "kind": "word",
+    "forms": [
+      "canyon"
+    ],
+    "text": "A canyon is a deep, narrow valley with steep sides.",
+    "audio": true
+  },
+  {
+    "k": "el-camino-de-costa-rica",
+    "t": "El Camino de Costa Rica",
+    "kind": "name",
+    "forms": [
+      "El Camino de Costa Rica"
+    ],
+    "text": "This is a long hiking path across the country of Costa Rica.",
+    "audio": true
+  },
+  {
+    "k": "camino",
+    "t": "camino",
+    "kind": "word",
+    "forms": [
+      "camino"
+    ],
+    "text": "Camino is a Spanish word. It means path.",
+    "audio": true
+  },
+  {
+    "k": "costa-rica",
+    "t": "Costa Rica",
+    "kind": "name",
+    "forms": [
+      "Costa Rica"
+    ],
+    "text": "Costa Rica is a country with rainforests. It is in Central America.",
+    "audio": true
+  },
+  {
+    "k": "hikers",
+    "t": "hikers",
+    "kind": "word",
+    "forms": [
+      "Hikers"
+    ],
+    "text": "Hikers are people who go on long walks outdoors.",
+    "audio": true
+  },
+  {
+    "k": "rainforests",
+    "t": "rainforests",
+    "kind": "word",
+    "forms": [
+      "rainforests"
+    ],
+    "text": "A rainforest is a thick forest where it rains a lot.",
+    "audio": true
+  },
+  {
+    "k": "iguanas",
+    "t": "iguanas",
+    "kind": "word",
+    "forms": [
+      "iguanas"
+    ],
+    "text": "An iguana is a big lizard. Many are green.",
+    "audio": true
+  },
+  {
+    "k": "murujuga",
+    "t": "Murujuga Cultural Landscape",
+    "kind": "name",
+    "forms": [
+      "Murujuga Cultural Landscape"
+    ],
+    "text": "Murujuga is a place in Australia with many ancient rock pictures.",
+    "audio": true
+  },
+  {
+    "k": "australia",
+    "t": "Australia",
+    "kind": "name",
+    "forms": [
+      "Australia"
+    ],
+    "text": "Australia is a country and an island. It has kangaroos.",
+    "audio": true
+  },
+  {
+    "k": "rock-carvings",
+    "t": "rock carvings",
+    "kind": "phrase",
+    "forms": [
+      "rock carvings"
+    ],
+    "text": "Rock carvings are pictures that people cut into stone.",
+    "audio": true
+  },
+  {
+    "k": "depict",
+    "t": "depict",
+    "kind": "word",
+    "forms": [
+      "depict"
+    ],
+    "text": "To depict something is to show it in a picture.",
+    "audio": true
+  },
+  {
+    "k": "ratnange",
+    "t": "Ratnange Trail Center",
+    "kind": "name",
+    "forms": [
+      "Ratnange Trail Center"
+    ],
+    "text": "This is a place in Nepal with trails for mountain bikes.",
+    "audio": true
+  },
+  {
+    "k": "nepal",
+    "t": "Nepal",
+    "kind": "name",
+    "forms": [
+      "Nepal"
+    ],
+    "text": "Nepal is a country in Asia with very tall mountains.",
+    "audio": true
+  },
+  {
+    "k": "mount-everest",
+    "t": "Mount Everest",
+    "kind": "name",
+    "forms": [
+      "Mount Everest"
+    ],
+    "text": "Mount Everest is the tallest mountain in the world.",
+    "audio": true
+  },
+  {
+    "k": "trails",
+    "t": "trails",
+    "kind": "word",
+    "forms": [
+      "trails"
+    ],
+    "text": "A trail is a path through the woods or hills.",
+    "audio": true
+  },
+  {
+    "k": "reefline",
+    "t": "Reefline",
+    "kind": "name",
+    "forms": [
+      "Reefline"
+    ],
+    "text": "Reefline is an art park under the sea. People swim by the statues.",
+    "audio": true
+  },
+  {
+    "k": "sculpture",
+    "t": "sculpture",
+    "kind": "word",
+    "forms": [
+      "sculpture"
+    ],
+    "text": "A sculpture is a statue or shape made from stone, metal, or clay.",
+    "audio": true
+  },
+  {
+    "k": "snorkel",
+    "t": "snorkel",
+    "kind": "word",
+    "forms": [
+      "snorkel"
+    ],
+    "text": "To snorkel is to swim with a mask and a tube to see under water.",
+    "audio": true
+  },
+  {
+    "k": "miami-beach",
+    "t": "Miami Beach",
+    "kind": "name",
+    "forms": [
+      "Miami Beach"
+    ],
+    "text": "Miami Beach is a beach city in Florida.",
+    "audio": true
+  },
+  {
+    "k": "mermaid",
+    "t": "mermaid",
+    "kind": "word",
+    "forms": [
+      "mermaid"
+    ],
+    "text": "A mermaid is an imaginary sea creature. She has a fish tail.",
+    "audio": true
+  }
+]
