@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-21",
+  "title": "AI may have solved the most important problem in mathematics",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/11/20/ai-may-have-solved-the-most-important-problem-in-mathematics",
+  "articlePageUrl": "/articles/2026-11-21.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "betray",
+      "partOfSpeech": "verb",
+      "pronunciation": "bih-TRAY",
+      "articleQuote": "the seeming chaos of the prime numbers betrayed a secret organising principle",
+      "meaning": "To betray means to give something away without meaning to, so that a hidden truth shows through. Most people know the word as turning against a friend or breaking a promise, but it has a second sense: a nervous shake in someone's voice betrays their fear, and a smudge of chocolate betrays who ate the cake. Here Riemann suspected that the apparent randomness of prime numbers was giving away a hidden pattern underneath.",
+      "examples": [
+        "Her trembling hands betrayed how nervous she was before the speech.",
+        "The accent in his English betrayed that he had grown up in Scotland."
+      ]
+    },
+    {
+      "word": "scads",
+      "partOfSpeech": "noun",
+      "pronunciation": "SKADZ",
+      "articleQuote": "Scads of other mathematical proofs and hypotheses have been proposed",
+      "meaning": "Scads means a very large number, a whole heap. It is informal and usually plural, followed by 'of': scads of homework, scads of emails. It is a friendly, slightly playful alternative to 'lots', and a magazine like The Economist uses it to stress how many other results lean on the Riemann hypothesis, like a huge pile of dominoes waiting behind one.",
+      "examples": [
+        "After the snowstorm there were scads of cars stuck on the highway.",
+        "She has scads of friends, so her birthday party is always packed."
+      ]
+    },
+    {
+      "word": "flowery",
+      "partOfSpeech": "adjective",
+      "pronunciation": "FLOW-er-ee",
+      "articleQuote": "Such flowery language was, however, accompanied by 17m lines of code",
+      "meaning": "Flowery describes writing or speech that is overly decorated, full of fancy images and emotional words where plain ones would do. It comes from the idea of decorating with flowers. It can be mild praise for beauty, but often it hints that the style is a bit much. Here the article contrasts Dr Alpöge's gushing words about Claude dancing and sparkling with the cold, exact computer code that backs up his claim.",
+      "examples": [
+        "His flowery thank-you speech went on for ten minutes and said very little.",
+        "The card was full of flowery phrases about friendship and sunshine."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The Riemann hypothesis and prime numbers",
+      "articleQuote": "the Riemann hypothesis offers a bridge between many varied and seemingly disconnected mathematical subfields",
+      "meaning": "Mathematics: a **prime number** is a whole number bigger than one that can only be divided evenly by one and itself: 2, 3, 5, 7, 11, 13. Primes are the building blocks of all whole numbers, because every number can be made by multiplying primes together (12 = 2 × 2 × 3). Yet they appear without any obvious pattern. Is there a gap of 2 or of 10 before the next one? Nobody can say by looking, and they get rarer as numbers grow, but irregularly.\n\nIn 1859 Bernhard Riemann invented a mathematical machine, the **zeta function**, and guessed that it controls how primes are spread out. The **Riemann hypothesis** says that a certain family of special inputs to that machine, its \"zeros\", all line up in one tidy way. If that is true, the primes are far less random than they look: they follow a hidden rhythm, and we know how far they can stray from it. The guess is 167 years old and has never been proved.\n\nWhy it matters: a **hypothesis** is a claim that is believed but not yet proved. Mathematicians have built many other results on the assumption that Riemann was right, so those results are only \"true if\". A proof would turn them all solid at once, like finding the foundation under a building already half built. The takeaway: one unproved claim can quietly hold up a huge part of a field, which is why settling it would matter so much."
+    },
+    {
+      "name": "Machine-checked proofs",
+      "articleQuote": "17m lines of code in Lean, a programming language that checks the logical consistency of proofs",
+      "meaning": "Logic: a **proof** is an argument where every step follows strictly from earlier steps, so the conclusion cannot be false. Normally other experts check a new proof by reading it, which is called **peer review**. That works for a few pages but is hard for something enormously long, and humans make mistakes, so famous proofs have sometimes turned out to contain gaps.\n\nA **proof assistant** such as Lean is a different kind of check. The proof is written in a strict computer language, and a small program tests that each step really follows from the rules of logic. If the program accepts it, no step has been skipped, however long the argument. The cost is that you must spell out everything, which is why this proof needs 17 million lines of code.\n\nWhy it matters: with AI now producing thousands of pages of proofs, humans cannot read them all. The article notes the claim \"has yet to be checked by his peers\", and the Lean code is what lets mathematicians test whether to trust it. A machine-checked proof also does not depend on trusting who wrote it, human or AI. The takeaway: when a machine does the discovering, the real question becomes how we verify it, and a strict checker can answer that."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why is the Riemann hypothesis considered so important?",
+      "options": [
+        "It would settle who invented prime numbers",
+        "It is connected to how prime numbers are spread out, and many other results depend on it",
+        "It is the only unsolved problem in mathematics",
+        "It was solved by Riemann in 1859"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says it is central to understanding prime numbers and that many other proofs and hypotheses only work if it is true."
+    },
+    {
+      "question": "What is a prime number?",
+      "options": [
+        "Any number larger than one hundred",
+        "A number that can only be divided evenly by one and itself",
+        "A number that is divisible by every other number",
+        "An even number"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article defines primes as numbers divisible only by one and themselves, such as 2, 3, 5 and 7."
+    },
+    {
+      "question": "Why can't we yet say the Riemann hypothesis has been solved?",
+      "options": [
+        "Anthropic withdrew the claim",
+        "Claude refused to share its work",
+        "The proof has not yet been checked by other mathematicians",
+        "Lean found an error right away"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says it is too early to claim the dominoes have fallen because Dr Alpöge's proof has yet to be checked by his peers."
+    },
+    {
+      "question": "What is the job of Lean in this story?",
+      "options": [
+        "It wrote the proof on its own",
+        "It checks that each step of a proof is logically consistent",
+        "It announces results to the public",
+        "It stores prime numbers"
+      ],
+      "answerIndex": 1,
+      "explanation": "Lean is described as a programming language that checks the logical consistency of proofs, here backed by 17m lines of code."
+    },
+    {
+      "question": "What does the earlier OpenAI result about the \"quasi-Riemann hypothesis\" show?",
+      "options": [
+        "The full hypothesis had already been proved",
+        "Claude copied OpenAI's work",
+        "AI solving a stepping stone toward Riemann was not entirely unprecedented",
+        "Mathematicians had rejected the idea"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says the result 'does not come completely out of the blue': OpenAI announced on October 6th a proof of the quasi-Riemann hypothesis, an important stepping stone."
+    }
+  ]
+}

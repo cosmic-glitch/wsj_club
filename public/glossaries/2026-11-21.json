@@ -1,0 +1,446 @@
+[
+  {
+    "k": "betray",
+    "t": "betray",
+    "kind": "vocab",
+    "pron": "bih-TRAY",
+    "forms": [
+      "betrayed"
+    ],
+    "text": "To betray here means to give away without meaning to. The seeming chaos of the primes, Riemann believed, was letting a hidden pattern show through. The more familiar sense is turning against someone who trusts you.",
+    "audio": true
+  },
+  {
+    "k": "scads",
+    "t": "scads",
+    "kind": "vocab",
+    "pron": "SKADZ",
+    "forms": [
+      "Scads"
+    ],
+    "text": "Scads is an informal word for a huge number of something. It stresses how many other mathematical results lean on the Riemann hypothesis.",
+    "audio": true
+  },
+  {
+    "k": "flowery",
+    "t": "flowery",
+    "kind": "vocab",
+    "pron": "FLOW-er-ee",
+    "forms": [
+      "flowery"
+    ],
+    "text": "Flowery means overly decorated and gushing. The article contrasts the mathematician's showy praise of Claude with the plain, exact computer code behind the claim.",
+    "audio": true
+  },
+  {
+    "k": "anthropic",
+    "t": "Anthropic",
+    "kind": "name",
+    "forms": [
+      "Anthropic"
+    ],
+    "text": "Anthropic is an American AI company that makes the Claude AI model. In the article it is also the employer of the mathematician making the claim, which is one reason experts want the proof checked independently.",
+    "audio": true
+  },
+  {
+    "k": "ipo",
+    "t": "IPO",
+    "kind": "phrase",
+    "forms": [
+      "IPO"
+    ],
+    "text": "IPO stands for initial public offering, the first time a company sells shares to the public on a stock market. The article says Anthropic's was the largest in history.",
+    "audio": true
+  },
+  {
+    "k": "claude",
+    "t": "Claude",
+    "kind": "name",
+    "forms": [
+      "Claude"
+    ],
+    "text": "Claude is the AI model built by Anthropic. Here it is credited with helping to produce a proof of the Riemann hypothesis.",
+    "audio": true
+  },
+  {
+    "k": "riemann-hypothesis",
+    "t": "Riemann hypothesis",
+    "kind": "name",
+    "forms": [
+      "Riemann hypothesis"
+    ],
+    "text": "The Riemann hypothesis is a famous guess about a mathematical function that, if true, reveals how prime numbers are spread out. It has gone unproved for 167 years.",
+    "audio": true
+  },
+  {
+    "k": "unsolved",
+    "t": "unsolved",
+    "kind": "word",
+    "forms": [
+      "unsolved"
+    ],
+    "text": "Unsolved means that nobody has yet found the answer or proof. The Riemann hypothesis is widely seen as the most important unsolved problem in mathematics.",
+    "audio": true
+  },
+  {
+    "k": "maynard",
+    "t": "James Maynard",
+    "kind": "name",
+    "forms": [
+      "James Maynard"
+    ],
+    "text": "James Maynard is a mathematician at the University of Oxford who is quoted as saying the result would be historic if it fully checks out.",
+    "audio": true
+  },
+  {
+    "k": "historic-milestone",
+    "t": "historic milestone",
+    "kind": "phrase",
+    "forms": [
+      "historic milestone"
+    ],
+    "text": "A milestone is an important marker of progress, like a stone on a road showing how far you have come. Calling it historic means it would be remembered for a long time.",
+    "audio": true
+  },
+  {
+    "k": "bernhard-riemann",
+    "t": "Bernhard Riemann",
+    "kind": "name",
+    "forms": [
+      "Bernhard Riemann",
+      "Riemann"
+    ],
+    "text": "Bernhard Riemann was a nineteenth-century German mathematician. In 1859 he introduced the function and the guess that now carry his name.",
+    "audio": true
+  },
+  {
+    "k": "zeta-function",
+    "t": "zeta function",
+    "kind": "name",
+    "forms": [
+      "zeta function"
+    ],
+    "text": "The Riemann zeta function is a mathematical machine that takes in numbers and gives numbers back. Riemann believed it was closely tied to how the primes are distributed.",
+    "audio": true
+  },
+  {
+    "k": "entity",
+    "t": "entity",
+    "kind": "word",
+    "forms": [
+      "entity"
+    ],
+    "text": "An entity is a thing that exists on its own. Calling the zeta function a new mathematical entity means Riemann had invented a fresh kind of object to study.",
+    "audio": true
+  },
+  {
+    "k": "intimately",
+    "t": "intimately",
+    "kind": "word",
+    "forms": [
+      "intimately"
+    ],
+    "text": "Intimately here means very closely. Riemann believed the zeta function and the primes were deeply and closely linked.",
+    "audio": true
+  },
+  {
+    "k": "prime-numbers",
+    "t": "prime numbers",
+    "kind": "phrase",
+    "forms": [
+      "prime numbers"
+    ],
+    "text": "Prime numbers are whole numbers above one that can be divided evenly only by one and themselves, like 2, 3, 5 and 7. They are the building blocks of all whole numbers.",
+    "audio": true
+  },
+  {
+    "k": "distribution",
+    "t": "distribution",
+    "kind": "word",
+    "forms": [
+      "distribution"
+    ],
+    "text": "Distribution means how things are spread out. For primes it means where they fall along the number line, sometimes close together and sometimes far apart.",
+    "audio": true
+  },
+  {
+    "k": "organising-principle",
+    "t": "organising principle",
+    "kind": "phrase",
+    "forms": [
+      "organising principle"
+    ],
+    "text": "An organising principle is a single idea that explains how many scattered facts fit together. Riemann hoped the primes obeyed one.",
+    "audio": true
+  },
+  {
+    "k": "bridge",
+    "t": "bridge",
+    "kind": "word",
+    "forms": [
+      "bridge"
+    ],
+    "text": "Here bridge is a figure of speech. The hypothesis links areas of mathematics that otherwise seem separate, as a bridge links two shores.",
+    "audio": true
+  },
+  {
+    "k": "subfields",
+    "t": "subfields",
+    "kind": "word",
+    "forms": [
+      "subfields"
+    ],
+    "text": "Subfields are smaller specialised branches of a bigger subject, such as number theory or geometry within mathematics.",
+    "audio": true
+  },
+  {
+    "k": "hypotheses",
+    "t": "hypotheses",
+    "kind": "word",
+    "forms": [
+      "hypotheses"
+    ],
+    "text": "A hypothesis is a claim that is suspected to be true but not yet proved. Hypotheses is the plural.",
+    "audio": true
+  },
+  {
+    "k": "dominoes-fallen",
+    "t": "the dominoes have fallen",
+    "kind": "phrase",
+    "forms": [
+      "dominoes have fallen"
+    ],
+    "text": "Dominoes falling is an image for a chain reaction. If the Riemann hypothesis is proved, all the results that depend on it would fall into place, like a row of tipped dominoes.",
+    "audio": true
+  },
+  {
+    "k": "alpoge",
+    "t": "Levent Alpöge",
+    "kind": "name",
+    "forms": [
+      "Alpöge"
+    ],
+    "text": "Levent Alpöge is the Anthropic mathematician who says he used Claude to prove the Riemann hypothesis.",
+    "audio": true
+  },
+  {
+    "k": "peers",
+    "t": "peers",
+    "kind": "word",
+    "forms": [
+      "peers"
+    ],
+    "text": "Peers are people of equal standing in a field. For a mathematician, peers are other expert mathematicians who can check a proof, which is called peer review.",
+    "audio": true
+  },
+  {
+    "k": "lends-weight",
+    "t": "lends weight to",
+    "kind": "phrase",
+    "forms": [
+      "lends weight"
+    ],
+    "text": "To lend weight to a claim is to make it more believable. His past role in real AI-assisted breakthroughs makes this claim more credible.",
+    "audio": true
+  },
+  {
+    "k": "high-profile",
+    "t": "high-profile",
+    "kind": "word",
+    "forms": [
+      "high-profile"
+    ],
+    "text": "High-profile means attracting a lot of public attention.",
+    "audio": true
+  },
+  {
+    "k": "flooded",
+    "t": "flooded the field",
+    "kind": "phrase",
+    "forms": [
+      "flooded the field"
+    ],
+    "text": "To flood a field means to fill it with a sudden large amount of something, here, a surge of AI-assisted results.",
+    "audio": true
+  },
+  {
+    "k": "open-problems",
+    "t": "open-problems",
+    "kind": "word",
+    "forms": [
+      "open-problems"
+    ],
+    "text": "An open problem is a question that mathematicians have not yet answered. Long-standing ones have resisted solution for years.",
+    "audio": true
+  },
+  {
+    "k": "unconventional",
+    "t": "unconventional",
+    "kind": "word",
+    "forms": [
+      "unconventional"
+    ],
+    "text": "Unconventional means different from the usual way of doing things. Announcing a result with gushing language and a huge code file broke the normal style.",
+    "audio": true
+  },
+  {
+    "k": "outpaced",
+    "t": "outpaced",
+    "kind": "word",
+    "forms": [
+      "outpaced"
+    ],
+    "text": "To outpace someone is to move faster than them and leave them behind. The mathematician says Claude was ahead of him near the end of the work.",
+    "audio": true
+  },
+  {
+    "k": "finish-line",
+    "t": "finish line",
+    "kind": "phrase",
+    "forms": [
+      "finish line"
+    ],
+    "text": "The finish line is the end of a race. Here it is a figure of speech for completing the proof.",
+    "audio": true
+  },
+  {
+    "k": "lean",
+    "t": "Lean",
+    "kind": "name",
+    "forms": [
+      "Lean"
+    ],
+    "text": "Lean is a programming language and proof assistant that checks, step by step, that a proof follows the rules of logic. If Lean accepts it, no step has been skipped.",
+    "audio": true
+  },
+  {
+    "k": "logical-consistency",
+    "t": "logical consistency",
+    "kind": "phrase",
+    "forms": [
+      "logical consistency"
+    ],
+    "text": "Logical consistency means the steps of an argument never contradict each other and each one follows from earlier steps.",
+    "audio": true
+  },
+  {
+    "k": "holds-up",
+    "t": "holds up",
+    "kind": "phrase",
+    "forms": [
+      "holds up"
+    ],
+    "text": "If something holds up, it survives testing and turns out to be right. If the proof holds up, it will have passed the experts' checks.",
+    "audio": true
+  },
+  {
+    "k": "generalised-form",
+    "t": "generalised form",
+    "kind": "phrase",
+    "forms": [
+      "generalised form"
+    ],
+    "text": "A generalised form is a bigger version of a problem that covers many cases at once. Solving it would settle the original problem and its many cousins.",
+    "audio": true
+  },
+  {
+    "k": "cracked",
+    "t": "cracked",
+    "kind": "word",
+    "forms": [
+      "cracked"
+    ],
+    "text": "To crack a problem means to finally solve something hard, like cracking a code.",
+    "audio": true
+  },
+  {
+    "k": "poring",
+    "t": "poring over",
+    "kind": "phrase",
+    "forms": [
+      "poring over"
+    ],
+    "text": "To pore over something is to study it slowly and carefully. Mathematicians will read every line of the proof over the weekend.",
+    "audio": true
+  },
+  {
+    "k": "validity",
+    "t": "validity",
+    "kind": "word",
+    "forms": [
+      "validity"
+    ],
+    "text": "Validity means whether something is correct and sound. The validity of a proof is whether its logic really holds.",
+    "audio": true
+  },
+  {
+    "k": "out-of-the-blue",
+    "t": "out of the blue",
+    "kind": "phrase",
+    "forms": [
+      "out of the blue"
+    ],
+    "text": "Out of the blue means suddenly and unexpectedly. The article says this result had precursors, so it was not a total surprise.",
+    "audio": true
+  },
+  {
+    "k": "openai",
+    "t": "OpenAI",
+    "kind": "name",
+    "forms": [
+      "OpenAI"
+    ],
+    "text": "OpenAI is another American AI company, the maker of ChatGPT.",
+    "audio": true
+  },
+  {
+    "k": "quasi-riemann",
+    "t": "quasi-Riemann hypothesis",
+    "kind": "name",
+    "forms": [
+      "quasi-Riemann hypothesis"
+    ],
+    "text": "The quasi-Riemann hypothesis is a weaker cousin of the full Riemann hypothesis. Proving it was an important step toward the full result.",
+    "audio": true
+  },
+  {
+    "k": "stepping-stone",
+    "t": "stepping stone",
+    "kind": "phrase",
+    "forms": [
+      "stepping stone"
+    ],
+    "text": "A stepping stone is a smaller achievement that helps you reach a bigger goal, like stones across a stream.",
+    "audio": true
+  },
+  {
+    "k": "keating",
+    "t": "Jonathan Keating",
+    "kind": "name",
+    "forms": [
+      "Jonathan Keating"
+    ],
+    "text": "Jonathan Keating is an Oxford mathematician who calls the new result a very big leap forward.",
+    "audio": true
+  },
+  {
+    "k": "colossal",
+    "t": "colossal",
+    "kind": "word",
+    "forms": [
+      "colossal"
+    ],
+    "text": "Colossal means enormous. Keating says the earlier quasi-Riemann result was itself a colossal shock.",
+    "audio": true
+  },
+  {
+    "k": "orders-of-magnitude",
+    "t": "orders of magnitude",
+    "kind": "phrase",
+    "forms": [
+      "orders of magnitude"
+    ],
+    "text": "An order of magnitude is a factor of ten. Several orders of magnitude means thousands of times bigger, so Keating is saying the new result is vastly more shocking.",
+    "audio": true
+  }
+]
