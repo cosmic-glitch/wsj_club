@@ -1,0 +1,455 @@
+[
+  {
+    "k": "exquisite",
+    "t": "exquisite",
+    "kind": "vocab",
+    "pron": "ek-SKWIZ-it",
+    "forms": [
+      "exquisite"
+    ],
+    "text": "Exquisite normally means delicately beautiful. Here it is a mocking label for Britain's top warships: so advanced and costly that only a few can be afforded.",
+    "audio": true
+  },
+  {
+    "k": "balk",
+    "t": "balk",
+    "kind": "vocab",
+    "pron": "BAWK",
+    "forms": [
+      "balks"
+    ],
+    "text": "To balk is to hesitate or refuse because something seems too risky or hard, like a horse stopping dead before a jump. The article says Britain too often backs away from risk.",
+    "audio": true
+  },
+  {
+    "k": "doctrinal",
+    "t": "doctrinal",
+    "kind": "vocab",
+    "pron": "DOK-trin-ul",
+    "forms": [
+      "doctrinal"
+    ],
+    "text": "Doctrinal describes official principles about how something should be done. Here it means nobody has yet agreed on the rules, such as whether an attack on an uncrewed ship counts as an act of war.",
+    "audio": true
+  },
+  {
+    "k": "tight-spot",
+    "t": "in a tight spot",
+    "kind": "phrase",
+    "forms": [
+      "in a tight spot"
+    ],
+    "text": "A tight spot is a difficult situation with few good options. Here Britain has threats rising but little money.",
+    "audio": true
+  },
+  {
+    "k": "cash-is-short",
+    "t": "cash is short",
+    "kind": "phrase",
+    "forms": [
+      "Cash is short"
+    ],
+    "text": "Short here means not enough: money is in short supply. It does not mean brief.",
+    "audio": true
+  },
+  {
+    "k": "credible",
+    "t": "credible",
+    "kind": "word",
+    "forms": [
+      "credible"
+    ],
+    "text": "Credible means believable. A threat made credible by cheap drones is one that is now realistic, because the attackers can actually carry it out.",
+    "audio": true
+  },
+  {
+    "k": "drones",
+    "t": "attack drones",
+    "kind": "name",
+    "forms": [
+      "attack drones"
+    ],
+    "text": "Drones are aircraft flown without a pilot on board, controlled remotely or by software. Cheap ones can be loaded with explosives and sent at targets such as air bases.",
+    "audio": true
+  },
+  {
+    "k": "routine",
+    "t": "routine",
+    "kind": "word",
+    "forms": [
+      "routine"
+    ],
+    "text": "Routine means regular and ordinary. Threats becoming routine means they happen so often they no longer shock anyone.",
+    "audio": true
+  },
+  {
+    "k": "ill-prepared",
+    "t": "ill-prepared",
+    "kind": "word",
+    "forms": [
+      "ill-prepared"
+    ],
+    "text": "Ill-prepared means not properly ready. Former army chiefs are warning that Britain could not cope well if a war began.",
+    "audio": true
+  },
+  {
+    "k": "fictitious",
+    "t": "fictitious",
+    "kind": "word",
+    "forms": [
+      "fictitious"
+    ],
+    "text": "Fictitious means invented, not real. The joke is that Britain's most successful living naval commander is a movie character, James Bond.",
+    "audio": true
+  },
+  {
+    "k": "necessity",
+    "t": "necessity is the mother of invention",
+    "kind": "phrase",
+    "forms": [
+      "necessity is the mother of invention"
+    ],
+    "text": "A proverb meaning that when people badly need something, they come up with clever new ways to get it. The navy is trying new ideas because it cannot afford the old ones.",
+    "audio": true
+  },
+  {
+    "k": "futuristic",
+    "t": "futuristic",
+    "kind": "word",
+    "forms": [
+      "futuristic"
+    ],
+    "text": "Futuristic means looking or working like something from the future. The new fleet relies on technology that is not yet proven.",
+    "audio": true
+  },
+  {
+    "k": "hybrid-navy",
+    "t": "hybrid navy",
+    "kind": "name",
+    "forms": [
+      "hybrid navy"
+    ],
+    "text": "Hybrid means a mix of two kinds. A hybrid navy combines crewed ships, uncrewed ships and autonomous ones, tied together partly by AI software.",
+    "audio": true
+  },
+  {
+    "k": "uncrewed",
+    "t": "uncrewed",
+    "kind": "word",
+    "forms": [
+      "uncrewed"
+    ],
+    "text": "Uncrewed means with nobody on board. Such ships are steered remotely or by computer, so losing one does not risk sailors' lives.",
+    "audio": true
+  },
+  {
+    "k": "autonomous",
+    "t": "autonomous",
+    "kind": "word",
+    "forms": [
+      "autonomous"
+    ],
+    "text": "Autonomous means able to act on its own. An autonomous vessel follows software instructions without a person steering moment by moment.",
+    "audio": true
+  },
+  {
+    "k": "unproven",
+    "t": "unproven",
+    "kind": "word",
+    "forms": [
+      "unproven"
+    ],
+    "text": "Unproven means not yet shown to work. Much of the hybrid navy's technology has not been tested in real conditions.",
+    "audio": true
+  },
+  {
+    "k": "backfire",
+    "t": "backfire",
+    "kind": "word",
+    "forms": [
+      "backfire"
+    ],
+    "text": "To backfire is for a plan to produce the opposite of what was intended, making things worse instead of better.",
+    "audio": true
+  },
+  {
+    "k": "go-all-in",
+    "t": "going all in",
+    "kind": "phrase",
+    "forms": [
+      "going all in"
+    ],
+    "text": "Going all in comes from poker, where a player bets everything. It means committing completely, with no fallback if the plan fails.",
+    "audio": true
+  },
+  {
+    "k": "high-north",
+    "t": "High North",
+    "kind": "name",
+    "forms": [
+      "High North"
+    ],
+    "text": "The High North is the Arctic and far northern seas near Norway and Russia, an area of growing military interest.",
+    "audio": true
+  },
+  {
+    "k": "nato",
+    "t": "NATO",
+    "kind": "name",
+    "forms": [
+      "NATO"
+    ],
+    "text": "NATO is the North Atlantic Treaty Organization, a military alliance of North American and European countries that promise to defend each other.",
+    "audio": true
+  },
+  {
+    "k": "deter",
+    "t": "deter",
+    "kind": "word",
+    "forms": [
+      "deter"
+    ],
+    "text": "To deter is to put someone off doing something by making the consequences seem too costly. A nuclear deterrent is meant to stop an enemy from attacking at all.",
+    "audio": true
+  },
+  {
+    "k": "communication-lines",
+    "t": "communication lines and infrastructure",
+    "kind": "name",
+    "forms": [
+      "communication lines and infrastructure"
+    ],
+    "text": "This mostly means undersea cables carrying internet and phone traffic, and pipelines. They are hard to guard and vital in a war.",
+    "audio": true
+  },
+  {
+    "k": "pouring-resources",
+    "t": "pouring resources into",
+    "kind": "phrase",
+    "forms": [
+      "pouring resources into"
+    ],
+    "text": "Pouring resources into something means spending large amounts of money and effort on it, as Russia is doing for its northern fleet.",
+    "audio": true
+  },
+  {
+    "k": "shakes-up",
+    "t": "shakes things up",
+    "kind": "phrase",
+    "forms": [
+      "shakes things up"
+    ],
+    "text": "To shake things up is to make big changes to the usual way of doing things.",
+    "audio": true
+  },
+  {
+    "k": "functions",
+    "t": "functions",
+    "kind": "word",
+    "forms": [
+      "functions"
+    ],
+    "text": "Functions here means the jobs a ship performs, such as hunting submarines or shooting down missiles. Today's big ships do many at once.",
+    "audio": true
+  },
+  {
+    "k": "nimbler",
+    "t": "nimbler",
+    "kind": "word",
+    "forms": [
+      "nimbler"
+    ],
+    "text": "Nimbler means quicker and easier to move or adapt. Smaller ships can change course and tasks faster than huge ones.",
+    "audio": true
+  },
+  {
+    "k": "frigate",
+    "t": "frigate",
+    "kind": "name",
+    "forms": [
+      "frigate"
+    ],
+    "text": "A frigate is a mid-sized warship, mainly used to hunt submarines and escort other vessels. A high-end one costs about a billion pounds.",
+    "audio": true
+  },
+  {
+    "k": "destroyer",
+    "t": "air-defence destroyer",
+    "kind": "name",
+    "forms": [
+      "air-defence destroyer"
+    ],
+    "text": "A destroyer is a large, heavily armed warship. An air-defence destroyer is built to shoot down aircraft and missiles with powerful radar, which is why it costs over £2.5bn.",
+    "audio": true
+  },
+  {
+    "k": "command-centres",
+    "t": "command centres",
+    "kind": "name",
+    "forms": [
+      "command centres"
+    ],
+    "text": "A command centre is where decisions are made and orders sent. The Common Combat Vessels will coordinate fleets of smaller ships.",
+    "audio": true
+  },
+  {
+    "k": "hulls",
+    "t": "hulls",
+    "kind": "word",
+    "forms": [
+      "hulls"
+    ],
+    "text": "A hull is the main body of a ship. More hulls simply means more ships.",
+    "audio": true
+  },
+  {
+    "k": "one-way",
+    "t": "one-way attack ships",
+    "kind": "name",
+    "forms": [
+      "one-way attack ships"
+    ],
+    "text": "These are cheap drone boats loaded with explosives that crash into a target and are destroyed. Ukraine used them against Russian ships in the Black Sea.",
+    "audio": true
+  },
+  {
+    "k": "traditional",
+    "t": "traditional",
+    "kind": "word",
+    "forms": [
+      "traditional"
+    ],
+    "text": "Traditional means done the long-established way. Here it means crewed, expensive warships.",
+    "audio": true
+  },
+  {
+    "k": "echoes",
+    "t": "echoes",
+    "kind": "word",
+    "forms": [
+      "echoes"
+    ],
+    "text": "If one thing carries echoes of another, it reminds you of it, as the plan resembles an earlier policy at NASA.",
+    "audio": true
+  },
+  {
+    "k": "startups",
+    "t": "startups",
+    "kind": "word",
+    "forms": [
+      "startups"
+    ],
+    "text": "Startups are new, young companies, often trying a bold idea. NASA let them compete for rocket work.",
+    "audio": true
+  },
+  {
+    "k": "spacex",
+    "t": "SpaceX",
+    "kind": "name",
+    "forms": [
+      "SpaceX"
+    ],
+    "text": "SpaceX is the American company that builds reusable rockets and launches satellites and astronauts. It began as a startup.",
+    "audio": true
+  },
+  {
+    "k": "daunting",
+    "t": "daunting",
+    "kind": "word",
+    "forms": [
+      "daunting"
+    ],
+    "text": "Daunting means seeming so hard or scary that it drains your confidence.",
+    "audio": true
+  },
+  {
+    "k": "endurance",
+    "t": "endurance",
+    "kind": "word",
+    "forms": [
+      "endurance"
+    ],
+    "text": "Endurance here means how long a ship can keep operating at sea before it must return to refuel or recharge.",
+    "audio": true
+  },
+  {
+    "k": "armament",
+    "t": "armament",
+    "kind": "word",
+    "forms": [
+      "armament"
+    ],
+    "text": "Armament means the weapons a ship carries. Small drone ships can carry fewer weapons than big warships.",
+    "audio": true
+  },
+  {
+    "k": "seamlessly",
+    "t": "seamlessly",
+    "kind": "word",
+    "forms": [
+      "seamlessly"
+    ],
+    "text": "Seamlessly means smoothly, with no visible gaps. Allied ships and the British systems would have to connect without hitches.",
+    "audio": true
+  },
+  {
+    "k": "act-of-war",
+    "t": "act of war",
+    "kind": "phrase",
+    "forms": [
+      "an act of war"
+    ],
+    "text": "An act of war is an attack serious enough that the victim may respond with military force.",
+    "audio": true
+  },
+  {
+    "k": "sink",
+    "t": "sink",
+    "kind": "word",
+    "forms": [
+      "sink"
+    ],
+    "text": "Sink here is a pun: the project will fail, just as a ship that is out of money for repairs would go under.",
+    "audio": true
+  },
+  {
+    "k": "clocked",
+    "t": "clocked",
+    "kind": "word",
+    "forms": [
+      "clocked"
+    ],
+    "text": "In British slang, to clock something is to notice or realise it. Sailors have noticed that a radical idea attracts funding.",
+    "audio": true
+  },
+  {
+    "k": "grab-cash",
+    "t": "grab cash from a limited pot",
+    "kind": "phrase",
+    "forms": [
+      "grab cash from a limited pot"
+    ],
+    "text": "A limited pot is a fixed amount of money that several groups compete for. The navy hopes a bold idea will win it a bigger share.",
+    "audio": true
+  },
+  {
+    "k": "huzzah",
+    "t": "huzzah",
+    "kind": "word",
+    "forms": [
+      "huzzah"
+    ],
+    "text": "Huzzah is an old-fashioned cheer, like hurray. The writer uses it with a smile to applaud the navy.",
+    "audio": true
+  },
+  {
+    "k": "stagnation",
+    "t": "stagnation",
+    "kind": "word",
+    "forms": [
+      "stagnation"
+    ],
+    "text": "Stagnation means a lack of growth or change, like water that sits still. The article says avoiding risk leads to it.",
+    "audio": true
+  }
+]

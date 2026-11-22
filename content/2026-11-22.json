@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-22",
+  "title": "Can Britannia rule the waves again?",
+  "articleUrl": "https://www.economist.com/leaders/2026/11/19/can-britannia-rule-the-waves-again",
+  "articlePageUrl": "/articles/2026-11-22.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "exquisite",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ek-SKWIZ-it",
+      "articleQuote": "the exquisite, enormously expensive warships it now relies on",
+      "meaning": "Exquisite usually means extremely beautiful or delicately made: an exquisite piece of jewellery, an exquisite piece of music. Defence experts also use it for equipment that is so advanced, finely crafted and costly that a country can only afford a few. Here it is a slightly mocking label for Britain's top warships: wonderful, but so expensive that losing even one would hurt badly.",
+      "examples": [
+        "The baker decorated the wedding cake with exquisite sugar flowers, each petal paper-thin.",
+        "The violinist's exquisite playing left the whole hall silent."
+      ]
+    },
+    {
+      "word": "balk",
+      "partOfSpeech": "verb",
+      "pronunciation": "BAWK",
+      "articleQuote": "Too often, Britain balks at risk and so commits itself to stagnation.",
+      "meaning": "To balk at something is to hesitate or refuse to go ahead with it because it seems too scary, costly or difficult. A horse balks at a jump by stopping dead in front of it, and people balk at a huge bill or a big challenge in the same way. The article says Britain too often balks at risk, backing away from bold plans and so staying stuck where it is.",
+      "examples": [
+        "Most of the class balked when the teacher announced a surprise test on three chapters.",
+        "He balked at jumping off the high diving board and climbed back down the ladder."
+      ]
+    },
+    {
+      "word": "doctrinal",
+      "partOfSpeech": "adjective",
+      "pronunciation": "DOK-trin-ul",
+      "articleQuote": "Some may arise from the new doctrinal questions hybrid fleets pose.",
+      "meaning": "Doctrinal is the adjective for doctrine, a set of official beliefs or rules about how something should be done. Churches have doctrine about what members believe, and armies have doctrine about how to fight and when force is justified. A doctrinal question is therefore a question of principle, not of equipment. Here it means that if an uncrewed ship is attacked, nobody has yet agreed whether that counts as an act of war.",
+      "examples": [
+        "The two teams had no doctrinal disagreement; they simply could not agree on a meeting time.",
+        "The coach's doctrinal rule was that every player trains the same amount, star or not."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Warship classes",
+      "articleQuote": "about five times that for a high-end frigate and over £2.5bn for an air-defence destroyer",
+      "meaning": "Naval affairs: the article throws around a price ladder, £200m for the new vessels, about £1bn for a frigate, over £2.5bn for a destroyer, and it only makes sense once you know what these ships are.\n\nNavies sort ships by size and job. A **frigate** is a mid-sized warship, built mainly to hunt submarines and escort other ships, such as merchant vessels or an aircraft carrier. A **destroyer** is bigger and carries more missiles; an **air-defence destroyer** is built to shoot down incoming aircraft and missiles, using powerful radar and dozens of launch tubes, which is why it costs over £2.5bn. A **submarine** hides underwater. A **command vessel**, like the planned Common Combat Vessels, is a ship whose main job is to coordinate others, here a flock of smaller crewed and uncrewed boats, using its communications gear to direct them.\n\nThe article's argument is about this ladder: a country that can only afford a handful of expensive ships can only be in a handful of places. Splitting the jobs across many cheaper hulls means more of the ocean is covered, and losing one costs far less. The takeaway: when you read about a navy, ask how many ships it has, what each type is for, and what each costs, because coverage and price decide what it can actually do."
+    },
+    {
+      "name": "Ballistic-missile submarines",
+      "articleQuote": "keeping submarine-mounted nuclear missiles at sea at all times to deter attacks",
+      "meaning": "Military technology: Britain's biggest naval job is to keep one nuclear-armed submarine hidden somewhere in the ocean at every moment, and that job eats about a quarter of its whole defence budget.\n\nA **ballistic missile** is a rocket that climbs high, then falls onto its target along an arc, travelling thousands of miles. A **ballistic-missile submarine** carries these rockets in tubes inside its hull and can fire them while submerged. Missiles on land sit at known addresses, so an enemy could aim at them. A submarine under the ocean is extremely hard to find, so even if an enemy destroyed everything on land, the sub could still fire back. That certainty is what is meant to make an enemy think twice before attacking.\n\nThere is a catch, and it explains the cost. For the guarantee to hold, one submarine must be at sea at all times, but each one has to return to port for repairs and for its crew to rest. So Britain needs several, plus the skilled crews, bases and escorts to protect them. The takeaway: a deterrent works only if it is always ready, and being always ready is very expensive."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, why is the Royal Navy betting on a \"hybrid navy\"?",
+      "options": [
+        "It believes it has no choice, because cash is short and threats are rising",
+        "Because America has promised to pay for the new ships",
+        "Because crewed warships have become illegal under NATO rules",
+        "Because Russia has agreed to reduce its naval activity"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article says the navy is going all in because it believes it has no choice given tight money and growing dangers."
+    },
+    {
+      "question": "How does the article say the hybrid navy can cover more sea than today's fleet?",
+      "options": [
+        "By using many smaller, cheaper ships instead of a few expensive ones",
+        "By building only air-defence destroyers",
+        "By keeping all ships in port until needed",
+        "By replacing every ship with a submarine"
+      ],
+      "answerIndex": 0,
+      "explanation": "With more hulls it can cover a greater area than a smaller number of exquisite warships."
+    },
+    {
+      "question": "Which of these is named as a risk of the hybrid navy?",
+      "options": [
+        "Naval drones tend to have less endurance and armament than crewed warships",
+        "The ships would be too expensive to build",
+        "No shipyards would be allowed to bid",
+        "Allies refuse to talk to Britain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The article lists weaker endurance and armament of drones, plus the need to work with allies and a funding gap."
+    },
+    {
+      "question": "What does it mean to \"balk\" at something?",
+      "options": [
+        "To hesitate or refuse because it seems too risky or hard",
+        "To celebrate it loudly",
+        "To copy it exactly",
+        "To pay for it in advance"
+      ],
+      "answerIndex": 0,
+      "explanation": "Balking means shying away from something daunting, as the article says Britain too often does with risk."
+    },
+    {
+      "question": "Why must Britain keep a nuclear-armed submarine at sea at all times?",
+      "options": [
+        "A submarine is hard to find, so it can always strike back, which deters attacks",
+        "Submarines are cheaper than ships on the surface",
+        "Missiles only work underwater",
+        "Submarines are needed to protect fishing boats"
+      ],
+      "answerIndex": 0,
+      "explanation": "A hidden submarine guarantees a response even if land targets are destroyed, which is what makes the deterrent work."
+    }
+  ]
+}
