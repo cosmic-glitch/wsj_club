@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-22",
+  "title": "China’s Buddhists are releasing animals where they do not belong",
+  "articleUrl": "https://www.economist.com/china/2026/11/19/chinas-buddhists-are-releasing-animals-where-they-do-not-belong",
+  "articlePageUrl": "/articles/junior/2026-11-22.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "devout",
+      "partOfSpeech": "adjective",
+      "pronunciation": "dih-VOWT",
+      "articleQuote": "China’s abundance of markets selling live animals for the dinner table makes it easy for the devout, with money, to acquire religious merit.",
+      "meaning": "A devout person takes their religion very seriously and follows its practices with great care. Here, \"the devout\" means the people who are most serious about their Buddhist faith. The word can also describe anyone who is deeply committed to something, like a devout soccer fan.",
+      "examples": [
+        "My neighbor is a devout churchgoer who never misses a Sunday service.",
+        "He is a devout fan of the home team and has not missed a game in years."
+      ]
+    },
+    {
+      "word": "revival",
+      "partOfSpeech": "noun",
+      "pronunciation": "rih-VY-vul",
+      "articleQuote": "Since Mao’s death in 1976, Buddhism has seen a revival.",
+      "meaning": "A revival is when something that had faded away becomes popular or strong again. Here, Buddhism was pushed down for years, and then more and more people returned to it. You can also have a revival of an old song, a game, or a style of clothes.",
+      "examples": [
+        "Old board games are having a revival, and kids are playing them again.",
+        "The town's main street saw a revival when new shops opened."
+      ]
+    },
+    {
+      "word": "denounce",
+      "partOfSpeech": "verb",
+      "pronunciation": "dih-NOWNSS",
+      "articleQuote": "The state-affiliated Buddhist Association of China has denounced those who profit from fang sheng and has called for the practice to become more “scientific and reasonable”.",
+      "meaning": "To denounce something is to say publicly and strongly that it is wrong or bad. Here, a Buddhist group spoke out against people who make money from selling animals to be freed. The word is stronger than just disagreeing.",
+      "examples": [
+        "The coach denounced cheating and told the team it would never be allowed.",
+        "Leaders in the town denounced the littering at the park."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Invasive species",
+      "articleQuote": "Since 2021 releasing invasive species has been a criminal offence.",
+      "meaning": "An **invasive species** is a plant or animal that is brought to a place where it does not naturally live, and then spreads and harms the plants and animals that were already there.\n\nPicture a fish tank where each fish has its own corner and its own food. Now someone drops in a big, hungry fish from another tank. It eats the food, takes the corners, and the old fish struggle. A forest, a river, or a city canal works the same way, only much bigger. The animals that belong there have lived together for a very long time. A newcomer with no enemies nearby can grow fast and crowd out the locals.\n\nThat is why the article worries about freed turtles and piranhas. The red-eared slider turtle comes from North America, but now it fills Beijing's canals. Many freed animals die, and some survive and cause trouble. Either way, setting an animal free in the wrong place is not always kind. That is why China made releasing invasive species a crime."
+    },
+    {
+      "name": "Buddhism",
+      "articleQuote": "Some believers reckon that giving captive animals their freedom is a way to earn spiritual merit.",
+      "meaning": "**Buddhism** is a religion that began in India more than 2,000 years ago, based on the teachings of a man called the Buddha. It is now followed by hundreds of millions of people, especially in Asia.\n\nA big idea in Buddhism is compassion, which means caring about the suffering of every living creature. Many Buddhists try to be kind and to avoid hurting animals. Some believe that good deeds build up \"merit,\" a kind of spiritual credit, a bit like earning points in a game for kind choices.\n\nThat is where fang sheng comes from. A person buys an animal that was going to be killed or kept in a cage, and sets it free. They are acting on the idea of compassion. The article shows how a kind idea can go wrong when people do not think about what the animal needs. A tropical bird freed in cold Shanghai cannot survive."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What happened to most of the birds released near Longhua Temple?",
+      "options": [
+        "They flew home to the tropics",
+        "They died from the cold or were caught by cats",
+        "They were found by temple workers",
+        "They joined flocks of local birds"
+      ],
+      "answerIndex": 1,
+      "explanation": "The article says tiger parrots and zebra finches prefer the tropics, and most quickly died from the cold or at the claws of cats."
+    },
+    {
+      "question": "Why do some Buddhists practice fang sheng?",
+      "options": [
+        "To earn spiritual merit by freeing captive animals",
+        "To clean up rivers and lakes",
+        "To get a day off work",
+        "To sell animals for money"
+      ],
+      "answerIndex": 0,
+      "explanation": "Some believers reckon that giving captive animals their freedom is a way to earn spiritual merit."
+    },
+    {
+      "question": "Which animal does the article call one of the worst offenders in China's ecosystems?",
+      "options": [
+        "The tiger parrot",
+        "The catfish",
+        "The red-eared slider turtle",
+        "The zebra finch"
+      ],
+      "answerIndex": 2,
+      "explanation": "The red-eared slider, a native of North America, can outbreed local reptiles and spread infections, and Beijing's canals are infested with them."
+    },
+    {
+      "question": "Which sentence uses the word \"revival\" correctly?",
+      "options": [
+        "The revival of the old song made it popular again.",
+        "The revival ran down the hall very quickly.",
+        "She ate a revival for lunch.",
+        "The revival was cold and rainy."
+      ],
+      "answerIndex": 0,
+      "explanation": "A revival is when something faded becomes popular or strong again, like an old song."
+    },
+    {
+      "question": "What does Mr Gao do differently from some other Buddhists?",
+      "options": [
+        "He releases hundreds of cats",
+        "He frees only a few fish at a time and picks local species",
+        "He sells animals outside temples",
+        "He live-streams his releases for money"
+      ],
+      "answerIndex": 1,
+      "explanation": "Mr Gao releases only a few fish at a time and picks local species, though he has never asked the government's permission."
+    }
+  ]
+}
