@@ -20,7 +20,7 @@ This skill only opens the poll. The companion flow is: **wsj-check-vote** later 
 
 The sections are **bookkeeping only** — it is ONE poll with ONE vote across all 10. The `kind` field on each candidate (`"news"` / `"enrichment"`) records which is which; the /vote page lists them in ballot order.
 
-**Kids: 5 picks from `wsj-pick-article-elementary`** (TIME for Kids), `source: "TIME for Kids"`, no `kind`; pitches in very short sentences a 7-year-old can read alone. Kids candidates never overlap the Economist ballots.
+**Kids: 5 picks from `wsj-pick-article-elementary`** (TIME for Kids or News for Kids, 400–800 words only), `source` = the site's name ("TIME for Kids" / "News for Kids"), no `kind`; pitches in very short sentences a 7-year-old can read alone. Kids candidates never overlap the Economist ballots.
 
 **Junior: 5 news picks, no enrichment section.** All candidates come from `wsj-pick-article-junior`'s ranked field (top 5); omit `kind` (all news, so the modal shows no section labels). There is no junior enrichment picker — keep the junior ballot news-only unless the user supplies enrichment candidates themselves.
 

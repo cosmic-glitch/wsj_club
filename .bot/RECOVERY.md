@@ -2,7 +2,7 @@
 
 `.bot/` is the box-local runtime for the autopilot skills — `auto-vote` (6am
 Pacific, ONE session for all three tracks: the Economist scouted once → two
-disjoint senior/junior ballots, TIME for Kids → the kids ballot → open the
+disjoint senior/junior ballots, TIME for Kids + News for Kids → the kids ballot → open the
 votes) and `auto-publish` / `auto-publish-junior` / `auto-publish-kids` (from
 9am Pacific, once every track's vote has a ballot, noon at the latest: tally →
 capture → author → ship, one per-track script run senior, junior, kids under
@@ -80,7 +80,7 @@ Everything runs from the repo root (`~/wsj_club`). Paths below assume that.
    xvfb-run -a node --env-file=.bot/.env .bot/capture.mjs <article-url> 1999-01-01   # writes public/articles/1999-01-01.html + article-text/1999-01-01.txt — then delete both
    node --env-file=.env.local .bot/tally.mjs                                    # newest senior poll, read-only
    node --env-file=.env.local .bot/tally.mjs --track=junior                     # newest junior poll, read-only
-   node .bot/scout-kids.mjs > /dev/null                                         # TIME for Kids reachable (no login needed)
+   node .bot/scout-kids.mjs > /dev/null                                         # TIME for Kids + News for Kids reachable (no login needed)
    node --env-file=.bot/.env .bot/notify.mjs "recovery test"                    # should hit the owner's WhatsApp DM (don't smoke-test --to=group: that is the real club group)
    ```
 

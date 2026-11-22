@@ -3,7 +3,7 @@
 # claude session (the auto-vote skill) scouts The Economist once, rates every
 # candidate for the high-school (senior) and middle-school (junior) tracks,
 # splits them into two disjoint ballots, builds the elementary (kids) ballot
-# from TIME for Kids, and opens all three votes; this wrapper then checks each
+# from TIME for Kids + News for Kids, and opens all three votes; this wrapper then checks each
 # track's outcome.
 #   bash .bot/run-auto-vote.sh
 #

@@ -1,6 +1,6 @@
 ---
 name: auto-publish-kids
-description: AUTONOMOUS daily ELEMENTARY publisher for the Reading Club (track id "kids", shown as Elementary at /elementary; a precocious early reader at about a US grade 3 level), run UNATTENDED from the Hetzner box by cron, right after the middle-school (junior) auto-publish. Tallies the day's kids vote, captures the winning TIME for Kids article with .bot/capture-kids.mjs, authors the full elementary handout (3 words, at most 1 concept, quiz, glossary, audio) WITHOUT a human sign-off, ships it to main (= deploys; publishing is what closes the kids vote) via .bot/ship.sh --track=kids. The driver then sends the club one combined WhatsApp message once every track is live. Kids track only. Do NOT invoke this by hand for the normal interactive flow — use wsj-check-vote --track=kids + the wsj-pick-article-elementary skill's Publishing section for that.
+description: AUTONOMOUS daily ELEMENTARY publisher for the Reading Club (track id "kids", shown as Elementary at /elementary; a precocious early reader at about a US grade 3 level), run UNATTENDED from the Hetzner box by cron, right after the middle-school (junior) auto-publish. Tallies the day's kids vote, captures the winning article (TIME for Kids or News for Kids) with .bot/capture-kids.mjs, authors the full elementary handout (3 words, at most 1 concept, quiz, glossary, audio) WITHOUT a human sign-off, ships it to main (= deploys; publishing is what closes the kids vote) via .bot/ship.sh --track=kids. The driver then sends the club one combined WhatsApp message once every track is live. Kids track only. Do NOT invoke this by hand for the normal interactive flow — use wsj-check-vote --track=kids + the wsj-pick-article-elementary skill's Publishing section for that.
 ---
 
 # Reading Club — autonomous daily ELEMENTARY publish (Hetzner cron)
@@ -11,7 +11,7 @@ Names: the track id is `kids` in every path, flag and file; people see it as **E
 
 This is the kids sibling of **`auto-publish-junior`** — same mechanics (tally → capture → read → self-review → draft → audio + glossary → build → ship), with these differences:
 
-1. **Source is TIME for Kids**, never the Economist. Capture goes through **`.bot/capture-kids.mjs`** (a plain browser, no login; it rewraps TFK's photos and strips its hidden power-word definitions), which runs the same shared `scripts/capture-article.js` snippet.
+1. **Source is a kids' site** — TIME for Kids or News for Kids, whichever won — never the Economist. Capture goes through **`.bot/capture-kids.mjs`** (a plain browser, no login; it knows both sites: it rewraps TFK's photos and strips its hidden power-word definitions, and strips News for Kids' in-body cookie notices, map and sources tabs), which runs the same shared `scripts/capture-article.js` snippet.
 2. **Calibration is elementary** (below): exactly 3 words, **at most 1 concept**, everything readable by a bright 7-year-old.
 3. **Every path carries `kids/`** and every CLI its kids form (`--track=kids` or `kids/<date>`). **A missing `kids/` segment or `--track=kids` silently writes into the high-school track** — copy the commands exactly.
 
@@ -56,11 +56,11 @@ mkdir -p public/articles/kids article-text/kids
 node .bot/capture-kids.mjs "<winner.articleUrl>" "$TODAY" > /tmp/kids-capture.json
 ```
 
-It writes `public/articles/kids/${TODAY}.html` (back-link `/elementary`) and `article-text/kids/${TODAY}.txt`, prints the snippet's verification line on stderr, and a JSON summary on stdout: `url` (the clean article URL — **use it as `articleUrl`**), `words`, `paragraphs`, `figures`, `summary`, `lengthCheck`.
+It writes `public/articles/kids/${TODAY}.html` (back-link `/elementary`) and `article-text/kids/${TODAY}.txt`, prints the snippet's verification line on stderr, and a JSON summary on stdout: `url` (the clean article URL — **use it as `articleUrl`**), `source` (the publication name — **use it as `source`**), `words`, `paragraphs`, `figures`, `summary`, `lengthCheck`.
 
 - Exit **2** = no article body or a subscribe prompt → retry once after 30 seconds; still failing → failure path.
 - Exit **3** = thin output, leaked definition fragments, or `lengthCheck: SHORT`. For SHORT only: if the `dropped=` list is all chrome and `tail -5 article-text/kids/${TODAY}.txt` ends on the article's real last paragraph, re-run with `--allow-short`; otherwise failure path.
-- Check the summary line: `images` should match `figures` (TFK pieces usually carry several photos), and every `dropped=` entry must be chrome.
+- Check the summary line: `images` should match `figures` (both sites' pieces usually carry several photos), and every `dropped=` entry must be chrome.
 - Upload the text for the voice quiz (best-effort — log a failure and continue):
   ```bash
   node --env-file=.env.local scripts/upload-article-text.mjs "$TODAY" --track=kids
@@ -72,7 +72,7 @@ It writes `public/articles/kids/${TODAY}.html` (back-link `/elementary`) and `ar
 
 ## Step 4 — Propose, then SELF-REVIEW (this replaces the owner's sign-off)
 
-Pick **3 vocab words** in the grade-3 "stretch" register — words a bright 7-year-old has likely heard but can't define, worth knowing, common in good children's books: *curious, enormous, protect, rare, journey, gather, examine, transparent*. Not sight-level words (*big, happy*), not middle-school ones (*reluctant, untenable*). TFK's own power words (bold in the article) are a good starting list, not binding.
+Pick **3 vocab words** in the grade-3 "stretch" register — words a bright 7-year-old has likely heard but can't define, worth knowing, common in good children's books: *curious, enormous, protect, rare, journey, gather, examine, transparent*. Not sight-level words (*big, happy*), not middle-school ones (*reluctant, untenable*). TFK's own power words (bold in the article) are a good starting list, not binding; News for Kids has none.
 
 Pick **at most 1 concept**: a durable piece of the world the article leans on that a young child can learn in one card (what a species is, what a habitat is, what gravity does, what a national park is). Never the article's own topic or thesis; **never pad** — `[]` is fine when nothing fits.
 
@@ -86,7 +86,7 @@ Then write the review, in your output:
 
 Follow the house model's shape exactly:
 
-- `date`; `title` = a short plain-English headline that says what happened (the model's "A robot finds 57 new sea animals" for TFK's "Canyon Creatures" — TFK's own titles are often puns a 7-year-old won't decode); no byline. `articleUrl` = the capture's clean `url`; `articlePageUrl: "/articles/kids/${TODAY}.html"`; `voiceQuiz: true`; `source: "TIME for Kids"`.
+- `date`; `title` = a short plain-English headline that says what happened (the model's "A robot finds 57 new sea animals" for TFK's "Canyon Creatures" — TFK's own titles are often puns a 7-year-old won't decode, and News for Kids' are newspaper headlines); no byline. `articleUrl` = the capture's clean `url`; `articlePageUrl: "/articles/kids/${TODAY}.html"`; `voiceQuiz: true`; `source` = the capture's `source` ("TIME for Kids" or "News for Kids").
 - **Each word:** `partOfSpeech`, `pronunciation` (respelled, stressed syllable in caps), `articleQuote` (verbatim), `meaning` (3 short sentences: what it means, how you'd notice it, what it means in this article), exactly 2 `examples` from a young child's world. No `inContext`.
 - **The concept (if any):** `name`, `articleQuote`, `meaning` in 3–4 short paragraphs: the hook from the article, what the idea is with an everyday example (house cat vs lion), how it works, a one-line takeaway.
 - **Quiz:** exactly 5 multiple-choice questions, 4 options each, short and literal; mostly what happened in the article, one on a vocab word, one on the concept. Vary `answerIndex` (0-based) across the five; each `explanation` one or two short sentences.

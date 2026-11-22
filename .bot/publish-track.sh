@@ -164,7 +164,7 @@ fi
 
 # Headed browser under a virtual display — the Economist's bot challenge is
 # only solved headed (see lib.mjs); the capture runs inside this session.
-# (TIME for Kids needs none of that, but headed works there too.)
+# (The kids sites need none of that, but headed works there too.)
 XVFB=()
 if command -v xvfb-run >/dev/null 2>&1; then
   XVFB=(xvfb-run -a --server-args="-screen 0 1440x900x24")
