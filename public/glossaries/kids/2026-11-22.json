@@ -1,0 +1,375 @@
+[
+  {
+    "k": "anniversary",
+    "t": "anniversary",
+    "kind": "vocab",
+    "pron": "an-uh-VER-suh-ree",
+    "forms": [
+      "anniversary"
+    ],
+    "text": "An anniversary is a day when you remember something special from the past. It comes back every year. Pokémon is 30 years old this year.",
+    "audio": true
+  },
+  {
+    "k": "debut",
+    "t": "debuted",
+    "kind": "vocab",
+    "pron": "DAY-byood",
+    "forms": [
+      "debuted"
+    ],
+    "text": "To debut means to show something to people for the first time. Pokémon debuted in Japan.",
+    "audio": true
+  },
+  {
+    "k": "fantastical",
+    "t": "fantastical",
+    "kind": "vocab",
+    "pron": "fan-TAS-tih-kul",
+    "forms": [
+      "fantastical"
+    ],
+    "text": "Fantastical means so strange and magical that it could not be real, like a dragon.",
+    "audio": true
+  },
+  {
+    "k": "pokemon",
+    "t": "Pokémon",
+    "kind": "name",
+    "forms": [
+      "Pokémon"
+    ],
+    "text": "Pokémon is a game about magical creatures. It also has cards, apps, and a TV show.",
+    "audio": true
+  },
+  {
+    "k": "pikachu",
+    "t": "Pikachu",
+    "kind": "name",
+    "forms": [
+      "Pikachu"
+    ],
+    "text": "Pikachu is a yellow Pokémon creature. It is one of the most famous ones.",
+    "audio": true
+  },
+  {
+    "k": "japan",
+    "t": "Japan",
+    "kind": "name",
+    "forms": [
+      "Japan"
+    ],
+    "text": "Japan is a country in Asia. It is an island country, far across the Pacific Ocean from America.",
+    "audio": true
+  },
+  {
+    "k": "goal",
+    "t": "goal",
+    "kind": "word",
+    "forms": [
+      "goal"
+    ],
+    "text": "A goal is what you are trying to do. The goal of the game is to catch and train creatures.",
+    "audio": true
+  },
+  {
+    "k": "creatures",
+    "t": "creatures",
+    "kind": "word",
+    "forms": [
+      "creatures"
+    ],
+    "text": "Creatures are living things, like animals. In stories, they can be magical.",
+    "audio": true
+  },
+  {
+    "k": "fans",
+    "t": "fans",
+    "kind": "word",
+    "forms": [
+      "fans"
+    ],
+    "text": "Fans are people who love something very much, like a game or a team.",
+    "audio": true
+  },
+  {
+    "k": "apps",
+    "t": "apps",
+    "kind": "word",
+    "forms": [
+      "apps"
+    ],
+    "text": "Apps are little programs on a phone or tablet. You can play games on them.",
+    "audio": true
+  },
+  {
+    "k": "in-person-events",
+    "t": "in-person events",
+    "kind": "phrase",
+    "forms": [
+      "in-person"
+    ],
+    "text": "In-person means you go there and meet people face to face, not on a screen.",
+    "audio": true
+  },
+  {
+    "k": "trading-card-game",
+    "t": "Trading Card Game",
+    "kind": "name",
+    "forms": [
+      "Trading Card Game"
+    ],
+    "text": "In a trading card game, players collect cards, swap them with friends, and use them to play.",
+    "audio": true
+  },
+  {
+    "k": "tcg",
+    "t": "TCG",
+    "kind": "name",
+    "forms": [
+      "TCG"
+    ],
+    "text": "TCG stands for Trading Card Game.",
+    "audio": true
+  },
+  {
+    "k": "evolving",
+    "t": "evolving",
+    "kind": "word",
+    "forms": [
+      "Evolving"
+    ],
+    "text": "Evolving means slowly changing and growing into something new.",
+    "audio": true
+  },
+  {
+    "k": "celebrations",
+    "t": "celebrations",
+    "kind": "word",
+    "forms": [
+      "celebrations"
+    ],
+    "text": "A celebration is a happy event to mark something special, like a party.",
+    "audio": true
+  },
+  {
+    "k": "organized",
+    "t": "organized",
+    "kind": "word",
+    "forms": [
+      "organized"
+    ],
+    "text": "To organize an event means to plan it and get it ready.",
+    "audio": true
+  },
+  {
+    "k": "launched",
+    "t": "launched",
+    "kind": "word",
+    "forms": [
+      "launched"
+    ],
+    "text": "To launch something means to start it or put it out for people to use.",
+    "audio": true
+  },
+  {
+    "k": "products",
+    "t": "products",
+    "kind": "word",
+    "forms": [
+      "products"
+    ],
+    "text": "Products are things that a company makes and sells, like toys and cards.",
+    "audio": true
+  },
+  {
+    "k": "vice-president",
+    "t": "vice president",
+    "kind": "phrase",
+    "forms": [
+      "vice president"
+    ],
+    "text": "A vice president is a boss who helps lead a company or group.",
+    "audio": true
+  },
+  {
+    "k": "community",
+    "t": "community",
+    "kind": "word",
+    "forms": [
+      "community"
+    ],
+    "text": "A community is a group of people who share something, like fans of a game.",
+    "audio": true
+  },
+  {
+    "k": "brand",
+    "t": "brand",
+    "kind": "word",
+    "forms": [
+      "brand"
+    ],
+    "text": "A brand is a company's name and the things it makes. Here, Pokémon is the brand.",
+    "audio": true
+  },
+  {
+    "k": "keep-moving-forward",
+    "t": "keep moving forward",
+    "kind": "phrase",
+    "forms": [
+      "keep moving forward"
+    ],
+    "text": "To keep moving forward means to keep growing and making new things, not to stop.",
+    "audio": true
+  },
+  {
+    "k": "latin-american-spanish",
+    "t": "Latin American Spanish",
+    "kind": "name",
+    "forms": [
+      "Latin American Spanish"
+    ],
+    "text": "This is the kind of Spanish spoken in Mexico, South America, and nearby places.",
+    "audio": true
+  },
+  {
+    "k": "available",
+    "t": "available",
+    "kind": "word",
+    "forms": [
+      "available"
+    ],
+    "text": "Available means you can get it or use it.",
+    "audio": true
+  },
+  {
+    "k": "languages",
+    "t": "languages",
+    "kind": "word",
+    "forms": [
+      "languages"
+    ],
+    "text": "Languages are the ways people talk and write, like English, Spanish, and Japanese.",
+    "audio": true
+  },
+  {
+    "k": "gathered",
+    "t": "gathered",
+    "kind": "word",
+    "forms": [
+      "gathered"
+    ],
+    "text": "To gather means to come together in one place.",
+    "audio": true
+  },
+  {
+    "k": "san-francisco",
+    "t": "San Francisco",
+    "kind": "name",
+    "forms": [
+      "San Francisco"
+    ],
+    "text": "San Francisco is a big city in California, by the Pacific Ocean.",
+    "audio": true
+  },
+  {
+    "k": "california",
+    "t": "California",
+    "kind": "name",
+    "forms": [
+      "California"
+    ],
+    "text": "California is a state on the west coast of the United States.",
+    "audio": true
+  },
+  {
+    "k": "world-championships",
+    "t": "World Championships",
+    "kind": "name",
+    "forms": [
+      "World Championships"
+    ],
+    "text": "The World Championships is a big contest. The best players from around the world play to see who wins.",
+    "audio": true
+  },
+  {
+    "k": "kid-reporter",
+    "t": "Kid Reporter",
+    "kind": "name",
+    "forms": [
+      "Kid Reporter"
+    ],
+    "text": "A reporter learns about events and writes about them. A TFK Kid Reporter is a kid who does this.",
+    "audio": true
+  },
+  {
+    "k": "on-the-scene",
+    "t": "on the scene",
+    "kind": "phrase",
+    "forms": [
+      "on the scene"
+    ],
+    "text": "On the scene means being right there where something is happening.",
+    "audio": true
+  },
+  {
+    "k": "first-person-account",
+    "t": "first-person account",
+    "kind": "phrase",
+    "forms": [
+      "first-person account"
+    ],
+    "text": "A first-person account is a story told by the person who was there, using the word I.",
+    "audio": true
+  },
+  {
+    "k": "malaysia",
+    "t": "Malaysia",
+    "kind": "name",
+    "forms": [
+      "Malaysia"
+    ],
+    "text": "Malaysia is a country in Southeast Asia, far from California.",
+    "audio": true
+  },
+  {
+    "k": "youth-player",
+    "t": "youth player",
+    "kind": "phrase",
+    "forms": [
+      "youth player"
+    ],
+    "text": "A youth player is a young person who plays a game or sport.",
+    "audio": true
+  },
+  {
+    "k": "emphasizing",
+    "t": "emphasizing",
+    "kind": "word",
+    "forms": [
+      "emphasizing"
+    ],
+    "text": "To emphasize means to say that something is very important.",
+    "audio": true
+  },
+  {
+    "k": "attendee",
+    "t": "attendee",
+    "kind": "word",
+    "forms": [
+      "attendee"
+    ],
+    "text": "An attendee is a person who goes to an event.",
+    "audio": true
+  },
+  {
+    "k": "backgrounds",
+    "t": "backgrounds",
+    "kind": "word",
+    "forms": [
+      "backgrounds"
+    ],
+    "text": "A person's background is where they come from and what their life has been like.",
+    "audio": true
+  }
+]

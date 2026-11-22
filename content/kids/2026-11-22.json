@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-22",
+  "title": "Pokémon turns 30 years old",
+  "articleUrl": "https://www.timeforkids.com/g34/pokemon-turns-30-g3/",
+  "articlePageUrl": "/articles/kids/2026-11-22.html",
+  "voiceQuiz": true,
+  "source": "TIME for Kids",
+  "vocab": [
+    {
+      "word": "anniversary",
+      "partOfSpeech": "noun",
+      "pronunciation": "an-uh-VER-suh-ree",
+      "articleQuote": "This year, Pokémon celebrates its 30th anniversary.",
+      "meaning": "An anniversary is a day when you remember something special that happened in the past. It comes back every year, on the same date. In the article, Pokémon is 30 years old, so people are celebrating its anniversary all year.",
+      "examples": [
+        "My parents had a party for their wedding anniversary.",
+        "Our school has an anniversary every year, and we get cake."
+      ]
+    },
+    {
+      "word": "debuted",
+      "partOfSpeech": "verb",
+      "pronunciation": "DAY-byood",
+      "articleQuote": "Pokémon debuted on February 27, 1996, in Japan.",
+      "meaning": "To debut means to show something to people for the very first time. You might hear it for a movie, a song, or a toy. In the article, Pokémon debuted in Japan, which is the day people first got to play it.",
+      "examples": [
+        "The band debuted a new song at the school show.",
+        "My favorite cartoon debuted when I was five."
+      ]
+    },
+    {
+      "word": "fantastical",
+      "partOfSpeech": "adjective",
+      "pronunciation": "fan-TAS-tih-kul",
+      "articleQuote": "The basic goal: catching and training fantastical creatures.",
+      "meaning": "Fantastical means so strange and magical that it could not be real. Dragons and talking animals are fantastical. In the article, Pokémon are fantastical creatures that live in a game.",
+      "examples": [
+        "I read a book about a fantastical castle that floats in the clouds.",
+        "She drew a fantastical bird with rainbow wings."
+      ]
+    }
+  ],
+  "concepts": [],
+  "quiz": [
+    {
+      "question": "How old is Pokémon this year?",
+      "options": ["10 years old", "20 years old", "30 years old", "100 years old"],
+      "answerIndex": 2,
+      "explanation": "Pokémon began in 1996, and this year it turns 30."
+    },
+    {
+      "question": "Where did Pokémon first come out?",
+      "options": ["In Japan", "In San Francisco", "In Malaysia", "In Spain"],
+      "answerIndex": 0,
+      "explanation": "Pokémon debuted in Japan in 1996, with two video games."
+    },
+    {
+      "question": "What does \"fantastical\" mean?",
+      "options": ["Very old", "Strange and magical, like something from a story", "Very cold", "Easy to catch"],
+      "answerIndex": 1,
+      "explanation": "Fantastical means so strange and magical that it could not be real."
+    },
+    {
+      "question": "How many languages can people play the Pokémon card game in now?",
+      "options": ["2", "5", "10", "16"],
+      "answerIndex": 3,
+      "explanation": "The Pokémon card game is now available in 16 languages."
+    },
+    {
+      "question": "What did Haruki Okunishi say helps him get good at Pokémon?",
+      "options": ["He practices and practices", "He sleeps a lot", "He never plays", "He reads about it only"],
+      "answerIndex": 0,
+      "explanation": "Haruki said, \"I just practice and practice,\" and that the practice is a lot of fun."
+    }
+  ]
+}
