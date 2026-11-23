@@ -1,0 +1,321 @@
+[
+  {
+    "k": "endangered",
+    "t": "endangered",
+    "kind": "vocab",
+    "pron": "en-DAYN-jerd",
+    "forms": [
+      "endangered"
+    ],
+    "text": "An endangered animal could disappear forever. Only a few are left. Fewer than 200 pygmy raccoons are alive.",
+    "audio": true
+  },
+  {
+    "k": "struggle",
+    "t": "struggled",
+    "kind": "vocab",
+    "pron": "STRUG-uld",
+    "forms": [
+      "struggled"
+    ],
+    "text": "To struggle is to try hard at something that is not easy. The sister raccoon struggled to make a ball.",
+    "audio": true
+  },
+  {
+    "k": "intelligent",
+    "t": "intelligent",
+    "kind": "vocab",
+    "pron": "in-TEL-uh-jent",
+    "forms": [
+      "intelligent"
+    ],
+    "text": "Intelligent means smart and good at learning. The raccoons showed they are very smart.",
+    "audio": true
+  },
+  {
+    "k": "cozumel",
+    "t": "Cozumel",
+    "kind": "name",
+    "forms": [
+      "Cozumel"
+    ],
+    "text": "Cozumel is an island in Mexico. It is the only place where pygmy raccoons live.",
+    "audio": true
+  },
+  {
+    "k": "mexico",
+    "t": "Mexico",
+    "kind": "name",
+    "forms": [
+      "Mexico"
+    ],
+    "text": "Mexico is a country just south of the United States.",
+    "audio": true
+  },
+  {
+    "k": "pygmy-raccoon",
+    "t": "Pygmy raccoons",
+    "kind": "name",
+    "forms": [
+      "Pygmy raccoons"
+    ],
+    "text": "Pygmy raccoons are very small raccoons. They live only on one island.",
+    "audio": true
+  },
+  {
+    "k": "scientist",
+    "t": "scientists",
+    "kind": "word",
+    "forms": [
+      "scientists",
+      "scientist"
+    ],
+    "text": "A scientist studies the world to learn how things work.",
+    "audio": true
+  },
+  {
+    "k": "creature",
+    "t": "creatures",
+    "kind": "word",
+    "forms": [
+      "creatures"
+    ],
+    "text": "A creature is any living animal.",
+    "audio": true
+  },
+  {
+    "k": "shock",
+    "t": "shocked",
+    "kind": "phrase",
+    "forms": [
+      "shocked"
+    ],
+    "text": "To shock someone is to surprise them a lot. The scientists did not expect toy balls.",
+    "audio": true
+  },
+  {
+    "k": "weigh",
+    "t": "weigh",
+    "kind": "word",
+    "forms": [
+      "weigh"
+    ],
+    "text": "To weigh is to be heavy by a certain amount. A scale tells you how much.",
+    "audio": true
+  },
+  {
+    "k": "pound",
+    "t": "pounds",
+    "kind": "word",
+    "forms": [
+      "pounds"
+    ],
+    "text": "A pound is a way to measure how heavy something is.",
+    "audio": true
+  },
+  {
+    "k": "kilogram",
+    "t": "kilograms",
+    "kind": "word",
+    "forms": [
+      "kilograms"
+    ],
+    "text": "A kilogram is another way to measure weight. It is a little more than two pounds.",
+    "audio": true
+  },
+  {
+    "k": "mangrove",
+    "t": "mangroves",
+    "kind": "word",
+    "forms": [
+      "mangroves"
+    ],
+    "text": "Mangroves are trees that grow in salty water by the sea. Their roots stick up out of the water.",
+    "audio": true
+  },
+  {
+    "k": "coast",
+    "t": "coast",
+    "kind": "word",
+    "forms": [
+      "coast"
+    ],
+    "text": "The coast is the land right next to the sea.",
+    "audio": true
+  },
+  {
+    "k": "hunt",
+    "t": "hunted",
+    "kind": "word",
+    "forms": [
+      "hunted"
+    ],
+    "text": "To hunt is to look for animals to eat.",
+    "audio": true
+  },
+  {
+    "k": "snail",
+    "t": "snails",
+    "kind": "word",
+    "forms": [
+      "snails"
+    ],
+    "text": "A snail is a small animal with a hard shell on its back. It moves very slowly.",
+    "audio": true
+  },
+  {
+    "k": "tourist",
+    "t": "tourist",
+    "kind": "word",
+    "forms": [
+      "tourist",
+      "tourists"
+    ],
+    "text": "A tourist is a person who visits a place on a trip. Tourists go to see new places.",
+    "audio": true
+  },
+  {
+    "k": "scraps",
+    "t": "scraps",
+    "kind": "word",
+    "forms": [
+      "scraps"
+    ],
+    "text": "Scraps are small bits left over, like food nobody finished.",
+    "audio": true
+  },
+  {
+    "k": "trash-can",
+    "t": "trash can",
+    "kind": "phrase",
+    "forms": [
+      "trash can",
+      "garbage cans"
+    ],
+    "text": "A trash can is a bin where people throw things away. Garbage can means the same.",
+    "audio": true
+  },
+  {
+    "k": "tortilla-chips",
+    "t": "tortilla chips",
+    "kind": "phrase",
+    "forms": [
+      "tortilla chips"
+    ],
+    "text": "Tortilla chips are crunchy, salty snacks made from corn.",
+    "audio": true
+  },
+  {
+    "k": "nessie-oneil",
+    "t": "Nessie O’Neil",
+    "kind": "name",
+    "forms": [
+      "Nessie O’Neil",
+      "Ms. O’Neil"
+    ],
+    "text": "Nessie O’Neil is the scientist who watched the raccoons.",
+    "audio": true
+  },
+  {
+    "k": "receipt",
+    "t": "receipt",
+    "kind": "word",
+    "forms": [
+      "receipt"
+    ],
+    "text": "A receipt is a small piece of paper you get when you buy something.",
+    "audio": true
+  },
+  {
+    "k": "bat",
+    "t": "batting",
+    "kind": "phrase",
+    "forms": [
+      "batting"
+    ],
+    "text": "To bat something is to tap it so it moves, like when a cat pats a toy.",
+    "audio": true
+  },
+  {
+    "k": "sister",
+    "t": "sister",
+    "kind": "word",
+    "forms": [
+      "sister",
+      "sisters"
+    ],
+    "text": "The sister is the first raccoon’s sibling. They are both young.",
+    "audio": true
+  },
+  {
+    "k": "take-over",
+    "t": "take over",
+    "kind": "phrase",
+    "forms": [
+      "take over"
+    ],
+    "text": "To take over is to start doing a job that someone else was doing.",
+    "audio": true
+  },
+  {
+    "k": "coati",
+    "t": "coatis",
+    "kind": "word",
+    "forms": [
+      "coatis"
+    ],
+    "text": "A coati is an animal like a raccoon with a long nose and a long tail.",
+    "audio": true
+  },
+  {
+    "k": "tool",
+    "t": "tools",
+    "kind": "word",
+    "forms": [
+      "tools"
+    ],
+    "text": "A tool is something an animal or person uses to do a job. A stick can be a tool.",
+    "audio": true
+  },
+  {
+    "k": "behavior",
+    "t": "behavior",
+    "kind": "word",
+    "forms": [
+      "behavior",
+      "behaviors"
+    ],
+    "text": "Behavior is the way an animal acts and what it does.",
+    "audio": true
+  },
+  {
+    "k": "culture",
+    "t": "culture",
+    "kind": "word",
+    "forms": [
+      "culture"
+    ],
+    "text": "In science, culture means animals learn new ways of doing things from each other.",
+    "audio": true
+  },
+  {
+    "k": "born",
+    "t": "born",
+    "kind": "phrase",
+    "forms": [
+      "born"
+    ],
+    "text": "Born with a skill means you already know it from the start, without being taught.",
+    "audio": true
+  },
+  {
+    "k": "passed-down",
+    "t": "passed down",
+    "kind": "phrase",
+    "forms": [
+      "passed down"
+    ],
+    "text": "Passed down means taught from one group to the next, like from parents to babies.",
+    "audio": true
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-23",
+  "title": "Tiny raccoons make their own toy balls",
+  "articleUrl": "https://newsforkids.net/articles/2026/10/15/tiny-endangered-raccoons-learn-to-make-toys/",
+  "articlePageUrl": "/articles/kids/2026-11-23.html",
+  "voiceQuiz": true,
+  "source": "News for Kids",
+  "vocab": [
+    {
+      "word": "endangered",
+      "partOfSpeech": "adjective",
+      "pronunciation": "en-DAYN-jerd",
+      "articleQuote": "These tiny raccoons are seriously endangered.",
+      "meaning": "An endangered animal is one that could disappear forever. There are only a few of them left in the world. In the article, fewer than 200 pygmy raccoons are still alive, so they are endangered.",
+      "examples": [
+        "Giant pandas were endangered, so people work hard to keep them safe.",
+        "We read a book about an endangered turtle that needs a clean beach."
+      ]
+    },
+    {
+      "word": "struggled",
+      "partOfSpeech": "verb",
+      "pronunciation": "STRUG-uld",
+      "articleQuote": "But she struggled.",
+      "meaning": "To struggle means to try hard at something that is not easy. You might not get it right at first. In the article, the sister raccoon struggled to roll paper into a ball.",
+      "examples": [
+        "I struggled to tie my shoes, but I kept trying.",
+        "The puppy struggled to climb up the big step."
+      ]
+    },
+    {
+      "word": "intelligent",
+      "partOfSpeech": "adjective",
+      "pronunciation": "in-TEL-uh-jent",
+      "articleQuote": "The raccoons’ behavior shows that they’re even more intelligent than scientists previously thought.",
+      "meaning": "Someone intelligent is smart and good at learning and thinking. You can see it when they solve a problem. In the article, the raccoons are intelligent because they made toys and learned from each other.",
+      "examples": [
+        "My dog is so intelligent that he opened the gate by himself.",
+        "The intelligent crow dropped nuts on the road to crack them."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Mangroves",
+      "articleQuote": "They are only found on Cozumel Island in Mexico, where they live in the mangroves along the coast.",
+      "meaning": "The tiny raccoons live in the mangroves. Mangroves are a kind of place where trees grow right in salty water by the sea.\n\nThink of a forest, but with its feet in the water. Most trees would not like that. Mangrove trees can live in it. Their roots stick up and spread out like long legs.\n\nThose roots are useful. They hold the mud in place so the shore does not wash away. They are also a safe home for crabs, snails, fish and birds. That is why the raccoons used to hunt crabs and snails there.\n\nSo mangroves are trees that grow in salty water along a coast, and many animals need them.\n"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Where do pygmy raccoons live?",
+      "options": [
+        "In big cities in Texas",
+        "On Cozumel Island in Mexico",
+        "In a snowy forest",
+        "On a ship"
+      ],
+      "answerIndex": 1,
+      "explanation": "Pygmy raccoons are only found on Cozumel Island in Mexico."
+    },
+    {
+      "question": "What did the young raccoon make from a wet paper receipt?",
+      "options": [
+        "A tiny boat",
+        "A bed",
+        "A ball to play with",
+        "A hat"
+      ],
+      "answerIndex": 2,
+      "explanation": "She got the receipt wet and rolled it on the sand until it was a ball."
+    },
+    {
+      "question": "What does \"endangered\" mean?",
+      "options": [
+        "Very big",
+        "Very loud",
+        "Very sleepy",
+        "In danger of disappearing forever"
+      ],
+      "answerIndex": 3,
+      "explanation": "An endangered animal has only a few left, so it could disappear forever."
+    },
+    {
+      "question": "Who learned to make a ball after watching the first raccoon?",
+      "options": [
+        "Her sister",
+        "A crab",
+        "A tourist",
+        "A coati"
+      ],
+      "answerIndex": 0,
+      "explanation": "The sister struggled at first. In time, she figured out how to make her own ball."
+    },
+    {
+      "question": "Why are mangroves good for animals?",
+      "options": [
+        "They are made of candy",
+        "They are very cold",
+        "Their roots hold the mud and make a safe home",
+        "They are tall buildings"
+      ],
+      "answerIndex": 2,
+      "explanation": "Mangrove roots hold the shore in place and are a safe home for crabs, snails, fish and birds."
+    }
+  ]
+}
