@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-23",
+  "title": "Are some salts healthier than others?",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/11/20/are-some-salts-healthier-than-others",
+  "articlePageUrl": "/articles/junior/2026-11-23.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "mitigate",
+      "partOfSpeech": "verb",
+      "pronunciation": "MIT-ih-gate",
+      "articleQuote": "Some manufacturers say certain varieties mitigate the harm.",
+      "meaning": "To mitigate something bad is to make it smaller or less harsh. It does not make the problem go away. Here, some salt makers claim their salt makes the harm from sodium smaller. You can mitigate a problem like a sore knee, a leaky roof, or a bad grade.",
+      "examples": [
+        "A raincoat can mitigate the damage from a stormy walk to school.",
+        "Stretching before the game helps mitigate the risk of getting hurt."
+      ]
+    },
+    {
+      "word": "deficiency",
+      "partOfSpeech": "noun",
+      "pronunciation": "dih-FISH-un-see",
+      "articleQuote": "The consequences of a deficiency can be severe, particularly among growing children and pregnant women.",
+      "meaning": "A deficiency is a shortage of something your body or a thing needs. Here, it means not getting enough iodine. The word is often used with vitamins and minerals, like a vitamin C deficiency.",
+      "examples": [
+        "A deficiency of sleep made him grumpy and slow all day.",
+        "The garden had a deficiency of water, so the plants drooped."
+      ]
+    },
+    {
+      "word": "excessive",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ik-SESS-iv",
+      "articleQuote": "Sodium raises blood pressure and excessive consumption is linked to cardiovascular and kidney diseases.",
+      "meaning": "Excessive means much more than is needed or healthy. Here, it means eating far too much salt. A little salt is fine, but excessive salt causes trouble. You can also have excessive noise, excessive homework, or excessive screen time.",
+      "examples": [
+        "Eating an excessive amount of candy gave her a stomachache.",
+        "The teacher said the noise in the hallway was excessive."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Blood pressure",
+      "articleQuote": "Sodium raises blood pressure and excessive consumption is linked to cardiovascular and kidney diseases.",
+      "meaning": "**Blood pressure** is how hard your blood pushes against the walls of your blood vessels as your heart pumps it around your body.\n\nThink of a garden hose. When the water is turned on gently, the hose stays relaxed. Turn the tap on full blast, and the hose gets stiff and strained, and if it stays that way for years, it can wear out or burst. Your blood vessels work the same way. Your heart is the pump, and the blood is the water.\n\nThat is why the article cares about salt. Too much sodium can push blood pressure up, and high blood pressure makes the heart and blood vessels work too hard, which can lead to a stroke, which is when blood cannot reach part of the brain. Doctors check blood pressure with a cuff around the arm. Lower is not always better, but a steady, healthy number protects you for life."
+    },
+    {
+      "name": "Controlled experiment",
+      "articleQuote": "Half of the villages were assigned standard table salt, the other half salt composed of 75% sodium chloride and 25% potassium chloride.",
+      "meaning": "A **controlled experiment** is a fair test where you split people or things into two groups and change only one thing between them.\n\nImagine you want to know if a new type of soccer shoe makes kids run faster. If you only give the shoes to your fastest friends, the test is not fair. So you split a team into two groups at random. One group wears the new shoes. The other group wears ordinary shoes. Everything else stays the same, and then you compare race times.\n\nThe salt study did just that. Half of 600 villages got regular salt, and half got salt with some potassium. After about five years, the potassium villages had fewer strokes. Because the groups were alike in every other way, the salt was the likely reason. A controlled experiment is how scientists tell the difference between luck and a real cause."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What do most supermarket salts, like pink Himalayan salt, mostly consist of?",
+      "options": ["Iron and zinc", "Plain sodium chloride", "Potassium chloride", "Iodine"],
+      "answerIndex": 1,
+      "explanation": "The article says most supermarket salts, from fleur de sel to pink Himalayan, mostly consist of plain old sodium chloride."
+    },
+    {
+      "question": "Which two additives does the article say are worth their salt?",
+      "options": ["Calcium and zinc", "Iron and sugar", "Iodine and potassium", "Pepper and garlic"],
+      "answerIndex": 2,
+      "explanation": "Iodine helps brains and bodies develop, and potassium helps lower blood pressure."
+    },
+    {
+      "question": "What did the study of 600 Chinese villages find about potassium-enriched salt?",
+      "options": [
+        "It tasted much worse than normal salt",
+        "It had no effect on health",
+        "It was linked to lower blood pressure and a lower chance of stroke",
+        "It made people thirsty"
+      ],
+      "answerIndex": 2,
+      "explanation": "Enriched salt was linked to lower blood pressure and about a 13% lower chance of stroke, heart problems and death."
+    },
+    {
+      "question": "Which sentence uses the word \"deficiency\" correctly?",
+      "options": [
+        "A deficiency of iodine can harm growing children.",
+        "The deficiency of cake was too sweet.",
+        "He ran a deficiency around the track.",
+        "The deficiency sang a loud song."
+      ],
+      "answerIndex": 0,
+      "explanation": "A deficiency is a shortage of something needed, like iodine."
+    },
+    {
+      "question": "What is the simplest way to bring down blood pressure, according to doctors?",
+      "options": [
+        "Eat only pink salt",
+        "Eat more salt of any kind",
+        "Consume less salt of any kind",
+        "Stop eating fish and eggs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says doctors agree the simplest way is to consume less salt of any kind."
+    }
+  ]
+}

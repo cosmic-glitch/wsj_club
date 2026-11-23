@@ -1,0 +1,425 @@
+[
+  {
+    "k": "mitigate",
+    "t": "mitigate",
+    "kind": "vocab",
+    "pron": "MIT-ih-gate",
+    "forms": [
+      "mitigate"
+    ],
+    "text": "To mitigate something bad is to make it smaller or less harsh. Some salt makers say their salt makes the harm from sodium smaller.",
+    "audio": true
+  },
+  {
+    "k": "deficiency",
+    "t": "deficiency",
+    "kind": "vocab",
+    "pron": "dih-FISH-un-see",
+    "forms": [
+      "deficiency"
+    ],
+    "text": "A deficiency is a shortage of something your body needs. Here it means not getting enough iodine.",
+    "audio": true
+  },
+  {
+    "k": "excessive",
+    "t": "excessive",
+    "kind": "vocab",
+    "pron": "ik-SESS-iv",
+    "forms": [
+      "excessive"
+    ],
+    "text": "Excessive means much more than is needed or healthy. A little salt is fine, but too much causes trouble.",
+    "audio": true
+  },
+  {
+    "k": "sodium",
+    "t": "sodium",
+    "kind": "name",
+    "forms": [
+      "sodium"
+    ],
+    "text": "Sodium is a mineral found in salt. Your body needs a little, but too much pushes blood pressure up.",
+    "audio": true
+  },
+  {
+    "k": "blood-pressure",
+    "t": "blood pressure",
+    "kind": "name",
+    "forms": [
+      "blood pressure"
+    ],
+    "text": "Blood pressure is how hard your blood pushes on the walls of your blood vessels as your heart pumps.",
+    "audio": true
+  },
+  {
+    "k": "cardiovascular",
+    "t": "cardiovascular",
+    "kind": "name",
+    "forms": [
+      "cardiovascular"
+    ],
+    "text": "Cardiovascular means having to do with the heart and the blood vessels that carry blood around the body.",
+    "audio": true
+  },
+  {
+    "k": "hydrate",
+    "t": "hydrate",
+    "kind": "word",
+    "forms": [
+      "hydrate"
+    ],
+    "text": "To hydrate is to give a body or a thing the water it needs.",
+    "audio": true
+  },
+  {
+    "k": "bloodstream",
+    "t": "bloodstream",
+    "kind": "word",
+    "forms": [
+      "bloodstream"
+    ],
+    "text": "The bloodstream is the blood flowing around inside your body, carrying water and food to every part.",
+    "audio": true
+  },
+  {
+    "k": "contract",
+    "t": "contract",
+    "kind": "word",
+    "forms": [
+      "contract"
+    ],
+    "text": "Here, contract means to get shorter and tighter. Muscles contract to move your body, then relax. It can also mean a written agreement, but not here.",
+    "audio": true
+  },
+  {
+    "k": "intestines",
+    "t": "intestines",
+    "kind": "word",
+    "forms": [
+      "intestines"
+    ],
+    "text": "The intestines are the long tubes in your belly where food is broken down and its nutrients are taken in.",
+    "audio": true
+  },
+  {
+    "k": "absorb",
+    "t": "absorb",
+    "kind": "word",
+    "forms": [
+      "absorb"
+    ],
+    "text": "To absorb is to soak something up. The intestines absorb nutrients from food into the body.",
+    "audio": true
+  },
+  {
+    "k": "nutrients",
+    "t": "nutrients",
+    "kind": "word",
+    "forms": [
+      "nutrients"
+    ],
+    "text": "Nutrients are the things in food, like vitamins and minerals, that help your body grow and work.",
+    "audio": true
+  },
+  {
+    "k": "bland",
+    "t": "blandest",
+    "kind": "word",
+    "forms": [
+      "blandest"
+    ],
+    "text": "Bland means plain, with very little taste. The blandest dishes are the ones with the least flavour.",
+    "audio": true
+  },
+  {
+    "k": "too-much-of-a-good-thing",
+    "t": "too much of a good thing",
+    "kind": "phrase",
+    "forms": [
+      "too much of a good thing"
+    ],
+    "text": "This saying means something helpful turns bad when you have too much of it, like salt.",
+    "audio": true
+  },
+  {
+    "k": "pinch",
+    "t": "pinch",
+    "kind": "phrase",
+    "forms": [
+      "pinch"
+    ],
+    "text": "Taking a claim with a pinch of salt means not believing it right away. The writer plays on this saying because the article is about salt.",
+    "audio": true
+  },
+  {
+    "k": "proverbial",
+    "t": "proverbial",
+    "kind": "word",
+    "forms": [
+      "proverbial"
+    ],
+    "text": "Proverbial means well known from a common saying. Here, the saying is to take something with a pinch of salt.",
+    "audio": true
+  },
+  {
+    "k": "fleur-de-sel",
+    "t": "fleur de sel",
+    "kind": "name",
+    "forms": [
+      "fleur de sel"
+    ],
+    "text": "Fleur de sel is a fancy, expensive sea salt from France. Its name means flower of salt in French.",
+    "audio": true
+  },
+  {
+    "k": "himalayan",
+    "t": "Himalayan",
+    "kind": "name",
+    "forms": [
+      "Himalayan"
+    ],
+    "text": "Himalayan means from the Himalayas, the huge mountain range in Asia. Pink Himalayan salt is mined there.",
+    "audio": true
+  },
+  {
+    "k": "sodium-chloride",
+    "t": "sodium chloride",
+    "kind": "name",
+    "forms": [
+      "sodium chloride"
+    ],
+    "text": "Sodium chloride is the scientific name for ordinary table salt.",
+    "audio": true
+  },
+  {
+    "k": "trace",
+    "t": "trace",
+    "kind": "word",
+    "forms": [
+      "trace"
+    ],
+    "text": "Trace amounts are tiny bits, so small they are barely there.",
+    "audio": true
+  },
+  {
+    "k": "minerals",
+    "t": "minerals",
+    "kind": "word",
+    "forms": [
+      "minerals"
+    ],
+    "text": "Minerals are natural substances, like calcium, iron and zinc, that the body needs in small amounts.",
+    "audio": true
+  },
+  {
+    "k": "concentrations",
+    "t": "concentrations",
+    "kind": "word",
+    "forms": [
+      "concentrations"
+    ],
+    "text": "A concentration is how much of a substance is packed into a certain amount of something else.",
+    "audio": true
+  },
+  {
+    "k": "who",
+    "t": "WHO",
+    "kind": "name",
+    "forms": [
+      "WHO"
+    ],
+    "text": "WHO stands for the World Health Organization, a group that gives health advice to countries around the world.",
+    "audio": true
+  },
+  {
+    "k": "additives",
+    "t": "additives",
+    "kind": "word",
+    "forms": [
+      "additives"
+    ],
+    "text": "Additives are things added to food, such as iodine added to salt.",
+    "audio": true
+  },
+  {
+    "k": "worth-their-salt",
+    "t": "worth their salt",
+    "kind": "phrase",
+    "forms": [
+      "worth their salt"
+    ],
+    "text": "To be worth your salt means to be good at your job or truly useful. Here it is a joke: only two additives are truly useful.",
+    "audio": true
+  },
+  {
+    "k": "iodine",
+    "t": "iodine",
+    "kind": "name",
+    "forms": [
+      "iodine"
+    ],
+    "text": "Iodine is a mineral the body needs to grow a healthy brain and body. Iodised salt has it added.",
+    "audio": true
+  },
+  {
+    "k": "iodised",
+    "t": "iodised",
+    "kind": "word",
+    "forms": [
+      "iodised"
+    ],
+    "text": "Iodised salt is salt with iodine added to it. This is the British spelling.",
+    "audio": true
+  },
+  {
+    "k": "potassium",
+    "t": "potassium",
+    "kind": "name",
+    "forms": [
+      "potassium"
+    ],
+    "text": "Potassium is a mineral, a close cousin of sodium. Too little of it can push blood pressure up.",
+    "audio": true
+  },
+  {
+    "k": "physiologist",
+    "t": "physiologist",
+    "kind": "word",
+    "forms": [
+      "physiologist"
+    ],
+    "text": "A physiologist is a scientist who studies how living bodies work.",
+    "audio": true
+  },
+  {
+    "k": "double-whammy",
+    "t": "double whammy",
+    "kind": "phrase",
+    "forms": [
+      "double whammy"
+    ],
+    "text": "A double whammy is two bad things happening at once. Too much sodium and too little potassium both raise blood pressure.",
+    "audio": true
+  },
+  {
+    "k": "two-birds",
+    "t": "two birds with one stone",
+    "kind": "phrase",
+    "forms": [
+      "two birds with one stone"
+    ],
+    "text": "This saying means solving two problems with one action. Potassium salt cuts sodium and adds potassium at once.",
+    "audio": true
+  },
+  {
+    "k": "texture",
+    "t": "texture",
+    "kind": "word",
+    "forms": [
+      "texture"
+    ],
+    "text": "Texture is how something feels, like smooth, crunchy or gritty.",
+    "audio": true
+  },
+  {
+    "k": "epidemiologist",
+    "t": "epidemiologist",
+    "kind": "word",
+    "forms": [
+      "epidemiologist"
+    ],
+    "text": "An epidemiologist is a scientist who studies how diseases spread and what causes them in groups of people.",
+    "audio": true
+  },
+  {
+    "k": "stroke",
+    "t": "stroke",
+    "kind": "word",
+    "forms": [
+      "stroke"
+    ],
+    "text": "A stroke is when blood cannot reach part of the brain, which can cause serious harm. It is not the same as stroking a pet.",
+    "audio": true
+  },
+  {
+    "k": "rural",
+    "t": "rural",
+    "kind": "word",
+    "forms": [
+      "rural"
+    ],
+    "text": "Rural means in the countryside, away from big towns and cities.",
+    "audio": true
+  },
+  {
+    "k": "standard",
+    "t": "standard",
+    "kind": "word",
+    "forms": [
+      "standard"
+    ],
+    "text": "Standard means ordinary or usual. Standard table salt is the normal salt most people use.",
+    "audio": true
+  },
+  {
+    "k": "enriched",
+    "t": "enriched",
+    "kind": "word",
+    "forms": [
+      "enriched"
+    ],
+    "text": "Enriched means having something extra added. Here, the salt has potassium added.",
+    "audio": true
+  },
+  {
+    "k": "associated",
+    "t": "associated",
+    "kind": "word",
+    "forms": [
+      "associated"
+    ],
+    "text": "Associated with means linked to. It says two things go together, though it does not prove one caused the other.",
+    "audio": true
+  },
+  {
+    "k": "simulations",
+    "t": "simulations",
+    "kind": "word",
+    "forms": [
+      "simulations"
+    ],
+    "text": "A simulation is a computer model that acts out what might happen in real life.",
+    "audio": true
+  },
+  {
+    "k": "model",
+    "t": "model",
+    "kind": "word",
+    "forms": [
+      "model"
+    ],
+    "text": "Here, to model means to use maths and a computer to predict what would happen. It is not a fashion model.",
+    "audio": true
+  },
+  {
+    "k": "complications",
+    "t": "complications",
+    "kind": "word",
+    "forms": [
+      "complications"
+    ],
+    "text": "Complications are new problems that make an illness or situation harder.",
+    "audio": true
+  },
+  {
+    "k": "kidney",
+    "t": "kidney",
+    "kind": "word",
+    "forms": [
+      "kidney"
+    ],
+    "text": "Kidneys are two organs that clean waste out of your blood. People with kidney disease should be careful with potassium.",
+    "audio": true
+  }
+]
