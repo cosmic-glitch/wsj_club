@@ -1,0 +1,338 @@
+[
+  {
+    "k": "nimble",
+    "t": "nimble",
+    "kind": "vocab",
+    "pron": "NIM-bul",
+    "forms": [
+      "nimble"
+    ],
+    "text": "Nimble means quick and light on your feet. For companies it means able to change plans or launch products fast. Here it praises Transsion for developing phones in just four to eight months.",
+    "audio": true
+  },
+  {
+    "k": "stagnate",
+    "t": "stagnated",
+    "kind": "vocab",
+    "pron": "STAG-nate",
+    "forms": [
+      "stagnated"
+    ],
+    "text": "To stagnate is to stop growing, like pond water that no longer flows. Here Transsion's revenue soared for five years and then stopped climbing.",
+    "audio": true
+  },
+  {
+    "k": "agentic",
+    "t": "agentic",
+    "kind": "vocab",
+    "pron": "ay-JEN-tik",
+    "forms": [
+      "agentic"
+    ],
+    "text": "Agentic describes AI that acts for you, like an agent, rather than only answering questions. Here it is the feature Samsung uses to sell fancier phones in Brazil.",
+    "audio": true
+  },
+  {
+    "k": "global-south",
+    "t": "the global south",
+    "kind": "name",
+    "forms": [
+      "global south"
+    ],
+    "text": "The global south is a loose label for the developing and emerging economies of Africa, Latin America and much of Asia. Many of the people there have less money to spend on gadgets, which is why cheap phones sell so well.",
+    "audio": true
+  },
+  {
+    "k": "by-volume",
+    "t": "by volume",
+    "kind": "phrase",
+    "forms": [
+      "by volume"
+    ],
+    "text": "By volume means counted by the number of items sold, not the money earned. A firm selling many cheap phones can lead by volume while earning less than a rival selling a few expensive ones.",
+    "audio": true
+  },
+  {
+    "k": "handsets",
+    "t": "handsets",
+    "kind": "word",
+    "forms": [
+      "handsets",
+      "handset"
+    ],
+    "text": "A handset is a mobile phone, the device you hold in your hand. The word is common in business news about phone-makers.",
+    "audio": true
+  },
+  {
+    "k": "shifted",
+    "t": "shifted",
+    "kind": "word",
+    "forms": [
+      "shifted"
+    ],
+    "text": "Shifted usually means moved, but here it means sold. The article says Transsion sold 170m phones last year.",
+    "audio": true
+  },
+  {
+    "k": "tailored",
+    "t": "tailored",
+    "kind": "word",
+    "forms": [
+      "tailored",
+      "tailoring"
+    ],
+    "text": "Tailored comes from a tailor who cuts clothes to fit one person. Here it means designed to fit particular customers, in price and features.",
+    "audio": true
+  },
+  {
+    "k": "pillars",
+    "t": "pillars",
+    "kind": "word",
+    "forms": [
+      "pillars"
+    ],
+    "text": "A pillar is a column holding up a building. Here it is a figure of speech for the main things that support Transsion's success.",
+    "audio": true
+  },
+  {
+    "k": "distributors",
+    "t": "distributors",
+    "kind": "word",
+    "forms": [
+      "distributors"
+    ],
+    "text": "Distributors are the middlemen who buy goods from a maker and deliver them to shops. Transsion uses 2,900 of them to reach over 100 countries.",
+    "audio": true
+  },
+  {
+    "k": "telecoms",
+    "t": "telecoms providers",
+    "kind": "word",
+    "forms": [
+      "telecoms providers"
+    ],
+    "text": "Telecoms providers are the phone and internet companies, such as mobile network operators. Ties with them help Transsion sell phones with their plans.",
+    "audio": true
+  },
+  {
+    "k": "sweat-resistant",
+    "t": "sweat-resistant",
+    "kind": "word",
+    "forms": [
+      "sweat-resistant"
+    ],
+    "text": "Sweat-resistant means built so that moisture does not damage it. Hot, humid climates can corrode USB ports, so Transsion made its ports tougher.",
+    "audio": true
+  },
+  {
+    "k": "outsources",
+    "t": "outsources",
+    "kind": "word",
+    "forms": [
+      "outsources"
+    ],
+    "text": "To outsource is to pay another company to do work you could do yourself. Here Transsion hires 17 contractors to make about 60% of its phones.",
+    "audio": true
+  },
+  {
+    "k": "hybrid",
+    "t": "hybrid",
+    "kind": "word",
+    "forms": [
+      "hybrid"
+    ],
+    "text": "A hybrid mixes two different things, like a car with both a petrol engine and a battery. Here it means making phones partly in its own factories and partly through contractors.",
+    "audio": true
+  },
+  {
+    "k": "contractors",
+    "t": "contractors",
+    "kind": "word",
+    "forms": [
+      "contractors"
+    ],
+    "text": "Contractors are outside companies hired to do a job. Here they are the factories that build phones for Transsion.",
+    "audio": true
+  },
+  {
+    "k": "listed",
+    "t": "listed",
+    "kind": "word",
+    "forms": [
+      "listed"
+    ],
+    "text": "When a company lists its shares, it lets the public buy them on a stock exchange. Transsion listed in Shanghai in 2019.",
+    "audio": true
+  },
+  {
+    "k": "stagnated-share",
+    "t": "share price",
+    "kind": "phrase",
+    "forms": [
+      "share price"
+    ],
+    "text": "A share price is what one slice of a company costs on the stock market. It falls when investors expect the firm to do worse.",
+    "audio": true
+  },
+  {
+    "k": "intensifying",
+    "t": "intensifying",
+    "kind": "word",
+    "forms": [
+      "intensifying"
+    ],
+    "text": "Intensifying means becoming stronger or more severe. Here competition among phone-makers is getting fiercer.",
+    "audio": true
+  },
+  {
+    "k": "semiconductors",
+    "t": "semiconductors",
+    "kind": "word",
+    "forms": [
+      "semiconductors"
+    ],
+    "text": "Semiconductors are the tiny chips that act as the brains and memory of electronics. The AI boom has raised demand and prices for them.",
+    "audio": true
+  },
+  {
+    "k": "fancier",
+    "t": "fancier",
+    "kind": "word",
+    "forms": [
+      "fancier"
+    ],
+    "text": "Fancier means more elaborate and usually pricier. Samsung sells more advanced phones than Transsion's budget models.",
+    "audio": true
+  },
+  {
+    "k": "shipments",
+    "t": "shipments",
+    "kind": "word",
+    "forms": [
+      "shipments"
+    ],
+    "text": "Shipments are the number of products a company sends to sellers in a period. They are a common way to measure phone sales.",
+    "audio": true
+  },
+  {
+    "k": "memory-chips",
+    "t": "memory chips",
+    "kind": "name",
+    "forms": [
+      "Memory chips"
+    ],
+    "text": "Memory chips store a phone's data and apps while it works. Their price jumped as AI data centres bought huge amounts, squeezing phone-makers.",
+    "audio": true
+  },
+  {
+    "k": "biting",
+    "t": "biting",
+    "kind": "word",
+    "forms": [
+      "biting"
+    ],
+    "text": "Biting here is figurative: costs are biting means they are starting to hurt, like a sharp nip.",
+    "audio": true
+  },
+  {
+    "k": "jacked-up",
+    "t": "jacked up",
+    "kind": "phrase",
+    "forms": [
+      "jacked up"
+    ],
+    "text": "To jack up prices is an informal way of saying to raise them sharply, like lifting a car with a jack.",
+    "audio": true
+  },
+  {
+    "k": "shielded",
+    "t": "shielded",
+    "kind": "word",
+    "forms": [
+      "shielded"
+    ],
+    "text": "To shield is to protect from harm. Raising prices protected Transsion's profit margin, although it cost sales.",
+    "audio": true
+  },
+  {
+    "k": "gross-margin",
+    "t": "gross margin",
+    "kind": "name",
+    "forms": [
+      "gross margin"
+    ],
+    "text": "Gross margin is the share of sales left after paying the direct costs of making the product. If a phone sells for $100 and costs $80 to build, the gross margin is 20%.",
+    "audio": true
+  },
+  {
+    "k": "volume",
+    "t": "volume",
+    "kind": "word",
+    "forms": [
+      "volume"
+    ],
+    "text": "Volume here means the quantity of things sold, not loudness. Transsion sold fewer phones even as each cost more.",
+    "audio": true
+  },
+  {
+    "k": "branching-out",
+    "t": "branching out",
+    "kind": "phrase",
+    "forms": [
+      "branching out"
+    ],
+    "text": "To branch out is to expand into new activities, like a tree growing new limbs. Transsion now sells watches, appliances and electric vehicles.",
+    "audio": true
+  },
+  {
+    "k": "a-stretch",
+    "t": "a stretch",
+    "kind": "phrase",
+    "forms": [
+      "a stretch"
+    ],
+    "text": "Calling something a stretch means it goes beyond what seems natural or believable. The article says selling e-bikes may sound like a stretch for a phone firm.",
+    "audio": true
+  },
+  {
+    "k": "integrated",
+    "t": "integrated",
+    "kind": "word",
+    "forms": [
+      "integrated"
+    ],
+    "text": "Integrated means joined so that parts work together smoothly. Transsion's software runs across its devices.",
+    "audio": true
+  },
+  {
+    "k": "bet",
+    "t": "bet",
+    "kind": "phrase",
+    "forms": [
+      "bet",
+      "bets"
+    ],
+    "text": "A bet here means a risky choice made in hope of a payoff. AI is Transsion's biggest long-term gamble.",
+    "audio": true
+  },
+  {
+    "k": "foundation-models",
+    "t": "visual foundation models",
+    "kind": "name",
+    "forms": [
+      "visual foundation models"
+    ],
+    "text": "A foundation model is a large AI trained on huge amounts of data so it can be adapted to many tasks. A visual one learns from images, for example to improve phone cameras.",
+    "audio": true
+  },
+  {
+    "k": "transitions",
+    "t": "transitions",
+    "kind": "word",
+    "forms": [
+      "transitions"
+    ],
+    "text": "To transition is to change from one state to another. The closing joke plays on the similar-sounding words transition and Transsion.",
+    "audio": true
+  }
+]

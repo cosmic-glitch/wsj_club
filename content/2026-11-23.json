@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-23",
+  "title": "The global south’s smartphone king goes big on AI",
+  "articleUrl": "https://www.economist.com/business/2026/11/19/the-global-souths-smartphone-king-goes-big-on-ai",
+  "articlePageUrl": "/articles/2026-11-23.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "nimble",
+      "partOfSpeech": "adjective",
+      "pronunciation": "NIM-bul",
+      "articleQuote": "the phone-maker has proved nimble, taking four to eight months to develop its smartphones",
+      "meaning": "Nimble means quick and light on your feet, like a gymnast changing direction in mid-air. Businesses use it for companies that can change plans or launch products fast, the opposite of slow and clumsy. Here it praises Transsion for going from idea to finished phone in just four to eight months.",
+      "examples": [
+        "The small bakery was nimble enough to start selling vegan cupcakes the week customers began asking for them.",
+        "With nimble fingers, she tied the tricky knot in seconds."
+      ]
+    },
+    {
+      "word": "stagnate",
+      "partOfSpeech": "verb",
+      "pronunciation": "STAG-nate",
+      "articleQuote": "But since then it has stagnated.",
+      "meaning": "To stagnate is to stop growing or improving, like pond water that no longer flows and goes stale. It is often used for sales, wages or economies that stay flat for a long time. Here it describes Transsion's revenue, which soared for five years and then stopped climbing.",
+      "examples": [
+        "Her grades began to stagnate once she stopped trying new study methods.",
+        "If a town stops building homes and shops, its economy can stagnate."
+      ]
+    },
+    {
+      "word": "agentic",
+      "partOfSpeech": "adjective",
+      "pronunciation": "ay-JEN-tik",
+      "articleQuote": "Samsung is pushing fancier devices with agentic AI",
+      "meaning": "Agentic comes from agent, someone who acts on your behalf, like a travel agent. Agentic AI is software that does not just answer questions but takes steps for you, such as booking a table or sorting your messages. Here it is the selling point Samsung uses to tempt buyers toward its pricier phones.",
+      "examples": [
+        "An agentic assistant could read your emails, find the dentist's offer and book the appointment itself.",
+        "Unlike a chatbot that only suggests recipes, an agentic app might order the groceries too."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Gross margin",
+      "articleQuote": "has jacked up handset prices, which has shielded its gross margin but caused a decline in the volume of smartphone sales",
+      "meaning": "Business and accounting: gross margin is the share of each sale left over after paying the direct cost of making the product.\n\nImagine you sell lemonade for $2 a cup and the lemons, sugar and cup cost 80 cents. You keep $1.20, so your gross margin is 60%. Now lemons get pricier and the ingredients cost $1.20. Your margin falls to 40% unless you raise the price. That is Transsion's squeeze: memory chips went from a fifth of its production cost to nearly half, which would crush its margin.\n\nThe company raised prices to protect the margin, but that has a price of its own. Some customers, who have little money to spend, simply did not buy, so it sold fewer phones. Higher margin per phone times fewer phones can mean less growth overall. The takeaway: when costs rise, a firm chooses between squeezing its margin and losing customers, and often it cannot avoid both."
+    },
+    {
+      "name": "Contract manufacturing",
+      "articleQuote": "Transsion makes about 40% of its smartphones in six factories of its own",
+      "meaning": "Business and operations: many well-known brands do not build everything they sell. A contract manufacturer is a company that makes products for another firm, which then puts its own brand on them.\n\nThink of a restaurant that bakes some of its bread in the back but buys the rest from a bakery down the road. Doing it yourself gives you control over quality and timing. Hiring a specialist lets you make more without paying for new ovens, and you can cut back quickly if demand drops. The article calls Transsion's mix of the two a hybrid set-up: about 40% of phones are made in six of its own factories (in China, Bangladesh and Ethiopia) and the rest by 17 outside contractors, mostly in China.\n\nThe trade-off is control versus flexibility. Because it can shift work between its own factories and contractors, Transsion can turn out new phone models in four to eight months, which helps it keep up with changing local tastes."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the article, what does Transsion sell the most of in the global south?",
+      "options": [
+        "Cheap phones tailored to local needs, selling more than half of Africa's phones",
+        "High-end phones that cost more than an iPhone",
+        "Only smart watches and earbuds",
+        "Software for other phone-makers"
+      ],
+      "answerIndex": 0,
+      "explanation": "Transsion is the biggest phone-seller in the global south by volume and makes up more than half of phone purchases in Africa."
+    },
+    {
+      "question": "Which of these is an example of Transsion tailoring its phones to local conditions?",
+      "options": [
+        "Adding a solar panel to every phone sold in Brazil",
+        "Long battery life and fast charging for places with frequent power outages",
+        "Removing the camera to cut costs in India",
+        "Making phones only in Ethiopia"
+      ],
+      "answerIndex": 1,
+      "explanation": "For Africa, where power outages are frequent, it focuses on long battery life and speedy charging."
+    },
+    {
+      "question": "Why did Transsion's smartphone sales fall in the first half of the year?",
+      "options": [
+        "Governments banned its phones",
+        "It stopped selling in Africa",
+        "Pricier memory chips led it to raise prices, and users held on to older phones for longer",
+        "Samsung bought its factories"
+      ],
+      "answerIndex": 2,
+      "explanation": "Chip costs soared, so Transsion raised handset prices, which shielded its margin but cut the volume sold."
+    },
+    {
+      "question": "Why does the article say moving into products like battery modules and e-bikes may not be a stretch?",
+      "options": [
+        "Consumers in the global south often stick to familiar brands, and Transsion's operating systems work across its products",
+        "Battery modules are cheaper to make than phones",
+        "Governments in Africa require phone-makers to sell them",
+        "Samsung is already doing the same"
+      ],
+      "answerIndex": 0,
+      "explanation": "Brand loyalty plus integrated operating systems make it easier to sell other products to existing customers."
+    },
+    {
+      "question": "How does Transsion plan to use most of the $390m it raised in its Hong Kong listing?",
+      "options": [
+        "Opening more factories in Africa",
+        "Paying off debts to its 17 contractors",
+        "Buying Samsung's phone business in Brazil",
+        "Working on AI models and applications, with two-fifths of the money"
+      ],
+      "answerIndex": 3,
+      "explanation": "It plans to spend two-fifths of the money on AI models and applications, its biggest long-term bet."
+    }
+  ]
+}
