@@ -1,0 +1,572 @@
+[
+  {
+    "k": "exemplar",
+    "t": "exemplar",
+    "kind": "vocab",
+    "pron": "ig-ZEM-plar",
+    "forms": [
+      "exemplar"
+    ],
+    "text": "An exemplar is a model worth copying, a person or thing that shows the ideal. Here the current navy chief admires Admiral Fisher as his role model, yet the writer notes even role models make mistakes.",
+    "audio": true
+  },
+  {
+    "k": "disaggregation",
+    "t": "Disaggregation",
+    "kind": "vocab",
+    "pron": "dis-ag-rih-GAY-shun",
+    "forms": [
+      "Disaggregation"
+    ],
+    "text": "Disaggregation means breaking one combined thing into separate parts. Here the jobs of one big warship are split across many small vessels, so they must rely on radio links to work as a team.",
+    "audio": true
+  },
+  {
+    "k": "latency",
+    "t": "latency",
+    "kind": "vocab",
+    "pron": "LAY-ten-see",
+    "forms": [
+      "latency"
+    ],
+    "text": "Latency is the delay between sending a signal and getting a response, like lag in a video game. Low latency matters here because a missile ship has only seconds to act on sensor data.",
+    "audio": true
+  },
+  {
+    "k": "uncrewed",
+    "t": "uncrewed",
+    "kind": "word",
+    "forms": [
+      "uncrewed"
+    ],
+    "text": "Uncrewed means with no people aboard; the vessel is run by computers and remote links. It is the modern, gender-neutral version of unmanned.",
+    "audio": true
+  },
+  {
+    "k": "hybrid-navy",
+    "t": "hybrid navy",
+    "kind": "phrase",
+    "forms": [
+      "hybrid navy"
+    ],
+    "text": "A hybrid is a mix of two different kinds of things. Here it means a fleet that blends traditional crewed ships and submarines with uncrewed vessels.",
+    "audio": true
+  },
+  {
+    "k": "autonomous",
+    "t": "Autonomous",
+    "kind": "word",
+    "forms": [
+      "Autonomous",
+      "semi-autonomous"
+    ],
+    "text": "Autonomous means able to act on its own without constant human control. Semi-autonomous vessels can do much by themselves but still answer to human operators.",
+    "audio": true
+  },
+  {
+    "k": "squadron",
+    "t": "Squadron",
+    "kind": "word",
+    "forms": [
+      "Squadron",
+      "squadron"
+    ],
+    "text": "A squadron is a unit of a military force, a group of ships or aircraft that operate together under one commander.",
+    "audio": true
+  },
+  {
+    "k": "monitor",
+    "t": "monitor",
+    "kind": "word",
+    "forms": [
+      "monitor"
+    ],
+    "text": "To monitor is to watch and check something over time. Here the boats will keep watch over the seas for threats such as drones.",
+    "audio": true
+  },
+  {
+    "k": "prepare-last-war",
+    "t": "prepare for the last war",
+    "kind": "phrase",
+    "forms": [
+      "prepare for the last war rather than the next",
+      "prepare for the last war"
+    ],
+    "text": "This saying means that armed forces tend to plan for the kind of fighting that just happened instead of what comes next. Here the article says Britain is trying to avoid that trap.",
+    "audio": true
+  },
+  {
+    "k": "all-in",
+    "t": "all-in",
+    "kind": "phrase",
+    "forms": [
+      "all-in",
+      "going all-in"
+    ],
+    "text": "Going all-in comes from poker, where you push all your chips into the pot. Here it means committing fully to one risky plan with no safety net.",
+    "audio": true
+  },
+  {
+    "k": "first-sea-lord",
+    "t": "first sea lord",
+    "kind": "name",
+    "forms": [
+      "first sea lord"
+    ],
+    "text": "The first sea lord is the professional head of the Royal Navy, the top uniformed officer. Here that is Sir Gwyn Jenkins.",
+    "audio": true
+  },
+  {
+    "k": "crewed",
+    "t": "crewed",
+    "kind": "word",
+    "forms": [
+      "crewed"
+    ],
+    "text": "Crewed means operated by people on board. The opposite is uncrewed, which has no sailors aboard.",
+    "audio": true
+  },
+  {
+    "k": "integrated",
+    "t": "integrated",
+    "kind": "word",
+    "forms": [
+      "integrated"
+    ],
+    "text": "Integrated means joined together so the parts work as one system. Here all ships, crewed or not, should share information and act as a team.",
+    "audio": true
+  },
+  {
+    "k": "dreadnought",
+    "t": "Dreadnought",
+    "kind": "name",
+    "forms": [
+      "Dreadnought"
+    ],
+    "text": "HMS Dreadnought, launched in 1906, was a revolutionary British battleship with big, uniform guns and turbine engines. It made all older battleships look obsolete, and its name became a byword for a huge leap in naval power.",
+    "audio": true
+  },
+  {
+    "k": "jackie-fisher",
+    "t": "Fisher",
+    "kind": "name",
+    "forms": [
+      "Fisher",
+      "Fisher’s"
+    ],
+    "text": "Admiral Sir John 'Jackie' Fisher led the Royal Navy in the early 1900s and pushed through big changes, including the Dreadnought. Supporters of the new plan compare it to his reforms.",
+    "audio": true
+  },
+  {
+    "k": "doctrinal",
+    "t": "doctrinal",
+    "kind": "word",
+    "forms": [
+      "doctrinal"
+    ],
+    "text": "Doctrine is the set of principles a military uses to decide how to fight. A doctrinal shift means a change in the basic thinking about how wars are fought.",
+    "audio": true
+  },
+  {
+    "k": "deterrent",
+    "t": "deterrent",
+    "kind": "word",
+    "forms": [
+      "deterrent"
+    ],
+    "text": "A deterrent is something that discourages an attack by threatening a painful response. Britain's nuclear submarines are meant to make any enemy think twice.",
+    "audio": true
+  },
+  {
+    "k": "lines-of-communication",
+    "t": "lines of communication",
+    "kind": "phrase",
+    "forms": [
+      "lines of communication"
+    ],
+    "text": "In military talk this means the routes, such as sea lanes, that carry supplies, troops and messages. Keeping them open means enemies cannot cut them.",
+    "audio": true
+  },
+  {
+    "k": "high-north",
+    "t": "High North",
+    "kind": "name",
+    "forms": [
+      "High North"
+    ],
+    "text": "The High North is the Arctic and the northernmost parts of Europe and the Atlantic, an area of growing rivalry between Russia and NATO countries.",
+    "audio": true
+  },
+  {
+    "k": "critical-infrastructure",
+    "t": "critical undersea infrastructure",
+    "kind": "phrase",
+    "forms": [
+      "critical undersea infrastructure"
+    ],
+    "text": "This means vital things on the seabed, mainly internet and phone cables and energy pipelines, which a country depends on and which an enemy could sabotage.",
+    "audio": true
+  },
+  {
+    "k": "kola",
+    "t": "Kola Peninsula",
+    "kind": "name",
+    "forms": [
+      "Kola Peninsula"
+    ],
+    "text": "The Kola Peninsula is in Russia's far north-west, next to Norway. It is home to the main bases of Russia's Northern Fleet, including many of its submarines.",
+    "audio": true
+  },
+  {
+    "k": "giuk-gap",
+    "t": "Greenland-Iceland-UK gap",
+    "kind": "name",
+    "forms": [
+      "Greenland-Iceland-UK gap"
+    ],
+    "text": "This is the stretch of the North Atlantic between Greenland, Iceland and the UK. Russian submarines heading out into the Atlantic have to pass through it, so NATO watches it closely.",
+    "audio": true
+  },
+  {
+    "k": "slip-through",
+    "t": "slip through",
+    "kind": "phrase",
+    "forms": [
+      "slip through"
+    ],
+    "text": "To slip through is to pass by unnoticed. Here the worry is that Russian submarines could sneak past the navy's watching eyes.",
+    "audio": true
+  },
+  {
+    "k": "think-tank",
+    "t": "think-tank",
+    "kind": "word",
+    "forms": [
+      "think-tank"
+    ],
+    "text": "A think-tank is an organisation of researchers who study policy questions and publish analysis and advice. RUSI and the IISS are defence think-tanks.",
+    "audio": true
+  },
+  {
+    "k": "exquisite",
+    "t": "exquisite",
+    "kind": "word",
+    "forms": [
+      "exquisite"
+    ],
+    "text": "Exquisite usually means beautiful, but here it means extremely refined, advanced and expensive. The navy's top warships are so costly and complex that it can afford only a few.",
+    "audio": true
+  },
+  {
+    "k": "platform",
+    "t": "platforms",
+    "kind": "word",
+    "forms": [
+      "platforms",
+      "platform"
+    ],
+    "text": "In military language a platform is any vehicle, ship or aircraft that carries weapons or sensors. It does not mean a train station or a website here.",
+    "audio": true
+  },
+  {
+    "k": "all-in-bet",
+    "t": "all-in bet",
+    "kind": "phrase",
+    "forms": [
+      "all-in bet"
+    ],
+    "text": "A bet where you risk everything on one outcome. The expert calls it entirely rational because the alternatives were also bad.",
+    "audio": true
+  },
+  {
+    "k": "defence-investment-plan",
+    "t": "Defence Investment Plan",
+    "kind": "name",
+    "forms": [
+      "Defence Investment Plan"
+    ],
+    "text": "This is the British government's plan for what to spend on defence equipment over the coming years. It cancelled the destroyers and set the navy's budget.",
+    "audio": true
+  },
+  {
+    "k": "air-defence-destroyers",
+    "t": "air-defence destroyers",
+    "kind": "phrase",
+    "forms": [
+      "air-defence destroyers"
+    ],
+    "text": "Destroyers built mainly to shoot down enemy aircraft and missiles, protecting the ships around them. Each would have cost £2.5bn.",
+    "audio": true
+  },
+  {
+    "k": "cut-steel",
+    "t": "before the first steel was even cut",
+    "kind": "phrase",
+    "forms": [
+      "before the first steel was even cut"
+    ],
+    "text": "A shipbuilding phrase: the first steel is cut at the start of construction. So the ships would have been outdated before building had even begun.",
+    "audio": true
+  },
+  {
+    "k": "mass-lethality",
+    "t": "mass and lethality",
+    "kind": "phrase",
+    "forms": [
+      "mass and lethality"
+    ],
+    "text": "In defence talk, mass means having a large number of ships, planes or weapons, and lethality means how much damage they can do. Here the navy wants plenty of both.",
+    "audio": true
+  },
+  {
+    "k": "ccv",
+    "t": "Common Combat Vessels",
+    "kind": "name",
+    "forms": [
+      "Common Combat Vessels",
+      "CCVs"
+    ],
+    "text": "The Common Combat Vessels are the six new ships the navy ordered. They carry the teams who control fleets of uncrewed vessels around them.",
+    "audio": true
+  },
+  {
+    "k": "frigate",
+    "t": "frigate",
+    "kind": "word",
+    "forms": [
+      "frigate"
+    ],
+    "text": "A frigate is a mid-sized warship that escorts other vessels and hunts submarines. Smaller and cheaper than a destroyer.",
+    "audio": true
+  },
+  {
+    "k": "command-and-control",
+    "t": "command-and-control",
+    "kind": "phrase",
+    "forms": [
+      "command-and-control"
+    ],
+    "text": "Command and control is the process of making decisions and sending orders to forces. Here the CCV crews do that for the uncrewed boats.",
+    "audio": true
+  },
+  {
+    "k": "sloop",
+    "t": "sloops",
+    "kind": "word",
+    "forms": [
+      "sloops"
+    ],
+    "text": "A sloop was once a small sailing warship. Here the navy revives the old name for a small vessel that carries out undersea surveillance.",
+    "audio": true
+  },
+  {
+    "k": "picket",
+    "t": "picket ships",
+    "kind": "phrase",
+    "forms": [
+      "picket ships"
+    ],
+    "text": "A picket is a lookout placed away from the main force to give early warning of attack. Picket ships are radar vessels doing that job at sea.",
+    "audio": true
+  },
+  {
+    "k": "sensing",
+    "t": "sensing",
+    "kind": "word",
+    "forms": [
+      "sensing"
+    ],
+    "text": "Sensing means detecting what is out there using radar, sonar and cameras. It is one of three jobs of a warship, alongside decision-making and using weapons.",
+    "audio": true
+  },
+  {
+    "k": "one-way-attack",
+    "t": "one-way attack vessels",
+    "kind": "phrase",
+    "forms": [
+      "one-way attack vessels"
+    ],
+    "text": "Drone boats packed with explosives that are meant to crash into a target, so they are used once. Ukraine has used them against Russian ships.",
+    "audio": true
+  },
+  {
+    "k": "black-sea",
+    "t": "Black Sea",
+    "kind": "name",
+    "forms": [
+      "Black Sea"
+    ],
+    "text": "The Black Sea is a relatively small, enclosed sea bordered by Ukraine, Russia and Turkey, among others. Its waters are calmer than the North Atlantic.",
+    "audio": true
+  },
+  {
+    "k": "throw-away",
+    "t": "throw away",
+    "kind": "phrase",
+    "forms": [
+      "throw away"
+    ],
+    "text": "Meaning cheap and disposable, used once and discarded. The article says the Type 9Xs are too large and valuable for that.",
+    "audio": true
+  },
+  {
+    "k": "modular",
+    "t": "modular",
+    "kind": "word",
+    "forms": [
+      "modular"
+    ],
+    "text": "Modular means built from standard parts that can be swapped or combined. Modular hulls could be made in many shipyards and fitted together.",
+    "audio": true
+  },
+  {
+    "k": "naval-yards",
+    "t": "two biggest naval yards",
+    "kind": "phrase",
+    "forms": [
+      "two biggest naval yards"
+    ],
+    "text": "Shipyards in Scotland build almost all of Britain's big warships. Spreading work to other yards would make it quicker to build more.",
+    "audio": true
+  },
+  {
+    "k": "availability",
+    "t": "availability",
+    "kind": "word",
+    "forms": [
+      "availability"
+    ],
+    "text": "In navy terms, availability is the share of time a ship is ready for operations rather than being repaired or training.",
+    "audio": true
+  },
+  {
+    "k": "electromagnetic-pulse",
+    "t": "electromagnetic pulse",
+    "kind": "phrase",
+    "forms": [
+      "electromagnetic pulse"
+    ],
+    "text": "An electromagnetic pulse is a burst of energy, which a nuclear blast can produce, that can fry electronics over a wide area.",
+    "audio": true
+  },
+  {
+    "k": "jamming",
+    "t": "jamming",
+    "kind": "word",
+    "forms": [
+      "jamming"
+    ],
+    "text": "Jamming means flooding a radio frequency with noise so that real signals cannot get through, like shouting over someone to stop them being heard.",
+    "audio": true
+  },
+  {
+    "k": "spoofing",
+    "t": "spoofing",
+    "kind": "word",
+    "forms": [
+      "spoofing"
+    ],
+    "text": "Spoofing means sending fake signals that look real, such as false GPS positions, to trick a vessel into going the wrong way or obeying a false order.",
+    "audio": true
+  },
+  {
+    "k": "weakest-link",
+    "t": "weakest link",
+    "kind": "phrase",
+    "forms": [
+      "weakest link"
+    ],
+    "text": "A chain is only as strong as its weakest link. So the part most likely to fail decides how good the whole system is.",
+    "audio": true
+  },
+  {
+    "k": "acid-test",
+    "t": "acid test",
+    "kind": "phrase",
+    "forms": [
+      "acid test"
+    ],
+    "text": "An acid test is a decisive trial that proves whether something works. The phrase comes from using acid to test whether a metal was real gold.",
+    "audio": true
+  },
+  {
+    "k": "contested",
+    "t": "contested",
+    "kind": "word",
+    "forms": [
+      "contested"
+    ],
+    "text": "A contested environment is one where an enemy is actively fighting back, for example by jamming signals, so nothing can be taken for granted.",
+    "audio": true
+  },
+  {
+    "k": "digital-glue",
+    "t": "digital glue",
+    "kind": "phrase",
+    "forms": [
+      "digital glue"
+    ],
+    "text": "A figure of speech for the software and networks that bind the separate vessels together into one system.",
+    "audio": true
+  },
+  {
+    "k": "maritime-fighting-web",
+    "t": "Maritime Fighting Web",
+    "kind": "name",
+    "forms": [
+      "Maritime Fighting Web"
+    ],
+    "text": "The navy's name for its AI-supported network that links sensors, ships and weapons so they share information in real time.",
+    "audio": true
+  },
+  {
+    "k": "formula-one",
+    "t": "Formula One-style maintenance",
+    "kind": "phrase",
+    "forms": [
+      "Formula One-style maintenance"
+    ],
+    "text": "Formula One cars are rebuilt to perfection after every race at huge cost. The navy wants simple, cheap upkeep like that of an ordinary family car.",
+    "audio": true
+  },
+  {
+    "k": "propulsion",
+    "t": "propulsion",
+    "kind": "word",
+    "forms": [
+      "propulsion"
+    ],
+    "text": "Propulsion is the system that moves a vehicle, such as engines and propellers. Simpler propulsion means fewer things that break.",
+    "audio": true
+  },
+  {
+    "k": "afloat",
+    "t": "afloat",
+    "kind": "word",
+    "forms": [
+      "afloat"
+    ],
+    "text": "Afloat means floating on water. To get a vessel afloat means to launch it and put it to sea.",
+    "audio": true
+  },
+  {
+    "k": "myriad",
+    "t": "myriad",
+    "kind": "word",
+    "forms": [
+      "myriad"
+    ],
+    "text": "Myriad means a huge number of different things. The navy expects many remaining problems to be discovered by sea trials.",
+    "audio": true
+  },
+  {
+    "k": "transition",
+    "t": "transition",
+    "kind": "word",
+    "forms": [
+      "transition"
+    ],
+    "text": "A transition is a change from one state to another, here from a crewed to a hybrid fleet.",
+    "audio": true
+  }
+]

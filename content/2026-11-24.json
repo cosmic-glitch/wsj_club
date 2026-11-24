@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-24",
+  "title": "The Royal Navy’s big bet on uncrewed vessels",
+  "articleUrl": "https://www.economist.com/britain/2026/11/19/the-royal-navys-big-bet-on-uncrewed-vessels",
+  "articlePageUrl": "/articles/2026-11-24.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "exemplar",
+      "partOfSpeech": "noun",
+      "pronunciation": "ig-ZEM-plar",
+      "articleQuote": "But even Fisher, his exemplar, made mistakes.",
+      "meaning": "An exemplar is a model worth copying, a person or thing that shows what the ideal looks like. It can also mean a typical example of something. Here the Royal Navy's current leader looks up to Admiral Fisher, who reinvented the fleet over a century ago, as his role model, and the writer warns that even role models get things wrong.",
+      "examples": [
+        "Our coach is an exemplar of staying calm when the game is on the line.",
+        "The student council president was an exemplar of fairness, so younger kids tried to act like her."
+      ]
+    },
+    {
+      "word": "disaggregation",
+      "partOfSpeech": "noun",
+      "pronunciation": "dis-ag-rih-GAY-shun",
+      "articleQuote": "“Disaggregation makes communication the weakest link,” says Mr Rigby.",
+      "meaning": "Disaggregation is the act of breaking one big combined thing into separate parts. It is the opposite of aggregating, or lumping together. Here it describes splitting the jobs of one big warship, such as sensing, deciding and firing, across many small vessels, which means those pieces now depend on radio links to work as a team.",
+      "examples": [
+        "The school's disaggregation of the giant lunch hour into three short shifts cut the lines.",
+        "When the band split its one long song into five short tracks, that disaggregation let fans pick their favorites."
+      ]
+    },
+    {
+      "word": "latency",
+      "partOfSpeech": "noun",
+      "pronunciation": "LAY-ten-see",
+      "articleQuote": "real-time data can reach the Type 91 missile platform with the low latency needed for air defence of the fleet",
+      "meaning": "Latency is the delay between something being sent and something happening in response, like the lag in a video game between pressing a button and seeing your character move. Low latency means a short delay. Here it matters because a missile ship has only seconds to act on sensor data before an incoming threat arrives.",
+      "examples": [
+        "High latency on the school wifi made the video call freeze for a few seconds after each question.",
+        "Gamers pay for faster internet because even a tiny latency can mean losing a match."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Warship classes",
+      "articleQuote": "half the cost of a general-purpose Type 31 frigate, and less than a quarter that of a high-end Type 26",
+      "meaning": "The article treats a destroyer, a frigate and a CCV as if you already know the difference. Here is the ladder.\n\nNavies sort ships by size and job. The biggest are aircraft carriers, which are floating runways. Below them come destroyers, large and heavily armed ships built to shoot down aircraft and missiles and to guard a fleet. Frigates are smaller and cheaper, general-purpose escorts that hunt submarines and protect shipping. Britain's frigates come in different models: a Type 26 is a high-end submarine hunter, while a Type 31 is a simpler all-rounder. Below them are small patrol boats and corvettes.\n\nWhy bother with different classes? Because a navy has a fixed budget and has to cover many jobs. A ship that does everything well costs a fortune, so navies buy a few top-end ships and many cheaper ones. The £2.5bn air-defence destroyers were the top of that ladder, and the navy decided that for the same money it would rather have many cheaper hulls (the ship bodies). The Common Combat Vessels at £200m each are a new rung that carries command teams and directs uncrewed boats. The takeaway: more expensive does not always mean better, because the question is how many ships you can afford to have at sea at once."
+    },
+    {
+      "name": "Jamming and spoofing",
+      "articleQuote": "resist enemy jamming, spoofing and even an electromagnetic pulse triggered by a nuclear blast",
+      "meaning": "If a ship has no crew aboard, the only thing steering it is radio signals, and that is the weak spot an enemy will go after.\n\nRadios, GPS and data links all work by sending invisible waves through the air. Jamming means blasting a strong signal on the same frequency, like someone shouting over a friend so you cannot hear them. The receiver gets only noise, and the link drops. Spoofing is sneakier: the enemy sends a fake signal that looks real, for example a false GPS position, so the vessel believes it is somewhere it is not, or accepts an order that never came from its own commanders. An electromagnetic pulse (EMP) is a sudden burst of energy, which a nuclear explosion can create, that can overload and burn out electronics across a wide area.\n\nA crewed warship can fall back on sailors with maps, binoculars and judgement. A semi-autonomous vessel dozens of miles from its command ship cannot, so the navy has to build links that hop between frequencies, check that messages are genuine and keep working when cut off. That is why the article says the technology holding the fleet together is the gamble."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did the Royal Navy drop its plan for eight air-defence destroyers?",
+      "options": [
+        "Russia agreed to reduce its fleet",
+        "They would have been bigger and costlier but fewer in number, and outdated before they were even built",
+        "The destroyers failed their sea trials",
+        "Parliament voted to shrink the navy"
+      ],
+      "answerIndex": 1,
+      "explanation": "A senior navy source says the plan would have meant fewer hulls at higher cost with ships already out of date, so the navy chose a different path."
+    },
+    {
+      "question": "What does the Type 9X family of uncrewed vessels do?",
+      "options": [
+        "They are cheap throw-away drones for the Black Sea",
+        "They carry out separate jobs such as missile-carrying, surveillance and radar, split across many specialised platforms",
+        "They replace the nuclear submarines",
+        "They are mainly used to ferry sailors between ships"
+      ],
+      "answerIndex": 1,
+      "explanation": "The idea is to split sensing, decision-making and weapon use across specialised platforms, and these are much bigger than throw-away drones."
+    },
+    {
+      "question": "Which of these is NOT given as a reason the uncrewed vessels could be better value?",
+      "options": [
+        "Many commercial shipyards could build them",
+        "They could be available for operations about twice as often as crewed ships",
+        "They do not need leave or training for crew",
+        "They do not need any maintenance at all"
+      ],
+      "answerIndex": 3,
+      "explanation": "They still need maintenance, weekly from the CCVs, and the article lists maintenance as one of the hurdles."
+    },
+    {
+      "question": "In the article, why does disaggregation make communication the weakest link?",
+      "options": [
+        "Because the separate vessels must stay linked over long distances, and enemy jamming or spoofing could cut them off",
+        "Because the sailors cannot speak the same language",
+        "Because uncrewed ships are too noisy",
+        "Because radio waves cannot cross the North Atlantic"
+      ],
+      "answerIndex": 0,
+      "explanation": "The vessels work dozens of miles from their CCVs, so seamless, jam-resistant links are essential."
+    },
+    {
+      "question": "According to the article, what is the financial worry about the plan?",
+      "options": [
+        "The navy has more money than it can spend",
+        "Only £1.5bn of £18bn was set aside for the shift, and the Ministry of Defence thinks it needs £32bn more between 2030 and 2035",
+        "The CCVs cost more than the destroyers they replace",
+        "Norway and Denmark want to be paid for waiting"
+      ],
+      "answerIndex": 1,
+      "explanation": "Only a small part of the four-year budget was for uncrewed warfare, and a much larger sum will be needed later."
+    }
+  ]
+}
