@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-24",
+  "title": "The first private-sector space station is due to go into orbit",
+  "articleUrl": "https://www.economist.com/the-world-ahead/2026/11/18/the-first-private-sector-space-station-is-due-to-go-into-orbit",
+  "articlePageUrl": "/articles/junior/2026-11-24.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "vying",
+      "partOfSpeech": "verb",
+      "pronunciation": "VY-ing",
+      "articleQuote": "Three other space-station startups, also vying for NASA’s custom, aim to go straight to the permanently crewed stage.",
+      "meaning": "To vie is to compete with others to win something. People who are vying all want the same prize, and only some of them can get it. Here, several companies are all trying to win NASA as a customer. You might see two teams vying for a trophy, or three friends vying for the last slice of pizza.",
+      "examples": [
+        "Five students were vying for the part of the lead in the school play.",
+        "The two bakeries were vying for the title of best cupcakes in town."
+      ]
+    },
+    {
+      "word": "habitable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "HAB-ih-tuh-bul",
+      "articleQuote": "A service module, to be launched in 2028, will start off as an appendage of the ISS before detaching to join the habitable part, Hab-1, which will go up in 2029.",
+      "meaning": "A place that is habitable is safe and comfortable enough for people to live in. Here, Hab-1 is the part of the station where astronauts will live and sleep. A tent in a snowstorm is not very habitable, but a warm cabin is. Look for the same root in the word inhabit, which means to live in a place.",
+      "examples": [
+        "After the flood, the basement was not habitable for weeks.",
+        "Scientists search for planets that might be habitable for living things."
+      ]
+    },
+    {
+      "word": "brainchild",
+      "partOfSpeech": "noun",
+      "pronunciation": "BRAYN-child",
+      "articleQuote": "It is the brainchild of Jed McCaleb, a tech entrepreneur who set up a firm called Vast Space in 2021 to build it.",
+      "meaning": "A brainchild is an idea, plan, or invention that one person came up with and made happen. It is as if the idea were that person's child, born from their brain. Here, the space station started as the idea of one man. A school club, a board game, or a new recipe can all be someone's brainchild.",
+      "examples": [
+        "The new recycling program was the brainchild of our science teacher.",
+        "Her lemonade stand was her own brainchild, and it made fifty dollars."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Microgravity",
+      "articleQuote": "Vast hopes to attract government customers (it has already agreed to host two French astronauts) and private firms interested in microgravity research.",
+      "meaning": "**Microgravity** is the feeling of floating that astronauts have in orbit, where things seem to weigh almost nothing.\n\nYou may think there is no gravity in space, but that is not true. Gravity still pulls on a space station almost as hard as it pulls on you at school. The difference is that the station is falling, very fast, around the Earth, and everything inside falls along with it. Picture a roller coaster that drops suddenly. For a moment your stomach floats up. Now imagine that feeling lasting for weeks. That is microgravity.\n\nThis matters because scientists can learn things up there that they cannot learn on the ground. Without weight pulling things down, water forms floating balls, flames burn in a different shape, and plants and human bodies behave in surprising ways. That is why companies might pay to run experiments on a private space station."
+    },
+    {
+      "name": "International Space Station",
+      "articleQuote": "This, the firm hopes, may be chosen by NASA, America’s space agency, as a private-sector alternative to its lodgings on board the ageing International Space Station (ISS), which is due to be scrapped in the 2030s.",
+      "meaning": "The **International Space Station**, or ISS, is a huge laboratory that circles the Earth with astronauts living inside it. It is the only home people have in space right now.\n\nThink of it as a school-sized science lab that zooms around the planet. Many countries, including the United States, Russia, Japan, and several in Europe, built it together and send crews to live there for months. It orbits about 250 miles up and circles the Earth roughly every 90 minutes, so the crew sees about 16 sunrises a day.\n\nThe ISS has been flying since 1998, and old machines wear out. That is why the article is about replacements. NASA wants to rent rooms on private stations instead of building its own again, a bit like a school renting a bus instead of owning one."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What will launch Haven-1 into orbit in 2027?",
+      "options": ["A NASA space shuttle", "A SpaceX Falcon 9 rocket", "A Blue Origin New Glenn rocket", "A Starship"],
+      "answerIndex": 1,
+      "explanation": "The article says a SpaceX Falcon 9 rocket will launch Haven-1, the first privately built and operated space station."
+    },
+    {
+      "question": "Why does Vast want to build Haven-1 first?",
+      "options": [
+        "To learn how to build a bigger, permanently crewed station later",
+        "To replace the Moon with a space hotel",
+        "To scrap the ISS right away",
+        "To test Hilton's beds"
+      ],
+      "answerIndex": 0,
+      "explanation": "The real prize is the knowledge needed to build Haven Station, a multi-module, permanently crewed version starting in 2028."
+    },
+    {
+      "question": "How is Starlab different from Haven-1?",
+      "options": [
+        "It will be inflatable",
+        "It will have five times the pressurised volume and need Starship",
+        "It is built by a single person",
+        "It will land at Point Nemo"
+      ],
+      "answerIndex": 1,
+      "explanation": "Starlab is also a single cylinder, but it has five times the volume and needs SpaceX's Starship to reach orbit."
+    },
+    {
+      "question": "Which sentence uses the word \"vying\" correctly?",
+      "options": [
+        "Three companies are vying for the same contract.",
+        "She was vying a sandwich at lunch.",
+        "The vying rocket was very tall.",
+        "He vying home after school."
+      ],
+      "answerIndex": 0,
+      "explanation": "To vie is to compete for something, and three companies competing for one contract is vying."
+    },
+    {
+      "question": "What is the proposed fate of the ISS?",
+      "options": [
+        "It will be sold to Hilton",
+        "It will fly to Mars",
+        "A controlled splashdown at Point Nemo in the Pacific Ocean",
+        "It will stay in orbit forever with no changes"
+      ],
+      "answerIndex": 2,
+      "explanation": "The plan is a controlled splashdown at Point Nemo, the spot in the Pacific farthest from people, though the ISS has outlived earlier plans to end it."
+    }
+  ]
+}

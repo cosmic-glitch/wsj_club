@@ -1,0 +1,496 @@
+[
+  {
+    "k": "vying",
+    "t": "vying",
+    "kind": "vocab",
+    "pron": "VY-ing",
+    "forms": [
+      "vying"
+    ],
+    "text": "To vie is to compete with others to win something. Here, several companies are all trying to win NASA as a customer.",
+    "audio": true
+  },
+  {
+    "k": "habitable",
+    "t": "habitable",
+    "kind": "vocab",
+    "pron": "HAB-ih-tuh-bul",
+    "forms": [
+      "habitable"
+    ],
+    "text": "A habitable place is safe and comfortable enough for people to live in. Hab-1 is where astronauts will live.",
+    "audio": true
+  },
+  {
+    "k": "brainchild",
+    "t": "brainchild",
+    "kind": "vocab",
+    "pron": "BRAYN-child",
+    "forms": [
+      "brainchild"
+    ],
+    "text": "A brainchild is an idea or invention that one person dreamed up and made real, as if it were born from their brain.",
+    "audio": true
+  },
+  {
+    "k": "private-sector",
+    "t": "private-sector",
+    "kind": "phrase",
+    "forms": [
+      "private-sector"
+    ],
+    "text": "The private sector means businesses run by people and companies, not by the government. Here, it means a station built by a company instead of NASA.",
+    "audio": true
+  },
+  {
+    "k": "orbit",
+    "t": "orbit",
+    "kind": "word",
+    "forms": [
+      "orbit"
+    ],
+    "text": "An orbit is the curved path an object follows as it circles a planet. A station in orbit keeps falling around the Earth without ever hitting it.",
+    "audio": true
+  },
+  {
+    "k": "startups",
+    "t": "startups",
+    "kind": "word",
+    "forms": [
+      "startups"
+    ],
+    "text": "A startup is a brand-new company, often trying out a bold idea.",
+    "audio": true
+  },
+  {
+    "k": "entrepreneur",
+    "t": "entrepreneur",
+    "kind": "word",
+    "forms": [
+      "entrepreneur"
+    ],
+    "text": "An entrepreneur is a person who starts a new business and takes the risk that it might fail.",
+    "audio": true
+  },
+  {
+    "k": "firm",
+    "t": "firm",
+    "kind": "word",
+    "forms": [
+      "firm"
+    ],
+    "text": "Here, firm is a noun meaning a company. It does not mean hard or strict, as it can in other sentences.",
+    "audio": true
+  },
+  {
+    "k": "aluminium",
+    "t": "aluminium",
+    "kind": "word",
+    "forms": [
+      "aluminium"
+    ],
+    "text": "Aluminium is a light, silvery metal. Soda cans are made of it. This is the British spelling of aluminum.",
+    "audio": true
+  },
+  {
+    "k": "cylinder",
+    "t": "cylinder",
+    "kind": "word",
+    "forms": [
+      "cylinder"
+    ],
+    "text": "A cylinder is a tube shape with flat round ends, like a can of soup.",
+    "audio": true
+  },
+  {
+    "k": "shielding",
+    "t": "shielding",
+    "kind": "word",
+    "forms": [
+      "shielding"
+    ],
+    "text": "Shielding is a protective layer that blocks danger, like a shield does. Here, it keeps small objects from poking through the station.",
+    "audio": true
+  },
+  {
+    "k": "punctured",
+    "t": "punctured",
+    "kind": "word",
+    "forms": [
+      "punctured"
+    ],
+    "text": "To puncture something is to poke a hole in it, like a nail in a bike tire.",
+    "audio": true
+  },
+  {
+    "k": "micrometeorites",
+    "t": "micrometeorites",
+    "kind": "word",
+    "forms": [
+      "micrometeorites"
+    ],
+    "text": "Micrometeorites are tiny bits of rock, smaller than a grain of sand, zooming through space at great speed.",
+    "audio": true
+  },
+  {
+    "k": "debris",
+    "t": "debris",
+    "kind": "word",
+    "forms": [
+      "debris"
+    ],
+    "text": "Debris is scattered broken pieces left over from something. Space debris is old rocket and satellite junk circling Earth.",
+    "audio": true
+  },
+  {
+    "k": "pressurised",
+    "t": "pressurised",
+    "kind": "word",
+    "forms": [
+      "pressurised"
+    ],
+    "text": "A pressurised room has air held inside at normal pressure so people can breathe, even though space outside has no air. This is the British spelling of pressurized.",
+    "audio": true
+  },
+  {
+    "k": "volume",
+    "t": "volume",
+    "kind": "word",
+    "forms": [
+      "volume"
+    ],
+    "text": "Here, volume means how much space is inside something, not how loud it is.",
+    "audio": true
+  },
+  {
+    "k": "cubic-metres",
+    "t": "cubic metres",
+    "kind": "word",
+    "forms": [
+      "cubic metres"
+    ],
+    "text": "A cubic metre is the space inside a box one metre long, wide, and tall. Eighty of them is about the room inside a small school bus.",
+    "audio": true
+  },
+  {
+    "k": "docking-port",
+    "t": "docking port",
+    "kind": "phrase",
+    "forms": [
+      "docking port"
+    ],
+    "text": "A docking port is a door where one spacecraft links up with another.",
+    "audio": true
+  },
+  {
+    "k": "microgravity",
+    "t": "microgravity",
+    "kind": "name",
+    "forms": [
+      "microgravity"
+    ],
+    "text": "Microgravity is the floating feeling in orbit, where things seem to weigh almost nothing because they are falling around Earth together.",
+    "audio": true
+  },
+  {
+    "k": "accommodate",
+    "t": "accommodate",
+    "kind": "word",
+    "forms": [
+      "accommodate"
+    ],
+    "text": "To accommodate people means to have enough room for them. This station has room for four.",
+    "audio": true
+  },
+  {
+    "k": "missions",
+    "t": "missions",
+    "kind": "word",
+    "forms": [
+      "missions"
+    ],
+    "text": "A mission is a trip with a clear job to do. Each of these will last two weeks.",
+    "audio": true
+  },
+  {
+    "k": "nasa",
+    "t": "NASA",
+    "kind": "name",
+    "forms": [
+      "NASA",
+      "NASA’s"
+    ],
+    "text": "NASA is the United States space agency. It sends astronauts and probes into space.",
+    "audio": true
+  },
+  {
+    "k": "iss",
+    "t": "ISS",
+    "kind": "name",
+    "forms": [
+      "ISS"
+    ],
+    "text": "ISS stands for the International Space Station, the big laboratory where astronauts live in orbit right now.",
+    "audio": true
+  },
+  {
+    "k": "ageing",
+    "t": "ageing",
+    "kind": "word",
+    "forms": [
+      "ageing"
+    ],
+    "text": "Ageing means getting old. The ISS has flown since 1998, so its parts are wearing out. This is the British spelling of aging.",
+    "audio": true
+  },
+  {
+    "k": "scrapped",
+    "t": "scrapped",
+    "kind": "word",
+    "forms": [
+      "scrapped"
+    ],
+    "text": "To scrap something is to throw it away or end it because it is no longer useful.",
+    "audio": true
+  },
+  {
+    "k": "multi-module",
+    "t": "multi-module",
+    "kind": "phrase",
+    "forms": [
+      "multi-module"
+    ],
+    "text": "Multi-module means made of many separate parts, called modules, that are joined together like building blocks.",
+    "audio": true
+  },
+  {
+    "k": "permanently-crewed",
+    "t": "permanently crewed",
+    "kind": "phrase",
+    "forms": [
+      "permanently crewed"
+    ],
+    "text": "A permanently crewed station always has people aboard, with new crews arriving as old ones leave.",
+    "audio": true
+  },
+  {
+    "k": "custom",
+    "t": "custom",
+    "kind": "word",
+    "forms": [
+      "custom"
+    ],
+    "text": "Here, custom is an old word for business from customers. Companies are hoping NASA will become their customer.",
+    "audio": true
+  },
+  {
+    "k": "appendage",
+    "t": "appendage",
+    "kind": "word",
+    "forms": [
+      "appendage"
+    ],
+    "text": "An appendage is a part attached to something bigger, like an arm to a body. The service module will be attached to the ISS at first.",
+    "audio": true
+  },
+  {
+    "k": "detaching",
+    "t": "detaching",
+    "kind": "word",
+    "forms": [
+      "detaching"
+    ],
+    "text": "To detach is to come loose and separate from something it was attached to.",
+    "audio": true
+  },
+  {
+    "k": "service-module",
+    "t": "service module",
+    "kind": "phrase",
+    "forms": [
+      "service module"
+    ],
+    "text": "A service module holds the machinery that keeps a station running, such as power and air supply.",
+    "audio": true
+  },
+  {
+    "k": "modules",
+    "t": "modules",
+    "kind": "word",
+    "forms": [
+      "modules"
+    ],
+    "text": "Modules are separate sections of a station that are built apart and then joined together.",
+    "audio": true
+  },
+  {
+    "k": "starship",
+    "t": "Starship",
+    "kind": "name",
+    "forms": [
+      "Starship"
+    ],
+    "text": "Starship is SpaceX's giant next-generation rocket, built to carry far more than older rockets.",
+    "audio": true
+  },
+  {
+    "k": "next-generation",
+    "t": "next-generation",
+    "kind": "phrase",
+    "forms": [
+      "next-generation"
+    ],
+    "text": "Next-generation means the newer version that comes after the current one.",
+    "audio": true
+  },
+  {
+    "k": "mod-cons",
+    "t": "mod cons",
+    "kind": "phrase",
+    "forms": [
+      "mod cons"
+    ],
+    "text": "Mod cons is short for modern conveniences, such as hot water, nice lighting, and comfy beds.",
+    "audio": true
+  },
+  {
+    "k": "plumped-for",
+    "t": "plumped for",
+    "kind": "phrase",
+    "forms": [
+      "plumped for"
+    ],
+    "text": "To plump for something means to choose it, often quickly and with confidence.",
+    "audio": true
+  },
+  {
+    "k": "cosy",
+    "t": "cosy",
+    "kind": "word",
+    "forms": [
+      "cosy"
+    ],
+    "text": "Cosy means warm, snug, and comfortable. This is the British spelling of cozy.",
+    "audio": true
+  },
+  {
+    "k": "trailing-the-field",
+    "t": "Trailing the field",
+    "kind": "phrase",
+    "forms": [
+      "Trailing the field"
+    ],
+    "text": "Trailing the field means being behind the others in a race or contest. Here, Orbital Reef is the project furthest behind.",
+    "audio": true
+  },
+  {
+    "k": "inflatable",
+    "t": "inflatable",
+    "kind": "word",
+    "forms": [
+      "inflatable"
+    ],
+    "text": "An inflatable thing is filled with air to take shape, like a bounce house. These rooms would be packed small for launch and then blown up in space.",
+    "audio": true
+  },
+  {
+    "k": "spaceplane",
+    "t": "spaceplane",
+    "kind": "word",
+    "forms": [
+      "spaceplane"
+    ],
+    "text": "A spaceplane is a craft that launches like a rocket but can glide back down and land like an airplane.",
+    "audio": true
+  },
+  {
+    "k": "heavy-lift",
+    "t": "heavy-lift",
+    "kind": "phrase",
+    "forms": [
+      "heavy-lift"
+    ],
+    "text": "A heavy-lift rocket is a very powerful rocket able to carry huge loads into space.",
+    "audio": true
+  },
+  {
+    "k": "controlled-splashdown",
+    "t": "controlled splashdown",
+    "kind": "phrase",
+    "forms": [
+      "controlled splashdown"
+    ],
+    "text": "A controlled splashdown means steering something to land in the sea on purpose, so it does not crash onto people.",
+    "audio": true
+  },
+  {
+    "k": "point-nemo",
+    "t": "Point Nemo",
+    "kind": "name",
+    "forms": [
+      "Point Nemo"
+    ],
+    "text": "Point Nemo is the place in the Pacific Ocean farthest from any land, so falling space junk is unlikely to hurt anyone there.",
+    "audio": true
+  },
+  {
+    "k": "outlived",
+    "t": "outlived",
+    "kind": "word",
+    "forms": [
+      "outlived"
+    ],
+    "text": "To outlive something is to last longer than expected. The ISS has survived three earlier plans to end it.",
+    "audio": true
+  },
+  {
+    "k": "haven-1",
+    "t": "Haven-1",
+    "kind": "name",
+    "forms": [
+      "Haven-1"
+    ],
+    "text": "Haven-1 is the first small station built by the company Vast. It is meant to be a test before a bigger one.",
+    "audio": true
+  },
+  {
+    "k": "airbus",
+    "t": "Airbus",
+    "kind": "name",
+    "forms": [
+      "Airbus"
+    ],
+    "text": "Airbus is a large European company that builds airplanes and spacecraft.",
+    "audio": true
+  },
+  {
+    "k": "spacex",
+    "t": "SpaceX",
+    "kind": "name",
+    "forms": [
+      "SpaceX"
+    ],
+    "text": "SpaceX is the private company that launches rockets and carries astronauts, using rockets that can land and be reused.",
+    "audio": true
+  },
+  {
+    "k": "blue-origin",
+    "t": "Blue Origin",
+    "kind": "name",
+    "forms": [
+      "Blue Origin"
+    ],
+    "text": "Blue Origin is a private rocket company started by Jeff Bezos, who also founded Amazon.",
+    "audio": true
+  },
+  {
+    "k": "falcon-9",
+    "t": "Falcon 9",
+    "kind": "name",
+    "forms": [
+      "Falcon 9"
+    ],
+    "text": "Falcon 9 is a SpaceX rocket, the one most often used to launch satellites and astronauts today.",
+    "audio": true
+  }
+]
