@@ -1,0 +1,416 @@
+[
+  {
+    "k": "journey",
+    "t": "journey",
+    "kind": "vocab",
+    "pron": "JUR-nee",
+    "forms": [
+      "journey"
+    ],
+    "text": "A journey is a long trip from one place to another. Mr. Bushby's journey was a walk that took 28 years.",
+    "audio": true
+  },
+  {
+    "k": "strict",
+    "t": "strict",
+    "kind": "vocab",
+    "pron": "STRIKT",
+    "forms": [
+      "strict"
+    ],
+    "text": "A strict rule is one you must follow every time. Mr. Bushby made strict rules for himself.",
+    "audio": true
+  },
+  {
+    "k": "generous",
+    "t": "generous",
+    "kind": "vocab",
+    "pron": "JEN-er-us",
+    "forms": [
+      "generous"
+    ],
+    "text": "A generous person gives to others and helps them. Strangers gave him food and a place to sleep.",
+    "audio": true
+  },
+  {
+    "k": "strait",
+    "t": "strait",
+    "kind": "word",
+    "forms": [
+      "Strait"
+    ],
+    "text": "A strait is a narrow strip of water between two lands.",
+    "audio": true
+  },
+  {
+    "k": "bering-strait",
+    "t": "Bering Strait",
+    "kind": "name",
+    "forms": [
+      "Bering Strait"
+    ],
+    "text": "The Bering Strait is a narrow strip of sea between Alaska and Russia. In winter, ice can float in it.",
+    "audio": true
+  },
+  {
+    "k": "hull",
+    "t": "Hull",
+    "kind": "name",
+    "forms": [
+      "Hull"
+    ],
+    "text": "Hull is a city in England. It is Mr. Bushby's hometown.",
+    "audio": true
+  },
+  {
+    "k": "england",
+    "t": "England",
+    "kind": "name",
+    "forms": [
+      "England"
+    ],
+    "text": "England is a country in Europe. It is part of the United Kingdom.",
+    "audio": true
+  },
+  {
+    "k": "south-america",
+    "t": "South America",
+    "kind": "name",
+    "forms": [
+      "South America"
+    ],
+    "text": "South America is a huge land with many countries. It is far south of the United States.",
+    "audio": true
+  },
+  {
+    "k": "punta-arenas",
+    "t": "Punta Arenas",
+    "kind": "name",
+    "forms": [
+      "Punta Arenas"
+    ],
+    "text": "Punta Arenas is a city at the very bottom of South America.",
+    "audio": true
+  },
+  {
+    "k": "chile",
+    "t": "Chile",
+    "kind": "name",
+    "forms": [
+      "Chile"
+    ],
+    "text": "Chile is a long, thin country in South America.",
+    "audio": true
+  },
+  {
+    "k": "alaska",
+    "t": "Alaska",
+    "kind": "name",
+    "forms": [
+      "Alaska"
+    ],
+    "text": "Alaska is a big, cold state in the far north of the United States.",
+    "audio": true
+  },
+  {
+    "k": "russia",
+    "t": "Russia",
+    "kind": "name",
+    "forms": [
+      "Russia"
+    ],
+    "text": "Russia is the largest country in the world. It is across the Bering Strait from Alaska.",
+    "audio": true
+  },
+  {
+    "k": "iran",
+    "t": "Iran",
+    "kind": "name",
+    "forms": [
+      "Iran"
+    ],
+    "text": "Iran is a country in Asia.",
+    "audio": true
+  },
+  {
+    "k": "caspian-sea",
+    "t": "Caspian Sea",
+    "kind": "name",
+    "forms": [
+      "Caspian Sea"
+    ],
+    "text": "The Caspian Sea is a very large lake. It is so big that people call it a sea.",
+    "audio": true
+  },
+  {
+    "k": "istanbul",
+    "t": "Istanbul",
+    "kind": "name",
+    "forms": [
+      "Istanbul"
+    ],
+    "text": "Istanbul is a big city in Turkey.",
+    "audio": true
+  },
+  {
+    "k": "turkey",
+    "t": "Turkey",
+    "kind": "name",
+    "forms": [
+      "Turkey"
+    ],
+    "text": "Turkey is a country in Asia and Europe. It is not the bird.",
+    "audio": true
+  },
+  {
+    "k": "kilometers",
+    "t": "kilometers",
+    "kind": "word",
+    "forms": [
+      "kilometers"
+    ],
+    "text": "A kilometer is a way to measure distance. It is a little more than half a mile.",
+    "audio": true
+  },
+  {
+    "k": "countries",
+    "t": "countries",
+    "kind": "word",
+    "forms": [
+      "countries"
+    ],
+    "text": "A country is a land with its own borders and leaders. The United States is one country.",
+    "audio": true
+  },
+  {
+    "k": "challenge",
+    "t": "challenge",
+    "kind": "word",
+    "forms": [
+      "challenge",
+      "challenges"
+    ],
+    "text": "A challenge is something hard that you try to do.",
+    "audio": true
+  },
+  {
+    "k": "completed",
+    "t": "completed",
+    "kind": "word",
+    "forms": [
+      "completed"
+    ],
+    "text": "To complete something means to finish it.",
+    "audio": true
+  },
+  {
+    "k": "bet",
+    "t": "bet",
+    "kind": "word",
+    "forms": [
+      "bet"
+    ],
+    "text": "A bet is when you say you can do something hard. Someone says you cannot.",
+    "audio": true
+  },
+  {
+    "k": "soldier",
+    "t": "soldier",
+    "kind": "word",
+    "forms": [
+      "soldier"
+    ],
+    "text": "A soldier is a person who works in the army.",
+    "audio": true
+  },
+  {
+    "k": "vehicles",
+    "t": "vehicles",
+    "kind": "word",
+    "forms": [
+      "vehicles"
+    ],
+    "text": "Vehicles are machines that carry people, like cars, buses, and planes.",
+    "audio": true
+  },
+  {
+    "k": "on-foot",
+    "t": "on foot",
+    "kind": "phrase",
+    "forms": [
+      "on foot"
+    ],
+    "text": "On foot means by walking. You do not ride in anything.",
+    "audio": true
+  },
+  {
+    "k": "survival",
+    "t": "survival",
+    "kind": "word",
+    "forms": [
+      "survival"
+    ],
+    "text": "Survival means staying alive when things are hard.",
+    "audio": true
+  },
+  {
+    "k": "tent",
+    "t": "tent",
+    "kind": "word",
+    "forms": [
+      "tent"
+    ],
+    "text": "A tent is a small shelter made of cloth. People sleep in it outside.",
+    "audio": true
+  },
+  {
+    "k": "strangers",
+    "t": "strangers",
+    "kind": "word",
+    "forms": [
+      "strangers"
+    ],
+    "text": "A stranger is a person you do not know.",
+    "audio": true
+  },
+  {
+    "k": "extreme",
+    "t": "extreme",
+    "kind": "word",
+    "forms": [
+      "extreme"
+    ],
+    "text": "Extreme means very big or very hard.",
+    "audio": true
+  },
+  {
+    "k": "jungles",
+    "t": "jungles",
+    "kind": "word",
+    "forms": [
+      "jungles"
+    ],
+    "text": "A jungle is a thick, hot forest with many plants and animals.",
+    "audio": true
+  },
+  {
+    "k": "deserts",
+    "t": "deserts",
+    "kind": "word",
+    "forms": [
+      "deserts"
+    ],
+    "text": "A desert is a very dry place with little rain.",
+    "audio": true
+  },
+  {
+    "k": "fighting",
+    "t": "fighting",
+    "kind": "word",
+    "forms": [
+      "fighting"
+    ],
+    "text": "Here, fighting means a war. It is a place that is not safe.",
+    "audio": true
+  },
+  {
+    "k": "floating-ice",
+    "t": "floating ice",
+    "kind": "phrase",
+    "forms": [
+      "floating ice"
+    ],
+    "text": "Floating ice is ice that sits on top of the water.",
+    "audio": true
+  },
+  {
+    "k": "jail",
+    "t": "jail",
+    "kind": "word",
+    "forms": [
+      "jail"
+    ],
+    "text": "Jail is a place where people are kept when they break a rule or law.",
+    "audio": true
+  },
+  {
+    "k": "cart",
+    "t": "cart",
+    "kind": "word",
+    "forms": [
+      "cart"
+    ],
+    "text": "A cart is a small thing with wheels. You push or pull it to carry things.",
+    "audio": true
+  },
+  {
+    "k": "miracles",
+    "t": "miracles",
+    "kind": "word",
+    "forms": [
+      "miracles"
+    ],
+    "text": "A miracle is a wonderful surprise that seems almost too good to be true.",
+    "audio": true
+  },
+  {
+    "k": "donations",
+    "t": "donations",
+    "kind": "word",
+    "forms": [
+      "donations"
+    ],
+    "text": "A donation is a gift of money or things to help someone.",
+    "audio": true
+  },
+  {
+    "k": "companies",
+    "t": "companies",
+    "kind": "word",
+    "forms": [
+      "companies"
+    ],
+    "text": "A company is a business that makes or sells things.",
+    "audio": true
+  },
+  {
+    "k": "kinder",
+    "t": "kinder",
+    "kind": "word",
+    "forms": [
+      "kinder"
+    ],
+    "text": "Kinder means more kind. Kind people are gentle and helpful.",
+    "audio": true
+  },
+  {
+    "k": "crowd",
+    "t": "crowd",
+    "kind": "word",
+    "forms": [
+      "crowd"
+    ],
+    "text": "A crowd is a big group of people together.",
+    "audio": true
+  },
+  {
+    "k": "nervous",
+    "t": "nervous",
+    "kind": "word",
+    "forms": [
+      "nervous"
+    ],
+    "text": "Nervous means a little worried about what will happen.",
+    "audio": true
+  },
+  {
+    "k": "mission",
+    "t": "mission",
+    "kind": "word",
+    "forms": [
+      "mission"
+    ],
+    "text": "A mission is an important job or goal.",
+    "audio": true
+  }
+]

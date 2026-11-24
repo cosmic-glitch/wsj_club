@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-24",
+  "title": "A man walks home after 28 years",
+  "articleUrl": "https://newsforkids.net/articles/2026/11/12/karl-bushby-walks-the-world/",
+  "articlePageUrl": "/articles/kids/2026-11-24.html",
+  "voiceQuiz": true,
+  "source": "News for Kids",
+  "vocab": [
+    {
+      "word": "journey",
+      "partOfSpeech": "noun",
+      "pronunciation": "JUR-nee",
+      "articleQuote": "Mr. Bushby’s journey began with a bet that he could walk from the bottom of South America all the way home.",
+      "meaning": "A journey is a long trip from one place to another. You might go by car, by plane, or on foot. In the article, the journey was a walk that took Mr. Bushby 28 years.",
+      "examples": [
+        "Our journey to Grandma's house takes two hours in the car.",
+        "The little turtle began its journey across the sand to the sea."
+      ]
+    },
+    {
+      "word": "strict",
+      "partOfSpeech": "adjective",
+      "pronunciation": "STRIKT",
+      "articleQuote": "He had two very strict rules.",
+      "meaning": "A strict rule is one you must follow every time, with no exceptions. You are not allowed to bend it. In the article, Mr. Bushby made strict rules for himself, like never using a vehicle.",
+      "examples": [
+        "My school has a strict rule that we walk inside the building.",
+        "Our coach is strict about being on time for practice."
+      ]
+    },
+    {
+      "word": "generous",
+      "partOfSpeech": "adjective",
+      "pronunciation": "JEN-er-us",
+      "articleQuote": "He often slept in a tent or stayed in the homes of generous strangers.",
+      "meaning": "A generous person gives to others and does not ask for much back. They might give food, time, or help. In the article, generous strangers let Mr. Bushby sleep in their homes.",
+      "examples": [
+        "My generous neighbor gave us a basket of apples from her tree.",
+        "It was generous of my brother to share his last cookie."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Strait",
+      "articleQuote": "One of the biggest difficulties was crossing the Bering Strait",
+      "meaning": "Mr. Bushby had to cross the Bering Strait to get from Alaska to Russia. A strait is a narrow strip of water. It runs between two pieces of land.\n\nThink of a creek between two parks. The creek is skinny, and you can see the other side. A strait is like that, but it is part of the sea. It joins two bigger bodies of water, and it separates two lands.\n\nBecause a strait is narrow, ships can pass through it, and so can animals. In the Bering Strait, the water can freeze in winter. That is why Mr. Bushby could climb over chunks of floating ice to cross it.\n\nA strait is a skinny stretch of water between two lands."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Where did Karl Bushby finally arrive on November 2?",
+      "options": [
+        "Hull, England",
+        "Punta Arenas, Chile",
+        "Istanbul, Turkey",
+        "Alaska"
+      ],
+      "answerIndex": 0,
+      "explanation": "Mr. Bushby reached his home in Hull, England, after walking for 28 years."
+    },
+    {
+      "question": "What was one of Mr. Bushby's two strict rules?",
+      "options": [
+        "He had to walk only at night",
+        "He could not use any vehicles to move forward",
+        "He had to carry a cart on his back",
+        "He had to travel with a friend"
+      ],
+      "answerIndex": 1,
+      "explanation": "He could not ride in cars or planes. He had to move forward on foot."
+    },
+    {
+      "question": "The article says strangers were generous. What does generous mean?",
+      "options": [
+        "Very tall",
+        "Always in a hurry",
+        "Gives to others and helps them",
+        "Afraid of new people"
+      ],
+      "answerIndex": 2,
+      "explanation": "A generous person gives to others. The strangers gave Mr. Bushby help and a place to sleep."
+    },
+    {
+      "question": "What is a strait?",
+      "options": [
+        "A tall mountain",
+        "A hot, dry desert",
+        "A kind of boat",
+        "A narrow strip of water between two lands"
+      ],
+      "answerIndex": 3,
+      "explanation": "The Bering Strait is a narrow strip of water between Alaska and Russia."
+    },
+    {
+      "question": "What did Mr. Bushby learn about the world?",
+      "options": [
+        "It is much kinder than it often seems",
+        "It is too small to explore",
+        "It is not a safe place for anyone",
+        "It is the same everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "He said the world is a much kinder, nicer place than it often seems."
+    }
+  ]
+}
