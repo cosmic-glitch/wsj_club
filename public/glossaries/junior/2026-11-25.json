@@ -1,0 +1,386 @@
+[
+  {
+    "k": "dismally",
+    "t": "dismally",
+    "kind": "vocab",
+    "pron": "DIZ-muh-lee",
+    "forms": [
+      "dismally"
+    ],
+    "text": "To do something dismally is to do it very badly, so badly that people feel gloomy. Here, the test scores were a big letdown.",
+    "audio": true
+  },
+  {
+    "k": "budding",
+    "t": "budding",
+    "kind": "vocab",
+    "pron": "BUD-ing",
+    "forms": [
+      "budding"
+    ],
+    "text": "A budding engineer is someone just starting out who may grow into a great one, like a plant bud that will open into a flower.",
+    "audio": true
+  },
+  {
+    "k": "weather",
+    "t": "weather",
+    "kind": "vocab",
+    "pron": "WETH-er",
+    "forms": [
+      "weathering"
+    ],
+    "text": "To weather something means to get safely through a hard time, like a house that stands up to a storm. It is not about rain here.",
+    "audio": true
+  },
+  {
+    "k": "olympiad",
+    "t": "Olympiad",
+    "kind": "word",
+    "forms": [
+      "Olympiad"
+    ],
+    "text": "An Olympiad is a big contest, named after the Olympic Games. This one is for school robots instead of sports.",
+    "audio": true
+  },
+  {
+    "k": "gloomy",
+    "t": "gloomy",
+    "kind": "word",
+    "forms": [
+      "gloomy"
+    ],
+    "text": "Gloomy means sad and without hope, like a dark, cloudy day. The parents expect the future to go badly.",
+    "audio": true
+  },
+  {
+    "k": "artificial-intelligence",
+    "t": "artificial intelligence",
+    "kind": "phrase",
+    "forms": [
+      "artificial intelligence"
+    ],
+    "text": "Artificial intelligence, or AI, is computer software that can do things that usually need a human mind, like understanding speech or solving problems.",
+    "audio": true
+  },
+  {
+    "k": "destroy",
+    "t": "destroy",
+    "kind": "word",
+    "forms": [
+      "destroy"
+    ],
+    "text": "To destroy something is to break it so badly it cannot be used again. Here, people fear AI will wipe out jobs.",
+    "audio": true
+  },
+  {
+    "k": "region",
+    "t": "region",
+    "kind": "word",
+    "forms": [
+      "region"
+    ],
+    "text": "A region is a large area of the world. Here it means Latin America, a group of many countries.",
+    "audio": true
+  },
+  {
+    "k": "international",
+    "t": "international",
+    "kind": "word",
+    "forms": [
+      "international"
+    ],
+    "text": "International means involving many countries. These tests compare students from around the world.",
+    "audio": true
+  },
+  {
+    "k": "astonishing",
+    "t": "astonishing",
+    "kind": "word",
+    "forms": [
+      "astonishing"
+    ],
+    "text": "Astonishing means so surprising it is hard to believe. The article means huge changes that no one saw coming.",
+    "audio": true
+  },
+  {
+    "k": "thrilled",
+    "t": "thrilled",
+    "kind": "word",
+    "forms": [
+      "thrilled"
+    ],
+    "text": "Thrilled means very excited and happy about something.",
+    "audio": true
+  },
+  {
+    "k": "pockets-of-excellence",
+    "t": "pockets of excellence",
+    "kind": "phrase",
+    "forms": [
+      "pockets of excellence"
+    ],
+    "text": "Pockets of excellence are small places where things work very well, even though the rest of the system does not. A few great schools in a weak school system are an example.",
+    "audio": true
+  },
+  {
+    "k": "reformers",
+    "t": "reformers",
+    "kind": "word",
+    "forms": [
+      "reformers"
+    ],
+    "text": "Reformers are people who work to change something to make it better, such as a school system.",
+    "audio": true
+  },
+  {
+    "k": "enthusiasm",
+    "t": "enthusiasm",
+    "kind": "word",
+    "forms": [
+      "enthusiasm"
+    ],
+    "text": "Enthusiasm is strong, excited interest in something.",
+    "audio": true
+  },
+  {
+    "k": "glimpse",
+    "t": "glimpse",
+    "kind": "word",
+    "forms": [
+      "glimpse"
+    ],
+    "text": "A glimpse is a quick look. The writer says the Olympiad gives a quick peek at what is possible.",
+    "audio": true
+  },
+  {
+    "k": "arena",
+    "t": "arena",
+    "kind": "word",
+    "forms": [
+      "arena"
+    ],
+    "text": "An arena is a big indoor building for sports and concerts, with seats all around.",
+    "audio": true
+  },
+  {
+    "k": "candombe",
+    "t": "candombe",
+    "kind": "word",
+    "forms": [
+      "candombe"
+    ],
+    "text": "Candombe is a style of drumming and music from Uruguay, played on tall drums with a strong beat.",
+    "audio": true
+  },
+  {
+    "k": "programmed",
+    "t": "programmed",
+    "kind": "word",
+    "forms": [
+      "programmed"
+    ],
+    "text": "To program a robot is to give it exact instructions on what to do. The kids wrote the instructions their robots follow.",
+    "audio": true
+  },
+  {
+    "k": "whizz",
+    "t": "whizz",
+    "kind": "word",
+    "forms": [
+      "whizz"
+    ],
+    "text": "To whizz is to move very fast with a buzzing sound, like a racing toy car.",
+    "audio": true
+  },
+  {
+    "k": "drones",
+    "t": "drones",
+    "kind": "word",
+    "forms": [
+      "drones"
+    ],
+    "text": "A drone is a small flying machine with no pilot on board. It is steered by a remote control or a computer.",
+    "audio": true
+  },
+  {
+    "k": "obstacles",
+    "t": "obstacles",
+    "kind": "word",
+    "forms": [
+      "obstacles"
+    ],
+    "text": "Obstacles are things in the way that you must get around, like cones in a race.",
+    "audio": true
+  },
+  {
+    "k": "beams",
+    "t": "beams",
+    "kind": "word",
+    "forms": [
+      "beams"
+    ],
+    "text": "Here, beams means smiles very widely and happily. It can also mean a ray of light.",
+    "audio": true
+  },
+  {
+    "k": "correspondent",
+    "t": "correspondent",
+    "kind": "word",
+    "forms": [
+      "correspondent"
+    ],
+    "text": "A correspondent is a reporter who sends stories from a place. Here, the writer is talking about themself.",
+    "audio": true
+  },
+  {
+    "k": "looms",
+    "t": "looms",
+    "kind": "word",
+    "forms": [
+      "looms"
+    ],
+    "text": "To loom is to rise up large and tall over something. A giant picture looms over the kids.",
+    "audio": true
+  },
+  {
+    "k": "pupils",
+    "t": "pupils",
+    "kind": "word",
+    "forms": [
+      "pupils"
+    ],
+    "text": "Pupils are students in a school. In the article it has nothing to do with the eye.",
+    "audio": true
+  },
+  {
+    "k": "20-fold",
+    "t": "20-fold",
+    "kind": "phrase",
+    "forms": [
+      "20-fold"
+    ],
+    "text": "Twenty-fold means twenty times as big. If a team count went from 10 to 200, it grew 20-fold.",
+    "audio": true
+  },
+  {
+    "k": "micro-bit",
+    "t": "micro:bit",
+    "kind": "word",
+    "forms": [
+      "micro:bit"
+    ],
+    "text": "A micro:bit is a tiny computer about the size of a credit card, with little lights on it. Kids can program it to do simple tasks.",
+    "audio": true
+  },
+  {
+    "k": "leds",
+    "t": "LEDs",
+    "kind": "word",
+    "forms": [
+      "LEDs"
+    ],
+    "text": "An LED is a small light that uses very little power, like the tiny lights on a gadget.",
+    "audio": true
+  },
+  {
+    "k": "attracting",
+    "t": "attracting",
+    "kind": "word",
+    "forms": [
+      "attracting",
+      "drawing in"
+    ],
+    "text": "Attracting here means pulling people in, so that more and more of them join.",
+    "audio": true
+  },
+  {
+    "k": "shindig",
+    "t": "shindig",
+    "kind": "word",
+    "forms": [
+      "shindig"
+    ],
+    "text": "A shindig is a lively party or big event. It is a playful word.",
+    "audio": true
+  },
+  {
+    "k": "state-funded",
+    "t": "state-funded",
+    "kind": "phrase",
+    "forms": [
+      "state-funded"
+    ],
+    "text": "State-funded means paid for by the government with tax money.",
+    "audio": true
+  },
+  {
+    "k": "3d-printers",
+    "t": "3D printers",
+    "kind": "phrase",
+    "forms": [
+      "3D printers"
+    ],
+    "text": "A 3D printer is a machine that builds a solid object, layer by layer, from a computer design.",
+    "audio": true
+  },
+  {
+    "k": "computational-thinking",
+    "t": "computational thinking",
+    "kind": "phrase",
+    "forms": [
+      "computational thinking"
+    ],
+    "text": "Computational thinking is breaking a big problem into small steps, the way a computer would.",
+    "audio": true
+  },
+  {
+    "k": "spark",
+    "t": "spark",
+    "kind": "word",
+    "forms": [
+      "spark"
+    ],
+    "text": "To spark something is to start it, like a spark that lights a fire. Here, it means starting a love of learning.",
+    "audio": true
+  },
+  {
+    "k": "ambitions",
+    "t": "ambitions",
+    "kind": "word",
+    "forms": [
+      "ambitions"
+    ],
+    "text": "Ambitions are big goals that you really want to reach.",
+    "audio": true
+  },
+  {
+    "k": "stem",
+    "t": "STEM",
+    "kind": "word",
+    "forms": [
+      "STEM"
+    ],
+    "text": "STEM stands for Science, Technology, Engineering, and Math, the subjects used to build and understand things.",
+    "audio": true
+  },
+  {
+    "k": "university",
+    "t": "university",
+    "kind": "word",
+    "forms": [
+      "university"
+    ],
+    "text": "A university is a school you go to after high school to study more, also called college.",
+    "audio": true
+  },
+  {
+    "k": "pollsters",
+    "t": "pollsters",
+    "kind": "word",
+    "forms": [
+      "Pollsters"
+    ],
+    "text": "Pollsters are people who ask many people their opinions to learn what groups think.",
+    "audio": true
+  }
+]

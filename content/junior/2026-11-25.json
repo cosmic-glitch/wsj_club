@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-25",
+  "title": "What a robot Olympiad reveals about Latin America’s future",
+  "articleUrl": "https://www.economist.com/the-americas/2026/11/19/what-a-robot-olympiad-reveals-about-latin-americas-future",
+  "articlePageUrl": "/articles/junior/2026-11-25.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "dismally",
+      "partOfSpeech": "adverb",
+      "pronunciation": "DIZ-muh-lee",
+      "articleQuote": "the region’s kids did dismally in recent international school tests",
+      "meaning": "To do something dismally is to do it very badly, in a way that leaves people gloomy and disappointed. It is stronger than just \"badly.\" Here, the test scores in Latin America were so low that they were a real letdown. A team that loses every game of the season has played dismally. It comes from the same root as the word dismal, which means gloomy.",
+      "examples": [
+        "Our team played dismally, and we lost by thirty points.",
+        "He studied too little and did dismally on the spelling test."
+      ]
+    },
+    {
+      "word": "budding",
+      "partOfSpeech": "adjective",
+      "pronunciation": "BUD-ing",
+      "articleQuote": "a giant image of Jennifer Lopez looms over the budding engineers",
+      "meaning": "A budding artist, scientist, or athlete is someone just starting out who shows promise and may grow into something great. The word comes from a plant bud, the small bump that will one day open into a flower. Here, the kids building robots are budding engineers: they are young now, but they may build real machines someday.",
+      "examples": [
+        "My little sister is a budding chef who already makes great pancakes.",
+        "The art teacher said there were several budding painters in our class."
+      ]
+    },
+    {
+      "word": "weather",
+      "partOfSpeech": "verb",
+      "pronunciation": "WETH-er",
+      "articleQuote": "not the best starting-point for weathering an era that might bring astonishing change.",
+      "meaning": "As a verb, to weather something means to get safely through a hard or stormy time. It is not about rain here. It comes from how a ship or a house \"weathers\" a storm and is still standing afterward. In the article, it means getting through a time of big changes without being hurt by them. A family can weather a move to a new town, and a team can weather a losing streak.",
+      "examples": [
+        "Our town weathered the blizzard with no one getting hurt.",
+        "The two friends weathered an argument and became closer than ever."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "STEM",
+      "articleQuote": "were much more likely than classmates who did not take part to do STEM subjects at university.",
+      "meaning": "**STEM** is a short name for four school subjects: Science, Technology, Engineering, and Math.\n\nEach letter is a different kind of problem solving. Science asks why things happen. Technology is the tools people make, like computers. Engineering is designing and building things that work, like a bridge or a robot. Math is the language that ties them together. Imagine building a model rocket for a school fair. You use science to understand how it flies, math to measure it, engineering to build it, and technology to track how high it goes.\n\nThis matters because many of the jobs of the future are STEM jobs. The article is about a robot contest that gets kids excited about STEM early, so more of them choose those subjects later in school and college."
+    },
+    {
+      "name": "Programming",
+      "articleQuote": "robots that they have built and programmed in their schools whizz around courses.",
+      "meaning": "**Programming** means writing a list of exact instructions that tells a computer or a robot what to do.\n\nA computer does not understand hints. It follows each step exactly, in order. Think about teaching a friend to make a peanut butter sandwich using only written steps. If you forget to say \"open the jar,\" your friend is stuck. A robot is the same. To make a robot turn left at a wall, a programmer has to write the instruction for it, step by step.\n\nThe article says kids as young as eight can program a tiny computer called a micro:bit. When a program does not work, the programmer finds the mistake and fixes it. That habit of breaking a big problem into small steps is called computational thinking, and it helps with far more than robots."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Where does the robot Olympiad in the article take place?",
+      "options": ["Uruguay", "Brazil", "South Korea", "Houston"],
+      "answerIndex": 0,
+      "explanation": "The event is held every year in the biggest indoor arena in Uruguay."
+    },
+    {
+      "question": "What was the main goal of Ceibal when it was created in 2007?",
+      "options": [
+        "To give every Uruguayan child a laptop",
+        "To build a giant robot",
+        "To host pop concerts",
+        "To teach kids to play drums"
+      ],
+      "answerIndex": 0,
+      "explanation": "Ceibal started by giving every child a laptop, but that did not improve reading or math scores, so it now focuses on robotics too."
+    },
+    {
+      "question": "How do many children in Latin America feel about new technologies, compared with their parents?",
+      "options": [
+        "They are more excited and less worried",
+        "They are more afraid of AI",
+        "They do not care at all",
+        "They feel exactly the same as their parents"
+      ],
+      "answerIndex": 0,
+      "explanation": "Parents are often gloomy about AI, but the children are thrilled, and young people worry less about AI than people over 50."
+    },
+    {
+      "question": "Which sentence uses the word \"budding\" correctly?",
+      "options": [
+        "She is a budding musician who just started violin lessons.",
+        "The budding hurricane destroyed the old bridge.",
+        "He ate a budding of soup.",
+        "The budding test was very long."
+      ],
+      "answerIndex": 0,
+      "explanation": "Budding describes someone just starting out who shows promise, like a new violin player."
+    },
+    {
+      "question": "What did the ten-year study of the FIRST Championship find?",
+      "options": [
+        "Participants were more likely to study STEM subjects at university",
+        "Participants all became drone pilots",
+        "Participants did worse in school",
+        "Participants stopped using computers"
+      ],
+      "answerIndex": 0,
+      "explanation": "Kids who took part, especially girls, were much more likely than classmates to choose STEM subjects at university."
+    }
+  ]
+}
