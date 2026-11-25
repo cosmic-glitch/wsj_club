@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-25",
+  "title": "Doomsday predictions have value, even if they’re wrong",
+  "articleUrl": "https://www.economist.com/science-and-technology/2026/11/24/doomsday-predictions-have-value-even-if-theyre-wrong",
+  "articlePageUrl": "/articles/2026-11-25.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "confer",
+      "partOfSpeech": "verb",
+      "pronunciation": "kun-FUR",
+      "articleQuote": "they would confer an overwhelming strategic advantage on the countries that build them",
+      "meaning": "To confer something is to give or grant it, usually a benefit, honor or power. It can also mean to hold a discussion with someone, as in conferring with a lawyer. Here it means that powerful AI would hand its builders a huge edge over rival countries, which is why scary warnings can make the technology look even more valuable.",
+      "examples": [
+        "The university will confer an honorary degree on the retired scientist.",
+        "Winning the championship did not confer any special rights, only bragging rights."
+      ]
+    },
+    {
+      "word": "degradation",
+      "partOfSpeech": "noun",
+      "pronunciation": "deg-ruh-DAY-shun",
+      "articleQuote": "Political instability, environmental degradation, inequality and technological change all reinforce each other",
+      "meaning": "Degradation is a gradual decline in quality, condition or value. Environmental degradation means nature getting worse step by step: soil wearing out, water getting dirty, forests shrinking. In the article it is one of several slow-moving problems that, together, can bring a society down.",
+      "examples": [
+        "Years of overfishing led to the degradation of the coral reef.",
+        "Constant copying caused a slow degradation in the quality of the old video."
+      ]
+    },
+    {
+      "word": "buffer",
+      "partOfSpeech": "verb",
+      "pronunciation": "BUF-er",
+      "articleQuote": "Its geographical isolation buffers some impacts",
+      "meaning": "To buffer is to cushion or protect something from a shock, like a bumper softening a crash. As a noun, a buffer is the cushion itself. Here Australia's remoteness softens the blow from some global disasters, since trouble has a harder time reaching an island far from everyone else.",
+      "examples": [
+        "Her savings account buffered the family against the sudden car repair bill.",
+        "Thick forests buffer the village from the worst of the winter wind."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The singularity",
+      "articleQuote": "a graph that shows a curve climbing ever more steeply towards infinity. Mathematicians call this a singularity.",
+      "meaning": "The article uses the word singularity twice, for two different-sounding ideas that share one shape.\n\nIn math, a singularity is a point where a quantity shoots off toward infinity, so the formula stops giving sensible answers. Imagine a graph where every step up makes the next step bigger: 2, 4, 8, 16, and so on. That is exponential growth. A curve that grows even faster than that can hit infinity at a specific date. In 1960 Heinz von Foerster fitted such a curve to world population and found the date, Friday 13 November 2026, when the formula said the number of people would be infinite. Of course people cannot be infinite; the real world hits limits like food and space long before, which means the formula stopped being true.\n\nThe AI version borrows the same picture. The idea is that once a machine can improve its own design, each improved version builds a better one faster than the last, so progress snowballs past anything humans can follow. Nobody knows whether that will really happen. The lesson of von Foerster's date is a useful caution: a curve that rises steeply today does not have to keep rising, and a prediction made by extending it forever deserves suspicion."
+    },
+    {
+      "name": "Self-defeating predictions",
+      "articleQuote": "their work relies on the optimistic assumption that the future can still be changed",
+      "meaning": "Most predictions, like a weather forecast, do not change the thing they predict. A warning about human behavior is different, because the people who hear it can react.\n\nA self-defeating prediction is a forecast that causes actions which stop it from coming true. If a doctor warns you that your habits will give you heart disease and you change them, the doctor's prediction turns out wrong, yet it did its job. The article's examples work this way: warnings about acid rain and the ozone layer led countries to cut pollution, and models of the pandemic helped inspire lockdowns that kept the worst numbers from happening. Von Foerster's doomsday date for population never arrived, but his joke warning drew attention to population growth.\n\nThe opposite can happen too. A self-fulfilling prediction pushes people to act in ways that make it come true, like a rumor of a bank failing that makes everyone withdraw their money. The article hints at a twist: AI companies' scary warnings can make the technology seem so powerful that governments invest more, which speeds up the very thing being warned about. So whether a warning helps depends on whether it offers a credible path to avoid the danger, and not only a fright."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What did Heinz von Foerster's 1960 paper predict would happen on 13 November 2026?",
+      "options": [
+        "A nuclear war would begin",
+        "The Earth would be so crowded that humanity would squash itself to death",
+        "Machines would become smarter than people",
+        "A giant asteroid would hit the planet"
+      ],
+      "answerIndex": 1,
+      "explanation": "His model of population growth hit a singularity on that date, though the date was partly chosen because it was his birthday."
+    },
+    {
+      "question": "What worries Luke Kemp most about AI, according to the article?",
+      "options": [
+        "That robots will turn on their makers",
+        "That AI will make existing problems such as mass surveillance and wealth inequality much worse",
+        "That AI companies will run out of money",
+        "That AI will be banned"
+      ],
+      "answerIndex": 1,
+      "explanation": "He sees these as not distractions from the headline dangers, since collapse rarely has a single cause."
+    },
+    {
+      "question": "Why does the article say Australia offers the most hope in a global disaster?",
+      "options": [
+        "It has the strongest army",
+        "It has no trade with other countries",
+        "Its isolation buffers some impacts and its size, farmland and infrastructure could sustain people",
+        "It has built the most luxury bunkers"
+      ],
+      "answerIndex": 2,
+      "explanation": "Geography and farmland help, though Dr Kemp adds that a country can survive one disaster and be vulnerable to another."
+    },
+    {
+      "question": "How can doomsday predictions act as a 'perverse advertisement'?",
+      "options": [
+        "They make people buy bunkers",
+        "Frightening warnings about AI can make the technology seem so powerful that investment in it grows",
+        "They prove that the predictors are always wrong",
+        "They make scientists famous"
+      ],
+      "answerIndex": 1,
+      "explanation": "The more terrifying the claims by AI companies, the stronger the case for investing in it, the opposite of what a warning intends."
+    },
+    {
+      "question": "According to the article, when can a warning prompt positive action?",
+      "options": [
+        "When it is delivered as loudly as possible",
+        "When it names an exact date",
+        "When it shows credible consequences and a pathway to prevent them",
+        "When it comes from a billionaire"
+      ],
+      "answerIndex": 2,
+      "explanation": "Acid rain and ozone warnings worked because evidence of damage came with ways to curb pollution."
+    }
+  ]
+}
