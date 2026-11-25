@@ -1,0 +1,435 @@
+[
+  {
+    "k": "reservoir",
+    "t": "reservoirs",
+    "kind": "vocab",
+    "pron": "REZ-er-vwar",
+    "forms": [
+      "reservoirs"
+    ],
+    "text": "A reservoir is a big lake that people made to store water. Williston Lake is a very large one.",
+    "audio": true
+  },
+  {
+    "k": "unstable",
+    "t": "unstable",
+    "kind": "vocab",
+    "pron": "un-STAY-bul",
+    "forms": [
+      "unstable"
+    ],
+    "text": "Unstable means not steady. It can wobble, move, or fall apart, so it may not be safe to stand on.",
+    "audio": true
+  },
+  {
+    "k": "suggested",
+    "t": "suggested",
+    "kind": "vocab",
+    "pron": "sug-JES-tid",
+    "forms": [
+      "suggested"
+    ],
+    "text": "To suggest is to share an idea that might be right. Mr. Gammer shared an idea about how the island began.",
+    "audio": true
+  },
+  {
+    "k": "curious",
+    "t": "curious",
+    "kind": "word",
+    "forms": [
+      "curious"
+    ],
+    "text": "Curious here means strange and puzzling, so you want to know more.",
+    "audio": true
+  },
+  {
+    "k": "mystery",
+    "t": "mystery",
+    "kind": "word",
+    "forms": [
+      "mystery"
+    ],
+    "text": "A mystery is something strange that nobody can explain yet.",
+    "audio": true
+  },
+  {
+    "k": "island",
+    "t": "island",
+    "kind": "word",
+    "forms": [
+      "island"
+    ],
+    "text": "An island is land with water all around it.",
+    "audio": true
+  },
+  {
+    "k": "british-columbia",
+    "t": "British Columbia",
+    "kind": "name",
+    "forms": [
+      "British Columbia"
+    ],
+    "text": "British Columbia is a province in western Canada.",
+    "audio": true
+  },
+  {
+    "k": "canada",
+    "t": "Canada",
+    "kind": "name",
+    "forms": [
+      "Canada"
+    ],
+    "text": "Canada is a big country just north of the United States.",
+    "audio": true
+  },
+  {
+    "k": "province",
+    "t": "province",
+    "kind": "word",
+    "forms": [
+      "province"
+    ],
+    "text": "A province is a part of a country, a little like a state.",
+    "audio": true
+  },
+  {
+    "k": "williston-lake",
+    "t": "Williston Lake",
+    "kind": "name",
+    "forms": [
+      "Williston Lake"
+    ],
+    "text": "Williston Lake is a huge lake in British Columbia, Canada.",
+    "audio": true
+  },
+  {
+    "k": "man-made",
+    "t": "man-made",
+    "kind": "word",
+    "forms": [
+      "man-made"
+    ],
+    "text": "Man-made means built or made by people, not by nature.",
+    "audio": true
+  },
+  {
+    "k": "square-miles",
+    "t": "square miles",
+    "kind": "phrase",
+    "forms": [
+      "square miles"
+    ],
+    "text": "Square miles measure how much flat space something covers. This lake covers a very big area.",
+    "audio": true
+  },
+  {
+    "k": "kilometers",
+    "t": "kilometers",
+    "kind": "word",
+    "forms": [
+      "kilometers"
+    ],
+    "text": "A kilometer is a way to measure distance. It is a little more than half a mile.",
+    "audio": true
+  },
+  {
+    "k": "bc-hydro",
+    "t": "BC Hydro",
+    "kind": "name",
+    "forms": [
+      "BC Hydro"
+    ],
+    "text": "BC Hydro is a company that makes electricity in British Columbia. It looks after the reservoir.",
+    "audio": true
+  },
+  {
+    "k": "government-run",
+    "t": "government-run",
+    "kind": "phrase",
+    "forms": [
+      "government-run"
+    ],
+    "text": "Government-run means the people who lead a place are in charge of it.",
+    "audio": true
+  },
+  {
+    "k": "t-shaped",
+    "t": "T-shaped",
+    "kind": "word",
+    "forms": [
+      "T-shaped"
+    ],
+    "text": "T-shaped means it looks like the letter T.",
+    "audio": true
+  },
+  {
+    "k": "boaters",
+    "t": "boaters",
+    "kind": "word",
+    "forms": [
+      "boaters"
+    ],
+    "text": "Boaters are people who ride in boats.",
+    "audio": true
+  },
+  {
+    "k": "social-media",
+    "t": "social media",
+    "kind": "phrase",
+    "forms": [
+      "social media"
+    ],
+    "text": "Social media is where people share pictures and videos on phones and computers.",
+    "audio": true
+  },
+  {
+    "k": "bob-gammer",
+    "t": "Bob Gammer",
+    "kind": "name",
+    "forms": [
+      "Bob Gammer"
+    ],
+    "text": "Bob Gammer is a man who works for BC Hydro.",
+    "audio": true
+  },
+  {
+    "k": "ai",
+    "t": "AI",
+    "kind": "name",
+    "forms": [
+      "AI"
+    ],
+    "text": "AI means artificial intelligence. It is a computer that can make pictures that look real but are not.",
+    "audio": true
+  },
+  {
+    "k": "satellite",
+    "t": "satellite",
+    "kind": "word",
+    "forms": [
+      "satellite"
+    ],
+    "text": "A satellite is an object that goes around the Earth, high up in space. Many take pictures of the ground.",
+    "audio": true
+  },
+  {
+    "k": "satellite-image",
+    "t": "satellite image",
+    "kind": "phrase",
+    "forms": [
+      "satellite image"
+    ],
+    "text": "A satellite image is a picture of the Earth taken from space.",
+    "audio": true
+  },
+  {
+    "k": "sure-enough",
+    "t": "Sure enough",
+    "kind": "phrase",
+    "forms": [
+      "Sure enough"
+    ],
+    "text": "Sure enough means just as he guessed.",
+    "audio": true
+  },
+  {
+    "k": "yards",
+    "t": "yards",
+    "kind": "word",
+    "forms": [
+      "yards"
+    ],
+    "text": "A yard is a way to measure length. It is about three feet.",
+    "audio": true
+  },
+  {
+    "k": "meters",
+    "t": "meters",
+    "kind": "word",
+    "forms": [
+      "meters"
+    ],
+    "text": "A meter is a way to measure length. It is a little more than a yard.",
+    "audio": true
+  },
+  {
+    "k": "football-fields",
+    "t": "football fields",
+    "kind": "phrase",
+    "forms": [
+      "football fields"
+    ],
+    "text": "A football field is very long. Two of them end to end make a huge space.",
+    "audio": true
+  },
+  {
+    "k": "floating",
+    "t": "floating",
+    "kind": "word",
+    "forms": [
+      "floating"
+    ],
+    "text": "Floating means sitting on top of water and not sinking.",
+    "audio": true
+  },
+  {
+    "k": "logs",
+    "t": "logs",
+    "kind": "word",
+    "forms": [
+      "logs"
+    ],
+    "text": "Logs are thick pieces of tree trunk.",
+    "audio": true
+  },
+  {
+    "k": "built-up",
+    "t": "built up",
+    "kind": "phrase",
+    "forms": [
+      "built up"
+    ],
+    "text": "Built up means gathered into a bigger and bigger pile over time.",
+    "audio": true
+  },
+  {
+    "k": "protected-area",
+    "t": "protected area",
+    "kind": "phrase",
+    "forms": [
+      "protected area"
+    ],
+    "text": "A protected area is a spot where the wind and waves cannot reach very well. It is calm.",
+    "audio": true
+  },
+  {
+    "k": "coast",
+    "t": "coast",
+    "kind": "word",
+    "forms": [
+      "coast"
+    ],
+    "text": "The coast is the land right next to the water.",
+    "audio": true
+  },
+  {
+    "k": "seeds",
+    "t": "seeds",
+    "kind": "word",
+    "forms": [
+      "seeds"
+    ],
+    "text": "Seeds are tiny parts of plants. A new plant can grow from each one.",
+    "audio": true
+  },
+  {
+    "k": "mass",
+    "t": "mass",
+    "kind": "word",
+    "forms": [
+      "mass"
+    ],
+    "text": "A mass is a big lump of things stuck together.",
+    "audio": true
+  },
+  {
+    "k": "roots",
+    "t": "roots",
+    "kind": "word",
+    "forms": [
+      "roots"
+    ],
+    "text": "Roots are the parts of a plant under the ground. They hold the plant in place.",
+    "audio": true
+  },
+  {
+    "k": "tie-together",
+    "t": "tie the whole structure together",
+    "kind": "phrase",
+    "forms": [
+      "tie the whole structure together"
+    ],
+    "text": "Tie together means to hold many pieces so they stay as one.",
+    "audio": true
+  },
+  {
+    "k": "water-level",
+    "t": "water level",
+    "kind": "phrase",
+    "forms": [
+      "water level"
+    ],
+    "text": "The water level is how high the water comes up.",
+    "audio": true
+  },
+  {
+    "k": "shoreline",
+    "t": "shoreline",
+    "kind": "word",
+    "forms": [
+      "shoreline"
+    ],
+    "text": "The shoreline is the edge where land meets water.",
+    "audio": true
+  },
+  {
+    "k": "broken-loose",
+    "t": "broken the structure loose",
+    "kind": "phrase",
+    "forms": [
+      "broken the structure loose"
+    ],
+    "text": "Broken loose means freed from what was holding it. The high water set the island free.",
+    "audio": true
+  },
+  {
+    "k": "searching",
+    "t": "searching",
+    "kind": "word",
+    "forms": [
+      "searching"
+    ],
+    "text": "Searching means looking carefully for something that is lost.",
+    "audio": true
+  },
+  {
+    "k": "pushed-up-against",
+    "t": "pushed up against",
+    "kind": "phrase",
+    "forms": [
+      "pushed up against"
+    ],
+    "text": "Pushed up against means pressed right next to something.",
+    "audio": true
+  },
+  {
+    "k": "sails",
+    "t": "sails",
+    "kind": "word",
+    "forms": [
+      "sails"
+    ],
+    "text": "A sail is a big piece of cloth on a boat. The wind pushes it and the boat moves.",
+    "audio": true
+  },
+  {
+    "k": "famous",
+    "t": "famous",
+    "kind": "word",
+    "forms": [
+      "famous"
+    ],
+    "text": "Famous means many people know about it.",
+    "audio": true
+  },
+  {
+    "k": "warned",
+    "t": "warned",
+    "kind": "word",
+    "forms": [
+      "warned"
+    ],
+    "text": "Warned means told to be careful because of danger.",
+    "audio": true
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-25",
+  "title": "A floating island appears in a lake, then drifts away",
+  "articleUrl": "https://newsforkids.net/articles/2026/09/17/the-case-of-the-mysterious-floating-island/",
+  "articlePageUrl": "/articles/kids/2026-11-25.html",
+  "voiceQuiz": true,
+  "source": "News for Kids",
+  "vocab": [
+    {
+      "word": "reservoir",
+      "partOfSpeech": "noun",
+      "pronunciation": "REZ-er-vwar",
+      "articleQuote": "Williston Lake, in the Canadian province of British Columbia, is one of the world’s largest man-made reservoirs.",
+      "meaning": "A reservoir is a big lake that people made to store water. Often it is made by building a wall, called a dam, across a river. In the article, Williston Lake is a reservoir, and it is very large.",
+      "examples": [
+        "The town keeps its drinking water in a reservoir on the hill.",
+        "We went for a boat ride on the reservoir last summer."
+      ]
+    },
+    {
+      "word": "unstable",
+      "partOfSpeech": "adjective",
+      "pronunciation": "un-STAY-bul",
+      "articleQuote": "But boaters are being warned not to land on the island: its structure may be just as unstable as its location.",
+      "meaning": "Something unstable is not steady. It can wobble, move, or fall apart. In the article, the floating island is unstable, so it might not be safe to stand on.",
+      "examples": [
+        "My tall tower of blocks was unstable, and it fell down.",
+        "The old chair was unstable, so Dad fixed it."
+      ]
+    },
+    {
+      "word": "suggested",
+      "partOfSpeech": "verb",
+      "pronunciation": "sug-JES-tid",
+      "articleQuote": "Mr. Gammer suggested one possible explanation: Dead logs and other pieces of wood may have built up over many years in a protected area along the reservoir’s coast.",
+      "meaning": "To suggest something is to share an idea. You are not sure it is right, but it might be. In the article, Mr. Gammer suggested a possible reason for how the island began.",
+      "examples": [
+        "My sister suggested that we play tag at the park.",
+        "The teacher suggested a good book for me to read."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Satellite",
+      "articleQuote": "Then he discovered a satellite image of the reservoir that had been taken on July 21.",
+      "meaning": "The island was lost, and then found again, with help from satellite pictures. A satellite is an object that goes around the Earth, far up in space.\n\nThe Moon is a natural satellite of Earth. People also build satellites and send them up in rockets. Many of them carry cameras, like a very high up camera in the sky.\n\nA satellite goes around the Earth again and again. As it moves, it takes pictures of the land and water below. That is how Mr. Gammer could see the whole lake at once, and spot the island from far above.\n\nSo a satellite is a helper in space. It can show us places that are too big or too far to see from the ground."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What surprised the boaters on Williston Lake?",
+      "options": [
+        "A new island with trees on it",
+        "A very big fish",
+        "A bridge over the water",
+        "A boat that could fly"
+      ],
+      "answerIndex": 0,
+      "explanation": "A large island with trees growing on it showed up where there had been none before."
+    },
+    {
+      "question": "How did Mr. Gammer first find the island in a picture?",
+      "options": [
+        "He flew over it in a plane",
+        "He saw it on a satellite image",
+        "He swam out to it",
+        "A boater drew it for him"
+      ],
+      "answerIndex": 1,
+      "explanation": "He found a satellite image taken on July 21 that showed the island."
+    },
+    {
+      "question": "A reservoir is a big lake that people made. Which place is a reservoir in the article?",
+      "options": [
+        "The Moon",
+        "BC Hydro",
+        "Williston Lake",
+        "A football field"
+      ],
+      "answerIndex": 2,
+      "explanation": "Williston Lake was made in 1972, so it is a reservoir."
+    },
+    {
+      "question": "How might the floating island have started?",
+      "options": [
+        "A giant boat broke apart",
+        "Boaters built it as a prank",
+        "It rained for one whole year",
+        "Logs and wood built up, plants grew on them, and high water lifted the mass loose"
+      ],
+      "answerIndex": 3,
+      "explanation": "Mr. Gammer thinks logs built up, seeds grew into plants and trees, and high water set the mass free."
+    },
+    {
+      "question": "Why did the island travel 19 miles?",
+      "options": [
+        "Its trees caught the wind like sails",
+        "It had a tiny motor",
+        "Boaters pulled it with ropes",
+        "It was chased by a whale"
+      ],
+      "answerIndex": 0,
+      "explanation": "The tops of the trees caught the wind like sails and pushed the island across the lake."
+    }
+  ]
+}
