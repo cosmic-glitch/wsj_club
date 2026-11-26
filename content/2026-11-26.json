@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-26",
+  "title": "Humanoid robots are coming—sooner than you think",
+  "articleUrl": "https://www.economist.com/briefing/2026/11/26/humanoid-robots-are-coming-sooner-than-you-think",
+  "articlePageUrl": "/articles/2026-11-26.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "boosterism",
+      "partOfSpeech": "noun",
+      "pronunciation": "BOO-ster-iz-um",
+      "articleQuote": "The case for boosterism is clear: AI has enormously accelerated the process of teaching robots how to do things.",
+      "meaning": "Boosterism is enthusiastic, often over-the-top promotion of something, the way a town booster brags that it is the best place on Earth. A booster is a cheerleader, and the word usually hints that the hype may run ahead of the facts. Here it describes people who say humanoid robots will transform the world very soon, a view the article takes seriously while warning that real obstacles remain.",
+      "examples": [
+        "The mayor's boosterism about the new stadium ignored how much it would cost taxpayers.",
+        "Behind the startup's cheerful boosterism was a product that still crashed every hour."
+      ]
+    },
+    {
+      "word": "sequestered",
+      "partOfSpeech": "adjective",
+      "pronunciation": "sih-KWES-terd",
+      "articleQuote": "Robots that work alongside humans in factories operate at a slower pace than those that are sequestered in cages.",
+      "meaning": "To sequester something is to set it apart and keep it isolated, like a jury kept away from the public during a trial. Something sequestered is shut off from others, whether for safety, secrecy or privacy. In the article, factory robots kept inside cages can work at full speed because no human can be hurt, while robots sharing space with people have to slow down.",
+      "examples": [
+        "The jurors were sequestered in a hotel so no one could influence them.",
+        "She sequestered herself in her room for a weekend to finish her science project."
+      ]
+    },
+    {
+      "word": "obviate",
+      "partOfSpeech": "verb",
+      "pronunciation": "OB-vee-ayt",
+      "articleQuote": "Software improvements may one day obviate the need for such precautions, but the regulatory standards to permit that do not yet exist.",
+      "meaning": "To obviate a problem or a need is to make it unnecessary, usually by dealing with it ahead of time. If a bridge is built, it obviates the need for a ferry. The article suggests that smarter, safer robot software might someday make cages and slow speeds unnecessary, although the rules that would allow this have not been written.",
+      "examples": [
+        "A reliable bus system could obviate the need for a second family car.",
+        "Her clear instructions obviated any need for questions afterwards."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "The sim-to-real gap (the “blind gymnast” problem)",
+      "articleQuote": "Robots can be trained much faster in digital simulations than in the real world.",
+      "meaning": "This comes from robotics and machine learning. A simulation is a computer-made practice world. Training a robot there is cheap and fast: a computer can run a million attempts at a movement in seconds, with no broken parts and no waiting. A real robot can only try one movement at a time, in real time, and it can wear out or fall over.\n\nThe catch is the sim-to-real gap: a simulation is never exactly like the real world. Think of a gymnast who rehearses a routine thousands of times on a perfect mat, then performs it blindfolded. The routine looks amazing until something unexpected shows up, say a kerb, a wall or a small child, and the gymnast cannot adapt. Nvidia's Jim Fan calls this the “blind gymnast” problem, and it is why a robot doing backflips online tells us little about whether it can work in a messy kitchen.\n\nThe article describes three fixes. Make simulations more realistic, for example “world models” that behave like interactive video of real scenes. Collect real-world data, such as people wearing sensors while they clean. Or let many real robots practise, so the more robots are sold, the more data they gather."
+    },
+    {
+      "name": "Moving down the cost curve",
+      "articleQuote": "Enthusiastic early adopters may well pay more to own a live-in robot than it would cost to hire humans to do the same work, helping robotics firms to scale and so descend the cost curve.",
+      "meaning": "This is an idea from economics and business. Many products get cheaper the more of them are made: factories learn better methods, parts are bought in bulk, and designs improve. Picture a graph where the price falls as total production rises. Making progress along that line is called descending the cost curve.\n\nSolar panels and flat-screen televisions followed it, starting out as pricey gadgets for enthusiasts and ending up in ordinary homes. The robot story has the same shape. A humanoid robot that cost around $1m in the mid-2000s now costs around $50,000 from big Chinese makers, and the article says Unitree's average price fell 72% in just two years.\n\nThe curve is why early buyers matter. If a few people will pay too much for a home robot today, their money pays for factories and data, which makes the next robot cheaper, which brings in the next group of buyers. The article notes that this loop depends on scale, which is why Western firms that mostly spend on research instead of manufacturing may fall behind."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why does the article say the home may be the first big destination for humanoid robots?",
+      "options": [
+        "Homes are the safest place to test dangerous robots with chainsaws",
+        "Home work needs less strength and is less intensive, so safety is simpler and robots have more time to justify their cost",
+        "Households already own the most expensive robots",
+        "Laws forbid robots in factories"
+      ],
+      "answerIndex": 1,
+      "explanation": "Home use turns robots' current weaknesses into acceptable traits: no need for huge strength and less wear than in industrial work."
+    },
+    {
+      "question": "What is the “blind gymnast” problem?",
+      "options": [
+        "Robots trained in simulation perform well in situations like the simulation but fail when something unexpected happens",
+        "Robots cannot see in the dark",
+        "Gymnasts are being replaced by robots in competitions",
+        "Robots forget their training each night"
+      ],
+      "answerIndex": 0,
+      "explanation": "Like a gymnast doing a practised routine blindfolded, the robot falls apart when it meets an unexpected kerb, wall or child."
+    },
+    {
+      "question": "According to the article, what has happened to the price of humanoid robots?",
+      "options": [
+        "It has risen as the machines have become more advanced",
+        "It has stayed the same for twenty years",
+        "It has fallen sharply, with an equivalent machine costing around $50,000 from big Chinese makers versus roughly $1m in the mid-2000s",
+        "It is now below $5,000, which most Americans can afford"
+      ],
+      "answerIndex": 2,
+      "explanation": "Cheaper motors, batteries and mass production have driven prices down, though most Americans would still pay no more than $5,000 for one."
+    },
+    {
+      "question": "Why do some companies not make their robots look like humans?",
+      "options": [
+        "Human-shaped robots are banned in factories",
+        "Legs are technically demanding, unstable and expensive, and factories mostly want picking, packing and unloading rather than a human shape",
+        "Customers are afraid of robots with faces",
+        "Humanoid designs cannot use batteries"
+      ],
+      "answerIndex": 1,
+      "explanation": "Reflex uses a wheeled base for stability, though it keeps a humanoid top half. Home robots are more likely to look human to be reassuring."
+    },
+    {
+      "question": "Why does the article say robot makers rely on collecting real-world data?",
+      "options": [
+        "World models cannot simulate situations outside their training data, so someone has to gather that information from reality",
+        "Simulations are illegal in the United States",
+        "Robots refuse to learn from computers",
+        "Data is the only part of a robot that is cheap"
+      ],
+      "answerIndex": 0,
+      "explanation": "Firms like Asimov and AgiBot gather data through sensor-wearing workers, data factories and fleets of robots."
+    }
+  ]
+}

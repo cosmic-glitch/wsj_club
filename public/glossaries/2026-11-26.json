@@ -1,0 +1,1348 @@
+[
+  {
+    "k": "boosterism",
+    "t": "boosterism",
+    "kind": "vocab",
+    "pron": "BOO-ster-iz-um",
+    "forms": [
+      "boosterism"
+    ],
+    "text": "Boosterism is enthusiastic, over-the-top promotion of something, like a cheerleader bragging about their town. Here it names the confident claims that humanoid robots will transform the world very soon, which the article takes seriously while listing real obstacles.",
+    "audio": true
+  },
+  {
+    "k": "sequestered",
+    "t": "sequestered",
+    "kind": "vocab",
+    "pron": "sih-KWES-terd",
+    "forms": [
+      "sequestered"
+    ],
+    "text": "To sequester something is to keep it set apart and isolated, like a jury kept away from the public. Factory robots sequestered in cages can work at full speed because no person can be hurt, while robots sharing space with people must slow down.",
+    "audio": true
+  },
+  {
+    "k": "obviate",
+    "t": "obviate",
+    "kind": "vocab",
+    "pron": "OB-vee-ayt",
+    "forms": [
+      "obviate"
+    ],
+    "text": "To obviate a need is to make it unnecessary, usually by solving the problem ahead of time. Smarter robot software might someday make safety cages and slow speeds unnecessary, though the rules to allow that do not exist yet.",
+    "audio": true
+  },
+  {
+    "k": "boosterish",
+    "t": "boosterish",
+    "kind": "word",
+    "forms": [
+      "boosterish"
+    ],
+    "text": "Boosterish describes someone who promotes something with great enthusiasm, like a cheerleader. The article uses it for the most excited believers in humanoid robots, hinting they may be overselling how fast the machines will arrive.",
+    "audio": true
+  },
+  {
+    "k": "dogsbody",
+    "t": "dogsbody",
+    "kind": "word",
+    "forms": [
+      "dogsbody"
+    ],
+    "text": "A dogsbody is a British word for someone who does all the humble, tiring odd jobs nobody else wants. Calling a robot an all-purpose dogsbody means it is a general helper for chores rather than a specialist.",
+    "audio": true
+  },
+  {
+    "k": "pincers",
+    "t": "pincers",
+    "kind": "word",
+    "forms": [
+      "pincers"
+    ],
+    "text": "Pincers are gripping tools with two jaws, like a crab's claws. Reflex has simple pincers for hands, which are less dexterous than human hands but cheap and strong enough for lifting and carrying.",
+    "audio": true
+  },
+  {
+    "k": "pedestal",
+    "t": "pedestal",
+    "kind": "word",
+    "forms": [
+      "pedestal"
+    ],
+    "text": "A pedestal is a base or stand that something rests on, like the stand under a statue. Reflex has a wheeled pedestal where its legs would be, which makes it steadier than a walking robot.",
+    "audio": true
+  },
+  {
+    "k": "artisanal",
+    "t": "artisanal",
+    "kind": "word",
+    "forms": [
+      "artisanal"
+    ],
+    "text": "Artisanal describes work done by skilled hands in a careful, handmade way, like a craft baker's bread. The article means delicate tasks needing finesse, which robots do worse than heavy repetitive jobs.",
+    "audio": true
+  },
+  {
+    "k": "chucking",
+    "t": "chucking",
+    "kind": "word",
+    "forms": [
+      "chucking"
+    ],
+    "text": "Chucking is an informal word for throwing something carelessly. The robot in the promotional material is shown chucking rubbish in the bin, a simple everyday chore.",
+    "audio": true
+  },
+  {
+    "k": "pinnacle",
+    "t": "pinnacle",
+    "kind": "word",
+    "forms": [
+      "pinnacle"
+    ],
+    "text": "A pinnacle is the highest point of something, like a mountain peak. General purpose robots are called the pinnacle of one vision of the future, meaning the ultimate goal of that way of thinking.",
+    "audio": true
+  },
+  {
+    "k": "agi",
+    "t": "artificial general intelligence",
+    "kind": "phrase",
+    "forms": [
+      "artificial general intelligence"
+    ],
+    "text": "Artificial general intelligence, or AGI, means an AI that can learn and do almost any mental task as well as a person, rather than only one narrow job. The article says general purpose robots would be this kind of intelligence, but released from the screen into the physical world.",
+    "audio": true
+  },
+  {
+    "k": "tantalisingly",
+    "t": "tantalisingly",
+    "kind": "word",
+    "forms": [
+      "tantalisingly"
+    ],
+    "text": "Tantalisingly means in a way that teases you by being close but not yet reachable. The article says the robot future is tantalisingly close: it looks nearly here, but is not quite.",
+    "audio": true
+  },
+  {
+    "k": "dexterity",
+    "t": "dexterity",
+    "kind": "word",
+    "forms": [
+      "dexterity"
+    ],
+    "text": "Dexterity is skill and ease in using your hands or body for precise movements, like threading a needle. The article says the best robot hands now match human dexterity in some ways, yet still lack human touch sensitivity.",
+    "audio": true
+  },
+  {
+    "k": "agile",
+    "t": "agile",
+    "kind": "word",
+    "forms": [
+      "agile"
+    ],
+    "text": "Agile means able to move quickly and gracefully. The most agile robot bodies already outdo humans at things like jumping and flipping, but agility in a show is not the same as reliable work.",
+    "audio": true
+  },
+  {
+    "k": "obstacles",
+    "t": "obstacles",
+    "kind": "word",
+    "forms": [
+      "obstacles"
+    ],
+    "text": "Obstacles are things that block your way, whether physical objects or problems. Robots can follow spoken instructions in spaces full of obstacles, and there are also big obstacles, such as cost and reliability, to using them at work.",
+    "audio": true
+  },
+  {
+    "k": "proponents",
+    "t": "proponents",
+    "kind": "word",
+    "forms": [
+      "proponents"
+    ],
+    "text": "Proponents are people who speak in favour of an idea or plan. The most boosterish proponents of robots are the loudest believers that they will arrive soon.",
+    "audio": true
+  },
+  {
+    "k": "greasy",
+    "t": "greasy",
+    "kind": "word",
+    "forms": [
+      "greasy"
+    ],
+    "text": "Greasy means covered in oily, slippery grime. Greasy kitchens and dusty factories are tough places for robots because dirt and oil can foul sensors and moving parts.",
+    "audio": true
+  },
+  {
+    "k": "painstakingly",
+    "t": "painstakingly",
+    "kind": "word",
+    "forms": [
+      "painstakingly"
+    ],
+    "text": "Painstakingly means done with great care and effort, one slow detail at a time. Robots used to be painstakingly programmed by hand for every move, whereas now they can be given a goal and work out the steps.",
+    "audio": true
+  },
+  {
+    "k": "remote-controlled",
+    "t": "remote-controlled",
+    "kind": "word",
+    "forms": [
+      "remote-controlled"
+    ],
+    "text": "Remote-controlled means operated by a person from a distance. Early advanced robots were remote-controlled, and the article notes that remote operation can still be used to guide robots through hard tasks while they learn.",
+    "audio": true
+  },
+  {
+    "k": "own-devices",
+    "t": "left to their own devices",
+    "kind": "phrase",
+    "forms": [
+      "left to their own devices"
+    ],
+    "text": "To be left to your own devices means to be left alone to work things out without help or instructions. Modern robots can be given a goal and left to their own devices, rather than being steered step by step.",
+    "audio": true
+  },
+  {
+    "k": "llm",
+    "t": "large-language model",
+    "kind": "name",
+    "forms": [
+      "large-language model",
+      "LLMs"
+    ],
+    "text": "A large-language model, or LLM, is an AI system trained on huge amounts of text so it can read and write like a person. ChatGPT is one. The article asks whether the progress made by these models can carry over to robots.",
+    "audio": true
+  },
+  {
+    "k": "astra",
+    "t": "Astra",
+    "kind": "name",
+    "forms": [
+      "Astra"
+    ],
+    "text": "Astra is the name of OpenAI's latest large-language model in this story. It was built for language, not for moving in the physical world, yet it can control a robot arm when given video from the robot's point of view.",
+    "audio": true
+  },
+  {
+    "k": "openai",
+    "t": "OpenAI",
+    "kind": "name",
+    "forms": [
+      "OpenAI"
+    ],
+    "text": "OpenAI is the American artificial-intelligence company that makes ChatGPT. The article says its newest model can run a robot even though it was not designed for the physical world.",
+    "audio": true
+  },
+  {
+    "k": "golden-gate",
+    "t": "Golden Gate Bridge",
+    "kind": "name",
+    "forms": [
+      "Golden Gate Bridge"
+    ],
+    "text": "The Golden Gate Bridge is the famous red suspension bridge in San Francisco, California. Using it as the painting subject shows a robot arm can learn a creative task by itself.",
+    "audio": true
+  },
+  {
+    "k": "ill-be-back",
+    "t": "I’ll be back",
+    "kind": "phrase",
+    "forms": [
+      "I’ll be back"
+    ],
+    "text": "I'll be back is the famous line of the killer robot in the film The Terminator. The section heading uses it as a joke about robots that are on their way.",
+    "audio": true
+  },
+  {
+    "k": "exponentially",
+    "t": "exponentially",
+    "kind": "word",
+    "forms": [
+      "exponentially"
+    ],
+    "text": "Exponentially describes growth that speeds up as it goes, such as doubling again and again. If robots improve exponentially, each step forward would be larger than the last.",
+    "audio": true
+  },
+  {
+    "k": "smarts",
+    "t": "smarts",
+    "kind": "word",
+    "forms": [
+      "smarts"
+    ],
+    "text": "Smarts is an informal word for intelligence or know-how. The article says once a robot can do the basic moves, it will already have the AI smarts to string them into big tasks.",
+    "audio": true
+  },
+  {
+    "k": "chain",
+    "t": "chain them together",
+    "kind": "phrase",
+    "forms": [
+      "chain them together"
+    ],
+    "text": "To chain things together is to link them in a series so that each leads into the next. A robot that can do small acts like grasping and lifting could chain them together into a task like clearing a table.",
+    "audio": true
+  },
+  {
+    "k": "siblings",
+    "t": "siblings",
+    "kind": "word",
+    "forms": [
+      "siblings"
+    ],
+    "text": "Siblings are brothers and sisters. The article jokes that robots might assemble their own siblings, meaning more robots of the same kind, which would make robot production snowball.",
+    "audio": true
+  },
+  {
+    "k": "optimus",
+    "t": "Optimus",
+    "kind": "name",
+    "forms": [
+      "Optimus"
+    ],
+    "text": "Optimus is Tesla's humanoid robot. The article says Elon Musk's work on it kick-started the recent wave of interest in humanoid robots.",
+    "audio": true
+  },
+  {
+    "k": "tesla",
+    "t": "Tesla",
+    "kind": "name",
+    "forms": [
+      "Tesla"
+    ],
+    "text": "Tesla is the electric-car company led by Elon Musk. It also builds a humanoid robot called Optimus.",
+    "audio": true
+  },
+  {
+    "k": "kick-started",
+    "t": "kick-started",
+    "kind": "word",
+    "forms": [
+      "kick-started"
+    ],
+    "text": "To kick-start something is to get it going, like starting a motorbike with a kick. Musk's robot project kick-started a wave of interest in the field.",
+    "audio": true
+  },
+  {
+    "k": "usher-in",
+    "t": "usher in",
+    "kind": "phrase",
+    "forms": [
+      "usher in"
+    ],
+    "text": "To usher in something means to bring in a new era, as an usher shows guests to their seats. Musk says robots will usher in an age of amazing abundance.",
+    "audio": true
+  },
+  {
+    "k": "abundance",
+    "t": "abundance",
+    "kind": "word",
+    "forms": [
+      "abundance"
+    ],
+    "text": "Abundance means having plenty of something, more than enough. Musk's claim is that robots doing work cheaply will leave everyone with plenty of goods and services.",
+    "audio": true
+  },
+  {
+    "k": "drones",
+    "t": "drone",
+    "kind": "word",
+    "forms": [
+      "drone"
+    ],
+    "text": "A drone is a small flying machine with propellers, controlled remotely or by software. Drones created a big market for small, strong electric motors, which robot makers now borrow.",
+    "audio": true
+  },
+  {
+    "k": "motors",
+    "t": "motors",
+    "kind": "word",
+    "forms": [
+      "motors"
+    ],
+    "text": "A motor is a machine that turns electricity into movement. Smaller, stronger, more efficient electric motors let robot makers build arms and fingers that move well.",
+    "audio": true
+  },
+  {
+    "k": "boon",
+    "t": "boon",
+    "kind": "word",
+    "forms": [
+      "boon"
+    ],
+    "text": "A boon is something that helps a lot, a welcome piece of good fortune. Better batteries, developed for electric cars, are a boon for robots too, since robots also need to run on stored power.",
+    "audio": true
+  },
+  {
+    "k": "slashing",
+    "t": "slashing",
+    "kind": "word",
+    "forms": [
+      "slashing"
+    ],
+    "text": "Slashing means cutting something down dramatically, as if with a blade. The slashing of humanoid robot costs means prices have fallen steeply in a short time.",
+    "audio": true
+  },
+  {
+    "k": "enthuses",
+    "t": "enthuses",
+    "kind": "word",
+    "forms": [
+      "enthuses"
+    ],
+    "text": "To enthuse is to speak with great excitement. Dr Righetti enthuses about how much the price has dropped while quality has risen.",
+    "audio": true
+  },
+  {
+    "k": "unitree",
+    "t": "Unitree",
+    "kind": "name",
+    "forms": [
+      "Unitree"
+    ],
+    "text": "Unitree is a big Chinese maker of humanoid and other robots. Its prices fell 72% in two years, and its share price jumped more than 400% on its first day of trading.",
+    "audio": true
+  },
+  {
+    "k": "agibot",
+    "t": "AgiBot",
+    "kind": "name",
+    "forms": [
+      "AgiBot",
+      "Agibot"
+    ],
+    "text": "AgiBot is a Shanghai-based robot maker. It runs a large data factory where remote-controlled robots practise tasks, giving it a huge supply of training data.",
+    "audio": true
+  },
+  {
+    "k": "yuan",
+    "t": "yuan",
+    "kind": "word",
+    "forms": [
+      "yuan"
+    ],
+    "text": "The yuan is the currency of China. The article converts Unitree's robot prices from yuan to dollars to show how steeply the price has dropped.",
+    "audio": true
+  },
+  {
+    "k": "shares",
+    "t": "shares",
+    "kind": "word",
+    "forms": [
+      "shares"
+    ],
+    "text": "Shares are small slices of ownership in a company that people can buy and sell. When excitement about a company grows, its shares can jump in price, as Unitree's did.",
+    "audio": true
+  },
+  {
+    "k": "first-day-trading",
+    "t": "first day of trading",
+    "kind": "phrase",
+    "forms": [
+      "first day of trading"
+    ],
+    "text": "A company's first day of trading is the day its shares first go on sale to the public on a stock exchange. Unitree's shares leapt more than 400% that day, a sign of investors' enthusiasm for robots.",
+    "audio": true
+  },
+  {
+    "k": "awe-inspiring",
+    "t": "awe-inspiring",
+    "kind": "word",
+    "forms": [
+      "awe-inspiring"
+    ],
+    "text": "Awe-inspiring means so impressive that it fills you with wonder. Online clips of robots dancing and flipping are awe-inspiring but, as the article stresses, tell us little about useful work.",
+    "audio": true
+  },
+  {
+    "k": "dazzlingly",
+    "t": "dazzlingly",
+    "kind": "word",
+    "forms": [
+      "dazzlingly"
+    ],
+    "text": "Dazzlingly means in a way that is so impressive it nearly blinds you with admiration. Robots at the Beijing games competed dazzlingly in sports from high jump to table tennis.",
+    "audio": true
+  },
+  {
+    "k": "counterpoint",
+    "t": "Counterpoint",
+    "kind": "name",
+    "forms": [
+      "Counterpoint"
+    ],
+    "text": "Counterpoint is a technology research firm quoted in the article. It found that more than 60% of robot shipments in early 2026 were for entertainment, data collection or research rather than real jobs.",
+    "audio": true
+  },
+  {
+    "k": "shipments",
+    "t": "shipments",
+    "kind": "word",
+    "forms": [
+      "shipments"
+    ],
+    "text": "Shipments are batches of goods sent to buyers. Most humanoid robot shipments went to show-and-research uses, not to workplaces doing real work.",
+    "audio": true
+  },
+  {
+    "k": "gymnastic",
+    "t": "gymnastic",
+    "kind": "word",
+    "forms": [
+      "gymnastic"
+    ],
+    "text": "Gymnastic means relating to gymnastics, athletic feats of flipping and balancing. A robot's gymnastic feats look impressive but do not prove it can do useful work.",
+    "audio": true
+  },
+  {
+    "k": "feats",
+    "t": "feats",
+    "kind": "word",
+    "forms": [
+      "feats"
+    ],
+    "text": "A feat is an impressive act of skill or strength. The article says robots' feats on video tell us little about whether they can work reliably.",
+    "audio": true
+  },
+  {
+    "k": "nvidia",
+    "t": "Nvidia",
+    "kind": "name",
+    "forms": [
+      "Nvidia"
+    ],
+    "text": "Nvidia is a US company that makes the powerful computer chips behind most AI. It also has a robotics group whose director, Jim Fan, coined the blind gymnast idea.",
+    "audio": true
+  },
+  {
+    "k": "simulation",
+    "t": "simulations",
+    "kind": "word",
+    "forms": [
+      "simulations"
+    ],
+    "text": "A simulation is a computer-made copy of a situation, used for practice or testing. Robots trained in simulations learn quickly and cheaply, but may be unprepared for the real world.",
+    "audio": true
+  },
+  {
+    "k": "myriad",
+    "t": "myriad",
+    "kind": "word",
+    "forms": [
+      "myriad"
+    ],
+    "text": "Myriad means a huge number of different things. Running myriad iterations means trying a movement a vast number of times in the virtual space.",
+    "audio": true
+  },
+  {
+    "k": "iterations",
+    "t": "iterations",
+    "kind": "word",
+    "forms": [
+      "iterations"
+    ],
+    "text": "An iteration is one repeat of a process, often with small changes. Computers can run countless iterations of a robot movement in seconds.",
+    "audio": true
+  },
+  {
+    "k": "clock-time",
+    "t": "clock time",
+    "kind": "phrase",
+    "forms": [
+      "clock time"
+    ],
+    "text": "Clock time is real elapsed time, as measured by a clock, as opposed to computing speed. A real robot needs actual hours to practise a task, while a simulation can run far faster than real time.",
+    "audio": true
+  },
+  {
+    "k": "kerb",
+    "t": "kerb",
+    "kind": "word",
+    "forms": [
+      "kerb"
+    ],
+    "text": "A kerb is the raised edge of a pavement beside a road, spelled curb in American English. A robot that has never seen a kerb in its training might trip over one.",
+    "audio": true
+  },
+  {
+    "k": "practised",
+    "t": "practised",
+    "kind": "word",
+    "forms": [
+      "practised"
+    ],
+    "text": "Practised means rehearsed many times until smooth, and here it is the British spelling of practiced. A gymnast carrying out a practised routine does well until something unexpected arrives.",
+    "audio": true
+  },
+  {
+    "k": "blindfolded",
+    "t": "blindfolded",
+    "kind": "word",
+    "forms": [
+      "blindfolded"
+    ],
+    "text": "Blindfolded means with the eyes covered so you cannot see. The article imagines a gymnast performing blindfolded to show how a robot trained only in simulation cannot react to surprises.",
+    "audio": true
+  },
+  {
+    "k": "practise-practise",
+    "t": "practise, practise, practise",
+    "kind": "phrase",
+    "forms": [
+      "practise, practise, practise"
+    ],
+    "text": "Practise, practise, practise echoes the old advice for how to get good at anything, and is one of the three robot-training approaches. Here it means letting real robots repeat tasks many times in the real world.",
+    "audio": true
+  },
+  {
+    "k": "foot-in",
+    "t": "a foot in the world of",
+    "kind": "phrase",
+    "forms": [
+      "a foot in the world of"
+    ],
+    "text": "Having a foot in a world means being involved in it while also being part of another. Software firms with a foot in the world of AI are best placed to improve simulations.",
+    "audio": true
+  },
+  {
+    "k": "accelerate",
+    "t": "accelerate",
+    "kind": "word",
+    "forms": [
+      "accelerate"
+    ],
+    "text": "To accelerate is to speed up. If robotics problems could be solved as fast as AI models are developed, the whole field would accelerate sharply.",
+    "audio": true
+  },
+  {
+    "k": "kung-fu",
+    "t": "kung-fu",
+    "kind": "word",
+    "forms": [
+      "kung-fu"
+    ],
+    "text": "Kung-fu is a Chinese martial art of fast kicks and strikes. Demonstrating kung-fu moves is a popular way for robot makers to show off their machines.",
+    "audio": true
+  },
+  {
+    "k": "hazards",
+    "t": "hazards",
+    "kind": "word",
+    "forms": [
+      "hazards"
+    ],
+    "text": "A hazard is something that can cause harm or danger. Adding random trip hazards to a virtual world teaches a robot to cope with surprises.",
+    "audio": true
+  },
+  {
+    "k": "inherently",
+    "t": "inherently",
+    "kind": "word",
+    "forms": [
+      "inherently"
+    ],
+    "text": "Inherently means as a basic, built-in part of something. An approach that is inherently limited has limits that cannot be removed, however well it is done.",
+    "audio": true
+  },
+  {
+    "k": "world-model",
+    "t": "world model",
+    "kind": "phrase",
+    "forms": [
+      "world model"
+    ],
+    "text": "A world model is an AI system that acts like an interactive video of a real scene, predicting what happens next so a robot or car can practise. It is a more realistic training ground than a hand-built simulation.",
+    "audio": true
+  },
+  {
+    "k": "wayve-waymo",
+    "t": "Waymo",
+    "kind": "name",
+    "forms": [
+      "Waymo",
+      "Wayve"
+    ],
+    "text": "Waymo and Wayve are companies that build self-driving cars. They already train their cars with world models so they can handle strange, unexpected situations.",
+    "audio": true
+  },
+  {
+    "k": "outlandish",
+    "t": "outlandish",
+    "kind": "word",
+    "forms": [
+      "outlandish"
+    ],
+    "text": "Outlandish means very strange or unusual. Self-driving cars are trained with world models to cope with outlandish situations that rarely occur on real roads.",
+    "audio": true
+  },
+  {
+    "k": "festooned",
+    "t": "festooned",
+    "kind": "word",
+    "forms": [
+      "festooned"
+    ],
+    "text": "To be festooned with something is to be covered or decorated with lots of it, like a tree with lights. Asimov pays people to go about their day festooned in sensors to record what they do.",
+    "audio": true
+  },
+  {
+    "k": "asimov",
+    "t": "Asimov",
+    "kind": "name",
+    "forms": [
+      "Asimov"
+    ],
+    "text": "Asimov is a San Francisco startup that collects real-world data by paying people to wear sensors while they work. It shares its name with the writer Isaac Asimov, famous for science-fiction stories about robots.",
+    "audio": true
+  },
+  {
+    "k": "sensors",
+    "t": "sensors",
+    "kind": "word",
+    "forms": [
+      "sensors"
+    ],
+    "text": "A sensor is a device that detects things like movement, touch, light or sound. Sensors worn by people record how humans do chores so robots can learn from them.",
+    "audio": true
+  },
+  {
+    "k": "spruce",
+    "t": "spruce",
+    "kind": "word",
+    "forms": [
+      "spruce"
+    ],
+    "text": "A spruce is a quick tidy-up to make something neat and fresh. Asimov's cleaners do a free initial spruce of a home while sensors collect data.",
+    "audio": true
+  },
+  {
+    "k": "data-points",
+    "t": "data-points",
+    "kind": "word",
+    "forms": [
+      "data-points"
+    ],
+    "text": "A data point is a single piece of information in a collection. Repeat data-points are worth less than new ones, which is why Asimov charges for repeat cleanings.",
+    "audio": true
+  },
+  {
+    "k": "novel",
+    "t": "novel",
+    "kind": "word",
+    "forms": [
+      "novel"
+    ],
+    "text": "Novel here is an adjective meaning new and not seen before, not a book. A novel data point teaches a robot something it did not know.",
+    "audio": true
+  },
+  {
+    "k": "rival",
+    "t": "rival",
+    "kind": "word",
+    "forms": [
+      "rival"
+    ],
+    "text": "A rival is a competitor trying to win the same customers. Tau Robotics is a rival to Asimov but sends a humanoid robot to do the cleaning.",
+    "audio": true
+  },
+  {
+    "k": "immortalising",
+    "t": "immortalising",
+    "kind": "word",
+    "forms": [
+      "immortalising"
+    ],
+    "text": "To immortalise something is to preserve it forever. Here it is a joke: people have to be comfortable with their dirty dishes and underwear living on as permanent training data.",
+    "audio": true
+  },
+  {
+    "k": "crockery",
+    "t": "crockery",
+    "kind": "word",
+    "forms": [
+      "crockery"
+    ],
+    "text": "Crockery is a British word for everyday plates, cups and bowls. Greasy crockery appears in the joke about what people must let sensors record.",
+    "audio": true
+  },
+  {
+    "k": "mock",
+    "t": "mock",
+    "kind": "word",
+    "forms": [
+      "mock"
+    ],
+    "text": "Mock means imitation, made for practice and not real. AgiBot's data factory has a mock convenience store so robots can practise shop tasks.",
+    "audio": true
+  },
+  {
+    "k": "purpose-built",
+    "t": "purpose-built",
+    "kind": "word",
+    "forms": [
+      "purpose-built"
+    ],
+    "text": "Purpose-built means designed and made for one specific job. AgiBot's data factory has purpose-built spaces that copy real places where robots might work.",
+    "audio": true
+  },
+  {
+    "k": "remotely-operated",
+    "t": "remotely operated",
+    "kind": "phrase",
+    "forms": [
+      "remotely operated"
+    ],
+    "text": "A remotely operated machine is controlled by a person who is somewhere else. The article says a robot can be remotely operated through hard tasks, and learn as it goes.",
+    "audio": true
+  },
+  {
+    "k": "at-a-clip",
+    "t": "at a faster clip",
+    "kind": "phrase",
+    "forms": [
+      "at a much faster clip"
+    ],
+    "text": "At a faster clip means at a quicker pace. A fleet of 10,000 robots could collect training data at a much faster clip than people upload YouTube videos.",
+    "audio": true
+  },
+  {
+    "k": "racks-up",
+    "t": "racks up",
+    "kind": "phrase",
+    "forms": [
+      "racks up"
+    ],
+    "text": "To rack up something means to collect or accumulate it steadily, like points in a game. YouTube racks up huge amounts of new video every day.",
+    "audio": true
+  },
+  {
+    "k": "semi-autonomous",
+    "t": "semi-autonomous",
+    "kind": "word",
+    "forms": [
+      "semi-autonomous"
+    ],
+    "text": "Semi-autonomous means partly able to act on its own, with a human still helping. Some delivery vehicles are semi-autonomous, with low-wage workers overseeing small fleets of them.",
+    "audio": true
+  },
+  {
+    "k": "copious",
+    "t": "copious",
+    "kind": "word",
+    "forms": [
+      "copious"
+    ],
+    "text": "Copious means plentiful, in large amounts. Copious data does not help if the robot's body cannot physically do the job.",
+    "audio": true
+  },
+  {
+    "k": "arduous",
+    "t": "arduous",
+    "kind": "word",
+    "forms": [
+      "arduous"
+    ],
+    "text": "Arduous means very tiring and demanding. A machine strong enough for arduous physical labour could also hurt people nearby.",
+    "audio": true
+  },
+  {
+    "k": "trade-offs",
+    "t": "trade-offs",
+    "kind": "word",
+    "forms": [
+      "trade-offs"
+    ],
+    "text": "A trade-off is a situation where getting more of one good thing means getting less of another. A bigger battery gives longer running time but makes a robot heavier, which drains the battery faster.",
+    "audio": true
+  },
+  {
+    "k": "overkill",
+    "t": "overkill",
+    "kind": "word",
+    "forms": [
+      "overkill"
+    ],
+    "text": "Overkill means using much more than is needed for a job. A very dexterous, expensive hand is overkill when simple pincers can finish the task.",
+    "audio": true
+  },
+  {
+    "k": "squishy",
+    "t": "squishy",
+    "kind": "word",
+    "forms": [
+      "squishy"
+    ],
+    "text": "Squishy means soft and easily squashed. The article uses it, with some humour, for human bodies, which robots strong enough for heavy work could easily injure.",
+    "audio": true
+  },
+  {
+    "k": "good-enough",
+    "t": "good enough",
+    "kind": "phrase",
+    "forms": [
+      "good enough"
+    ],
+    "text": "Good enough means just adequate for the purpose. Robot makers are trying to find exactly where the line of good enough lies for strength, hands and cost.",
+    "audio": true
+  },
+  {
+    "k": "grain-of-sand",
+    "t": "single grain of sand",
+    "kind": "phrase",
+    "forms": [
+      "single grain of sand"
+    ],
+    "text": "Finding a single grain of sand by touch shows how sensitive human fingertips are. The article says robot hands cannot yet match this sensitivity.",
+    "audio": true
+  },
+  {
+    "k": "discern",
+    "t": "discern",
+    "kind": "word",
+    "forms": [
+      "discern"
+    ],
+    "text": "To discern is to notice or tell apart something subtle. People can discern small differences in temperature just by touch, a skill robots lack.",
+    "audio": true
+  },
+  {
+    "k": "mundane",
+    "t": "mundane",
+    "kind": "word",
+    "forms": [
+      "mundane"
+    ],
+    "text": "Mundane means ordinary and dull, everyday rather than exciting. Most robot hardware firms focus on mundane goals like durability instead of dazzling abilities.",
+    "audio": true
+  },
+  {
+    "k": "withstand",
+    "t": "withstand",
+    "kind": "word",
+    "forms": [
+      "withstand"
+    ],
+    "text": "To withstand something is to survive it without breaking. Reflex wants its wires to withstand 20 million bends.",
+    "audio": true
+  },
+  {
+    "k": "threshold",
+    "t": "threshold",
+    "kind": "word",
+    "forms": [
+      "threshold"
+    ],
+    "text": "A threshold is a limit or point at which something changes. A robot working non-stop at ten movements a minute would hit 20 million bends in about four years.",
+    "audio": true
+  },
+  {
+    "k": "demurs",
+    "t": "demurs",
+    "kind": "word",
+    "forms": [
+      "demurs"
+    ],
+    "text": "To demur is to politely decline to answer or to raise an objection. Mr Shi demurs when asked how long AgiBot's robot lasts, which suggests he would rather not give a number.",
+    "audio": true
+  },
+  {
+    "k": "flagship",
+    "t": "flagship",
+    "kind": "word",
+    "forms": [
+      "flagship"
+    ],
+    "text": "A flagship product is a company's most important or best-known one. The A3 is AgiBot's flagship robot.",
+    "audio": true
+  },
+  {
+    "k": "warranty",
+    "t": "warranty",
+    "kind": "word",
+    "forms": [
+      "warranty"
+    ],
+    "text": "A warranty is a promise from a seller to repair or replace a product that breaks within a set time. The A3's 18-month warranty hints at how long the maker expects it to last.",
+    "audio": true
+  },
+  {
+    "k": "retails",
+    "t": "retails",
+    "kind": "word",
+    "forms": [
+      "retails"
+    ],
+    "text": "To retail at a price means to sell to ordinary customers for that amount. AgiBot's A3 retails for more than $70,000.",
+    "audio": true
+  },
+  {
+    "k": "heady",
+    "t": "heady",
+    "kind": "word",
+    "forms": [
+      "heady"
+    ],
+    "text": "Heady means exciting and intoxicating, or very large. Some Western robot firms have raised heady sums, meaning surprisingly big amounts of money.",
+    "audio": true
+  },
+  {
+    "k": "ploughed",
+    "t": "ploughed",
+    "kind": "word",
+    "forms": [
+      "ploughed"
+    ],
+    "text": "To plough money into something is to invest it heavily, like a farmer's plough turning a field. Western firms ploughed their cash into research and not factories.",
+    "audio": true
+  },
+  {
+    "k": "think-tank",
+    "t": "think-tank",
+    "kind": "word",
+    "forms": [
+      "think-tank"
+    ],
+    "text": "A think-tank is an organisation of experts who study and advise on policy and ideas. John VerWey works at one that studies security and technology.",
+    "audio": true
+  },
+  {
+    "k": "staid",
+    "t": "staid",
+    "kind": "word",
+    "forms": [
+      "staid"
+    ],
+    "text": "Staid means calm, serious and unchanging, not adventurous. Carmaking and health care are staid industries whose suppliers are cautious about growing fast.",
+    "audio": true
+  },
+  {
+    "k": "tight-ship",
+    "t": "run a tight ship",
+    "kind": "phrase",
+    "forms": [
+      "tight ship"
+    ],
+    "text": "To run a tight ship means to manage something very carefully and strictly, with little waste. Component suppliers in Germany and Japan do this, which is why they dislike rapid expansion.",
+    "audio": true
+  },
+  {
+    "k": "loth",
+    "t": "loth",
+    "kind": "word",
+    "forms": [
+      "loth"
+    ],
+    "text": "Loth is a variant spelling of loath, meaning unwilling. Firms used to calm industries are loth to expand far beyond what they know.",
+    "audio": true
+  },
+  {
+    "k": "supply-chain",
+    "t": "supply chain",
+    "kind": "phrase",
+    "forms": [
+      "supply chain"
+    ],
+    "text": "A supply chain is the network of companies that make and deliver the parts and materials for a product. Robots use custom parts, which will not get cheaper without a sturdier supply chain.",
+    "audio": true
+  },
+  {
+    "k": "conundrum",
+    "t": "conundrum",
+    "kind": "word",
+    "forms": [
+      "conundrum"
+    ],
+    "text": "A conundrum is a confusing problem with no easy answer. Safety is a conundrum because making robots safe can also make them less productive.",
+    "audio": true
+  },
+  {
+    "k": "cages",
+    "t": "cages",
+    "kind": "word",
+    "forms": [
+      "cages"
+    ],
+    "text": "A cage is an enclosure with bars. Industrial robots are often kept inside cages so people cannot get in their way.",
+    "audio": true
+  },
+  {
+    "k": "regulatory",
+    "t": "regulatory",
+    "kind": "word",
+    "forms": [
+      "regulatory"
+    ],
+    "text": "Regulatory means relating to the rules made by governments or official bodies. The regulatory standards that would let robots work freely beside people have not yet been written.",
+    "audio": true
+  },
+  {
+    "k": "clads",
+    "t": "clads",
+    "kind": "word",
+    "forms": [
+      "clads"
+    ],
+    "text": "To clad something is to cover it with a layer. 1x clads its robots in fabric that looks like Nordic knitwear, to make them softer and friendlier.",
+    "audio": true
+  },
+  {
+    "k": "polymers",
+    "t": "polymers",
+    "kind": "word",
+    "forms": [
+      "polymers"
+    ],
+    "text": "Polymers are materials made of long chains of molecules, including plastics and rubbers. 1x makes its robots' tendons from special polymers because they are light.",
+    "audio": true
+  },
+  {
+    "k": "tendons",
+    "t": "tendons",
+    "kind": "word",
+    "forms": [
+      "tendons"
+    ],
+    "text": "Tendons are tough cords that join muscle to bone in animals. Robot hands can also use tendon-like cords to move the fingers.",
+    "audio": true
+  },
+  {
+    "k": "yields",
+    "t": "yields",
+    "kind": "word",
+    "forms": [
+      "yields"
+    ],
+    "text": "To yield is to give way instead of resisting. Sprout yields quickly if you push or pull its arms, which makes it safer around people.",
+    "audio": true
+  },
+  {
+    "k": "pneumatics",
+    "t": "pneumatics",
+    "kind": "word",
+    "forms": [
+      "pneumatics"
+    ],
+    "text": "Pneumatics is a technology that uses compressed air to make parts move. Stabbing the chest of Threehalves would puncture its pneumatics and leave it immobile.",
+    "audio": true
+  },
+  {
+    "k": "centaur",
+    "t": "centaur-shaped",
+    "kind": "word",
+    "forms": [
+      "centaur-shaped"
+    ],
+    "text": "A centaur is a creature from Greek myth with a human upper body and a horse's lower body. Threehalves has a similar shape, with a sturdy lower body for carrying heavy things.",
+    "audio": true
+  },
+  {
+    "k": "fail-safe",
+    "t": "fail-safe",
+    "kind": "word",
+    "forms": [
+      "fail-safe"
+    ],
+    "text": "A fail-safe is a backup feature that makes a machine stop or become harmless when something goes wrong. Threehalves' fail-safe is cruder than most: it stops if its chest is stabbed or shot.",
+    "audio": true
+  },
+  {
+    "k": "embodies",
+    "t": "embodies",
+    "kind": "word",
+    "forms": [
+      "embodies"
+    ],
+    "text": "To embody something is to be a physical example of an idea. Threehalves embodies, literally, the debate over what shape robots should take, since it has a goat-like head and a centaur body.",
+    "audio": true
+  },
+  {
+    "k": "predominate",
+    "t": "predominate",
+    "kind": "word",
+    "forms": [
+      "predominate"
+    ],
+    "text": "To predominate is to be the most common or strongest. Humanoids predominate among general-purpose robots, though some experts doubt they should.",
+    "audio": true
+  },
+  {
+    "k": "liability",
+    "t": "liability",
+    "kind": "word",
+    "forms": [
+      "liability"
+    ],
+    "text": "A liability is something that causes trouble or disadvantage. Legs are a liability on a robot built for hard labour because they are expensive and unstable.",
+    "audio": true
+  },
+  {
+    "k": "staffing",
+    "t": "staffing",
+    "kind": "word",
+    "forms": [
+      "staffing"
+    ],
+    "text": "Staffing means supplying workers for a workplace. Firms like the idea of staffing warehouses with machines that can do many tasks.",
+    "audio": true
+  },
+  {
+    "k": "step-free",
+    "t": "step-free",
+    "kind": "word",
+    "forms": [
+      "step-free"
+    ],
+    "text": "Step-free means flat, without stairs or raised edges. Reflex's robots work in step-free industrial spaces, so wheels work better than legs.",
+    "audio": true
+  },
+  {
+    "k": "billing",
+    "t": "billing",
+    "kind": "word",
+    "forms": [
+      "billing"
+    ],
+    "text": "Billing here means the way something is advertised, as when an act gets top billing on a poster. A robot meant to be general-purpose would undermine that billing if it were not humanoid.",
+    "audio": true
+  },
+  {
+    "k": "gesticulates",
+    "t": "gesticulates",
+    "kind": "word",
+    "forms": [
+      "gesticulates"
+    ],
+    "text": "To gesticulate is to make expressive hand and arm movements while talking. Sprout gesticulates as it talks, to feel friendlier.",
+    "audio": true
+  },
+  {
+    "k": "beeps-boops",
+    "t": "beeps and boops",
+    "kind": "phrase",
+    "forms": [
+      "beeps and boops"
+    ],
+    "text": "Beeps and boops are playful sound effects associated with cute robots. Sprout's sounds are meant to build an emotional connection with people.",
+    "audio": true
+  },
+  {
+    "k": "proving-ground",
+    "t": "proving ground",
+    "kind": "phrase",
+    "forms": [
+      "proving ground"
+    ],
+    "text": "A proving ground is a place where something new can be tested to show whether it works. Many analysts see the home as the natural proving ground for humanoid robots.",
+    "audio": true
+  },
+  {
+    "k": "morgan-stanley",
+    "t": "Morgan Stanley",
+    "kind": "name",
+    "forms": [
+      "Morgan Stanley"
+    ],
+    "text": "Morgan Stanley is a big American investment bank. It predicts there could be 1.6 million humanoid robots in US homes by 2040.",
+    "audio": true
+  },
+  {
+    "k": "a-pop",
+    "t": "a pop",
+    "kind": "phrase",
+    "forms": [
+      "a pop"
+    ],
+    "text": "A pop is an informal way of saying each or per item. Robots at about $30,000 a pop means $30,000 each.",
+    "audio": true
+  },
+  {
+    "k": "bullish",
+    "t": "bullish",
+    "kind": "word",
+    "forms": [
+      "bullish"
+    ],
+    "text": "Bullish means confident that something will rise or succeed, a term from financial markets. Keerthana Gopalakrishnan is more bullish than Morgan Stanley, forecasting 1 million robots in American homes by 2031.",
+    "audio": true
+  },
+  {
+    "k": "google-deepmind",
+    "t": "Google DeepMind",
+    "kind": "name",
+    "forms": [
+      "Google DeepMind"
+    ],
+    "text": "Google DeepMind is Google's artificial-intelligence research lab. One of its researchers forecasts that 1 million robots will be in American homes by 2031.",
+    "audio": true
+  },
+  {
+    "k": "early-adopters",
+    "t": "early adopters",
+    "kind": "phrase",
+    "forms": [
+      "early adopters"
+    ],
+    "text": "Early adopters are people who buy a new technology when it is still new and expensive. They help companies make the product cheaper for everyone else.",
+    "audio": true
+  },
+  {
+    "k": "outlay",
+    "t": "outlay",
+    "kind": "word",
+    "forms": [
+      "outlay"
+    ],
+    "text": "An outlay is an amount of money spent on something. A home robot has time to justify its initial outlay because home work is less intensive than factory work.",
+    "audio": true
+  },
+  {
+    "k": "societal-friction",
+    "t": "societal friction",
+    "kind": "phrase",
+    "forms": [
+      "societal friction"
+    ],
+    "text": "Societal friction is a polite phrase for the resistance and conflict that new technology can cause in society, such as fear of job losses. Home robots may cause less of it than industrial ones.",
+    "audio": true
+  },
+  {
+    "k": "euphemism",
+    "t": "euphemism",
+    "kind": "word",
+    "forms": [
+      "euphemism"
+    ],
+    "text": "A euphemism is a mild or polite expression used in place of a harsher one. Societal friction is a euphemism for things like anger about lost jobs.",
+    "audio": true
+  },
+  {
+    "k": "villain",
+    "t": "villain",
+    "kind": "word",
+    "forms": [
+      "villain"
+    ],
+    "text": "A villain is a bad character in a story who causes harm. A robot that takes your job is an obvious villain, while one that takes over housework is easy to see as a force for good.",
+    "audio": true
+  },
+  {
+    "k": "frontier",
+    "t": "frontier",
+    "kind": "word",
+    "forms": [
+      "frontier"
+    ],
+    "text": "Frontier models are the newest and most capable AI systems, at the edge of what is possible. Robocurve estimates their ability to control robots doubles every 54 days.",
+    "audio": true
+  },
+  {
+    "k": "on-the-march",
+    "t": "on the march",
+    "kind": "phrase",
+    "forms": [
+      "on the march"
+    ],
+    "text": "On the march means advancing steadily, like an army moving forward. The article ends by saying the robots are on the march, meaning they keep making progress.",
+    "audio": true
+  }
+]
