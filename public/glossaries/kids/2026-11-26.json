@@ -1,0 +1,348 @@
+[
+  {
+    "k": "ordinary",
+    "t": "ordinary",
+    "kind": "vocab",
+    "pron": "OR-dn-air-ee",
+    "forms": [
+      "ordinary"
+    ],
+    "text": "Ordinary means normal, not special. A plane taking off sounds ordinary, but this plane was not.",
+    "audio": true
+  },
+  {
+    "k": "bargain",
+    "t": "bargain",
+    "kind": "vocab",
+    "pron": "BAR-gun",
+    "forms": [
+      "bargain"
+    ],
+    "text": "A bargain costs much less than you would expect. You get a lot for a little money.",
+    "audio": true
+  },
+  {
+    "k": "regional",
+    "t": "regional",
+    "kind": "vocab",
+    "pron": "REE-jun-ul",
+    "forms": [
+      "regional"
+    ],
+    "text": "Regional means about one part of a country or the world. Regional flights are short trips between nearby cities.",
+    "audio": true
+  },
+  {
+    "k": "electric-plane",
+    "t": "electric plane",
+    "kind": "phrase",
+    "forms": [
+      "electric plane"
+    ],
+    "text": "An electric plane runs on electricity from batteries instead of fuel.",
+    "audio": true
+  },
+  {
+    "k": "plattsburgh",
+    "t": "Plattsburgh",
+    "kind": "name",
+    "forms": [
+      "Plattsburgh"
+    ],
+    "text": "Plattsburgh is a city in New York state. The plane took off from an airport there.",
+    "audio": true
+  },
+  {
+    "k": "new-york",
+    "t": "New York",
+    "kind": "name",
+    "forms": [
+      "New York"
+    ],
+    "text": "New York is a state in the United States.",
+    "audio": true
+  },
+  {
+    "k": "airport",
+    "t": "airport",
+    "kind": "word",
+    "forms": [
+      "airport"
+    ],
+    "text": "An airport is a place where planes take off and land.",
+    "audio": true
+  },
+  {
+    "k": "heart-aerospace",
+    "t": "Heart Aerospace",
+    "kind": "name",
+    "forms": [
+      "Heart Aerospace"
+    ],
+    "text": "Heart Aerospace is a company that builds airplanes. It made the X1.",
+    "audio": true
+  },
+  {
+    "k": "x1",
+    "t": "X1",
+    "kind": "name",
+    "forms": [
+      "X1"
+    ],
+    "text": "The X1 is the electric test plane. Test planes help people learn if a new idea works.",
+    "audio": true
+  },
+  {
+    "k": "wingtip",
+    "t": "wingtip",
+    "kind": "word",
+    "forms": [
+      "wingtip"
+    ],
+    "text": "A wingtip is the very end of a plane's wing. Wingtip to wingtip means the whole width of the plane.",
+    "audio": true
+  },
+  {
+    "k": "runway",
+    "t": "runway",
+    "kind": "word",
+    "forms": [
+      "runway"
+    ],
+    "text": "A runway is the long, flat road where planes speed up and take off.",
+    "audio": true
+  },
+  {
+    "k": "passengers",
+    "t": "passengers",
+    "kind": "word",
+    "forms": [
+      "passengers"
+    ],
+    "text": "Passengers are the people who ride in a plane. They are not the pilot or crew.",
+    "audio": true
+  },
+  {
+    "k": "aircraft",
+    "t": "aircraft",
+    "kind": "word",
+    "forms": [
+      "aircraft"
+    ],
+    "text": "An aircraft is any machine that flies, like a plane.",
+    "audio": true
+  },
+  {
+    "k": "jet-fuel",
+    "t": "jet fuel",
+    "kind": "phrase",
+    "forms": [
+      "jet fuel"
+    ],
+    "text": "Jet fuel is the liquid that most planes burn to fly. It costs money.",
+    "audio": true
+  },
+  {
+    "k": "airlines",
+    "t": "airlines",
+    "kind": "word",
+    "forms": [
+      "Airlines",
+      "airlines"
+    ],
+    "text": "Airlines are companies that fly people from place to place in planes.",
+    "audio": true
+  },
+  {
+    "k": "billion",
+    "t": "billion",
+    "kind": "word",
+    "forms": [
+      "billion"
+    ],
+    "text": "A billion is a very big number, one thousand millions.",
+    "audio": true
+  },
+  {
+    "k": "us-iran-war",
+    "t": "US-Iran war",
+    "kind": "phrase",
+    "forms": [
+      "US-Iran war"
+    ],
+    "text": "A war is a big fight between countries. This one made fuel cost more money.",
+    "audio": true
+  },
+  {
+    "k": "gallon",
+    "t": "gallon",
+    "kind": "word",
+    "forms": [
+      "gallon"
+    ],
+    "text": "A gallon is an amount of liquid, about as much as four big milk cartons.",
+    "audio": true
+  },
+  {
+    "k": "transportation",
+    "t": "transportation",
+    "kind": "word",
+    "forms": [
+      "transportation"
+    ],
+    "text": "Transportation means ways to get from place to place, like cars, buses and planes.",
+    "audio": true
+  },
+  {
+    "k": "greenhouse-gas",
+    "t": "greenhouse gas",
+    "kind": "phrase",
+    "forms": [
+      "greenhouse gas"
+    ],
+    "text": "Greenhouse gases are gases in the air that hold in warmth. Too much of them slowly warms Earth.",
+    "audio": true
+  },
+  {
+    "k": "pollution",
+    "t": "pollution",
+    "kind": "word",
+    "forms": [
+      "pollution"
+    ],
+    "text": "Pollution is something dirty or harmful put into the air, water or land.",
+    "audio": true
+  },
+  {
+    "k": "emissions",
+    "t": "emissions",
+    "kind": "word",
+    "forms": [
+      "emissions"
+    ],
+    "text": "Emissions are gases that come out of things like planes and cars into the air.",
+    "audio": true
+  },
+  {
+    "k": "batteries",
+    "t": "batteries",
+    "kind": "word",
+    "forms": [
+      "Batteries",
+      "batteries"
+    ],
+    "text": "Batteries store electricity. They power things like toys and phones.",
+    "audio": true
+  },
+  {
+    "k": "cargo",
+    "t": "cargo",
+    "kind": "word",
+    "forms": [
+      "cargo"
+    ],
+    "text": "Cargo is the things a plane carries that are not people, like boxes.",
+    "audio": true
+  },
+  {
+    "k": "air-taxis",
+    "t": "air taxis",
+    "kind": "phrase",
+    "forms": [
+      "air taxis"
+    ],
+    "text": "An air taxi is a small flying machine that carries a few people on short trips.",
+    "audio": true
+  },
+  {
+    "k": "emergencies",
+    "t": "emergencies",
+    "kind": "word",
+    "forms": [
+      "emergencies"
+    ],
+    "text": "An emergency is a sudden, scary problem that needs fast help. Planes keep extra fuel just in case.",
+    "audio": true
+  },
+  {
+    "k": "hybrid",
+    "t": "hybrid",
+    "kind": "word",
+    "forms": [
+      "hybrid",
+      "“hybrid”"
+    ],
+    "text": "A hybrid uses two kinds of power. This plane would use electricity and fuel.",
+    "audio": true
+  },
+  {
+    "k": "es-30",
+    "t": "ES-30",
+    "kind": "name",
+    "forms": [
+      "ES-30"
+    ],
+    "text": "The ES-30 is the hybrid plane Heart plans to build. It will carry 30 people.",
+    "audio": true
+  },
+  {
+    "k": "hybrid-car",
+    "t": "hybrid car",
+    "kind": "phrase",
+    "forms": [
+      "hybrid car"
+    ],
+    "text": "A hybrid car uses both a battery and gas to go.",
+    "audio": true
+  },
+  {
+    "k": "range",
+    "t": "range",
+    "kind": "word",
+    "forms": [
+      "range"
+    ],
+    "text": "Range is how far a plane can fly before it must stop for more power.",
+    "audio": true
+  },
+  {
+    "k": "costs",
+    "t": "costs",
+    "kind": "word",
+    "forms": [
+      "costs"
+    ],
+    "text": "Costs are the money you must spend to do something.",
+    "audio": true
+  },
+  {
+    "k": "x2",
+    "t": "X2",
+    "kind": "name",
+    "forms": [
+      "X2"
+    ],
+    "text": "The X2 is the next test plane. It will test the hybrid idea.",
+    "audio": true
+  },
+  {
+    "k": "united-airlines",
+    "t": "United Airlines",
+    "kind": "name",
+    "forms": [
+      "United Airlines"
+    ],
+    "text": "United Airlines is a big airline in the United States.",
+    "audio": true
+  },
+  {
+    "k": "pilot",
+    "t": "pilot",
+    "kind": "word",
+    "forms": [
+      "pilot"
+    ],
+    "text": "A pilot is the person who flies a plane.",
+    "audio": true
+  }
+]

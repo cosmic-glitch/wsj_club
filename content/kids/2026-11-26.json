@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-26",
+  "title": "The biggest electric plane flies for $5",
+  "articleUrl": "https://newsforkids.net/articles/2026/09/30/worlds-largest-electric-plane-takes-flight/",
+  "articlePageUrl": "/articles/kids/2026-11-26.html",
+  "voiceQuiz": true,
+  "source": "News for Kids",
+  "vocab": [
+    {
+      "word": "ordinary",
+      "partOfSpeech": "adjective",
+      "pronunciation": "OR-dn-air-ee",
+      "articleQuote": "That may sound fairly ordinary, but there was something that made this plane unusual",
+      "meaning": "Ordinary means normal, not special. It is the kind of thing you see all the time. In the article, a plane taking off sounds ordinary, but this plane was not ordinary at all.",
+      "examples": [
+        "It was an ordinary Monday, with school and then dinner at home.",
+        "My sandwich looked ordinary, but it had a surprise inside."
+      ]
+    },
+    {
+      "word": "bargain",
+      "partOfSpeech": "noun",
+      "pronunciation": "BAR-gun",
+      "articleQuote": "So a $5 flight sounds like a bargain.",
+      "meaning": "A bargain is something that costs much less than you would expect. You get a lot for just a little money. In the article, a whole plane flight for only $5 of electricity sounds like a bargain.",
+      "examples": [
+        "Mom found a bargain at the store: two toys for the price of one.",
+        "The old bike was a bargain, and it still worked great."
+      ]
+    },
+    {
+      "word": "regional",
+      "partOfSpeech": "adjective",
+      "pronunciation": "REE-jun-ul",
+      "articleQuote": "With its longer range, the hybrid ES-30 is expected to be able to work well for “regional” air travel",
+      "meaning": "Regional means having to do with one region, which is a part of a country or the world. It is not about the whole world. In the article, regional flights are short trips between nearby cities.",
+      "examples": [
+        "We drove to a regional park about an hour from our house.",
+        "The regional bus takes people from our town to the next town."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Greenhouse gases",
+      "articleQuote": "Currently, transportation by air is responsible for about 2.5% of the world’s greenhouse gas pollution.",
+      "meaning": "Airplanes that burn jet fuel send gas out into the air. Some of that gas is called greenhouse gas. The article says electric planes could help make less of it.\n\nThink of a greenhouse, a glass house where people grow plants. It stays warm inside because the glass keeps the heat in. Greenhouse gases work a bit like that glass. They float high up in the air and hold some of the sun's warmth near Earth.\n\nA little warmth is good. Without it, Earth would be too cold to live on. But when cars, planes, and factories add too much greenhouse gas, Earth slowly gets warmer. That can change the weather and hurt animals and plants.\n\nSo when people try to make cleaner planes, they want less greenhouse gas going up into the sky."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What was special about the X1 airplane?",
+      "options": [
+        "It was the world's largest electric plane",
+        "It could fly around the whole world",
+        "It was the fastest plane ever",
+        "It was made of paper"
+      ],
+      "answerIndex": 0,
+      "explanation": "The X1 is a 30-seat plane that runs on batteries. It is the largest electric plane in the world."
+    },
+    {
+      "question": "How long did the X1 fly on its test flight?",
+      "options": [
+        "5 minutes",
+        "27 minutes",
+        "2 hours",
+        "A whole day"
+      ],
+      "answerIndex": 1,
+      "explanation": "The plane flew for 27 minutes. The electricity it used cost about $5."
+    },
+    {
+      "question": "Why can't electric planes fly very far yet?",
+      "options": [
+        "Pilots get tired",
+        "The wings are too small",
+        "Batteries are heavy",
+        "They are too loud"
+      ],
+      "answerIndex": 2,
+      "explanation": "Batteries weigh a lot. Adding more batteries makes the plane too heavy to carry many people."
+    },
+    {
+      "question": "The article says a $5 flight sounds like a bargain. What is a bargain?",
+      "options": [
+        "Something that is very old",
+        "Something that is very loud",
+        "Something that is very big",
+        "Something that costs much less than you expect"
+      ],
+      "answerIndex": 3,
+      "explanation": "A bargain gives you a lot for a little money."
+    },
+    {
+      "question": "Why do people want planes that make less greenhouse gas?",
+      "options": [
+        "Too much of it slowly makes Earth warmer",
+        "It makes planes fly slower",
+        "It turns the sky green",
+        "It makes batteries heavier"
+      ],
+      "answerIndex": 0,
+      "explanation": "Greenhouse gases hold warmth near Earth. Too much of them makes Earth slowly get warmer."
+    }
+  ]
+}
