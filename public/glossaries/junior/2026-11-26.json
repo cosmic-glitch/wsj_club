@@ -1,0 +1,598 @@
+[
+  {
+    "k": "thwart",
+    "t": "thwart",
+    "kind": "vocab",
+    "pron": "THWORT",
+    "forms": [
+      "thwart"
+    ],
+    "text": "To thwart someone is to stop their plan from working. In the movie, the heroine goes back in time to block the evil computer's plans.",
+    "audio": true
+  },
+  {
+    "k": "jarring",
+    "t": "jarring",
+    "kind": "vocab",
+    "pron": "JAR-ing",
+    "forms": [
+      "jarring"
+    ],
+    "text": "Something jarring clashes with what came before, so it feels harsh or startling. The film's pictures changed style from scene to scene, and viewers disliked that clash.",
+    "audio": true
+  },
+  {
+    "k": "credible",
+    "t": "credible",
+    "kind": "vocab",
+    "pron": "KRED-uh-bul",
+    "forms": [
+      "credible"
+    ],
+    "text": "Credible means believable. The computer-made actors' faces did not look like real feelings, so viewers did not believe them.",
+    "audio": true
+  },
+  {
+    "k": "sci-fi",
+    "t": "sci-fi",
+    "kind": "word",
+    "forms": [
+      "sci-fi"
+    ],
+    "text": "Short for science fiction: made-up stories about science and technology, like time travel and robots.",
+    "audio": true
+  },
+  {
+    "k": "cinemas",
+    "t": "cinemas",
+    "kind": "word",
+    "forms": [
+      "cinemas"
+    ],
+    "text": "Cinemas are the movie theaters where people pay to watch films on a big screen.",
+    "audio": true
+  },
+  {
+    "k": "features",
+    "t": "features",
+    "kind": "word",
+    "forms": [
+      "features"
+    ],
+    "text": "Here, features is a verb. It means the film has a certain person or thing as an important part. It is not the plural noun for a face's parts.",
+    "audio": true
+  },
+  {
+    "k": "travel-back-in-time",
+    "t": "travel back in time",
+    "kind": "phrase",
+    "forms": [
+      "travel back in time"
+    ],
+    "text": "To go to a moment in the past. It is a favorite idea in science-fiction stories.",
+    "audio": true
+  },
+  {
+    "k": "plots",
+    "t": "plots",
+    "kind": "word",
+    "forms": [
+      "plots"
+    ],
+    "text": "Here, plots are secret plans, usually to do something bad. Plots can also mean the events of a story, but not in this sentence.",
+    "audio": true
+  },
+  {
+    "k": "super-brain",
+    "t": "super-brain",
+    "kind": "word",
+    "forms": [
+      "super-brain"
+    ],
+    "text": "An invented word for a computer far smarter than any person. The movie's villain is one.",
+    "audio": true
+  },
+  {
+    "k": "ironic",
+    "t": "ironic",
+    "kind": "word",
+    "pron": "eye-RON-ik",
+    "forms": [
+      "ironic"
+    ],
+    "text": "Ironic means the opposite of what you would expect. It is odd that the film about an evil AI was made using AI.",
+    "audio": true
+  },
+  {
+    "k": "technology",
+    "t": "technology",
+    "kind": "word",
+    "forms": [
+      "technology"
+    ],
+    "text": "Tools and machines made with science. Here it means AI software that can make videos.",
+    "audio": true
+  },
+  {
+    "k": "threatens",
+    "t": "threatens",
+    "kind": "word",
+    "forms": [
+      "threatens"
+    ],
+    "text": "To threaten something is to be a danger to it. In the movie, the evil AI is a danger to all people.",
+    "audio": true
+  },
+  {
+    "k": "destruction",
+    "t": "destruction",
+    "kind": "word",
+    "forms": [
+      "destruction"
+    ],
+    "text": "When something is wrecked so badly it is gone. The story says AI might destroy humankind.",
+    "audio": true
+  },
+  {
+    "k": "mankind",
+    "t": "mankind",
+    "kind": "word",
+    "forms": [
+      "mankind"
+    ],
+    "text": "All human beings. Many writers now say humankind.",
+    "audio": true
+  },
+  {
+    "k": "title-sequence",
+    "t": "title sequence",
+    "kind": "phrase",
+    "forms": [
+      "title sequence"
+    ],
+    "text": "The opening part of a movie where the title and credits appear. Here, the film states that AI made it.",
+    "audio": true
+  },
+  {
+    "k": "generated",
+    "t": "generated",
+    "kind": "word",
+    "pron": "JEN-uh-ray-tid",
+    "forms": [
+      "generated"
+    ],
+    "text": "Made or produced. AI-generated video means a computer program created the pictures, not a camera filming real things.",
+    "audio": true
+  },
+  {
+    "k": "artificial-intelligence",
+    "t": "artificial intelligence",
+    "kind": "word",
+    "forms": [
+      "artificial intelligence"
+    ],
+    "text": "Computer programs that can do things that normally need human thinking, like making pictures or writing. People shorten it to AI.",
+    "audio": true
+  },
+  {
+    "k": "chatbot",
+    "t": "chatbot",
+    "kind": "word",
+    "forms": [
+      "chatbot"
+    ],
+    "text": "A computer program you can type to and get answers from, like a text conversation.",
+    "audio": true
+  },
+  {
+    "k": "screenwriters",
+    "t": "screenwriters",
+    "kind": "word",
+    "forms": [
+      "screenwriters"
+    ],
+    "text": "People who write the script of a movie: what happens and what the characters say.",
+    "audio": true
+  },
+  {
+    "k": "cinematographers",
+    "t": "cinematographers",
+    "kind": "word",
+    "pron": "sin-uh-muh-TOG-ruh-fers",
+    "forms": [
+      "cinematographers"
+    ],
+    "text": "The people in charge of how a movie looks, such as the camera angles and lighting.",
+    "audio": true
+  },
+  {
+    "k": "yuan",
+    "t": "yuan",
+    "kind": "word",
+    "pron": "yoo-AHN",
+    "forms": [
+      "yuan"
+    ],
+    "text": "The money used in China. The article says 10m yuan is about 1.5m US dollars.",
+    "audio": true
+  },
+  {
+    "k": "wide-release",
+    "t": "wide release",
+    "kind": "phrase",
+    "forms": [
+      "wide release"
+    ],
+    "text": "When a film opens in thousands of theaters at once instead of just a few.",
+    "audio": true
+  },
+  {
+    "k": "screens",
+    "t": "screens",
+    "kind": "word",
+    "forms": [
+      "screens"
+    ],
+    "text": "Here, screens means individual movie-theater rooms. The film played in 10,000 of them.",
+    "audio": true
+  },
+  {
+    "k": "bombed",
+    "t": "bombed",
+    "kind": "phrase",
+    "forms": [
+      "bombed"
+    ],
+    "text": "Bombed means failed badly. A film that bombs earns much less money than hoped.",
+    "audio": true
+  },
+  {
+    "k": "box-office",
+    "t": "box office",
+    "kind": "word",
+    "forms": [
+      "box office"
+    ],
+    "text": "The money a film earns from ticket sales. It is how the movie business keeps score.",
+    "audio": true
+  },
+  {
+    "k": "grossed",
+    "t": "grossed",
+    "kind": "word",
+    "pron": "GROHST",
+    "forms": [
+      "grossed"
+    ],
+    "text": "Here, grossed means earned in total, before costs are taken away. It has nothing to do with being disgusting.",
+    "audio": true
+  },
+  {
+    "k": "dizzying",
+    "t": "dizzying",
+    "kind": "word",
+    "pron": "DIZ-ee-ing",
+    "forms": [
+      "dizzying"
+    ],
+    "text": "So fast or confusing that it makes you feel dizzy. Constant jumps between shots made the film hard to watch.",
+    "audio": true
+  },
+  {
+    "k": "cuts",
+    "t": "cuts",
+    "kind": "word",
+    "forms": [
+      "cuts"
+    ],
+    "text": "In film, a cut is the moment one shot switches to another. Too many fast cuts feel chaotic.",
+    "audio": true
+  },
+  {
+    "k": "shots",
+    "t": "shots",
+    "kind": "word",
+    "forms": [
+      "shots"
+    ],
+    "text": "In film, a shot is one piece of video filmed without a break. It is not the kind of shot from a vaccine or a basketball.",
+    "audio": true
+  },
+  {
+    "k": "inconsistency",
+    "t": "inconsistency",
+    "kind": "word",
+    "pron": "in-kun-SIS-ten-see",
+    "forms": [
+      "inconsistency"
+    ],
+    "text": "When things do not match or stay the same. The film's look kept changing from scene to scene.",
+    "audio": true
+  },
+  {
+    "k": "convey",
+    "t": "convey",
+    "kind": "word",
+    "pron": "kun-VAY",
+    "forms": [
+      "convey"
+    ],
+    "text": "To show or communicate. Good actors convey feelings through their faces.",
+    "audio": true
+  },
+  {
+    "k": "unnatural",
+    "t": "unnatural",
+    "kind": "word",
+    "forms": [
+      "unnatural"
+    ],
+    "text": "Not like real life. The actors' faces moved in ways real faces do not.",
+    "audio": true
+  },
+  {
+    "k": "clunky",
+    "t": "clunky",
+    "kind": "word",
+    "forms": [
+      "clunky"
+    ],
+    "text": "Awkward and heavy, not smooth. A clunky film feels badly made.",
+    "audio": true
+  },
+  {
+    "k": "slow-paced",
+    "t": "slow-paced",
+    "kind": "word",
+    "forms": [
+      "slow-paced"
+    ],
+    "text": "Moving along slowly, so little seems to happen quickly.",
+    "audio": true
+  },
+  {
+    "k": "animation",
+    "t": "animation",
+    "kind": "word",
+    "forms": [
+      "animation"
+    ],
+    "text": "A film made of drawn or computer-made pictures instead of filmed people, like a cartoon.",
+    "audio": true
+  },
+  {
+    "k": "viral",
+    "t": "viral",
+    "kind": "word",
+    "pron": "VY-rul",
+    "forms": [
+      "viral"
+    ],
+    "text": "Spreading quickly across the internet as many people share it, like a germ spreading.",
+    "audio": true
+  },
+  {
+    "k": "outrageously",
+    "t": "outrageously",
+    "kind": "word",
+    "forms": [
+      "outrageously"
+    ],
+    "text": "Shockingly or extremely. Here, so bad it was surprising.",
+    "audio": true
+  },
+  {
+    "k": "from-scratch",
+    "t": "from scratch",
+    "kind": "phrase",
+    "forms": [
+      "from scratch"
+    ],
+    "text": "Starting again at the very beginning, with nothing kept from earlier work.",
+    "audio": true
+  },
+  {
+    "k": "catch-up",
+    "t": "catch up",
+    "kind": "phrase",
+    "forms": [
+      "catch up"
+    ],
+    "text": "To reach the same level as something that is ahead. The producers kept redoing the film so it matched newer AI tools.",
+    "audio": true
+  },
+  {
+    "k": "industry-insiders",
+    "t": "industry insiders",
+    "kind": "phrase",
+    "forms": [
+      "industry insiders"
+    ],
+    "text": "People who work in a business and know it well from the inside.",
+    "audio": true
+  },
+  {
+    "k": "computer-generated-imagery",
+    "t": "computer-generated imagery",
+    "kind": "word",
+    "forms": [
+      "computer-generated imagery"
+    ],
+    "text": "Pictures made on a computer instead of filmed, often called CGI. It is used for special effects like dragons or explosions.",
+    "audio": true
+  },
+  {
+    "k": "compelling",
+    "t": "compelling",
+    "kind": "word",
+    "pron": "kum-PEL-ing",
+    "forms": [
+      "compelling"
+    ],
+    "text": "So interesting that you want to keep watching. Viewers pay for a compelling story.",
+    "audio": true
+  },
+  {
+    "k": "micro-dramas",
+    "t": "micro-dramas",
+    "kind": "word",
+    "forms": [
+      "micro-dramas"
+    ],
+    "text": "Very short story videos, just minutes long, made for phones. They are hugely popular in China.",
+    "audio": true
+  },
+  {
+    "k": "all-the-rage",
+    "t": "all the rage",
+    "kind": "phrase",
+    "forms": [
+      "all the rage"
+    ],
+    "text": "Very popular right now, like a fashion everyone follows.",
+    "audio": true
+  },
+  {
+    "k": "tuned-in",
+    "t": "tuned in",
+    "kind": "phrase",
+    "forms": [
+      "tuned in"
+    ],
+    "text": "Watched or listened to something. The phrase comes from tuning a radio or TV.",
+    "audio": true
+  },
+  {
+    "k": "productions",
+    "t": "productions",
+    "kind": "word",
+    "forms": [
+      "productions"
+    ],
+    "text": "Here, productions are finished shows or films that were made.",
+    "audio": true
+  },
+  {
+    "k": "douyin",
+    "t": "Douyin",
+    "kind": "name",
+    "pron": "DOH-yin",
+    "forms": [
+      "Douyin"
+    ],
+    "text": "A very popular short-video app in China. It is the Chinese version of TikTok.",
+    "audio": true
+  },
+  {
+    "k": "churn-out",
+    "t": "churn out",
+    "kind": "phrase",
+    "forms": [
+      "churn out"
+    ],
+    "text": "To make lots of something quickly, often without much care, like butter being churned.",
+    "audio": true
+  },
+  {
+    "k": "zany",
+    "t": "zany",
+    "kind": "word",
+    "pron": "ZAY-nee",
+    "forms": [
+      "zany"
+    ],
+    "text": "Silly and wacky in a funny way.",
+    "audio": true
+  },
+  {
+    "k": "fare",
+    "t": "fare",
+    "kind": "word",
+    "forms": [
+      "fare"
+    ],
+    "text": "Here, fare means the kind of entertainment on offer. It is not the price of a bus ticket.",
+    "audio": true
+  },
+  {
+    "k": "song-dynasty",
+    "t": "Song Dynasty",
+    "kind": "name",
+    "forms": [
+      "Song Dynasty"
+    ],
+    "text": "A famous ruling family of ancient China that governed about a thousand years ago.",
+    "audio": true
+  },
+  {
+    "k": "in-the-works",
+    "t": "in the works",
+    "kind": "phrase",
+    "forms": [
+      "in the works"
+    ],
+    "text": "Being planned or made but not finished yet.",
+    "audio": true
+  },
+  {
+    "k": "production-company",
+    "t": "production company",
+    "kind": "word",
+    "forms": [
+      "production company"
+    ],
+    "text": "A business that organizes and pays for making films or shows.",
+    "audio": true
+  },
+  {
+    "k": "sanxingdui",
+    "t": "Sanxingdui",
+    "kind": "name",
+    "pron": "sahn-shing-DWAY",
+    "forms": [
+      "Sanxingdui"
+    ],
+    "text": "The film's title is named after a site in China known for ancient bronze treasures.",
+    "audio": true
+  },
+  {
+    "k": "announced",
+    "t": "announced",
+    "kind": "word",
+    "forms": [
+      "announced"
+    ],
+    "text": "Told the public about something. A company announced its next film.",
+    "audio": true
+  },
+  {
+    "k": "heavily",
+    "t": "heavily",
+    "kind": "word",
+    "forms": [
+      "heavily"
+    ],
+    "text": "A lot. A film heavily using AI relies on it for much of the work.",
+    "audio": true
+  },
+  {
+    "k": "projects",
+    "t": "projects",
+    "kind": "word",
+    "forms": [
+      "projects"
+    ],
+    "text": "Here, projects are jobs or works a company is making, like new films.",
+    "audio": true
+  },
+  {
+    "k": "forgotten",
+    "t": "forgotten",
+    "kind": "word",
+    "forms": [
+      "forgotten"
+    ],
+    "text": "When people no longer remember something. The Economist jokes that the producers hope everyone forgets the flop.",
+    "audio": true
+  }
+]

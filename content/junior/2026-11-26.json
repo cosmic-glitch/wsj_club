@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-26",
+  "title": "China releases the first-ever AI-generated movie",
+  "articleUrl": "https://www.economist.com/china/2026/11/26/china-releases-the-first-ever-ai-generated-movie",
+  "articlePageUrl": "/articles/junior/2026-11-26.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "thwart",
+      "partOfSpeech": "verb",
+      "pronunciation": "THWORT",
+      "articleQuote": "a young woman who must travel back in time to thwart the plots of an evil AI super-brain",
+      "meaning": "To thwart someone is to stop them from getting what they are trying to do. It means blocking a plan before it works. In the movie, the heroine travels back in time so she can stop the evil computer's plans from succeeding. A goalie thwarts a team by blocking the shot.",
+      "examples": [
+        "Our teacher thwarted the prank by moving the whole class to another room.",
+        "A locked gate thwarted the dog's escape from the yard."
+      ]
+    },
+    {
+      "word": "jarring",
+      "partOfSpeech": "adjective",
+      "pronunciation": "JAR-ing",
+      "articleQuote": "a jarring inconsistency in visual style between scenes",
+      "meaning": "Something jarring clashes with what came before it, so it feels harsh or startling. A jarring sound or sight makes you wince because it does not fit. Here, the film's pictures change style from one scene to the next, and viewers found that sudden clash unpleasant. A loud alarm in the middle of a quiet movie is jarring.",
+      "examples": [
+        "The jarring buzz of the fire drill interrupted our quiet reading time.",
+        "Going from a warm house into freezing wind was a jarring change."
+      ]
+    },
+    {
+      "word": "credible",
+      "partOfSpeech": "adjective",
+      "pronunciation": "KRED-uh-bul",
+      "articleQuote": "unnatural facial expressions that fail to convey credible emotions",
+      "meaning": "Something credible is believable, so people can trust that it is real or true. A credible excuse sounds like it could really have happened. In the article, the computer-made actors' faces did not look like real feelings, so viewers did not believe them. A friend who always tells the truth is a credible witness.",
+      "examples": [
+        "Her story about the missing homework was not credible, because she had told three different versions.",
+        "The scientist gave a credible explanation, with clear evidence to back it up."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Box office",
+      "articleQuote": "It grossed just 1.9m yuan in its first month.",
+      "meaning": "The **box office** is the money a movie earns from selling tickets. The name comes from the little booth, or box, where tickets used to be sold. When people say a film \"grossed\" a number, they mean the total ticket money before anything is subtracted.\n\nThis number is how the movie business keeps score. Picture a class that spends 100 dollars on supplies to run a bake sale but only collects 20 dollars. The class lost money, even though some people did buy cookies. A movie works the same way. The filmmakers spent over 10m yuan making this film, but it grossed only 1.9m yuan, so it \"bombed,\" which is the word for a film that earns far less than it cost.\n\nBox office matters because studios use it to decide what to make next. If audiences keep skipping a kind of movie, companies make fewer of them."
+    },
+    {
+      "name": "Computer-generated imagery",
+      "articleQuote": "taking the place of humans when making complex computer-generated imagery",
+      "meaning": "**Computer-generated imagery**, or **CGI**, means pictures made by a computer instead of filmed with a camera. It is the field of visual effects in movies.\n\nWhen a film shows a dragon, a giant robot, or a city blowing up, no camera filmed a real one. Artists built the picture on a computer, often drawing the shape, then adding color, light, and movement frame by frame. A movie plays about 24 frames every second, so even a short scene needs many pictures. Think of a flip-book: every page is a little different, and flipping makes it move.\n\nCGI is slow and expensive because people do all that work by hand. The article says AI can help by doing some of that work, which could cut costs. Still, a computer-made picture is only one piece. People also have to make the story and the acting feel real."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did the Economist call it ironic that this film was made with AI?",
+      "options": [
+        "The movie's story is about an evil AI that threatens humanity",
+        "The movie was made without any human workers",
+        "The movie was about a famous movie director",
+        "The movie was made in just one week"
+      ],
+      "answerIndex": 0,
+      "explanation": "The film's villain is an evil AI super-brain, yet the filmmakers used AI to make it."
+    },
+    {
+      "question": "What happened when the film opened in cinemas?",
+      "options": [
+        "It was the top movie in China for a year",
+        "It earned only 1.9m yuan in its first month",
+        "It was shown on just a few screens",
+        "It was taken out of cinemas after one day"
+      ],
+      "answerIndex": 1,
+      "explanation": "The film opened on 10,000 screens but grossed only 1.9m yuan in a month, far less than it cost."
+    },
+    {
+      "question": "Which complaint did audiences make about the film?",
+      "options": [
+        "The movie was too short",
+        "The movie had no music at all",
+        "The computer-made actors could not show believable emotions",
+        "The movie was only shown in English"
+      ],
+      "answerIndex": 2,
+      "explanation": "Viewers said the \"actors\" had unnatural faces that failed to convey credible emotions."
+    },
+    {
+      "question": "If a scene is described as \"jarring,\" what does that mean?",
+      "options": [
+        "It is funny and makes people laugh",
+        "It is quiet and calm",
+        "It is a clash that feels harsh or startling",
+        "It is very long"
+      ],
+      "answerIndex": 2,
+      "explanation": "Jarring means clashing or startling in an unpleasant way, like the film's sudden changes in visual style."
+    },
+    {
+      "question": "Why does the article say people will watch micro-dramas but expect more from cinema films?",
+      "options": [
+        "Micro-dramas are free to watch, but cinema costs money and time",
+        "Micro-dramas are always made by humans",
+        "Cinemas only show films made without AI",
+        "Micro-dramas are much longer than films"
+      ],
+      "answerIndex": 0,
+      "explanation": "Because micro-dramas are free and short, audiences forgive them; paying for a ticket raises expectations."
+    }
+  ]
+}
