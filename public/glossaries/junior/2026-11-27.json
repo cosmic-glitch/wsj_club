@@ -1,0 +1,516 @@
+[
+  {
+    "k": "deceptive",
+    "t": "deceptive",
+    "kind": "vocab",
+    "pron": "dih-SEP-tiv",
+    "forms": [
+      "deceptive"
+    ],
+    "text": "Something deceptive gives you the wrong idea, even without a lie. The fancy menu words make the plain meal sound grand.",
+    "audio": true
+  },
+  {
+    "k": "improvise",
+    "t": "improvise",
+    "kind": "vocab",
+    "pron": "IM-pruh-vyze",
+    "forms": [
+      "improvise"
+    ],
+    "text": "To improvise is to make do on the spot with whatever you have. The passenger uses a knife and a spoon because he has no proper way to scoop the salad.",
+    "audio": true
+  },
+  {
+    "k": "gingerly",
+    "t": "gingerly",
+    "kind": "vocab",
+    "pron": "JIN-jer-lee",
+    "forms": [
+      "gingerly"
+    ],
+    "text": "Gingerly means very carefully and gently, like walking on a slippery floor. The passenger moves the lid slowly because the tray is so crowded.",
+    "audio": true
+  },
+  {
+    "k": "crew-member",
+    "t": "crew member",
+    "kind": "phrase",
+    "forms": [
+      "crew member",
+      "crew"
+    ],
+    "text": "A crew member is one of the people who work on the plane, like the flight attendants who serve the food.",
+    "audio": true
+  },
+  {
+    "k": "airline",
+    "t": "airline",
+    "kind": "word",
+    "forms": [
+      "airline"
+    ],
+    "text": "An airline is a company that flies passengers from place to place in planes.",
+    "audio": true
+  },
+  {
+    "k": "menu",
+    "t": "menu",
+    "kind": "word",
+    "forms": [
+      "menu"
+    ],
+    "text": "A menu is a list of the foods you can choose from. On a plane the choice is usually only two or three things.",
+    "audio": true
+  },
+  {
+    "k": "seasonal",
+    "t": "Seasonal",
+    "kind": "word",
+    "forms": [
+      "Seasonal"
+    ],
+    "text": "Seasonal means connected to a certain time of year, like soup in winter or watermelon in summer. On a menu it is a fancy word that sounds fresh.",
+    "audio": true
+  },
+  {
+    "k": "vinaigrette",
+    "t": "vinaigrette",
+    "kind": "word",
+    "forms": [
+      "vinaigrette"
+    ],
+    "text": "A vinaigrette is a salad dressing made from oil and vinegar. Here it comes in a tiny packet.",
+    "audio": true
+  },
+  {
+    "k": "herb-encrusted",
+    "t": "herb-encrusted",
+    "kind": "phrase",
+    "forms": [
+      "herb-encrusted"
+    ],
+    "text": "Herb-encrusted means covered with a coating of chopped green herbs like parsley. It is menu language meant to sound fancy.",
+    "audio": true
+  },
+  {
+    "k": "jus",
+    "t": "jus",
+    "kind": "word",
+    "forms": [
+      "jus"
+    ],
+    "text": "Jus is a French word, said like zhoo, for a thin sauce made from meat juices. It is another fancy menu word.",
+    "audio": true
+  },
+  {
+    "k": "basque-cheesecake",
+    "t": "Basque cheesecake",
+    "kind": "phrase",
+    "forms": [
+      "Basque cheesecake"
+    ],
+    "text": "Basque cheesecake is a creamy cake from the Basque region of Spain, with a dark, burnt-looking top.",
+    "audio": true
+  },
+  {
+    "k": "sachet",
+    "t": "sachet",
+    "kind": "word",
+    "forms": [
+      "sachet"
+    ],
+    "text": "A sachet is a small, flat packet that holds a bit of something, like salad dressing or sugar.",
+    "audio": true
+  },
+  {
+    "k": "vacuum-packed",
+    "t": "vacuum-packed",
+    "kind": "phrase",
+    "forms": [
+      "vacuum-packed"
+    ],
+    "text": "Vacuum-packed means sealed in plastic with the air sucked out, so food stays fresh and the wrapping fits tightly.",
+    "audio": true
+  },
+  {
+    "k": "ripple",
+    "t": "ripple",
+    "kind": "word",
+    "forms": [
+      "ripple"
+    ],
+    "text": "A ripple is a small wave, like the ones on a pond. Here it means a tiny feeling of excitement that spreads through you.",
+    "audio": true
+  },
+  {
+    "k": "ritualised",
+    "t": "ritualised",
+    "kind": "word",
+    "forms": [
+      "ritualised"
+    ],
+    "text": "Ritualised means done the same way every time, like a ceremony. Airline meals follow a set order, so they feel like a ritual.",
+    "audio": true
+  },
+  {
+    "k": "critical-faculties",
+    "t": "critical faculties",
+    "kind": "phrase",
+    "forms": [
+      "critical faculties"
+    ],
+    "text": "Your critical faculties are your ability to think clearly and judge things well. The joke is that thin air might be making the writer too easy to please.",
+    "audio": true
+  },
+  {
+    "k": "aperitif",
+    "t": "aperitif",
+    "kind": "word",
+    "forms": [
+      "aperitif"
+    ],
+    "text": "An aperitif is a small drink served before a meal. The word is French.",
+    "audio": true
+  },
+  {
+    "k": "pretzels",
+    "t": "pretzels",
+    "kind": "word",
+    "forms": [
+      "pretzels"
+    ],
+    "text": "Pretzels are crunchy, salty snacks, often shaped like a knot.",
+    "audio": true
+  },
+  {
+    "k": "what-s-not-to-like",
+    "t": "What’s not to like",
+    "kind": "phrase",
+    "forms": [
+      "What’s not to like"
+    ],
+    "text": "What's not to like? is a saying that means everything about this seems good. It is a joking way to say it is an easy choice.",
+    "audio": true
+  },
+  {
+    "k": "dining",
+    "t": "dining",
+    "kind": "word",
+    "forms": [
+      "dining"
+    ],
+    "text": "Dining is a formal word for eating a meal. The crew member's question is funny because there is nowhere else on a plane to eat.",
+    "audio": true
+  },
+  {
+    "k": "absurdly",
+    "t": "absurdly",
+    "kind": "word",
+    "forms": [
+      "absurdly"
+    ],
+    "text": "Absurdly means in a silly way that makes no sense. Of course you are dining with them, because you are stuck on the plane.",
+    "audio": true
+  },
+  {
+    "k": "wintry-smile",
+    "t": "wintry smile",
+    "kind": "phrase",
+    "forms": [
+      "wintry smile"
+    ],
+    "text": "A wintry smile is a cold, quick smile with no warmth, like a chilly winter day.",
+    "audio": true
+  },
+  {
+    "k": "luxury",
+    "t": "luxury",
+    "kind": "word",
+    "forms": [
+      "luxury"
+    ],
+    "text": "A luxury is something extra nice that you do not really need and that costs more. The joke is that a plate counts as one.",
+    "audio": true
+  },
+  {
+    "k": "aviation",
+    "t": "aviation",
+    "kind": "word",
+    "forms": [
+      "aviation"
+    ],
+    "text": "Aviation is the business and science of flying aircraft.",
+    "audio": true
+  },
+  {
+    "k": "remarkable",
+    "t": "remarkable",
+    "kind": "word",
+    "forms": [
+      "remarkable"
+    ],
+    "text": "Remarkable means worth noticing because it is surprising or unusual.",
+    "audio": true
+  },
+  {
+    "k": "deposited",
+    "t": "deposited",
+    "kind": "word",
+    "forms": [
+      "deposited"
+    ],
+    "text": "Deposited means put down in a place, often without much care. The tray is simply set on your table.",
+    "audio": true
+  },
+  {
+    "k": "fiesta",
+    "t": "fiesta",
+    "kind": "word",
+    "forms": [
+      "fiesta"
+    ],
+    "text": "A fiesta is a big, lively party. Here, a fiesta of plastic means the tray is crowded with plastic pieces, a joke.",
+    "audio": true
+  },
+  {
+    "k": "sliding-block-puzzle",
+    "t": "sliding-block puzzle",
+    "kind": "phrase",
+    "forms": [
+      "sliding-block puzzle"
+    ],
+    "text": "A sliding-block puzzle is a game where small tiles slide around in a tight frame until you get them in order. The tray's dishes fit together the same tight way.",
+    "audio": true
+  },
+  {
+    "k": "snugly",
+    "t": "snugly",
+    "kind": "word",
+    "forms": [
+      "snugly"
+    ],
+    "text": "Snugly means fitting tightly and neatly, with no gaps.",
+    "audio": true
+  },
+  {
+    "k": "retrieving",
+    "t": "retrieving",
+    "kind": "word",
+    "forms": [
+      "retrieving"
+    ],
+    "text": "Retrieving means getting something back after it is lost or out of reach, like a fork that fell on the floor.",
+    "audio": true
+  },
+  {
+    "k": "portion",
+    "t": "portion",
+    "kind": "word",
+    "forms": [
+      "portion"
+    ],
+    "text": "A portion is the amount of food given to one person.",
+    "audio": true
+  },
+  {
+    "k": "apply",
+    "t": "apply",
+    "kind": "word",
+    "forms": [
+      "apply"
+    ],
+    "text": "Here, to apply butter means to spread it on. Apply can also mean to ask for a job, or to use a rule.",
+    "audio": true
+  },
+  {
+    "k": "soften",
+    "t": "soften",
+    "kind": "word",
+    "forms": [
+      "soften"
+    ],
+    "text": "Soften means to make less hard. The writer uses wine to soften a dry roll in his mouth.",
+    "audio": true
+  },
+  {
+    "k": "ensemble",
+    "t": "ensemble",
+    "kind": "word",
+    "forms": [
+      "ensemble"
+    ],
+    "text": "An ensemble is a group of things that go together, like a band or an outfit. Here it means the whole set of dishes and lids.",
+    "audio": true
+  },
+  {
+    "k": "balance",
+    "t": "balance",
+    "kind": "word",
+    "forms": [
+      "balance"
+    ],
+    "text": "To balance is to keep something steady so it does not fall.",
+    "audio": true
+  },
+  {
+    "k": "cutlery",
+    "t": "cutlery",
+    "kind": "word",
+    "forms": [
+      "cutlery"
+    ],
+    "text": "Cutlery means forks, knives, and spoons.",
+    "audio": true
+  },
+  {
+    "k": "casual-observer",
+    "t": "casual observer",
+    "kind": "phrase",
+    "forms": [
+      "casual observer"
+    ],
+    "text": "A casual observer is someone who glances at something without paying close attention.",
+    "audio": true
+  },
+  {
+    "k": "foil",
+    "t": "foil",
+    "kind": "word",
+    "forms": [
+      "foil"
+    ],
+    "text": "Foil is a very thin sheet of shiny metal used to cover food and keep it warm.",
+    "audio": true
+  },
+  {
+    "k": "coastal-erosion",
+    "t": "coastal erosion",
+    "kind": "phrase",
+    "forms": [
+      "coastal erosion"
+    ],
+    "text": "Coastal erosion is when waves slowly wear away the land along a coast. It takes years, so cutting the chicken at that pace is very slow, which is the joke.",
+    "audio": true
+  },
+  {
+    "k": "whittling-away",
+    "t": "whittling away",
+    "kind": "phrase",
+    "forms": [
+      "whittling away"
+    ],
+    "text": "Whittling is cutting small bits off a piece of wood with a knife. To whittle away at something is to cut it down bit by bit.",
+    "audio": true
+  },
+  {
+    "k": "array",
+    "t": "array",
+    "kind": "word",
+    "forms": [
+      "array"
+    ],
+    "text": "An array is a neat group of things laid out together, like a row of bottles.",
+    "audio": true
+  },
+  {
+    "k": "perches",
+    "t": "perches",
+    "kind": "word",
+    "forms": [
+      "perches"
+    ],
+    "text": "Perches means sits on the edge of something, the way a bird sits on a branch.",
+    "audio": true
+  },
+  {
+    "k": "majestically",
+    "t": "majestically",
+    "kind": "word",
+    "forms": [
+      "majestically"
+    ],
+    "text": "Majestically means in a grand, noble way. It is funny here because it describes a flying cheesecake.",
+    "audio": true
+  },
+  {
+    "k": "vaults",
+    "t": "vaults",
+    "kind": "word",
+    "forms": [
+      "vaults"
+    ],
+    "text": "Vaults means jumps over something in one big leap, like an athlete over a hurdle. Here the cheesecake leaps two rows ahead.",
+    "audio": true
+  },
+  {
+    "k": "overhead-lockers",
+    "t": "overhead lockers",
+    "kind": "phrase",
+    "forms": [
+      "overhead lockers"
+    ],
+    "text": "Overhead lockers are the storage bins above airplane seats where people put bags.",
+    "audio": true
+  },
+  {
+    "k": "dissecting",
+    "t": "dissecting",
+    "kind": "word",
+    "forms": [
+      "dissecting"
+    ],
+    "text": "Dissecting means carefully cutting something apart to look inside, like a science class does with a specimen. Here it is a joke about cutting chicken.",
+    "audio": true
+  },
+  {
+    "k": "taxed",
+    "t": "taxed",
+    "kind": "word",
+    "forms": [
+      "taxed"
+    ],
+    "text": "Taxed means tested or stretched to the limit. If food has not taxed the taste buds, it has no flavor to speak of.",
+    "audio": true
+  },
+  {
+    "k": "teeter",
+    "t": "teeter",
+    "kind": "word",
+    "forms": [
+      "teeter"
+    ],
+    "text": "To teeter is to wobble as if about to fall.",
+    "audio": true
+  },
+  {
+    "k": "alexander-calder",
+    "t": "Alexander Calder",
+    "kind": "name",
+    "forms": [
+      "Alexander Calder"
+    ],
+    "text": "Alexander Calder was an American artist famous for sculptures with metal pieces balanced so they sway. The tray looks like one.",
+    "audio": true
+  },
+  {
+    "k": "prise",
+    "t": "prise",
+    "kind": "word",
+    "forms": [
+      "prise"
+    ],
+    "text": "To prise something is to pry it out or open with force. It is a British spelling of pry.",
+    "audio": true
+  },
+  {
+    "k": "snoring",
+    "t": "snoring",
+    "kind": "word",
+    "forms": [
+      "snoring"
+    ],
+    "text": "Snoring is the noisy breathing some people make when they sleep.",
+    "audio": true
+  }
+]

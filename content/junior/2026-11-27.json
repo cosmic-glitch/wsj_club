@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-27",
+  "title": "The strange satisfaction of eating on a plane",
+  "articleUrl": "https://www.economist.com/business/2026/11/26/the-strange-satisfaction-of-eating-on-a-plane",
+  "articlePageUrl": "/articles/junior/2026-11-27.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "deceptive",
+      "partOfSpeech": "adjective",
+      "pronunciation": "dih-SEP-tiv",
+      "articleQuote": "Each item has a description that is at once accurate and highly deceptive.",
+      "meaning": "Something deceptive gives you the wrong idea, even if it does not tell an outright lie. It looks or sounds better, or different, than it really is. Here, the fancy menu words make the airplane meal sound grand, but the real food is plain. A pretty box with a tiny snack inside is deceptive.",
+      "examples": [
+        "The deceptive ad showed a huge burger, but the real one was small and flat.",
+        "The frozen pond looked solid, but its thin ice was deceptive."
+      ]
+    },
+    {
+      "word": "improvise",
+      "partOfSpeech": "verb",
+      "pronunciation": "IM-pruh-vyze",
+      "articleQuote": "improvise with a knife and spoon to scoop up the lettuce leaf",
+      "meaning": "To improvise is to make or do something on the spot with whatever you have, because you did not plan ahead or have the right tool. In the article, the passenger has no proper way to scoop the salad, so he makes do with a knife and a spoon. A musician can improvise a tune without any written music.",
+      "examples": [
+        "We forgot the tent poles, so we improvised with long sticks.",
+        "When the power went out, she improvised a lamp from a flashlight and a jar."
+      ]
+    },
+    {
+      "word": "gingerly",
+      "partOfSpeech": "adverb",
+      "pronunciation": "JIN-jer-lee",
+      "articleQuote": "You gingerly balance the salad lid on top of another dish",
+      "meaning": "Doing something gingerly means doing it very carefully and gently, because you are afraid of breaking it, spilling it, or getting hurt. The passenger moves the lid slowly because the tray is so crowded. You might step gingerly onto a slippery floor.",
+      "examples": [
+        "He gingerly carried the full cup of hot chocolate across the room.",
+        "She gingerly touched the cactus to see how sharp it was."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Cabin classes",
+      "articleQuote": "In the most expensive seats, you might be served your meal on a plate.",
+      "meaning": "**Cabin classes** are the different sections of a plane, where seats cost different amounts. The usual ones are first class, business class, and economy, which people also call \"the cheap seats.\"\n\nAll the passengers fly in the same plane to the same place. What changes is the comfort. Think of a school theater with front-row seats, middle seats, and seats way in the back. Everyone sees the same show, but a ticket near the stage costs more and may come with extras. On a plane, the extras are wider seats, more legroom, and real plates and metal forks. Economy gets the plastic tray.\n\nAirlines do this because some people will pay a lot more for comfort, and that extra money helps pay for the whole flight. The article jokes about it: a plate is such a rare treat that serving food on one counts as luxury."
+    },
+    {
+      "name": "Satire",
+      "articleQuote": "It is a fiesta of plastic.",
+      "meaning": "**Satire** is writing that makes fun of something real by exaggerating it, so readers laugh and also notice something true. The writer is usually not angry. They are teasing.\n\nImagine a friend describing your school lunch line as \"a heroic journey through the Mountains of Mystery Meat.\" It is silly and made bigger than life, but you laugh because it is a bit true. This article does the same thing. A flying piece of cheesecake that \"vaults two rows forward\" and a tray that looks like a famous artist's sculpture are stretched-out jokes about how awkward airline meals really are.\n\nWhen a writer's tone sounds too serious or too dramatic for a small thing, that is a clue the writer is using satire."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why does the article call the menu descriptions \"highly deceptive\"?",
+      "options": [
+        "They are written in another language",
+        "They make plain food sound fancier than it really is",
+        "They list foods that are not on the plane at all",
+        "They show the wrong prices"
+      ],
+      "answerIndex": 1,
+      "explanation": "Words like \"herb-encrusted\" and \"tomato jus\" sound grand, but the passenger knows the salad will be a lettuce leaf and the cheese vacuum-packed."
+    },
+    {
+      "question": "What happens to the neighbor's Basque cheesecake?",
+      "options": [
+        "He shares it with the writer",
+        "A crew member takes it away",
+        "It flies up in the air and lands two rows ahead",
+        "He saves it for breakfast"
+      ],
+      "answerIndex": 2,
+      "explanation": "He slams his hand on the tray and the cheesecake \"vaults two rows forward.\""
+    },
+    {
+      "question": "What does it mean to do something \"gingerly\"?",
+      "options": [
+        "Very quickly",
+        "Very carefully and gently",
+        "Very loudly",
+        "With great anger"
+      ],
+      "answerIndex": 1,
+      "explanation": "Gingerly means carefully, like the writer balancing the lid on a crowded tray."
+    },
+    {
+      "question": "In which seats might a passenger be served food on a real plate?",
+      "options": [
+        "The cheap seats",
+        "The seats by the window",
+        "The most expensive seats",
+        "The seats at the back"
+      ],
+      "answerIndex": 2,
+      "explanation": "The article says that in the most expensive seats you might get a plate, while the cheap seats get a tray of plastic dishes."
+    },
+    {
+      "question": "Why is the writer's tone funny?",
+      "options": [
+        "He describes small problems as if they were huge adventures",
+        "He tells readers to avoid flying",
+        "He writes only short sentences",
+        "He is complaining to the airline"
+      ],
+      "answerIndex": 0,
+      "explanation": "Exaggerating small annoyances, like a tiny pat of butter, is satire: it is humor that also points to something true."
+    }
+  ]
+}
