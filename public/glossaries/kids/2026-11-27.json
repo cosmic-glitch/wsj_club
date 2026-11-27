@@ -1,0 +1,391 @@
+[
+  {
+    "k": "tournament",
+    "t": "tournament",
+    "kind": "vocab",
+    "pron": "TUR-nuh-munt",
+    "forms": [
+      "tournament"
+    ],
+    "text": "A tournament is a set of games where many players compete. Bodhana played in a huge chess tournament.",
+    "audio": true
+  },
+  {
+    "k": "represent",
+    "t": "represent",
+    "kind": "vocab",
+    "pron": "rep-ri-ZENT",
+    "forms": [
+      "represent"
+    ],
+    "text": "To represent a place means to play or speak for it. Bodhana played for England.",
+    "audio": true
+  },
+  {
+    "k": "balance",
+    "t": "balance",
+    "kind": "vocab",
+    "pron": "BAL-unts",
+    "forms": [
+      "balance"
+    ],
+    "text": "To balance two things means to make time for both. Bodhana makes time for chess and for school.",
+    "audio": true
+  },
+  {
+    "k": "chess",
+    "t": "chess",
+    "kind": "word",
+    "forms": [
+      "chess"
+    ],
+    "text": "Chess is a board game for two players. Each player moves pieces to trap the other player's king.",
+    "audio": true
+  },
+  {
+    "k": "england",
+    "t": "England",
+    "kind": "name",
+    "forms": [
+      "England"
+    ],
+    "text": "England is a country in the United Kingdom, in Europe. Bodhana is from England.",
+    "audio": true
+  },
+  {
+    "k": "uzbekistan",
+    "t": "Uzbekistan",
+    "kind": "name",
+    "forms": [
+      "Uzbekistan"
+    ],
+    "text": "Uzbekistan is a country in Asia. The big chess tournament was held there.",
+    "audio": true
+  },
+  {
+    "k": "samarkand",
+    "t": "Samarkand",
+    "kind": "name",
+    "forms": [
+      "Samarkand"
+    ],
+    "text": "Samarkand is a very old city in Uzbekistan. The chess games took place there.",
+    "audio": true
+  },
+  {
+    "k": "international",
+    "t": "international",
+    "kind": "word",
+    "forms": [
+      "international"
+    ],
+    "text": "International means between many countries. Players came from all over the world.",
+    "audio": true
+  },
+  {
+    "k": "made-history",
+    "t": "made history",
+    "kind": "phrase",
+    "forms": [
+      "made history"
+    ],
+    "text": "To make history means to do something that nobody has done before.",
+    "audio": true
+  },
+  {
+    "k": "woman-grandmaster",
+    "t": "woman grandmaster",
+    "kind": "phrase",
+    "forms": [
+      "woman grandmaster",
+      "Woman grandmaster"
+    ],
+    "text": "Woman grandmaster is a high chess title. Only females can earn this one.",
+    "audio": true
+  },
+  {
+    "k": "grandmaster",
+    "t": "grandmaster",
+    "kind": "word",
+    "forms": [
+      "grandmaster"
+    ],
+    "text": "A grandmaster is one of the best chess players in the world.",
+    "audio": true
+  },
+  {
+    "k": "title",
+    "t": "title",
+    "kind": "word",
+    "forms": [
+      "title",
+      "titles"
+    ],
+    "text": "A title is a special name you earn, like grandmaster. It shows how good a player is.",
+    "audio": true
+  },
+  {
+    "k": "fide",
+    "t": "FIDE",
+    "kind": "name",
+    "forms": [
+      "FIDE"
+    ],
+    "text": "FIDE is the group that runs chess around the world. It gives players their ratings.",
+    "audio": true
+  },
+  {
+    "k": "ratings",
+    "t": "ratings",
+    "kind": "word",
+    "forms": [
+      "ratings",
+      "rating"
+    ],
+    "text": "A rating is a number that shows how strong a chess player is. Winning against strong players raises it.",
+    "audio": true
+  },
+  {
+    "k": "norms",
+    "t": "norms",
+    "kind": "word",
+    "forms": [
+      "norms",
+      "norm"
+    ],
+    "text": "A norm is a great result at a tournament. A player needs three norms to win the grandmaster title.",
+    "audio": true
+  },
+  {
+    "k": "international-master",
+    "t": "international master",
+    "kind": "phrase",
+    "forms": [
+      "international master"
+    ],
+    "text": "International master is a chess title. It is one step below grandmaster.",
+    "audio": true
+  },
+  {
+    "k": "females",
+    "t": "females",
+    "kind": "word",
+    "forms": [
+      "females",
+      "female"
+    ],
+    "text": "Females are girls and women.",
+    "audio": true
+  },
+  {
+    "k": "harrow",
+    "t": "Harrow",
+    "kind": "name",
+    "forms": [
+      "Harrow"
+    ],
+    "text": "Harrow is a town in London, England. Bodhana lives there.",
+    "audio": true
+  },
+  {
+    "k": "london",
+    "t": "London",
+    "kind": "name",
+    "forms": [
+      "London"
+    ],
+    "text": "London is the biggest city in England.",
+    "audio": true
+  },
+  {
+    "k": "wizard",
+    "t": "wizard",
+    "kind": "word",
+    "forms": [
+      "wizard"
+    ],
+    "text": "A chess wizard is someone who is amazing at chess. It is like magic.",
+    "audio": true
+  },
+  {
+    "k": "covid",
+    "t": "Covid",
+    "kind": "name",
+    "forms": [
+      "Covid"
+    ],
+    "text": "Covid is an illness that spread around the world. For a while, many people stayed home.",
+    "audio": true
+  },
+  {
+    "k": "lockdown",
+    "t": "lockdown",
+    "kind": "word",
+    "forms": [
+      "lockdown"
+    ],
+    "text": "During a lockdown, people must stay at home. Schools and shops can be closed.",
+    "audio": true
+  },
+  {
+    "k": "accident",
+    "t": "accident",
+    "kind": "word",
+    "forms": [
+      "accident"
+    ],
+    "text": "Almost by accident means it happened by chance. She did not plan it.",
+    "audio": true
+  },
+  {
+    "k": "engineers",
+    "t": "engineers",
+    "kind": "word",
+    "forms": [
+      "engineers",
+      "engineer"
+    ],
+    "text": "Engineers are people who design and build things, like bridges or machines.",
+    "audio": true
+  },
+  {
+    "k": "youtube",
+    "t": "YouTube",
+    "kind": "name",
+    "forms": [
+      "YouTube"
+    ],
+    "text": "YouTube is a website where people watch videos.",
+    "audio": true
+  },
+  {
+    "k": "european-schools-championship",
+    "t": "European Schools Championship",
+    "kind": "name",
+    "forms": [
+      "European Schools Championship"
+    ],
+    "text": "This is a chess contest for kids from schools all over Europe.",
+    "audio": true
+  },
+  {
+    "k": "harrow-chess-club",
+    "t": "Harrow Chess Club",
+    "kind": "name",
+    "forms": [
+      "Harrow Chess Club"
+    ],
+    "text": "This is a club in Harrow where people meet to play chess.",
+    "audio": true
+  },
+  {
+    "k": "chess-olympiad",
+    "t": "Chess Olympiad",
+    "kind": "name",
+    "forms": [
+      "Chess Olympiad"
+    ],
+    "text": "The Chess Olympiad is a big contest where teams from many countries play chess.",
+    "audio": true
+  },
+  {
+    "k": "champion",
+    "t": "champion",
+    "kind": "word",
+    "forms": [
+      "Champion"
+    ],
+    "text": "A champion is the winner. The Women's British Chess Champion is the best woman player in Britain.",
+    "audio": true
+  },
+  {
+    "k": "defeat",
+    "t": "defeat",
+    "kind": "word",
+    "forms": [
+      "defeat"
+    ],
+    "text": "To defeat someone means to beat them in a game.",
+    "audio": true
+  },
+  {
+    "k": "board-one",
+    "t": "board one",
+    "kind": "phrase",
+    "forms": [
+      "board one"
+    ],
+    "text": "Board one is the first table in a team match. The best player sits there.",
+    "audio": true
+  },
+  {
+    "k": "drew",
+    "t": "drew",
+    "kind": "word",
+    "forms": [
+      "drew"
+    ],
+    "text": "To draw a game means it ends in a tie. Nobody wins and nobody loses.",
+    "audio": true
+  },
+  {
+    "k": "tied",
+    "t": "tied",
+    "kind": "word",
+    "forms": [
+      "tied"
+    ],
+    "text": "Tied means both players have the same score. Nobody wins.",
+    "audio": true
+  },
+  {
+    "k": "showing",
+    "t": "showing",
+    "kind": "word",
+    "forms": [
+      "showing"
+    ],
+    "text": "A strong showing means she did very well in the contest.",
+    "audio": true
+  },
+  {
+    "k": "booster-seat",
+    "t": "booster seat",
+    "kind": "phrase",
+    "forms": [
+      "booster seat"
+    ],
+    "text": "A booster seat is a cushion that lifts you up so you can reach a table.",
+    "audio": true
+  },
+  {
+    "k": "nervous",
+    "t": "nervous",
+    "kind": "word",
+    "forms": [
+      "nervous"
+    ],
+    "text": "Nervous means a little scared or worried before something big.",
+    "audio": true
+  },
+  {
+    "k": "proud",
+    "t": "proud",
+    "kind": "word",
+    "forms": [
+      "proud"
+    ],
+    "text": "Proud means you feel very good about something you did.",
+    "audio": true
+  },
+  {
+    "k": "rank",
+    "t": "rank",
+    "kind": "word",
+    "forms": [
+      "rank"
+    ],
+    "text": "A rank is a level. A higher rank means a better player.",
+    "audio": true
+  }
+]
