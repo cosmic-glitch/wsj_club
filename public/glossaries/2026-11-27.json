@@ -1,0 +1,418 @@
+[
+  {
+    "k": "flotation",
+    "t": "flotation",
+    "kind": "vocab",
+    "pron": "floh-TAY-shun",
+    "forms": [
+      "flotation"
+    ],
+    "text": "A flotation is the moment a private company first offers its shares to the public on a stock exchange. Americans usually say IPO. Here it is Anthropic's stock-market debut, which gave its employees' shares a daily price.",
+    "audio": true
+  },
+  {
+    "k": "benign",
+    "t": "benign",
+    "kind": "vocab",
+    "pron": "bih-NYNE",
+    "forms": [
+      "benign"
+    ],
+    "text": "Benign means gentle or harmless, the opposite of malignant. The joke word \"Anthropalypse\" sounds like a disaster, but the article says it is more benign than it sounds: it describes a flood of money for charities.",
+    "audio": true
+  },
+  {
+    "k": "discomfited",
+    "t": "discomfited",
+    "kind": "vocab",
+    "pron": "dis-KUM-fit-id",
+    "forms": [
+      "discomfited"
+    ],
+    "text": "To be discomfited is to feel uneasy or embarrassed, thrown off balance. The founder felt awkward about a lavish sushi spread that did not suit the company's simple culture.",
+    "audio": true
+  },
+  {
+    "k": "toil",
+    "t": "toil",
+    "kind": "word",
+    "forms": [
+      "toil"
+    ],
+    "text": "To toil is to work hard for a long time, often at something tiring. The article says the 5,000-odd people who toil at Anthropic, a slightly grand way of saying they work there.",
+    "audio": true
+  },
+  {
+    "k": "windfall",
+    "t": "windfall",
+    "kind": "word",
+    "forms": [
+      "windfall"
+    ],
+    "text": "A windfall is a sudden, unexpected gain of money, like fruit blown off a tree. For charities, the Anthropic shares pledged to them would be a huge windfall.",
+    "audio": true
+  },
+  {
+    "k": "tidy",
+    "t": "tidy",
+    "kind": "word",
+    "forms": [
+      "tidy"
+    ],
+    "text": "Tidy usually means neat, but before a sum of money it means large. A tidy $470bn is a joking understatement, since that is an enormous amount.",
+    "audio": true
+  },
+  {
+    "k": "stake",
+    "t": "stake",
+    "kind": "word",
+    "forms": [
+      "stakes",
+      "stake"
+    ],
+    "text": "A stake is a share of ownership in a company. The founders' roughly equal stakes were each a similar-sized slice of Anthropic, and they set aside 80% of those slices for charity.",
+    "audio": true
+  },
+  {
+    "k": "set-aside",
+    "t": "set aside",
+    "kind": "phrase",
+    "forms": [
+      "set aside"
+    ],
+    "text": "To set aside something is to keep it apart for a particular purpose. The founders set aside most of their shares for charity from the very start.",
+    "audio": true
+  },
+  {
+    "k": "startup",
+    "t": "startup",
+    "kind": "word",
+    "forms": [
+      "startup"
+    ],
+    "text": "A startup is a young company, often built around a new idea and hoping to grow fast. Startup bosses rarely plan charity until their firm is sold or listed.",
+    "audio": true
+  },
+  {
+    "k": "market-value",
+    "t": "market value",
+    "kind": "phrase",
+    "forms": [
+      "market value"
+    ],
+    "text": "Market value is the total price investors put on all of a company's shares. The founders' pledges are worth more than Facebook's entire market value when it listed in 2012.",
+    "audio": true
+  },
+  {
+    "k": "pledged",
+    "t": "pledged",
+    "kind": "word",
+    "forms": [
+      "pledged",
+      "pledge"
+    ],
+    "text": "To pledge is to make a serious promise, such as to give money. A pledge is not yet a payment, so the money may take years to arrive.",
+    "audio": true
+  },
+  {
+    "k": "matching",
+    "t": "donation-matching scheme",
+    "kind": "phrase",
+    "forms": [
+      "donation-matching scheme"
+    ],
+    "text": "In a matching scheme an employer adds money to what staff give, often dollar for dollar. It tops up the employees' own pledges and adds almost another $100bn.",
+    "audio": true
+  },
+  {
+    "k": "ants",
+    "t": "Ants",
+    "kind": "name",
+    "forms": [
+      "Ants"
+    ],
+    "text": "\"Ants\" is a nickname the article uses for Anthropic's employees, a pun on the company's name. The colony image returns in the last line.",
+    "audio": true
+  },
+  {
+    "k": "kitty",
+    "t": "kitty",
+    "kind": "word",
+    "forms": [
+      "kitty"
+    ],
+    "text": "A kitty is a shared pool of money that people pay into for a common purpose. Here it is the fund holding 5% of Anthropic's shares for charity.",
+    "audio": true
+  },
+  {
+    "k": "pbf",
+    "t": "Anthropic Public Benefit Fund",
+    "kind": "name",
+    "forms": [
+      "Anthropic Public Benefit Fund"
+    ],
+    "text": "This is the charity-oriented fund that Anthropic has promised 5% of its shares to. Public benefit means the aim is to help society, not just earn profit.",
+    "audio": true
+  },
+  {
+    "k": "public-good",
+    "t": "public good",
+    "kind": "phrase",
+    "forms": [
+      "public good"
+    ],
+    "text": "The public good means what helps everyone in society rather than one person or company. Anthropic says about 20% of its stock will be dedicated to it.",
+    "audio": true
+  },
+  {
+    "k": "materialise",
+    "t": "materialise",
+    "kind": "word",
+    "forms": [
+      "materialise"
+    ],
+    "text": "To materialise is to actually appear or come true, rather than stay a promise. The article says the giving may take years to materialise, or some of it may never.",
+    "audio": true
+  },
+  {
+    "k": "evaporates",
+    "t": "evaporates",
+    "kind": "phrase",
+    "forms": [
+      "evaporates"
+    ],
+    "text": "Here evaporates is used about money: it means to vanish gradually, like water drying up. If the share price falls, pledged gifts could shrink or disappear.",
+    "audio": true
+  },
+  {
+    "k": "unprecedented",
+    "t": "unprecedented",
+    "kind": "word",
+    "forms": [
+      "unprecedented"
+    ],
+    "text": "Unprecedented means never having happened before. The article says no one has seen this much money heading toward charities at once.",
+    "audio": true
+  },
+  {
+    "k": "philanthropy",
+    "t": "Ultra Philanthropy",
+    "kind": "name",
+    "forms": [
+      "Ultra Philanthropy"
+    ],
+    "text": "Ultra Philanthropy is a firm that advises rich donors on where to give. Philanthropy means giving money to improve people's lives.",
+    "audio": true
+  },
+  {
+    "k": "anthropalypse",
+    "t": "Anthropalypse",
+    "kind": "word",
+    "forms": [
+      "Anthropalypse"
+    ],
+    "text": "A joke word blending Anthropic with apocalypse, the end of the world. It is meant playfully: the shock is a flood of giving, not a disaster.",
+    "audio": true
+  },
+  {
+    "k": "effective-altruists",
+    "t": "effective altruists",
+    "kind": "name",
+    "forms": [
+      "effective altruists"
+    ],
+    "text": "Effective altruists try to do the most good per dollar, using evidence to compare charities. Many work in or near the AI world.",
+    "audio": true
+  },
+  {
+    "k": "well-meaning",
+    "t": "well-meaning",
+    "kind": "phrase",
+    "forms": [
+      "well-meaning"
+    ],
+    "text": "Well-meaning describes someone with good intentions, whatever the results. The article calls effective altruists well-meaning if sometimes overzealous.",
+    "audio": true
+  },
+  {
+    "k": "overzealous",
+    "t": "overzealous",
+    "kind": "word",
+    "forms": [
+      "overzealous"
+    ],
+    "text": "Overzealous means too eager, pushing an idea or rule further than is sensible. It is a mild criticism of effective altruists.",
+    "audio": true
+  },
+  {
+    "k": "benefit-handsomely",
+    "t": "benefit handsomely",
+    "kind": "phrase",
+    "forms": [
+      "benefit handsomely"
+    ],
+    "text": "To benefit handsomely means to gain a lot. Handsomely here has nothing to do with looks; it means generously or in a big way.",
+    "audio": true
+  },
+  {
+    "k": "gwwc",
+    "t": "Giving What We Can",
+    "kind": "name",
+    "forms": [
+      "Giving What We Can",
+      "GWWC"
+    ],
+    "text": "Giving What We Can is a group whose members pledge to donate 10% of their lifetime income to the most effective charities. GWWC is its abbreviation.",
+    "audio": true
+  },
+  {
+    "k": "global-catastrophic",
+    "t": "global catastrophic risks",
+    "kind": "phrase",
+    "forms": [
+      "global catastrophic risks"
+    ],
+    "text": "These are dangers that could harm huge numbers of people worldwide, such as pandemics or out-of-control AI. Some charities work on preventing them.",
+    "audio": true
+  },
+  {
+    "k": "rogue-ai",
+    "t": "rogue AI",
+    "kind": "phrase",
+    "forms": [
+      "rogue AI"
+    ],
+    "text": "Rogue means behaving outside the control of its owners. Rogue AI is the fear of an AI system that pursues its own goals and cannot be stopped.",
+    "audio": true
+  },
+  {
+    "k": "trusts",
+    "t": "trusts",
+    "kind": "word",
+    "forms": [
+      "trusts"
+    ],
+    "text": "A trust is a legal arrangement where one person or institution holds money for someone else. The employees set trusts up in the names of parents or siblings.",
+    "audio": true
+  },
+  {
+    "k": "spouseless",
+    "t": "spouseless",
+    "kind": "word",
+    "forms": [
+      "spouseless"
+    ],
+    "text": "Spouseless means having no husband or wife. The writer uses it to describe young, single workers who have no household to support.",
+    "audio": true
+  },
+  {
+    "k": "student-loans",
+    "t": "student loans",
+    "kind": "phrase",
+    "forms": [
+      "student loans"
+    ],
+    "text": "Student loans are money borrowed to pay for college that must be repaid with interest. Paying them off is a very sensible first use of sudden wealth.",
+    "audio": true
+  },
+  {
+    "k": "dive-into",
+    "t": "dive into",
+    "kind": "phrase",
+    "forms": [
+      "dive into"
+    ],
+    "text": "To dive into something is to jump into it eagerly, often without much caution. The writer suggests many may rush into San Francisco's housing market.",
+    "audio": true
+  },
+  {
+    "k": "ultra-hot",
+    "t": "ultra-hot",
+    "kind": "word",
+    "forms": [
+      "ultra-hot"
+    ],
+    "text": "Ultra-hot here means extremely competitive, with prices rising fast and buyers fighting over homes. It is a market term, not a temperature.",
+    "audio": true
+  },
+  {
+    "k": "mansion-shortage",
+    "t": "mansion shortage",
+    "kind": "phrase",
+    "forms": [
+      "mansion shortage"
+    ],
+    "text": "A mansion shortage is a joke: so many newly rich people want huge houses that big homes are running out.",
+    "audio": true
+  },
+  {
+    "k": "conventional",
+    "t": "conventional displays of wealth",
+    "kind": "phrase",
+    "forms": [
+      "conventional displays of wealth"
+    ],
+    "text": "Conventional displays of wealth are the usual ways of showing off, like yachts, fancy cars and luxury meals. The article says these are unlikely to appeal to Ants.",
+    "audio": true
+  },
+  {
+    "k": "tbh",
+    "t": "tbh",
+    "kind": "word",
+    "forms": [
+      "tbh"
+    ],
+    "text": "Tbh is internet shorthand for to be honest. The founder's casual Slack message shows how informal and modest the early culture was.",
+    "audio": true
+  },
+  {
+    "k": "science-fictional",
+    "t": "science-fictional",
+    "kind": "word",
+    "forms": [
+      "science-fictional"
+    ],
+    "text": "Science-fictional means like something from a sci-fi story. Ants dream of rocket cars and robot exoskeletons, not gold watches.",
+    "audio": true
+  },
+  {
+    "k": "exoskeleton",
+    "t": "exoskeleton",
+    "kind": "word",
+    "forms": [
+      "exoskeleton"
+    ],
+    "text": "An exoskeleton is a hard frame worn outside the body. A robotic one would move with the wearer and help them lift or walk, which Mr Clark imagined for his back spasms.",
+    "audio": true
+  },
+  {
+    "k": "diversify",
+    "t": "diversify",
+    "kind": "word",
+    "forms": [
+      "diversify"
+    ],
+    "text": "To diversify investments is to spread money across many different things so one failure cannot ruin you. It is sensible when nearly all your wealth is one company's stock.",
+    "audio": true
+  },
+  {
+    "k": "pitchbook",
+    "t": "PitchBook",
+    "kind": "name",
+    "forms": [
+      "PitchBook"
+    ],
+    "text": "PitchBook is a company that collects data on startups and investment deals. Its analyst expects some of the money to flow into new startups.",
+    "audio": true
+  },
+  {
+    "k": "bloom",
+    "t": "bloom",
+    "kind": "word",
+    "forms": [
+      "bloom"
+    ],
+    "text": "To bloom is to flower and thrive. The closing line plays on the ant colony image, hoping both new companies and charities grow.",
+    "audio": true
+  }
+]

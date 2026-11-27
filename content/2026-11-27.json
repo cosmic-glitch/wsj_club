@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-27",
+  "title": "How will Anthropic’s cashed-up employees spend their riches?",
+  "articleUrl": "https://www.economist.com/business/2026/11/26/how-will-anthropics-cashed-up-employees-spend-their-riches",
+  "articlePageUrl": "/articles/2026-11-27.html",
+  "voiceQuiz": true,
+  "source": "The Economist",
+  "vocab": [
+    {
+      "word": "flotation",
+      "partOfSpeech": "noun",
+      "pronunciation": "floh-TAY-shun",
+      "articleQuote": "The artificial-intelligence lab’s shares may have slid below their offer price since Anthropic’s record-breaking flotation on November 19th",
+      "meaning": "A flotation is the moment a private company first offers its shares to the public on a stock exchange, so anyone can buy a piece of it. The word is mostly British; Americans say IPO, short for initial public offering. The image is of the company being launched like a boat onto open water. Here it names Anthropic’s stock-market debut, which turned its employees’ shares into something that can be priced and sold every day.",
+      "examples": [
+        "The family bakery’s flotation made its founders millionaires on paper overnight.",
+        "Before its flotation, the company had to publish years of financial records for investors to read."
+      ]
+    },
+    {
+      "word": "benign",
+      "partOfSpeech": "adjective",
+      "pronunciation": "bih-NYNE",
+      "articleQuote": "calls it a “funding Anthropalypse” (more benign than it sounds)",
+      "meaning": "Benign means gentle, harmless or not threatening. Doctors use it for a tumour that will not spread, and everyday writers use it for anything that turns out less scary than it looks. Its opposite is malignant. In the article, a joke word that sounds like an apocalypse actually describes something good: a huge wave of money flowing to charities.",
+      "examples": [
+        "The strange noise from the engine turned out to be benign, just a loose cap.",
+        "He gave a benign smile, so nobody was nervous about asking the question."
+      ]
+    },
+    {
+      "word": "discomfited",
+      "partOfSpeech": "adjective",
+      "pronunciation": "dis-KUM-fit-id",
+      "articleQuote": "one founder was discomfited when a sushi chef stopped by the office to prepare an all-you-can-eat spread",
+      "meaning": "To be discomfited is to feel uneasy, embarrassed or thrown off balance, a bit like being the one person overdressed at a casual party. People often mix it up with discomfort, but it is about a flustered feeling rather than physical pain. Here the founder felt awkward about a lavish meal that did not match the simple, frugal culture he wanted at the company.",
+      "examples": [
+        "The speaker was discomfited when her slides suddenly vanished mid-talk.",
+        "He looked discomfited when everyone sang happy birthday to him in the cafeteria."
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Effective altruism",
+      "articleQuote": "Charities favoured by effective altruists, a well-meaning if sometimes overzealous group commonly found in the AI world, are likely to benefit handsomely.",
+      "meaning": "Effective altruism is a movement built on one question: if you want to do the most good with your money or time, where does each dollar help the most people? Instead of giving to whatever feels closest or most familiar, followers compare charities using evidence, such as how many lives a donation saves per dollar. That is why the movement tends to favour things like malaria prevention, vitamin A supplements and vaccines, where a small gift goes a long way.\n\nThe article shows its pledge in action. Giving What We Can asks people to promise 10% of their lifetime income to “whichever organisations can most effectively use it to improve the lives of others”. Several Anthropic founders have signed. Its list of favoured causes also includes preventing “global catastrophic risks”, including from rogue AI, which critics find a stretch because the harm is hypothetical.\n\nThat is the “overzealous” side: when a group follows numbers with total confidence, it can end up pushing uncertain ideas as hard as proven ones. Because so many people in AI sympathise with the movement, an enormous sum of money may flow toward its chosen causes, and could reshape which charities grow."
+    },
+    {
+      "name": "Paper wealth and stock-based riches",
+      "articleQuote": "their combined holdings are still worth a tidy $470bn",
+      "meaning": "Many startup workers are paid partly in company shares. Those shares are “paper wealth”: a number on a screen that is real only if the stock can be sold at that price. Before a company lists on a stock exchange, its shares are hard to sell, so they are worth little in practice. After a flotation, the shares get a market price that changes every second.\n\nThat is why the article keeps its sums careful. Employees’ holdings are worth about $470bn at today’s price, but the share price has already slid below the offer price, so the number could shrink. Some pledged gifts may “take years to materialise, or some evaporates”. Selling a lot of shares at once can also push the price down.\n\nIt also explains the surprising behaviour: sudden wealth for young people with “not a lot of experience with money”. They set up trusts, pay off loans and are told to diversify, meaning spread money across many investments so one company’s fall cannot ruin them. When nearly all your net worth is one company’s stock, that advice matters."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What have Anthropic’s seven founders done with their shares, according to the article?",
+      "options": [
+        "Sold them all on listing day",
+        "Set aside 80% of their roughly equal stakes for charity",
+        "Given them to the company’s employees",
+        "Locked them away for ten years"
+      ],
+      "answerIndex": 1,
+      "explanation": "The founders set aside 80% of their stakes for charity when the company was born, pledging shares now worth more than $110bn."
+    },
+    {
+      "question": "What is the main idea behind effective altruism as the article describes it?",
+      "options": [
+        "Donating only to charities in your own town",
+        "Giving where evidence suggests your money helps the most people",
+        "Avoiding all donations until you are rich",
+        "Giving only to AI research"
+      ],
+      "answerIndex": 1,
+      "explanation": "Effective altruists compare causes by impact, which is why they favour things like malaria prevention and vaccinations."
+    },
+    {
+      "question": "Why does the article say Anthropic’s employees may struggle with their new wealth?",
+      "options": [
+        "The law stops them from spending it",
+        "Anthropic forbids buying houses",
+        "They are smart but lack experience with money",
+        "They all want to leave the company"
+      ],
+      "answerIndex": 2,
+      "explanation": "The family-finance lawyer says they are “super smart” but “don’t have a lot of experience with money”, so many set up trusts and plan to pay loans."
+    },
+    {
+      "question": "What does it mean that the employees’ wealth is “paper wealth”?",
+      "options": [
+        "It is paid in cash notes",
+        "It is a value on shares that is only real if sold at that price",
+        "It cannot be donated",
+        "It is worth the same each day"
+      ],
+      "answerIndex": 1,
+      "explanation": "Share values move with the market. The price has slid below the offer price, so the $470bn figure could shrink."
+    },
+    {
+      "question": "How does the article describe the spending tastes of Anthropic employees?",
+      "options": [
+        "Focused on yachts and luxury cars",
+        "Plain, with a science-fiction flavour such as exoskeletons and rocket-fitted cars",
+        "Entirely on sushi dinners",
+        "They do not spend anything"
+      ],
+      "answerIndex": 1,
+      "explanation": "One founder preferred rice and beans to sushi, while wish lists include a rocket-fitted Tesla Roadster and a robotic exoskeleton."
+    }
+  ]
+}
